@@ -17,9 +17,42 @@ export async function getStaticPaths() {
 }
 
 const { article } = Astro.props;
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "NewsArticle",
+  "headline": article.baslik_tr,
+  "description": article.ozet_tr,
+  "image": article.gorsel_url ? [article.gorsel_url] : [],
+  "datePublished": article.date,
+  "dateModified": article.date,
+  "author": {
+    "@type": "Organization",
+    "name": article.source || "Yöney"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Yöney",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://yoney.dev/favicon.svg"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": `https://yoney.dev/haber/${article.slug}`
+  }
+};
 ---
 
-<Layout title={`${article.baslik_tr} | Yöney`}>
+<Layout 
+	title={`${article.baslik_tr} | Yöney`}
+	description={article.ozet_tr}
+	image={article.gorsel_url}
+	type="article"
+	articleDate={article.date}
+>
+	<script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
 	<article class="article-detail">
 		<header>
 			<div class="meta">

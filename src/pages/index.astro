@@ -42,70 +42,157 @@ const categories = [
 				<p>Henüz haber bulunmuyor. GitHub Actions pipeline'ı ilk turu tamamladığında son 1 ayın haberleri burada listelenecektir.</p>
 			</div>
 		) : (
-			<div class="news-feed">
-				{articles.map((article, i) => (
-					<article class={`article-card ${i === 0 ? "featured-card" : ""}`} data-category={article.kategori || "diger"}>
-						{article.gorsel_url && (
-							<div class="card-image">
-								<a href={`/haber/${article.slug}`}>
-									<img src={article.gorsel_url} alt={article.baslik_tr} loading={i === 0 ? "eager" : "lazy"} />
-								</a>
-							</div>
-						)}
-						<div class="card-content">
-							<div class="article-meta">
-								<span class="source">{article.source}</span>
-								<span class="category-badge">{article.kategori || "Genel"}</span>
-								<span class="date">{new Date(article.date).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' })}</span>
-							</div>
-
-							<h2><a href={`/haber/${article.slug}`}>{article.baslik_tr}</a></h2>
-							<p class="summary">{article.ozet_tr}</p>
-
-							{article.benchmarklar && article.benchmarklar.length > 0 && (
-								<div class="benchmark-highlight">
-									📊 <strong>{article.benchmarklar.length} Doğrulanmış Benchmark:</strong> {article.benchmarklar.map((b: any) => `${b.model} (${b.benchmark}: ${b.skor} ${b.birim})`).join(', ')}
+			<>
+				<div class="news-feed" id="newsFeed">
+					{articles.map((article, i) => (
+						<article class={`article-card ${i === 0 ? "featured-card" : ""}`} data-category={article.kategori || "diger"} data-index={i}>
+							{article.gorsel_url && (
+								<div class="card-image">
+									<a href={`/haber/${article.slug}`}>
+										<img src={article.gorsel_url} alt={article.baslik_tr} loading={i < 3 ? "eager" : "lazy"} />
+									</a>
 								</div>
 							)}
-
-							<div class="card-footer">
-								<div class="tags">
-									{article.etiketler && article.etiketler.map((tag: string) => (
-										<span class="tag">#{tag}</span>
-									))}
+							<div class="card-content">
+								<div class="article-meta">
+									<span class="source">{article.source}</span>
+									<span class="category-badge">{article.kategori || "Genel"}</span>
+									<span class="date">{new Date(article.date).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' })}</span>
 								</div>
-								<a href={article.url} target="_blank" rel="noopener noreferrer" class="source-text-link">
-									{article.source} kaynağında gör ↗
-								</a>
+
+								<h2><a href={`/haber/${article.slug}`}>{article.baslik_tr}</a></h2>
+								<p class="summary">{article.ozet_tr}</p>
+
+								{article.benchmarklar && article.benchmarklar.length > 0 && (
+									<div class="benchmark-highlight">
+										📊 <strong>{article.benchmarklar.length} Doğrulanmış Benchmark:</strong> {article.benchmarklar.map((b: any) => `${b.model} (${b.benchmark}: ${b.skor} ${b.birim})`).join(', ')}
+									</div>
+								)}
+
+								<div class="card-footer">
+									<div class="tags">
+										{article.etiketler && article.etiketler.map((tag: string) => (
+											<span class="tag">#{tag}</span>
+										))}
+									</div>
+									<a href={article.url} target="_blank" rel="noopener noreferrer" class="source-text-link">
+										{article.source} kaynağında gör ↗
+									</a>
+								</div>
 							</div>
-						</div>
-					</article>
-				))}
-			</div>
+						</article>
+					))}
+				</div>
+
+				<!-- Sayfalama (Pagination Bar) -->
+				<div class="pagination-bar" id="paginationBar">
+					<button class="page-nav-btn" id="prevPageBtn" disabled>← Önceki</button>
+					<div class="page-numbers" id="pageNumbers"></div>
+					<button class="page-nav-btn" id="nextPageBtn">Sonraki →</button>
+				</div>
+			</>
 		)}
 	</div>
 </Layout>
 
 <script>
-	const buttons = document.querySelectorAll('.cat-pill');
-	const cards = document.querySelectorAll('.article-card');
+	const ITEMS_PER_PAGE = 10;
+	let currentPage = 1;
+	let currentCategory = 'all';
 
+	const buttons = document.querySelectorAll('.cat-pill');
+	const allCards = Array.from(document.querySelectorAll('.article-card')) as HTMLElement[];
+	const prevBtn = document.getElementById('prevPageBtn') as HTMLButtonElement | null;
+	const nextBtn = document.getElementById('nextPageBtn') as HTMLButtonElement | null;
+	const pageNumbersContainer = document.getElementById('pageNumbers');
+
+	function getMatchingCards() {
+		return allCards.filter(card => {
+			if (currentCategory === 'all') return true;
+			return card.getAttribute('data-category') === currentCategory;
+		});
+	}
+
+	function renderPage() {
+		const matchingCards = getMatchingCards();
+		const totalPages = Math.ceil(matchingCards.length / ITEMS_PER_PAGE) || 1;
+
+		if (currentPage > totalPages) currentPage = totalPages;
+		if (currentPage < 1) currentPage = 1;
+
+		const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+		const endIndex = startIndex + ITEMS_PER_PAGE;
+
+		// Hide all first
+		allCards.forEach(card => card.style.display = 'none');
+
+		// Show only current page items
+		matchingCards.slice(startIndex, endIndex).forEach((card, idx) => {
+			card.style.display = 'flex';
+			// Keep featured layout only for first item of page 1 if 'all'
+			if (currentPage === 1 && idx === 0 && currentCategory === 'all') {
+				card.classList.add('featured-card');
+			} else {
+				card.classList.remove('featured-card');
+			}
+		});
+
+		// Update Pagination Controls
+		if (prevBtn) prevBtn.disabled = currentPage <= 1;
+		if (nextBtn) nextBtn.disabled = currentPage >= totalPages;
+
+		if (pageNumbersContainer) {
+			pageNumbersContainer.innerHTML = '';
+			for (let p = 1; p <= totalPages; p++) {
+				const pageBtn = document.createElement('button');
+				pageBtn.className = `page-num-btn ${p === currentPage ? 'active' : ''}`;
+				pageBtn.textContent = p.toString();
+				pageBtn.addEventListener('click', () => {
+					currentPage = p;
+					renderPage();
+					window.scrollTo({ top: 0, behavior: 'smooth' });
+				});
+				pageNumbersContainer.appendChild(pageBtn);
+			}
+		}
+	}
+
+	// Category filter click
 	buttons.forEach(btn => {
 		btn.addEventListener('click', () => {
 			buttons.forEach(b => b.classList.remove('active'));
 			btn.classList.add('active');
-			const targetCat = btn.getAttribute('data-cat');
-
-			cards.forEach(card => {
-				const cardCat = card.getAttribute('data-category');
-				if (targetCat === 'all' || cardCat === targetCat) {
-					(card as HTMLElement).style.display = 'flex';
-				} else {
-					(card as HTMLElement).style.display = 'none';
-				}
-			});
+			currentCategory = btn.getAttribute('data-cat') || 'all';
+			currentPage = 1;
+			renderPage();
 		});
 	});
+
+	// Pagination buttons
+	if (prevBtn) {
+		prevBtn.addEventListener('click', () => {
+			if (currentPage > 1) {
+				currentPage--;
+				renderPage();
+				window.scrollTo({ top: 0, behavior: 'smooth' });
+			}
+		});
+	}
+
+	if (nextBtn) {
+		nextBtn.addEventListener('click', () => {
+			const matchingCards = getMatchingCards();
+			const totalPages = Math.ceil(matchingCards.length / ITEMS_PER_PAGE) || 1;
+			if (currentPage < totalPages) {
+				currentPage++;
+				renderPage();
+				window.scrollTo({ top: 0, behavior: 'smooth' });
+			}
+		});
+	}
+
+	// Initial render
+	renderPage();
 </script>
 
 <style>
@@ -277,6 +364,69 @@ const categories = [
 	.source-text-link:hover {
 		color: var(--accent-color);
 		text-decoration: underline;
+	}
+
+	/* Sayfalama Stilleri */
+	.pagination-bar {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 0.75rem;
+		margin-top: 3.5rem;
+		padding: 1.5rem 0;
+		border-top: 1px solid var(--border-color);
+	}
+
+	.page-nav-btn {
+		background: none;
+		border: 1px solid var(--border-color);
+		padding: 0.45rem 0.9rem;
+		font-family: var(--font-mono);
+		font-size: 0.85rem;
+		cursor: pointer;
+		color: var(--text-color);
+		transition: all 0.15s ease;
+	}
+
+	.page-nav-btn:disabled {
+		opacity: 0.35;
+		cursor: not-allowed;
+	}
+
+	.page-nav-btn:not(:disabled):hover {
+		background: var(--text-color);
+		color: var(--bg-color);
+	}
+
+	.page-numbers {
+		display: flex;
+		gap: 0.4rem;
+	}
+
+	:global(.page-num-btn) {
+		background: none;
+		border: 1px solid var(--border-color);
+		width: 36px;
+		height: 36px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-family: var(--font-mono);
+		font-size: 0.85rem;
+		cursor: pointer;
+		color: var(--text-color);
+		transition: all 0.15s ease;
+	}
+
+	:global(.page-num-btn:hover) {
+		border-color: var(--text-color);
+	}
+
+	:global(.page-num-btn.active) {
+		background: var(--accent-color);
+		border-color: var(--accent-color);
+		color: #ffffff;
+		font-weight: 600;
 	}
 
 	@media (max-width: 768px) {

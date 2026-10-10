@@ -1,21 +1,54 @@
 ---
 interface Props {
 	title: string;
+	description?: string;
+	image?: string;
+	type?: string;
+	articleDate?: string;
+	canonicalUrl?: string;
 }
 
-const { title } = Astro.props;
+const { 
+	title, 
+	description = "Yöney: Türkiye'nin yapay zekâ haber, model çıkışları ve doğrulanmış benchmark takip platformu.", 
+	image = "/og-default.png",
+	type = "website",
+	articleDate,
+	canonicalUrl
+} = Astro.props;
+
+const canonical = canonicalUrl || Astro.url.href;
 ---
 
 <!doctype html>
 <html lang="tr">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Yöney: Türkiye'nin yapay zekâ haber ve benchmark takibi." />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>{title}</title>
+		<meta name="description" content={description} />
+		<link rel="canonical" href={canonical} />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-		
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content={type} />
+		<meta property="og:url" content={canonical} />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		{image && <meta property="og:image" content={image} />}
+		<meta property="og:locale" content="tr_TR" />
+		<meta property="og:site_name" content="Yöney" />
+
+		<!-- Twitter Cards -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:url" content={canonical} />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={description} />
+		{image && <meta name="twitter:image" content={image} />}
+
+		{articleDate && <meta property="article:published_time" content={articleDate} />}
+
 		<!-- Google Fonts for IBM Plex Sans & Mono -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

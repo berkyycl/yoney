@@ -120,6 +120,27 @@ async function fetchFullArticleAndMeta(url: string): Promise<{ text: string; ima
     return { text: "" };
 }
 
+async function searchImageWithTavily(query: string): Promise<string | null> {
+    const apiKey = process.env.TAVILY_API_KEY;
+    if (!apiKey) return null;
+    try {
+        const res = await axios.post('https://api.tavily.com/search', {
+            api_key: apiKey,
+            query: query.substring(0, 200),
+            include_images: true,
+            max_results: 3
+        }, { timeout: 8000 });
+        if (res.data && res.data.images && res.data.images.length > 0) {
+            for (const img of res.data.images) {
+                if (typeof img === 'string' && img.startsWith('http')) return img;
+            }
+        }
+    } catch (e) {
+        // Tavily image lookup failed silently
+    }
+    return null;
+}
+
 const delay = (ms: number) => new Promise(res => setTimeout(res, ms));
 
 function containsKeywords(text: string) {
@@ -215,6 +236,13 @@ export async function runPipeline(isMock = false) {
                     }
                     result.benchmarklar = validBenchmarks;
                     
+                    if (!imageUrl) {
+                        const tavilyImg = await searchImageWithTavily(`${item.title} artificial intelligence`);
+                        if (tavilyImg) {
+                            imageUrl = tavilyImg;
+                        }
+                    }
+
                     const slug = item.title.toLowerCase().replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').substring(0, 50);
                     const article = {
                         ...result,
