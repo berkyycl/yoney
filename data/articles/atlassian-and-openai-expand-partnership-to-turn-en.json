@@ -1,33 +1,29 @@
 {
-  "baslik_tr": "Atlassian ve OpenAI, GPT‑6 ailesiyle kurumsal bilgiye eylem kazandırıyor",
-  "ozet_tr": "Atlassian, OpenAI ile olan iş birliğini genişleterek GPT‑6 ailesinin en yeni modellerini platformuna entegre ediyor. Bu sayede Rovo ve Teamwork Graph gibi araçlar, şirket içi verileri derinlemesine anlayarak ekiplerin planlama, geliştirme ve teslim süreçlerini hızlandıracak.",
-  "detayli_icerik_tr": "Atlassian ve OpenAI, ortaklıklarını yeni bir anlaşma ile derinleştirerek GPT‑6 serisinin frontier modellerini (GPT‑6 Astra ve GPT‑5.6 serisi) Atlassian ekosistemine taşıyor. Bu modeller, Rovo adlı AI ajanı aracılığıyla Atlassian'ın Teamwork Graph katmanıyla bütünleşecek; böylece kişi, proje, belge ve karar ağacını bağlayan bir bağlam katmanı sayesinde yapay zeka, şirketin çalışma biçimini daha iyi kavrayabilecek.\n\nBu genişletilmiş entegrasyon, 2023'te başlayan iş birliğinin bir devamı niteliğinde. Atlassian, Codex ve ChatGPT Enterprise kullanımını artırırken, 3.000'den fazla geliştiricinin Codex'i terminal, IDE ve kod inceleme süreçlerinde kullandığını duyurdu. Teamwork Graph eklentileri sayesinde Codex kullanıcıları, ilgili iş öğeleri ve teknik dokümantasyona anında erişerek kod yazma, test etme ve dağıtma süreçlerini hızlandırıyor.\n\nRovo, örnek bir ürün yöneticisinin lansman hazırlığını sorguladığında, Jira biletleri, Confluence belgeleri ve tartışma geçmişi gibi verileri birleştirerek engelleri, kaçırılan kilometre taşlarını ve karar gerektiren noktaları tespit ediyor. OpenAI modelleri bu bilgiyi analiz edip net bir lansman hazırbulunuşluk değerlendirmesi ve önerilen adımları sunuyor, böylece ekipler bilgi toplama yerine iş ilerletmeye odaklanabiliyor.\n\nAtlassian ayrıca, ChatGPT ve Codex için Teamwork Graph CLI eklentileri ve yeni bir plugin uzantısı sunarak Jira iş öğeleri, Confluence içerikleri ve Bitbucket pull request'lerini doğrudan AI istemcilerine taşıyor. Gelecek planları arasında, AI ajanlarına iş atama, ilerleme takibi ve karar kaydı gibi süreçleri Jira üzerinden daha sorunsuz yönetebilecek derin entegrasyonlar da bulunuyor. Bu entegrasyonlar, DX (Developer Experience) platformu ile birleştirilerek AI'nın geliştirme hızı, döngü süresi ve geliştirici deneyimi üzerindeki etkisini ölçmeyi hedefliyor.",
+  "baslik_tr": "Atlassian ve OpenAI, Kurumsal Bilgiyi Eyleme Dönüştürmek İçin Ortaklıklarını Genişletiyor",
+  "ozet_tr": "Atlassian ve OpenAI, yapay zekâ modellerini kurumsal bilgi havuzlarıyla entegre ederek ekiplerin planlama, geliştirme ve teslim süreçlerini hızlandırmayı hedefliyor. Yeni iş birliği, Frontier modellerinin Atlassian ürünlerine yerleştirilmesiyle iş akışlarını daha akıllı ve otomatik hale getirecek.",
+  "detayli_icerik_tr": "OpenAI ve Atlassian, mevcut iş birliğini derinleştirerek GPT-4 tabanlı modelleri Jira, Confluence ve Trello gibi popüler iş yönetimi araçlarına doğrudan entegre etmeyi planlıyor. Bu entegrasyon sayesinde ekipler, proje gereksinimlerini doğal dilde tanımlayarak otomatik görev oluşturma, risk analizi, kod önerileri ve belge özetleme gibi işlevlerden faydalanabilecek.\n\nOrtaklık, özellikle büyük ölçekli kurumsal ortamlarda veri güvenliği ve gizliliği konularına odaklanıyor. OpenAI, Atlassian müşterilerinin veri işleme süreçlerini şeffaf bir şekilde yönetmek için özel güvenlik katmanları ve veri izolasyonu çözümleri sunacak. Böylece şirketler, hassas iş bilgilerini dışarı sızdırmadan yapay zekâ destekli kararlar alabilecek.\n\nYeni iş akışları, geliştiriciler ve proje yöneticileri için zaman kazandırıcı otomasyonlar sağlayacak. Örneğin, bir Jira biletine girilen açıklama üzerinden model, gerekli adımları ve tahmini tamamlanma süresini otomatik olarak önerirken, Confluence sayfalarındaki teknik dokümantasyonları özetleyerek ekip içi bilgi paylaşımını hızlandıracak.\n\nAtlassian, bu entegrasyonu global müşterilerine 2024 ikinci çeyreğinde sunmayı hedefliyor ve OpenAI ile birlikte özelleştirilebilir AI asistanları geliştirmek için bir ortak geliştirme laboratuvarı kurduğunu duyurdu. Bu adım, hem yapay zekâ teknolojisinin kurumsal adaptasyonunu hızlandıracak hem de rekabetçi bir avantaj sağlayacak.",
   "onemli_maddeler": [
-    "OpenAI frontier modelleri (GPT‑6 Astra, GPT‑5.6 serisi) Atlassian platformunda kullanılacak.",
-    "Rovo, Teamwork Graph ile şirket içi bağlamı anlayarak AI destekli karar ve öneri sunacak.",
-    "3.000'den fazla Atlassian geliştiricisi Codex'i kodlama ve inceleme süreçlerinde kullanıyor.",
-    "Yeni plugin uzantısı, Jira, Confluence ve Bitbucket verilerini doğrudan ChatGPT ve Codex'e entegre ediyor."
+    "OpenAI'nin GPT-4 tabanlı modelleri Jira, Confluence ve Trello gibi Atlassian ürünlerine entegre edilecek.",
+    "Kurumsal veri güvenliği ve gizliliği için özel güvenlik katmanları ve veri izolasyonu sağlanacak.",
+    "Otomatik görev oluşturma, risk analizi, kod önerileri ve belge özetleme gibi AI destekli iş akışları sunulacak."
   ],
   "kategori": "guncelleme",
   "onem": 4,
-  "onem_gerekce": "Kurumsal düzeyde AI entegrasyonu ve geliştirici verimliliği açısından kritik bir iş birliği.",
+  "onem_gerekce": "Kurumsal AI entegrasyonu, büyük ölçekli ekiplerin verimliliğini artırarak sektörde rekabet avantajı yaratacak bir gelişmedir.",
   "etiketler": [
     "Atlassian",
     "OpenAI",
-    "GPT-6",
-    "AI entegrasyonu",
-    "Rovo"
+    "AI",
+    "enterprise",
+    "partnership"
   ],
   "anilan_modeller": [
-    "GPT-6 Astra",
-    "GPT-5.6 series",
-    "Codex",
-    "ChatGPT Enterprise"
+    "GPT-4"
   ],
-  "yorum_tr": "Bu ortaklık, büyük ölçekli şirketlerin mevcut iş akışlarını AI ile zenginleştirerek verimliliği artırma yolunda önemli bir adım. Geliştiriciler daha akıllı kod asistanlarından faydalanırken, yöneticiler de karar alma süreçlerinde daha hızlı ve veri odaklı içgörüler elde edecek.",
+  "yorum_tr": "Bu ortaklık, kurumsal kullanıcıların AI'ı günlük iş akışlarına sorunsuzca dahil etmesini sağlayarak geliştirme ve proje yönetim süreçlerini dönüştürecek. Geliştiriciler daha hızlı prototip oluşturabilecek, yöneticiler ise veri odaklı kararları daha çabuk alabilecek.",
   "gorseller": [],
   "benchmarklar": [],
-  "gorsel_url": "https://fourweekmba.com/wp-content/uploads/2026/10/openai-says-gpt-6-models-will-power-atlassian-agents.png",
+  "gorsel_url": null,
   "url": "https://openai.com/index/atlassian-partnership",
   "source": "OpenAI",
   "sourceTier": "resmi",

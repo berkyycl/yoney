@@ -1,0 +1,52 @@
+{
+  "baslik_tr": "OpenAI ve Ironclad İşbirliğiyle GPT‑6 Astra, Sözleşme İş Akışlarında %55 Başarı Skoru ve %48 Zaman Tasarrufu Sağladı",
+  "ozet_tr": "OpenAI, sözleşme yönetimi platformu Ironclad ile ortak bir araştırma yürütüyor ve yeni nesil GPT‑6 Astra modelini gerçek dünya iş akışlarında test ediyor. Astra, aynı görevlerde GPT‑5.6 Sol modeline kıyasla ortalama %55 başarı skoru elde ederken, işlem süresini %48 oranında kısalttı.",
+  "detayli_icerik_tr": "OpenAI, GPT‑6 Astra modelini tanıttığında, modelin bilgisayarları profesyonel işlerde kullanma yeteneğini geliştirmeyi hedeflediğini duyurdu. Bu çerçevede, AI sözleşme platformu Ironclad ile ortak çalışarak, sözleşme oluşturma, onay süreçleri ve yeniden kullanılabilir yasal terimlerin yapılandırılması gibi karmaşık iş akışlarını modelin eğitimi ve değerlendirmesi için araştırma görevlerine dönüştürdüler.\n\nIronclad ekibi, hukuk, ticari ve tedarik süreçlerine dair 11 ayrı görev tanımladı; bu görevler bir deneyimli kullanıcının ortalama 30‑40 dakikasını alacak şekilde tasarlandı. Görevler, 8‑50 kriter arasında detaylı bir değerlendirme çerçevesiyle ölçüldü ve modellerin bu ortamda pratik yapabilmesi için Ironclad'ın barındırdığı yazılım ortamları sağlandı. OpenAI, sentetik görevler ve pekiştirmeli öğrenme (RL) teknikleriyle modelleri bu görevlerde iyileştirdi.\n\nAraştırma sonuçları, GPT‑6 Astra'nın ortalama başarı skoru %55.0 olarak, GPT‑5.6 Sol'un %41.6 skoru karşısında %32'lik bir artış gösterdiğini ortaya koydu. Aynı zamanda, tahmini işlem süresi Astra için 19.2 dakika, Sol için ise 37.0 dakika olarak ölçüldü; bu da %48'lik bir zaman tasarrufu anlamına geliyor. İçsel bir geliştirme modeli ise %63.7 gibi daha yüksek bir skor elde etti.\n\nBu iş birliği, Ironclad'ın müşterileri için sözleşme süreçlerinde istisnaları yönetirken iş kurallarını korumanın önemine vurgu yapıyor ve insan denetiminin hâlâ kritik olduğunu hatırlatıyor. OpenAI, benzer iş akışlarını çözümleyebilen daha yetkin ajanlar geliştirmek için diğer yazılım şirketlerini de araştırma ortaklığına davet ediyor.",
+  "onemli_maddeler": [
+    "GPT‑6 Astra, Ironclad görevlerinde %55.0 ortalama başarı skoru elde ederek GPT‑5.6 Sol'dan %32 daha yüksek performans gösterdi.",
+    "Astra'nın tahmini işlem süresi 19.2 dakika iken, Sol modelinin 37.0 dakikasıyla karşılaştırıldığında %48 zaman tasarrufu sağladı.",
+    "OpenAI, Ironclad ile 11 gerçek dünya iş akışı görevini tanımlayarak model eğitimi ve değerlendirmesi için kapsamlı bir çerçeve oluşturdu."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "Model performansındaki belirgin iyileşme, AI ajanlarının karmaşık iş süreçlerine entegrasyonu ve yazılım şirketleriyle iş birliği açısından sektörel bir dönüm noktasıdır.",
+  "etiketler": [
+    "OpenAI",
+    "Ironclad",
+    "GPT-6 Astra",
+    "AI contracting",
+    "benchmark"
+  ],
+  "anilan_modeller": [
+    "GPT-6 Astra",
+    "GPT-5.6 Sol"
+  ],
+  "yorum_tr": "Bu gelişme, AI destekli sözleşme otomasyonunun güvenilirliğini artırarak hem geliştiricilere hem de son kullanıcılara daha hızlı ve hatasız iş akışları sunma potansiyeli taşıyor. Ancak insan denetiminin hâlâ kritik olduğu vurgulanıyor, bu da hibrit çözümlerin önümüzdeki dönemde de tercih edileceğini gösteriyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GPT-6 Astra",
+      "benchmark": "Ortalama başarı skoru",
+      "skor": 55,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Max reasoning (Astra) vs High reasoning (Sol)",
+      "kaynak_metinden_alinti": "Astra’s average score was 55.0%, compared with 41.6% for GPT‑5.6 Sol"
+    },
+    {
+      "model": "GPT-6 Astra",
+      "benchmark": "Tahmini süre (dakika)",
+      "skor": 19.2,
+      "birim": "dakika",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "Max reasoning (Astra) vs High reasoning (Sol)",
+      "kaynak_metinden_alinti": "estimated average time per attempt fell from 37.0 minutes for Sol to 19.2 minutes for Astra"
+    }
+  ],
+  "gorsel_url": null,
+  "url": "https://openai.com/index/advancing-computer-use-with-ironclad",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-10-06T10:00:00.000Z",
+  "slug": "advancing-computer-use-with-ironclad"
+}

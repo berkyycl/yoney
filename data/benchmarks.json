@@ -82,5 +82,29 @@
     "date": "2026-10-09T07:00:00.000Z",
     "url": "https://openai.com/index/asana-browser-agent",
     "source": "OpenAI"
+  },
+  {
+    "model": "GPT-6 Astra",
+    "benchmark": "Ortalama başarı skoru",
+    "skor": 55,
+    "birim": "%",
+    "yuksek_iyi_mi": true,
+    "degerlendirme_ayari": "Max reasoning (Astra) vs High reasoning (Sol)",
+    "kaynak_metinden_alinti": "Astra’s average score was 55.0%, compared with 41.6% for GPT‑5.6 Sol",
+    "date": "2026-10-06T10:00:00.000Z",
+    "url": "https://openai.com/index/advancing-computer-use-with-ironclad",
+    "source": "OpenAI"
+  },
+  {
+    "model": "GPT-6 Astra",
+    "benchmark": "Tahmini süre (dakika)",
+    "skor": 19.2,
+    "birim": "dakika",
+    "yuksek_iyi_mi": false,
+    "degerlendirme_ayari": "Max reasoning (Astra) vs High reasoning (Sol)",
+    "kaynak_metinden_alinti": "estimated average time per attempt fell from 37.0 minutes for Sol to 19.2 minutes for Astra",
+    "date": "2026-10-06T10:00:00.000Z",
+    "url": "https://openai.com/index/advancing-computer-use-with-ironclad",
+    "source": "OpenAI"
   }
 ]
