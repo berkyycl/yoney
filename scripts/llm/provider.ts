@@ -11,14 +11,17 @@ export const benchmarkSchema = z.object({
 });
 
 export const analysisSchema = z.object({
-  baslik_tr: z.string().max(90),
+  baslik_tr: z.string().max(120),
   ozet_tr: z.string(),
+  detayli_icerik_tr: z.string().optional(),
+  onemli_maddeler: z.array(z.string()).default([]),
   kategori: z.enum(["model-cikisi", "guncelleme", "fiyat-limit", "benchmark", "arastirma", "arac-sdk", "politika", "diger"]),
   onem: z.number().int().min(1).max(5),
   onem_gerekce: z.string(),
   etiketler: z.array(z.string()).max(5),
   anilan_modeller: z.array(z.string()),
   yorum_tr: z.string().nullable(),
+  gorseller: z.array(z.string()).default([]),
   benchmarklar: z.array(benchmarkSchema)
 });
 

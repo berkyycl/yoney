@@ -34,6 +34,8 @@ ${input.text}
                 properties: {
                     baslik_tr: { type: "STRING" },
                     ozet_tr: { type: "STRING" },
+                    detayli_icerik_tr: { type: "STRING" },
+                    onemli_maddeler: { type: "ARRAY", items: { type: "STRING" } },
                     kategori: { type: "STRING" },
                     onem: { type: "INTEGER" },
                     onem_gerekce: { type: "STRING" },
@@ -57,7 +59,7 @@ ${input.text}
                         }
                     }
                 },
-                required: ["baslik_tr", "ozet_tr", "kategori", "onem", "onem_gerekce", "etiketler", "anilan_modeller", "benchmarklar"]
+                required: ["baslik_tr", "ozet_tr", "detayli_icerik_tr", "onemli_maddeler", "kategori", "onem", "onem_gerekce", "etiketler", "anilan_modeller", "benchmarklar"]
             }
         }
     });

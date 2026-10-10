@@ -1,0 +1,176 @@
+---
+import Layout from '../layouts/Layout.astro';
+import fs from 'fs';
+import path from 'path';
+
+const sourcesFile = path.join(process.cwd(), 'config', 'sources.json');
+let sources = [];
+if (fs.existsSync(sourcesFile)) {
+    sources = JSON.parse(fs.readFileSync(sourcesFile, 'utf-8'));
+}
+---
+
+<Layout title="Kaynaklar | Yöney">
+	<div class="sources-page">
+		<h1>Kaynaklar</h1>
+		<p class="subtitle">Yöney'in haber ve benchmark verilerini topladığı kaynakların tam listesi.</p>
+
+		<div class="source-grid">
+			{sources.map(source => (
+				<div class={`source-card ${source.enabled ? '' : 'disabled'}`}>
+					<div class="source-header">
+						<span class={`tier-badge tier-${source.tier}`}>
+							{source.tier === 'resmi' ? 'Resmi' : source.tier === 'bagimsiz' ? 'Bağımsız' : 'Topluluk'}
+						</span>
+						<span class={`status ${source.enabled ? 'active' : 'inactive'}`}>
+							{source.enabled ? '● Aktif' : '○ Pasif'}
+						</span>
+					</div>
+					<h2>{source.name}</h2>
+					<p class="source-type">Tür: {source.type.toUpperCase()}</p>
+					<a href={source.url} target="_blank" rel="noopener noreferrer" class="source-link">Kaynağa Git ↗</a>
+				</div>
+			))}
+		</div>
+
+		<div class="methodology">
+			<h2>Nasıl Çalışır?</h2>
+			<div class="steps">
+				<div class="step">
+					<div class="step-number">1</div>
+					<h3>RSS Tarama</h3>
+					<p>Yukarıdaki kaynakların RSS akışları her 3 saatte bir otomatik taranır.</p>
+				</div>
+				<div class="step">
+					<div class="step-number">2</div>
+					<h3>AI Analiz</h3>
+					<p>Yeni içerikler Gemini ile analiz edilir, Türkçe özetlenir ve benchmark skorları çıkarılır.</p>
+				</div>
+				<div class="step">
+					<div class="step-number">3</div>
+					<h3>Doğrulama</h3>
+					<p>AI'ın çıkardığı benchmark skorları kaynak metinle karşılaştırılarak doğrulanır. Metinde olmayan skorlar eklenmez.</p>
+				</div>
+				<div class="step">
+					<div class="step-number">4</div>
+					<h3>Yayın</h3>
+					<p>Doğrulanmış haberler ve skorlar statik HTML olarak derlenir ve yayına alınır.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</Layout>
+
+<style>
+	.sources-page {
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+
+	.subtitle {
+		font-size: 1.1rem;
+		color: var(--secondary-color);
+		margin-bottom: 2rem;
+	}
+
+	.source-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+		gap: 1.5rem;
+		margin-bottom: 4rem;
+	}
+
+	.source-card {
+		border: 1px solid var(--border-color);
+		padding: 1.25rem;
+		transition: border-color 0.2s;
+	}
+
+	.source-card:hover {
+		border-color: var(--text-color);
+	}
+
+	.source-card.disabled {
+		opacity: 0.5;
+	}
+
+	.source-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 0.75rem;
+	}
+
+	.tier-badge {
+		font-family: var(--font-mono);
+		font-size: 0.75rem;
+		padding: 0.15rem 0.5rem;
+		text-transform: uppercase;
+	}
+
+	.tier-resmi { background: var(--accent-color); color: #fff; }
+	.tier-bagimsiz { background: var(--secondary-color); color: #fff; }
+	.tier-topluluk { background: var(--text-color); color: var(--bg-color); }
+
+	.status {
+		font-family: var(--font-mono);
+		font-size: 0.8rem;
+	}
+
+	.status.active { color: #2b7a4b; }
+	.status.inactive { color: #999; }
+
+	h2 {
+		font-size: 1.3rem;
+		margin: 0 0 0.5rem 0;
+	}
+
+	.source-type {
+		font-family: var(--font-mono);
+		font-size: 0.85rem;
+		color: var(--secondary-color);
+	}
+
+	.source-link {
+		display: inline-block;
+		margin-top: 0.75rem;
+		font-family: var(--font-mono);
+		font-size: 0.85rem;
+	}
+
+	.methodology {
+		border-top: 2px solid var(--text-color);
+		padding-top: 2rem;
+	}
+
+	.steps {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+		gap: 2rem;
+		margin-top: 1.5rem;
+	}
+
+	.step {
+		padding: 1rem;
+		border: 1px solid var(--border-color);
+	}
+
+	.step-number {
+		font-family: var(--font-serif);
+		font-size: 2rem;
+		color: var(--accent-color);
+		font-weight: 600;
+	}
+
+	.step h3 {
+		margin: 0.5rem 0;
+		font-family: var(--font-sans);
+		font-size: 1rem;
+	}
+
+	.step p {
+		font-size: 0.9rem;
+		line-height: 1.5;
+		color: var(--secondary-color);
+	}
+</style>

@@ -1,0 +1,222 @@
+---
+import Layout from '../layouts/Layout.astro';
+import fs from 'fs';
+import path from 'path';
+
+const benchmarkFile = path.join(process.cwd(), 'data', 'benchmarks.json');
+let benchmarks = [];
+if (fs.existsSync(benchmarkFile)) {
+    benchmarks = JSON.parse(fs.readFileSync(benchmarkFile, 'utf-8'));
+}
+
+// Get unique models
+const models = Array.from(new Set(benchmarks.map(b => b.model))).sort();
+---
+
+<Layout title="Modelleri Karşılaştır | Yöney">
+	<div class="compare-page">
+		<h1>Modelleri Karşılaştır</h1>
+		<p class="subtitle">İki yapay zekâ modelini farklı benchmark sonuçlarına göre kafa kafaya karşılaştırın.</p>
+
+		{models.length < 2 ? (
+			<div class="empty-state">
+				<p>Karşılaştırma yapabilmek için henüz yeterli benchmark verisi toplanmadı. Haber akışları işlendikçe burada modeller listelenecektir.</p>
+			</div>
+		) : (
+			<div class="comparison-tool">
+				<div class="selectors">
+					<div class="select-group">
+						<label for="modelA">1. Model:</label>
+						<select id="modelA">
+							{models.map((m, idx) => (
+								<option value={m} selected={idx === 0}>{m}</option>
+							))}
+						</select>
+					</div>
+
+					<div class="vs-badge">VS</div>
+
+					<div class="select-group">
+						<label for="modelB">2. Model:</label>
+						<select id="modelB">
+							{models.map((m, idx) => (
+								<option value={m} selected={idx === 1}>{m}</option>
+							))}
+						</select>
+					</div>
+				</div>
+
+				<div class="results-table-container">
+					<table id="compareTable">
+						<thead>
+							<tr>
+								<th>Benchmark</th>
+								<th id="thModelA">Model A</th>
+								<th id="thModelB">Model B</th>
+								<th>Fark</th>
+							</tr>
+						</thead>
+						<tbody id="compareBody">
+						</tbody>
+					</table>
+				</div>
+			</div>
+		)}
+	</div>
+</Layout>
+
+<script define:vars={{ benchmarks }}>
+	const allBenchmarks = benchmarks;
+
+	function updateComparison() {
+		const selA = document.getElementById('modelA');
+		const selB = document.getElementById('modelB');
+		if (!selA || !selB) return;
+
+		const modelA = selA.value;
+		const modelB = selB.value;
+
+		document.getElementById('thModelA').textContent = modelA;
+		document.getElementById('thModelB').textContent = modelB;
+
+		const benchmarksA = allBenchmarks.filter(b => b.model === modelA);
+		const benchmarksB = allBenchmarks.filter(b => b.model === modelB);
+
+		// Unique tests
+		const testNames = Array.from(new Set([
+			...benchmarksA.map(b => b.benchmark),
+			...benchmarksB.map(b => b.benchmark)
+		])).sort();
+
+		const tbody = document.getElementById('compareBody');
+		tbody.innerHTML = '';
+
+		testNames.forEach(test => {
+			const itemA = benchmarksA.find(b => b.benchmark === test);
+			const itemB = benchmarksB.find(b => b.benchmark === test);
+
+			const tr = document.createElement('tr');
+			const tdName = document.createElement('td');
+			tdName.textContent = test;
+
+			const tdA = document.createElement('td');
+			tdA.className = 'tabular';
+			tdA.textContent = itemA ? `${itemA.skor} ${itemA.birim}` : '-';
+
+			const tdB = document.createElement('td');
+			tdB.className = 'tabular';
+			tdB.textContent = itemB ? `${itemB.skor} ${itemB.birim}` : '-';
+
+			const tdDiff = document.createElement('td');
+			tdDiff.className = 'tabular';
+
+			if (itemA && itemB) {
+				const diff = (itemA.skor - itemB.skor).toFixed(1);
+				const isPositive = Number(diff) > 0;
+				tdDiff.textContent = (isPositive ? `+${diff}` : diff) + ` ${itemA.birim}`;
+				tdDiff.style.color = isPositive ? '#2b7a4b' : '#C2361F';
+				tdDiff.style.fontWeight = 'bold';
+			} else {
+				tdDiff.textContent = '-';
+			}
+
+			tr.appendChild(tdName);
+			tr.appendChild(tdA);
+			tr.appendChild(tdB);
+			tr.appendChild(tdDiff);
+			tbody.appendChild(tr);
+		});
+	}
+
+	const selA = document.getElementById('modelA');
+	const selB = document.getElementById('modelB');
+	if (selA && selB) {
+		selA.addEventListener('change', updateComparison);
+		selB.addEventListener('change', updateComparison);
+		updateComparison();
+	}
+</script>
+
+<style>
+	.compare-page {
+		max-width: 900px;
+		margin: 0 auto;
+	}
+
+	.subtitle {
+		font-size: 1.1rem;
+		color: var(--secondary-color);
+		margin-bottom: 2rem;
+	}
+
+	.empty-state {
+		background: rgba(0,0,0,0.03);
+		border: 1px dashed var(--border-color);
+		padding: 3rem;
+		text-align: center;
+		font-family: var(--font-mono);
+	}
+
+	.selectors {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 2rem;
+		margin-bottom: 2rem;
+		padding: 1.5rem;
+		background: rgba(0,0,0,0.02);
+		border: 1px solid var(--border-color);
+	}
+
+	.select-group {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+
+	.select-group label {
+		font-family: var(--font-mono);
+		font-size: 0.85rem;
+		text-transform: uppercase;
+	}
+
+	select {
+		padding: 0.5rem 1rem;
+		font-family: var(--font-sans);
+		font-size: 1rem;
+		border: 1px solid var(--border-color);
+		background: var(--bg-color);
+		color: var(--text-color);
+	}
+
+	.vs-badge {
+		font-family: var(--font-mono);
+		font-weight: bold;
+		color: var(--accent-color);
+		font-size: 1.25rem;
+	}
+
+	table {
+		width: 100%;
+		border-collapse: collapse;
+		font-family: var(--font-sans);
+		margin-top: 1rem;
+	}
+
+	th, td {
+		border: 1px solid var(--border-color);
+		padding: 0.75rem 1rem;
+		text-align: left;
+	}
+
+	th {
+		background: rgba(0,0,0,0.03);
+		font-family: var(--font-mono);
+		text-transform: uppercase;
+	}
+
+	.tabular {
+		font-family: var(--font-mono);
+		text-align: right;
+	}
+</style>

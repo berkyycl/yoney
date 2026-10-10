@@ -1,0 +1,161 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Hakkında | Yöney">
+	<div class="about-page">
+		<h1>Yöney Hakkında</h1>
+
+		<section class="intro">
+			<p class="lead">
+				Yöney, yapay zekâ dünyasındaki gelişmeleri güvenilir kaynaklardan otomatik olarak toplayan, Türkçe özetleyen ve benchmark sonuçlarını karşılaştırmalı grafiklerle sunan bağımsız bir haber platformudur.
+			</p>
+		</section>
+
+		<section>
+			<h2>Ne Yapıyoruz?</h2>
+			<div class="feature-grid">
+				<div class="feature">
+					<h3>📰 Haber Toplama</h3>
+					<p>OpenAI, Google DeepMind, Hugging Face, TechCrunch ve topluluk kaynaklarından yapay zekâ haberlerini otomatik olarak çekiyoruz.</p>
+				</div>
+				<div class="feature">
+					<h3>🇹🇷 Türkçe Özetleme</h3>
+					<p>Her haberi Gemini ile analiz edip profesyonel, kapsamlı Türkçe içerik üretiyoruz. Kısa bir özet değil, derinlemesine haber hazırlıyoruz.</p>
+				</div>
+				<div class="feature">
+					<h3>📊 Benchmark Takibi</h3>
+					<p>Haberlerde geçen benchmark skorlarını otomatik çıkarıp doğruluyor, model karşılaştırma grafikleriyle sunuyoruz.</p>
+				</div>
+				<div class="feature">
+					<h3>🤖 YZ Yorumu</h3>
+					<p>Her habere, gelişmenin sektöre etkisini ve kimin işine yarayacağını değerlendiren tarafsız bir YZ yorumu ekliyoruz.</p>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<h2>Ne Yapmıyoruz?</h2>
+			<ul class="dont-list">
+				<li>Benchmark testlerini biz çalıştırmıyoruz; yalnızca yayımlanmış sonuçları kaynak linkiyle topluyoruz.</li>
+				<li>Haberleri insanlar yazmıyor; yapay zekâ tarafından üretilip doğrulanıyor.</li>
+				<li>Hiçbir modeli veya şirketi kayırmıyor, tarafsız kalıyoruz.</li>
+			</ul>
+		</section>
+
+		<section>
+			<h2>Teknik Altyapı</h2>
+			<div class="tech-stack">
+				<div class="tech-item">
+					<strong>Astro</strong>
+					<span>Statik site oluşturma</span>
+				</div>
+				<div class="tech-item">
+					<strong>Gemini 3.8 Flash</strong>
+					<span>Haber analizi ve özetleme</span>
+				</div>
+				<div class="tech-item">
+					<strong>GitHub Actions</strong>
+					<span>Otomatik güncelleme ve dağıtım</span>
+				</div>
+				<div class="tech-item">
+					<strong>Chart.js</strong>
+					<span>Benchmark grafikleri</span>
+				</div>
+				<div class="tech-item">
+					<strong>Zod</strong>
+					<span>Veri doğrulama</span>
+				</div>
+				<div class="tech-item">
+					<strong>TypeScript</strong>
+					<span>Tip güvenli veri hattı</span>
+				</div>
+			</div>
+		</section>
+
+		<section class="disclaimer">
+			<h2>Sorumluluk Reddi</h2>
+			<p>Bu sitedeki özetler ve yorumlar yapay zekâ tarafından üretilmektedir. İçerikler bilgilendirme amaçlıdır ve yatırım, teknik veya hukuki tavsiye niteliği taşımaz. Doğruluk için her zaman orijinal kaynağı kontrol edin.</p>
+		</section>
+	</div>
+</Layout>
+
+<style>
+	.about-page {
+		max-width: 800px;
+		margin: 0 auto;
+	}
+
+	.lead {
+		font-size: 1.3rem;
+		line-height: 1.7;
+		font-weight: 500;
+	}
+
+	section {
+		margin-bottom: 3rem;
+	}
+
+	.feature-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+		gap: 1.5rem;
+	}
+
+	.feature {
+		border: 1px solid var(--border-color);
+		padding: 1.5rem;
+	}
+
+	.feature h3 {
+		font-family: var(--font-sans);
+		font-size: 1.1rem;
+		margin-top: 0;
+	}
+
+	.feature p {
+		font-size: 0.95rem;
+		line-height: 1.6;
+		color: var(--secondary-color);
+	}
+
+	.dont-list {
+		font-size: 1.05rem;
+		line-height: 1.8;
+	}
+
+	.tech-stack {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+		gap: 1rem;
+	}
+
+	.tech-item {
+		display: flex;
+		flex-direction: column;
+		border: 1px solid var(--border-color);
+		padding: 1rem;
+	}
+
+	.tech-item strong {
+		font-family: var(--font-mono);
+		color: var(--accent-color);
+	}
+
+	.tech-item span {
+		font-size: 0.9rem;
+		color: var(--secondary-color);
+		margin-top: 0.25rem;
+	}
+
+	.disclaimer {
+		background: rgba(194, 54, 31, 0.05);
+		border-left: 4px solid var(--accent-color);
+		padding: 1.5rem 2rem;
+	}
+
+	.disclaimer h2 {
+		margin-top: 0;
+		color: var(--accent-color);
+	}
+</style>

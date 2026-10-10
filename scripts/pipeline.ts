@@ -48,6 +48,39 @@ function cleanHTML(html: string) {
     return dom.window.document.body.textContent || "";
 }
 
+async function fetchFullArticleContent(url: string): Promise<string> {
+    try {
+        // Try direct fetch
+        const res = await axios.get(url, {
+            headers: { 
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+            },
+            timeout: 6000
+        });
+        const dom = new JSDOM(res.data);
+        const doc = dom.window.document;
+        // remove scripts, styles
+        doc.querySelectorAll('script, style, noscript, nav, footer, header').forEach(el => el.remove());
+        const mainEl = doc.querySelector('article') || doc.querySelector('main') || doc.body;
+        const text = mainEl.textContent?.replace(/\s+/g, ' ').trim() || "";
+        if (text.length > 500) return text;
+    } catch (e) {
+        // Direct fetch failed, fallback to reader proxy
+    }
+
+    try {
+        const proxyRes = await axios.get(`https://r.jina.ai/${url}`, { timeout: 8000 });
+        if (proxyRes.data && proxyRes.data.length > 300) {
+            return proxyRes.data;
+        }
+    } catch (e) {
+        // proxy fallback failed
+    }
+
+    return "";
+}
+
 function containsKeywords(text: string) {
     const lower = text.toLowerCase();
     return keywords.some((k: string) => lower.includes(k));
@@ -108,18 +141,28 @@ export async function runPipeline(isMock = false) {
 
                 console.log(`Analyzing: ${item.title} (Kaynak: ${source.name})`);
                 try {
+                    // If RSS text is short (< 800 chars), fetch full article from website
+                    let fullText = text;
+                    if (text.length < 800 && item.link) {
+                        const crawled = await fetchFullArticleContent(item.link);
+                        if (crawled && crawled.length > text.length) {
+                            fullText = crawled;
+                            console.log(`Tam makale içeriği çekildi: ${crawled.length} karakter`);
+                        }
+                    }
+
                     const result = await provider.analyzeArticle({
                         title: item.title,
                         sourceName: source.name,
                         sourceTier: source.tier,
                         url: item.link,
-                        text: text.substring(0, 10000) // limit size
+                        text: fullText.substring(0, 15000) // generous limit
                     });
 
                     // Verification
                     let validBenchmarks = [];
                     for (const b of result.benchmarklar) {
-                        if (text.includes(b.skor.toString()) || text.includes(b.skor.toLocaleString('tr-TR'))) {
+                        if (fullText.includes(b.skor.toString()) || fullText.includes(b.skor.toLocaleString('tr-TR'))) {
                             b.model = normalizeModel(b.model);
                             validBenchmarks.push(b);
                         }

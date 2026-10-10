@@ -1,0 +1,130 @@
+---
+import Layout from '../layouts/Layout.astro';
+import fs from 'fs';
+import path from 'path';
+
+const articlesDir = path.join(process.cwd(), 'data', 'articles');
+let articles = [];
+if (fs.existsSync(articlesDir)) {
+    const files = fs.readdirSync(articlesDir).filter(f => f.endsWith('.json'));
+    articles = files.map(f => JSON.parse(fs.readFileSync(path.join(articlesDir, f), 'utf-8')))
+                    .filter(a => a.kategori === 'guncelleme' || a.kategori === 'fiyat-limit' || a.kategori === 'model-cikisi')
+                    .sort((a,b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+}
+---
+
+<Layout title="Ne Değişti? | Yöney">
+	<div class="changelog-page">
+		<h1>Ne Değişti?</h1>
+		<p class="subtitle">Yapay zekâ modellerindeki sürüm güncellemeleri, fiyat ve limit değişiklikleri zaman tüneli.</p>
+
+		{articles.length === 0 ? (
+			<div class="empty-state">
+				<p>Henüz sürüm güncellemesi veya fiyat değişikliği haberi bulunmuyor. Yeni duyurular geldikçe buraya eklenecektir.</p>
+			</div>
+		) : (
+			<div class="timeline">
+				{articles.map(article => (
+					<div class="timeline-item">
+						<div class="timeline-meta">
+							<span class="badge">{article.kategori.replace('-', ' ')}</span>
+							<time>{new Date(article.date).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' })}</time>
+						</div>
+						<div class="timeline-content">
+							<h2><a href={`/haber/${article.slug}`}>{article.baslik_tr}</a></h2>
+							<p>{article.ozet_tr}</p>
+							{article.onemli_maddeler && article.onemli_maddeler.length > 0 && (
+								<ul class="points">
+									{article.onemli_maddeler.slice(0, 3).map((p: string) => (
+										<li>{p}</li>
+									))}
+								</ul>
+							)}
+						</div>
+					</div>
+				))}
+			</div>
+		)}
+	</div>
+</Layout>
+
+<style>
+	.changelog-page {
+		max-width: 800px;
+		margin: 0 auto;
+	}
+
+	.subtitle {
+		font-size: 1.1rem;
+		color: var(--secondary-color);
+		margin-bottom: 2rem;
+	}
+
+	.empty-state {
+		background: rgba(0,0,0,0.03);
+		border: 1px dashed var(--border-color);
+		padding: 3rem;
+		text-align: center;
+		font-family: var(--font-mono);
+	}
+
+	.timeline {
+		border-left: 2px solid var(--text-color);
+		padding-left: 1.5rem;
+		margin-left: 0.5rem;
+		display: flex;
+		flex-direction: column;
+		gap: 2.5rem;
+	}
+
+	.timeline-item {
+		position: relative;
+	}
+
+	.timeline-item::before {
+		content: '';
+		position: absolute;
+		left: -1.95rem;
+		top: 0.25rem;
+		width: 12px;
+		height: 12px;
+		background: var(--accent-color);
+		border-radius: 50%;
+	}
+
+	.timeline-meta {
+		display: flex;
+		gap: 1rem;
+		align-items: center;
+		margin-bottom: 0.5rem;
+		font-family: var(--font-mono);
+		font-size: 0.85rem;
+	}
+
+	.badge {
+		background: var(--text-color);
+		color: var(--bg-color);
+		padding: 0.1rem 0.5rem;
+		text-transform: uppercase;
+	}
+
+	h2 {
+		font-size: 1.4rem;
+		margin: 0.25rem 0 0.5rem 0;
+	}
+
+	h2 a {
+		text-decoration: none;
+		color: var(--text-color);
+	}
+
+	h2 a:hover {
+		color: var(--accent-color);
+	}
+
+	.points {
+		margin: 0.5rem 0 0 1rem;
+		font-size: 0.95rem;
+		color: var(--secondary-color);
+	}
+</style>

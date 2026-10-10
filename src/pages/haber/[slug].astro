@@ -33,6 +33,25 @@ const { article } = Astro.props;
 		<div class="content">
 			<p class="summary">{article.ozet_tr}</p>
 
+			{article.onemli_maddeler && article.onemli_maddeler.length > 0 && (
+				<div class="key-points">
+					<h3>Öne Çıkan Başlıklar</h3>
+					<ul>
+						{article.onemli_maddeler.map((m: string) => (
+							<li>{m}</li>
+						))}
+					</ul>
+				</div>
+			)}
+
+			{article.detayli_icerik_tr && (
+				<div class="detailed-body">
+					{article.detayli_icerik_tr.split('\n\n').map((paragraph: string) => (
+						<p>{paragraph}</p>
+					))}
+				</div>
+			)}
+
 			{article.yorum_tr && (
 				<div class="ai-comment">
 					<h3>YZ Yorumu</h3>
@@ -111,6 +130,40 @@ const { article } = Astro.props;
 		font-size: 1.25rem;
 		line-height: 1.6;
 		font-weight: 500;
+		color: var(--text-color);
+		margin-bottom: 2rem;
+	}
+
+	.key-points {
+		background: rgba(0, 0, 0, 0.03);
+		border: 1px solid var(--border-color);
+		padding: 1.25rem 1.75rem;
+		margin: 2rem 0;
+	}
+
+	.key-points h3 {
+		margin-top: 0;
+		font-family: var(--font-sans);
+		font-size: 1rem;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		color: var(--secondary-color);
+	}
+
+	.key-points ul {
+		margin: 0.5rem 0 0 1.2rem;
+		padding: 0;
+		line-height: 1.7;
+	}
+
+	.detailed-body {
+		font-size: 1.1rem;
+		line-height: 1.8;
+		margin: 2rem 0;
+	}
+
+	.detailed-body p {
+		margin-bottom: 1.5rem;
 	}
 
 	.ai-comment {
