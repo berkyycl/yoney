@@ -48,23 +48,61 @@ function cleanHTML(html: string) {
     return dom.window.document.body.textContent || "";
 }
 
-async function fetchFullArticleContent(url: string): Promise<string> {
+function extractImageFromRSS(item: any): string | null {
+    // 1. Check enclosures
+    if (item.enclosures && item.enclosures.length > 0) {
+        for (const enc of item.enclosures) {
+            if (enc.type && enc.type.startsWith('image/')) return enc.url;
+            if (enc.url && (enc.url.endsWith('.jpg') || enc.url.endsWith('.png') || enc.url.endsWith('.webp') || enc.url.endsWith('.jpeg'))) {
+                return enc.url;
+            }
+        }
+    }
+    // 2. Check media:content / media:thumbnail
+    if (item['media:content'] && item['media:content']['@'] && item['media:content']['@'].url) {
+        return item['media:content']['@'].url;
+    }
+    if (item['media:thumbnail'] && item['media:thumbnail']['@'] && item['media:thumbnail']['@'].url) {
+        return item['media:thumbnail']['@'].url;
+    }
+    // 3. Check HTML description for <img>
+    const html = item.description || item.summary || item['content:encoded'] || "";
+    if (html.includes('<img')) {
+        const dom = new JSDOM(html);
+        const img = dom.window.document.querySelector('img');
+        if (img && img.src && !img.src.includes('avatar') && !img.src.includes('icon') && !img.src.includes('pixel')) {
+            return img.src;
+        }
+    }
+    return null;
+}
+
+async function fetchFullArticleAndMeta(url: string): Promise<{ text: string; imageUrl?: string }> {
     try {
-        // Try direct fetch
         const res = await axios.get(url, {
             headers: { 
                 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
                 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
             },
-            timeout: 6000
+            timeout: 7000
         });
         const dom = new JSDOM(res.data);
         const doc = dom.window.document;
-        // remove scripts, styles
+
+        // Extract OpenGraph / Twitter Image
+        let imageUrl: string | undefined;
+        const ogImage = doc.querySelector('meta[property="og:image"]')?.getAttribute('content') ||
+                        doc.querySelector('meta[name="twitter:image"]')?.getAttribute('content');
+        if (ogImage && ogImage.startsWith('http')) {
+            imageUrl = ogImage;
+        }
+
+        // Clean text
         doc.querySelectorAll('script, style, noscript, nav, footer, header').forEach(el => el.remove());
         const mainEl = doc.querySelector('article') || doc.querySelector('main') || doc.body;
         const text = mainEl.textContent?.replace(/\s+/g, ' ').trim() || "";
-        if (text.length > 500) return text;
+
+        return { text: text.length > 500 ? text : "", imageUrl };
     } catch (e) {
         // Direct fetch failed, fallback to reader proxy
     }
@@ -72,13 +110,13 @@ async function fetchFullArticleContent(url: string): Promise<string> {
     try {
         const proxyRes = await axios.get(`https://r.jina.ai/${url}`, { timeout: 8000 });
         if (proxyRes.data && proxyRes.data.length > 300) {
-            return proxyRes.data;
+            return { text: proxyRes.data };
         }
     } catch (e) {
         // proxy fallback failed
     }
 
-    return "";
+    return { text: "" };
 }
 
 function containsKeywords(text: string) {
@@ -98,8 +136,8 @@ function normalizeModel(modelName: string) {
 
 export async function runPipeline(isMock = false) {
     console.log("Starting pipeline...");
-    if (!process.env.GEMINI_API_KEY && !isMock) {
-        console.warn("UYARI: GEMINI_API_KEY ortam değişkeni tanımlı değil! Pipeline haberleri analiz edemez.");
+    if (!process.env.GROQ_API_KEY && !process.env.GEMINI_API_KEY && !isMock) {
+        console.warn("UYARI: GROQ_API_KEY veya GEMINI_API_KEY ortam değişkeni tanımlı değil!");
     }
     
     // Ensure dirs
@@ -114,24 +152,25 @@ export async function runPipeline(isMock = false) {
         seen = JSON.parse(fs.readFileSync(seenFile, 'utf-8'));
     }
 
-    const newArticles = [];
     let allBenchmarks = [];
     const benchmarkFile = path.join(dataDir, 'benchmarks.json');
     if (fs.existsSync(benchmarkFile)) {
         allBenchmarks = JSON.parse(fs.readFileSync(benchmarkFile, 'utf-8'));
     }
 
+    // 1 AY (30 GÜN) geriye dönük haberleri al
+    const oneMonthAgo = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000);
+
     for (const source of sources.filter((s: any) => s.enabled)) {
         console.log(`Fetching ${source.name}...`);
         try {
             const items = isMock ? [] : await fetchRSS(source.url);
-            const twoWeeksAgo = new Date(Date.now() - 14 * 24 * 60 * 60 * 1000);
             for (const item of items) {
                 if (seen.includes(item.link)) continue;
                 
-                // Only consider items within the last 14 days if date is present
+                // Son 30 gün kontrolü
                 const itemDate = item.pubdate || item.date ? new Date(item.pubdate || item.date) : new Date();
-                if (itemDate < twoWeeksAgo) continue;
+                if (itemDate < oneMonthAgo) continue;
 
                 const rawText = item.description || item.summary || item['content:encoded'] || item.title || "";
                 const text = cleanHTML(rawText);
@@ -141,13 +180,17 @@ export async function runPipeline(isMock = false) {
 
                 console.log(`Analyzing: ${item.title} (Kaynak: ${source.name})`);
                 try {
-                    // If RSS text is short (< 800 chars), fetch full article from website
                     let fullText = text;
-                    if (text.length < 800 && item.link) {
-                        const crawled = await fetchFullArticleContent(item.link);
-                        if (crawled && crawled.length > text.length) {
-                            fullText = crawled;
-                            console.log(`Tam makale içeriği çekildi: ${crawled.length} karakter`);
+                    let imageUrl = extractImageFromRSS(item) || undefined;
+
+                    // Web sayfasından tam metin ve görsel meta etiketini çek
+                    if (item.link) {
+                        const crawled = await fetchFullArticleAndMeta(item.link);
+                        if (crawled.text && crawled.text.length > text.length) {
+                            fullText = crawled.text;
+                        }
+                        if (!imageUrl && crawled.imageUrl) {
+                            imageUrl = crawled.imageUrl;
                         }
                     }
 
@@ -156,7 +199,7 @@ export async function runPipeline(isMock = false) {
                         sourceName: source.name,
                         sourceTier: source.tier,
                         url: item.link,
-                        text: fullText.substring(0, 15000) // generous limit
+                        text: fullText.substring(0, 15000)
                     });
 
                     // Verification
@@ -172,10 +215,11 @@ export async function runPipeline(isMock = false) {
                     const slug = item.title.toLowerCase().replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').substring(0, 50);
                     const article = {
                         ...result,
+                        gorsel_url: imageUrl || (result.gorseller && result.gorseller.length > 0 ? result.gorseller[0] : null),
                         url: item.link,
                         source: source.name,
                         sourceTier: source.tier,
-                        date: new Date().toISOString(),
+                        date: itemDate.toISOString(),
                         slug
                     };
 

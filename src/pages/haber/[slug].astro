@@ -29,8 +29,14 @@ const { article } = Astro.props;
 			</div>
 			<h1>{article.baslik_tr}</h1>
 		</header>
-
+ 
 		<div class="content">
+			{article.gorsel_url && (
+				<div class="article-hero-image">
+					<img src={article.gorsel_url} alt={article.baslik_tr} />
+				</div>
+			)}
+
 			<p class="summary">{article.ozet_tr}</p>
 
 			{article.onemli_maddeler && article.onemli_maddeler.length > 0 && (
@@ -86,8 +92,10 @@ const { article } = Astro.props;
 				</div>
 			)}
 
-			<div class="links">
-				<a href={article.url} target="_blank" rel="noopener noreferrer" class="original-link">Orijinal Kaynağa Git ↗</a>
+			<div class="source-link-container">
+				<a href={article.url} target="_blank" rel="noopener noreferrer" class="source-text-link">
+					{article.source} kaynağında orijinal haberi incele ↗
+				</a>
 			</div>
 		</div>
 	</article>
@@ -217,24 +225,37 @@ const { article } = Astro.props;
 		text-align: right;
 	}
 
-	.links {
+	.article-hero-image {
+		width: 100%;
+		max-height: 440px;
+		overflow: hidden;
+		margin-bottom: 2rem;
+		border: 1px solid var(--border-color);
+	}
+
+	.article-hero-image img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		display: block;
+	}
+
+	.source-link-container {
 		margin-top: 3rem;
-		padding-top: 1rem;
+		padding-top: 1.5rem;
 		border-top: 1px dashed var(--border-color);
 	}
 
-	.original-link {
-		display: inline-block;
-		background: var(--text-color);
-		color: var(--bg-color);
-		padding: 0.75rem 1.5rem;
-		text-decoration: none;
+	.source-text-link {
 		font-family: var(--font-mono);
-		text-transform: uppercase;
-		font-weight: bold;
+		font-size: 0.85rem;
+		color: var(--secondary-color);
+		text-decoration: none;
+		transition: color 0.15s ease;
 	}
-	
-	.original-link:hover {
-		background: var(--accent-color);
+
+	.source-text-link:hover {
+		color: var(--accent-color);
+		text-decoration: underline;
 	}
 </style>

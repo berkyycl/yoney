@@ -8,6 +8,14 @@
     "enabled": true
   },
   {
+    "id": "anthropic-news",
+    "name": "Anthropic",
+    "type": "rss",
+    "url": "https://raw.githubusercontent.com/danieldunne/anthropic-rss/main/feed.xml",
+    "tier": "resmi",
+    "enabled": true
+  },
+  {
     "id": "google-deepmind",
     "name": "Google DeepMind",
     "type": "rss",
@@ -20,6 +28,14 @@
     "name": "Hugging Face",
     "type": "rss",
     "url": "https://huggingface.co/blog/feed.xml",
+    "tier": "resmi",
+    "enabled": true
+  },
+  {
+    "id": "mistral-news",
+    "name": "Mistral AI",
+    "type": "rss",
+    "url": "https://mistral.ai/news/index.xml",
     "tier": "resmi",
     "enabled": true
   },
@@ -44,6 +60,14 @@
     "name": "Ars Technica AI",
     "type": "rss",
     "url": "https://arstechnica.com/tag/ai/feed/",
+    "tier": "bagimsiz",
+    "enabled": true
+  },
+  {
+    "id": "venturebeat-ai",
+    "name": "VentureBeat AI",
+    "type": "rss",
+    "url": "https://venturebeat.com/category/ai/feed/",
     "tier": "bagimsiz",
     "enabled": true
   },
