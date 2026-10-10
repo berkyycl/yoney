@@ -179,12 +179,50 @@ ${articlesBlock}
           throw new Error(`Beklenen ${inputs.length} sonuç, gelen ${results.length}`);
         }
 
-        // Sonuçları tek tek resolve et
+        // Sonuçları tek tek normalize edip resolve et
         results.forEach((r, i) => {
           try {
+            // Güvenlik normalizasyonu: Gemini şema dışı kategori veya fazla etiket verebilir
+            const validCategories = ["model-cikisi", "guncelleme", "fiyat-limit", "benchmark", "arastirma", "arac-sdk", "politika", "diger"];
+            if (!validCategories.includes(r.kategori)) {
+              r.kategori = "diger";
+            }
+            if (Array.isArray(r.etiketler) && r.etiketler.length > 5) {
+              r.etiketler = r.etiketler.slice(0, 5);
+            }
+            if (typeof r.baslik_tr === 'string' && r.baslik_tr.length > 120) {
+              r.baslik_tr = r.baslik_tr.substring(0, 120);
+            }
+            if (typeof r.onem !== 'number' || r.onem < 1 || r.onem > 5) {
+              r.onem = 3;
+            }
+            if (!Array.isArray(r.onemli_maddeler)) r.onemli_maddeler = [];
+            if (!Array.isArray(r.anilan_modeller)) r.anilan_modeller = [];
+            if (!Array.isArray(r.gorseller)) r.gorseller = [];
+            if (!Array.isArray(r.benchmarklar)) r.benchmarklar = [];
+
             items[i].resolve(analysisSchema.parse(r));
           } catch (parseErr: any) {
-            items[i].reject(new Error(`Parse hatası: ${parseErr.message}`));
+            console.warn(`[Gemini Parse Warning] ${parseErr.message} — ham sonuç ile kurtarılıyor`);
+            try {
+              // Minimal fallback
+              items[i].resolve({
+                baslik_tr: (r.baslik_tr || items[i].input.title || '').substring(0, 120),
+                ozet_tr: r.ozet_tr || items[i].input.title || '',
+                detayli_icerik_tr: r.detayli_icerik_tr || r.ozet_tr || '',
+                onemli_maddeler: Array.isArray(r.onemli_maddeler) ? r.onemli_maddeler : [],
+                kategori: "diger",
+                onem: 3,
+                onem_gerekce: r.onem_gerekce || "Otomatik analiz",
+                etiketler: Array.isArray(r.etiketler) ? r.etiketler.slice(0, 5) : ["yapay-zeka"],
+                anilan_modeller: Array.isArray(r.anilan_modeller) ? r.anilan_modeller : [],
+                yorum_tr: null,
+                gorseller: [],
+                benchmarklar: []
+              });
+            } catch (fallbackErr: any) {
+              items[i].reject(new Error(`Parse hatası: ${parseErr.message}`));
+            }
           }
         });
 
