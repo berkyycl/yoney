@@ -78,5 +78,13 @@
     "url": "https://www.reddit.com/r/LocalLLaMA.rss",
     "tier": "topluluk",
     "enabled": true
+  },
+  {
+    "id": "lmsys-chatbot-arena",
+    "name": "LMSYS Chatbot Arena (LMArena)",
+    "type": "benchmark_api",
+    "url": "https://lmarena.ai",
+    "tier": "bagimsiz",
+    "enabled": true
   }
 ]
