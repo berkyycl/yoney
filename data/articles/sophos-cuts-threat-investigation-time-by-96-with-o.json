@@ -1,15 +1,16 @@
 {
   "baslik_tr": "Sophos, OpenAI Daybreak ile tehdit araştırma süresini %96 azalttı",
-  "ozet_tr": "Sophos, OpenAI Daybreak programı sayesinde ortalama tehdit yanıt süresini 38 dakikadan 89 saniyeye düşürerek %96'lık bir azalma sağladı. Bu otomasyon, Sophos Fusion platformunda çalışan AI ajanlarıyla mümkün oldu ve güvenlik operasyon merkezlerinin verimliliğini büyük ölçüde artırdı.",
-  "detayli_icerik_tr": "Sophos, 625.000'den fazla kuruluşu koruyan bir siber güvenlik firması olarak, son dört on yılda biriktirdiği tehdit istihbaratı ve yanıt playbook'larını OpenAI Daybreak programı ile birleştiriyor. Daybreak, OpenAI'nin ileri seviye modellerini Sophos'un AI‑native savunma sistemi Sophos Fusion ve Managed Detection and Response (MDR) hizmetine entegre ederek, her gün trilyonlarca olaydan 1.000‑2.000 vaka oluşturulmasını sağlıyor.\n\nDaybreak aracılığıyla geliştirilen ajanlar, müşteri bağlamı, tespitler, IoC'ler ve ilgili tehdit istihbaratını toplayıp bir araştırma planı oluşturuyor; ardından bu planı yürütüp sonuçları özetleyerek analistlere öneri sunuyor. Bu süreç, insan uzmanlığının hâlâ kritik olduğu karar noktalarına kadar uzanıyor ve otomasyonun sınırları net bir şekilde tanımlanıyor. Sophos, üç operasyonel modda (Notify, Collaborate, Authorise) müşteriye kontrol imkanı tanırken, yüksek riskli eylemler hâlâ insan denetimine bırakılıyor.\n\nUygulama sonuçları çarpıcı: Ortalama yanıt süresi 38 dakikadan 89 saniyeye düşürülürken, MDR vakalarının %52'si tamamen AI tarafından çözüldü. Bu, hem analistlerin zamanını daha stratejik görevlere yönlendirmesini hem de insan gücüne bağımlılığı azaltarak ölçeklenebilir bir savunma altyapısı oluşturulmasını sağladı. Sophos, bu başarıyı daha fazla yanıt yeteneği ekleyerek ve ajanların kapsamını genişleterek sürdürmeyi hedefliyor.",
+  "ozet_tr": "Sophos, OpenAI Daybreak programı sayesinde ortalama tehdit yanıt süresini 38 dakikadan 89 saniyeye düşürerek %96'lık bir azalma sağladı. Bu otomasyon, şirketin 625.000'den fazla müşterisine daha hızlı ve tutarlı bir güvenlik hizmeti sunmasını mümkün kılıyor.",
+  "detayli_icerik_tr": "Sophos, dört on yılı aşkın siber güvenlik tecrübesiyle 625.000'den fazla kuruluşu korurken, saldırı vektörlerinin giderek karmaşıklaştığını ve savunma penceresinin daraldığını vurguluyor. OpenAI Daybreak programı, Sophos'un Fusion platformu ve Managed Detection and Response (MDR) hizmetiyle entegre edilerek, OpenAI modellerini şirketin kendi tehdit istihbaratı, yanıt playbook'ları ve uzmanlığıyla birleştiriyor. \n\nDaybreak kapsamında geliştirilen ajanlar, bir vaka için müşteri bağlamı, tespitler, IoC'ler ve ilgili tehdit istihbaratını topluyor; ardından bir planlama modeli, araştırma planı oluşturup adımları yürütüyor ve nihai bir özetle önerilen yanıt eylemlerini analistlere sunuyor. Bu süreç, önce tamamen insan uzmanlığına dayanan 38 dakikalık ortalama yanıt süresini 89 saniyeye indirirken, vakaların yaklaşık yarısını tamamen otomatik hale getiriyor. \n\nSophos, otomasyonun sınırlarını net bir şekilde tanımlayarak üç operasyonel modda (Notify, Collaborate, Authorise) müşteriye kontrol imkanı tanıyor. Ajanların gerçekleştirdiği eylemler, yalnızca güvenli kabul edilen adımlarla sınırlı; riskli veya kritik kararlar hâlâ insan denetimine bırakılıyor. \n\nSonuçlar, AI destekli otomasyonun yalnızca yanıt süresini kısaltmakla kalmayıp, aynı zamanda analistlerin zamanını gerçek tehdit analizi ve karar verme süreçlerine odaklamasını sağladığını gösteriyor. Sophos, Daybreak ajanlarının yeteneklerini genişleterek daha sofistike yanıt senaryoları ve yeni kullanım durumları geliştirmeyi hedefliyor.",
   "onemli_maddeler": [
-    "Daybreak ajanları sayesinde ortalama yanıt süresi 38 dakikadan 89 saniyeye düştü (‑%96).",
-    "MDR vakalarının %52'si tamamen AI ile otomatik olarak çözüldü.",
-    "Sophos Fusion, 500'den fazla üçüncü taraf entegrasyonundan gelen trilyonluk veri akışını tek bir platformda birleştiriyor."
+    "Ortalama yanıt süresi 38 dakikadan 89 saniyeye düşerek %96 azaldı.",
+    "MDR vakalarının %52'si AI ajanlarıyla uçtan uca otomatik olarak çözüldü.",
+    "Sophos Fusion, 500'den fazla üçüncü taraf entegrasyonundan gelen trilyonlarca olayı 1.000‑2.000 vaka halinde özetliyor.",
+    "Üç kontrol modu (Notify, Collaborate, Authorise) sayesinde otomasyon insan denetimiyle dengeleniyor."
   ],
   "kategori": "arac-sdk",
   "onem": 4,
-  "onem_gerekce": "Siber güvenlik operasyonlarının verimliliğini artırarak insan kaynağına bağımlılığı azaltması ve AI‑driven otomasyonun ölçeklenebilirliğini göstermesi nedeniyle sektörde kritik bir adım.",
+  "onem_gerekce": "Siber güvenlik operasyonlarında yanıt süresinin kritik önemi ve insan kaynağının kıtlığı nedeniyle AI destekli otomasyonun sektörel etkisi büyük.",
   "etiketler": [
     "siber güvenlik",
     "OpenAI",
@@ -18,37 +19,28 @@
     "otomasyon"
   ],
   "anilan_modeller": [
-    "OpenAI Daybreak modelleri"
+    "OpenAI modelleri"
   ],
-  "yorum_tr": "Daybreak programı, güvenlik ekiplerinin rutin araştırma işlerini otomatikleştirerek uzmanların stratejik karar ve tehdit avcılığına odaklanmasını sağlıyor; bu da sektörde AI destekli SOC'ların yaygınlaşmasına öncülük edecek.",
+  "yorum_tr": "Daybreak, güvenlik operasyonlarını hızlandırarak analistlerin değerli uzmanlıklarını daha stratejik görevlere yönlendirmesini sağlıyor; bu da hem maliyet verimliliği hem de tehditlere karşı daha proaktif bir savunma anlamına geliyor.",
   "gorseller": [],
   "benchmarklar": [
     {
-      "model": "OpenAI Daybreak (Sophos ajanları)",
+      "model": "OpenAI Daybreak ajanları",
       "benchmark": "Ortalama yanıt süresi",
       "skor": 89,
       "birim": "saniye",
       "yuksek_iyi_mi": false,
-      "degerlendirme_ayari": null,
-      "kaynak_metinden_alinti": "average response time for cases using those agents has fallen to about 89 seconds"
+      "degerlendirme_ayari": "Ortalama yanıt süresi (önce 38 dk)",
+      "kaynak_metinden_alinti": "Now, because of the agents we’ve been able to build through the Daybreak programme, the average response time for cases using those agents has fallen to about 89 seconds."
     },
     {
-      "model": "OpenAI Daybreak (Sophos ajanları)",
+      "model": "OpenAI Daybreak",
       "benchmark": "AI ile tam otomatik çözülen MDR vakaları oranı",
       "skor": 52,
       "birim": "%",
       "yuksek_iyi_mi": true,
       "degerlendirme_ayari": null,
-      "kaynak_metinden_alinti": "Enabled Sophos to resolve 52% of MDR cases end-to-end with AI"
-    },
-    {
-      "model": "OpenAI Daybreak (Sophos ajanları)",
-      "benchmark": "Yanıt süresi azalma oranı",
-      "skor": 96,
-      "birim": "%",
-      "yuksek_iyi_mi": true,
-      "degerlendirme_ayari": null,
-      "kaynak_metinden_alinti": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak"
+      "kaynak_metinden_alinti": "Enabled Sophos to resolve 52% of MDR cases end-to-end with AI, within boundaries calibrated by Sophos analysts."
     }
   ],
   "gorsel_url": null,

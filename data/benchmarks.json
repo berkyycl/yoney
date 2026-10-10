@@ -22,5 +22,65 @@
     "date": "2026-10-09T00:00:00.000Z",
     "url": "https://example.com/gpt4o",
     "source": "OpenAI Blog"
+  },
+  {
+    "model": "OpenAI Daybreak ajanları",
+    "benchmark": "Ortalama yanıt süresi",
+    "skor": 89,
+    "birim": "saniye",
+    "yuksek_iyi_mi": false,
+    "degerlendirme_ayari": "Ortalama yanıt süresi (önce 38 dk)",
+    "kaynak_metinden_alinti": "Now, because of the agents we’ve been able to build through the Daybreak programme, the average response time for cases using those agents has fallen to about 89 seconds.",
+    "date": "2026-10-09T07:00:00.000Z",
+    "url": "https://openai.com/index/sophos",
+    "source": "OpenAI"
+  },
+  {
+    "model": "OpenAI Daybreak",
+    "benchmark": "AI ile tam otomatik çözülen MDR vakaları oranı",
+    "skor": 52,
+    "birim": "%",
+    "yuksek_iyi_mi": true,
+    "degerlendirme_ayari": null,
+    "kaynak_metinden_alinti": "Enabled Sophos to resolve 52% of MDR cases end-to-end with AI, within boundaries calibrated by Sophos analysts.",
+    "date": "2026-10-09T07:00:00.000Z",
+    "url": "https://openai.com/index/sophos",
+    "source": "OpenAI"
+  },
+  {
+    "model": "GPT-6.1 Sol",
+    "benchmark": "model cost per run (optimized workflow)",
+    "skor": 0.47,
+    "birim": "USD",
+    "yuksek_iyi_mi": false,
+    "degerlendirme_ayari": null,
+    "kaynak_metinden_alinti": "the optimized workflow on GPT‑6.1 Sol averaged $0.47 in estimated model costs",
+    "date": "2026-10-09T07:00:00.000Z",
+    "url": "https://openai.com/index/asana-browser-agent",
+    "source": "OpenAI"
+  },
+  {
+    "model": "Model B",
+    "benchmark": "model cost per run (optimized workflow)",
+    "skor": 1.24,
+    "birim": "USD",
+    "yuksek_iyi_mi": false,
+    "degerlendirme_ayari": null,
+    "kaynak_metinden_alinti": "the optimization reduced estimated model cost ... to $1.24 per run",
+    "date": "2026-10-09T07:00:00.000Z",
+    "url": "https://openai.com/index/asana-browser-agent",
+    "source": "OpenAI"
+  },
+  {
+    "model": "GPT-6.1 Sol",
+    "benchmark": "runtime per run (optimized workflow)",
+    "skor": 4,
+    "birim": "minutes",
+    "yuksek_iyi_mi": true,
+    "degerlendirme_ayari": null,
+    "kaynak_metinden_alinti": "roughly four minutes with the optimized workflow on GPT‑6.1 Sol",
+    "date": "2026-10-09T07:00:00.000Z",
+    "url": "https://openai.com/index/asana-browser-agent",
+    "source": "OpenAI"
   }
 ]

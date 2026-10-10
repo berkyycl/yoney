@@ -1,27 +1,26 @@
 {
-  "baslik_tr": "OpenAI, Matematikte Yeni AI Sonuçlarını GitHub Üzerinden Paylaşıyor",
-  "ozet_tr": "OpenAI, iç modelinin ürettiği geniş bir matematiksel sonuç yelpazesini GitHub üzerinden yayınlayarak bilim camiasına sunuyor. Bağımsız bir danışma grubu ile ortaklaşa belirlenen protokoller çerçevesinde, kanıtların Lean diliyle formalizasyonları ve hesaplama maliyetlerine dair ayrıntılar da paylaşılacak.",
-  "detayli_icerik_tr": "OpenAI, son dönemde geliştirdiği iç \"frontier\" modelinin matematik alanında elde ettiği sonuçları kamuoyu ile paylaşmak amacıyla bir GitHub deposu oluşturdu. Bu adım, sonuçların akademik topluluk tarafından incelenebilmesi, revize edilmesi ve doğru şekilde atıf yapılabilmesi için şeffaf bir platform sağlıyor. OpenAI, bu süreci şekillendirmek için Institute for Advanced Study'daki Bağımsız Matematik ve Yapay Zeka Danışma Grubu (AGMAI) ile yakın iş birliği içinde çalıştı ve grup tarafından önerilen en iyi uygulamaları benimsedi.\n\nDepoda, elde edilen kanıtların bir kısmı Lean programlama diliyle formalize edildi; Lean, matematiksel kanıtların bilgisayar tarafından doğrulanmasını mümkün kılan bir ortam sunuyor. OpenAI, ilerleyen dönemlerde daha fazla formalizasyon eklemeyi ve bu sayede kanıtların doğrulanabilirliğini artırmayı hedefliyor. Ayrıca, her bir sonucun elde edilmesi için harcanan hesaplama gücüne dair bilgiler de paylaşılıyor; ortalama bir sonuç, yaklaşık üç saatlik ChatGPT Pro kullanımına eşdeğer bir işlem süresi gerektirmiş.\n\nŞeffaflığı ve topluluk katılımını artırmak amacıyla, OpenAI bu sonuçların yanı sıra modelin mantık yürütme özetlerini, denenen problem sayısını ve kullanılan hesaplama kaynaklarını içeren on ayrı özet de sunuyor. Gelecek planları arasında, AI tarafından üretilen büyük matematiksel bulguların anlaşılmasını destekleyecek atölye çalışmaları, konferanslar ve özel programlar için finansman sağlamak yer alıyor. Şirket, modelin sorumlu bir şekilde yayınlanması ve bilimsel ilerlemeye katkı sağlaması için topluluktan gelen geri bildirimleri değerlendirmeye devam edeceğini vurguladı.",
+  "baslik_tr": "OpenAI, Matematikte AI Üretimi Sonuçlarını GitHub'da Paylaşıyor",
+  "ozet_tr": "OpenAI, iç modelinin ürettiği yeni matematiksel sonuçları GitHub üzerinden yayınlayarak araştırma topluluğuna şeffaf bir erişim sağladı. Çalışmalar, Lean programlama diliyle kanıt formalizasyonları ve modelin düşünme sürecine dair detaylı özetler içeriyor.",
+  "detayli_icerik_tr": "OpenAI, son dönemde içsel bir \"frontier\" modelinin matematikte elde ettiği bir dizi yeni sonucu kamuoyu ile paylaşma kararı aldı. Bu sonuçlar, Institute for Advanced Study'daki Bağımsız Danışma Grubu (Advisory Group on Mathematics and Artificial Intelligence) ile yürütülen istişareler neticesinde belirlenen en iyi uygulamalara uygun olarak GitHub deposuna yüklendi. Depoda, makale revizyonları, atıf protokolleri ve sonuçların nasıl elde edildiğine dair ayrıntılı bilgiler yer alıyor.\n\nPaylaşılan içeriklerin önemli bir kısmı, Lean adlı interaktif kanıt denetleme diliyle formalize edilmiş kanıtları kapsıyor; bu sayede bilgisayarlar da kanıtların doğruluğunu otomatik olarak kontrol edebilecek. OpenAI, ilerleyen süreçte daha fazla formalizasyon eklemeyi ve topluluk tarafından barındırılan alternatif platformları da değerlendirmeyi planlıyor.\n\nŞeffaflığı artırmak amacıyla, modelin her bir problem üzerindeki çalışma süresi, ChatGPT Pro kullanımına dayalı hesaplanan işlem gücü ve toplam deneme sayısı gibi istatistikler de depoya eklendi. Ortalama bir sonucun, yaklaşık üç saatlik ChatGPT Pro işlem gücüne eşdeğer bir maliyetle elde edildiği belirtiliyor. Ayrıca, modelin mantık yürütme sürecine dair on özet de sunularak araştırmacıların sonuçları daha iyi anlaması hedefleniyor.\n\nOpenAI, bu adımla yapay zekanın bilimsel keşiflerdeki rolünü pekiştirmeyi ve matematik topluluğunu yeni araçlarla donatmayı amaçlıyor. Şirket, AI tarafından üretilen büyük sonuçların anlaşılması ve yaygınlaştırılması için bir dizi atölye, konferans ve özel program da finanse edecek. Gelecek duyuruların, modelin sorumlu bir şekilde yayınlanması ve topluluktan gelen geri bildirimlerle standartların güncellenmesi üzerine odaklanacağı vurgulandı.",
   "onemli_maddeler": [
-    "OpenAI, iç frontier modelinin matematiksel sonuçlarını GitHub üzerinden şeffaf bir şekilde yayınladı.",
-    "Lean diliyle formalize edilen kanıtlar, bilgisayar destekli doğrulama imkanı sunuyor.",
-    "Ortalama bir sonucun elde edilmesi yaklaşık üç saatlik ChatGPT Pro işlem gücüne eşdeğer.",
-    "Bağımsız AGMAI danışma grubu ile belirlenen protokoller, akademik atıf ve revizyon süreçlerini düzenliyor."
+    "OpenAI, iç modelinin matematiksel sonuçlarını GitHub üzerinden şeffaf bir şekilde paylaşıyor.",
+    "Lean diliyle kanıt formalizasyonları sunularak bilgisayar destekli doğrulama imkanı sağlanıyor.",
+    "Sonuçların elde edilme süreci, kullanılan işlem gücü ve modelin mantık adımları detaylı olarak raporlanıyor."
   ],
   "kategori": "arastirma",
   "onem": 4,
-  "onem_gerekce": "AI'nın matematikte ürettiği somut sonuçların paylaşılması, akademik araştırma ve model geliştirme süreçlerine yeni bir şeffaflık ve iş birliği modeli getiriyor.",
+  "onem_gerekce": "AI destekli matematiksel keşifler, akademik araştırma ve endüstriyel uygulamalarda yeni yöntemlerin geliştirilmesine öncülük edebilir; bu nedenle duyuru yüksek öneme sahiptir.",
   "etiketler": [
-    "yapay zekâ",
+    "AI",
     "matematik",
-    "openai",
-    "lean",
-    "bilimsel paylaşım"
+    "OpenAI",
+    "Lean",
+    "şeffaflık"
   ],
   "anilan_modeller": [
     "internal frontier model"
   ],
-  "yorum_tr": "Bu adım, AI destekli matematik araştırmalarının güvenilirliğini artırarak hem akademisyenlerin hem de geliştiricilerin yeni kanıtları hızlıca incelemesini ve üzerine inşa etmesini sağlayacak. Şeffaf veri ve hesaplama maliyeti açıklamaları, topluluk içinde güven oluşturup iş birliğini teşvik edecek.",
+  "yorum_tr": "Bu adım, yapay zekanın bilimsel üretimde güvenilir bir ortak olarak konumlanmasını hızlandıracak ve araştırmacıların AI destekli kanıtları incelemesini kolaylaştıracaktır. Aynı zamanda topluluk geri bildirimleriyle modelin sorumlu bir şekilde dağıtılması, etik standartların yükselmesine katkı sağlayacak.",
   "gorseller": [],
   "benchmarklar": [],
   "gorsel_url": null,

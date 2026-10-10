@@ -1,21 +1,21 @@
 {
-  "baslik_tr": "Asana, GPT-6.1 Sol ile Tarayıcı Ajanı Maliyetini 76 Kat Azalttı",
-  "ozet_tr": "Asana, StackAI platformundaki tarayıcı ajanını GPT‑6.1 Sol modeliyle yeniden yapılandırarak çalıştırma maliyetini 76 kat, hızını ise 5 kat artırdı. Bu iyileştirme, model kullanımının $0,47 seviyesine düşmesi ve işlem süresinin dört dakikaya inmesiyle gerçekleşti.",
-  "detayli_icerik_tr": "Asana, müşterilerine iş akışlarını kod yazmadan web sitelerinde gezinme, form doldurma ve bilgi toplama imkanı sunan StackAI platformunu geliştirmeye devam ediyor. Platformun tarayıcı ajanı, büyük ölçekli kullanımda küçük verimsizliklerin bile maliyetleri artırdığı bir soruna sahipti. StackAI CTO'su Frank Hidalgo, bu sorunu çözmek için GPT‑6 Astra’yı Codex içinde deneyler yürütmek üzere görevlendirdi.\n\nHidalgo, GPT‑6 Astra’nın kod tabanını haritalamasını ve ajanın her model isteğini nasıl oluşturduğunu açıklamasını sağladı. Astra, ajanın tarama geçmişi ve ekran görüntülerini tam fiyatla yeniden gönderdiğini, ancak bu verilerin önbelleğe alınmadığını tespit etti. Ayrıca, her adımda ekran görüntülerinin silinmesi ve metnin kesilmesi, geçmişin tutarlılığını bozuyordu.\n\nBu bulgular ışığında üç temel iyileştirme uygulandı: (1) tarama geçmişinin önbelleğe alınması, (2) saklanabilecek metin miktarının artırılması ve (3) ekran görüntülerinin toplu olarak silinmesi. Astra, 120 000 ve 480 000 karakterlik iki tarih bütçesi ve altı farklı önbellek‑ekran görüntüsü politikasını dört modelde (Model A, B, C ve GPT‑6.1 Sol) üç kez test etti. En iyi sonuç, 20 ekran görüntüsü biriktirildikten sonra en yeniye geri dönülmesiyle elde edildi.\n\nSonuçlar çarpıcıydı: GPT‑6.1 Sol üzerinde optimize edilmiş akış, çalıştırma başına ortalama $0,47 maliyet ve dört dakikalık süreyle, orijinal Model B üretim ortamına göre 76 kat daha ucuz ve 5 kat daha hızlı oldu. Model B’de maliyet $36,21’den $1,24’ye (29 kat) düşerken, aynı modeldeki hız da 22,5 dakikadan dört dakikaya indi. Bu iyileştirmeler, Asana’nın müşterilerine daha güçlü modelleri sürdürülebilir maliyetlerle sunmasını sağladı ve gelecekte benzer deneylerin platform içinde otomatikleştirilmesi planlanıyor.",
+  "baslik_tr": "Asana, GPT-6.1 Sol ile tarayıcı ajanı maliyetini 76 kat düşürdü",
+  "ozet_tr": "Asana, StackAI platformundaki tarayıcı ajanını GPT‑6.1 Sol modelini kullanarak 76 kat daha ucuz ve 5 kat daha hızlı hâle getirdi. CTO Frank Hidalgo, bu iyileştirmeyi GPT‑6 Astra’nın otomatik deneyler yürütmesiyle bir haftada tamamladı.",
+  "detayli_icerik_tr": "Asana, müşterilerine kod yazmadan web sitelerinde gezinme, form doldurma ve bilgi toplama imkanı sunan StackAI platformunu geliştirmek için tarayıcı ajanının verimliliğini artırdı. CTO Frank Hidalgo, GPT‑6 Astra’yı Codex içinde çalıştırarak ajan kod tabanını haritaladı, geçmiş ve ekran görüntüsü yönetimindeki eksiklikleri tespit etti ve üç temel iyileştirme önerdi: tarama geçmişinin önbelleğe alınması, tutulan metin miktarının artırılması ve ekran görüntülerinin toplu olarak silinmesi.\n\nBu öneriler, 144 çalıştırmalı bir deneyde dört model (Model A, Model B, Model C ve GPT‑6.1 Sol) üzerinde test edildi. En iyi sonuç, 20 ekran görüntüsü biriktirildikten sonra en yeniye geri dönülmesiyle elde edilen politika ve genişletilmiş tarih bütçesiyle sağlandı. Optimizasyon, her bir çalıştırmada altı kitap için 32 alan toplama görevini tamamlayarak, GPT‑6.1 Sol’da ortalama maliyeti 0,47 $ ve süresi dört dakika olarak kaydedildi.\n\nModel B’nin orijinal üretim ayarlarında maliyet en az 36,21 $ ve süresi 22,5 dakika iken, aynı modelde yapılan optimizasyonla maliyet 1,24 $'a, süresi ise yaklaşık beş kat kısalmasına yol açtı. GPT‑6.1 Sol, Model B’ye kıyasla %89 önbellek kullanım oranıyla giriş maliyetini %95 oranında düşürerek 4 kat daha düşük bir maliyet sağladı. Bu iyileştirmeler, Asana’nın müşterilerine daha hızlı ve daha güçlü modeller sunmasını mümkün kılıyor ve operasyonel maliyetleri sürdürülebilir bir seviyeye çekiyor.\n\nAsana, bu değişiklikleri StackAI içinde yayınladı ve gelecekte benzer deneyleri otomatikleştirecek araçlar geliştirmeyi planlıyor. Hidalgo, bu yaklaşımın yazılım geliştirme yaşam döngüsünü yeniden şekillendireceğini ve mühendislerin artık bir ürün yöneticisi gibi ajan filolarını yöneteceğini belirtiyor.",
   "onemli_maddeler": [
-    "GPT‑6 Astra, tarayıcı ajanının tarih ve ekran görüntüsü yönetimindeki verimsizlikleri tespit etti.",
-    "Önbellekleme ve tarih bütçesinin artırılmasıyla model maliyeti $0,47’ye, çalışma süresi ise 4 dakikaya indirildi.",
-    "Optimizasyon, Model B’deki maliyeti %99,6, hızı ise %78 oranında iyileştirerek 76x daha ucuz ve 5x daha hızlı sonuç verdi."
+    "GPT‑6 Astra, tarayıcı ajanının kod tabanını bir hafta içinde analiz edip üç iyileştirme önerdi.",
+    "Optimizasyon, GPT‑6.1 Sol’da çalıştırma maliyetini 0,47 $'a, süresini ise dört dakikaya düşürdü (76× maliyet, 5× hız).",
+    "Model B’de aynı iyileştirmelerle maliyet 1,24 $, süresi 22,5 dakikadan dört dakikaya indi."
   ],
   "kategori": "benchmark",
   "onem": 4,
-  "onem_gerekce": "Maliyet ve hızdaki dramatik iyileştirme, bulut tabanlı AI ajan hizmetlerinin ölçeklenebilirliğini ve müşteri erişilebilirliğini doğrudan etkiler.",
+  "onem_gerekce": "Maliyet ve hız açısından büyük bir tasarruf sağlanması, Asana’nın müşterilerine daha rekabetçi hizmet sunmasını mümkün kılıyor.",
   "etiketler": [
     "Asana",
-    "GPT-6.1 Sol",
-    "StackAI",
-    "model maliyeti",
-    "tarayıcı ajanı"
+    "GPT-6",
+    "browser-agent",
+    "model-cost",
+    "StackAI"
   ],
   "anilan_modeller": [
     "GPT-6.1 Sol",
@@ -23,35 +23,35 @@
     "Model B",
     "Model C"
   ],
-  "yorum_tr": "Bu gelişme, AI destekli otomasyon platformlarının maliyet bariyerlerini düşürerek daha geniş bir kullanıcı kitlesine ulaşmasını sağlayacak; geliştiriciler ise daha hızlı deneysel döngülerle yenilik yapabilecek.",
+  "yorum_tr": "Bu gelişme, bulut tabanlı ajanların ölçeklenebilirliğini artırarak hem geliştiricilerin deneme süresini kısaltıyor hem de son kullanıcıların daha düşük maliyetle yüksek performans almasını sağlıyor.",
   "gorseller": [],
   "benchmarklar": [
     {
       "model": "GPT-6.1 Sol",
-      "benchmark": "estimated model cost per run",
+      "benchmark": "model cost per run (optimized workflow)",
       "skor": 0.47,
       "birim": "USD",
       "yuksek_iyi_mi": false,
-      "degerlendirme_ayari": "per run",
-      "kaynak_metinden_alinti": "optimized workflow on GPT‑6.1 Sol averaged $0.47 in estimated model costs"
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "the optimized workflow on GPT‑6.1 Sol averaged $0.47 in estimated model costs"
     },
     {
       "model": "Model B",
-      "benchmark": "estimated model cost per run (original)",
-      "skor": 36.21,
+      "benchmark": "model cost per run (optimized workflow)",
+      "skor": 1.24,
       "birim": "USD",
       "yuksek_iyi_mi": false,
-      "degerlendirme_ayari": "per run",
-      "kaynak_metinden_alinti": "estimated model cost from at least $36.21 (some original runs reached the step limit before they finished)"
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "the optimization reduced estimated model cost ... to $1.24 per run"
     },
     {
       "model": "GPT-6.1 Sol",
-      "benchmark": "runtime per run",
+      "benchmark": "runtime per run (optimized workflow)",
       "skor": 4,
       "birim": "minutes",
-      "yuksek_iyi_mi": false,
-      "degerlendirme_ayari": "per run",
-      "kaynak_metinden_alinti": "about four minutes with the optimized workflow on GPT‑6.1 Sol"
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "roughly four minutes with the optimized workflow on GPT‑6.1 Sol"
     }
   ],
   "gorsel_url": null,
