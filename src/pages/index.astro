@@ -1,0 +1,125 @@
+---
+import Layout from '../layouts/Layout.astro';
+import fs from 'fs';
+import path from 'path';
+
+const articlesDir = path.join(process.cwd(), 'data', 'articles');
+let articles = [];
+if (fs.existsSync(articlesDir)) {
+    const files = fs.readdirSync(articlesDir).filter(f => f.endsWith('.json'));
+    articles = files.map(f => {
+        return JSON.parse(fs.readFileSync(path.join(articlesDir, f), 'utf-8'));
+    });
+}
+articles.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+---
+
+<Layout title="Yöney: Türkiye'nin yapay zekâ haber ve benchmark takibi">
+	<div class="newspaper-grid">
+		{articles.length === 0 ? (
+			<p>Henüz haber bulunmuyor.</p>
+		) : (
+			<div class="main-column">
+				{articles.map((article, i) => (
+					<article class={i === 0 ? "headline-article" : "standard-article"}>
+						<div class="article-meta">
+							<span class="source">{article.source}</span>
+							<span class="date">{new Date(article.date).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' })}</span>
+						</div>
+						<h2><a href={`/haber/${article.slug}`}>{article.baslik_tr}</a></h2>
+						<p class="summary">{article.ozet_tr}</p>
+						<div class="tags">
+							{article.etiketler.map(tag => (
+								<span class="tag">{tag}</span>
+							))}
+						</div>
+					</article>
+				))}
+			</div>
+		)}
+	</div>
+</Layout>
+
+<style>
+	.newspaper-grid {
+		display: grid;
+		gap: 2rem;
+	}
+	
+	@media (min-width: 768px) {
+		.newspaper-grid {
+			grid-template-columns: 2fr 1fr;
+		}
+	}
+
+	.main-column {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+
+	article {
+		border-bottom: 1px solid var(--border-color);
+		padding-bottom: 2rem;
+	}
+
+	.headline-article h2 {
+		font-size: 3rem;
+		margin-bottom: 1rem;
+	}
+
+	.standard-article h2 {
+		font-size: 1.8rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.headline-article .summary {
+		font-size: 1.2rem;
+	}
+
+	.article-meta {
+		font-family: var(--font-mono);
+		font-size: 0.8rem;
+		text-transform: uppercase;
+		margin-bottom: 0.5rem;
+		display: flex;
+		gap: 1rem;
+		color: var(--secondary-color);
+	}
+
+	.source {
+		font-weight: bold;
+		color: var(--accent-color);
+	}
+	
+	h2 a {
+		text-decoration: none;
+		color: inherit;
+	}
+	
+	h2 a:hover {
+		text-decoration: underline;
+		text-decoration-color: var(--accent-color);
+	}
+
+	.tags {
+		display: flex;
+		gap: 0.5rem;
+		margin-top: 1rem;
+		flex-wrap: wrap;
+	}
+
+	.tag {
+		font-family: var(--font-mono);
+		font-size: 0.7rem;
+		background: var(--border-color);
+		padding: 0.2rem 0.5rem;
+		text-transform: uppercase;
+	}
+	
+	@media (prefers-color-scheme: dark) {
+		.tag {
+			background: #2a251f;
+		}
+	}
+</style>

@@ -1,0 +1,187 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="tr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Yöney: Türkiye'nin yapay zekâ haber ve benchmark takibi." />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		
+		<!-- Google Fonts for IBM Plex Sans & Mono -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<header class="site-header">
+			<div class="header-inner">
+				<a href="/" class="logo">
+					Y<span class="logo-accent">ö</span>ney <span class="logo-arrow">→</span>
+				</a>
+				<nav class="nav-links">
+					<a href="/">Ana Sayfa</a>
+					<a href="/benchmarklar">Benchmarklar</a>
+					<a href="/karsilastir">Karşılaştır</a>
+					<a href="/ne-degisti">Ne Değişti</a>
+					<a href="/kaynaklar">Kaynaklar</a>
+					<a href="/hakkinda">Hakkında</a>
+				</nav>
+			</div>
+			<div class="ticker">
+				<span>Son Güncelleme: {new Date().toLocaleDateString('tr-TR')}</span>
+			</div>
+		</header>
+		
+		<main>
+			<slot />
+		</main>
+
+		<footer class="site-footer">
+			<p>Özetler ve yorumlar yapay zekâ ile üretilir; her zaman orijinal kaynağı kontrol edin.</p>
+		</footer>
+	</body>
+</html>
+
+<style is:global>
+	:root {
+		--bg-color: #F3EFE6;
+		--text-color: #16130F;
+		--accent-color: #C2361F;
+		--secondary-color: #3f4e3c;
+		--border-color: #d1cdc3;
+		
+		--font-sans: 'IBM Plex Sans', sans-serif;
+		--font-serif: 'Newsreader', serif;
+		--font-mono: 'IBM Plex Mono', monospace;
+	}
+
+	@media (prefers-color-scheme: dark) {
+		:root {
+			--bg-color: #14110E;
+			--text-color: #e6e2da;
+			--border-color: #36312a;
+		}
+	}
+
+	* {
+		box-sizing: border-box;
+	}
+
+	body {
+		margin: 0;
+		padding: 0;
+		font-family: var(--font-sans);
+		background-color: var(--bg-color);
+		color: var(--text-color);
+		line-height: 1.5;
+	}
+
+	.site-header {
+		border-bottom: 2px solid var(--text-color);
+		padding-top: 1rem;
+	}
+
+	.header-inner {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-bottom: 1rem;
+	}
+	
+	@media (min-width: 768px) {
+		.header-inner {
+			flex-direction: row;
+			justify-content: space-between;
+			padding: 0 2rem 1rem 2rem;
+		}
+	}
+
+	.logo {
+		font-family: var(--font-serif);
+		font-size: 2.5rem;
+		font-weight: 600;
+		text-decoration: none;
+		color: var(--text-color);
+		letter-spacing: -0.02em;
+	}
+
+	.logo-accent {
+		color: var(--accent-color);
+	}
+	
+	.logo-arrow {
+		font-family: var(--font-sans);
+		font-size: 1.5rem;
+		vertical-align: middle;
+	}
+
+	.nav-links {
+		display: flex;
+		gap: 1rem;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin-top: 1rem;
+	}
+	
+	@media (min-width: 768px) {
+		.nav-links {
+			margin-top: 0;
+		}
+	}
+
+	.nav-links a {
+		color: var(--text-color);
+		text-decoration: none;
+		font-weight: 500;
+		font-size: 0.9rem;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+	}
+	
+	.nav-links a:hover {
+		color: var(--accent-color);
+	}
+
+	.ticker {
+		border-top: 1px solid var(--border-color);
+		padding: 0.25rem 2rem;
+		font-family: var(--font-mono);
+		font-size: 0.8rem;
+		text-transform: uppercase;
+	}
+
+	main {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 2rem;
+	}
+
+	h1, h2, h3 {
+		font-family: var(--font-serif);
+		font-weight: 500;
+		line-height: 1.2;
+		margin-top: 0;
+	}
+
+	a {
+		color: var(--accent-color);
+	}
+
+	.site-footer {
+		border-top: 1px solid var(--border-color);
+		text-align: center;
+		padding: 2rem;
+		margin-top: 4rem;
+		font-family: var(--font-mono);
+		font-size: 0.8rem;
+	}
+</style>

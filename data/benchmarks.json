@@ -1,0 +1,26 @@
+[
+  {
+    "model": "Gemini 1.5 Pro",
+    "benchmark": "MMLU",
+    "skor": 81.9,
+    "birim": "%",
+    "yuksek_iyi_mi": true,
+    "degerlendirme_ayari": "5-shot",
+    "kaynak_metinden_alinti": "achieved 81.9% on MMLU",
+    "date": "2026-10-10T00:00:00.000Z",
+    "url": "https://example.com/gemini",
+    "source": "Google DeepMind"
+  },
+  {
+    "model": "GPT-4o",
+    "benchmark": "MMLU",
+    "skor": 88.7,
+    "birim": "%",
+    "yuksek_iyi_mi": true,
+    "degerlendirme_ayari": "5-shot",
+    "kaynak_metinden_alinti": "scored 88.7 on MMLU",
+    "date": "2026-10-09T00:00:00.000Z",
+    "url": "https://example.com/gpt4o",
+    "source": "OpenAI Blog"
+  }
+]

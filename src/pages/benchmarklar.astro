@@ -1,0 +1,215 @@
+---
+import Layout from '../layouts/Layout.astro';
+import fs from 'fs';
+import path from 'path';
+
+const benchmarkFile = path.join(process.cwd(), 'data', 'benchmarks.json');
+let benchmarks = [];
+if (fs.existsSync(benchmarkFile)) {
+    benchmarks = JSON.parse(fs.readFileSync(benchmarkFile, 'utf-8'));
+}
+
+// Group by benchmark name
+const grouped = benchmarks.reduce((acc, curr) => {
+    if (!acc[curr.benchmark]) acc[curr.benchmark] = [];
+    acc[curr.benchmark].push(curr);
+    return acc;
+}, {});
+
+const benchmarkNames = Object.keys(grouped).sort();
+---
+
+<Layout title="Benchmarklar | Yöney">
+	<h1>Yapay Zekâ Benchmarkları</h1>
+	<p>Farklı modellerin çeşitli benchmarklardaki performansları.</p>
+
+	<div class="benchmark-container">
+		<div class="tabs">
+			{benchmarkNames.map(name => (
+				<button class="tab-btn" data-target={name}>{name}</button>
+			))}
+		</div>
+
+		<div class="content-area">
+			{benchmarkNames.map(name => (
+				<div class="tab-content" id={`tab-${name}`} style="display:none;">
+					<h2>{name}</h2>
+					<canvas id={`chart-${name}`} width="800" height="400"></canvas>
+					
+					<div class="table-container">
+						<table>
+							<thead>
+								<tr>
+									<th>Model</th>
+									<th>Skor</th>
+									<th>Ayar</th>
+									<th>Kaynak</th>
+									<th>Tarih</th>
+								</tr>
+							</thead>
+							<tbody>
+								{grouped[name].sort((a,b) => b.skor - a.skor).map(b => (
+									<tr>
+										<td><strong>{b.model}</strong></td>
+										<td class="tabular">{b.skor} {b.birim}</td>
+										<td>{b.degerlendirme_ayari || '-'}</td>
+										<td><a href={b.url} target="_blank">{b.source}</a></td>
+										<td>{new Date(b.date).toLocaleDateString('tr-TR')}</td>
+									</tr>
+								))}
+							</tbody>
+						</table>
+					</div>
+				</div>
+			))}
+		</div>
+	</div>
+</Layout>
+
+<script define:vars={{ grouped }}>
+	import Chart from 'chart.js/auto';
+
+	let currentChart = null;
+    const data = grouped;
+
+
+	function showTab(name) {
+		document.querySelectorAll('.tab-content').forEach(el => el.style.display = 'none');
+		document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+		
+		const target = document.getElementById(`tab-${name}`);
+		const btn = document.querySelector(`.tab-btn[data-target="${name}"]`);
+		if (target) target.style.display = 'block';
+		if (btn) btn.classList.add('active');
+
+		renderChart(name);
+	}
+
+	function renderChart(name) {
+		if (currentChart) {
+			currentChart.destroy();
+		}
+
+		const ctx = document.getElementById(`chart-${name}`);
+		if (!ctx) return;
+
+		const items = data[name].sort((a,b) => b.skor - a.skor);
+		
+		currentChart = new Chart(ctx, {
+			type: 'bar',
+			data: {
+				labels: items.map(i => i.model),
+				datasets: [{
+					label: name + ' Skoru',
+					data: items.map(i => i.skor),
+					backgroundColor: '#3f4e3c',
+					borderColor: '#16130F',
+					borderWidth: 1
+				}]
+			},
+			options: {
+				indexAxis: 'y',
+				responsive: true,
+				plugins: {
+					tooltip: {
+						callbacks: {
+							afterLabel: function(context) {
+								const item = items[context.dataIndex];
+								return `Kaynak: ${item.source}\nAyar: ${item.degerlendirme_ayari || '-'}`;
+							}
+						}
+					}
+				}
+			}
+		});
+	}
+
+	document.querySelectorAll('.tab-btn').forEach(btn => {
+		btn.addEventListener('click', (e) => {
+			showTab(e.target.dataset.target);
+		});
+	});
+
+	// Init
+	const firstTab = document.querySelector('.tab-btn');
+	if (firstTab) {
+		showTab(firstTab.dataset.target);
+	}
+</script>
+
+<style>
+	.benchmark-container {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+		margin-top: 2rem;
+	}
+
+	@media (min-width: 768px) {
+		.benchmark-container {
+			flex-direction: row;
+		}
+	}
+
+	.tabs {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		min-width: 200px;
+	}
+
+	.tab-btn {
+		background: none;
+		border: 1px solid var(--border-color);
+		padding: 0.75rem 1rem;
+		text-align: left;
+		font-family: var(--font-mono);
+		cursor: pointer;
+		color: var(--text-color);
+		transition: all 0.2s;
+	}
+
+	.tab-btn:hover {
+		background: rgba(0,0,0,0.05);
+	}
+
+	.tab-btn.active {
+		background: var(--text-color);
+		color: var(--bg-color);
+		border-color: var(--text-color);
+	}
+
+	.content-area {
+		flex: 1;
+		min-width: 0;
+	}
+
+	.table-container {
+		overflow-x: auto;
+		margin-top: 2rem;
+	}
+
+	table {
+		width: 100%;
+		border-collapse: collapse;
+		font-family: var(--font-sans);
+		font-size: 0.9rem;
+	}
+
+	th, td {
+		border: 1px solid var(--border-color);
+		padding: 0.75rem;
+		text-align: left;
+	}
+
+	th {
+		background-color: rgba(0,0,0,0.02);
+		font-family: var(--font-mono);
+		text-transform: uppercase;
+	}
+
+	.tabular {
+		font-family: var(--font-mono);
+		text-align: right;
+	}
+</style>

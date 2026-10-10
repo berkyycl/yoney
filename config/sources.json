@@ -1,0 +1,58 @@
+[
+  {
+    "id": "openai-blog",
+    "name": "OpenAI Blog",
+    "type": "rss",
+    "url": "https://openai.com/blog/rss.xml",
+    "tier": "resmi",
+    "enabled": false
+  },
+  {
+    "id": "anthropic-news",
+    "name": "Anthropic News",
+    "type": "rss",
+    "url": "https://www.anthropic.com/feed.xml",
+    "tier": "resmi",
+    "enabled": false
+  },
+  {
+    "id": "google-deepmind",
+    "name": "Google DeepMind",
+    "type": "rss",
+    "url": "https://deepmind.google/blog/rss.xml",
+    "tier": "resmi",
+    "enabled": false
+  },
+  {
+    "id": "meta-ai",
+    "name": "Meta AI",
+    "type": "rss",
+    "url": "https://ai.meta.com/blog/rss/",
+    "tier": "resmi",
+    "enabled": false
+  },
+  {
+    "id": "huggingface-blog",
+    "name": "Hugging Face Blog",
+    "type": "rss",
+    "url": "https://huggingface.co/blog/feed.xml",
+    "tier": "resmi",
+    "enabled": false
+  },
+  {
+    "id": "artificial-analysis",
+    "name": "Artificial Analysis",
+    "type": "rss",
+    "url": "https://artificialanalysis.ai/rss.xml",
+    "tier": "bagimsiz",
+    "enabled": false
+  },
+  {
+    "id": "reddit-localllama",
+    "name": "Reddit LocalLLaMA",
+    "type": "rss",
+    "url": "https://www.reddit.com/r/LocalLLaMA.rss",
+    "tier": "topluluk",
+    "enabled": true
+  }
+]

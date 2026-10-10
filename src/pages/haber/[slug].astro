@@ -1,0 +1,187 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import fs from 'fs';
+import path from 'path';
+
+export async function getStaticPaths() {
+    const articlesDir = path.join(process.cwd(), 'data', 'articles');
+    if (!fs.existsSync(articlesDir)) return [];
+    const files = fs.readdirSync(articlesDir).filter(f => f.endsWith('.json'));
+    return files.map(f => {
+        const data = JSON.parse(fs.readFileSync(path.join(articlesDir, f), 'utf-8'));
+        return {
+            params: { slug: data.slug },
+            props: { article: data }
+        };
+    });
+}
+
+const { article } = Astro.props;
+---
+
+<Layout title={`${article.baslik_tr} | Yöney`}>
+	<article class="article-detail">
+		<header>
+			<div class="meta">
+				<span class="source-tier">{article.sourceTier === 'resmi' ? 'Resmi Açıklama' : article.sourceTier === 'bagimsiz' ? 'Bağımsız Test' : 'Topluluk Testi'}</span>
+				<span class="source">{article.source}</span>
+				<span class="date">{new Date(article.date).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' })}</span>
+			</div>
+			<h1>{article.baslik_tr}</h1>
+		</header>
+
+		<div class="content">
+			<p class="summary">{article.ozet_tr}</p>
+
+			{article.yorum_tr && (
+				<div class="ai-comment">
+					<h3>YZ Yorumu</h3>
+					<p>{article.yorum_tr}</p>
+					<small>Yapay zekâ tarafından üretilmiştir.</small>
+				</div>
+			)}
+
+			{article.benchmarklar && article.benchmarklar.length > 0 && (
+				<div class="benchmarks">
+					<h3>Benchmark Sonuçları</h3>
+					<table>
+						<thead>
+							<tr>
+								<th>Model</th>
+								<th>Benchmark</th>
+								<th>Skor</th>
+								<th>Ayar</th>
+							</tr>
+						</thead>
+						<tbody>
+							{article.benchmarklar.map(b => (
+								<tr>
+									<td>{b.model}</td>
+									<td>{b.benchmark}</td>
+									<td class="score">{b.skor} {b.birim}</td>
+									<td>{b.degerlendirme_ayari || '-'}</td>
+								</tr>
+							))}
+						</tbody>
+					</table>
+				</div>
+			)}
+
+			<div class="links">
+				<a href={article.url} target="_blank" rel="noopener noreferrer" class="original-link">Orijinal Kaynağa Git ↗</a>
+			</div>
+		</div>
+	</article>
+</Layout>
+
+<style>
+	.article-detail {
+		max-width: 800px;
+		margin: 0 auto;
+	}
+
+	header {
+		margin-bottom: 2rem;
+		border-bottom: 1px solid var(--border-color);
+		padding-bottom: 1rem;
+	}
+
+	.meta {
+		font-family: var(--font-mono);
+		font-size: 0.9rem;
+		margin-bottom: 1rem;
+		display: flex;
+		gap: 1rem;
+		text-transform: uppercase;
+		color: var(--secondary-color);
+	}
+
+	.source-tier {
+		background-color: var(--accent-color);
+		color: #fff;
+		padding: 0.1rem 0.4rem;
+	}
+
+	h1 {
+		font-size: 2.5rem;
+		margin-bottom: 0;
+	}
+
+	.summary {
+		font-size: 1.25rem;
+		line-height: 1.6;
+		font-weight: 500;
+	}
+
+	.ai-comment {
+		background-color: rgba(194, 54, 31, 0.05);
+		border-left: 4px solid var(--accent-color);
+		padding: 1rem 1.5rem;
+		margin: 2rem 0;
+	}
+
+	.ai-comment h3 {
+		margin-top: 0;
+		color: var(--accent-color);
+		font-family: var(--font-sans);
+		font-size: 1rem;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+	}
+	
+	.ai-comment p {
+		margin-bottom: 0.5rem;
+	}
+
+	.ai-comment small {
+		font-family: var(--font-mono);
+		font-size: 0.75rem;
+		color: var(--secondary-color);
+	}
+
+	table {
+		width: 100%;
+		border-collapse: collapse;
+		margin: 2rem 0;
+		font-family: var(--font-mono);
+		font-size: 0.9rem;
+	}
+
+	th, td {
+		border: 1px solid var(--border-color);
+		padding: 0.75rem;
+		text-align: left;
+	}
+
+	th {
+		background-color: rgba(0,0,0,0.02);
+		font-family: var(--font-sans);
+		font-weight: 600;
+	}
+
+	.score {
+		font-weight: bold;
+		text-align: right;
+	}
+
+	.links {
+		margin-top: 3rem;
+		padding-top: 1rem;
+		border-top: 1px dashed var(--border-color);
+	}
+
+	.original-link {
+		display: inline-block;
+		background: var(--text-color);
+		color: var(--bg-color);
+		padding: 0.75rem 1.5rem;
+		text-decoration: none;
+		font-family: var(--font-mono);
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+	
+	.original-link:hover {
+		background: var(--accent-color);
+	}
+</style>
