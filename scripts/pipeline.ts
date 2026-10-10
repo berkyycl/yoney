@@ -4,7 +4,7 @@ import axios from 'axios';
 import FeedParser from 'feedparser';
 import { JSDOM } from 'jsdom';
 import { z } from 'zod';
-import { GeminiProvider } from './llm/gemini.js';
+import { FallbackLLMProvider } from './llm/fallback.js';
 import { analysisSchema, benchmarkSchema } from './llm/provider.js';
 import { fileURLToPath } from 'url';
 
@@ -17,7 +17,7 @@ const sources = JSON.parse(fs.readFileSync(path.join(ROOT, 'config/sources.json'
 const keywords = JSON.parse(fs.readFileSync(path.join(ROOT, 'config/keywords.json'), 'utf-8'));
 const modelAliases = JSON.parse(fs.readFileSync(path.join(ROOT, 'config/models.json'), 'utf-8'));
 
-const provider = new GeminiProvider();
+const provider = new FallbackLLMProvider();
 
 async function fetchRSS(url: string) {
     const res = await axios.get(url, { 
