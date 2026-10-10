@@ -1,0 +1,58 @@
+{
+  "baslik_tr": "ChatGPT'te Görsel Reklam Formatı ve Ölçüm Araçları Açıklandı",
+  "ozet_tr": "OpenAI, ChatGPT kullanıcılarına görsel reklamları sunarak reklam ekosistemini genişletiyor. Yeni format, ürün ve hizmetlerin görsel ilhamla tanıtılmasını sağlarken, ölçüm araçları ve marka uygunluğu ortaklıklarıyla reklamverenlere kampanya etkisini net bir şekilde gösteriyor.",
+  "detayli_icerik_tr": "OpenAI, haftada 1,2 milyar kullanıcıya ulaşan ChatGPT platformunda yeni bir görsel reklam formatı tanıttı. Bu format, reklamların oluşturulan görsellerden ayrı ve net bir şekilde etiketlenmiş olarak gösterilmesini sağlayarak, kullanıcıların ürün ve hizmetleri hayal etmelerine yardımcı olmayı hedefliyor. İlk testler, ücretsiz ve Go planı kullanıcıları için, ABD'de seçilmiş bir reklamveren grubu üzerinden bu ayın ilerleyen haftalarında başlayacak.\n\nReklamların etkisini ölçmek amacıyla OpenAI, Hightouch, Tealium ve LiveRamp gibi veri entegrasyon partnerleriyle çalışıyor ve AppsFlyer, Triple Whale, Adjust, DV Rockerbox, Northbeam, Branch, Singular, Kochava, Airbridge ve Tenjin gibi önde gelen attribution sağlayıcılarını platforma dahil etti. Ayrıca Fospha, Measured ve INCRMNTAL gibi tam‑huni ölçüm ortaklarıyla da entegrasyon sağlandı. Incrementality (artımsal etki) ölçümleri için Haus, Measured ve WorkMagic ile coğrafi deneyler yürütülüyor.\n\nİlk partner bulguları, ChatGPT reklamlarının yüksek performans gösterdiğini ortaya koydu. DV Rockerbox verilerine göre WeightWatchers, ChatGPT reklamları üzerinden elde ettiği maliyet başına edinim (CPA) oranını geleneksel arama reklamlarına göre %15,3 daha düşük buldu. WorkMagic, wellness markası Dose için yapılan kampanyada artımsal satın alımların %67'sinin yeni müşterilerden geldiğini rapor etti. Triple Whale ise Portland Leather'ın reklamlarından gelen ziyaretçilerin %93'ünün yeni olduğunu belirtti.\n\nReklamların yer alabileceği ortamların güvenliği için OpenAI, reklam politikaları ve yerleştirme koruma mekanizmaları geliştirdi. Otomatik inceleme, insan denetimi ve sürekli izleme ile hassas, duygusal ya da uygunsuz bağlamlarda reklamların gösterilmesi engelleniyor. Ayrıca DoubleVerify ve Integral Ad Science ile yürütülen marka uygunluğu pilotları, reklamverenlere ortam şeffaflığı sağlarken kullanıcı gizliliğini korumayı sürdürüyor.",
+  "onemli_maddeler": [
+    "ChatGPT'te görsel reklam formatı, ürün ve hizmetlerin görsel ilhamla tanıtılmasını sağlıyor.",
+    "Hightouch, Tealium, LiveRamp ve 10+ attribution partneri entegrasyonu ile reklam ölçümü genişletildi.",
+    "İlk partner sonuçları: WeightWatchers CPA %15,3 daha düşük, Dose %67 artımsal satın alma, Portland Leather %93 yeni ziyaretçi."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "OpenAI'nin reklam platformunu genişletmesi, milyarlarca kullanıcıya ulaşan ChatGPT üzerinden yeni bir gelir modeli ve pazarlama kanalı sunarak sektörde önemli bir dönüşüm yaratıyor.",
+  "etiketler": [
+    "ChatGPT",
+    "Reklam",
+    "Görsel Reklam",
+    "Ölçüm",
+    "Marka Güvenliği"
+  ],
+  "anilan_modeller": [],
+  "yorum_tr": "Görsel reklam formatının tanıtılması, reklamverenlere ChatGPT kullanıcılarıyla daha etkileşimli bir bağ kurma fırsatı verirken, ölçüm ve güvenlik altyapısının güçlendirilmesi platformun sürdürülebilir reklam gelirleri elde etmesini sağlayacak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "WeightWatchers",
+      "benchmark": "Cost per acquisition reduction",
+      "skor": 15.3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Compared to blended paid-search benchmark",
+      "kaynak_metinden_alinti": "WeightWatchers’ attributed cost per acquisition on ChatGPT Ads was 15.3% lower than its blended paid-search benchmark."
+    },
+    {
+      "model": "Dose",
+      "benchmark": "Incremental purchases from net‑new customers",
+      "skor": 67,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "According to WorkMagic",
+      "kaynak_metinden_alinti": "WorkMagic reported statistically significant lift for wellness brand Dose, with 67% of incremental purchases coming from net‑new customers."
+    },
+    {
+      "model": "Portland Leather",
+      "benchmark": "New visitor rate",
+      "skor": 93,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "According to Triple Whale",
+      "kaynak_metinden_alinti": "93% of Portland Leather’s visitors from ChatGPT Ads were new."
+    }
+  ],
+  "gorsel_url": null,
+  "url": "https://openai.com/index/new-chatgpt-ads-format-and-measurement",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-10-05T10:00:00.000Z",
+  "slug": "building-advertising-for-the-way-people-use-ai"
+}

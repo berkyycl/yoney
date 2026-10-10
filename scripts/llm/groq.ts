@@ -9,7 +9,7 @@ export class GroqProvider implements LLMProvider {
   constructor(apiKey?: string, model?: string) {
     const key = apiKey || process.env.GROQ_API_KEY || "";
     this.client = new Groq({ apiKey: key });
-    this.model = model || process.env.GROQ_MODEL || "llama-3.3-70b-versatile";
+    this.model = model || process.env.GROQ_MODEL || "openai/gpt-oss-120b";
   }
 
   async analyzeArticle(input: ArticleInput): Promise<AnalysisResult> {
@@ -57,6 +57,7 @@ Sadece ve sadece yukarıdaki formata uygun geçerli bir JSON çıktısı ver. Ma
       ],
       model: this.model,
       temperature: 0.2,
+      max_tokens: 2000,
       response_format: { type: "json_object" }
     });
 

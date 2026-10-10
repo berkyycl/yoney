@@ -1,0 +1,31 @@
+{
+  "baslik_tr": "OpenAI, MentalHealthBench ile AI Destekli Ruh Sağlığı Değerlendirmesine Yeni Standart Getiriyor",
+  "ozet_tr": "OpenAI, dünya çapında 80'den fazla lisanslı uzmanla ortaklaşa geliştirdiği MentalHealthBench adlı açık benchmark'ı duyurdu. Bu ölçüt, yapay zekâların gerçekçi ruh sağlığı diyaloglarındaki güvenlik, bağlam toplama, kullanıcı özerkliği ve eyleme geçirilebilir rehberlik gibi kritik davranışlarını puanlıyor. Sonuçlar, ChatGPT gibi modellerin bu alandaki ilerlemesini gösterirken, hâlâ terapi yerine geçmediği vurgulanıyor.",
+  "detayli_icerik_tr": "OpenAI, haftada bir milyardan fazla kullanıcıya hizmet veren ChatGPT'nin, ilişki sorunlarından günlük strese kadar geniş bir yelpazede insanlara destek sunma potansiyelini göz önünde bulundurarak MentalHealthBench adlı yeni bir benchmark geliştirdi. Bu benchmark, acil durumların ötesinde, ruh sağlığı konuşmalarının tüm spektrumunu kapsayan senaryoları ve kullanıcı profillerini (yetişkinler, ergenler, bakım verenler, klinisyenler) içeriyor. Senaryolar, gizlilik koruyucu tekniklerle oluşturulmuş sentetik diyaloglar üzerinden, gerçek dünya kullanım kalıplarını yansıtacak şekilde tasarlandı.\n\nBenchmark, 22 ülkeden 80'den fazla lisanslı psikolog ve psikiyatristin katkısıyla oluşturuldu. Uzmanlar, her senaryodaki son kullanıcı mesajına verilen yanıtları değerlendirmek için ağırlıklı rubrik kriterleri geliştirdi; bu kriterler -10 ile +10 arasında puanlanıyor ve pozitif puanlar faydalı davranışları, negatif puanlar ise zararlı davranışları cezalandırıyor. Her diyalog en az üç uzman tarafından incelendi ve iki uzmanın ortak görüşüyle kriterler nihai rubriğe alındı. Değerlendirme, OpenAI'nin otomatik derecelendiricisi GPT‑5.6 Sol tarafından gerçekleştiriliyor.\n\nModel performansları, MentalHealthBench'in tüm veri seti üzerindeki sonuçlarıyla raporlandı. Sonuçlar, modellerin bağlam toplama, empati gösterme ve uygun yönlendirmeler sağlama konularında zaman içinde iyileştiğini gösteriyor. Ancak rapor, ChatGPT'nin bir terapi yerine geçmediğini ve kritik durumlarda gerçek kriz hatları ya da güvenilir kişilerle bağlantı kurmanın hâlâ vazgeçilmez olduğunu vurguluyor. Ayrıca, kullanıcı odaklı bir yan değerlendirme çalışması, uzmanların vurguladığı bağlam toplama ve klinik doğrulukla, kullanıcıların daha çok pratik adımlar ve sıcak bir ton beklediğini ortaya koydu.\n\nOpenAI, MentalHealthBench'i açık kaynak olarak yayınlayarak araştırmacıların metodolojiyi incelemesini, kendi değerlendirmelerini yapmasını ve benchmark'ı geliştirmesini hedefliyor. Bu adım, AI destekli ruh sağlığı hizmetlerinin güvenli, faydalı ve kültürel açıdan duyarlı olmasını sağlamak için sektörel bir referans noktası oluşturmayı amaçlıyor.",
+  "onemli_maddeler": [
+    "MentalHealthBench, 80+ lisanslı uzman ve 22 ülke iş birliğiyle oluşturulan ilk kapsamlı ruh sağlığı benchmark'ıdır.",
+    "Benchmark, non-acute, high-acuity ve acil durum senaryolarını kapsayan çok dilli, çok profilli sentetik diyaloglar içerir.",
+    "Uzman rubrikleri -10/+10 ağırlıklı puanlarla model davranışlarını ölçerken, otomatik derecelendirici GPT‑5.6 Sol kullanılıyor.",
+    "Performans sonuçları, modellerin bağlam toplama ve empati yeteneklerinde ilerleme gösterdiğini, ancak hâlâ profesyonel bakımın yerini alamadığını gösteriyor."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Ruh sağlığı gibi kritik bir alanda AI güvenliği ve etkinliği ölçen ilk açık benchmark olması, araştırma ve ürün geliştirmede yeni bir standart belirliyor.",
+  "etiketler": [
+    "mental health",
+    "AI",
+    "benchmark",
+    "OpenAI",
+    "ChatGPT"
+  ],
+  "anilan_modeller": [],
+  "yorum_tr": "MentalHealthBench, geliştiricilere modellerinin ruh sağlığı bağlamındaki güçlü ve zayıf yönlerini nicel olarak göstererek iyileştirme odaklı bir yol haritası sunuyor; kullanıcılar ise daha güvenli ve empatik AI desteklerinden faydalanma olasılığı artıyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": null,
+  "url": "https://openai.com/index/introducing-mentalhealthbench",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-09-23T10:00:00.000Z",
+  "slug": "introducing-mentalhealthbench"
+}

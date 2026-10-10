@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import fs from 'fs';
 import path from 'path';
 import axios from 'axios';
@@ -119,6 +120,8 @@ async function fetchFullArticleAndMeta(url: string): Promise<{ text: string; ima
     return { text: "" };
 }
 
+const delay = (ms: number) => new Promise(res => setTimeout(res, ms));
+
 function containsKeywords(text: string) {
     const lower = text.toLowerCase();
     return keywords.some((k: string) => lower.includes(k));
@@ -226,6 +229,8 @@ export async function runPipeline(isMock = false) {
                     fs.writeFileSync(path.join(articlesDir, `${slug}.json`), JSON.stringify(article, null, 2));
                     allBenchmarks.push(...validBenchmarks.map(b => ({...b, date: article.date, url: article.url, source: article.source})));
                     seen.push(item.link);
+                    console.log(`✓ Kaydedildi: ${article.baslik_tr}`);
+                    await delay(1500);
 
                 } catch (e) {
                     console.error(`Failed to analyze ${item.title}:`, e);

@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "Oracle, ChatGPT Work ve Codex ile günler süren işleri dakikalara indiriyor",
+  "ozet_tr": "Oracle, 100.000'den fazla çalışanını ChatGPT Work ve Codex ile donatarak işe alım, veri analizi ve olay yönetimi gibi kritik süreçleri dakikalara sığdırdı. Şirket, yapay zekâ destekli prototiplerle uzmanların harcadığı günleri, herkesin birkaç dakikada tamamlayabileceği iş akışlarına dönüştürüyor.",
+  "detayli_icerik_tr": "Oracle, ChatGPT Work ve Codex'i şirket genelinde 100.000'den fazla çalışanının günlük iş akışına entegre etti. İnsan kaynakları birimi, iş tanımını girdikten sonra benzer roller, maaş benchmarkları ve coğrafi talent havuzunu saniyeler içinde raporlayan bir \"talent market intelligence\" aracı geliştirdi; bu süreç önceden 2‑4 gün sürerken şimdi 15‑20 dakikada tamamlanıyor. \n\nOracle Applications Lab ekibi, şirket içi nesne, ilişki ve kural ontolojisini oluşturarak doğal dilde sorulan iş sorularını güvenilir SQL sorgularına dönüştüren bir sistem kurdu. İş kullanıcıları, istedikleri çıktıyı tanımlıyor ve Codex, ilgili sistemleri çağırıp anlık rapor, analiz ya da uygulama sunuyor; bir kullanıcı sorusuna yanıt alması saatler yerine anlık gerçekleşti. \n\nÜretim mühendisliği alanında, site güvenilirliği mühendisleri (SRE) Codex'i olay bağlamını toplamak ve doğru playbook'u otomatik olarak getirmek için kullanıyor. Basit bir olayın çözüm süresi bir saatten birkaç dakikaya indi. Ancak Oracle, bu otomasyonun hâlâ insan gözetimi gerektirdiğini ve sistem tasarımı, güvenlik gibi guardrail'lerin kritik olduğunu vurguluyor. \n\nLiderlik perspektifinden, Oracle yöneticileri doğru guardrail'lerin belirlenmesi, prototip odaklı geliştirme ve kodun sahiplenilmesi gibi dersler çıkardı. Bu yaklaşımlar, AI destekli araçların sürdürülebilir ve yönetilebilir olmasını sağlıyor. Gelecekte, şirket içinde AI'nın kullanım alanı daha da genişleyecek ve çalışanlar yeni problemleri çözmek için Codex'i birincil araç olarak görecek.",
+  "onemli_maddeler": [
+    "ChatGPT Work ile işe alım sürecinde 2‑4 günlük araştırma, 15‑20 dakikaya indirildi.",
+    "Codex, doğal dil sorularını anlık SQL sorgularına çevirerek iş kullanıcılarına rapor ve analiz sağlıyor.",
+    "SRE ekipleri, Codex sayesinde bir saatlik olay çözüm süresini dakikalara düşürdü.",
+    "AI araçlarıyla çalışırken guardrail'ler, prototip odaklı geliştirme ve kod sahiplenmesi kritik."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Oracle gibi dev bir kurumsal ortamda AI'nın iş süreçlerine entegrasyonu, sektörde verimlilik ve rekabet avantajı yaratma potansiyeli taşıdığı için yüksek öneme sahiptir.",
+  "etiketler": [
+    "Oracle",
+    "ChatGPT Work",
+    "Codex",
+    "AI",
+    "İş Süreçleri"
+  ],
+  "anilan_modeller": [
+    "ChatGPT",
+    "Codex"
+  ],
+  "yorum_tr": "Oracle'ın bu uygulamaları, büyük ölçekli kurumsal şirketlerde AI'nın sadece deneysel bir teknoloji olmadığını, gerçek iş değerine dönüştüğünü gösteriyor. Geliştiriciler daha hızlı prototip üretirken, kullanıcılar da karmaşık veri taleplerini anında alabiliyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": null,
+  "url": "https://openai.com/index/oracle",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-10-08T16:00:00.000Z",
+  "slug": "how-oracle-turns-days-of-work-into-minutes-with-ch"
+}

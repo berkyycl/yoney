@@ -1,0 +1,31 @@
+{
+  "baslik_tr": "OpenAI, Koordine Model Distilasyon Kampanyasını Engelledi",
+  "ozet_tr": "OpenAI, Temmuz ayının ilk haftasından itibaren yürütülen ve modellerin korumalı akıl yürütme süreçlerini izinsiz olarak çıkarmayı hedefleyen bir koordine saldırı kampanyasını tespit edip durdurdu. Bu saldırı, model çıktılarının şifreli akıl yürütme kısmını başka bir modele öğretmek suretiyle güvenlik önlemlerini atlatmayı amaçlıyordu.",
+  "detayli_icerik_tr": "OpenAI, Temmuz 1'de başlayan ve ilk haftalarda düşük hacimde gerçekleşen bir saldırı kampanyasını izledi. 24-25 Temmuz tarihlerinde 4.000'den fazla kullanıcı üzerinden 16.000 istekle zirveye ulaşan bu kampanya, 15.000'den fazla kullanıcıyı etkileyen bir dizi prompt kalıbı içeriyordu ve 28 Temmuz'a kadar tamamen engellendi. Saldırganlar, bir sohbet oturumundaki şifreli akıl yürütme verisini kopyalayıp başka bir oturumda çözülmesini ve transkribe edilmesini talep ederek korumalı mantığı ortaya çıkarmaya çalıştı.\n\nOpenAI, bu saldırıların bir \"adversarial distillation\" (karşıt distilasyon) örneği olduğunu belirtti. Bu teknik, bir modelin içsel mantığını izinsiz olarak başka bir modele öğretmek ve böylece orijinal modelin güvenlik ve etik kısıtlamalarını atlatmak anlamına geliyor. Şirket, saldırganların veri tabanına ya da şifreleme anahtarına doğrudan erişim sağlamadığını, ancak model etkileşimlerini manipüle ederek gizli akıl yürütmeyi dışarı çıkardığını vurguladı.\n\nSaldırının bir kısmının Moonshot AI ve Kimi projesiyle ilişkilendirilen bir aktör grubuna ait olduğu değerlendirildi. OpenAI, bu tür bir tehditin sadece kendi modellerine özgü olmadığını, tüm ileri seviye yapay zeka sistemlerini etkileyebileceğini ve ulusal güvenlik açısından risk taşıdığını belirtti.\n\nYanıt olarak OpenAI, sahte ve kötü niyetli hesapları yasakladı, kayıt ve altyapı kontrollerini güçlendirdi, şifreli akıl yürütme korumasını tüm kullanıcı, çalışma alanı ve organizasyon seviyelerinde sıkılaştırdı. Ayrıca, şifreli akıl yürütmenin yeniden oynatılmasını engelleyen bir yol kapatıldı ve akış halinde üretilen çıktılarda gizli mantığı tespit eden denetimler eklendi. Şirket, bu bulguları Frontier Model Forum ve ilgili devlet kanallarıyla paylaşarak sektörel savunmayı artırmayı hedefliyor.",
+  "onemli_maddeler": [
+    "Saldırı, modellerin şifreli akıl yürütme kısmını izinsiz olarak dışa çıkarmayı amaçlayan \"adversarial distillation\" tekniğiyle gerçekleştirildi.",
+    "16.000 istek ve 4.000'den fazla kullanıcıyla yüksek hacimli bir kampanya 28 Temmuz'da tamamen engellendi.",
+    "OpenAI, Moonshot AI ve Kimi projesiyle ilişkilendirilen bir aktör grubunu kampanyanın çekirdek kaynağı olarak değerlendirdi.",
+    "Şirket, hesap yasaklamaları, teknik kontroller ve sektör ortaklarıyla bilgi paylaşımı yoluyla savunma mekanizmalarını güçlendirdi."
+  ],
+  "kategori": "politika",
+  "onem": 4,
+  "onem_gerekce": "Model güvenliği ve ulusal güvenlik açısından kritik bir tehdit ortaya konuldu; saldırının ölçeği ve potansiyel etkileri sektörde geniş çaplı önlemler alınmasını zorunlu kılıyor.",
+  "etiketler": [
+    "model-distilasyon",
+    "güvenlik",
+    "OpenAI",
+    "adversarial",
+    "Frontier Model Forum"
+  ],
+  "anilan_modeller": [],
+  "yorum_tr": "Bu gelişme, yapay zeka güvenliğinin sadece teknik bir sorun olmadığını, aynı zamanda stratejik bir risk olduğunu gösteriyor. Geliştiriciler, model içi akıl yürütme verilerini korumak için çok katmanlı savunma stratejileri benimsemeli; kullanıcılar ise hizmet şartlarına uygun kullanım konusunda daha bilinçli olmalı.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": null,
+  "url": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-09-30T10:30:00.000Z",
+  "slug": "disrupting-a-coordinated-model-distillation-campai"
+}
