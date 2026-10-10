@@ -58,6 +58,9 @@ function normalizeModel(modelName: string) {
 
 export async function runPipeline(isMock = false) {
     console.log("Starting pipeline...");
+    if (!process.env.GEMINI_API_KEY && !isMock) {
+        console.warn("UYARI: GEMINI_API_KEY ortam değişkeni tanımlı değil! Pipeline haberleri analiz edemez.");
+    }
     
     // Ensure dirs
     const dataDir = path.join(ROOT, 'data');

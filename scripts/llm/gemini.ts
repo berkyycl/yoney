@@ -2,8 +2,9 @@ import { GoogleGenAI } from "@google/genai";
 import { type AnalysisResult, type ArticleInput, type LLMProvider, analysisSchema } from "./provider.js";
 import { systemPrompt } from "./prompt.js";
 
-// Make sure to configure API key in environment
-const ai = new GoogleGenAI({});
+// Ensure API key is read from GEMINI_API_KEY
+const apiKey = process.env.GEMINI_API_KEY || "";
+const ai = new GoogleGenAI({ apiKey: apiKey });
 
 export class GeminiProvider implements LLMProvider {
   async analyzeArticle(input: ArticleInput): Promise<AnalysisResult> {
