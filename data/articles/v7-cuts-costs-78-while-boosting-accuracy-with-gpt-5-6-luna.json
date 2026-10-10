@@ -1,0 +1,55 @@
+{
+  "baslik_tr": "V7 Go, GPT-5.6 Luna ile Maliyetleri %78 Azaltıp Doğruluğu %99.9'a Çıkarıyor",
+  "ozet_tr": "V7, yeni GPT-5.6 Luna modelini kullanan V7 Go platformu sayesinde belge işleme maliyetlerini %78 oranında düşürürken, çok adımlı iş akışlarında %99.9 doğruluk elde etti. Platform, Context Graph adlı ortak bellek yapısıyla finans, sigorta ve gayrimenkul gibi sektörlerdeki karmaşık bağlamı modele aktararak hataları minimize ediyor.",
+  "detayli_icerik_tr": "V7, 2018 yılında Rizzoli ve Edwardsson tarafından kurulan ve şirketlerin iş bağlamını AI sistemlerine öğretmeyi amaçlayan bir platform. V7 Go, GPT‑5.6 Luna ile milyonlarca dosyadan bilgi çıkarıp bu verileri Context Graph içinde varlıklar, ilişkiler ve kanıtlarla birleştiriyor; bu yapı, GPT‑5.6 Terra ve Sol'un çok adımlı talimatları ve araç kullanımını yönlendirmesine olanak tanıyor. En zorlu sorgular için ise GPT‑6 Astra devreye alınıyor.\n\nContext Graph, gelen dosyaları SharePoint, Google Drive gibi depolardan tarayarak varlıkları tanımlıyor, ilişkileri ve metrikleri kaydediyor ve bu bilgiyi uzun bağlamlı aramalara göre çok daha hızlı ve ucuz bir şekilde sunuyor. Eksik bilgi olduğunda ise RAG (Retrieval‑Augmented Generation) ile doğrudan belge araması yapılabiliyor. Bu yapı sayesinde V7 Go, 50‑100 adımlık iş akışlarını dakikalar içinde tamamlayıp %99.9 doğruluk sağlıyor ve her kararın denetlenebilir bir kaydını tutuyor.\n\nV7, platformunun performansını çeşitli benchmarklarla ölçüyor. HERB benchmark'ında retrieval‑only sistemi %69 daha iyi sonuç verirken, yanıtlanamaz sorularda halüsinasyonları %38 azalttı. Çok adımlı araç çağrılarında ise GPT‑5.6 Sol, hata oranını %2.7'den %0.2'ye düşürdü. En zor seviyedeki HERB sorularında GPT‑5.6 Sol %78, GPT‑6 Astra %89 doğruluk elde etti. Ayrıca, GPT‑5.6 Luna ile belge başına maliyet %78 azaldı ve V7 Go iş akışları %50 daha hızlı tamamlandı.\n\nMüşteri deneyimleri de bu iyileşmeleri doğruluyor: varlık yöneticileri işlemleri 21 kat hızlandırarak bir günü 15 dakikaya indirdi, bir finans hizmetleri ekibi inceleme süresini 100 saatten 10 saate düşürerek görev başına 12.000 $ tasarruf sağladı, sigorta ekipleri ise hasar işleme hatalarını %13.5 azalttı. V7, OpenAI'nin API kapasite artırımlarını saatler içinde karşılayabilmesi ve GPT‑5.6 Sol'un araç‑çağrı hata oranını %2.7'den %0.2'ye indirmesi sayesinde OpenAI'yi tercih ediyor.",
+  "onemli_maddeler": [
+    "V7 Go, GPT‑5.6 Luna ile belge işleme maliyetlerini %78 azalttı.",
+    "Context Graph sayesinde çok adımlı iş akışları %99.9 doğrulukla ve dakikalar içinde tamamlanıyor.",
+    "GPT‑5.6 Sol, araç‑çağrı hata oranını %2.7'den %0.2'ye düşürerek güvenilirliği artırdı.",
+    "GPT‑6 Astra, en zor HERB sorgularında %89 doğruluk elde etti."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Kurumsal AI çözümlerinde maliyet ve doğruluk kritik; V7'ün elde ettiği %78 maliyet düşüşü ve %99.9 doğruluk sektörel dönüşüm potansiyeli taşıyor.",
+  "etiketler": [
+    "GPT-5.6",
+    "V7 Go",
+    "Context Graph",
+    "Enterprise AI",
+    "Maliyet Azaltma"
+  ],
+  "anilan_modeller": [
+    "GPT-5.6 Luna",
+    "GPT-5.6 Terra",
+    "GPT-5.6 Sol",
+    "GPT-6 Astra"
+  ],
+  "yorum_tr": "V7'ün Context Graph ve yeni GPT‑5.6/6 modelleri, kurumsal AI uygulamalarında hem maliyet hem de güvenilirlik açısından çıtayı yükseltiyor; geliştiriciler daha az token harcayarak karmaşık iş akışlarını otomatikleştirebilir, kullanıcılar ise daha hızlı ve hatasız sonuç alacak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GPT-5.6 Sol",
+      "benchmark": "Tool-call error rate",
+      "skor": 0.2,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "\"GPT-5.6 Sol reduced the tool-call error rate from 2.7% with GPT-5.5, to 0.2%\""
+    },
+    {
+      "model": "GPT-5.6 Luna",
+      "benchmark": "Cost per document reduction",
+      "skor": 78,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "\"V7 measured another efficiency gain with GPT‑5.6 Luna: a 78% lower cost per document than with GPT‑5.4 mini\""
+    }
+  ],
+  "gorsel_url": "https://images.ctfassets.net/kftzwdyauwt9/3Av2nLs9MOiSrB5wMXLvL2/35fbde20aca9773bd64b1e8ea2897750/square.png?w=3840&q=90&fm=webp",
+  "url": "https://openai.com/index/v7",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-09-21T00:00:00.000Z",
+  "slug": "v7-cuts-costs-78-while-boosting-accuracy-with-gpt-5-6-luna"
+}

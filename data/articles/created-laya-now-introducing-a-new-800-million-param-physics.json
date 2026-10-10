@@ -1,0 +1,37 @@
+{
+  "baslik_tr": "Fizik Tabanlı Karar Modeli Vega Tanıtıldı: 800M Parametre, 73k Bağlam ve Test-Time Training Desteği",
+  "ozet_tr": "Açık kaynak yapay zekâ topluluğunun öne çıkan geliştiricilerinden Nandha Kishor, fizik simülasyonu mantığıyla karar veren yeni 'Vega' modelini açık kaynak olarak duyurdu. Yalnızca 800 milyon parametreli olan ve 4B varyantı da bulunan model, 73 bin token bağlam penceresi, çok modlu görsel desteği ve yenilikçi Test-Time Training (TTT) mimarisiyle JEV benchmark'larını tek atımda (single-shot) geride bırakmayı başarıyor.",
+  "detayli_icerik_tr": "LocalLLaMA topluluğunda daha önce Laya projesiyle dikkatleri üzerine çeken bağımsız araştırmacı Nandha Kishor, 'Vega' adını verdiği yeni fizik tabanlı tipli karar modelini (typed decision model) açık kaynak olarak yayınladı. Yalnızca 800 milyon (0.8B) ve 4 milyar (4B) parametre boyutlarında geliştirilen Vega; küçük boyutuna rağmen 73 bin token bağlam uzunluğu ve görsel girdi desteğiyle uç birimlerde yüksek verimli sınıflandırma ve karar mekanizmaları kurmayı hedefliyor.\n\nVega'nın çalışma mantığı, standart belirteç üretim (token generation) yöntemlerinden oldukça farklı bir yol izliyor. Model, gizli katmanlardan (hidden layers) gözlem, soru ve aday yanıt vektörlerini çıkararak bunları ağırlık matrisleriyle izdüşürüyor. Bu izdüşüm sonucunda, muhtemel çıktılara (örneğin 'EVET' ve 'HAYIR') karşılık gelen sanal vadilerden oluşan bir potansiyel enerji yüzeyi inşa ediliyor. Soru ve son belirteç vektörleri bu yüzey üzerinde bir top gibi simüle ediliyor; top sürtünme katsayısına bağlı olarak yavaşlayarak en uygun vadinin tabanına düşüyor ve karar bu fiziksel yerleşime göre belirleniyor.\n\nMotor ve adaptör ikilisiyle Test-Time Training (TTT) mimarisi olarak yapılandırılan Vega, geleneksel büyük dil modellerinin yüksek hesaplama ve çıkarım maliyetini aşarak dar boğazları çözmeyi amaçlıyor. Özellikle sistem güvenliği, talimat manipülasyonu (jailbreak/prompt injection) tespiti ve çoktan seçmeli tipli sınıflandırma senaryolarında, JEV mimarisinin elde ettiği tek atımlı (single-shot) benchmark skorlarını aştığı belirtiliyor.\n\nModelin ağırlıkları, kodları ve etkileşimli demosu Hugging Face ve GitHub üzerinden genel erişime açıldı. 0.8B parametre büyüklüğünde bir modelin görsel girdileri işleyebilmesi ve 73k gibi geniş bir bağlam penceresini simülasyon tabanlı bir karar mimarisiyle harmanlaması, yerel yapay zekâ modellerinde enerji ve gecikme optimizasyonu arayan geliştiriciler için önemli bir alternatif sunuyor.",
+  "onemli_maddeler": [
+    "800M ve 4B parametre boyutlarında, 73k token bağlam penceresine ve görsel girdi desteğine sahip yeni Vega mimarisi açık kaynak olarak sunuldu.",
+    "Model, Test-Time Training (TTT) mantığında çalışan motor ve adaptör ikilisiyle yapılandırıldı.",
+    "Karar mekanizması; vektör izdüşümleriyle vadiler oluşturan ve sürtünme simülasyonuyla topun uygun vadiye yerleşmesini sağlayan fizik tabanlı bir dinamik kullanıyor.",
+    "Vega, tek atımlı (single-shot) değerlendirmelerde JEV mimarisine ait sınıflandırma benchmark'larını geride bırakıyor.",
+    "GitHub, HuggingFace Model Card ve Spaces üzerinden model ağırlıkları ile test ortamı erişime açıldı."
+  ],
+  "kategori": "diger",
+  "onem": 3,
+  "onem_gerekce": "Küçük parametreli modellerde (0.8B) standart otoregresif üretim yerine fizik tabanlı dinamik sistemlerle karar verme ve TTT yaklaşımını uygulayan özgün bir mimari yeniliktir.",
+  "etiketler": [
+    "Vega",
+    "Laya",
+    "LocalLLaMA",
+    "Test-Time Training",
+    "Küçük Dil Modelleri"
+  ],
+  "anilan_modeller": [
+    "Vega",
+    "Laya",
+    "JEV",
+    "vega-08b-public-intents"
+  ],
+  "yorum_tr": "Geleneksel üretken LLM'lerin sınıflandırma ve karar görevlerinde harcadığı yüksek hesaplama maliyeti düşünüldüğünde, Vega gibi fizik tabanlı dinamik sistemleri TTT ile birleştiren yaklaşımlar uç birimler (edge AI) için çığır açıcı olabilir. 800M parametrelik ultra hafif bir gövdede 73k bağlam ve görsel desteği sunulması, yerel sistemlerde güvenlik denetleyicisi (guardrail) ve filtreleme katmanı olarak modelin pratik değerini oldukça artırıyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/azxgzp7xcluh1.png?width=640&crop=smart&auto=webp&s=e26c867ac08a3ca7b45c8ae7f3c36f6eb17bc41d",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x28zr9/created_laya_now_introducing_a_new_800_million/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-10T07:22:42.000Z",
+  "slug": "created-laya-now-introducing-a-new-800-million-param-physics"
+}

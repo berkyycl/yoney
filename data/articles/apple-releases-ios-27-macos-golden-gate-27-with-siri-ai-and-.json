@@ -1,0 +1,38 @@
+{
+  "baslik_tr": "Apple, Siri AI ve Yeni Nesil İşletim Sistemlerini Duyurdu: iOS 27 ve macOS Golden Gate Yayınlandı",
+  "ozet_tr": "Apple; iOS 27, macOS Golden Gate 27, watchOS 27 ve visionOS 27 dahil olmak üzere yeni nesil işletim sistemi güncellemelerini kullanıma sundu. Büyük dil modelleriyle baştan tasarlanan bağlam duyarlı Siri AI, doğrudan ekran analizi ve uygulama içi aksiyon kabiliyetiyle güncellemelerin merkezinde yer alıyor.",
+  "detayli_icerik_tr": "Apple, geniş kapsamlı yıllık işletim sistemi güncellemelerini resmen kullanıma sundu. Güncelleme paketinin en dikkat çekici yeniliği; iOS, macOS, watchOS ve visionOS genelinde kullanıma sunulan ve geniş dil modellerine (LLM) dayanan yeni Siri AI oldu. Yenilenen Siri; kullanıcıların ekranında bulunan içeriği doğrudan anlama, e-posta ve mesaj gibi geçmiş kişisel bağlamlar üzerinde derinlemesine arama yapma ve geliştiricilerin destek sunduğu durumlarda uygulamalarla uçtan uca etkileşime geçme becerisi kazanıyor. Şirket ayrıca ChatGPT ve Claude arayüzlerini andıran bağımsız bir Siri uygulamasını da ekosisteme kazandırdı.\n\nSiri AI ve Apple Intelligence özellikleri, büyük oranda Apple tarafından geliştirilen AFM 3 (Apple Foundation Model 3) ailesi tarafından destekleniyor. Cihaz üzerinde yerel olarak çalışan modeller arasında 3 milyar parametreli AFM 3 Core ile 20 milyar parametrelik sparse (seyrek) mimarili AFM 3 Core Advanced yer alıyor. Advanced sürümü, göreve bağlı olarak işlem anında yalnızca 1 ila 4 milyar parametreyi aktif hale getirerek yüksek enerji ve donanım verimliliği sağlıyor. Daha karmaşık hesaplamalar ve görsel üretimi içinse uzaktaki sunucularda çalışan AFM 3 Cloud, ADM 3 Cloud ve AFM 3 Cloud Pro modellerinden yararlanılıyor.\n\nYapay zekâ kabiliyetlerinin ötesinde Apple, işletim sistemlerinin görsel dilinde de önemli iyileştirmelere gitti. 'Liquid Glass' arayüz tasarımındaki şeffaflık seviyesini ayarlamak için hem iOS hem de macOS tarafına kullanıcı kontrollü bir kaydırıcı eklendi. macOS Golden Gate sürümünde tüm sistem arayüz öğelerine HDR desteği gelirken harici monitör uyumluluğu da artırıldı. Donanım tarafında Siri AI özellikleri en az iPhone 15 Pro veya iPhone 16 serisi bir iPhone ile Apple Silicon (M serisi) işlemcili Mac modellerini gerektiriyor.\n\nGüncelleme aynı zamanda önemli bir dönüm noktasına işaret ediyor; macOS Golden Gate, Intel tabanlı yazılımları Apple Silicon üzerinde çalıştırmaya olanak tanıyan Rosetta çeviri katmanını destekleyen son işletim sistemi sürümü oldu. Bu sürümden sonra Intel için geliştirilmiş eski uygulamalar desteğini kaybedecek; ancak Apple, eski Intel Mac oyunları için bu kurala özel bir istisna tanıyacağını bildirdi.",
+  "onemli_maddeler": [
+    "Siri AI, geniş dil modelleri ve ekran içi bağlam farkındalığıyla tamamen yenilenerek bağımsız bir sohbet uygulamasına kavuştu.",
+    "Cihaz içi işlemler için 3B parametreli AFM 3 Core ve dinamik 1-4B parametre aktive eden 20B parametreli sparse AFM 3 Core Advanced modelleri tanıtıldı.",
+    "Daha ağır işlemler için AFM 3 Cloud, ADM 3 Cloud (görsel) ve AFM 3 Cloud Pro sunucu modelleri devreye giriyor.",
+    "Siri AI desteği yalnızca iPhone 15 Pro, iPhone 16 veya üstü cihazlar ile M serisi Mac modellerine sunuluyor.",
+    "macOS Golden Gate, Intel uygulamalarını çalıştıran Rosetta katmanını destekleyen son macOS sürümü olarak kayıtlara geçti."
+  ],
+  "kategori": "diger",
+  "onem": 4,
+  "onem_gerekce": "Apple'ın tüm işletim sistemi ekosistemine entegre ettiği yeni nesil cihaz içi ve bulut hibrit LLM mimarisi (AFM 3) ile Siri'nin baştan aşağı yenilenmesi, tüketici yapay zekâsı pazarındaki dinamikleri doğrudan etkileyecek büyüklükte bir güncellemedir.",
+  "etiketler": [
+    "Apple",
+    "iOS 27",
+    "macOS Golden Gate",
+    "Siri AI",
+    "AFM 3"
+  ],
+  "anilan_modeller": [
+    "AFM 3 Core",
+    "AFM 3 Core Advanced",
+    "AFM 3 Cloud",
+    "ADM 3 Cloud",
+    "AFM 3 Cloud Pro"
+  ],
+  "yorum_tr": "Apple'ın 20 milyar parametrelik sparse mimariyle çalışan AFM 3 Core Advanced modeli, cihaz içi verimlilikte mobil yapay zekâ için kritik bir eşiği temsil ediyor. Rosetta desteğinin bu sürümle son bulması ise Apple ekosisteminin tamamen yapay zekâ hızlandırıcılı Apple Silicon mimarisine kilitlendiğini gösteriyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/Apple-OS-27-1152x648-1789411862.jpg",
+  "url": "https://arstechnica.com/apple/2026/09/apple-releases-ios-27-macos-golden-gate-27-with-siri-ai-and-liquid-glass-refinements/",
+  "source": "Ars Technica AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-09-14T19:28:42.000Z",
+  "slug": "apple-releases-ios-27-macos-golden-gate-27-with-siri-ai-and-"
+}

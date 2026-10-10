@@ -1,0 +1,143 @@
+{
+  "baslik_tr": "Strata Çıkarım Motoru ve Qwen3.8 Flash Next ile Yerel Donanımda Yüksek Hızlı Başarım",
+  "ozet_tr": "LocalLLaMA topluluğunda paylaşılan yeni bir benchmark çalışması, Strata çıkarım arka ucunun Qwen3.8-Flash-Next modeli üzerinde vLLM motoruna kıyasla iki kat daha yüksek belirteç üretim hızlarına ulaştığını gösterdi. RTX PRO 6000 iş istasyonunda yapılan testler, özellikle kodlama ve akıl yürütme görevlerinde saniyede yaklaşık 300 token seviyelerine çıkılabildiğini kanıtlıyor.",
+  "detayli_icerik_tr": "Yerel yapay zekâ ve açık kaynaklı model geliştiricileri için çıkarım motoru performansı büyük bir öneme sahipken, LocalLLaMA topluluğunda paylaşılan yeni bir test Strata adlı çıkarım arka ucunun dikkat çekici yeteneklerini gözler önüne serdi. Testi gerçekleştiren araştırmacı, 96 GB VRAM'e sahip tek bir Nvidia RTX PRO 6000 Workstation üzerinde Unsloth tarafından kuantize edilen Qwen3.8-Flash-Next UD-Q4_K_XL modelini Strata ve vLLM motorlarıyla karşılaştırdı. Yapılandırmada INT8 KV cache, 256K bağlam uzunluğu ve MTP-4 spekülatif kod çözme (speculative decoding) teknikleri kullanıldı.\n\nElde edilen sonuçlarda tek istekli kod çözme (Single-request decode / C1) senaryosunda Strata, vLLM altyapısına kıyasla neredeyse iki katı hız artışı sağladı. Kodlama görevinde vLLM aynı donanımda 162.6 t/s hız üretirken, Strata 298.9 t/s hızına ulaştı. Sayma ve akıl yürütme (reasoning) görevlerinde de benzer şekilde sırasıyla 320.4 t/s ve 289.1 t/s gibi oldukça yüksek değerler kaydedildi.\n\nKarşılaştırmanın bir diğer dikkat çekici boyutu ise vLLM'in DGX Spark TP2 kümesindeki sonuçlarıyla kıyaslanması oldu. DGX Spark TP2 üzerinde vLLM kodlama görevinde yalnızca 60.1 t/s üretirken, tek kartlı RTX PRO 6000 üzerinde koşan Strata bu rakamı yaklaşık %80 oranında geride bıraktı. Testi yapan kullanıcı, vLLM örneklerinde Nvidia'nın NVFP4 kuantizasyonunun çalıştırıldığını, bu nedenle birebir doğrudan bir kıyaslama olmasa da Strata'nın sağladığı verimliliğin açıkça hissedildiğini belirtti.\n\nBu sonuçlar, model mimarilerinin yanı sıra optimize edilmiş spekülatif kod çözme mekanizmaları ile modern çıkarım motorlarının tek kartlı iş istasyonlarında dahi veri merkezi seviyesinde hızlara erişebileceğini somut şekilde ortaya koyuyor.",
+  "onemli_maddeler": [
+    "Strata motoru, tek kartlı RTX PRO 6000 (96GB) üzerinde Qwen3.8-Flash-Next modeliyle kodlama görevinde saniyede 298.9 token hızına ulaştı.",
+    "Aynı donanımda çalışan vLLM (NVFP4), Strata'ya kıyasla görev genelinde yaklaşık %46 ila %49 daha yavaş kaldı.",
+    "DGX Spark TP2 kümesinde koşan vLLM örneği ise tek kartlı Strata yapılandırmasından yaklaşık %77-%82 oranında daha düşük performans sergiledi.",
+    "Test kurulumunda INT8 256K KV cache ve MTP-4 spekülatif kod çözme teknikleri kullanılarak yüksek verimlilik elde edildi."
+  ],
+  "kategori": "diger",
+  "onem": 3,
+  "onem_gerekce": "Tekil iş istasyonlarında spekülatif kod çözme ve Strata motoruyla elde edilen bu çıkarım hızları, yerel LLM dağıtımlarında optimizasyon çıtasını yukarı taşıyor.",
+  "etiketler": [
+    "Strata",
+    "Qwen",
+    "vLLM",
+    "RTX PRO 6000",
+    "Inference"
+  ],
+  "anilan_modeller": [
+    "Qwen3.8-Flash-Next",
+    "Qwen 4"
+  ],
+  "yorum_tr": "Geliştiricilerin sadece model boyutuna değil, arka uç (inference engine) mimarisine odaklanmasının ne denli kritik olduğunu gösteren bir test. Spekülatif kod çözme (MTP) ve özelleşmiş kuantizasyonların Strata gibi yeni nesil motorlarla birleşmesi, yerel geliştirici ortamlarında API bağımlılığını azaltacak hız seviyelerini mümkün kılıyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen3.8-Flash-Next UD-Q4_K_XL (Strata)",
+      "benchmark": "Single-request decode (Prose) - RTX PRO 6000",
+      "skor": 185.8,
+      "birim": "tokens/sec",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Single-request decode (C1), INT8 KV cache, 256K context, MTP-4",
+      "kaynak_metinden_alinti": "Prose 185.8"
+    },
+    {
+      "model": "Qwen3.8-Flash-Next (vLLM NVFP4)",
+      "benchmark": "Single-request decode (Prose) - RTX PRO 6000",
+      "skor": 95.3,
+      "birim": "tokens/sec",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Single-request decode (C1), NVFP4",
+      "kaynak_metinden_alinti": "vLLM (RTX PRO 6000) Prose 95.3 (-49%)"
+    },
+    {
+      "model": "Qwen3.8-Flash-Next (vLLM NVFP4)",
+      "benchmark": "Single-request decode (Prose) - DGX Spark TP2",
+      "skor": 38.2,
+      "birim": "tokens/sec",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "DGX Spark TP2, Single-request decode (C1), NVFP4",
+      "kaynak_metinden_alinti": "vLLM (DGX Spark TP2) Prose 38.2 (-79%)"
+    },
+    {
+      "model": "Qwen3.8-Flash-Next UD-Q4_K_XL (Strata)",
+      "benchmark": "Single-request decode (Counting) - RTX PRO 6000",
+      "skor": 320.4,
+      "birim": "tokens/sec",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Single-request decode (C1), INT8 KV cache, 256K context, MTP-4",
+      "kaynak_metinden_alinti": "Counting 320.4"
+    },
+    {
+      "model": "Qwen3.8-Flash-Next (vLLM NVFP4)",
+      "benchmark": "Single-request decode (Counting) - RTX PRO 6000",
+      "skor": 171,
+      "birim": "tokens/sec",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Single-request decode (C1), NVFP4",
+      "kaynak_metinden_alinti": "vLLM (RTX PRO 6000) Counting 171.0 (-47%)"
+    },
+    {
+      "model": "Qwen3.8-Flash-Next (vLLM NVFP4)",
+      "benchmark": "Single-request decode (Counting) - DGX Spark TP2",
+      "skor": 75.3,
+      "birim": "tokens/sec",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "DGX Spark TP2, Single-request decode (C1), NVFP4",
+      "kaynak_metinden_alinti": "vLLM (DGX Spark TP2) Counting 75.3 (-77%)"
+    },
+    {
+      "model": "Qwen3.8-Flash-Next UD-Q4_K_XL (Strata)",
+      "benchmark": "Single-request decode (Coding) - RTX PRO 6000",
+      "skor": 298.9,
+      "birim": "tokens/sec",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Single-request decode (C1), INT8 KV cache, 256K context, MTP-4",
+      "kaynak_metinden_alinti": "Coding 298.9"
+    },
+    {
+      "model": "Qwen3.8-Flash-Next (vLLM NVFP4)",
+      "benchmark": "Single-request decode (Coding) - RTX PRO 6000",
+      "skor": 162.6,
+      "birim": "tokens/sec",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Single-request decode (C1), NVFP4",
+      "kaynak_metinden_alinti": "vLLM (RTX PRO 6000) Coding 162.6 (-46%)"
+    },
+    {
+      "model": "Qwen3.8-Flash-Next (vLLM NVFP4)",
+      "benchmark": "Single-request decode (Coding) - DGX Spark TP2",
+      "skor": 60.1,
+      "birim": "tokens/sec",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "DGX Spark TP2, Single-request decode (C1), NVFP4",
+      "kaynak_metinden_alinti": "vLLM (DGX Spark TP2) Coding 60.1 (-80%)"
+    },
+    {
+      "model": "Qwen3.8-Flash-Next UD-Q4_K_XL (Strata)",
+      "benchmark": "Single-request decode (Reasoning) - RTX PRO 6000",
+      "skor": 289.1,
+      "birim": "tokens/sec",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Single-request decode (C1), INT8 KV cache, 256K context, MTP-4",
+      "kaynak_metinden_alinti": "Reasoning 289.1"
+    },
+    {
+      "model": "Qwen3.8-Flash-Next (vLLM NVFP4)",
+      "benchmark": "Single-request decode (Reasoning) - RTX PRO 6000",
+      "skor": 149.6,
+      "birim": "tokens/sec",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Single-request decode (C1), NVFP4",
+      "kaynak_metinden_alinti": "vLLM (RTX PRO 6000) Reasoning 149.6 (-48%)"
+    },
+    {
+      "model": "Qwen3.8-Flash-Next (vLLM NVFP4)",
+      "benchmark": "Single-request decode (Reasoning) - DGX Spark TP2",
+      "skor": 51.8,
+      "birim": "tokens/sec",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "DGX Spark TP2, Single-request decode (C1), NVFP4",
+      "kaynak_metinden_alinti": "vLLM (DGX Spark TP2) Reasoning 51.8 (-82%)"
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/benchmarked-some-strata-qwen3-8-flash-next-quants-v0-kca0ix72uguh1.png?width=640&crop=smart&auto=webp&s=db1a239e924e322c4606bce0297da8f99ed576e1",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x2bbx6/strata_with_qwen38_flash_next_udq4_k_xl/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-10T09:50:37.000Z",
+  "slug": "strata-with-qwen3-8-flash-next-ud-q4-k-xl"
+}

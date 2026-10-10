@@ -1,0 +1,45 @@
+{
+  "baslik_tr": "OpenAI, GPT-6.1 Sol Modelini Tanıttı: Yüksek Performans ve Düşük Maliyet",
+  "ozet_tr": "OpenAI, GPT-6.1 Sol modelini duyurdu. Yeni model, GPT-6 Astra seviyesindeki kodlama, bilgisayar kullanımı ve profesyonel iş yeteneklerine, Astra’nın beşte biri fiyatla ulaşarak geliştiricilere büyük tasarruf sağlıyor.",
+  "detayli_icerik_tr": "OpenAI, bugün GPT-6.1 Sol modelini resmi olarak kullanıma sundu. GPT-6 Sol’un bir üst sürümü olan bu model, özellikle ajan tabanlı kodlama, bilgisayar uygulamalarıyla etkileşim ve karmaşık iş akışları gibi profesyonel görevlerde GPT-6 Astra’ya yakın bir zekâ seviyesi sunuyor. En dikkat çekici özelliği ise giriş tokenları için sadece 0,10 $ (milyon token başına) gibi çok düşük bir fiyatla, standart giriş fiyatının %95’i ve GPT-6 Sol’un önbellekli giriş fiyatının %50’si kadar bir maliyetle çalışması.\n\nPerformans açısından GPT-6.1 Sol, DeepSWE v1.1 testinde GPT-6 Sol’dan 6,4 puanlık bir farkla öne çıkarken, aynı zamanda GPT-6 Astra’nın performansına yaklaşık beşte bir maliyetle yaklaşarak maliyet‑verimlilik dengesini yeniden tanımlıyor. GDP.pdf benchmark’inde Opus 5.5’ten daha yüksek bir doğruluk elde ederken, yine maliyet açısından Astra’nın yarısına kadar bir fiyatla sonuç veriyor. AutomationBench testinde ise orta seviye akıl yürütme çabasıyla Opus 5.5’i 2,2 puan, GPT-6 Sol’u ise 4,8 puan geride bırakıyor.\n\nBilgisayar uygulamalarıyla etkileşim gerektiren OSWorld 2.0 offline setinde GPT-6.1 Sol, GPT-6 Sol’dan 7 puan daha yüksek bir skor elde ederken, Astra’nın skoruna sadece 2,1 puan farkla yaklaşıyor ve bu performansı yarı maliyetle sağlıyor. Bilimsel iş akışlarını ölçen Terminal‑Bench Science 0.1 testinde ise GPT-6 Sol’un skorunu iki katından fazla artırarak, görev başına ortalama 5,47 $ maliyetle, Opus 5.5 ve Astra’nın 23 $ civarındaki maliyetlerinin %75’i altında bir fiyat sunuyor.\n\nFaktüel doğrulukta da önemli bir iyileşme kaydedildi; düşük akıl yürütme çabasında yanıt hatası oranı %11,4’ten %7,7’ye düşerek %32’lik bir azalma sağlandı. Güvenlik ve şeffaflık değerlendirmelerinde GPT-6.1 Sol, GPT-6 Sol’a göre daha düşük hata oranları gösterdi ve güvenlik kısıtlamalarına uyum konusunda Astra ile eşdeğer performans sergiledi. Model, bugün Plus, Pro, Business, Enterprise ve Edu kullanıcıları için ChatGPT Work ve Codex’te kullanılabilir; API üzerinden gpt-6.1-sol adıyla erişilebilecek. Standart API fiyatları giriş için 2 $, önbellekli giriş için 0,10 $, çıkış için 10 $ olarak belirlendi ve yakın gelecekte 8 kat daha hızlı Ultrafast sürümü de sunulacak.",
+  "onemli_maddeler": [
+    "GPT-6.1 Sol, GPT-6 Astra seviyesindeki yetenekleri beşte bir maliyetle sunuyor.",
+    "DeepSWE v1.1 testinde GPT-6 Sol’dan 6,4 puan, AutomationBench’te 2,2 puan daha yüksek skor elde etti.",
+    "Terminal‑Bench Science 0.1’de görev başına ortalama 5,47 $ maliyetle, önceki modellerin %75 altında bir fiyat sağladı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Model, yüksek performanslı AI hizmetlerini daha geniş geliştirici kitlesine düşük maliyetle sunarak sektörde rekabeti ve inovasyonu artıracak.",
+  "etiketler": [
+    "GPT-6.1 Sol",
+    "OpenAI",
+    "benchmark",
+    "fiyat",
+    "AI modelleri"
+  ],
+  "anilan_modeller": [
+    "GPT-6 Sol",
+    "GPT-6 Astra",
+    "Opus 5.5",
+    "GPT-6.1 Sol"
+  ],
+  "yorum_tr": "GPT-6.1 Sol, yüksek doğruluk ve düşük maliyet dengesiyle özellikle büyük ölçekli iş akışları ve bilimsel uygulamalarda geliştiricilerin tercih edeceği bir model haline gelecek; aynı zamanda fiyat rekabeti sayesinde daha fazla işletmenin yapay zekâ entegrasyonunu hızlandırması bekleniyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GPT-6.1 Sol",
+      "benchmark": "DeepSWE v1.1",
+      "skor": 6.4,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "GPT-6 Sol ile karşılaştırma",
+      "kaynak_metinden_alinti": "GPT-6.1 Sol eclipsing GPT-6 Sol’s best score by 6.4 percentage points"
+    }
+  ],
+  "gorsel_url": "https://images.ctfassets.net/kftzwdyauwt9/1Xa7inzcCfsGE5aV3QqeN3/4f3689ae92e04b18569f9eaf919e7174/GPT-6-1-Sol_16x9.png",
+  "url": "https://openai.com/index/introducing-gpt-6-1-sol",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-09-29T10:00:00.000Z",
+  "slug": "introducing-gpt-6-1-sol"
+}

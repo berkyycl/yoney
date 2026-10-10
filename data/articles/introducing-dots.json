@@ -1,27 +1,30 @@
 {
-  "baslik_tr": "OpenAI'den Dots: Karmaşık Projelerde ve Günlük İşlerde Proaktif Asistanlar",
-  "ozet_tr": "OpenAI, Dots adını verdiği yeni proaktif asistanları tanıttı. Dots, karmaşık projelerden rutin görevlere kadar geniş bir yelpazede çalışarak kullanıcıların iş akışını kontrol altında tutmalarını sağlıyor.",
-  "detayli_icerik_tr": "OpenAI, yapay zekâ tabanlı yeni bir ürün serisi olan Dots'u duyurdu. Dots, geleneksel sohbet botlarından farklı olarak, yalnızca sorulara yanıt vermekle kalmayıp, proaktif bir şekilde görevleri takip eder, hatırlatmalar oluşturur ve proje ilerlemesini yönetir. Kullanıcılar, Dots'u bir proje yöneticisi, kişisel asistan ya da ekip içi koordinatör gibi çeşitli rollerde konumlandırarak iş süreçlerini otomatikleştirebilir.\n\nBu asistanlar, OpenAI'nin mevcut dil modelleriyle güçlendirilmiş olup, bağlamı uzun vadeli hatırlama yeteneği sayesinde birden fazla görev ve alt proje arasında tutarlı bir performans sergiliyor. Dots, takvim entegrasyonu, belge analizi, veri toplama ve raporlama gibi işlevleri otomatikleştirerek, ekiplerin daha az manuel müdahale ile daha hızlı ilerlemesini hedefliyor. Ayrıca, kullanıcıların tercihine göre özelleştirilebilir komut setleri ve önceliklendirme mekanizmaları sunuyor.\n\nOpenAI, Dots'un özellikle ürün geliştirme, pazarlama kampanyaları ve araştırma projeleri gibi çok aşamalı süreçlerde faydalı olacağını vurguluyor. Kullanıcılar, Dots'un önerdiği adımları onaylayarak ya da reddederek kontrolü ellerinde tutabiliyor; bu da yapay zekâ destekli otomasyonun sorumluluk ve şeffaflık ilkeleriyle uyumlu olmasını sağlıyor. Dots, mevcut OpenAI API ekosistemiyle entegre çalışacak şekilde tasarlandığından, geliştiriciler de kendi uygulamalarına bu asistanları kolayca ekleyebilecek.\n\nŞirket, Dots'un beta sürümünün önümüzdeki haftalarda sınırlı bir kullanıcı grubuna açılacağını ve geri bildirimler doğrultusunda işlevselliğin genişletileceğini belirtti. Bu adım, OpenAI'nin sadece büyük dil modelleri sunmakla kalmayıp, bu modelleri gerçek dünya iş akışlarına entegre eden pratik araçlar geliştirme stratejisinin bir parçası olarak görülüyor.",
+  "baslik_tr": "OpenAI, GPT‑6 Astra destekli \"Dots\" adlı sürekli çalışan AI ajanlarını tanıttı",
+  "ozet_tr": "OpenAI, GPT‑6 Astra üzerine inşa edilen ve 4.000'den fazla uygulamayla entegre olabilen \"Dots\" adlı her zaman aktif yapay zeka ajanlarını duyurdu. Kullanıcıların ChatGPT, Slack ve Teams üzerinden erişebileceği bu ajanlar, geri bildirimle öğrenerek 24/7 hedef odaklı çalışıyor ve rutin işleri otomatikleştirerek zaman kazandırıyor.",
+  "detayli_icerik_tr": "OpenAI, yeni nesil \"Dots\" ajanlarını tanıtarak yapay zekâ asistanlarının kullanım şeklini kökten değiştirmeyi hedefliyor. GPT‑6 Astra motoru ile çalışan bu ajanlar, kendi bulut bilgisayarları ve tarayıcıları üzerinden bağımsız olarak görev alıyor, bağlanan uygulamalara (4.000'den fazla) erişerek veri çekiyor ve eylemleri yalnızca okuma izniyle sınırlı tutuyor. Kullanıcılar, ChatGPT masaüstü, web ve mobil uygulamalarıyla, ayrıca Slack ve Teams üzerinden doğrudan mesajlaşarak veya sesli arama yaparak Dots ile etkileşime geçebiliyor.\n\nDots, sürekli öğrenen bir yapıya sahip; kullanıcıdan gelen geri bildirim ve onaylarla zaman içinde tercihleri, çalışma tarzı ve kalite standartlarını öğreniyor. Proaktif araştırma özelliği sayesinde, kullanıcı aktif olarak etkileşime girmediğinde bile bağladığı uygulamalarda okunabilir verileri tarayarak potansiyel fayda sağlayacak görevleri önceden başlatabiliyor. Güvenlik açısından her Dot, kendi izole bulut ortamında çalışıyor ve kullanıcı izni olmadan cihaz veya şifre gibi hassas bilgilere erişemiyor. Otomatik inceleme (auto‑review) mekanizması, kritik eylemleri kontrol edip onay gerektiren durumları kullanıcıya bildiriyor.\n\nOpenAI, Dots'u Pro, Business Premium ve Enterprise planlarına uygun olarak seçili pazarlarda başlatıyor; Enterprise kullanıcıları beta aşamasında deneme şansı elde ediyor. İlk Dot, plan fiyatına dahil ve ek bir maliyet gerektirmiyor. Gelecekte, birden fazla Dot'un ekip içinde birlikte çalışması, hız ve iş hacmi artırımı gibi ölçeklendirme seçenekleri sunulacak. Ayrıca, Microsoft ile iş birliği kapsamında \"specialist dots\" adlı, şirket içi kimlik ve erişim yönetimiyle donatılmış, belirli iş süreçlerini (örneğin fatura işleme, e‑posta pazarlama) üstlenebilen özel ajanların Agent 365 entegrasyonu da planlanıyor.",
   "onemli_maddeler": [
-    "Dots, proaktif bir şekilde görev takibi ve proje yönetimi yapabilen yeni bir AI asistanı.",
-    "Uzun vadeli bağlam hatırlama sayesinde birden fazla görev ve alt proje arasında tutarlı performans sunar.",
-    "OpenAI API ekosistemiyle tam uyumlu olup, geliştiricilerin kendi uygulamalarına kolay entegrasyon imkanı verir."
+    "Dots, GPT‑6 Astra motoru ve kendi bulut bilgisayarıyla 24/7 bağımsız çalışabilen AI ajanlarıdır.",
+    "4.000'den fazla uygulamaya bağlanarak veri çekebilir, ancak eylemler sadece okuma izniyle sınırlıdır.",
+    "Kullanıcılar ChatGPT, Slack ve Teams üzerinden Dot'larla etkileşime geçebilir; proaktif araştırma ve otomatik inceleme güvenlik önlemleri sunar.",
+    "Pro, Business Premium ve Enterprise planlarında ücretsiz olarak sunuluyor; specialist dots ile şirket içi özel görevler de destekleniyor."
   ],
-  "kategori": "arac-sdk",
-  "onem": 4,
-  "onem_gerekce": "Yeni bir AI asistanı, iş akışlarını otomatikleştirerek hem geliştiricilere hem de son kullanıcılara geniş çaplı verimlilik artışı sağlayabilir.",
+  "kategori": "guncelleme",
+  "onem": 5,
+  "onem_gerekce": "Sürekli çalışan, çoklu uygulama entegrasyonlu AI ajanları, iş süreçlerini otomatikleştirerek verimliliği artıracak ve AI asistan pazarında yeni bir standart oluşturacak.",
   "etiketler": [
     "OpenAI",
     "Dots",
-    "AI asistan",
-    "Ürün güncellemesi",
-    "Proje yönetimi"
+    "GPT-6 Astra",
+    "AI ajanları",
+    "Ürün güncellemesi"
   ],
-  "anilan_modeller": [],
-  "yorum_tr": "Dots, yapay zekâ destekli görev otomasyonunun bir sonraki aşamasını temsil ediyor; geliştiriciler daha entegre çözümler sunabilirken, kullanıcılar da iş süreçlerinde daha fazla kontrol ve verimlilik elde edecek.",
+  "anilan_modeller": [
+    "GPT-6 Astra"
+  ],
+  "yorum_tr": "Dots, geliştiricilere ve işletmelere AI entegrasyonunu basitleştirerek tekrarlayan görevleri otomatikleştirme fırsatı sunuyor; kullanıcılar ise zamanlarını daha stratejik işlere ayırabilecek. Ancak, güvenlik ve veri gizliliği konularındaki denetimler, geniş çaplı benimsenme öncesinde kritik olacak.",
   "gorseller": [],
   "benchmarklar": [],
-  "gorsel_url": "https://www.chosun.com/resizer/v2/7CRFA3BLZZOCLMBIDAMOTPLFOQ.jpg?auth=7a35bc549fde7f9e4a807c2269cd6515a4959a461ecd7c3c63fff4d4516b18ea&width=616",
+  "gorsel_url": "https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3997765706271846329",
   "url": "https://openai.com/index/introducing-dots",
   "source": "OpenAI",
   "sourceTier": "resmi",

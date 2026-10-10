@@ -1,51 +1,41 @@
 {
-  "baslik_tr": "OpenAI'nin AB Metin Kaynak Kurallarına Yaklaşımı",
-  "ozet_tr": "OpenAI, AB Yapay Zeka Yasası kapsamında metinlerin makine‑okunur bir işaretle tanımlanmasını sağlamak için yeni bir su işareti (watermark) teknolojisi tanıttı. 'textGrain' adı verilen bu yöntem, modelin kelime seçimlerine görünmez bir istatistiksel sinyal ekleyerek, metnin OpenAI tarafından üretilip işlenmiş olabileceğini tespit etmeyi amaçlıyor.",
-  "detayli_icerik_tr": "AB AI Yasası, jeneratif yapay zeka sağlayıcılarının ürettiği metinleri makine‑okunur bir biçimde tanımlanabilir hâle getirmesini zorunlu kılıyor. OpenAI, bu gerekliliği karşılamak ve teknolojik sınırlamaları göz önünde bulundurmak amacıyla aşamalı bir plan açıkladı. İlk aşamada, API müşterileri dünya çapında seçili modeller için su işareti özelliğini isteğe bağlı olarak etkinleştirebilecek; ancak bu özellik API'de varsayılan olarak kapalı kalacak. Önümüzdeki haftalarda, AB içinde ChatGPT ve Codex modellerinin çıktısına görünmez bir su işareti eklenecek.\n\nOpenAI, su işareti algılayıcıya erişim için başvuruları da kabul etmeye başladı. Bu erişim, yalnızca teknoloji değerlendirmesi ve iyileştirilmesi konusunda yardımcı olabilecek onaylı araştırmacılar ve uzman kuruluşlarla sınırlı olacak. Görüntü ve ses için mevcut doğrulama araçları (openai.com/verify ve Content Provenance API) ise hâlâ herkese açık kalacak.\n\nMetin su işareti teknolojisi \"textGrain\", modelin kelime seçimlerine istatistiksel bir sinyal ekliyor; algılayıcı bu sinyali arayarak bir OpenAI su işareti varlığını belirliyor. OpenAI'nin teknik raporunda, textGrain'in diğer denenen yaklaşımları, özellikle SynthID for text, geride bıraktığı ve ideal koşullarda %80‑95 arasında tespit oranları sağladığı belirtiliyor. Ancak kısa metinler, kısıtlı konu alanları (ör. matematik) ve %10‑25 oranında eşanlamlı kelime değişimi gibi düzenlemeler tespit oranını ciddi şekilde düşürüyor.\n\nOpenAI, su işaretinin çıktı kalitesine etkisinin ihmal edilebilir olduğunu vurguluyor. Astra modelinin çeşitli benchmark testlerinde su işaretli ve su işaretsiz sürümleri arasındaki puan farkları çok düşük. Bununla birlikte, su işaretinin insan katkısını, sahipliği, sorumluluğu veya doğruluğu ölçmediği, sadece bir sinyal sağladığı açıkça belirtiliyor. OpenAI, AB içinde su işaretini zorunlu kılmadan önce gerçek dünya geri bildirimleriyle teknolojiyi iyileştirmeyi ve erişim politikalarını güncellemeyi planlıyor.",
+  "baslik_tr": "AB AI Yasası kapsamında OpenAI'nin metin kökeni ve su işareti yaklaşımı",
+  "ozet_tr": "OpenAI, AB AI Yasası’nın metin tanımlama zorunluluğuna yanıt olarak yeni bir metin su işareti (watermark) teknolojisi tanıttı. 'textGrain' adı verilen bu yöntem, modelin kelime seçimlerine görünmez bir istatistiksel sinyal ekleyerek metnin OpenAI tarafından üretildiğini tespit etmeyi amaçlıyor. Ancak teknoloji hâlâ erken aşamalarda ve kısa, düzenlenmiş ya da matematik gibi sınırlı kelime seçimine sahip metinlerde tespit oranı düşebiliyor.",
+  "detayli_icerik_tr": "OpenAI, AB AI Yasası’nın gerektirdiği gibi, üretildiği metinlerin makine tarafından okunabilir bir biçimde tanımlanmasını sağlamak amacıyla \"textGrain\" adlı bir metin su işareti sistemi geliştirdi. Bu sistem, modelin kelime seçimlerine görünmez bir istatistiksel sinyal ekliyor ve özel bir algılayıcı bu sinyali tespit ederek metnin OpenAI su işareti içerip içermediğini belirliyor. Şirket, bu teknolojinin teknik raporunu yayınlayarak ilerleyen haftalarda açık kaynak olarak sunmayı planlıyor.\n\nŞu anki değerlendirmelere göre, su işareti tespiti metnin uzunluğuna ve içeriğine bağlı olarak değişiyor: 200 kelimelik pasajlarda %80, 400 kelimelik pasajlarda %95 tespit oranı elde edilirken, matematik gibi sınırlı kelime seçimine sahip konularda oranlar daha düşük. Ayrıca, metnin %10'luk bir kısmının eş anlamlı kelimelerle değiştirilmesi tespit oranını %92'den %66'ya, %25'lik değişiklik ise %17'ye düşürüyor. Bu sınırlamalar, OpenAI’nin detektör erişimini ilk etapta onaylı araştırmacılar ve uzman kuruluşlarla sınırlamasının temel nedenlerinden biri.\n\nOpenAI, önümüzdeki haftalarda AB içinde ChatGPT ve Codex kullanıcılarına su işareti eklemeyi ve API müşterilerine bu özelliği isteğe bağlı olarak etkinleştirme imkanı sunmayı planlıyor. Aynı zamanda, su işareti tespit aracına erişim, AB’nin \"Code of Practice\" çerçevesinde, sorumlu kullanım ve teknoloji geliştirme amaçlı onaylı araştırmacılara açılacak. Görüntü ve ses için mevcut doğrulama araçları (openai.com/verify ve Content Provenance API) ise hâlâ genel erişime açık kalacak.\n\nOpenAI, su işaretli metinlerin kalite performansını da ölçtü. Astra modeli üzerinde yapılan benchmark testlerinde, su işaretli ve işaretsiz metinler arasında çoğu ölçekte anlamlı bir fark bulunmadı; bazı testlerde su işaretli metinler hafifçe daha yüksek puan alırken, diğerlerinde ise düşük performans gösterdi. Bu sonuçlar, su işaretlemenin model çıktısının kalitesine olumsuz bir etkisi olmadığını gösteriyor.",
   "onemli_maddeler": [
-    "API müşterileri, seçili modellerde metin su işaretini isteğe bağlı olarak etkinleştirebilecek.",
-    "AB içinde ChatGPT ve Codex çıktısına görünmez su işareti eklenmesi önümüzdeki haftalarda başlayacak.",
-    "Su işareti algılayıcıya erişim, sadece onaylı araştırmacı ve uzman kuruluşlarla sınırlı tutulacak.",
-    "Kısa metinler, sıkı konu alanları ve kelime değişiklikleri su işareti tespit oranını önemli ölçüde düşürüyor."
+    "API müşterileri, seçili modeller için metin su işaretini isteğe bağlı olarak etkinleştirebilecek.",
+    "AB içinde ChatGPT ve Codex kullanıcılarına önümüzdeki haftalarda görünmez su işareti eklenecek.",
+    "Su işareti detektörüne erişim, onaylı araştırmacılar ve uzman kuruluşlarla sınırlı olacak."
   ],
   "kategori": "politika",
   "onem": 4,
-  "onem_gerekce": "AB AI Yasası, yapay zeka şeffaflığı ve sorumluluğu için kritik bir düzenleme; OpenAI'nin yaklaşımı, sektörde standartların oluşmasına yön verecek ve kullanıcıların içerik kaynağını anlamasını sağlayacak.",
+  "onem_gerekce": "AB AI Yasası’nın zorunlulukları ve şeffaflık talepleri, OpenAI’nin küresel hizmetlerini doğrudan etkileyen kritik bir düzenleyici adım oluşturuyor.",
   "etiketler": [
-    "EU AI Act",
-    "text watermarking",
+    "AB AI Yasası",
+    "metin su işareti",
     "OpenAI",
-    "content provenance",
-    "AI regulation"
+    "içerik kökeni",
+    "watermark"
   ],
   "anilan_modeller": [
     "ChatGPT",
     "Codex",
     "Astra"
   ],
-  "yorum_tr": "Bu adım, AB düzenlemelerine uyum sağlamakla kalmayıp, metin kaynak şeffaflığını artırarak geliştiricilerin ve son kullanıcıların yapay zeka üretimli içerikleri tanımasını kolaylaştıracak. Ancak su işaretinin sınırlı tespit başarısı, özellikle kısa ve düzenlenmiş metinlerde ek güvenlik önlemleri gerektirebilir.",
+  "yorum_tr": "Bu adım, AB pazarında faaliyet gösteren yapay zeka sağlayıcıları için bir standart oluştururken, geliştiricilere şeffaflık ve sorumluluk açısından yeni bir araç sunuyor. Kullanıcılar ise metinlerin kaynağını daha iyi anlayabilecek, ancak su işaretinin sınırlı tespit kabiliyeti nedeniyle tamamen güvenilir bir gösterge olmayacağını unutmamalı.",
   "gorseller": [],
   "benchmarklar": [
     {
       "model": "Astra",
-      "benchmark": "Artificial Analysis Intelligence Index (watermarked)",
+      "benchmark": "Artificial Analysis Intelligence Index",
       "skor": 49.76,
       "birim": "points",
       "yuksek_iyi_mi": true,
       "degerlendirme_ayari": null,
-      "kaynak_metinden_alinti": "Artificial Analysis Intelligence Index 49.57 points (unwatermarked) vs 49.76 points (watermarked)"
-    },
-    {
-      "model": "Astra",
-      "benchmark": "AutomationBench (watermarked)",
-      "skor": 34.86,
-      "birim": "%",
-      "yuksek_iyi_mi": true,
-      "degerlendirme_ayari": null,
-      "kaynak_metinden_alinti": "AutomationBench 34.09% (unwatermarked) vs 34.86% (watermarked)"
+      "kaynak_metinden_alinti": "Artificial Analysis Intelligence Index | 49.57 points | 49.76 points"
     }
   ],
-  "gorsel_url": "https://www.techbuzz.ai/cdn-cgi/image/width=1200,height=900,quality=80,format=auto,fit=cover/https://charming-card-d91ad3487b.media.strapiapp.com/file_5e6a889f2f.png",
+  "gorsel_url": "https://images.ctfassets.net/kftzwdyauwt9/7u8k3vMOefnc2eIwqAZlCJ/5e39aad76e07dc260070eae95d545d6f/ChatGPT_Image_5_Oct_2026__18_22_35.png?w=1600&h=900&fit=fill",
   "url": "https://openai.com/index/eu-text-provenance",
   "source": "OpenAI",
   "sourceTier": "resmi",

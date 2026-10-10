@@ -1,0 +1,71 @@
+{
+  "baslik_tr": "6GB VRAM ile 131K Bağlam: Qwen 3.6 35B A3B RTX 2060 Üzerinde Çalıştırıldı",
+  "ozet_tr": "Açık kaynak yapay zekâ topluluğu, optimize edilmiş llama.cpp yapılandırmalarıyla donanım sınırlarını zorlamaya devam ediyor. Reddit kullanıcısı, yalnızca 6GB VRAM'e sahip eski nesil bir RTX 2060 ekran kartında Qwen 3.6 35B A3B modelini 131.072 bağlam boyutu ve görme yetenekleriyle başarıyla çalıştırdığını paylaştı.",
+  "detayli_icerik_tr": "LocalLLaMA topluluğunda paylaşılan dikkat çekici bir optimizasyon örneği, giriş seviyesi ve eski donanımlarda bile büyük çok modlu dil modellerinin çalıştırılabileceğini kanıtladı. 'Szadbaverem69' adlı kullanıcı; Intel Core i5-10400F işlemci, 32GB DDR4 RAM ve 6GB VRAM'e sahip NVIDIA GeForce RTX 2060 sisteminde HauhauCS/Qwen3.6-35B-A3B modelinin Q4_K_M kuantizasyon sürümünü başarıyla ayağa kaldırdı.\n\nSistemin bu kadar kısıtlı bir VRAM bütçesinde çalışabilmesini sağlayan temel etken, uzmanlar karışımı (MoE) mimarisinin sunduğu esneklik ve CPU offload teknikleri oldu. Kullanıcı, `--n-cpu-moe 39` parametresiyle MoE uzman katmanlarının büyük bölümünü ana sistem belleğine yönlendirirken, görme projektörünü de `--no-mmproj-offload` argümanıyla CPU üzerinde işletti. Bu hamle görüntü işleme süresini uzatsa da yaklaşık 1 GB kritik VRAM tasarrufu sağlayarak toplam GPU bellek kullanımını 5.2 GB seviyesinde tuttu.\n\nPerformans metriklerine bakıldığında, sistem boş önbellek durumunda 600 tok/s prefill ve 23 tok/s decode hızlarına ulaştı. Bağlam boyutu 90.000 token seviyesine çıktığında dahi performans yaklaşık 485 tok/s prefill ve 15 tok/s decode hızlarında kararlı kalmayı başardı. 131K tam bağlam penceresi ve Q8_0 KV önbellek yapılandırmasıyla elde edilen bu sonuçlar, düşük bütçeli yerel YZ kurulumları için çığır açıcı bir rehber niteliği taşıyor.",
+  "onemli_maddeler": [
+    "6GB VRAM'e sahip RTX 2060 üzerinde 35B parametreli görme destekli model 131K bağlamla çalıştırıldı.",
+    "Görsel projektör CPU'ya aktarılarak (~1GB VRAM tasarrufu) bellek taşması (OOM) engellendi ve VRAM 5.2 GB'ta tutuldu.",
+    "MoE katmanları `--n-cpu-moe 39` ile CPU/RAM üzerine dağıtılarak 35B modelin sığması sağlandı.",
+    "Boş önbellekte 23 tok/s, 90K bağlam seviyesinde ise kararlı 15 tok/s decode üretim hızı ölçüldü."
+  ],
+  "kategori": "diger",
+  "onem": 3,
+  "onem_gerekce": "Tüketici sınıfı eski donanımlarda 131K bağlamlı 35B MoE modellerinin çalıştırılabilmesi, yerel yapay zekâ erişilebilirliği açısından önemli bir optimizasyon başarısıdır.",
+  "etiketler": [
+    "llama.cpp",
+    "Qwen",
+    "MoE",
+    "VRAM Optimizasyonu",
+    "RTX 2060"
+  ],
+  "anilan_modeller": [
+    "Qwen3.6-35B-A3B",
+    "Qwen 3.6 35B A3B"
+  ],
+  "yorum_tr": "MoE mimarisinin getirdiği seyrek aktivasyon avantajı ile CPU offload yeteneklerinin birleşimi, pahalı sunucu GPU'larına ihtiyaç duymadan devasa bağlam pencerelerini bireysel kullanıcılara ulaştırıyor. 15-23 tok/s gibi günlük kullanım için oldukça yeterli hızlar, yerel yapay zekânın alt uç donanımlarda bile artık uygulanabilir olduğunu gösteriyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen 3.6 35B A3B (Q4_K_M)",
+      "benchmark": "Prefill Speed (Empty Cache)",
+      "skor": 600,
+      "birim": "tokens/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "llama.cpp, RTX 2060 6GB + 32GB RAM, boş KV cache",
+      "kaynak_metinden_alinti": "~600 tok/s prefill and 23 tok/s decode, 131k context window"
+    },
+    {
+      "model": "Qwen 3.6 35B A3B (Q4_K_M)",
+      "benchmark": "Decode Speed (Empty Cache)",
+      "skor": 23,
+      "birim": "tokens/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "llama.cpp, RTX 2060 6GB + 32GB RAM, boş KV cache",
+      "kaynak_metinden_alinti": "~600 tok/s prefill and 23 tok/s decode, 131k context window"
+    },
+    {
+      "model": "Qwen 3.6 35B A3B (Q4_K_M)",
+      "benchmark": "Prefill Speed (90k Context)",
+      "skor": 485,
+      "birim": "tokens/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "llama.cpp, RTX 2060 6GB + 32GB RAM, 90k context",
+      "kaynak_metinden_alinti": "around 90k context it stabilizes at roughly 485 tok/s prefill and 15 tok/s decode"
+    },
+    {
+      "model": "Qwen 3.6 35B A3B (Q4_K_M)",
+      "benchmark": "Decode Speed (90k Context)",
+      "skor": 15,
+      "birim": "tokens/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "llama.cpp, RTX 2060 6GB + 32GB RAM, 90k context",
+      "kaynak_metinden_alinti": "around 90k context it stabilizes at roughly 485 tok/s prefill and 15 tok/s decode"
+    }
+  ],
+  "gorsel_url": "https://qianwen-res.oss-accelerate.aliyuncs.com/Qwen3.6/Figures/3.6_35b_a3b_banner.png",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x27au9/qwen_36_35b_a3b_131k_context_vision_on_6gb_vram/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-10T05:41:18.000Z",
+  "slug": "qwen-3-6-35b-a3b-131k-context-vision-on-6gb-vram"
+}

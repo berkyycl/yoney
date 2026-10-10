@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "OpenAI, 1 Milyardan Fazla Kullanıcıyı Destekleyen Çevrim İçi Depolama Platformu 'Habitat'ın Mimarisini Açıkladı",
+  "ozet_tr": "OpenAI, haftalık 1 milyardan fazla aktif kullanıcıya ve saniyede 70 milyondan fazla isteğe yanıt veren merkezi çevrim içi depolama mimarisi 'Habitat'ın perde arkasını paylaştı. DevDay 2023'te basit bir istemci kütüphanesi olarak doğan sistem, günümüzde 40 farklı coğrafi bölgede 500 petabayttan fazla veriyi yöneten devasa bir dağıtık servis mimarisine dönüştü.",
+  "detayli_icerik_tr": "OpenAI mühendislik ekibi, ChatGPT, Codex ve API ürünlerinin temelini oluşturan çevrim içi depolama katmanı Habitat'ın teknik evrimini detaylandıran kapsamlı bir analiz yayımladı. Her kullanıcının giriş yapması, yeni bir sohbet başlatması veya sistem ayarlarını sorgulaması arka planda çok sayıda veri tabanı sorgusunu tetikliyor. Bu sorguların gecikmesiz ve kesintisiz çalışması amacıyla geliştirilen Habitat, son üç yılda her yıl 10 kat büyüyen kullanıcı talebini karşılayarak saniyede 70 milyon istek seviyesine ulaştı.\n\nİlk olarak DevDay 2023'te GPTs özelliğini desteklemek üzere küçük bir Python istemci kütüphanesi olarak hayata geçirilen Habitat, temel olarak ürün mühendislerinin veri tabanı yönetimiyle uğraşmasını engellemeyi hedefliyordu. Mühendisler; şema sorguları, yönlendirme, kimlik doğrulama, şifreleme ve bağlantı havuzu (connection pooling) gibi karmaşık alt yapı detaylarıyla uğraşmadan Azure Cosmos DB ve önbellek katmanlarına erişebiliyordu. Ancak OpenAI bünyesindeki mikroservislerin ve trafiğin hızla artması, istemci tarafı (client-side) kütüphane yaklaşımının sınırlarına ulaşmasına yol açtı.\n\nFarklı ekiplerin versiyon güncellemeleri arasındaki uyumsuzluklar, hata ayıklama süreçlerinin günlerce sürmesi ve bölgesel kesinti risklerini izole etme zorunluluğu, OpenAI'ı Habitat'ı bağımsız bir merkezi servise dönüştürmeye yöneltti. Depolama mantığının bağımsız bir servise çekilmesi; gözlemlenebilirlik, merkezi güvenlik politikaları, denetim günlükleri (audit logging) ve veri erişim kontrolü açısından tek bir kontrol noktası sağladı.\n\nYüksek verim gerektiren bir altyapı servisinde Python kullanmanın CPU, bellek ve ağ gecikmesi açısından ek maliyetler getireceğini kabul eden OpenAI, bunu stratejik bir 'teknik borç' olarak benimsediğini belirtti. Şirket, erken aşamada dil optimizasyonuna odaklanmak yerine ürün ekiplerinin önünü açmayı önceliklendirdi. Ayrıca, ileride ortaya çıkacak olası yeniden yazım (rewrite) ihtiyaçlarının, Codex ve GPT gibi kendi kodlama modellerinin gelişmesi sayesinde çok daha hızlı ve kolay çözüleceği öngörüsünde bulundu.",
+  "onemli_maddeler": [
+    "Habitat platformu saniyede 70 milyondan fazla isteği işliyor ve haftalık 1 milyardan fazla aktif kullanıcıya hizmet veriyor.",
+    "Sistem, yaklaşık 40 coğrafi bölgeye dağıtılmış vaziyette 500 petabaytın (PB) üzerinde veriyi yönetiyor.",
+    "İstemci kütüphanesi modelinden bağımsız mikroservis mimarisine geçilerek dağıtım riskleri ve operasyonel kırılganlıklar azaltıldı.",
+    "OpenAI, servis katmanında Python'ın getirdiği ek yükü stratejik bir teknik borç olarak kabul edip hız kazanmayı tercih etti.",
+    "Şirket, gelecekteki dil optimizasyonu ve kod yeniden yazımı için kendi yapay zekâ kodlama modellerine (Codex ve GPT) güvendiğini vurguladı."
+  ],
+  "kategori": "diger",
+  "onem": 3,
+  "onem_gerekce": "OpenAI'ın 1 milyardan fazla kullanıcıya ulaşan ölçeğinde arka plan altyapısını ve veri tabanı katmanını nasıl ölçeklendirdiğini şeffafça paylaşması, modern büyük ölçekli yapay zekâ sistem mimarileri açısından kritik bir rehber niteliğindedir.",
+  "etiketler": [
+    "OpenAI",
+    "ChatGPT",
+    "Habitat",
+    "Azure Cosmos DB",
+    "Altyapı"
+  ],
+  "anilan_modeller": [
+    "Codex",
+    "GPT"
+  ],
+  "yorum_tr": "OpenAI'ın altyapı tasarımındaki pragmatik yaklaşımı, hiper-büyüme dönemlerinde erken optimizasyon yerine ürün geliştirme hızını önceliklendirmenin önemini ortaya koyuyor. Ayrıca, altyapıdaki teknik borçların gelecekte yapay zekâ kodlama modelleriyle kapatılacağına dair aldıkları stratejik risk, üretken yapay zekânın bizzat yazılım mühendisliği süreçlerini nasıl dönüştürdüğünün somut bir kanıtı.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://images.ctfassets.net/kftzwdyauwt9/5D3TSOEPUfq7vsrX6Vsp0Q/3ac45b90943bcbcdd0eac9b80e0f679a/SEO.png?w=1600&h=900&fit=fill",
+  "url": "https://openai.com/index/scaling-storage-one-billion-users-part-one",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-09-11T10:00:00.000Z",
+  "slug": "rapidly-scaling-online-storage-to-serve-over-1-billion-chatg"
+}

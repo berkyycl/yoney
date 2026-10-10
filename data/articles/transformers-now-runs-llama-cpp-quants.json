@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "Hugging Face Transformers Artık llama.cpp GGUF Modellerini Doğrudan Çalıştırabiliyor",
+  "ozet_tr": "Hugging Face, popüler açık kaynak kütüphanesi Transformers'a GGUF model formatı ve llama.cpp kuantizasyonları için doğrudan yerel çalıştırma desteği eklediğini duyurdu. Geliştiriciler artık ek bir araca ihtiyaç duymadan, alıştıkları Transformers API'si ve from_pretrained fonksiyonuyla kuantize edilmiş modelleri doğrudan kendi bilgisayarlarında yüksek performansla çalıştırabilecek.",
+  "detayli_icerik_tr": "Yapay zekâ modellerinin kişisel bilgisayarlarda yerel olarak çalıştırılması alanında llama.cpp ve sunduğu GGUF formatı endüstri standardı haline gelmiş durumda. Ollama, LM Studio ve Jan gibi popüler araçların arkasındaki temel motor olan llama.cpp, modellerin bellek ayak izini dramatik şekilde düşürerek dizüstü bilgisayarlarda bile akıcı çıkarım yapılmasını sağlıyordu. Hugging Face ekibi, bu ekosistemi doğrudan Transformers kütüphanesinin içine taşıyarak milyonlarca kez indirilen GGUF kontrol noktalarını standart Python kodlarıyla entegre etti.\n\nYeni mimaride performans kaybını en aza indirmek için Hugging Face, 'kernels' kütüphanesi aracılığıyla llama.cpp'nin temelinde yatan GGML çekirdeklerini (kernels) ve Metal optimizasyonlarını doğrudan yeniden kullanıyor. İlk aşamada Apple Silicon işlemcili Mac cihazlara ve Qwen3.5 mimarisine odaklanılan çalışmada, model ağırlıkları Metal üzerinde paketlenmiş biçimde tutuluyor ve optimize edilmiş 'ggml-org/ggml-attn' mekanizması devreye giriyor. Geliştiriciler sadece model kimliği ve '.gguf' dosya adını belirterek standart generate() fonksiyonu ile çıkarım yapabiliyor.\n\nAyrıca yeni güncellemeyle birlikte 'transformers serve' komutu da güçlendirildi. Kullanıcılar tek bir satır komutla seçtikleri GGUF modelini ayağa kaldırarak localhost üzerinde OpenAI uyumlu bir API sunucusu oluşturabiliyor. Bu sayede Jan, Pi veya Cursor gibi popüler üçüncü parti arayüzler ve istemciler doğrudan yerel Transformers altyapısına bağlanabiliyor.\n\nİlk benchmark testleri M2 Max çipli MacBook Pro üzerinde gerçekleştirildi. Transformers'ın GGML kernel entegrasyonu sayesinde elde ettiği token üretim hızının, saf llama-bench araçlarıyla ölçülen saf C++ llama.cpp hızlarına kafa tutacak seviyeye yaklaştığı görüldü. Bu adım, yerel model geliştirme iş akışlarında Python tabanlı araştırma dünyası ile yüksek performanslı C++ yerel çıkarım dünyası arasındaki duvarları büyük ölçüde kaldırıyor.",
+  "onemli_maddeler": [
+    "Transformers kütüphanesi artık ek araç gerektirmeden from_pretrained ile doğrudan GGUF modellerini çalıştırabiliyor.",
+    "llama.cpp'nin optimize edilmiş GGML ve Metal kernel'ları doğrudan Hugging Face kernels kütüphanesi üzerinden çağrılıyor.",
+    "İlk odak Apple Silicon (Metal) donanımları ve Qwen3.5 model mimarisi üzerine kuruldu.",
+    "'transformers serve' aracıyla yerel modeller tek komutla OpenAI uyumlu bir REST API sunucusu olarak paylaşılabiliyor.",
+    "Q4_K_M, Q5_K_M ve Q6_K gibi popüler kuantizasyon seviyeleri Transformers içinde yerel bellek tasarrufu sağlıyor."
+  ],
+  "kategori": "diger",
+  "onem": 4,
+  "onem_gerekce": "Dünyanın en yaygın kullanılan NLP kütüphanesi Transformers'ın yerel çıkarımın standardı olan GGUF/llama.cpp formatını doğrudan ve yüksek performansla desteklemesi, uç cihazlarda açık kaynak model dağıtımını ve geliştirme süreçlerini radikal şekilde kolaylaştırmaktadır.",
+  "etiketler": [
+    "Hugging Face",
+    "Transformers",
+    "llama.cpp",
+    "GGUF",
+    "Apple Silicon"
+  ],
+  "anilan_modeller": [
+    "Qwen3.5-4B",
+    "Qwen3.6 27B"
+  ],
+  "yorum_tr": "Transformers kütüphanesinin GGUF formatını yerel olarak desteklemesi, açık kaynak yapay zekâ dünyasındaki en büyük parçalanmışlıklardan birini çözüyor. Bugüne kadar Python ekosistemindeki Transformers API'si ile C++ tabanlı llama.cpp arasında seçim yapmak zorunda kalan geliştiriciler, artık her iki dünyanın da en güçlü yanlarını tek bir çatı altında kullanabilecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://huggingface.co/blog/assets/transformers_llama_cpp_quants/thumbnail.png",
+  "url": "https://huggingface.co/blog/transformers-llama-cpp-quants",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-09-22T00:00:00.000Z",
+  "slug": "transformers-now-runs-llama-cpp-quants"
+}

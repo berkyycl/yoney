@@ -1,0 +1,78 @@
+{
+  "baslik_tr": "Google DeepMind, Yeni Gemini 3.8 Metin-Konuşma Modellerini Tanıttı: Ses Sentezinde Yaratıcı Devrim",
+  "ozet_tr": "Google DeepMind, en etkileyici ses üretim modelleri olan Gemini 3.8 Flash TTS ve Gemini 3.8 Flash-Lite TTS'i duyurdu. Bu modeller, kullanıcılara özel karakter sesleri oluşturma ve diyalogları satır bazında kontrol etme imkanı sunarak ses üretimini statik ön ayarlardan dinamik bir yaratıcı stüdyoya dönüştürüyor. Yapay zeka destekli ses sentezinde çıtayı yükselten bu gelişme, içerik oluşturucular ve geliştiriciler için geniş bir uygulama yelpazesi vadediyor.",
+  "detayli_icerik_tr": "Google DeepMind, Gemini ailesine iki yeni metin-konuşma (Text-to-Speech - TTS) modeli olan Gemini 3.8 Flash TTS ve Gemini 3.8 Flash-Lite TTS'i eklediğini duyurdu. Bu yeni modeller, yapay zeka destekli ses üretiminde derinlemesine yaratıcı yönlendirme ve karakter tasarımını mümkün kılarak, sesli asistanlardan sürükleyici sesli kitaplara kadar geniş bir kullanım alanına hitap ediyor. Modeller, Gemini Notebook ve Google Vids gibi ürünlerde kullanıcı deneyimlerini de iyileştirmeyi hedefliyor.\n\nGemini 3.8 Flash TTS, özellikle oyunlar, sürükleyici sesli kitaplar, podcast'ler ve interaktif medya için sıfırdan tamamen yeni sesler yaratma yeteneğiyle öne çıkıyor. Doğal dil istemleri kullanarak karakterlere hayat verme, performansları satır bazında yönetme, aksan kaydırmaları ve geri bildirimler üzerinde granüler kontrol sağlama gibi gelişmiş özellikler sunuyor. Öte yandan, Gemini 3.8 Flash-Lite TTS ise yüksek hacimli, uygun maliyetli ölçek için optimize edilmiş durumda. Dublaj, sesli içerik oluşturma ve hassas ton, hız ve ifade nüansları üzerinde ince ayar kontrolü gerektiren ekspresif sesli ajanlar için ideal bir çözüm sunuyor.\n\nYeni modeller, 100'den fazla dil ve lehçede özelleştirilmiş sesler oluşturma imkanı tanıyor. Kullanıcılar, doğal dil istemleriyle roller, aksanlar ve ses karakteristiklerini belirleyerek 'Melbourne'dan enerjik bir DJ' veya 'Japon bir ejderha' gibi tamamen benzersiz ses profilleri tasarlayabiliyor. Ayrıca, mevcut 2.000'den fazla üretim odaklı ses kütüphanesine erişim ve sadece 30 saniyelik bir ses örneğiyle ses kopyalama yeteneği de sunuluyor. Ses kopyalama özelliği, rıza doğrulaması, SynthID filigranlama ve C2PA kimlik bilgileri gibi dahili güvenlik araçlarıyla desteklenerek geliştiricilerin ve ses yeteneklerinin korunmasını sağlıyor. Yakın zamanda gelecek olan 'ses yeniden karıştırma' özelliği ile kullanıcılar, ses kütüphanesinden bir ses seçerek tını, perde, hız ve aksan üzerinde ince ayarlar yapabilecek.\n\nPerformans yönetimi konusunda da önemli yenilikler var. Her iki TTS modeli de her bir satırın nasıl seslendirileceği üzerinde hassas kontrol sağlıyor. Kullanıcılar kendi sahne yönlendirmelerini yazabiliyor veya Gemini'nin doğal senaryo ipuçlarıyla (sakin bir müşteri hizmetleri temsilcisinden fısıltılı bir gerilim sahnesine kadar) yönlendirme yapmasına izin verebiliyor. Uzun biçimli içerik üretiminde (podcast'ler, sesli kitaplar) saatler süren kesintisiz seslerde yüksek ses kalitesi, doğal tempo ve minimum konuşmacı kayması korunuyor. Yerel iki konuşmacılı sahneleme, tek bir senaryodan çok turlu konuşmaların sorunsuz bir şekilde yönetilmesini sağlarken, konuşmacıların seslerini net bir şekilde ayrıştırıyor. Ayrıca, `<gülüşmeler>`, `<iç çekmeler>`, `<nefes almalar>` gibi sözsüz ipuçları ve `|mhm|` veya `|evet|` gibi aktif dinleme arayüzleri ekleyerek gerçekçi konuşma dokusu yaratmak mümkün.\n\nBenchmark testlerinde Gemini 3.8 Flash TTS, Hume AI'nin Voice Design Benchmark'ında 71.4 puanla genel sıralamada 1 numaraya yerleşti ve aksan modellemesinde 60.8 puanla lider oldu. Her iki model de Hume AI'nin Overall Quality Index'inde sırasıyla 1. ve 2. sıraları alarak güvenilirliğinden ödün vermeden gerçekten etkileyici performanslar sergiledi. Voice Arena'daki kör insan tercih değerlendirmelerinde ise Gemini 3.8 Flash ve Flash-Lite TTS, Japonca, Brezilya Portekizcesi, Vietnamca, Modern Standart Arapça (MSA), Meksika İspanyolcası ve Hintçe gibi önemli küresel dillerde rakipleri arasında zirve pozisyonlarını elde etti. Bu modeller, 100'den fazla dil desteği ile dünya genelinde yüksek kaliteli, çok dilli ses deneyimleri oluşturmak için içerik oluşturuculara, geliştiricilere ve işletmelere güç veriyor. Tüm bu yetenekler, Google AI Studio sesli oyun alanında geliştiricilerin kullanımına sunuldu.",
+  "onemli_maddeler": [
+    "Google DeepMind, Gemini 3.8 Flash TTS ve Gemini 3.8 Flash-Lite TTS adında iki yeni, oldukça ifadeci metin-konuşma modelini tanıttı.",
+    "Modeller, doğal dil istemleriyle sıfırdan özel sesler oluşturma, 2.000'den fazla seslik kütüphaneden seçim yapma veya 30 saniyelik örnekle ses kopyalama yeteneği sunuyor.",
+    "Kullanıcılar, konuşma temposu, duygu, aksan kaydırmaları ve hatta iki konuşmacılı diyaloglarda sahne yönetimi dahil olmak üzere satır bazında granüler performans kontrolüne sahip.",
+    "Gemini 3.8 Flash TTS, Hume AI'nin Voice Design Benchmark'ında 71.4 puanla birincilik, aksan modellemede 60.8 puanla liderlik ve Hume AI Overall Quality Index'inde 1. sıra elde etti.",
+    "Güvenlik önlemleri arasında ses kopyalama için rıza doğrulaması ve yapay zeka tarafından üretilen tüm seslere SynthID filigranlaması entegrasyonu bulunuyor."
+  ],
+  "kategori": "diger",
+  "onem": 5,
+  "onem_gerekce": "Google'ın yeni Gemini 3.8 metin-konuşma modelleri, ses sentezinde ifade, özelleştirme ve kontrol konusunda önemli ilerlemeler sunarak yaratıcı endüstriler ve geliştiriciler için devrim niteliğinde araçlar sağlıyor. Yüksek benchmark skorları ve entegre güvenlik önlemleri, teknolojinin hem yeteneklerini hem de sorumlu kullanımını vurguluyor.",
+  "etiketler": [
+    "Metin-Konuşma",
+    "TTS",
+    "Google DeepMind",
+    "Gemini",
+    "Yapay Zeka"
+  ],
+  "anilan_modeller": [
+    "Gemini 3.8 Flash TTS",
+    "Gemini 3.8 Flash-Lite TTS",
+    "Gemini 3.5 Live Translate",
+    "Gemini 3.5 Transcribe",
+    "Gemini 3.8 Live",
+    "Gemini 3.8 Live Extended Thinking",
+    "Gemini 3.1 Flash TTS",
+    "SynthID"
+  ],
+  "yorum_tr": "Google'ın Gemini 3.8 metin-konuşma modelleri, yapay zeka destekli ses üretimi alanında ciddi bir sıçramayı temsil ediyor. Geliştiricilere ve içerik üreticilerine sunulan derinlemesine özelleştirme ve performans kontrolü, sesli asistanlardan profesyonel medya üretimine kadar birçok alanda yeni kapılar açarken, entegre güvenlik ve şeffaflık özellikleri, bu güçlü teknolojinin sorumlu kullanımına yönelik önemli bir adım olarak öne çıkıyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Gemini 3.8 Flash TTS",
+      "benchmark": "Hume AI’s Voice Design Benchmark",
+      "skor": 71.4,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "securing the #1 overall spot on Hume AI’s Voice Design Benchmark (71.4)"
+    },
+    {
+      "model": "Gemini 3.8 Flash TTS",
+      "benchmark": "Accent modeling (Hume AI)",
+      "skor": 60.8,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "also leading in accent modeling (60.8)"
+    },
+    {
+      "model": "Gemini 3.8 Flash TTS",
+      "benchmark": "Hume AI’s Overall Quality Index",
+      "skor": 1,
+      "birim": "sıra",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "securing the #1 overall spot on ... Hume AI’s Overall Quality Index"
+    },
+    {
+      "model": "Gemini 3.8 Flash-Lite TTS",
+      "benchmark": "Hume AI’s Overall Quality Index",
+      "skor": 2,
+      "birim": "sıra",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "securing the ... #2 spots respectively on Hume AI’s Overall Quality Index"
+    }
+  ],
+  "gorsel_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-audio__keyword__metacard__light.width-1300.png",
+  "url": "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech/",
+  "source": "Google DeepMind",
+  "sourceTier": "resmi",
+  "date": "2026-09-23T15:25:14.000Z",
+  "slug": "gemini-3-8-text-to-speech-says-hello"
+}

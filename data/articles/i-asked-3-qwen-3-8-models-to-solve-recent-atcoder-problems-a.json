@@ -1,0 +1,66 @@
+{
+  "baslik_tr": "Yerel LLM'lerde 'Düşünme Bütçesi' Gerçekten İşe Yarıyor mu? AtCoder Üzerinde Kapsamlı Test",
+  "ozet_tr": "Reddit LocalLLaMA topluluğunda bir araştırmacı, tüketici sınıfı donanımda (RTX 5060 Ti 16GB) çalışan üç farklı açık kaynaklı modeli AtCoder'ın son 30 güne ait 14 problemi üzerinde test etti. Sonuçlar, düşünme eforunu (thinking effort) artırmanın başarıyı her zaman doğrusal şekilde artırmadığını, hatta token sınırına takılma riskini yükselttiğini ortaya koydu.",
+  "detayli_icerik_tr": "Yerel yapay zekâ topluluklarında modellerin akıl yürütme (reasoning/thinking) kabiliyetlerinin gerçek dünya senaryolarında nasıl ölçeklendiği tartışılmaya devam ediyor. Bağımsız bir geliştirici, günlük kullanım için en verimli modeli belirlemek amacıyla Swift 1.5, Flash Next ve 27B parametreli modelleri (GSQ-RCO kuantizasyonları ile) AtCoder'ın son 30 gün içinde yayınlanan 14 yeni problemi üzerinde karşılaştırdı. Modellerin eğitim verisinde bulunmayan güncel problemler seçilerek bilgi sızıntısı (data contamination) engellendi.\n\nTestler AMD 7945HX işlemci, 64 GB DDR5 RAM ve 16 GB VRAM'li Nvidia RTX 5060 Ti donanımında Arch Linux altında llama.cpp ve Strata yazılımları kullanılarak yürütüldü. Düşünme eforu 'none' (yok), 'low' (düşük), 'medium' (orta) ve 'xhigh' (çok yüksek) olmak üzere 4 kademede ve 32k token üst sınırı ile sınırlandırıldı. Yaklaşık 11 saat süren test maratonunda, düşünme kanalı tamamen kapatıldığında modellerin ya kod üretmekte başarısız olduğu (DNF) ya da hatalı kod yazdığı (ERR) görüldü.\n\nAncak düşünme eforunun 'low' seviyesinden 'xhigh' seviyesine çıkarılması performansta beklenen orantılı artışı sağlamadı. Flash Next modeli en yüksek skoru 'medium' seviyesinde 11 çözülen problemle elde ederken, 27B modeli tüm seviyelerde 10 çözümde sabit kaldı. Düşünme süresinin artırılması çalışma süresini %33 ile %57 arasında uzatırken, harcanan ek tokenların genellikle zaten çözülemeyecek problemlerde 32k sınırına (CAP) takılarak boşa gittiği gözlemlendi.\n\nAraştırmanın genel sonucunda, Flash Next IQ3_S modelinin hem hız hem de doğruluk dengesi bakımından 27B modeline kıyasla daha pratik bir alternatif sunduğu, günlük kullanımda 'medium' efor ayarının en optimum sonucu verdiği belirtildi.",
+  "onemli_maddeler": [
+    "Düşünme eforunun kademeli artırılması (low -> med -> xhigh) başarı oranında doğrusal bir artış sağlamadı.",
+    "Düşünme sürecini tamamen kapatmak ('none') başarımı dramatik şekilde düşürerek DNF ve syntax hatalarına yol açtı.",
+    "Flash Next IQ3_S modeli, medium düşünme eforunda 14 problemin 11'ini çözerek 27B modelini (10 çözüm) geride bıraktı.",
+    "Düşünme bütçesini aşırı yükseltmek çözüm oranını artırmak yerine %33-57 ek süre maliyeti getirdi ve 32k token tavanına takılmaları artırdı."
+  ],
+  "kategori": "diger",
+  "onem": 3,
+  "onem_gerekce": "Tüketici sınıfı donanımlarda yerel LLM akıl yürütme (thinking) bütçelerinin etkinliğini ve 'over-thinking' (aşırı düşünme) maliyetini somut ve güncel verilerle gösteren pratik bir topluluk benchmarkı sunuyor.",
+  "etiketler": [
+    "LocalLLaMA",
+    "Qwen",
+    "AtCoder",
+    "Thinking Tokens",
+    "llama.cpp"
+  ],
+  "anilan_modeller": [
+    "Swift 1.5",
+    "Flash Next",
+    "27B"
+  ],
+  "yorum_tr": "Bu bağımsız test, akıl yürütme yeteneğine sahip modellerde sınırsız düşünme bütçesinin her zaman daha iyi sonuç doğurmadığını somutlaştırıyor. Geliştiriciler ve yerel LLM kullanıcıları için çıkarılacak en temel ders; düşünme kanallarını kapatmamanın elzem olduğu ancak en yüksek efor yerine 'orta' seviyeyi tercih etmenin donanım kaynaklarını ve işlem sürelerini korumak adına en mantıklı dengeyi sağladığıdır.",
+  "gorseller": [
+    "https://preview.redd.it/rf85frufznuh1.png?width=893&format=png&auto=webp&s=7c03164f7b605e9973a6aaae7f22229dbdf15764",
+    "https://preview.redd.it/wojizpqeunuh1.png?width=845&format=png&auto=webp&s=e732e20d69d2abd6cfe47159b4cff3ef92a3f082"
+  ],
+  "benchmarklar": [
+    {
+      "model": "Flash Next (IQ3_S)",
+      "benchmark": "AtCoder (Recent 14 Problems - Medium Effort)",
+      "skor": 11,
+      "birim": "problemler",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Thinking effort: Medium, 32k token cap",
+      "kaynak_metinden_alinti": "Flash peaks at med (11), Swift at xhi (10) but with 3 ERRs at med, 27b is flat at 10 everywhere."
+    },
+    {
+      "model": "27B (IQS_3)",
+      "benchmark": "AtCoder (Recent 14 Problems)",
+      "skor": 10,
+      "birim": "problemler",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Flat across low, med, xhigh thinking efforts",
+      "kaynak_metinden_alinti": "27b is flat at 10 everywhere."
+    },
+    {
+      "model": "Swift 1.5 (IQ2_XS)",
+      "benchmark": "AtCoder (Recent 14 Problems - XHigh Effort)",
+      "skor": 10,
+      "birim": "problemler",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Thinking effort: XHigh, 32k token cap",
+      "kaynak_metinden_alinti": "Swift at xhi (10) but with 3 ERRs at med"
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/rf85frufznuh1.png?width=140&height=33&auto=webp&s=9ba29b13d968d43792f578b9845e3e6faefd917e",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x2ly4g/i_asked_3_qwen_38_models_to_solve_recent_atcoder/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-10T18:10:24.000Z",
+  "slug": "i-asked-3-qwen-3-8-models-to-solve-recent-atcoder-problems-a"
+}

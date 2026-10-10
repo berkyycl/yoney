@@ -1,0 +1,42 @@
+{
+  "baslik_tr": "invideo, GPT‑6 Astra ile renk derecelendirmede %300 artış sağladı",
+  "ozet_tr": "OpenAI'nin yeni GPT‑6 Astra modeli, Invideo'nun video düzenleme platformunda renk derecelendirme ve düzeltme başarısını üç katına çıkardı. Model, karmaşık düzenleme adımlarını daha az akıl yürütme setiyle planlayarak editörlerin kontrolünü korurken iş akışını hızlandırıyor.",
+  "detayli_icerik_tr": "Invideo, video düzenleme sürecinde hikâye kurgulama, ses efektleri ekleme, geçişler oluşturma ve renk ayarlamaları gibi bir dizi yaratıcı ve teknik kararı bir arada yönetmek zorunda. Bu süreçte editörlerin kontrolünü elden bırakmadan, yapay zekâ destekli bir asistan olan GPT‑6 Astra, planlama ve uygulama aşamalarını insan müdahalesiyle uyumlu bir şekilde yürütüyor.\n\nSanket Shah, Invideo CEO'su, Astra'nın çerçeve seviyesinde edit planlamasını çok az akıl yürütme adımıyla gerçekleştirdiğini belirtiyor. Önceki modellerle kıyaslandığında, Astra aynı karmaşık görevleri çok daha az çıktı tokeni ve akıl yürütme seti kullanarak tamamlayabiliyor. Bu, uzun ve karmaşık projelerde bile editörün asıl amacını kaybetmeden birden fazla talimatı yerine getirebilmesini sağlıyor.\n\nRenk işleme konusunda Astra özellikle etkili. Renk düzeltme, renk derecelendirme, LUT uygulamaları ve izolasyon gibi birbirine geçen yaklaşımları seçmek ve uygulamak zorunda kalan model, arka planı değiştirirken kişinin cilt tonunu koruyabilmek için kişiyi çerçeveler arasında izleyebiliyor. Invideo, önceki sürümlerde yüksek hata oranları gördükleri renk derecelendirme görevlerinde, Astra sayesinde başarı oranının yaklaşık üç katına çıktığını raporladı.\n\nAyrıca Astra, metin ve görsel referansları özel efektlere dönüştürerek tamamen düzenlenebilir bir yapı sunuyor. Bir gün içinde Invideo editörleri, model yardımıyla yaklaşık 50 yeni efekt oluşturdu. Bu sayede yaratıcı profesyoneller, hikâyenin anlatımını ve son kesimi kontrol ederken, zaman alıcı planlama ve çerçeve bazlı işleri büyük ölçüde azaltıyor.",
+  "onemli_maddeler": [
+    "GPT‑6 Astra, renk derecelendirme ve düzeltme başarısını üç katına çıkardı.",
+    "Model, karmaşık düzenleme adımlarını daha az akıl yürütme setiyle planlayarak verimliliği artırdı.",
+    "Astra, metin ve görsel referanslardan 1 günde yaklaşık 50 özelleştirilmiş efekt üretebildi."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Renk derecelendirme başarısının üç kat artması, video düzenleme akışını hızlandırarak sektörde geniş etkisi olacak.",
+  "etiketler": [
+    "GPT-6",
+    "Astra",
+    "invideo",
+    "color grading",
+    "video editing"
+  ],
+  "anilan_modeller": [
+    "GPT-6 Astra"
+  ],
+  "yorum_tr": "Bu gelişme, video düzenleme platformları için yapay zekâ destekli otomasyonun sınırlarını genişleterek hem üretkenliği artırıyor hem de yaratıcı kontrolün kaybolmadan kalmasını sağlıyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GPT-6 Astra",
+      "benchmark": "color-grading success rate",
+      "skor": 3,
+      "birim": "x",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "With Astra, the success rate improved about three times"
+    }
+  ],
+  "gorsel_url": "https://images.ctfassets.net/kftzwdyauwt9/7u3JLdLZ5U3DIRSRzYmCvQ/3e3b52a6a13808aa7cf360628410f5f7/og.png?w=1600&h=900&fit=fill",
+  "url": "https://openai.com/index/invideo-builds-with-gpt-6-astra",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-09-23T12:00:00.000Z",
+  "slug": "how-invideo-improves-color-grading-3x-with-gpt-6-astra"
+}

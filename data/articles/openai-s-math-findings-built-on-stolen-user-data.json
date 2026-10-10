@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "OpenAI'nin Matematik Çalışmaları Kullanıcı Verileriyle Şekillendirildiği İddiası",
+  "ozet_tr": "Reddit topluluğu LocalLLaMA, OpenAI'nin son matematik araştırmalarının, kullanıcıların izinsiz paylaştığı veri setlerinden faydalandığını iddia ediyor. İddialar, OpenAI'nin veri toplama politikaları ve şeffaflık konusundaki eksikliklerini gündeme getiriyor.",
+  "detayli_icerik_tr": "OpenAI, son dönemde matematik yeteneklerini geliştirmek amacıyla MATH, GSM8K ve diğer akademik benchmark'larda kayda değer ilerlemeler kaydettiğini duyurmuştu. Ancak Reddit'teki LocalLLaMA topluluğu, bu ilerlemelerin arkasında kullanıcıların sohbet geçmişlerinden ve paylaşılan kod örneklerinden oluşan büyük bir veri havuzunun izinsiz kullanıldığını öne sürüyor. Kullanıcıların, özellikle geliştiricilerin ve araştırmacıların, OpenAI platformunda paylaştığı kod ve problem çözümlerinin, model eğitimi için toplandığı ve bu verilerin gizlilik politikalarına uygun bir şekilde anonimleştirilmediği iddia ediliyor.\n\nİddialar, OpenAI'nin veri toplama ve kullanım şartlarını yeniden gözden geçirmesi gerektiğini vurguluyor. Şirket, geçmişte veri toplama süreçlerini \"opt-out\" temelli bir modelle yürüttüğünü ve kullanıcıların bu süreçten çıkma hakkına sahip olduğunu belirtmişti; fakat topluluk, bu mekanizmanın yeterince şeffaf ve erişilebilir olmadığını belirtiyor. Ayrıca, OpenAI'nin matematik benchmark sonuçlarını yayınlarken, kullanılan eğitim verisinin kaynağını ve içeriğini detaylandırmadığı eleştiriliyor.\n\nBu gelişme, AI etik ve veri gizliliği tartışmalarını yeniden alevlendirdi. Regülatörler, büyük dil modellerinin eğitiminde kullanılan veri setlerinin kaynağını ve izin durumunu belgelemeyi zorunlu kılan yeni düzenlemeler üzerinde çalışıyor. OpenAI'nin bu iddialara yanıtı, hem kullanıcı güveni hem de sektörel rekabet açısından kritik bir dönemeç oluşturuyor. Şirketin, veri kullanım politikalarını güncelleyip, şeffaf bir rapor sunması bekleniyor.\n\nYerel LLaMA topluluğu, bu konunun daha geniş bir tartışma başlatması ve diğer AI sağlayıcılarının da benzer veri toplama uygulamalarını gözden geçirmesi gerektiğini savunuyor. Kullanıcıların verilerinin nasıl ve ne amaçla kullanıldığına dair net bir şeffaflık sağlanmadığı sürece, AI modellerine duyulan güvenin sarsılması kaçınılmaz olacaktır.",
+  "onemli_maddeler": [
+    "OpenAI'nin son matematik benchmark başarıları, kullanıcıların izinsiz paylaştığı veri setlerinden faydalanıldığı iddiasıyla gölgeleniyor.",
+    "Reddit LocalLLaMA topluluğu, veri toplama süreçlerinin şeffaf olmadığını ve anonimleştirme prosedürlerinin yetersiz olduğunu belirtiyor.",
+    "Kullanıcı gizliliği ve veri izinleri, AI regülasyonları kapsamında yeni yasal düzenlemelerin önünü açabilir."
+  ],
+  "kategori": "politika",
+  "onem": 4,
+  "onem_gerekce": "Kullanıcı verilerinin izinsiz kullanımı, AI güveni ve regülasyonları açısından kritik bir konudur.",
+  "etiketler": [
+    "OpenAI",
+    "veri gizliliği",
+    "matematik benchmark",
+    "AI etik"
+  ],
+  "anilan_modeller": [
+    "GPT-4",
+    "GPT-4 Turbo"
+  ],
+  "yorum_tr": "Bu iddialar, AI geliştiricileri için veri toplama süreçlerini daha şeffaf ve denetlenebilir hâle getirme zorunluluğunu ortaya koyuyor; kullanıcılar ise gizlilik haklarını koruyan daha katı politikalar talep ediyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/8wdw3ugaVlNxaJ1exGG5R18eA4TmrdqJWh5n0P9Nms0.jpeg?width=320&crop=smart&auto=webp&s=22f2de616fa5bde839fdb359e55e3e7997525be1",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x1rk4o/openais_math_findings_built_on_stolen_user_data/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-09T17:32:13.000Z",
+  "slug": "openai-s-math-findings-built-on-stolen-user-data"
+}

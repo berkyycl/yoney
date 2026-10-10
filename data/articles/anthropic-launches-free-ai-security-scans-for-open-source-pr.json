@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "Anthropic, açık kaynak projeler için ücretsiz AI güvenlik taraması başlattı",
+  "ozet_tr": "Anthropic, açık kaynak yazılımlara yönelik yeni bir hizmet olan OSS Scanner'ı ücretsiz olarak sunuyor. En güçlü modelleri, özellikle Claude Mythos, periyodik ve otomatik güvenlik taramaları yaparak potansiyel açıkları raporlıyor.",
+  "detayli_icerik_tr": "Anthropic, açık kaynak topluluğuna yönelik bir güvenlik çözümü olarak OSS Scanner hizmetini duyurdu. Bu hizmet, açık kaynak projelerinin gönüllü olarak katılım sağlaması koşuluyla, Anthropic'in en güçlü yapay zeka modelleri – Claude Mythos dahil – tarafından tamamen otomatik olarak üretilen güvenlik raporları sunuyor. Raporlar insan denetimi veya triage sürecinden geçmediği için tarama sıklığı ve hızı artarken, yanlış veya geçersiz bulguların da ortaya çıkma ihtimali bulunuyor.\n\nOSS Scanner, projelere güvenlik açıklarını daha erken tespit etme imkanı tanırken, aynı zamanda AI destekli hata bulma araçlarının artan popülaritesine bir yanıt niteliği taşıyor. Geçtiğimiz aylarda, AI tabanlı araçların “Copy Fail” hatasını tespit etmesiyle neredeyse tüm Linux dağıtımları etkilenmişti; bu durum AI’nın güvenlik alanındaki potansiyelini gösterdi. Ancak, Linus Torvalds ve Google gibi büyük açık kaynak geliştiricileri, AI tarafından üretilen raporların hacmiyle başa çıkmakta zorlandıklarını belirtiyor.\n\nAnthropic'in bu hamlesi, açık kaynak projelerinin güvenlik süreçlerini otomatikleştirerek maliyetleri düşürmeyi ve toplulukların savunma kapasitesini artırmayı hedefliyor. Ücretsiz olması, özellikle kaynakları sınırlı olan küçük projeler için büyük bir avantaj sağlarken, raporların doğruluğu konusunda kullanıcıların ek bir inceleme yapması öneriliyor. Gelecekte, Anthropic'in insan denetimi ekleyerek hizmeti geliştirmesi ve model performansını sürekli iyileştirmesi bekleniyor.",
+  "onemli_maddeler": [
+    "OSS Scanner, açık kaynak projelere ücretsiz, periyodik AI tabanlı güvenlik taramaları sunuyor.",
+    "Raporlar tamamen model tarafından üretiliyor; insan incelemesi bulunmadığı için hatalı sonuç riski var.",
+    "Kullanılan en güçlü model Claude Mythos ve diğer Anthropic modelleri, savunma avantajını maksimize etmeyi amaçlıyor.",
+    "AI destekli güvenlik taramaları, önceki “Copy Fail” gibi büyük açıkları ortaya çıkarmış, ancak rapor hacmiyle başa çıkma sorunları da yaratıyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Açık kaynak güvenliği, yazılım ekosisteminin bütünlüğü için kritik; ücretsiz ve otomatik bir çözüm, geniş topluluklar için büyük fayda sağlayacak.",
+  "etiketler": [
+    "Anthropic",
+    "OSS Scanner",
+    "açık kaynak güvenliği",
+    "Claude Mythos",
+    "AI bug hunting"
+  ],
+  "anilan_modeller": [
+    "Claude Mythos"
+  ],
+  "yorum_tr": "Bu hizmet, açık kaynak geliştiricilerine düşük maliyetli bir savunma katmanı ekleyerek güvenlik açıklarını erken tespit etmelerini sağlıyor. Ancak raporların insan denetimi olmadan kullanılmasının getirdiği yanlış pozitif riskine karşı ek doğrulama adımları gerekecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/05/STKB364_CLAUDE_2_C_96d15c.jpg?quality=90&strip=all&crop=0,0,100,100",
+  "url": "https://www.theverge.com/ai-artificial-intelligence/1008521/anthropic-open-source-oss-scanner",
+  "source": "The Verge AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-08T21:53:51.000Z",
+  "slug": "anthropic-launches-free-ai-security-scans-for-open-source-pr"
+}

@@ -1,0 +1,42 @@
+{
+  "baslik_tr": "OpenAI, Kurumsal ChatGPT ve Codex Kullanımını İş Değerine Bağlayan Yeni Analitik Araçlarını Duyurdu",
+  "ozet_tr": "OpenAI, kurum yöneticilerinin yapay zekâ yatırımlarının somut geri dönüşünü ölçebilmeleri için ChatGPT Admin Console üzerinde kapsamlı yeni analitik araçlarını kullanıma sundu. Yeni özellikler; harcama ve kullanım verilerinin ötesine geçerek görev sınıflandırması, model tercihi analizleri ve Codex'in mühendislik çıktılarına doğrudan katkısını detaylı bir şekilde raporluyor.",
+  "detayli_icerik_tr": "Şirketler genelinde üretken yapay zekâ araçlarının benimsenmesi hızla artarken, BT yöneticileri ve iş liderleri yapılan harcamaların nerede gerçek bir iş değeri yarattığını anlamakta zorlanıyordu. OpenAI, bu ihtiyaca yanıt olarak ChatGPT Admin Console bünyesinde ChatGPT Work ve Codex genelindeki kullanım, maliyet, görev analitiği ve iş çıktısı metriklerini tek bir çatı altında toplayan gelişmiş analitik özelliklerini tanıttı. Yeni sistem, salt kullanıcı sayısı ya da harcanan kredi miktarını göstermekle kalmayıp, ekiplerin yapay zekâyı hangi iş süreçlerinde nasıl kullandığını görünür kılıyor.\n\nSistemde yer alan görev sınıflandırıcısı (task classifier), mesaj örneklerini kullanım senaryolarına göre otomatik gruplandırıyor. Örneğin yazılım mühendisliği altında özellik geliştirme ve kod bakımı gibi süreçler ayrıştırılırken; satış ve gelir ekiplerinde hesap araştırması ve planlama gibi görevler öne çıkıyor. Yöneticiler bu paneller üzerinden hangi ekiplerin hangi görevlerde yapay zekâdan yararlandığını görerek eğitim ihtiyaçlarını belirleyebiliyor. Ayrıca kullanılan modeller, akıl yürütme seviyeleri (reasoning level) ve yanıt hızları incelenerek basit işlerde daha uygun maliyetli modellerin seçilip seçilmediği denetlenebiliyor. Eklenti (plugin) ve beceri (skill) liderlik tabloları ise şirket içindeki en popüler araçları ve entegrasyon açıklarını ortaya koyuyor.\n\nYazılım geliştirme tarafında ise Codex Outcomes görünümü, mühendislik liderlerine doğrudan birim çıktı takibi sunuyor. Bu panel; birleştirilen commit'lerin (merged commits) ve yazılan kod satırlarının ne kadarında Codex katkısı olduğunu net biçimde takip etmeyi sağlıyor. Yöneticiler bu verileri kod inceleme süreleri, hata oranları ve yeniden çalışma payı ile karşılaştırarak yapay zekânın yazılım teslim hızını ne kadar iyileştirdiğini ölçebiliyor.\n\nSon olarak OpenAI, bu verilerin raporlanmasını otomatikleştirmek için ChatGPT Admin eklentisini ve Admin API'sini de devreye aldı. Admin eklentisi, doğrudan yönetim toplantıları için grafikler, ana bulgular ve önerilen sonraki adımları içeren sunumlar hazırlayabilirken; Admin API sayesinde kullanım verileri CRM ya da kurumsal destek sistemleri gibi iş platformlarına doğrudan entegre edilebiliyor. Böylece harcanan yapay zekâ kredileri ile bilet çözüm süreleri veya satış fırsatlarının kapanma oranları arasındaki doğrudan korelasyon hesaplanabiliyor.",
+  "onemli_maddeler": [
+    "ChatGPT Admin Console, ChatGPT Work ve Codex kullanımını görev, kullanıcı ve grup bazında tek ekranda topluyor.",
+    "Görev sınıflandırıcısı, mesajları otomatik analiz ederek satış araştırması, yazılım bakımı gibi iş senaryolarına göre kredi dağılımını gösteriyor.",
+    "Codex Outcomes paneli, birleştirilen commit'lerdeki ve yazılan kod satırlarındaki yapay zekâ katkısını doğrudan ölçüyor.",
+    "Model, akıl yürütme seviyesi ve eklenti kullanım detayları sayesinde eğitim ve maliyet optimizasyonu hedefleri kolayca belirlenebiliyor.",
+    "Admin eklentisi ve Admin API desteğiyle kullanım verileri şirket içi KPI panellerine ve yönetim sunumlarına otomatik aktarılabiliyor."
+  ],
+  "kategori": "diger",
+  "onem": 4,
+  "onem_gerekce": "Büyük kurumsal şirketlerin yapay zekâ yatırımlarında karşılaştığı en büyük sorun olan 'Yatırım Getirisi (ROI) ve iş değeri ölçümü' eksikliğini doğrudan çözen resmi kurumsal bir yönetim aracıdır.",
+  "etiketler": [
+    "OpenAI",
+    "ChatGPT",
+    "ChatGPT Admin Console",
+    "Codex",
+    "Kurumsal Yapay Zeka"
+  ],
+  "anilan_modeller": [
+    "Codex",
+    "ChatGPT"
+  ],
+  "yorum_tr": "Kurumsal yapay zekâ adaptasyonunda 'merak aşaması' sona ererken şirketler artık somut finansal getiri ve verimlilik artışı talep ediyor. OpenAI'ın sunduğu bu detaylı analitik katmanı, BT yöneticilerinin harcamaları savunabilmesini sağlarken, gereksiz pahalı model kullanımlarını törpülemelerine ve kurum içi eğitim açıklarını veriye dayalı olarak kapatmalarına imkân tanıyacaktır.",
+  "gorseller": [
+    "https://images.ctfassets.net/kftzwdyauwt9/42junALmw7MNvMfaWUOJCc/d315ef1910e886597f64ea2ad23de7a5/01.png?w=3840&q=90&fm=webp",
+    "https://images.ctfassets.net/kftzwdyauwt9/O6nuMhoAsiaEDo99IXI9B/78853f3954b26a376969eeefc75e5e64/02.png?w=3840&q=90&fm=webp",
+    "https://images.ctfassets.net/kftzwdyauwt9/1ONHRK21waoq4gqHfhD6X9/cc11820f037f71b0dee425df46f1da7a/03.png?w=3840&q=90&fm=webp",
+    "https://images.ctfassets.net/kftzwdyauwt9/2canWmDhulJDPByOrSviSD/7f29995bc761423c0f09466ce93da586/04.png?w=3840&q=90&fm=webp",
+    "https://images.ctfassets.net/kftzwdyauwt9/sgUGoMDkffZ5oKJa0diSZ/3ace661a9bcc46f669ec741588fbdcce/06.png?w=3840&q=90&fm=webp",
+    "https://images.ctfassets.net/kftzwdyauwt9/3LbSDXkO9Ss096eMFAswH3/48745c3bf9a4387a76197cc5820d6b08/07.png?w=3840&q=90&fm=webp"
+  ],
+  "benchmarklar": [],
+  "gorsel_url": "https://images.ctfassets.net/kftzwdyauwt9/3Ias4lDCBufY7UbBmXDNjz/b72b7e773296ca0c7e74151f9c5447a2/seo-018.png?w=1600&h=900&fit=fill",
+  "url": "https://openai.com/index/how-to-connect-ai-usage-to-business-value",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-09-16T12:00:00.000Z",
+  "slug": "how-to-connect-ai-usage-to-business-value"
+}

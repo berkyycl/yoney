@@ -1,0 +1,44 @@
+{
+  "baslik_tr": "OpenAI, ChatGPT çıktılarında AB'de varsayılan su işareti ekleyecek",
+  "ozet_tr": "OpenAI, Avrupa Birliği'nde ChatGPT tarafından üretilen metinleri otomatik olarak su işaretiyle işaretleyecek. Bu adım, Ağustos ayında yürürlüğe giren AB AI Yasası'na uyum sağlamak amacıyla atılıyor ve su işareti özelliği diğer bölgelerde varsayılan olarak kapalı olacak.",
+  "detayli_icerik_tr": "OpenAI, Avrupa Birliği içinde ChatGPT ve Codex uygulamalarında metin çıktılarının otomatik olarak su işareti (watermark) eklenmesini duyurdu. Şirket, bu özelliği \"textGrain\" adıyla adlandırıyor ve teknik bir makale yayımlayarak yöntemini açıklıyor. Su işareti, insan okuyucusuna görünmeyen ancak belirli bir anahtar ile çalışan bir algılayıcı sayesinde tespit edilebilen kelime seçim desenleri içeriyor.\n\nAB AI Yasası, yapay zeka tarafından üretilen içeriğin tespit edilebilir şekilde işaretlenmesini zorunlu kılıyor. OpenAI, bu gerekliliği karşılamak için su işareti özelliğini AB'de varsayılan hâle getirirken, diğer bölgelerde kullanıcıların isteğine bağlı olarak kullanılabilecek şekilde tutuyor. Şirket, algılayıcıya sınırlı sayıda araştırmacı ve kuruluşun erişebileceğini ve zaman içinde daha fazla başvurunun onaylanabileceğini belirtiyor.\n\nOpenAI'nin kendi testlerine göre, textGrain su işareti %92 başarı oranıyla tespit edilebiliyor. Ancak bu oran, çıktının %10'u değiştirilince %30, %20'si değiştirildiğinde ise %75 düşüyor. Kısa metinler ve çevirilerde başarı oranı daha düşük. Bu sonuçlar, daha önceki su işareti çözümlerine benzer bir performans sergiliyor.\n\nRakip Anthropic, aynı dönemde metin su işaretlemesini küresel olarak etkinleştirmişti; OpenAI ise yalnızca düzenleyici zorunlulukların bulunduğu bölgelerde varsayılan olarak sunuyor. API üzerinden su işareti seçeneği kapalı kalacak ancak isteğe bağlı olarak etkinleştirilebilecek. Yeni özellik, AB kullanıcılarına önümüzdeki haftalarda sunulacak.",
+  "onemli_maddeler": [
+    "OpenAI, AB içinde ChatGPT ve Codex çıktılarında otomatik su işareti (textGrain) ekleyecek.",
+    "Su işareti, kelime seçim desenleriyle gizli bir işaret bırakıyor ve özel bir algılayıcıyla tespit edilebiliyor.",
+    "OpenAI'nin testlerinde su işareti tespit oranı %92, ancak metnin %10'u değiştirildiğinde %30, %20'si değiştirildiğinde %75 düşüyor.",
+    "Özellik AB dışındaki bölgelerde varsayılan olarak kapalı; API üzerinden isteğe bağlı olarak etkinleştirilebilecek."
+  ],
+  "kategori": "politika",
+  "onem": 4,
+  "onem_gerekce": "AB AI Yasası zorunluluğu, OpenAI'nin ürün stratejisini ve kullanıcı deneyimini doğrudan etkileyen kritik bir regülasyon değişikliği olduğu için yüksek öneme sahiptir.",
+  "etiketler": [
+    "OpenAI",
+    "ChatGPT",
+    "watermark",
+    "EU AI Act",
+    "textGrain"
+  ],
+  "anilan_modeller": [
+    "ChatGPT",
+    "Codex"
+  ],
+  "yorum_tr": "Su işareti uygulaması, düzenleyici uyumu sağlarken aynı zamanda geliştiricilere ve son kullanıcılara sahte içerik tespiti konusunda yeni bir araç sunuyor; ancak tespit oranının metin değişikliklerine duyarlı olması, pratikte sınırlı bir koruma sağlayabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "ChatGPT (textGrain)",
+      "benchmark": "Watermark detection success rate",
+      "skor": 92,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Unmodified generated text",
+      "kaynak_metinden_alinti": "OpenAI's tests of textGrain show a respectable but not entirely reliable 92 percent successful detection rate"
+    }
+  ],
+  "gorsel_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/chatgpt-icon-1152x648-1789154124.jpg",
+  "url": "https://arstechnica.com/ai/2026/10/openai-will-watermark-chatgpt-outputs-by-default-but-only-in-the-eu/",
+  "source": "Ars Technica AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-06T20:50:32.000Z",
+  "slug": "openai-will-watermark-chatgpt-outputs-by-default-but-only-in"
+}

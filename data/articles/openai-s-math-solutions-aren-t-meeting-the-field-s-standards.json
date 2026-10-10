@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "OpenAI'ın İleri Düzey Matematik Kanıtları Akademik Standartların Gerisinde Kaldı: Matematikçilerden Sert Eleştiri",
+  "ozet_tr": "OpenAI'ın dünyanın en zorlu matematik problemlerine yönelik sunduğu yüzlerce yeni çözüm, matematik camiasının belirlediği şeffaflık ve insan kavrayışı standartlarını karşılayamadı. Institute for Advanced Study bünyesindeki bağımsız danışma kurulu ve önde gelen matematikçiler, şirketin tescilli modellerle ürettiği kanıtların yeterince denetlenemediğini ve biçimsel kod ile doğal dil arasında uyuşmazlıklar bulunduğunu belirterek tepki gösterdi.",
+  "detayli_icerik_tr": "Yapay zekâ araştırma laboratuvarı OpenAI, dünyanın en zorlu matematik problemlerinden bazılarına yönelik yüzlerce çözüm iddiası yayımladı. Şirket, daha önceki tartışmaların önüne geçmek adına Institute for Advanced Study (IAS) bünyesinde kurulan Matematik ve Yapay Zekâ Danışma Grubu'na (AGMAI) danıştığını açıklasa da, yayımlanan çalışmaların akademik camianın belirlediği temel standartların oldukça gerisinde kaldığı ortaya çıktı. Dokuz saygın araştırmacıdan oluşan AGMAI'nin ilk ve en net tavsiyesi 'ileri düzey matematik problemlerinin tescilli (kapalı) modeller üzerinde test edilmesinin durdurulması' iken, OpenAI'ın açık araştırma problemlerini doğrudan kapalı modelleriyle çözmeye devam ettiği görüldü.\n\nAraştırmacıların en büyük endişelerinden biri, yapay zekâ tarafından üretilen çözümlerin 'insan kavrayışı' boyutundan yoksun olması. OpenAI'ın sunduğu 719 makaleden yalnızca 10 tanesinde modelin akıl yürütme zincirinin (chain of thought) paylaşılmış olması şeffaflık konusundaki soru işaretlerini artırdı. Ayrıca AGMAI, insanların anlamakta güçlük çektiği kanıtların Lean gibi resmi doğrulama dillerine aktarılmasını (formalize edilmesini) önermişti; ancak sunulan kanıtların yüzde 42'sinin henüz bu süreçten bile geçmediği belirtildi. Dünyaca ünlü matematikçi Terence Tao da duruma tepki göstererek, hedeflerine ulaşan yapay zekâ operatörlerinin alanı derinlemesine anlamadan ve sonuçları tartışmaya açmadan bu çıktıları paylaştığına dikkat çekti.\n\nDurumu daha kritik hale getiren somut bir kanıt ise Cambridge Üniversitesi ve King's College London araştırmacılarından geldi. Yayımlanan yeni bir çalışma, OpenAI modellerinin akışkanların hareketini açıklayan Navier-Stokes denklemleriyle bağlantılı bir probleme sunduğu çözümde, doğal dildeki ispat ile bunu kodlayan Lean biçimsel kanıtı arasında en az iki belirgin tutarsızlık tespit etti. Araştırmacılar, modellerin doğal dildeki mantığı Lean koduna çevirirken 'çeviri hataları' (lost in translation) yaptığını ve bu nedenle insan hakem denetiminden geçmeyen otomatik çözümlerin doğrudan doğru kabul edilmemesi gerektiğini vurguluyor.\n\nMatematik dünyası, yapay zekânın sadece mekanik olarak çözüm üretmesinin bilimsel ilerleme için yetersiz olduğunun altını çiziyor. Harvard Üniversitesi matematik profesörü Melanie Wood'un da belirttiği gibi, insanlar yeni bir teorem kanıtladığında bunun arkasındaki mantığı seminerler ve makalelerle topluluğa aktarıyor, böylece yeni yöntemler diğer problemlere uyarlanabiliyor. Matematikçiler, OpenAI'ın sunduğu çözümlerin bilimsel bir değere kavuşabilmesi için insan araştırmacıların mesai harcamasını finanse etmesi ve sonuçları makine tarafından okunabilir meta verilerle eksiksiz paylaşması gerektiğini savunuyor.",
+  "onemli_maddeler": [
+    "AGMAI'nin 'kapalı modellerle açık matematik problemlerini test etmeyi bırakın' uyarısına rağmen OpenAI tescilli modellerini kullanmayı sürdürdü.",
+    "Yayımlanan 719 matematik makalesinden sadece 10 tanesinde yapay zekânın düşünce zinciri (chain of thought) paylaşıldı ve yüzde 42'si biçimselleştirilmedi.",
+    "Cambridge ve King's College araştırmacıları, Navier-Stokes odaklı bir problemde doğal dil ispatı ile Lean kodu arasında en az iki tutarsızlık saptadı.",
+    "Terence Tao dahil önde gelen matematikçiler, insan anlayışından yoksun ve hakem denetiminden geçmemiş modellerin kanıtlarına doğrudan güvenilmemesi gerektiğini vurguladı."
+  ],
+  "kategori": "diger",
+  "onem": 4,
+  "onem_gerekce": "Yapay zekanın ileri düzey bilimsel araştırmalarda ve matematiksel akıl yürütmede güvenilirliği ve metodolojisi açısından akademik çevrelerle yaşanan en somut yol ayrımını temsil ediyor.",
+  "etiketler": [
+    "OpenAI",
+    "Matematik",
+    "Lean",
+    "AGMAI",
+    "Terence Tao"
+  ],
+  "anilan_modeller": [
+    "OpenAI proprietary models"
+  ],
+  "yorum_tr": "Yapay zekâ modellerinin problem çözmedeki hızı etkileyici olsa da, bilimsel süreç yalnızca 'sonuca ulaşmak' değil, 'neden ve nasıl ulaşıldığını insan aklıyla temellendirmek' üzerine kuruludur. Biçimsel diller (Lean gibi) ile doğal dil arasındaki çeviri tutarsızlıkları, yapay zekanın henüz insan denetimi ve hakem değerlendirmesi olmadan tek başına matematiksel gerçeklik üretemeyeceğini açıkça kanıtlıyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://techcrunch.com/wp-content/uploads/2026/09/Screenshot-2026-09-11-at-1.39.30-PM.png?w=672",
+  "url": "https://techcrunch.com/2026/10/08/openais-math-solutions-arent-meeting-the-fields-standards-yet/",
+  "source": "TechCrunch AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-08T18:10:55.000Z",
+  "slug": "openai-s-math-solutions-aren-t-meeting-the-field-s-standards"
+}

@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "llama.cpp, MiniCPM-V 4.7 Model Desteği İçin Pull Request'i Birleştirdi",
+  "ozet_tr": "ggml-org/llama.cpp projesi, MiniCPM-V-4.7-35B-A3B modelinin entegrasyonu için bir pull request (PR #29416) yayınladı. Bu adım, topluluk tarafından daha önce Reddit'te duyurulan ancak Hugging Face'te gizlenen modeli yerel ortamlarda çalıştırabilmeyi mümkün kılıyor.",
+  "detayli_icerik_tr": "Open-source LLM altyapısı llama.cpp, son güncellemesinde MiniCPM-V 4.7 serisinin 35 milyar parametreli A3B varyantını destekleyecek bir kod değişikliğini (PR #29416) ana dalına ekledi. Bu değişiklik, modelin GGML formatına dönüştürülmüş ağırlıklarını doğrudan CPU ve GPU üzerinde çalıştırabilen bir yol sunuyor. \n\nMiniCPM-V-4.7-35B-A3B modeli, birkaç gün önce r/LocalLLaMA topluluğunda ortaya çıkmış ve kısa bir süre içinde Hugging Face deposundan gizlenmişti. Modelin gizlenmesi, erişim sorunları ve lisans belirsizlikleri yaratmıştı; bu PR sayesinde topluluk, modeli yerel olarak indirme ve çalıştırma imkanı buldu. \n\nKod değişikliği, modelin tokenizasyonu, kv-cache yönetimi ve görsel-işitsel uzantıların (Vision) entegrasyonu gibi kritik bileşenleri içeriyor. Geliştiriciler, bu güncellemeyi llama.cpp'nin 0.2.0 sürümünden itibaren derleyerek, MiniCPM-V 4.7'nin hem metin hem de görsel girdileri işleyebilen çok-modelli yeteneklerinden faydalanabilecekler. \n\nBu gelişme, özellikle düşük donanımlı cihazlarda büyük modelleri çalıştırmak isteyen araştırmacılar ve hobbyist geliştiriciler için önemli bir adım. Modelin açık kaynaklı bir çerçeve içinde kullanılabilir hâle gelmesi, topluluk katkılarını ve yeni uygulama senaryolarını hızlandırması bekleniyor.",
+  "onemli_maddeler": [
+    "llama.cpp, MiniCPM-V-4.7-35B-A3B modelini resmi olarak desteklemeye başladı.",
+    "Model, daha önce Reddit'te duyurulmuş ancak Hugging Face'te gizlenmişti; bu PR sayesinde erişim sağlandı.",
+    "Kod değişikliği, görsel-işitsel uzantıların (Vision) entegrasyonu ve KV-cache optimizasyonlarını içeriyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 3,
+  "onem_gerekce": "Model desteği, açık kaynak topluluğu için yeni araştırma ve uygulama fırsatları yaratırken, mevcut llama.cpp kullanıcı tabanına değer katıyor.",
+  "etiketler": [
+    "llama.cpp",
+    "MiniCPM-V",
+    "AI modeli",
+    "açık kaynak",
+    "GPU"
+  ],
+  "anilan_modeller": [
+    "MiniCPM-V-4.7-35B-A3B"
+  ],
+  "yorum_tr": "MiniCPM-V 4.7'nin llama.cpp'ye eklenmesi, büyük çok-modelli modellerin daha geniş bir kullanıcı kitlesi tarafından deneyimlenmesini sağlayarak, hem araştırmacıların hem de geliştiricilerin inovasyon hızını artıracak.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/TbK3XVR6ASkdshlPBBilG4g95i2h7wYGzURwqT8Fmn4.png?width=640&crop=smart&auto=webp&s=15cbc325426970b0b328f4945b0ce6791538539e",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x2qsh3/model_support_minicpmv_47_by_tcmb_pull_request/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-10T21:37:21.000Z",
+  "slug": "model-support-minicpm-v-4-7-by-tc-mb-pull-request-29416-ggml"
+}

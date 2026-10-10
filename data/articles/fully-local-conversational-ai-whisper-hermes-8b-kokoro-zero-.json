@@ -1,0 +1,38 @@
+{
+  "baslik_tr": "Tamamen Yerel Konuşmalı Yapay Zeka: Whisper + Hermes 8B + Kokoro ile Bulutsuz Oyuncak",
+  "ozet_tr": "Bir Reddit kullanıcısı, hiçbir bulut hizmetine bağlı olmayan, tamamen yerel çalışan bir konuşmalı yapay zeka oyuncağı geliştirdi. Bu proje, sesli girdi için Whisper, büyük dil modeli olarak Hermes 3 Llama 3.1 8B ve metinden sese dönüşüm için Kokoro modellerini kullanarak gizlilik odaklı, kişiselleştirilmiş bir yapay zeka deneyimi sunuyor. Akıllı oyuncak, kullanıcının ruh halini algılayabiliyor ve geçmiş sohbetleri hatırlayabiliyor.",
+  "detayli_icerik_tr": "“Filozof Peluş” olarak adlandırılan bu yenilikçi proje, yapay zekanın tamamen yerel cihazlarda çalışabilme kapasitesini çarpıcı bir şekilde gözler önüne seriyor. Sistemin tüm bileşenleri, kullanıcının yerel ağında, herhangi bir bulut servisi veya API anahtarı gerektirmeden işliyor. Bu, özellikle veri gizliliği ve güvenlik konusunda hassas olan kullanıcılar için önemli bir avantaj sağlıyor. Geliştirici, hiçbir verinin kendi ağından ayrılmadığını belirtiyor.\n\nSes Tanıma (STT) görevi için OpenAI'nin açık kaynaklı Whisper modeli kullanılırken, çekirdek Büyük Dil Modeli (LLM) olarak Hermes 3 Llama 3.1 8B'nin Q8_0 nicelleştirilmiş versiyonu tercih edilmiş. Metinden Sese Dönüşüm (TTS) ise Kokoro adlı başka bir yerel model tarafından gerçekleştiriliyor. Projenin dikkat çekici yönlerinden biri, LangGraph tabanlı “kişi başına hafıza” özelliği sayesinde oyuncağın kiminle konuştuğunu bilmesi ve önceki sohbetleri hatırlamasıdır. Bu kişiselleştirme, kullanıcı deneyimini zenginleştirerek daha doğal ve bağlam açısından zengin etkileşimler sağlıyor.\n\nGörsel zeka yetenekleri de bulunan sistem, dlib kütüphanesi ile yüz tanıma (kimlik doğrulama) ve FER+ ile duygu tanıma yapabiliyor. Böylece oyuncak, konuşanın kim olduğunu ve o anki ruh halini algılayarak tepkilerini buna göre ayarlayabiliyor. Donanım tarafında ise, oyuncak bir \"aptal terminal\" görevi görüyor: Mikrofon, kamera, hoparlör ve kafa servosu içeren bir Raspberry Pi Zero WH, bir dizüstü bilgisayara WebSocket üzerinden veri aktarıyor. Tüm yapay zeka çıkarımı, dizüstü bilgisayarda yerel olarak barındırılan bir API üzerinden gerçekleştiriliyor. Projenin kaynak kodları MIT lisansı altında GitHub'da yayınlanarak topluluğun incelemesine ve geliştirmesine açılmış durumda.",
+  "onemli_maddeler": [
+    "Tüm yapay zeka işlevleri (STT, LLM, TTS, hafıza, görsel zeka) yerel ağda, bulut servisi veya API anahtarı olmadan çalışır.",
+    "Ses tanıma için Whisper, büyük dil modeli için Hermes 3 Llama 3.1 8B (Q8_0) ve metinden sese dönüşüm için Kokoro modelleri kullanılmıştır.",
+    "Sistem, LangGraph tabanlı kişi başına hafıza özelliği sayesinde geçmiş sohbetleri ve konuşmacıyı hatırlayabilir.",
+    "dlib ile yüz tanıma ve FER+ ile duygu tanıma yetenekleri mevcuttur, bu sayede kullanıcı ruh haline uyum sağlar.",
+    "Donanım olarak Raspberry Pi Zero WH ve bir dizüstü bilgisayar kombinasyonu kullanılırken, projenin kaynak kodu MIT lisansı ile GitHub'da açıktır."
+  ],
+  "kategori": "diger",
+  "onem": 3,
+  "onem_gerekce": "Bu proje, yerel yapay zeka uygulamalarının eriştiği gelişmiş seviyeyi ve gizlilik odaklı tasarımların potansiyelini gözler önüne sermesi, aynı zamanda açık kaynaklı ve DIY (kendin yap) topluluğu için önemli bir referans oluşturması nedeniyle oldukça önemlidir.",
+  "etiketler": [
+    "yerel yapay zeka",
+    "LLM",
+    "konuşmalı yapay zeka",
+    "Whisper",
+    "Hermes 8B"
+  ],
+  "anilan_modeller": [
+    "Whisper",
+    "Hermes 3 Llama 3.1 8B",
+    "Kokoro",
+    "dlib",
+    "FER+"
+  ],
+  "yorum_tr": "Bu \"Filozof Peluş\" projesi, gelişmiş yapay zeka yeteneklerinin artık sadece bulut tabanlı sistemlere özgü olmadığını kanıtlıyor. Özellikle veri gizliliği ve bağımsızlık arayan geliştiriciler ve kullanıcılar için umut verici bir yol açarken, DIY topluluğunun da bu tür karmaşık sistemleri ev ortamında hayata geçirebileceğini gösteriyor. Açık kaynak kodlu yapısı, gelecekteki yerel yapay zeka uygulamaları için değerli bir temel teşkil ediyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/YXc0MDEzZnVqbXVoMXefvR3sw4XS7o62CESyd6YTHNKkZtqGhB1PIt_ofdl-.png?width=640&crop=smart&auto=webp&s=11ad0f7c6cde23c5f40ab97bfcc4d716b7cb02f3",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x2cztv/fully_local_conversational_ai_whisper_hermes_8b/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-10T11:28:41.000Z",
+  "slug": "fully-local-conversational-ai-whisper-hermes-8b-kokoro-zero-"
+}

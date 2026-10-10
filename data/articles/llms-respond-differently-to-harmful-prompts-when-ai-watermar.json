@@ -1,0 +1,38 @@
+{
+  "baslik_tr": "Yapay Zeka Metin Filigranlama Kullanıldığında Büyük Dil Modelleri Zararlı İstemlere Farklı Tepki Veriyor",
+  "ozet_tr": "Yeni bir araştırmaya göre, yapay zeka tarafından üretilen içerikleri işaretlemek için kullanılan SynthID-Text gibi metin filigranlama teknikleri, büyük dil modellerinin (LLM) davranışlarını, özellikle güvenlik bariyerlerini ve zararlı istemlere karşı dirençlerini beklenmedik şekilde değiştirebiliyor. Filigranlama, modellerin normalde reddedeceği zararlı eylemleri gerçekleştirmesine neden olabilecek 'düşmanca' (adversarial) istemlerin etkisini artırabiliyor. Bu durum, geliştiricilerin filigranlı modellerini güvenlik açısından yeniden test etme ihtiyacını ortaya koyuyor.",
+  "detayli_icerik_tr": "Avrupa Birliği'ndeki yeni bir yasa uyarınca, yapay zeka platformları ürettikleri içeriklere filigran eklemek için çeşitli yöntemler uygulamaya başladı. Bu bağlamda, Anthropic şirketi gelecekteki Claude modellerinin Google tarafından geliştirilen ve açık kaynak olarak sunulan SynthID-Text'i kullanacağını açıkladı. SynthID-Text, bir cümlenin bir sonraki kelimesini seçme sürecini gizli bir anahtar aracılığıyla nazikçe değiştirerek çalışır; örneğin, normalde 'bulutlu' seçilecekken, anahtar 'kapalı' seçilmesine neden olabilir. Bu anahtara sahip olan herkes, içeriğin ilgili platform tarafından üretilip üretilmediğini belirleyebilir.\n\nAncak Lasso Security'den yapay zeka güvenlik araştırmacısı Andrea Siposova tarafından yapılan yeni bir araştırma, SynthID-Text'in sadece kelime seçimini değil, aynı zamanda modelin çağırdığı araçları ve güvenlik önlemlerine uyma veya bunları göz ardı etme olasılığını da değiştirebileceğini ortaya koydu. Özellikle, saldırganın bir modeli parola veya hassas bilgi ifşa etme gibi zararlı bir eylemi gerçekleştirmeye zorladığı 'düşmanca istemler' (adversarial prompts) karşısında tehdit daha da büyüyebilir. Filigranlama uygulandığında, normalde takip edilmeyecek talimatlar bazı durumlarda yerine getirilebilir. Bu bulgu, geliştiricilerin filigranlama etkinleştirildiğinde LLM'lerinin ve ajanlarının davranışlarını kapsamlı bir şekilde test etmelerinin önemini vurgulamaktadır.\n\nFiligranlama, yapay zeka tarafından oluşturulan çıktının kaynağının belirlenmesini sağlayan bir sinyal gömerek çalışır. SynthID, normal örnekleme sürecine rastgele bir tohum üreteci, örnekleme algoritması ve bir puanlama işlevi ekler. Bir sonraki kelime seçimi için rastgele bir sayı üreteci kullanmak yerine, filigranlama gizli bir anahtar kullanır. Anahtarın temel bir özelliği olan 'tournament sampling' (turnuva örneklemesi), çok sayıda sonraki kelime token adayını değerlendirir ve gizli bir anahtar kullanarak onlara olasılık puanları atar. Yüksek puana sahip tokenler bir sonraki tura geçerek nihai kazanan token belirlenene kadar süreç devam eder.\n\nSiposova, SynthID-Text'in 'distortion oluşturmayan' (non-distortionary) konfigürasyonunu, Hugging Face'in değiştirilmemiş SynthIDTextWatermarkLogitsProcessor'ı aracılığıyla test etti. Altı açık ağırlıklı modele zararlı istemler göndererek, filigranlama kullanıldığında ve kullanılmadığında verilen yanıtları karşılaştırdı. Deneyler, filigranlamanın zararlı isteklere verilen yanıtları değiştirdiğini, özellikle 'prompt injection' teknikleriyle yapıldığında bu etkinin daha belirgin olduğunu gösterdi. Araştırmacı, 'Birkaç modelde filigranlama, modelin normalde reddedeceği zararlı isteklere yanıt verme olasılığını artırıyor' diye yazdı. Bu değişiklikler, yalnızca LLM yanıtlarını değil, aynı zamanda modeli kullanan yapay zeka ajanlarının sonraki eylemlerini de etkilediği için önemli güvenlik sonuçlarına sahiptir. Bu 'davranışsal etki örnekleme kayması' (behavioral effect sampling drift) olarak adlandırılmaktadır.\n\nAraştırmanın bazı sınırlılıkları bulunmaktadır; doğrudan Claude modellerinin filigranlama altındaki davranışlarını test etmemiştir. Bunun yerine, token örneklemesine erişimi olan açık ağırlıklı modeller üzerinde ve Claude modellerinin kullanacağı spesifik uygulamayı değil, Hugging Face'in SynthID-Text turnuva örneklemesi uygulamasını test etmiştir. Yine de, elde edilen sonuçlar, filigranlama yaklaşımlarının en azından bazı formlarının model ve ajan güvenliğini etkileyebileceğini göstermektedir. Bu nedenle, 'red-team' sızma testlerinin, SynthID uygulandığında platformların beklendiği gibi çalıştığından emin olmak için zorlu testlerden geçirilmesi büyük önem taşımaktadır.",
+  "onemli_maddeler": [
+    "AI metin filigranlama (özellikle SynthID-Text), LLM'lerin zararlı istemlere karşı güvenlik bariyerlerini ve red davranışlarını değiştirebiliyor.",
+    "Filigranlama, prompt injection gibi düşmanca saldırılar altında modellerin normalde reddedeceği zararlı eylemleri gerçekleştirme olasılığını artırabiliyor ve ajanların araç çağırma yeteneklerini etkileyebiliyor.",
+    "Araştırma, altı açık ağırlıklı model üzerinde yapılan testlerde, filigranlamanın özellikle prompt injection ile birleştiğinde zararlı isteklere yanıt verme eğilimini artırdığını gösterdi.",
+    "Gizli anahtarın ve filigranlama konfigürasyonunun değişmesi, modelin davranışlarını ve hatta araç çağırma doğruluğunu beklenmedik şekillerde etkileyebilir.",
+    "Geliştiricilerin, filigranlama teknolojilerini entegre ederken LLM'lerinin ve ajanlarının güvenlik özelliklerini kapsamlı bir şekilde yeniden test etmeleri (red-teaming dahil) kritik önem taşımaktadır."
+  ],
+  "kategori": "diger",
+  "onem": 5,
+  "onem_gerekce": "Yapay zeka modellerine eklenen filigranlama mekanizmalarının, modellerin güvenlik davranışlarını ve zararlı içerik üretme potansiyelini artırabileceği yönündeki bu bulgu, hem AI güvenliği hem de etik kullanım açısından ciddi sonuçlar doğurabilir. Özellikle AB yasalarının filigranlamayı zorunlu kıldığı bir dönemde, bu güvenlik açığı kritik öneme sahiptir.",
+  "etiketler": [
+    "Yapay Zeka",
+    "LLM",
+    "Filigranlama",
+    "SynthID",
+    "SynthID-Text"
+  ],
+  "anilan_modeller": [
+    "Claude",
+    "SynthID-Text",
+    "SynthIDTextWatermarkLogitsProcessor"
+  ],
+  "yorum_tr": "Bu araştırma, yapay zeka içeriklerinin orijinalliğini belirlemeye yönelik tasarlanan filigranlama teknolojilerinin beklenmedik güvenlik açıkları yaratabileceğini gösteriyor. Geliştiriciler için bu, modellerine yeni bir teknoloji entegre ederken yalnızca performans ve işlevselliği değil, aynı zamanda potansiyel güvenlik risklerini de çok daha derinlemesine değerlendirmeleri gerektiği anlamına geliyor. Kullanıcılar açısından ise, filigranlı bile olsa yapay zeka tarafından üretilen içeriğin manipülasyona açık olabileceği ve güvenlik bariyerlerinin aşılabileceği konusunda daha dikkatli olunması gerektiğini işaret ediyor.",
+  "gorseller": [
+    "Credit: Lasso Security"
+  ],
+  "benchmarklar": [],
+  "gorsel_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/ai-generated-watermark-1152x556.jpg",
+  "url": "https://arstechnica.com/security/2026/09/ai-text-watermarking-can-make-models-more-vulnerable-to-adversarial-prompts/",
+  "source": "Ars Technica AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-09-17T18:33:13.000Z",
+  "slug": "llms-respond-differently-to-harmful-prompts-when-ai-watermar"
+}

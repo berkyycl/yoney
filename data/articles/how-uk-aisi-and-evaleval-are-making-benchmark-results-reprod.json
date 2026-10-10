@@ -1,0 +1,39 @@
+{
+  "baslik_tr": "Birleşik Krallık AISI ve EvalEval'dan Yapay Zekâ Değerlendirmelerinde Yeniden Üretilebilirlik Devrimi",
+  "ozet_tr": "Birleşik Krallık Yapay Zekâ Güvenlik Enstitüsü (UK AISI), kıyaslama ve değerlendirme sonuçlarının şeffaf, doğrulanabilir ve yeniden üretilebilir olmasını sağlamak amacıyla EvalEval koalisyonunun altyapısını benimsediğini duyurdu. Ortaklık kapsamında, Every Eval Ever (EEE) standardı ve Evaluation Cards platformu kullanılarak en gelişmiş öncü modellerin kapsamlı test verileri ve çalışma yapılandırmaları kamuoyuna açılıyor.",
+  "detayli_icerik_tr": "Yapay zekâ modellerinin kabiliyetleri hızla artarken, yayımlanan kıyaslama (benchmark) sonuçlarının bağımsız araştırmacılar tarafından yeniden üretilmesi giderek zorlaşıyor. Birçok kurum ve şirket test sonuçlarını farklı formatlarda, eksik parametrelerle ve yürütme detaylarını gizleyerek paylaşıyor; üstelik bu testleri sıfırdan tekrarlamak yüksek hesaplama maliyetleri doğuruyor. UK AISI ve EvalEval Koalisyonu, bu güvenilirlik krizini aşmak ve değerlendirme bilimini standartlaştırmak amacıyla güçlerini birleştirdi. NeurIPS 2025'teki ortak çalıştayla temelleri atılan bu iş birliği, 'Every Eval Ever' (EEE) ortak şeması ve 'Evaluation Cards' platformu aracılığıyla hayata geçiriliyor.\\n\\nYeni girişim kapsamında UK AISI, 'How Inference Compute Shapes Frontier LLM Evaluation' adlı araştırma makalesine ait tüm değerlendirme yöntemlerini ve bulgularını Evaluation Cards üzerinden şeffaf bir şekilde erişime açtı. Paylaşılan veriler; HealthBench, FrontierMath, Humanity's Last Exam, SWE-Bench Pro ve Terminal-Bench 2.0 olmak üzere beş temel kıyaslama testini ve bu testlere tabi tutulan Claude Opus 4, Claude Opus 4.5, Claude Opus 4.6, GPT-5, GPT-5.2 ile GPT-5.4 gibi öncü modelleri kapsıyor. Ayrıca siber güvenlik odaklı Cyber CTFs ve The Last Ones değerlendirmeleri de bu açık veri tabanına dahil edildi.\\n\\nBu şeffaflık atağının en kritik teknik boyutu, çıkarım anı hesaplaması (inference-time compute) ve değerlendirme protokollerinin nihai skora olan doğrudan etkisini gözler önüne sermesi oldu. Örneğin Humanity's Last Exam testinde, modellerin kâhin (oracle) tabanlı doğruluk geri bildirimi alması ve harcanan belirteç (token) bütçesinin artırılması durumunda görev tamamlama başarılarının dramatik şekilde değiştiği kanıtlandı. Bu durum, yalnızca liderlik tablosundaki ham puanlara bakmanın yanıltıcı olduğunu, çalışma parametreleri ve transkript şeffaflığı olmadan iki modeli karşılaştırmanın bilimsel bir geçerliliği bulunmadığını ortaya koyuyor.\\n\\nUK AISI ve EvalEval, model geliştiricilerini ve araştırmacıları EEE şemasını kullanmaya, ham skorlar yerine yapılandırma detaylarını da içeren doğrulanmış değerlendirme kartları yayımlamaya davet ediyor. AISI'nin daha önce geliştirdiği OptStop ve hiyerarşik Bayes modellemesine dayanan HiBayES gibi istatistiksel araçlarla desteklenen bu ortak altyapının, hem yapay zekâ yönetişimi hem de güvenlik politikalarının şekillenmesinde temel referans noktası olması hedefleniyor.",
+  "onemli_maddeler": [
+    "Birleşik Krallık AISI, model değerlendirmelerini şeffaf ve doğrulanabilir kılmak için EvalEval'ın Every Eval Ever (EEE) ve Evaluation Cards altyapısını benimsedi.",
+    "Claude Opus 4 serisi ve GPT-5 ailesini kapsayan öncü modellerin HealthBench, FrontierMath ve Humanity's Last Exam gibi testlerdeki detaylı çalışma parametreleri kamuya açıldı.",
+    "Çalışma, çıkarım anı hesaplaması (inference compute) ve kâhin geri bildirimlerinin test başarı oranlarını doğrudan değiştirdiğini, bu nedenle ham puanların çalışma bağlamı olmadan anlamsız olduğunu kanıtlıyor.",
+    "Siber güvenlik kabiliyetlerini ölçen Cyber CTFs ve The Last Ones test verileri de değerlendirme kartları şemasına dahil edildi.",
+    "Değerlendirme bilimini standartlaştırmayı amaçlayan girişim; HiBayES ve OptStop gibi istatistiksel doğruluk araçlarıyla destekleniyor."
+  ],
+  "kategori": "diger",
+  "onem": 3,
+  "onem_gerekce": "Yapay zekâ liderlik tablolarındaki pazarlama odaklı ham puan karmaşasını sona erdirerek çıkarım parametreleri, transkriptler ve tohumlama değerleriyle bilimsel ve yeniden üretilebilir bir değerlendirme standardı getiriyor.",
+  "etiketler": [
+    "EvalEval",
+    "UK AISI",
+    "Yapay Zekâ Güvenliği",
+    "Benchmark",
+    "Evaluation Cards"
+  ],
+  "anilan_modeller": [
+    "Claude Opus 4",
+    "Claude Opus 4.5",
+    "Claude Opus 4.6",
+    "GPT-5",
+    "GPT-5.2",
+    "GPT-5.4"
+  ],
+  "yorum_tr": "Yapay zekâ ekosisteminde 'Model A, Model B'yi geçti' iddiaları çoğu zaman çıkarım parametreleri ve istem ayarları gizlendiği için yanıltıcı oluyordu. UK AISI ve EvalEval'ın başlattığı transkript düzeyindeki bu şeffaflık adımı, kıyaslama testlerini pazarlama aracından çıkarıp doğrulanabilir bilimsel sözleşmelere dönüştürme potansiyeli taşıyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://huggingface.co/blog/assets/evaleval-aisi/thumbnail.png",
+  "url": "https://huggingface.co/blog/evaleval-aisi",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-09-22T00:00:00.000Z",
+  "slug": "how-uk-aisi-and-evaleval-are-making-benchmark-results-reprod"
+}

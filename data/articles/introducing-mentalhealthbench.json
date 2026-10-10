@@ -1,28 +1,30 @@
 {
-  "baslik_tr": "OpenAI, MentalHealthBench ile AI Destekli Ruh Sağlığı Değerlendirmesine Yeni Standart Getiriyor",
-  "ozet_tr": "OpenAI, dünya çapında 80'den fazla lisanslı uzmanla ortaklaşa geliştirdiği MentalHealthBench adlı açık benchmark'ı duyurdu. Bu ölçüt, yapay zekâların gerçekçi ruh sağlığı diyaloglarındaki güvenlik, bağlam toplama, kullanıcı özerkliği ve eyleme geçirilebilir rehberlik gibi kritik davranışlarını puanlıyor. Sonuçlar, ChatGPT gibi modellerin bu alandaki ilerlemesini gösterirken, hâlâ terapi yerine geçmediği vurgulanıyor.",
-  "detayli_icerik_tr": "OpenAI, haftada bir milyardan fazla kullanıcıya hizmet veren ChatGPT'nin, ilişki sorunlarından günlük strese kadar geniş bir yelpazede insanlara destek sunma potansiyelini göz önünde bulundurarak MentalHealthBench adlı yeni bir benchmark geliştirdi. Bu benchmark, acil durumların ötesinde, ruh sağlığı konuşmalarının tüm spektrumunu kapsayan senaryoları ve kullanıcı profillerini (yetişkinler, ergenler, bakım verenler, klinisyenler) içeriyor. Senaryolar, gizlilik koruyucu tekniklerle oluşturulmuş sentetik diyaloglar üzerinden, gerçek dünya kullanım kalıplarını yansıtacak şekilde tasarlandı.\n\nBenchmark, 22 ülkeden 80'den fazla lisanslı psikolog ve psikiyatristin katkısıyla oluşturuldu. Uzmanlar, her senaryodaki son kullanıcı mesajına verilen yanıtları değerlendirmek için ağırlıklı rubrik kriterleri geliştirdi; bu kriterler -10 ile +10 arasında puanlanıyor ve pozitif puanlar faydalı davranışları, negatif puanlar ise zararlı davranışları cezalandırıyor. Her diyalog en az üç uzman tarafından incelendi ve iki uzmanın ortak görüşüyle kriterler nihai rubriğe alındı. Değerlendirme, OpenAI'nin otomatik derecelendiricisi GPT‑5.6 Sol tarafından gerçekleştiriliyor.\n\nModel performansları, MentalHealthBench'in tüm veri seti üzerindeki sonuçlarıyla raporlandı. Sonuçlar, modellerin bağlam toplama, empati gösterme ve uygun yönlendirmeler sağlama konularında zaman içinde iyileştiğini gösteriyor. Ancak rapor, ChatGPT'nin bir terapi yerine geçmediğini ve kritik durumlarda gerçek kriz hatları ya da güvenilir kişilerle bağlantı kurmanın hâlâ vazgeçilmez olduğunu vurguluyor. Ayrıca, kullanıcı odaklı bir yan değerlendirme çalışması, uzmanların vurguladığı bağlam toplama ve klinik doğrulukla, kullanıcıların daha çok pratik adımlar ve sıcak bir ton beklediğini ortaya koydu.\n\nOpenAI, MentalHealthBench'i açık kaynak olarak yayınlayarak araştırmacıların metodolojiyi incelemesini, kendi değerlendirmelerini yapmasını ve benchmark'ı geliştirmesini hedefliyor. Bu adım, AI destekli ruh sağlığı hizmetlerinin güvenli, faydalı ve kültürel açıdan duyarlı olmasını sağlamak için sektörel bir referans noktası oluşturmayı amaçlıyor.",
+  "baslik_tr": "MentalHealthBench Tanıtıldı: AI’nın Ruh Sağlığı Konuşmalarındaki Performansını Ölçen Yeni Açık Benchmark",
+  "ozet_tr": "OpenAI, dünya çapında 80'den fazla lisanslı ruh sağlığı uzmanı ile ortaklaşa geliştirdiği MentalHealthBench'i duyurdu. Bu açık benchmark, yapay zekâların gerçekçi ruh sağlığı diyaloglarındaki güvenlik, bağlam toplama, kullanıcı özerkliği ve eyleme geçirilebilir rehberlik gibi kritik davranışlarını ölçmeyi amaçlıyor.",
+  "detayli_icerik_tr": "OpenAI, haftada bir milyardan fazla kullanıcıya hizmet veren ChatGPT'nin, ilişki sorunları, günlük stres ve kriz durumları gibi çeşitli ruh sağlığı konularında daha duyarlı ve güvenli yanıtlar vermesini sağlamak için MentalHealthBench adlı yeni bir değerlendirme çerçevesi geliştirdi. Bu benchmark, acil durumların ötesinde, düşük- ve yüksek akutluk seviyelerindeki konuşmaları kapsayan geniş bir senaryo yelpazesi sunuyor; yetişkinler, ergenler, bakım verenler ve klinisyenler gibi farklı kullanıcı profilleri ve 19 dildeki kültürel bağlamlar da dahil edildi.\n\nSenaryolar, gizlilik koruyucu tekniklerle oluşturulmuş sentetik diyaloglardan oluşuyor ve bazıları kullanıcıların aile kaybı gibi geçmiş bilgilerini içeriyor, böylece modellerin bu bağlamı ne kadar iyi kullandığı ölçülüyor. Her bir diyalog, en az üç uzman tarafından inceleniyor; uzmanlar, model yanıtlarını değerlendirmek için -10 ile +10 arasında ağırlıklı rubrik kriterleri belirliyor. Ortak bir yargıya varılan kriterler benchmarka dahil ediliyor ve yanıtlar, otomatik bir derecelendirici olan GPT‑5.6 Sol tarafından puanlanıyor.\n\nOpenAI, farklı sağlayıcıların en yeni modellerini (Eylül 2026 itibarıyla) MentalHealthBench üzerinde test etti ve sonuçların model davranışlarının zaman içinde iyileştiğini gösterdi. Özellikle bağlam sorgulama yeteneği ve uygun kriz yönlendirmeleri gibi alanlarda ilerlemeler kaydedildi. Bununla birlikte, kullanıcı deneyimi araştırması da yapıldı; 44 yetişkin katılımcı, uzmanların yüksek puan verdiği yanıtların bazen soğuk algılanabileceğini ve pratik adımlar ile tonun kullanıcılar için daha değerli olduğunu belirtti.\n\nMentalHealthBench'in açık olarak yayınlanması, araştırmacıların metodolojiyi incelemesini, kendi değerlendirmelerini yürütmesini ve eksik noktaları tespit ederek modelleri geliştirmesini hedefliyor. OpenAI ayrıca kriz hatları, Trusted Contact ve ChatGPT for Teens gibi destek mekanizmalarını güçlendirmeye devam ediyor, böylece yapay zekâların uzun vadeli refah ve güvenlik odaklı bir ekosisteme katkısı artırılıyor.",
   "onemli_maddeler": [
-    "MentalHealthBench, 80+ lisanslı uzman ve 22 ülke iş birliğiyle oluşturulan ilk kapsamlı ruh sağlığı benchmark'ıdır.",
-    "Benchmark, non-acute, high-acuity ve acil durum senaryolarını kapsayan çok dilli, çok profilli sentetik diyaloglar içerir.",
-    "Uzman rubrikleri -10/+10 ağırlıklı puanlarla model davranışlarını ölçerken, otomatik derecelendirici GPT‑5.6 Sol kullanılıyor.",
-    "Performans sonuçları, modellerin bağlam toplama ve empati yeteneklerinde ilerleme gösterdiğini, ancak hâlâ profesyonel bakımın yerini alamadığını gösteriyor."
+    "MentalHealthBench, 80+ lisanslı ruh sağlığı uzmanı tarafından ortaklaşa oluşturulmuş 22 ülkeden kapsamlı bir benchmark seti sunuyor.",
+    "Benchmark, düşük‑akut, yüksek‑akut ve acil durum senaryolarını kapsayarak modellerin bağlam toplama, kullanıcı özerkliği ve güvenli yönlendirme becerilerini ölçüyor.",
+    "Uzmanların belirlediği -10/+10 ağırlıklı rubrik kriterleriyle model yanıtları otomatik olarak GPT‑5.6 Sol tarafından puanlanıyor.",
+    "Kullanıcı araştırması, pratik adımlar ve tonun uzman odaklı değerlendirmelerden farklı olarak önemli olduğunu ortaya koydu."
   ],
   "kategori": "benchmark",
   "onem": 4,
-  "onem_gerekce": "Ruh sağlığı gibi kritik bir alanda AI güvenliği ve etkinliği ölçen ilk açık benchmark olması, araştırma ve ürün geliştirmede yeni bir standart belirliyor.",
+  "onem_gerekce": "Ruh sağlığı, yapay zekâların güvenli ve faydalı kullanımının kritik bir alanı; açık bir benchmark bu alandaki ilerlemeyi şeffaflaştırıp standartlaştırarak araştırma ve geliştirmeyi hızlandırıyor.",
   "etiketler": [
-    "mental health",
     "AI",
-    "benchmark",
+    "Ruh Sağlığı",
+    "Benchmark",
     "OpenAI",
     "ChatGPT"
   ],
-  "anilan_modeller": [],
-  "yorum_tr": "MentalHealthBench, geliştiricilere modellerinin ruh sağlığı bağlamındaki güçlü ve zayıf yönlerini nicel olarak göstererek iyileştirme odaklı bir yol haritası sunuyor; kullanıcılar ise daha güvenli ve empatik AI desteklerinden faydalanma olasılığı artıyor.",
+  "anilan_modeller": [
+    "ChatGPT"
+  ],
+  "yorum_tr": "MentalHealthBench, AI destekli ruh sağlığı hizmetlerinin kalitesini ölçmek için gerekli bir araç olarak sektöre yön veriyor; geliştiriciler bu benchmark sayesinde eksik yönlerini net bir şekilde görebilirken, kullanıcılar daha güvenli ve empatik yanıtlar bekleyebilecek.",
   "gorseller": [],
   "benchmarklar": [],
-  "gorsel_url": "https://www.unite.ai/wp-content/uploads/2026/09/openai-debuts-mentalhealthbench-for-ai-mental-health-conversations.jpg",
+  "gorsel_url": "https://www.scalacode.com/wp-content/uploads/2026/09/mental-health-bench-featured-image-768x432.webp",
   "url": "https://openai.com/index/introducing-mentalhealthbench",
   "source": "OpenAI",
   "sourceTier": "resmi",

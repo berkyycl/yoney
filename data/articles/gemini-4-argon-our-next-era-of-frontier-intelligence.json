@@ -1,0 +1,72 @@
+{
+  "baslik_tr": "Google DeepMind Yeni Nesil Öncü Yapay Zekâ Modeli Gemini 4 Argon'u Duyurdu",
+  "ozet_tr": "Google DeepMind, karmaşık yazılım mühendisliği, kurumsal iş akışları ve siber savunma alanlarında derin akıl yürütme sağlayan yeni nesil öncü modeli Gemini 4 Argon'u tanıttı. Sektörde bir ilke imza atarak 1 milyon çıktı token sınırına ulaşan model, Fairwind Programı kapsamında öncelikli olarak doğrulanmış siber güvenlik savunucularına sunuluyor.",
+  "detayli_icerik_tr": "Google DeepMind, uzun soluklu ve çok adımlı profesyonel iş akışlarını çözmek üzere sıfırdan tasarlanan frontier seviyesindeki yeni yapay zekâ modeli Gemini 4 Argon'u resmi olarak duyurdu. Şirket içi iş akışlarında şimdiden devrim yaratan model, özellikle C ve C++ kod tabanlarının Rust diline taşınması, kuantum algoritmalarının uzay-zaman optimizasyonu ve veri merkezlerinde geniş çaplı bellek verimliliği analizi gibi kritik görevlerde binlerce Google mühendisi tarafından aktif biçimde kullanılıyor. Örneğin model, Fuchsia Zircon çekirdeğindeki 800 binden fazla satırlık kodun taşınmasında ve libgav1 video kod çözücüsünün güvenli Rust alternatifine dönüştürülmesinde 2.7 kat hız artışı sağladı.\n\nGemini 4 Argon'un en dikkat çekici mimari yeniliklerinden biri, tek seferlik üretim kapasitesini önceki nesil 64 bin tokenden 1 milyon çıktı token sınırına taşıması oldu. Bu eşsiz çıktı derinliği, modelin tek bir işlem döngüsünde yüz binlerce token boyunca derinlemesine akıl yürütmesine, karmaşık kanıtlar geliştirmesine ve çok aşamalı devasa kurumsal problemleri bölümlere ayırmadan tek seferde çözmesine olanak tanıyor. Fiyatlandırma tarafında ise model, 1 milyon girdi tokenı için 2 dolar, 1 milyon çıktı tokenı için 10 dolar başlangıç fiyatıyla konumlandırılırken, önbelleğe alınmış girdilerde %95 indirim sunuluyor.\n\nKodlama ve kurumsal değerlendirmelerde yeni rekorlara imza atan Gemini 4 Argon; gerçek dünya yazılım mühendisliği yeteneklerini ölçen DeepSWE v1.1 testinde %77,9 başarı elde ederek yeni zirve noktası belirledi. Ayrıca Zapier'in AutomationBench değerlendirmesinde %51,3 ile birinci sıraya yerleşen model, uzun video kavrama metriği olan LVBench üzerinde %91,7 skoruna ulaştı. Model sadece yazılımla sınırlı kalmayıp finans, hukuk ve vergi alanlarındaki etkiyi ölçen Vals Index ve Harvey Legal Agent kıyaslamalarında da liderliği elinde tutuyor.\n\nSiber güvenlik alanında ise Argon, kritik yazılım açıklarını otonom olarak tespit etme, doğrulama ve yamalama kapasitesiyle öne çıkıyor. Google, modeli Fairwind Programı aracılığıyla güvenilir siber savunuculara ve Wiz ekibine sunarak kamu altyapılarındaki kritik açıkları kapatmak için kullanıyor. Modelin istismar edilmesini önlemek amacıyla kimyasal, biyolojik ve siber tehditlere karşı Frontier Safety Framework çerçevesinde katı önlemler alınırken, modelin iç aktivasyonlarını denetleyen yeni nesil güvenlik mekanizmaları devreye sokuluyor.",
+  "onemli_maddeler": [
+    "Sektörde bir ilk olarak 1 milyon çıktı token sınırına ulaşılarak tek döngüde yüz binlerce tokenlık derin akıl yürütme sağlandı.",
+    "DeepSWE v1.1 yazılım mühendisliği benchmarkında %77,9 skoruyla yeni SOTA seviyesi belirlendi.",
+    "Wiz ve Fairwind Programı kapsamında otonom siber güvenlik açığı keşfi ve yamalama amacıyla güvenlik uzmanlarının kullanımına açıldı.",
+    "Google veri merkezlerinde 300 TiB'den fazla bellek tasarrufu sağladı ve Fuchsia Zircon çekirdeği dahil 800 bin satırı aşan Rust kod göçlerini yönetti.",
+    "Girdi için 1 milyon token başına 2 dolar, çıktı için 10 dolar olarak fiyatlandırıldı; önbellek girdilerinde %95 tasarruf sunuluyor."
+  ],
+  "kategori": "diger",
+  "onem": 3,
+  "onem_gerekce": "1 milyon tokenlık çıktı kapasitesi ve derin akıl yürütme mimarisi ile otonom kod göçü ve siber güvenlik alanında çığır açan frontier bir model olması nedeniyle sektör için kritik bir dönüm noktasıdır.",
+  "etiketler": [
+    "Gemini 4 Argon",
+    "Google DeepMind",
+    "Frontier Model",
+    "Yazılım Mühendisliği",
+    "Siber Güvenlik"
+  ],
+  "anilan_modeller": [
+    "Gemini 4 Argon",
+    "Gemini 3.8 Flash Cyber"
+  ],
+  "yorum_tr": "Gemini 4 Argon, yalnızca akıl yürütme süresini artırmakla kalmayıp 1 milyonluk çıktı penceresi sunarak otonom yazılım mühendisliği ajanlarında yeni bir standart belirliyor. Modelin büyük kod tabanlarını bütünüyle derleyip doğrudan Rust gibi güvenli dillere dönüştürebilmesi ve proaktif siber savunma kabiliyeti, yapay zekânın salt kod tamamlayıcıdan tam teşekküllü kurumsal sistem mimarına evrildiğini kanıtlıyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Gemini 4 Argon",
+      "benchmark": "DeepSWE v1.1",
+      "skor": 77.9,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "It sets a new state of the art on DeepSWE v1.1 (77.9%), which measures a model’s performance in real-world long-horizon software engineering tasks."
+    },
+    {
+      "model": "Gemini 4 Argon",
+      "benchmark": "AutomationBench",
+      "skor": 51.3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "On AutomationBench, Zapier’s benchmark measuring end-to-end execution across core business functions, Argon ranks #1 with a score of 51.3%."
+    },
+    {
+      "model": "Gemini 4 Argon",
+      "benchmark": "LVBench",
+      "skor": 91.7,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "For example, on LVBench, which measures long video understanding, Argon is state of the art with a score of 91.7%."
+    },
+    {
+      "model": "Gemini 4 Argon",
+      "benchmark": "CWE-bench v1",
+      "skor": 68,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "On CWE-bench v1, which evaluates the model’s ability to remediate security vulnerabilities, Argon ties for first place with a top score of 68%"
+    }
+  ],
+  "gorsel_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/g4_30-09-26_key-art_blog.width-1300.png",
+  "url": "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/",
+  "source": "Google DeepMind",
+  "sourceTier": "resmi",
+  "date": "2026-09-30T20:01:45.000Z",
+  "slug": "gemini-4-argon-our-next-era-of-frontier-intelligence"
+}

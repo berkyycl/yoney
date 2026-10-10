@@ -1,29 +1,31 @@
 {
-  "baslik_tr": "GPT-6 için Geliştirilmiş Prompt Önbellekleme Özelliği",
-  "ozet_tr": "OpenAI, GPT-6 serisine yeni bir prompt önbellekleme sistemi ekleyerek aynı talimat ve araç tanımlarını içeren isteklerde %90'a varan maliyet indirimleri sağladı. Geliştiriciler artık önbellek hit oranlarını izleyebilecek, eksikliği teşhis edebilecek ve önbellek stratejilerini ince ayar yapabilecek.",
-  "detayli_icerik_tr": "GPT-6, saatlerce süren karmaşık görevlerde çalışan kalıcı ajanların API isteklerini birbirine bağlayarak aynı talimatları, araç tanımlarını ve bağlamı tekrar kullanmasına olanak tanıyor. OpenAI, bu ortak bağlamı önbelleğe alarak hesaplama yükünü azaltıyor ve geliştiricilere önbelleğe alınan giriş tokenları için %90'a kadar indirim sunuyor.\n\nYeni sistem, varsayılan olarak daha yüksek önbellek hit oranları sağlamak üzere tasarlandı ve 30 dakikalık bir zaman diliminde yeniden kullanılan uygun önekler için indirim uygulanıyor. Geliştiriciler, Prompt Caching Dashboard üzerinden önbellek kullanımını, hit oranlarını ve önbelleğe alınan/almayan token dağılımını görsel olarak takip edebiliyor. Beklenmedik bir önbellek kaçırması durumunda ise prompt caching diagnostics aracı, model, araç, ayar veya giriş değişikliklerini karşılaştırarak kaçırılan token sayısını raporlıyor.\n\nUygulama düzeyinde önbellek optimizasyonu için açık önbellek kırılma noktaları tanımlanabiliyor; bu sayede hangi öneklerin yeniden kullanılacağını geliştiriciler seçebiliyor. GPT-6 ayrıca, yanıtlar arasında mantık çabasını (reasoning effort) değiştirmeye izin veriyor; bu değişiklik, istek seviyesindeki mantık çabasını etkilemeden önbelleği koruyor. Araç tanımları ve talimatlar değişse bile, `allowed_tools` ve `tool_choice` gibi parametrelerle bağlamın yeniden kullanılabilirliği korunabiliyor.\n\nÖnbelleği önceden ısıtma (prewarm) özelliği, uygulamanın başlangıcında ortak talimatları, araç şemalarını veya referans materyallerini önceden işleyerek kullanıcı bekleme süresini azaltıyor. OpenAI, geliştiricilere bu yeni kontrolleri kullanarak kendi iş yüklerine göre önbelleği özelleştirmeleri ve performanslarını maksimize etmeleri için kapsamlı bir rehber ve kod inceleme aracı (Codex) sunuyor.",
+  "baslik_tr": "GPT-6’da Gelişmiş Prompt Önbellekleme ve Yeni İzleme Araçları",
+  "ozet_tr": "OpenAI, GPT-6 serisi için daha yüksek önbellek isabet oranları sağlayan yeni bir prompt önbellekleme sistemi tanıttı. Geliştiriciler, aynı talimat ve araç tanımlarını 30 dakikalık bir pencere içinde yeniden kullanarak yanıt süresini kısaltabilir ve önbelleğe alınan giriş tokenları için %90’a varan indirim elde edebilir.",
+  "detayli_icerik_tr": "GPT-6, karmaşık görevlerde saatlerce çalışan kalıcı ajanların temelini oluşturuyor; bu ajanlar bir dizi API çağrısı yaparak önceki adımlardan gelen talimatları, araç tanımlarını ve bağlamı tekrar kullanıyor. OpenAI, bu ortak bağlamı önbelleğe alarak hesaplama maliyetini düşürüyor ve geliştiricilere önbelleğe alınan tokenlar üzerinden büyük tasarruflar sağlıyor.\n\nYeni sistem, varsayılan olarak daha yüksek önbellek isabet oranları sunuyor ve aynı ön ek (prompt prefix) 30 dakikalık bir sürede tekrar kullanıldığında indirim uygulanıyor. Geliştiriciler, Prompt Caching Dashboard üzerinden önbellek kullanımını izleyebiliyor, isabet oranlarını zaman içinde takip edebiliyor ve önbelleğe alınan ile alınmayan tokenları karşılaştıran bir kompozisyon grafiği görebiliyor.\n\nBeklenmedik bir önbellek kaçırması (cache miss) durumunda, Prompt Caching Diagnostics aracı sayesinde model, araç, ayar veya girişteki değişiklikler tespit edilebiliyor. Araç, etkilenen token sayısını ve nedenini JSON formatında raporlayarak optimizasyon sürecini hızlandırıyor.\n\nGeliştiriciler ayrıca hangi prompt ön eklerini önbelleğe alacaklarını belirleyebilecekleri \"explicit cache breakpoints\" tanımlayabiliyor, modelin akıl yürütme çabasını (reasoning effort) yanıtlar arasında değiştirebiliyor ve bu değişikliklerin önbelleği bozmadığından emin olabiliyor. Araç tanımları ve talimatlar değişse bile, `allowed_tools` ve `tool_choice` gibi parametrelerle bağlamın yeniden kullanılabilirliği korunabiliyor. Son olarak, uygulama başlangıcında ortak talimatları veya referans materyallerini önceden ısıtarak (prewarm) yanıt gecikmesi daha da azaltılabiliyor.",
   "onemli_maddeler": [
-    "GPT-6’da aynı talimat ve araç tanımlarını içeren isteklerde %90’a varan token indirimleri.",
-    "30 dakikalık pencere içinde yeniden kullanılan önekler için otomatik önbellek indirimleri.",
-    "Prompt Caching Dashboard ve diagnostics aracıyla önbellek hit oranları ve kaçırma nedenleri izlenebiliyor."
+    "Önbellek indirimleri, önbelleğe alınan giriş tokenları için %90’a varan tasarruf sağlayabilir.",
+    "30 dakikalık pencere içinde aynı prompt ön ekinin yeniden kullanılması otomatik olarak indirim getirir.",
+    "Prompt Caching Dashboard ve Diagnostics aracı, önbellek isabet oranlarını izleme ve kaçırma nedenlerini analiz etme imkanı sunar.",
+    "Explicit cache breakpoints ve akıl yürütme çabası ayarı, önbelleği bozmadan esnek entegrasyon sağlar.",
+    "Prewarm özelliği, başlangıçta ortak bağlamı önceden işleyerek yanıt gecikmesini azaltır."
   ],
   "kategori": "guncelleme",
   "onem": 4,
-  "onem_gerekce": "Prompt önbellekleme, büyük ölçekli AI uygulamalarının maliyet ve gecikme performansını doğrudan etkileyen kritik bir optimizasyon alanıdır; yeni özellikler geliştiricilere önemli tasarruf ve daha hızlı yanıt süreleri sunuyor.",
+  "onem_gerekce": "Geliştiricilerin maliyet ve performans açısından büyük avantaj elde etmesi, GPT-6 tabanlı uygulamaların ölçeklenebilirliğini artırması.",
   "etiketler": [
+    "prompt-caching",
     "GPT-6",
-    "prompt caching",
+    "OpenAI",
     "API",
-    "performans",
-    "geliştiriciler"
+    "performans"
   ],
   "anilan_modeller": [
     "GPT-6"
   ],
-  "yorum_tr": "Bu güncelleme, özellikle uzun süren ve çok adımlı AI ajanları kullanan şirketler için operasyonel maliyetleri düşürürken yanıt sürelerini kısaltacak. Geliştiriciler, önbellek yönetim araçları sayesinde entegrasyonlarını daha verimli hale getirerek rekabet avantajı elde edecek.",
+  "yorum_tr": "Bu güncelleme, uzun vadeli ve karmaşık görevlerde çalışan AI ajanları için işlem süresini kısaltırken maliyetleri önemli ölçüde düşürüyor; geliştiriciler daha verimli entegrasyonlar tasarlayabilecek ve kullanıcı deneyimini iyileştirebilecek.",
   "gorseller": [],
   "benchmarklar": [],
-  "gorsel_url": "https://d2cv2o3y8kafc0.cloudfront.net/blog-ocmaker/large_01_gpt_6_astra_prompt_caching_guide_138e5979e3.png",
+  "gorsel_url": "https://images.ctfassets.net/kftzwdyauwt9/1GCXJNDUwggbqNGnGCATR3/7d3f2fc8ca3457597bcefc7fe30f5a64/7kneoqlc2qh37z1utkmtfk-seo-v1.png?w=1600&h=900&fit=fill",
   "url": "https://openai.com/index/better-prompt-caching-for-gpt-6",
   "source": "OpenAI",
   "sourceTier": "resmi",

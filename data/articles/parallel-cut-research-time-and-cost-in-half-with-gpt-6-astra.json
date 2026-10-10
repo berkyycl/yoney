@@ -1,0 +1,51 @@
+{
+  "baslik_tr": "GPT‑6 Astra ile Araştırma Süresi ve Maliyeti Yarıya İndirildi",
+  "ozet_tr": "Parallel, AI ajanları için altyapı sağlayan bir platform, yeni nesil GPT‑6 Astra modelini kullanarak araştırma süreçlerini %50 oranında hızlandırıp aynı zamanda kod maliyetlerini yarıya indirdi. Model, daha odaklı arama sorguları ve alt‑ajanlara görev dağıtımı sayesinde aynı kalitede sonuçlar üretiyor.",
+  "detayli_icerik_tr": "Parallel, web üzerinden bilgi işi yapan AI ajanları için geliştirilen bir altyapı sunuyor ve bu altyapı finans, hukuk ve sesli asistan gibi alanlarda kullanılabiliyor. Şirket, uzun süredir yürüttüğü araştırma görevlerinde yüksek kaliteli yanıtlar elde etmek için daha büyük modeller ve uzun mantık zincirleri kullanıyordu; bu da zaman ve kaynak tüketimini artırıyordu. GPT‑6 Astra ile yapılan testlerde, ajan altı farklı işgücü piyasası istatistiğini dört eyalette, altı ay boyunca toplamak zorunda kaldı ve sonuçları tek bir raporda birleştirdi. Model, önceki nesillere kıyasla işi %50 daha kısa sürede tamamlayarak kod maliyetinde de aynı oranda bir azalma sağladı.\n\nAyrıca Astra, daha hedefli arama sorguları üreterek ve dünya bilgisini daha etkin bir şekilde entegre ederek aynı sonuca daha az adımda ulaştı. Bu verimlilik, Parallel'in araştırma görevlerini birden fazla alt‑ajana dağıtarak paralel çalıştırmasına olanak tanıdı; böylece tek bir arama zincirinde bekleme süresi ortadan kalktı. Sonuç olarak, karmaşık sorulardan araştırılmış yanıtlara geçiş süreci kısaldı, maliyetler düştü ve ölçekli, talepkar araştırma projelerini yürütme kapasitesi arttı.\n\nParallel'in teknik ekibi, bu gelişmenin sadece kendi platformları için değil, AI destekli araştırma ve veri toplama süreçlerine ihtiyaç duyan tüm sektörler için bir dönüm noktası olduğunu vurguluyor. GPT‑6 Astra’nın sunduğu hız ve maliyet avantajları, gelecekte daha fazla AI ajanının gerçek zamanlı ve maliyet etkin bir şekilde kullanılmasını mümkün kılacak.",
+  "onemli_maddeler": [
+    "GPT‑6 Astra, araştırma süresini %50 azaltarak aynı kalitede sonuçlar üretiyor.",
+    "Kod maliyetinde %50 azalma sağlanarak operasyonel harcamalar yarıya indirildi.",
+    "Model, daha odaklı arama sorguları ve alt‑ajan dağıtımı sayesinde daha az adımda yüksek kaliteli yanıtlar veriyor."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Araştırma otomasyonu ve AI ajanları için zaman ve maliyet tasarrufu, sektördeki verimlilik standartlarını yükseltecek kritik bir gelişmedir.",
+  "etiketler": [
+    "GPT-6",
+    "Astra",
+    "Parallel",
+    "AI agents",
+    "research automation"
+  ],
+  "anilan_modeller": [
+    "GPT-6 Astra"
+  ],
+  "yorum_tr": "Bu iyileştirme, AI destekli araştırma çözümlerinin daha geniş bir kullanıcı kitlesine ulaşmasını sağlayarak geliştiricilerin maliyet baskısını azaltırken, kullanıcıların daha hızlı ve güvenilir bilgiye erişimini mümkün kılıyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GPT-6 Astra",
+      "benchmark": "Araştırma süresi azaltma",
+      "skor": 50,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "GPT‑6 Astra was able to complete the work in half the time of prior models"
+    },
+    {
+      "model": "GPT-6 Astra",
+      "benchmark": "Kod maliyeti azaltma",
+      "skor": 50,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "with roughly 50% code cost reduction"
+    }
+  ],
+  "gorsel_url": "https://images.ctfassets.net/kftzwdyauwt9/28YD6O3zzNEdYaQ7MGhWfI/f27161b782112d8594c2f4c8035ccad1/parallel-option-c-seo-og-balanced.png?w=1600&h=900&fit=fill",
+  "url": "https://openai.com/index/parallel-cuts-time-and-cost-with-astra",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-09-22T12:00:00.000Z",
+  "slug": "parallel-cut-research-time-and-cost-in-half-with-gpt-6-astra"
+}

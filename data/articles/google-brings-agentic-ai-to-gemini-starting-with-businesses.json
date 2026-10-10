@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "Google, Gemini'yi Otonom Ajan Çağına Taşıyor: Şirket İçi Sistemlerle Bütünleşik Yeni Dönem",
+  "ozet_tr": "Google, Gemini yapay zekasını sadece soru yanıtlayan bir sohbet botu olmaktan çıkarıp görevleri kullanıcı adına uçtan uca tamamlayabilen otonom bir ajana dönüştürdü. İlk olarak kurumsal işletmelerin kullanımına açılan yeni sistem; şirket içi yazılımlarla derin entegrasyon kurabiliyor, kendine özel kurumsal e-posta ve takvime sahip bir çalışma arkadaşı gibi davranıyor.",
+  "detayli_icerik_tr": "Google Cloud etkinliğinde tanıtılan yeni otonom Gemini ajanı, yapay zekanın sohbet tabanlı arayüzlerden bağımsız aksiyon alabilen dijital iş gücüne geçişinde kritik bir kilometre taşını temsil ediyor. Google CEO'su Sundar Pichai, Gemini'nin aylık 1 milyardan fazla aktif kullanıcıya ulaştığını ve Fortune 100 şirketlerinin yaklaşık yüzde 90'ının Gemini Enterprise kullandığını belirterek, güvenlik, ölçeklenebilirlik ve performans gibi zorlukları çözmek adına ajan özelliklerini öncelikle kurumsal müşterilere sunduklarını açıkladı.\n\nGoogle Cloud CEO'su Thomas Kurian'ın aktardığına göre, yeni Gemini ajanına yalnızca adım adım talimatlar değil, doğrudan nihai hedefler verilebiliyor. Sistem verilen hedefi analiz ederek gerekli iş adımlarını planlıyor, alt ajanlara (subagents) görev dağıtımı yapıyor, kod çalıştırıyor ve Google Workspace, Microsoft 365, Slack, Jira, Confluence, Git, BigQuery ve Snowflake gibi kurumsal veri tabanlarına doğrudan bağlanabiliyor. Ayrıca açık kaynak standartlaşmayı destekleyen Model Context Protocol (MCP) sunucularıyla da güvenli iletişim kurabiliyor.\n\nSistemin en dikkat çekici özelliklerinden biri, şirketteki diğer personel gibi kendine ait bir Workspace hesabına, e-posta adresine ve çalışma bağlamına sahip olması. Çalışanlar ajanı e-posta göndererek, dosya paylaşarak veya grup sohbetlerine etiketleyerek göreve çağırabiliyor. Kullanıcılar 'görevler gelen kutusu' (tasks inbox) üzerinden yapay zekanın düşünce sürecini ve ilerleyişini şeffaf bir denetim kaydı (audit trail) üzerinden adım adım takip edebiliyor.\n\nGoogle ayrıca çoklu model orkestrasyonu stratejisinde esnek bir yaklaşım benimseyerek, varsayılan olarak göreve en uygun modeli otomatik seçmenin yanı sıra kullanıcılara Anthropic'in Claude modelleri gibi üçüncü taraf modelleri ve ilerleyen dönemde açık kaynaklı modelleri tercih etme özgürlüğü de tanıyor. Şirketlerin maliyetlerini kontrol altında tutabilmesi için harcama limitleri ve akıllı rota optimizasyonu gibi finansal denetim araçları da kurumsal pakete dahil edildi.",
+  "onemli_maddeler": [
+    "Gemini ajanı sadece talimatla değil, hedefler verilerek otonom planlama yapabilen ve alt ajanlara görev dağıtabilen bir yapıya kavuştu.",
+    "Ajan, kendine ait kurumsal e-posta adresi ve takvimi olan bağımsız bir çalışma arkadaşı hesabı olarak Workspace ekosistemine dahil oluyor.",
+    "Google Workspace, Slack, Jira, Microsoft 365, Snowflake gibi onlarca kurumsal sistem ve Model Context Protocol (MCP) ile tam entegrasyon sağlandı.",
+    "Kullanıcılar Gemini modelleri dışında Anthropic Claude ve gelecekte açık kaynaklı alternatif modeller arasından seçim yapabilecek.",
+    "Kurumsal yapay zeka maliyetlerini dizginlemek için akıllı yönlendirme ve gerçek zamanlı bütçe limitleri (spend caps) sunuldu."
+  ],
+  "kategori": "diger",
+  "onem": 3,
+  "onem_gerekce": "Gemini'nin milyarlarca kullanıcı ve kurumsal altyapı üzerinde otonom ajan yetenekleriyle donatılması, iş akışlarını otomatikleştirme yarışında Microsoft Copilot ve OpenAI çözümleri karşısında önemli bir stratejik üstünlük hamlesidir.",
+  "etiketler": [
+    "Google",
+    "Gemini",
+    "Yapay Zeka Ajanları",
+    "Google Cloud",
+    "Anthropic Claude"
+  ],
+  "anilan_modeller": [
+    "Gemini",
+    "Claude"
+  ],
+  "yorum_tr": "Google'ın kendi ekosisteminde rakibi Anthropic'in Claude modellerine kapı açması ve açık endüstri protokolü MCP'yi benimsemesi, yapay zeka ajanlarında 'kapalı bahçe' yaklaşımının kurumsal pazarda karşılık bulamayacağını gösteriyor. Yapay zekaya bağımsız bir kurumsal kimlik ve e-posta tanımlanması ise insan-YZ iş birliğinin operasyonel anlamda yeni bir paradigmaya geçtiğinin somut bir göstergesidir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://techcrunch.com/wp-content/uploads/2026/10/image_3.max-2100x2100_0CYZWqn.jpg?resize=1200,591",
+  "url": "https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/",
+  "source": "TechCrunch AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-08T18:18:00.000Z",
+  "slug": "google-brings-agentic-ai-to-gemini-starting-with-businesses"
+}

@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "ABD'de Medicare İçin Başlatılan Yapay Zekâ Destekli Onay Sistemi Kaosa Yol Açtı: WISeR Pilot Programı Tepki Çekiyor",
+  "ozet_tr": "ABD yönetiminin yaşlılara yönelik sağlık güvencesi Medicare kapsamında tıbbi onay süreçlerini denetlemek üzere hayata geçirdiği yapay zekâ pilot programı WISeR, ciddi aksaklıklar ve gecikmelerle gündeme geldi. Electronic Frontier Foundation tarafından kamuoyuna açıklanan federal belgelere göre, yapay zekâ algoritmalarının yetersizliği ve sistemik gecikmeler hastaların haftalarca tedavi beklemesine ve acı çekmesine yol açtı.",
+  "detayli_icerik_tr": "ABD'de Ocak ayında altı eyalette (New Jersey, Ohio, Oklahoma, Teksas, Arizona ve Washington) devreye alınan WISeR (Gereksiz ve Uygunsuz Hizmetlerin Azaltılması) pilot programı, Medicare kapsamındaki kritik tıbbi prosedürler için yapay zekâ ve makine öğrenimi tabanlı ön onay şartı getirdi. Dolandırıcılık, israf ve suiistimali azaltma iddiasıyla 2031 yılına kadar sürmesi planlanan program; sinir stimülasyonu, epidural enjeksiyonlar, servikal füzyon ameliyatları gibi acil ve hassas tedavileri kapsıyor. Ancak Electronic Frontier Foundation'ın (EFF) yasal süreçler sonucu elde ettiği resmi belgeler, sistemin devreye alınışından itibaren büyük teknik arızalar ve organizasyonel felaketlerle boğuştuğunu gözler önüne serdi.\n\nSözleşmeli teknoloji sağlayıcılarının hazır olmadan projeye entegre edildiği belgelerde açıkça görülüyor. Entegratör şirketlerden Innovaccer, sistemsel birikmeyi engellemek adına başlangıçta tüm talepleri otomatik onaylama yoluna gitmek zorunda kaldığını bildirirken; bir diğer yüklenici Zyter'ın Medicare'in yatarak (Part A) ve ayakta (Part B) tedavi veri yapıları arasındaki farkı kavrayamadığı için aylarca veri uyuşmazlığı yaşadığı kaydedildi. Yüklenici şirketlerden Virtix'in ise Mart sonu itibarıyla incelediği 6.096 başvurunun yüzde 53'ünü (3.233 talep) reddederek onay sayısından daha fazla ret verdiği ortaya çıktı. Üstelik normalde en geç 72 saat içinde sonuçlanması gereken inceleme süreleri kimi vakalarda 83 günü aşarak cerrahi operasyonların aylar boyunca ertelenmesine neden oldu.\n\nSağlık çalışanlarının sisteme tepkisi son derece sert oldu. Ohio'daki hekimlerin raporladığı şikayetlerde, omurga kompresyon kırığı ameliyatı bekleyen hastaların haftalarca onay alamaması ve hekimlerin şirketlere ulaşacak bir muhatap bulamaması nedeniyle hastaların acı içinde gözyaşlarına boğulduğu vurgulandı. Bir sağlık çalışanı durumu 'insanlık için bir utanç' olarak nitelendirirken, Hükümet Hesap verebilirlik Ofisi (GAO) Mayıs ayında Trump yönetiminin programı kurarken yasal prosedürlere tam uymadığını raporladı. Buna karşın programın Kongre kanadında denetlenmesi ve daha fazla belgenin açıklanması girişimleri siyasi oylamalarla engellenmeye devam ediyor.",
+  "onemli_maddeler": [
+    "WISeR pilot programı, Medicare hastalarının belirli tedavilere erişiminde yapay zekâ tabanlı ön onay şartı getirerek yaygın gecikmelere neden oldu.",
+    "Hedeflenen 72 saatlik azami onay süresine rağmen, hastaların ve hekimlerin onay için 83 güne kadar beklediği vakalar kayıtlara geçti.",
+    "Sağlayıcılardan Virtix'in başvuruların yüzde 53'ünü reddettiği ve gecikmeler nedeniyle CMS tarafından düzeltici eylem planına tabi tutulduğu belirlendi.",
+    "Teknoloji şirketlerinin sisteme hazır olmadığı, bir sağlayıcının yığılmayı önlemek için her şeyi otomatik onayladığı, diğerinin ise temel sağlık sigortası ayrımlarını yapamadığı belgelendi.",
+    "Hükümet Hesap verebilirlik Ofisi (GAO), programın yasal mevzuata uygun şekilde kurulmadığını tespit etti."
+  ],
+  "kategori": "diger",
+  "onem": 4,
+  "onem_gerekce": "Yapay zekânın kamu sağlık politikalarında ve kritik bakım kararlarında aceleyle ve yetersiz denetimle devreye sokulmasının doğrudan insan hayatı üzerindeki olumsuz etkilerini gösteren emsal niteliğinde bir vaka oluşturmaktadır.",
+  "etiketler": [
+    "Yapay Zekâ",
+    "Medicare",
+    "WISeR",
+    "Sağlık Teknolojileri",
+    "YZ Etiği"
+  ],
+  "anilan_modeller": [],
+  "yorum_tr": "WISeR deneyimi, kamu ve sağlık gibi hata payının sıfır olması gereken alanlarda algoritmik otomasyonun yetersiz altyapı ve denetimsizlikle nasıl bir insani krize dönüşebileceğini kanıtlıyor. Ön onay süreçlerinin kural tabanlı sistemlerle ve yapay zekâyla hızlandırılması maliyetleri kısmayı hedeflese de, insan gözetiminin (human-in-the-loop) ve şeffaf itiraz mekanizmalarının eksikliği sağlık hizmetine erişimi doğrudan felce uğratıyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/GettyImages-2295026360-1024x648.jpg",
+  "url": "https://arstechnica.com/health/2026/09/trump-admin-using-ai-to-deny-medical-care-for-seniors-in-disastrous-experiment/",
+  "source": "Ars Technica AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-09-25T11:00:28.000Z",
+  "slug": "trump-admin-using-ai-to-deny-medical-care-for-seniors-in-dis"
+}

@@ -1,0 +1,89 @@
+{
+  "baslik_tr": "Nvidia Blackwell İçin Optimize Edilen Basalt Çıkarım Motoru Tanıtıldı: Saniyede 665 Token Hız",
+  "ozet_tr": "Açık kaynak topluluğu tarafından geliştirilen 'Basalt' adlı yeni çıkarım motoru, Nvidia'nın Blackwell mimarili ekran kartlarında Qwen3.8 Flash-Next modelini saniyede 665 tokene varan hızlarda çalıştırmayı başardı. Strata motorunun özelleştirilmiş bir çatalı (fork) olan proje, önceki çözümlere kıyasla 2,6 kata varan performans artışı vadediyor.",
+  "detayli_icerik_tr": "Açık kaynak yapay zekâ topluluğu LocalLLaMA'da paylaşılan Basalt, Nvidia'nın yeni nesil Blackwell mimarisine odaklanan son derece optimize bir çıkarım (inference) motoru olarak dikkat çekiyor. Geliştirici jesdga95 tarafından Strata altyapısı temel alınarak inşa edilen motor; yalnızca Blackwell mimarili grafik işlemcileri ve Qwen3.8 Flash-Next modelini destekleyecek şekilde sıfırdan revize edildi. Yapılan testlerde sistem; bir adet RTX 5090 ve bir adet RTX 5060 Ti karttan oluşan hibrit donanım kurulumunda, IQ3_XXS kuantizasyonunda yapılandırılmış çıktılarda (structured output) saniyede 665 token, düz metin (prose) üretiminde ise saniyede 354 token hızına ulaştı.\n\nSadece tek bir RTX 5090 kullanıldığında dahi saniyede 585 token yapılandırılmış metin ve 316 token düz metin hızları elde edilirken, 64k bağlam uzunluğundaki önyükleme (prefill) hızı 7.317 tok/s seviyesine çıktı. Basalt, 8 eşzamanlı kullanıcıya kadar gerçek çoklu akış desteği sunarak paylaşımlı veya yuva başına KV önbelleği ile 8 iş parçacığında toplamda saniyede 623 tokenlik bant genişliğine ulaşabiliyor. Düşük kuantizasyonlar için özel olarak optimize edilen MTP (Multi-Token Prediction) mekanizması ve llama.cpp'ye kıyasla GPU üzerinde 3 kata, CPU üzerinde ise 4 kata kadar daha hızlı çalışan sıfırdan yazılmış görsel kodlayıcı (vision encoder) motorun öne çıkan bileşenleri arasında yer alıyor.\n\nEski Nvidia nesillerini, AMD ve Intel GPU'larını desteklemeyen proje, bu donanım fazlalıklarından arındırılmış olması sayesinde decode ve prefill çekirdeklerini tamamen Blackwell mimarisine özel hızlandırmalarla yeniden inşa edebildi. Model ağırlıklarını ve ilgili metaverileri NInfer benzeri tek bir '.basalt' dosyasında toplayan sistem, ISTA-DASLab'in GSQ-RCO ve Unsloth'un kuantizasyon formatlarını destekliyor. Linux işletim sistemi üzerinde çalışan Basalt, aynı zamanda OpenAI ve Anthropic API standartlarıyla uyumlu yerleşik bir sunucu arayüzü sunuyor.",
+  "onemli_maddeler": [
+    "Basalt, Strata altyapısının Blackwell GPU mimarisi ve Qwen3.8 Flash-Next için baştan yazılmasıyla 2,6 kata varan performans artışı sağladı.",
+    "RTX 5090 ve RTX 5060 Ti ikilisinde IQ3_XXS seviyesinde 665 tok/s yapılandırılmış metin ve 354 tok/s düz metin çıktısı alındı.",
+    "Tek RTX 5090 ile 585 tok/s çıktı ve 64k bağlamda 7.317 tok/s prefill hızı kaydedildi.",
+    "8 eşzamanlı istemcide toplam 623 tok/s aktarım hızına ulaşan motor, llama.cpp'ye kıyasla 3 kat daha hızlı özel bir görsel kodlayıcı içeriyor.",
+    "Açık kaynak MIT lisansıyla yayınlanan proje Linux ortamında OpenAI ve Anthropic uyumlu API desteği sunuyor."
+  ],
+  "kategori": "diger",
+  "onem": 3,
+  "onem_gerekce": "Tüketici sınıfı yeni nesil Blackwell (RTX 5000 serisi) GPU'larda yerel LLM çıkarım hızlarını benzeri görülmemiş seviyelere çıkaran ve donanıma özel derin çekirdek optimizasyonunun gücünü kanıtlayan önemli bir açık kaynak çalışmasıdır.",
+  "etiketler": [
+    "Basalt",
+    "Blackwell",
+    "RTX 5090",
+    "RTX 5060 Ti",
+    "Qwen3.8 Flash-Next"
+  ],
+  "anilan_modeller": [
+    "Qwen3.8 Flash-Next"
+  ],
+  "yorum_tr": "Geniş donanım desteği sunmaya çalışan genel motorların aksine tek bir mimariye odaklanmanın getirdiği radikal performans kazanımlarını gösteren Basalt, yerel çıkarımda kartelleşmiş llama.cpp tekelini niş senaryolarda sarsabilir. Tüketici sınıfı RTX 5000 serisi donanımlarda saniyede yüzlerce token üretebilmek, ajansal iş akışları ve karmaşık yapılandırılmış veri ayıklama süreçleri için yerel kurulumları bulut servislerine doğrudan bir alternatif haline getiriyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen3.8 Flash-Next (IQ3_XXS)",
+      "benchmark": "Yapılandırılmış Metin Üretim Hızı (RTX 5090 + 5060 Ti)",
+      "skor": 665,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Dual GPU: RTX 5090 + RTX 5060 Ti, IQ3_XXS, 400W",
+      "kaynak_metinden_alinti": "SPEED: 665 struct, 354 prose, 7,317 prefill at 64k, IQ3_XXS, 400 W"
+    },
+    {
+      "model": "Qwen3.8 Flash-Next (IQ3_XXS)",
+      "benchmark": "Düz Metin Üretim Hızı (RTX 5090 + 5060 Ti)",
+      "skor": 354,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Dual GPU: RTX 5090 + RTX 5060 Ti, IQ3_XXS, 400W",
+      "kaynak_metinden_alinti": "SPEED: 665 struct, 354 prose, 7,317 prefill at 64k, IQ3_XXS, 400 W"
+    },
+    {
+      "model": "Qwen3.8 Flash-Next (IQ3_XXS)",
+      "benchmark": "Yapılandırılmış Metin Üretim Hızı (Tek RTX 5090)",
+      "skor": 585,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Single RTX 5090, IQ3_XXS",
+      "kaynak_metinden_alinti": "Single 5090 works too (no second card): 585 struct, 316 prose on IQ3_XXS"
+    },
+    {
+      "model": "Qwen3.8 Flash-Next (IQ3_XXS)",
+      "benchmark": "Düz Metin Üretim Hızı (Tek RTX 5090)",
+      "skor": 316,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Single RTX 5090, IQ3_XXS",
+      "kaynak_metinden_alinti": "585 struct, 316 prose on IQ3_XXS, ~12% slower than with the 5060 Ti"
+    },
+    {
+      "model": "Qwen3.8 Flash-Next (IQ3_XXS)",
+      "benchmark": "8 Akış Eşzamanlı Toplam Hız (Dual GPU)",
+      "skor": 623,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "8 concurrent streams, shared KV/per-slot, MTP enabled",
+      "kaynak_metinden_alinti": "623 tok/s total at 8 streams"
+    },
+    {
+      "model": "Qwen3.8 Flash-Next (IQ3_S)",
+      "benchmark": "Düz Metin Üretim Hızı (RTX 5090 + 5060 Ti)",
+      "skor": 300,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Dual GPU setup, IQ3_S quantization",
+      "kaynak_metinden_alinti": "IQ3_S is a good middle ground (~89% top 1 agreement, 300 tok/s prose on my setup)."
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/txboeb3odjuh1.png?width=140&height=78&auto=webp&s=79952949af0a06186e8867041c20744a15215dd9",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x223ai/basalt_flashnext_at_665_toks_structured_354_prose/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-10T00:58:24.000Z",
+  "slug": "basalt-flash-next-at-665-tok-s-structured-354-prose-on-a-509"
+}

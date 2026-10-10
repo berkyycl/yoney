@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "Yazılım Geliştiriciden Gerçek Dünya Karşılaştırması: Gemma4-31B, Qwen3.8-27B ve GPT 6.1-Sol",
+  "ozet_tr": "Yaklaşık 20 yıllık deneyime sahip bir yazılım mühendisi, yerel olarak çalıştırılan Gemma4-31B ve Qwen3.8-27B modellerini kod analizi ve sıfırdan proje geliştirme senaryolarında test etti. Karşılaştırmaya sonradan dahil edilen tescilli GPT 6.1-Sol modeli açık kaynaklı rakiplerine karşı ezici bir üstünlük sağlarken, açık ağırlıklı modellerin tüketici donanımlarında gösterdiği performans da dikkat çekti.",
+  "detayli_icerik_tr": "Reddit'in LocalLLaMA topluluğunda paylaşılan kapsamlı bir kullanıcı deneyimi, yerel açık ağırlıklı büyük dil modellerinin gerçek dünya yazılım mühendisliği görevlerindeki pratik kabiliyetlerini gözler önüne serdi. Testi gerçekleştiren mühendis; Q4 kuantizasyonundaki Gemma4-31B ve Qwen3.8-27B modellerini iki temel iş akışında değerlendirdi: mevcut bir kod tabanını inceleyip analiz etme ve sıfırdan çalışan bir C#/WPF projesi oluşturma. Süreçte OpenCode CLI ve Codex CLI gibi arayüzler kullanılırken, referans noktası olarak OpenAI ekosistemindeki GPT 6.1-Sol devreye sokuldu.\n\nİlk senaryo olan kod tabanı denetimi ve analizinde her iki açık model de oldukça başarılı sonuçlar verdi. Ancak Gemma4-31B, göreve odaklı yapısı ve yalnızca yaklaşık 10 sunucu çağrısıyla işlemi tamamlayarak verimlilik tarafında öne çıktı; Qwen3.8-27B ise daha kapsamlı bir tablo sunabilmek adına 20 ila 30 arası çağrı yaptı. Her iki model de mimari soyutlamaları ve zayıf yönleri doğru analiz etse de, kaynak tüketimi ve odaklanma hızı açısından Gemma4 geliştiricinin öncelikli tercihi oldu.\n\nSıfırdan proje yazma aşamasında ise dinamikler tersine döndü. C# ve WPF mimarisine dayanan, elle yazılması normalde 1-2 gün sürecek bir uygulama tanımı verildiğinde Gemma4-31B hızlı ve derli toplu bir planlama sunmasına rağmen B- seviyesinde kaldı ve uygulanabilir hale gelmesi için çok sayıda iterasyon gerektirdi. Buna karşın Qwen3.8-27B; syntax eksiklikleri ve küçük hatalarla daha sık tökezlemesine ve ciddi donanım yükü oluşturmasına rağmen yılmadan ilerleyerek tek bir düzeltmeyle çalışan bir ürün ortaya koydu ve B+ notu aldı.\n\nTestin en çarpıcı sonucu ise aynı prompt'un tescilli amiral gemisi GPT 6.1-Sol'a verilmesiyle ortaya çıktı. Yerel modellerin birkaç revizyonla toparlayabildiği mimariyi tek seferde, kullanıcı bağlamını eksiksiz anlayarak ve doğrudan dağıtıma hazır halde sunan model, A+ alarak sınır seviye (frontier) laboratuvar modelleri ile yerel modeller arasındaki uçurumu net bir şekilde ortaya koydu. Geliştirici, yerel modellerin günlük işler için oldukça umut vadedici olduğunu ancak karmaşık mimarilerde henüz tescilli devlerle aynı ligde yer almadığını vurguladı.",
+  "onemli_maddeler": [
+    "Gemma4-31B, kod analizi görevlerinde Qwen3.8-27B'ye kıyasla yaklaşık 3 kat daha az sunucu çağrısı yaparak yüksek verimlilik sağladı.",
+    "Sıfırdan proje üretmede Qwen3.8-27B küçük hatalarına rağmen daha ısrarcı ve kapsamlı bir kod ortaya koyarak B+ derecesiyle Gemma4'ü geride bıraktı.",
+    "GPT 6.1-Sol, sıfırdan C#/WPF geliştirme senaryosunda tek denemede dağıtıma hazır kod üreterek açık modellerin belirgin şekilde önüne geçti.",
+    "Tüketici sınıfı donanımlarda çalışan Q4 kuantize modellerin günlük mühendislik görevleri için kullanılabilir seviyeye ulaştığı ancak en üst seviye modellerle aradaki farkın sürdüğü belirtildi."
+  ],
+  "kategori": "diger",
+  "onem": 3,
+  "onem_gerekce": "Geliştiricilerin gerçek donanımlarda ve günlük yazılım mühendisliği senaryolarında yerel açık ağırlıklı modeller ile tescilli modeller arasındaki pratik farkları somut olarak görmesini sağlıyor.",
+  "etiketler": [
+    "yerel yapay zeka",
+    "LLM kodlama",
+    "Gemma4",
+    "Qwen3.8",
+    "GPT 6.1-Sol"
+  ],
+  "anilan_modeller": [
+    "Gemma4-31B",
+    "Qwen3.8-27B",
+    "GPT 6.1-Sol"
+  ],
+  "yorum_tr": "Sentetik benchmarkların ötesine geçen bu tür pratik mühendislik denemeleri, açık ağırlıklı modellerin bağlam tamamlama ve mimari kurma kapasitelerindeki gerçek darboğazları anlamak için kritik önem taşıyor. Yerel modeller küçük yardımcı araçlar seviyesine hızla yaklaşsa da, çok bileşenli mimari tasarımı gerektiren işlerde sınır modeller hâlâ tartışmasız bir avantaja sahip.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://miro.medium.com/v2/resize:fit:1400/1*nfbdPArhoReQuU6gJ5xhtA.png",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x2mw1o/engineer_developer_observations_of_gemma431b/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-10T18:49:52.000Z",
+  "slug": "engineer-developer-observations-of-gemma4-31b-qwen3-8-27b-an"
+}

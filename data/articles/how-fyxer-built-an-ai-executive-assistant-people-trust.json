@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "Fyxer, OpenAI Modelleri ve 500 Bin Saatlik Veriyle Güvenilir Yapay Zekâ Yönetici Asistanı İnşa Etti",
+  "ozet_tr": "Yapay zekâ destekli yönetici asistanı platformu Fyxer, karmaşık e-posta ve iletişim süreçlerini 30 ila 50 arasında özelleşmiş modele bölerek güvenilir bir asistan deneyimi geliştirdi. Şirket, OpenAI modelleri, DPO optimizasyonu ve 500.000 saati aşkın gerçek yönetici asistanlığı iş akışı verisiyle 2025 yılında yıllık yinelenen gelirini (ARR) 1 milyon dolardan 32 milyon dolara çıkarmayı başardı.",
+  "detayli_icerik_tr": "Profesyonel iş hayatında gelen kutuları, toplantılar ve mesajlaşma uygulamaları arasında bağlamı kaybetmeden iletişimi yönetmek, insan sezgisi gerektiren zorlu bir süreçtir. Yapay zekâ girişimi Fyxer, Moravec Paradoksu'ndan yola çıkarak insanların kolayca yaptığı ancak makinelerin bağlam kurmakta zorlandığı bu iletişim yükünü çözmek amacıyla OpenAI modelleriyle entegre bir yönetici asistanı geliştirdi. Tek bir büyük dil modeline tüm e-posta yazımını emanet etmek yerine süreci 30 ila 50 arasında değişen mikro görev modeline bölen Fyxer, her bir adımda farklılaştırılmış çıkarımlar gerçekleştiriyor.\\n\\nSistemin temel mimarisinde e-postanın bir yanıt gerektirip gerektirmediğini analiz eden sınıflandırma modelleri, kullanıcı niyetini ve iletişim hedefini öngören yapılar ile uzun vadeli hafıza modelleri yer alıyor. Gelen iletilerin tonunu ve geçmiş bağlamını yakalamak için daha önce sundukları insanlı yönetici asistanlığı hizmetinden elde edilen 500.000 saatlik etiketli veri seti kullanılıyor. Fyxer mühendisleri, denetimli ince ayar (SFT) ve Düşük Sıralı Uyarlama (LoRA) yöntemlerinin yanı sıra doğrudan tercih optimizasyonu (DPO) tekniğini OpenAI modelleri üzerine uygulayarak maliyet ve doğruluk dengesini optimize ediyor.\\n\\nKullanıcıların e-posta taslakları üzerinde yaptığı düzeltmeler, sisteme anlık bir kendi kendine öğrenme döngüsü (self-training loop) kazandırıyor. Bir taslak üzerinde yapılan her değişiklik A/B testine tabi tutularak yeni kontrol noktaları (checkpoints) üretime alınıyor. Bu yaklaşım sayesinde Fyxer tarafından üretilen yapay zekâ taslaklarının %53'ü kullanıcılar tarafından hiçbir düzenleme yapılmadan doğrudan gönderiliyor. Şirket, 90 günlük kullanıcı elde tutma (retention) oranında %90'ın üzerine çıkarak yapay zekâ araçlarının iş akışlarındaki kalıcılığını kanıtlıyor.",
+  "onemli_maddeler": [
+    "Fyxer, e-posta süreçlerini tek bir genel modele yüklemek yerine 30-50 arası özelleştirilmiş modele bölerek yönetiyor.",
+    "Sistem, 500.000 saati aşkın profesyonel yönetici asistanlığı iş akışı verisi ve DPO (Direct Preference Optimization) ile eğitildi.",
+    "Üretilen e-posta taslaklarının %53'ü kullanıcılar tarafından hiçbir düzenleme yapılmadan olduğu gibi onaylanıyor.",
+    "Fyxer'ın yıllık yinelenen geliri (ARR) 2025 yılı içerisinde 1 milyon dolardan 32 milyon dolara sıçradı.",
+    "Kullanıcıların 90 günlük elde tutma (retention) oranı %90'ın üzerinde seyrediyor."
+  ],
+  "kategori": "diger",
+  "onem": 3,
+  "onem_gerekce": "Tek bir monolitik model yerine özelleşmiş çoklu model mimarisinin ve insan geri bildirimli doğrudan optimizasyonun (DPO) kurumsal dikeyde nasıl 32 kat gelir artışı ve %90 retention sağladığını gösteren somut bir başarı hikayesidir.",
+  "etiketler": [
+    "OpenAI",
+    "Fyxer",
+    "Yapay Zekâ Asistanı",
+    "DPO",
+    "Fine-Tuning"
+  ],
+  "anilan_modeller": [
+    "OpenAI Frontier Models"
+  ],
+  "yorum_tr": "Fyxer'ın vaka analizi, LLM tabanlı ürün geliştirmede 'tek model her işi çözer' anlayışının sınırlarını ve mikro görev modellerine bölünmüş mimarilerin üstünlüğünü net biçimde ortaya koyuyor. Özellikle kullanıcı düzenlemelerini DPO ile sürekli bir pekiştirmeli eğitim döngüsüne dönüştürmeleri ve %53 dokunulmadan kabul oranı yakalamaları, dikey yapay zekâ ajanları geliştiren girişimler için ders niteliğindedir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3987426561288567677",
+  "url": "https://openai.com/index/fyxer",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-09-14T12:00:00.000Z",
+  "slug": "how-fyxer-built-an-ai-executive-assistant-people-trust"
+}

@@ -1,0 +1,43 @@
+{
+  "baslik_tr": "AMD Donanımda Kuantizasyondan Ödün Vermeden Çıkarım Hızı Nasıl Artırılır? LocalLLaMA Topluluğundan 30+ TPS Optimizasyon ",
+  "ozet_tr": "Yerel yapay zekâ topluluğu LocalLLaMA'da bir kullanıcı, orta segment AMD donanım üzerinde kuantizasyon seviyesini düşürmeden 30 token/saniye (TPS) hızına ulaşmayı başardığı yapılandırmayı paylaştı. Geliştirici, llama.cpp ve Vulkan SDK kullanarak 35 milyar parametrelik MoE kodlama modelinde 40 TPS hedefine ulaşmak için spekülatif kod çözme ve bellek yönetimi parametrelerini optimize etmenin yollarını arıyor.",
+  "detayli_icerik_tr": "Açık kaynaklı yerel büyük dil modelleri (LLM) çalıştıran kullanıcılar için çıkarım hızı (TPS), model doğruluğundan feragat etmeden artırılması en zor hedeflerden biridir. Reddit'in LocalLLaMA topluluğunda paylaşılan detaylı bir optimizasyon vakasında, bir geliştirici AMD Radeon RX 6700 XT (12GB VRAM), AMD Ryzen 5 5600X işlemci ve 32GB RAM bileşenlerine sahip tüketici sınıfı donanımında llama.cpp Vulkan arka ucuyla elde ettiği performans verilerini açıkladı.\n\nKullanıcı, Tiel-Coder-35B-A3B mimarisine sahip karma uzmanlar (MoE) modelini Q4_K_XL kuantizasyon seviyesinde ve 100.000 token bağlam uzunluğunda çalıştırırken 30 TPS çıkarım hızına ulaştığını bildirdi. Model hassasiyetini ve Q8_0 anahtar-değer (KV) önbellek kalitesini bozmadan hızını 40 TPS seviyesine çıkarmak isteyen geliştirici; CPU iş parçacığı sayısı (threads), mikro parti boyutları (ubatch-size) ve katman aktarımı (offloading) gibi kritik parametreleri detaylandırdı.\n\nKonfigürasyonda en çok dikkat çeken teknik unsur, çoklu token tahminine dayalı spekülatif çıkarım (MTP - Multi-Token Prediction) mekanizmasının ('draft-mtp') aktif edilmesi oldu. Modelin 28 uzman katmanının CPU'ya yönlendirilmesi (n-cpu-moe = 28) ve GPU katmanlarının maksimum düzeyde tutulmasıyla VRAM ve sistem belleği arasında dengeli bir paylaştırma kurulduğu görülüyor. Ayrıca Flash Attention desteği ve doğrudan G/Ç (dio) kipinin devreye alınması, VRAM sınırı olan 12 GB kartlarda verim kaybını minimuma indiriyor.\n\nTopluluk içinde tartışılan bu optimizasyon parametreleri, özellikle CUDA ekosistemi dışında kalan AMD Radeon kullanıcıları için Vulkan SDK tabanlı yerel LLM kurulumlarında referans niteliği taşıyor. Windows 11 ortamında WSL kullanmadan doğrudan çalışan sistem, tüketici sınıfı donanımlarda bile büyük kod modellerinin yüksek bağlam pencereleriyle interaktif hızlarda çalıştırılabileceğini kanıtlıyor.",
+  "onemli_maddeler": [
+    "AMD RX 6700 XT 12GB ve Ryzen 5 5600X donanımında, llama.cpp Vulkan altyapısıyla 35B MoE modelinde 30 TPS çıkarım hızına ulaşıldı.",
+    "Model doğruluğunu korumak adına Q4_K_XL kuantizasyonu ve Q8_0 KV önbellek konfigürasyonu tercih edildi.",
+    "MTP (Multi-Token Prediction) tabanlı spekülatif çıkarım ve Flash Attention ayarları etkinleştirilerek işlem verimliliği artırıldı.",
+    "100.000 tokenlik devasa bağlam penceresinde, iş parçacığı sayısı (threads) 6 olarak ayarlandığında en ideal hız-gecikme dengesi yakalandı."
+  ],
+  "kategori": "diger",
+  "onem": 3,
+  "onem_gerekce": "Tüketici segmenti AMD GPU'lar üzerinde 35B sınıfı MoE modellerini yüksek bağlamla interaktif hızlarda çalıştırmak için pratik ve tekrarlanabilir bir konfigürasyon örneği sunmaktadır.",
+  "etiketler": [
+    "llama.cpp",
+    "LocalLLaMA",
+    "Vulkan SDK",
+    "AMD Radeon",
+    "Çıkarım Optimizasyonu"
+  ],
+  "anilan_modeller": [
+    "Tiel-Coder-35B-A3B"
+  ],
+  "yorum_tr": "NVIDIA dışı GPU'larda yerel LLM çalıştırmak genellikle performans kısıtlarına takılsa da, Vulkan arka ucu ve MTP (Multi-Token Prediction) gibi spekülatif tekniklerin birleşimi 12 GB VRAM'e sahip kartlarda bile 35B modelleri günlük kullanıma uygun hale getiriyor. Kuantizasyon seviyesini düşürmeden parametre ince ayarlarıyla TPS artırma çabası, yerel model optimizasyonunun sadece model ağırlıklarını sıkıştırmaktan ibaret olmadığını gösteriyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Tiel-Coder-35B-A3B",
+      "benchmark": "Token Generation Speed (Inference)",
+      "skor": 30,
+      "birim": "tps",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "llama.cpp Vulkan SDK, AMD RX 6700 XT 12GB, Ryzen 5 5600X, ctx 100k, Q4_K_XL quant, Q8_0 KV cache, spec-type draft-mtp",
+      "kaynak_metinden_alinti": "Spent the past month tweaking and experimenting with many different numbers to achieve 30tps."
+    }
+  ],
+  "gorsel_url": "https://substackcdn.com/image/fetch/$s_!Rg9a!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa4ee32d0-34fe-422e-bdb4-1bfb8fce0fe4_1536x1024.png",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x2donu/improve_token_per_second_without_touching_quant/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-10T12:05:52.000Z",
+  "slug": "improve-token-per-second-without-touching-quant"
+}

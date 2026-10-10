@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "Yerel Çok Modlu Dosya Arama Uygulaması DigUp Tanıtıldı: EmbeddingGemma 2 ile Mac'te Anlamsal Arama",
+  "ozet_tr": "Açık kaynaklı yeni macOS uygulaması DigUp, Google DeepMind'ın EmbeddingGemma 2 modelini doğrudan Apple Silicon donanımında yerel olarak çalıştırarak kullanıcıların dosyalarını anlamsal içeriklerine göre aramasına olanak tanıyor. Swift ve llama.cpp tabanlı araç; metin, görsel, ses ve video dosyalarını tek bir ortak vektör uzayında indeksleyerek internet bağlantısına ihtiyaç duymadan saniyeler içinde arama yapabiliyor.",
+  "detayli_icerik_tr": "Açık kaynak yapay zekâ ekosisteminde yerel modellerin gündelik iş akışlarına entegrasyonu hız kazanıyor. Geliştirici A-Rahim tarafından yayımlanan DigUp adlı yeni macOS uygulaması, Google DeepMind'ın taze çok modlu vektör modeli EmbeddingGemma 2'yi yerel olarak cihazda çalıştırarak gelişmiş bir anlamsal dosya arama deneyimi sunuyor. Tamamen yerel mimaride kurgulanan uygulama; PDF metinleri, fotoğraflar, ses kayıtları ve video kliplerini aynı vektör uzayında eşleştirerek dosya adına bağlı kalmadan içeriğe dayalı arama yapabilmeyi sağlıyor.\n\nDigUp, Python bağımlılığı olmadan doğrudan yerel Swift dili ve Metal hızlandırmalı llama.cpp motoru üzerine inşa edildi. ggml-org tarafından sağlanan Q8_0 kuantizasyonlu 865 MB boyutundaki GGUF modelini kullanan yazılım, kaynak tüketimi konusunda oldukça optimize bir profil çiziyor. Arama sırasında yalnızca yaklaşık 250 MB boyutundaki metin kodlayıcı (text encoder) belleğe yükleniyor ve kullanıcı yazmayı bitirdikten yaklaşık onda bir saniye sonra sonuçlar anında ekranda listeleniyor. Dosya indeksleme sürecinde bellek kullanımı en fazla 2 GB seviyesine ulaşıyor ve indeksleme tamamlandığında yardımcı işlem sonlandırılarak kaynaklar serbest bırakılıyor.\n\nUygulamanın en dikkat çekici yönlerinden biri çok modlu arama kabiliyeti. Kullanıcı örneğin \"videodaki zebra\" ifadesini aradığında video dosyasının doğrudan zebranın göründüğü saniyesine zıplayabiliyor veya \"uykudan bahsettikleri yer\" aramasıyla bir podcast kaydının tam o dakikasına erişebiliyor. Ayrıca Bengalce ve Arapça gibi farklı dillerde yapılan aramalar ile \"code:\" önekiyle kaynak kod içinde fonksiyon seviyesinde arama gibi yetenekler de destekleniyor. Ses ve video dosyaları 30 saniyelik pencereler ve sahne başına bir kare alınarak indeksleniyor.\n\nGizlilik odaklı tasarlanan DigUp, ilk model indirmesi ve tercihe bağlı güncelleme denetimi dışında hiçbir şekilde internete bağlanmıyor; tüm veri ve vektör indeksleri Mac üzerinde tutuluyor. Apple Silicon işlemcili ve macOS 14+ sürümlü cihazlar için optimize edilen proje, MIT lisansı altında açık kaynak olarak GitHub üzerinden indirilebiliyor.",
+  "onemli_maddeler": [
+    "DigUp, Google DeepMind'ın EmbeddingGemma 2 modelini Apple Silicon işlemcilerde Metal API ve llama.cpp altyapısıyla yerel olarak çalıştırıyor.",
+    "Metin, ses, video ve görselleri tek bir vektör uzayında birleştirerek video sahnelerine ve ses dosyalarındaki belirli dakikalara doğrudan atlama imkânı sunuyor.",
+    "Swift ile yerel olarak geliştirilen uygulama Python gerektirmiyor; 865 MB'lık Q8_0 GGUF modeliyle arama anında sadece ~250 MB RAM kullanıyor.",
+    "Arama sorgularında yaklaşık 0,1 saniyelik tepki süresi sunulurken, çok dilli arama ve editör entegrasyonlu kod araması destekleniyor.",
+    "Yazılım tamamen açık kaynaklı (MIT lisansı), imzalı ve noter onaylı olup tüm verileri cihaz üzerinde işliyor."
+  ],
+  "kategori": "diger",
+  "onem": 4,
+  "onem_gerekce": "Yeni nesil çok modlu embedding modellerinin (EmbeddingGemma 2) yerel işletim sistemi araçlarına entegrasyonunun somut ve yüksek performanslı bir örneğidir; yerel veri gizliliğini koruyarak masaüstü arama deneyimini dönüştürmektedir.",
+  "etiketler": [
+    "EmbeddingGemma 2",
+    "DigUp",
+    "macOS",
+    "Apple Silicon",
+    "llama.cpp"
+  ],
+  "anilan_modeller": [
+    "EmbeddingGemma 2"
+  ],
+  "yorum_tr": "DigUp, Apple'ın macOS için henüz tam olarak sunamadığı sistem geneli çok modlu anlamsal aramayı açık kaynak ve açık ağırlıklı modellerle kullanıcılara sunuyor. EmbeddingGemma 2 gibi hafif ve çok modlu vektör modellerinin doğrudan yerel çiplere (NPU ve GPU) uyarlanması, gizlilikten ödün vermeden masaüstü üretkenliğini katlayan yeni bir yerel araç dalgasının habercisi.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/anozN2JrYmF4bXVoMUndolEwAy24n0LU_Pp6Gb4-ILJSfsBrJT2bxGdi6wwk.png?width=640&crop=smart&auto=webp&s=10522956abf8e86a6f5613cd3f0706fe3509e76b",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x2eeds/opensource_mac_app_that_runs_embeddinggemma_2/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-10T12:43:33.000Z",
+  "slug": "open-source-mac-app-that-runs-embeddinggemma-2-locally-to-se"
+}

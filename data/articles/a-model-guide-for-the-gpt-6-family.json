@@ -1,32 +1,33 @@
 {
   "baslik_tr": "GPT‑6 Ailesi İçin Pratik Model Rehberi",
-  "ozet_tr": "OpenAI, en yeni GPT‑6 model serisini üretim ortamlarında verimli kullanmak için kapsamlı bir kılavuz yayınladı. Rehber, model seçimi, prompt optimizasyonu, uzun süren görevlerin yönetimi ve bilgisayar kullanımının entegrasyonu gibi kritik konuları ele alıyor.",
-  "detayli_icerik_tr": "OpenAI, GPT‑6 ailesinin sunduğu farklı model seçeneklerini (Astra, 6.1 Sol ve Luna) ve bunların hangi iş yüklerine en uygun olduğunu ayrıntılı bir şekilde açıkladı. Kullanıcıların maliyet, gecikme ve yetenek dengesini gözeterek model, akıl yürütme seviyesi ve hız modunu (Fast, Ultrafast) seçmeleri öneriliyor. Ayrıca, üretim ortamına geçmeden önce prompt caching ve context compaction gibi tekniklerle token maliyetini %95'e kadar düşürmek ve bağlam boyutunu yönetmek mümkün.\n\nRehber, etkili prompt ve skill tasarımına da odaklanıyor. Modelin net bir görev tanımı, hedef kitlesi, bağlam ve tamamlanma kriterleriyle yönlendirilmesi gerektiği vurgulanıyor. AGENTS.md dosyasının güncellenmesi, karar sınırlarının belirlenmesi ve \"tamamlanmış\" tanımının netleştirilmesi, hatasız ve kontrollü bir çalışma akışı sağlıyor.\n\nUzun süren görevler için OpenAI, steering, asenkron araç çağrıları ve multi‑agent delegasyon gibi özellikleri tanıttı. API üzerinden mid‑turn steering ile modelin yönlendirilmesi, asenkron araçlarla bağımsız işlerin paralel yürütülmesi ve GPT‑6.1 Sol’da beta aşamasındaki multi‑agent iş akışları, saatler süren projelerde verimliliği artırıyor. Codex ortamında ise modelin sorular sorarak netlik kazanması ve gereksinim değişikliklerine hızlıca uyum sağlaması sağlanıyor.\n\nBilgisayar kullanım yeteneği (computer use) sayesinde GPT‑6 modelleri, API ya da araç entegrasyonu mümkün olmayan durumlarda doğrudan tarayıcı ve masaüstü uygulamalarıyla etkileşime girebiliyor. Bu özellik, hata ayıklama, kod düzeltme ve sonuçların görsel doğrulaması gibi senaryolarda geliştiricilere büyük kolaylık sunuyor.",
+  "ozet_tr": "OpenAI, en gelişmiş GPT‑6 model serisini nasıl verimli bir şekilde üretime alacağınızı anlatan kapsamlı bir rehber yayımladı. Model seçimi, prompt optimizasyonu, uzun süren görevlerin yönetimi ve bilgisayar kullanımına dair yeni özellikler detaylı bir şekilde ele alındı.",
+  "detayli_icerik_tr": "OpenAI, GPT‑6 ailesinin sunduğu farklı model seçeneklerini (Astra, 6.1 Sol ve Luna) iş akışlarına göre nasıl eşleştireceğinizi açıklayan bir kılavuz yayınladı. Rehber, üretim ortamına geçmeden önce bağlamı küçültme, prompt caching ve compaction gibi maliyet ve gecikme optimizasyonlarını uygulamayı, ayrıca görev başarısını ve yanıt süresini ölçmeyi öneriyor. \n\nModel seçimi aşamasında, karmaşık kodlama ve araştırma işleri için 6.1 Sol, yüksek zekâ gerektiren zorlayıcı mantık görevleri için Astra ve ölçeklenebilir, tekrarlayan görevler için Luna modelleri öneriliyor. Her model için fiyat‑performans dengesi, istenen akıl yürütme seviyesi (düşük‑orta‑yüksek‑maksimum) ve hızlı/ultra‑hızlı modları da dikkate alınmalı. \n\nPrompt ve beceri yönetiminde, modelin net bir görev tanımı alması, karar sınırlarının belirlenmesi ve \"tamamlandı\" kriterlerinin açıkça tanımlanması vurgulanıyor. AGENTS.md dosyasıyla güvenli rutin iş akışları ve veri kontrol mekanizmaları belgelemeli. \n\nUzun süren görevlerde, steering, asenkron araç çağrıları ve çok‑ajan delegasyonu gibi özellikler sayesinde modelin bağımsız alt‑görevler yürütmesi ve gerektiğinde ara yönlendirme alması sağlanıyor. Ayrıca, bilgisayar kullanım yeteneği sayesinde model, web ve masaüstü uygulamalarını doğrudan kontrol ederek hata ayıklama ve doğrulama adımlarını otomatikleştirebiliyor. Bu bütünleşik yaklaşım, geliştiricilerin prototipten üretime geçiş sürecini hızlandırmayı hedefliyor.",
   "onemli_maddeler": [
-    "Üretim ortamında maliyet ve gecikmeyi düşürmek için prompt caching ve context compaction kullanılmalı.",
-    "Model, akıl yürütme seviyesi ve hız modu iş yüküne göre seçilmeli; Astra en karmaşık görevler için, Luna ölçekli rutin işler için ideal.",
-    "Uzun süren görevlerde steering, asenkron araç çağrısı ve multi‑agent delegasyon özellikleriyle iş akışı kontrol altında tutulmalı.",
-    "Bilgisayar kullanım yeteneği, API dışı ortamlarla etkileşim gerektiren senaryolarda modelin yeteneklerini genişletiyor."
+    "Üretimde maliyet ve gecikmeyi düşürmek için prompt caching ve compaction kullanılmalı.",
+    "Görev tipine göre GPT‑6 Astra, 6.1 Sol veya Luna modelleri seçilmeli; akıl yürütme seviyesi ve hız modları da ayarlanmalı.",
+    "Prompt ve beceri tanımları net olmalı, karar sınırları ve \"tamamlandı\" kriterleri açıkça belirtilmeli.",
+    "Uzun süren işler için steering, asenkron araç çağrısı ve çok‑ajan delegasyonu gibi özellikler kullanılmalı.",
+    "Bilgisayar kullanımı sayesinde model, API dışı ortamlarla etkileşime girerek tam otomasyon sağlayabilir."
   ],
-  "kategori": "arac-sdk",
-  "onem": 4,
-  "onem_gerekce": "GPT‑6 modelleri, önceki nesillere göre daha yüksek akıl yürütme kapasitesi ve yeni üretim özellikleri sunarak geliştiricilerin maliyet, hız ve güvenilirlik açısından kritik kararlar almasını sağlıyor.",
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "GPT‑6 serisinin yeni özellikleri, üretim ortamlarında yapay zeka entegrasyonunu maliyet, hız ve güvenlik açısından dönüştürerek geliştiricilerin verimliliğini artıracak.",
   "etiketler": [
     "GPT-6",
     "model seçimi",
     "prompt caching",
-    "uzun vadeli görev",
-    "API"
+    "uzun süren görevler",
+    "bilgisayar kullanımı"
   ],
   "anilan_modeller": [
-    "GPT-6 Astra",
-    "GPT-6.1 Sol",
-    "GPT-6 Luna"
+    "GPT‑6 Astra",
+    "GPT‑6.1 Sol",
+    "GPT‑6 Luna"
   ],
-  "yorum_tr": "Bu rehber, geliştiricilerin GPT‑6 serisini üretim ortamına sorunsuz entegre etmelerini sağlayarak uygulama maliyetlerini düşürürken performansı artırıyor; aynı zamanda uzun vadeli ve çok adımlı iş akışlarında yeni kontrol mekanizmaları sunarak sektördeki otomasyon seviyesini yükseltecek.",
+  "yorum_tr": "Bu rehber, geliştiricilerin GPT‑6 modellerini daha kontrollü ve ölçeklenebilir bir şekilde kullanmalarını sağlayarak, AI‑destekli ürünlerin pazara çıkış süresini kısaltacak ve operasyonel maliyetleri düşürecek.",
   "gorseller": [],
   "benchmarklar": [],
-  "gorsel_url": "https://images.indianexpress.com/2026/10/OpenAI-GPT-6.jpg?w=640",
+  "gorsel_url": "https://images.ctfassets.net/kftzwdyauwt9/30yfQUtDoZo9YOON0QB57H/7c53ac242cc32ab9a9dc05930bdc2034/6tbusrroo8ljxic8ceybig-seo.png?w=1600&h=900&fit=fill",
   "url": "https://openai.com/index/practical-guide-building-gpt-6",
   "source": "OpenAI",
   "sourceTier": "resmi",

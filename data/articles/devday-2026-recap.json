@@ -1,34 +1,32 @@
 {
-  "baslik_tr": "OpenAI DevDay 2026: GPT-6.1 Sol, Dots ve Ultrafast gibi 20'den Fazla Yeni AI Aracı ve Modeli",
-  "ozet_tr": "OpenAI, DevDay 2026 etkinliğinde 20'den fazla duyuru yaparak AI ekosistemini genişletti. Yeni nesil ajanlar Dots, daha ucuz ve güçlü GPT‑6.1 Sol, 8 kat hızlı Ultrafast modu ve veri gizliliği odaklı Private Intelligence gibi yenilikler tanıtıldı.",
-  "detayli_icerik_tr": "OpenAI, 29 Eylül 2026 tarihinde düzenlediği DevDay 2026 etkinliğinde, geliştiriciler ve işletmeler için bir dizi yeni araç ve model duyurdu. En dikkat çeken yenilik, sürekli görevleri üstlenebilen ve kullanıcıların önceliklerine göre çalışabilen Dots adlı ajanlar oldu; bu ajanlar Pro ve Business Premium planlarında kullanılabiliyor ve kurumsal, eğitim ve sağlık sektörlerinde beta olarak sunuluyor. \n\nGPT‑6.1 Sol, GPT‑6 Sol'un geliştirilmiş bir versiyonu olarak tanıtıldı; ajan tabanlı kodlama, bilgisayar kullanımı ve profesyonel iş akışlarında üstün performans sunarken, standart token fiyatının beşte biriyle sunuluyor. Model, API, Plus, Pro, Business, Enterprise ve Eğitim planlarında erişilebilir. \n\nHız odaklı kullanıcılar için Ultrafast adlı premium hız katmanı tanıtıldı; Codex'te saniyede 300 token (8×) ve API'de 6× daha hızlı yanıt sağlıyor. GPT‑6 Astra Ultrafast hemen API ve ChatGPT Work/ Codex'te kullanılabilirken, GPT‑6.1 Sol Ultrafast önümüzdeki dönemde geliyor. \n\nGüvenlik ve veri gizliliği alanında Private Intelligence hizmeti, sıfır veri saklama ve özel güvenlik işleme (Private Safety Processing) sunarak işletmelerin frontier AI'yi güvenle kullanmasını hedefliyor; önizleme sürümü bu sonbaharda kullanılabilir olacak. \n\nCodex platformu da bulut ortamları, sesli komutlarla çalışan yeni CLI, otomatik kod inceleme ve Security Cloud gibi özelliklerle geliştirildi. Decisions API, belirli sorulara odaklanan gerçek zamanlı karar mekanizması sağlarken, Agents API artık bilgisayar kullanımını destekleyerek yazılım etkileşimli ajanlar oluşturulmasına imkan tanıyor. Amazon Bedrock ile ortaklaşa geliştirilen Bedrock Managed Agents, bu yetenekleri AWS içinde özelleştirilebilir hâle getiriyor.",
+  "baslik_tr": "OpenAI DevDay 2026: GPT‑6.1, Dots ajanları, Codex bulut ve yeni ChatGPT iş birliği özellikleri",
+  "ozet_tr": "OpenAI, DevDay 2026 etkinliğinde GPT‑6.1, Astra Ultrafast ve sürekli çalışan Dots ajanları gibi 20'den fazla yenilik duyurdu. ChatGPT artık geliştiricilerin yerel deneyimler oluşturabileceği bir ortak yüzeye, genişletilmiş plugin ekosistemine ve ekip içi iş birliği alanlarına (Spaces) sahip. Bu duyurular, AI‑destekli üretkenliği artırma ve açık ekosistemi genişletme vizyonunu pekiştiriyor.",
+  "detayli_icerik_tr": "OpenAI, DevDay 2026’da en büyük etkinliğini gerçekleştirerek yapay zekâ modelleri, geliştirme araçları ve iş birliği platformları üzerine bir dizi çığır açıcı duyuru yaptı. En dikkat çekenler arasında, daha yüksek işlem gücü ve veri verimliliği vaat eden GPT‑6.1 modeli ve aynı altyapıyı kullanan Astra Ultrafast bulunuyor; bu model, ChatGPT, Codex ve API üzerinden erişilebilir olacak. Ayrıca, \"Dots\" adı verilen sürekli‑çalışan ajanlar tanıtıldı; bu ajanlar kullanıcıların önceliklerini öğrenerek, tekrarlayan görevleri otomatik olarak üstlenebiliyor ve Pro ile Business Premium planlarında kullanılabilecek.\n\nCodex platformu da bulut tabanlı geliştirme ortamları, CLI ve güvenlik bulut çözümleriyle genişletildi. Geliştiriciler artık Codex’i bilgisayar, telefon ya da bulut üzerinden istedikleri yerde çalıştırabilir, ortak ayar ve izinlerle ekip içinde tutarlı bir geliştirme deneyimi sağlayabilir. Bunun yanında, Decisions API ve yeni bir Agents API sunularak, AI’nın karar verme süreçlerine ve bilgisayar kullanımına entegrasyonu kolaylaştırıldı.\n\nChatGPT ekosistemi de büyük bir dönüşüm geçirdi. Plugin uzantıları sayesinde geliştiriciler, kendi eklentilerini ChatGPT yan çubuğuna yerleştirerek interaktif paneller oluşturabilecek. Canva, Figma, Shopify gibi popüler araçlarla entegrasyonlar genişletildi ve yeni \"Spaces\" özelliği tanıtıldı; bu alanlar ekiplerin, ChatGPT ve Dots ajanlarıyla ortak bilgi havuzları oluşturup, görevleri planlayıp, belgeleri ortaklaşa düzenlemelerine olanak tanıyor. Slack ve Microsoft Teams entegrasyonları, toplantı özetleri ve aksiyon talepleri gibi iş akışlarını doğrudan sohbet üzerinden yönetmeyi mümkün kılıyor.\n\nSon olarak, OpenAI Marketplace açıldı; geliştiriciler ve ortaklar, ChatGPT planlarını 16 farklı partner (Cognition, Notion, Vercel vb.) ile entegre ederek kullanım haklarını ve bütçelerini merkezi bir kontrol panelinden yönetebilecek. Kimlik doğrulama hizmeti global ölçekte sunulurken, plan limitleri Plus ve Pro kullanıcıları için geçerli olacak şekilde genişletildi. Bu adımlar, OpenAI’nin açık bir ekosistemi teşvik etme ve AI‑destekli üretkenliği her seviyedeki kullanıcıya yayma stratejisinin bir parçası olarak görülüyor.",
   "onemli_maddeler": [
-    "Dots: Sürekli çalışan, görev odaklı ajanlar Pro ve Business Premium planlarında kullanılabilir.",
-    "GPT‑6.1 Sol: Daha düşük token maliyetiyle yüksek performans sunan yeni model, tüm planlarda erişilebilir.",
-    "Ultrafast: Codex ve API'de 6‑8 kat hız artışı sağlayan premium hız katmanı.",
-    "Private Intelligence: Sıfır veri saklama ve özel güvenlik işleme ile veri gizliliği garantisi.",
-    "Codex yenilikleri: Bulut ortamları, sesli CLI, otomatik kod inceleme ve Security Cloud."
+    "GPT‑6.1 ve Astra Ultrafast modellerinin tanıtılması, performans ve hız açısından yeni bir standart getiriyor.",
+    "Dots ajanları, sürekli‑çalışan AI asistanlarıyla tekrarlayan görevleri otomatikleştirerek kullanıcıların zamanını serbest bırakıyor.",
+    "Codex bulut ortamları, CLI ve güvenlik çözümleriyle geliştiricilere tam entegrasyonlu, çok platformlu bir kodlama deneyimi sunuyor.",
+    "ChatGPT Spaces ve yeni plugin uzantıları, ekip içi iş birliğini AI ile birleştirerek ortak çalışma ortamlarını yeniden tanımlıyor."
   ],
   "kategori": "guncelleme",
   "onem": 5,
-  "onem_gerekce": "OpenAI'nin en büyük etkinliği olan DevDay 2026'da tanıtılan modeller ve araçlar, hem geliştiricilerin üretkenliğini hem de kurumsal AI kullanımını köklü şekilde değiştirecek ölçek ve fiyat avantajları sunuyor.",
+  "onem_gerekce": "DevDay 2026, OpenAI’nin model, araç ve ekosistem stratejisini yeniden şekillendiren 20'den fazla duyuruyu içeriyor; bu da hem geliştiricileri hem de son kullanıcıları doğrudan etkileyen geniş kapsamlı bir güncelleme niteliği taşıyor.",
   "etiketler": [
     "OpenAI",
+    "DevDay2026",
     "GPT-6",
     "Codex",
-    "AI agents",
-    "Developer tools"
+    "AI-Agents"
   ],
   "anilan_modeller": [
-    "GPT-6.1 Sol",
-    "GPT-6 Astra",
-    "GPT-6.1 Sol Ultrafast (yakında)",
-    "GPT-6 Astra Ultrafast"
+    "GPT-6.1",
+    "Astra Ultrafast",
+    "Dots (agents)"
   ],
-  "yorum_tr": "Bu duyurular, geliştiricilere daha düşük maliyetli ve yüksek performanslı modeller, aynı zamanda veri güvenliğini artıran hizmetler sunarak AI entegrasyonunu hızlandıracak; işletmeler ise özel ajanlar ve hız katmanları sayesinde operasyonel verimliliği artırabilecek.",
+  "yorum_tr": "Bu duyurular, AI’nın üretkenlik araçlarıyla bütünleşmesini hızlandırarak geliştiricilere daha güçlü modeller ve otomatikleştirilmiş iş akışları sunuyor; aynı zamanda son kullanıcıların AI‑destekli iş birliği deneyimlerini genişletiyor.",
   "gorseller": [],
   "benchmarklar": [],
-  "gorsel_url": "https://www.aiagentslibrary.com/wp-content/uploads/2026/09/open-ai-dev-day-announcement-results-dots-ai-agents.jpg",
+  "gorsel_url": "https://image.cnbcfm.com/api/v1/image/108369628-17907033211790703319-48685802159-1080pnbcnews.jpg?v=1790703320&w=750&h=422&vtcrop=y",
   "url": "https://openai.com/index/devday-2026-recap",
   "source": "OpenAI",
   "sourceTier": "resmi",

@@ -1,0 +1,44 @@
+{
+  "baslik_tr": "EmbeddingGemma 2: Açık ve Hafif Çok Modelli Gömme Modeli",
+  "ozet_tr": "Google DeepMind, 740 milyon parametreli EmbeddingGemma 2 modelini duyurdu. Model, metin, görüntü, ses ve video verilerini tek bir gömme uzayına yerleştirerek cihaz içinde yüksek doğrulukta çok modelli arama ve geri getirme (RAG) imkanı sunuyor.",
+  "detayli_icerik_tr": "Geçtiğimiz yıl geliştiricilere hafif bir metin gömme çözümü sunan EmbeddingGemma 1, 20 milyondan fazla indirme ve çeşitli on‑device arama uygulamalarıyla büyük ilgi gördü. Bu başarının ardından DeepMind, aynı mimariyi genişleterek EmbeddingGemma 2'yi tanıttı. Model, Gemma 4 mimarisi üzerine inşa edilmiş olup 740 milyon parametreye sahip ve Apache 2.0 lisansı altında sunuluyor; bu da onu ticari ve açık kaynak projelerde rahatça kullanılabilir kılıyor.\n\nEmbeddingGemma 2, metin, kod, görsel, ses ve video girdilerini aynı gömme uzayına dönüştürerek çok modelli sorgulamalara olanak tanıyor. 8K tokenluk geniş bir bağlam penceresi sayesinde bir kerede 5,5 dakikalık ses, 29 görüntü ya da 58 video karesi işlenebiliyor. Model, Matryoshka Representation Learning (MRL) sayesinde çıktıyı 768, 512, 256 veya 128 boyutuna dinamik olarak kırpabiliyor; bu da yerel vektör veri tabanlarında depolama ihtiyacını 6 kata kadar azaltıyor.\n\nPerformans açısından EmbeddingGemma 2, 1 milyar parametrenin altında kalan çok modelli gömme modelleri arasında lider konumda. MTEB Code benchmark'ında 78,68 puan elde ederek önceki sürümden 9,92 puanlık bir artış gösterdi ve aynı zamanda MAEB (Massive Audio Embedding Benchmark) gibi ses odaklı testlerde de üst düzey sonuçlar alıyor. Cihaz üzerindeki çalıştırma maliyeti de düşük; Google Pixel 11 Pro’da metin‑only modda sadece ~191 MB, tam çok modelli sürümde ise ~567 MB aktif RAM kullanıyor.\n\nGeliştiriciler, EmbeddingGemma 2'yi Hugging Face ve Kaggle üzerinden indirip MediaPipe, LiteRT, transformers.js gibi araçlarla doğrudan cihazda çalıştırabiliyor. Model, Gemma 4 ile aynı tokenleştirici ve ses kodlayıcıyı paylaştığı için, her iki modeli birleştirerek düşük bellek ayak iziyle on‑device RAG (retrieval‑augmented generation) akışları oluşturmak mümkün. Bu da veri gizliliğini artırırken gecikmeyi azaltıyor ve çevrim dışı çok modelli arama, medya anı bulma ve kod tabanı indeksleme gibi senaryoları güçlendiriyor.",
+  "onemli_maddeler": [
+    "740M parametreli, Apache 2.0 lisanslı ve cihaz içinde çalıştırılabilecek tek bir çok modelli gömme modeli.",
+    "8K token bağlam penceresi; bir seferde 5,5 dk ses, 29 görüntü ya da 58 video karesi işleyebiliyor.",
+    "Matryoshka Representation Learning ile vektör boyutu dinamik olarak 768‑128'e düşürülerek %80'e varan depolama tasarrufu sağlanıyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Model, çok modelli gömme görevlerinde parametre başına en yüksek kaliteyi sunarak on‑device AI uygulamalarının gizlilik, gecikme ve kaynak verimliliği hedeflerine doğrudan hizmet veriyor.",
+  "etiketler": [
+    "embedding",
+    "multimodal",
+    "on-device",
+    "deepmind",
+    "gemma"
+  ],
+  "anilan_modeller": [
+    "EmbeddingGemma 1",
+    "Gemma 4",
+    "Gemini Embedding"
+  ],
+  "yorum_tr": "EmbeddingGemma 2, geliştiricilere cihaz içinde tam gizlilikle çok modelli arama ve RAG yetenekleri sunarak bulut bağımlılığını azaltıyor; aynı zamanda düşük bellek tüketimi sayesinde akıllı telefon ve IoT cihazlarında yeni uygulama senaryolarının önünü açıyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "EmbeddingGemma 2",
+      "benchmark": "MTEB Code",
+      "skor": 78.68,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "EmbeddingGemma 2 matches the strong multilingual text performance of EmbeddingGemma while delivering a significant 9.92-point improvement on code performance (in MTEB Code, from 68.76 to 78.68)"
+    }
+  ],
+  "gorsel_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/embeddinggemma2-banner_169.width-1300.png",
+  "url": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
+  "source": "Google DeepMind",
+  "sourceTier": "resmi",
+  "date": "2026-10-06T19:57:04.000Z",
+  "slug": "embeddinggemma-2-an-open-lightweight-multimodal-embedding-mo"
+}

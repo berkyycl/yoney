@@ -1,0 +1,31 @@
+{
+  "baslik_tr": "Microsoft, 12 Bin Hesabı Ele Geçiren Yapay Zekâ Destekli Dolandırıcılık Platformu EvilTokens'ı Çökertti",
+  "ozet_tr": "Microsoft ve uluslararası kolluk kuvvetleri, yapay zekâ tabanlı sohbet robotu kullanarak dünya genelinde 10 bin kuruluşa ait 12 bin Microsoft hesabını ele geçiren EvilTokens adlı siber suç platformunu etkisiz hale getirdi. Telegram üzerinden abonelik modeliyle dağıtılan platform, çalınan e-postaları yapay zekâ ile saniyeler içinde analiz ederek yüksek tutarlı finansal dolandırıcılık senaryoları kurguluyordu.",
+  "detayli_icerik_tr": "Microsoft, sektör ortakları ve kolluk kuvvetleriyle yürüttüğü ortak operasyon kapsamında, siber korsanların büyük ölçekli kurumsal e-posta ihlalleri gerçekleştirmesini sağlayan EvilTokens adlı hizmet tabanlı suç platformunu çökerttiğini duyurdu. Şubat ayında bir Telegram kanalı üzerinden piyasaya sürülen platform; 1.500 dolarlık başlangıç ücreti ve aylık 500 dolarlık abonelik bedeli karşılığında siber suçlulara uçtan uca kimlik avı ve hesap ele geçirme altyapısı sunuyordu. Operasyon neticesinde platforma ait 50 web sitesi ile 150 alan adına el konulurken, İngiltere Metropolitan Polisi olayla bağlantılı iki şüpheliyi gözaltına aldı. Güvenlik şirketi SpyCloud'un da destek verdiği incelemelerde başta ABD, Kanada, İngiltere, Avustralya, Hindistan ve Fransa olmak üzere finans, sağlık, gayrimenkul ve yükseköğretim sektörlerindeki kurumların hedef alındığı bildirildi. Platformun teknik altyapısı, akıllı televizyonlar ve klavyesiz cihazlar için geliştirilmiş meşru OAuth 'cihaz kodu kimlik doğrulaması' (device code authentication) protokolünün istismarına dayanıyordu. Kurbanlar, Microsoft Entra üzerinden gerçek zamanlı kod üreten kötü amaçlı bağlantılara yönlendiriliyor ve bu kodu resmi Microsoft portalına girmeleri sağlanarak saldırganların oturum açması temin ediliyordu. EvilTokens'ı geleneksel saldırı araçlarından ayıran asıl kritik unsur ise ihlal sonrası kullanılan entegre yapay zekâ modeli oldu. Sistem, tek seferde 5.000 adet e-postayı tarayarak kurum içi hiyerarşiyi, para transferine yetkili personeli ve onay süreçlerini dakikalar içinde haritalandırıyordu. Yapay zekâ asistanı yalnızca hedefleri belirlemekle kalmayıp, yöneticilerin üslubunu taklit ederek personeli saldırgan hesaplarına para aktarmaya ikna eden son derece inandırıcı sahte yazışmalar kaleme alıyordu. Microsoft yetkilileri, eskiden günler veya haftalar süren kurumsal keşif ve istismar hazırlıklarının yapay zekâ sayesinde dakikalara indiğine dikkat çekerek, kurumların olağan dışı finansal işlemleri mutlaka güvenilir ikinci bir iletişim kanalı üzerinden teyit etmeleri gerektiği uyarısında bulundu.",
+  "onemli_maddeler": [
+    "EvilTokens platformu, dünya genelinde 10.000 kuruluşa ait 12.000 Microsoft hesabını ihlal etti.",
+    "Siber suçlulara aylık 500 dolar abonelikle sunulan platform, OAuth cihaz kodu kimlik doğrulama protokolünü istismar etti.",
+    "Entegre yapay zekâ motoru, tek seferde 5.000 e-postayı analiz ederek ödeme yetkililerini tespit etti ve inandırıcı taklit metinler hazırladı.",
+    "Operasyon kapsamında 200 alan adı/site kapatıldı ve İngiltere'de iki şüpheli tutuklandı."
+  ],
+  "kategori": "diger",
+  "onem": 3,
+  "onem_gerekce": "Yapay zekânın sadece içerik üretimi için değil, büyük ölçekli ve otomatikleştirilmiş kurumsal e-posta dolandırıcılığında (BEC) saldırı sürecini günlerden dakikalara indiren bir araç olarak operasyonelleştirildiğini ve buna karşı küresel çapta bir müdahale yapıldığını göstermektedir.",
+  "etiketler": [
+    "Microsoft",
+    "EvilTokens",
+    "Siber Güvenlik",
+    "Yapay Zeka Dolandırıcılığı",
+    "OAuth"
+  ],
+  "anilan_modeller": [],
+  "yorum_tr": "EvilTokens vakası, siber saldırganların üretken yapay zekâyı kurumsal sızma sonrası keşif ve sosyal mühendislik süreçlerine ne denli kusursuz entegre ettiğini gözler önüne seriyor. Eskiden yüzlerce saatlik insan emeği gerektiren e-posta analizi ve hedef odaklı kimlik avı hazırlığı artık dakikalar içinde tamamen otomatikleştirilebiliyor; bu durum kurumların geleneksel imza tabanlı savunmaları terk edip kimlik doğrulama süreçlerinde çok katmanlı ve işlem bazlı teyit mekanizmalarını zorunlu kılmasını gerektiriyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/ai-automation-1152x648.jpg",
+  "url": "https://arstechnica.com/security/2026/09/microsoft-disrupts-ai-assisted-platform-that-compromised-12000/",
+  "source": "Ars Technica AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-09-22T19:45:47.000Z",
+  "slug": "microsoft-disrupts-ai-assisted-platform-that-compromised-12-"
+}

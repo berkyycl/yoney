@@ -1,0 +1,73 @@
+{
+  "baslik_tr": "NVIDIA Nemotron Ailesi Hem IMO Hem de IOI Olimpiyatlarında Altın Madalya Seviyesine Ulaştı",
+  "ozet_tr": "NVIDIA araştırmacıları, Nemotron 3 temel model ailesini denetimli ince ayar (SFT), pekiştirmeli öğrenme (RL) ve test zamanı çıkarım döngüleriyle özelleştirerek hem Uluslararası Matematik Olimpiyatı (IMO) hem de Uluslararası Bilişim Olimpiyatı (IOI) kapsamında altın madalya seviyesine taşıdı. Geliştirilen sistemler, resmi olimpiyat değerlendiricileri ve gerçek zamanlı yarışma kısıtlamaları altında insan yarışmacıların zirve puanlarını aşmayı başardı.",
+  "detayli_icerik_tr": "Yapay zekâ modellerinin ileri düzey akıl yürütme becerilerini test eden iki büyük zirve olan Uluslararası Bilişim Olimpiyatı (IOI) ve Uluslararası Matematik Olimpiyatı (IMO), tamamen farklı yetenek setleri talep etmektedir. IOI, gizli test senaryolarını katı süre sınırları altında geçen karmaşık algoritmalar ve kodlama gerektirirken; IMO, resmi kanıtlayıcılar (formal provers) olmaksızın kusursuz bir doğal dil matematik ispatı mantığı aramaktadır. NVIDIA, Nemotron 3 model ailesini temel alarak her iki disiplinde de altın madalya barajını aşan bir uzmanlaşma stratejisini başarıyla hayata geçirdiğini duyurdu.\n\nRekabetçi programlama tarafında ekip, 22.000 problem ve sentetik akıl yürütme izleri kullanarak iki uzman model eğitti: 30 milyar toplam parametreye sahip Nemotron-3-Nano-CC ve 550 milyar parametreli Nemotron-3-Ultra-CC. 'GenCorrect' adlı yinelemeli üretim-değerlendirme-düzeltme döngüsü ile desteklenen Ultra-CC modeli, IOI 2026 denemelerinde 600 üzerinden 535,4 puan alarak 361,12 olan altın madalya eşiğini ve 498,27 olan en iyi insan skorunu geride bıraktı. Testler, insan yarışmacıların maruz kaldığı internet kısıtlaması ve süre limitleri altında canlı olarak yürütüldü.\n\nMatematik tarafında ise Nemotron 3 Ultra modeli üzerinden SFT ve RL teknikleriyle iki ayrı uzman kontrol noktası geliştirildi. SFT veri seti 15.818 farklı ispat problemine yayılan 414.890 filtrelenmiş örneği kapsarken; model yalnızca sonuca ulaşmayı değil, eleştirilere yanıt verme, ispat eksikliklerini tespit etme ve doğrulama süreçlerini de öğrendi. Resmi IMO değerlendiricileri tarafından puanlanan doğal dil ispatları, 42 üzerinden 30 puan alarak resmi altın madalya eşiği olan 29 puanı geçti. Sistemin herhangi bir harici araç ya da Lean benzeri resmi kanıtlama yazılımı kullanmadan tamamen doğal dilde 6 sorudan 4'ünde tam puan alması dikkat çekici bir başarı olarak kayda geçti.\n\nNVIDIA, bu başarının yalnızca devasa parametre sayısından veya rastgele örneklemeden değil; hedefe yönelik ince ayar, kaliteli veri ve test zamanı çıkarım hesaplamasının (test-time compute) uyumlu birlikteliğinden kaynaklandığını vurguluyor. Geliştirilen açık ağırlıklı modeller, SFT ve RL kontrol noktaları, 200 olimpiyat soruluk Nemotron-IMO-Bench kıyaslaması ve çıkarım işlem hatları Hugging Face ve NeMo-Skills havuzları üzerinden açık kaynak topluluğunun erişimine sunuldu.",
+  "onemli_maddeler": [
+    "Nemotron-3-Ultra-CC, IOI 2026 denemesinde 600 üzerinden 535,4 puan alarak hem 361,12 altın eşiğini hem de 498,27'lik en yüksek insan puanını aştı.",
+    "IMO 2026'da Nemotron 3 Ultra tabanlı sistem, harici kanıtlama aracı kullanmaksızın saf doğal dille 42 üzerinden 30 puan toplayarak resmi altın madalya barajını (29) geçti.",
+    "Programlama alanında GenCorrect, matematik alanında ise 'üret-doğrula-iyileştir' (generate-verify-refine) test zamanı çıkarım döngüleri kullanıldı.",
+    "NVIDIA, modelleri, eğitim tariflerini ve 200 soruluk Nemotron-IMO-Bench kıyaslama veri setini Hugging Face üzerinde açık olarak paylaştı."
+  ],
+  "kategori": "diger",
+  "onem": 3,
+  "onem_gerekce": "Tek bir açık temel model ailesinin hem olimpiyat seviyesi algoritma kodlamasında hem de saf doğal dil matematik ispatlarında aynı anda altın madalya seviyesine ulaşması, yapay zekâ akıl yürütme kabiliyetlerinde tarihi bir dönüm noktasıdır.",
+  "etiketler": [
+    "NVIDIA",
+    "Nemotron",
+    "IOI",
+    "IMO",
+    "Hugging Face"
+  ],
+  "anilan_modeller": [
+    "Nemotron 3",
+    "Nemotron-3-Nano-CC",
+    "Nemotron-3-Ultra-CC",
+    "Nemotron 3 Ultra"
+  ],
+  "yorum_tr": "NVIDIA'nın bu çalışması, akıl yürütme sınırlarını aşmak için sıfırdan trilyonlarca parametreli yeni modeller eğitmek yerine, iyi tasarlanmış temel modellerin hedef odaklı veri ve test anı çıkarım döngüleriyle (test-time compute) dönüştürülebileceğini kanıtlıyor. Özellikle matematik ispatlarının resmi biçimsel diller (Lean gibi) yerine tamamen doğal dil üzerinden resmi jüri tarafından altın madalya alacak seviyede üretilebilmesi, genel amaçlı yapay zekâ asistanlarının bilimsel keşif süreçlerinde çok daha pratik roller üstlenebileceğini gösteriyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Nemotron-3-Ultra-CC",
+      "benchmark": "IOI 2026",
+      "skor": 535.4,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "SFT and GenCorrect, live prospective run with human competition constraints",
+      "kaynak_metinden_alinti": "Nemotron-3-Ultra-CC with SFT and GenCorrect 535.4/600, above the 361.12 gold threshold and the top human score of 498.27"
+    },
+    {
+      "model": "Nemotron 3 Ultra",
+      "benchmark": "IMO 2026",
+      "skor": 30,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "General, SFT, and RL checkpoints with generate-verify-refine system, graded by official IMO graders",
+      "kaynak_metinden_alinti": "Nemotron 3 Ultra general, SFT, and RL checkpoints in a generate-verify-refine system 30/42, above the official gold threshold of 29"
+    },
+    {
+      "model": "Nemotron-3-Nano-CC",
+      "benchmark": "IOI 2025",
+      "skor": 468,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "SFT + RL + GenCorrect",
+      "kaynak_metinden_alinti": "With GenCorrect, our iterative generate-evaluate-refine strategy, it reached 468 points and crossed the gold threshold of 438.3."
+    },
+    {
+      "model": "Nemotron-3-Ultra-CC",
+      "benchmark": "IOI 2025",
+      "skor": 502,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "SFT + GenCorrect",
+      "kaynak_metinden_alinti": "Ultra-CC reached 502 points with the same test-time strategy."
+    }
+  ],
+  "gorsel_url": "https://cdn-uploads.huggingface.co/production/uploads/67b8b0096c3182e96bf6cea1/zB6BNaB-3tiCCsnOo7gik.png",
+  "url": "https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-10-07T12:45:31.000Z",
+  "slug": "one-model-family-two-gold-level-results-fine-tuning-nemotron"
+}

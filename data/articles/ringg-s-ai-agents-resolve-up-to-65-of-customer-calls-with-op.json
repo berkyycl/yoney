@@ -1,0 +1,56 @@
+{
+  "baslik_tr": "Ringg’in AI ajanları OpenAI modelleriyle müşteri aramalarının %65’ini çözüyor",
+  "ozet_tr": "Ringg, OpenAI’nın GPT‑5.6 tabanlı modellerini kullanarak ses ve metin kanallarında müşteri aramalarının %65’ine kadarını insan müdahalesi olmadan yanıtlayabiliyor. Gerçek zamanlı iş yüklerini GPT‑4.1’den GPT‑5.6 Luna’ya taşıyarak model maliyetlerini %90 oranında düşürürken, ortalama müşteri memnuniyeti puanı 4.8 olarak kaydedildi.",
+  "detayli_icerik_tr": "Ringg, Hindistan’daki büyük tüketici işletmelerinin artan çağrı hacmi ve dağınık, manuel sistemlerle mücadele etmesi üzerine, ses, sohbet, WhatsApp ve web kanallarını kapsayan bir kurumsal ajan platformu geliştirdi. Platformun çekirdeğinde GPT‑5.6 Luna, Terra ve Sol gibi OpenAI modelleri bulunuyor; bu modeller, müşteri isteklerini yorumlayıp uygun araçları seçerek poliçe kontrolü, randevu planlama, CRM güncelleme gibi çok adımlı iş akışlarını yönlendiriyor. \n\nModel seçimi, görev gereksinimlerine göre dinamik olarak yapılıyor: gerçek zamanlı ses ve sohbet trafiği çoğunlukla GPT‑4.1 tarafından işlenirken, performans, gecikme ve fiyat‑performans profili daha uygun olduğunda GPT‑5.6 Luna devreye giriyor. Post‑call analizleri, özetleme ve duygu sınıflandırması gibi işlemler ise GPT‑5.6 Terra tarafından yürütülüyor; model‑as‑judge ve prompt iyileştirme süreçleri ise GPT‑5.6 Sol tarafından destekleniyor. \n\nRingg, modelleri üretime almadan önce tarihsel konuşma kayıtları ve simüle edilmiş müşteri akışlarıyla test ediyor. Örneğin, GPT‑5.6 Terra, Gemini 2.5 Flash’a kıyasla bölgesel dillerde %97’ye varan doğruluk sağladı ve özetleme ile duygu analizi görevlerinde yüksek tutarlılık gösterdi. Bu test sonuçları, modelin üretim trafiğine kademeli olarak dahil edilmesini ve performans, gecikme ve uç nokta sağlığı izlenerek otomatik yönlendirme yapılmasını sağlıyor. \n\nMüşteri sonuçları da etkileyici: Ringg’in ajanları, Policybazaar’da %67, Practo’da %85 ve Groww’da %72 oranında rutin sorguları insan müdahalesi olmadan çözüyor. Ortalama yanıt süresi 8‑12 dakikadan 60 saniyeye, hatta üç saniyeye kadar düşerken, operasyonel maliyetlerde %70‑90 arasında azalma kaydedildi. OpenAI’nın bilgisayar‑kullanım yetenekleri sayesinde Ringg, tarayıcı tabanlı ajanlar geliştirerek KYC, IT sorun giderme ve talep yönetimi gibi karmaşık iş akışlarını da otomatikleştiriyor.",
+  "onemli_maddeler": [
+    "Ringg, OpenAI GPT‑5.6 modelleriyle rutin müşteri aramalarının %65’ine kadarını insan müdahalesi olmadan çözüyor.",
+    "GPT‑5.6 Luna’ya geçiş, gerçek zamanlı iş yüklerinde model maliyetlerini yaklaşık %90 azalttı.",
+    "GPT‑5.6 Terra, Gemini 2.5 Flash’a kıyasla bölgesel dillerde %97 doğrulukla özetleme ve duygu analizi sağladı.",
+    "Policybazaar, Practo ve Groww gibi büyük müşterilerde yanıt süresi 88% iyileşirken, operasyonel maliyetlerde %70‑90 tasarruf elde edildi."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Müşteri hizmetleri otomasyonunda maliyet ve performans açısından kritik bir dönüşüm sunması, sektörde geniş çaplı benimsenme potansiyeli taşıması.",
+  "etiketler": [
+    "OpenAI",
+    "Ringg",
+    "AI agents",
+    "müşteri hizmetleri",
+    "GPT-5.6"
+  ],
+  "anilan_modeller": [
+    "GPT-5.6 Luna",
+    "GPT-5.6 Terra",
+    "GPT-5.6 Sol",
+    "GPT-4.1",
+    "Gemini 2.5 Flash"
+  ],
+  "yorum_tr": "Ringg’in OpenAI modelleriyle elde ettiği maliyet ve verimlilik artışı, büyük ölçekli çağrı merkezleri için yeni bir standart oluşturabilir; geliştiriciler daha düşük gecikmeli ve ekonomik çözümler sunarken, kullanıcılar daha hızlı ve tutarlı hizmet deneyimi yaşayacak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GPT-5.6 Terra",
+      "benchmark": "Bölgesel dil doğruluğu (özetleme ve duygu analizi)",
+      "skor": 97,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "GPT‑5.6 Terra outperformed Gemini 2.5 Flash, with up to 97% accuracy on common regional languages"
+    },
+    {
+      "model": "GPT-5.6 Luna",
+      "benchmark": "Model maliyet indirimi (GPT‑4.1'den geçiş)",
+      "skor": 90,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Migrating certain real-time workloads from GPT‑4.1 to GPT‑5.6 Luna reduced model costs by approximately 90%"
+    }
+  ],
+  "gorsel_url": "https://images.ctfassets.net/kftzwdyauwt9/6bRPKvsny2bwgyOeg0Pedd/5dd852a286ea92589a5d420b21302a0c/square.png?w=3840&q=90&fm=webp",
+  "url": "https://openai.com/index/ringg",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-09-23T12:00:00.000Z",
+  "slug": "ringg-s-ai-agents-resolve-up-to-65-of-customer-calls-with-op"
+}

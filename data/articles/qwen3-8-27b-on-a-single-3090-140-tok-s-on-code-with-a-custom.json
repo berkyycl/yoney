@@ -1,0 +1,71 @@
+{
+  "baslik_tr": "Tek RTX 3090 Üzerinde Özel Megakernel ile Qwen3.8-27B İçin Saniyede 140 Token Hıza Ulaşıldı",
+  "ozet_tr": "Açık kaynak yapay zekâ topluluğunda geliştirilen özel bir CUDA megakernel çözümü, Qwen3.8-27B modelini tek bir NVIDIA RTX 3090 üzerinde saniyede 140 token hızla çalıştırmayı başardı. Claude Opus yardımıyla optimize edilen bu mimari, popüler çıkarım motoru llama.cpp'ye kıyasla görev türüne göre 1,4 ila 1,9 kat daha yüksek performans sergiliyor.",
+  "detayli_icerik_tr": "Yerel dil modelleri dünyasında donanım sınırlarını zorlayan heyecan verici bir gelişme yaşandı. Reddit'in LocalLLaMA topluluğunda paylaşılan çalışmaya göre, bağımsız bir geliştirici Claude Opus modelini kodlama asistanı olarak kullanarak özel bir CUDA megakernel tasarladı. Tek bir tüketici sınıfı NVIDIA RTX 3090 ekran kartı üzerinde çalıştırılan Qwen3.8-27B (Unsloth Q4_K_M kuantizasyonu) modeli, llama.cpp'nin MTP (Multi-Token Prediction) destekli mevcut altyapısına kıyasla kayda değer bir hız artışı elde etti.\n\nElde edilen performans artışının ardındaki temel mekanizma, tahmine dayalı kod çözme (speculative decoding) döngüsünün tamamını tek bir kernel çağrısında (kernel launch) yürütmeye dayanıyor. Bu sayede taslak olarak üretilen 4-5 token'ın doğrulanması maliyeti, tek bir token'ı kontrol etme seviyesine indirgeniyor ve bellek darboğazı önemli ölçüde aşılıyor. Testlerde kod üretimi sırasında saniyede 140 token hız yakalanırken, 4K token bağlam uzunluğunda bu değer 95 tok/s, prompt işleme (prefill) aşamasında ise yaklaşık 1.600 tok/s seviyesine ulaştı.\n\nÇözüm, geliştiricilerin mevcut iş akışlarına kolayca entegre olabilmesi adına OpenAI uyumlu bir API sunucusu olarak yapılandırıldı ve llama.cpp sunucusunun doğrudan yerine geçebilecek şekilde uyarlandı. KV önbelleği ise yaklaşık 80 bin bağlam uzunluğuna kadar FP16 formatında tutuluyor, bu sınır aşıldığında ise otomatik olarak Q8 formatına sıkıştırılarak bellek yönetimi optimize ediliyor.\n\nSistemin bazı kısıtlamaları da bulunuyor; özel optimize edilen megakernel şu aşamada yalnızca RTX 3090 donanımı ve Unsloth Q4_K_M kuantize modeli için özel olarak tasarlanmış durumda. Çıktı doğruluğu nadir yuvarlama farkları haricinde llama.cpp ile birebir uyuşan bu çalışma, LLM'lerin ileri düzey düşük seviye optimizasyonları ve özel CUDA çekirdekleri yazmadaki potansiyelini bir kez daha kanıtlıyor.",
+  "onemli_maddeler": [
+    "Qwen3.8-27B modeli tek bir RTX 3090 GPU üzerinde kod üretiminde saniyede 140 token çıkarım hızına ulaştı.",
+    "Özel CUDA megakernel mimarisi, speculative decoding döngüsünü tek kernel çağrısında çalıştırarak llama.cpp'ye göre 1,4x ila 1,9x hız artışı sağladı.",
+    "Çözüm, llama-server yerine doğrudan kullanılabilecek OpenAI uyumlu bir yerel API sunucusu olarak yapılandırıldı.",
+    "KV önbellek yönetimi ~80k bağlama kadar FP16, daha uzun bağlamlarda ise Q8 formatında dinamik olarak optimize ediliyor."
+  ],
+  "kategori": "diger",
+  "onem": 3,
+  "onem_gerekce": "Tüketici sınıfı GPU'larda 27B parametreli modellerin çıkarım hızını iki katına yaklaştıran özel CUDA optimizasyonlarının, donanım sınırlarını nasıl aşabileceğini gösteren önemli bir topluluk başarısıdır.",
+  "etiketler": [
+    "Qwen",
+    "RTX 3090",
+    "CUDA",
+    "megakernel",
+    "llama.cpp"
+  ],
+  "anilan_modeller": [
+    "Qwen3.8-27B",
+    "Claude Opus"
+  ],
+  "yorum_tr": "Gelişmiş modellerin (Claude gibi) yine açık kaynak modelleri hızlandırmak üzere düşük seviye GPU çekirdekleri (CUDA megakernel) yazması, yazılım mühendisliğinde yeni bir döneme işaret ediyor. Tek bir tüketici kartında 27B modelin 140 tok/s hızlara çıkabilmesi, yerel kod asistanlarının ticari bulut API'leriyle gecikme ve hız açısından doğrudan rekabet edebileceğini gösteriyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen3.8-27B (Megakernel)",
+      "benchmark": "Kod Üretim Hızı (Inference Speed)",
+      "skor": 140,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Tek RTX 3090, Unsloth Q4_K_M",
+      "kaynak_metinden_alinti": "Writing code: 140 tok/s vs 73 (1.9x faster)"
+    },
+    {
+      "model": "Qwen3.8-27B (llama.cpp MTP)",
+      "benchmark": "Kod Üretim Hızı (Inference Speed)",
+      "skor": 73,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Tek RTX 3090, llama.cpp with MTP",
+      "kaynak_metinden_alinti": "Writing code: 140 tok/s vs 73 (1.9x faster)"
+    },
+    {
+      "model": "Qwen3.8-27B (Megakernel)",
+      "benchmark": "4K Bağlam Altında Kodlama Hızı",
+      "skor": 95,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Tek RTX 3090, 4K token bağlam",
+      "kaynak_metinden_alinti": "Coding with a 4K-token file in context: 95 tok/s vs 56 (1.7x faster)"
+    },
+    {
+      "model": "Qwen3.8-27B (llama.cpp MTP)",
+      "benchmark": "4K Bağlam Altında Kodlama Hızı",
+      "skor": 56,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Tek RTX 3090, 4K token bağlam",
+      "kaynak_metinden_alinti": "Coding with a 4K-token file in context: 95 tok/s vs 56 (1.7x faster)"
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/qwen3-8-27b-on-a-single-3090-140-tok-s-on-code-with-a-v0-pvbsgfyrmnuh1.png?width=724&format=png&auto=webp&s=26b4f50322f45402a86a1bd66bc0f9feea03f921",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x2erdj/qwen3827b_on_a_single_3090_140_toks_on_code_with/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-10T13:01:23.000Z",
+  "slug": "qwen3-8-27b-on-a-single-3090-140-tok-s-on-code-with-a-custom"
+}

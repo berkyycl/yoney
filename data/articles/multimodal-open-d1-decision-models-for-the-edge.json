@@ -1,0 +1,40 @@
+{
+  "baslik_tr": "Liquid AI'dan Uç Cihazlar İçin Açık Karar Modelleri: d1-3B ve d1-omni-600M",
+  "ozet_tr": "Liquid AI, uç cihazlarda (edge) yüksek hızlı ve çok modlu yapılandırılmış karar almayı sağlayan açık ağırlıklı d1-3B ve d1-omni-600M modellerini duyurdu. Geleneksel üretici modeller gibi token üretmek yerine tek bir ileri geçişte (forward pass) yanıt veren modeller, 10B altı kategoride en yüksek karar alma başarısını sunuyor.",
+  "detayli_icerik_tr": "Liquid AI, Liquid Foundation Models (LFM) mimarisi üzerine inşa edilen yeni açık karar modelleri ailesi 'd1'i tanıttı. Tanıtılan d1-3B ve deneysel aşamadaki d1-omni-600M modelleri, metin üretimi yerine sınıflandırma, rota belirleme ve niyet tespiti gibi yapılandırılmış kararlar için özel olarak optimize edildi. d1-3B modeli, Decision Index 0.2.1 testinde 48.57 puan alarak 10 milyar parametrenin altındaki tüm modelleri ve hatta 35 milyar parametreli Decider 35B-A3B modelini geride bırakmayı başardı.\n\nİki model mimari açıdan farklı temellere dayanıyor. d1-3B modeli, yalnızca kod çözücü (decoder-only) mimariye sahip LFM2.5-VL-3B omurgası üzerinde eğitilerek hem metin hem de görsel girdilerini destekliyor. Deneysel aşamadaki d1-omni-600M ise çift yönlü kodlayıcı (bidirectional encoder) olan LFM2.5-Encoder-350M üzerinde eğitilmiş olup görüntü ve ses kodlayıcılarıyla desteklenerek metin, görsel ve ses modalitelerini işleyebiliyor.\n\nNVIDIA ortaklığıyla yürütülen çıkarım (inference) hız testlerinde modeller, uç donanımlarda benzersiz bir performans sergiledi. d1-3B modeli, tek bir soruya NVIDIA Jetson AGX Thor üzerinde 16 milisaniye, Jetson AGX Orin'de 26 milisaniye ve Jetson Orin Nano'da 50 milisaniye gibi ultra düşük gecikmelerle yanıt veriyor. Masaüstü ve sunucu GPU'larında ise NVIDIA RTX 4090 üzerinde 8 ms, AMD MI325X üzerinde 9 ms seviyesine inen çıkarım süreleri dikkat çekiyor.\n\nOkuduğunu anlama, toksisite tespiti, niyet sınıflandırması ve tıbbi soru-cevap gibi yedi farklı kamuya açık veri kümesinde değerlendirilen d1-3B, ortalama 82.9 skor elde ederek Decider 4B modelini geride bıraktı. Yalnızca 600 milyon parametreli d1-omni-600M ise 78.4 puan alarak kendisinin dört katı büyüklüğündeki Decider 2B modelini geride bırakarak hafif modellerin karar alma yeteneklerinde yeni bir standart belirledi.",
+  "onemli_maddeler": [
+    "d1-3B, Decision Index 0.2.1 testinde 48.57 puanla 10B parametre altındaki liderliği ele geçirirken 35B parametreli Decider modelini geride bıraktı.",
+    "Modeller token bazlı metin üretimi yerine tek bir ileri geçişle (single forward pass) yapılandırılmış kararlar veriyor.",
+    "d1-omni-600M metin, görsel ve ses modalitelerini desteklerken, d1-3B metin ve görsel desteği sunuyor.",
+    "NVIDIA Jetson AGX Thor üzerinde 16 ms, RTX 4090 GPU üzerinde ise 8 ms gibi son derece düşük gecikmeli çıkarım süreleri ölçüldü.",
+    "Açık ağırlıklı olarak Hugging Face üzerinden sunulan modeller transformers kütüphanesiyle doğrudan kullanılabiliyor."
+  ],
+  "kategori": "diger",
+  "onem": 3,
+  "onem_gerekce": "Uç bilişim (edge AI) sistemleri için görsel, işitsel ve metinsel veriyi ultra düşük gecikmeyle işleyen ve üretici modellerin hantallığını aşan yeni nesil karar modelleri kategorisinde önemli bir açık kaynak inovasyonunu temsil ediyor.",
+  "etiketler": [
+    "Liquid AI",
+    "d1-3B",
+    "d1-omni-600M",
+    "Edge AI",
+    "Jetson"
+  ],
+  "anilan_modeller": [
+    "d1-3B",
+    "d1-omni-600M",
+    "Decider 2B",
+    "Decider 4B",
+    "Decider 35B-A3B",
+    "LFM2.5-VL-3B",
+    "LFM2.5-Encoder-350M"
+  ],
+  "yorum_tr": null,
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://cdn-uploads.huggingface.co/production/uploads/644249b08443bce4c9890a0f/hLsllw4zhC04cVGiV69v0.png",
+  "url": "https://huggingface.co/blog/LiquidAI/open-d1",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-10-07T16:54:33.000Z",
+  "slug": "multimodal-open-d1-decision-models-for-the-edge"
+}

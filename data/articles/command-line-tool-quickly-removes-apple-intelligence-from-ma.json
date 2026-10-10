@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "RemoveMacAI: Komut satırı aracıyla macOS 27'de Apple Intelligence'ı tek tıkla kaldırın",
+  "ozet_tr": "macOS 27 Golden Gate sürümünde Apple Intelligence özelliğini kapatmak için yerleşik bir seçenek bulunmuyor. GitHub geliştiricisi Om Lahore, bu eksikliği gidermek amacıyla RemoveMacAI adlı açık kaynaklı bir komut satırı aracı yayınladı ve kullanıcıların AI modellerini tamamen kaldırıp gerektiğinde geri yüklemelerine olanak tanıyor.",
+  "detayli_icerik_tr": "Apple, macOS 27'de AI odaklı özelliklerini bir bütün olarak sunarken, kullanıcıların bu bileşenleri tek tek devre dışı bırakmasını zorlaştırdı; Siri, Writing Tools, Genmoji, Image Playground ve hatta ChatGPT uzantısı gibi hizmetler hâlâ sistemde yer kaplıyor ve otomatik olarak güncelleniyor. Bu durum, özellikle depolama alanı sınırlı olan kullanıcılar için 12 GB ila 30 GB arasında değişen bir disk kullanımına yol açıyor.\n\nGitHub'ta Om Lahore takma adıyla tanınan geliştirici, geçen hafta RemoveMacAI adlı bir komut satırı aracı geliştirdi. Araç, bir sistem yapılandırma profili oluşturup Apple'ın varlık hizmetiyle etkileşime girerek, System Integrity Protection (SIP) korumasını bozmadan AI modellerini siliyor ve ilgili hizmetleri devre dışı bırakıyor. Kullanıcılar, \"removemacai revert\" komutuyla profili kaldırarak modelleri yeniden indirme seçeneğine de sahip oluyor.\n\nAraç, sadece tüm Apple Intelligence özelliklerini kapatmakla kalmıyor; aynı zamanda kullanıcıların istedikleri bileşenleri seçerek sadece belirli AI hizmetlerini devre dışı bırakmalarına da izin veriyor. Reddit ve MacRumors topluluklarında yapılan paylaşımlara göre, araç sorunsuz çalışıyor ve GitHub'da 1.700'den fazla yıldız almış durumda. Bu durum, Apple'ın AI entegrasyonuna yönelik stratejisine rağmen bir kesimin bu özelliklerden kaçınma isteğini açıkça gösteriyor.\n\nRemoveMacAI'nin ortaya çıkışı, macOS ekosisteminde uzun süredir var olan \"cruft\" temizleme ihtiyacının yeni bir yansıması olarak değerlendiriliyor. Hacker News'ten bir kullanıcı, bu durumu Windows'ta sıkça yapılan sistem temizliğiyle karşılaştırarak, macOS'un da benzer bir üçüncü taraf script ihtiyacına ulaştığını belirtti. Sonuç olarak, RemoveMacAI, Apple Intelligence'ın zorunlu bir parça haline geldiği bir ortamda, kullanıcıların kontrolü yeniden ele almasını sağlayan pratik bir çözüm sunuyor.",
+  "onemli_maddeler": [
+    "RemoveMacAI, macOS 27'de Apple Intelligence'ı tek komutla devre dışı bırakıp geri alınabilir bir şekilde kaldırıyor.",
+    "Araç, System Integrity Protection'ı bozmadan bir yapılandırma profili aracılığıyla çalışıyor ve /System klasörüne doğrudan müdahale etmiyor.",
+    "Apple Intelligence modelleri 12 GB ile 30 GB arasında depolama alanı tüketirken, RemoveMacAI bu alanı serbest bırakıyor.",
+    "GitHub'da 1.700'den fazla yıldız almış olan araç, açık kaynaklı ve topluluk tarafından test edilmiş durumda."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Kullanıcıların sistem kaynaklarını kontrol etmesi ve istenmeyen AI modellerini kaldırması, macOS ekosisteminde önemli bir özgürlük ve performans etkisi yaratıyor.",
+  "etiketler": [
+    "macOS 27",
+    "Apple Intelligence",
+    "RemoveMacAI",
+    "komut satırı",
+    "AI modelleri"
+  ],
+  "anilan_modeller": [
+    "Apple Intelligence"
+  ],
+  "yorum_tr": "RemoveMacAI, Apple'ın AI entegrasyonunu zorunlu kıldığı bir ortamda kullanıcıların kontrolünü yeniden kazanmalarını sağlıyor; geliştiriciler için açık kaynaklı bir çözüm sunarken, son kullanıcılar depolama ve gizlilik açısından fayda elde ediyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/03/Screenshot-2026-03-03-at-10.30.27-AM-1152x648.jpeg",
+  "url": "https://arstechnica.com/apple/2026/10/command-line-tool-quickly-removes-apple-intelligence-from-macos-27/",
+  "source": "Ars Technica AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-05T19:14:44.000Z",
+  "slug": "command-line-tool-quickly-removes-apple-intelligence-from-ma"
+}
