@@ -7,7 +7,7 @@ const ai = new GoogleGenAI({});
 
 export class GeminiProvider implements LLMProvider {
   async analyzeArticle(input: ArticleInput): Promise<AnalysisResult> {
-    const model = process.env.GEMINI_MODEL || "gemini-1.5-flash";
+    const model = process.env.GEMINI_MODEL || "gemini-2.5-flash";
     const prompt = `
 Aşağıdaki haberi analiz et:
 Başlık: ${input.title}
