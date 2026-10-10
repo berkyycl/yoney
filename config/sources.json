@@ -86,5 +86,21 @@
     "url": "https://lmarena.ai",
     "tier": "bagimsiz",
     "enabled": true
+  },
+  {
+    "id": "swe-bench-official",
+    "name": "SWE-bench Official Leaderboard",
+    "type": "benchmark_api",
+    "url": "https://www.swebench.com",
+    "tier": "bagimsiz",
+    "enabled": true
+  },
+  {
+    "id": "hf-open-llm-leaderboard",
+    "name": "Hugging Face Open LLM Leaderboard v2",
+    "type": "benchmark_api",
+    "url": "https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard",
+    "tier": "bagimsiz",
+    "enabled": true
   }
 ]
