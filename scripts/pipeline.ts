@@ -82,9 +82,14 @@ export async function runPipeline(isMock = false) {
         console.log(`Fetching ${source.name}...`);
         try {
             const items = isMock ? [] : await fetchRSS(source.url);
+            const twoWeeksAgo = new Date(Date.now() - 14 * 24 * 60 * 60 * 1000);
             for (const item of items) {
                 if (seen.includes(item.link)) continue;
                 
+                // Only consider items within the last 14 days if date is present
+                const itemDate = item.pubdate || item.date ? new Date(item.pubdate || item.date) : new Date();
+                if (itemDate < twoWeeksAgo) continue;
+
                 const text = cleanHTML(item.description || "");
                 if (!containsKeywords(text) && !containsKeywords(item.title)) {
                     continue; // skip irrelevant

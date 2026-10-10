@@ -1,19 +1,11 @@
 [
   {
-    "id": "openai-blog",
-    "name": "OpenAI Blog",
+    "id": "openai-news",
+    "name": "OpenAI",
     "type": "rss",
-    "url": "https://openai.com/blog/rss.xml",
+    "url": "https://openai.com/news/rss.xml",
     "tier": "resmi",
-    "enabled": false
-  },
-  {
-    "id": "anthropic-news",
-    "name": "Anthropic News",
-    "type": "rss",
-    "url": "https://www.anthropic.com/feed.xml",
-    "tier": "resmi",
-    "enabled": false
+    "enabled": true
   },
   {
     "id": "google-deepmind",
@@ -21,35 +13,43 @@
     "type": "rss",
     "url": "https://deepmind.google/blog/rss.xml",
     "tier": "resmi",
-    "enabled": false
-  },
-  {
-    "id": "meta-ai",
-    "name": "Meta AI",
-    "type": "rss",
-    "url": "https://ai.meta.com/blog/rss/",
-    "tier": "resmi",
-    "enabled": false
+    "enabled": true
   },
   {
     "id": "huggingface-blog",
-    "name": "Hugging Face Blog",
+    "name": "Hugging Face",
     "type": "rss",
     "url": "https://huggingface.co/blog/feed.xml",
     "tier": "resmi",
-    "enabled": false
+    "enabled": true
   },
   {
-    "id": "artificial-analysis",
-    "name": "Artificial Analysis",
+    "id": "techcrunch-ai",
+    "name": "TechCrunch AI",
     "type": "rss",
-    "url": "https://artificialanalysis.ai/rss.xml",
+    "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
     "tier": "bagimsiz",
-    "enabled": false
+    "enabled": true
+  },
+  {
+    "id": "the-verge-ai",
+    "name": "The Verge AI",
+    "type": "rss",
+    "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
+    "tier": "bagimsiz",
+    "enabled": true
+  },
+  {
+    "id": "ars-technica-ai",
+    "name": "Ars Technica AI",
+    "type": "rss",
+    "url": "https://arstechnica.com/tag/ai/feed/",
+    "tier": "bagimsiz",
+    "enabled": true
   },
   {
     "id": "reddit-localllama",
-    "name": "Reddit LocalLLaMA",
+    "name": "Reddit LocalLLaMA (Topluluk & Benchmark)",
     "type": "rss",
     "url": "https://www.reddit.com/r/LocalLLaMA.rss",
     "tier": "topluluk",
