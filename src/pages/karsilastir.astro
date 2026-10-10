@@ -18,7 +18,7 @@ const models = Array.from(new Set(benchmarks.map(b => b.model))).sort();
 		<div class="header-section">
 			<span class="badge">Kafa Kafaya Karşılaştırma</span>
 			<h1>Modelleri Karşılaştır</h1>
-			<p class="subtitle">İki yapay zekâ modelini doğrulanmış benchmark testlerine, skor farklarına ve kaynaklarına göre kafa kafaya kıyaslayın.</p>
+			<p class="subtitle">İki yapay zekâ modelini benchmark testlerine göre animasyonlu sütun grafiklerle kıyaslayın.</p>
 		</div>
 
 		{models.length < 2 ? (
@@ -27,44 +27,70 @@ const models = Array.from(new Set(benchmarks.map(b => b.model))).sort();
 			</div>
 		) : (
 			<div class="comparison-tool">
+				<!-- Model Seçiciler -->
 				<div class="selectors-card">
-					<div class="select-group">
-						<label for="modelA">1. Model:</label>
-						<select id="modelA">
-							{models.map((m, idx) => (
-								<option value={m} selected={m === 'GPT-4o' || (m !== 'Claude 3.5 Sonnet' && idx === 0)}>{m}</option>
-							))}
-						</select>
+					<div class="select-group group-a">
+						<div class="legend-indicator dot-a"></div>
+						<div class="select-wrapper">
+							<label for="modelA">1. Model:</label>
+							<select id="modelA">
+								{models.map((m, idx) => (
+									<option value={m} selected={m === 'GPT-4o' || (m !== 'Claude 3.5 Sonnet' && idx === 0)}>{m}</option>
+								))}
+							</select>
+						</div>
 					</div>
 
 					<div class="vs-circle">VS</div>
 
-					<div class="select-group">
-						<label for="modelB">2. Model:</label>
-						<select id="modelB">
-							{models.map((m, idx) => (
-								<option value={m} selected={m === 'Claude 3.5 Sonnet' || (m !== 'GPT-4o' && idx === 1)}>{m}</option>
-							))}
-						</select>
+					<div class="select-group group-b">
+						<div class="legend-indicator dot-b"></div>
+						<div class="select-wrapper">
+							<label for="modelB">2. Model:</label>
+							<select id="modelB">
+								{models.map((m, idx) => (
+									<option value={m} selected={m === 'Claude 3.5 Sonnet' || (m !== 'GPT-4o' && idx === 1)}>{m}</option>
+								))}
+							</select>
+						</div>
 					</div>
 				</div>
 
+				<!-- Skor & İstatistik Kartları -->
 				<div class="stats-summary" id="statsSummary"></div>
 
-				<div class="results-table-container">
-					<table id="compareTable">
-						<thead>
-							<tr>
-								<th>Benchmark / Metrik</th>
-								<th id="thModelA">Model A</th>
-								<th id="thModelB">Model B</th>
-								<th>Skor Farkı</th>
-								<th>Açıklama / Durum</th>
-							</tr>
-						</thead>
-						<tbody id="compareBody">
-						</tbody>
-					</table>
+				<!-- Animasyonlu Sütun Grafik Kartları -->
+				<div class="charts-section">
+					<div class="section-title-row">
+						<h2>📊 Kategori Bazlı Karşılaştırma Grafikleri</h2>
+						<span class="chart-hint">Değerler dinamik sütun animasyonu ile ölçeklenir</span>
+					</div>
+
+					<div class="charts-grid" id="chartsGrid">
+						<!-- JS ile her test için yan yana 2 dikey sütun üretilecek -->
+					</div>
+				</div>
+
+				<!-- Detay Özeti Tablosu -->
+				<div class="table-card">
+					<div class="table-header">
+						<h3>Detaylı Karşılaştırma Tablosu</h3>
+					</div>
+					<div class="results-table-container">
+						<table id="compareTable">
+							<thead>
+								<tr>
+									<th>Benchmark / Metrik</th>
+									<th id="thModelA">Model A</th>
+									<th id="thModelB">Model B</th>
+									<th>Skor Farkı</th>
+									<th>Kazanan</th>
+								</tr>
+							</thead>
+							<tbody id="compareBody">
+							</tbody>
+						</table>
+					</div>
 				</div>
 			</div>
 		)}
@@ -82,8 +108,10 @@ const models = Array.from(new Set(benchmarks.map(b => b.model))).sort();
 		const modelA = selA.value;
 		const modelB = selB.value;
 
-		document.getElementById('thModelA').textContent = modelA;
-		document.getElementById('thModelB').textContent = modelB;
+		const thA = document.getElementById('thModelA');
+		const thB = document.getElementById('thModelB');
+		if (thA) thA.textContent = modelA;
+		if (thB) thB.textContent = modelB;
 
 		const benchmarksA = allBenchmarks.filter(b => b.model === modelA);
 		const benchmarksB = allBenchmarks.filter(b => b.model === modelB);
@@ -94,91 +122,144 @@ const models = Array.from(new Set(benchmarks.map(b => b.model))).sort();
 			...benchmarksB.map(b => b.benchmark)
 		])).sort();
 
+		const chartsGrid = document.getElementById('chartsGrid');
 		const tbody = document.getElementById('compareBody');
 		const statsSummary = document.getElementById('statsSummary');
-		tbody.innerHTML = '';
+
+		if (chartsGrid) chartsGrid.innerHTML = '';
+		if (tbody) tbody.innerHTML = '';
 
 		let winsA = 0;
 		let winsB = 0;
 		let commonCount = 0;
 
-		testNames.forEach(test => {
+		testNames.forEach((test, idx) => {
 			const itemA = benchmarksA.find(b => b.benchmark === test);
 			const itemB = benchmarksB.find(b => b.benchmark === test);
 
-			const tr = document.createElement('tr');
-			const tdName = document.createElement('td');
-			tdName.innerHTML = `<strong>${test}</strong>`;
+			const valA = itemA ? itemA.skor : null;
+			const valB = itemB ? itemB.skor : null;
+			const unit = (itemA && itemA.birim) || (itemB && itemB.birim) || '';
+			const higherIsBetter = (itemA && itemA.yuksek_iyi_mi !== false) && (itemB && itemB.yuksek_iyi_mi !== false);
 
-			const tdA = document.createElement('td');
-			tdA.className = 'tabular';
-			tdA.textContent = itemA ? `${itemA.skor} ${itemA.birim}` : 'Veri yok';
+			// Determine max for column chart scaling
+			const maxScore = Math.max(valA || 0, valB || 0, 1);
+			const heightA = valA !== null ? Math.max(14, (valA / maxScore) * 100) : 0;
+			const heightB = valB !== null ? Math.max(14, (valB / maxScore) * 100) : 0;
 
-			const tdB = document.createElement('td');
-			tdB.className = 'tabular';
-			tdB.textContent = itemB ? `${itemB.skor} ${itemB.birim}` : 'Veri yok';
+			let winner = 'none';
+			let diffText = '-';
 
-			const tdDiff = document.createElement('td');
-			tdDiff.className = 'tabular';
-
-			const tdStatus = document.createElement('td');
-			tdStatus.className = 'status-cell';
-
-			if (itemA && itemB) {
+			if (valA !== null && valB !== null) {
 				commonCount++;
-				const higherIsBetter = itemA.yuksek_iyi_mi !== false;
-				const diffVal = Number((itemA.skor - itemB.skor).toFixed(2));
-				
-				if (diffVal === 0) {
-					tdDiff.textContent = 'Eşit (0)';
-					tdStatus.innerHTML = '<span class="pill-tie">Berabere</span>';
-				} else {
+				const diffVal = Number((valA - valB).toFixed(2));
+				if (diffVal !== 0) {
 					const isAWinner = higherIsBetter ? diffVal > 0 : diffVal < 0;
-					const formattedDiff = Math.abs(diffVal) + ` ${itemA.birim}`;
-					
-					if (isAWinner) {
-						winsA++;
-						tdDiff.innerHTML = `<span class="win-a">+${formattedDiff} (${modelA})</span>`;
-						tdStatus.innerHTML = `<span class="pill-a">${modelA} Önde</span>`;
-					} else {
-						winsB++;
-						tdDiff.innerHTML = `<span class="win-b">+${formattedDiff} (${modelB})</span>`;
-						tdStatus.innerHTML = `<span class="pill-b">${modelB} Önde</span>`;
-					}
+					winner = isAWinner ? 'a' : 'b';
+					if (isAWinner) winsA++; else winsB++;
+					diffText = `+${Math.abs(diffVal)} ${unit} (${isAWinner ? modelA : modelB})`;
+				} else {
+					diffText = `Eşit (0 ${unit})`;
+					winner = 'tie';
 				}
-			} else {
-				tdDiff.textContent = '-';
-				tdStatus.innerHTML = `<span class="pill-na">Ortak test yok</span>`;
 			}
 
-			tr.appendChild(tdName);
-			tr.appendChild(tdA);
-			tr.appendChild(tdB);
-			tr.appendChild(tdDiff);
-			tr.appendChild(tdStatus);
-			tbody.appendChild(tr);
+			// 1. Sütun Grafik Kartı Ekle
+			if (chartsGrid) {
+				const card = document.createElement('div');
+				card.className = `chart-card ${winner === 'a' ? 'winner-a' : winner === 'b' ? 'winner-b' : ''}`;
+				card.style.animationDelay = `${idx * 0.08}s`;
+
+				card.innerHTML = `
+					<div class="card-head">
+						<span class="test-title">${test}</span>
+						<span class="test-unit">${unit ? `Birim: ${unit}` : ''}</span>
+					</div>
+
+					<div class="bars-container">
+						<!-- Model A Sütunu -->
+						<div class="column-group">
+							<div class="column-value col-val-a">${valA !== null ? `${valA} ${unit}` : 'Veri yok'}</div>
+							<div class="column-track">
+								<div class="column-bar bar-a ${winner === 'a' ? 'winner-bar' : ''}" style="height: 0%;" data-height="${heightA}%">
+									${winner === 'a' ? '<span class="crown-icon">👑</span>' : ''}
+								</div>
+							</div>
+							<span class="column-label">${modelA}</span>
+						</div>
+
+						<!-- Model B Sütunu -->
+						<div class="column-group">
+							<div class="column-value col-val-b">${valB !== null ? `${valB} ${unit}` : 'Veri yok'}</div>
+							<div class="column-track">
+								<div class="column-bar bar-b ${winner === 'b' ? 'winner-bar' : ''}" style="height: 0%;" data-height="${heightB}%">
+									${winner === 'b' ? '<span class="crown-icon">👑</span>' : ''}
+								</div>
+							</div>
+							<span class="column-label">${modelB}</span>
+						</div>
+					</div>
+
+					<div class="card-foot">
+						${winner === 'a' ? `<span class="verdict verd-a">🏆 ${modelA} %${(((valA - valB) / (valB || 1)) * 100).toFixed(1)} önde</span>` :
+						  winner === 'b' ? `<span class="verdict verd-b">🏆 ${modelB} %${(((valB - valA) / (valA || 1)) * 100).toFixed(1)} önde</span>` :
+						  winner === 'tie' ? '<span class="verdict verd-tie">🤝 Skorlar Eşit</span>' :
+						  '<span class="verdict verd-na">Karşılaştırma için ortak veri yok</span>'}
+					</div>
+				`;
+				chartsGrid.appendChild(card);
+			}
+
+			// 2. Tablo Satırı Ekle
+			if (tbody) {
+				const tr = document.createElement('tr');
+				tr.innerHTML = `
+					<td><strong>${test}</strong></td>
+					<td class="tabular col-val-a">${valA !== null ? `${valA} ${unit}` : '-'}</td>
+					<td class="tabular col-val-b">${valB !== null ? `${valB} ${unit}` : '-'}</td>
+					<td class="tabular">${diffText}</td>
+					<td>
+						${winner === 'a' ? `<span class="pill-a">${modelA}</span>` :
+						  winner === 'b' ? `<span class="pill-b">${modelB}</span>` :
+						  winner === 'tie' ? '<span class="pill-tie">Berabere</span>' :
+						  '<span class="pill-na">-</span>'}
+					</td>
+				`;
+				tbody.appendChild(tr);
+			}
 		});
 
+		// Animasyon: Sütun boylarını tetikle
+		setTimeout(() => {
+			document.querySelectorAll('.column-bar').forEach(bar => {
+				const targetHeight = bar.getAttribute('data-height');
+				if (targetHeight) {
+					bar.style.height = targetHeight;
+				}
+			});
+		}, 80);
+
+		// Özet istatistik kartları
 		if (statsSummary) {
 			if (commonCount > 0) {
 				statsSummary.innerHTML = `
 					<div class="stat-box">
-						<span class="stat-label">Ortak Metrikler</span>
-						<span class="stat-value">${commonCount} Test</span>
+						<span class="stat-label">Karşılaştırılan Test</span>
+						<span class="stat-value">${commonCount} Kategori</span>
 					</div>
-					<div class="stat-box">
-						<span class="stat-label">${modelA}</span>
-						<span class="stat-value stat-lead">${winsA} Kazanma</span>
+					<div class="stat-box stat-card-a">
+						<span class="stat-label">${modelA} Üstünlüğü</span>
+						<span class="stat-value val-a">${winsA} Testte Önde</span>
 					</div>
-					<div class="stat-box">
-						<span class="stat-label">${modelB}</span>
-						<span class="stat-value stat-lead">${winsB} Kazanma</span>
+					<div class="stat-box stat-card-b">
+						<span class="stat-label">${modelB} Üstünlüğü</span>
+						<span class="stat-value val-b">${winsB} Testte Önde</span>
 					</div>
 				`;
 			} else {
 				statsSummary.innerHTML = `
 					<div class="stat-notice">
-						Bu iki model arasında henüz aynı test parametresinde ortak metrik bulunmuyor. Diğer modelleri seçerek kıyaslayabilirsiniz.
+						Seçili iki model arasında henüz aynı test formatında doğrudan ortak metrik bulunmuyor. Farklı modeller seçerek kıyaslayabilirsiniz.
 					</div>
 				`;
 			}
@@ -208,7 +289,7 @@ const models = Array.from(new Set(benchmarks.map(b => b.model))).sort();
 
 <style>
 	.compare-page {
-		max-width: 1000px;
+		max-width: 1100px;
 		margin: 0 auto;
 	}
 
@@ -238,6 +319,7 @@ const models = Array.from(new Set(benchmarks.map(b => b.model))).sort();
 		line-height: 1.6;
 	}
 
+	/* Model Seçiciler */
 	.selectors-card {
 		display: flex;
 		align-items: center;
@@ -247,20 +329,44 @@ const models = Array.from(new Set(benchmarks.map(b => b.model))).sort();
 		padding: 2rem;
 		background: #ffffff;
 		border: 1px solid var(--border-color);
-		box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+		box-shadow: 0 4px 16px rgba(0,0,0,0.03);
 	}
 
 	.select-group {
 		display: flex;
-		flex-direction: column;
-		gap: 0.6rem;
+		align-items: center;
+		gap: 1rem;
 		flex: 1;
-		max-width: 380px;
+		max-width: 420px;
 	}
 
-	.select-group label {
+	.legend-indicator {
+		width: 14px;
+		height: 14px;
+		border-radius: 50%;
+		flex-shrink: 0;
+	}
+
+	.dot-a {
+		background: #2563eb;
+		box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
+	}
+
+	.dot-b {
+		background: #059669;
+		box-shadow: 0 0 0 4px rgba(5, 150, 105, 0.15);
+	}
+
+	.select-wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: 0.4rem;
+		width: 100%;
+	}
+
+	.select-wrapper label {
 		font-family: var(--font-mono);
-		font-size: 0.85rem;
+		font-size: 0.8rem;
 		text-transform: uppercase;
 		font-weight: 600;
 	}
@@ -274,39 +380,47 @@ const models = Array.from(new Set(benchmarks.map(b => b.model))).sort();
 		color: var(--text-color);
 		border-radius: 4px;
 		cursor: pointer;
-		font-weight: 500;
+		font-weight: 600;
+		outline: none;
+		transition: border-color 0.2s;
+	}
+
+	select:focus {
+		border-color: var(--text-color);
 	}
 
 	.vs-circle {
 		font-family: var(--font-mono);
-		font-weight: 700;
+		font-weight: 800;
 		color: #ffffff;
 		background: var(--accent-color);
-		width: 48px;
-		height: 48px;
+		width: 52px;
+		height: 52px;
 		border-radius: 50%;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		font-size: 1.1rem;
+		font-size: 1.15rem;
 		flex-shrink: 0;
-		box-shadow: 0 2px 6px rgba(194, 54, 31, 0.3);
+		box-shadow: 0 4px 12px rgba(194, 54, 31, 0.3);
 	}
 
+	/* Stats Summary */
 	.stats-summary {
 		display: flex;
 		gap: 1.5rem;
-		margin-bottom: 2rem;
+		margin-bottom: 2.5rem;
 	}
 
 	:global(.stat-box) {
 		flex: 1;
 		background: #ffffff;
 		border: 1px solid var(--border-color);
-		padding: 1.25rem;
+		padding: 1.25rem 1.5rem;
 		display: flex;
 		flex-direction: column;
-		gap: 0.4rem;
+		gap: 0.35rem;
+		box-shadow: 0 2px 6px rgba(0,0,0,0.02);
 	}
 
 	:global(.stat-label) {
@@ -314,30 +428,250 @@ const models = Array.from(new Set(benchmarks.map(b => b.model))).sort();
 		font-size: 0.75rem;
 		text-transform: uppercase;
 		color: var(--secondary-color);
+		letter-spacing: 0.5px;
 	}
 
 	:global(.stat-value) {
-		font-size: 1.4rem;
+		font-size: 1.5rem;
 		font-weight: 700;
 		font-family: var(--font-mono);
 	}
 
-	:global(.stat-lead) {
-		color: var(--accent-color);
+	:global(.val-a) {
+		color: #2563eb;
+	}
+
+	:global(.val-b) {
+		color: #059669;
 	}
 
 	:global(.stat-notice) {
 		width: 100%;
-		padding: 1rem;
-		background: rgba(0,0,0,0.03);
+		padding: 1.25rem;
+		background: #ffffff;
 		border: 1px solid var(--border-color);
 		font-family: var(--font-mono);
 		font-size: 0.9rem;
 	}
 
-	.results-table-container {
+	/* Sütun Grafikler Bölümü */
+	.charts-section {
+		margin-bottom: 3rem;
+	}
+
+	.section-title-row {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		margin-bottom: 1.5rem;
+		padding-bottom: 0.75rem;
+		border-bottom: 1px solid var(--border-color);
+	}
+
+	.section-title-row h2 {
+		font-size: 1.5rem;
+		margin: 0;
+	}
+
+	.chart-hint {
+		font-family: var(--font-mono);
+		font-size: 0.8rem;
+		color: var(--secondary-color);
+	}
+
+	.charts-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+		gap: 1.5rem;
+	}
+
+	:global(.chart-card) {
 		background: #ffffff;
 		border: 1px solid var(--border-color);
+		padding: 1.5rem;
+		display: flex;
+		flex-direction: column;
+		border-radius: 4px;
+		box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+		animation: fadeInCard 0.4s ease forwards;
+		transition: transform 0.2s, box-shadow 0.2s;
+	}
+
+	:global(.chart-card:hover) {
+		transform: translateY(-2px);
+		box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+	}
+
+	:global(.chart-card.winner-a) {
+		border-top: 4px solid #2563eb;
+	}
+
+	:global(.chart-card.winner-b) {
+		border-top: 4px solid #059669;
+	}
+
+	:global(.card-head) {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		margin-bottom: 1.5rem;
+		min-height: 40px;
+	}
+
+	:global(.test-title) {
+		font-weight: 700;
+		font-size: 1.05rem;
+		color: var(--text-color);
+	}
+
+	:global(.test-unit) {
+		font-family: var(--font-mono);
+		font-size: 0.75rem;
+		color: #888;
+		background: rgba(0,0,0,0.04);
+		padding: 0.2rem 0.5rem;
+		border-radius: 3px;
+		white-space: nowrap;
+	}
+
+	/* Sütun Tasarımı & Animasyon */
+	:global(.bars-container) {
+		display: flex;
+		justify-content: space-around;
+		align-items: flex-end;
+		height: 200px;
+		padding: 0 0.5rem;
+		border-bottom: 2px solid var(--border-color);
+		margin-bottom: 1.25rem;
+	}
+
+	:global(.column-group) {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 42%;
+		height: 100%;
+		justify-content: flex-end;
+	}
+
+	:global(.column-value) {
+		font-family: var(--font-mono);
+		font-size: 0.85rem;
+		font-weight: 700;
+		margin-bottom: 0.4rem;
+	}
+
+	:global(.col-val-a) {
+		color: #2563eb;
+	}
+
+	:global(.col-val-b) {
+		color: #059669;
+	}
+
+	:global(.column-track) {
+		width: 48px;
+		height: 140px;
+		display: flex;
+		align-items: flex-end;
+		justify-content: center;
+		position: relative;
+	}
+
+	:global(.column-bar) {
+		width: 100%;
+		border-radius: 6px 6px 0 0;
+		transition: height 0.9s cubic-bezier(0.34, 1.56, 0.64, 1);
+		display: flex;
+		justify-content: center;
+		padding-top: 0.35rem;
+		position: relative;
+	}
+
+	:global(.bar-a) {
+		background: linear-gradient(180deg, #3b82f6 0%, #1d4ed8 100%);
+		box-shadow: 0 4px 10px rgba(37, 99, 235, 0.2);
+	}
+
+	:global(.bar-b) {
+		background: linear-gradient(180deg, #10b981 0%, #047857 100%);
+		box-shadow: 0 4px 10px rgba(5, 150, 105, 0.2);
+	}
+
+	:global(.winner-bar) {
+		filter: brightness(1.1);
+	}
+
+	:global(.crown-icon) {
+		font-size: 0.9rem;
+		animation: bounceCrown 1s ease infinite alternate;
+	}
+
+	:global(.column-label) {
+		margin-top: 0.5rem;
+		font-family: var(--font-mono);
+		font-size: 0.75rem;
+		text-align: center;
+		max-width: 100px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		color: var(--secondary-color);
+	}
+
+	:global(.card-foot) {
+		min-height: 28px;
+		display: flex;
+		align-items: center;
+	}
+
+	:global(.verdict) {
+		font-family: var(--font-mono);
+		font-size: 0.8rem;
+		font-weight: 600;
+		padding: 0.25rem 0.5rem;
+		border-radius: 3px;
+	}
+
+	:global(.verd-a) {
+		background: rgba(37, 99, 235, 0.1);
+		color: #2563eb;
+	}
+
+	:global(.verd-b) {
+		background: rgba(5, 150, 105, 0.1);
+		color: #059669;
+	}
+
+	:global(.verd-tie) {
+		background: rgba(0,0,0,0.05);
+		color: var(--secondary-color);
+	}
+
+	:global(.verd-na) {
+		color: #999;
+		font-size: 0.75rem;
+	}
+
+	/* Tablo Kartı */
+	.table-card {
+		background: #ffffff;
+		border: 1px solid var(--border-color);
+		box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+	}
+
+	.table-header {
+		padding: 1.25rem 1.5rem;
+		border-bottom: 1px solid var(--border-color);
+		background: rgba(0,0,0,0.015);
+	}
+
+	.table-header h3 {
+		margin: 0;
+		font-size: 1.2rem;
+	}
+
+	.results-table-container {
 		overflow-x: auto;
 	}
 
@@ -356,7 +690,7 @@ const models = Array.from(new Set(benchmarks.map(b => b.model))).sort();
 	th {
 		background: rgba(0,0,0,0.02);
 		font-family: var(--font-mono);
-		font-size: 0.85rem;
+		font-size: 0.8rem;
 		text-transform: uppercase;
 		letter-spacing: 0.5px;
 	}
@@ -366,32 +700,24 @@ const models = Array.from(new Set(benchmarks.map(b => b.model))).sort();
 		font-size: 0.95rem;
 	}
 
-	:global(.win-a) {
-		color: #1a73e8;
-		font-weight: 600;
-	}
-
-	:global(.win-b) {
-		color: #188038;
-		font-weight: 600;
-	}
-
 	:global(.pill-a) {
-		background: rgba(26, 115, 232, 0.1);
-		color: #1a73e8;
+		background: rgba(37, 99, 235, 0.1);
+		color: #2563eb;
 		padding: 0.2rem 0.5rem;
 		font-size: 0.75rem;
 		font-family: var(--font-mono);
 		font-weight: 600;
+		border-radius: 3px;
 	}
 
 	:global(.pill-b) {
-		background: rgba(24, 128, 56, 0.1);
-		color: #188038;
+		background: rgba(5, 150, 105, 0.1);
+		color: #059669;
 		padding: 0.2rem 0.5rem;
 		font-size: 0.75rem;
 		font-family: var(--font-mono);
 		font-weight: 600;
+		border-radius: 3px;
 	}
 
 	:global(.pill-tie) {
@@ -400,12 +726,22 @@ const models = Array.from(new Set(benchmarks.map(b => b.model))).sort();
 		padding: 0.2rem 0.5rem;
 		font-size: 0.75rem;
 		font-family: var(--font-mono);
+		border-radius: 3px;
 	}
 
 	:global(.pill-na) {
 		color: #888;
-		font-size: 0.8rem;
 		font-family: var(--font-mono);
+	}
+
+	@keyframes fadeInCard {
+		from { opacity: 0; transform: translateY(8px); }
+		to { opacity: 1; transform: translateY(0); }
+	}
+
+	@keyframes bounceCrown {
+		from { transform: translateY(0); }
+		to { transform: translateY(-4px); }
 	}
 
 	@media (max-width: 768px) {
@@ -418,6 +754,9 @@ const models = Array.from(new Set(benchmarks.map(b => b.model))).sort();
 		}
 		.stats-summary {
 			flex-direction: column;
+		}
+		.charts-grid {
+			grid-template-columns: 1fr;
 		}
 	}
 </style>
