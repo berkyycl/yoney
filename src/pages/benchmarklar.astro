@@ -678,31 +678,39 @@ const availableTests = Array.from(new Set(benchmarks.map(b => b.benchmark))).sor
 	}
 
 	:global(.col-footer) {
-		height: 60px;
+		height: 120px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		padding-top: 0.6rem;
+		justify-content: flex-start;
+		padding-top: 0.5rem;
 		width: 100%;
 		border-top: 2px solid var(--border-color);
+		overflow: visible;
 	}
 
 	:global(.col-rank) {
 		font-family: var(--font-mono);
-		font-size: 0.75rem;
+		font-size: 0.7rem;
 		color: var(--accent-color);
 		font-weight: 700;
+		margin-bottom: 4px;
 	}
 
 	:global(.col-name) {
 		font-family: var(--font-mono);
-		font-size: 0.75rem;
+		font-size: 0.68rem;
 		color: var(--text-color);
-		text-align: center;
 		white-space: nowrap;
-		overflow: hidden;
-		text-overflow: ellipsis;
-		max-width: 65px;
+		overflow: visible;
+		text-overflow: unset;
+		max-width: unset;
+		/* Rotate so full name is always readable */
+		transform: rotate(-45deg) translateX(-8px);
+		transform-origin: top left;
+		display: inline-block;
+		margin-top: 6px;
+		line-height: 1.2;
 	}
 
 	:global(.empty-chart) {
