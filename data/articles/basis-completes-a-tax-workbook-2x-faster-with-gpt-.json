@@ -1,42 +1,41 @@
 {
-  "baslik_tr": "Basis, GPT-6 Astra ile vergi çalışma kitabını iki kat daha hızlı tamamladı",
-  "ozet_tr": "Finansal otomasyon platformu Basis, yeni GPT-6 Astra modelini kullanarak 50 sekmeli karmaşık bir vergi çalışma kitabını %50 daha kısa sürede tamamlayabildiğini duyurdu. Model, görev sürecinde gerek duyduğu akıl yürütme miktarını dinamik olarak ayarlayarak hem maliyet hem de yanıt süresinde önemli tasarruf sağlıyor.",
-  "detayli_icerik_tr": "Basis, muhasebecilerin günlük tekrarlayan işlerini otomatikleştiren AI ajanları geliştiren bir şirket. Şirket, uzun vadeli ve karmaşık görevleri güvenilir bir şekilde tamamlayabilen ajanlar üzerine odaklanıyor ve bu bağlamda OpenAI'nin yeni GPT-6 Astra modelini test etti. Yapılan denemelerde, 50 sekmeden oluşan bir vergi çalışma kitabının tamamlanması süresi, önceki nesil GPT-5.6 Sol modeline kıyasla yarıya indirildi.\n\nGPT-6 Astra, görevin başında daha doğru kararlar alarak ajanların hataları düzeltmek için harcadığı zamanı azalttı. Bu, modelin token kullanımını da optimize etmesine yol açtı. Ayrıca model, görev ilerledikçe gerektiğinde akıl yürütme yoğunluğunu artırıp azaltabiliyor; zor adımlarda daha fazla hesaplama yaparken, basit adımlarda kaynak tüketimini minimumda tutuyor. Bu dinamik ayarlama, önbelleği koruyarak maliyet ve yanıt süresinde tasarruf sağlıyor.\n\nİç değerlendirme sonuçları da GPT-6 Astra'nın üstünlüğünü gösteriyor: Kullanıcı niyetini anlama, sorular sorma, varsayımları işaretleme ve talimatları takip etme konularında %20'lik bir iyileşme kaydedildi. Model, geniş bağlamdan beklentileri çıkararak daha az açık talimatla çalışabiliyor, bu da Basis'in her senaryo için ayrı kurallar yazma ihtiyacını azaltıyor ve gerçek dünya kullanımına olan güveni artırıyor.\n\nBu gelişmeler, vergi ve muhasebe otomasyonu alanında uzun süren, yüksek doğruluk gerektiren görevlerin daha ekonomik ve hızlı bir şekilde yürütülmesini mümkün kılıyor. Basis, GPT-6 Astra sayesinde müşterilerine stratejik işlere daha fazla zaman ayırma fırsatı sunarken, aynı zamanda operasyonel maliyetleri de düşürmüş oluyor.",
+  "baslik_tr": "Basis, GPT-6 Astra ile Vergi Çalışma Kitabını 2 Kat Hızlı Tamamladı",
+  "ozet_tr": "Muhasebe otomasyon şirketi Basis, yeni GPT-6 Astra modelini kullanarak 50 sekmeli karmaşık bir vergi çalışma kitabını %50 daha kısa sürede tamamlayabildiğini duyurdu. Model, kullanıcı niyetini daha iyi kavraması ve görev ilerledikçe gerek duyduğu akıl yürütme gücünü dinamik olarak ayarlaması sayesinde hem hız hem de doğruluk açısından önceki GPT-5.6 Sol modelini geride bıraktı.",
+  "detayli_icerik_tr": "Basis, muhasebecilerin günlük tekrarlayan işlerini otomatikleştirerek stratejik görevlere odaklanmalarını sağlayan AI ajanları geliştiren bir platform. Şirket, uzun vadeli ve karmaşık görevleri güvenilir bir şekilde tamamlayabilen ajanlar üzerine odaklanıyor ve bu bağlamda OpenAI'nin yeni GPT-6 Astra modelini test etti.\n\nYapılan denemelerde, 50 sekmeli bir vergi çalışma kitabının eksiksiz ve hatasız doldurulması görevi GPT-6 Astra tarafından GPT-5.6 Sol modeline kıyasla iki kat daha hızlı gerçekleştirildi. Model, görevin başında daha doğru kararlar alarak hatalı adımları ve sonradan yapılacak düzeltmeleri minimuma indirdi, bu da token kullanımında da tasarruf sağladı.\n\nGPT-6 Astra, görev ilerledikçe gereken akıl yürütme seviyesini otomatik olarak ayarlayabiliyor. Zor bir adımda hesaplama gücünü artırırken, daha basit adımlarda kaynak tüketimini azaltıyor ve bu süreçte önbellek (cache) bütünlüğünü koruyor. Bu dinamik yaklaşım, hem yanıt süresini kısaltıyor hem de uzun süren işlemlerin maliyetini düşürüyor.\n\nİç değerlendirme sonuçları da modelin üstünlüğünü doğruladı: GPT-6 Astra, kullanıcı niyetini anlama, sorular sorma, varsayımları işaretleme ve talimatları takip etme konularında %20 daha yüksek puan aldı. Bu gelişme, Basis'in her senaryoya özel kurallar yazma ihtiyacını azaltarak, ajanların gerçek dünyadaki çeşitli durumları daha bağımsız ve güvenilir bir şekilde yönetebilmesini sağladı.",
   "onemli_maddeler": [
-    "GPT-6 Astra, 50 sekmeli vergi çalışma kitabını %50 daha kısa sürede tamamladı.",
-    "Model, görev ilerledikçe akıl yürütme yoğunluğunu dinamik olarak ayarlayarak token ve maliyet tasarrufu sağlıyor.",
-    "İç değerlendirme skorlarında %20 iyileşme, niyet anlama ve talimat takibinde belirgin gelişme gösterdi.",
-    "Başlangıçta daha doğru kararlar alması, düzeltme süresini ve hata oranını azalttı.",
-    "Daha az kural yazımı gerektirmesi, gerçek dünya senaryolarına adaptasyonu kolaylaştırdı."
+    "GPT-6 Astra, 50 sekmeli vergi çalışma kitabını %50 daha hızlı tamamladı.",
+    "Model, görev başında daha doğru kararlar alarak hata düzeltme süresini azalttı.",
+    "Dinamik akıl yürütme ayarı sayesinde token ve maliyet tasarrufu sağlandı.",
+    "İç değerlendirme skorunda %20 iyileşme elde edildi."
   ],
   "kategori": "benchmark",
   "onem": 4,
-  "onem_gerekce": "Vergi otomasyonu gibi kritik iş akışlarında hız ve doğruluk artışı, sektörde geniş çaplı verimlilik ve maliyet etkileri yaratacak.",
+  "onem_gerekce": "Muhasebe otomasyonu ve uzun vadeli AI görevlerinde performans ve maliyet avantajı, sektörde geniş çaplı uygulamalara kapı açabilir.",
   "etiketler": [
-    "AI muhasebe",
+    "AI",
+    "Muhasebe",
     "GPT-6",
-    "vergi otomasyonu",
-    "Basis",
-    "model verimliliği"
+    "Otomasyon",
+    "Vergi"
   ],
   "anilan_modeller": [
     "GPT-6 Astra",
     "GPT-5.6 Sol"
   ],
-  "yorum_tr": "GPT-6 Astra'nın dinamik akıl yürütme ve niyet anlama yetenekleri, muhasebe otomasyonunda işlem süresini yarıya indirerek geliştiricilere daha esnek ve maliyet etkin çözümler sunuyor; kullanıcılar ise daha hızlı ve güvenilir sonuçlar elde edecek.",
+  "yorum_tr": "Bu gelişme, muhasebe yazılımlarının işlem hızını ve doğruluğunu artırarak firmaların verimliliğini yükseltecek. Geliştiriciler, dinamik akıl yürütme yeteneği sayesinde daha az kural tabanlı kod yazarak karmaşık iş akışlarını otomatikleştirebilecek.",
   "gorseller": [],
   "benchmarklar": [
     {
       "model": "GPT-6 Astra",
       "benchmark": "İç değerlendirme skoru",
       "skor": 20,
-      "birim": "yüzde artış",
+      "birim": "%",
       "yuksek_iyi_mi": true,
       "degerlendirme_ayari": null,
-      "kaynak_metinden_alinti": "Basis saw about a 20% improvement in its internal evaluation scores with GPT‑6 Astra"
+      "kaynak_metinden_alinti": "\"Basis saw about a 20% improvement in its internal evaluation scores with GPT‑6 Astra\""
     }
   ],
-  "gorsel_url": "https://i.vimeocdn.com/video/2206112233-68baf705e838cbf41b92521fa51c735f0f13c56929b670f036ea5bebfc5c97f4-d?f=webp",
+  "gorsel_url": null,
   "url": "https://openai.com/index/basis-tax-workbook-with-astra",
   "source": "OpenAI",
   "sourceTier": "resmi",
