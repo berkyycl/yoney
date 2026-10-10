@@ -20,7 +20,14 @@ const modelAliases = JSON.parse(fs.readFileSync(path.join(ROOT, 'config/models.j
 const provider = new GeminiProvider();
 
 async function fetchRSS(url: string) {
-    const res = await axios.get(url, { responseType: 'stream', headers: { 'User-Agent': 'YoneyBot/1.0' }});
+    const res = await axios.get(url, { 
+        responseType: 'stream', 
+        headers: { 
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+            'Accept': 'application/rss+xml, application/xml, text/xml, */*'
+        },
+        timeout: 10000
+    });
     const feedparser = new FeedParser({});
     res.data.pipe(feedparser);
     const items: any[] = [];
@@ -93,12 +100,13 @@ export async function runPipeline(isMock = false) {
                 const itemDate = item.pubdate || item.date ? new Date(item.pubdate || item.date) : new Date();
                 if (itemDate < twoWeeksAgo) continue;
 
-                const text = cleanHTML(item.description || "");
+                const rawText = item.description || item.summary || item['content:encoded'] || item.title || "";
+                const text = cleanHTML(rawText);
                 if (!containsKeywords(text) && !containsKeywords(item.title)) {
                     continue; // skip irrelevant
                 }
 
-                console.log(`Analyzing: ${item.title}`);
+                console.log(`Analyzing: ${item.title} (Kaynak: ${source.name})`);
                 try {
                     const result = await provider.analyzeArticle({
                         title: item.title,
