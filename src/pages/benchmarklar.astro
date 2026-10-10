@@ -179,16 +179,17 @@ const benchmarkNames = Object.keys(grouped).sort();
 
 	.tabs-sidebar {
 		min-width: 260px;
-		background: #ffffff;
+		background: var(--card-bg);
 		border: 1px solid var(--border-color);
 		padding: 1.25rem;
+		border-radius: 4px;
 	}
 
 	.tabs-label {
 		font-family: var(--font-mono);
 		font-size: 0.75rem;
 		text-transform: uppercase;
-		color: var(--secondary-color);
+		color: var(--text-muted);
 		display: block;
 		margin-bottom: 1rem;
 		font-weight: 600;
@@ -211,16 +212,17 @@ const benchmarkNames = Object.keys(grouped).sort();
 		align-items: center;
 		transition: all 0.15s ease;
 		color: var(--text-color);
+		border-radius: 3px;
 	}
 
 	.tab-btn:hover {
-		background: rgba(0,0,0,0.03);
+		background: rgba(255, 255, 255, 0.05);
 		border-color: var(--border-color);
 	}
 
 	.tab-btn.active {
-		background: var(--text-color);
-		color: var(--bg-color);
+		background: var(--accent-color);
+		color: #ffffff;
 		font-weight: 600;
 	}
 
@@ -231,15 +233,16 @@ const benchmarkNames = Object.keys(grouped).sort();
 	.btn-count {
 		font-family: var(--font-mono);
 		font-size: 0.75rem;
-		opacity: 0.8;
+		opacity: 0.85;
 	}
 
 	.content-area {
 		flex: 1;
 		min-width: 0;
-		background: #ffffff;
+		background: var(--card-bg);
 		border: 1px solid var(--border-color);
 		padding: 2rem;
+		border-radius: 4px;
 	}
 
 	.content-header {
@@ -257,7 +260,7 @@ const benchmarkNames = Object.keys(grouped).sort();
 	}
 
 	.test-desc {
-		color: var(--secondary-color);
+		color: var(--text-muted);
 		font-size: 0.95rem;
 		margin: 0;
 	}
@@ -265,9 +268,11 @@ const benchmarkNames = Object.keys(grouped).sort();
 	.unit-badge {
 		font-family: var(--font-mono);
 		font-size: 0.75rem;
-		background: rgba(0,0,0,0.05);
+		background: rgba(255, 255, 255, 0.08);
+		color: var(--text-muted);
 		padding: 0.25rem 0.6rem;
 		border-radius: 3px;
+		border: 1px solid var(--border-color);
 	}
 
 	/* CSS Bar Chart */
@@ -277,8 +282,9 @@ const benchmarkNames = Object.keys(grouped).sort();
 		gap: 1.25rem;
 		margin-bottom: 2.5rem;
 		padding: 1.5rem;
-		background: rgba(0,0,0,0.015);
+		background: rgba(0, 0, 0, 0.15);
 		border: 1px solid var(--border-color);
+		border-radius: 4px;
 	}
 
 	.bar-row {
@@ -291,6 +297,7 @@ const benchmarkNames = Object.keys(grouped).sort();
 		display: flex;
 		justify-content: space-between;
 		font-size: 0.95rem;
+		color: var(--text-color);
 	}
 
 	.model-name {
@@ -305,14 +312,14 @@ const benchmarkNames = Object.keys(grouped).sort();
 
 	.bar-track {
 		height: 12px;
-		background: rgba(0,0,0,0.06);
+		background: rgba(255, 255, 255, 0.08);
 		border-radius: 6px;
 		overflow: hidden;
 	}
 
 	.bar-fill {
 		height: 100%;
-		background: linear-gradient(90deg, var(--secondary-color), var(--accent-color));
+		background: linear-gradient(90deg, #2563eb, var(--accent-color));
 		border-radius: 6px;
 		transition: width 0.6s ease;
 	}
@@ -326,6 +333,7 @@ const benchmarkNames = Object.keys(grouped).sort();
 		width: 100%;
 		border-collapse: collapse;
 		font-family: var(--font-sans);
+		color: var(--text-color);
 	}
 
 	th, td {
@@ -335,11 +343,11 @@ const benchmarkNames = Object.keys(grouped).sort();
 	}
 
 	th {
-		background: rgba(0,0,0,0.02);
+		background: rgba(255, 255, 255, 0.03);
 		font-family: var(--font-mono);
 		font-size: 0.8rem;
 		text-transform: uppercase;
-		color: var(--secondary-color);
+		color: var(--text-muted);
 	}
 
 	.tabular-val {
@@ -349,9 +357,10 @@ const benchmarkNames = Object.keys(grouped).sort();
 	}
 
 	.src-link {
-		color: var(--secondary-color);
+		color: var(--text-muted);
 		text-decoration: none;
 		font-size: 0.85rem;
+		transition: color 0.15s;
 	}
 
 	.src-link:hover {
@@ -362,6 +371,6 @@ const benchmarkNames = Object.keys(grouped).sort();
 	.date-col {
 		font-family: var(--font-mono);
 		font-size: 0.8rem;
-		color: #777;
+		color: var(--text-muted);
 	}
 </style>

@@ -327,8 +327,9 @@ const models = Array.from(new Set(benchmarks.map(b => b.model))).sort();
 		gap: 1.5rem;
 		margin-bottom: 2rem;
 		padding: 2rem;
-		background: #ffffff;
+		background: var(--card-bg);
 		border: 1px solid var(--border-color);
+		border-radius: 4px;
 		box-shadow: 0 4px 16px rgba(0,0,0,0.03);
 	}
 
@@ -349,12 +350,12 @@ const models = Array.from(new Set(benchmarks.map(b => b.model))).sort();
 
 	.dot-a {
 		background: #2563eb;
-		box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
+		box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.2);
 	}
 
 	.dot-b {
 		background: #059669;
-		box-shadow: 0 0 0 4px rgba(5, 150, 105, 0.15);
+		box-shadow: 0 0 0 4px rgba(5, 150, 105, 0.2);
 	}
 
 	.select-wrapper {
@@ -369,6 +370,7 @@ const models = Array.from(new Set(benchmarks.map(b => b.model))).sort();
 		font-size: 0.8rem;
 		text-transform: uppercase;
 		font-weight: 600;
+		color: var(--text-muted);
 	}
 
 	select {
@@ -386,7 +388,7 @@ const models = Array.from(new Set(benchmarks.map(b => b.model))).sort();
 	}
 
 	select:focus {
-		border-color: var(--text-color);
+		border-color: var(--accent-color);
 	}
 
 	.vs-circle {
@@ -414,8 +416,9 @@ const models = Array.from(new Set(benchmarks.map(b => b.model))).sort();
 
 	:global(.stat-box) {
 		flex: 1;
-		background: #ffffff;
+		background: var(--card-bg);
 		border: 1px solid var(--border-color);
+		border-radius: 4px;
 		padding: 1.25rem 1.5rem;
 		display: flex;
 		flex-direction: column;
@@ -427,7 +430,7 @@ const models = Array.from(new Set(benchmarks.map(b => b.model))).sort();
 		font-family: var(--font-mono);
 		font-size: 0.75rem;
 		text-transform: uppercase;
-		color: var(--secondary-color);
+		color: var(--text-muted);
 		letter-spacing: 0.5px;
 	}
 
@@ -438,20 +441,22 @@ const models = Array.from(new Set(benchmarks.map(b => b.model))).sort();
 	}
 
 	:global(.val-a) {
-		color: #2563eb;
+		color: #3b82f6;
 	}
 
 	:global(.val-b) {
-		color: #059669;
+		color: #10b981;
 	}
 
 	:global(.stat-notice) {
 		width: 100%;
 		padding: 1.25rem;
-		background: #ffffff;
+		background: var(--card-bg);
 		border: 1px solid var(--border-color);
+		border-radius: 4px;
 		font-family: var(--font-mono);
 		font-size: 0.9rem;
+		color: var(--text-muted);
 	}
 
 	/* Sütun Grafikler Bölümü */
@@ -471,12 +476,13 @@ const models = Array.from(new Set(benchmarks.map(b => b.model))).sort();
 	.section-title-row h2 {
 		font-size: 1.5rem;
 		margin: 0;
+		color: var(--text-color);
 	}
 
 	.chart-hint {
 		font-family: var(--font-mono);
 		font-size: 0.8rem;
-		color: var(--secondary-color);
+		color: var(--text-muted);
 	}
 
 	.charts-grid {
@@ -486,7 +492,7 @@ const models = Array.from(new Set(benchmarks.map(b => b.model))).sort();
 	}
 
 	:global(.chart-card) {
-		background: #ffffff;
+		background: var(--card-bg);
 		border: 1px solid var(--border-color);
 		padding: 1.5rem;
 		display: flex;
@@ -499,15 +505,15 @@ const models = Array.from(new Set(benchmarks.map(b => b.model))).sort();
 
 	:global(.chart-card:hover) {
 		transform: translateY(-2px);
-		box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+		box-shadow: 0 6px 16px rgba(0,0,0,0.15);
 	}
 
 	:global(.chart-card.winner-a) {
-		border-top: 4px solid #2563eb;
+		border-top: 4px solid #3b82f6;
 	}
 
 	:global(.chart-card.winner-b) {
-		border-top: 4px solid #059669;
+		border-top: 4px solid #10b981;
 	}
 
 	:global(.card-head) {
@@ -527,10 +533,11 @@ const models = Array.from(new Set(benchmarks.map(b => b.model))).sort();
 	:global(.test-unit) {
 		font-family: var(--font-mono);
 		font-size: 0.75rem;
-		color: #888;
-		background: rgba(0,0,0,0.04);
+		color: var(--text-muted);
+		background: rgba(255, 255, 255, 0.06);
 		padding: 0.2rem 0.5rem;
 		border-radius: 3px;
+		border: 1px solid var(--border-color);
 		white-space: nowrap;
 	}
 
@@ -562,11 +569,11 @@ const models = Array.from(new Set(benchmarks.map(b => b.model))).sort();
 	}
 
 	:global(.col-val-a) {
-		color: #2563eb;
+		color: #3b82f6;
 	}
 
 	:global(.col-val-b) {
-		color: #059669;
+		color: #10b981;
 	}
 
 	:global(.column-track) {
@@ -590,16 +597,16 @@ const models = Array.from(new Set(benchmarks.map(b => b.model))).sort();
 
 	:global(.bar-a) {
 		background: linear-gradient(180deg, #3b82f6 0%, #1d4ed8 100%);
-		box-shadow: 0 4px 10px rgba(37, 99, 235, 0.2);
+		box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);
 	}
 
 	:global(.bar-b) {
 		background: linear-gradient(180deg, #10b981 0%, #047857 100%);
-		box-shadow: 0 4px 10px rgba(5, 150, 105, 0.2);
+		box-shadow: 0 4px 10px rgba(5, 150, 105, 0.3);
 	}
 
 	:global(.winner-bar) {
-		filter: brightness(1.1);
+		filter: brightness(1.15);
 	}
 
 	:global(.crown-icon) {
@@ -612,11 +619,11 @@ const models = Array.from(new Set(benchmarks.map(b => b.model))).sort();
 		font-family: var(--font-mono);
 		font-size: 0.75rem;
 		text-align: center;
-		max-width: 100px;
+		max-width: 110px;
 		overflow: hidden;
 		text-overflow: ellipsis;
 		white-space: nowrap;
-		color: var(--secondary-color);
+		color: var(--text-muted);
 	}
 
 	:global(.card-foot) {
@@ -634,41 +641,43 @@ const models = Array.from(new Set(benchmarks.map(b => b.model))).sort();
 	}
 
 	:global(.verd-a) {
-		background: rgba(37, 99, 235, 0.1);
-		color: #2563eb;
+		background: rgba(37, 99, 235, 0.15);
+		color: #3b82f6;
 	}
 
 	:global(.verd-b) {
-		background: rgba(5, 150, 105, 0.1);
-		color: #059669;
+		background: rgba(5, 150, 105, 0.15);
+		color: #10b981;
 	}
 
 	:global(.verd-tie) {
-		background: rgba(0,0,0,0.05);
-		color: var(--secondary-color);
+		background: rgba(255, 255, 255, 0.08);
+		color: var(--text-muted);
 	}
 
 	:global(.verd-na) {
-		color: #999;
+		color: var(--text-muted);
 		font-size: 0.75rem;
 	}
 
 	/* Tablo Kartı */
 	.table-card {
-		background: #ffffff;
+		background: var(--card-bg);
 		border: 1px solid var(--border-color);
+		border-radius: 4px;
 		box-shadow: 0 2px 8px rgba(0,0,0,0.02);
 	}
 
 	.table-header {
 		padding: 1.25rem 1.5rem;
 		border-bottom: 1px solid var(--border-color);
-		background: rgba(0,0,0,0.015);
+		background: rgba(255, 255, 255, 0.02);
 	}
 
 	.table-header h3 {
 		margin: 0;
 		font-size: 1.2rem;
+		color: var(--text-color);
 	}
 
 	.results-table-container {
@@ -679,6 +688,7 @@ const models = Array.from(new Set(benchmarks.map(b => b.model))).sort();
 		width: 100%;
 		border-collapse: collapse;
 		font-family: var(--font-sans);
+		color: var(--text-color);
 	}
 
 	th, td {
@@ -688,11 +698,12 @@ const models = Array.from(new Set(benchmarks.map(b => b.model))).sort();
 	}
 
 	th {
-		background: rgba(0,0,0,0.02);
+		background: rgba(255, 255, 255, 0.02);
 		font-family: var(--font-mono);
 		font-size: 0.8rem;
 		text-transform: uppercase;
 		letter-spacing: 0.5px;
+		color: var(--text-muted);
 	}
 
 	.tabular {
@@ -701,8 +712,8 @@ const models = Array.from(new Set(benchmarks.map(b => b.model))).sort();
 	}
 
 	:global(.pill-a) {
-		background: rgba(37, 99, 235, 0.1);
-		color: #2563eb;
+		background: rgba(37, 99, 235, 0.15);
+		color: #3b82f6;
 		padding: 0.2rem 0.5rem;
 		font-size: 0.75rem;
 		font-family: var(--font-mono);
@@ -711,8 +722,8 @@ const models = Array.from(new Set(benchmarks.map(b => b.model))).sort();
 	}
 
 	:global(.pill-b) {
-		background: rgba(5, 150, 105, 0.1);
-		color: #059669;
+		background: rgba(5, 150, 105, 0.15);
+		color: #10b981;
 		padding: 0.2rem 0.5rem;
 		font-size: 0.75rem;
 		font-family: var(--font-mono);
@@ -721,8 +732,8 @@ const models = Array.from(new Set(benchmarks.map(b => b.model))).sort();
 	}
 
 	:global(.pill-tie) {
-		background: rgba(0,0,0,0.06);
-		color: var(--secondary-color);
+		background: rgba(255, 255, 255, 0.08);
+		color: var(--text-muted);
 		padding: 0.2rem 0.5rem;
 		font-size: 0.75rem;
 		font-family: var(--font-mono);
@@ -730,7 +741,7 @@ const models = Array.from(new Set(benchmarks.map(b => b.model))).sort();
 	}
 
 	:global(.pill-na) {
-		color: #888;
+		color: var(--text-muted);
 		font-family: var(--font-mono);
 	}
 
