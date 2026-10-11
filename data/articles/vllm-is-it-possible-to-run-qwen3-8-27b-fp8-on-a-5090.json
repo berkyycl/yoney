@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "[vllm] Qwen3.8-27B-FP8 modeli RTX 5090'da çalıştırılabilir mi?",
+  "ozet_tr": "Kullanıcı, RTX 5090 GPU'sunda vllm çerçevesiyle Qwen3.8‑27B‑FP8 modelini çalıştırmanın mümkün olup olmadığını sorguluyor. NVFP4 formatında aynı modeli sorunsuz bir şekilde yüksek bağlam uzunluğu ve görüntü desteğiyle çalıştırabildiğini belirten kullanıcı, FP8'in bellek ve bağlam sınırlamaları nedeniyle pratik olmayabileceği konusunda uyarı almış.",
+  "detayli_icerik_tr": "Reddit topluluğu LocalLLaMA'da, BitGreen1270 adlı kullanıcı, Qwen3.8‑27B‑FP8 modelinin 30,9 GB'lık boyutu ve minimum bağlam gereksinimleri nedeniyle RTX 5090 gibi tek bir tüketici sınıfı GPU'da çalıştırılmasının zor olabileceğini dile getirdi. Kullanıcı, Quasar‑QAT tarafından sağlanan NVFP4 formatındaki modeli aşağıdaki komutla sorunsuz bir şekilde çalıştırabildiğini ve 202 144 token uzunluğunda, 4 ardışık sekans ve 8 GB KV‑cache belleğiyle yüksek performans elde ettiğini paylaştı.\n\n```\nPYTORCH_CUDA_ALLOC_CONF=expandable_segments:True \\\nMAX_JOBS=4 \\\nvllm serve ~/myp/models/quasar-qat \\\n  --max-model-len 202144 \\\n  --max-num-seqs=4 \\\n  --kv-cache-memory=8589934592 \\\n  --max-num-batched-tokens 4096 \\\n  --kv-cache-dtype fp8 \\\n  --served-model-name Qwen3.8-27B-NVFP4 \\\n  --host=0.0.0.0 --port 8080 \\\n  --enable-prefix-caching \\\n  --enable-auto-tool-choice \\\n  --tool-call-parser qwen3_coder \\\n  --reasoning-parser=qwen3 \\\n  --speculative-config '{\"method\": \"mtp\", \"num_speculative_tokens\": 3}'\n```\n\nKullanıcı, FP8 formatındaki modelin aynı donanımda çalıştırılması durumunda bağlam uzunluğunun önemli ölçüde azalacağını ve doğruluk kaybı yaşanabileceğini merak ediyor. Claude adlı bir modelden alınan geri bildirim, FP8'in minimum bağlam gereksinimi nedeniyle pratik bir çözüm olmayabileceğini vurguluyor. Ancak, FP8'in bellek verimliliği ve potansiyel hız avantajları hâlâ araştırma aşamasında ve kesin performans farkı ölçülmemiş.\n\nBu bağlamda topluluk, modelin boyutu, KV‑cache tipi (FP8 vs NVFP4) ve RTX 5090'in 24 GB GDDR6X belleği gibi donanım sınırlamaları üzerine tartışıyor. Kullanıcı, FP8 modelinin 30,9 GB'lık indirme boyutunun da dağıtım ve depolama açısından ek bir engel oluşturduğunu belirtiyor.",
+  "onemli_maddeler": [
+    "RTX 5090'da Qwen3.8‑27B‑FP8 modelini çalıştırma ihtimali düşük; minimum bağlam gereksinimi pratik olmayabilir.",
+    "NVFP4 formatındaki aynı model, 8 GB KV‑cache ve 202 k token bağlamıyla sorunsuz çalıştırıldı.",
+    "FP8 modelinin 30,9 GB boyutu depolama ve indirme sürecini zorlaştırıyor.",
+    "Performans ve doğruluk farkı henüz ölçülmemiş; topluluk sadece teorik tahminler sunuyor."
+  ],
+  "kategori": "arastirma",
+  "onem": 3,
+  "onem_gerekce": "Modelin büyük ölçekli dağıtımı ve tüketici sınıfı GPU'larda çalıştırılabilirliği, LLM ekosisteminde geniş kitlelerin erişimini etkileyebileceği için orta derecede önem taşımaktadır.",
+  "etiketler": [
+    "vllm",
+    "Qwen3.8-27B",
+    "FP8",
+    "RTX 5090",
+    "model-optimisation"
+  ],
+  "anilan_modeller": [
+    "Qwen3.8-27B-FP8",
+    "Qwen3.8-27B-NVFP4"
+  ],
+  "yorum_tr": "Bu gelişme, yüksek bellek verimliliği vaat eden FP8 formatının gerçek dünya donanımlarında sınırlı bağlam uzunluğu nedeniyle henüz geniş çapta benimsenemeyeceğini gösteriyor. Geliştiriciler, NVFP4 gibi daha stabil formatları tercih etmeye devam ederken, FP8'in potansiyel hız ve maliyet avantajları araştırma aşamasında kalmaya devam edecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://cms.orcarouter.ai/api/media/file/1-296-900x571.png",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x2wcwg/vllm_is_it_possible_to_run_qwen3827bfp8_on_a_5090/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-11T02:12:24.000Z",
+  "slug": "vllm-is-it-possible-to-run-qwen3-8-27b-fp8-on-a-5090"
+}

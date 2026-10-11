@@ -1,0 +1,46 @@
+{
+  "baslik_tr": "48GB VRAM’da Hız ve Kalite: Qwen 3.8 27B Swift 1.5 W8A16 Quant Modeli",
+  "ozet_tr": "Reddit topluluğu üyesi TacGibs, 48 GB VRAM sınırını aşmadan yüksek hız ve kalite sunan yeni bir Qwen 3.8 27B Swift 1.5 quant modeli yayınladı. Model, 8‑bit AWQ+GPTQ karışık kuantizasyonu ve vLLM‑MTP entegrasyonu sayesinde iki RTX 3090’da yaklaşık 100 token/s dekodlama hızı sağlıyor.",
+  "detayli_icerik_tr": "Yapay zeka araştırmacıları ve geliştiricileri, büyük dil modellerini yüksek performanslı GPU’larda çalıştırırken hem bellek hem de hız dengesini sağlamakta zorlanıyor. Bu soruna yanıt olarak TacGibs, Qwen 3.8 27B modelinin Swift 1.5 sürümünü 8‑bit AWQ ve GPTQ tekniklerini birleştirerek kuantize etti ve \"Swift-1.5-Qwen3.8-27B-W8A16\" adıyla HuggingFace platformunda paylaştı.\n\nModel, dört RTX 3090’da kuantizasyon sürecini tamamladıktan sonra, iki RTX 3090’da vLLM ve MTP (Multi‑Threaded Parallelism) ile çalıştırılıyor. 128 k bağlam uzunluğu ve FP16 KV cache kullanımıyla kart başına yaklaşık 21.6 GB VRAM tüketiyor ve toplam 48 GB VRAM sınırını rahatça karşılıyor. En dikkat çekici performans göstergesi, MTP=5 ayarıyla neredeyse 100 token/s dekodlama hızı elde edilmesi.\n\nBu yapı, orijinal Qwen 3.8 27B modeline göre daha az “overthinker” (gereksiz hesaplama) davranışı sergiliyor ve gerçek zamanlı uygulamalarda daha akıcı yanıtlar sunuyor. Modelin açık kaynak kodlu olması, topluluk üyelerinin kendi altyapılarına kolayca entegre etmelerini ve gerektiğinde özelleştirmeler yapmalarını mümkün kılıyor.\n\nTacGibs, bu çalışmayı “love and precision” (sevgi ve hassasiyet) ile geliştirdiğini belirterek, benzer ihtiyaçları olan diğer araştırmacı ve geliştiricilerin de faydalanmasını umduğunu ifade etti. Modelin HuggingFace sayfası üzerinden indirilebilir ve belgeleri incelenebilir.",
+  "onemli_maddeler": [
+    "8‑bit AWQ + GPTQ karışık kuantizasyonu sayesinde yüksek kalite ve düşük bellek tüketimi",
+    "vLLM ve MTP=5 ile iki RTX 3090’da yaklaşık 100 token/s dekodlama hızı",
+    "Her kartta 21.6 GB VRAM kullanımı, toplam 48 GB VRAM sınırını aşmadan çalışabilme",
+    "Model açık kaynak olarak HuggingFace’da yayınlandı ve topluluk tarafından erişilebilir",
+    "128 k bağlam uzunluğu ve FP16 KV cache desteği"
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Model, büyük dil modellerinin sınırlı VRAM ortamlarında hem hız hem de kalite gereksinimlerini karşılayarak araştırma ve üretim süreçlerine doğrudan fayda sağlıyor.",
+  "etiketler": [
+    "Qwen",
+    "quantization",
+    "vLLM",
+    "RTX3090",
+    "benchmark"
+  ],
+  "anilan_modeller": [
+    "Qwen 3.8 27B",
+    "Qwen 3.8 27B Swift 1.5",
+    "Swift-1.5-Qwen3.8-27B-W8A16"
+  ],
+  "yorum_tr": "Bu kuantizasyon, yüksek bellek gereksinimi olan modelleri orta ölçekli GPU çiftlerinde çalıştırmak isteyen geliştiriciler için önemli bir adım. Açık kaynak yapısı, topluluk içinde hızlı iterasyon ve özelleştirme imkanı sunarak yapay zeka ekosisteminin çeşitliliğini artıracak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen 3.8 27B Swift 1.5 (W8A16)",
+      "benchmark": "Token generation speed (decode)",
+      "skor": 100,
+      "birim": "tokens/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "MTP=5, vLLM, 2x RTX 3090, 128k context, FP16 KV cache",
+      "kaynak_metinden_alinti": "almost 100 tok/s decode (with MTP=5)"
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/i-benchmarked-every-qwen-3-8-27b-quant-that-fits-in-16gb-v0-asxk9w4d00kh1.jpeg?width=640&crop=smart&auto=webp&s=6bcab27fa0400dc46ce6fa1e6450ed9c9688ddc2",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x2j3gx/48gb_vram_speed_and_quality_qwen_38_27b_swift_15/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-10T16:11:34.000Z",
+  "slug": "48gb-vram-speed-and-quality-qwen-3-8-27b-swift-1-5-w8a16"
+}

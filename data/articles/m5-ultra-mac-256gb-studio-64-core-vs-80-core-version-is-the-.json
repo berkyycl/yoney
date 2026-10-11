@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "M5 Ultra Mac Studio 64 çekirdek vs 80 çekirdek: Hız farkı ekstra 10 hafta beklemeye değer mi?",
+  "ozet_tr": "Apple'ın M5 Ultra çipli Mac Studio modelleri arasında 64 çekirdek ve 80 çekirdek seçenekleri bulunuyor. 64 çekirdekli model 6‑7 hafta, 80 çekirdekli model ise 15‑17 hafta teslim süresi ve 1.200 $ fiyat farkı ile geliyor. Kullanıcılar, bu iki konfigürasyon arasındaki gerçek inference performans farkının, bekleme süresi ve maliyet artışını haklı çıkarıp çıkarmadığını merak ediyor.",
+  "detayli_icerik_tr": "Reddit'in LocalLLaMA topluluğunda, bir kullanıcı (u/Porespellar) M5 Ultra Mac Studio'nun iki farklı konfigürasyonunu karşılaştırmak istediğini belirtti. 64 çekirdekli versiyonun teslim süresi 6‑7 hafta iken, 80 çekirdekli versiyonun 15‑17 hafta olduğu ve fiyatının 1.200 $ daha yüksek olduğu vurgulandı. Her iki model de aynı Ultra çip mimarisine ve aynı bellek bant genişliğine sahip, bu yüzden farkın sadece çekirdek sayısına dayanması bekleniyor.\n\nKullanıcı, özellikle prompt işleme ve token üretiminde gözle görülür bir hız farkı olup olmadığını sorguluyor. 60 çekirdekli bir versiyonun (muhtemelen 64 çekirdekli model) inference istatistiklerinin toplulukta paylaşılmadığını belirterek, mevcut verilerin eksik olduğunu ifade etti. Bu bağlamda, topluluk üyelerinin hangi modeli tercih edeceği ve hangi senaryolarda ek çekirdek sayısının anlamlı bir kazanç sağlayacağı tartışılıyor.\n\nM5 Ultra çipinin mimarisi, yüksek paralel işlem yeteneği ve geniş bellek bant genişliği sayesinde büyük dil modellerinin (LLM) inference sürecinde avantaj sağlıyor. Ancak, çekirdek sayısının artmasıyla elde edilen performans artışı, lineer olmayabilir; özellikle bellek erişim gecikmesi ve model boyutu gibi faktörler sınırlayıcı olabilir. Bu yüzden, 80 çekirdekli modelin 64 çekirdekliye göre sadece %10‑15 civarında bir hız artışı sunması muhtemel ve bu da ek 10 hafta bekleme süresi ve 1.200 $ fiyat farkını haklı çıkarıp çıkarmadığını belirsiz kılıyor.\n\nToplulukta, yüksek performans gerektiren profesyonel içerik üreticileri, video render ve büyük ölçekli LLM inference işlemleri yapan geliştiriciler gibi kullanıcıların 80 çekirdekli modeli tercih etmesi beklenirken, daha sınırlı bütçeli ve bekleme süresine duyarlı kullanıcıların 64 çekirdekli modeli seçmesi muhtemel. Sonuçta, seçim büyük ölçüde kullanım senaryosu ve bütçe toleransına bağlı olacak.",
+  "onemli_maddeler": [
+    "64 çekirdekli M5 Ultra Mac Studio 6‑7 hafta, 80 çekirdekli model 15‑17 hafta teslim süresiyle geliyor.",
+    "80 çekirdekli model 1.200 $ daha pahalı ve ek 10 hafta bekleme süresi gerektiriyor.",
+    "Her iki model aynı bellek bant genişliğine sahip; performans farkı sadece çekirdek sayısına bağlı."
+  ],
+  "kategori": "benchmark",
+  "onem": 3,
+  "onem_gerekce": "Kullanıcıların yüksek maliyet ve uzun bekleme süresi karşısında gerçek performans kazancını değerlendirmesi, satın alma kararlarını doğrudan etkileyen kritik bir faktördür.",
+  "etiketler": [
+    "M5 Ultra",
+    "Mac Studio",
+    "inference",
+    "benchmark",
+    "fiyat"
+  ],
+  "anilan_modeller": [
+    "M5 Ultra Mac Studio 64-core",
+    "M5 Ultra Mac Studio 80-core"
+  ],
+  "yorum_tr": "Bu tür bir karşılaştırma, yüksek performans gerektiren geliştiriciler ve içerik üreticileri için kritik; ancak ek maliyet ve bekleme süresi, sadece %10‑15 civarında bir hız artışı sağlayacaksa, çoğu kullanıcı için 64 çekirdekli model daha mantıklı bir tercih olacaktır.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://images.macrumors.com/t/fGkSvDQPpPJc38McJlfY31z9dvw=/1600x0/article-new/2026/08/image.png",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x2wzsa/m5_ultra_mac_256gb_studio_64_core_vs_80_core/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-11T02:46:42.000Z",
+  "slug": "m5-ultra-mac-256gb-studio-64-core-vs-80-core-version-is-the-"
+}

@@ -1,0 +1,70 @@
+{
+  "baslik_tr": "Linux için Rust tabanlı Yerel Semantik Dosya Arama Aracı (EmbeddingGemma 2 ve llama.cpp)",
+  "ozet_tr": "Rust ile geliştirilen ve EmbeddingGemma 2 ile llama.cpp entegrasyonu kullanan yeni bir Linux uygulaması, PDF, Office, tarama, ekran görüntüsü, ses ve video dosyalarını içeriklerine göre indeksleyip anında bulabiliyor. Vektör benzerliği ve SQLite FTS5 kombinasyonu sayesinde sorgular milisaniyeler içinde yanıt veriyor ve tamamen çevrim dışı çalışıyor.",
+  "detayli_icerik_tr": "Recall adlı açık kaynak proje, Linux ortamında yerel semantik dosya araması sağlamak üzere Rust dilinde bir motor ve GTK 4 arayüzüyle sunuluyor. Uygulama, PDF, Office belgeleri, taranmış görüntüler, ekran görüntüleri, ses ve video dosyalarını indeksleyerek içerik bazlı arama imkanı tanıyor. Kullanıcı \"when did they decide to freeze hiring\" gibi bir sorgu girdiğinde, ilgili ses kaydı o anlık noktada açılıyor.\n\nMetin, görsel, video kareleri ve 30 saniyelik ses pencereleri EmbeddingGemma 2 modeliyle tek bir vektör uzayına gömülüyor; bu işlem llama.cpp aracılığıyla CUDA, Vulkan ya da yalnızca CPU üzerinde gerçekleştirilebiliyor. Sıralama, vektör benzerliği ve SQLite FTS5 tabanlı tam metin arama sonuçlarının birleştirilmesiyle hibrit bir yaklaşım izliyor. OCR işlemleri PaddleOCR ile yapılırken, uygulama tamamen çevrim dışı çalışıyor; model indirildikten sonra ağ bağlantısına ihtiyaç duyulmuyor.\n\nPerformans testleri i5 işlemcili bir dizüstü bilgisayar (Iris Xe GPU) üzerinde yapıldı. Küçük bir test setinde doğru dosya ilk sırada %95 oranında bulunurken, anahtar kelime sorguları ortalama 4 ms, semantik aramalar ise 0.17 s sürede sonuç veriyor. Vulkan destekli indeksleme ise CPU tabanlı yönteme göre yaklaşık 3 kat daha hızlı. Eksik özellikler arasında ses transkripsiyonu, paket taraması ve eski masaüstü ortamları için Wayland kısayolu bulunmuyor.\n\nProje MIT lisansı altında GitHub'da (https://github.com/pdstn12/Recall) yayınlanmış ve macOS için geliştirilen DigUp uygulamasından ilham almış. Geliştiriciler, açık kaynak topluluğunun katkılarını bekleyerek aracın işlevselliğini ve performansını daha da artırmayı hedefliyor.",
+  "onemli_maddeler": [
+    "EmbeddingGemma 2 ve llama.cpp sayesinde metin, görsel ve ses verileri tek bir vektör uzayına gömülerek hibrit arama yapılabiliyor.",
+    "Vulkan destekli indeksleme CPU'ya göre yaklaşık 3 kat daha hızlı, sorgular milisaniyeler içinde yanıt veriyor.",
+    "Uygulama tamamen çevrim dışı çalışıyor; model indirildikten sonra ağ bağlantısına ihtiyaç duyulmuyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Yerel, gizlilik odaklı ve yüksek performanslı bir semantik arama çözümü, özellikle veri güvenliği ve offline çalışma gerektiren kurumsal ortamlarda büyük ilgi görecek.",
+  "etiketler": [
+    "Linux",
+    "Rust",
+    "semantic-search",
+    "EmbeddingGemma",
+    "llama.cpp"
+  ],
+  "anilan_modeller": [
+    "EmbeddingGemma 2",
+    "llama.cpp"
+  ],
+  "yorum_tr": "Bu araç, veri gizliliği ve düşük gecikme süresi isteyen geliştiriciler için güçlü bir seçenek sunuyor; açık kaynak yapısı sayesinde topluluk katkılarıyla daha da zenginleşebilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Recall (EmbeddingGemma 2 + llama.cpp)",
+      "benchmark": "Doğru dosya sıralama oranı",
+      "skor": 95,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "küçük test seti",
+      "kaynak_metinden_alinti": "right file first on 95% of a small test set"
+    },
+    {
+      "model": "Recall",
+      "benchmark": "Anahtar kelime sorgu süresi",
+      "skor": 4,
+      "birim": "ms",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "keyword results",
+      "kaynak_metinden_alinti": "~4 ms keyword results"
+    },
+    {
+      "model": "Recall",
+      "benchmark": "Semantik arama süresi",
+      "skor": 0.17,
+      "birim": "s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "semantic search",
+      "kaynak_metinden_alinti": "~0.17 s semantic search"
+    },
+    {
+      "model": "Recall",
+      "benchmark": "Vulkan indeksleme hız artışı",
+      "skor": 3,
+      "birim": "x",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "CPU'ya göre",
+      "kaynak_metinden_alinti": "Vulkan indexing ~3x faster than CPU"
+    }
+  ],
+  "gorsel_url": "https://external-preview.redd.it/PEBW3FaJln6M8pkbk7gthtXPZBI7db2M1JAXNuEjAKA.png?width=140&height=70&auto=webp&s=fe25359396f0f2625395ff812edf7de374353874",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x2vz3y/local_semantic_file_search_for_linux_rust/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-11T01:52:00.000Z",
+  "slug": "local-semantic-file-search-for-linux-rust-llama-cpp-embeddin"
+}

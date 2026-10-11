@@ -1,0 +1,61 @@
+{
+  "baslik_tr": "MacBook M3 Max 64 GB'de Qwen3.8-Flash-Next-oQ4e-mtp Modeli oMLX ile Çalıştırıldı!",
+  "ozet_tr": "Bir Reddit kullanıcısı, 64 GB RAM'li M3 Max Mac üzerinde oMLX sayesinde 100 GB'lık Qwen3.8-Flash-Next-oQ4e-mtp modelini sorunsuz çalıştırabildiğini duyurdu. Model, 58 GB GPU belleği tahsis edilerek 130 k token uzunluğunda bir bağlam penceresine kadar destek veriyor ve %90,9 önbellek verimliliği sağlıyor.",
+  "detayli_icerik_tr": "Reddit'in LocalLLaMA topluluğunda paylaşılan bir gönderide, kullanıcı chibop1, M3 Max çipine sahip 64 GB RAM'li bir Mac'te oMLX (Open Machine Learning eXecution) çerçevesinin en yeni commit'iyle Qwen3.8-Flash-Next-oQ4e-mtp modelini çalıştırabildiğini bildirdi. Gönderiye göre, birkaç hafta önce modelin çalıştırılamadığı bir dönemde, yeni kod güncellemesi sayesinde 100 GB'lık model, sadece 58 GB GPU belleği kullanarak devreye alındı.\n\nKullanıcı, modelin 130 k token bağlam penceresini desteklediğini ve kısa bir oturumda elde ettiği performans istatistiklerini paylaştı. Toplam 13 istek üzerinden 321.309 ön doldurma token'ı ve 292.209 önbelleğe alınmış token işlenerek %90,9 önbellek verimliliği elde edildi. Önbellek dışı prompt işleme hızı 140,0 token/saniye, token üretim hızı ise 15,8 token/saniye olarak ölçüldü.\n\nBu sonuçlar, oMLX'in agresif bellek koruma (Aggressive) ve Hot Cache Limit ayarının 2 GB olarak belirlenmesi, Lightning MTP'nin etkinleştirilmesi, MoE Uzman Offload özelliğinin açık olması ve %50 yerleşik uzman (Resident Experts) oranı gibi konfigürasyonlarla elde edildi. Özellikle büyük dil modellerinin sınırlı GPU belleği ortamlarında çalıştırılabilmesi, geliştiricilerin ve araştırmacıların daha düşük maliyetli donanımlarla yüksek kapasiteli modelleri test etmesine olanak tanıyor.\n\nBu gelişme, Apple Silicon tabanlı cihazların yapay zeka araştırmalarındaki rolünü güçlendirirken, topluluk destekli açık kaynak çerçevelerin (oMLX gibi) hızlı güncellemelerle performans sınırlarını zorlayabildiğini gösteriyor. Modelin çalıştırılabilirliği, yerel geliştirme ortamlarında büyük LLM'lerin deneme ve prototipleme süreçlerini hızlandıracak potansiyele sahip.",
+  "onemli_maddeler": [
+    "M3 Max çipli MacBook'ta 64 GB RAM ile 100 GB'lık Qwen3.8 modeli %58 GPU belleği kullanarak çalıştırıldı.",
+    "130 k token bağlam penceresi ve %90,9 önbellek verimliliği elde edildi.",
+    "Prompt işleme hızı 140 tok/s, token üretim hızı 15,8 tok/s olarak ölçüldü.",
+    "oMLX ayarları: Aggressive Memory Guard, 2 GB Hot Cache, Lightning MTP ve %50 Resident Experts."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Apple Silicon üzerinde büyük dil modellerinin düşük bellek tüketimiyle çalıştırılabilmesi, yerel AI geliştirme ekosistemini genişletiyor ve maliyet bariyerlerini düşürüyor.",
+  "etiketler": [
+    "M3Max",
+    "Qwen3.8",
+    "oMLX",
+    "LLM",
+    "GPU"
+  ],
+  "anilan_modeller": [
+    "Qwen3.8-Flash-Next-oQ4e-mtp"
+  ],
+  "yorum_tr": "Bu başarı, Apple ekosisteminde büyük dil modellerinin daha geniş bir kullanıcı kitlesi tarafından deneyimlenebileceğini gösteriyor; geliştiriciler düşük maliyetli donanımla yüksek kapasiteli modelleri test edebilecek, kullanıcılar ise yerel AI uygulamalarının performansından faydalanabilecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen3.8-Flash-Next-oQ4e-mtp",
+      "benchmark": "Prompt Processing Speed",
+      "skor": 140,
+      "birim": "token/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "excl. cached",
+      "kaynak_metinden_alinti": "Prompt Processing (excl. cached): 140.0 tok/s"
+    },
+    {
+      "model": "Qwen3.8-Flash-Next-oQ4e-mtp",
+      "benchmark": "Token Generation Speed",
+      "skor": 15.8,
+      "birim": "token/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Token Generation: 15.8 tok/s"
+    },
+    {
+      "model": "Qwen3.8-Flash-Next-oQ4e-mtp",
+      "benchmark": "Cache Efficiency",
+      "skor": 90.9,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Cache Efficiency: 90.9%"
+    }
+  ],
+  "gorsel_url": "https://i.redd.it/czj3fqlphpoh1.png",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x2tstj/omg_if_you_have_a_mac_with_64gb_try/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-11T00:00:40.000Z",
+  "slug": "omg-if-you-have-a-mac-with-64gb-try-qwen3-8-flash-next-oq4e-"
+}
