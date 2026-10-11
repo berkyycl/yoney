@@ -1,0 +1,64 @@
+{
+  "baslik_tr": "Ternary Ağırlıklarla 27B LLM'i Laptopta Çalıştırma İmkanı",
+  "ozet_tr": "GPU sınırlı kullanıcılar artık 27 milyar parametreli büyük dil modellerini sıradan bir laptopta çalıştırabilecek. Yeni ternary (üçlü) ağırlık formatı, model boyutunu %90'ı kadar küçülterek %98,2 oranında FP16 zekâsını koruyor ve Apple M5 Max'te 47 token/sn hız sağlıyor.",
+  "detayli_icerik_tr": "Reddit'in LocalLLaMA topluluğu, 27B sınıfı bir dil modelini ternary (1,0,-1) ağırlıklarla sıkıştırarak, standart bir laptop ya da tek bir GPU üzerinde çalıştırılabilir hâle getirdi. Model, FP16 formatındaki 54 GB'lık boyutundan %89,3 daha küçük, sadece 5,9 GB'lık bir dosya haline geldi. Bu sıkıştırma, sadece gömülü katmanlar, dikkat projeksiyonları, MLP ve LM başlığı gibi tüm ağırlıkları kapsayan uçtan uca bir ternary temsiliyle sağlanıyor; her ağırlık ortalama 1,72 bit.\n\nYeni format, iki farklı GGUF paketleme seçeneği sunuyor: PTQ1_0 (tritler sıkı paketlenmiş, 1,75 bit/ağırlık, 5,95 GB) ve PQ2_0 (her trit 2-bit yuvasında, 2,13 bit/ağırlık, 7,21 GB). Bu paketler, llama.cpp içinde CUDA ve Metal destekli özel ternary hibrit-dikkat çekirdekleriyle doğrudan kullanılabiliyor; ağırlıklar FP16'ya geri dönüştürülmeden işleniyor. Model, Qwen3.8-27B hibrit‑dikkat omurgası sayesinde %75 lineer dikkatle 262K token bağlamını cihazda tutabiliyor.\n\nPerformans açısından model, 14 farklı düşünme‑modu benchmark'ında ortalama 84,78 puan alarak, aynı sınıftaki IQ2_XXS (72,59) modelinden %12 daha yüksek bir skor elde etti ve UD‑Q4_K_XL modeline sadece 0,4 puan farkla yaklaştı. Matematik yeteneği %96,57, kodlama %89,42 ve araç çağırma (agentic tool calling) %74,92 oranlarında tam hassasiyetine çok yakın sonuçlar gösterdi. Apple M5 Max laptopta ise model 47 token/sn hızla çalışıyor, bu da düşük‑bit temsillerin pratik kullanımda hâlâ yüksek verimlilik sunabildiğini kanıtlıyor.\n\nBu gelişme, düşük‑bütçeli araştırmacılar ve geliştiriciler için büyük dil modellerine erişimi demokratikleştiriyor. Modelin düşük bellek gereksinimi, bulut tabanlı GPU kiralama maliyetlerini azaltırken, yerel cihazlarda gizlilik odaklı uygulamaların geliştirilmesine de olanak tanıyor.",
+  "onemli_maddeler": [
+    "27B model, ternary ağırlıklarla %9,3 daha küçük bir boyuta (5,9 GB) indirildi.",
+    "FP16 zekâsının %98,2'si korundu; 14 benchmark'ta ortalama 84,78 puan.",
+    "Apple M5 Max'te 47 token/sn hızla çalışıyor, 262K token bağlamını destekliyor.",
+    "İki GGUF paketi (PTQ1_0 ve PQ2_0) sayesinde CUDA ve Metal uyumlu özel çekirdekler kullanılıyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Model, büyük dil modellerine düşük donanımda erişimi mümkün kılarak araştırma ve geliştirme ekosistemini genişletiyor.",
+  "etiketler": [
+    "LLM",
+    "ternary",
+    "low-bit",
+    "llama.cpp",
+    "benchmark"
+  ],
+  "anilan_modeller": [
+    "27B ternary model",
+    "IQ2_XXS",
+    "UD-Q4_K_XL",
+    "Qwen3.8-27B"
+  ],
+  "yorum_tr": "Bu sıkıştırma yöntemi, yüksek performanslı LLM'leri düşük maliyetli donanımla çalıştırma olanağı sunarak geliştiricilerin prototip aşamasını hızlandıracak ve gizlilik odaklı yerel uygulamaların önünü açacaktır.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "27B ternary model",
+      "benchmark": "Ortalama düşünme-modu skoru",
+      "skor": 84.78,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "14 thinking-mode benchmarks",
+      "kaynak_metinden_alinti": "84.78 average across 14 thinking-mode benchmarks — far above the conventional IQ2_XXS build (72.59)"
+    },
+    {
+      "model": "27B ternary model",
+      "benchmark": "Matematik doğruluğu",
+      "skor": 96.57,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "math within half a point of full precision (96.57)"
+    },
+    {
+      "model": "27B ternary model",
+      "benchmark": "Kodlama yeteneği",
+      "skor": 89.42,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "coding level with the baseline (89.42)"
+    }
+  ],
+  "gorsel_url": "https://external-preview.redd.it/S5Epz-h1IF8rY10f_g3um6PYvBRk9vc-cOX7t7QsBv4.png?width=640&crop=smart&auto=webp&s=2d18ec4ac975eb73739faeba2be3114d3c9dc071",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x37kxn/now_you_can_grow_bonsai_on_your_potato/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-11T12:58:20.000Z",
+  "slug": "now-you-can-grow-bonsai-on-your-potato"
+}

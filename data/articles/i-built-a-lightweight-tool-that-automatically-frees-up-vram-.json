@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "GamePause: VRAM'ı otomatik boşaltan ve yerel LLM'leri geri yükleyen hafif Windows aracı",
+  "ozet_tr": "Yerel büyük dil modellerini (LLM) sürekli çalıştıran kullanıcılar, oyun oynarken VRAM sıkıntısı yaşıyordu. Bu sorunu çözmek için geliştirilen GamePause, oyun başladığında modelleri otomatik olarak boşaltıp, oyun bittiğinde geri yükleyerek kesintisiz bir deneyim sunuyor.",
+  "detayli_icerik_tr": "Yerel LLM'leri 7/24 çalıştıran ve aynı zamanda oyun oynamayı seven kullanıcılar için VRAM yönetimi uzun süredir bir engel oluşturuyordu. Zainfear adlı geliştirici, bu sorunu ortadan kaldırmak amacıyla GamePause adlı hafif bir Windows tepsi uygulaması geliştirdi. Uygulama, Steam, Epic, GOG gibi popüler oyun platformlarını algılayarak oyun başlatıldığında LM Studio ve Ollama gibi yerel model sunucularını durdurup VRAM'ı serbest bırakıyor; oyun sona erdiğinde ise modelleri otomatik olarak yeniden başlatıyor.\n\nGamePause, her oyun için özelleştirilebilir kurallar, manuel kontrol seçenekleri ve çökme durumunda kurtarma mekanizmaları sunuyor. Model sunucusu seviyesinde çalıştığı için, bir sohbet arayüzü, kod asistanı ya da Hermes, OpenClaw gibi otonom ajanlar üzerinden çalışan herhangi bir LLM'den bağımsız olarak işlev görüyor. Kullanıcılar, tek bir kurulumla aracı çalıştırıp, veri toplama, telemetri ya da hesap gerektirmeden tamamen yerel bir ortamda faydalanabiliyor.\n\nUygulama Rust programlama diliyle yazılmış ve MIT lisansı altında açık kaynak olarak GitHub'da paylaşılmış. Geliştirici, aracın kararlı ve test edilmiş olduğunu belirterek, kullanıcıların karşılaştıkları sorunları GitHub üzerinden raporlamasını istiyor. Bu sayede topluluk katkılarıyla araç daha da geliştirilebilir ve farklı model sağlayıcıları için destek genişletilebilir.\n\nGamePause, özellikle sınırlı VRAM kapasitesine sahip tek kartlı sistemlerde çalışan araştırmacılar, geliştiriciler ve oyun tutkunları için pratik bir çözüm sunuyor. Otomatik model yönetimi, hem oyun performansını artırıyor hem de LLM'lerin kesintisiz çalışmasını sağlıyor, böylece iki farklı iş akışı arasında geçiş maliyeti ortadan kalkıyor.",
+  "onemli_maddeler": [
+    "GamePause, oyun başladığında LM Studio ve Ollama gibi yerel LLM'leri otomatik olarak durdurup VRAM'ı boşaltıyor.",
+    "Oyun bittiğinde modeller otomatik olarak yeniden yükleniyor; per‑oyun kuralları ve manuel kontrol seçenekleri mevcut.",
+    "Rust ile geliştirilmiş, MIT lisanslı ve tamamen açık kaynak; telemetri ve hesap gerektirmiyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "VRAM yönetimi, tek kartlı sistemlerde LLM ve oyun performansını aynı anda korumak isteyen geniş bir kullanıcı kitlesi için kritik bir sorun.",
+  "etiketler": [
+    "VRAM",
+    "LLM",
+    "GamePause",
+    "Rust",
+    "Open-source"
+  ],
+  "anilan_modeller": [
+    "LM Studio",
+    "Ollama",
+    "Hermes",
+    "OpenClaw"
+  ],
+  "yorum_tr": "GamePause, geliştiricilerin ve araştırmacıların yerel LLM'leri oyunla aynı makinede sorunsuz çalıştırmasını sağlayarak verimliliği artırıyor. Otomatik VRAM yönetimi, hem oyun deneyimini hem de model erişilebilirliğini iyileştirerek iki ayrı iş akışını birleştiriyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/nlg0xgjcovuh1.png?width=640&crop=smart&auto=webp&s=60a65f9c005d3c7d200e6fa95511f77577452855",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x3f1nf/i_built_a_lightweight_tool_that_automatically/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-11T18:07:05.000Z",
+  "slug": "i-built-a-lightweight-tool-that-automatically-frees-up-vram-"
+}

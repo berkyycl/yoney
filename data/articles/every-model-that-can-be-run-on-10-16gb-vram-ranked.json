@@ -1,0 +1,45 @@
+{
+  "baslik_tr": "10-16 GB VRAM Aralığında Çalışabilen LLM'ler Detaylı Sıralandı",
+  "ozet_tr": "Reddit topluluğu LocalLLaMA, 10‑16 GB VRAM ve 26‑32 GB RAM gerektiren büyük dil modellerini hız, tutarlılık, dil nüansları ve talimat uyumu gibi kriterlere göre derecelendirdi. En yüksek puanı Gemma 4 26B‑A4B alırken, Qwen, GLM ve Mistral serileri de farklı güçlü yönleriyle listede yer aldı.",
+  "detayli_icerik_tr": "Geçtiğimiz dört yılda ChatGPT gibi sohbet botları halüsinasyon yeteneklerinde ilerleme kaydetse de, topluluk üyeleri hâlâ düşük VRAM kapasiteli sistemlerde kullanılabilecek, 64 k bağlam penceresine sahip ve yaratıcı yanıtlar üretebilen modeller arıyor. Bu bağlamda, 10‑16 GB VRAM ve 26‑32 GB RAM sınırları içinde çalışan modeller, KoboldAI ya da LLAMA arayüzleri üzerinden test edildi.\n\nDeğerlendirme ölçütleri dört ana başlıkta toplandı: (1) Hız – saniyede en az 10 token üretme; (2) Tutarlılık – diyalog ve monologların mantıksal bütünlüğü; (3) Dil nüansları – yazım hataları, argo ve sert üslup gibi varyasyonları anlama yetisi; (4) Talimat uyumu – 23 karmaşık kuralı içeren “Pandora Instructions” gibi talimat setlerini sorunsuz işleyebilme. Censorship (reddetme oranı) düşük tutuldu; modellerin NSFL içeriklerde bile yanıt vermesi tercih edildi.\n\nSıralama, Gemma 4 26B‑A4B modelinin en üstte yer almasıyla başladı; ardından Qwen 35B‑A3B, Qwen 3.6 35B‑A3B, Gemma 4 Instruct 19B‑A1B ve The Omega Directive 14B gibi modeller geldi. GLM‑4.7‑Flash 31B‑A3B, Qwen3 30B A1.5B 64K ve çeşitli “Heretic”, “Uncensored” ve “Deckard” türevleri de performans, yaratıcılık ve tutarlılık açısından farklı avantajlar sundu. Özellikle 200 B üzeri modellerin anime, manga ve film gibi medya bilgisine sahip olduğu, 120 B modellerin ise bu veritabanını nadiren barındırdığı tespit edildi.\n\nKoboldAI bazı modelleri yükleyemediği için Qwen 35B ve GLM 31B gibi büyük modellerin LLAMA arayüzüyle çalıştırılması önerildi. Ayrıca, 24 GB VRAM (ör. RTX 3090) sahip kullanıcılar için Omega Darker, Qwen3 24B‑A4B, Cydonia 24B gibi daha büyük modellerin alternatifleri listelendi. Test edilmemiş ya da performans açısından elenen modeller arasında Mistral 24B, GPT 20B OSS, Kimi K2 ve DeepSeek gibi popüler seçenekler de yer alıyor.",
+  "onemli_maddeler": [
+    "10‑16 GB VRAM sınırında 64 k bağlam penceresi sunan modeller, FlashAttention ve SmartCache gibi optimizasyonlarla yüksek hızda çalışabiliyor.",
+    "Gemma 4 26B‑A4B en yüksek puanı alırken, Qwen ve GLM serileri farklı yaratıcı ve mantıksal avantajlarla ikinci ve üçüncü sırada yer alıyor.",
+    "200 B üzeri modeller medya bilgisi bakımından belirgin üstünlük gösteriyor; 120 B modeller ise bu alanda eksik kalıyor."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Küçük ölçekli donanımlarda yüksek performanslı LLM'lerin seçimi, yerel AI geliştirme ve araştırma toplulukları için kritik bir rehber niteliği taşıyor.",
+  "etiketler": [
+    "LLM",
+    "VRAM",
+    "benchmark",
+    "KoboldAI",
+    "LLAMA"
+  ],
+  "anilan_modeller": [
+    "Gemma 4 26B-A4B",
+    "Qwen 35B-A3B",
+    "Qwen 3.6 35B-A3B",
+    "Gemma 4 Instruct 19B-A1B",
+    "The Omega Directive 14B",
+    "GLM-4.7-Flash 31B-A3B",
+    "Qwen3 30B A1.5B 64K",
+    "MN CaptainErisNebula Chimera Heretic Uncensored 12B",
+    "Mistral Nemo Instruct 2407 HERETIC HI Claude Opus 12B",
+    "Gemma 3 12b",
+    "GLM 4.6V Flash Hybrid",
+    "Gemma 4 E4B UD",
+    "LFM2 12B A1B SpeedDemon",
+    "The Deckard II HERETIC (Uncensored)"
+  ],
+  "yorum_tr": "Bu sıralama, düşük bellekli sistemlerde çalışan LLM'lerin seçiminde pratik bir yol haritası sunarak geliştiricilerin ve hobi kullanıcılarının performans‑fiyat dengesini daha iyi değerlendirmesine olanak tanıyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://blog.laozhang.ai/posts/en/best-local-coding-llm-16gb-vram/img/cover.webp",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x3gpyi/every_model_that_can_be_run_on_1016gb_vram_ranked/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-11T19:12:36.000Z",
+  "slug": "every-model-that-can-be-run-on-10-16gb-vram-ranked"
+}

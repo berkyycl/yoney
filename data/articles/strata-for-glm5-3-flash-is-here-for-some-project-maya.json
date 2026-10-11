@@ -1,0 +1,44 @@
+{
+  "baslik_tr": "Project Maya ile GLM-5.3 Flash Modeli Hızlandırıldı",
+  "ozet_tr": "Yerel GPU'larda çalışan 321 milyar parametreli GLM‑5.3 Flash modeli, Project Maya sayesinde token başına hızını 10'dan 30'a, dört RTX 4090'la ise 118 token/s'ye çıkardı. Modelin %97,7‑99,2 arası orijinal FP8 doğruluğunu koruması, büyük dil modellerinin veri merkezi bağımlılığını azaltıyor.",
+  "detayli_icerik_tr": "Reddit topluluğu LocalLLaMA'da paylaşılan bilgilere göre, GLM‑5.3‑Flash modelinin önceki sürümü yalnızca yaklaşık 10 token/s hızla çalışıyordu ve pratik kullanım için yetersizdi. Project Maya adlı açık kaynak proje, bu modeli tek bir RTX 5090 üzerinde 30 token/s seviyesine çıkarırken, dört RTX 4090 konfigürasyonunda 118 token/s'ye ulaşarak performansı dramatik biçimde artırdı.\n\nMaya, 321 milyar parametreli modeli yerel donanımda çalıştırmak üzere özel bir motor sunuyor. Modelin bir token üretimi sırasında yaklaşık 18 milyar aktif parametre kullanılıyor ve 1 M token'a kadar bağlam uzunluğunu destekliyor. Motor, en çok kullanılan uzmanları (experts) GPU'da, bir sonraki seviyedekileri RAM'de ve geri kalanını NVMe SSD'de tutarak dinamik bir bellek yönetimi sağlıyor; ayrıca sistemin GPU, CPU, RAM ve SSD kapasitesini ölçerek otomatik ayarlamalar yapıyor.\n\nProject Maya, MIT lisanslı ZAI‑org kod tabanını kullanıyor ve tamamen yerel çalışıyor; verileriniz hiçbir zaman dışarı çıkmıyor. Kullanıcılar, OpenAI ve Anthropic uyumlu API'ler aracılığıyla sohbet, görsel üretim ve araç çağrıları (tool calls) gibi işlevleri tek komutla kurup entegre edebiliyor. Pakette tarayıcı tabanlı bir sohbet arayüzü, canlı izleme paneli, düşünce seviyeleri ve resim üretimi gibi özellikler de bulunuyor.\n\nPerformans ölçümlerine göre, Maya'nın kendi kuantizasyon teknikleri, orijinal FP8 modelinin sıfır‑şot (zero‑shot) doğruluk performansının %97,7‑99,2'sini koruyor. Bu, modelin hız artışıyla birlikte kalite kaybının minimum seviyede tutulduğunu gösteriyor ve büyük dil modellerinin daha geniş bir kullanıcı kitlesi tarafından erişilebilir olmasını sağlıyor.",
+  "onemli_maddeler": [
+    "Project Maya, GLM‑5.3‑Flash modelini tek RTX 5090'da 30 token/s, dört RTX 4090'da 118 token/s hızla çalıştırabiliyor.",
+    "Model 321 milyar parametreye sahip ve 1 M token bağlam uzunluğunu destekliyor; aktif parametre sayısı token başına yaklaşık 18 milyar.",
+    "Maya'nın kuantizasyonu, orijinal FP8 modelinin %97,7‑99,2 sıfır‑şot doğruluk oranını koruyor.",
+    "Tamamen yerel çalışıyor, veri dışarı çıkmıyor ve OpenAI/Anthropic uyumlu API ile araç çağrıları sunuyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "GLM‑5.3‑Flash gibi devasa bir modelin yerel GPU'larda yüksek performansla çalıştırılabilmesi, büyük dil modellerinin veri merkezi bağımlılığını azaltarak daha geniş bir geliştirici ve kullanıcı kitlesine ulaşmasını sağlıyor.",
+  "etiketler": [
+    "GLM-5.3",
+    "Project Maya",
+    "GPU",
+    "Yerel AI",
+    "API"
+  ],
+  "anilan_modeller": [
+    "GLM-5.3-Flash",
+    "Qwen 3.8 Flash"
+  ],
+  "yorum_tr": "Bu gelişme, yüksek kapasiteli modellerin yerel ortamda kullanılabilirliğini artırarak araştırmacıların ve geliştiricilerin maliyetlerini düşürürken, veri gizliliği açısından da önemli bir adım sunuyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GLM-5.3-Flash (Project Maya)",
+      "benchmark": "Token üretim hızı",
+      "skor": 118,
+      "birim": "token/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "4 RTX 4090",
+      "kaynak_metinden_alinti": "Fast: up to 118 tokens/s on four RTX 4090s"
+    }
+  ],
+  "gorsel_url": "https://opengraph.githubassets.com/29fb50a54dcc5e8b5fdc6be961b408bfc16bf0cddb673cbc69b700a7f5c95822/mw00/project-maya",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x3fxzj/strata_for_glm53_flash_is_here_for_some_project/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-11T18:42:01.000Z",
+  "slug": "strata-for-glm5-3-flash-is-here-for-some-project-maya"
+}

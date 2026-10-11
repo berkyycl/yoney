@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "Yerel AI Kullanımı Heyecan Verici, Bunaltıcı ve Sinir Kırıcı Olabilir",
+  "ozet_tr": "The Verge yazarının, 256 GB birleştirilmiş belleğe sahip M5 Ultra Mac Studio’da açık kaynaklı Hermes Agent ve 125 milyar parametreli Qwen 3.8 Flash Next modelini çalıştırarak yerel yapay zekâ deneyimini anlatan günlüğü, gizlilik avantajlarıyla birlikte pratik kullanım senaryolarını ve karşılaşılan zorlukları ortaya koyuyor.",
+  "detayli_icerik_tr": "Antonio G. Di Benedetto, kişisel verilerini bulut hizmetlerine vermekten çekindiği için yerel AI çözümlerine yöneldiğini ve bu süreci bir günlük şeklinde belgelediğini belirtiyor. Apple’ın yeni Mac Studio serisinin yerel AI performansını vurgulaması ve RTX Spark tabanlı Windows makinelerinin 128 GB RAM’e kadar çıkması, yazarın deneme platformu olarak seçtiği M5 Ultra Mac Studio’nun 256 GB birleştirilmiş belleği sayesinde neredeyse her açık kaynak modelini çalıştırabilmesine olanak tanıdı. Hermes Agent, macOS, Windows ve Linux’da çalışabilen ücretsiz bir AI ajanı olarak kuruldu; yazar, model seçicisi üzerinden Qwen 3.8 Flash Next (125 milyar parametre, yaklaşık 105 GB) modelini seçerek ilk denemesini yaptı.\n\nİlk testlerde Hermes, Telegram botu aracılığıyla telefon üzerinden kontrol edilebildi ve yazar, sabah e‑posta ve takvim taraması yapan bir günlük brifing oluşturdu. Başlangıçta macOS’un uyku modunda olması brifingin başarısız olmasına yol açtı, ancak sorunu çözerek rutin hâle getirdi. Daha sonra, Steam kütüphanesindeki 400'den fazla oyunu türlerine göre otomatik sınıflandırmak için Hermes’e Steam Web API anahtarı verildi; ajan sadece birkaç dakikada oyunları istenen kategorilere ayırdı ve anahtar kolayca iptal edildi.\n\nYerel AI’nın gizlilik avantajı, yazarın finansal kayıtları analiz etmesi ve yeni bir laptop için teknik karşılaştırma tablosu oluşturması gibi hassas görevlerde de ortaya çıktı; bu veriler buluta gönderilmediği için güvenli bir ortam sağlandı. En büyük otomasyon hedefi, laptop benchmark testlerini bir dizi Python betiğiyle otomatikleştirmek; bu hâlâ geliştirme aşamasında ve bazı adımlar hâlâ elle yapılmak zorunda. Yazar, yerel AI’nın hâlâ kusursuz bir asistan olmadığını, günlük brifingin gibi görevlerin zaman zaman kırıldığını ve sistemin bir araç olarak görülmesi gerektiğini vurguluyor.",
+  "onemli_maddeler": [
+    "Hermes Agent, macOS, Windows ve Linux’da çalışabilen ücretsiz bir yerel AI ajanı olarak Qwen 3.8 Flash Next gibi 125 milyar parametreli modelleri çalıştırabiliyor.",
+    "256 GB birleştirilmiş belleğe sahip M5 Ultra Mac Studio, büyük modelleri yerel ortamda çalıştırmak için yeterli güce sahip.",
+    "Yerel AI, kişisel veri gizliliği sayesinde e‑posta, takvim, finansal kayıt ve Steam kütüphanesi gibi hassas görevlerde bulut hizmetlerine bağımlılığı ortadan kaldırıyor.",
+    "Uygulama geliştirme ve otomasyon (ör. laptop benchmark testleri) hâlâ zorluklar içeriyor; sistem hataları ve model kararlılığı sorunları devam ediyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Yerel AI çözümlerinin gizlilik, maliyet ve performans açısından kritik bir alternatif sunması, geliştiricilerin ve ileri düzey kullanıcıların ilgisini çekecek bir trend oluşturuyor.",
+  "etiketler": [
+    "yerel AI",
+    "Hermes Agent",
+    "Qwen",
+    "Mac Studio",
+    "AI ajanları"
+  ],
+  "anilan_modeller": [
+    "Qwen 3.8 Flash Next",
+    "Qwen (küçük versiyonlar)"
+  ],
+  "yorum_tr": "Yerel AI’nın yükselişi, veri gizliliği ve maliyet etkinliği arayan geliştiriciler için yeni bir ekosistem yaratırken, hâlâ olgunlaşma aşamasında olduğu için entegrasyon ve kararlılık sorunlarıyla karşılaşılabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/100926_Asus_TUF_A14_Hermes_local_AI_ADiBenedetto_0001.jpg?quality=90&strip=all&crop=0,0,100,100",
+  "url": "https://www.theverge.com/ai-artificial-intelligence/1008484/learning-local-ai-hermes-qwen-model-mac-studio-testing-diary-progress",
+  "source": "The Verge AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-11T11:00:00.000Z",
+  "slug": "learning-to-use-local-ai-is-exciting-overwhelming-and-frustr"
+}

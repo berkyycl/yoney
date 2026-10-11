@@ -1,0 +1,44 @@
+{
+  "baslik_tr": "Qwen3.8-27B Megakernel RTX 3090'da 140 tok/s Hıza Ulaştı, Llama.cpp ile Karşılaştırıldı",
+  "ozet_tr": "Qwen3.8-27B modelini tek bir RTX 3090 üzerinde çalıştıran yeni CUDA megakernel, aynı donanımda Llama.cpp'dan %1.4‑1.9 daha hızlı token üretimi sağlıyor. Benchmark sonuçları kalite kaybı olmadan, KL divergence değerlerinin 0.0009 gibi düşük seviyelerde kaldığını gösteriyor. Bu güncelleme, büyük dil modellerinin tek GPU’da daha verimli kullanılabilmesi için önemli bir adım niteliğinde.",
+  "detayli_icerik_tr": "OpenJet ekibi, Qwen3.8-27B modeline özel olarak geliştirdiği CUDA megakernel'i halka sundu ve performansını Llama.cpp ile yan yana test etti. Megakernel, tek bir RTX 3090 kartında kod üretiminde 140 token/s, akıl yürütme modunda 78 token/s hızına ulaşırken, Llama.cpp sırasıyla 73 ve 51 token/s değerlerini verdi. Prefill (prompt işleme) aşamasında ise megakernel 1.600 token/s, Llama.cpp 1.100 token/s hızlarıyla farkı korudu.\n\nKalite açısından yapılan ölçümlerde, megakernel'in top‑token eşleşme oranı 1K bağlamda %99.08 iken Llama.cpp %98.68 olarak kaydedildi. Ortalama KL divergence değerleri ise megakernel için 0.0009, Llama.cpp için 0.0019 nats olarak ölçüldü; 30K ve 96K bağlamlarda da benzer düşük farklar gözlendi. Perplexity ölçümünde megakernel 2.4274, Llama.cpp 2.4283 puan alarak referans 2.4263'e çok yakın sonuçlar verdi.\n\nMegakernel, spekülatif decoding (draft) mekanizmasını da destekliyor; 4‑5 draft token'ı bir turda kontrol ederek, tek bir token maliyetiyle aynı doğruluk seviyesini koruyor. Llama.cpp ise 2 draft ile çalışıyor. Bu sayede spekülatif decoding kapalıyken iki sistemin performansı neredeyse eşit (42.9 vs 40.4 tok/s) oluyor.\n\nProje, iki yeni PR ile model yükleyicisinin tensor tip kontrolü ve sunucu ısınma (warm‑up) sürecini ekledi. Quantizasyon desteği de genişletildi; Q4_K_M formatı megakernel için yerel, diğer formatlar ise Llama.cpp üzerinden çalışıyor. Tek GPU sınırı 24 GB ve üzeri RTX 30/40/50 serileriyle sınırlı; 147K bağlam uzunluğu 3090'da fp16 KV cache ile yaklaşık 80K, q8 ile çalıştırılabiliyor. Geliştiriciler, RTX 4090/5090 gibi kartlar ve farklı quantizasyonlar için optimizasyon katkısı bekliyor.",
+  "onemli_maddeler": [
+    "Megakernel, aynı RTX 3090'da Llama.cpp'dan %1.4‑1.9 daha hızlı token üretimi sağlıyor.",
+    "Kalite ölçümleri (top‑token eşleşme, KL divergence, perplexity) neredeyse Llama.cpp ile aynı seviyede.",
+    "Spekülatif decoding mekanizması 4‑5 draft token ile çalışıyor, bu da performans artışını maliyet artışı olmadan getiriyor.",
+    "Quantizasyon desteği genişletildi; Q4_K_M yerel, diğer formatlar Llama.cpp üzerinden çalışıyor."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Yeni megakernel, tek GPU’da büyük modellerin daha hızlı ve kalite kaybı olmadan çalışmasını sağlayarak araştırma ve geliştirme maliyetlerini düşürüyor, bu da topluluk ve endüstri için kritik bir performans iyileştirmesi.",
+  "etiketler": [
+    "Qwen3.8",
+    "megakernel",
+    "RTX3090",
+    "benchmark",
+    "CUDA"
+  ],
+  "anilan_modeller": [
+    "Qwen3.8-27B",
+    "llama.cpp"
+  ],
+  "yorum_tr": "Megakernel'in sunduğu hız artışı, tek kartlı sistemlerde büyük dil modellerinin daha geniş kullanım alanları bulmasını sağlayacak. Geliştiriciler, düşük KL divergence ve benzer perplexity değerleri sayesinde kaliteyi feda etmeden bu performansı projelerine entegre edebilecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen3.8-27B megakernel",
+      "benchmark": "Token generation speed (code writing)",
+      "skor": 140,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "single RTX 3090, CUDA megakernel",
+      "kaynak_metinden_alinti": "Speed (same 3090, megakernel vs llama.cpp with MTP) Writing code: 140 vs 73 tok/s"
+    }
+  ],
+  "gorsel_url": null,
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x37q7b/update_qwen_38_27b_140_toks_on_single_rtx_3090/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-11T13:04:42.000Z",
+  "slug": "update-qwen-3-8-27b-140-tok-s-on-single-rtx-3090-megakernel-"
+}

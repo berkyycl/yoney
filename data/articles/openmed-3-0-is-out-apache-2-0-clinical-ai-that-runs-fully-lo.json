@@ -1,0 +1,44 @@
+{
+  "baslik_tr": "OpenMed 3.0 Yayınlandı: Apache-2.0 Lisanslı Klinik AI, Tamamen Yerel Çalışıyor ve Buluta Bağlanmıyor",
+  "ozet_tr": "OpenMed'in yeni 3.0 sürümü, hasta verilerinin tamamen yerel cihazlarda kalmasını sağlayan açık kaynaklı bir klinik yapay zeka platformu olarak geldi. Yeni \"Patient Journey\" özelliği, farklı klinik sistemlerden gelen verileri tek bir zaman çizelgesinde birleştirirken hiçbir zaman bulut hizmetine yönelmiyor. Topluluk katkılarıyla şekillenen bu sürüm, veri gizliliği ve güvenliği konularında sektöre yeni bir standart sunuyor.",
+  "detayli_icerik_tr": "OpenMed, Apache-2.0 lisansına sahip bir tıbbi AI araç seti olarak, hasta verilerinin hiçbir zaman dışarıya çıkmamasını garanti ediyor. 3.0 sürümünde, önceki versiyonların tek belge bazlı çalışmasından farklı olarak, \"Patient Journey\" adı verilen bir modül eklenmiş; bu modül klinik notlar, FHIR akışları, HL7 mesajları, laboratuvar CSV'leri ve görüntü raporları gibi çeşitli kaynakları tek bir hastanın zaman çizelgesinde birleştiriyor. Veri birleştirme sürecinde %99 benzerlik dahi olsa otomatik birleştirme yapılmıyor; insan denetimi gerektiriyor ve olası çakışmalar işaretlenerek gözden geçirilmek üzere bırakılıyor.\n\nGizlilik odaklı yaklaşım, modelin hiçbir zaman bulut API'lerine yönelmemesini içeriyor. Kullanıcı, yerel bir modelle özet talep ettiğinde, model bu isteği reddediyor ve bulut tabanlı bir geri dönüşüm yapmıyor. Bu, özellikle sağlık verilerinin hassasiyeti göz önüne alındığında kritik bir güvenlik katmanı sağlıyor. Demo sürümde, beş karmaşık sentetik veri kaynağı sadece 0.07 saniyede tek bir hasta yolculuğuna dönüştürülerek offline performansın altını çiziyor.\n\nSürüm, yeni klinik model checkpoint'leri içermiyor; bunun yerine mevcut yerel modellerin bağlanabileceği bir altyapı sunuyor. Topluluk katkısı da önemli: 148 pull request 10 farklı geliştiriciden gelmiş, bunların 46'sı topluluk tarafından sağlanmış ve üç yeni katılımcı ilk katkılarını yapmış. Şu anda 3.1 sürümü geliştirme aşamasında ve 422 açık sorun ile 30 \"iyi bir başlangıç\" sorunu bulunuyor; bu da projeye yeni katılımcılar için geniş bir katkı alanı sunuyor.\n\nOpenMed'in GitHub deposu, pip üzerinden \"openmed==3.0.0\" komutuyla kurulabiliyor ve örnek kodlar \"openmed/examples/v3_golden_journey.py\" dosyasında yer alıyor. Proje, yerel AI çözümlerini sağlık sektörüne entegre etmek isteyen geliştiriciler ve araştırmacılar için bir altyapı ve topluluk platformu olarak konumlanıyor.",
+  "onemli_maddeler": [
+    "OpenMed 3.0, hasta verilerini %100 yerel tutarak bulut geri dönüşü olmadan çalışıyor.",
+    "\"Patient Journey\" özelliği, çoklu klinik veri kaynaklarını tek bir zaman çizelgesinde birleştiriyor ve çakışmaları manuel inceleme için işaretliyor.",
+    "Demo sürecinde beş sentetik veri kaynağı sadece 0.07 saniyede birleştirilebiliyor.",
+    "Topluluk 148 PR, 46 topluluk katkısı ve 3 yeni katılımcı ile sürümü şekillendirdi.",
+    "3.1 sürümü 422 açık sorun ve 30 iyi başlangıç sorunu ile aktif geliştirme aşamasında."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Sağlık verilerinin gizliliği ve yerel AI altyapısının yaygınlaşması, sektördeki regülasyon ve güvenlik gereksinimlerine doğrudan yanıt veriyor.",
+  "etiketler": [
+    "açık-kaynak",
+    "klinik-AI",
+    "veri-gizliliği",
+    "lokal-model",
+    "sağlık-bilişimi"
+  ],
+  "anilan_modeller": [
+    "OpenMed 3.0"
+  ],
+  "yorum_tr": "OpenMed 3.0, veri gizliliği endişelerinin yüksek olduğu sağlık sektöründe yerel AI çözümlerine yönelimi hızlandıracak; geliştiriciler için açık bir altyapı ve topluluk desteği, klinik uygulamalarda daha güvenli ve uyumlu modellerin ortaya çıkmasını sağlayacak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "OpenMed 3.0",
+      "benchmark": "Sentetik hasta yolculuğu oluşturma süresi",
+      "skor": 0.07,
+      "birim": "seconds",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Demo runs fully offline: five messy synthetic sources become one journey in about 0.07s."
+    }
+  ],
+  "gorsel_url": "https://external-preview.redd.it/p6ktPMcx9JiZ_ua5NlDGuzSUEPhtF4vQ1nJ_8wtTqb0.png?width=640&crop=smart&auto=webp&s=697103511f7ab934a6263db4d152067c43588eb2",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x37z7z/openmed_30_is_out_apache20_clinical_ai_that_runs/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-11T13:16:26.000Z",
+  "slug": "openmed-3-0-is-out-apache-2-0-clinical-ai-that-runs-fully-lo"
+}

@@ -1,0 +1,36 @@
+{
+  "baslik_tr": "vllm-ascend GLM-5.3-Flash güncellemesi: Çift Ascend 310P kartta 8‑9 tok/s ve 311k token konteks",
+  "ozet_tr": "Matteiuspi, GLM-5.3-Flash modelini iki adet DDR4x 96 GB Ascend 310P kart üzerinde çalıştırarak 8‑9 token/s üretim hızı ve 311.040 tokenlık konteks uzunluğunu başardı. Model, 320 milyar parametreli bir MoE yapısına sahip olup, W2/W3/W4 kuantizasyonu sayesinde ağırlık depolama ihtiyacını düşürüyor.",
+  "detayli_icerik_tr": "Matteiuspi, bir hafta önce paylaştığı deneyimlerinden dersler çıkararak Ascend 310P kartlarıyla GLM-5.3-Flash modelini çalıştırdı. Model, 45 katman, 288 uzman (expert) ve top‑8 yönlendirme konfigürasyonuna sahip 320 milyar parametreli bir MoE (Mixture of Experts) yapısı; her token için ortalama 18 milyar aktif parametre kullanılıyor. W2/W3/W4 kuantizasyonu ağırlık depolama alanını azaltırken parametre sayısını aynı tutuyor.\n\nİlk denemelerde modelin bir token üretmesi yaklaşık 8 s sürerken, çekirdek optimizasyonları ve hot‑swap özelliği sayesinde model ağırlıkları bellekte tutularak yeniden yükleme süresi ortadan kaldırıldı. Sonuç olarak, üretim hızı 8‑9 token/s seviyesine yükseldi. Soğuk ön‑dolgu (cold‑prefill) süresi hâlâ uzun, çünkü arka planda ek bağlam verileri işleniyor; ancak sonraki istekler çok daha hızlı yanıt veriyor.\n\nMevcut yapılandırmada tek bir istek için 311.040 token (prompt + çıktı) işlenebiliyor; bu, 640 tokenlık ön‑dolgu parçacıkları halinde ve aynı anda en fazla dört paralel istekle gerçekleştirilebiliyor. Üçüncü Ascend kartının eklenmesiyle, n‑Ascend kartları için kernel optimizasyonları yapıldı ve qwen3.8‑flash‑next modeli başarıyla çalıştırıldı; bu model aynı zamanda görüntü işleme yeteneği ve 1 M tokenlık YaRN destekli konteks penceresi sunuyor.\n\nNvidia RTX 6000 Pro kartının arızalanmasının ardından, Ascend Sidecard konsepti geliştirildi. Bu konsept, model yürütmesini CUDA tabanlı GPU'lar ve Ascend kartları arasında bölerek ağırlık ve işlem yükünü dengelemeyi hedefliyor. Ascend çekirdeklerinin depolama kapasitesi, RTX 6000'ün yaklaşık %14 fiyatıyla benzer bir bellek sunuyor, bu da maliyet‑verimlilik açısından dikkat çekici bir avantaj sağlıyor.",
+  "onemli_maddeler": [
+    "GLM-5.3-Flash, 320 M parametreli MoE modeli, 18 B aktif parametre/token ve top‑8 yönlendirme ile çalışıyor.",
+    "İki Ascend 310P kartta 8‑9 token/s üretim hızı elde edildi; soğuk ön‑dolgu süresi uzun olsa da sonraki istekler hızlı.",
+    "Maksimum 311.040 tokenlık konteks uzunluğu, 640 tokenlık ön‑dolgu parçacıkları ve 4 eşzamanlı istek desteği sağlandı.",
+    "Üçüncü Ascend kartı eklenerek qwen3.8‑flash‑next ve YaRN 1 M token konteks penceresi başarıyla çalıştırıldı.",
+    "Ascend Sidecard konsepti, CUDA ve Ascend arasında model yürütmesini bölerek maliyet‑verimliliği artırmayı hedefliyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Ascend donanımının yüksek bellek kapasitesi ve düşük maliyeti, büyük MoE modellerinin verimli çalıştırılmasında yeni bir alternatif sunuyor; bu da AI araştırma ve üretim ortamları için kritik bir gelişme.",
+  "etiketler": [
+    "Ascend",
+    "GLM-5.3-Flash",
+    "vllm",
+    "MoE",
+    "benchmark"
+  ],
+  "anilan_modeller": [
+    "GLM-5.3-Flash",
+    "qwen3.8-flash-next",
+    "qwen-flash-next"
+  ],
+  "yorum_tr": "Bu güncellemeler, Ascend ekosisteminin büyük ölçekli MoE modellerini düşük maliyetle ve yüksek bellek kapasitesiyle çalıştırabileceğini gösteriyor; geliştiriciler artık GPU‑CPU hibrit çözümlerle performans ve maliyet dengesini daha iyi yönetebilecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/cDlodjl2emtmdnVoMc3b8DR-RlTxlkgGkCpaXGJ7Wpgjku7WZgMXeuISEOg-.png?width=640&crop=smart&auto=webp&s=e1501117782e57d87e2f1b5952b0125053dcd0d4",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x3dpv3/vllmascend_updates_glm53flash_on_dual_310p_ascend/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-11T17:14:40.000Z",
+  "slug": "vllm-ascend-updates-glm5-3-flash-on-dual-310p-ascend-cards"
+}
