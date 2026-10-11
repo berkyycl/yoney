@@ -1,0 +1,88 @@
+{
+  "baslik_tr": "102M'lik Recursive BitNet-v2 modelini sıfırdan eğittim: 64K bağlam, 5B'den az token",
+  "ozet_tr": "Bir geliştirici, sadece 100 € bütçeyle 102 M parametreli Recursive BitNet‑v2 modelini sıfırdan eğitti. Model, 64 K tokenlik bağlam uzunluğuna ve ternary ağırlıklara sahip olup, çeşitli akademik benchmarklarda ortalama %40.59 başarı elde etti.",
+  "detayli_icerik_tr": "Illustrious-Fig-2280, Cosmo2 tokenizatörünü 49.152 kelime dağarcığıyla kullanarak 102,28 M benzersiz parametreli bir decoder‑only transformer geliştirdi. Model, 1.024 gizli boyutu, 16 sorgu başlığı ve 4 KV başlığıyla grup‑sorgu dikkat mekanizması ve kare‑ReLU besleme katmanları içeriyor. Altı transformer bloğu iki kez çalıştırılarak toplam on iki etkili katman sağlanıyor; bu iki geçiş aynı ağırlıkları paylaşırken, her derinlikte ayrı KV önbellekleri tutuluyor.\n\nModelin en dikkat çekici özelliği, ternary BitLinear projeksiyonları; ağırlıklar {-1,0,+1} değerlerinden ölçeklenerek ileri geçişte kullanılıyor ve FP32 master ağırlıkları ile BF16 aktivasyonları korunuyor. Ayrıca, 2‑, 3‑ ve 4‑gram token gömme tabanlı bir hash tablosu eklenerek giriş gömmelerine yaklaşık 1,6 M parametre daha ekleniyor. Eğitim iki aşamada gerçekleşti: ilk aşamada 4 × NVIDIA B300 GPU ile 2 K‑4 K bağlamda 3,487 B token işlenirken, ikinci aşamada aynı donanımda 64 K bağlamda 1,216 B token işlendi; toplamda 4,703 B token kullanıldı.\n\nBenchmark testleri lm‑eval 0.4.12 ile zero‑shot, 2 048 tokenlik değerlendirme bağlamında yapıldı ve 20.465 soruya yanıt verildi. Elde edilen sonuçlar: ARC‑Easy %40.11, ARC‑Challenge %23.63, PIQA %57.62, WinoGrande %51.22, OpenBookQA %25.60, BoolQ %58.65 ve HellaSwag %27.27. Ağırlıkların ortalama başarı oranı %40.59 olarak belirlendi. Tekrarlayan geçiş sayısına göre yapılan ablasyon çalışması, tek geçiş %39.19, iki geçiş %40.59 ve üç geçiş %39.67 başarı oranları gösterdi.\n\nModel, 409,14 MB FP32 master ağırlıkları ve 124,24 MB paketlenmiş bir dışa aktarım dosyası olarak sunuluyor; paketleme, bir bayta beş ternary değer sıkıştırması yapıyor. Açık kaynak topluluğu, bu deneysel ön izlemeyi inceleyerek geri bildirimde bulunabilir ve modelin daha büyük ölçekli sürümlerine temel oluşturabilir.",
+  "onemli_maddeler": [
+    "Model, sadece 100 € bütçeyle 4,703 B token kullanılarak eğitildi.",
+    "Ternary BitLinear ağırlıkları ve hashed n‑gram gömmeleri sayesinde hafıza verimliliği artırıldı.",
+    "64 K tokenlik bağlam uzunluğu ve iki kez paylaşılan transformer blokları ile 12 etkili katman sağlandı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Küçük bütçeyle yüksek bağlam uzunluğuna sahip yeni bir mimarinin ortaya çıkması, açık kaynak LLM ekosisteminde yenilikçi araştırma ve düşük maliyetli model geliştirme fırsatları sunuyor.",
+  "etiketler": [
+    "BitNet",
+    "Recursive",
+    "Transformer",
+    "Benchmark",
+    "Open-Source"
+  ],
+  "anilan_modeller": [
+    "Recursive BitNet N-Gram 102M",
+    "Cosmo2 tokenizer"
+  ],
+  "yorum_tr": "Bu model, düşük maliyetli donanım ve sınırlı veriyle uzun bağlamlı görevlerde rekabetçi performans elde edilebileceğini göstererek, araştırmacıların ve geliştiricilerin daha verimli mimariler denemesine ilham verecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Recursive BitNet N-Gram 102M",
+      "benchmark": "ARC-Easy",
+      "skor": 40.11,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "zero-shot, 2,048-token context",
+      "kaynak_metinden_alinti": "ARC-Easy acc 40.11%"
+    },
+    {
+      "model": "Recursive BitNet N-Gram 102M",
+      "benchmark": "ARC-Challenge",
+      "skor": 23.63,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "zero-shot, 2,048-token context",
+      "kaynak_metinden_alinti": "ARC-Challenge acc_norm 23.63%"
+    },
+    {
+      "model": "Recursive BitNet N-Gram 102M",
+      "benchmark": "PIQA",
+      "skor": 57.62,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "zero-shot, 2,048-token context",
+      "kaynak_metinden_alinti": "PIQA acc 57.62%"
+    },
+    {
+      "model": "Recursive BitNet N-Gram 102M",
+      "benchmark": "WinoGrande",
+      "skor": 51.22,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "zero-shot, 2,048-token context",
+      "kaynak_metinden_alinti": "WinoGrande acc 51.22%"
+    },
+    {
+      "model": "Recursive BitNet N-Gram 102M",
+      "benchmark": "OpenBookQA",
+      "skor": 25.6,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "zero-shot, 2,048-token context",
+      "kaynak_metinden_alinti": "OpenBookQA acc_norm 25.60%"
+    },
+    {
+      "model": "Recursive BitNet N-Gram 102M",
+      "benchmark": "BoolQ",
+      "skor": 58.65,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "zero-shot, 2,048-token context",
+      "kaynak_metinden_alinti": "BoolQ acc 58.65%"
+    }
+  ],
+  "gorsel_url": "https://miro.medium.com/v2/resize:fit:1200/1*cWmyvoxGlqM5QR3oPhrHag.jpeg",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x34nyx/i_trained_a_102m_recursive_bitnetv2_model_from/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-11T10:19:08.000Z",
+  "slug": "i-trained-a-102m-recursive-bitnet-v2-model-from-scratch-64k-"
+}

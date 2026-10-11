@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "Microsoft AesCode 8B ve 32B Modelleri Görsel‑Kod Üretiminde Yeni Dönem",
+  "ozet_tr": "Microsoft, AesCode serisiyle 8 milyar ve 32 milyar parametreli modellerini duyurdu. Bu modeller, metin isteminden HTML/CSS tabanlı slayt, poster ve gösterge panelleri gibi bilgi‑ağır görsel artefaktlar üretirken, aynı zamanda görsel referansları da kullanarak düzen, renk ve hiyerarşi gibi tasarım unsurlarını koruyor.",
+  "detayli_icerik_tr": "AesCode, geleneksel kod üretim modellerinin görsel düzeni algılayamaması ve görüntü üreticilerinin metin‑sayısal doğrulukta sıkıntı yaşaması sorununu, iki akımı birleştirerek çözüyor. Model, aynı istemden oluşturulan bir görseli estetik referans olarak alıyor ve bu referansı, içerik gereksinimlerinden ayırarak grafik‑yapılandırılmış bir denetim sinyaliyle besliyor. Bu sayede üretilen HTML/CSS çıktısı hem düzenli, hem düzenlenebilir hem de doğrulanabilir oluyor.\n\nAesCode‑32B, Qwen3‑VL‑32B‑Instruct temel modeli üzerine inşa edildi. Model, önce soğuk‑başlangıç SFT (Supervised Fine‑Tuning) aşamasından geçiyor, ardından yedi ayrı ödül kanalına sahip GDPO (Generalized Direct Preference Optimization) süreciyle pekiştiriliyor. Bu çok yönlü ödül yapısı, semantik doğruluk, görsel uyum, kod kalitesi ve güvenilirlik gibi kriterleri aynı anda optimize ediyor. Sonuç olarak AesCode‑32B, toplu benchmark testlerinde en yüksek puanı alarak serinin en güçlü sürümü konumuna yükseldi.\n\nAesCode‑8B ise aynı mimariyi daha küçük bir parametre sayısıyla sunuyor; düşük kaynak gereksinimi sayesinde daha geniş bir kullanıcı kitlesi ve cihaz yelpazesinde çalışabiliyor. Her iki model de Hugging Face üzerinden indirilebilir hâlde ve Bartowski tarafından GGUF formatında da sağlanıyor, bu da yerel çalıştırma ve entegrasyon süreçlerini kolaylaştırıyor. Modelin açık kaynak doğası, topluluk tarafından hızla test edilip iyileştirilebilmesini mümkün kılıyor.\n\nBu gelişme, özellikle veri analistleri, pazarlama ekipleri ve geliştiriciler için otomatik rapor, sunum ve gösterge paneli üretimini kodlama zahmeti olmadan gerçekleştirme fırsatı sunuyor. Görsel‑kod üretiminde hem tasarım hem de veri bütünlüğünü koruyan bir araç olarak AesCode, geleneksel görsel‑AI ve kod‑AI çözümlerinin sınırlarını yeniden tanımlıyor.",
+  "onemli_maddeler": [
+    "AesCode, görsel referans ve kod üretimini birleştirerek düzenli, edit edilebilir HTML/CSS çıktısı sağlıyor.",
+    "AesCode‑32B, Qwen3‑VL‑32B‑Instruct tabanlı, soğuk‑başlangıç SFT ve yedi kanallı GDPO ile eğitildi ve benchmarklarda lider konumda.",
+    "Hem 8B hem 32B modelleri Hugging Face üzerinden indirilebilir; 8B düşük kaynak gereksinimiyle geniş cihaz desteği sunuyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Yeni bir multimodal kod‑üretim modeli piyasaya sürülmüş, benchmarklarda liderlik elde etmiş ve geniş bir kullanıcı kitlesine hitap ediyor.",
+  "etiketler": [
+    "AesCode",
+    "HTML/CSS",
+    "multimodal",
+    "benchmark",
+    "Microsoft"
+  ],
+  "anilan_modeller": [
+    "AesCode-8B",
+    "AesCode-32B"
+  ],
+  "yorum_tr": "AesCode, görsel‑kod üretiminde hem tasarım hem de veri tutarlılığını tek bir modelde birleştirerek geliştiricilerin iş akışlarını hızlandıracak. Kullanıcılar, otomatik rapor ve gösterge paneli oluşturma sürecinde kodlama hatalarına ve tasarım tutarsızlıklarına daha az maruz kalacak.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/JqiobcLSnsGyntz8fqVm3NzYRO0NnuPEBczKacN9eLc.png?width=140&height=75&auto=webp&s=c66d19686e7928c487d8c40882d418fb87651e3d",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x35o1y/microsoftaescode_8b_and_32b/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-11T11:17:46.000Z",
+  "slug": "microsoft-aescode-8b-and-32b"
+}

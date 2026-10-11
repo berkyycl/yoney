@@ -1,0 +1,45 @@
+{
+  "baslik_tr": "Yoğun Modellerin MoE'ye Dönüştürülmesi: RTX 4060 Üzerinde Deneysel Sonuçlar",
+  "ozet_tr": "Kullanıcı Bayliner1980, RTX 4060 (8 GB) kartı ile Qwen2.5‑0.5B ve SmolLM2‑360M gibi küçük yoğun modelleri, %40‑44 oranında MLP hesaplamasını azaltan Mixture‑of‑Experts (MoE) yapılarına dönüştürdü. Dönüştürülmüş modeller, aynı bilgi birikimini korurken token başına maliyeti düşürse de, perplexity ve görev doğruluklarında belirgin bir performans kaybı yaşandı.",
+  "detayli_icerik_tr": "Reddit'in LocalLLaMA topluluğunda paylaşılmış bir gönderide, Bayliner1980 adlı kullanıcı, büyük laboratuvarların yüksek bütçelerle yaptığı \"upcycling\" yöntemini ev tipi bir RTX 4060 kartıyla denemeyi amaçladı. Yoğun (dense) modellerin MoE (Mixture‑of‑Experts) formatına dönüştürülmesi, her token için yalnızca bir kısmının (top‑8) MLP katmanını çalıştırarak hesaplama maliyetini yarıya indirmeyi hedefliyor. Bu deneyde iki küçük model seçildi: Qwen/Qwen2.5‑0.5B ve HuggingFaceTB/SmolLM2‑360M. Her iki model de 32 uzman (expert) ve ortak bir uzman katmanına sahip MoE yapılarına dönüştürüldü; dönüşüm sırasında bazı katmanlar (örneğin Qwen2.5‑0.5B’nin 23. katmanı) orijinal yoğun katmanlarıyla bırakıldı.\n\nDönüştürülmüş modeller, Qwen2‑MoE formatına dışa aktarıldı ve çeşitli benchmarklarla değerlendirildi. Qwen2.5‑0.5B‑MoE‑A0.3B modeli, token başına MLP hesaplamasını %40’a düşürürken WikiText‑2 ve C4 veri setlerinde perplexity değerleri sırasıyla 19.20 ve 28.97 olarak ölçüldü; yoğun modeldeki 14.66 ve 21.29 değerlerine kıyasla bir düşüş gösterdi. Benzer şekilde, SmolLM2‑360M‑MoE‑A0.2B modeli %44 MLP tasarrufu sağladı ve perplexity değerleri 19.11 (WikiText‑2) ve 26.50 (C4) oldu.\n\nGörev bazlı doğruluk ölçümlerinde de MoE modelleri, yoğun versiyonlarına göre ortalama %0.06‑0.10 puanlık bir gerileme sergiledi. Örneğin, Qwen2.5‑0.5B‑MoE‑A0.3B’nin HellaSwag norm puanı 0.440 iken yoğun modelde 0.497 idi; ARC‑Easy doğruluğu 0.555 (MoE) vs 0.646 (dense) şeklinde gerçekleşti. SmolLM2‑360M‑MoE‑A0.2B de benzer bir düşüş gösterdi.\n\nYazar, bu sonuçların modelin çok küçük ölçekli olmasından ve yalnızca %50’ye kadar MLP hesaplaması kullanılmasından kaynaklandığını belirtiyor. Daha büyük modellerde ve daha uzun eğitim süreçlerinde farklı uzman düzenlemeleriyle daha anlamlı iyileşmeler elde edilebileceği öngörülüyor. Bayliner1980, ileride daha büyük modelleri dönüştürmek ve topluluktan geri bildirim almak istediğini ifade ederek, destek amacıyla Ko‑fi bağlantısı ekledi.",
+  "onemli_maddeler": [
+    "RTX 4060 ile Qwen2.5‑0.5B ve SmolLM2‑360M modelleri %40‑44 MLP tasarrufu sağlayan MoE formatına dönüştürüldü.",
+    "MoE modelleri, perplexity ve görev doğruluklarında yoğun modellere göre %10‑30 arasında performans kaybı yaşadı.",
+    "Dönüştürme sırasında bazı katmanlar yoğun olarak bırakıldı; bu da hafif bir MLP hesaplama artışı getirdi ancak dönüşümün uygulanabilirliğini gösterdi."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "Model verimliliği ve maliyet optimizasyonu, düşük donanımlı geliştiriciler ve araştırmacılar için kritik bir konu; bu deney, ev tipi GPU'larda MoE'ye geçişin pratik sınırlarını ortaya koyuyor.",
+  "etiketler": [
+    "Mixture-of-Experts",
+    "Model Dönüşümü",
+    "Benchmark",
+    "RTX 4060",
+    "Sparsity"
+  ],
+  "anilan_modeller": [
+    "Qwen2.5-0.5B",
+    "Qwen2.5-0.5B-MoE-A0.3B",
+    "SmolLM2-360M",
+    "SmolLM2-360M-MoE-A0.2B"
+  ],
+  "yorum_tr": "MoE’ye geçiş, düşük maliyetli donanımlarda ölçeklenebilirlik vaat ederken, şu anki küçük model seviyesinde performans kaybı kaçınılmaz. Daha büyük modeller ve uzun vadeli ince ayarlarla bu farkın kapanması, topluluk için önemli bir araştırma alanı olacak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen2.5-0.5B (dense)",
+      "benchmark": "WikiText-2 perplexity",
+      "skor": 14.66,
+      "birim": "ppl",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "WikiText-2 ppl 14.66"
+    }
+  ],
+  "gorsel_url": "https://www.marktechpost.com/wp-content/uploads/2024/10/Screenshot-2024-10-13-at-9.01.46-PM.png",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x3078i/converting_dense_models_into_mixtureofexperts/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-11T05:45:52.000Z",
+  "slug": "converting-dense-models-into-mixture-of-experts"
+}

@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "NVIDIA GeForce RTX 5060, Metal 3 hızlandırmasıyla macOS 15'i hayali M5 Ultra üzerinden çalıştırıyor",
+  "ozet_tr": "Reddit topluluğu, NVIDIA GeForce RTX 5060 GPU'sunun Metal 3 desteğiyle macOS 15'i hayali Imagine M5 Ultra platformu üzerinden çalıştırılmasını sağlayan gayri resmi bir sürücü geliştirdi. Bu adım, Apple ekosisteminde NVIDIA donanımının performansını artırarak yeni bir deneyim sunuyor.",
+  "detayli_icerik_tr": "Yerel LLaMA topluluğu, /u/chemist_slime adlı kullanıcı tarafından paylaşılan bir gönderide, NVIDIA GeForce RTX 5060 grafik kartının macOS 15 (Sonoma) üzerinde Metal 3 API'si aracılığıyla çalıştırılmasını sağlayan gayri resmi bir sürücü ortaya koydu. Sürücü, hayali bir donanım platformu olan Imagine M5 Ultra'ya entegre edilerek, macOS'un resmi olarak desteklemediği NVIDIA GPU'larının Metal 3 hızlandırmasıyla kullanılabilmesini mümkün kılıyor.\n\nBu geliştirme, özellikle yaratıcı profesyoneller ve geliştiriciler için büyük bir fırsat sunuyor. Metal 3, Apple'ın grafik ve hesaplama API'si olarak, düşük gecikme ve yüksek verimlilik vaat ediyor; RTX 5060 ise Turing mimarisi üzerine inşa edilmiş, ray tracing ve DLSS gibi modern özellikleri destekleyen bir kart. Gayri resmi sürücünün, bu iki teknolojiyi birleştirerek macOS üzerinde oyun, yapay zeka ve render iş akışlarını hızlandırması bekleniyor.\n\nSürücünün teknik detayları henüz tam olarak belgelenmemiş olsa da, topluluk üyeleri, driver'ın kernel uzantısı (kext) ve Metal shader çeviricisi (Metal Shading Language) üzerinden çalıştığını belirtiyor. Ayrıca, driver'ın macOS 15'in yeni güvenlik çerçevesine (Signed System Volume) uyumlu olması için özel imzalama prosedürleri uygulandığı rapor edildi.\n\nBu adım, Apple'ın resmi olarak NVIDIA GPU desteğini bırakmasından bu yana topluluk tarafından yapılan en kapsamlı uyarlamalardan biri olarak görülüyor. Ancak, gayri resmi bir sürücü olduğu için stabilite, güvenlik ve uzun vadeli destek konularında riskler taşıyor. Kullanıcıların, bu sürücüyü denemeden önce sistem yedeklemeleri yapmaları ve olası çökme senaryolarına hazırlıklı olmaları öneriliyor.",
+  "onemli_maddeler": [
+    "NVIDIA GeForce RTX 5060, Metal 3 API'si üzerinden macOS 15'te çalıştırılabiliyor.",
+    "Hayali Imagine M5 Ultra platformu, gayri resmi sürücünün temel entegrasyon noktası.",
+    "Sürücü, kernel uzantısı ve Metal shader çeviricisi kullanarak Apple'ın güvenlik çerçevesine uyum sağlıyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Apple ekosisteminde NVIDIA GPU desteğinin olmaması, yaratıcı ve geliştirici toplulukları için performans sınırlamaları yaratıyordu; bu sürüm bu boşluğu dolduruyor.",
+  "etiketler": [
+    "macOS",
+    "NVIDIA",
+    "Metal3",
+    "RTX5060",
+    "driver"
+  ],
+  "anilan_modeller": [
+    "Imagine M5 Ultra",
+    "NVIDIA GeForce RTX 5060"
+  ],
+  "yorum_tr": "Bu gayri resmi sürücü, macOS kullanıcılarına NVIDIA donanımının gücünü sunarak yaratıcı iş akışlarını hızlandırabilir, ancak stabilite ve güvenlik riskleri nedeniyle dikkatli test edilmesi gerekiyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/LqAt-1UJyRCaKOFakTnarcO_kzBx0DjYVHdaVGjp3rY.jpeg?width=640&crop=smart&auto=webp&s=6f42cd18320c9859c132441f9191ca3bc95112e1",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x2z64z/imagine_m5_ultra_this_nvidia_geforce_rtx_5060/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-11T04:45:37.000Z",
+  "slug": "imagine-m5-ultra-this-nvidia-geforce-rtx-5060-runs-macos-15-"
+}

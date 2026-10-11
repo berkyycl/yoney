@@ -1,0 +1,62 @@
+{
+  "baslik_tr": "BC-250 kartlarıyla Next Flash IQ3_XXS ve Qwen 3.6 35B A3B modelleri 100‑250k bağlamda 70‑145 tok/s hızla çalıştırıldı",
+  "ozet_tr": "Yerel AI araştırmacısı, dört adet AMD BC‑250 kartını 2,5 GbE üzerinden birleştirerek Next Flash IQ3_XXS modelinde 100 k bağlamda 70 tok/s, Qwen 3.6 35B A3B modelinde ise iki örnekle 145 tok/s performans elde etti. Optimizasyonlar arasında spekülatif dekoding, Vulkan komut grafiği yeniden oynatma ve bağlam kontrol noktalarının kartlar arasında kopyalanması yer alıyor.",
+  "detayli_icerik_tr": "Araştırmacı, dört BC‑250 kartını 2,5 GbE adaptörleriyle bir 2,5 GbE anahtara bağlayarak, Llama‑cpp ve Vulkan tabanlı RPC altyapısı üzerinden yerel AI çalıştırmaya başladı. Başlangıçta Flash‑Next IQ2 modelinde 30 tok/s, Qwen 3.6 35B modelinde 80 tok/s hızları elde ederken, Claude Code yardımıyla optimizasyonları uyguladı ve şu an Next Flash IQ3_XXS modelinde 60‑70 tok/s (yaklaşık 150 token/saniye) ve 100 k bağlamda sorunsuz çalıştırma sağladı.\n\nOptimizasyonların temelini spekülatif dekoding ve modelin kendi MTP draft başlığı oluşturuyor. Bu yöntem, birden fazla taslak geçişiyle token doğrulamasını yaparak işlem süresini %10‑15 oranında kısaltıyor. Ayrıca, Vulkan komut grafikleri bir kez kaydedilip tekrar oynatılıyor; bu da host süresinde 3,7‑4,5 ms tasarruf ve %2 performans artışı sağlıyor. Bağlam kontrol noktaları koordinatör üzerinden değil doğrudan kartlar arasında kopyalanarak gecikme 665 ms'den 18 ms'ye düşürüldü ve prompt hızı %60 arttı.\n\nQwen 3.6 35B‑A3B modelinde ise iki kartta Q4_K_M (GGUF) quantizasyonu ve K/V önbelleği q8_0 kullanılarak 100 k‑250 k bağlamda 95‑116 tok/s arasında performans elde edildi. Uzun bağlamda (258 k token) spekülatif dekoding sayesinde 51‑54 tok/s hızına ulaşıldı; bu, saf dekodingde 36,4 tok/s olan değerin çok üzerindedir. Ayrıca, modelin başlatma süresi 105 s'den 32‑35 s'ye düşürülmüş ve oturumlar bitişik olarak kaydedilip geri yüklenebiliyor.\n\nGüç tüketimi açısından, Next Flash modelinde 600‑700 W, iki Qwen 3.6 35B örneğinde ise 800‑900 W tüketiliyor. Araştırmacı, termal sınırlamaları aşmak için her kartta AIO soğutma çözümleri ve 3D‑baskılı bir kasa kapağı geliştirmeyi planlıyor.",
+  "onemli_maddeler": [
+    "BC‑250 kartları 2,5 GbE üzerinden bağlanarak 4 kartlık bir küme oluşturuldu ve toplam maliyet $500 altında tutuldu.",
+    "Spekülatif dekoding ve Vulkan komut grafiği yeniden oynatma sayesinde Next Flash IQ3_XXS modelinde 100 k bağlamda 70 tok/s, Qwen 3.6 35B‑A3B modelinde ise iki örnekle 145 tok/s performans sağlandı.",
+    "Bağlam kontrol noktalarının kartlar arasında doğrudan kopyalanması gecikmeyi 665 ms'den 18 ms'ye düşürerek prompt hızını %60 artırdı.",
+    "Güç tüketimi 600‑900 W arasında değişiyor; termal throttling'i önlemek için AIO soğutma ve 3D‑baskılı kasa kapağı planlanıyor."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Yerel AI altyapısında düşük maliyetli GPU kartlarıyla yüksek bağlamlı model çalıştırma başarısı, araştırma ve üretim ortamları için yeni bir ölçeklenebilir yol sunuyor.",
+  "etiketler": [
+    "BC-250",
+    "FlashNext",
+    "Qwen3.6",
+    "speculative decoding",
+    "Vulkan"
+  ],
+  "anilan_modeller": [
+    "Next Flash IQ3_XXS",
+    "Qwen 3.6 35B A3B"
+  ],
+  "yorum_tr": "Bu sonuçlar, düşük maliyetli AMD BC‑250 kartlarıyla yüksek bağlamlı büyük dil modellerinin verimli bir şekilde çalıştırılabileceğini gösteriyor; geliştiriciler daha az bütçeyle yerel AI çözümleri sunabilir, kullanıcılar ise gecikmesiz ve uzun bağlamlı yanıtlar alabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Next Flash IQ3_XXS",
+      "benchmark": "100k bağlamda token/saniye hızı",
+      "skor": 72.6,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "50,357 tokenlik tek tarayıcı üretimi",
+      "kaynak_metinden_alinti": "72.6 tok/s on one browser generation of 50,357 tokens"
+    },
+    {
+      "model": "Next Flash IQ3_XXS",
+      "benchmark": "5k token prompt sonrası hız",
+      "skor": 68.3,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "5K-token prompt, sampled 512 tokens",
+      "kaynak_metinden_alinti": "66.6-68.3 tok/s behind a 5K-token prompt (sampled, 512 tokens)"
+    },
+    {
+      "model": "Qwen 3.6 35B A3B (Q4_K_M)",
+      "benchmark": "Kısa promptta token/saniye hızı",
+      "skor": 116,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "first request short prompt",
+      "kaynak_metinden_alinti": "first request 105.8 → 116.0 tok/s at a short prompt"
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/1pmse2irmruh1.jpeg?width=640&crop=smart&auto=webp&s=fa3ab54a4d0cf4a2b370356c9ba67cfe6fa213da",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x2yv1b/running_next_flash_iq3_xxs_at_70_toks_with_100k/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-11T04:27:44.000Z",
+  "slug": "running-next-flash-iq3-xxs-at-70-tok-s-with-100k-context-or-"
+}

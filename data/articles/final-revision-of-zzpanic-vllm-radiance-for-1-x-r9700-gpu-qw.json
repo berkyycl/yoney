@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "zzpanic vllm-radiance'in R9700 GPU için son revizyonu ve qwen3.8-27b desteği",
+  "ozet_tr": "Yerel LLaMA topluluğu, zzpanic'in vllm‑radiance motorunu tek bir AMD R9700 GPU üzerinde çalıştırmak üzere son revizyonunu yayınladı. Yeni sürüm, başlangıç önbellekleme ve KV‑offload gibi iyileştirmelerle çok ajanlı uzun bağlam senaryolarını mümkün kılıyor.",
+  "detayli_icerik_tr": "Reddit'in LocalLLaMA topluluğu, StillDeadcode'un yeni Radiance çıkarım motorunun ardından eski vllm‑radiance yapılarını güncellemeye karar verdi. zzpanic, topluluk içinde yürütülen bir dizi katkıyı birleştirerek, tek bir AMD Radeon RX 9700 GPU'sunda qwen3.8‑27b modelini çalıştırabilecek bir paket sundu. \n\nGeliştiriciler, özellikle yeniden başlatma sırasında derleme süresini önlemek için vllm başlatma önbelleklemesi ekledi; bu sayede her seferinde aynı kodun yeniden derlenmesi engellendi ve toplam başlatma süresi birkaç saniyeye indirildi. Ayrıca, VRAM‑SysRAM‑Disk arasında KV (key‑value) offload özelliği hayata geçirildi; hafıza inceltme (memory thinning) sayesinde depolama alanı tasarrufu sağlanarak tek kart üzerinde uzun bağlamlı çok ajanlı çalışmalara imkan tanındı. \n\nBu güncellemeler, tek haneli yüzde bazında ek hız kazançları sağlasa da, geliştiriciler bu iyileştirmeleri daha fazla peşinden koşmak yerine mevcut %5'lik çaba marjını tamamlamayı tercih etti. Proje, Launch80 Discord topluluğundan alınan geri bildirim ve kod katkılarını da içeriyor; özellikle /u/KriptacMessage tarafından gönderilen hata düzeltmeleri zzpanic/qwen3.6‑vllm‑gfx1201‑launchers paketinde yer alıyor. \n\nSonuç olarak, bu revizyon hem yerel LLaMA araştırmacılarına hem de düşük maliyetli tek GPU kurulumlarıyla yüksek kapasiteli modelleri çalıştırmak isteyen geliştiricilere pratik bir çözüm sunuyor. R9700 gibi orta seviye bir GPU ile qwen3.8‑27b gibi 27 b milyar parametreli bir modeli verimli şekilde çalıştırmak, topluluğun açık kaynaklı AI altyapısına olan güvenini artırıyor.",
+  "onemli_maddeler": [
+    "Başlangıç önbelleklemesi sayesinde her yeniden başlatmada derleme süresi ortadan kaldırıldı.",
+    "KV‑offload ve hafıza inceltme özelliği, VRAM‑SysRAM‑Disk arasında veri akışını optimize ederek tek kartta uzun bağlamlı çok ajanlı çalışmayı mümkün kıldı.",
+    "qwen3.8‑27b modeli, AMD R9700 GPU üzerinde çalıştırılabilir hâle getirildi; bu, orta seviye donanımla büyük dil modelleri denemeyi kolaylaştırıyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Tek GPU üzerinde büyük dil modelleri çalıştırmak, araştırma ve prototipleme maliyetlerini düşürerek daha geniş bir geliştirici kitlesine erişim sağlar.",
+  "etiketler": [
+    "vllm",
+    "radiance",
+    "GPU",
+    "qwen3.8",
+    "LocalLLaMA"
+  ],
+  "anilan_modeller": [
+    "qwen3.8-27b"
+  ],
+  "yorum_tr": "Bu güncelleme, düşük maliyetli donanımla yüksek kapasiteli modelleri denemek isteyen geliştiriciler için önemli bir adım. KV‑offload gibi bellek yönetimi iyileştirmeleri, çok ajanlı uygulamalarda ölçeklenebilirliği artırarak yeni kullanım senaryolarını mümkün kılıyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/cDw-2gCfPFb-Ujd1x_hcG3hYy_n_qVpahR-FHJtkAvo.png?width=140&height=70&auto=webp&s=309e13059affbd039db2028ee3f6a2147deed975",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x3368a/final_revision_of_zzpanic_vllmradiance_for_1_x/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-11T08:47:40.000Z",
+  "slug": "final-revision-of-zzpanic-vllm-radiance-for-1-x-r9700-gpu-qw"
+}

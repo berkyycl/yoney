@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "Qwen 3.8 27B Q5 ve Qwen 3.8 Next Q3_S Modelleri Belge Analizinde Karşılaştırılıyor",
+  "ozet_tr": "Bir kullanıcı, günlük 500 belgeyi işleyen bir uygulamasında Qwen 3.8 27B Q5 modelini 150K bağlam penceresiyle kullanıyor ve Qwen 3.8 Next Q3_S modeline geçişin potansiyel faydalarını değerlendiriyor. MoE mimarisi ve düşük seviyeli kuantizasyonun sonuç kalitesini nasıl etkileyebileceği konusunda endişe taşıyor.",
+  "detayli_icerik_tr": "Reddit'in LocalLLaMA topluluğunda paylaşılan bir gönderide, /u/RaDDaKKa adlı kullanıcı, yaklaşık 500 farklı belgeyi her gün işleyen bir uygulama için kullandığı dil modelini sorguluyor. Şu anda Qwen 3.8 27B Q5 modelini 150.000 tokenlık bağlam penceresiyle çalıştırıyor ve bu model, belgeleri sınıflandırma, etiketleme, hukuki nüansları çıkarma ve açıklama oluşturma gibi görevleri yerine getiriyor.\n\nKullanıcı, Qwen 3.8 Next Q3_S modelinin daha geniş bilgi tabanına sahip olduğunu ve belge analizinde daha yüksek doğruluk sağlayabileceğini düşünüyor. Ancak bu model bir MoE (Mixture of Experts) mimarisi üzerine kurulu ve Q3 seviyesinde kuantize edilmiş, yani düşük bit derinliğine sahip. Bu durum, modelin performansının beklenenden düşük çıkma riskini beraberinde getiriyor.\n\nDonanım açısından, sistem 64 GB RAM ve bir AMD Radeon Instinct MI250X (R9700) GPU ile çalışıyor. Kullanıcı, mevcut altyapının yeni modeli destekleyip desteklemeyeceği ve olası bellek/hesaplama gereksinimlerinin ne kadar artacağı konusunda da belirsizlik yaşıyor. Bu tip bir geçiş, özellikle büyük bağlam pencereleri ve yüksek işlem hacmi olan uygulamalarda maliyet ve performans dengesini yeniden değerlendirmeyi gerektirebilir.\n\nTopluluk, benzer senaryolarda MoE modellerinin kuantizasyon seviyesinin sonuç kalitesine etkisini tartışıyor ve Qwen 3.8 Next Q3_S modelinin test sonuçlarını paylaşan birkaç kullanıcıdan örnekler bekliyor. Şu ana kadar kesin bir benchmark verisi sunulmadığı için karar, deneme-yanılma ve uygulama içi testlerle şekillenecek gibi görünüyor.",
+  "onemli_maddeler": [
+    "Qwen 3.8 Next Q3_S modeli, daha geniş bilgi tabanı ve potansiyel olarak daha iyi veri çıkarımı vaat ediyor.",
+    "MoE mimarisi ve Q3 kuantizasyonu, sonuç kalitesinde düşüş riskini beraberinde getirebilir.",
+    "Mevcut donanım (64 GB RAM, R9700 GPU) yeni modelin bellek ve hesaplama gereksinimlerini karşılayıp karşılamayacağı belirsiz.",
+    "Toplulukta henüz kesin benchmark sonuçları bulunmadığından, karar test aşamasına dayanacak."
+  ],
+  "kategori": "benchmark",
+  "onem": 3,
+  "onem_gerekce": "Model seçimi, yüksek hacimli belge işleme uygulamalarının verimliliğini ve maliyetini doğrudan etkiler; bu yüzden sektörel bir öneme sahiptir.",
+  "etiketler": [
+    "Qwen",
+    "MoE",
+    "kuantizasyon",
+    "belge analizi",
+    "AI modeli"
+  ],
+  "anilan_modeller": [
+    "Qwen 3.8 27B Q5",
+    "Qwen 3.8 Next Q3_S"
+  ],
+  "yorum_tr": "MoE tabanlı ve düşük kuantize edilmiş modeller, bilgi derinliği açısından avantaj sağlasa da, özellikle büyük bağlam pencereli görevlerde performans dalgalanmaları gösterebilir. Geliştiricilerin, geçiş kararını somut test sonuçlarıyla desteklemesi ve donanım kapasitesini yeniden değerlendirmesi kritik olacaktır.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://miro.medium.com/v2/resize:fit:1200/1*tsK_oZzW6zEp4S45TvNvUg.jpeg",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x31ak8/qwen_38_27b_q5_vs_qwen_38_next_q3_s_for_document/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-11T06:52:26.000Z",
+  "slug": "qwen-3-8-27b-q5-vs-qwen-3-8-next-q3-s-for-document-analysis"
+}

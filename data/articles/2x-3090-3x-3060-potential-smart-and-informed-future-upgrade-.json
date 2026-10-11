@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "3090 ve 3060'lar İçin Uzun Vadeli Donanım Yükseltme Stratejileri ve Supermicro Çözüm Önerisi",
+  "ozet_tr": "Yerel LLM topluluğunda bir kullanıcı, mevcut çoklu PC altyapısını tek bir yüksek kapasiteli sunucuya dönüştürmeyi ve gelecekteki model ihtiyaçlarını karşılamayı planlıyor. Kullanıcı, ikinci el Supermicro iş istasyonu ve RTX 4090 gibi bileşenlerin maliyet‑fayda analizini yaparak 1‑2 yıl içinde eskiyen bir platforma yatırım riskini azaltmak istiyor.",
+  "detayli_icerik_tr": "Reddit'in LocalLLaMA topluluğunda paylaşılan bir gönderide, bir yapay zeka meraklısı mevcut donanımını gözden geçirerek uzun vadeli bir yükseltme rotası çizmeye çalışıyor. Şu anki yapılandırması üç ayrı tüketici PC'den oluşuyor: ana sistemde bir AMD 5900X ve iki adet RTX 3090 24 GB, ikincil sistemde i3‑10320 ve iki RTX 3060 12 GB, günlük kullanımda ise 5800X3D, 64 GB RAM ve RTX 3080 10 GB bulunuyor. Kullanıcı, bu makinelerde Swift1.5 Qwen3.8‑27B FP8 modelini vLLM ile çalıştırıyor ve kodlama ajanları, uzun bağlamlı görevler ve çoklu eşzamanlı iş akışları için GPU kaynaklarını bölüştürüyor.\n\nGelecek planı, daha büyük MoE (Mixture‑of‑Experts) modelleri ve artan eşzamanlı ajan sayısını destekleyebilecek bir 4‑6 GPU'lu sunucuya geçmek. Bunun için ikinci el bir Supermicro AS‑5014A‑TT iş istasyonu, WRX80 M12SWA‑TF anakart, Threadripper PRO 3000WX/5000WX serisi bir CPU ve 2000 W güç kaynağı içeren bir paket inceleniyor. Sistem, riser ve dış montajla en fazla altı GPU'yu barındırabilecek kapasitede. Tahmini toplam maliyet 6.275 USD; RTX 4090'ı 2.300 USD'ye satarak iş istasyonuna yaklaşık 4.000 USD ayırma imkanı bulunuyor. Ancak cihazın tam test edilmediği ve satıcıdan ek bilgi beklediği belirtiliyor.\n\nKullanıcı ayrıca mevcut GPU pazar fiyatlarını da paylaşıyor: RTX 3090 24 GB yaklaşık 1.250 USD, RTX 3060 12 GB 260‑365 USD, RTX 5060 Ti 16 GB 680 USD ve RTX 4090 24 GB 2.300 USD. Bu fiyatlar, tek tek GPU alımının toplam maliyetini gösterirken, bir sunucu platformuna yatırım yapmanın amortisman süresini ve ölçeklenebilirliğini sorgulatıyor. EPYC DDR4/DDR5 platformları da alternatif olarak düşünülse de, bulunabilirlik ve ithalat zorlukları nedeniyle şu an için öncelikli seçenek değil.\n\nSonuç olarak, yazar hem bütçesiz bir yaklaşım benimseyip mevcut ekipmanı birleştirmeyi, hem de potansiyel bir platforma büyük bir ön ödeme yaparak gelecekteki model gereksinimlerine hazır olmayı tartıyor. Karar verirken, bir ya da iki yıl içinde donanımın performansının düşmesi, enerji verimliliği ve bakım maliyetleri gibi faktörlerin de göz önünde bulundurulması gerektiği vurgulanıyor.",
+  "onemli_maddeler": [
+    "Mevcut üç ayrı PC'de toplamda 2× RTX 3090, 2× RTX 3060 ve 1× RTX 3080 bulunuyor.",
+    "İkinci el Supermicro AS‑5014A‑TT iş istasyonu, Threadripper PRO ve RTX 4090 ile 4‑6 GPU destekli bir sunucu hedefleniyor.",
+    "GPU fiyatları: RTX 3090 ≈ 1.250 USD, RTX 3060 ≈ 260‑365 USD, RTX 4090 ≈ 2.300 USD; bu fiyatlar tek tek alım maliyetini gösteriyor.",
+    "Kullanıcı, platformun 1‑2 yıl içinde eskiyip pişmanlık yaratma riskine karşı bütçe esnekliği ve uzun vadeli ölçeklenebilirliği değerlendiriyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 3,
+  "onem_gerekce": "Yapay zeka araştırmacıları ve yerel LLM geliştiricileri için donanım seçimleri, maliyet‑verimlilik ve gelecekteki model gereksinimlerini doğrudan etkileyen kritik bir konu.",
+  "etiketler": [
+    "GPU",
+    "LLM",
+    "Sunucu",
+    "Yapay Zeka",
+    "Donanım"
+  ],
+  "anilan_modeller": [
+    "Qwen3.8-27B",
+    "Swift1.5"
+  ],
+  "yorum_tr": "Bu tür bir yükseltme planı, yüksek bellek ve paralel işleme ihtiyacı duyan LLM geliştiricileri için ölçeklenebilir bir yol sunuyor; ancak ikinci el iş istasyonlarının güvenilirliği ve enerji tüketimi gibi faktörler, uzun vadeli yatırım kararını karmaşıklaştırıyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/dual-gpu-setup-msi-rtx-3060-msi-rtx-3090-i-feel-these-are-v0-8q0imxccbed81.jpg?width=640&crop=smart&auto=webp&s=5fc8f4d08be411523861ef0bc525569fbf32e31d",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x2zc0v/2x_3090_3x_3060_potential_smart_and_informed/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-11T04:54:57.000Z",
+  "slug": "2x-3090-3x-3060-potential-smart-and-informed-future-upgrade-"
+}

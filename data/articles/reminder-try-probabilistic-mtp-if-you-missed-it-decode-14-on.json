@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "Hatırlatma: Probabilistik MTP'yi Deneyin – Prosedeki Çözümleme %14 Artış Sağladı",
+  "ozet_tr": "ggml-org/llama.cpp deposuna eklenen yeni PR, probabilistik MTP (draft‑n‑max / draft‑p‑min) yöntemini aktif hale getiriyor. Güncellenen sürüm, özellikle metin üretiminde %14 oranında çözümleme hız artışı sağlıyor. Kullanıcıların en kısa sürede güncellemeyi uygulamaları öneriliyor.",
+  "detayli_icerik_tr": "ggml-org/llama.cpp projesine yeni bir çekme isteği (PR #27694) birleştirildi ve artık resmi sürümde yer alıyor. Bu güncelleme, \"probabilistic MTP\" adı verilen bir teknikle draft‑n‑max ve draft‑p‑min parametrelerini optimal seviyelere ayarlayarak, greedy sampling ile benzer kalite seviyelerinde daha hızlı çıktı üretebiliyor.\n\nYapılan testlerde, düşünme (thinking) ve n‑gram modları devre dışı bırakıldığında, özellikle uzun metin (prose) üretiminde %14'lük bir hız artışı gözlemlendi. Bu, hem araştırmacılar hem de uygulama geliştiricileri için daha düşük gecikme süresi ve daha verimli kaynak kullanımı anlamına geliyor.\n\nGüncellemeyi henüz yapmamış kullanıcıların, llama.cpp deposundaki en son sürüme geçmeleri tavsiye ediliyor. PR'ı gönderen /u/Dreeew84, yeni parametrelerin greedy sampling ile uyumlu olduğunu ve ana kazancın prose üretiminde ortaya çıktığını vurguluyor.\n\nBu gelişme, açık kaynak LLaMA tabanlı modellerin performansını artırma yönündeki topluluk çabalarının bir örneği olarak öne çıkıyor ve gelecekteki optimizasyonların da benzer yaklaşımlarla geliştirilebileceğine işaret ediyor.",
+  "onemli_maddeler": [
+    "Probabilistik MTP (draft‑n‑max / draft‑p‑min) artık llama.cpp sürümüne dahil edildi.",
+    "Prose (uzun metin) üretiminde %14'lük çözümleme hızı artışı sağlandı.",
+    "Testler, thinking ve n‑gram modları kapalıyken gerçekleştirildi; sonuçlar greedy sampling ile uyumlu."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Performans iyileştirmesi, özellikle büyük ölçekli metin üretimi yapan geliştiriciler ve araştırmacılar için kritik bir avantaj sunuyor.",
+  "etiketler": [
+    "llama.cpp",
+    "probabilistic MTP",
+    "performans",
+    "prose",
+    "açık kaynak"
+  ],
+  "anilan_modeller": [
+    "LLaMA",
+    "llama.cpp"
+  ],
+  "yorum_tr": "Bu güncelleme, LLaMA tabanlı uygulamaların yanıt süresini düşürerek kullanıcı deneyimini iyileştirirken, geliştiricilere daha verimli bir dağıtım seçeneği sunuyor. Açık kaynak topluluğunun hızlı adaptasyonu, benzer optimizasyonların gelecekte de gelmesini teşvik edecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/0wwn7tok1tuh1.png?width=640&crop=smart&auto=webp&s=2821742122cc0217b5f8e30d2cdcc66d736caa60",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x33p4o/reminder_try_probabilistic_mtp_if_you_missed_it/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-11T09:20:09.000Z",
+  "slug": "reminder-try-probabilistic-mtp-if-you-missed-it-decode-14-on"
+}

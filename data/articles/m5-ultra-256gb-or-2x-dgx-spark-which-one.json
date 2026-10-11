@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "M5 Ultra 256GB mü yoksa Çift DGX Spark mı? Yerel LLM altyapısı için kritik karar",
+  "ozet_tr": "Yerel LLM topluluğu, yeni bir donanım yatırımı için M5 Ultra 256GB ile çift DGX Spark arasında seçim yapma aşamasında. Kullanıcılar, DGX Spark'ın paralel istek ve prompt işleme konusunda üstün olduğunu, M5 Ultra'nın ise token üretim hızında hafif bir avantaj sunduğunu belirtiyor.",
+  "detayli_icerik_tr": "Yerel LLM geliştiricileri, mevcut RTX 5090 sistemlerine ek olarak ya M5 Ultra 256GB ya da iki adet DGX Spark sunucusunu entegre etmeyi değerlendiriyor. MasterNomie adlı kullanıcı, son birkaç gündür yaptığı araştırmalar sonucunda DGX Spark çiftinin, özellikle ajan tabanlı kodlama (agentic coding) ve aynı anda birden fazla istek işleme (parallel requests) açısından daha yüksek throughput sağladığını vurguluyor.\n\nM5 Ultra 256GB, geniş bellek kapasitesi ve tek bir cihazda yüksek token üretim hızıyla öne çıkıyor. Kullanıcıların okuduğu Mindstudio karşılaştırma makalesine göre, token üretim hızı M5 Ultra’da hafifçe daha iyi ya da en azından eşdeğer seviyede. Ancak prompt işleme süresi ve çoklu kullanıcı senaryolarında DGX Spark çiftinin avantajlı olduğu belirtiliyor.\n\nKullanıcı, RTX 5090’ın token üretim hızının üçte birini DGX Spark çiftinin sağlayacağını, fakat bu seçimle daha büyük modelleri çalıştırma imkanı elde edeceğini ifade ediyor. Bu durum, donanım seçiminde sadece tek bir metrik üzerinden karar vermenin yetersiz olduğunu, aynı anda birden fazla model ve istekle çalışacak sistemlerde dengeyi gözetmek gerektiğini ortaya koyuyor.\n\nTopluluk, karar sürecini hızlandırmak için her iki donanımın da sahip olduğu modeller, genel deneyim ve temel metrikler (prompt işleme süresi, decode hızı) hakkında geri bildirim bekliyor. Bu tür bir bilgi paylaşımı, yerel LLM ekosisteminin hızla değişen dinamiklerine uyum sağlamak ve en verimli altyapıyı seçmek açısından kritik önem taşıyor.",
+  "onemli_maddeler": [
+    "DGX Spark çiftleri, paralel istek ve prompt işleme süresinde M5 Ultra'ya göre üstün performans sunuyor.",
+    "M5 Ultra 256GB, token üretim hızında hafif bir avantaj sağlayarak tek bir modelde yüksek verimlilik sağlıyor.",
+    "RTX 5090’ın token hızı, DGX Spark çiftinin üçte birine eşdeğer; ancak Spark’lar daha büyük modellerin çalıştırılmasına olanak tanıyor."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Yerel LLM altyapısının ölçeklenebilirliği ve performans maliyet dengesi, geliştiricilerin ve araştırma laboratuvarlarının kararını doğrudan etkileyen kritik bir konu.",
+  "etiketler": [
+    "M5 Ultra",
+    "DGX Spark",
+    "LLM",
+    "donanım",
+    "performans"
+  ],
+  "anilan_modeller": [
+    "M5 Ultra 256GB",
+    "DGX Spark",
+    "RTX 5090"
+  ],
+  "yorum_tr": "Bu karar, yerel LLM projelerinde ölçeklenebilirlik ve çoklu kullanıcı desteği isteyen ekipler için altyapı seçiminde performans‑maliyet dengesini yeniden gözden geçirmeye zorlayacak.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Flq494mfxkwu8xugwgpc3.png",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x30cv1/m5_ultra_256gb_or_2x_dgx_spark_which_one/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-11T05:55:30.000Z",
+  "slug": "m5-ultra-256gb-or-2x-dgx-spark-which-one"
+}
