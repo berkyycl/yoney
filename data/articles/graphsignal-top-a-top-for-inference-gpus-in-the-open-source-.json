@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "graphsignal-top: Açık Kaynak Graphsignal Profiler ile GPU İnferans İzleme Aracı",
+  "ozet_tr": "Graphsignal ekibi, GPU tabanlı LLM servislerinin performansını anlık izleyebilen yeni bir komut satırı aracı graphsignal-top'u duyurdu. Araç, GPU kullanımını, bellek, güç tüketimi, çekirdek zaman dağılımını ve her bir kernel'in okunabilir adını saniyeler içinde göstererek geliştiricilere anlık içgörü sağlıyor.",
+  "detayli_icerik_tr": "Geçtiğimiz haftalarda Graphsignal profili açık kaynak olarak yayınlanmıştı; vllm, sglang gibi servisleri graphsignal-run ile sarmalayıp ölçüm verilerini JSON olarak dışa aktarabiliyordu. Kullanıcılar bu JSON çıktısını manuel olarak incelemek zorunda kalırken, ekip yeni bir üst seviye izleme aracı graphsignal-top'u geliştirdi. Bu araç, aynı anda iki terminalde çalıştırılabiliyor: birinde graphsignal-run ile servis başlatılıyor, diğerinde ise graphsignal-top komutuyla gerçek zamanlı GPU istatistikleri gösteriliyor.\n\ngraphsignal-top, zaman içinde GPU kullanım oranı, bellek tüketimi, güç ve throttling durumlarını, çalışan ve bekleyen istek sayısını, token/saniye ve TTFT/TPOT p50/p95 gibi LLM performans metriklerini sunuyor. Ayrıca GPU zamanını kernel, grafik, memcpy ve senkronizasyon gibi kategorilere ayırıyor ve son 5 saniyede en çok zaman harcayan kernel'leri okunabilir isim ve kategoriyle sıralıyor. CUDA grafik yeniden oynatmaları, veri transferleri ve senkronizasyonları için ayrı sekmeler bulunuyor.\n\nAraç, iki RTX PRO 6000 GPU üzerinde Qwen3‑32B modelinin PCIe üzerinden çalıştırıldığı bir senaryoda test edildi. Sonuçlar, NCCL all‑reduce işleminin GPU zamanının dörtte birini ve duvar zamanının yarısını host senkronizasyonunun beklemesiyle harcadığını gösterdi; bu bilgi tek bir bakışta anlaşılabiliyor. graphsignal-top, uzaktan da kullanılabiliyor; --host parametresiyle başka bir makinedeki profilere bağlanabilir ya da SSH üzerinden port yönlendirme ile erişim sağlanabilir. Tek bir anlık görüntü almak isteyenler için --once seçeneği mevcut.\n\nKod ve belgeler GitHub üzerindeki https://github.com/graphsignal/graphsignal adresinde bulunuyor. Araç, LLM servis sağlayıcıları, araştırmacılar ve GPU performansını optimize etmek isteyen geliştiriciler için açık kaynaklı, hafif ve genişletilebilir bir çözüm sunuyor.",
+  "onemli_maddeler": [
+    "graphsignal-top, GPU kullanımını, bellek, güç ve throttling gibi metrikleri saniyeler içinde anlık gösteriyor.",
+    "Kernel'ler okunabilir isim ve kategoriyle sıralanıyor; en çok zaman harcayanlar son 5 saniyede listeleniyor.",
+    "Uzaktan izleme desteği (--host, SSH port‑forward) sayesinde dağıtık ortamlarda da kullanılabiliyor.",
+    "Qwen3‑32B modeli üzerinde yapılan testte NCCL all‑reduce'in GPU zamanının %25'ini ve duvar zamanının %50'sini oluşturduğu tespit edildi."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "GPU tabanlı LLM servislerinin performans optimizasyonu, maliyet ve yanıt süresi açısından kritik bir alan olduğundan, anlık ve detaylı izleme sağlayan bu araç sektörde büyük fayda sağlayacak.",
+  "etiketler": [
+    "GPU",
+    "profiling",
+    "open-source",
+    "LLM",
+    "Graphsignal"
+  ],
+  "anilan_modeller": [
+    "Qwen3-32B"
+  ],
+  "yorum_tr": "graphsignal-top, LLM hizmeti sunan ekiplerin performans darboğazlarını hızlıca tespit etmesini sağlayarak geliştirme döngüsünü kısaltacak. Açık kaynak olması, topluluk katkılarıyla daha fazla model ve altyapıya uyarlanabilirliğini artıracak.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/d2ruyqp4e1vh1.png?width=640&crop=smart&auto=webp&s=867361d4707cddec5e7988762d89961c43c8d315",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x421ow/graphsignaltop_a_top_for_inference_gpus_in_the/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-12T13:35:21.000Z",
+  "slug": "graphsignal-top-a-top-for-inference-gpus-in-the-open-source-"
+}

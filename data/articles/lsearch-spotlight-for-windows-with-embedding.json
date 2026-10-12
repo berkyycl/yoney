@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "LSearch: Windows için Embedding Destekli Spotlight Arama Uygulaması",
+  "ozet_tr": "Scutoidzz, Windows ortamına entegre çalışan bir Spotlight arama aracı LSearch'i duyurdu. Uygulama, 270M'lık embeddinggemma‑2 modeli ve iki adet Qwen 3.5 4B modelinden oluşan bir MoE (Mixture‑of‑Experts) mimarisiyle kod tamiri ve ajan‑tabanlı görevleri destekliyor.",
+  "detayli_icerik_tr": "Scutoidzz, Windows kullanıcıları için hızlı ve akıllı bir dosya arama deneyimi sunan LSearch adlı bir uygulama geliştirdi. Uygulama, klasik metin aramasının ötesine geçerek, metin gömme (embedding) yeteneği sayesinde bağlamsal eşleşmeler yapabiliyor. Bu işlevselliği sağlayan temel model, 270 milyon parametreli embeddinggemma 2 modelidir.\n\nLSearch'in öne çıkan teknik özelliği, iki ayrı Qwen 3.5 4B modelinin ince ayar (fine‑tune) edilerek bir MoE (Mixture‑of‑Experts) yapısına dönüştürülmüş olmasıdır. Bir model kodlama görevlerine, diğeri ise ajan‑tabanlı (agentic) çalışmalara odaklanacak şekilde eğitildi ve ardından tek bir uzman sistemi altında birleştirildi. Bu sayede kullanıcılar, uygulama üzerinden doğrudan kod hatalarını düzeltebiliyor ve belirli görevlerde yapay zeka destekli öneriler alabiliyor.\n\nUygulamanın dağıtımı da kullanıcı dostu bir şekilde tasarlandı. Model dosyaları Hugging Face üzerindeki https://huggingface.co/scutoid/2x4B adresinde barındırılıyor; sistem 16 GB veya daha fazla RAM'e sahip bir bilgisayarda çalıştırıldığında, uygulama otomatik olarak modeli indirip kurma seçeneği sunuyor. Kaynak kodları ve çalıştırılabilir dosyası ise GitHub üzerindeki https://github.com/blueprintnerd/LSearch adresinde bulunabiliyor.\n\nŞu an için LSearch görsel (image) işleme yeteneğine sahip değil ve yalnızca metin tabanlı arama ve kod tamiri üzerine odaklanıyor. Uygulamanın geliştirilmesinde OpenAI'nin Opus 5.5 modeli kullanılarak metin üretimi ve dokümantasyon sağlanmış. Bu proje, yerel AI çözümlerinin Windows ekosistemine entegrasyonu konusunda bir örnek teşkil ediyor ve topluluk tarafından daha fazla özellik eklenerek genişletilebilir.",
+  "onemli_maddeler": [
+    "LSearch, 270M'lık embeddinggemma 2 modeliyle bağlamsal metin araması sağlıyor.",
+    "İki ayrı Qwen 3.5 4B modeli, kodlama ve ajan‑tabanlı görevler için ince ayar yapılarak MoE yapısına birleştirildi.",
+    "16 GB RAM üzerindeki sistemlerde model otomatik indirilip kurulabiliyor, böylece kullanıcı müdahalesi minimuma indirildi."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Yerel AI çözümlerinin Windows platformunda kullanılabilirliğini artırması ve MoE mimarisiyle çoklu görev desteği sunması, geliştiriciler ve son kullanıcılar için önemli bir yenilik teşkil ediyor.",
+  "etiketler": [
+    "Windows",
+    "Spotlight",
+    "Embedding",
+    "MoE",
+    "AI"
+  ],
+  "anilan_modeller": [
+    "Qwen 3.5 4B",
+    "embeddinggemma 2",
+    "Opus 5.5"
+  ],
+  "yorum_tr": "LSearch, Windows ortamında yerel yapay zeka destekli arama ve kod tamiri sunarak geliştiricilerin iş akışını hızlandırabilir. Ancak görsel işleme eksikliği, uygulamanın kapsamını sınırlı tutuyor; ileride ek özelliklerle daha geniş bir kullanıcı kitlesine ulaşması bekleniyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/ZHZlaHE2cnh3MHZoMWYx4j9rx1WhE_NdB0A33n-sk6t-TXZK62nUOW4DNsi3.png?width=640&crop=smart&auto=webp&s=4368de102e414e9bcecd97f30b6c66f6ce8f1979",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x3zut6/lsearch_spotlight_for_windows_with_embedding/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-12T11:54:55.000Z",
+  "slug": "lsearch-spotlight-for-windows-with-embedding"
+}

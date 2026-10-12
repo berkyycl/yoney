@@ -1,0 +1,45 @@
+{
+  "baslik_tr": "Boole-1.7B: 1-bit Qwen3-1.7B modeli, Bonsai-1.7B'yi geride bırakıyor",
+  "ozet_tr": "Precision Numerics, Qwen3-1.7B tabanlı Boole-1.7B modelini 1-bit kuantizasyonla yayınladı. Model, BF16 referansının ortalama puanının %85,9'unu yakalarken, aynı sınıftaki 1-bit Bonsai-1.7B modelini geride bırakıyor ve 1.58-bit Bonsai-1.7B'ye neredeyse eşdeğer performans sergiliyor.",
+  "detayli_icerik_tr": "Precision Numerics, Qwen3-1.7B'nin 1-bit kuantize edilmiş bir versiyonu olan Boole-1.7B'yi duyurdu. Model, sadece 247 MB'lık paketlenmiş ağırlık dosyasıyla BF16 tabanlı orijinal modelin %13,9'u kadar bir depolama alanı gerektiriyor ve bu sayede düşük bellekli cihazlarda çalıştırılabilirliği artırıyor.\n\nYapılan 10 görevlik değerlendirmede Boole-1.7B, BF16 modelinin ortalama puanının %85,9'unu elde etti. Bu performans, aynı boyutta 1-bit Bonsai-1.7B modelinden daha yüksek ve 1.58-bit Bonsai-1.7B modeline çok yakın bir sonuç olarak raporlandı. Model, özellikle düşük gecikmeli İngilizce görevlerde ve \"non-thinking\" modunda tarayıcı üzerinden yerel olarak çalıştırılabiliyor.\n\nKullanıcılar Boole-1.7B'yi vLLM ve llama.cpp gibi popüler açık kaynak inference motorlarıyla entegre edebilecek. Ayrıca modelin bir tarayıcı demo sürümü ve GitHub üzerinden örnek kodlar da sağlanmış durumda. Precision Numerics, topluluk geri bildirimlerine göre daha yetenekli modeller geliştirmeyi ve açık kaynak ekosistemine katkı sunmayı hedefliyor.\n\nModelin ağırlıkları Hugging Face'de \"precision-numerics/Boole-1.7B\" deposunda bulunuyor, blog yazısı ve demo sayfası ise precisionnumerics.ai adresinde yer alıyor. Geliştiriciler ve araştırmacılar, bu düşük bit kuantizasyonun sağladığı hafıza tasarrufu ve performans dengesi sayesinde, daha geniş bir cihaz yelpazesinde büyük dil modellerini çalıştırma fırsatı elde edecek.",
+  "onemli_maddeler": [
+    "Boole-1.7B, Qwen3-1.7B'nin 1-bit kuantize edilmiş sürümü ve sadece 247 MB ağırlık dosyasına sahip.",
+    "10 görevlik benchmarkta BF16 modelinin ortalama puanının %85,9'unu yakaladı; 1-bit Bonsai-1.7B'yi geride bıraktı.",
+    "Model, tarayıcıda yerel çalıştırma, vLLM ve llama.cpp entegrasyonlarıyla düşük gecikmeli İngilizce görevlerde kullanılabilir."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Açık kaynak topluluğuna düşük bellekli, yüksek performanslı bir 1-bit model sunması, kuantizasyon araştırmalarını ve üretim uygulamalarını doğrudan etkileyen bir gelişmedir.",
+  "etiketler": [
+    "1-bit-kuantizasyon",
+    "Qwen3",
+    "Boole-1.7B",
+    "Precision Numerics",
+    "llama.cpp"
+  ],
+  "anilan_modeller": [
+    "Qwen3-1.7B",
+    "Bonsai-1.7B (1-bit)",
+    "Bonsai-1.7B (1.58-bit)",
+    "BF16 model"
+  ],
+  "yorum_tr": "Boole-1.7B, düşük bellekli cihazlarda büyük dil modellerinin kullanılabilirliğini artırarak geliştiricilere maliyet ve altyapı açısından yeni fırsatlar sunuyor; aynı zamanda 1-bit kuantizasyonun performans sınırlarını da yeniden tanımlıyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Boole-1.7B",
+      "benchmark": "10-görev ortalama puanı (BF16 referansına göre)",
+      "skor": 85.9,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Ortalama skor, 10 farklı görevde BF16 modelinin puanına göre normalize edilmiştir",
+      "kaynak_metinden_alinti": "85.9% of the BF16 model’s average score across our 10-task evaluation"
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/5ey55v4n22vh1.png?width=140&height=85&auto=webp&s=60f5ac49469f737e08663202c2bbf19ad8b1739a",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x452zj/boole17b_a_1bit_qwen317b_model_that_outperforms/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-12T15:35:58.000Z",
+  "slug": "boole-1-7b-a-1-bit-qwen3-1-7b-model-that-outperforms-bonsai-"
+}

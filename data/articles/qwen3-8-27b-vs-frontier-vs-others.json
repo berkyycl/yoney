@@ -1,0 +1,39 @@
+{
+  "baslik_tr": "Qwen3.8-27B vs Frontier ve Diğer Modeller",
+  "ozet_tr": "Yerel LLM'ler arasında kodlama, veri analizi ve RAG (Retrieval‑Augmented Generation) performansını ölçen kapsamlı bir test, Qwen3.8‑27B'nin token kesintileri ve model boyutu açısından zorluklar yaşadığını, Frontier ve bazı ince ayarlı modellerin ise daha istikrarlı sonuçlar verdiğini ortaya koydu.",
+  "detayli_icerik_tr": "Reddit topluluğu LocalLLaMA'nın bir üyesi, kişisel iş akışına dayalı olarak 500'ün üzerindeki testten seçilmiş bir paketle yeni bir benchmark serisi yürüttü. Test, pandas/numpy tabanlı kodlama, veri analizi, veri odaklı karar verme ve yerel RAG senaryolarını kapsıyor; amaç, büyük elektronik tablo, yuvarlama hassasiyeti ve dizi işlemleri gibi yoğun hesaplama gerektiren görevlerde güvenilir bir model belirlemek. \n\nTestte kullanılan modeller arasında Qwen3.8‑27B (bf16), Frontier, Claude, GPT‑4 (veya benzeri OpenAI modelleri), ayrıca iq3 GSQ‑RCO, Muse Glimmer, Qwen3.6‑35B‑A3B ve mradermacher'ın ince ayarlı sürümleri yer alıyor. OpenRouter üzerinden erişilen modellerin bazıları kuantizasyon bilgilerini açıklarken, Qwen3.8‑27B'nin kuantizasyonu gizli kalmıştı ve model en çok kesinti (truncation) yaşayan model olarak tespit edildi. Testlerde maksimum token limiti 16.384 iken, Qwen3.8‑27B için bu limit 32k'ya çıkarıldı; ancak aşırı düşünme (over‑thinking) nedeniyle kesintiler tamamen ortadan kalkmadı. \n\nFrontier ve bazı ince ayarlı modeller (özellikle mradermacher'ın fine‑tune'ları) Q4 sınıfı performans seviyesine yakın sonuçlar gösterdi. iq3 GSQ‑RCO ise “decent performer” olarak nitelendirilerek Q4'ler arasında yer aldı. Bu bulgular, modelin sadece mimari kapasitesine değil, aynı zamanda kuantizasyon ve token sınırlarına da bağlı olduğunu gösteriyor. \n\nYazar, şu anki sonuçların yerel ortamda kritik iş akışlarını yürütmek için Claude veya GPT gibi bulut tabanlı modellerin denetimine ihtiyaç duyduğunu belirtiyor. Qwen4 ya da diğer yeni sürümler daha iyi performans gösterdiğinde, tam yerel çalışmaya geçiş ve yüksek maliyetli donanım yatırımı konusunda karar vermek için güçlü bir gösterge (canary) olarak kullanılacak.",
+  "onemli_maddeler": [
+    "Qwen3.8‑27B, token kesintileri ve kuantizasyon belirsizliği nedeniyle en çok sorun yaşayan model oldu.",
+    "Frontier ve bazı ince ayarlı modeller Q4 seviyesinde istikrarlı performans sergiledi.",
+    "Test, sadece modelin yeteneklerini değil, token sınırları ve kuantizasyon etkilerini de ölçerek gerçek dünya iş akışlarına uygunluk sağladı."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Yerel LLM'lerin iş akışı verimliliği ve maliyet kararlarını doğrudan etkileyen kritik bir performans değerlendirmesi sunuyor.",
+  "etiketler": [
+    "model",
+    "benchmark",
+    "coding",
+    "local-llm",
+    "RAG"
+  ],
+  "anilan_modeller": [
+    "Qwen3.8-27B",
+    "Frontier",
+    "Claude",
+    "GPT-4",
+    "iq3 GSQ-RCO",
+    "Muse Glimmer",
+    "Qwen3.6-35B-A3B",
+    "mradermacher fine-tune"
+  ],
+  "yorum_tr": "Bu benchmark, yerel LLM'lerin yüksek hassasiyetli veri işleme görevlerinde hâlâ bulut çözümlerine kıyasla geride kalabileceğini gösteriyor; geliştiriciler, model seçimini kuantizasyon ve token sınırları gibi teknik detayları da göz önünde bulundurarak yapmalı.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/5v05e81vu2vh1.png?width=140&height=55&auto=webp&s=50c15046593d2d454adb37c30a5d14ce211e8a75",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x49pmn/qwen3827b_vs_frontier_vs_others/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-12T18:26:32.000Z",
+  "slug": "qwen3-8-27b-vs-frontier-vs-others"
+}

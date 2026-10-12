@@ -1,0 +1,30 @@
+{
+  "baslik_tr": "BrokenML: Ajanlar Bozuk ML İşlerini Düzeltme Yeteneği Test Edildi",
+  "ozet_tr": "Zhebrak, PyTorch ve llama.cpp ortamlarında ortaya çıkan yaygın hataları onarmak için gereken erişim seviyesini ölçen BrokenML adlı bir benchmark geliştirdi. Üç farklı erişim düzeyi (sadece konfigürasyon ve kod, okuma‑only loglar ve tam root erişimi) üzerinden dokuz modelin performansı değerlendirildi.",
+  "detayli_icerik_tr": "Zhebrak, iki düğümlü bir Slurm kümesi üzerinde Gloo iletişim protokolü kullanan PyTorch iş yükleri ile Docker Compose içinde çalışan bir llama.cpp sunucusunu içeren bir test ortamı kurdu. Bu ortamda, gerçek dünyada sıkça karşılaşılan hatalar – rank'lar arasında şekil uyumsuzlukları, kilitlenmiş toplama işlemleri, yavaş çalışan bir düğüm, bellek taşması (OOM), bozuk model checkpoint'leri, zamanlama sorunları, düşük servis verimi ve sessiz kayıp sapmaları – kasıtlı olarak eklendi.\n\nHer bir hata senaryosu için, ajanların sorunu çözebilmesi gereken erişim seviyesi üç kategoriye ayrıldı: (1) sadece konfigürasyon dosyaları ve kod, (2) bu dosyalar plus canlı, sadece‑okunur loglar, (3) küme üzerinde tam root yetkisi. Çözümün doğruluğu, aynı işi temiz bir kümede yeniden çalıştıran bağımsız bir doğrulayıcı tarafından puanlandı.\n\nToplamda dokuz farklı model, her bir görevde üç erişim seviyesinde test edildi; bu sayede açık (sınırlı erişim) ve kapalı (tam erişim) modeller arasındaki performans farkı ölçüldü. Sonuçlar, konfigürasyon ve kod bazlı müdahalelerle çözülebilen bir kısmın ötesinde, gerçek zamanlı loglara ve tam sistem yetkilerine ihtiyaç duyulan durumların hâlâ önemli bir boşluk oluşturduğunu gösterdi.\n\nBenchmark'ın sınırlamaları arasında, testlerin yalnızca CPU üzerinde Gloo kullanması (GPU desteği yok) ve her görev‑model kombinasyonu için tek bir deneme yapılması yer alıyor. Bu kısıtlamalar, sonuçların kesin bir performans göstergesi olmaktan ziyade, erişim seviyelerinin etkisini ortaya koyan bir ön gösterge olarak değerlendirilmesini gerektiriyor.",
+  "onemli_maddeler": [
+    "BrokenML, ajanların bozuk ML işlerini düzeltmek için hangi erişim seviyesine ihtiyaç duyduğunu ölçen ilk kapsamlı benchmark olarak sunuldu.",
+    "Test senaryoları, gerçek dünyada sıkça rastlanan şekil uyumsuzlukları, OOM, checkpoint bozulması ve düşük throughput gibi hataları içeriyor.",
+    "Üç erişim düzeyi (kod+konfig, kod+log, tam root) arasındaki performans farkı, tam sistem yetkisinin hâlâ kritik bir rol oynadığını ortaya koydu."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Erişim seviyelerinin ML iş akışlarındaki hata giderme yeteneğine etkisini gösteren nadir bir çalışma olması, araştırmacılar ve altyapı sağlayıcıları için yol haritası sunması.",
+  "etiketler": [
+    "ML",
+    "benchmark",
+    "agent",
+    "PyTorch",
+    "Slurm"
+  ],
+  "anilan_modeller": [],
+  "yorum_tr": "BrokenML, AI operatörlerinin ve otomasyon ajanlarının hangi yetkilere ihtiyaç duyduğunu somut verilerle ortaya koyarak, güvenli ve etkili hata yönetimi stratejileri geliştirmelerine yardımcı olacak.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/igyqe1gqc1vh1.png?width=640&crop=smart&auto=webp&s=9c11d5f69147d645bdfad797756cc6061716ac20",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x41pqt/brokenml_can_agents_fix_broken_ml_jobs/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-12T13:21:20.000Z",
+  "slug": "brokenml-can-agents-fix-broken-ml-jobs"
+}

@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "MiniCPM-V 4.7 35B-A3B: Açık Kaynak MoE Modeli Mobil Cihazlarda Sorunsuz Çalışıyor",
+  "ozet_tr": "MiniCPM-V 4.7 serisinin 35B‑A3B varyantı, Lookahead Expert Scheduling ve ince katman‑katman kuantizasyonu sayesinde ilk açık kaynak MoE modelini iPhone 17 Pro Max gibi cihazlarda 13+ token/sn hızla çalıştırıyor. Performans‑verimlilik Pareto sınırını zorlayarak, Instruct modunda Qwen3.6 35B‑A3B'den daha yüksek puan ve daha düşük gecikme sunuyor.",
+  "detayli_icerik_tr": "OpenBMB, MiniCPM-V 4.7 serisinin en yeni üyesi olan 35B‑A3B modelini duyurdu. Bu model, MiniCPM-V ailesinin tek‑görüntü, çok‑görüntü ve video anlama yeteneklerini, daha güçlü temel becerilerle birleştirirken, görsel kodlamada verimliliği artırıyor ve cihaz içinde (on‑device) çalıştırılabilirliği sağlıyor. \n\nModelin en çarpıcı özelliği, Lookahead Expert Scheduling (LES) tekniği, ince katman‑katman kuantizasyonu ve DSpark spekülatif örnekleme entegrasyonu sayesinde, performanstan ödün vermeden kayıpsız ve akıcı bir mobil inferans sunmasıdır. iPhone 17 Pro Max üzerinde 13 token/sn üzeri bir çözümleme hızı elde edildiği belirtiliyor. \n\nVerimlilik açısından MiniCPM-V 4.7, intra‑ViT erken sıkıştırma yöntemini (LLaVA‑UHD v4'ten uyarlanmış) kullanarak görsel tokenları erken aşamada sıkıştırıyor; bu sayede sonraki encoder katmanlarındaki işlem yükü azalıyor. Geliştiriciler, 4x ve 16x karışık görsel token sıkıştırma seçenekleriyle görsel detay ve maliyet arasında denge kurabiliyor. \n\nPlatform desteği de genişletildi: iOS, Android ve HarmonyOS'un yanı sıra Rockchip, Houmo, Intel, AMD ve Arm gibi çip platformları için güncel (day‑0) destek sağlanıyor. Inferans çerçeveleri SGLang, vLLM, llama.cpp ve Ollama, ince ayar çerçeveleri ise SWIFT ve LLaMA‑Factory olarak listelenmiş. Model, GGUF, BNB, AWQ, GPTQ ve yeni FP8 kuantizasyon formatlarını sunuyor; ayrıca Self‑Replay Fine‑Tuning yöntemiyle düşük maliyetli özelleştirme ve unutma (catastrophic forgetting) riskinin azaltılması hedefleniyor.",
+  "onemli_maddeler": [
+    "Lookahead Expert Scheduling (LES) ve ince katman‑katman kuantizasyonu sayesinde 35B‑A3B, açık kaynak MoE modeli olarak ilk kez cihaz içinde sorunsuz çalışıyor (13+ token/sn).",
+    "Instruct modunda Qwen3.6 35B‑A3B'den daha yüksek puan ve daha düşük inferans süresi elde edilerek performans‑verimlilik Pareto sınırı genişletildi.",
+    "Intra‑ViT erken sıkıştırma ve 4x/16x karışık görsel token sıkıştırma, görsel işlem maliyetini önemli ölçüde düşürürken detay kaybını kontrol altında tutuyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Model, açık kaynak MoE mimarisini mobil cihazlarda yüksek verimlilikle sunarak çok‑modal AI ekosisteminde yeni bir kilometre taşı oluşturuyor.",
+  "etiketler": [
+    "MiniCPM-V",
+    "MoE",
+    "MLLM",
+    "on-device inference",
+    "quantization"
+  ],
+  "anilan_modeller": [
+    "MiniCPM-V 4.6",
+    "Qwen3.6 35B-A3B",
+    "LLaVA-UHD v4"
+  ],
+  "yorum_tr": "MiniCPM-V 4.7 35B‑A3B, yüksek kapasiteli çok‑modal modellerin mobil ve kenar cihazlara taşınmasını kolaylaştırarak geliştiricilerin ve son kullanıcıların erişimini genişletecek; aynı zamanda açık kaynak ekosisteminde MoE mimarisinin benimsenmesini hızlandıracak.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/eIKdWcVmx-nN5KV_7du_Xs1HsrjSkKjO9u8Px4YWi3Y.png?width=640&crop=smart&auto=webp&s=c4a149c86746f07ac4cc519b12368472a0cc3587",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x47taj/openbmbminicpmv4735ba3b/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-12T17:16:21.000Z",
+  "slug": "openbmb-minicpm-v-4-7-35b-a3b"
+}

@@ -1,0 +1,39 @@
+{
+  "baslik_tr": "Meta, ilk sınır modelini Muse Wonder'ı yayınladı",
+  "ozet_tr": "Meta’nun Superintelligence Lab’ı, daha büyük ve yetenekli bir sınır model olan Muse Wonder ve Muse Wonder Full’ı tanıttı. Bu modeller, düşük gecikmeli Muse Spark’ın aksine yüksek benchmark skorları ve kodlama gibi karmaşık görevlerde üstün performans vaat ediyor.",
+  "detayli_icerik_tr": "Meta, Superintelligence Lab aracılığıyla Pazartesi günü Muse Wonder ve Muse Wonder Full adını taşıyan iki yeni state‑of‑the‑art modeli duyurdu. Bu modeller, şirketin ilk sınır (frontier) modeli olarak konumlandırılıyor ve önceki hafif model Muse Spark’tan farklı olarak çok daha büyük bir parametre sayısına ve daha yüksek işlem gücüne sahip. Meta’nın model kartında yer alan test sonuçlarına göre, Wonder serisi Fable 5.1 ve GPT‑6 Astra’ya benzer benchmark puanları elde etmiş.\n\nWonder ve Wonder Full, özellikle kod üretimi gibi karmaşık görevlerde daha iyi sonuçlar sunuyor. Meta, yeni modellerin “aktif hafıza” (active memory) yeteneğine odaklandığını belirtiyor; bu sayede model, kullanıcıdan alınan bilgileri günler, haftalar hatta aylar boyunca hatırlayabiliyor. Şirket, bu yeteneği ölçmek için MemoryBench benchmarkını kullandı ve Muse Wonder’ın bu testte Fable, Opus ve Astra’dan daha yüksek puan aldığını iddia etti.\n\nFiyatlandırma açısından Wonder, Meta Model API üzerinden erişildiğinde giriş token başına 4 $, çıkış token başına 20 $ ücretlendiriliyor; bu da GPT‑6 Sol ya da Opus 5.5 ile benzer bir maliyet seviyesine denk geliyor. Wonder Full ise yalnızca Muse Code abonelerine sunulacak ve API üzerinden erişilemeyecek. Her iki model de yeni Muse ajanını güçlendirmek için kullanılacak.\n\nBu duyuru, geçen yıl Ağustos’ta Alexandr Wang’ın Meta’nın AI stratejisini yeniden yapılandırmasının ardından gelen ilk sınır model çıkışı olarak görülüyor. O zamandan beri şirket, Muse Spark ve Muse ajanı gibi hafif çözümler yayınladı, ancak OpenAI ve Anthropic gibi rakiplerin yüksek profilli modellerine benzer bir adım atmamıştı. Modeller, Ohio’nun merkezinde bulunan Prometheus veri merkezinde eğitildi ve Meta’nın kişisel süper‑zeka vizyonuna bir adım daha yaklaştırıyor.",
+  "onemli_maddeler": [
+    "Muse Wonder ve Muse Wonder Full, Meta’nın ilk sınır modeli olarak Fable 5.1 ve GPT‑6 Astra ile benzer benchmark skorları elde etti.",
+    "Yeni modeller, MemoryBench testinde rakiplerinden daha yüksek puan alarak uzun vadeli ‘aktif hafıza’ yeteneğini kanıtladı.",
+    "Wonder API üzerinden token başına 4 $, çıkış token başına 20 $ ücretlendirilirken, Wonder Full sadece Muse Code abonelerine sunulacak.",
+    "Modeller, Meta’nın yeni Muse ajanını güçlendirecek ve şirketin kişisel süper‑zeka hedeflerine hizmet edecek."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Meta’nın ilk sınır modeli, büyük dil modeli pazarında rekabeti artırarak hem araştırmacılar hem de geliştiriciler için yeni bir seçenek sunuyor.",
+  "etiketler": [
+    "AI",
+    "frontier model",
+    "Meta",
+    "Muse Wonder",
+    "benchmark"
+  ],
+  "anilan_modeller": [
+    "Muse Wonder",
+    "Muse Wonder Full",
+    "Muse Spark",
+    "Fable 5.1",
+    "GPT-6 Astra",
+    "GPT-6 Sol",
+    "Opus 5.5"
+  ],
+  "yorum_tr": "Muse Wonder serisi, Meta’nın yüksek performanslı modeller pazarına girişiyle sektörde yeni bir rekabet dinamiği yaratıyor. Geliştiriciler, aktif hafıza yeteneği sayesinde uzun vadeli asistan uygulamaları geliştirebilirken, fiyatlandırmanın benzer seviyede olması da erişilebilirliği artıracak.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://techcrunch.com/wp-content/uploads/2026/10/Screenshot-2026-10-12-at-1.09.43-PM.jpg?resize=1200,676",
+  "url": "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/",
+  "source": "TechCrunch AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-12T17:56:56.000Z",
+  "slug": "meta-releases-its-first-frontier-model-muse-wonder"
+}

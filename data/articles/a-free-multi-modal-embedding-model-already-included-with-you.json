@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "LLM'nizle birlikte gelen ücretsiz çok-modlu gömme modeli: vLLM eklentisi ve upstream PR",
+  "ozet_tr": "NuMind, vLLM üzerinde çalışan bir eklenti aracılığıyla mevcut LLM'lerden çok-modlu metin ve görsel gömme vektörleri elde etmeyi mümkün kılıyor. Eklenti, son dekoder katmanının gizli durumunu OpenAI‑API uyumlu bir yanıt içinde sunarak yerel RAG ve semantik arama gibi senaryolara hızlı bir başlangıç sağlıyor.",
+  "detayli_icerik_tr": "NuMind çalışanı, vLLM tarafından hizmet verilen bir LLM'in dahili temsillerini (her dekoder katmanından bir gizli durum) kullanarak gömme (embedding) üretmeyi kolaylaştıran bir eklenti geliştirdiğini duyurdu. Model, istemi işleyip ilk çıktı tokenını tahmin ederken zaten son gizli durum vektörünü oluşturur; bu vektör, OpenAI‑API uyumlu sohbet arayüzü üzerinden ekstra bir parametreyle (max_tokens=1) yanıtın ek kısmında döndürülüyor. \n\nBu yaklaşım, PromptEOL, PromptReps ve özellikle E5‑V çalışmalarına dayanıyor; bu çalışmalarda tek bir kelime/ token özet isteği, modelin ilgili bilgiyi belirli bir konuma yoğunlaştırmasını sağlıyor ve son gizli durum vektörü etkili bir gömme olarak kullanılabiliyor. NuMind, bu prensibi kendi açık‑ağırlıklı 4 B parametreli NuExtract3 modeliyle birleştirerek, görüntü ve belge verilerini Markdown ya da JSON formatında yapılandırılmış çıktılara dönüştürüyor. \n\nEklenti, yerel Retrieval‑Augmented Generation (RAG), semantik arama, belge ve görsel kümeleme ya da gömme tabanlı sınıflandırıcı eğitimi gibi uygulamalarda kullanılabilir. Ancak gömme kalitesi model, istem ve görev bağlamına göre değişiklik gösterebilir; özel bir gömme modeli daha hızlı ve daha doğru sonuçlar verebilir. Bu eklenti, manuel PyTorch‑transformers kurulumuna kıyasla deneyleri hızlandırmayı ve kod karmaşasını azaltmayı hedefliyor. \n\nŞu an için eklenti Apache‑2.0 lisansı altında vLLM için yayınlandı ve PR #57185 ile ana vLLM kod tabanına dahil edilmesi isteniyor. Geliştiriciler, eklentinin llama.cpp platformuna da taşınması konusunda ilgi gösterirse benzer bir PR açmayı planlıyor.",
+  "onemli_maddeler": [
+    "vLLM üzerinden çalışan LLM'lerin son gizli durum vektörü, tek bir API çağrısıyla gömme olarak sunulabiliyor.",
+    "Eklenti, Apache‑2.0 lisanslı ve OpenAI‑API uyumlu, max_tokens=1 parametresiyle çalışıyor.",
+    "NuExtract3 adlı 4 B açık‑ağırlıklı model, belge ve görselden yapılandırılmış (JSON/Markdown) çıktı üretebiliyor.",
+    "Yerel RAG, semantik arama ve gömme‑tabanlı sınıflandırma gibi senaryolarda hızlı prototipleme imkanı sağlıyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Yerel LLM altyapılarında gömme üretimi için ayrı bir model çalıştırmaya gerek kalmadan, mevcut servis üzerinden düşük maliyetli ve hızlı bir çözüm sunması, geliştiricilerin prototip süresini kısaltıyor.",
+  "etiketler": [
+    "vLLM",
+    "embedding",
+    "multi-modal",
+    "NuMind",
+    "RAG"
+  ],
+  "anilan_modeller": [
+    "NuExtract3",
+    "E5-V",
+    "vLLM"
+  ],
+  "yorum_tr": "Bu eklenti, yerel LLM dağıtımlarında gömme üretimini basitleştirerek araştırmacı ve geliştiricilerin deneysel çalışmalarını hızlandırabilir; ancak gömme kalitesi model ve istem seçimine bağlı olduğu için kritik görevlerde özel gömme modelleri hâlâ tercih edilebilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/0rinozo3a1vh1.png?width=640&crop=smart&auto=webp&s=2c3fe030b4321a195fc36c80d39928e785240eb7",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x416s0/a_free_multimodal_embedding_model_already/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-12T12:59:09.000Z",
+  "slug": "a-free-multi-modal-embedding-model-already-included-with-you"
+}

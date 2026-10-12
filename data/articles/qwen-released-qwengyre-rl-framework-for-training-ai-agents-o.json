@@ -1,0 +1,42 @@
+{
+  "baslik_tr": "Qwen, XLong görevler için elastik RL çerçevesi QwenGyre'yi duyurdu",
+  "ozet_tr": "Qwen, uzun vadeli ve karmaşık görevlerde yapay zeka ajanlarını eğitmek üzere tasarlanmış QwenGyre adlı yeni bir pekiştirmeli öğrenme (RL) çerçevesini tanıttı. Çerçeve, Elastic Scheduler ve Trajectory Processor adlı iki temel bileşenle GPU kaynaklarını dinamik olarak yönlendirerek eğitim süresini %44'e varan oranlarda kısaltıyor ve NL2RepoBench skorunu %52,5'ten %58,5'e yükseltiyor.",
+  "detayli_icerik_tr": "Qwen, son araştırma makalesi (arXiv:2609.33848) kapsamında QwenGyre adlı yeni bir RL çerçevesi geliştirdiğini duyurdu. Çerçevenin en dikkat çeken özelliği, \"elastic RL\" yaklaşımıyla ekstrem uzun vadeli (XLong) ajan eğitimine olanak tanımasıdır. Bu amaçla iki çekirdek tasarım sunuluyor: \n\n1. **Elastic Scheduler**: Rollout (çevrim) ve eğitim aşamaları arasındaki GPU talebindeki dalgalanmaları algılayarak kaynakları anlık olarak yeniden tahsis eder. Canlı yürütmeler kesintiye uğramaz ve bu sayede Colocate yöntemine göre %1.85, Async yöntemine göre %1.78 daha hızlı bir işlem süresi sağlanır.\n\n2. **Trajectory Processor**: Dallanmış yürütmeler (ör. kompaktlama, alt ajanlar, yeniden denemeler) üzerinden ortak ön ekleri paylaşan bir ağaç yapısı oluşturur. Bu yapı, eğitim örneklerini sınırlı ve tekrarsız bir biçimde sunar; zaman aşımına uğrayan kısımların bile puanlanması mümkün olur.\n\nQwenGyre, Qwen3.8-2.4T-A95B modeliyle test edildi; bir rollout başına yaklaşık 700 bin token işlenebiliyor. NL2RepoBench benchmark'ında 48 adımda başarı oranı %52,5'ten %58,5'e yükseltilirken, Async tabanlı eğitim süresi %44 oranında azalıyor. Bu sonuçlar, uzun sekanslı kod üretimi ve depolama görevlerinde çerçevenin verimliliğini ve ölçeklenebilirliğini kanıtlıyor.\n\nÇerçevenin açık kaynak kodu ve detaylı teknik raporu, araştırmacıların ve geliştiricilerin XLong görevler için daha etkili RL çözümleri üretmesine imkan tanıyacak şekilde paylaşıldı.",
+  "onemli_maddeler": [
+    "Elastic Scheduler, GPU kaynaklarını dinamik yeniden tahsis ederek canlı yürütmeleri kesintisiz tutar ve %1.78‑%1.85 hız artışı sağlar.",
+    "Trajectory Processor, dallanmış yürütmeleri ortak ön ek ağaçlarıyla birleştirerek eğitim örneklerini verimli ve tekrarsız hâle getirir.",
+    "QwenGyre, Qwen3.8-2.4T-A95B ile NL2RepoBench skorunu %52,5'ten %58,5'e yükseltirken eğitim süresini %44 azaltıyor."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Uzun vadeli görevlerde RL verimliliğini artıran yeni bir çerçeve, hem akademik araştırmalara hem de endüstriyel uygulamalara doğrudan katkı sağlayacak.",
+  "etiketler": [
+    "QwenGyre",
+    "RL",
+    "XLong",
+    "ElasticScheduler",
+    "TrajectoryProcessor"
+  ],
+  "anilan_modeller": [
+    "Qwen3.8-2.4T-A95B"
+  ],
+  "yorum_tr": "QwenGyre, uzun sekanslı ve karmaşık görevlerde RL eğitim maliyetlerini önemli ölçüde düşürerek araştırmacıların daha büyük ölçekli deneyler yapmasını mümkün kılıyor; geliştiriciler ise daha hızlı prototipleme ve daha yüksek performanslı ajanlar elde edecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen3.8-2.4T-A95B",
+      "benchmark": "NL2RepoBench",
+      "skor": 58.5,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "48 adımda başarı oranı",
+      "kaynak_metinden_alinti": "QwenGyre lifts NL2RepoBench from 52.5% to 58.5% in 48 steps"
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/gk90cr3be1vh1.jpg?width=140&height=78&auto=webp&s=2f18cad1f0a2cb12bb0d6867aa725847db18676d",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x41myz/qwen_released_qwengyre_rl_framework_for_training/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-12T13:18:10.000Z",
+  "slug": "qwen-released-qwengyre-rl-framework-for-training-ai-agents-o"
+}

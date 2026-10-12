@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "MiniCPM-V 4.7 1B Modeli Açıklandı: Görsel Anlayışta Yeni Performans‑Verimlilik Dönemi",
+  "ozet_tr": "OpenBMB, MiniCPM-V serisinin en yeni üyesi MiniCPM-V 4.7 1B modelini duyurdu. Tek görüntü, çoklu görüntü ve video anlayışını daha yüksek verimlilikle sunan model, sınırlı kaynaklı cihazlarda bile güçlü görsel yetenekler sağlıyor.",
+  "detayli_icerik_tr": "OpenBMB, MiniCPM-V 4.7 serisinin 1 milyar parametreli (1B) versiyonunu resmi olarak yayınladı. Model, önceki MiniCPM-V 4.6 sürümüne kıyasla temel yeteneklerde belirgin bir artış gösterirken, aynı zamanda Qwen3.5 0.8B modelini hem toplam skor hem de çıkarım (inference) verimliliği açısından geride bırakıyor. Bu gelişme, özellikle kaynak kısıtlaması olan mobil ve kenar (edge) cihazlarda yüksek performans‑verimlilik oranı arayan geliştiriciler için önemli bir adım olarak öne çıkıyor.\n\nMiniCPM-V 4.7, LLaVA-UHD v4'te kullanılan intra‑ViT erken sıkıştırma tekniğini benimseyerek görsel tokenları vision encoder içinde erken aşamada sıkıştırıyor. Bu sayede sonraki encoder katmanlarındaki işlem yükü azalıyor ve model, 4x ve 16x gibi karışık görsel token sıkıştırma seçenekleriyle görsel detay ve çıkarım maliyeti arasında esnek bir denge kurabiliyor. Böyle bir mimari, yüksek çözünürlüklü görselleri ve videoları düşük gecikme süresiyle işleyebilme yeteneği sağlıyor.\n\nPlatform ve çip desteği açısından MiniCPM-V 4.7 geniş bir yelpazeye hitap ediyor. iOS, Android ve HarmonyOS gibi mobil işletim sistemlerinin yanı sıra Rockchip, Houmo, Intel, AMD ve Arm tabanlı çipler için güncel (day‑0) destek sunuluyor. Açık kaynaklı on‑device dağıtım imkanı, geliştiricilerin modeli doğrudan cihaz üzerinde çalıştırabilmelerine olanak tanıyor. Ayrıca SGLang, vLLM, llama.cpp ve Ollama gibi popüler çıkarım çerçevelerinin yanı sıra SWIFT ve LLaMA‑Factory gibi ince ayar (fine‑tuning) araçları da destekleniyor.\n\nQuantization seçenekleri de çeşitlendirilmiş; GGUF, BNB, AWQ, GPTQ ve yeni eklenen FP8 quantization modelleri mevcut. Geliştiricilere düşük maliyetli özelleştirme imkanı sunan Self‑Replay Fine‑Tuning yöntemi de tanıtıldı; bu teknik, yeni yetenekler eklerken mevcut yeteneklerin unutulmasını (catastrophic forgetting) azaltıyor. Bu bütüncül yaklaşım, görsel‑dil modellerinin mobil ve kenar cihazlarda daha geniş bir kullanım alanına yayılmasını hızlandıracak.",
+  "onemli_maddeler": [
+    "MiniCPM-V 4.7 1B, performans‑verimlilik Pareto sınırını genişleterek aynı kaynak bütçesinde daha güçlü görsel‑dil yetenekleri sunuyor.",
+    "Intra‑ViT erken sıkıştırma sayesinde görsel tokenlar erken aşamada azaltılıyor, böylece çıkarım maliyeti ve gecikme süresi düşüyor.",
+    "iOS, Android, HarmonyOS ve Rockchip, Houmo, Intel, AMD, Arm gibi çip platformları için güncel (day‑0) destek sağlanıyor.",
+    "GGUF, BNB, AWQ, GPTQ ve FP8 gibi çeşitli quantization formatları ve Self‑Replay Fine‑Tuning yöntemi geliştiricilere düşük maliyetli özelleştirme imkanı tanıyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Model, sınırlı kaynaklı cihazlarda görsel‑dil işleme kapasitesini artırarak mobil AI uygulamalarının kapsamını genişletecek ve rekabetçi benchmark sonuçlarıyla sektörde dikkat çekecek.",
+  "etiketler": [
+    "MiniCPM-V",
+    "MLLM",
+    "on-device",
+    "visual-encoding",
+    "quantization"
+  ],
+  "anilan_modeller": [
+    "MiniCPM-V 4.6",
+    "Qwen3.5 0.8B",
+    "LLaVA-UHD v4"
+  ],
+  "yorum_tr": "MiniCPM-V 4.7, düşük güçlü cihazlarda görsel‑dil modellerinin kullanılabilirliğini artırarak geliştiricilere daha fazla esneklik sunuyor. Verimlilik odaklı mimarisi ve geniş platform desteği, mobil AI ekosisteminde yeni uygulamaların ortaya çıkmasını hızlandırabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/PY52se_x-dMyn6r2J5qEwx28lpNdLbI4320c1OnxXcA.png?width=640&crop=smart&auto=webp&s=6ea1f2da455ce0fba6d92a8d5457704d8c1ca2e5",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x492f9/openbmbminicpmv471b/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-12T18:03:02.000Z",
+  "slug": "openbmb-minicpm-v-4-7-1b"
+}

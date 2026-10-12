@@ -1,0 +1,54 @@
+{
+  "baslik_tr": "Microsoft’un yeni Maia 300 AI çipi, Nvidia GPU bağımlılığını azaltıyor",
+  "ozet_tr": "Microsoft, üçüncü nesil Maia 300 AI çipini duyurarak bulut hizmetlerinde Nvidia ve AMD GPU'larına olan bağımlılığını büyük ölçüde azaltmayı hedefliyor. 2027'de üretime geçecek çip, enerji verimliliğinde %40 token artışı ve 96 hızlandırıcıda 7 kat rack‑scale verimlilik vaat ediyor.",
+  "detayli_icerik_tr": "Microsoft, bugün üçüncü nesil Maia AI çipi olan Maia 300'ü tanıttı. Şirket, bu çipi Azure bulut platformunun \"birincil AI çıkarım sistemi\" olarak konumlandırıyor ve 2027'de üretim ortamına geçişini planlıyor. Maia 300, önceki nesil Maia 200'ün üzerine inşa edilerek uzun bağlamlı akıl yürütme, gecikmeye duyarlı sohbet deneyimleri ve çok adımlı ajan görevleri gibi yeni nesil AI iş yüklerini daha verimli bir şekilde çalıştırmak üzere tasarlandı.\n\nMicrosoft Cloud grup başkan yardımcısı Scott Guthrie, Maia 300'ün enerji verimliliği konusunda çığır açtığını belirterek, \"Maia 300, lider GPU tabanlı sistemlere kıyasla megavat başına %40 daha fazla token işleyebilecek\" dedi. Ayrıca, tam 96 hızlandırıcı konfigürasyonda, Maia 200'e göre rack‑scale token throughput'unda 7 kat artış sağladığını vurguladı. Bu iyileştirmeler, Microsoft'un Azure veri merkezlerinde çok‑gigavat ölçeğinde kendi çip ailesini ölçeklendirmesine ve dış tedarikçilere olan bağımlılığı azaltmasına olanak tanıyacak.\n\nMaia 300, TSMC'nin N2P süreç düğümünde üretilen bir chiplet mimarisi kullanıyor. Hesaplama, bellek kontrolcüsü ve I/O fonksiyonları ayrı chiplet'lerde yer alıyor; bu sayede her bir blok, görevine en uygun teknolojiyle üretilebiliyor ve silikon alanı daha çok hesaplama için ayrılıyor. Bu mimari, çipin performansını artırırken enerji tüketimini düşürerek maliyet avantajı sağlıyor.\n\nMaia 200, zaten Microsoft Copilot, GitHub Copilot, Microsoft Foundry ve şirketin kendi AI modelleri gibi hizmetlerde üretim ortamında çalışıyor. Maia 300'ün tanıtımı, Microsoft'un AI yığınına tam bir donanım kontrolü getirme ve Google DeepMind, OpenAI, Anthropic gibi rakiplerle rekabet edebilmek için kendi çip tasarımını hızlandırma stratejisinin bir parçası. AI CEO'su Mustafa Suleyman, \"Bu ölçekle, modellerimizi çipimizle birlikte tasarlamak ve ortak geliştirmek zorunlu\" diyerek çipin stratejik önemine işaret etti.",
+  "onemli_maddeler": [
+    "Maia 300, megavat başına %40 daha fazla token işleyerek GPU tabanlı sistemlerden daha verimli.",
+    "96 hızlandırıcı konfigürasyonda, Maia 200'e göre rack‑scale token throughput'unda 7 kat artış sağlıyor.",
+    "Chiplet mimarisi sayesinde hesaplama, bellek ve I/O fonksiyonları ayrı süreçlerde üretilerek silikon verimliliği artırıldı.",
+    "2027'de çok‑gigavat ölçeğinde Azure veri merkezlerinde tam ölçekli üretim hedefleniyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Microsoft'un kendi AI çipini ölçeklendirmesi, bulut AI maliyetlerini düşürürken dış GPU tedarikçilerine bağımlılığı azaltarak rekabet avantajı sağlayacak.",
+  "etiketler": [
+    "AI çipi",
+    "Microsoft",
+    "Maia 300",
+    "Azure",
+    "GPU bağımlılığı"
+  ],
+  "anilan_modeller": [
+    "Microsoft Copilot",
+    "GitHub Copilot",
+    "Microsoft Foundry"
+  ],
+  "yorum_tr": "Maia 300'ün tanıtımı, bulut AI hizmetlerinde maliyet ve performans dengesini yeniden tanımlayarak geliştiricilere daha düşük gecikmeli ve enerji verimli çözümler sunacak. Kullanıcılar ise daha hızlı ve sürdürülebilir AI deneyimlerinden faydalanacak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Maia 300",
+      "benchmark": "Tokens per megawatt",
+      "skor": 40,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "We expect Maia 300 to deliver 40 percent more tokens per megawatt compared to leading GPU-based systems."
+    },
+    {
+      "model": "Maia 300 (96-accelerator config)",
+      "benchmark": "Rack-scale token throughput vs Maia 200",
+      "skor": 7,
+      "birim": "x",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "in a full 96-accelerator configuration, it delivers up to 7x the rack-scale token throughput of Maia 200."
+    }
+  ],
+  "gorsel_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/Maia-300-prototype-chip-03.jpg?quality=90&strip=all&crop=0,0,100,100",
+  "url": "https://www.theverge.com/news/1009465/microsoft-maia-300-chip-improvements-rollout",
+  "source": "The Verge AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-12T13:00:00.000Z",
+  "slug": "microsoft-s-new-ai-chip-makes-it-less-reliant-on-nvidia-s-gp"
+}
