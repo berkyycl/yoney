@@ -1,0 +1,37 @@
+{
+  "baslik_tr": "Gemma4 E4B EXL3: Jetson Orin Nano’da Llama.cpp’a Alternatif",
+  "ozet_tr": "Jetson Orin Nano 8 GB platformu için geliştirilen little-gemma V1.0 motoru, llama.cpp'tan belirgin bir performans üstünlüğü sağlıyor. Geliştirici, exllamav3'ü little-gemma kodlarıyla birleştirerek prefill hızını artırdı ve sesli sohbet gecikmesini azalttı. Ancak çözüm, tüm senaryolar için evrensel olmayabilir.",
+  "detayli_icerik_tr": "NVIDIA Jetson Orin Nano gibi gömülü sistemlerde büyük dil modellerinin (LLM) çalıştırılması uzun süredir zorlu bir konu olmuştur. Bu bağlamda, /u/cortexist tarafından geliştirilen little-gemma V1.0 motoru, mevcut llama.cpp implementasyonuna kıyasla çok daha yüksek bir performans sergiliyor. Yine de, Jetson Orin Nano 8 GB sürümünde Gemma‑4 E4B modelinin ideal çalışma seviyesine ulaşmak için ek iyileştirmeler gerektiği belirtiliyor.\n\nGeliştirici, exllamav3 projesini fork ederek ve little-gemma V1.0 kod tabanından kritik parçaları taşıyarak bir çözüm sundu. Bu entegrasyon, özellikle \"prefill\" aşamasında (modelin başlangıç tokenlerini işleme) kayda değer bir hız artışı sağladı. Sonuç olarak, sesli sohbet uygulamalarında toplam gecikme süresi düşerken, token çözümleme (decoding) hızı bir miktar geriledi.\n\nEXL3 tabanlı bu yeni yapı, Jetson Orin Nano üzerinde tüm kullanıcılar için uygun olmayabilir; yüksek prefill hızı gerektiren senaryolarda büyük avantaj sunuyor. Projenin kaynak kodu GitHub üzerinden erişilebilir durumda ve model ağırlıkları Hugging Face'de \"gemma-4-E4B-it-qat-exl3-4.0bpw\" adıyla paylaşılmış.\n\nBu gelişme, sınırlı bellek ve işlem gücüne sahip kenar cihazlarda LLM performansını artırmak isteyen geliştiriciler için yeni bir yol haritası sunuyor. Gelecek güncellemelerde decoding performansının da iyileştirilmesi, Jetson ekosisteminde daha geniş bir kullanım alanı yaratabilir.",
+  "onemli_maddeler": [
+    "little-gemma V1.0 motoru, llama.cpp'tan belirgin bir performans üstünlüğü gösteriyor.",
+    "exllamav3 fork'ı, little-gemma kodlarıyla birleştirilerek prefill hızında büyük iyileşme sağladı.",
+    "Prefill hızı artarken decoding hızı bir miktar geriledi, ancak toplam sesli sohbet gecikmesi azaldı.",
+    "EXL3 tabanlı çözüm, Jetson Orin Nano 8 GB cihazlarda yüksek prefill performansı isteyen kullanıcılar için ideal.",
+    "Kod ve model ağırlıkları GitHub ve Hugging Face üzerinden açık kaynak olarak sunuldu."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Jetson Orin Nano gibi sınırlı kaynaklı kenar cihazlarda LLM performansını artıran yeni bir motor sunması, geliştiriciler ve araştırmacılar için kritik bir adım oluşturuyor.",
+  "etiketler": [
+    "Jetson Orin",
+    "Gemma",
+    "EXL3",
+    "llama.cpp",
+    "AI inference"
+  ],
+  "anilan_modeller": [
+    "Gemma-4 E4B",
+    "llama.cpp",
+    "little-gemma V1.0",
+    "exllamav3"
+  ],
+  "yorum_tr": "Bu geliştirme, gömülü AI uygulamalarında performans darboğazlarını aşmak isteyen ekipler için değerli bir referans noktası. Prefill hızındaki artış, gerçek‑zamanlı sesli etkileşimlerde deneyimi iyileştirirken, decoding süresindeki düşüşün ilerleyen sürümlerde giderilmesi bekleniyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/0h50ydns6wuh1.png?width=640&crop=smart&auto=webp&s=49564779d503b7f2e3fcb1386f46dddd7b15bfbe",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x3hkw2/gemma4_e4b_exl3_alternative_to_llamacpp_on_jetson/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-11T19:47:19.000Z",
+  "slug": "gemma4-e4b-exl3-alternative-to-llama-cpp-on-jetson-orin"
+}

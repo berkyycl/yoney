@@ -1,0 +1,47 @@
+{
+  "baslik_tr": "Qwen 3.8 Flash-Next, AMD 7900 XTX'te 500k bağlamda çalıştırıldı: Yerel kullanımda büyük sıçrama",
+  "ozet_tr": "Kullanıcı, Qwen3.8-Flash-Next modelini AMD Radeon 7900 XTX kartı üzerinde 500.000 tokenlık bağlamla çalıştırarak yerel yapay zekâ performansında çarpıcı bir artış kaydetti. Preserve_thinking parametresinin neden olduğu tekrarlama hatasını düzelttikten sonra model, 105‑160 token/sn hızla ve %88‑94 kaliteyle yanıt veriyor.",
+  "detayli_icerik_tr": "Reddit'te LocalLLaMA topluluğuna gönderilen bir paylaşımda, /u/human_in_the_looop adlı kullanıcı Qwen3.8-Flash-Next (temel sürüm ve sonrasında Swift-1.5 NVFP4) modelini bir ay boyunca bir pod oturumunda test ettiğini ve modelin kendi önceki akıl yürütmelerini tekrarlayan kısa yanıtlar verdiğini raporladı. Sorunun bağlamın aşırı büyümesinden değil, preserve_thinking: true ayarının önceki düşünce çıktısını her yeni isteğe eklemesinden kaynaklandığı tespit edildi; bu ayar kapatıldığında tekrarlar ortadan kalktı.\n\nModelin teknik özellikleri incelendiğinde, toplam 176 Milyar parametreye sahip olduğu, her token için 6 Milyar aktif parametre kullandığı ve ağırlıkların 66.4 GB'lık bir dosyada saklandığı görüldü. Bu ağırlıkların 23.8 GiB'ı GPU VRAM'inde, 31.6 GB'ı uzman ağırlıkları ve 28.8 GB'lık PLE tablosu ise sistem RAM'inde tutuldu. Bu konfigürasyonla model, 500 k tokenlık bir bağlamı (gerçekte 506.849 token) sorunsuz bir şekilde işleyebildi.\n\nPerformans açısından, modelin çözümleme hızı 105‑160 token/sn arasında değişti; bağlam derinliği arttıkça hız %18 oranında düşse de yanıt kalitesi etkilenmedi. Düşük akıl yürütme (thinking off) modunda kalite %81‑84, thinking açıkken ise %88‑94 aralığında seyretti. Bu sonuçlar, yazarın daha önce kullandığı llama.cpp ve Swift‑1.5 27 B yoğun (dense) modellerine kıyasla belirgin bir iyileşme olduğunu gösteriyor.\n\nKullanıcı, bu deneyimini günlük sürücü (daily driver) olarak benimseyerek, AMD tabanlı bir oyun bilgisayarında yerel LLM geliştirmelerinin artık çok daha geniş bağlam ve yüksek kalite sunabildiğini vurguladı. İlerleyen dönemde Flash‑Next ve Strata modelleriyle ilgili daha fazla rapor paylaşmayı planladığını belirtti.",
+  "onemli_maddeler": [
+    "Preserve_thinking:true ayarı, modelin önceki akıl yürütmelerini tekrarlamasına neden oldu; ayar kapatıldığında sorun çözüldü.",
+    "Qwen3.8-Flash-Next, AMD Radeon 7900 XTX üzerinde 500.000+ tokenlık bağlamı (506.849 token) sorunsuz işleyebildi.",
+    "Decode hızı 105‑160 token/sn arasında, bağlam derinliği arttıkça %18 yavaşlama gösterdi ancak kalite sabit kaldı.",
+    "Thinking açıkken kalite %88‑94, kapalıyken %81‑84 olarak ölçüldü; önceki llama.cpp ve Swift‑1.5 27B modellerine göre büyük bir performans artışı sağladı.",
+    "Modelin 66.4 GB ağırlığı, 23.8 GiB VRAM ve 60+ GB sistem RAM kullanımıyla yüksek bellek verimliliği gösterdi."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Model, tüketici sınıfı bir GPU üzerinde 500k token bağlam ve yüksek kalite sunarak yerel LLM kullanımının sınırlarını genişletiyor; bu, geliştiriciler ve araştırmacılar için maliyet etkin bir alternatif oluşturuyor.",
+  "etiketler": [
+    "Qwen",
+    "Flash-Next",
+    "AMD",
+    "GPU",
+    "Benchmark"
+  ],
+  "anilan_modeller": [
+    "Qwen3.8-Flash-Next",
+    "Swift-1.5 NVFP4",
+    "llama.cpp",
+    "Swift 1.5 27B dense"
+  ],
+  "yorum_tr": "Bu gelişme, yüksek bellek kapasiteli tüketici GPU'larının yerel büyük dil modelleri için artık yeterli olduğunu gösteriyor; geliştiriciler daha uzun bağlamlarla daha kaliteli çıktılar elde ederken, donanım maliyetlerini de kontrol altında tutabilecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen3.8-Flash-Next",
+      "benchmark": "Decode speed (minimum)",
+      "skor": 105,
+      "birim": "tokens/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "minimum observed",
+      "kaynak_metinden_alinti": "Decode is 105–160 tok/s."
+    }
+  ],
+  "gorsel_url": "https://cdn-public.eesel.ai/314c3443-850d-416d-8721-d2e52c7ac2e2/585703e2-5508-4d19-8a3a-24b54e4a1f15/c5b81f7ee9174811847a30b2774a4617.webp",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x3ker0/i_ran_qwen_38_flashnext_on_my_amd_7900_xtx_at/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-11T21:44:02.000Z",
+  "slug": "i-ran-qwen-3-8-flash-next-on-my-amd-7900-xtx-at-500k-context"
+}

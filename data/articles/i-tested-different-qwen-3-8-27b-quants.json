@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "Qwen 3.8 27B modellerinin farklı kuantizasyonları karşılaştırıldı",
+  "ozet_tr": "Reddit topluluğunda Qwen3.8‑27B serisinin üç farklı kuantizasyonu, aynı donanım ve test ortamında karşılaştırıldı. Sonuçlar, beklenmedik bir şekilde MXFP4 kuantunun matematik testlerinde en iyi, kod testlerinde ise en kötü performansı gösterdiğini ortaya koydu.",
+  "detayli_icerik_tr": "Yerel LLaMA topluluğunun bir üyesi, RTX 9700 GPU'su üzerinde üç farklı Qwen3.8‑27B kuantizasyon modelini aynı Docker konteynerinde çalıştırarak GSM8K (matematik) ve HumanEval (kod) test setlerini değerlendirdi. Kullanılan modeller: Qwen3.8‑27B‑UD‑Q6_K_L.gguf, Swift‑Qwen3.8‑27B‑Q6_K.gguf ve Swift‑1.5‑Qwen3.8‑27B‑MXFP4‑A‑outQ6_K.gguf. İlk iki model llama.cpp üzerinden, MXFP4 kuantı ise whirl motoru ile çalıştırıldı.\n\nHipotezler, UD‑Q6_K_L modelinin en yüksek doğruluk ancak en düşük hız, Swift‑Q6_K modelinin ikinci en iyi doğruluk ve hız, MXFP4 kuantının ise en düşük doğruluk ama en yüksek hız sağlayacağı yönündeydi. Ancak test sonuçları bu beklentileri çarpıttı: MXFP4 kuantı matematik testlerinde (GSM8K) en yüksek skoru alırken, kod testlerinde (HumanEval) en düşük performansı gösterdi. Öte yandan UD‑Q6_K_L modeli matematikte en kötü, Swift‑Q6_K modeli ise en yavaş olarak kayda geçti.\n\nAraştırmacı, daha kesin sonuçlar elde etmek için tüm test setlerini birden fazla kez çalıştırmak istediğini, ancak mevcut donanımın bu süreyi karşılamadığını belirtti. Sonuçların neden böyle bir dağılım gösterdiği konusunda topluluktan açıklama talep ediyor. Bu bulgular, kuantizasyon tekniklerinin görev bazlı performans etkilerini yeniden gözden geçirme ihtiyacını ortaya koyuyor.\n\nBu deney, özellikle düşük bellekli ortamlarda yüksek performanslı LLM'ler çalıştırmak isteyen geliştiriciler için kuantizasyon seçiminde sadece hız değil, görev tipine göre doğruluk dengesinin de kritik olduğunu hatırlatıyor.",
+  "onemli_maddeler": [
+    "MXFP4 kuantı, matematik testlerinde (GSM8K) en yüksek performansı gösterdi, ancak kod testlerinde (HumanEval) en düşük skoru aldı.",
+    "UD‑Q6_K_L modeli matematikte en kötü sonuç verirken, Swift‑Q6_K modeli en yavaş çalışan model olarak belirlendi.",
+    "Testler aynı donanım (RTX 9700) ve aynı Docker ortamı içinde yürütülmüş, ancak farklı motorlar (llama.cpp vs. whirl) kullanılmıştır."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Kuantizasyon yöntemlerinin görev bazlı performans farklılıkları, LLM dağıtımı ve optimizasyonu için kritik bir karar faktörüdür.",
+  "etiketler": [
+    "Qwen",
+    "quantization",
+    "benchmark",
+    "LLM",
+    "llama.cpp"
+  ],
+  "anilan_modeller": [
+    "Qwen3.8-27B-UD-Q6_K_L.gguf",
+    "Swift-Qwen3.8-27B-Q6_K.gguf",
+    "Swift-1.5-Qwen3.8-27B-MXFP4-A-outQ6_K.gguf"
+  ],
+  "yorum_tr": "Bu bulgular, kuantizasyonun sadece hız değil, görev türüne göre doğrulukta da büyük dalgalanmalar yaratabileceğini gösteriyor; geliştiriciler seçimlerini test senaryolarına göre yapmalı.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/yj6wtm7pcwuh1.png?width=640&crop=smart&auto=webp&s=a3ad745946815b91fcb292321a4f246b45d2742a",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x3ij13/i_tested_different_qwen_38_27b_quants/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-11T20:24:54.000Z",
+  "slug": "i-tested-different-qwen-3-8-27b-quants"
+}
