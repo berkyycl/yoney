@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "Telefonunuzda Çalışan 0.8B Görüntü Modeliyle Makbuz Tarayıcı Ücretsiz Uygulama",
+  "ozet_tr": "Bir Android geliştiricisi, makbuz fotoğraflarını yerel olarak işleyerek mağaza, tarih, toplam tutar ve satır satır kalemleri JSON formatına dönüştüren ücretsiz bir uygulama geliştirdi. Uygulama, Qwen3.5 0.8B tabanlı ince ayarlı bir görsel model ve OvisOCR2 modelini kullanıyor ve verileri hiçbir buluta göndermiyor.",
+  "detayli_icerik_tr": "Geliştirici, market harcamalarını kalem bazında izlemek ve bu verileri gizlilik kaygısı olmadan saklamak amacıyla, Android platformu için bir makbuz tarayıcı uygulaması oluşturdu. Uygulama, bir fotoğrafı alıp içinde yer alan mağaza adı, tarih, toplam tutar ve her bir ürün satırını otomatik olarak tanımlayarak yapılandırılmış JSON çıktısı üretiyor. iOS sürümü ise Apple inceleme sürecinden geçmek üzere hazırlanıyor.\n\nUygulamanın arkasındaki yapay zeka, Qwen3.5 0.8B modelinin ince ayarlandığı bir versiyon ve OvisOCR2 adlı, aynı temel model üzerine eğitilmiş bir OCR modeli. Bu iki model, özellikle makbuz verileri üzerinde toplanan bir veri setiyle yeniden eğitildiği için, geleneksel uygulamaların sunduğu sadece geniş kategori sınıflandırmalarının (örneğin \"Yiyecek\") ötesinde, kahve, temizlik ürünleri gibi detaylı harcama kalemlerini de ayırt edebiliyor.\n\nUygulama tamamen ücretsiz ve açık kaynaklı bir şekilde sunuluyor; model dosyaları da GitHub üzerinden erişilebilir durumda. Kullanıcılar, cihazlarının bellek sınırlamaları nedeniyle yerel işlem yapamadıklarında, kendi OpenAI API uyumlu sunucularına bağlanarak modeli uzaktan çalıştırma seçeneğine de sahip. Projeye katkı sağlamak isteyenler, daha fazla makbuz görseli bağışlayarak modelin doğruluğunu artırabilir.\n\nGeliştirici, bu kişisel projeyi işvereninin desteğiyle yayınlamayı tercih ettiğini belirterek, sürecin daha az bürokratik olduğunu vurguladı. Uygulama Play Store'da yayınlandı ve farklı Android cihazlarından geri bildirim toplamak istiyor. Bu girişim, veri gizliliği odaklı kişisel finans yönetimi çözümlerine yeni bir alternatif sunuyor.",
+  "onemli_maddeler": [
+    "Android uygulaması, makbuz fotoğrafını yerel olarak işleyerek JSON çıktısı üretir ve verileri hiçbir buluta göndermez.",
+    "Qwen3.5 0.8B ve OvisOCR2 modelleri, makbuz verileri üzerinde ince ayar yapılarak detaylı harcama kalemlerini tanıyabilir.",
+    "Uygulama ücretsiz, açık kaynaklı ve model dosyaları GitHub üzerinden erişilebilir; ayrıca OpenAI‑uyumlu sunucu entegrasyonu da mevcut.",
+    "Kullanıcılar, modelin geliştirilmesi için makbuz görselleri bağışlayabilir ve farklı cihazlardan geri bildirim sağlayabilir."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Gizlilik odaklı bir finans uygulamasının yerel AI modeliyle çalışması, mobil AI kullanımını ve açık kaynak topluluk katkılarını teşvik ediyor.",
+  "etiketler": [
+    "receipt scanner",
+    "vision model",
+    "Android",
+    "Qwen3.5",
+    "open source"
+  ],
+  "anilan_modeller": [
+    "Qwen3.5-0.8B",
+    "OvisOCR2"
+  ],
+  "yorum_tr": "Bu proje, veri gizliliği endişesi taşıyan kullanıcılar için yerel AI çözümlerinin pratik bir örneği sunarken, geliştiricilere düşük kaynaklı cihazlarda yüksek doğruluklu OCR uygulamaları geliştirme ilhamı veriyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://cms.orcarouter.ai/api/media/file/1-1892-1400x888.png",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x3u3y5/receipt_scanner_that_runs_a_finetuned_08b_vision/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-12T06:04:05.000Z",
+  "slug": "receipt-scanner-that-runs-a-fine-tuned-0-8b-vision-model-on-"
+}

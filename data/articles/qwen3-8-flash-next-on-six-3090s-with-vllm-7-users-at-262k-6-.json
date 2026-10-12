@@ -1,0 +1,61 @@
+{
+  "baslik_tr": "Qwen3.8-Flash-Next modeli 6x3090’da vLLM ile 262k bağlam, 57 t/s tekil decode ve 206 t/s toplu performans gösterdi",
+  "ozet_tr": "vLLM'in özel bir dalı sayesinde Qwen3.8-Flash-Next modeli, altı adet RTX 3090 GPU üzerinde 262 000 tokenlık bağlamı GPU KV’da tutarak 6,5 k token/sn prefill ve tek kullanıcıda 57 token/sn decode hızı yakaladı. Yedi eşzamanlı kullanıcıda ise toplam 206 token/sn üretim sağlandı. Bu sonuçlar, modelin büyük bağlamları ve çoklu oturumları düşük bellek tüketimiyle yönetebileceğini gösteriyor.",
+  "detayli_icerik_tr": "Reddit topluluğu LocalLLaMA, vLLM'in bir düzeltme dalını (branch) kullanarak Qwen3.8-Flash-Next modelini altı RTX 3090 ve bir AMD Radeon V620 tabanlı sistemde çalıştırdı. Yapılan optimizasyonlar arasında PLE (102 GB n‑gram) tablosunun SSD’ye taşınması, int8 KV hafıza formatının kullanılması ve fp8 KV’nın Ampere mimarisinde çökmesini önleyen yamalar yer alıyor. Bu sayede sistem RAM’den 108 GB tasarruf sağlanırken, modelin performansı fp8’e kıyasla düşüş göstermedi.\n\nPerformans ölçümleri, 250 k tokenlık bir prompt için prefill aşamasında 6,574 token/sn (≈6.5 k t/s) hızını, tek oturumda decode aşamasında ise 57.6 token/sn (≈57 t/s) üretim hızını ortaya koydu. Yedi eşzamanlı oturumda toplam üretim hızı 206 token/sn olarak kaydedildi ve her oturum başına ortalama 29.4 token/sn elde edildi. Sistem, 262 k tokenlık bağlamı GPU KV’da tutabiliyor ve boşta iken 154 GiB RAM'inin büyük bir kısmı serbest kalıyor.\n\nDeney, NVIDIA kartlarıyla sınırlı bir ortamda (6x3090, 7950X CPU, 187 GB RAM) gerçekleştirildi; EPYC ya da Threadripper gibi sunucu sınıfı donanımlar kullanılmadı ve P2P (NVLink) desteği de yoktu. Ayrıca, GPTQ‑INT4 checkpoint'leri NVFP4'e göre %10‑12 daha hızlıydı, ancak Ampere mimarisinde FP4 hızlandırması bulunmadığı için fark çok azdı. Kullanıcı sayısı arttıkça pipeline paralelism altında decode hızı düşerken, llama.cpp tabanlı grouped decode neredeyse sabit kaldı.\n\nSonuç olarak, vLLM prefill ve tek kullanıcı performansında öne çıkarken, çoklu kullanıcı senaryolarında aynı hızı korumak isteyenler için llama.cpp daha uygun bir seçenek. Bu dal, bir fork değil, sadece belirli hataları düzelten bir branch olarak sunuluyor ve geliştiricilerin ihtiyaçlarına göre seçilip kullanılabilir.",
+  "onemli_maddeler": [
+    "vLLM'in int8 KV desteği ve PLE tablosunun SSD’ye taşınması sayesinde 108 GB RAM tasarrufu sağlandı.",
+    "Model 262 k tokenlık bağlamı GPU KV’da tutarak 6,5 k token/sn prefill ve tek oturumda 57 token/sn decode hızı elde etti.",
+    "Yedi eşzamanlı kullanıcıda toplam 206 token/sn üretim sağlandı; kullanıcı başına hız düşüşü pipeline paralelism nedeniyle ortaya çıktı."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Büyük bağlam ve çoklu oturum performansını düşük maliyetli tüketici donanımında gösteren sonuçlar, LLM dağıtım stratejileri ve maliyet optimizasyonları açısından kritik bir referans oluşturuyor.",
+  "etiketler": [
+    "vLLM",
+    "Qwen3.8-Flash-Next",
+    "GPU",
+    "benchmark",
+    "LLM"
+  ],
+  "anilan_modeller": [
+    "Qwen3.8-Flash-Next",
+    "llama.cpp"
+  ],
+  "yorum_tr": "Bu çalışma, yüksek bellek gereksinimli modellerin tüketici sınıfı GPU'larda verimli bir şekilde çalıştırılabileceğini kanıtlayarak, araştırmacıların ve geliştiricilerin maliyetli sunucu altyapısına bağımlılığını azaltıyor. Çoklu kullanıcı senaryolarında performans dalgalanmaları ise yazılım katmanındaki optimizasyonların önemini bir kez daha vurguluyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen3.8-Flash-Next",
+      "benchmark": "prefill throughput",
+      "skor": 6574,
+      "birim": "tokens/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "prefill, 1 session 250k 2111 6574"
+    },
+    {
+      "model": "Qwen3.8-Flash-Next",
+      "benchmark": "decode throughput (single user)",
+      "skor": 57.6,
+      "birim": "tokens/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "decode, 1 session 250k 33.7 57.6"
+    },
+    {
+      "model": "Qwen3.8-Flash-Next",
+      "benchmark": "decode throughput (aggregate, 7 users)",
+      "skor": 206,
+      "birim": "tokens/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "decode, 7 sessions, each / sum 250k n/a (5 slots) 29.4 / 206"
+    }
+  ],
+  "gorsel_url": "https://digitalspaceport.com/wp-content/uploads/2026/08/qwen-3.8-flash-next.png",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x3wjzf/qwen38flashnext_on_six_3090s_with_vllm_7_users_at/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-12T08:37:36.000Z",
+  "slug": "qwen3-8-flash-next-on-six-3090s-with-vllm-7-users-at-262k-6-"
+}

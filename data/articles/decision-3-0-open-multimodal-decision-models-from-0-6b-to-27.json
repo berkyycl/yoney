@@ -1,0 +1,63 @@
+{
+  "baslik_tr": "Decision 3.0: Açık Çok Modelli Karar Modelleri (0.6B‑27B), Jev Karar Endeksi'nde #1",
+  "ozet_tr": "vLLM Semantic Router ekibi, metin, görsel ve video anlayabilen yeni Decision 3.0 (d3) model ailesini duyurdu. 0.6B'den 27B'ye kadar ölçeklenebilir bu açık kaynak modeller, üç karar tipinde (seçim, evet/hayır, puan) olasılık çıktısı veriyor ve aynı girdi için birden çok soruyu tek çağrıda yanıtlayabiliyor. Jev Decision Index'te hem metin hem de görsel puanlarda bir numara olarak öne çıkıyor.",
+  "detayli_icerik_tr": "Decision 3.0, Qwen3.5 (0.8B, 2B, 4B, 9B) ve Qwen3.8-27B temelleri üzerine inşa edildi; parametre sayısına görsel kodlayıcı da dahil edildi (4B modelde 0.33B, 27B modelde 0.46B). Model, Apache-2.0 lisansı altında sunuluyor ve BF16 ağırlıklarıyla Transformers kütüphanesi üzerinden (trust_remote_code=True) yüklenebiliyor. Eğitim, AMD Instinct MI325X GPU'ları kullanılarak gerçekleştirildi.\n\nKarar tipleri üçe ayrılıyor: seçim, evet/hayır ve puanlama. Her bir yanıt için olasılık değeri üretiliyor, metin üretimi yapılmıyor; bu da yanıt süresini ve kaynak tüketimini azaltıyor. Aynı girdi üzerinde birden fazla soru, her biri ayrı bir ileri geçişle tek API çağrısında yanıtlanabiliyor. Görsel girişlerde bir istek başına birden çok resim destekleniyor ve 1.6 MP'ye kadar çözünürlük işlenebiliyor. Video desteği ise MP4, WebM, MOV ve MKV formatlarını kapsıyor; 2 fps hızında örnekleme yapılmakta ve toplamda 32 kareye kadar, her kare 0.2 MP'ye kadar işlenebiliyor.\n\nBenchmark sonuçları, Decision 3.0'un performansını net bir şekilde ortaya koyuyor. Jev Decision Index'in resmi 0.3 kit'iyle yapılan değerlendirmede, 27B modeli metin puanında 64.7, görsel puanında ise 71.6 alarak listedeki tüm modelleri geride bıraktı. Aynı zamanda 0.6B, 0.8B, 4B ve 9B modelleri kendi ölçek sınıflarında birincilik elde etti; 9B (d3‑flash) önceki nesil 27B Decision 2.0'ı geride bıraktı. Video zero‑shot testinde, model hiç video ile eğitilmemiş olmasına rağmen 27B 77.4, 4B ise 70.3 puan elde ederek 19.140 soruluk Perception Test doğrulama setinde yüksek başarı gösterdi.\n\nDecision 3.0 modelleri Hugging Face koleksiyonunda (https://huggingface.co/collections/vllm-sr/decision-30) erişime sunuldu ve topluluk tarafından hızlı bir şekilde benimsenmesi bekleniyor. Açık kaynak lisansı, araştırmacıların ve geliştiricilerin modelleri kendi uygulamalarına entegre etmelerini, ince ayar yapmalarını ve yeni multimodal karar sistemleri geliştirmelerini kolaylaştıracak.",
+  "onemli_maddeler": [
+    "Decision 3.0, 0.6B‑27B aralığında açık kaynak, çok modelli karar modelleri sunuyor.",
+    "Model, metin, görsel ve video girdilerini işleyerek üç karar tipinde olasılık çıktısı veriyor; metin üretimi yok.",
+    "Jev Decision Index'te 27B modeli metin (64.7) ve görsel (71.6) puanlarda bir numara; video zero‑shot testinde 77.4 puan alıyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Karar verme süreçlerinde multimodal yetenekleri ve açık lisansıyla geniş bir geliştirici kitlesine hitap etmesi, benchmark sonuçlarıyla da sektördeki rekabeti yeniden şekillendirmesi.",
+  "etiketler": [
+    "multimodal",
+    "decision-model",
+    "open-source",
+    "benchmark",
+    "vLLM"
+  ],
+  "anilan_modeller": [
+    "Decision 3.0",
+    "Qwen3.5",
+    "Qwen3.8-27B",
+    "Decision 2.0"
+  ],
+  "yorum_tr": "Decision 3.0, çok modelli karar verme yeteneğini açık kaynakla birleştirerek hem araştırmacıların hem de ürün geliştiricilerin yeni uygulamalar yaratmasını hızlandıracak. Benchmark'teki üstün performansı, özellikle video‑tabanlı karar sistemlerinde yeni standartların oluşmasına zemin hazırlıyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Decision 3.0 27B",
+      "benchmark": "Jev Decision Index – Text",
+      "skor": 64.7,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "#1 on both boards: the 27B scores 64.7 text"
+    },
+    {
+      "model": "Decision 3.0 27B",
+      "benchmark": "Jev Decision Index – Vision",
+      "skor": 71.6,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "#1 on both boards: the 27B scores ... 71.6 vision"
+    },
+    {
+      "model": "Decision 3.0 27B",
+      "benchmark": "Perception Test (video zero-shot)",
+      "skor": 77.4,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Video zero-shot: ... the 27B scores 77.4"
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/4d50qfnaxyuh1.png?width=140&height=140&crop=1:1,smart&auto=webp&s=a2b20092d02de800dd3ebadb1f1bc1bbb93824ce",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x3th4p/decision_30_open_multimodal_decision_models_from/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-12T05:26:01.000Z",
+  "slug": "decision-3-0-open-multimodal-decision-models-from-0-6b-to-27"
+}

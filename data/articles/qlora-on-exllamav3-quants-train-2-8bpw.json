@@ -1,0 +1,117 @@
+{
+  "baslik_tr": "EXL3-QLoRA ile 2-8bpw ExLlamaV3 Kuantize Modellerde Verimli Eğitim İmkânı Sunuluyor",
+  "ozet_tr": "Topluluk tarafından geliştirilen EXL3-QLoRA projesi, ExLlamaV3 kuantize modeller üzerinde 2 ila 8 bit-per-weight (bpw) hassasiyetinde eğitim yapmayı mümkün kılıyor. Bu yenilik, mevcut BNB 4-bit yaklaşımlarına kıyasla daha yüksek hassasiyet, daha düşük kayıp (loss) ve gelişmiş VRAM verimliliği sunarak yerel LLM eğitiminde önemli bir ilerleme kaydediyor.",
+  "detayli_icerik_tr": "EXL3-QLoRA, ExLlamaV3 çatısı altında geliştirilmiş, PyTorch tabanlı ve Transformers kütüphanesinden bağımsız bir eğitim implementasyonudur. Bu proje, kullanıcıların 2 ila 8 bit-per-weight (bpw) aralığında kuantize edilmiş ExLlamaV3 modellerini eğitebilmesine olanak tanıyor. Geliştiricinin belirttiğine göre, ExLlamaV3 modelleri şu anda boyutlarına göre en yüksek hassasiyeti sunarak daha düşük kayıp değerleri elde edilmesini sağlıyor. Bu durum, özellikle kısıtlı donanım kaynaklarına sahip yerel yapay zekâ geliştiricileri için büyük önem taşıyor.\nSistem, adapterleri standart PEFT formatında kaydediyor ve TabbyAPI ile PEFT gibi platformlarda yüklenebiliyor, hatta temel modele geri birleştirilebiliyor. Llama3, Mistral Small/Medium, Qwen3 (yoğun ve MoE), Qwen3.5/3.6/3.8 (hibrit), Gemma3/4 (MoE dahil) ve Arcee Trinity gibi geniş bir model yelpazesini destekliyor. Her model ailesi, eğitime başlamadan önce çıkarım (inference) performansı açısından kontrol ediliyor.\nEXL3-QLoRA, Süpervizyonlu Fine-Tuning (SFT), Doğrudan Tercih Optimizasyonu (DPO) ve Kuantum Topolojik Optimizasyonu (KTO) gibi çeşitli eğitim yöntemlerinin yanı sıra rsLoRA ve PiSSA gibi gelişmiş LoRA tekniklerini de barındırıyor. Ayrıca, MoE uzmanları, embedding katmanları ve LM başlığı üzerinde isteğe bağlı LoRA uygulaması, tek GPU, çoklu GPU katman bölme ve DDP (Dağıtılmış Veri Paralelleştirme) desteği gibi özellikler sunuyor. Örnek paketleme, jinja aracılığıyla sohbet render'ı (araç çağrıları ve muhakeme dahil), gradient checkpointing, aktivasyon boşaltma (activation offload), chunked cross entropy, 8-bit ve paged optimizatörler ve Liger çekirdekleri gibi optimizasyonlar sayesinde verimli bir eğitim süreci vaat ediyor. Proje, aynı zamanda tarayıcı üzerinden canlı izleme (wandb alternatifi) ve yüklenen modelin aynı anda sohbet hizmeti verip adapter'ını eğittiği gerçek zamanlı eğitim imkânı da sunuyor.\nYapılan benchmark testlerinde Qwen3.5-4B modeli üzerinde EXL3-QLoRA'nın performansı, geleneksel bnb NF4 (Axolotl) yöntemine kıyasla daha düşük eval loss değerleri elde etti. Örneğin, EXL3 6.0 bpw modeli 2.128, EXL3 4.0 bpw modeli 2.152 ve EXL3 3.0 bpw modeli 2.165 eval loss değerlerine ulaşırken, bnb NF4 2.183 eval loss gösterdi. Bellek kullanımı açısından ise EXL3 3.0 bpw, 11.5 GiB ile en düşük VRAM tüketimini sağladı. Geliştirici, bnb'nin yaklaşık iki kat daha hızlı olmasına rağmen, EXL3'ün daha esnek, VRAM açısından verimli ve testlerinde daha düşük kayıp ürettiğini belirtiyor. Bu, özellikle küçük ve orta ölçekli modellerin yerel olarak fine-tune edilmesi gereken senaryolar için umut vadeden bir gelişmedir.",
+  "onemli_maddeler": [
+    "EXL3-QLoRA, ExLlamaV3 kuantize modelleri 2-8bpw hassasiyetinde eğitmeye olanak tanıyor.",
+    "BNB 4-bit yöntemine kıyasla daha yüksek hassasiyet, daha düşük kayıp (loss) ve gelişmiş VRAM verimliliği sunuyor.",
+    "Llama3, Mistral, Qwen, Gemma ve Arcee Trinity gibi geniş bir model yelpazesini destekliyor.",
+    "SFT, DPO, KTO, rsLoRA, PiSSA gibi çeşitli eğitim teknikleri ve çoklu GPU desteği gibi kapsamlı özelliklere sahip.",
+    "Qwen3.5-4B benchmark'larında bnb NF4'e göre daha düşük eval loss ve daha az VRAM tüketimi sergiliyor."
+  ],
+  "kategori": "diger",
+  "onem": 4,
+  "onem_gerekce": "Yerel LLM eğitiminde hassasiyeti ve verimliliği artıran önemli bir topluluk projesi olması, donanım kısıtlı geliştiriciler için değeri ve yeni teknikler sunması nedeniyle yüksek öneme sahiptir.",
+  "etiketler": [
+    "QLoRA",
+    "ExLlamaV3",
+    "Kuantizasyon",
+    "Yerel LLM",
+    "Fine-Tuning"
+  ],
+  "anilan_modeller": [
+    "Llama3",
+    "Mistral Small",
+    "Mistral Medium",
+    "Qwen3",
+    "Qwen3.5",
+    "Qwen3.6",
+    "Qwen3.8",
+    "Gemma3",
+    "Gemma4",
+    "Arcee Trinity",
+    "Qwen3.5-4B"
+  ],
+  "yorum_tr": "EXL3-QLoRA gibi projeler, yapay zekâ model eğitimini daha erişilebilir ve verimli hale getirerek donanım kısıtlı geliştiriciler için çığır açıyor. Özellikle düşük VRAM tüketimi ve yüksek hassasiyet sunması, yerel LLM ekosisteminin büyümesi ve daha çeşitli uygulamaların geliştirilmesi için kritik bir adım niteliğinde. Bu tür topluluk odaklı geliştirmeler, açık kaynak YZ'nin inovasyon hızını gözler önüne seriyor ve bireysel geliştiricilere de rekabetçi modeller üretme fırsatı sunuyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen3.5-4B (EXL3 6.0 bpw)",
+      "benchmark": "Eval loss",
+      "skor": 2.128,
+      "birim": "",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "EXL3 6.0 bpw 2.128"
+    },
+    {
+      "model": "Qwen3.5-4B (EXL3 6.0 bpw)",
+      "benchmark": "Peak VRAM",
+      "skor": 12.7,
+      "birim": "GiB",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "EXL3 6.0 bpw 2.128 12.7 GiB"
+    },
+    {
+      "model": "Qwen3.5-4B (EXL3 4.0 bpw)",
+      "benchmark": "Eval loss",
+      "skor": 2.152,
+      "birim": "",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "EXL3 4.0 bpw 2.152"
+    },
+    {
+      "model": "Qwen3.5-4B (EXL3 4.0 bpw)",
+      "benchmark": "Peak VRAM",
+      "skor": 11.9,
+      "birim": "GiB",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "EXL3 4.0 bpw 2.152 11.9 GiB"
+    },
+    {
+      "model": "Qwen3.5-4B (EXL3 3.0 bpw)",
+      "benchmark": "Eval loss",
+      "skor": 2.165,
+      "birim": "",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "EXL3 3.0 bpw 2.165"
+    },
+    {
+      "model": "Qwen3.5-4B (EXL3 3.0 bpw)",
+      "benchmark": "Peak VRAM",
+      "skor": 11.5,
+      "birim": "GiB",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "EXL3 3.0 bpw 2.165 11.5 GiB"
+    },
+    {
+      "model": "Qwen3.5-4B (bnb NF4 - axolotl)",
+      "benchmark": "Eval loss",
+      "skor": 2.183,
+      "birim": "",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "bnb NF4 (axolotl) 2.183"
+    },
+    {
+      "model": "Qwen3.5-4B (bnb NF4 - axolotl)",
+      "benchmark": "Peak VRAM",
+      "skor": 12.8,
+      "birim": "GiB",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "bnb NF4 (axolotl) 2.183 12.8 GiB"
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/k5v2qartizuh1.png?width=640&crop=smart&auto=webp&s=92d2b35c609923b401c84d0d6c7e1a440e9fa1a0",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x3viem/qlora_on_exllamav3_quants_train_28bpw/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-12T07:30:10.000Z",
+  "slug": "qlora-on-exllamav3-quants-train-2-8bpw"
+}

@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "VectorDash: EmbeddingGemma‑2 Tabanlı Tam Windows Arama Değiştiricisi",
+  "ozet_tr": "VectorDash, EmbeddingGemma 2 modelini kullanarak Windows 11 için tam kapsamlı bir arama motoru sunuyor. Anlam temelli ve kelime bazlı aramaları fotoğraf, ses, video, PDF ve Office dosyaları üzerinde gerçekleştirebilen uygulama, çok dilli ve kod arama desteği de sağlıyor.",
+  "detayli_icerik_tr": "Reddit topluluğu LocalLLaMA'da duyurulan VectorDash, macOS'ta popüler olan DigUp konseptinden ilham alarak Windows 11'de yerleşik arama işlevini tamamen devralmayı hedefliyor. Uygulama, EmbeddingGemma 2 modelinin gömme (embedding) yeteneklerini kullanarak dosyaların içeriğini anlamsal olarak indeksliyor; böylece \"köpek fotoğrafları\", bir podcast bölümü ya da belirli bir PDF maddesi gibi sorgular, sayfa ve zaman damgası bilgileriyle geri dönüyor. Ayrıca çok dilli destek ve isteğe bağlı kod arama özelliği de mevcut.\n\nVectorDash iki ayrı indeksleme modunu birleştiriyor: \"Full indexing\" modeli EmbeddingGemma 2 ile derinlemesine içerik analizi yaparken, \"Quick indexing\" sadece dosya adları ve klasör yapısını hızlıca tarıyor. Kullanıcılar her iki modu bir arada çalıştırıp kaynak ya da dosya türüne göre filtreleme yapabiliyor. Uygulama aynı zamanda bir evrensel başlatıcı olarak da işlev görüyor; Windows uygulamalarını bulup çalıştırma, ayarları açma ve hatta arama kutusundan doğrudan matematik hesaplamaları yapma imkanı tanıyor.\n\nKurulum süreci tek tıkla model ve araçların indirilmesini, GPU, iGPU ya da CPU üzerinden çalıştırılmasını ve isteğe bağlı olarak uzaktan bir llama‑server ile entegrasyonu kapsıyor. Arka planda zamanlanmış indeksleme, CPU/GPU boşta algılama, duraklatma/iptal kontrolleri ve Windows önbellek klasörlerinin hariç tutulması gibi özellikler, sistem kaynaklarını verimli kullanmayı sağlıyor. Veriler yerel SQLite veritabanında saklanıyor ve varsayılan olarak şifreleniyor.\n\nTestlerde, yaklaşık 3.500 tam indeksli dosya ve bir milyon hızlı‑indeksli dosya ile uygulama 200 MB civarında RAM tüketiyor. Kullanıcılar düşük bellek, dengeli ve yüksek performans modları arasında seçim yapabiliyor; performans ölçümleri de raporlanmış. Geliştirici, farklı GPU ve CPU konfigürasyonları için hata raporları ve özellik önerileri beklediğini belirterek, Windows Search'e alternatif bir çözüm sunmanın mutluluğunu dile getirdi.",
+  "onemli_maddeler": [
+    "EmbeddingGemma 2 tabanlı anlamsal arama, fotoğraf, ses, video, PDF ve Office dosyalarında sayfa ve zaman damgası ile sonuç veriyor.",
+    "Full ve Quick indeksleme modları birleştirilerek hem derin içerik analizi hem de hızlı dosya‑adı taraması sağlanıyor.",
+    "Evrensel başlatıcı özelliği sayesinde uygulama çalıştırma, ayar erişimi ve doğrudan matematik hesaplamaları yapılabiliyor.",
+    "Yerel SQLite veritabanı şifreli, arka plan indeksleme CPU/GPU boşta algılaması ve düşük‑bellek/performans seçenekleri sunuluyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Windows kullanıcıları için mevcut arama sisteminin sınırlı olması, AI‑destekli anlamsal arama ve çoklu dosya türü desteğiyle büyük bir verimlilik artışı sağlıyor.",
+  "etiketler": [
+    "Windows",
+    "search",
+    "EmbeddingGemma",
+    "AI",
+    "VectorDash"
+  ],
+  "anilan_modeller": [
+    "EmbeddingGemma 2"
+  ],
+  "yorum_tr": "VectorDash, Windows ekosistemine AI‑güçlü bir arama katmanı ekleyerek geliştiricilerin ve son kullanıcıların bilgiye ulaşma süresini kısaltıyor; özellikle büyük belge ve multimedya koleksiyonlarıyla çalışan profesyoneller için değerli bir araç olacak.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": null,
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x3sqxc/vectordash_a_full_windows_search_replacement/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-12T04:44:16.000Z",
+  "slug": "vectordash-a-full-windows-search-replacement-incorporating-e"
+}

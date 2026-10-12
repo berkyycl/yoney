@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "Açık Kaynak AI Lider Tablosu: Makinenizde Çalıştırabileceğiniz En İyi Modelleri Gösteriyor",
+  "ozet_tr": "Jake Manger, kullanıcıların RAM ve GPU kapasitelerini girerek yerel olarak çalıştırabilecekleri yapay zeka modellerini sıralayan bir açık kaynak lider tablosu (whatmodel.sh) geliştirdi. Araç, 19.731 yayınlanmış benchmark sonucunu tek bir puana dönüştürerek modelleri karşılaştırıyor ve API tabanlı modellerle aynı skoru gösteriyor.",
+  "detayli_icerik_tr": "Reddit'in LocalLLaMA topluluğunda paylaşılan yeni bir proje, kullanıcıların sistem özelliklerini (RAM ve GPU) girerek yerel ortamda çalıştırabilecekleri LLM'leri (Large Language Model) anında görmelerini sağlıyor. whatmodel.sh adlı bu araç, her model için 19.731 farklı benchmark sonucundan türetilen tek bir skor hesaplıyor; bu skor, modelin performansını hem yerel hem de API tabanlı çözümlerle aynı ölçekte karşılaştırmaya imkan tanıyor.\n\nAraç, komut satırından da erişilebiliyor; basit bir `curl whatmodel.sh` isteğiyle sonuçlar alınabiliyor. Kullanıcılar, modelin çalıştırma komutunu ve sıralamadaki yerini anında görebiliyor, böylece donanım sınırlarını aşmadan en verimli modeli seçebiliyorlar. Projenin geliştiricisi, 32 GB RAM'e sahip bir Mac'in, 4-bit quantization ile Qwen3.8 27B gibi 27 milyar parametreli bir modeli GPT-5 seviyesinde bir skorla çalıştırabildiğini belirtiyor.\n\nwhatmodel.sh'in metodolojisi ve veri seti, projenin GitHub deposunda (github.com/jakemanger/whatmodel) tamamen açık kaynak olarak sunulmuş. Kullanıcılar, gerçek dünya token/s (tok/s) ölçümlerini toplamak için bir benchmark script'i katkıda bulunabilir ve yeni modelleri ya da benchmark sonuçlarını kaynaklarıyla birlikte ekleyebilirler. Bu şeffaflık, topluluk tarafından doğrulanabilir ve güncel benchmark verilerinin sürekli genişlemesini sağlıyor.\n\nProjenin potansiyel etkileri, özellikle geliştiriciler ve araştırmacılar için büyük. Yerel LLM çalıştırma maliyetlerini düşürürken, performans karşılaştırmalarını tek bir platformda toplaması, model seçimini hızlandırıyor ve donanım yatırımlarının daha verimli kullanılmasını mümkün kılıyor.",
+  "onemli_maddeler": [
+    "whatmodel.sh, RAM ve GPU bilgisiyle yerel olarak çalıştırılabilecek modelleri puanlayıp sıralıyor.",
+    "19.731 yayınlanmış benchmark sonucundan tek bir skor üretiliyor; bu skor API modelleriyle aynı ölçekte karşılaştırılabiliyor.",
+    "32 GB RAM'li bir Mac, 4‑bit quantization ile Qwen3.8 27B modelini GPT‑5 seviyesinde bir skorla çalıştırabiliyor."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Yerel LLM kullanımını kolaylaştıran ve performans karşılaştırmalarını tek bir platformda toplayan bir araç, hem geliştiricilerin hem de araştırmacıların karar süreçlerini hızlandırarak donanım maliyetlerini azaltabilir.",
+  "etiketler": [
+    "AI",
+    "benchmark",
+    "open-source",
+    "local-LLM",
+    "hardware"
+  ],
+  "anilan_modeller": [
+    "Qwen3.8 27B",
+    "GPT-5"
+  ],
+  "yorum_tr": "Bu araç, yerel model çalıştırma maliyetlerini düşürürken performans şeffaflığını artırıyor; geliştiriciler daha bilinçli model seçimleri yapabilir, kullanıcılar ise yüksek kapasiteli bulut hizmetlerine bağımlılıktan kurtulabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/M2VxNnpldHN2enVoMcobplXnc85ZM9FpiIZza-0IrZrdNWY4pWTIN5sfGT8Z.png?width=640&crop=smart&auto=webp&s=e315a456ef9acf9d0c3e2f127441ebd5ab236406",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x3wp8c/i_made_an_opensource_ai_leaderboard_that_shows/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-12T08:47:16.000Z",
+  "slug": "i-made-an-open-source-ai-leaderboard-that-shows-the-best-mod"
+}

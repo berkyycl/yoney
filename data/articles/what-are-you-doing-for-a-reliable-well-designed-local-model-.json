@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "Güvenilir ve iyi tasarlanmış yerel model tabanlı AI arama için neler yapıyorsunuz?",
+  "ozet_tr": "OpenWebUI'nin yerleşik web arama özelliği, bulut tabanlı Claude ve Gemini gibi hizmetlerin akıcılığına ulaşamıyor ve gecikme sorunları yaşıyor. Kullanıcılar, yerel LLM'lerle hızlı, tutarlı ve doğru bilgi sunan bir arama entegrasyonu arayışında. Reddit topluluğu, hangi UI, arama sağlayıcıları ve model/kuantizasyon kombinasyonlarının bu ihtiyacı karşılayabileceği konusunda deneyimlerini paylaşıyor.",
+  "detayli_icerik_tr": "OpenWebUI'nin içinde gelen web arama modülü, kullanıcıların yerel büyük dil modelleri (LLM) ile bilgiye erişimini sağlamayı hedefliyor. Ancak, Reddit kullanıcısı rm‑rf‑rm, bu entegrasyonun Claude veya Gemini gibi bulut çözümlerine kıyasla daha az pürüzsüz, yavaş ve güvenilir olmadığını belirtiyor. Model kalitesinden ödün vermeden bulut seviyesinde hız elde etmenin zor olduğu, özellikle kuantizasyon ve donanım sınırlamaları nedeniyle bir-iki dakikalık yanıt süresinin kabul edilebilir bir hedef olduğu vurgulanıyor.\n\nKullanıcılar, bu sorunu aşmak için çeşitli UI ve entegrasyon seçeneklerini değerlendiriyor. OpenWebUI'nin yanı sıra Text Generation Web UI, Ollama ve Llama‑CPP tabanlı arayüzler, daha özelleştirilebilir ve hafif bir deneyim sunabiliyor. Arama sağlayıcıları olarak DuckDuckGo API, SerpAPI ve hatta kendi ElasticSearch ya da MeiliSearch kurulumları tercih ediliyor; bu sayede sorgu gecikmesi azaltılıyor ve sonuçların formatı kontrol edilebiliyor.\n\nModel seçiminde ise LLaMA‑2 7B, Mistral‑7B ve Mixtral‑8x7B gibi açık kaynaklı modeller öne çıkıyor. Kuantizasyon açısından 4‑bit GGML ya da 8‑bit Q4_K_M gibi agresif yöntemler, bellek tüketimini düşürürken kabul edilebilir bir doğruluk seviyesi sağlıyor. Topluluk, özellikle “Q4_K_M” kuantizasyonunun, birden fazla arama sonucunu modele enjekte ettiğinde tutarlı özetler üretebildiğini belirtiyor.\n\nPerformans beklentileri net: bir dakikadan iki dakikaya kadar yanıt süresi, model kalitesinde büyük bir gerileme olmadan kabul edilebilir. Bu çerçevede, donanım olarak RTX 3060‑Ti ya da AMD Radeon 6700 XT gibi orta seviye GPU'lar, 4‑bit kuantize edilmiş 7B modellerle yeterli hız sunabiliyor. Kullanıcılar, bu yapılandırmaların hem maliyet hem de gizlilik açısından avantajlı olduğunu, özellikle kurumsal veri güvenliği gerektiren senaryolarda tercih edildiğini ifade ediyor.",
+  "onemli_maddeler": [
+    "OpenWebUI, Text Generation Web UI ve Ollama gibi UI'lar, yerel LLM entegrasyonu için popüler seçeneklerdir.",
+    "DuckDuckGo API, SerpAPI ve kendi ElasticSearch/MeiliSearch kurulumları, hızlı ve özelleştirilebilir arama sağlayıcıları olarak öne çıkıyor.",
+    "LLaMA‑2 7B, Mistral‑7B ve Mixtral‑8x7B modelleri, 4‑bit GGML (Q4_K_M) gibi agresif kuantizasyonlarla bellek tasarrufu sağlarken tutarlı özetler üretebiliyor.",
+    "1‑2 dakikalık yanıt süresi, orta seviye GPU'larda (RTX 3060‑Ti, Radeon 6700 XT) 4‑bit kuantize edilmiş 7B modellerle ulaşılabilir."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 3,
+  "onem_gerekce": "Yerel LLM'lerle AI arama entegrasyonu, veri gizliliği ve maliyet etkinliği açısından giderek daha fazla ilgi görüyor; topluluk deneyimleri, geliştiricilere pratik yol haritaları sunuyor.",
+  "etiketler": [
+    "local-llm",
+    "AI-search",
+    "OpenWebUI",
+    "quantization",
+    "benchmark"
+  ],
+  "anilan_modeller": [
+    "LLaMA 2",
+    "Mistral",
+    "Mixtral"
+  ],
+  "yorum_tr": "Yerel model tabanlı arama çözümlerinin olgunlaşması, bulut hizmetlerine bağımlılığı azaltarak hem gizlilik hem de maliyet avantajı sağlayacak. Geliştiriciler, doğru UI, arama sağlayıcı ve kuantizasyon kombinasyonunu bulduklarında, kullanıcı deneyimini bulut seviyesine yaklaştırabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://designforonline.com/wp-content/uploads/2026/02/The-best-AI-Models-of-2026-scaled.png",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x3rtkb/what_are_you_doing_for_a_reliable_well_designed/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-12T03:52:59.000Z",
+  "slug": "what-are-you-doing-for-a-reliable-well-designed-local-model-"
+}

@@ -1,0 +1,54 @@
+{
+  "baslik_tr": "Strix‑Llama yeni dal: Prompt işleme %21‑%54 daha hızlı Vulkan'dan, 128k'da ROCm çekirdeğinde 2,7×'ye kadar",
+  "ozet_tr": "Strix Halo kutusu için geliştirilmiş bir llama.cpp dalı, RDNA3.5 mimarisinde flash attention ve ön‑prefill iyileştirmeleri sayesinde prompt işleme süresini Vulkan tabanlı çözümlerden %21‑%54, stok ROCm çekirdeğinden ise %8‑%174 oranında hızlandırdı. 128 k token bağlamında en yüksek %88'lik hız artışı elde edilirken, çıktı kalitesi ROCm ile neredeyse aynı kaldı.",
+  "detayli_icerik_tr": "Yerel LLaMA topluluğu, asf0 tarafından geliştirilen strix-llama.cpp projesinin \"rdna35-perf\" adlı yeni dalını yayınladı. Bu dal, yalnızca ROCm/HIP ortamını hedef alıyor ve 10 commit içeriyor. Yapılan testlerde, Qwen3.6 35B‑A3B (MoE), Qwen3.8 27B ve Qwen3.5 2B modelleri üzerinde prompt processing (PP) ve token generation (TG) performansları ölçüldü.\n\nTest sonuçları, RDNA3.5 tabanlı flash attention çekirdeğinin (fattn‑rdna35) uzun bağlamlarda (64k‑128k) performans kaybını büyük ölçüde önlediğini gösterdi. Prompt işleme hızı, Vulkan tabanlı sürümlere göre %21‑%54, stok ROCm sürümüne göre ise %8‑%174 daha hızlıydı. Özellikle Qwen3.6 modelinde 128 k bağlamda %88'lik bir artış sağlandı.\n\nÜretim (generation) aşamasında ise RDNA3.5 dalı, Vulkan ile neredeyse eşdeğer sonuçlar verdi; Qwen3.8 27B modelinde 128 k bağlamda %0 fark, ROCm'e göre ise %29 daha hızlıydı. Çıktı kalitesi açısından, KL divergence ve perplexity ölçümleri ROCm ile neredeyse aynı seviyede kaldı; Vulkan sürümüne göre ise hafif bir sapma gözlendi.\n\nTeknik iyileştirmeler arasında flash attention çekirdeğinin yeniden yazılması, quantized matmul için prefill GEMM ayarları, MoE modelleri için routing yardımcıları ve fused işlemler, ayrıca gated DeltaNet katmanları için SiLU‑gated output norm birleştirmeleri yer alıyor. HIP grafik grafikleri varsayılan olarak kapalı tutulmuş, daha hızlı bir penalty sampler ve host‑side prefill gibi ek optimizasyonlar da sunulmuş.",
+  "onemli_maddeler": [
+    "Prompt işleme hızı RDNA3.5 dalında Vulkan'dan %21‑%54, ROCm'den %8‑%174 daha hızlı.",
+    "128 k bağlamda Qwen3.6 modelinde %88, Qwen3.8 modelinde %174 gibi çarpıcı ROCm karşılaştırmalı hız artışı.",
+    "Çıktı kalitesi (KL divergence, perplexity) ROCm ile aynı seviyede, Vulkan'dan daha tutarlı.",
+    "Flash attention çekirdeği (fattn‑rdna35) ve prefill GEMM ayarları uzun‑bağlam performansının temelini oluşturdu."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Uzun bağlamlı LLM uygulamaları için performans artışı, hem araştırmacıların hem de üretim ortamlarının verimliliğini doğrudan etkiler.",
+  "etiketler": [
+    "llama.cpp",
+    "ROCm",
+    "Vulkan",
+    "RDNA3.5",
+    "benchmark"
+  ],
+  "anilan_modeller": [
+    "Qwen3.6 35B-A3B (MoE)",
+    "Qwen3.8 27B",
+    "Qwen3.5 2B"
+  ],
+  "yorum_tr": "Bu güncelleme, AMD tabanlı sistemlerde LLM'lerin uzun bağlamlarda daha verimli çalışmasını sağlayarak, geliştiricilerin maliyet ve enerji tüketimini azaltırken, aynı kaliteyi korumasına imkan tanıyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen3.6 35B-A3B (MoE)",
+      "benchmark": "Prompt processing (PP) hız artışı vs Vulkan (128k)",
+      "skor": 36,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "128k bağlam",
+      "kaynak_metinden_alinti": "pp4096 128k ... +36%"
+    },
+    {
+      "model": "Qwen3.6 35B-A3B (MoE)",
+      "benchmark": "Prompt processing (PP) hız artışı vs ROCm (128k)",
+      "skor": 88,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "128k bağlam",
+      "kaynak_metinden_alinti": "pp4096 128k ... +88%"
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/llama-cpp-rocm-prompt-processing-speed-on-strix-halo-ryzen-v0-0o14pkcytujg1.png?auto=webp&s=df255ccb8cefd73b3e1d18cee62d5a0d7fe34bdb",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x3s4qu/strixllama_new_branch_prompt_processing_2154_over/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-12T04:09:27.000Z",
+  "slug": "strix-llama-new-branch-prompt-processing-21-54-over-vulkan-a"
+}
