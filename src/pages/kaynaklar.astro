@@ -27,7 +27,8 @@ if (fs.existsSync(sourcesFile)) {
 						</span>
 					</div>
 					<h2>{source.name}</h2>
-					<p class="source-type">Tür: {source.type.toUpperCase()}</p>
+					<p class="source-type">{source.type === 'benchmark_api' ? 'Liderlik tablosu' : 'RSS akışı'}{source.maxItems ? ` · tur başına en fazla ${source.maxItems} içerik` : ''}</p>
+					{source.note && <p class="source-note">{source.note}</p>}
 					<a href={source.url} target="_blank" rel="noopener noreferrer" class="source-link">Kaynağa Git ↗</a>
 				</div>
 			))}
@@ -39,22 +40,22 @@ if (fs.existsSync(sourcesFile)) {
 				<div class="step">
 					<div class="step-number">1</div>
 					<h3>RSS Tarama</h3>
-					<p>Yukarıdaki kaynakların RSS akışları her 3 saatte bir otomatik taranır.</p>
+					<p>RSS akışları her 3 saatte bir taranır. Benchmark liderlik tabloları (LMArena, SWE-bench) günde iki kez güncellenir.</p>
 				</div>
 				<div class="step">
 					<div class="step-number">2</div>
 					<h3>AI Analiz</h3>
-					<p>Yeni içerikler Gemini ile analiz edilir, Türkçe özetlenir ve benchmark skorları çıkarılır.</p>
+					<p>Yeni içerikler büyük dil modelleriyle (öncelikle Groq üzerinde gpt-oss-120b, gerekirse Gemini) analiz edilir, Türkçe özetlenir ve benchmark skorları çıkarılır. Reklam ve müşteri hikâyesi niteliğindeki içerikler yayınlanmaz.</p>
 				</div>
 				<div class="step">
 					<div class="step-number">3</div>
 					<h3>Doğrulama</h3>
-					<p>AI'ın çıkardığı benchmark skorları kaynak metinle karşılaştırılarak doğrulanır. Metinde olmayan skorlar eklenmez.</p>
+					<p>Yapay zekânın çıkardığı benchmark skorları kaynak metinle karşılaştırılır; metinde birebir geçmeyen skorlar eklenmez.</p>
 				</div>
 				<div class="step">
 					<div class="step-number">4</div>
 					<h3>Yayın</h3>
-					<p>Doğrulanmış haberler ve skorlar statik HTML olarak derlenir ve yayına alınır.</p>
+					<p>Haberler ve skorlar statik sayfalar olarak derlenip yayına alınır.</p>
 				</div>
 			</div>
 		</div>
@@ -65,6 +66,12 @@ if (fs.existsSync(sourcesFile)) {
 	.sources-page {
 		max-width: 1000px;
 		margin: 0 auto;
+	}
+
+	.source-note {
+		font-size: 0.8rem;
+		color: var(--text-muted);
+		margin: 0.25rem 0 0.5rem;
 	}
 
 	.subtitle {

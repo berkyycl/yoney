@@ -1,19 +1,13 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import fs from 'fs';
-import path from 'path';
+import { loadArticles } from '../../lib/articles';
+import { newsCategoryName, tierName } from '../../lib/categories';
 
 export async function getStaticPaths() {
-    const articlesDir = path.join(process.cwd(), 'data', 'articles');
-    if (!fs.existsSync(articlesDir)) return [];
-    const files = fs.readdirSync(articlesDir).filter(f => f.endsWith('.json'));
-    return files.map(f => {
-        const data = JSON.parse(fs.readFileSync(path.join(articlesDir, f), 'utf-8'));
-        return {
-            params: { slug: data.slug },
-            props: { article: data }
-        };
-    });
+    return loadArticles().map(article => ({
+        params: { slug: article.slug },
+        props: { article }
+    }));
 }
 
 const { article } = Astro.props;
@@ -52,12 +46,13 @@ const jsonLd = {
 	type="article"
 	articleDate={article.date}
 >
-	<script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+	<script type="application/ld+json" set:html={JSON.stringify(jsonLd).replace(/</g, '\\u003c')} />
 	<article class="article-detail">
 		<header>
 			<div class="meta">
-				<span class="source-tier">{article.sourceTier === 'resmi' ? 'Resmi Açıklama' : article.sourceTier === 'bagimsiz' ? 'Bağımsız Test' : 'Topluluk Testi'}</span>
-				<span class="source">{article.source}</span>
+				<span class="source-tier">{tierName(article.sourceTier)}</span>
+				<span class="source" lang="en">{article.source}</span>
+				<span class="category">{newsCategoryName(article.kategori)}</span>
 				<span class="date">{new Date(article.date).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' })}</span>
 			</div>
 			<h1>{article.baslik_tr}</h1>
@@ -66,7 +61,7 @@ const jsonLd = {
 		<div class="content">
 			{article.gorsel_url && (
 				<div class="article-hero-image">
-					<img src={article.gorsel_url} alt={article.baslik_tr} />
+					<img src={article.gorsel_url} alt="" referrerpolicy="no-referrer" onerror="this.closest('.article-hero-image')?.remove()" />
 				</div>
 			)}
 
@@ -85,7 +80,7 @@ const jsonLd = {
 
 			{article.detayli_icerik_tr && (
 				<div class="detailed-body">
-					{article.detayli_icerik_tr.split('\n\n').map((paragraph: string) => (
+					{article.detayli_icerik_tr.split(/\n+/).map((p: string) => p.trim()).filter(Boolean).map((paragraph: string) => (
 						<p>{paragraph}</p>
 					))}
 				</div>
@@ -102,6 +97,8 @@ const jsonLd = {
 			{article.benchmarklar && article.benchmarklar.length > 0 && (
 				<div class="benchmarks">
 					<h3>Benchmark Sonuçları</h3>
+					<p class="bench-note">Bu skorların kaynak metinde birebir geçtiği doğrulandı. Bilinen testlerin sonuçları <a href="/benchmarklar">Benchmarklar</a> sayfasındaki sıralamalara da eklenir.</p>
+					<div class="table-scroll">
 					<table>
 						<thead>
 							<tr>
@@ -116,12 +113,13 @@ const jsonLd = {
 								<tr>
 									<td>{b.model}</td>
 									<td>{b.benchmark}</td>
-									<td class="score">{b.skor} {b.birim}</td>
+									<td class="score">{b.birim === '%' ? `%${b.skor}` : `${b.skor} ${b.birim ?? ''}`}</td>
 									<td>{b.degerlendirme_ayari || '-'}</td>
 								</tr>
 							))}
 						</tbody>
 					</table>
+					</div>
 				</div>
 			)}
 
@@ -151,7 +149,8 @@ const jsonLd = {
 		font-size: 0.9rem;
 		margin-bottom: 1rem;
 		display: flex;
-		gap: 1rem;
+		flex-wrap: wrap;
+		gap: 0.5rem 1rem;
 		text-transform: uppercase;
 		color: var(--secondary-color);
 	}
@@ -163,8 +162,13 @@ const jsonLd = {
 	}
 
 	h1 {
-		font-size: 2.5rem;
+		font-size: clamp(1.8rem, 5vw, 2.5rem);
 		margin-bottom: 0;
+		overflow-wrap: anywhere;
+	}
+
+	.table-scroll {
+		overflow-x: auto;
 	}
 
 	.summary {
@@ -271,6 +275,12 @@ const jsonLd = {
 		height: 100%;
 		object-fit: cover;
 		display: block;
+	}
+
+	.bench-note {
+		font-size: 0.85rem;
+		color: var(--text-muted);
+		margin: 0 0 0.5rem;
 	}
 
 	.source-link-container {

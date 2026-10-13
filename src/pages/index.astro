@@ -1,35 +1,20 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import fs from 'fs';
-import path from 'path';
+import { loadArticles } from '../lib/articles';
+import { NEWS_CATEGORIES, newsCategoryName } from '../lib/categories';
 
-const articlesDir = path.join(process.cwd(), 'data', 'articles');
-let articles = [];
-if (fs.existsSync(articlesDir)) {
-    const files = fs.readdirSync(articlesDir).filter(f => f.endsWith('.json'));
-    articles = files.map(f => {
-        return JSON.parse(fs.readFileSync(path.join(articlesDir, f), 'utf-8'));
-    });
-}
-articles.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+const articles = loadArticles();
 
-const categories = [
-    { id: "all", name: "Tüm Haberler" },
-    { id: "model-cikisi", name: "Model Çıkışı" },
-    { id: "guncelleme", name: "Güncelleme" },
-    { id: "benchmark", name: "Benchmark" },
-    { id: "arastirma", name: "Araştırma" },
-    { id: "fiyat-limit", name: "Fiyat & Limit" },
-    { id: "arac-sdk", name: "Araç & SDK" },
-    { id: "politika", name: "Politika & Regülasyon" }
-];
+// "Diğer" dahil tüm kategoriler; haberi olmayanlar gizlenir
+const categories = NEWS_CATEGORIES;
+const catOf = (a: any) => (categories.some(c => c.id === a.kategori) ? a.kategori : 'diger');
 ---
 
 <Layout title="Yöney: Türkiye'nin yapay zekâ haber ve benchmark takibi">
 	<div class="category-bar">
 		<button class="cat-pill active" data-cat="all">Tümü ({articles.length})</button>
-		{categories.slice(1).map(cat => {
-			const count = articles.filter(a => a.kategori === cat.id).length;
+		{categories.map(cat => {
+			const count = articles.filter(a => catOf(a) === cat.id).length;
 			return count > 0 ? (
 				<button class="cat-pill" data-cat={cat.id}>{cat.name} ({count})</button>
 			) : null;
@@ -39,24 +24,24 @@ const categories = [
 	<div class="articles-container">
 		{articles.length === 0 ? (
 			<div class="empty-state">
-				<p>Henüz haber bulunmuyor. GitHub Actions pipeline'ı ilk turu tamamladığında son 1 ayın haberleri burada listelenecektir.</p>
+				<p>Henüz haber bulunmuyor. Otomatik güncelleme ilk turunu tamamladığında son bir ayın haberleri burada listelenecek.</p>
 			</div>
 		) : (
 			<>
 				<div class="news-feed" id="newsFeed">
 					{articles.map((article, i) => (
-						<article class={`article-card ${i === 0 ? "featured-card" : ""}`} data-category={article.kategori || "diger"} data-index={i}>
+						<article class={`article-card ${i === 0 ? "featured-card" : ""}`} data-category={catOf(article)} data-index={i}>
 							{article.gorsel_url && (
 								<div class="card-image">
-									<a href={`/haber/${article.slug}`}>
-										<img src={article.gorsel_url} alt={article.baslik_tr} loading={i < 3 ? "eager" : "lazy"} />
+									<a href={`/haber/${article.slug}`} aria-hidden="true" tabindex="-1">
+										<img src={article.gorsel_url} alt="" loading={i < 3 ? "eager" : "lazy"} referrerpolicy="no-referrer" onerror="this.closest('.card-image')?.remove()" />
 									</a>
 								</div>
 							)}
 							<div class="card-content">
 								<div class="article-meta">
-									<span class="source">{article.source}</span>
-									<span class="category-badge">{article.kategori || "Genel"}</span>
+									<span class="source" lang="en">{article.source}</span>
+									<span class="category-badge">{newsCategoryName(article.kategori)}</span>
 									<span class="date">{new Date(article.date).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' })}</span>
 								</div>
 
@@ -65,7 +50,7 @@ const categories = [
 
 								{article.benchmarklar && article.benchmarklar.length > 0 && (
 									<div class="benchmark-highlight">
-										📊 <strong>{article.benchmarklar.length} Doğrulanmış Benchmark:</strong> {article.benchmarklar.map((b: any) => `${b.model} (${b.benchmark}: ${b.skor} ${b.birim})`).join(', ')}
+										<strong>Kaynakta geçen {article.benchmarklar.length} skor:</strong> {article.benchmarklar.slice(0, 3).map((b: any) => `${b.model} – ${b.benchmark}: ${b.birim === '%' ? '%' : ''}${b.skor}${b.birim && b.birim !== '%' ? ` ${b.birim}` : ''}`).join(' · ')}{article.benchmarklar.length > 3 && ` · +${article.benchmarklar.length - 3} daha`}
 									</div>
 								)}
 
@@ -143,10 +128,24 @@ const categories = [
 
 		if (pageNumbersContainer) {
 			pageNumbersContainer.innerHTML = '';
+			// 20+ sayfada tüm numaralar mobilde taşıyordu: ilk, son ve mevcut sayfanın komşuları gösterilir
+			const pages: (number | '…')[] = [];
 			for (let p = 1; p <= totalPages; p++) {
+				if (p === 1 || p === totalPages || Math.abs(p - currentPage) <= 1) pages.push(p);
+				else if (pages[pages.length - 1] !== '…') pages.push('…');
+			}
+			for (const p of pages) {
+				if (p === '…') {
+					const gap = document.createElement('span');
+					gap.className = 'page-gap';
+					gap.textContent = '…';
+					pageNumbersContainer.appendChild(gap);
+					continue;
+				}
 				const pageBtn = document.createElement('button');
 				pageBtn.className = `page-num-btn ${p === currentPage ? 'active' : ''}`;
 				pageBtn.textContent = p.toString();
+				if (p === currentPage) pageBtn.setAttribute('aria-current', 'page');
 				pageBtn.addEventListener('click', () => {
 					currentPage = p;
 					renderPage();
@@ -198,8 +197,8 @@ const categories = [
 <style>
 	.category-bar {
 		display: flex;
+		flex-wrap: wrap;
 		gap: 0.5rem;
-		overflow-x: auto;
 		padding: 0.5rem 0 1.5rem 0;
 		margin-bottom: 2rem;
 		border-bottom: 1px solid var(--border-color);
@@ -401,6 +400,15 @@ const categories = [
 	.page-numbers {
 		display: flex;
 		gap: 0.4rem;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	:global(.page-gap) {
+		font-family: var(--font-mono);
+		color: var(--text-muted);
+		padding: 0 0.15rem;
 	}
 
 	:global(.page-num-btn) {
@@ -430,6 +438,15 @@ const categories = [
 	}
 
 	@media (max-width: 768px) {
+		/* Mobilde kategoriler tek satırda yatay kaydırılır */
+		.category-bar {
+			flex-wrap: nowrap;
+			overflow-x: auto;
+		}
+		.pagination-bar {
+			flex-wrap: wrap;
+			gap: 0.5rem;
+		}
 		.article-card {
 			flex-direction: column;
 		}

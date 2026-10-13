@@ -26,6 +26,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # Kuyrukta beklerken başka bir tur veri göndermiş olabilir: her zaman main'in en güncel halinden başla
+          ref: main
       
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -36,8 +39,12 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Fetch LMSYS Chatbot Arena Leaderboard
-        run: npx tsx scripts/fetch-lmarena.ts
+      - name: Run tests
+        run: npm test
+
+      - name: Fetch benchmark leaderboards (LMArena, SWE-bench)
+        run: npx tsx scripts/fetch-benchmarks.ts
+        timeout-minutes: 10
         continue-on-error: true
 
       - name: Run Pipeline
@@ -58,6 +65,7 @@ jobs:
           GEMINI_API_KEY_10: ${{ secrets.GEMINI_API_KEY_10 }}
           TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
         run: npm run pipeline
+        timeout-minutes: 45
         continue-on-error: true
 
       - name: Commit and push changes
@@ -65,7 +73,23 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/
-          git diff --quiet && git diff --staged --quiet || (git commit -m "auto: Update data" && git push)
+          if git diff --staged --quiet; then
+            echo "Değişiklik yok."
+            exit 0
+          fi
+          git commit -m "auto: Update data"
+          # Bu sırada depoya başka bir commit geldiyse önce onu al, sonra gönder
+          for i in 1 2 3; do
+            if git pull --rebase --autostash origin main; then
+              git push && exit 0
+            else
+              # Çakışma olursa yarım kalan rebase'i geri al; çalışma alanı bozuk kalmasın
+              git rebase --abort || true
+            fi
+            sleep 5
+          done
+          echo "Push başarısız oldu"
+          exit 1
         continue-on-error: true
 
       - name: Build site

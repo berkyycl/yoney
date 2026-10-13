@@ -1,13 +1,7 @@
-import fs from 'fs';
-import path from 'path';
+import { loadArticles } from '../lib/articles';
 
 export async function GET() {
-  const articlesDir = path.join(process.cwd(), 'data', 'articles');
-  let articles: any[] = [];
-  if (fs.existsSync(articlesDir)) {
-    const files = fs.readdirSync(articlesDir).filter(f => f.endsWith('.json'));
-    articles = files.map(f => JSON.parse(fs.readFileSync(path.join(articlesDir, f), 'utf-8')));
-  }
+  const articles = loadArticles();
 
   const staticPages = [
     '',

@@ -2,7 +2,11 @@
  * set-github-secrets.ts
  * GitHub API ile tüm secrets'ı repoya yükler.
  *
- * Önce .env dosyasındaki keyleri bu scriptle yükle:
+ * Bu script yalnızca yerelde çalıştırılır ve sitenin derlenmesi için gerekmeyen
+ * libsodium-wrappers paketine ihtiyaç duyar. Bir kereliğine kur:
+ *   npm install --no-save libsodium-wrappers
+ *
+ * Sonra .env dosyasındaki keyleri bu scriptle yükle:
  *   npx tsx scripts/set-github-secrets.ts GH_PERSONAL_TOKEN_BURAYA
  *
  * GH_PERSONAL_TOKEN nasıl alınır:

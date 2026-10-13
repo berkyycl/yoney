@@ -1,6 +1,6 @@
 import { GoogleGenAI } from "@google/genai";
 import { GroqProvider } from "./groq.js";
-import { type AnalysisResult, type ArticleInput, type LLMProvider, analysisSchema } from "./provider.js";
+import { type AnalysisResult, type ArticleInput, type LLMProvider, analysisSchema, KATEGORILER, normalizeKategori } from "./provider.js";
 import { systemPrompt } from "./prompt.js";
 
 /**
@@ -24,7 +24,7 @@ const ARTICLE_SCHEMA_PROPS = {
   ozet_tr:           { type: "STRING" },
   detayli_icerik_tr: { type: "STRING" },
   onemli_maddeler:   { type: "ARRAY",  items: { type: "STRING" } },
-  kategori:          { type: "STRING" },
+  kategori:          { type: "STRING", enum: [...KATEGORILER] },
   onem:              { type: "INTEGER" },
   onem_gerekce:      { type: "STRING" },
   etiketler:         { type: "ARRAY",  items: { type: "STRING" } },
@@ -183,10 +183,7 @@ ${articlesBlock}
         results.forEach((r, i) => {
           try {
             // Güvenlik normalizasyonu: Gemini şema dışı kategori veya fazla etiket verebilir
-            const validCategories = ["model-cikisi", "guncelleme", "fiyat-limit", "benchmark", "arastirma", "arac-sdk", "politika", "diger"];
-            if (!validCategories.includes(r.kategori)) {
-              r.kategori = "diger";
-            }
+            r.kategori = normalizeKategori(r.kategori);
             if (Array.isArray(r.etiketler) && r.etiketler.length > 5) {
               r.etiketler = r.etiketler.slice(0, 5);
             }
@@ -211,8 +208,8 @@ ${articlesBlock}
                 ozet_tr: r.ozet_tr || items[i].input.title || '',
                 detayli_icerik_tr: r.detayli_icerik_tr || r.ozet_tr || '',
                 onemli_maddeler: Array.isArray(r.onemli_maddeler) ? r.onemli_maddeler : [],
-                kategori: "diger",
-                onem: 3,
+                kategori: normalizeKategori(r.kategori),
+                onem: typeof r.onem === 'number' && r.onem >= 1 && r.onem <= 5 ? r.onem : 3,
                 onem_gerekce: r.onem_gerekce || "Otomatik analiz",
                 etiketler: Array.isArray(r.etiketler) ? r.etiketler.slice(0, 5) : ["yapay-zeka"],
                 anilan_modeller: Array.isArray(r.anilan_modeller) ? r.anilan_modeller : [],

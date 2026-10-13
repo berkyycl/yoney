@@ -57,7 +57,9 @@ Sadece ve sadece yukarıdaki formata uygun geçerli bir JSON çıktısı ver. Ma
       ],
       model: this.model,
       temperature: 0.2,
-      max_tokens: 2000,
+      // gpt-oss bir akıl yürütme modeli: düşünme token'ları da bu sınıra dahil.
+      // 2000 sınırı uzun Türkçe çıktıyı yarıda kesip JSON hatasına yol açıyordu.
+      max_tokens: 8192,
       response_format: { type: "json_object" }
     });
 

@@ -1,773 +1,344 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import fs from 'fs';
-import path from 'path';
+import { loadBenchmarkData } from '../lib/benchmarks';
+import { categoryName } from '../data/benchmarkCatalog';
 
-const benchmarkFile = path.join(process.cwd(), 'data', 'benchmarks.json');
-let benchmarks = [];
-if (fs.existsSync(benchmarkFile)) {
-    benchmarks = JSON.parse(fs.readFileSync(benchmarkFile, 'utf-8'));
+const data = loadBenchmarkData();
+
+interface Best { s: number; v: string; st: string | null; src: string; u: string | null }
+const benchById = new Map(data.benchmarks.map(b => [b.id, b]));
+
+// Her model + test için en iyi sonuç (varyantlar tek satıra iner)
+const best = new Map<string, Record<string, Best>>();
+const names = new Map<string, { name: string; provider: string | null }>();
+for (const e of data.entries) {
+	const b = benchById.get(e.bench);
+	if (!b) continue;
+	if (!names.has(e.key)) names.set(e.key, { name: e.model, provider: e.provider });
+	const rec = best.get(e.key) ?? {};
+	const cur = rec[e.bench];
+	const better = !cur || (b.higherIsBetter ? e.score > cur.s : e.score < cur.s);
+	if (better) rec[e.bench] = { s: e.score, v: e.variant, st: e.setting, src: e.source, u: e.url };
+	best.set(e.key, rec);
 }
 
-// Get unique models
-const models = Array.from(new Set(benchmarks.map(b => b.model))).sort();
+// Karşılaştırılabilir modeller: en az 2 testte skoru olanlar
+const models = [...best.entries()]
+	.map(([k, rec]) => ({ k, name: names.get(k)!.name, provider: names.get(k)!.provider ?? 'Diğer', n: Object.keys(rec).length }))
+	.filter(m => m.n >= 2)
+	.sort((a, b) => a.provider.localeCompare(b.provider, 'tr') || b.name.localeCompare(a.name, 'tr', { numeric: true }));
+
+const groups = [...new Set(models.map(m => m.provider))].map(p => ({ p, items: models.filter(m => m.provider === p) }));
+
+// Test başına çubuk ölçeği (sıralama sayfasıyla aynı mantık)
+const benches = data.benchmarks.map(b => {
+	const vals = data.entries.filter(e => e.bench === b.id).map(e => e.score);
+	const max = Math.max(...vals);
+	const min = Math.min(...vals);
+	let lo = 0, hi = max;
+	if (b.unit === '%' && max <= 100) hi = 100;
+	if (b.unit.toLowerCase() === 'elo') lo = Math.floor((min - 25) / 25) * 25;
+	return { id: b.id, name: b.name, category: categoryName(b.category), unit: b.unit, hib: b.higherIsBetter, lo, hi };
+});
+
+// Varsayılan ikili: genel arena sıralamasında öne çıkan iki farklı sağlayıcının en iyi modelleri
+const arenaScore = (k: string) => best.get(k)?.['lmarena-text']?.s ?? 0;
+const byProvider = new Map<string, string>();
+for (const m of [...models].sort((a, b) => arenaScore(b.k) - arenaScore(a.k))) {
+	if (m.provider !== 'Diğer' && !byProvider.has(m.provider)) byProvider.set(m.provider, m.k);
+}
+const leaders = [...byProvider.values()].slice(0, 4);
+const pairs: [string, string][] = [];
+for (let i = 0; i < leaders.length; i++) for (let j = i + 1; j < leaders.length; j++) pairs.push([leaders[i], leaders[j]]);
+const quick = pairs.slice(0, 4).map(([a, b]) => ({ a, b, label: `${names.get(a)!.name} – ${names.get(b)!.name}` }));
+const defA = leaders[0] ?? models[0]?.k;
+const defB = leaders[1] ?? models[1]?.k;
+
+const scores = Object.fromEntries([...best.entries()].filter(([k]) => models.some(m => m.k === k)));
+const payload = JSON.stringify({ benches, scores, names: Object.fromEntries([...names.entries()].filter(([k]) => scores[k])), defA, defB }).replace(/</g, '\\u003c');
 ---
 
-<Layout title="Modelleri Karşılaştır | Yöney">
-	<div class="compare-page">
-		<div class="header-section">
-			<span class="badge">Kafa Kafaya Karşılaştırma</span>
-			<h1>Modelleri Karşılaştır</h1>
-			<p class="subtitle">İki yapay zekâ modelini benchmark testlerine göre animasyonlu sütun grafiklerle kıyaslayın.</p>
-		</div>
+<Layout
+	title="Model Karşılaştırma | Yöney"
+	description="İki yapay zekâ modelini LMArena, SWE-bench ve resmi duyurulardaki ortak testlerde yan yana karşılaştırın."
+>
+	<div class="cmp-page">
+		<header class="page-head">
+			<p class="kicker">Karşılaştır</p>
+			<h1>İki modeli yan yana koy</h1>
+			<p class="lead">İki model seç; ikisinin de skoru olan testlerde kimin önde olduğunu ve farkı gör. Bir modelin farklı ayarları (çaba seviyesi, düşünme modu) varsa en iyi sonucu kullanılır.</p>
+		</header>
 
 		{models.length < 2 ? (
-			<div class="empty-state">
-				<p>Karşılaştırma yapabilmek için henüz yeterli benchmark verisi toplanmadı.</p>
-			</div>
+			<p class="empty">Karşılaştırma için yeterli veri yok.</p>
 		) : (
-			<div class="comparison-tool">
-				<!-- Model Seçiciler -->
-				<div class="selectors-card">
-					<div class="select-group group-a">
-						<div class="legend-indicator dot-a"></div>
-						<div class="select-wrapper">
-							<label for="modelA">1. Model:</label>
-							<select id="modelA">
-								{models.map((m, idx) => (
-									<option value={m} selected={m === 'GPT-4o' || (m !== 'Claude 3.5 Sonnet' && idx === 0)}>{m}</option>
-								))}
-							</select>
-						</div>
-					</div>
-
-					<div class="vs-circle">VS</div>
-
-					<div class="select-group group-b">
-						<div class="legend-indicator dot-b"></div>
-						<div class="select-wrapper">
-							<label for="modelB">2. Model:</label>
-							<select id="modelB">
-								{models.map((m, idx) => (
-									<option value={m} selected={m === 'Claude 3.5 Sonnet' || (m !== 'GPT-4o' && idx === 1)}>{m}</option>
-								))}
-							</select>
-						</div>
-					</div>
+			<>
+				<div class="pickers">
+					<label class="picker picker-a">
+						<span class="picker-label"><i class="swatch swatch-a"></i>Model A</span>
+						<select id="selA">
+							{groups.map(g => (
+								<optgroup label={g.p}>
+									{g.items.map(m => <option value={m.k} selected={m.k === defA}>{m.name} ({m.n} test)</option>)}
+								</optgroup>
+							))}
+						</select>
+					</label>
+					<button class="swap" id="swap" type="button" aria-label="Modellerin yerini değiştir" title="Yer değiştir">⇄</button>
+					<label class="picker picker-b">
+						<span class="picker-label"><i class="swatch swatch-b"></i>Model B</span>
+						<select id="selB">
+							{groups.map(g => (
+								<optgroup label={g.p}>
+									{g.items.map(m => <option value={m.k} selected={m.k === defB}>{m.name} ({m.n} test)</option>)}
+								</optgroup>
+							))}
+						</select>
+					</label>
 				</div>
 
-				<!-- Skor & İstatistik Kartları -->
-				<div class="stats-summary" id="statsSummary"></div>
+				{quick.length > 0 && (
+					<div class="quick">
+						<span class="quick-label">Hızlı seçim:</span>
+						{quick.map(q => <button class="quick-btn" type="button" data-a={q.a} data-b={q.b}>{q.label}</button>)}
+					</div>
+				)}
 
-				<!-- Animasyonlu Sütun Grafik Kartları -->
-				<div class="charts-section">
-					<div class="section-title-row">
-						<h2>📊 Kategori Bazlı Karşılaştırma Grafikleri</h2>
-						<span class="chart-hint">Değerler dinamik sütun animasyonu ile ölçeklenir</span>
-					</div>
+				<section class="result" aria-live="polite">
+					<div class="summary" id="summary"></div>
+					<label class="toggle">
+						<input type="checkbox" id="onlyCommon" checked />
+						<span>Yalnızca ikisinin de skoru olan testler</span>
+					</label>
+					<div class="rows" id="rows"></div>
+				</section>
 
-					<div class="charts-grid" id="chartsGrid">
-						<!-- JS ile her test için yan yana 2 dikey sütun üretilecek -->
-					</div>
-				</div>
-
-				<!-- Detay Özeti Tablosu -->
-				<div class="table-card">
-					<div class="table-header">
-						<h3>Detaylı Karşılaştırma Tablosu</h3>
-					</div>
-					<div class="results-table-container">
-						<table id="compareTable">
-							<thead>
-								<tr>
-									<th>Benchmark / Metrik</th>
-									<th id="thModelA">Model A</th>
-									<th id="thModelB">Model B</th>
-									<th>Skor Farkı</th>
-									<th>Kazanan</th>
-								</tr>
-							</thead>
-							<tbody id="compareBody">
-							</tbody>
-						</table>
-					</div>
-				</div>
-			</div>
+				<p class="note">Skorlar farklı kaynaklardan ve farklı tarihlerden gelir. LMArena skorları (ELO) insan oylarına dayalı görelidir; SWE-bench skorları model ile ajan sisteminin birlikte aldığı sonuçtur. Ayrıntılar için <a href="/benchmarklar">Benchmarklar</a> sayfasına bak.</p>
+			</>
 		)}
 	</div>
+	<script type="application/json" id="cmp-data" set:html={payload} />
 </Layout>
 
-<script is:inline define:vars={{ benchmarks }}>
-	const allBenchmarks = benchmarks;
+<script>
+	import { esc, fmtScore } from '../lib/leaderboard';
 
-	function updateComparison() {
-		const selA = document.getElementById('modelA');
-		const selB = document.getElementById('modelB');
-		if (!selA || !selB) return;
+	interface Bench { id: string; name: string; category: string; unit: string; hib: boolean; lo: number; hi: number }
+	interface Best { s: number; v: string; st: string | null; src: string; u: string | null }
 
-		const modelA = selA.value;
-		const modelB = selB.value;
+	const raw = document.getElementById('cmp-data');
+	const selA = document.getElementById('selA') as HTMLSelectElement | null;
+	const selB = document.getElementById('selB') as HTMLSelectElement | null;
 
-		const thA = document.getElementById('thModelA');
-		const thB = document.getElementById('thModelB');
-		if (thA) thA.textContent = modelA;
-		if (thB) thB.textContent = modelB;
+	if (raw && selA && selB) {
+		const data = JSON.parse(raw.textContent || '{}') as {
+			benches: Bench[]; scores: Record<string, Record<string, Best>>; names: Record<string, { name: string; provider: string | null }>; defA: string; defB: string;
+		};
+		const rowsEl = document.getElementById('rows')!;
+		const summaryEl = document.getElementById('summary')!;
+		const onlyCommon = document.getElementById('onlyCommon') as HTMLInputElement;
 
-		const benchmarksA = allBenchmarks.filter(b => b.model === modelA);
-		const benchmarksB = allBenchmarks.filter(b => b.model === modelB);
+		const width = (b: Bench, v: number) => {
+			const pct = ((v - b.lo) / ((b.hi - b.lo) || 1)) * 100;
+			return Math.max(1.5, Math.min(100, b.hib ? pct : 100 - pct));
+		};
+		const diffText = (b: Bench, d: number) => {
+			const n = Math.abs(d).toLocaleString('tr-TR', { maximumFractionDigits: 2 });
+			if (b.unit === '%') return `${n} puan`;
+			return `${n} ${b.unit}`;
+		};
 
-		// Unique tests
-		const testNames = Array.from(new Set([
-			...benchmarksA.map(b => b.benchmark),
-			...benchmarksB.map(b => b.benchmark)
-		])).sort();
+		function side(cls: string, b: Bench, r: Best | undefined, win: boolean) {
+			if (!r) return `<div class="side ${cls} none"><span class="val">—</span><span class="track"></span></div>`;
+			const extra = [r.v, r.st].filter(Boolean).join(' · ');
+			return `<div class="side ${cls}${win ? ' win' : ''}" title="${esc(extra ? `${extra} · ${r.src}` : r.src)}">
+				<span class="val">${esc(fmtScore(r.s, b.unit))}</span>
+				<span class="track"><span class="bar" style="width:${width(b, r.s).toFixed(1)}%"></span></span>
+			</div>`;
+		}
 
-		const chartsGrid = document.getElementById('chartsGrid');
-		const tbody = document.getElementById('compareBody');
-		const statsSummary = document.getElementById('statsSummary');
-
-		if (chartsGrid) chartsGrid.innerHTML = '';
-		if (tbody) tbody.innerHTML = '';
-
-		let winsA = 0;
-		let winsB = 0;
-		let commonCount = 0;
-
-		testNames.forEach((test, idx) => {
-			const itemA = benchmarksA.find(b => b.benchmark === test);
-			const itemB = benchmarksB.find(b => b.benchmark === test);
-
-			const valA = itemA ? itemA.skor : null;
-			const valB = itemB ? itemB.skor : null;
-			const unit = (itemA && itemA.birim) || (itemB && itemB.birim) || '';
-			const higherIsBetter = (itemA && itemA.yuksek_iyi_mi !== false) && (itemB && itemB.yuksek_iyi_mi !== false);
-
-			// Determine max for column chart scaling
-			const maxScore = Math.max(valA || 0, valB || 0, 1);
-			const heightA = valA !== null ? Math.max(14, (valA / maxScore) * 100) : 0;
-			const heightB = valB !== null ? Math.max(14, (valB / maxScore) * 100) : 0;
-
-			let winner = 'none';
-			let diffText = '-';
-
-			if (valA !== null && valB !== null) {
-				commonCount++;
-				const diffVal = Number((valA - valB).toFixed(2));
-				if (diffVal !== 0) {
-					const isAWinner = higherIsBetter ? diffVal > 0 : diffVal < 0;
-					winner = isAWinner ? 'a' : 'b';
-					if (isAWinner) winsA++; else winsB++;
-					diffText = `+${Math.abs(diffVal)} ${unit} (${isAWinner ? modelA : modelB})`;
-				} else {
-					diffText = `Eşit (0 ${unit})`;
-					winner = 'tie';
+		function render() {
+			const a = selA!.value, bKey = selB!.value;
+			const A = data.scores[a] ?? {}, B = data.scores[bKey] ?? {};
+			const nameA = data.names[a]?.name ?? a, nameB = data.names[bKey]?.name ?? bKey;
+			let winsA = 0, winsB = 0, common = 0;
+			const html: string[] = [];
+			for (const b of data.benches) {
+				const ra = A[b.id], rb = B[b.id];
+				if (!ra && !rb) continue;
+				const both = !!(ra && rb);
+				if (!both && onlyCommon.checked) continue;
+				let verdict = '<span class="verdict muted">Ortak veri yok</span>';
+				let winA = false, winB = false;
+				if (both) {
+					common++;
+					const d = ra!.s - rb!.s;
+					if (d === 0) verdict = '<span class="verdict">Berabere</span>';
+					else {
+						winA = b.hib ? d > 0 : d < 0;
+						winB = !winA;
+						if (winA) winsA++; else winsB++;
+						verdict = `<span class="verdict"><i class="swatch ${winA ? 'swatch-a' : 'swatch-b'}"></i>${esc(winA ? nameA : nameB)} <strong>+${esc(diffText(b, d))}</strong></span>`;
+					}
 				}
+				html.push(`<div class="row">
+					<div class="test"><strong>${esc(b.name)}</strong><span class="cat">${esc(b.category)}</span></div>
+					<div class="sides">${side('a', b, ra, winA)}${side('b', b, rb, winB)}</div>
+					${verdict}
+				</div>`);
 			}
+			rowsEl.innerHTML = html.length ? html.join('') : '<p class="empty">Bu iki modelin ortak testi yok. Ortak olmayanları görmek için yukarıdaki seçeneği kapat.</p>';
+			summaryEl.innerHTML = common
+				? `<div class="score-a"><i class="swatch swatch-a"></i><span>${esc(nameA)}</span><strong>${winsA}</strong></div>
+				   <div class="score-mid">${common} ortak test</div>
+				   <div class="score-b"><strong>${winsB}</strong><span>${esc(nameB)}</span><i class="swatch swatch-b"></i></div>`
+				: `<div class="score-mid">${esc(nameA)} ile ${esc(nameB)} arasında ortak test yok</div>`;
+			history.replaceState(null, '', `#a=${encodeURIComponent(a)}&b=${encodeURIComponent(bKey)}`);
+		}
 
-			// 1. Sütun Grafik Kartı Ekle
-			if (chartsGrid) {
-				const card = document.createElement('div');
-				card.className = `chart-card ${winner === 'a' ? 'winner-a' : winner === 'b' ? 'winner-b' : ''}`;
-				card.style.animationDelay = `${idx * 0.08}s`;
+		const params = new URLSearchParams(location.hash.slice(1));
+		const has = (k: string | null) => !!k && Array.from(selA.options).some(o => o.value === k);
+		if (has(params.get('a'))) selA.value = params.get('a')!;
+		if (has(params.get('b'))) selB.value = params.get('b')!;
 
-				card.innerHTML = `
-					<div class="card-head">
-						<span class="test-title">${test}</span>
-						<span class="test-unit">${unit ? `Birim: ${unit}` : ''}</span>
-					</div>
-
-					<div class="bars-container">
-						<!-- Model A Sütunu -->
-						<div class="column-group">
-							<div class="column-value col-val-a">${valA !== null ? `${valA} ${unit}` : 'Veri yok'}</div>
-							<div class="column-track">
-								<div class="column-bar bar-a ${winner === 'a' ? 'winner-bar' : ''}" style="height: 0%;" data-height="${heightA}%">
-									${winner === 'a' ? '<span class="crown-icon">👑</span>' : ''}
-								</div>
-							</div>
-							<span class="column-label">${modelA}</span>
-						</div>
-
-						<!-- Model B Sütunu -->
-						<div class="column-group">
-							<div class="column-value col-val-b">${valB !== null ? `${valB} ${unit}` : 'Veri yok'}</div>
-							<div class="column-track">
-								<div class="column-bar bar-b ${winner === 'b' ? 'winner-bar' : ''}" style="height: 0%;" data-height="${heightB}%">
-									${winner === 'b' ? '<span class="crown-icon">👑</span>' : ''}
-								</div>
-							</div>
-							<span class="column-label">${modelB}</span>
-						</div>
-					</div>
-
-					<div class="card-foot">
-						${winner === 'a' ? `<span class="verdict verd-a">🏆 ${modelA} %${(((valA - valB) / (valB || 1)) * 100).toFixed(1)} önde</span>` :
-						  winner === 'b' ? `<span class="verdict verd-b">🏆 ${modelB} %${(((valB - valA) / (valA || 1)) * 100).toFixed(1)} önde</span>` :
-						  winner === 'tie' ? '<span class="verdict verd-tie">🤝 Skorlar Eşit</span>' :
-						  '<span class="verdict verd-na">Karşılaştırma için ortak veri yok</span>'}
-					</div>
-				`;
-				chartsGrid.appendChild(card);
-			}
-
-			// 2. Tablo Satırı Ekle
-			if (tbody) {
-				const tr = document.createElement('tr');
-				tr.innerHTML = `
-					<td><strong>${test}</strong></td>
-					<td class="tabular col-val-a">${valA !== null ? `${valA} ${unit}` : '-'}</td>
-					<td class="tabular col-val-b">${valB !== null ? `${valB} ${unit}` : '-'}</td>
-					<td class="tabular">${diffText}</td>
-					<td>
-						${winner === 'a' ? `<span class="pill-a">${modelA}</span>` :
-						  winner === 'b' ? `<span class="pill-b">${modelB}</span>` :
-						  winner === 'tie' ? '<span class="pill-tie">Berabere</span>' :
-						  '<span class="pill-na">-</span>'}
-					</td>
-				`;
-				tbody.appendChild(tr);
-			}
+		selA.addEventListener('change', render);
+		selB.addEventListener('change', render);
+		onlyCommon.addEventListener('change', render);
+		document.getElementById('swap')?.addEventListener('click', () => {
+			const t = selA.value; selA.value = selB.value; selB.value = t; render();
 		});
-
-		// Animasyon: Sütun boylarını tetikle
-		setTimeout(() => {
-			document.querySelectorAll('.column-bar').forEach(bar => {
-				const targetHeight = bar.getAttribute('data-height');
-				if (targetHeight) {
-					bar.style.height = targetHeight;
-				}
-			});
-		}, 80);
-
-		// Özet istatistik kartları
-		if (statsSummary) {
-			if (commonCount > 0) {
-				statsSummary.innerHTML = `
-					<div class="stat-box">
-						<span class="stat-label">Karşılaştırılan Test</span>
-						<span class="stat-value">${commonCount} Kategori</span>
-					</div>
-					<div class="stat-box stat-card-a">
-						<span class="stat-label">${modelA} Üstünlüğü</span>
-						<span class="stat-value val-a">${winsA} Testte Önde</span>
-					</div>
-					<div class="stat-box stat-card-b">
-						<span class="stat-label">${modelB} Üstünlüğü</span>
-						<span class="stat-value val-b">${winsB} Testte Önde</span>
-					</div>
-				`;
-			} else {
-				statsSummary.innerHTML = `
-					<div class="stat-notice">
-						Seçili iki model arasında henüz aynı test formatında doğrudan ortak metrik bulunmuyor. Farklı modeller seçerek kıyaslayabilirsiniz.
-					</div>
-				`;
-			}
-		}
-	}
-
-	window.addEventListener('DOMContentLoaded', () => {
-		const selA = document.getElementById('modelA');
-		const selB = document.getElementById('modelB');
-		if (selA && selB) {
-			selA.addEventListener('change', updateComparison);
-			selB.addEventListener('change', updateComparison);
-			updateComparison();
-		}
-	});
-
-	if (document.readyState === 'complete' || document.readyState === 'interactive') {
-		const selA = document.getElementById('modelA');
-		const selB = document.getElementById('modelB');
-		if (selA && selB) {
-			selA.addEventListener('change', updateComparison);
-			selB.addEventListener('change', updateComparison);
-			updateComparison();
-		}
+		document.querySelectorAll<HTMLButtonElement>('.quick-btn').forEach(btn => btn.addEventListener('click', () => {
+			selA.value = btn.dataset.a!; selB.value = btn.dataset.b!; render();
+		}));
+		render();
 	}
 </script>
 
 <style>
-	.compare-page {
-		max-width: 1100px;
+	.cmp-page {
+		--series-a: #2a78d6;
+		--series-b: #eb6834;
+		--viz-track: rgba(22, 19, 15, 0.06);
+		max-width: 980px;
 		margin: 0 auto;
 	}
-
-	.header-section {
-		margin-bottom: 2.5rem;
+	@media (prefers-color-scheme: dark) {
+		.cmp-page {
+			--series-a: #3987e5;
+			--series-b: #d95926;
+			--viz-track: rgba(230, 226, 218, 0.07);
+		}
 	}
-
-	.badge {
+	.page-head { margin-bottom: 1.75rem; }
+	.kicker {
 		font-family: var(--font-mono);
 		font-size: 0.75rem;
 		text-transform: uppercase;
-		background: var(--text-color);
-		color: var(--bg-color);
-		padding: 0.2rem 0.5rem;
-		display: inline-block;
-		margin-bottom: 0.75rem;
+		letter-spacing: 0.08em;
+		color: var(--accent-color);
+		margin: 0 0 0.5rem;
 	}
+	h1 { font-size: clamp(1.9rem, 4vw, 2.6rem); margin-bottom: 0.75rem; }
+	.lead { font-size: 1.05rem; max-width: 46rem; margin: 0; }
 
-	h1 {
-		font-size: 2.4rem;
-		margin: 0 0 0.5rem 0;
+	.pickers {
+		display: grid;
+		grid-template-columns: 1fr auto 1fr;
+		gap: 0.75rem;
+		align-items: end;
+		margin-bottom: 0.9rem;
 	}
-
-	.subtitle {
-		font-size: 1.1rem;
-		color: var(--secondary-color);
-		line-height: 1.6;
+	.picker { display: flex; flex-direction: column; gap: 0.35rem; min-width: 0; }
+	.picker-label {
+		display: inline-flex; align-items: center; gap: 0.4rem;
+		font-family: var(--font-mono); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em;
 	}
-
-	/* Model Seçiciler */
-	.selectors-card {
-		display: flex;
-		align-items: center;
-		justify-content: space-around;
-		gap: 1.5rem;
-		margin-bottom: 2rem;
-		padding: 2rem;
-		background: var(--card-bg);
+	.picker select {
+		width: 100%;
+		font: inherit;
+		font-size: 0.95rem;
+		padding: 0.55rem 0.6rem;
 		border: 1px solid var(--border-color);
-		border-radius: 4px;
-		box-shadow: 0 4px 16px rgba(0,0,0,0.03);
+		background: var(--card-bg);
+		color: var(--text-color);
+		border-radius: 0;
 	}
+	.picker-a select { border-left: 4px solid var(--series-a); }
+	.picker-b select { border-left: 4px solid var(--series-b); }
+	.swap {
+		height: 2.6rem; width: 2.6rem;
+		background: none; border: 1px solid var(--border-color); color: var(--text-color);
+		font-size: 1.1rem; cursor: pointer;
+	}
+	.swap:hover { border-color: var(--text-color); }
 
-	.select-group {
-		display: flex;
+	:global(.swatch) {
+		display: inline-block; width: 10px; height: 10px; flex-shrink: 0;
+	}
+	:global(.swatch-a) { background: var(--series-a); }
+	:global(.swatch-b) { background: var(--series-b); }
+
+	.quick { display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center; margin-bottom: 1.5rem; }
+	.quick-label { font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted); margin-right: 0.25rem; }
+	.quick-btn {
+		background: none; border: 1px solid var(--border-color); color: var(--text-color);
+		font-size: 0.8rem; padding: 0.3rem 0.6rem; cursor: pointer;
+	}
+	.quick-btn:hover { border-color: var(--text-color); }
+
+	.result { background: var(--card-bg); border: 1px solid var(--border-color); padding: 1.5rem; }
+	.summary {
+		display: grid;
+		grid-template-columns: 1fr auto 1fr;
 		align-items: center;
 		gap: 1rem;
-		flex: 1;
-		max-width: 420px;
-	}
-
-	.legend-indicator {
-		width: 14px;
-		height: 14px;
-		border-radius: 50%;
-		flex-shrink: 0;
-	}
-
-	.dot-a {
-		background: #2563eb;
-		box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.2);
-	}
-
-	.dot-b {
-		background: #059669;
-		box-shadow: 0 0 0 4px rgba(5, 150, 105, 0.2);
-	}
-
-	.select-wrapper {
-		display: flex;
-		flex-direction: column;
-		gap: 0.4rem;
-		width: 100%;
-	}
-
-	.select-wrapper label {
-		font-family: var(--font-mono);
-		font-size: 0.8rem;
-		text-transform: uppercase;
-		font-weight: 600;
-		color: var(--text-muted);
-	}
-
-	select {
-		padding: 0.75rem 1rem;
-		font-family: var(--font-sans);
-		font-size: 1.05rem;
-		border: 1px solid var(--border-color);
-		background: var(--bg-color);
-		color: var(--text-color);
-		border-radius: 4px;
-		cursor: pointer;
-		font-weight: 600;
-		outline: none;
-		transition: border-color 0.2s;
-	}
-
-	select:focus {
-		border-color: var(--accent-color);
-	}
-
-	.vs-circle {
-		font-family: var(--font-mono);
-		font-weight: 800;
-		color: #ffffff;
-		background: var(--accent-color);
-		width: 52px;
-		height: 52px;
-		border-radius: 50%;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		font-size: 1.15rem;
-		flex-shrink: 0;
-		box-shadow: 0 4px 12px rgba(194, 54, 31, 0.3);
-	}
-
-	/* Stats Summary */
-	.stats-summary {
-		display: flex;
-		gap: 1.5rem;
-		margin-bottom: 2.5rem;
-	}
-
-	:global(.stat-box) {
-		flex: 1;
-		background: var(--card-bg);
-		border: 1px solid var(--border-color);
-		border-radius: 4px;
-		padding: 1.25rem 1.5rem;
-		display: flex;
-		flex-direction: column;
-		gap: 0.35rem;
-		box-shadow: 0 2px 6px rgba(0,0,0,0.02);
-	}
-
-	:global(.stat-label) {
-		font-family: var(--font-mono);
-		font-size: 0.75rem;
-		text-transform: uppercase;
-		color: var(--text-muted);
-		letter-spacing: 0.5px;
-	}
-
-	:global(.stat-value) {
-		font-size: 1.5rem;
-		font-weight: 700;
-		font-family: var(--font-mono);
-	}
-
-	:global(.val-a) {
-		color: #3b82f6;
-	}
-
-	:global(.val-b) {
-		color: #10b981;
-	}
-
-	:global(.stat-notice) {
-		width: 100%;
-		padding: 1.25rem;
-		background: var(--card-bg);
-		border: 1px solid var(--border-color);
-		border-radius: 4px;
-		font-family: var(--font-mono);
-		font-size: 0.9rem;
-		color: var(--text-muted);
-	}
-
-	/* Sütun Grafikler Bölümü */
-	.charts-section {
-		margin-bottom: 3rem;
-	}
-
-	.section-title-row {
-		display: flex;
-		justify-content: space-between;
-		align-items: flex-end;
-		margin-bottom: 1.5rem;
-		padding-bottom: 0.75rem;
+		padding-bottom: 1rem;
 		border-bottom: 1px solid var(--border-color);
+		margin-bottom: 0.75rem;
 	}
+	:global(.score-a), :global(.score-b) { display: flex; align-items: center; gap: 0.6rem; min-width: 0; }
+	:global(.score-b) { justify-content: flex-end; text-align: right; }
+	:global(.score-a span), :global(.score-b span) { font-weight: 600; overflow: hidden; text-overflow: ellipsis; }
+	:global(.score-a strong), :global(.score-b strong) { font-size: 2rem; font-family: var(--font-sans); font-weight: 600; }
+	:global(.score-mid) { font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted); text-align: center; grid-column: 2; }
+	.toggle { display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.85rem; cursor: pointer; margin-bottom: 0.5rem; }
+	.toggle input { accent-color: var(--accent-color); width: 1rem; height: 1rem; }
 
-	.section-title-row h2 {
-		font-size: 1.5rem;
-		margin: 0;
-		color: var(--text-color);
-	}
-
-	.chart-hint {
-		font-family: var(--font-mono);
-		font-size: 0.8rem;
-		color: var(--text-muted);
-	}
-
-	.charts-grid {
+	:global(.cmp-page .row) {
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-		gap: 1.5rem;
-	}
-
-	:global(.chart-card) {
-		background: var(--card-bg);
-		border: 1px solid var(--border-color);
-		padding: 1.5rem;
-		display: flex;
-		flex-direction: column;
-		border-radius: 4px;
-		box-shadow: 0 2px 8px rgba(0,0,0,0.02);
-		animation: fadeInCard 0.4s ease forwards;
-		transition: transform 0.2s, box-shadow 0.2s;
-	}
-
-	:global(.chart-card:hover) {
-		transform: translateY(-2px);
-		box-shadow: 0 6px 16px rgba(0,0,0,0.15);
-	}
-
-	:global(.chart-card.winner-a) {
-		border-top: 4px solid #3b82f6;
-	}
-
-	:global(.chart-card.winner-b) {
-		border-top: 4px solid #10b981;
-	}
-
-	:global(.card-head) {
-		display: flex;
-		justify-content: space-between;
-		align-items: flex-start;
-		margin-bottom: 1.5rem;
-		min-height: 40px;
-	}
-
-	:global(.test-title) {
-		font-weight: 700;
-		font-size: 1.05rem;
-		color: var(--text-color);
-	}
-
-	:global(.test-unit) {
-		font-family: var(--font-mono);
-		font-size: 0.75rem;
-		color: var(--text-muted);
-		background: rgba(255, 255, 255, 0.06);
-		padding: 0.2rem 0.5rem;
-		border-radius: 3px;
-		border: 1px solid var(--border-color);
-		white-space: nowrap;
-	}
-
-	/* Sütun Tasarımı & Animasyon */
-	:global(.bars-container) {
-		display: flex;
-		justify-content: space-around;
-		align-items: flex-end;
-		height: 200px;
-		padding: 0 0.5rem;
-		border-bottom: 2px solid var(--border-color);
-		margin-bottom: 1.25rem;
-	}
-
-	:global(.column-group) {
-		display: flex;
-		flex-direction: column;
+		grid-template-columns: minmax(0, 13rem) minmax(0, 1fr) minmax(0, 13rem);
+		gap: 1rem;
 		align-items: center;
-		width: 42%;
-		height: 100%;
-		justify-content: flex-end;
-	}
-
-	:global(.column-value) {
-		font-family: var(--font-mono);
-		font-size: 0.85rem;
-		font-weight: 700;
-		margin-bottom: 0.4rem;
-	}
-
-	:global(.col-val-a) {
-		color: #3b82f6;
-	}
-
-	:global(.col-val-b) {
-		color: #10b981;
-	}
-
-	:global(.column-track) {
-		width: 48px;
-		height: 140px;
-		display: flex;
-		align-items: flex-end;
-		justify-content: center;
-		position: relative;
-	}
-
-	:global(.column-bar) {
-		width: 100%;
-		border-radius: 6px 6px 0 0;
-		transition: height 0.9s cubic-bezier(0.34, 1.56, 0.64, 1);
-		display: flex;
-		justify-content: center;
-		padding-top: 0.35rem;
-		position: relative;
-	}
-
-	:global(.bar-a) {
-		background: linear-gradient(180deg, #3b82f6 0%, #1d4ed8 100%);
-		box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);
-	}
-
-	:global(.bar-b) {
-		background: linear-gradient(180deg, #10b981 0%, #047857 100%);
-		box-shadow: 0 4px 10px rgba(5, 150, 105, 0.3);
-	}
-
-	:global(.winner-bar) {
-		filter: brightness(1.15);
-	}
-
-	:global(.crown-icon) {
-		font-size: 0.9rem;
-		animation: bounceCrown 1s ease infinite alternate;
-	}
-
-	:global(.column-label) {
-		margin-top: 0.5rem;
-		font-family: var(--font-mono);
-		font-size: 0.75rem;
-		text-align: center;
-		max-width: 110px;
-		overflow: hidden;
-		text-overflow: ellipsis;
-		white-space: nowrap;
-		color: var(--text-muted);
-	}
-
-	:global(.card-foot) {
-		min-height: 28px;
-		display: flex;
-		align-items: center;
-	}
-
-	:global(.verdict) {
-		font-family: var(--font-mono);
-		font-size: 0.8rem;
-		font-weight: 600;
-		padding: 0.25rem 0.5rem;
-		border-radius: 3px;
-	}
-
-	:global(.verd-a) {
-		background: rgba(37, 99, 235, 0.15);
-		color: #3b82f6;
-	}
-
-	:global(.verd-b) {
-		background: rgba(5, 150, 105, 0.15);
-		color: #10b981;
-	}
-
-	:global(.verd-tie) {
-		background: rgba(255, 255, 255, 0.08);
-		color: var(--text-muted);
-	}
-
-	:global(.verd-na) {
-		color: var(--text-muted);
-		font-size: 0.75rem;
-	}
-
-	/* Tablo Kartı */
-	.table-card {
-		background: var(--card-bg);
-		border: 1px solid var(--border-color);
-		border-radius: 4px;
-		box-shadow: 0 2px 8px rgba(0,0,0,0.02);
-	}
-
-	.table-header {
-		padding: 1.25rem 1.5rem;
+		padding: 0.7rem 0;
 		border-bottom: 1px solid var(--border-color);
-		background: rgba(255, 255, 255, 0.02);
 	}
-
-	.table-header h3 {
-		margin: 0;
-		font-size: 1.2rem;
-		color: var(--text-color);
+	:global(.cmp-page .test strong) { display: block; font-weight: 600; }
+	:global(.cmp-page .test .cat) { font-size: 0.75rem; color: var(--text-muted); }
+	:global(.cmp-page .sides) { display: flex; flex-direction: column; gap: 0.3rem; }
+	:global(.cmp-page .side) { display: grid; grid-template-columns: 4.5rem 1fr; align-items: center; gap: 0.5rem; }
+	:global(.cmp-page .side .val) {
+		font-family: var(--font-mono); font-size: 0.85rem; text-align: right; font-variant-numeric: tabular-nums; color: var(--text-muted);
 	}
+	:global(.cmp-page .side.win .val) { color: var(--text-color); font-weight: 600; }
+	:global(.cmp-page .track) { height: 10px; background: var(--viz-track); }
+	:global(.cmp-page .bar) { display: block; height: 100%; border-radius: 0 4px 4px 0; }
+	:global(.cmp-page .side.a .bar) { background: var(--series-a); }
+	:global(.cmp-page .side.b .bar) { background: var(--series-b); }
+	:global(.cmp-page .verdict) { font-size: 0.85rem; display: flex; align-items: center; gap: 0.4rem; flex-wrap: wrap; }
+	:global(.cmp-page .verdict.muted) { color: var(--text-muted); }
+	:global(.cmp-page .empty) { padding: 1.5rem 0; text-align: center; color: var(--text-muted); }
 
-	.results-table-container {
-		overflow-x: auto;
-	}
+	.note { font-size: 0.85rem; color: var(--text-muted); margin-top: 1.25rem; }
 
-	table {
-		width: 100%;
-		border-collapse: collapse;
-		font-family: var(--font-sans);
-		color: var(--text-color);
-	}
-
-	th, td {
-		border-bottom: 1px solid var(--border-color);
-		padding: 1rem 1.25rem;
-		text-align: left;
-	}
-
-	th {
-		background: rgba(255, 255, 255, 0.02);
-		font-family: var(--font-mono);
-		font-size: 0.8rem;
-		text-transform: uppercase;
-		letter-spacing: 0.5px;
-		color: var(--text-muted);
-	}
-
-	.tabular {
-		font-family: var(--font-mono);
-		font-size: 0.95rem;
-	}
-
-	:global(.pill-a) {
-		background: rgba(37, 99, 235, 0.15);
-		color: #3b82f6;
-		padding: 0.2rem 0.5rem;
-		font-size: 0.75rem;
-		font-family: var(--font-mono);
-		font-weight: 600;
-		border-radius: 3px;
-	}
-
-	:global(.pill-b) {
-		background: rgba(5, 150, 105, 0.15);
-		color: #10b981;
-		padding: 0.2rem 0.5rem;
-		font-size: 0.75rem;
-		font-family: var(--font-mono);
-		font-weight: 600;
-		border-radius: 3px;
-	}
-
-	:global(.pill-tie) {
-		background: rgba(255, 255, 255, 0.08);
-		color: var(--text-muted);
-		padding: 0.2rem 0.5rem;
-		font-size: 0.75rem;
-		font-family: var(--font-mono);
-		border-radius: 3px;
-	}
-
-	:global(.pill-na) {
-		color: var(--text-muted);
-		font-family: var(--font-mono);
-	}
-
-	@keyframes fadeInCard {
-		from { opacity: 0; transform: translateY(8px); }
-		to { opacity: 1; transform: translateY(0); }
-	}
-
-	@keyframes bounceCrown {
-		from { transform: translateY(0); }
-		to { transform: translateY(-4px); }
-	}
-
-	@media (max-width: 768px) {
-		.selectors-card {
-			flex-direction: column;
-		}
-		.select-group {
-			width: 100%;
-			max-width: none;
-		}
-		.stats-summary {
-			flex-direction: column;
-		}
-		.charts-grid {
-			grid-template-columns: 1fr;
-		}
+	@media (max-width: 720px) {
+		.pickers { grid-template-columns: 1fr; }
+		.swap { justify-self: center; }
+		.result { padding: 1rem; }
+		:global(.cmp-page .row) { grid-template-columns: 1fr; gap: 0.4rem; }
+		.summary { grid-template-columns: 1fr; gap: 0.4rem; }
+		:global(.score-b) { flex-direction: row-reverse; justify-content: flex-end; text-align: left; }
+		:global(.score-mid) { grid-column: auto; text-align: left; order: 3; }
+		:global(.score-a strong), :global(.score-b strong) { font-size: 1.4rem; margin-left: auto; }
+		:global(.score-b strong) { margin-left: auto; }
 	}
 </style>

@@ -5,15 +5,28 @@
     "type": "rss",
     "url": "https://openai.com/news/rss.xml",
     "tier": "resmi",
-    "enabled": true
+    "enabled": true,
+    "aiOnly": true
   },
   {
     "id": "anthropic-news",
     "name": "Anthropic",
     "type": "rss",
-    "url": "https://raw.githubusercontent.com/danieldunne/anthropic-rss/main/feed.xml",
+    "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_news.xml",
     "tier": "resmi",
-    "enabled": true
+    "enabled": true,
+    "note": "Anthropic'in resmi RSS akışı yok; anthropic.com/news sayfasından üretilen topluluk akışı.",
+    "aiOnly": true
+  },
+  {
+    "id": "anthropic-research",
+    "name": "Anthropic Research",
+    "type": "rss",
+    "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_research.xml",
+    "tier": "resmi",
+    "enabled": true,
+    "maxItems": 5,
+    "aiOnly": true
   },
   {
     "id": "google-deepmind",
@@ -21,7 +34,8 @@
     "type": "rss",
     "url": "https://deepmind.google/blog/rss.xml",
     "tier": "resmi",
-    "enabled": true
+    "enabled": true,
+    "aiOnly": true
   },
   {
     "id": "huggingface-blog",
@@ -29,7 +43,8 @@
     "type": "rss",
     "url": "https://huggingface.co/blog/feed.xml",
     "tier": "resmi",
-    "enabled": true
+    "enabled": true,
+    "aiOnly": true
   },
   {
     "id": "mistral-news",
@@ -37,7 +52,9 @@
     "type": "rss",
     "url": "https://mistral.ai/news/index.xml",
     "tier": "resmi",
-    "enabled": true
+    "enabled": false,
+    "note": "Bu adres artık geçerli bir RSS akışı döndürmüyor; çalışan bir akış bulunursa yeniden açılabilir.",
+    "aiOnly": true
   },
   {
     "id": "techcrunch-ai",
@@ -65,41 +82,36 @@
   },
   {
     "id": "venturebeat-ai",
-    "name": "VentureBeat AI",
+    "name": "VentureBeat",
     "type": "rss",
-    "url": "https://venturebeat.com/category/ai/feed/",
+    "url": "https://venturebeat.com/feed/",
     "tier": "bagimsiz",
-    "enabled": true
+    "enabled": true,
+    "note": "Eski /category/ai/feed/ adresi Ağustos 2026'dan beri güncellenmiyordu."
   },
   {
     "id": "reddit-localllama",
     "name": "Reddit LocalLLaMA (Topluluk & Benchmark)",
     "type": "rss",
-    "url": "https://www.reddit.com/r/LocalLLaMA.rss",
+    "url": "https://www.reddit.com/r/LocalLLaMA/top/.rss?t=day",
     "tier": "topluluk",
-    "enabled": true
+    "enabled": true,
+    "maxItems": 5,
+    "note": "Sadece günün en çok oy alan gönderileri, her turda en fazla 5 tane."
   },
   {
-    "id": "lmsys-chatbot-arena",
-    "name": "LMSYS Chatbot Arena (LMArena)",
+    "id": "lmarena",
+    "name": "LMArena (eski adıyla LMSYS Chatbot Arena)",
     "type": "benchmark_api",
-    "url": "https://lmarena.ai",
+    "url": "https://lmarena.ai/leaderboard",
     "tier": "bagimsiz",
     "enabled": true
   },
   {
     "id": "swe-bench-official",
-    "name": "SWE-bench Official Leaderboard",
+    "name": "SWE-bench Verified Resmi Liderlik Tablosu",
     "type": "benchmark_api",
     "url": "https://www.swebench.com",
-    "tier": "bagimsiz",
-    "enabled": true
-  },
-  {
-    "id": "hf-open-llm-leaderboard",
-    "name": "Hugging Face Open LLM Leaderboard v2",
-    "type": "benchmark_api",
-    "url": "https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard",
     "tier": "bagimsiz",
     "enabled": true
   }

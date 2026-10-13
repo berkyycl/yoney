@@ -1,16 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import fs from 'fs';
-import path from 'path';
+import { loadArticles } from '../lib/articles';
+import { newsCategoryName } from '../lib/categories';
 
-const articlesDir = path.join(process.cwd(), 'data', 'articles');
-let articles = [];
-if (fs.existsSync(articlesDir)) {
-    const files = fs.readdirSync(articlesDir).filter(f => f.endsWith('.json'));
-    articles = files.map(f => JSON.parse(fs.readFileSync(path.join(articlesDir, f), 'utf-8')))
-                    .filter(a => a.kategori === 'guncelleme' || a.kategori === 'fiyat-limit' || a.kategori === 'model-cikisi')
-                    .sort((a,b) => new Date(b.date).getTime() - new Date(a.date).getTime());
-}
+const articles = loadArticles().filter(a => ['guncelleme', 'fiyat-limit', 'model-cikisi'].includes(a.kategori));
 ---
 
 <Layout title="Ne Değişti? | Yöney">
@@ -27,7 +20,7 @@ if (fs.existsSync(articlesDir)) {
 				{articles.map(article => (
 					<div class="timeline-item">
 						<div class="timeline-meta">
-							<span class="badge">{article.kategori.replace('-', ' ')}</span>
+							<span class="badge">{newsCategoryName(article.kategori)}</span>
 							<time>{new Date(article.date).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' })}</time>
 						</div>
 						<div class="timeline-content">

@@ -4,9 +4,7 @@ import path from 'path';
 import axios from 'axios';
 import FeedParser from 'feedparser';
 import { JSDOM } from 'jsdom';
-import { z } from 'zod';
 import { FallbackLLMProvider } from './llm/fallback.js';
-import { analysisSchema, benchmarkSchema } from './llm/provider.js';
 import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -16,7 +14,6 @@ const ROOT = path.join(__dirname, '..');
 // Read config
 const sources = JSON.parse(fs.readFileSync(path.join(ROOT, 'config/sources.json'), 'utf-8'));
 const keywords = JSON.parse(fs.readFileSync(path.join(ROOT, 'config/keywords.json'), 'utf-8'));
-const modelAliases = JSON.parse(fs.readFileSync(path.join(ROOT, 'config/models.json'), 'utf-8'));
 
 const provider = new FallbackLLMProvider();
 
@@ -169,9 +166,20 @@ const NON_AI_BLOCKLIST = [
     'fashion', 'beauty', 'makeup', 'skincare', 'recipe', 'cooking'
 ];
 
+/**
+ * Anahtar kelimeyi kelime sınırlarıyla arar (çoğul eki ve bitişik sürüm numarası serbest: gpt4o, llama3).
+ * Eskiden düz "includes" kullanılıyordu: "rag" -> "storage", "average" gibi
+ * alakasız kelimeleri de yakalıyordu.
+ */
+function keywordRegex(k: string): RegExp {
+    const esc = k.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    return new RegExp(`(^|[^a-z0-9])${esc}(s|es|\\d[\\w.]*)?($|[^a-z0-9])`);
+}
+const KEYWORD_RES: RegExp[] = keywords.map((k: string) => keywordRegex(k));
+
 function containsKeywords(text: string) {
     const lower = text.toLowerCase();
-    return keywords.some((k: string) => lower.includes(k));
+    return KEYWORD_RES.some(re => re.test(lower));
 }
 
 /**
@@ -179,33 +187,77 @@ function containsKeywords(text: string) {
  * Returns true only if it contains AI-specific keywords AND
  * doesn't appear to be primarily non-AI political/entertainment content.
  */
-function isAIRelated(title: string, text: string): boolean {
+const AI_RES = AI_REQUIRED_KEYWORDS.map(keywordRegex);
+const BLOCK_RES = NON_AI_BLOCKLIST.map(keywordRegex);
+
+export function isAIRelated(title: string, text: string): boolean {
     const combined = (title + ' ' + text).toLowerCase();
 
     // Must contain at least one strong AI keyword
-    const hasAIKeyword = AI_REQUIRED_KEYWORDS.some(k => combined.includes(k));
+    const hasAIKeyword = AI_RES.some(re => re.test(combined));
     if (!hasAIKeyword) return false;
 
     // If title (the most reliable signal) contains blocklist words without AI context, skip
     const titleLower = title.toLowerCase();
-    const titleHasBlockword = NON_AI_BLOCKLIST.some(k => titleLower.includes(k));
+    const titleHasBlockword = BLOCK_RES.some(re => re.test(titleLower));
     if (titleHasBlockword) {
         // Only allow if title also has a direct AI keyword
-        const titleHasAI = AI_REQUIRED_KEYWORDS.some(k => titleLower.includes(k));
+        const titleHasAI = AI_RES.some(re => re.test(titleLower));
         if (!titleHasAI) return false;
     }
 
     return true;
 }
 
-function normalizeModel(modelName: string) {
-    const lower = modelName.toLowerCase();
-    for (const [canonical, aliases] of Object.entries(modelAliases)) {
-        if ((aliases as string[]).map(a => a.toLowerCase()).includes(lower)) {
-            return canonical;
+/** Tekrarları yakalamak için URL'yi sadeleştirir (utm parametreleri, sondaki /, http/https). */
+export function normalizeUrl(url: string): string {
+    try {
+        const u = new URL(url);
+        u.hash = '';
+        for (const k of [...u.searchParams.keys()]) {
+            if (/^(utm_|ref$|ref_|source$|fbclid|gclid)/i.test(k)) u.searchParams.delete(k);
         }
+        let out = `${u.hostname.replace(/^www\./, '')}${u.pathname.replace(/\/+$/, '')}`;
+        const q = u.searchParams.toString();
+        if (q) out += `?${q}`;
+        return out.toLowerCase();
+    } catch {
+        return (url || '').trim().toLowerCase();
     }
-    return modelName;
+}
+
+export function makeSlug(title: string): string {
+    return (title || 'article')
+        .toLowerCase()
+        .replace(/[^a-z0-9]/g, '-')
+        .replace(/-+/g, '-')
+        .replace(/^-|-$/g, '')
+        .substring(0, 60)
+        .replace(/-$/, '') || 'article';
+}
+
+/**
+ * data/redirects.json'daki eski (tekrar eden) haber dosyalarını, korunan sürümü
+ * mevcutsa siler. Silinen dosyaları iş akışındaki "git add data/" adımı commit'ler.
+ */
+export function cleanupRedirectedArticles(articlesDir: string, redirectsFile: string): number {
+    if (!fs.existsSync(redirectsFile)) return 0;
+    let removed = 0;
+    try {
+        const map: Record<string, string> = JSON.parse(fs.readFileSync(redirectsFile, 'utf-8'));
+        for (const [from, to] of Object.entries(map)) {
+            const oldFile = path.join(articlesDir, `${from}.json`);
+            const keptFile = path.join(articlesDir, `${to}.json`);
+            if (from !== to && fs.existsSync(oldFile) && fs.existsSync(keptFile)) {
+                fs.unlinkSync(oldFile);
+                removed++;
+            }
+        }
+    } catch (e: any) {
+        console.warn(`redirects.json okunamadı: ${e.message}`);
+    }
+    if (removed) console.log(`Tekrar eden ${removed} eski haber dosyası silindi.`);
+    return removed;
 }
 
 export async function runPipeline(isMock = false) {
@@ -213,33 +265,45 @@ export async function runPipeline(isMock = false) {
     if (!process.env.GROQ_API_KEY && !process.env.GEMINI_API_KEY && !isMock) {
         console.warn("UYARI: GROQ_API_KEY veya GEMINI_API_KEY ortam değişkeni tanımlı değil!");
     }
-    
+
     // Ensure dirs
     const dataDir = path.join(ROOT, 'data');
     if (!fs.existsSync(dataDir)) fs.mkdirSync(dataDir);
     const articlesDir = path.join(dataDir, 'articles');
     if (!fs.existsSync(articlesDir)) fs.mkdirSync(articlesDir);
 
-    let seen: string[] = [];
-    const seenFile = path.join(dataDir, 'seen.json');
-    if (fs.existsSync(seenFile)) {
-        seen = JSON.parse(fs.readFileSync(seenFile, 'utf-8'));
-    }
+    cleanupRedirectedArticles(articlesDir, path.join(dataDir, 'redirects.json'));
 
-    let allBenchmarks = [];
-    const benchmarkFile = path.join(dataDir, 'benchmarks.json');
-    if (fs.existsSync(benchmarkFile)) {
-        allBenchmarks = JSON.parse(fs.readFileSync(benchmarkFile, 'utf-8'));
+    const seenFile = path.join(dataDir, 'seen.json');
+    const seenList: string[] = fs.existsSync(seenFile) ? JSON.parse(fs.readFileSync(seenFile, 'utf-8')) : [];
+    const seen = new Set<string>(seenList.map(normalizeUrl));
+
+    // Daha önce kaydedilmiş haberlerin adresleri de "görüldü" sayılır. Böylece seen.json
+    // kaydedilemeden iş kesilse bile aynı haber ikinci kez (farklı dosya adıyla) yazılmaz.
+    const slugOwner = new Map<string, string>();
+    for (const f of fs.readdirSync(articlesDir).filter(f => f.endsWith('.json'))) {
+        try {
+            const a = JSON.parse(fs.readFileSync(path.join(articlesDir, f), 'utf-8'));
+            if (a.url) seen.add(normalizeUrl(a.url));
+            slugOwner.set(f.replace(/\.json$/, ''), normalizeUrl(a.url || ''));
+        } catch { /* bozuk dosya */ }
     }
+    const markSeen = (link: string) => {
+        const n = normalizeUrl(link);
+        if (!seen.has(n)) { seen.add(n); seenList.push(link); }
+    };
+    const saveSeen = () => fs.writeFileSync(seenFile, JSON.stringify(seenList, null, 2));
 
     // 1 AY (30 GÜN) geriye dönük haberleri al
     const oneMonthAgo = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000);
 
     let processedCount = 0;
     let skippedNotAI = 0;
+    let skippedLowValue = 0;
 
-    const enabledSources = sources.filter((s: any) => s.enabled);
-    console.log(`Processing ${enabledSources.length} enabled sources...`);
+    // Benchmark API kaynakları (LMArena, SWE-bench) scripts/fetch-benchmarks.ts tarafından işlenir
+    const enabledSources = sources.filter((s: any) => s.enabled && (s.type ?? 'rss') === 'rss');
+    console.log(`Processing ${enabledSources.length} enabled RSS sources...`);
 
     for (const source of enabledSources) {
         console.log(`\n[${source.name}] Fetching RSS...`);
@@ -252,9 +316,19 @@ export async function runPipeline(isMock = false) {
             continue; // move on to next source
         }
 
+        // Kaynak başına tur limiti (ör. Reddit'in siteyi doldurmaması için)
+        const maxItems: number = typeof source.maxItems === 'number' ? source.maxItems : Infinity;
+        let analyzedFromSource = 0;
+
         for (const item of items) {
+            if (!item.link) continue;
+            if (analyzedFromSource >= maxItems) {
+                console.log(`[${source.name}] Tur limiti (${maxItems}) doldu.`);
+                break;
+            }
+
             // Already processed?
-            if (seen.includes(item.link)) continue;
+            if (seen.has(normalizeUrl(item.link))) continue;
 
             // Date filter — son 30 gün
             let itemDate: Date;
@@ -271,37 +345,38 @@ export async function runPipeline(isMock = false) {
             const text = cleanHTML(rawText);
 
             // === AI RELEVANCE FILTER ===
+            // Yapay zekâ laboratuvarlarının kendi akışları (aiOnly) zaten tamamen YZ içeriklidir;
+            // kısa açıklamalı başlıkların ("Building on our commitment to ...") elenmemesi için filtre atlanır.
             // First pass: legacy keyword check (fast)
-            if (!containsKeywords(text) && !containsKeywords(item.title || '')) {
+            if (!source.aiOnly && !containsKeywords(text) && !containsKeywords(item.title || '')) {
                 continue; // obviously irrelevant
             }
             // Second pass: strict AI-focus check
-            if (!isAIRelated(item.title || '', text)) {
+            if (!source.aiOnly && !isAIRelated(item.title || '', text)) {
                 skippedNotAI++;
                 console.log(`  ⊘ Skipped (not AI): ${item.title}`);
                 // Still mark as seen so we don't recheck it
-                seen.push(item.link);
+                markSeen(item.link);
                 continue;
             }
 
             console.log(`  → Analyzing: ${item.title}`);
+            analyzedFromSource++;
             try {
                 let fullText = text;
                 let imageUrl = extractImageFromRSS(item) || undefined;
 
                 // Web sayfasından tam metin ve görsel meta etiketini çek
-                if (item.link) {
-                    try {
-                        const crawled = await fetchFullArticleAndMeta(item.link);
-                        if (crawled.text && crawled.text.length > fullText.length) {
-                            fullText = crawled.text;
-                        }
-                        if (!imageUrl && crawled.imageUrl) {
-                            imageUrl = crawled.imageUrl;
-                        }
-                    } catch (crawlErr: any) {
-                        console.warn(`    Crawl failed for ${item.link}: ${crawlErr.message}`);
+                try {
+                    const crawled = await fetchFullArticleAndMeta(item.link);
+                    if (crawled.text && crawled.text.length > fullText.length) {
+                        fullText = crawled.text;
                     }
+                    if (!imageUrl && crawled.imageUrl) {
+                        imageUrl = crawled.imageUrl;
+                    }
+                } catch (crawlErr: any) {
+                    console.warn(`    Crawl failed for ${item.link}: ${crawlErr.message}`);
                 }
 
                 const result = await provider.analyzeArticle({
@@ -312,12 +387,21 @@ export async function runPipeline(isMock = false) {
                     text: fullText.substring(0, 15000)
                 });
 
-                // Benchmark verification
-                let validBenchmarks: any[] = [];
+                // Reklam / müşteri başarı hikâyesi / haber değeri olmayan gönderi -> yayınlama
+                if (result.onem <= 1) {
+                    skippedLowValue++;
+                    console.log(`  ⊘ Skipped (low value, önem=1): ${item.title}`);
+                    markSeen(item.link);
+                    await delay(1500);
+                    continue;
+                }
+
+                // Benchmark verification: skor kaynak metinde birebir geçmeli.
+                // (Model adları burada değil, site derlenirken src/lib/models.ts ile birleştirilir.)
+                const validBenchmarks: any[] = [];
                 for (const b of result.benchmarklar || []) {
                     try {
                         if (fullText.includes(b.skor.toString()) || fullText.includes(b.skor.toLocaleString('tr-TR'))) {
-                            b.model = normalizeModel(b.model);
                             validBenchmarks.push(b);
                         }
                     } catch { /* skip bad benchmark entry */ }
@@ -331,12 +415,12 @@ export async function runPipeline(isMock = false) {
                     } catch { /* image search failed */ }
                 }
 
-                const slug = (item.title || 'article')
-                    .toLowerCase()
-                    .replace(/[^a-z0-9]/g, '-')
-                    .replace(/-+/g, '-')
-                    .replace(/^-|-$/g, '')
-                    .substring(0, 60);
+                // Aynı dosya adı başka bir habere aitse sonuna -2, -3 ... ekle
+                const baseSlug = makeSlug(item.title);
+                let slug = baseSlug;
+                for (let n = 2; slugOwner.has(slug) && slugOwner.get(slug) !== normalizeUrl(item.link); n++) {
+                    slug = `${baseSlug}-${n}`;
+                }
 
                 const article = {
                     ...result,
@@ -349,16 +433,14 @@ export async function runPipeline(isMock = false) {
                 };
 
                 fs.writeFileSync(path.join(articlesDir, `${slug}.json`), JSON.stringify(article, null, 2));
-                allBenchmarks.push(...validBenchmarks.map(b => ({ ...b, date: article.date, url: article.url, source: article.source })));
-                seen.push(item.link);
+                slugOwner.set(slug, normalizeUrl(item.link));
+                markSeen(item.link);
                 processedCount++;
                 console.log(`  ✓ Saved: ${article.baslik_tr || item.title}`);
 
                 // === INCREMENTAL SAVE: survive interruptions ===
-                // Save every 5 articles so progress isn't lost if pipeline is killed
                 if (processedCount % 5 === 0) {
-                    fs.writeFileSync(seenFile, JSON.stringify(seen, null, 2));
-                    fs.writeFileSync(benchmarkFile, JSON.stringify(allBenchmarks, null, 2));
+                    saveSeen();
                     console.log(`  [Checkpoint] Saved progress (${processedCount} articles)`);
                 }
 
@@ -371,12 +453,11 @@ export async function runPipeline(isMock = false) {
         }
     }
 
-    console.log(`\nPipeline summary: ${processedCount} processed, ${skippedNotAI} skipped (non-AI)`);
+    console.log(`\nPipeline summary: ${processedCount} processed, ${skippedNotAI} skipped (non-AI), ${skippedLowValue} skipped (low value)`);
 
-
-    // Final save
-    fs.writeFileSync(seenFile, JSON.stringify(seen, null, 2));
-    fs.writeFileSync(benchmarkFile, JSON.stringify(allBenchmarks, null, 2));
+    // Final save. Not: haberlerdeki benchmark skorları artık benchmarks.json'a yazılmıyor;
+    // site derlenirken doğrudan data/articles/*.json dosyalarından okunuyor.
+    saveSeen();
     console.log("Pipeline finished.");
 }
 
