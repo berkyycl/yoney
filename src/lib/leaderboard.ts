@@ -112,7 +112,7 @@ export function renderRows(all: CEntry[], bench: CBench, opt: ViewOptions): { ht
   const html = visible.map(({ e, rank }) => {
     const meta = [e.p, e.st].filter(Boolean).map(esc).join(' · ');
     const title = `${e.m}${e.v ? ` (${e.v})` : ''}: ${fmtScore(e.s, bench.unit)} ${bench.unit === '%' ? '' : bench.unit}`.trim();
-    return `<li class="lb-row${rank === 1 ? ' is-first' : ''}" title="${esc(title)}">
+    return `<li class="lb-row${rank <= 3 ? ` is-top rank-${rank}` : ''}" title="${esc(title)}">
   <span class="lb-rank">${rank}</span>
   <span class="lb-name"><strong>${esc(e.m)}</strong>${e.v ? ` <span class="lb-variant">${esc(e.v)}</span>` : ''}${meta ? `<span class="lb-meta">${meta}</span>` : ''}</span>
   <span class="lb-track" aria-hidden="true"><span class="lb-bar" style="width:${width(e.s).toFixed(1)}%"></span></span>

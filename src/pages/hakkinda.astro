@@ -1,117 +1,173 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+const FEATURES = [
+	{
+		t: 'Gelişmeleri takip ve analiz',
+		d: 'Yeni model duyurularını, araştırma raporlarını ve teknik güncellemeleri düzenli olarak tarıyor, kapsamlı ve anlaşılır Türkçe içeriklere dönüştürüyoruz.',
+		icon: 'M4 4h16v12H5.2L4 17.2V4zM8 8h8M8 12h5',
+	},
+	{
+		t: 'Doğrulanmış benchmarklar',
+		d: 'Modellere ait resmi performans skorlarını ayıklayıp sıralamalar ve yan yana karşılaştırmalar halinde sunuyoruz.',
+		icon: 'M4 20V10M10 20V4M16 20v-7M22 20H2',
+	},
+	{
+		t: 'Sektörel etki',
+		d: 'Her gelişmenin geliştiricilere, işletmelere ve kullanıcılara olası etkisini tarafsız bir bakışla yorumluyoruz.',
+		icon: 'M3 17l6-6 4 4 8-8M15 7h6v6',
+	},
+];
+
+const DONTS = [
+	'Kendi benchmark testlerimizi üretmiyoruz; yalnızca doğrulanabilir ve resmi olarak yayımlanmış verileri kaynak göstererek derliyoruz.',
+	'Spekülatif, doğrulanmamış veya tık tuzağı başlıklara yer vermiyoruz.',
+	'Hiçbir şirketi ya da modeli öne çıkarmıyor; tüm gelişmelere eşit ve tarafsız yaklaşıyoruz.',
+];
 ---
 
 <Layout title="Hakkında | Yöney">
-	<div class="about-page">
-		<h1>Hakkında</h1>
-
-		<section class="intro">
-			<p class="lead">
-				Yöney, yapay zekâ dünyasındaki tüm önemli gelişmeleri, model çıkışlarını ve teknik ilerlemeleri tek bir merkezden takip etmeyi sağlayan bağımsız ve güncel bir bilgi platformudur.
-			</p>
-		</section>
+	<div class="about">
+		<header class="page-head">
+			<p class="kicker">Hakkında</p>
+			<h1>Yapay zekâ gündemi, <span class="grad">tek yerde ve Türkçe.</span></h1>
+			<p class="lead">Yöney; yapay zekâ dünyasındaki önemli gelişmeleri, model çıkışlarını ve teknik ilerlemeleri tek bir yerden takip etmeyi sağlayan bağımsız ve güncel bir bilgi platformudur.</p>
+		</header>
 
 		<section>
-			<h2>Ne Yapıyoruz?</h2>
-			<div class="feature-list">
-				<div class="feature-item">
-					<h3>Gelişmeleri Takip ve Analiz</h3>
-					<p>Yapay zekâ ekosistemindeki yeni model duyurularını, araştırma raporlarını ve teknik güncellemeleri düzenli olarak tarıyor, kapsamlı ve anlaşılır Türkçe içeriklere dönüştürüyoruz.</p>
-				</div>
-				<div class="feature-item">
-					<h3>Doğrulanmış Karşılaştırmalar ve Benchmarklar</h3>
-					<p>Modellere ait resmi performans skorlarını ve benchmark sonuçlarını ayıklayarak görsel grafikler ve karşılaştırmalı tablolar halinde sunuyoruz.</p>
-				</div>
-				<div class="feature-item">
-					<h3>Sektörel Etki Değerlendirmesi</h3>
-					<p>Yalnızca haberi aktarmakla kalmıyor; her teknik gelişmenin geliştiricilere, işletmelere ve sektöre olası somut etkilerini tarafsız bir bakış açısıyla inceliyoruz.</p>
-				</div>
+			<h2>Ne yapıyoruz?</h2>
+			<div class="features">
+				{FEATURES.map(f => (
+					<div class="feature">
+						<span class="feature-icon" aria-hidden="true">
+							<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d={f.icon} /></svg>
+						</span>
+						<h3>{f.t}</h3>
+						<p>{f.d}</p>
+					</div>
+				))}
 			</div>
 		</section>
 
 		<section>
-			<h2>Ne Yapmıyoruz?</h2>
-			<ul class="dont-list">
-				<li>Kendi benchmark testlerimizi üretmiyoruz; yalnızca doğrulanabilir ve resmi olarak yayımlanmış verileri kaynak göstererek derliyoruz.</li>
-				<li>Spekülatif, doğrulanmamış veya clickbait başlıklara yer vermiyoruz.</li>
-				<li>Hiçbir ekosistemi, şirketi veya modeli öne çıkarmıyor; tüm gelişmelere eşit ve tarafsız yaklaşıyoruz.</li>
+			<h2>Ne yapmıyoruz?</h2>
+			<ul class="donts">
+				{DONTS.map(d => (
+					<li>
+						<span class="x" aria-hidden="true">
+							<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
+						</span>
+						{d}
+					</li>
+				))}
 			</ul>
 		</section>
 
 		<section class="disclaimer">
-			<h2>Sorumluluk Reddi</h2>
+			<h2>Sorumluluk reddi</h2>
 			<p>Yöney üzerindeki içerikler ve teknik analizler yalnızca bilgilendirme amaçlıdır; yatırım, ticari veya teknik danışmanlık niteliği taşımaz. En güncel teknik detaylar ve kararlar için daima orijinal belgelere başvurulması önerilir.</p>
 		</section>
 	</div>
 </Layout>
 
 <style>
-	.about-page {
-		max-width: 800px;
+	.about {
+		max-width: 880px;
 		margin: 0 auto;
 	}
 
-	.lead {
-		font-size: 1.25rem;
-		line-height: 1.7;
-		font-weight: 500;
-	}
-
 	section {
-		margin-bottom: 3rem;
+		margin-bottom: 48px;
 	}
 
-	.feature-list {
-		display: flex;
-		flex-direction: column;
-		gap: 1.25rem;
+	section > h2 {
+		margin-bottom: 18px;
+		font-size: 1.4rem;
+		letter-spacing: -0.03em;
 	}
 
-	.feature-item {
-		border: 1px solid var(--border-color);
-		padding: 1.25rem 1.5rem;
-		border-radius: 6px;
+	.features {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+		gap: 16px;
 	}
 
-	.feature-item h3 {
-		font-size: 1.1rem;
-		margin-top: 0;
-		margin-bottom: 0.5rem;
+	.feature {
+		padding: 22px;
+		border: 1px solid var(--border);
+		border-radius: var(--radius);
+		background: var(--surface);
 	}
 
-	.feature-item p {
-		font-size: 0.95rem;
-		line-height: 1.6;
-		color: var(--secondary-color);
-		margin: 0;
+	.feature-icon {
+		width: 40px;
+		height: 40px;
+		display: grid;
+		place-items: center;
+		margin-bottom: 16px;
+		border-radius: 12px;
+		background: var(--accent-soft);
+		color: var(--accent-text);
 	}
 
-	.dont-list {
+	.feature h3 {
+		margin-bottom: 8px;
 		font-size: 1.05rem;
-		line-height: 1.8;
-		padding-left: 1.5rem;
 	}
 
-	.dont-list li {
-		margin-bottom: 0.5rem;
+	.feature p {
+		margin: 0;
+		color: var(--text-2);
+		font-size: 0.925rem;
+		line-height: 1.6;
+	}
+
+	.donts {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: grid;
+		gap: 12px;
+	}
+
+	.donts li {
+		display: flex;
+		gap: 14px;
+		padding: 16px 18px;
+		border: 1px solid var(--border);
+		border-radius: var(--radius);
+		background: var(--surface);
+		color: var(--text-2);
+		line-height: 1.6;
+	}
+
+	.x {
+		width: 26px;
+		height: 26px;
+		flex-shrink: 0;
+		display: grid;
+		place-items: center;
+		border-radius: 8px;
+		background: rgba(244, 63, 94, 0.12);
+		color: #f43f5e;
 	}
 
 	.disclaimer {
-		background: rgba(194, 54, 31, 0.05);
-		border-left: 4px solid var(--accent-color);
-		padding: 1.5rem 2rem;
-		border-radius: 0 6px 6px 0;
+		padding: 24px 26px;
+		border: 1px solid var(--border);
+		border-radius: var(--radius);
+		background: var(--surface-2);
 	}
 
 	.disclaimer h2 {
-		margin-top: 0;
-		color: var(--accent-color);
+		margin-bottom: 8px;
+		font-size: 1rem;
 	}
 
 	.disclaimer p {
 		margin: 0;
+		color: var(--text-2);
+		font-size: 0.925rem;
 		line-height: 1.6;
-		font-size: 0.95rem;
 	}
 </style>

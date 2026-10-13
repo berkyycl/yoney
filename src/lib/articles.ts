@@ -1,6 +1,11 @@
 import fs from 'fs';
 import path from 'path';
 
+/** Kartlarda gösterilecek kısa kaynak adı: "Reddit LocalLLaMA (Topluluk & Benchmark)" -> "Reddit LocalLLaMA" */
+export function sourceLabel(source: unknown): string {
+  return String(source ?? '').replace(/\s*\([^)]*\)\s*$/, '');
+}
+
 /**
  * data/articles/*.json dosyalarını okur. Bozuk ya da yarım yazılmış bir dosya
  * (ör. birleştirme çakışması) tüm derlemeyi durdurmasın diye atlanır.

@@ -1,0 +1,45 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Sayfa bulunamadı | Yöney">
+	<div class="nf">
+		<p class="code grad">404</p>
+		<h1>Bu sayfa bulunamadı</h1>
+		<p class="lead">Aradığınız haber kaldırılmış ya da adresi değişmiş olabilir.</p>
+		<div class="actions">
+			<a class="btn btn-primary" href="/">Haberlere dön</a>
+			<a class="btn" href="/benchmarklar">Benchmarklar</a>
+		</div>
+	</div>
+</Layout>
+
+<style>
+	.nf {
+		max-width: 560px;
+		margin: 48px auto;
+		text-align: center;
+	}
+
+	.code {
+		margin: 0;
+		font-size: clamp(5rem, 18vw, 8rem);
+		font-weight: 700;
+		letter-spacing: -0.06em;
+		line-height: 1;
+	}
+
+	h1 {
+		margin: 12px 0 10px;
+		font-size: clamp(1.6rem, 4vw, 2.2rem);
+		letter-spacing: -0.035em;
+	}
+
+	.actions {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 10px;
+		margin-top: 28px;
+	}
+</style>

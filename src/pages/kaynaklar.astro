@@ -4,180 +4,255 @@ import fs from 'fs';
 import path from 'path';
 
 const sourcesFile = path.join(process.cwd(), 'config', 'sources.json');
-let sources = [];
+let sources: any[] = [];
 if (fs.existsSync(sourcesFile)) {
     sources = JSON.parse(fs.readFileSync(sourcesFile, 'utf-8'));
 }
+
+const TIER: Record<string, string> = { resmi: 'Resmi', bagimsiz: 'Bağımsız', topluluk: 'Topluluk' };
+// Topluluk tarafından üretilen akışlar GitHub'dan okunuyor; kartta asıl site gösterilir
+const SITE: Record<string, string> = { 'anthropic-news': 'anthropic.com/news', 'anthropic-research': 'anthropic.com/research' };
+const host = (s: any) => { try { return SITE[s.id] ?? new URL(s.url).hostname.replace(/^www\./, ''); } catch { return s.url; } };
+const byActive = (a: any, b: any) => Number(b.enabled) - Number(a.enabled);
+const groups = [
+	{ title: 'Haber kaynakları', desc: 'Yapay zekâ laboratuvarlarının kendi duyuruları, bağımsız teknoloji basını ve topluluk.', items: sources.filter(s => s.type !== 'benchmark_api').sort(byActive) },
+	{ title: 'Benchmark kaynakları', desc: 'Canlı liderlik tabloları; skorlar doğrudan buradan çekilir.', items: sources.filter(s => s.type === 'benchmark_api').sort(byActive) },
+].filter(g => g.items.length > 0);
+
+const STEPS = [
+	{ t: 'Tarama', d: 'RSS akışları her 3 saatte bir taranır. Benchmark liderlik tabloları (LMArena, SWE-bench) günde iki kez güncellenir.' },
+	{ t: 'Yapay zekâ analizi', d: 'Yeni içerikler büyük dil modelleriyle (öncelikle Groq üzerinde gpt-oss-120b, gerekirse Gemini) analiz edilir ve Türkçe özetlenir. Reklam ve müşteri hikâyesi niteliğindeki içerikler yayınlanmaz.' },
+	{ t: 'Doğrulama', d: 'Yapay zekânın çıkardığı benchmark skorları kaynak metinle karşılaştırılır; metinde birebir geçmeyen skorlar eklenmez.' },
+	{ t: 'Yayın', d: 'Haberler ve skorlar statik sayfalar olarak derlenip birkaç dakika içinde yayına alınır.' },
+];
 ---
 
-<Layout title="Kaynaklar | Yöney">
+<Layout title="Kaynaklar | Yöney" description="Yöney'in haber ve benchmark verilerini topladığı kaynaklar ve içeriklerin nasıl hazırlandığı.">
 	<div class="sources-page">
-		<h1>Kaynaklar</h1>
-		<p class="subtitle">Yöney'in haber ve benchmark verilerini topladığı kaynakların tam listesi.</p>
+		<header class="page-head">
+			<p class="kicker">Kaynaklar</p>
+			<h1>Bilgi nereden geliyor?</h1>
+			<p class="lead">Yöney yalnızca aşağıdaki kaynakları izler. Her haberin altında orijinal kaynağa bağlantı bulunur.</p>
+		</header>
 
-		<div class="source-grid">
-			{sources.map(source => (
-				<div class={`source-card ${source.enabled ? '' : 'disabled'}`}>
-					<div class="source-header">
-						<span class={`tier-badge tier-${source.tier}`}>
-							{source.tier === 'resmi' ? 'Resmi' : source.tier === 'bagimsiz' ? 'Bağımsız' : 'Topluluk'}
-						</span>
-						<span class={`status ${source.enabled ? 'active' : 'inactive'}`}>
-							{source.enabled ? '● Aktif' : '○ Pasif'}
-						</span>
-					</div>
-					<h2>{source.name}</h2>
-					<p class="source-type">{source.type === 'benchmark_api' ? 'Liderlik tablosu' : 'RSS akışı'}{source.maxItems ? ` · tur başına en fazla ${source.maxItems} içerik` : ''}</p>
-					{source.note && <p class="source-note">{source.note}</p>}
-					<a href={source.url} target="_blank" rel="noopener noreferrer" class="source-link">Kaynağa Git ↗</a>
+		{groups.map(g => (
+			<section class="group">
+				<div class="group-head">
+					<h2>{g.title}</h2>
+					<p class="muted">{g.desc}</p>
 				</div>
-			))}
-		</div>
+				<div class="source-grid">
+					{g.items.map(s => (
+						<a class:list={['source-card', { off: !s.enabled }]} href={s.url} target="_blank" rel="noopener noreferrer">
+							<div class="source-top">
+								<span class="avatar" aria-hidden="true">{s.name.charAt(0)}</span>
+								<span class={`tier tier-${s.tier}`}>{TIER[s.tier] ?? s.tier}</span>
+							</div>
+							<h3 lang="en">{s.name}</h3>
+							<p class="source-host">{host(s)}</p>
+							<p class="source-info">
+								<span class:list={['status', s.enabled ? 'on' : 'off']}>{s.enabled ? 'Aktif' : 'Pasif'}</span>
+								{s.type === 'benchmark_api' ? 'Liderlik tablosu' : 'RSS akışı'}{s.maxItems ? ` · turda en fazla ${s.maxItems}` : ''}
+							</p>
+							{s.note && <p class="source-note">{s.note}</p>}
+						</a>
+					))}
+				</div>
+			</section>
+		))}
 
-		<div class="methodology">
-			<h2>Nasıl Çalışır?</h2>
-			<div class="steps">
-				<div class="step">
-					<div class="step-number">1</div>
-					<h3>RSS Tarama</h3>
-					<p>RSS akışları her 3 saatte bir taranır. Benchmark liderlik tabloları (LMArena, SWE-bench) günde iki kez güncellenir.</p>
-				</div>
-				<div class="step">
-					<div class="step-number">2</div>
-					<h3>AI Analiz</h3>
-					<p>Yeni içerikler büyük dil modelleriyle (öncelikle Groq üzerinde gpt-oss-120b, gerekirse Gemini) analiz edilir, Türkçe özetlenir ve benchmark skorları çıkarılır. Reklam ve müşteri hikâyesi niteliğindeki içerikler yayınlanmaz.</p>
-				</div>
-				<div class="step">
-					<div class="step-number">3</div>
-					<h3>Doğrulama</h3>
-					<p>Yapay zekânın çıkardığı benchmark skorları kaynak metinle karşılaştırılır; metinde birebir geçmeyen skorlar eklenmez.</p>
-				</div>
-				<div class="step">
-					<div class="step-number">4</div>
-					<h3>Yayın</h3>
-					<p>Haberler ve skorlar statik sayfalar olarak derlenip yayına alınır.</p>
-				</div>
+		<section class="how">
+			<div class="group-head">
+				<h2>Nasıl çalışır?</h2>
+				<p class="muted">Her şey otomatik; insan eli değmeden 3 saatte bir tekrarlanır.</p>
 			</div>
-		</div>
+			<ol class="steps">
+				{STEPS.map((s, i) => (
+					<li class="step">
+						<span class="step-num">{i + 1}</span>
+						<h3>{s.t}</h3>
+						<p>{s.d}</p>
+					</li>
+				))}
+			</ol>
+		</section>
 	</div>
 </Layout>
 
 <style>
 	.sources-page {
-		max-width: 1000px;
+		max-width: 1080px;
 		margin: 0 auto;
 	}
 
-	.source-note {
-		font-size: 0.8rem;
-		color: var(--text-muted);
-		margin: 0.25rem 0 0.5rem;
+	.group {
+		margin-bottom: 48px;
 	}
 
-	.subtitle {
-		font-size: 1.1rem;
-		color: var(--secondary-color);
-		margin-bottom: 2rem;
+	.group-head {
+		margin-bottom: 18px;
+	}
+
+	.group-head h2 {
+		margin-bottom: 4px;
+		font-size: 1.4rem;
+		letter-spacing: -0.03em;
+	}
+
+	.group-head p {
+		margin: 0;
 	}
 
 	.source-grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-		gap: 1.5rem;
-		margin-bottom: 4rem;
+		grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+		gap: 16px;
 	}
 
 	.source-card {
-		border: 1px solid var(--border-color);
-		padding: 1.25rem;
-		transition: border-color 0.2s;
+		display: flex;
+		flex-direction: column;
+		padding: 18px;
+		border: 1px solid var(--border);
+		border-radius: var(--radius);
+		background: var(--surface);
+		color: var(--text);
+		text-decoration: none;
+		transition: border-color 0.15s, box-shadow 0.15s, transform 0.15s;
 	}
 
 	.source-card:hover {
-		border-color: var(--text-color);
+		transform: translateY(-2px);
+		border-color: var(--border-strong);
+		box-shadow: var(--shadow-md);
 	}
 
-	.source-card.disabled {
-		opacity: 0.5;
+	.source-card.off {
+		opacity: 0.55;
 	}
 
-	.source-header {
+	.source-top {
 		display: flex;
-		justify-content: space-between;
 		align-items: center;
-		margin-bottom: 0.75rem;
+		justify-content: space-between;
+		margin-bottom: 14px;
 	}
 
-	.tier-badge {
-		font-family: var(--font-mono);
-		font-size: 0.75rem;
-		padding: 0.15rem 0.5rem;
-		text-transform: uppercase;
-	}
-
-	.tier-resmi { background: var(--accent-color); color: #fff; }
-	.tier-bagimsiz { background: var(--secondary-color); color: #fff; }
-	.tier-topluluk { background: var(--text-color); color: var(--bg-color); }
-
-	.status {
-		font-family: var(--font-mono);
-		font-size: 0.8rem;
-	}
-
-	.status.active { color: #2b7a4b; }
-	.status.inactive { color: #999; }
-
-	h2 {
-		font-size: 1.3rem;
-		margin: 0 0 0.5rem 0;
-	}
-
-	.source-type {
-		font-family: var(--font-mono);
-		font-size: 0.85rem;
-		color: var(--secondary-color);
-	}
-
-	.source-link {
-		display: inline-block;
-		margin-top: 0.75rem;
-		font-family: var(--font-mono);
-		font-size: 0.85rem;
-	}
-
-	.methodology {
-		border-top: 2px solid var(--text-color);
-		padding-top: 2rem;
-	}
-
-	.steps {
+	.avatar {
+		width: 38px;
+		height: 38px;
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-		gap: 2rem;
-		margin-top: 1.5rem;
+		place-items: center;
+		border-radius: 11px;
+		background: var(--surface-2);
+		color: var(--text-2);
+		font-weight: 700;
 	}
 
-	.step {
-		padding: 1rem;
-		border: 1px solid var(--border-color);
-	}
-
-	.step-number {
-		font-family: var(--font-serif);
-		font-size: 2rem;
-		color: var(--accent-color);
+	.tier {
+		padding: 3px 10px;
+		border-radius: 999px;
+		background: var(--surface-2);
+		color: var(--text-2);
+		font-size: 0.72rem;
 		font-weight: 600;
 	}
 
+	.tier-resmi {
+		background: var(--accent-soft);
+		color: var(--accent-text);
+	}
+
+	.source-card h3 {
+		margin: 0 0 2px;
+		font-size: 1.02rem;
+		letter-spacing: -0.015em;
+	}
+
+	.source-host {
+		margin: 0 0 12px;
+		color: var(--muted);
+		font-size: 0.82rem;
+	}
+
+	.source-info {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		margin: auto 0 0;
+		color: var(--text-2);
+		font-size: 0.8rem;
+	}
+
+	.status {
+		display: inline-flex;
+		align-items: center;
+		gap: 5px;
+		font-weight: 600;
+	}
+
+	.status::before {
+		content: '';
+		width: 7px;
+		height: 7px;
+		border-radius: 50%;
+		background: var(--muted);
+	}
+
+	.status.on {
+		color: #16a34a;
+	}
+
+	.status.on::before {
+		background: #22c55e;
+	}
+
+	.source-note {
+		margin: 10px 0 0;
+		padding-top: 10px;
+		border-top: 1px solid var(--border);
+		color: var(--muted);
+		font-size: 0.8rem;
+		line-height: 1.5;
+	}
+
+	.steps {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+		gap: 16px;
+	}
+
+	.step {
+		padding: 20px;
+		border: 1px solid var(--border);
+		border-radius: var(--radius);
+		background: var(--surface);
+	}
+
+	.step-num {
+		width: 34px;
+		height: 34px;
+		display: grid;
+		place-items: center;
+		margin-bottom: 14px;
+		border-radius: 10px;
+		background: linear-gradient(135deg, var(--accent), var(--accent-2));
+		color: #fff;
+		font-weight: 700;
+	}
+
 	.step h3 {
-		margin: 0.5rem 0;
-		font-family: var(--font-sans);
-		font-size: 1rem;
+		margin-bottom: 6px;
+		font-size: 1.02rem;
 	}
 
 	.step p {
+		margin: 0;
+		color: var(--text-2);
 		font-size: 0.9rem;
-		line-height: 1.5;
-		color: var(--secondary-color);
+		line-height: 1.55;
 	}
 </style>
