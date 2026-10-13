@@ -1,0 +1,55 @@
+{
+  "baslik_tr": "Proje Swap: Ajanlar bizim yerimize ticaret yaptığında ne olur?",
+  "ozet_tr": "Anthropic, Claude tabanlı ajanların bir mini pazar ortamında kitap takası yapmasını sağlayan Project Swap deneyini duyurdu. Kısa bir sohbetle katılımcıların okuma tercihlerini tahmin eden ajanlar, merkezi olmayan bir ticaret zemninde diğer ajanlarla pazarlık yaparak kitap değiş tokuşu gerçekleştirdi ve sonuçlar, modelin tercih tahminindeki başarısını ve pazar verimliliğini ortaya koydu.",
+  "detayli_icerik_tr": "Anthropic, 201 çalışanını altı farklı ofise dağıtarak her birinin vermek istediği bir kitabı ve okumak istediği bir kitabı belirlemesini sağladı. Katılımcılar Claude ile kısa bir sohbet gerçekleştirerek okuma zevklerini anlattı; Claude bu sohbetten yola çıkarak her katılımcının kitap havuzundaki tüm kitapları sıralayan bir tercih listesi oluşturdu. Bu listeler, ajanların dijital bir \"ticaret zemini\"nde diğer ajanlarla takas teklifleri, pazarlıkları ve çok taraflı rotasyonlar yaparak kitap değiş tokuşu gerçekleştirmesine temel oluşturdu.\n\nTicaret zemini, aynı anda sınırlı sayıda ajanın iletişim kurabildiği bir ortamda, her ajanın başlangıçta kendi kitabını diğerlerine takas etme hedefiyle çalıştı. Ajanlar iki tip talimat aldı: \"acımasız\" ajanlar yalnızca kendi sahibinin en çok istediği kitabı elde etmeye odaklandı, \"prosocial\" ajanlar ise aynı hedefi taşırken aynı zamanda diğer katılımcıların da memnun kalmasını sağlamaya çalıştı. Deney, gerçek zamanlı bir oturumun yanı sıra, model ve talimat değişiklikleriyle yüzlerce yeniden çalıştırma içeriyordu.\n\nSonuçlar, Claude'un kısa sohbetten elde ettiği tercih tahminlerinin %61 oranında katılımcıların kendi sıralamalarıyla eşleştiğini gösterdi; rastgele tahminin %50 olduğu göz önüne alındığında bu oran oldukça etkileyiciydi. Pazar verimliliği açısından, katılımcıların ortalama olarak kendi tercih listelerinde 0.55 puan (10 üzerinden 5.5) aldıkları belirlendi; teorik olarak mümkün olan en iyi dağıtım (utilitarian optimum) 0.89 puan olacaktı. Modelin gücünün, talimatların etkisinden daha fazla sonuçları şekillendirdiği, daha güçlü modellerin (ör. Fable 5.8) daha verimli pazarlara yol açtığı tespit edildi.\n\nAraştırma, ajanların gerçek dünyadaki pazarlara entegrasyonu öncesinde iki kritik sorunun altını çiziyor: ajanların kullanıcılarını ne kadar doğru anladığının ölçülmesi ve çoklu ajanların etkileşime gireceği platformların kurallarının netleştirilmesi. Bu bulgular, merkezi ve merkezi olmayan pazar modellerinde AI ajanlarının rolünü yeniden tanımlayabilir ve gelecekteki otomatik eşleştirme, iş arama, vardiya takası gibi uygulamalara temel oluşturabilir.",
+  "onemli_maddeler": [
+    "Claude, sadece 5 dakikalık sohbetle katılımcıların kitap tercihlerini %61 doğrulukla tahmin etti.",
+    "Pazar verimliliği ortalama 0.55 puan elde ederken, teorik optimum 0.89 puan olarak belirlendi.",
+    "Modelin gücü, talimatların etkisinden daha fazla sonuçları belirledi; daha güçlü modeller daha verimli takaslar sağladı."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "AI ajanlarının gerçek dünyadaki pazarlara entegrasyonu ve tercih tahmini konusundaki yeni bulgular, hem akademik hem de endüstriyel uygulamalarda önemli bir yön değişikliğine işaret ediyor.",
+  "etiketler": [
+    "AI ajanları",
+    "pazar ekonomisi",
+    "Claude",
+    "tercih modelleme",
+    "otomasyon"
+  ],
+  "anilan_modeller": [
+    "Claude Opus 4.8",
+    "Claude Fable 5.3",
+    "Claude Haiku 4.5",
+    "Claude Sonnet 4.5",
+    "Claude Fable 5.8"
+  ],
+  "yorum_tr": "Bu deney, AI ajanlarının kısa diyaloglarla kullanıcı tercihlerini yakalayabildiğini ve güçlü modellerin pazar verimliliğini artırdığını gösteriyor; geliştiriciler için model seçimi kritik bir faktör olurken, kullanıcılar da ajanların kararlarını denetlemenin yollarını aramalı.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Claude Fable 5.3",
+      "benchmark": "Pairwise ranking agreement",
+      "skor": 61,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "pairwise book ranking",
+      "kaynak_metinden_alinti": "Claude’s rankings, based on the short intake chat, were relatively well correlated with participants’ own. Across all pairs of books a person ranked, Claude’s ordering agreed with theirs 61% of the time"
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "benchmark": "Market efficiency (average participant ranking score)",
+      "skor": 0.55,
+      "birim": "score",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "average participant ranking",
+      "kaynak_metinden_alinti": "On average, people in our marketplace ended up at 0.55 on their own rankings, roughly their 5th ranked book on a 10-book list."
+    }
+  ],
+  "gorsel_url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/98a29c28bc80505540f64da96f899288b380fbf0-1200x630.jpg",
+  "url": "https://www.anthropic.com/research/project-swap",
+  "source": "Anthropic Research",
+  "sourceTier": "resmi",
+  "date": "2026-09-24T00:00:00.000Z",
+  "slug": "project-swap-what-happens-when-agents-trade-for-us"
+}

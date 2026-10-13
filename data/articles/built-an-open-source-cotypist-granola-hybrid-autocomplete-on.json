@@ -1,0 +1,44 @@
+{
+  "baslik_tr": "Açık kaynak Cotypist/Granola hibrit: Gemma 4 E2B ile otomatik tamamlama (≈50 ms/öneri) ve toplantı notları bağlamı",
+  "ozet_tr": "Yerel bir masaüstü uygulaması, toplantı notlarını bağlam olarak kullanarak yazım ve dikte sırasında otomatik tamamlama sağlıyor. Geliştirici, farklı model ve kuantizasyon denemeleri sonrası Gemma 4 E2B’nin 6‑bit sürümünün kalite ve gecikme açısından en iyi dengeyi sunduğunu belirtiyor.",
+  "detayli_icerik_tr": "Stevyhacker, yerel toplantı notlarını saklayan ve bu notları ekran okuması ya da önceki toplantı kayıtlarıyla birleştirerek yazım sırasında otomatik tamamlama ve ek bağlam sunan bir masaüstü uygulaması geliştirdi. İlk aşamalarda uygulamanın aşırı müdahaleci ve gecikmeli olması sorun yaratmış, ancak son günlerde kullanılabilir bir hâle getirildi.\n\nUygulamanın çekirdeğinde, Apple Intelligence ve llama.cpp aracılığıyla çalışan Gemma 4 E2B tabanlı bir model bulunuyor. Model, Q6_K (6‑bit) kuantizasyonu ile çalıştırıldığında, standart bir MacBook M4 Max üzerinde ortalama 50 ms’lik öneri süresi sağlıyor. Geliştirici, farklı model ve kuantizasyon kombinasyonlarını test ettikten sonra Gemma 4 E2B’nin bu konfigürasyonunun kalite ve gecikme dengesi açısından en iyisi olduğunu vurguluyor.\n\nLokalBot, Cotabby gibi benzer araçlarla karşılaştırıldığında 782 kelime tahmin noktasında %32.7 doğruluk (256/782) elde ederken, Cotabby %30.7 (240/782) skorunu gösterdi; bu da %2 puanlık bir fark anlamına geliyor. Uygulama, toplantı notlarından iki faktöre kadar bağlam ekleme, OCR tabanlı pencere metni okuma, erişilebilirlik metni üzerinden otomatik tamamlama, emoji ve makro desteği gibi özellikler sunuyor. Lisanslama açısından, sınırlı ücretsiz kullanım (günde 100 kelime) ve sınırsız kullanım için ücretli seçeneklerin yanı sıra AGPL‑3.0 ve GPLv3 beta sürümleri de mevcut.\n\nProjeye ait kodlar GitHub üzerinden erişilebilir ve geliştirici, farklı dillerdeki kullanıcı deneyimlerini ve önerileri toplamak istiyor. Ayrıca, 50 ms civarında yanıt süresiyle Gemma 4 E2B’yi geride bırakabilecek daha küçük bir temel model bulunması halinde yeni benchmarklar yapılması talep ediliyor.",
+  "onemli_maddeler": [
+    "Gemma 4 E2B base Q6_K modeli, ortalama 50 ms öneri süresiyle düşük gecikme sağlıyor.",
+    "Uygulama, yerel toplantı notlarından iki faktöre kadar bağlam ekleyerek otomatik tamamlama sunuyor.",
+    "LokalBot, Cotabby’ye karşı 32.7 % doğrulukla %2 puanlık bir üstünlük elde etti (782 kelime tahmini).",
+    "Açık kaynak kodlu ve GPLv3/AGPL‑3.0 lisanslarıyla farklı kullanım kısıtlamaları sunuluyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 3,
+  "onem_gerekce": "Yerel LLM tabanlı otomatik tamamlama aracı, geliştiriciler ve son kullanıcılar için yeni bir kullanım senaryosu sunuyor ancak henüz geniş çapta benimsenmediği için etkisi sınırlı.",
+  "etiketler": [
+    "Gemma 4",
+    "otomatik tamamlama",
+    "llama.cpp",
+    "open-source",
+    "yerel LLM"
+  ],
+  "anilan_modeller": [
+    "Gemma 4 E2B",
+    "Gemma 4 E4B"
+  ],
+  "yorum_tr": "Bu araç, düşük gecikmeli yerel modellerle üretken yazım deneyimini zenginleştirerek, veri gizliliği odaklı kullanıcılar için değerli bir alternatif sunuyor. Ancak performans ve UX iyileştirmeleri, daha geniş bir kitleye ulaşması için kritik.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "LokalBot (Gemma 4 E2B)",
+      "benchmark": "next-word prediction",
+      "skor": 32.7,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "782 next-word checkpoints",
+      "kaynak_metinden_alinti": "LokalBot 32.7% (256 / 782) vs Cotabby 30.7% (240 / 782)"
+    }
+  ],
+  "gorsel_url": "https://external-preview.redd.it/aWQxcG05ZWRtOHZoMX7xv-5vv4HO5orDXcITomm3h-yTAI9Qmg2JJt8pODYx.png?width=640&crop=smart&auto=webp&s=ecfe834e3e3186f994a5c8515585bd78c6a33aac",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x4x5km/built_an_opensource_cotypistgranola_hybrid/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-13T13:49:31.000Z",
+  "slug": "built-an-open-source-cotypist-granola-hybrid-autocomplete-on"
+}

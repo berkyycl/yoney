@@ -1,0 +1,55 @@
+{
+  "baslik_tr": "Claude, biyomoleküler modelleme için 4 kat hız ve düşük bellek modu sağladı",
+  "ozet_tr": "Anthropic, Claude'un 30'dan fazla açık kaynak biyomoleküler modeli ortalama dört kat hızlandırdığını ve tek bir NVIDIA GPU’da 10.000'den fazla token içeren sistemleri çalıştırabilen düşük bellek “Big” modunu geliştirdiğini duyurdu. Bu optimizasyonlar, protein tasarımı ve yapı tahmini gibi görevlerde GPU saatlerini iki mertebe azaltarak aynı in‑silico performansı sağladı ve topluluğa açık kaynak kodları sunuldu.",
+  "detayli_icerik_tr": "Anthropic'in Claude Science ekibi, son dört hafta içinde 30'un üzerindeki biyomoleküler modelin inference süresini ortalama %400 oranında artırdı ve bellek kullanımını önemli ölçüde düşürdü. Geliştirilen FlashPairformer çekirdekleri, üçgen dikkat ve üçgen çarpım işlemlerinde sırasıyla 2.7‑2.9 kat ve 1.7‑3.2 kat hız kazancı sağladı; bu, mevcut alan standartlarını geride bırakan bir performans artışı anlamına geliyor.\n\nClaude, bu optimizasyonları sadece hız için değil, aynı zamanda büyük biyomoleküler sistemlerin modellenebilmesi için de kullandı. Yeni düşük bellek “Big” modu, 10.000 token üzerindeki protein komplekslerini tek bir NVIDIA GPU düğümünde, hatta 70.000 token'a kadar uzanan sistemleri bir B300 sekiz‑GPU düğümünde çalıştırabiliyor. Bu, ribozom, mitokondriyal kompleks I ve TRiC şaperon kompleksi gibi büyük makinelerin doğru şekilde katlanmasını mümkün kılıyor.\n\nOptimizasyonların etkisi, protein tasarım yarışmalarına da yansıyor. Anthropic, Adaptyv Bio ile ortaklaşa 5.000'den fazla tasarımın deneysel doğrulaması ve 1 milyon dolar Claude kredisi ile 250.000 dolar compute kredisi sağlayacak bir yarışma başlattı. Aynı zamanda, Claude Mythos 5.1, Mythos 5 ve Opus 5 modelleri, tek bir NVIDIA H200 ve 24 saatlik çalışma süresiyle önceki kampanyalara kıyasla iki mertebe daha az GPU saati harcayarak benzer ipSAE bağlanma skorları elde etti.\n\nBu gelişmeler, biyomoleküler araştırmaların maliyet ve erişilebilirlik bariyerlerini düşürerek daha geniş bir araştırmacı kitlesinin ileri düzey protein tasarımı ve yapı tahmini yapabilmesini hedefliyor. Açık kaynak kodların paylaşılması ve Life Sciences Verification Programı’nın beta aşamasına geçmesi, AI destekli biyoloji çalışmalarının ekosistemini hızla genişletecek.",
+  "onemli_maddeler": [
+    "Claude, dört hafta içinde 30'dan fazla açık kaynak biyomoleküler modeli ortalama %400 hızlandırdı.",
+    "FlashPairformer çekirdekleri, üçgen dikkat ve çarpım işlemlerinde sırasıyla 2.8x ve 2.5x hız artışı sağladı.",
+    "Yeni “Big” düşük bellek modu, 10.000 token üzerindeki protein komplekslerini tek bir GPU’da çalıştırabiliyor.",
+    "Protein tasarım yarışması için 1 milyon dolar Claude kredisi ve 250.000 dolar compute kredisi ayrıldı.",
+    "Optimizasyonlar, önceki kampanyalara göre GPU saatlerini iki mertebe azaltarak benzer in‑silico bağlanma skorları elde etti."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Biyomoleküler modelleme ve protein tasarımında maliyet ve kaynak gereksinimlerini büyük ölçüde düşürerek araştırma hızını artırması, sektörde geniş çaplı etki potansiyeli taşıması.",
+  "etiketler": [
+    "biyomoleküler modelleme",
+    "AI optimizasyonu",
+    "protein tasarımı",
+    "Claude",
+    "açık kaynak"
+  ],
+  "anilan_modeller": [
+    "Claude Mythos 5.1",
+    "Claude Mythos 5",
+    "Claude Opus 5"
+  ],
+  "yorum_tr": "Claude'un bu optimizasyonları, biyoteknoloji araştırmalarının daha geniş kitleler tarafından erişilebilir olmasını sağlayarak yenilik hızını artıracak. Geliştiriciler, düşük bellek ve yüksek hız modları sayesinde daha büyük sistemleri tek bir GPU’da çalıştırabilecek, kullanıcılar ise maliyetleri önemli ölçüde azaltacak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Claude Mythos 5.1",
+      "benchmark": "Average speedup on 30 biomolecular models",
+      "skor": 4,
+      "birim": "x",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "average across 30 models",
+      "kaynak_metinden_alinti": "Claude was able to speed up such tasks roughly 4x while sacrificing a minimal amount of precision"
+    },
+    {
+      "model": "Claude (FlashPairformer kernels)",
+      "benchmark": "Triangle multiplication speedup",
+      "skor": 2.5,
+      "birim": "x",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "1.7-3.2x depending on model configuration",
+      "kaynak_metinden_alinti": "FlashPairformer achieves a new state-of-the-art, outperforming the field standard on average by 1.7-3.2x on triangle multiplication"
+    }
+  ],
+  "gorsel_url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/a65d1913ec56de3b90beadf1be2609b03898b42d-3800x1522.png",
+  "url": "https://www.anthropic.com/research/claude-uplifts-biomolecular-modeling",
+  "source": "Anthropic Research",
+  "sourceTier": "resmi",
+  "date": "2026-09-17T00:00:00.000Z",
+  "slug": "how-claude-is-uplifting-biomolecular-modeling"
+}

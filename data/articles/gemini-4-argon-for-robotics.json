@@ -1,0 +1,42 @@
+{
+  "baslik_tr": "Gemini 4 Argon, Robotik İçin Fiziksel Anlayış ve Kod Üretiminde Yeni Bir Dönem Başlatıyor",
+  "ozet_tr": "Google DeepMind, Gemini 4 Argon modelini tanıtarak robotik yığını boyunca fiziksel anlayış, kod üretimi ve görsel‑semantik akıl yürütme yeteneklerinde çığır açtığını duyurdu. Model, Embodied Reasoning (ERQA) benchmark'inde %87 başarıyla tüm rakiplerini geride bıraktı ve robot kontrolünden gerçek‑sim senkronizasyonuna kadar geniş bir yelpazede sıfır‑atış (zero‑shot) çözümler sunuyor.",
+  "detayli_icerik_tr": "Gemini 4 Argon, fiziksel ortamları kavrama, kod üretme ve görsel‑semantik akıl yürütme konularında önceki nesillere göre belirgin bir sıçrama gerçekleştiriyor. DeepMind, modelin Embodied Reasoning (ERQA) benchmark'inde %87 skor elde ederek mevcut en iyi sınırları aştığını vurguladı. Argon, bu yetkinliğini robotik yaşam döngüsünün her aşamasına entegre edebilen genel‑amaçlı bir fiziksel akıl yürütme modeli olarak konumlandırıyor.\n\nModelin en dikkat çeken uygulama alanlarından biri, Boston Dynamics Spot gibi mobil manipülatörlerin dijital ikizlerini (MuJoCo) kullanarak gerçek dünyada deneme yapmadan önce sanal ortamda becerileri öğrenmesi. Argon, bir çöp kutusuna basarak soda kutularını atma gibi görevleri önce sanal ortamda pratik yapıp ardından fiziksel robot üzerinde sıfır‑atış kontrolle hayata geçiriyor. Bu süreç, robotun ayak ve el hareketlerini iki‑ajanlı bir doğrulama sürüsüyle (foot‑verifier ve hand‑verifier) kontrol ederek güvenliği artırıyor.\n\nZero‑shot kontrol örneklerinde Argon, basit bir robot kolunu devrilmiş bir kupayı dik konuma getirip içine katlanmış bir peçeteyi yerleştirme görevini, görsel koordinat referansları ve eylem primitifleri üzerinden birkaç adımda tamamlıyor. Model, görsel koordinat sistemini (X, Y, Z eksenleri ve cm cinsinden ölçümler) kullanarak robotun el ve parmak hareketlerini hassas bir şekilde yönlendiriyor ve gerektiğinde kapalı‑döngü geri besleme ile hataları telafi ediyor.\n\nArgon ayrıca Real2Sim (gerçek‑simülasyon) akışını da güçlendiriyor. Gerçek robot kamera akışlarından, insan bakış açılı videolardan ve hatta elle çizilmiş kağıt eskizlerinden fiziksel olarak kalibre edilmiş simülasyon ikizleri oluşturabiliyor. Bu ikizler, MuJoCo tabanlı yüksek hızlı (500 Hz) fizik motorlarıyla gerçek temas ve kuvvet verilerini eşleştirerek, robotik araştırmacıların veri kalitesini artıran çok‑katmanlı geriye dönük etiketleme (hindsight labeling) ve görev ilerleme ölçütleri sunuyor.",
+  "onemli_maddeler": [
+    "Gemini 4 Argon, Embodied Reasoning (ERQA) benchmark'inde %87 skor elde ederek tüm rakip modelleri geride bıraktı.",
+    "Model, sıfır‑atış (zero‑shot) robot kontrolü ve dijital ikiz (MuJoCo) pratiğiyle gerçek robotik görevleri güvenli ve verimli bir şekilde gerçekleştiriyor.",
+    "Real2Sim ve Sketch‑to‑Simulation yetenekleri sayesinde gerçek kamera görüntülerinden, insan videolarından ve el çizimlerinden fiziksel olarak kalibre edilmiş simülasyon ortamları oluşturulabiliyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Gemini 4 Argon, robotik alanında fiziksel akıl yürütme ve kod üretiminde yeni bir standart belirleyerek endüstri ve akademik araştırmalarda geniş çaplı uygulama potansiyeli taşıyor.",
+  "etiketler": [
+    "robotik",
+    "fiziksel akıl yürütme",
+    "simülasyon",
+    "zero-shot kontrol",
+    "AI"
+  ],
+  "anilan_modeller": [
+    "Gemini 4 Argon"
+  ],
+  "yorum_tr": "Bu model, robotik sistemlerin tasarım ve kontrol aşamalarını tek bir multimodal AI çerçevesinde birleştirerek geliştiricilerin prototipleme süresini kısaltacak ve fiziksel AGI araştırmalarına ivme kazandıracak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Gemini 4 Argon",
+      "benchmark": "Embodied Reasoning (ERQA)",
+      "skor": 87,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "pure reasoning",
+      "kaynak_metinden_alinti": "Using pure reasoning, Argon scores 87%, outperforming every other frontier model."
+    }
+  ],
+  "gorsel_url": "https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/argon__robotics__hero.2e16d0ba.fill-1200x600.png",
+  "url": "https://deepmind.google/blog/gemini-4-argon-for-robotics/",
+  "source": "Google DeepMind",
+  "sourceTier": "resmi",
+  "date": "2026-10-13T16:01:58.000Z",
+  "slug": "gemini-4-argon-for-robotics"
+}

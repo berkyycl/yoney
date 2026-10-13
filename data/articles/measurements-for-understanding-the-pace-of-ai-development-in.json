@@ -1,0 +1,78 @@
+{
+  "baslik_tr": "Anthropic, AI Geliştirme Hızını Ölçen Üç Yeni Metriği Açıklıyor",
+  "ozet_tr": "Anthropic, sınır araştırma laboratuvarlarında yapay zekâ geliştirme hızını izlemek için üç temel ölçüm aracını kamuoyu ile paylaştı. Bu metrikler, AI'nin kendini ne kadar otomatikleştirdiği, ajanların denetim kapsamı ve güvenlik odaklı hesaplama tahsisatı gibi kritik alanları kapsıyor.",
+  "detayli_icerik_tr": "Anthropic, yapay zekâ sistemlerinin giderek daha hızlı ve kendi kendine öğrenen bir yapıya büründüğü bir dönemde, bu sürecin şeffaflığını artırmak amacıyla üç ölçüm çerçevesi geliştirdi. İlk ölçüm, \"Anthropic R&D Automation Index\" adıyla Claude modelinin araştırma ve geliştirme (R&D) süreçlerindeki otomasyon seviyesini değerlendiriyor. Ölçüm, AL0'dan AL5'e kadar bir ölçek kullanıyor; Claude, Ağustos 2026 itibarıyla %26 oranında \"AI leads\" (AL4) seviyesinde, %90'ın üzeri ise \"AI collaborates\" (AL3) seviyesinde görev alıyor.\n\nİkinci ölçüm, AI ajanlarının denetim ve müdahale mekanizmalarını inceliyor. Anthropic, aynı anda yaklaşık 30.000 araştırma ve mühendislik ajanını izliyor ve bu ajanların %100'ünün eylemleri çevrimiçi monitörlerden geçiyor. Bir milyar karar üzerinden yapılan analizde, sadece 0,002% (1/47.000) eylem engellendi ve haftada 100.000'den fazla işlem bayraklandı; bunların yaklaşık 50'si insan incelemesine yönlendirildi.\n\nÜçüncü ölçüm, şirketin toplam hesaplama gücünün ne kadarının güvenlik araştırmalarına ayrıldığını gösteriyor. 13‑20 Temmuz 2026 haftası için yapılan incelemede, AI R&D'nin %6'sı güvenlik çalışmalarına, AI‑led AI R&D'nin ise %12'si aynı amaçla kullanıldı. Bu oranlar, güvenlik odaklı harcamaların hâlâ sınırlı olduğunu, ancak ölçülebilir bir şeffaflık sağlandığını ortaya koyuyor.\n\nAnthropic, bu metriklerin bağımsız üçüncü taraflarca doğrulanmasını ve düzenli olarak kamuoyu ile paylaşılmasını hedefliyor. Şirket, bu şeffaflık çabalarının, hükümetlerin ve diğer laboratuvarların benzer raporlamalar yapmasını teşvik ederek, sınır AI geliştirme hızının dışarıdan izlenebilir bir çerçeveye oturtulmasını sağlayacağını belirtiyor.",
+  "onemli_maddeler": [
+    "Claude, Anthropic'in AI R&D işlerinin %26'sını \"AI leads\" seviyesinde yürütüyor; %90'ı ise \"AI collaborates\" seviyesinde.",
+    "30.000'den fazla araştırma ajanı %100 izleniyor; blokaj oranı sadece 0,002% ve haftada 50'ye yakın yüksek öncelikli vaka insan incelemesine yönlendiriliyor.",
+    "AI R&D'nin %6'sı, AI‑led AI R&D'nin %12'si güvenlik araştırmalarına tahsis edilmiş; bu oranlar gelecekteki kaynak dağılımı politikaları için bir referans oluşturuyor."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "Sınır AI laboratuvarlarının gelişim hızını ölçen ve şeffaflık sağlayan bu metrikler, politika yapıcılar, araştırmacılar ve endüstri oyuncuları için kritik bir veri kaynağı sunuyor.",
+  "etiketler": [
+    "AI ölçümü",
+    "otomasyon",
+    "güvenlik",
+    "compute tahsisi",
+    "Anthropic"
+  ],
+  "anilan_modeller": [
+    "Claude"
+  ],
+  "yorum_tr": "Anthropic'in geliştirdiği ölçüm çerçeveleri, AI geliştirme sürecinin dışarıdan izlenebilirliğini artırarak, hem düzenleyicilerin hem de diğer laboratuvarların benzer şeffaflık standartları benimsemesini teşvik edebilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Claude",
+      "benchmark": "AI R&D Automation Index – Lead Share",
+      "skor": 26,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "AL4 (AI leads)",
+      "kaynak_metinden_alinti": "Claude “leads” 26% of Anthropic’s AI R&D work."
+    },
+    {
+      "model": "Claude",
+      "benchmark": "AI R&D Automation Index – Collaborate+ Share",
+      "skor": 90,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "AL3+ (AI collaborates)",
+      "kaynak_metinden_alinti": "The share of work at or above “AI collaborates” is above 90%."
+    },
+    {
+      "model": "Anthropic agents",
+      "benchmark": "Agent action blocking rate",
+      "skor": 0.002,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "over 1B decisions (August 2026)",
+      "kaynak_metinden_alinti": "0.002% of them (about 1 in 47,000) were blocked by this monitor."
+    },
+    {
+      "model": "Anthropic compute",
+      "benchmark": "Compute allocated to safety (overall AI R&D)",
+      "skor": 6,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "July 13‑20 2026",
+      "kaynak_metinden_alinti": "about 6% of compute that went to AI R&D was allocated toward safety"
+    },
+    {
+      "model": "Anthropic compute",
+      "benchmark": "Compute allocated to safety (AI‑led AI R&D)",
+      "skor": 12,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "July 13‑20 2026",
+      "kaynak_metinden_alinti": "about 12% of compute that went to AI‑driven AI R&D was allocated toward safety"
+    }
+  ],
+  "gorsel_url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/9cf3a514384821aeb53ff34d878b210715cd5c06-1200x630.jpg",
+  "url": "https://www.anthropic.com/institute/measuring-pace-of-ai-development",
+  "source": "Anthropic Research",
+  "sourceTier": "resmi",
+  "date": "2026-09-17T00:00:00.000Z",
+  "slug": "measurements-for-understanding-the-pace-of-ai-development-in"
+}

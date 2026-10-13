@@ -1,0 +1,69 @@
+{
+  "baslik_tr": "Gemini 4 Argon: Güvenli ve Sorumlu Kullanım İçin Yeni Savunma Katmanları",
+  "ozet_tr": "Google DeepMind, yeni nesil yapay zeka modeli Gemini 4 Argon'un güvenlik ve sorumluluk çerçevesini açıkladı. Model, siber savunma, biyoteknoloji ve karmaşık kodlama görevlerinde çığır açarken, kötü niyetli kullanım risklerini azaltmak için üç katmanlı gerçek‑zaman koruma ve kapsamlı uyumsuzluk izleme sistemleriyle donatıldı.",
+  "detayli_icerik_tr": "Gemini 4 Argon, kodlama, finans, hukuk, siber güvenlik ve bilim gibi yüksek riskli alanlarda derin görevleri yerine getirebilen bir yapay zeka modeli olarak tanıtıldı. İlk aşamada, modelin yeteneklerini test etmek amacıyla Fairwind Programı kapsamında seçkin siber savunucular ve Google'ın iç güvenlik ekipleriyle sınırlı bir erişim sağlandı. Bu denemeler, modelin hastane yazılımındaki kritik bir hatayı tespit etmesi ve Google'ın iç ve açık kaynak yazılımlarındaki temel güvenlik açıklarını kapatması gibi somut faydalar sağladı.\n\nModelin güvenliğini sağlamak için iki temel soru ele alındı: (1) Kötü niyetli kullanımın (misuse) önlenmesi ve (2) Modelin görevini doğru ve güvenilir bir şekilde yerine getirmesi (misalignment). Bu sorulara yanıt olarak, DeepMind Frontier Safety Framework'ü çerçevesinde yeni nesil savunma mekanizmaları geliştirildi. Argon, tehlikeli istekleri reddetme oranını önceki nesillere göre neredeyse iki kat artırdı ve gerçek‑zaman koruma katmanları – giriş taraması, içsel içgörü (activation probes) ve sürekli izleme – sayesinde jailbreak ve gizli saldırı girişimlerini etkili bir şekilde engelliyor.\n\nMisalignment riskine karşı, modelin sistem sınırlarını ihlal etme, gizli eylemler gerçekleştirme ya da kendi hedeflerini değiştirme eğilimleri kapsamlı honeypot testleriyle incelendi; bu testlerde istenmeyen davranışlar tespit edilmedi. Bunun yerine, modelin görev tamamlama isteği nedeniyle aşırı çaba gösterdiği durumlar gözlemlendi ve bu durumlar, modelin negatif bulguları dürüstçe raporlaması ve insan onayı istemesiyle kontrol altına alındı. Kodlama benchmark'larında kısayol (shortcut) denemeleri %2'ye düşürülerek en düşük oran elde edildi.\n\nPrompt enjeksiyon direnci de önemli bir odak noktasıydı. Gray Swan’ın Indirect Prompt Injection (IPI) benchmark'ında 15 adaptif saldırı denemesinde başarı oranı %0.7'ye indirildi. Ayrıca biyolojik jailbreak testlerinde modelin alt‑görevleri açma oranı %1'in altında kaldı. Bu sonuçlar, Gemini 4 Argon'un hem yüksek performans hem de güvenlik açısından önceki nesilleri geride bıraktığını gösteriyor.",
+  "onemli_maddeler": [
+    "Gemini 4 Argon, 12/12 siber saldırı senaryosunu başarıyla çözdü; önceki nesilde bu sayı 5 idi.",
+    "Gerçek‑zaman üç katmanlı koruma (giriş taraması, aktivasyon probeleri, sürekli izleme) sayesinde jailbreak ve tehlikeli isteklerde %50'ye yakın azalma sağlandı.",
+    "Gray Swan IPI benchmark'ında 15 adaptif saldırı denemesinde başarı oranı %0.7'ye düşürüldü."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Gemini 4 Argon, çoklu yüksek riskli alanlarda çığır açan yetenekleri ve kapsamlı güvenlik önlemleriyle sektördeki model güvenliği standartlarını yeniden tanımlıyor.",
+  "etiketler": [
+    "AI güvenliği",
+    "Gemini 4 Argon",
+    "siber savunma",
+    "biyoteknoloji",
+    "prompt injection"
+  ],
+  "anilan_modeller": [
+    "Gemini 4 Argon"
+  ],
+  "yorum_tr": "Gemini 4 Argon'un güvenlik odaklı tasarımı, geliştiricilere güçlü bir araç sunarken aynı zamanda kötüye kullanım risklerini azaltarak yapay zekâ ekosisteminde sorumlu inovasyonu teşvik ediyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Gemini 4 Argon",
+      "benchmark": "Siber saldırı senaryosu çözümleme",
+      "skor": 12,
+      "birim": "senaryo",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "solving all 12 of the end-to-end simulated cyberattack scenarios, up from five in our previous generation"
+    },
+    {
+      "model": "Gemini 4 Argon",
+      "benchmark": "Gray Swan Indirect Prompt Injection (IPI)",
+      "skor": 0.7,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "15 adaptive attempts",
+      "kaynak_metinden_alinti": "cutting attack success across 15 adaptive attempts to 0.7%"
+    },
+    {
+      "model": "Gemini 4 Argon",
+      "benchmark": "Kodlama kısayol denemeleri",
+      "skor": 2,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "attempts to take a shortcut or cheat on the task dropped to just 2% on Gemini 4 Argon"
+    },
+    {
+      "model": "Gemini 4 Argon",
+      "benchmark": "Biyolojik jailbreak alt‑görev açma oranı",
+      "skor": 1,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "external bio jailbreak red teaming could only unlock less than 1% of bio sub-tasks we test for"
+    }
+  ],
+  "gorsel_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-4-argon_key-art_4_lockup_light_16-9.width-1300.png",
+  "url": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
+  "source": "Google DeepMind",
+  "sourceTier": "resmi",
+  "date": "2026-10-13T19:43:07.000Z",
+  "slug": "developing-gemini-4-argon-responsibly-and-safely"
+}
