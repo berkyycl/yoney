@@ -1,10 +1,9 @@
 /*
  * Yöney tasarım sistemi.
  *
- * Renk sabit değil, sahneye göre değişen bir değişkendir: site beş paletle
- * yaşar (html[data-palette]). Palet değişince zemin, yazı, vurgu renkleri ve
- * haber fotoğraflarının posterleştirme filtresi (--poster) birlikte değişir.
- * Filtreler Layout.astro içindeki gizli SVG'de tanımlıdır.
+ * Renk sabit değil, sahneye göre değişen bir değişkendir: her bölümün kendi
+ * paleti vardır (html[data-palette], src/lib/palettes.ts). Palet değişince
+ * zemin, yazı ve vurgu renkleri birlikte değişir; fotoğraflar kendi renklerindedir.
  */
 
 /* ---------- Paletler ---------- */
@@ -29,7 +28,6 @@
 	--header-bg: #ffcc2e;
 	--header-text: #170f33;
 	--backdrop-opacity: 0.22;
-	--poster: url(#poster-altin);
 	color-scheme: dark;
 }
 
@@ -53,7 +51,6 @@
 	--header-bg: #6a2fe0;
 	--header-text: #fff8fe;
 	--backdrop-opacity: 0.32;
-	--poster: url(#poster-menekse);
 	color-scheme: light;
 }
 
@@ -77,7 +74,6 @@
 	--header-bg: #c8ff2e;
 	--header-text: #0c2a20;
 	--backdrop-opacity: 0.2;
-	--poster: url(#poster-zehir);
 	color-scheme: dark;
 }
 
@@ -101,7 +97,6 @@
 	--header-bg: #d81f48;
 	--header-text: #fffaf4;
 	--backdrop-opacity: 0.3;
-	--poster: url(#poster-mercan);
 	color-scheme: light;
 }
 
@@ -125,7 +120,6 @@
 	--header-bg: #3ad9ff;
 	--header-text: #0a0a12;
 	--backdrop-opacity: 0.2;
-	--poster: url(#poster-gece);
 	color-scheme: dark;
 }
 
@@ -151,7 +145,6 @@
 	--header-bg: #f2c14e;
 	--header-text: #2a0a12;
 	--backdrop-opacity: 0.22;
-	--poster: url(#poster-kan);
 	color-scheme: dark;
 }
 
@@ -176,7 +169,6 @@
 	--header-bg: #0f7f81;
 	--header-text: #fffaf0;
 	--backdrop-opacity: 0.3;
-	--poster: url(#poster-col);
 	color-scheme: light;
 }
 
@@ -201,7 +193,6 @@
 	--header-bg: #ffd23f;
 	--header-text: #0e1a3d;
 	--backdrop-opacity: 0.22;
-	--poster: url(#poster-yildiz);
 	color-scheme: dark;
 }
 
@@ -226,7 +217,6 @@
 	--header-bg: #ff3d8b;
 	--header-text: #1d1a33;
 	--backdrop-opacity: 0.3;
-	--poster: url(#poster-morioh);
 	color-scheme: light;
 }
 
@@ -251,7 +241,6 @@
 	--header-bg: #4cc9f0;
 	--header-text: #08262e;
 	--backdrop-opacity: 0.2;
-	--poster: url(#poster-okyanus);
 	color-scheme: dark;
 }
 
@@ -276,7 +265,6 @@
 	--header-bg: #1d3fa6;
 	--header-text: #ffffff;
 	--backdrop-opacity: 0.3;
-	--poster: url(#poster-denizci);
 	color-scheme: light;
 }
 
@@ -1050,7 +1038,7 @@ a.chip:hover {
 	border: 0;
 }
 
-/* ---------- Görseller: posterleştirme + gerçek renk ---------- */
+/* ---------- Görseller ---------- */
 .poster {
 	position: relative;
 	display: block;
@@ -1066,17 +1054,6 @@ a.chip:hover {
 	height: 100%;
 	object-fit: cover;
 	transition: opacity 0.45s ease, transform 0.8s var(--ease-out);
-}
-
-/* Üstteki kopya paletin düz renk alanlarına ayrılır; üstüne gelince gerçek renk görünür */
-.poster .img-poster {
-	filter: var(--poster);
-}
-
-.reveal-color:hover .poster .img-poster,
-.poster:hover .img-poster,
-.reveal-color:focus-within .poster .img-poster {
-	opacity: 0;
 }
 
 .reveal-color:hover .poster img,
@@ -1232,17 +1209,25 @@ a.chip:hover {
 	transition: transform 1s var(--ease-pose) 0.25s;
 }
 
-.stand-svg .st-label circle {
-	fill: var(--a1);
+.stand-svg .st-label rect {
+	fill: var(--surface);
 	stroke: var(--line);
-	stroke-width: 2;
+	stroke-width: 1.5;
 }
 
-.stand-svg .st-grade {
-	fill: var(--on-a1);
+.stand-svg .st-label.st-top rect {
+	fill: var(--a1);
+}
+
+.stand-svg .st-score {
+	fill: var(--text);
 	font-family: var(--font-display);
-	font-size: 17px;
+	font-size: 15px;
 	text-anchor: middle;
+}
+
+.stand-svg .st-label.st-top .st-score {
+	fill: var(--on-a1);
 }
 
 .stand-svg .st-axis {

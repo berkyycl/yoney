@@ -1,25 +1,28 @@
 ---
 /**
- * Görseli olmayan haberler ve bölüm kapakları için bölüm rengi ve deseniyle
- * soyut kompozisyon + amblem. `seed` verilirse (ör. haberin adresi) dört
- * kompozisyondan biri seçilir; aynı bölümdeki görselsiz haberler birbirinin
- * aynısı görünmez.
+ * Görseli olmayan ya da yüklenemeyen haberler ve bölüm kapakları için bölüm
+ * rengi ve deseniyle kapak afişi: soyut kompozisyon, amblem ve (verilirse)
+ * dev harflerle bir etiket (haberin konu ettiği model ya da kaynak adı).
+ * `seed` verilirse (ör. haberin adresi) dört kompozisyondan biri seçilir;
+ * aynı bölümdeki görselsiz haberler birbirinin aynısı görünmez.
  */
 import { getCategory } from '../lib/categories';
 
 interface Props {
 	cat: string;
 	seed?: string;
+	label?: string;
 }
 const category = getCategory(Astro.props.cat);
-const seed = Astro.props.seed ?? '';
+const { seed = '', label } = Astro.props;
 let h = 0;
 for (const ch of seed) h = (h * 31 + ch.charCodeAt(0)) >>> 0;
 const v = seed ? h % 4 : 0;
 ---
 
-<div class="art" data-cat={category.id} data-v={v} aria-hidden="true">
+<div class:list={['art', { labeled: !!label }]} data-cat={category.id} data-v={v} aria-hidden="true">
 	<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d={category.emblem} /></svg>
+	{label && <span class="art-label">{label}</span>}
 </div>
 
 <style>
@@ -54,5 +57,34 @@ const v = seed ? h % 4 : 0;
 			linear-gradient(90deg, var(--bg-2) 0 46%, transparent 46%),
 			var(--pat),
 			var(--c);
+	}
+
+	/* Etiketli kapak: amblem köşeye çekilir, ad dev harflerle */
+	.art.labeled {
+		place-items: end start;
+		padding: 7% 8%;
+		container-type: inline-size;
+	}
+
+	.art.labeled svg {
+		position: absolute;
+		top: 9%;
+		right: 8%;
+		width: 20%;
+		max-width: 72px;
+	}
+
+	.art-label {
+		position: relative;
+		max-width: 88%;
+		color: #fff8ec;
+		font-family: var(--font-display);
+		font-size: clamp(1.1rem, 13cqi, 4.2rem);
+		line-height: 0.92;
+		letter-spacing: 0.01em;
+		text-transform: uppercase;
+		text-shadow: 3px 3px 0 #170f33, -1px -1px 0 #170f33, 1px -1px 0 #170f33, -1px 1px 0 #170f33;
+		overflow-wrap: anywhere;
+		transform: skewX(-6deg);
 	}
 </style>

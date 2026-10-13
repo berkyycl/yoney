@@ -54,26 +54,6 @@ const updated = now.toLocaleString('tr-TR', { timeZone: TZ, day: 'numeric', mont
 const [y, m, d] = now.toLocaleDateString('en-CA', { timeZone: TZ }).split('-').map(Number);
 const issue = Math.round((Date.UTC(y, m - 1, d) - Date.UTC(y, 0, 0)) / 864e5);
 
-/*
- * Fotoğrafların posterleştirme filtreleri: parlaklık beş banda ayrılır ve
- * her bant paletin bir rengine boyanır (koyudan açığa). Gauguin'in ve
- * Araki'nin düz, gerçekçi olmayan renk alanları gibi.
- */
-const POSTER: Record<string, string[]> = {
-	altin: ['#170f33', '#5b2aa0', '#ff3d8b', '#ffcc2e', '#fff4dc'],
-	menekse: ['#23103a', '#6a2fe0', '#ff3d97', '#f2b8ff', '#fff8fe'],
-	zehir: ['#0c2a20', '#7a2fd0', '#1f9e6a', '#c8ff2e', '#f0ffe2'],
-	mercan: ['#2a1020', '#008f8a', '#d81f48', '#ffb81f', '#fffaf4'],
-	gece: ['#0a0a12', '#3b1f9e', '#ff2e7e', '#3ad9ff', '#eef2ff'],
-	kan: ['#2a0a12', '#7a1f2b', '#e63946', '#f2c14e', '#fbefd9'],
-	col: ['#2b1a0e', '#a4243b', '#0f7f81', '#f2b84b', '#fffaf0'],
-	yildiz: ['#0e1a3d', '#5a189a', '#9d4edd', '#ffd23f', '#fff3c4'],
-	morioh: ['#1d1a33', '#7b4bd6', '#ff3d8b', '#9ff0d4', '#fbfffd'],
-	okyanus: ['#08262e', '#1f6f8b', '#4cc9f0', '#b5ff3b', '#eafff9'],
-	denizci: ['#0f1e45', '#1d3fa6', '#e63946', '#9cc8ff', '#ffffff'],
-};
-const channel = (hexes: string[], i: number) => hexes.map(h => (parseInt(h.slice(1 + i * 2, 3 + i * 2), 16) / 255).toFixed(3)).join(' ');
-const posterFilters = Object.entries(POSTER).map(([id, hexes]) => ({ id, r: channel(hexes, 0), g: channel(hexes, 1), b: channel(hexes, 2) }));
 ---
 
 <!doctype html>
@@ -133,22 +113,6 @@ const posterFilters = Object.entries(POSTER).map(([id, hexes]) => ({ id, r: chan
 	<body>
 		<svg class="sr-only" aria-hidden="true" focusable="false">
 			<defs>
-				{posterFilters.map(f => (
-					<filter id={`poster-${f.id}`} x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
-						<feGaussianBlur stdDeviation="0.7" />
-						<feColorMatrix type="matrix" values="0.3 0.59 0.11 0 0  0.3 0.59 0.11 0 0  0.3 0.59 0.11 0 0  0 0 0 1 0" />
-						<feComponentTransfer>
-							<feFuncR type="linear" slope="1.3" intercept="-0.12" />
-							<feFuncG type="linear" slope="1.3" intercept="-0.12" />
-							<feFuncB type="linear" slope="1.3" intercept="-0.12" />
-						</feComponentTransfer>
-						<feComponentTransfer>
-							<feFuncR type="discrete" tableValues={f.r} />
-							<feFuncG type="discrete" tableValues={f.g} />
-							<feFuncB type="discrete" tableValues={f.b} />
-						</feComponentTransfer>
-					</filter>
-				))}
 				<!-- Manşet görselinin etrafındaki dalgalı aura -->
 				<filter id="aura" x="-25%" y="-25%" width="150%" height="150%">
 					<feTurbulence type="fractalNoise" baseFrequency="0.011 0.028" numOctaves="2" seed="4" result="noise">

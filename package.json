@@ -12,7 +12,8 @@
     "astro": "astro",
     "pipeline": "tsx scripts/pipeline.ts",
     "pipeline:mock": "tsx scripts/pipeline.ts --mock",
-    "test": "vitest run"
+    "test": "vitest run",
+    "fix-images": "tsx scripts/fix-images.ts"
   },
   "dependencies": {
     "@google/genai": "2.28.0",

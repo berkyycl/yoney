@@ -1,10 +1,10 @@
 /**
- * Model parametre kartı: altı eksenli altıgen tablo ve A–E notları.
+ * Model parametre kartı: altı eksenli altıgen tablo.
+ * Her eksende modelin LMArena puanı (ELO) ve o sıralamadaki yeri gösterilir;
+ * altıgenin şekli sıralamadaki konuma göre çizilir (ilk sıra en dışta).
  * Hem sunucuda (Astro, set:html) hem tarayıcıda (karşılaştırma sayfası)
  * kullanıldığı için Node'a özgü hiçbir şey içe aktarmaz.
  */
-
-export type Grade = 'A' | 'B' | 'C' | 'D' | 'E' | '?';
 
 export interface Axis {
 	id: string;
@@ -23,12 +23,12 @@ export const AXES: Axis[] = [
 	{ id: 'gorme', label: 'Görme', short: 'Görme', bench: ['lmarena-vision'] },
 ];
 
-export const GRADE_VALUE: Record<Grade, number> = { A: 5, B: 4, C: 3, D: 2, E: 1, '?': 0 };
-
 export interface AxisResult {
-	grade: Grade;
+	/** O eksendeki en iyi puan (yoksa null) */
 	score: number | null;
+	/** Sıralamadaki yeri (1 en iyi) */
 	rank: number | null;
+	/** O eksende sıralanan model sayısı */
 	total: number;
 }
 
@@ -37,20 +37,19 @@ export interface StandCard {
 	name: string;
 	provider: string | null;
 	axes: Record<string, AxisResult>;
-	/** Notların toplamı (sıralama için) */
+	/** Eksenlerdeki konumların toplamı (sıralama için) */
 	power: number;
+	/** Verisi olan eksen sayısı */
 	known: number;
 }
 
-/** Sıralamadaki yüzdelik konuma göre not: ilk %10 A, %10–30 B, %30–55 C, %55–80 D, gerisi E */
-export function gradeFor(rank: number, total: number): Grade {
-	const p = (rank - 1) / Math.max(1, total);
-	if (p < 0.1) return 'A';
-	if (p < 0.3) return 'B';
-	if (p < 0.55) return 'C';
-	if (p < 0.8) return 'D';
-	return 'E';
+/** Sıralamadaki konum: 1 = birinci, 0 = sonuncu ya da veri yok */
+export function standing(r: AxisResult | undefined): number {
+	if (!r || r.rank == null || r.total <= 1) return r && r.rank === 1 ? 1 : 0;
+	return 1 - (r.rank - 1) / (r.total - 1);
 }
+
+export const fmtScore = (n: number | null) => (n == null ? '—' : Math.round(n).toLocaleString('tr-TR'));
 
 const esc = (s: unknown) => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]!));
 
@@ -62,12 +61,12 @@ export interface ChartSeries {
 
 /**
  * Altıgen tablo SVG'si. Bir ya da iki seri çizilebilir (karşılaştırma).
- * Notlar yalnızca ilk seri için köşelerdeki dairelerde yazılır.
+ * Köşelerde ilk serinin puanı ve sırası yazar.
  */
 export function standSvg(series: ChartSeries[], opts: { size?: number; labels?: boolean; title?: string } = {}): string {
 	const size = opts.size ?? 300;
 	const labels = opts.labels ?? true;
-	const pad = labels ? 62 : 14;
+	const pad = labels ? 64 : 14;
 	const R = size / 2 - pad;
 	const cx = size / 2, cy = size / 2;
 	const pt = (i: number, r: number) => {
@@ -77,7 +76,7 @@ export function standSvg(series: ChartSeries[], opts: { size?: number; labels?: 
 	const poly = (r: (i: number) => number) => AXES.map((_, i) => pt(i, r(i)).map(n => n.toFixed(1)).join(',')).join(' ');
 
 	let out = `<svg class="stand-svg" viewBox="0 0 ${size} ${size}" role="img" aria-label="${esc(opts.title ?? 'Parametre tablosu')}">`;
-	// Halkalar (E..A)
+	// Halkalar
 	for (let lv = 5; lv >= 1; lv--) {
 		out += `<polygon class="st-ring${lv === 5 ? ' st-outer' : ''}" points="${poly(() => (R * lv) / 5)}"/>`;
 	}
@@ -86,20 +85,24 @@ export function standSvg(series: ChartSeries[], opts: { size?: number; labels?: 
 		const [x, y] = pt(i, R);
 		out += `<line class="st-spoke" x1="${cx}" y1="${cy}" x2="${x.toFixed(1)}" y2="${y.toFixed(1)}"/>`;
 	});
-	// Seriler
+	// Seriler: sıralamada üstte olan eksen dışa doğru uzar
 	series.forEach((s, si) => {
-		const v = (i: number) => (R * Math.max(0.35, GRADE_VALUE[s.card.axes[AXES[i].id]?.grade ?? '?'])) / 5;
+		const v = (i: number) => {
+			const r = s.card.axes[AXES[i].id];
+			return r?.score == null ? R * 0.12 : R * (0.22 + 0.78 * standing(r));
+		};
 		out += `<polygon class="st-shape st-shape-${si}" style="--sc:${s.color}" points="${poly(v)}"/>`;
 	});
-	// Etiketler ve notlar
+	// Köşelerde puan ve sıra
 	if (labels) {
 		const first = series[0]?.card;
 		AXES.forEach((ax, i) => {
-			const [lx, ly] = pt(i, R + 34);
-			const grade = first?.axes[ax.id]?.grade ?? '?';
-			out += `<g class="st-label"><circle cx="${lx.toFixed(1)}" cy="${(ly - 8).toFixed(1)}" r="15"/>` +
-				`<text class="st-grade" x="${lx.toFixed(1)}" y="${(ly - 8).toFixed(1)}" dy="0.36em">${grade}</text>` +
-				`<text class="st-axis" x="${lx.toFixed(1)}" y="${(ly + 20).toFixed(1)}">${esc(ax.short)}</text></g>`;
+			const [lx, ly] = pt(i, R + 36);
+			const r = first?.axes[ax.id];
+			const top = r?.rank === 1 ? ' st-top' : '';
+			out += `<g class="st-label${top}"><rect x="${(lx - 26).toFixed(1)}" y="${(ly - 22).toFixed(1)}" width="52" height="24" rx="3"/>` +
+				`<text class="st-score" x="${lx.toFixed(1)}" y="${(ly - 10).toFixed(1)}" dy="0.36em">${fmtScore(r?.score ?? null)}</text>` +
+				`<text class="st-axis" x="${lx.toFixed(1)}" y="${(ly + 15).toFixed(1)}">${esc(ax.short)}${r?.rank ? ` #${r.rank}` : ''}</text></g>`;
 		});
 	}
 	out += '</svg>';

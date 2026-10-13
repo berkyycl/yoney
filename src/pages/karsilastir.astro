@@ -77,29 +77,39 @@ const payload = JSON.stringify({ benches, scores, stands, names: Object.fromEntr
 		) : (
 			<>
 				<div class="vs">
-					<label class="fighter fighter-a">
+					<div class="fighter fighter-a">
 						<span class="fighter-tag">Model A</span>
 						<span class="fighter-name" id="nameA" aria-hidden="true"></span>
-						<select class="field" id="selA">
+						<select class="field" id="selA" aria-label="Model A">
 							{groups.map(g => (
 								<optgroup label={g.p}>
 									{g.items.map(m => <option value={m.k} selected={m.k === defA}>{m.name} ({m.n} test)</option>)}
 								</optgroup>
 							))}
 						</select>
-					</label>
+						<div class="combo">
+							<svg class="combo-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+							<input class="combo-input" id="findA" type="text" role="combobox" aria-label="Model A ara" aria-expanded="false" aria-controls="listA" aria-autocomplete="list" placeholder="Model ara (ör. Claude, GPT, Qwen)" autocomplete="off" spellcheck="false" />
+							<ul class="combo-list" id="listA" role="listbox" aria-label="Model A önerileri" hidden></ul>
+						</div>
+					</div>
 					<button class="vs-mark" id="swap" type="button" aria-label="Modellerin yerini değiştir" title="Yer değiştir">VS</button>
-					<label class="fighter fighter-b">
+					<div class="fighter fighter-b">
 						<span class="fighter-tag">Model B</span>
 						<span class="fighter-name" id="nameB" aria-hidden="true"></span>
-						<select class="field" id="selB">
+						<select class="field" id="selB" aria-label="Model B">
 							{groups.map(g => (
 								<optgroup label={g.p}>
 									{g.items.map(m => <option value={m.k} selected={m.k === defB}>{m.name} ({m.n} test)</option>)}
 								</optgroup>
 							))}
 						</select>
-					</label>
+						<div class="combo">
+							<svg class="combo-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+							<input class="combo-input" id="findB" type="text" role="combobox" aria-label="Model B ara" aria-expanded="false" aria-controls="listB" aria-autocomplete="list" placeholder="Model ara (ör. Claude, GPT, Qwen)" autocomplete="off" spellcheck="false" />
+							<ul class="combo-list" id="listB" role="listbox" aria-label="Model B önerileri" hidden></ul>
+						</div>
+					</div>
 				</div>
 
 				{quick.length > 0 && (
@@ -113,7 +123,7 @@ const payload = JSON.stringify({ benches, scores, stands, names: Object.fromEntr
 					<div class="duel-chart" id="duelChart"></div>
 					<div class="duel-side">
 						<h2 class="duel-title">Parametreler</h2>
-						<p class="duel-note">LMArena sıralamalarına göre: ilk %10 <strong>A</strong> … son dilim <strong>E</strong>, veri yoksa <strong>?</strong></p>
+						<p class="duel-note">LMArena puanları (ELO); her eksende önde olan vurgulanır, altında sıralamadaki yeri yazar.</p>
 						<table class="duel-grades">
 							<thead><tr><th>Eksen</th><th class="ga">A</th><th class="gb">B</th></tr></thead>
 							<tbody id="duelGrades"></tbody>
@@ -139,7 +149,7 @@ const payload = JSON.stringify({ benches, scores, stands, names: Object.fromEntr
 
 <script>
 	import { esc, fmtScore } from '../lib/leaderboard';
-	import { AXES, standSvg, type StandCard } from '../lib/standChart';
+	import { AXES, fmtScore as fmtElo, standSvg, type StandCard } from '../lib/standChart';
 
 	interface Bench { id: string; name: string; category: string; unit: string; hib: boolean; lo: number; hi: number }
 	interface Best { s: number; v: string; st: string | null; src: string; u: string | null }
@@ -165,6 +175,83 @@ const payload = JSON.stringify({ benches, scores, stands, names: Object.fromEntr
 		const duelGrades = document.getElementById('duelGrades')!;
 		const nameAEl = document.getElementById('nameA')!;
 		const nameBEl = document.getElementById('nameB')!;
+
+		// Yazarak model arama: listede ad ya da sağlayıcı adına göre süzülür
+		const norm = (t: string) => t.toLocaleLowerCase('tr-TR').replace(/[\s\-_.]+/g, '');
+		function setupCombo(sel: HTMLSelectElement, x: 'A' | 'B') {
+			const input = document.getElementById(`find${x}`) as HTMLInputElement | null;
+			const list = document.getElementById(`list${x}`) as HTMLUListElement | null;
+			if (!input || !list) return { sync() {} };
+			const opts = Array.from(sel.options).map(o => ({
+				value: o.value,
+				name: (o.textContent ?? '').replace(/\s*\(\d+ test\)\s*$/, ''),
+				group: o.parentElement instanceof HTMLOptGroupElement ? o.parentElement.label : '',
+			}));
+			const current = () => opts.find(o => o.value === sel.value)?.name ?? '';
+			let shown: typeof opts = [];
+			let active = -1;
+
+			const open = () => { list.hidden = false; input.setAttribute('aria-expanded', 'true'); };
+			const close = () => {
+				list.hidden = true;
+				input.setAttribute('aria-expanded', 'false');
+				input.removeAttribute('aria-activedescendant');
+			};
+			const mark = () => {
+				Array.from(list.children).forEach((li, i) => li.setAttribute('aria-selected', String(i === active)));
+				const li = list.children[active] as HTMLElement | undefined;
+				if (li?.id) {
+					input.setAttribute('aria-activedescendant', li.id);
+					li.scrollIntoView({ block: 'nearest' });
+				}
+			};
+			const draw = (all = false) => {
+				const q = all ? '' : norm(input.value);
+				shown = (q ? opts.filter(o => norm(`${o.name} ${o.group}`).includes(q)) : opts).slice(0, 60);
+				active = shown.length ? 0 : -1;
+				list.innerHTML = shown.length
+					? shown.map((o, i) => `<li role="option" id="list${x}-${i}" data-i="${i}"><span>${esc(o.name)}</span><small>${esc(o.group)}</small></li>`).join('')
+					: '<li class="combo-empty" role="option" aria-disabled="true">Eşleşen model yok</li>';
+				open();
+				mark();
+			};
+			const choose = (i: number) => {
+				const o = shown[i];
+				if (!o) return;
+				sel.value = o.value;
+				input.value = o.name;
+				close();
+				sel.dispatchEvent(new Event('change'));
+			};
+
+			input.addEventListener('focus', () => { input.select(); draw(true); });
+			input.addEventListener('input', () => draw());
+			input.addEventListener('keydown', e => {
+				if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+					e.preventDefault();
+					if (list.hidden) return draw(true);
+					if (!shown.length) return;
+					active = (active + (e.key === 'ArrowDown' ? 1 : -1) + shown.length) % shown.length;
+					mark();
+				} else if (e.key === 'Enter' && !list.hidden && active >= 0) {
+					e.preventDefault();
+					choose(active);
+				} else if (e.key === 'Escape') {
+					close();
+					input.value = current();
+				}
+			});
+			input.addEventListener('blur', () => setTimeout(() => { close(); input.value = current(); }, 120));
+			// Tıklamada odak alanda kalsın, seçim yapılsın
+			list.addEventListener('mousedown', e => {
+				e.preventDefault();
+				const li = (e.target as Element).closest<HTMLElement>('li[data-i]');
+				if (li) choose(Number(li.dataset.i));
+			});
+			return { sync() { if (document.activeElement !== input) input.value = current(); } };
+		}
+		const comboA = setupCombo(selA, 'A');
+		const comboB = setupCombo(selB, 'B');
 
 		const width = (b: Bench, v: number) => {
 			const pct = ((v - b.lo) / ((b.hi - b.lo) || 1)) * 100;
@@ -198,9 +285,13 @@ const payload = JSON.stringify({ benches, scores, stands, names: Object.fromEntr
 			const svg = duelChart.querySelector('svg');
 			if (svg) requestAnimationFrame(() => requestAnimationFrame(() => svg.classList.add('live')));
 			duelGrades.innerHTML = AXES.map(ax => {
-				const ga = sa?.axes[ax.id]?.grade ?? '?';
-				const gb = sb?.axes[ax.id]?.grade ?? '?';
-				return `<tr><td>${esc(ax.label)}</td><td class="ga" data-g="${ga}">${ga}</td><td class="gb" data-g="${gb}">${gb}</td></tr>`;
+				const ra = sa?.axes[ax.id], rb = sb?.axes[ax.id];
+				const va = ra?.score ?? null, vb = rb?.score ?? null;
+				const winA = va != null && (vb == null || va > vb);
+				const winB = vb != null && (va == null || vb > va);
+				const cell = (cls: string, r: typeof ra, win: boolean) =>
+					`<td class="${cls}${win ? ' win' : ''}${r?.score == null ? ' none' : ''}"><strong>${fmtElo(r?.score ?? null)}</strong><small>${r?.rank ? `${r.rank}. / ${r.total}` : 'veri yok'}</small></td>`;
+				return `<tr><td>${esc(ax.label)}</td>${cell('ga', ra, winA)}${cell('gb', rb, winB)}</tr>`;
 			}).join('');
 		}
 
@@ -210,6 +301,8 @@ const payload = JSON.stringify({ benches, scores, stands, names: Object.fromEntr
 			const nameA = data.names[a]?.name ?? a, nameB = data.names[bKey]?.name ?? bKey;
 			nameAEl.textContent = nameA;
 			nameBEl.textContent = nameB;
+			comboA.sync();
+			comboB.sync();
 			let winsA = 0, winsB = 0, common = 0;
 			const html: string[] = [];
 			for (const b of data.benches) {
@@ -287,7 +380,10 @@ const payload = JSON.stringify({ benches, scores, stands, names: Object.fromEntr
 		box-shadow: 12px 12px 0 var(--shadow);
 	}
 
+	/* Çapraz kesim arka planda; açılan öneri listesi kesilmesin */
 	.fighter {
+		position: relative;
+		isolation: isolate;
 		display: flex;
 		flex-direction: column;
 		gap: 12px;
@@ -297,21 +393,136 @@ const payload = JSON.stringify({ benches, scores, stands, names: Object.fromEntr
 		color: var(--on-a2);
 	}
 
+	.fighter::before {
+		content: '';
+		position: absolute;
+		inset: 0;
+		z-index: -1;
+		background: var(--fighter-bg);
+	}
+
 	.fighter-a {
-		background: var(--series-a);
-		clip-path: polygon(0 0, 100% 0, calc(100% - 40px) 100%, 0 100%);
+		--fighter-bg: var(--series-a);
 		padding-right: 70px;
 	}
 
+	.fighter-a::before {
+		clip-path: polygon(0 0, 100% 0, calc(100% - 40px) 100%, 0 100%);
+	}
+
 	.fighter-b {
+		--fighter-bg: var(--series-b);
 		grid-column: 3;
 		align-items: flex-end;
 		text-align: right;
-		background: var(--series-b);
 		color: var(--on-a1);
 		margin-left: -40px;
 		padding-left: 80px;
+	}
+
+	.fighter-b::before {
 		clip-path: polygon(40px 0, 100% 0, 100% 100%, 0 100%);
+	}
+
+	/* ---------- Yazarak model arama ---------- */
+	.combo {
+		position: relative;
+		display: none;
+		width: 100%;
+		max-width: 420px;
+		z-index: 5;
+	}
+
+	:global(.js) .combo {
+		display: block;
+	}
+
+	:global(.js) .fighter select {
+		display: none;
+	}
+
+	.combo-icon {
+		position: absolute;
+		top: 50%;
+		left: 13px;
+		transform: translateY(-50%);
+		color: #170f33;
+		pointer-events: none;
+	}
+
+	.combo-input {
+		width: 100%;
+		height: 48px;
+		padding: 0 14px 0 40px;
+		border: 2px solid currentColor;
+		border-radius: 0;
+		background: rgba(255, 255, 255, 0.94);
+		color: #170f33;
+		font: inherit;
+		font-size: 0.98rem;
+		font-weight: 700;
+	}
+
+	.combo-input::placeholder {
+		color: #6b6280;
+		font-weight: 500;
+	}
+
+	.combo-input:focus {
+		outline: none;
+		box-shadow: 5px 5px 0 var(--shadow);
+	}
+
+	.combo-list {
+		position: absolute;
+		top: calc(100% + 6px);
+		left: 0;
+		right: 0;
+		z-index: 30;
+		max-height: 320px;
+		overflow-y: auto;
+		margin: 0;
+		padding: 6px 0;
+		list-style: none;
+		background: var(--surface);
+		color: var(--text);
+		border: 2px solid var(--line);
+		box-shadow: 8px 8px 0 var(--shadow);
+		text-align: left;
+	}
+
+	.combo-list :global(li) {
+		display: flex;
+		align-items: baseline;
+		justify-content: space-between;
+		gap: 10px;
+		padding: 9px 14px;
+		font-size: 0.92rem;
+		font-weight: 700;
+		cursor: pointer;
+	}
+
+	.combo-list :global(li small) {
+		flex-shrink: 0;
+		color: var(--muted);
+		font-size: 0.72rem;
+		font-weight: 600;
+	}
+
+	.combo-list :global(li[aria-selected='true']),
+	.combo-list :global(li[data-i]:hover) {
+		background: var(--a1);
+		color: var(--on-a1);
+	}
+
+	.combo-list :global(li[aria-selected='true'] small),
+	.combo-list :global(li[data-i]:hover small) {
+		color: inherit;
+	}
+
+	.combo-list :global(.combo-empty) {
+		color: var(--muted);
+		cursor: default;
 	}
 
 	.fighter-tag {
@@ -482,16 +693,29 @@ const payload = JSON.stringify({ benches, scores, stands, names: Object.fromEntr
 
 	.duel-grades :global(td.ga),
 	.duel-grades :global(td.gb) {
-		width: 64px;
-		font-family: var(--font-display);
-		font-size: 1.5rem;
-		font-weight: 400;
+		width: 92px;
 		text-align: center;
+		line-height: 1.05;
 	}
 
-	.duel-grades :global(td.ga) { color: var(--series-a); }
-	.duel-grades :global(td.gb) { color: var(--series-b); }
-	.duel-grades :global(td[data-g='?']) { color: var(--muted); }
+	.duel-grades :global(td strong) {
+		display: block;
+		color: var(--text-2);
+		font-family: var(--font-display);
+		font-size: 1.3rem;
+		font-weight: 400;
+		font-variant-numeric: tabular-nums;
+	}
+
+	.duel-grades :global(td small) {
+		color: var(--muted);
+		font-size: 0.66rem;
+		font-weight: 700;
+	}
+
+	.duel-grades :global(td.ga.win strong) { color: var(--series-a); }
+	.duel-grades :global(td.gb.win strong) { color: var(--series-b); }
+	.duel-grades :global(td.none strong) { color: var(--muted); }
 
 	/* ---------- Skor tabelası ---------- */
 	.summary {
@@ -675,8 +899,11 @@ const payload = JSON.stringify({ benches, scores, stands, names: Object.fromEntr
 			grid-column: 1;
 			margin: 0;
 			padding: 22px 20px;
-			clip-path: none;
 			min-height: 0;
+		}
+		.fighter-a::before,
+		.fighter-b::before {
+			clip-path: none;
 		}
 		.fighter-a {
 			padding-bottom: 54px;

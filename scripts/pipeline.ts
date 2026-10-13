@@ -5,6 +5,7 @@ import axios from 'axios';
 import FeedParser from 'feedparser';
 import { JSDOM } from 'jsdom';
 import { FallbackLLMProvider } from './llm/fallback.js';
+import { pickImage } from './images.js';
 import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -115,27 +116,6 @@ async function fetchFullArticleAndMeta(url: string): Promise<{ text: string; ima
     }
 
     return { text: "" };
-}
-
-async function searchImageWithTavily(query: string): Promise<string | null> {
-    const apiKey = process.env.TAVILY_API_KEY;
-    if (!apiKey) return null;
-    try {
-        const res = await axios.post('https://api.tavily.com/search', {
-            api_key: apiKey,
-            query: query.substring(0, 200),
-            include_images: true,
-            max_results: 3
-        }, { timeout: 8000 });
-        if (res.data && res.data.images && res.data.images.length > 0) {
-            for (const img of res.data.images) {
-                if (typeof img === 'string' && img.startsWith('http')) return img;
-            }
-        }
-    } catch (e) {
-        // Tavily image lookup failed silently
-    }
-    return null;
 }
 
 const delay = (ms: number) => new Promise(res => setTimeout(res, ms));
@@ -365,7 +345,8 @@ export async function runPipeline(isMock = false) {
             analyzedFromSource++;
             try {
                 let fullText = text;
-                let imageUrl = extractImageFromRSS(item) || undefined;
+                // Görsel adayları: önce RSS, sonra sayfanın og:image'ı (yazmadan önce doğrulanır)
+                const imageCandidates: (string | null | undefined)[] = [extractImageFromRSS(item)];
 
                 // Web sayfasından tam metin ve görsel meta etiketini çek
                 try {
@@ -373,9 +354,7 @@ export async function runPipeline(isMock = false) {
                     if (crawled.text && crawled.text.length > fullText.length) {
                         fullText = crawled.text;
                     }
-                    if (!imageUrl && crawled.imageUrl) {
-                        imageUrl = crawled.imageUrl;
-                    }
+                    imageCandidates.push(crawled.imageUrl);
                 } catch (crawlErr: any) {
                     console.warn(`    Crawl failed for ${item.link}: ${crawlErr.message}`);
                 }
@@ -418,12 +397,9 @@ export async function runPipeline(isMock = false) {
                 }
                 result.benchmarklar = validBenchmarks;
 
-                if (!imageUrl) {
-                    try {
-                        const tavilyImg = await searchImageWithTavily(`${item.title} artificial intelligence`);
-                        if (tavilyImg) imageUrl = tavilyImg;
-                    } catch { /* image search failed */ }
-                }
+                // İlk gerçekten görsel olan adres; yoksa okuyucu vekil ve Tavily denenir
+                imageCandidates.push(...(result.gorseller ?? []));
+                const imageUrl = await pickImage(imageCandidates, item.link, `${item.title} artificial intelligence`);
 
                 // Aynı dosya adı başka bir habere aitse sonuna -2, -3 ... ekle
                 const baseSlug = makeSlug(item.title);
@@ -434,7 +410,7 @@ export async function runPipeline(isMock = false) {
 
                 const article = {
                     ...result,
-                    gorsel_url: imageUrl || (result.gorseller && result.gorseller.length > 0 ? result.gorseller[0] : null),
+                    gorsel_url: imageUrl,
                     url: item.link,
                     source: source.name,
                     sourceTier: source.tier,

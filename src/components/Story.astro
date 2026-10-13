@@ -1,21 +1,27 @@
 ---
 /**
  * Haber kutusu. Görünümler:
- *  card   kart (üstte poster görsel, başlık, özet, açılır "Özetle")
- *  big    büyük kart (ızgarada iki sütun)
- *  row    liste satırı (solda görsel)
- *  brief  kısa haber (görselsiz)
- *  mini   numaralı kısa liste öğesi
- * Görsel iki kat çizilir: üstteki kopya paletin renk alanlarına ayrılmış
- * posterdir; fare üstüne gelince alttaki gerçek renkli fotoğraf görünür.
+ *  card     kart (üstte poster görsel, başlık, özet, açılır "Özetle")
+ *  big      büyük yatay kart (bölüm sayfası manşeti)
+ *  feature  gazete dilimindeki öne çıkan haber (büyük görsel, serif başlık, özet)
+ *  compact  küçük görsel + serif başlık
+ *  text     görselsiz başlık + kısa özet
+ *  wide     solda görsel, sağda başlık ve özet
+ *  row      liste satırı: solda metin, sağda küçük görsel
+ *  brief    kısa haber (yalnızca başlık)
+ *  mini     numaralı kısa liste öğesi
+ * Görseli olmayan ya da yüklenemeyen haberde bölüm renklerinden bir kompozisyon görünür.
  */
 import Art from './Art.astro';
 import { categoryOf, getCategory } from '../lib/categories';
 import { sourceLabel } from '../lib/articles';
+import { parseModelName } from '../lib/models';
+
+type Variant = 'card' | 'big' | 'feature' | 'compact' | 'text' | 'wide' | 'row' | 'brief' | 'mini';
 
 interface Props {
 	article: any;
-	variant?: 'card' | 'big' | 'row' | 'brief' | 'mini';
+	variant?: Variant;
 	hidden?: boolean;
 	eager?: boolean;
 	delay?: number;
@@ -25,11 +31,17 @@ const { article: a, variant = 'card', hidden = false, eager = false, delay } = A
 const cat = getCategory(categoryOf(a));
 const day = new Date(a.date).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', timeZone: 'Europe/Istanbul' });
 const href = `/haber/${a.slug}`;
-const hasMedia = variant === 'card' || variant === 'big' || variant === 'row';
-const hasSummary = variant === 'card' || variant === 'big' || variant === 'row';
-const points: string[] = (a.onemli_maddeler ?? []).slice(0, 3);
+const MEDIA: Variant[] = ['card', 'big', 'feature', 'compact', 'wide', 'row'];
+const SUMMARY: Variant[] = ['card', 'big', 'feature', 'wide', 'row', 'text'];
+const POINTS: Variant[] = ['card', 'big', 'feature', 'wide'];
+const CHIP: Variant[] = ['card', 'big', 'feature', 'wide'];
+const hasMedia = MEDIA.includes(variant);
+const hasSummary = SUMMARY.includes(variant);
+const points: string[] = POINTS.includes(variant) ? (a.onemli_maddeler ?? []).slice(0, 3) : [];
 const scoreCount = a.benchmarklar?.length ?? 0;
-const onError = "this.parentElement.querySelectorAll('img').forEach(function(i){i.remove()})";
+// Görsel yoksa kapak afişinde: haberin konu ettiği ilk (sürüm numaralı) model, yoksa kaynak adı
+const modelName = (a.anilan_modeller ?? []).map(String).find((n: string) => /\d/.test(n));
+const coverLabel = modelName ? parseModelName(modelName).base : sourceLabel(a.source);
 ---
 
 <article
@@ -41,23 +53,22 @@ const onError = "this.parentElement.querySelectorAll('img').forEach(function(i){
 >
 	{hasMedia && (
 		<a class="story-media poster tilt" href={href} tabindex="-1" aria-hidden="true">
-			<Art cat={cat.id} seed={a.slug} />
+			<Art cat={cat.id} seed={a.slug} label={coverLabel} />
 			{a.gorsel_url && (
-				<>
-					<img class="img-true" src={a.gorsel_url} alt="" loading={eager ? 'eager' : 'lazy'} decoding="async" referrerpolicy="no-referrer" onerror={onError} />
-					<img class="img-poster" src={a.gorsel_url} alt="" loading={eager ? 'eager' : 'lazy'} decoding="async" referrerpolicy="no-referrer" />
-				</>
+				<img src={a.gorsel_url} alt="" loading={eager ? 'eager' : 'lazy'} decoding="async" referrerpolicy="no-referrer" onerror="this.remove()" />
 			)}
 			<span class="shine"></span>
 		</a>
 	)}
 	<div class="story-body">
-		{variant !== 'mini' && (
+		{CHIP.includes(variant) ? (
 			<a class="chip" href={`/kategori/${cat.id}`} data-cat={cat.id}><span><span class="num">{cat.numeral}</span> {cat.name}</span></a>
+		) : variant !== 'mini' && (
+			<a class="kicker" href={`/kategori/${cat.id}`} data-cat={cat.id}>{cat.name}</a>
 		)}
 		<h3 class="story-title"><a href={href}>{a.baslik_tr}</a></h3>
 		{hasSummary && <p class="story-summary">{a.ozet_tr}</p>}
-		{hasSummary && points.length > 0 && (
+		{points.length > 0 && (
 			<details class="story-points">
 				<summary>Özetle <span>{points.length} madde</span></summary>
 				<ol>
@@ -115,15 +126,27 @@ const onError = "this.parentElement.querySelectorAll('img').forEach(function(i){
 		color: var(--text);
 		text-decoration: none;
 		background-image: linear-gradient(var(--a1), var(--a1));
-		background-size: 0 0.14em;
-		background-position: 0 92%;
+		background-size: 0 0.12em;
+		background-position: 0 94%;
 		background-repeat: no-repeat;
 		transition: background-size 0.35s var(--ease-out);
 	}
 
 	.story-title a:hover,
 	.story-title a:focus-visible {
-		background-size: 100% 0.14em;
+		background-size: 100% 0.12em;
+	}
+
+	/* Gazete dilimlerinde serif başlık */
+	.story-feature .story-title,
+	.story-compact .story-title,
+	.story-text .story-title,
+	.story-wide .story-title,
+	.story-row .story-title {
+		font-family: var(--font-serif);
+		font-weight: 800;
+		line-height: 1.14;
+		letter-spacing: -0.01em;
 	}
 
 	.story-summary {
@@ -135,6 +158,32 @@ const onError = "this.parentElement.querySelectorAll('img').forEach(function(i){
 		-webkit-line-clamp: 3;
 		-webkit-box-orient: vertical;
 		overflow: hidden;
+	}
+
+	/* Bölüm adı: renkli küçük büyük harfler (gazete üst başlığı gibi) */
+	.kicker {
+		display: inline-flex;
+		align-items: center;
+		gap: 7px;
+		color: var(--c);
+		font-size: 0.68rem;
+		font-weight: 900;
+		font-stretch: 80%;
+		letter-spacing: 0.15em;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+
+	.kicker::before {
+		content: '';
+		width: 8px;
+		height: 8px;
+		background: var(--c);
+		transform: rotate(45deg);
+	}
+
+	.kicker:hover {
+		color: var(--text);
 	}
 
 	/* ---- Açılır "Özetle" ---- */
@@ -224,7 +273,7 @@ const onError = "this.parentElement.querySelectorAll('img').forEach(function(i){
 		gap: 2px 8px;
 		margin: 0;
 		color: var(--muted);
-		font-size: 0.72rem;
+		font-size: 0.7rem;
 		font-weight: 700;
 		font-stretch: 85%;
 		letter-spacing: 0.08em;
@@ -247,7 +296,7 @@ const onError = "this.parentElement.querySelectorAll('img').forEach(function(i){
 		gap: 22px;
 	}
 
-	/* ---- Büyük kart ---- */
+	/* ---- Büyük yatay kart ---- */
 	.story-big {
 		display: grid;
 		grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
@@ -271,22 +320,110 @@ const onError = "this.parentElement.querySelectorAll('img').forEach(function(i){
 		-webkit-line-clamp: 4;
 	}
 
-	/* ---- Liste satırı ---- */
+	/* ---- Öne çıkan (gazete dilimi) ---- */
+	.story-feature {
+		display: flex;
+		flex-direction: column;
+		gap: 22px;
+	}
+
+	.story-feature .story-media {
+		aspect-ratio: 3 / 2;
+		box-shadow: 10px 10px 0 var(--c);
+	}
+
+	.story-feature .story-title {
+		font-size: clamp(1.7rem, 3.2cqi, 2.5rem);
+		line-height: 1.06;
+	}
+
+	.story-feature .story-summary {
+		font-size: 1.04rem;
+		-webkit-line-clamp: 4;
+	}
+
+	/* ---- Kompakt ---- */
+	.story-compact {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+	}
+
+	.story-compact .story-media {
+		aspect-ratio: 16 / 10;
+		box-shadow: 6px 6px 0 var(--c);
+	}
+
+	.story-compact .story-body {
+		gap: 7px;
+	}
+
+	.story-compact .story-title {
+		font-size: 1.12rem;
+	}
+
+	/* ---- Metin ---- */
+	.story-text .story-body {
+		gap: 7px;
+	}
+
+	.story-text .story-title {
+		font-size: 1.12rem;
+	}
+
+	.story-text .story-summary {
+		font-size: 0.88rem;
+		-webkit-line-clamp: 2;
+	}
+
+	/* ---- Geniş ---- */
+	.story-wide {
+		display: grid;
+		grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+		gap: 28px;
+		align-items: center;
+	}
+
+	.story-wide .story-media {
+		aspect-ratio: 4 / 3;
+		box-shadow: 10px 10px 0 var(--c);
+	}
+
+	.story-wide .story-title {
+		font-size: clamp(1.5rem, 2.6cqi, 2.1rem);
+	}
+
+	.story-wide .story-summary {
+		-webkit-line-clamp: 4;
+	}
+
+	/* ---- Liste satırı: metin solda, küçük görsel sağda ---- */
 	.story-row {
 		display: grid;
-		grid-template-columns: minmax(0, 36%) minmax(0, 1fr);
-		gap: 26px;
-		padding: 24px 0;
+		grid-template-columns: minmax(0, 1fr) 132px;
+		gap: 20px;
+		padding: 20px 0;
 		border-bottom: 1px solid var(--rule);
 	}
 
 	.story-row .story-media {
-		aspect-ratio: 4 / 3;
-		box-shadow: 6px 6px 0 var(--c);
+		order: 2;
+		align-self: start;
+		aspect-ratio: 1;
+		box-shadow: 5px 5px 0 var(--c);
+	}
+
+	.story-row .story-body {
+		gap: 7px;
 	}
 
 	.story-row .story-title {
-		font-size: 1.45rem;
+		font-size: 1.2rem;
+	}
+
+	.story-row .story-summary {
+		font-size: 0.88rem;
+		-webkit-line-clamp: 2;
 	}
 
 	/* ---- Kısa haber ---- */
@@ -309,7 +446,8 @@ const onError = "this.parentElement.querySelectorAll('img').forEach(function(i){
 	}
 
 	@media (max-width: 760px) {
-		.story-big {
+		.story-big,
+		.story-wide {
 			grid-template-columns: 1fr;
 			gap: 22px;
 		}
@@ -317,20 +455,10 @@ const onError = "this.parentElement.querySelectorAll('img').forEach(function(i){
 
 	@media (max-width: 640px) {
 		.story-row {
-			grid-template-columns: minmax(0, 1fr) 108px;
-			gap: 16px;
-			padding: 20px 0;
+			grid-template-columns: minmax(0, 1fr) 96px;
+			gap: 14px;
 		}
-		.story-row .story-media {
-			order: 2;
-			aspect-ratio: 1;
-			box-shadow: 4px 4px 0 var(--c);
-		}
-		.story-row .story-title {
-			font-size: 1.2rem;
-		}
-		.story-row .story-summary,
-		.story-row .story-points {
+		.story-row .story-summary {
 			display: none;
 		}
 		.story-media {

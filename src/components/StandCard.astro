@@ -1,6 +1,6 @@
 ---
-/** Model parametre kartı: altıgen tablo + eksen notları */
-import { AXES, standSvg, type StandCard } from '../lib/standChart';
+/** Model parametre kartı: altıgen tablo + eksen eksen LMArena puanı ve sıra */
+import { AXES, fmtScore, standSvg, type StandCard } from '../lib/standChart';
 
 interface Props {
 	card: StandCard;
@@ -19,13 +19,16 @@ const svg = standSvg([{ card, color: 'var(--a2)' }], { size: 300, title: `${card
 	<div class="stand-info">
 		<p class="stand-tag">{rank ? <span class="stand-rank">#{rank}</span> : null}{card.provider ?? 'Sağlayıcı bilinmiyor'}</p>
 		<h3 class="stand-name">{card.name}</h3>
-		<dl class="stand-grades">
+		<dl class="stand-scores">
 			{AXES.map(ax => {
 				const r = card.axes[ax.id];
 				return (
-					<div title={r.rank ? `${r.total} model arasında ${r.rank}. sırada` : 'Bu eksende veri yok'}>
+					<div class:list={{ top: r.rank === 1, none: r.score == null }}>
 						<dt>{ax.label}</dt>
-						<dd data-g={r.grade}>{r.grade}</dd>
+						<dd>
+							<strong>{fmtScore(r.score)}</strong>
+							<small>{r.rank ? `${r.rank}. / ${r.total}` : 'veri yok'}</small>
+						</dd>
 					</div>
 				);
 			})}
@@ -90,19 +93,15 @@ const svg = standSvg([{ card, color: 'var(--a2)' }], { size: 300, title: `${card
 		text-shadow: 4px 4px 0 var(--a2);
 	}
 
-	.stand-grades {
+	/* Eksen eksen puan ve sıra */
+	.stand-scores {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		gap: 0 18px;
 		margin: 0;
 	}
 
-	.stand-small .stand-grades {
-		grid-template-columns: 1fr 1fr 1fr;
-		gap: 0 10px;
-	}
-
-	.stand-grades div {
+	.stand-scores div {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -111,31 +110,62 @@ const svg = standSvg([{ card, color: 'var(--a2)' }], { size: 300, title: `${card
 		border-bottom: 1px solid var(--rule);
 	}
 
-	.stand-grades dt {
+	.stand-scores dt {
 		color: var(--text-2);
 		font-size: 0.8rem;
 		font-weight: 700;
 	}
 
-	.stand-small .stand-grades dt {
-		font-size: 0.7rem;
-	}
-
-	.stand-grades dd {
+	.stand-scores dd {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
 		margin: 0;
-		font-family: var(--font-display);
-		font-size: 1.35rem;
-		line-height: 1;
-		color: var(--text);
+		line-height: 1.05;
 	}
 
-	.stand-grades dd[data-g='A'] { color: var(--a1); }
-	.stand-grades dd[data-g='?'] { color: var(--muted); }
+	.stand-scores strong {
+		font-family: var(--font-display);
+		font-size: 1.25rem;
+		font-weight: 400;
+		color: var(--text);
+		font-variant-numeric: tabular-nums;
+	}
+
+	.stand-scores small {
+		color: var(--muted);
+		font-size: 0.66rem;
+		font-weight: 700;
+	}
+
+	.stand-scores .top strong {
+		color: var(--a1);
+	}
+
+	.stand-scores .none strong {
+		color: var(--muted);
+	}
+
+	.stand-small .stand-scores {
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 0 10px;
+	}
+
+	.stand-small .stand-scores dt {
+		font-size: 0.68rem;
+	}
+
+	.stand-small .stand-scores strong {
+		font-size: 1.05rem;
+	}
 
 	@media (max-width: 760px) {
 		.stand-large {
 			grid-template-columns: 1fr;
 			gap: 20px;
+		}
+		.stand-small .stand-scores {
+			grid-template-columns: 1fr 1fr;
 		}
 	}
 </style>

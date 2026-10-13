@@ -6,7 +6,7 @@
  *        Yeni modeller (son model çıkışı haberleri)
  */
 import type { BenchmarkData, BenchEntry } from '../lib/benchmarks';
-import { parseModelName } from '../lib/models';
+import { modelMentions } from '../lib/mentions';
 import { fmtScore } from '../lib/leaderboard';
 import { categoryOf } from '../lib/categories';
 
@@ -45,25 +45,8 @@ const leaders = bench.benchmarks
 	.filter(x => x.top)
 	.slice(0, 7);
 
-// Gündemdeki modeller: son iki haftanın haberlerinde adı geçen, sürüm numaralı modeller
-const time = (a: any) => new Date(a.date).getTime();
-const newest = articles.length ? time(articles[0]) : 0;
-const mentions = new Map<string, { name: string; provider: string | null; count: number }>();
-for (const a of articles) {
-	if (newest - time(a) > 14 * 864e5) continue;
-	const inArticle = new Set<string>();
-	for (const raw of a.anilan_modeller ?? []) {
-		const name = String(raw);
-		if (!/\d/.test(name)) continue;
-		const p = parseModelName(name);
-		if (!p.key || inArticle.has(p.key)) continue;
-		inArticle.add(p.key);
-		const cur = mentions.get(p.key) ?? { name: p.base, provider: p.provider, count: 0 };
-		cur.count++;
-		mentions.set(p.key, cur);
-	}
-}
-const trending = [...mentions.values()].filter(m => m.count >= 2).sort((a, b) => b.count - a.count).slice(0, 8);
+// Gündemdeki modeller: son iki haftanın haberlerinde adı en çok geçen, sürüm numaralı modeller
+const trending = modelMentions(articles, 14).filter(m => m.count >= 2).slice(0, 8);
 const maxMentions = trending[0]?.count ?? 1;
 
 const launches = articles.filter(a => categoryOf(a) === 'model-cikisi').slice(0, 5);

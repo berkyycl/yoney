@@ -113,16 +113,13 @@ for (const a of others) {
 
 		<figure class="post-hero">
 			<div class="post-hero-media poster reveal-color tilt">
-				<Art cat={cat.id} seed={article.slug} />
+				<Art cat={cat.id} seed={article.slug} label={source} />
 				{article.gorsel_url && (
-					<>
-						<img class="img-true" src={article.gorsel_url} alt="" referrerpolicy="no-referrer" onerror="this.parentElement.querySelectorAll('img').forEach(function(i){i.remove()})" />
-						<img class="img-poster" src={article.gorsel_url} alt="" referrerpolicy="no-referrer" />
-					</>
+					<img src={article.gorsel_url} alt="" referrerpolicy="no-referrer" onerror="this.remove()" />
 				)}
 				<span class="shine"></span>
 			</div>
-			<figcaption>{article.gorsel_url ? <>Görsel: <span lang="en">{source}</span> · gerçek renkler için üstüne gelin</> : <>Bu haberin görseli yok; bölüm amblemi gösteriliyor.</>}</figcaption>
+			<figcaption>{article.gorsel_url ? <>Görsel: <span lang="en">{source}</span></> : <>Bu haberin görseli yok; bölüm amblemi gösteriliyor.</>}</figcaption>
 		</figure>
 
 		{points.length > 0 && (
@@ -174,7 +171,7 @@ for (const a of others) {
 				{stands.length > 0 && (
 					<section class="aside-block">
 						<h2 class="aside-title">Haberdeki modeller</h2>
-						<p class="aside-note">LMArena sıralamalarına göre parametreler (A en iyi, ? veri yok).</p>
+						<p class="aside-note">LMArena puanları (ELO) ve sıralamadaki yerleri.</p>
 						{stands.map(s => <StandCard card={s} />)}
 					</section>
 				)}

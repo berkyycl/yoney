@@ -1,11 +1,10 @@
 /**
  * Benchmark verisinden model parametre kartları üretir. Her eksen için
- * modellerin en iyi skorları sıralanır ve yüzdelik konuma göre A–E notu
- * verilir; o eksende verisi olmayan model "?" alır.
+ * modellerin en iyi puanları sıralanır; kartta puan ve sıra tutulur.
  */
 import type { BenchEntry } from './benchmarks';
 import { parseModelName } from './models';
-import { AXES, GRADE_VALUE, gradeFor, type StandCard } from './standChart';
+import { AXES, standing, type StandCard } from './standChart';
 
 export function buildStands(entries: BenchEntry[]): StandCard[] {
 	const cards = new Map<string, StandCard>();
@@ -27,16 +26,16 @@ export function buildStands(entries: BenchEntry[]): StandCard[] {
 				card = { key: e.key, name: e.model, provider: e.provider, axes: {}, power: 0, known: 0 };
 				cards.set(e.key, card);
 			}
-			card.axes[axis.id] = { grade: gradeFor(i + 1, ranked.length), score: e.score, rank: i + 1, total: ranked.length };
+			card.axes[axis.id] = { score: e.score, rank: i + 1, total: ranked.length };
 		});
 	}
 
 	for (const card of cards.values()) {
 		for (const axis of AXES) {
-			if (!card.axes[axis.id]) card.axes[axis.id] = { grade: '?', score: null, rank: null, total: 0 };
-			const g = card.axes[axis.id].grade;
-			card.power += GRADE_VALUE[g];
-			if (g !== '?') card.known++;
+			if (!card.axes[axis.id]) card.axes[axis.id] = { score: null, rank: null, total: 0 };
+			const r = card.axes[axis.id];
+			card.power += standing(r);
+			if (r.score != null) card.known++;
 		}
 	}
 

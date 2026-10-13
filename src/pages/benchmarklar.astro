@@ -54,7 +54,7 @@ const payload = JSON.stringify({ benches, entries }).replace(/</g, '\\u003c');
 					<h2 id="standsTitle">Parametre kartları</h2>
 					<span class="sec-line" aria-hidden="true"></span>
 				</div>
-				<p class="stands-note">Altı eksen, LMArena sıralamalarından: her eksende ilk %10 <strong>A</strong>, sonraki dilimler B, C, D, son dilim <strong>E</strong>; verisi olmayan eksen <strong>?</strong> Karşılaştırmak için <a href="/karsilastir">Karşılaştır</a> sayfasına geçin.</p>
+				<p class="stands-note">Altı eksen, LMArena sıralamalarından: her eksende modelin puanı (ELO) ve kaçıncı sırada olduğu. Altıgen ne kadar genişse model o kadar üstte. Karşılaştırmak için <a href="/karsilastir">Karşılaştır</a> sayfasına geçin.</p>
 				<div class="stand-grid">
 					{stands.map((s, i) => <StandCard card={s} rank={i + 1} />)}
 				</div>

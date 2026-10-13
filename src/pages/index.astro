@@ -9,8 +9,9 @@ import { loadArticles, sourceLabel } from '../lib/articles';
 import { loadBenchmarkData } from '../lib/benchmarks';
 import { buildStands } from '../lib/stands';
 import { NEWS_CATEGORIES, categoryOf, getCategory } from '../lib/categories';
+import { articleModelKeys, modelMentions } from '../lib/mentions';
 
-const PAGE = 9;
+const PAGE = 8;
 const articles = loadArticles();
 const time = (a: any) => new Date(a.date).getTime();
 
@@ -25,8 +26,37 @@ const ranked = editorial
 	.filter(a => a.gorsel_url && newest - time(a) < 3 * 864e5)
 	.sort((a, b) => (b.onem ?? 0) - (a.onem ?? 0) || time(b) - time(a));
 const lead = ranked[0] ?? editorial[0];
-const feed = editorial.filter(a => a !== lead);
 const leadCat = lead ? getCategory(categoryOf(lead)) : null;
+
+/*
+ * Popüler: okunma sayısı tutulmadığı için son 3 günün haberleri önem puanı,
+ * tazelik ve konu ettiği modellerin ne kadar konuşulduğuna göre sıralanır.
+ */
+const buzz = new Map(modelMentions(articles, 14).map(m => [m.key, m.count]));
+const popScore = (a: any) => {
+	const hours = (newest - time(a)) / 36e5;
+	const talk = articleModelKeys(a).reduce((s, k) => s + Math.min(buzz.get(k) ?? 0, 12), 0);
+	return (a.onem ?? 3) * 10 + Math.min(talk, 24) * 0.8 + (a.gorsel_url ? 2 : 0) - hours * 0.25;
+};
+const popular = articles
+	.filter(a => a !== lead && newest - time(a) < 3 * 864e5)
+	.sort((a, b) => popScore(b) - popScore(a))
+	.slice(0, 5);
+
+// Gazete dilimleri: görselli yerlere görselli haberler, başlık listelerine kalanlar
+const pool = editorial.filter(a => a !== lead && !popular.includes(a));
+const take = (needImage: boolean) => {
+	const i = needImage ? pool.findIndex(a => a.gorsel_url) : 0;
+	return i >= 0 && pool.length ? pool.splice(i, 1)[0] : null;
+};
+const many = (n: number, needImage: boolean) => Array.from({ length: n }, () => take(needImage)).filter(Boolean) as any[];
+const topFeature = take(true);
+const topMid = many(2, true);
+const topList = many(5, false);
+const strip = many(4, true);
+const wide = take(true);
+const wideList = many(4, false);
+const more = pool;
 const ticker = articles.slice(0, 10);
 
 const bench = loadBenchmarkData();
@@ -51,12 +81,9 @@ const leadDay = lead ? new Date(lead.date).toLocaleDateString('tr-TR', { day: 'n
 				<div class="hero-stage">
 					<div class="hero-aura" aria-hidden="true"></div>
 					<a class="hero-media poster reveal-color tilt" href={`/haber/${lead.slug}`} tabindex="-1" aria-hidden="true">
-						<Art cat={leadCat!.id} seed={lead.slug} />
+						<Art cat={leadCat!.id} seed={lead.slug} label={sourceLabel(lead.source)} />
 						{lead.gorsel_url && (
-							<>
-								<img class="img-true" src={lead.gorsel_url} alt="" decoding="async" referrerpolicy="no-referrer" onerror="this.parentElement.querySelectorAll('img').forEach(function(i){i.remove()})" />
-								<img class="img-poster" src={lead.gorsel_url} alt="" decoding="async" referrerpolicy="no-referrer" />
-							</>
+							<img src={lead.gorsel_url} alt="" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()" />
 						)}
 						<span class="shine"></span>
 					</a>
@@ -72,6 +99,28 @@ const leadDay = lead ? new Date(lead.date).toLocaleDateString('tr-TR', { day: 'n
 					</div>
 				</div>
 			</section>
+
+			<!-- Popüler -->
+			{popular.length > 0 && (
+				<section class="popular" aria-labelledby="popTitle">
+					<h2 class="popular-title" id="popTitle">Popüler</h2>
+					<ol class="popular-list">
+						{popular.map((a, i) => {
+							const c = getCategory(categoryOf(a));
+							return (
+								<li class="pose" data-cat={c.id} style={`--delay:${i * 0.06}s`}>
+									<span class="pop-num" aria-hidden="true">{i + 1}</span>
+									<div class="pop-body">
+										<a class="pop-kicker" href={`/kategori/${c.id}`}>{c.name}</a>
+										<a class="pop-head" href={`/haber/${a.slug}`}>{a.baslik_tr}</a>
+										<span class="pop-meta"><span lang="en">{sourceLabel(a.source)}</span> · <time datetime={a.date} data-rel>{new Date(a.date).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', timeZone: 'Europe/Istanbul' })}</time></span>
+									</div>
+								</li>
+							);
+						})}
+					</ol>
+				</section>
+			)}
 
 			<!-- Son dakika bandı -->
 			<div class="ticker" role="region" aria-label="Son başlıklar">
@@ -96,15 +145,55 @@ const leadDay = lead ? new Date(lead.date).toLocaleDateString('tr-TR', { day: 'n
 					<span class="sec-line" aria-hidden="true"></span>
 					<a class="sec-more" href="/kategori">Bölümler →</a>
 				</div>
-				<div class="feed" id="feed" data-paged={PAGE}>
-					{feed.map((a, i) => (
-						<Story article={a} variant={i === 0 ? 'big' : 'card'} hidden={i >= PAGE} delay={(i % 3) * 0.08} />
-					))}
+				<!-- Dilim 1: öne çıkan + iki haber + kısa kısa -->
+				<div class="slice slice-top">
+					{topFeature && <div class="col col-feature"><Story article={topFeature} variant="feature" eager /></div>}
+					{topMid.length > 0 && (
+						<div class="col col-mid">
+							{topMid.map((a, i) => <Story article={a} variant="compact" delay={0.06 + i * 0.06} />)}
+						</div>
+					)}
+					{topList.length > 0 && (
+						<div class="col col-list">
+							<p class="col-label">Kısa kısa</p>
+							{topList.map((a, i) => <Story article={a} variant="text" delay={i * 0.05} />)}
+						</div>
+					)}
 				</div>
-				<div class="feed-foot">
-					<button class="btn" type="button" data-more="feed" hidden={feed.length <= PAGE}>Daha fazla haber</button>
-					<p class="muted" data-count="feed">{Math.min(PAGE, feed.length)} / {feed.length} haber</p>
-				</div>
+
+				<!-- Dilim 2: dört sütun -->
+				{strip.length > 0 && (
+					<div class="slice slice-strip">
+						{strip.map((a, i) => <div class="col"><Story article={a} variant="compact" delay={i * 0.06} /></div>)}
+					</div>
+				)}
+
+				<!-- Dilim 3: geniş haber + başlıklar -->
+				{wide && (
+					<div class="slice slice-wide">
+						<div class="col"><Story article={wide} variant="wide" /></div>
+						{wideList.length > 0 && (
+							<div class="col col-list">
+								<p class="col-label">Gündemden</p>
+								{wideList.map((a, i) => <Story article={a} variant="text" delay={i * 0.05} />)}
+							</div>
+						)}
+					</div>
+				)}
+
+				<!-- Daha fazla haber -->
+				{more.length > 0 && (
+					<div class="slice slice-more">
+						<p class="col-label">Daha fazla haber</p>
+						<div class="more-list" id="feed" data-paged={PAGE}>
+							{more.map((a, i) => <Story article={a} variant="row" hidden={i >= PAGE} />)}
+						</div>
+						<div class="feed-foot">
+							<button class="btn" type="button" data-more="feed" hidden={more.length <= PAGE}>Daha fazla haber</button>
+							<p class="muted" data-count="feed">{Math.min(PAGE, more.length)} / {more.length} haber</p>
+						</div>
+					</div>
+				)}
 			</section>
 
 			<!-- Arena'nın zirvesi -->
@@ -116,7 +205,7 @@ const leadDay = lead ? new Date(lead.date).toLocaleDateString('tr-TR', { day: 'n
 						<span class="sec-line" aria-hidden="true"></span>
 						<a class="sec-more" href="/benchmarklar">Tüm sıralamalar →</a>
 					</div>
-					<p class="arena-note">Her model altı eksende not alır: LMArena'daki kullanıcı oylarına göre sıralamada ilk %10'a girene <strong>A</strong>, son dilime düşene <strong>E</strong>; verisi olmayan eksen <strong>?</strong></p>
+					<p class="arena-note">Her model altı eksende LMArena puanıyla (ELO, kullanıcı oyları) ölçülür. Altıgen ne kadar genişse model o eksende sıralamanın o kadar üstündedir; köşelerde puan ve sıra yazar.</p>
 					<div class="arena-grid">
 						<StandCard card={champion} size="large" rank={1} />
 						<div class="arena-side">
@@ -399,14 +488,182 @@ const leadDay = lead ? new Date(lead.date).toLocaleDateString('tr-TR', { day: 'n
 		margin-bottom: 96px;
 	}
 
-	.feed {
+	/* ---------- Popüler ---------- */
+	.popular {
 		display: grid;
-		grid-template-columns: repeat(3, minmax(0, 1fr));
-		gap: 56px 36px;
+		grid-template-columns: auto minmax(0, 1fr);
+		gap: 0;
+		margin: 0 0 40px;
+		background: var(--surface);
+		border: 3px solid var(--line);
+		box-shadow: 10px 10px 0 var(--a1);
 	}
 
-	.feed > :global(.story-big) {
-		grid-column: 1 / -1;
+	.popular-title {
+		display: grid;
+		place-items: center;
+		margin: 0;
+		padding: 0 12px;
+		background: var(--a2);
+		color: var(--on-a2);
+		border-right: 3px solid var(--line);
+		font-size: 1.5rem;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+		writing-mode: vertical-rl;
+		transform: rotate(180deg);
+	}
+
+	.popular-list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: grid;
+		grid-template-columns: repeat(5, minmax(0, 1fr));
+	}
+
+	.popular-list li {
+		display: grid;
+		grid-template-columns: auto minmax(0, 1fr);
+		gap: 12px;
+		padding: 18px 18px 18px 16px;
+	}
+
+	.popular-list li + li {
+		border-left: 1px solid var(--rule);
+	}
+
+	.pop-num {
+		font-family: var(--font-display);
+		font-size: 3.2rem;
+		line-height: 0.8;
+		color: var(--a1);
+		text-shadow: 3px 3px 0 var(--a2);
+	}
+
+	.pop-body {
+		display: flex;
+		flex-direction: column;
+		gap: 6px;
+		min-width: 0;
+	}
+
+	.pop-kicker {
+		color: var(--c);
+		font-size: 0.64rem;
+		font-weight: 900;
+		font-stretch: 80%;
+		letter-spacing: 0.14em;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+
+	.pop-head {
+		color: var(--text);
+		font-family: var(--font-serif);
+		font-size: 1rem;
+		font-weight: 800;
+		line-height: 1.2;
+		text-decoration: none;
+		display: -webkit-box;
+		-webkit-line-clamp: 4;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+	}
+
+	.pop-head:hover {
+		color: var(--a1);
+	}
+
+	.pop-meta {
+		margin-top: auto;
+		color: var(--muted);
+		font-size: 0.66rem;
+		font-weight: 700;
+		font-stretch: 85%;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+	}
+
+	/* ---------- Gazete dilimleri ---------- */
+	.slice {
+		display: grid;
+		margin-bottom: 52px;
+		padding-top: 26px;
+		border-top: 4px solid var(--line);
+	}
+
+	.slice-top {
+		grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) minmax(0, 1fr);
+	}
+
+	.slice-strip {
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+		border-top-width: 1px;
+		border-top-color: var(--rule);
+	}
+
+	.slice-wide {
+		grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+	}
+
+	/* Sütunlar arasında gazete çizgisi */
+	.slice > .col {
+		min-width: 0;
+		padding: 0 26px;
+	}
+
+	.slice > .col:first-child {
+		padding-left: 0;
+	}
+
+	.slice > .col:last-child {
+		padding-right: 0;
+	}
+
+	.slice > .col + .col {
+		border-left: 1px solid var(--rule);
+	}
+
+	.col-mid {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+	}
+
+	.col-list {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.col-list > :global(.story) {
+		padding: 14px 0;
+		border-bottom: 1px solid var(--rule);
+	}
+
+	.col-list > :global(.story:last-child) {
+		border-bottom: 0;
+	}
+
+	.col-label {
+		margin: 0 0 4px;
+		padding-bottom: 8px;
+		border-bottom: 3px solid var(--a2);
+		color: var(--text);
+		font-family: var(--font-display);
+		font-size: 1.15rem;
+		letter-spacing: 0.06em;
+		text-transform: uppercase;
+	}
+
+	.slice-more {
+		display: block;
+	}
+
+	.more-list {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		column-gap: 44px;
 	}
 
 	.feed-foot {
@@ -466,7 +723,7 @@ const leadDay = lead ? new Date(lead.date).toLocaleDateString('tr-TR', { day: 'n
 	}
 
 	.arena-side :global(.st-label),
-	.arena-side :global(.stand-grades) {
+	.arena-side :global(.stand-scores) {
 		display: none;
 	}
 
@@ -516,10 +773,44 @@ const leadDay = lead ? new Date(lead.date).toLocaleDateString('tr-TR', { day: 'n
 		gap: 30px;
 	}
 
-	@container home (max-width: 1080px) {
-		.feed {
-			grid-template-columns: repeat(2, minmax(0, 1fr));
+	/* Popüler şeridi dar sütunda 3 habere iner */
+	@container home (max-width: 940px) {
+		.popular-list {
+			grid-template-columns: repeat(3, minmax(0, 1fr));
 		}
+		.popular-list li:nth-child(n + 4) {
+			display: none;
+		}
+	}
+
+	/* Gazete dilimleri: dar sütunda öne çıkan haber tam genişliğe, diğerleri ikişer */
+	@container home (max-width: 820px) {
+		.slice-top {
+			grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+			row-gap: 34px;
+		}
+		.slice-top > .col-feature {
+			grid-column: 1 / -1;
+			padding: 0;
+		}
+		.slice-top > .col-mid {
+			border-left: 0;
+			padding-left: 0;
+		}
+		.slice-strip {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+			row-gap: 34px;
+		}
+		.slice-strip > .col:nth-child(odd) {
+			border-left: 0;
+			padding-left: 0;
+		}
+		.slice-strip > .col:nth-child(even) {
+			padding-right: 0;
+		}
+	}
+
+	@container home (max-width: 1080px) {
 		.arena-grid {
 			grid-template-columns: 1fr;
 		}
@@ -552,6 +843,17 @@ const leadDay = lead ? new Date(lead.date).toLocaleDateString('tr-TR', { day: 'n
 			margin: -40px 10px 0;
 			transform: rotate(0.8deg);
 		}
+		.slice-wide {
+			grid-template-columns: 1fr;
+			row-gap: 30px;
+		}
+		.slice-wide > .col + .col {
+			border-left: 0;
+			padding-left: 0;
+		}
+		.more-list {
+			grid-template-columns: 1fr;
+		}
 	}
 
 	@container home (max-width: 640px) {
@@ -566,9 +868,39 @@ const leadDay = lead ? new Date(lead.date).toLocaleDateString('tr-TR', { day: 'n
 		.ticker {
 			margin: 0 -16px 56px;
 		}
-		.feed {
+		.popular {
 			grid-template-columns: 1fr;
-			gap: 44px;
+			box-shadow: 7px 7px 0 var(--a1);
+		}
+		.popular-title {
+			padding: 8px 14px;
+			border-right: 0;
+			border-bottom: 3px solid var(--line);
+			writing-mode: horizontal-tb;
+			transform: none;
+			justify-items: start;
+		}
+		.popular-list {
+			grid-template-columns: 1fr;
+		}
+		.popular-list li:nth-child(n + 4) {
+			display: grid;
+		}
+		.popular-list li + li {
+			border-left: 0;
+			border-top: 1px solid var(--rule);
+		}
+		.slice-top,
+		.slice-strip {
+			grid-template-columns: 1fr;
+		}
+		.slice > .col {
+			padding: 0;
+		}
+		.slice > .col + .col {
+			border-left: 0;
+			padding-top: 26px;
+			border-top: 1px solid var(--rule);
 		}
 		.arena-grid {
 			padding: 18px;
