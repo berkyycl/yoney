@@ -1,156 +1,163 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import ArtBanner from '../components/ArtBanner.astro';
 import Story from '../components/Story.astro';
+import Art from '../components/Art.astro';
 import ChapterTile from '../components/ChapterTile.astro';
-import { loadArticles } from '../lib/articles';
+import StandCard from '../components/StandCard.astro';
+import ModelRails from '../components/ModelRails.astro';
+import { loadArticles, sourceLabel } from '../lib/articles';
 import { loadBenchmarkData } from '../lib/benchmarks';
-import { NEWS_CATEGORIES, categoryOf } from '../lib/categories';
+import { buildStands } from '../lib/stands';
+import { NEWS_CATEGORIES, categoryOf, getCategory } from '../lib/categories';
 
-const PAGE = 10;
+const PAGE = 9;
 const articles = loadArticles();
 const time = (a: any) => new Date(a.date).getTime();
 
-// Ön sayfa resmi kaynaklar ve bağımsız basından kurulur; topluluk (Reddit) yan sütunda
+// Ön sayfa resmi kaynaklar ve bağımsız basından kurulur; topluluk (Reddit) ayrı şeritte
 const editorialAll = articles.filter(a => a.sourceTier !== 'topluluk');
 const editorial = editorialAll.length > 0 ? editorialAll : articles;
 const community = articles.filter(a => a.sourceTier === 'topluluk');
 
-// Manşet adayları: son 3 günün görselli haberleri, önce önem sonra tarih
+// Manşet: son 3 günün görselli haberlerinden önce önem sonra tarih
 const newest = editorial.length ? time(editorial[0]) : 0;
 const ranked = editorial
 	.filter(a => a.gorsel_url && newest - time(a) < 3 * 864e5)
 	.sort((a, b) => (b.onem ?? 0) - (a.onem ?? 0) || time(b) - time(a));
+const lead = ranked[0] ?? editorial[0];
+const feed = editorial.filter(a => a !== lead);
+const leadCat = lead ? getCategory(categoryOf(lead)) : null;
+const ticker = articles.slice(0, 10);
 
-const used = new Set<string>();
-const take = (list: any[], n: number) => {
-	const out: any[] = [];
-	for (const a of list) {
-		if (out.length >= n) break;
-		if (used.has(a.slug)) continue;
-		used.add(a.slug);
-		out.push(a);
-	}
-	return out;
-};
-const [lead] = take([...ranked, ...editorial], 1);
-const seconds = take([...ranked, ...editorial.filter(a => a.gorsel_url)], 2);
-const briefs = take(editorial, 4);
-const feed = editorial.filter(a => !used.has(a.slug));
-const rail = community.slice(0, 7);
-
-// Arena'da zirve: LMArena genel sıralamasında her modelin en iyi sonucu
 const bench = loadBenchmarkData();
-const arena: { model: string; provider: string | null; score: number }[] = [];
-const seenModels = new Set<string>();
-for (const e of bench.entries.filter(e => e.bench === 'lmarena-text').sort((a, b) => b.score - a.score)) {
-	if (seenModels.has(e.key)) continue;
-	seenModels.add(e.key);
-	arena.push({ model: e.model, provider: e.provider, score: e.score });
-	if (arena.length === 5) break;
-}
+const stands = buildStands(bench.entries);
+const champion = stands[0];
+const contenders = stands.slice(1, 4);
 
 const chapters = NEWS_CATEGORIES.map(c => ({ c, count: articles.filter(a => categoryOf(a) === c.id).length }));
-const sourceCount = new Set(articles.map(a => a.source)).size;
-const today = new Date().toLocaleDateString('tr-TR', { timeZone: 'Europe/Istanbul', weekday: 'long', day: 'numeric', month: 'long' });
+const leadDay = lead ? new Date(lead.date).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', timeZone: 'Europe/Istanbul' }) : '';
 ---
 
-<Layout title="Yöney: Türkiye'nin yapay zekâ haber ve benchmark takibi">
-	<ArtBanner height={160}>
-		<div class="banner-text">
-			<p class="banner-date">{today}</p>
-			<h1 class="banner-title">Yapay zekâ gündemi</h1>
-		</div>
-		<dl class="banner-stats">
-			<div><dt>haber</dt><dd>{articles.length}</dd></div>
-			<div><dt>kaynak</dt><dd>{sourceCount}</dd></div>
-			<div><dt>sıralama</dt><dd>{bench.benchmarks.length}</dd></div>
-		</dl>
-	</ArtBanner>
-
+<Layout title="Yöney: Türkiye'nin yapay zekâ haber ve benchmark takibi" palette="altin" wide>
+	<div class="home">
+	<ModelRails side="left" bench={bench} articles={articles} />
+	<div class="home-main">
 	{!lead ? (
 		<p class="empty">Henüz haber bulunmuyor. Otomatik güncelleme ilk turunu tamamladığında son bir ayın haberleri burada listelenecek.</p>
 	) : (
 		<>
-			<section class="front" aria-label="Manşet">
-				<div class="front-lead">
-					<Story article={lead} variant="lead" eager />
+			<!-- Manşet sahnesi -->
+			<section class="hero" data-cat={leadCat!.id} aria-label="Manşet">
+				<div class="hero-stage">
+					<div class="hero-aura" aria-hidden="true"></div>
+					<a class="hero-media poster reveal-color tilt" href={`/haber/${lead.slug}`} tabindex="-1" aria-hidden="true">
+						<Art cat={leadCat!.id} seed={lead.slug} />
+						{lead.gorsel_url && (
+							<>
+								<img class="img-true" src={lead.gorsel_url} alt="" decoding="async" referrerpolicy="no-referrer" onerror="this.parentElement.querySelectorAll('img').forEach(function(i){i.remove()})" />
+								<img class="img-poster" src={lead.gorsel_url} alt="" decoding="async" referrerpolicy="no-referrer" />
+							</>
+						)}
+						<span class="shine"></span>
+					</a>
+					<span class="hero-badge" aria-hidden="true">Manşet</span>
 				</div>
-				{seconds.length > 0 && (
-					<div class="front-side">
-						{seconds.map(a => <Story article={a} variant="second" />)}
+				<div class="hero-copy pose">
+					<a class="chip" href={`/kategori/${leadCat!.id}`} data-cat={leadCat!.id}><span><span class="num">{leadCat!.numeral}</span> {leadCat!.name}</span></a>
+					<h1 class="hero-title"><a href={`/haber/${lead.slug}`}>{lead.baslik_tr}</a></h1>
+					<p class="hero-deck deck">{lead.ozet_tr}</p>
+					<div class="hero-meta">
+						<span><strong lang="en">{sourceLabel(lead.source)}</strong> · <time datetime={lead.date} data-rel>{leadDay}</time></span>
+						<a class="btn btn-fill" href={`/haber/${lead.slug}`}>Haberi oku →</a>
 					</div>
-				)}
+				</div>
 			</section>
 
-			{briefs.length > 0 && (
-				<section class="briefs" aria-label="Kısa haberler">
-					{briefs.map(a => <Story article={a} variant="brief" />)}
+			<!-- Son dakika bandı -->
+			<div class="ticker" role="region" aria-label="Son başlıklar">
+				<span class="ticker-label">Son dakika</span>
+				<div class="ticker-view">
+					<div class="ticker-track">
+						{[...ticker, ...ticker].map((a, i) => (
+							<>
+								<a href={`/haber/${a.slug}`} tabindex={i >= ticker.length ? -1 : undefined} aria-hidden={i >= ticker.length ? 'true' : undefined}>{a.baslik_tr}</a>
+								<span class="ticker-sep" aria-hidden="true">◆</span>
+							</>
+						))}
+					</div>
+				</div>
+			</div>
+
+			<!-- Gündem -->
+			<section class="block" aria-labelledby="feedTitle">
+				<div class="section-head">
+					<span class="sec-num">01</span>
+					<h2 id="feedTitle">Gündem</h2>
+					<span class="sec-line" aria-hidden="true"></span>
+					<a class="sec-more" href="/kategori">Bölümler →</a>
+				</div>
+				<div class="feed" id="feed" data-paged={PAGE}>
+					{feed.map((a, i) => (
+						<Story article={a} variant={i === 0 ? 'big' : 'card'} hidden={i >= PAGE} delay={(i % 3) * 0.08} />
+					))}
+				</div>
+				<div class="feed-foot">
+					<button class="btn" type="button" data-more="feed" hidden={feed.length <= PAGE}>Daha fazla haber</button>
+					<p class="muted" data-count="feed">{Math.min(PAGE, feed.length)} / {feed.length} haber</p>
+				</div>
+			</section>
+
+			<!-- Arena'nın zirvesi -->
+			{champion && (
+				<section class="block arena" aria-labelledby="arenaTitle">
+					<div class="section-head">
+						<span class="sec-num">02</span>
+						<h2 id="arenaTitle">Arena'nın zirvesi</h2>
+						<span class="sec-line" aria-hidden="true"></span>
+						<a class="sec-more" href="/benchmarklar">Tüm sıralamalar →</a>
+					</div>
+					<p class="arena-note">Her model altı eksende not alır: LMArena'daki kullanıcı oylarına göre sıralamada ilk %10'a girene <strong>A</strong>, son dilime düşene <strong>E</strong>; verisi olmayan eksen <strong>?</strong></p>
+					<div class="arena-grid">
+						<StandCard card={champion} size="large" rank={1} />
+						<div class="arena-side">
+							{contenders.map((c, i) => <StandCard card={c} rank={i + 2} />)}
+						</div>
+					</div>
+					<a class="btn arena-cta" href="/karsilastir">İki modeli karşı karşıya getir →</a>
 				</section>
 			)}
 
-			<div class="split">
-				<section class="feed" aria-labelledby="feedTitle">
+			<!-- Topluluktan -->
+			{community.length > 0 && (
+				<section class="block" aria-labelledby="crowdTitle">
 					<div class="section-head">
-						<span class="sec-num">01</span>
-						<h2 id="feedTitle">Son haberler</h2>
-						<a class="sec-more" href="/kategori">Bölümler →</a>
+						<span class="sec-num">03</span>
+						<h2 id="crowdTitle">Topluluktan</h2>
+						<span class="sec-line" aria-hidden="true"></span>
 					</div>
-					<div class="feed-list" id="feed" data-paged={PAGE}>
-						{feed.map((a, i) => <Story article={a} variant="row" hidden={i >= PAGE} />)}
-					</div>
-					<div class="feed-foot">
-						<button class="btn" type="button" data-more="feed" hidden={feed.length <= PAGE}>Daha fazla haber</button>
-						<p class="muted" data-count="feed">{Math.min(PAGE, feed.length)} / {feed.length} haber</p>
-					</div>
+					<ol class="crowd">
+						{community.slice(0, 8).map((a, i) => <li class="pose" style={`--delay:${(i % 4) * 0.06}s`}><Story article={a} variant="mini" /></li>)}
+					</ol>
 				</section>
+			)}
 
-				<aside class="rail">
-					{arena.length > 0 && (
-						<section class="rail-box">
-							<div class="section-head">
-								<span class="sec-num">02</span>
-								<h2>Arena'da zirve</h2>
-							</div>
-							<ol class="arena">
-								{arena.map((r, i) => (
-									<li>
-										<span class="arena-rank">{i + 1}</span>
-										<span class="arena-name"><strong>{r.model}</strong>{r.provider && <small>{r.provider}</small>}</span>
-										<span class="arena-score">{r.score.toLocaleString('tr-TR')}</span>
-									</li>
-								))}
-							</ol>
-							<p class="rail-note">LMArena genel sıralaması, kullanıcı oylarıyla (ELO). <a href="/benchmarklar">Tüm sıralamalar →</a></p>
-						</section>
-					)}
-
-					{rail.length > 0 && (
-						<section class="rail-box">
-							<div class="section-head">
-								<span class="sec-num">03</span>
-								<h2>Topluluktan</h2>
-							</div>
-							<ol class="numbered">
-								{rail.map(a => <li><Story article={a} variant="mini" /></li>)}
-							</ol>
-						</section>
-					)}
-				</aside>
-			</div>
-
-			<section class="chapters" aria-labelledby="chaptersTitle">
+			<!-- Bölümler -->
+			<section class="block" aria-labelledby="chaptersTitle">
 				<div class="section-head">
 					<span class="sec-num">04</span>
 					<h2 id="chaptersTitle">Bölümler</h2>
+					<span class="sec-line" aria-hidden="true"></span>
 					<a class="sec-more" href="/kategori">Tümü →</a>
 				</div>
 				<div class="chapters-grid">
-					{chapters.map(({ c, count }) => <ChapterTile category={c} count={count} />)}
+					{chapters.map(({ c, count }, i) => <ChapterTile category={c} count={count} delay={(i % 4) * 0.07} />)}
 				</div>
 			</section>
 		</>
 	)}
+	</div>
+	<ModelRails side="right" bench={bench} articles={articles} />
+	</div>
 </Layout>
 
 <script>
@@ -158,117 +165,256 @@ const today = new Date().toLocaleDateString('tr-TR', { timeZone: 'Europe/Istanbu
 </script>
 
 <style>
-	/* ---------- Kapak bandı ---------- */
-	:global(.art-banner) {
-		margin-bottom: 40px;
-	}
-
-	.banner-date {
-		margin: 0 0 6px;
-		font-size: 0.72rem;
-		font-weight: 800;
-		font-stretch: 82%;
-		letter-spacing: 0.18em;
-		text-transform: uppercase;
-	}
-
-	.banner-title {
-		margin: 0;
-		color: #fff8ec;
-		font-size: clamp(2.3rem, 5.4vw, 4rem);
-		font-style: italic;
-		font-weight: 800;
-		line-height: 0.95;
-		letter-spacing: -0.02em;
-	}
-
-	.banner-stats {
-		display: flex;
-		gap: 10px;
-		margin: 0;
-	}
-
-	/* Sayılar, arkadaki renk alanından bağımsız okunabilsin diye krem kutucuklarda */
-	.banner-stats div {
-		display: flex;
-		flex-direction: column-reverse;
-		align-items: flex-start;
-		min-width: 74px;
-		padding: 6px 10px 7px;
-		background: #fff8ec;
-		color: #19121f;
-		border: 2px solid #19121f;
-		text-shadow: none;
-	}
-
-	.banner-stats dt {
-		font-size: 0.68rem;
-		font-weight: 800;
-		font-stretch: 82%;
-		letter-spacing: 0.16em;
-		text-transform: uppercase;
-	}
-
-	.banner-stats dd {
-		margin: 0;
-		font-family: var(--font-display);
-		font-size: 1.9rem;
-		font-weight: 900;
-		line-height: 1;
-	}
-
-	/* ---------- Ön sayfa ---------- */
-	.front {
+	/* ---------- Üç sütun: sol pano · içerik · sağ pano ---------- */
+	.home {
 		display: grid;
-		grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
-		gap: 48px;
-		padding-bottom: 40px;
+		grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+		gap: 56px 32px;
 	}
 
-	.front-side {
+	/* Orta sütundaki bölümler ekran yerine bu sütunun genişliğine göre düzenlenir */
+	.home-main {
+		grid-column: 1 / -1;
+		grid-row: 1;
+		min-width: 0;
+		container: home / inline-size;
+	}
+
+	@media (min-width: 1280px) {
+		.home {
+			grid-template-columns: clamp(210px, 15vw, 270px) minmax(0, 1fr) clamp(210px, 15vw, 270px);
+			gap: 0 clamp(24px, 2.2vw, 40px);
+			align-items: start;
+		}
+		.home-main {
+			grid-column: 2;
+		}
+		.home > :global(.rail) {
+			position: sticky;
+			top: calc(var(--header-h) + 26px);
+			grid-row: 1;
+			max-height: calc(100vh - var(--header-h) - 46px);
+			overflow-y: auto;
+			padding: 4px 10px 10px 2px;
+			scrollbar-width: thin;
+			scrollbar-color: var(--a2) transparent;
+		}
+		.home > :global(.rail-left) {
+			grid-column: 1;
+		}
+		.home > :global(.rail-right) {
+			grid-column: 3;
+		}
+	}
+
+	@media (max-width: 760px) {
+		.home {
+			grid-template-columns: minmax(0, 1fr);
+		}
+	}
+
+	/* ---------- Manşet sahnesi ---------- */
+	.hero {
+		position: relative;
+		display: grid;
+		grid-template-columns: repeat(12, minmax(0, 1fr));
+		align-items: center;
+		margin: 6px 0 56px;
+	}
+
+	.hero-stage {
+		position: relative;
+		grid-column: 1 / 9;
+		grid-row: 1;
+		/* Auranın taşan kenarı ekranın dışına kaçmasın */
+		margin: 20px 0 20px 22px;
+		transform: translate3d(calc(var(--px, 0) * 10px), calc(var(--py, 0) * 8px), 0) rotate(-1.5deg);
+	}
+
+	.hero-aura {
+		position: absolute;
+		inset: -26px;
+		background: linear-gradient(120deg, var(--a2), var(--a1), var(--a3), var(--a4), var(--a2));
+		background-size: 300% 300%;
+		filter: url(#aura);
+		animation: aura-flow 9s linear infinite;
+	}
+
+	@keyframes aura-flow {
+		to { background-position: 300% 0; }
+	}
+
+	.hero-media {
+		position: relative;
+		aspect-ratio: 16 / 11;
+		border: 3px solid var(--line);
+	}
+
+	.hero-badge {
+		position: absolute;
+		top: -18px;
+		left: 26px;
+		z-index: 4;
+		padding: 0.4em 1em;
+		background: var(--a1);
+		color: var(--on-a1);
+		border: 2px solid var(--line);
+		font-family: var(--font-display);
+		font-size: 1.1rem;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		transform: rotate(-6deg);
+		box-shadow: 4px 4px 0 var(--shadow);
+	}
+
+	.hero-copy {
+		position: relative;
+		z-index: 5;
+		grid-column: 7 / 13;
+		grid-row: 1;
 		display: flex;
 		flex-direction: column;
-		gap: 40px;
-		padding-left: 40px;
-		border-left: 1px solid var(--rule-strong);
+		align-items: flex-start;
+		gap: 16px;
+		padding: 30px 30px 28px;
+		background: var(--surface);
+		border: 3px solid var(--line);
+		box-shadow: 12px 12px 0 var(--a2);
+		transform: translate3d(calc(var(--px, 0) * -14px), calc(var(--py, 0) * -10px), 0) rotate(1.2deg);
 	}
 
-	.briefs {
+	.hero-title {
+		margin: 0;
+		font-size: clamp(1.9rem, 4.6cqi, 3.7rem);
+		line-height: 0.95;
+		text-transform: uppercase;
+	}
+
+	.hero-title a {
+		color: var(--text);
+		text-decoration: none;
+		text-shadow: 3px 3px 0 var(--shadow);
+	}
+
+	.hero-title a:hover {
+		color: var(--a1);
+	}
+
+	.hero-deck {
+		margin: 0;
+		color: var(--text-2);
+		font-size: 1.12rem;
+		line-height: 1.5;
+		display: -webkit-box;
+		-webkit-line-clamp: 4;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+	}
+
+	.hero-meta {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+		gap: 14px;
+		width: 100%;
+		padding-top: 14px;
+		border-top: 2px solid var(--rule);
+		color: var(--muted);
+		font-size: 0.8rem;
+	}
+
+	.hero-meta strong {
+		color: var(--text);
+	}
+
+	/* ---------- Son dakika bandı ---------- */
+	.ticker {
+		display: flex;
+		align-items: stretch;
+		margin: 0 -24px 72px;
+		background: var(--a2);
+		color: var(--on-a2);
+		border-top: 3px solid var(--line);
+		border-bottom: 3px solid var(--line);
+		transform: rotate(-1.2deg);
+		overflow: hidden;
+	}
+
+	.ticker-label {
+		display: flex;
+		align-items: center;
+		flex-shrink: 0;
+		padding: 0 18px;
+		background: var(--line);
+		color: var(--bg);
+		font-family: var(--font-display);
+		font-size: 1.05rem;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+	}
+
+	.ticker-view {
+		flex: 1;
+		overflow: hidden;
+		-webkit-mask-image: linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent);
+		mask-image: linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent);
+	}
+
+	.ticker-track {
+		display: flex;
+		align-items: center;
+		gap: 22px;
+		width: max-content;
+		padding: 13px 0;
+		animation: ticker 90s linear infinite;
+	}
+
+	.ticker:hover .ticker-track,
+	.ticker:focus-within .ticker-track {
+		animation-play-state: paused;
+	}
+
+	@keyframes ticker {
+		to { transform: translateX(-50%); }
+	}
+
+	.ticker a {
+		color: inherit;
+		text-decoration: none;
+		font-weight: 800;
+		white-space: nowrap;
+	}
+
+	.ticker a:hover {
+		text-decoration: underline;
+	}
+
+	.ticker-sep {
+		font-size: 0.7rem;
+	}
+
+	/* ---------- Bloklar ---------- */
+	.block {
+		margin-bottom: 96px;
+	}
+
+	.feed {
 		display: grid;
-		grid-template-columns: repeat(4, minmax(0, 1fr));
-		margin-bottom: 56px;
-		border-top: 2px solid var(--line);
-		border-bottom: 2px solid var(--line);
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: 56px 36px;
 	}
 
-	.briefs > :global(.story) {
-		padding: 22px 22px 24px;
-		border-left: 1px solid var(--rule-strong);
-	}
-
-	.briefs > :global(.story:first-child) {
-		padding-left: 0;
-		border-left: 0;
-	}
-
-	.briefs > :global(.story:last-child) {
-		padding-right: 0;
-	}
-
-	/* ---------- Akış + yan sütun ---------- */
-	.split {
-		display: grid;
-		grid-template-columns: minmax(0, 1fr) 340px;
-		gap: 56px;
-		margin-bottom: 64px;
+	.feed > :global(.story-big) {
+		grid-column: 1 / -1;
 	}
 
 	.feed-foot {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		gap: 10px;
-		margin-top: 32px;
+		gap: 12px;
+		margin-top: 52px;
 	}
 
 	.feed-foot p {
@@ -276,173 +422,170 @@ const today = new Date().toLocaleDateString('tr-TR', { timeZone: 'Europe/Istanbu
 		font-size: 0.85rem;
 	}
 
-	.rail {
-		display: flex;
-		flex-direction: column;
-		gap: 48px;
+	/* ---------- Arena ---------- */
+	.arena-note {
+		max-width: 70ch;
+		margin: -6px 0 30px;
+		color: var(--text-2);
 	}
 
-	.rail .section-head h2 {
-		font-size: 1.45rem;
+	.arena-note strong {
+		color: var(--a1);
+		font-family: var(--font-display);
+		font-weight: 400;
+		font-size: 1.15em;
 	}
 
-	.arena {
-		list-style: none;
-		margin: 0;
-		padding: 0;
-	}
-
-	.arena li {
+	.arena-grid {
 		display: grid;
-		grid-template-columns: 2rem minmax(0, 1fr) auto;
+		grid-template-columns: minmax(0, 1.8fr) minmax(0, 1fr);
+		gap: 40px;
+		align-items: start;
+		padding: 34px;
+		background: var(--surface);
+		border: 3px solid var(--line);
+		box-shadow: 12px 12px 0 var(--a3);
+	}
+
+	.arena-side {
+		display: grid;
+		gap: 26px;
+	}
+
+	.arena-side :global(.stand-card) {
+		grid-template-columns: 120px minmax(0, 1fr);
 		align-items: center;
-		gap: 10px;
-		padding: 11px 0;
+		gap: 14px;
+		padding-bottom: 22px;
 		border-bottom: 1px solid var(--rule);
 	}
 
-	.arena-rank {
-		font-family: var(--font-display);
-		font-style: italic;
-		font-weight: 900;
-		font-size: 1.6rem;
-		line-height: 1;
-		color: var(--ink-3);
+	.arena-side :global(.stand-card:last-child) {
+		border-bottom: 0;
+		padding-bottom: 0;
 	}
 
-	.arena li:first-child .arena-rank {
-		color: var(--magenta);
+	.arena-side :global(.st-label),
+	.arena-side :global(.stand-grades) {
+		display: none;
 	}
 
-	.arena-name {
-		display: flex;
-		flex-direction: column;
-		min-width: 0;
-		line-height: 1.25;
+	.arena-side :global(.stand-name) {
+		margin: 0;
+		font-size: 1.4rem;
 	}
 
-	.arena-name strong {
-		overflow: hidden;
-		text-overflow: ellipsis;
-		white-space: nowrap;
+	.arena-cta {
+		margin-top: 34px;
 	}
 
-	.arena-name small {
-		color: var(--ink-3);
-		font-size: 0.75rem;
-	}
-
-	.arena-score {
-		font-family: var(--font-display);
-		font-weight: 800;
-		font-size: 1.15rem;
-		font-variant-numeric: tabular-nums;
-	}
-
-	.rail-note {
-		margin: 12px 0 0;
-		color: var(--ink-3);
-		font-size: 0.82rem;
-	}
-
-	.numbered {
+	/* ---------- Topluluktan ---------- */
+	.crowd {
 		list-style: none;
 		margin: 0;
 		padding: 0;
+		display: grid;
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+		gap: 0 28px;
 		counter-reset: n;
 	}
 
-	.numbered > li {
+	.crowd > li {
 		counter-increment: n;
 		display: grid;
-		grid-template-columns: 2.4rem minmax(0, 1fr);
+		grid-template-columns: 2.8rem minmax(0, 1fr);
 		gap: 6px;
-		padding: 14px 0;
-		border-bottom: 1px solid var(--rule);
+		padding: 18px 0;
+		border-top: 2px solid var(--line);
 	}
 
-	.numbered > li::before {
+	.crowd > li::before {
 		content: counter(n, decimal-leading-zero);
-		font-family: var(--font-display);
+		color: var(--a3);
+		font-family: var(--font-serif);
+		font-size: 1.9rem;
 		font-style: italic;
 		font-weight: 900;
-		font-size: 1.45rem;
-		line-height: 1;
-		color: var(--teal);
+		line-height: 0.9;
 	}
 
 	/* ---------- Bölümler ---------- */
 	.chapters-grid {
 		display: grid;
 		grid-template-columns: repeat(4, minmax(0, 1fr));
-		gap: 24px;
+		gap: 30px;
 	}
 
-	@media (max-width: 1080px) {
-		.split {
+	@container home (max-width: 1080px) {
+		.feed {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
+		.arena-grid {
 			grid-template-columns: 1fr;
 		}
-		.rail {
-			display: grid;
-			grid-template-columns: 1fr 1fr;
-			gap: 40px;
+		.arena-side {
+			grid-template-columns: repeat(3, minmax(0, 1fr));
 		}
-	}
-
-	@media (max-width: 900px) {
-		.front {
+		.arena-side :global(.stand-card) {
 			grid-template-columns: 1fr;
-			gap: 36px;
+			border-bottom: 0;
 		}
-		.front-side {
-			display: grid;
-			grid-template-columns: 1fr 1fr;
-			gap: 28px;
-			padding: 32px 0 0;
-			border-left: 0;
-			border-top: 1px solid var(--rule-strong);
-		}
-		.briefs {
-			grid-template-columns: 1fr 1fr;
-		}
-		.briefs > :global(.story:nth-child(odd)) {
-			padding-left: 0;
-			border-left: 0;
-		}
-		.briefs > :global(.story:nth-child(n + 3)) {
-			border-top: 1px solid var(--rule-strong);
+		.crowd {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
 		}
 		.chapters-grid {
-			grid-template-columns: 1fr 1fr;
+			grid-template-columns: repeat(2, minmax(0, 1fr));
 		}
 	}
 
-	@media (max-width: 640px) {
-		.banner-stats div {
-			min-width: 0;
-			padding: 4px 8px 5px;
+	@container home (max-width: 900px) {
+		.hero {
+			display: flex;
+			flex-direction: column;
+			align-items: stretch;
 		}
-		.banner-stats dd {
-			font-size: 1.5rem;
+		.hero-stage {
+			transform: rotate(-1deg);
+			margin: 16px 16px 0;
 		}
-		.front-side {
+		.hero-copy {
+			margin: -40px 10px 0;
+			transform: rotate(0.8deg);
+		}
+	}
+
+	@container home (max-width: 640px) {
+		.hero-copy {
+			margin: -24px 0 0;
+			padding: 20px 18px;
+			box-shadow: 7px 7px 0 var(--a2);
+		}
+		.hero-aura {
+			inset: -14px;
+		}
+		.ticker {
+			margin: 0 -16px 56px;
+		}
+		.feed {
+			grid-template-columns: 1fr;
+			gap: 44px;
+		}
+		.arena-grid {
+			padding: 18px;
+			box-shadow: 7px 7px 0 var(--a3);
+		}
+		.arena-side {
 			grid-template-columns: 1fr;
 		}
-		.briefs {
-			grid-template-columns: 1fr;
+		.arena-side :global(.stand-card) {
+			grid-template-columns: 96px minmax(0, 1fr);
 		}
-		.briefs > :global(.story) {
-			padding: 18px 0;
-			border-left: 0;
-		}
-		.briefs > :global(.story + .story) {
-			border-top: 1px solid var(--rule-strong);
-		}
-		.rail {
-			grid-template-columns: 1fr;
-		}
+		.crowd,
 		.chapters-grid {
-			gap: 16px;
+			grid-template-columns: 1fr;
+		}
+		.block {
+			margin-bottom: 72px;
 		}
 	}
 </style>

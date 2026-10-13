@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import { HIDDEN_CATEGORIES } from './categories';
 
 /** Kartlarda gösterilecek kısa kaynak adı: "Reddit LocalLLaMA (Topluluk & Benchmark)" -> "Reddit LocalLLaMA" */
 export function sourceLabel(source: unknown): string {
@@ -7,7 +8,8 @@ export function sourceLabel(source: unknown): string {
 }
 
 /**
- * data/articles/*.json dosyalarını okur. Bozuk ya da yarım yazılmış bir dosya
+ * data/articles/*.json dosyalarını okur. Sitede gösterilmeyen kategoriler
+ * (categories.ts: HIDDEN_CATEGORIES) atlanır. Bozuk ya da yarım yazılmış bir dosya
  * (ör. birleştirme çakışması) tüm derlemeyi durdurmasın diye atlanır.
  */
 let cache: any[] | null = null;
@@ -19,6 +21,7 @@ export function loadArticles(root = process.cwd()): any[] {
   for (const f of fs.readdirSync(dir).filter(f => f.endsWith('.json'))) {
     try {
       const a = JSON.parse(fs.readFileSync(path.join(dir, f), 'utf-8'));
+      if (a && HIDDEN_CATEGORIES.has(a.kategori)) continue;
       if (a && a.slug && a.baslik_tr) out.push(a);
       else console.warn(`[articles] eksik alanlı dosya atlandı: ${f}`);
     } catch (e: any) {

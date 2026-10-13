@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { loadBenchmarkData } from '../lib/benchmarks';
+import { buildStands } from '../lib/stands';
 import { categoryName } from '../data/benchmarkCatalog';
 
 const data = loadBenchmarkData();
@@ -55,13 +56,15 @@ const defA = leaders[0] ?? models[0]?.k;
 const defB = leaders[1] ?? models[1]?.k;
 
 const scores = Object.fromEntries([...best.entries()].filter(([k]) => models.some(m => m.k === k)));
-const payload = JSON.stringify({ benches, scores, names: Object.fromEntries([...names.entries()].filter(([k]) => scores[k])), defA, defB }).replace(/</g, '\\u003c');
+// Parametre kartları (altıgen) yalnızca seçilebilir modeller için
+const stands = Object.fromEntries(buildStands(data.entries).filter(s => scores[s.key]).map(s => [s.key, s]));
+const payload = JSON.stringify({ benches, scores, stands, names: Object.fromEntries([...names.entries()].filter(([k]) => scores[k])), defA, defB }).replace(/</g, '\\u003c');
 ---
 
 <Layout
 	title="Model Karşılaştırma | Yöney"
 	description="İki yapay zekâ modelini LMArena, SWE-bench ve resmi duyurulardaki ortak testlerde yan yana karşılaştırın."
->
+ palette="kan">
 	<div class="cmp-page">
 		<header class="page-head">
 			<p class="overline">Karşılaştır</p>
@@ -73,9 +76,10 @@ const payload = JSON.stringify({ benches, scores, names: Object.fromEntries([...
 			<p class="empty">Karşılaştırma için yeterli veri yok.</p>
 		) : (
 			<>
-				<div class="pickers">
-					<label class="picker picker-a">
-						<span class="picker-label"><i class="swatch swatch-a"></i>Model A</span>
+				<div class="vs">
+					<label class="fighter fighter-a">
+						<span class="fighter-tag">Model A</span>
+						<span class="fighter-name" id="nameA" aria-hidden="true"></span>
 						<select class="field" id="selA">
 							{groups.map(g => (
 								<optgroup label={g.p}>
@@ -84,9 +88,10 @@ const payload = JSON.stringify({ benches, scores, names: Object.fromEntries([...
 							))}
 						</select>
 					</label>
-					<button class="swap" id="swap" type="button" aria-label="Modellerin yerini değiştir" title="Yer değiştir"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 4 3 8l4 4M3 8h14M17 20l4-4-4-4M21 16H7"/></svg></button>
-					<label class="picker picker-b">
-						<span class="picker-label"><i class="swatch swatch-b"></i>Model B</span>
+					<button class="vs-mark" id="swap" type="button" aria-label="Modellerin yerini değiştir" title="Yer değiştir">VS</button>
+					<label class="fighter fighter-b">
+						<span class="fighter-tag">Model B</span>
+						<span class="fighter-name" id="nameB" aria-hidden="true"></span>
 						<select class="field" id="selB">
 							{groups.map(g => (
 								<optgroup label={g.p}>
@@ -104,6 +109,18 @@ const payload = JSON.stringify({ benches, scores, names: Object.fromEntries([...
 					</div>
 				)}
 
+				<section class="duel" id="duel" aria-label="Parametre karşılaştırması">
+					<div class="duel-chart" id="duelChart"></div>
+					<div class="duel-side">
+						<h2 class="duel-title">Parametreler</h2>
+						<p class="duel-note">LMArena sıralamalarına göre: ilk %10 <strong>A</strong> … son dilim <strong>E</strong>, veri yoksa <strong>?</strong></p>
+						<table class="duel-grades">
+							<thead><tr><th>Eksen</th><th class="ga">A</th><th class="gb">B</th></tr></thead>
+							<tbody id="duelGrades"></tbody>
+						</table>
+					</div>
+				</section>
+
 				<section class="result" aria-live="polite">
 					<div class="summary" id="summary"></div>
 					<label class="toggle">
@@ -113,7 +130,7 @@ const payload = JSON.stringify({ benches, scores, names: Object.fromEntries([...
 					<div class="rows" id="rows"></div>
 				</section>
 
-				<p class="note">Skorlar farklı kaynaklardan ve farklı tarihlerden gelir. LMArena skorları (ELO) insan oylarına dayalı görelidir; SWE-bench skorları model ile ajan sisteminin birlikte aldığı sonuçtur. Ayrıntılar için <a href="/benchmarklar">Benchmarklar</a> sayfasına bak.</p>
+				<p class="note">Skorlar farklı kaynaklardan ve farklı tarihlerden gelir. LMArena skorları (ELO) insan oylarına dayalı görelidir; SWE-bench skorları model ile ajan sisteminin birlikte aldığı sonuçtur. Ayrıntılar için <a href="/benchmarklar">Benchmark</a> sayfasına bak.</p>
 			</>
 		)}
 	</div>
@@ -122,6 +139,7 @@ const payload = JSON.stringify({ benches, scores, names: Object.fromEntries([...
 
 <script>
 	import { esc, fmtScore } from '../lib/leaderboard';
+	import { AXES, standSvg, type StandCard } from '../lib/standChart';
 
 	interface Bench { id: string; name: string; category: string; unit: string; hib: boolean; lo: number; hi: number }
 	interface Best { s: number; v: string; st: string | null; src: string; u: string | null }
@@ -132,11 +150,21 @@ const payload = JSON.stringify({ benches, scores, names: Object.fromEntries([...
 
 	if (raw && selA && selB) {
 		const data = JSON.parse(raw.textContent || '{}') as {
-			benches: Bench[]; scores: Record<string, Record<string, Best>>; names: Record<string, { name: string; provider: string | null }>; defA: string; defB: string;
+			benches: Bench[];
+			scores: Record<string, Record<string, Best>>;
+			stands: Record<string, StandCard>;
+			names: Record<string, { name: string; provider: string | null }>;
+			defA: string;
+			defB: string;
 		};
 		const rowsEl = document.getElementById('rows')!;
 		const summaryEl = document.getElementById('summary')!;
 		const onlyCommon = document.getElementById('onlyCommon') as HTMLInputElement;
+		const duel = document.getElementById('duel')!;
+		const duelChart = document.getElementById('duelChart')!;
+		const duelGrades = document.getElementById('duelGrades')!;
+		const nameAEl = document.getElementById('nameA')!;
+		const nameBEl = document.getElementById('nameB')!;
 
 		const width = (b: Bench, v: number) => {
 			const pct = ((v - b.lo) / ((b.hi - b.lo) || 1)) * 100;
@@ -157,10 +185,31 @@ const payload = JSON.stringify({ benches, scores, names: Object.fromEntries([...
 			</div>`;
 		}
 
+		function renderDuel(a: string, b: string) {
+			const sa = data.stands[a], sb = data.stands[b];
+			if (!sa && !sb) {
+				duel.hidden = true;
+				return;
+			}
+			duel.hidden = false;
+			const series = [sa && { card: sa, color: 'var(--a2)' }, sb && { card: sb, color: 'var(--a3)' }].filter(Boolean) as { card: StandCard; color: string }[];
+			duelChart.innerHTML = standSvg(series, { size: 340, title: 'Parametre karşılaştırması' });
+			// Tabloyu baştan çizerken şekil sıfırdan büyüsün
+			const svg = duelChart.querySelector('svg');
+			if (svg) requestAnimationFrame(() => requestAnimationFrame(() => svg.classList.add('live')));
+			duelGrades.innerHTML = AXES.map(ax => {
+				const ga = sa?.axes[ax.id]?.grade ?? '?';
+				const gb = sb?.axes[ax.id]?.grade ?? '?';
+				return `<tr><td>${esc(ax.label)}</td><td class="ga" data-g="${ga}">${ga}</td><td class="gb" data-g="${gb}">${gb}</td></tr>`;
+			}).join('');
+		}
+
 		function render() {
 			const a = selA!.value, bKey = selB!.value;
 			const A = data.scores[a] ?? {}, B = data.scores[bKey] ?? {};
 			const nameA = data.names[a]?.name ?? a, nameB = data.names[bKey]?.name ?? bKey;
+			nameAEl.textContent = nameA;
+			nameBEl.textContent = nameB;
 			let winsA = 0, winsB = 0, common = 0;
 			const html: string[] = [];
 			for (const b of data.benches) {
@@ -189,10 +238,11 @@ const payload = JSON.stringify({ benches, scores, names: Object.fromEntries([...
 			}
 			rowsEl.innerHTML = html.length ? html.join('') : '<p class="empty">Bu iki modelin ortak testi yok. Ortak olmayanları görmek için yukarıdaki seçeneği kapat.</p>';
 			summaryEl.innerHTML = common
-				? `<div class="score-a"><i class="swatch swatch-a"></i><span>${esc(nameA)}</span><strong>${winsA}</strong></div>
+				? `<div class="score-a"><span>${esc(nameA)}</span><strong>${winsA}</strong></div>
 				   <div class="score-mid">${common} ortak test</div>
-				   <div class="score-b"><strong>${winsB}</strong><span>${esc(nameB)}</span><i class="swatch swatch-b"></i></div>`
+				   <div class="score-b"><strong>${winsB}</strong><span>${esc(nameB)}</span></div>`
 				: `<div class="score-mid">${esc(nameA)} ile ${esc(nameB)} arasında ortak test yok</div>`;
+			renderDuel(a, bKey);
 			history.replaceState(null, '', `#a=${encodeURIComponent(a)}&b=${encodeURIComponent(bKey)}`);
 		}
 
@@ -204,8 +254,13 @@ const payload = JSON.stringify({ benches, scores, names: Object.fromEntries([...
 		selA.addEventListener('change', render);
 		selB.addEventListener('change', render);
 		onlyCommon.addEventListener('change', render);
-		document.getElementById('swap')?.addEventListener('click', () => {
-			const t = selA.value; selA.value = selB.value; selB.value = t; render();
+		const swapBtn = document.getElementById('swap');
+		swapBtn?.addEventListener('click', () => {
+			const t = selA.value; selA.value = selB.value; selB.value = t;
+			swapBtn.classList.remove('spin');
+			void swapBtn.offsetWidth;
+			swapBtn.classList.add('spin');
+			render();
 		});
 		document.querySelectorAll<HTMLButtonElement>('.quick-btn').forEach(btn => btn.addEventListener('click', () => {
 			selA.value = btn.dataset.a!; selB.value = btn.dataset.b!; render();
@@ -216,71 +271,111 @@ const payload = JSON.stringify({ benches, scores, names: Object.fromEntries([...
 
 <style>
 	.cmp-page {
-		--series-a: var(--magenta);
-		--series-b: var(--teal);
-		max-width: 1040px;
+		--series-a: var(--a2);
+		--series-b: var(--a3);
+		max-width: 1140px;
 		margin: 0 auto;
 	}
 
-	.pickers {
+	/* ---------- VS sahnesi ---------- */
+	.vs {
+		position: relative;
 		display: grid;
-		grid-template-columns: 1fr auto 1fr;
-		align-items: end;
-		gap: 16px;
-		margin-bottom: 16px;
+		grid-template-columns: minmax(0, 1fr) 0 minmax(0, 1fr);
+		margin-bottom: 18px;
+		border: 3px solid var(--line);
+		box-shadow: 12px 12px 0 var(--shadow);
 	}
 
-	.picker {
+	.fighter {
 		display: flex;
 		flex-direction: column;
-		gap: 8px;
+		gap: 12px;
 		min-width: 0;
+		min-height: 230px;
+		padding: 24px 28px 26px;
+		color: var(--on-a2);
 	}
 
-	.picker-label {
-		display: inline-flex;
-		align-items: center;
-		gap: 8px;
+	.fighter-a {
+		background: var(--series-a);
+		clip-path: polygon(0 0, 100% 0, calc(100% - 40px) 100%, 0 100%);
+		padding-right: 70px;
+	}
+
+	.fighter-b {
+		grid-column: 3;
+		align-items: flex-end;
+		text-align: right;
+		background: var(--series-b);
+		color: var(--on-a1);
+		margin-left: -40px;
+		padding-left: 80px;
+		clip-path: polygon(40px 0, 100% 0, 100% 100%, 0 100%);
+	}
+
+	.fighter-tag {
 		font-size: 0.72rem;
-		font-weight: 800;
-		font-stretch: 82%;
-		letter-spacing: 0.14em;
+		font-weight: 900;
+		font-stretch: 80%;
+		letter-spacing: 0.18em;
 		text-transform: uppercase;
 	}
 
-	.picker .field {
-		height: 54px;
+	.fighter-name {
+		flex: 1;
+		display: flex;
+		align-items: center;
 		font-family: var(--font-display);
-		font-size: 1.15rem;
+		font-size: clamp(1.8rem, 3.8vw, 3.3rem);
+		line-height: 0.95;
+		text-transform: uppercase;
+		text-shadow: 4px 4px 0 rgba(23, 15, 51, 0.35);
+		overflow-wrap: anywhere;
+	}
+
+	.fighter .field {
+		height: 46px;
+		max-width: 100%;
+		border-color: currentColor;
+		background: rgba(255, 255, 255, 0.92);
+		color: #170f33;
 		font-weight: 700;
 		cursor: pointer;
 	}
 
-	.picker-a .field {
-		border-width: 2px;
-		border-top: 6px solid var(--series-a);
-	}
-
-	.picker-b .field {
-		border-width: 2px;
-		border-top: 6px solid var(--series-b);
-	}
-
-	.swap {
-		width: 54px;
-		height: 54px;
+	.vs-mark {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		z-index: 3;
+		width: 92px;
+		height: 92px;
 		display: grid;
 		place-items: center;
-		border: 2px solid var(--line);
+		margin: -46px 0 0 -46px;
+		border: 3px solid var(--line);
 		border-radius: 50%;
-		background: var(--gold);
-		color: var(--on-bright);
+		background: var(--a1);
+		color: var(--on-a1);
+		font-family: var(--font-display);
+		font-size: 2.3rem;
+		letter-spacing: 0.02em;
+		box-shadow: 6px 6px 0 var(--shadow);
 		cursor: pointer;
-		transition: transform 0.3s ease;
+		transition: transform 0.3s var(--ease-pose);
 	}
 
-	.swap:hover {
-		transform: rotate(180deg);
+	.vs-mark:hover {
+		transform: rotate(-12deg) scale(1.08);
+	}
+
+	.vs-mark.spin {
+		animation: vs-spin 0.6s var(--ease-pose);
+	}
+
+	@keyframes vs-spin {
+		from { transform: rotate(-360deg) scale(0.6); }
 	}
 
 	:global(.cmp-page .swatch-a) { background: var(--series-a); }
@@ -290,39 +385,115 @@ const payload = JSON.stringify({ benches, scores, names: Object.fromEntries([...
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
-		gap: 6px 14px;
-		margin-bottom: 40px;
+		gap: 8px 16px;
+		margin: 28px 0 56px;
 	}
 
 	.quick-label {
-		color: var(--ink-3);
+		color: var(--muted);
 		font-size: 0.7rem;
-		font-weight: 800;
-		font-stretch: 82%;
-		letter-spacing: 0.14em;
+		font-weight: 900;
+		font-stretch: 80%;
+		letter-spacing: 0.16em;
 		text-transform: uppercase;
 	}
 
 	.quick-btn {
 		padding: 2px 0;
 		border: 0;
-		border-bottom: 1.5px solid var(--rule-strong);
+		border-bottom: 2px solid var(--rule);
 		background: none;
-		color: var(--ink);
+		color: var(--text);
 		font: inherit;
-		font-family: var(--font-display);
-		font-size: 0.98rem;
+		font-family: var(--font-serif);
+		font-size: 1rem;
 		font-style: italic;
-		font-weight: 600;
+		font-weight: 700;
 		cursor: pointer;
 	}
 
 	.quick-btn:hover {
-		border-color: var(--magenta);
-		color: var(--link);
+		border-color: var(--a1);
+		color: var(--a1);
 	}
 
-	/* Skor tabelası */
+	/* ---------- Parametre düellosu ---------- */
+	.duel {
+		display: grid;
+		grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+		gap: 40px;
+		align-items: center;
+		margin-bottom: 64px;
+		padding: 32px;
+		background: var(--surface);
+		border: 3px solid var(--line);
+		box-shadow: 12px 12px 0 var(--a1);
+	}
+
+	.duel-chart {
+		max-width: 400px;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.duel-title {
+		margin: 0 0 6px;
+		font-size: 2.2rem;
+		text-transform: uppercase;
+	}
+
+	.duel-note {
+		margin: 0 0 18px;
+		color: var(--muted);
+		font-size: 0.86rem;
+	}
+
+	.duel-note strong {
+		color: var(--a1);
+		font-family: var(--font-display);
+		font-weight: 400;
+	}
+
+	.duel-grades {
+		width: 100%;
+		border-collapse: collapse;
+	}
+
+	.duel-grades th {
+		padding: 8px 6px;
+		color: var(--muted);
+		font-size: 0.7rem;
+		font-weight: 900;
+		font-stretch: 80%;
+		letter-spacing: 0.14em;
+		text-align: left;
+		text-transform: uppercase;
+		border-bottom: 2px solid var(--line);
+	}
+
+	.duel-grades th.ga { color: var(--series-a); text-align: center; }
+	.duel-grades th.gb { color: var(--series-b); text-align: center; }
+
+	.duel-grades :global(td) {
+		padding: 9px 6px;
+		border-bottom: 1px solid var(--rule);
+		font-weight: 700;
+	}
+
+	.duel-grades :global(td.ga),
+	.duel-grades :global(td.gb) {
+		width: 64px;
+		font-family: var(--font-display);
+		font-size: 1.5rem;
+		font-weight: 400;
+		text-align: center;
+	}
+
+	.duel-grades :global(td.ga) { color: var(--series-a); }
+	.duel-grades :global(td.gb) { color: var(--series-b); }
+	.duel-grades :global(td[data-g='?']) { color: var(--muted); }
+
+	/* ---------- Skor tabelası ---------- */
 	.summary {
 		display: grid;
 		grid-template-columns: 1fr auto 1fr;
@@ -331,14 +502,14 @@ const payload = JSON.stringify({ benches, scores, names: Object.fromEntries([...
 		margin-bottom: 22px;
 		padding: 26px 0;
 		border-top: 3px solid var(--line);
-		border-bottom: 1px solid var(--rule-strong);
+		border-bottom: 1px solid var(--rule);
 	}
 
 	:global(.score-a),
 	:global(.score-b) {
 		display: flex;
 		align-items: center;
-		gap: 14px;
+		gap: 16px;
 		min-width: 0;
 	}
 
@@ -351,19 +522,20 @@ const payload = JSON.stringify({ benches, scores, names: Object.fromEntries([...
 	:global(.score-b span) {
 		overflow: hidden;
 		font-family: var(--font-display);
-		font-size: 1.3rem;
-		font-weight: 800;
-		line-height: 1.15;
+		font-size: 1.5rem;
+		line-height: 1.05;
 		text-overflow: ellipsis;
+		text-transform: uppercase;
 	}
 
 	:global(.score-a strong),
 	:global(.score-b strong) {
 		font-family: var(--font-display);
-		font-size: 4rem;
-		font-weight: 900;
+		font-size: 4.6rem;
+		font-weight: 400;
 		line-height: 0.9;
 		font-variant-numeric: tabular-nums;
+		text-shadow: 5px 5px 0 var(--shadow);
 	}
 
 	:global(.score-a strong) { color: var(--series-a); }
@@ -371,10 +543,11 @@ const payload = JSON.stringify({ benches, scores, names: Object.fromEntries([...
 
 	:global(.score-mid) {
 		grid-column: 2;
-		font-family: var(--font-display);
-		font-size: 1rem;
+		color: var(--text-2);
+		font-family: var(--font-serif);
+		font-size: 1.05rem;
 		font-style: italic;
-		color: var(--ink-2);
+		font-weight: 700;
 		text-align: center;
 		white-space: nowrap;
 	}
@@ -384,15 +557,15 @@ const payload = JSON.stringify({ benches, scores, names: Object.fromEntries([...
 		align-items: center;
 		gap: 9px;
 		margin-bottom: 10px;
-		color: var(--ink-2);
+		color: var(--text-2);
 		font-size: 0.88rem;
 		cursor: pointer;
 	}
 
 	.toggle input {
-		width: 1.05rem;
-		height: 1.05rem;
-		accent-color: var(--magenta);
+		width: 1.1rem;
+		height: 1.1rem;
+		accent-color: var(--a2);
 	}
 
 	:global(.cmp-page .row) {
@@ -407,16 +580,17 @@ const payload = JSON.stringify({ benches, scores, names: Object.fromEntries([...
 	:global(.cmp-page .test strong) {
 		display: block;
 		font-family: var(--font-display);
-		font-size: 1.08rem;
-		font-weight: 800;
-		line-height: 1.2;
+		font-size: 1.15rem;
+		font-weight: 400;
+		line-height: 1.1;
+		text-transform: uppercase;
 	}
 
 	:global(.cmp-page .test .cat) {
-		color: var(--ink-3);
+		color: var(--muted);
 		font-size: 0.72rem;
 		font-weight: 700;
-		font-stretch: 82%;
+		font-stretch: 80%;
 		letter-spacing: 0.1em;
 		text-transform: uppercase;
 	}
@@ -429,39 +603,37 @@ const payload = JSON.stringify({ benches, scores, names: Object.fromEntries([...
 
 	:global(.cmp-page .side) {
 		display: grid;
-		grid-template-columns: 4.6rem 1fr;
+		grid-template-columns: 4.8rem 1fr;
 		align-items: center;
 		gap: 12px;
 	}
 
 	:global(.cmp-page .side .val) {
-		color: var(--ink-3);
+		color: var(--muted);
 		font-family: var(--font-display);
-		font-size: 1rem;
-		font-weight: 700;
+		font-size: 1.1rem;
 		text-align: right;
 		font-variant-numeric: tabular-nums;
 	}
 
 	:global(.cmp-page .side.win .val) {
-		color: var(--ink);
-		font-weight: 900;
+		color: var(--text);
 	}
 
 	:global(.cmp-page .track) {
-		height: 12px;
+		height: 14px;
 		background: var(--rule);
 	}
 
 	:global(.cmp-page .bar) {
 		display: block;
 		height: 100%;
-		transition: width 0.3s ease;
+		transition: width 0.4s var(--ease-pose);
 	}
 
 	:global(.cmp-page .side.a .bar) { background: var(--series-a); }
 	:global(.cmp-page .side.b .bar) { background: var(--series-b); }
-	:global(.cmp-page .side:not(.win) .bar) { opacity: 0.45; }
+	:global(.cmp-page .side:not(.win) .bar) { opacity: 0.4; }
 
 	:global(.cmp-page .verdict) {
 		display: flex;
@@ -473,36 +645,59 @@ const payload = JSON.stringify({ benches, scores, names: Object.fromEntries([...
 
 	:global(.cmp-page .verdict strong) {
 		font-family: var(--font-display);
-		font-weight: 800;
+		font-weight: 400;
+		font-size: 1.1rem;
 	}
 
 	:global(.cmp-page .verdict.muted) {
-		color: var(--ink-3);
+		color: var(--muted);
 	}
 
-	:global(.cmp-page .empty) {
+	:global(.cmp-page .rows .empty) {
 		padding: 24px 0;
 		border: 0;
-		color: var(--ink-3);
+		color: var(--muted);
 		text-align: center;
 	}
 
 	.note {
-		margin-top: 24px;
-		color: var(--ink-3);
+		margin-top: 28px;
+		color: var(--muted);
 		font-size: 0.88rem;
 	}
 
-	@media (max-width: 720px) {
-		.pickers {
+	@media (max-width: 860px) {
+		.vs {
 			grid-template-columns: 1fr;
 		}
-		.swap {
-			justify-self: center;
-			transform: rotate(90deg);
+		.fighter-a,
+		.fighter-b {
+			grid-column: 1;
+			margin: 0;
+			padding: 22px 20px;
+			clip-path: none;
+			min-height: 0;
 		}
-		.swap:hover {
-			transform: rotate(270deg);
+		.fighter-a {
+			padding-bottom: 54px;
+		}
+		.fighter-b {
+			align-items: flex-start;
+			text-align: left;
+			padding-top: 54px;
+		}
+		.duel {
+			grid-template-columns: 1fr;
+			padding: 22px;
+		}
+	}
+
+	@media (max-width: 720px) {
+		.vs-mark {
+			width: 72px;
+			height: 72px;
+			margin: -36px 0 0 -36px;
+			font-size: 1.8rem;
 		}
 		:global(.cmp-page .row) {
 			grid-template-columns: 1fr;
@@ -525,7 +720,7 @@ const payload = JSON.stringify({ benches, scores, names: Object.fromEntries([...
 		:global(.score-a strong),
 		:global(.score-b strong) {
 			margin-left: auto;
-			font-size: 2.6rem;
+			font-size: 3rem;
 		}
 	}
 </style>

@@ -1,12 +1,13 @@
 ---
 /**
  * Haber kutusu. Görünümler:
- *  lead   manşet (büyük görsel, büyük başlık, özet)
- *  second ikincil manşet (görsel + başlık)
- *  brief  kısa haber (yalnızca başlık)
- *  row    liste satırı (solda görsel, sağda başlık + özet)
- *  card   kart (üstte görsel)
+ *  card   kart (üstte poster görsel, başlık, özet, açılır "Özetle")
+ *  big    büyük kart (ızgarada iki sütun)
+ *  row    liste satırı (solda görsel)
+ *  brief  kısa haber (görselsiz)
  *  mini   numaralı kısa liste öğesi
+ * Görsel iki kat çizilir: üstteki kopya paletin renk alanlarına ayrılmış
+ * posterdir; fare üstüne gelince alttaki gerçek renkli fotoğraf görünür.
  */
 import Art from './Art.astro';
 import { categoryOf, getCategory } from '../lib/categories';
@@ -14,43 +15,63 @@ import { sourceLabel } from '../lib/articles';
 
 interface Props {
 	article: any;
-	variant?: 'lead' | 'second' | 'brief' | 'row' | 'card' | 'mini';
+	variant?: 'card' | 'big' | 'row' | 'brief' | 'mini';
 	hidden?: boolean;
 	eager?: boolean;
+	delay?: number;
 }
-const { article: a, variant = 'card', hidden = false, eager = false } = Astro.props;
+const { article: a, variant = 'card', hidden = false, eager = false, delay } = Astro.props;
 
 const cat = getCategory(categoryOf(a));
 const day = new Date(a.date).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', timeZone: 'Europe/Istanbul' });
 const href = `/haber/${a.slug}`;
-const hasMedia = variant !== 'brief' && variant !== 'mini';
-const hasSummary = variant === 'lead' || variant === 'row' || variant === 'card';
+const hasMedia = variant === 'card' || variant === 'big' || variant === 'row';
+const hasSummary = variant === 'card' || variant === 'big' || variant === 'row';
+const points: string[] = (a.onemli_maddeler ?? []).slice(0, 3);
 const scoreCount = a.benchmarklar?.length ?? 0;
-const Heading = variant === 'lead' ? 'h2' : 'h3';
+const onError = "this.parentElement.querySelectorAll('img').forEach(function(i){i.remove()})";
 ---
 
-<article class:list={['story', `story-${variant}`, 'reveal']} data-cat={cat.id} data-category={cat.id} hidden={hidden}>
+<article
+	class:list={['story', `story-${variant}`, 'reveal-color', 'pose']}
+	data-cat={cat.id}
+	data-category={cat.id}
+	hidden={hidden}
+	style={delay ? `--delay:${delay}s` : undefined}
+>
 	{hasMedia && (
-		<a class="story-media frame" href={href} tabindex="-1" aria-hidden="true">
-			<div class="media">
-				<Art cat={cat.id} seed={a.slug} />
-				{a.gorsel_url && (
-					<img src={a.gorsel_url} alt="" loading={eager ? 'eager' : 'lazy'} decoding="async" referrerpolicy="no-referrer" onerror="this.remove()" />
-				)}
-			</div>
+		<a class="story-media poster tilt" href={href} tabindex="-1" aria-hidden="true">
+			<Art cat={cat.id} seed={a.slug} />
+			{a.gorsel_url && (
+				<>
+					<img class="img-true" src={a.gorsel_url} alt="" loading={eager ? 'eager' : 'lazy'} decoding="async" referrerpolicy="no-referrer" onerror={onError} />
+					<img class="img-poster" src={a.gorsel_url} alt="" loading={eager ? 'eager' : 'lazy'} decoding="async" referrerpolicy="no-referrer" />
+				</>
+			)}
+			<span class="shine"></span>
 		</a>
 	)}
 	<div class="story-body">
-		{variant !== 'mini' && <a class="kicker" href={`/kategori/${cat.id}`}>{cat.name}</a>}
-		<Heading class="story-title"><a href={href}>{a.baslik_tr}</a></Heading>
+		{variant !== 'mini' && (
+			<a class="chip" href={`/kategori/${cat.id}`} data-cat={cat.id}><span><span class="num">{cat.numeral}</span> {cat.name}</span></a>
+		)}
+		<h3 class="story-title"><a href={href}>{a.baslik_tr}</a></h3>
 		{hasSummary && <p class="story-summary">{a.ozet_tr}</p>}
+		{hasSummary && points.length > 0 && (
+			<details class="story-points">
+				<summary>Özetle <span>{points.length} madde</span></summary>
+				<ol>
+					{points.map(p => <li>{p}</li>)}
+				</ol>
+			</details>
+		)}
 		<p class="story-meta">
 			<span lang="en">{sourceLabel(a.source)}</span>
-			<span aria-hidden="true">·</span>
+			<span class="dot" aria-hidden="true">◆</span>
 			<time datetime={a.date} data-rel>{day}</time>
 			{scoreCount > 0 && variant !== 'mini' && (
 				<>
-					<span aria-hidden="true">·</span>
+					<span class="dot" aria-hidden="true">◆</span>
 					<span class="score-note">{scoreCount} skor</span>
 				</>
 			)}
@@ -64,207 +85,259 @@ const Heading = variant === 'lead' ? 'h2' : 'h3';
 		min-width: 0;
 	}
 
+	/* ---- Görsel ---- */
 	.story-media {
-		display: block;
-	}
-
-	.story-media .media {
 		aspect-ratio: 16 / 10;
+		border: 2px solid var(--line);
+		box-shadow: 8px 8px 0 var(--c);
 	}
 
-	/* Görsel, soyut kompozisyonun üstünde durur; yüklenemezse kompozisyon görünür */
-	.story-media img {
-		position: relative;
+	.story:hover .story-media {
+		box-shadow: 12px 12px 0 var(--c);
 	}
 
 	.story-body {
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
-		gap: 8px;
+		gap: 10px;
 		min-width: 0;
 	}
 
 	.story-title {
 		margin: 0;
-		font-weight: 800;
-		line-height: 1.12;
-		letter-spacing: -0.012em;
+		font-size: 1.5rem;
+		line-height: 1.04;
+		letter-spacing: 0.005em;
 	}
 
 	.story-title a {
-		color: var(--ink);
+		color: var(--text);
 		text-decoration: none;
-		background-image: linear-gradient(var(--c), var(--c));
-		background-size: 0 3px;
-		background-position: 0 100%;
+		background-image: linear-gradient(var(--a1), var(--a1));
+		background-size: 0 0.14em;
+		background-position: 0 92%;
 		background-repeat: no-repeat;
-		transition: background-size 0.3s ease;
+		transition: background-size 0.35s var(--ease-out);
 	}
 
 	.story-title a:hover,
 	.story-title a:focus-visible {
-		background-size: 100% 3px;
+		background-size: 100% 0.14em;
 	}
 
 	.story-summary {
 		margin: 0;
-		color: var(--ink-2);
+		color: var(--text-2);
+		font-size: 0.95rem;
+		line-height: 1.55;
 		display: -webkit-box;
 		-webkit-line-clamp: 3;
 		-webkit-box-orient: vertical;
 		overflow: hidden;
 	}
 
+	/* ---- Açılır "Özetle" ---- */
+	.story-points {
+		width: 100%;
+		border-top: 1px solid var(--rule);
+	}
+
+	.story-points summary {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		padding: 9px 0 2px;
+		list-style: none;
+		color: var(--text);
+		font-size: 0.7rem;
+		font-weight: 900;
+		font-stretch: 80%;
+		letter-spacing: 0.16em;
+		text-transform: uppercase;
+		cursor: pointer;
+	}
+
+	.story-points summary::-webkit-details-marker {
+		display: none;
+	}
+
+	.story-points summary::before {
+		content: '';
+		width: 0;
+		height: 0;
+		border-left: 7px solid var(--c);
+		border-top: 5px solid transparent;
+		border-bottom: 5px solid transparent;
+		transition: transform 0.25s var(--ease-pose);
+	}
+
+	.story-points[open] summary::before {
+		transform: rotate(90deg);
+	}
+
+	.story-points summary span {
+		color: var(--muted);
+		font-weight: 700;
+	}
+
+	.story-points ol {
+		list-style: none;
+		margin: 8px 0 4px;
+		padding: 0;
+		counter-reset: p;
+		display: grid;
+		gap: 8px;
+	}
+
+	.story-points li {
+		counter-increment: p;
+		display: grid;
+		grid-template-columns: 1.6rem minmax(0, 1fr);
+		color: var(--text-2);
+		font-size: 0.88rem;
+		line-height: 1.45;
+	}
+
+	.story-points li::before {
+		content: counter(p);
+		color: var(--c);
+		font-family: var(--font-serif);
+		font-size: 1.25rem;
+		font-style: italic;
+		font-weight: 900;
+		line-height: 1;
+	}
+
+	.story-points[open] ol {
+		animation: points-in 0.45s var(--ease-pose);
+	}
+
+	@keyframes points-in {
+		from { opacity: 0; transform: translateY(-8px); }
+	}
+
 	.story-meta {
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
-		gap: 2px 7px;
+		gap: 2px 8px;
 		margin: 0;
-		color: var(--ink-3);
-		font-size: 0.78rem;
-		font-weight: 600;
+		color: var(--muted);
+		font-size: 0.72rem;
+		font-weight: 700;
+		font-stretch: 85%;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+	}
+
+	.story-meta .dot {
+		color: var(--c);
+		font-size: 0.6rem;
 	}
 
 	.score-note {
-		color: var(--ink);
+		color: var(--a1);
 	}
 
-	/* ---- Manşet ---- */
-	.story-lead .story-media .media {
-		aspect-ratio: 3 / 2;
+	/* ---- Kart ---- */
+	.story-card {
+		display: flex;
+		flex-direction: column;
+		gap: 22px;
 	}
 
-	.story-lead .frame::before {
-		inset: 14px -14px -14px 14px;
+	/* ---- Büyük kart ---- */
+	.story-big {
+		display: grid;
+		grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+		gap: 30px;
+		align-items: center;
 	}
 
-	.story-lead .story-body {
-		margin-top: 30px;
-		gap: 12px;
+	.story-big .story-media {
+		aspect-ratio: 4 / 3;
+		box-shadow: 12px 12px 0 var(--c);
 	}
 
-	.story-lead .story-title {
-		font-size: clamp(2rem, 3.8vw, 3.3rem);
-		font-weight: 900;
-		line-height: 1.02;
-		letter-spacing: -0.022em;
+	.story-big .story-title {
+		font-size: clamp(1.9rem, 3vw, 2.6rem);
+		line-height: 0.98;
+		text-transform: uppercase;
 	}
 
-	.story-lead .story-summary {
-		font-size: 1.12rem;
-		line-height: 1.6;
-	}
-
-	/* ---- İkincil manşet ---- */
-	.story-second .story-media .media {
-		aspect-ratio: 16 / 9;
-	}
-
-	.story-second .frame::before {
-		inset: 8px -8px -8px 8px;
-	}
-
-	.story-second .story-body {
-		margin-top: 20px;
-	}
-
-	.story-second .story-title {
-		font-size: 1.4rem;
-	}
-
-	/* ---- Kısa haber ---- */
-	.story-brief .story-title {
-		font-size: 1.15rem;
-		line-height: 1.18;
+	.story-big .story-summary {
+		font-size: 1.02rem;
+		-webkit-line-clamp: 4;
 	}
 
 	/* ---- Liste satırı ---- */
 	.story-row {
 		display: grid;
-		grid-template-columns: minmax(0, 38%) minmax(0, 1fr);
+		grid-template-columns: minmax(0, 36%) minmax(0, 1fr);
 		gap: 26px;
-		padding: 26px 0;
-		border-bottom: 1px solid var(--rule-strong);
+		padding: 24px 0;
+		border-bottom: 1px solid var(--rule);
 	}
 
-	.story-row:first-child {
-		padding-top: 4px;
-	}
-
-	.story-row .story-media .media {
+	.story-row .story-media {
 		aspect-ratio: 4 / 3;
-	}
-
-	.story-row .frame::before {
-		inset: 7px -7px -7px 7px;
+		box-shadow: 6px 6px 0 var(--c);
 	}
 
 	.story-row .story-title {
-		font-size: 1.5rem;
+		font-size: 1.45rem;
 	}
 
-	.story-row .story-summary {
-		font-size: 0.97rem;
-		-webkit-line-clamp: 3;
-	}
-
-	/* ---- Kart ---- */
-	.story-card .story-media .media {
-		aspect-ratio: 16 / 10;
-	}
-
-	.story-card .frame::before {
-		inset: 8px -8px -8px 8px;
-	}
-
-	.story-card .story-body {
-		margin-top: 20px;
-	}
-
-	.story-card .story-title {
-		font-size: 1.3rem;
-	}
-
-	.story-card .story-summary {
-		font-size: 0.93rem;
-		-webkit-line-clamp: 2;
+	/* ---- Kısa haber ---- */
+	.story-brief .story-title {
+		font-size: 1.2rem;
+		line-height: 1.08;
 	}
 
 	/* ---- Numaralı kısa liste ---- */
-	.story-mini .story-title {
-		font-size: 1.02rem;
-		line-height: 1.22;
+	.story-mini .story-body {
+		gap: 6px;
 	}
 
-	.story-mini .story-body {
-		gap: 5px;
+	.story-mini .story-title {
+		font-family: var(--font-sans);
+		font-size: 1rem;
+		font-weight: 800;
+		line-height: 1.25;
+		letter-spacing: 0;
+	}
+
+	@media (max-width: 760px) {
+		.story-big {
+			grid-template-columns: 1fr;
+			gap: 22px;
+		}
 	}
 
 	@media (max-width: 640px) {
 		.story-row {
-			grid-template-columns: minmax(0, 1fr) 104px;
+			grid-template-columns: minmax(0, 1fr) 108px;
 			gap: 16px;
 			padding: 20px 0;
 		}
 		.story-row .story-media {
 			order: 2;
-		}
-		.story-row .story-media .media {
 			aspect-ratio: 1;
-		}
-		.story-row .frame::before {
-			inset: 5px -5px -5px 5px;
+			box-shadow: 4px 4px 0 var(--c);
 		}
 		.story-row .story-title {
-			font-size: 1.15rem;
+			font-size: 1.2rem;
 		}
-		.story-row .story-summary {
+		.story-row .story-summary,
+		.story-row .story-points {
 			display: none;
 		}
-		.story-lead .story-body {
-			margin-top: 24px;
+		.story-media {
+			box-shadow: 6px 6px 0 var(--c);
+		}
+		.story:hover .story-media {
+			box-shadow: 6px 6px 0 var(--c);
 		}
 	}
 </style>

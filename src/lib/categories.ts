@@ -63,22 +63,21 @@ export const NEWS_CATEGORIES: NewsCategory[] = [
     emblem: 'M8 6l-6 6 6 6 M16 6l6 6-6 6 M14 3.5l-4 17',
   },
   {
-    id: 'politika',
-    name: 'Politika & Regülasyon',
-    numeral: 'VII',
-    tagline: 'Kurallar, kararlar, tartışmalar',
-    desc: 'Regülasyon, hukuk, güvenlik politikaları ve yapay zekânın toplumsal etkisi.',
-    emblem: 'M12 3v18 M6 21h12 M5 7h14 M5 7l-3 7a3 3 0 0 0 6 0z M19 7l-3 7a3 3 0 0 0 6 0z',
-  },
-  {
     id: 'diger',
     name: 'Diğer',
-    numeral: 'VIII',
+    numeral: 'VII',
     tagline: 'Gündemin tuhaf köşeleri',
     desc: 'Hiçbir kalıba sığmayan ama kaçırılmaması gereken gelişmeler.',
     emblem: 'M12 12a1 1 0 1 1-1-1 3 3 0 1 1-2 4.2A5 5 0 1 1 17 12a7 7 0 1 1-12.8-3.9',
   },
 ];
+
+/**
+ * Sitede gösterilmeyen kategoriler. LLM haberleri yine bu kimlikle
+ * sınıflandırır; haber hattı bunları yayınlamadan atlar, site de eski
+ * kayıtları göstermez.
+ */
+export const HIDDEN_CATEGORIES = new Set(['politika']);
 
 export function getCategory(id: string | undefined | null): NewsCategory {
   return NEWS_CATEGORIES.find(c => c.id === id) ?? NEWS_CATEGORIES[NEWS_CATEGORIES.length - 1];

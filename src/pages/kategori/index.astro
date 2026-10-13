@@ -11,16 +11,16 @@ const chapters = NEWS_CATEGORIES.map(c => {
 });
 ---
 
-<Layout title="Bölümler | Yöney" description="Yöney'in sekiz bölümü: yeni modeller, güncellemeler, benchmarklar, araştırmalar, fiyatlar, geliştirici araçları, politika ve gündemin geri kalanı.">
+<Layout title="Bölümler | Yöney" description="Yöney'in yedi bölümü: yeni modeller, güncellemeler, benchmarklar, araştırmalar, fiyatlar, geliştirici araçları ve gündemin geri kalanı." palette="gece">
 	<header class="page-head">
-		<p class="overline">Yapay zekâ gündemi, sekiz bölümde</p>
-		<h1>Bölümler</h1>
-		<p class="lead">Her bölümün kendi rengi ve kendi hikâyesi var. Bir bölüm seçin; o alandaki bütün haberler tek sayfada.</p>
+		<p class="overline">Yapay zekâ gündemi, yedi bölümde</p>
+		<h1>Bölüm<em>ler</em></h1>
+		<p class="lead">Her bölümün kendi rengi, kendi deseni ve kendi hikâyesi var. Bir kapağa tıklayın; o alandaki bütün haberler tek sayfada.</p>
 	</header>
 
 	<div class="chapters">
-		{chapters.map(({ c, count, headlines }) => (
-			<ChapterTile category={c} count={count} headlines={headlines} size="large" />
+		{chapters.map(({ c, count, headlines }, i) => (
+			<ChapterTile category={c} count={count} headlines={headlines} size="large" delay={(i % 2) * 0.1} />
 		))}
 	</div>
 </Layout>
@@ -29,13 +29,13 @@ const chapters = NEWS_CATEGORIES.map(c => {
 	.chapters {
 		display: grid;
 		grid-template-columns: repeat(2, minmax(0, 1fr));
-		gap: 32px;
+		gap: 56px 44px;
 	}
 
 	@media (max-width: 760px) {
 		.chapters {
 			grid-template-columns: 1fr;
-			gap: 24px;
+			gap: 40px;
 		}
 	}
 </style>

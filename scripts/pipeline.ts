@@ -300,6 +300,7 @@ export async function runPipeline(isMock = false) {
     let processedCount = 0;
     let skippedNotAI = 0;
     let skippedLowValue = 0;
+    let skippedPolicy = 0;
 
     // Benchmark API kaynakları (LMArena, SWE-bench) scripts/fetch-benchmarks.ts tarafından işlenir
     const enabledSources = sources.filter((s: any) => s.enabled && (s.type ?? 'rss') === 'rss');
@@ -387,6 +388,15 @@ export async function runPipeline(isMock = false) {
                     text: fullText.substring(0, 15000)
                 });
 
+                // Politika haberleri sitede yer almıyor -> yayınlama
+                if (result.kategori === 'politika') {
+                    skippedPolicy++;
+                    console.log(`  ⊘ Skipped (politika): ${item.title}`);
+                    markSeen(item.link);
+                    await delay(1500);
+                    continue;
+                }
+
                 // Reklam / müşteri başarı hikâyesi / haber değeri olmayan gönderi -> yayınlama
                 if (result.onem <= 1) {
                     skippedLowValue++;
@@ -453,7 +463,7 @@ export async function runPipeline(isMock = false) {
         }
     }
 
-    console.log(`\nPipeline summary: ${processedCount} processed, ${skippedNotAI} skipped (non-AI), ${skippedLowValue} skipped (low value)`);
+    console.log(`\nPipeline summary: ${processedCount} processed, ${skippedNotAI} skipped (non-AI), ${skippedLowValue} skipped (low value), ${skippedPolicy} skipped (politika)`);
 
     // Final save. Not: haberlerdeki benchmark skorları artık benchmarks.json'a yazılmıyor;
     // site derlenirken doğrudan data/articles/*.json dosyalarından okunuyor.

@@ -1,7 +1,7 @@
 ---
 /**
- * Görseli olmayan haberler ve bölüm kapakları için bölüm renklerinde soyut
- * kompozisyon + amblem. `seed` verilirse (ör. haberin adresi) dört
+ * Görseli olmayan haberler ve bölüm kapakları için bölüm rengi ve deseniyle
+ * soyut kompozisyon + amblem. `seed` verilirse (ör. haberin adresi) dört
  * kompozisyondan biri seçilir; aynı bölümdeki görselsiz haberler birbirinin
  * aynısı görünmez.
  */
@@ -27,27 +27,32 @@ const v = seed ? h % 4 : 0;
 	/* 1: sol altta daire, ters yönde şerit */
 	.art[data-v='1'] {
 		background:
-			radial-gradient(circle at 20% 78%, var(--c-hi) 0 19%, transparent 19.3%),
+			radial-gradient(circle at 22% 76%, var(--a3) 0 18%, transparent 18.4%),
 			linear-gradient(62deg, transparent 0 40%, var(--c) 40% 62%, transparent 62%),
-			var(--c-dk);
+			var(--pat),
+			var(--bg-2);
 	}
 
 	/* 2: ortada büyük daire, yatay bant */
 	.art[data-v='2'] {
 		background:
-			linear-gradient(transparent 0 58%, var(--c) 58% 74%, transparent 74%),
-			radial-gradient(circle at 50% 46%, var(--c-hi) 0 27%, transparent 27.3%),
-			var(--c-dk);
+			linear-gradient(transparent 0 60%, var(--c) 60% 76%, transparent 76%),
+			radial-gradient(circle at 50% 46%, var(--a1) 0 27%, transparent 27.4%),
+			var(--pat),
+			var(--bg-2);
 	}
 
 	.art[data-v='2'] svg {
-		color: var(--c-dk);
+		color: var(--on-a1);
+		filter: none;
 	}
 
 	/* 3: dikey ikiye bölünmüş zemin, küçük daire */
 	.art[data-v='3'] {
 		background:
-			radial-gradient(circle at 64% 30%, var(--c-dk) 0 9%, transparent 9.3%),
-			linear-gradient(90deg, var(--c-dk) 0 46%, var(--c) 46% 100%);
+			radial-gradient(circle at 64% 30%, var(--a2) 0 10%, transparent 10.4%),
+			linear-gradient(90deg, var(--bg-2) 0 46%, transparent 46%),
+			var(--pat),
+			var(--c);
 	}
 </style>

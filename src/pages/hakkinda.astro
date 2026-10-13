@@ -1,6 +1,5 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import ArtBanner from '../components/ArtBanner.astro';
 
 const FEATURES = [
 	{
@@ -9,7 +8,7 @@ const FEATURES = [
 	},
 	{
 		t: 'Doğrulanmış benchmarklar',
-		d: 'Modellere ait resmi performans skorlarını ayıklayıp sıralamalar ve yan yana karşılaştırmalar halinde sunuyoruz.',
+		d: 'Modellere ait resmi performans skorlarını ayıklayıp sıralamalar, parametre kartları ve yan yana karşılaştırmalar halinde sunuyoruz.',
 	},
 	{
 		t: 'Sektörel etki',
@@ -24,23 +23,24 @@ const DONTS = [
 ];
 ---
 
-<Layout title="Hakkında | Yöney">
+<Layout title="Hakkında | Yöney" palette="menekse">
 	<div class="about">
 		<header class="page-head">
 			<p class="overline">Hakkında</p>
-			<h1>Yapay zekâ gündemi, <em>tek yerde ve Türkçe.</em></h1>
+			<h1>Yapay zekâ gündemi, <em>tek yerde</em></h1>
 		</header>
 
-		<p class="manifesto">Yöney; yapay zekâ dünyasındaki önemli gelişmeleri, model çıkışlarını ve teknik ilerlemeleri tek bir yerden takip etmeyi sağlayan bağımsız ve güncel bir bilgi platformudur.</p>
+		<p class="manifesto pose">Yöney; yapay zekâ dünyasındaki önemli gelişmeleri, model çıkışlarını ve teknik ilerlemeleri tek bir yerden takip etmeyi sağlayan bağımsız ve güncel bir bilgi platformudur. Renkleri sahneye göre değişir; haberleri ise kaynağına sadık kalır.</p>
 
 		<section>
 			<div class="section-head">
 				<span class="sec-num">01</span>
 				<h2>Ne yapıyoruz?</h2>
+				<span class="sec-line" aria-hidden="true"></span>
 			</div>
 			<div class="features">
 				{FEATURES.map((f, i) => (
-					<div class="feature">
+					<div class="feature pose" style={`--delay:${i * 0.08}s`}>
 						<span class="feature-num">{['I', 'II', 'III'][i]}</span>
 						<h3>{f.t}</h3>
 						<p>{f.d}</p>
@@ -53,74 +53,78 @@ const DONTS = [
 			<div class="section-head">
 				<span class="sec-num">02</span>
 				<h2>Ne yapmıyoruz?</h2>
+				<span class="sec-line" aria-hidden="true"></span>
 			</div>
 			<ul class="donts">
-				{DONTS.map(d => <li>{d}</li>)}
+				{DONTS.map(d => <li class="pose">{d}</li>)}
 			</ul>
 		</section>
 
-		<ArtBanner height={120}>
-			<p class="disclaimer"><strong>Sorumluluk reddi.</strong> Yöney üzerindeki içerikler ve teknik analizler yalnızca bilgilendirme amaçlıdır; yatırım, ticari veya teknik danışmanlık niteliği taşımaz. En güncel teknik detaylar ve kararlar için daima orijinal belgelere başvurulması önerilir.</p>
-		</ArtBanner>
+		<section class="disclaimer">
+			<h2>Sorumluluk reddi</h2>
+			<p>Yöney üzerindeki içerikler ve teknik analizler yalnızca bilgilendirme amaçlıdır; yatırım, ticari veya teknik danışmanlık niteliği taşımaz. En güncel teknik detaylar ve kararlar için daima orijinal belgelere başvurulması önerilir.</p>
+		</section>
 	</div>
 </Layout>
 
 <style>
 	.about {
-		max-width: 960px;
+		max-width: 1000px;
 		margin: 0 auto;
 	}
 
 	.manifesto {
-		margin: 0 0 64px;
-		padding: 28px 0;
-		border-top: 3px solid var(--line);
-		border-bottom: 1px solid var(--rule-strong);
-		font-family: var(--font-display);
+		margin: 0 0 80px;
+		padding: 34px 36px;
+		background: var(--a1);
+		color: var(--on-a1);
+		border: 3px solid var(--line);
+		box-shadow: 14px 14px 0 var(--a2);
+		font-family: var(--font-serif);
 		font-size: clamp(1.4rem, 2.8vw, 2rem);
 		font-style: italic;
-		font-weight: 600;
+		font-weight: 700;
 		line-height: 1.35;
+		transform: rotate(-1deg);
 	}
 
 	section {
-		margin-bottom: 56px;
+		margin-bottom: 72px;
 	}
 
 	.features {
 		display: grid;
 		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: 24px;
 	}
 
 	.feature {
-		padding: 0 24px;
-		border-left: 1px solid var(--rule-strong);
-	}
-
-	.feature:first-child {
-		padding-left: 0;
-		border-left: 0;
+		padding: 24px;
+		background: var(--surface);
+		border: 2px solid var(--line);
+		box-shadow: 8px 8px 0 var(--a3);
 	}
 
 	.feature-num {
 		display: block;
-		margin-bottom: 10px;
-		color: var(--magenta);
-		font-family: var(--font-display);
-		font-size: 2.6rem;
+		margin-bottom: 12px;
+		color: var(--a2);
+		font-family: var(--font-serif);
+		font-size: 3rem;
 		font-style: italic;
 		font-weight: 900;
 		line-height: 1;
 	}
 
 	.feature h3 {
-		margin-bottom: 8px;
-		font-size: 1.25rem;
+		margin-bottom: 10px;
+		font-size: 1.6rem;
+		text-transform: uppercase;
 	}
 
 	.feature p {
 		margin: 0;
-		color: var(--ink-2);
+		color: var(--text-2);
 		font-size: 0.95rem;
 		line-height: 1.6;
 	}
@@ -129,29 +133,43 @@ const DONTS = [
 		list-style: none;
 		margin: 0;
 		padding: 0;
-		counter-reset: d;
+		display: grid;
+		gap: 14px;
 	}
 
 	.donts li {
-		counter-increment: d;
 		display: grid;
-		grid-template-columns: 2.6rem minmax(0, 1fr);
-		padding: 16px 0;
-		border-bottom: 1px solid var(--rule);
-		color: var(--ink-2);
+		grid-template-columns: 3rem minmax(0, 1fr);
+		align-items: center;
+		padding: 18px 20px;
+		background: var(--surface);
+		border: 2px solid var(--line);
+		color: var(--text-2);
 		font-size: 1.02rem;
 		line-height: 1.6;
 	}
 
 	.donts li::before {
 		content: '✕';
-		color: var(--crimson);
-		font-weight: 900;
+		color: var(--a2);
+		font-family: var(--font-display);
+		font-size: 1.8rem;
 	}
 
 	.disclaimer {
-		max-width: 70ch;
+		padding: 26px 28px;
+		border: 2px dashed var(--line);
+	}
+
+	.disclaimer h2 {
+		margin-bottom: 8px;
+		font-size: 1.6rem;
+		text-transform: uppercase;
+	}
+
+	.disclaimer p {
 		margin: 0;
+		color: var(--text-2);
 		font-size: 0.95rem;
 		line-height: 1.6;
 	}
@@ -159,11 +177,10 @@ const DONTS = [
 	@media (max-width: 760px) {
 		.features {
 			grid-template-columns: 1fr;
-			gap: 28px;
 		}
-		.feature {
-			padding: 0;
-			border-left: 0;
+		.manifesto {
+			padding: 24px 22px;
+			transform: none;
 		}
 	}
 </style>

@@ -3,8 +3,11 @@ import Layout from '../layouts/Layout.astro';
 import { loadBenchmarkData } from '../lib/benchmarks';
 import { BENCHMARK_CATEGORIES } from '../data/benchmarkCatalog';
 import { renderRows, renderTable, fmtDate, unitLabel, type CEntry, type CBench } from '../lib/leaderboard';
+import StandCard from '../components/StandCard.astro';
+import { buildStands } from '../lib/stands';
 
 const data = loadBenchmarkData();
+const stands = buildStands(data.entries).slice(0, 6);
 
 // Sıralama ancak yeterli model varsa anlamlı. Yalnızca haberlerden gelen testlerde
 // (çoğu tek bir duyurudan) en az 3 model şartı aranır.
@@ -33,21 +36,40 @@ const payload = JSON.stringify({ benches, entries }).replace(/</g, '\\u003c');
 <Layout
 	title="Yapay Zekâ Benchmark Sıralamaları | Yöney"
 	description="LMArena ve SWE-bench liderlik tabloları ile resmi duyurulardan doğrulanmış benchmark skorları: kodlama, matematik, sohbet, görsel ve daha fazlası."
->
+ palette="zehir">
 	<div class="bench-page">
 		<header class="page-head">
 			<p class="overline">Arena</p>
-			<h1>Yapay zekâ modelleri <em>hangi testte</em> nerede?</h1>
+			<h1>Kim <em>zirvede?</em></h1>
 			<p class="lead">
 				{liveCount} canlı liderlik tablosu ve haberlerden doğrulanmış skorlar. Canlı tablolar günde iki kez güncellenir.
 				{lastUpdate && <span class="muted"> Son veri: {fmtDate(lastUpdate)}.</span>}
 			</p>
 		</header>
 
+		{stands.length > 0 && (
+			<section class="stands" aria-labelledby="standsTitle">
+				<div class="section-head">
+					<span class="sec-num">01</span>
+					<h2 id="standsTitle">Parametre kartları</h2>
+					<span class="sec-line" aria-hidden="true"></span>
+				</div>
+				<p class="stands-note">Altı eksen, LMArena sıralamalarından: her eksende ilk %10 <strong>A</strong>, sonraki dilimler B, C, D, son dilim <strong>E</strong>; verisi olmayan eksen <strong>?</strong> Karşılaştırmak için <a href="/karsilastir">Karşılaştır</a> sayfasına geçin.</p>
+				<div class="stand-grid">
+					{stands.map((s, i) => <StandCard card={s} rank={i + 1} />)}
+				</div>
+			</section>
+		)}
+
 		{!initial ? (
 			<p class="lb-empty">Henüz sıralanabilir benchmark verisi yok.</p>
 		) : (
 			<>
+				<div class="section-head">
+					<span class="sec-num">02</span>
+					<h2>Sıralamalar</h2>
+					<span class="sec-line" aria-hidden="true"></span>
+				</div>
 				<nav class="cat-row" aria-label="Kategoriler">
 					<button class="cat-pill chip-btn" data-cat="all" aria-pressed="true">Tümü</button>
 					{categories.map(c => (
@@ -222,15 +244,50 @@ const payload = JSON.stringify({ benches, entries }).replace(/</g, '\\u003c');
 
 <style>
 	.bench-page {
-		max-width: 1040px;
+		max-width: 1140px;
 		margin: 0 auto;
 	}
 
+	/* ---------- Parametre kartları ---------- */
+	.stands {
+		margin-bottom: 96px;
+	}
+
+	.stands-note {
+		max-width: 72ch;
+		margin: -6px 0 34px;
+		color: var(--text-2);
+	}
+
+	.stands-note strong {
+		color: var(--a1);
+		font-family: var(--font-display);
+		font-weight: 400;
+		font-size: 1.15em;
+	}
+
+	.stand-grid {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: 30px;
+	}
+
+	.stand-grid :global(.stand-card) {
+		padding: 22px 22px 18px;
+		background: var(--surface);
+		border: 2px solid var(--line);
+		box-shadow: 8px 8px 0 var(--a2);
+	}
+
+	.stand-grid :global(.stand-card:nth-child(3n + 2)) { box-shadow: 8px 8px 0 var(--a3); }
+	.stand-grid :global(.stand-card:nth-child(3n)) { box-shadow: 8px 8px 0 var(--a1); }
+
+	/* ---------- Süzgeçler ---------- */
 	.cat-row,
 	.test-row {
 		display: flex;
 		flex-wrap: wrap;
-		gap: 8px;
+		gap: 10px;
 	}
 
 	.cat-row {
@@ -240,7 +297,7 @@ const payload = JSON.stringify({ benches, entries }).replace(/</g, '\\u003c');
 	.test-row {
 		gap: 0 4px;
 		margin-bottom: 36px;
-		border-bottom: 2px solid var(--line);
+		border-bottom: 3px solid var(--line);
 	}
 
 	.test-chip {
@@ -251,7 +308,7 @@ const payload = JSON.stringify({ benches, entries }).replace(/</g, '\\u003c');
 		padding: 12px 12px 14px;
 		border: 0;
 		background: none;
-		color: var(--ink-2);
+		color: var(--text-2);
 		font: inherit;
 		font-size: 0.92rem;
 		font-weight: 600;
@@ -261,36 +318,37 @@ const payload = JSON.stringify({ benches, entries }).replace(/</g, '\\u003c');
 	.test-chip::after {
 		content: '';
 		position: absolute;
-		left: 12px;
-		right: 12px;
-		bottom: -2px;
-		height: 5px;
-		background: var(--magenta);
-		transform: scaleX(0);
-		transition: transform 0.2s ease;
+		left: 10px;
+		right: 10px;
+		bottom: -3px;
+		height: 7px;
+		background: var(--a2);
+		transform: scaleX(0) skewX(-20deg);
+		transition: transform 0.3s var(--ease-pose);
 	}
 
 	.test-chip:hover {
-		color: var(--ink);
+		color: var(--text);
 	}
 
 	.test-chip[aria-selected='true'] {
-		color: var(--ink);
+		color: var(--text);
 		font-weight: 800;
 	}
 
 	.test-chip[aria-selected='true']::after {
-		transform: scaleX(1);
+		transform: scaleX(1) skewX(-20deg);
 	}
 
 	.chip-count {
-		color: var(--ink-3);
-		font-family: var(--font-display);
+		color: var(--muted);
+		font-family: var(--font-serif);
 		font-style: italic;
-		font-weight: 700;
-		font-size: 0.9rem;
+		font-weight: 800;
+		font-size: 0.95rem;
 	}
 
+	/* ---------- Tablo başlığı ---------- */
 	.board-head {
 		display: flex;
 		align-items: flex-start;
@@ -301,35 +359,36 @@ const payload = JSON.stringify({ benches, entries }).replace(/</g, '\\u003c');
 
 	.board-head h2 {
 		margin-bottom: 8px;
-		font-size: clamp(1.8rem, 3.4vw, 2.6rem);
-		font-weight: 900;
-		letter-spacing: -0.02em;
+		font-size: clamp(2.2rem, 4.4vw, 3.4rem);
+		line-height: 0.95;
+		text-transform: uppercase;
+		text-shadow: 4px 4px 0 var(--a2);
 	}
 
 	.test-desc {
 		max-width: 62ch;
 		margin: 0 0 8px;
-		color: var(--ink-2);
+		color: var(--text-2);
 	}
 
 	.test-facts {
 		margin: 0;
-		color: var(--ink-3);
+		color: var(--muted);
 		font-size: 0.82rem;
 	}
 
 	.ext-link {
 		flex-shrink: 0;
-		color: var(--ink);
-		font-size: 0.72rem;
-		font-weight: 800;
-		font-stretch: 82%;
-		letter-spacing: 0.13em;
+		padding-bottom: 2px;
+		border-bottom: 3px solid var(--a2);
+		color: var(--text);
+		font-size: 0.74rem;
+		font-weight: 900;
+		font-stretch: 80%;
+		letter-spacing: 0.14em;
 		text-transform: uppercase;
 		text-decoration: none;
 		white-space: nowrap;
-		border-bottom: 2px solid var(--magenta);
-		padding-bottom: 2px;
 	}
 
 	.controls {
@@ -337,10 +396,10 @@ const payload = JSON.stringify({ benches, entries }).replace(/</g, '\\u003c');
 		flex-wrap: wrap;
 		align-items: center;
 		gap: 12px 18px;
-		margin-bottom: 8px;
-		padding: 16px 0;
-		border-top: 1px solid var(--rule-strong);
-		border-bottom: 1px solid var(--rule-strong);
+		margin-bottom: 10px;
+		padding: 18px;
+		background: var(--surface);
+		border: 2px solid var(--line);
 	}
 
 	.search {
@@ -353,7 +412,7 @@ const payload = JSON.stringify({ benches, entries }).replace(/</g, '\\u003c');
 		top: 50%;
 		left: 13px;
 		transform: translateY(-50%);
-		color: var(--ink-3);
+		color: var(--muted);
 		pointer-events: none;
 	}
 
@@ -369,18 +428,18 @@ const payload = JSON.stringify({ benches, entries }).replace(/</g, '\\u003c');
 		display: inline-flex;
 		align-items: center;
 		gap: 9px;
-		color: var(--ink-2);
+		color: var(--text-2);
 		font-size: 0.88rem;
 		cursor: pointer;
 	}
 
 	.toggle input {
-		width: 1.05rem;
-		height: 1.05rem;
-		accent-color: var(--magenta);
+		width: 1.1rem;
+		height: 1.1rem;
+		accent-color: var(--a2);
 	}
 
-	/* Sıralama listesi: sıra · model · çubuk · skor */
+	/* ---------- Sıralama listesi ---------- */
 	.lb {
 		list-style: none;
 		margin: 0;
@@ -389,30 +448,48 @@ const payload = JSON.stringify({ benches, entries }).replace(/</g, '\\u003c');
 
 	:global(.lb-row) {
 		display: grid;
-		grid-template-columns: 3rem minmax(0, 17rem) minmax(0, 1fr) 6rem;
+		grid-template-columns: 3.4rem minmax(0, 17rem) minmax(0, 1fr) 6rem;
 		align-items: center;
 		gap: 16px;
-		padding: 13px 0;
+		padding: 14px 6px;
 		border-bottom: 1px solid var(--rule);
+		transition: background-color 0.15s, transform 0.25s var(--ease-pose);
+	}
+
+	:global(.lb-row:hover) {
+		background: var(--surface);
+		transform: translateX(6px);
 	}
 
 	:global(.lb-rank) {
 		font-family: var(--font-display);
-		font-style: italic;
-		font-weight: 900;
-		font-size: 1.65rem;
+		font-size: 1.9rem;
 		line-height: 1;
-		color: var(--ink-3);
+		color: var(--muted);
 		font-variant-numeric: tabular-nums;
 	}
 
 	:global(.lb-row.is-top .lb-rank) {
-		color: var(--ink);
+		color: var(--text);
+	}
+
+	:global(.lb-row.rank-1) {
+		background: var(--a1);
+		color: var(--on-a1);
+	}
+
+	:global(.lb-row.rank-1:hover) {
+		background: var(--a1);
+	}
+
+	:global(.lb-row.rank-1 .lb-rank),
+	:global(.lb-row.rank-1 .lb-variant),
+	:global(.lb-row.rank-1 .lb-meta) {
+		color: var(--on-a1);
 	}
 
 	:global(.lb-row.rank-1 .lb-rank) {
-		color: var(--magenta);
-		font-size: 2.1rem;
+		font-size: 2.6rem;
 	}
 
 	:global(.lb-name) {
@@ -421,17 +498,18 @@ const payload = JSON.stringify({ benches, entries }).replace(/</g, '\\u003c');
 	}
 
 	:global(.lb-name strong) {
-		font-weight: 700;
+		font-weight: 800;
 	}
 
 	:global(.lb-row.rank-1 .lb-name strong) {
 		font-family: var(--font-display);
-		font-size: 1.2rem;
-		font-weight: 800;
+		font-size: 1.5rem;
+		font-weight: 400;
+		text-transform: uppercase;
 	}
 
 	:global(.lb-variant) {
-		color: var(--ink-3);
+		color: var(--muted);
 		font-size: 0.76rem;
 		white-space: nowrap;
 	}
@@ -439,7 +517,7 @@ const payload = JSON.stringify({ benches, entries }).replace(/</g, '\\u003c');
 	:global(.lb-meta) {
 		display: block;
 		overflow: hidden;
-		color: var(--ink-3);
+		color: var(--muted);
 		font-size: 0.76rem;
 		text-overflow: ellipsis;
 		white-space: nowrap;
@@ -447,37 +525,40 @@ const payload = JSON.stringify({ benches, entries }).replace(/</g, '\\u003c');
 
 	:global(.lb-track) {
 		position: relative;
-		height: 12px;
+		height: 14px;
 		background: var(--rule);
 	}
 
 	:global(.lb-bar) {
 		display: block;
 		height: 100%;
-		background: var(--bar);
-		transition: width 0.3s ease;
+		background: repeating-linear-gradient(-45deg, var(--a3) 0 8px, color-mix(in srgb, var(--a3) 65%, var(--bg)) 8px 12px);
+		transition: width 0.4s var(--ease-pose);
+	}
+
+	:global(.lb-row.rank-1 .lb-track) {
+		background: color-mix(in srgb, var(--on-a1) 18%, transparent);
 	}
 
 	:global(.lb-row.rank-1 .lb-bar) {
-		background: var(--magenta);
+		background: var(--a2);
 	}
 
 	:global(.lb-row.rank-2 .lb-bar),
 	:global(.lb-row.rank-3 .lb-bar) {
-		background: var(--teal);
+		background: repeating-linear-gradient(-45deg, var(--a2) 0 8px, color-mix(in srgb, var(--a2) 65%, var(--bg)) 8px 12px);
 	}
 
 	:global(.lb-score) {
 		font-family: var(--font-display);
-		font-size: 1.2rem;
-		font-weight: 800;
+		font-size: 1.45rem;
 		text-align: right;
 		font-variant-numeric: tabular-nums;
 	}
 
 	:global(.lb-empty) {
 		padding: 32px 0;
-		color: var(--ink-3);
+		color: var(--muted);
 		text-align: center;
 	}
 
@@ -486,22 +567,26 @@ const payload = JSON.stringify({ benches, entries }).replace(/</g, '\\u003c');
 		align-items: center;
 		justify-content: space-between;
 		gap: 16px;
-		padding: 20px 0 0;
+		padding: 22px 0 0;
 		font-size: 0.85rem;
 	}
 
+	.muted {
+		color: var(--muted);
+	}
+
 	.table-view {
-		margin-top: 28px;
+		margin-top: 30px;
 		padding-top: 16px;
-		border-top: 2px solid var(--line);
+		border-top: 3px solid var(--line);
 	}
 
 	.table-view summary {
-		color: var(--ink);
-		font-size: 0.75rem;
-		font-weight: 800;
-		font-stretch: 82%;
-		letter-spacing: 0.13em;
+		color: var(--text);
+		font-size: 0.76rem;
+		font-weight: 900;
+		font-stretch: 80%;
+		letter-spacing: 0.14em;
 		text-transform: uppercase;
 		cursor: pointer;
 	}
@@ -529,11 +614,11 @@ const payload = JSON.stringify({ benches, entries }).replace(/</g, '\\u003c');
 	}
 
 	th {
-		color: var(--ink-3);
+		color: var(--muted);
 		font-size: 0.68rem;
-		font-weight: 800;
-		font-stretch: 82%;
-		letter-spacing: 0.13em;
+		font-weight: 900;
+		font-stretch: 80%;
+		letter-spacing: 0.14em;
 		text-transform: uppercase;
 		border-bottom: 2px solid var(--line);
 	}
@@ -549,18 +634,20 @@ const payload = JSON.stringify({ benches, entries }).replace(/</g, '\\u003c');
 	}
 
 	.notes {
-		margin-top: 56px;
-		padding: 28px 30px;
-		background: var(--paper-2);
-		border: 1.5px solid var(--line);
-		color: var(--ink-2);
+		margin-top: 64px;
+		padding: 30px 32px;
+		background: var(--surface);
+		border: 2px solid var(--line);
+		box-shadow: 10px 10px 0 var(--a3);
+		color: var(--text-2);
 		font-size: 0.95rem;
 	}
 
 	.notes h3 {
 		margin-bottom: 14px;
-		color: var(--ink);
-		font-size: 1.4rem;
+		color: var(--text);
+		font-size: 1.8rem;
+		text-transform: uppercase;
 	}
 
 	.notes ul {
@@ -573,10 +660,19 @@ const payload = JSON.stringify({ benches, entries }).replace(/</g, '\\u003c');
 	}
 
 	.notes li::marker {
-		color: var(--magenta);
+		color: var(--a2);
+	}
+
+	@media (max-width: 960px) {
+		.stand-grid {
+			grid-template-columns: 1fr 1fr;
+		}
 	}
 
 	@media (max-width: 640px) {
+		.stand-grid {
+			grid-template-columns: 1fr;
+		}
 		.board-head {
 			flex-direction: column;
 			gap: 12px;
@@ -595,19 +691,19 @@ const payload = JSON.stringify({ benches, entries }).replace(/</g, '\\u003c');
 			flex-shrink: 0;
 		}
 		:global(.lb-row) {
-			grid-template-columns: 2.2rem minmax(0, 1fr) 4.6rem;
+			grid-template-columns: 2.4rem minmax(0, 1fr) 4.8rem;
 			gap: 6px 10px;
 		}
 		:global(.lb-rank) {
-			font-size: 1.35rem;
+			font-size: 1.5rem;
 		}
 		:global(.lb-row.rank-1 .lb-rank) {
-			font-size: 1.6rem;
+			font-size: 1.9rem;
 		}
 		:global(.lb-track) {
 			grid-column: 2 / 4;
 			grid-row: 2;
-			height: 8px;
+			height: 9px;
 		}
 		.notes {
 			padding: 22px 20px;

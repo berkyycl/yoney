@@ -1,0 +1,417 @@
+---
+/**
+ * Ana sayfanın yan sütunları: modellerle ilgili canlı panolar.
+ *  sol:  Arena'da zirve (LMArena genel, ilk 10), Kodlamada zirve (ilk 5)
+ *  sağ:  Testlerin birincileri, Gündemdeki modeller (haberlerde en çok adı geçen),
+ *        Yeni modeller (son model çıkışı haberleri)
+ */
+import type { BenchmarkData, BenchEntry } from '../lib/benchmarks';
+import { parseModelName } from '../lib/models';
+import { fmtScore } from '../lib/leaderboard';
+import { categoryOf } from '../lib/categories';
+
+interface Props {
+	side: 'left' | 'right';
+	bench: BenchmarkData;
+	articles: any[];
+}
+const { side, bench, articles } = Astro.props;
+
+// Bir testte her modelin en iyi sonucuna göre ilk n model
+function topBy(benchId: string, n: number): BenchEntry[] {
+	const meta = bench.benchmarks.find(b => b.id === benchId);
+	if (!meta) return [];
+	const dir = meta.higherIsBetter ? -1 : 1;
+	const seen = new Set<string>();
+	const out: BenchEntry[] = [];
+	for (const e of bench.entries.filter(e => e.bench === benchId).sort((a, b) => dir * (a.score - b.score))) {
+		if (seen.has(e.key)) continue;
+		seen.add(e.key);
+		out.push(e);
+		if (out.length === n) break;
+	}
+	return out;
+}
+const unitOf = (id: string) => bench.benchmarks.find(b => b.id === id)?.unit ?? '';
+
+const arena = topBy('lmarena-text', 10);
+const codeId = bench.benchmarks.some(b => b.id === 'lmarena-coding') ? 'lmarena-coding' : 'lmarena-webdev';
+const coding = topBy(codeId, 5);
+
+// Testlerin birincileri: en az 3 modelin yarıştığı testler
+const leaders = bench.benchmarks
+	.filter(b => b.modelCount >= 3 && b.id !== 'lmarena-text')
+	.map(b => ({ b, top: topBy(b.id, 1)[0] }))
+	.filter(x => x.top)
+	.slice(0, 7);
+
+// Gündemdeki modeller: son iki haftanın haberlerinde adı geçen, sürüm numaralı modeller
+const time = (a: any) => new Date(a.date).getTime();
+const newest = articles.length ? time(articles[0]) : 0;
+const mentions = new Map<string, { name: string; provider: string | null; count: number }>();
+for (const a of articles) {
+	if (newest - time(a) > 14 * 864e5) continue;
+	const inArticle = new Set<string>();
+	for (const raw of a.anilan_modeller ?? []) {
+		const name = String(raw);
+		if (!/\d/.test(name)) continue;
+		const p = parseModelName(name);
+		if (!p.key || inArticle.has(p.key)) continue;
+		inArticle.add(p.key);
+		const cur = mentions.get(p.key) ?? { name: p.base, provider: p.provider, count: 0 };
+		cur.count++;
+		mentions.set(p.key, cur);
+	}
+}
+const trending = [...mentions.values()].filter(m => m.count >= 2).sort((a, b) => b.count - a.count).slice(0, 8);
+const maxMentions = trending[0]?.count ?? 1;
+
+const launches = articles.filter(a => categoryOf(a) === 'model-cikisi').slice(0, 5);
+const shortDay = (d: string) => new Date(d).toLocaleDateString('tr-TR', { day: 'numeric', month: 'short', timeZone: 'Europe/Istanbul' });
+---
+
+<aside class:list={['rail', `rail-${side}`]} aria-label={side === 'left' ? 'Model sıralamaları' : 'Model gündemi'}>
+	{side === 'left' ? (
+		<>
+			{arena.length > 0 && (
+				<section class="rbox">
+					<h2 class="rbox-title">Arena'da zirve</h2>
+					<p class="rbox-sub">LMArena genel sıralaması · ELO</p>
+					<ol class="rlist">
+						{arena.map((e, i) => (
+							<li class:list={{ first: i === 0 }}>
+								<span class="r-rank">{i + 1}</span>
+								<span class="r-name"><strong>{e.model}</strong>{e.provider && <small>{e.provider}</small>}</span>
+								<span class="r-score">{fmtScore(e.score, unitOf('lmarena-text'))}</span>
+							</li>
+						))}
+					</ol>
+					<a class="rbox-more" href="/benchmarklar#lmarena-text">Tüm sıralama →</a>
+				</section>
+			)}
+			{coding.length > 0 && (
+				<section class="rbox rbox-alt">
+					<h2 class="rbox-title">Kodlamada zirve</h2>
+					<p class="rbox-sub">LMArena {codeId === 'lmarena-coding' ? 'kodlama' : 'WebDev'} sıralaması</p>
+					<ol class="rlist">
+						{coding.map((e, i) => (
+							<li class:list={{ first: i === 0 }}>
+								<span class="r-rank">{i + 1}</span>
+								<span class="r-name"><strong>{e.model}</strong>{e.provider && <small>{e.provider}</small>}</span>
+								<span class="r-score">{fmtScore(e.score, unitOf(codeId))}</span>
+							</li>
+						))}
+					</ol>
+					<a class="rbox-more" href={`/benchmarklar#${codeId}`}>Kodlama sıralaması →</a>
+				</section>
+			)}
+		</>
+	) : (
+		<>
+			{leaders.length > 0 && (
+				<section class="rbox">
+					<h2 class="rbox-title">Testlerin birincileri</h2>
+					<ul class="leaders">
+						{leaders.map(({ b, top }) => (
+							<li>
+								<a href={`/benchmarklar#${b.id}`}>
+									<small>{b.name}</small>
+									<strong>{top.model}</strong>
+									<span>{fmtScore(top.score, b.unit)}{b.unit && b.unit !== '%' ? ` ${b.unit}` : ''}</span>
+								</a>
+							</li>
+						))}
+					</ul>
+				</section>
+			)}
+			{trending.length > 0 && (
+				<section class="rbox rbox-alt">
+					<h2 class="rbox-title">Gündemdeki modeller</h2>
+					<p class="rbox-sub">Son iki haftanın haberlerinde adı en çok geçenler</p>
+					<ol class="trend">
+						{trending.map(t => (
+							<li>
+								<span class="t-name"><strong>{t.name}</strong>{t.provider && <small>{t.provider}</small>}</span>
+								<span class="t-count">{t.count}</span>
+								<span class="t-bar" style={`--w:${((t.count / maxMentions) * 100).toFixed(0)}%`}></span>
+							</li>
+						))}
+					</ol>
+				</section>
+			)}
+			{launches.length > 0 && (
+				<section class="rbox">
+					<h2 class="rbox-title">Yeni modeller</h2>
+					<ul class="launches">
+						{launches.map(a => (
+							<li>
+								<time datetime={a.date}>{shortDay(a.date)}</time>
+								<a href={`/haber/${a.slug}`}>{a.baslik_tr}</a>
+							</li>
+						))}
+					</ul>
+					<a class="rbox-more" href="/kategori/model-cikisi">Tüm model çıkışları →</a>
+				</section>
+			)}
+		</>
+	)}
+</aside>
+
+<style>
+	.rail {
+		display: flex;
+		flex-direction: column;
+		gap: 28px;
+		min-width: 0;
+	}
+
+	.rbox {
+		padding: 0 0 16px;
+		background: var(--surface);
+		border: 2px solid var(--line);
+		box-shadow: 6px 6px 0 var(--a2);
+	}
+
+	.rbox-alt {
+		box-shadow: 6px 6px 0 var(--a3);
+	}
+
+	.rbox-title {
+		margin: 0;
+		padding: 10px 14px 8px;
+		background: var(--a1);
+		color: var(--on-a1);
+		border-bottom: 2px solid var(--line);
+		font-size: 1.3rem;
+		line-height: 1;
+		text-transform: uppercase;
+	}
+
+	.rbox-alt .rbox-title {
+		background: var(--a3);
+		color: var(--bg);
+	}
+
+	.rbox-sub {
+		margin: 10px 14px 4px;
+		color: var(--muted);
+		font-size: 0.7rem;
+		font-weight: 800;
+		font-stretch: 80%;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+	}
+
+	.rbox-more {
+		display: inline-block;
+		margin: 12px 14px 0;
+		color: var(--text);
+		font-size: 0.7rem;
+		font-weight: 900;
+		font-stretch: 80%;
+		letter-spacing: 0.14em;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+
+	.rbox-more:hover {
+		color: var(--a1);
+	}
+
+	/* Sıra listesi */
+	.rlist {
+		list-style: none;
+		margin: 0;
+		padding: 0 14px;
+	}
+
+	.rlist li {
+		display: grid;
+		grid-template-columns: 1.7rem minmax(0, 1fr) auto;
+		align-items: center;
+		gap: 8px;
+		padding: 8px 0;
+		border-bottom: 1px solid var(--rule);
+	}
+
+	.r-rank {
+		font-family: var(--font-display);
+		font-size: 1.25rem;
+		line-height: 1;
+		color: var(--muted);
+	}
+
+	.rlist li.first .r-rank {
+		font-size: 1.6rem;
+		color: var(--a2);
+	}
+
+	.r-name {
+		display: flex;
+		flex-direction: column;
+		min-width: 0;
+		line-height: 1.2;
+	}
+
+	.r-name strong {
+		overflow: hidden;
+		font-size: 0.86rem;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+
+	.rlist li.first .r-name strong {
+		font-family: var(--font-display);
+		font-size: 1.05rem;
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+
+	.r-name small {
+		color: var(--muted);
+		font-size: 0.7rem;
+	}
+
+	.r-score {
+		font-family: var(--font-display);
+		font-size: 1rem;
+		font-variant-numeric: tabular-nums;
+	}
+
+	/* Testlerin birincileri */
+	.leaders {
+		list-style: none;
+		margin: 0;
+		padding: 4px 14px 0;
+	}
+
+	.leaders li + li {
+		border-top: 1px solid var(--rule);
+	}
+
+	.leaders a {
+		display: grid;
+		grid-template-columns: minmax(0, 1fr) auto;
+		gap: 0 8px;
+		padding: 9px 0;
+		color: var(--text);
+		text-decoration: none;
+	}
+
+	.leaders small {
+		grid-column: 1 / -1;
+		color: var(--muted);
+		font-size: 0.68rem;
+		font-weight: 800;
+		font-stretch: 80%;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+	}
+
+	.leaders strong {
+		overflow: hidden;
+		font-size: 0.9rem;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+
+	.leaders a span {
+		color: var(--a1);
+		font-family: var(--font-display);
+		font-size: 1rem;
+	}
+
+	.leaders a:hover strong {
+		color: var(--a1);
+	}
+
+	/* Gündemdeki modeller */
+	.trend {
+		list-style: none;
+		margin: 0;
+		padding: 2px 14px 0;
+	}
+
+	.trend li {
+		display: grid;
+		grid-template-columns: minmax(0, 1fr) auto;
+		gap: 4px 8px;
+		padding: 8px 0;
+		border-bottom: 1px solid var(--rule);
+	}
+
+	.t-name {
+		display: flex;
+		flex-direction: column;
+		min-width: 0;
+		line-height: 1.2;
+	}
+
+	.t-name strong {
+		overflow: hidden;
+		font-size: 0.86rem;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+
+	.t-name small {
+		color: var(--muted);
+		font-size: 0.7rem;
+	}
+
+	.t-count {
+		align-self: center;
+		font-family: var(--font-display);
+		font-size: 1.1rem;
+	}
+
+	.t-count::after {
+		content: ' haber';
+		color: var(--muted);
+		font-family: var(--font-sans);
+		font-size: 0.66rem;
+		font-weight: 700;
+	}
+
+	.t-bar {
+		grid-column: 1 / -1;
+		height: 6px;
+		background: linear-gradient(90deg, var(--a2) var(--w), var(--rule) var(--w));
+	}
+
+	/* Yeni modeller */
+	.launches {
+		list-style: none;
+		margin: 0;
+		padding: 4px 14px 0;
+	}
+
+	.launches li {
+		display: flex;
+		flex-direction: column;
+		gap: 2px;
+		padding: 9px 0;
+		border-bottom: 1px solid var(--rule);
+	}
+
+	.launches time {
+		color: var(--a2);
+		font-size: 0.68rem;
+		font-weight: 900;
+		font-stretch: 80%;
+		letter-spacing: 0.12em;
+		text-transform: uppercase;
+	}
+
+	.launches a {
+		color: var(--text);
+		font-size: 0.88rem;
+		font-weight: 700;
+		line-height: 1.3;
+		text-decoration: none;
+	}
+
+	.launches a:hover {
+		color: var(--a1);
+	}
+</style>

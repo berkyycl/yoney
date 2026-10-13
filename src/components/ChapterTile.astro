@@ -1,6 +1,5 @@
 ---
-/** Bölüm (kategori) kapağı: soyut renk kompozisyonu, Roma rakamı, ad, slogan ve son başlıklar */
-import Art from './Art.astro';
+/** Bölüm (kategori) kapağı: desenli renk zemini, Roma rakamı, amblem, ad, slogan ve son başlıklar */
 import type { NewsCategory } from '../lib/categories';
 
 interface Props {
@@ -8,124 +7,133 @@ interface Props {
 	count: number;
 	headlines?: { title: string; slug: string }[];
 	size?: 'small' | 'large';
+	delay?: number;
 }
-const { category: c, count, headlines = [], size = 'small' } = Astro.props;
+const { category: c, count, headlines = [], size = 'small', delay } = Astro.props;
 ---
 
-<article class:list={['chapter', `chapter-${size}`, 'reveal']} data-cat={c.id}>
-	<a class="chapter-cover" href={`/kategori/${c.id}`} aria-label={`${c.name} bölümü`}>
-		<div class="media chapter-art">
-			<Art cat={c.id} />
-			<span class="chapter-num" aria-hidden="true">{c.numeral}</span>
-		</div>
+<article class:list={['chapter', `chapter-${size}`, 'pose']} data-cat={c.id} style={delay ? `--delay:${delay}s` : undefined}>
+	<a class="chapter-cover tilt" href={`/kategori/${c.id}`} aria-label={`${c.name} bölümü`}>
+		<span class="shine"></span>
+		<span class="chapter-num" aria-hidden="true">{c.numeral}</span>
+		<svg class="chapter-emblem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d={c.emblem} /></svg>
+		<span class="chapter-name">{c.name}</span>
+		<span class="chapter-tag">{c.tagline}</span>
+		<span class="chapter-count">{count} haber →</span>
 	</a>
-	<div class="chapter-body">
-		<p class="chapter-label">Bölüm {c.numeral} · {count} haber</p>
-		<h3 class="chapter-name"><a href={`/kategori/${c.id}`}>{c.name}</a></h3>
-		<p class="chapter-tag">{c.tagline}</p>
-		{headlines.length > 0 && (
-			<ul class="chapter-heads">
-				{headlines.map(h => <li><a href={`/haber/${h.slug}`}>{h.title}</a></li>)}
-			</ul>
-		)}
-	</div>
+	{headlines.length > 0 && (
+		<ul class="chapter-heads">
+			{headlines.map(h => <li><a href={`/haber/${h.slug}`}>{h.title}</a></li>)}
+		</ul>
+	)}
 </article>
 
 <style>
 	.chapter {
 		display: flex;
 		flex-direction: column;
+		gap: 18px;
 		min-width: 0;
-		background: var(--panel);
-		border: 1.5px solid var(--line);
-		transition: transform 0.2s ease, box-shadow 0.2s ease;
-	}
-
-	.chapter:hover {
-		transform: translateY(-4px);
-		box-shadow: 0 10px 0 -4px var(--c);
 	}
 
 	.chapter-cover {
-		display: block;
-		border-bottom: 1.5px solid var(--line);
-	}
-
-	.chapter-art {
-		aspect-ratio: 5 / 3;
-	}
-
-	.chapter-large .chapter-art {
-		aspect-ratio: 16 / 9;
-	}
-
-	.chapter-num {
-		position: absolute;
-		top: 10px;
-		left: 14px;
-		font-family: var(--font-display);
-		font-style: italic;
-		font-weight: 900;
-		font-size: 2.6rem;
-		line-height: 1;
-		color: #fff8ec;
-		text-shadow: 0 2px 0 rgba(25, 18, 31, 0.35);
-	}
-
-	.chapter-large .chapter-num {
-		font-size: 4rem;
-	}
-
-	.chapter-body {
-		display: flex;
-		flex-direction: column;
-		gap: 6px;
-		padding: 16px 18px 18px;
-	}
-
-	.chapter-label {
-		margin: 0;
-		color: var(--ink-3);
-		font-size: 0.68rem;
-		font-weight: 800;
-		font-stretch: 82%;
-		letter-spacing: 0.14em;
-		text-transform: uppercase;
-	}
-
-	.chapter-name {
-		margin: 0;
-		font-size: 1.35rem;
-		line-height: 1.1;
-	}
-
-	.chapter-large .chapter-name {
-		font-size: 1.9rem;
-	}
-
-	.chapter-name a {
-		color: var(--ink);
+		position: relative;
+		display: grid;
+		grid-template-columns: 1fr auto;
+		grid-template-rows: auto 1fr auto auto;
+		gap: 4px 12px;
+		min-height: 250px;
+		padding: 18px 20px 20px;
+		overflow: hidden;
+		background: var(--pat), var(--c);
+		color: var(--c-on);
+		border: 2px solid var(--line);
+		box-shadow: 8px 8px 0 var(--shadow);
 		text-decoration: none;
 	}
 
-	.chapter-name a:hover {
-		color: var(--link);
+	.chapter-large .chapter-cover {
+		min-height: 330px;
+		padding: 24px 28px 26px;
+	}
+
+	.chapter-num {
+		grid-column: 1;
+		grid-row: 1;
+		font-family: var(--font-serif);
+		font-size: 3.4rem;
+		font-style: italic;
+		font-weight: 900;
+		line-height: 0.85;
+	}
+
+	.chapter-large .chapter-num {
+		font-size: 5rem;
+	}
+
+	.chapter-emblem {
+		grid-column: 2;
+		grid-row: 1 / 3;
+		width: 70px;
+		height: 70px;
+		transition: transform 0.6s var(--ease-pose);
+	}
+
+	.chapter-large .chapter-emblem {
+		width: 104px;
+		height: 104px;
+	}
+
+	.chapter-cover:hover .chapter-emblem {
+		transform: rotate(-14deg) scale(1.15);
+	}
+
+	.chapter-name {
+		grid-column: 1 / -1;
+		grid-row: 3;
+		font-family: var(--font-display);
+		font-size: 2rem;
+		line-height: 0.95;
+		text-transform: uppercase;
+	}
+
+	.chapter-large .chapter-name {
+		font-size: clamp(2.4rem, 4vw, 3.2rem);
 	}
 
 	.chapter-tag {
-		margin: 0;
-		color: var(--ink-2);
-		font-family: var(--font-display);
+		grid-column: 1 / -1;
+		grid-row: 4;
+		font-family: var(--font-serif);
+		font-size: 1.05rem;
 		font-style: italic;
-		font-size: 1rem;
-		line-height: 1.35;
+		font-weight: 600;
+		line-height: 1.3;
+	}
+
+	.chapter-count {
+		position: absolute;
+		right: 16px;
+		bottom: 14px;
+		font-size: 0.68rem;
+		font-weight: 900;
+		font-stretch: 80%;
+		letter-spacing: 0.14em;
+		text-transform: uppercase;
+		opacity: 0;
+		transform: translateX(-10px);
+		transition: opacity 0.25s ease, transform 0.35s var(--ease-pose);
+	}
+
+	.chapter-cover:hover .chapter-count {
+		opacity: 1;
+		transform: none;
 	}
 
 	.chapter-heads {
 		list-style: none;
-		margin: 10px 0 0;
+		margin: 0;
 		padding: 0;
-		border-top: 1px solid var(--rule-strong);
 	}
 
 	.chapter-heads li {
@@ -134,15 +142,20 @@ const { category: c, count, headlines = [], size = 'small' } = Astro.props;
 		line-height: 1.3;
 	}
 
+	.chapter-heads li::before {
+		content: '◆';
+		margin-right: 8px;
+		color: var(--c);
+		font-size: 0.7rem;
+	}
+
 	.chapter-heads a {
-		color: var(--ink);
+		color: var(--text);
 		text-decoration: none;
-		font-family: var(--font-display);
 		font-weight: 700;
-		font-size: 1.02rem;
 	}
 
 	.chapter-heads a:hover {
-		color: var(--link);
+		color: var(--a1);
 	}
 </style>
