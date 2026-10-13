@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "AskCyph Health Explorer: AlphaGenome ve MedGemma 1.5 4B ile DNA Analizi WebGPU Üzerinde",
+  "ozet_tr": "AskCyph Health Explorer, DeepMind'in AlphaGenome API'si ve tarayıcıda WebGPU üzerinden çalışan MedGemma 1.5 4B modelini birleştirerek DNA mutasyonlarının hastalıklara etkisini interaktif ve gizlilik odaklı bir şekilde sunuyor. Kullanıcı verileri tamamen yerel cihazda işleniyor, klinik bilgiler ise NCBI ClinVar, openFDA ve ClinicalTrials.gov gibi güvenilir kaynaklardan çekiliyor.",
+  "detayli_icerik_tr": "AskCyph Health Explorer, tek harfli DNA mutasyonlarının hastalık oluşumuna, 3B anatomi üzerindeki etkilerine, kalıtım olasılıklarına ve mevcut tedavilere dair kapsamlı bir eğitim aracı olarak tanıtıldı. Uygulama, iki ayrı modelin iş birliğiyle çalışıyor: Moleküler biyoloji tahminleri için DeepMind'in AlphaGenome API'si ve kullanıcı etkileşimlerini, soruları ve görsel incelemeleri yerel olarak işleyen MedGemma 1.5 4B modeli. AlphaGenome, kodon mekaniklerini tahmin etmek yerine düzenleyici varyant etkileri ve splicing bozulmalarını doğrudan analiz ediyor; örneğin Sickle Cell hastalığındaki kodon değişikliği ile Beta-Thalassemia'daki kodon dışı mutasyonun RNA splicing'ini nasıl bozduğunu karşılaştırıyor.\n\nMedGemma 1.5 4B, ONNX Runtime Web aracılığıyla WebGPU desteğiyle tarayıcıda çalışıyor ve INT4 quantization ile FP16/FP32 geri dönüşümünü destekliyor. Modelin ağırlıkları yaklaşık 2,8 GB sıkıştırılmış dosya olarak önceden indirilip cihazda saklanıyor, böylece sonraki oturumlarda anında yüklenebiliyor. Kullanıcı bir soruyu sorduğunda ya da bir X‑ray ya da histoloji görüntüsü yüklediğinde, hiçbir prompt, görsel ya da sohbet tokeni dış sunuculara gönderilmiyor; tüm işlem tamamen cihazda gerçekleşiyor.\n\nUygulamanın deterministik grounding mekanizması, varyant detaylarını, OMIM kimliklerini, kalıtım modlarını ve ilaç onaylarını doğrudan NCBI ClinVar, openFDA ve ClinicalTrials.gov gibi açık veri kaynaklarından çekiyor ve bu bilgileri MedGemma'nın prompt'una enjekte ediyor. Böylece model, AlphaGenome'den gelen puanları ve doğrulanmış klinik verileri sentezleyerek hayali klinik detaylar üretmeden, anlaşılır bir dille kullanıcıya sunuyor. Araç ücretsiz, giriş gerektirmiyor ve WebGPU performansının farklı cihazlarda nasıl değiştiği konusunda topluluk geri bildirimi bekliyor.",
+  "onemli_maddeler": [
+    "AlphaGenome API'si, düzenleyici varyant etkileri ve splicing bozulmalarını gerçek zamanlı olarak tahmin ediyor.",
+    "MedGemma 1.5 4B modeli, ONNX Runtime Web ve WebGPU sayesinde %100 yerel, gizlilik odaklı bir açıklayıcı olarak çalışıyor.",
+    "Klinik veriler NCBI ClinVar, openFDA ve ClinicalTrials.gov gibi açık kaynaklardan çekilerek deterministik grounding sağlanıyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Klinik genomik analizlerde gizlilik ve yerel işlem imkanı sunması, AI‑destekli sağlık araçları arasında yenilikçi bir yaklaşım.",
+  "etiketler": [
+    "DNA",
+    "AlphaGenome",
+    "MedGemma",
+    "WebGPU",
+    "Sağlık AI"
+  ],
+  "anilan_modeller": [
+    "AlphaGenome",
+    "MedGemma 1.5 4B"
+  ],
+  "yorum_tr": "Bu çözüm, hassas genomik verilerin bulut tabanlı hizmetlere gönderilmeden analiz edilmesini sağlayarak hem veri güvenliğini artırıyor hem de geliştiricilere yerel AI entegrasyonu konusunda yeni bir referans modeli sunuyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://wp.technologyreview.com/wp-content/uploads/2025/06/250624_AlphaGenome.jpg",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x4ec7b/explore_dna_with_deepminds_alphagenome_and/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-12T21:20:33.000Z",
+  "slug": "explore-dna-with-deepmind-s-alphagenome-and-in-browser-medge"
+}

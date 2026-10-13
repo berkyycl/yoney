@@ -1,0 +1,52 @@
+{
+  "baslik_tr": "16 GB VRAM ile Qwen3.8‑27B q4_0 ve 262k KV akışı: 80t/s ve 400t/s performans",
+  "ozet_tr": "Reddit kullanıcısı, 16 GB VRAM'li bir GPU’da Qwen3.8‑27B modelini q4_0 kuantizasyonu ve 262 k token KV önbelleğiyle çalıştırarak 80 token/s ve 400 token/s prompt performansı elde ettiğini paylaştı. Bu başarı, llama.cpp‑adaptive‑kv‑streaming çatallamasının özelleştirilmesiyle mümkün oldu ve düşük bellekli sistemlerde büyük modellerin kullanılabilirliğine yeni bir bakış açısı sundu.",
+  "detayli_icerik_tr": "Kullanıcı Fancy‑Snow7, 16 GB VRAM'li bir ekran kartı üzerinde Qwen3.8‑27B modelini q4_0 kuantizasyonu ve 262 k token uzunluğunda KV (key‑value) önbelleğiyle çalıştırabildiğini belirtti. Model, Windows ortamında iki ekran ve video yakalama işlemiyle aynı kartta çalıştırılıyor; bu koşullarda bile 80 token/s (MTP benchmark) ve 20 token/s (262 k context) hızları elde edildi. Prompt‑per‑second (pp) ölçümünde ise 400 token/s seviyelerine ulaşıldığı ifade edildi.\n\nBu performansın temelinde, llama.cpp‑adaptive‑kv‑streaming adlı bir çatalla yapılan özelleştirme yatıyor. Çatalla, varsayılan olarak yalnızca q8_0 ve q4_0 desteklenirken, yazar kendi ihtiyaçları için q4_0 desteğini genişletti. Ayrıca batch ve ubatch değerlerini 128'e düşürmek, KV‑stream‑arena‑mib ayarını artırmak ve gereksiz uygulamaları kapatmak gibi önerilerle bellek yönetimi optimize edildi. Windows'un VRAM'ı tükendiğinde paylaşımlı RAM'e geçiş yapması ve KV'nin sistem RAM'ine akması da normal bir davranış olarak açıklandı.\n\nKullanıcı, benzer donanım sınırlamalarına sahip topluluk üyelerinin 60 k context ve daha düşük kuantizasyonlarla yetinmek zorunda kaldığını, bunun ise modelin potansiyelini kısıtladığını vurguladı. Çatalla yapılan ufak kod değişikliklerinin birkaç dosyada birkaç satırla uygulanabileceği ve LLM destekli kod üretimiyle hataların kolayca giderilebileceği belirtildi. Front‑end kısmının ise sadece kişisel bir launcher olduğu, temel işlevin komut satırı arayüzü olduğu da ifade edildi.\n\nBu deneyim, 16 GB VRAM gibi sınırlı kaynaklara sahip kullanıcıların da büyük dil modellerini (27 B parametre) kuantize edilmiş biçimde, yüksek KV uzunluklarıyla ve görsel yeteneklerle (vision) çalıştırabileceğini gösteriyor. Özellikle düşük maliyetli donanımla yüksek bağlam uzunluğu gerektiren uygulamalarda bu yaklaşım, topluluk içinde yeni bir referans noktası oluşturabilir.",
+  "onemli_maddeler": [
+    "16 GB VRAM'li bir GPU’da Qwen3.8‑27B modelini q4_0 kuantizasyonu ve 262 k KV önbelleğiyle çalıştırmak mümkün.",
+    "llama.cpp‑adaptive‑kv‑streaming çatallaması, q4_0 desteği eklenerek bellek verimliliği artırıldı.",
+    "MTP benchmark'ta 80 token/s, 262 k context'te 20 token/s ve 400 token/s prompt‑per‑second (pp) elde edildi."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Büyük dil modellerinin düşük bellekli sistemlerde çalıştırılabilirliği, topluluk ve araştırmacılar için kritik bir performans göstergesi sunuyor.",
+  "etiketler": [
+    "Qwen3.8",
+    "llama.cpp",
+    "kv-streaming",
+    "quantization",
+    "16GB VRAM"
+  ],
+  "anilan_modeller": [
+    "unsloth/Qwen3.8-27B-UD-IQ4_XS",
+    "llama.cpp-adaptive-kv-streaming"
+  ],
+  "yorum_tr": "Bu başarı, düşük bütçeli donanımla büyük modelleri kullanmak isteyen geliştiricilere ve son kullanıcılara yeni bir yol haritası sunuyor; kuantizasyon ve KV akışı optimizasyonları, performans kaybı olmadan daha uzun bağlamları mümkün kılıyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "unsloth/Qwen3.8-27B-UD-IQ4_XS",
+      "benchmark": "MTP bench (tam bağlam, video yakalama olmadan)",
+      "skor": 80,
+      "birim": "token/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "My MTP bench normally gets around 80t/s but is slower due to the video capture"
+    },
+    {
+      "model": "unsloth/Qwen3.8-27B-UD-IQ4_XS",
+      "benchmark": "262k KV context (MTP bench)",
+      "skor": 20,
+      "birim": "token/s",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "262k context length",
+      "kaynak_metinden_alinti": "at 262k I get around 20t/s and pp 400t/s"
+    }
+  ],
+  "gorsel_url": "https://external-preview.redd.it/cjlldjZoMHI3M3ZoMftCP3G_MyCqtH1JkcHcfZ1K_n2nQ239Za-U2sbkOOK4.png?width=640&crop=smart&auto=webp&s=6929f446d435ba7114bb5ad5ee29ef30ff4fbb9b",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x4cmfc/running_unslothqwen3827budiq4_xs_262k_q4_0_kv/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-12T20:14:03.000Z",
+  "slug": "running-unsloth-qwen3-8-27b-ud-iq4-xs-262k-q4-0-kv-vision-on"
+}

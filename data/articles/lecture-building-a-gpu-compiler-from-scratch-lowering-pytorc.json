@@ -1,0 +1,31 @@
+{
+  "baslik_tr": "GPU Derleyicisi Sıfırdan: PyTorch Grafiklerini CUDA'ya Çok Seviyeli IR'lerle Düşürme",
+  "ozet_tr": "Bir geliştirici, TVM, Modular ve PyTorch Inductor gibi modern derleyici yaklaşımlarını temel alarak sıfırdan bir GPU derleyicisi oluşturdu. Derleyici, PyTorch kodunu çok seviyeli ara temsiller (IR) üzerinden geçirerek CUDA kerneline dönüştürüyor ve vLLM ile tam uç LLM sunumu sağlıyor.",
+  "detayli_icerik_tr": "Yerel bir topluluk üyesi, Emmy adlı bir GPU derleyicisi geliştirdiğini ve bu süreci ayrıntılı bir makale ve video ile paylaştığını duyurdu. Derleyici, TVM, Modular ve PyTorch Inductor gibi güncel derleyici projelerinin ortak konseptlerini benimseyerek, PyTorch grafiklerini adım adım CUDA kerneline dönüştüren bir dizi geçiş (pass) tanımlıyor. Her geçiş, kernel füzyonu ya da zamanlama (schedule) enumerasyonu gibi belirli görevler için optimize edilmiş ayrı bir ara temsile (IR) sahiptir.\n\nMakaledeki örnekler, RMSNorm, Matmul ve Attention gibi yaygın operasyonların nasıl kademeli olarak düşük seviyeli IR'lere indirgeneceğini gösteriyor. Kullanıcılar, \"emmy compile -c 'nn.Linear(3,2,bias=False)(torch.randn(4,3))' --ir\" komutuyla PyTorch kodunu belirli bir IR seviyesinde inceleyebilir ve üretilen CUDA kodunu doğrudan görebilir. Bu sayede derleyicinin iç işleyişi daha şeffaf hale geliyor.\n\nPerformans testlerinde, Emmy'nin ürettiği kernel'ler modern donanım özellikleri—tensor core'lar ve TMA (Tensor Memory Access)—kullanarak Torch Inductor ve NVIDIA'nın cuBLAS kütüphanesini geride bıraktı. Özellikle büyük ölçekli LLM servislerinde vLLM ile entegrasyonu, uçtan uca model sunumu için düşük gecikme ve yüksek verimlilik vaat ediyor.\n\nYazar, alandaki rekabetin yoğun olduğunu ve temel kavramların hâlâ evrim geçirdiğini belirterek, bu çalışmanın hem akademik hem de endüstriyel geliştiriciler için bir referans noktası olmasını hedeflediğini vurguladı. Makale, video ve GitHub deposu (https://github.com/cloudrift-ai/emmy) üzerinden herkesin örnekleri yeniden üretmesi ve kendi GPU derleyicisini inşa etmesi mümkün.",
+  "onemli_maddeler": [
+    "Emmy, PyTorch kodunu çok seviyeli IR'ler aracılığıyla CUDA kerneline dönüştüren bir GPU derleyicisi olarak tanıtıldı.",
+    "Derleyici, vLLM ile tam uç LLM sunumu için entegre çalışıyor ve modern donanım özelliklerini (tensor core, TMA) etkin kullanıyor.",
+    "Benchmark sonuçları, Torch Inductor ve cuBLAS'ı geride bırakan performans gösterdiği iddiasını taşıyor.",
+    "Her adımda IR seviyesini inceleyebilen reproducible örnekler ve komut satırı arayüzü sağlandı."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "GPU derleyicileri, LLM hizmetlerinin verimliliğini artırmak ve donanım kaynaklarını daha iyi kullanmak açısından kritik bir rol oynar; bu çalışma yeni bir açık kaynak çözüm sunarak sektöre yön veriyor.",
+  "etiketler": [
+    "GPU",
+    "derleyici",
+    "PyTorch",
+    "CUDA",
+    "LLM"
+  ],
+  "anilan_modeller": [],
+  "yorum_tr": "Emmy'nin sunduğu çok seviyeli IR yaklaşımı, geliştiricilere derleyici iç süreçlerini görselleştirme ve optimize etme imkanı tanıyarak GPU programlamada yeni bir şeffaflık seviyesi getiriyor. Performans iddiaları, özellikle büyük ölçekli LLM dağıtımlarında rekabetçi bir alternatif olma potansiyeli taşıyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/3ekngxk224vh1.png?width=140&height=70&auto=webp&s=ebe1e57b8cae9933e4c52b20a7001cd2e2f8b055",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x4fp3r/lecture_building_a_gpu_compiler_from_scratch/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-12T22:18:03.000Z",
+  "slug": "lecture-building-a-gpu-compiler-from-scratch-lowering-pytorc"
+}

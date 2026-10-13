@@ -1,0 +1,53 @@
+{
+  "baslik_tr": "llama.cpp için P100 ve Qwen3.6 35B modeline özel optimizasyonlar",
+  "ozet_tr": "Reddit kullanıcısı Mrinohk, Tesla P100 GPU'ları ve Qwen3.6‑35B modeline yönelik olarak llama.cpp kod tabanına bir dizi donanım‑özel yama geliştirdi. Bu yamalar, özellikle decode aşamasında %70'e varan performans artışı sağlarken, 3090 tabanlı bir referans sistemde 125 token/s hızına ulaşılabildiğini gösteriyor.",
+  "detayli_icerik_tr": "Reddit topluluğu LocalLLaMA'da paylaşılan gönderide, yazar Mrinohk, iki adet Tesla P100 GPU ve Unsloth Qwen3.6‑35B A3B UD Q4 K XL modelini kullanan bir sistemde llama.cpp'nin mevcut sınırlamalarını aşmak için kapsamlı bir optimizasyon süreci yürüttüğünü açıkladı. İlk adım olarak, daha önce \"shinbunbun p100 patches\" olarak bilinen ve decode performansını %70 artırdığı iddia edilen yamalar temel alındı. Bu yamalar, P100'lerin düşük PCIe bant genişliği ve güç kısıtlamalarına rağmen daha verimli kernel kullanımını ve hafıza erişim düzenlemelerini içeriyor.\n\nYapılan iyileştirmeler arasında, 3090 GPU'lu bir Qwen3.8‑27B referans sisteminde kullanılan kalıcı megakernel yaklaşımı ve azaltılmış draft vocab teknikleri de yer aldı. Bu teknikler, modelin önceden tahmin (prefill) ve gerçek zamanlı üretim (decode) aşamalarındaki bellek hareketlerini minimize ederek işlemci‑GPU senkronizasyon gecikmelerini düşürdü. Sonuç olarak, yazarın adını verdiği \"Opus\" adlı otomasyon aracı, bu fikirleri kod seviyesine taşıyarak P100'lerde decode hızını önemli ölçüde artırdı.\n\nTest ortamı Ryzen 7 5700X, 48 GB DDR4‑3200 RAM ve iki P100 kartı (biri PCIe Gen3 x4, diğeri x16) olarak tanımlandı. Bu sub‑optimal yapılandırma altında elde edilen performans, daha iyi bir PCIe konfigürasyonu ile daha da iyileştirilebileceği vurgulandı. Ölçülen sonuçlar arasında, 3090 tabanlı bir sistemde yaklaşık 125 token/s decode hızı ve P100'lerde %70'e yakın bir hız artışı bulunuyor. Ancak yazar, model kalitesinin bazı durumlarda hafif değişiklikler gösterdiğini ve sampler parametrelerinin (ör. sıcaklık 0.7, min‑p 0.25) sıkılaştırılmasıyla bu etkilerin azaltılabildiğini belirtti.\n\nBu yamalar hâlâ deneysel aşamada ve sadece Qwen3.6‑35B modeline odaklandığı için diğer modellerde kararlılık garantisi vermiyor. Yine de, eski veri merkezi kartları üzerinde yüksek performans elde edilmesi, düşük maliyetli AI altyapısı kurmak isteyen topluluk üyeleri için önemli bir fırsat sunuyor. Mrinohk, geliştirdiği yamaları ve kapsamlı README dosyasını GitHub üzerinden paylaşıyor ve gelecekte MoE (Mixture‑of‑Experts) tabanlı modeller için benzer optimizasyonların yapılabileceğini öngörüyor.",
+  "onemli_maddeler": [
+    "Tesla P100 GPU'ları için özel olarak geliştirilmiş llama.cpp yamaları, decode performansını %70'e varan oranlarda artırdı.",
+    "3090 GPU üzerinde Qwen3.8‑27B modeliyle yapılan testlerde yaklaşık 125 token/s decode hızı elde edildi.",
+    "Optimizasyonlar, megakernel ve azaltılmış vocab tekniklerini birleştirerek bellek erişimini ve kernel verimliliğini iyileştirdi."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Eski veri merkezi donanımının modern büyük dil modelleriyle verimli çalıştırılabilmesi, maliyet düşürme ve erişilebilir AI altyapısı sağlama açısından kritik bir gelişmedir.",
+  "etiketler": [
+    "llama.cpp",
+    "P100",
+    "Qwen3.6",
+    "performans",
+    "optimizasyon"
+  ],
+  "anilan_modeller": [
+    "Qwen3.6-35B",
+    "Qwen3.8-27B",
+    "Ornith 1.5"
+  ],
+  "yorum_tr": "Bu tür donanım‑özel yamalar, yüksek maliyetli GPU'lara alternatif olarak eski veri merkezi kartlarının yeniden değer kazanmasını sağlıyor; geliştiriciler daha düşük bütçeyle büyük modelleri çalıştırabilirken, kullanıcılar da daha hızlı yanıt sürelerinden faydalanacak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen3.8-27B",
+      "benchmark": "decode throughput",
+      "skor": 125,
+      "birim": "tokens/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "He gets ~125 t/s, unknown settings."
+    },
+    {
+      "model": "Qwen3.6-35B",
+      "benchmark": "decode speed improvement with shinbunbun P100 patches",
+      "skor": 70,
+      "birim": "percent",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "baseline vs patched",
+      "kaynak_metinden_alinti": "+~70% on decode."
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/5s0qex1ws2vh1.png?width=140&height=48&auto=webp&s=c4a4468161aecb681c1f86ec997ff7f38195c796",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x4cwiy/llamacpp_optimizations_for_specific_hardware_and/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-12T20:24:57.000Z",
+  "slug": "llama-cpp-optimizations-for-specific-hardware-and-models"
+}

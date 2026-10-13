@@ -1,0 +1,45 @@
+{
+  "baslik_tr": "Qwen 3.8 Flash Next Q3 S Modeli Üzerinde Benchmark Sonuçları",
+  "ozet_tr": "Reddit kullanıcısı migsperez, AMD R9700 GPU ve 64 GB RAM ile Qwen3.8‑Flash‑Next IQ3_S modelini Opencode platformunda test etti ve modelin 90 tokens/s decode hızıyla 27 B modelin üç katı performans gösterdiğini duyurdu.",
+  "detayli_icerik_tr": "Reddit'in LocalLLaMA topluluğunda paylaşılan bir gönderide, kullanıcı Exo modelinin Opencode üzerindeki başarısından sonra diğer modelleri denemeye karar verdi. Çeşitli orta ölçekli modellerin beklentilerin çok altında performans sergilemesi üzerine, özellikle Qwen 3.8 Flash Next IQ3_S modeline odaklandı. Model, Niko1221'in GitHub üzerindeki Strata projesi aracılığıyla kuruldu ve AMD Radeon RX 9700 32 GB GPU ile 64 GB sistem belleği kullanılarak çalıştırıldı.\n\nTest ortamı, Opencode'in metin üretim benchmark'ı olarak bilinen standart prompt setiyle gerçekleştirildi. İlk denemelerde çıktının kalitesi tatmin edici olmasa da, kullanıcı farklı prompt kombinasyonlarıyla deneme yaparak sonuçları iyileştirmeye çalıştı. Özellikle bir plan talep edip, ardından bu planı \"low poly\" ama çok çokgenli bir stilde inşa etmesini istediğinde, modelin çıktısı belirgin bir artış gösterdi.\n\nEn dikkat çekici ölçüm, modelin 90 tokens/s (tk/s) decode hızıydı; bu değer, aynı test ortamında 27 B parametreli bir modelin yaklaşık 27 tk/s hızının üç katıydı. Kullanıcı, bu performansın Qwen 3.8 Flash Next IQ3_S'nin küçük bir Q3 serisi olmasına rağmen beklenmedik bir verimlilik sunduğunu vurguladı. Sonuçların görselleri ve karşılaştırmalı çıktılar, esuyo.com üzerindeki iki ayrı linkte (horse‑strata‑qwen‑3.8‑q3‑s‑1 ve horse‑qwen‑3.8‑max) paylaşıldı.\n\nBu bulgular, düşük parametreli ama iyi optimize edilmiş modellerin, özellikle modern AMD GPU'larıyla birleştiğinde yüksek throughput sağlayabileceğini gösteriyor. Geliştiriciler, benzer yapılandırmalarda daha hafif modelleri tercih ederek maliyet ve enerji verimliliğini artırabilirken, kullanıcılar da daha hızlı yanıt sürelerinden faydalanabilecek.",
+  "onemli_maddeler": [
+    "Qwen3.8‑Flash‑Next IQ3_S, 90 tokens/s decode hızıyla 27 B modelin üç katı performans gösterdi.",
+    "Test, AMD Radeon RX 9700 32 GB GPU ve 64 GB RAM üzerinde Strata aracılığıyla gerçekleştirildi.",
+    "Prompt varyasyonları, özellikle \"low poly\" stilinde çokgenli bir plan talebiyle çıktıyı iyileştirdi."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Küçük ölçekli bir modelin yüksek throughput sağlaması, düşük maliyetli AI çözümlerine yönelen geliştiriciler için kritik bir gösterge oluşturuyor.",
+  "etiketler": [
+    "Qwen",
+    "Flash",
+    "Benchmark",
+    "Opencode",
+    "AMD"
+  ],
+  "anilan_modeller": [
+    "Qwen3.8-Flash-Next IQ3_S",
+    "Qwen 3.8 Max",
+    "Exo",
+    "Diğer orta ölçekli modeller"
+  ],
+  "yorum_tr": "Bu sonuç, hafif modellerin doğru donanım ve prompt stratejileriyle büyük modellerle rekabet edebileceğini gösteriyor; geliştiriciler daha düşük kaynak tüketimiyle yüksek yanıt hızı elde edebilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen3.8-Flash-Next IQ3_S",
+      "benchmark": "decode speed on Opencode",
+      "skor": 90,
+      "birim": "tokens/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "It achieved 90 tk/s decode approximately 3x compare to 27b."
+    }
+  ],
+  "gorsel_url": "https://external-preview.redd.it/YThvb3g5NzdkNHZoMY6NF4VqiN5q5YtlcQ5-d_8EDrXqQGsXGOxGeeA9q2TV.png?width=640&crop=smart&auto=webp&s=bf7a6e842c96889b9729783a15d3cfe1d0eeec12",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x4h1c2/qwen_38_flash_next_q3_s_benchmark_creation/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-12T23:18:32.000Z",
+  "slug": "qwen-3-8-flash-next-q3-s-benchmark-creation"
+}
