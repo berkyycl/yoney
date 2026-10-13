@@ -1,10 +1,13 @@
 import { loadArticles } from '../lib/articles';
+import { NEWS_CATEGORIES } from '../lib/categories';
 
 export async function GET() {
   const articles = loadArticles();
 
   const staticPages = [
     '',
+    '/kategori',
+    ...NEWS_CATEGORIES.map(c => `/kategori/${c.id}`),
     '/benchmarklar',
     '/karsilastir',
     '/ne-degisti',

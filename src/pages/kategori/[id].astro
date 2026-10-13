@@ -1,0 +1,319 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Story from '../../components/Story.astro';
+import Art from '../../components/Art.astro';
+import { loadArticles } from '../../lib/articles';
+import { NEWS_CATEGORIES, categoryOf, type NewsCategory } from '../../lib/categories';
+
+export function getStaticPaths() {
+	return NEWS_CATEGORIES.map(category => ({ params: { id: category.id }, props: { category } }));
+}
+
+const { category: c } = Astro.props as { category: NewsCategory };
+const PAGE = 12;
+const list = loadArticles().filter(a => categoryOf(a) === c.id);
+
+// Bölümün manşeti: en yeni görselli haberlerden en önemlisi
+const withImage = list.filter(a => a.gorsel_url).slice(0, 6);
+const lead = [...withImage].sort((a, b) => (b.onem ?? 0) - (a.onem ?? 0))[0];
+const rest = list.filter(a => a !== lead);
+
+const i = NEWS_CATEGORIES.indexOf(c);
+const prev = NEWS_CATEGORIES[(i - 1 + NEWS_CATEGORIES.length) % NEWS_CATEGORIES.length];
+const next = NEWS_CATEGORIES[(i + 1) % NEWS_CATEGORIES.length];
+const latest = list[0] ? new Date(list[0].date).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', timeZone: 'Europe/Istanbul' }) : null;
+---
+
+<Layout title={`${c.name}: yapay zekâ haberleri | Yöney`} description={c.desc}>
+	<header class="cat-hero" data-cat={c.id}>
+		<div class="cat-art media">
+			<Art cat={c.id} />
+			<span class="cat-num" aria-hidden="true">{c.numeral}</span>
+		</div>
+		<div class="cat-text">
+			<p class="overline">Bölüm {c.numeral}</p>
+			<h1>{c.name}</h1>
+			<p class="cat-tagline">{c.tagline}</p>
+			<p class="lead">{c.desc}</p>
+			<p class="cat-count"><strong>{list.length}</strong> haber{latest && <> · son haber {latest}</>}</p>
+		</div>
+	</header>
+
+	<nav class="chapter-nav" aria-label="Bölümler">
+		{NEWS_CATEGORIES.map(o => (
+			<a class="chapter-link" href={`/kategori/${o.id}`} data-cat={o.id} aria-current={o.id === c.id ? 'page' : undefined}>
+				<span class="swatch"></span>{o.numeral} · {o.name}
+			</a>
+		))}
+	</nav>
+
+	{list.length === 0 ? (
+		<p class="empty">Bu bölümde henüz haber yok. Yeni gelişmeler geldikçe burada yer alacak.</p>
+	) : (
+		<>
+			{lead && (
+				<section class="cat-lead" aria-label="Bölüm manşeti">
+					<Story article={lead} variant="lead" eager />
+				</section>
+			)}
+
+			{rest.length > 0 && (
+				<section aria-labelledby="catFeed">
+					<div class="section-head">
+						<span class="sec-num">{c.numeral}</span>
+						<h2 id="catFeed">Bölümdeki haberler</h2>
+					</div>
+					<div class="cat-grid" id="catGrid" data-paged={PAGE}>
+						{rest.map((a, n) => <Story article={a} variant="card" hidden={n >= PAGE} />)}
+					</div>
+					<div class="grid-foot">
+						<button class="btn" type="button" data-more="catGrid" hidden={rest.length <= PAGE}>Daha fazla haber</button>
+						<p class="muted" data-count="catGrid">{Math.min(PAGE, rest.length)} / {rest.length} haber</p>
+					</div>
+				</section>
+			)}
+		</>
+	)}
+
+	<nav class="pager" aria-label="Önceki ve sonraki bölüm">
+		<a class="pager-link" href={`/kategori/${prev.id}`} data-cat={prev.id}>
+			<small>← Önceki bölüm</small>
+			<strong><span class="swatch"></span>{prev.numeral} · {prev.name}</strong>
+		</a>
+		<a class="pager-link next" href={`/kategori/${next.id}`} data-cat={next.id}>
+			<small>Sonraki bölüm →</small>
+			<strong><span class="swatch"></span>{next.numeral} · {next.name}</strong>
+		</a>
+	</nav>
+</Layout>
+
+<script>
+	import '../../scripts/paged';
+</script>
+
+<style>
+	.cat-hero {
+		display: grid;
+		grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+		gap: 48px;
+		align-items: center;
+		margin-bottom: 36px;
+	}
+
+	.cat-art {
+		aspect-ratio: 4 / 3;
+		border: 2px solid var(--line);
+	}
+
+	.cat-art :global(.art svg) {
+		width: 30%;
+		max-width: 150px;
+	}
+
+	.cat-num {
+		position: absolute;
+		left: 20px;
+		top: 12px;
+		font-family: var(--font-display);
+		font-style: italic;
+		font-weight: 900;
+		font-size: clamp(4rem, 9vw, 7rem);
+		line-height: 1;
+		color: #fff8ec;
+		text-shadow: 0 3px 0 rgba(25, 18, 31, 0.35);
+	}
+
+	.overline {
+		margin: 0;
+		font-size: 0.75rem;
+		font-weight: 800;
+		font-stretch: 82%;
+		letter-spacing: 0.18em;
+		text-transform: uppercase;
+		color: var(--ink-2);
+	}
+
+	.cat-text h1 {
+		margin: 10px 0 8px;
+		font-size: clamp(2.6rem, 6vw, 4.6rem);
+		font-weight: 900;
+		line-height: 0.96;
+		letter-spacing: -0.03em;
+	}
+
+	.cat-tagline {
+		margin: 0 0 18px;
+		font-family: var(--font-display);
+		font-size: clamp(1.25rem, 2.4vw, 1.7rem);
+		font-style: italic;
+		font-weight: 600;
+		line-height: 1.25;
+		color: var(--ink);
+		/* Sloganın altında bölüm renginde fosforlu kalem çizgisi */
+		background-image: linear-gradient(transparent 62%, color-mix(in srgb, var(--c) 55%, transparent) 62%);
+		display: inline;
+		box-decoration-break: clone;
+		-webkit-box-decoration-break: clone;
+	}
+
+	.cat-text .lead {
+		margin-top: 18px;
+	}
+
+	.cat-count {
+		margin: 18px 0 0;
+		padding-top: 14px;
+		border-top: 2px solid var(--line);
+		color: var(--ink-2);
+		font-size: 0.85rem;
+	}
+
+	.cat-count strong {
+		font-family: var(--font-display);
+		font-size: 1.2rem;
+		color: var(--ink);
+	}
+
+	.chapter-nav {
+		display: flex;
+		gap: 8px;
+		margin: 0 0 44px;
+		padding: 14px 0;
+		overflow-x: auto;
+		border-top: 1px solid var(--rule-strong);
+		border-bottom: 1px solid var(--rule-strong);
+		scrollbar-width: none;
+	}
+
+	.chapter-nav::-webkit-scrollbar {
+		display: none;
+	}
+
+	.chapter-link {
+		display: inline-flex;
+		align-items: center;
+		gap: 8px;
+		padding: 8px 12px;
+		border: 1.5px solid transparent;
+		color: var(--ink-2);
+		font-size: 0.72rem;
+		font-weight: 800;
+		font-stretch: 82%;
+		letter-spacing: 0.1em;
+		text-decoration: none;
+		text-transform: uppercase;
+		white-space: nowrap;
+	}
+
+	.chapter-link:hover {
+		border-color: var(--line);
+		color: var(--ink);
+	}
+
+	.chapter-link[aria-current='page'] {
+		background: var(--c);
+		border-color: var(--line);
+		color: var(--c-on);
+	}
+
+	.chapter-link[aria-current='page'] .swatch {
+		background: var(--c-on);
+	}
+
+	.cat-lead {
+		max-width: 920px;
+		margin: 0 auto 64px;
+		padding-right: 14px;
+	}
+
+	.cat-grid {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: 48px 36px;
+	}
+
+	.grid-foot {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 10px;
+		margin-top: 40px;
+	}
+
+	.grid-foot p {
+		margin: 0;
+		font-size: 0.85rem;
+	}
+
+	.pager {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 20px;
+		margin-top: 72px;
+	}
+
+	.pager-link {
+		display: flex;
+		flex-direction: column;
+		gap: 6px;
+		padding: 18px 20px;
+		border: 1.5px solid var(--line);
+		border-top: 6px solid var(--c);
+		color: var(--ink);
+		text-decoration: none;
+		transition: transform 0.2s ease;
+	}
+
+	.pager-link:hover {
+		transform: translateY(-3px);
+	}
+
+	.pager-link.next {
+		align-items: flex-end;
+		text-align: right;
+	}
+
+	.pager-link small {
+		color: var(--ink-3);
+		font-size: 0.7rem;
+		font-weight: 800;
+		font-stretch: 82%;
+		letter-spacing: 0.14em;
+		text-transform: uppercase;
+	}
+
+	.pager-link strong {
+		display: inline-flex;
+		align-items: center;
+		gap: 8px;
+		font-family: var(--font-display);
+		font-size: 1.3rem;
+	}
+
+	@media (max-width: 960px) {
+		.cat-hero {
+			grid-template-columns: 1fr;
+			gap: 28px;
+		}
+		.cat-art {
+			aspect-ratio: 16 / 7;
+		}
+		.cat-grid {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+
+	@media (max-width: 640px) {
+		.cat-grid {
+			grid-template-columns: 1fr;
+			gap: 36px;
+		}
+		.pager {
+			grid-template-columns: 1fr;
+		}
+		.pager-link.next {
+			align-items: flex-start;
+			text-align: left;
+		}
+	}
+</style>

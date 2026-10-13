@@ -1,100 +1,152 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import NewsCard from '../components/NewsCard.astro';
-import { loadArticles, sourceLabel } from '../lib/articles';
+import ArtBanner from '../components/ArtBanner.astro';
+import Story from '../components/Story.astro';
+import ChapterTile from '../components/ChapterTile.astro';
+import { loadArticles } from '../lib/articles';
 import { loadBenchmarkData } from '../lib/benchmarks';
-import { NEWS_CATEGORIES, newsCategoryName } from '../lib/categories';
+import { NEWS_CATEGORIES, categoryOf } from '../lib/categories';
 
-const PAGE = 12;
+const PAGE = 10;
 const articles = loadArticles();
-const catOf = (a: any) => (NEWS_CATEGORIES.some(c => c.id === a.kategori) ? a.kategori : 'diger');
 const time = (a: any) => new Date(a.date).getTime();
-const day = (a: any) => new Date(a.date).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', timeZone: 'Europe/Istanbul' });
 
-// Öne çıkanlar: son 3 günün görselli haberlerinden en önemlileri
-const newest = articles.length ? time(articles[0]) : 0;
-const withImage = articles.filter(a => a.gorsel_url);
-const featured = withImage
-	.filter(a => newest - time(a) < 3 * 864e5)
-	.sort((a, b) => (b.onem ?? 0) - (a.onem ?? 0) || time(b) - time(a))
-	.slice(0, 3);
-for (const a of withImage) {
-	if (featured.length >= 3) break;
-	if (!featured.includes(a)) featured.push(a);
+// Ön sayfa resmi kaynaklar ve bağımsız basından kurulur; topluluk (Reddit) yan sütunda
+const editorialAll = articles.filter(a => a.sourceTier !== 'topluluk');
+const editorial = editorialAll.length > 0 ? editorialAll : articles;
+const community = articles.filter(a => a.sourceTier === 'topluluk');
+
+// Manşet adayları: son 3 günün görselli haberleri, önce önem sonra tarih
+const newest = editorial.length ? time(editorial[0]) : 0;
+const ranked = editorial
+	.filter(a => a.gorsel_url && newest - time(a) < 3 * 864e5)
+	.sort((a, b) => (b.onem ?? 0) - (a.onem ?? 0) || time(b) - time(a));
+
+const used = new Set<string>();
+const take = (list: any[], n: number) => {
+	const out: any[] = [];
+	for (const a of list) {
+		if (out.length >= n) break;
+		if (used.has(a.slug)) continue;
+		used.add(a.slug);
+		out.push(a);
+	}
+	return out;
+};
+const [lead] = take([...ranked, ...editorial], 1);
+const seconds = take([...ranked, ...editorial.filter(a => a.gorsel_url)], 2);
+const briefs = take(editorial, 4);
+const feed = editorial.filter(a => !used.has(a.slug));
+const rail = community.slice(0, 7);
+
+// Arena'da zirve: LMArena genel sıralamasında her modelin en iyi sonucu
+const bench = loadBenchmarkData();
+const arena: { model: string; provider: string | null; score: number }[] = [];
+const seenModels = new Set<string>();
+for (const e of bench.entries.filter(e => e.bench === 'lmarena-text').sort((a, b) => b.score - a.score)) {
+	if (seenModels.has(e.key)) continue;
+	seenModels.add(e.key);
+	arena.push({ model: e.model, provider: e.provider, score: e.score });
+	if (arena.length === 5) break;
 }
-const featuredSlugs = new Set(featured.map(a => a.slug));
 
-const categories = NEWS_CATEGORIES
-	.map(c => ({ ...c, count: articles.filter(a => catOf(a) === c.id).length }))
-	.filter(c => c.count > 0);
-
+const chapters = NEWS_CATEGORIES.map(c => ({ c, count: articles.filter(a => categoryOf(a) === c.id).length }));
 const sourceCount = new Set(articles.map(a => a.source)).size;
-const benchCount = loadBenchmarkData().benchmarks.length;
-
-// İlk görünümde öne çıkanlar listede tekrar etmez; ilk sayfadan sonrası "Daha fazla" ile açılır
-let shown = 0;
-const feed = articles.map(a => {
-	const isFeatured = featuredSlugs.has(a.slug);
-	const hidden = isFeatured || shown >= PAGE;
-	if (!isFeatured) shown++;
-	return { a, isFeatured, hidden };
-});
-const restCount = articles.length - featured.length;
+const today = new Date().toLocaleDateString('tr-TR', { timeZone: 'Europe/Istanbul', weekday: 'long', day: 'numeric', month: 'long' });
 ---
 
 <Layout title="Yöney: Türkiye'nin yapay zekâ haber ve benchmark takibi">
-	<section class="hero">
-		<div class="hero-text">
-			<p class="live-pill"><span class="live-dot"></span>Her 3 saatte bir güncellenir</p>
-			<h1>Yapay zekâda bugün <span class="grad">neler oluyor?</span></h1>
-			<p class="lead">Model çıkışları, güncellemeler ve doğrulanmış benchmark skorları. Resmi kaynaklardan ve bağımsız basından derlenip Türkçeye aktarılır.</p>
+	<ArtBanner height={160}>
+		<div class="banner-text">
+			<p class="banner-date">{today}</p>
+			<h1 class="banner-title">Yapay zekâ gündemi</h1>
 		</div>
-		<div class="stats">
-			<div class="stat"><span class="stat-label">Haber</span><span class="stat-value">{articles.length}</span></div>
-			<div class="stat"><span class="stat-label">Kaynak</span><span class="stat-value">{sourceCount}</span></div>
-			<a class="stat stat-link" href="/benchmarklar"><span class="stat-label">Benchmark</span><span class="stat-value">{benchCount}</span></a>
-		</div>
-	</section>
+		<dl class="banner-stats">
+			<div><dt>haber</dt><dd>{articles.length}</dd></div>
+			<div><dt>kaynak</dt><dd>{sourceCount}</dd></div>
+			<div><dt>sıralama</dt><dd>{bench.benchmarks.length}</dd></div>
+		</dl>
+	</ArtBanner>
 
-	{articles.length === 0 ? (
+	{!lead ? (
 		<p class="empty">Henüz haber bulunmuyor. Otomatik güncelleme ilk turunu tamamladığında son bir ayın haberleri burada listelenecek.</p>
 	) : (
 		<>
-			{featured.length > 0 && (
-				<section class="featured" id="featured" aria-label="Öne çıkanlar">
-					{featured.map((a, i) => (
-						<article class:list={['feat', i === 0 ? 'feat-main' : 'feat-side']} data-cat={catOf(a)}>
-							<img src={a.gorsel_url} alt="" loading={i === 0 ? 'eager' : 'lazy'} decoding="async" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('no-img');this.remove()" />
-							<div class="feat-body">
-								<span class="feat-cat cat" data-cat={catOf(a)}>{newsCategoryName(catOf(a))}</span>
-								{i === 0
-									? <h2><a href={`/haber/${a.slug}`}>{a.baslik_tr}</a></h2>
-									: <h3><a href={`/haber/${a.slug}`}>{a.baslik_tr}</a></h3>}
-								{i === 0 && <p>{a.ozet_tr}</p>}
-								<span class="feat-meta"><span lang="en">{sourceLabel(a.source)}</span> ·<time datetime={a.date} data-rel>{day(a)}</time></span>
-							</div>
-						</article>
-					))}
+			<section class="front" aria-label="Manşet">
+				<div class="front-lead">
+					<Story article={lead} variant="lead" eager />
+				</div>
+				{seconds.length > 0 && (
+					<div class="front-side">
+						{seconds.map(a => <Story article={a} variant="second" />)}
+					</div>
+				)}
+			</section>
+
+			{briefs.length > 0 && (
+				<section class="briefs" aria-label="Kısa haberler">
+					{briefs.map(a => <Story article={a} variant="brief" />)}
 				</section>
 			)}
 
-			<div class="filter-bar" role="toolbar" aria-label="Kategoriye göre süz">
-				<button class="chip-btn" type="button" data-cat="all" aria-pressed="true">Tümü <span class="count">{articles.length}</span></button>
-				{categories.map(c => (
-					<button class="chip-btn" type="button" data-cat={c.id} data-label={c.name} aria-pressed="false">
-						<span class="cat" data-cat={c.id}></span>{c.name} <span class="count">{c.count}</span>
-					</button>
-				))}
+			<div class="split">
+				<section class="feed" aria-labelledby="feedTitle">
+					<div class="section-head">
+						<span class="sec-num">01</span>
+						<h2 id="feedTitle">Son haberler</h2>
+						<a class="sec-more" href="/kategori">Bölümler →</a>
+					</div>
+					<div class="feed-list" id="feed" data-paged={PAGE}>
+						{feed.map((a, i) => <Story article={a} variant="row" hidden={i >= PAGE} />)}
+					</div>
+					<div class="feed-foot">
+						<button class="btn" type="button" data-more="feed" hidden={feed.length <= PAGE}>Daha fazla haber</button>
+						<p class="muted" data-count="feed">{Math.min(PAGE, feed.length)} / {feed.length} haber</p>
+					</div>
+				</section>
+
+				<aside class="rail">
+					{arena.length > 0 && (
+						<section class="rail-box">
+							<div class="section-head">
+								<span class="sec-num">02</span>
+								<h2>Arena'da zirve</h2>
+							</div>
+							<ol class="arena">
+								{arena.map((r, i) => (
+									<li>
+										<span class="arena-rank">{i + 1}</span>
+										<span class="arena-name"><strong>{r.model}</strong>{r.provider && <small>{r.provider}</small>}</span>
+										<span class="arena-score">{r.score.toLocaleString('tr-TR')}</span>
+									</li>
+								))}
+							</ol>
+							<p class="rail-note">LMArena genel sıralaması, kullanıcı oylarıyla (ELO). <a href="/benchmarklar">Tüm sıralamalar →</a></p>
+						</section>
+					)}
+
+					{rail.length > 0 && (
+						<section class="rail-box">
+							<div class="section-head">
+								<span class="sec-num">03</span>
+								<h2>Topluluktan</h2>
+							</div>
+							<ol class="numbered">
+								{rail.map(a => <li><Story article={a} variant="mini" /></li>)}
+							</ol>
+						</section>
+					)}
+				</aside>
 			</div>
 
-			<section aria-labelledby="feedTitle">
-				<h2 class="feed-title" id="feedTitle">Son haberler</h2>
-				<div class="news-grid">
-					{feed.map(({ a, isFeatured, hidden }) => <NewsCard article={a} featured={isFeatured} hidden={hidden} />)}
+			<section class="chapters" aria-labelledby="chaptersTitle">
+				<div class="section-head">
+					<span class="sec-num">04</span>
+					<h2 id="chaptersTitle">Bölümler</h2>
+					<a class="sec-more" href="/kategori">Tümü →</a>
 				</div>
-				<div class="feed-foot">
-					<button class="btn" id="moreBtn" type="button" hidden={restCount <= PAGE}>Daha fazla haber</button>
-					<p class="muted" id="feedCount">{Math.min(PAGE, restCount)} / {restCount} haber</p>
+				<div class="chapters-grid">
+					{chapters.map(({ c, count }) => <ChapterTile category={c} count={count} />)}
 				</div>
 			</section>
 		</>
@@ -102,304 +154,113 @@ const restCount = articles.length - featured.length;
 </Layout>
 
 <script>
-	const PAGE = 12;
-	const cards = Array.from(document.querySelectorAll<HTMLElement>('.news-card'));
-	const chips = Array.from(document.querySelectorAll<HTMLButtonElement>('.filter-bar .chip-btn'));
-	const featuredEl = document.getElementById('featured');
-	const moreBtn = document.getElementById('moreBtn') as HTMLButtonElement | null;
-	const countEl = document.getElementById('feedCount');
-	const titleEl = document.getElementById('feedTitle');
-	const filterBar = document.querySelector<HTMLElement>('.filter-bar');
-
-	let cat = 'all';
-	let limit = PAGE;
-
-	const matching = () => cards.filter(c => (cat === 'all' ? c.dataset.featured !== '1' : c.dataset.category === cat));
-
-	function render() {
-		const m = matching();
-		const visible = new Set(m.slice(0, limit));
-		cards.forEach(c => { c.hidden = !visible.has(c); });
-		if (featuredEl) featuredEl.hidden = cat !== 'all';
-		if (moreBtn) moreBtn.hidden = m.length <= limit;
-		if (countEl) countEl.textContent = `${Math.min(limit, m.length)} / ${m.length} haber`;
-		const chip = chips.find(c => c.dataset.cat === cat);
-		if (titleEl) titleEl.textContent = cat === 'all' ? 'Son haberler' : (chip?.dataset.label ?? 'Haberler');
-		chips.forEach(c => c.setAttribute('aria-pressed', String(c.dataset.cat === cat)));
-	}
-
-	function select(next: string, scroll: boolean) {
-		cat = chips.some(c => c.dataset.cat === next) ? next : 'all';
-		limit = PAGE;
-		render();
-		history.replaceState(null, '', cat === 'all' ? location.pathname : `#${cat}`);
-		// Süzgeç değişince listenin başına dön (yapışkan çubuğun altından)
-		if (scroll && filterBar && filterBar.getBoundingClientRect().top <= 80) {
-			const y = (titleEl?.getBoundingClientRect().top ?? 0) + window.scrollY - 140;
-			window.scrollTo({ top: y, behavior: 'smooth' });
-		}
-	}
-
-	chips.forEach(c => c.addEventListener('click', () => select(c.dataset.cat || 'all', true)));
-	moreBtn?.addEventListener('click', () => { limit += PAGE; render(); });
-
-	const fromHash = decodeURIComponent(location.hash.slice(1));
-	if (fromHash) select(fromHash, false);
+	import '../scripts/paged';
 </script>
 
 <style>
-	/* ---------- Giriş ---------- */
-	.hero {
-		display: flex;
-		flex-wrap: wrap;
-		align-items: flex-end;
-		justify-content: space-between;
-		gap: 28px 40px;
-		margin: 8px 0 36px;
+	/* ---------- Kapak bandı ---------- */
+	:global(.art-banner) {
+		margin-bottom: 40px;
 	}
 
-	.hero-text {
-		max-width: 720px;
+	.banner-date {
+		margin: 0 0 6px;
+		font-size: 0.72rem;
+		font-weight: 800;
+		font-stretch: 82%;
+		letter-spacing: 0.18em;
+		text-transform: uppercase;
 	}
 
-	.live-pill {
-		display: inline-flex;
-		align-items: center;
-		gap: 9px;
+	.banner-title {
 		margin: 0;
-		padding: 5px 13px 5px 11px;
-		border: 1px solid var(--border);
-		border-radius: 999px;
-		background: var(--surface);
-		color: var(--text-2);
-		font-size: 0.8rem;
-		font-weight: 500;
+		color: #fff8ec;
+		font-size: clamp(2.3rem, 5.4vw, 4rem);
+		font-style: italic;
+		font-weight: 800;
+		line-height: 0.95;
+		letter-spacing: -0.02em;
 	}
 
-	.hero h1 {
-		margin: 18px 0 14px;
-		font-size: clamp(2.2rem, 5.4vw, 3.6rem);
-		font-weight: 700;
-		letter-spacing: -0.045em;
-		line-height: 1.04;
-	}
-
-	.hero .lead {
-		max-width: 60ch;
-	}
-
-	.stats {
+	.banner-stats {
 		display: flex;
 		gap: 10px;
 		margin: 0;
 	}
 
-	.stat {
-		min-width: 108px;
-		padding: 12px 16px;
-		border: 1px solid var(--border);
-		border-radius: var(--radius);
-		background: var(--surface);
+	/* Sayılar, arkadaki renk alanından bağımsız okunabilsin diye krem kutucuklarda */
+	.banner-stats div {
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: flex-start;
+		min-width: 74px;
+		padding: 6px 10px 7px;
+		background: #fff8ec;
+		color: #19121f;
+		border: 2px solid #19121f;
+		text-shadow: none;
 	}
 
-	.stat-label {
-		display: block;
-		color: var(--muted);
-		font-size: 0.78rem;
+	.banner-stats dt {
+		font-size: 0.68rem;
+		font-weight: 800;
+		font-stretch: 82%;
+		letter-spacing: 0.16em;
+		text-transform: uppercase;
 	}
 
-	.stat-value {
-		display: block;
-		margin: 2px 0 0;
-		font-size: 1.6rem;
-		font-weight: 700;
-		letter-spacing: -0.04em;
-		font-variant-numeric: tabular-nums;
+	.banner-stats dd {
+		margin: 0;
+		font-family: var(--font-display);
+		font-size: 1.9rem;
+		font-weight: 900;
+		line-height: 1;
 	}
 
-	.stat-link {
-		color: var(--text);
-		text-decoration: none;
-		transition: border-color 0.15s;
-	}
-
-	.stat-link:hover {
-		border-color: var(--accent);
-	}
-
-	.stat-link .stat-value::after {
-		content: ' →';
-		color: var(--accent-text);
-		font-size: 1rem;
-	}
-
-	/* ---------- Öne çıkanlar ---------- */
-	.featured {
+	/* ---------- Ön sayfa ---------- */
+	.front {
 		display: grid;
-		grid-template-columns: 1.65fr 1fr;
-		grid-template-rows: 1fr 1fr;
-		gap: 20px;
-		margin-bottom: 36px;
+		grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+		gap: 48px;
+		padding-bottom: 40px;
 	}
 
-	.feat {
-		position: relative;
-		isolation: isolate;
-		overflow: hidden;
-		min-height: 230px;
-		border-radius: var(--radius-lg);
-		background: #15151b;
-		color: #fff;
-	}
-
-	.feat-main {
-		grid-row: 1 / 3;
-		min-height: 480px;
-	}
-
-	.feat img {
-		position: absolute;
-		inset: 0;
-		z-index: -2;
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-		transition: transform 0.6s ease;
-	}
-
-	.feat::before {
-		content: '';
-		position: absolute;
-		inset: 0;
-		z-index: -1;
-		/* Açık renkli görsellerde de beyaz yazı okunsun diye metnin arkası koyulaştırılır */
-		background: linear-gradient(to top, rgba(6, 6, 10, 0.95) 0%, rgba(6, 6, 10, 0.8) 38%, rgba(6, 6, 10, 0.3) 68%, rgba(6, 6, 10, 0) 90%);
-	}
-
-	.feat.no-img {
-		background:
-			radial-gradient(90% 90% at 10% 0%, color-mix(in srgb, var(--c) 55%, transparent) 0%, transparent 65%),
-			radial-gradient(80% 80% at 100% 100%, rgba(14, 165, 233, 0.35) 0%, transparent 60%),
-			#15151b;
-	}
-
-	.feat:hover img {
-		transform: scale(1.04);
-	}
-
-	.feat-body {
-		position: absolute;
-		left: 0;
-		right: 0;
-		bottom: 0;
+	.front-side {
 		display: flex;
 		flex-direction: column;
-		align-items: flex-start;
-		gap: 10px;
-		padding: 24px;
+		gap: 40px;
+		padding-left: 40px;
+		border-left: 1px solid var(--rule-strong);
 	}
 
-	.feat-main .feat-body {
-		padding: 32px;
-		max-width: 720px;
-	}
-
-	.feat-cat {
-		padding: 4px 11px 4px 10px;
-		border-radius: 999px;
-		background: rgba(255, 255, 255, 0.14);
-		-webkit-backdrop-filter: blur(8px);
-		backdrop-filter: blur(8px);
-		color: #fff;
-	}
-
-	.feat h2,
-	.feat h3 {
-		margin: 0;
-		color: #fff;
-		line-height: 1.22;
-	}
-
-	.feat h2 {
-		font-size: clamp(1.5rem, 2.8vw, 2.2rem);
-		font-weight: 700;
-		letter-spacing: -0.035em;
-	}
-
-	.feat h3 {
-		font-size: 1.15rem;
-		letter-spacing: -0.02em;
-		display: -webkit-box;
-		-webkit-line-clamp: 3;
-		-webkit-box-orient: vertical;
-		overflow: hidden;
-	}
-
-	.feat a {
-		color: inherit;
-		text-decoration: none;
-	}
-
-	.feat a::after {
-		content: '';
-		position: absolute;
-		inset: 0;
-	}
-
-	.feat p {
-		margin: 0;
-		color: rgba(255, 255, 255, 0.82);
-		font-size: 1.02rem;
-		display: -webkit-box;
-		-webkit-line-clamp: 2;
-		-webkit-box-orient: vertical;
-		overflow: hidden;
-	}
-
-	.feat-meta {
-		color: rgba(255, 255, 255, 0.72);
-		font-size: 0.82rem;
-	}
-
-	/* ---------- Kategori çubuğu ---------- */
-	.filter-bar {
-		position: sticky;
-		top: var(--header-h);
-		z-index: 20;
-		display: flex;
-		gap: 8px;
-		margin: 0 -24px 8px;
-		padding: 12px 24px;
-		overflow-x: auto;
-		scrollbar-width: none;
-		background: var(--header-bg);
-		-webkit-backdrop-filter: saturate(180%) blur(14px);
-		backdrop-filter: saturate(180%) blur(14px);
-	}
-
-	.filter-bar::-webkit-scrollbar {
-		display: none;
-	}
-
-	.filter-bar .cat {
-		gap: 0;
-	}
-
-	.chip-btn[aria-pressed='true'] .cat::before {
-		box-shadow: none;
-	}
-
-	/* ---------- Haber listesi ---------- */
-	.feed-title {
-		margin: 16px 0 18px;
-		font-size: 1.4rem;
-		letter-spacing: -0.03em;
-	}
-
-	.news-grid {
+	.briefs {
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-		gap: 20px;
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+		margin-bottom: 56px;
+		border-top: 2px solid var(--line);
+		border-bottom: 2px solid var(--line);
+	}
+
+	.briefs > :global(.story) {
+		padding: 22px 22px 24px;
+		border-left: 1px solid var(--rule-strong);
+	}
+
+	.briefs > :global(.story:first-child) {
+		padding-left: 0;
+		border-left: 0;
+	}
+
+	.briefs > :global(.story:last-child) {
+		padding-right: 0;
+	}
+
+	/* ---------- Akış + yan sütun ---------- */
+	.split {
+		display: grid;
+		grid-template-columns: minmax(0, 1fr) 340px;
+		gap: 56px;
+		margin-bottom: 64px;
 	}
 
 	.feed-foot {
@@ -407,7 +268,7 @@ const restCount = articles.length - featured.length;
 		flex-direction: column;
 		align-items: center;
 		gap: 10px;
-		margin-top: 36px;
+		margin-top: 32px;
 	}
 
 	.feed-foot p {
@@ -415,57 +276,172 @@ const restCount = articles.length - featured.length;
 		font-size: 0.85rem;
 	}
 
-	@media (max-width: 900px) {
-		.featured {
-			grid-template-columns: 1fr 1fr;
-			grid-template-rows: auto auto;
+	.rail {
+		display: flex;
+		flex-direction: column;
+		gap: 48px;
+	}
+
+	.rail .section-head h2 {
+		font-size: 1.45rem;
+	}
+
+	.arena {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.arena li {
+		display: grid;
+		grid-template-columns: 2rem minmax(0, 1fr) auto;
+		align-items: center;
+		gap: 10px;
+		padding: 11px 0;
+		border-bottom: 1px solid var(--rule);
+	}
+
+	.arena-rank {
+		font-family: var(--font-display);
+		font-style: italic;
+		font-weight: 900;
+		font-size: 1.6rem;
+		line-height: 1;
+		color: var(--ink-3);
+	}
+
+	.arena li:first-child .arena-rank {
+		color: var(--magenta);
+	}
+
+	.arena-name {
+		display: flex;
+		flex-direction: column;
+		min-width: 0;
+		line-height: 1.25;
+	}
+
+	.arena-name strong {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+
+	.arena-name small {
+		color: var(--ink-3);
+		font-size: 0.75rem;
+	}
+
+	.arena-score {
+		font-family: var(--font-display);
+		font-weight: 800;
+		font-size: 1.15rem;
+		font-variant-numeric: tabular-nums;
+	}
+
+	.rail-note {
+		margin: 12px 0 0;
+		color: var(--ink-3);
+		font-size: 0.82rem;
+	}
+
+	.numbered {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		counter-reset: n;
+	}
+
+	.numbered > li {
+		counter-increment: n;
+		display: grid;
+		grid-template-columns: 2.4rem minmax(0, 1fr);
+		gap: 6px;
+		padding: 14px 0;
+		border-bottom: 1px solid var(--rule);
+	}
+
+	.numbered > li::before {
+		content: counter(n, decimal-leading-zero);
+		font-family: var(--font-display);
+		font-style: italic;
+		font-weight: 900;
+		font-size: 1.45rem;
+		line-height: 1;
+		color: var(--teal);
+	}
+
+	/* ---------- Bölümler ---------- */
+	.chapters-grid {
+		display: grid;
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+		gap: 24px;
+	}
+
+	@media (max-width: 1080px) {
+		.split {
+			grid-template-columns: 1fr;
 		}
-		.feat-main {
-			grid-column: 1 / -1;
-			grid-row: auto;
-			min-height: 400px;
+		.rail {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 40px;
+		}
+	}
+
+	@media (max-width: 900px) {
+		.front {
+			grid-template-columns: 1fr;
+			gap: 36px;
+		}
+		.front-side {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 28px;
+			padding: 32px 0 0;
+			border-left: 0;
+			border-top: 1px solid var(--rule-strong);
+		}
+		.briefs {
+			grid-template-columns: 1fr 1fr;
+		}
+		.briefs > :global(.story:nth-child(odd)) {
+			padding-left: 0;
+			border-left: 0;
+		}
+		.briefs > :global(.story:nth-child(n + 3)) {
+			border-top: 1px solid var(--rule-strong);
+		}
+		.chapters-grid {
+			grid-template-columns: 1fr 1fr;
 		}
 	}
 
 	@media (max-width: 640px) {
-		.hero {
-			margin-bottom: 28px;
-		}
-		.stats {
-			width: 100%;
-		}
-		.stat {
-			flex: 1;
+		.banner-stats div {
 			min-width: 0;
-			padding: 10px 12px;
+			padding: 4px 8px 5px;
 		}
-		.stat-value {
-		display: block;
-			font-size: 1.35rem;
+		.banner-stats dd {
+			font-size: 1.5rem;
 		}
-		.featured {
+		.front-side {
 			grid-template-columns: 1fr;
-			gap: 14px;
 		}
-		.feat-main {
-			min-height: 380px;
-		}
-		.feat::before {
-			background: linear-gradient(to top, rgba(6, 6, 10, 0.96) 0%, rgba(6, 6, 10, 0.86) 55%, rgba(6, 6, 10, 0.35) 85%, rgba(6, 6, 10, 0.1) 100%);
-		}
-		.feat-main .feat-body,
-		.feat-body {
-			padding: 20px;
-		}
-		.feat-side {
-			min-height: 200px;
-		}
-		.filter-bar {
-			margin: 0 -16px 8px;
-			padding: 10px 16px;
-		}
-		.news-grid {
+		.briefs {
 			grid-template-columns: 1fr;
+		}
+		.briefs > :global(.story) {
+			padding: 18px 0;
+			border-left: 0;
+		}
+		.briefs > :global(.story + .story) {
+			border-top: 1px solid var(--rule-strong);
+		}
+		.rail {
+			grid-template-columns: 1fr;
+		}
+		.chapters-grid {
 			gap: 16px;
 		}
 	}

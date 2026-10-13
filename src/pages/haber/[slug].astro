@@ -1,8 +1,9 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import NewsCard from '../../components/NewsCard.astro';
+import Story from '../../components/Story.astro';
+import Art from '../../components/Art.astro';
 import { loadArticles, sourceLabel } from '../../lib/articles';
-import { NEWS_CATEGORIES, newsCategoryName, tierName } from '../../lib/categories';
+import { categoryOf, getCategory, tierName } from '../../lib/categories';
 
 export async function getStaticPaths() {
     return loadArticles().map(article => ({
@@ -39,7 +40,7 @@ const jsonLd = {
   }
 };
 
-const cat = NEWS_CATEGORIES.some(c => c.id === article.kategori) ? article.kategori : 'diger';
+const cat = getCategory(categoryOf(article));
 const dateStr = new Date(article.date).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Europe/Istanbul' });
 const paragraphs: string[] = (article.detayli_icerik_tr ?? '').split(/\n+/).map((p: string) => p.trim()).filter(Boolean);
 const points: string[] = article.onemli_maddeler ?? [];
@@ -47,9 +48,9 @@ const words = [article.ozet_tr, ...paragraphs, ...points].join(' ').split(/\s+/)
 const readMin = Math.max(1, Math.round(words / 200));
 const source = sourceLabel(article.source);
 
-// Benzer haberler: aynı kategoriden en yeni 3 haber, yetmezse en yeni haberlerle tamamlanır
+// Aynı bölümden en yeni 3 haber, yetmezse en yeni haberlerle tamamlanır
 const others = loadArticles().filter(a => a.slug !== article.slug);
-const related = others.filter(a => a.kategori === article.kategori).slice(0, 3);
+const related = others.filter(a => categoryOf(a) === cat.id).slice(0, 3);
 for (const a of others) {
 	if (related.length >= 3) break;
 	if (!related.includes(a)) related.push(a);
@@ -64,111 +65,122 @@ for (const a of others) {
 	articleDate={article.date}
 >
 	<script type="application/ld+json" set:html={JSON.stringify(jsonLd).replace(/</g, '\\u003c')} />
-	<article class="post">
-		<a href="/" class="back">
-			<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-			Tüm haberler
-		</a>
+	<article class="post" data-cat={cat.id}>
+		<nav class="crumbs" aria-label="Konum">
+			<a href="/">Haberler</a>
+			<span aria-hidden="true">/</span>
+			<a href={`/kategori/${cat.id}`}>Bölüm {cat.numeral} · {cat.name}</a>
+		</nav>
 
 		<header class="post-head">
-			<div class="post-tags">
-				<span class="cat" data-cat={cat}>{newsCategoryName(cat)}</span>
-				<span class={`tier tier-${article.sourceTier ?? 'topluluk'}`}>{tierName(article.sourceTier)}</span>
+			<div class="post-labels">
+				<span class="tag">{cat.name}</span>
+				<span class="tier">{tierName(article.sourceTier)}</span>
 			</div>
 			<h1>{article.baslik_tr}</h1>
-			<p class="post-lead">{article.ozet_tr}</p>
-			<div class="post-byline">
-				<span class="avatar" aria-hidden="true">{source.charAt(0)}</span>
-				<div class="byline-text">
-					<strong lang="en">{source}</strong>
-					<span><time datetime={article.date}>{dateStr}</time> · {readMin} dk okuma</span>
-				</div>
-				<a class="btn btn-sm" href={article.url} target="_blank" rel="noopener noreferrer">Orijinal haber ↗</a>
+			<p class="deck">{article.ozet_tr}</p>
+			<div class="byline">
+				<p class="byline-text">
+					<span><strong lang="en">{source}</strong> kaynağından derlendi</span>
+					<span class="muted"><time datetime={article.date}>{dateStr}</time> · {readMin} dk okuma</span>
+				</p>
+				<a class="btn btn-solid" href={article.url} target="_blank" rel="noopener noreferrer">Orijinal haber ↗</a>
 			</div>
 		</header>
 
 		{article.gorsel_url && (
 			<figure class="post-hero">
-				<img src={article.gorsel_url} alt="" referrerpolicy="no-referrer" onerror="this.closest('.post-hero')?.remove()" />
+				<div class="frame">
+					<div class="media">
+						<Art cat={cat.id} />
+						<img src={article.gorsel_url} alt="" referrerpolicy="no-referrer" onerror="this.closest('.post-hero')?.remove()" />
+					</div>
+				</div>
+				<figcaption>Görsel: <span lang="en">{source}</span></figcaption>
 			</figure>
 		)}
 
-		<div class="post-body">
-			{points.length > 0 && (
-				<section class="callout key-points">
-					<h2>Öne çıkanlar</h2>
-					<ul>
-						{points.map(m => (
-							<li>
-								<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
-								<span>{m}</span>
-							</li>
-						))}
-					</ul>
-				</section>
-			)}
-
-			{paragraphs.length > 0 && (
-				<div class="prose">
-					{paragraphs.map(p => <p>{p}</p>)}
-				</div>
-			)}
-
-			{article.yorum_tr && (
-				<aside class="callout ai-note">
-					<h2>
-						<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l1.9 5.6L19.5 9.5l-5.6 1.9L12 17l-1.9-5.6L4.5 9.5l5.6-1.9L12 2zm7 12 .9 2.6 2.6.9-2.6.9L19 21l-.9-2.6-2.6-.9 2.6-.9L19 14z"/></svg>
-						Yöney yorumu
-					</h2>
-					<p>{article.yorum_tr}</p>
-					<small>Yapay zekâ tarafından üretilmiştir.</small>
-				</aside>
-			)}
-
-			{article.benchmarklar && article.benchmarklar.length > 0 && (
-				<section class="post-bench">
-					<h2>Benchmark sonuçları</h2>
-					<p class="bench-note">Bu skorların kaynak metinde birebir geçtiği doğrulandı. Bilinen testlerin sonuçları <a href="/benchmarklar">Benchmarklar</a> sayfasındaki sıralamalara da eklenir.</p>
-					<div class="table-wrap">
-						<table>
-							<thead>
-								<tr>
-									<th>Model</th>
-									<th>Benchmark</th>
-									<th class="num">Skor</th>
-									<th>Ayar</th>
-								</tr>
-							</thead>
-							<tbody>
-								{article.benchmarklar.map((b: any) => (
-									<tr>
-										<td class="strong">{b.model}</td>
-										<td>{b.benchmark}</td>
-										<td class="num">{b.birim === '%' ? `%${b.skor}` : `${b.skor} ${b.birim ?? ''}`}</td>
-										<td class="muted">{b.degerlendirme_ayari || '-'}</td>
-									</tr>
-								))}
-							</tbody>
-						</table>
+		<div class="post-grid">
+			<div class="post-main">
+				{paragraphs.length > 0 && (
+					<div class="prose">
+						{paragraphs.map(p => <p>{p}</p>)}
 					</div>
-				</section>
-			)}
+				)}
 
-			<a class="source-cta" href={article.url} target="_blank" rel="noopener noreferrer">
-				<span class="cta-text">
-					<small>Kaynak</small>
-					<strong lang="en">{source}</strong>
-				</span>
-				<span class="cta-go">Orijinal haberi oku ↗</span>
-			</a>
+				{article.yorum_tr && (
+					<aside class="note">
+						<p class="note-label">Yöney yorumu</p>
+						<blockquote>{article.yorum_tr}</blockquote>
+						<small>Yapay zekâ tarafından üretilmiştir.</small>
+					</aside>
+				)}
+
+				{article.benchmarklar && article.benchmarklar.length > 0 && (
+					<section class="scores">
+						<h2>Benchmark sonuçları</h2>
+						<p class="scores-note">Bu skorların kaynak metinde birebir geçtiği doğrulandı. Bilinen testlerin sonuçları <a href="/benchmarklar">Benchmark</a> sayfasındaki sıralamalara da eklenir.</p>
+						<div class="table-wrap">
+							<table>
+								<thead>
+									<tr>
+										<th>Model</th>
+										<th>Test</th>
+										<th class="num">Skor</th>
+										<th>Ayar</th>
+									</tr>
+								</thead>
+								<tbody>
+									{article.benchmarklar.map((b: any) => (
+										<tr>
+											<td class="strong">{b.model}</td>
+											<td>{b.benchmark}</td>
+											<td class="num">{b.birim === '%' ? `%${b.skor}` : `${b.skor} ${b.birim ?? ''}`}</td>
+											<td class="muted">{b.degerlendirme_ayari || '-'}</td>
+										</tr>
+									))}
+								</tbody>
+							</table>
+						</div>
+					</section>
+				)}
+
+				<div class="source-box">
+					<p>Bu haber <strong lang="en">{source}</strong> kaynağından derlenip Türkçeye aktarıldı. Ayrıntılar ve orijinal metin için kaynağa göz atın.</p>
+					<a class="btn btn-solid" href={article.url} target="_blank" rel="noopener noreferrer">Orijinal haberi oku ↗</a>
+				</div>
+			</div>
+
+			<aside class="post-aside">
+				{points.length > 0 && (
+					<section class="summary-box">
+						<h2>Özetle</h2>
+						<ol>
+							{points.map(m => <li>{m}</li>)}
+						</ol>
+					</section>
+				)}
+				<a class="chapter-box" href={`/kategori/${cat.id}`}>
+					<span class="chapter-box-num">{cat.numeral}</span>
+					<span class="chapter-box-text">
+						<small>Bölüm</small>
+						<strong>{cat.name}</strong>
+						<em>{cat.tagline}</em>
+					</span>
+				</a>
+			</aside>
 		</div>
 	</article>
 
 	{related.length > 0 && (
 		<section class="related" aria-labelledby="relatedTitle">
-			<h2 id="relatedTitle">Benzer haberler</h2>
+			<div class="section-head">
+				<span class="sec-num">→</span>
+				<h2 id="relatedTitle">Aynı bölümden</h2>
+				<a class="sec-more" href={`/kategori/${cat.id}`}>Tümü →</a>
+			</div>
 			<div class="related-grid">
-				{related.map(a => <NewsCard article={a} />)}
+				{related.map(a => <Story article={a} variant="card" />)}
 			</div>
 		</section>
 	)}
@@ -176,320 +188,392 @@ for (const a of others) {
 
 <style>
 	.post {
-		max-width: 760px;
+		max-width: 1080px;
 		margin: 0 auto;
 	}
 
-	.back {
-		display: inline-flex;
-		align-items: center;
-		gap: 6px;
+	.crumbs {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 8px;
 		margin-bottom: 28px;
-		color: var(--muted);
-		font-size: 0.9rem;
-		font-weight: 500;
+		font-size: 0.72rem;
+		font-weight: 800;
+		font-stretch: 82%;
+		letter-spacing: 0.14em;
+		text-transform: uppercase;
+	}
+
+	.crumbs a {
+		color: var(--ink-2);
 		text-decoration: none;
 	}
 
-	.back:hover {
-		color: var(--text);
+	.crumbs a:hover {
+		color: var(--link);
 	}
 
-	.post-tags {
+	.crumbs span {
+		color: var(--ink-3);
+	}
+
+	.post-head {
+		max-width: 900px;
+	}
+
+	.post-labels {
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
-		gap: 10px;
-		margin-bottom: 16px;
+		gap: 12px;
+		margin-bottom: 18px;
 	}
 
 	.tier {
-		padding: 3px 10px;
-		border-radius: 999px;
-		background: var(--surface-2);
-		color: var(--text-2);
-		font-size: 0.75rem;
-		font-weight: 600;
-	}
-
-	.tier-resmi {
-		background: var(--accent-soft);
-		color: var(--accent-text);
+		color: var(--ink-3);
+		font-size: 0.7rem;
+		font-weight: 800;
+		font-stretch: 82%;
+		letter-spacing: 0.14em;
+		text-transform: uppercase;
 	}
 
 	h1 {
-		margin-bottom: 16px;
-		font-size: clamp(1.9rem, 4.6vw, 2.75rem);
-		font-weight: 700;
-		letter-spacing: -0.04em;
-		line-height: 1.1;
+		margin-bottom: 18px;
+		font-size: clamp(2.2rem, 5.4vw, 4rem);
+		font-weight: 900;
+		line-height: 1;
+		letter-spacing: -0.025em;
 		overflow-wrap: anywhere;
 	}
 
-	.post-lead {
-		margin: 0 0 24px;
-		color: var(--text-2);
-		font-size: 1.2rem;
-		line-height: 1.6;
+	.deck {
+		margin: 0 0 26px;
+		color: var(--ink-2);
+		font-family: var(--font-display);
+		font-size: clamp(1.15rem, 2vw, 1.4rem);
+		font-style: italic;
+		font-weight: 500;
+		line-height: 1.45;
 	}
 
-	.post-byline {
+	.byline {
 		display: flex;
+		flex-wrap: wrap;
 		align-items: center;
-		gap: 12px;
+		justify-content: space-between;
+		gap: 14px 24px;
 		padding: 16px 0;
-		border-top: 1px solid var(--border);
-		border-bottom: 1px solid var(--border);
-	}
-
-	.avatar {
-		width: 40px;
-		height: 40px;
-		flex-shrink: 0;
-		display: grid;
-		place-items: center;
-		border-radius: 12px;
-		background: linear-gradient(135deg, var(--accent), var(--accent-2));
-		color: #fff;
-		font-weight: 700;
+		border-top: 2px solid var(--line);
+		border-bottom: 1px solid var(--rule-strong);
 	}
 
 	.byline-text {
 		display: flex;
 		flex-direction: column;
-		min-width: 0;
-		line-height: 1.35;
-	}
-
-	.byline-text span {
-		color: var(--muted);
-		font-size: 0.85rem;
-	}
-
-	.post-byline .btn {
-		margin-left: auto;
+		margin: 0;
+		font-size: 0.92rem;
+		line-height: 1.45;
 	}
 
 	.post-hero {
-		margin: 28px 0 0;
-		overflow: hidden;
-		border-radius: var(--radius-lg);
-		border: 1px solid var(--border);
-		background: var(--surface-2);
+		margin: 40px 14px 0 0;
 	}
 
-	.post-hero img {
-		display: block;
-		width: 100%;
-		max-height: 480px;
-		object-fit: cover;
+	.post-hero .frame::before {
+		inset: 14px -14px -14px 14px;
 	}
 
-	.post-body {
-		margin-top: 32px;
+	.post-hero .media {
+		max-height: 560px;
+		aspect-ratio: 16 / 9;
 	}
 
-	.callout {
-		margin: 0 0 32px;
-		padding: 22px 24px;
-		border: 1px solid var(--border);
-		border-radius: var(--radius);
-		background: var(--surface);
+	.post-hero .media img {
+		position: relative;
 	}
 
-	.callout h2 {
-		display: flex;
-		align-items: center;
-		gap: 8px;
-		margin-bottom: 12px;
-		font-size: 0.85rem;
-		font-weight: 600;
-		letter-spacing: 0.05em;
-		text-transform: uppercase;
-		color: var(--muted);
-	}
-
-	.key-points ul {
-		list-style: none;
-		margin: 0;
-		padding: 0;
-		display: grid;
-		gap: 12px;
-	}
-
-	.key-points li {
-		display: flex;
-		gap: 12px;
-		line-height: 1.55;
-	}
-
-	.key-points li svg {
-		flex-shrink: 0;
-		margin-top: 3px;
-		color: var(--accent);
-	}
-
-	.prose p {
-		margin: 0 0 1.4em;
-		font-size: 1.125rem;
-		line-height: 1.8;
-	}
-
-	.ai-note {
-		border-color: color-mix(in srgb, var(--accent) 35%, var(--border));
-		background:
-			linear-gradient(135deg, var(--accent-soft), transparent 70%),
-			var(--surface);
-	}
-
-	.ai-note h2 {
-		color: var(--accent-text);
-	}
-
-	.ai-note p {
-		margin: 0 0 10px;
-		line-height: 1.7;
-	}
-
-	.ai-note small {
-		color: var(--muted);
+	.post-hero figcaption {
+		margin-top: 22px;
+		color: var(--ink-3);
 		font-size: 0.78rem;
 	}
 
-	.post-bench {
-		margin-bottom: 32px;
+	.post-grid {
+		display: grid;
+		grid-template-columns: minmax(0, 1fr) 300px;
+		gap: 64px;
+		margin-top: 44px;
 	}
 
-	.post-bench h2 {
-		font-size: 1.3rem;
-		letter-spacing: -0.03em;
+	.prose {
+		max-width: 68ch;
 	}
 
-	.bench-note {
+	.prose p {
+		margin: 0 0 1.35em;
+		font-size: 1.12rem;
+		line-height: 1.78;
+	}
+
+	/* İlk harf: bölüm renginde, mürekkep konturlu büyük harf */
+	.prose p:first-child::first-letter {
+		float: left;
+		margin: 0.04em 0.1em 0 0;
+		font-family: var(--font-display);
+		font-size: 4.4em;
+		font-weight: 900;
+		line-height: 0.82;
+		color: var(--c);
+		-webkit-text-stroke: 1.5px var(--line);
+		paint-order: stroke fill;
+	}
+
+	.note {
+		position: relative;
+		margin: 40px 0;
+		padding: 26px 0 24px 28px;
+		border-left: 6px solid var(--c);
+	}
+
+	.note-label {
+		margin: 0 0 8px;
+		font-size: 0.7rem;
+		font-weight: 800;
+		font-stretch: 82%;
+		letter-spacing: 0.16em;
+		text-transform: uppercase;
+		color: var(--ink-2);
+	}
+
+	.note blockquote {
+		margin: 0 0 10px;
+		font-family: var(--font-display);
+		font-size: 1.35rem;
+		font-style: italic;
+		font-weight: 600;
+		line-height: 1.45;
+	}
+
+	.note small {
+		color: var(--ink-3);
+		font-size: 0.78rem;
+	}
+
+	.scores {
+		margin: 44px 0;
+	}
+
+	.scores h2 {
+		font-size: 1.6rem;
+	}
+
+	.scores-note {
 		margin: 0 0 14px;
-		color: var(--muted);
+		color: var(--ink-3);
 		font-size: 0.9rem;
 	}
 
 	.table-wrap {
 		overflow-x: auto;
-		border: 1px solid var(--border);
-		border-radius: var(--radius);
-		background: var(--surface);
+		border-top: 3px solid var(--line);
+		border-bottom: 2px solid var(--line);
 	}
 
 	table {
 		width: 100%;
 		border-collapse: collapse;
-		font-size: 0.925rem;
+		font-size: 0.95rem;
 	}
 
 	th {
-		padding: 11px 14px;
-		background: var(--surface-2);
-		color: var(--muted);
-		font-size: 0.75rem;
-		font-weight: 600;
-		letter-spacing: 0.04em;
+		padding: 10px 12px;
+		color: var(--ink-3);
+		font-size: 0.7rem;
+		font-weight: 800;
+		font-stretch: 82%;
+		letter-spacing: 0.14em;
 		text-align: left;
 		text-transform: uppercase;
 	}
 
 	td {
-		padding: 11px 14px;
-		border-top: 1px solid var(--border);
+		padding: 11px 12px;
+		border-top: 1px solid var(--rule);
 	}
 
 	td.strong {
-		font-weight: 600;
+		font-weight: 700;
 	}
 
 	.num {
 		text-align: right;
-		font-family: var(--font-mono);
-		font-variant-numeric: tabular-nums;
 		white-space: nowrap;
 	}
 
 	td.num {
-		font-weight: 600;
+		font-family: var(--font-display);
+		font-size: 1.1rem;
+		font-weight: 800;
+		font-variant-numeric: tabular-nums;
 	}
 
-	.source-cta {
+	.source-box {
 		display: flex;
+		flex-wrap: wrap;
 		align-items: center;
 		justify-content: space-between;
-		gap: 16px;
-		margin-top: 40px;
-		padding: 20px 24px;
-		border: 1px solid var(--border);
-		border-radius: var(--radius);
-		background: var(--surface);
-		color: var(--text);
-		text-decoration: none;
-		transition: border-color 0.15s, box-shadow 0.15s;
+		gap: 16px 24px;
+		margin-top: 48px;
+		padding: 24px 26px;
+		background: var(--paper-2);
+		border: 1.5px solid var(--line);
 	}
 
-	.source-cta:hover {
-		border-color: var(--accent);
-		box-shadow: 0 0 0 3px var(--accent-soft);
+	.source-box p {
+		flex: 1 1 280px;
+		margin: 0;
+		color: var(--ink-2);
 	}
 
-	.cta-text {
+	.post-aside {
+		position: sticky;
+		top: calc(var(--header-h) + 28px);
+		align-self: start;
 		display: flex;
 		flex-direction: column;
-		line-height: 1.35;
+		gap: 28px;
 	}
 
-	.cta-text small {
-		color: var(--muted);
-		font-size: 0.78rem;
+	.summary-box h2 {
+		margin-bottom: 4px;
+		padding-bottom: 10px;
+		border-bottom: 2px solid var(--line);
+		font-size: 1.35rem;
 	}
 
-	.cta-go {
-		color: var(--accent-text);
-		font-weight: 600;
-		white-space: nowrap;
+	.summary-box ol {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		counter-reset: p;
+	}
+
+	.summary-box li {
+		counter-increment: p;
+		display: grid;
+		grid-template-columns: 1.8rem minmax(0, 1fr);
+		padding: 14px 0;
+		border-bottom: 1px solid var(--rule);
+		font-size: 0.95rem;
+		line-height: 1.5;
+	}
+
+	.summary-box li::before {
+		content: counter(p);
+		font-family: var(--font-display);
+		font-style: italic;
+		font-weight: 900;
+		font-size: 1.35rem;
+		line-height: 1.05;
+		color: var(--c);
+		-webkit-text-stroke: 1px var(--line);
+		paint-order: stroke fill;
+	}
+
+	.chapter-box {
+		display: flex;
+		align-items: stretch;
+		color: var(--ink);
+		text-decoration: none;
+		border: 1.5px solid var(--line);
+		transition: transform 0.2s ease;
+	}
+
+	.chapter-box:hover {
+		transform: translateY(-3px);
+	}
+
+	.chapter-box-num {
+		display: grid;
+		place-items: center;
+		min-width: 64px;
+		background: var(--c);
+		color: var(--c-on);
+		border-right: 1.5px solid var(--line);
+		font-family: var(--font-display);
+		font-style: italic;
+		font-weight: 900;
+		font-size: 1.7rem;
+	}
+
+	.chapter-box-text {
+		display: flex;
+		flex-direction: column;
+		padding: 12px 14px;
+		line-height: 1.3;
+	}
+
+	.chapter-box-text small {
+		color: var(--ink-3);
+		font-size: 0.66rem;
+		font-weight: 800;
+		font-stretch: 82%;
+		letter-spacing: 0.14em;
+		text-transform: uppercase;
+	}
+
+	.chapter-box-text strong {
+		font-family: var(--font-display);
+		font-size: 1.15rem;
+	}
+
+	.chapter-box-text em {
+		color: var(--ink-2);
+		font-family: var(--font-display);
+		font-size: 0.92rem;
 	}
 
 	.related {
-		margin-top: 72px;
-		padding-top: 40px;
-		border-top: 1px solid var(--border);
-	}
-
-	.related h2 {
-		margin-bottom: 20px;
-		font-size: 1.4rem;
-		letter-spacing: -0.03em;
+		max-width: 1080px;
+		margin: 80px auto 0;
 	}
 
 	.related-grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-		gap: 20px;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: 36px;
+	}
+
+	@media (max-width: 960px) {
+		.post-grid {
+			grid-template-columns: 1fr;
+			gap: 32px;
+		}
+		.post-aside {
+			position: static;
+			order: -1;
+		}
+		.related-grid {
+			grid-template-columns: 1fr 1fr;
+		}
 	}
 
 	@media (max-width: 640px) {
-		.post-lead {
-			font-size: 1.08rem;
+		.post-hero {
+			margin-right: 8px;
 		}
-		.post-byline {
-			flex-wrap: wrap;
-		}
-		.post-byline .btn {
-			margin-left: 0;
-			width: 100%;
-		}
-		.callout {
-			padding: 18px;
+		.post-hero .frame::before {
+			inset: 8px -8px -8px 8px;
 		}
 		.prose p {
 			font-size: 1.06rem;
 		}
-		.source-cta {
-			flex-direction: column;
-			align-items: flex-start;
+		.byline .btn {
+			width: 100%;
+		}
+		.source-box {
+			padding: 20px;
 		}
 		.related-grid {
 			grid-template-columns: 1fr;

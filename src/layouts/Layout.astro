@@ -1,6 +1,6 @@
 ---
 import '../styles/global.css';
-import BrandMark from '../components/BrandMark.astro';
+import { NEWS_CATEGORIES } from '../lib/categories';
 
 interface Props {
 	title: string;
@@ -32,15 +32,20 @@ try {
 const path = Astro.url.pathname.replace(/\/+$/, '') || '/';
 const NAV = [
 	{ href: '/', label: 'Haberler', active: path === '/' || path.startsWith('/haber') },
-	{ href: '/benchmarklar', label: 'Benchmarklar', active: path.startsWith('/benchmarklar') },
+	{ href: '/kategori', label: 'Bölümler', active: path.startsWith('/kategori') },
+	{ href: '/benchmarklar', label: 'Benchmark', active: path.startsWith('/benchmarklar') },
 	{ href: '/karsilastir', label: 'Karşılaştır', active: path.startsWith('/karsilastir') },
 	{ href: '/ne-degisti', label: 'Ne Değişti', active: path.startsWith('/ne-degisti') },
 ];
 
 // Site 3 saatte bir yeniden derlenir; derleme sunucusu UTC'de çalıştığı için saat dilimi açıkça verilir
-const updated = new Date().toLocaleString('tr-TR', {
-	timeZone: 'Europe/Istanbul', day: 'numeric', month: 'long', hour: '2-digit', minute: '2-digit'
-});
+const TZ = 'Europe/Istanbul';
+const now = new Date();
+const dateLine = now.toLocaleDateString('tr-TR', { timeZone: TZ, weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+const updated = now.toLocaleString('tr-TR', { timeZone: TZ, day: 'numeric', month: 'long', hour: '2-digit', minute: '2-digit' });
+// Günlük gazete gibi sayı numarası: yılın kaçıncı günü
+const [y, m, d] = now.toLocaleDateString('en-CA', { timeZone: TZ }).split('-').map(Number);
+const issue = Math.round((Date.UTC(y, m - 1, d) - Date.UTC(y, 0, 0)) / 864e5);
 ---
 
 <!doctype html>
@@ -53,8 +58,8 @@ const updated = new Date().toLocaleString('tr-TR', {
 		<link rel="canonical" href={canonical} />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<meta name="theme-color" content="#f6f6f8" media="(prefers-color-scheme: light)" />
-		<meta name="theme-color" content="#0a0a0d" media="(prefers-color-scheme: dark)" />
+		<meta name="theme-color" content="#f5eedf" media="(prefers-color-scheme: light)" />
+		<meta name="theme-color" content="#150f1d" media="(prefers-color-scheme: dark)" />
 
 		<!-- Open Graph / Facebook -->
 		<meta property="og:type" content={type} />
@@ -76,9 +81,9 @@ const updated = new Date().toLocaleString('tr-TR', {
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400..700&family=Geist+Mono:wght@400..600&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet">
 
-		<!-- Kayıtlı tema seçimini sayfa çizilmeden uygula (beyaz/siyah yanıp sönmesin) -->
+		<!-- Kayıtlı tema seçimini sayfa çizilmeden uygula -->
 		<script is:inline>
 			try {
 				var t = localStorage.getItem('yoney-tema');
@@ -87,11 +92,19 @@ const updated = new Date().toLocaleString('tr-TR', {
 		</script>
 	</head>
 	<body>
+		<div class="topline">
+			<div class="container">
+				<span class="hide-sm">{dateLine}</span>
+				<span class="issue">Sayı № {issue}</span>
+				<span class="live hide-sm">3 saatte bir güncellenir</span>
+			</div>
+		</div>
+
 		<header class="site-header">
 			<div class="container header-inner">
-				<a href="/" class="brand" aria-label="Yöney ana sayfa">
-					<span class="brand-mark"><BrandMark id="ym-head" /></span>
-					<span>yöney</span>
+				<a href="/" class="logo" aria-label="Yöney ana sayfa">
+					<span>Y<span class="o">Ö</span>NEY</span>
+					<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="square" aria-hidden="true"><path d="M5 19 19 5M9 5h10v10" /></svg>
 				</a>
 				<nav class="nav" id="mainNav" aria-label="Ana menü">
 					{NAV.map(n => (
@@ -99,7 +112,7 @@ const updated = new Date().toLocaleString('tr-TR', {
 					))}
 				</nav>
 				<div class="header-actions">
-					<button class="icon-btn theme-toggle" id="themeToggle" type="button" aria-label="Açık/koyu temayı değiştir" title="Tema">
+					<button class="icon-btn theme-toggle" id="themeToggle" type="button" aria-label="Gündüz/gece baskısını değiştir" title="Tema">
 						<svg class="i-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
 						<svg class="i-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
 					</button>
@@ -116,35 +129,41 @@ const updated = new Date().toLocaleString('tr-TR', {
 		</main>
 
 		<footer class="site-footer">
-			<div class="container footer-inner">
-				<div class="footer-brand">
-					<a href="/" class="brand" aria-label="Yöney ana sayfa">
-						<span class="brand-mark"><BrandMark id="ym-foot" size={26} /></span>
-						<span>yöney</span>
-					</a>
-					<p>Yapay zekâ haberleri ve doğrulanmış benchmark skorları. Türkçe, otomatik, her 3 saatte bir güncel.</p>
+			<div class="container">
+				<p class="footer-word" aria-hidden="true">Y<span class="o">Ö</span>NEY</p>
+				<div class="footer-inner">
+					<div class="footer-about">
+						<p class="footer-motto">Yapay zekânın tuhaf ve harika dünyası, her gün Türkçe.</p>
+						<p>Resmi duyurular, bağımsız basın ve topluluktan derlenen haberler; doğrulanmış benchmark skorları. Her şey otomatik, 3 saatte bir güncel.</p>
+					</div>
+					<div class="footer-col">
+						<h2>Bölümler</h2>
+						<ul>
+							{NEWS_CATEGORIES.map(c => <li><a href={`/kategori/${c.id}`}>{c.name}</a></li>)}
+						</ul>
+					</div>
+					<div class="footer-col">
+						<h2>Keşfet</h2>
+						<ul>
+							<li><a href="/">Haberler</a></li>
+							<li><a href="/benchmarklar">Benchmark</a></li>
+							<li><a href="/karsilastir">Karşılaştır</a></li>
+							<li><a href="/ne-degisti">Ne Değişti</a></li>
+						</ul>
+					</div>
+					<div class="footer-col">
+						<h2>Yöney</h2>
+						<ul>
+							<li><a href="/kaynaklar">Kaynaklar</a></li>
+							<li><a href="/hakkinda">Hakkında</a></li>
+							<li><a href="/sitemap.xml">Site haritası</a></li>
+						</ul>
+					</div>
 				</div>
-				<div class="footer-col">
-					<h2>Keşfet</h2>
-					<ul>
-						<li><a href="/">Haberler</a></li>
-						<li><a href="/benchmarklar">Benchmarklar</a></li>
-						<li><a href="/karsilastir">Karşılaştır</a></li>
-						<li><a href="/ne-degisti">Ne Değişti</a></li>
-					</ul>
+				<div class="footer-bottom">
+					<p>Özetler ve yorumlar yapay zekâ ile üretilir; her zaman orijinal kaynağı kontrol edin.</p>
+					<p>Son baskı: {updated}</p>
 				</div>
-				<div class="footer-col">
-					<h2>Yöney</h2>
-					<ul>
-						<li><a href="/kaynaklar">Kaynaklar</a></li>
-						<li><a href="/hakkinda">Hakkında</a></li>
-						<li><a href="/sitemap.xml">Site haritası</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="container footer-bottom">
-				<p>Özetler ve yorumlar yapay zekâ ile üretilir; her zaman orijinal kaynağı kontrol edin.</p>
-				<p>Son güncelleme: {updated}</p>
 			</div>
 		</footer>
 	</body>

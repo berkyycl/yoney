@@ -1,0 +1,148 @@
+---
+/** Bölüm (kategori) kapağı: soyut renk kompozisyonu, Roma rakamı, ad, slogan ve son başlıklar */
+import Art from './Art.astro';
+import type { NewsCategory } from '../lib/categories';
+
+interface Props {
+	category: NewsCategory;
+	count: number;
+	headlines?: { title: string; slug: string }[];
+	size?: 'small' | 'large';
+}
+const { category: c, count, headlines = [], size = 'small' } = Astro.props;
+---
+
+<article class:list={['chapter', `chapter-${size}`, 'reveal']} data-cat={c.id}>
+	<a class="chapter-cover" href={`/kategori/${c.id}`} aria-label={`${c.name} bölümü`}>
+		<div class="media chapter-art">
+			<Art cat={c.id} />
+			<span class="chapter-num" aria-hidden="true">{c.numeral}</span>
+		</div>
+	</a>
+	<div class="chapter-body">
+		<p class="chapter-label">Bölüm {c.numeral} · {count} haber</p>
+		<h3 class="chapter-name"><a href={`/kategori/${c.id}`}>{c.name}</a></h3>
+		<p class="chapter-tag">{c.tagline}</p>
+		{headlines.length > 0 && (
+			<ul class="chapter-heads">
+				{headlines.map(h => <li><a href={`/haber/${h.slug}`}>{h.title}</a></li>)}
+			</ul>
+		)}
+	</div>
+</article>
+
+<style>
+	.chapter {
+		display: flex;
+		flex-direction: column;
+		min-width: 0;
+		background: var(--panel);
+		border: 1.5px solid var(--line);
+		transition: transform 0.2s ease, box-shadow 0.2s ease;
+	}
+
+	.chapter:hover {
+		transform: translateY(-4px);
+		box-shadow: 0 10px 0 -4px var(--c);
+	}
+
+	.chapter-cover {
+		display: block;
+		border-bottom: 1.5px solid var(--line);
+	}
+
+	.chapter-art {
+		aspect-ratio: 5 / 3;
+	}
+
+	.chapter-large .chapter-art {
+		aspect-ratio: 16 / 9;
+	}
+
+	.chapter-num {
+		position: absolute;
+		top: 10px;
+		left: 14px;
+		font-family: var(--font-display);
+		font-style: italic;
+		font-weight: 900;
+		font-size: 2.6rem;
+		line-height: 1;
+		color: #fff8ec;
+		text-shadow: 0 2px 0 rgba(25, 18, 31, 0.35);
+	}
+
+	.chapter-large .chapter-num {
+		font-size: 4rem;
+	}
+
+	.chapter-body {
+		display: flex;
+		flex-direction: column;
+		gap: 6px;
+		padding: 16px 18px 18px;
+	}
+
+	.chapter-label {
+		margin: 0;
+		color: var(--ink-3);
+		font-size: 0.68rem;
+		font-weight: 800;
+		font-stretch: 82%;
+		letter-spacing: 0.14em;
+		text-transform: uppercase;
+	}
+
+	.chapter-name {
+		margin: 0;
+		font-size: 1.35rem;
+		line-height: 1.1;
+	}
+
+	.chapter-large .chapter-name {
+		font-size: 1.9rem;
+	}
+
+	.chapter-name a {
+		color: var(--ink);
+		text-decoration: none;
+	}
+
+	.chapter-name a:hover {
+		color: var(--link);
+	}
+
+	.chapter-tag {
+		margin: 0;
+		color: var(--ink-2);
+		font-family: var(--font-display);
+		font-style: italic;
+		font-size: 1rem;
+		line-height: 1.35;
+	}
+
+	.chapter-heads {
+		list-style: none;
+		margin: 10px 0 0;
+		padding: 0;
+		border-top: 1px solid var(--rule-strong);
+	}
+
+	.chapter-heads li {
+		padding: 10px 0;
+		border-bottom: 1px solid var(--rule);
+		line-height: 1.3;
+	}
+
+	.chapter-heads a {
+		color: var(--ink);
+		text-decoration: none;
+		font-family: var(--font-display);
+		font-weight: 700;
+		font-size: 1.02rem;
+	}
+
+	.chapter-heads a:hover {
+		color: var(--link);
+	}
+</style>

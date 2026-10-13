@@ -1,0 +1,41 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ChapterTile from '../../components/ChapterTile.astro';
+import { loadArticles } from '../../lib/articles';
+import { NEWS_CATEGORIES, categoryOf } from '../../lib/categories';
+
+const articles = loadArticles();
+const chapters = NEWS_CATEGORIES.map(c => {
+	const list = articles.filter(a => categoryOf(a) === c.id);
+	return { c, count: list.length, headlines: list.slice(0, 3).map(a => ({ title: a.baslik_tr, slug: a.slug })) };
+});
+---
+
+<Layout title="Bölümler | Yöney" description="Yöney'in sekiz bölümü: yeni modeller, güncellemeler, benchmarklar, araştırmalar, fiyatlar, geliştirici araçları, politika ve gündemin geri kalanı.">
+	<header class="page-head">
+		<p class="overline">Yapay zekâ gündemi, sekiz bölümde</p>
+		<h1>Bölümler</h1>
+		<p class="lead">Her bölümün kendi rengi ve kendi hikâyesi var. Bir bölüm seçin; o alandaki bütün haberler tek sayfada.</p>
+	</header>
+
+	<div class="chapters">
+		{chapters.map(({ c, count, headlines }) => (
+			<ChapterTile category={c} count={count} headlines={headlines} size="large" />
+		))}
+	</div>
+</Layout>
+
+<style>
+	.chapters {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 32px;
+	}
+
+	@media (max-width: 760px) {
+		.chapters {
+			grid-template-columns: 1fr;
+			gap: 24px;
+		}
+	}
+</style>

@@ -36,8 +36,8 @@ const payload = JSON.stringify({ benches, entries }).replace(/</g, '\\u003c');
 >
 	<div class="bench-page">
 		<header class="page-head">
-			<p class="kicker">Benchmarklar</p>
-			<h1>Yapay zekâ modelleri hangi testte nerede?</h1>
+			<p class="overline">Arena</p>
+			<h1>Yapay zekâ modelleri <em>hangi testte</em> nerede?</h1>
 			<p class="lead">
 				{liveCount} canlı liderlik tablosu ve haberlerden doğrulanmış skorlar. Canlı tablolar günde iki kez güncellenir.
 				{lastUpdate && <span class="muted"> Son veri: {fmtDate(lastUpdate)}.</span>}
@@ -80,7 +80,7 @@ const payload = JSON.stringify({ benches, entries }).replace(/</g, '\\u003c');
 					<div class="controls">
 						<label class="search">
 							<span class="sr-only">Model ara</span>
-							<svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+							<svg class="search-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
 							<input class="field" type="search" id="q" placeholder="Model ara (ör. Claude, GPT, Qwen)" autocomplete="off" />
 						</label>
 						<label class="select">
@@ -98,7 +98,7 @@ const payload = JSON.stringify({ benches, entries }).replace(/</g, '\\u003c');
 					</ol>
 					<div class="list-foot">
 						<span class="muted" id="countNote">{firstRender && `${firstRender.shown} / ${firstRender.total} sonuç gösteriliyor`}</span>
-						<button class="btn btn-sm" id="moreBtn" hidden={!firstRender || firstRender.total <= firstRender.shown}>Tümünü göster</button>
+						<button class="btn" id="moreBtn" hidden={!firstRender || firstRender.total <= firstRender.shown}>Tümünü göster</button>
 					</div>
 
 					<details class="table-view">
@@ -222,7 +222,7 @@ const payload = JSON.stringify({ benches, entries }).replace(/</g, '\\u003c');
 
 <style>
 	.bench-page {
-		max-width: 1000px;
+		max-width: 1040px;
 		margin: 0 auto;
 	}
 
@@ -234,116 +234,113 @@ const payload = JSON.stringify({ benches, entries }).replace(/</g, '\\u003c');
 	}
 
 	.cat-row {
-		margin-bottom: 14px;
+		margin-bottom: 18px;
 	}
 
 	.test-row {
-		margin-bottom: 24px;
-		padding-top: 14px;
-		border-top: 1px solid var(--border);
+		gap: 0 4px;
+		margin-bottom: 36px;
+		border-bottom: 2px solid var(--line);
 	}
 
 	.test-chip {
+		position: relative;
 		display: inline-flex;
-		align-items: center;
-		gap: 8px;
-		height: 38px;
-		padding: 0 12px 0 14px;
-		border: 1px solid var(--border);
-		border-radius: 11px;
-		background: var(--surface);
-		color: var(--text-2);
+		align-items: baseline;
+		gap: 7px;
+		padding: 12px 12px 14px;
+		border: 0;
+		background: none;
+		color: var(--ink-2);
 		font: inherit;
-		font-size: 0.875rem;
-		font-weight: 500;
+		font-size: 0.92rem;
+		font-weight: 600;
 		cursor: pointer;
-		transition: border-color 0.15s, color 0.15s, box-shadow 0.15s;
+	}
+
+	.test-chip::after {
+		content: '';
+		position: absolute;
+		left: 12px;
+		right: 12px;
+		bottom: -2px;
+		height: 5px;
+		background: var(--magenta);
+		transform: scaleX(0);
+		transition: transform 0.2s ease;
 	}
 
 	.test-chip:hover {
-		color: var(--text);
-		border-color: var(--border-strong);
+		color: var(--ink);
 	}
 
 	.test-chip[aria-selected='true'] {
-		color: var(--text);
-		border-color: var(--accent);
-		box-shadow: 0 0 0 3px var(--accent-soft);
-		font-weight: 600;
+		color: var(--ink);
+		font-weight: 800;
+	}
+
+	.test-chip[aria-selected='true']::after {
+		transform: scaleX(1);
 	}
 
 	.chip-count {
-		min-width: 22px;
-		padding: 1px 6px;
-		border-radius: 999px;
-		background: var(--surface-2);
-		color: var(--muted);
-		font-size: 0.72rem;
-		font-weight: 500;
-		text-align: center;
-		font-variant-numeric: tabular-nums;
-	}
-
-	.board {
-		padding: 28px;
-		border: 1px solid var(--border);
-		border-radius: var(--radius-lg);
-		background: var(--surface);
-		box-shadow: var(--shadow-sm);
+		color: var(--ink-3);
+		font-family: var(--font-display);
+		font-style: italic;
+		font-weight: 700;
+		font-size: 0.9rem;
 	}
 
 	.board-head {
 		display: flex;
 		align-items: flex-start;
 		justify-content: space-between;
-		gap: 16px;
-		margin-bottom: 20px;
+		gap: 24px;
+		margin-bottom: 22px;
 	}
 
 	.board-head h2 {
-		margin-bottom: 6px;
-		font-size: 1.6rem;
-		font-weight: 700;
-		letter-spacing: -0.035em;
+		margin-bottom: 8px;
+		font-size: clamp(1.8rem, 3.4vw, 2.6rem);
+		font-weight: 900;
+		letter-spacing: -0.02em;
 	}
 
 	.test-desc {
+		max-width: 62ch;
 		margin: 0 0 8px;
-		color: var(--text-2);
+		color: var(--ink-2);
 	}
 
 	.test-facts {
 		margin: 0;
-		color: var(--muted);
+		color: var(--ink-3);
 		font-size: 0.82rem;
 	}
 
 	.ext-link {
 		flex-shrink: 0;
-		padding: 7px 12px;
-		border: 1px solid var(--border);
-		border-radius: 10px;
-		color: var(--text-2);
-		font-size: 0.85rem;
-		font-weight: 500;
+		color: var(--ink);
+		font-size: 0.72rem;
+		font-weight: 800;
+		font-stretch: 82%;
+		letter-spacing: 0.13em;
+		text-transform: uppercase;
 		text-decoration: none;
 		white-space: nowrap;
-	}
-
-	.ext-link:hover {
-		color: var(--text);
-		border-color: var(--border-strong);
+		border-bottom: 2px solid var(--magenta);
+		padding-bottom: 2px;
 	}
 
 	.controls {
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
-		gap: 10px 16px;
-		margin-bottom: 12px;
-		padding: 14px;
-		border-radius: var(--radius);
-		background: var(--surface-2);
+		gap: 12px 18px;
+		margin-bottom: 8px;
+		padding: 16px 0;
+		border-top: 1px solid var(--rule-strong);
+		border-bottom: 1px solid var(--rule-strong);
 	}
 
 	.search {
@@ -354,14 +351,14 @@ const payload = JSON.stringify({ benches, entries }).replace(/</g, '\\u003c');
 	.search-icon {
 		position: absolute;
 		top: 50%;
-		left: 12px;
+		left: 13px;
 		transform: translateY(-50%);
-		color: var(--muted);
+		color: var(--ink-3);
 		pointer-events: none;
 	}
 
 	.search .field {
-		padding-left: 36px;
+		padding-left: 38px;
 	}
 
 	.select {
@@ -371,16 +368,16 @@ const payload = JSON.stringify({ benches, entries }).replace(/</g, '\\u003c');
 	.toggle {
 		display: inline-flex;
 		align-items: center;
-		gap: 8px;
-		color: var(--text-2);
-		font-size: 0.875rem;
+		gap: 9px;
+		color: var(--ink-2);
+		font-size: 0.88rem;
 		cursor: pointer;
 	}
 
 	.toggle input {
-		width: 1rem;
-		height: 1rem;
-		accent-color: var(--accent);
+		width: 1.05rem;
+		height: 1.05rem;
+		accent-color: var(--magenta);
 	}
 
 	/* Sıralama listesi: sıra · model · çubuk · skor */
@@ -392,38 +389,31 @@ const payload = JSON.stringify({ benches, entries }).replace(/</g, '\\u003c');
 
 	:global(.lb-row) {
 		display: grid;
-		grid-template-columns: 2.25rem minmax(0, 17rem) minmax(0, 1fr) 5.5rem;
+		grid-template-columns: 3rem minmax(0, 17rem) minmax(0, 1fr) 6rem;
 		align-items: center;
-		gap: 14px;
-		padding: 10px 8px;
-		border-radius: 10px;
-		transition: background-color 0.12s;
-	}
-
-	:global(.lb-row + .lb-row) {
-		border-top: 1px solid var(--border);
-	}
-
-	:global(.lb-row:hover) {
-		background: var(--surface-2);
+		gap: 16px;
+		padding: 13px 0;
+		border-bottom: 1px solid var(--rule);
 	}
 
 	:global(.lb-rank) {
-		width: 28px;
-		height: 28px;
-		display: grid;
-		place-items: center;
-		justify-self: center;
-		border-radius: 50%;
-		color: var(--muted);
-		font-size: 0.85rem;
-		font-weight: 600;
+		font-family: var(--font-display);
+		font-style: italic;
+		font-weight: 900;
+		font-size: 1.65rem;
+		line-height: 1;
+		color: var(--ink-3);
 		font-variant-numeric: tabular-nums;
 	}
 
-	:global(.lb-row.rank-1 .lb-rank) { background: linear-gradient(135deg, #fde68a, #f59e0b); color: #422006; }
-	:global(.lb-row.rank-2 .lb-rank) { background: linear-gradient(135deg, #e5e7eb, #9ca3af); color: #1f2937; }
-	:global(.lb-row.rank-3 .lb-rank) { background: linear-gradient(135deg, #fed7aa, #c2410c); color: #fff7ed; }
+	:global(.lb-row.is-top .lb-rank) {
+		color: var(--ink);
+	}
+
+	:global(.lb-row.rank-1 .lb-rank) {
+		color: var(--magenta);
+		font-size: 2.1rem;
+	}
 
 	:global(.lb-name) {
 		min-width: 0;
@@ -431,55 +421,63 @@ const payload = JSON.stringify({ benches, entries }).replace(/</g, '\\u003c');
 	}
 
 	:global(.lb-name strong) {
-		font-weight: 600;
+		font-weight: 700;
+	}
+
+	:global(.lb-row.rank-1 .lb-name strong) {
+		font-family: var(--font-display);
+		font-size: 1.2rem;
+		font-weight: 800;
 	}
 
 	:global(.lb-variant) {
-		color: var(--muted);
-		font-size: 0.75rem;
+		color: var(--ink-3);
+		font-size: 0.76rem;
 		white-space: nowrap;
 	}
 
 	:global(.lb-meta) {
 		display: block;
 		overflow: hidden;
-		color: var(--muted);
-		font-size: 0.75rem;
+		color: var(--ink-3);
+		font-size: 0.76rem;
 		text-overflow: ellipsis;
 		white-space: nowrap;
 	}
 
 	:global(.lb-track) {
 		position: relative;
-		height: 10px;
-		border-radius: 999px;
-		background: var(--viz-track);
-		overflow: hidden;
+		height: 12px;
+		background: var(--rule);
 	}
 
 	:global(.lb-bar) {
 		display: block;
 		height: 100%;
-		border-radius: 999px;
-		background: linear-gradient(90deg, var(--accent), var(--accent-2));
+		background: var(--bar);
 		transition: width 0.3s ease;
 	}
 
-	:global(.lb-row:not(.is-top) .lb-bar) {
-		opacity: 0.75;
+	:global(.lb-row.rank-1 .lb-bar) {
+		background: var(--magenta);
+	}
+
+	:global(.lb-row.rank-2 .lb-bar),
+	:global(.lb-row.rank-3 .lb-bar) {
+		background: var(--teal);
 	}
 
 	:global(.lb-score) {
-		font-family: var(--font-mono);
-		font-size: 0.95rem;
-		font-weight: 600;
+		font-family: var(--font-display);
+		font-size: 1.2rem;
+		font-weight: 800;
 		text-align: right;
 		font-variant-numeric: tabular-nums;
 	}
 
 	:global(.lb-empty) {
 		padding: 32px 0;
-		color: var(--muted);
+		color: var(--ink-3);
 		text-align: center;
 	}
 
@@ -488,64 +486,61 @@ const payload = JSON.stringify({ benches, entries }).replace(/</g, '\\u003c');
 		align-items: center;
 		justify-content: space-between;
 		gap: 16px;
-		padding: 16px 8px 0;
+		padding: 20px 0 0;
 		font-size: 0.85rem;
 	}
 
-	.muted {
-		color: var(--muted);
-	}
-
 	.table-view {
-		margin-top: 18px;
-		border-top: 1px solid var(--border);
-		padding-top: 14px;
+		margin-top: 28px;
+		padding-top: 16px;
+		border-top: 2px solid var(--line);
 	}
 
 	.table-view summary {
-		color: var(--text-2);
-		font-size: 0.875rem;
-		font-weight: 500;
+		color: var(--ink);
+		font-size: 0.75rem;
+		font-weight: 800;
+		font-stretch: 82%;
+		letter-spacing: 0.13em;
+		text-transform: uppercase;
 		cursor: pointer;
 	}
 
 	.table-wrap {
 		overflow-x: auto;
-		margin-top: 12px;
-		border: 1px solid var(--border);
-		border-radius: var(--radius-sm);
+		margin-top: 14px;
 	}
 
 	table {
 		width: 100%;
 		border-collapse: collapse;
-		font-size: 0.85rem;
+		font-size: 0.86rem;
 	}
 
 	th,
 	:global(td) {
-		padding: 9px 12px;
+		padding: 9px 10px;
 		text-align: left;
 		vertical-align: top;
 	}
 
 	:global(td) {
-		border-top: 1px solid var(--border);
+		border-top: 1px solid var(--rule);
 	}
 
 	th {
-		background: var(--surface-2);
-		color: var(--muted);
-		font-size: 0.72rem;
-		font-weight: 600;
-		letter-spacing: 0.04em;
+		color: var(--ink-3);
+		font-size: 0.68rem;
+		font-weight: 800;
+		font-stretch: 82%;
+		letter-spacing: 0.13em;
 		text-transform: uppercase;
+		border-bottom: 2px solid var(--line);
 	}
 
 	th.num,
 	:global(td.num) {
 		text-align: right;
-		font-family: var(--font-mono);
 		font-variant-numeric: tabular-nums;
 	}
 
@@ -554,19 +549,18 @@ const payload = JSON.stringify({ benches, entries }).replace(/</g, '\\u003c');
 	}
 
 	.notes {
-		margin-top: 28px;
-		padding: 22px 24px;
-		border: 1px solid var(--border);
-		border-radius: var(--radius);
-		background: var(--surface);
-		color: var(--text-2);
-		font-size: 0.925rem;
+		margin-top: 56px;
+		padding: 28px 30px;
+		background: var(--paper-2);
+		border: 1.5px solid var(--line);
+		color: var(--ink-2);
+		font-size: 0.95rem;
 	}
 
 	.notes h3 {
-		margin-bottom: 12px;
-		color: var(--text);
-		font-size: 1.05rem;
+		margin-bottom: 14px;
+		color: var(--ink);
+		font-size: 1.4rem;
 	}
 
 	.notes ul {
@@ -575,23 +569,17 @@ const payload = JSON.stringify({ benches, entries }).replace(/</g, '\\u003c');
 	}
 
 	.notes li {
-		margin-bottom: 8px;
+		margin-bottom: 10px;
 	}
 
 	.notes li::marker {
-		color: var(--accent);
+		color: var(--magenta);
 	}
 
 	@media (max-width: 640px) {
-		.board {
-			padding: 16px;
-			border-radius: var(--radius);
-		}
 		.board-head {
 			flex-direction: column;
-		}
-		.controls {
-			padding: 10px;
+			gap: 12px;
 		}
 		.select {
 			flex: 1 1 100%;
@@ -599,27 +587,30 @@ const payload = JSON.stringify({ benches, entries }).replace(/</g, '\\u003c');
 		.test-row {
 			flex-wrap: nowrap;
 			overflow-x: auto;
-			margin: 0 -16px 20px;
-			padding: 14px 16px 4px;
+			margin: 0 -16px 28px;
+			padding: 0 16px;
 			scrollbar-width: none;
 		}
 		.test-chip {
 			flex-shrink: 0;
 		}
 		:global(.lb-row) {
-			grid-template-columns: 1.75rem minmax(0, 1fr) 4.75rem;
+			grid-template-columns: 2.2rem minmax(0, 1fr) 4.6rem;
 			gap: 6px 10px;
-			padding: 10px 4px;
 		}
 		:global(.lb-rank) {
-			width: 24px;
-			height: 24px;
-			font-size: 0.78rem;
+			font-size: 1.35rem;
+		}
+		:global(.lb-row.rank-1 .lb-rank) {
+			font-size: 1.6rem;
 		}
 		:global(.lb-track) {
 			grid-column: 2 / 4;
 			grid-row: 2;
-			height: 6px;
+			height: 8px;
+		}
+		.notes {
+			padding: 22px 20px;
 		}
 	}
 </style>

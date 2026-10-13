@@ -1,21 +1,19 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import ArtBanner from '../components/ArtBanner.astro';
 
 const FEATURES = [
 	{
 		t: 'Gelişmeleri takip ve analiz',
 		d: 'Yeni model duyurularını, araştırma raporlarını ve teknik güncellemeleri düzenli olarak tarıyor, kapsamlı ve anlaşılır Türkçe içeriklere dönüştürüyoruz.',
-		icon: 'M4 4h16v12H5.2L4 17.2V4zM8 8h8M8 12h5',
 	},
 	{
 		t: 'Doğrulanmış benchmarklar',
 		d: 'Modellere ait resmi performans skorlarını ayıklayıp sıralamalar ve yan yana karşılaştırmalar halinde sunuyoruz.',
-		icon: 'M4 20V10M10 20V4M16 20v-7M22 20H2',
 	},
 	{
 		t: 'Sektörel etki',
 		d: 'Her gelişmenin geliştiricilere, işletmelere ve kullanıcılara olası etkisini tarafsız bir bakışla yorumluyoruz.',
-		icon: 'M3 17l6-6 4 4 8-8M15 7h6v6',
 	},
 ];
 
@@ -29,19 +27,21 @@ const DONTS = [
 <Layout title="Hakkında | Yöney">
 	<div class="about">
 		<header class="page-head">
-			<p class="kicker">Hakkında</p>
-			<h1>Yapay zekâ gündemi, <span class="grad">tek yerde ve Türkçe.</span></h1>
-			<p class="lead">Yöney; yapay zekâ dünyasındaki önemli gelişmeleri, model çıkışlarını ve teknik ilerlemeleri tek bir yerden takip etmeyi sağlayan bağımsız ve güncel bir bilgi platformudur.</p>
+			<p class="overline">Hakkında</p>
+			<h1>Yapay zekâ gündemi, <em>tek yerde ve Türkçe.</em></h1>
 		</header>
 
+		<p class="manifesto">Yöney; yapay zekâ dünyasındaki önemli gelişmeleri, model çıkışlarını ve teknik ilerlemeleri tek bir yerden takip etmeyi sağlayan bağımsız ve güncel bir bilgi platformudur.</p>
+
 		<section>
-			<h2>Ne yapıyoruz?</h2>
+			<div class="section-head">
+				<span class="sec-num">01</span>
+				<h2>Ne yapıyoruz?</h2>
+			</div>
 			<div class="features">
-				{FEATURES.map(f => (
+				{FEATURES.map((f, i) => (
 					<div class="feature">
-						<span class="feature-icon" aria-hidden="true">
-							<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d={f.icon} /></svg>
-						</span>
+						<span class="feature-num">{['I', 'II', 'III'][i]}</span>
 						<h3>{f.t}</h3>
 						<p>{f.d}</p>
 					</div>
@@ -50,75 +50,78 @@ const DONTS = [
 		</section>
 
 		<section>
-			<h2>Ne yapmıyoruz?</h2>
+			<div class="section-head">
+				<span class="sec-num">02</span>
+				<h2>Ne yapmıyoruz?</h2>
+			</div>
 			<ul class="donts">
-				{DONTS.map(d => (
-					<li>
-						<span class="x" aria-hidden="true">
-							<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
-						</span>
-						{d}
-					</li>
-				))}
+				{DONTS.map(d => <li>{d}</li>)}
 			</ul>
 		</section>
 
-		<section class="disclaimer">
-			<h2>Sorumluluk reddi</h2>
-			<p>Yöney üzerindeki içerikler ve teknik analizler yalnızca bilgilendirme amaçlıdır; yatırım, ticari veya teknik danışmanlık niteliği taşımaz. En güncel teknik detaylar ve kararlar için daima orijinal belgelere başvurulması önerilir.</p>
-		</section>
+		<ArtBanner height={120}>
+			<p class="disclaimer"><strong>Sorumluluk reddi.</strong> Yöney üzerindeki içerikler ve teknik analizler yalnızca bilgilendirme amaçlıdır; yatırım, ticari veya teknik danışmanlık niteliği taşımaz. En güncel teknik detaylar ve kararlar için daima orijinal belgelere başvurulması önerilir.</p>
+		</ArtBanner>
 	</div>
 </Layout>
 
 <style>
 	.about {
-		max-width: 880px;
+		max-width: 960px;
 		margin: 0 auto;
 	}
 
-	section {
-		margin-bottom: 48px;
+	.manifesto {
+		margin: 0 0 64px;
+		padding: 28px 0;
+		border-top: 3px solid var(--line);
+		border-bottom: 1px solid var(--rule-strong);
+		font-family: var(--font-display);
+		font-size: clamp(1.4rem, 2.8vw, 2rem);
+		font-style: italic;
+		font-weight: 600;
+		line-height: 1.35;
 	}
 
-	section > h2 {
-		margin-bottom: 18px;
-		font-size: 1.4rem;
-		letter-spacing: -0.03em;
+	section {
+		margin-bottom: 56px;
 	}
 
 	.features {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-		gap: 16px;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
 	}
 
 	.feature {
-		padding: 22px;
-		border: 1px solid var(--border);
-		border-radius: var(--radius);
-		background: var(--surface);
+		padding: 0 24px;
+		border-left: 1px solid var(--rule-strong);
 	}
 
-	.feature-icon {
-		width: 40px;
-		height: 40px;
-		display: grid;
-		place-items: center;
-		margin-bottom: 16px;
-		border-radius: 12px;
-		background: var(--accent-soft);
-		color: var(--accent-text);
+	.feature:first-child {
+		padding-left: 0;
+		border-left: 0;
+	}
+
+	.feature-num {
+		display: block;
+		margin-bottom: 10px;
+		color: var(--magenta);
+		font-family: var(--font-display);
+		font-size: 2.6rem;
+		font-style: italic;
+		font-weight: 900;
+		line-height: 1;
 	}
 
 	.feature h3 {
 		margin-bottom: 8px;
-		font-size: 1.05rem;
+		font-size: 1.25rem;
 	}
 
 	.feature p {
 		margin: 0;
-		color: var(--text-2);
-		font-size: 0.925rem;
+		color: var(--ink-2);
+		font-size: 0.95rem;
 		line-height: 1.6;
 	}
 
@@ -126,48 +129,41 @@ const DONTS = [
 		list-style: none;
 		margin: 0;
 		padding: 0;
-		display: grid;
-		gap: 12px;
+		counter-reset: d;
 	}
 
 	.donts li {
-		display: flex;
-		gap: 14px;
-		padding: 16px 18px;
-		border: 1px solid var(--border);
-		border-radius: var(--radius);
-		background: var(--surface);
-		color: var(--text-2);
+		counter-increment: d;
+		display: grid;
+		grid-template-columns: 2.6rem minmax(0, 1fr);
+		padding: 16px 0;
+		border-bottom: 1px solid var(--rule);
+		color: var(--ink-2);
+		font-size: 1.02rem;
 		line-height: 1.6;
 	}
 
-	.x {
-		width: 26px;
-		height: 26px;
-		flex-shrink: 0;
-		display: grid;
-		place-items: center;
-		border-radius: 8px;
-		background: rgba(244, 63, 94, 0.12);
-		color: #f43f5e;
+	.donts li::before {
+		content: '✕';
+		color: var(--crimson);
+		font-weight: 900;
 	}
 
 	.disclaimer {
-		padding: 24px 26px;
-		border: 1px solid var(--border);
-		border-radius: var(--radius);
-		background: var(--surface-2);
-	}
-
-	.disclaimer h2 {
-		margin-bottom: 8px;
-		font-size: 1rem;
-	}
-
-	.disclaimer p {
+		max-width: 70ch;
 		margin: 0;
-		color: var(--text-2);
-		font-size: 0.925rem;
+		font-size: 0.95rem;
 		line-height: 1.6;
+	}
+
+	@media (max-width: 760px) {
+		.features {
+			grid-template-columns: 1fr;
+			gap: 28px;
+		}
+		.feature {
+			padding: 0;
+			border-left: 0;
+		}
 	}
 </style>

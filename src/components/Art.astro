@@ -1,0 +1,53 @@
+---
+/**
+ * Görseli olmayan haberler ve bölüm kapakları için bölüm renklerinde soyut
+ * kompozisyon + amblem. `seed` verilirse (ör. haberin adresi) dört
+ * kompozisyondan biri seçilir; aynı bölümdeki görselsiz haberler birbirinin
+ * aynısı görünmez.
+ */
+import { getCategory } from '../lib/categories';
+
+interface Props {
+	cat: string;
+	seed?: string;
+}
+const category = getCategory(Astro.props.cat);
+const seed = Astro.props.seed ?? '';
+let h = 0;
+for (const ch of seed) h = (h * 31 + ch.charCodeAt(0)) >>> 0;
+const v = seed ? h % 4 : 0;
+---
+
+<div class="art" data-cat={category.id} data-v={v} aria-hidden="true">
+	<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d={category.emblem} /></svg>
+</div>
+
+<style>
+	/* 0: sağ üstte daire, çapraz şerit (varsayılan, global.css) */
+	/* 1: sol altta daire, ters yönde şerit */
+	.art[data-v='1'] {
+		background:
+			radial-gradient(circle at 20% 78%, var(--c-hi) 0 19%, transparent 19.3%),
+			linear-gradient(62deg, transparent 0 40%, var(--c) 40% 62%, transparent 62%),
+			var(--c-dk);
+	}
+
+	/* 2: ortada büyük daire, yatay bant */
+	.art[data-v='2'] {
+		background:
+			linear-gradient(transparent 0 58%, var(--c) 58% 74%, transparent 74%),
+			radial-gradient(circle at 50% 46%, var(--c-hi) 0 27%, transparent 27.3%),
+			var(--c-dk);
+	}
+
+	.art[data-v='2'] svg {
+		color: var(--c-dk);
+	}
+
+	/* 3: dikey ikiye bölünmüş zemin, küçük daire */
+	.art[data-v='3'] {
+		background:
+			radial-gradient(circle at 64% 30%, var(--c-dk) 0 9%, transparent 9.3%),
+			linear-gradient(90deg, var(--c-dk) 0 46%, var(--c) 46% 100%);
+	}
+</style>

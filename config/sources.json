@@ -50,11 +50,34 @@
     "id": "mistral-news",
     "name": "Mistral AI",
     "type": "rss",
-    "url": "https://mistral.ai/news/index.xml",
+    "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_mistral.xml",
     "tier": "resmi",
-    "enabled": false,
-    "note": "Bu adres artık geçerli bir RSS akışı döndürmüyor; çalışan bir akış bulunursa yeniden açılabilir.",
-    "aiOnly": true
+    "enabled": true,
+    "note": "Mistral'in resmi RSS akışı bozuk; mistral.ai/news sayfasından üretilen topluluk akışı.",
+    "aiOnly": true,
+    "maxItems": 2
+  },
+  {
+    "id": "google-gemini-blog",
+    "name": "Google Gemini",
+    "type": "rss",
+    "url": "https://blog.google/products-and-platforms/products/gemini/rss/",
+    "tier": "resmi",
+    "enabled": true,
+    "aiOnly": true,
+    "maxItems": 3,
+    "note": "Google Blog'un Gemini ürün duyuruları."
+  },
+  {
+    "id": "xai-news",
+    "name": "xAI",
+    "type": "rss",
+    "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_xainews.xml",
+    "tier": "resmi",
+    "enabled": true,
+    "aiOnly": true,
+    "maxItems": 2,
+    "note": "xAI'nin resmi RSS akışı yok; x.ai/news sayfasından üretilen topluluk akışı."
   },
   {
     "id": "techcrunch-ai",
@@ -90,14 +113,67 @@
     "note": "Eski /category/ai/feed/ adresi Ağustos 2026'dan beri güncellenmiyordu."
   },
   {
+    "id": "the-decoder",
+    "name": "The Decoder",
+    "type": "rss",
+    "url": "https://the-decoder.com/feed/",
+    "tier": "bagimsiz",
+    "enabled": true,
+    "aiOnly": true,
+    "maxItems": 5,
+    "note": "Yalnızca yapay zekâ haberleri; hızlı ve görselli."
+  },
+  {
+    "id": "testingcatalog",
+    "name": "TestingCatalog",
+    "type": "rss",
+    "url": "https://www.testingcatalog.com/rss/",
+    "tier": "bagimsiz",
+    "enabled": true,
+    "aiOnly": true,
+    "maxItems": 4,
+    "note": "Henüz duyurulmamış özellik ve model sızıntıları; bir kısmı doğrulanmamış iddiadır."
+  },
+  {
+    "id": "wired-ai",
+    "name": "WIRED AI",
+    "type": "rss",
+    "url": "https://www.wired.com/feed/tag/ai/latest/rss",
+    "tier": "bagimsiz",
+    "enabled": true,
+    "maxItems": 3,
+    "note": "Etikette siyaset haberleri de var; yapay zekâ filtresi açık."
+  },
+  {
+    "id": "mit-tech-review-ai",
+    "name": "MIT Technology Review AI",
+    "type": "rss",
+    "url": "https://www.technologyreview.com/topic/artificial-intelligence/feed",
+    "tier": "bagimsiz",
+    "enabled": true,
+    "aiOnly": true,
+    "maxItems": 3,
+    "note": "Derinlemesine analiz; sponsorlu yazılar önem filtresiyle elenir."
+  },
+  {
+    "id": "simon-willison",
+    "name": "Simon Willison",
+    "type": "rss",
+    "url": "https://simonwillison.net/atom/entries/",
+    "tier": "bagimsiz",
+    "enabled": true,
+    "maxItems": 2,
+    "note": "Yeni modelleri bizzat deneyen geliştirici blogu."
+  },
+  {
     "id": "reddit-localllama",
     "name": "Reddit LocalLLaMA (Topluluk & Benchmark)",
     "type": "rss",
     "url": "https://www.reddit.com/r/LocalLLaMA/top/.rss?t=day",
     "tier": "topluluk",
     "enabled": true,
-    "maxItems": 5,
-    "note": "Sadece günün en çok oy alan gönderileri, her turda en fazla 5 tane."
+    "maxItems": 3,
+    "note": "Sadece günün en çok oy alan gönderileri, her turda en fazla 3 tane."
   },
   {
     "id": "lmarena",
