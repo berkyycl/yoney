@@ -1,0 +1,45 @@
+{
+  "baslik_tr": "Anthropic, Cyber Verification Programını Genişleterek Üç Yeni Erişim Katmanı Sunuyor",
+  "ozet_tr": "Anthropic, güvenlik profesyonellerine daha güçlü siber yetenekler ve azaltılmış engelleme sınıflandırıcıları sağlayan Cyber Verification Programı'nı (CVP) üç yeni erişim katmanıyla genişletti. Yeni katmanlar, savunma, kırmızı takım ve uzman erişimlerini ayrı ayrı doğrulama ve güvenlik kontrolleriyle sunarak, kritik altyapıların korunmasını hızlandırmayı hedefliyor.",
+  "detayli_icerik_tr": "Anthropic, 6 Ekim 2026 tarihinde duyurduğu güncellenmiş Cyber Verification Programı (CVP), güvenlik ekiplerine Claude Opus 5.5, Claude Sonnet 5.5, Claude Mythos 5.1 ve gelecekteki modelleri içeren üç ayrı erişim seviyesi sunuyor. Program, \"Defense Access\" katmanında savunma operasyonları, kötü amaçlı yazılım tersine mühendisliği ve zafiyet analizi gibi görevleri desteklerken, \"Red Team Access\" penetrasyon testi ve yetkilendirilmiş saldırı senaryolarına izin veriyor. En katı \"Specialized Access\" ise uçuş kontrol sistemleri, enerji şebekeleri ve finansal altyapılar gibi hayati öneme sahip sistemlerin test edilmesi için en düşük engelleme seviyesini sağlıyor.\n\nYeni katmanların her biri farklı doğrulama gereksinimleri ve güvenlik kontrolleri içeriyor. \"Defense Access\" başvuruları birkaç gün içinde yanıtlanırken, \"Red Team Access\" başvuruları birkaç hafta sürebilir ve bu aşamada organizasyonlar önce \"Defense Access\" seviyesine alınır. \"Specialized Access\" ise ABD hükümetiyle ortaklaşa derinlemesine inceleme gerektiriyor ve yalnızca Project Glasswing üyeleri otomatik geçiş yapabiliyor. Program kapsamında veri saklama zorunluluğu bulunuyor; ancak sonbaharda sunulacak Enterprise Frontier Safeguards (EFS) ile sıfır veri saklama özelliği bulut ortamında kontrol edilebilecek.\n\nAnthropic, programın etkinliğini ölçmek için Claude Opus 5.5'i CyScenarioBench adlı çok aşamalı siber operasyon testinde değerlendirdi. Defense Access katmanında 50 denemenin 46'sı engellendi, Red Team Access katmanında ise hiçbir engelleme yaşanmadı ve model 34/50 görevi (%67.6 başarı) tamamladı. Bu sonuçlar, sınıflandırıcıların katman bazında etkili bir şekilde ayarlandığını ve savunma ekiplerine gerekli yetenekleri güvenli bir şekilde sunabildiğini gösteriyor.\n\nProgramın önceki aşaması Project Glasswing, partner kuruluşların Nisan‑Temmuz 2026 döneminde 129.000 doğrulanmış yazılım zafiyeti keşfetmesini sağladı; ek olarak Anthropic'in açık kaynak taramaları 5.500 zafiyet daha buldu. Bu zafiyetlerin %33'ü kritik ya da yüksek şiddetteydi. Anthropic, bu sayıları sadece bir alt sınır olarak nitelendiriyor ve gerçek etkinin beş kat daha yüksek olabileceğini öne sürüyor. Genişletilen CVP, bu başarıyı daha fazla güvenlik organizasyonuna taşıyarak savunma çabalarını kalıcı bir avantaja dönüştürmeyi amaçlıyor.",
+  "onemli_maddeler": [
+    "CVP üç yeni erişim katmanı (Defense, Red Team, Specialized) ile güvenlik ekiplerine farklı seviyelerde siber yetenek sunuyor.",
+    "Claude Opus 5.5, CyScenarioBench testinde Red Team Access katmanında %67.6 başarı elde etti, savunma katmanında ise %8 blok oranı gözlendi.",
+    "Project Glasswing döneminde 129.000+ doğrulanmış zafiyet keşfedildi; bu sayı programın genişletilmesiyle çok daha fazla artması bekleniyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Program, kritik altyapıların korunması için AI destekli siber araçların daha geniş bir güvenlik topluluğuna sunulmasını sağlıyor ve sektörde güvenli AI kullanımının standartlarını yükseltiyor.",
+  "etiketler": [
+    "cybersecurity",
+    "AI safety",
+    "Claude Opus",
+    "Anthropic",
+    "CVP"
+  ],
+  "anilan_modeller": [
+    "Claude Opus 5.5",
+    "Claude Sonnet 5.5",
+    "Claude Mythos 5.1",
+    "Claude Fable 5.1"
+  ],
+  "yorum_tr": "Genişletilen CVP, savunma ekiplerine daha güçlü AI destekli araçlar sunarken, katmanlı engelleme mekanizmaları sayesinde kötü niyetli kullanım riskini kontrol altında tutuyor; bu denge, AI güvenliği alanında sektörel bir mihenk taşı olarak değerlendirilebilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Claude Opus 5.5",
+      "benchmark": "CyScenarioBench",
+      "skor": 67.6,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "5 attempts per 10 challenges (50 trials) per tier",
+      "kaynak_metinden_alinti": "In the Red Team Access tier, no blocks occurred, and Claude Opus 5.5 successfully completed 34 of the 50 tasks—effectively equivalent to the model’s 67.6% success rate on this evaluation with no safeguards applied."
+    }
+  ],
+  "gorsel_url": "https://www.anthropic.com/api/opengraph-illustration?name=Hand%20Lock&backgroundColor=heather",
+  "url": "https://www.anthropic.com/news/cyber-verification-program",
+  "source": "Anthropic",
+  "sourceTier": "resmi",
+  "date": "2026-10-06T00:00:00.000Z",
+  "slug": "expanding-the-cyber-verification-program"
+}

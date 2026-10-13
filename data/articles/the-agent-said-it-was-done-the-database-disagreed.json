@@ -1,0 +1,97 @@
+{
+  "baslik_tr": "ThinkingBox: AI ajanlarının veritabanı durumunu ölçen yeni benchmark",
+  "ozet_tr": "Microsoft ve Hugging Face ortaklığıyla geliştirilen ThinkingBox, AI ajanlarını yalnızca ürettikleri yanıtlarla değil, geride bıraktıkları veritabanı kayıtlarıyla da değerlendiriyor. 507 iş akışı üzerinde 20 kez tekrarlanan testlerde, modellerin tutarlılığı ve maliyet etkinliği detaylı bir şekilde ortaya konuldu.",
+  "detayli_icerik_tr": "Microsoft ve Hugging Face, AI ajanlarının gerçek dünyadaki iş akışlarında bıraktığı veritabanı durumunu ölçen ThinkingBox adlı bir benchmark ve sandbox ortamı sundu. Geleneksel değerlendirmelerin aksine, ThinkingBox yalnızca araç çağrılarının sayısını değil, bu çağrılar sonucunda veritabanında oluşan nihai durumu ve yan etkileri inceliyor. 507 farklı iş akışı (perakende, otomotiv sigortası, seyahat, neobank ve danışmanlık) her bir model için 20 bağımsız deneme ile çalıştırıldı ve üç temel metrik (pass@1, pass@20, observed 20/20) raporlandı.\n\nTest sonuçları, tek bir denemede yüksek başarı gösteren modellerin tutarlılık açısından büyük kayıplar yaşayabileceğini gösterdi. Örneğin Claude Opus 5.5, genel olarak %67.16 pass@1 skoru ile lider konumda olsa da, sadece %13.41 oranında (68 görev) tüm 20 denemeyi sorunsuz tamamlayabildi. Buna karşılık Kimi‑K3, %93.89 oranıyla bir kez bile doğru sonuç üretebildiği görev sayısında en yüksek kapsama sahipken, tutarlılık açısından sadece %13.41 oranında 20/20 başarısı bulunuyor. GPT‑6 Astra ise %58.31 pass@1 skoru ile tek denemede ortalama bir performans sergilerken, %78 oranıyla tek denemelik başarısını en iyi koruyan modeller arasında yer alıyor.\n\nMaliyet analizine de yer verilen çalışma, başarılı bir görev denemesinin maliyetini (cost per successful task attempt) ve tutarlı bir görev (20/20) başına maliyeti (cost per dependable task) karşılaştırdı. GPT‑5.4, tek deneme başına $0.131 maliyetle en ucuz seçenekken, tutarlı bir sonuç için $6.80 maliyetle en ekonomik model olarak öne çıktı. Öte yandan Claude Opus 5.5, tutarlı sonuçlar için $7.80 maliyetle en yüksek performans‑maliyet dengesini sağladı.\n\nBaşarısızlıkların büyük bir kısmının (yaklaşık %80) araç kullanım hatalarından kaynaklandığı tespit edildi; yani modelin mantıksal hatasından ziyade araçların hatalı yönetimi ve hata kurtarma mekanizmalarının eksikliği sorunu ortaya çıkardı. Bu bulgu, üretim ortamlarında AI ajanlarını dağıtmadan önce veritabanı durumunun kontrol edilmesi, araç yüzeyinin daraltılması ve kritik değişikliklerde insan onayının alınması gerektiğini vurguluyor. ThinkingBox ve ThinkingBox‑Bench açık kaynak olarak Hugging Face üzerinden erişilebilir hâle getirildi; geliştiriciler aynı ortamı kendi veri setleri ve modelleriyle test edebilecek.",
+  "onemli_maddeler": [
+    "ThinkingBox, AI ajanlarını sadece araç çağrılarıyla değil, geride bıraktıkları veritabanı kayıtlarıyla da değerlendiriyor.",
+    "Claude Opus 5.5 %67.16 pass@1 skoru ile lider, ancak tutarlılık (20/20) sadece %13.41.",
+    "Kimi‑K3 en geniş kapsama (%93.89) sahipken tutarlılık düşük; GPT‑6 Astra tek denemelik başarısını %78 oranıyla koruyor.",
+    "Maliyet analizinde GPT‑5.4 tek deneme başına $0.131, Claude Opus 5.5 ise tutarlı sonuçlar için $7.80 maliyetle en iyi dengeyi sağlıyor.",
+    "Başarısızlıkların %79.9'u araç kullanım hatalarından kaynaklanıyor; bu da hata kurtarma ve araç yüzeyinin daraltılmasının önemini gösteriyor."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "ThinkingBox, AI ajanlarının gerçek dünyadaki iş akışlarındaki tutarlılığını ve maliyet etkinliğini ölçen kapsamlı bir benchmark sunarak sektörde yeni bir değerlendirme standardı oluşturuyor.",
+  "etiketler": [
+    "AI ajanları",
+    "benchmark",
+    "veritabanı",
+    "LLM",
+    "maliyet"
+  ],
+  "anilan_modeller": [
+    "Claude Opus 5.5",
+    "Claude Opus 5",
+    "GPT-5.4",
+    "GPT-5.6 Sol",
+    "Claude Sonnet 4.6",
+    "GPT-6 Astra",
+    "GPT-5.2",
+    "Claude Opus 4.6",
+    "o3-pro",
+    "Grok-4.3",
+    "Kimi-K3",
+    "Qwen3.8-27B",
+    "DeepSeek-V4-Pro",
+    "Kimi-K2.6",
+    "GLM-5.1",
+    "Qwen3.6-27B",
+    "Qwen3.5-9B",
+    "Mistral-Large-3"
+  ],
+  "yorum_tr": "ThinkingBox, AI ajanlarının yalnızca yanıt kalitesine değil, sistem üzerindeki gerçek etkilerine odaklanarak geliştiricilere daha güvenilir ve maliyet‑etkin modeller seçme imkanı sunuyor; bu da üretim ortamlarında hata toleransını artırıp insan müdahalesi ihtiyacını azaltabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Claude Opus 5.5",
+      "benchmark": "ThinkingBox-Bench pass@1",
+      "skor": 67.16,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "pass@1",
+      "kaynak_metinden_alinti": "Claude Opus 5.5 leads overall at 67.16%, two-thirds of a point above Claude Opus 5."
+    },
+    {
+      "model": "Kimi-K3",
+      "benchmark": "ThinkingBox-Bench pass@1",
+      "skor": 57.37,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "pass@1",
+      "kaynak_metinden_alinti": "Kimi-K3 82.24 50.80 61.83 41.35 51.63 57.37"
+    },
+    {
+      "model": "GPT-6 Astra",
+      "benchmark": "ThinkingBox-Bench pass@1",
+      "skor": 58.31,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "pass@1",
+      "kaynak_metinden_alinti": "GPT-6 Astra 71.73 46.55 55.87 60.87 56.83 58.31"
+    },
+    {
+      "model": "GPT-5.4",
+      "benchmark": "ThinkingBox-Bench pass@1",
+      "skor": 65.36,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "pass@1",
+      "kaynak_metinden_alinti": "GPT-5.4 76.33 62.65 68.12 65.34 54.60 65.36"
+    },
+    {
+      "model": "GLM-5.1",
+      "benchmark": "ThinkingBox-Bench pass@1",
+      "skor": 33.19,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "pass@1",
+      "kaynak_metinden_alinti": "GLM-5.1 58.67 25.70 35.43 13.27 34.06 33.19"
+    }
+  ],
+  "gorsel_url": "https://cdn-uploads.huggingface.co/production/uploads/64b8491203124195cd795cad/NStwJm1AafDELVsU4KGwS.png",
+  "url": "https://huggingface.co/blog/microsoft/thinkingbox",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-10-03T22:56:48.000Z",
+  "slug": "the-agent-said-it-was-done-the-database-disagreed"
+}

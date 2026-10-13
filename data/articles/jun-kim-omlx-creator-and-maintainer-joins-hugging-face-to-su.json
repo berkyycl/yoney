@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "Jun Kim, oMLX geliştiricisi Hugging Face'e katıldı, MLX topluluğunu destekleyecek",
+  "ozet_tr": "Hugging Face, oMLX'in yaratıcısı Jun Kim'in ekibe katıldığını duyurdu. Jun, Apple Silicon için optimize edilmiş MLX çerçevesinin geliştirilmesini hızlandıracak ve topluluğa istikrar sağlayacak.",
+  "detayli_icerik_tr": "Hugging Face, 22 Eylül 2026 tarihinde oMLX projesinin kurucusu ve bakım sorumlusu Jun Kim'in yeni takım üyesi olarak katıldığını resmi blog yazısıyla açıkladı. Şirket, yerel AI çözümlerine tam bir yatırım yaptığını ve MLX'in ekosistemdeki merkezi rolünü vurguladı.\n\nJun Kim'in bu geçişi, oMLX'in yan işten tam zamanlı, finanse edilen bir projeye dönüşmesini sağlayacak. Proje Apache 2.0 lisansını koruyarak topluluk katkılarını sürdürmeye devam edecek ve Jun, geliştiricileri yönlendirme ve uzun vadeli yol haritasını şekillendirme sorumluluğunu alacak.\n\nMLX, Apple'ın Apple Silicon cihazları için geliştirdiği yerel AI framework'ü olarak öne çıkıyor. Hugging Face, MLX modellerinin hub'ında toplanmasını ve topluluk tarafından katkı sağlanmasını destekliyor. Jun'un katılımı, mlx-lm, mlx-vlm gibi yan projelerle entegrasyonu güçlendirecek ve bu projeler arasındaki sinerjiyi artıracak.\n\nŞirket, Transformers kütüphanesindeki model tanımlarının MLX implementasyonlarına hızlıca dönüştürülmesini hedefliyor. Bu sayede farklı motorlar, Transformers'ın referans tanımlarını kullanarak yerel AI çözümlerini daha çabuk hayata geçirebilecek. Hugging Face, bu süreci kolaylaştırarak yerel AI ekosisteminin büyümesini ve çeşitlenmesini teşvik etmeyi amaçlıyor.",
+  "onemli_maddeler": [
+    "Jun Kim'in Hugging Face'e katılması, oMLX projesine tam zamanlı destek ve finansman getiriyor",
+    "oMLX Apache 2.0 lisansını koruyarak topluluk katkılarını sürdürecek",
+    "Hugging Face, MLX modellerinin Transformers tanımlarıyla entegrasyonunu hızlandırmayı hedefliyor",
+    "İş birliği, mlx-lm ve mlx-vlm gibi alt projelerle sinerji yaratacak"
+  ],
+  "kategori": "arac-sdk",
+  "onem": 3,
+  "onem_gerekce": "Jun Kim'in MLX ekosistemine tam zamanlı katılımı, Apple Silicon tabanlı yerel AI araçlarının gelişimini hızlandırsa da, henüz geniş çaplı bir model çıkışı ya da sektörel dönüşüm yaratmadığı için orta seviyede bir öneme sahiptir.",
+  "etiketler": [
+    "MLX",
+    "oMLX",
+    "Hugging Face",
+    "Apple Silicon",
+    "Yerel AI"
+  ],
+  "anilan_modeller": [
+    "mlx-lm",
+    "mlx-vlm",
+    "transformers"
+  ],
+  "yorum_tr": "Bu gelişme, yerel AI çözümlerinin performansını artırmak isteyen geliştiriciler için daha istikrarlı bir altyapı ve daha hızlı entegrasyon imkanı sunacak, ancak etkisi büyük ölçekte hâlâ sınırlı kalacak.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://huggingface.co/blog/assets/omlx/omlx-hf.jpg",
+  "url": "https://huggingface.co/blog/omlx",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-09-22T00:00:00.000Z",
+  "slug": "jun-kim-omlx-creator-and-maintainer-joins-hugging-face-to-su"
+}

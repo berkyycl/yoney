@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "OpenAI, GPT-2'yi yayınlamaktan vazgeçti: Tehlikeli sahte metin üreticisi",
+  "ozet_tr": "OpenAI, 2019 yılında geliştirdiği GPT-2 modelinin kamuoyuna sunulmasının yaratabileceği kötüye kullanım riskleri nedeniyle tam sürümünü yayınlamamaya karar verdi. Model, 10 milyon Reddit makalesiyle eğitilmiş 40 GB'lık bir veri setiyle 1,5 milyar parametreye ulaşarak gerçekçi metin üretme yeteneği gösterdi. Şirket, bu yeteneğin sahte haber ve dezenformasyon üretiminde kullanılabileceği endişesiyle geleneksel araştırma paylaşım politikasını askıya aldı.",
+  "detayli_icerik_tr": "OpenAI, GPT-2 adlı büyük ölçekli dil modelini 2019 yılında duyurdu ve modelin kapasitesinin, sahte haber, propaganda ve diğer zararlı içeriklerin otomatik üretiminde kullanılabileceği konusunda uyarılarda bulundu. Dario Amodei'nin açıklamasına göre, model 10 milyon Reddit makalesi üzerinden eğitildi; bu veri seti 40 GB'lık bir boyuta ulaştı ve yaklaşık 35.000 \"Moby Dick\" kopyasını barındırıyordu. Modelin büyüklüğü ve dil üretim kalitesi, onu o dönemin en güçlü metin jeneratörlerinden biri haline getirdi.\n\nOpenAI, bu potansiyel riskleri göz önünde bulundurarak, GPT-2'nin tam modelini ve ağırlıklarını kamuya açıklamaktan vazgeçti. Şirket, araştırma topluluğu ve kamuoyu ile teknolojinin olası etkileri üzerine daha fazla tartışma yapılması gerektiğini savunarak, modelin sadece sınırlı bir versiyonunu yayınladı. Bu karar, yapay zekâ araştırmalarında şeffaflık ve sorumluluk dengesini yeniden gündeme taşıdı.\n\nReddit'teki LocalLLaMA topluluğu, Guardian'ın 2019 tarihli haberine atıfta bulunarak bu kararı hatırlattı ve \"Bazı insanlar hiç değişmez\" şeklinde bir yorumda bulundu. Topluluk üyeleri, o dönemdeki tartışmaların hâlâ geçerli olduğunu ve benzer risklerin yeni modellerde de göz ardı edilmemesi gerektiğini vurguladı.\n\nOpenAI'nin bu tutumu, sonraki yıllarda GPT-3 ve GPT-4 gibi daha büyük modellerin yayınlanma stratejilerini de etkiledi. Şirket, risk değerlendirmesi ve güvenlik önlemleri çerçevesinde model erişimini kademeli olarak genişletmeyi tercih etti, ancak aynı zamanda etik kurallar ve düzenleyici çerçevelerin geliştirilmesi gerektiğini de kabul etti.",
+  "onemli_maddeler": [
+    "OpenAI, GPT-2'nin tam sürümünü kötüye kullanım riskleri nedeniyle yayınlamamayı seçti.",
+    "Model, 10 milyon Reddit makalesiyle eğitilmiş 40 GB'lık bir veri seti ve 1,5 milyar parametreye sahip.",
+    "Karar, yapay zekâ araştırmalarında şeffaflık ve sorumluluk dengesine dair geniş bir tartışma başlattı."
+  ],
+  "kategori": "politika",
+  "onem": 4,
+  "onem_gerekce": "Modelin potansiyel kötüye kullanımının erken fark edilmesi, AI güvenliği ve yayın politikaları açısından sektörde kritik bir örnek teşkil ediyor.",
+  "etiketler": [
+    "GPT-2",
+    "OpenAI",
+    "AI etiketi",
+    "model yayınlama",
+    "dezenformasyon"
+  ],
+  "anilan_modeller": [
+    "GPT-2"
+  ],
+  "yorum_tr": "Bu karar, geliştiricilerin model dağıtımında güvenlik önceliğini göz önünde bulundurması gerektiğini gösteriyor; kullanıcılar ise daha sorumlu AI çözümlerine yönlendirilmiş bir ekosistemin parçası oluyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://i.guim.co.uk/img/media/c37b22b7ba925a76f64767576b972c77ec02d9b7/119_76_1039_584/1039.png?width=465&dpr=1&s=none&crop=none",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x52lsb/new_ai_fake_text_generator_may_be_too_dangerous/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-13T17:15:27.000Z",
+  "slug": "new-ai-fake-text-generator-may-be-too-dangerous-to-release-s"
+}

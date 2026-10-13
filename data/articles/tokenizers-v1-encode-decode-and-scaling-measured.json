@@ -1,0 +1,66 @@
+{
+  "baslik_tr": "Hugging Face Tokenizers v1: Encode, Decode ve Ölçeklenebilirlikte Çığır Açan Performans Artışı",
+  "ozet_tr": "Hugging Face, tokenizers kütüphanesinin 1. sürüm adayını (v1) yayınladı ve tek iş parçacığında önceki 0.23 sürümüne göre 3‑30 kat daha hızlı encode sağlayarak tokenizasyonun artık bir darboğaz olmadığını vurguluyor. Yeni sürüm, SIMD tabanlı bitstream bölme, kelime önbelleği ve tek bir model çağrısı ile toplu işleme gibi yeniliklerle çok çekirdekli ortamlarda %76 doğrusal ölçeklenebilirlik sunuyor.",
+  "detayli_icerik_tr": "Hugging Face, tokenizers kütüphanesinin v1 sürüm adayını tanıttı ve bu sürümün önceki 0.23 sürümüne kıyasla encode aşamasında 3 ila 30 kat daha hızlı olduğunu gösterdi. Tek bir iş parçacığında Apple M4 Max üzerinde yapılan ölçümlerde, t5-base gibi daha küçük modellerde 3 kat, gpt2 gibi daha büyük modellerde ise 30 kat hız artışı elde edildi. Bu performans kazancı, tokenizasyonun artık GPU'ların bekleme süresini artırmadığı anlamına geliyor; model eğitim ve inference süreçlerinde veri akışı kesintisiz devam ediyor.\n\nv1'in temel iyileştirmeleri arasında, regex tabanlı bölme mekanizmasının SIMD destekli bitstream işlemleriyle değiştirilmesi, tekrarlanan kelimeler için yerel önbellek (Word Cache) kullanılması ve BPE birleştirme döngüsünün bellek tahsisinden tamamen arındırılması yer alıyor. Ayrıca, kütüphane çalışma zamanını dört ayrı crate'e (tk-encode, tk-serialize, tk-convert, tk-train) bölerek yalnızca ihtiyaç duyulan bileşenlerin derlenmesini sağladı. Bu sayede hem ikili boyutları küçülttü hem de bellek kullanımını optimize etti.\n\nÇok çekirdekli ölçeklenebilirlik de v1'in bir diğer güçlü yönü. Aynı anda sekiz iş parçacığına dağıtılan tokenizasyon görevlerinde, performans doğrusal ölçeğin %76'sına ulaştı. Her iş parçacığı kendi scratch buffer ve kelime önbelleğini kullanarak kilit beklemelerini ortadan kaldırdı ve böylece yüksek paralellikte bile verim kaybı yaşanmadı. Benchmarklar, farklı model aileleri (BPE, WordPiece, Unigram) ve diller arasında tutarlı sonuçlar verdi; ancak regex tabanlı bölme kullanılan modellerde kazanç daha sınırlı kaldı.\n\nv1 sürümü hâlâ bir ön sürüm (release candidate) aşamasında ve crates.io üzerinden \"cargo add tokenizers --pre\" komutuyla kurulabiliyor. API değişikliği yok; tek fark, derleme zamanında yeni crate'lerin seçilmesi. Gelecek adım olarak, bu iyileştirmelerin transformers kütüphanesine ve diğer ekosistem bileşenlerine entegre edilmesi planlanıyor. Ayrıca, GPU tabanlı tokenizasyon ve batch decoding gibi ileri seviye özelliklerin prototip aşamasında olduğu belirtiliyor.",
+  "onemli_maddeler": [
+    "v1, v0.23 ile aynı token ID'lerini ve API'yi korurken encode hızını 3‑30 kat artırıyor.",
+    "SIMD tabanlı bitstream bölme ve kelime önbelleği sayesinde tekrar eden kelimeler için birleştirme maliyeti ortadan kalkıyor.",
+    "BPE birleştirme döngüsü bellek tahsisinden arındırıldı ve tek bir model çağrısı ile toplu pre-token işleniyor.",
+    "Sekiz iş parçacığında %76 doğrusal ölçeklenebilirlik elde edildi, GPU'ların bekleme süresi minimuma indirildi.",
+    "Kütüphane dört ayrı crate'e bölünerek sadece ihtiyaç duyulan bileşenler derleniyor, ikili boyutu ve bellek tüketimi azaldı."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Tokenizasyon, büyük ölçekli LLM eğitim ve inference süreçlerinde potansiyel bir darboğaz olabiliyor; v1'in sağladığı ondalık hız artışı, GPU'ların bekleme süresini azaltarak tüm pipeline verimliliğini önemli ölçüde yükseltiyor.",
+  "etiketler": [
+    "tokenization",
+    "performans",
+    "Rust",
+    "HuggingFace",
+    "LLM"
+  ],
+  "anilan_modeller": [
+    "t5-base",
+    "gpt2",
+    "DeepSeek-V4-Flash",
+    "cl100k",
+    "o200k"
+  ],
+  "yorum_tr": "Tokenizers v1, tokenizasyon sürecini hızlandırarak büyük veri setleri ve yüksek paralellik gerektiren LLM uygulamalarında kritik bir performans iyileştirmesi sunuyor; geliştiriciler aynı API'yi koruyarak daha verimli sistemler inşa edebilecek, kullanıcılar ise daha düşük gecikme ve daha yüksek throughput deneyimleyecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "t5-base",
+      "benchmark": "encode speedup vs v0.23 (single thread, Apple M4 Max)",
+      "skor": 3,
+      "birim": "x",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "single thread",
+      "kaynak_metinden_alinti": "v1's encode path covers, it encodes text 3 to 30 times faster than v0.23 with one thread on an Apple M4 Max."
+    },
+    {
+      "model": "gpt2",
+      "benchmark": "encode speedup vs v0.23 (single thread, Apple M4 Max)",
+      "skor": 30,
+      "birim": "x",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "single thread",
+      "kaynak_metinden_alinti": "v1's encode path covers, it encodes text 3 to 30 times faster than v0.23 with one thread on an Apple M4 Max."
+    },
+    {
+      "model": "generic",
+      "benchmark": "throughput scaling across eight workers",
+      "skor": 76,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "8 workers",
+      "kaynak_metinden_alinti": "It scales at 76% of linear across eight workers."
+    }
+  ],
+  "gorsel_url": "https://huggingface.co/blog/assets/tokenizers-v1/thumbnail.png",
+  "url": "https://huggingface.co/blog/tokenizers-v1",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-09-21T00:00:00.000Z",
+  "slug": "tokenizers-v1-encode-decode-and-scaling-measured"
+}

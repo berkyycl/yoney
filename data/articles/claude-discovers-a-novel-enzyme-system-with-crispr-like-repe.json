@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "Claude, CRISPR benzeri tekrarlara sahip yeni bir enzim sistemi keşfetti",
+  "ozet_tr": "Anthropic, Claude adlı yapay zeka modelini biyoloji araştırmalarına yönlendiren yeni bir yaşam bilimleri ekibi kurdu ve model, CRISPR benzeri DNA tekrarları içeren tamamen yeni bir enzim sistemi keşfetti. Bu keşif, ters transkriptaz (RT) tabanlı bir sistemin (ART) bakteriyofajlarda bulunması ve potansiyel olarak programlanabilir bir biyoteknoloji aracı olma ihtimali taşımasıyla dikkat çekiyor.",
+  "detayli_icerik_tr": "Anthropic, 2026 baharında biyoloji araştırmalarına odaklanan bir laboratuvar ve ekip kurarak, Claude adlı genel yapay zeka modelini DNA veri tabanlarını taramaya yönlendirdi. Bilim insanları, Claude'a yalnızca yüksek seviyeli bir yönlendirme vererek, modelin milyonlarca DNA dizisini incelemesini ve karakterize edilmemiş protein ailelerini ortaya çıkarmasını sağladı. Bu yaklaşım, biyolojik keşif sürecini insan‑AI iş birliğiyle yeniden tanımlamayı hedefliyor.\n\nClaude, 950 paralel ajan ve yaklaşık 210 milyon token kullanarak 21 saat içinde bir dizi ilginç örnek buldu. Tarama sonucunda, jumbo fajlarda bulunan bir ters transkriptaz (RT) geninin yanına yerleşik, CRISPR benzeri tekrarlardan oluşan bir dizi tespit edildi. Bu yapı, daha önce yalnızca sınırlı sayıda programlanabilir sistemde görülmüş olan kesme, kopyalama ve yapıştırma işlevlerini bir arada barındırıyor. Araştırmacılar bu yeni sistemi \"array-associated reverse transcriptases\" (ART) olarak adlandırdı.\n\nART sistemi, üç bileşenden oluşuyor: RT enzimi, yanındaki partner gen ve düzenli aralıklarla yer alan uzun DNA tekrar dizisi. İlk laboratuvar deneyleri, bu tekrar dizisinin kısa RNA'lar olarak ifade edildiğini gösterdi; bu da CRISPR sistemlerinin mekanizmasına benzer bir işlevselliğin olabileceğini işaret ediyor. MIT ve Broad Institute'dan Feng Zhang, bu bulgunun AI destekli biyolojik keşiflerin geleceği için heyecan verici bir örnek olduğunu belirtti.\n\nClaude'un keşif süreci, önce 200 bin RT'yi tarayıp 3 500 yeni aday sistemi belirlemesi, ardından bu adayları 20 en umut vereni seçmesiyle gerçekleşti. İnsan bilim insanları, Claude'un hazırladığı insan‑okunabilir raporları inceleyerek en ilgi çekici adayı laboratuvara taşıdı. Bu iş akışı, haftalar hatta aylar sürebilecek geleneksel analizleri saatler içinde tamamlayarak araştırma temposunu dramatik şekilde artırıyor. Anthropic, bu yöntemi genomik araştırmalardan ilaç keşfine kadar geniş bir yelpazede uygulamayı ve toplulukla iş birliği yaparak ART sisteminin fonksiyonunu tam olarak aydınlatmayı hedefliyor.",
+  "onemli_maddeler": [
+    "Claude, 950 paralel ajan ve 210 milyon token kullanarak 21 saat içinde yeni bir enzim sistemi keşfetti.",
+    "200 000 ters transkriptaz tarandı, 3 500 yeni aday sistem belirlendi ve en umut vereni 20'ye indirildi.",
+    "Keşfedilen ART sistemi, ters transkriptaz, yan protein ve CRISPR benzeri DNA tekrar dizisinden oluşur.",
+    "İlk deneyler, ART tekrar dizisinin kısa RNA'lar olarak ifade edildiğini gösterdi.",
+    "Feng Zhang, bulgunun AI destekli biyoloji araştırmalarının geleceğine işaret ettiğini vurguladı."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "AI destekli bir modelin tamamen yeni bir biyolojik sistem keşfetmesi, gen düzenleme ve biyoteknoloji alanında potansiyel devrim yaratabilecek bir adım olarak değerlendiriliyor.",
+  "etiketler": [
+    "Claude",
+    "AI biyoloji",
+    "enzim sistemi",
+    "CRISPR",
+    "genomik"
+  ],
+  "anilan_modeller": [
+    "Claude"
+  ],
+  "yorum_tr": "Claude'un bağımsız hipotez üretme ve veri tarama yeteneği, biyolojik keşiflerin hızını artırarak araştırma maliyetlerini düşürebilir. Ancak sistemin gerçek işlevi ve biyoteknolojik uygulanabilirliği, kapsamlı laboratuvar doğrulamalarıyla ortaya çıkacak.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/394de337d8a5d8db93a1c048fa1cb53e16a09625-2048x1240.jpg",
+  "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
+  "source": "Anthropic",
+  "sourceTier": "resmi",
+  "date": "2026-09-23T00:00:00.000Z",
+  "slug": "claude-discovers-a-novel-enzyme-system-with-crispr-like-repe"
+}

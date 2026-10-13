@@ -1,0 +1,180 @@
+{
+  "baslik_tr": "Hızlı ve Gizli Ajanlar İçin LFM2.5-24B-A2B Modeli Cihaz Üzerinde Çalışıyor",
+  "ozet_tr": "Liquid AI, sadece 2 Milyar aktif parametreyle 24 Milyar toplam parametreli yeni LFM2.5-24B-A2B modelini duyurdu. Model, araç çağrıları ve çok adımlı görevlerde zincirleme düşünme yeteneğiyle, cihaz üzerinde düşük maliyetli ve yüksek hızlı ajan çalıştırmayı hedefliyor. Qwen3.6-35B-A3B gibi çok daha büyük modellerle rekabet edebilen bu MoE, özellikle araç‑kullanımı ve talimat takibi benchmarklarında öne çıkıyor.",
+  "detayli_icerik_tr": "Liquid AI, LFM2.5-24B-A2B modelini 40 katman, 64 uzmanlı MoE blokları ve top‑4 yönlendirme mekanizmasıyla inşa etti. Modelin bağlam penceresi 32 K'dan 131 K tokena çıkarıldı ve kelime dağarcığı 65 K'dan 128 K tokena genişletildi; bu sayede Latin dışı dillerde de daha iyi performans sağlanıyor. Ön‑eğitim aşaması 17 trilyon token'dan 33 trilyon token'a ölçeklendirilirken, orta‑eğitimde 2 trilyon token 32 K bağlamda ve 300 milyar token 131 K bağlamda, özellikle akıl yürütme, matematik, kod ve çok‑dilli metinlere odaklanıldı.\n\nModel, beş aşamalı bir post‑eğitim sürecinden geçti: süpervizörlü ince ayar (SFT), öğretmen uzmanlaşması, çok‑alanlı politika içi distilasyon (MOPD) – önce ajan‑olmayan, ardından ajan‑odaklı görevler için – ve son olarak ajanik pekiştirmeli öğrenme (Agentic RL). Bu aşamalar, OpenClaw, Hermes Agent, Pi ve OpenCode gibi popüler ajan çerçevelerinde doğrudan çalışabilen bir ajan temeli oluşturdu.\n\nBenchmark testlerinde LFM2.5-24B-A2B, 16 farklı ölçekte Qwen3.6-35B-A3B, Gemma‑4‑26B‑A4B‑it ve Nemotron‑3.5‑Lightning (30B‑A3B) modelleriyle karşılaştırıldı. Model, AutomationBench, BFCLv4, ToolSandbox, LiveClaw ve τ³‑Bench Banking gibi araç‑kullanımı ve ajan‑odaklı testlerde liderlik etti; özellikle AutomationBench'te rakip modelin üç katı puan elde etti. Bilgi‑ağırlıklı benchmarklarda (GPQA Diamond, HLE, AA‑Omniscience) ve kodlama testlerinde (SWE‑Bench Verified, SciCode) daha büyük modellerin gerisinde kalsa da, retrieval ya da web‑arama entegrasyonlarıyla bu eksikliği kapatmak mümkün.\n\nCihaz‑üzerinde çalıştırma hızı da dikkat çekiyor: Apple M5 Max CPU’da 184 token/s, Ryzen AI Max+ 395’da 114 token/s hızlarıyla aynı sınıftaki diğer MoE modellerinden %1.7 daha hızlı ve daha az bellek tüketiyor. NVIDIA B300 GPU’da ise 21 000+ çıkış token/s hızına ulaşarak yüksek eşzamanlılıkta bile performansını koruyor. Model, llama.cpp, MLX, vLLM, SGLang ve ONNX gibi ekosistemlerde güncel transformer sürümü (≥5.0.0) ile doğrudan kullanılabilir.",
+  "onemli_maddeler": [
+    "Sadece 2 B aktif parametreyle 24 B toplam parametreli bir MoE modeli, cihaz‑üzerinde düşük maliyetli ve yüksek hızlı ajan çalıştırmayı mümkün kılıyor.",
+    "AutomationBench gibi araç‑kullanımı benchmarklarında rakip modelin üç katı puan alarak en iyi performansı gösterdi.",
+    "131 K token bağlam penceresi ve 128 K token kelime dağarcığı sayesinde uzun‑bağlam ve çok‑dilli görevlerde üstünlük sağladı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Model, aktif parametre sayısını dramatik şekilde azaltarak cihaz‑üzerinde gerçek‑zamanlı ajan uygulamaları için yeni bir performans standardı sunuyor; benchmark sonuçları ve hız ölçümleri sektördeki rekabeti yeniden şekillendirebilir.",
+  "etiketler": [
+    "LFM2.5-24B-A2B",
+    "MoE",
+    "agentic AI",
+    "edge inference",
+    "tool use"
+  ],
+  "anilan_modeller": [
+    "Qwen3.6-35B-A3B",
+    "Gemma-4-26B-A4B-it",
+    "Nemotron-3.5-Lightning (30B-A3B)",
+    "LFM2-24B-A2B"
+  ],
+  "yorum_tr": "LFM2.5-24B-A2B, düşük donanım gereksinimi ve yüksek araç‑kullanımı performansı sayesinde geliştiricilerin yerel ajan çözümlerini ölçeklendirmesini kolaylaştırıyor. Ancak bilgi‑ağırlıklı ve kodlama görevlerinde hâlâ büyük modellerin gerisinde kalması, hibrit sistemlerde retrieval entegrasyonunun önemini vurguluyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "LFM2.5-24B-A2B",
+      "benchmark": "AutomationBench",
+      "skor": 27.69,
+      "birim": "score",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "AutomationBench 27.69"
+    },
+    {
+      "model": "LFM2.5-24B-A2B",
+      "benchmark": "BFCLv4",
+      "skor": 65.01,
+      "birim": "score",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "BFCLv4 65.01"
+    },
+    {
+      "model": "LFM2.5-24B-A2B",
+      "benchmark": "ToolSandbox",
+      "skor": 80.71,
+      "birim": "score",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "ToolSandbox 80.71"
+    },
+    {
+      "model": "LFM2.5-24B-A2B",
+      "benchmark": "LiveClaw",
+      "skor": 48.09,
+      "birim": "score",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "LiveClaw 48.09"
+    },
+    {
+      "model": "LFM2.5-24B-A2B",
+      "benchmark": "PinchBench",
+      "skor": 83.18,
+      "birim": "score",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "PinchBench 83.18"
+    },
+    {
+      "model": "LFM2.5-24B-A2B",
+      "benchmark": "τ³-Bench Banking",
+      "skor": 8.04,
+      "birim": "score",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "τ³-Bench Banking 8.04"
+    },
+    {
+      "model": "LFM2.5-24B-A2B",
+      "benchmark": "WebArena Verified",
+      "skor": 26.75,
+      "birim": "score",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "WebArena Verified 26.75"
+    },
+    {
+      "model": "LFM2.5-24B-A2B",
+      "benchmark": "GPQA Diamond",
+      "skor": 74.42,
+      "birim": "score",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "GPQA Diamond 74.42"
+    },
+    {
+      "model": "LFM2.5-24B-A2B",
+      "benchmark": "AA-Omniscience",
+      "skor": -24.9,
+      "birim": "score",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "AA-Omniscience -24.90"
+    },
+    {
+      "model": "LFM2.5-24B-A2B",
+      "benchmark": "HLE",
+      "skor": 7.4,
+      "birim": "score",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "HLE 7.40"
+    },
+    {
+      "model": "LFM2.5-24B-A2B",
+      "benchmark": "IFEval",
+      "skor": 96.75,
+      "birim": "score",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "IFEval 96.75"
+    },
+    {
+      "model": "LFM2.5-24B-A2B",
+      "benchmark": "IFBench",
+      "skor": 74.69,
+      "birim": "score",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "IFBench 74.69"
+    },
+    {
+      "model": "LFM2.5-24B-A2B",
+      "benchmark": "Multi-IF",
+      "skor": 84.38,
+      "birim": "score",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Multi-IF 84.38"
+    },
+    {
+      "model": "LFM2.5-24B-A2B",
+      "benchmark": "MATH-500",
+      "skor": 96.04,
+      "birim": "score",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "MATH-500 96.04"
+    },
+    {
+      "model": "LFM2.5-24B-A2B",
+      "benchmark": "SWE-Bench Verified (OpenCode)",
+      "skor": 51,
+      "birim": "score",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "SWE-Bench Verified (OpenCode) 51.00"
+    },
+    {
+      "model": "LFM2.5-24B-A2B",
+      "benchmark": "SciCode",
+      "skor": 32.71,
+      "birim": "score",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "SciCode 32.71"
+    }
+  ],
+  "gorsel_url": "https://cdn-uploads.huggingface.co/production/uploads/644249b08443bce4c9890a0f/YxGx9U6yV6_mumklCyMsE.png",
+  "url": "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-10-13T17:05:48.000Z",
+  "slug": "run-fast-private-agents-on-device-with-lfm2-5-24b-a2b"
+}

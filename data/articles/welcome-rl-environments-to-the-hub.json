@@ -1,0 +1,30 @@
+{
+  "baslik_tr": "Hugging Face Hub’da Reinforcement Learning Ortamları İçin Yeni Filtre ve Entegrasyonlar",
+  "ozet_tr": "Hugging Face, Hub üzerine Reinforcement Learning (RL) ortamlarını keşfetmek ve kullanmak için özel bir \"rl-environment\" filtresi ekledi. Ortamlar artık veri seti repoları olarak listeleniyor ve Harbor, Verifiers, OpenEnv ve NeMo Gym gibi popüler çerçevelerle tek bir noktadan erişilebiliyor.",
+  "detayli_icerik_tr": "Reinforcement Learning ortamları, bir ajentin görev alıp eylemlerine göre gözlem ve ödül almasını sağlayan temel yapıtaşlarıdır. Geleneksel olarak her araştırma makalesi ya da çerçeve kendi ortam kayıt sistemini kullandığından, aynı ortamı farklı framework'lerde çalıştırmak için elle taşıma ve uyarlama gerekmekteydi. Hugging Face bu siloları ortadan kaldırarak, ortamları Hub üzerindeki veri seti repoları şeklinde sunuyor ve \"rl-environment\" etiketiyle filtrelenebilir hâle getiriyor.\n\nYeni sistemde bir ortam, veri seti deposu olarak kaydedilir; görev tanımları (tasksets) ve isteğe bağlı runtime/verifier dosyaları aynı repoda bulunabilir. Kullanıcılar, ortamın sayfasındaki \"Use this dataset\" butonundan ilgili çerçeveye özgü komut satırını alıp, Harbor, Verifiers, OpenEnv ya da NeMo Gym üzerinden doğrudan çalıştırabiliyor. Örneğin Harbor ile bir ortamın referans çözümünü çalıştırmak, Verifiers ile model tabanlı değerlendirme yapmak ya da OpenEnv ile bir ajanın izini ve ödülünü incelemek mümkün.\n\nŞu ana kadar Hub’da Harbor, Verifiers, OpenEnv ve NeMo Gym çerçevelerine ait ortamlar etiketlenmiş olarak bulunuyor; her bir ortam birden fazla çerçeve etiketi taşıyabiliyor, bu da aynı veri setinin farklı araçlarla kullanılabilmesini sağlıyor. Kullanıcılar kendi ortamlarını oluşturup, YAML başlığına \"rl-environment\" ve desteklenen çerçeve etiketlerini ekleyerek bu ekosisteme katkıda bulunabilir. Hugging Face Jobs ve Sandboxes da bu ortamların bulut üzerinde çalıştırılmasını kolaylaştırıyor.\n\nGelecek planları arasında, bir repodaki birden fazla görev seti için çerçeve‑özel komut snippet'lerinin otomatik üretilmesi ve daha katı dosya yapısına sahip çerçeveler için yapısal algılamanın eklenmesi yer alıyor. Otomatik etiketleme ve özel görev UI'ları da roadmap'te bulunuyor, bu da RL ortamlarının keşfi ve paylaşımını daha da ölçeklendirecek.",
+  "onemli_maddeler": [
+    "Hub’da \"rl-environment\" etiketiyle RL ortamları tek bir filtre altında toplandı.",
+    "Harbor, Verifiers, OpenEnv ve NeMo Gym gibi dört ana çerçeve destekleniyor ve aynı ortam birden çok çerçevede kullanılabiliyor.",
+    "Ortamları veri seti repoları olarak barındırma, sürümleme ve paylaşma sürecini basitleştirerek manuel portlama ihtiyacını ortadan kaldırıyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "RL ortamlarının tek bir platformda toplanması, araştırmacıların ve geliştiricilerin iş akışını hızlandırarak ekosistemin büyümesini destekleyecek kritik bir altyapı güncellemesidir.",
+  "etiketler": [
+    "reinforcement learning",
+    "datasets",
+    "hub",
+    "framework integration",
+    "open-source"
+  ],
+  "anilan_modeller": [],
+  "yorum_tr": "Bu güncelleme, RL araştırmalarının ve ajan tabanlı uygulamaların daha hızlı prototipleme ve karşılaştırma yapmasını sağlayarak geliştiricilerin verimliliğini artıracak. Ortamların merkezi bir katalogda bulunması, topluluk katkılarını ve standartlaşmayı da teşvik edecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://huggingface.co/blog/assets/datasets-filters/thumbnail.png",
+  "url": "https://huggingface.co/blog/rl-environments",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-09-28T00:00:00.000Z",
+  "slug": "welcome-rl-environments-to-the-hub"
+}

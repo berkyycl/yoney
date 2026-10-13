@@ -1,0 +1,53 @@
+{
+  "baslik_tr": "Holo4: Genel Kullanım Bilgisayar Ajanları İçin Yeni Model Serisi",
+  "ozet_tr": "Hcompany, 27 milyar parametreli yoğun Holo4-27B ve 35 milyar parametreli A3B MoE tabanlı Holo4-35B-A3B modellerini duyurdu. Bu modeller, GUI, kod, MCP ve API gibi tüm arayüzleri tek bir çatı altında birleştirerek gerçek iş akışlarında düşük maliyetle yüksek performans sunmayı hedefliyor. OSWorld 2.0 gibi akademik benchmarklarda kapalı modellerin gerisinde kalsa da, çok daha az parametre ve maliyetle rekabetçi sonuçlar elde ediyor.",
+  "detayli_icerik_tr": "Hcompany, Holo4 adlı yeni agentik model serisini tanıttı. Seride iki farklı boyutta model bulunuyor: 27B yoğun (dense) versiyon ve 35B-A3B Mixture of Experts (MoE) versiyon. Her iki model de H Models API üzerinden erişilebilir ve aynı zamanda Holotron4 Nano adlı daha küçük bir versiyon da sunuluyor. Holo4, geleneksel agentik modellerin yalnızca tek bir arayüzle sınırlı kalmasının aksine, ekran üzerindeki tıklama ve klavye girişlerinden kod çalıştırmaya, MCP ve API çağrılarına kadar tüm etkileşim kanallarını aynı anda kullanabiliyor.\n\nModel, geniş bir ortam ve görev yelpazesi üzerinde süpervizyonlu öğrenme ve pekiştirmeli öğrenme (RL) teknikleriyle eğitildi. Eğitim sürecinde, şirketin \"Agentic Task Factory\" adlı iç platformu tarafından oluşturulan yaklaşık 10.000 görev ve ortam kullanıldı; bu görevler web uygulamaları, MCP sunucuları ve masaüstü ortamlarını kapsıyor ve hatta GUI ile MCP'nin aynı anda sunulduğu hibrit ortamları da içeriyor. Eğitim sırasında modelin hafıza yeteneği iyileştirildi ve masaüstü makinesinde çalışan bir kabuk (shell) entegrasyonu sağlandı.\n\nPerformans açısından Holo4, OSWorld 2.0 benchmark'inde Holo4-27B %61.7, Holo4-35B-A3B %30.9 başarı oranı elde etti. En güçlü kapalı modellerden Opus 5.5 %81.8 skor elde ederken, Holo4 daha düşük parametre sayısı ve çok daha düşük işlem maliyetiyle rekabetçi bir konumda bulunuyor. Şirket, bu benchmark sonuçlarının her adımını içeren trajektori dosyalarını halka açık bir şekilde paylaşıyor, böylece kullanıcılar ve araştırmacılar modelin karar süreçlerini yeniden oynatabiliyor.\n\nHolo4'ün bir diğer yeniliği, aynı modeli farklı platformlarda (masaüstü, web, Android, kod sandbox'ları ve iş API'leri) aynı şekilde çalıştırabilmesi. Kullanıcıların platforma göre farklı bir model seçmesine gerek kalmıyor. Ayrıca, Holotron4 Nano, Nemotron 3 Nano Omni tabanlı bir modelin aynı tarifle agentik yetenekler kazanmasıyla ortaya çıktı ve GUI iş akışları ile API/ kod sandbox'larında belirgin yüzde puanlık iyileşmeler sağladı. Model ağırlıkları BF16, FP8, NVFP4 ve 4‑bit GGUF formatlarında Hugging Face'te yayınlandı ve önümüzdeki günlerde DSpark drafter checkpoint'leriyle hızlandırılmış inference sunulacak.",
+  "onemli_maddeler": [
+    "Holo4 iki boyutta (27B dense ve 35B-A3B MoE) sunularak farklı ölçeklerde yüksek performans sağlıyor.",
+    "Model, GUI, kod, MCP ve API gibi tüm arayüzleri tek bir çatı altında birleştirerek iş akışlarını tek modelle otomatikleştiriyor.",
+    "OSWorld 2.0 benchmark'inde %61.7 ve %30.9 skorlarıyla kapalı modellerin gerisinde kalsa da, çok daha düşük parametre ve maliyetle rekabetçi bir konumda."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Holo4, farklı arayüzleri tek bir modelle birleştirerek iş dünyasında maliyet etkin otomasyon sağlayan ilk geniş çaplı agentik model serisi olduğu için sektörde büyük bir etki yaratıyor.",
+  "etiketler": [
+    "agentic models",
+    "computer-use agents",
+    "benchmark",
+    "Holo4",
+    "AI automation"
+  ],
+  "anilan_modeller": [
+    "Holo4-27B",
+    "Holo4-35B-A3B",
+    "Holotron4 Nano"
+  ],
+  "yorum_tr": "Holo4, çoklu arayüz desteğiyle geliştiricilerin tek bir model üzerinden çeşitli iş akışlarını otomatize etmesini mümkün kılıyor; bu da entegrasyon süresini kısaltıp işletme maliyetlerini düşürerek AI‑tabanlı otomasyonun benimsenmesini hızlandıracak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Holo4-27B",
+      "benchmark": "OSWorld 2.0",
+      "skor": 61.7,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "single run",
+      "kaynak_metinden_alinti": "Holo4 27B scores 61.7% against 81.8% for Opus 5.5"
+    },
+    {
+      "model": "Holo4-35B-A3B",
+      "benchmark": "OSWorld 2.0",
+      "skor": 30.9,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "single run",
+      "kaynak_metinden_alinti": "Holo4 35B-A3B reaches 30.9%"
+    }
+  ],
+  "gorsel_url": "https://cdn-uploads.huggingface.co/production/uploads/69fc7e49052f11ab9931b672/yzjxvlmlZKtjASwAYu6bN.jpeg",
+  "url": "https://huggingface.co/blog/Hcompany/holo4",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-09-28T09:44:05.000Z",
+  "slug": "holo4-powering-generalist-computer-use-agents"
+}

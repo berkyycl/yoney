@@ -1,0 +1,44 @@
+{
+  "baslik_tr": "AutoSynthData: Kurumsal Ajanlar İçin Sentetik Eğitim Verisi Üretimi",
+  "ozet_tr": "ServiceNow CoreAI ekibi, kurumsal ortamlarda çalışan yapay zeka ajanlarının eksik yönlerini kapatmak için AutoSynthData adlı bir sentetik veri üretim platformu geliştirdi. Sistem, hedef modelin hatalarından öğrenerek yeni görevler oluşturur, bu görevleri güçlü bir öğretmen modelinin başarılı örnekleriyle doğrular ve sürekli bir eğitim döngüsü oluşturur.",
+  "detayli_icerik_tr": "Kurumsal müşterilerin ihtiyaç duyduğu ajanlar, şirket içi sistemler, politikalar ve veri durumlarıyla şekillenen özgün iş akışlarına uyum sağlamak zorundadır. Genel amaçlı bir model bu ortamda belirli bir iş akışını hatalı işleyebilir, araçları yanlış kullanabilir ya da kısıtlamaları ihlal edebilir. ServiceNow CoreAI, bu eksiklikleri sistematik bir şekilde eğitim verisine dönüştürmek için AutoSynthData'yı tasarladı. Platform, hedef modelin başarısız olduğu görevleri tanımlamak için bir dizi tanılayıcı görev çalıştırır, ardından daha yetkin bir öğretmen modelinin bu görevlerdeki başarılı davranışlarını analiz eder ve yeni, benzer ancak farklı senaryolar üreterek bir müfredat oluşturur.\n\nGörev tanımı üç bileşenden oluşur: sistem spesifikasyonu, kullanıcı istemi ve doğrulayıcı. Sistem spesifikasyonu, ajan için geçerli kuralları, araçları ve ortam durumunu tanımlar; kullanıcı istemi gerçekçi bir iş talebini yansıtır; doğrulayıcı ise çözümün geçerliliğini tutarlı, sağlam ve eksiksiz bir şekilde kontrol eder. AutoSynthData, bu bileşenleri otomatik olarak üretirken, görevlerin uygulanabilir, gerçekçi ve hâlâ model için zorlayıcı olmasına özen gösterir. Üretilen her görev, ortamda çalıştırılır, öğretmen modelinin başarılı bir yol haritası sağlanır ve iki aşamalı bir doğrulama sürecinden geçer: pozitif doğrulama (başarılı çözümün gerçekten görevi tamamlayıp tamamlamadığını kontrol) ve negatif doğrulama (yanlış çözümlerin reddedildiğini teyit).\n\nSistem, iki ana üretim aşamasına sahiptir: \"target\" aşaması, temel örnekleri oluşturur ve bunları sıkı kalite kontrollerinden geçirir; \"multiply\" aşaması ise bu temel örneklerin çeşitli varyasyonlarını üretir, her birinin bağımsız bir doğrulama sürecinden geçmesini sağlar. Bu sayede veri seti, aynı yetenek etrafında çeşitlilik sunarken, jeneratif sapma riskini minimize eder. Ayrıca, toplu düzeydeki meta‑inceleme mekanizması, aşırı temsil edilen görev ailelerini tespit eder, eksik yetenek boyutlarını belirler ve sonraki üretim turu için yönlendirme sağlar.\n\nAutoSynthData'nin etkinliği, EnterpriseOps Gym ortamında yapılan deneylerle kanıtlandı. Hybrid domain testinde, hedef model olarak Gemma-4-26B-A4B-it, öğretmen olarak Qwen3.8-27B kullanıldı; 2.000 sentetik örnek 18 saat içinde üretildi ve modelin ortalama Pass@1 skoru %7.2 puan (yüzde 35 relatif) artarak %68.55 doğrulama başarısına ulaştı. ITSM domaininde ise aynı hedef model, DeepSeek-V4.1-Flash öğretmeniyle 1.994 örnek 66 saat içinde üretildi; Pass@1 skoru %18.77'den %27.18'e yükseldi. Bu sonuçlar, sentetik veri tabanlı ince ayarların kurumsal iş akışlarında model performansını anlamlı ölçüde artırabileceğini gösteriyor.",
+  "onemli_maddeler": [
+    "AutoSynthData, modelin başarısız olduğu görevleri otomatik olarak tespit edip yeni eğitim örnekleri üretir.",
+    "Üretilen görevler, uygulanabilirlik, gerçekçilik ve zorluk kriterlerine göre filtrelenir ve iki aşamalı doğrulama sürecinden geçer.",
+    "EnterpriseOps Gym deneylerinde, Hybrid ortamında Pass@1 %7.2 puan, ITSM ortamında %8.41 puan artış sağlandı."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Kurumsal AI ajanlarının ortam‑spesifik eksiklerini kapatmak, büyük ölçekli sentetik veri üretimi ve otomatik müfredat yönetimi sağlayan bir araç olması, şirket içi otomasyon ve verimlilik projelerinde kritik bir adım oluşturuyor.",
+  "etiketler": [
+    "sentetik veri",
+    "kurumsal AI",
+    "ince ayar",
+    "benchmark",
+    "otomasyon"
+  ],
+  "anilan_modeller": [
+    "Gemma-4-26B-A4B-it",
+    "Qwen3.8-27B",
+    "DeepSeek-V4.1-Flash"
+  ],
+  "yorum_tr": "AutoSynthData, model hatalarından öğrenerek hedef odaklı sentetik veri üretimini otomatikleştiriyor; bu, kurumsal ortamlarda ince ayar maliyetlerini düşürürken performans artışı sağlıyor. Araç, özellikle veri sınırlı ve yüksek güvenlikli iş akışlarında geliştiricilere değerli bir yol haritası sunuyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Gemma-4-26B-A4B-it",
+      "benchmark": "EnterpriseOps Gym Hybrid",
+      "skor": 7.2,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Pass@1",
+      "kaynak_metinden_alinti": "The synthetic SFT checkpoint improves mean Pass@1 by 7.2 percentage points, a 35% relative improvement, and raises verifier success from 63.01% to 68.55%."
+    }
+  ],
+  "gorsel_url": "https://cdn-uploads.huggingface.co/production/uploads/68642da9885da181fde1ad70/8kSzlHLOdu5hchCtPnK8D.png",
+  "url": "https://huggingface.co/blog/ServiceNow-AI/autosynthdata",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-10-02T04:01:31.000Z",
+  "slug": "autosynthdata-generating-training-data-for-enterprise-agents"
+}

@@ -1,0 +1,79 @@
+{
+  "baslik_tr": "Yoğun Modelleri MoE'ye Dönüştürme Güncellemesi",
+  "ozet_tr": "Bayliner1980, Qwen2.5 serisinin MoE (Mixture‑of‑Experts) versiyonlarını GGUF formatında yayınladı ve performans testlerini paylaştı. Yeni Qwen2.5-1.5B-MoE-A0.9B modeli, aynı donanımda GPU’da %32, CPU’da %41 daha hızlı çalışırken, perplexity ve bazı zero‑shot görevlerde kalite açısından geride kaldı.",
+  "detayli_icerik_tr": "Reddit topluluğu LocalLLaMA'da paylaşılan güncellemede, geliştirici Bayliner1980, önceki gönderisinin ardından yoğun (dense) modelleri MoE mimarisine dönüştürme sürecini ilerlettiğini ve iki yeni modelin GGUF sürümlerini yayınladığını duyurdu. Yeni modeller Qwen2.5-0.5B-MoE-A0.3B ve Qwen2.5-1.5B-MoE-A0.9B olarak adlandırılıyor ve her ikisi de Q4_K_M kuantizasyon seviyesinde sunuluyor.\n\nYapılan benchmark sonuçları, MoE versiyonunun metin üretim hızında belirgin bir avantaj sağladığını gösteriyor. RTX 4060 8 GB ve Ryzen 5 7500F donanımında GPU üzerinden token/s hızı 191'den 253'e (%32 artış), CPU üzerinden ise 54.9'dan 77.5'e (%41 artış) yükselmiş. Ancak kalite ölçütlerinde, WikiText‑2 ve C4 veri setlerinde perplexity değerleri sırasıyla %41 ve %45 artarak MoE modelinin daha düşük performans sergilediği ortaya kondu.\n\nZero‑shot görevlerde de benzer bir düşüş gözlemlendi; ortalama acc_norm %0.565'ten %0.462'ye geriledi. Özellikle ARC benchmark'ı, %45'lik bir performans kaybı ile en çok etkilenen görev oldu (ARC‑Easy %0.723'ten %0.572'ye, ARC‑Challenge %0.452'den %0.311'e düştü). Bu sonuçlar, MoE mimarisinin özellikle büyük modellerde MLP katmanının hesap yükünü azaltarak hız kazandırabileceğini, ancak aynı boyuttaki küçük modellerde kaliteyi korumanın zor olduğunu gösteriyor.\n\nGeliştirici, bu sürümün bir \"proof of concept\" olduğunu ve daha büyük modellerde MoE yaklaşımının daha fazla fayda sağlayabileceğini vurguladı. Ayrıca, MoE modellerinin GGUF dosyalarının yoğun modellere göre daha büyük olduğunu (1.1 GB vs 0.9 GB) ve bunun llama.cpp'nin MoE mimarisi için ayrı bir çıkış başlığı gerektirmesinden kaynaklandığını belirtti. İlgi duyanlar, geliştiriciyi Ko‑fi üzerinden destekleyebilir.",
+  "onemli_maddeler": [
+    "Qwen2.5-1.5B-MoE-A0.9B modeli GGUF formatında yayınlandı ve aynı donanımda GPU’da %32, CPU’da %41 daha hızlı çalışıyor.",
+    "MoE versiyonunun WikiText‑2 ve C4 perplexity değerleri %40‑45 daha yüksek, ARC benchmark'ı ise %45 daha düşük performans gösterdi.",
+    "MoE modellerinin dosya boyutu yoğun modellere göre daha büyük (1.1 GB vs 0.9 GB) çünkü llama.cpp'nin MoE mimarisi ayrı bir çıkış başlığı gerektiriyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 3,
+  "onem_gerekce": "Topluluk odaklı bir güncelleme ve yeni MoE model varyantı sunulmuş olsa da, etkisi sınırlı ve daha çok teknik kanıt niteliğinde olduğu için orta düzeyde bir önem taşımaktadır.",
+  "etiketler": [
+    "Mixture-of-Experts",
+    "Qwen2.5",
+    "GGUF",
+    "benchmark",
+    "model conversion"
+  ],
+  "anilan_modeller": [
+    "Qwen2.5-0.5B-MoE-A0.3B",
+    "Qwen2.5-1.5B-MoE-A0.9B"
+  ],
+  "yorum_tr": "MoE mimarisi, özellikle büyük ölçekli modellerde hız avantajı sağlarken, küçük modellerde kalite kaybına yol açabiliyor; bu da geliştiricilerin model boyutunu ve görev gereksinimlerini dikkatle dengelemeleri gerektiğini gösteriyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen2.5-1.5B-MoE-A0.9B",
+      "benchmark": "WikiText-2 perplexity (1024-token windows)",
+      "skor": 14.63,
+      "birim": "perplexity",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "1024-token windows",
+      "kaynak_metinden_alinti": "WikiText-2 test perplexity (1024-token windows) 10.41 14.63 (+41%)"
+    },
+    {
+      "model": "Qwen2.5-1.5B-MoE-A0.9B",
+      "benchmark": "C4 validation perplexity (64×1024 tokens)",
+      "skor": 22.88,
+      "birim": "perplexity",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "64 × 1024 tokens",
+      "kaynak_metinden_alinti": "C4 validation perplexity (64 × 1024 tokens) 15.76 22.88 (+45%)"
+    },
+    {
+      "model": "Qwen2.5-1.5B-MoE-A0.9B",
+      "benchmark": "HellaSwag accuracy",
+      "skor": 0.51,
+      "birim": "accuracy",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "zero-shot",
+      "kaynak_metinden_alinti": "HellaSwag 0.592 0.510"
+    },
+    {
+      "model": "Qwen2.5-1.5B-MoE-A0.9B",
+      "benchmark": "ARC-Easy accuracy",
+      "skor": 0.572,
+      "birim": "accuracy",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "zero-shot",
+      "kaynak_metinden_alinti": "ARC-Easy 0.723 0.572"
+    },
+    {
+      "model": "Qwen2.5-1.5B-MoE-A0.9B",
+      "benchmark": "GPU text generation throughput",
+      "skor": 253,
+      "birim": "tokens/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "RTX 4060 8 GB / Ryzen 5 7500F, Q4_K_M",
+      "kaynak_metinden_alinti": "GPU, text generation tokens/s 191 253 +32%"
+    }
+  ],
+  "gorsel_url": "https://cdn.prod.website-files.com/642059ce915522f1ae97820c/69cd3458e35ebc8e19d43792_20.webp",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x4uint/update_converting_dense_models_into/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-13T11:50:03.000Z",
+  "slug": "update-converting-dense-models-into-mixture-of-experts"
+}

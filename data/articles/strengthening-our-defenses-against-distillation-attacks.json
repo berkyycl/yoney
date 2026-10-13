@@ -1,0 +1,57 @@
+{
+  "baslik_tr": "Anthropic, Claude modellerinde distilasyon saldırılarına karşı savunmalarını güçlendirdi",
+  "ozet_tr": "Anthropic, son aylarda Claude serisine yönelik distilasyon saldırılarını %90‑99 oranında azaltan yeni savunma mekanizmaları geliştirdi. Bu önlemler, modelin düşünce süreçlerini gizleyerek veri sızdırma riskini büyük ölçüde düşürüyor ve aynı zamanda bazı entegrasyon güncellemeleri ve düşük bir yanlış pozitif oranı gibi maliyetler getiriyor.",
+  "detayli_icerik_tr": "Distilasyon saldırıları, bir modelin yeteneklerini izinsiz olarak kopyalayıp daha küçük bir modele aktararak geliştirme süresini ve maliyetini düşürmeyi amaçlayan endüstriyel ölçekli kampanyalardır. Anthropic, bu saldırıların özellikle biyoloji ve siber güvenlik gibi kritik alanlarda ciddi zararlar doğurabileceği ve ulusal güvenlik riskleri yarattığı uyarısında bulunuyor. Şirket, Zhipu'nun GLM‑5.3 gibi modelleri distilasyon yoluyla siber yeteneklerini artırdığını ve bu modellerin savunmasız olduğunu örnek veriyor.\n\nİlk savunma adımı, Claude'un yanıtlarını özetleyerek düşünce sürecini gizlemekti; bu sayede SWE‑bench Verified testinde tam transkriptle eğitilen bir model %80.4, özetlenmiş transkriptle eğitilen bir model ise %71.8 başarı elde etti. Ancak saldırganlar, modelden tam mantık akışını talep eden aktif teknikler geliştirdi ve büyük sahte hesap ağlarıyla bu önlemleri aşmaya çalıştı.\n\nYeni savunma stratejileri üç temel katmanda uygulanıyor: (1) \"preserved thinking\" özelliğiyle yeni API hesaplarının önceki bağlamı düzenlemesi engellendi; (2) iki aşamalı sınıflandırıcı sistemi, distilasyon girişimlerini tespit edip %0.1'in altında bir yanlış pozitif oranıyla engelliyor; (3) tekrarlayan denemeler yapan hesaplara sıkı kullanım limitleri ve bloklanan istekler için ücretlendirme getirildi. Bu önlemler, Claude Sonnet 5.5, Claude Opus 5/5.5 ve Claude Fable 5/5.1 gibi en yetkin modellerde uygulanıyor.\n\nUygulama sonuçları, distilasyon amaçlı çıkarılan mantık token sayısının önceki seviyelerden 10‑100 kat daha düşük olduğunu gösteriyor; bazı günlerde ölçülemez kadar az token elde edildi. Ancak Anthropic, bu savunmaların tamamen kusursuz olmadığını, %0.1'lik bir yanlış pozitif oranının hâlâ var olduğunu ve bazı geliştiricilerin entegrasyonlarını güncellemek zorunda kaldığını kabul ediyor. Şirket, bu çabaların ulusal güvenlik ve model güvenliği açısından kritik olduğunu vurguluyor ve sektördeki diğer geliştiricilerin de benzer önlemler alması gerektiğini belirtiyor.",
+  "onemli_maddeler": [
+    "Distilasyon saldırılarında Claude'un düşünce süreçlerine erişim %90‑99 oranında azaltıldı.",
+    "Yeni \"preserved thinking\" özelliği, sahte hesap ağlarının bağlam manipülasyonunu engelliyor.",
+    "İki aşamalı sınıflandırıcı sistemi, distilasyon girişimlerini %0.1'in altında bir yanlış pozitif oranıyla engelliyor.",
+    "Uygulama sonrası mantık token çıkarımı 10‑100 kat azaldı; bazı günlerde ölçülemez seviyeye düştü."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Yeni anti‑distilasyon savunmaları, Claude’un en yetkin modellerinde veri sızdırma riskini %90‑99 oranında azaltarak güvenlik ve ulusal güvenlik açısından kritik bir iyileştirme sağlıyor.",
+  "etiketler": [
+    "distilasyon",
+    "AI güvenliği",
+    "Claude",
+    "anti‑distilasyon",
+    "siber güvenlik"
+  ],
+  "anilan_modeller": [
+    "Claude Fable 5.1",
+    "Claude Opus 5.5",
+    "Claude Sonnet 5.5",
+    "Claude Opus 5",
+    "Claude Fable 5",
+    "Claude Opus 4.8"
+  ],
+  "yorum_tr": "Bu güncellemeler, frontier model sağlayıcıları için distilasyon riskini azaltmada yeni bir standart oluşturuyor; geliştiriciler daha sıkı korumalarla çalışırken, bazı entegrasyon değişiklikleri ve düşük bir ücretlendirme maliyetiyle karşılaşabilirler.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Claude Opus 4.8",
+      "benchmark": "SWE-bench Verified",
+      "skor": 71.8,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "özetlenmiş mantık transkriptleriyle eğitim",
+      "kaynak_metinden_alinti": "Summarizing Claude's reasoning makes its transcripts less useful for distillation. A model trained on transcripts with summarized reasoning scored 71.8% on SWE-bench Verified, compared to 80.4% for a model trained on the full reasoning."
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "benchmark": "SWE-bench Verified",
+      "skor": 80.4,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "tam mantık transkriptleriyle eğitim",
+      "kaynak_metinden_alinti": "When training on the full transcripts, the distilled model achieved 80.4%; with only the summarized transcripts, it achieved 71.8%."
+    }
+  ],
+  "gorsel_url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/a5934d1ae8428b2a97fae1963a5f427594fc7202-1200x630.jpg",
+  "url": "https://www.anthropic.com/research/distillation-defenses",
+  "source": "Anthropic Research",
+  "sourceTier": "resmi",
+  "date": "2026-10-12T00:00:00.000Z",
+  "slug": "strengthening-our-defenses-against-distillation-attacks"
+}

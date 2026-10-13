@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "Anthropic, Biyoloji Çalışmalarına Özel Life Sciences Verification Programını Başlattı",
+  "ozet_tr": "Anthropic, biyoloji ve ilaç keşfi gibi alanlarda çalışan profesyonellere Mythos, Opus ve Sonnet modellerine daha geniş izinler sunan Life Sciences Verification Programı (LSVP)'ni beta aşamasında duyurdu. Program, güvenilir erişim sağlamak için iki ayrı hibe türü – Standard Use ve High‑risk Use – sunuyor ve kurumların etik, güvenlik ve araştırma geçmişi üzerinden doğrulanmasını gerektiriyor.",
+  "detayli_icerik_tr": "Anthropic, 17 Eylül 2026 tarihinde Life Sciences Verification Programı (LSVP) adlı yeni bir erişim çerçevesi tanıttı. Bu program, biyoloji, ilaç keşfi, klinik geliştirme ve üretim gibi alanlarda hâlihazırda genel kullanıma sunulan Fable modellerinde engellenen görevleri, Mythos 5.1, Opus 5 ve Sonnet 5 gibi frontier modelleriyle gerçekleştirebilmek için tasarlandı. İlk aşamada beta sürümüyle ekip ve kurumlara açılan LSVP, ilerleyen dönemlerde bireysel Pro ve Max planlarına da genişletilecek.\n\nProgram, başvuranların araştırma kimlikleri, güvenlik standartları ve etik denetim süreçleri üzerinden doğrulanmasını zorunlu kılıyor. Doğrulama sonrası kurumlar iki tip hibe başvurusu yapabiliyor: Standard Use, çoğu biyoloji araştırması ve geliştirme iş akışını kapsayan daha esnek sınıflandırıcılarla desteklenirken, High‑risk Use, potansiyel kötüye kullanım riski yüksek projeler için tüm sınırlamaları kaldırıyor ve sadece tek bir proje için geçerli oluyor. High‑risk hibeler şu anda Opus 5 ve Sonnet 5 modelleri için sunuluyor; Mythos için ise ABD hükümetiyle iş birliği içinde sınırlı bir grup kuruluşla ilerleniyor.\n\nGüvenlik açısından LSVP, gerçek zamanlı engelleme yerine offline izleme modeline geçiş yapıyor. Bu sayede model erişimi, belirlenen kullanım senaryolarına göre izleniyor ve şüpheli davranışlar kurum yöneticilerine raporlanıyor. İzleme sürecinde toplanan veriler 30 gün saklanıyor, ancak model eğitimi için kullanılmıyor ve Anthropic'in yaşam bilimleri araştırma ekipleri tarafından erişilemez durumda tutuluyor. Program, siber sınıflandırıcılar ve diğer koruyucu önlemlerle birlikte, ortak sorumluluk çerçevesinde kurumların kendi güvenli kullanım tanımlarını yapmasına olanak tanıyor.\n\nLSVP, şu anda API, Claude for Enterprise ve Team planları üzerinden erişilebilir; bireysel planlar ve üçüncü parti platformlar henüz desteklenmiyor. İlk hafta içinde yüzlerce kuruluşun programa kaydolması bekleniyor ve Anthropic, programı genişleterek yaşam bilimleri topluluğunun büyük bir kısmına hizmet vermeyi hedefliyor.",
+  "onemli_maddeler": [
+    "LSVP, Mythos 5.1, Opus 5 ve Sonnet 5 modellerine biyoloji odaklı daha izinli erişim sağlıyor.",
+    "Standard Use ve High‑risk Use olmak üzere iki ayrı hibe türü sunularak farklı risk seviyeleri yönetiliyor.",
+    "Gerçek zamanlı engelleme yerine offline izleme ve 30 günlük veri saklama politikasıyla güvenlik artırılıyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Biyoteknoloji ve ilaç keşfi gibi kritik sektörlerde AI kullanımını genişletmesi, güvenlik ve etik denetim mekanizmalarıyla birlikte yeni bir model erişim çerçevesi sunması sektörde büyük yankı uyandıracak.",
+  "etiketler": [
+    "Yapay Zeka",
+    "Biyoteknoloji",
+    "Güvenlik",
+    "Anthropic",
+    "Model Erişimi"
+  ],
+  "anilan_modeller": [
+    "Mythos 5.1",
+    "Opus 5",
+    "Sonnet 5"
+  ],
+  "yorum_tr": "LSVP, yaşam bilimleri araştırmalarında AI'nın potansiyelini açığa çıkarmakla kalmayıp, aynı zamanda kötüye kullanım risklerini ortak sorumluluk çerçevesinde yöneterek sektöre güvenli bir yol haritası sunuyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://www.anthropic.com/api/opengraph-illustration?name=Object%20DoubleHelix&backgroundColor=cactus",
+  "url": "https://www.anthropic.com/news/life-sciences-verification-program",
+  "source": "Anthropic",
+  "sourceTier": "resmi",
+  "date": "2026-09-17T00:00:00.000Z",
+  "slug": "introducing-the-life-sciences-verification-program"
+}

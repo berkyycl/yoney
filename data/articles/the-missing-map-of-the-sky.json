@@ -1,0 +1,42 @@
+{
+  "baslik_tr": "Claude Science ile Tam UV Gökyüzü Haritası Oluşturuldu",
+  "ozet_tr": "Anthropic araştırmacısı Brice Ménard, Claude Science'ı kullanarak uzayın ultraviyole (UV) ışığında ilk eksiksiz haritasını üretti. Model, mevcut UV gözlemlerini diğer dalga boylarındaki verilerle birleştirerek gözlemlenmemiş bölgeleri %10 hata payı ile doldurdu ve 100 milyondan fazla yıldızın UV katkısını ekledi.",
+  "detayli_icerik_tr": "UV ışığı atmosferin ozon tabakası tarafından emildiği için uzay teleskoplarıyla elde edilen veriler sınırlı kalmıştır; NASA'nın GALEX misyonu gökyüzünün sadece iki üçte birini kapsar ve parlak yıldızların bulunduğu bölgeler atlanmıştır. Brice Ménard, bu eksikliği gidermek amacıyla Claude Science'ı yönlendirdi; model, kamuya açık UV veri setlerini (GALEX, Swift-UVOT, FIMS/SPEAR, TD‑1) toplayıp ortak bir ölçeğe getirdi, parlak yıldızların parlamasını temizledi ve farklı enstrümanların ölçümlerini aynı koordinat sistemine dönüştürdü.\n\nVeri boşluklarını doldurmak için Claude Science, makine öğrenmesi tabanlı \"inpainting\" tekniğini kullandı. Model, UV parlaklığının görünür, kızılötesi ve radyo dalga boylarıyla ilişkisini öğrenerek gözlemlenmemiş bir üçüncü gökyüzü bölgesi için tahminler yaptı. Bu tahminlerin doğruluğu, bilinen UV bölgelerinde %10'luk bir hata oranı ile ölçüldü; yani model gerçek ölçümlere neredeyse gözle görülür bir fark bırakmadan yaklaşabildi.\n\nTahmin sürecinin ardından, Avrupa Uzay Ajansı'nın Gaia uydusundan elde edilen görünür ışık verileriyle 100 milyondan fazla bireysel yıldızın UV ışınımı eklendi. Sonuç, galaksimizin toz bulutları, genç yıldızların çevresindeki ışıldayan bölgeler ve devasa süpernova kalıntıları gibi yapıları UV dalga boyunda gösteren eksiksiz bir harita oldu. Harita, eğitimde ve araştırmada kullanılabilecek yeni bir referans kaynağı olarak sunuluyor.\n\nMénard, Claude Science sayesinde uzun süredir ertelenen bu tür bir proje için zaman harcamasına gerek kalmadığını belirtti. Bu deney, yapay zekâ destekli veri entegrasyonu ve eksik veri doldurma (inpainting) tekniklerinin astronomi gibi veri yoğun bilim dallarında nasıl pratik fayda sağlayabileceğine dair bir örnek teşkil ediyor.",
+  "onemli_maddeler": [
+    "UV gökyüzü haritasının %66'sı gözlemlenen, %34'ü Claude Science tarafından %10 hata payı ile tahmin edildi.",
+    "Claude Science, farklı uzay teleskoplarından gelen verileri ortak bir ölçeğe getirerek otomatik kalibrasyon ve parlamayı giderme işlemlerini gerçekleştirdi.",
+    "Harita, 100 milyon yıldızın UV ışınımını ve galaksimizin toz, gaz ve süpernova kalıntılarını içeriyor, eğitim ve araştırma için yeni bir temel oluşturuyor."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "Tam UV gökyüzü haritası, uzun yıllardır eksik olan bir bilimsel kaynağı dolduruyor ve yapay zekâ destekli veri işleme yöntemlerinin astronomide uygulanabilirliğini gösteriyor; bu, hem eğitim hem de araştırma toplulukları için büyük bir adım.",
+  "etiketler": [
+    "UV astronomi",
+    "Claude Science",
+    "AI in science",
+    "Gökyüzü haritası",
+    "Anthropic"
+  ],
+  "anilan_modeller": [
+    "Claude Science"
+  ],
+  "yorum_tr": "Bu çalışma, yapay zekânın büyük ölçekli astronomik veri setlerini birleştirip eksik bölgeleri doldurmadaki potansiyelini gösteriyor; geliştiriciler benzer pipeline'ları diğer dalga boyları için de uyarlayabilir, kullanıcılar ise daha kapsamlı çok‑dalga boylu haritalara erişebilecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Claude Science",
+      "benchmark": "UV inpainting error",
+      "skor": 10,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "After several rounds of refinement, it was able to estimate the hidden data to within about 10% of the real UV measurements"
+    }
+  ],
+  "gorsel_url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/dde28f2eb899eade347dd07314a9c6b65bfbbb3c-1200x630.png",
+  "url": "https://www.anthropic.com/research/the-missing-map-of-the-sky",
+  "source": "Anthropic Research",
+  "sourceTier": "resmi",
+  "date": "2026-10-08T00:00:00.000Z",
+  "slug": "the-missing-map-of-the-sky"
+}

@@ -1,0 +1,45 @@
+{
+  "baslik_tr": "LiquidAI LFM2.5-24B-A2B: 24B parametreli, 2B aktif parametreli hızlı ve özel ajan modeli",
+  "ozet_tr": "LiquidAI, 24 milyar parametreli ancak sadece 2,45 milyar aktif parametreyle çalışan LFM2.5-24B-A2B modelini duyurdu. Model, MoE mimarisi sayesinde cihaz içinde özel ajanlar için düşük gecikmeli ve maliyet etkin bir akıl yürütme yeteneği sunuyor. LiveClaw benchmark'inde 48.09 puan alarak, 35B'lık Qwen3.6-35B-A3B'ye kıyasla üstün performans gösterdi.",
+  "detayli_icerik_tr": "LiquidAI, LFM2.5 ailesinin en büyük ve son üyesi olan LFM2.5-24B-A2B'yi tanıttı. Model, toplam 24 milyar parametreye sahipken, her token için yalnızca 2,45 milyar aktif parametre kullanıyor; bu sayede akıl yürütme süreci hem hızlı hem de enerji açısından verimli hale geliyor. LFM2.5-24B-A2B, 40 katmandan oluşuyor; bunların 30'u çift kapılı kısa konvolüsyon blokları ve 10'u GQA (Gated Query Attention) içeriyor. Her MoE bloğunda 64 uzman bulunuyor ve top‑4 yönlendirme mekanizmasıyla aktif uzmanlar seçiliyor.\n\nModel, 128 000 kelime hazinesi ve 131 072 token uzunluğunda bir bağlam penceresi sunarak, uzun metinlerde tutarlı akış sağlayabiliyor. İngilizce, Arapça, Çince, Fransızca, Almanca, İtalyanca, Japonca, Korece, Portekizce, İspanyolca, Vietnamca, Tayca, Endonezyaca, Hintçe, Rusça ve Lehçe dahil olmak üzere 15 dili destekliyor. Bu çokdilli yapı, küresel geliştiricilerin ve işletmelerin yerel pazarlara uyarlanmış çözümler üretmesini kolaylaştırıyor.\n\nPerformans açısından LFM2.5-24B-A2B, Qwen3.6-35B-A3B gibi yaklaşık %50 daha fazla toplam ve aktif parametreye sahip modellerle rekabet edebiliyor. LiveClaw benchmark'inde 48.09 puan alarak, Qwen3.6-35B-A3B'nin 38.19 puanını geride bıraktı. Ayrıca, Apple M5 Max çipinde 184 token/s ve tek bir NVIDIA B300 GPU'da 21 000 token/s çıkış hızıyla, benzer MoE tabanlı modellerden %1.7 daha hızlı çalışıyor. Bu hız, özellikle gerçek‑zamanlı araç‑kullanımı ve ajan‑odaklı görevlerde kritik bir avantaj sağlıyor.\n\nLFM2.5-24B-A2B, Hugging Face üzerinden GGUF formatında indirilebilir ve ücretsiz bir demo playground'u (playground.liquid.ai) aracılığıyla deneme imkanı sunuluyor. Model, gizlilik odaklı, cihaz içinde çalışan AI ajanları geliştirmek isteyen araştırmacılar ve şirketler için tasarlandı; düşük gecikme, yüksek verimlilik ve geniş dil desteği, on‑premise çözümlerin ölçeklenebilirliğini artırıyor.",
+  "onemli_maddeler": [
+    "24 B toplam parametre, ancak sadece 2,45 B aktif parametreyle MoE tabanlı verimli akıl yürütme.",
+    "LiveClaw benchmark'inde 48.09 puan alarak, 35 B parametreli Qwen3.6-35B-A3B'yi geride bıraktı.",
+    "Apple M5 Max'te 184 tok/s, NVIDIA B300'de 21 K tok/s çıkış hızıyla %1.7 daha hızlı inference.",
+    "131 072 token bağlam uzunluğu ve 15 dil desteğiyle uzun ve çokdilli metinlerde tutarlı performans.",
+    "GGUF formatında Hugging Face üzerinden ücretsiz erişim ve çevrimiçi demo."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Model, MoE mimarisiyle büyük parametre sayısını korurken aktif parametreleri azaltarak cihaz içi AI ajanları için maliyet ve gecikmeyi düşürüyor; aynı zamanda daha büyük modelleri geride bırakan benchmark performansıyla sektörde rekabeti yeniden şekillendirme potansiyeline sahip.",
+  "etiketler": [
+    "LFM2.5",
+    "LiquidAI",
+    "MoE",
+    "agentic AI",
+    "large language model"
+  ],
+  "anilan_modeller": [
+    "Qwen3.6-35B-A3B",
+    "LFM2.5-230M"
+  ],
+  "yorum_tr": "LFM2.5-24B-A2B, MoE tabanlı verimliliği kanıtlayarak güçlü akıl yürütme yeteneklerini cihaz içinde sunuyor; bu, gizlilik odaklı uygulamalar ve düşük gecikmeli ajan sistemleri için önemli bir adım.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "LFM2.5-24B-A2B",
+      "benchmark": "LiveClaw",
+      "skor": 48.09,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Best-in-class agent: Competitive with Qwen3.6-35B-A3B, a model with ~50% more total and active parameters, on agentic and tool-use tasks, scoring 48.09 on LiveClaw versus 38.19."
+    }
+  ],
+  "gorsel_url": "https://external-preview.redd.it/gzD3QRbVYy-qL_mBdyRbgWqaICmuAHCc3Yd1Og2Mfh8.png?width=640&crop=smart&auto=webp&s=ef2ea32cb681b163cd22695f2f62f812241f9ab9",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x52kco/liquidailfm2524ba2b/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-13T17:14:08.000Z",
+  "slug": "liquidai-lfm2-5-24b-a2b"
+}

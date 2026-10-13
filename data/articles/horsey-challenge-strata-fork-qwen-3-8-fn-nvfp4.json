@@ -1,0 +1,80 @@
+{
+  "baslik_tr": "Horsey Challenge – Strata Fork ve Qwen 3.8 FN NVFP4",
+  "ozet_tr": "Kullanıcı, sergqwer'in Strata NVFP4 çatallı sürümünü RTX 5090 üzerinde çalıştırarak Qwen3.8-Flash-Next modelini 87 adımda bir 3D at animasyonu üretmek için test etti. Toplam 33 dakika 45 saniyelik bir duvar süresi, %99 önbellek hit oranı ve ortalama 116 token/sn decode hızı elde edildi. Sonuç, tek bir tüketici sınıfı GPU ile büyük MoE modellerinin karmaşık görevleri yerine getirebileceğini gösteriyor.",
+  "detayli_icerik_tr": "Reddit topluluğu üyesi, Strata projesinin sergqwer tarafından çatallanan NVFP4 sürümünü (https://github.com/sergqwer/strata-nvfp4) kullanarak \"horsey challenge\" adlı 3D at animasyonu görevini denedi. Görev, Three.js ile düşük poligonlu bir at modeli oluşturup, bacak, gövde, baş ve kuyruğu hareket ettiren tek bir HTML dosyası üretmekti. Kullanılan model Qwen3.8-Flash-Next 125B-A6B hybrid MoE, NVFP4 formatına dönüştürülmüş ve 4.5‑bit uzman ağırlıkları, Q8_0 yoğun katman ve int8 KV önbellek gibi optimizasyonlarla çalıştırıldı.\n\nDeney, RTX 5090 32 GB GPU, Ryzen 7 9800X3D ve 192 GB DDR5‑5600 RAM içeren bir sistemde gerçekleştirildi. Model, 262 144 token'lık maksimum bağlamı ve 220 k token'lık özel kompaktasyon sınırıyla çalıştırıldı; bu testte kompaktasyona hiç ihtiyaç duyulmadı. Toplam 87 adımda 124 443 çıktı token'ı üretildi ve 96 334 yeni giriş token'ı ile 9 340 144 önbellek okuma token'ı (%99 hit oranı) gerçekleşti.\n\nPerformans ölçümleri, duvar süresinin 33 dakika 45 saniye, saf ajan çalışma süresinin 23 dakika 10 saniye olduğunu gösterdi. Decode aşamasında ortalama 116 token/sn (medyan) ve en yüksek 171 token/sn hızına ulaşıldı; TTFT (ilk token zamanlaması) medyanı 0,7 saniye, prefill hızı ise ortalama 3 332 token/sn idi. Toplam 107 araç çağrısı yapıldı ve bu çağrılar 14 dakika 10 saniye sürede tamamlandı. \n\nBu sonuçlar, tek bir yüksek performanslı tüketici GPU'sunun, büyük MoE modelleriyle karmaşık çok‑adımlı ve çok‑modal görevleri yönetebileceğini ve düşük gecikme, yüksek önbellek verimliliği gibi kritik metriklerde rekabetçi performans sergileyebileceğini ortaya koyuyor.",
+  "onemli_maddeler": [
+    "Qwen3.8 modeli NVFP4 formatında RTX 5090 32 GB GPU üzerinde tek başına çalıştırıldı.",
+    "Toplam 33 dakika 45 saniyede 87 adımda 124 443 çıktı token'ı üretildi.",
+    "Cache hit oranı %99, decode hızı medyan 116 token/sn, prefill hızı ortalama 3 332 token/sn.",
+    "Komptaksiyon sınırı (220 k token) hiç aşılmadı; sistem 262 144 token bağlamı sorunsuz yönetti.",
+    "107 araç çağrısı 14 dakika 10 saniyede tamamlanarak çok‑adımlı iş akışının sürdürülebilirliği kanıtlandı."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Tek bir tüketici sınıfı GPU ile büyük MoE modelinin yüksek verimlilikle çalıştırılması, yerel AI geliştirme ekosisteminde önemli bir performans göstergesi sunar.",
+  "etiketler": [
+    "Qwen",
+    "Strata",
+    "NVFP4",
+    "benchmark",
+    "GPU"
+  ],
+  "anilan_modeller": [
+    "Qwen3.8-Flash-Next 125B-A6B hybrid MoE"
+  ],
+  "yorum_tr": "Bu test, büyük dil modellerinin tek bir yüksek‑performanslı GPU üzerinde verimli bir şekilde çalıştırılabileceğini göstererek, araştırmacı ve geliştiricilerin maliyetli çok‑GPU altyapılarına bağımlılığını azaltabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen3.8-Flash-Next 125B-A6B hybrid MoE",
+      "benchmark": "Decode median speed",
+      "skor": 116,
+      "birim": "t/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "median",
+      "kaynak_metinden_alinti": "Decode (per-step, approval-adjusted) | median 116 t/s"
+    },
+    {
+      "model": "Qwen3.8-Flash-Next 125B-A6B hybrid MoE",
+      "benchmark": "TTFT median",
+      "skor": 0.7,
+      "birim": "s",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "median",
+      "kaynak_metinden_alinti": "TTFT | median 0.7s"
+    },
+    {
+      "model": "Qwen3.8-Flash-Next 125B-A6B hybrid MoE",
+      "benchmark": "Cache hit rate",
+      "skor": 99,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Cache-read tokens | 9,340,144 (99.0% hit rate)"
+    },
+    {
+      "model": "Qwen3.8-Flash-Next 125B-A6B hybrid MoE",
+      "benchmark": "Compactions",
+      "skor": 0,
+      "birim": "count",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Compactions | 0 (never hit the 220k line in 33 min)"
+    },
+    {
+      "model": "Qwen3.8-Flash-Next 125B-A6B hybrid MoE",
+      "benchmark": "Tool calls",
+      "skor": 107,
+      "birim": "count",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "TOOL CALLS — 107 total, 14m 10s of tool runtime"
+    }
+  ],
+  "gorsel_url": "https://external-preview.redd.it/NHAxY2ZkaTJ2N3ZoMSnF-D6WFIJukhr8-pzgO37dDKeF6iFLF_6LrBtH-xVA.png?width=640&crop=smart&auto=webp&s=85e2bb49ebb3f783402a6c2a1a4de7e6e071beab",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x4uipn/horsey_challenge_strata_fork_qwen_38_fn_nvfp4/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-13T11:50:07.000Z",
+  "slug": "horsey-challenge-strata-fork-qwen-3-8-fn-nvfp4"
+}

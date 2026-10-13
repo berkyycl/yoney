@@ -1,0 +1,62 @@
+{
+  "baslik_tr": "Kaynak Bilincine Sahip Doğrulama: MCP Tabanlı LLM Ajanları İçin ProvenanceGuard",
+  "ozet_tr": "Multiverse Computing ekibi, çoklu‑araç (MCP) ortamlarında ortaya çıkan 'kaynak karışıklığı' sorununu çözmek için ProvenanceGuard adlı bir doğrulama katmanı geliştirdi. Sistem, yanıtı iddia edilen kaynakla eşleştirerek her bir iddiayı ayrı ayrı kontrol ediyor ve yanlış atıfları engelliyor.",
+  "detayli_icerik_tr": "Hugging Face blogunda yayımlanan ve aynı zamanda arXiv'de yer alan \"ProvenanceGuard: Source-Aware Factuality Verification for MCP-Based LLM Agents\" adlı makale, geleneksel faktiklik ölçütlerinin MCP (Model Context Protocol) ajanları için yetersiz kaldığını vurguluyor. Tek bir metin parçasına dayalı RAG sistemlerinin aksine, MCP ajanları birden çok aracı (arama, veri tabanı sorgusu, hasta kaydı vb.) çağırarak yanıt üretir; bu da bir iddianın doğru bir yerde bulunması ancak yanlış bir kaynağa atfedilmesi riskini doğurur. ProvenanceGuard, bu \"cross‑source conflation\" hatasını tespit etmek için yanıtı iddialara ayırır, her iddia için en uygun kaynağı bulur, NLI tabanlı bir doğrulama modeliyle destek kontrolü yapar ve iddianın kaynakla eşleşip eşleşmediğini denetler.\n\nSistem, bir yanıt üretildikten sonra çalışan bir post‑generation katmanı olarak tasarlandı; bu sayede ajan modelinin yeniden eğitilmesine gerek kalmadan, yakalanan MCP izleri (tool output ve source ID'leri) üzerinden işlem yapılabiliyor. İş akışı beş adımda gerçekleşiyor: (1) yanıtı iddialara bölme, (2) her iddia için en ilgili kaynağı bulma, (3) kaynağın iddiayı destekleyip desteklemediğini kontrol etme, (4) iddianın kaynakta belirtilip belirtilmediğini karşılaştırma ve (5) per‑claim ve global karar (allow/block) üretme. Engellenen yanıtlar, RARR‑stil bir onarım döngüsüyle yeniden işlenebiliyor.\n\nDeneysel sonuçlar, sistemin özellikle tıbbi bir ajan senaryosunda etkileyici performans gösterdiğini ortaya koyuyor. 281 gerçek iz üzerinden 361 iddia incelendi; uzmanlar 139 iddianın geçmemesi gerektiğini belirledi ve ProvenanceGuard bu iddiaların 138'ini doğru şekilde engelledi. Doğru kaynağı tanıma oranı %86 iken, aynı test setinde diğer dört karşılaştırmalı doğrulayıcı (MiniCheck, RAGAS Faithfulness, AlignScore, SummaC‑ZS) daha düşük F1 skorları elde etti. Ayrıca, zorlayıcı çok‑benzer kaynak testinde sistem %0.846 F1 skoru elde ederken, doğru kaynağı %50.3 doğrulukla belirledi. 50 kasıtlı kaynak değişikliği durumunda ise tüm hataları yakaladı.\n\nProvenanceGuard'ın ek maliyeti ise makul: yerel konfigürasyonda yanıt başına ortalama yarım saniye ek gecikme. Bu, veri‑hassas ortamlar için kabul edilebilir bir denge sağlıyor. Multiverse Computing, bu yaklaşımı NVIDIA NVFlow gibi finansal ajanlarda da uygulamaya alarak, kaynak‑bilinçli doğrulamanın geniş bir yelpazede kullanılabilirliğini gösterdi.",
+  "onemli_maddeler": [
+    "ProvenanceGuard, iddiaları kaynaklarıyla eşleştirerek \"cross‑source conflation\" hatasını tespit eder ve engeller.",
+    "Deneylerde %86 kaynak tanıma doğruluğu ve %0.802 F1 bloklama skoru elde edilmiştir; diğer popüler doğrulayıcılardan daha üstündür.",
+    "Sistem, ajan modelini yeniden eğitmeden, MCP izlerini kullanarak post‑generation katmanı şeklinde çalışır ve yaklaşık 0.5 saniye ek gecikme ekler."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "MCP tabanlı çok‑araç LLM ajanlarının güvenilirliğini artıran yeni bir doğrulama yöntemi sunması, veri‑hassas uygulamalarda (tıp, finans) kritik bir güvenlik katmanı oluşturması nedeniyle sektörel etkisi büyüktür.",
+  "etiketler": [
+    "MCP",
+    "source-aware verification",
+    "LLM agents",
+    "factuality",
+    "ProvenanceGuard"
+  ],
+  "anilan_modeller": [
+    "MiniLM",
+    "DeBERTa NLI verifier",
+    "yerel dil modeli (claim decomposition)"
+  ],
+  "yorum_tr": "ProvenanceGuard, çok‑araçlı LLM ajanlarının güvenilirliğini artırarak özellikle tıp ve finans gibi yüksek riskli alanlarda hatalı atıfların önüne geçiyor; geliştiriciler artık kaynak‑bilincine sahip bir doğrulama katmanı ekleyerek sistemlerini daha güvenli hale getirebilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "ProvenanceGuard",
+      "benchmark": "Reject/Block F1",
+      "skor": 0.802,
+      "birim": "",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "reject/block",
+      "kaynak_metinden_alinti": "ProvenanceGuard scored highest on the paper's measure of how well a system catches claims that should be blocked while avoiding unnecessary blocks."
+    },
+    {
+      "model": "MiniCheck",
+      "benchmark": "Reject/Block F1",
+      "skor": 0.783,
+      "birim": "",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "reject/block",
+      "kaynak_metinden_alinti": "MiniCheck 0.783 No"
+    },
+    {
+      "model": "ProvenanceGuard",
+      "benchmark": "Harder multi‑source test F1",
+      "skor": 0.846,
+      "birim": "",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "reject/block",
+      "kaynak_metinden_alinti": "In a separate, harder test with several similar sources, ProvenanceGuard scored 0.846 F1 for deciding which claims to block"
+    }
+  ],
+  "gorsel_url": "https://cdn-uploads.huggingface.co/production/uploads/668e37fd9c9aa124a3c867e8/phhhj_BLOJbvnTFhVaZ5y.png",
+  "url": "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-09-29T13:07:00.000Z",
+  "slug": "getting-the-source-right-not-just-the-fact-source-aware-veri"
+}

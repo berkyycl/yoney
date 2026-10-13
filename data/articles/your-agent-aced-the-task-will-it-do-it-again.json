@@ -1,0 +1,89 @@
+{
+  "baslik_tr": "AI Ajanlarının Tutarlılığı Artıyor: ALTK‑Evolve ve Consistency Analyzer ile Pass⁵ %69’a Yükseldi",
+  "ozet_tr": "IBM Research, AI ajanlarının aynı soruya tekrar sorulduğunda tutarsız sonuçlar vermesini ölçen yeni bir metrik ve tanı aracı tanıttı. Consistency Analyzer, tek bir izlemeyi yeniden örnekleyerek flip‑prone karar noktalarını tespit ediyor ve ALTK‑Evolve ile üretilen tutarlılık kılavuzları, Pass⁵ başarısını %53'ten %69'a çıkarıyor.",
+  "detayli_icerik_tr": "AI ajanları, özellikle ReAct tarzı zincirleme kararlar içeren sistemlerde, aynı görevi birden fazla kez çalıştırdıklarında farklı sonuçlar üretebiliyor. Bu durum, özellikle finansal işlem uzlaştırma ya da sözleşme denetimi gibi kritik iş akışlarında güvenilirlik sorununa yol açıyor. IBM Research, bu sorunu \"Mean@k\" gibi ortalama başarı ölçütlerinin gizlediği bir tutarlılık açığı olarak tanımlıyor ve bu açığı ölçmek için \"Pass^k\" adlı yeni bir metrik öneriyor.\n\nYeni tanı aracı Consistency Analyzer, bir ajanın kaydedilmiş izleme (trace) üzerinden her karar adımını k=5 tamamlama isteğiyle yeniden örnekleyerek, kararın ne kadar değişken olduğunu puanlıyor. Bu süreç, model içi logitlere ya da ortam etkileşimlerine ihtiyaç duymadan, sadece tek bir izleme ve ek API çağrısı ile gerçekleştirilebiliyor. Analiz sonucunda yüksek belirsizlik gösteren adımlar, ALTK‑Evolve sistemine tutarlılık kılavuzları olarak ekleniyor; örneğin, metin içinde kutucuk işaretlerini sayarken regex kullanımı gibi spesifik öneriler.\n\nDeneyler, AppWorld test_normal veri setindeki 168 görevde, GPT‑4.1 tabanlı ReAct ajanı üzerinde yapıldı. Kılavuzlar eklenmeden Mean@5 %77.4 ve Pass^5 %53.0 iken, kılavuzlar uygulandığında Mean@5 %81.0 ve Pass^5 %69.0 oldu. Böylece tutarlılık açığı 24.4 puandan 12.0 puana düşürüldü ve özellikle orta ve zor görevlerde %44‑%45 oranında göreceli iyileşme sağlandı. Daha düşük kapasiteli gpt‑oss‑120b modeli üzerinde de benzer iyileşmeler gözlemlendi.\n\nAraştırmacılar, bu yöntemin üretim ortamlarında da uygulanabilir olduğunu vurguluyor; sadece karar adımlarının yeniden örneklenmesi, ek bir model çağrısı gerektirdiği için maliyet düşük. Ayrıca, Pass^k metriğinin raporlanması, gerçek kullanıcı deneyimini yansıtmak ve güvenilir ajan etiketleri vermek için kritik bir adım olarak öneriliyor.",
+  "onemli_maddeler": [
+    "Mean@5 %77.4, Pass^5 %53.0 gösteren 24.4 puanlık tutarlılık açığı tespit edildi.",
+    "Consistency Analyzer, tek bir izleme üzerinden karar adımlarını yeniden örnekleyerek flip‑prone noktaları belirliyor.",
+    "Tutarlılık kılavuzları uygulandığında Pass^5 %69, Mean@5 %81'e yükselerek tutarlılık açığı %12'ye indirildi.",
+    "Pass^k metriği, gerçek kullanıcı deneyimini ölçmek için ortalama başarı (Mean@k) yerine öneriliyor."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "AI ajanlarının güvenilirliği, kurumsal uygulamalarda kritik bir gereksinim haline geldi; bu çalışma tutarlılık ölçümü ve iyileştirmesi için yeni bir metodoloji sunarak sektörel standartları etkileyebilir.",
+  "etiketler": [
+    "AI ajanları",
+    "tutarlılık",
+    "benchmark",
+    "LLM",
+    "ALTK‑Evolve"
+  ],
+  "anilan_modeller": [
+    "GPT-4.1",
+    "gpt-oss-120b"
+  ],
+  "yorum_tr": "Bu yöntem, AI ajanlarının sadece yetenekli değil aynı zamanda tutarlı olmasını sağlayarak üretim ortamlarındaki riskleri azaltıyor. Geliştiriciler, Pass^k metriğini raporlayarak güvenilirlik garantisi sunabilir ve kullanıcılar da daha öngörülebilir sonuçlar elde eder.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GPT-4.1",
+      "benchmark": "AppWorld test_normal",
+      "skor": 77.4,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Mean@5",
+      "kaynak_metinden_alinti": "Mean@5 (%), aggregate — same scale as Pass^5 above. The consistency gap is cut roughly in half. Aggregate Pass^5 rises 53.0% → 69.0% while Mean@5 rises 77.4% → 81.0%"
+    },
+    {
+      "model": "GPT-4.1",
+      "benchmark": "AppWorld test_normal",
+      "skor": 53,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Pass^5",
+      "kaynak_metinden_alinti": "A ReAct agent (GPT-4.1 on AppWorld test_normal) succeeded on 77.4% of runs across five repetitions. But it succeeded in all five runs for only 53.0% of tasks"
+    },
+    {
+      "model": "GPT-4.1",
+      "benchmark": "AppWorld test_normal",
+      "skor": 69,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Pass^5",
+      "kaynak_metinden_alinti": "Aggregate Pass^5 rises 53.0% → 69.0% while Mean@5 rises 77.4% → 81.0%"
+    },
+    {
+      "model": "GPT-4.1",
+      "benchmark": "AppWorld test_normal",
+      "skor": 81,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Mean@5",
+      "kaynak_metinden_alinti": "Mean@5 rises 77.4% → 81.0%"
+    },
+    {
+      "model": "gpt-oss-120b",
+      "benchmark": "AppWorld test_normal",
+      "skor": 10.1,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Pass^5 (baseline)",
+      "kaynak_metinden_alinti": "A weaker model, gpt-oss-120b. Same-task Pass^5 rose +6.0pp from a much lower baseline (10.1% → 16.1%)"
+    },
+    {
+      "model": "gpt-oss-120b",
+      "benchmark": "AppWorld test_normal",
+      "skor": 16.1,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Pass^5 (after guidelines)",
+      "kaynak_metinden_alinti": "Same-task Pass^5 rose +6.0pp from a much lower baseline (10.1% → 16.1%)"
+    }
+  ],
+  "gorsel_url": "https://cdn-uploads.huggingface.co/production/uploads/6435a1131860001f144239ea/dI5J2sSc3TSprk9VB4EVJ.jpeg",
+  "url": "https://huggingface.co/blog/ibm-research/altk-evolve-consistency",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-09-15T16:00:44.000Z",
+  "slug": "your-agent-aced-the-task-will-it-do-it-again"
+}

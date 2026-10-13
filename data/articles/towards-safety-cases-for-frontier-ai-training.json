@@ -1,0 +1,30 @@
+{
+  "baslik_tr": "OpenAI, Sınır Ötesi AI Eğitiminde Güvenlik Durumları İçin Yeni Çerçeve Önerdi",
+  "ozet_tr": "OpenAI, sınır ötesi pekiştirmeli öğrenme (RL) eğitimlerinde kullanılacak güvenlik belgelerinin, havacılık ve nükleer enerji gibi kritik sektörlerdeki 'safety case' uygulamalarına benzer şekilde yapılandırılmasını önerdi. Şirket, teknik koruma önlemleri, operasyonel yönergeler ve olay inceleme prosedürlerini içeren bir kılavuz yayımlayarak, AI sistemlerinin riskli davranışlarını önceden tespit ve engelleme hedefini vurguluyor.",
+  "detayli_icerik_tr": "OpenAI, yapay zekâ araştırmalarının yeni bir döneme girdiğini ve bu dönemde sınır ötesi pekiştirmeli öğrenme (RL) eğitimlerinin başlamasından önce kapsamlı, kanıta dayalı güvenlik belgelerinin (safety cases) zorunlu olması gerektiğini belirtti. Şirket, bu belgelerin havacılık ve nükleer enerji gibi yüksek riskli sektörlerde kullanılan güvenlik durumlarıyla aynı seviyede olmasını hedefliyor, ancak AI modellerinin ortaya çıkan karmaşıklığının bu süreci zorlaştırdığını kabul ediyor.\n\nYayınlanan kılavuz, teknik koruma önlemlerini üç ana başlıkta topluyor: model uyumu, kapsama (containment) ve izleme. Model uyumu kapsamında, veri seti ve ortam incelemeleri, otomatik ve manuel red‑team çalışmaları, grader ayarlamaları ve önceki deneylerin analizleriyle yanlış pekiştirmelerin önüne geçilmesi öneriliyor. Kapsama aşamasında çok katmanlı altyapı güvenliği, red‑team testleri, yüksek bant genişliğine sahip iletişim kanallarının sınırlandırılması ve işlem kayıtlarının değiştirilemez şekilde saklanması vurgulanıyor. İzleme kısmında ise modelin izlenebilirliğinin sağlanması, bilinen sorunlara yüksek geri çağırma oranı, güncel değerlendirme verileri ve hızlı müdahale süreçleri ön planda.\n\nOperasyonel yönergeler, güvenlik durumunun hazırlanmasından sonra farklı ekiplerin itiraz (dissent) yazması, üst yönetim onayları, sorumlulukların netleştirilmesi ve gerektiğinde eğitimlerin durdurulması gibi adımları içeriyor. İç şeffaflık, denetim erişimi, yükseltme prosedürleri ve geri dönüş (rollback) yetenekleri de güvenlik durumunun etkinliğini artırmak için önerilen uygulamalar arasında. Ayrıca, güvenlik durumunda kalan risklerin tam bir envanterinin çıkarılması, risk kabul kararlarının bilinçli alınmasını sağlıyor.\n\nOpenAI, bu çerçeveyi sadece eğitim aşamasına değil, aynı zamanda model dağıtımı ve dış kullanımına da genişletecek bir yol haritası olarak görüyor. Şirket, topluluk geri bildirimlerini alarak bu yönergeleri sürekli güncelleyecek ve benzer yüksek riskli AI projelerinde standart bir referans noktası oluşturmayı amaçlıyor.",
+  "onemli_maddeler": [
+    "Teknik koruma önlemleri: model uyumu, kapsama ve izleme mekanizmaları detaylandırıldı.",
+    "Operasyonel süreçler: dissent (pre‑mortem), üst yönetim onayları ve sorumluluk mekanizmaları getirildi.",
+    "Olay inceleme prosedürleri: kök neden analizi, post‑mortem ve kamuoyu açıklamaları zorunlu kılındı."
+  ],
+  "kategori": "politika",
+  "onem": 4,
+  "onem_gerekce": "Sınır ötesi AI eğitiminde sistematik güvenlik süreçlerinin tanımlanması, sektörde risk yönetimi standartlarını yükseltecek ve diğer kuruluşların da benzer çerçeveler geliştirmesine öncülük edecek bir adım olarak değerlendiriliyor.",
+  "etiketler": [
+    "AI güvenliği",
+    "alignment",
+    "reinforcement learning",
+    "OpenAI",
+    "safety cases"
+  ],
+  "anilan_modeller": [],
+  "yorum_tr": "Bu çerçeve, AI araştırmacılarına ve geliştiricilerine riskli eğitim süreçlerinde daha şeffaf ve denetlenebilir bir yol haritası sunarak, güvenlik kültürünün yaygınlaşmasını teşvik edecek. Kullanıcılar ve düzenleyiciler ise daha somut güvenlik garantileriyle AI sistemlerinin sorumlu bir şekilde ilerlemesini izleyebilecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://images.ctfassets.net/kftzwdyauwt9/7pgu4BdlPJCuac2hOkAnS9/2b074a0c7a643bbf330a5d93235655e4/towards-safety-cases-for-frontier-ai-training-seo.png?w=1600&h=900&fit=fill",
+  "url": "https://openai.com/index/towards-safety-cases-for-frontier-ai-training",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-09-28T19:00:00.000Z",
+  "slug": "towards-safety-cases-for-frontier-ai-training"
+}

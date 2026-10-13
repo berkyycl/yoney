@@ -1,0 +1,30 @@
+{
+  "baslik_tr": "GPU Küme Planlayıcısıyla Etkili Zamanlama ve Tam Kapasite Kullanımı",
+  "ozet_tr": "Allen Institute for AI, GPU kaynaklarını yüksek etkili araştırmalara yönlendirmek ve küme doluluğunu artırmak amacıyla öncelik tabanlı planlayıcıyı, bütçe‑temelli hiyerarşik adil‑paylaşım ve zaman dilimi sözleşmesi içeren yeni bir sistemle değiştirdi. Yeni planlayıcı, araştırma projelerine yüzde bazlı GPU zaman bütçeleri tahsis ederek “tragedy of the commons” sorununu çözüyor ve aynı anda %30’a varan ek hesaplama kapasitesi sağlıyor.",
+  "detayli_icerik_tr": "Ai2'deki AI Infrastructure ekibi, binlerce NVIDIA H100, B200 ve B300 GPU'yu 88'den 1024'e kadar değişen kümelerde barındırıyor ve yaklaşık 150 araştırmacının büyük ölçekli dağıtık eğitim işlerini yürütmesine olanak tanıyor. Gelen talepler mevcut kapasitenin 2‑3 katı olduğundan, önceki öncelik‑tabanlı planlayıcı sık sık GPU \"squatting\" ve öncelik şişmesi gibi sorunlara yol açıyordu; yüksek öncelikli işlerin %100'üne yükselmesi düşük öncelikli işlerin tamamen dışlanmasına neden oluyordu.\n\nBu sorunları aşmak için ekip, GPU zamanını sabit bir miktar olarak değil, proje bazlı yüzde tahsisleriyle yöneten bir bütçe modeli geliştirdi. Yönetim kademeleri (proje lideri, program yöneticisi, CEO) her bir araştırma programına belirli bir yüzde hak tanıyor; örneğin Proje A1'in %35'lik bir payı var. Bütçe dışı iş yükleri önceliksiz ve preemptible (kesilebilir) olarak işlenirken, bütçeli iş yükleri minimum çalışma süresi boyunca preemptible olmaktan muaf tutuluyor.\n\nPlanlayıcı, Hadoop Fair Scheduler ve SLURM'ın Fair Tree gibi eski algoritmalardan esinlenerek, 7 günlük kaydırmalı bir pencere içinde her bir birimin gerçek kullanımını izliyor ve bütçesini aşan birimlerin önceliğini düşürerek adil bir dağılım sağlıyor. Bu sayede, bir hafta içinde her grup aktif iş yükü gönderdiği sürece tahsis edilen GPU zamanını alabiliyor. Kullanıcılar, kısa süren (15 dk) debug iş yükleri gibi düşük kaynaklı görevler için sıfır bütçe seçeneğini tercih edebiliyor; simülasyon sonuçları bu işlerin bekleme süresinin 6 saatten 5 dakikaya düştüğünü gösterdi.\n\nYeni sistemin uygulanması, GPU doluluğunu %30 artırırken, bakım sırasında insan müdahalesine ihtiyaç duyan durumları %74 oranında azalttı. Ayrıca, araştırmacılar bütçelerini daha şeffaf bir şekilde savunabildiği için planlayıcıyla ilgili belirsizlikler ve uzun kuyruk beklemeleri önemli ölçüde azaldı.",
+  "onemli_maddeler": [
+    "GPU zaman bütçeleriyle hiyerarşik adil‑paylaşım, kaynakların \"tragedy of the commons\" sorununu çözüyor.",
+    "Yeni planlayıcı, 7 günlük kaydırmalı pencereyle kullanım oranını izleyerek %30 ek hesaplama kapasitesi sağlıyor.",
+    "Minimum çalışma süresi sözleşmesi sayesinde uzun süren iş yükleri otomatik olarak yeniden kuyruğa alınabiliyor ve bakım sürecinde insan müdahalesi %74 azaldı."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "GPU kaynak yönetimindeki yenilik, büyük ölçekli AI araştırma laboratuvarları için kritik bir verimlilik artışı ve operasyonel maliyet düşüşü sağladığından sektörde yüksek öneme sahiptir.",
+  "etiketler": [
+    "GPU",
+    "cluster",
+    "scheduler",
+    "fair-share",
+    "AI infrastructure"
+  ],
+  "anilan_modeller": [],
+  "yorum_tr": "Bu bütçe‑temelli planlayıcı, AI araştırma merkezlerinin sınırlı GPU kaynaklarını daha adil ve verimli kullanmasını mümkün kılıyor; geliştiriciler iş yüklerini daha öngörülebilir bir şekilde planlayabilirken, yöneticiler de stratejik önceliklere göre kaynak tahsis edebilecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/Kj0n5ea3ItoNIc2ha2SVL.png",
+  "url": "https://huggingface.co/blog/allenai/impactful-scheduling",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-10-09T15:20:29.000Z",
+  "slug": "impactful-scheduling-for-gpu-clusters"
+}

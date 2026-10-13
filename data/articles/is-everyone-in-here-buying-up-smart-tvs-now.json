@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "Anthropic, Gemma4 26B modelini sadece 14 akıllı TV ile çalıştırabileceğimizi duyurdu",
+  "ozet_tr": "Anthropic, 26 milyar parametreli Gemma4 a4b modelinin yalnızca 14 akıllı TV üzerinde çalıştırılabileceğini iddia etti. Bu iddia, büyük dil modellerinin düşük maliyetli tüketici cihazlarına taşınabilirliği konusunda yeni bir tartışma başlattı.",
+  "detayli_icerik_tr": "Anthropic, son zamanlarda geliştirdiği Gemma4 26b a4b modelinin, geleneksel veri merkezi sunucularına kıyasla çok daha sınırlı donanımda çalıştırılabileceğini belirtti. Şirketin açıklamasına göre, model sadece 14 akıllı TV'nin toplam işlem gücüyle çalıştırılabiliyor; bu da ortalama bir 4K akıllı TV'nin CPU ve GPU kapasitelerinin bir araya getirilmesiyle mümkün oluyor.\n\nBu iddia, büyük dil modellerinin yüksek enerji tüketimi ve maliyetli donanım gereksinimleri konusundaki yaygın algıyı sarsıyor. Eğer gerçekse, geliştiriciler ve son kullanıcılar, yapay zekâ hizmetlerini daha geniş bir cihaz yelpazesine yayma fırsatı bulabilir. Ancak, modelin performansı, yanıt süresi ve doğruluk oranları gibi kritik metriklerin, sınırlı donanımda nasıl etkileneceği hâlâ belirsiz.\n\nAkıllı TV'lerin tipik donanım profili, genellikle ARM tabanlı işlemciler ve sınırlı bellek kapasitesi içerir. Bu cihazlarda büyük bir modelin çalıştırılması, bellek yönetimi, model sıkıştırma ve düşük güç tüketimi gibi teknik zorlukları da beraberinde getiriyor. Anthropic'in bu konuda sunduğu çözüm, muhtemelen model quantization, distillation ve dinamik bellek tahsisi gibi ileri teknikleri içeriyor.\n\nSektör gözlemcileri, bu açıklamanın sadece bir pazarlama hamlesi mi yoksa gerçek bir teknik atılım mı olduğunu tartışıyor. Eğer Anthropic, bu iddiayı kanıtlayabilirse, akıllı ev cihazları, set‑top kutuları ve hatta düşük maliyetli IoT cihazları, yapay zekâ uygulamalarının yeni dağıtım noktaları haline gelebilir.",
+  "onemli_maddeler": [
+    "Anthropic, 26B parametreli Gemma4 a4b modelini sadece 14 akıllı TV'nin toplam işlem gücüyle çalıştırılabilir olarak açıkladı.",
+    "Bu iddia, büyük dil modellerinin düşük maliyetli tüketici cihazlarına taşınabilirliği konusunda yeni bir perspektif sunuyor.",
+    "Modelin akıllı TV gibi sınırlı donanımlarda çalıştırılması, bellek sıkıştırma ve düşük güç tüketimi gibi teknik zorlukları da beraberinde getiriyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 2,
+  "onem_gerekce": "Haberde büyük bir modelin tüketici düzeyindeki cihazlarda çalıştırılabileceği iddiası yer alıyor, ancak teknik detaylar ve doğrulanmış benchmark sonuçları eksik olduğu için sektörel etkisi sınırlı kalıyor.",
+  "etiketler": [
+    "Anthropic",
+    "Gemma4",
+    "Smart TV",
+    "AI Deployment",
+    "Model Optimization"
+  ],
+  "anilan_modeller": [
+    "Gemma4 26b a4b"
+  ],
+  "yorum_tr": "Bu iddia, düşük maliyetli cihazlarda büyük modellerin çalıştırılabileceği yönündeki umutları artırsa da, performans ve güvenilirlik açısından kapsamlı testlerin yapılması gerekiyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/pu6cutnui8vh1.jpeg?width=640&crop=smart&auto=webp&s=4366a1db5222483f8252174718105a765a5dd231",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x4wcnn/is_everyone_in_here_buying_up_smart_tvs_now/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-13T13:16:08.000Z",
+  "slug": "is-everyone-in-here-buying-up-smart-tvs-now"
+}

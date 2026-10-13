@@ -1,0 +1,30 @@
+{
+  "baslik_tr": "DeepMind, Private AI Compute’a Güvenli Sunucu‑Tarafı Bellek Özelliğini Ekledi",
+  "ozet_tr": "DeepMind, kişisel yapay zeka uygulamaları için tasarlanan Private AI Compute platformuna, verilerin sunucu tarafında şifreli ve izole bir bellek biriminde işlenmesini sağlayan yeni bir güvenlik katmanı ekledi. Bu yenilik, kullanıcıların verilerini bulut ortamında bile tam gizlilikle korurken, yüksek performanslı AI hesaplamalarına erişim imkanı sunuyor.",
+  "detayli_icerik_tr": "Google DeepMind, Private AI Compute çerçevesine \"secure, server-side memory\" (güvenli sunucu‑tarafı bellek) özelliğini tanıttı. Bu teknoloji, verilerin RAM içinde şifreli bir şekilde tutulmasını ve yalnızca yetkilendirilmiş işlem birimlerinin bu verilere erişebilmesini sağlıyor. Donanım tabanlı güvenlik izolatörleri ve TEEs (Trusted Execution Environments) kullanılarak, veri işleme sürecinde hem gizlilik hem de bütünlük garantisi veriliyor.\n\nYeni bellek mimarisi, kişisel asistanlar, özel veri analitiği ve şirket içi AI çözümleri gibi hassas veri gerektiren senaryolarda kullanılmak üzere tasarlandı. Kullanıcılar, verilerini buluta göndermeden önce şifreleyebilecek ve bu şifreli veriler, DeepMind'in sunucularında çalışan AI modelleri tarafından doğrudan işlenebilecek. İşlem tamamlandığında sonuçlar da aynı şifreli ortamda geri döndürülerek, veri sızıntısı riskini minimuma indiriyor.\n\nDeepMind, bu adımı, AI güvenliği ve veri mahremiyeti konularında sektördeki standartları yükseltmek amacıyla attığını belirtti. Özellikle sağlık, finans ve kişisel veri odaklı uygulamalarda, regülasyonların sıkı olduğu bölgelerde, Private AI Compute’ın yeni sürümü, kurumların yasal uyumluluğu sağlarken aynı zamanda yüksek performanslı AI hizmetlerinden faydalanmalarını mümkün kılıyor.\n\nGeliştiriciler, yeni API'ler ve SDK güncellemeleri sayesinde bu güvenli bellek katmanını mevcut modellerine entegre edebilecek. DeepMind, belgelerde entegrasyon adımlarını, performans ölçümlerini ve güvenlik denetim raporlarını yayınlayarak, topluluğun hızlı bir şekilde benimsemesini hedefliyor.",
+  "onemli_maddeler": [
+    "Private AI Compute’a sunucu‑tarafı şifreli bellek eklendi, veri gizliliği bulut ortamında da korunuyor.",
+    "TEEs ve donanım izolatörleriyle veri işleme sürecinde uçtan uca şifreleme sağlanıyor.",
+    "Sağlık, finans ve kişisel veri odaklı uygulamalarda regülasyon uyumluluğu ve yüksek performans destekleniyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Veri gizliliği ve güvenliği, AI hizmetlerinin yaygınlaşmasıyla kritik bir gereksinim haline geldi; DeepMind'in bu güncellemesi, sektördeki gizlilik standartlarını yükselterek geniş bir kullanıcı kitlesi için yeni fırsatlar yaratıyor.",
+  "etiketler": [
+    "AI güvenliği",
+    "özel AI",
+    "sunucu tarafı bellek",
+    "DeepMind",
+    "Private AI Compute"
+  ],
+  "anilan_modeller": [],
+  "yorum_tr": "Güvenli sunucu‑tarafı bellek, gizli verilerle çalışan AI uygulamalarının bulut ortamına taşınmasını mümkün kılarak, geliştiricilerin ve işletmelerin güvenlik kaygılarını büyük ölçüde azaltacak.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://lh3.googleusercontent.com/CsJavGl89SJwjdXVDdaKtAEpLbqHa_nzOW89VTThwA8rgYr9Gf3CSiUWk18i5thA57k8zhwdwmvf3F2yagtJ-P1ag-9ppxsPXcUe99DRY9asIRP2yA=w528-h297-n-nu-rw-lo",
+  "url": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/",
+  "source": "Google DeepMind",
+  "sourceTier": "resmi",
+  "date": "2026-09-23T16:00:57.000Z",
+  "slug": "advancing-private-ai-compute-with-secure-server-side-memory"
+}

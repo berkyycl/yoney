@@ -1,0 +1,69 @@
+{
+  "baslik_tr": "Falcon ASR: 1.6 Milyar Parametreli Arapça ve Çok Dilli Konuşma Tanıma Modeli Tanıtıldı",
+  "ozet_tr": "Technology Innovation Institute (TII) tarafından geliştirilen Falcon‑ASR, 1.6 milyar parametreli bir konuşma tanıma modeli olarak Arapça, özellikle Emirati lehçesi üzerinde %20.92 ortalama kelime hata oranı (WER) elde etti. Model aynı zamanda İngilizce, Fransızca, İspanyolca ve Portekizce'yi tek bir ağırlık setiyle destekliyor ve kelime‑seviyesinde zaman damgaları sunuyor.",
+  "detayli_icerik_tr": "Falcon‑ASR, Abu Dabi'deki Technology Innovation Institute (TII) laboratuvarında geliştirilen ve 1.6 milyar parametreye sahip bir ses tanıma modeli. Model, Emirati lehçesi başta olmak üzere Modern Standart Arapça, diğer Körfez lehçeleri ve İngilizce üzerine yoğun bir eğitim setiyle eğitildi; ayrıca Fransızca, İspanyolca ve Portekizce'yi de aynı ağırlıklarla tanıyabiliyor. \n\nYapılan değerlendirmelerde Falcon‑ASR, Open Universal Arabic ASR Leaderboard üzerindeki altı Arapça test setinde ortalama %20.92 WER ile en iyi yayınlanmış sonuç %23.17'nin %2.25 puan altında yer alarak liderliği ele geçirdi. Dahili Emirati değerlendirmesinde ise %22.73 WER ve %10.19 CER elde edilerek, bir sonraki en iyi sistem Qwen3‑Omni'dan sırasıyla %4.07 ve %? (CER farkı belirtilmemiş) daha düşük hatalar gösterdi. \n\nModel, farklı kayıt koşullarına dayanıklı olacak şekilde arka plan gürültüsü, çakışan konuşmalar, müzik, oda yankısı ve telefon etkileri gibi çeşitli bozulmalarla zenginleştirilmiş bir veri setiyle eğitildi. Bu sayede toplantı, telefon görüşmesi ve günlük konuşma gibi senaryolarda yüksek doğruluk sağlanması hedeflendi. \n\nİngilizce test setlerinde ise Hugging Face Open ASR Leaderboard üzerindeki yedi kamu testinde ortalama %5.74 WER kaydedildi. Tüm beş dil aynı model ağırlıklarıyla çalışıyor; dil seçimi için ayrı bir bayrak gerekmiyor, çıktı otomatik olarak konuşulan dildeki transkripsiyon oluyor. Modelin demo sürümü Hugging Face Spaces üzerinden erişilebilirken, API ve yerel uygulama entegrasyonları da planlanıyor.",
+  "onemli_maddeler": [
+    "Falcon‑ASR, Arapça konuşma tanıma alanında %20.92 ortalama WER ile mevcut en iyi sonuçtan %2.25 puan daha düşük bir performans sergiliyor.",
+    "Model, Emirati lehçesi dahil olmak üzere çoklu Arapça lehçeleri ve dört ek dili tek bir ağırlık setiyle destekleyerek çok dilli kullanım senaryolarına olanak tanıyor.",
+    "Kelime‑seviyesi zaman damgaları ve çeşitli ses koşullarına dayanıklı eğitim verisi sayesinde gerçek‑dünya uygulamalarda yüksek doğruluk vaat ediyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Arabaç konuşma tanıma ve çok dilli ASR modellerinde lider konuma yükselmesi, bölgesel lehçe desteği ve düşük hata oranlarıyla sektörde önemli bir kilometre taşı oluşturuyor.",
+  "etiketler": [
+    "ASR",
+    "Arabic",
+    "Falcon",
+    "TII",
+    "HuggingFace"
+  ],
+  "anilan_modeller": [
+    "Falcon-ASR"
+  ],
+  "yorum_tr": "Falcon‑ASR, Arapça ve özellikle Emirati lehçesi için yüksek doğruluk sunarak bölgesel ses teknolojileri pazarını canlandırabilir; geliştiriciler tek modelle çoklu dil desteği elde ederken, son kullanıcılar daha doğal ve doğru transkripsiyon deneyimi yaşayacak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Falcon-ASR",
+      "benchmark": "Open Universal Arabic ASR Leaderboard",
+      "skor": 20.92,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "average WER across six test sets",
+      "kaynak_metinden_alinti": "Falcon‑ASR achieved an average word error rate of 20.92% across six Arabic test sets, compared with the best published result of 23.17% in the leaderboard snapshot we used."
+    },
+    {
+      "model": "Falcon-ASR",
+      "benchmark": "Internal Emirati evaluation",
+      "skor": 22.73,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "WER",
+      "kaynak_metinden_alinti": "In our internal Emirati evaluation, Falcon‑ASR achieved 22.73% WER and 10.19% CER."
+    },
+    {
+      "model": "Falcon-ASR",
+      "benchmark": "Internal Emirati evaluation",
+      "skor": 10.19,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "CER",
+      "kaynak_metinden_alinti": "In our internal Emirati evaluation, Falcon‑ASR achieved 22.73% WER and 10.19% CER."
+    },
+    {
+      "model": "Falcon-ASR",
+      "benchmark": "Hugging Face Open ASR Leaderboard (English)",
+      "skor": 5.74,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "mean WER across seven public English test sets",
+      "kaynak_metinden_alinti": "In our evaluation on the seven public English test sets used by the Hugging Face Open ASR Leaderboard, it achieved a mean WER of 5.74%."
+    }
+  ],
+  "gorsel_url": "https://cdn-uploads.huggingface.co/production/uploads/671a3e44cf97dc64441e170a/bJ2aGPIX6WLWagE10j5y3.png",
+  "url": "https://huggingface.co/blog/tiiuae/falcon-asr",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-10-07T13:21:03.000Z",
+  "slug": "introducing-falcon-asr"
+}
