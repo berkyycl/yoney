@@ -1,0 +1,69 @@
+{
+  "baslik_tr": "SonicBoom v0.0.1 ile RTX 3050'da 52 tok/s dekode hızı",
+  "ozet_tr": "SonicBoom, C++/CUDA tabanlı yerel bir tensör çalışma zamanı olarak v0.0.1 sürümünü yayınladı. Aynı quantize edilmiş GGUF dosyasını kullanan llama.cpp ile kıyaslandığında, RTX 3050 8 GB laptopta dekode hızını %14 artırarak 51.65 token/s'ye ulaştı. Bu performans artışı, çekirdek kernel'lerden bağımsız, üst katmanda çalışan bir grafik derleyiciden kaynaklanıyor.",
+  "detayli_icerik_tr": "SonicBoom, Python bağımlılığı olmadan C++/CUDA ile yazılmış bir tensor runtime ve C ABI sunuyor. İlk hedefi, tüketici sınıfı GPU'larda yerel LLM çıkarımı sağlamak; bu amaçla geliştiriciler aynı GGUF model dosyasını hem SonicBoom hem de llama.cpp ile aynı donanımda test etti. RTX 3050 8 GB bir dizüstü bilgisayarda Gemma 4 E4B‑it Q3_K_M modeli çalıştırıldığında, SonicBoom 51.65 token/s dekode hızı (tg64) elde ederken, llama.cpp 45.20 token/s kaydetti.\n\nSonicBoom'un avantajı, ggml'den alınan quantize matmul kernel'lerini (MMVQ/MMQ) aynı tutması ve katman üstü bir grafik planlayıcıyla aktivasyonları bir kez quantize edip yeniden kullanması, norm ve aktivasyonların quantizasyonla birleştirilmesi, gereksiz hesapların kaldırılması ve her dekode adımının tek bir CUDA Graph olarak yakalanıp tekrar oynatılması. Bu sayede sadece %8'lik bir kod kısmı ggml'den türetilirken, geri kalan %92'lik kısım tamamen yeni bir çalışma zamanı olarak geliştirildi.\n\nPerformans açısından, derinlik 2048'de 47.13 token/s, prefilling (4100 token) sırasında ise SonicBoom 1051 token/s hızına ulaşırken, llama.cpp yaklaşık 1944 token/s ile iki kat daha hızlı. Ancak prefilling yolunun hâlâ iyileştirme gerektirdiği ve şu an sadece greedy sampling desteklediği belirtiliyor. Ayrıca Q4_K_M dosyalarının bir kısmı hâlâ yüklenemiyor; Q6_K ve Q8_0 formatları gelecekte eklenmek üzere planlanıyor.\n\nGeliştiriciler, SonicBoom'un mimarisinin çalıştığını kanıtlamak ve gelecekte MLIR GPU kod üretimi, spekülatif dekode ve daha fazla quant formatı eklemek için yol haritasını açıkladı. Proje GPL‑3.0 lisansı altında dağıtılıyor ve benchmark koşulları, yeniden üretim komutları ve model SHA256 bilgileri GitHub README'de yer alıyor.",
+  "onemli_maddeler": [
+    "SonicBoom, aynı quantize kernel'lerini kullanarak llama.cpp'den %14 daha yüksek dekode hızı sağladı.",
+    "Grafik derleyicisi, aktivasyonları tek seferlik quantize edip CUDA Graph ile yeniden oynatarak işlem süresini kısalttı.",
+    "Prefill performansı hâlâ llama.cpp gerisinde; geliştirme yol haritasında MLIR kod üretimi ve spekülatif dekode bulunuyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Yerel GPU tabanlı LLM çıkarımında yeni bir çalışma zamanı sunması, performans artışı ve açık kaynaklı bir araç olarak geliştiricilere önemli bir alternatif oluşturması.",
+  "etiketler": [
+    "SonicBoom",
+    "llama.cpp",
+    "GPU inference",
+    "CUDA",
+    "LLM"
+  ],
+  "anilan_modeller": [
+    "Gemma 4 E4B-it Q3_K_M"
+  ],
+  "yorum_tr": "SonicBoom, çekirdek kernel'leri değiştirmeden üst katmanda bir derleyici ekleyerek performans kazancı elde etmesiyle, geliştiricilere daha esnek ve hızlı bir yerel çıkarım seçeneği sunuyor. Ancak prefilling ve format desteği konularındaki eksiklikler, tam bir llama.cpp alternatifi olabilmesi için ilerideki güncellemelerle giderilmesi gerekiyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Gemma 4 E4B-it Q3_K_M",
+      "benchmark": "Decode (tg64)",
+      "skor": 51.65,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "tg64",
+      "kaynak_metinden_alinti": "SonicBoom Decode (tg64) 51.65 tok/s  llama.cpp 45.20 tok/s"
+    },
+    {
+      "model": "Gemma 4 E4B-it Q3_K_M",
+      "benchmark": "Decode @ depth 2048",
+      "skor": 47.13,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "depth 2048",
+      "kaynak_metinden_alinti": "Decode @ depth 2048 47.13 tok/s 45.21 tok/s"
+    },
+    {
+      "model": "Gemma 4 E4B-it Q3_K_M",
+      "benchmark": "Prefill 4100 tokens",
+      "skor": 1051,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "4100 tokens",
+      "kaynak_metinden_alinti": "Prefill 4100 tokens 1051 tok/s ~1944 tok/s"
+    },
+    {
+      "model": "Gemma 4 E4B-it Q3_K_M",
+      "benchmark": "TTFT (4000-token prefix + 100 new)",
+      "skor": 503,
+      "birim": "ms",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "prefix reuse",
+      "kaynak_metinden_alinti": "TTFT, 4000-token prefix + 100 new 503 ms (prefix reuse)"
+    }
+  ],
+  "gorsel_url": "https://i.ytimg.com/vi/N5VLphkajWY/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDOs0VA4HjcRRSxDfULbvsAYh8rLA",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x4scub/sonicboom_52_toks_decode_on_a_laptop_rtx_3050/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-13T09:46:50.000Z",
+  "slug": "sonicboom-52-tok-s-decode-on-a-laptop-rtx-3050-llama-cpp-45"
+}

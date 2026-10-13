@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "Anthropic, Robot Exposure Index ile ABD'de Fiziksel İşlerin %74'ünün Robotlar Tarafından Yapılabildiğini Gösterdi",
+  "ozet_tr": "Anthropic, mevcut robotların ABD'deki fiziksel iş görevlerinin üçte birini yerine getirebildiğini ortaya koyan bir Robot Exposure Index (REI) geliştirdi. Çalışma, robotların %74'ü fiziksel görevi yerine getirebilse de, sadece %0,3'ü maliyet açısından insanla rekabet edebiliyor ve bu oranın %10'a ulaşması 40 yıl sürecek.",
+  "detayli_icerik_tr": "Anthropic'in yeni yayımladığı raporda, robotların günümüzdeki yetenekleri üzerinden bir \"robot exposure index\" (REI) oluşturuldu. Bu indeks, bir görevin robotlar tarafından ne kadar ve hangi ortamda yapılabileceğini dört seviyeye (E0‑E3) ayırıyor. Analiz, O*NET veritabanındaki 7.594 fiziksel iş görevini değerlendirerek, robotların %74'ünün bir şekilde bu görevleri yapabildiğini, ancak sadece %0,3'ünün maliyet açısından insan işgücüne rakip olabildiğini gösterdi.\n\nRapor, robotların büyük ölçüde kontrollü ortamlar (fabrika hatları, depo gibi) içinde çalıştığını vurguluyor. E1 seviyesindeki görevler, özel olarak tasarlanmış robotik ortamlar için uygun; E2 seviyesindeki görevler, insanların bulunduğu yapılandırılmış iş yerlerinde (örneğin lojistik depolar) gerçekleştirilebiliyor. Sadece %1'lik bir dilim görev (E3) ise şehir yolları gibi yapılandırılmamış ortamlarda robotlar tarafından yapılabiliyor. Bu durum, sürücülük ve tarım gibi alanların robotik otomasyona daha yakın olduğunu, ancak hemşirelik ve mekanik tamir gibi mesleklerin hâlâ robotik erişimden uzak olduğunu ortaya koyuyor.\n\nMaliyet açısından bakıldığında, robotların hâlâ insan işgücünün yerini alması ekonomik açıdan sınırlı. Geçmiş fiyat düşüş trendleri incelendiğinde, robotların %10'luk maliyet rekabeti seviyesine ulaşmasının yaklaşık 40 yıl süreceği tahmin ediliyor. Bunun yanı sıra, robotların yetenek eksikliği (örneğin ince motor becerileri, kablo çözme) ve düzenleyici kısıtlamalar da otomasyonun önündeki önemli engeller olarak belirtiliyor.\n\nGeçmiş 50 yıllık bir geriye dönük test, REI'nin öngörü gücünü destekliyor: 1977'den bu yana robotik açıdan daha fazla maruz kalan mesleklerde ücret ve istihdam düşüşleri gözlemlenmiş. Bu bulgu, taksi şoförleri ve depo çalışanları gibi yüksek maruziyetli işlerin önümüzdeki yıllarda otomasyona daha çabuk tabi olacağını, hemşirelik ve tamir gibi düşük maruziyetli işlerin ise daha uzun vadeli bir süreç gerektireceğini işaret ediyor.",
+  "onemli_maddeler": [
+    "Robotlar ABD'deki fiziksel iş görevlerinin %74'ünü bir şekilde yerine getirebiliyor, bu da toplam çalışma saatlerinin %34'üne tekabül ediyor.",
+    "Maliyet açısından robotların sadece %0,3'ü insan işgücüne rekabet edebiliyor; %10 seviyesine ulaşması 40 yıl sürecek.",
+    "Robotik erişim dört seviyeye ayrılıyor: E0 (yapılamaz), E1 (özel robotik ortam), E2 (yapılandırılmış insan işyeri), E3 (yapılandırılmamış ortam).",
+    "Geçmiş 50 yılda robot maruziyeti yüksek olan mesleklerde ücret ve istihdam düşüşleri gözlemlenmiş, bu da REI'nin gelecekteki iş kayıplarını öngörmede geçerli bir ölçüt olduğunu gösteriyor."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "Robotik otomasyonun işgücü piyasasına etkisi ve ekonomik maliyet analizleri, hem politika yapıcıları hem de endüstri liderleri için kritik bir öngörü sunuyor.",
+  "etiketler": [
+    "robotics",
+    "automation",
+    "labor-market",
+    "AI-research",
+    "Anthropic"
+  ],
+  "anilan_modeller": [
+    "Claude"
+  ],
+  "yorum_tr": "Bu çalışma, robotların mevcut yeteneklerinin ekonomik ve yapısal sınırlamalarını net bir şekilde ortaya koyarak, otomasyonun hangi sektörlerde ve ne zaman hız kazanacağını gösteriyor. Geliştiriciler için robotik yeteneklerin maliyet ve çevresel adaptasyonunu iyileştirme, kullanıcılar için ise iş güvencesi ve yeniden beceri kazanımı konularında stratejik planlama önem kazanacak.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/6d4a0d28992ade92d6fa63646fd9c9d318245c6c-2400x1260.jpg",
+  "url": "https://www.anthropic.com/research/what-work-can-robots-do",
+  "source": "Anthropic Research",
+  "sourceTier": "resmi",
+  "date": "2026-09-30T00:00:00.000Z",
+  "slug": "what-work-can-robots-do"
+}

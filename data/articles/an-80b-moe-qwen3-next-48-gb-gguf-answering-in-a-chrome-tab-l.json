@@ -1,0 +1,63 @@
+{
+  "baslik_tr": "llama.cpp WebGPU arka ucuyla tarayıcıda 80B MoE modeli Qwen3-Next gerçek zamanlı yanıt veriyor",
+  "ozet_tr": "llama.cpp, WebGPU desteğini genişleterek MoE (Mixture of Experts) modellerini tarayıcıda çalıştırabiliyor. 80 milyar parametreli Qwen3-Next modeli, diskten uzmanları dinamik olarak getirerek Chrome sekmesinde yanıt üretebiliyor. Bu, büyük dil modellerinin bulut dışı, tarayıcı tabanlı kullanımına yeni bir kapı aralıyor.",
+  "detayli_icerik_tr": "Geçtiğimiz haftanın diskten MoE uzmanlarını tarayıcıda akışa sokma denemesinin ardından, bu sefer aynı disk katmanı llama.cpp'nin yerel WebGPU arka ucuna entegre edildi. Böylece, llama.cpp'nin zaten desteklediği MoE modelleri, ayrı bir model‑özel motor gerektirmeden doğrudan tarayıcıda çalıştırılabiliyor. Reddit'te paylaşılan video, gerçek bir Chrome kaydıyla bu süreci gösteriyor; ölçümler MacBook Pro M4 Pro (24 GB RAM) üzerinde yapıldı.\n\nPerformans verileri, 48.4 GB boyutundaki Qwen3-Next 80B‑A3B modelinin GPU'ya 4.89 GB yüklenmesi ve token başına yaklaşık 359 MB disk okuması gerektirdiğini, decode süresinin 48 saniye ve 2.9 tok/s hızında olduğunu ortaya koyuyor. Daha küçük modellerde ise OLMoE 1B‑7B (22.4 tok/s) ve LFM2 8B‑A1B (17.1 tok/s) gibi daha yüksek hızlar elde edildi. Qwen3-30B‑A3B modeli de (14.7 GB dosya) sorunsuz çalışıyor.\n\nTeknik olarak, GGUF dosyası tarayıcının özel depolama alanı (OPFS) içine bir kez indiriliyor. GPU, yoğun katmanları, KV önbelleğini ve her katmanda sabit sayıda uzman yuvasını tutuyor; router seçimleri geri okunuyor ve yuvası olmayan uzmanlar OPFS'ten en az kullanılan yuvaya senkron olarak yükleniyor. Bu sayfalama, ggml-webgpu'ye yeni bir buffer tipi, slot‑mapped MUL_MAT_ID shader'ları ve rezidans mantığı eklenmesiyle sağlandı. Doğruluk testlerinde, sayfalama açık ve kapalı aynı yanıtları üretiyor; Metal arka ucuyla karşılaştırıldığında 9 üzerinden 8‑9 yanıt eşleşiyor.\n\nSınırlamalar hâlâ mevcut: 80B modelinin yanıt hızı düşük, token başına 359 MB okuma gerektiriyor ve prompt işleme süresi hâlâ yavaş. Özellik sadece Chrome/Edge 137+ sürümlerinde ve Apple silikon cihazlarda test edildi. İlk yükleme sırasında dosyanın tamamı tarayıcı depolamasına kopyalanıyor. Kullanıcılar denemeyi https://diskformer.naklitechie.com adresinden yapabilir ve kodu GitHub'da https://github.com/NakliTechie/diskformer.js adresinde inceleyebilir.",
+  "onemli_maddeler": [
+    "llama.cpp'nin WebGPU backend'i, MoE modellerini tarayıcıda dinamik olarak diskten uzmanları getirerek çalıştırabiliyor.",
+    "80B Qwen3-Next modeli 2.9 tok/s hızla yanıt üretebiliyor; bu, tarayıcıda bu büyüklükte bir modelin çalıştırılmasının ilk kanıtı.",
+    "Sayfalama mekanizması yeni buffer tipi ve slot‑mapped shader'lar ekleyerek ggml-webgpu'yi genişletiyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 3,
+  "onem_gerekce": "Büyük MoE modellerinin tarayıcıda çalıştırılabilmesi önemli bir teknik ilerleme olsa da, performans sınırlamaları ve platform kısıtlamaları nedeniyle etkisi şu an sınırlı.",
+  "etiketler": [
+    "llama.cpp",
+    "WebGPU",
+    "MoE",
+    "GGUF",
+    "tarayıcı"
+  ],
+  "anilan_modeller": [
+    "Qwen3-Next 80B-A3B",
+    "OLMoE 1B-7B",
+    "LFM2 8B-A1B",
+    "Qwen3-30B-A3B"
+  ],
+  "yorum_tr": "Bu geliştirme, büyük dil modellerinin bulut dışı, tarayıcı tabanlı deneyimlerine yeni bir yön kazandırıyor; ancak hâlihazırda düşük hız ve sadece Apple silikon desteği, geniş çaplı benimsenmesini kısıtlıyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen3-Next 80B-A3B",
+      "benchmark": "decode speed (tok/s)",
+      "skor": 2.9,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "decode",
+      "kaynak_metinden_alinti": "2.9 tok/s (proof of concept)"
+    },
+    {
+      "model": "OLMoE 1B-7B",
+      "benchmark": "decode speed (tok/s)",
+      "skor": 22.4,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "decode",
+      "kaynak_metinden_alinti": "22.4 tok/s"
+    },
+    {
+      "model": "LFM2 8B-A1B",
+      "benchmark": "decode speed (tok/s)",
+      "skor": 17.1,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "decode",
+      "kaynak_metinden_alinti": "17.1 tok/s"
+    }
+  ],
+  "gorsel_url": "https://external-preview.redd.it/am40cG42MWNyOHZoMQwdTAQRqjRjvKPMI0mi_uhOCl6FPNBmpAJ6zMXBo7Jw.png?width=640&crop=smart&auto=webp&s=16c061bc32e49399be6d3a59a2dd0297ac459e02",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x4xjuh/an_80b_moe_qwen3next_48_gb_gguf_answering_in_a/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-13T14:04:51.000Z",
+  "slug": "an-80b-moe-qwen3-next-48-gb-gguf-answering-in-a-chrome-tab-l"
+}

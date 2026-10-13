@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "Basalt: Qwen 3.8 Flash Next için Hızlı Blackwell Çıkarım Motoru ve Ücretsiz Görüntü Desteği",
+  "ozet_tr": "Basalt, Qwen 3.8 Flash Next modelini Blackwell optimizasyonlarıyla çalıştıran yeni bir çıkarım motoru. Görüntü işleme yeteneği, encoder'ı yalnızca ihtiyaç anında VRAM'e yükleyerek bellek tüketimini neredeyse sıfıra indiriyor.",
+  "detayli_icerik_tr": "Basalt, Strata tabanlı bir kod çatallaması olarak geliştirildi ve Qwen 3.8 Flash Next modelinin Blackwell sürümü için yoğun bir şekilde ayarlandı. Motor, metin tabanlı görevlerde yüksek hız sunarken, aynı zamanda görsel girdileri de işleyebiliyor. Görüntü kodlayıcısının sürekli VRAM'de tutulması, uzman (expert) önbellek slotlarını tükettiği ve metin performansını düşürdüğü için, geliştiriciler bu sorunu çözmek amacıyla dinamik bir yaklaşım ekledi.\n\nYeni \"--vision dynamic\" seçeneği sayesinde, motor boşta iken kodlayıcı RAM'de saklanıyor ve VRAM kullanımını %0'a yaklaştırıyor. Bir görsel geldiğinde, ilgili uzman slotları geçici olarak kullanılmak üzere kodlayıcı VRAM'e (~30 ms) aktarılıyor, görüntü kodlanıyor ve işlem tamamlandığında aynı slotlar RAM'den geri dolduruluyor (~60 ms). Bu sayede görsel işleme ücretsiz hale geliyor ve metin çıkarımı üzerindeki performans etkisi ortadan kalkıyor.\n\nBasalt'ın kendi çekirdekleri, llama.cpp'nin çekirdeklerinden üç kat daha hızlı çalışıyor ve bu hız farkı, özellikle büyük ölçekli inference senaryolarında belirgin bir avantaj sağlıyor. Projenin GitHub deposu (https://github.com/jesdga95/basalt) üzerinden erişilebilen kod, geliştiricilerin kendi motorlarına entegre etmeleri için gerekli commit hash'leri (9bfb90a, a704c65, efd23d9) ile belgelenmiş durumda.\n\nTopluluk, bu yenilik sayesinde Qwen 3.8 Flash Next modelini daha düşük donanım gereksinimleriyle çalıştırabilirken, görsel yetenekleri de ek bir maliyet olmadan kullanabiliyor. Basalt'ın açık kaynak yapısı, diğer LLM çıkarım çerçevelerine entegrasyon ve özelleştirme fırsatları sunarak, yerel AI uygulamaları ekosisteminde yeni bir kilometre taşı oluşturuyor.",
+  "onemli_maddeler": [
+    "Basalt, Qwen 3.8 Flash Next modelini Blackwell optimizasyonlarıyla çalıştıran hızlı bir çıkarım motoru.",
+    "\"--vision dynamic\" özelliği, görüntü kodlayıcısını yalnızca ihtiyaç anında VRAM'e yükleyerek bellek tüketimini %0'a yaklaştırıyor.",
+    "Basalt çekirdekleri, llama.cpp'ye kıyasla 3 kat daha hızlı çalışıyor ve açık kaynak olarak geliştiricilere sunuluyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 3,
+  "onem_gerekce": "Yerel LLM çıkarım motorları için bellek verimliliği ve görsel işleme desteği sağlayarak geliştiricilerin ve araştırmacıların çalışma şeklini iyileştiriyor, ancak sektörel çapta geniş bir etki yaratması zaman alabilir.",
+  "etiketler": [
+    "Qwen 3.8 Flash Next",
+    "Basalt",
+    "Blackwell",
+    "Vision Inference",
+    "LLM Engine"
+  ],
+  "anilan_modeller": [
+    "Qwen 3.8 Flash Next"
+  ],
+  "yorum_tr": "Basalt'ın dinamik görsel desteği, düşük bellekli ortamlarda LLM'lerin çok modlu kullanımını mümkün kılıyor; geliştiriciler için maliyet ve performans dengesini yeniden tanımlıyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/T6vrXkSYz1_aj3wOLeL4wgDL3xr13davZA1e3vWQmnY.png?width=140&height=70&auto=webp&s=842222957fe3acae99f2085a4d75c78b6b4908cf",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x4xmxb/basalt_fast_blackwell_inference_engine_for_qwen/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-13T14:08:21.000Z",
+  "slug": "basalt-fast-blackwell-inference-engine-for-qwen-3-8-flash-ne"
+}

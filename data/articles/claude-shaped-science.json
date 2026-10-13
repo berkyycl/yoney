@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "Claude Şeklinde Bilim: BootLoops ile Çok Disiplinli Hesaplamalar",
+  "ozet_tr": "Prof. Matthew Schwartz, Claude'un yeteneklerine uygun \"Claude-shaped\" problemleri hedef alarak, BootLoops adını verdiği açık kaynaklı bir araç seti geliştirdi. Bu harness, LLM'lerin kodlama ve sayısal hesaplama gücünü bilimsel problemler için birleştirerek fizik, ekoloji ve popülasyon genetiği gibi alanlarda yeni sonuçlar elde edilmesini sağladı.",
+  "detayli_icerik_tr": "Anthropic'in araştırma blogunda yayımlanan konuk yazısında, Prof. Matthew Schwartz, Claude Opus 4.5 ve Claude Fable 5'in mevcut nesil LLM'lerin güçlü yönlerine odaklanan \"Claude-shaped\" problemlerini tanımladı. Bu problemler, mevcut modellerin geniş bilgi tabanı, yüksek kodlama yeteneği ve makine hızında veri işleme kapasitesine en uygun olanlarıydı. Schwartz, Claude'un bu problemleri bulması ve çözmesi üzerine, LLM'leri bir \"harness\" (kullanım çerçevesi) içinde toplamak amacıyla BootLoops adlı bir araç seti oluşturdu; bu set, Claude Code ve Claude Science gibi mevcut harness'ların bir uzantısı olarak tasarlandı ve model bağımsız olarak kullanılabiliyor.\n\nBootLoops, özellikle nicel bilim problemlerinde, matematiksel fizik yöntemlerini otomatikleştirerek çalışıyor. Schwartz, Claude'un Fable 5 sürümünü kullanarak scattering amplitudes ve elliptic integrals gibi yüksek boyutlu integralleri birkaç dakikada yeniden üretebildiğini ve hatta daha önce çözülemeyen 15 yeni integral üzerinde başarılı sonuçlar elde ettiğini belirtti. Toplamda 30 integral, hem bilinen hem de yeni sonuçlar olarak BootLoops aracılığıyla tamamlandı; bu süreç haftalar yerine dakikalar sürdü.\n\nAraç seti, fizik dışındaki disiplinlerde de benzer başarılar gösterdi. Claude, ekolojide neutral biyolojik çeşitlilik teorisinin karmaşık denklemini çözdü ve Panama'daki Barro Colorado Adası ormanındaki tür dağılımının teorik beklentiden 4,5 kat daha hızlı değiştiğini ortaya koydu. Benzer şekilde, popülasyon genetiğinde nadir mutasyonların seçilim etkisini tanımlayan 30 yıllık bir integral ifadesi de BootLoops sayesinde çözüldü ve gnomAD veri setine uygulandı. Her iki alanda da sonuçlar teknik olarak doğru bulunurken, alan uzmanları bu bulguların bilimsel etkisinin sınırlı olduğunu belirtti; bu da insan‑AI iş birliğinin hâlâ uzman yönlendirmesine ihtiyaç duyduğunu gösterdi.\n\nSchwartz, BootLoops'un açık kaynak olması sayesinde, araştırmacıların istedikleri modeli (Claude, GPT vb.) entegre edip kendi problemlerine uyarlayabileceklerini vurguladı. Araç seti, kod tabanını ve algoritmik protokolleri sürekli genişletiyor; başarısız denemeler bile yeni metodların keşfine kapı açıyor. Bu yaklaşım, LLM'lerin bilimsel araştırmalardaki \"impedance mismatch\" sorununu azaltarak, araştırmacıların daha hızlı prototip üretmesini ve çok disiplinli sorulara yönelmesini mümkün kılıyor.",
+  "onemli_maddeler": [
+    "BootLoops, Claude'un kodlama ve sayısal hesaplama yeteneklerini bir harness içinde birleştirerek fizik, ekoloji ve genetik gibi alanlarda 30+ integralin otomatik çözümünü sağladı.",
+    "Claude Opus 4.5, bir yüksek lisans öğrencisinin 20 katı hızında çalışarak yüksek enerjili parçacık fiziği problemlerini dakikalar içinde yeniden üretti.",
+    "Araç seti, neutral biyolojik çeşitlilik teorisinin karmaşık denklemini çözdü ve gerçek orman verileriyle çelişen sonuçlar ortaya koyarak ekolojiye yeni bir analiz yöntemi sundu.",
+    "BootLoops açık kaynak olduğundan, farklı LLM'lerle (Claude, GPT vb.) kullanılabilir ve araştırmacıların kendi disiplinlerine uyarlamaları teşvik ediliyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "BootLoops, LLM'lerin bilimsel hesaplamalarda pratik bir harness olarak kullanılmasını sağlayarak çok disiplinli araştırmalarda verimliliği artırıyor ve açık kaynak yapısıyla topluluk katkılarını mümkün kılıyor.",
+  "etiketler": [
+    "AI-accelerated science",
+    "BootLoops",
+    "Claude",
+    "quantitative computing",
+    "cross-disciplinary"
+  ],
+  "anilan_modeller": [
+    "Claude Opus 4.5",
+    "Claude Fable 5"
+  ],
+  "yorum_tr": "BootLoops, LLM'lerin bilimsel araştırmalardaki uygulama boşluğunu dolduracak bir araç seti sunarak, geliştiricilerin ve araştırmacıların model yeteneklerini doğrudan sayısal problemlerle birleştirmesine olanak tanıyor; ancak sonuçların bilimsel etkisi hâlâ alan uzmanlarının yönlendirmesine bağlı.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/5dca367673e615ac7abbbdac9f44733d1f52638a-2000x1125.jpg",
+  "url": "https://www.anthropic.com/research/claude-shaped-science",
+  "source": "Anthropic Research",
+  "sourceTier": "resmi",
+  "date": "2026-10-01T00:00:00.000Z",
+  "slug": "claude-shaped-science"
+}

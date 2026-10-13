@@ -1,0 +1,36 @@
+{
+  "baslik_tr": "Şirket İçin 4x 6000 Blackwell GPU Sunucu Kurulumu",
+  "ozet_tr": "Bir şirket, 40 kişilik ekip için yerel AI hizmetlerini tek bir 4U sunucuda topladı. Sunucu, dört adet 6000 Blackwell MaxQ GPU, 384 GB DDR5 RAM ve AMD EPYC 9275F işlemciyle çalışıyor ve Deepseek V4 Flash, Qwen 3.8 ve K2‑Horizon gibi modelleri barındırıyor.",
+  "detayli_icerik_tr": "Şirket, 10 geliştiriciyi de içinde barındıran 40 kişilik bir ekip için yerel AI hizmetlerini tek bir 4U sunucu üzerinden sunuyor. Sunucu, dört adet NVIDIA 6000 Blackwell MaxQ GPU, 384 GB DDR5 bellek ve 24 çekirdekli AMD EPYC 9275F işlemciden oluşuyor; Proxmox tabanlı bir sanallaştırma ortamı kullanılarak her model ve uygulama LXC konteynerlerinde, CUDA 13.3 ve Debian 13 ile çalıştırılıyor.\n\nAna model olarak Deepseek V4 Flash vLLM ile 1 M token bağlam uzunluğuna sahip bir yapılandırma (GPU kullanım oranı %55, TP4) tercih edilirken, yedek model olarak Qwen 3.8 27B Q8, 265 K bağlam uzunluğu ve llama.cpp ile; daha hafif bir mini model olarak ise K2‑Horizon 7B Q6, 64 K bağlam ve Q8 formatı kullanılıyor. Gömme ve yeniden sıralama görevleri için Geofront/BGE‑M3‑GGUF (BF16) ve sinjab/bge‑reranker‑v2‑m3‑F16‑GGUF modelleri llama.cpp üzerinden çalıştırılıyor.\n\nGeliştiriciler, BiFrost adlı OpenAI uyumlu API yönlendiricisi aracılığıyla kendi API anahtarlarıyla modelleri kullanabiliyor. Otomasyon için n8n, ses transkripsiyonu için Whisper ve Vexa AI, Teams entegrasyonu ve karar‑todo çıkarımı gibi iş akışları sağlanıyor. Kullanıcı arayüzü olarak OpenWebUI, ChatGPT benzeri bir web arayüzü sunuyor; ancak en ileri düzey ajan özellikleri devre dışı bırakılmış durumda. Tavily entegrasyonu sayesinde web aramaları da mümkün.\n\nSunucunun toplam maliyeti yaklaşık 55 000 € olarak belirtilmiş ve yedek bir sunucu için iki adet 6000 Blackwell MaxQ GPU daha planlanıyor. Görsel ve video üretimi için ComfyUI, pazarlama materyalleri oluşturuluyor. Bu altyapı, şirket içinde AI‑odaklı iş akışlarını merkezi bir noktadan yöneterek maliyet etkinliği ve ölçeklenebilirlik sağlıyor.",
+  "onemli_maddeler": [
+    "4x NVIDIA 6000 Blackwell MaxQ GPU ve 384 GB DDR5 RAM ile yüksek performanslı bir AI sunucusu kuruldu.",
+    "Deepseek V4 Flash (1 M token), Qwen 3.8 27B ve K2‑Horizon 7B modelleri LXC konteynerlerinde çalıştırılıyor.",
+    "BiFrost API yönlendiricisi sayesinde 10 geliştirici ayrı API anahtarlarıyla modelleri kullanabiliyor."
+  ],
+  "kategori": "diger",
+  "onem": 3,
+  "onem_gerekce": "Yerel AI altyapısının büyük ölçekli bir şirket içinde nasıl yapılandırıldığına dair detaylı bir örnek sunması, sektörde benzer çözümler geliştirmek isteyenler için değerli ancak geniş çaplı bir etki yaratmayacak bir haber.",
+  "etiketler": [
+    "AI altyapısı",
+    "lokal LLM",
+    "GPU sunucu",
+    "Proxmox",
+    "Deepseek"
+  ],
+  "anilan_modeller": [
+    "Deepseek V4 Flash",
+    "Qwen 3.8 27B",
+    "K2-Horizon 7B",
+    "BGE-M3",
+    "bge-reranker-v2-m3"
+  ],
+  "yorum_tr": "Bu tür bir yerel AI altyapısı, şirket içi veri gizliliği ve maliyet kontrolü açısından önemli bir avantaj sunuyor; geliştiriciler de yüksek performanslı modelleri doğrudan erişebilir hâle geliyor. Ancak, yüksek başlangıç yatırımı ve bakım gereksinimleri, sadece belirli ölçeklerdeki organizasyonlar için uygulanabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/eribrlg7z8vh1.png?width=140&height=78&auto=webp&s=31102490447cb91d588f1c59e52247fc6567d40d",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x4yoqm/4x_6000_pro_for_the_company/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-13T14:49:31.000Z",
+  "slug": "4x-6000-pro-for-the-company"
+}

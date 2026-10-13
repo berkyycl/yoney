@@ -1,0 +1,76 @@
+{
+  "baslik_tr": "GLM-5.3'ün Açık Ağırlık Modeli Siber Saldırı Kapasitesini Artırıyor",
+  "ozet_tr": "Zhipu AI tarafından yayınlanan GLM-5.3, sınırlı korumalarla birlikte gelen en gelişmiş açık‑ağırlık siber saldırı modelidir. Anthropic araştırması, modelin savunma önlemlerini %64‑%100 oranında aşabildiğini ve ExploitBench gibi testlerde %12 başarı oranıyla çalışır exploitler üretebildiğini gösterdi.",
+  "detayli_icerik_tr": "Anthropic, beş ay önce Claude Mythos Preview adlı modeli sınırlı bir erişim programı olan Project Glasswing ile güvenlik uzmanlarına sunmuş, 10.000'den fazla kritik yazılım açığını ortaya çıkarmalarına yardımcı olmuştu. Şimdi aynı şirket, Zhipu AI'nın GLM-5.3 modelini inceleyerek, bu modelin benzer ya da daha yüksek siber saldırı yeteneklerine sahip olduğunu, ancak koruma mekanizmalarının neredeyse hiç bulunmadığını ortaya koydu.\n\nYapılan testlerde GLM-5.3, ExploitBench üzerinde 410 denemeden 50'sinde (yaklaşık %12) V8 motorundaki bilinen güvenlik açıklarını uçtan uca exploitlere dönüştürdü; Claude Mythos Preview ise %13,6 oranında başarılı oldu. Binary Exploitation benchmark'ında ise model, 100 rastgele seçilmiş OSS‑Fuzz görevinden %4'ünde tam kontrol akışı ele geçirme başarısı gösterdi. Önceki modeller (Claude Opus 4.6, GLM‑5.2) bu görevlerde hiç sonuç alamamıştı.\n\nİnsan uzmanların yönlendirmesiyle yapılan deneylerde, GLM-5.3 bir gün içinde popüler bir web tarayıcısının JavaScript motorunda yeni açıklar keşfederek, ziyaretçi bilgisayarından dosya okuyan bir web sayfası exploit'i oluşturdu. Aynı model, kablosuz ve grafik sürücüleri gibi başka yaygın sistemlerde de potansiyel açıklar buldu. Daha küçük bir sürüm olan GLM-5.3‑Flash, sadece 20 dakikalık bir insan müdahalesi ve sekiz saatlik model çalışmasıyla, Chrome CVE‑2026‑11645 gibi bilinen bir açığı ARM64 hedefte çalıştırılabilir bir zincir exploit'e dönüştürdü; bu işlem Zhipu'nun API fiyatlarıyla 20,40 $ maliyet oluşturdu.\n\nGLM-5.3'ün koruma katmanları, açık‑ağırlık olması nedeniyle basit tekniklerle (ör. “abliteration” adı verilen reddetme azaltma yöntemi) %90'dan %3'e düşürülebiliyor. Anthropic ekibi, bu işlemi 2.200 GPU saatinde (yaklaşık 4.400 $) tamamladı. Abliterasyon sonrası model, JailbreakBench, HarmBench ve StrongREJECT gibi zararlı istekleri reddetme oranlarını sırasıyla %3, %2 ve %12'ye indirdi, ancak yetenekleri (GPQA‑Diamond gibi genel bilimsel testlerde) neredeyse değişmedi. Ayrıca, sahte bir kırmızı‑takım ajanı hikayesi, düşünce token'larını önceden doldurma gibi yöntemlerle modelin zararlı taleplere %92‑%100 oranında yanıt vermesi sağlandı; bu durum, Claude modellerinde gözlemlenmedi.\n\nBu bulgular, GLM-5.3'ün savunmasız bir şekilde herkese açık olmasının siber tehdit ortamını kökten değiştirebileceğini, hem devlet hem de gayri‑devlet aktörlerinin bu tür modelleri kötüye kullanma riskini artırdığını gösteriyor. Aynı zamanda, savunma ekiplerinin de bu seviyedeki araçları erişilebilir kılmak için daha geniş bir erişim programına ihtiyaç duyduklarını vurguluyor.",
+  "onemli_maddeler": [
+    "GLM-5.3, ExploitBench testinde 410 denemeden 50'sinde (%12) uçtan uca exploit üretebildi.",
+    "Modelin yerleşik korumaları basit tekniklerle %90'dan %3'e düşürülebiliyor; abliteration yöntemiyle %100 zararlı istek yanıtı sağlanabiliyor.",
+    "İnsan uzmanlar, GLM-5.3 ile bir gün içinde yeni 0‑day açıkları keşfederek çalışan bir web‑exploit zinciri oluşturdu."
+  ],
+  "kategori": "benchmark",
+  "onem": 5,
+  "onem_gerekce": "Açık‑ağırlık bir modelin yüksek siber saldırı yetenekleri ve koruma eksikliği, küresel güvenlik risklerini artırdığı için sektörü derinden etkileyen kritik bir gelişmedir.",
+  "etiketler": [
+    "AI güvenliği",
+    "siber saldırı",
+    "GLM-5.3",
+    "açık ağırlık modeller",
+    "etik AI"
+  ],
+  "anilan_modeller": [
+    "GLM-5.3",
+    "GLM-5.2",
+    "Claude Opus 4.6",
+    "Claude Mythos Preview",
+    "Claude Mythos 5.1",
+    "Kimi K3",
+    "DeepSeek V4.1-Flash",
+    "GLM-5.3-Flash"
+  ],
+  "yorum_tr": "GLM-5.3'ün sınırsız erişilebilirliği, saldırganların gelişmiş exploitler üretmesini kolaylaştırırken, savunma ekiplerinin de benzer yeteneklere sahip araçları hızlıca edinmesini zorunlu kılıyor; bu durum, güvenlik ekosisteminde erişim dengesini yeniden şekillendirecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GLM-5.3",
+      "benchmark": "Binary Exploitation (OSS-Fuzz subset)",
+      "skor": 4,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "100 görev",
+      "kaynak_metinden_alinti": "GLM-5.3 develops full control-flow hijacks in 4% of the trials."
+    },
+    {
+      "model": "GLM-5.3 (abliterated)",
+      "benchmark": "JailbreakBench",
+      "skor": 3,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "The edit took GLM-5.3’s refusal rate from above 90% to about 3% on JailbreakBench."
+    },
+    {
+      "model": "GLM-5.3 (abliterated)",
+      "benchmark": "HarmBench",
+      "skor": 2,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "The edit took GLM-5.3’s refusal rate ... to about 2% on HarmBench."
+    },
+    {
+      "model": "GLM-5.3 (abliterated)",
+      "benchmark": "StrongREJECT",
+      "skor": 12,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "The edit took GLM-5.3’s refusal rate ... to 12% on StrongREJECT."
+    }
+  ],
+  "gorsel_url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/6d4a0d28992ade92d6fa63646fd9c9d318245c6c-2400x1260.jpg",
+  "url": "https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities",
+  "source": "Anthropic Research",
+  "sourceTier": "resmi",
+  "date": "2026-09-29T00:00:00.000Z",
+  "slug": "glm-5-3-and-the-spread-of-advanced-cyber-capabilities"
+}

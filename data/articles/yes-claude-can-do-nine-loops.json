@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "Claude, N=4 SYM Dokuz Döngü Amplitüd Hesabını Başardı",
+  "ozet_tr": "Anthropic'in Claude Science platformu, teorik fizik alanındaki zor bir problemi tek başına çözdü: N=4 süper Yang-Mills modelinde dokuz döngü seviyesine kadar scattering amplitude hesabı. Bu başarı, büyük ölçüde sınırlı bütçeyle (yaklaşık 100 $) 96 CPU'luk bir haftalık işlem gücü kullanılarak elde edildi ve hem akademik topluluğu hem de yapay zeka araştırmacılarını şaşırttı.",
+  "detayli_icerik_tr": "Matt von Hippel, eski bir amplitudeolog olarak, yapay zekanın kendi alanındaki sınırları zorlayıp zorlayamayacağını görmek istedi ve \"N=4 süper Yang-Mills'te dokuz döngü\" problemini bir meydan okuma olarak sundu. Bu problem, scattering amplitude'ların hesaplanmasında \"döngü\" sayısı arttıkça karmaşıklığın üssel olarak artması nedeniyle genellikle iki‑üç döngüyle sınırlı kalır; beş döngü bile nadir bir başarıdır.\n\nAnthropic'ten fizikçiler Liam Fitzpatrick ve Siddharth Mishra‑Sharma, von Hippel'in blogunu okuyarak bu meydan okumayı kabul etti. Claude Science adlı bir \"harness\" (yapı) içinde Claude LLM'yi, yapılandırılmış istemler ve kurallar aracılığıyla yönlendirerek problemi çözdüler. Model, hem geleneksel bootstrap yöntemiyle hem de form‑faktör yaklaşımıyla aynı sonucu iki ayrı yoldan elde etti. İşlem, Python ve SymPy paketleriyle yürütülürken, toplam maliyet yaklaşık 100 $ ve 96 CPU'luk bir haftalık çalışma süresi olarak raporlandı.\n\nSonuç, sadece Anthropic ekibiyle sınırlı kalmadı; Çin Bilimler Akademisi'nden Song He ve ekibi de benzer bir sonucu GPT‑6 destekli bir AI yardımıyla elde etmişti. Ancak Claude'un tek seferlik, insan müdahalesi olmadan ve hatasız bir şekilde sonuca ulaşması, mevcut AI sistemlerinin bilimsel araştırmalarda ne kadar güvenilir olabileceğine dair önemli bir gösterge sundu.\n\nBu deney, düşük maliyetli, iyi yapılandırılmış AI harness'ların karmaşık fiziksel hesaplamaları otomatikleştirebileceğini kanıtladı. Uzmanlar, alanın daha geniş kısımlarında da benzer \"düşük asma meyvesi\" projelerinin bulunabileceğini ve AI destekli kodlama pratiğinin yaygınlaşmasının araştırma temposunu önemli ölçüde artırabileceğini belirtiyor.",
+  "onemli_maddeler": [
+    "Claude Science, N=4 süper Yang-Mills modelinde dokuz döngü amplitude hesabını tek başına tamamladı.",
+    "Hesaplama, sadece 100 $ maliyetle ve 96 CPU'luk bir haftalık işlem gücüyle gerçekleştirildi.",
+    "AI, hem bootstrap hem de form‑faktör yöntemleriyle aynı sonucu iki farklı yoldan elde ederek güvenilirliğini gösterdi."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "AI'nın yüksek karmaşıklıktaki teorik fizik problemlerini düşük bütçeyle çözebilmesi, araştırma metodolojilerini ve maliyet yapılarını kökten değiştirme potansiyeline sahip olduğu için sektörde büyük bir etki yaratır.",
+  "etiketler": [
+    "AI",
+    "Claude",
+    "Amplitudeology",
+    "N=4 SYM",
+    "Bilimsel Hesaplama"
+  ],
+  "anilan_modeller": [
+    "Claude",
+    "Claude Science",
+    "GPT-6"
+  ],
+  "yorum_tr": "Bu gelişme, yapay zekanın sadece veri analizi değil, karmaşık teorik hesaplamalarda da bağımsız ve güvenilir bir araştırma ortağı olabileceğini gösteriyor; geliştiriciler için yeni araçların entegrasyonu, araştırmacılar için ise maliyet‑verimlilik anlamında büyük fırsatlar sunuyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/2ed453f8c87d2166b09940a859cd193b29678a88-3840x2160.png",
+  "url": "https://www.anthropic.com/research/yes-claude-can-do-nine-loops",
+  "source": "Anthropic Research",
+  "sourceTier": "resmi",
+  "date": "2026-09-25T00:00:00.000Z",
+  "slug": "yes-claude-can-do-nine-loops"
+}

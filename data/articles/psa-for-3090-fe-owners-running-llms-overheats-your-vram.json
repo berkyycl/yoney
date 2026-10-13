@@ -1,0 +1,60 @@
+{
+  "baslik_tr": "RTX 3090 FE sahiplerine uyarı: LLM çalıştırmak VRAM'ı aşırı ısıtıyor",
+  "ozet_tr": "RTX 3090 Founders Edition kartları, büyük dil modelleri (LLM) token üretirken VRAM sıcaklıklarının 112 °C'ye kadar yükseldiğini gösterdi. Kullanıcı, güç sınırını 270 W'ye düşürüp fanı %100 yaparak sıcaklığı 96 °C altında tutabildi ancak bu işlem %30 performans kaybına yol açtı. Undervolting ise sıcaklık sorununu çözmedi.",
+  "detayli_icerik_tr": "Nvidia RTX 3090 Founders Edition kartları, özellikle LLM'lerin token üretim aşamasında VRAM okuma kapasitesini tam olarak kullanarak aşırı ısınma eğilimi gösteriyor. Reddit topluluğu LocalLLaMA'da paylaşılan bir deneyde, stok fan ve güç eğrileri altında VRAM sıcaklığının sadece birkaç saniye içinde 112 °C'ye ulaştığı tespit edildi; bu değer üreticinin sürekli kullanım için belirlediği 96 °C sınırının çok üzerindeydi.\n\nKullanıcı, Qwen 3.8B‑27B modelini (5.1 bpw) thireus‑gguf‑tool‑suite ile çalıştırarak farklı güç kısıtlamaları ve fan ayarlarını test etti. 270 W güç sınırı ve fanın %100 hızda tutulması, VRAM sıcaklığını güvenli seviyelere (≤96 °C) geri çekti ancak bu konfigürasyon, modelin işleme hızını yaklaşık %30 oranında düşürdü. Nvidia'nın düşük güç seviyelerinde saat hızını düşürme (undervolting) mekanizması, 300 W üzerindeki güçlerde devreye girdiği için bu aşamada sıcaklık sorununu çözmedi.\n\nDaha yüksek güç limitleriyle de test yapıldı: 290 W'de VRAM sıcaklığı 100 °C, 328 W'de 104 °C ve 353 W'de 108 °C olarak ölçüldü. Kullanıcı, MTP (Multi‑Token Prediction) özelliğinin açık olmasının sıcaklık artışını daha da tetiklediğini, kapalı denemelerin ise daha kötü sonuçlar verebileceğini öne sürdü. Sonuç olarak, 3090 FE sahiplerinin LLM çalıştırırken güç sınırını 270 W civarında tutmaları ve fanı tam hızda çalıştırmaları önerildi.\n\nBu bulgular, yüksek bellek kapasiteli GPU'ların LLM yükleri altında termal yönetim stratejilerinin yeniden gözden geçirilmesi gerektiğini gösteriyor. Özellikle ev kullanıcıları ve araştırmacılar, kartlarını aşırı ısıdan korumak için manuel fan kontrolü ve güç kısıtlaması gibi yöntemleri uygulamalı.",
+  "onemli_maddeler": [
+    "RTX 3090 FE'de LLM token üretimi sırasında VRAM sıcaklığı 112 °C'ye ulaşabiliyor.",
+    "Güç sınırını 270 W'ye düşürüp fanı %100 yaparak sıcaklık 96 °C'nin altına çekilebilir, ancak bu %30 performans kaybına yol açar.",
+    "Undervolting düşük güç seviyelerinde etkili değil; saat hızı yalnızca 300 W üzerindeki güçlerde devreye giriyor."
+  ],
+  "kategori": "benchmark",
+  "onem": 3,
+  "onem_gerekce": "RTX 3090 FE gibi yüksek bellekli GPU'lar LLM çalıştıran kullanıcılar için yaygın, ancak termal sorunları sektörel bir etki yaratacak kadar geniş bir kitleyi etkilemiyor.",
+  "etiketler": [
+    "RTX 3090",
+    "VRAM",
+    "LLM",
+    "overheating",
+    "benchmark"
+  ],
+  "anilan_modeller": [
+    "Qwen 3.8B-27B"
+  ],
+  "yorum_tr": "Bu bulgular, LLM'leri ev ortamında çalıştıran geliştiriciler ve araştırmacılar için termal yönetimin kritik olduğunu gösteriyor; güç kısıtlaması ve fan kontrolü performans kaybına rağmen güvenli bir çalışma ortamı sağlıyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "RTX 3090 Founders Edition",
+      "benchmark": "VRAM temperature during token generation (stock fan/power curves)",
+      "skor": 112,
+      "birim": "°C",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "stock fan/power curves",
+      "kaynak_metinden_alinti": "VRAM hits 112C within seconds of starting token generation."
+    },
+    {
+      "model": "RTX 3090 Founders Edition",
+      "benchmark": "Power cap to keep VRAM ≤96°C",
+      "skor": 270,
+      "birim": "W",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "fan set to 100%",
+      "kaynak_metinden_alinti": "Cap your card 270W and manually set the fan to 100% to prevent VRAM from overheating"
+    },
+    {
+      "model": "RTX 3090 Founders Edition",
+      "benchmark": "Throughput loss at 270W power cap",
+      "skor": 30,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "power capped at 270W",
+      "kaynak_metinden_alinti": "This loses 30% throughput."
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/p6i9qifyy8vh1.png?width=140&height=131&auto=webp&s=0a2a9d0aff4a03fd4e9d2fa54262eea210194a03",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x4z19k/psa_for_3090_fe_owners_running_llms_overheats/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-13T15:02:59.000Z",
+  "slug": "psa-for-3090-fe-owners-running-llms-overheats-your-vram"
+}
