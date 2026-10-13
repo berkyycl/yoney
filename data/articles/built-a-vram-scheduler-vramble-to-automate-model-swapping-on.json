@@ -1,0 +1,42 @@
+{
+  "baslik_tr": "Yerel AI Çalışma İstasyonunda Model Değişimini Otomatikleştiren VRAM Zamanlayıcı vramble Geliştirildi",
+  "ozet_tr": "Yerel yapay zeka deneyleri için kurulan bir çalışma istasyonunda, modellerin VRAM ihtiyacını tek tek yönetmek zorlayıcı hale gelmişti. Bu sorunu çözmek amacıyla geliştirilen açık kaynaklı vramble, model yükleme ve boşaltma işlemlerini otomatikleştirerek öncelik tabanlı bir kuyruk sistemi sunuyor.",
+  "detayli_icerik_tr": "Yazılım geliştiricisi Valerio Dolci, farklı büyük dil modelleri ve araçları aynı anda çalıştırmak isteyen kullanıcıların karşılaştığı VRAM sıkıntısını gidermek için vramble adlı bir istek yönlendirme katmanı oluşturdu. vramble, bir modelin bellek ihtiyacını algılayıp, kullanılmadığında otomatik olarak belleği serbest bırakıyor ve yeni bir model talebi geldiğinde önceden belirlenmiş öncelik kurallarına göre sıraya alıyor. Bu sayede kullanıcılar, modelleri manuel olarak yükleyip boşaltma zahmetinden kurtuluyor ve Claude gibi dış hizmetlere token harcayarak süreçleri yönlendirme ihtiyacı ortadan kalkıyor.\n\nAraç, MIT lisansı altında GitHub üzerinden erişilebilir durumda ve şu anki sürümü sadece geliştiricinin kendi donanımında test edilmiş. Dolci, vramble'ın farklı sistemlerde çalışacağının garantisini vermese de topluluk katkılarına açık olduğunu belirtiyor. Projenin kod tabanı, Python tabanlı bir API ve GPU bellek izleme mekanizmalarını içeriyor; bu da model değişimlerinin milisaniye ölçeğinde gerçekleşmesini sağlıyor.\n\nİlginç bir yan not olarak, yazar Qwen 27B modelinin 200'ün üzerinde token/s (t/s) hızla çalıştığını ve beklentilerin çok ötesinde bir performans sergilediğini paylaştı. Bu veri, vramble'ın yüksek kapasiteli modelleri verimli bir şekilde yönlendirebilme potansiyelini gösteriyor. Kullanıcılar, bu tür büyük modelleri düşük bellekli sistemlerde dahi daha akıcı bir deneyimle çalıştırabilir.\n\nvramble, özellikle yerel LLM (Large Language Model) araştırmacıları, geliştiricileri ve AI meraklıları için bir araç seti sunuyor. Otomatik model takası, deneysel prototipleme sürecini hızlandırırken, donanım kaynaklarının optimal kullanımını sağlayarak maliyet etkinliğini artırıyor. Topluluk tarafından benimsenmesi ve katkı sağlanması halinde, benzer VRAM yönetim çözümlerinin ekosistemde yaygınlaşması bekleniyor.",
+  "onemli_maddeler": [
+    "vramble, model yükleme ve boşaltma işlemlerini otomatikleştirerek VRAM yönetimini kolaylaştırıyor.",
+    "Öncelik tabanlı kuyruk sistemi sayesinde farklı iş akışları sorunsuz bir şekilde sıraya alınıyor.",
+    "Qwen 27B modeli, vramble ile 200+ token/s hızına ulaşarak beklenenden daha yüksek performans gösterdi."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Yerel AI araştırma ortamlarında bellek yönetimi kritik bir engel; vramble bu sorunu çözerek geliştirme hızını ve kaynak verimliliğini artırıyor.",
+  "etiketler": [
+    "VRAM",
+    "model değişimi",
+    "yerel LLM",
+    "açık kaynak",
+    "performans"
+  ],
+  "anilan_modeller": [
+    "Qwen 27B"
+  ],
+  "yorum_tr": "vramble, yerel AI geliştirme süreçlerinde bellek yönetimini otomatikleştirerek hem geliştiricilerin iş yükünü hafifletiyor hem de büyük modellerin daha geniş bir donanım yelpazesinde kullanılabilirliğini artırıyor. Topluluk katkılarıyla olgunlaşması, benzer çözümlerin ekosistemde yaygınlaşmasına öncülük edebilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen 27B",
+      "benchmark": "throughput",
+      "skor": 200,
+      "birim": "tokens/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Qwen 27B at 200+ t/s is performing way better than I expected."
+    }
+  ],
+  "gorsel_url": "https://mineshop.eu/storage/blog-images/705/ai-workstation-gpu-vram-cooling-local-ai-qwen.png",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x4ocgn/built_a_vram_scheduler_vramble_to_automate_model/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-13T05:28:39.000Z",
+  "slug": "built-a-vram-scheduler-vramble-to-automate-model-swapping-on"
+}

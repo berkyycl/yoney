@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "vllm D3 karar modelleri: Kuantizasyon ve VRAM gereksinimleri üzerine topluluk sorgusu",
+  "ozet_tr": "vllm, D3 adlı karar modeli ailesini duyurdu ve llama.cpp bu modelleri desteklemeye başladı. Kullanıcılar, bu modellerin kuantizasyon hassasiyeti ve VRAM tüketimi konusunda net bilgiler arıyor. 6 GB GPU'lu bir sistemde Q8 kuantizasyonlu bir modelin çalıştırılabilirliği tartışılıyor.",
+  "detayli_icerik_tr": "vllm ekibi, D3 serisi karar modellerini (decision models) piyasaya sürerek, özellikle sınıflandırma ve yönlendirme görevlerinde kullanılabilecek hafif bir alternatif sundu. Bu modeller, llama.cpp kütüphanesine entegrasyonla yerel ortamlarda da çalıştırılabiliyor, bu da geliştiricilerin bulut dışı çözümler üretmesini kolaylaştırıyor.\n\nTopluluk üyelerinden regunakyle, bu yeni modellerin kuantizasyon seviyelerinin kalite üzerindeki etkisini merak etti. Otomatik tamamlama (FIM) modellerinde Q8 kuantizasyonunun Q4'e göre daha yüksek doğruluk sağladığı biliniyor; ancak karar modellerinde aynı kuralın geçerli olup olmadığı henüz netleşmedi. Kullanıcı, Q8 kuantizasyonlu \"ggml-org/vllm-d3-mini-GGUF\" modelinin 5.16 GB boyutunda olduğunu ve 6 GB VRAM'li bir GPU'da çalıştırmayı hedeflediğini belirtti.\n\nVRAM kullanımına gelince, karar modellerinin geleneksel LLM'lerdeki gibi uzun bağlam (context) gerektirmediği düşünülse de, model ağırlıklarının tamamının VRAM'de tutulması hâlâ kritik. Özellikle yoğun matris çarpımları ve aktivasyonların geçici depolanması için ek bellek ihtiyacı doğuyor. MoE (Mixture of Experts) modellerinde ağırlıkların hem VRAM hem de RAM arasında bölüştürülmesi mümkünken, D3 karar modelleri yoğunluklu (dense) bir mimariye sahip olduğu için ağırlıkların tamamının VRAM'de bulunması öneriliyor.\n\nKullanıcı, mevcut donanım sınırları içinde modeli çalıştırabilmek için ağırlıkları tamamen VRAM'e yerleştirmenin en güvenli yol olduğunu savunuyor. Bu yaklaşım, modelin performansını korurken, bellek taşması riskini azaltıyor. Topluluk, benzer donanım konfigürasyonlarına sahip diğer geliştiricilerin deneyimlerini paylaşarak, kuantizasyon ve bellek yönetimi konusunda ortak bir rehber oluşturmayı hedefliyor.",
+  "onemli_maddeler": [
+    "vllm D3 karar modelleri llama.cpp tarafından destekleniyor, yerel çalıştırma imkanı sağlıyor.",
+    "Karar modellerinin kuantizasyon hassasiyeti (Q8 vs Q4) henüz kesinleşmemiş, kalite etkisi araştırılıyor.",
+    "Modeller, bağlam gerektirmese de ağırlıkların tamamının VRAM'de tutulması öneriliyor; 6 GB GPU'da Q8 modeli 5.16 GB yer kaplıyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 3,
+  "onem_gerekce": "Yeni karar modelleri geliştiricilerin yerel AI çözümleri üretmesini etkileyebilir, ancak henüz performans ve bellek gereksinimleri netleşmediği için orta seviyede önem taşıyor.",
+  "etiketler": [
+    "decision-models",
+    "quantization",
+    "VRAM",
+    "llama.cpp",
+    "vllm"
+  ],
+  "anilan_modeller": [
+    "vllm-d3-mini",
+    "qwen-2.5-coder",
+    "qwen"
+  ],
+  "yorum_tr": "Karar modellerinin kuantizasyon ve bellek gereksinimlerine dair net veriler elde edilirse, geliştiriciler düşük donanımlı sistemlerde daha verimli çözümler üretebilir; bu da AI'nın erişilebilirliğini artıracaktır.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/daniel-han-of-unsloth-validates-qwen3-8-27b-will-run-only-v0-kabmtuygn3hh1.jpeg?width=640&crop=smart&auto=webp&s=52033531020b98894a86d23505d5ef925fd6c4f1",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x4pbla/running_decision_models_picking_quant_vram_usage/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-13T06:28:27.000Z",
+  "slug": "running-decision-models-picking-quant-vram-usage"
+}

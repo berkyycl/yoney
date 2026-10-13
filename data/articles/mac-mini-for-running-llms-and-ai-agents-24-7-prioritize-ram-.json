@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "Mac mini ile LLM ve AI ajanlarını 24/7 çalıştırmak: RAM mi yoksa CPU/GPU performansı mı öncelikli?",
+  "ozet_tr": "Kullanıcı, 27 milyar parametreye kadar Q4 kuantize modelleri 24 saat çalıştırabilecek bir Mac mini arayışında. M4 32 GB RAM ve M4 Pro 24 GB RAM seçenekleri arasında, bellek mi yoksa işlemci/gpu gücü mü daha kritik sorusuna yanıt arıyor.",
+  "detayli_icerik_tr": "Reddit topluluğu LocalLLaMA'da bir kullanıcı, yerel büyük dil modelleri (LLM) ve AI ajanlarını kesintisiz çalıştırmak amacıyla bir Mac mini satın almayı planladığını belirtti. Kullanıcı, 27 B parametreye kadar Q4 kuantizasyonlu modelleri çalıştırmak istediğini ve bu modellerin temel olarak günlük görevler ve model keşfi için kullanılacağını ifade etti. \n\nBu bağlamda iki donanım konfigürasyonu arasında karar vermeye çalışıyor: M4 çipli 32 GB RAM'li bir Mac mini ile M4 Pro çipli 24 GB RAM'li bir Mac mini. Sorunun özü, daha büyük modelleri bellekte tutabilmek için RAM'in mi, yoksa daha hızlı çıkarım (inference) süreleri için CPU/GPU performansının mı daha öncelikli olduğu. \n\nLLM'lerin bellek gereksinimleri, modelin parametre sayısı ve kuantizasyon seviyesine bağlı olarak değişir; Q4 kuantizasyonu, hafıza tüketimini %4'e kadar düşürürken, yine de 27 B bir modelin RAM'de yer alması için yaklaşık 30‑35 GB VRAM veya sistem belleği gerekir. Bu durumda, 32 GB RAM'li bir sistem, modelin tam yüklenmesini mümkün kılabilir, ancak çıkarım hızı M4 Pro'nun daha güçlü GPU çekirdeği sayesinde artabilir. \n\nTopluluk üyeleri, M4 Pro'nun daha yüksek GPU çekirdek sayısı ve daha geniş bellek bant genişliği sayesinde, özellikle düşük gecikmeli yanıtlar ve çoklu ajan senaryolarında avantaj sağlayacağını belirtiyor. Ancak, RAM sınırlaması modelin boyutunu kısıtlayabilir; 24 GB RAM ile 27 B modelin tam yüklenmesi mümkün olmayabilir, bu da modelin parçalı (offload) çalıştırılması ya da daha düşük parametreli modellerle sınırlı kalınması anlamına gelir. Sonuç olarak, kullanıcı ihtiyaçlarına göre bir denge kurmak gerekir: RAM önceliği, daha büyük modelleri doğrudan çalıştırmak isteyenler için kritik; CPU/GPU performansı ise sık sık çıkarım yapan ve yanıt süresine duyarlı uygulamalar için vazgeçilmez.",
+  "onemli_maddeler": [
+    "27 B Q4 kuantize bir modelin tam bellek ihtiyacı yaklaşık 30‑35 GB'dir; bu yüzden 32 GB RAM kritik bir eşik.",
+    "M4 Pro, daha yüksek GPU çekirdek sayısı ve bant genişliğiyle çıkarım hızını artırır, ancak RAM sınırlaması model boyutunu kısıtlayabilir.",
+    "RAM önceliği, büyük modelleri doğrudan yüklemek isteyen kullanıcılar için, GPU performansı ise düşük gecikmeli yanıt ve çoklu ajan senaryoları için daha önemlidir."
+  ],
+  "kategori": "arastirma",
+  "onem": 3,
+  "onem_gerekce": "Konu, yerel LLM çalıştırma ve AI ajanları için donanım seçiminde kritik bir dengeyi ele alıyor; geliştiriciler ve araştırmacılar için doğrudan uygulama etkisi taşıyor.",
+  "etiketler": [
+    "Mac mini",
+    "LLM",
+    "AI agents",
+    "RAM",
+    "CPU/GPU"
+  ],
+  "anilan_modeller": [
+    "M4",
+    "M4 Pro"
+  ],
+  "yorum_tr": "Bu tartışma, yerel LLM altyapısının ölçeklenebilirliğini belirleyen temel donanım kararlarını gözler önüne seriyor. Geliştiriciler, model boyutunu maksimize etmek istiyorlarsa RAM'i, yanıt süresini ön planda tutuyorlarsa GPU performansını önceliklendirmeli.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://manofmany.com/_next/image?url=https%3A%2F%2Fapi.manofmany.com%2Fwp-content%2Fuploads%2F2026%2F08%2FMac-Mini-M6-in-hand.jpg&w=1200&q=75",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x4ly8i/mac_mini_for_running_llms_and_ai_agents_247/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-13T03:17:11.000Z",
+  "slug": "mac-mini-for-running-llms-and-ai-agents-24-7-prioritize-ram-"
+}

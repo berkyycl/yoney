@@ -1,0 +1,53 @@
+{
+  "baslik_tr": "Dodaios: Açık kaynak masaüstü AI ajan uygulaması, yerel Ollama modelleriyle çalışıyor",
+  "ozet_tr": "Dodaios, Apache 2.0 lisanslı bir masaüstü AI ajan platformu, Windows, macOS ve Linux’da yerel Ollama modelleriyle çalışıyor. Geliştirici, RTX 5070 Ti‑de 16 GB bellekle qwen3.5:9b ve qwen3.8‑16gb modellerini iki ayrı ajan için test etti; yanıt süreleri sırasıyla 71 saniye ve 116 saniye olarak ölçüldü.",
+  "detayli_icerik_tr": "Dodaios (eski adıyla Personal Jarvis), Apache 2.0 lisanslı, bulut bağımlılığı olmayan bir AI ajan uygulaması olarak tanıtıldı. Uygulama, Windows, macOS ve Linux üzerinde çalışıyor ve hem yerel hem de bulut tabanlı modelleri destekliyor; bu paylaşımda sadece yerel Ollama entegrasyonu ele alındı. Kullanıcılar, her bir ajan için ayrı sohbet, talimat, araç, hafıza ve takvim tanımlayabiliyor; ayrıca dokuz farklı kodlama CLI’sını yan yana terminal panellerinde ya da tek bir iş akışı içinde kullanabilen bir \"agentic IDE\" sunuluyor. Sesli etkileşim de mümkün: yerel Whisper ile konuşma tanıma ve Piper ile ses sentezi tamamen offline gerçekleşiyor.\n\nUygulamanın demo videosunda iki ajan oluşturulup, Ollama üzerinden sırasıyla qwen3.5:9b ve qwen3.8‑16gb modelleri seçildi. RTX 5070 Ti 16 GB GPU’da çalışan bu modeller, üç gönderi taslağı ve bir e‑posta yanıtı üretmek için kullanıldı. Küçük model 71 saniye, büyük model ise 116 saniye sürede yanıt verdi. Ancak yerel modeller, araç çağrıları (örneğin rutin kaydetme) konusunda eksik kaldı; 9 b modeli hiç araç çağırmadı, 16 gb modeli rutin listesini iki kez çağırdı ama kaydetme aracını hiç çalıştırmadı ve sekiz dakikalık bir süreden sonra oturumu sonlandırdı.\n\nDodaios’un mimarisi Python 3.11 ve FastAPI tabanlı bir backend, React tabanlı bir frontend ve pywebview aracılığıyla yerel bir pencere içinde sunuluyor. Modeller, Ollama ve OpenAI‑uyumlu yerel sunucular gibi bir akış arabirimi üzerinden eklenti olarak ekleniyor; aynı zamanda OpenAI, Anthropic, Gemini, OpenRouter ve Nvidia gibi bulut sağlayıcıları da destekleniyor. Tüm katmanlar aşağı yönlü protokoller ve yan yönlü immutable tipli olaylar üzerinden iletişim kuruyor; her olay bir izleme kimliği taşıyor ve bir \"flight recorder\" sayesinde oturumlar yeniden oynatılabiliyor. Güvenlik açısından her eylem dört seviyeli bir risk kontrolünden geçiyor (safe, monitor, ask, block). Hafıza, diskte tutulan yerel bir wiki olarak işliyor ve kimlik bilgileri işletim sisteminin güvenli depolama alanında saklanıyor.\n\nGeliştirici, henüz yayınlanmamış bir dalda bulunan piksel yaratıklarıyla video kaydettiğini ve projenin tek kişilik bir çaba olduğunu, 5.900 civarında commit bulunduğunu belirtiyor. Bu nedenle bazı eksikliklerin ve kırılganlıkların olabileceği uyarısında bulunuyor ve 16 GB bellek sınırında araç çağrılarını güvenilir bir şekilde gerçekleştirebilecek yerel bir model arayışında olduğunu ifade ediyor.",
+  "onemli_maddeler": [
+    "Dodaios, yerel Ollama modelleriyle çalışan, bulutsuz ve açık kaynak bir masaüstü AI ajan platformu.",
+    "RTX 5070 Ti 16 GB GPU’da qwen3.5:9b modeli 71 saniye, qwen3.8‑16gb modeli 116 saniye sürede görevleri tamamladı.",
+    "Yerel modeller araç (tool) çağrılarında başarısız oldu; 9 b modeli hiç araç çağırmadı, 16 gb modeli rutin listesini iki kez çağırdı ama kaydetme aracını çalıştırmadı.",
+    "Uygulama Python 3.11/FastAPI backend, React frontend ve pywebview ile native pencere sunumu sağlıyor; olay tabanlı mimari ve risk kontrol mekanizması içeriyor."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Yerel AI modellerin masaüstü entegrasyonu ve araç çağrısı yetenekleri, geliştiricilerin offline çözümler üretmesinde kritik bir adım oluşturuyor.",
+  "etiketler": [
+    "open-source",
+    "desktop-agent",
+    "ollama",
+    "local-llm",
+    "AI-tools"
+  ],
+  "anilan_modeller": [
+    "qwen3.5:9b",
+    "qwen3.8-16gb"
+  ],
+  "yorum_tr": "Bu gelişme, yerel LLM'lerin masaüstü asistanlarıyla entegrasyonunun mümkün olduğunu gösterirken, araç çağrısı gibi karmaşık görevlerde hâlâ güvenilir bir model bulunmadığını ortaya koyuyor; geliştiriciler için hem fırsat hem de iyileştirme alanı sunuyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "qwen3.5:9b",
+      "benchmark": "3 gönderi taslağı ve 1 e‑posta yanıtı üretme süresi",
+      "skor": 71,
+      "birim": "seconds",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "real time to the answer was 71 s for the 9b"
+    },
+    {
+      "model": "qwen3.8-16gb",
+      "benchmark": "3 gönderi taslağı ve 1 e‑posta yanıtı üretme süresi",
+      "skor": 116,
+      "birim": "seconds",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "real time to the answer was ... 116 s for the larger one"
+    }
+  ],
+  "gorsel_url": "https://external-preview.redd.it/cnpwamtpOXAyN3ZoMVbsotEFYFzHUfwHlfPArts0mbbllCMKYJjr5sAoDp74.png?width=640&crop=smart&auto=webp&s=ba99a40729830d23398e1a2d9f7907571003dd0c",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x4r3ht/opensource_desktop_agent_app_running_its_agents/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-13T08:24:24.000Z",
+  "slug": "open-source-desktop-agent-app-running-its-agents-on-local-ol"
+}

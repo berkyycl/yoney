@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "Tesla V100 SXM2 Modülünde Güç İzleme ve Xid Hatası Sorunu",
+  "ozet_tr": "Bir kullanıcı, NVIDIA Tesla V100 SXM2 modülünde nvidia-smi komutunun güç tüketimini \"N/A / N/A\" olarak göstermesi ve dmesg'de Xid 44 hatası alması gibi kritik bir sorun yaşadığını bildirdi. Sorun, farklı PCIe yuvaları, yeniden takma ve birden fazla yeniden başlatma gibi temel çözümlerle giderilemedi.",
+  "detayli_icerik_tr": "Reddit'in LocalLLaMA topluluğunda paylaşılan bir gönderide, /u/MrCatberry adlı kullanıcı, Tesla V100 SXM2 GPU'sunun güç izleme verilerinin eksik olduğunu ve \"NVRM: Xid (PCI:0000:02:00): 44\" hatasının dmesg çıktısında göründüğünü rapor etti. Kullanıcı, bu hatanın llama-cli uygulamasını çalıştırırken ortaya çıktığını ve sistemin Ubuntu 26.04, NVIDIA sürücü 580 ve CUDA 13 (aynı zamanda CUDA 12) ortamında aynı sorunu verdiğini belirtti.\n\nSorunun kökenine inmek için çeşitli denemeler yapıldı: GPU farklı bir PCIe portuna takıldı, modül yeniden oturtuldu ve birden fazla sistem yeniden başlatıldı. Ancak bu adımlar sorunu çözmedi. Kullanıcı, sorunun donanımsal bir arıza mı yoksa sürücü/firmware uyumsuzluğu mu olduğunu anlamak için topluluktan öneri talep ediyor.\n\nTesla V100 SXM2, yüksek performanslı hesaplamalar ve derin öğrenme görevleri için tasarlanmış bir veri merkezi GPU'sudur ve güç tüketimi ile sıcaklık izleme, stabil çalışması için kritik öneme sahiptir. \"N/A / N/A\" çıktısı, GPU'nun güç sensörlerinden veri alamadığını gösterir ve bu durum, Xid 44 hatasıyla birlikte genellikle GPU'nun dahili hata durumuna işaret eder. NVIDIA'nın resmi dökümantasyonunda Xid 44, PCIe iletişim hatası veya güç dağıtım sorunlarıyla ilişkilendirilir.\n\nKullanıcıların benzer sorunlarla karşılaşmaması için, NVIDIA'nın en son firmware güncellemelerinin ve sürücü paketlerinin kontrol edilmesi, BIOS ayarlarının (özellikle PCIe güç yönetimi) gözden geçirilmesi ve mümkünse modülün başka bir sunucu ya da test kartı üzerinde denenmesi öneriliyor. Sorunun devam etmesi durumunda, donanım garantisi kapsamında NVIDIA destek hattına başvurulması tavsiye ediliyor.",
+  "onemli_maddeler": [
+    "nvidia-smi komutunda güç tüketimi \"N/A / N/A\" olarak gösteriliyor.",
+    "dmesg'de \"NVRM: Xid (PCI:0000:02:00): 44\" hatası alınıyor.",
+    "Farklı PCIe portları, yeniden takma ve sistem yeniden başlatma gibi temel çözümler sorunu gidermedi."
+  ],
+  "kategori": "diger",
+  "onem": 3,
+  "onem_gerekce": "Tesla V100 gibi veri merkezi sınıfı GPU'ların çalışmaması, araştırma laboratuvarları ve AI geliştirme ekipleri için kritik bir kesinti oluşturabilir.",
+  "etiketler": [
+    "Tesla V100",
+    "SXM2",
+    "CUDA",
+    "Ubuntu",
+    "NVIDIA sürücü"
+  ],
+  "anilan_modeller": [
+    "Tesla V100 SXM2"
+  ],
+  "yorum_tr": "Bu tür donanım arızaları, yüksek performanslı hesaplama ortamlarında güvenilirlik riskini artırır; geliştiricilerin sistem izleme ve hata yönetimi süreçlerini güçlendirmesi, benzer kesintilerin önüne geçebilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/32gb-v100-sxm2-the-ultimate-local-ai-inference-gpu-v0-4ya6au7kwwng1.png?width=2500&format=png&auto=webp&s=672ebba26388648d3526d49096d5a7b0a31c65ca",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x4oma6/problems_with_tesla_v100_sxm2/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-13T05:45:32.000Z",
+  "slug": "problems-with-tesla-v100-sxm2"
+}
