@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "SpaceXSI, Grok Bot ile Müşteri Destek Operasyonunu Ölçeklendirdi",
+  "ozet_tr": "SpaceXSI, Cursor birleşmesi sonrası destek ekibini Grok Bot etrafında yeniden yapılandırarak, çalışan sayısını artırmadan %175 daha fazla destek talebini karşılayabildi. Model, biletleri ön incelemeden çözüm aşamasına kadar otomatikleştirerek maliyeti bilet başına $0.20‑$0.30 seviyelerine düşürdü.",
+  "detayli_icerik_tr": "SpaceXSI, Cursor'un 14 Ağustos 2026'da şirketine katılmasıyla iki destek ekibini birleştirdi ve aynı dönemde yeni bir AI asistanı olan Grok Bot'u devreye aldı. İlk aşamada Grok Bot, Plain biletleme ve Linear hata takibi sistemlerine bağlanarak sadece iç notlar oluşturdu ve her yazma eylemi için insan onayı gerektirdi; bu sayede modelin kararları gerçek müşteriyi etkilemeden test edildi.\n\nModelin güvenilirliği arttıkça, Grok Bot en basit biletlerde doğrudan yanıt vermeye başladı ve gün içinde tamamen otomatik yanıtlayıcı hâline geldi. Biletlerin keşif, araştırma ve sorun giderme aşamalarında ön inceleme yaparak token tüketimini optimize etti; yaygın sorunlar Linear ve Datadog entegrasyonlarıyla otomatik olarak sınıflandırıldı, hatta video kaydıyla sorunun yeniden üretimi sağlandı.\n\nGrok Bot, sadece bireysel biletleri çözmekle kalmayıp, kuyruk yönetiminde de aktif rol üstlendi. Gelen talep hacmini gerçek zamanlı izleyerek önceliklendirme, sorumluluk atama ve SLA ihlallerine karşı uyarı mekanizmaları geliştirdi. Aynı zamanda belirli bir eşik aşan aynı sorunları otomatik olarak olay olarak ilan ederek, duygu analizi ve tekrarlayan raporları izleyip erken uyarı verdi.\n\nSürekli iyileştirme döngüsü içinde Grok Bot, hem insan hem de bot etkileşimlerini değerlendirerek haftalık kalite raporları hazırlıyor, eğitim eksiklerini ve dokümantasyon ihtiyaçlarını belirliyor. Günlük olarak 20.000'den fazla ürün geri bildirimi toplayıp temalar oluşturuyor, bu verileri mühendislik ve ürün ekiplerine aktarıyor. Sonuç olarak ekip, tekrarlayan rutin işlerden kurtulup daha karmaşık, yargı gerektiren görevlere odaklanabiliyor.",
+  "onemli_maddeler": [
+    "Grok Bot, destek bilet sayısındaki %175 artışı insan ekibi artırmadan karşıladı.",
+    "Bilet başına çözüm maliyeti $0.20‑$0.30'a düşürüldü, geleneksel AI araçlarının $1‑$4'luk maliyetine kıyasla %80 tasarruf sağlandı.",
+    "Model, gerçek zamanlı kuyruk yönetimi, otomatik önceliklendirme ve olay tespitiyle SLA uyumluluğunu artırdı."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Kurumsal AI destek otomasyonu alanında maliyet ve ölçeklenebilirlik açısından kritik bir örnek sunması, diğer şirketlerin benzer çözümler geliştirmesine yön verebilir.",
+  "etiketler": [
+    "AI destek",
+    "Grok Bot",
+    "SpaceXSI",
+    "müşteri hizmetleri",
+    "otomasyon"
+  ],
+  "anilan_modeller": [
+    "Grok Bot"
+  ],
+  "yorum_tr": "Grok Bot'un destek süreçlerine entegrasyonu, operasyonel verimliliği artırırken maliyetleri önemli ölçüde azaltıyor; bu, AI destek çözümlerinin geniş çapta benimsenmesi için güçlü bir referans oluşturuyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://x.ai/images/news/grok-bot-customer-support-og.webp",
+  "url": "https://x.ai/news/grok-bot-customer-support",
+  "source": "xAI",
+  "sourceTier": "resmi",
+  "date": "2026-09-22T00:00:00.000Z",
+  "slug": "how-spacexsi-is-using-grok-bot-to-scale-customer-support"
+}

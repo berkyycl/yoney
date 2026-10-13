@@ -1,0 +1,61 @@
+{
+  "baslik_tr": "Meta, AI ajanları için Muse Wonder ve Muse Wonder Full modellerini tanıttı",
+  "ozet_tr": "Meta, kişisel ve profesyonel ajanlık görevleri için tasarlanan en yetkin modelleri Muse Wonder ve Muse Wonder Full'ı duyurdu. Yeni modeller, Active Memory ve Active Focus gibi yenilikçi özelliklerle bellek ve hedef takibinde üst seviyeye çıkıyor ve kodlama yetenekleriyle uzun vadeli yazılım projelerini destekliyor.",
+  "detayli_icerik_tr": "Meta, yeni nesil yapay zeka modelleri Muse Wonder ve Muse Wonder Full'ı Meta Model API ve Muse Code platformları üzerinden kullanıma sundu. Muse Wonder, kişisel asistanlık ve profesyonel ajan görevleri için tasarlanırken, Muse Wonder Full sadece Muse Code abonelerine erişim sağlıyor. Her iki model de Meta'nın gigawatt ölçekli Prometheus veri merkezinde, Muse Spark'tan devralınan ölçekleme yaklaşımıyla eğitildi.\n\nYeni model ailesi, Active Memory ve Active Focus mekanizmalarını birleştiriyor. Active Memory, konuşmalar arasında önemli kişisel bağlamı koruyarak ilgili detayları gerektiğinde geri çağırıyor. Active Focus ise zor hedeflerde alternatif yaklaşımlar deneyerek, engelleri aşma, yeni bilgilere uyum sağlama, açıklama talep etme ve kritik eylemler öncesi kontrol yapma yeteneği sunuyor. Bu özellikler, modellerin hukuki, finansal ve sağlık gibi alanlarda uzmanlık gerektiren görevleri yerine getirebilmesini sağlıyor.\n\nKodlama kapasitesi de önemli bir gelişme gösteriyor; Muse Wonder serisi, küçük uygulamalardan uzun vadeli, tekrarlı test ve revizyon gerektiren yazılım projelerine kadar geniş bir yelpazede kod üretebiliyor. Meta, bu modellerin domain bilgisine dayalı görevlerde, özellikle kişisel veri (mesajlar, takvim, özel belgeler) erişiminde yüksek düzeyde gizlilik ve kötüye kullanım direnci sağladığını vurguluyor. Güvenlik raporu yakında yayınlanacak.\n\nPerformans açısından Muse Wonder Full, Artificial Analysis Index v4.3'te ikinci sırada yer alarak Claude Opus 5.5'ten sadece 2 puan farkla geride. Aynı zamanda DeepSWE benchmark'ında 79 puanla en iyi skoru elde etti. Muse Wonder ise aynı indeks üzerinde 52 puan, Full sürümü ise 56 puan alarak önceki Muse Spark 1.3 modelinin (48 puan) üzerine önemli bir sıçrama kaydetti.",
+  "onemli_maddeler": [
+    "Muse Wonder ve Muse Wonder Full, Active Memory ve Active Focus özellikleriyle bellek ve hedef takibinde yeni bir seviyeye ulaştı.",
+    "Muse Wonder Full, Artificial Analysis Index v4.3'te ikinci sırada yer alarak Claude Opus 5.5'ten sadece 2 puan farkla geride kaldı ve DeepSWE'de 79 puanla SOTA oldu.",
+    "Modeller, Meta'nın gigawatt ölçekli Prometheus veri merkezinde eğitildi ve Muse Spark'tan devralınan ölçekleme yöntemiyle geliştirildi."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Meta'nın yeni modelleri, bellek, odak ve kodlama yeteneklerinde sektöre yön veren yenilikler sunarak AI ajanları pazarında rekabeti yeniden şekillendiriyor.",
+  "etiketler": [
+    "Meta",
+    "Muse Wonder",
+    "AI ajanları",
+    "model duyurusu",
+    "benchmark"
+  ],
+  "anilan_modeller": [
+    "Muse Wonder",
+    "Muse Wonder Full"
+  ],
+  "yorum_tr": "Muse Wonder serisi, bellek ve odak yönetimindeki gelişmeleriyle geliştiricilere daha tutarlı ve uzun vadeli görev yürütme imkanı tanırken, yüksek benchmark skorları sayesinde rekabetçi bir konuma geliyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Muse Wonder",
+      "benchmark": "Artificial Analysis Index v4.3",
+      "skor": 52,
+      "birim": "points",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "max reasoning effort",
+      "kaynak_metinden_alinti": "Muse Wonder scores 52 on the Artificial Analysis Intelligence Index v4.3 at max reasoning effort."
+    },
+    {
+      "model": "Muse Wonder Full",
+      "benchmark": "Artificial Analysis Index v4.3",
+      "skor": 56,
+      "birim": "points",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "max reasoning effort",
+      "kaynak_metinden_alinti": "Muse Wonder Full scores 56 on the Artificial Analysis Intelligence Index v4.3 at max reasoning effort."
+    },
+    {
+      "model": "Muse Wonder Full",
+      "benchmark": "DeepSWE",
+      "skor": 79,
+      "birim": "points",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Muse Wonder Full is SOTA on DeepSWE, scoring 79 points."
+    }
+  ],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/10/Model-API-10-12-2026_06_41_PM.jpg",
+  "url": "https://www.testingcatalog.com/meta-launches-muse-wonder-and-wonder-full-for-ai-agents/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-12T22:16:46.000Z",
+  "slug": "meta-launches-muse-wonder-and-wonder-full-for-ai-agents"
+}

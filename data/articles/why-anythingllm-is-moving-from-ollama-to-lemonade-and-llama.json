@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "AnythingLLM, Ollama'dan Lemonade ve llama.cpp'ye geçişini duyurdu",
+  "ozet_tr": "AnythingLLM ekibi, yerleşik Lemonade SDK'sının topluluk tarafından benimsenmesinden duyulan heyecanı paylaşıyor ve platformun Ollama yerine Lemonade ve llama.cpp tabanlı bir mimariye taşındığını açıkladı.",
+  "detayli_icerik_tr": "Yerel LLaMA topluluğu içinde paylaşılan bir Reddit gönderisinde, AnythingLLM projesinin geliştiricileri, Lemonade gömülü SDK'sının dışarıda kullanılmaya başlanmasının mutluluğunu dile getirdi. Bu duyuru, projenin önceki dağıtım altyapısı olan Ollama'dan tamamen ayrılarak Lemonade ve llama.cpp tabanlı bir çözüm benimseyeceği anlamına geliyor.\n\nLemonade, hafif ve yüksek performanslı bir yerel LLM çalıştırma katmanı olarak biliniyor; gömülü SDK'sı sayesinde geliştiriciler, uygulamalarına doğrudan model entegrasyonu yapabiliyor. AnythingLLM'in bu altyapıya geçişi, hem dağıtım maliyetlerini düşürmeyi hem de kullanıcıların daha düşük gecikme süresiyle model yanıtları almasını hedefliyor.\n\nOllama, bir önceki dönemde popüler bir paket yöneticisi ve çalışma ortamı olarak kullanılmıştı, ancak sınırlı özelleştirilebilirlik ve lisans kısıtlamaları bazı topluluk üyeleri tarafından eleştiriliyordu. Lemonade ve llama.cpp ise açık kaynak kodlu, platform bağımsız ve geniş donanım desteği sunarak bu eksikleri kapatıyor.\n\nBu geçiş, AnythingLLM'in topluluk odaklı bir strateji izlediğini ve geliştiricilerin mevcut araçlarıyla daha sorunsuz entegrasyon sağlayarak projelerini hızlandırmayı amaçladığını gösteriyor. Lemonade SDK'sının benimsenmesi, yerel LLM çözümlerinin ekosisteminde yeni bir dönemin başlangıcı olarak görülüyor.",
+  "onemli_maddeler": [
+    "AnythingLLM, Ollama yerine Lemonade ve llama.cpp tabanlı bir altyapıya geçiş yaptı.",
+    "Lemonade gömülü SDK'sının topluluk tarafından benimsenmesi ve kullanılmaya başlanması.",
+    "Geçiş, daha düşük maliyet, düşük gecikme ve açık kaynak avantajları sunmayı hedefliyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 2,
+  "onem_gerekce": "Topluluk içinde yapılan bir duyuru olup, sektörel çapta büyük bir etki yaratmasa da geliştiriciler için faydalı bir araç değişikliğini işaret ediyor.",
+  "etiketler": [
+    "AnythingLLM",
+    "Lemonade",
+    "Ollama",
+    "llama.cpp",
+    "SDK"
+  ],
+  "anilan_modeller": [
+    "Lemonade",
+    "llama.cpp"
+  ],
+  "yorum_tr": "AnythingLLM'in Lemonade ve llama.cpp'ye geçişi, açık kaynaklı ve düşük maliyetli LLM entegrasyonlarını destekleyen geliştiriciler için olumlu bir adım. Ancak, Ollama kullanıcıları için geçiş sürecinde uyumluluk ve performans testlerinin dikkatle yürütülmesi gerekecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/b5SWE1pikEjpZWkq69EMY6hgCE2zIPWp1zP7JWnfqiQ.png?width=640&crop=smart&auto=webp&s=de9952ce2a03f794f5111338b297a971c48b29c0",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x5720r/why_anythingllm_is_moving_from_ollama_to_lemonade/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-13T19:59:31.000Z",
+  "slug": "why-anythingllm-is-moving-from-ollama-to-lemonade-and-llama"
+}

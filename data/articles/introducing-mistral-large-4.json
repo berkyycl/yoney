@@ -1,0 +1,142 @@
+{
+  "baslik_tr": "Mistral Large 4 (ML4) Açık Ağırlıklı 1 Trilyon Parametreli Model Tanıtıldı",
+  "ozet_tr": "Mistral AI, 1 trilyon parametreli ve 52 milyar aktif parametreye sahip yeni açık‑ağırlıklı multimodal modeli Mistral Large 4'ü (ML4) kamu önizlemesi olarak sundu. Model, siber güvenlik, kodlama, finans ve bilim gibi kritik iş yüklerinde açık‑ağırlıklı rakiplerinin çok ötesinde performans gösteriyor ve Eylül ayı sonunda ağırlık dosyaları yayınlanacak.",
+  "detayli_icerik_tr": "Mistral Large 4, 1 trilyon parametreli natively multimodal bir model olarak tanıtıldı ve 52 milyar aktif parametreye sahip. Model, 3.800 NVIDIA Grace Blackwell GPU’da, Mistral’ın Avrupa veri merkezlerinde sıfırdan eğitildi ve 160 tan fazla dilde, özellikle Avrupa Birliği resmi dillerinde çok dilli bir veri seti kullanıldı. Açık‑ağırlıklı yapısı sayesinde müşteriler, modeli kendi altyapılarına kurarak tam kontrol ve denetim sağlayabilecek.\n\nML4, siber güvenlik alanında Artificial Analysis Cyber Index testinde %82 skorla en yüksek puanı alırken, 40 sorudan oluşan Cybench setinde %93 başarı yakaladı. Kodlama yetenekleri DeepSWE v1.1 (%61.7), SWE‑Atlas‑QnA (%59.4) ve Terminal‑Bench 4 (%28.3) gibi benchmarklarda güçlü sonuçlar verdi; birleşik Coding Agent Index skoru %49.8 olarak rakiplerini geride bıraktı. İnsan değerlendirmesinde Surge AI tarafından yapılan testte 1‑5 ölçeğinde 3.74 puan alarak beş model arasında ikinci sırada yer aldı.\n\nAgentik iş akışlarında AutomationBench üzerinde %59.9 başarı gösteren ML4, uzun vadeli bilgi işi ölçütü AA‑Briefcase'te 1.393 Elo puan elde etti. Görsel yerleştirme (visual grounding) görevinde Dense 200 benchmarkinde %42 skorla GPT‑6‑Astra’yı geride bıraktı. Ayrıca Lakera’nın B3 AI Security Benchmark’inde %93.3 saldırı direnci ve KORA Benchmark’inde 1.691 puan (maksimum 2) alarak güvenlik ve etik açıdan da lider konumda.\n\nModel, gerçek dünya ortamlarında siber güvenlik liderleri, denetimli ortaklar ve devlet otoriteleriyle sınırlı moderasyonlu testler yürütüyor. Reinforcement Learning (RL) altyapısı, milyonlarca tokenlik uzun vadeli roll-out’ları destekleyerek modelin yeteneklerini sürekli iyileştiriyor. Mistral, bu modeli Avrupa’da tamamen kendi veri merkezleri üzerinden sunarak AI egemenliği vizyonunu pekiştiriyor ve Ekim ayı sonunda ağırlıkların açıkça yayınlanmasıyla ekosistemi genişletmeyi hedefliyor.",
+  "onemli_maddeler": [
+    "ML4, 1 trilyon parametre ve 52 milyar aktif parametreyle Mistral’ın en büyük ve en yetenekli modeli.",
+    "Siber güvenlikte %82 (Artificial Analysis Cyber Index) ve %93 (Cybench) skorlarıyla açık‑ağırlıklı modeller arasında lider.",
+    "Kodlama benchmarklarında DeepSWE %61.7, SWE‑Atlas‑QnA %59.4 ve Terminal‑Bench 4 %28.3 gibi yüksek puanlar.",
+    "Görsel yerleştirme Dense 200 testinde %42 skorla kapalı modelleri geride bıraktı.",
+    "Lakera B3 AI Security Benchmark’inde %93.3 saldırı direnci ve KORA Benchmark’inde 1.691 puanla güvenlikte öne çıktı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Mistral Large 4, açık‑ağırlıklı ve çok dilli bir multimodal model olarak Avrupa’da AI egemenliği, güvenlik ve kritik iş yüklerinde performans liderliği sağlıyor; bu da sektördeki rekabeti ve açık‑kaynak ekosistemini derinden etkiliyor.",
+  "etiketler": [
+    "Mistral Large 4",
+    "açık‑ağırlık",
+    "multimodal",
+    "siber güvenlik",
+    "AI egemenliği"
+  ],
+  "anilan_modeller": [
+    "Claude Opus 5.5",
+    "GPT-6 Astra",
+    "DeepSeek V4 Pro",
+    "Qwen3.8 Max",
+    "Kimi K3",
+    "GLM-5.3",
+    "GLM-5.2",
+    "Kimi-K2.6",
+    "Kimi-K3"
+  ],
+  "yorum_tr": "ML4, açık‑ağırlıklı bir modelin güvenlik ve bilim gibi yüksek riskli alanlarda kapalı sistemlerin ötesine geçebileceğini gösteriyor; geliştiriciler daha fazla özelleştirilebilirlik ve denetim elde ederken, kurumlar da veri egemenliğini koruyarak ileri seviye AI yeteneklerinden faydalanabilecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Mistral Large 4",
+      "benchmark": "Artificial Analysis Cyber Index (vulnerability reproduction & patch)",
+      "skor": 82,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "vulnerability reproduction & patch",
+      "kaynak_metinden_alinti": "ML4 scores 82%, the highest of any model."
+    },
+    {
+      "model": "Mistral Large 4",
+      "benchmark": "Cybench",
+      "skor": 93,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "40 exercises drawn from security competitions",
+      "kaynak_metinden_alinti": "ML4 solves 93% of the challenges in Cybench, a set of 40 exercises drawn from security competitions."
+    },
+    {
+      "model": "Mistral Large 4",
+      "benchmark": "DeepSWE v1.1",
+      "skor": 61.7,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "ML4 scores 61.7% on DeepSWE v1.1."
+    },
+    {
+      "model": "Mistral Large 4",
+      "benchmark": "SWE-Atlas-QnA",
+      "skor": 59.4,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "ML4 scores 59.4% on SWE-Atlas-QnA."
+    },
+    {
+      "model": "Mistral Large 4",
+      "benchmark": "Terminal-Bench 4",
+      "skor": 28.3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "ML4 scores 28.3% on Terminal-Bench 4."
+    },
+    {
+      "model": "Mistral Large 4",
+      "benchmark": "Coding Agent Index",
+      "skor": 49.8,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Its combined Coding Agent Index score of 49.8% places it ahead of DeepSeek V4 Pro 0813 and Qwen3.8 Max."
+    },
+    {
+      "model": "Mistral Large 4",
+      "benchmark": "Surge AI Human Evaluation (coding quality)",
+      "skor": 3.74,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "human rating 1–5 scale",
+      "kaynak_metinden_alinti": "ML4 Preview ranked second of five models (3.74), ahead of Kimi K3 (3.59), GLM-5.3 (3.60) and GLM-5.2 (3.40), and behind only Claude Opus 5 (4.22)."
+    },
+    {
+      "model": "Mistral Large 4",
+      "benchmark": "AutomationBench",
+      "skor": 59.9,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "657 business workflows across apps",
+      "kaynak_metinden_alinti": "On AutomationBench — 657 business workflows across apps like Gmail, Google Sheets, Slack, and Salesforce — it scores 59.9%."
+    },
+    {
+      "model": "Mistral Large 4",
+      "benchmark": "Dense 200 (visual grounding)",
+      "skor": 42,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "visual grounding dense 200 test",
+      "kaynak_metinden_alinti": "ML4 ... surpassing GPT‑6‑Astra on Dense 200 (42% vs 41%)."
+    },
+    {
+      "model": "Mistral Large 4",
+      "benchmark": "Lakera B3 AI Security Benchmark",
+      "skor": 93.3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "On Lakera’s public B3 AI Security Benchmark, ML4 resists 93.3% of attacks – we see no higher scores among competitors."
+    },
+    {
+      "model": "Mistral Large 4",
+      "benchmark": "KORA Benchmark",
+      "skor": 1.691,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "maximum 2 denoted as “Exemplary”",
+      "kaynak_metinden_alinti": "ML4 again sits at our highest measured score among OSS models (1.691, with 2 being the maximum denoted as “Exemplary”)."
+    }
+  ],
+  "gorsel_url": "https://mistral.ai/cms-media/api/media/file/cover-mistral-sovereign%20copie.webp",
+  "url": "https://mistral.ai/news/mistral-large-4",
+  "source": "Mistral AI",
+  "sourceTier": "resmi",
+  "date": "2026-10-06T12:00:27.000Z",
+  "slug": "introducing-mistral-large-4"
+}

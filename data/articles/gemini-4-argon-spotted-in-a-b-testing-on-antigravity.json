@@ -1,0 +1,50 @@
+{
+  "baslik_tr": "Google Gemini 4 Argon, Antigravity A/B Testlerinde Görüldü",
+  "ozet_tr": "Google, Gemini 4 Argon modelini hâlâ halka açmasa da bazı kullanıcılar X üzerinden A/B testleriyle erken çıktılar paylaşıyor. İlk paylaşımlarda klasik Çin sarayı ve iPhone hava durumu uygulaması UI tasarımları, önceki Gemini sürümlerine göre belirgin bir kalite artışı gösteriyor. Şirket, modelin DeepSWE testinde %77.9 başarı sağladığını ve finans‑hukuk‑vergi alanlarında Vals Index'te birinci olduğunu iddia ediyor.",
+  "detayli_icerik_tr": "Google, Gemini 4 Argon'ı henüz genel kullanıma sunmadı ancak son günlerde X (Twitter) kullanıcıları, A/B testleri aracılığıyla bu modelin çıktısını gördüklerini iddia ediyor. İlk paylaşımı yapan @leo114119, \"One-shot\" modunda klasik bir Çin sarayı kompleksi üretti ve bu çıktının detay seviyesi, önceki Gemini sürümlerinin eleştirilen düz ve genelleyici tarzından çok farklıydı. Kullanıcı, testin yalnızca aile grubuna eklenen alt hesabı üzerinden gerçekleştiğini ve benzer bir durumun Opus 5.5'te de gözlemlendiğini belirtti.\n\nAynı kullanıcı, Gemini 3.8 Flash ile Argon arasında bir karşılaştırma yaparak, iki modelin iPhone için bir hava durumu uygulamasının üç ekranını (ana sayfa, 15 günlük tahmin, hava kalitesi) HTML olarak üretmesini sağladı. Argon'ın ürettiği UI, Flash sürümüne göre daha rafine ve görsel açıdan daha çekici olarak değerlendirildi. Başka bir X kullanıcısı @auricxofficial ise Gemini 3.1 Pro'nun Antigravity içinde artık \"gemini-3.8-flash-exp-a\" model kimliği altında 3.8 Flash'e yönlendiğini ve Argon ile yapılan bir 3D shooter oyunu demosunu paylaştı.\n\nGoogle, Gemini 4 Argon için \"DeepSWE\" adlı uzun vadeli yazılım mühendisliği görevleri testinde %77.9 başarı oranı ve Vals Index'te finans, hukuk ve vergi işlerinde birinci sırayı elde ettiğini duyurdu. Ayrıca Zapier'ın AutomationBench testinde de birinci konumda yer alıyor. Şirketin kendi kıyaslama tablosu, Argon'ın bazı kodlama ve terminal testlerinde Claude Opus 5.5 ve GPT-6 Astra'nın gerisinde kaldığını gösteriyor; bu rakamların bağımsız doğrulama gerektirdiği vurgulandı.\n\nTeknik altyapı açısından Google, Antigravity platformunu Argon için Ultra yükseltme istemleriyle hazırlıyor ve yeni yapıların 256K, 512K ve 900K gibi Argon‑özel bağlam pencereleri sunduğunu belirtiyor. API üzerinden ücretli müşterilere ve AI Ultra abonelerine erişim planlanıyor, ancak kesin tarih henüz açıklanmadı. Argon'ın performansının gerçek dünyada nasıl olacağı, geniş kullanıcı kitlesiyle test edilene kadar netleşmeyecek.",
+  "onemli_maddeler": [
+    "X kullanıcıları, Gemini 4 Argon çıktısını A/B testleriyle erken gördüklerini paylaştı.",
+    "Argon, DeepSWE testinde %77.9 başarı oranı ve Vals Index'te birinci sırayı iddia ediyor.",
+    "Argon'ın UI üretimi, Gemini 3.8 Flash'tan daha rafine ve detaylı olarak değerlendirildi.",
+    "Google, Argon için 256K‑900K bağlam pencereleri ve Ultra modlarıyla altyapı hazırlıyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Gemini 4 Argon, Google'ın en yeni LLM checkpoint'i olarak yüksek benchmark skorları ve geliştirilmiş üretken yetenekleriyle rekabeti şekillendirebilir; erken test çıktıları sektörde büyük merak uyandırıyor.",
+  "etiketler": [
+    "Gemini 4",
+    "Argon",
+    "A/B testing",
+    "Google AI",
+    "DeepSWE"
+  ],
+  "anilan_modeller": [
+    "Gemini 4 Argon",
+    "Gemini 3.8 Flash",
+    "Gemini 3.1 Pro",
+    "Claude Opus 5.5",
+    "GPT-6 Astra",
+    "Fable 5.1",
+    "Barium-B",
+    "Carbon"
+  ],
+  "yorum_tr": "Argon'ın iddia edilen yüksek performansı, Google'ın LLM pazarındaki konumunu güçlendirebilir ve geliştiricilere daha yetkin kodlama ve UI üretim araçları sunabilir; ancak gerçek kullanıcı deneyimi ve bağımsız benchmark sonuçları bekleniyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Gemini 4 Argon",
+      "benchmark": "DeepSWE",
+      "skor": 77.9,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "The company claims a state-of-the-art 77.9% on DeepSWE, a test of long software engineering tasks"
+    }
+  ],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/10/gemini-4-argon-featured.webp",
+  "url": "https://www.testingcatalog.com/gemini-4-argon-ab-tests-early-outputs/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-11T21:58:46.000Z",
+  "slug": "gemini-4-argon-spotted-in-a-b-testing-on-antigravity"
+}

@@ -1,0 +1,31 @@
+{
+  "baslik_tr": "Python 3.15 yayınlandı: 3.10 desteği sona erdi, 3.11 özellikleri kullanılabilir",
+  "ozet_tr": "Python 3.15 resmi olarak kullanıma sunuldu. Yeni PEP 810 ile gelen explicit lazy import ve PEP 798 ile comprehension içinde unpacking gibi geliştirmeler, geliştiricilerin kod performansını ve okunabilirliğini artırıyor. Ayrıca 3.10 sürümünün desteği sona erdiği için açık kaynak projeler artık 3.11 ve üzeri özellikleri benimseyebilecek.",
+  "detayli_icerik_tr": "Simon Willison, Python 3.15'in resmi çıkışını duyurarak sürümdeki en çarpıcı yenilikleri derledi. En çok dikkat çeken özellik, PEP 810 ile tanıtılan explicit lazy import mekanizması; bu sayede modüller, ilgili semboller ilk kez kullanıldığında yükleniyor ve ağır bağımlılıkların başlangıç gecikmesini azaltıyor. Willison, kendi LLM CLI aracında bu yöntemi uygulayarak plugin yükleme süresindeki gecikmeyi önemli ölçüde düşürdüğünü belirtti.\n\nYeni bir sözdizimi uzantısı da Python 3.15'te yer alıyor: comprehension içinde unpacking (PEP 798). List, set ve dict yapılarını tek satırda düzleştirmek artık daha okunaklı ve kısa bir şekilde mümkün. Örneğin, \"[*L for L in lists]\" ifadesi, iç içe listeleri tek bir düz listeye dönüştürüyor.\n\nProfil oluşturma alanında da önemli bir adım atıldı. Standart kütüphaneye \"profiling.sampling\" adlı örnekleme profilleri eklendi; bu araç periyodik olarak yığın izlerini yakalayarak düşük overhead ile fonksiyon bazlı zaman harcamasını raporlıyor ve flame‑graph gibi görselleştirmeler üretebiliyor. Kullanıcılar, mevcut bir 3.15 sürecine PID üzerinden bağlanarak anlık analiz yapabiliyor.\n\nPerformans açısından Python 3.15, 3.14 ile büyük bir fark göstermiyor; ancak deneysel JIT, Fibonacci testi üzerinde %20'lik bir hız artışı sağladı. Willison ayrıca, 3.15'in gelmesiyle 2021'de yayınlanan Python 3.10'un resmi desteğinin sona erdiğini ve kendi açık kaynak projelerinde artık 3.10'u bırakıp 3.11'in yeni özelliklerini (tomllib, TaskGroup, datetime.UTC, SQLite limit ve window function API'leri) kullanmaya başlayacağını vurguladı. Bu geçiş, projelerin modern Python ekosistemine daha hızlı uyum sağlamasını mümkün kılıyor.",
+  "onemli_maddeler": [
+    "PEP 810 ile explicit lazy import, ağır bağımlılıkların başlangıç gecikmesini azaltıyor",
+    "PEP 798 sayesinde comprehension içinde unpacking, kodun okunabilirliğini ve kısalığını artırıyor",
+    "Yeni profiling.sampling örnekleme profili düşük overhead ile anlık performans analizi sunuyor",
+    "Python 3.10 desteğinin sonlanması, projelerin 3.11 ve üzeri özellikleri benimsemesini zorunlu kılıyor"
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Python 3.15, geliştiricilere yeni dil özellikleri ve yerleşik örnekleme profili sunarak verimliliği artırırken, 3.10'un desteğinin sonlanması sürüm yönetimini ve paket uyumluluğunu doğrudan etkiliyor.",
+  "etiketler": [
+    "python",
+    "3.15",
+    "lazy-import",
+    "profiling",
+    "uv"
+  ],
+  "anilan_modeller": [],
+  "yorum_tr": "Python 3.15'in getirdiği lazy import ve yerleşik örnekleme profili, özellikle büyük bağımlılık zincirlerine sahip projelerde başlangıç süresini kısaltarak geliştiricilerin iş akışını iyileştiriyor; 3.10'un desteğinin sona ermesi ise topluluğu daha güncel sürümlere geçmeye teşvik ediyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://static.simonwillison.net/static/2026/profiler-output.webp",
+  "url": "https://simonwillison.net/2026/Oct/12/python-3-15/",
+  "source": "Simon Willison",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-12T18:15:38.000Z",
+  "slug": "hello-python-3-15-goodbye-3-10-and-now-i-can-use-3-11"
+}

@@ -1,0 +1,38 @@
+{
+  "baslik_tr": "Anthropic, Claude Opus 5.5 üzerinden yeni model testlerine başladı",
+  "ozet_tr": "Anthropic, Claude Opus 5.5 kullanıcı trafiğini yeni bir kontrol noktasına yönlendirerek potansiyel bir sonraki modelini test ediyor. Tek cümlelik bir promptla Blender MCP kullanarak iki saatlik bir süreçte 27 milyon token harcayan çıktılar, modelin detay ve derinlik açısından önceki sürümden çok daha üst seviyede olduğunu gösteriyor.",
+  "detayli_icerik_tr": "Geçtiğimiz hafta sonu, X platformunda bir dizi kullanıcı Claude Opus 5.5'in olağan performansının çok ötesinde sonuçlar ürettiğini raporladı. Bu durum, trafiğin yeni bir kontrol noktasına (checkpoint) yönlendirildiğine işaret ediyor ve Anthropic'in üç hafta önce düşük API maliyetleriyle piyasaya sürdüğü Opus 5.5'in üzerine bir güncelleme ya da yeni bir model denemesi yaptığı anlamına geliyor.\n\nKullanıcılar, tek cümlelik bir talimatla Blender'ın MCP (Mesh Construction Pipeline) aracını kullanarak iki saat boyunca modelin sıfırdan bir 3D sahne oluşturduğunu paylaştı. Toplamda yaklaşık 27 milyon token harcanan bu süreç, modelin uzun vadeli düşünme kapasitesinin ve yaratıcı çıktılarının sınırlarını zorladığını gösteriyor. Bazı gözlemciler bu yeni kontrol noktasını \"Opus 5.6\" ya da \"Fable 5.5\" olarak adlandırırken, diğerleri sadece Opus 5.5'in yeni bir checkpoint'i olduğunu belirtiyor.\n\nDiğer testlerde, model tek bir cümlelik promptla JavaScript ile bir insanın yaşamını çizen bir animasyon üretti ve aynı zamanda kodlama yeteneklerini göstererek mevcut görüntü ve video üreticilerini geride bırakabilecek seviyede çıktılar sağladı. Bu gösterimler, modelin sadece metin üretiminde değil, görsel ve kod üretiminde de SOTA (state‑of‑the‑art) performans sergileyebileceğini ima ediyor.\n\nAnthropic, son haftalarda Sonnet 5.5, Haiku 5.5 ve kendi ses modelleri gibi bir dizi yeni ürünle hızlı bir çıkış yaptı. Opus 5.5'in token başına maliyeti 4 $ ve 1 M token başına 20 $ olarak belirlenmişken, yeni modelin benzer fiyatlarla bu seviyede çıktılar sunması, rekabetçi bir fiyat‑performans dengesi yaratabilir. OpenAI ve Google gibi rakiplerin de benzer fiyat avantajları sunduğu bir ortamda, Anthropic'in bu testleri sektördeki dengeyi yeniden şekillendirebilir.",
+  "onemli_maddeler": [
+    "Claude Opus 5.5 trafiği yeni bir kontrol noktasına yönlendirildi ve olağanüstü çıktıların kaynağı bu yeni model olabilir.",
+    "Tek cümlelik bir promptla Blender MCP kullanılarak iki saatlik süreçte 27 M token harcanarak sıfırdan 3D sahne oluşturuldu.",
+    "Modelin kodlama, görsel ve animasyon üretiminde SOTA performans sergilediği iddia edildi.",
+    "Yeni modelin fiyat‑performans profili, OpenAI ve Google'ın benzer fiyatlı çözümleriyle rekabeti kızıştırabilir."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Anthropic'in yeni bir model veya kontrol noktasını test etmesi, büyük dil modeli pazarında fiyat ve performans rekabetini etkileyebilecek potansiyel bir adım olduğundan yüksek öneme sahiptir.",
+  "etiketler": [
+    "Anthropic",
+    "Claude Opus",
+    "model testi",
+    "AI rekabeti",
+    "large language model"
+  ],
+  "anilan_modeller": [
+    "Claude Opus 5.5",
+    "Opus 5.6",
+    "Fable 5.5",
+    "Claude Next",
+    "Sonnet 5.5",
+    "Haiku 5.5"
+  ],
+  "yorum_tr": "Anthropic'in yeni bir checkpoint üzerinden yaptığı testler, modelin yetenek sınırlarını genişletirken fiyat‑performans dengesini koruması halinde sektördeki rekabeti kızıştırabilir; geliştiriciler daha güçlü ve ekonomik araçlara erişim sağlayabilir, kullanıcılar ise daha yaratıcı çıktılar elde edebilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/10/anthropic-thinking-featured.webp",
+  "url": "https://www.testingcatalog.com/anthropic-tests-new-model-opus-5-5-routing-opus-5-6-fable-5-5/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-12T13:11:16.000Z",
+  "slug": "anthropic-tests-its-next-model-under-claude-opus-5-5"
+}

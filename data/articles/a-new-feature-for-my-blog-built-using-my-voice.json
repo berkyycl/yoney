@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "Sesli Komutlarla Bloguma Yeni Bülten Sayfası Ekledim",
+  "ozet_tr": "Simon Willison, ChatGPT masaüstü uygulamasının Codex sesli modunu kullanarak, sadece sesle bir Django tabanlı bülten arşivi sayfası geliştirdi. Yaklaşık yarım saatlik mutfak sohbetiyle model, yeni bir veri modeli, göç, görünüm ve şablonları otomatik olarak oluşturdu.",
+  "detayli_icerik_tr": "Simon Willison, 9 Ekim 2026 tarihinde bloguna bir \"Newsletters\" sayfası eklediğini duyurdu. Bu sayfa, haftalık ücretsiz Substack bültenleri ile aylık sponsorlu güncellemeleri tek bir indeks altında sunuyor. Geliştirme sürecinin tamamı sesli komutlarla yürütüldü; yazar, akşam yemeği hazırlarken dizüstü bilgisayarına konuşarak talimat verdi.\n\nWillison, ChatGPT masaüstü uygulamasının Codex sekmesindeki sesli sohbet modunu tercih etti ve yerel geliştirme ortamına bağladı. \"Start dev server and open in browser\" komutuyla ön izleme başlattı, ardından \"Start new voice chat\" butonunu kullanarak sesli oturumu başlattı. Model olarak GPT-6 Astra High kullanıldı ve model, bir Django modeli, göç dosyası, admin ayarları ve veri ithalatı fonksiyonlarını otomatik olarak üretti.\n\nİthalat sürecinde model, Substack RSS beslemesinden en yeni öğeleri, belgelenmemiş bir API üzerinden diğer öğeleri ve GitHub'daki özel ve açık kaynak depolardan aylık bültenleri çekti. Ayrıca, bültenlerin tarih bazlı arşiv sayfalarında görünmesini, etiket ve ana sayfada listelenmemesini sağladı. Son aşamada Willison, kodu gözden geçirip bir dal (branch) oluşturdu, bir pull request açtı ve özel bir GitHub deposundan veri çekmek için bir API tabanlı ithalatı elle değiştirdi.\n\nSonuç olarak, yeni \"newsletters\" sayfası hem Substack hem de sponsorlu bültenleri ters kronolojik sırayla gösteriyor, yıllık arşiv bağlantılarına sahip ve site arama motoru ile entegre. Willison, sesli kodlamanın çoklu görev yapma yeteneği sayesinde mutfakta zaman kaybetmeden bir özellik geliştirebildiğini vurguladı, ancak detaylı düzenlemeler ve hata ayıklama için hâlâ klavye kullanımının gerekli olduğunu belirtti.",
+  "onemli_maddeler": [
+    "ChatGPT Codex sesli moduyla tam bir Django özelliği geliştirildi.",
+    "GPT-6 Astra High, veri modeli, göç ve import scriptlerini otomatik üretti.",
+    "Substack RSS, belgelenmemiş API ve GitHub depolarından bülten verileri çekildi.",
+    "Sesli kodlama, mutfakta çoklu görev yaparak geliştirme süresini kısalttı."
+  ],
+  "kategori": "guncelleme",
+  "onem": 3,
+  "onem_gerekce": "Kişisel bir blogda sesli komutlarla tam fonksiyonel bir özellik oluşturulması, geliştiriciler için ilgi çekici bir demo olsa da sektörel etkisi sınırlıdır.",
+  "etiketler": [
+    "sesli kodlama",
+    "GPT-6 Astra",
+    "ChatGPT Codex",
+    "Django",
+    "bülten"
+  ],
+  "anilan_modeller": [
+    "GPT-6 Astra High"
+  ],
+  "yorum_tr": "Sesli kodlama, geliştiricilerin rutin görevleri daha akıcı bir şekilde yapabilmesi için yeni bir yol sunuyor; ancak karmaşık hata ayıklama ve ince ayar hâlâ klavye tabanlı etkileşime ihtiyaç duyuyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://static.simonwillison.net/static/2026/codex-voice.webp",
+  "url": "https://simonwillison.net/2026/Oct/9/built-using-my-voice/",
+  "source": "Simon Willison",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-09T12:54:06.000Z",
+  "slug": "a-new-feature-for-my-blog-built-using-my-voice"
+}

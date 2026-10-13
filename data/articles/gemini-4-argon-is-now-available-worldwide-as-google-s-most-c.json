@@ -1,0 +1,66 @@
+{
+  "baslik_tr": "Gemini 4 Argon, Google’ın en yetkin frontier modeli dünya çapında kullanılabilir",
+  "ozet_tr": "Google, yeni nesil Gemini 4 Argon modelini küresel olarak kullanıma sundu. Model, API, AI Studio ve Gemini platformu üzerinden erişilebilecek ve Google Antigravity gibi hizmetlerde yer alacak. Ücretsiz ve Plus kullanıcıları ise geçici olarak daha düşük kapasiteli Flash modellerine yönlendirilecek.",
+  "detayli_icerik_tr": "Google, Gemini 4 Argon'u bugün itibarıyla geliştiricilere, işletmelere ve son kullanıcılara açtı. Model, API aracılığıyla AI Studio ve Gemini platformunda bulunurken, Google AI Ultra aboneleri Antigravity içinde, Ultra ve Pro aboneleri ise Gemini uygulaması ve Google Arama’nın AI modunda erişebilecek. Ücretsiz Gemini ve Plus aboneleri ise yeni bir model katmanı altında daha sınırlı Flash modellerine yönlendirildi; bu, Argon'un yeteneklerinin zamanla alt katmanlara da sızacağı anlamına geliyor.\n\nArgon, Gemini Pro sınıfının yerini alarak Google'ın frontier serisinin yeni temsilcisi oldu. Şirket, ilerleyen dönemde daha fazla Gemini 4 modeli çıkarmayı planlıyor ve iç kaynaklardan \"Carbon\" kod adlı bir sonraki nesil modelin kodlama performansında Argon'u geride bırakacağı test edildiği bildiriliyor. Modelin fiyatlandırması, tanıtım döneminde giriş seviyesi token başına 2 $ (girdi) ve 10 $ (çıktı) olarak belirlenmiş; önbellek okuma maliyeti ise normal fiyatın %95'i kadar düşük.\n\nPerformans açısından Argon, Vals Index'te birincilik elde ederken, bağımsız sıralamalarda Anthropic'in Claude Opus 5.5 ve Meta'nın yeni Muse Wonder Full modellerinin gerisinde kaldı. Güvenlik testlerinde ise önemli ilerlemeler kaydedildi: Gray Swan Indirect Prompt Injection benchmark'ında sadece %0.7 başarı oranı ile en düşük saldırı oranını gösterdi; aynı testte GPT-6 Astra %8.5, Claude Opus 5 ise %4.8 oranlarla geride kaldı. Ayrıca, Chrome ekibi Argon sayesinde 40 milyon satırlık kod tabanında aylar sürecek bir mimari revizyonu haftalar içinde tamamlayabildi.\n\nModelin yetenekleri 3D içerik üretimine de uzanıyor; Argon, tarayıcı içinde çalışan tam kodlu 3D sahneler, oyunlar ve animasyonlar oluşturabiliyor. Bir demo, tek bir görüntüden başlayıp Blender'ı kontrol ederek gotik bir mimari ve sesle etkileşimli aydınlatma içeren bir sahne üretmiş. Google ayrıca 10.000 araştırmacıya ücretsiz erişim ve 6 ay boyunca en yüksek kullanım katmanını sunma taahhüdünde bulundu; siber güvenlik uzmanları için ayrı bir Fairwind programı da mevcut.",
+  "onemli_maddeler": [
+    "Gemini 4 Argon, Google'ın en yetkin frontier modeli olarak API, AI Studio ve Gemini platformunda küresel erişime açıldı.",
+    "Ücretsiz ve Plus kullanıcıları geçici olarak daha düşük kapasiteli Flash modellerine yönlendirildi; model yetenekleri zamanla alt katmanlara da sızacak.",
+    "Gray Swan Indirect Prompt Injection benchmark'ında %0.7 saldırı oranı ile en düşük risk gösterildi; GPT-6 Astra %8.5, Claude Opus 5 %4.8 idi."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Google’ın en yeni frontier modeli Gemini 4 Argon’un küresel erişime açılması, geliştiriciler ve işletmeler için en üst seviye yapay zeka yeteneklerini sunması ve sektörde rekabet dinamiklerini yeniden şekillendirmesi bakımından kritik bir gelişmedir.",
+  "etiketler": [
+    "Gemini",
+    "Google",
+    "AI",
+    "Frontier Model",
+    "Argon"
+  ],
+  "anilan_modeller": [
+    "Gemini 4 Argon",
+    "Gemini Pro",
+    "Flash",
+    "Carbon",
+    "Claude Opus 5.5",
+    "Muse Wonder Full",
+    "GPT-6 Astra"
+  ],
+  "yorum_tr": "Gemini 4 Argon'un lansmanı, büyük ölçekli AI hizmetlerine erişimi genişleterek geliştiricilerin ve işletmelerin daha sofistike uygulamalar üretmesini sağlayacak. Güvenlik performansındaki iyileşmeler ise modelin sorumlu kullanımını destekleyerek sektördeki güven standartlarını yükseltebilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Gemini 4 Argon",
+      "benchmark": "Gray Swan Indirect Prompt Injection",
+      "skor": 0.7,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "15 adaptive attempts",
+      "kaynak_metinden_alinti": "Argon scored the lowest attack rate on the Gray Swan Indirect Prompt Injection benchmark, with a successful attack rate of just 0.7 percent across 15 adaptive attempts."
+    },
+    {
+      "model": "GPT-6 Astra",
+      "benchmark": "Gray Swan Indirect Prompt Injection",
+      "skor": 8.5,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "same test",
+      "kaynak_metinden_alinti": "In the previous Gray Swan test, GPT-6 Astra hit 8.5 percent"
+    },
+    {
+      "model": "Claude Opus 5",
+      "benchmark": "Gray Swan Indirect Prompt Injection",
+      "skor": 4.8,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "same test",
+      "kaynak_metinden_alinti": "Claude Opus 5 came in at 4.8 percent"
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/09/gemini_4_argon.png",
+  "url": "https://the-decoder.com/gemini-4-argon-is-now-available-worldwide-as-googles-most-capable-frontier-model/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-13T18:00:49.000Z",
+  "slug": "gemini-4-argon-is-now-available-worldwide-as-google-s-most-c"
+}
