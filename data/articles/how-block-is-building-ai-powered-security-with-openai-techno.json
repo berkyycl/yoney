@@ -1,0 +1,61 @@
+{
+  "baslik_tr": "Block, OpenAI teknolojisiyle AI destekli güvenlik inşa ediyor",
+  "ozet_tr": "Block, OpenAI Defense Factory ve Daybreak modelini kullanarak güvenlik operasyonlarını saatler içinde tamamlayacak bir seviyeye taşıdı. Bu sayede tespit ayarlamaları, kırmızı takım senaryoları ve analiz süreçleri insan saatinde %50 artış gösterdi.",
+  "detayli_icerik_tr": "Block, Square, Cash App ve Afterpay'in arkasındaki şirket, güvenlik ekibiyle OpenAI Defense Factory'yi entegre ederek zafiyet keşfi, tespit ve yanıt süreçlerini insan gücünün ulaşamayacağı bir ölçeğe çıkardı. Daybreak modeli sayesinde haftalar süren işler, birkaç saat içinde tamamlanıyor. CISO James Nettesheim, \"AI, insan niyeti ile eylem arasındaki zamanı sıkıştırıyor\" diyerek, savunma tarafının da saldırganların hızına ayak uydurabildiğini vurguladı.\n\nGüvenlik ekibi, kod üretiminden operasyonel güvenliğe kadar AI'ı sorumlu bir şekilde iş akışlarına dahil ediyor. Özellikle bir tespit değişikliğinin yedi aylık üretim telemetrisi üzerinde yeniden oynatılması artık bir saatten az sürüyor; daha önce bu işlem yüzlerce eski vaka üzerinden manuel sorgulama gerektiriyordu. Benzer şekilde, son kırmızı takım tatbikatlarında yüksek seviyeli bir zafiyeti otomatik bir yamaya dönüştürme süresi 18 dakikaya indi, ki bu bir insan için birkaç gün sürebilirdi.\n\nDaybreak, tek bir uyarıyı izole bir zafiyet olarak görmek yerine, loglar arasında bağ kurarak kapsamlı bir saldırı zinciri ortaya çıkarabiliyor. Bir örnek, bir dizüstü bilgisayar üzerindeki rutin bir politika uyarısının, kimlik loglarıyla birleştirilerek büyük bir kampanyanın tespit edilmesine yol açmasıdır. Bu tür birleşik analizler, geleneksel tarama araçlarının sağlayamadığı bir bütünlük sunuyor.\n\nBu AI destekli otomasyon, triage verimliliğini %50 artırdı ve istihbarat toplama ile soruşturma faaliyetlerini aynı oranda yükseltti. Sonuç olarak, çeyrek başına yaklaşık 1.100 analist saatlik derinlemesine araştırma ve 600 saatlik yanlış pozitif triage geri dönüşü sağlandı. Block, bu kazanılan zamanı daha stratejik ve önleyici güvenlik çalışmalarına yönlendirerek, gelecekte daha az zafiyet ortaya çıkmasını hedefliyor.",
+  "onemli_maddeler": [
+    "Tespit değişikliği yedi aylık telemetrinin altında bir saat içinde yeniden oynatıldı.",
+    "Kırmızı takım tatbikatlarında yüksek seviyeli zafiyetten otomatik yamaya geçiş süresi 18 dakikaya indi.",
+    "Çeyrek başına yaklaşık 1.100 analist saatlik araştırma ve 600 saatlik yanlış pozitif triage geri dönüşü sağlandı.",
+    "Triage verimliliği ve istihbarat toplama %50 oranında arttı."
+  ],
+  "kategori": "diger",
+  "onem": 4,
+  "onem_gerekce": "Block'un AI destekli güvenlik operasyonları, büyük ölçekli kurumsal güvenlik süreçlerinde verimliliği %50 artırarak sektörde benzer uygulamaların önünü açıyor ve savunma tarafının AI ile rekabet gücünü gösteriyor.",
+  "etiketler": [
+    "AI güvenlik",
+    "OpenAI",
+    "Block",
+    "Daybreak",
+    "otomasyon"
+  ],
+  "anilan_modeller": [
+    "Daybreak"
+  ],
+  "yorum_tr": "Bu gelişme, güvenlik ekiplerinin AI'ı bir yardımcı olarak benimsemesinin operasyonel verimliliği artırabileceğini ve tehdit yanıt süresini önemli ölçüde kısaltabileceğini gösteriyor; aynı zamanda insan denetiminin kritik rolünü koruyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Daybreak",
+      "benchmark": "Detection change replay time",
+      "skor": 1,
+      "birim": "hour",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Less than one hour to replay a proposed detection change against seven months of telemetry."
+    },
+    {
+      "model": "Daybreak",
+      "benchmark": "Vulnerability-to-patch time (red team exercise)",
+      "skor": 18,
+      "birim": "minute",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "In recent red team exercises, the time from submitting a high-level vulnerability to an automated proposed patch was 18 minutes."
+    },
+    {
+      "model": "Daybreak",
+      "benchmark": "Analyst-hours saved per quarter (false-positive triage)",
+      "skor": 600,
+      "birim": "hour",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Roughly 600 analyst-hours per quarter of false-positive triage handed back."
+    }
+  ],
+  "gorsel_url": "https://images.ctfassets.net/kftzwdyauwt9/6csT9lb6PlJ3KoxJDX6p7s/c94f16d2eadb4b01cb428ce5c62db7a2/Block-AI-Powered-Security-SEO-Image-1920x1080.png?w=1600&h=900&fit=fill",
+  "url": "https://openai.com/index/block-ai-powered-security",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-10-14T07:00:00.000Z",
+  "slug": "how-block-is-building-ai-powered-security-with-openai-techno"
+}

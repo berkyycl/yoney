@@ -1,0 +1,44 @@
+{
+  "baslik_tr": "Google, kendini geliştiren yapay zekânın henüz yakın olmadığını söylüyor",
+  "ozet_tr": "Google DeepMind mühendisi Haydn Belfield, kendini geliştiren yapay zekânın hâlâ uzak bir hedef olduğunu belirtti. AI, üretim kodunun %75'ini yazsa da %88'i insan denetimi gerektiriyor ve karmaşık görevlerde otomasyon oranı düşüyor.",
+  "detayli_icerik_tr": "Google DeepMind mühendislerinden Haydn Belfield, şirketin iç araştırmalarında kendini geliştiren yapay zekânın (self‑improving AI) henüz gerçekleşmediğini vurguladı. AI, şu anda üretim kodunun %75'ini yazabiliyor ancak yapılan kod değişikliklerinin %88'i hâlâ insan gözetimi ve incelemesi gerektiriyor; her değişiklik gönderilmeden önce bir insan tarafından onaylanıyor. Tamamen AI'ye devredilen kod değişikliklerinin oranı ise %7,5'ten %11,9'a yükselmiş durumda.\n\nBelfield, 1.389 iç Argon ajan çalışması üzerinden yapılan analizlerde, görev karmaşıklığı arttıkça insan müdahalesi olmadan başarı oranının keskin bir şekilde düştüğünü gösterdi. İnsanlar hâlâ yaratıcı araştırma, yeni deney tasarımı, ince eğitim istikrarsızlıklarının teşhisi ve uzun vadeli planlama gibi alanlarda vazgeçilmez. Bu bulgular, 12 kıdemli DeepMind araştırmacısının anketiyle de desteklenerek, otomasyonun iyi tanımlanmış ve doğrulanabilir görevlerde yüksek, açık uçlu bilimsel fikir üretiminde ise düşük olduğunu ortaya koydu.\n\nDeepMind'in kendi iç benchmark'ı RE‑Bench, 74 gerçek dünya makine öğrenimi mühendisliği görevini kapsıyor. Bu benchmark'ta Argon ajanı görevlerin yaklaşık %50'sini çözerken, Gemini 3.7 Flash sadece %27 oranında başarılı oldu. Bu, Gemini 3.7 Flash'tan çok daha yüksek bir performans olsa da, tam otomasyon için hâlâ uzakta olduklarını gösteriyor.\n\nGoogle, Gemini modellerinin yeteneklerini izlemek için 123 model ve 92 benchmark'ı kapsayan Genel Yetenek Endeksi (GCI) geliştirdi. GCI v1, Gemini yeteneklerinin ayda ortalama 0,1 puan artışla istikrarlı bir şekilde büyüdüğünü, ancak AI‑kaynaklı bir hızlanma göstermediğini ortaya koydu. Gemini 4 Argon'un trendin biraz üzerindeki performansı, daha fazla hesaplama ve organizasyonel yatırımın bir sonucu olarak değerlendirildi, AI‑özerk bir ivme değil. Şirket, AI‑kaynaklı araştırma otomasyon riskini düşük olarak sınıflandırıyor ve gelecekteki ivmeyi izlemek için ölçüm altyapısını güçlendirmeye devam ediyor.\n\nBu bulgular, Geoffrey Hinton, Yoshua Bengio ve OpenAI araştırmacısı Jakub Pachocki gibi 20'den fazla uzmanın \"zeka patlaması\" ihtimaline dair uyarılarıyla çelişiyor. Bu akademisyenler, AI sistemlerinin birkaç yıl içinde tüm AI araştırma ve geliştirme süreçlerini otomatikleştirerek ilerlemeyi aylara sıkıştırabileceğini savunuyor.",
+  "onemli_maddeler": [
+    "AI, üretim kodunun %75'ini yazsa da %88'i insan denetimi gerektiriyor.",
+    "Argon ajanı RE‑Bench'te %50 başarı sağlarken, Gemini 3.7 Flash %27 ile geride kalıyor.",
+    "Genel Yetenek Endeksi (GCI) Gemini yeteneklerinin ayda 0,1 puan artışla sabit bir büyüme gösterdiğini, AI‑kaynaklı ivmeyi göstermediğini ortaya koydu."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "Kendini geliştiren AI ve araştırma otomasyonu konusundaki iddiaların gerçek ilerleme seviyesini ortaya koyması, sektördeki beklentileri ve yatırım kararlarını doğrudan etkileyen kritik bir bulgudur.",
+  "etiketler": [
+    "AI otomasyonu",
+    "self-improving AI",
+    "DeepMind",
+    "Gemini",
+    "AI araştırma otomasyonu"
+  ],
+  "anilan_modeller": [
+    "Gemini 3.7 Flash",
+    "Gemini 4 Argon",
+    "Argon"
+  ],
+  "yorum_tr": "Bu bulgular, AI‑destekli kod üretiminin hızla yaygınlaştığını ancak karmaşık ve yaratıcı araştırma görevlerinde insan uzmanlığının hâlâ vazgeçilmez olduğunu gösteriyor. Geliştiriciler, otomasyonun sınırlarını iyi anlamalı ve insan‑AI iş birliğine odaklanmalı.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Gemini 3.7 Flash",
+      "benchmark": "RE-Bench",
+      "skor": 27,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "74 gerçek ML mühendisliği görevi",
+      "kaynak_metinden_alinti": "Gemini 3.7 Flash at 27 percent"
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/10/gemini_logo-2.png",
+  "url": "https://the-decoder.com/google-says-self-improving-ai-isnt-anywhere-close/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-14T19:18:44.000Z",
+  "slug": "google-says-self-improving-ai-isn-t-anywhere-close"
+}

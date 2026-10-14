@@ -1,0 +1,57 @@
+{
+  "baslik_tr": "CUDA ve HIP GDN Chunked Kernel ile Llama.cpp Performansında %20'a Kadar Artış",
+  "ozet_tr": "llama.cpp projesine eklenen GDN chunked kernel, çeşitli GPU'larda token başına saniye (tok/s) oranında önemli iyileşmeler sağladı. RTX PRO 6000 Blackwell gibi üst düzey kartlarda %20.6'ya kadar performans artışı kaydedildi. Bu sonuçlar, topluluk tarafından sunulan pull request'in etkisini gösteriyor.",
+  "detayli_icerik_tr": "llama.cpp deposuna yapılan yeni bir pull request (PR #29353) kapsamında, CUDA ve HIP platformları için GDN (Group Normalization) chunked kernel entegrasyonu gerçekleştirildi. Bu kernel, özellikle büyük dil modellerinin prompt token işleme sürecinde veri akışını daha verimli hale getirerek işlemci ve bellek kullanımını optimize ediyor.\n\nYapılan benchmark testleri, farklı GPU konfigürasyonları ve model varyantları üzerinde gerçekleştirildi. RTX PRO 6000 Blackwell kartı üzerinde Qwen3.5-35B-A3B-Q8_0 modeli, 2048 tokenlik promptta 13,653.58 tok/s'den 16,459.56 tok/s'ye (%20.6) yükseldi. Benzer şekilde aynı kartta 4096 tokenlik promptta da %17.8 artış gözlendi. Diğer GPU'lar, Spark GB10, RTX 5090, RTX 4090 ve RTX 3090 gibi, ortalama %3 ila %17 arasında performans iyileştirmeleri sundu.\n\nEn yüksek iyileşme, RTX PRO 6000 Blackwell üzerindeki Qwen3.5-35B-A3B-Q8_0 modelinde gözlemlendi. Orta seviye donanımlarda (Spark GB10) ise %4 civarında artışlar kaydedildi. Bu sonuçlar, GDN chunked kernel'in farklı donanım mimarileri ve model boyutlarıyla uyumlu bir şekilde çalıştığını ve genel performans artışı sağladığını gösteriyor.\n\nTopluluk tarafından sunulan bu geliştirme, açık kaynaklı LLM altyapılarının verimliliğini artırma yönündeki çabaların bir örneği olarak öne çıkıyor. Geliştiriciler, bu kernel'i kendi projelerinde kullanarak daha hızlı yanıt süreleri ve düşük maliyetli inference elde edebilirler.",
+  "onemli_maddeler": [
+    "GDN chunked kernel, RTX PRO 6000 Blackwell üzerinde Qwen3.5-35B-A3B-Q8_0 modelinde %20.6 performans artışı sağladı.",
+    "Çeşitli GPU'larda (Spark GB10, RTX 5090, RTX 4090, RTX 3090) ortalama %3‑17 arasında token başına saniye iyileşmesi gözlendi.",
+    "Benchmark sonuçları, 2048 ve 4096 tokenlik prompt uzunlukları için ayrı ayrı raporlanarak kernel'in ölçeklenebilirliği kanıtlandı."
+  ],
+  "kategori": "benchmark",
+  "onem": 3,
+  "onem_gerekce": "Topluluk tarafından sağlanan bir kernel iyileştirmesinin farklı donanımlarda ölçülen performans artışı, açık kaynak LLM ekosisteminde ilgi çekici ancak sınırlı bir etki yaratıyor.",
+  "etiketler": [
+    "CUDA",
+    "HIP",
+    "llama.cpp",
+    "performans",
+    "GPU"
+  ],
+  "anilan_modeller": [
+    "Qwen3.5-35B-A3B-Q8_0",
+    "Qwen3.8-27B-Q8_0",
+    "Qwen3.6-35B-A3B-UD-Q4_K_M",
+    "Qwen3.8-27B-UD-Q8_K_L",
+    "Qwen3.8-Flash-Next-UD-IQ4_XS",
+    "Qwen3.5-35B-A3B-Q4_K_S",
+    "Qwen3.8-27B-Q4_K_M"
+  ],
+  "yorum_tr": "GDN chunked kernel'in getirdiği performans artışı, özellikle yüksek kapasiteli GPU'larda inference maliyetlerini düşürerek geliştiricilere ve araştırmacılara fayda sağlayacak. Ancak iyileşme oranları donanıma göre değiştiği için, tüm kullanıcılar aynı seviyede kazanç elde etmeyebilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen3.8-27B-UD-Q8_K_L",
+      "benchmark": "Token per second (2048 prompt)",
+      "skor": 984.86,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "2048 prompt tokens",
+      "kaynak_metinden_alinti": "Spark GB10 Qwen3.8-27B-UD-Q8_K_L 2048 942.84 984.86 +4.5%"
+    },
+    {
+      "model": "Qwen3.8-27B-UD-Q8_K_L",
+      "benchmark": "Token per second (4096 prompt)",
+      "skor": 973.34,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "4096 prompt tokens",
+      "kaynak_metinden_alinti": "Spark GB10 Qwen3.8-27B-UD-Q8_K_L 4096 928.16 973.34 +4.9%"
+    }
+  ],
+  "gorsel_url": "https://external-preview.redd.it/leVPl06-AmZI89l9pZkDzXT1izz8jhoZeSgbtAAPQCo.png?width=640&crop=smart&auto=webp&s=8d41ec9b790022c8122d63e4c174a7f41f0356e8",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x5skta/cuda_hip_gdn_chunked_kernel_by_am17an_pull/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-14T14:23:13.000Z",
+  "slug": "cuda-hip-gdn-chunked-kernel-by-am17an-pull-request-29353-ggm"
+}

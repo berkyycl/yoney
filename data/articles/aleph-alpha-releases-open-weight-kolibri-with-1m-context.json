@@ -1,0 +1,98 @@
+{
+  "baslik_tr": "Aleph Alpha, 1M bağlam uzunluğuna sahip açık ağırlıklı Kolibri modelini duyurdu",
+  "ozet_tr": "Almanya merkezli Aleph Alpha, 78,1 milyar parametreli ve token başına 3,46 milyar aktif parametre kullanan, bir milyon tokena kadar bağlamı destekleyen açık ağırlıklı Kolibri modelini yayınladı. Model, Apache 2.0 lisansı altında Hugging Face üzerinden indirilebilir ve kurumların verilerini üçüncü taraf hizmetlerine göndermeden yerel altyapıda çalıştırılabiliyor.",
+  "detayli_icerik_tr": "Aleph Alpha, Kolibri adlı yeni bir ikili (İngilizce‑Almanca) Mixture‑of‑Experts (MoE) transformer modeli tanıttı. Model, toplam 78,1 milyar parametreye sahipken, her token için yalnızca 3,46 milyar parametre aktif hâle geliyor ve bağlam uzunluğu bir milyon tokena kadar çıkıyor. Ağırlıklar, Apache 2.0 lisansı altında Hugging Face platformundan indirilebiliyor, bu da hükümet ve düzenleyici sektörlerde veri egemenliğini koruyarak yerel (on‑prem) çalıştırma imkânı sağlıyor.\n\nKolibri, 768 Nvidia B200 GPU’da 21 gün boyunca 20 trilyon token üzerinden temel eğitim aldı, ardından uzun‑bağlam adaptasyonu için ek 24 trilyon token işlendi. Mimari olarak 384 uzman (expert) katmanı bulunuyor; her token için altı uzman aktif hâle geliyor. 50 katmanın 10'unda tam dikkat (full attention) uygulanırken, geri kalan 40 katmanda maliyeti kontrol altında tutmak için 512 tokenlık kaydırmalı pencere (sliding window) kullanılıyor. Adaptasyon aşamasında bağlam uzunluğu 256 000 tokena kadar çıkarıldı, ancak kullanıcılar modelin 1 048 576 tokena kadar hizmet vermesini ayarlayabiliyor.\n\nAlmanca, eğitim verisinin %21,3'ünü oluşturuyor ve 128 000 girişli iki dilli bir kelime hazinesiyle destekleniyor; tokenizer, Almanca bileşik kelimeleri koruyacak şekilde tasarlandı. Model, dört farklı akıl yürütme (reasoning) seviyesi (hiçbiri, düşük, orta, yüksek) ve araç çağrısı (tool calling) yeteneği sunuyor. Özellikle Almanca, matematik, kodlama, uzun‑bağlam ve ajan‑tabanlı görevler için özelleştirildi; kamu yönetimi, otomotiv, yarı iletken, endüstriyel teknoloji ve uzay sektörlerine yönelik değerlendirme paketleri de içeriyor.\n\nŞirketin kendi testlerinde Kolibri, İngilizce genel puanında 75,5, Almanca genel puanında 70,8 elde etti. AIME 2025 benchmark'ında 96,9, LiveCodeBench v6'da 85,9 ve BFCL v4'te ise 61,4 puan aldı. Ayrıca, belge temelli sorularda (AA‑Omniscience) yanlış cevabı vermekten kaçınma oranı %44'e ulaştı (önceki Kolibri Origin %14,8 iken) ve şirketin M/A grounding skorunda 0,23 elde etti. Aleph Alpha, bu sonuçların modelin aktif parametre sayısının dört katına kadar olan rakiplerle eşdeğer performans gösterdiğini iddia ediyor.",
+  "onemli_maddeler": [
+    "78,1 M parametre, token başına 3,46 M aktif ve 1 M token bağlam uzunluğu.",
+    "Açık ağırlık, Apache 2.0 lisansı altında Hugging Face üzerinden indirilebilir; yerel (on‑prem) kullanım mümkün.",
+    "768 B200 GPU’da 44 trilyon token ile eğitildi; 384‑expert MoE mimarisi, 6 aktif uzman per token.",
+    "AIME 2025'de %96,9, LiveCodeBench v6'da %85,9 ve BFCL v4'te %61,4 puan aldı.",
+    "Almanca odaklı tokenizasyon ve Avrupa veri egemenliği gereksinimlerine uyumlu tasarım."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Kolibri, büyük ölçekli açık‑ağırlıklı bir model olarak Avrupa’nın veri egemenliği hedeflerine hizmet ederken, bir milyon tokena kadar bağlam desteği ve yüksek performanslı benchmark sonuçlarıyla sektörde önemli bir rekabet avantajı yaratıyor.",
+  "etiketler": [
+    "açık-ağırlık",
+    "Kolibri",
+    "uzun-bağlam",
+    "sovereign AI",
+    "Almanca"
+  ],
+  "anilan_modeller": [
+    "Kolibri"
+  ],
+  "yorum_tr": "Bu model, özellikle kamu ve düzenleyici sektörlerde veri güvenliğini ön planda tutan kuruluşlar için yüksek performanslı, kontrol edilebilir bir yapay zeka seçeneği sunuyor; aynı zamanda açık ağırlık politikası, araştırmacıların ve geliştiricilerin inovasyonu hızlandırmasına olanak tanıyacak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Kolibri",
+      "benchmark": "English overall",
+      "skor": 75.5,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "In the company's benchmarks, Kolibri posted an English overall score of 75.5 and a German overall score of 70.8."
+    },
+    {
+      "model": "Kolibri",
+      "benchmark": "German overall",
+      "skor": 70.8,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "In the company's benchmarks, Kolibri posted an English overall score of 75.5 and a German overall score of 70.8."
+    },
+    {
+      "model": "Kolibri",
+      "benchmark": "AIME 2025",
+      "skor": 96.9,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "It scored 96.9 on AIME 2025, 85.9 on LiveCodeBench v6, and 61.4 on BFCL v4 overall."
+    },
+    {
+      "model": "Kolibri",
+      "benchmark": "LiveCodeBench v6",
+      "skor": 85.9,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "It scored 96.9 on AIME 2025, 85.9 on LiveCodeBench v6, and 61.4 on BFCL v4 overall."
+    },
+    {
+      "model": "Kolibri",
+      "benchmark": "BFCL v4 overall",
+      "skor": 61.4,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "It scored 96.9 on AIME 2025, 85.9 on LiveCodeBench v6, and 61.4 on BFCL v4 overall."
+    },
+    {
+      "model": "Kolibri",
+      "benchmark": "AA-Omniscience abstention",
+      "skor": 44,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "It avoided a wrong answer on 44% of AA-Omniscience items, compared with 14.8% for Kolibri Origin."
+    },
+    {
+      "model": "Kolibri",
+      "benchmark": "M/A grounding score",
+      "skor": 0.23,
+      "birim": "score",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "and reached 0.23 on the company's M/A grounding score."
+    }
+  ],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/10/00-cover.Du35XCGh_ZBjCLW-1.webp",
+  "url": "https://www.testingcatalog.com/aleph-alpha-releases-open-weight-kolibri-with-1m-context/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-03T20:35:07.000Z",
+  "slug": "aleph-alpha-releases-open-weight-kolibri-with-1m-context"
+}

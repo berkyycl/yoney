@@ -1,0 +1,88 @@
+{
+  "baslik_tr": "Mistral, 1 Trilyon Parametreli Large 4 Önizlemesini Başlattı",
+  "ozet_tr": "Mistral AI, 1 trilyon parametreli ve 49 milyar aktif parametreye sahip yeni büyük dil modeli Mistral Large 4'ü (Le Chonk) kamu önizlemesi olarak sundu. Model, yerel çok-modallık, talimat takibi, akıl yürütme ve ajan yeteneklerini birleştirerek yazılım mühendisliği, siber güvenlik, finans ve üretim gibi kritik alanlarda öne çıkıyor.",
+  "detayli_icerik_tr": "Mistral Large 4, \"Le Chonk\" takma adıyla tanıtılan, natively multimodal bir mixture‑of‑experts (MoE) mimarisine sahip 1 trilyon parametreli bir modeldir; ancak aynı anda aktif olan sadece 49 milyar parametredir. Model, Mistral Studio üzerinden API olarak erişime açıldı ve ağırlıkların ay sonunda yayınlanması planlanıyor. Eğitim, Avrupa'daki kendi veri merkezlerinde 3.800 NVIDIA Grace Blackwell GPU'su kullanılarak sıfırdan gerçekleştirildi; mevcut RL‑pipeline ise 3.000 GPU ile günde yaklaşık 33 milyar token üretmekte.\n\nML4, çoklu veri türlerini (elektronik tablolar, belgeler, grafikler, teknik çizimler, PDF'ler ve büyük coğrafi görüntüler) işleyebiliyor ve 160'tan fazla dili, AB'nin resmi dilleri dahil, destekliyor. Model, özellikle yazılım mühendisliği, siber güvenlik, finans, hukuk, bilim ve üretim sektörlerine yönelik tasarlandı; üçüncü‑taraf değerlendirmeler, ML4'ün bu alanlarda GPT‑6 Astra'yı geride bıraktığını gösteriyor. Ayrıca, Lakera’nın B3 benchmark'ında %93,3 saldırı direnci ve Cybench testinde %93 başarı oranı elde edildi.\n\nPerformans açısından model, DeepSWE v1.1 testinde %61,7, AutomationBench'te %59,9 ve Artificial Analysis Cyber Index testinde %82 puan alarak kritik iş yüklerinde lider konuma yükseldi. Görsel yerleştirme (Dense 200) görevinde %42 skor elde ederek GPT‑6 Astra'nın %41 skorunu hafifçe geçti. Hukuki görevlerde Harvey’s Legal Agent benchmark'ı, ML4'ün tüm açık‑kaynak modelleri geride bıraktığını ortaya koydu.\n\nMüşterilere esnek kullanım seçenekleri sunuluyor: API ücretleri giriş token başına $1,36, çıkış token başına $4,18 olarak belirlendi; Avrupa’da yerel veri koruma yasalarına uygun bir dağıtım da sağlanacak. Özel‑bulut ve yerinde kurulum seçenekleri özellikle güvenlik ekipleri için planlanıyor. Modelin ağırlıkları, Mistral Forge platformu üzerinden özelleştirilebilir ve pekiştirmeli öğrenme (RL) süreçleriyle sürekli iyileştirilebilecek.",
+  "onemli_maddeler": [
+    "Mistral Large 4, 1 trilyon parametre ve 49 milyar aktif parametre ile Avrupa menşeli en büyük açık‑ağırlıklı model olarak tanıtıldı.",
+    "DeepSWE v1.1 (%61,7), AutomationBench (%59,9) ve Cybench (%93) gibi kritik benchmarklarda lider performans sergiledi.",
+    "Model, çoklu veri türlerini ve 160+ dili destekleyerek GDPR uyumluluğu ve Avrupa veri yasalarına tam uyum sağlıyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "1 trilyon parametreli, çok‑modlu ve yüksek performanslı bir modelin kamu önizlemesi, Avrupa‑merkezli AI ekosisteminde rekabeti artırarak sektörde büyük bir etki yaratıyor.",
+  "etiketler": [
+    "Mistral",
+    "Large 4",
+    "AI",
+    "Multimodal",
+    "Trilyon Parametre"
+  ],
+  "anilan_modeller": [
+    "Mistral Large 4",
+    "GPT-6 Astra"
+  ],
+  "yorum_tr": "Mistral Large 4'ün tanıtımı, Avrupa’nın kendi yüksek kapasiteli modellerini sunma çabasını pekiştirirken, geliştiricilere açık ağırlıklarla daha fazla özelleştirme ve veri egemenliği imkanı tanıyor. Kullanıcılar, özellikle güvenlik ve regülasyon odaklı sektörlerde, daha güçlü ve yerel uyumlu bir yapay zekâ çözümünden faydalanabilecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Mistral Large 4",
+      "benchmark": "DeepSWE v1.1",
+      "skor": 61.7,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "It scored 61.7% on DeepSWE v1.1"
+    },
+    {
+      "model": "Mistral Large 4",
+      "benchmark": "AutomationBench",
+      "skor": 59.9,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "and 59.9% on AutomationBench"
+    },
+    {
+      "model": "Mistral Large 4",
+      "benchmark": "Artificial Analysis Cyber Index",
+      "skor": 82,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "On one Artificial Analysis Cyber Index test covering vulnerability reproduction and patching, it reached 82%"
+    },
+    {
+      "model": "Mistral Large 4",
+      "benchmark": "Cybench",
+      "skor": 93,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "its Cybench score was 93%"
+    },
+    {
+      "model": "Mistral Large 4",
+      "benchmark": "Dense 200 visual grounding",
+      "skor": 42,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Mistral also reports 42% on Dense 200 visual grounding, narrowly above GPT-6 Astra at 41%"
+    },
+    {
+      "model": "Mistral Large 4",
+      "benchmark": "Lakera’s B3",
+      "skor": 93.3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "It also resisted 93.3% of attacks on Lakera’s B3 benchmark"
+    }
+  ],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/10/banner-2.webp",
+  "url": "https://www.testingcatalog.com/mistral-launches-large-4-preview-with-1-t-parameters/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-06T14:03:33.000Z",
+  "slug": "mistral-launches-large-4-preview-with-1-t-parameters"
+}

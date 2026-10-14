@@ -1,0 +1,62 @@
+{
+  "baslik_tr": "Telperion'dan Qwen3.8-27B-MLA ve Qwen3.8-27B-GLA-g2: 4 kat daha küçük KV önbelleği ve geliştirilmiş akıl yürütme",
+  "ozet_tr": "Telperion, Qwen3.8-27B serisinin yeni latent attention varyantlarını duyurdu. MLA ve GLA-g2 modelleri, KV önbelleğini dört kat sıkıştırarak bağlam uzunluğunu ve eşzamanlılığı önemli ölçüde artırıyor ve SWE-bench testinde %6,58'lik bir performans artışı sağlıyor.",
+  "detayli_icerik_tr": "Telperion, son araştırma çalışmalarının bir sonucu olarak Qwen3.8-27B tabanlı iki yeni model – Qwen3.8-27B-MLA ve Qwen3.8-27B-GLA-g2 – yayınladı. Bu modeller, \"latent attention\" adı verilen bir teknikle KV (key‑value) önbelleğini %400 oranında sıkıştırıyor; bu sayede tüketici donanımında bağlam uzunluğu neredeyse dört katına çıkıyor ya da sunucu ortamında aynı donanımda dört kat daha fazla eşzamanlı istek işlenebiliyor.\n\nPerformans açısından MLA varyantı, SWE-bench Verified (zero‑shot, toolless, n>1500) testinde %42,1 başarı oranı yakalarken, aynı testte temel Qwen3.8-27B modeli %39,5 ve GLA‑g2 %39,4 oranlarıyla geride kaldı. MLA modelinin %6,58'lik istatistiksel olarak anlamlı bir iyileşme gösterdiği belirtiliyor. Ayrıca, bu modeller %20'ye yakın daha az akıl yürütme token'ı tüketiyor, bu da hem maliyet hem de hız açısından avantaj sağlıyor.\n\nBellek tüketiminde de belirgin farklar var. FP8 kuantizasyonu kullanılan modeller sadece 31,5 GB bellek gerektirirken, INT4 kuantizasyonu 22,9 GB, EXL3‑4.0bwp* ise 17,2 GB bellekle çalışıyor. Top‑1 uyumsuzluk artışı (düşük olması tercih edilir) FP8 için %0,06, INT4 için %0,17 ve EXL3‑4.0bwp* için %0,46 olarak raporlanmış. Bu kuantizasyon teknikleri, aynı model boyutunda daha yüksek doğruluk ve daha düşük bellek ihtiyacı sunuyor.\n\nTelperion, modelleri vLLM eklentisiyle kolayca kurulabilir hale getirdiğini ve açık kaynak yöntemlerini yakında paylaşacağını duyurdu. Yöntem, sıfır yeniden eğitim gerektirmiyor ve grouped query attention kullanan çoğu modelle uyumlu. Şirket, ilerleyen dönemde Qwen4‑27B için benzer sparse latent attention varyantları ve geliştirilmiş bir versiyon 2 planlıyor.",
+  "onemli_maddeler": [
+    "Latent attention sayesinde KV önbelleği %400 sıkıştırılıyor, bağlam uzunluğu ve eşzamanlılık dört kat artıyor.",
+    "SWE-bench Verified testinde MLA modeli %42,1 başarıyla %6,58'lik istatistiksel iyileşme gösterdi.",
+    "FP8, INT4 ve EXL3 kuantizasyonları bellek tüketimini %40‑70 oranında düşürürken doğruluk kaybı çok düşük seviyelerde."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Yeni model varyantları, bellek verimliliği ve performans artışıyla hem araştırmacıların hem de üretim ortamlarının ilgisini çekecek kritik bir gelişme sunuyor.",
+  "etiketler": [
+    "Qwen",
+    "latent attention",
+    "KV cache",
+    "quantization",
+    "benchmark"
+  ],
+  "anilan_modeller": [
+    "Qwen3.8-27B-MLA",
+    "Qwen3.8-27B-GLA-g2",
+    "Qwen3.8-27B"
+  ],
+  "yorum_tr": "Bu geliştirme, büyük dil modellerinin daha düşük donanım gereksinimiyle daha uzun bağlamları işleyebilmesini sağlayarak hem araştırma hem de ticari uygulamalarda yeni fırsatlar yaratacak. Kuantizasyon ve KV sıkıştırma tekniklerinin açık kaynak olarak paylaşılması, ekosistemde inovasyonu hızlandırabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen3.8-27B-MLA",
+      "benchmark": "SWE-bench Verified",
+      "skor": 42.1,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "zero-shot, toolless, n>1500",
+      "kaynak_metinden_alinti": "Qwen3.8-27B-MLA 42.1%"
+    },
+    {
+      "model": "Qwen3.8-27B",
+      "benchmark": "SWE-bench Verified",
+      "skor": 39.5,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "zero-shot, toolless, n>1500",
+      "kaynak_metinden_alinti": "Qwen3.8-27B 39.5%"
+    },
+    {
+      "model": "Qwen3.8-27B-GLA-g2",
+      "benchmark": "SWE-bench Verified",
+      "skor": 39.4,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "zero-shot, toolless, n>1500",
+      "kaynak_metinden_alinti": "Qwen3.8-27B-GLA-g2 39.4%"
+    }
+  ],
+  "gorsel_url": "https://miro.medium.com/v2/resize:fit:1400/1*X2ssy5OccGLyVw71eEwq_g.png",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x5wcnz/new_model_from_telperion_qwen3827bmla/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-14T16:47:46.000Z",
+  "slug": "new-model-from-telperion-qwen3-8-27b-mla-qwen3-8-27b-gla-g2"
+}

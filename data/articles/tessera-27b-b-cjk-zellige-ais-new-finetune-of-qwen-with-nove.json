@@ -1,0 +1,53 @@
+{
+  "baslik_tr": "Tessera-27B-B-CJK: Zellige AI’nın Qwen3.8-27B modeline token tasarrufu sağlayan yeni ince ayarı",
+  "ozet_tr": "Zellige AI, Qwen3.8-27B tabanlı kodlama ajanı Tessera-27B-B-CJK modelini, sıkıştırılmış CJK kısaltmasıyla düşünerek token tüketimini yarı yarıya azaltacak şekilde yayınladı. Model, açık ağırlıklarla Apache‑2.0 lisansı altında Hugging Face üzerinden indirilebilir ve 11 tutulan kodlama‑ajanı görevinde temel modele göre %50‑64 oranında daha az düşünme tokeni harcıyor.",
+  "detayli_icerik_tr": "Zellige AI, Qwen3.8-27B tabanlı yeni bir kodlama ajanı modeli olan Tessera-27B-B-CJK'yi duyurdu. Model, \"compressed CJK\" adı verilen bir kısaltma dili kullanarak hem İngilizce hem Çince kelimeler ve sembolleri birleştiriyor; bu sayede model düşünme sürecinde çok daha az token harcıyor, ancak çıktısı hâlâ düz İngilizce ve kod olarak sunuluyor. Bu yaklaşım, Bottlecap AI’nın \"thinking‑cap\" modeline benzer, ancak Tessera serisi token verimliliği konusunda daha ileri araştırmalar yapmayı hedefliyor.\n\nDeğerlendirme sonuçları, aynı girişler üzerinde 11 tutulan kodlama‑ajanı görevinde temel Qwen3.8-27B modeline kıyasla düşünme tokeni tüketiminin %0.50‑0.64 oranına düştüğünü gösteriyor (tipik tur için 0.496x, %90 güven aralığı 0.385‑0.624, token‑ağırlıklı 0.644x). Ayrıca 88 eşleşen turda %100 geçerli araç çağrısı ve tekrarlama döngüsü bulunmadı; 101K‑131K token uzunluğundaki 6 testte de tüm araç çağrıları geçerli oldu. Rekabetçi matematik ve zor algoritmik kodlama için temel model önerilir, çünkü bu alanlarda Tessera daha düşük performans ve daha fazla döngü sergileyebiliyor.\n\nModelin eğitimi, temel modelin çıktılarından türetilen dört kısa LoRA adımını içeriyor. İlk olarak düşünme süreci sıkıştırılmış CJK’ye dönüştürüldü, ardından token‑düzeyinde döngü önleyici bir düzeltme, ajan‑odaklı SFT ve en kısa, temiz çıktılar üzerinden bir reddetme‑örnekleme aşaması uygulandı. Tam eğitim hattı, değerlendirme sonuçları ve başarısız denemeler Zellige AI’nın yayınladığı teknik raporda yer alıyor. Modelin bf16 ağırlıkları Hugging Face deposunda birleştirilmiş olarak bulunuyor; LoRA, GGUF ve NVFP4 versiyonları da aynı repo üzerinden indirilebilir.\n\nTessera-27B-B-CJK açık ağırlıklarla Apache‑2.0 lisansı altında sunuluyor ve geliştiricilerden geri bildirim, hata raporu ve kuantizasyon sonuçları bekleniyor. Model, özellikle token tasarrufu ve ajan döngülerinde verimlilik arayan araştırmacılar ve uygulayıcılar için ilgi çekici bir seçenek olarak öne çıkıyor.",
+  "onemli_maddeler": [
+    "Düşünme tokeni tüketimi %50‑64 oranına düşürüldü (tipik tur 0.496x).",
+    "%100 geçerli araç çağrısı ve tekrarlama döngüsü yok.",
+    "Compressed CJK kısaltmasıyla düşünme süreci sıkıştırıldı, çıktı hâlâ normal İngilizce ve kod.",
+    "Açık ağırlıklar Apache‑2.0 lisansı altında Hugging Face üzerinden indirilebilir."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Model, token verimliliği konusunda yeni bir yaklaşım sunarak kodlama ajanı uygulamalarında maliyet ve performans optimizasyonu potansiyeli taşıyor; ancak henüz geniş çaplı üretim kullanımına geçmemiş olması nedeniyle sektörel etki orta seviyede değerlendirildi.",
+  "etiketler": [
+    "Qwen",
+    "Tessera",
+    "token verimliliği",
+    "kodlama ajanı",
+    "açık kaynak"
+  ],
+  "anilan_modeller": [
+    "Tessera-27B-B-CJK",
+    "Qwen3.8-27B"
+  ],
+  "yorum_tr": "Tessera-27B-B-CJK, token tasarrufu sağlayan yenilikçi bir yöntem sunarak kodlama ajanı araştırmalarına yeni bir boyut kazandırıyor. Geliştiriciler, düşük token maliyeti sayesinde daha uzun ve karmaşık görevleri daha verimli çalıştırabilir, ancak yüksek zorluklu matematik ve algoritma problemlerinde hâlâ temel modele ihtiyaç duyulabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Tessera-27B-B-CJK",
+      "benchmark": "thinking tokens per agent turn (held-out coding-agent tasks)",
+      "skor": 0.496,
+      "birim": "x",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "90% CI 0.385-0.624; token-weighted 0.644x",
+      "kaynak_metinden_alinti": "0.50-0.64x the base model's thinking tokens per agent turn (typical turn 0.496x, 90% CI 0.385-0.624; token-weighted 0.644x)"
+    },
+    {
+      "model": "Tessera-27B-B-CJK",
+      "benchmark": "valid tool calls",
+      "skor": 100,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "100% valid tool calls and 0 repetition loops in 88 matched turns"
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/6p5glarlxgvh1.jpeg?width=640&crop=smart&auto=webp&s=032776dbc50ea5d34856df85fff6a9f2236c3be6",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x5xm28/tessera27bbcjk_zellige_ais_new_finetune_of_qwen/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-14T17:35:08.000Z",
+  "slug": "tessera-27b-b-cjk-zellige-ais-new-finetune-of-qwen-with-nove"
+}
