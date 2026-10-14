@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "SteerClaw Mobile: Telefonunuzda Tamamen Yerel LLM Ajanı",
+  "ozet_tr": "Tek geliştirici, Qwen 3.8'i RTX4090'da çalıştırdıktan sonra aynı modeli akıllı telefonunda da çalıştırmak için SteerClaw Mobile'ı geliştirdi. Uygulama, tüm LLM işleme ve ajan döngüsünü cihazda tutarak veri gizliliğini maksimize ediyor ve dış sunuculara yalnızca gerektiğinde bağlanıyor.",
+  "detayli_icerik_tr": "Yerel büyük dil modelleri (LLM) artık sadece güçlü masaüstü GPU'larla sınırlı kalmadı. Solo geliştirici Salamander_Perfect, Qwen 3.8'i RTX4090'da çalıştırdıktan sonra aynı modeli akıllı telefonunda da kullanma ihtiyacından yola çıkarak SteerClaw Mobile adlı bir uygulama geliştirdi. Uygulama, model, MCP (Model Compute Provider) sunucuları ve arama sağlayıcılarıyla entegre bir ajan döngüsü sunuyor; tüm işlem ve veri işleme tamamen cihazda gerçekleşiyor ve dış sunuculara yalnızca talep üzerine veri gönderiliyor.\n\nSteerClaw Mobile, tam bir ajan deneyimi sağlamak için tasarlandı. Kullanıcılar günlük sorgular, araştırma, sesli kitaplar, AWS log analizi ve Posthog üzerinden iş metrikleri çekme gibi çeşitli senaryolarda uygulamayı kullanabiliyor. Uygulama hiçbir veri toplamaz, analiz yapmaz ve hiçbir telemetri göndermez; bu da gizlilik odaklı bir çözüm arayan geliştiriciler ve işletmeler için çekici bir seçenek oluşturuyor.\n\nUygulamanın dağıtımı iki platformda mevcut: Apple TestFlight ve Google Play Store. Geliştirici, topluluktan geri bildirim, hata raporu ve yeni özellik önerileri bekliyor. Özellikle Claude, Codex ve Muse gibi popüler ajan çerçevelerine alternatif olarak, tamamen yerel bir çözüm sunması, veri sızıntısı riskini ortadan kaldırması ve düşük gecikme süresi sağlaması bakımından dikkat çekiyor.\n\nSteerClaw Mobile, yerel LLM ekosisteminde bir adım daha ileri giderek, mobil cihazlarda tam ajan yetenekleri sunmayı hedefliyor. Bu yaklaşım, özellikle veri gizliliği ve düşük gecikme gerektiren kurumsal uygulamalarda, bulut tabanlı çözümlere kıyasla daha sürdürülebilir bir alternatif sunabilir.",
+  "onemli_maddeler": [
+    "SteerClaw Mobile, tüm LLM işleme ve ajan döngüsünü telefon üzerinde gerçekleştirerek veri gizliliğini maksimize ediyor.",
+    "Uygulama, Qwen 3.8 gibi güçlü modelleri mobil cihazda çalıştırabilme yeteneği sunuyor.",
+    "Apple TestFlight ve Google Play üzerinden erişilebilir; topluluktan geri bildirim ve özellik talepleri bekleniyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 3,
+  "onem_gerekce": "Mobil cihazlarda yerel LLM çalıştırma ve tam ajan deneyimi sunan bir araç olması, gizlilik odaklı kullanıcılar ve geliştiriciler için ilgi çekici ancak henüz geniş çapta benimsenmemiş bir çözüm olduğundan orta seviyede önem taşımaktadır.",
+  "etiketler": [
+    "mobil-LLM",
+    "yerel-LLM",
+    "gizlilik",
+    "ajan",
+    "uygulama"
+  ],
+  "anilan_modeller": [
+    "Qwen 3.8",
+    "Claude",
+    "Codex",
+    "Muse"
+  ],
+  "yorum_tr": "SteerClaw Mobile, veri gizliliği ve düşük gecikme ihtiyacı duyan geliştiriciler için mobilde tam ajan yetenekleri sunarak yerel LLM ekosistemine yeni bir seçenek ekliyor; ancak performans ve model çeşitliliği açısından geniş bir kullanıcı kitlesi kazanması zaman alabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/Zmt1eGl1b3dkYnZoMTkuB7OybAZLAsecrBKjqtzMDOHuqjpJegK8dWZ5BH4P.png?width=640&crop=smart&auto=webp&s=4c63d93ba773ab1f012ed7553deca7b8e8273dbf",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x5bawd/claude_cowork_for_local_llms_that_runs_on_your/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-13T22:54:38.000Z",
+  "slug": "claude-cowork-for-local-llms-that-runs-on-your-phone"
+}

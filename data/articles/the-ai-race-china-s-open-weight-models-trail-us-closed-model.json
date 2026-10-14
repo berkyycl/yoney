@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "AI Yarışı: Çin'in Açık Ağırlıklı Modelleri ABD'nin Kapalı Modellerinden Sadece 7 Ay Geride",
+  "ozet_tr": "Yeni yayınlanan whatmodel.sh liderlik tablosu, Çin'in açık ağırlıklı dil modellerinin, ABD'nin kapalı modellerine kıyasla sadece yedi ay geride olduğunu gösteriyor. Bu bulgu, açık kaynak AI ekosisteminin hızla ilerlediğine işaret ediyor.",
+  "detayli_icerik_tr": "Jake Manger tarafından geliştirilen ve dün halka açılan whatmodel.sh, açık kaynak bir AI liderlik tablosu olarak 22.113 benchmark sonucunu 987 farklı benchmarktan, 1.011 kaynaktan topluyor. Her bir veri noktası, ilgili yayın ya da rapora doğrudan bağlanıyor ve lisans bilgileri de kayıt altında tutuluyor.\n\nTablonun metin modelleri bölümü, 1.211 modeli kapsayan 617 benchmarkta 18.755 ayrı sonuç içeriyor. Bu sonuçların %77'si bağımsız değerlendirmeler; yani modelin yazarları ya da akademik topluluklar tarafından kendi testleriyle elde edilmiş (çoğunlukla ACL Anthology ve arXiv'den CC BY lisanslı makaleler, Epoch AI, LMArena, EvalPlus, EleutherAI harness vb.). Geri kalan %23'lük kısım ise laboratuvarların kendi modelleri için raporladığı 7.677 puanı oluşturuyor.\n\nVeri seti ve puanlama kodu tamamen açık kaynak; veri seti CC BY‑SA 4.0 lisansı altında, kod ise MIT lisansı ile GitHub'da yayınlanıyor. Kullanıcılar CSV formatındaki verileri doğrudan indirip, kendi analizlerini yapabiliyor ve interaktif versiyonda bir modele tıkladıklarında tüm puan ve kaynak bağlantılarını görebiliyor.\n\nBu kapsamlı veri seti, Çin'in açık ağırlıklı modellerinin ABD'nin kapalı, ticari modellerine göre sadece yedi ay geride olduğunu gösteren bir grafikle dikkat çekiyor. Bu fark, açık kaynak topluluklarının inovasyon hızını ve rekabet gücünü ortaya koyarken, AI yarışının sadece büyük şirketlerin değil, devlet destekli açık projelerin de sahne alabileceğini işaret ediyor.",
+  "onemli_maddeler": [
+    "whatmodel.sh 22.113 benchmark sonucunu 987 benchmark ve 1.011 kaynaktan topladı.",
+    "Metin modelleri için 1.211 model, 617 benchmark ve 18.755 sonuç mevcut.",
+    "Sonuçların %77'si bağımsız akademik değerlendirmeler, %23'ü laboratuvar raporları.",
+    "Çin'in açık ağırlıklı modelleri, ABD'nin kapalı modellerine sadece 7 ay farkla yaklaşıyor.",
+    "Veri seti CC BY‑SA 4.0, puanlama kodu MIT lisansı ile tamamen açık kaynak."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "AI yarışında açık kaynak modellerin performansının büyük şirketlerin kapalı modellerine yaklaşması, sektördeki rekabet dinamiklerini ve araştırma yönelimlerini önemli ölçüde etkileyebilir.",
+  "etiketler": [
+    "AI",
+    "benchmark",
+    "open-source",
+    "China",
+    "US"
+  ],
+  "anilan_modeller": [
+    "Chinese open-weight models",
+    "US closed models"
+  ],
+  "yorum_tr": "Bu bulgu, açık kaynak topluluklarının hızla kapalı sistemleri yakaladığı anlamına geliyor; geliştiriciler daha fazla iş birliği ve veri paylaşımıyla rekabet avantajı elde edebilir, kullanıcılar ise daha şeffaf ve erişilebilir modellerden faydalanabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/3xxtm8k2cfvh1.gif?width=640&crop=smart&s=0e7b84bc022f3c7b4c212b2340cc37e9e7883f3b",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x5pjv7/the_ai_race_chinas_openweight_models_trail_us/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-14T12:10:53.000Z",
+  "slug": "the-ai-race-china-s-open-weight-models-trail-us-closed-model"
+}

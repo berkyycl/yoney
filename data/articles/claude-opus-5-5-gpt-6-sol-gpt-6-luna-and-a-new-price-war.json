@@ -1,0 +1,40 @@
+{
+  "baslik_tr": "Claude Opus 5.5, GPT-6 Sol ve GPT-6 Luna piyasaya sürüldü; fiyat savaşı kızıştı",
+  "ozet_tr": "Anthropic, Claude Opus 5.5'i, OpenAI ise yeni GPT-6 Sol ve GPT-6 Luna modellerini duyurdu. Üç model de önceki nesillerine göre %50'ye varan fiyat indirimleriyle geliyor ve LLM pazarında yeni bir fiyat savaşı başlatıyor.",
+  "detayli_icerik_tr": "Anthropic, Claude Opus 5.5'i piyasaya sürerek önceki Opus 5.0 sürümündeki iletişim sorunlarını giderdi. Model, önceki sürümün fiyatını %20 düşürerek girişte 4 $/M token, çıkışta 20 $/M token olarak belirledi ve önbellek okuma ücretini %60 azalttı. 128 000 tokenlık maksimum çıktı sınırı hâlâ geçerli ve \"max\" düşünce seviyesinde karmaşık SVG isteklerinde token limitine çarpıp yanıt veremediği gözlemlendi.\n\nOpenAI, GPT-6 Sol ve GPT-6 Luna modellerini tanıttı. Her iki model de GPT-5.6 serisinin aynı konfigürasyonlarına göre fiyatlarını yarıya indirdi; Luna için giriş 0,10 $/M token, çıktı 0,50 $/M token, Sol için ise giriş 2 $/M token, çıktı 10 $/M token olarak belirlendi. Bu fiyatlar, GPT-6 Luna'yı OpenAI tarihindeki en ucuz modellerden biri hâline getiriyor; yalnızca daha düşük kapasiteli GPT-4.1 Nano ve GPT-5 Nano daha ucuz.\n\nFiyat tablosu, Grok 4.7, Claude Fable 5.1, GPT-6 Astra gibi rakip modellerle karşılaştırıldığında yeni modellerin maliyet avantajını net bir şekilde gösteriyor. Özellikle GPT-5.6 Terra'nın fiyatı aynı seviyede kalırken, performans farkı ortadan kalktı. Anthropic, yakın gelecekte Sonnet 5.5 ve Haiku 5.5'i tanıtacağını duyurdu; Haiku'nun düşük seviye fiyat rekabetini yeniden kazanıp kazanamayacağı merak konusu.\n\nKullanıcı deneyimlerine göre, GPT-6 Luna Codex ve Claude Code ortamlarında varsayılan model olarak seçildi; SQL sorguları ve Dinamik HTML/JS üretiminde hızlı ve yetkin performans sergiledi. Öte yandan, Claude Opus 5.5'in \"max\" seviyesinde aşırı düşünme ve token limitine takılması, yüksek maliyetli ve uzun süren denemelere yol açtı. Bu durum, geliştiricilerin model seçiminde fiyat, token verimliliği ve çıkış limitlerini yeniden değerlendirmesine neden olacak.",
+  "onemli_maddeler": [
+    "Claude Opus 5.5, önceki sürümden %20 daha ucuz ve token verimliliği artırıldı; ancak 128k token çıkış limiti \"max\" seviyesinde işlevselliği kısıtlıyor.",
+    "OpenAI, GPT-6 Sol ve GPT-6 Luna'yı tanıtarak fiyatları %50 oranında düşürdü; Luna, $0.10/$0.50 (giriş/çıkış) ile OpenAI'nin en ucuz modellerinden biri oldu.",
+    "Fiyat tablosu, Grok 4.7, GPT-5.6 Terra ve diğer rakip modellerle karşılaştırıldığında yeni modellerin maliyet avantajını net bir şekilde ortaya koyuyor.",
+    "Anthropic, yakın zamanda Sonnet 5.5 ve Haiku 5.5'i duyuracak; Haiku'nun düşük fiyat rekabeti yeni fiyat savaşını derinleştirebilir."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Önde gelen iki büyük LLM sağlayıcısının yeni nesil modelleri ve büyük fiyat indirimleri sektörde rekabet dinamiklerini kökten değiştirecek nitelikte.",
+  "etiketler": [
+    "Claude Opus 5.5",
+    "GPT-6 Luna",
+    "GPT-6 Sol",
+    "LLM fiyat savaşı",
+    "token verimliliği"
+  ],
+  "anilan_modeller": [
+    "Claude Opus 5.5",
+    "GPT-6 Sol",
+    "GPT-6 Luna",
+    "Grok 4.7",
+    "GPT-5.6 Luna",
+    "GPT-5.6 Sol",
+    "Claude Fable 5.1",
+    "GPT-6 Astra"
+  ],
+  "yorum_tr": "Bu fiyat indirimleri, geliştiricilerin maliyetlerini düşürürken aynı zamanda model seçimini token verimliliği ve çıktı limitlerine göre yeniden gözden geçirmesine yol açacak. Rekabetin artması, LLM ekosisteminde daha fazla yenilik ve fiyat şeffaflığı beklenmesini sağlayabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://static.simonwillison.net/static/2026/gpt-pelicans-grid.webp",
+  "url": "https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/",
+  "source": "Simon Willison",
+  "sourceTier": "bagimsiz",
+  "date": "2026-09-22T23:46:41.000Z",
+  "slug": "claude-opus-5-5-gpt-6-sol-gpt-6-luna-and-a-new-price-war"
+}

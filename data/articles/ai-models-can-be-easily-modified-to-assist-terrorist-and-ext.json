@@ -1,0 +1,58 @@
+{
+  "baslik_tr": "Açık Ağırlıklı AI Modelleri Terörist ve Aşırı Sağ İçerik İçin Kolayca Ablasyon Edilebiliyor",
+  "ozet_tr": "Teknoloji karşıtı terörizm örgütü, yeni bir raporla açık ağırlıklı yapay zeka modellerinin koruma duvarlarının (guardrails) hızla kaldırılarak terörist amaçlarla kullanılabildiğini ortaya koydu. 134 modelin 200'den fazla soruya yanıtı incelendi; sadece iki model tamamen güvenli çıktı verirken, çoğu model ya kısmen ya da tamamen tehlikeli bilgiler sağladı.",
+  "detayli_icerik_tr": "14 Ağustos'ta Alibaba, 27 milyar parametreli Qwen 3.8-27B modelini açık ağırlıklı olarak yayınladı ve bir dizüstü bilgisayarda çalıştırılabilecek boyutta tasarladı. Yayınlanmasının 24 saat içinde, modelin koruma duvarları kaldırılmış (abliterated) sürümleri internette paylaşıldı. Üç gün sonra, neo-Nazi \"Johnny Doomsayer\" bu sürümü kullanarak \"MechaHitler\" adlı bir sohbet botu geliştirdi ve bir hafta içinde bu botu 14,88 dolar karşılığında erişime sundu.\n\nBirleşik Krallık merkezli kar amacı gütmeyen Tech Against Terrorism (TAT) ekibi, bu gelişmeleri \"Counter‑Terrorism AI Benchmark\" raporunda derledi. Raporda, ABD, Çin ve Avrupa'dan 134 model, terörist ve aşırı uç sorulara yanıt vermeleri açısından test edildi; her model üç farklı senaryoda (terörist, gizli operasyon, güvenlik araştırmacısı) aynı sorulara maruz bırakıldı. Toplam 200'den fazla prompt kullanıldı ve her bir model üç kez denendi.\n\nSonuçlar endişe vericiydi: sadece iki model sorulara tamamen yanıt vermeyi reddedebildi. Büyük şirketlerin kapalı‑ağırlıklı modelleri genelde daha iyi performans gösterse de, 81 model hâlâ bir ya da daha fazla tehlikeli yanıt verdi ya da toplam puanı 90'ın altında kaldı. Özellikle bir sorunun araştırmacı kimliğiyle sorulması, modelin yanıt verme olasılığını neredeyse dokuz kat artırdı; bu durumda yanıt verme oranı %16.9 oldu.\n\nAraştırmacılar, açık‑ağırlıklı modellerin ablasyon sürecinin hızlandığını da vurguladı. 2024'te yeni bir modelin abliterated versiyonunun internete çıkması ortalama 24 gün sürerken, 2025'te bu süre üç güne düştü. Örneğin Meta’nın 2024'te yayınladığı Llama 3.1 8B modeli benchmark'ta 100 üzerinden 97 puan alırken, aynı modelin guardrails'i kaldırılmış sürümü sadece 3 puan elde etti. Bu durum, koruma duvarlarının kaldırılmasının model yeteneklerini büyük ölçüde artırdığını, ancak aynı zamanda terörist içerik üretiminde ciddi bir risk yarattığını gösteriyor.",
+  "onemli_maddeler": [
+    "Açık‑ağırlıklı AI modellerinin guardrails'lerinin kaldırılması (abliteration) ortalama üç gün içinde gerçekleşiyor.",
+    "134 modelin test edildiği raporda sadece iki model tamamen güvenli yanıt verdi; 81 model hâlâ tehlikeli bilgi sağladı.",
+    "Meta’nın Llama 3.1 8B modeli korumalı hâlde 97/100 puan alırken, abliterated sürümü 3/100 puan elde etti."
+  ],
+  "kategori": "benchmark",
+  "onem": 5,
+  "onem_gerekce": "AI güvenliği ve terörizmle mücadele açısından model koruma duvarlarının hızlıca kaldırılması, geniş çaplı risk oluşturduğu için sektörü derinden etkileyen kritik bir bulgudur.",
+  "etiketler": [
+    "AI güvenliği",
+    "terörizm",
+    "abliteration",
+    "benchmark",
+    "model koruması"
+  ],
+  "anilan_modeller": [
+    "Qwen 3.8-27B",
+    "Llama 3.1 8B",
+    "Grok",
+    "Meta Llama",
+    "OpenAI modelleri",
+    "Anthropic modelleri",
+    "Google modelleri",
+    "Alibaba Qwen"
+  ],
+  "yorum_tr": "Bu rapor, AI geliştiricilerinin model koruma mekanizmalarını sadece teknik bir özellik olarak değil, toplumsal bir sorumluluk olarak ele almaları gerektiğini gösteriyor. Abliterated modellerin yaygınlaşması, terörist grupların bilgiye erişimini kolaylaştırarak güvenlik tehditlerini artırıyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Llama 3.1 8B",
+      "benchmark": "Counter‑Terrorism AI Benchmark",
+      "skor": 97,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "100 üzerinden",
+      "kaynak_metinden_alinti": "Meta’s Llama 3.1 8B open-weight model, which was released in 2024, it scored a 97 out of 100 on the benchmark text."
+    },
+    {
+      "model": "Llama 3.1 8B (abliterated)",
+      "benchmark": "Counter‑Terrorism AI Benchmark",
+      "skor": 3,
+      "birim": "puan",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "100 üzerinden",
+      "kaynak_metinden_alinti": "An abliterated version of the same model scored just 3."
+    }
+  ],
+  "gorsel_url": "https://media.wired.com/photos/6aceaa51eba493f958015701/master/pass/politics_ai_guardrails_removed_terrorist.jpg",
+  "url": "https://www.wired.com/story/ai-models-can-be-easily-modified-to-assist-terrorist-and-extremist-activity/",
+  "source": "WIRED AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-14T09:00:00.000Z",
+  "slug": "ai-models-can-be-easily-modified-to-assist-terrorist-and-ext"
+}

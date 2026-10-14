@@ -1,0 +1,45 @@
+{
+  "baslik_tr": "OpenAI, ChatGPT'de GPT-6 ve Intelligent UI'yi Kullanıma Sunuyor",
+  "ozet_tr": "OpenAI, ChatGPT platformunda yeni nesil GPT-6 modelini ve Intelligent UI adlı görsel‑etkileşimli arayüz sistemini tüm kullanıcılarına dağıtmaya başladı. Ücretli katmanlar GPT-6 Sol, ücretsiz ve Go katmanları ise GPT-6 Luna modelini kullanacak ve yanıtlar metinle birlikte grafik, buton ve form gibi interaktif öğeler içerecek.",
+  "detayli_icerik_tr": "OpenAI, haftada 1,2 milyar kullanıcıya hizmet veren ChatGPT'de GPT-6 model ailesini ve yeni Intelligent UI (Zeki Kullanıcı Arayüzü) sistemini devreye alıyor. Ücretli Plus, Pro, Business ve Enterprise planları bu güncellemeden ilk faydalananlar arasında yer alırken, ücretsiz ve Go kullanıcıları bir gün sonra erişim sağlayabilecek. Enterprise müşterileri ise kurum yöneticilerinin ayarlarına bağlı olarak modele erişebilecek.\n\nIntelligent UI, yanıtların sadece düz metinle sınırlı kalmayıp, görev bağlamına göre grafik, tablo, harita, tıklanabilir buton ve formlar gibi bileşenleri otomatik olarak oluşturmasını sağlıyor. Örneğin bir yemek tarifi yanında zaman çizelgesi, bir yolculuk planı için harita ve duraklar ya da anlık tasarruf hesaplayıcıları gibi araçlar sunulabiliyor. Bu etkileşimli içerikler, modelin yanıtı üretirken aynı anda derleniyor ve kullanıcıya kademeli olarak akış içinde gösteriliyor.\n\nTeknik açıdan sistem, yerel, akışa uygun bileşenlerden oluşan bir kütüphane ve modelin ürettiği arayüzü gerçek zamanlı derleyen bir derleyici kullanıyor. Model, yanıtı üretirken hem içerik hem de görsel düzen kararlarını aynı anda alıyor; bu sayede yanıtlar kısmen tamamlandıkça ekranda görünebiliyor. OpenAI, GPT-6'nın düşünürken yanıt vermeye başlamasını, yani ara sonuçları kullanıcıya sunmasını da mümkün kıldığını belirtiyor.\n\nGüvenlik açısından GPT-6, önceki sürümlere göre çoklu turda koruma atlatma girişimlerine daha dirençli ve siber saldırı, biyolojik tehdit ve şiddet içerikli taleplere karşı güncellenmiş önlemler taşıyor. Model, bağlam içinde risk algılayamadığında yanıt vermeyi reddetmek yerine, eksik bilgi ya da araç durumunu daha net ifade etmeye odaklanıyor. Bu güncelleme, OpenAI'nin yapay genel zekâ (AGI) faydalarını güvenli bir şekilde topluma sunma vizyonunun bir parçası olarak konumlandırılıyor.",
+  "onemli_maddeler": [
+    "GPT-6 Sol (ücretli) ve GPT-6 Luna (ücretsiz) modelleri, günlük sohbetler için optimize edildi.",
+    "Intelligent UI, yanıtları metinle birlikte grafik, buton ve form gibi interaktif öğelerle sunarak kullanıcı deneyimini görselleştiriyor.",
+    "GPT-6 Instant, yanıt başlangıç süresinde %44 daha hızlı; güvenlik önlemleri çoklu tur atlatma girişimlerine karşı güçlendirildi."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "GPT-6, OpenAI'nin en yeni büyük dil modeli olarak hem performans hem de kullanıcı arayüzü açısından sektörde çığır açıcı bir adım; milyarlarca kullanıcıyı etkileyen bir güncelleme.",
+  "etiketler": [
+    "GPT-6",
+    "Intelligent UI",
+    "ChatGPT",
+    "OpenAI",
+    "Yapay Zeka"
+  ],
+  "anilan_modeller": [
+    "GPT-6 Sol",
+    "GPT-6 Luna",
+    "GPT-6 Extra High",
+    "GPT-6 Instant"
+  ],
+  "yorum_tr": "GPT-6 ve Intelligent UI'nin lansmanı, geliştiricilere daha zengin etkileşimli uygulamalar oluşturma imkanı sunarken, son kullanıcıların da bilgiye ulaşımını görsel ve interaktif bir biçimde hızlandırıyor. Güvenlik iyileştirmeleri, modelin sorumlu kullanımını destekleyecek önemli bir adım olarak öne çıkıyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GPT-6 Instant",
+      "benchmark": "Response start time",
+      "skor": 44,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "ortalama başlangıç süresi",
+      "kaynak_metinden_alinti": "GPT-6 Instant started 44% sooner on average than GPT-5.6 Instant"
+    }
+  ],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/10/banner-5.webp",
+  "url": "https://www.testingcatalog.com/openai-rolls-out-gpt-6-with-intelligent-ui-in-chatgpt/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-07T22:33:51.000Z",
+  "slug": "openai-rolls-out-gpt-6-with-intelligent-ui-in-chatgpt"
+}

@@ -1,0 +1,42 @@
+{
+  "baslik_tr": "Microsoft, Windows'ta Hibrit Yapay Zeka ve Ajan Kontrollerini Tanıttı",
+  "ozet_tr": "Microsoft, Windows 11 ve Copilot+ PC'lerde yerel ve bulut tabanlı yapay zekayı birleştiren “hibrit zeka” stratejisini duyurdu. Yeni Microsoft Execution Containers (MXC) ile kurumlar, ajanların dosya ve ağ erişimini anlık politika kontrolüyle sınırlayabilecek; aynı zamanda MAI Code 1.1 Flash gibi sıkıştırılmış yerel modeller, Copilot'un görevleri cihazda yürütmesine olanak tanıyacak.",
+  "detayli_icerik_tr": "Microsoft, Windows 11 için genel kullanıma sunulan Microsoft Execution Containers (MXC) sayesinde, yapay zeka ajanlarının hangi dosyalara ve ağ kaynaklarına erişebileceğini anlık olarak tanımlayan politika tabanlı bir koruma katmanı getirdi. MXC, Agent 365 ve Intune entegrasyonu ile ajan kimliği ve yönetimini birleştirerek, IT departmanlarının ajan eylemlerini cihaz kullanıcılarından bağımsız bir şekilde denetlemesini sağlıyor. Şu anda Codex, GitHub Copilot ve OpenClaw bu altyapıyı desteklerken, Claude Code, Perplexity, Raycast ve Meta’nın Muse uygulamaları da entegrasyon sürecinde.\n\nYeni nesil yerel modeller de Windows ekosistemine dahil edildi. MAI Code 1.1 Flash, 3‑bit hassasiyetle model boyutunu %80 oranında küçülterek 256K yerel bağlam penceresi sunuyor. Windows ML, llama.cpp desteğiyle GPU, NPU ve CPU üzerinde çalışabilecek. GitHub HydraFusion ise bulut ve cihaz içi modeller arasında iş yükünü otomatik yönlendirerek, Copilot uygulaması, CLI ve Visual Studio Code’da deneysel bir ön izleme sunacak.\n\nCopilot, kullanıcı izniyle cihazdaki dosyalara ve son aktivitelere erişebilecek, Windows eylemlerini gerçekleştirebilecek ve yerel modelleri çağırabilecek. Bu hibrit katman, Copilot Home, Copilot Code ve Autopilot gibi hizmetlerde önümüzdeki aylarda yavaş yavaş kullanılmaya başlanacak. Donanım tarafında ise Surface Laptop Ultra, 128 GB birleşik bellek ve 120 milyar parametreyi aşan modelleri destekleme yeteneğiyle ön siparişe açıldı; DGX Station ise bir trilyon parametreye kadar modelleri Windows üzerinde çalıştırabilecek.\n\nMicrosoft, Windows, Copilot, GitHub, Surface ve NVIDIA donanımını tek bir platformda birleştirerek, kişisel bilgisayarlardan kurumsal paylaşımlı ortamlara kadar güvenli ajanlar ve yerel AI çözümleri sunmayı hedefliyor. Bu adım, hem geliştiricilere hem de son kullanıcılara AI uygulamalarını daha kontrollü, maliyet etkin ve veri gizliliğine saygılı bir şekilde sunma imkanı tanıyor.",
+  "onemli_maddeler": [
+    "Microsoft Execution Containers (MXC) artık genel kullanımda; ajanların dosya ve ağ erişimi anlık politika ile sınırlandırılabiliyor.",
+    "MAI Code 1.1 Flash, %80 daha küçük boyut ve 256K yerel bağlam penceresiyle cihaz içi model çalıştırmayı mümkün kılıyor.",
+    "Copilot, kullanıcı izniyle yerel dosyalara ve aktivitelere erişerek hibrit AI katmanını kullanacak; bu özellik Copilot Home, Code ve Autopilot'ta yakında aktif olacak.",
+    "Surface Laptop Ultra, 128 GB birleşik bellek ve 120 milyar parametreyi aşan modelleri destekleme yeteneğiyle ön siparişe açıldı; DGX Station ise bir trilyon parametreye kadar modelleri Windows'ta çalıştırabilecek."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Windows ekosistemine entegre edilen hibrit AI ve politika‑tabanlı ajan kontrolü, hem kurumsal hem de bireysel kullanıcılar için güvenlik ve maliyet açısından kritik bir gelişme sunuyor.",
+  "etiketler": [
+    "Windows 11",
+    "Hybrid AI",
+    "Copilot",
+    "Microsoft Execution Containers",
+    "AI agents"
+  ],
+  "anilan_modeller": [
+    "MAI Code 1.1 Flash",
+    "Claude Code",
+    "Perplexity",
+    "Raycast",
+    "Meta Muse",
+    "llama.cpp",
+    "Codex",
+    "GitHub Copilot",
+    "OpenClaw",
+    "GitHub HydraFusion"
+  ],
+  "yorum_tr": "Bu güncelleme, AI ajanlarının güvenli ve kontrollü bir şekilde çalışmasını sağlayarak, geliştiricilerin ve kurumların yerel model kullanımını artıracak; aynı zamanda kullanıcıların veri gizliliği ve token maliyetleri konusunda daha fazla esneklik elde etmelerini sağlayacak.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/10/banner-7.webp",
+  "url": "https://www.testingcatalog.com/microsoft-brings-hybrid-ai-and-agent-controls-to-windows/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-07T22:30:45.000Z",
+  "slug": "microsoft-brings-hybrid-ai-and-agent-controls-to-windows"
+}

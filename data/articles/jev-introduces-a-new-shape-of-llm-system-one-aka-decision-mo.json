@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "Jev, Sistem Bir (Decision Model) adlı yeni LLM türünü tanıttı",
+  "ozet_tr": "TypeSafe AI, metin girdilerini alıp sadece sayısal kararlar dönen bir LLM olan Jev'i duyurdu. Model, evet/hayır, çoklu seçenek ve puanlama sorularına yüzde bazlı güven skorlarıyla yanıt veriyor ve çıktı ücreti almıyor. $0.042/milyon token giriş fiyatıyla, mevcut GPT-5 Nano'dan bile daha ucuz bir seçenek sunuyor.",
+  "detayli_icerik_tr": "Geçtiğimiz hafta TypeSafe AI, \"System One\" ya da daha çok \"Decision Models\" olarak adlandırdığı yeni bir model sınıfını tanıttı. Jev, geleneksel LLM'lerin aksine yalnızca metin girdisi alıyor ve çıktıyı metin yerine ondalık sayılar olarak sunuyor; bu sayılar sınıflandırma, evet/hayır ve puanlama gibi kararları temsil ediyor. Şirket, Jev'i \"yapılandırılmamış durumu al, tiplenmiş olasılık kararları üret\" şeklinde tanımlıyor.\n\nJev'in API'si, bir \"state\" nesnesi (metin, dizi ya da ad‑değer çiftleri) ve birden fazla soru alabiliyor. Sorular paralel olarak işleniyor, bu da aynı sorgu süresi içinde yüzlerce sorunun yanıtlanabilmesini sağlıyor. Üç temel soru tipi bulunuyor: Noul (evet/hayır) soruları, Bernoulli dağılımına dayalı 0‑1 arası güven skoru; seçim soruları, olasılık dağılımlı skorlar; ve puanlama soruları, tanımlı bir aralıkta konumlandırılmış ondalık değerler. Jev'in dokümantasyonu, sayılar, tarih ve adversarial içeriklerde zayıf olduğunu belirtiyor.\n\nModelin en dikkat çekici yönlerinden biri fiyatlandırma yapısı. Çıktı token'ları ücretsiz, sadece giriş token'ları üzerinden $0.042/milyon token ücreti alınıyor; bu, OpenAI'nin GPT-5 Nano modelinin $0.05/milyon token fiyatından daha düşük. Bu maliyet avantajı, spam tespiti, etiketleme, önceliklendirme ve arama yeniden sıralama gibi yüksek hacimli sınıflandırma görevlerinde Jev'i cazip kılıyor. Yazar, Jev'i BM25 gibi hafif bir arama algoritmasıyla elde edilen 100 adayı yeniden puanlamak için kullandığını ve maliyetin sadece birkaç sent olduğunu vurguluyor.\n\nEleştirmenler, Jev'in tamamen kara kutu bir sistem olmasından endişe ediyor. Model sadece bir sayı döndürdüğü için kararın hangi sinyallerden kaynaklandığını anlamak zor. Bu durum, özellikle işe alım gibi hassas alanlarda önyargı riskini artırıyor. Yazar, San Francisco Körfez Bölgesi şehirlerini \"iyi şehir mi?\" sorusuyla test ederken Cupertino'nun en yüksek, East Palo Alto'nun en düşük puanı aldığını ve bu tür sonuçların yorumlanmasının zor olduğunu belirtiyor. Bu sebeple, Jev'in geniş çapta kullanılmadan önce kapsamlı değerlendirme ve deneysel testlerin yapılması gerektiği vurgulanıyor.",
+  "onemli_maddeler": [
+    "Jev, metin girdisi alıp sadece ondalık sayı ve güven skoru dönen bir \"karar modeli\" olarak LLM pazarına yeni bir kategori getiriyor.",
+    "Fiyatlandırma tamamen giriş token'ları üzerinden $0.042/milyon token; çıktı ücretsiz, bu da mevcut GPT-5 Nano'dan daha ucuz bir seçenek anlamına geliyor.",
+    "Üç soru tipi (Noul evet/hayır, çoklu seçenek, puanlama) paralel işlenebiliyor, bu da yüksek hacimli sınıflandırma ve sıralama görevlerinde büyük hız avantajı sağlıyor.",
+    "Model sayılar, tarih ve adversarial içeriklerde zayıf; kararların içsel nedenleri açıklanamadığı için önyargı ve şeffaflık riskleri bulunuyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Jev, LLM'lerde çıktı maliyetini ortadan kaldırarak ve karar‑modeli yaklaşımını tanıtarak hem maliyet hem de kullanım senaryoları açısından sektörde köklü bir değişim potansiyeli taşıyor.",
+  "etiketler": [
+    "LLM",
+    "Decision Models",
+    "Jev",
+    "TypeSafe AI",
+    "AI Evaluation"
+  ],
+  "anilan_modeller": [
+    "Jev",
+    "GPT-5 Nano",
+    "Qwen 3.5"
+  ],
+  "yorum_tr": "Jev'in karar‑modeli yapısı, sınıflandırma ve puanlama görevlerinde maliyet ve hız avantajı sunarken, şeffaflık ve önyargı konularında yeni riskler getiriyor; geliştiricilerin bu dengeyi iyi yönetmesi kritik olacak.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": null,
+  "url": "https://simonwillison.net/2026/Sep/21/jev/",
+  "source": "Simon Willison",
+  "sourceTier": "bagimsiz",
+  "date": "2026-09-21T23:09:20.000Z",
+  "slug": "jev-introduces-a-new-shape-of-llm-system-one-aka-decision-mo"
+}

@@ -1,0 +1,58 @@
+{
+  "baslik_tr": "Saldırganları Durduran AI Güvenlik Önlemleri Savunucuları da Engelliyor; Orion-1 Boşluğu Dolduruyor",
+  "ozet_tr": "Artemis Security, kurumsal ağlarda siber saldırıları tek başına tespit edip yanıtlayabilen Orion-1 modelini tanıttı. Model, log verilerini birleştirerek saldırganı izole ediyor ve otomatik karşı önlemler öneriyor. Şirketin kendi geliştirdiği \"Decision-Grade Readiness\" benchmark'ında, Orion-1 Claude Opus 5.5 ve GPT-6 Sol gibi genel amaçlı modelleri geride bıraktı.",
+  "detayli_icerik_tr": "Artemis Security, siber güvenlik ekiplerinin aynı anda hem savunma hem de saldırı görevlerinde yapay zekâ modellerini kullanma zorluğuna çözüm sunmak amacıyla Orion-1 adlı bir \"Frontier Foundation Model\" geliştirdi. Model, kimlik doğrulama hizmetleri, bulut altyapısı, uç noktalar, SaaS uygulamaları ve ağ ekipmanlarından gelen logları birleştirerek tek bir saldırgan profili oluşturuyor; ardından bir güven puanı atayarak karar veriyor ve gerektiğinde otomatik yanıt adımlarını tetikliyor.\n\nOrion-1, Artemis'in kendi oluşturduğu \"Decision-Grade Readiness\" (DGR) benchmark'ında beş farklı görevde test edildi. Bu benchmark, modellere aynı başlangıç uyarısı, aynı çevresel veri ve bir güvenlik ekibinin kullandığı araçlar sağlanarak bir saldırının gerçekleşip gerçekleşmediği kararının verilmesini istiyor. Sonuçlar, Orion-1'in tüm görevlerde %80'in üzerindeki bir eşik değeri aşarak 80.8 puanla saldırı yeniden yapılandırma görevinde en yüksek skoru elde ettiğini gösterdi; bir sonraki en iyi model olan GPT-6 Sol ise aynı görevde 58.3 puan aldı.\n\nGenel amaçlı modellerin, milyarlarca olayla beslendiğinde saldırı izini kaybettiği ve bazen zararsız ama anormal etkinlikleri saldırı olarak işaretlediği belirtiliyor. Artemis, Orion-1'i kendi güvenlik operasyonlarından derlediği görevlerle ince ayar yaptı; şüpheli desenleri tespit etme, bilinen saldırı tekniklerini avlama, yeni tespit kuralları yazma ve canlı saldırıları izole etme gibi yetenekler içeriyor. Eğitim sürecinde müşteri verisi kullanılmadı ve modelin temelinin mevcut bir sağlayıcı modeline dayanıp dayanmadığı şirketin blogunda netleşmedi.\n\nOrion-1 şu anda seçkin müşterilere özel bir önizleme aşamasında sunuluyor; yüksek etkili eylemler varsayılan olarak insan onayı gerektiriyor. Şirket, Nisan ayında gizlilikten çıkıp 70 milyon dolar toplayarak sektöre hızlı bir giriş yaptı ve bu model, siber güvenlikte yapay zekâ kullanımının hem saldırı hem de savunma tarafında dengeyi yeniden tanımlamasına öncülük edebilir.",
+  "onemli_maddeler": [
+    "Artemis Security, Orion-1'i geliştirerek siber saldırı tespiti ve otomatik yanıtı tek bir modelde birleştirdi.",
+    "Orion-1, şirketin \"Decision-Grade Readiness\" benchmark'ında 80.8 puanla saldırı yeniden yapılandırmada en yüksek skoru aldı.",
+    "Genel amaçlı modellerin güvenlik önlemleri (guardrails) hem saldırganları hem de savunucuları engelledi; bu durum özel amaçlı modellerin önemini artırıyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Kurumsal siber güvenlikte yapay zekâ tabanlı otomatik saldırı tespiti ve yanıtı sağlayan yeni bir modelin tanıtılması, sektördeki savunma stratejilerini kökten değiştirme potansiyeline sahip olduğu için yüksek öneme sahiptir.",
+  "etiketler": [
+    "siber güvenlik",
+    "yapay zeka",
+    "model",
+    "Orion-1",
+    "benchmark"
+  ],
+  "anilan_modeller": [
+    "Orion-1",
+    "Claude Opus 5.5",
+    "GPT-6 Sol",
+    "Grok 4.7",
+    "Kimi K3",
+    "Claude Mythos 5",
+    "GPT-5.5-Cyber",
+    "GLM 5.2"
+  ],
+  "yorum_tr": "Orion-1'in ortaya koyduğu otomatik saldırı analizi ve yanıt yeteneği, güvenlik ekiplerinin iş yükünü hafifletirken, yanlış pozitif riskini azaltabilir. Ancak modelin kapalı bir önizleme aşamasında olması, geniş çaplı benimsenmesi için şeffaflık ve entegrasyon konularının da çözülmesi gerektiğini gösteriyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Orion-1",
+      "benchmark": "Decision-Grade Readiness",
+      "skor": 80.8,
+      "birim": "point",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "attack reconstruction",
+      "kaynak_metinden_alinti": "Orion-1 scored 80.8 compared to 58.3 for the next-best model."
+    },
+    {
+      "model": "GPT-6 Sol",
+      "benchmark": "Decision-Grade Readiness",
+      "skor": 58.3,
+      "birim": "point",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "attack reconstruction",
+      "kaynak_metinden_alinti": "Orion-1 scored 80.8 compared to 58.3 for the next-best model."
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/08/cybersecurity_illu-1.png",
+  "url": "https://the-decoder.com/ai-guardrails-designed-to-stop-hackers-are-now-blocking-defenders-and-orion-1-aims-to-fill-the-gap/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-14T13:24:22.000Z",
+  "slug": "ai-guardrails-designed-to-stop-hackers-are-now-blocking-defe"
+}

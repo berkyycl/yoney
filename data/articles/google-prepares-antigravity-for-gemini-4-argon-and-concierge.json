@@ -1,0 +1,42 @@
+{
+  "baslik_tr": "Google, Antigravity uygulamasını Gemini 4 Argon ve Concierge için hazırlıyor",
+  "ozet_tr": "Google, Antigravity kodlama uygulamasına Gemini 4 Argon modelini ve yeni Concierge sesli ajan prototipini entegre etmeye hazırlanıyor. Ultra aboneleri ve ücretli API müşterileri, Argon'un uzun vadeli yazılım mühendisliği görevlerini %77,9 başarı oranıyla yerine getirebileceği ilk kullanıcı grupları olacak.",
+  "detayli_icerik_tr": "Google, Antigravity uygulamasına yönelik bir dizi yeni etiket ve abonelik bilgisi yayınlayarak Gemini 4 Argon modelinin entegrasyon sürecini işaret etti. Yeni etiketler, kullanım limitleri, abonelik seviyeleri ve \"Google AI Ultra\"ya yükseltme çağrıları içeriyor; bu da Ultra abonelerinin Argon'u kodlama uygulamasında ilk deneyenler arasında olacağını gösteriyor. Şirketin 30 Eylül duyurusunda, Ultra aboneleri ve ücretli API müşterilerinin, önceki aşamada güvenilir siber savunuculara verilen erişimin ardından, Argon'un daha geniş bir kullanıcı kitlesine sunulacağı belirtilmişti.\n\nArgon'un dahili iş akışlarında zaten kullanıldığı ve DeepSWE v1.1 benchmark'ında %77,9 skor elde ettiği rapor edildi. DeepSWE, uzun vadeli yazılım mühendisliği görevlerini değerlendiren bir test seti olup, bu yüzde Google'ın ajan tabanlı kodlama çözümlerinde Argon'un rekabet gücünü ortaya koyuyor. Antigravity'in bu skoru, Google'ın karmaşık kodlama işlerini uzun süreli oturumlarda yürütebilen ajanlar geliştirme yönündeki stratejisinin bir parçası.\n\nUygulama içinde ayrıca \"Concierge\" adlı bir sesli ajan prototipi tespit edildi. Concierge, gerçek zamanlı sesli komutlarla ajanların yönlendirilmesini sağlayacak bir öncül olarak görülüyor, ancak hâlâ erken bir aşamada olduğu ve kesin bir çıkış tarihinin olmadığı vurgulandı. Bunun yanı sıra \"Auto mode\" adı verilen bir özellik üzerinde çalışıldığı bildirildi; bu mod, Antigravity'nin daha az izin istemesi ve daha özerk çalışması hedefi taşıyor, ancak tam erişim kuralları henüz netleşmemiş.\n\nGörsel özelleştirme yönünde de çalışmalar sürüyor; farklı skin'ler ve potansiyel bir eklenti menüsü geliştiriliyor. Bu geliştirmeler, Google'ın ses kontrolü, ajan özerkliği ve kişiselleştirme gibi alanlarda deneme aşamasında olduğunu gösteriyor, ancak tüm prototiplerin resmi bir takvimle duyurulmadığı belirtiliyor.",
+  "onemli_maddeler": [
+    "Antigravity uygulamasına Gemini 4 Argon entegrasyonu planlanıyor, Ultra aboneleri ilk erişimi alacak.",
+    "Argon, DeepSWE v1.1 testinde %77,9 başarı puanı elde ederek uzun vadeli kodlama görevlerinde güçlü performans gösterdi.",
+    "Concierge adlı sesli ajan prototipi ve Auto mode özelliği geliştiriliyor, ancak çıkış tarihleri kesinleşmedi."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Google'ın AI kodlama asistanı Antigravity'e yeni model ve sesli ajan entegrasyonu, geliştiriciler için önemli bir ürün güncellemesi ve sektördeki rekabeti etkileyebilecek bir adım.",
+  "etiketler": [
+    "Google",
+    "Gemini",
+    "Antigravity",
+    "AI ajanları",
+    "DeepSWE"
+  ],
+  "anilan_modeller": [
+    "Gemini 4 Argon"
+  ],
+  "yorum_tr": "Bu güncellemeler, geliştiricilerin daha güçlü ve uzun vadeli kodlama asistanlarından faydalanmasını sağlayarak üretkenliği artırabilir; aynı zamanda sesli kontrol ve özerk ajan özellikleri, AI asistanlarının kullanım biçimlerini genişletecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Gemini 4 Argon",
+      "benchmark": "DeepSWE v1.1",
+      "skor": 77.9,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Google says Argon is already powering internal workflows and reports a 77.9% score on DeepSWE v1.1, which evaluates longer software engineering tasks."
+    }
+  ],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/10/Screenshot-2026-10-05-at-17.47.31--1-.png",
+  "url": "https://www.testingcatalog.com/google-prepares-antigravity-for-gemini-4-argon-and-concierge/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-07T14:04:39.000Z",
+  "slug": "google-prepares-antigravity-for-gemini-4-argon-and-concierge"
+}

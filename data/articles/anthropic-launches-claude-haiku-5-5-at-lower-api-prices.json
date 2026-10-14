@@ -1,0 +1,82 @@
+{
+  "baslik_tr": "Anthropic, Claude Haiku 5.5'i daha düşük API fiyatlarıyla piyasaya sürdü",
+  "ozet_tr": "Anthropic, en ucuz ve en yetenekli küçük modeli Claude Haiku 5.5'i duyurdu. Model, 100.000 token'a kadar düşük maliyetli kullanım sunarken, önceki sürümüne göre performansta büyük sıçrama yaptı ve yeni fiyatlandırma politikalarıyla API maliyetlerini önemli ölçüde azalttı.",
+  "detayli_icerik_tr": "Anthropic, Claude Haiku 5.5'i resmi olarak kullanıma sundu. Model, yüksek hacimli ve maliyet duyarlı iş akışları için tasarlanmış; özetleme, bağlam sıkıştırma, veri tabanı sorguları, sınıflandırma, müşteri desteği ve tarayıcı entegrasyonu gibi görevlerde kullanılabiliyor. Ayrıca, Sonnet 5.5 ve Opus 5.5 gibi daha büyük modellerin yanına bir alt ajan olarak da eklenebiliyor. Haiku 5.5, ilk kez ayarlanabilir bir çaba (effort) parametresi sunarak geliştiricilerin maliyet ile zekâ arasındaki dengeyi istedikleri gibi ayarlamalarına imkan tanıyor.\n\nFiyatlandırma açısından Haiku 5.5, 100.000 token'a kadar giriş token başına 0,10 $, çıkış token başına 0,50 $ ücretlendirilirken, önbellek okuma 0,01 $ ve önbellek yazma 0,125 $ olarak belirlenmiş. Bu eşik üzerindeki kullanımda fiyatlar beş katına çıkıyor. Anthropic, yeni tarifelerin Haiku 4.5'e göre ortalama %75 daha düşük maliyet sağladığını ve önceki modelin %90'lık isteklerinin bu daha ucuz katmanda gerçekleştiğini belirtiyor.\n\nPerformans açısından Haiku 5.5, OSWorld 2.1 offline alt kümesinde %72,4 başarı elde ederken, Haiku 4.5 sadece %15,7'lik bir skor göstermişti. Terminal‑Bench 4.0'da %39,2 puan alarak önceki sürümün sıfır puanını geride bıraktı. FrontierCode 1.1 testinde %46,4 ve Humanity’s Last Exam testinde araçsız %45,9, araç destekli %57,4 skorlarıyla da önemli bir ilerleme kaydetti. Bu sonuçlar, Haiku 5.5'in kodlama, bilgisayar kullanımı ve bilgi işi gibi alanlarda önceki sürümden çok daha yetkin olduğunu gösteriyor.\n\nModel, Claude Platform, AWS, Google Cloud ve Microsoft Azure üzerinden \"claude-haiku-5-5\" kimliğiyle erişilebilir. Güvenlik açısından, Haiku 5.5 siber savunma yeteneklerinde Sonnet 5.5'ten daha sıkı kısıtlamalar getirirken, biyoloji korumaları Sonnet 5, Sonnet 5.5 ve Opus 5 ile aynı seviyede tutulmuş. Ayrıca, Sonnet 5.5'in önbellek okuma fiyatı %50 düşürülerek milyon token başına 0,10 $'a çekilmiş; bu da ajan tabanlı işlerin maliyetini yaklaşık %20 azaltıyor. Max ve Team abonelik planları için aylık API kredileri ve beta düzeyinde bilgisayar‑tarayıcı kullanım desteği de duyurulmuş.",
+  "onemli_maddeler": [
+    "Claude Haiku 5.5, önceki Haiku 4.5'e göre %75 daha düşük maliyetle çalışıyor.",
+    "OSWorld 2.1'de %72,4, Terminal‑Bench 4.0'da %39,2 gibi önemli benchmark skorları elde etti.",
+    "100.000 token'a kadar giriş $0,10, çıkış $0,50 fiyatlandırmasıyla yüksek hacimli uygulamalara uygun hale getirildi.",
+    "Ayarlanabilir effort parametresi sayesinde geliştiriciler maliyet‑zeka dengesini kontrol edebiliyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Claude Haiku 5.5, Anthropic'in en ucuz ve en yetenekli küçük modeli olarak yüksek hacimli, maliyet duyarlı uygulamalara yeni fiyatlandırma ve performans iyileştirmeleri getiriyor; bu da hem geliştiriciler hem de bulut hizmeti sağlayıcıları için sektörde büyük bir etki yaratıyor.",
+  "etiketler": [
+    "Claude Haiku 5.5",
+    "API fiyatları",
+    "Anthropic",
+    "AI modelleri",
+    "bulut platformları"
+  ],
+  "anilan_modeller": [
+    "Claude Haiku 5.5",
+    "Claude Sonnet 5.5",
+    "Claude Opus 5.5",
+    "Claude Haiku 4.5"
+  ],
+  "yorum_tr": "Claude Haiku 5.5'in düşük maliyetli ve yüksek performanslı yapısı, özellikle büyük ölçekli veri işleme ve müşteri hizmetleri gibi tekrarlayan görevlerde geliştiricilerin tercih edeceği bir seçenek haline geliyor. Fiyat indirimleri ve yeni SDK araçları, bulut entegrasyonlarını hızlandırarak AI uygulamalarının yaygınlaşmasını destekleyecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Claude Haiku 5.5",
+      "benchmark": "OSWorld 2.1 offline subset",
+      "skor": 72.4,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "The model scored 72.4% on the offline subset of OSWorld 2.1, up from 15.7% for Haiku 4.5"
+    },
+    {
+      "model": "Claude Haiku 5.5",
+      "benchmark": "Terminal-Bench 4.0",
+      "skor": 39.2,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "and 39.2% on Terminal-Bench 4.0, where its predecessor scored zero"
+    },
+    {
+      "model": "Claude Haiku 5.5",
+      "benchmark": "FrontierCode 1.1",
+      "skor": 46.4,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "It reached 46.4% on FrontierCode 1.1"
+    },
+    {
+      "model": "Claude Haiku 5.5",
+      "benchmark": "Humanity’s Last Exam (without tools)",
+      "skor": 45.9,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "45.9% on Humanity’s Last Exam without tools"
+    },
+    {
+      "model": "Claude Haiku 5.5",
+      "benchmark": "Humanity’s Last Exam (with tools)",
+      "skor": 57.4,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "rising to 57.4% with tools"
+    }
+  ],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/10/banner-6.webp",
+  "url": "https://www.testingcatalog.com/anthropic-launches-claude-haiku-5-5-at-lower-api-prices/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-07T22:28:03.000Z",
+  "slug": "anthropic-launches-claude-haiku-5-5-at-lower-api-prices"
+}
