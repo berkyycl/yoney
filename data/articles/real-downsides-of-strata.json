@@ -1,0 +1,45 @@
+{
+  "baslik_tr": "Strata Modeli Üzerindeki Gerçek Performans ve Kullanım Sorunları Tartışıldı",
+  "ozet_tr": "Reddit topluluğu, Strata modelinin vaat ettiği yüksek hızın ardındaki olası sorunları masaya yatırdı. Kullanıcılar, döngüsel sohbet hataları ve port çakışmaları gibi teknik aksaklıkların yanı sıra, token işleme hızının rakip modellerle karşılaştırmalı verilerini paylaştı.",
+  "detayli_icerik_tr": "LocalLLaMA topluluğu, Strata modelinin gerçek dünyadaki performansını ve potansiyel dezavantajlarını tartışmak amacıyla bir başlık açtı. Katılımcılar, modelin 100 token/s (tks) civarında bir hızla çalıştığını ve bu seviyenin agentik (özerk) görevlerde oldukça çekici olduğunu belirtti. Ancak, bazı kullanıcılar sohbet sırasında garip döngüsel hatalar yaşadıklarını ve modelin kullandığı ağ portlarının zaten meşgul olduğu durumlarda çakışma yaşadığını rapor etti.\n\nBu sorunların yanı sıra, benzer büyüklükteki modellerin (27B) llama.cpp çerçevesinde yalnızca 15‑20 tks/s hızla çalıştığı ve bu seviyenin agentik iş akışları için yetersiz olduğu vurgulandı. Kullanıcı, Qwen 27B 3.8 Q4 UD modelinde benzer port çakışması yaşamadığını ve performansının daha istikrarlı olduğunu ifade etti. Swift Q3 Next üzerinden yapılan testlerde ise Strata'nın 100 tks/s hızını koruduğu, ancak aynı modelin llama.cpp üzerinde 40‑60 tks/s arasında bir performans sergilediği kaydedildi.\n\nTopluluk, bu verileri ışığında Strata'nın vaat ettiği yüksek hızın bazı senaryolarda gerçekçi olmayabileceğini ve özellikle entegrasyon aşamasında port yönetimi ve sohbet döngüsü stabilitesi gibi konuların dikkatle ele alınması gerektiğini belirtti. Kullanıcılar, modelin potansiyelini tam olarak değerlendirebilmek için daha kapsamlı benchmark ve hata raporlamalarının yapılmasını önerdi.\n\nBu tartışma, yeni nesil büyük dil modellerinin sadece teorik performans metrikleriyle değil, aynı zamanda gerçek uygulama ortamlarındaki stabilite ve uyumluluk sorunlarıyla da değerlendirilmesi gerektiğine dair bir hatırlatma niteliği taşıyor.",
+  "onemli_maddeler": [
+    "Strata, agentik iş yüklerinde 100 tks/s hızla çalışıyor, ancak sohbet döngüsü ve port çakışması gibi hatalar rapor edildi.",
+    "Benzer 27B modelleri llama.cpp üzerinde sadece 15‑20 tks/s hızla çalışıyor, bu da agentik görevler için yetersiz kabul ediliyor.",
+    "Qwen 27B 3.8 Q4 UD modelinde port çakışması sorunu yaşanmamış, bu da Strata'nın entegrasyon risklerini vurguluyor."
+  ],
+  "kategori": "benchmark",
+  "onem": 3,
+  "onem_gerekce": "Topluluk tarafından paylaşılan gerçek dünya performans ve hata verileri, yeni bir modelin benimsenmesi öncesi kritik değerlendirme noktaları sunuyor ancak resmi bir duyuru ya da geniş çaplı test raporu olmadığı için orta seviyede önem taşıyor.",
+  "etiketler": [
+    "Strata",
+    "performans",
+    "LLM",
+    "token_hızı",
+    "agentic_workloads"
+  ],
+  "anilan_modeller": [
+    "Strata",
+    "Qwen 27B 3.8 Q4 UD",
+    "Swift Q3 Next",
+    "llama.cpp"
+  ],
+  "yorum_tr": "Strata'nın yüksek token hızı cazip olsa da, entegrasyon aşamasındaki stabilite sorunları ve port çakışmaları, geliştiricilerin dikkatli test yapmasını gerektiriyor. Rekabetçi modellerin daha tutarlı performans sunması, Strata'nın pazar konumunu etkileyebilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Strata",
+      "benchmark": "Agentic workload token throughput",
+      "skor": 100,
+      "birim": "tks/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "agentic workloads",
+      "kaynak_metinden_alinti": "so far it seems too good to be true and runs at 100tks in agentic workloads"
+    }
+  ],
+  "gorsel_url": "https://i.ytimg.com/vi/6TfCV--SkoM/maxresdefault.jpg",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x5cdht/real_downsides_of_strata/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-13T23:43:29.000Z",
+  "slug": "real-downsides-of-strata"
+}

@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "Discover AI: 51 Uygulamalı Laboratuvarla AI Öğrenme Rehberi",
+  "ozet_tr": "Yerel bir topluluk üyesi, yapay zekânın temellerinden ileri konularına kadar 51 interaktif laboratuvar içeren bir offline uygulama yayınladı. Uygulama, sinir hücresi kavramından dikkat mekanizmalarına, RAG ve ajan sistemlerine kadar geniş bir yelpazeyi kapsıyor ve bazı laboratuvarlar gerçek model eğitimi ve çalıştırması sunuyor.",
+  "detayli_icerik_tr": "Reddit'in LocalLLaMA topluluğunda paylaşılan yeni bir açık kaynak proje, AI öğrenimini pratik bir deneyime dönüştürmeyi hedefliyor. Toplam 51 laboratuvar, altı ana grupta toplanmış; temel sinir hücresi ve gradyan inişi, dikkat mekanizmaları, Retrieval-Augmented Generation (RAG), ajan tabanlı sistemler, ince ayar ve kuantizasyon gibi konular ayrı ayrı ele alınıyor. Her laboratuvarın yanında kısa bir ders metni bulunuyor ve bu metinler \"Plain\" ya da \"Standard\" modunda okunabiliyor.\n\nUygulamanın en dikkat çekici özelliği, bazı laboratuvarların sadece animasyon değil gerçek kod çalıştırması sunması. Örneğin, dikkat laboratuvarı 1.37 milyon parametreli küçük bir transformer modeli çalıştırıyor; eğitim laboratuvarları ise kaydırıcıları hareket ettirerek karakter seviyesinde bir modelin anlık olarak eğitilmesini sağlıyor. Bu sayede kullanıcılar teorik kavramları doğrudan gözlemleyebiliyor ve etkileşimli bir öğrenme deneyimi elde ediyor.\n\nProjenin geliştirilmesinde Claude, GPT Astra ve Grok gibi büyük dil modelleri ders metinlerini oluşturmak ve referansları kontrol etmek için kullanıldı. Yaratıcı, topluluk katkılarına açık bir yaklaşım benimsiyor; hatalar bulunursa rapor edilmesi ya da bir çekme isteği (PR) açılması isteniyor. Ayrıca, yeni laboratuvar eklemek, görselleştirmeleri iyileştirmek ya da mevcut laboratuvarların açıklığını artırmak isteyen geliştiricilerden de destek bekleniyor.\n\nUygulama tamamen offline çalışıyor; herhangi bir hesap, internet bağlantısı ya da telemetri gerektirmiyor. Projenin kaynak kodu GitHub üzerinden erişilebilir durumda (https://github.com/Fazmin/AILearningGuide) ve topluluk üyeleri tarafından sürekli güncellenmesi planlanıyor. Bu, AI eğitim materyallerinin erişilebilirliğini artırma ve teknik bilgi birikimini geniş kitlelere yayma açısından önemli bir adım olarak görülüyor.",
+  "onemli_maddeler": [
+    "51 laboratuvar, AI temellerinden ileri konulara kadar kapsamlı bir öğrenme yolu sunuyor.",
+    "Bazı laboratuvarlar gerçek model eğitimi ve çalıştırması yaparak teorik kavramları pratikte gösteriyor.",
+    "Uygulama tamamen offline, hesap veya telemetri gerektirmiyor; GitHub üzerinden açık kaynak olarak sunuluyor."
+  ],
+  "kategori": "diger",
+  "onem": 2,
+  "onem_gerekce": "AI eğitimine yönelik interaktif ve offline bir kaynak sunması topluluk için değerli, ancak geniş çaplı bir sektörel etki yaratması beklenmiyor.",
+  "etiketler": [
+    "AI",
+    "Eğitim",
+    "Laboratuvar",
+    "Offline",
+    "Open-source"
+  ],
+  "anilan_modeller": [
+    "Claude",
+    "GPT Astra",
+    "Grok"
+  ],
+  "yorum_tr": "Bu tür topluluk odaklı projeler, AI kavramlarını pratik bir şekilde öğrenmek isteyen geliştiriciler ve öğrenciler için faydalı bir kaynak oluşturuyor. Offline çalışması ve açık kaynak olması, erişim engellerini azaltarak daha geniş bir kullanıcı kitlesine ulaşmasını sağlıyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/5h5j090ffcvh1.jpeg?width=640&crop=smart&auto=webp&s=a4b1b9da33de14b8b244e73eb63ad00ed68d2eb6",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x5ft3e/discover_ai_a_learning_guide_51_handson_labs_for/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-14T02:31:03.000Z",
+  "slug": "discover-ai-a-learning-guide-51-hands-on-labs-for-learning-h"
+}

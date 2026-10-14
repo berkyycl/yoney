@@ -1,0 +1,39 @@
+{
+  "baslik_tr": "2026'da LLM'lerdeki Büyük Dönüşüm: Kodlama Ajanları, OpenClaw ve Açık Ağırlıklı Modeller",
+  "ozet_tr": "2026, büyük dil modellerinin (LLM) kodlama ajanlarıyla gerçek üretkenliğe ulaşması ve kişisel AI ajanları (OpenClaw) gibi yeni bir yazılım kategorisinin doğmasıyla dönüm noktası oldu. Claude Opus 4.5, GPT‑5.1 ve Gemini 3.1 Pro gibi modellerin kod üretimindeki güvenilirliği artarken, Qwen3.6‑35B‑A3B gibi açık‑ağırlıklı modeller yerel cihazlarda kapalı modelleri geride bıraktı.",
+  "detayli_icerik_tr": "Simon Willison, 27 Eylül 2026 tarihli blog yazısında 2026 yılının LLM ekosistemindeki en kritik gelişmeleri kronolojik bir bakışla sundu. Kasım 2025'te Claude Opus 4.5 ve GPT‑5.1'in çıkışı, kodlama ajanlarının \"günlük kullanım için güvenilir\" seviyeye gelmesini sağladı; Claude Code ve Codex artık sık hata yapmıyor, geliştiricilerin iş akışlarını otomatikleştiriyordu.\n\nOcak ayında Willison, yeni kodlama ajanlarıyla desteklenen projelerden bahsederek, kişisel AI ajanları konseptini tanıttı. \"OpenClaw\" adıyla başlayan bir GitHub deposu, iki ay içinde 100 000'den fazla commit toplayarak \"Claw\" adı verilen bir yazılım sınıfını doğurdu. Bu ajanlar, Mac Mini gibi düşük maliyetli cihazlarda çalıştırılarak dijital evcil hayvan gibi popülerlik kazandı ve hatta bir sosyal ağ (MoltBook) üzerinden birbirleriyle etkileşime girdi.\n\nŞubat ayında Google Gemini 3.1 Pro, pelikan‑bisiklet benchmark'inde (Willison'ın uzun süredir kullandığı \"SVG pelikan bisiklet\" testi) büyük bir sıçrama yaptı; aynı testte Anthropic'in Claude Opus 4.7'yi geride bıraktı. Nisan ayında Anthropic, güvenlik araştırmacılarına sınırlı bir grup içinde sunulan Claude Mythos modelini \"çok tehlikeli\" gerekçesiyle genel kullanıma açmadı; bu model, kodlama ajanlarının güvenlik açıklarını keşfetmedeki yeteneğini gözler önüne serdi.\n\nAyrıca 2026, tokenmaxxing (AI token harcamasındaki patlama) ve ardından gelen kısıtlamalarla AI kullanımının ekonomik boyutunu da ortaya koydu. Meta, Microsoft ve Uber gibi devler, çalışanların AI araçlarını zorunlu kılarken, aynı yıl içinde token harcaması sınırlandırıldı; bu dalgalanma, Anthropic'in değerlemesinin trilyon dolara yaklaşmasına zemin hazırladı. Tüm bu trendler, LLM'lerin sadece araştırma laboratuvarlarından çıkıp gerçek dünya ürün ve hizmetlerine dönüşümünü işaret ediyor.",
+  "onemli_maddeler": [
+    "Claude Opus 4.5 ve GPT‑5.1'in kodlama ajanları, hatasız günlük kullanım seviyesine ulaştı.",
+    "OpenClaw ve \"Claw\" konsepti, kişisel AI ajanlarını tüketici pazarına taşıyarak yeni bir yazılım kategorisi yarattı.",
+    "Anthropic'in Claude Mythos modeli, güvenlik araştırmalarına sınırlı erişimle \"çok tehlikeli\" ilan edildi.",
+    "Qwen3.6‑35B‑A3B gibi açık‑ağırlıklı modeller, yerel cihazlarda kapalı modelleri geride bırakarak performans sınırlarını zorladı.",
+    "Tokenmaxxing dalgası, AI kullanımının ürün‑pazar uyumuna ulaşmasını hızlandırdı ancak aynı yıl içinde maliyet kısıtlamalarıyla dengeye getirildi."
+  ],
+  "kategori": "diger",
+  "onem": 4,
+  "onem_gerekce": "2026, LLM'lerin kodlama ajanlarıyla üretkenliğe ulaşması, kişisel AI ajanlarının yaygınlaşması ve açık‑ağırlıklı modellerin performans sıçraması gibi sektörü köklü biçimde etkileyen bir dizi gelişmeye sahne oldu.",
+  "etiketler": [
+    "coding agents",
+    "OpenClaw",
+    "Claude Opus",
+    "Gemini 3.1",
+    "Qwen"
+  ],
+  "anilan_modeller": [
+    "Claude Opus 4.5",
+    "GPT-5.1",
+    "Claude Opus 4.7",
+    "Gemini 3.1 Pro",
+    "Qwen3.6-35B-A3B",
+    "Claude Mythos"
+  ],
+  "yorum_tr": "Kodlama ajanlarının güvenilir hale gelmesi ve kişisel AI ajanlarının tüketici pazarına girişi, yazılım geliştirme süreçlerini otomatikleştirerek geliştiricilerin rolünü yeniden tanımlıyor; aynı zamanda güvenlik ve maliyet yönetimi konularında yeni düzenlemeler gerektirecek bir denge arayışı ortaya çıkıyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://static.simonwillison.net/static/2026/2026-in-llms/simon-willison-2026-in-llms-png.001.webp",
+  "url": "https://simonwillison.net/2026/Sep/27/2026-in-llms-so-far/",
+  "source": "Simon Willison",
+  "sourceTier": "bagimsiz",
+  "date": "2026-09-27T23:54:15.000Z",
+  "slug": "2026-in-llms-so-far"
+}

@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "xAI Grok Build’a Bellek Özelliği Eklendi",
+  "ozet_tr": "xAI, Grok Build geliştirme ortamına bellek yeteneği kazandırdığını duyurdu. Yeni özellik, oturumlar arasında kararları, kodlama konvansiyonlarını ve proje gerçeklerini otomatik olarak not alıp saklayarak geliştiricilerin bağlam kaybını önlüyor.",
+  "detayli_icerik_tr": "xAI, Grok Build 4.6 sürümünde \"Memory\" adlı bir yetenek sundu. Bu özellik, bir oturumda yapılan kod incelemeleri, kararlar ve proje ile ilgili kalıcı bilgiler üzerine arka planda markdown notları oluşturuyor ve bu notları proje bazlı ya da global kapsamda saklıyor. Kullanıcı bir sonraki oturuma geçtiğinde Grok, ilgili konu dosyalarını önceden okur ve önceki oturumlarda kaydedilen bağlamı otomatik olarak uygular; böylece aynı kararları yeniden tartışmak ya da aynı konvansiyonları yeniden hatırlamak gerekmez.\n\nBellek mekanizması iki ana komutla yönetiliyor: \"/memory\" komutu, tüm bellek dosyalarını bir tarayıcıda okunabilir şekilde gösterirken, \"/dream\" komutu yeni gözlemleri ilgili konu dosyalarına katlayarak notları düzenli bir şekilde birleştiriyor. Capture süreci her tamamlanan turda çalışıyor, oturumu kesintiye uğratmadan notları oluşturuyor; Dream ise periyodik olarak arka planda çalışarak bu notları konu başlıklarına göre sınıflandırıyor.\n\nBellek sadece yeni oturumlarda aktif; kullanıcı \"/new\" komutuyla yeni bir Grok oturumu başlattığında veya temiz bir Grok başlattığında not alma süreci devreye giriyor. Notlar, proje içinde birden fazla workspace için ayrı markdown dosyaları olarak saklanıyor ve global bir \"preferences.md\" dosyası tüm projelere uygulanacak tercihleri içeriyor. Bu yapı, ekiplerin kodlama stilini, test süreçlerini (örneğin \"just test\" komutunun kullanımını) ve karar alma mantığını tutarlı bir şekilde belgelemelerini sağlıyor.\n\nGeliştiriciler, Grok Build’ın bellek özelliğini denemek için x.ai CLI aracını kurarak ücretsiz olarak erişebiliyor. Özelliğin tanıtımı, Grok Build’ın kullanım süresi uzadıkça daha akıllı ve bağlam duyarlı bir yardımcı haline gelmesini hedefliyor; böylece kod kalitesi ve geliştirme hızı artırılacak.",
+  "onemli_maddeler": [
+    "Otomatik not alma ve saklama sayesinde kararlar ve kodlama konvansiyonları oturumlar arasında korunuyor",
+    "Proje bazlı ve global markdown dosyalarıyla yapılandırılmış bellek yönetimi",
+    "/memory ve /dream komutlarıyla bellek dosyalarına erişim ve düzenleme kolaylığı",
+    "Capture ve Dream süreçleri arka planda çalışarak oturumu kesintiye uğratmaz",
+    "Bellek yalnızca yeni oturumlarda etkinleşir, mevcut oturumları etkilemez"
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Grok Build, geliştiricilerin kodlama sürecinde bağlamı korumasını sağlayarak verimliliği artıran kritik bir güncelleme sunuyor.",
+  "etiketler": [
+    "Grok Build",
+    "Bellek",
+    "Yapay Zeka",
+    "Geliştirici Araçları",
+    "xAI"
+  ],
+  "anilan_modeller": [
+    "Grok Build",
+    "Grok 4.6"
+  ],
+  "yorum_tr": "Bellek özelliği, uzun vadeli projelerde bağlam kaybını önleyerek ekip içi tutarlılığı ve kod kalitesini artırabilir. Geliştiriciler, notların otomatik oluşturulması ve yeniden kullanılabilir olması sayesinde daha az tekrar iş yapacak ve odaklarını yeni problemlere yönlendirebilecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://x.ai/images/news/grok-build-memory-og.webp",
+  "url": "https://x.ai/news/grok-build-memory",
+  "source": "xAI",
+  "sourceTier": "resmi",
+  "date": "2026-09-16T00:00:00.000Z",
+  "slug": "memory-in-grok-build"
+}

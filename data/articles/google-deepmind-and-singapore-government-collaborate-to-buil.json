@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "Google DeepMind ve Singapur Hükümeti, sahte mesajları önlemek için on-device Gemma modelini geliştirdi",
+  "ozet_tr": "Google DeepMind ve Singapur'un GovTech birimi, özel sohbetlerdeki dolandırıcılık girişimlerini anında tespit etmek amacıyla hafif, cihaz içinde çalışan Gemma modellerini ince ayar yaptı. Model, hiçbir veri bulutuna gönderilmeden, gerçek zamanlı olarak sahte mesajları engelliyor.",
+  "detayli_icerik_tr": "Google DeepMind ve Singapur hükümetine bağlı teknoloji ajansı GovTech, sahte mesaj ve dolandırıcılık saldırılarını önlemek için ortak bir proje başlattı. Proje, cihaz içinde çalışan, düşük kaynak tüketimli Gemma modelinin özel bir versiyonunu ince ayar yaparak, kullanıcıların özel sohbetlerinde anlık scam tespiti sağlıyor. Bu yaklaşım, veri gizliliği açısından kritik bir adım; model, tüm analizleri yerel olarak gerçekleştiriyor ve hiçbir mesaj içeriği bulut sunucularına aktarılmıyor.\n\nİş birliği kapsamında, DeepMind mühendisleri Gemma modelini, metin tabanlı dolandırıcılık kalıplarını tanıyacak şekilde yeniden eğitti. Model, mesajların bağlamını, dil kalıplarını ve tipik dolandırıcılık ifadelerini analiz ederek, yüksek doğruluk oranıyla sahte içerikleri işaretliyor. Bu sayede, kullanıcılar sohbet uygulamalarında potansiyel tehlikeli mesajları görmeden önce uyarı alıyor ve zararlı bağlantılara tıklama riski azalıyor.\n\nProjenin teknik altyapısı, düşük bellek ve işlemci gereksinimleriyle mobil cihazlarda sorunsuz çalışacak şekilde tasarlandı. Gemma'nın hafif mimarisi, akıllı telefonlar ve tabletler gibi sınırlı donanıma sahip cihazlarda bile gerçek zamanlı inferans yapabilmesine olanak tanıyor. Ayrıca, modelin bulut veri çıkışı olmaması, Singapur'un sıkı veri koruma yasalarıyla uyumlu olmasını sağlıyor.\n\nBu iş birliği, hem yapay zeka güvenliği hem de veri mahremiyeti konularında yeni bir standart oluşturmayı hedefliyor. DeepMind, gelecekte benzer on-device çözümleri farklı güvenlik senaryolarına da genişletmeyi planlıyor ve GovTech ile birlikte bölgesel olarak daha geniş bir kullanıcı kitlesine ulaşmayı amaçlıyor.",
+  "onemli_maddeler": [
+    "DeepMind ve GovTech, sahte mesajları tespit etmek için cihaz içinde çalışan Gemma modelini ince ayar yaptı.",
+    "Model, hiçbir veri bulutuna gönderilmeden gerçek zamanlı scam tespiti sağlıyor, böylece gizlilik korunuyor.",
+    "Hafif mimari sayesinde düşük kaynak tüketimiyle mobil cihazlarda sorunsuz çalışıyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Veri gizliliği ve sahte mesajların önlenmesi, mobil güvenlik alanında kritik bir gelişme olup, hem kullanıcıları koruyor hem de on-device AI çözümlerinin yaygınlaşmasını destekliyor.",
+  "etiketler": [
+    "AI",
+    "scam detection",
+    "on-device",
+    "Gemma",
+    "Singapur"
+  ],
+  "anilan_modeller": [
+    "Gemma"
+  ],
+  "yorum_tr": "Bu iş birliği, sahte mesajların önlenmesinde veri mahremiyetini koruyarak on-device AI'nın gücünü gösteriyor; geliştiriciler için düşük kaynaklı modellerin güvenlik uygulamalarına entegrasyonu yeni fırsatlar sunacak.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://lh3.googleusercontent.com/m134KeViYlQXqWaac-fW1TuTvCk1ZQ2EnHF72xH6anzjd4iKukfGHvV3o5PiDTJfSytjxUF2E1rwAAHlZ4ZyCkGkOHV7Uij2ZZ3zsbVZUAFCMCccZQ=w528-h297-n-nu-rw-lo",
+  "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+  "source": "Google DeepMind",
+  "sourceTier": "resmi",
+  "date": "2026-10-14T02:00:14.000Z",
+  "slug": "google-deepmind-and-singapore-government-collaborate-to-buil"
+}

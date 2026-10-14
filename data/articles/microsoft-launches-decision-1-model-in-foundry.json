@@ -1,0 +1,55 @@
+{
+  "baslik_tr": "Microsoft, Decision-1 modelini Foundry platformunda piyasaya sürdü",
+  "ozet_tr": "Microsoft, hızlı karar puanlaması için özel olarak tasarlanmış Microsoft-Decision-1 modelini Foundry katalogunda genel kullanıma açtı. Model, sabit seçenek setleri için kalibre edilmiş olasılık skorları üreterek sınıflandırma, önceliklendirme ve güvenlik taramaları gibi görevlerde hem hız hem de kalite açısından mevcut büyük dil modellerini geride bırakıyor.",
+  "detayli_icerik_tr": "Microsoft, yeni nesil karar verme modeli Microsoft-Decision-1'i duyurdu. Model, sabit bir seçenek kümesi alıp her bir seçenek için kalibre edilmiş olasılık değeri dönen bir API üzerinden çalışıyor ve bu sayede yazılım sistemleri anında yapılandırılmış kararlar alabiliyor. Model, Qwen3.5-9B tabanlı bir post‑training sürecinden geçirilerek tek geçişli (single‑pass) skorlamada optimum performans sağlamak üzere optimize edildi; ilerleyen aşamalarda Microsoft AI ve OpenAI teknolojileriyle de yeniden temellendirilecek.\n\nDecision-1, çoklu‑seçim, evet/hayır ve derecelendirme gibi farklı yanıt formatlarını destekliyor ve rubrik‑tabanlı değerlendirme yeteneğiyle AI yanıtları ve ajan eylemlerinin kalitesini ölçebiliyor. Şirket, modeli 36 farklı benchmarkta, toplamda 150.000'den fazla soruya karşı test ederek en yüksek doğruluk oranını elde etti. Latency açısından ise model, rakip Quyet-1.0-Large'dan 4,5 kat, GPT-6 Sol'dan ise P50 gecikme süresinde 35 kat daha hızlı çıktı.\n\nGüvenlik testleri 5.250 istek üzerinden 11 benchmarkta yürütüldü; model zararlı içerik, jailbreak ve prompt injection gibi tehditlere karşı dayanıklı bulundu. Ayrıca sekiz farklı pertürbasyonda karar değişim oranı sadece %1,3 iken, seçenek açıklamaları yeniden ifade edildiğinde veya sıralama değiştirildiğinde karar değişikliği hiç gözlemlenmedi. İç testlerde Xbox Research, 10.000'den fazla geri bildirim öğesini etiketlemek için modeli kullandı ve kalite açısından GPT-6 Sol ile rekabet ederken, işlem hızı 14 kat, maliyet ise 200 kat daha düşük oldu. Copilot ekibi de modeli GPT-5.6 Luna ile kıyaslayarak 100 kat daha hızlı olduğunu raporladı.\n\nMicrosoft, Decision-1'i düşük maliyetli bir kontrol katmanı olarak konumlandırıyor; modelin güven skorları, yazılımın bir eylemi gerçekleştirmesi, ertelemesi, yeniden denemesi, yükseltmesi ya da bir insan ya da başka bir araca devretmesi gibi karar mekanizmalarını yönlendirebilecek. Kullanım fiyatı, giriş token başına 0,042 $ olarak belirlenmiş; çıkış tokenları ücretsiz. Model, şu anda Microsoft Foundry katalogunda bulunuyor ve yakında OpenRouter üzerinden de erişilebilir olacak.",
+  "onemli_maddeler": [
+    "Microsoft-Decision-1, sabit seçenek setleri için kalibre edilmiş olasılık skorları üreterek karar verme süreçlerini hızlandırıyor.",
+    "Model, 36 benchmarkta en yüksek doğruluk oranını yakalarken, P50 gecikme süresinde GPT-6 Sol'dan 35 kat daha hızlı.",
+    "Xbox Research ve Copilot ekipleri, modelin kaliteyi korurken işlem hızını 14‑100 kat artırdığını ve maliyeti 200 kat düşürdüğünü doğruladı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Karar verme odaklı yeni bir modelin lansmanı, AI uygulamalarında maliyet ve gecikme açısından büyük bir iyileşme sunarak sektörde geniş çaplı entegrasyon potansiyeli taşıyor.",
+  "etiketler": [
+    "Microsoft",
+    "Decision-1",
+    "AI",
+    "Foundry",
+    "Karar Puanlaması"
+  ],
+  "anilan_modeller": [
+    "Microsoft-Decision-1",
+    "Qwen3.5-9B",
+    "Quyet-1.0-Large",
+    "GPT-6 Sol",
+    "GPT-5.6 Luna"
+  ],
+  "yorum_tr": "Decision-1, düşük gecikme ve yüksek doğruluk gerektiren uygulamalarda LLM'lerin yerine geçebilecek bir kontrol katmanı sunarak geliştiricilerin maliyetlerini düşürürken sistem güvenilirliğini artırabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Microsoft-Decision-1",
+      "benchmark": "Decision stability across eight perturbations",
+      "skor": 1.3,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "perturbation variations",
+      "kaynak_metinden_alinti": "Across eight perturbations of equivalent requests, its decision changed 1.3% of the time on average, with no flips when option descriptions were paraphrased or options were reversed or shuffled."
+    },
+    {
+      "model": "Microsoft-Decision-1",
+      "benchmark": "P50 latency speedup vs GPT-6 Sol",
+      "skor": 35,
+      "birim": "x",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "latency",
+      "kaynak_metinden_alinti": "It was 35 times faster than GPT-6 Sol at P50 latency."
+    }
+  ],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/10/banner-9-1.webp",
+  "url": "https://www.testingcatalog.com/microsoft-launches-decision-1-model-in-foundry/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-09T21:48:37.000Z",
+  "slug": "microsoft-launches-decision-1-model-in-foundry"
+}

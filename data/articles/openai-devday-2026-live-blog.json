@@ -1,0 +1,48 @@
+{
+  "baslik_tr": "OpenAI DevDay 2026’da Dots Kişisel Ajan, GPT‑6.1 Sol ve Ultrafast Model Tanıtıldı",
+  "ozet_tr": "OpenAI, San Francisco’da düzenlediği DevDay 2026 etkinliğinde yeni kişisel ajan \"Dots\"ı, daha ucuz ve hızlı GPT‑6.1 Sol modelini ve 8 kat daha hızlı çalışan Ultrafast sürümünü duyurdu. Ayrıca Codex Security Cloud, ChatGPT Spaces, Decisions API ve ChatGPT Sites gibi geliştirici odaklı araç ve hizmetlerde genişlemeler yapıldı.",
+  "detayli_icerik_tr": "OpenAI, 29 Eylül 2026 tarihinde Fort Mason, San Francisco’da gerçekleşen DevDay etkinliğinde, geliştiricilere yönelik bir dizi yeni ürün ve iyileştirme tanıttı. En çok dikkat çeken duyuru, \"Dots\" adlı kişisel ajan oldu; kullanıcılar bu ajanı isimlendirip, bulut tabanlı bir avatar üzerinden sesli ve metin tabanlı etkileşimlerle çalıştırabilecek. Dots, OpenAI'nin en uyumlu modeli olarak nitelendirilen Astra tarafından destekleniyor ve ChatGPT Space içinde ekiplerin ortak çalışma ortamı olarak kullanılabilecek.\n\nModel tarafında, şirket \"GPT‑6.1 Sol\"u piyasaya sürdü. Sam Altman, bu modelin Astra seviyesinde zeka sunarken maliyetinin beşte biri olduğunu vurguladı. Aynı zamanda \"Ultrafast\" adı verilen yeni bir hız katmanı tanıtıldı; bu sürüm 8 kat daha hızlı çalışarak saniyede 300 token üretme kapasitesine ulaşırken, standart fiyatın 6 katı bir ücret talep ediyor. Ultrafast, hem API hem de ChatGPT ve Codex platformlarında kullanılabilir durumda.\n\nKod üretim ve güvenlik araçları da önemli güncellemeler aldı. Codex artık tam anlamıyla bulutta hizmet veriyor ve \"Codex Security Cloud\" ile otomatik tarama, deduplikasyon ve güvenlik yama önerileri sunuyor. Açık kaynak Codex Security CLI da tanıtıldı; bu araç, güvenlik bulgularını otomatik olarak PR'ye dönüştürerek sadece %1 geri dönüş oranı sağlıyor. Ayrıca yeni \"Agents API\" bilgisayar kullanım yetenekleriyle genişletildi.\n\nGeliştiricilerin uygulama dağıtımını kolaylaştırmak amacıyla \"ChatGPT Sites\" ve OpenAI Marketplace lansmanları yapıldı. Sites, SQLite tabanlı veri depolama, zamanlanmış görevler ve eklenti desteğiyle 8 milyon siteye ev sahipliği yapıyor. \"Sign in with ChatGPT\" özelliği ve tam uygulama eklentileri de aynı gün kullanıma sunuldu. Son olarak, yeni \"Decisions API\" Luna modeliyle önceden tanımlı seçenekler arasından milisaniyeler içinde karar vererek, Jev'e rakip bir çözüm olarak tanıtıldı.",
+  "onemli_maddeler": [
+    "Dots kişisel ajanının Astra destekli olarak tanıtılması ve ChatGPT Space içinde ekip işbirliği imkanı",
+    "GPT‑6.1 Sol modelinin Astra seviyesinde zeka, beşte bir fiyatla sunulması",
+    "Ultrafast model: 8× hız, 300 token/saniye, standart fiyatın 6×'ı",
+    "Codex Security Cloud ve açık kaynak Codex Security CLI ile otomatik güvenlik taramaları ve yama üretimi",
+    "ChatGPT Sites, Marketplace ve Decisions API gibi geliştirici ekosistemi araçlarının genel kullanıma açılması"
+  ],
+  "kategori": "guncelleme",
+  "onem": 5,
+  "onem_gerekce": "OpenAI, hem yeni bir model (GPT‑6.1 Sol) hem de geliştiricilere yönelik kapsamlı araç ve hizmet güncellemeleriyle AI ekosisteminde rekabeti yeniden şekillendiriyor; fiyat‑performans iyileştirmeleri ve güvenlik çözümleri sektörde geniş etkiler yaratacak.",
+  "etiketler": [
+    "OpenAI",
+    "DevDay",
+    "GPT-6",
+    "Dots",
+    "Codex"
+  ],
+  "anilan_modeller": [
+    "GPT-6.1 Sol",
+    "Astra",
+    "Luna",
+    "Daybreak",
+    "Codex"
+  ],
+  "yorum_tr": "Bu duyurular, geliştiricilerin daha hızlı, daha ucuz ve güvenli AI çözümlerini entegre etmelerini sağlayarak uygulama geliştirme döngüsünü kısaltacak; aynı zamanda kişisel ajanlar ve çok modlu iş akışları, yeni ürün ve hizmet inovasyonlarını tetikleyecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GPT-6.1 Sol",
+      "benchmark": "Throughput",
+      "skor": 300,
+      "birim": "tokens/second",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "8x faster - up to 300 tokens/second. Available in the API, ChatGPT, and Codex."
+    }
+  ],
+  "gorsel_url": "https://static.simonwillison.net/static/2026/live-20260929-092441.webp",
+  "url": "https://simonwillison.net/2026/Sep/29/openai-devday-2026-live-blog/",
+  "source": "Simon Willison",
+  "sourceTier": "bagimsiz",
+  "date": "2026-09-29T15:55:13.000Z",
+  "slug": "openai-devday-2026-live-blog"
+}

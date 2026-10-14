@@ -1,0 +1,62 @@
+{
+  "baslik_tr": "jitllm ile Çalışan Model Katmanları GPU'lar Arasında Anlık Taşıma (8 ms, yeniden ön doldurma yok)",
+  "ozet_tr": "jitllm adlı yeni bir inference motoru, LLM katmanlarını yanıt üretimi sırasında GPU'lar arasında taşıyarak ön‑prefill ihtiyacını ortadan kaldırıyor. 8 ms gibi düşük gecikme süreleriyle katmanların dinamik olarak yeniden konumlandırılması, büyük modellerin bellek sınırlarını aşmadan çalıştırılmasını mümkün kılıyor.",
+  "detayli_icerik_tr": "Yerel bir geliştirici, işletim sistemleri ve JIT derleyicileri konusundaki tecrübesinden yola çıkarak jitllm adını verdiği bir inference motoru geliştirdi. Motor, mevcut donanıma özgü çekirdekler üretirken model katmanlarını bağımsız süreçler gibi ele alıyor ve gerektiğinde bu süreçleri farklı GPU'lar arasında taşıyor. \n\nReddit'te paylaşılan bir video, iki T4 GPU'lu bir bulut VM'inde Llama-3.2-3B modelinin katmanlarının yanıt üretimi sırasında bir GPU'dan diğerine ve tekrar geri taşınmasını gösteriyor. Aynı zamanda, bir dizüstü bilgisayarda modelin CPU, CUDA ve Vulkan (iGPU) arasında bölünerek katmanların yeniden düzenlenmesi ve KV önbelleğinin sayfalara bölünerek katmanlarla birlikte hareket etmesi sağlanıyor; bu sayede prompt yeniden işlenmiyor ve çıktı, taşınma yapılmamış bir çalışmayla aynı oluyor. \n\nPerformans ölçümlerine göre, iki T4 GPU arasında katman taşıma süresi 8.1‑8.4 ms, V100 tabanlı bir sistemde 20‑21 ms, RTX 3050 Ti dizüstü bilgisayarda ise CUDA‑Vulkan geçişi 91 ms sürüyor. Tüm bu geçişlerde üretilen token sayısı sıfır, yani model yanıt üretimini kesintisiz sürdürüyor. \n\nGeliştirici, jitllm'in tasarımının sunduğu esnekliğin, yeni donanım tiplerine hızlı adaptasyon ve optimizasyon imkanı tanıdığını vurguluyor. Dinamik çekirdek üretimi sayesinde her iyileştirme tüm makinelerde kullanılabilirken, sayfalama ve yeniden konumlandırma katmanlarını bir planlama problemi haline getirerek bellekten daha büyük modellerin, uyumsuz GPU kombinasyonlarının ve sohbet ilerledikçe değişen iş yüklerinin sorunsuz yönetilmesini hedefliyor. Proje kodları GitHub'da açık kaynak olarak sunulmuş durumda.",
+  "onemli_maddeler": [
+    "jitllm, model katmanlarını yanıt üretimi sırasında GPU'lar arasında taşıyarak yeniden ön‑prefill ihtiyacını ortadan kaldırıyor.",
+    "Katman taşıma gecikmesi T4 GPU'larda 8 ms, V100'de 20‑21 ms, RTX 3050 Ti dizüstü bilgisayarda 91 ms olarak ölçüldü.",
+    "KV cache sayfalama özelliği sayesinde prompt yeniden işlenmeden aynı çıktı elde ediliyor.",
+    "JIT tabanlı çekirdek üretimi, yeni donanımlara anında uyum ve performans iyileştirmeleri sağlıyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Dinamik katman taşıma ve JIT derleme yetenekleri, LLM dağıtım maliyetlerini düşürürken ölçeklenebilirliği artırarak sektörde önemli bir teknik ilerleme sunuyor.",
+  "etiketler": [
+    "jitllm",
+    "LLM inference",
+    "GPU scheduling",
+    "KV cache paging",
+    "dynamic layer migration"
+  ],
+  "anilan_modeller": [
+    "Llama-3.2-3B Q4_K_M",
+    "Llama-3.2-1B Q4_K_M"
+  ],
+  "yorum_tr": "jitllm'in sunduğu katman‑taşıma yeteneği, büyük modellerin bellek sınırlarını aşmadan çoklu GPU ortamlarında verimli çalışmasını sağlayarak geliştiricilere yeni bir dağıtım stratejisi sunuyor. Kullanıcılar ise daha düşük gecikme ve kesintisiz yanıt deneyimi elde edecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Llama-3.2-3B Q4_K_M",
+      "benchmark": "GPU Layer Transfer Latency (GPU0→GPU1)",
+      "skor": 8.1,
+      "birim": "ms",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "mid-reply, 0 tokens",
+      "kaynak_metinden_alinti": "2× T4 Llama-3.2-3B Q4_K_M GPU 0 → GPU 1 8.1 ms 0 tokens"
+    },
+    {
+      "model": "Llama-3.2-3B Q4_K_M",
+      "benchmark": "GPU Layer Transfer Latency (GPU1→GPU0)",
+      "skor": 8.4,
+      "birim": "ms",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "mid-reply, 0 tokens",
+      "kaynak_metinden_alinti": "2× T4 Llama-3.2-3B Q4_K_M GPU 1 → GPU 0 8.4 ms 0 tokens"
+    },
+    {
+      "model": "Llama-3.2-1B Q4_K_M",
+      "benchmark": "CPU‑CUDA‑Vulkan Layer Transfer Latency",
+      "skor": 91,
+      "birim": "ms",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "mid-reply, 0 tokens",
+      "kaynak_metinden_alinti": "RTX 3050 Ti laptop Llama-3.2-1B Q4_K_M CUDA → Vulkan 91 ms 0 tokens"
+    }
+  ],
+  "gorsel_url": "https://external-preview.redd.it/a3NjZmFqanEzZHZoMfXi0-RD5rTWORxWlADNAzyfIu0N_gxcPQkFADD80xL1.png?width=640&crop=smart&auto=webp&s=7f15d6743414d886b3f0963d7d8d5117a4266818",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x5i7o9/moving_a_running_models_layers_between_gpus/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-14T04:40:53.000Z",
+  "slug": "moving-a-running-model-s-layers-between-gpus-mid-reply-8-ms"
+}

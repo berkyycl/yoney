@@ -1,0 +1,71 @@
+{
+  "baslik_tr": "Google Gemini 4 Argon: Uzun Dönemli Profesyonel Görevlerde Sınırları Zorlayan Yeni Frontier Model",
+  "ozet_tr": "Google, 1 milyon token limitine sahip ve karmaşık, uzun‑horizon iş akışlarında üstün performans gösteren Gemini 4 Argon modelini duyurdu. Model, kodlama, finans, hukuk ve siber güvenlik gibi kritik alanlarda derin akıl yürütme yeteneğiyle öne çıkıyor ve şu anda güvenilir siber savunuculara özel bir programla sunuluyor.",
+  "detayli_icerik_tr": "Google, Gemini 4 Argon adlı yeni frontier modelini tanıttı. Argon, 1 milyon tokenlık endüstri lideri bir giriş token sınırı sayesinde çok adımlı problem çözme ve uzun metin üretiminde derin akıl yürütme yeteneği sunuyor. Model, özellikle yazılım mühendisliği, finansal araştırma, hukuki taslak hazırlama ve otonom siber güvenlik savunması gibi karmaşık profesyonel görevlerde yüksek performans sergiliyor.\n\nModel, Google içindeki binlerce çalışan tarafından günlük kodlama, hata ayıklama ve büyük ölçekli kod tabanı geçişleri gibi görevlerde kullanılıyor. Örneğin, Argon, Google'ın kuantum araştırmalarında alt rutinlerin qubit×gate kaynaklarını %40 oranında iyileştirdi ve veri merkezlerinde 300 TiB'den 1 PiB'ye kadar bellek tasarrufu sağladı. C/C++ kodlarını Rust'a taşıma sürecinde ise 800 K+ satır kodu otomatik olarak optimize ederek video kod çözücüsünü %2.7 daha hızlı hale getirdi.\n\nGemini 4 Argon, uzun metin üretim kapasitesini 64 K token'dan 1 M token'a çıkararak tek bir yürütmede yüz binlerce token üretme yeteneği kazandı. Bu, modelin tek seferde derinlemesine akıl yürütme yaparak karmaşık problemleri çözmesini sağlıyor. Benchmark sonuçları da bu iddiasını destekliyor: DeepSWE v1.1 testinde %77.9 başarı, AutomationBench'te %51.3 puan, LVBench'te %91.7 skor ve CWE‑bench v1'de %68 ile lider konumda.\n\nGüvenlik açısından, Argon şu anda Fairwind Programı kapsamında güvenilir siber savunuculara sunuluyor ve siber savunma yetenekleriyle kritik güvenlik açıklarını otomatik tespit edip yamalıyor. Model, kötü niyetli kullanım ve prompt enjeksiyon saldırılarına karşı geliştirilmiş savunma katmanlarıyla destekleniyor. Google, modelin geniş çapta erişime açılmadan önce güvenlik çerçevesi, yanlış kullanım önleme ve izleme mekanizmalarını güçlendirmeye devam ediyor.",
+  "onemli_maddeler": [
+    "1 M token limitine sahip, uzun‑horizon akıl yürütme yeteneği",
+    "Kodlama, finans, hukuk ve siber güvenlik gibi alanlarda state‑of‑the‑art performans",
+    "DeepSWE v1.1 (%77.9), AutomationBench (%51.3), LVBench (%91.7) ve CWE‑bench v1 (%68) gibi benchmarklarda lider skorlar",
+    "Fairwind Programı ile güvenilir siber savunuculara özel ön erişim",
+    "Güvenlik çerçevesi: kötüye kullanım önleme, prompt enjeksiyon dayanıklılığı ve izleme sistemleri"
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Google'ın 1 milyon token limitine sahip, çoklu adımlı akıl yürütme ve geniş kapsamlı profesyonel görevlerde üstün performans gösteren Gemini 4 Argon modelini duyurması, AI sektöründe rekabeti ve kurumsal uygulamaları kökten değiştirecek bir adım olarak değerlendiriliyor.",
+  "etiketler": [
+    "Yapay Zeka",
+    "Gemini",
+    "Frontier Model",
+    "Siber Güvenlik",
+    "Kodlama"
+  ],
+  "anilan_modeller": [
+    "Gemini 4 Argon"
+  ],
+  "yorum_tr": "Gemini 4 Argon, uzun metin işleme ve çok adımlı problem çözme yeteneğiyle kurumsal AI kullanımını yeni bir seviyeye taşıyarak geliştiriciler ve büyük işletmeler için daha güçlü bir araç sunuyor. Ancak erişim sınırlamaları ve güvenlik önlemleri, modelin sorumlu bir şekilde yaygınlaştırılması gerektiğini gösteriyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Gemini 4 Argon",
+      "benchmark": "DeepSWE v1.1",
+      "skor": 77.9,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "It sets a new state of the art on DeepSWE v1.1 (77.9%), which measures a model’s performance in real-world long-horizon software engineering tasks."
+    },
+    {
+      "model": "Gemini 4 Argon",
+      "benchmark": "AutomationBench",
+      "skor": 51.3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "On AutomationBench, Zapier’s benchmark measuring end-to-end execution across core business functions, Argon ranks #1 with a score of 51.3%."
+    },
+    {
+      "model": "Gemini 4 Argon",
+      "benchmark": "LVBench",
+      "skor": 91.7,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "On LVBench, which measures long video understanding, Argon is state of the art with a score of 91.7%."
+    },
+    {
+      "model": "Gemini 4 Argon",
+      "benchmark": "CWE-bench v1",
+      "skor": 68,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "On CWE-bench v1, which evaluates the model’s ability to remediate security vulnerabilities, Argon ties for first place with a top score of 68%."
+    }
+  ],
+  "gorsel_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/g4_30-09-26_key-art_blog.width-1300.png",
+  "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+  "source": "Google Gemini",
+  "sourceTier": "resmi",
+  "date": "2026-09-30T20:00:00.000Z",
+  "slug": "gemini-4-argon-our-next-era-of-frontier-intelligence-2"
+}
