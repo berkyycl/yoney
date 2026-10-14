@@ -1,0 +1,38 @@
+{
+  "baslik_tr": "Robotikteki AI atılımları hayatınızı yakında değiştirmeyecek",
+  "ozet_tr": "Elon Musk ve diğer teknoloji liderleri, insan benzeri robotların yakın gelecekte günlük yaşantımıza gireceğini iddia ediyor. Ancak akademisyenler ve robotik uzmanları, mevcut dil‑ve‑görsel modellerin fiziksel dünyadaki karmaşıklığı hâlâ çözmekte yetersiz olduğunu vurguluyor.",
+  "detayli_icerik_tr": "Tesla'nın Optimus humanoid robotu, Elon Musk'un \"en büyük ürün\" iddiasıyla büyük ilgi topluyor. Musk, bu robotların 20.000 dolar gibi düşük bir maliyetle fabrikalarda ve evlerde kullanılabileceğini ve 2027 yılına kadar halka satılabileceğini öne sürüyor. Aynı zamanda Andreessen Horowitz ortaklarından Marc Andreessen ve Nvidia CEO'su Jensen Huang da robotik sektörünün tarihinin en büyük endüstrisi olacağını belirtiyor.\n\nBuna karşılık, Yann LeCun ve Agility Robotics'in kurucusu Jonathan Hurst gibi önde gelen araştırmacılar, dil‑ve‑görsel modellerin (VLM, VLA) robot politikalarını yönlendirmesinin hâlâ sınırlı olduğunu ve gerçek dünya görevlerinin çeşitliliği karşısında yetersiz kaldığını savunuyor. Google DeepMind'in ALOHA 2 platformu üzerinden çalışan Gemini Robotics modeli, bir dizi örnek üzerinden öğretilen görevleri yerine getirebiliyor; örneğin bir öğle yemeği kutusunu paketlemek gibi. Ancak bu sistemler, eğitim verisi dışındaki yeni görevlerde başarısız olma eğiliminde.\n\nAraştırmacılar, veri miktarını artırmanın tek çözüm olmadığını, çünkü fiziksel görevlerin değişkenliğinin neredeyse sınırsız olduğunu belirtiyor. Bu bağlamda, \"world model\" adı verilen, video, 3D tarama ve sensör verileriyle eğitilen modellerin, robotların eylemlerinin sonuçlarını önceden tahmin etmesini sağlayarak daha genel bir zekâ sunabileceği tartışılıyor. Fiziksel ortamda güvenli ve maliyet etkin testler yapabilmek için simülasyonların gerçek dünyayı yansıtması kritik görülüyor.\n\nStart-up Physical Intelligence, \"π0\" serisiyle bu alanda ilerleme kaydettiğini iddia ediyor. 2024'te tanıtılan π0, 10.000 saatlik teleoperasyon verisiyle eğitilmiş bir VLA idi; ardından gelen π0.5, π0.6 ve en yeni π0.7 sürümleri, daha geniş veri setleri ve hafif bir world model entegrasyonu sayesinde kıyafet katlama, kutu düzenleme ve hatta sebze doğrama gibi görevlerde daha yüksek başarı oranları elde etti. Ancak şirket de bu teknolojinin hâlâ erken aşamalarda olduğunu ve gerçek genel amaçlı robotik için önemli engellerin kaldığını kabul ediyor.",
+  "onemli_maddeler": [
+    "Tesla Optimus, 20.000 dolar maliyetle fabrikalarda ve evlerde kullanılabilecek iddiasıyla büyük beklenti yaratıyor.",
+    "Google DeepMind'in Gemini Robotics modeli, ALOHA 2 platformunda VLA tabanlı görevleri yerine getiriyor ancak eğitim dışı görevlerde başarısız olabiliyor.",
+    "World model yaklaşımı, robotların fiziksel dünyayı içsel olarak modelleyerek daha genel ve öngörücü davranışlar sergilemesini hedefliyor."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "Robotik alanındaki AI gelişmeleri, büyük yatırım ve iddialarıyla sektörü şekillendirebilir; ancak teknik sınırlamalar ve araştırma gereksinimleri hâlâ kritik bir engel oluşturuyor.",
+  "etiketler": [
+    "robotik",
+    "yapay zeka",
+    "humanoid robot",
+    "genel amaçlı robot",
+    "AI araştırma"
+  ],
+  "anilan_modeller": [
+    "Optimus",
+    "Gemini Robotics",
+    "π0",
+    "π0.5",
+    "π0.6",
+    "π0.7",
+    "ALOHA 2"
+  ],
+  "yorum_tr": "AI destekli robotik hâlâ erken aşamalarda ve mevcut modellerin fiziksel dünyadaki çeşitliliği tam olarak kavrayamaması, sektördeki beklentileri temkinli bir şekilde dengelemeye zorlayacak. Yatırım ve araştırma artışı, uzun vadede daha gerçekçi genel amaçlı robotların ortaya çıkmasını sağlayabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://wp.technologyreview.com/wp-content/uploads/2026/10/AP25364739329087_1.jpg",
+  "url": "https://www.technologyreview.com/2026/10/08/1145923/ai-breakthroughs-in-robotics-wont-change-your-life-any-time-soon/",
+  "source": "MIT Technology Review AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-08T09:00:00.000Z",
+  "slug": "ai-breakthroughs-in-robotics-won-t-change-your-life-any-time"
+}

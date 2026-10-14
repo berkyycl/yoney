@@ -1,0 +1,55 @@
+{
+  "baslik_tr": "Grok Voice Transcribe 2.0 Tanıtıldı: Gerçek Dünya Seslerinde Çift Kat Daha Doğru",
+  "ozet_tr": "xAI, yeni nesil ses‑metin modeli Grok Voice Transcribe 2.0'i duyurdu. Model, gerçek‑dünya koşullarında önceki sürümüne göre iki kat daha düşük hata oranı sunarken fiyatını aynı tutuyor.",
+  "detayli_icerik_tr": "SpaceXSI'nin (xAI) en yeni speech‑to‑text modeli Grok Voice Transcribe 2.0, gerçek‑dünya değerlendirmelerde mevcut en yüksek doğruluk oranlarından birini elde etti ve Grok Voice Transcribe 1.0'dan iki kat daha doğru sonuç veriyor. Model, Grok Voice adlı ses temelli temel modelin üzerine inşa edildi; bu temel model, Tesla araçlarındaki Grok asistanı ve günlük binlerce müşteri destek çağrısı gibi uygulamalarda zaten kullanılmaktadır.\n\nGrok Voice Transcribe 2.0, gürültülü, çok dilli ve çeşitli ortam koşullarında kaydedilmiş bir veri setiyle eğitildi ve post‑training aşamasında iyileştirildi. Bu sayede telefon hatlarındaki bozulmalar, birden fazla konuşmacı, bölgesel aksanlar ve sesli olarak okunan e‑posta ya da telefon numaraları gibi zorlu senaryolarda dahi düşük Word Error Rate (WER) sağlıyor. Public Artificial Analysis lider tablosunda 32 akış modelinin arasında birinci sırada yer alıyor.\n\nModel, dört iç değerlendirme setinde de Grok Voice Transcribe 1.0'ı geride bıraktı; özellikle telefon (8 kHz) trafiğinde test edilen tüm modelleri geride bıraktı. Kısa cümle ve komut setinde WER %20.6'dan %6.8'e düşerek çok büyük bir iyileşme gösterdi. Çok dilli desteği sayesinde 19 dili otomatik algılayıp, kayıttaki dil değişimlerini tek geçişte takip edebiliyor.\n\nYeni sürüm, mevcut Speech‑to‑Text API entegrasyonlarına kod değişikliği gerektirmeden batch ve streaming modlarında ek özellikler getiriyor: kelime‑seviyesinde zaman damgaları, konuşmacı ayrımı, 8 kanala kadar çok kanallı transkripsiyon, 100’e kadar anahtar terim biası, otomatik sayı‑tarih‑para‑telefon‑e‑posta formatlama, dolgu sözcüklerinin çıkarılması ve akıllı konuşma sonu algılama. Fiyatlandırma ise aynı kalıyor; batch transkripsiyon $0.10/sa, streaming $0.20/sa. Grok Voice Transcribe 1.0 önümüzdeki haftalarda kullanım dışı bırakılacak.",
+  "onemli_maddeler": [
+    "Grok Voice Transcribe 2.0, önceki sürümüne göre iki kat daha düşük Word Error Rate sunuyor.",
+    "Public Artificial Analysis lider tablosunda 32 akış modelinin arasında birinci sırada yer alıyor.",
+    "Kısa cümle setinde WER %20.6'dan %6.8'e düşerek %13.8'lik büyük bir iyileşme sağladı.",
+    "Batch ve streaming API'lerine kod değişikliği olmadan yeni özellikler (zaman damgaları, diarizasyon, çok kanallı, anahtar terim biası vb.) eklendi.",
+    "Fiyatlandırma aynı kalıyor: batch $0.10/sa, streaming $0.20/sa."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Gerçek‑dünya ses koşullarında kayda değer doğruluk artışı ve aynı fiyat politikası, speech‑to‑text pazarında rekabeti yeniden şekillendirecek bir model çıkışıdır.",
+  "etiketler": [
+    "speech-to-text",
+    "transkripsiyon",
+    "xAI",
+    "Grok",
+    "AI"
+  ],
+  "anilan_modeller": [
+    "Grok Voice Transcribe 2.0",
+    "Grok Voice Transcribe 1.0",
+    "ElevenLabs Scribe v2",
+    "Deepgram",
+    "Nova-3",
+    "Muse Voice Transcribe",
+    "Scribe v2 Realtime",
+    "GPT Live Transcribe",
+    "Gemini 3.5 Transcribe Live",
+    "Universal-3.5 Realtime Pro",
+    "Chirp 3 Streaming",
+    "Azure STT Real-time"
+  ],
+  "yorum_tr": "Grok Voice Transcribe 2.0, yüksek doğruluk ve çok dilli yetenekleriyle geliştiricilere ve işletmelere daha güvenilir bir ses‑metin çözümü sunuyor; aynı fiyat seviyesindeki iyileştirme, maliyet duyarlı uygulamalarda geniş benimsenmesini teşvik edecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Grok Voice Transcribe 2.0",
+      "benchmark": "Short‑phrase Word Error Rate",
+      "skor": 6.8,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "short‑phrase set",
+      "kaynak_metinden_alinti": "On short phrases such as in-car commands, word error rate drops from 20.6% to 6.8%."
+    }
+  ],
+  "gorsel_url": "https://x.ai/images/news/og-grok-voice-transcribe-2-0.webp",
+  "url": "https://x.ai/news/grok-voice-transcribe-2",
+  "source": "xAI",
+  "sourceTier": "resmi",
+  "date": "2026-09-18T00:00:00.000Z",
+  "slug": "introducing-grok-voice-transcribe-2-0"
+}

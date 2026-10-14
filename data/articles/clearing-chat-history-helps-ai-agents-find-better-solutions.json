@@ -1,0 +1,65 @@
+{
+  "baslik_tr": "Chat geçmişini temizlemek AI ajanlarının daha iyi çözümler bulmasını sağlıyor",
+  "ozet_tr": "Microsoft Research, uzun süren özerk araştırma ajanlarının aynı çözüm havuzunda takılı kalabileceğini gösterdi. \"Fork-and-Flush\" adlı yöntemle sohbet geçmişi silinip paralel dallar oluşturulduğunda, aynı hesaplama bütçesinde ortalama performans %66 artış gösterdi.",
+  "detayli_icerik_tr": "Microsoft Research, \"Autoresearch agents\" adı verilen ve sürekli çözüm önerip değerlendiren AI sistemlerini inceledi. Aynı görevde sekiz bağımsız çalıştırma, 68.3 ile 100.0 arasında değişen son puanlarla büyük performans farkları ortaya koydu; bu farklar ek işlem gücüyle kapanmadı. Araştırmacılar, çözümlerin iki boyutlu bir haritada birbirine yakın bölgelerde toplandığını ve bu bölgelerin \"idea basin\" (fikir havuzu) olarak adlandırıldığını belirtti. Ajanlar, kalan işlem bütçesini bu sınırlı havuz içinde iyileştirmeye harcayarak daha iyi yaklaşımları keşfetmekte zorlanıyor.\n\nBu sorunu aşmak için geliştirilen \"Fork-and-Flush\" yöntemi iki aşamadan oluşuyor. \"Fork\" aşamasında ajan, aynı çalışma alanını ve üretilen dosyaları miras alarak K paralel dalga bölünüyor. \"Flush\" aşamasında ise her dal, sohbet geçmişini tamamen kaybediyor ancak dosyalar ve kod kalıyor; böylece yeni bir diyalogla temiz bir başlangıç yapabiliyor. Tek bir çalıştırmanın (gri, kesikli) aynı fikir havuzunda kalmasıyla karşılaştırıldığında, temiz bağlamlı dallar farklı havuzlara geçerek daha yüksek puanlar elde etti.\n\nYöntem 13 uzun vadeli görevde (poliyomino paketleme, iş istasyonu zamanlaması, kriptanaliz, CIFAR sınıflandırıcı sıkıştırma ve VLIW çekirdek optimizasyonu gibi) test edildi. Ajanlar GPT‑5.6‑terra ve GPT‑5.5 modellerini GitHub Copilot CLI üzerinden kullandı. Aynı işlem bütçesinde Fork‑and‑Flush, min‑max‑normalleştirilmiş ortalama skoru 0.78 (tek çalıştırma 0.47, en iyi‑4 0.54) elde ederek %66 ve %44 iyileşme sağladı. Standart sapma da 0.26'dan 0.16'ya düştü, yani sonuçlar daha tutarlı hâle geldi. Sadece sohbet geçmişi temizlenmesi bile %22 performans artışı getirdi.\n\nAraştırmacılar, daha güçlü modellerin de fikir havuzlarından kaçınamayabileceğini test etmek için MAX‑3‑SAT problemlerinde Qwen3.5‑4B, 9B ve 27B modellerini kullandı. Performans varyansı, model yeteneklerinin sınırına yakın görevlerde en yüksek seviyeye ulaştı; bu da açık araştırma problemlerinin doğal olarak model sınırlarının tam ortasında konumlandığını gösteriyor. Sonuç olarak, bağlam sıfırlamaları, gelecekteki daha yetkin araştırma ajanları için de kritik bir strateji olmaya devam edecek.",
+  "onemli_maddeler": [
+    "Özerk araştırma ajanları, sohbet geçmişi nedeniyle aynı \"idea basin\" içinde takılı kalabiliyor.",
+    "\"Fork-and-Flush\" yöntemi, paralel dallar ve bağlam sıfırlamasıyla çeşitliliği artırarak %66 daha yüksek ortalama skor sağladı.",
+    "Yöntem 13 görevde en yüksek ortalama skoru elde ederken, sonuçların tutarlılığı da önemli ölçüde iyileşti.",
+    "Daha büyük modeller bile sınır görevlerde benzer varyans gösterdi; bağlam sıfırlamaları gelecekte de geçerli kalacak."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "Araştırma, uzun vadeli AI ajanlarının verimliliğini artırmak için basit ama etkili bir yöntem sunuyor; bu, gelecekteki özerk sistemlerin tasarımını ve kaynak kullanımını doğrudan etkileyebilir.",
+  "etiketler": [
+    "AI araştırma",
+    "özerk ajanlar",
+    "prompt yönetimi",
+    "verimlilik",
+    "Microsoft Research"
+  ],
+  "anilan_modeller": [
+    "GPT-5.6-terra",
+    "GPT-5.5",
+    "Qwen3.5-4B",
+    "Qwen3.5-9B",
+    "Qwen3.5-27B"
+  ],
+  "yorum_tr": "Bağlam sıfırlamaları ve paralel dallanma, araştırma odaklı AI ajanlarının keşif alanını genişleterek daha verimli sonuçlar elde etmelerini sağlayacak; geliştiriciler bu stratejiyi mevcut pipeline'larına entegre ederek performans artışı yakalayabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GPT-5.6-terra",
+      "benchmark": "Normalized Average Score (13 tasks, Fork-and-Flush)",
+      "skor": 0.78,
+      "birim": "",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "same compute budget",
+      "kaynak_metinden_alinti": "Fork-and-Flush achieved a min-max-normalized average score of 0.78, compared to 0.47 for single runs and 0.54 for best-of-4."
+    },
+    {
+      "model": "GPT-5.6-terra",
+      "benchmark": "Normalized Average Score (13 tasks, single run baseline)",
+      "skor": 0.47,
+      "birim": "",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "same compute budget",
+      "kaynak_metinden_alinti": "single runs ... achieved a min-max-normalized average score of 0.47"
+    },
+    {
+      "model": "GPT-5.6-terra",
+      "benchmark": "Normalized Standard Deviation (13 tasks, Fork-and-Flush)",
+      "skor": 0.16,
+      "birim": "",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "same compute budget",
+      "kaynak_metinden_alinti": "normalized standard deviation falling to 0.16 from 0.26 for single runs"
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/10/fork_flush.png",
+  "url": "https://the-decoder.com/clearing-chat-history-helps-ai-agents-find-better-solutions/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-12T16:10:00.000Z",
+  "slug": "clearing-chat-history-helps-ai-agents-find-better-solutions"
+}

@@ -1,0 +1,30 @@
+{
+  "baslik_tr": "Varsayılan Katı Bütçe Sınırları Her Şeyde Gerekecek",
+  "ozet_tr": "Simon Willison, bulut hizmetleri ve API'ler için \"hard\" bütçe sınırlarının varsayılan olarak sunulması gerektiğini savunuyor. Yumuşak uyarıların yetersiz olduğu, özellikle kodlama ajanları gibi otomatik sistemlerin beklenmedik maliyet artışlarına yol açabileceği vurgulanıyor.",
+  "detayli_icerik_tr": "Simon Willison, son blog yazısında bulut ve yapay zeka hizmetlerinin kullanımında \"hard\" bütçe sınırlarının zorunlu hâle getirilmesi gerektiğini belirtti. Kullanıcıların, aylık harcama limitini aştıklarında hizmetin otomatik olarak durdurulmasını sağlayan katı sınırlar, sadece e-posta uyarısı gibi yumuşak önlemlerden çok daha güvenli bir koruma sunuyor.\n\nKodlama ajanları ve kişisel asistanlar, geliştiricilerin ve son kullanıcıların düşük sürtünmeli bir şekilde uygulama oluşturmasını sağlarken, bu sistemlerin kullandığı ücretli API'ler, depolama ve işlem kaynakları aniden yüksek maliyetlere yol açabiliyor. Willison, gecikmeli uyarıların sabah uyanıp yüksek bir fatura ile karşılaşma riskini artırdığını, bunun yerine hataların önceden gelmesinin tercih edileceğini savunuyor.\n\nAWS'in yeni harcama limitleri özelliği ve Google Cloud'un Temmuz ayında tanıttığı \"Spend Caps\" gibi hizmetler, bu ihtiyacın sektörde fark edildiğinin göstergesi. Ancak bu özelliklerin hâlâ sınırlı sayıda kullanıcıya sunulduğu ve genel erişime açılmasının beklenmesi gerektiği belirtiliyor.\n\nWillison, gelecekte yapay zeka ajanlarının hizmet sağlayıcıları arasında bütçe sınırlarına öncelik vermesini ve yeni geliştiricilere bu tür riskleri hatırlatmasını öneriyor. Böyle bir yaklaşım, hem bireysel geliştiricilerin hem de işletmelerin beklenmedik maliyet şoklarından korunmasını sağlayabilir.",
+  "onemli_maddeler": [
+    "Hard (katı) bütçe sınırları, harcama limitini aştığında hizmeti otomatik olarak durdurmalı.",
+    "AWS ve Google Cloud, yeni harcama limitleri özelliklerini sınırlı bir kullanıcı kitlesine sunmuş durumda.",
+    "Kodlama ajanları gibi otomatik sistemler, beklenmedik maliyet artışlarına karşı savunmasızdır."
+  ],
+  "kategori": "fiyat-limit",
+  "onem": 3,
+  "onem_gerekce": "Bulut hizmetlerinin maliyet kontrolü geliştiriciler ve işletmeler için kritik bir konu; ancak konu hâlâ sınırlı bir kitleyi etkiliyor ve henüz yaygın bir uygulama seviyesine ulaşmadı.",
+  "etiketler": [
+    "aws",
+    "google-cloud",
+    "budget-caps",
+    "cloud",
+    "ai-agents"
+  ],
+  "anilan_modeller": [],
+  "yorum_tr": "Katı bütçe sınırlarının varsayılan hâle getirilmesi, bulut ve AI hizmetlerinin maliyet riskini azaltarak geliştiricilerin güvenli bir ortamda yenilik yapmasını sağlayabilir. Ancak bu özelliklerin geniş çapta erişilebilir olması ve kullanıcı deneyimiyle uyumlu bir şekilde entegre edilmesi gerekir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": null,
+  "url": "https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/",
+  "source": "Simon Willison",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-03T23:34:02.000Z",
+  "slug": "we-re-going-to-need-default-hard-budget-caps-on-pretty-much"
+}

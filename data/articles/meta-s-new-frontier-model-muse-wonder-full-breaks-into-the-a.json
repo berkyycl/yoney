@@ -1,0 +1,105 @@
+{
+  "baslik_tr": "Meta'nın yeni frontier modeli Muse Wonder Full AI üst seviyesine girdi",
+  "ozet_tr": "Meta, Muse Wonder ve Muse Wonder Full adını verdiği iki yeni frontier modelini duyurdu. Muse Wonder Full, Artificial Analysis Intelligence Index v4.3'te 56 puan alarak en iyi modeller arasında yerini alırken, kodlama ve bağımsız problem çözme yeteneklerinde büyük sıçrama yaptı. Ancak bilgi tabanı ve gerçek‑dünya performansı hâlâ rakiplerinin gerisinde.",
+  "detayli_icerik_tr": "Meta, yeni frontier modelleri Muse Wonder ve Muse Wonder Full'ı tanıtarak AI yarışında önemli bir adım attı. Muse Wonder Full, Artificial Analysis Intelligence Index v4.3'te 56 puanla en üst düzey modeller arasında yer alırken, Muse Wonder 52 puanla orta‑üst segmentte konumlandı. Bu puanlar, önceki model Muse Spark 1.3'ün 48 puanlık skorundan belirgin bir yükselişi gösteriyor.\n\nModelin en çarpıcı gelişmeleri, agentic (bağımsız) görevlerdeki performans artışıyla ortaya çıktı. Terminal-Bench 4.0 testinde Muse Wonder Full %57 başarı oranına ulaşarak %33'ten büyük bir sıçrama kaydetti. Ayrıca Coding Agents Index'te 68 puan alarak Claude Code ve Sonnet 5.5 ile eşit seviyeye geldi; Muse Wonder ise 63 puanla bu alanda da iyileşme gösterdi.\n\nBilgi tabanı açısından hâlâ eksikler bulunuyor. AA-Omniscience bilgi testinde Muse Wonder Full sadece 30 puan alırken, Claude Opus 5.5 (46), GPT-6 Astra (43) ve Gemini 4 Argon (42) gibi rakipleri geride bırakıyor. Bununla birlikte, halüsinasyon oranı %33'ten %23'e düşürülerek sektördeki en düşük oranlardan birine yaklaşıldı; yalnızca Gemini 4 Argon %15 ile daha düşük bir oran gösteriyor.\n\nYeni modeller, bir milyon tokenlık bağlam penceresi ve metin, görsel, video ve ses gibi çoklu girişleri destekliyor. Muse Wonder API ve Muse Code üzerinden erişilebilirken, Muse Wonder Full şu anda sadece Muse Code kullanıcılarıyla sınırlı. Meta, bu modelleri temel alarak tüm kullanıcılara yönelik kişisel AI ajanları geliştirmeyi ve zaman içinde özelleştirilmiş alt modeller üretmeyi planlıyor. Ancak, API maliyetleri önceki modelin üç katına çıkarak Muse Wonder için görev başına 4,52 $, Muse Spark 1.3 için 1,60 $ seviyesinde bulunuyor.",
+  "onemli_maddeler": [
+    "Muse Wonder Full, Artificial Analysis Intelligence Index v4.3'te 56 puan alarak frontier AI sıralamasında üst üçe girdi.",
+    "Terminal-Bench 4.0 testinde %57 başarı oranı, önceki modelin %33'ünden büyük bir artış gösterdi.",
+    "Kodlama yeteneklerinde 68 puanla Claude Code ve Sonnet 5.5 ile eşit seviyeye ulaştı, ancak bilgi testlerinde geride kaldı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Meta'nın Muse Wonder serisi, frontier AI modelleri arasında rekabeti yeniden dengeleyerek kodlama ve bağımsız problem çözme alanlarında lider konuma yükseldi; bu, sektördeki model geliştirme ve fiyatlandırma dinamiklerini önemli ölçüde etkileyen büyük bir çıkıştır.",
+  "etiketler": [
+    "Meta",
+    "Muse Wonder",
+    "frontier model",
+    "AI benchmark",
+    "kodlama"
+  ],
+  "anilan_modeller": [
+    "Muse Wonder",
+    "Muse Wonder Full",
+    "Muse Spark 1.3",
+    "Claude Code",
+    "Sonnet 5.5",
+    "Claude Opus 5.5",
+    "GPT-6 Astra",
+    "Gemini 4 Argon",
+    "Claude Fable 5.1",
+    "GPT-6.1 Sol"
+  ],
+  "yorum_tr": "Muse Wonder Full'un yüksek benchmark skorları, Meta'nın frontier model yarışında yeniden öne çıkmasını sağladı; geliştiriciler daha güçlü kodlama yeteneklerinden faydalanabilirken, bilgi eksikliği ve yüksek maliyetler hâlâ dikkat edilmesi gereken noktalar.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Muse Wonder Full",
+      "benchmark": "Artificial Analysis Intelligence Index v4.3",
+      "skor": 56,
+      "birim": "point",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Muse Wonder Full scores 56 points on the Artificial Analysis Intelligence Index v4.3"
+    },
+    {
+      "model": "Muse Wonder",
+      "benchmark": "Artificial Analysis Intelligence Index v4.3",
+      "skor": 52,
+      "birim": "point",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Muse Wonder hits 52 points on the Artificial Analysis Intelligence Index v4.3"
+    },
+    {
+      "model": "Muse Wonder Full",
+      "benchmark": "Terminal-Bench 4.0",
+      "skor": 57,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "On Terminal-Bench 4.0, performance jumped from 33 to 57 percent."
+    },
+    {
+      "model": "Muse Wonder Full",
+      "benchmark": "Coding Agents Index",
+      "skor": 68,
+      "birim": "point",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Muse Wonder Full hits 68 points on the Coding Agents Index, tying Claude Code with Sonnet 5.5."
+    },
+    {
+      "model": "Muse Wonder Full",
+      "benchmark": "AA-Omniscience knowledge test",
+      "skor": 30,
+      "birim": "point",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "On the AA-Omniscience knowledge test, Muse Wonder Full manages only 30 points."
+    },
+    {
+      "model": "Muse Wonder Full",
+      "benchmark": "Hallucination Rate",
+      "skor": 23,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Muse Wonder Full cuts its hallucination rate from 33 to 23 percent compared to its predecessor."
+    },
+    {
+      "model": "Muse Wonder Full",
+      "benchmark": "ProofBench",
+      "skor": 94,
+      "birim": "point",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "On ProofBench, Muse Wonder Full solves 94 out of 100 problems, up from 58 for its predecessor."
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/10/muse_wonder.png",
+  "url": "https://the-decoder.com/metas-new-frontier-model-muse-wonder-full-breaks-into-the-ai-top-tier/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-12T18:48:29.000Z",
+  "slug": "meta-s-new-frontier-model-muse-wonder-full-breaks-into-the-a"
+}

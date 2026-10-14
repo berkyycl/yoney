@@ -1,0 +1,30 @@
+{
+  "baslik_tr": "OpenAI çalışanı, yapay zeka sohbet botunu kullanarak ofise gizli ses kaydedici yerleştirdi",
+  "ozet_tr": "OpenAI'ye bağlı bir mühendis, bir yapay zeka sohbet botu ve bir üretkenlik asistanı aracılığıyla toplantı odasına gizli bir ses kaydedici yerleştirdi. Federal savcıların açıkladığı suç duyurusunda, cihazın bir Seeed XIAO ESP32‑S3 Sense geliştirme kartı olduğu ve şifreli veriler içerdiği belirtildi.",
+  "detayli_icerik_tr": "San Francisco'daki OpenAI ofisinde, 35 yaşındaki Suudi asıllı mühendis Abdulrahman Alfozan, bir tuvalet kağıdı parçasına sakladığı ses kaydediciyi bir monitörün arkasına yerleştirerek üst düzey yöneticilerin toplantılarını dinlemeyi planladı. Alfozan, hedef odanın takvimini öğrenmek ve cihazın teknik kurulumunu öğrenmek için şirket içi bir \"productivity agent\" ve bir \"AI chatbot\" ile haftalarca sorgulama yaptı; bu sorgulamalar, eşinin hesabıyla ilişkilendirilmiş bir sohbet botu üzerinden gerçekleştirildi.\n\nCihaz, Seeed XIAO ESP32‑S3 Sense adlı, kamera sensörü, dijital mikrofon ve microSD kart içeren bir geliştirme kartıydı ve 13,99 dolara satılıyor. OpenAI güvenlik ekibi, 30 Eylül'de yapılan bir karşı gözetim taramasında cihazı tespit etti ve daha sonra Alfozan'ın ofiste bıraktığı çantada ikinci bir şifreli cihaz buldu. Şirket, cihazın içindeki verileri şifreli olduğu için inceleyemedi ve FBI'ye bildirdi.\n\nAlfozan, 28 Eylül 2026 civarında cihazı yerleştirdiği iddia ediliyor ve yalnızca yöneticiler ve asistanları tarafından rezerve edilebilen, yüksek gizlilikli stratejik ve teknik konuların tartışıldığı bir odada bu eylemi gerçekleştirdi. Suçlamalar arasında \"elektronik, mekanik ya da başka bir cihazı kullanarak sözlü iletişimi engelleme\" bulunuyor; mahkum olması halinde beş yıla kadar hapis cezası alabilir. Alfozan, Temmuz 2025'te OpenAI'ye katılmış ve tutuklanmasıyla birlikte geçen Cuma işten çıkarıldı.\n\nOpenAI, olayla ilgili henüz model ağırlıkları, kaynak kodu ya da müşteri verileri üzerinde bir sızıntı tespit etmediğini belirtti ve güvenlik, veri ve çalışan korumasının ulusal bir öneme sahip olduğunu vurguladı. Olay, geçen yıl Trump yönetiminin Suudi Arabistan ile imzaladığı gelişmiş çip ve yapay zeka teknolojileri paylaşım anlaşması bağlamında da dikkat çekiyor; Suudi yatırımcıların ABD teknoloji şirketlerine sağladığı sermaye ve potansiyel güvenlik riskleri yeniden gündeme geldi.",
+  "onemli_maddeler": [
+    "Alfozan, bir AI sohbet botu ve üretkenlik asistanı kullanarak gizli ses kaydedici kurma planını detaylı bir şekilde sorguladı.",
+    "Kullanılan cihaz Seeed XIAO ESP32‑S3 Sense geliştirme kartı; şifreli verileri nedeniyle içerik incelenemedi.",
+    "OpenAI, olayda model ağırlıkları, kod ya da müşteri verisi sızdırmadığını belirtti ve güvenlik önlemlerini vurguladı."
+  ],
+  "kategori": "diger",
+  "onem": 4,
+  "onem_gerekce": "OpenAI gibi bir lider yapay zeka şirketinde çalışan birinin iç güvenlik ihlali, şirketin itibarını ve AI teknolojilerinin güvenli kullanımını doğrudan etkileyen kritik bir olaydır.",
+  "etiketler": [
+    "OpenAI",
+    "güvenlik",
+    "AI chatbot",
+    "casusluk",
+    "ses kaydedici"
+  ],
+  "anilan_modeller": [],
+  "yorum_tr": "Bu olay, büyük yapay zeka firmalarının iç güvenlik protokollerinin yeniden gözden geçirilmesi gerektiğini gösteriyor; geliştiriciler AI araçlarını sadece üretkenlik amaçlı değil, potansiyel kötüye kullanım senaryoları için de denetlemeli.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://media.wired.com/photos/6aceab66cc5b61e4cd2bfb17/master/pass/Man-Arrested-for-Listening-Device-in-OpenAI-Office-Security.jpg",
+  "url": "https://www.wired.com/story/an-openai-employee-allegedly-used-a-chatbot-to-help-plant-a-recording-device-at-the-office/",
+  "source": "WIRED AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-13T23:17:59.000Z",
+  "slug": "an-openai-employee-allegedly-used-a-chatbot-to-help-plant-a"
+}

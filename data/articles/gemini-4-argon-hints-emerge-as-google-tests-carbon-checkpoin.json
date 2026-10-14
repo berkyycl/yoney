@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "Google, Gemini 4 Argon ve Carbon Kontrol Noktasını Test Ediyor",
+  "ozet_tr": "Google, Gemini 4 Argon modelinin halka açılmasına yaklaşırken, yeni Carbon kontrol noktasını da iç içe test ediyor. Antigravity platformundaki güncellemeler, 256K‑900K arası bağlam boyutları ve farklı düşünme çabası ayarlarıyla modelin esnekliğini gösteriyor.",
+  "detayli_icerik_tr": "Google, Gemini 4 Argon'un kamuya sürülmesine bir adım daha yaklaştığını işaret eden ipuçlarını Antigravity 2.0 Insiders ortamında ortaya çıkardı. Model seçicisine eklenen üç bağlam konfigürasyonu – varsayılan 256K, 512K (tur başına yaklaşık %130 kota tüketimi) ve 900K (tur başına yaklaşık %180 kota tüketimi) – Gemini Flash modellerinde görülen seçeneklere benziyor, ancak bağlam boyutu ile akıl yürütme çabası arasındaki kesin ilişki hâlâ belirsiz.\n\nGemini Web arayüzü ise düşük, orta ve yüksek düşünme çabası ayarlarını sunarak bu yeni konfigürasyonları tüm modellerde kullanılabilir hâle getirdi. Bu değişiklik, platformun Gemini 4'ün geniş çaplı bir dağıtımına hazırlık sürecinin bir parçası olarak görülüyor. Google, Argon'u 30 Eylül'de duyurmuş ve ilk erişimi seçkin siber güvenlik ortaklarına vermişti; ardından ücretli API müşterileri ve Google AI Ultra aboneleri için açılması planlanıyor.\n\nBusiness Insider'ın haberine göre, Google çalışanları iç testlerde Gemini 4'ün ek kontrol noktalarını da inceliyor. Özellikle \"Carbon\" adlı checkpoint, kodlama yetenekleri açısından Anthropic'in Claude Opus 5.5 modeline benzer bir performans sergilediği iddiasıyla dikkat çekiyor. Kamuya sunulacak Argon sürümünün Barium‑B checkpoint'i kullandığı belirtilirken, Carbon'un ayrı bir ve potansiyel olarak daha yetkin bir iterasyon olduğu vurgulanıyor. Carbon testleri, \"Jetski\" adı verilen Antigravity içindeki bir sistem üzerinden yürütülüyor.\n\nYeni bir Antigravity özelliği olan \"Chief of Staff\" (eski adıyla Concierge) da ortaya çıktı ve bu, Google'ın otonom kodlama ajanları üzerine odaklandığını gösteriyor. Antigravity'nin bu güncellemeleri, Google'ın Gemini modellerini sadece sohbet botu olarak değil, gerçek dünya kodlama görevlerinde de kullanılabilir hâle getirme stratejisinin bir parçası olarak yorumlanıyor. Argon'un geniş çaplı dağıtımı önümüzdeki hafta başlayabilir, ancak kesin bir tarih henüz açıklanmadı.",
+  "onemli_maddeler": [
+    "Gemini 4 Argon, 256K‑900K bağlam boyutları ve farklı düşünme çabası ayarlarıyla geliyor.",
+    "Carbon checkpoint'i, kodlama yetenekleri açısından Claude Opus 5.5'e eşdeğer bulunuyor.",
+    "Barium‑B, halka açılacak Argon sürümünün seçili checkpoint'i olarak belirlendi."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Gemini 4 Argon ve Carbon gibi yeni kontrol noktalarının tanıtımı, büyük bir teknoloji devinin en yeni büyük dil modelini piyasaya sürmesi anlamına geliyor; bu, AI kodlama asistanları ve bulut hizmetleri ekosisteminde rekabeti yeniden şekillendirebilir.",
+  "etiketler": [
+    "Google",
+    "Gemini 4",
+    "AI",
+    "Kodlama Ajanları",
+    "Model Çıkışı"
+  ],
+  "anilan_modeller": [
+    "Gemini 4 Argon",
+    "Gemini 4 Carbon",
+    "Barium-B"
+  ],
+  "yorum_tr": "Gemini 4 Argon'un geniş bağlam seçenekleri ve Carbon'un kodlama performansı, geliştiricilere daha güçlü ve esnek bir araç sunarak Google'ın AI pazarındaki konumunu güçlendirebilir. Ancak, kullanım kotalarının artması maliyet yönetimini zorlaştırabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/10/Screenshot-2026-10-09-at-23.32.49.png",
+  "url": "https://www.testingcatalog.com/gemini-4-argon-hints-emerge-as-google-tests-carbon-checkpoint/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-09T22:57:40.000Z",
+  "slug": "gemini-4-argon-hints-emerge-as-google-tests-carbon-checkpoin"
+}

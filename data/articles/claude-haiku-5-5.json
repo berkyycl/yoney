@@ -1,0 +1,36 @@
+{
+  "baslik_tr": "Claude Haiku 5.5 Modeli ve Fiyatlandırma Güncellemesi",
+  "ozet_tr": "Anthropic, düşük maliyetli ve hızlı yeni modeli Claude Haiku 5.5'i duyurdu. Model, önceki Haiku 4.5'in üzerine fiyat ve token sayısı bakımından rekabetçi bir yapı sunarken, GPT‑6 Luna ile aynı fiyat seviyesine getirildi. Ayrıca API kredi programı ve Sonnet 5.5 için cache okuma ücretinin yarıya indirilmesi de duyuruldu.",
+  "detayli_icerik_tr": "Anthropic, bir yıl önce piyasaya sürülen Claude Haiku 4.5'in yerini alacak yeni bir sürüm olarak Claude Haiku 5.5'i tanıttı. Yeni model, 100.000 token'a kadar $0.10 (girdi) / $0.50 (çıktı) fiyatıyla OpenAI'nin yeni GPT‑6 Luna modeliyle aynı maliyet seviyesine getirildi. 100.000 token sınırını aşan kullanımda fiyat beş katına çıkarak $0.50 / $2.50 olurken, Luna 272.000 token sonrası $0.20 / $0.75 seviyesine yükseliyor.\n\nHaiku 5.5, daha az cömert bir tokenleştirici kullanıyor; aynı uzunlukta bir prompt, Haiku 4.5'e göre yaklaşık %25 daha fazla token tüketiyor. Bu durum, düşük token sınırındaki fiyat eşitliğini gizli bir maliyet artışıyla dengelemekte. Model, artık mantık (reasoning) seviyesini devre dışı bırakma seçeneği sunmuyor ve varsayılan olarak orta seviyeyi (medium) kullanıyor. Testlerde, düşük çaba (low) seviyesinde bir SVG üretimi sadece 0.0936 cent maliyetle 7 saniyede tamamlanırken, maksimum çaba (max) seviyesinde aynı görev 5 dakika 9 saniye sürüp 3.3826 cent tutmuş.\n\nFiyatlandırmanın yanı sıra Anthropic, Sonnet 5.5 için cache okuma ücretini yarıya indirdi ve abonelik planlarına yeni bir aylık API kredi programı ekledi. Max ve Team aboneleri, aylık $100‑$500 arasında kredi alarak API kullanım maliyetlerini doğrudan dengeleyebilecek. Krediler otomatik yenilenmeyi devre dışı bırakma seçeneğiyle birlikte geliyor; bakiye tükendiğinde istekler duruyor, bu da beklenmedik faturalandırma riskini ortadan kaldırıyor. Ancak krediler birikmiyor, kullanılmadığı takdirde kaybediliyor.\n\nBu güncellemeler, Anthropic'in hem model performansını hem de maliyet şeffaflığını artırma çabasını gösteriyor. Claude Haiku 5.5, düşük maliyetli üretken AI arayışında rekabeti kızıştırırken, API kredi sistemi de geliştiricilerin ve kurumsal kullanıcıların bütçelerini daha kontrollü yönetmesine olanak tanıyor.",
+  "onemli_maddeler": [
+    "Claude Haiku 5.5, 100.000 token'a kadar GPT‑6 Luna ile aynı fiyat seviyesine getirildi ($0.10/$0.50).",
+    "Yeni model, daha az cömert bir tokenizer kullanarak aynı prompt için %25 daha fazla token tüketiyor.",
+    "API kredi programı: Max ve Team abonelerine aylık $100‑$500 arasında kredi veriliyor, krediler otomatik yenilemeyi devre dışı bırakıyor.",
+    "Sonnet 5.5 için cache okuma ücreti yarıya indirildi."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Claude Haiku 5.5, fiyat ve performans açısından büyük bir rekabet avantajı sunarak LLM pazarındaki dinamikleri değiştirebilir; aynı zamanda yeni kredi sistemi geliştiricilerin maliyet yönetimini etkileyen kritik bir yenilik.",
+  "etiketler": [
+    "anthropic",
+    "claude-haiku-5-5",
+    "fiyatlandırma",
+    "api-credits",
+    "llm"
+  ],
+  "anilan_modeller": [
+    "Claude Haiku 5.5",
+    "Claude Haiku 4.5",
+    "GPT-6 Luna",
+    "Sonnet 5.5"
+  ],
+  "yorum_tr": "Claude Haiku 5.5'in fiyat eşitliği ve artırılmış benchmark performansı, düşük maliyetli üretken AI çözümleri arayan geliştiriciler için cazip bir alternatif sunuyor. API kredi programı ise büyük ölçekli kullanıcıların bütçe kontrolünü kolaylaştırarak platformun benimsenmesini hızlandırabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://static.simonwillison.net/static/2026-10-07/haiku-5.5-max.webp",
+  "url": "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
+  "source": "Simon Willison",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-07T20:56:21.000Z",
+  "slug": "claude-haiku-5-5"
+}

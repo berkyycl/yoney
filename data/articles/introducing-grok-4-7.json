@@ -1,0 +1,120 @@
+{
+  "baslik_tr": "Grok 4.7 Modeli Tanıtıldı",
+  "ozet_tr": "xAI, kodlama ve bilgi işlerinde kullanılmak üzere tasarlanmış en yeni büyük dil modeli Grok 4.7'yi duyurdu. Model, önceki sürümüne göre iki kat daha hızlı çalışıyor ve benzer performans için maliyeti yarı yarıya düşürüyor. Güçlendirilmiş güvenlik katmanları ve uzun bağlam yönetimiyle öne çıkıyor.",
+  "detayli_icerik_tr": "xAI, 21 Eylül 2026 tarihinde Grok 4.7 modelini resmi blogunda tanıttı. Grok 4.7, kodlama ve profesyonel bilgi işlerinde kullanılmak üzere geliştirilmiş bir büyük dil modeli olup, önceki sürüm Grok 4.6'ya kıyasla daha büyük bir temel model ve daha uzun bir pekiştirmeli öğrenme süreciyle eğitildi. Model, saatlerce süren karmaşık görevlerde daha uzun süre çalışabilme, kendi çıktısını daha titiz bir şekilde doğrulama ve geniş bağlamı yönetme yetenekleriyle dikkat çekiyor.\n\nPerformans açısından Grok 4.7, CursorBench 4.0, DeepSWE v1.1, EEBench, AA Briefcase v1.1, Terminal‑Bench 4.0, Harvey Legal Agent Benchmark ve HealthBench Professional gibi sektörel benchmarklarda rekabetçi sonuçlar elde etti. Örneğin CursorBench 4.0 testinde %46.3'lük bir skor elde ederken, DeepSWE v1.1'de %71.0'lık yüksek‑çaba skoru (asterisk) gösterdi. EEBench'te %64.0, AA Briefcase v1.1'de 1,657 puan ve HealthBench Professional'da %56.7 gibi sonuçlar, modelin çok yönlü profesyonel iş akışlarında güçlü olduğunu ortaya koyuyor.\n\nGüvenlik ve siber risk yönetimi de Grok 4.7'nin odak noktalarından biri. Yeni bir güvenlik yığınıyla donatılan model, jailbreak direnci ve tehlikeli kullanım senaryolarına karşı reddetme oranları bakımından en yüksek performansı sergiliyor. LatchBio'nun biyogüvenlik benchmarkunda %62.4 başarı elde ederken, HackerBench v0.3'te sadece %3.3 riskli isteği geçmesine izin veriyor. Bu sayede hem savunma araştırmaları hem de meşru siber güvenlik görevleri için güvenli bir araç sunuluyor.\n\nGrok 4.7, bugün Cursor ve Grok Build platformlarında, ayrıca Grok API, üçüncü taraf kodlama çerçeveleri ve bulut model yönlendiricileri üzerinden erişilebilir. Fiyatlandırma, giriş tokenları için milyon başına 2 $, çıkış tokenları için ise milyon başına 6 $ olarak belirlenmiş; daha hızlı bir varyant ise iki kat fiyatla iki kat çıkış hızı sağlıyor. Ücretsiz deneme ve API anahtarı oluşturma imkanı da sunuluyor.",
+  "onemli_maddeler": [
+    "Grok 4.7, önceki sürümüne göre iki kat daha hızlı ve maliyeti yarı yarıya düşürerek fiyat‑performans liderliği hedefliyor.",
+    "CursorBench, DeepSWE, EEBench ve HealthBench gibi bir dizi benchmarkta rekabetçi skorlar elde etti.",
+    "Yeni güvenlik yığını sayesinde jailbreak direnci ve siber risk reddetme oranlarında sektördeki en yüksek performansı gösteriyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Grok 4.7, kodlama ve bilgi işlerinde yeni bir fiyat‑performans standardı sunarken, güvenlik ve uzun bağlam yönetiminde önemli iyileştirmeler getiriyor; bu da yapay zeka pazarında rekabeti ve uygulama çeşitliliğini doğrudan etkileyen büyük bir model çıkışıdır.",
+  "etiketler": [
+    "yapay zeka",
+    "büyük dil modeli",
+    "kodlama",
+    "güvenlik",
+    "benchmark"
+  ],
+  "anilan_modeller": [
+    "Grok 4.7",
+    "Grok 4.6",
+    "Fable 5.1",
+    "Opus 5",
+    "GPT-5.6 Sol",
+    "Sonnet 5",
+    "GPT-6 Astra"
+  ],
+  "yorum_tr": "Grok 4.7'nin yüksek performans ve düşük maliyet dengesi, geliştiricilerin daha karmaşık projeleri daha uygun maliyetle hayata geçirmesini sağlayacak. Aynı zamanda güçlendirilmiş güvenlik önlemleri, kurumsal ve güvenlik‑kritik uygulamalarda tercih edilme olasılığını artırıyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Grok 4.7",
+      "benchmark": "CursorBench 4.0",
+      "skor": 46.3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Software engineering CursorBench 4.0 46.3% ..."
+    },
+    {
+      "model": "Grok 4.7",
+      "benchmark": "DeepSWE v1.1",
+      "skor": 71,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "high‑effort",
+      "kaynak_metinden_alinti": "DeepSWE v1.1 71.0%*"
+    },
+    {
+      "model": "Grok 4.7",
+      "benchmark": "EEBench",
+      "skor": 64,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "EEBench 64.0% ..."
+    },
+    {
+      "model": "Grok 4.7",
+      "benchmark": "Terminal-Bench 4.0",
+      "skor": 37.6,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Terminal-Bench 4.0 37.6% ..."
+    },
+    {
+      "model": "Grok 4.7",
+      "benchmark": "Harvey Legal Agent Benchmark",
+      "skor": 19.6,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Harvey Legal Agent Benchmark 19.6% ..."
+    },
+    {
+      "model": "Grok 4.7",
+      "benchmark": "HealthBench Professional",
+      "skor": 56.7,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "HealthBench Professional 56.7% ..."
+    },
+    {
+      "model": "Grok 4.7",
+      "benchmark": "LatchBio Biosafety Benchmark",
+      "skor": 62.4,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "LatchBio’s biosafety benchmark at 62.4%"
+    },
+    {
+      "model": "Grok 4.7",
+      "benchmark": "HackerBench v0.3",
+      "skor": 3.3,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "risky prompts allowed",
+      "kaynak_metinden_alinti": "HackerBench v0.3, allowing only 3.3% of risky dual‑use prompts through"
+    },
+    {
+      "model": "Grok 4.7",
+      "benchmark": "GDPval Elo",
+      "skor": 1735,
+      "birim": "ELO",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "GDPval Elo score 1735"
+    }
+  ],
+  "gorsel_url": "https://x.ai/images/news/grok-4-7-og.webp",
+  "url": "https://x.ai/news/grok-4-7",
+  "source": "xAI",
+  "sourceTier": "resmi",
+  "date": "2026-09-21T00:00:00.000Z",
+  "slug": "introducing-grok-4-7"
+}

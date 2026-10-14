@@ -1,0 +1,36 @@
+{
+  "baslik_tr": "OpenAI, API fiyatlandırma sayfasında yeni gpt-rosalind-discovery modelini listeledi",
+  "ozet_tr": "OpenAI, resmi bir duyuru yapmadan API fiyatlandırma sayfasına gpt-rosalind-discovery modelini ekledi. Model, yaşam bilimleri odaklı bir keşif versiyonu olarak konumlandırılıyor ve fiyatlandırması gpt-rosalind-research ile aynı. Erişim, hâlâ OpenAI'nin Trusted Access programı kapsamında onaylı araştırmacılarla sınırlı.",
+  "detayli_icerik_tr": "OpenAI'nin API fiyatlandırma sayfası, \"Life sciences models\" başlığı altında yeni bir satır ekleyerek gpt-rosalind-discovery modelini gösterdi. Model, henüz bir blog gönderisi, yardım makalesi ya da sistem kartı ile tanıtılmadı; bu durum, AI Tracker Bot'un X üzerinden paylaştığı bir ekran görüntüsüyle ilk kez kamuoyuna duyuruldu.\n\nFiyatlandırma açısından gpt-rosalind-discovery, gpt-rosalind-research ile aynı tarifeyi izliyor: giriş token başına 5 $ / M, önbelleğe alınmış giriş token başına 0,50 $ / M ve çıktı token başına 25 $ / M. Ödeme planı, gpt-rosalind-research için 5 Ekim 2026'da yürürlüğe girdi ve önbellek yazma ücreti uygulanmıyor. Veri ikametgahı uç noktaları için %10 ek ücret uygulanıyor; bu ek ücret, 5 Mart 2026 ve sonrasında yayınlanan uygun modelleri kapsıyor.\n\nGPT-Rosalind serisi, Nisan 2024'te tanıtıldığında biyoloji, ilaç keşfi ve translasyonel tıp için bir \"frontier reasoning\" modeli olarak konumlandırılmıştı ve Amgen, Moderna, Allen Institute ve Thermo Fisher Scientific gibi büyük ortakları vardı. En yeni sürüm, GPT-Rosalind-5.5, GPT-5.5 üzerine eğitildi ve sistem kartında karmaşık biyoloji sorularını reddetmemesi gerektiği belirtiliyor; güvenlik önlemi olarak erişim sadece Trusted Access programı üyelerine veriliyor. Bu yaklaşım, OpenAI'nin GPT-5.4-Cyber modelinde de benzer bir şekilde uyguladığı güvenlik stratejisine paralel.\n\nOpenAI tek başına yaşam bilimleri alanında ilerlemiyor. Anthropic, Claude Operon ve Claude Science gibi biyoloji odaklı modeller geliştiriyor. OpenAI ayrıca ChatGPT for Academic Researchers projesiyle araştırma laboratuvarlarına kapsamlı bir AI ekosistemi sunmayı hedefliyor. Yeni modelin resmi duyurusu yaklaştıkça, modelin ayrı bir keşif modeli mi yoksa araştırma modelinin farklı bir ayarı mı olduğu ve Trusted Access şartlarının devam edip etmeyeceği merak konusu olacak.",
+  "onemli_maddeler": [
+    "OpenAI, API fiyatlandırma sayfasına gpt-rosalind-discovery modelini ekledi; resmi bir duyuru henüz yapılmadı.",
+    "Modelin fiyatlandırması gpt-rosalind-research ile aynı: giriş token başına $5/M, önbellekli giriş $0.50/M, çıktı $25/M.",
+    "Erişim, Trusted Access programı kapsamında onaylı iç araştırmacılarla sınırlı ve veri ikametgahı uç noktaları için %10 ek ücret uygulanıyor.",
+    "GPT-Rosalind-5.5, GPT-5.5 üzerine eğitildi ve biyoloji sorularını reddetmemesi için tasarlandı; güvenlik önlemi olarak erişim kısıtlamalı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Yaşam bilimleri ve ilaç keşfi gibi yüksek değerli bir alanda yeni bir özel modelin ortaya çıkması, hem araştırma topluluğu hem de endüstri için büyük potansiyel taşıdığı için sektörü derinden etkileyebilir.",
+  "etiketler": [
+    "OpenAI",
+    "GPT-Rosalind",
+    "Life Sciences",
+    "AI Model",
+    "Drug Discovery"
+  ],
+  "anilan_modeller": [
+    "gpt-rosalind-discovery",
+    "gpt-rosalind-research",
+    "GPT-Rosalind-5.5",
+    "GPT-5.5"
+  ],
+  "yorum_tr": "Bu model, OpenAI'nin biyoteknoloji ve ilaç keşfi pazarına daha derin bir giriş yapma stratejisinin bir parçası olarak görülüyor; geliştiriciler ve araştırmacılar, özel erişim programı sayesinde daha sofistike biyolojik analizler yapma fırsatı bulacak.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/10/OAI_Life_Sciences_Research_Plugin.webp",
+  "url": "https://www.testingcatalog.com/openai-lists-new-gpt-rosalind-discovery-model-in-docs/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-10T14:57:48.000Z",
+  "slug": "openai-lists-new-gpt-rosalind-discovery-model-in-docs"
+}

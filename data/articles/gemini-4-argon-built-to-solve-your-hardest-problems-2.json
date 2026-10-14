@@ -1,0 +1,71 @@
+{
+  "baslik_tr": "Google Gemini 4 Argon: En Zor Problemlerinizi Çözmek İçin Tasarlandı",
+  "ozet_tr": "Google, Gemini 4 Argon modelini geliştiriciler, işletmeler, bilim insanları ve son kullanıcılar için küresel olarak erişime açtı. Derin çok‑adımlı görevlerde kodlama, finans, hukuk, siber güvenlik ve bilimsel araştırmalarda üstün performans sergileyen Argon, Vals Index'te bir numara olarak gösterildi ve çeşitli sektör benchmark'larında çığır açan sonuçlar elde etti.",
+  "detayli_icerik_tr": "Google, Gemini 4 Argon modelini bugün API, AI Studio, Gemini platformu ve Google AI Ultra abonelikleri üzerinden kullanıma sundu. Argon, karmaşık çok‑adımlı görevlerde derinlemesine çalışma yeteneğiyle kodlama, finans, hukuk, siber güvenlik ve bilim gibi kritik alanlarda öne çıkıyor ve Vals Index gibi ekonomik sektör odaklı benchmark'larda bir numara olarak yer alıyor. Model, giriş token başına 2 $, çıkış token başına 10 $ fiyatlandırma ile piyasaya sürülürken, önceden önbelleğe alınmış giriş token'ları %95 indirimli olarak sunuluyor.\n\nGoogle içindeki ekipler, Argon sayesinde büyük kod tabanlarını yeniden yapılandırma, optimizasyon ve hata azaltma konularında %35'ten fazla kod gönderim artışı ve geri dönüşlerin %30 civarında azalması gibi somut verimlilik artışları kaydetti. Chrome ekibi, 6 milyon satır kodluk eski bir klasörü haftalar içinde temizleyerek tarayıcı çökme oranlarını düşürdü; Python kod tabanındaki iyileştirmeler ise bellek hazırlama süresini %40, soğuk importları %21 hızlandırdı.\n\nBilimsel alanda Argon, xTB kuantum kimya paketini %2.3 daha hızlı molekül yapısı tahmini ve %1.8 daha hızlı konformer araması yapacak şekilde iyileştirdi. Ayrıca, A100 GPU üzerinde vLLM ile Gemma 4 E2B modelinin token işleme hızını 37.900'den 108.000 token/sn'ye çıkararak %2.85'lik bir hız artışı sağladı. Bu iyileştirmeler, sadece birkaç gün içinde gerçekleştirildi ve genellikle aylar süren optimizasyon süreçlerini kısalttı.\n\nArgon'un çok‑modal yetenekleri, 3D görselleştirme, robotik ve tıp gibi alanlarda da etkisini gösterdi. Model, Blender ve Three.js entegrasyonlarıyla sıfır dış kütüphane kullanarak tam bir 3D oyun motoru ve fotogerçekçi mimari sahneler oluşturdu. Embodied Reasoning (ERQA) benchmark'ında %87 skor elde ederek fiziksel ve mekânsal problemleri çözmede tüm rakiplerini geride bıraktı. Ayrıca RareBench (%57) ve LabBench (%52.2) gibi tıbbi ve laboratuvar odaklı benchmark'larda da lider konumda yer aldı.",
+  "onemli_maddeler": [
+    "Gemini 4 Argon, kodlama, finans, hukuk, siber güvenlik ve bilim gibi kritik sektörlerde çok‑adımlı görevlerde bir numara olarak Vals Index'te yer alıyor.",
+    "Model, API ve AI Studio üzerinden küresel olarak erişime açıldı; giriş token başına 2 $, çıkış token başına 10 $ fiyatlandırma ile sunuluyor.",
+    "Google içindeki büyük kod tabanı refaktörleri, Python performans iyileştirmeleri ve kuantum kimya paketleri gibi gerçek dünyadaki uygulamalarda %35'ten fazla verim artışı sağlandı.",
+    "Embodied Reasoning (ERQA) benchmark'ında %87 skor, RareBench (%57) ve LabBench (%52.2) gibi testlerde liderlik elde edildi."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Google'ın en yeni frontier modeli Gemini 4 Argon, çok‑modal ve derin çok‑adımlı görev yetenekleriyle AI pazarında rekabeti yeniden şekillendirecek ve geniş sektörlerdeki iş akışlarını dönüştürecek bir adım olarak değerlendiriliyor.",
+  "etiketler": [
+    "Gemini",
+    "AI",
+    "model",
+    "benchmark",
+    "enterprise"
+  ],
+  "anilan_modeller": [
+    "Gemini 4 Argon",
+    "Gemma 4 E2B"
+  ],
+  "yorum_tr": "Gemini 4 Argon'un çok‑modal ve derin akıl yürütme yetenekleri, geliştiricilere ve büyük ölçekli işletmelere karmaşık problemleri daha hızlı ve güvenilir bir şekilde çözme imkanı tanıyacak. Benchmark sonuçları, modelin mevcut frontier rakiplerinin üzerine çıktığını gösteriyor ve sektörde yeni bir performans standardı oluşturabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Gemini 4 Argon",
+      "benchmark": "Embodied Reasoning (ERQA)",
+      "skor": 87,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Argon outperforms all other frontier models, with an 87% score."
+    },
+    {
+      "model": "Gemini 4 Argon",
+      "benchmark": "RareBench",
+      "skor": 57,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "assistance with rare-disease diagnosis",
+      "kaynak_metinden_alinti": "Argon topped on RareBench (57% on assistance with rare-disease diagnosis)"
+    },
+    {
+      "model": "Gemini 4 Argon",
+      "benchmark": "LabBench",
+      "skor": 52.2,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "wet-lab reasoning",
+      "kaynak_metinden_alinti": "Argon topped on LabBench (52.2% on wet-lab reasoning)"
+    },
+    {
+      "model": "Gemini 4 Argon",
+      "benchmark": "Inference throughput (vLLM on A100)",
+      "skor": 2.85,
+      "birim": "x",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "tokens per second",
+      "kaynak_metinden_alinti": "Argon achieved a 2.85x end-to-end inference speedup on an A100 via vLLM (accelerating throughput from ~37,900 to over 108,000 tokens per second)"
+    }
+  ],
+  "gorsel_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-4-argon__blog-header__2784x1566.width-1300.png",
+  "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+  "source": "Google Gemini",
+  "sourceTier": "resmi",
+  "date": "2026-10-13T16:00:00.000Z",
+  "slug": "gemini-4-argon-built-to-solve-your-hardest-problems-2"
+}

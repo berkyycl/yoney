@@ -1,0 +1,43 @@
+{
+  "baslik_tr": "Anthropic, Claude modelinin akıl yürütme token hırsızlığını %99'a kadar azalttı",
+  "ozet_tr": "Anthropic, Claude modellerine yönelik büyük ölçekli distilasyon saldırılarını engellemek için yeni savunma mekanizmaları geliştirdi. Yeni sistem, modelin iç zincir‑of‑thought adımlarını çalan tokenların %90‑%99 oranında azaltılmasını sağladı.",
+  "detayli_icerik_tr": "Anthropic, son dönemde AI modellerinin yeteneklerini kopyalamak amacıyla yürütülen endüstriyel ölçekli distilasyon saldırılarına karşı yeni bir savunma katmanı hayata geçirdi. Bu saldırılarda, kötü niyetli aktörler yüz binlerce sahte hesap üzerinden modelin akıl yürütme adımlarını (reasoning tokens) çekerek kendi daha küçük modellerini eğitiyor. Şirket, yeni savunma mekanizmaları sayesinde bu tokenların %90 ila %99 arasında bir oranda çalınmasını engellediğini belirtiyor.\n\nYeni önlemler, Claude'un iç akıl yürütme adımlarına erişimi kısıtlamak, şüpheli çıkarım girişimlerini tespit eden bir sınıflandırıcı çalıştırmak ve tespit edilen hesapları otomatik olarak yasaklamak üzerine kurulu. Şu ana kadar on binlerce hesabın erişimi kapatıldı ve başarılı distilasyon denemelerinin sayısında belirgin bir düşüş gözlemlendi. Anthropic, bu savunma katmanını diğer AI geliştiricilerine de benimsetmeyi hedefliyor, ancak bazı meşru kullanıcıların da bu süreçte yanlışlıkla engellendiğini kabul ediyor.\n\nŞirket, Çin merkezli Zhipu ve Moonshot gibi firmaların, Claude üzerinden elde edilen yetenekleri kendi modelleri GLM‑5.3 ve diğer sistemlerine yönlendirdiğini iddia etti. Bu tür bir bilgi sızdırma, özellikle askeri ve gözetim uygulamalarında ciddi güvenlik riskleri oluşturabilir. Anthropic'in aldığı önlemler, bu tür riskleri azaltmayı ve AI ekosisteminde daha güvenli bir rekabet ortamı yaratmayı amaçlıyor.\n\nBu gelişme, AI model koruması ve veri hırsızlığına karşı alınabilecek teknik önlemler konusunda sektöre bir örnek teşkil ediyor. Geliştiriciler, model içi mantık adımlarının dışarı sızdırılmasını önlemek için benzer sınıflandırıcılar ve otomatik yasaklama sistemleri kurabilir; aynı zamanda kullanıcı deneyimini korumak için yanlış pozitifleri minimize edecek ince ayarlar yapmalıdır.",
+  "onemli_maddeler": [
+    "Claude modellerinin akıl yürütme tokenları %90‑%99 oranında çalınmadan korunuyor.",
+    "Şüpheli çıkarım girişimlerini tespit eden sınıflandırıcı ve otomatik yasaklama sistemi devreye alındı.",
+    "Zhipu ve Moonshot gibi firmaların Claude üzerinden yetenek sızdırdığı iddiaları güvenlik endişelerini artırdı."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "AI model güvenliği ve telif hakkı koruması açısından sektörde kritik bir güncelleme; büyük ölçekli distilasyon saldırılarını büyük ölçüde azaltması, diğer geliştiricileri de benzer önlemler almaya yönlendirebilir.",
+  "etiketler": [
+    "AI güvenliği",
+    "model koruması",
+    "Claude",
+    "distilasyon",
+    "Anthropic"
+  ],
+  "anilan_modeller": [
+    "Claude",
+    "GLM-5.3"
+  ],
+  "yorum_tr": "Bu savunma güncellemesi, AI modellerinin ticari ve stratejik değerini korumak için gerekli bir adım olarak görülüyor. Geliştiriciler, benzer koruma katmanları ekleyerek hem veri hırsızlığını önleyebilir hem de kullanıcı deneyimini dengeleyebilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Claude",
+      "benchmark": "Reasoning token theft reduction",
+      "skor": 99,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "industrial-scale distillation attacks",
+      "kaynak_metinden_alinti": "Anthropic says its new defenses have cut the volume of extracted reasoning tokens, the model's internal chain-of-thought steps, by 90 to 99 percent."
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/10/anthropic_distillation_defense.png",
+  "url": "https://the-decoder.com/anthropic-says-it-cut-claude-reasoning-token-theft-by-up-to-99-in-fight-against-industrial-scale-distillation/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-13T11:06:46.000Z",
+  "slug": "anthropic-says-it-cut-claude-reasoning-token-theft-by-up-to"
+}
