@@ -1,0 +1,71 @@
+{
+  "baslik_tr": "Google Gemini 3.8 Live ve 3.8 Live Extended Thinking ile sesli etkileşimlerde dev adım",
+  "ozet_tr": "Google, Gemini 3.8 Live ve Gemini 3.8 Live Extended Thinking modellerini duyurdu. Yeni modeller, gerçek‑zamanlı görsel bağlam, çok adımlı akıl yürütme ve arka plan araç çağrılarıyla sesli asistanların daha akıcı ve zeki bir diyalog sunmasını sağlıyor. 97 dili destekleyerek kesintisiz geçiş yapabiliyor ve yüksek benchmark skorlarıyla sektörde öne çıkıyor.",
+  "detayli_icerik_tr": "Google Gemini ekibi, Gemini 3.8 Live ve Gemini 3.8 Live Extended Thinking modellerini \"en gelişmiş canlı diyalog modelleri\" olarak tanıttı. Bu modeller, sesli komutlarla karmaşık görevleri yürütürken aynı anda görsel girdileri işleyebiliyor ve kullanıcı konuşmasını kesintiye uğratmadan arka planda API çağrıları yapabiliyor. Özellikle 97 desteklenen dil arasında anlık geçiş yapabilme yeteneği, çok‑dilli ortamlarda sorunsuz bir deneyim sunuyor.\n\nGemini 3.8 Live, ölçeklenebilirlik ve maliyet verimliliği üzerine inşa edildi; akıcı diyalog, görsel yerleştirme ve anlık görsel bağlam desteği sağlıyor. Uzantılı sürüm olan Gemini 3.8 Live Extended Thinking ise yüksek karmaşıklıkta görevler için artırılmış zekâ ve çok adımlı akıl yürütme yetenekleri sunuyor. Model, \"Let me check that...\" gibi erken sözel ipuçlarıyla kullanıcıyı bilgilendirirken, arka planda gerçekleşen işlemleri sesli olarak anlatıyor.\n\nPerformans açısından modeller, bir dizi bağımsız benchmarkta çığır açtı. Artificial Analysis'ın Speech to Speech Quality Index'inde %82.6 puan alarak birinciliği elde etti, τ-Voice benchmarkında %68.6, Sierra’nın τ-Voice‑banking benchmarkında %35.1 başarı gösterdi ve Big Bench Audio testinde %97.7 oranında doğru yanıt verdi. Ayrıca ServiceNow’un EVA‑Bench’inde karmaşık iş akışlarını dengeleyerek Pareto sınırını zorladı.\n\nGeliştiriciler ve işletmeler, Gemini Live API sayesinde Agora, LangChain, Vercel gibi platformlarda yüksek performanslı sesli arayüzler oluşturabiliyor. Google, Salesforce, Genspark ve Lumeris gibi iş ortaklarıyla entegrasyonları vurgularken, tüm sesli çıktılara SynthID su işareti ekleyerek sahte içeriklerin tespitini kolaylaştırıyor. Modeller, Google Workspace, Search ve Gemini uygulamasında kullanılmaya başlandı ve özel ön izleme programlarıyla kurumsal müşterilere sunuluyor.",
+  "onemli_maddeler": [
+    "Gemini 3.8 Live, gerçek‑zamanlı görsel bağlam ve 97 dili destekleyerek kesintisiz çok‑dilli diyalog sağlıyor.",
+    "Extended Thinking sürümü, yüksek karmaşıklıkta görevlerde çok adımlı akıl yürütme ve arka plan araç çağrıları yapabiliyor.",
+    "Speech to Speech Quality Index'te %82.6, τ-Voice'ta %68.6, Sierra τ-Voice‑banking'te %35.1 ve Big Bench Audio'da %97.7 gibi lider benchmark skorları elde edildi.",
+    "SynthID su işareti tüm sesli çıktılara eklenerek AI‑üretimli içeriğin tespiti güvence altına alındı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Sesli AI asistanlarının gerçek‑zamanlı görsel ve çok adımlı akıl yürütme yetenekleriyle yeniden tanımlanması, hem geliştiriciler hem de kurumsal kullanıcılar için büyük bir dönüşüm yaratıyor.",
+  "etiketler": [
+    "voice AI",
+    "real-time reasoning",
+    "Google Gemini",
+    "audio models",
+    "enterprise"
+  ],
+  "anilan_modeller": [
+    "Gemini 3.8 Live",
+    "Gemini 3.8 Live Extended Thinking"
+  ],
+  "yorum_tr": "Bu modeller, sesli etkileşimlerde kesintisiz çok‑dilli destek ve arka plan görev yürütme yetenekleriyle geliştiricilerin daha sofistike uygulamalar üretmesini mümkün kılıyor; aynı zamanda kullanıcıların AI ile daha doğal ve verimli bir diyalog deneyimi yaşamasını sağlıyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Gemini 3.8 Live Extended Thinking",
+      "benchmark": "Artificial Analysis Speech to Speech Quality Index",
+      "skor": 82.6,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "capturing the #1 overall spot on Artificial Analysis' Speech to Speech Quality Index (82.6)"
+    },
+    {
+      "model": "Gemini 3.8 Live Extended Thinking",
+      "benchmark": "τ-Voice",
+      "skor": 68.6,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "leads in agentic task completion with 68.6% on τ-Voice"
+    },
+    {
+      "model": "Gemini 3.8 Live Extended Thinking",
+      "benchmark": "Sierra τ-Voice-banking",
+      "skor": 35.1,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "35.1% on Sierra’s τ-Voice-banking benchmark"
+    },
+    {
+      "model": "Gemini 3.8 Live Extended Thinking",
+      "benchmark": "Big Bench Audio",
+      "skor": 97.7,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "scoring 97.7% on Big Bench Audio"
+    }
+  ],
+  "gorsel_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini_3-8_live___keyword__blog-social.width-1300.png",
+  "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/",
+  "source": "Google Gemini",
+  "sourceTier": "resmi",
+  "date": "2026-09-15T17:00:00.000Z",
+  "slug": "introducing-gemini-3-8-live-and-3-8-live-extended-thinking-2"
+}

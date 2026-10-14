@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "NVIDIA Nemotron Bolt 3.5 74B A9B Modeli 15 Ekim’de Kullanıma Açıldı",
+  "ozet_tr": "NVIDIA, 74 milyar parametreli ve 9 milyar aktif parametreli bir MoE (Mixture‑of‑Experts) mimarisi kullanan Nemotron Bolt 3.5 A9B modelini 15 Ekim’de duyurdu. Model, 2‑bit kuantizasyon sayesinde 24 GB bellek içinde çalışıyor ve hem hız hem de zekâ açısından popüler yoğun (dense) ve MoE modellerinin ötesine geçmeyi hedefliyor.",
+  "detayli_icerik_tr": "Reddit'in LocalLLaMA topluluğu tarafından paylaşılan bilgilere göre, NVIDIA'nın yeni Nemotron Bolt 3.5 A9B modeli 74 milyar toplam parametreye sahip bir MoE yapısı sunuyor. Bu mimaride aynı anda yalnızca 9 milyar parametre aktif hâle geliyor, böylece hesaplama maliyeti düşürülürken uzman ağların avantajları korunuyor.\n\nModel, 2‑bit kuantizasyon ve kuantizasyon‑bilinçli eğitim (quantization‑aware training) teknikleriyle 24 GB VRAM içinde paketlenmiş. Bu sayede, geleneksel yoğun modellerin hafıza gereksinimlerine kıyasla çok daha düşük bir bellek ayak izi sağlanıyor, ancak kalite kaybı minimum seviyeye indirgeniyor.\n\nNVIDIA, Nemotron Bolt 3.5 A9B'nin performansını \"hız açısından çoğu popüler yoğun modele, zekâ açısından ise benzer bellek ayak izine sahip popüler MoE modellerine göre daha üstün\" olarak tanımlıyor. Bu iddia, özellikle gerçek‑zaman uygulamaları ve sınırlı donanım kaynaklarıyla çalışan geliştiriciler için önemli bir rekabet avantajı sunuyor.\n\nAyrıca, topluluk 23 Ekim’de 4 GB bellek gerektiren Nemotron 3.5 Bolt E4B versiyonunun da çıkacağını duyurdu. Bu daha hafif sürüm, düşük‑bütçeli cihazlarda ve kenar (edge) senaryolarında kullanılmak üzere tasarlanmış gibi görünüyor. Reddit'teki tartışmalar, modelin açık kaynak topluluğu içinde geniş bir ilgi gördüğünü ve testlerin yakında paylaşılacağını gösteriyor.",
+  "onemli_maddeler": [
+    "74 B toplam parametre, 9 B aktif parametreli MoE mimarisi",
+    "2‑bit kuantizasyonla 24 GB VRAM içinde çalıştırılabiliyor",
+    "15 Ekim 2026’da resmi olarak yayınlandı",
+    "Hız‑zeka dengesi: yoğun modellere göre daha hızlı, benzer MoE'lere göre daha akıllı",
+    "23 Ekim’de 4 GB bellek gerektiren E4B versiyonu geliyor"
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Yeni 74 B parametreli MoE modelinin 2‑bit kuantizasyonla 24 GB’da çalıştırılabilmesi, performans‑maliyet dengesini yeniden tanımlayarak sektörde önemli bir adım oluşturuyor.",
+  "etiketler": [
+    "NVIDIA",
+    "Nemotron",
+    "MoE",
+    "kuantizasyon",
+    "AI modeli"
+  ],
+  "anilan_modeller": [
+    "Nemotron Bolt 3.5 A9B",
+    "Nemotron 3.5 Bolt E4B"
+  ],
+  "yorum_tr": "Nemotron Bolt 3.5 A9B, yüksek parametre sayısını düşük bellek tüketimiyle birleştirerek geliştiricilere daha erişilebilir güçlü bir seçenek sunuyor; bu da özellikle sınırlı donanım ortamlarında büyük dil modellerinin yaygınlaşmasını hızlandırabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/VZxf5W323f7lXaPcXIJnrddiriMsNOqGm6AbTxmKQtE.jpeg?width=640&crop=smart&auto=webp&s=0930d387e8e40f3975b7f31874b68b2b130ce334",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x5t1tm/nvidia_nemotron_bolt_35_74b_a9b_releases_oct_15th/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-14T14:42:30.000Z",
+  "slug": "nvidia-nemotron-bolt-3-5-74b-a9b-releases-oct-15th"
+}

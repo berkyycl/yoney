@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "MiniCPM-V 4.7 ile 35B MoE Görsel‑Dil Modeli Telefon Belleğinde Çalışıyor",
+  "ozet_tr": "OpenBMB, MiniCPM-V 4.7 adlı 35 B parametreli MoE (Mixture‑of‑Experts) görsel‑dil modelini yaklaşık 3 GB RAM'li akıllı telefonlarda çalıştırabildiğini gösterdi. Model, Lookahead Expert Scheduling (LES) ve Self‑Replay Fine‑Tuning (SRFT) gibi yenilikçi tekniklerle hem performans hem de özelleştirilebilirlik açısından dikkat çekiyor.",
+  "detayli_icerik_tr": "OpenBMB, MiniCPM-V 4.7 sürümünü tanıtarak 35 B‑A3B parametreli bir MoE görsel‑dil modelinin mobil cihazlarda yerel olarak çalıştırılabildiğini kanıtladı. Demo, gerçek dünya işaretlerinin okunması, karmaşık belgelerin anlaşılması, görsel bilgi üzerinden akıl yürütme ve gerçek dünya kısıtlamalarıyla planlama gibi senaryolara odaklanıyor.\n\nBu başarının temelinde Lookahead Expert Scheduling (LES) adlı bir optimizasyon yöntemi bulunuyor. LES, modelin uzman (expert) katmanlarını önceden tahmin edip önbelleğe alarak MoE çıkarımındaki darboğazları ortadan kaldırıyor; böylece modelin boyutu küçültülmeden mobil bellek sınırlarına uyum sağlanıyor. Ayrıca, geliştiricilerin belirli görevler için modeli özelleştirmesine olanak tanıyan Self‑Replay Fine‑Tuning (SRFT) mekanizması da tanıtıldı.\n\nMiniCPM-V 4.7'nin yanı sıra, daha düşük kaynak gereksinimi olan 1 B parametreli bir versiyon da yayınlandı. Bu küçük model, sınırlı bellek ve işlem gücüne sahip cihazlarda temel görsel‑dil yeteneklerini sunarken, 35 B sürüm ise yüksek doğruluk ve karmaşık görsel akıl yürütme gerektiren uygulamalara hitap ediyor.\n\nOpenBMB, GitHub ve Hugging Face üzerinden ilgili kod ve modelleri paylaşıyor, SRFT detaylarını ise resmi blogunda yayınladı. Bu adım, bulut tabanlı görsel‑dil hizmetlerinden bağımsız, telefon üzerinde çalışan akıllı asistanların geliştirilmesine yeni bir ivme kazandırabilir.",
+  "onemli_maddeler": [
+    "35 B MoE görsel‑dil modeli, ~3 GB RAM'li akıllı telefonlarda yerel olarak çalıştırılabiliyor.",
+    "Lookahead Expert Scheduling (LES) sayesinde uzman katmanları önceden tahmin edilip önbelleğe alınıyor, böylece bellek darboğazları aşılıyor.",
+    "Self‑Replay Fine‑Tuning (SRFT) geliştiricilere modeli belirli görevler için özelleştirme imkanı tanıyor.",
+    "Daha düşük kaynaklı cihazlar için 1 B parametreli MiniCPM‑V 4.7 modeli de yayınlandı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Mobil cihazlarda çalışabilen 35 B ölçekli bir multimodal model, AI'nın uçta (edge) kullanımını önemli ölçüde genişletiyor ve geliştiricilere yeni uygulama senaryoları sunuyor.",
+  "etiketler": [
+    "multimodal",
+    "MoE",
+    "mobile AI",
+    "MiniCPM-V",
+    "OpenBMB"
+  ],
+  "anilan_modeller": [
+    "MiniCPM-V 4.7",
+    "MiniCPM-V 4.7 1B"
+  ],
+  "yorum_tr": "Bu gelişme, yüksek kapasiteli görsel‑dil modellerinin bulut bağımlılığını azaltarak uç cihazlarda daha hızlı ve gizlilik odaklı çözümler sunmasını mümkün kılıyor. Geliştiriciler, LES ve SRFT gibi tekniklerle performans‑kaynak dengesini yeniden tanımlayabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/NWRqNzg3MjZlZ3ZoMYxnp8XeW3cwBVvJeVeymaXRqzwNoliLykCz4Kjo6l1E.png?width=640&crop=smart&auto=webp&s=5bf148ebfae9cc53d1a19f6c814256c8d0043cb5",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x5uwnd/a_35b_multimodal_model_running_on_a_phone_with/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-14T15:53:48.000Z",
+  "slug": "a-35b-multimodal-model-running-on-a-phone-with-3gb-memory-mi"
+}

@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "inclusionAI/Ling-3.1-flash Modeli 560 Milyar Parametreyle Hugging Face'de Yayınlandı",
+  "ozet_tr": "Topluluk tarafından geliştirilen Ling-3.1-flash, 560 milyar toplam parametre, token başına 25 milyar aktif parametre ve 1 milyon tokenlık bağlam penceresiyle dikkat çekiyor. Önceki 3.0 sürümünün 127 milyar parametresiyle kıyaslandığında dev bir sıçrama gerçekleştirildi.",
+  "detayli_icerik_tr": "inclusionAI ekibi, Hugging Face platformunda Ling-3.1-flash modelini duyurdu. Model, toplam 560 milyar parametreye sahip olup, her bir token üretiminde 25 milyar aktif parametre kullanıyor. Bu mimari, modelin daha dinamik ve verimli bir şekilde çalışmasını sağlarken, aynı zamanda 1 milyon tokenlık bağlam penceresiyle uzun metinlerde tutarlı yanıtlar üretebiliyor.\n\nÖnceki sürüm Ling-3.0, 127 milyar parametreyle piyasaya sürülmüşken, yeni sürümdeki parametre artışı %340'ı aşan bir büyüme anlamına geliyor. Bu fark, özellikle çok uzun belgeler, kod tabanları ve karmaşık diyaloglar gibi geniş bağlam gerektiren görevlerde belirgin bir performans iyileşmesi vaat ediyor.\n\nModel, topluluk katkılarıyla geliştirilmiş açık kaynak bir proje olarak Hugging Face'in model hub'ında ücretsiz olarak erişilebilir durumda. Kullanıcılar, modelin ağırlıklarını ve tokenizer dosyalarını doğrudan indirgeyebilir, kendi altyapılarına entegre edebilir ya da Hugging Face Inference API üzerinden anlık olarak test edebilirler.\n\nBu duyuru, büyük ölçekli dil modellerinin sadece büyük teknoloji şirketleriyle sınırlı kalmayıp, topluluk temelli girişimlerin de benzer ölçekte modeller üretebileceğini gösteriyor. Ling-3.1-flash'in sunduğu devasa bağlam penceresi, araştırmacılar ve geliştiriciler için yeni deneysel alanlar açarken, aynı zamanda donanım gereksinimlerinin de artacağını hatırlatıyor.",
+  "onemli_maddeler": [
+    "560 milyar toplam parametreye sahip yeni model",
+    "Token başına 25 milyar aktif parametre",
+    "1 milyon tokenluk bağlam penceresi",
+    "Önceki 3.0 sürümünün 127 milyar parametresiyle kıyaslandığında %340'lık artış",
+    "Hugging Face üzerinden ücretsiz erişim"
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Topluluk tarafından geliştirilen ve 560 milyar parametre gibi çığır açan bir ölçeğe ulaşan bir dil modeli, büyük ölçekli LLM ekosisteminde rekabeti artırarak araştırma ve uygulama alanlarını genişletiyor.",
+  "etiketler": [
+    "inclusionAI",
+    "Ling-3.1-flash",
+    "Hugging Face",
+    "large language model",
+    "community"
+  ],
+  "anilan_modeller": [
+    "Ling-3.1-flash",
+    "Ling-3.0"
+  ],
+  "yorum_tr": "Ling-3.1-flash'in devasa parametre ve bağlam kapasitesi, özellikle uzun metin işleme ve çok aşamalı diyaloglarda yeni performans seviyeleri vaat ediyor. Ancak bu büyüklük, yüksek donanım gereksinimleri nedeniyle erişilebilirliği sınırlayabilir; topluluk destekli optimizasyonlar bu sorunu hafifletebilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/TA3Vu0W_monI_0w2jQSEqffNCi1Va6dBuhBTqdnMICg.png?width=640&crop=smart&auto=webp&s=e6f0e49bd232d7930bb987cbad79ee0b17e630d9",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x5tsni/inclusionailing31flash_hugging_face/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-14T15:11:14.000Z",
+  "slug": "inclusionai-ling-3-1-flash-hugging-face"
+}

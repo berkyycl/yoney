@@ -1,0 +1,43 @@
+{
+  "baslik_tr": "Google Gemini 3.8 Flash ve Flash‑Lite TTS modelleri duyuruldu",
+  "ozet_tr": "Google, Gemini ailesine iki yeni metin‑konuşma modeli ekledi: Gemini 3.8 Flash TTS ve Gemini 3.8 Flash‑Lite TTS. Bu modeller, sıfırdan karakter sesleri yaratma, satır‑satır yönlendirme ve yüksek hacimli dublaj gibi senaryolarda önceki sürümlere göre çok daha fazla ifade özgürlüğü ve ölçeklenebilirlik sunuyor.",
+  "detayli_icerik_tr": "Google, Gemini 3.8 Flash TTS'i \"derin yaratıcı yönlendirme ve karakter tasarımı\" için, Flash‑Lite TTS'i ise \"yüksek hacimli, maliyet‑verimli ölçek\" için tanıttı. Flash TTS, doğal dil komutlarıyla tamamen yeni ses kimlikleri oluşturulmasına, aksan, duygu ve konuşma hızı gibi parametrelerin satır‑satır kontrol edilmesine imkan tanıyor. Flash‑Lite TTS ise 2.000'den fazla hazır sesle, düşük gecikme ve düşük maliyetle toplu dublaj ve sesli asistan uygulamalarına odaklanıyor.\n\nModel, 100'den fazla dil ve lehçede ince ayar yapılabilen bir ses kütüphanesi sunuyor. Kullanıcılar, sadece 30 saniyelik bir örnek ses kaydıyla aynı ses profilini yeniden oluşturabiliyor; bu süreçte SynthID watermarking ve C2PA kimlik doğrulama gibi güvenlik önlemleri devreye giriyor. Ayrıca, ses tasarımı ve yeniden karıştırma (voice remixing) gibi özelliklerin yakında kullanılabilir olacağı duyuruldu.\n\nPerformans açısından Gemini 3.8 Flash TTS, Hume AI’nın Voice Design Benchmark testinde %71.4 puanla birincilik elde etti ve aynı benchmarkta aksan modellemede %60.8 puanla lider konumda. Flash‑Lite TTS ise Hume AI’nın Overall Quality Index’inde ikinci sırada yer alıyor. İnsan tercih değerlendirmeleri (Voice Arena) de Japonca, Brezilya Portekizcesi, Vietnamca, Modern Standart Arapça, Meksika İspanyolcası ve Hintçe gibi dillerde rakiplerinin önünde olduğunu gösterdi.\n\nGoogle, bu modelleri Gemini API, Google AI Studio, Gemini Enterprise ve Google Vids gibi platformlarda kullanılabilir hâle getirdi. Geliştiriciler, Agora, LiveKit, Pipecat ve Vercel gibi entegrasyon ortakları sayesinde sesli arayüzleri hızlıca dağıtabilecek. Ses güvenliği ve şeffaflığı ise SynthID watermarking ve zorunlu ses sahibi onayıyla sağlanıyor.",
+  "onemli_maddeler": [
+    "Gemini 3.8 Flash TTS, Hume AI Voice Design Benchmark'te %71.4 puanla birinci oldu.",
+    "Flash‑Lite TTS, yüksek hacimli dublaj ve düşük maliyetli ses üretimi için optimize edildi.",
+    "Ses replikasyonu için 30 saniyelik örnek ve zorunlu onay mekanizmasıyla güvenlik sağlanıyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Yeni nesil TTS modelleri, çok dilli ve yüksek ifade özgürlüğü sunarak sesli içerik üretiminde sektörel standartları yükseltiyor; aynı zamanda güvenlik önlemleriyle sorumlu AI kullanımını destekliyor.",
+  "etiketler": [
+    "text-to-speech",
+    "voice AI",
+    "Google",
+    "Gemini",
+    "audio generation"
+  ],
+  "anilan_modeller": [
+    "Gemini 3.8 Flash TTS",
+    "Gemini 3.8 Flash-Lite TTS"
+  ],
+  "yorum_tr": "Bu modeller, içerik üreticileri ve geliştiriciler için daha doğal ve özelleştirilebilir ses deneyimleri sunarken, güvenlik ve şeffaflık mekanizmaları sayesinde ses sahteciliği riskini azaltıyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Gemini 3.8 Flash TTS",
+      "benchmark": "Hume AI Voice Design Benchmark",
+      "skor": 71.4,
+      "birim": "score",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Gemini 3.8 Flash TTS delivers leading voice customization capabilities, securing the #1 overall spot on Hume AI’s Voice Design Benchmark (71.4)"
+    }
+  ],
+  "gorsel_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-audio__keyword__metacard__light.width-1300.png",
+  "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/",
+  "source": "Google Gemini",
+  "sourceTier": "resmi",
+  "date": "2026-09-23T15:15:00.000Z",
+  "slug": "gemini-3-8-text-to-speech-says-hello-2"
+}

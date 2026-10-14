@@ -1,0 +1,41 @@
+{
+  "baslik_tr": "Third Moment Research, 10.000 Ajanı 36 Saat Boyunca Çalıştırdı",
+  "ozet_tr": "Third Moment Research, OpenAI'nin en yeni modelleriyle 10.000 AI ajanını aynı anda 36‑48 saat boyunca çalıştırarak kendini geliştiren bir araştırma platformu oluşturdu. Codex ve GPT‑6 serisi sayesinde token verimliliği artırıldı, güvenlik testleri otomatikleştirildi ve finansal araştırmalarda işlem süreleri dakikalar seviyesine indirildi.",
+  "detayli_icerik_tr": "Third Moment Research, OpenAI'nin Codex, GPT‑6 Astra, GPT‑6 Sol ve GPT‑6.1 Sol modellerini kullanarak, ajanların davranışlarını analiz eden, zayıf noktaları tespit eden ve bu sorunlar etrafında binlerce sentetik senaryo oluşturan bir kendini geliştiren AI sistemi inşa etti. Bu sistem, aynı anda 10.000 ajanı 36‑48 saat süren araştırma oturumlarında çalıştırabiliyor ve Daybreak platformu ile ortam güvenliğini otomatik olarak test ediyor.\n\nŞirketin ilk büyük uygulaması kantitatif finans alanında gerçekleşti. Codex, GPT‑5.6 ile birlikte yıllık US hisse senedi verileri üzerinde bir ticaret stratejisinin geriye dönük testini analiz ederken, üç saat süren bir backtest sürecinin token israfına yol açtığını belirledi. Optimizasyon ve bellek paketleme teknikleriyle bu süre 3‑5 dakikaya düşürüldü, böylece ajanların token bütçesi daha verimli kullanılabildi.\n\nAjanların görevlerini sürdürebilmesi için Codex, dış bir harness içinde alt ajan olarak konumlandırıldı. GPT‑6 Sol ve GPT‑6.1 Sol dış harness, bir görevin yarıda bırakılması durumunda yeniden deneme, iptal etme ya da insan incelemesine yönlendirme kararlarını alıyor. Bu yapı, ajanların kendi araştırma döngülerini yönetmesine, yeni deneyler tasarlamasına ve sonuçları üzerinden bir sonraki adımı seçmesine olanak tanıyor.\n\n10.000 ajanı ölçekli bir şekilde çalıştırırken güvenlik kritik bir faktör haline geldi. Daybreak, ajanların araştırma ortamlarından dış ağa sızma girişimlerini otomatik olarak tespit ediyor ve penetrasyon testlerini ajanların kendileri gerçekleştiriyor. Bu sayede büyük ölçekli çok‑ajanlı sistemlerde güvenlik riski minimuma indiriliyor.\n\nGelecek vizyonu, yüz binlerce işbirlikçi alt ajan ve trilyon token işleme kapasitesine ulaşmak. GPT‑6 Astra ve GPT‑6.1 Sol'un güçlü akıl yürütme yetenekleriyle, perakende, mühendislik ve belge yönetimi gibi farklı sektörlerde özelleşmiş görevler için aynı mimari kullanılabilecek. İnsanlar, araştırma sürecini yönlendirmeye odaklanarak, AI ajanlarının öğrenme ve çalışma şekillerini daha verimli bir şekilde şekillendirebilecek.",
+  "onemli_maddeler": [
+    "10.000 ajan aynı anda 36‑48 saat çalıştırılıyor.",
+    "Codex ve GPT‑6.1 Sol sayesinde bir yıllık backtest süresi 3 saatten 3‑5 dakikaya düşürüldü.",
+    "Daybreak platformu, ajanların ortam güvenliğini otomatik olarak test ediyor.",
+    "GPT‑6.1 Sol, token verimliliğiyle en çok kullanılan model olarak öne çıkıyor.",
+    "Yol haritası, yüz binlerce işbirlikçi ajan ve trilyon token işleme hedefliyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "OpenAI modellerinin büyük ölçekli çok‑ajanlı araştırma ortamlarında verimlilik, güvenlik ve maliyet avantajlarıyla nasıl kullanılabileceğini gösterdiği için sektördeki otomasyon ve AI araştırma yaklaşımlarını önemli ölçüde etkileyebilir.",
+  "etiketler": [
+    "yapay zeka ajanları",
+    "GPT-6",
+    "kantitatif finans",
+    "otomasyon",
+    "güvenlik"
+  ],
+  "anilan_modeller": [
+    "Codex",
+    "GPT-6 Astra",
+    "GPT-6 Sol",
+    "GPT-6.1 Sol",
+    "GPT-5.6",
+    "GPT-5.5",
+    "GPT-5.6 Terra",
+    "GPT-6 Luna"
+  ],
+  "yorum_tr": "Third Moment’in 10 000 ajanı uzun süreli çalıştırması, AI‑tabanlı araştırma ve finansal modellemede ölçeklenebilirlik sınırlarını genişletiyor. Geliştiriciler benzer çok‑ajanlı mimarileri benimseyerek token verimliliğini artırabilir, güvenlik testlerini otomatikleştirebilir; kullanıcılar ise daha hızlı ve maliyet etkin sonuçlar elde edebilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://images.ctfassets.net/kftzwdyauwt9/m0YDNMUPfmBJYf8nw2LGR/202c3cb46da0506d77cce90027c1ef9c/third-moment-research-first-light-social-1920x1080.png?w=1600&h=900&fit=fill",
+  "url": "https://openai.com/index/third-moment-research",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-10-14T07:00:00.000Z",
+  "slug": "how-third-moment-research-runs-10-000-agents-for-36-hours"
+}

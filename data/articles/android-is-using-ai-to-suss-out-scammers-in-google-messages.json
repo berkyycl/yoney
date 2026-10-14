@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "Android, Google Messages'ta Dolandırıcılıkla Mücadele İçin Gemini AI'yi Kullanıyor",
+  "ozet_tr": "Google, Android Messages için yeni bir \"enhanced protection\" modu tanıttı. Bu özellik, tanınmayan göndericilerin mesajlarını bulut tabanlı Gemini AI modeliyle analiz ederek dolandırıcılık niyetini tespit ediyor ve kullanıcı verilerini şifreli bir ortamda işliyor.",
+  "detayli_icerik_tr": "Google, Android Messages uygulamasına yeni bir \"enhanced protection\" ayarı ekleyerek tanınmayan göndericilerden gelen mesajları bulut tabanlı Gemini AI modeliyle incelemeye başladı. Model, mesajın içeriğini ve göndericinin niyetini hızlıca değerlendirerek potansiyel dolandırıcılık girişimlerini tespit ediyor; tüm veri işleme süreci şifreli ve yalnızca kullanıcıya erişilebilir bir güvenli alanda gerçekleşiyor.\n\nBu yeni koruma katmanı, cihaz içinde çalışan Gemini Nano AI ile de destekleniyor. Gemini Nano, gelen URL'leri gerçek zamanlı web sinyalleriyle tarayarak zararlı bağlantıları önceden belirliyor ve kullanıcıların bu linkleri açmadan önce uyarılmasını sağlıyor. Böylece yavaş yavaş ortaya çıkan sosyal mühendislik saldırılarına karşı iki katmanlı bir savunma sağlanıyor.\n\n\"Enhanced protection\" modu isteğe bağlı (opt‑in) olarak sunulacak ve Android 14 güncellemeleriyle birkaç hafta içinde kullanıcılara dağıtılacak. Google ayrıca, uygulamaların arama yönlendirmesini (call forwarding) etkinleştirmesini engelleyen bir kısıtlama, bu deneme girişiminde kullanıcıyı bilgilendirme özelliği ve Chrome ile Android WebView'de ekran paylaşımı sırasında hassas bilgileri otomatik olarak gizleme gibi ek güvenlik önlemleri duyurdu.\n\nGeçtiğimiz yıl Pixel cihazlarda tanıtılan Scam Detection özelliği, Honor, Motorola, Oppo, OnePlus, Realme, Tecno, Vivo, Xiaomi gibi birçok OEM'e genişletiliyor. Google, bu yeni AI destekli koruma özelliklerinin yıl içinde yüz milyonlarca ek kullanıcıya ulaşmasını hedefliyor.",
+  "onemli_maddeler": [
+    "\"Enhanced protection\" modu, tanınmayan göndericilerin mesajlarını Gemini AI ile analiz ederek dolandırıcılık niyetini belirliyor.",
+    "Cihaz içinde çalışan Gemini Nano, gelen URL'leri gerçek zamanlı tarayarak zararlı bağlantıları engelliyor.",
+    "Uygulamaların arama yönlendirmesini engelleme ve ekran paylaşımında hassas verileri otomatik gizleme gibi ek güvenlik önlemleri eklendi.",
+    "Scam Detection özelliği, Pixel dışındaki birçok OEM cihazına genişletiliyor ve yıl içinde yüz milyonlarca kullanıcıya ulaşması planlanıyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Android ve Google Messages'in temel güvenlik özelliklerine AI destekli yeni bir katman eklemesi, mobil dolandırıcılıkla mücadelede sektörel bir adım olarak değerlendiriliyor.",
+  "etiketler": [
+    "Android",
+    "Google Messages",
+    "AI",
+    "Scam Protection",
+    "Gemini"
+  ],
+  "anilan_modeller": [
+    "Gemini",
+    "Gemini Nano"
+  ],
+  "yorum_tr": "Bu güncelleme, AI'nın işletim sistemi seviyesinde güvenlik mekanizmalarına entegrasyonunun bir örneği olarak geliştiricilere yeni API fırsatları sunarken, kullanıcılar için daha proaktif bir dolandırıcılık koruması sağlıyor. Ancak bulut tabanlı analizlerin gizlilik yönleri, uzun vadede dikkatle izlenmesi gereken bir konu.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/Android-scam-detection-google-messages.jpg?quality=90&strip=all&crop=0,0,100,100",
+  "url": "https://www.theverge.com/tech/1010928/android-scam-protection-enhanced-protection-google-messages",
+  "source": "The Verge AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-14T16:00:00.000Z",
+  "slug": "android-is-using-ai-to-suss-out-scammers-in-google-messages"
+}

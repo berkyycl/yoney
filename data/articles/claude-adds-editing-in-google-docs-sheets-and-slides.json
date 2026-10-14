@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "Claude, Google Docs, Sheets ve Slides’da doğrudan düzenleme özelliği ekledi",
+  "ozet_tr": "Claude, Google Workspace içinde doğrudan dosya düzenleme yeteneği sunan yeni bir eklenti ve beta bağlayıcılarıyla kullanıcılara iki farklı çalışma yolu sağladı. Public beta aşamasında olan bu özellik, Docs, Sheets ve Slides dosyalarına yan panel üzerinden erişim, öneri kartlarıyla onaylı düzenlemeler ve kapsamlı kurumsal kontrol seçenekleri sunuyor.",
+  "detayli_icerik_tr": "Claude, Google Docs, Sheets ve Slides için yeni bir \"Claude for Google Workspace\" eklentisi ve beta bağlayıcılarıyla doğrudan dosya düzenleme imkanı tanıdı. Kullanıcılar, açık bir dosyanın yan panelinde Claude’u görebilir, seçili metin, hücre ya da slaytları anlayarak hedeflenmiş değişiklikler yapabilir. Docs içinde bir cümleyi yeniden yazmak ya da başlık stilini değiştirmek gibi ince ayarlar, öneri kartlarıyla sunulup onaylanabiliyor; daha büyük revizyonlar ise birden fazla işlevi birleştirerek (örneğin özet sıkılaştırma ve tablo oluşturma) tek bir istekle gerçekleştirilebiliyor.\n\nSheets desteği, sadece formüllerle sınırlı kalmayıp pivot tablolar, yerel grafikler ve yeni sekmeler gibi gelişmiş özellikleri kapsıyor. Claude, bir veri aralığını Python koduna taşıyarak birleştirme ya da temizlik işlemleri yapabiliyor ve sonuçları aynı sayfaya geri yazabiliyor. Kullanıcılar ayrıca boş bir elektronik tablo oluşturup, kaynak dosyalar ekleyerek bütçe‑gerçekleşme raporu, ekip sekmeleri, özet grafik ve aşırı harcama uyarıları gibi çıktılar talep edebiliyor.\n\nSlides tarafında Claude, mevcut sunumun düzeni ve temasıyla uyumlu yeni slaytlar oluşturabiliyor, çakışan öğeleri, ekrandan taşan içerikleri ve okunması zor metinleri kontrol ediyor. Düzenleme kontrolü iki seçenekle yönetiliyor: \"Düzenlemelerden önce sor\" varsayılan ayar olup her değişikliği onay kartı üzerinden sunarken, \"Tüm düzenlemeleri kabul et\" seçeneği Claude’un görevleri duraksamadan tamamlamasını sağlıyor. Oturum açıldığında yan panel, kullanıcının Claude modelini, bağlayıcılarını ve becerilerini hatırlayarak Salesforce müşteri geçmişi ya da Google Drive notları gibi verileri otomatik olarak çekebilen iş akışlarını destekliyor.\n\nKurumsal müşteriler için Compliance API, müşteri yönetimli şifreleme anahtarları (CMEK) ve OpenTelemetry denetim dışa aktarımı gibi güvenlik ve uyumluluk özellikleri de eklendi. Eklenti, Google Workspace Marketplace üzerinden kurulup Extensions > Claude > Open Claude menüsüyle açılabiliyor; yöneticiler alan ya da grup bazlı dağıtım yapabiliyor. Bağlayıcıların kullanılabilmesi için takım ve Enterprise sahiplerinin bu özelliği etkinleştirmesi gerekiyor.",
+  "onemli_maddeler": [
+    "Claude for Google Workspace eklentisi ve beta bağlayıcıları public beta aşamasında ve tüm ücretli Claude planlarında kullanılabilir.",
+    "Docs, Sheets ve Slides içinde yan panel üzerinden dosya içeriği okunup, seçili bölümlere hedeflenmiş düzenlemeler yapılabiliyor; her değişiklik onay kartı ile sunuluyor.",
+    "Sheets desteği pivot tablolar, yerel grafikler ve Python entegrasyonu gibi ileri seviye veri işleme yeteneklerini kapsıyor.",
+    "Slides, mevcut tema ve düzeni koruyarak yeni slaytlar oluşturabiliyor ve tasarım tutarsızlıklarını otomatik kontrol ediyor.",
+    "Enterprise seviyesinde Compliance API, müşteri‑yönetimli şifreleme anahtarları ve OpenTelemetry denetim dışa aktarımı gibi güvenlik kontrolleri sağlanıyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Claude'un Google Workspace entegrasyonu, büyük kurumsal kullanıcı kitlesi için AI destekli belge ve veri yönetimini doğrudan platform içinde sunarak iş akışlarını hızlandırıyor ve güvenlik/uyumluluk özellikleriyle kritik bir güncelleme niteliği taşıyor.",
+  "etiketler": [
+    "Google Workspace",
+    "Claude",
+    "AI editing",
+    "beta",
+    "enterprise"
+  ],
+  "anilan_modeller": [
+    "Claude"
+  ],
+  "yorum_tr": "Bu güncelleme, AI asistanlarını günlük ofis araçlarıyla bütünleştirmek isteyen geliştiriciler ve son kullanıcılar için üretkenliği artırırken, kurumsal güvenlik ve kontrol mekanizmaları sayesinde geniş çaplı benimsenmeyi destekleyecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/10/banner-3.webp",
+  "url": "https://www.testingcatalog.com/claude-adds-editing-in-google-docs-sheets-and-slides/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-07T12:15:43.000Z",
+  "slug": "claude-adds-editing-in-google-docs-sheets-and-slides"
+}

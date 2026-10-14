@@ -1,0 +1,53 @@
+{
+  "baslik_tr": "Microsoft, uzun vadeli hava tahminlerini iyileştiren açık kaynaklı bir makine öğrenimi aracı sundu",
+  "ozet_tr": "Microsoft Research, mevcut hava tahmin modellerindeki sistematik yanlılığı düzelten ve iki ila altı hafta ötesine uzanan tahminlerde doğruluğu artıran Probabilistic Bias Correction (PBC) adlı açık kaynaklı bir araç geliştirdi. Araç, sadece CPU üzerinde çalışarak düşük maliyetli bir çözüm sunuyor ve ECMWF'nin fizik‑temelli ve AI tabanlı modellerinde %98'e varan yağış ve %92'ye varan sıcaklık doğruluğu sağladı.",
+  "detayli_icerik_tr": "Microsoft Research New England'dan senior principal researcher Lester Mackey ve ekibi, geleneksel fizik‑temelli hava modelleri ile yeni nesil yapay zeka modellerinin iki haftadan uzun vadeli tahminlerde güvenilirliğinin düştüğünü belirtti. Bu sorunun temelinde, seyrek gözlem istasyonları ve karmaşık atmosferik süreçler nedeniyle modellerin veri boşluklarını sistematik bir yanlılıkla doldurması yer alıyor. Mackey, bu yanlılığı tespit edip düzelten bir makine öğrenimi çerçevesi geliştirdiklerini ve bunun sadece CPU'larda çalışabildiğini vurguladı.\n\nAraç, \"Probabilistic Bias Correction\" (PBC) adıyla anılıyor ve mevcut hava tahmin modellerine ek bir katman olarak entegre ediliyor. PBC, tarihsel veri setlerindeki iklim değişikliği etkilerini de hesaba katarak, örneğin geçmiş kayıtların daha soğuk bir iklimi yansıtması nedeniyle ortaya çıkan sıcaklık yanlılığını düzeltiyor. Bu sayede, modelin gelecekteki sıcaklık tahminleri güncel iklim koşullarıyla daha uyumlu hale geliyor.\n\nAraştırmacılar, PBC'nin Avrupa Orta Menzilli Hava Tahmin Merkezi (ECMWF) tarafından geliştirilen lider fizik‑temelli modelde yağış hedeflerinin %98'inde ve sıcaklık hedeflerinin %92'sinde doğruluk artışı sağladığını raporladı. Ayrıca, ECMWF'nin yeni AI tahmin sisteminde doğruluk iki katına çıktı. Bu sonuçlar, Nature dergisinde yayımlanan makalede detaylandırıldı ve ECMWF'nin AI Weather Quest yarışmasında PBC'ye ödül vermesiyle de teyit edildi.\n\nPBC'nin en büyük avantajı, düşük donanım gereksinimi sayesinde kaynak sıkıntısı çeken meteoroloji kurumlarının da kolayca benimseyebilmesi. Kenya Meteorological Service Authority gibi gelişmekte olan ülkeler, Gates Foundation desteğiyle bu yöntemi erken uyarı sistemlerine entegre etmeyi planlıyor. Araç, açık kaynak kodlu olduğu için topluluk tarafından geliştirilebilir ve bölgesel veri setlerine göre özelleştirilebilir.",
+  "onemli_maddeler": [
+    "PBC, mevcut hava tahmin modellerindeki sistematik yanlılığı tespit edip düzelterek iki‑altı hafta ötesinde doğruluğu artırıyor.",
+    "Araç sadece CPU üzerinde çalışıyor; bu sayede düşük bütçeli meteoroloji kurumları da faydalanabiliyor.",
+    "ECMWF'nin fizik‑temelli modelinde yağış doğruluğu %98, sıcaklık doğruluğu %92 oranında iyileşti; AI modelinde ise doğruluk iki katına çıktı."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Uzun vadeli hava tahminlerinin doğruluğunu artıran ve düşük maliyetli bir çözüm sunan PBC, hem gelişmiş ülkelerdeki operasyonel süreçleri iyileştiriyor hem de gelişmekte olan ülkelerde erken uyarı sistemlerinin erişilebilirliğini artırarak toplumsal fayda sağlıyor.",
+  "etiketler": [
+    "hava tahmini",
+    "makine öğrenimi",
+    "açık kaynak",
+    "ECMWF",
+    "iklim"
+  ],
+  "anilan_modeller": [
+    "Probabilistic Bias Correction (PBC)",
+    "ECMWF physics-based model",
+    "ECMWF AI forecasting system"
+  ],
+  "yorum_tr": "PBC, hava tahminlerinde yapay zekanın maliyet engelini azaltarak daha geniş bir kullanıcı kitlesine ulaşmasını sağlıyor; geliştiriciler için açık kaynak yapısı, özelleştirme ve topluluk katkılarını teşvik ederken, kullanıcılar daha güvenilir uzun vadeli uyarılar alabilecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "ECMWF physics-based model",
+      "benchmark": "Precipitation target accuracy after PBC",
+      "skor": 98,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "PBC improved the accuracy of a leading physics-based weather model by the European Centre for Medium-Range Weather Forecasts (ECMWF) for 98 percent of precipitation"
+    },
+    {
+      "model": "ECMWF physics-based model",
+      "benchmark": "Temperature target accuracy after PBC",
+      "skor": 92,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "PBC improved the accuracy of a leading physics-based weather model by the European Centre for Medium-Range Weather Forecasts (ECMWF) for ... 92 percent of temperature targets"
+    }
+  ],
+  "gorsel_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/02/STK438_CLIMATE_CHANGE_G.jpg?quality=90&strip=all&crop=0,0,100,100",
+  "url": "https://www.theverge.com/science/1011127/ai-weather-forecast-microsoft",
+  "source": "The Verge AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-14T16:05:21.000Z",
+  "slug": "microsoft-has-a-new-machine-learning-tool-to-improve-weather"
+}

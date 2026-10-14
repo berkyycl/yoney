@@ -1,0 +1,53 @@
+{
+  "baslik_tr": "HiRO-ACEv2: 3 km çözünürlükte ekstrem hava simülasyonu, maliyetin 1/300'ü",
+  "ozet_tr": "Allen Institute for AI, Hugging Face iş birliğiyle HiRO-ACEv2'yi tanıttı. Yeni sistem, küresel ölçekte 3 km çözünürlükte yağış, rüzgar ve basınç verilerini, geleneksel yüksek çözünürlüklü modellerin sadece %0,3'ü kadar maliyetle üretebiliyor. Özellikle nadir ve şiddetli ekstrem olayların yeniden üretilmesinde yüksek doğruluk sağlıyor.",
+  "detayli_icerik_tr": "HiRO-ACEv2, 2026 yılında duyurulan HiRO-ACE sisteminin en son güncellemesi olarak karşımıza çıkıyor. Sistem iki bileşenden oluşuyor: 100 km çözünürlükte küresel iklim tahmini yapan ACE ve bu kaba çıktıyı 3 km'ye yükselten HiROv2. Yeni sürümde HiROv2, sadece yağış değil, aynı anda rüzgar, deniz seviyesindeki basınç ve diğer yüksek çözünürlüklü alanları da tahmin edebiliyor, bu da ekstrem hava olaylarının daha kapsamlı bir şekilde yakalanmasını sağlıyor.\n\nHiROv2'nun eğitiminde yapılan değişiklikler, en yoğun yağış, rüzgar ve basınç değerlerini yeniden üretme yeteneğini artırdı. Model, X‑SHiELD verileri üzerinden eğitildiğinde, hedef yüksek çözünürlüklü istatistikleri %3'ün altında bir hata payıyla yakalıyor; hatta bir milyonda bir kez görülen nadir olayları bile doğru bir şekilde simüle ediyor. Tropikal siklonların toplam enerjisini, eğitim sırasında hiç görmediği fırtınalar dahil, gerçek X‑SHiELD sonuçlarıyla uyumlu bir şekilde tahmin edebiliyor.\n\nGüncellenen ACE modeli, 10 yıllık bir simülasyonda X‑SHiELD ile neredeyse aynı dağılımları, ortalama iklim desenlerini ve siklon enerjilerini üretiyor. Bu, ACE'nin kaba ölçekli çıktılarının yüksek çözünürlüklü veri üretimi için sağlam bir temel olduğunu gösteriyor. HiROv2 ve ACE birlikte, bir yıl boyunca küresel çapta 3 km çözünürlükte veri üretti ve istatistiksel olarak X‑SHiELD ile büyük ölçüde örtüştü.\n\nMaliyet açısından en çarpıcı bulgu, HiRO‑ACEv2'nin aynı yüksek çözünürlükteki veriyi X‑SHiELD'in yaklaşık 300 katı maliyetle üretmesi. Tek bir bölgeye odaklanıldığında bu tasarruf yüz katları aşabiliyor. Geliştiriciler, HiROv2'nin daha da hızlandırılmış bir versiyonunu çalıştırarak işlem süresini on kat daha hızlı hâle getirmeyi hedefliyor. Gelecek planları arasında, farklı iklim senaryoları (ör. 4°C daha sıcak bir dünya) ve ek çıktılar (yakın yüzey sıcaklığı, kar ve buz) eklemek yer alıyor.",
+  "onemli_maddeler": [
+    "HiROv2, aynı anda yağış, rüzgar ve basınç gibi birden fazla yüksek çözünürlüklü alanı tahmin edebiliyor.",
+    "Model, X‑SHiELD ile karşılaştırıldığında yüksek çözünürlük istatistiklerini %3'ün altında bir hata ile yakalıyor.",
+    "HiRO‑ACEv2, küresel 3 km çözünürlükte veri üretimini X‑SHiELD'in 1/300 maliyetine indiriyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Model, iklim araştırmalarında yüksek çözünürlüklü veri üretimini çok daha düşük maliyetle mümkün kılarak geniş çaplı simülasyonların erişilebilirliğini artırıyor.",
+  "etiketler": [
+    "iklim modelleme",
+    "yüksek çözünürlük",
+    "AI downscaling",
+    "maliyet verimliliği",
+    "ekstrem hava"
+  ],
+  "anilan_modeller": [
+    "HiRO-ACEv2",
+    "HiROv2",
+    "ACE (güncellenmiş)"
+  ],
+  "yorum_tr": "HiRO‑ACEv2, iklim bilimcileri ve hava tahmin uzmanları için yüksek çözünürlüklü veri üretimini ekonomik bir alternatif sunarak araştırma ve uygulama maliyetlerini önemli ölçüde düşürecek. Modelin çoklu değişken tahmini ve nadir olayların doğru yakalanması, özellikle ekstrem hava olaylarının incelenmesinde yeni fırsatlar yaratacak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "HiRO-ACEv2",
+      "benchmark": "Maliyet tasarrufu vs X‑SHiELD",
+      "skor": 300,
+      "birim": "x",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Producing global high-resolution data with it costs roughly 300 times less than running X‑SHiELD."
+    },
+    {
+      "model": "HiRO-ACEv2",
+      "benchmark": "Yüksek çözünürlük istatistik hatası",
+      "skor": 3,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "When given coarsened X‑SHiELD data, it matches the target simulation's high-resolution statistics to within 3%."
+    }
+  ],
+  "gorsel_url": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/Y8t8GnfI2lUa40iX4_sxA.png",
+  "url": "https://huggingface.co/blog/allenai/hiro-acev2",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-10-14T16:12:42.000Z",
+  "slug": "hiro-acev2-simulating-extreme-weather-at-3-km-resolution-for"
+}

@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "OpenAI bu yıl en az bir model çıkaracak, ancak amiral gemisi hâlâ uyum çalışması gerektiriyor",
+  "ozet_tr": "OpenAI, bu yıl içinde bir ya da iki yeni model yayınlamayı planladığını çalışanlarından duyurdu. Ancak şirketin bir sonraki amiral gemisi modeli, güvenlik ve uyum açısından hâlâ tamamlanmamış olarak değerlendiriliyor. Model, Astra’da kullanılan döngüsel transformer (Recurrent Depth) tekniğini benimseyecek.",
+  "detayli_icerik_tr": "OpenAI, The Information kaynağına dayanan habere göre, yıl sonuna kadar bir ya da iki yeni model piyasaya sürmeyi hedefliyor. Şirketin şu an üzerinde çalıştığı büyük ölçekli modelin, Astra’da kullanılan aynı döngüsel transformer mimarisini (Recurrent Depth) taşıması bekleniyor. Bu teknik, bir token'ı aynı katmanlar üzerinden birden çok kez geçirerek matematik ve kodlama performansını artırırken, modelin daha küçük bir boyutta daha yüksek verim göstermesini sağlıyor.\n\nDöngüsel transformer mimarisi, modelin düşünce sürecinin bir kısmını okunabilir metin dışındaki sayısal temsillere taşıdığı için güvenlik denetimlerini zorlaştırıyor. OpenAI, Astra’da kaç döngü yapılacağını sınırlayarak zincirleme düşünce (chain‑of‑thought) izlenebilirliğini korumaya çalışmıştı; ancak yeni amiral gemisi modelde bu sınırlama daha da gevşetildiği için güvenlik araştırmacılarının modelin mantığını takip etmesi zorlaşabilir.\n\nŞirket, güvenlik ve uyum çalışmalarına toplam hesaplama gücünün yaklaşık yüzde onunu yönlendirdiğini belirtiyor. Bu, yüzlerce megawattlık veri merkezi kapasitesine tekabül ediyor ve piyasa koşullarında yıllık milyarlarca dolar tutarında bir maliyet anlamına geliyor. Ayrıca, Microsoft’un bir teknik dokümanda GPT‑6.1 Sol modelinin \"looping inference\" kullandığını yanlışlıkla açıklaması, OpenAI’nin bu teknolojiye dair iç detayların ne kadar hassas olduğunu bir kez daha gözler önüne serdi.\n\nOpenAI’nin yeni modelinin güvenlik değerlendirmelerinden geçmesi ve ABD hükümetinin ileri sürmüş olduğu gelişmiş AI sistemleri değerlendirme emirlerine (Trump yönetimi döneminde çıkarılan) uyum sağlaması gerekiyor. Bu süreç, modelin dış ortaklara ve kamuya sunulmadan önce en az 30 gün, hatta daha uzun bir süre boyunca hükümet erişimine açık olmasını da içeriyor.",
+  "onemli_maddeler": [
+    "OpenAI, yıl sonuna kadar bir ya da iki yeni model çıkarmayı planlıyor.",
+    "Yeni amiral gemisi modeli, Astra’da kullanılan döngüsel transformer (Recurrent Depth) tekniğini benimseyecek.",
+    "Döngüsel mimari, güvenlik denetimlerini zorlaştırdığı için modelin uyum çalışmaları hâlâ devam ediyor.",
+    "OpenAI, toplam hesaplama gücünün yaklaşık %10’unu güvenlik ve uyum üzerine yönlendirdi."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "OpenAI’nın gelecek yıl içinde yeni modeller çıkarmayı planlaması, sektörde rekabeti ve güvenlik standartlarını doğrudan etkileyen kritik bir gelişmedir; aynı zamanda uyum ve denetim sorunları, AI güvenliği tartışmalarını yeniden gündeme getiriyor.",
+  "etiketler": [
+    "OpenAI",
+    "model",
+    "looped transformer",
+    "alignment",
+    "AI safety"
+  ],
+  "anilan_modeller": [
+    "Astra",
+    "GPT-6.1 Sol"
+  ],
+  "yorum_tr": "OpenAI’nin yeni modelleri piyasaya sürme planı, sektörde yenilik temposunu artırırken, uyum ve güvenlik konularındaki belirsizlikler geliştiricileri ve kullanıcıları temkinli olmaya itiyor. Şirketin güvenlik altyapısına yaptığı büyük yatırım, uzun vadeli sorumlu AI geliştirme çabalarının bir göstergesi olarak değerlendirilebilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/10/openai_misalign-2.png",
+  "url": "https://the-decoder.com/openai-will-reportedly-ship-at-least-one-model-this-year-but-its-flagship-still-needs-alignment-work/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-14T16:14:16.000Z",
+  "slug": "openai-will-reportedly-ship-at-least-one-model-this-year-but"
+}
