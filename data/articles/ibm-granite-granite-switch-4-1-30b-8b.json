@@ -1,0 +1,36 @@
+{
+  "baslik_tr": "IBM Granite Switch 4.1 30B: Tek Endpoint'ten Chat, Karar ve Konuşma",
+  "ozet_tr": "IBM, Granite Switch 4.1 30B modelini duyurdu. Modüler bir LLM olan model, tek bir endpoint üzerinden doğal dil yanıtları, karar verme yetenekleri ve yerleşik konuşmadan metne çeviriyi birleştiriyor. 30 milyar parametreli temel model, aLoRA adaptörleri ve 470M parametreli ses motoru ile geliyor.",
+  "detayli_icerik_tr": "IBM Granite Switch 4.1 30B, modüler bir büyük dil modeli (LLM) mimarisi sunuyor. Model, ibm-granite/granite-4.1-30b temel modeli (30 B parametre, 128 K bağlam uzunluğu) üzerine iki aLoRA adaptörü – karar (general-purpose Decisions) ve guardian‑core – ekleyerek, aynı barındırma noktasında sohbet, genel ve özel kararlar ile konuşmadan metne çeviriyi (speech‑to‑text) gerçekleştirebiliyor. Adaptörler, sohbet şablonundaki kontrol tokenlarıyla talep üzerine etkinleştiriliyor.\n\nSes işleme yeteneği, ibm-granite/granite-speech-5.0-470m-turboctc modeliyle sağlanıyor; bu 470 M parametrelik motor, İngilizce konuşmayı anlık metne dönüştürüyor ve Granite Switch'in tek uç noktada bütünleşik bir deneyim sunmasını mümkün kılıyor. Model Apache 2.0 lisansı altında yayımlanıyor ve 14 Ekim 2026 tarihinde resmi olarak kullanıma sunuldu.\n\nIBM, modelin HuggingFace Transformers ve vLLM arka uçlarıyla uyumlu olduğunu belirtiyor. Ayrıca aynı mimari, 8 B parametreli bir sürüm (granite-switch-4.1-8b) ve önizleme paketleri (30B, 8B, 3B) olarak da mevcut. Kullanıcılar, ilgili HuggingFace sayfalarından modelleri indirip, kendi altyapılarında çalıştırabilirler. Llama.cpp desteğinin henüz tam olmadığı, ancak topluluk katkılarıyla yakında gelmesi beklendiği de not edildi.\n\nGranite Switch'in bu çok yönlü yapısı, geliştiricilere tek bir API üzerinden farklı görev tiplerini (sohbet, karar, ses) yönetme imkanı tanıyarak uygulama geliştirme sürecini sadeleştiriyor. IBM'in bu adımı, açık kaynak ve modüler LLM ekosisteminde yeni bir referans noktası oluşturabilir.",
+  "onemli_maddeler": [
+    "Modüler mimari: Tek endpoint üzerinden sohbet, karar ve konuşmadan metne çeviriyi birleştiriyor.",
+    "Adaptörler aLoRA tabanlı ve kontrol tokenlarıyla dinamik olarak etkinleştirilebiliyor.",
+    "Yerleşik 470 M parametreli speech‑to‑text motoru (granite-speech-5.0-470m-turboctc) ile ses desteği sağlanıyor.",
+    "Apache 2.0 lisansı altında açık kaynak olarak sunuluyor ve HuggingFace Transformers & vLLM ile uyumlu."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "30 B parametreli yeni bir modüler LLM'in yayınlanması, tek bir uç noktada çoklu görev yetenekleri sunması ve açık lisansla dağıtılması, hem araştırma hem de endüstri uygulamaları için büyük bir adım teşkil ediyor.",
+  "etiketler": [
+    "IBM",
+    "Granite",
+    "LLM",
+    "Modüler",
+    "Speech-to-Text"
+  ],
+  "anilan_modeller": [
+    "ibm-granite/granite-4.1-30b",
+    "ibm-granite/granite-switch-4.1-30b",
+    "ibm-granite/granite-switch-4.1-8b",
+    "ibm-granite/granite-speech-5.0-470m-turboctc"
+  ],
+  "yorum_tr": "Granite Switch 4.1, geliştiricilere tek bir API üzerinden çoklu görev yetenekleri sunarak entegrasyon maliyetlerini düşürebilir; aynı zamanda açık lisans politikası, topluluk katkılarını ve hızlı adaptasyonu teşvik edecektir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/t9gf1xv60pvh1.png?width=140&height=99&auto=webp&s=7261dcb5d08552f33d23e4f6b04e68398db6448f",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x6wwx2/ibmgranitegraniteswitch41_30b8b/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-15T20:38:05.000Z",
+  "slug": "ibm-granite-granite-switch-4-1-30b-8b"
+}

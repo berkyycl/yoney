@@ -1,0 +1,144 @@
+{
+  "baslik_tr": "£300'lık Snapdragon Mini PC’de 35B Kodlayıcı ~30 tok/s, 80B Model RAM’a sığmıyor ama 17 tok/s",
+  "ozet_tr": "Lenovo IdeaCentre Mini Snapdragon X1-26-100, 32 GB RAM ve sadece 35 W güç tüketimiyle, 35 b milyar parametreli bir kodlayıcı modeli saniyede yaklaşık 30 token üretebiliyor. Aynı cihaz, 80 b parametreli bir modeli RAM’a sığdırmasa da MTP desteğiyle 17‑18 token/s hızla çalıştırabiliyor. Bu sonuçlar, düşük maliyetli ARM tabanlı mini PC’lerin yerel büyük dil modelleri için hâlâ geçerli bir seçenek olabileceğini gösteriyor.",
+  "detayli_icerik_tr": "Lenovo’nun £299,99 fiyatındaki IdeaCentre Mini, Snapdragon X1-26-100 işlemci, 32 GB LPDDR5 RAM ve 35 W güç tüketimiyle geliyor. Kullanıcı, bu cihazı ARM Windows ortamında LLM çalıştırma potansiyeli için test ederken, GPU’nun (Adreno X1-45) LLM’ler için henüz kullanılabilir olmadığını ve NPU’nun da pasif kaldığını belirtti. Bu yüzden tüm ölçümler CPU tabanlı llama.cpp ve yeni port edilen Janas kütüphanesiyle yapıldı.\n\nllama.cpp ile 512 token’lık bir prompt ve 8 iş parçacığı (thread) kullanılarak yapılan testlerde, Qwen3.6 35 B A3B kodlayıcı modeli 118 token/s okuma ve 24,5 token/s yazma hızına ulaştı; çoklu token işleme (MTP) ile bu değer 29‑33 token/s’ye yükseldi. Aynı ortamda Gemma 26 B modeli 134 token/s okuma ve 29,5 token/s yazma performansı gösterdi. 80 B Qwen3‑Next modeli ise MTP ile 17‑18 token/s yazma hızı sağladı.\n\nKullanıcı, RAM sınırını aşmak için Janas adlı bir sistemin ARM uyarlamasını geliştirdi. NEON tabanlı çekirdekler ve i8mm desteğiyle, Janas 35 B kodlayıcı modelinde 60 token/s okuma ve 17,2 token/s yazma, MTP ile 29‑31 token/s performans elde etti. Gemma 26 B modeli Janas ile 115 token/s okuma ve 23,5 token/s yazma, MTP ile 32‑34 token/s hızına ulaştı. En dikkat çekici, Janas’ın 80 B modeli RAM’a sığdırmasa da, düz yazma 9,8 token/s ve MTP ile 17‑18 token/s hızla çalıştırabilmesiydi.\n\nBu bulgular, sadece £300 maliyetle 35 W güç tüketen bir ARM mini PC’nin, 35 B seviyesindeki kodlayıcı modelleri gerçek zamanlı olarak çalıştırabildiğini ve 80 B gibi çok daha büyük modelleri sınırlı RAM ile bile MTP sayesinde kullanılabilir kıldığını ortaya koyuyor. Kullanıcı, iki cihazı USB4 üzerinden bağlayarak paralel uzmanlık (expert) yapılarını ölçeklendirme üzerine çalışmalarını sürdürüyor ve bu alandaki potansiyel performans artışlarını raporlamayı planlıyor.",
+  "onemli_maddeler": [
+    "35 B kodlayıcı model 30 tok/s hızla çalışıyor",
+    "80 B model RAM’a sığmasa da MTP ile 17‑18 tok/s üretim yapabiliyor",
+    "Janas’ın ARM uyarlaması, RAM tüketimini azaltarak büyük modelleri çalıştırma imkanı sağladı"
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Uygun fiyatlı bir ARM mini PC’nin, büyük ölçekli dil modellerini yerel olarak çalıştırabilmesi, düşük maliyetli AI dağıtım senaryoları ve geliştiricilerin erişilebilirliği açısından kritik bir gösterge oluşturuyor.",
+  "etiketler": [
+    "Snapdragon",
+    "ARM",
+    "LLM",
+    "benchmark",
+    "local inference"
+  ],
+  "anilan_modeller": [
+    "Qwen3.6 35B A3B coder",
+    "Qwen3-Next 80B A3B",
+    "Gemma 26B",
+    "80B Qwen"
+  ],
+  "yorum_tr": "Bu bulgular, düşük güç tüketimli ARM platformlarının büyük dil modelleriyle rekabet edebileceğini ve maliyet etkin AI çözümlerine yönelen geliştiriciler için yeni fırsatlar sunduğunu gösteriyor. Ancak GPU eksikliği ve RAM sınırlamaları, performansın tam anlamıyla ölçeklenebilirliğini hâlâ kısıtlıyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen3.6 35B A3B coder",
+      "benchmark": "Read token throughput",
+      "skor": 118,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "llama.cpp, 512 token prompt, 8 threads",
+      "kaynak_metinden_alinti": "reads ~118 tok/s"
+    },
+    {
+      "model": "Qwen3.6 35B A3B coder",
+      "benchmark": "Write token throughput",
+      "skor": 24.5,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "llama.cpp, 512 token prompt, 8 threads",
+      "kaynak_metinden_alinti": "writes 24.5"
+    },
+    {
+      "model": "Qwen3.6 35B A3B coder",
+      "benchmark": "Write token throughput with MTP",
+      "skor": 30,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "with MTP",
+      "kaynak_metinden_alinti": "~30 with MTP"
+    },
+    {
+      "model": "Gemma 26B",
+      "benchmark": "Read token throughput",
+      "skor": 134,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "llama.cpp, 512 token prompt, 8 threads",
+      "kaynak_metinden_alinti": "read 134"
+    },
+    {
+      "model": "Gemma 26B",
+      "benchmark": "Write token throughput",
+      "skor": 29.5,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "llama.cpp, 512 token prompt, 8 threads",
+      "kaynak_metinden_alinti": "write 29.5"
+    },
+    {
+      "model": "Qwen3.6 35B A3B coder (Janas)",
+      "benchmark": "Read token throughput",
+      "skor": 60,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Janas, ARM NEON kernels, 512 token prompt, 8 threads",
+      "kaynak_metinden_alinti": "read ~60"
+    },
+    {
+      "model": "Qwen3.6 35B A3B coder (Janas)",
+      "benchmark": "Write token throughput",
+      "skor": 17.2,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Janas, ARM NEON kernels",
+      "kaynak_metinden_alinti": "write 17.2"
+    },
+    {
+      "model": "Qwen3.6 35B A3B coder (Janas)",
+      "benchmark": "Write token throughput with MTP",
+      "skor": 30,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "with MTP",
+      "kaynak_metinden_alinti": "with MTP 29-31"
+    },
+    {
+      "model": "Gemma 26B (Janas)",
+      "benchmark": "Read token throughput",
+      "skor": 115,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Janas, ARM NEON kernels",
+      "kaynak_metinden_alinti": "read 115"
+    },
+    {
+      "model": "Gemma 26B (Janas)",
+      "benchmark": "Write token throughput",
+      "skor": 23.5,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Janas, ARM NEON kernels",
+      "kaynak_metinden_alinti": "write 23.5"
+    },
+    {
+      "model": "Gemma 26B (Janas)",
+      "benchmark": "Write token throughput with MTP",
+      "skor": 33,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "with MTP",
+      "kaynak_metinden_alinti": "with MTP 32-34"
+    },
+    {
+      "model": "80B (Janas)",
+      "benchmark": "Write token throughput (plain)",
+      "skor": 9.8,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "plain write",
+      "kaynak_metinden_alinti": "plain write 9.8"
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/jkevixwq7ovh1.jpeg?width=640&crop=smart&auto=webp&s=1683fe03177421beac5df1b72ff53fc23d9a3023",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x6stod/what_a_300_35w_snapdragon_mini_pc_can_actually_do/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-15T18:02:21.000Z",
+  "slug": "what-a-300-35w-snapdragon-mini-pc-can-actually-do-35b-coder"
+}

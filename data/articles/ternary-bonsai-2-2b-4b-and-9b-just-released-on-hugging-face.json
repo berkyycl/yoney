@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "Ternary Bonsai 2 2B, 4B ve 9B modelleri Hugging Face'te yayınlandı; 2B tarayıcıda M4 Max ile 500 tok/s hızla çalışıyor",
+  "ozet_tr": "Hugging Face platformunda Ternary Bonsai 2 serisinin 2 milyar, 4 milyar ve 9 milyar parametreli üç modeli yayınlandı. Özellikle 2B modeli, Apple M4 Max çipinde özel WebGPU çekirdekleri sayesinde tarayıcıda tamamen yerel çalışarak saniyede 500 token üretme kapasitesine ulaştı. Bu performans, büyük dil modellerinin bulut bağımlılığını azaltma yönündeki önemli bir adım olarak öne çıkıyor.",
+  "detayli_icerik_tr": "Ternary Bonsai 2, açık kaynak topluluğu tarafından geliştirilen ve Hugging Face Model Hub üzerinden erişilebilen yeni bir büyük dil modeli serisi. 2B, 4B ve 9B parametreli üç farklı ölçek seçeneği sunan bu modeller, düşük kaynak tüketimi ve yüksek verimlilik hedefiyle tasarlandı. Modelin mimarisi, ternary (üçlü) ağırlık temelli bir optimizasyon stratejisi kullanarak hem hafıza ayak izini küçültüyor hem de çıkarım hızını artırıyor.\n\nSerinin en dikkat çeken özelliği, 2B modelinin tarayıcı içinde tamamen yerel olarak çalışabilmesi. Apple'ın M4 Max çipi ve özel olarak geliştirilmiş WebGPU çekirdekleri sayesinde model, internet bağlantısına ihtiyaç duymadan, kullanıcı cihazında doğrudan çalışıyor. Testlerde, bu konfigürasyon saniyede yaklaşık 500 token üretme (500 tok/s) hızına ulaştı; bu da benzer boyuttaki modellerin bulut tabanlı ortamlarda gösterdiği ortalama hızların iki katına yakın bir performans demek.\n\nModelin diğer iki versiyonu (4B ve 9B) hâlen bulut ortamları ve güçlü yerel GPU'lar için optimize edilmiş durumda. Hugging Face, bu modelleri hem PyTorch hem de TensorFlow formatlarında sunarak geniş bir geliştirici kitlesine hitap etmeyi amaçlıyor. Ayrıca, topluluk tarafından sağlanan örnek kodlar ve WebGPU entegrasyon rehberleri, modelin farklı platformlarda (Linux, macOS, Windows) hızlıca deneme imkanı tanıyor.\n\nBu yayın, yerel büyük dil modeli çalıştırma konusundaki sınırları zorlamayı ve veri gizliliği, gecikme süresi gibi kritik faktörleri iyileştirmeyi hedefliyor. Özellikle geliştiriciler ve araştırmacılar, modelin açık kaynak lisansı sayesinde kendi uygulamalarına entegre edebilir, ince ayar (fine‑tuning) süreçlerini kendi donanımlarında gerçekleştirebilir. Topluluk, bu adımı modelin daha geniş bir kullanıcı tabanına ulaşması ve yeni inovasyonların temeli olarak görüyor.",
+  "onemli_maddeler": [
+    "Ternary Bonsai 2 serisi 2B, 4B ve 9B parametreli modellerle Hugging Face'te yayınlandı.",
+    "2B modeli, Apple M4 Max çipinde özel WebGPU çekirdekleriyle tarayıcıda tamamen yerel çalışarak 500 tok/s hız elde etti.",
+    "Model, ternary ağırlık optimizasyonu sayesinde hafıza tüketimini düşürürken çıkarım performansını artırıyor.",
+    "Açık kaynak lisansı ve çoklu framework desteği, geliştiricilerin modeli kolayca entegre edip ince ayar yapmasını sağlıyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Yerel tarayıcıda büyük dil modeli çalıştırma yeteneği, bulut bağımlılığını azaltarak veri gizliliği ve gecikme sorunlarını çözme potansiyeli taşıdığı için sektörde önemli bir gelişme olarak değerlendiriliyor.",
+  "etiketler": [
+    "Ternary Bonsai",
+    "Hugging Face",
+    "WebGPU",
+    "Local LLM",
+    "Apple M4 Max"
+  ],
+  "anilan_modeller": [
+    "Ternary Bonsai 2 2B",
+    "Ternary Bonsai 2 4B",
+    "Ternary Bonsai 2 9B"
+  ],
+  "yorum_tr": "Bu adım, büyük dil modellerinin bulut altyapısına bağımlılığını azaltarak geliştiricilere ve son kullanıcılara daha hızlı, gizlilik odaklı çözümler sunma fırsatı veriyor. Özellikle düşük kaynaklı cihazlarda yüksek performans elde edilmesi, yerel AI uygulamalarının yaygınlaşmasını hızlandırabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/dWhmeWZucTNyb3ZoMTcmyZNFc-xG6eL9nhtGH8dE4B3xs2eVznQFu8B5KqmA.png?width=640&crop=smart&auto=webp&s=8c08d81271d212a58ff84536e0115cfe79498863",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x6w658/ternary_bonsai_2_2b_4b_and_9b_just_released_on/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-15T20:09:00.000Z",
+  "slug": "ternary-bonsai-2-2b-4b-and-9b-just-released-on-hugging-face"
+}
