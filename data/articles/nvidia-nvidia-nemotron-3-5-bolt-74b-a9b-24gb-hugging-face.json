@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "NVIDIA Nemotron 3.5 Bolt 74B-A9B 24GB Modeli 2-bit Kuantizasyonla Yerel VLM Olarak Sunuldu",
+  "ozet_tr": "NVIDIA, 74 milyar parametreli Nemotron 3.5 Bolt modelini 2‑bit kuantizasyonla 24 GB bellek sınırına sığdırarak yerel vision‑language görevleri için yayınladı. Model, yoğun bellek tüketimi olmadan hem metin hem görsel girdileri işleyebilecek şekilde tasarlandı ve ticari kullanım için açık lisansla sunuluyor.",
+  "detayli_icerik_tr": "NVIDIA Nemotron 3.5 Bolt 74B-A9B 24GB, Mamba‑2‑Transformer hibrit mimarisi ve LatentMoE yapısına sahip bir vision‑language modelidir (VLM). Model, 74 milyar toplam parametreye sahip olmakla birlikte yalnızca 9 milyar aktif parametreyi çalıştırarak 2‑bit kuantizasyon (IQ2) sayesinde 24 GB VRAM içinde çalışabiliyor. Bu sayede kullanıcılar, modelin yüksek zekâ seviyesini yoğun bellek tüketimi olmadan yerel makinelerde, özellikle NVIDIA Ampere (A100), Hopper (H100‑80GB) ve Blackwell GPU'larında çalıştırabiliyor.\n\nModel, 256 K token uzunluğunda bağlamı destekliyor ve metin, resim ve video girdilerini alıp sadece metin çıktısı üretebiliyor. Özel bir \"speculative decoding\" mekanizması olan LiLiCorr drafter, DFlash üzerinden 7 spekülatif token üretimiyle yanıt hızını artırıyor. Ayrıca, Super 3.5 VL istemcisinden devralınan \"chat‑template\" kontrolü sayesinde \"enable_thinking\" parametresiyle akıl yürütme modunu açıp kapatmak mümkün.\n\nNemotron 3.5 Bolt, OpenMDW‑1.1 lisansı altında hem ticari hem de ticari olmayan projelerde kullanılabiliyor. Modelin eğitim verisi Mayıs 2026 tarihine kadar güncel, bu da onu güncel bilgi gerektiren ajan görevleri için uygun kılıyor. NVIDIA, bu modeli Nemotron ailesinin açık ağırlıklı, açık veri ve tarif setiyle sunarak geliştiricilerin özelleştirilmiş AI ajanları oluşturmasını hedefliyor.\n\nYerel AI çözümlerine yönelen topluluklar ve geliştiriciler, bu modelin düşük bellek gereksinimi ve yüksek performansı sayesinde büyük ölçekli VLM'leri bulut yerine kendi cihazlarında çalıştırma imkanı bulacak. Model, Hugging Face platformunda iki farklı paket (GGUF ve LiLiCorr‑GGUF) olarak dağıtılıyor ve topluluk tarafından test edilip geri bildirim sağlanması bekleniyor.",
+  "onemli_maddeler": [
+    "2‑bit IQ2 kuantizasyonu sayesinde 74 B parametreli model 24 GB VRAM içinde çalışabiliyor.",
+    "Mamba‑2‑Transformer ve LatentMoE hibrit mimarisi, yüksek zekâ ve hız dengesini sağlıyor.",
+    "LiLiCorr spekülatif dekoding ile yanıt süresi önemli ölçüde iyileştiriliyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Büyük ölçekli vision‑language modeli, düşük bellek tüketimi ve açık lisansıyla yerel AI uygulamalarını geniş kitlelere ulaştırma potansiyeline sahip, bu da sektördeki dağıtık AI trendini güçlendiriyor.",
+  "etiketler": [
+    "NVIDIA",
+    "Nemotron",
+    "Vision-Language",
+    "2-bit Kuantizasyon",
+    "Yerel AI"
+  ],
+  "anilan_modeller": [
+    "Nemotron 3.5 Bolt 74B-A9B 24GB",
+    "Super 3.5 VL client",
+    "LiLiCorr drafter"
+  ],
+  "yorum_tr": "Nemotron 3.5 Bolt, yüksek parametre sayısını düşük bellek ihtiyacıyla birleştirerek yerel VLM kullanımını pratik hale getiriyor. Geliştiriciler, açık lisans ve hazır dağıtım paketleri sayesinde hızlı prototipleme yapabilir, kullanıcılar ise bulut bağımlılığını azaltarak daha hızlı ve gizlilik odaklı deneyimler elde edebilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/4CDR0ao37IF4cMnQmkSSdBO_OhvFEYqwnJM94z3U-hU.png?width=640&crop=smart&auto=webp&s=3e5dff7e4f845aa61d3087da2b53663b97d669dd",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x6o31q/nvidianvidianemotron35bolt74ba9b24gb_hugging_face/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-15T15:04:12.000Z",
+  "slug": "nvidia-nvidia-nemotron-3-5-bolt-74b-a9b-24gb-hugging-face"
+}

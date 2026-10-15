@@ -1,0 +1,36 @@
+{
+  "baslik_tr": "Windows, Nvidia RTX Spark Dizüstü Bilgisayarlar için Yeni Optimizasyonlar ve AI Deneyimi Sunuyor",
+  "ozet_tr": "Microsoft, Nvidia'nın ARM tabanlı RTX Spark dizüstü bilgisayarları için Windows'ta kapsamlı bir güncelleme yaptı. Yeni Get Started deneyimiyle AI ajanları iki tıklamayla kurulabiliyor, Prism emülatörü ve birleşik bellek mimarisi sayesinde hem yerel AI modelleri hem de oyun performansı iyileştiriliyor.",
+  "detayli_icerik_tr": "Microsoft ve Nvidia, San Francisco'da düzenlenen RTX Spark lansman etkinliğinin ardından, yeni nesil AI odaklı dizüstü bilgisayarlar için Windows'ta bir dizi altyapı iyileştirmesi gerçekleştirdi. Bu cihazlar, geleneksel x64 mimarisinden farklı olarak ARM tabanlı bir CPU ve Blackwell GPU kombinasyonu sunuyor; birleşik bellek mimarisiyle 128 GB'a kadar tek bir bellek havuzunda CPU ve GPU kaynakları paylaşılıyor. Windows, bu yeni platforma özgü bir \"Get Started\" deneyimi ekleyerek kullanıcıların AI ajanlarını bulup kurmasını iki tıklamayla mümkün kılıyor; Hermes, Perplexity ve OpenClaw ilk desteklenen ajanlar olarak sunuldu.\n\nAI ajanları Windows Store üzerinden otomatik güncellenebiliyor ve bağımlılık yönetimi sorunu ortadan kalkıyor. Microsoft, Prism emülatörünü RTX Spark'ın mikro mimarisine göre yeniden optimize ederek x64 uygulamaların ARM üzerinde daha verimli çalışmasını sağladı. Emülatör ayarları her ay güncelleniyor ve her platforma özgü ince ayarlar yapılıyor. Bu sayede, önceki Windows on ARM deneyimlerinden farklı olarak, hem yerel AI modelleri hem de klasik Windows uygulamaları daha akıcı bir şekilde çalışıyor.\n\nBellek yönetimi de büyük bir odak noktası oldu. Kullanıcılar, Nvidia'nın Windows uygulamasındaki kaydırıcı sayesinde birleşik belleğin ne kadarının GPU'ya tahsis edileceğini manuel olarak ayarlayabiliyor; bu özellikle 24 GB veya 32 GB RAM'li cihazlarda performans dengesi kurmak için faydalı. Microsoft, güç ve performans dengesi, pil ömrü uzatımı ve aynı anda oyun oynarken video renderlama gibi çoklu görev senaryoları için bellek ayarlarını optimize etti. Oyun desteği açısından, anti-cheat entegrasyonları ve Nvidia'nın RTX teknolojisiyle DLSS destekli 1440p çözünürlükte çoğu oyunda 60 fps hedefleniyor.\n\nWindows'un arayüz iyileştirmeleri de bu platforma özel olarak yeniden tasarlandı. Yeni Windows Search arayüzü, hızlı eylemler ve Bluetooth kontrolü gibi özelliklerle bir launcher işlevi kazanıyor. Ancak Copilot Plus PC özellikleri, örneğin Recall, RTX Spark cihazlarında henüz kullanıma sunulmadı ve 2027'ye kadar gecikmesi bekleniyor. Bu güncellemeler, AI odaklı iş akışları ve mobil oyun deneyimlerini birleştiren bir Windows ekosistemi yaratma vizyonunu destekliyor.",
+  "onemli_maddeler": [
+    "RTX Spark dizüstü bilgisayarlar ARM CPU ve Blackwell GPU ile birleşik bellek mimarisi sunuyor",
+    "Windows, AI ajanları için iki tıklamalı Get Started deneyimi ekledi",
+    "Prism emülatörü RTX Spark mikro mimarisine göre yeniden optimize edildi",
+    "128 GB birleşik bellek ve GPU bellek ayırma kaydırıcısı kullanıcıya sunuldu",
+    "Oyunlar DLSS ve 1440p'de 60 fps hedefiyle destekleniyor"
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Windows'un RTX Spark platformu için yaptığı derinlemesine optimizasyonlar, ARM tabanlı AI dizüstü bilgisayarların performansını ve kullanılabilirliğini artırarak hem geliştiricileri hem de son kullanıcıları etkileyen kritik bir güncelleme niteliği taşıyor.",
+  "etiketler": [
+    "Windows",
+    "Nvidia",
+    "RTX Spark",
+    "AI",
+    "Gaming"
+  ],
+  "anilan_modeller": [
+    "Hermes",
+    "Perplexity",
+    "OpenClaw"
+  ],
+  "yorum_tr": "Windows'un RTX Spark için yaptığı bu kapsamlı güncellemeler, AI odaklı uygulamaların masaüstü ortamına entegrasyonunu hızlandırırken, ARM tabanlı cihazların oyun ve çoklu görev performansını da önemli ölçüde iyileştiriyor. Geliştiriciler, daha tutarlı emülasyon ve bellek yönetimi sayesinde yeni nesil uygulamaları daha az çaba ile hedef platforma taşıyabilecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/08/STK109_WINDOWS_A.jpg?quality=90&strip=all&crop=0,0,100,100",
+  "url": "https://www.theverge.com/tech/1011996/microsoft-windows-rtx-spark-platform-changes-notepad",
+  "source": "The Verge AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-15T14:30:00.000Z",
+  "slug": "how-windows-is-being-optimized-for-nvidia-s-rtx-spark-laptop"
+}

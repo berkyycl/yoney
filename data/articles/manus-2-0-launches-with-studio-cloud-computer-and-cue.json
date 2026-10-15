@@ -1,0 +1,61 @@
+{
+  "baslik_tr": "Manus 2.0: Studio, Cloud Computer ve Cue ile Yeni Nesil AI Ajans Platformu",
+  "ozet_tr": "Manus, web, masaüstü ve mobilde Manus 2.0'ı tanıttı; yeni ajan mimarisi, her zaman açık altyapı ve yeniden tasarlanmış çalışma ortamı ile yaratıcı üretimi hızlandırıyor. Yeni Cue uygulaması kişisel ajanları telefon ve masaüstüne taşıyarak mesaj, arama ve ödeme yönetimini tek bir bütçe içinde sunuyor.",
+  "detayli_icerik_tr": "Manus, 2.0 sürümüyle birlikte Cascade adlı yeni ajan çerçevesini tanıttı. Bu çerçeve, ihtiyaç duyulduğunda uzman yetenekleri yükleyerek projelerdeki brifing, sayfa, video ve otomasyonları tek bir proje altında tutuyor. Şirket, yapılan bir testte yeni sistemin %23,2 daha az token kullandığını, görevleri %28,2 daha hızlı tamamladığını ve maliyeti %32 oranında azalttığını belirtti.\n\nYeni platform, Cloud Computer adı verilen satın alınabilir, sürekli çevrimiçi kalması gereken projeler için özel bir ortam sunuyor. Kullanıcılar, e-posta, reklam performans değişiklikleri, takvim etkinlikleri, Slack mesajları veya Notion güncellemeleri gibi hizmetlerden gelen olaylarla otomasyonları tetikleyebiliyor; tetikleyici ve görev tek bir istemle tanımlanıyor.\n\nMasaüstü uygulaması Manus Studio olarak yeniden tasarlandı ve belgeler, web siteleri, kod, oyun ve video gibi çeşitli içerik türlerinde insan ve AI iş birliğine olanak tanıyan ortak bir çalışma alanı sağlıyor. Video Editörü, klip, resim, metin, hareketli grafik ve sesleri düzenlenebilir bir zaman çizelgesinde birleştirerek, kullanıcıların değişiklikleri yapıp ardından AI'dan devam etmesini istiyor. Alchemy modu, video ve kod üretimini tek bir yaratıcı yönlendirme altında birleştiriyor.\n\nManus 2.0 ayrıca oyun geliştirmeyi de basitleştiriyor; video, görsel ve kod modelleri bir arada çalışıyor ve Max Ultra modu gibi yüksek performans seçenekleri sunuluyor. Kullanıcılar, oynanabilir şablonlardan başlayıp varlıkları ve kodu bir Edit panelinde yöneterek oyunları web üzerinde yayınlayabiliyor. Çok oyunculu projeler için satın alınabilir Cloud Computer üzerinden barındırma ve ağ hizmetleri otomatik olarak sağlanıyor.\n\nYeni Cue uygulaması, kişisel ajanları telefon ve masaüstü cihazlarda çalıştırarak e-posta, telefon numarası, cüzdan ve bilgisayar gibi kaynakları her bir ajana atıyor. Bu ajanlar, belirlenen bütçe dahilinde mesajları, aramaları ve ödemeleri yönetebiliyor ve özetler sunabiliyor. Birden fazla ajan grup sohbetinde koordineli çalışabiliyor; örnek senaryolar arasında QR kodlu restoran siparişleri ve sırada yer tutma bulunuyor. Cue, davet kodu MEETCUE ile sınırlı ücretsiz erken erişim aşamasında ve iOS sürümü App Store onayını bekliyor.",
+  "onemli_maddeler": [
+    "Cascade mimarisi sayesinde uzman yetenekler sadece ihtiyaç anında yükleniyor, token tüketimi %23,2 azaldı.",
+    "Cloud Computer, sürekli çevrimiçi kalması gereken projeler ve çok oyunculu oyunlar için satın alınabilir özel ortam sağlıyor.",
+    "Manus Studio, video ve kod üretimini tek bir yaratıcı akışta birleştiren Alchemy modu ile içerik üretimini hızlandırıyor.",
+    "Cue, kişisel ajanları telefon ve masaüstüne taşıyarak mesaj, arama ve ödeme yönetimini tek bir bütçe içinde sunuyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Manus 2.0, AI destekli yaratıcı üretim, oyun geliştirme ve kişisel ajan yönetiminde yeni altyapı ve araçlar sunarak sektördeki iş akışlarını ve maliyet verimliliğini önemli ölçüde iyileştiriyor.",
+  "etiketler": [
+    "AI ajans",
+    "yaratıcı otomasyon",
+    "cloud computing",
+    "video editörü",
+    "kişisel ajan"
+  ],
+  "anilan_modeller": [
+    "Manus 2.0"
+  ],
+  "yorum_tr": "Manus 2.0'ın getirdiği daha verimli ajan mimarisi ve entegre yaratıcı araçlar, geliştiricilerin ve içerik üreticilerinin iş akışlarını hızlandırırken maliyetleri düşürerek rekabet avantajı sağlayacak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Manus 2.0",
+      "benchmark": "Token usage reduction",
+      "skor": 23.2,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "one test used 23.2% fewer tokens"
+    },
+    {
+      "model": "Manus 2.0",
+      "benchmark": "Task completion speed increase",
+      "skor": 28.2,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "finished tasks 28.2% faster"
+    },
+    {
+      "model": "Manus 2.0",
+      "benchmark": "Cost reduction",
+      "skor": 32,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "cost 32% less than its previous system"
+    }
+  ],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/09/banner-original.webp",
+  "url": "https://www.testingcatalog.com/manus-2-0-launches-with-studio-cloud-computer-and-cue/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-09-29T14:15:50.000Z",
+  "slug": "manus-2-0-launches-with-studio-cloud-computer-and-cue"
+}

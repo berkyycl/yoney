@@ -1,0 +1,53 @@
+{
+  "baslik_tr": "ElevenLabs, Eleven v4 ve v4 Turbo Ses Modellerini Tanıttı",
+  "ozet_tr": "ElevenLabs, metin‑okuma kalitesine odaklanan Eleven v4 ve gerçek‑zamanlı uygulamalar için tasarlanmış Eleven v4 Turbo modellerini duyurdu. Yeni mimari, çoklu dil, duygu ve ses efekti desteğiyle 10.000 karaktere kadar uzun metinlerde tutarlı bir akış sağlıyor. Turbo sürümü ise 100 ms ortalama çıkarım gecikmesi ve 150 ms ilk ses üretim süresiyle sesli asistan ve çağrı uygulamalarına yöneliyor.",
+  "detayli_icerik_tr": "ElevenLabs, en yeni metin‑ses sentez modelleri Eleven v4 ve Eleven v4 Turbo'yu piyasaya sürdü. Eleven v4, ses kalitesine öncelik veren bir model olarak, konuşmacı kimliği, bağlam ve duygusal ton gibi unsurları dikkate alarak metni okuyor. Model, 90'dan fazla dili, çoklu konuşmacı seçeneklerini, ses efektlerini ve geniş bir duygu yelpazesini destekliyor; yazarlar [laughs], [whispers] gibi doğal‑dil etiketlerini doğrudan senaryoya ekleyebiliyor.\n\nYeni mimari, uzun metinlerde bağlam dikişi (context stitching) sayesinde akıcılığı koruyor ve her üretim 10.000 karaktere kadar uzayabiliyor. Konuşmacı kararlılığı özelliği, bir satır yeniden üretildiğinde ses kaymasının önüne geçiyor; ayrıca Profesyonel Ses Klonları v3'te geçici olarak kaldırıldıktan sonra v4'te yeniden sunuluyor. Şirketin 17.500'den fazla ses kütüphanesindeki tüm sesler v4 ile uyumlu, ancak eski Instant ve Professional Voice Clone'ların yeniden eğitilmesi gerekiyor.\n\nEleven v4 Turbo, çift yönlü akış (bidirectional streaming) yeteneğiyle geliştiricilerin metni model üretirken göndermesine ve cümle tamamlanmadan ses almasına olanak tanıyor. Turbo, v4'ün ifade kontrolünü korurken aynı Profesyonel Ses Klonunu çağrı sırasında da kullanabiliyor. Performans testlerinde Turbo, ilk ses üretim süresinde 150 ms'lik bir medyan değere ulaşırken, rakip Cartesia Sonic 3.6 262 ms ve OpenAI GPT‑4o mini TTS ise 814 ms sürede yanıt veriyor. Çıkarım gecikmesi ise ortalama 100 ms seviyesinde.\n\nHer iki model de ElevenLabs ürünleri ve ElevenAPI üzerinden erişilebilir; Turbo ayrıca ElevenAgents platformunda da sunuluyor. REST, TypeScript ve Python SDK'larıyla hem akışlı hem de akışsız uç noktalar kullanılabiliyor ve tek bir model kimliğiyle geçiş yapılabiliyor. Ücretsiz plan, ayda 10.000 kredi sağlarken, ücretli planlar 6 $'dan başlıyor. Tüm klonlanmış sesler, sahiplerinin doğrulanmış onayı gerektiriyor ve oluşturulan sesler şirketin AI Speech Classifier'ı tarafından denetleniyor.",
+  "onemli_maddeler": [
+    "Eleven v4, 90+ dili, duygu ve ses efekti etiketlerini destekleyerek 10.000 karaktere kadar uzun metinlerde tutarlı okuma sunar.",
+    "Eleven v4 Turbo, çift yönlü akış ve 100 ms ortalama çıkarım gecikmesiyle gerçek‑zamanlı sesli asistan ve çağrı uygulamaları için tasarlandı.",
+    "Turbo, 150 ms medyan ilk ses üretim süresiyle rakiplerinden (Cartesia Sonic 3.6: 262 ms, GPT‑4o mini TTS: 814 ms) daha hızlıdır.",
+    "Her iki model de ücretsiz plan dahil olmak üzere tüm aboneliklerde kullanılabilir; profesyonel ses klonları yeniden sunuldu."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "ElevenLabs'ın yeni nesil TTS modelleri, hem yüksek kalite hem de düşük gecikmeli gerçek‑zamanlı kullanım sunarak ses sentezi pazarında rekabeti yeniden şekillendirebilir.",
+  "etiketler": [
+    "text-to-speech",
+    "voice AI",
+    "real-time",
+    "streaming",
+    "ElevenLabs"
+  ],
+  "anilan_modeller": [
+    "Eleven v4",
+    "Eleven v4 Turbo"
+  ],
+  "yorum_tr": "Bu modeller, yüksek duygusal ifade ve düşük gecikme gerektiren uygulamalarda geliştiricilere daha fazla esneklik sağlayacak; aynı zamanda rekabetçi fiyatlandırma ve ücretsiz kredi imkanı, geniş bir kullanıcı kitlesinin benimsemesini hızlandırabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Eleven v4 Turbo",
+      "benchmark": "median time to first speech",
+      "skor": 150,
+      "birim": "ms",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "median",
+      "kaynak_metinden_alinti": "Turbo reached speech in 150 ms, versus 262 ms for Cartesia Sonic 3.6 and 814 ms for OpenAI GPT-4o mini TTS."
+    },
+    {
+      "model": "Eleven v4 Turbo",
+      "benchmark": "median inference latency",
+      "skor": 100,
+      "birim": "ms",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "median",
+      "kaynak_metinden_alinti": "Turbo adds bidirectional streaming... about 100 ms median inference latency and 150 ms median time to first speech."
+    }
+  ],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/09/banner-25.webp",
+  "url": "https://www.testingcatalog.com/elevenlabs-launches-eleven-v4-and-v4-turbo-voice-models/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-09-28T16:21:46.000Z",
+  "slug": "elevenlabs-launches-eleven-v4-and-v4-turbo-voice-models"
+}

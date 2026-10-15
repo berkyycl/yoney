@@ -1,0 +1,38 @@
+{
+  "baslik_tr": "Mistral AI, Timestral zaman serisi temel modeli ailesini tanıttı",
+  "ozet_tr": "Mistral AI, 209M parametreli en büyük modeliyle GIFT‑Eval, TIME ve fev‑bench gibi üç ana kamu benchmark'inde birinci sırayı elde eden Timestral adlı zaman serisi temel modeli ailesini duyurdu. Model, probabilistik çok değişkenli tahminler sunarken sadece CPU üzerinde çalışabiliyor ve dört farklı boyutta (5M‑209M) sunuluyor.",
+  "detayli_icerik_tr": "Mistral, Timestral'ı zaman serisi verilerinin yaygın olduğu kurumsal ortamlara yönelik olarak geliştirdi. Model, sentetik ön‑eğitim, covariate‑aware attention ve uzun bağlam öğrenimi gibi teknikleri birleştirerek geçmiş ve gelecekteki kovaryantları destekleyen sıfır‑atış (zero‑shot) tahminler yapabiliyor. Dört farklı boyutta sunulan aile, 5M, 28M, 123M ve 209M parametreli modellerden oluşuyor; daha büyük modeller doğrulukta, daha küçük modeller ise hız ve maliyet açısından avantaj sağlıyor.\n\nTimestral, GIFT‑Eval, TIME ve fev‑bench benchmark'lerinde tek bir checkpoint ile, toplu modelleme ve ensemblling kullanmadan birinci sırayı elde etti. 28M modeli, dört kat daha büyük Chronos‑2'yi GIFT‑Eval ve TIME'da geride bırakırken, 209M modeli TimesFM‑3 ve Falcon‑2.0 gibi daha büyük rakipleri daha az parametreyle geçiyor. Model, 8 çekirdekli bir CPU üzerinde bir gün sonrasını 15 dakikalık üç haftalık geçmişten 10 ms (5M) ile 140 ms (209M) arasında tahmin edebiliyor.\n\nUygulama örnekleri arasında endüstriyel tesislerde binlerce sensörün çok değişkenli ve probabilistik tahminleri yer alıyor. Timestral, sensörler arasındaki bağımlılıkları modelleyerek tek tek tahmin yapmaktan kaçınıyor, ayrıca kategorik ve bilinen gelecekteki kovaryantları doğrudan işleyebiliyor. Model, Mistral Forge üzerinden sıfır‑atış kullanımının yanı sıra, özel veri setlerine ince ayar (fine‑tuning) imkanı da sunarak sektörel adaptasyonu destekliyor.\n\nMistral, Timestral'ı açık kaynak GitHub deposu üzerinden erişime açtı ve teknik raporun yakında yayınlanacağını duyurdu. Model, MIT‑benzeri bir lisansla sunuluyor ve hava geçirmez (air‑gapped) ortamlara dahil olmak üzere on‑premise, VPC ve diğer dağıtım seçenekleriyle kullanılabiliyor.",
+  "onemli_maddeler": [
+    "Timestral, 209M parametreyle üç ana zaman serisi benchmark'inde birinci sırada yer alıyor.",
+    "Model, sadece CPU üzerinde çalışarak 5M modelinde 10 ms, 209M modelinde 140 ms gecikme ile tahmin yapabiliyor.",
+    "Dört farklı boyutta (5M‑209M) sunulan aile, doğruluk ve maliyet arasında Pareto optimal denge sağlıyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Zaman serisi tahmininde yeni bir temel model ailesinin duyurulması, sektördeki birçok uygulamayı CPU‑tabanlı, düşük maliyetli ve yüksek doğruluklu çözümlerle dönüştürme potansiyeline sahip olduğu için kritik bir gelişmedir.",
+  "etiketler": [
+    "time series",
+    "forecasting",
+    "Mistral AI",
+    "foundation model",
+    "CPU inference"
+  ],
+  "anilan_modeller": [
+    "Timestral 5M",
+    "Timestral 28M",
+    "Timestral 123M",
+    "Timestral 209M",
+    "Chronos-2",
+    "TimesFM-3",
+    "Falcon-2.0"
+  ],
+  "yorum_tr": "Timestral, zaman serisi tahmininde GPU bağımlılığını ortadan kaldırarak daha geniş bir kullanıcı kitlesine erişim sağlıyor ve sıfır‑atış performansıyla sektörde yeni bir standart oluşturabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://mistral.ai/cms-media/api/media/file/og-timestral.webp",
+  "url": "https://mistral.ai/news/timestral",
+  "source": "Mistral AI",
+  "sourceTier": "resmi",
+  "date": "2026-10-15T12:00:00.000Z",
+  "slug": "introducing-timestral"
+}

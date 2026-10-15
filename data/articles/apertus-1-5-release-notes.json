@@ -1,0 +1,43 @@
+{
+  "baslik_tr": "Apertus 1.5: Açık Ağırlıklı 8B ve 70B Modellerine Görüntü, Ses ve Uzun Bağlam Desteği",
+  "ozet_tr": "Swiss AI ekibi, Apertus 1.5 sürümünü duyurdu. 8B ve 70B modelleri, görüntü‑ses işleme, düşünme modu, 262k token uzunluğunda bağlam penceresi ve geliştirilmiş talimat takibi gibi özelliklerle güncellendi; ağırlıklar Apache 2.0 lisansı altında açık kaynak olarak sunuluyor.",
+  "detayli_icerik_tr": "Swiss‑AI projesi, Apertus 1.5 sürümüyle 8 milyar ve 70 milyar parametreli modellerine multimodal yetenekler ekledi. Görüntüler Emu3.5 tokenizatörüyle, ses ise WavTokenizer ile metin dizisine aynı anda ekleniyor; bu sayede model fotoğraf, diyagram ve sesli konuşmayı doğrudan anlayabiliyor ancak çıktıyı yalnızca metin olarak üretiyor. \n\nYeni \"thinking mode\" özelliği, modelin yanıt vermeden önce girdiyi içsel olarak değerlendirmesine olanak tanıyor ve özellikle zor mantık problemlerinde performansı artırıyor. Ayrıca bağlam penceresi 8 k token'dan 262 144 token'a çıkarılarak dört kat genişletildi; bu, uzun belgeler ve kod parçaları üzerinde tutarlı yanıtlar alınmasını sağlıyor. \n\nEğitim süreci, Apertus 1.0 üzerine 4 trilyon (8B) ve 2 trilyon (70B) yeni multimodal token eklenerek toplamda 19 trilyon ve 17 trilyon tokenlık bir ön‑eğitim gerçekleştirildi. Veri setleri açık lisanslı, robot.txt dışlamalarına saygılı ve tüm kaynaklar apertus-data-transparency reposunda listelendi. Model, dört aşamalı bir ön‑eğitim (unpaired, paired, cooldown, long‑context) ve beş aşamalı bir post‑eğitim (SFT, uzun‑bağlam SFT, RLVR, DPO, SDPO) geçerek talimat uyumu, araç entegrasyonu ve güvenlik açısından iyileştirildi. \n\nDeğerlendirme sonuçları, Apertus 1.5‑8B'nin aynı boyuttaki açık‑ağırlıklı modelleri IF (instruction‑following) ve çok‑dilli görevlerde geride bırakırken, düşünme modu sayesinde AIME gibi zor mantık benchmark'larında belirgin bir üstünlük sağladığını gösteriyor. Multimodal testlerde ise Gemma 4 12B ve diğer açık modellerle rekabetçi bir performans sergiliyor; özellikle İsviçre Hukuku ve son çeviri benchmark'larında GPT‑OSS‑20B'ye eşdeğer sonuçlar elde edildi. Tüm bu sonuçlar, EvalEval koalisyonu tarafından hazırlanmış Evaluation Card'larda şeffaf bir şekilde raporlanıyor.",
+  "onemli_maddeler": [
+    "Görüntü ve ses girişini erken‑fusion tokenizasyonu ile metinle aynı dizide işleyerek tam multimodal anlayış.",
+    "Düşünme modu (thinking mode) sayesinde mantıksal çıkarım ve zor problem çözümünde performans artışı.",
+    "Bağlam penceresi 262 144 token'a çıkarıldı; uzun belgeler ve kodlar üzerinde tutarlı yanıtlar mümkün.",
+    "Talimat takibi, araç kullanımı ve güvenlik açısından geliştirilmiş SFT, RLVR, DPO ve SDPO aşamaları.",
+    "Açık veri, açık ağırlık ve EvalEval Evaluation Card'larıyla tam şeffaflık ve yeniden üretilebilirlik."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Apertus 1.5, açık kaynaklı büyük dil modellerine multimodal ve uzun‑bağlam yetenekleri ekleyerek sektördeki açık‑ağırlıklı model ekosistemine önemli bir sıçrama sağlıyor; aynı zamanda şeffaf değerlendirme ve lisanslama politikalarıyla araştırma ve uygulama geliştirmeyi hızlandırıyor.",
+  "etiketler": [
+    "multimodal",
+    "open-source",
+    "large-language-model",
+    "Apertus",
+    "AI research"
+  ],
+  "anilan_modeller": [
+    "Apertus-v1.5-8B-base",
+    "Apertus-v1.5-70B-base",
+    "Apertus-v1.5-8B-SFT",
+    "Apertus-v1.5-70B-SFT",
+    "Apertus-v1.5-8B-RLVR",
+    "Apertus-v1.5-70B-RLVR",
+    "Apertus-v1.5-8B-DPO",
+    "Apertus-v1.5-70B-DPO",
+    "Apertus-v1.5-8B (final)",
+    "Apertus-v1.5-70B (final)"
+  ],
+  "yorum_tr": "Apertus 1.5, açık‑ağırlıklı modellerin multimodal ve uzun‑bağlam yeteneklerini birleştirerek araştırmacıların ve geliştiricilerin daha kapsamlı uygulamalar oluşturmasını mümkün kılıyor; aynı zamanda şeffaf benchmark raporları, düzenleyici uyumluluğu ve topluluk katkısını artıracak bir örnek teşkil ediyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://cdn-uploads.huggingface.co/production/uploads/61f1877a168a0b52fda88455/2mHXxCtfos6CgwFSNKFVi.jpeg",
+  "url": "https://huggingface.co/blog/swiss-ai/apertus-v15-release-notes",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-10-15T09:08:45.000Z",
+  "slug": "apertus-1-5-release-notes"
+}

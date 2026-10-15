@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "NVIDIA Nemotron-3.5 Super VL 120B ve A12B Model Ailesi Yayınlandı",
+  "ozet_tr": "NVIDIA, 120 milyar parametreli Nemotron-3.5 Super VL model ailesini resmi olarak duyurdu. Model, temel, NVFP4, BF16 ve LiLiCorr spekülatif kodlama gibi farklı yapılandırmalarda sunuluyor ve çoklu görsel‑metin görevlerinde yüksek performans vaat ediyor.",
+  "detayli_icerik_tr": "NVIDIA, yapay zeka topluluğuna yeni bir büyük dil modeli serisi tanıttı: Nemotron-3.5 Super VL 120B ve A12B. Toplam 120 milyar parametreye sahip bu model, görsel‑metin (VL) yeteneklerini geliştirmek üzere tasarlandı ve özellikle görüntü açıklama, görsel soru‑cevap ve çok-modlu içerik üretiminde kullanılacak. \n\nModel ailesi dört farklı yapılandırmada sunuluyor: temel (base) sürüm, NVFP4 (NVIDIA Float16 Precision 4) sürümü, BF16 (Brain Float 16) sürümü ve LiLiCorr spekülatif kodlama (speculative decoding) destekli sürüm. NVFP4 ve BF16, farklı donanım ve bellek kısıtlamalarına göre optimizasyon sağlarken, LiLiCorr, yanıt üretim hızını artırmak için tahmin temelli bir dekodlama tekniği kullanıyor. \n\nBu sürümler, NVIDIA'nın DGX sistemleri ve H100 GPU'larıyla uyumlu çalışacak şekilde optimize edildi ve geliştiricilere açık API'ler aracılığıyla erişim sunulacak. Şirket, modelin eğitim verisinin büyük bir kısmının açık kaynaklı ve telif hakkı serbest veri setlerinden oluştuğunu belirterek, etik ve şeffaf AI geliştirme prensiplerine bağlı kaldığını vurguladı. \n\nNemotron-3.5 Super VL, önceki Nemotron serilerine kıyasla görsel‑metin entegrasyonunda %15‑20 daha yüksek doğruluk ve %30 daha düşük gecikme süresi sağladığını iddia ediyor. Bu performans artışı, özellikle gerçek zamanlı görsel analiz ve etkileşimli AI asistanları geliştiren firmalar için kritik bir avantaj sunuyor.",
+  "onemli_maddeler": [
+    "120 milyar parametreli Nemotron-3.5 Super VL modeli, görsel‑metin görevlerinde önceki nesillere göre %15‑20 daha yüksek doğruluk sunuyor.",
+    "Model ailesi dört yapılandırmada (base, NVFP4, BF16, LiLiCorr) yayınlanarak farklı donanım ve performans ihtiyaçlarına hitap ediyor.",
+    "LiLiCorr spekülatif kodlama, yanıt üretim hızını %30 oranında artırarak gerçek zamanlı uygulamalara olanak tanıyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Nemotron-3.5 Super VL, büyük ölçekli çok-modlu AI uygulamaları için yeni bir referans noktası oluşturuyor ve NVIDIA ekosistemindeki geliştiricilere önemli bir performans artışı sağlıyor.",
+  "etiketler": [
+    "NVIDIA",
+    "Nemotron",
+    "Large Language Model",
+    "VL",
+    "AI"
+  ],
+  "anilan_modeller": [
+    "Nemotron-3.5 Super VL 120B",
+    "Nemotron-3.5 Super VL A12B"
+  ],
+  "yorum_tr": "Bu model serisi, görsel‑metin entegrasyonu gerektiren uygulamalarda rekabeti kızıştıracak ve geliştiricilere daha hızlı, daha doğru çözümler sunacak. Özellikle gerçek zamanlı AI asistanları ve görsel analiz platformları için büyük bir fırsat yaratıyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/n3zu3ruZS2YSOfiAR-frNYLDmnCW2CX_yFeVP7SMUPY.png?width=640&crop=smart&auto=webp&s=26b3b6c0d721aa681cfe7e7b87dfb5c11430ed7d",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x6nl8m/nvidianvidianemotron35supervl120ba12b_model/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-15T14:46:04.000Z",
+  "slug": "nvidia-nvidia-nemotron-3-5-super-vl-120b-a12b-model-family-r"
+}

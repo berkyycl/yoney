@@ -1,0 +1,92 @@
+{
+  "baslik_tr": "GPT-6-Astra, 50 Fizik Probleminin 49'unu Çözerek %98 Başarı Elde Etti, Maliyeti $2,40",
+  "ozet_tr": "OpenAI'nin yeni modeli GPT-6-Astra, TheoPhysEval adlı yeni benchmarkta 50 teorik fizik sorusundan 49 tanesini doğru yanıtlayarak %98 başarı oranı yakaladı. Ortalama maliyeti soru başına $2,40 olan bu performans, mevcut ticari AI ajanlarının en iyisini geride bıraktı. Araştırmacılar, bu sonuçların teorik fizikte rutin hesaplamaları insan uzmanların seviyesine taşıdığını vurguluyor.",
+  "detayli_icerik_tr": "Uluslararası bir araştırmacı grubu, International Centre for Theoretical Sciences, Harvard, KU Leuven ve Google DeepMind gibi kurumların temsilcileriyle birlikte TheoPhysEval adlı bir benchmark geliştirdi. Benchmark, yayınlanmamış 50 teorik fizik problemi içeriyor; bu problemler, mevcut yöntemlerle hafifçe değiştirilmiş gerçek araştırma sorularından oluşuyor ve cevapları doğrulanabilir. Araştırmacılar, bir uzmanın bu tip bir problemi AI yardımı olmadan bir gün içinde çözebileceğini, komşu alan uzmanlarının ise çok daha uzun süreceğini belirtiyor.\n\nTestlerde, GPT-6-Astra OpenAI Codex ortamında çalıştırıldı ve 49 soruya doğru yanıt vererek %98 başarı elde etti. Ortalama maliyet $2,40 (toplam $116) olarak raporlandı. Model, internet erişimiyle ve erişimsiz iki kez test edildi; internet olmadan da %92 başarı gösterdi. Diğer ticari modeller arasında Anthropic Opus 5.5 %92, Google Gemini 3.8 Flash %68, DeepSeek‑V4.1‑Flash %54 ve GLM 5.3 %42 skorları aldı. En zor sorulardan biri, tüm modelleri şaşırtan ve sadece insan uzmanların çözebildiği bir diferansiyel denklem gerektiren bir problem olarak öne çıktı.\n\nAraştırmacılar, GPT-6-Astra ve benzeri büyük dil modellerinin teorik fizik literatürünün büyük bir kısmını etkili bir şekilde ezberlediğini ve bu sayede rutin hesaplamalarda insan uzmanlarıyla eşdeğer performans sergilediklerini belirtiyor. Ancak, modelin hâlâ \"tat\" ve araştırma yönlendirme yeteneği eksik; yeni problemler tasarlama ve araştırma vizyonu geliştirme konusunda hâlâ insan araştırmacıların gerisinde kalıyor. Bu durum, AI'nın sadece hesaplama aşamasında değil, araştırma sürecinin bütünsel yönlendirilmesinde de ilerleme kaydetmesi gerektiğini gösteriyor.\n\nBu gelişmeler, teorik fizik alanındaki eğitim ve araştırma dinamiklerini de etkileyebilir. Artık birinci yıl doktora öğrencileri için bile bu tür benchmark problemleri çok kolay hale gelebilir, bu da eğitim müfredatının ve araştırma projelerinin yeniden değerlendirilmesini gerektirebilir. Ayrıca, AI destekli hesaplamaların düşük maliyeti, teorik araştırmalarda bütçe ve erişim eşitsizliği konularını da gündeme getiriyor; daha karmaşık problemler için maliyetin hızla artması, kaynakların daha az olan grupların rekabet gücünü azaltabilir.",
+  "onemli_maddeler": [
+    "GPT-6-Astra, 50 teorik fizik sorusundan 49'unu doğru yanıtlayarak %98 başarı oranı yakaladı.",
+    "Ortalama maliyet sadece $2,40 (toplam $116) olup, AI destekli araştırma maliyetlerini önemli ölçüde düşürüyor.",
+    "Diğer ticari modeller Opus 5.5 (%92), Gemini 3.8 Flash (%68), DeepSeek‑V4.1‑Flash (%54) ve GLM 5.3 (%42) skorlarıyla geride kaldı.",
+    "Araştırmacılar, modellerin hâlâ problem seçimi ve araştırma \"tadı\" konusunda insan uzmanlarından eksik olduğunu vurguluyor."
+  ],
+  "kategori": "benchmark",
+  "onem": 5,
+  "onem_gerekce": "GPT-6-Astra'nın teorik fizik hesaplamalarında insan uzman seviyesine ulaşması, AI'nın bilimsel araştırmalardaki rolünü kökten değiştirebilir ve maliyet/erişim dinamiklerini yeniden şekillendirebilir.",
+  "etiketler": [
+    "theophysEval",
+    "GPT-6",
+    "AI physics",
+    "benchmark",
+    "theoretical physics"
+  ],
+  "anilan_modeller": [
+    "GPT-6-Astra",
+    "Opus 5.5",
+    "Gemini 3.8 Flash",
+    "DeepSeek-V4.1-Flash",
+    "GLM 5.3"
+  ],
+  "yorum_tr": "Bu sonuçlar, AI ajanlarının rutin teorik fizik hesaplamalarında insan performansını aşabileceğini gösteriyor; geliştiriciler için daha karmaşık araştırma yönlendirme yeteneklerine odaklanma, kullanıcılar için ise maliyet etkin ve hızlı araştırma imkanı anlamına geliyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GPT-6-Astra",
+      "benchmark": "TheoPhysEval",
+      "skor": 98,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "web erişimiyle",
+      "kaynak_metinden_alinti": "It found the right answer for 49 of 50 problems, or 98 percent, at an average cost of under $3 per problem"
+    },
+    {
+      "model": "GPT-6-Astra",
+      "benchmark": "TheoPhysEval",
+      "skor": 92,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "internet olmadan",
+      "kaynak_metinden_alinti": "Without web search, Astra ... each scored 92 percent"
+    },
+    {
+      "model": "Opus 5.5",
+      "benchmark": "TheoPhysEval",
+      "skor": 92,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Anthropic's Opus 5.5, running in Claude Code, came in second at 92 percent"
+    },
+    {
+      "model": "Gemini 3.8 Flash",
+      "benchmark": "TheoPhysEval",
+      "skor": 68,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Google's Gemini 3.8 Flash scored 68 percent"
+    },
+    {
+      "model": "DeepSeek-V4.1-Flash",
+      "benchmark": "TheoPhysEval",
+      "skor": 54,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "the open-weight models DeepSeek-V4.1-Flash ... reached 54 percent"
+    },
+    {
+      "model": "GLM 5.3",
+      "benchmark": "TheoPhysEval",
+      "skor": 42,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "GLM 5.3 reached 42 percent"
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2025/11/llm_physics.png",
+  "url": "https://the-decoder.com/gpt-6-astra-solves-49-of-50-physics-research-problems-at-2-40-apiece/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-15T15:24:15.000Z",
+  "slug": "gpt-6-astra-solves-49-of-50-physics-research-problems-at-2-4"
+}

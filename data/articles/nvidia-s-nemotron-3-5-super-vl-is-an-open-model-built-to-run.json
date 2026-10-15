@@ -1,0 +1,48 @@
+{
+  "baslik_tr": "Nvidia'nın Nemotron 3.5 Super VL, kurumsal AI ajanlarını kesintisiz çalıştırmak için açık model",
+  "ozet_tr": "Nvidia, 120 milyar parametreli Nemotron 3.5 Super VL adlı açık multimodal modeli duyurdu. Model, sürekli çalışan kurumsal AI ajanları için tasarlandı ve Mixture-of-Experts mimarisi sayesinde her tokende yalnızca 12 milyar parametreyi aktif tutuyor. Ayrıca 24 GB ve 4 GB bellek gerektiren iki sıkıştırılmış Bolt varyantı da aynı anda piyasaya sürülüyor.",
+  "detayli_icerik_tr": "Nvidia, Nemotron 3.5 Super VL'yi özellikle belge analizi, görüntü işleme ve çok adımlı iş akışlarını yöneten AI ajanları için geliştirdi. Model, Mixture-of-Experts (MoE) mimarisiyle 120 milyar parametreden sadece 12 milyarını token başına aktif tutarak yüksek verimlilik sağlıyor ve Nvidia’nın kendi donanımına (Blackwell GPU'lar, DGX Spark vb.) optimum performans sunuyor. Nemotron Koalisyonu – Mistral AI, Thinking Machines Lab, Perplexity ve Black Forest Labs – ile ortaklaşa geliştirilen model, 25 trilyon token üzerinden ön‑eğitim gördü ve ardından 4 milyon örnekle pekiştirme öğrenmesi aldı.\n\nSuper VL, aynı zamanda iki yerel cihaz hedefli Bolt varyantı ile geliyor. Nemotron 3.5 Bolt 74B‑A9B 24 GB, 74 milyar parametreli bir MoE modeli olup sadece 9 milyar parametreyi aktif tutuyor ve 2‑bit kuantizasyonla 24 GB belleğe sığdırılıyor. Daha hafif Bolt E4B 4 GB ise ses asistanları ve etkileşimli karakterler için tasarlandı ve RTX Spark, Jetson ve diğer Nvidia GPU'larında çalışacak şekilde optimize edildi.\n\nPerformans açısından Super VL, Artificial Analysis sıralamasında kapalı modellerin gerisinde kalırken aynı sınıftaki açık modelleri geride bırakıyor. CharXiv görsel‑tablo benchmark'ında %80.8 başarı elde ederken, önceki Nemotron 3 Nano Omni sadece %63 puan almıştı. Kodlama benchmark'ları (SWE‑bench, Terminal‑Bench) üzerinde Ultra modelinden daha yüksek puan alıyor ve aynı görevleri dört kat daha hızlı tamamlıyor. Tek bir GPU’da diğer açık modellerin beş katı throughput ve token üretim hızı sağladığı iddia ediliyor.\n\nNvidia, model ağırlıklarını, sıkıştırılmış 4‑bit versiyonunu, eğitim veri setlerini ve eğitim tariflerini açık kaynak olarak Hugging Face üzerinden sunuyor. Bu sayede şirketler modeli kendi veri setleriyle ince ayar yapabilir, kendi sunucularında çalıştırabilir ve Nvidia’nın NeMo çerçevesi, Python pipeline'ları ve Dynamo inference yazılımı ile entegrasyon sağlayabilir. Ancak yüksek bellek gereksinimi ve Nvidia donanımına özel optimizasyonlar, modeli gerçek anlamda açık tutarken hâlâ Nvidia donanımına bağımlı kılıyor.",
+  "onemli_maddeler": [
+    "Nemotron 3.5 Super VL, 120 milyar parametreli açık multimodal model ve MoE mimarisiyle her tokende sadece 12 milyar parametreyi aktif tutuyor.",
+    "İki sıkıştırılmış Bolt varyantı (74B‑A9B 24 GB ve E4B 4 GB) yerel PC ve kenar cihazlarda AI ajanlarını çalıştırmak için sunuluyor.",
+    "CharXiv benchmark'ında %80.8 başarı elde ederek önceki Nemotron sürümünü %17.8 puanla geride bıraktı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Nemotron 3.5 Super VL, büyük ölçekli açık model olarak kurumsal AI ajanları pazarına yeni bir seçenek getiriyor ve Nvidia’nın donanım ekosistemine entegrasyonla sektörde büyük bir etki yaratması bekleniyor.",
+  "etiketler": [
+    "Nvidia",
+    "Nemotron",
+    "AI ajanları",
+    "açık model",
+    "multimodal"
+  ],
+  "anilan_modeller": [
+    "Nemotron 3.5 Super VL",
+    "Nemotron 3.5 Bolt 74B-A9B",
+    "Nemotron 3.5 Bolt E4B",
+    "Nemotron 3 Ultra",
+    "Nemotron Lightning",
+    "Nemotron Ultra",
+    "Nemotron 3 Nano Omni"
+  ],
+  "yorum_tr": "Nemotron 3.5 Super VL, açık ağırlıklarla yüksek verimlilik sunarak kurumsal AI ajanlarının kendi altyapılarında çalıştırılmasını mümkün kılıyor; bu, veri gizliliği ve maliyet kontrolü açısından geliştiricilere ve büyük işletmelere önemli bir avantaj sağlıyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Nemotron 3.5 Super VL",
+      "benchmark": "CharXiv",
+      "skor": 80.8,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Super VL scores 80.8 percent on the chart benchmark CharXiv, while the older Nemotron 3 Nano Omni hit 63 percent."
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/08/nvidia_logo.png",
+  "url": "https://the-decoder.com/nvidias-nemotron-3-5-super-vl-is-an-open-model-built-to-run-enterprise-ai-agents-nonstop/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-15T16:09:44.000Z",
+  "slug": "nvidia-s-nemotron-3-5-super-vl-is-an-open-model-built-to-run"
+}

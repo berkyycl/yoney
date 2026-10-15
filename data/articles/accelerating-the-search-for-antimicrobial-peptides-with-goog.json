@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "Google Antigravity ve ProtNLM ile Antimikrobiyal Peptit Keşfi Hızlandırıldı",
+  "ozet_tr": "Google DeepMind, yeni nesil bir AI destekli bilim platformu Google Antigravity'i tanıttı. Platform, ProtNLM adlı protein dil modeliyle milyonlarca UniProt kaydını fonksiyonel olarak etiketleyerek, araştırmacıların yeni antimikrobiyal peptitleri günler içinde keşfetmesini sağlıyor.",
+  "detayli_icerik_tr": "Antimikrobiyel direnç, 2050 yılına kadar yılda 10 milyon ölümle sonuçlanabilecek bir küresel tehdit olarak tanımlanıyor. Bu soruna yanıt olarak, Google Antigravity, biyologların genetik ve metagenomik veritabanlarını tek bir oturumda taramasına olanak tanıyan bir ajan tabanlı çalışma tezgahı sunuyor. Platform, özellikle Streptococcus pseudopneumoniae gibi hedef organizmalarda yeni antibiyotik adayları bulmak için tasarlandı.\n\nGoogle'un geliştirdiği ProtNLM (Protein Natural Language Model), amino asit dizilerinin evrimsel \"gramerini\" okuyarak doğrudan fonksiyon tahmini yapabiliyor. Model, UniProtKB/TrEMBL'de yer alan milyonlarca incelenmemiş protein kaydına yüksek güvenilirlikte fonksiyonel etiketler ekleyerek, araştırmacıların \"karanlık madde\" olarak adlandırılan veri yığınını anlamlandırmasını sağlıyor. Bu sayede, daha önce bilinmeyen bir bakteriyosinin (Uniprot ID: A0A0U0D591) 97 amino asit uzunluğunda bir peptit olduğu tespit edildi.\n\nAntigravity içinde yürütülen çok adımlı etkileşimli oturumda, araştırmacı aday peptidi Swiss‑Prot veritabanı ve NCBI‑BLAST hizmetiyle karşılaştırarak benzer bir protein bulunmadığını doğruladı. Ardından, AlphaFold Protein Structure Database'ten alınan 3D modeli, deneysel yapılarla eşleştirildi ve adayın katlanma şeklinin bilinen bir bakteriyosinin katlanmasıyla yüksek benzerlik gösterdiği ortaya kondu. Genomik komşuluk analizi, peptidin bir ABC taşıyıcı operonunun hemen önünde yer aldığını ve bu bölgenin tipik bir bakteriyosin sistemine işaret ettiğini gösterdi.\n\nSon aşamada, AI ajanı bulguları laboratuvar protokolüne dönüştürerek protein ifadesi, antimikrobiyal duyarlılık testi, hedef etkileşimi ve toksisite değerlendirmesi gibi adımları içeren bir deney planı oluşturdu. Bu plan şu anda wet‑lab doğrulama aşamasında ve platformun, günler süren veri toplama ve analiz süreçlerini tek bir oturuma sıkıştırarak biyologların yüksek güvenilirlikli adaylar üzerinde daha fazla zaman harcamasını sağladığı vurgulanıyor. Ayrıca, Antigravity içinde yer alan yeni Biomolecular Structure Viewer, araştırmacı ve AI ajanının 3D yapıyı ortak bir kanvas üzerinde işaretleyip sorular sorabilmesine imkan tanıyor.",
+  "onemli_maddeler": [
+    "ProtNLM, amino asit dizilerinden doğrudan biyolojik fonksiyon tahmini yaparak UniProt'teki milyonlarca bilinmeyen proteine yüksek güvenilirlikte etiketler ekliyor.",
+    "Google Antigravity, veri tabanı sorgulama, 3D yapı analizi ve literatür sentezini tek bir etkileşimli oturumda birleştirerek keşif sürecini günlerden saatlere indiriyor.",
+    "Platform, Streptococcus pseudopneumoniae'den yeni bir bakteriyosin (A0A0U0D591) keşfetti; aday, yapısal ve genomik kanıtlarla destekleniyor ve şu anda laboratuvar doğrulamasına tabi.",
+    "Yeni Biomolecular Structure Viewer, araştırmacı ve AI ajanının 3D yapıyı ortak bir ortamda incelemesini ve anlık geri bildirim almasını sağlıyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "AI destekli bilimsel keşif platformu, antimikrobiyal dirençle mücadelede yeni ilaç adaylarının bulunma süresini dramatik şekilde kısaltarak araştırma verimliliğini artırıyor.",
+  "etiketler": [
+    "antimicrobial peptides",
+    "protein prediction",
+    "AI for biology",
+    "Google Antigravity",
+    "ProtNLM"
+  ],
+  "anilan_modeller": [
+    "ProtNLM"
+  ],
+  "yorum_tr": "Google Antigravity, biyologların veri entegrasyonu ve hipotez testini tek bir ortamda yürütmesini sağlayarak araştırma döngüsünü hızlandırıyor. Bu, hem akademik hem de endüstriyel ilaç keşfi projelerinde maliyet ve zaman tasarrufu anlamına geliyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://lh3.googleusercontent.com/Xgnc_DxAUS2Fs9H2rokxsYwPnnM_KOkPyPtKm7V2C_sjZ7YS4N1-D6lD8wjYIRQoKaiSwHUXB7qmw77m6FCfHLZenWdNymO7B_JLChlB6ied6emR=w528-h297-n-nu-rw-lo",
+  "url": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
+  "source": "Google DeepMind",
+  "sourceTier": "resmi",
+  "date": "2026-10-15T16:08:03.000Z",
+  "slug": "accelerating-the-search-for-antimicrobial-peptides-with-goog"
+}

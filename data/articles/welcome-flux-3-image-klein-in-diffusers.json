@@ -1,0 +1,54 @@
+{
+  "baslik_tr": "FLUX.3 Image Klein Modeli Diffusers’da Yayında: Metin‑Görüntü, Çoklu Referans ve Layout Kontrolü",
+  "ozet_tr": "Black Forest Labs, FLUX.3 Image Klein modelini duyurdu. Model, tek bir Diffusers pipeline'ı içinde metin‑görüntü, çoklu referanslı görüntü‑görüntü ve sınırlı kutu (bounding‑box) tabanlı layout kontrolü sunuyor. Distilled sürümü, 1024×1024 çözünürlükte bir görüntüyü H100 GPU’da yaklaşık 2 saniyede üretebiliyor.",
+  "detayli_icerik_tr": "Black Forest Labs, FLUX.3 Image Klein'i resmi Hugging Face blogunda tanıttı ve modelin Diffusers kütüphanesine ilk günden entegre edildiğini duyurdu. Tek bir model, metin‑görüntü üretiminin yanı sıra birden fazla referans görüntüye dayalı görüntü‑görüntü dönüşümleri ve prompt içine eklenen JSON tabanlı sınırlı kutularla layout kontrolü yapabiliyor. Kullanıcılar, \"<id>\" etiketleriyle tanımlanan bölgelerin konumlarını ve açıklamalarını belirterek nesneleri istediği konuma taşıyabiliyor ya da sahne içinde yeni öğeler ekleyebiliyor.\n\nDistilled checkpoint, 16 adımda 1024×1024 çözünürlükte bir görüntüyü ortalama 1.93 saniyede üretirken, temel checkpoint 50 adım ve sınıflandırıcı‑serbest rehberlik (CFG) ile çalışıyor ve LoRA finetuning için temel model olarak öneriliyor. Model, fp8r (row‑wise FP8) ve nvfp4 gibi iki kuantize varyantta tek dosya formatında sunuluyor; bu sayede daha düşük bellek tüketimi ve farklı GPU mimarileri (Ada, Hopper, Blackwell) için uyumluluk sağlanıyor.\n\nFLUX.3 Image Klein, Qwen3‑VL tabanlı bir metin kodlayıcı kullanıyor ve sekiz farklı katmandan gelen gizli durumları birleştirerek 20.480 boyutlu token vektörleri oluşturuyor. Transformer iki aşamalı bir mimariye sahip: ilk aşamada metin, gürültülü görüntü ve referans görüntüler ayrı bloklarda işleniyor, ikinci aşamada ise tüm akışlar tek bir blokta birleştirilerek karşılıklı dikkat (attention) sağlanıyor. Bu yapı, FLUX.2'deki çift‑akış bloklarından farklı olarak önce bağımsız işleme, ardından bütünleşik işleme odaklanıyor.\n\nPerformans açısından model, tek NVIDIA H100 80 GB GPU’da otomatik CPU offloading olmadan çalıştırıldığında 1024×1024 metin‑görüntü üretiminde 23.8 GiB bellek tüketiyor ve referans görüntü eklenmesiyle süre iki katına çıkıyor. Quantized versiyonlar (fp8r, nvfp4) bellek kullanımını 14‑15 GiB seviyelerine düşürürken, bf16 formatı 18‑20 GiB arasında bir tüketim gösteriyor. Ayrıca Diffusers, DreamBooth tabanlı LoRA eğitim scriptleriyle hem metin‑görüntü hem de görüntü‑görüntü görevleri için özelleştirilmiş adaptörlerin hızlıca eğitilmesine imkan tanıyor.",
+  "onemli_maddeler": [
+    "Metin‑görüntü, çoklu referanslı görüntü‑görüntü ve sınırlı kutu tabanlı layout kontrolünü tek modelde birleştiriyor.",
+    "Distilled checkpoint, 1024×1024 çözünürlükte bir görüntüyü H100 GPU’da yaklaşık 2 saniyede üretebiliyor.",
+    "fp8r ve nvfp4 gibi kuantize varyantlar sayesinde bellek tüketimi 14‑15 GiB seviyelerine düşüyor.",
+    "Diffusers içinde LoRA finetuning scriptleri sunularak özelleştirilmiş stil ve editörlük çalışmaları kolaylaşıyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "FLUX.3 Image Klein, açık kaynaklı en gelişmiş metin‑görüntü modeli olarak Diffusers entegrasyonu, yeni layout kontrolü ve 2 saniyelik 1024×1024 üretim hızıyla görüntü üretim ekosisteminde büyük bir adım oluşturuyor.",
+  "etiketler": [
+    "FLUX.3",
+    "Diffusers",
+    "layout control",
+    "LoRA",
+    "quantization"
+  ],
+  "anilan_modeller": [
+    "FLUX.3 Image Klein",
+    "FLUX.3 Image Klein Base",
+    "FLUX.3 Image Klein Distilled"
+  ],
+  "yorum_tr": "FLUX.3 Image Klein, geliştiricilere daha esnek kontrol ve hızlı prototipleme imkanı sunarak yaratıcı AI uygulamalarının sınırlarını genişletecek; aynı zamanda kuantize sürümleri düşük bellekli ortamlarda da erişilebilirliği artırıyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "FLUX.3 Image Klein",
+      "benchmark": "Text-to-image generation time (1024×1024, 16 steps, distilled)",
+      "skor": 1.93,
+      "birim": "s",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "16 steps, H100 80GB",
+      "kaynak_metinden_alinti": "Speed End-to-end timings for the distilled checkpoint (16 steps), averaged over three runs after a warmup: Text-to-image 1024 × 1024 1.93 s 23.8 GiB"
+    },
+    {
+      "model": "FLUX.3 Image Klein",
+      "benchmark": "Peak memory after inference (fp8r, H100)",
+      "skor": 16.27,
+      "birim": "GiB",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "fp8r (H100)",
+      "kaynak_metinden_alinti": "Memory name peak allocated (after inference) GiBs fp8r (H100) 14.35 16.27"
+    }
+  ],
+  "gorsel_url": "https://huggingface.co/blog/assets/flux3/thumbnail.png",
+  "url": "https://huggingface.co/blog/flux-3",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-10-15T00:00:00.000Z",
+  "slug": "welcome-flux-3-image-klein-in-diffusers"
+}
