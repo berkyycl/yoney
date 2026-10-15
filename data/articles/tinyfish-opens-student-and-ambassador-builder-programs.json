@@ -1,0 +1,43 @@
+{
+  "baslik_tr": "TinyFish, Öğrenci ve Elçi Builder Programlarını Başlattı",
+  "ozet_tr": "TinyFish, web API’leri üzerinden AI ajanları geliştiren öğrenci ve bağımsız geliştiricilere yönelik iki yeni topluluk programı duyurdu. Öğrenci Programı ve Elçi Programı, katılımcıların gönderdiği projeler üzerinden otomatik terfi ve maddi ödüller almasını sağlıyor.",
+  "detayli_icerik_tr": "TinyFish, web tabanlı AI ajanları için dört temel primitive (arama, sayfa çekme, bulut tarayıcı oturumları ve çok adımlı web otomasyonu) sunan bir API altyapısı geliştirdi ve bu altyapıyı kullanan geliştiricileri desteklemek amacıyla iki yeni topluluk programı başlattı. Öğrenci Programı, .edu e‑posta adresiyle kaydolan tüm üniversite öğrencilerine açık; katılımcılar her onaylanan proje için puan ve hediye kartı kazanıyor, üç onaylı proje sonrası LinkedIn sertifikası ve blogda yer alıyor. En iyi performans gösterenler kampüs lideri olarak seçilerek yerel etkinlik bütçesi ve referans mektupları gibi ek avantajlar elde ediyor.\n\nElçi Programı ise herkesin katılabildiği bir yol haritası sunuyor; katılımcılar Referral Partner olarak başlar, her başarılı kayıt (yeni kullanıcının bir primitive’ı ilk kez çağırması) iki tarafa da 5 $ kredi getiriyor. 50 kayıt sonrası Advocate seviyesine yükselenler, daha yüksek promosyon ve bölgesel elçi davetleri alıyor. 250 kayıt hedefiyle bölgesel elçi statüsü, aylık etkinlikler ve daha büyük bütçeler sağlıyor.\n\nProgramların ortak yönü, her ay tinybounties.com’da yayınlanan görevlerin (brief) alınması, TinyFish dashboard üzerinden kod deposunun gönderilmesi ve TinyFish ekibi tarafından onaylanması. Onaylanan bir “agentic app” 50 puan ve 50 $ hediye kartı, bir “Skill” 20 puan ve 20 $, bir “prompt” ise 10 puan ve 10 $ getiriyor. Başarılı projeler, TinyFish’in açık kaynak yemek kitabında ve kullanım senaryoları sayfalarında geliştiricinin adıyla yayınlanıyor.\n\nTinyFish, bu topluluk girişimlerini, daha önce Mango Capital ile yürüttüğü hızlandırıcı programının ardından, 47 Milyon $ tutarında bir Series A yatırımıyla destekliyor. Şirketin müşterileri arasında Google, Amazon, DoorDash ve Grubhub gibi büyük teknoloji ve hizmet firmaları bulunuyor. TinyFish’in Web Agent’ı, Mind2Web benchmark’ında %89.9 doğruluk oranı elde ederek platformun performansını kanıtladı.",
+  "onemli_maddeler": [
+    "TinyFish, öğrenci ve bağımsız geliştiricilere yönelik iki yeni builder programı başlattı.",
+    "Programlar, onaylanan projeler üzerinden puan, hediye kartı ve kariyer odaklı sertifikalar sunuyor.",
+    "Web Agent, Mind2Web benchmark’ında %89.9 doğrulukla yüksek performans gösterdi.",
+    "Şirket, 47 Milyon $ Series A yatırımı aldı; müşterileri arasında Google ve Amazon gibi devler var."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 3,
+  "onem_gerekce": "Topluluk programları geliştiricileri platforma çekerek ekosistemi genişletiyor, ancak sektörel etkisi henüz sınırlı olduğu için orta seviyede önem verildi.",
+  "etiketler": [
+    "TinyFish",
+    "öğrenci programı",
+    "elçi programı",
+    "AI ajanları",
+    "web API"
+  ],
+  "anilan_modeller": [
+    "Web Agent"
+  ],
+  "yorum_tr": "Bu programlar, yeni nesil AI ajan geliştiricilerini erken aşamada TinyFish ekosistemine entegre etmeyi hedefliyor; başarılı katılımcılar hem maddi hem de profesyonel fayda elde edecek. Uzun vadede platformun benimsenmesi ve topluluk katkısı artarsa, rekabetçi bir avantaj sağlayabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Web Agent",
+      "benchmark": "Mind2Web",
+      "skor": 89.9,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "accuracy",
+      "kaynak_metinden_alinti": "Web Agent reports 89.9 percent accuracy on the Mind2Web benchmark."
+    }
+  ],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/10/Hero-----Big-Fish-A.webp",
+  "url": "https://www.testingcatalog.com/tinyfish-opens-student-and-ambassador-builder-programs/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-01T15:46:36.000Z",
+  "slug": "tinyfish-opens-student-and-ambassador-builder-programs"
+}

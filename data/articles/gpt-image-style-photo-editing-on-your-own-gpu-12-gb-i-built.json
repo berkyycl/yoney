@@ -1,0 +1,52 @@
+{
+  "baslik_tr": "Kokon: Qwen-Image 2.1 ile 12 GB+ GPU’da sıfır kurulumlu fotoğraf düzenleme uygulaması",
+  "ozet_tr": "Kokon, Qwen-Image 2.1 modelini stable-diffusion.cpp altyapısıyla birleştirerek, kullanıcıların Python ortamı kurmadan doğrudan GPU üzerinde fotoğraf düzenlemesi yapmasını sağlıyor. Uygulama, GPU ve bellek miktarını otomatik algılayıp uygun GGUF dosyalarını indiriyor, ardından sürükle‑bırak ve metin tabanlı düzenleme araçlarıyla anında sonuç sunuyor.",
+  "detayli_icerik_tr": "Yerel ortamda Qwen-Image 2.1 çalıştırmak genellikle Python ortamı, node grafiği ve model kuantizasyonu gibi karmaşık adımlar gerektiriyor. Kokon, bu süreci tamamen ortadan kaldırarak tek bir çalıştırma ile GPU tipini tespit ediyor, Qwen-Image 2.1 Turbo Q4_K ve Qwen3‑VL 8B metin kodlayıcısını (~12 GB) otomatik indiriyor ve iş yükünü otomatik olarak VRAM/RAM bölüştürmesi, tiled VAE ve bellek taşması durumunda yeniden deneme gibi ayarlarla yönetiyor.\n\nUygulamanın motoru stable-diffusion.cpp (ggml) olduğu için Python ya da PyTorch bağımlılığı bulunmuyor; CUDA, Vulkan ve Metal sürümleri mevcut. Kullanıcılar metin komutlarıyla ya da fırça aracıyla bir bölgeyi \"Değiştir\", \"Kaldır\", \"Ekle\" gibi işlemlerle düzenleyebiliyor; fırçalanan alan ikinci bir referans görüntüde işaretlenerek modelin görsel bağlamı algılaması sağlanıyor. İşlem geçmişi, önce‑sonra karşılaştırması ve upscaler karşılaştırması gibi özellikler de yer alıyor.\n\nDonanım desteği NVIDIA 12 GB+ GPU'lar (CUDA) için tam, Apple Silicon (Metal, beta) için yaklaşık 4 dakikalık işlem süresi ve AMD/Intel Arc 12 GB+ (Vulkan, beta) için deneysel olarak sunuluyor. Örneğin RTX 5070 Ti 16 GB kartta 1.5K çözünürlükte bir düzenleme ortalama 24 saniye, 2K çözünürlükte ise 40 saniye sürüyor. Kokon ayrıca yerel bir MCP sunucusu ve HTTP API (npx -y kokon-mcp) aracılığıyla generate_image, edit_image, inpaint_image gibi fonksiyonları dış uygulamalara açıyor.\n\nProje GitHub'da AGPL‑3.0 lisansı altında yayınlanmış; Qwen model ağırlıkları ise Qwen Research License (ticari olmayan) kapsamında. Şu an Linux desteği eksik, kod imzalama ve mevcut model dosyalarının otomatik yeniden kullanımı gibi konular geliştirme aşamasında. Topluluk geri bildirimleri ve raporları, uygulamanın ilerleyen sürümlerinde bu eksikleri kapatmayı hedefliyor.",
+  "onemli_maddeler": [
+    "Kokon, Qwen-Image 2.1'i Python ve PyTorch bağımlılığı olmadan, stable-diffusion.cpp üzerinden çalıştırarak yerel fotoğraf düzenlemede devrim yaratıyor.",
+    "Uygulama, GPU tipini otomatik algılayıp uygun GGUF dosyalarını indiriyor ve bellek yönetimini otomatikleştiriyor.",
+    "CUDA, Vulkan ve Metal destekleri sayesinde NVIDIA, Apple Silicon ve AMD/Intel Arc kartlarda çalışabiliyor; RTX 5070 Ti'de 1.5K çözünürlükte 24 saniye gibi düşük gecikme süresi sağlıyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Yerel büyük multimodal modellerin kullanımını basitleştirerek geliştiricilerin ve yaratıcıların GPU kaynaklarını daha verimli kullanmasını sağlıyor; ancak hâlâ Linux desteği eksik ve ticari kullanım sınırlı.",
+  "etiketler": [
+    "Qwen-Image 2.1",
+    "stable-diffusion.cpp",
+    "GPU",
+    "fotoğraf düzenleme",
+    "open-source"
+  ],
+  "anilan_modeller": [
+    "Qwen-Image 2.1 Turbo Q4_K",
+    "Qwen3-VL 8B"
+  ],
+  "yorum_tr": "Kokon, yüksek bellek gereksinimli görsel modelleri yerel ortamda erişilebilir kılarak yaratıcı iş akışlarını hızlandırabilir. Ancak Linux eksikliği ve ticari lisans sınırlamaları, geniş çaplı benimsenmesini kısıtlayabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen-Image 2.1 Turbo Q4_K",
+      "benchmark": "Edit latency (1.5K resolution)",
+      "skor": 24,
+      "birim": "s",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "RTX 5070 Ti 16 GB, CUDA",
+      "kaynak_metinden_alinti": "RTX 5070 Ti 16 GB: ~24 s per edit at 1.5K"
+    },
+    {
+      "model": "Qwen-Image 2.1 Turbo Q4_K",
+      "benchmark": "Edit latency (2K resolution)",
+      "skor": 40,
+      "birim": "s",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "RTX 5070 Ti 16 GB, CUDA",
+      "kaynak_metinden_alinti": "~40 s for a native 2K edit"
+    }
+  ],
+  "gorsel_url": "https://external-preview.redd.it/eDlkd3BrZ2J0Z3ZoMZ_ICpcWQjX7Kgx27LXoF3NLqNmSPK7-vR430MJOY6HK.png?width=640&crop=smart&auto=webp&s=324b00a84c379279c117126b163e452b5dfad7bb",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x5wyii/gptimagestyle_photo_editing_on_your_own_gpu_12_gb/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-14T17:10:15.000Z",
+  "slug": "gpt-image-style-photo-editing-on-your-own-gpu-12-gb-i-built"
+}

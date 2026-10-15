@@ -1,0 +1,43 @@
+{
+  "baslik_tr": "Pi Agent'ta LFM2.5-24B-A2B Modelinden Çok Etkilendim",
+  "ozet_tr": "Kullanıcı, LiquidAI'nin yeni LFM2.5-24B-A2B modelini Pi Agent içinde test ederek yüksek hız ve düşük bellek tüketimini vurguladı. Model, 95 tps sürdürülebilir performans ve 30 GB VRAM ile 128 k bağlam desteği sunuyor.",
+  "detayli_icerik_tr": "Reddit topluluğu üyesi Thrumpwart, LiquidAI'nin yeni LFM2.5-24B-A2B modelini indirip Pi Agent içinde denediğini ve beklentileri aşan bir performans sergilediğini belirtti. Kullanıcı, daha önce Ornith 1.5-35B modelini çeşitli iş akışlarında, özellikle AI-Council içinde Pi Agent ile kullandığını ve bu modelin güvenilir, içgörü sağlayan bir \"çalışkan\" olduğunu ifade etti.\n\nLFM2.5-24B-A2B modelini Ornith'in yerine birkaç iş akışına entegre eden Thrumpwart, modelin çok iyi bir hız sunduğunu rapor etti: ROCm destekli AMD W7900 GPU üzerinde llama.cpp'in en yeni sürümünde yaklaşık 95 token/saniye (tps) sürdürülebilir bir performans elde edildi. Modelin Q8 kuantizasyonu, tam 128 k bağlamda 30 GB VRAM tüketiyor ve bu da büyük bağlamları işleyebilme kapasitesini gösteriyor.\n\nKullanıcı, modelin mekanik görevlerde ve uzun süren yinelemeli işlemlerde sorunsuz çalıştığını, \"görevleri bitirmeden durmayan\" bir dayanıklılık sergilediğini vurguladı. Ayrıca, daha karmaşık içgörü gerektiren AI-Council modunda da performansını daha uzun vadeli testlerle değerlendireceğini ve sonuçları paylaşacağını belirtti.\n\nThrumpwart, LiquidAI ekibine teşekkür ederek, bu modelin kendi \"chonky boi\" (büyük GPU) üzerinde sıkça kullanılacağını ve düşük maliyetli (CAD 0,02) bir seçenek olarak diğer kullanıcıların da denemesini önerdi.",
+  "onemli_maddeler": [
+    "LFM2.5-24B-A2B modeli, ROCm destekli AMD W7900 GPU'da llama.cpp ile yaklaşık 95 tps sürdürülebilir hız sağlıyor.",
+    "Model, Q8 kuantizasyonunda tam 128 k bağlamda 30 GB VRAM tüketiyor.",
+    "Kullanıcı, modeli Ornith 1.5-35B yerine geçerek uzun süren görevlerde sorunsuz ve dayanıklı buldu."
+  ],
+  "kategori": "benchmark",
+  "onem": 3,
+  "onem_gerekce": "Kullanıcı deneyimi ve sayısal performans verileri topluluk içinde ilgi çekiyor, ancak resmi bir model duyurusu ya da geniş çaplı benchmark sonuçları olmadığı için etkisi sınırlı.",
+  "etiketler": [
+    "LiquidAI",
+    "LFM2.5-24B-A2B",
+    "Pi Agent",
+    "llama.cpp",
+    "ROCm"
+  ],
+  "anilan_modeller": [
+    "LFM2.5-24B-A2B",
+    "Ornith 1.5-35B"
+  ],
+  "yorum_tr": "Bu performans raporu, düşük bellek tüketimi ve yüksek hız gerektiren geliştiriciler için LFM2.5-24B-A2B modelinin cazip bir alternatif olduğunu gösteriyor. Ancak, daha kapsamlı benchmark testleri ve farklı donanım konfigürasyonlarıyla doğrulama yapılması gerekiyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "LFM2.5-24B-A2B",
+      "benchmark": "tokens per second (tps) in llama.cpp",
+      "skor": 95,
+      "birim": "tps",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "ROCm on AMD W7900",
+      "kaynak_metinden_alinti": "It's very fast (~95 tps sustained in llama.cpp using ROCM on an AMD W7900 - latest llama.cpp build)."
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/qwen-3-8-flash-next-deepseekv4-flash-and-time-v0-6sfknxjkohvh1.png?width=640&crop=smart&auto=webp&s=13caa25fcca60b49e8adcb19e7116bc7a035edac",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x68qma/very_impressed_with_lfm2524a2b_in_pi_agent/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-15T01:22:04.000Z",
+  "slug": "very-impressed-with-lfm2-5-24-a2b-in-pi-agent"
+}

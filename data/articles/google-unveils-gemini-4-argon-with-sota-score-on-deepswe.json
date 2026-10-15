@@ -1,0 +1,89 @@
+{
+  "baslik_tr": "Google, Gemini 4 Argon modelini DeepSWE'de SOTA puanla tanıttı",
+  "ozet_tr": "Google, uzun vadeli akıl yürütme ve karmaşık iş akışları için tasarlanmış yeni Gemini 4 Argon modelini duyurdu. Model, DeepSWE v1.1 testinde %77.9'luk skorla en yüksek performansı gösterirken, fiyatlandırma ve token limitleri açısından da önemli yenilikler sunuyor.",
+  "detayli_icerik_tr": "Google, Gemini 4 Argon'ı \"frontier\" bir model olarak tanıttı ve özellikle yazılım mühendisliği, kurumsal bilgi işleri ve siber güvenlik savunması gibi uzun ve karmaşık iş akışlarında derin akıl yürütme yeteneği sağlamak için geliştirdi. İlk etapta model, Google'ın Fairwind Programı kapsamında güvenilir siber savunuculara sunulacak; aynı zamanda ABD hükümetinin gönüllü ön erişim sürecine de katılıyor. Geniş erişim, API müşterileri ve Google AI Ultra aboneleri için ücretli bir planla yakında kullanılabilir hâle gelecek.\n\nFiyatlandırma açısından Argon, tanıtım döneminde giriş fiyatı olarak girdi token başına 2 $, çıktı token başına 10 $ uygulanacak ve önbelleğe alınmış giriş tokenları %95 indirimli olacak. Tanıtım süresi sonunda fiyatlar sırasıyla 4 $ ve 20 $'a yükseliyor. Modelin çıktı limiti de 64 K'dan 1 M tokena çıkarılarak tek bir akışta yüz binlerce token üretme kapasitesi sağlandı.\n\nPerformans bakımından Gemini 4 Argon, DeepSWE v1.1 testinde %77.9'luk skorla birincilik elde etti ve aynı zamanda Text Arena'da 1525 puanla birinci, Code Arena (WebDev) bölümünde ise 1679 puanla sekizinci sırada yer aldı. Vals Index'te birinci konumda bulunmasının yanı sıra Zapier AutomationBench'te %51.3, uzun‑video LVBench'te %91.7 ve CWE‑bench v1'de %68 başarı gösterdi. Model, bir yayınlanmış kuantum algoritması optimizasyonu temelini %40 daha hızlı geçerek veri merkezi bellek optimizasyonlarıyla 300 TiB'den fazla tasarruf sağladı; toplamda 500 TiB‑1 PiB arasında tasarruf öngörülüyor.\n\nGoogle içindeki binlerce çalışan, Argon'u kodlama, araştırma ve metin üretiminde aktif olarak kullanıyor. Model, C/C++ kodlarını Rust'a taşıma, Fuchsia Zircon çekirdeği gibi kritik sistemlerde otomatik ve manuel denetimlerle güvenli geçişler yapma, libgav1 video kod çözücüsündeki SIMD kodlarını Rust'a çevirerek %2.7 daha hızlı çalıştırma gibi görevlerde başarı sağladı. Siber güvenlikte ise Argon, Wiz'in \"Scan for Good\" programı aracılığıyla kritik bir sağlık yazılımı açığını tespit ederek önceki modellerin kaçırdığı bir riski ortaya çıkardı.",
+  "onemli_maddeler": [
+    "Gemini 4 Argon, DeepSWE v1.1 testinde %77.9'luk SOTA skorla birincilik elde etti.",
+    "Tanıtım döneminde token fiyatları girdi için 2 $, çıktı için 10 $ olarak belirlendi; ardından 4 $/4 $'a yükseliyor.",
+    "Modelin çıktı limiti 64 K'dan 1 M tokena çıkarılarak uzun akışlarda yüz binlerce token üretme imkanı sağlandı.",
+    "Bellek optimizasyonlarıyla 300 TiB'den fazla tasarruf ve kod dönüşümlerinde %2.7 performans artışı sağlandı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Gemini 4 Argon, uzun vadeli akıl yürütme yeteneği, geniş token limiti ve bir dizi kritik benchmarkta lider performansıyla yapay zeka alanında sektörel bir dönüm noktası oluşturuyor.",
+  "etiketler": [
+    "Gemini 4 Argon",
+    "DeepSWE",
+    "AI benchmark",
+    "software engineering",
+    "cybersecurity"
+  ],
+  "anilan_modeller": [
+    "Gemini 4 Argon",
+    "GPT-6 Astra"
+  ],
+  "yorum_tr": "Bu model, geliştiricilere daha uzun ve karmaşık görevleri tek bir oturumda çözme imkanı sunarak üretkenliği artırırken, düşük maliyetli token fiyatları da geniş çaplı benimsenmesini teşvik edecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Gemini 4 Argon",
+      "benchmark": "DeepSWE v1.1",
+      "skor": 77.9,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "long-horizon software engineering",
+      "kaynak_metinden_alinti": "The model scored 77.9% on DeepSWE v1.1 for long-horizon software engineering"
+    },
+    {
+      "model": "Gemini 4 Argon (High)",
+      "benchmark": "Text Arena",
+      "skor": 1525,
+      "birim": "points",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Gemini 4 Argon (High) by @GoogleDeepMind just landed #1 in Text Arena with 1525 pts"
+    },
+    {
+      "model": "Gemini 4 Argon (High)",
+      "benchmark": "Code Arena: WebDev",
+      "skor": 1679,
+      "birim": "points",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "#8 in Code Arena: WebDev with 1679 pts"
+    },
+    {
+      "model": "Gemini 4 Argon",
+      "benchmark": "Zapier AutomationBench",
+      "skor": 51.3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "scored 51.3% on Zapier’s AutomationBench"
+    },
+    {
+      "model": "Gemini 4 Argon",
+      "benchmark": "LVBench (long-video)",
+      "skor": 91.7,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "reached 91.7% on the long-video LVBench test"
+    },
+    {
+      "model": "Gemini 4 Argon",
+      "benchmark": "CWE-bench v1",
+      "skor": 68,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "tied for first on CWE-bench v1 with 68%"
+    }
+  ],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/09/banner-30.webp",
+  "url": "https://www.testingcatalog.com/google-unveils-gemini-4-argon-with-sota-score-on-deepswe/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-09-30T20:33:39.000Z",
+  "slug": "google-unveils-gemini-4-argon-with-sota-score-on-deepswe"
+}

@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "Microsoft, MAI-Transcribe-2-Streaming ve Yeni Ses Modellerini Tanıttı",
+  "ozet_tr": "Microsoft AI, gerçek zamanlı konuşma‑metin dönüşümü sunan MAI-Transcribe-2-Streaming modelini duyurdu. Model, 60 dili otomatik algılayarak 100 ms içinde kısmi tahminler üretip, tam metni hızlıca sabitliyor. Aynı paket içinde MAI-Voice-2.1 ve MAI-Voice-2.1-Flash adlı metin‑ses çözümleri de geliştiricilere sunuluyor.",
+  "detayli_icerik_tr": "Microsoft AI, yeni nesil ses yığını MAI‑Transcribe‑2‑Streaming'i tanıttı. Model, hem son hem de ara transkriptlerdeki doğruluk açısından \"Artificial Analysis\" sıralamasında bir numara olarak gösteriliyor. 60 dili otomatik ve kesintisiz algılayabilen sistem, ses alındıktan sadece 100 ms sonra kısmi hipotezler üretip, bağlam genişledikçe bu tahminleri revize ediyor; böylece bir sesli asistan, konuşmacı bitirmeden önce bile işlem yapabiliyor.\n\nModelin performans iddiası, Microsoft'un iç testlerinde rakiplerine kıyasla kelimelerin iki kat daha hızlı ortaya çıkması. Bu hız, gerçek zamanlı dikte ve altyazı uygulamaları için kritik bir avantaj sağlıyor. Kullanım ücreti ise yıl sonuna kadar saat başına 0,54 USD olarak belirlenmiş.\n\nAynı lansmanda tanıtılan MAI‑Voice‑2.1, 23 dil ve 26 yerel ayarda metin‑ses dönüşümü sunuyor. Tek bir konuşmacı kimliği, farklı dillere geçiş yaparken aynı tanıdık ses tonunu koruyor ve yerel aksan ile ifadeleri benimseyebiliyor. Bu özellik, çok dilli eğitim uygulamaları ve asistanların dinlediği dili anında yanıtlamasını mümkün kılıyor. Modelin fiyatı ise bir milyon karakter başına 22 USD.\n\nMAI‑Voice‑2.1‑Flash ise yüksek hacimli ve düşük gecikmeli senaryolar için optimize edilmiş. 150 ms uç‑uç gecikme ile 45 saniyelik ses üretimi sağlarken, standart modele göre %55 daha hızlı çıkarım yapıyor ve maliyet olarak %60 daha ucuz; fiyatı bir milyon karakter başına 15 USD. Her iki ses modeli de birkaç saniyelik referans kaydıyla çok dilli ses klonlamasını destekliyor ve kötüye kullanım önleyici onay mekanizmaları içeriyor.\n\nBu üç model, Microsoft Foundry, MAI Playground, Vercel ve Azure Voice Live üzerinden erişilebilecek; OpenRouter üzerinden sadece ses modelleri sunuluyor. Ayrıca OpenAI Realtime uyumlu WebSocket API ve Azure Speech SDK entegrasyonları da mevcut. Geliştiriciler, bu yığını kullanarak sesli ajanların dinleme, akıl yürütme, araç çağırma ve konuşma adımlarını doğal bir diyalog akışı içinde gerçekleştirmesini sağlayabilecek.",
+  "onemli_maddeler": [
+    "MAI-Transcribe-2-Streaming, 60 dili otomatik algılayarak 100 ms içinde kısmi transkript üretip, gerçek zamanlı konuşma akışını hızlandırıyor; fiyatı saat başına 0,54 USD.",
+    "MAI-Voice-2.1, 23 dil ve 26 yerel ayarda tek bir konuşmacı kimliğiyle çok dilli ses sentezi yapabiliyor; maliyeti bir milyon karakter başına 22 USD.",
+    "MAI-Voice-2.1-Flash, 150 ms uç‑uç gecikme, %55 daha hızlı çıkarım ve %60 daha düşük maliyetle yüksek hacimli senaryolara odaklanıyor; fiyatı bir milyon karakter başına 15 USD."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Gerçek zamanlı konuşma‑metin ve çok dilli metin‑ses çözümlerini aynı paket içinde sunan yeni modeller, geliştiricilerin sesli asistan ve altyazı uygulamalarını yeniden tasarlamasını sağlayacak kritik bir adım.",
+  "etiketler": [
+    "konuşma tanıma",
+    "metin‑ses",
+    "gerçek‑zaman",
+    "Microsoft",
+    "yapay zekâ"
+  ],
+  "anilan_modeller": [
+    "MAI-Transcribe-2-Streaming",
+    "MAI-Voice-2.1",
+    "MAI-Voice-2.1-Flash"
+  ],
+  "yorum_tr": "Bu model serisi, düşük gecikmeli ve çok dilli ses işleme ihtiyacını karşılayarak bulut tabanlı sesli asistanların performansını artıracak; geliştiriciler hem maliyet hem de hız açısından daha rekabetçi çözümler elde edecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/10/MAI-Playground-Microsoft-AI-10-01-2026_08_14_PM.jpg",
+  "url": "https://www.testingcatalog.com/microsoft-launches-mai-transcribe-2-streaming/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-02T15:30:41.000Z",
+  "slug": "microsoft-launches-mai-transcribe-2-streaming"
+}
