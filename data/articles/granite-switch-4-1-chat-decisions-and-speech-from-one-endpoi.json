@@ -1,0 +1,37 @@
+{
+  "baslik_tr": "Granite Switch 4.1: Tek Uçtan Nokta Üzerinde Sohbet, Karar ve Konuşma Yeteneği",
+  "ozet_tr": "IBM'in yeni Granite Switch 4.1 serisi, 8 B ve 30 B parametreli modelleriyle karar‑aLoRA, Guardian aLoRA ve en hızlı OpenASR sıralamalı ses‑tanıma motorunu tek bir uç noktada birleştiriyor. KV önbelleği yeniden kullanılabilirliği sayesinde aynı GPU belleğinde çoklu görevler sorunsuzca çalıştırılabiliyor.",
+  "detayli_icerik_tr": "Granite Switch projesi, geçen baharda tanıtılan modüler mimarinin üzerine yeni bir katman ekleyerek 4.1 sürümünü piyasaya sürdü. Granite‑Switch‑4.1‑8B ve Granite‑Switch‑4.1‑30B modelleri, genel amaçlı karar‑aLoRA, güvenlik odaklı Guardian aLoRA ve OpenASR lider tablosunda en hızlı konumda yer alan Granite‑Speech‑5.0‑Turbo‑CTC ses‑tanıma adaptörünü içeriyor. Bu üç adaptör, temel modelin VRAM tüketimini artırmadan aynı GPU belleğinde çalıştırılabiliyor, bu da daha az donanım ile daha fazla işlevsellik anlamına geliyor.\n\nYeni Decision aLoRA, sistem‑one gibi genel karar verme senaryolarında kullanılabiliyor ve Jev 1.13, Microsoft‑Decision‑1, GPT‑Luna‑Decisions ve Clef‑Flash gibi mevcut karar modellerini güvenlik‑odaklı görevlerde geride bırakıyor. Guardian aLoRA, özellikle riskli sınıflandırma problemlerinde üstün doğruluk sağlarken, KV önbelleği paylaşımı sayesinde bir kez oluşturulan önbellek, sonraki adaptör tabanlı karar ve ses işlemlerinde yeniden kullanılabiliyor.\n\nGranite‑Speech‑5.0‑Turbo‑CTC, OpenASR lider tablosunda en hızlı transkripsiyon performansını sergiliyor ve Granite Switch 4.1 modelleri, sesli istekleri gerçek zamanlı olarak metne dönüştürürken aynı anda sohbet, özetleme ve zararlı içerik taraması gibi görevleri tek bir uç noktada yürütebiliyor. Örneğin, Granite‑Switch‑4.1‑8B, ses kaydını anında metne çevirip özet çıkarabilir, 15'ten fazla güvenlik bayrağını kontrol edebilir ve zararlı içerik tespitini aynı anda yapabiliyor.\n\nIBM, bu modüler yapı sayesinde topluluğun kendi adaptörlerini ekleyebileceği bir ekosistem oluşturmayı hedefliyor. Yakında çıkacak Adapter SDK ile geliştiriciler, Mellea platformunda özel aLoRA'lar eğitebilecek ve Granite Switch modellerine entegre edebilecek. Bu, örneğin 3 B parametreli bir Granite modelinin Doom oyununda saniyede 60‑100 karar almasını sağlarken aynı anda sesli anlatım ve sorulara yanıt verebilmesini mümkün kılıyor. IBM, topluluğun kendi sınıflandırma, dil ve oyun adaptörlerini oluşturmasını teşvik ederek model çeşitliliğini ve uygulama alanlarını genişletmeyi planlıyor.",
+  "onemli_maddeler": [
+    "Decision aLoRA ve Guardian aLoRA, güvenlik odaklı karar görevlerinde mevcut en iyi modelleri geride bırakıyor.",
+    "Granite‑Speech‑5.0‑Turbo‑CTC, OpenASR lider tablosunda en hızlı transkripsiyon performansına sahip.",
+    "KV önbelleği paylaşımı sayesinde aynı GPU belleğinde sohbet, karar ve ses görevleri aynı anda çalıştırılabiliyor.",
+    "Adapter SDK ile topluluk kendi aLoRA'larını eğitip Granite Switch modellerine ekleyebilecek."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Granite Switch 4.1, çoklu görev yeteneklerini tek bir uç noktada birleştirerek LLM, karar verme ve ses tanıma alanlarında yeni bir standart belirliyor; aynı zamanda topluluk odaklı adaptör ekosistemiyle genişletilebilirlik sunuyor.",
+  "etiketler": [
+    "Granite Switch",
+    "Decision Adapter",
+    "ASR",
+    "LLM",
+    "IBM"
+  ],
+  "anilan_modeller": [
+    "Granite-Switch-4.1-8B",
+    "Granite-Switch-4.1-30B",
+    "Granite-Speech-5.0-Turbo-CTC",
+    "Decision aLoRA",
+    "Guardian aLoRA"
+  ],
+  "yorum_tr": "Bu sürüm, geliştiricilere tek bir API üzerinden sohbet, karar ve ses işleme yeteneklerini birleştirme imkanı tanıyarak uygulama geliştirme süresini kısaltıyor ve altyapı maliyetlerini düşürüyor; aynı zamanda açık adaptör ekosistemi, inovasyonu hızlandıracak.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://cdn-uploads.huggingface.co/production/uploads/662836b742709fe826510597/gltB0o--PV_Jh0D3aDm8-.png",
+  "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-10-15T20:34:01.000Z",
+  "slug": "granite-switch-4-1-chat-decisions-and-speech-from-one-endpoi"
+}

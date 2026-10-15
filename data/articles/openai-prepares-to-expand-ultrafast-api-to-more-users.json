@@ -1,0 +1,44 @@
+{
+  "baslik_tr": "OpenAI, Ultrafast API'yi Daha Fazla Kullanıcıya Açıyor",
+  "ozet_tr": "OpenAI, DevDay etkinliği öncesinde Ultrafast API modunu genişletmeyi planlıyor. Yeni bir hız seçici sayesinde geliştiriciler, Standard, Fast ve Ultrafast arasında seçim yapabilecek ve 750 token/sn'ye kadar çıkabilen yanıt hızlarından faydalanabilecek. Bu özellik, Cerebras destekli altyapı yatırımlarıyla birlikte sunuluyor.",
+  "detayli_icerik_tr": "OpenAI, DevDay (29 Eylül 2026) tarihine yakın bir dönemde Ultrafast API modunu daha geniş bir kullanıcı kitlesine açmayı hazırlıyor. TestingCatalog, OpenAI Platform ve API belgelerinde yeni bir hız seçicinin gizli bir şekilde hazırlandığını tespit etti; bu seçici, Responses API Playground'da geliştiricilerin Standard, Fast ve Ultrafast işleme modları arasında geçiş yapmasına olanak tanıyacak.\n\nUltrafast modu, daha önce GPT-5.6 Sol modeliyle ön izleme aşamasında tanıtılmıştı. OpenAI, bu modun saniyede 750 çıktı token'ına kadar ulaşabildiğini ve standart işleme moduna göre 14 kat daha hızlı bir çıkarım sağladığını belirtiyor. Şu an için erişim, seçilmiş müşterilerle sınırlı olsa da, Cerebras tarafından desteklenen bu altyapının kapasitesi 2028'e kadar aşamalı olarak artırılacak.\n\nŞirket, aynı zamanda yeni GPT-6 ailesini (GPT-6 Sol ve GPT-6 Astra) duyurdu ve bu modellerin Ultrafast desteğiyle uyumlu olup olmayacağı henüz kesinleşmedi. Geliştiriciler için en büyük değişiklik, maliyet ve gecikme arasındaki dengeyi yönetebilmek olacak; yüksek hızlı Ultrafast modunun daha yüksek bir birim fiyatı taşıması muhtemel.\n\nBu adım, OpenAI'nin altyapı stratejisinin bir parçası olarak 750 MW'lık bir Cerebras ortaklığına dayalı geniş ölçekli bir bulut hesabı yatırımıyla da örtüşüyor. Ayrıca platforma yeni bir \"Accelerate\" katmanı eklenerek üretim ölçeğindeki iş yükleri için özel bir onboarding seçeneği sunulması planlanıyor. Tüm bu gelişmeler, DevDay'in API altyapısı, hesaplama katmanları ve üretim odaklı AI araçları üzerine yoğunlaşacağını gösteriyor.",
+  "onemli_maddeler": [
+    "Ultrafast API modu, saniyede 750 token çıkışı ve standart moddan 14 kat daha hızlı çıkarım sunuyor.",
+    "Cerebras destekli altyapı, 2028'e kadar 750 MW kapasiteyle aşamalı olarak genişletilecek.",
+    "Yeni hız seçici, geliştiricilere Standard, Fast ve Ultrafast arasında maliyet/latency dengesini ayarlama imkanı tanıyacak."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Ultrafast API'nin daha geniş kitlelere açılması, yüksek performanslı AI hizmetlerine erişimi artırarak geliştiricilerin uygulama maliyet ve gecikme yönetimini yeniden şekillendirecek kritik bir güncellemedir.",
+  "etiketler": [
+    "OpenAI",
+    "Ultrafast API",
+    "Cerebras",
+    "GPT-6",
+    "DevDay"
+  ],
+  "anilan_modeller": [
+    "GPT-5.6 Sol",
+    "GPT-6 Sol",
+    "GPT-6 Astra"
+  ],
+  "yorum_tr": "Ultrafast API'nin yaygınlaştırılması, düşük gecikme gerektiren üretim uygulamaları için yeni bir maliyet/performans katmanı oluşturacak ve bulut AI pazarında rekabeti artıracaktır.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GPT-5.6 Sol",
+      "benchmark": "Inference speed",
+      "skor": 750,
+      "birim": "tokens/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "speeds of up to 750 output tokens per second and up to 14× faster inference than Standard"
+    }
+  ],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/09/Screenshot-2026-09-26-at-02.03.12.png",
+  "url": "https://www.testingcatalog.com/openai-prepares-to-expand-ultrafast-api-to-more-users/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-09-26T12:24:22.000Z",
+  "slug": "openai-prepares-to-expand-ultrafast-api-to-more-users"
+}

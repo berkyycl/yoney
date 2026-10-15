@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "Meta’nın 816 Milyar Parametreli Çok Modelli MoE Modeli Muse Spark Open Açık Ağırlıkta Yayınlandı",
+  "ozet_tr": "Meta, 816 milyar toplam parametreye sahip, token başına yaklaşık 42 milyar aktif parametre çalışan ve bir milyon token’a kadar bağlam penceresi sunan Muse Spark Open modelini açık ağırlık olarak yayınladı. Metin, görüntü, ses ve video girdilerini tek bir çatı altında işleyebilen bu MoE mimarisi, kod tabanı okuma, hata ayıklama ve araç çağrısı gibi ajan odaklı görevlerde üstün performans vaat ediyor.",
+  "detayli_icerik_tr": "Meta, 15 Ekim 2026 tarihinde Hugging Face blogunda Muse Spark Open modelini duyurdu. Model, yaklaşık 816 milyar toplam parametreye sahip olmakla birlikte, her token için yalnızca 42 milyar aktif parametre kullanıyor ve 1 milyon token’a kadar uzanan bir bağlam penceresi sunuyor. Metin, görsel, ses ve video gibi dört farklı modalityyi aynı anda işleyebilen bu model, geliştiricilere tek bir arayüz üzerinden çok yönlü sorular sorabilme imkanı tanıyor.\n\nMimari olarak Muse Spark Open, 62 katmanlı bir dil modeli ve 8192 gizli boyutlu bir yapı üzerine kurulu. Her MoE katmanında 256 uzman (expert) bulunuyor ve router her token için 8 uzmanı seçiyor; bu da işlem başına yaklaşık 42 milyar parametre kullanımına yol açıyor. Uzmanlar toplam parametrelerin %97’sini oluştururken, tüm 256 uzman bellekte tutulduğu için dağıtık ortamda 816 B modelinin hafıza ihtiyacı korunuyor. BF16 checkpoint’i yaklaşık 1,5 TB, NVFP4 (4‑bit) checkpoint ise NVIDIA Blackwell GPU’ları için optimize edilmiş ve tek bir B200 node’da çalıştırılabiliyor.\n\nGörsel ve video girdileri, 1.8 milyar parametreli bir perception encoder tarafından işleniyor; bu encoder 50 katman, 1536 gizli boyut ve 16 dikkat başlığı içeriyor. Görüntüler 14×14 patch’lere bölünerek 4096 boyutlu özellik vektörlerine dönüştürülüyor. Video aynı encoder üzerinden işleniyor ve çerçeveler 2 FPS’ye kadar düşürülerek hafıza ve gecikme dengesi sağlanıyor. Ses girişi ise konvolüsyonel bir piramit encoder ile 80 ms başına bir token üretiyor; bu da saniyede 12,5 token anlamına geliyor.\n\nDağıtık çalıştırma için Transformers kütüphanesinde MuseSparkForConditionalGeneration ve MuseSparkProcessor sınıfları sağlanıyor. tp_size ve ep_size parametreleriyle cihazlar arasında yoğun ve uzman katmanları paralel olarak dağıtılabiliyor. Model, llama.cpp, vLLM ve SGLang gibi popüler inference çerçeveleriyle uyumlu. Ayrıca metin‑only ve multimodal araç çağrısı (tool calling) desteği bulunuyor; kullanıcılar görsel bir sahne üzerinden kıyafet önerisi gibi görevlerde fonksiyon çağrıları yapabiliyor. Açık‑ağırlık yapısı sayesinde model Hugging Face reposunda indirilebilir, ince ayar (fine‑tune) yapılabilir ve topluluk tarafından genişletilebilir.",
+  "onemli_maddeler": [
+    "816 milyar toplam parametre ve token başına 42 milyar aktif parametre ile devasa ölçek",
+    "Metin, görüntü, ses ve video dahil dört modalityyi tek modelde işleyebilme yeteneği",
+    "1 milyon token’a kadar uzanan bağlam penceresi, uzun kod ve belge işlemlerinde avantaj",
+    "256 uzmanlığa sahip MoE katmanı ve 4‑bit NVFP4 checkpoint sayesinde yüksek verimlilik ve düşük maliyetli dağıtık çalıştırma"
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "800+ milyar parametreli, multimodal ve agentic yetenekleri bir arada sunan bir modelin açık ağırlık olarak yayınlanması, büyük dil modeli ekosisteminde rekabeti ve araştırma erişimini önemli ölçüde artırıyor.",
+  "etiketler": [
+    "multimodal",
+    "Mixture-of-Experts",
+    "large language model",
+    "Meta",
+    "open-weight"
+  ],
+  "anilan_modeller": [
+    "Muse Spark Open",
+    "Muse Glimmer"
+  ],
+  "yorum_tr": "Muse Spark Open, çok modelli kodlama ve ajan görevlerinde yeni bir çıta koyarak geliştiricilere tek bir modelle geniş veri tiplerini işleme imkanı sunuyor; aynı zamanda açık ağırlık yapısı sayesinde araştırma topluluğunun inovasyonu hızlandırması bekleniyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://huggingface.co/blog/assets/meta-muse-spark-open/thumbnail.png",
+  "url": "https://huggingface.co/blog/meta-muse-spark-open",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-10-15T00:00:00.000Z",
+  "slug": "welcome-muse-spark-open-open-weight-frontier-multimodal-mixt"
+}

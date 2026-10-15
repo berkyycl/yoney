@@ -1,0 +1,37 @@
+{
+  "baslik_tr": "Mistral, Timestral 209M Modelini Açık Kaynak Olarak Yayınladı",
+  "ozet_tr": "Mistral AI, sıfır-atış tahmin yeteneği sunan Timestral zaman serisi temel model ailesini duyurdu. 209M parametreli modelin checkpoint'i ve kaynak kodu GitHub üzerinden erişime açıldı, aynı zamanda farklı boyutlarda modeller HuggingFace'de bulunabilir.",
+  "detayli_icerik_tr": "Mistral, Timestral adını verdiği yeni bir zaman serisi temel model ailesi geliştirdi. Aile, 5M, 28M, 123M ve 209M parametreli dört farklı boyutta sunuluyor ve sıfır-atış (zero-shot) tahmin yeteneğiyle dikkat çekiyor. Bu duyurunun odak noktası, 209M parametreli modelin checkpoint'inin ve ilgili kodların GitHub üzerinden açık kaynak olarak yayınlanmasıdır.\n\nTimestral-209M, patch tabanlı bir transformer mimarisi kullanıyor; modelde zaman dikkat (time attention) ve değişken dikkat (variate attention) mekanizmaları bulunuyor. Toplam 24 katman ve 768 boyutlu gömme (embedding) katmanı mevcut. Girdi verileri, 32 zaman adımından oluşan patch'ler halinde işleniyor ve her patch, değerleriyle birlikte eksik değer göstergeleri (missing-value indicators) üzerinden gömülüyor.\n\nModel, tek değişkenli (univariate) ve çok değişkenli (multivariate) hedef serileri, geçmişe yönelik ve gelecekte bilinen kovaryantları (past-only ve known-future covariates) destekliyor. Sayısal ve kategorik (target-encoded) kovaryantlar kullanılabiliyor; eksik değerler NaN olarak işaretleniyor. Çıktı olarak 21 kuantil (0.01, 0.05, …, 0.99) sağlanıyor, bu da probabilistik tahmin imkanı tanıyor.\n\nTimestral, maksimum 32.768 tarihsel zaman adımına (1.024 patch) kadar bir bağlam uzunluğunu ve tek bir ileri geçişte 1.024 adım (32 patch) kadar bir tahmin ufku (forecast horizon) sunuyor. Daha uzun ufuklar, blok blok tahmin edilerek ve her bloğun medyan tahmini bağlama eklenerek elde edilebiliyor. Çıktıların üretilmesi PyTorch üzerinde CPU ya da GPU kullanılarak gerçekleştirilebiliyor. Model ve farklı boyutlardaki sürümler HuggingFace platformunda (Timestral-209M, Timestral-123M, Timestral-28M, Timestral-5M) yayınlandı, bu da araştırmacıların ve geliştiricilerin kolayca erişimini sağlıyor.",
+  "onemli_maddeler": [
+    "Timestral ailesi 5M'den 209M parametreye kadar dört farklı model boyutu sunuyor.",
+    "209M model, 24 katmanlı patch‑tabanlı transformer ve zaman‑ve‑varyate dikkat mekanizmalarıyla tasarlandı.",
+    "Maksimum 32.768 tarihsel adım ve 1.024 adım tahmin ufku tek bir ileri geçişte işlenebiliyor.",
+    "Model 21 kuantil üzerinden probabilistik tahmin üretebiliyor ve eksik değerleri NaN olarak işaretliyor.",
+    "Kaynak kod ve 209M checkpoint'i GitHub'da açık kaynak, modeller ise HuggingFace'de erişime açık."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Timestral, zaman serisi tahmininde sıfır-atış yeteneği ve açık kaynak yaklaşımıyla araştırmacı ve endüstri uygulayıcıları için yeni bir temel model sunarak alanda önemli bir adım atıyor.",
+  "etiketler": [
+    "zaman serisi",
+    "tahmin",
+    "temel model",
+    "Mistral",
+    "açık kaynak"
+  ],
+  "anilan_modeller": [
+    "Timestral-209M",
+    "Timestral-123M",
+    "Timestral-28M",
+    "Timestral-5M"
+  ],
+  "yorum_tr": "Timestral ailesi, zaman serisi analitiği ve tahmin uygulamalarında daha erişilebilir ve esnek bir temel sunarak geliştiricilerin ve veri bilimcilerin modelleri hızlıca denemelerine olanak tanıyacak.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/zyoo32u7hnvh1.png?width=140&height=83&auto=webp&s=5c95cfc90a2521c870b26263cd61c0996f13447a",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x6ouoy/mistralaitimestral/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-15T15:32:45.000Z",
+  "slug": "mistralai-timestral"
+}

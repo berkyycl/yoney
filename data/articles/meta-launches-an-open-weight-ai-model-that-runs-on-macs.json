@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "Meta, Mac'lerde Çalışabilen Açık Ağırlıklı Muse Spark Open Modelini Tanıttı",
+  "ozet_tr": "Meta, 816 milyar parametreli ve 1 milyon token bağlam penceresine sahip yeni açık ağırlıklı modeli Muse Spark Open'ı duyurdu. Model, özellikle Apple Mac bilgisayarlarıyla uyumlu çalışacak şekilde tasarlandı ve yüksek bellek gereksinimiyle birlikte kodlama ve video düzenleme gibi karmaşık görevlerde üstün performans vaat ediyor.",
+  "detayli_icerik_tr": "Meta, Amerika Birleşik Devletleri'nde \"en yetkin\" açık ağırlıklı model olarak tanımladığı Muse Spark Open'ı tanıttı. 816 milyar parametre ve 1 milyon token bağlam penceresiyle donatılan model, çok modlu (multimodal) yapısı sayesinde görsel, metin ve kod gibi farklı veri türlerini aynı anda işleyebiliyor. Model, Apple'ın Mac bilgisayarlarıyla yerel olarak çalışacak şekilde optimize edildi.\n\nMuse Spark Open, özellikle karmaşık kodlama görevleri ve ajan tabanlı iş akışları için tasarlandı. Meta, modeli kendi AI kodlama terminali Muse Code ile birleştirerek Mastodon istemcisi için hata düzeltmeleri, yeni özellik eklemeleri ve tam derleme gibi işlemleri otomatikleştirdi. Ayrıca yüksek performanslı video düzenleme yazılımı DaVinci Resolve'ta görüntü inceleme ve kırpma gibi görevleri başarıyla yerine getirdi.\n\nModelin yerel çalıştırılması için en az 1 terabayt RAM gerekliliği bulunuyor; bu yüzden en iyi performans, M5 Ultra çipine sahip Mac Studio sistemlerinde elde edilebiliyor. Bu yüksek bellek ihtiyacı, geniş bağlam penceresi ve devasa parametre sayısı sayesinde uzun kod tabanları ve büyük metin koleksiyonları üzerinde etkili bir şekilde çalışabilmesini sağlıyor.\n\nMeta, Muse Spark Open'ı çeşitli API platformları üzerinden erişime açarak geliştiricilerin ve kurumların kendi altyapılarında denemeler yapmasını hedefliyor. Açık ağırlıklı modellerin kapalı ve tescilli modellere göre daha maliyet etkin, şeffaf ve esnek olduğu vurgulanıyor; bu da AI ekosisteminde yeni bir rekabet dinamiği yaratabilir.",
+  "onemli_maddeler": [
+    "816 milyar parametreye sahip en büyük açık ağırlıklı modellerden biri.",
+    "1 milyon token bağlam penceresi, uzun metin ve kod dizilerini işleyebiliyor.",
+    "Yerel çalıştırma için minimum 1 TB RAM gerektiriyor; en iyi performans Mac Studio M5 Ultra'da.",
+    "Muse Code ile entegrasyon; kodlama ve DaVinci Resolve video düzenleme görevlerinde kullanıldı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Yüksek parametreli açık ağırlıklı bir modelin Mac platformunda çalıştırılabilir olması, geliştiricilere yeni bir esneklik ve kontrol sunarken sektördeki model rekabetini ve donanım gereksinimlerini yeniden şekillendirebilir.",
+  "etiketler": [
+    "Meta",
+    "AI",
+    "Open-weight",
+    "Mac",
+    "Muse Spark Open"
+  ],
+  "anilan_modeller": [
+    "Muse Spark Open"
+  ],
+  "yorum_tr": "Muse Spark Open, yüksek kaynak gereksinimiyle birlikte geliştiricilere açık ağırlıklı bir model üzerinde tam kontrol imkanı sunuyor; bu, özellikle Apple ekosisteminde AI entegrasyonlarını genişletmek isteyen firmalar için önemli bir adım.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://techcrunch.com/wp-content/uploads/2026/09/GettyImages-2296215726.jpg?resize=1200,799",
+  "url": "https://techcrunch.com/2026/10/15/meta-launches-an-open-weight-model-that-runs-on-macs/",
+  "source": "TechCrunch AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-15T20:04:53.000Z",
+  "slug": "meta-launches-an-open-weight-ai-model-that-runs-on-macs"
+}

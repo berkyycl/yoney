@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "Muse Spark Open: Şu ana kadarki en yetenekli US açık ağırlıklı model",
+  "ozet_tr": "Meta, 816 milyar parametreli ve 1 milyon token bağlam penceresine sahip Muse Spark Open modelini duyurdu. Kodlama, uzun vadeli görevler ve çok adımlı akıl yürütme için tasarlanan model, metin, görüntü, video ve ses gibi çoklu modaliteleri destekliyor.",
+  "detayli_icerik_tr": "Meta, bugün Muse Spark Open adlı yeni bir açık‑ağırlıklı modeli yayınladığını duyurdu. Toplam 816 milyar parametreye sahip olan modelin yalnızca 42 milyar aktif parametresi bulunuyor ve 1 M token bağlam penceresi sayesinde uzun metinleri ve karmaşık kod tabanlarını rahatlıkla işleyebiliyor. Metin, görüntü, video ve ses gibi çoklu modaliteleri destekleyerek, özellikle yazılım mühendisliği, ajan‑tabanlı görevler ve çok adımlı akıl yürütme gibi alanlarda üstün performans vaat ediyor.\n\nGüvenlik açısından model, Meta'nın Superintelligence Scaling Framework'ü altında ek güvenlik sonrası eğitimi almış ve kapsamlı değerlendirmelerden geçmiş. Performans iyileştirmeleri ise Helion GPU çekirdekleri sayesinde sağlanıyor; bu çekirdekler SGLang ile otomatik ayarlanabilir ve NVIDIA ile AMD GPU'larda 1.03‑3.95 kat hız artışı, AMD MI350 üzerinde ise uç‑uç (E2E) %3 iyileşme sağlıyor. Model, SGLang, vLLM, TensorRT‑LLM, Hugging Face Transformers, Apple MLX, llama.cpp ve Unsloth gibi önde gelen çıkarım motorlarıyla uyumlu ve AMD, Apple, Intel ve NVIDIA silikonları için özel optimizasyonlar içeriyor.\n\nApple Silicon uyumluluğu da öne çıkıyor: Muse Spark Open, iki Apple M5 Ultra Mac Studio üzerinde, en yeni MLX çerçevesiyle çalışacak şekilde optimize edildi. Geliştiriciler, PyTorch ve TorchTitan kullanarak modeli kendi ihtiyaçlarına göre ince ayar yapabilir. Model, Baseten, Fireworks AI, Groq, Modal, Nebius, OpenRouter ve Together AI gibi popüler API platformları üzerinden erişime sunulmuş durumda.\n\nAğırlık dosyaları Amazon SageMaker AI, Google Cloud Model Garden, Hugging Face ve Microsoft Foundry Models üzerinden indirilebilir. Muse Model License altında dağıtılan model, sınırlı ticari koşullarla birçok geliştiricinin ücretsiz olarak kullanmasına izin veriyor. Meta, topluluktan geri bildirim beklediğini ve daha fazla teknik detayı araştırma blogunda paylaştığını belirtti.",
+  "onemli_maddeler": [
+    "816 B toplam parametre, 42 B aktif parametre ve 1 M token bağlam penceresi ile çok büyük bir model.",
+    "Metin, görüntü, video ve ses gibi çoklu modaliteleri destekleyerek kodlama ve ajan‑tabanlı görevlerde üstün performans.",
+    "Helion GPU çekirdekleri sayesinde NVIDIA ve AMD GPU'larda 1.03‑3.95× hız artışı, AMD MI350 üzerinde %3 uç‑uç iyileşme."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Muse Spark Open, parametre sayısı ve çoklu modalite desteğiyle mevcut açık‑ağırlıklı modellerin sınırlarını zorlayan bir çıkış yapıyor; aynı zamanda geniş platform ve donanım uyumluluğu sayesinde geliştiricilerin erişimini artırıyor.",
+  "etiketler": [
+    "model",
+    "açık-ağırlıklı",
+    "kodlama",
+    "çoklu-modalite",
+    "Meta"
+  ],
+  "anilan_modeller": [
+    "Muse Spark Open"
+  ],
+  "yorum_tr": "Muse Spark Open, büyük ölçekli çoklu‑modalite modellerinin açık erişim yoluyla yaygınlaşmasını hızlandırarak, özellikle yazılım geliştirme ve ajan tabanlı sistemlerde yeni uygulama fırsatları yaratacak. Geliştiriciler, geniş donanım desteği ve ücretsiz lisans koşulları sayesinde modeli hızlıca entegre edip özelleştirebilecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/4nv4g9cnvnvh1.png?width=640&crop=smart&auto=webp&s=11f3c65df3cc1462f31dfc1687560ee48acb4aa2",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x6r9pz/introducing_muse_spark_open_the_most_capable_us/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-15T17:03:45.000Z",
+  "slug": "introducing-muse-spark-open-the-most-capable-us-open-weight"
+}

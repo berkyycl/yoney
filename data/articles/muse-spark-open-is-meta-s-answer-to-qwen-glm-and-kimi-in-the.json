@@ -1,0 +1,40 @@
+{
+  "baslik_tr": "Muse Spark Open, Meta'nın Qwen, GLM ve Kimi'ye Açık Ağırlıklı Yarışta Cevabı",
+  "ozet_tr": "Meta, 816 milyar parametreli (aktif 42 milyar) Muse Spark Open modelini duyurarak açık‑ağırlıklı LLM yarışına yeni bir rekabetçi katılımcı ekledi. Model, bir milyon tokena kadar bağlam uzunluğu, metin‑görsel‑video‑ses çoklu modalite desteği ve Apple M5 Ultra için özel optimizasyon sunuyor. Benchmark sonuçları, özellikle ajanlık, bilgi‑akıl yürütme ve çoklu modalite alanlarında Qwen 3.8, GLM 5.3 ve Kimi K3'ün önüne geçiyor.",
+  "detayli_icerik_tr": "Meta, Llama serisinin ardından açık‑ağırlıklı alanda Muse Spark Open'ı tanıttı. Model, toplam 816 milyar parametreye sahip olmakla birlikte, gerçek zamanlı kullanımda 42 milyar aktif parametre üzerinden çalışıyor ve bir milyon tokena kadar bağlam uzunluğunu destekliyor. Metin, görsel, video ve ses girdilerini işleyebilen bu çoklu modalite yapısı, geliştiricilere geniş bir yelpazede uygulama geliştirme imkânı tanıyor.\n\nPerformans açısından Meta, Muse Spark Open'ı JobBench, MCP‑Atlas, HLE‑Diamond ve ZeroBench gibi kritik benchmarklarda test etti. Sonuçlar, modelin ajanlık (Agentic), bilgi‑akıl yürütme (Knowledge & Reasoning) ve çoklu modalite (Multimodal) kategorilerinde Qwen 3.8, GLM 5.3 ve Kimi K3 gibi rakiplerin oldukça önünde olduğunu gösteriyor. Ancak kodlama (coding) benchmarklarında bazı rakiplerin gerisinde kalıyor ve Meta'nın ücretli Muse Wonder Full serisinin gerisinde kalıyor.\n\nDonanım uyumluluğu da öne çıkıyor: Muse Spark Open, Apple'ın yeni M5 Ultra çipine özel olarak optimize edildi ve iki adet 512 GB birleşik belleğe sahip Mac Studio üzerinde yerel olarak çalışabiliyor. Modelin ağırlıkları Hugging Face platformunda yayınlandı ve ücretsiz bir lisansla kullanılabiliyor; tek şart, \"Built with Muse Spark Open\" ibaresinin eklenmesi. Yıllık 20 milyon doların üzerindeki API hizmeti sunmak isteyen sağlayıcıların Meta ile ayrı bir anlaşma yapması gerekiyor.\n\nMeta, bu adımla açık‑ağırlıklı ekosistemde hem araştırmacıların hem de endüstri oyuncularının erişimini genişletmeyi hedefliyor. Muse Spark Open, Inkling, Nemotron 3 Ultra, Qwen 3.8, GLM 5.3 ve Kimi K3 gibi mevcut açık modellerle doğrudan karşılaştırılıyor ve Meta, modelin özellikle ajan‑tabanlı uygulamalar ve çoklu modalite entegrasyonları için yeni bir standart oluşturacağını iddia ediyor.",
+  "onemli_maddeler": [
+    "816 milyar parametreli (aktif 42 milyar) devasa model, 1 M token bağlam uzunluğu.",
+    "Metin, görsel, video ve ses gibi çoklu modalite desteği.",
+    "JobBench, MCP‑Atlas, HLE‑Diamond ve ZeroBench'te rakip modellerin önünde performans.",
+    "Apple M5 Ultra için özel optimizasyon, iki Mac Studio’da yerel çalıştırma.",
+    "Ücretsiz lisans, ancak API hizmeti için yıllık 20 M$ üzeri ayrı anlaşma şartı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Meta'nın açık‑ağırlıklı büyük ölçekli modeli, sektördeki rekabeti artırarak araştırma ve ürün geliştirme süreçlerine yeni bir referans noktası sunuyor; hem teknik kapasitesi hem de lisans politikasıyla geniş bir kullanıcı kitlesini etkiliyor.",
+  "etiketler": [
+    "açık‑ağırlıklı",
+    "çoklu‑modalite",
+    "büyük‑dil‑modeli",
+    "Meta",
+    "AI"
+  ],
+  "anilan_modeller": [
+    "Muse Spark Open",
+    "Muse Wonder Full",
+    "Qwen 3.8",
+    "GLM 5.3",
+    "Kimi K3",
+    "Inkling",
+    "Nemotron 3 Ultra"
+  ],
+  "yorum_tr": "Muse Spark Open, açık‑ağırlıklı alanda Meta'nın güçlü bir girişini temsil ediyor; geliştiriciler ve araştırmacılar, ücretsiz erişim ve geniş multimodal yetenekler sayesinde daha hızlı prototipleme yapabilecek. Ancak API hizmeti için yüksek gelir eşiği, büyük ölçekli ticari kullanımda sınırlayıcı bir faktör oluşturabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/07/meta_AI_logo.png",
+  "url": "https://the-decoder.com/muse-spark-open-is-metas-answer-to-qwen-glm-and-kimi-in-the-open-weight-race/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-15T18:34:32.000Z",
+  "slug": "muse-spark-open-is-meta-s-answer-to-qwen-glm-and-kimi-in-the"
+}

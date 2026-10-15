@@ -1,0 +1,56 @@
+{
+  "baslik_tr": "Google, Gemini 4 Argon'un robotların ihtiyaç duyduğu tek AI modeli olmasını istiyor",
+  "ozet_tr": "Google DeepMind, robotik görevlerin tüm aşamalarını tek bir modelle yönetebilecek Gemini 4 Argon'u tanıttı. Model, fotoğraf ya da eskiz gibi basit girdilerden sanal ortamlar oluşturup robotları bu simülasyonlarda eğitiyor ve gerçek dünyada başarı oranını artırıyor.",
+  "detayli_icerik_tr": "Google DeepMind, Gemini 4 Argon ile robotik iş akışının tüm aşamalarını tek bir yapay zeka modeline taşıma hedefiyle yeni bir platform sundu. Argon, bir fotoğraf ya da el çizimi gibi düşük seviyeli girdileri alarak 3D simülasyonlar üretiyor; bu sanal ortamlar içinde robotlar hareketlerini deniyor, ardından gerçek donanımda denemeler yapıyor. Demo senaryolarında Boston Dynamics Spot robotu, bir çöp kutusuna soda kutuları atarken önce MuJoCo tabanlı bir simülasyonda deneme yapıyor, ardından gerçek dünyada görevi yerine getiriyor.\n\nModelin en dikkat çeken özelliklerinden biri, tek bir fotoğraf üzerinden binlerce eğitim senaryosu oluşturabilmesi. Örneğin bir masa fotoğrafı verildiğinde Argon, 77 farklı görev tanımlayıp 4.500'den fazla simülasyon çalıştırarak robotun başarı oranını %56'dan %75'e yükseltti ve işlem süresini 35 saniyeden 24 saniyeye indirdi. Ayrıca teleoperasyon kayıtları, birinci şahıs insan videoları ve hatta kalem eskizleri gibi çeşitli veri kaynaklarından da benzer sanal ortamlar yaratabiliyor.\n\nGemini Omni adlı video dünya modeliyle entegrasyonu, Argon'un video tabanlı planlama yeteneklerini gösteriyor. Argon, video sahnelerinde nesnelerin hareketlerini zaman damgalarıyla tanımlıyor, Gemini Omni bu talimatları videoya dönüştürüyor ve model de çıktıyı kontrol edip bir sonraki adımı ayarlıyor. Bu süreç, robotik ellerin harf taşlarını \"ARGON\" kelimesi oluşturacak şekilde sıralamasını 33 adımda tamamlamasını sağladı.\n\nArgon aynı zamanda eğitim verisinin kalitesini değerlendirme işlevi de taşıyor. Çift kollu bir robotun origami tilki katlama videosunda hatalı tutuşları ve duraklamaları işaretleyerek bu bölümlerin eğitim sırasında daha düşük ağırlık almasını sağlıyor. Google, modelin şu anda Google AI Studio ve Antigravity geliştirme ortamında, yalnızca Google AI Ultra aboneleri için erişilebilir olduğunu belirtiyor.",
+  "onemli_maddeler": [
+    "Gemini 4 Argon, tek bir modelle robot kontrolü, simülasyon oluşturma ve veri değerlendirmeyi birleştiriyor.",
+    "Tek fotoğraf üzerinden 4.500'den fazla eğitim senaryosu üretip gerçek robot başarısını %56'dan %75'e yükseltiyor.",
+    "ERQA benchmark'inde %87 başarıyla diğer önde gelen modelleri geride bırakıyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Robotik alanında tek bir modelin tüm pipeline'ı yönetmesi, araştırma ve endüstri uygulamalarında büyük bir verimlilik ve maliyet avantajı sağlayarak sektörü dönüştürme potansiyeline sahip.",
+  "etiketler": [
+    "robotik",
+    "simülasyon",
+    "yapay zeka",
+    "gemini",
+    "deepmind"
+  ],
+  "anilan_modeller": [
+    "Gemini 4 Argon",
+    "Claude Opus 5.5",
+    "GPT-6 Astra",
+    "Claude Fable 5.1",
+    "GPT-6.1 Sol",
+    "Gemini Robotics-ER 1.6"
+  ],
+  "yorum_tr": "Gemini 4 Argon, robotik geliştirme sürecini tek bir modelle bütünleştirerek araştırmacıların ve endüstrinin prototipleme süresini kısaltabilir; ancak hâlâ insan yönlendirmesine bağımlı olması, tam otonomiye ulaşmadan önce önemli bir sınırlama olarak kalıyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Gemini 4 Argon",
+      "benchmark": "ERQA",
+      "skor": 87,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Argon scores 87 percent according to Google, ahead of all other frontier models."
+    },
+    {
+      "model": "Gemini 4 Argon",
+      "benchmark": "AA-Robotics",
+      "skor": 55,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Argon landed third with 55 out of 100 points, behind GPT-6 Astra at 69 and GPT-6.1 Sol at 65."
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/10/gemini-4-argon-robotics-03-spot-trash-bin.jpg",
+  "url": "https://the-decoder.com/google-wants-gemini-4-argon-to-be-the-only-ai-model-robots-need/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-15T16:35:47.000Z",
+  "slug": "google-wants-gemini-4-argon-to-be-the-only-ai-model-robots-n"
+}

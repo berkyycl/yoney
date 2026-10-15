@@ -1,0 +1,45 @@
+{
+  "baslik_tr": "Krea, hızlı ve hassas görüntü düzenleme için Krea 3'ü piyasaya sürdü",
+  "ozet_tr": "Krea, metin komutlarıyla fotoğraf ve referans görselleri üzerinde anlık düzenlemeler yapabilen Krea 3 modelini tanıttı. Model, 2K çözünürlükteki düzenlemeleri 8 saniyenin altında tamamlayarak tasarımcıların iş akışını hızlandırıyor.",
+  "detayli_icerik_tr": "San Francisco merkezli yapay zeka laboratuvarı Krea, yeni nesil görüntü düzenleme modeli Krea 3'ü beta aşamasında kullanıma sundu. Model, bir fotoğraf ya da birden fazla referans görselini alıp, kullanıcıların yazılı komutlarıyla arka plan, kıyafet, ışıklandırma gibi öğeleri anında değiştirebiliyor. Krea 3, 2K çözünürlükteki düzenlemeleri uçtan uca 8 saniyenin altında gerçekleştirerek tasarımcıların bekleme süresini büyük ölçüde azaltıyor.\n\nKrea 3, seçilen bir bölgeyi düzenleyip geri kalan kısmı koruma yeteneği ve bounding box (sınırlama kutusu) kontrolü sayesinde yeni öğelerin konumlandırılmasını hassas bir şekilde yönetiyor. Her bir düzenleme, stil referansları dahil olmak üzere en fazla altı referans görseliyle desteklenebiliyor. Ayrıca model, LoRA (Low‑Rank Adaptation) teknikleriyle belirli bir ürün, kişi ya da stil üzerine ince ayar yapılabilmesini sağlayarak marka tutarlılığını koruyor. Çıktı yerel olarak 2K çözünürlükte sunulurken, baskı ve büyük kampanya görselleri için 4K desteği de mevcut.\n\nKrea 3, yüksek hacimli görsel iş akışına sahip ekipleri hedefliyor. Şirket, e‑ticaret ekiplerinin bir fotoğrafı stüdyo paketi haline getirmesini, renk varyasyonları üretmesini; pazarlama ekiplerinin posterleri farklı dillere lokalize etmesini ve bir reklamı seriye genişletmesini; mimarların ise bir mekânı inşa edilmeden önce malzeme ve ışık koşullarını test etmesini örnek veriyor. Pixelcut ve Doodles gibi fotoğraf düzenleme uygulamaları, Krea 3'ü ürün fotoğrafçılığı ve yaratıcı projeler için test ediyor.\n\nModel, krea.ai üzerinden, Krea API'si ve Fal, Together AI, OpenRouter, Replicate, Baseten, Hedra, Nous Research gibi dağıtım ortakları aracılığıyla erişilebilir. Fiyatlandırma, 1K çözünürlükte görüntü başına 0,03 $, 2K çözünürlükte ise 0,06 $ olarak belirlenmiş. Kurumsal ekipler, Krea'nın iş ortaklarıyla iletişime geçerek özel erişim talep edebiliyor. Krea, 2024 yılında Krea 2 modelini piyasaya sürmüş ve açık ağırlıklarla topluluğa sunmuş, şu ana kadar 35 milyondan fazla kullanıcı ve Fortune 500 şirketlerinin %33'ü tarafından kullanılmaktadır.",
+  "onemli_maddeler": [
+    "2K görüntü düzenlemeleri 8 saniyeden kısa sürede tamamlanıyor.",
+    "Bounding box ve çoklu referans desteğiyle bölgesel ve stil odaklı düzenlemeler mümkün.",
+    "LoRA ile belirli ürün, kişi veya stil üzerine ince ayar yapılarak tutarlı sonuçlar elde edilebiliyor.",
+    "Yerel 2K çıktı, 4K destekli; fiyatlandırma 1K’da $0.03, 2K’da $0.06.",
+    "E‑ticaret, pazarlama ve mimarlık ekipleri gibi yüksek hacimli görsel iş akışları hedefleniyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Krea 3, yüksek çözünürlükte anlık düzenleme ve LoRA tabanlı ince ayar yetenekleriyle görsel üretim süreçlerini hızlandırarak özellikle e‑ticaret ve pazarlama gibi sektörlerde verimliliği artırması bakımından önemli bir güncelleme olarak değerlendiriliyor.",
+  "etiketler": [
+    "görüntü düzenleme",
+    "AI model",
+    "Krea 3",
+    "LoRA",
+    "e‑ticaret"
+  ],
+  "anilan_modeller": [
+    "Krea 3",
+    "Krea 2"
+  ],
+  "yorum_tr": "Krea 3'ün düşük gecikmeli yüksek çözünürlükte düzenleme yeteneği, tasarımcıların ve içerik üreticilerinin prototipleme süresini kısaltarak yaratıcı iş akışlarını hızlandıracak. LoRA desteği ise markalar için tutarlı görsel kimlik oluşturmayı kolaylaştıracak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Krea 3",
+      "benchmark": "end-to-end 2K edit latency",
+      "skor": 8,
+      "birim": "saniye",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "2K çözünürlük",
+      "kaynak_metinden_alinti": "high-quality 2K edits return in under 8 seconds end to end"
+    }
+  ],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/10/Krea-3-Beta-AI-Image-Generator-KREA-10-15-2026_05_52_PM.jpg",
+  "url": "https://www.testingcatalog.com/krea-launched-krea-3-for-fast-and-precise-image-editing/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-15T16:38:42.000Z",
+  "slug": "krea-launched-krea-3-for-fast-and-precise-image-editing"
+}

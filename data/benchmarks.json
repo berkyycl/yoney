@@ -1,35 +1,35 @@
 {
- "generatedAt": "2026-10-15T16:25:10.961Z",
+ "generatedAt": "2026-10-15T20:59:58.524Z",
  "sources": {
   "lmarena-text": {
-   "fetchedAt": "2026-10-15T16:25:10.961Z",
+   "fetchedAt": "2026-10-15T20:59:58.524Z",
    "count": 100,
    "publishDate": "2026-10-13T00:00:00.000Z"
   },
   "lmarena-coding": {
-   "fetchedAt": "2026-10-15T16:25:10.961Z",
+   "fetchedAt": "2026-10-15T20:59:58.524Z",
    "count": 60,
    "publishDate": "2026-10-13T00:00:00.000Z"
   },
   "lmarena-creative": {
-   "fetchedAt": "2026-10-15T16:25:10.961Z",
+   "fetchedAt": "2026-10-15T20:59:58.524Z",
    "count": 60,
    "publishDate": "2026-10-13T00:00:00.000Z"
   },
-  "swe-bench-verified": {
-   "fetchedAt": "2026-10-15T16:25:10.961Z",
-   "count": 40,
-   "publishDate": "2025-12-05T00:00:00.000Z"
-  },
   "lmarena-hard": {
-   "fetchedAt": "2026-10-15T10:56:43.660Z",
+   "fetchedAt": "2026-10-15T20:59:58.524Z",
    "count": 60,
    "publishDate": "2026-10-13T00:00:00.000Z"
   },
   "lmarena-expert": {
-   "fetchedAt": "2026-10-15T10:56:43.660Z",
+   "fetchedAt": "2026-10-15T20:59:58.524Z",
    "count": 60,
    "publishDate": "2026-10-13T00:00:00.000Z"
+  },
+  "swe-bench-verified": {
+   "fetchedAt": "2026-10-15T20:59:58.524Z",
+   "count": 40,
+   "publishDate": "2025-12-05T00:00:00.000Z"
   },
   "lmarena-vision": {
    "fetchedAt": "",
@@ -2242,406 +2242,6 @@
    "date": "2026-10-13T00:00:00.000Z"
   },
   {
-   "benchmarkId": "swe-bench-verified",
-   "model": "Claude 4.5 Opus",
-   "organization": "Anthropic",
-   "score": 79.2,
-   "setting": "Ajan: Sonar Foundation Agent (Sonar)",
-   "source": "SWE-bench",
-   "url": "https://www.swebench.com",
-   "date": "2025-12-05T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "swe-bench-verified",
-   "model": "Claude 4.5 Opus",
-   "organization": "Anthropic",
-   "score": 79.2,
-   "setting": "Ajan: live-SWE-agent (UIUC)",
-   "source": "SWE-bench",
-   "url": "https://www.swebench.com",
-   "date": "2025-12-15T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "swe-bench-verified",
-   "model": "Doubao-Seed-Code",
-   "organization": "ByteDance",
-   "score": 78.8,
-   "setting": "Ajan: TRAE (ByteDance)",
-   "source": "SWE-bench",
-   "url": "https://www.swebench.com",
-   "date": "2025-09-28T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "swe-bench-verified",
-   "model": "Gemini 3 Pro Preview",
-   "organization": "Google DeepMind",
-   "score": 77.4,
-   "setting": "Ajan: live-SWE-agent (UIUC)",
-   "source": "SWE-bench",
-   "url": "https://www.swebench.com",
-   "date": "2025-11-20T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "swe-bench-verified",
-   "model": "Claude 4 Sonnet",
-   "organization": "Anthropic",
-   "score": 76.8,
-   "setting": "Ajan: EPAM AI/Run Developer Agent (EPAM Systems, Inc.)",
-   "source": "SWE-bench",
-   "url": "https://www.swebench.com",
-   "date": "2025-08-04T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "swe-bench-verified",
-   "model": "Atlassian Rovo Dev (2025-09-02)",
-   "organization": null,
-   "score": 76.8,
-   "setting": "Ajan: Atlassian Rovo Dev (Atlassian)",
-   "source": "SWE-bench",
-   "url": "https://www.swebench.com",
-   "date": "2025-09-02T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "swe-bench-verified",
-   "model": "Claude 4.5 Opus",
-   "organization": "Anthropic",
-   "score": 76.8,
-   "setting": "Ajan: mini-SWE-agent (SWE-agent)",
-   "source": "SWE-bench",
-   "url": "https://www.swebench.com",
-   "date": "2026-02-17T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "swe-bench-verified",
-   "model": "ACoder",
-   "organization": null,
-   "score": 76.4,
-   "setting": "Ajan: ACoder (ACoder)",
-   "source": "SWE-bench",
-   "url": "https://www.swebench.com",
-   "date": "2025-08-19T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "swe-bench-verified",
-   "model": "Gemini 3 Flash",
-   "organization": "Google DeepMind",
-   "score": 75.8,
-   "setting": "Ajan: mini-SWE-agent (SWE-agent)",
-   "source": "SWE-bench",
-   "url": "https://www.swebench.com",
-   "date": "2026-02-17T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "swe-bench-verified",
-   "model": "MiniMax M2.5",
-   "organization": "Minimax",
-   "score": 75.8,
-   "setting": "Ajan: mini-SWE-agent (SWE-agent)",
-   "source": "SWE-bench",
-   "url": "https://www.swebench.com",
-   "date": "2026-02-17T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "swe-bench-verified",
-   "model": "Warp",
-   "organization": null,
-   "score": 75.6,
-   "setting": "Ajan: Warp (Warp)",
-   "source": "SWE-bench",
-   "url": "https://www.swebench.com",
-   "date": "2025-09-01T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "swe-bench-verified",
-   "model": "Claude 4.6 Opus",
-   "organization": "Anthropic",
-   "score": 75.6,
-   "setting": "Ajan: mini-SWE-agent (SWE-agent)",
-   "source": "SWE-bench",
-   "url": "https://www.swebench.com",
-   "date": "2026-02-17T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "swe-bench-verified",
-   "model": "TRAE + Claude Sonnet 4 + Opus 4 + Sonnet 3.7 + Gemini 2.5 Pro",
-   "organization": null,
-   "score": 75.2,
-   "setting": "Ajan: TRAE (TRAE)",
-   "source": "SWE-bench",
-   "url": "https://www.swebench.com",
-   "date": "2025-06-12T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "swe-bench-verified",
-   "model": "Claude Sonnet 4",
-   "organization": "Anthropic",
-   "score": 74.8,
-   "setting": "Ajan: Harness AI (Harness)",
-   "source": "SWE-bench",
-   "url": "https://www.swebench.com",
-   "date": "2025-07-31T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "swe-bench-verified",
-   "model": "Claude 4.5 Sonnet",
-   "organization": "Anthropic",
-   "score": 74.8,
-   "setting": "Ajan: Sonar Foundation Agent (Sonar)",
-   "source": "SWE-bench",
-   "url": "https://www.swebench.com",
-   "date": "2025-11-03T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "swe-bench-verified",
-   "model": "Claude 4 Sonnet",
-   "organization": "Anthropic",
-   "score": 74.6,
-   "setting": "Ajan: Lingxi-v1.5 (Lingxi)",
-   "source": "SWE-bench",
-   "url": "https://www.swebench.com",
-   "date": "2025-07-20T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "swe-bench-verified",
-   "model": "JoyCode + Claude 4 Sonnet + GPT-4.1",
-   "organization": null,
-   "score": 74.6,
-   "setting": "Ajan: JoyCode (JoyCode)",
-   "source": "SWE-bench",
-   "url": "https://www.swebench.com",
-   "date": "2025-09-15T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "swe-bench-verified",
-   "model": "Refact.ai Agent + Claude 4 Sonnet + o4-mini",
-   "organization": null,
-   "score": 74.4,
-   "setting": "Ajan: Refact.ai Agent (Refact.ai)",
-   "source": "SWE-bench",
-   "url": "https://www.swebench.com",
-   "date": "2025-06-03T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "swe-bench-verified",
-   "model": "GPT-5",
-   "organization": "OpenAI",
-   "score": 74.4,
-   "setting": "Ajan: Prometheus-v1.2.1 (EuniAI)",
-   "source": "SWE-bench",
-   "url": "https://www.swebench.com",
-   "date": "2025-10-15T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "swe-bench-verified",
-   "model": "Claude 4.5 Opus",
-   "organization": "Anthropic",
-   "score": 74.4,
-   "setting": "Ajan: mini-SWE-agent (SWE-agent)",
-   "source": "SWE-bench",
-   "url": "https://www.swebench.com",
-   "date": "2025-11-24T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "swe-bench-verified",
-   "model": "Gemini 3 Pro Preview",
-   "organization": "Google DeepMind",
-   "score": 74.2,
-   "setting": "Ajan: mini-SWE-agent (SWE-agent)",
-   "source": "SWE-bench",
-   "url": "https://www.swebench.com",
-   "date": "2025-11-18T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "swe-bench-verified",
-   "model": "Salesforce AI Research SAGE (OpenHands)",
-   "organization": null,
-   "score": 73.8,
-   "setting": "Ajan: Salesforce AI Research SAGE (Salesforce AI Research)",
-   "source": "SWE-bench",
-   "url": "https://www.swebench.com",
-   "date": "2025-11-03T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "swe-bench-verified",
-   "model": "Claude 4 Opus",
-   "organization": "Anthropic",
-   "score": 73.2,
-   "setting": "Ajan: Tools",
-   "source": "SWE-bench",
-   "url": "https://www.swebench.com",
-   "date": "2025-05-22T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "swe-bench-verified",
-   "model": "Salesforce AI Research SAGE (bash-only)",
-   "organization": null,
-   "score": 73,
-   "setting": "Ajan: Salesforce AI Research SAGE (Salesforce AI Research)",
-   "source": "SWE-bench",
-   "url": "https://www.swebench.com",
-   "date": "2025-10-21T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "swe-bench-verified",
-   "model": "GLM 5",
-   "organization": "Z-AI",
-   "score": 72.8,
-   "setting": "Ajan: mini-SWE-agent (SWE-agent)",
-   "source": "SWE-bench",
-   "url": "https://www.swebench.com",
-   "date": "2026-02-17T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "swe-bench-verified",
-   "model": "GPT 5.2",
-   "organization": "OpenAI",
-   "score": 72.8,
-   "setting": "Ajan: mini-SWE-agent (SWE-agent)",
-   "source": "SWE-bench",
-   "url": "https://www.swebench.com",
-   "date": "2026-02-17T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "swe-bench-verified",
-   "model": "GPT 5.2 Codex",
-   "organization": "OpenAI",
-   "score": 72.8,
-   "setting": "Ajan: mini-SWE-agent (SWE-agent)",
-   "source": "SWE-bench",
-   "url": "https://www.swebench.com",
-   "date": "2026-02-19T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "swe-bench-verified",
-   "model": "Claude 4 Sonnet",
-   "organization": "Anthropic",
-   "score": 72.4,
-   "setting": "Ajan: Tools",
-   "source": "SWE-bench",
-   "url": "https://www.swebench.com",
-   "date": "2025-05-22T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "swe-bench-verified",
-   "model": "GPT-5",
-   "organization": "OpenAI",
-   "score": 71.8,
-   "setting": "Ajan: OpenHands (OpenHands)",
-   "source": "SWE-bench",
-   "url": "https://www.swebench.com",
-   "date": "2025-08-07T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "swe-bench-verified",
-   "model": "GPT 5.2",
-   "organization": "OpenAI",
-   "score": 71.8,
-   "setting": "Ajan: mini-SWE-agent (SWE-agent)",
-   "source": "SWE-bench",
-   "url": "https://www.swebench.com",
-   "date": "2025-12-11T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "swe-bench-verified",
-   "model": "Claude 4.5 Sonnet",
-   "organization": "Anthropic",
-   "score": 71.4,
-   "setting": "Ajan: mini-SWE-agent (SWE-agent)",
-   "source": "SWE-bench",
-   "url": "https://www.swebench.com",
-   "date": "2026-02-17T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "swe-bench-verified",
-   "model": "Claude 4 Sonnet",
-   "organization": "Anthropic",
-   "score": 71.2,
-   "setting": "Ajan: Bloop (Bloop AI)",
-   "source": "SWE-bench",
-   "url": "https://www.swebench.com",
-   "date": "2025-07-10T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "swe-bench-verified",
-   "model": "Qodo Command",
-   "organization": null,
-   "score": 71.2,
-   "setting": "Ajan: Qodo Command (Qodo)",
-   "source": "SWE-bench",
-   "url": "https://www.swebench.com",
-   "date": "2025-07-15T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "swe-bench-verified",
-   "model": "GPT-5",
-   "organization": "OpenAI",
-   "score": 71.2,
-   "setting": "Ajan: Prometheus-v1.2 (EuniAI)",
-   "source": "SWE-bench",
-   "url": "https://www.swebench.com",
-   "date": "2025-09-29T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "swe-bench-verified",
-   "model": "Kimi K2",
-   "organization": "Moonshot AI",
-   "score": 71.2,
-   "setting": "Ajan: Lingxi v1.5 (Huawei)",
-   "source": "SWE-bench",
-   "url": "https://www.swebench.com",
-   "date": "2025-10-14T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "swe-bench-verified",
-   "model": "Warp",
-   "organization": null,
-   "score": 71,
-   "setting": "Ajan: Warp (Warp)",
-   "source": "SWE-bench",
-   "url": "https://www.swebench.com",
-   "date": "2025-06-23T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "swe-bench-verified",
-   "model": "Claude 4 Sonnet",
-   "organization": "Anthropic",
-   "score": 70.8,
-   "setting": "Ajan: Moatless Tools (Moatless AI)",
-   "source": "SWE-bench",
-   "url": "https://www.swebench.com",
-   "date": "2025-06-11T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "swe-bench-verified",
-   "model": "Kimi K2.5",
-   "organization": "Moonshot AI",
-   "score": 70.8,
-   "setting": "Ajan: mini-SWE-agent (SWE-agent)",
-   "source": "SWE-bench",
-   "url": "https://www.swebench.com",
-   "date": "2026-02-17T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "swe-bench-verified",
-   "model": "TRAE",
-   "organization": null,
-   "score": 70.6,
-   "setting": "Ajan: TRAE",
-   "source": "SWE-bench",
-   "url": "https://www.swebench.com",
-   "date": "2025-05-19T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "swe-bench-verified",
-   "model": "Claude 4.5 Sonnet",
-   "organization": "Anthropic",
-   "score": 70.6,
-   "setting": "Ajan: mini-SWE-agent (SWE-agent)",
-   "source": "SWE-bench",
-   "url": "https://www.swebench.com",
-   "date": "2025-09-29T00:00:00.000Z"
-  },
-  {
    "benchmarkId": "lmarena-hard",
    "model": "gemini-4-argon-high",
    "organization": "google",
@@ -3840,6 +3440,406 @@
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
    "date": "2026-10-13T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "swe-bench-verified",
+   "model": "Claude 4.5 Opus",
+   "organization": "Anthropic",
+   "score": 79.2,
+   "setting": "Ajan: Sonar Foundation Agent (Sonar)",
+   "source": "SWE-bench",
+   "url": "https://www.swebench.com",
+   "date": "2025-12-05T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "swe-bench-verified",
+   "model": "Claude 4.5 Opus",
+   "organization": "Anthropic",
+   "score": 79.2,
+   "setting": "Ajan: live-SWE-agent (UIUC)",
+   "source": "SWE-bench",
+   "url": "https://www.swebench.com",
+   "date": "2025-12-15T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "swe-bench-verified",
+   "model": "Doubao-Seed-Code",
+   "organization": "ByteDance",
+   "score": 78.8,
+   "setting": "Ajan: TRAE (ByteDance)",
+   "source": "SWE-bench",
+   "url": "https://www.swebench.com",
+   "date": "2025-09-28T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "swe-bench-verified",
+   "model": "Gemini 3 Pro Preview",
+   "organization": "Google DeepMind",
+   "score": 77.4,
+   "setting": "Ajan: live-SWE-agent (UIUC)",
+   "source": "SWE-bench",
+   "url": "https://www.swebench.com",
+   "date": "2025-11-20T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "swe-bench-verified",
+   "model": "Claude 4 Sonnet",
+   "organization": "Anthropic",
+   "score": 76.8,
+   "setting": "Ajan: EPAM AI/Run Developer Agent (EPAM Systems, Inc.)",
+   "source": "SWE-bench",
+   "url": "https://www.swebench.com",
+   "date": "2025-08-04T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "swe-bench-verified",
+   "model": "Atlassian Rovo Dev (2025-09-02)",
+   "organization": null,
+   "score": 76.8,
+   "setting": "Ajan: Atlassian Rovo Dev (Atlassian)",
+   "source": "SWE-bench",
+   "url": "https://www.swebench.com",
+   "date": "2025-09-02T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "swe-bench-verified",
+   "model": "Claude 4.5 Opus",
+   "organization": "Anthropic",
+   "score": 76.8,
+   "setting": "Ajan: mini-SWE-agent (SWE-agent)",
+   "source": "SWE-bench",
+   "url": "https://www.swebench.com",
+   "date": "2026-02-17T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "swe-bench-verified",
+   "model": "ACoder",
+   "organization": null,
+   "score": 76.4,
+   "setting": "Ajan: ACoder (ACoder)",
+   "source": "SWE-bench",
+   "url": "https://www.swebench.com",
+   "date": "2025-08-19T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "swe-bench-verified",
+   "model": "Gemini 3 Flash",
+   "organization": "Google DeepMind",
+   "score": 75.8,
+   "setting": "Ajan: mini-SWE-agent (SWE-agent)",
+   "source": "SWE-bench",
+   "url": "https://www.swebench.com",
+   "date": "2026-02-17T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "swe-bench-verified",
+   "model": "MiniMax M2.5",
+   "organization": "Minimax",
+   "score": 75.8,
+   "setting": "Ajan: mini-SWE-agent (SWE-agent)",
+   "source": "SWE-bench",
+   "url": "https://www.swebench.com",
+   "date": "2026-02-17T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "swe-bench-verified",
+   "model": "Warp",
+   "organization": null,
+   "score": 75.6,
+   "setting": "Ajan: Warp (Warp)",
+   "source": "SWE-bench",
+   "url": "https://www.swebench.com",
+   "date": "2025-09-01T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "swe-bench-verified",
+   "model": "Claude 4.6 Opus",
+   "organization": "Anthropic",
+   "score": 75.6,
+   "setting": "Ajan: mini-SWE-agent (SWE-agent)",
+   "source": "SWE-bench",
+   "url": "https://www.swebench.com",
+   "date": "2026-02-17T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "swe-bench-verified",
+   "model": "TRAE + Claude Sonnet 4 + Opus 4 + Sonnet 3.7 + Gemini 2.5 Pro",
+   "organization": null,
+   "score": 75.2,
+   "setting": "Ajan: TRAE (TRAE)",
+   "source": "SWE-bench",
+   "url": "https://www.swebench.com",
+   "date": "2025-06-12T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "swe-bench-verified",
+   "model": "Claude Sonnet 4",
+   "organization": "Anthropic",
+   "score": 74.8,
+   "setting": "Ajan: Harness AI (Harness)",
+   "source": "SWE-bench",
+   "url": "https://www.swebench.com",
+   "date": "2025-07-31T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "swe-bench-verified",
+   "model": "Claude 4.5 Sonnet",
+   "organization": "Anthropic",
+   "score": 74.8,
+   "setting": "Ajan: Sonar Foundation Agent (Sonar)",
+   "source": "SWE-bench",
+   "url": "https://www.swebench.com",
+   "date": "2025-11-03T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "swe-bench-verified",
+   "model": "Claude 4 Sonnet",
+   "organization": "Anthropic",
+   "score": 74.6,
+   "setting": "Ajan: Lingxi-v1.5 (Lingxi)",
+   "source": "SWE-bench",
+   "url": "https://www.swebench.com",
+   "date": "2025-07-20T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "swe-bench-verified",
+   "model": "JoyCode + Claude 4 Sonnet + GPT-4.1",
+   "organization": null,
+   "score": 74.6,
+   "setting": "Ajan: JoyCode (JoyCode)",
+   "source": "SWE-bench",
+   "url": "https://www.swebench.com",
+   "date": "2025-09-15T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "swe-bench-verified",
+   "model": "Refact.ai Agent + Claude 4 Sonnet + o4-mini",
+   "organization": null,
+   "score": 74.4,
+   "setting": "Ajan: Refact.ai Agent (Refact.ai)",
+   "source": "SWE-bench",
+   "url": "https://www.swebench.com",
+   "date": "2025-06-03T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "swe-bench-verified",
+   "model": "GPT-5",
+   "organization": "OpenAI",
+   "score": 74.4,
+   "setting": "Ajan: Prometheus-v1.2.1 (EuniAI)",
+   "source": "SWE-bench",
+   "url": "https://www.swebench.com",
+   "date": "2025-10-15T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "swe-bench-verified",
+   "model": "Claude 4.5 Opus",
+   "organization": "Anthropic",
+   "score": 74.4,
+   "setting": "Ajan: mini-SWE-agent (SWE-agent)",
+   "source": "SWE-bench",
+   "url": "https://www.swebench.com",
+   "date": "2025-11-24T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "swe-bench-verified",
+   "model": "Gemini 3 Pro Preview",
+   "organization": "Google DeepMind",
+   "score": 74.2,
+   "setting": "Ajan: mini-SWE-agent (SWE-agent)",
+   "source": "SWE-bench",
+   "url": "https://www.swebench.com",
+   "date": "2025-11-18T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "swe-bench-verified",
+   "model": "Salesforce AI Research SAGE (OpenHands)",
+   "organization": null,
+   "score": 73.8,
+   "setting": "Ajan: Salesforce AI Research SAGE (Salesforce AI Research)",
+   "source": "SWE-bench",
+   "url": "https://www.swebench.com",
+   "date": "2025-11-03T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "swe-bench-verified",
+   "model": "Claude 4 Opus",
+   "organization": "Anthropic",
+   "score": 73.2,
+   "setting": "Ajan: Tools",
+   "source": "SWE-bench",
+   "url": "https://www.swebench.com",
+   "date": "2025-05-22T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "swe-bench-verified",
+   "model": "Salesforce AI Research SAGE (bash-only)",
+   "organization": null,
+   "score": 73,
+   "setting": "Ajan: Salesforce AI Research SAGE (Salesforce AI Research)",
+   "source": "SWE-bench",
+   "url": "https://www.swebench.com",
+   "date": "2025-10-21T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "swe-bench-verified",
+   "model": "GLM 5",
+   "organization": "Z-AI",
+   "score": 72.8,
+   "setting": "Ajan: mini-SWE-agent (SWE-agent)",
+   "source": "SWE-bench",
+   "url": "https://www.swebench.com",
+   "date": "2026-02-17T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "swe-bench-verified",
+   "model": "GPT 5.2",
+   "organization": "OpenAI",
+   "score": 72.8,
+   "setting": "Ajan: mini-SWE-agent (SWE-agent)",
+   "source": "SWE-bench",
+   "url": "https://www.swebench.com",
+   "date": "2026-02-17T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "swe-bench-verified",
+   "model": "GPT 5.2 Codex",
+   "organization": "OpenAI",
+   "score": 72.8,
+   "setting": "Ajan: mini-SWE-agent (SWE-agent)",
+   "source": "SWE-bench",
+   "url": "https://www.swebench.com",
+   "date": "2026-02-19T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "swe-bench-verified",
+   "model": "Claude 4 Sonnet",
+   "organization": "Anthropic",
+   "score": 72.4,
+   "setting": "Ajan: Tools",
+   "source": "SWE-bench",
+   "url": "https://www.swebench.com",
+   "date": "2025-05-22T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "swe-bench-verified",
+   "model": "GPT-5",
+   "organization": "OpenAI",
+   "score": 71.8,
+   "setting": "Ajan: OpenHands (OpenHands)",
+   "source": "SWE-bench",
+   "url": "https://www.swebench.com",
+   "date": "2025-08-07T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "swe-bench-verified",
+   "model": "GPT 5.2",
+   "organization": "OpenAI",
+   "score": 71.8,
+   "setting": "Ajan: mini-SWE-agent (SWE-agent)",
+   "source": "SWE-bench",
+   "url": "https://www.swebench.com",
+   "date": "2025-12-11T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "swe-bench-verified",
+   "model": "Claude 4.5 Sonnet",
+   "organization": "Anthropic",
+   "score": 71.4,
+   "setting": "Ajan: mini-SWE-agent (SWE-agent)",
+   "source": "SWE-bench",
+   "url": "https://www.swebench.com",
+   "date": "2026-02-17T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "swe-bench-verified",
+   "model": "Claude 4 Sonnet",
+   "organization": "Anthropic",
+   "score": 71.2,
+   "setting": "Ajan: Bloop (Bloop AI)",
+   "source": "SWE-bench",
+   "url": "https://www.swebench.com",
+   "date": "2025-07-10T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "swe-bench-verified",
+   "model": "Qodo Command",
+   "organization": null,
+   "score": 71.2,
+   "setting": "Ajan: Qodo Command (Qodo)",
+   "source": "SWE-bench",
+   "url": "https://www.swebench.com",
+   "date": "2025-07-15T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "swe-bench-verified",
+   "model": "GPT-5",
+   "organization": "OpenAI",
+   "score": 71.2,
+   "setting": "Ajan: Prometheus-v1.2 (EuniAI)",
+   "source": "SWE-bench",
+   "url": "https://www.swebench.com",
+   "date": "2025-09-29T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "swe-bench-verified",
+   "model": "Kimi K2",
+   "organization": "Moonshot AI",
+   "score": 71.2,
+   "setting": "Ajan: Lingxi v1.5 (Huawei)",
+   "source": "SWE-bench",
+   "url": "https://www.swebench.com",
+   "date": "2025-10-14T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "swe-bench-verified",
+   "model": "Warp",
+   "organization": null,
+   "score": 71,
+   "setting": "Ajan: Warp (Warp)",
+   "source": "SWE-bench",
+   "url": "https://www.swebench.com",
+   "date": "2025-06-23T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "swe-bench-verified",
+   "model": "Claude 4 Sonnet",
+   "organization": "Anthropic",
+   "score": 70.8,
+   "setting": "Ajan: Moatless Tools (Moatless AI)",
+   "source": "SWE-bench",
+   "url": "https://www.swebench.com",
+   "date": "2025-06-11T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "swe-bench-verified",
+   "model": "Kimi K2.5",
+   "organization": "Moonshot AI",
+   "score": 70.8,
+   "setting": "Ajan: mini-SWE-agent (SWE-agent)",
+   "source": "SWE-bench",
+   "url": "https://www.swebench.com",
+   "date": "2026-02-17T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "swe-bench-verified",
+   "model": "TRAE",
+   "organization": null,
+   "score": 70.6,
+   "setting": "Ajan: TRAE",
+   "source": "SWE-bench",
+   "url": "https://www.swebench.com",
+   "date": "2025-05-19T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "swe-bench-verified",
+   "model": "Claude 4.5 Sonnet",
+   "organization": "Anthropic",
+   "score": 70.6,
+   "setting": "Ajan: mini-SWE-agent (SWE-agent)",
+   "source": "SWE-bench",
+   "url": "https://www.swebench.com",
+   "date": "2025-09-29T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-vision",

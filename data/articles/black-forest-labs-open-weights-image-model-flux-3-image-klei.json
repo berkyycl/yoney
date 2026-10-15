@@ -1,0 +1,45 @@
+{
+  "baslik_tr": "Black Forest Labs, 8 GB VRAM'li Tüketici GPU'larda Çalışan Açık Ağırlıklı FLUX 3 Image Klein Modelini Yayınladı",
+  "ozet_tr": "Black Forest Labs, 5.6 milyar parametreli FLUX 3 Image Klein modelini açık ağırlıklarla duyurdu. Model, sadece 8 GB VRAM'li tüketici sınıfı NVIDIA GPU'larda çalışarak 4K görüntü üretimi ve pixel‑tam düzenleme gibi ileri özellikleri sunuyor. İç testlerde en yüksek Elo puanını alarak kapalı modelleri geride bıraktı.",
+  "detayli_icerik_tr": "Black Forest Labs, 5.6 milyar parametreli FLUX 3 Image Klein adlı yeni bir açık‑ağırlıklı görsel modelini piyasaya sürdü. Model, metinden görsele üretim, görsel düzenleme ve aynı anda on referans görüntüye kadar desteklemenin yanı sıra yerel 4K çıktı, piksel‑tam düzenleme ve öğe yerleştirme için sınırlayıcı kutular (bounding boxes) gibi özellikler sunuyor.\n\nPerformans açısından model, INT8 optimizasyonu sayesinde sadece 8 GB VRAM'e sahip NVIDIA GPU'larda çalışabiliyor. RTX 4070 gibi bir kartta bir görseli 9 saniyenin altında sürede üretebiliyor. Bu, yüksek kaliteli görsel üretimini daha geniş bir kullanıcı kitlesine ulaştırma potansiyeli taşıyor.\n\nBlack Forest Labs, FLUX 3 Image Klein'in iç testlerde tüm açık modeller arasında en yüksek Elo puanına sahip olduğunu belirtiyor. Model, kapalı rakip Ideogram V4.5 ve kendi önceki sürümü FLUX 2 [pro] gibi modelleri geride bıraktı; ayrıca 9 milyar parametreli FLUX 2 [klein] modeline göre %38 daha az parametreyle 91 Elo puanlık bir üstünlük sağladı.\n\nModel, FLUX Kommunity Lisansı altında dağıtılıyor; yıllık geliri 5 milyon doların altında olan şirketler için ticari kullanım ücretsiz. Kullanıcılar modeli BFL API üzerinden (1 000 görüntü başına 0,009 $), Playground, Hugging Face Spaces, ComfyUI ve Diffusers aracılığıyla yerel olarak erişebilir. LoRA eğitimi ise Ostris AI Toolkit ve NVIDIA NeMo AutoModel ile ilk günden itibaren destekleniyor.",
+  "onemli_maddeler": [
+    "FLUX 3 Image Klein, sadece 8 GB VRAM ile tüketici sınıfı GPU'larda çalışabiliyor.",
+    "5.6 milyar parametreyle en yüksek Elo puanını alarak açık modeller arasında lider konumda.",
+    "Yerel 4K çıktı, pixel‑tam düzenleme ve bounding box desteği gibi ileri görsel üretim özellikleri sunuyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Açık‑ağırlıklı, yüksek performanslı bir görsel modelin tüketici GPU'larında çalışabilmesi, AI görsel üretim pazarında erişilebilirliği ve rekabeti artırarak sektörde büyük bir etki yaratıyor.",
+  "etiketler": [
+    "FLUX 3",
+    "görsel üretim",
+    "açık ağırlık",
+    "GPU",
+    "yapay zeka"
+  ],
+  "anilan_modeller": [
+    "FLUX 3 Image Klein",
+    "FLUX 2 klein",
+    "Ideogram V4.5",
+    "FLUX 2 [pro]"
+  ],
+  "yorum_tr": "FLUX 3 Image Klein'in düşük bellek gereksinimi, bağımsız geliştiriciler ve küçük ölçekli şirketler için yüksek kaliteli görsel üretimini mümkün kılıyor. Açık lisans politikası ise ekosistemde daha fazla yenilik ve entegrasyonun önünü açıyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "FLUX 3 Image Klein",
+      "benchmark": "Elo rating",
+      "skor": 91,
+      "birim": "Elo",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "FLUX 2 klein karşılaştırması",
+      "kaynak_metinden_alinti": "It scores the highest Elo ratings among all open models in internal testing, beating closed competitors Ideogram V4.5 and even BFL's own FLUX.2 [pro]. It gains 91 Elo points over FLUX.2 [klein] with 38 percent fewer parameters than that model's 9 billion."
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/10/bfl_black_orest_labs_logo-1.png",
+  "url": "https://the-decoder.com/black-forest-labs-open-weights-image-model-flux-3-image-klein-runs-on-consumer-gpus-with-just-8-gb-of-vram/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-15T16:57:14.000Z",
+  "slug": "black-forest-labs-open-weights-image-model-flux-3-image-klei"
+}
