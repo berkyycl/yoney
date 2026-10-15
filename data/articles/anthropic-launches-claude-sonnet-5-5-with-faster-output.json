@@ -1,0 +1,72 @@
+{
+  "baslik_tr": "Anthropic, Claude Sonnet 5.5'i daha hızlı ve daha düşük maliyetli çıktı ile piyasaya sürdü",
+  "ozet_tr": "Anthropic, Claude 5.5 ailesinin ikinci modeli Claude Sonnet 5.5'i tanıttı. Model, önceki sürümden %30 daha hızlı çalışıyor ve aynı iş yüklerinde %30'a kadar maliyet tasarrufu sağlıyor.",
+  "detayli_icerik_tr": "Anthropic, Claude Sonnet 5.5'i duyurarak Claude 5.5 serisinin ikinci üyesini piyasaya sürdü. Sonnet 5.5, Sonnet 5'e kıyasla %30'dan fazla daha hızlı yanıt veriyor ve token tüketiminin azalması sayesinde çoğu görevde %30'a kadar daha ucuz. Model, özellikle hata ayıklama, belge hazırlama, slayt ve tablo oluşturma gibi iyi tanımlanmış günlük işlerde kullanılmak üzere tasarlandı ve Opus 5.5'in karmaşık, açık uçlu görevlerdeki üstünlüğünü tamamlayıcı bir konumda yer alıyor.\n\nYeni modelin fiyatlandırması token başına aynı kalırken, daha az token harcaması sayesinde toplam maliyet düşüyor. Girdi tokenları için $2, çıktı tokenları için $10, önbellek okuma $0.20 ve önbellek yazma $2.50 olarak belirlenmiş. Kullanıcılar, Claude Platform üzerinden \"claude-sonnet-5-5\" model kimliğiyle erişebiliyor ve veri saklama özelliği kapalı olarak sunuluyor. Varsayılan çaba seviyesi Claude Code ve Claude uygulamalarında Orta, Claude Platform’da ise Yüksek olarak ayarlanmış; kullanıcılar hız ve maliyet dengesini ayarlamak için çaba seviyesini değiştirebiliyor.\n\nGüvenlik açısından Sonnet 5.5, Opus 5.5'te kullanılan siber koruma ve yüksek riskli istekler için geri dönüş davranışlarını ilk kez Sonnet serisine getiriyor. Biyoloji korumaları önceki sürümle aynı kalırken, yeni sınıflandırıcılar akıl yürütme çıkarımını hedefliyor ve korunan düşünme (preserved thinking) kapsamı genişletildi. Bu ek kontroller rutin yazılım geliştirme ve yaşam bilimleri çalışmalarını etkilemiyor.\n\nBenchmark sonuçları da modelin iddiasını destekliyor. Terminal-Bench 4.0 testinde %70.6'lık skor elde ederken, önceki sürümün %10.3'lük skoruna göre büyük bir sıçrama gösterdi. CursorBench 4.0'da %55.5, FrontierCode 1.1 Main (Maksimum çaba) testinde %46.2 ve OSWorld 2.1 kısmi skorunda %80.1 elde etti. Bu sonuçlar, Sonnet 5.5'in tasarım ve bilgi işi performansında Opus 5.5'e yaklaşarak, günlük görevlerde daha hızlı ve ekonomik bir seçenek sunduğunu gösteriyor.",
+  "onemli_maddeler": [
+    "Claude Sonnet 5.5, önceki sürümden %30'dan fazla daha hızlı çalışıyor.",
+    "Token başına aynı fiyatlandırma korunurken, daha az token tüketimi sayesinde maliyet %30'a kadar düşüyor.",
+    "Terminal-Bench 4.0'da %70.6 skor elde ederek Sonnet 5'in %10.3'lük skorundan büyük sıçrama yaptı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Claude Serisinin yeni bir üyesi olarak Sonnet 5.5, performans, maliyet ve güvenlik açısından önemli iyileştirmeler getiriyor; benchmark sonuçları sektördeki rekabeti etkileyebilir.",
+  "etiketler": [
+    "Claude Sonnet 5.5",
+    "Anthropic",
+    "AI model",
+    "benchmark",
+    "cloud"
+  ],
+  "anilan_modeller": [
+    "Claude Sonnet 5.5",
+    "Claude Sonnet 5",
+    "Claude Opus 5.5",
+    "Haiku 5.5"
+  ],
+  "yorum_tr": "Sonnet 5.5'in hız ve maliyet avantajları, geliştiricilerin günlük iş akışlarını hızlandırırken bütçelerini kontrol altında tutmalarını sağlayacak. Benchmarkteki güçlü performansı ise Anthropic'in model pazarındaki konumunu güçlendirebilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Claude Sonnet 5.5",
+      "benchmark": "Terminal-Bench 4.0",
+      "skor": 70.6,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Sonnet 5.5 scored 70.6% on Terminal-Bench 4.0, compared with 10.3% for Sonnet 5"
+    },
+    {
+      "model": "Claude Sonnet 5.5",
+      "benchmark": "CursorBench 4.0",
+      "skor": 55.5,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "55.5% on CursorBench 4.0, compared with 34.1%"
+    },
+    {
+      "model": "Claude Sonnet 5.5",
+      "benchmark": "FrontierCode 1.1 Main",
+      "skor": 46.2,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Max effort",
+      "kaynak_metinden_alinti": "At Max effort, it reached 46.2% on FrontierCode 1.1 Main versus 42.4% for its predecessor"
+    },
+    {
+      "model": "Claude Sonnet 5.5",
+      "benchmark": "OSWorld 2.1",
+      "skor": 80.1,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "partial score",
+      "kaynak_metinden_alinti": "recorded an 80.1% partial score on OSWorld 2.1, up from 57.0% for Sonnet 5"
+    }
+  ],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/09/banner-26.webp",
+  "url": "https://www.testingcatalog.com/anthropic-launches-claude-sonnet-5-5-with-faster-output/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-09-29T22:51:41.000Z",
+  "slug": "anthropic-launches-claude-sonnet-5-5-with-faster-output"
+}

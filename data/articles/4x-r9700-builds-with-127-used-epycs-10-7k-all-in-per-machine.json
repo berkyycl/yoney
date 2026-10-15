@@ -1,0 +1,68 @@
+{
+  "baslik_tr": "4x R9700 ve $127 EPYC ile 384 GB VRAM: Makine başına $10,7k maliyet, detaylı benchmark sonuçları",
+  "ozet_tr": "Bir girişimci, dört adet ASRock Radeon AI PRO R9700 kartı ve ikinci el AMD EPYC 7452 işlemcileriyle toplam 384 GB VRAM sağlayan bir sistem kurdu ve her bir kutunun maliyetini $10.733,91 olarak açıkladı. Sistem, Qwen 3.8‑27B FP8 modeliyle yapılan benchmarklarda yüksek token işleme hızı ve düşük hata oranı gösterdi.",
+  "detayli_icerik_tr": "Reddit kullanıcısı NickReese, 10 kişilik bir startup için tasarladığı 4x R9700 yapılandırmasını paylaştı. Toplam maliyet, vergiler ve nakliye dahil olmak üzere kutu başına $10.733,91 iken, üç kutu toplam 384 GB VRAM sağladı. Sistem, AMD EPYC 7452 (32 çekirdek, $127) ve ASRock Radeon AI PRO R9700 Creator 32 GB kartlarından oluşuyor; GPU'lar toplam maliyetin iki‑üçte birini oluşturuyor. Donanım, aynı zamanda CI/CD süreçlerini de yürütüyor; Rust derlemeleri, inference önceliği ayarlandığında sadece %3‑8 yavaşlıyor.\n\nKurulum, vLLM‑Radiance 1.0.387 (vLLM 0.30.0, ROCm 7.14) motoru ve Qwen 3.8‑27B‑FP8 checkpoint'iyle çalışıyor. İki motor, her biri TP=2 ve 8 sekansla, 256K maksimum bağlam uzunluğunda 488K token KV önbelleği kullanıyor. Tek bir kullanıcı için MT‑Bench testi 53,1 token/s ve ortalama 125 ms TTFT (p50) sağlarken, 16 kullanıcıda toplam 484 token/s (kullanıcı başına yaklaşık 40 token/s) elde edildi. 32 kullanıcıda ise 603 token/s ölçüldü.\n\nPrefill performansı da dikkat çekici: 4 KB bağlamda 7.044 token/s, 8 KB’da 7.495 token/s, 16 KB’da 7.241 token/s, 32 KB’da 6.696 token/s ve 64 KB’da 5.961 token/s ulaşıldı. FP8 doğruluk testi %98,0 (100 üzerinden) ve saat başına 4.477 doğrulanmış iş üretimi gösterirken, MXFP4 modunda %95,3 doğruluk ve 4.819 iş/saat elde edildi. Hold‑out setinde FP8 %94,0, MXFP4 %90,0 doğruluk sağladı.\n\nBu yapı, aynı iş yükünü Apple M4 Max ve M3 Ultra tabanlı altı Mac Studio’ya kıyasla çok daha düşük maliyetle (yaklaşık $280 k) ve yüksek doğrulukla sunuyor. NickReese, bu deneyimi yeni başlayanlar ve yerel AI çözümlerine geçmek isteyenler için bir video rehberiyle de destekledi.",
+  "onemli_maddeler": [
+    "4x R9700 GPU ve ikinci el EPYC 7452 işlemciyle 384 GB VRAM sağlayan kutu başına $10,7k maliyet.",
+    "Qwen 3.8‑27B‑FP8 modeliyle 16 kullanıcıda 484 token/s toplam throughput ve %98 doğruluk.",
+    "FP8 modunda hatalar %2‑7 azalırken, MXFP4 modunda iş hacmi %8 artış gösterdi."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Yerel AI altyapısının maliyet ve performans açısından büyük bir alternatif sunması, startup ve orta ölçekli işletmeler için kritik bir referans oluşturuyor.",
+  "etiketler": [
+    "AI donanım",
+    "R9700",
+    "EPYC",
+    "benchmark",
+    "MTP"
+  ],
+  "anilan_modeller": [
+    "Luna 6",
+    "DeepSeek",
+    "GLM 5.3",
+    "Qwen 3.8 27B",
+    "Gemma",
+    "Inkling",
+    "Kimi",
+    "GLM Flash",
+    "Qwen3.8-27B-FP8"
+  ],
+  "yorum_tr": "Bu yapı, yüksek VRAM ve düşük maliyetle yerel LLM çalıştırma ihtiyacını karşılayarak bulut bağımlılığını azaltıyor; geliştiriciler için ölçeklenebilir bir çözüm ve kullanıcılar için daha hızlı, güvenilir yanıtlar anlamına geliyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen3.8-27B-FP8",
+      "benchmark": "MT-Bench (16 kullanıcı, aggregate)",
+      "skor": 484,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "16 users",
+      "kaynak_metinden_alinti": "16 users, MT-Bench: 484 tok/s aggregate, about 40 tok/s per user"
+    },
+    {
+      "model": "Qwen3.8-27B-FP8",
+      "benchmark": "FP8 doğruluk",
+      "skor": 98,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "FP8: 98.0/100 correct, 4,477 validated jobs an hour"
+    },
+    {
+      "model": "Qwen3.8-27B-MXFP4",
+      "benchmark": "MXFP4 doğruluk",
+      "skor": 95.3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "MXFP4: 95.3/100, 4,819 an hour"
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/ok6jarmvzivh1.jpg?width=140&height=105&auto=webp&s=9695a3c78461da07086c738e105c7e5a6e9ff5d5",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x67qeu/4x_r9700_builds_with_127_used_epycs_107k_allin/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-15T00:31:42.000Z",
+  "slug": "4x-r9700-builds-with-127-used-epycs-10-7k-all-in-per-machine"
+}

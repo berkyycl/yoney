@@ -1,0 +1,74 @@
+{
+  "baslik_tr": "OpenAI, GPT-6.1 Sol modelini Astra fiyatının beşte biriyle piyasaya sürdü",
+  "ozet_tr": "OpenAI, yüksek performanslı GPT‑6.1 Sol modelini duyurdu; model, ajan tabanlı kodlama, bilgisayar kullanımı ve profesyonel iş akışlarında Astra seviyesinde zeka sunarken token fiyatlarını beşte birine indiriyor. Ayrıca önbellekli giriş maliyeti %95 indirimle sadece 0,10 $ /M token olarak belirlenmiş.",
+  "detayli_icerik_tr": "OpenAI, GPT‑6.1 Sol adlı yeni modeli tanıttı. Bu sürüm, ajan tabanlı kodlama, bilgisayar kullanımı ve karmaşık profesyonel iş akışları için GPT‑6 Astra seviyesinde zeka sağlarken, giriş‑çıkış token fiyatlarını Astra’nın beşte biri seviyesine çekiyor.\n\nModel, önbellekli giriş maliyetini %95 azaltarak milyon token başına 0,10 $ fiyatla sunuyor; bu, bağlamı yeniden kullanan uzun süren ajanlar için maliyetleri dramatik biçimde düşürüyor. GPT‑6.1 Sol, ChatGPT Work, Codex ve API (gpt-6.1-sol) üzerinden Plus, Pro, Business, Enterprise ve Edu kullanıcılarına açık, ancak henüz Chat arayüzünde bulunmuyor.\n\nBenchmark sonuçları da iddialı: DeepSWE v1.1 testinde GPT‑6.1 Sol, GPT‑6 Astra’nın doğruluğunu beşte bir maliyetle yakalarken, GPT‑6 Sol’dan %6,4 puan daha yüksek skor elde etti. AutomationBench’te orta çaba seviyesinde Opus 5.5’i %2,2 puan geçerek maliyeti üçte birine indirdi. OSWorld 2.0 offline setinde ise maksimum çaba ile GPT‑6 Sol’dan 7 puan farkla önde, Astra’ya sadece 2,1 puan farkla yaklaşarak maliyeti yedi kat azalttı.\n\nBilimsel görevlerde de öne çıkan model, Terminal‑Bench Science testinde GPT‑6 Sol’un skorunu iki katına çıkararak görev başına ortalama 5,47 $ maliyetle sonuç verdi; karşılaştırmalı olarak Opus 5.5 23,21 $, Astra ise 23,80 $ harcıyor. Astra hâlâ en zor araştırma görevlerinde %68,1 skorla liderliğini korusa da, GPT‑6.1 Sol sadece bir puan farkla Intelligence Index’te Astra’nın hemen altında yer alıyor ve görev başına maliyetini çeyreğe düşürüyor.",
+  "onemli_maddeler": [
+    "Near‑Astra performansını Astra fiyatının sadece %20'sine sunuyor.",
+    "Önbellekli giriş maliyeti %95 indirimle milyon token başına 0,10 $.",
+    "DeepSWE v1.1 testinde %6,4 puan, AutomationBench’te %2,2 puan ve OSWorld 2.0 offline’da 7 puanlık iyileşmeler sağladı.",
+    "Terminal‑Bench Science’de görev başına maliyet 5,47 $, rakiplerin üçte birine eşdeğer.",
+    "API üzerinden gpt-6.1-sol adıyla hemen kullanılabilir, ancak Chat arayüzünde henüz yok."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Model, yüksek performans ve çok daha düşük maliyet sunarak hem geliştiricileri hem de kurumsal kullanıcıları etkileyen büyük bir fiyat‑performans kayması yaratıyor; aynı zamanda benchmark sonuçlarıyla rekabet gücünü kanıtlıyor.",
+  "etiketler": [
+    "GPT-6.1 Sol",
+    "OpenAI",
+    "AI modeli",
+    "fiyat",
+    "benchmark"
+  ],
+  "anilan_modeller": [
+    "GPT-6 Astra",
+    "GPT-6 Sol",
+    "GPT-6.1 Sol",
+    "Opus 5.5"
+  ],
+  "yorum_tr": "GPT‑6.1 Sol, yüksek doğruluk ve düşük maliyet dengesini bir araya getirerek geliştiricilerin uzun vadeli ajan projelerini daha ekonomik hâle getiriyor; aynı zamanda işletmelerin AI‑destekli iş akışlarını ölçeklendirmesini kolaylaştıracak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GPT-6.1 Sol",
+      "benchmark": "DeepSWE v1.1",
+      "skor": 6.4,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "lower reasoning effort and cost",
+      "kaynak_metinden_alinti": "GPT‑6.1 Sol matched GPT‑6 Astra at roughly one-fifth of the cost and beat GPT‑6 Sol’s best score by 6.4 percentage points at lower reasoning effort and cost."
+    },
+    {
+      "model": "GPT-6.1 Sol",
+      "benchmark": "AutomationBench",
+      "skor": 2.2,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "medium reasoning effort",
+      "kaynak_metinden_alinti": "GPT‑6.1 Sol also moved ahead of Opus 5.5 by 2.2 percentage points on AutomationBench at medium reasoning effort for roughly one-third of the cost."
+    },
+    {
+      "model": "GPT-6.1 Sol",
+      "benchmark": "OSWorld 2.0 offline",
+      "skor": 7,
+      "birim": "point",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "maximum effort",
+      "kaynak_metinden_alinti": "On OSWorld 2.0’s offline set, the model beat GPT‑6 Sol by seven points at maximum effort for less than half the cost, landing within 2.1 points of Astra."
+    },
+    {
+      "model": "GPT-6.1 Sol",
+      "benchmark": "Terminal-Bench Science",
+      "skor": 5.47,
+      "birim": "$",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "per task cost",
+      "kaynak_metinden_alinti": "it more than doubled GPT‑6 Sol’s score and averaged $5.47 per task, compared with $23.21 for Opus 5.5 and $23.80 for Astra."
+    }
+  ],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/09/banner-28.webp",
+  "url": "https://www.testingcatalog.com/openai-launches-gpt-6-1-sol-at-one-fifth-of-astra-pricing/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-09-30T13:24:16.000Z",
+  "slug": "openai-launches-gpt-6-1-sol-at-one-fifth-of-astra-pricing"
+}

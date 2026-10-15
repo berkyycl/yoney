@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "Microsoft'tan 137B toplam, 6.8B aktif parametreli MAI Code 1.1 Flash yerel modeli",
+  "ozet_tr": "Microsoft AI, kod üretimine odaklı bir karışım‑uzmanı (Mixture‑of‑Experts) modeli olan MAI Code 1.1 Flash'ın yerel sürümünü duyurdu. Model, toplamda 137 milyar parametreye sahipken aynı anda 6,8 milyar aktif parametreyle çalışıyor.",
+  "detayli_icerik_tr": "Microsoft, yapay zeka araştırma ekibi aracılığıyla MAI Code 1.1 Flash adlı yeni bir kodlama‑optimize modeli geliştirdiğini Reddit topluluğuna duyurdu. Bu model, \"mixture‑of‑experts\" mimarisi kullanarak, 137 milyar toplam parametreyi 6,8 milyar aktif parametreye dinamik olarak indiriyor; böylece yüksek performans ve düşük yerel kaynak tüketimi sağlanıyor.\n\nPaylaşılan bağlantı, Microsoft'un Windows için yerel modelleri sandbox ortamında çalıştırmaya yönelik GitHub deposuna yönlendiriyor. Bu sayede geliştiriciler, bulut tabanlı API'lere bağımlı kalmadan, kendi makinelerinde güçlü bir kod üretim modeli çalıştırabilecek. Modelin özellikle kod tamamlama, hata ayıklama ve otomatik test üretimi gibi görevlerde kullanılabileceği belirtiliyor.\n\nMAI Code 1.1 Flash, önceki Microsoft AI modellerine kıyasla daha büyük bir parametre havuzuna sahip, ancak aktif parametre sayısının sınırlı olması sayesinde bellek ve işlemci gereksinimlerini kontrol altında tutuyor. Bu yaklaşım, büyük dil modellerinin yerel cihazlarda çalıştırılabilirliğini artırma trendiyle uyumlu.\n\nHenüz resmi bir blog gönderisi veya teknik dokümantasyon yayınlanmamış olsa da, topluluk üyeleri modelin kod tabanını inceleyerek deneysel testler yapmayı planlıyor. Modelin açık kaynak olup olmayacağı ve lisans koşulları da merak konusu.",
+  "onemli_maddeler": [
+    "Microsoft AI, MAI Code 1.1 Flash adlı 137 B toplam, 6.8 B aktif parametreli bir kodlama‑optimize modeli geliştirdi.",
+    "Model, mixture‑of‑experts mimarisi sayesinde yüksek performansı düşük yerel kaynak tüketimiyle birleştiriyor.",
+    "GitHub'da yayınlanan sandbox araçları, geliştiricilerin modeli kendi makinelerinde çalıştırmasına olanak tanıyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 3,
+  "onem_gerekce": "137 B'lik bir modelin yerel sürümünün duyurulması, büyük dil modellerinin cihaz bazlı kullanımına yeni bir bakış açısı getiriyor ancak resmi detayların eksikliği ve henüz geniş çapta test edilmemiş olması nedeniyle sektörel etkisi sınırlı kalıyor.",
+  "etiketler": [
+    "Microsoft",
+    "AI",
+    "Model",
+    "Local",
+    "Mixture-of-Experts"
+  ],
+  "anilan_modeller": [
+    "MAI Code 1.1 Flash"
+  ],
+  "yorum_tr": "Bu duyuru, büyük ölçekli kodlama modellerinin yerel cihazlarda çalıştırılabilirliğini artırma yönündeki bir adım olarak görülüyor. Geliştiriciler, bulut maliyetlerinden bağımsız olarak güçlü bir kod üretim aracı elde edebilir, ancak modelin performans ve stabilite testleri bekleniyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/w1--_AyuCsTnwm_QJIEefMFcIvBEOt2TjueoMq6Dp0I.png?width=640&crop=smart&auto=webp&s=96f08808ef96d897d6830861144f2f4d607da03c",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x6h51s/137b_a68b_model_from_microsoft/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-15T09:30:24.000Z",
+  "slug": "137b-a6-8b-model-from-microsoft"
+}
