@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "ggml-org/llama.cpp'ye Nemotron Super 3.5 VL ve Nemotron Bolt 74B A9B Desteği Eklendi",
+  "ozet_tr": "ggml-org/llama.cpp projesine, Nemotron Super 3.5 VL ve Nemotron Bolt 74B A9B modellerinin çalıştırılabilmesi için yeni bir Pull Request (PR #30520) eklendi. Bu güncelleme, topluluk üyelerinin bu yüksek kapasiteli modelleri yerel ortamda verimli bir şekilde çalıştırmasını mümkün kılıyor.",
+  "detayli_icerik_tr": "ggml-org/llama.cpp deposunda, kullanıcı \"frozenblade1224\" tarafından gönderilen PR #30520, Nemotron serisinin iki yeni modeline – Super 3.5 VL ve Bolt 74B A9B – destek ekliyor. Llama.cpp, GGML tabanlı hafif bir inference motoru olarak, CPU ve GPU üzerinde düşük bellek tüketimiyle büyük dil modellerini çalıştırabilmesiyle biliniyor; yeni eklenen modeller, özellikle görsel‑dil (VL) ve çok‑parametreli (74B) görevlerde performans artışı vaat ediyor.\n\nKod değişiklikleri arasında model yapılandırma dosyalarının tanımlanması, kv‑cache yönetiminin optimize edilmesi ve quantization (A9B) formatına özgü ağırlık okuma rutinlerinin eklenmesi yer alıyor. Ayrıca, README ve örnek komut satırı argümanları güncellenerek, kullanıcıların bu modelleri nasıl indireceği ve çalıştıracağına dair adım‑adım talimatlar sağlandı.\n\nTopluluk, bu güncellemeyi özellikle araştırmacılar ve geliştiriciler arasında büyük bir ilgiyle karşıladı. Nemotron Super 3.5 VL, görsel girdileri işleyebilen bir multimodal model olarak, metin‑görsel eşleştirme ve açıklama üretiminde yeni uygulama senaryoları sunuyor. Öte yandan, Nemotron Bolt 74B A9B, 74 milyar parametreli bir dil modeli olup, A9B quantization sayesinde bellek ayak izini önemli ölçüde azaltıyor ve daha geniş donanım yelpazesinde kullanılabilir hâle getiriyor.\n\nBu destek, llama.cpp'nin açık kaynak ekosisteminde model çeşitliliğini artırarak, hem akademik araştırmalara hem de üretim ortamlarına daha fazla seçenek sunuyor. Geliştiriciler, kod tabanının modüler yapısı sayesinde benzer model eklemelerini kendi projelerine kolayca entegre edebilecek ve topluluk katkılarını hızla test edebilecek.",
+  "onemli_maddeler": [
+    "Nemotron Super 3.5 VL ve Nemotron Bolt 74B A9B modelleri llama.cpp'ye eklendi.",
+    "A9B quantization desteği sayesinde 74B modelinin bellek gereksinimi düşürüldü.",
+    "Güncellenen dokümantasyon, modellerin indirilmesi ve çalıştırılması için adım‑adım rehber içeriyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 3,
+  "onem_gerekce": "Yeni model desteği, açık kaynak topluluğu ve yerel AI uygulamaları için önemli bir genişleme sağlasa da, henüz geniş çaplı ticari etkisi sınırlı olduğu için orta seviyede bir öneme sahiptir.",
+  "etiketler": [
+    "Nemotron",
+    "llama.cpp",
+    "ggml",
+    "model-desteği",
+    "açık-kaynak"
+  ],
+  "anilan_modeller": [
+    "Nemotron Super 3.5 VL",
+    "Nemotron Bolt 74B A9B"
+  ],
+  "yorum_tr": "Bu güncelleme, yerel ortamda büyük ve multimodal modelleri çalıştırmak isteyen geliştiriciler için değerli bir adım. Açık kaynak ekosistemi, topluluk katkılarıyla hızla çeşitleniyor ve yeni kullanım senaryoları ortaya çıkıyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/0a7UEMTG9KO18I-7Gg0lkkQNMynyuWTCguSgwY_w0ps.png?width=640&crop=smart&auto=webp&s=52cfb4248a897f80f7b2d6eb3fdc9014118909e4",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x6mlby/add_nemotron_super_35_vl_and_nemotron_bolt_74b/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-15T14:06:37.000Z",
+  "slug": "add-nemotron-super-3-5-vl-and-nemotron-bolt-74b-a9b-support"
+}

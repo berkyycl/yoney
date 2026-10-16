@@ -1,0 +1,36 @@
+{
+  "baslik_tr": "Ternary Bonsai 2 Ailesi: 2B, 4B ve 9B Modelleri Qwen 3.5 Tabanlı",
+  "ozet_tr": "Topluluk, Qwen 3.5 tabanlı yeni Ternary Bonsai 2 serisini (2B, 4B ve 9B) tanıttı. Modeller, özel bir llama.cpp dalı (prism) gerektirdiği iddiasıyla duyurulsa da, son güncelleme ile standart llama.cpp ile de çalışabiliyor.",
+  "detayli_icerik_tr": "Reddit'in LocalLLaMA topluluğu, Qwen 3.5 üzerine inşa edilen Ternary Bonsai 2 ailesini duyurdu. 2 milyar, 4 milyar ve 9 milyar parametreli üç farklı boyutta sunulan bu modeller, önceki Bonsai serilerinde gözlemlenen döngüsel davranışları test etmek amacıyla geliştirildi. İlk etapta modellerin çalıştırılması için llama.cpp'in \"prism\" adlı özel bir dalı gerektiği belirtilmişti, ancak topluluk üyeleri sonrasında standart llama.cpp ile de uyumlu olduklarını doğruladı.\n\nBu modellerin mobil entegrasyonu da gündemde. AnythingLLM Mobile için LLama.rn çatallaması üzerinden destek sağlanması planlanıyor ve iOS cihazlarda LocallyAI uygulamasıyla test edilmesi mümkün. Geliştiriciler, bu yeni modellerin Qwen 3.5'in 1.7B ve 0.8B sürümlerini geride bırakabileceğini ve özellikle düşük bellekli cihazlarda daha yüksek performans sunabileceğini öne sürüyor.\n\nTeknik açıdan, modellerin QAT (Quantization Aware Training) gibi yöntemlerle eğitildiği ve dFlash, MTP ve MLX gibi hızlandırıcıların desteklendiği belirtiliyor. Bu özelliklerin, özellikle token per second (TPS) oranlarını artırarak gerçek zamanlı uygulamalarda daha akıcı bir deneyim sağlaması bekleniyor. Ancak henüz resmi benchmark sonuçları paylaşılmadığı için performans iddiaları topluluk testlerine dayanıyor.\n\nTopluluk, bu modellerin açık kaynak ekosistemine katkı sağlayacağını ve yerel AI çözümlerinin çeşitlenmesine yardımcı olacağını vurguluyor. Modelin farklı boyutları, araştırmacıların ve geliştiricilerin ihtiyaçlarına göre ölçeklenebilir bir seçenek sunuyor, bu da özellikle sınırlı donanım kaynaklarına sahip projeler için önemli bir avantaj oluşturuyor.",
+  "onemli_maddeler": [
+    "Ternary Bonsai 2 serisi, 2B, 4B ve 9B parametreli üç modelle Qwen 3.5 tabanlı yeni bir aile sunuyor.",
+    "İlk etapta özel bir llama.cpp dalı (prism) gerektirdiği söylenirken, son güncelleme ile standart llama.cpp ile de çalışabiliyor.",
+    "dFlash, MTP ve MLX gibi hızlandırıcıların desteği sayesinde mobil ve düşük bellekli cihazlarda yüksek TPS hedefleniyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 3,
+  "onem_gerekce": "Topluluk tarafından yayınlanan yeni model ailesi, açık kaynak AI ekosistemine katkı sağlasa da henüz geniş çaplı ticari kullanım veya resmi benchmark sonuçları yok; bu yüzden etkisi sınırlı ancak ilgi çekici.",
+  "etiketler": [
+    "Qwen 3.5",
+    "Bonsai",
+    "llama.cpp",
+    "Quantization",
+    "Mobile AI"
+  ],
+  "anilan_modeller": [
+    "Ternary Bonsai 2 2B",
+    "Ternary Bonsai 2 4B",
+    "Ternary Bonsai 2 9B",
+    "Qwen 3.5 1.7B",
+    "Qwen 3.5 0.8B"
+  ],
+  "yorum_tr": "Bu topluluk odaklı model çıkışı, düşük kaynaklı cihazlarda AI uygulamalarını genişletmek isteyen geliştiriciler için yeni bir seçenek sunuyor; ancak performansın doğrulanması ve geniş çaplı entegrasyonlar için daha fazla test ve benchmark gerekecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/OLvpP-gSQa58uq-CXUfnmxOtzd3My7-3lj1CQDS2Xys.png?width=640&crop=smart&auto=webp&s=5a120dab33b148d355b067693553ab13504901be",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x6yk1f/ternary_bonsai_2_family_2b_4b_9b_based_on_qwen_35/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-15T21:45:44.000Z",
+  "slug": "ternary-bonsai-2-family-2b-4b-9b-based-on-qwen-3-5"
+}

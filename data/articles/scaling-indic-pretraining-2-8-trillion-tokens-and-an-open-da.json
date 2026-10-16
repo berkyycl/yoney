@@ -1,0 +1,54 @@
+{
+  "baslik_tr": "2.8 Trilyon Tokenlik Açık Veri Seti ve GPU Hızlandırmalı Indic Ön‑Eğitim Pipeline’ı",
+  "ozet_tr": "NVIDIA ve AI4Bharat, 22 Hint dili için 2,8 trilyon token içeren Nemotron-pretraining-Indic-v1 veri setini ve bu veriyi üretmek için açık kaynaklı, GPU‑hızlandırmalı bir pipeline'ı duyurdu. Pipeline, belge‑seviyesinde çeviri, kalite değerlendirmesi ve hata düzeltme adımlarını içeriyor ve hem yerel script hem de romanize edilmiş verileri sağlıyor. İlk testler, Nemotron 3.5 Super VL modelinin Hint dili görevlerinde %5‑10 arasında performans artışı elde ettiğini gösteriyor.",
+  "detayli_icerik_tr": "NVIDIA, IIT Madras ve AI4Bharat iş birliğiyle, Hindistan Anayasası'nda yer alan 22 dili kapsayan 2,8 trilyon tokenlik bir ön‑eğitim veri seti (Nemotron-pretraining-Indic-v1) yayınlamaya hazırlanıyor. Veri seti, 22 yerel script ve 12 romanize edilmiş dil konfigürasyonunu içeriyor; toplamda 2.601 trilyon yerel‑script ve 224,6 milyar romanize token bulunuyor. Bu token sayıları Gemma‑4 tokenizer'ı ile ölçülmüş ve her kayıt, kaynak İngilizce belgeye geri izlenebilir şekilde saklanıyor.\n\nVeri üretim süreci, NVIDIA'nın açık kaynaklı NeMo Data Designer çerçevesiyle dört aşamalı bir pipeline üzerinden yürütülüyor: çeviri, kalite değerlendirmesi, düşük puanlı çıktının geri dönüşümü ve romanizasyon. Çeviri aşamasında Gemma‑4‑31B‑it modeli, teknik içerik (kod, denklemler, tablolar) korunarak tam belge çevirisi yapıyor. Çıktılar, çok boyutlu kalite metriği (MQM) tabanlı 0‑100 puanlama ile değerlendiriliyor ve en az 75 puan alanlar kabul ediliyor; düşük puanlılar ise otomatik geri dönüşümle iyileştiriliyor. Bu süreç, 438,4 milyar tokenlik veri kurtarmasını mümkün kıldı.\n\nİki farklı dil grubu için ayrı akışlar tasarlandı. On iki çift‑script dili (ör. Hindi, Tamil) için tam‑belge çevirisi ve ardından romanizasyon uygulanırken, kalan on dil (ör. Assamese, Santali) için Indic Translate modeli ve özel script dönüşümleri kullanıldı. Sonuçta, hem yerel script hem de romanize veri, kaynak belgelerle tutarlı ve teknik içerik açısından zengin bir yapıya sahip.\n\nNemotron 3.5 Super VL modeli, bu sentetik ve doğal Hint dili verisinin %10'luk bir kısmı eklenerek yapılan devamlı ön‑eğitim (CPT) aşamasından sonra beş gösterge (MILU, Indic MMLU‑Pro, Indic ARC‑Challenge, Indic ARC‑Easy, Indic GSM8K) üzerinde %4,98‑9,82 puanlık iyileşme kaydetti. Ayrıca, önceki nesil Nemotron 3 modeline kıyasla altı görevde beşinde üstünlük sağlarken, IFEval 1.5 görevinde %2,04 puanlık bir düşüş yaşandı. Bu sonuçlar, sentetik veri ve açık pipeline'ın Hint dili modellerinin bilgi ve akıl yürütme yeteneklerini artırmadaki potansiyelini gösteriyor.",
+  "onemli_maddeler": [
+    "22 Hint dili için 2,8 trilyon tokenlik açık veri seti ve GPU‑hızlandırmalı üretim pipeline'ı sunuldu.",
+    "NeMo Data Designer tabanlı dört aşamalı süreç, çeviri kalitesini 75/100 puan eşiğiyle otomatik değerlendirme ve geri dönüşümle garanti ediyor.",
+    "Nemotron 3.5 Super VL, yeni veri karışımıyla beş Hint dili benchmark'unda %5‑10 arasında performans artışı elde etti."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Büyük ölçekli, açık ve tekrarlanabilir bir Hint dili veri üretim süreci, bölgesel LLM geliştirmelerini hızlandırarak hem akademik hem de endüstriyel araştırmalara önemli bir ivme kazandırıyor.",
+  "etiketler": [
+    "Indic NLP",
+    "synthetic data",
+    "NVIDIA",
+    "AI4Bharat",
+    "Nemotron"
+  ],
+  "anilan_modeller": [
+    "Nemotron-pretraining-Indic-v1",
+    "Nemotron 3.5 Super VL",
+    "Nemotron 3 Super",
+    "Gemma-4-31B-it"
+  ],
+  "yorum_tr": "Açık veri seti ve pipeline, Hint dili LLM'lerinin veri kıtlığı sorununu hafifletirken, geliştiricilerin kendi veri karışımlarını özelleştirmesine olanak tanıyor; bu da bölgesel yapay zeka ekosisteminin çeşitlenmesine ve rekabet gücünün artmasına yol açacak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Nemotron 3.5 Super VL",
+      "benchmark": "MILU",
+      "skor": 9.82,
+      "birim": "pp",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Indic CPT aşaması sonrası",
+      "kaynak_metinden_alinti": "Gains range from 4.98 to 9.82 percentage points."
+    },
+    {
+      "model": "Nemotron 3.5 Super VL",
+      "benchmark": "Indic GSM8K",
+      "skor": 4.98,
+      "birim": "pp",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Indic CPT aşaması sonrası",
+      "kaynak_metinden_alinti": "Gains range from 4.98 to 9.82 percentage points."
+    }
+  ],
+  "gorsel_url": "https://cdn-uploads.huggingface.co/production/uploads/68d2fec8856b85d927e44d32/x0aObe_0mduBjWFuKBGoV.png",
+  "url": "https://huggingface.co/blog/nvidia/scaling-indic-pretraining",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-10-16T01:44:47.000Z",
+  "slug": "scaling-indic-pretraining-2-8-trillion-tokens-and-an-open-da"
+}

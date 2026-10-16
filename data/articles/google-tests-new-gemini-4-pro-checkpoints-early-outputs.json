@@ -1,0 +1,39 @@
+{
+  "baslik_tr": "Google, Gemini 4 Pro'nun İlk Test Çıktılarını ve 256k Token Limitini Açıklıyor",
+  "ozet_tr": "Google, yeni nesil Gemini 4 Pro modelinin iç testlerine başladı ve modelin \"argon\" kod adıyla 256 k tokenluk çıktı limitine ulaştığını duyurdu. İlk denemeler, önceki sürümlerin tasarım sorunlarını geride bırakan, temiz ve profesyonel bir ön‑yüz kodu üretimiyle dikkat çekti.",
+  "detayli_icerik_tr": "Google, son aylarda Flash serisinin yeni sürümlerini yayınlarken, uzun süredir beklenen bir frontier‑class modelin geliştirilmesi üzerine odaklandı. Şirket, Gemini 4 Pro'nun ilk iç test checkpoint'lerini \"argon\" kod adıyla çalıştırdığını ve bu sürümün 256 k tokenluk çıktı limitine sahip olduğunu açıkladı; bu, önceki Gemini modellerinin 64 k token limitinin dört katı.\n\nİlk halka açık olmayan denemeler, modelin 2,4 dakikalık bir yüksek düşünme çabasıyla bir çıktı üretmesiyle başladı. Daha sonra geliştirici Bee, 14 dakikada tamamen monografik bir web sitesini oluşturdu ve tasarımın önceki modellerde sıkça görülen robotik şablonlardan tamamen farklı, temiz ve cilalı olduğunu belirtti. Benzer bir testte, bir başka kullanıcı Xbox kontrolcüsü SVG'si üretirken 20 dakikada yüksek kaliteye ulaşarak Gemini 4 Pro'nun tasarım zevkindeki iyileşmeyi kanıtladı.\n\nBu gelişmeler, Google'ın Gemini masaüstü uygulaması için de yeni özellikler eklediğini gösteriyor; projeler, ChatGPT ve Claude'daki çalışma alanlarına benzer şekilde, referans dosyaları ve özel talimatlar için paylaşılan bir bağlam sunacak. Şirket, bu yeniliklerin kullanıcı deneyimini sıfırdan başlatmadan devamlı bir bağlamda sürdürmeyi hedeflediğini belirtti.\n\nGemini 4 Pro'nun ortaya çıkışı, Anthropic'in yaklaşan Fable 5.2 modeliyle aynı dönemde gerçekleşiyor ve sektörde Astra, Grok 4.7 gibi rakip modellerle kıyaslamalar yapılacak. Google'ın bu yeni modelinin, tasarım kalitesi ve geniş token kapasitesiyle frontier‑class bir konuma ulaşması bekleniyor.",
+  "onemli_maddeler": [
+    "Gemini 4 Pro iç testleri \"argon\" kod adıyla başladı ve 256 k tokenluk çıktı limitine sahip.",
+    "İlk denemeler, önceki Gemini modellerinin tasarım sorunlarını aşan temiz ve cilalı ön‑yüz kodu üretti.",
+    "Modelin yüksek kalite çıktısı üretmesi 14‑20 dakika gibi uzun bir sürede gerçekleşti.",
+    "Google, Gemini masaüstü uygulamasına proje‑bazlı çalışma alanları ekleyerek kullanıcı bağlamını korumayı planlıyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Gemini 4 Pro, token kapasitesindeki büyük artış ve tasarım kalitesindeki belirgin iyileşme ile Google'ın AI pazarındaki konumunu güçlendirecek bir frontier‑class model olarak görülüyor.",
+  "etiketler": [
+    "Gemini",
+    "Google",
+    "AI",
+    "frontend",
+    "tasarım"
+  ],
+  "anilan_modeller": [
+    "Gemini 4 Pro",
+    "Gemini 3.8 Flash",
+    "Gemini 3.5 Pro",
+    "Gemini 3.7 Flash",
+    "Astra",
+    "Grok 4.7",
+    "Fable 5.2"
+  ],
+  "yorum_tr": "Gemini 4 Pro'nun geniş token penceresi ve tasarım kalitesindeki gelişme, geliştiricilerin daha karmaşık ve estetik ön‑yüzler üretmesini sağlayarak rekabeti kızıştıracak. Ancak üretim süresinin uzun olması, gerçek‑zamanlı uygulamalarda sınırlı bir kullanım senaryosu oluşturabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/09/deep-think__key-art_16-9.width-1300--1-.jpg",
+  "url": "https://www.testingcatalog.com/gemini-4-pro-frontend-ui-taste-leak/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-09-23T07:53:00.000Z",
+  "slug": "google-tests-new-gemini-4-pro-checkpoints-early-outputs"
+}

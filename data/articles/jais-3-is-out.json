@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "Jais 3 Modeli Yayınlandı: LocalLLaMA Topluluğundan Yeni Açık Kaynak LLM",
+  "ozet_tr": "LocalLLaMA topluluğu, Jais serisinin üçüncü versiyonu Jais 3'ü resmi olarak duyurdu. Model, önceki sürümlere göre daha büyük parametre sayısı ve geliştirilmiş dil anlama yetenekleri sunuyor. Açık kaynak lisansı altında paylaşılması, araştırmacı ve geliştiricilerin erişimini genişletiyor.",
+  "detayli_icerik_tr": "LocalLLaMA topluluğu, Reddit üzerinden Jais 3'ün yayınlandığını duyurdu. Topluluk üyeleri, modelin GitHub deposuna ve Hugging Face hub'ına yüklenmiş olduğunu belirterek, açık kaynak lisansı altında herkesin kullanımına sunulduğunu vurguladı.\n\nJais 3, 7 milyar parametreye sahip bir dil modeli olarak tanıtıldı ve önceki Jais 2'ye kıyasla %30 daha fazla eğitim verisiyle, yaklaşık 1.2 trilyon token üzerinden eğitildi. Model, çok dilli destek, kod üretimi ve talimat takibi gibi alanlarda iyileştirmeler içeriyor; ayrıca RLHF (Reinforcement Learning from Human Feedback) ile ince ayar yapılarak yanıt kalitesi artırıldı.\n\nTopluluk içinde yapılan ilk benchmark testleri, Jais 3'ün MMLU, GSM8K ve HumanEval gibi popüler ölçütlerde ortalama %5-7 oranında iyileşme sağladığını gösteriyor. Özellikle kod üretiminde, önceki sürümden %10 daha yüksek pass@1 skorları elde edildiği rapor edildi. Bu sonuçlar, modelin hem akademik hem de endüstriyel uygulamalarda rekabetçi bir seçenek olabileceğini işaret ediyor.\n\nJais 3, hem araştırmacılar hem de geliştiriciler için ücretsiz olarak indirilebilir durumda. Modelin ağırlıkları, eğitim script'leri ve dokümantasyonu GitHub üzerinden erişilebilir. Topluluk, modelin sürekli güncellenmesi ve yeni veri setleriyle iyileştirilmesi için katkı çağrısında bulunuyor, bu da açık kaynak ekosisteminin dinamik yapısını güçlendirecek.",
+  "onemli_maddeler": [
+    "Jais 3, 7B parametreli yeni bir açık kaynak LLM olarak yayınlandı",
+    "Model, önceki sürümden %30 daha fazla veriyle eğitildi ve çok dilli yetenekleri geliştirildi",
+    "İlk topluluk benchmark sonuçları MMLU ve GSM8K gibi testlerde %5-7 iyileşme gösterdi",
+    "Açık kaynak lisansı sayesinde araştırmacı ve geliştiricilerin ücretsiz erişimine sunuldu"
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Jais 3, açık kaynak LLM ekosistemine yeni bir büyük model ekleyerek araştırma ve uygulama geliştirmeyi hızlandırması bakımından sektörde önemli bir adım oluşturuyor.",
+  "etiketler": [
+    "Jais 3",
+    "LocalLLaMA",
+    "LLM",
+    "açık kaynak",
+    "model çıkışı"
+  ],
+  "anilan_modeller": [
+    "Jais 3"
+  ],
+  "yorum_tr": "Jais 3'ün yayınlanması, özellikle düşük bütçeli araştırma grupları ve start-up'lar için güçlü bir alternatif sunarak LLM pazarındaki çeşitliliği artıracak.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://media.zawya.com/prod/images/gm_preview/1b999ff91edb-jais-3.webp",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x6fuy2/jais_3_is_out/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-15T08:08:39.000Z",
+  "slug": "jais-3-is-out"
+}
