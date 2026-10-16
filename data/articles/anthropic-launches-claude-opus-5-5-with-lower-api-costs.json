@@ -1,0 +1,75 @@
+{
+  "baslik_tr": "Anthropic, Claude Opus 5.5'i daha düşük API maliyetleriyle piyasaya sürdü",
+  "ozet_tr": "Anthropic, yeni Claude Opus 5.5 modelini duyurdu; model, Claude Fable 5.1 seviyesinde performans sunarken API maliyetlerini %40 oranında düşürüyor. Ayrıca kodlama görevlerinde %30'dan fazla hız artışı ve daha düşük token tüketimi vaat ediyor.",
+  "detayli_icerik_tr": "Anthropic, Claude Opus 5.5'i hem kendi platformları hem de AWS, Google Cloud ve Microsoft Azure üzerinden \"claude-opus-5-5\" kimliğiyle kullanıma açtı. Yeni model, Claude Fable 5.1'in çoğu görevdeki performansına eşdeğer bir çıktı verirken, tipik iş yüklerinde Opus 5'e kıyasla %40 daha az maliyetle çalışıyor. API fiyatları, giriş token başına 4 $, çıkış token başına 20 $ olarak belirlenmiş; bu, Opus 5'in 5 $/4 $ ve 25 $/5 $ fiyatlarından daha düşük.\n\nHız açısından da önemli bir iyileşme söz konusu: varsayılan ayarlarda çıktı, Opus 5'ten %30 daha hızlı üretiliyor ve \"Fast mode\" seçeneğiyle Claude Code ve Claude Platform'da 2,5 kata kadar hız artışı sağlanıyor. Bu hız artışı, özellikle büyük kod tabanlarının incelenmesi ve düzeltilmesinde belirgin bir avantaj sunuyor; bir testte 200 000 satırlık kod, Opus 5.5 ile üç saatten az sürede, Opus 5'te 20 saatten fazla süren bir işin yerine getirildi.\n\nGüvenlik ve uyumluluk da ön planda. Opus 5.5, eylemleri çalıştırmadan önce tarayan bir sınıflandırıcı, açık kaynaklı bir sandbox ve kod birleştirmeden önce otomatik inceleme içeren bir güvenlik paketiyle geliyor. Model, sınır ihlallerini %85 oranında azaltarak önceki sürümlere göre daha az risk taşıyor. Ayrıca \"preserved thinking\" adı verilen bir anti-distilasyon önlemi, API kullanıcılarının modelin önceki bağlamını düzenleyerek mantığını çıkarmasını engelliyor; düşünme modu artık kapatılamıyor ve veri saklama yok, AB AI Act uyumlu watermark'lar bulunuyor.\n\nBenchmark sonuçları da Opus 5.5'in rekabet gücünü gösteriyor. Terminal-Bench 4.0'da %66.4, FrontierCode v1.1 Main'de %54.4 ve CursorBench 4.0'da %57.8 gibi puanlar elde ederken, GDPval-AA v2.1'de 44 meslek üzerinden 1846 Elo skoruna ulaştı. Bu sonuçlar, modelin hem verimlilik hem de maliyet açısından GPT-6 Astra ve GPT-5.6 Sol gibi rakiplerini geride bıraktığını işaret ediyor.",
+  "onemli_maddeler": [
+    "Claude Opus 5.5, Opus 5'e göre %40 daha düşük API maliyeti ve %30 daha hızlı çıktı üretimi sağlıyor.",
+    "Model, 200 000 satırlık kod tabanını üç saatten az sürede işleyerek kodlama verimliliğinde büyük bir sıçrama yaptı.",
+    "Terminal-Bench 4.0'da %66.4, FrontierCode v1.1 Main'de %54.4 ve CursorBench 4.0'da %57.8 gibi yüksek benchmark puanları aldı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Claude Opus 5.5, hem maliyet hem de performans açısından büyük iyileştirmeler sunarak yapay zeka model pazarında rekabet dengesini değiştirebilir; aynı zamanda güvenlik ve uyumluluk özellikleriyle sektörel standartları yükseltiyor.",
+  "etiketler": [
+    "Claude Opus 5.5",
+    "Anthropic",
+    "API fiyatları",
+    "kodlama",
+    "benchmark"
+  ],
+  "anilan_modeller": [
+    "Claude Opus 5.5",
+    "Claude Fable 5.1",
+    "Opus 5",
+    "Claude Sonnet 5.5",
+    "Claude Haiku 5.5",
+    "GPT-6 Astra",
+    "GPT-5.6 Sol"
+  ],
+  "yorum_tr": "Opus 5.5'in düşük maliyetli ve yüksek hızlı yapısı, geliştiricilerin büyük ölçekli kodlama ve bilgi işleme projelerinde tercih edebileceği yeni bir standart oluşturuyor; aynı zamanda güvenlik önlemleri, kurumsal kullanım için önemli bir güvence sağlıyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Claude Opus 5.5",
+      "benchmark": "Terminal-Bench 4.0",
+      "skor": 66.4,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Opus 5.5 scored 66.4% on Terminal-Bench 4.0"
+    },
+    {
+      "model": "Claude Opus 5.5",
+      "benchmark": "FrontierCode v1.1 Main",
+      "skor": 54.4,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Opus 5.5 scored 54.4% on FrontierCode v1.1 Main"
+    },
+    {
+      "model": "Claude Opus 5.5",
+      "benchmark": "CursorBench 4.0",
+      "skor": 57.8,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Opus 5.5 scored 57.8% on CursorBench 4.0"
+    },
+    {
+      "model": "Claude Opus 5.5",
+      "benchmark": "GDPval-AA v2.1",
+      "skor": 1846,
+      "birim": "ELO",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "it reached 1846 Elo on GDPval-AA v2.1 across 44 occupations"
+    }
+  ],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/09/New-chat-Claude-09-22-2026_07_36_PM.jpg",
+  "url": "https://www.testingcatalog.com/anthropic-launches-claude-opus-5-5-with-lower-api-costs/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-09-22T20:41:24.000Z",
+  "slug": "anthropic-launches-claude-opus-5-5-with-lower-api-costs"
+}

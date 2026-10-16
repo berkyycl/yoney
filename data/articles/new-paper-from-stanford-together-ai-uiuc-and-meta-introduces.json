@@ -1,0 +1,51 @@
+{
+  "baslik_tr": "Stanford, Together AI, UIUC ve Meta'dan Hibrit Akıl Yürütme Ajanları Araştırması",
+  "ozet_tr": "Stanford, Together AI, Illinois Üniversitesi ve Meta ortaklığıyla yayımlanan yeni bir makale, Hibrit Akıl Yürütme Ajanları (Hybrid Reasoning Agents) adlı bir mimariyi tanıtıyor. Bu ajanlar, içsel hesaplamaları gizli bir biçimde gerçekleştirerek yalnızca araç kullanımına veya son yanıt üretimine metin çıktısı verir ve testlerde %10 daha yüksek doğruluk, %50 daha az token tüketimi ve iki kat daha hızlı çalışma vaat ediyor.",
+  "detayli_icerik_tr": "Araştırmacılar, geleneksel büyük dil modellerinin (LLM) tüm süreçte metin üretmesi yerine, düşünme aşamasını gizli bir temsile dönüştüren bir çerçeve geliştirdiler. Bu çerçeve, modelin içsel bir “düşünce” durumunda çalışmasını sağlayarak, yalnızca dışa vurum gerektiğinde (örneğin bir araç çağrısı yapmak ya da son cevabı sunmak) metin üretir. Böylece hem iletişim maliyeti hem de işlem süresi önemli ölçüde azalıyor.\n\nDeneyler, matematik, fen bilimleri ve tıp gibi çeşitli akademik test setlerinde gerçekleştirildi. Hibrit Akıl Yürütme Ajanları, aynı testlerde kullanılan geleneksel LLM'lere kıyasla ortalama %10 daha yüksek bir başarı oranı elde etti. Aynı zamanda yanıt üretiminde kullanılan token sayısı yarıya indi ve model iki kat daha hızlı çalıştı. Bu verimlilik, bulut ortamlarında hem işlem maliyetini hem de enerji tüketimini önemli ölçüde düşürür.\n\nMakalede, bu mimarinin özellikle araç entegrasyonu (örneğin kod yürütme, veri sorgulama veya laboratuvar sonuçlarını yorumlama) gerektiren görevlerde avantaj sağladığı vurgulandı. Model, araç çağrısı yapmadan önce içsel bir değerlendirme yapar ve yalnızca kesin bir eylem gerektiğinde dışa metin üretir. Bu yaklaşım, yapay zekâ sistemlerinin daha güvenli ve kontrol edilebilir olmasına da katkı sunuyor.\n\nAraştırmanın yazarları, bu konseptin hâlihazırda mevcut LLM altyapılarına eklenti olarak uygulanabileceğini ve gelecekte daha karmaşık çok‑aşamalı problem çözme senaryolarında kullanılabileceğini belirtiyor. Çalışma, 2610.18861 numaralı arXiv ön baskısında yayımlandı ve topluluk tarafından geniş çapta tartışılıyor.",
+  "onemli_maddeler": [
+    "Hybrid Reasoning Agents, içsel düşünme sürecini gizleyerek yalnızca araç kullanımında ve son yanıt üretiminde metin üretir.",
+    "Testlerde %10 daha yüksek doğruluk, %50 daha az token tüketimi ve iki kat daha hızlı çalışma sağladı.",
+    "Maliyet ve enerji tüketiminde önemli tasarruf sunarak bulut tabanlı AI hizmetlerinin ölçeklenebilirliğini artırıyor."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "Araştırma, LLM'lerin verimliliğini ve maliyet etkinliğini artıran yeni bir mimari sunarak sektördeki model tasarım paradigmalarını değiştirme potansiyeline sahip.",
+  "etiketler": [
+    "Hybrid Reasoning",
+    "AI Araştırma",
+    "Model Verimliliği",
+    "Stanford",
+    "Meta"
+  ],
+  "anilan_modeller": [
+    "Hybrid Reasoning Agents"
+  ],
+  "yorum_tr": "Bu yaklaşım, büyük dil modellerinin işlem maliyetlerini düşürürken performansı artırma hedefiyle geliştiricilere yeni bir yol haritası sunuyor; aynı zamanda kullanıcıların daha hızlı ve ekonomik AI hizmetlerinden faydalanmasını mümkün kılıyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Hybrid Reasoning Agents",
+      "benchmark": "Various academic tests (math, science, medicine)",
+      "skor": 10,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "On many tests (math, science, medicine, etc.), they score about 10% higher"
+    },
+    {
+      "model": "Hybrid Reasoning Agents",
+      "benchmark": "Inference speed",
+      "skor": 2,
+      "birim": "x",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "run twice as fast"
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/new-paper-from-stanford-together-ai-uiuc-and-meta-v0-3b2lrs1w4nvh1.png?auto=webp&s=96197e2a1f35d98235bc7a7a26eff5ab54a6d85f",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x7a8i8/new_paper_from_stanford_together_ai_uiuc_and_meta/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-16T07:58:04.000Z",
+  "slug": "new-paper-from-stanford-together-ai-uiuc-and-meta-introduces"
+}
