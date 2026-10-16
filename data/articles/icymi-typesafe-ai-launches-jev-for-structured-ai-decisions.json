@@ -1,0 +1,55 @@
+{
+  "baslik_tr": "ICYMI: TypeSafe AI, yapılandırılmış AI kararları için Jev modelini piyasaya sürdü",
+  "ozet_tr": "TypeSafe AI, iki yıllık gizli geliştirme sürecinin ardından Jev adlı ilk System One modelini erken erişimle duyurdu. Model, önceden tanımlanmış tiplenmiş çıktılar üreterek yazılım uygulamalarının doğrudan tüketebileceği hızlı bir karar katmanı sunuyor. Jev, paralel karar değerlendirmesiyle geleneksel LLM'lere göre 20‑200 kat daha hızlı çalışıyor ve maliyet açısından 40‑400 kat tasarruf vaat ediyor.",
+  "detayli_icerik_tr": "TypeSafe AI, iki yıllık gizli geliştirme sürecinin ardından, Jev adını verdiği ilk System One modelini erken erişimle duyurdu. Model, geleneksel açık uçlu metin üretimi yerine önceden tanımlanmış, tiplenmiş çıktılar üreterek yazılım uygulamalarının doğrudan tüketebileceği karar katmanı sunuyor.\n\nJev, yapılandırılmış program durumu ve serbest metin gibi yapılandırılmamış bağlamı alıp, olasılıksal kararlar ve güven puanları döndürüyor. Geliştiriciler seçenekleri ve çıktı şemasını önceden tanımlıyor; model kararları paralel olarak değerlendiriyor, bu sayede token‑tabanlı ardışık üretime kıyasla 20‑200 kat daha hızlı çalışıyor. Şirket, aynı tipteki sorgularda 40‑400 kat maliyet tasarrufu iddiasında bulunuyor.\n\nFiyatlandırma ise giriş token başına 0,042 $ (milyon token başına 42 $) olarak belirlenmiş ve çıktı tokenları ücretsiz. TypeSafe, uçtan uca yanıt sürelerinin 70‑500 ms arasında olduğunu ve bazı senaryolarda 193,6 kat hız, 444,6 kat maliyet avantajı sağladığını gösteriyor; ancak bu rakamların gerçek dünyada üst sınır olduğu ve uzun vadeli fiyat sürdürülebilirliğinin henüz kanıtlanmadığı belirtiliyor.\n\nJev’in potansiyel kullanım alanları sınıflandırma, yönlendirme, puanlama, veri çıkarımı, dallanma, büyük veri seti işleme ve gerçek‑zaman uygulamaları gibi karar‑ağırlıklı görevleri kapsıyor. Demo uygulamalar arasında Doom oyununda yapılandırılmış durum ve metin kullanımı ve Wikiracing yarışması yer alıyor. Model, doğrudan 255 seçeneğe kadar karar verebiliyor; daha büyük seçim setleri iki aşamalı bir skorlamayla ele alınıyor.",
+  "onemli_maddeler": [
+    "Jev, önceden tanımlanmış tiplenmiş çıktılar üreten ve şema uyumunu garantileyen bir System One modelidir",
+    "Model, paralel karar değerlendirmesi sayesinde 20‑200 kat daha hızlı ve 40‑400 kat daha düşük maliyet vaat ediyor",
+    "Fiyatlandırma $0.042 per milyon giriş tokenı, çıktı tokenları ücretsiz",
+    "Jev, tek seferde 255 seçeneğe karar verebiliyor; daha büyük setler iki aşamalı skorlamayla işleniyor",
+    "Benchmarklar, Jev’in hızda 193.6x ve maliyette 444.6x üstünlük sağladığını gösteriyor, ancak ölçümler şirket içi veri ve seçici senaryolar içeriyor"
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Yeni bir modelin piyasaya sürülmesi ve yapılandırılmış karar motoru olarak konumlandırılması sektördeki uygulama mimarilerini etkileyebilir; ancak performans iddiaları şirket içi testlerle sınırlı olduğu için kritik bir yenilik olarak 4 puan verildi.",
+  "etiketler": [
+    "System One",
+    "structured decisions",
+    "AI model",
+    "TypeSafe AI",
+    "Jev"
+  ],
+  "anilan_modeller": [
+    "Jev",
+    "GPT-6 Astra",
+    "Fable 5.1"
+  ],
+  "yorum_tr": "Jev, yüksek hız ve düşük maliyet vaatleriyle gerçek‑zaman ve karar‑ağırlıklı uygulamalara yeni bir alternatif sunuyor. Ancak performans ve maliyet avantajlarının bağımsız testlerle doğrulanması, geliştiricilerin güvenini kazanması açısından kritik olacak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Jev",
+      "benchmark": "Speedup vs GPT-6 Astra (System One queries)",
+      "skor": 193.6,
+      "birim": "x",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "speed factor",
+      "kaynak_metinden_alinti": "Homepage examples show gains of 193.6 times in speed"
+    },
+    {
+      "model": "Jev",
+      "benchmark": "Cost reduction vs GPT-6 Astra (System One queries)",
+      "skor": 444.6,
+      "birim": "x",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "cost factor",
+      "kaynak_metinden_alinti": "Homepage examples show gains of 444.6 times in cost"
+    }
+  ],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/09/banner-13.webp",
+  "url": "https://www.testingcatalog.com/icymtypesafe-ai-launches-jev-for-structured-ai-decisions/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-09-17T13:12:21.000Z",
+  "slug": "icymi-typesafe-ai-launches-jev-for-structured-ai-decisions"
+}

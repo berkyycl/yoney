@@ -1,0 +1,42 @@
+{
+  "baslik_tr": "MiMo-2.6-Pro Jetson AGX Thor’da 0.646 t/s Hızla Çalıştırıldı, 566 GB Model 128 GB Belleğe Sığdırıldı",
+  "ozet_tr": "Yerel bir geliştirici, MiMo-2.6-Pro modelini NVIDIA Jetson AGX Thor platformunda 0.646 token/s hızla çalıştırarak 566 GB FP8 modelin 128 GB RAM içinde nasıl zorlandığını belgeledi. Model, inference sırasında diskteki verileri okurken bellek sınırlarını zorlayarak dikkat çekici bir benchmark oluşturdu.",
+  "detayli_icerik_tr": "Reddit topluluğu LocalLLaMA’da paylaşılan gönderide, kullanıcı Oswald_Hydrabot, MiMo-2.6-Pro modelini Jetson AGX Thor cihazında denediğini ve saniyede 0.646 token üretim hızı elde ettiğini raporladı. Modelin toplam boyutu yaklaşık 566 GB (FP8 formatında) ve cihazın yalnızca 128 GB belleği bulunuyor; bu nedenle inference sırasında modelin bir kısmı diske başvurarak çalıştırıldı.\n\nDeneme sırasında her bir decoder katmanı, yönlendirilmiş uzman (routed expert) ve SSD okuma işlemleri adım adım izlenip kaydedildi. Bu detaylı izleme, modelin bellek yönetimi ve disk erişim stratejilerinin ne kadar kritik olduğunu ortaya koydu. Yazar, modelin çalıştırılabilir olduğunu ancak bellek sıkışması ve disk okuma gecikmelerinin performansı sınırladığını belirtti.\n\nMiMo-2.6-Pro’nun bu koşullarda elde ettiği 0.646 token/s hızı, benzer boyuttaki modellerin tipik GPU tabanlı ortamlardaki hızlarıyla kıyaslandığında oldukça düşük olsa da, sınırlı bellek ve disk tabanlı veri akışıyla çalıştırılabilmesi bakımından ilginç bir teknik gösterge sundu. Yazar, modelin “fabrika sıcak köpek üretim” hızına ulaşması için daha fazla bellek veya daha hızlı depolama çözümlerine ihtiyaç duyulacağını ima etti.\n\nTopluluk, bu tür sınır testlerinin açık kaynak modellerin gerçek dünya donanım kısıtlamaları altında nasıl performans gösterdiğini anlamak için değerli olduğunu vurguladı. Ayrıca, modelin kaynak kodunun açık olmaması nedeniyle iç yapısının tam olarak incelenememesi, performans iyileştirmeleri için bir engel olarak değerlendirildi.",
+  "onemli_maddeler": [
+    "MiMo-2.6-Pro 566 GB FP8 model, Jetson AGX Thor’da 128 GB RAM ile çalıştırıldı.",
+    "Inference sırasında modelin bir kısmı diske başvurarak 0.646 token/s hız elde edildi.",
+    "Detaylı katman ve SSD okuma izleme, bellek ve depolama sınırlamalarının etkisini gösterdi."
+  ],
+  "kategori": "benchmark",
+  "onem": 3,
+  "onem_gerekce": "Modelin büyük boyutu ve sınırlı donanımda çalıştırılması topluluk içinde teknik ilgi uyandırsa da, sektörel etkisi sınırlı ve geniş çaplı bir performans kıyaslaması sunmuyor.",
+  "etiketler": [
+    "MiMo",
+    "Jetson AGX Thor",
+    "Token Generation",
+    "Benchmark",
+    "FP8"
+  ],
+  "anilan_modeller": [
+    "MiMo-2.6-Pro"
+  ],
+  "yorum_tr": "Bu test, büyük ölçekli açık kaynak modellerinin düşük bellekli kenar cihazlarda nasıl zorlandığını gösteriyor. Geliştiriciler, benzer senaryolarda performans iyileştirmek için daha fazla RAM veya hızlı NVMe çözümlerine yönelmeli.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "MiMo-2.6-Pro",
+      "benchmark": "Token Generation Speed",
+      "skor": 0.646,
+      "birim": "tokens/sec",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Jetson AGX Thor, 128GB RAM, FP8, disk‑based inference",
+      "kaynak_metinden_alinti": "Tracked my first run of MiMo Pro on a Jetson AGX Thor at a scorching 0.646 tokens/sec,.. but it DID technically load and run, so it counts."
+    }
+  ],
+  "gorsel_url": "https://external-preview.redd.it/eGg4a2g1cW1id3ZoMXg4Nssqs29nOttVELinQZLirJN0gSYXtwFveIZgaHPK.png?width=640&crop=smart&auto=webp&s=dc951484dbaf2af552a129fa442cca43253f32e5",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x7sbxs/dario_with_open_source_you_can_see_the_source/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-16T21:18:51.000Z",
+  "slug": "dario-with-open-source-you-can-see-the-source-code-here-we-c"
+}
