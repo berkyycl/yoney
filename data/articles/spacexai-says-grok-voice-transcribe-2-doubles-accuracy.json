@@ -1,0 +1,55 @@
+{
+  "baslik_tr": "SpaceXAI, Grok Voice Transcribe 2.0'ın Doğruluğunu İki Katına Çıkardığını Duyurdu",
+  "ozet_tr": "SpaceXAI, Grok Voice Transcribe 2.0 modelini tanıttı ve bu sürümün önceki versiyona göre doğruluk oranını iki katına çıkardığını, fiyatını ise aynı tuttuğunu açıkladı. Model, çok dilli ve gürültülü ortam verileriyle eğitilerek telefon hatları, aksanlar ve konuşulan kimlik bilgileri gibi zorlu senaryolarda üstün performans sergiliyor.",
+  "detayli_icerik_tr": "SpaceXAI, Grok Voice Transcribe 2.0'ı duyurarak, ses‑metin dönüşümünde önceki sürümden iki kat daha yüksek bir doğruluk sağladığını ve fiyatını aynı $0.10/sa (batch) ve $0.20/sa (streaming) seviyelerinde koruduğunu belirtti. Model, Grok Voice asistanının temelini oluşturan ses altyapısını kullanıyor; günlük on binlerce destek çağrısını işliyor, milyonlarca saatlik video anlatımını transkribe ediyor ve Tesla araçlarındaki Grok asistanını güçlendiriyor.\n\nEğitim sürecinde, farklı ortam koşullarında kaydedilmiş gürültülü ve çok dilli ses verileri kullanıldı ve ardından post‑training aşamasıyla iyileştirildi. Grok Voice Transcribe 2.0, güvenilir olmayan telefon hatları, çakışan sesler, yerel aksanlar ve konuşulan telefon numaraları ya da e‑posta adresleri gibi zorlu durumları hedef alıyor. Model, kamuya açık Artificial Analysis doğruluk lider tablosunda 32 akış modelinin arasında birinci sırada yer alıyor ve dahili testlerde İngilizce destek çağrıları, Grok sohbetleri, konuşulan kimlik bilgileri ve 19 dildeki kısa komutlarda belirgin kazançlar gösterdi.\n\nPerformans açısından, çok dilli kısa cümle setindeki kelime hata oranı (WER) %20.6'dan %6.8'e geriledi; bu, aynı fiyat seviyesinde iki kat daha düşük hata demek. Model, yüzlerce dili otomatik algılayabiliyor, bir kayıt içinde dil geçişlerini takip edebiliyor ve API üzerinden toplu işler, dosya, URL ve gerçek‑zaman akışlarını destekliyor. Kelime‑seviyesinde zaman damgaları, güven puanları, ek bir maliyet olmadan diyazirasyon, sekiz kanala kadar ayrı transkripsiyon ve 100 özel terime kadar biasing gibi özellikler sunuluyor. Ayrıca sayılar, tarih, para birimleri, telefon ve e‑posta formatlaması, dolgu sözcüklerinin kaldırılması ve ses ajanı dönüşlerinin tespiti de otomatik olarak yapılabiliyor.\n\nGüncellenen API entegrasyonları kod değişikliği gerektirmeden yeni sürümü alıyor; Grok Voice Transcribe 2.0 önümüzdeki haftalarda varsayılan model haline gelecek ve 1.0 sürümü de aynı dönemde kullanımdan kaldırılacak. Fiyatlandırma aynı kalırken, yeni özellikler ve geliştirilmiş doğruluk, çağrı merkezi operatörlerinden geliştiricilere kadar geniş bir kullanıcı kitlesine daha güvenilir ve maliyet‑etkin bir ses‑metin çözümü sunuyor.",
+  "onemli_maddeler": [
+    "Grok Voice Transcribe 2.0, önceki sürümün doğruluk oranını iki katına çıkararak %6.8 WER elde etti (önceki %20.6).",
+    "Model, 32 akış modelinin arasında Artificial Analysis doğruluk lider tablosunda birinci sırada yer alıyor.",
+    "Dozens of languages are auto‑detected, with seamless language‑switch handling within a single recording.",
+    "API, gerçek‑zaman akışı, batch, dosya ve URL desteği; diyazirasyon, zaman damgaları ve 100 özel terime kadar biasing ücretsiz sunuluyor.",
+    "Fiyatlandırma aynı kaldı: $0.10/saat batch, $0.20/saat streaming, tüm ek özellikler dahil."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Ses‑metin dönüşümünde iki kat daha düşük hata oranı ve çok dilli destek, özellikle çağrı merkezi ve otomotiv sektörlerinde geniş bir kullanıcı kitlesi için kritik bir iyileştirme sunuyor.",
+  "etiketler": [
+    "konuşma tanıma",
+    "çok dilli",
+    "API",
+    "yapay zeka",
+    "ses transkripsiyon"
+  ],
+  "anilan_modeller": [
+    "Grok Voice Transcribe 2.0",
+    "Grok Voice Transcribe 1.0",
+    "Grok Voice"
+  ],
+  "yorum_tr": "Bu güncelleme, düşük maliyetli ve yüksek doğruluklu ses‑metin hizmetine ihtiyaç duyan geliştiriciler ve işletmeler için önemli bir adım. Özellikle çok dilli ve gürültülü ortamları hedefleyen uygulamalarda rekabet avantajı sağlayacak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Grok Voice Transcribe 2.0",
+      "benchmark": "Artificial Analysis accuracy leaderboard",
+      "skor": 1,
+      "birim": "rank",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "SpaceXAI says it ranks first among 32 streaming models on the public Artificial Analysis accuracy leaderboard."
+    },
+    {
+      "model": "Grok Voice Transcribe 2.0",
+      "benchmark": "Multilingual short-phrase Word Error Rate",
+      "skor": 6.8,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Word error rate on the multilingual short-phrase set fell from 20.6% to 6.8%."
+    }
+  ],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/09/banner-16.webp",
+  "url": "https://www.testingcatalog.com/spacexai-says-grok-voice-transcribe-2-doubles-accuracy/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-09-19T15:01:23.000Z",
+  "slug": "spacexai-says-grok-voice-transcribe-2-doubles-accuracy"
+}

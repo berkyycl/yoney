@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "Stack Overflow for Agents, ChatGPT eklentisiyle kayıtları üç katına çıkardı",
+  "ozet_tr": "Stack Overflow, AI ajanları için geliştirdiği Stack Overflow for Agents platformuna bir ChatGPT eklentisi ekleyerek kayıt sayısını bir gecede üç katına çıkardı. OpenAI'nin GPT‑6 Astra, GPT‑6 Sol ve Codex modelleri, ürünün hızlı geliştirilmesi ve entegrasyon süreçlerinde kritik rol oynadı.",
+  "detayli_icerik_tr": "Stack Overflow, bilgi parçacıklarını tek bir akıllı platformda birleştiren Stack Overflow for Agents'ı, OpenAI modelleri GPT‑6 Astra ve GPT‑6 Sol ile güçlendiriyor. Platform, farklı görevler için en uygun modeli seçerek maliyet ve performansı dengeleyen bir yönlendirme mekanizması kullanıyor. Geliştirme sürecinde OpenAI Codex, iki mühendisin sadece birkaç hafta içinde tam işlevsel bir ürün ortaya koymasını sağladı; mühendisler Codex'e bir geliştirme ortamı ve plan vererek, platformun temelini hızlıca inşa etti.\n\nChatGPT eklentisi, kullanıcıların Stack Overflow for Agents'ı ChatGPT içinde keşfetmesini ve birkaç adımda kurmasını mümkün kılıyor. Bu friksiz entegrasyon, kayıt sayısında %200'ün üzerinde bir artışa yol açtı ve ajan oluşturma oranlarını on kata kadar yükseltti. Eklenti sayesinde, geleneksel Model Context Protocol (MCP) kurulumunun karmaşıklığı ortadan kalktı.\n\nStack Overflow'un kurumsal ürünü Stack Internal, organizasyonların bilgi kaynaklarını bağlamak için bağlayıcılar (connector) geliştiriyor. Codex'in yardımıyla bir bağlayıcıyı 3‑6 hafta yerine sadece 4 günde tamamlamak mümkün oldu; bazı durumlarda ise bir gün içinde tamamlanabildi. Bu hız, ürünün pazara çıkış süresini bir yıldan üç aya indirdi.\n\nŞirket, OpenAI Decisions API'yi kullanarak model yönlendirme ve konfigürasyon işlerini otomatikleştirmeyi planlıyor. Bu sayede mühendislik kaynakları ürün geliştirmeye odaklanacak, guardrail yönetimi ise otomatikleşecek. Ayrıca Stack Overflow, bilgi yaşam döngüsünü genişleterek öğrenilen bilgilerin organizasyon içinde paylaşılmasını hedefliyor.",
+  "onemli_maddeler": [
+    "ChatGPT eklentisi sayesinde Stack Overflow for Agents kayıtları bir gecede üç katına çıktı.",
+    "Codex ile bir bağlayıcı (connector) 3‑6 haftadan 4 güne, hatta bir günde üretilebildi.",
+    "Platform, GPT‑6 Astra ve GPT‑6 Sol modelleriyle görev bazlı yönlendirme yapıyor.",
+    "Decisions API entegrasyonu, model konfigürasyonunu otomatikleştirerek mühendislik verimliliğini artıracak."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "ChatGPT eklentisi ve Codex destekli hızlı geliştirme, AI ajanları ve kurumsal bilgi yönetimi alanında önemli bir verimlilik artışı sağlıyor; sektörde benzer entegrasyonların yaygınlaşması bekleniyor.",
+  "etiketler": [
+    "ChatGPT",
+    "Stack Overflow",
+    "AI agents",
+    "Codex",
+    "GPT-6"
+  ],
+  "anilan_modeller": [
+    "GPT-6 Astra",
+    "GPT-6 Sol",
+    "Codex"
+  ],
+  "yorum_tr": "Bu gelişme, AI destekli bilgi platformlarının kullanıcı ediniminde ve entegrasyon hızında yeni bir standart belirleyebilir; geliştiriciler için daha az kod ve daha hızlı pazar süresi, kullanıcılar için ise sorunsuz bir deneyim anlamına geliyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://images.ctfassets.net/kftzwdyauwt9/4HTc2pk7XGFhzDU8RX0Ivg/ff2b922fa1914350c9d800da622ebe04/stack-overflow-social.png?w=1600&h=900&fit=fill",
+  "url": "https://openai.com/index/stack-overflow-chatgpt-plugin",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-10-16T00:00:00.000Z",
+  "slug": "stack-overflow-for-agents-triples-signups-with-chatgpt-plugi"
+}

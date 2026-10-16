@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "Claude, NIST ECDSA Eğri Tohumlarının 1990'lar PRNG'siyle Üretildiğini Açıkladı",
+  "ozet_tr": "Anthropic'in Claude modeli, NIST'in P‑192, P‑224, P‑256, P‑384 ve P‑521 gibi yaygın elliptik eğri standartlarının tohumlarının, 1990'ların C kütüphanelerindeki lrand48 rastgele sayı üreteci ve Unix zaman damgası kullanılarak üretildiğini ortaya koydu. Bu bulgu, yıllardır süren \"backdoor\" spekülasyonlarını ortadan kaldırıyor ve eğrilerin güvenliğini teyit ediyor.",
+  "detayli_icerik_tr": "ECDSA, NIST tarafından 2000 yılında FIPS 186‑2 standardı kapsamında benimsenen en yaygın elliptik eğri kriptografi protokolüdür. Standartta yer alan her eğri için bir \"seed\" parametresi tanımlanmış, ancak bu tohumların kaynağı NSA tarafından açıklanmamış ve topluluk içinde şüpheye yol açmıştır. Özellikle P‑256 tohumunun SEED = C49D3608 86E70493 6A6678E1 139D26B7 819F7E90 gibi bir değer olduğu biliniyordu, fakat bu değerin nasıl elde edildiği belirsizdi.\n\nAnthropic çalışanları, Claude adlı iç araştırma modeline bu tohumların kaynağını bulması için bir soru yöneltti. Model, yarım saat içinde tohumların lrand48 adlı lineer kongruans rastgele sayı üretecinden, Unix zaman damgası ile başlatılan bir süreçle üretildiğini kanıtladı. Her tohum, 20 baytlık bir aday olarak üretiliyor ve örneğin P‑256 tohumunun 1842. iterasyonda ortaya çıktığı belirlendi.\n\nClaude, tohumların üretim sürecini tersine mühendislik yaparak, lrand48'in üst 31 bitinin sıfır olduğu kalıbı tespit etti ve gizli 17 bitlik durumu brute‑force ile çözdü. Prime eğriler için ise lrand48 çıktılarının üst 23 biti kullanılmış; bu durum, Lenstra‑Lenstra‑Lovász (LLL) algoritmasıyla çözülen bir lattice problemi olarak ele alındı. Çözüm, tohumların 1997‑1998 yılları arasındaki Unix zaman damgalarına karşılık geldiğini gösterdi.\n\nAraştırma ayrıca bazı eğrilerin temel noktalarının (base point) nasıl üretildiğine dair yeni bilgiler sundu. P‑192 ve bazı ANSI X9.62 örnek eğrileri, FreeLIP ve NTL kütüphanelerindeki aynı rastgele sayı üreteciyle, sabit bir seed (ör. 20000) ve birkaç atlama adımıyla oluşturulmuş. Ancak P‑224, P‑256, P‑384 ve P‑521 gibi büyük NIST eğrileri için bu yöntem hâlâ açıklanamamış. Bir binary eğri (B‑163) de tamamen çözülemeyen bir tohum içeriyor.\n\nBu bulgular, NIST eğrilerinin kasıtlı bir arka kapı içermediği yönündeki şüpheleri büyük ölçüde azaltıyor. Tohumların basit bir zaman damgası ve zayıf bir PRNG ile üretildiği kanıtlandığı için, parametrelerin güvenliği konusunda daha fazla güven sağlanıyor. Bounty ödülü ise Internet Security Research Group'a bağışlanacak.",
+  "onemli_maddeler": [
+    "NIST ECDSA eğri tohumları, lrand48 PRNG'si ve Unix zaman damgası kullanılarak üretildi.",
+    "Claude, tohumların üretim sürecini yarım saat içinde tersine mühendislik yaparak ortaya çıkardı.",
+    "Bu bulgu, yıllardır süren \"backdoor\" spekülasyonlarını ortadan kaldırarak eğrilerin güvenliğini teyit ediyor.",
+    "Bazı eğrilerin temel noktaları FreeLIP/NTL kodlarıyla aynı yöntemle üretildi, ancak büyük NIST eğrileri hâlâ açıklığa kavuşturulamadı.",
+    "Bir binary eğri (B‑163) ve bazı büyük eğrilerin temel noktaları hâlâ çözülemeyen gizemler içeriyor."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "25 yıllık bir kriptografik gizemi çözerek NIST eğrilerinin güvenliği konusundaki belirsizliği ortadan kaldırması, sektörde büyük bir güven artışı sağladığı için yüksek öneme sahiptir.",
+  "etiketler": [
+    "ECDSA",
+    "NIST",
+    "Claude",
+    "kriptografi",
+    "güvenlik"
+  ],
+  "anilan_modeller": [
+    "Claude"
+  ],
+  "yorum_tr": "Bu keşif, kriptografi topluluğunun uzun süredir endişe duyduğu NIST eğri parametrelerinin arkasında gizli bir niyet olmadığını göstererek, hem geliştiricilere hem de son kullanıcılara daha fazla güven sunuyor. Ancak bazı temel noktaların hâlâ açıklanamamış olması, gelecekteki araştırmalar için bir yol haritası bırakıyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/6d4a0d28992ade92d6fa63646fd9c9d318245c6c-2400x1260.jpg",
+  "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
+  "source": "Anthropic Research",
+  "sourceTier": "resmi",
+  "date": "2026-10-16T00:00:00.000Z",
+  "slug": "claude-reveals-ecdsa-curve-origins"
+}

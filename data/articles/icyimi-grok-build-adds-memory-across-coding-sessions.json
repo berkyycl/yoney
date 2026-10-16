@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "xAI, Grok Build’a Oturumlar Arası Hafıza Özelliği Ekledi",
+  "ozet_tr": "xAI, kodlama asistanı Grok Build için hafıza özelliği tanıttı. Artık araç, bir oturumda öğrenilen takım konvansiyonları, teknik kararlar ve proje bilgilerini sonraki oturumlara taşıyarak kodlama sürecinde süreklilik sağlıyor.",
+  "detayli_icerik_tr": "xAI, Grok Build adlı kodlama aracına yeni bir hafıza katmanı eklediğini duyurdu. Bu özellik sayesinde, geliştiriciler bir oturumda belirttiği konvansiyonlar, kararlar ve proje ile ilgili kalıcı bilgiler, sonraki oturumlarda otomatik olarak hatırlanıyor. Hafıza, ilk tamamlanan turdan itibaren notları yakalamaya başlıyor; kullanıcıların /new komutunu çalıştırması ya da yeni bir Grok oturumu başlatması durumunda kaydedilen bağlam uygulanıyor.\n\nHer tamamlanan turdan sonra Grok, diyalogu arka planda gözden geçirerek gelecekte faydalı olabilecek bilgileri kaydediyor. Bu süreç aktif oturumu kesintiye uğratmıyor. Örneğin, Grok \"cargo test\" komutunu çalıştırdığında PostgreSQL test veritabanının eksik olduğu için komut başarısız oluyor. Kullanıcı, \"just test\" komutunun veritabanını önce başlattığını belirtiyor ve Grok bu konvansiyonu sonraki oturumlarda otomatik olarak uyguluyor, aynı zamanda bu komutu bir test notu olarak saklıyor.\n\nKaydedilen notlar Markdown dosyaları şeklinde depolanıyor; her konu bir dosyada tutuluyor. Proje bazlı bir çalışma alanı ve tüm projeler arasında geçerli olacak tercihler için global bir alan bulunuyor. /dream komutu yeni gözlemleri ilgili konu dosyalarına eklerken, /memory komutu ise bu dosyaları sadece okunabilir bir tarayıcıda, kapsam, ön izleme ve silme gibi kontrol seçenekleriyle sunuyor. Grok, yeni bir konuşma başladığında ilgili konuları önceden okuyarak, kullanıcı tarafından açıkça belirtilmeyen durumlarda bile bağlamı otomatik olarak uygular; ancak mevcut konuşmadaki talimatlar her zaman önceliklidir.\n\nBu hafıza sistemi, kod yazma ve inceleme alışkanlıkları, kararların gerekçeleri, alt sistem konumları ve test komutları gibi kalıcı bilgileri saklarken, geçici görev durumu, gizli bilgiler ve zaten depo ya da dokümantasyonda bulunan materyalleri dışarıda tutuyor. xAI, bu güncellemeyle Grok Build'ı oturumla sınırlı bir araçtan, ekip ve projeler arasında süreklilik sağlayabilen bir kodlama asistanına dönüştürmeyi hedefliyor. Yeni kullanıcılar, curl komutu ile CLI'yi kurarak hafıza özelliğini hemen deneyebilir.",
+  "onemli_maddeler": [
+    "Grok Build artık oturumlar arası hafıza özelliğiyle takım konvansiyonlarını ve proje bilgilerini saklayabiliyor.",
+    "/dream ve /memory komutları sayesinde notlar Markdown dosyaları olarak organize ediliyor ve okunabilir bir arayüzde sunuluyor.",
+    "Hafıza, sadece kalıcı ve faydalı bilgileri kaydeder; geçici görev durumu, gizli veriler ve mevcut dokümantasyon dışındaki içerikler dışarıda bırakılıyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Grok Build, kodlama asistanları arasında oturumlar arası bağlam tutma yeteneğiyle fark yaratıyor; bu, ekip verimliliğini artıracak ve AI‑destekli geliştirme süreçlerinde yeni bir standart oluşturabilir.",
+  "etiketler": [
+    "xAI",
+    "Grok Build",
+    "kodlama asistanı",
+    "hafıza",
+    "yapay zeka"
+  ],
+  "anilan_modeller": [
+    "Grok Build"
+  ],
+  "yorum_tr": "Bu güncelleme, geliştiricilerin aynı proje içinde tutarlı kodlama alışkanlıklarını sürdürmesini kolaylaştırarak verimliliği artırabilir. Aynı zamanda AI destekli kod asistanlarının bağlam yönetimi konusundaki beklentileri yükseltecek bir adım olarak görülüyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/09/banner-source.webp",
+  "url": "https://www.testingcatalog.com/icyimi-grok-build-adds-memory-across-coding-sessions/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-09-18T10:49:06.000Z",
+  "slug": "icyimi-grok-build-adds-memory-across-coding-sessions"
+}

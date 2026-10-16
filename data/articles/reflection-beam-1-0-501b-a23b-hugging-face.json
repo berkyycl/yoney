@@ -1,0 +1,638 @@
+{
+  "baslik_tr": "Reflection Beam-1.0 501B/23B Modelinin Açıklaması ve Benchmark Sonuçları",
+  "ozet_tr": "Reflection tarafından geliştirilen Beam, 501.3 milyar toplam parametreli, 23.4 milyar aktif parametreli bir MoE mimarisine sahip açık kaynak büyük dil modelidir. Model, 1 milyon tokenlik bağlam penceresi ve BF16, FP8, NVFP4 sayısal formatlarıyla sunuluyor; token verimliliği ve ajan tabanlı araç kullanımında öne çıkıyor. İlk benchmark sonuçları, Beam'in kod üretimi, bilimsel akıl yürütme ve araç çağrısı görevlerinde mevcut açık modellerle rekabet edebildiğini gösteriyor.",
+  "detayli_icerik_tr": "Reflection ekibi, Beam modelini metin girdilerini alıp metin çıktısı üretecek şekilde tasarladı ve modelin üç farklı sayısal formatta (BF16, FP8, NVFP4) ince ayarları yapıldı. Beam, 256 uzman katmanına sahip bir karışık uzman (Mixture-of-Experts) mimarisi kullanıyor; toplam parametre sayısı 501.3 milyar, aktif parametre sayısı ise 23.4 milyar. Model, 52 katman (3 yoğun, 49 MoE) ve kaydırmalı pencere dikkat mekanizmasıyla 1M token uzunluğunda bağlamı işleyebiliyor.\n\nBeam'in temel yetenekleri arasında token verimliliğiyle yüksek kaliteli akıl yürütme, gerçek dünya GitHub sorunlarını çözebilen yazılım mühendisliği yetenekleri, çoklu programlama dillerinde kod üretimi ve uzun vadeli görevleri doğal dil talimatlarından yürütme yer alıyor. Özellikle ajan tabanlı araç entegrasyonu (MCP tabanlı araç kullanımı, tarama) ve uzun zincirli iş akışlarını yönetme kapasitesi vurgulanıyor.\n\nModelin benchmark performansları, farklı sayısal formatlarda geniş bir yelpazede test edildi. Agentic Coding/Terminal kategorisinde DeepSWE v1.1'de %43.3 (BF16) skor elde ederken, SWE Bench Pro v2-Hard'da %78.4 (FP8) ve %78.6 (NVFP4) gibi yüksek sonuçlar gösterdi. Reasoning bölümünde AIME 2026 testinde %98.0 (FP8) ve GPQA Diamond'da %90.3 (FP8) gibi puanlar aldı. Tool Calling ve Search görevlerinde MCP Atlas %81.5 (FP8) ve BrowseComp %76.7 (FP8) gibi güçlü performanslar sergiledi.\n\nBeam, özellikle İngilizce odaklı geliştirilmiş olmasına rağmen, çok dilli SWEBench testlerinde %78.1 (FP8) gibi sonuçlarla geniş dil desteği sunuyor. Modelin bilgi kesim tarihi 30 Haziran 2026 olarak belirtilmiş ve Hugging Face üzerinden erişime sunulmuş durumda. Bu çıkış, açık kaynak topluluğu için 500 milyar ölçeğinde bir MoE modelinin erişilebilir olmasının önemi açısından dikkat çekiyor.",
+  "onemli_maddeler": [
+    "Beam, 501.3B toplam ve 23.4B aktif parametreyle 500B ölçeğinde bir açık kaynak MoE modeli sunuyor.",
+    "1M token bağlam penceresi ve üç sayısal format (BF16, FP8, NVFP4) ile token verimliliği sağlanıyor.",
+    "Benchmark sonuçları, AIME 2026'da %98.0 ve GPQA Diamond'da %90.3 gibi yüksek doğruluk oranları gösteriyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "500 milyar parametre ölçeğinde bir açık kaynak MoE modelinin piyasaya sürülmesi, büyük dil modeli ekosisteminde erişilebilirliği ve rekabeti artırarak sektörel inovasyonu tetikleyecek bir gelişmedir.",
+  "etiketler": [
+    "MoE",
+    "large-language-model",
+    "benchmark",
+    "agentic-tools",
+    "open-source"
+  ],
+  "anilan_modeller": [
+    "Beam (BF16)",
+    "Beam (FP8)",
+    "Beam (NVFP4)"
+  ],
+  "yorum_tr": "Beam'in yüksek token verimliliği ve güçlü benchmark performansı, geliştiricilerin daha az maliyetle karmaşık görevleri çözmesine olanak tanıyacak. Açık kaynak yapısı, araştırma topluluğu ve start-up'ların büyük modelleri deneme ve özelleştirme fırsatını genişletecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Beam (BF16)",
+      "benchmark": "DeepSWE v1.1",
+      "skor": 43.3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "BF16",
+      "kaynak_metinden_alinti": "DeepSWE v1.1 43.3%"
+    },
+    {
+      "model": "Beam (FP8)",
+      "benchmark": "DeepSWE v1.1",
+      "skor": 43,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "FP8",
+      "kaynak_metinden_alinti": "DeepSWE v1.1 43.0%"
+    },
+    {
+      "model": "Beam (NVFP4)",
+      "benchmark": "DeepSWE v1.1",
+      "skor": 42.7,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "NVFP4",
+      "kaynak_metinden_alinti": "DeepSWE v1.1 42.7%"
+    },
+    {
+      "model": "Beam (BF16)",
+      "benchmark": "SWE Bench Pro v2-Hard",
+      "skor": 76.5,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "BF16",
+      "kaynak_metinden_alinti": "SWE Bench Pro v2-Hard 76.5%"
+    },
+    {
+      "model": "Beam (FP8)",
+      "benchmark": "SWE Bench Pro v2-Hard",
+      "skor": 78.4,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "FP8",
+      "kaynak_metinden_alinti": "SWE Bench Pro v2-Hard 78.4%"
+    },
+    {
+      "model": "Beam (NVFP4)",
+      "benchmark": "SWE Bench Pro v2-Hard",
+      "skor": 78.6,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "NVFP4",
+      "kaynak_metinden_alinti": "SWE Bench Pro v2-Hard 78.6%"
+    },
+    {
+      "model": "Beam (BF16)",
+      "benchmark": "SWE Bench Pro v1",
+      "skor": 66.1,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "BF16",
+      "kaynak_metinden_alinti": "SWE Bench Pro v1 66.1%"
+    },
+    {
+      "model": "Beam (FP8)",
+      "benchmark": "SWE Bench Pro v1",
+      "skor": 65.9,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "FP8",
+      "kaynak_metinden_alinti": "SWE Bench Pro v1 65.9%"
+    },
+    {
+      "model": "Beam (NVFP4)",
+      "benchmark": "SWE Bench Pro v1",
+      "skor": 65.6,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "NVFP4",
+      "kaynak_metinden_alinti": "SWE Bench Pro v1 65.6%"
+    },
+    {
+      "model": "Beam (BF16)",
+      "benchmark": "Terminal Bench v2.1",
+      "skor": 80.1,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "BF16",
+      "kaynak_metinden_alinti": "Terminal Bench v2.1 80.1%"
+    },
+    {
+      "model": "Beam (FP8)",
+      "benchmark": "Terminal Bench v2.1",
+      "skor": 78.9,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "FP8",
+      "kaynak_metinden_alinti": "Terminal Bench v2.1 78.9%"
+    },
+    {
+      "model": "Beam (NVFP4)",
+      "benchmark": "Terminal Bench v2.1",
+      "skor": 78.4,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "NVFP4",
+      "kaynak_metinden_alinti": "Terminal Bench v2.1 78.4%"
+    },
+    {
+      "model": "Beam (BF16)",
+      "benchmark": "SWE Atlas Codebase QnA",
+      "skor": 31.8,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "BF16",
+      "kaynak_metinden_alinti": "SWE Atlas Codebase QnA 31.8%"
+    },
+    {
+      "model": "Beam (FP8)",
+      "benchmark": "SWE Atlas Codebase QnA",
+      "skor": 32.2,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "FP8",
+      "kaynak_metinden_alinti": "SWE Atlas Codebase QnA 32.2%"
+    },
+    {
+      "model": "Beam (NVFP4)",
+      "benchmark": "SWE Atlas Codebase QnA",
+      "skor": 31.4,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "NVFP4",
+      "kaynak_metinden_alinti": "SWE Atlas Codebase QnA 31.4%"
+    },
+    {
+      "model": "Beam (BF16)",
+      "benchmark": "SWEBench Multilingual",
+      "skor": 78.3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "BF16",
+      "kaynak_metinden_alinti": "SWEBench Multilingual 78.3%"
+    },
+    {
+      "model": "Beam (FP8)",
+      "benchmark": "SWEBench Multilingual",
+      "skor": 78.1,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "FP8",
+      "kaynak_metinden_alinti": "SWEBench Multilingual 78.1%"
+    },
+    {
+      "model": "Beam (NVFP4)",
+      "benchmark": "SWEBench Multilingual",
+      "skor": 77.5,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "NVFP4",
+      "kaynak_metinden_alinti": "SWEBench Multilingual 77.5%"
+    },
+    {
+      "model": "Beam (BF16)",
+      "benchmark": "SWEBench Verified",
+      "skor": 81.6,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "BF16",
+      "kaynak_metinden_alinti": "SWEBench Verified 81.6%"
+    },
+    {
+      "model": "Beam (FP8)",
+      "benchmark": "SWEBench Verified",
+      "skor": 80.2,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "FP8",
+      "kaynak_metinden_alinti": "SWEBench Verified 80.2%"
+    },
+    {
+      "model": "Beam (NVFP4)",
+      "benchmark": "SWEBench Verified",
+      "skor": 80.7,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "NVFP4",
+      "kaynak_metinden_alinti": "SWEBench Verified 80.7%"
+    },
+    {
+      "model": "Beam (BF16)",
+      "benchmark": "AIME 2026",
+      "skor": 97.7,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "BF16",
+      "kaynak_metinden_alinti": "AIME 2026 97.7%"
+    },
+    {
+      "model": "Beam (FP8)",
+      "benchmark": "AIME 2026",
+      "skor": 98,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "FP8",
+      "kaynak_metinden_alinti": "AIME 2026 98.0%"
+    },
+    {
+      "model": "Beam (NVFP4)",
+      "benchmark": "AIME 2026",
+      "skor": 97.5,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "NVFP4",
+      "kaynak_metinden_alinti": "AIME 2026 97.5%"
+    },
+    {
+      "model": "Beam (BF16)",
+      "benchmark": "HLE (no tools)",
+      "skor": 36,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "BF16",
+      "kaynak_metinden_alinti": "HLE (no tools) 36.0%"
+    },
+    {
+      "model": "Beam (FP8)",
+      "benchmark": "HLE (no tools)",
+      "skor": 36,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "FP8",
+      "kaynak_metinden_alinti": "HLE (no tools) 36.0%"
+    },
+    {
+      "model": "Beam (NVFP4)",
+      "benchmark": "HLE (no tools)",
+      "skor": 34.8,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "NVFP4",
+      "kaynak_metinden_alinti": "HLE (no tools) 34.8%"
+    },
+    {
+      "model": "Beam (BF16)",
+      "benchmark": "HLE (with tools)",
+      "skor": 51.1,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "BF16",
+      "kaynak_metinden_alinti": "HLE (with tools) 51.1%"
+    },
+    {
+      "model": "Beam (FP8)",
+      "benchmark": "HLE (with tools)",
+      "skor": 51.1,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "FP8",
+      "kaynak_metinden_alinti": "HLE (with tools) 51.1%"
+    },
+    {
+      "model": "Beam (NVFP4)",
+      "benchmark": "HLE (with tools)",
+      "skor": 51.1,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "NVFP4",
+      "kaynak_metinden_alinti": "HLE (with tools) 51.1%"
+    },
+    {
+      "model": "Beam (BF16)",
+      "benchmark": "SciCode",
+      "skor": 49.2,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "BF16",
+      "kaynak_metinden_alinti": "SciCode 49.2%"
+    },
+    {
+      "model": "Beam (FP8)",
+      "benchmark": "SciCode",
+      "skor": 48.3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "FP8",
+      "kaynak_metinden_alinti": "SciCode 48.3%"
+    },
+    {
+      "model": "Beam (NVFP4)",
+      "benchmark": "SciCode",
+      "skor": 46.9,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "NVFP4",
+      "kaynak_metinden_alinti": "SciCode 46.9%"
+    },
+    {
+      "model": "Beam (BF16)",
+      "benchmark": "CriPT AA",
+      "skor": 16.3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "BF16",
+      "kaynak_metinden_alinti": "CriPT AA 16.3%"
+    },
+    {
+      "model": "Beam (FP8)",
+      "benchmark": "CriPT AA",
+      "skor": 17.4,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "FP8",
+      "kaynak_metinden_alinti": "CriPT AA 17.4%"
+    },
+    {
+      "model": "Beam (NVFP4)",
+      "benchmark": "CriPT AA",
+      "skor": 15.4,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "NVFP4",
+      "kaynak_metinden_alinti": "CriPT AA 15.4%"
+    },
+    {
+      "model": "Beam (BF16)",
+      "benchmark": "GPQA Diamond",
+      "skor": 90.6,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "BF16",
+      "kaynak_metinden_alinti": "GPQA Diamond 90.6%"
+    },
+    {
+      "model": "Beam (FP8)",
+      "benchmark": "GPQA Diamond",
+      "skor": 90.3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "FP8",
+      "kaynak_metinden_alinti": "GPQA Diamond 90.3%"
+    },
+    {
+      "model": "Beam (NVFP4)",
+      "benchmark": "GPQA Diamond",
+      "skor": 89.3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "NVFP4",
+      "kaynak_metinden_alinti": "GPQA Diamond 89.3%"
+    },
+    {
+      "model": "Beam (BF16)",
+      "benchmark": "LiveCodeBench",
+      "skor": 88.3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "BF16",
+      "kaynak_metinden_alinti": "LiveCodeBench 88.3%"
+    },
+    {
+      "model": "Beam (FP8)",
+      "benchmark": "LiveCodeBench",
+      "skor": 88.1,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "FP8",
+      "kaynak_metinden_alinti": "LiveCodeBench 88.1%"
+    },
+    {
+      "model": "Beam (NVFP4)",
+      "benchmark": "LiveCodeBench",
+      "skor": 87.4,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "NVFP4",
+      "kaynak_metinden_alinti": "LiveCodeBench 87.4%"
+    },
+    {
+      "model": "Beam (BF16)",
+      "benchmark": "AutomationBench - public split only",
+      "skor": 39.3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "BF16",
+      "kaynak_metinden_alinti": "AutomationBench - public split only 39.3%"
+    },
+    {
+      "model": "Beam (FP8)",
+      "benchmark": "AutomationBench - public split only",
+      "skor": 38.2,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "FP8",
+      "kaynak_metinden_alinti": "AutomationBench - public split only 38.2%"
+    },
+    {
+      "model": "Beam (NVFP4)",
+      "benchmark": "AutomationBench - public split only",
+      "skor": 39.8,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "NVFP4",
+      "kaynak_metinden_alinti": "AutomationBench - public split only 39.8%"
+    },
+    {
+      "model": "Beam (BF16)",
+      "benchmark": "MCP Atlas",
+      "skor": 80.8,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "BF16",
+      "kaynak_metinden_alinti": "MCP Atlas 80.8%"
+    },
+    {
+      "model": "Beam (FP8)",
+      "benchmark": "MCP Atlas",
+      "skor": 81.5,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "FP8",
+      "kaynak_metinden_alinti": "MCP Atlas 81.5%"
+    },
+    {
+      "model": "Beam (NVFP4)",
+      "benchmark": "MCP Atlas",
+      "skor": 80.5,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "NVFP4",
+      "kaynak_metinden_alinti": "MCP Atlas 80.5%"
+    },
+    {
+      "model": "Beam (BF16)",
+      "benchmark": "Tau3 Banking",
+      "skor": 36.1,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "BF16",
+      "kaynak_metinden_alinti": "Tau3 Banking 36.1%"
+    },
+    {
+      "model": "Beam (FP8)",
+      "benchmark": "Tau3 Banking",
+      "skor": 36.8,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "FP8",
+      "kaynak_metinden_alinti": "Tau3 Banking 36.8%"
+    },
+    {
+      "model": "Beam (NVFP4)",
+      "benchmark": "Tau3 Banking",
+      "skor": 35.4,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "NVFP4",
+      "kaynak_metinden_alinti": "Tau3 Banking 35.4%"
+    },
+    {
+      "model": "Beam (BF16)",
+      "benchmark": "BrowseComp w/ context management",
+      "skor": 76.8,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "BF16",
+      "kaynak_metinden_alinti": "BrowseComp w/ context management 76.8%"
+    },
+    {
+      "model": "Beam (FP8)",
+      "benchmark": "BrowseComp w/ context management",
+      "skor": 76.7,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "FP8",
+      "kaynak_metinden_alinti": "BrowseComp w/ context management 76.7%"
+    },
+    {
+      "model": "Beam (NVFP4)",
+      "benchmark": "BrowseComp w/ context management",
+      "skor": 75.6,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "NVFP4",
+      "kaynak_metinden_alinti": "BrowseComp w/ context management 75.6%"
+    },
+    {
+      "model": "Beam (BF16)",
+      "benchmark": "DeepSearchQA w/ context management",
+      "skor": 80.5,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "BF16",
+      "kaynak_metinden_alinti": "DeepSearchQA w/ context management 80.5%"
+    },
+    {
+      "model": "Beam (FP8)",
+      "benchmark": "DeepSearchQA w/ context management",
+      "skor": 79.6,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "FP8",
+      "kaynak_metinden_alinti": "DeepSearchQA w/ context management 79.6%"
+    },
+    {
+      "model": "Beam (NVFP4)",
+      "benchmark": "DeepSearchQA w/ context management",
+      "skor": 81.1,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "NVFP4",
+      "kaynak_metinden_alinti": "DeepSearchQA w/ context management 81.1%"
+    },
+    {
+      "model": "Beam (BF16)",
+      "benchmark": "AA-LCR",
+      "skor": 78.2,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "BF16",
+      "kaynak_metinden_alinti": "AA-LCR 78.2%"
+    },
+    {
+      "model": "Beam (FP8)",
+      "benchmark": "AA-LCR",
+      "skor": 79.4,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "FP8",
+      "kaynak_metinden_alinti": "AA-LCR 79.4%"
+    },
+    {
+      "model": "Beam (NVFP4)",
+      "benchmark": "AA-LCR",
+      "skor": 78.7,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "NVFP4",
+      "kaynak_metinden_alinti": "AA-LCR 78.7%"
+    },
+    {
+      "model": "Beam (BF16)",
+      "benchmark": "LongBench v2",
+      "skor": 67.5,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "BF16",
+      "kaynak_metinden_alinti": "LongBench v2 67.5%"
+    },
+    {
+      "model": "Beam (FP8)",
+      "benchmark": "LongBench v2",
+      "skor": 67.6,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "FP8",
+      "kaynak_metinden_alinti": "LongBench v2 67.6%"
+    },
+    {
+      "model": "Beam (NVFP4)",
+      "benchmark": "LongBench v2",
+      "skor": 67.2,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "NVFP4",
+      "kaynak_metinden_alinti": "LongBench v2 67.2%"
+    },
+    {
+      "model": "Beam (BF16)",
+      "benchmark": "IFBench",
+      "skor": 79.6,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "BF16",
+      "kaynak_metinden_alinti": "IFBench 79.6%"
+    },
+    {
+      "model": "Beam (FP8)",
+      "benchmark": "IFBench",
+      "skor": 80.7,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "FP8",
+      "kaynak_metinden_alinti": "IFBench 80.7%"
+    },
+    {
+      "model": "Beam (NVFP4)",
+      "benchmark": "IFBench",
+      "skor": 79.2,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "NVFP4",
+      "kaynak_metinden_alinti": "IFBench 79.2%"
+    },
+    {
+      "model": "Beam (BF16)",
+      "benchmark": "AA Omniscience (index) - public split only",
+      "skor": 10.8,
+      "birim": "",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "BF16",
+      "kaynak_metinden_alinti": "AA Omniscience (index) - public split only 10.8"
+    }
+  ],
+  "gorsel_url": "https://external-preview.redd.it/ORPDPNIRbj2xuwfbbv4etgKgRlju70dqHqU0Vjyf1mQ.png?width=640&crop=smart&auto=webp&s=de3430355fa34d41c33be2a917c019ec698b0593",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x7g4k3/reflectionbeam10501ba23b_hugging_face/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-16T13:23:33.000Z",
+  "slug": "reflection-beam-1-0-501b-a23b-hugging-face"
+}

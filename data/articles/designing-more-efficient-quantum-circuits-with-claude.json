@@ -1,0 +1,44 @@
+{
+  "baslik_tr": "Claude ile Daha Verimli Kuantum Devre Tasarımları",
+  "ozet_tr": "Anthropic araştırmacıları, Claude Mythos 5 modelini kullanarak sekiz farklı kuantum devre görevinde, mevcut en iyi tasarımlardan daha az kuantum kaynağı gerektiren devreler ortaya çıkardı. Model, tamamen kapalı bir döngüde tasarım önerip, otomatik bir değerlendiriciden aldığı puanla kendini iyileştirerek, bazı durumlarda bir mertebe daha fazla verim sağladı.",
+  "detayli_icerik_tr": "Quantum bilgisayarların sınırlı sayıda kuantum biti ve yüksek hata oranları, faydalı algoritmaların çalıştırılabilmesi için devrelerin son derece verimli tasarlanmasını zorunlu kılıyor. Anthropic'in STEM Fellows Programı kapsamında yürütülen bu çalışmada, Claude'a kimya, optimizasyon, fizik simülasyonu ve sayı teorisi gibi alanlardan sekiz temel devre için sade bir dilde gereksinimler verildi ve bir otomatik değerlendirme aracıyla her tasarımın doğruluğu ve kaynak tüketimi puanlandı.\n\nAraştırmacılar, Claude Mythos 5'in kod yazma, çalıştırma ve revize etme yeteneklerini kullanarak devreleri Python’da oluşturdu ve bir dış değerlendirme programı sayesinde önerilen devrelerin doğru olup olmadığı ve kaç kuantum biti ile kaç Toffoli kapısı kullandığı ölçüldü. Model, insan müdahalesi olmadan 53 saat içinde birden fazla tasarım denemesi yaparak, her turda aldığı puanla bir sonraki tasarımını iyileştirdi.\n\nSonuçlar, Claude'un sekiz farklı görevde hem kuantum biti hem de kapı sayısı bakımından en iyi yayınlanmış tasarımları geride bıraktığını gösterdi. Özellikle elliptik eğri üzerindeki nokta ekleme işlemi için geliştirilen yeni devre, önceki en iyi tasarıma kıyasla %12 daha fazla kuantum biti kullanırken, kapı sayısını 17 kat azalttı. Bu, modüler tersleme adımının tersinir bir versiyonunun, geçmiş dal bilgisi saklamadan gerçekleştirilebilmesi sayesinde mümkün oldu. Claude ayrıca, bu dengeyi farklılaştırarak yeni bir tasarım ailesi oluşturdu; bu aile, kuantum biti ve kapı sayısı arasında daha geniş bir Pareto sınırı sundu.\n\nBu bulgular, yapay zekânın kuantum devre tasarımını yeniden şekillendirebileceğini ve böylece kuantum algoritmalarının daha hızlı ve daha az kaynakla çalıştırılmasını sağlayarak, ilaç keşfi, yeni batarya malzemeleri ve temiz gübre üretimi gibi alanlarda pratik kuantum bilgisayarların kullanılabilirliğini hızlandırabileceğini gösteriyor.",
+  "onemli_maddeler": [
+    "Claude Mythos 5, sekiz farklı kuantum devre görevinde mevcut en iyi tasarımlardan daha az kuantum biti ve kapı kullanarak yeni çözümler üretti.",
+    "Elliptik eğri nokta ekleme devresinde %12 daha fazla kuantum biti kullanılarak, kapı sayısı 17 kat azaltıldı.",
+    "Modüler tersleme için tersinir bir divsteps algoritması geliştirildi; geçmiş dal bilgisi saklamadan çalışarak kuantum biti ihtiyacını büyük ölçüde düşürdü.",
+    "Model, tamamen kapalı bir döngüde insan müdahalesi olmadan 53 saat içinde tasarım, değerlendirme ve iyileştirme süreçlerini tamamladı.",
+    "Yeni tasarım ailesi, kuantum biti ve çalışma süresi arasında daha geniş bir Pareto sınırı sunarak, önceki tasarımların sağlayamadığı kombinasyonları mümkün kıldı."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "Yapay zekâ destekli kuantum devre optimizasyonu, kuantum bilgisayarların pratik uygulamalara geçiş süresini kısaltabilecek kritik bir adım olduğundan sektörde büyük ilgi uyandırıyor.",
+  "etiketler": [
+    "Yapay Zeka",
+    "Kuantum Bilgisayar",
+    "Claude",
+    "Kuantum Devre Tasarımı",
+    "Araştırma"
+  ],
+  "anilan_modeller": [
+    "Claude Mythos 5"
+  ],
+  "yorum_tr": "Claude'un kapalı döngüde kendi tasarımlarını iyileştirebilmesi, kuantum algoritma geliştirme sürecini otomatikleştirerek araştırma maliyetlerini düşürebilir ve yeni uygulama alanlarının ortaya çıkmasını hızlandırabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Claude Mythos 5",
+      "benchmark": "gate count reduction (elliptic-curve point addition)",
+      "skor": 17,
+      "birim": "x",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "gates",
+      "kaynak_metinden_alinti": "one circuit in the family uses 12% more qubits but 17x fewer gates."
+    }
+  ],
+  "gorsel_url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/cc389d90b468ebc86011f6642099dfad9a4a757f-2000x1125.jpg",
+  "url": "https://www.anthropic.com/research/designing-efficient-quantum-circuits",
+  "source": "Anthropic Research",
+  "sourceTier": "resmi",
+  "date": "2026-10-16T00:00:00.000Z",
+  "slug": "designing-more-efficient-quantum-circuits-with-claude"
+}

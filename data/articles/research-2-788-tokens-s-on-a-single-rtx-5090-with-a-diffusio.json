@@ -1,0 +1,62 @@
+{
+  "baslik_tr": "ORL ile Diffusion LLM'lerde 2,788 token/s RTX 5090 Performansı ve Açık Kaynak Model Çıktıları",
+  "ozet_tr": "Araştırmacılar, diffusion tabanlı dil modellerini (dLLM) daha hızlı hâle getiren ORL (On-Policy Residual Learning) yöntemini tanıttı. ORL ve özel dlmrt inference motoru sayesinde LLaDA-2.1-mini modeli tek RTX 5090 üzerinde 2,788 token/s hızına ulaştı ve diğer büyük modellerde de %170‑%690 arasında hız artışı sağlandı. Tüm kod, model checkpoint'leri ve değerlendirme pipeline'ı açık kaynak olarak yayınlandı.",
+  "detayli_icerik_tr": "Yerel LLM topluluğu r/LocalLLaMA'ya yapılan bir duyuruda, diffusion language model (dLLM) mimarisine yeni bir eğitim ve çıkarım yaklaşımı olan ORL (On-Policy Residual Learning) tanıtıldı. ORL, her denoising adımında modelin önceki tahminlerini residual (kalan) bağlamı olarak taşıyarak ve bu residual'ları gerçek zamanlı olarak güncelleyerek, modelin daha az ileri geçişte (forward pass) daha fazla token'i kesinleştirmesini sağlıyor. Ayrıca Adjacent Entropy Contraction adlı bir kayıp fonksiyonu eklenerek belirsizlik daha hızlı azalıyor ve aşırı güvenli tahminler cezalandırılmıyor.\n\nBu yöntem, özel olarak geliştirilen dlmrt adlı CUDA‑graph tabanlı inference motoru ile birleştirildi. dlmrt, tüm denoising döngüsünü tek bir grafik içinde yakalayarak CPU‑GPU senkronizasyon maliyetlerini ortadan kaldırıyor ve NVFP4 desteği sayesinde tüketici sınıfı RTX 5090 gibi kartlarda da yüksek performans sunuyor. Tek bir istek (batch size 1) için yapılan ölçümlerde, LLaDA-2.1-mini + ORL kombinasyonu RTX 5090 üzerinde 2,788 token/s, 8× B200 üzerinde DiffusionGemma 26B MoE + ORL ise 7,708 token/s hızına ulaştı.\n\nQwenDLM-4B modeline uygulanan ORL, aynı donanımda (H100) token/s hızını 746'dan 1,298'e çıkararak DFlash spekülatif dekodlamadan %174 daha hızlı çalıştı ve aynı zamanda HumanEval pass@1 skorunu %82.9'dan %89.6'ya yükseltti. End‑to‑end sistem karşılaştırmalarında ORL, dlmrt ile SGLang/vLLM'den %120‑%160 daha hızlı sonuç verdi. Eğitim aşamasında da residual‑state yakalama ve özel attention kernel'ları sayesinde adım süresi %5.2'ye kadar iyileştirildi.\n\nTüm araştırma makalesi, model checkpoint'leri, eğitim kodları ve dlmrt inference motoru GitHub ve HuggingFace üzerinden açık kaynak olarak paylaşıldı. Geliştiriciler ve yerel LLM meraklıları, RTX 5090 gibi tüketici GPU'larıyla bu modelleri test edebilir, sonuçları yeniden üretip katkıda bulunabilirler. ORL'un diffusion LLM'lerdeki potansiyeli, düşük gecikmeli tek‑istek senaryoları için yeni bir yol haritası sunuyor.",
+  "onemli_maddeler": [
+    "ORL, diffusion LLM'lerde token başına ileri geçiş sayısını %6‑%7 oranında azaltarak tek GPU'da 2,788‑7,708 token/s hızları elde etti.",
+    "HumanEval testinde QwenDLM-4B + ORL %89.6 pass@1 skoru yakalayarak %6.7'lik bir kalite artışı sağladı.",
+    "dlmrt inference motoru, CUDA graph kullanımıyla spekülatif dekodlamalardan %120‑%160 daha hızlı çalışıyor."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "ORL, diffusion tabanlı dil modellerinin verimliliğini köklü şekilde artırarak hem akademik hem de endüstriyel uygulamalarda yeni bir performans standardı sunuyor; açık kaynak olması da geniş topluluk katkısını mümkün kılıyor.",
+  "etiketler": [
+    "diffusion LLM",
+    "ORL",
+    "benchmark",
+    "open source",
+    "GPU acceleration"
+  ],
+  "anilan_modeller": [
+    "LLaDA-2.1-mini",
+    "DiffusionGemma 26B MoE",
+    "QwenDLM-4B"
+  ],
+  "yorum_tr": "ORL'un getirdiği hız artışı, yerel inference senaryolarında diffusion LLM'lerin kullanılabilirliğini önemli ölçüde yükseltecek; geliştiriciler daha düşük gecikme ile yüksek kaliteli çıktılar alabilecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "QwenDLM-4B + ORL",
+      "benchmark": "end-to-end throughput increase",
+      "skor": 6.9,
+      "birim": "x",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "relative to baseline diffusion decoding",
+      "kaynak_metinden_alinti": "Up to 6.9× higher end-to-end throughput on our QwenDLM-4B model"
+    },
+    {
+      "model": "QwenDLM-4B + ORL vs DFlash",
+      "benchmark": "speedup factor on H100",
+      "skor": 1.74,
+      "birim": "x",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "single-request H100 comparison",
+      "kaynak_metinden_alinti": "1.74× faster than DFlash speculative decoding at matched accuracy in our single-request H100 comparison"
+    },
+    {
+      "model": "QwenDLM-4B + ORL",
+      "benchmark": "HumanEval pass@1",
+      "skor": 89.6,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "HumanEval pass@1 improves from 82.9% to 89.6%."
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/h4x1i6disvvh1.png?width=140&height=140&crop=1:1,smart&auto=webp&s=e709c0ac0e873f0ac8438c06dceb2dbe07c0d6f2",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x7polk/research_2788_tokenss_on_a_single_rtx_5090_with_a/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-16T19:33:04.000Z",
+  "slug": "research-2-788-tokens-s-on-a-single-rtx-5090-with-a-diffusio"
+}
