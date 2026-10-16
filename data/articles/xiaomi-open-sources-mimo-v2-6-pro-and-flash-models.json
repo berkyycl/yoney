@@ -1,0 +1,62 @@
+{
+  "baslik_tr": "Xiaomi MiMo-V2.6 Pro ve Flash modellerini açık kaynak yaptı",
+  "ozet_tr": "Xiaomi, omnimodal yetenekleriyle kodlama, görsel ve bilgisayar kullanımını birleştiren MiMo-V2.6 serisini açık kaynak olarak sundu. En güçlü sürüm Pro, Claude Opus 5 ve GPT‑5.6 Sol ile benzer performans sergilerken, daha düşük maliyetli Flash modeli verimlilik odaklı bir denge sağlıyor.",
+  "detayli_icerik_tr": "Xiaomi, MiMo‑V2.6 serisini iki yeni omnimodal modelle (MiMo‑V2.6‑Pro ve MiMo‑V2.6‑Flash) birlikte yayınladı ve tüm kod, görsel ve bilgisayar tabanlı görevlerde çalışacak şekilde tasarladı. Pro modeli, Claude Opus 5 ve GPT‑5.6 Sol ile benzer sonuçlar veren bir performansa sahipken, Flash modeli daha düşük işlem maliyeti ve enerji tüketimiyle aynı anda yüksek zeka seviyesini koruyor. Ayrıca Pro‑UltraSpeed seçeneği, aynı kaliteyi koruyarak yanıt süresini 20 kata kadar azaltıyor.\n\nModelin performansını ölçmek için yapılan RL (reinforcement learning) deneyleri, sadece altı gün içinde 30 adım ve yaklaşık 750 000 trajektör üzerinden gerçekleştirildi; bu süreç Flash için 850 000 $, Pro için ise 2,62 M$ maliyet gerektirdi. Eğitim sırasında 1 568 örnekle güncellemeler yapıldı ve bağlam uzunluğu bir milyon tokena kadar çıkarıldı. Xiaomi, model sapmasını önlemek için yönlendiriciyi dondurdu, ödül manipülasyonunu engellemek amacıyla adversarial değerlendirme, anomali tespiti ve doğrulayıcı çapraz kontroller kullandı.\n\nMiMo‑V2.6, yalnızca geleneksel yazılım geliştirme görevlerini aşarak \"Vibe World\" adı verilen bir ortamda görsel‑metinsel promptlardan etkileşimli 3D sahneler oluşturabiliyor. Blender varlıkları yaratma, kamera beslemeleriyle Franka Panda robot kolunu kontrol etme, sunum ve ön yüz tasarımları üretme, video montajı ve müzik (MIDI) besteleme gibi çok yönlü yetenekleri bulunuyor. Araştırma gösterimleri arasında PFAS kimyasallarını tespit eden malzeme taramaları ve Lean 4 tabanlı 6 000 satırdan fazla kernel‑doğrulanmış kodun formalize edilmesi yer alıyor.\n\nModel ve fiyatlandırma, Xiaomi AI Studio, MiMo Code, MiMo Desktop ve OpenRouter üzerinden erişilebilir. Flash modeli giriş tokeni başına 0,14 $, çıkış tokeni başına 0,28 $; Pro modeli ise 0,435 $ ve 0,87 $ olarak belirlenmiş. UltraSpeed ise bu fiyatların on katı bir maliyetle sunuluyor. Xiaomi, teknik raporu, eğitim ortamlarını ve RL kodlarını da açık kaynak olarak yayınlayarak ölçeklenebilir RL ve model öz‑iyileştirme testinin tekrarlanabilirliğini vurguluyor.",
+  "onemli_maddeler": [
+    "MiMo‑V2.6‑Pro, Claude Opus 5 ve GPT‑5.6 Sol ile benzer performans gösteriyor.",
+    "MiMo‑V2.6‑Flash, düşük maliyetli ve yüksek verimli bir omnimodal model olarak sunuldu.",
+    "Pro‑UltraSpeed, aynı kaliteyi korurken yanıt süresini 20 kata kadar azaltıyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Açık kaynak, yüksek performanslı omnimodal modellerin piyasaya sürülmesi ve ölçeklenebilir RL metodolojisinin paylaşılması, hem araştırma topluluğu hem de geliştiriciler için büyük bir adım teşkil ediyor.",
+  "etiketler": [
+    "MiMo-V2.6",
+    "omnimodal",
+    "açık kaynak",
+    "reinforcement learning",
+    "AI Studio"
+  ],
+  "anilan_modeller": [
+    "MiMo-V2.6-Pro",
+    "MiMo-V2.6-Flash",
+    "MiMo-V2.6-Pro-UltraSpeed"
+  ],
+  "yorum_tr": "MiMo‑V2.6 serisi, açık kaynak topluluğuna güçlü bir omnimodal alternatif sunarak model geliştirme ve uygulama maliyetlerini düşürürken, RL‑tabanlı iyileştirme süreçlerinin şeffaflığını artırıyor. Geliştiriciler, bu modelleri çoklu görevlerde kullanarak daha hızlı prototipleme ve inovasyon yapabilecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "MiMo-V2.6-Pro",
+      "benchmark": "Artificial Analysis Intelligence Index v4.3",
+      "skor": 46.32,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "MiMo-V2.6-Pro scored 46.32 on the Artificial Analysis Intelligence Index v4.3."
+    },
+    {
+      "model": "MiMo-V2.6-Flash",
+      "benchmark": "DeepSWE v1.1",
+      "skor": 65.68,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "DeepSWE v1.1 scores rose from 48.8 to 65.68 ..."
+    },
+    {
+      "model": "MiMo-V2.6-Pro",
+      "benchmark": "DeepSWE v1.1",
+      "skor": 72.57,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "DeepSWE v1.1 scores rose ... from 58.4 to 72.57."
+    }
+  ],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/09/HSxiBKkWQAA1LpY.jpeg",
+  "url": "https://www.testingcatalog.com/xiaomi-open-sources-mimo-v2-6-pro-and-flash-models/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-09-21T23:14:40.000Z",
+  "slug": "xiaomi-open-sources-mimo-v2-6-pro-and-flash-models"
+}

@@ -1,0 +1,39 @@
+{
+  "baslik_tr": "Elorian'ın Glimpse modeli, görsellerle etkileşimli akıl yürütme yeteneğiyle geldi",
+  "ozet_tr": "Palo Alto merkezli Elorian, ilk multimodal modeli Glimpse'i araştırma önizlemesi olarak duyurdu. Model, görsel akıl yürütme sırasında görüntüyü kırpma, yakınlaştırma ve kod çalıştırma gibi işlemler yaparak \"görsel kazıma alanı\" (visual scratch space) oluşturuyor ve bu sayede mevcut modellerin ötesinde görsel mantık yetenekleri sunuyor.",
+  "detayli_icerik_tr": "Elorian, 55 milyon dolarlık tohum yatırımıyla kurulduktan kısa bir süre sonra Glimpse adlı ilk modelini piyasaya sürdü. Model, API erişimi ve bekleme listesine dayalı bir sohbet arayüzüyle araştırma önizlemesi olarak sunuluyor; şu an için sadece sonuç tabloları ve bir tez şeklinde kullanılabiliyor. Glimpse'in temel iddiası, günümüz multimodal modellerinin bir resmi bir kez token'lara çevirip ardından sadece metin üzerinden akıl yürütmesinin yetersiz olduğudur. Bunun yerine model, akıl yürütme sürecinde görüntünün belirli bölgelerini kırpabilir, video karelerini çekebilir ya da kod çalıştırarak ölçüm ve karşılaştırma yapabilir.\n\nKurucusu ve eski Google DeepMind araştırmacısı Andrew Dai, görsel algının hâlâ eksik olduğunu bir masa oyunu örneğiyle açıklıyor: bir fotoğrafı modelin önüne koyup \"kim kazanıyor?\" sorusunu sorduğunda model yanıt verememişti. Glimpse, bu tür görsel sembolleri ve ikonografiyi doğrudan analiz edebilecek bir yapı sunuyor. OpenAI'nin 2025'te o-serisi modellerine eklediği kırpma‑yakınlaştırma yeteneğiyle benzer bir yaklaşım olsa da Elorian, bu işlevi modelin tüm mimarisine entegre ederek daha düşük maliyetle gerçekleştirdiğini iddia ediyor.\n\nŞirket, Glimpse'i birkaç yüz GPU üzerinde eğittiğini ve modelin boyutunun, benchmark testlerinde karşılaştırılan en büyük sistemlerden daha küçük olduğunu belirtiyor. Fiyatlandırma ise giriş seviyesindeki modellerden daha pahalı olmayan bir yapı: giriş token başına 0,60 $, çıkış token başına 3 $ ücret alınıyor. Elorian'un kendi değerlendirmelerine göre Glimpse, bilimsel grafik akıl yürütmesi ve kısa video altyazılandırma görevlerinde GPT‑6 Astra'yı geride bırakıyor; diğer görsel akıl yürütme testlerinde ise rekabetçi sonuçlar elde ediyor.\n\nGlimpse'in ilk hedef kitlesi, büyük miktarda video verisiyle çalışan robotik firmalar, bilimsel laboratuvarlar, medya ve yaratıcı sektörler. Uzun vadede Elorian, görsel algıdan eyleme geçişi sağlayarak sahne modellemesi üzerinden robot kontrolü gibi uygulamalara yönelmeyi planlıyor ve gelecek yıl \"dünyanın en iyi görsel akıl yürütme modeli\" olma hedefini duyurdu.",
+  "onemli_maddeler": [
+    "Glimpse, akıl yürütme sırasında görüntüyü kırpma, zoom yapma ve kod çalıştırma gibi işlemlerle \"görsel kazıma alanı\" (visual scratch space) sunuyor.",
+    "Model, sadece birkaç yüz GPU ile eğitildi ve mevcut büyük modellerden daha küçük bir mimariye sahip.",
+    "Glimpse, bilimsel grafik akıl yürütmesi ve kısa video altyazılandırmada GPT‑6 Astra'yı geride bıraktığını iddia ediyor.",
+    "Fiyatlandırma: giriş token başına 0,60 $, çıkış token başına 3 $, orta seviyedeki modellerden daha ucuz ancak hafif modellerden daha pahalı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Yeni bir multimodal modelin görsel akıl yürütme yaklaşımında yenilikçi bir mekanizma sunması ve büyük teknoloji şirketlerinin modellerine kıyasla daha düşük maliyetle rekabet etmesi sektörde önemli bir etki yaratabilir.",
+  "etiketler": [
+    "multimodal",
+    "görsel akıl yürütme",
+    "AI startup",
+    "robotik",
+    "benchmark"
+  ],
+  "anilan_modeller": [
+    "Glimpse",
+    "GPT-6 Astra",
+    "Sonnet",
+    "Sol",
+    "Haiku",
+    "Luna",
+    "OpenAI o-series"
+  ],
+  "yorum_tr": "Glimpse'in görsel kazıma alanı, AI'nın gerçek zamanlı görsel analiz ve eylem planlaması konularında yeni bir kilometre taşı olabilir; geliştiriciler daha dinamik görsel iş akışları oluşturabilirken, kullanıcılar da daha doğru ve bağlamsal görsel yanıtlar alabilecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://techcrunch.com/wp-content/uploads/2026/10/image-1.png?resize=1200,675",
+  "url": "https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/",
+  "source": "TechCrunch AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-16T16:01:37.000Z",
+  "slug": "elorian-s-first-ai-model-wants-to-reason-with-images-not-jus"
+}

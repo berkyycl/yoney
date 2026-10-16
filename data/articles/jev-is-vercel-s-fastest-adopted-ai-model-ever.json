@@ -1,0 +1,63 @@
+{
+  "baslik_tr": "Jev, Vercel'in En Hızlı Benimsenen AI Modeli Oldu",
+  "ozet_tr": "Vercel'in AI gateway verilerine göre, Jev modeli lansmanının ilk iki haftasında ücretli ekiplerin %35'i tarafından kullanıldı ve bu oran, ikinci en popüler model Sonnet 5.5'in iki katı. Açık kaynak modellerin token payı %70'in üzerine çıkarken, sınır‑ötesi laboratuvarlara harcama on kat artış gösterdi.",
+  "detayli_icerik_tr": "Vercel, 15 Eylül'de sınırlı bir sürüm olarak piyasaya sürdüğü Jev modelinin benimsenme hızını iki haftalık bir periyotta ölçtü. Şirketin AI gateway'inde toplanan verilere göre, Jev, ödeme yapan ekiplerin %35'i tarafından tercih edildi; bu oran, aynı platformda ikinci en çok kullanılan model olan Sonnet 5.5'in yaklaşık yarısı kadar bir fark yaratıyor.\n\nJev, önceden belirlenmiş birkaç çıktı arasından seçim yapmaya odaklanan hafif bir karar modeli olarak tasarlandı. Çıktı sayısını sınırlamak, modeli hem daha ucuz hem de daha hızlı çalıştırıyor; bu da büyük veri sınıflandırma görevlerinde Sonnet gibi daha ağır modellere kıyasla avantaj sağlıyor. Vercel, Jev'i erken benimseyen ilk müşterilerinden biri olarak, zararlı komutları sınıflandırmak için daha önce kullandığı GPT-6 Luna modelini Jev ile değiştirdi.\n\nVercel'in raporu ayrıca açık kaynak modellerin pazar payının hızla büyüdüğünü gösteriyor: işleme alınan tokenların %70'inden fazlası açık kaynak modeller tarafından sağlanıyor ve toplam harcamanın yaklaşık %25'i bu modellere gidiyor. Bununla birlikte, sınır‑ötesi (frontier) laboratuvarlara yapılan harcama on kat artış göstererek, bu modellerin hâlâ daha küçük bir paya sahip olmasına rağmen pazarın büyümesinde kritik bir rol oynadığını ortaya koyuyor.\n\nBu bulgular, Jev'in düşük maliyetli ve yüksek hızlı sınıflandırma yeteneklerinin sektördeki talebi karşılamada etkili olduğunu ve açık kaynak ile sınır‑ötesi modellerin birbirini tamamlayıcı bir ekosistem oluşturduğunu işaret ediyor.",
+  "onemli_maddeler": [
+    "Jev, lansmanının ilk iki haftasında ücretli ekiplerin %35'i tarafından kullanıldı.",
+    "Modelin benimsenme oranı, Sonnet 5.5'in iki katı kadar yüksek.",
+    "Açık kaynak modeller, Vercel gateway üzerinden işlenen tokenların %70'inden fazlasını oluşturuyor.",
+    "Sınır‑ötesi laboratuvar harcamaları on kat artış gösterdi."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Modelin ilk iki haftada elde ettiği %35 benimsenme oranı ve açık kaynak modellerin pazar payındaki hızlı artış, AI altyapı pazarının dinamiklerini ve rekabet yapısını gösteren kritik bir gösterge sunuyor.",
+  "etiketler": [
+    "AI modeli",
+    "Jev",
+    "Vercel",
+    "benimsenme",
+    "açık kaynak"
+  ],
+  "anilan_modeller": [
+    "Jev",
+    "Sonnet 5.5",
+    "GPT-6 Luna"
+  ],
+  "yorum_tr": "Jev'in hızlı benimsenmesi, düşük maliyetli ve yüksek hızlı karar modellerine olan talebin artığını gösteriyor; geliştiriciler bu tür hafif modelleri daha fazla tercih ederken, açık kaynak çözümlerinin pazar payının büyümesi ekosistemde çeşitliliği ve rekabeti artıracak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Jev",
+      "benchmark": "Adoption among paid Vercel teams (first 2 weeks)",
+      "skor": 35,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "ilk iki hafta",
+      "kaynak_metinden_alinti": "within two weeks of its launch, the buzzy decision model was being used by 35% of paid teams"
+    },
+    {
+      "model": "Open source models",
+      "benchmark": "Token share processed through Vercel gateway",
+      "skor": 70,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "open source models, which now account for more than 70% of the tokens processed through Vercel’s gateway"
+    },
+    {
+      "model": "Open source models",
+      "benchmark": "Spend share of total",
+      "skor": 25,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "nearly 25% of the total spend"
+    }
+  ],
+  "gorsel_url": "https://techcrunch.com/wp-content/uploads/2026/04/vercel-2249343327-smaller.jpg?resize=1200,800",
+  "url": "https://techcrunch.com/2026/10/16/jev-is-vercels-fastest-adopted-ai-model-ever/",
+  "source": "TechCrunch AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-16T15:33:49.000Z",
+  "slug": "jev-is-vercel-s-fastest-adopted-ai-model-ever"
+}

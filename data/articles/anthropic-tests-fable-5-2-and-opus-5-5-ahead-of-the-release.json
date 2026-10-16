@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "Anthropic, Claude Fable 5.2 ve Opus 5.5'i Gizli Testlerle Değerlendiriyor",
+  "ozet_tr": "Anthropic, yeni frontier modeli Claude Fable 5.2'yi ve yaklaşan Claude Opus 5.5'i gerçek kullanıcı ortamlarında gizli A/B testlerine tabi tutuyor. Kullanıcıların paylaştığı örneklerde, modelin saf JavaScript kodu üreterek etkileşimli oyun ve animasyonlar oluşturduğu görülüyor. Bu testler, modelin önceki sürümlerinin çok ötesinde bir yetenek seviyesine ulaştığını gösteriyor.",
+  "detayli_icerik_tr": "Anthropic, son haftalarda Claude Fable 5.2'nin çıktısını sosyal medyada paylaşılan örneklerle dolu bir dizi gizli testle gözler önüne serdi. Kullanıcı Chetaslua, modelin sadece bir prompt ile tamamen işlevsel bir uzay gemisi nişancı oyunu ve buna eşlik eden video demoyu tek seferde JavaScript kodu olarak ürettiğini duyurdu. Aynı model, hayvanlara özgü atıştırmalıklar gibi detaylı içerikleri, kullanıcıdan ek bir talep almadan bile kod içinde oluşturdu.\n\nBu örneklerde dikkat çeken nokta, modelin harici görsel dosyalar, eklentiler ya da üçüncü parti araçlar kullanmadan, doğrudan kod satırlarıyla sprite ve animasyonları çizebilmesi. Böyle bir yetenek, geliştiricilerin prototip aşamasında dış bağımlılıkları ortadan kaldırarak daha hızlı deneme yapmalarına olanak tanıyor. Bir diğer gösterimde, Claude maskotu için interaktif bir sanal dünya yaratıldı; kullanıcı ekranın istediği noktasına tıkladığında maskot o konuma hareket etti, tümü JavaScript içinde kodlanmıştı.\n\nFable 5.2'nin performansı, aynı karmaşık promptları OpenAI'nin henüz duyurulmamış GPT-6 Astra modeliyle karşılaştıran bir başka kullanıcı JAZII tarafından da vurgulandı. JAZII, yüksek akıl yürütme gerektiren sorulara verilen yanıtların Fable 5.2'de tamamen farklı ve daha üstün olduğunu belirterek, yeni modelin Astra'ya karşı ciddi bir rekabet oluşturduğunu iddia etti.\n\nBu testlerin yanı sıra, Anthropic'in bir sonraki büyük sürümü Claude Opus 5.5'in de gizli bir aşamada olduğu ortaya çıktı. \"claude-wafer-eap\" kod adıyla test edilen Opus 5.5'in bu hafta içinde duyurulması bekleniyor ve fiyatlandırmasının önceki sürümlerin altında olacağına dair söylentiler dolaşıyor. Şirket, bu yeni modelin adaptif düşünme, zorunlu araç kullanımının kaldırılması ve daha düşük fiyat gibi özelliklerle gelmesini planlıyor. Ancak modelin ne zaman tüm abonelere açılacağı hâlâ belirsiz.",
+  "onemli_maddeler": [
+    "Claude Fable 5.2, tek bir prompt ile tam işlevsel JavaScript oyun ve animasyonları üretebiliyor.",
+    "Model, dış kaynaklı görsel dosyaları veya eklentileri kullanmadan kod içinde sprite ve hareketleri çiziyor.",
+    "Kullanıcılar, Fable 5.2'nin yüksek akıl yürütme gerektiren görevlerde GPT-6 Astra'ya rakip çıktılar verdiğini belirtti.",
+    "Claude Opus 5.5, \"claude-wafer-eap\" kod adıyla gizli test aşamasında ve önümüzdeki günlerde duyurulması planlanıyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Yeni nesil modellerin yetenek seviyesindeki büyük sıçrama, hem geliştiriciler hem de son kullanıcılar için kod üretiminde devrim yaratma potansiyeli taşıdığı için sektörel etkisi yüksek.",
+  "etiketler": [
+    "Anthropic",
+    "Claude Fable",
+    "Opus",
+    "AI model testing",
+    "JavaScript generation"
+  ],
+  "anilan_modeller": [
+    "Claude Fable 5.2",
+    "Claude Opus 5.5",
+    "GPT-6 Astra"
+  ],
+  "yorum_tr": "Claude Fable 5.2'nin kod üretimindeki ilerlemesi, geliştiricilerin prototip sürecini hızlandırarak yapay zekâ destekli programlamanın yeni bir aşamaya geçmesini sağlayabilir. Opus 5.5'in düşük fiyat ve adaptif düşünme özellikleri ise geniş kullanıcı tabanının daha erişilebilir modellerle buluşmasını vaat ediyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/09/Playground-Claude-Platform-09-21-2026_10_58_AM.jpg",
+  "url": "https://www.testingcatalog.com/anthropic-tests-fable-5-2-and-opus-5-5-ahead-of-the-release/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-09-21T08:45:15.000Z",
+  "slug": "anthropic-tests-fable-5-2-and-opus-5-5-ahead-of-the-release"
+}

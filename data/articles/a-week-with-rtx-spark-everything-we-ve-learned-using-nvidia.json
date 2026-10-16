@@ -1,0 +1,80 @@
+{
+  "baslik_tr": "RTX Spark N1X ile bir hafta: Nvidia’nın yeni Arm tabanlı laptop çipi test edildi",
+  "ozet_tr": "Nvidia, yüksek performanslı Arm tabanlı RTX Spark N1X çipini Windows laptoplarda sunmaya başladı. Asus, HP, Lenovo ve Microsoft gibi üreticilerin üst düzey modellerinde 20 CPU çekirdeği ve 6.144 CUDA çekirdeğiyle çalışan bu “superchip”, hem oyun hem de yerel AI senaryolarında iddialı performans vaat ediyor.",
+  "detayli_icerik_tr": "Nvidia’nın RTX Spark N1X işlemcisi, 20 CPU çekirdeği ve 6.144 CUDA çekirdeğiyle Windows‑on‑Arm dizüstü bilgisayarlara taşındı. İlk dalga, Microsoft Surface Laptop Ultra (128 GB birleşik bellek), Asus ProArt P16 (64 GB ve 128 GB konfigürasyonları), Lenovo Yoga 9n 2‑in‑1 (64 GB) ve HP OmniBook Ultra (32 GB) gibi modellerde test edildi. Fiyatları 2.600 $'dan 7.000 $'a kadar değişen bu cihazlar, geliştiriciler, içerik üreticileri ve oyun meraklıları için tasarlandı.\n\nYazılım uyumluluğu açısından Windows‑on‑Arm artık önceki yıllara göre çok daha sorunsuz. Adobe Photoshop ve Premiere gibi yerel Arm sürümleri sorunsuz çalışıyor; x86 uygulamalar ise Microsoft’un Prism emülasyon katmanı sayesinde çoğu zaman fark edilmeden çalışıyor. Test eden yazarlar, günlük iş akışlarında Signal, Discord, Audacity, CapCut, Evernote gibi popüler uygulamaları sorunsuz kullandıklarını belirtti.\n\nOyun performansı, RTX Spark’ın GPU gücünün bir yansıması olarak orta ayarlarda 1440p ve DLSS Performance modunda çoğu oyunda sabit 60 fps civarı sağlıyor. Black Myth: Wukong ortalama 70 fps, Cyberpunk 2077 66 fps ve Forza Horizon 6 57 fps elde edildi. Ancak CPU‑ağırlıklı oyunlar (Helldivers 2, Star Wars Zero) 37‑39 fps ile sınırlı kaldı ve bazı eski 2D oyunlarda takılmalar gözlendi. VR desteği hâlâ deneysel seviyede.\n\nPil ömrü ise yüksek kapasiteli bataryalar (99.9 Wh) sayesinde 5‑6 saatlik gerçek‑dünya kullanım sağlıyor; yoğun video işleme ve AI sorgularında bu süre daha da kısalıyor. Şarj hızı ise 140 W USB‑C PD ile 0‑95 % arasında bir saatte tamamlanıyor. Yerel AI çalıştırma deneyimi hâlâ beta aşamasında; Qwen3.8‑27B gibi modelleri çalıştırmak bataryanın %10’unu tüketiyor ve cihazı ısıtıyor.",
+  "onemli_maddeler": [
+    "RTX Spark N1X, 20 CPU ve 6.144 CUDA çekirdeğiyle Windows‑on‑Arm laptop pazarına yüksek performanslı bir seçenek getiriyor.",
+    "Orta ayarlarda 1440p ve DLSS Performance ile çoğu modern oyunda 60 fps civarı elde edildi, ancak CPU‑ağırlıklı oyunlarda performans sınırlı.",
+    "Pil ömrü 5‑6 saat arasında değişiyor; yoğun AI ve video işleme süresince hızla düşüyor.",
+    "Windows‑on‑Arm uyumluluğu büyük ölçüde iyileşti; x86 uygulamaları Prism üzerinden sorunsuz çalışıyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Nvidia’nın RTX Spark N1X, Arm tabanlı laptop segmentine güçlü bir rakip getirerek hem oyun hem de yerel AI kullanımını yeniden şekillendirme potansiyeline sahip.",
+  "etiketler": [
+    "RTX Spark",
+    "Arm laptop",
+    "Gaming",
+    "AI",
+    "Battery life"
+  ],
+  "anilan_modeller": [
+    "Qwen3.8-27B",
+    "Claude Opus 5.5"
+  ],
+  "yorum_tr": "RTX Spark N1X, yüksek bellek ve GPU kapasitesiyle yaratıcı profesyoneller ve geliştiriciler için cazip bir platform sunuyor; ancak fiyat ve pil ömrü gibi sınırlamalar, geleneksel Nvidia GPU’lu laptopların hâlâ tercih edilmesini sağlayabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "RTX Spark N1X",
+      "benchmark": "Black Myth: Wukong FPS",
+      "skor": 70,
+      "birim": "fps",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "DLSS Performance, 1440p (native 3270x2180), medium settings",
+      "kaynak_metinden_alinti": "I was able to run Black Myth: Wukong at 70fps on average at native resolution (3270 x 2180) with medium settings and DLSS performance mode enabled."
+    },
+    {
+      "model": "RTX Spark N1X",
+      "benchmark": "Cyberpunk 2077 FPS",
+      "skor": 66,
+      "birim": "fps",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "DLSS Performance, 1440p, medium settings",
+      "kaynak_metinden_alinti": "I ran the same medium settings and DLSS performance in Cyberpunk 2077 and averaged 66fps."
+    },
+    {
+      "model": "RTX Spark N1X",
+      "benchmark": "Forza Horizon 6 FPS",
+      "skor": 57,
+      "birim": "fps",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Medium settings, 1440p",
+      "kaynak_metinden_alinti": "Forza Horizon 6 managed an average of 57fps."
+    },
+    {
+      "model": "RTX Spark N1X",
+      "benchmark": "Returnal FPS",
+      "skor": 60,
+      "birim": "fps",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "1440p, high settings",
+      "kaynak_metinden_alinti": "I had plenty of power for a smooth 60fps in Returnal (at 1440p with high settings)."
+    },
+    {
+      "model": "RTX Spark N1X",
+      "benchmark": "Helldivers 2 FPS",
+      "skor": 38,
+      "birim": "fps",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "DLSS upscaled 1080p, highest difficulty",
+      "kaynak_metinden_alinti": "I typically saw my framerate capped between 37fps and 39fps in battle."
+    }
+  ],
+  "gorsel_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/268814_Nvidia_RTX_Spark_laptops_Asus_HP_Lenovo_ADiBenedetto_0001.jpg?quality=90&strip=all&crop=0,0,100,100",
+  "url": "https://www.theverge.com/tech/1012748/nvidia-rtx-spark-windows-arm-laptops-asus-hp-lenovo-impressions",
+  "source": "The Verge AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-16T15:00:00.000Z",
+  "slug": "a-week-with-rtx-spark-everything-we-ve-learned-using-nvidia"
+}

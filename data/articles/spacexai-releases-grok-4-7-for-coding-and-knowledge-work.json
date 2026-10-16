@@ -1,0 +1,109 @@
+{
+  "baslik_tr": "SpaceXAI, kodlama ve bilgi işi için Grok 4.7'yi yayınladı",
+  "ozet_tr": "SpaceXAI, kodlama ve bilgi işi odaklı en yetkin modeli Grok 4.7'yi duyurdu. Model, daha uzun görev süresi, kendini denetleme yeteneği ve geliştirilmiş güvenlik önlemleriyle öne çıkıyor ve rekabetçi token fiyatlarıyla sunuluyor.",
+  "detayli_icerik_tr": "SpaceXAI, yeni Grok 4.7 modelini hem kendi ürünleri (Cursor, Grok Build, Grok API) hem de üçüncü taraf kodlama platformları ve bulut hizmetleri üzerinden erişime açtı. Model, önceki sürüm Grok 4.6'ya kıyasla daha büyük bir temel model üzerine uzun bir pekiştirme öğrenme döngüsü ve saatlerce sürebilecek zor görevleri hedefleyen bir görev karışımıyla eğitildi. Bu sayede zor görevlerde daha uzun kalabiliyor, çıktısını daha titiz bir şekilde kontrol ediyor ve genişletilmiş bağlam yönetimi sunuyor.\n\nFiyatlandırma açısından Grok 4.7, giriş tokeni başına 2 $, çıkış tokeni başına 6 $ olarak sabitlenmiş; hızlı varyantı ise iki kat daha yüksek bir fiyat karşılığında iki kat çıkış hızı sağlıyor. Grok Build üzerinden modelin ücretsiz deneme imkanı da bulunuyor. Güvenlik açısından ise tamamen yeni bir koruma yığınıyla donatılmış; jailbreak direnci ve reddetme mekanizmaları önceki sürümlerden daha güçlü.\n\nBenchmark sonuçları, Grok 4.7'nin performansında belirgin bir artış olduğunu gösteriyor. CursorBench 4.0'da %46.3, DeepSWE v1.1 (yüksek çaba) %71.0, EEBench %64.0, Terminal‑Bench 4.0 %38.0 ve Harvey Legal Agent Benchmark %19.6 puan elde etti. AA Briefcase v1.1'de 1 657 puan alırken, HealthBench Professional %56.7 ile GPT‑5.6 Sol Max ve Fable 5.1 Max'in gerisinde kaldı. Güvenlik testlerinde LatchBio’nun biosafety benchmark'inde %62.4, HackerBench v0.3'te ise riskli çift‑kullanım istemlerinin sadece %3.3'ünü geçirebildi.\n\nSpaceXAI, Grok 4.7 ile kodlama ekipleri ve bilgi çalışanları için rekabetçi bir alternatif sunmayı hedefliyor. Uzun görev yürütme süresi, kendini denetleme yeteneği, uygun token fiyatları ve sıkı güvenlik önlemleri, modeli frontier model pazarında öne çıkarıyor ve geliştiricilerin hem verimliliğini hem de güvenliğini artırmayı amaçlıyor.",
+  "onemli_maddeler": [
+    "Grok 4.7, uzun ve zor görevlerde daha uzun süre kalabilen, çıktısını daha dikkatli kontrol eden bir mimariye sahip.",
+    "Token fiyatları $2 (giriş) ve $6 (çıkış) seviyelerinde sabitlenmiş; hızlı varyantı iki kat fiyatla iki kat hız sunuyor.",
+    "CursorBench 4.0'da %46.3, DeepSWE v1.1'de %71.0 gibi benchmarklarda Grok 4.6'ya göre önemli iyileşmeler gösterdi.",
+    "Yeni güvenlik yığını sayesinde jailbreak direnci ve reddetme oranları önceki modellere göre en yüksek seviyede."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Grok 4.7, kodlama ve bilgi işi odaklı en yeni büyük model olarak piyasaya sürülmüş, rekabetçi fiyatlandırma ve geliştirilmiş güvenlik özellikleriyle sektörde önemli bir etki yaratması bekleniyor.",
+  "etiketler": [
+    "Grok 4.7",
+    "kodlama",
+    "bilgi işi",
+    "model",
+    "benchmark"
+  ],
+  "anilan_modeller": [
+    "Grok 4.7",
+    "Grok 4.6",
+    "GPT-5.6 Sol Max",
+    "Fable 5.1 Max"
+  ],
+  "yorum_tr": "Grok 4.7'nin uzun görev süresi ve kendini denetleme yeteneği, kodlama ekiplerinin verimliliğini artırırken, sıkı güvenlik önlemleri de kurumsal kullanım için güvenilir bir seçenek sunuyor. Rekabetçi token fiyatları, frontier model pazarında maliyet odaklı bir alternatif olarak öne çıkmasını sağlayacak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Grok 4.7",
+      "benchmark": "CursorBench 4.0",
+      "skor": 46.3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Grok 4.7 scored 46.3% on CursorBench 4.0, up from 40.4%"
+    },
+    {
+      "model": "Grok 4.7",
+      "benchmark": "DeepSWE v1.1",
+      "skor": 71,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "high effort",
+      "kaynak_metinden_alinti": "reached 71.0% on DeepSWE v1.1 at high effort"
+    },
+    {
+      "model": "Grok 4.7",
+      "benchmark": "EEBench",
+      "skor": 64,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "posted 64.0% on EEBench"
+    },
+    {
+      "model": "Grok 4.7",
+      "benchmark": "Terminal-Bench 4.0",
+      "skor": 38,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "38.0% on Terminal-Bench 4.0"
+    },
+    {
+      "model": "Grok 4.7",
+      "benchmark": "Harvey Legal Agent Benchmark",
+      "skor": 19.6,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "19.6% on the Harvey Legal Agent Benchmark"
+    },
+    {
+      "model": "Grok 4.7",
+      "benchmark": "HealthBench Professional",
+      "skor": 56.7,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "56.7% HealthBench Professional score"
+    },
+    {
+      "model": "Grok 4.7",
+      "benchmark": "LatchBio biosafety benchmark",
+      "skor": 62.4,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "scored 62.4% on LatchBio’s biosafety benchmark"
+    },
+    {
+      "model": "Grok 4.7",
+      "benchmark": "HackerBench v0.3",
+      "skor": 3.3,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "allowed only 3.3% of risky dual-use prompts through on HackerBench v0.3"
+    }
+  ],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/09/grok-4-7-og.webp",
+  "url": "https://www.testingcatalog.com/spacexai-releases-grok-4-7-for-coding-and-knowledge-work/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-09-21T22:32:03.000Z",
+  "slug": "spacexai-releases-grok-4-7-for-coding-and-knowledge-work"
+}

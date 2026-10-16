@@ -1,0 +1,83 @@
+{
+  "baslik_tr": "Google Gemini 4 Argon, aylar içinde Google'un en ileri modeli konumuna geldi",
+  "ozet_tr": "Google DeepMind'in yeni modeli Gemini 4 Argon, ARC-AGI-3 benchmark'ında %97.5 başarı elde ederek 95% sınırını aşan ikinci laboratuvar oldu. Model, Provider Adapter Harness test ortamında elde ettiği yüksek puanla GPT-6 Astra'nın %99.9 skoruna yaklaşırken, maliyet ve test koşullarına duyarlılığı da gündeme geldi.",
+  "detayli_icerik_tr": "Google DeepMind, Gemini 4 Argon adlı yeni modelini ARC-AGI-3 benchmark'ında %97.5 başarı oranı ile duyurdu. Bu skor, Provider Adapter Harness adı verilen, satıcıya özgü retained reasoning ve context compaction gibi özellikleri kullanan bir test ortamında elde edildi ve modelin $4,800 maliyetle çalıştırıldığını gösteriyor. ARC Prize verilerine göre, Google bu sonuçla OpenAI'dan sonra %95 eşiğini geçen ikinci AI laboratuvarı konumuna yükseldi; tek rakibi GPT-6 Astra ise %99.9 puanla liderliği elinde tutuyor.\n\nModelin önceki sürümlerine kıyasla performans farkı, test ortamına bağlı olarak büyük değişiklikler gösteriyor. Standard Harness (sadece basit notlar izin veren) ortamında Argon'un skoru %49.8'e düşerken, aynı ortamda OpenAI'nin GPT-5.6 Sol modeli sadece %7.8 puan almıştı. Bu durum, benchmarkların teknik ortamdan ne kadar etkilendiğini ve sonuçların karşılaştırılabilirliğinin sınırlarını ortaya koyuyor. Ayrıca, Argon'un düşük, orta ve yüksek akıl yürütme seviyelerinde tamamladığı oyun sayısı da farklılık gösterdi; en yüksek seviyede sadece 19 oyun tamamlanabildi.\n\nARC-AGI-2 ve ARC-AGI-1 testlerinde Argon sırasıyla %91.3 ve %98.5 puan alarak maliyet etkinliğini gösterdi ($0.32 ve $0.16 per task). Epoch AI tarafından derlenen Epoch Capabilities Index (ECI) de Argon'a 165 puan vererek Fable 5.1 ile eşitlemiş, Opus 5.5 (167) ve GPT-6 Astra (166) arkasında kalmıştır. Bu puan, modelin genel yetenek skalasında son birkaç ay içinde en yüksek seviyeye ulaştığını işaret ediyor.\n\nPerformans analizi, Argon'un bilgi, ajan ve görsel benchmark'larda öne çıktığını, ancak matematik ve yazılım mühendisliği alanlarında hâlâ sekizinci ve altıncı sırada olduğunu gösteriyor. Bu sonuçlar, Google'ın Gemini serisinin hızla geliştiğini ve AI sınırını zorlamaya devam ettiğini, fakat belirli uzmanlık alanlarında hâlâ rekabetin yoğun olduğunu ortaya koyuyor.",
+  "onemli_maddeler": [
+    "Gemini 4 Argon, ARC-AGI-3 benchmark'ında %97.5 skorla %95 eşiğini aşan ikinci AI laboratuvarı oldu.",
+    "Test ortamına (Provider Adapter Harness vs Standard Harness) bağlı olarak model performansı %49.8'den %97.5'e kadar değişiklik gösterdi.",
+    "Epoch Capabilities Index'te 165 puan alarak Google'un AI yetenek skalasında en yüksek seviyeye ulaştı."
+  ],
+  "kategori": "benchmark",
+  "onem": 5,
+  "onem_gerekce": "Model, AI genel yetenek benchmark'larında lider laboratuvarlarla rekabet edebilecek seviyeye ulaşarak sektördeki rekabeti ve araştırma yönelimlerini yeniden şekillendiriyor.",
+  "etiketler": [
+    "Gemini 4 Argon",
+    "ARC-AGI-3",
+    "AI benchmark",
+    "Google DeepMind",
+    "GPT-6 Astra"
+  ],
+  "anilan_modeller": [
+    "Gemini 4 Argon",
+    "GPT-6 Astra",
+    "GPT-5.6 Sol",
+    "Claude Opus 5",
+    "Fable 5.1",
+    "Opus 5.5"
+  ],
+  "yorum_tr": "Gemini 4 Argon'un yüksek benchmark skorları, Google'ın AI araştırma ve ürün geliştirme konusundaki ivmesini gösteriyor; geliştiriciler daha güçlü API özelliklerinden faydalanarak modelleri daha verimli test edebilecek, kullanıcılar ise daha yetenekli asistanlarla karşılaşacak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Gemini 4 Argon",
+      "benchmark": "ARC-AGI-3",
+      "skor": 97.5,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Provider Adapter Harness",
+      "kaynak_metinden_alinti": "Gemini 4 Argon scored 97.5 percent on ARC-AGI-3 at a cost of $4,800 using the \"Provider Adapter Harness\""
+    },
+    {
+      "model": "Gemini 4 Argon",
+      "benchmark": "ARC-AGI-3",
+      "skor": 49.8,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Standard Harness",
+      "kaynak_metinden_alinti": "In the \"Standard Harness,\" which only allows simple notes between rounds, Argon drops to 49.8 percent at low reasoning for $5,800"
+    },
+    {
+      "model": "Gemini 4 Argon",
+      "benchmark": "ARC-AGI-2",
+      "skor": 91.3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "On older versions of the benchmark, Argon scored 91.3 percent on ARC-AGI-2 ($0.32 per task)"
+    },
+    {
+      "model": "Gemini 4 Argon",
+      "benchmark": "ARC-AGI-1",
+      "skor": 98.5,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "and 98.5 percent on ARC-AGI-1 ($0.16 per task)"
+    },
+    {
+      "model": "Gemini 4 Argon",
+      "benchmark": "Epoch Capabilities Index (ECI)",
+      "skor": 165,
+      "birim": "points",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Argon scored 165 points on the Epoch Capabilities Index (ECI), tying Fable 5.1 and landing just behind Opus 5.5 (167) and GPT-6 Astra (166)"
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/09/gemini_4_argon.png",
+  "url": "https://the-decoder.com/googles-gemini-4-argon-is-closer-to-the-ai-frontier-than-any-google-model-in-months/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-16T15:03:46.000Z",
+  "slug": "google-s-gemini-4-argon-is-closer-to-the-ai-frontier-than-an"
+}

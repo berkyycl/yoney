@@ -1,0 +1,80 @@
+{
+  "baslik_tr": "Beam: 501B açık MoE modeli, sahip olun, özelleştirin ve ölçeklendirin",
+  "ozet_tr": "Reflection laboratuvarının yeni Beam modeli, 501 milyar parametreli bir MoE mimarisiyle 1M token uzunluğunda bağlamı destekliyor ve sadece 23B aktif parametreyle çalışıyor. Apache 2.0 lisansı altında sunulan model, Rust tabanlı bir harness ve vLLM, SGLang gibi popüler kütüphanelerle entegrasyon sağlıyor.",
+  "detayli_icerik_tr": "Beam, Reflection adlı ABD merkezli bir laboratuvar tarafından Hugging Face üzerinden açık kaynak olarak yayınlandı. Model, 52 katmanlı bir dekoder ve her MoE katmanında 256 uzmana sahip; bir token için yalnızca 8 uzman aktif hâle geliyor, bu da 23 B aktif parametreyle büyük bir modelin kapasitesini sunarken daha küçük bir modelin hızını koruyor. Bağlam penceresi 1 M token olarak belirlenmiş ve kaydırmalı‑pencere (sliding‑window) dikkat mekanizmasıyla birlikte dokuz global katman tam bağlamı işliyor.\n\nModelin dikkat blokları, 48 sorgu başlığı ve 8 anahtar‑değer başlığıyla grup‑sorgu dikkat (grouped‑query attention) kullanıyor; RMSNorm ve öğrenilmiş sigmoid kapı ile her kanal ölçekleniyor. Uzman yönlendiricisi DeepSeek‑V3'ün grup‑sınırlı şemasını izliyor ve 256 uzmandan sadece 8'ini seçerek token başına yaklaşık 23 B parametre işliyor. BF16 checkpoint'i yaklaşık 1 TB, NVFP4 (4‑bit) checkpoint'i ise ~280 GB boyutunda.\n\nBeam, kodlama ve ajan tabanlı (agentic) senaryolar için tasarlandı; metin giriş‑çıkış formatı, beş farklı akıl yürütme seviyesi ve araç çağrısı için özel bir dilbilgisi sunuyor. Model, Rust tabanlı özel bir harness, Transformers, vLLM ve SGLang gibi kütüphanelerde gün‑başı (day‑0) desteği ve DFlash2 spekülatif dekoding ile yüksek verimlilik sağlıyor. Dağıtık ortamda uzman paralelliği sayesinde 256 uzman 8 cihaz arasında bölünebiliyor; örneğin 16 H200 GPU ile tam BF16 checkpoint'i çalıştırmak mümkün.\n\nBeam'in performansı, çeşitli benchmarklarda %90'ın üzerindeki skorlar elde ederek dikkat çekiyor. GPQA Diamond testinde %90.6, AIME 2026 akıl yürütme testinde %97.7 ve LiveCodeBench'te %88.3 gibi sonuçlar gösteriyor. Hugging Face, Beam'i kullanan en iyi projelere 10.000 $ Hub kredisi vererek topluluk katkısını teşvik ediyor.",
+  "onemli_maddeler": [
+    "501 B parametreli, 23 B aktif parametreyle çalışan MoE LLM",
+    "1 M token uzunluğunda bağlam penceresi ve kaydırmalı‑global dikkat mimarisi",
+    "Rust tabanlı özel harness ve day‑0 destekli Transformers, vLLM, SGLang entegrasyonu",
+    "NVFP4 (4‑bit) checkpoint ile 1 TB yerine ~280 GB depolama, Blackwell GPU'larda yerel çalışma",
+    "GPQA Diamond %90.6, AIME 2026 %97.7 gibi yüksek benchmark skorları"
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Beam, endüstri ölçeğinde bir açık kaynak MoE modeli olarak hem parametre sayısı hem de uzun bağlam yeteneğiyle mevcut LLM ekosisteminde bir sıçrama yaratıyor; yüksek benchmark performansı ve geniş donanım desteği, araştırmacı ve şirketlerin kendi altyapılarında frontier‑scale modelleri çalıştırabilmesini mümkün kılıyor.",
+  "etiketler": [
+    "MoE",
+    "long-context",
+    "open-source",
+    "Rust",
+    "Hugging Face"
+  ],
+  "anilan_modeller": [
+    "Beam"
+  ],
+  "yorum_tr": "Beam, büyük ölçekli modelleri kendi donanımlarında çalıştırmak isteyen ekipler için maliyet ve erişim engellerini azaltıyor; aynı zamanda açık lisans ve topluluk odaklı ödül programı, inovasyonu hızlandıracak bir ekosistem oluşturuyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Beam",
+      "benchmark": "GPQA Diamond",
+      "skor": 90.6,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "GPQA Diamond 90.6% 90.3% 89.3%"
+    },
+    {
+      "model": "Beam",
+      "benchmark": "Reasoning AIME 2026",
+      "skor": 97.7,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Reasoning AIME 2026 97.7% 98.0% 97.5%"
+    },
+    {
+      "model": "Beam",
+      "benchmark": "LiveCodeBench",
+      "skor": 88.3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "LiveCodeBench 88.3% 88.1% 87.4%"
+    },
+    {
+      "model": "Beam",
+      "benchmark": "SWE Bench Pro v2-Hard",
+      "skor": 76.5,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "SWE Bench Pro v2-Hard 76.5% 78.4% 78.6%"
+    },
+    {
+      "model": "Beam",
+      "benchmark": "LongBench v2",
+      "skor": 67.5,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "LongBench v2 67.5% 67.6% 67.2%"
+    }
+  ],
+  "gorsel_url": "https://huggingface.co/blog/assets/reflection-beam/thumbnail.jpg",
+  "url": "https://huggingface.co/blog/reflection-beam",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-10-16T00:00:00.000Z",
+  "slug": "welcome-beam-a-501b-open-model-you-can-own-customize-and-sca"
+}

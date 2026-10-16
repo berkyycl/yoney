@@ -1,0 +1,52 @@
+{
+  "baslik_tr": "AI yorumlanabilirliği büyük bir atılım mı? Yeni bir deneme araştırmacıları bölüyor",
+  "ozet_tr": "Nick Cammarata, \"Neural Networks Are Already Clean\" başlıklı yeni denemesinde, büyük dil ve görsel modellerin iç işleyişinin önceki varsayımlardan çok daha anlaşılır olduğunu iddia ediyor. Bu görüş, uzun yıllardır süren süperpozisyon hipotezine meydan okurken, OpenAI ve DeepMind gibi laboratuvarların uzmanları arasında keskin bir bölünmeye yol açtı.",
+  "detayli_icerik_tr": "Mekanik yorumlanabilirlik, bir modelin çıktısını izlemekten öteye geçerek kararların içsel yollarını haritalamayı hedefler. Geleneksel olarak, milyonlarca yapay nöronun çoğunun birbirinden bağımsız kavramları temsil etmediği, bunun yerine \"polysemanticity\" adı verilen bir durumla birden fazla kavramı aynı nöronda barındırdığı düşünülüyordu. Bu görüş, Nick Cammarata ve Chris Olah tarafından 2020'de \"Zoom In\" makalesiyle ortaya konulan süperpozisyon hipoteziyle pekiştirildi.\n\nCammarata, yeni denemesinde bu hipotezin yanlış yorumlandığını savunuyor. Örneğin, InceptionV1 modelindeki \"kedi‑araba\" nöronunun aslında bir V‑şekil dedektörü olduğunu, keskin şekillerin (kedi bacakları, araba önleri) aktif, yuvarlak şekillerin ise negatif etkili olduğunu belirtiyor. Benzer şekilde, \"Zoom In\"deki süperpozisyon devresinin de arabaları köpek nöronlarıyla birleştiren bir genelleme olduğunu, yani iki bağımsız kavramın değil, yönelim temelli bir gruplamanın söz konusu olduğunu iddia ediyor.\n\nCammarata, bu yeni bakış açısını \"rekürsif genelleme\" kavramıyla da destekliyor. Bir nöronun zamanla yan dallar gibi yeni kavramlar geliştirdiğini, örneğin \"iy\" dizgisini tanıyan bir nöronun daha sonra \"diy\" ve sonunda \"do it yourself\" ifadelerini de yakaladığını öne sürüyor. Bu süreç, süperpozisyonun aksine, modelin içsel hiyerarşisini daha anlaşılır kılıyor. İlk bulgularına göre, Qwen3-32B modelinde nöronların %90'ı tek bir ana göreve sahipken, sadece %2‑4'ü hâlâ açıklanamıyor.\n\nAlan içinde tepkiler karışık. OpenAI çalışanı Roon, Cammarata'nın bulgularını \"bilim tarihinin büyük bir anı\" olarak nitelendirirken, DeepMind araştırmacısı Neel Nanda daha temkinli. Nanda, süperpozisyonun hâlâ geçerli olduğunu ve özellikle büyük dil modellerinde zayıf aktivasyonların kritik bilgi taşıyabileceğini savunuyor. Yine de, Cammarata'nın otomatik ajanlarla yapılan geniş ölçekli analizlerinin, on yıllık insan çabasını aylar içinde tamamlayabileceği ihtimali, AI güvenliği ve hizalama çalışmalarına yeni bir umut ışığı yakıyor.",
+  "onemli_maddeler": [
+    "Cammarata, süperpozisyon hipotezini çürüterek nöronların genellikle tek bir kavramı (ör. V‑şekil) temsil ettiğini iddia ediyor.",
+    "Qwen3-32B modelinde %90'ı tek görevli, %2‑4'ü hâlâ açıklanamayan nöronlar bulunuyor.",
+    "AI güvenliği topluluğu, yorumlanabilirliğin ilerlemesinin hizalama ve aldatma tespiti için kritik olduğunu vurguluyor."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "Mekanik yorumlanabilirlikteki temel varsayımları sorgulayan bu iddia, hem akademik hem de endüstriyel AI güvenliği çalışmalarını doğrudan etkileyebilecek potansiyele sahip.",
+  "etiketler": [
+    "mekanistik yorumlanabilirlik",
+    "superposition",
+    "nöron analizi",
+    "AI güvenliği",
+    "Nick Cammarata"
+  ],
+  "anilan_modeller": [
+    "InceptionV1",
+    "Qwen3-32B"
+  ],
+  "yorum_tr": "Eğer Cammarata'nın bulguları doğrulanırsa, büyük modellerin iç yapısının daha hızlı ve otomatik bir şekilde anlaşılması, AI güvenliği ve hizalama araştırmalarına önemli bir ivme kazandırabilir. Ancak, topluluk içinde hâlâ ciddi bir şüphe ve metodolojik tartışma bulunuyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "OpenAI (belirtilmemiş model)",
+      "benchmark": "Understandable neurons proportion",
+      "skor": 1.7,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "At the time, only about 1.7 percent of neurons counted as understandable, even by the most generous measure."
+    },
+    {
+      "model": "Qwen3-32B",
+      "benchmark": "Neuron pole monosemanticity",
+      "skor": 90,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "In Qwen3-32B, about 90 percent of neuron poles have one main job and about 7 percent have two related ones. Only 2 to 4 percent remain unexplained."
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/10/Neural-Networks-Goodfire-Clean.png",
+  "url": "https://the-decoder.com/is-ai-interpretability-close-to-a-breakthrough-a-new-essay-has-researchers-divided/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-16T13:48:08.000Z",
+  "slug": "is-ai-interpretability-close-to-a-breakthrough-a-new-essay-h"
+}

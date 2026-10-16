@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "Qwen Flash Next Gyro-M Kuantı, ISTA Laboratuvarı Q2'ye Karşı SOTA Performans Gösteriyor",
+  "ozet_tr": "AgentionAI tarafından tek geliştirici olarak sunulan Gyro-M kuantı, Qwen3.8‑Flash‑Next modelini ISTA Laboratuvarı’nın Q2 kuantılarından daha küçük bir boyutta ve daha iyi KLD‑top‑1 sonuçlarıyla çalıştırıyor. Kullanıcılar üç gün süren testlerde döngü (loop) sorunu yaşamamış ve modelin talimat takibi ile bağlam tutma yeteneğinin ISTA Q3 seviyesine yakın olduğunu rapor etti.",
+  "detayli_icerik_tr": "Reddit topluluğu LocalLLaMA’da paylaşılan bir gönderide, AgentionAI'nin tek geliştiricisi tarafından hazırlanmış Gyro‑M kuantının, Qwen3.8‑Flash‑Next modeline uygulanarak ISTA Laboratuvarı’nın Q2 kuantılarından daha iyi Kullandığı KL Divergence (KLD) ve top‑1 doğruluk oranları sağladığı iddia edildi. Kuant, aynı zamanda ISTA‑lab IQ3_XXS kuantının kullandığı Vision modülünü de içeriyor ve 200 kB KV cache, k8v4 quantizasyonu gibi ayarlarla çalışıyor.\n\nTest ortamı, Strata tabanlı bir inference motoru ve Gyro‑M kuantının bir çatalı (fork) kullanılarak yapılandırıldı. Sıcaklık 1.0, top_p 0.95, top_k 20 ve min_p 0.05 gibi parametrelerle, Pi agent üzerinden yürütülen testlerde modelin döngü (loop) sorunu göstermediği, üç gün boyunca en uzun otonom döngünün 2‑3 saat sürdüğü bildirildi. Tek bir geliştiricinin bu seviyede bir kuant üretmesi, toplulukta şaşkınlık yarattı.\n\nPerformans açısından Gyro‑M, ISTA‑lab’ın 2‑bit kuantlarıyla benzer hızda çalıştı; ancak Cyrillic (Rusça, Ukraynaca) metinlerde bazen düzenleme hataları yaşandı. Bağlam tutma ve talimat izleme konularında model, başlangıç hedefini kaybetmeden ince nüansları hatırlamaya devam etti ve ISTA‑lab Q3 seviyesine yakın bir stabilite sergiledi. Görsel karşılaştırmalarda (ISTAlab IQ3_XXS, IQ2XS ve Gyro‑M) Gyro‑M’in daha küçük boyutlu çıktılar ürettiği gözlemlendi.\n\nSonuç olarak, Gyro‑M kuantının tek bir kişi tarafından geliştirilen bir proje olmasına rağmen ISTA‑lab ekiplerinin ortak çabalarına rakip bir performans sunduğu ve özellikle düşük bellek tüketimi ile yüksek doğruluk isteyen kullanıcılar için cazip bir seçenek olduğu vurgulandı.",
+  "onemli_maddeler": [
+    "Gyro‑M kuantı, ISTA‑lab Q2 kuantılarından daha düşük KLD ve daha yüksek top‑1 doğruluk sağlarken boyutu da daha küçüktür.",
+    "Üç günlük testlerde model hiç döngü (loop) hatası vermemiş, bağlam tutma ve talimat izleme konusunda ISTA Q3 seviyesine yakın bir stabilite göstermiştir.",
+    "Cyrillic dillerinde zaman zaman metin düzenleme hataları yaşanmasına rağmen, genel performans ISTA 2‑bit kuantlarıyla eşdeğer hızda gerçekleşmiştir."
+  ],
+  "kategori": "benchmark",
+  "onem": 3,
+  "onem_gerekce": "Topluluk tarafından geliştirilen bir kuantın, mevcut en iyi laboratuvar kuantlarıyla rekabet edebilmesi sektörde ilgi çekici ancak henüz geniş çapta doğrulanmamış bir gelişmedir.",
+  "etiketler": [
+    "kuantizasyon",
+    "Qwen",
+    "GYRO",
+    "benchmark",
+    "LLM"
+  ],
+  "anilan_modeller": [
+    "Qwen3.8-Flash-Next-Gyro-M",
+    "ISTA lab IQ3_XXS",
+    "ISTA lab IQ2XS"
+  ],
+  "yorum_tr": "Gyro‑M kuantının tek geliştirici tarafından bu seviyeye ulaşması, açık kaynak topluluklarının inovasyon potansiyelini gösteriyor. Ancak Cyrillic desteğindeki eksiklikler, geniş dil desteği isteyen kullanıcılar için bir uyarı niteliğinde.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/82WTnl9YbjPX9qG0-N9nIkKUnTzc0RXvY6gutlzfyWY.png?width=140&height=75&auto=webp&s=21794cf0092d3735e2f3640fa6b97a1119ab8d06",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x7bboy/qwen_flash_next_potential_sota_q2_nobody_talks/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-16T09:08:25.000Z",
+  "slug": "qwen-flash-next-potential-sota-q2-nobody-talks-about"
+}
