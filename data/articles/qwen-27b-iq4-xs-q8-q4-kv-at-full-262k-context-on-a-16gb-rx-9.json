@@ -1,0 +1,61 @@
+{
+  "baslik_tr": "Qwen 27B, Adaptive KV Streaming ve ROCm Optimizasyonlarıyla 16 GB RX 9070 XT’de 262k Token Bağlamda 80+ t/s Çözümleme",
+  "ozet_tr": "Geliştirici bottlestreet3d, llama.cpp üzerine AMD/ROCm uyumlu Adaptive KV Streaming ve RDNA‑4 iyileştirmeleri ekleyerek Qwen3.8‑27B modelini tam 262.144 token bağlam penceresinde tek bir 16 GB RX 9070 XT kartında çalıştırabildi. Bu optimizasyonlar sayesinde model, 80 token/sn üzerindeki dekodlama hızına ulaştı ve güç tüketimi %24 azaltıldı.",
+  "detayli_icerik_tr": "Bottlestreet3d, Qwen3.8‑27B modelinin IQ4_XS ağırlıklarını (≈14.3 GB) ve Q8_0/Q4_0 KV önbelleğini kullanarak tam 262k token bağlamını tek bir 16 GB RX 9070 XT GPU’da çalıştırmak için llama.cpp kod tabanına bir dizi AMD‑özel iyileştirme ekledi. ASCII‑kondanse edilmiş model versiyonu, ASCII dışı kelime dağarcığını çıkararak depolama ihtiyacını 13.6 GB (12.6 GiB) seviyesine düşürdü ve yaklaşık 3.4 GiB boş VRAM bıraktı.\n\nKV önbelleği yalnızca 262k bağlam için yaklaşık 7.4 GiB RAM gerektiriyor; bu da GPU belleğinde OOM hatalarına yol açıyordu. Geliştirici, NVIDIA/CUDA için yazılmış RaymondHuang210129/llama.cpp‑adaptive‑kv‑streaming projesini ROCm/HIP ortamına taşıyarak KV önbelleğini host RAM’de tutup, PCIe SDMA üzerinden asenkron olarak 450 MiB prefill ve 2.1 GiB decode veri setlerini akıtıyor. Bu sayede GPU belleği üzerindeki baskı büyük ölçüde azaltıldı.\n\nEk olarak stew675/llama‑cpp‑rdna‑boosts projesinden alınan çekirdek iyileştirmeleri (4‑satır çok‑sütunlu mmvq, Q4_K/Q5_K için 16‑byte vektör yüklemeleri, SwiGLU füzyonları ve tek‑kuyruklu async HIP grafikleri) entegre edildi. Yeni teknikler arasında sibling activation reuse, register‑level fused residual + RMSNorm, multi‑column SwiGLU & GDN füzyonları, online Log‑Sum‑Exp prefill ve pipelined prefetch, persistent graph arenas ve stream‑optimized speculative decoding yer alıyor.\n\nBenchmark sonuçları, 1 k token bağlamda 36.5 t/s dekodlama hızından 262k bağlamda 9.5 t/s’ye, aynı koşullarda MTP destekli dekodlamada ise 31.1 t/s’ye kadar çıkıyor. Prefill hızı ise 1 k bağlamda 1368.4 t/s iken 262k bağlamda 585.8 t/s olarak ölçüldü. GPU, varsayılan 304 W TDP yerine 231 W limitinde çalıştırıldığında prefill gecikmesi sadece %3.6 arttı ve ses seviyesinde belirgin bir azalma sağlandı.",
+  "onemli_maddeler": [
+    "Adaptive KV Streaming sayesinde 262k token bağlamı GPU belleği dışına taşındı ve OOM sorunu çözüldü.",
+    "ROCm/HIP uyumlu çekirdek iyileştirmeleri ile dekodlama hızı 80+ token/sn seviyesine ulaştı.",
+    "231 W güç limitiyle çalıştırıldığında performans kaybı sadece %3.6 oldu, enerji verimliliği arttı."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "AMD tabanlı tüketici GPU'larında büyük bağlamlı LLM çalıştırma imkanı sağlayarak geliştiriciler ve araştırmacılar için önemli bir performans sıçraması sunuyor.",
+  "etiketler": [
+    "Qwen",
+    "llama.cpp",
+    "AMD",
+    "ROCm",
+    "KV streaming"
+  ],
+  "anilan_modeller": [
+    "Qwen3.8-27B",
+    "Qwen 27B"
+  ],
+  "yorum_tr": "Bu geliştirme, AMD GPU kullanıcılarının büyük dil modellerini uzun bağlamlarla çalıştırabilmesini mümkün kılıyor ve ROCm ekosisteminin LLM performansında NVIDIA'ya daha yakın bir konuma gelmesini sağlıyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen3.8-27B (IQ4_XS, Q8/Q4 KV)",
+      "benchmark": "Decode throughput (262k context)",
+      "skor": 9.5,
+      "birim": "t/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "262k context",
+      "kaynak_metinden_alinti": "Decode: ... -> 9.5 t/s (262k)."
+    },
+    {
+      "model": "Qwen3.8-27B (IQ4_XS, Q8/Q4 KV)",
+      "benchmark": "Decode with MTP throughput (262k context)",
+      "skor": 31.1,
+      "birim": "t/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "262k context",
+      "kaynak_metinden_alinti": "Decode (with MTP): ... -> 31.1 t/s (262k)."
+    },
+    {
+      "model": "Qwen3.8-27B (IQ4_XS, Q8/Q4 KV)",
+      "benchmark": "Prefill throughput (262k context)",
+      "skor": 585.8,
+      "birim": "t/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "262k context",
+      "kaynak_metinden_alinti": "Prefill: ... -> 585.8 t/s (262k)."
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/1ipa49vsz0wh1.png?width=140&height=102&auto=webp&s=b480f91093613cd35f29024491658f8c034e346f",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x89ptz/qwen_27b_iq4_xs_q8q4_kv_at_full_262k_context_on_a/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-17T13:01:59.000Z",
+  "slug": "qwen-27b-iq4-xs-q8-q4-kv-at-full-262k-context-on-a-16gb-rx-9"
+}

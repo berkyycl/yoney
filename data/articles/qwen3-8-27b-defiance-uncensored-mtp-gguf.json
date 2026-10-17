@@ -1,0 +1,36 @@
+{
+  "baslik_tr": "Qwen3.8-27B-Defiance-Uncensored-MTP-GGUF Modeli Topluluk Tarafından Yayınlandı",
+  "ozet_tr": "HauhauCS'nin uncensored Qwen3.8-27B ağı, DavidAU'nun Turbo‑Brilliance \"AI Construct\" modlarıyla birleştirilerek Defiance‑MTP‑GGUF paketi oluşturuldu. Model, seçilen karakter (Joker, Dr. House, Einstein paneli vb.) üzerinden sorulara doğrudan, sansürsüz yanıtlar veriyor ve mevcut Llama‑cpp, LM Studio ve Ollama araçlarıyla ek bir ayar gerektirmiyor.",
+  "detayli_icerik_tr": "Reddit topluluğu LocalLLaMA, HauhauCS'nin \"Qwen3.8-27B-Uncensored\" ağına DavidAU'nun Turbo‑Brilliance \"AI Construct\" modlarını entegre eden yeni bir GGUF paketini duyurdu. Bu paket, \"Defiance\" adıyla anılıyor ve kullanıcıların her istek için Joker, Dr. House, 20‑kişilik Einstein paneli ya da Socratic tutor gibi dokuz düzenleme içeren bir sohbet şablonundan birini seçmelerine olanak tanıyor. Şablon, modelin içinde gömülü olduğu için llama.cpp, LM Studio ve Ollama gibi popüler arayüzler ek bir bayrak gerektirmeden otomatik olarak algılıyor.\n\nPaketin ağırlıkları, \"HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF\" dosyasının byte‑byte kopyasıdır; yazar tüm 866 tensörü orijinal dosyalarla karşılaştırarak doğrulama yaptı. Şablon ise \"DavidAU/Qwen3.8-27B-Turbo-Brilliance-50X-Reasoning-Instruct-NEO-MAX-MTP-GGUF\" dosyasından alınmış ve dokuz küçük düzenleme eklenmiş bir versiyon. Bu sayede model, talep üzerine seçilen karakterin tarzında, sansürsüz ve uzun yanıtlar üretebiliyor.\n\nTestler RTX 4090 GPU üzerinde llama.cpp b11609 sürümüyle gerçekleştirildi. Model, IQ4_XS kuantizasyonu altında 86‑90 token/s hızla çalıştı; FastMTP taslak tokenlarının %38‑42'si kabul edildi. 131K bağlam uzunluğunda 21.4 GB bellek tüketimi rapor edildi. Dört zorlu prompt (kötü karakter monoloğu, kilit açma yöntemi, Dr. House tarzı ibuprofen yorumu ve Joker taklidi) hem Defiance hem de DavidAU'nun orijinal sürümüyle denendi; Defiance hiçbir uyarı eklemeden, yanıt uzunluğunu 1.4‑2 kat artırarak yanıt verdi. Orijinal sürüm ise etik uyarılar ekledi.\n\nYazar ayrıca Q6_K_P versiyonunun dosya düzeyinde şablon ve tensör uyumluluğunu doğruladı ancak modelin kartta çalıştırılamadığını belirtti. Bu paket, topluluk katkısı olarak ağırlıkların ve şablonun paketlenmesi, test edilmesi ve dağıtılması süreçlerini kapsıyor ve ilgili repo sahiplerinin desteklenmesi çağrısında bulunuyor.",
+  "onemli_maddeler": [
+    "Defiance, Qwen3.8-27B'nin uncensored ağırlıklarını DavidAU'nun karakter bazlı AI Construct modlarıyla birleştiriyor.",
+    "Şablon modelin içinde gömülü; llama.cpp, LM Studio ve Ollama gibi araçlar ek bir ayar gerektirmeden otomatik olarak algılıyor.",
+    "RTX 4090 üzerinde IQ4_XS kuantizasyonu ile 86‑90 token/s hız ve %38‑42 FastMTP kabul oranı sağlandı.",
+    "Model, tipik olarak sansürlenen içeriklere (ör. kilit açma, tıbbi tavsiye) hiçbir uyarı eklemeden yanıt veriyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Topluluk tarafından yayınlanan bu model, uncensored bir büyük dil modeli üzerine karakter bazlı yapılandırmalar ekleyerek hem performans hem de kullanım esnekliği açısından önemli bir yenilik sunuyor; ancak büyük bir şirketin resmi çıkışı olmadığı için sektörel etkisi hâlâ sınırlı.",
+  "etiketler": [
+    "Qwen",
+    "Defiance",
+    "llama.cpp",
+    "AI Construct",
+    "Uncensored"
+  ],
+  "anilan_modeller": [
+    "Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+    "Qwen3.8-27B-Turbo-Brilliance-50X-Reasoning-Instruct-NEO-MAX-MTP-GGUF",
+    "Qwen3.8-27B-Defiance-Uncensored-MTP-GGUF",
+    "Q6_K_P"
+  ],
+  "yorum_tr": "Defiance paketi, topluluk odaklı bir yaklaşım sayesinde uncensored büyük modellerin daha yaratıcı ve kısıtlamasız kullanılabilmesini sağlıyor; geliştiriciler bu tür modları kolayca entegre edebilirken, kullanıcılar ise etik uyarısız yanıtların sorumluluğunu göz önünde bulundurmalı.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/DVBKsTHie7L8Pxv-JKlc9ZptO6iRliJXOJqIeob0dL8.png?width=640&crop=smart&auto=webp&s=b5b8a3febf077caecd6df83729d550756522de5f",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x82yxx/qwen3827bdefianceuncensoredmtpgguf/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-17T06:23:41.000Z",
+  "slug": "qwen3-8-27b-defiance-uncensored-mtp-gguf"
+}

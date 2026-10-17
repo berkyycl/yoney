@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "NVIDIA Nemotron Labs Dory1.0 4B BF16 Modeli Hugging Face'te Yayınlandı",
+  "ozet_tr": "NVIDIA, 4 milyar parametreli Dory1.0-4B BF16 modelini Hugging Face platformunda kullanıma sundu. Normalized‑GPT mimarisi, döngüsel (latent‑recurrent) katmanlar ve kaydırmalı pencere (SWA) ile tam‑dikkat katmanlarını birleştirerek 256K token uzunluğunda bağlam işleyebiliyor.",
+  "detayli_icerik_tr": "NVIDIA Nemotron Labs, Dory1.0-4B-BF16 adlı yeni büyük dil modelini 16 Ekim 2026 tarihinde resmi olarak yayınladı. Model, toplam 4 milyar parametreye sahip ve BF16 (bfloat16) hassasiyetinde çalışıyor, bu da yüksek verimlilik ve düşük bellek tüketimi sağlıyor.\n\nMimari açıdan Dory1.0, \"looped (latent‑recurrent) normalized‑GPT\" tasarımını benimseyerek aynı katman bloğunu birden çok kez uyguluyor. Bu döngüsel yapı, her token için daha fazla hesaplama harcamasına imkan tanıyarak modelin zekâ seviyesini ölçeklendirmesine yardımcı oluyor. Katmanlar arasında hibrit bir kaydırmalı pencere (sliding‑window attention, SWA) ve tam‑dikkat (full‑attention) katmanları iç içe yerleştirilmiş; bu sayede uzun bağlamları (256 K token) etkili bir şekilde işleyebiliyor.\n\nModel, İngilizce dilinde genel amaçlı akıl yürütme görevleri için optimize edilmiş ve düşük ayak izi (small footprint) sayesinde sınırlı donanım kaynaklarına sahip ortamlarda bile kullanılabiliyor. Lisans olarak OpenMDW License Agreement sürüm 1.1 sunulmuş; bu lisans hem ticari hem de ticari olmayan kullanım senaryolarına izin veriyor.\n\nModelin Hugging Face üzerindeki sayfası, Reddit topluluğu LocalLLaMA'da /u/silenceimpaired kullanıcısı tarafından paylaşılmış ve topluluk yorumlarıyla desteklenmiş. Dory1.0-4B, araştırmacılar ve geliştiriciler için açık bir kaynak olarak sunuluyor ve NVIDIA’nın LLM ekosistemine yeni bir seçenek ekleyerek rekabeti artırması bekleniyor.",
+  "onemli_maddeler": [
+    "4 milyar parametre ve BF16 hassasiyeti",
+    "Looped (latent‑recurrent) normalized‑GPT mimarisi",
+    "Kaydırmalı pencere (SWA) ve tam‑dikkat katmanlarının hibrit birleşimi",
+    "256 K token bağlam uzunluğu",
+    "OpenMDW License Agreement v1.1 ile ticari ve ticari olmayan kullanım izni"
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Model, NVIDIA’nın yeni mimari yaklaşımlarını 4 B parametre ölçeğinde sunması ve uzun bağlam işleme kapasitesiyle LLM pazarında önemli bir yenilik oluşturması nedeniyle yüksek öneme sahiptir.",
+  "etiketler": [
+    "NVIDIA",
+    "LLM",
+    "Dory1.0",
+    "BF16",
+    "HuggingFace"
+  ],
+  "anilan_modeller": [
+    "NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16"
+  ],
+  "yorum_tr": "Dory1.0-4B, düşük kaynak gereksinimi ve uzun bağlam yeteneğiyle özellikle kenar cihazları ve araştırma projeleri için cazip bir seçenek sunuyor. NVIDIA’nın açık lisans politikası, modelin geniş bir geliştirici kitlesi tarafından benimsenmesini hızlandırabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/Ci9OdY8NKxzRjQpe0yy-AuZ3GlBWtFbOUlVTNaRqZbQ.png?width=640&crop=smart&auto=webp&s=8d2bcfa7dd11e011397195e6983e58b8d16f57d1",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x8bg1u/nvidianvidianemotronlabsdory104bbf16_hugging_face/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-17T14:20:54.000Z",
+  "slug": "nvidia-nvidia-nemotron-labs-dory1-0-4b-bf16-hugging-face"
+}
