@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "Qwen 3.8 Flash Next Modeli Hakkında Toplulukta Yükselen Hype Tartışılıyor",
+  "ozet_tr": "Reddit’te LocalLLaMA topluluğu, Qwen 3.8 Flash Next UD‑Q4_K_XL modelini 4 x 3090 GPU’da test eden bir kullanıcı, aynı donanımda çalışan Qwen 3.8 27B Q8 modeline kıyasla performans ve çıktı kalitesinin çok geride olduğunu belirtti. Strata benchmark’ında da beklentilerin altında sonuçlar alınırken, modelin bazı oyun kontrol hatalarını kendi kendine düzelttiği gözlemlendi.",
+  "detayli_icerik_tr": "LocalLLaMA topluluğunun Reddit gönderisinde, /u/wgaca2 adlı kullanıcı Qwen 3.8 Flash Next UD‑Q4_K_XL modelini dört adet NVIDIA RTX 3090 kartı üzerinde çalıştırarak elde ettiği deneyimleri paylaştı. Kullanıcı, aynı donanımda Qwen 3.8 27B Q8 modelini de test etti ve iki model arasındaki farkın \"çok büyük\" olduğunu vurguladı; Flash Next modelinin hem yanıt kalitesi hem de tutarlılık açısından 27B sürümünün gerisinde kaldığını belirtti.\n\nTestlerde kullanılan Strata benchmark sonuçları da beklenenin altında çıktı. Kullanıcı, Strata’da elde edilen performansın llama.cpp tabanlı çözümlerden daha kötü olduğunu, ancak metin üretim hızının daha yüksek olduğunu ifade etti. Ayrıca, dört saatlik bir Strata çalıştırması sonrasında çalıştırılabilir bir .exe dosyası elde edilemediği ve ardından yapılan denemelerin bir saatlik zaman dilimiyle sınırlandırıldığı bildirildi.\n\nDeneyde iki ayrı oyun geliştirme promptu kullanıldı: birincisi Windows için temel bir Tetris oyunu oluşturulması, ikincisi ise iki oyunculu yan yana tahtalar eklenmesi. Kullanıcı, bu promptların DeepSeek’in harness sistemi üzerinden işlendiğini ve sonuçların görsel olarak tüm modeller arasında büyük farklılık göstermediğini, bu yüzden ekran görüntüsü paylaşmadığını belirtti. Ancak, ilk promptta iki teknik hata (oyun duraklatıldığında ve oyun bittiğinde kontrol tuşlarının hâlâ çalışması) tespit edildi; bu hataların ikinci promptta otomatik olarak düzeldiği gözlemlendi.\n\nKullanıcı, Qwen 3.8 Flash Next’in düşük bit‑derinlikli (Q4) sürümünün, topluluktaki bazı üyelerin iddia ettiği gibi 27B modeline eşdeğer ya da daha iyi performans sergilemediğini ve bu durumun modelin hype’ını sorgulamasına yol açtığını dile getirdi. Bu eleştiri, modelin gerçek‑zamanlı uygulamalarda ve düşük‑bütçeli dağıtımlarda beklentileri karşılamadığına dair bir uyarı niteliği taşıyor.",
+  "onemli_maddeler": [
+    "Qwen 3.8 Flash Next UD‑Q4_K_XL, 4 x 3090’da Qwen 3.8 27B Q8’e göre belirgin performans düşüklüğü gösterdi.",
+    "Strata benchmark sonuçları, llama.cpp’tan daha kötü çıktı ancak üretim hızı daha hızlıydı.",
+    "Model, oyun kontrol hatalarını (pause sırasında ve oyun bittiğinde kontrollerin çalışması) ikinci promptta otomatik düzeltti."
+  ],
+  "kategori": "benchmark",
+  "onem": 3,
+  "onem_gerekce": "Kullanıcı deneyimi ve topluluk içinde model performansına dair tartışma içeriyor; ancak geniş çaplı bir endüstri etkisi yaratmadığı için orta seviyede önem taşıyor.",
+  "etiketler": [
+    "Qwen",
+    "Flash Next",
+    "Strata",
+    "LocalLLaMA",
+    "Benchmark"
+  ],
+  "anilan_modeller": [
+    "Qwen 3.8 Flash Next UD-Q4_K_XL",
+    "Qwen 3.8 27B Q8",
+    "llama.cpp",
+    "DeepSeek harness"
+  ],
+  "yorum_tr": "Bu geri bildirim, Qwen 3.8 Flash Next’in düşük bit‑derinlikli sürümlerinin gerçek‑zamanlı uygulamalarda beklentileri karşılamadığını gösteriyor; geliştiricilerin model optimizasyonu ve hata ayıklamaya daha fazla odaklanması gerekiyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/yus4plwxqwvh1.png?width=640&crop=smart&auto=webp&s=ea18af2f51e659eab603c87fa1d4cb039e32dcaa",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x7uf15/i_dont_get_the_qwen_38_flash_next_hype/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-16T22:48:28.000Z",
+  "slug": "i-don-t-get-the-qwen-3-8-flash-next-hype"
+}

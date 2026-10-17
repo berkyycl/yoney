@@ -1,0 +1,83 @@
+{
+  "baslik_tr": "Kimi K3 üç ay sonra: 1.56 TB'lik dev model hâlâ yerel çalıştırmayı zorlaştırıyor",
+  "ozet_tr": "Temmuz ayında büyük bir heyecanla duyurulan Kimi K3, 57 puanla Artificial Analysis sıralamasında üst sıralarda yer alırken, gerçek dünyada çalıştırılması hâlâ büyük bir engel. Modelin tam boyutu 1,56 TB ve en küçük kuantizasyon bile 594 GB RAM+VRAM gerektiriyor; lisans koşulları da ticari kullanımda ek anlaşma zorunluluğu getiriyor.",
+  "detayli_icerik_tr": "Kimi K3, Temmuz 2024'te \"indirilebilecek en iyi açık model\" iddiasıyla piyasaya sürülmüş ve Artificial Analysis (AA) indeksinde 57 puan alarak Opus 4.8 ve GPT‑5.5 gibi devlerle eşitlenmişti. Ancak üç ay sonra yapılan incelemeler, modelin pratikte ne kadar zorlayıcı olduğunu ortaya koyuyor. Modelin tam ağırlık dosyası 1,56 TB ve 2,8 trilyon parametre içeriyor; aktif parametre sayısı 104 Milyar olsa da tüm parametrelerin belleğe yüklenmesi gerekiyor.\n\nUnsloth'un kuantizasyon rehberine göre en küçük önerilen kuantizasyon 594 GB depolama alanı ve yaklaşık 610 GB RAM+VRAM gerektiriyor. Bu, 512 GB'lık sistemlerde çalıştırılamayacağı anlamına geliyor; 1‑bit kuantizasyon hâlâ tam modelle %79 token uyumu sağlarken, 2‑bit kuantizasyon %90 uyum veriyor ancak 861 GB bellek ihtiyacı doğuruyor. Bellek yeterli olduğunda B200 GPU'larda yaklaşık 20 token/s hız elde edilebiliyor; aksi takdirde disk üzerinden offload yapılarak performans ciddi şekilde düşüyor.\n\nAA indeksindeki puan da 44'e geriledi; bu düşüşün büyük kısmı indeksin güncellenmesinden kaynaklanıyor, modelin kendisinde büyük bir gerileme yok. GLM‑5.3 (753 B) 45 puanla K3'ün önünde, Step 5 Preview (600 B) ise 44 puanla eşit seviyede. Kimi'nin kendi API'si ise 43 token/s hız sunuyor, ancak AA'nın ajan tabanlı benchmark'ında bir görev ortalama bir saatten fazla sürüyor ve maliyeti 10 USD'nin üzerine çıkıyor.\n\nLisans açısından da sürprizler var: K3 MIT lisansı altında değil; bir şirketin yıllık geliri 20 Milyon USD'yi aşarsa Moonshot ile ayrı bir ticari anlaşma yapması gerekiyor. Bu durum, özellikle model‑as‑a‑service (MaaS) sunan firmalar için ek bir engel oluşturuyor. Yazar, Sanbi.ai'nin kurucu ortağı olarak Çin modellerine yöneldiğini ve K3, DeepSeek ve Qwen gibi modelleri incelerken bu bulgulara ulaştığını belirtiyor.",
+  "onemli_maddeler": [
+    "Kimi K3'ün tam modeli 1,56 TB ve 2,8 trilyon parametreye sahip, bu da yerel çalıştırmayı zorlaştırıyor.",
+    "En küçük kuantizasyon bile 594 GB depolama ve 610 GB RAM+VRAM gerektiriyor; 1‑bit kuantizasyon %79 token uyumu sağlıyor.",
+    "Artificial Analysis indeksindeki puan 57'den 44'e düştü; GLM‑5.3 ve Step 5 Preview gibi modeller artık benzer ya da daha yüksek puan alıyor.",
+    "Lisans MIT değil; yıllık geliri 20 Milyon USD'yi aşan şirketlerin Moonshot ile ayrı bir ticari anlaşma yapması şart."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Modelin teknik sınırlamaları, lisans koşulları ve güncellenen benchmark sonuçları, açık‑ağırlıklı büyük dil modellerinin pratik kullanılabilirliğini ve ticari erişimini doğrudan etkiliyor.",
+  "etiketler": [
+    "Kimi K3",
+    "Açık Model",
+    "Kuantizasyon",
+    "Artificial Analysis",
+    "Lisans"
+  ],
+  "anilan_modeller": [
+    "Kimi K3",
+    "GLM-5.3",
+    "Step 5 Preview",
+    "Opus 4.8",
+    "GPT-5.5"
+  ],
+  "yorum_tr": "Kimi K3'ün hâlâ devasa donanım gereksinimleri ve kısıtlayıcı lisans şartları, açık‑ağırlıklı modellerin geniş kitlelere ulaşmasını zorlaştırıyor; geliştiriciler daha hafif kuantizasyonlar veya alternatif modelleri tercih etmeye yöneliyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Kimi K3",
+      "benchmark": "Artificial Analysis",
+      "skor": 44,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "It's now 44 on AA's index."
+    },
+    {
+      "model": "Kimi K3 (1-bit quant)",
+      "benchmark": "Token Agreement",
+      "skor": 79,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "1-bit agrees with the full model on the next token 79% of the time."
+    },
+    {
+      "model": "Kimi K3 (2-bit quant)",
+      "benchmark": "Token Agreement",
+      "skor": 90,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "2-bit gets you to 90%, but that's 861 GB."
+    },
+    {
+      "model": "Kimi K3",
+      "benchmark": "Throughput (B200 GPU)",
+      "skor": 20,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "About 20 tok/s on B200s if it fits in memory."
+    },
+    {
+      "model": "Kimi K3",
+      "benchmark": "Throughput (Kimi API)",
+      "skor": 43,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "43 tok/s on Kimi's own API."
+    }
+  ],
+  "gorsel_url": "https://kingy.ai/wp-content/uploads/2026/07/kimi-k3-frontier-ranking-v4-1.webp",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x7s89u/kimi_k3_three_months_after_the_hype_too_big_for/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-16T21:14:31.000Z",
+  "slug": "kimi-k3-three-months-after-the-hype-too-big-for-almost-anyon"
+}

@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "Neden Yapay Zeka Karmaşık Genomlarımızı Çözmeye Hazır Değil",
+  "ozet_tr": "İnsan genomunun 3 milyar baz çifti, sadece %2'si gerçek genleri içeriyor ve geri kalanının düzenleyici işlevleri hâlâ büyük bir muamma. Yapay zekâ temelli \"genom temel modelleri\" bu karmaşıklığı çözmek için umut vaat etse de, genomun çok katmanlı ve üç boyutlu yapısı, basit giriş-çıkış tahminlerinden çok daha öte bir anlayış gerektiriyor.",
+  "detayli_icerik_tr": "İnsan genomunun tam dizilimi 2003'te İnsan Genom Projesi sayesinde elde edilmiş olsa da, bu bilgi tek başına biyolojik işlevleri açıklamaktan uzaktır. Genomun sadece %2'si protein kodlayan genlerden oluşurken, geri kalan %98'i kodlamayan DNA, genlerin ne zaman ve nerede açılıp kapanacağını belirleyen karmaşık düzenleyici mekanizmaları barındırıyor. Bu düzenleme, hücre tipine, çevresel sinyallere ve zamanlamaya bağlı olarak dinamik bir şekilde gerçekleşiyor.\n\nBiyologlar, bu düzenleyici ağları çözmek için yapay zekâya yöneliyor. Evo 2, Genos ve Google DeepMind'ın AlphaGenome gibi \"genom temel modelleri\", büyük miktarda genomik veri üzerinde eğitilerek DNA dizilimindeki değişikliklerin biyolojik süreçler ve hastalık riskleri üzerindeki etkilerini tahmin etmeye çalışıyor. Ancak bu modeller, gen düzenlemesinin çok katmanlı doğasını bir kara kutu olarak ele alıyor; yani korelasyonları öğreniyor ama düzenleyici faktörlerin fiziksel ve üç boyutlu etkileşimlerini doğrudan modellemiyor.\n\nGen düzenlemesinin karmaşıklığı, transkripsiyon faktörlerinin DNA üzerindeki bağlanma bölgeleri, enhancer'lar ve uzaktaki (distal) düzenleyiciler arasındaki uzun menzilli etkileşimler gibi çok sayıda bileşenin bir arada çalışmasından kaynaklanıyor. Cohesin gibi protein motorları DNA'yı döngüler hâlinde katlayarak uzaktaki enhancer'ları hedef genlere yaklaştırıyor; bu döngüler ise dinamik, geçici ve hücreden hücreye farklılık gösteren bir \"komite\" gibi davranıyor. Epigenetik işaretler, kromatin paketlenmesi ve alternatif splicing gibi ek katmanlar da gen ifadesini ince ayarlarla kontrol ediyor.\n\nBu çok katmanlı yapı, basit bir giriş-çıkış modeline indirgenemeyecek kadar karmaşık. Yapay zekâ modelleri, genomun bir program gibi çalıştığını varsayarak tahminlerde bulunabilir, fakat gerçek biyolojik karar mekanizmalarını anlamak için üç boyutlu genom organizasyonu, epigenetik işaretler ve hücresel bağlam gibi faktörlerin bütüncül bir şekilde incelenmesi gerekiyor. Bu yüzden, genomik AI çözümlerinin hâlâ bir araç olduğu, tam bir anlayış sağlamaktan çok veri yorumlama ve hipotez üretme aşamasında destek sunduğu vurgulanıyor.",
+  "onemli_maddeler": [
+    "İnsan genomunun sadece %2'si gerçek genleri içerirken, geri kalan %98'i karmaşık düzenleyici elementlerden oluşur.",
+    "Evo 2, Genos ve AlphaGenome gibi AI temelli genom modelleri, korelasyonları öğrenerek tahmin yapar ancak düzenleyici mekanizmaların üç boyutlu doğasını yakalamaz.",
+    "Gen düzenlemesi, transkripsiyon faktörleri, enhancer'lar, cohesin kaynaklı DNA döngüleri ve epigenetik işaretler gibi çok katmanlı süreçlerle gerçekleşir."
+  ],
+  "kategori": "diger",
+  "onem": 3,
+  "onem_gerekce": "Makale, genomik AI uygulamalarının sınırlamalarını ve genomun karmaşıklığını detaylı bir şekilde açıklayarak araştırmacı ve geliştiriciler için önemli bir perspektif sunuyor, ancak doğrudan bir teknoloji duyurusu ya da benchmark içermediği için orta düzeyde bir etki taşıyor.",
+  "etiketler": [
+    "genom",
+    "yapay zeka",
+    "gen düzenleme",
+    "epigenetik",
+    "biyoinformatik"
+  ],
+  "anilan_modeller": [
+    "Evo 2",
+    "Genos",
+    "AlphaGenome"
+  ],
+  "yorum_tr": "AI temelli genom modelleri, büyük veri setlerinden faydalanarak hızlı tahminler sunabilir, ancak genomun çok katmanlı düzenleyici ağlarını tam anlamıyla kavramak için hâlâ kapsamlı biyolojik araştırmalara ihtiyaç var. Bu durum, AI'nın biyomedikal araştırmalarda bir yardımcı araç olarak konumunu pekiştiriyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://media.wired.com/photos/6acf63d6b06331734b2e70d7/master/pass/Physical%20Genome%20cr-Samuel%20Velasco%20and%20Hannah%20Waters_Quanta%20Magazine-Lede.jpg",
+  "url": "https://www.wired.com/story/why-ai-isnt-ready-to-tackle-our-convoluted-genomes/",
+  "source": "WIRED AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-17T09:00:00.000Z",
+  "slug": "why-ai-isn-t-ready-to-tackle-our-convoluted-genomes"
+}

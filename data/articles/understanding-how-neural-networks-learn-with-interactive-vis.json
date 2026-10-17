@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "Neural Ağların Öğrenme Süreci Nasıl Anlaşılır? Etkileşimli Görselleştirmelerle Yeni Çıkarımlar",
+  "ozet_tr": "Yapay zeka yorumlanabilirliği alanında uzun süredir kabul edilen kaotik model görüşü, yeni bir çalışma ve etkileşimli görselleştirmelerle sorgulanıyor. Ex‑OpenAI araştırmacısı Nick Cammarata, modern büyük dil modellerinde nöronların %90'ının tek bir göreve odaklandığını iddia ederek, modellerin doğrudan incelenebileceğini savunuyor.",
+  "detayli_icerik_tr": "Reddit'te LocalLLaMA topluluğu tarafından paylaşılan uzun bir deneme, yapay sinir ağlarının öğrenme mekanizmalarına dair temel varsayımları yeniden şekillendiriyor. Yıllardır AI yorumlanabilirliği, nöronların rastgele ve birbirinden bağımsız kavramları aynı anda kodladığı (superposition) düşüncesi üzerine kuruluydu; bu da modelleri doğrudan okumayı imkânsız kılıyor ve ikinci bir modelle \"çözümleme\" gerektiriyordu. Ancak ex‑OpenAI mühendisi Nick Cammarata, bu görüşün büyük ölçüde yanıldığını ve gözlemlenen karışıklığın zayıf mimariler ve hatalı görselleştirme araçlarından kaynaklandığını belirtiyor.\n\nCammarata ve ekibi, Qwen3 32B, Qwen3.6‑35B‑A3B ve Kimi K3 gibi büyük dil modelleriyle yaptıkları analizlerde, nöronların çoğunun belirgin bir işlevi olduğunu gösteren etkileşimli görselleştirmeler sundu. Örneğin, ünlü \"kedi/araç\" nöronu aslında sivri hatları algılayan bir V‑şekil dedektörü; yani hem kedi yüzlerini hem de araba ızgaralarını aynı geometrik özelliğe göre tetikliyor. Bu bulgu, nöronların rastgele karışıklık yerine, eğitim sürecinde ilişkili kavramlara yönelerek özelleştiğini ortaya koyuyor.\n\nAraştırmacılar, modern Qwen3 32B modelinde nöronların yaklaşık %90'ının tek bir ana görevi olduğunu, aynı oranın daha büyük Kimi K3 gibi trilyon‑parametreli modellerde de benzer şekilde gözlemlendiğini rapor ediyor. Ölçek arttıkça özellik ayrımı daha da netleşiyor; bu da büyük modellerin aslında daha okunabilir olduğu anlamına geliyor. Yazar, bu durumun AI güvenliği açısından kritik olduğunu vurguluyor: modellerin iç yapısını doğrudan inceleyebilmek, aldatıcı akıl yürütme ya da hatalı eğitim ortamı gibi riskleri erken tespit edip hedefe yönelik düzeltmeler yapmayı mümkün kılacak.\n\nBu bulgular, önümüzdeki aylarda yayımlanacak teknik makale ile birlikte, yorumlanabilirlik ve öğrenme dinamikleri alanında bir dönüm noktası olma potansiyeline sahip. Görselleştirmeler, hem araştırmacılar hem de meraklı geliştiriciler için 5‑10 dakikalık bir keşif süresi sunuyor ve model içi dinamiklerin daha geniş bir kitle tarafından anlaşılmasını sağlayabilir.",
+  "onemli_maddeler": [
+    "Nick Cammarata, nöronların çoğunun tek bir ana göreve sahip olduğunu ve %90'ının temiz bir işlev üstlendiğini iddia ediyor.",
+    "Kedi/araç örneği, \"superposition\" teorisinin yanlış olduğunu, nöronların geometrik özelliklere göre organize olduğunu gösteriyor.",
+    "Büyük ölçekli modeller (Qwen3 32B, Kimi K3) daha okunabilir; ölçek arttıkça özellik ayrımı netleşiyor.",
+    "Model içi doğrudan inceleme, AI güvenliği ve hizalanma çalışmalarını hızlandırabilir."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "Model yorumlanabilirliği ve güvenliği konularında temel varsayımları sarsan bir araştırma, büyük dil modellerinin anlaşılabilirliğini artırarak sektörel risk yönetimine yeni bir bakış açısı sunuyor.",
+  "etiketler": [
+    "interpretability",
+    "neural networks",
+    "visualization",
+    "large language models",
+    "AI safety"
+  ],
+  "anilan_modeller": [
+    "Qwen3 32B",
+    "Qwen3.6-35B-A3B",
+    "Kimi K3"
+  ],
+  "yorum_tr": "Bu bulgular, büyük modellerin iç yapısının daha şeffaf olduğunu göstererek, güvenlik ve hizalanma araştırmalarının metodolojisini kökten değiştirebilir; geliştiriciler artık modelleri tersine mühendislik yapmadan doğrudan inceleyebilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/tOyUNEbvvECLNkSfl1vFLBTftvD5qHKu9Rt3TCYcWDY.png?width=640&crop=smart&auto=webp&s=e92fade3f686025f06a1f370315ec66c7a17fbb0",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x7nenr/understanding_how_neural_networks_learn_with/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-16T18:05:46.000Z",
+  "slug": "understanding-how-neural-networks-learn-with-interactive-vis"
+}
