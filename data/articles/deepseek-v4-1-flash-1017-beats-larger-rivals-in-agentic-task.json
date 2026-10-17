@@ -1,0 +1,59 @@
+{
+  "baslik_tr": "Deepseek V4.1 Flash 1017, kodlama ve ajan görevlerinde büyük rakiplerini geride bırakarak maliyeti düşürdü",
+  "ozet_tr": "Çinli yapay zekâ şirketi Deepseek, yeni Deepseek‑V4.1‑Flash‑1017 modelini açık ağırlık olarak yayınladı. Model, kodlama ve ajan tabanlı benchmarklarda Claude Opus 5 ve GPT 5.6‑Sol gibi daha büyük rakipleri geride bırakarak %77 doğrulukla görev başına ortalama 0,20 $ maliyet sağlıyor. Ayrıca şirket, dahili arama motorunu Search ve Fetch API’leriyle geliştiricilere açtı.",
+  "detayli_icerik_tr": "Deepseek, V4.1‑Flash‑1017 sürümünü hem kendi platformları hem de Hugging Face ve ModelScope üzerinden açık ağırlık olarak sunarak erişilebilirliği artırdı. Model, kendine özgü Reinforcement Learning with Self‑Feedback (RLSF) yöntemiyle eğitildi; bu sayede içsel güven puanları ve kendi ürettiği eleştiriler ödül sinyali olarak kullanılıyor ve insan değerlendiricilere ya da dış ödül modellerine ihtiyaç kalmıyor. Sonuç olarak model, daha hızlı çalışıyor, çıktıları daha kısa ve maliyet açısından daha verimli.\n\nİç benchmark sonuçları, V4.1‑Flash‑1017’nin önceki sürümünü geride bıraktığını ve Claude Opus 5, GPT 5.6‑Sol, Kimi K3 ve GLM 5.3 gibi daha büyük modelleri kodlama ve ajan görevlerinde geçersiz kıldığını gösteriyor. DeepSWE benchmarkında %77.0 doğruluk elde ederken ortalama görev başı maliyeti 0,20 $'ın altında tutuyor; düşük ayarda %72 doğrulukla 0,10 $ maliyet sağlanıyor. Rakip modellerin maliyeti 2 $ ile 10 $ arasında değişirken doğrulukları daha düşük kalıyor.\n\nDeepseek ayrıca dahili arama motorunu dış geliştiricilere sunmak için Search ve Fetch API’lerini tanıttı. Bu API’ler 1.000 çağrı başına 0,75 $ ücretlendirilirken, Deepseek Harness, Claude Code ve Codex gibi sunucu‑tarafı araçları üzerinden 31 Ekim 2026 tarihine kadar ücretsiz kullanılabiliyor. Açık‑ağırlık model ve API erişimi, Çin’in model yayıncılığına yönelik sıkılaştırılacak düzenlemeleri göz önüne alındığında stratejik bir adım olarak değerlendiriliyor.\n\nBu gelişme, düşük maliyetli ve yüksek performanslı Çin yapımı modellerin küresel AI ekosisteminde daha fazla yer alabileceğini gösteriyor. Ancak, Çin hükümetinin açık‑ağırlık modellerin yayınını sınırlama planları, uzun vadeli erişim ve topluluk katkısı açısından belirsizlik yaratabilir.",
+  "onemli_maddeler": [
+    "Deepseek‑V4.1‑Flash‑1017 açık ağırlık olarak Hugging Face ve ModelScope’da yayınlandı.",
+    "Kodlama ve ajan benchmarklarında Claude Opus 5 ve GPT 5.6‑Sol gibi daha büyük modelleri geride bırakarak %77 doğruluk ve görev başı ortalama < 0,20 $ maliyet sağladı.",
+    "Yeni Search & Fetch API’leri geliştiricilere sunuldu; 1.000 çağrı başına 0,75 $ ücret, 31 Ekim 2026’ya kadar ücretsiz erişim.",
+    "Model, Reinforcement Learning with Self‑Feedback (RLSF) yöntemiyle insan denetimi olmadan kendini ödüllendirerek daha hızlı ve kısa çıktılar üretiyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Yeni model, hem performans hem de maliyet açısından sektördeki büyük rakipleri geride bırakarak açık‑ağırlık stratejisiyle geniş bir geliştirici kitlesine ulaşma potansiyeli taşıyor.",
+  "etiketler": [
+    "AI modeli",
+    "kodlama",
+    "ajan görevleri",
+    "maliyet verimliliği",
+    "açık kaynak"
+  ],
+  "anilan_modeller": [
+    "Deepseek-V4.1-Flash-1017",
+    "Claude Opus 5",
+    "GPT 5.6-Sol",
+    "Kimi K3",
+    "GLM 5.3",
+    "GPT-6 Astra",
+    "Gemini 3.8 Flash",
+    "Deepseek-V4.1-Flash"
+  ],
+  "yorum_tr": "Deepseek'in maliyet‑verimli ve yüksek performanslı modeli, geliştiricileri daha ucuz alternatiflere yönlendirebilir; aynı zamanda Çin'in düzenleyici hamleleri, açık‑ağırlık modellerin uzun vadeli sürdürülebilirliğini test edecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Deepseek-V4.1-Flash-1017",
+      "benchmark": "DeepSWE",
+      "skor": 77,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "V4.1-Flash-1017 hits a top score of 77.0 percent at an average cost of just under $0.20 per task."
+    },
+    {
+      "model": "Deepseek-V4.1-Flash-1017",
+      "benchmark": "DeepSWE cost",
+      "skor": 0.2,
+      "birim": "$",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "average cost per task",
+      "kaynak_metinden_alinti": "just under $0.20 per task"
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/06/deepseek_red_whale.png",
+  "url": "https://the-decoder.com/deepseek-v4-1-flash-1017-beats-larger-rivals-in-agentic-tasks-while-once-again-massively-cutting-per-task-costs/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-17T10:33:28.000Z",
+  "slug": "deepseek-v4-1-flash-1017-beats-larger-rivals-in-agentic-task"
+}

@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "Otaku: Yerel LLM'ler için yaratıcı yazım ön yüzü",
+  "ozet_tr": "Otaku, yerel LLM motorlarını destekleyen ve uzun hikayelerde bağlamı koruyarak yazı kalitesini sürdüren bir ön uç uygulaması. Web ve terminal tabanlı iki ayrı arayüz sunarak karakter kütüphanesi, görsel ekleme ve web arama gibi özelliklerle yaratıcı rol‑oyunlarını kolaylaştırıyor.",
+  "detayli_icerik_tr": "Otaku, yerel LLM motorları (llama.cpp, KoboldCpp, oMLX ve LM Studio) ve bulut sağlayıcıları (OpenRouter, NanoGPT) ile çalışabilen açık kaynaklı bir frontend olarak tanıtıldı. Kullanıcılar, web tarayıcısı üzerinden özelleştirilebilir bir arayüz ya da terminalde slash komutlarıyla çalışan bir UI seçebiliyor; şu an karakter kütüphanesi sadece web arayüzünde mevcut ve ilerleyen sürümlerde terminale de eklenecek.\n\nUygulamanın temel hedefi, hikaye uzadıkça bağlam boyutunu düşük tutarken önemli detayların kaybolmamasını sağlamak. Bunun için \"context cap\" özelliği, belirli bir uzunluğu aşan metnin ortasını özetlerle değiştiriyor. Ayrıca, NovelAI benzeri bir \"story mode\" sunularak kullanıcılar metni doğrudan transkript alanına yazar ve model Enter tuşuna basıldığında devam ediyor. Görsel ekleme, görsellerin bağlama dahil edilmesi ve daha sonra referans alınabilmesi gibi işlevler de mevcut.\n\nOtaku'nun web arayüzü mobil uyumlu, HTTPS ve şifre koruması destekli ve çeşitli yeni düzenler içeriyor. İlk başlatmada iki örnek hikaye ve karakter kartı otomatik olarak yükleniyor; kullanıcılar bu örnekleri inceleyerek arayüzün işleyişini öğrenebiliyor. Yeni bir sohbet başlatmak için \"/new\" komutu kullanılabiliyor.\n\nKurulum tamamen ücretsiz ve macOS, Linux, Windows platformlarında çalışıyor. \"uv\" paket yöneticisiyle \"uv tool install otaku\" komutu ya da GitHub README'deki alternatif yöntemlerle kurulabilir. Geliştirici, topluluktan geri bildirim ve yeni özellik önerileri talep ediyor, özellikle bağlam yönetimi ve karakter entegrasyonu konularında ilgi çekici bir mühendislik dokümanı da paylaşıyor.",
+  "onemli_maddeler": [
+    "Otaku, yerel LLM motorları ve bulut API'leriyle çalışabilen ücretsiz, açık kaynaklı bir ön uç sunuyor.",
+    "Bağlam boyutunu sınırlayan \"context cap\" özelliği, uzun hikayelerde detay kaybını önlemek için özetleme kullanıyor.",
+    "Web ve terminal arayüzleri; web UI karakter kütüphanesi, mobil uyum, HTTPS ve şifre koruması gibi modern özellikler içeriyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 3,
+  "onem_gerekce": "Yerel LLM'ler için yaratıcı yazım ve rol‑oyunları destekleyen yeni bir araç, açık kaynak topluluğu içinde ilgi görebilir ancak sektörel etkisi sınırlı ve daha çok niş bir kullanıcı kitlesine yöneliktir.",
+  "etiketler": [
+    "LLM",
+    "AçıkKaynak",
+    "Araç",
+    "YaratıcıYazım",
+    "Terminal"
+  ],
+  "anilan_modeller": [
+    "llama.cpp",
+    "KoboldCpp",
+    "oMLX",
+    "LM Studio"
+  ],
+  "yorum_tr": "Otaku, yerel LLM altyapılarını yaratıcı yazım süreçlerine entegre ederek geliştiricilere ve hobi yazarlarına pratik bir çözüm sunuyor. Özellikle bağlam yönetimi ve çoklu arayüz desteği, benzer araçların ötesinde bir kullanıcı deneyimi vaat ediyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/meiphz3300wh1.png?width=140&height=86&auto=webp&s=3ee37bd658eea59e1258c6de05a5a3bc652b54be",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x865rk/otaku_an_llm_frontend_for_creative_writing/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-17T09:42:14.000Z",
+  "slug": "otaku-an-llm-frontend-for-creative-writing"
+}

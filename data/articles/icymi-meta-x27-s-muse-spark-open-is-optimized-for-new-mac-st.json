@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "Meta'nın Muse Spark Open Modeli Yeni Mac Studio için Optimize Edildi",
+  "ozet_tr": "Meta, kodlama, ajan tabanlı görevler ve çok adımlı akıl yürütme için tasarlanmış 816 milyar parametreli Muse Spark Open modelinin ağırlıklarını yayınladı. Model, Apple'ın yeni M5 Ultra çipli Mac Studio'larda yerel olarak çalışacak şekilde optimize edildi.",
+  "detayli_icerik_tr": "Meta, bugün Muse Spark Open adlı açık ağırlıklı bir modeli duyurdu. Toplam 816 milyar parametreye sahip olan modelin yalnızca 42 milyar aktif parametresi bulunuyor ve 1 milyon tokenlık bir bağlam penceresi sunuyor. Bu yapı, kod üretimi, ajan tabanlı iş akışları ve çok adımlı akıl yürütme gibi karmaşık görevlerde yüksek performans vaat ediyor.\n\nModel, Apple'ın yeni M5 Ultra çipli iki adet Mac Studio üzerinde MLX çerçevesiyle çalışacak şekilde optimize edildi. Her bir makine 512 GB birleşik bellek sağlıyor ve çift makine konfigürasyonu sayesinde tüm model yerel bellekte tutulabiliyor. Bu sayede geliştiriciler, büyük bir dil modelini bulut hizmetlerine bağımlı olmadan doğrudan cihaz üzerinde çalıştırabiliyor.\n\nMuse Spark Open ağırlıkları bugün indirilebilir hâle getirildi ve geliştiricilere modelin nasıl çalıştırılacağı, özelleştirileceği ve dağıtılacağı konusunda tam kontrol sunuyor. Ağırlıklar Amazon SageMaker AI, Google Cloud Model Garden, Hugging Face ve Microsoft Foundry Models gibi platformlardan temin edilebiliyor. Ayrıca model, Baseten, Fireworks AI, Groq, Modal, Nebius, OpenRouter ve Together AI gibi hizmet sağlayıcıların API'leri üzerinden de erişilebilir.\n\nMeta, modeli Muse Model License altında yayınladı; bu lisans, geniş bir geliştirici kitlesine ücretsiz kullanım izni verirken, ticari kullanım için sınırlı koşullar getiriyor. Yerel çalıştırma yeteneği, iOS güncellemelerinin gönderilmesi, derleme süreçlerinin tamamlanması ve DaVinci Resolve gibi uygulamaların kontrolü gibi on‑device iş akışlarını hızlandırarak geliştiricilerin üretkenliğini artırmayı hedefliyor.",
+  "onemli_maddeler": [
+    "Muse Spark Open 816 milyar toplam, 42 milyar aktif parametre ve 1 M token bağlam penceresine sahip.",
+    "Model, iki Apple M5 Ultra Mac Studio üzerinde MLX ile çalıştırılabiliyor; her bir makine 512 GB birleşik bellek sunuyor.",
+    "Ağırlıklar açık olarak yayınlandı ve Amazon SageMaker, Google Cloud Model Garden, Hugging Face ve Microsoft Foundry Models üzerinden indirilebilir.",
+    "Baseten, Fireworks AI, Groq, Modal, Nebius, OpenRouter ve Together AI gibi sağlayıcıların API'leri üzerinden de kullanılabiliyor.",
+    "Muse Model License, geniş geliştirici kitlesine ücretsiz kullanım sağlarken ticari kullanım için sınırlı şartlar getiriyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Büyük ölçekli, açık ağırlıklı bir modelin hem yerel cihazlarda çalıştırılabilir olması hem de geniş bir ekosistemde API ve bulut platformlarıyla sunulması, AI geliştirme ve dağıtım paradigmalarını önemli ölçüde değiştirecek bir adım olarak değerlendiriliyor.",
+  "etiketler": [
+    "Meta",
+    "Muse Spark Open",
+    "Mac Studio",
+    "AI modeli",
+    "açık ağırlık"
+  ],
+  "anilan_modeller": [
+    "Muse Spark Open"
+  ],
+  "yorum_tr": "Bu model, geliştiricilere büyük dil modellerini bulut maliyetlerinden bağımsız olarak yerel ortamda çalıştırma imkanı tanıyarak hem gizlilik hem de performans açısından yeni fırsatlar sunuyor. Ancak lisansın ticari sınırlamaları, büyük ölçekli ticari projelerde dikkatle değerlendirilmesi gereken bir faktör.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/10/banner-12.webp",
+  "url": "https://www.testingcatalog.com/icymi-metas-muse-spark-open-is-optimized-for-new-mac-studio/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-17T12:23:58.000Z",
+  "slug": "icymi-meta-x27-s-muse-spark-open-is-optimized-for-new-mac-st"
+}

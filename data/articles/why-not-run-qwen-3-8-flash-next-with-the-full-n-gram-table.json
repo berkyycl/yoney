@@ -1,0 +1,36 @@
+{
+  "baslik_tr": "Qwen 3.8 Flash Next Modelinde Tam FP8 n-gram Tablosu Kullanımı Kaliteyi Artırıyor",
+  "ozet_tr": "Reddit topluluğu, Qwen 3.8 Flash Next modelinin SSD üzerindeki n‑gram tablosu (PLE) yerine tam FP8 sidecar kullanılmasının kaliteyi artırdığını, hız kaybı yaşatmadığını gösterdi. Kullanıcı, ple_fp8_pack.py aracıyla model dosyalarını paketleyerek bu iyileştirmeyi pratik bir şekilde uygulamayı sağladı.",
+  "detayli_icerik_tr": "Reddit LocalLLaMA topluluğunda, Qwen 3.8 Flash Next modelinin PLE (n‑gram tablosu) quantize edilmesinin performansı düşürdüğü ve tam bf16/FP8 tablosunun kaliteyi artırdığı tartışıldı. /u/sillynoobhorse, bu konuyu detaylandırarak modelin SSD üzerindeki n‑gram tablosunun yoğun quantize edilmesinin ölçülebilir bir yavaşlamaya yol açtığını, tam FP8 sidecar'ın ise bu sorunu çözdüğünü belirtti.\n\nKullanıcı, Strata projesi için ple_fp8_pack.py aracını kullanarak model‑00005'ten model‑00037.safetensors dosyalarını ve ilgili index dosyasını birleştirip yeni bir GGUF dosyası oluşturdu. Oluşturulan \"ple‑fp8.gguf\" dosyası, llama.cpp gibi çerçevelerde \"--ple-gguf\" parametresiyle yüklenebiliyor. Bu işlem sadece birkaç gigabayt ek disk alanı gerektiriyor ve çalışma hızını etkilemiyor.\n\nIQ3_S modeliyle yapılan testlerde, standart IQ4_NL quantized PLE kullanılan sürüme kıyasla çok daha az mantıksız hata alındı. Özellikle \"3D sahne oluşturma\" ve KDE uygulama geliştirme gibi görevlerde eksik yüzeyler ve hatalı nesneler azaldı. Kullanıcı, iki farklı jsbin linkiyle (standart PLE vs. tam FP8 PLE) görsel olarak kalite farkını belgeledi.\n\nBu geliştirme, yerel LLaMA dağıtımları ve açık kaynak LLM toplulukları için önemli bir adım olarak görülüyor. Tam n‑gram tablosu kullanımı, model kalitesini artırırken donanım gereksinimlerini minimumda tutuyor; ancak tam PLE dosyalarının 47 GB gibi büyük boyutları dağıtım ve depolama maliyetlerini artırıyor.",
+  "onemli_maddeler": [
+    "Tam FP8 PLE (n‑gram tablosu) kullanımı model kalitesini belirgin artırıyor.",
+    "Performans hızı değişmeden, sadece birkaç GB ek disk alanı gerekiyor.",
+    "ple_fp8_pack.py aracıyla mevcut safetensors dosyaları GGUF formatına dönüştürülebiliyor.",
+    "IQ3_S modeliyle yapılan testlerde hatalı çıktılar ve 3D model hataları azaldı.",
+    "Uygulama, llama.cpp ve Strata gibi açık kaynak çerçevelerde kolayca entegre edilebiliyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 3,
+  "onem_gerekce": "Yerel LLM topluluğu içinde model kalitesini artıran teknik bir iyileştirme; geniş kitleleri etkilemesi sınırlı ancak geliştiriciler için değerli bir güncelleme.",
+  "etiketler": [
+    "Qwen",
+    "Flash-Next",
+    "PLE",
+    "FP8",
+    "llama.cpp"
+  ],
+  "anilan_modeller": [
+    "Qwen3.8-Flash-Next",
+    "IQ3_S",
+    "Strata"
+  ],
+  "yorum_tr": "Tam n‑gram tablosu (FP8 sidecar) kullanımı, açık kaynak LLM dağıtımlarında kaliteyi artırırken ek depolama maliyeti dışında performans kaybı getirmiyor; bu da geliştiricilerin daha güvenilir çıktılar elde etmesini sağlıyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://i.redd.it/p0bge9atkrnh1.png",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x8am0i/why_not_run_qwen_38_flash_next_with_the_full/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-17T13:44:17.000Z",
+  "slug": "why-not-run-qwen-3-8-flash-next-with-the-full-n-gram-table"
+}

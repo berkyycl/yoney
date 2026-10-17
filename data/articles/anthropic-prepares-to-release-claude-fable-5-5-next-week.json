@@ -1,0 +1,42 @@
+{
+  "baslik_tr": "Anthropic, Claude Fable 5.5'i Önümüzdeki Hafta Piyasaya Sürmeye Hazırlanıyor",
+  "ozet_tr": "Anthropic'in yeni büyük dil modeli Claude Fable 5.5'in lansmanı yaklaşıyor. Azure katalogunda \"Genel Kullanıma Açık\" olarak işaretlenmesi ve partnerlerin erken erişim raporları, modelin önümüzdeki hafta duyurulabileceğini gösteriyor.",
+  "detayli_icerik_tr": "Anthropic, kısa süre içinde birden fazla yeni model sunmaya hazırlanıyor ve bu modellerin ilki olabilecek Claude Fable 5.5, çeşitli sızıntılarla gündeme geldi. X platformunda kullanıcı Alex Getman, Azure'un East US 2 bölgesindeki model kataloğunda Fable 5.5'in \"Generally available\" (Genel Kullanıma Açık) durumunda olduğunu gösteren bir ekran görüntüsü paylaştı. Bu listede modelin LiteLLM girişi, Fable 5.1 ile aynı fiyatlandırma (girdi token başına 10 $, çıktı token başına 50 $) ve 1 M token bağlam penceresi ile 128 K token çıkış kapasitesi yer alıyor.\n\nAncak bu bilgiler, LiteLLM'in bir gün sonra Azure sorgularının boş dönmesi üzerine kaydı kaldırması nedeniyle şüpheyle karşılanıyor. Diğer sızıntılar da Fable 5.5'in yakın zamanda piyasaya sürülebileceğini destekliyor. \"Lyra\" takma adıyla bilinen leaker, partnerlerin modele eriştiğini ve resmi bir tarih olmamakla birlikte bir sonraki hafta çıkış beklendiğini belirtti. Aynı günlerde Lumina Bench, Artificial Analysis arayüzünde \"claude-onigiri-eap\" kod adlı bir model buldu; dört varyant (low/med/high/xhigh) ve Opus 4.8 geri dönüşü, Fable ve Opus serilerine özgü bir yapı.\n\nBu kod adı, modelin Fable 5.5 olma ihtimalini güçlendiriyor. Ayrıca, Anthropic'in yeni Claude EAP modelleri arasında \"claude-orzata-eap\", \"claude-vanilla-eap\", \"Claude Odango\" gibi isimler de tespit edildi. Özellikle Odango, GitHub Copilot benzeri bir ajan isteminde model seçicinin arasında yer almasıyla dikkat çekti. Şirket, Opus 5.5'i bir ay önce piyasaya sürmüş, ardından Sonnet 5.5 ve Haiku 5.5'i de eklemişti; bu da ürün yol haritasının hızla genişlediğini gösteriyor.\n\nÜrün tarafında ise Claude Health, gizemli \"Iggy\" ses modeli, Claude Dashboards ve Motion beta sürümleri, yeni oturum merkezi ve Code Review genel erişimi gibi yenilikler duyuruldu. Anthropic'in bu yoğun duyuru ve sızıntı akışı, şirketin LLM pazarındaki rekabet gücünü artırma stratejisini net bir şekilde ortaya koyuyor.",
+  "onemli_maddeler": [
+    "Azure katalogunda Claude Fable 5.5'in \"Generally available\" olarak işaretlenmesi ve fiyatlandırmasının Fable 5.1 ile aynı olması.",
+    "Partnerlerin modele erken erişim raporları ve bir sonraki hafta resmi lansman beklentisi.",
+    "Modelin kod adı \"claude-onigiri-eap\" ve dört farklı performans varyantı ile Opus 4.8 geri dönüşü.",
+    "Anthropic'in aynı dönemde Opus 5.5, Sonnet 5.5, Haiku 5.5 ve yeni ürünler (Claude Health, Iggy, Dashboards) ile portföyünü genişletmesi."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Claude Fable 5.5, Anthropic'in en yeni frontier modeli olarak hem fiyatlandırma hem de token kapasitesi bakımından sektörde yeni bir standart oluşturabilir; erken erişim ve Azure entegrasyonu, geniş çaplı kurumsal kullanım senaryolarını hızlandıracak.",
+  "etiketler": [
+    "Anthropic",
+    "Claude Fable 5.5",
+    "AI modeli",
+    "Azure",
+    "Yapay Zeka"
+  ],
+  "anilan_modeller": [
+    "Claude Fable 5.5",
+    "Claude Fable 5.1",
+    "Claude Sonnet 5.5",
+    "Claude Opus 5.5",
+    "Claude Opus 4.8",
+    "Claude Odango",
+    "Claude Orzata",
+    "Claude Vanilla",
+    "Claude Verrine",
+    "Claude Onigiri"
+  ],
+  "yorum_tr": "Claude Fable 5.5'in çıkışı, büyük ölçekli dil modelleri pazarında rekabeti kızıştıracak ve geliştiricilere daha yüksek bağlam uzunluğu ve tutarlı fiyatlandırma sunarak yeni uygulama senaryoları yaratma fırsatı sağlayacak.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/10/1714580635_anthropic.jpg",
+  "url": "https://www.testingcatalog.com/anthropic-several-models-coming-fable-5-5-reaches-partners/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-17T12:52:59.000Z",
+  "slug": "anthropic-prepares-to-release-claude-fable-5-5-next-week"
+}

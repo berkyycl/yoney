@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "Anthropic'in Claude, 25 yıllık NSA kriptografi gizemini 30 dakikada çözdü",
+  "ozet_tr": "Anthropic'in büyük dil modeli Claude, 2000 yılında NIST'e standartlaştırılan ECDSA eğri parametrelerinin kökenini 30 dakikadan kısa bir sürede ortaya çıkardı. Model, gizemli tohumların \"lrand48\" adlı C rastgele sayı üreteciyle ve 1997‑1998 arasındaki bir Unix zaman damgasıyla üretildiğini tespit etti.",
+  "detayli_icerik_tr": "NIST, 2000 yılında ECDSA standardına dahil edilen elliptik eğri imza parametrelerini belirlerken, NSA'dan gelen tohum değerlerine açıklama getirmedi. Bu eksik bilgi, olası arka kapıların varlığına dair uzun yıllar süren spekülasyonları körükledi ve bir ödül programı bile başlatıldı. 25 yıl süren bu belirsizlik, eski NSA çalışanı Jerry Solinas'ın tohumların esprili bir ifadeyi hash'lediği yönündeki yanlış tahminiyle daha da karmaşık bir hâl aldı.\n\nAnthropic, Claude modelini bu sorunu çözmek üzere yönlendirdi. Model, tohumların \"lrand48\" adlı basit bir C rastgele sayı üreteciyle üretildiğini ve bu fonksiyonun yalnızca 31 bitlik çıktılar verdiğini fark etti. Üst bitlerin sistematik olarak sıfır olduğu gözlemi, Claude'un tohumların bir Unix zaman damgası (Mayıs 1997 – Nisan 1998) ile başlatıldığını belirlemesini sağladı. Bu analiz, sadece 30 dakikadan kısa bir sürede tamamlandı.\n\nClaude'un bulgusu, tohumların bilinçli bir arka kapı içermediği ihtimalini güçlendirdi; çünkü \"lrand48\" gibi öngörülebilir bir RNG'nin kullanılması, kasıtlı bir gizli girişin varlığını azaltıyor. Anthropic, bu başarıyı takiben, $36,864 tutarındaki ödülü Internet Security Research Group (ISRG) kuruluşuna bağışlayacağını duyurdu.\n\nBu gelişme, yapay zekâ modellerinin kriptografi gibi karmaşık ve güvenlik kritik alanlarda da etkili bir analiz aracı olabileceğini gösteriyor. Claude'un bu başarısı, hem akademik toplulukta hem de güvenlik endüstrisinde AI destekli keşiflerin potansiyelini yeniden gündeme taşıdı.",
+  "onemli_maddeler": [
+    "Claude, ECDSA tohumlarının \"lrand48\" RNG'si ve 1997‑1998 Unix zaman damgası ile üretildiğini 30 dakikada tespit etti.",
+    "Bu bulgu, NSA'nın tohumlarıyla ilgili olası arka kapı iddialarını zayıflatıyor.",
+    "Anthropic, $36,864 ödülünü Internet Security Research Group'a bağışlayarak güvenlik araştırmalarını destekleyecek."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "AI modellerinin kriptografi gibi kritik bir alanda somut bir sorunu çözmesi, sektörde yeni araştırma ve uygulama yönelimlerini tetikleyebilir.",
+  "etiketler": [
+    "Claude",
+    "Anthropic",
+    "kriptografi",
+    "NSA",
+    "lrand48"
+  ],
+  "anilan_modeller": [
+    "Claude"
+  ],
+  "yorum_tr": "Claude'un bu başarısı, yapay zekâların güvenlik analizlerinde pratik bir araç olarak kullanılabileceğini gösteriyor ve geliştiricilere benzer problemleri AI destekli yaklaşımlarla ele alma fırsatı sunuyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/10/anthropic_unintended_actions.png",
+  "url": "https://the-decoder.com/anthropics-claude-cracks-a-25-year-old-nsa-cryptography-mystery-in-under-30-minutes/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-17T14:42:56.000Z",
+  "slug": "anthropics-claude-cracks-a-25-year-old-nsa-cryptography-myst"
+}
