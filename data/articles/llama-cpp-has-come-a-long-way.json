@@ -1,0 +1,78 @@
+{
+  "baslik_tr": "llama.cpp 1,5 Yılda Hız ve Özelliklerde Büyük Atılım",
+  "ozet_tr": "Kullanıcı, son bir buçuk yılda llama.cpp’nin Tensor Parallel, MTP ve 0.7.0 sürümüyle elde ettiği performans artışlarını ve yeni model entegrasyonlarını detaylandırdı. RTX 5060 Ti çift kart ve çeşitli LLM’lerde 60‑70 t/s üretim hızı elde edilmesi, yerel AI kullanımının bulut bağımlılığını azaltma potansiyelini gösteriyor.",
+  "detayli_icerik_tr": "Kullanıcı, Mart 2025'te AMD Radeon RX 7800 XT 16 GB üzerinde Mistral Nemo Q4_K_M modelini 8K F16 ile çalıştırarak yerel LLM deneyimine ilk adımını attı ve ilk kez bilgisayarının doğal dilde yanıt verebildiğini gördü. Bu deneyim, TTRPG rol‑oyunları için SillyTavern ve koboldcpp entegrasyonlarıyla devam etti ve yerel modellerin eğlence amaçlı kullanımının kapılarını araladı.\n\n2025 sonbaharına doğru, daha verimli bir yapı arayışıyla kullanıcı, ekonomik açıdan uygun olduğu düşünülen iki RTX 5060 Ti 16 GB kartını ASUS PRIME platformuna kurdu. Tensor Parallel (MTP) ve NVFP4/MXFP4 gibi ileri düzey özelliklerin ileride llama.cpp tarafından destekleneceği beklentisiyle, PCIe 5.0 x8‑x8 altyapısının uzun vadeli performans kazancı sağlayacağına inandı.\n\nEkim 2025'te Gemma 3 27B Q8_0 modeli layer split ile çalıştırıldığında yaklaşık 20 t/s üretim hızı elde edildi. Aynı dönemde Gemma 4 31B IT QAT modeli Q6_K kuantizasyonunda 17 t/s üretim ve 970 t/s işleme (32K BF16) performansı gösterdi. Haziran 2026'da llama.cpp 0.7.0 sürümüyle Tensor Split ve MTP desteği aktif edildi; bu sayede Gemma 4 31B IT QAT modeli 40 t/s üretim ve 980 t/s işleme hızına, Qwen3.8 27B ise 50 t/s üretim ve 1200 t/s işleme performansına ulaştı.\n\n0.7.0 sürümünden birkaç ay sonra, aynı donanımda Gemma 4 31B IT QAT modeli 60 t/s üretim ve 1100 t/s işleme, Qwen3.8 27B ise MTP ile 70 t/s üretim (kod üretiminde 100 t/s) hızlarına çıktı. Kullanıcı, bu seviyedeki performansla .NET 8.0 programlama dışındaki tüm senaryolar için bulut tabanlı LLM'lere ihtiyaç duymadığını belirtti; ancak zaman zaman llama.cpp çöküşleri yaşandığını ve stabilite iyileştirmelerinin hâlâ gerekli olduğunu vurguladı.",
+  "onemli_maddeler": [
+    "llama.cpp 0.7.0 sürümünde Tensor Split ve MTP desteği aktif edildi",
+    "Gemma 4 31B IT QAT modeli yerel ortamda 60 t/s üretim hızıyla sınırları zorladı",
+    "Qwen3.8 27B, kod üretiminde 100 t/s’ye ulaşarak bulut alternatiflerini geride bıraktı"
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Yerel LLM topluluğu için performans ve özellik artışı, bulut bağımlılığını azaltma potansiyeli taşıdığı için sektörel etkisi yüksek kabul edildi.",
+  "etiketler": [
+    "llama.cpp",
+    "local LLM",
+    "Tensor Parallel",
+    "MTP",
+    "performans"
+  ],
+  "anilan_modeller": [
+    "Mistral Nemo Q4_K_M",
+    "Mistral Small 3.2",
+    "Magistral Small 2507 Vision Rebased",
+    "Magistral Q4_K_S",
+    "Gemma 3 27B",
+    "Gemma 4 31B",
+    "Qwen3.8 27B",
+    "Qwen3.5",
+    "Qwen3.6",
+    "DeepSeek v3.2"
+  ],
+  "yorum_tr": "Tensor Parallel ve MTP’nin yerel inference’da kullanılabilir hale gelmesi, yüksek kapasiteli modellerin ev kullanıcıları tarafından da verimli bir şekilde çalıştırılmasını sağlıyor. Bu gelişme, özellikle düşük maliyetli donanımla bulut alternatiflerine yönelen geliştiriciler için önemli bir avantaj sunuyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Gemma 3 27B Q8_0",
+      "benchmark": "generation speed",
+      "skor": 20,
+      "birim": "t/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "layer split",
+      "kaynak_metinden_alinti": "The speed in January was ~20 t/s gen for Gemma 3 27B Q8_0 over layer split."
+    },
+    {
+      "model": "Gemma 4 31B IT QAT",
+      "benchmark": "generation speed",
+      "skor": 60,
+      "birim": "t/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "0.7.0 release with MTP",
+      "kaynak_metinden_alinti": "Now with the 0.7.0 release, I am usually over 60 t/s gen ... with Gemma 4 31B IT QAT."
+    },
+    {
+      "model": "Gemma 4 31B IT QAT",
+      "benchmark": "processing speed",
+      "skor": 1100,
+      "birim": "t/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "0.7.0 release with MTP",
+      "kaynak_metinden_alinti": "Now with the 0.7.0 release, I am usually ... 1100 t/s processing with Gemma 4 31B IT QAT."
+    },
+    {
+      "model": "Qwen3.8 27B",
+      "benchmark": "generation speed",
+      "skor": 70,
+      "birim": "t/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "with MTP, without ngram draft",
+      "kaynak_metinden_alinti": "Qwen3.8 27B runs even faster at around 70 t/s (with mtp, without ngram draft) for reasoning and 100 t/s when generating code."
+    }
+  ],
+  "gorsel_url": "https://miro.medium.com/v2/resize:fit:1400/1*KplPT3BYFzplLD4D169uHg.png",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x7xbf0/llamacpp_has_come_a_long_way/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-17T01:08:07.000Z",
+  "slug": "llama-cpp-has-come-a-long-way"
+}

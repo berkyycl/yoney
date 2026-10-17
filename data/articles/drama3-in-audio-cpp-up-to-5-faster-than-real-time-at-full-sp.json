@@ -1,0 +1,88 @@
+{
+  "baslik_tr": "Drama3 audio.cpp desteği: Tam hızda gerçek zamanın 5 katı, RTX 5090'da <8 GB VRAM ile gerçek zamanın 2 katı!",
+  "ozet_tr": "Drama3 modelinin audio.cpp entegrasyonu, CUDA, Vulkan ve Metal üzerinden yapılan optimizasyonlarla büyük bir performans sıçraması yakaladı. RTX 5090 üzerinde tam hızda gerçek zamanın beş katı, sınırlı VRAM koşulunda ise iki katı hız elde edildi.",
+  "detayli_icerik_tr": "LocalLLaMA topluluğu, Drama3 modelinin audio.cpp dosyasına entegrasyonunu ve ardından gelen performans iyileştirmelerini duyurdu. Bu katkı, GitHub'da @JarodMica tarafından sağlandı ve öncelikli olarak CUDA tabanlı optimizasyonlara odaklandı; model aynı zamanda Vulkan ve Metal platformlarında da çalışabiliyor.\n\nToplanan benchmark verileri, farklı çalışma modları ve metin parça boyutları (chunk size) için VRAM tüketimi ve ortalama ısınma süresi (RTF) değerlerini gösteriyor. Tam CUDA modunda 512 tokenlik bir parça, 26,990 MiB VRAM kullanarak 0.195 RTF (gerçek zamanın 5 katı) sağlarken, aynı model CPU‑weight offload ile 512 tokenlik parçada sadece 9,680 MiB VRAM tüketip 0.484 RTF elde ediyor. Vulkan tabanlı çalışmada ise tam modda 27,234 MiB VRAM ile 0.247 RTF, offload modunda ise 12,470 MiB VRAM ve 0.601 RTF kaydedildi.\n\nBu sonuçlar, özellikle sınırlı VRAM (8 GB altında) koşullarında bile modelin gerçek zamanlı ses üretiminde kullanılabilirliğini gösteriyor. Ancak topluluk, performans ve VRAM verimliliği konusunda hâlâ iyileştirme alanı olduğunu belirtiyor; Vulkan’da bir istek token limitine takıldı ve çoklu konuşmacı üretiminde beklenmedik sessizlikler tespit edildi.\n\nGeliştiriciler, paylaşılan çerçeve kodunda yapılan değişikliklerin eklenebilir ve isteğe bağlı olmasını vurgulayarak, diğer 100'den fazla modelin regresyon testlerini zorlaştırmamak istediklerini belirtiyor. Katkı sağlamak isteyenler, topluluk içinde iş birliği yaparak modelin bir sonraki küçük sürümüne dahil edilmesini hedefleyebilir.",
+  "onemli_maddeler": [
+    "Drama3 audio.cpp desteği CUDA, Vulkan ve Metal üzerinde çalışıyor.",
+    "RTX 5090'da tam CUDA modunda 0.195 RTF (gerçek zamanın 5 katı) performans elde edildi.",
+    "CPU‑weight offload modunda VRAM tüketimi 8 GB altında kalarak 0.484‑0.635 RTF aralığı sağlandı.",
+    "Vulkan’da token limitine takılma ve çoklu konuşmacı sessizliği gibi sorunlar tespit edildi."
+  ],
+  "kategori": "benchmark",
+  "onem": 3,
+  "onem_gerekce": "Topluluk içinde bir modelin ses üretim performansına dair detaylı benchmark verileri sunulmuş, ancak geniş çaplı bir endüstri etkisi henüz sınırlı.",
+  "etiketler": [
+    "Drama3",
+    "audio",
+    "CUDA",
+    "Vulkan",
+    "RTX 5090"
+  ],
+  "anilan_modeller": [
+    "Drama3"
+  ],
+  "yorum_tr": "Bu iyileştirmeler, gerçek zamanlı ses üretimi gerektiren uygulamalarda Drama3'ün kullanılabilirliğini artırıyor ve topluluk katkısının model performansını hızla yükseltebileceğini gösteriyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Drama3",
+      "benchmark": "RTF (full CUDA, chunk size 512)",
+      "skor": 0.195,
+      "birim": "RTF",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "full CUDA, 512 token",
+      "kaynak_metinden_alinti": "full CUDA 512 26,990 MiB 0.195"
+    },
+    {
+      "model": "Drama3",
+      "benchmark": "RTF (CPU-weight offload, chunk size 512)",
+      "skor": 0.484,
+      "birim": "RTF",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "CPU-weight offload with staged release, 512 token",
+      "kaynak_metinden_alinti": "CPU-weight offload with staged release 512 9,680 MiB 0.484"
+    },
+    {
+      "model": "Drama3",
+      "benchmark": "RTF (CPU-weight offload, chunk size 256)",
+      "skor": 0.521,
+      "birim": "RTF",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "CPU-weight offload with staged release, 256 token",
+      "kaynak_metinden_alinti": "CPU-weight offload with staged release 256 7,782 MiB 0.521"
+    },
+    {
+      "model": "Drama3",
+      "benchmark": "RTF (full Vulkan, chunk size 512)",
+      "skor": 0.247,
+      "birim": "RTF",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "full Vulkan, 512 token",
+      "kaynak_metinden_alinti": "full Vulkan 512 27,234 MiB 0.247"
+    },
+    {
+      "model": "Drama3",
+      "benchmark": "RTF (CPU-weight offload, Vulkan, chunk size 512)",
+      "skor": 0.601,
+      "birim": "RTF",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "CPU-weight offload with staged release, Vulkan, 512 token",
+      "kaynak_metinden_alinti": "CPU-weight offload with staged release, Vulkan 512 12,470 MiB 0.601"
+    },
+    {
+      "model": "Drama3",
+      "benchmark": "RTF (CPU-weight offload, Vulkan, chunk size 256)",
+      "skor": 0.635,
+      "birim": "RTF",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "CPU-weight offload with staged release, Vulkan, 256 token",
+      "kaynak_metinden_alinti": "CPU-weight offload with staged release, Vulkan 256 12,474 MiB 0.635"
+    }
+  ],
+  "gorsel_url": "https://external-preview.redd.it/OTE3Z3djMW0wcnZoMS_Ajn2e5wMfZV_E7lsmfvZXh5GlnBWzN8Bd4qt3nVDR.png?width=640&crop=smart&auto=webp&s=f5e6788f6bdfdf2b6376b6a4985592546baabd4c",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x75uyi/drama3_in_audiocpp_up_to_5_faster_than_real_time/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-16T03:38:04.000Z",
+  "slug": "drama3-in-audio-cpp-up-to-5-faster-than-real-time-at-full-sp"
+}

@@ -1,0 +1,36 @@
+{
+  "baslik_tr": "Tyger: Açık Ağırlıklı Akışlı ASR ve Tam Çift Yönlü Konuşma Kontrolü Tek Modelde",
+  "ozet_tr": "Tyger, NVIDIA Nemotron 3.5 tabanlı 0,6 M parametrelik bir ASR modeli ile 14 M parametrelik causal GRU'yu birleştirerek sesli asistanlarda tam çift yönlü (full‑duplex) konuşma kontrolü sağlayan küçük bir açık‑ağırlıklı model olarak tanıtıldı. Model, her 80 ms'de kullanıcı konuşmasını sonlandırma, kesme ya da ara verme gibi üç durumdan birini seçerek sesli ajanların kendi seslerini yankı olarak algılamasını önlüyor.",
+  "detayli_icerik_tr": "Tyger, NVIDIA'nın Nemotron 3.5 ASR Streaming modelinin 0,6 M parametrelik bir çekirdeğini ve üzerine eklenmiş 14 M parametrelik causal GRU katmanını kullanıyor. Model, 80 ms'lik periyotlarla, önceden bir bakış (lookahead) yapmadan, kullanıcı konuşmasının bitişini (answer), konuşmanın kesilmesini (stop) ya da ajanın ara vermeden “mm‑hm”, “oh, really” gibi kısa geri bildirimler vererek dinlemeye devam etmesini (chime in) belirleyen üç durumdan birini seçiyor.\n\nTam bir sesli ajan çözümü olarak Tyger, Gemma 4 E4B FP8 modeli ve VoxCPM2 ile birleştirilerek \"tyger‑s2s\" adlı bir yığın oluşturulmuş. Bu yığın, araç çağrıları (tool calls), aynı anda dört konuşma oturumu ve RTX 5090 üzerinde ortalama 0,7 saniyelik yanıt süresi gibi performans özellikleri sunuyor. Opsiyonel bir \"expert\" (OpenAI) hizmeti de bulunuyor; bu hizmet varsayılan olarak kapalı ve kapalıyken tüm işlem yerel olarak gerçekleşiyor, yani ses ya da metin verileri cihaz dışına çıkmıyor.\n\nTyger'ın sınırlamaları da açıkça belirtilmiş. Modelin kendisi küçük olsa da, tam yığın 28 GB VRAM gerektiriyor ve şu ana kadar sadece RTX 5090 üzerinde test edilmiş; diğer GPU'larda (3090, 4090 vb.) denemeler bekleniyor. Model yalnızca FP32 formatında çalışıyor; kuantizasyon desteği henüz test edilmemiş. Ayrıca şu ana kadar sadece çevrim dışı (offline) benchmark sonuçları mevcut.\n\nModelin kodları ve ağırlıkları Apache‑2.0 lisansı altında Hugging Face üzerinden erişilebilir durumda, ayrıca GitHub'da tam ajan yığını ve bir demo sitesi (ücretsiz kayıt) sunulmuş. Geliştiriciler ve araştırmacılar, özellikle konuşma dönüşümünün (turn‑taking) hâlâ iyileştirilmesi gereken noktalarına dair geri bildirimde bulunmaya davet ediliyor.",
+  "onemli_maddeler": [
+    "Tyger, 0,6 B ASR tabanı ve 14 M GRU ile her 80 ms'de üç farklı konuşma durumu belirleyebilen ilk açık‑ağırlıklı modeldir.",
+    "Tam sesli ajan yığını, Gemma 4 E4B FP8 ve VoxCPM2 ile entegrasyon sağlayarak aynı anda dört konuşma oturumu ve 0,7 s yanıt süresi sunar.",
+    "Model tamamen yerel çalışır; opsiyonel OpenAI \"expert\" servisi kapalı olduğunda ses ve metin verileri cihaz dışına çıkmaz."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Tam çift yönlü konuşma kontrolü ve açık‑ağırlıklı dağıtım imkanı, sesli asistan geliştirmelerinde yeni bir paradigma sunarak sektörde önemli bir yenilik yaratıyor.",
+  "etiketler": [
+    "ASR",
+    "turn-control",
+    "voice-agent",
+    "open-weight",
+    "streaming"
+  ],
+  "anilan_modeller": [
+    "Tyger",
+    "Nemotron 3.5",
+    "Gemma 4E4B",
+    "VoxCPM2",
+    "tyger-s2s"
+  ],
+  "yorum_tr": "Tyger, düşük kaynak gereksinimi ve yerel çalışabilirliği sayesinde geliştiricilere gizlilik odaklı sesli asistanlar oluşturma fırsatı tanıyor; ancak yüksek VRAM ihtiyacı ve sınırlı GPU desteği, geniş çaplı benimsenmesini kısıtlayabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/nCzvUn3RzF8ivk7xIdcKsu4rRLR4CIl8e0GJpZgjKMw.png?width=640&crop=smart&auto=webp&s=0772ccecd85431318249cf87f12c86be612a392e",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x7msmj/tyger_openweights_streaming_asr_fullduplex/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-16T17:42:26.000Z",
+  "slug": "tyger-open-weights-streaming-asr-full-duplex-turn-control-in"
+}
