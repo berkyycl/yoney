@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "Qwen Flash Next Quant ve Sıcaklık Karşılaştırması: Performans, Süre ve Kalite Analizi",
+  "ozet_tr": "Reddit topluluğundan bir kullanıcı, Qwen Flash Next modelinin üç farklı kuantizasyon seviyesini (q3_xxs, q3_s, q4_xs) iki sıcaklık ayarıyla (temp 1 ve temp 0) test ederek görev süresi, token tüketimi ve kalite açısından karşılaştırdı. Sonuçlar, daha yüksek kuantizasyonun toplam token sayısını ve görev süresini azalttığını, ancak decode hızı farkının performansa etkisinin sınırlı olduğunu gösterdi.",
+  "detayli_icerik_tr": "Yerel LLaMA topluluğunun bir üyesi, boş zamanını değerlendirmek amacıyla Qwen Flash Next modelinin üç kuantizasyon varyantını (q3_xxs, q3_s ve q4_xs) aynı donanım üzerinde çalıştırdı. Her bir model iki farklı sıcaklık ayarıyla test edildi: önerilen parametrelerle (temp 1, top_k 20, top_p 0.95 vb.) ve tamamen deterministik bir çalışma için temp 0. Her kombinasyon üç kez tekrar edilerek toplam 12 görev yürütüldü.\n\nGörev, belirli gereksinimleri olan bir tarayıcı tabanlı Tetris oyunu oluşturmayı içeriyordu; kalite değerlendirmesi ise sağlanan özelliklerin gereksinimlerle ne kadar örtüştüğüne göre yapıldı. Sonuçlar, tüm kuantizasyonların kabul edilebilir çıktılar ürettiğini, ancak düşük kuantizasyonlu modellerin (q3_xxs) kendilerine güvenmediği ve gereksiz token üretimi, ek araç çağrıları ve test tekrarlarıyla daha uzun toplam decode süresi oluşturduğu ortaya koydu.\n\nİlginç bir bulgu, daha yüksek kuantizasyon seviyesinin (q4_xs) token başına decode hızını (TPS) düşürmesine rağmen, toplam token sayısının azalması sayesinde görev süresinin kısaldığıydı. Temp 0 ayarı ise görev süresi ve token sayısında daha düşük varyans gösterdi; kalite açısından ise belirgin bir fark bulunmadı, ancak yazar daha karmaşık görevlerde sıcaklığın etkisini sorguluyor.\n\nYazar, elde ettiği bulgulara dayanarak, donanımın izin verdiği en yüksek kuantizasyon seviyesini tercih etmeyi, decode hızına odaklanmak yerine toplam görev süresine bakmayı önerdi. Windows ortamında SSD önbelleği gerektirmeyen en yüksek kuantizasyonun q3_s olduğu belirtilirken, Linux tabanlı bir başsız kutuda farklı sonuçlar alınabileceği ihtimali de dile getirildi.",
+  "onemli_maddeler": [
+    "Yüksek kuantizasyon (q4_xs) daha az token tüketerek toplam görev süresini kısaltıyor, decode hızı farkı performansı etkilemiyor.",
+    "Temp 0 ayarı, görev süresi ve token sayısında daha düşük varyans sağlasa da kalite üzerinde belirgin bir iyileşme göstermedi.",
+    "Donanımın izin verdiği en yüksek kuantizasyon seviyesini seçmek, özellikle Windows ortamında SSD önbelleği gerektirmeyen q3_s modeliyle en verimli sonuçları veriyor."
+  ],
+  "kategori": "benchmark",
+  "onem": 3,
+  "onem_gerekce": "Topluluk tarafından yapılan bir karşılaştırma, model kuantizasyonu ve sıcaklık ayarları üzerine pratik bilgiler sunsa da sektörel çapta geniş bir etki yaratmıyor.",
+  "etiketler": [
+    "Qwen",
+    "quantization",
+    "temperature",
+    "benchmark",
+    "LLM"
+  ],
+  "anilan_modeller": [
+    "Qwen Flash Next q3_xxs",
+    "Qwen Flash Next q3_s",
+    "Qwen Flash Next q4_xs"
+  ],
+  "yorum_tr": "Bu test, kuantizasyon seviyesinin görev süresi üzerindeki etkisini netleştirerek geliştiricilere donanım sınırlamalarına göre model seçimi konusunda yön gösteriyor. Ancak, daha karmaşık senaryolarda sıcaklık ayarının kaliteyi nasıl etkilediği konusunda ek araştırmalara ihtiyaç var.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/xif9lus6m0wh1.png?width=640&crop=smart&auto=webp&s=d75594befe7ff972b1b8b1973693a634bc0aed35",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x88fvj/qwen_flash_next_quant_and_temp_comparison/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-17T11:58:07.000Z",
+  "slug": "qwen-flash-next-quant-and-temp-comparison-performance-vs-tas"
+}

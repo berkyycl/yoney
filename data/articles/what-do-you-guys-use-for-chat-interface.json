@@ -1,0 +1,36 @@
+{
+  "baslik_tr": "Sizler sohbet arayüzü için ne kullanıyorsunuz?",
+  "ozet_tr": "LocalLLaMA topluluğu, kodlama dışı sohbet deneyimleri için hangi arayüzleri tercih ettiklerini tartışıyor. Kullanıcılar, Pi/OpenCode gibi kodlama odaklı araçların popülerliğini kabul ederken, genel sohbet, rol‑oyun ve otonom asistan senaryoları için farklı çözümler arıyor.",
+  "detayli_icerik_tr": "Reddit'in LocalLLaMA topluluğunda bir kullanıcı, kodlama görevlerinde hâlâ en çok tercih edilen Pi/OpenCode aracını belirtirken, sohbet arayüzü seçimleri konusunda topluluktan görüş talep etti. Kullanıcı, son birkaç ay içinde harness (model entegrasyon katmanı) üzerine yapılan tartışmaların azaldığını ve mevcut popüler seçeneklerin neler olduğunu merak ediyor.\n\nToplulukta öne çıkan üç ana sohbet arayüzü şunlar: OpenWebUI, genel amaçlı sohbet deneyimi sunmasıyla en çok tercih edilen platform; SillyTavern, rol‑oyun (role‑play) senaryolarına odaklanmış bir arayüz; Hermes Agent ise daha bağımsız, otomatik asistan işlevi gören bir çözüm olarak öne çıkıyor. Kullanıcı, bu araçların Claude'un arayüzüne benzer bir denge sunup sunmadığını sorguluyor; yani ne çok kod‑ağırlıklı, ne tamamen arama motoru tarzı, ne de sadece kişisel asistan gibi hissettirmeyen bir deneyim.\n\nKullanıcı ayrıca, bu algının sadece arayüz tasarımından mı yoksa modelin (harness) kendisinden mi kaynaklandığını merak ediyor. Bu bağlamda, topluluktan Claude benzeri bir kullanıcı deneyimi sağlayabilecek, kodlama ve arama odaklı olmaktan uzak, çok yönlü bir sohbet arayüzü önerisi bekliyor.\n\nBu tür topluluk soruları, açık kaynak LLM ekosisteminde hangi araçların hangi kullanım senaryolarına daha uygun olduğunu belirlemede önemli bir referans noktası oluyor. Kullanıcıların deneyimlerini paylaşması, yeni katılımcıların doğru arayüzü seçmesine ve mevcut araçların geliştirilmesine katkı sağlıyor.",
+  "onemli_maddeler": [
+    "Pi/OpenCode kodlama görevleri için hâlâ en popüler araç.",
+    "OpenWebUI genel sohbet deneyimi için tercih ediliyor.",
+    "SillyTavern rol‑oyun (role‑play) senaryolarına odaklanıyor.",
+    "Hermes Agent otonom asistan işlevi sunuyor.",
+    "Kullanıcı Claude benzeri dengeli bir arayüz arayışında."
+  ],
+  "kategori": "diger",
+  "onem": 2,
+  "onem_gerekce": "Topluluk içinde araç tercihleri ve deneyim paylaşımı, açık kaynak LLM ekosisteminin yönelimini etkileyebilir ancak sektörel çapta büyük bir etki yaratmaz.",
+  "etiketler": [
+    "chatbot",
+    "arayüz",
+    "LocalLLaMA",
+    "OpenWebUI",
+    "SillyTavern"
+  ],
+  "anilan_modeller": [
+    "Pi",
+    "OpenCode",
+    "Claude"
+  ],
+  "yorum_tr": "Bu tür kullanıcı odaklı tartışmalar, hangi sohbet arayüzünün hangi senaryoya daha uygun olduğunu netleştirerek geliştiricilerin ve son kullanıcıların karar sürecini kolaylaştırır; ancak geniş ölçekli bir sektörel değişim yaratmaz.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://www.setproduct.com/blog/covers/ai-chat-interface-ui-design.webp",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x80ci1/what_do_you_guys_use_for_chat_interface/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-17T03:51:15.000Z",
+  "slug": "what-do-you-guys-use-for-chat-interface"
+}

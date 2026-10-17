@@ -1,0 +1,61 @@
+{
+  "baslik_tr": "Qwen 3.8 Flash Next, 5 cihazda dağıtık çalıştırma ile 60k bağlamda 37‑39 tok/s yazma hızı",
+  "ozet_tr": "Qwen 3.8 Flash Next modeli, beş farklı cihazın (iki oyun PC'si, bir M4 Pro MacBook ve iki iPhone 17 Pro Max) bir araya getirilerek pipelined speculation tekniğiyle çalıştırıldı. 60 000 token bağlamında 37‑39 token/s yazma ve 856‑895 token/s okuma performansı elde edildi. Bu sonuç, büyük MoE modellerinin ev ortamı donanımlarıyla uzun bağlamlarda bile akıcı bir şekilde kullanılabileceğini gösteriyor.",
+  "detayli_icerik_tr": "Qwen 3.8 Flash Next, 48 katmanlı bir mixture‑of‑experts (MoE) mimarisine sahip ve katman başına 512 uzman içeriyor. Model, 3‑bit kuantizasyonla bile 24 GB RAM'li bir MacBook'tan çok daha büyük, bu yüzden yazar, tek bir cihazda çalıştırmanın mümkün olmadığını belirtti. Bunun yerine iki oyun PC'si (RTX 2060 Super ve RX 9060 XT), bir M4 Pro MacBook ve iki iPhone 17 Pro Max cihazı bir zincir halinde bağlanarak modelin katmanları dağıtıldı.\n\nDağıtım şu şekilde gerçekleşti: PC 1 (2060 Super) katman 0‑9 ve çıkış katmanını, MacBook katman 10‑29, iPhone'lar katman 10‑18 için uzman seçimlerini (her token için 512 uzman arasından 10 tanesi) yürütüyor ve PC 2 (9060 XT) katman 30‑47'yi işliyor. Tüm ağırlıklar VRAM, pinned RAM ya da birleşik bellek içinde tutulduğundan disk okuması ya da takas yok. Pipelined speculation sayesinde, bir cihaz bir sonraki token'ı taslak olarak üretirken diğer cihazlar aynı anda önceki token'ları doğruluyor; bu da ortalama 2,2 token'lık bir ilerleme sağlıyor.\n\nPerformans ölçümleri, gerçek bir ajan oturumu (temp 0.6, top‑p 0.95, top‑k 20) üzerinden yapıldı. 16 k bağlamda 42 tok/s yazma, 728‑744 tok/s okuma; 32 k bağlamda 39‑41 tok/s yazma, 844‑852 tok/s okuma; 60 k bağlamda ise 37‑39 tok/s yazma ve 856‑895 tok/s okuma elde edildi. Uzun bağlamlı bir düzenlemede 69,6 k token işlenebildi ve PC 2'nin okuma hızı yaklaşık 980 tok/s ile sınırlıydı. Yazar, daha fazla cihaz ve optimizasyonla bu rakamların daha da artırılabileceğini belirtti.\n\nBu deney, ev ortamındaki heterojen donanımların bir araya getirilerek büyük MoE modellerinin düşük gecikmeli ve yüksek verimli bir şekilde çalıştırılabileceğini kanıtlıyor. Açık kaynak kodları ve talimatlar GitHub'da (https://github.com/StayLameBro/backburner) paylaşılacak ve topluluk tarafından farklı cihaz kombinasyonlarıyla test edilmesi davet ediliyor.",
+  "onemli_maddeler": [
+    "Qwen 3.8 Flash Next, 48 katman ve katman başına 512 uzman içeren büyük bir MoE modelidir.",
+    "Model, iki oyun PC'si, bir M4 Pro MacBook ve iki iPhone 17 Pro Max cihazı arasında katman bazlı dağıtılarak çalıştırıldı.",
+    "60 k bağlamda 37‑39 token/s yazma ve 856‑895 token/s okuma hızları elde edildi; 16 k bağlamda ise 42 token/s yazma sağlandı.",
+    "Pipelined speculation tekniği sayesinde cihazlar birbirini beklemeden paralel token tahmini ve doğrulama yapabiliyor."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Dağıtık cihazlar üzerinden büyük MoE modelinin gerçek zamanlı token üretim hızı ve uzun bağlam performansı gösteren nadir bir benchmark olması sektörde yeni bir çalışma yöntemi sunuyor.",
+  "etiketler": [
+    "distributed inference",
+    "token throughput",
+    "Qwen",
+    "multi-device",
+    "benchmark"
+  ],
+  "anilan_modeller": [
+    "Qwen 3.8 Flash Next"
+  ],
+  "yorum_tr": "Bu dağıtık çalışma yöntemi, yüksek bellek gereksinimi olan modelleri ev ortamındaki mevcut donanımla maliyetli sunucu altyapısına ihtiyaç duymadan çalıştırma potansiyeli sunarak geliştiricilere yeni bir yol haritası çiziyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen 3.8 Flash Next",
+      "benchmark": "16k context writing throughput",
+      "skor": 42,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "writing",
+      "kaynak_metinden_alinti": "16k context: 42 tok/s writing"
+    },
+    {
+      "model": "Qwen 3.8 Flash Next",
+      "benchmark": "32k context writing throughput",
+      "skor": 40,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "writing",
+      "kaynak_metinden_alinti": "32k context: 39–41 tok/s writing"
+    },
+    {
+      "model": "Qwen 3.8 Flash Next",
+      "benchmark": "PC 2 reading cap",
+      "skor": 980,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "reading",
+      "kaynak_metinden_alinti": "PC 2 caps it at about 980 tokens/s, because its host-memory experts cross PCIe once per 512-token batch."
+    }
+  ],
+  "gorsel_url": "https://external-preview.redd.it/YWEyYXdmcGhhM3doMS1ecb1SkUSVrT8NnNClVvGv8-94EyvIKIXbYxZACmdD.png?width=640&crop=smart&auto=webp&s=d4c77c5bb1b6951ec27fe39d3298221dbe2a72b3",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x8ley0/2_gaming_pcs_an_m4_pro_macbook_over_ethernet_2/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-17T21:13:35.000Z",
+  "slug": "2-gaming-pcs-an-m4-pro-macbook-over-ethernet-2-iphone-17-pro"
+}
