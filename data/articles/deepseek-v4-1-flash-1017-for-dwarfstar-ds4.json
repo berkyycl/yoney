@@ -1,0 +1,43 @@
+{
+  "baslik_tr": "DeepSeek v4.1 Flash 1017, Dwarfstar (ds4) için yeni Vision Tower ve 2‑bit Routen Expert Desteği",
+  "ozet_tr": "DeepSeek'in v4.1 Flash 1017 modeli, Dwarfstar (ds4) platformunda yeni bir vision tower ve 2‑bit routed expert quantizasyonu ile güncellendi. Model, 150 GB üzerindeki çekirdek ağı SSD üzerinden akıtıp, M5 Max üzerinde 20 tps dekod hızı sunuyor.",
+  "detayli_icerik_tr": "Open‑weights topluluğu, DeepSeek v4.1 Flash 1017'nin Dwarfstar (ds4) uyumluluğunu sağlayan bir PR'ı duyurdu. Geliştirici, orijinal DS4.1 Q2 tarifine sadık kalarak 2‑bit routed expert'ları, geri kalan katmanları ise 8‑bit ve üzeri çözünürlükte tutuyor; ayrıca orijinal FP8 engram tablosu korunmuş. Bu yapı, önceki DS4.1 sürümünde başarılı sonuçlar vermişti ve yeni modelde de benzer performans vaat ediyor.\n\nModelin çekirdek ağı (wired backbone) 150 GB'dan fazla bir boyuta sahip ve 128 GB RAM'li sistemlerde SSD'den akışla çalışıyor. Routen expert'ların büyük bir kısmı sıcak önbellekte tutulurken, yaklaşık 200 GB'lık engram tablosu ihtiyaç anında SSD'den sayfalara bölünerek yükleniyor. Bu mimari, Apple M5 Max çipinde 20 tps'ye kadar dekod hızı elde edilmesini sağlıyor.\n\nYapısal değişiklikler de dikkat çekici: routed expert tensörlerinin %40'ı, engramların %30'u ve vision tower'ın expert tensörlerinin %50'si yenilenmiş. Bu kapsamlı revizyon, modeli açık ağırlıklı (open‑weights) alanda lider konuma taşıdığı iddiasıyla sunuyor. Topluluk üyeleri, yeni sürümün performansını test etmeye ve geri bildirimde bulunmaya davet ediliyor.\n\nBu güncelleme, özellikle düşük bellekli sistemlerde yüksek performanslı görsel‑dil modelleri çalıştırmak isteyen araştırmacılar ve geliştiriciler için önemli bir adım. Modelin SSD‑tabanlı akış ve hot‑cache stratejisi, büyük ölçekli LLM'lerin daha erişilebilir donanımlarda kullanılabilmesini mümkün kılıyor.",
+  "onemli_maddeler": [
+    "DeepSeek v4.1 Flash 1017, Dwarfstar (ds4) platformunda 2‑bit routed expert ve FP8 engram tablosu ile çalışıyor.",
+    "Modelin çekirdek ağı 150 GB, engram tablosu 200 GB; SSD üzerinden akış ve hot‑cache sayesinde 20 tps dekod hızı sağlanıyor.",
+    "Routed expert tensörlerinin %40'ı, engramların %30'u ve vision tower'ın %50'si yenilenerek açık‑ağırlıklı liderlik iddiası ortaya konmuş."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Açık‑ağırlıklı büyük dil modelleri arasında yeni bir liderlik iddiası taşıması ve düşük bellekli sistemlerde yüksek performans sunması sektörel etkisi yüksek bir güncellemedir.",
+  "etiketler": [
+    "DeepSeek",
+    "Vision Model",
+    "Open-Weights",
+    "Quantization",
+    "Benchmark"
+  ],
+  "anilan_modeller": [
+    "DeepSeek v4.1 Flash 1017",
+    "Dwarfstar ds4"
+  ],
+  "yorum_tr": "Bu güncelleme, açık‑ağırlıklı LLM topluluğuna daha verimli görsel‑dil entegrasyonu sunarak araştırma ve uygulama geliştirmeyi hızlandırabilir. Kullanıcılar, SSD‑tabanlı akış mimarisi sayesinde daha düşük donanım gereksinimleriyle yüksek performans elde edecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "DeepSeek v4.1 Flash 1017",
+      "benchmark": "decode speed",
+      "skor": 20,
+      "birim": "tps",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Apple M5 Max",
+      "kaynak_metinden_alinti": "allowing for decode speeds up to 20tps on an M5 Max"
+    }
+  ],
+  "gorsel_url": "https://external-preview.redd.it/uahT9V8xWAOb1zrTgNGAc2uq7S4wFX0Y7A690G0iOTk.png?width=640&crop=smart&auto=webp&s=54a39f4d1d2c1aa0f56f66effd0a29cf76ada4b2",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x8tr2c/deepseek_v41_flash_1017_for_dwarfstar_ds4/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-18T04:12:24.000Z",
+  "slug": "deepseek-v4-1-flash-1017-for-dwarfstar-ds4"
+}

@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "Yerel LLM'ler İçin Pahalı Donanıma İhtiyacınız Yok",
+  "ozet_tr": "Kullanıcı Maglcite, sadece bir AMD Radeon 9060 XT 16 GB GPU ve 24 GB DDR5 RAM ile Qwen 3.8 27B modelini 262 k bağlam uzunluğunda çalıştırabildiğini duyurdu. Performans ölçümleri, düşük maliyetli bir yapılandırmanın da yüksek bağlam ve hızlı yanıt süreleri sunabildiğini gösteriyor.",
+  "detayli_icerik_tr": "Reddit'in LocalLLaMA topluluğunda paylaşılan gönderide, yüksek bütçeli 4 x 3090 gibi sistemlere kıyasla çok daha mütevazı bir donanım setiyle büyük dil modelleri çalıştırmanın mümkün olduğu vurgulandı. Kullanıcı, tek bir AMD Radeon 9060 XT 16 GB ekran kartı ve toplam 24 GB DDR5 RAM (sadece 16 GB'ı bu modele ayrılmış) ile Qwen 3.8 27B modelini 262 k bağlam uzunluğunda çalıştırdığını belirtti.\n\nModel, Unsloth IQ4XS ASCII sıkıştırması ve KV cache akışı (kv cache streaming) teknikleriyle optimize edildi. Bu sayede, KV cache değerleri Q4, anahtarlar Q8 formatında saklanarak bellek tüketimi azaltıldı ve n‑gram tahmini (MTP+ n‑gram prediction) ile performans iyileştirildi. Kullanıcı, bu yapılandırmanın 42.7 token‑per‑second (tps) üretim hızı ve 658 tps ön‑dolgu (prefill) hızı sağladığını, 20 k bağlamda bu değerlerin korunduğunu, 200 k bağlamda ise 35 tps üretim ve 500 tps ön‑dolgu hızına ulaştığını rapor etti.\n\nBu sonuçlar, aynı zamanda GitHub'da bulunan bir llama.cpp çatalı (https://github.com/achyudh/llama.cpp) üzerinden elde edildi. Kullanıcı, eksik PCIe atomikleri nedeniyle ortaya çıkan hataları gidermek için GrokBot adlı bir otomasyon aracını SSH üzerinden çalıştırarak sorunu çözdüğünü de ekledi. Bu deneyim, düşük maliyetli donanımın doğru optimizasyonlarla yüksek bağlamlı LLM'leri destekleyebileceğini gösteriyor.\n\nTopluluk, bu tür yapılandırmaların daha geniş bir kullanıcı kitlesi tarafından benimsenmesiyle, yerel LLM ekosisteminin çeşitlenmesi ve erişilebilirliğinin artması yönünde bir adım atılabileceğini belirtiyor. Özellikle araştırmacılar ve geliştiriciler, pahalı donanım yatırımı yapmadan da büyük modelleri deneyimleyebilecekleri bir yol haritası elde etmiş oldu.",
+  "onemli_maddeler": [
+    "AMD Radeon 9060 XT 16 GB GPU ve 24 GB DDR5 RAM ile Qwen 3.8 27B modeli 262 k bağlamda çalıştırıldı",
+    "Unsloth IQ4XS ASCII sıkıştırması ve KV cache streaming ile bellek verimliliği artırıldı",
+    "42.7 tps üretim ve 658 tps ön‑dolgu hızı elde edildi; 200 k bağlamda 35 tps üretim ve 500 tps ön‑dolgu sağlandı",
+    "GrokBot ile eksik PCIe atomikleri sorunu çözüldü",
+    "Llama.cpp çatalı üzerinden yapılan optimizasyonlar düşük maliyetli donanımda büyük modelleri mümkün kıldı"
+  ],
+  "kategori": "diger",
+  "onem": 2,
+  "onem_gerekce": "Konu, düşük bütçeli donanımla büyük LLM çalıştırma deneyimini paylaşıyor; ilgi çekici ancak sektörel etkisi sınırlı ve niş bir topluluk içinde kalıyor.",
+  "etiketler": [
+    "local-llm",
+    "donanım",
+    "performans",
+    "Qwen",
+    "llama.cpp"
+  ],
+  "anilan_modeller": [
+    "Qwen 3.8 27B",
+    "Unsloth IQ4XS"
+  ],
+  "yorum_tr": "Bu paylaşım, düşük maliyetli donanımda büyük dil modelleri çalıştırmanın mümkün olduğunu göstererek, araştırmacı ve geliştiricilerin erişim engellerini azaltıyor. Ancak performans hâlâ yüksek bütçeli sistemlerin gerisinde kalıyor, bu da optimizasyonların sınırlarını ortaya koyuyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/if-people-understood-how-good-local-llms-are-getting-v0-mms2lwyzoe0g1.jpeg?width=640&crop=smart&auto=webp&s=1e6a6960fcbd4b584fdf833932485560956dea2e",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x8s73i/you_dont_need_that_expensive_of_a_build_for_local/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-18T02:46:36.000Z",
+  "slug": "you-don-t-need-that-expensive-of-a-build-for-local-llms"
+}

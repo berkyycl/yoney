@@ -1,0 +1,31 @@
+{
+  "baslik_tr": "AutoTrust'ın Hugging Face modelleri binlerce sahte beğeniyle trend oluyor",
+  "ozet_tr": "Reddit topluluğu LocalLLaMA, AutoTrust adlı bir organizasyonun Hugging Face üzerindeki modellerinin binlerce sahte hesabın beğenileriyle trend listesine yükseltildiğini ortaya koydu. Görülen hesapların gerçekçi isimler, rastgele oluşturulmuş kullanıcı adları ve yapay biyografiler içerdiği, bu durumun platformda manipülasyon şüphesini güçlendirdiği belirtildi.",
+  "detayli_icerik_tr": "Reddit'in LocalLLaMA topluluğunda paylaşılan bir gönderide, AutoTrust adlı bir Hugging Face organizasyonunun modellerinin ön sayfada yer alması ve iddialı sonuçlar vaat etmesi dikkat çekti. Ancak, model sayfalarındaki beğeni listesine bakıldığında, binlerce hesabın profillerinin yapay ve aşırı gerçekçi göründüğü fark edildi. Bu hesapların isimleri rastgele isim jeneratörlerinden alınmış gibi, kullanıcı adları ise bu isimlerin permütasyonları şeklinde oluşturulmuş.\n\nİncelenen sahte profiller, çoğunlukla var olmayan sosyal medya bağlantılarına, AI tarafından üretilmiş biyografilere ve birkaç rastgele akademik makale ya da model referansına sahipti. Bazı hesaplar, hedef modelin yanında küçük, sahte bir model de göstererek daha otantik bir izlenim yaratmaya çalışıyordu. Kullanıcı, bu örnekleri görsellerle destekleyerek topluluğa sundu.\n\nGönderiyi paylaşan kullanıcı, Google, Meta ve Hugging Face gibi büyük kuruluşların modelleriyle AutoTrust'ın modellerini karşılaştıran bir analiz de yaptı. Sonuçlar, AutoTrust modellerinin beğeni oranlarının normal modellere kıyasla anormal derecede yüksek olduğunu gösterdi. Ayrıca, başka bir kullanıcı (Prithiv) aynı verileri inceleyerek AutoTrust Spaces'ın beğeni dağılımını ve beğenen hesapların katılım tarihlerini analiz etti; bu analizler de büyük bir toplu oluşturma ve bot aktivitesine işaret etti.\n\nSonuç olarak, topluluk üyeleri AutoTrust'ın modellerini ve Spaces'ını sahte hesaplarla yükselttiğini ve bu sürecin hCaptcha, AWS WAF gibi güvenlik önlemlerini aşarak gerçekleştirildiğini öne sürüyor. Bu iddialar, Hugging Face platformunun trend algoritmalarının güvenilirliği ve topluluk içi manipülasyon riskleri konusunda tartışma başlattı.",
+  "onemli_maddeler": [
+    "AutoTrust modellerinin beğeni listesinde binlerce sahte, gerçekçi görünümlü hesap tespit edildi.",
+    "Sahte profiller rastgele isim jeneratörlerinden alınmış isimler, AI destekli biyografiler ve var olmayan sosyal medya linkleri içeriyor.",
+    "Google, Meta ve Hugging Face modelleriyle yapılan karşılaştırmalı analiz, AutoTrust beğenilerinin anormal derecede yüksek olduğunu gösterdi.",
+    "Prithiv'in ek analizi, beğenen hesapların toplu oluşturulmuş ve benzer katılım tarihlerine sahip olduğunu ortaya koydu."
+  ],
+  "kategori": "diger",
+  "onem": 3,
+  "onem_gerekce": "Hugging Face gibi büyük bir AI model paylaşım platformunda sahte beğenilerle trend manipülasyonu, topluluk güvenini sarsabilir ve platformun algoritmik şeffaflığına dair endişeler yaratır; ancak henüz resmi bir soruşturma veya doğrulama bulunmadığı için etkisi sınırlı kalmaktadır.",
+  "etiketler": [
+    "Hugging Face",
+    "AutoTrust",
+    "Sosyal Medya Manipülasyonu",
+    "Botting",
+    "Yapay Zeka Topluluğu"
+  ],
+  "anilan_modeller": [],
+  "yorum_tr": "Bu tür manipülasyon iddiaları, model geliştiricileri ve kullanıcılar için trend listelerinin güvenilirliğini sorgulatıyor; platformların sahte etkileşimleri tespit edip önlemesi, ekosistemin sağlıklı büyümesi açısından kritik bir gereklilik haline geliyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/ttx82ky385wh1.png?width=140&height=84&auto=webp&s=32978352225b6507dd4e8be67e7b10ac65b078c2",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x8sq4z/autotrusts_hf_models_are_trending_thanks_to/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-18T03:15:28.000Z",
+  "slug": "autotrust-s-hf-models-are-trending-thanks-to-thousands-of-fa"
+}

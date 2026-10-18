@@ -1,0 +1,69 @@
+{
+  "baslik_tr": "AI ajanlarının uzun vadeli kararları kötü; yeni Taste-Bench benchmarkı bunu ortaya koydu",
+  "ozet_tr": "Araştırmacılar, AI ajanlarının uzun vadeli karar verme yeteneklerini ölçmek için Taste-Bench adlı yeni bir benchmark geliştirdi. 502 ikili soru üzerinden yapılan testlerde en iyi model bile %60 civarında bir başarı gösterdi. Bu sonuç, mevcut modellerin uzun vadeli planlama konusunda ciddi eksiklikleri olduğunu gösteriyor.",
+  "detayli_icerik_tr": "Microsoft ve Hong Kong Şehir Üniversitesi araştırmacıları, AI ajanlarının uzun süren görevlerdeki karar kalitesini ölçmek amacıyla Taste-Bench adlı bir benchmark oluşturdu. Geleneksel testler yalnızca görevin tamamlanıp tamamlanmadığını ölçerken, Taste-Bench bir \"karar çatalı\" (decision fork) noktasında ajanların iki olası yolu arasında seçim yapmasını isteyerek uzun vadeli planlamanın kalitesini değerlendiriyor. Benchmark, 502 sorudan oluşuyor; her soru bir görev, çatal noktasına kadar olan iz ve iki olası yön içeriyor.\n\nTestlerde Claude, GPT, Grok, DeepSeek, GLM, MiniMax ve Mistral gibi 14 farklı model değerlendirildi. Her soru iki kez soruldu; seçeneklerin sırası değiştirildi ve modelin her iki seferde de doğru yanıt vermesi gerekiyordu. Saf tahmin %25 başarı getirirken, en yüksek performans gösteren model GPT-5.6 Sol %59.7, ardından GPT-5.5 %59.5 oranında bir başarı elde etti. Diğer modeller bu seviyenin çok altında kaldı ve hiçbiri benchmarkı çözebilecek seviyeye ulaşamadı.\n\nAraştırmacılar, karar çatalındaki ipuçlarının ne zaman ortaya çıktığını da inceledi. İpucu çataldan önce belirginse ortalama doğruluk %62.3'e çıkarken, ipucu ancak daha sonraki adımlarda ortaya çıkıyorsa doğruluk %21'e düşerek rastgele tahmine eşdeğer oldu. Modelin daha fazla düşünme süresi (reasoning tokens) harcaması bu farkı kapatamadı; en zor sorularda en çok kaynak harcayan modeller hâlâ düşük doğruluk gösterdi.\n\nTaste-Bench sadece bir ölçüm aracı değil, aynı zamanda iyileştirme potansiyeli de sunuyor. Araştırmacılar, doğru yolu bilen bir öğretmen modelin yargılarını Qwen3.6-27B tabanlı bir öğrenci modele aktararak bu modelin doğruluk oranını %30'dan %47.9'a çıkardılar. Bu öğrenci modelin tavsiyeleri, 41 tutulan SWE-bench Pro görevinde başarı oranını %14.6'dan %33.7'ye yükseltti. Sonuç olarak, uzun vadeli planlama yeteneği ölçülebilir ve öğretici veriyle geliştirilebilir.",
+  "onemli_maddeler": [
+    "Taste-Bench, AI ajanlarının uzun vadeli karar kalitesini ölçen ilk benchmark olarak ortaya çıktı.",
+    "En iyi model bile (%59.7) sadece ikili sorularda şanstan biraz daha iyi bir performans gösterdi.",
+    "Karar çatalındaki ipuçlarının ortaya çıkma zamanına göre model doğruluğu %62.3'ten %21'e düşebiliyor.",
+    "Qwen3.6-27B tabanlı bir öğrenci model, öğretmen modelin yargılarını öğrenerek benchmark performansını %30'dan %47.9'a yükseltti."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Taste-Bench, mevcut AI ajanlarının uzun vadeli planlama yeteneklerindeki büyük boşlukları ortaya koyarak araştırma ve geliştirme yönelimlerini yeniden şekillendirebilir.",
+  "etiketler": [
+    "AI ajanları",
+    "benchmark",
+    "uzun vadeli karar",
+    "Taste-Bench",
+    "GPT-5.6"
+  ],
+  "anilan_modeller": [
+    "GPT-5.6 Sol",
+    "GPT-5.5",
+    "Claude",
+    "Grok",
+    "DeepSeek",
+    "GLM",
+    "MiniMax",
+    "Mistral",
+    "Qwen3.6-27B"
+  ],
+  "yorum_tr": "Taste-Bench, AI ajanlarının sadece sonuç odaklı değil, süreç odaklı performansını da ölçerek geliştirme alanlarını netleştiriyor; geliştiriciler bu veriyi model eğitiminde kullanarak daha tutarlı ve güvenilir sistemler oluşturabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GPT-5.6 Sol",
+      "benchmark": "Taste-Bench",
+      "skor": 59.7,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "The best model tested, GPT-5.6 Sol, averaged 59.7 percent"
+    },
+    {
+      "model": "GPT-5.5",
+      "benchmark": "Taste-Bench",
+      "skor": 59.5,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "closely followed by GPT-5.5 at 59.5 percent"
+    },
+    {
+      "model": "Qwen3.6-27B student",
+      "benchmark": "Taste-Bench",
+      "skor": 47.9,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "the student's accuracy jumped from 30 to 47.9 percent"
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/10/ai-models-taste-bench-nano-banana-pro.jpg",
+  "url": "https://the-decoder.com/ai-agents-have-bad-taste-in-long-term-decisions-and-a-new-benchmark-proves-it/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-18T08:49:41.000Z",
+  "slug": "ai-agents-have-bad-taste-in-long-term-decisions-and-a-new-be"
+}
