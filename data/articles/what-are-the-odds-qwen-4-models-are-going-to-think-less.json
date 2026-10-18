@@ -1,0 +1,44 @@
+{
+  "baslik_tr": "Qwen 4 modellerinin daha az düşünme olasılığı nedir?",
+  "ozet_tr": "Topluluk, Qwen 4 serisinin ön Noel döneminde çıkmasını beklerken, mevcut Qwen flash 3.8'in 28 token/sn hızının büyük bir kısmının \"düşünme\" süresine harcandığını belirtiyor. Kullanıcılar, aynı ya da daha yüksek zekâ seviyesinde daha az düşünme süresi sağlayacak bir iyileştirmenin en büyük adım olacağını vurguluyor.",
+  "detayli_icerik_tr": "Alibaba'nın Qwen serisi, son dönemde yüksek performanslı dil modelleriyle dikkat çekiyor. Topluluk üyeleri, Qwen 4'ün resmi duyurularının ardından kesin bir çıkış tarihi olmamasına rağmen, modelin ön Noel döneminde piyasaya sürülmesi umudunu taşıyor. Bu beklenti, özellikle yerel LLaMA topluluğu içinde yoğun bir tartışma başlatmış durumda.\n\nKullanıcı turtleninja99, şu anki Qwen flash 3.8 sürümünü çalıştırarak saniyede yaklaşık 28 token üretildiğini, ancak bu tokenların büyük bir kısmının modelin \"düşünme\" aşamasına harcandığını ifade ediyor. Bu durum, aynı işlem gücünde daha hızlı yanıt alabilmek için modelin düşünme süresinin azaltılmasının kritik bir iyileştirme olacağını gösteriyor.\n\nModelin düşünme süresinin kısalması, sadece yanıt hızını artırmakla kalmayıp, aynı zamanda daha düşük donanım gereksinimleri ve enerji tüketimi anlamına geliyor. Bu da özellikle sınırlı kaynaklara sahip araştırma laboratuvarları ve küçük ölçekli girişimler için büyük bir avantaj sağlayabilir.\n\nHenüz resmi bir takvim açıklanmamış olsa da, topluluk Qwen 4'ün ön Noel döneminde çıkmasını umut ediyor ve modelin hem zekâ seviyesini koruyup hem de daha az düşünme süresiyle çalışmasını en büyük güncelleme olarak görüyor. Bu beklentiler, modelin geliştirilmesi sürecinde optimizasyon odaklı çalışmaların artmasına yol açabilir.",
+  "onemli_maddeler": [
+    "Qwen 4'ün ön Noel döneminde çıkması bekleniyor, ancak kesin tarih henüz açıklanmadı.",
+    "Mevcut Qwen flash 3.8 sürümü saniyede yaklaşık 28 token üretiyor, ancak bu hızın büyük kısmı modelin düşünme sürecine harcanıyor.",
+    "Topluluk, aynı ya da daha yüksek zekâ seviyesinde daha az düşünme süresi sağlayacak bir iyileştirmenin en büyük güncelleme olacağını vurguluyor.",
+    "Düşünme süresinin kısalması, donanım gereksinimlerini ve enerji tüketimini azaltarak daha geniş bir kullanıcı kitlesine erişim sağlayabilir."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 3,
+  "onem_gerekce": "Qwen 4 henüz resmi olarak çıkmamış olsa da, topluluk içinde yüksek bir beklenti ve modelin performans iyileştirmeleri üzerine tartışma mevcut; bu da sektörel ilgi düzeyini orta seviyede tutuyor.",
+  "etiketler": [
+    "Qwen",
+    "model",
+    "inference",
+    "token",
+    "AI"
+  ],
+  "anilan_modeller": [
+    "Qwen 4",
+    "Qwen flash 3.8"
+  ],
+  "yorum_tr": "Qwen 4'ün daha az düşünme süresiyle gelmesi, özellikle düşük maliyetli altyapılarda çalışan geliştiriciler ve araştırmacılar için yanıt sürelerini kısaltarak uygulama verimliliğini artırabilir. Bu tür bir iyileştirme, rekabetçi dil modeli pazarında performans odaklı bir farklılaşma yaratabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen flash 3.8",
+      "benchmark": "tokens per second",
+      "skor": 28,
+      "birim": "tokens/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "inference speed",
+      "kaynak_metinden_alinti": "I’m running qwen flash next 3.8 at about 28tokens per second and gotta be real, most of those go into thinking."
+    }
+  ],
+  "gorsel_url": "https://cms.orcarouter.ai/api/media/file/1-1186.png",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x8uqig/what_are_the_odds_qwen_4_models_are_going_to/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-18T05:09:25.000Z",
+  "slug": "what-are-the-odds-qwen-4-models-are-going-to-think-less"
+}

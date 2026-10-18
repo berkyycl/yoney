@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "Google Gemini 4 Argon ajanları Minecraft'ta Ender Dragon'u tek başına yendi",
+  "ozet_tr": "Google DeepMind ekibi, Gemini 4 Argon tabanlı dört bağımsız AI ajanını rastgele bir Minecraft dünyasına bırakarak, insan müdahalesi olmadan Ender Dragon'u alt etti. Ajanlar görev dağılımını kendi başlarına yapıp, ortak bir hafıza üzerinden tehlikeleri bildirdi ve hatalarını kaydetti.",
+  "detayli_icerik_tr": "Google DeepMind araştırmacıları, dört Gemini 4 Argon ajanını tamamen otonom bir Minecraft oturumuna yerleştirdi. Ajanlara önceden belirlenmiş bir rol, strateji ya da oyun içi araç verilmedi; bunun yerine, ortamı keşfetmeleri, kaynak toplama, düşmanları savuşturma ve nihai hedef olan Ender Dragon'u yenme sorumluluğu kendilerine bırakıldı. \n\nOyun süresince ajanlar görevlerini kendi aralarında bölüştürerek, birbirlerini tehditler konusunda uyarıp, ölen takım arkadaşlarından eşyaları geri topladılar ve hatalarını ortak bir hafıza sistemine kaydettiler. Toplam 27 saat 14 dakika süren oturumda, 2.783 JavaScript programı yazdılar, 229 sohbet mesajı alışverişinde bulundular ve 605 kez öldüler. \n\nBu deney, sadece bir video oyunu kazanımından çok daha fazlasını gösteriyor: Çoklu AI ajanlarının koordineli, kendini yöneten ve hatalarından öğrenen bir sistem oluşturulabildiğini kanıtladı. Oturumun toplam maliyeti, 2027 itibarıyla geçerli olan Gemini 4 Argon fiyatlandırmasıyla 1.620 ABD doları olarak rapor edildi. \n\nMinecraft, son yıllarda özel olarak eğitilmiş oyun AI'ları yerine, genel amaçlı büyük dil modelleri ve ajan tabanlı sistemlerin başarıyla uygulanabildiği bir örnek haline geldi. Bu gelişme, gelecekte daha karmaşık sanal ve gerçek dünya görevlerinde benzer çok ajanlı yaklaşımların kullanılabileceğine işaret ediyor.",
+  "onemli_maddeler": [
+    "Dört Gemini 4 Argon ajanı, insan müdahalesi olmadan Ender Dragon'u yenerek tam otonom bir oyun başarısı gösterdi.",
+    "Ajanlar görev dağılımını, tehlike uyarılarını ve hata kaydını ortak bir hafıza üzerinden kendi başlarına yönetti.",
+    "27 saat 14 dakikalık oturumda 2.783 JavaScript programı yazıldı, 229 sohbet mesajı alışverişi yapıldı ve 605 ölüm gerçekleşti.",
+    "Deneyin maliyeti 1.620 USD olarak belirlendi; bu, büyük dil modellerinin maliyet etkinliğini de gözler önüne seriyor."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Gemini 4 Argon tabanlı çok ajanlı sistemin tamamen otonom bir şekilde karmaşık bir oyun senaryosunu tamamlaması, genel amaçlı AI modellerinin koordineli görev yürütme kapasitesini gösterdiği için sektörde önemli bir kilometre taşıdır.",
+  "etiketler": [
+    "AI ajanları",
+    "Gemini 4 Argon",
+    "Minecraft",
+    "otonom AI",
+    "DeepMind"
+  ],
+  "anilan_modeller": [
+    "Gemini 4 Argon"
+  ],
+  "yorum_tr": "Bu başarı, çoklu AI ajanlarının kendi aralarında rol ve strateji belirleyerek karmaşık görevleri tamamlayabileceğini gösteriyor; geliştiriciler bu yaklaşımı daha geniş uygulama alanlarına taşıyabilir, kullanıcılar ise daha akıllı ve bağımsız sistemlerle etkileşime girebilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/10/minecraft_gemini.png",
+  "url": "https://the-decoder.com/four-gemini-4-argon-agents-beat-minecraft-without-any-human-help/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-18T12:39:51.000Z",
+  "slug": "four-gemini-4-argon-agents-beat-minecraft-without-any-human"
+}

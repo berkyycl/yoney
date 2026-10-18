@@ -1,0 +1,44 @@
+{
+  "baslik_tr": "DeepSeek V4.1 Flash 1017 Desteği ds4 Quantization Suite'e Eklendi (PR #1225)",
+  "ozet_tr": "Reddit LocalLLaMA topluluğu, ds4 quantization suite'ine DeepSeek‑v4.1‑Flash‑1017 modelinin yeni engramları ve güncellenmiş vision tower'ı ile uyum sağlayacak bir pull request (PR #1225) sundu. PR, dosya revizyonlarıyla uyumluluğu kontrol ederken, karışık model kombinasyonlarında hata vererek gerileme (regression) riskini ortadan kaldırıyor. Güncellenen model, M5 Max üzerinde saniyede yaklaşık 20 token (20 tps) çözümleme hızı vaat ediyor.",
+  "detayli_icerik_tr": "Reddit LocalLLaMA topluluğunda bir geliştirici, ds4 quantization suite'ine DeepSeek‑v4.1‑Flash‑1017 modelinin yeni engramları ve güncellenmiş vision tower'ı ile uyum sağlayacak bir PR (pull request) sundu. Bu PR, dosya revizyonlarıyla uyumluluğu sağlamak ve vision+language model dosya kombinasyonunun eşleşmesini kontrol etmek üzerine odaklanıyor; karışık eşleşmelerde hata veriyor. ds4 ile kuantize edilmiş dosyalar, ek bir değişiklik gerektirmeden yüklenebilecek ve önceki checkpoint için gerileme (regression) getirmiyor.\n\nDeğişiklikler kapsamlı: yönlendirilmiş uzman tensörlerinin yaklaşık %40'ı, engramların %30'u ve vision tower'ın uzman tensörlerinin %50'si değiştirildi. Mimari aynı kalıyor, bu yüzden mevcut kernel'lere sorunsuzca oturuyor. Bu, modelin temel yapısını bozmadan yeni özelliklerin entegrasyonunu mümkün kılıyor.\n\nGeliştirici, 128 GB bellekli bir sistemde Q2‑Q8 karışık kuantizasyonu (SSD offloading) ile modelin M5 Max üzerinde saniyede yaklaşık 20 token (20 tps) çözümleyeceğini belirtiyor. Bu performans, topluluk içinde modelin daha geniş donanım konfigürasyonlarında kullanılabilirliğini artıracak ve düşük maliyetli donanımlarda bile yüksek verimlilik sağlayacak.\n\nGelecek planları arasında, 152 GB kablolu ve 366 GB toplam (engramlar dahil) depolama gereksinimiyle 128 GB RAM'li bir sistemde çalıştırılacak bir karışık kuantizasyonun (Q2‑Q8) yayınlanması bulunuyor. Bu sürüm, önceki checkpoint'in antirez'in tarifine göre hazırlanacak ve topluluk tarafından test edilerek geri bildirim toplanacak.",
+  "onemli_maddeler": [
+    "DeepSeek‑v4.1‑Flash‑1017 modeline tam uyumluluk sağlayan ds4 quantization suite güncellemesi.",
+    "Dosya revizyon kontrolü ve karışık model kombinasyonlarında hata mekanizması eklendi.",
+    "Yönlendirilmiş uzman tensörlerinin %40'ı, engramların %30'u ve vision tower'ın %50'si değiştirildi.",
+    "Önceki checkpoint ile gerileme (regression) yok; aynı mimari içinde çalışıyor.",
+    "128 GB bellekli bir sistemde M5 Max üzerinde yaklaşık 20 token/saniye (20 tps) çözümleme hızı hedefleniyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 3,
+  "onem_gerekce": "Topluluk tarafından sağlanan bu güncelleme, DeepSeek‑v4.1‑Flash‑1017 modelinin ds4 kuantizasyon araçlarıyla sorunsuz çalışmasını sağlarken, performans iyileştirmeleri ve gerileme olmaması nedeniyle geliştiriciler ve araştırmacılar için teknik açıdan değerli bir adım oluşturuyor.",
+  "etiketler": [
+    "DeepSeek",
+    "ds4",
+    "quantization",
+    "model update",
+    "PR"
+  ],
+  "anilan_modeller": [
+    "DeepSeek-v4.1-Flash-1017"
+  ],
+  "yorum_tr": "Bu güncelleme, ds4 kuantizasyon sürecinde DeepSeek‑v4.1‑Flash‑1017 modelinin entegrasyonunu kolaylaştırarak araştırmacıların ve geliştiricilerin daha geniş donanım yelpazesinde deneme yapmasını mümkün kılıyor. Performans kaybı olmadan yeni engram ve vision tower iyileştirmeleri, modelin uygulama alanlarını genişletecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "DeepSeek-v4.1-Flash-1017",
+      "benchmark": "decode throughput",
+      "skor": 20,
+      "birim": "tps",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "It should decode around 20tps on an M5 Max."
+    }
+  ],
+  "gorsel_url": "https://external-preview.redd.it/HTGuff58RlVWU9TDx27Jt6AqJw8m1kIcVWbnd8xaCpI.png?width=640&crop=smart&auto=webp&s=1cede841b35134bcac685656c26aab8430996948",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x8koix/deepseek_v41_flash_1017_support_for_ds4_pr_1225/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-17T20:42:23.000Z",
+  "slug": "deepseek-v4-1-flash-1017-support-for-ds4-pr-1225-antirez-ds4"
+}

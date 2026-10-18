@@ -1,0 +1,61 @@
+{
+  "baslik_tr": "Anthropic, AI ajanlarının çalışma saatlerinin altı katına çıkmasıyla genç personel alımını neredeyse durdurdu",
+  "ozet_tr": "Anthropic, AI ajanlarının insan çalışanların altı katı kadar saat çalıştığını raporlayarak teknik departmanlarda genç personel alımını büyük ölçüde azalttığını açıkladı. 2025'in başından bu yana teknik rollerdeki junior pozisyonların oranı %21'den %14'e, yeni işe alımlarda ise %27'den %9'a geriledi. Şirket, bu eğilimin Claude gibi güçlü AI ajanlarının artan yetkinliğiyle doğrudan ilişkili olduğunu belirtiyor.",
+  "detayli_icerik_tr": "Anthropic, iç bir çalışma kapsamında AI ajanlarının şirket içindeki çalışma saatlerinin insan çalışanların saatlerinin altı katına çıktığını ve bu durumun junior teknik personel alımını neredeyse durdurduğunu ortaya koydu. 2025'in başından itibaren teknik departmanlarda junior pozisyonların toplam payı %21'den %14'e gerilerken, yeni işe alımlarda bu oran %27'den %9'a düştü. Özellikle Aralık 2025'ten itibaren açık junior pozisyonları %6 seviyesine kadar geriledi.\n\nŞirket, bu değişimin temel nedenini Claude gibi AI ajanlarının artan yeteneklerine bağladı. Ağustos 2026'ya kadar bu ajanlar, insan çalışanların toplam çalışma saatlerinin 6 katını, araştırma departmanında ise 19 katını kaydetti. Kod yazma, hata bulma ve diğer teknik görevler giderek daha fazla AI ajanlarına devredildi; bu da mühendislerin kod commit sayısını 5,1 kat, veri bilimcilerin sorgu sayısını 3,1 kat, hukuk ekibinin sözleşme işleme hızını 3,1 kat artırdı.\n\nAnthropic'in bulguları, şirketin AI ağırlıklı bir yazılım firması olmasının sonuçlarını vurguluyor; hızlı iş büyümesi ve AI araçlarının gönüllü benimsenmesi de rakamları etkileyen faktörler arasında. Ancak, bu durumun daha geniş ekonomi üzerindeki etkileri hâlâ belirsiz; şu ana kadar AI'dan ölçülebilir bir verimlilik artışı gözlemlenmedi.\n\nNATO Özel Operasyonlar Üniversitesi araştırmacısı Nolan Lovett, bu eğilimi \"bilişsel ortaklığın trajedisi\" olarak nitelendirerek, giriş seviyesi pozisyonların AI tarafından yerinin alınmasının uzun vadede deneyimli uzman eksikliğine yol açacağını savunuyor. Lovett, bu etkilerin 2030-2045 yılları arasında ortaya çıkacağını, özellikle yazılım mühendisliği, finansal analiz ve hukuk araştırması gibi alanların en çok risk altında olduğunu belirtiyor. Anthropic'in gelecekte programcı ve çağrı merkezi çalışanlarını elektrikçi ya da hemşire gibi farklı meskelere yönlendirebileceği öngörüsü, bu dönüşümün ne kadar köklü olabileceğini gösteriyor.",
+  "onemli_maddeler": [
+    "Teknik departmanlarda junior pozisyonların oranı %21'den %14'e, yeni işe alımlarda ise %27'den %9'a geriledi.",
+    "AI ajanları (Claude) insan çalışanların çalışma saatlerinin 6 katını, araştırma departmanında ise 19 katını kaydetti.",
+    "Mühendisler 5,1 kat, veri bilimciler 3,1 kat, hukuk ekibi 3,1 kat daha fazla iş üretti; bu da üretkenlikte büyük bir artış sağladı.",
+    "Nolan Lovett, junior pozisyonların AI tarafından yerinin alınmasının uzun vadede deneyimli uzman kıtlığına yol açacağını uyardı."
+  ],
+  "kategori": "diger",
+  "onem": 4,
+  "onem_gerekce": "AI ajanlarının verimlilik artışı şirket içi istihdam yapısını köklü bir şekilde değiştirerek genç yeteneklerin azalmasına yol açması, sektörün iş gücü dinamikleri ve eğitim politikaları açısından kritik bir dönüşüm oluşturuyor.",
+  "etiketler": [
+    "Anthropic",
+    "AI agents",
+    "junior hiring",
+    "productivity",
+    "labor market"
+  ],
+  "anilan_modeller": [
+    "Claude"
+  ],
+  "yorum_tr": "AI ajanlarının verimlilikte sağladığı artış, şirketler için maliyet avantajı sunsa da, genç profesyonellerin deneyim kazanma fırsatlarını azaltarak uzun vadede uzman eksikliği riskini yükseltebilir. Bu trend, sektörde iş gücü planlaması ve eğitim stratejilerinin yeniden gözden geçirilmesini gerektirecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Claude",
+      "benchmark": "AI Agent to Human Work Hours Ratio (Company-wide)",
+      "skor": 6,
+      "birim": "ratio",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "By August 2026, those agents were logging six times as many work hours as human employees."
+    },
+    {
+      "model": "Claude",
+      "benchmark": "AI Agent to Human Work Hours Ratio (Research Department)",
+      "skor": 19,
+      "birim": "ratio",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "In research departments, it reached 19:1."
+    },
+    {
+      "model": "Claude",
+      "benchmark": "Engineering Code Commit Productivity Multiplier",
+      "skor": 5.1,
+      "birim": "x",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Engineers shipped 5.1 times as many code commits."
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/07/anthropic_logoreihe.png",
+  "url": "https://the-decoder.com/anthropic-has-nearly-stopped-hiring-junior-staff-because-ai-agents-now-work-six-times-as-many-hours/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-18T13:22:26.000Z",
+  "slug": "anthropic-has-nearly-stopped-hiring-junior-staff-because-ai"
+}
