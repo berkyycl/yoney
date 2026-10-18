@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "Herkes rig'lerinin uzay ısıtıcısı olduğunu şaka yapar; ben de Qwen'i kodladım",
+  "ozet_tr": "Kış aylarında artan ısı ihtiyacını karşılamak için bir GPU sunucusunu ısıtıcı olarak kullanma fikri, bir Reddit kullanıcısının Qwen modeliyle entegre ettiği bir proje sayesinde somut bir deneye dönüştü. Kullanıcı, vLLM altyapısını ve bir anakart sıcaklık sensörünü birleştirerek, GPU'nun tam kapasite çalıştığı sırada ortam sıcaklığını kontrol edebilen bir sistem geliştirdi.",
+  "detayli_icerik_tr": "Reddit topluluğu LocalLLaMA'da paylaşılan gönderide, kullanıcı Prax​isOG, 4x V620 GPU'lu bir sunucuyu tam güçte çalıştırmanın dairesini aşırı ısıttığını ve bu durumun bir sorun değil, aynı zamanda bir fırsat olduğunu belirtti. Sunucunun ürettiği ısıyı kontrol altına almak için anakart üzerindeki sıcaklık sensöründen yararlanarak bir ofset uyguladı ve hedef sıcaklığı koruyan bir termostat mantığı geliştirdi.\n\nProjenin temelinde vLLM (virtual Large Language Model) arka ucu bulunuyor; model çıkarımı gerektiğinde ısı üretimini durduracak şekilde bir duraklatma mekanizması eklenmiş. Ayrıca, yerel bir web arayüzü üzerinden token korumalı erişim sağlanarak, kullanıcıların (örneğin proje sahibinin partneri) hedef sıcaklığı ayarlayabilmesi mümkün kılınmış. Bu sayede sistem, hem yapay zeka çıkarımı hem de ev ısıtma işlevi arasında dinamik bir denge kuruyor.\n\nKod tabanı GitHub'da \"gpu-furnace-v2\" adıyla açık kaynak olarak yayınlandı ve bir teknik demo niteliği taşıyor. Yazar, başlangıçta bir meme olarak ortaya çıkan bu projenin, pratik bir çözüm haline gelmesi nedeniyle kendi evinde kullanmayı planladığını ifade etti. Gelecekte ESP32 tabanlı bir termostat entegrasyonu ve daha hassas kontrol mekanizmaları eklenmesi hedefleniyor.\n\nBu tür yaratıcı yaklaşımlar, yüksek performanslı donanımın enerji tüketimini sadece bilgi işlem amaçlı değil, aynı zamanda ev içi ısıtma gibi alternatif kullanım senaryolarına da yönlendirebileceğini gösteriyor. Ancak, uzun vadeli güvenlik, donanım ömrü ve enerji verimliliği konularında daha kapsamlı değerlendirmeler yapılması gerekiyor.",
+  "onemli_maddeler": [
+    "GPU sunucusunun tam kapasite çalıştırılmasıyla ortaya çıkan ısı, bir ev ısıtma sistemine dönüştürüldü.",
+    "vLLM altyapısı, model çıkarımı gerektiğinde ısı üretimini duraklatacak şekilde entegre edildi.",
+    "Token korumalı yerel web arayüzü sayesinde kullanıcılar hedef sıcaklığı uzaktan ayarlayabiliyor."
+  ],
+  "kategori": "diger",
+  "onem": 2,
+  "onem_gerekce": "Proje, yaratıcı bir hack olsa da sınırlı bir kullanıcı kitlesi ve ticari ölçeklendirme potansiyeli taşıdığı için sektörel etkisi sınırlıdır.",
+  "etiketler": [
+    "GPU",
+    "vLLM",
+    "Thermostat",
+    "ESP32",
+    "Open-source"
+  ],
+  "anilan_modeller": [
+    "Qwen"
+  ],
+  "yorum_tr": "Bu tür topluluk odaklı projeler, donanımın çok yönlü kullanımını göstererek yenilikçi fikirlerin ortaya çıkmasını teşvik eder; ancak geniş çaplı benimsenmesi için güvenlik ve verimlilik konularının daha detaylı ele alınması gerekir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://i.redd.it/mmwddkd47yjf1.jpeg",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x8v97a/we_all_joke_about_our_rigs_being_space_heaters_so/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-18T05:40:13.000Z",
+  "slug": "we-all-joke-about-our-rigs-being-space-heaters-so-i-had-qwen"
+}

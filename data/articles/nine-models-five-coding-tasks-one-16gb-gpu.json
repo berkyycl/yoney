@@ -1,0 +1,133 @@
+{
+  "baslik_tr": "On dokuz model, beş kodlama görevi, tek 16 GB GPU üzerinde benchmark sonuçları",
+  "ozet_tr": "Reddit topluluğu LocalLLaMA, tek bir RX 9060 XT (16 GB) GPU’da beş farklı kodlama görevini çalıştırarak on modeli test etti. Modellerin başarı oranları 0’dan 5’e kadar değişti; en iyi iki model tüm görevleri tamamlayarak 5/5 puan aldı. Token tüketimi ve çalışma süresi de detaylı olarak raporlandı.",
+  "detayli_icerik_tr": "Topluluk, beş kodlama görevini (CSV kaydı ayrıştırma, aritmetik değerlendirme, POSIX benzeri kabuk tokenlemesi, maksimum kar interval planlaması ve yıldızlı desen eşleştirme) tek bir 16 GB GPU’da çalıştırdı. Her görev, modelin bir \"solution.py\" ve \"test_solution.py\" dosyası üretmesini, kendi testlerini çalıştırmasını ve ardından durmasını gerektirdi. Değerlendirme, modelin görmediği bir kontrolör tarafından sabit ve rastgele test vakalarıyla yapıldı; ayrıca görev tanımında belirtilen performans sınırları da uygulandı.\n\nSonuçlar, modelleri iki ana gruba ayırdı: kod yazıp yineleyenler ve yazamayanlar. Tüm modeller c3 görevini (kabuk tokenlemesi) başarıyla tamamladı; ancak c4 ve c5 görevleri, özellikle büyük veri setleri ve karmaşık desen kuralları nedeniyle ayrımcı oldu. En yüksek puanı alan iki model, deepseek‑v4.1‑flash (bulut API) ve Qwen3.8‑27B‑ASCII‑Condensed (kvstream fork) oldu; ikisi de beş görevi tamamlayarak 5/5 puan topladı. Ancak token tüketimleri farklıydı: bulut modeli 43 k token, yerel fork ise 185 k token harcadı.\n\nDiğer modellerin performansları da detaylıca incelendi. Qwen3.8‑27B‑IQ3_XXS, Swift‑1.5‑Qwen3.8‑27B, Ornith‑1.5‑35B‑A3B, Qwen3.8‑Flash‑Next Coder ve Qwen3.6‑35B‑A3B gibi modeller 4/5 puan alırken, Nemotron‑3.5‑Bolt‑74B‑A9B yalnızca bir görevi (c1) geçebildi ve 1/5 puan topladı. Mellum2.1‑12B‑A2.5B‑Thinking ve LFM2.5‑24B‑A2B ise sırasıyla 1/5 ve 0/5 puanla en düşük performansı gösterdi.\n\nBenchmark, modelin kod üretme yeteneği, araç kullanım sıklığı ve bellek/işlem süresi gibi pratik ölçütleri ortaya koyarak, geliştiricilerin yerel GPU ortamlarında hangi modellerin daha verimli olduğunu anlamalarına yardımcı oldu.",
+  "onemli_maddeler": [
+    "Deepseek‑v4.1‑flash ve Qwen3.8‑27B‑ASCII‑Condensed tüm beş görevi tamamlayarak 5/5 puan aldı.",
+    "Token tüketimi iki model arasında büyük farklılık gösterdi: 43 k vs 185 k token.",
+    "c4 ve c5 görevleri, özellikle büyük veri setleri ve karmaşık desen kuralları nedeniyle modelleri ayırdı.",
+    "Nemotron‑3.5‑Bolt‑74B‑A9B gibi büyük modeller bile düşük puan alarak araç kullanımında zorluk yaşadı."
+  ],
+  "kategori": "benchmark",
+  "onem": 3,
+  "onem_gerekce": "Yerel GPU ortamında farklı LLM'lerin kod üretme ve test etme yeteneklerini karşılaştıran bu benchmark, topluluk içinde ilgi çekici ancak geniş endüstri etkisi sınırlı bir sonuç sunuyor.",
+  "etiketler": [
+    "coding",
+    "benchmark",
+    "local-llama",
+    "GPU",
+    "LLM"
+  ],
+  "anilan_modeller": [
+    "deepseek-v4.1-flash",
+    "Qwen3.8-27B-ASCII-Condensed UD-IQ4_XS + MTP (kvstream fork)",
+    "Qwen3.8-27B UD-IQ3_XXS + MTP Q4_0 sidecar",
+    "Swift-1.5-Qwen3.8-27B GSQ-RCO-IQ3_XXS, embedded MTP",
+    "Ornith-1.5-35B-A3B Q4_K_M",
+    "Qwen3.8-Flash-Next Coder GSQ-RCO-IQ1_M",
+    "Qwen3.6-35B-A3B UD-Q4_K_M (unpruned)",
+    "Nemotron-3.5-Bolt-74B-A9B IQ2_XXS",
+    "Mellum2.1-12B-A2.5B-Thinking Q6_K",
+    "LFM2.5-24B-A2B Q6_K"
+  ],
+  "yorum_tr": "Bu benchmark, geliştiricilerin sınırlı donanımda hangi LLM'lerin daha verimli kod üretebildiğini göstererek seçim sürecini netleştiriyor; aynı zamanda token ve zaman maliyetlerinin model seçiminde kritik faktörler olduğunu ortaya koyuyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "deepseek-v4.1-flash",
+      "benchmark": "LocalLLaMA 5 coding tasks",
+      "skor": 5,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "5 görev, 1750 saniye limit, 16 GB GPU",
+      "kaynak_metinden_alinti": "deepseek-v4.1-flash ... P P P P P 5/5 43k"
+    },
+    {
+      "model": "Qwen3.8-27B-ASCII-Condensed UD-IQ4_XS + MTP (kvstream fork)",
+      "benchmark": "LocalLLaMA 5 coding tasks",
+      "skor": 5,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "5 görev, 1750 saniye limit, 16 GB GPU",
+      "kaynak_metinden_alinti": "Qwen3.8-27B-ASCII-Condensed UD-IQ4_XS + MTP (kvstream fork) ... P P P P P 5/5 185k"
+    },
+    {
+      "model": "Qwen3.8-27B UD-IQ3_XXS + MTP Q4_0 sidecar",
+      "benchmark": "LocalLLaMA 5 coding tasks",
+      "skor": 4,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "5 görev, 1750 saniye limit, 16 GB GPU",
+      "kaynak_metinden_alinti": "Qwen3.8-27B UD-IQ3_XXS + MTP Q4_0 sidecar ... P P P F P 4/5 125k"
+    },
+    {
+      "model": "Swift-1.5-Qwen3.8-27B GSQ-RCO-IQ3_XXS, embedded MTP",
+      "benchmark": "LocalLLaMA 5 coding tasks",
+      "skor": 4,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "5 görev, 1750 saniye limit, 16 GB GPU",
+      "kaynak_metinden_alinti": "Swift-1.5-Qwen3.8-27B GSQ-RCO-IQ3_XXS, embedded MTP ... P P P P F 4/5 113k"
+    },
+    {
+      "model": "Ornith-1.5-35B-A3B Q4_K_M",
+      "benchmark": "LocalLLaMA 5 coding tasks",
+      "skor": 4,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "5 görev, 1750 saniye limit, 16 GB GPU",
+      "kaynak_metinden_alinti": "Ornith-1.5-35B-A3B Q4_K_M ... P P P P F 4/5 57k"
+    },
+    {
+      "model": "Qwen3.8-Flash-Next Coder GSQ-RCO-IQ1_M",
+      "benchmark": "LocalLLaMA 5 coding tasks",
+      "skor": 4,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "5 görev, 1750 saniye limit, 16 GB GPU",
+      "kaynak_metinden_alinti": "Qwen3.8-Flash-Next Coder GSQ-RCO-IQ1_M ... P P P P F 4/5 89k"
+    },
+    {
+      "model": "Qwen3.6-35B-A3B UD-Q4_K_M (unpruned)",
+      "benchmark": "LocalLLaMA 5 coding tasks",
+      "skor": 4,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "5 görev, 1750 saniye limit, 16 GB GPU",
+      "kaynak_metinden_alinti": "Qwen3.6-35B-A3B UD-Q4_K_M (unpruned) ... P P P P F 4/5 126k"
+    },
+    {
+      "model": "Nemotron-3.5-Bolt-74B-A9B IQ2_XXS",
+      "benchmark": "LocalLLaMA 5 coding tasks",
+      "skor": 1,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "5 görev, 1750 saniye limit, 16 GB GPU",
+      "kaynak_metinden_alinti": "Nemotron-3.5-Bolt-74B-A9B IQ2_XXS ... P F F F F 1/5 51k"
+    },
+    {
+      "model": "Mellum2.1-12B-A2.5B-Thinking Q6_K",
+      "benchmark": "LocalLLaMA 5 coding tasks",
+      "skor": 1,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "5 görev, 1750 saniye limit, 16 GB GPU",
+      "kaynak_metinden_alinti": "Mellum2.1-12B-A2.5B-Thinking Q6_K ... F P F F F 1/5 167k"
+    },
+    {
+      "model": "LFM2.5-24B-A2B Q6_K",
+      "benchmark": "LocalLLaMA 5 coding tasks",
+      "skor": 0,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "5 görev, 1750 saniye limit, 16 GB GPU",
+      "kaynak_metinden_alinti": "LFM2.5-24B-A2B Q6_K ... F F F F F 0/5 187k"
+    }
+  ],
+  "gorsel_url": "https://miro.medium.com/v2/resize:fit:1400/1*li12XzeQ3PxB4WDoq66U_A.png",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x8qlvw/nine_models_five_coding_tasks_one_16gb_gpu/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-18T01:22:03.000Z",
+  "slug": "nine-models-five-coding-tasks-one-16gb-gpu"
+}

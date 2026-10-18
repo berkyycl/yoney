@@ -1,0 +1,61 @@
+{
+  "baslik_tr": "DeepSeek V4.1 Flash 1017, 2x DGX Spark’da TensorFold ile vLLM’den 2‑3 Kat Hızlı",
+  "ozet_tr": "DeepSeek-V4.1-Flash-1017 modeli, iki adet DGX Spark sunucusunda TensorFold entegrasyonu sayesinde metin ve kod üretiminde vLLM kitine kıyasla 2,1‑2,3 kat daha hızlı çalışıyor. Tek bir GPU çiftinde TP=2 konfigürasyonu ve CX7 kablosu kullanılarak yapılan testlerde, metin çözümleme 56,8 tok/s, kod çözümleme ise 92,2 tok/s hızına ulaştı.",
+  "detayli_icerik_tr": "Reddit topluluğu LocalLLaMA üzerinden paylaşılan rapora göre, DeepSeek-V4.1-Flash-1017 (EXL3 2.9bpw, 1M bağlam) modeli iki adet DGX Spark sunucusunda TensorFold ile çalıştırıldı. Aynı donanım ve aynı ağırlık setiyle vLLM kitine kıyaslandığında, TensorFold çözümleme aşamasında metin için 27,0 tok/s yerine 56,8 tok/s, kod için ise 39,9 tok/s yerine 92,2 tok/s hız elde edildi.\n\nÖzellikle büyük bağlam uzunluklarında (64K token) yapılan \"needle\" testi, TensorFold'ın 35,9 saniyede tamamlandığını gösterirken vLLM kitinin 80,4 saniye harcadığı bildirildi. Bu, aynı görevde %55'lik bir gecikme azalması anlamına geliyor. Ayrıca, önceden doldurma (prefill) aşamasında 8K, 32K, 64K ve 1M tokenlik promptlar için TensorFold ortalama 2,075‑2,185 tok/s arasında bir performans sergiledi; vLLM ise 789‑925 tok/s civarında kaldı.\n\nTestler, sistemde swap'in devre dışı bırakılması ve kernel sıkıştırma ayarlarının optimize edilmesi gibi host‑seviyesi ince ayarların da katkısı olduğunu belirtiyor. Bu iyileştirmeler, kod tabanına bir sonraki güncellemede entegre edilecek. Ayrıca, aynı 24K tokenlik belge ikinci kez sadece 1,1 saniye içinde işlenebildi ve prompt önbelleği bir yeniden başlatmadan sonra 18K tokenlik bir sohbeti 2,7 saniyede devam ettirebildi.\n\nBu sonuçlar, DeepSeek modelinin yüksek performanslı donanımlarda TensorFold gibi özel hızlandırıcıların entegrasyonu sayesinde üretken yapay zeka uygulamalarında daha düşük gecikme ve daha yüksek throughput sağlayabileceğini gösteriyor. Geliştiriciler, aynı ağırlıkları ve promptları kullanarak benzer hız artışlarını elde etmek için bu repo ve Hugging Face kartındaki talimatları izleyebilir.",
+  "onemli_maddeler": [
+    "TensorFold, DeepSeek-V4.1-Flash-1017'nin metin çözümlemesini %110, kod çözümlemesini %130 oranında hızlandırdı.",
+    "64K token \"needle\" testinde gecikme %55 azaldı; 35,9 saniyeye düşürüldü.",
+    "Prefill aşamasında 8K‑1M token aralığında 2,0‑2,2 kat daha yüksek token/saniye (tok/s) elde edildi.",
+    "Prompt önbelleği bir yeniden başlatmadan sonra 2,7 saniyede 18K tokenlik sohbeti sürdürebildi."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Modelin aynı donanımda iki katına yakın hız artışı, büyük ölçekli üretken AI uygulamaları ve bulut hizmetleri için maliyet ve performans açısından kritik bir gelişme sunuyor.",
+  "etiketler": [
+    "DeepSeek",
+    "TensorFold",
+    "DGX Spark",
+    "vLLM",
+    "benchmark"
+  ],
+  "anilan_modeller": [
+    "DeepSeek-V4.1-Flash-1017"
+  ],
+  "yorum_tr": "TensorFold entegrasyonu, yüksek kapasiteli modellerin gerçek zamanlı kullanımını daha erişilebilir kılıyor; geliştiriciler daha düşük gecikme ve daha yüksek throughput ile uygulama performansını artırabilecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "DeepSeek-V4.1-Flash-1017 (TensorFold)",
+      "benchmark": "Decode, text",
+      "skor": 56.8,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "decode",
+      "kaynak_metinden_alinti": "Decode, text 27.0 tok/s **56.8 tok/s**"
+    },
+    {
+      "model": "DeepSeek-V4.1-Flash-1017 (TensorFold)",
+      "benchmark": "Decode, code",
+      "skor": 92.2,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "decode",
+      "kaynak_metinden_alinti": "Decode, code 39.9 tok/s **92.2 tok/s**"
+    },
+    {
+      "model": "DeepSeek-V4.1-Flash-1017 (TensorFold)",
+      "benchmark": "Needle in 64K",
+      "skor": 35.9,
+      "birim": "s",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "latency",
+      "kaynak_metinden_alinti": "Needle in 64K 80.4 s **35.9 s**"
+    }
+  ],
+  "gorsel_url": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/Elevatormusic/DeepSeek-V4.1-Flash-1017-2x-DGX-Spark-TensorFold-2x-Faster.png",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x8q6t6/deepseek_v41_flash_1017_on_2x_dgx_spark_57_toks/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-18T01:00:38.000Z",
+  "slug": "deepseek-v4-1-flash-1017-on-2x-dgx-spark-57-tok-s-text-92-to"
+}
