@@ -1,0 +1,59 @@
+{
+  "baslik_tr": "64GB RAM ile Qwen3.8-Flash-Next, IQ2_XS'tan UD-IQ4_XS'e Tek RTX 4090'da Geçiş",
+  "ozet_tr": "Kullanıcı, DDR5-5800 64 GB RAM'e yükselerek Strata altyapısını IQ2_XS kuantumundan UD‑IQ4_XS 4‑bit kuantumuna taşıdı ve RTX 4090 üzerinde belirgin performans artışı elde etti. Yeni ayarlar, 36 K ve 136 K tokenlik testlerde yüksek işleme hızları ve %91'e yakın önbellek isabet oranı sağladı.",
+  "detayli_icerik_tr": "Reddit topluluğu LocalLLaMA'da paylaşılan rapora göre, 32 GB'den 64 GB DDR5‑5800 RAM'e geçiş yapan bir kullanıcı, Strata 0.1.45 sürümünü RTX 4090 24 GB ve i9‑14900K işlemciyle çalıştırdı. Model dosyaları SATA SSD üzerinden (~550 MB/s) okunurken, RAM'de tutulan uzman verileri (experts) performansı doğrudan etkiledi; bu yüzden UD‑IQ4_XS (≈55 GiB uzman) 40 GiB RAM bütçesine sığdırıldı ve disk okuması sıfırlandı.\n\nTest sonuçları, kısa promptlarda 87‑98 token/sn (t/s) dekodlama hızı, 36 K tokenlik iğne testinde 2 000 t/s prompt ve 94 t/s dekodlama, 136 K tokenlik testte ise 2 850 t/s prompt ve 92 t/s dekodlama gösterdi. Uzman önbellek isabet oranı %91 civarında seyrediyor ve sistem çalışırken yaklaşık 11 GB RAM boş kalıyor. Karşılaştırma olarak, aynı donanımda IQ2_XS kuantumu 140‑160 t/s, IQ3_S ise 110‑126 t/s hızlar sunmuş.\n\nKalite açısından, Strata'nın yeni kuantizasyon tablosu UD‑IQ4_XS'in Q8_0 seviyesindeki en iyi tokeni %88.9 oranında yakaladığını gösteriyor; bu oran IQ3_XXS için %84.5, Q2_0 için %80.6 olarak raporlanmış. Ayrıca Strata 0.1.45 artık isteklerde örnekleme parametrelerini (temp 1.0, top_p 0.95, top_k 20) varsayılan olarak kullanıyor; önceki sürümlerde greedy yaklaşımı nedeniyle döngü sorunları yaşanmış. Route tail skip ayarı (STRATA_ROUTE_TAIL_SKIP=7) Q8_0 ile karşılaştırıldığında KL kaybını iki kat artırıyordu; kullanıcı bu değeri 0'a çekerek performansı iyileştirmiş.\n\nKullanıcı, aynı 4090 üzerinde yoğun kodlama görevlerinde yoğun Qwen3.8 27B modeliyle NInfer karşılaştırması yapmayı planladığını ve sonuçları ilerleyen günlerde paylaşacağını belirtti. Topluluk, 4‑bit kuantum kullanıcılarından gelen geri bildirim ve ayar önerilerine açık.",
+  "onemli_maddeler": [
+    "64 GB RAM ile UD‑IQ4_XS 4‑bit kuantumu, IQ2_XS'e göre daha düşük token/sn hızına rağmen kalite açısından Q8_0'e %88.9 benzerlik sağladı.",
+    "Strata 0.1.45'te örnekleme varsayılanları değişti; önceki greedy davranışı döngü hatalarına yol açıyordu.",
+    "Route tail skip ayarının 0'a çekilmesi, KL kaybını iki kat azaltarak performansı artırdı.",
+    "Expert cache hit rate %91'e ulaştı ve sistem çalışırken 11 GB RAM boş kaldı."
+  ],
+  "kategori": "benchmark",
+  "onem": 3,
+  "onem_gerekce": "Topluluk odaklı bir performans raporu olup, LLM kuantizasyonu ve donanım optimizasyonu konularında değerli veriler sunuyor ancak geniş ölçekli endüstri etkisi sınırlı.",
+  "etiketler": [
+    "Qwen3.8-Flash-Next",
+    "UD-IQ4_XS",
+    "RTX 4090",
+    "Strata",
+    "LLM kuantizasyonu"
+  ],
+  "anilan_modeller": [
+    "Qwen3.8-Flash-Next",
+    "IQ2_XS",
+    "UD-IQ4_XS",
+    "IQ3_S",
+    "Q8_0",
+    "IQ3_XXS",
+    "Q2_0",
+    "NInfer"
+  ],
+  "yorum_tr": "Bu deney, yüksek RAM kapasiteleri ve ince ayarlı Strata ayarlarının 4‑bit kuantum modellerinde kalite‑performans dengesini iyileştirebileceğini gösteriyor; geliştiriciler benzer yapılandırmaları test ederek maliyet etkin çözümler elde edebilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "UD-IQ4_XS",
+      "benchmark": "Expert cache hit rate",
+      "skor": 91,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Expert cache hit rate: ~91%"
+    },
+    {
+      "model": "UD-IQ4_XS",
+      "benchmark": "Top token match vs Q8_0",
+      "skor": 88.9,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "quant table top token match",
+      "kaynak_metinden_alinti": "UD-IQ4_XS matching Q8_0's top token 88.9% of the time"
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/32gb-to-64gb-of-ram-took-qwen3-8-flash-next-from-iq2-xs-2-v0-44w4mjo2o5wh1.png?width=713&format=png&auto=webp&s=1d6b065b20f0467e923336d61e8fc567bd09a71d",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x8l18e/32gb_to_64gb_of_ram_took_qwen38flashnext_from_iq2/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-17T20:57:25.000Z",
+  "slug": "32gb-to-64gb-of-ram-took-qwen3-8-flash-next-from-iq2-xs-2-bi"
+}

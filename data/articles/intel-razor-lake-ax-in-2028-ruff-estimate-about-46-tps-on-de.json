@@ -1,0 +1,55 @@
+{
+  "baslik_tr": "Intel Razor Lake-AX 2028 tahmini: Yoğun 27B modelde 46 TPS",
+  "ozet_tr": "Reddit LocalLLaMA topluluğu, Intel'in 2028'de piyasaya sürmesi beklenen Razor Lake-AX çipinin 700 TOPS işlem gücüne sahip olacağını ve bu sayede yoğun 27 milyar parametreli bir modelde yaklaşık 46 TPS (Token Per Second) sağlayacağını öne sürdü. Bu performans, mevcut NVIDIA Jetson AGX Orin platformunun 18 TPS seviyesinin iki katı ve Strix Halo'nun iki katı olarak tahmin ediliyor.",
+  "detayli_icerik_tr": "Reddit'te LocalLLaMA topluluğu tarafından paylaşılan bir gönderide, Intel'in yeni nesil AI hızlandırıcısı Razor Lake-AX'in 700 TOPS (Tera Operasyonlar) işlem gücüne ulaşacağı ve bu sayede yoğun 27B (27 milyar parametre) dil modeli üzerinde yaklaşık 46 TPS (Token Per Second) performans sergileyeceği iddia edildi. Gönderide, bu tahminin NVIDIA Jetson AGX Orin platformunun 275 TOPS'luk işlem gücüne dayandığı ve Jetson'un aynı modelde 18 TPS elde ettiği bilgisiyle, basit bir oranlama yöntemiyle (18 * 700/275) 46 TPS sonucuna ulaşıldığı belirtildi.\n\nBu rakam, mevcut Edge AI çözümlerinden Strix Halo'nun performansının iki katı olarak nitelendirildi ve AMD'nin Medusa Halo çipinin de 2027 sonuna doğru benzer bir performans artışı sağlayacağı öngörülüyor. Eğer Intel bu tahminleri doğrularsa, Razor Lake-AX, NVIDIA Jetson serisi gibi mevcut platformların çok ötesinde bir işlem kapasitesi sunarak, büyük dil modellerinin kenar cihazlarda daha hızlı ve verimli çalışmasını mümkün kılabilir.\n\nAncak, bu tahminin sadece TOPS değerlerine dayalı lineer bir ölçekleme yöntemiyle yapıldığı ve gerçek dünya performansının bellek bant genişliği, yazılım optimizasyonları ve enerji tüketimi gibi faktörlerden etkileneceği unutulmamalı. Bu nedenle, Razor Lake-AX'in resmi teknik dökümanları ve bağımsız benchmark sonuçları yayınlanana kadar bu rakamlar spekülatif olarak kalacaktır.\n\nSektör gözlemcileri, Intel'in bu girişiminin AI çip pazarında rekabeti artıracağını ve geliştiricilerin daha yüksek performanslı kenar çözümlerine erişimini kolaylaştıracağını belirtiyor. Ancak, gerçek performansın doğrulanması ve ekosistemin bu yeni çipi benimsemesi zaman alabilir.",
+  "onemli_maddeler": [
+    "Razor Lake-AX'in 700 TOPS işlem gücü hedefleniyor.",
+    "Yoğun 27B modelde tahmini 46 TPS, Jetson AGX Orin'un 18 TPS'inin iki katı.",
+    "Strix Halo performansının iki katı olarak nitelendirildi; AMD Medusa Halo da benzer artış vaat ediyor.",
+    "Tahmin, TOPS değerlerine dayalı basit oranlama ile yapılmış, gerçek performans farklılık gösterebilir."
+  ],
+  "kategori": "benchmark",
+  "onem": 3,
+  "onem_gerekce": "Tahminler spekülatif olsa da, Intel'in yeni çipinin mevcut kenar AI platformlarını geride bırakma potansiyeli sektörde ilgi uyandırıyor.",
+  "etiketler": [
+    "Intel",
+    "Razor Lake-AX",
+    "Jetson",
+    "TPS",
+    "Benchmark"
+  ],
+  "anilan_modeller": [
+    "Razor Lake-AX",
+    "NVIDIA Jetson AGX Orin",
+    "Strix Halo",
+    "AMD Medusa Halo"
+  ],
+  "yorum_tr": "Eğer Razor Lake-AX bu tahmini performansa ulaşabilirse, Intel kenar AI pazarında güçlü bir rakip olarak konumlanacak ve geliştiriciler daha yüksek verimlilikle büyük modelleri çalıştırabilecek. Ancak, gerçek ölçümler ve yazılım desteği olmadan bu tahminler sadece bir öngörü olarak kalmalı.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Razor Lake-AX",
+      "benchmark": "TPS on dense 27B",
+      "skor": 46,
+      "birim": "TPS",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "So 18 * (700 / 275) = 46 TPS."
+    },
+    {
+      "model": "NVIDIA Jetson AGX Orin",
+      "benchmark": "TPS on dense 27B",
+      "skor": 18,
+      "birim": "TPS",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Jetson does about 18 tps on 27b."
+    }
+  ],
+  "gorsel_url": "https://external-preview.redd.it/ou0BWKFnQawJESeI1JYoG4W82syGrTPo5hjy4u5BAhw.jpeg?width=640&crop=smart&auto=webp&s=61f6ee937ead30978e89f52957aa64fd32a0674f",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x8kiuh/intel_razor_lake_ax_in_2028_ruff_estimate_about/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-17T20:35:38.000Z",
+  "slug": "intel-razor-lake-ax-in-2028-ruff-estimate-about-46-tps-on-de"
+}

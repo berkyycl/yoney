@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "OpenAI, yeni Aurora GPT-Image modellerini Arena’da test ediyor",
+  "ozet_tr": "OpenAI, API üzerinden aniden ortaya çıkan üç yeni model referansı aurora-red-alpha, aurora-green-alpha ve aurora-blue-alpha’yı Arena test ortamına soktu. İlk görüntü örnekleri, modelin hız ve kalite dengesi açısından farklı performanslar sergilediğini gösteriyor.",
+  "detayli_icerik_tr": "Geçtiğimiz hafta sonu, OpenAI'nin API'sinde aniden üç yeni model referansı belirdi: aurora-red-alpha, aurora-green-alpha ve aurora-blue-alpha. Bu referanslar, Dev Mode Discord sunucusundaki bir uyarı sayesinde tespit edildi ve kısa bir süre içinde API'den kaldırıldı; bu durum, modelin istem dışı bir şekilde yayınlandığını işaret ediyor.\n\nLumina Bench, bu modellerin şu anda Arena test platformunda (Design Arena) görüntü üretimi için denendiğini doğruladı ve her bir modelin örnek çıktısını paylaştı. Görüntüler, özellikle kedi portreleri, temiz ve detaylı olsa da henüz çığır açıcı bir kaliteye ulaşmadı. Testlerde, aurora-red-alpha daha hızlı çalışırken kalite açısından geride kaldı; aurora-green-alpha ise daha yavaş fakat daha yüksek çözünürlükte sonuçlar verdi. Aurora-blue-alpha henüz test edilmedi.\n\nOpenAI'nin daha önce GPT-Image-2.5 serisini iki varyant (Flare ve Sunburst) ile piyasaya sürmüş olması, bu yeni Aurora modellerinin GPT-Image-3 serisinin öncüsü olabileceği spekülasyonlarını güçlendiriyor. Şirket, aynı zamanda GPT-6 ve ilgili araçlarıyla (Grok Bot, Muse/Dots) de dikkat çekiyor ve yakın zamanda gpt-rosalind-discovery adlı bir modelin fiyat sayfasına eklenmesiyle yeni araştırma önceliklerine işaret ediyor.\n\nDiğer yandan, rakip firmalar da benzer hamleler yapıyor; Anthropic Claude Fable 5.5 ve Cursor'un yeni sürümü gibi ürünler piyasada yerini alıyor. OpenAI'nin Aurora modelleri için henüz bir dokümantasyon, fiyatlandırma veya kullanım kotası açıklanmadığı için, şu an için elimizdeki tek veri bu test görüntüleri ve model isimleri. Önümüzdeki haftalarda modelin resmi duyurusu ve olası çoklu model lansmanı bekleniyor.",
+  "onemli_maddeler": [
+    "aurora-red-alpha, aurora-green-alpha ve aurora-blue-alpha isimli üç yeni model API'de kısa bir süreliğine göründü ve ardından kaldırıldı.",
+    "Arena testlerinde red-alpha daha hızlı fakat düşük kalite, green-alpha daha yavaş ama daha yüksek kalite üretti; blue-alpha henüz test edilmedi.",
+    "Modellerin GPT-Image-3 serisinin ilk örnekleri olduğu spekülasyonu yapılıyor; önceki GPT-Image-2.5 Flare ve Sunburst varyantlarıyla bir evrim süreci izleniyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "OpenAI'nin yeni nesil görüntü üretim modelleri, AI görsel yaratım pazarında rekabeti artıracak ve geliştiricilere daha fazla seçenek sunacak potansiyele sahip.",
+  "etiketler": [
+    "OpenAI",
+    "GPT-Image",
+    "Aurora",
+    "AI Image Generation",
+    "Arena"
+  ],
+  "anilan_modeller": [
+    "aurora-red-alpha",
+    "aurora-green-alpha",
+    "aurora-blue-alpha"
+  ],
+  "yorum_tr": "Aurora modellerinin test aşamasına girmesi, OpenAI'nin görsel AI alanındaki yenilik hızını gösteriyor ve geliştiricilerin daha hızlı ve kaliteli görüntü üretimi için yeni araçlar beklemesini sağlıyor. Resmi lansman ve fiyatlandırma detayları gelince, pazar dinamikleri yeniden şekillenebilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/10/Arena-Benchmark-Compare-the-Best-AI-Models-10-18-2026_07_44_PM.jpg",
+  "url": "https://www.testingcatalog.com/openai-possibly-testing-gpt-image-3/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-18T18:07:09.000Z",
+  "slug": "openai-testing-new-quot-aurora-quot-gpt-image-model-on-arena"
+}

@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "Ling 3.1 Flash (560B MoE) 4 DGX Spark'ta llama.cpp RPC ile çalıştırıldı",
+  "ozet_tr": "Bir Reddit kullanıcısı, 560 milyar parametreli Ling 3.1 Flash MoE modelini dört DGX Spark sunucusuna dağıtarak llama.cpp RPC üzerinden çalıştırdı. Model, her token için 25 B aktif parametreye sahip ve GGUF formatında Atomic Chat'in güncel sürümüyle kullanıldı. Performans verileri henüz paylaşılmasa da, bu dağıtık kurulumun 124 B Ling 3.0 Flash ile karşılaştırılması merak konusu.",
+  "detayli_icerik_tr": "Reddit topluluğu LocalLLaMA'da, sudoing adlı bir kullanıcı, Ling 3.1 Flash modelini dört adet NVIDIA DGX Spark sunucusuna dağıtarak çalıştırdığını duyurdu. Model, 560 milyar parametreli bir Mixture-of-Experts (MoE) mimarisine sahip ve her token için 25 milyar aktif parametreyi işleyebiliyor. Kullanıcı, modelin önceki sürümlerini beğenmiş ve daha büyük bir versiyonla deneme yapmak istemiş, ancak iki Spark üzerinde yeterli bellek alanı bulamadığı için Almanya'dan dört Spark'lık bir ortam temin etmiş.\n\nModel, Atomic Chat tarafından sağlanan güncel GGUF (Q4) formatındaki dosyalarla, llama.cpp'nin RPC (Remote Procedure Call) özelliği aracılığıyla dağıtık bir şekilde hizmete alındı. vLLM için resmi bir FP4 derlemesi bulunmadığından, bu yöntem tercih edilmiş. Kullanıcı, kurulumun bant genişliği ve gecikme açısından zorlayıcı olacağını kabul etse de, gerçek zamanlı yanıt kalitesi ve bekleme süresi açısından Ling 3.0 Flash (124 B) ile kıyaslamayı hedefliyor.\n\nPaylaşılan ekran görüntüsünde henüz performans sayıları yer almıyor; ancak topluluk, modelin yanıt kalitesindeki olası artış ve ölçeklenebilirlik sorunları üzerine tartışmalar yürütüyor. Bu tür büyük MoE modellerinin çoklu GPU ortamlarında çalıştırılması, bellek yönetimi, ağ trafiği ve senkronizasyon gibi teknik zorlukları da beraberinde getiriyor. Llama.cpp RPC'nin bu bağlamda sunduğu esneklik, geliştiricilere benzer dağıtık çözümler üretme imkanı tanıyor.\n\nLing 3.1 Flash'in bu deneysel dağıtımı, topluluk temelli model dağıtımının sınırlarını zorlayarak, büyük ölçekli dil modellerinin erişilebilirliğini artırma potansiyelini gösteriyor. İlerleyen günlerde, performans ölçümleri ve kullanıcı deneyimi raporları paylaşılırsa, benzer altyapılara sahip araştırma ve endüstri grupları için değerli bir referans noktası oluşturabilir.",
+  "onemli_maddeler": [
+    "Ling 3.1 Flash, 560 B parametreli MoE modeli olarak her token için 25 B aktif parametreye sahip.",
+    "Model, dört DGX Spark sunucusuna dağıtılarak llama.cpp RPC üzerinden çalıştırıldı.",
+    "Resmi FP4 derlemesi bulunmadığından GGUF formatı ve llama.cpp RPC tercih edildi."
+  ],
+  "kategori": "guncelleme",
+  "onem": 3,
+  "onem_gerekce": "Büyük bir MoE modelinin çoklu GPU ortamında dağıtık çalıştırılması topluluk içinde teknik ilgi uyandırsa da, henüz performans verisi ve geniş çaplı ticari etkisi bulunmadığından etkisi sınırlı.",
+  "etiketler": [
+    "Ling 3.1 Flash",
+    "DGX Spark",
+    "llama.cpp",
+    "GGUF",
+    "MoE"
+  ],
+  "anilan_modeller": [
+    "Ling 3.1 Flash",
+    "Ling 3.0 Flash"
+  ],
+  "yorum_tr": "Bu dağıtık kurulum, büyük dil modellerinin araştırma ortamlarında daha esnek bir şekilde test edilmesini sağlasa da, ağ gecikmesi ve bant genişliği gibi sınırlamalar, gerçek zamanlı uygulamalarda performansın kritik bir faktör olacağını gösteriyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/b4d34izgx5wh1.png?width=640&crop=smart&auto=webp&s=61e742089535aacf221be4ee4c60e422c3f89379",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x8v7cp/ling_31_flash_560b_moe_loaded_across_4_dgx_sparks/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-18T05:37:02.000Z",
+  "slug": "ling-3-1-flash-560b-moe-loaded-across-4-dgx-sparks-using-lla"
+}
