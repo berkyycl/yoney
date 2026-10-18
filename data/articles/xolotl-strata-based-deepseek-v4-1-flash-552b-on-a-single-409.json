@@ -1,0 +1,73 @@
+{
+  "baslik_tr": "Xolotl: Strata Tabanlı Inference Motoru, DeepSeek-V4.1-Flash 552B Modelini Tek RTX 4090’da Çalıştırıyor",
+  "ozet_tr": "IndrasMirror ekibi, Strata üzerine inşa ettikleri Xolotl adlı inference motorunu duyurdu. Motor, 552 milyar parametreli DeepSeek-V4.1-Flash modelini tek bir RTX 4090 (24 GB) üzerinde çalıştırarak 27 tok/s decode ve 180‑320 tok/s prefill performansı sağlıyor. Ayrıca model, HumanEval testinde tam puan alarak büyük bir teknik atılımı işaret ediyor.",
+  "detayli_icerik_tr": "IndrasMirror topluluğu, Strata tabanlı yeni bir inference motoru olan Xolotl'u tanıttı. Motor, tek bir RTX 4090, Ryzen 7 5700X, 90 GB DDR4 RAM ve bir NVMe sürücüden oluşan bir oyun bilgisayarında DeepSeek‑V4.1‑Flash (552 B) modelinin tamamını çalıştırabiliyor. Ağırlıklar VRAM, sabit RAM ve NVMe arasında dağıtılıyor; her token için yalnızca gerekli uzman ağırlıkları çekilerek bellek verimliliği artırılıyor.\n\nPerformans ölçümlerine göre Xolotl, 27 token/s decode ve 180‑320 token/s prefill hızları sunuyor; aynı zamanda 512 K token uzunluğunda bir bağlamı destekliyor. Model, HumanEval benchmark'ında 21/21 tam puan alırken, araç çağrılarında 10/10 ve ajan tabanlı hata düzeltme döngülerinde 3/3 başarı gösterdi. Bu sonuçlar, tek bir tüketici sınıfı GPU ile bu kadar büyük bir modelin etkili bir şekilde kullanılabileceğini kanıtlıyor.\n\nMotor, sadece DeepSeek‑V4.1‑Flash ile sınırlı kalmayıp, aynı altyapı üzerinden GLM‑5.3‑Flash, Qwen3.8‑Flash‑Next ve Qwen3.8‑27B gibi diğer büyük modelleri de çalıştırabiliyor. Açık kaynak kodları GitHub üzerinden erişilebilir durumda (https://github.com/Indras-Mirror/Xolotl). Şu anki sürüm, 152 GiB boyutundaki uncensored V4.1 quant dosyasını (https://huggingface.co/IndrasMirror/DeepSeek-V4.1-Flash-GSQ-Uncensored) kullanıyor.\n\nGeliştiriciler, 510 GB büyüklüğündeki yeni DeepSeek‑V4.1‑Flash‑1017 modelini indirip aynı Xolotl motorunda çalıştırmak için kalibrasyon ve quant işlemlerini tamamlamayı planlıyor. Bu güncellemenin aynı performans seviyesini koruması bekleniyor ve topluluk üyelerinin sorularına yanıt vermek için süreç aktif olarak izleniyor.",
+  "onemli_maddeler": [
+    "Xolotl, 552 B DeepSeek‑V4.1‑Flash modelini tek RTX 4090’da çalıştırabiliyor.",
+    "Decode hızı 27 tok/s, prefill hızı 180‑320 tok/s ve 512 K bağlam desteği.",
+    "HumanEval benchmark’ında 21/21 tam puan, araç çağrılarında 10/10 ve hata düzeltme döngülerinde 3/3 başarı.",
+    "Aynı motor GLM‑5.3‑Flash, Qwen3.8‑Flash‑Next ve Qwen3.8‑27B modellerini de destekliyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Tek bir tüketici sınıfı GPU ile 552 B gibi devasa bir LLM'in çalıştırılması, bellek yönetimi ve performans optimizasyonu açısından sektörde önemli bir teknik sıçrama yaratıyor.",
+  "etiketler": [
+    "inference engine",
+    "large language model",
+    "GPU",
+    "quantization",
+    "DeepSeek"
+  ],
+  "anilan_modeller": [
+    "DeepSeek-V4.1-Flash",
+    "GLM-5.3-Flash",
+    "Qwen3.8-Flash-Next",
+    "Qwen3.8-27B"
+  ],
+  "yorum_tr": "Xolotl, büyük modellerin erişilebilirliğini artırarak araştırmacı ve geliştiricilerin tek bir GPU üzerinde deney yapmasını mümkün kılıyor; bu da inovasyon hızını ve maliyet etkinliğini olumlu yönde etkileyecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "DeepSeek-V4.1-Flash",
+      "benchmark": "HumanEval",
+      "skor": 21,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "21/21 HumanEval"
+    },
+    {
+      "model": "DeepSeek-V4.1-Flash",
+      "benchmark": "Tool Calls",
+      "skor": 10,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "10/10 tool calls"
+    },
+    {
+      "model": "DeepSeek-V4.1-Flash",
+      "benchmark": "Agentic Bug‑Fix Loops",
+      "skor": 3,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "3/3 agentic bug-fix loops"
+    },
+    {
+      "model": "DeepSeek-V4.1-Flash",
+      "benchmark": "Decode Speed",
+      "skor": 27,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "27 tok/s decode"
+    }
+  ],
+  "gorsel_url": "https://www.marktechpost.com/wp-content/uploads/2026/09/blog122-3.png",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x8m0jj/xolotl_strata_based_deepseekv41flash_552b_on_a/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-17T21:40:27.000Z",
+  "slug": "xolotl-strata-based-deepseek-v4-1-flash-552b-on-a-single-409"
+}

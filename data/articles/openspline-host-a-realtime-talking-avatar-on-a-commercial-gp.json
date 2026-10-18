@@ -1,0 +1,40 @@
+{
+  "baslik_tr": "Openspline: Açık Kaynak Gerçek Zamanlı Konuşan Avatar, RTX4090’da 90+ FPS",
+  "ozet_tr": "Openspline, mevcut ses‑AI ajanlarını beş satır kodla entegre edebilen açık kaynak bir avatar katmanı olarak tanıtıldı. Kullanıcılar tek bir görsel seçerek, GPU’da yerel olarak çalışan, dudak senkronlu video akışıyla gerçek zamanlı konuşan bir avatar oluşturabiliyor. Lite modeli, NVIDIA RTX4090 üzerinde 90+ FPS performans gösteriyor.",
+  "detayli_icerik_tr": "Yerel LLaMA topluluğu içinde paylaşılan bir Reddit gönderisine göre, Openspline adlı yeni bir proje, sesli yapay zeka asistanlarını görsel bir avatar katmanıyla birleştiriyor. Kullanıcılar sadece bir resim yükleyerek, seçtikleri ses‑AI modelinin çıktısını gerçek zamanlı olarak dudak senkronlu bir video akışına dönüştürebiliyor. Bu işlem tamamen yerel GPU’da gerçekleşiyor, yani bulut tabanlı gecikme sorunları ortadan kalkıyor.\n\nProjenin en dikkat çekici özelliği, entegrasyonun sadece beş satır kodla yapılabilmesi. Geliştiriciler, mevcut ses‑AI çözümlerini (örneğin, OpenAI, ElevenLabs gibi) Openspline ile bağlayarak, anında konuşan avatarlar elde edebiliyor. Bu, özellikle oyun, sanal asistan ve eğitim platformları gibi gerçek zamanlı etkileşim gerektiren uygulamalarda büyük bir kolaylık sağlıyor.\n\nPerformans açısından, Openspline’ın “lite” modeli NVIDIA RTX4090 gibi üst düzey bir grafik kartında 90+ FPS (kare/saniye) hızına ulaşıyor. Bu, yüksek çözünürlükte ve düşük gecikmeyle akıcı bir video deneyimi sunuyor. Proje hâlâ erken aşamalarda olsa da, geliştiriciler tarafından paylaşılan demo videoları ve örnek kodlar, teknolojinin potansiyelini gözler önüne seriyor.\n\nOpenspline, GitHub üzerinden açık kaynak olarak sunuluyor ve bir demo sitesi (openspline.dev) aracılığıyla kullanıcıların deneme yapması mümkün. Projenin geliştiricisi Mikasa0xdev, gecikmeli bir sabah saatinde bu duyuruyu yaparak topluluğun geri bildirim ve katkılarını beklediğini belirtti.",
+  "onemli_maddeler": [
+    "Openspline, ses‑AI ajanlarını sadece 5 satır kodla gerçek zamanlı konuşan avatarlarla birleştiriyor.",
+    "Lite modeli, NVIDIA RTX4090 üzerinde 90+ FPS performans sağlıyor, düşük gecikmeli akıcı video sunuyor.",
+    "Proje açık kaynak ve GitHub’da bulunuyor; demo sitesi üzerinden hızlıca test edilebiliyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 3,
+  "onem_gerekce": "Gerçek zamanlı avatar teknolojisinin açık kaynak bir çözümle erişilebilir hale gelmesi, geliştiriciler ve araştırmacılar için yeni uygulama alanları yaratıyor ancak henüz erken aşamada olduğu için sektörel etkisi sınırlı.",
+  "etiketler": [
+    "avatar",
+    "gerçek zamanlı",
+    "açık kaynak",
+    "GPU",
+    "ses AI"
+  ],
+  "anilan_modeller": [],
+  "yorum_tr": "Openspline, gerçek zamanlı avatar üretimini düşük gecikme ve yüksek kare hızıyla sunarak prototip geliştirme sürecini hızlandırabilir; ancak performansın geniş donanım yelpazesinde nasıl değişeceği ve uzun vadeli stabilitesi takip edilmelidir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Openspline lite model",
+      "benchmark": "FPS",
+      "skor": 90,
+      "birim": "FPS",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "NVIDIA RTX4090 GPU",
+      "kaynak_metinden_alinti": "The lite model can generate 90+ FPS on an NVIDIA RTX4090 gpu."
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/vnaqlzl074wh1.png?width=640&crop=smart&auto=webp&s=6a523b076e9438587eedb589fec13a8a3c8045c2",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x8oqng/openspline_host_a_realtime_talking_avatar_on_a/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-17T23:48:06.000Z",
+  "slug": "openspline-host-a-realtime-talking-avatar-on-a-commercial-gp"
+}

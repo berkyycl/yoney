@@ -1,0 +1,61 @@
+{
+  "baslik_tr": "Fish Audio Drama 3'ün 48 GB NVIDIA kartı gereksinimi, AMD RX 9070'da Red Curtain ile aşıldı",
+  "ozet_tr": "Fish Audio Drama 3, resmi olarak 48 GB VRAM'li bir NVIDIA GPU talep ediyor. Ancak Reddit topluluğundan bir geliştirici, Claude ile birlikte Red Curtain adlı bir araç geliştirerek modeli AMD RX 9070'da çalıştırmayı başardı. Model, 35 B MoE yapısına sahip ve aktif token başına yaklaşık 3 B parametre kullanıyor.",
+  "detayli_icerik_tr": "Fish Audio Drama 3, 48 GB VRAM gerektiren bir NVIDIA kartına ihtiyaç duyduğunu duyurmuştu. Bu durum, geniş çaplı ses sentezi projeleri için yüksek maliyetli donanım engeli oluşturuyordu. Reddit topluluğunun bir üyesi olan /u/fechyyy, Claude ile iş birliği yaparak Red Curtain adlı bir açık kaynak aracı geliştirdi ve modeli AMD RX 9070 (gfx1201) üzerinde çalıştırabildi.\n\nRed Curtain, modelin uzman (expert) katmanlarını FP8 formatında sistem RAM'inde tutuyor ve yalnızca kullanılan uzmanları GPU'ya önbellekliyor. Diğer katmanlar ise BF16 formatında GPU'da işleniyor. Bu sayede modelin toplam VRAM ihtiyacı 11‑12 GB seviyesine düşerken, sistem RAM kullanımı yaklaşık 35 GB olarak gerçekleşiyor. Yükleme süresi yaklaşık 17 saniye, 3.3 saniyelik ses üretimi 13 saniye, 11.6 saniyelik ses üretimi ise 37 saniye sürüyor.\n\nAraç, küçük bir web arayüzüyle ses klonlaması, çoklu konuşmacı senaryoları ve Fish Audio editöründeki etiketleri ([laughing], [sighing], <whisper>…</whisper>) destekliyor. Bilinen bir sorun, bir çekimin ilk satırını okuduktan sonra sessiz kalması; bu durum vLLM tarifinde de belirtilmiş ve AMD portundan kaynaklanmadığı doğrulanmış. Kullanıcılar, top‑k parametresini kapatmak, her konuşmacıya referans ses vermek ve ses etiketiyle başlayan satırları önlemek gibi ayarları varsayılan hâle getirmiş.\n\nRed Curtain hâlen sadece RX 9070 üzerinde test edilmiş ve ağırlık dosyaları Hugging Face üzerinden indiriliyor. Proje Fish Audio ile resmi bir bağlantısı olmadığını belirtiyor ve GitHub üzerinden erişilebilir durumda (https://github.com/re133/red-curtain). Bu geliştirme, büyük MoE modellerinin daha geniş bir donanım yelpazesinde çalıştırılabilmesi için önemli bir adım olarak görülüyor.",
+  "onemli_maddeler": [
+    "Fish Audio Drama 3'ün resmi 48 GB VRAM gereksinimi, Red Curtain sayesinde 11‑12 GB VRAM ile AMD RX 9070'da çalıştırılabiliyor.",
+    "Modelin FP8 uzmanları sistem RAM'inde tutuluyor, sadece kullanılanlar GPU'ya önbellekleniyor; geri kalan katmanlar BF16 formatında işleniyor.",
+    "Web UI, ses klonlama, çoklu konuşmacı senaryoları ve Fish Audio etiket desteği sunuyor; top‑k kapatılması ve referans ses kullanımı performansı artırıyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 3,
+  "onem_gerekce": "AMD tabanlı tüketici GPU'larda büyük MoE modellerinin çalıştırılabilmesi, özellikle yüksek maliyetli NVIDIA kartlarına erişimi olmayan geliştiriciler ve araştırmacılar için değerli bir çözüm sunuyor ancak henüz sınırlı donanım testleriyle genel geçer bir etki yaratmadığı için orta seviyede önem taşıyor.",
+  "etiketler": [
+    "Fish Audio",
+    "Drama 3",
+    "AMD",
+    "GPU",
+    "Red Curtain"
+  ],
+  "anilan_modeller": [
+    "Fish Audio Drama 3 (35B MoE)",
+    "Claude"
+  ],
+  "yorum_tr": "Bu çözüm, büyük dil‑ve ses modellerinin sadece NVIDIA ekosistemine bağlı kalmadan daha geniş bir donanım kitlesine ulaşmasını sağlıyor; geliştiriciler düşük maliyetli AMD kartlarla deney yapabilir, kullanıcılar ise daha erişilebilir fiyatlarla yüksek kaliteli ses sentezine erişebilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Fish Audio Drama 3",
+      "benchmark": "Model load time",
+      "skor": 17,
+      "birim": "s",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "load ~17 s"
+    },
+    {
+      "model": "Fish Audio Drama 3",
+      "benchmark": "Speech generation (3.3 s audio)",
+      "skor": 13,
+      "birim": "s",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "3.3 s audio",
+      "kaynak_metinden_alinti": "3.3 s of speech in ~13 s"
+    },
+    {
+      "model": "Fish Audio Drama 3",
+      "benchmark": "Speech generation (11.6 s audio)",
+      "skor": 37,
+      "birim": "s",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "11.6 s audio",
+      "kaynak_metinden_alinti": "11.6 s in ~37 s"
+    }
+  ],
+  "gorsel_url": "https://external-preview.redd.it/OGxlb2lzbWY3M3doMbrDpTbVgh9VbtQVOjwN9fPRyX5jZdSXZowzpetBPa2-.png?width=640&crop=smart&auto=webp&s=ed5daf852ebf5dceeecbd40b561580924bb52b75",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x8kces/fish_audio_drama_3_says_it_needs_a_48_gb_nvidia/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-17T20:27:46.000Z",
+  "slug": "fish-audio-drama-3-says-it-needs-a-48-gb-nvidia-card-my-16-g"
+}
