@@ -1,0 +1,55 @@
+{
+  "baslik_tr": "72 Saatte Dört Büyük Açık Ağırlık Düşüşü: NVIDIA Tek 24GB Uyumlu Modeli Sunuyor",
+  "ozet_tr": "Geçtiğimiz hafta Meta, NVIDIA, Reflection ve DeepSeek, açık ağırlıklı büyük modellerini duyurdu. NVIDIA, 24 GB GPU belleğine sığacak şekilde tasarlanan tek modeliyle dikkat çekerken, diğer şirketlerin modelleri çok daha yüksek depolama ve maliyet gerektiriyor. Lisans koşulları da parametre sayısından daha belirleyici bir faktör haline geldi.",
+  "detayli_icerik_tr": "Perşembe günü Meta, Muse Spark Open modelini yayınladı. Modelin toplam parametresi 816 milyar, aktif parametresi 42 milyar ve 1 milyon token bağlam uzunluğuna sahip. Meta, bu modeli \"masaüstü\" ortamına getirmeyi hedefliyor; ancak önerilen donanım iki adet M5 Ultra Mac Studio (her biri 512 GB) ya da dört adet 256 GB Studio, yaklaşık 38 bin dolar maliyetle. Model, \"Built with Muse Spark Open\" ibaresi ve 20 milyon dolar üzerindeki gelirlerde ek lisans anlaşması gibi kısıtlayıcı şartlar içeriyor ve Yapay Zeka Analiz Endeksi'nde 39 puan alıyor.\n\nAynı gün NVIDIA, Nemotron 3.5 Bolt modelini duyurdu. Toplam 74 milyar parametreye, aktif 9 milyar parametreye sahip bu model, 2‑bit kuantizasyon farkındalığıyla eğitildi ve sadece 22 GB boyutunda, ek 1,7 GB'lik bir görsel projeksiyonla birlikte 24 GB GPU belleğine sığacak şekilde tasarlandı. Model, Unsloth GGUF, llama.cpp, Ollama ve LM Studio gibi popüler yerel çalışma ortamlarıyla uyumlu.\n\nCuma günü Reflection, Beam modelini Apache 2.0 lisansı altında yayınladı. Toplam 501 milyar parametre, aktif 23 milyar parametre ve en küçük resmi kontrol noktası 294 GB boyutunda. Lisans koşulları tamamen açık ve kısıtlamasız.\n\nCumartesi akşamı DeepSeek, V4.1 Flash 1017 modelini MIT lisansı ile duyurdu. Modelin deposu 510 GB boyutunda ve DeepSWE benchmark'unda 77,0 puan alarak Opus 5'in 74,0 puanını geride bırakıyor. Bu hızlı yayın akışı, yerel çalıştırma kavramının artık yüksek maliyetli donanım gerektirdiğini ve lisansların model seçiminde kritik bir rol oynadığını gösteriyor. Mistral'ın da ay sonuna kadar 1 trilyon parametreli \"Le Chonk\" modelini sunması planlanıyor, bu da 24 GB sınırını daha da yalnızlaştıracak.",
+  "onemli_maddeler": [
+    "Meta'nın Muse Spark Open modeli, yüksek donanım maliyeti ve kısıtlayıcı lisans şartlarıyla geliyor.",
+    "NVIDIA, 24 GB GPU belleğine sığacak tek büyük modeli Nemotron 3.5 Bolt'u piyasaya sürdü.",
+    "DeepSeek'in V4.1 Flash 1017 modeli, DeepSWE benchmark'unda 77,0 puan alarak öne çıktı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Birden fazla büyük açık ağırlıklı modelin aynı hafta içinde duyurulması, hem donanım gereksinimleri hem de lisans politikaları açısından sektörde önemli bir dönüm noktası oluşturuyor.",
+  "etiketler": [
+    "Açık Ağırlık",
+    "Yerel Model",
+    "GPU Bellek",
+    "Lisans",
+    "AI"
+  ],
+  "anilan_modeller": [
+    "Muse Spark Open",
+    "Nemotron 3.5 Bolt",
+    "Beam",
+    "V4.1 Flash 1017",
+    "Le Chonk"
+  ],
+  "yorum_tr": "Bu gelişmeler, yerel AI çalıştırma ortamlarının maliyet bariyerini artırırken, lisans koşullarının model seçiminde belirleyici bir faktör haline geldiğini gösteriyor. Geliştiriciler, hem donanım hem de yasal kısıtlamaları göz önünde bulundurarak stratejilerini yeniden şekillendirmeli.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Muse Spark Open",
+      "benchmark": "Artificial Analysis index",
+      "skor": 39,
+      "birim": "",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Meta's own model card puts it at 39 on the Artificial Analysis index, behind GLM 5.3 (45) and Kimi K3 (44)."
+    },
+    {
+      "model": "V4.1 Flash 1017",
+      "benchmark": "DeepSWE",
+      "skor": 77,
+      "birim": "",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Their own table has it at 77.0 on DeepSWE vs 74.0 for Opus 5 (vendor numbers, salt accordingly)."
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/g4zpnde59awh1.png?width=640&crop=smart&auto=webp&s=0e5c1e0affb41326deea8ebd21ae207ccab88106",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x9d23j/72_hours_four_big_open_weights_drops_the_only_one/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-18T20:10:16.000Z",
+  "slug": "72-hours-four-big-open-weights-drops-the-only-one-that-fits"
+}

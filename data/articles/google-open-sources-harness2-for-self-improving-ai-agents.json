@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "Google, Harness2'yi Açık Kaynak Yaparak Kendini Geliştiren AI Ajanlarını Sunuyor",
+  "ozet_tr": "Google, AI ajanlarının kendi çalışma ortamını (harness) zaman içinde iyileştirmesini sağlayan Harness2 adlı açık kaynak aracını duyurdu. Model ağırlıkları değişmeden, sistem istemi, araçlar, hafıza ve alt ajanlar gibi bileşenler görev bazlı olarak optimize edilebiliyor. İlk testlerde Gemini 3.5 Flash ve GLM-5 modelleriyle yapılan denemeler, tek bir iyileştirme turunun bile orijinal harness performansını geride bıraktığını gösterdi.",
+  "detayli_icerik_tr": "Google Research, yapay zeka ajanlarının çevresel yapıtaşlarını (harness) dinamik olarak güncelleyebilen Harness2'yi GitHub üzerinden açık kaynak olarak yayınladı. Geleneksel yaklaşımlarda bir harness, model geliştiricisi tarafından bir kez tasarlanır ve tüm görevlerde sabit kalır; Harness2 ise ajanların kendi harness'larını önerip, farklı sürümlerini deneyerek en iyisini seçmesine olanak tanır. Bu süreçte doğru cevaplar ya da harici değerlendirme mekanizmaları gerekmez; model ağırlıkları aynı kalır, sadece yapılandırma değişir.\n\nAraç, bir görev tamamlandıktan sonra elde edilen iyileştirmeleri ve öğrenilen dersleri kaydederek sonraki görevlerde daha akıllı bir başlangıç noktası sunar. Böylece ajan, her yeni göreve sıfırdan başlamaz, birikmiş deneyimden faydalanarak daha verimli çalışır. Google, Harness2'yi Gemini 3.5 Flash ve Çin menşeli GLM-5 modelleriyle hukuk, ofis ve profesyonel iş senaryolarını içeren benchmark setlerinde test etti. Tek bir iyileştirme turu, orijinal harness'ların performansını geride bıraktı; ek turlar ise puanları daha da yükseltti.\n\nBu yenilik, AI ajanlarının adaptif yeteneklerini artırarak, özellikle değişken ve karmaşık iş akışlarında insan müdahalesi olmadan sürekli iyileşme sağlayabilir. Açık kaynak lisansı sayesinde araştırmacılar ve geliştiriciler, Harness2'yi kendi projelerine entegre edip, farklı model ve görev kombinasyonlarıyla deneyler yapabilecek. Google'ın bu hamlesi, AI sistemlerinin modüler ve kendini geliştiren mimarilere yönelmesinde önemli bir kilometre taşı olarak görülüyor.\n\nHarness2'nin kodları ve dokümantasyonu https://github.com/google-research/harness2 adresinde bulunuyor. Topluluk, aracın potansiyelini genişletmek ve yeni kullanım senaryoları eklemek için katkı sağlamaya davet ediliyor.",
+  "onemli_maddeler": [
+    "Harness2, AI ajanlarının kendi harness'larını görev bazlı olarak otomatik iyileştirmesini sağlıyor.",
+    "Model ağırlıkları değişmeden, sistem istemi, araçlar, hafıza ve alt ajanlar gibi bileşenler optimize edilebiliyor.",
+    "Google, Gemini 3.5 Flash ve GLM-5 modelleriyle yapılan testlerde tek bir iyileştirme turunun bile orijinal performansı aştığını gösterdi."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Kendini geliştiren AI ajanları için açık kaynak bir araç sunulması, araştırma ve uygulama geliştirmede yeni bir paradigma oluşturuyor ve sektördeki adaptasyon hızını artırıyor.",
+  "etiketler": [
+    "AI",
+    "self-improving",
+    "open-source",
+    "agent",
+    "Google"
+  ],
+  "anilan_modeller": [
+    "Gemini 3.5 Flash",
+    "GLM-5"
+  ],
+  "yorum_tr": "Harness2, AI ajanlarının çevresel yapılarını otomatik olarak iyileştirmesine imkan tanıyarak geliştirme maliyetlerini düşürür ve performans artışı sağlar. Geliştiriciler, bu aracı farklı modeller ve görevlerde kullanarak daha esnek ve sürdürülebilir sistemler oluşturabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/zhvkeo9uyawh1.jpeg?width=640&crop=smart&auto=webp&s=ff3ef8c83c84a4446349c448279fc4d57b56aa7b",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x9gfnb/google_open_sources_harness2_for_self_improving/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-18T22:33:51.000Z",
+  "slug": "google-open-sources-harness2-for-self-improving-ai-agents"
+}

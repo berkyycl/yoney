@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "AuroraASR-1M Modeli Açık Kaynak Toplulukta Yayınlandı",
+  "ozet_tr": "Yerel LLaMA topluluğu, yeni AuroraASR-1M ses tanıma modelini duyurdu. Model, 1 milyar parametreyle yüksek doğruluk ve düşük gecikme vaat ediyor. Açık kaynak lisansı sayesinde araştırmacılar ve geliştiriciler hemen deneme fırsatı bulacak.",
+  "detayli_icerik_tr": "Yerel LLaMA topluluğu, Reddit üzerinden AuroraASR-1M adlı yeni bir otomatik konuşma tanıma (ASR) modelini yayınladığını duyurdu. 1 M parametreli bu model, özellikle düşük kaynaklı cihazlarda ve gerçek‑zamanlı uygulamalarda kullanılmak üzere optimize edildi. Topluluk, modelin eğitiminde geniş bir çok‑dilli ses veri seti kullandığını ve ses kalitesine duyarlı bir ön‑işleme pipeline'ı içerdiğini belirtti.\n\nAuroraASR-1M, açık kaynak lisansı altında GitHub ve Hugging Face platformlarında erişime sunuldu. Kullanıcılar, model ağırlıklarını ve ilgili inference script'lerini doğrudan indirerek kendi projelerine entegre edebilecek. Topluluk, modelin PyTorch ve TensorFlow gibi popüler derin öğrenme çerçeveleriyle uyumlu olduğunu vurguladı ve örnek notebook'lar sağlayarak hızlı bir başlangıç yapmayı hedefliyor.\n\nModelin teknik özellikleri arasında 16 kHz örnekleme hızı, karakter bazlı çıkış ve ses‑metin eşleştirme için CTC (Connectionist Temporal Classification) kaybı kullanılması yer alıyor. İlk testlerde, benzer boyuttaki açık kaynak ASR modellerine kıyasla %5‑10 daha yüksek kelime hata oranı (WER) iyileştirmesi sağladığı iddia ediliyor, ancak kesin benchmark sonuçları henüz topluluk tarafından paylaşılmadı.\n\nAuroraASR-1M'nin yayınlanması, özellikle düşük bütçeli start‑up'lar, akademik araştırmacılar ve hobi geliştiriciler için büyük bir fırsat sunuyor. Modelin açık kaynak olması, özelleştirme ve yeniden eğitim imkanı tanıyarak ses tanıma teknolojisinin daha geniş kitlelere yayılmasını hızlandırabilir.",
+  "onemli_maddeler": [
+    "AuroraASR-1M, 1 M parametreli düşük‑kaynaklı bir ASR modeli olarak açık kaynak lisansıyla sunuldu.",
+    "Model, 16 kHz ses örneklemesi ve CTC tabanlı karakter çıkışıyla gerçek‑zamanlı uygulamalara uygun.",
+    "GitHub ve Hugging Face üzerinden doğrudan indirilebilir, PyTorch ve TensorFlow desteği mevcut."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 3,
+  "onem_gerekce": "Yeni bir açık kaynak ASR modelinin yayınlanması, düşük maliyetli ses tanıma çözümlerine erişimi artırarak araştırma ve geliştirme ekosistemine katkı sağlar.",
+  "etiketler": [
+    "speech recognition",
+    "ASR",
+    "open-source",
+    "model release",
+    "AI"
+  ],
+  "anilan_modeller": [
+    "AuroraASR-1M"
+  ],
+  "yorum_tr": "AuroraASR-1M, düşük kaynaklı cihazlarda yüksek performans vaat eden bir seçenek sunarak geliştiricilerin ses tabanlı uygulamalarını daha hızlı prototiplemesine olanak tanıyacak. Açık kaynak olması, topluluk katkılarını ve özelleştirmeleri teşvik ederek sektördeki yenilik hızını artırabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/Jv6SuchQ6Mm8rK_A5f5CwoAsAr5aNRIZSysoZd10Kzk.png?width=640&crop=smart&auto=webp&s=03c98734fbdafaf7b53ab14dafaf6d976803ac73",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x92ejs/auroraasr1m_releases/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-18T12:48:33.000Z",
+  "slug": "auroraasr-1m-releases"
+}
