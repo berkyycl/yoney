@@ -1,0 +1,61 @@
+{
+  "baslik_tr": "Embedding Gemma 2 ile Görsellerde Metin Arama: Cosine Similarity Testleri",
+  "ozet_tr": "Embedding Gemma 2 (330 MB, Q8, 768‑dimensional) modeli, görsel roman ekran görüntülerinde metin tabanlı arama yapmak için denendi ve sonuçlar hem çok dillilik hem de metin‑görsel etkileşimin sınırlı olduğunu gösterdi. Kullanıcı, benzerlik skorlarını görselleştirerek modelin güçlü ve zayıf yönlerini ortaya koydu.",
+  "detayli_icerik_tr": "Reddit topluluğu üyesi jupiterbjy, Embedding Gemma 2 modelini Llama CPP üzerinden çalıştırarak 3003 görselden oluşan iki farklı görsel roman veri setinde (Hanasaki Workspring ve Irotoridori no Hikari) metin‑görsel sorgu testleri gerçekleştirdi. Model, Q8_0 kuantizasyonu ile 330 MB boyutunda olup 4096 token bağlam uzunluğuna sahip bir embedding sınırlaması taşıyor; tüm görüntüler aynı boyutta işlenerek bir vektör veri tabanına (VectorDB) kaydedildi.\n\nTestlerde, \"image with sentence 삼각건이 머리에 얹어졌다\" gibi tam cümle sorguları ile görüntüler arasındaki kosinüs benzerliği ölçüldü. En yüksek benzerlik 0.76813, en düşük ise 0.62414 gibi değerler elde edildi. Sonuçlar, metin öğelerinin (kelime varlığı) görsel özelliklerden daha baskın bir etki yarattığını, özellikle tek kelime varlığının (ör. \"삼각건\") benzerlik farkını artırdığını gösterdi. Modelin çok dillilik desteği sınırlı; Korece ve İngilizce kelimeler arasında tutarlı benzerlik sağlarken, Japonca gibi dillerde düşük skorlar gözlendi.\n\nGörsel özelliklerin (ör. saç rengi, yüz ifadesi) benzerlik skorlarına etkisi ise düşük bulundu; veri setindeki %90'lık bir oranla aynı kızın farklı pozları benzer skorlar üretti. Kullanıcı, sorgu ifadesinin dikkatli seçilmesi gerektiğini, örneğin \"blond\" ve \"blonde\" gibi ince farkların sonuçları değiştirebileceğini belirtti. İşlem süresi ise 3003 görüntünün indekslenmesi için 510.10 saniye (≈5.9 görüntü/saniye) ve sorgu süresi ise anlık olarak gerçekleşti.\n\nBu deney, Embedding Gemma 2'nin düşük boyutlu bir embedding modeli olarak metin‑görsel aramalarda kullanılabilir olduğunu, ancak görsel içeriklerin ayırt edilebilmesi için daha yüksek boyutlu veya multimodal modellerin tercih edilmesi gerektiğini ortaya koydu. Kullanıcı, daha fazla test ve örnek sorgu görselleri paylaşma sözü vererek topluluğun geri bildirimine açık olduğunu vurguladı.",
+  "onemli_maddeler": [
+    "Embedding Gemma 2, 330 MB boyutunda ve 768‑dimensional embedding ile metin‑görsel aramalarda çalışabiliyor.",
+    "Testlerde metin öğeleri görsel özelliklerden daha yüksek kosinüs benzerliği sağladı; tek kelime varlığı büyük fark yarattı.",
+    "Modelin çok dillilik performansı sınırlı; Korece ve İngilizce iyi sonuç verirken Japonca düşük skorlar üretiyor.",
+    "İndeksleme hızı 5.9 görüntü/saniye, sorgu anlık olarak en yüksek 0.76813 benzerlik skoru verdi."
+  ],
+  "kategori": "benchmark",
+  "onem": 3,
+  "onem_gerekce": "Topluluk içinde yapılan deneysel bir test olduğu için sektörel etkisi sınırlı, ancak düşük boyutlu embedding modellerinin çok dillilik ve görsel‑metin entegrasyonu konusundaki potansiyelini gösteriyor.",
+  "etiketler": [
+    "embedding",
+    "image-search",
+    "cosine-similarity",
+    "multilingual",
+    "benchmark"
+  ],
+  "anilan_modeller": [
+    "Embedding Gemma 2"
+  ],
+  "yorum_tr": "Bu test, küçük boyutlu embedding modellerinin metin‑ağırlıklı görsel aramalarda işe yarayabileceğini, fakat görsel detayları yakalamada yetersiz kalabileceğini ortaya koyuyor; geliştiriciler daha büyük multimodal modelleri tercih etmeli.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Embedding Gemma 2",
+      "benchmark": "Cosine Similarity Retrieval (top‑1)",
+      "skor": 0.76813,
+      "birim": "cosine",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "top‑1 similarity",
+      "kaynak_metinden_alinti": "Top-5: 0.76813 +0.01052 Artemis_2026-09-08-00-57-38.jpg ..."
+    },
+    {
+      "model": "Embedding Gemma 2",
+      "benchmark": "Cosine Similarity Retrieval (example sentence)",
+      "skor": 0.71156,
+      "birim": "cosine",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "sentence query",
+      "kaynak_metinden_alinti": "image with sentence 삼각건이 머리에 얹어졌다 0.71156 +0.00810 (38.jpg)"
+    },
+    {
+      "model": "Embedding Gemma 2",
+      "benchmark": "Cosine Similarity Retrieval (keyword query)",
+      "skor": 0.69251,
+      "birim": "cosine",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "single word query",
+      "kaynak_metinden_alinti": "image with word 삼각건 0.69251 +0.01211"
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/tx0dii55c9wh1.png?width=640&crop=smart&auto=webp&s=2e6e4c2290e2cef5b68b648253eb42fe85e075ef",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x9acj4/embedding_model_can_be_used_to_search_text_inside/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-18T18:22:43.000Z",
+  "slug": "embedding-model-can-be-used-to-search-text-inside-image"
+}

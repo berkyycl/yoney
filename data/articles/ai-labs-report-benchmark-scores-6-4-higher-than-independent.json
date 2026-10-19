@@ -1,0 +1,40 @@
+{
+  "baslik_tr": "AI laboratuvarları kendi benchmark puanlarını bağımsız testçilerden ortalama %6,4 daha yüksek raporladı",
+  "ozet_tr": "WhatModel.sh adlı açık kaynak AI lider tablosu, 1.629 yayınlanmış benchmark sonucunu analiz ederek laboratuvarların aynı modeller için bağımsız testçilerden ortalama %6,4 daha yüksek puan bildirdiğini ortaya koydu. Çalışma, 180 modeli 103 farklı benchmarkta karşılaştırdı ve verileri CC BY‑SA 4.0 lisansı altında paylaşıyor.",
+  "detayli_icerik_tr": "Jake Manger, WhatModel.sh projesi kapsamında 1.629 yayınlanmış benchmark sonucunu toplayıp 611 eşleşen karşılaştırma oluşturdu. Bu karşılaştırmalar, 180 farklı yapay zeka modelinin aynı testlerde laboratuvar içi raporları ile bağımsız testçilerin sonuçlarını yan yana getiriyor. Analiz sonucunda, laboratuvarların raporladığı puanların ortalama %6,4 daha yüksek olduğu belirlendi.\n\nBu fark, aynı modelin aynı benchmarkta iki farklı kaynaktan elde edilen sonuçları arasındaki tutarsızlığı gösteriyor. Laboratuvar raporları genellikle modelin en iyi performansını vurgularken, bağımsız testçiler daha geniş bir test seti ve farklı koşullarla ölçüm yapıyor. Sonuç olarak, model performansının gerçek dünyadaki yansımaları konusunda şeffaflık ve güvenilirlik soruları gündeme geliyor.\n\nWhatModel.sh, elde edilen veri setini Creative Commons BY‑SA 4.0 lisansı altında sunuyor; kod ise MIT lisansı ile açık kaynak. Her model sayfasında kaynak ve lisans bilgileriyle birlikte ilgili benchmark linkleri bulunuyor. Kullanıcılar interaktif grafiği https://whatmodel.sh/claims adresinden inceleyebilir ve GitHub üzerindeki https://github.com/jakemanger/whatmodel deposuna katkıda bulunabilir.\n\nBu bulgular, AI araştırma topluluğu için hem metodolojik bir uyarı hem de veri paylaşımının önemini vurgulayan bir örnek teşkil ediyor. Laboratuvarların raporlarını bağımsız testlerle çapraz kontrol etme ihtiyacı, model değerlendirme standartlarının yeniden gözden geçirilmesini tetikleyebilir.",
+  "onemli_maddeler": [
+    "1,629 benchmark sonucundan 611 eşleşen karşılaştırma oluşturuldu.",
+    "180 model, 103 farklı benchmarkda incelendi ve laboratuvar raporları ortalama %6,4 daha yüksek çıktı.",
+    "Veri seti CC BY‑SA 4.0, kod MIT lisansı ile açık kaynak olarak paylaşılıyor."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Laboratuvar raporları ile bağımsız test sonuçları arasındaki tutarsızlık, model performansının değerlendirilmesinde güvenilirlik ve şeffaflık açısından kritik bir soruna işaret ediyor.",
+  "etiketler": [
+    "benchmark",
+    "AI labs",
+    "model evaluation",
+    "open source",
+    "transparency"
+  ],
+  "anilan_modeller": [],
+  "yorum_tr": "Bu bulgu, AI geliştiricileri ve kullanıcıları için model performansını bağımsız olarak doğrulamanın önemini bir kez daha ortaya koyuyor; aynı zamanda laboratuvarların raporlama süreçlerinde daha fazla şeffaflık talep edilmesine yol açabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Various (180 models)",
+      "benchmark": "Aggregated lab vs independent benchmark comparison",
+      "skor": 6.4,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "average across 103 benchmarks",
+      "kaynak_metinden_alinti": "AI labs reported scores 6.4% higher on average for the same models on the same tests."
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/d4j3ywip3dwh1.png?width=640&crop=smart&auto=webp&s=dcb1622e753e378a642d28099031fbe4222aa2cc",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x9skrx/ai_labs_report_benchmark_scores_64_higher_than/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-19T09:47:55.000Z",
+  "slug": "ai-labs-report-benchmark-scores-6-4-higher-than-independent"
+}

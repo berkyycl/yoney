@@ -1,0 +1,48 @@
+{
+  "baslik_tr": "Nemotron 3.5 Super VL'yi Göz Ardı Etmeyin",
+  "ozet_tr": "Reddit topluluğu, Nemotron 3.5 Super VL 120B-A12B modelinin, Anno 1602 gibi nadir bilgi gerektiren bir benchmark'ta altı model arasında birinci sırada yer aldığını duyurdu. Model, önceki nesillere kıyasla sadece küçük hatalar yaparken, diğerleri büyük ölçüde hatalı sonuçlar verdi. Ayrıca modelin çift RTX 5060 Ti üzerinde NVFP4 kuantizasyonu ile yüksek hızda çalıştığı belirtildi.",
+  "detayli_icerik_tr": "Reddit'in LocalLLaMA topluluğunda paylaşılan bir gönderide, yazar kendi geliştirdiği \"obscure knowledge\" benchmark'ını kullandı. Bu test, 1998 çıkışlı Anno 1602 oyununun kuralları ve çeşitli sürümlerine dair detayları sorguluyor; web araması yasak. Testte altı farklı büyük dil modeli karşılaştırıldı.\n\nSıralama (1 en yüksek, 6 en düşük) şu şekilde gerçekleşti: Nemotron 3.5 Super VL 120B-A12B birinci, Gemma 4 31B IT QAT dördüncü, DeepSeek v4 Flash Vision Exp beşinci, Qwen3.5-122B-A12B altıncı ve Qwen3.8‑flash‑next ile GPT‑OSS 120B da benzer hatalar üretti. Nemotron, \"hallucinated\" hatalarını büyük ölçüde azaltarak yalnızca küçük eksiklikler gösterdi; diğer modeller ise gereksinim ve oyun sürümleri konusunda ciddi hatalar yaptı.\n\nModelin performansı sadece doğrulukla sınırlı kalmadı. Yazar, NVFP4 kuantizasyonu ile eğitilmiş Nemotron'un çift RTX 5060 Ti 16 GB GPU (her biri 48 GB DDR5‑6000 MHz) üzerinde yaklaşık 8‑10 token/s üretim ve 150‑170 token/s işleme hızı sağladığını belirtti. MTP, katman bölme ve Vulkan gibi ek optimizasyonlar kullanılmadı.\n\nİnferans için kullanılan araçlar llama.cpp 0.7.0 ve ilgili GGUF kuantizasyon dosyalarıydı. Paylaşılan bağlantılarda her modelin hangi kuantizasyon formatı (Q4_K_S, Q4_K_XL, Q2_K_XL vb.) ve Hugging Face deposu olduğu listelendi. Bu detaylar, araştırmacıların ve geliştiricilerin benzer donanım ve yazılım ortamlarında aynı testleri tekrarlamasına olanak tanıyor.",
+  "onemli_maddeler": [
+    "Nemotron 3.5 Super VL 120B-A12B, Anno 1602 bilgi testinde 1. sırada yer alarak diğer modellerden belirgin bir üstünlük gösterdi.",
+    "Modelin hataları büyük ölçüde azaldı; sadece küçük eksiklikler kaldı, diğer modeller ise ciddi \"hallucination\" hataları üretti.",
+    "NVFP4 kuantizasyonu ve çift RTX 5060 Ti 16 GB GPU ile ~8‑10 t/s üretim ve 150‑170 t/s işleme hızı sağlandı.",
+    "Benchmark, llama.cpp 0.7.0 ve çeşitli GGUF kuantizasyon formatları kullanılarak gerçekleştirildi."
+  ],
+  "kategori": "benchmark",
+  "onem": 3,
+  "onem_gerekce": "Nadir bilgi alanında büyük bir modelin diğer popüler modelleri geride bırakması, özel görevlerde model seçimini etkileyebilir ancak geniş çaplı sektörel etki sınırlıdır.",
+  "etiketler": [
+    "Nemotron",
+    "LLM",
+    "benchmark",
+    "Anno 1602",
+    "kuantizasyon"
+  ],
+  "anilan_modeller": [
+    "Nemotron 3.5 Super VL 120B-A12B",
+    "Gemma 4 31B IT QAT",
+    "DeepSeek v4 Flash Vision Exp",
+    "Qwen3.5-122B-A12B",
+    "Qwen3.8-flash-next",
+    "GPT-OSS 120B"
+  ],
+  "yorum_tr": "Bu sonuç, kuantize edilmiş görsel‑dil modellerinin niş bilgi alanlarında yüksek doğruluk sağlayabileceğini gösteriyor; geliştiriciler, özel veri setleriyle performans artırmak için Nemotron gibi modelleri tercih edebilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Nemotron 3.5 Super VL 120B-A12B",
+      "benchmark": "Obscure Anno 1602 knowledge test",
+      "skor": 1,
+      "birim": "rank",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "1=highest, 6=lowest",
+      "kaynak_metinden_alinti": "Ranking order (1 highest, 6 lowest):  Nemotron 3.5 Super VL 120B-A12B: Hallucionated salt for citizen to merchant, left out church for settlers, left out required landmarks for merchant and aristocrat"
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/pc1nvwhxhcwh1.jpeg?width=640&crop=smart&auto=webp&s=150aff6794a164226f58754dda4ae33b2c3744c7",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x9mwmz/dont_sleep_on_nemotron_35_super_vl/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-19T04:01:26.000Z",
+  "slug": "don-t-sleep-on-nemotron-3-5-super-vl"
+}
