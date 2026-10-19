@@ -1,0 +1,46 @@
+{
+  "baslik_tr": "TorchNeuron: AWS Trainium’da Hugging Face Modelleri Çalıştırmak Artık Çok Kolay",
+  "ozet_tr": "Hugging Face, AWS Trainium için yeni bir PyTorch eklentisi olan TorchNeuron’u kamu beta aşamasına taşıdı. Bu eklenti, eager execution, torch.compile ve yerel dağıtık API'leriyle modellerin Trainium üzerinde sorunsuz çalışmasını sağlıyor ve Transformers, Diffusers gibi popüler kütüphanelerle tam uyum sunuyor.",
+  "detayli_icerik_tr": "TorchNeuron, PyTorch için yeni bir backend sağlayarak AWS Trainium ve Inferentia çiplerine doğal bir cihaz desteği ekliyor. Optimum‑Neuron'un lazy‑tensor ve statik şekil gereksinimlerini ortadan kaldırarak, eager execution ve torch.compile entegrasyonu sayesinde geliştiriciler aynı PyTorch kodlarını değişiklik yapmadan Trainium’da çalıştırabiliyor. Ayrıca DTensor, FSDP2 gibi dağıtık primitifler ve tensor‑parallel (TP) desteği de yerleşik olarak sunuluyor.\n\nHugging Face kütüphaneleri bu yeni cihazı diğer hızlandırıcılar gibi kullanabiliyor. Transformers, Diffusers, Accelerate, PEFT ve TRL gibi paketlerde sadece `device_map=neuron` argümanını eklemek yeterli; model otomatik olarak Trainium cihazına taşınıyor. Özellikle metin üretiminde, TorchNeuron ile en çok kullanılan 100 model mimarisinin %89’u anında destekleniyor; bu oran Optimum‑Neuron v0.4.5’te %46’ya tekabül ediyordu.\n\nEğitim sürecinde de aynı rahatlık devam ediyor. TorchNeuron, TRL’in SFTTrainer’ı gibi standart eğitim betiklerini neredeyse hiç değişiklik yapmadan Trainium’da çalıştırmaya izin veriyor. Tensor‑parallel ve FSDP kombinasyonu sayesinde 8 Trainium2 çipi (32 NeuronCore) üzerinde 4×8 bir paralellik ızgarası kurularak büyük modellerin 2048 token’a kadar sabit şekillerle verimli bir şekilde eğitilmesi mümkün. Dinamik şekil derlemesi hâlâ desteklenmese de, torch.compile ile statik grafikler yeniden kullanılabiliyor ve asenkron ağırlık yükleme devre dışı bırakılıyor.\n\nDiffusers kütüphanesindeki görüntü üretim pipeline’ları da TorchNeuron ile uyumlu. FLUX.1‑dev, FLUX.2, Qwen‑Image ve Qwen‑Image‑2.1 gibi modeller tensor‑parallel çalıştırılarak yüksek verim elde edilebiliyor. Ayrıca Neuron Kernel Interface (NKI) sayesinde geliştiriciler kendi özel kernel’lerini yazarak örneğin vision transformer’larda %2.4’e varan hız artışı sağlayabiliyor. TorchNeuron, 20 Ekim 2026’dan itibaren `pip install torch-neuronx` komutuyla erişilebilir olacak.",
+  "onemli_maddeler": [
+    "TorchNeuron, PyTorch’un native backend’i olarak Trainium’da eager execution ve torch.compile desteği sunuyor",
+    "Transformers kütüphanesinde en çok kullanılan 100 metin‑üretim modelinin %89’u anında destekleniyor (Optimum‑Neuron %46)",
+    "Eğitimde standart Hugging Face araçlarıyla, TP ve FSDP kombinasyonu sayesinde 8 Trainium2 çipinde büyük modeller sorunsuz eğitilebiliyor",
+    "Diffusers pipeline’ları ve özel NKI kernel’leri ile görüntü üretiminde de yüksek paralellik ve %2.4’e varan hız artışı sağlanıyor"
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "TorchNeuron, AWS Trainium üzerinde Hugging Face modellerinin kullanımını büyük ölçüde basitleştirerek hem araştırmacıların hem de üretim ekiplerinin verimliliğini artırıyor; yeni native entegrasyon ve geniş model desteği sektördeki AI altyapı stratejilerini etkileyebilir.",
+  "etiketler": [
+    "TorchNeuron",
+    "AWS Trainium",
+    "Hugging Face",
+    "PyTorch",
+    "Transformers"
+  ],
+  "anilan_modeller": [
+    "Qwen/Qwen3.8-27B",
+    "Qwen/Qwen-Image-2.1",
+    "FLUX.1-dev",
+    "FLUX.2"
+  ],
+  "yorum_tr": "TorchNeuron, Trainium üzerindeki geliştirme ve dağıtım süreçlerini standart PyTorch akışına entegre ederek hem maliyet hem de zaman açısından önemli tasarruflar sunuyor. Geniş model desteği ve yerel dağıtık API’ler, büyük ölçekli AI projelerinin bulut altyapısına geçişini hızlandıracak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "TorchNeuron",
+      "benchmark": "Top 100 text‑generation model support",
+      "skor": 89,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "With TorchNeuron, 89% of the top 100 most‑used text‑generation model architectures are supported out of the box, compared to 46% with Optimum Neuron v0.4.5."
+    }
+  ],
+  "gorsel_url": "https://huggingface.co/blog/assets/hf-torchneuron/thumbnail.png",
+  "url": "https://huggingface.co/blog/hf-torchneuron",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-10-19T00:00:00.000Z",
+  "slug": "torchneuron-running-hf-models-on-aws-trainium-is-easier-than"
+}

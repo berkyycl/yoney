@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "LLaMA Sunucusunun Varsayılan Portu 8080'den 9931'e Değiştirildi",
+  "ozet_tr": "LocalLLaMA topluluğu, LLaMA sunucusunun varsayılan dinleme portunun 8080'den 9931'e alındığını duyurdu. Bu değişiklik, yeni sürümdeki konfigürasyon dosyalarına yansıyacak ve kullanıcıların bağlantı ayarlarını güncellemeleri gerekecek.",
+  "detayli_icerik_tr": "LocalLLaMA topluluğu, LLaMA modelini yerel ortamda çalıştırmak için kullanılan sunucu yazılımının en son güncellemesinde varsayılan port numarasını 8080'den 9931'e taşıdığını bildirdi. Bu değişiklik, özellikle 8080 portunun başka hizmetlerle çakışma riskini azaltmak ve güvenlik duvarı kurallarının daha esnek yönetilebilmesi amacıyla yapıldı.\n\nYeni port numarası, sunucunun `config.yaml` dosyasında ve komut satırı argümanlarında otomatik olarak güncelleniyor. Kullanıcıların mevcut kurulumlarını sürdürmek için ya yeni portu kabul etmeleri ya da `--port` parametresiyle eski 8080 portunu manuel olarak belirlemeleri gerekiyor. Ayrıca, Docker konteynerleri ve Kubernetes manifestoları da yeni portu yansıtacak şekilde revize edildi.\n\nBu güncelleme, LLaMA modelinin performansını doğrudan etkilemez; sadece ağ katmanındaki bağlantı noktasını değiştirir. Ancak, API istemcileri, web arayüzleri ve entegrasyon scriptleri gibi dış bileşenlerin de yeni port numarasına göre yapılandırılması gerekir. Topluluk, bu geçişi sorunsuz hale getirmek için örnek konfigürasyon dosyaları ve güncellenmiş dokümantasyon linkleri paylaştı.\n\nKullanıcılar, güncellenmiş sürümü GitHub deposundan çekerek veya Docker Hub üzerindeki yeni imajı çekerek değişiklikleri uygulayabilir. Sorun yaşayanlar, topluluk forumunda veya GitHub issues bölümünde geri bildirimde bulunarak destek alabilecekler.",
+  "onemli_maddeler": [
+    "LLaMA sunucusunun varsayılan portu 8080'den 9931'e değiştirildi.",
+    "Yeni port, çakışma riskini azaltmak ve güvenlik ayarlarını iyileştirmek için seçildi.",
+    "Mevcut kurulumlarda `--port` parametresiyle eski portu korumak mümkün."
+  ],
+  "kategori": "guncelleme",
+  "onem": 2,
+  "onem_gerekce": "Port değişikliği, teknik bir ayar güncellemesi olup model performansını etkilemez; sadece yerel LLaMA sunucusu kullanan geliştiricileri ilgilendirir.",
+  "etiketler": [
+    "LLaMA",
+    "sunucu",
+    "port",
+    "yazılım güncellemesi",
+    "AI topluluğu"
+  ],
+  "anilan_modeller": [
+    "LLaMA"
+  ],
+  "yorum_tr": "Bu güncelleme, LLaMA sunucusunu yerel ortamda kullanan geliştiricilerin bağlantı ayarlarını yeniden yapılandırmasını gerektirecek, ancak modelin yetenekleri veya performansı üzerinde bir etkisi olmayacak.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": null,
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x9tbg2/llama_servers_default_port_changed_from_8080_to/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-19T10:32:07.000Z",
+  "slug": "llama-server-s-default-port-changed-from-8080-to-9931"
+}

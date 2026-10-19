@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "inclusionAI'nin Ming-3.0-audio-flash Modeli Açıklandı",
+  "ozet_tr": "inclusionAI, 126 Milyar parametreli Ming-3.0-audio-flash modelini duyurdu. Model, ses ve metin girdilerini aynı anda işleyerek konuşma tanıma, sesli soru‑cevap, uzun‑sesli içerik analizi ve isteğe bağlı sentezlenmiş konuşma üretme yetenekleri sunuyor.",
+  "detayli_icerik_tr": "inclusionAI, yeni Ming-3.0-audio-flash modelini GitHub, ModelScope ve Hugging Face platformlarında yayınladı. Model, 126 Milyar toplam parametreye sahip bir Mixture‑of‑Experts (MoE) mimarisi kullanıyor ve her çıkarım adımında yalnızca 6,5 Milyar parametre aktif hâle geliyor, bu da yüksek performans ve düşük maliyet dengesini sağlıyor.\n\nMing-3.0-audio-flash, ses ve metin talimatlarını aynı anda alabiliyor ve çıktıyı metin olarak ya da isteğe bağlı olarak sentezlenmiş sesle sunabiliyor. Çince ve İngilizce dillerinde, çeşitli aksan ve lehçelerle, gürültülü ortamlar ve çoklu konuşmacı kayıtlarıyla başa çıkabilen model, karmaşık konuşma tanıma ve uzun‑süreli ses dosyalarının derinlemesine anlaşılması konusunda öne çıkıyor.\n\nModelin çok boyutlu algı yeteneği, sadece konuşmayı değil, konuşma dışı sesleri, akustik sahneleri ve müziği de tanıyıp analiz edebiliyor. Bu sayede ses tabanlı sorgulara mantıksal çıkarım yaparak yanıt verebiliyor ve sesli etkileşimlerde hem metin hem de sentezli ses yanıtları üretebiliyor. Geliştiriciler, yerleşik ses sentezleme motorları ya da referans ses dosyalarıyla özelleştirilmiş ses çıktıları oluşturabiliyor.\n\nMing-3.0-audio-flash MIT lisansı altında açık kaynak olarak sunuluyor, bu da araştırmacıların ve uygulama geliştiricilerinin modeli özgürce incelemesine, uyarlamasına ve dağıtmasına olanak tanıyor. Modelin hem akademik hem de ticari projelerde kullanılabilmesi, ses‑tabanlı yapay zeka uygulamalarının geliştirilmesinde yeni bir dönemi işaret ediyor.",
+  "onemli_maddeler": [
+    "126 B parametreli MoE mimarisi, her adımda sadece 6,5 B aktif parametre ile yüksek verimlilik sağlıyor.",
+    "Çince ve İngilizce dahil olmak üzere çeşitli aksan ve lehçelerde ses tanıma ve uzun‑sesli içerik analizi yeteneği.",
+    "Ses, müzik, akustik sahneler ve konuşma dışı sesleri algılayarak çok yönlü ses‑anlama ve akıl yürütme kapasitesi.",
+    "İsteğe bağlı sentezli konuşma çıktısı ve MIT lisansı sayesinde açık kaynak erişimi."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Ming-3.0-audio-flash, büyük ölçekli ses‑dil modeli pazarına yeni bir MoE tabanlı çözüm getirerek çok dilli ve çok ortamlı ses işleme yeteneklerini açık kaynak olarak sunmasıyla sektörde önemli bir adım oluşturuyor.",
+  "etiketler": [
+    "audio-language model",
+    "inclusionAI",
+    "Ming-3.0",
+    "multilingual",
+    "open-source"
+  ],
+  "anilan_modeller": [
+    "Ming-3.0-audio-flash"
+  ],
+  "yorum_tr": "Bu model, ses‑tabanlı yapay zeka uygulamalarının geliştirilmesinde maliyet ve performans dengesini iyileştirerek geliştiricilere daha geniş bir yelpazede yenilikçi çözümler üretme imkânı tanıyacak.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/sR-BYK7ed7KRA03DrY9OvfMwhU-6dxKjTmr7F5bOF24.png?width=640&crop=smart&auto=webp&s=9c6aa0f506d096e350e0107f28634bb725a5b217",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x9yd01/inclusionaiming30audioflash_hugging_face/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-19T14:27:16.000Z",
+  "slug": "inclusionai-ming-3-0-audio-flash-hugging-face"
+}

@@ -1,0 +1,36 @@
+{
+  "baslik_tr": "Nvidia, Kurumsal ve PC'lerde Çalışacak Açık Ağırlıklı Nemotron 3.5 Modellerini Tanıttı",
+  "ozet_tr": "Nvidia, 120 milyar parametreli Nemotron 3.5 Super VL ve iki hafif Bolt modeliyle, her ölçekten kurumu ve son kullanıcıyı hedefleyen açık ağırlıklı yapay zeka modellerini duyurdu. Yeni modeller, hem veri merkezlerinde hem de Nvidia RTX Spark çipli AI PC'lerde yerel olarak çalışacak şekilde optimize edildi.",
+  "detayli_icerik_tr": "Nvidia, Perşembe günü duyurduğu yeni açık‑ağırlıklı modelleriyle, sürekli çalışan ajanlar ve kenar bilişim (edge computing) senaryolarına odaklandı. 120 milyar parametreli Nemotron 3.5 Super VL, kurumsal düzeydeki ajan uygulamaları için tasarlandı ve Nemotron 3 Ultra'dan daha az parametreye sahip olmasına rağmen talimat takibi ve araç kullanımında benzer doğruluk seviyeleri sunuyor. Şirket, Super VL'nin belge zekâsı, finansal muhasebe, bilimsel deney, sağlık sigortası talepleri ve güvenlik saldırı dayanıklılığı gibi görevlerde Anthropic ve OpenAI modellerine göre daha hızlı sonuç verdiğini iddia ediyor.\n\nAynı zamanda Nvidia, iki yeni hafif Bolt modelini tanıttı. Nemotron 3.5 Bolt 74B‑A9B 24GB, 74 milyar parametreli olup çok adımlı akıl yürütme, araç çağrısı ve web tarama gibi yerel ajan görevlerini dengeleyerek hız ve mantık arasında optimum bir performans sağlıyor. En küçük Bolt E4B ise sohbet ajanları için tasarlandı ve bu ayın ilerleyen günlerinde piyasaya sürülecek. Bu modeller, yeni nesil AI PC'lerde (RTX Spark çipli) ve DGX Spark iş istasyonlarında çalışacak şekilde paketlenerek Microsoft ve Dell gibi ortaklar aracılığıyla satışa sunuluyor.\n\nNvidia, bu adımla kurumların kapalı (closed) frontier modellerine alternatif olarak açık modelleri kendi veri merkezlerinde eğitip dağıtabilmelerini ve sonuçların tam mülkiyetini ellerinde tutabilmelerini hedefliyor. Vice President Kari Briski, \"Açık, optimize edilmiş bir model sayesinde kurumlar yetenek ve dağıtım kolaylığı arasında seçim yapmak zorunda kalmayacak\" diyerek stratejik vizyonu vurguladı. Açık modellerin yanı sıra, tüketici düzeyinde AI asistanları pazarına da girerek, kullanıcıların gizlilik endişelerini giderecek şekilde bulut yerine yerel cihazlarda çalışabilen çözümler sunmayı amaçlıyor.\n\nBu lansman, Nvidia'nın sadece GPU tedarikçisi olarak kalmayıp, AI altyapısı ve model ekosisteminde de lider konumunu pekiştirmesine işaret ediyor. Şirket, hem büyük ölçekli kurumsal müşterileri (Skydance, EY, Ramp, Crowdstrike, Perplexity, Salesforce) hem de bireysel geliştiricileri ve bilgi çalışanlarını hedefleyen bir pazar yaratmayı planlıyor.",
+  "onemli_maddeler": [
+    "Nemotron 3.5 Super VL, 120 milyar parametreyle kurumsal ajan uygulamaları için yüksek doğruluk ve hız vaat ediyor.",
+    "Bolt 74B‑A9B ve Bolt E4B modelleri, RTX Spark çipli AI PC'lerde ve DGX Spark iş istasyonlarında yerel çalışacak şekilde tasarlandı.",
+    "Açık‑ağırlıklı modeller, kurumların kendi verileriyle yeniden eğitim yapabilmesi ve altyapı üzerinde tam mülkiyet sağlaması için sunuldu.",
+    "Nvidia, Super VL'nin belge zekâsı, finans, bilim, sağlık sigortası ve güvenlik gibi görevlerde rakiplerinden daha hızlı olduğunu iddia ediyor.",
+    "Yeni AI PC'ler, tüketicilere buluta bağımlı olmadan günlük projeleri devretme imkanı tanıyarak gizlilik odaklı bir pazar yaratmayı hedefliyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Nvidia, hem büyük ölçekli kurumsal müşteriler hem de son kullanıcılar için açık‑ağırlıklı modeller sunarak AI altyapısında yeni bir pazar yaratıyor; bu, sektörde model sahipliği ve dağıtım paradigmasını değiştirecek ölçekli bir adım olarak değerlendiriliyor.",
+  "etiketler": [
+    "Nvidia",
+    "Nemotron",
+    "AçıkModel",
+    "KurumsalAI",
+    "AIPC"
+  ],
+  "anilan_modeller": [
+    "Nemotron 3.5 Super VL",
+    "Nemotron 3.5 Bolt 74B-A9B",
+    "Bolt E4B"
+  ],
+  "yorum_tr": "Bu lansman, kurumların kapalı modeller yerine açık modelleri kendi veri merkezlerinde özelleştirerek kullanabilmelerine olanak tanıyacak ve AI PC pazarını da hızlandıracak. Geliştiriciler ve son kullanıcılar, daha düşük gecikme ve artırılmış gizlilikle yerel ajan çözümlerinden faydalanabilecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://techcrunch.com/wp-content/uploads/2024/11/GettyImages-2183848501.jpg?resize=1200,800",
+  "url": "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/",
+  "source": "TechCrunch AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-19T15:37:09.000Z",
+  "slug": "nvidia-launches-new-open-models-to-run-agents-in-the-enterpr"
+}

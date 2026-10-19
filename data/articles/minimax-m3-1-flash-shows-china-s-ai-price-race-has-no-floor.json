@@ -1,0 +1,83 @@
+{
+  "baslik_tr": "MiniMax M3.1 Flash, Çin'in AI fiyat yarışında maliyeti yarıya indirdi",
+  "ozet_tr": "MiniMax, yeni M3.1 Flash modelini tanıttı; Artificial Analysis Intelligence Index'te 42 puan alarak önceki sürümünden 13 puan daha yüksek ve görev başına maliyeti %50'den fazla düşürüyor. Model, karmaşık akıl yürütmede büyük ilerleme sağlarken hâlâ %93 oranında halüsinasyon gösteriyor.",
+  "detayli_icerik_tr": "MiniMax, Çin merkezli bir yapay zeka girişimi, M3.1 Flash adını verdiği yeni bir akıl yürütme modelini duyurdu. Model, Artificial Analysis Intelligence Index'te 42 puan elde ederek önceki M3 sürümünün 29 puanından önemli bir sıçrama yaptı ve GLM-5.3-Flash ile eşitlenirken Gemini 3.8 Flash'in (41 puan) önüne geçti. En dikkat çekici özelliği, aynı performansı yarı maliyetle sunması; görev başına ortalama $0.22 harcama gerektiriyor.\n\nM3.1 Flash, \"Humanity's Last Exam\" testinde %48 doğrulukla Deepseek V4.1 Flash 1017'nin (%43) ve GLM-5.3-Flash'in (%41) önünde yer alıyor. Fiziksel araştırma seviyesindeki soruları içeren CritPt benchmark'inde %22 başarı gösterirken, Deepseek'in %24'ü ve Gemini'nin %18'iyle kıyaslandığında rekabetçi bir konumda. AA-Omniscience testinde ise %56 doğru yanıtla rakiplerinden belirgin bir üstünlük sağladı.\n\nModel, bir milyon token'a kadar bağlamı işleyebiliyor ve hem metin hem de görsel girdileri kabul ediyor. API fiyatlandırması, giriş tokenları için milyon başına $0.15, çıkış tokenları için milyon başına $0.60 olarak belirlendi; önbelleğe alınmış girişler ise $0.015. MiniMax, modeli 23 Ekim'de açık ağırlıklarla (open weights) yayınlamayı planlıyor ve API şu anda platform.minimax.io adresinden erişilebilir. Ayrıca MiniMax Code adlı bir masaüstü uygulaması da sunuluyor.\n\nPerformans açısından M3.1 Flash, DeepSWE v1.1 benchmark'inde %73.7 başarı elde ederken, görev başına maliyetini $0.30'ın altında tutuyor. Ancak modelin %93 halüsinasyon oranı, belirsiz sorularda yanıt vermeye çalışmasından kaynaklanıyor ve bu durum güvenilirlik açısından bir zayıflık olarak öne çıkıyor.",
+  "onemli_maddeler": [
+    "M3.1 Flash, AI Index'te 42 puan alarak önceki sürümünden %13 daha yüksek performans gösterdi.",
+    "Görev başına maliyet $0.22'ye düşürülerek aynı zamanda %3 daha hızlı çalışıyor.",
+    "Humanity's Last Exam ve AA-Omniscience testlerinde rakip modelleri geride bıraktı.",
+    "Model %93 halüsinasyon oranına sahip, bu da güvenilirlik riskini artırıyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Yeni bir yüksek performanslı ve düşük maliyetli LLM'nin piyasaya sürülmesi, Çin'in AI rekabetinde fiyat ve performans dengesini yeniden şekillendirerek sektördeki fiyat savaşını derinleştiriyor.",
+  "etiketler": [
+    "AI",
+    "LLM",
+    "benchmark",
+    "Çin",
+    "fiyat"
+  ],
+  "anilan_modeller": [
+    "MiniMax M3.1 Flash",
+    "MiniMax M3",
+    "GLM-5.3-Flash",
+    "Gemini 3.8 Flash",
+    "Deepseek V4.1 Flash 1017"
+  ],
+  "yorum_tr": "MiniMax M3.1 Flash, düşük maliyetli yüksek performanslı bir LLM sunarak Çin'in AI pazarındaki fiyat rekabetini hızlandırıyor; geliştiriciler daha ucuz API erişimiyle deney yapabilirken, yüksek halüsinasyon oranı uygulama güvenilirliğini sınırlandırabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "MiniMax M3.1 Flash",
+      "benchmark": "Artificial Analysis Intelligence Index",
+      "skor": 42,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "MiniMax-M3.1-Flash jumps from 29 to 42 points on the Artificial Analysis Intelligence Index compared to M3, while cutting cost per task sharply."
+    },
+    {
+      "model": "MiniMax M3.1 Flash",
+      "benchmark": "Humanity's Last Exam",
+      "skor": 48,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "On 'Humanity's Last Exam,' M3.1 Flash hits 48 percent, beating both Deepseek and GLM."
+    },
+    {
+      "model": "MiniMax M3.1 Flash",
+      "benchmark": "CritPt",
+      "skor": 22,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "It also scores 22 percent on the CritPt benchmark, which tests research-level physics reasoning across 71 complex problems."
+    },
+    {
+      "model": "MiniMax M3.1 Flash",
+      "benchmark": "AA-Omniscience",
+      "skor": 56,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "For factual accuracy on the AA-Omniscience test, M3.1 Flash answers 56 percent of questions correctly, well above GLM-5.3-Flash (28 percent) and Deepseek (43 percent)."
+    },
+    {
+      "model": "MiniMax M3.1 Flash",
+      "benchmark": "DeepSWE v1.1",
+      "skor": 73.7,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "On DeepSWE v1.1, MiniMax-M3.1-Flash scores up to 73.7 percent at under $0.30 per task."
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/10/minimax.png",
+  "url": "https://the-decoder.com/minimax-m3-1-flash-shows-chinas-ai-price-race-has-no-floor-in-sight/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-19T18:22:30.000Z",
+  "slug": "minimax-m3-1-flash-shows-china-s-ai-price-race-has-no-floor"
+}

@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "Cohere, llama.cpp desteğini North Micro Vision Instruct ve diğer modellerine ekledi",
+  "ozet_tr": "Cohere, topluluk taleplerine yanıt olarak llama.cpp entegrasyonunu tamamladı. Vision encoder'ı North Micro Vision Instruct için desteklenirken, Command A+ ve North Mini Code gibi mevcut modeller zaten uyumlu. Ayrıca Cohere Transcribe, Unsloth ve Unsloth Studio’da ince ayar (fine‑tuning) imkanıyla sunuluyor.",
+  "detayli_icerik_tr": "Cohere ekibi, Reddit topluluğu LocalLLaMA’da uzun süredir beklenen bir özelliği hayata geçirdi: llama.cpp desteği. Şirket, North Micro Vision Instruct modelinin vision encoder’ını llama.cpp ile çalışacak şekilde entegre etti ve bu sayede en yeni mimarileri de açık‑kaynak LLM çerçevesiyle uyumlu hâle getirdi. North Mini Code ve Command A+ modelleri zaten bu çerçeveye uygun olduğu için, kullanıcılar bu modelleri de sorunsuzca çalıştırabilecek.\n\nBu güncelleme, özellikle yerel ortamda büyük dil modellerini (LLM) çalıştırmak isteyen araştırmacı ve geliştiriciler için büyük bir kolaylık sağlıyor. llama.cpp, düşük bellek tüketimi ve CPU/GPU esnekliğiyle biliniyor; Cohere modellerinin bu platformda çalışabilmesi, model dağıtım maliyetlerini düşürürken, topluluk geri bildirimlerinin ürün geliştirmedeki etkisini de gözler önüne seriyor.\n\nCohere ayrıca, ses‑metin (STT) alanındaki en iyi modellerden biri olarak tanımladığı Cohere Transcribe’ı Unsloth ve Unsloth Studio’da ince ayar (fine‑tuning) imkanıyla sunuyor. Bu entegrasyon, ses tanıma teknolojisini derin öğrenme projelerinde daha erişilebilir kılıyor ve Unsloth topluluğunun da ilgisini çekecek gibi görünüyor.\n\nŞirket, topluluk geri bildirimlerine dayalı bu adımları bir başlangıç olarak nitelendiriyor ve gelecekte daha fazla model ve özellik desteği vaat ediyor. Kullanıcıların denemeleri ve geri bildirimleri, Cohere’ın ürün yol haritasını şekillendirmeye devam edecek.",
+  "onemli_maddeler": [
+    "Cohere, North Micro Vision Instruct modelinin vision encoder'ını llama.cpp ile uyumlu hâle getirdi.",
+    "Command A+ ve North Mini Code zaten llama.cpp desteğine sahip; artık tüm yeni mimariler de bu çerçevede çalışabilir.",
+    "Cohere Transcribe, Unsloth ve Unsloth Studio’da fine‑tuning imkanıyla sunularak STT alanında erişilebilirlik artırıldı."
+  ],
+  "kategori": "guncelleme",
+  "onem": 3,
+  "onem_gerekce": "Topluluk tarafından talep edilen bir entegrasyonun gerçekleşmesi, yerel LLM çalıştırma ekosisteminde önemli bir kolaylık sağlasa da sektörel etkisi sınırlı ve daha çok niş bir kullanıcı kitlesini ilgilendiriyor.",
+  "etiketler": [
+    "Cohere",
+    "llama.cpp",
+    "North Micro Vision",
+    "Unsloth",
+    "STT"
+  ],
+  "anilan_modeller": [
+    "North Micro Vision Instruct",
+    "North Mini Code",
+    "Command A+",
+    "Cohere Transcribe"
+  ],
+  "yorum_tr": "Bu güncelleme, yerel ortamda Cohere modellerini çalıştırmak isteyen geliştiriciler için maliyet ve karmaşıklığı azaltarak erişilebilirliği artırıyor. Aynı zamanda topluluk geri bildirimlerinin ürün geliştirmedeki rolünü pekiştiriyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/DjPSk8JkHGw_X1b5Vtps9ECyZyBEQDYnHzbtqqOsSno.png?width=640&crop=smart&auto=webp&s=8ec81c4addb016413dd876069261f89b016b999b",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xa0cyz/llamacpp_support_for_cohere_models/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-19T15:43:29.000Z",
+  "slug": "llama-cpp-support-for-cohere-models"
+}

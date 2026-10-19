@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "Yanlış Bakıyorduk: AI dünyasını sarsan patlayıcı iddia",
+  "ozet_tr": "Goodfire araştırmacısı Nick Cammarata, LLM'lerin ve sinir ağlarının çok daha anlaşılabilir olduğunu iddia eden 26.000 kelimelik bir blog yazısıyla AI topluluğunu şaşkına çevirdi. Bu iddia, modellerin iç yapısını çözmenin mümkün olabileceği ve böylece güvenlik ile kontrol mekanizmalarının güçlenebileceği umudunu taşıyor.",
+  "detayli_icerik_tr": "Nick Cammarata, Goodfire'da geçirdiği bir yıl boyunca nöronları tek tek inceleyerek sinir ağlarının iç mantığını ortaya çıkarmaya çalıştı ve \"Yanlış bakıyorduk\" diyerek, ağların karmaşık düğümlerinin aslında belirli görsel desenlere (ör. V şekli) göre organize olduğunu savundu. 2020'de Inception v1 modelinde bir nöronun hem araba hem de kedi görüntülerine yanıt vermesini, bu iki nesnenin ortak V şekline dayanarak açıklamayı başardı; aynı nöron, havuz masası köşesi, hızlı tren burunları ve itfaiye botu gibi V şekline sahip diğer nesnelere de yanıt veriyordu.\n\nCammarata, bu bulguların sinir ağlarının \"süperpozisyon\" olarak adlandırılan, farklı kavramları tek bir nöronda birleştirme eğilimini yeniden yorumlaması gerektiğini öne sürüyor. Ağların sadece rastgele karışık bir düğüm ağı değil, belirli görsel ve kavramsal desenleri yakalayan bir mantık içerdiği görüşü, mekanik yorumlama alanında yeni bir bakış açısı sunuyor. Ancak Stanford Üniversitesi'nden Chris Potts ve Alignment Research Center'dan Jacob Hilton gibi uzmanlar, bu iddiaların henüz sistematik bir değerlendirmeden yoksun olduğunu ve LLM'lerin iç işleyişinin hâlâ %0.01'den azını anladığımızı hatırlatarak temkinli bir yaklaşım sergiliyor.\n\nCammarata'nın çalışması, modern LLM'lerin de benzer bir mantıkla incelenebileceği umudunu taşısa da, bu alandaki araştırmacılar hâlâ nöron seviyesinin ötesinde devre (circuit) düzeyinde analizlerin gerektiğini vurguluyor. Google DeepMind'den Neel Nanda, tek tek nöronların anlaşılmasının model hatalarını açıklamada faydalı olabileceğini kabul ederken, bu yaklaşımın büyük resimdeki ilerlemeyi sağlamadığına dikkat çekiyor. Bu tartışma, AI güvenliği topluluğunun hâlâ kapsamlı bir yorumlama çerçevesi geliştirme ihtiyacını ortaya koyuyor.\n\nCammarata, iddiasının hâlâ bir \"hunch\" olduğunu ve tam bir çözüm sunmadığını kabul ediyor; ancak sinir ağlarının okunabilirliğine dair umut verici bir sinyal olarak görülüyor. Araştırmacılar, bu tür bulguların otomatik bilim insanları ve kontrol mekanizmaları geliştirmede bir katalizör olabileceğini, fakat aynı zamanda aşırı iyimserliğin kamuoyunda gerçekçi olmayan beklentiler yaratabileceğini belirtiyor.",
+  "onemli_maddeler": [
+    "Cammarata, sinir ağlarının V şekli gibi ortak görsel desenlere göre organize olduğunu iddia ediyor.",
+    "Mekanik yorumlama topluluğu, bu iddiayı henüz sistematik bir değerlendirmeden yoksun olarak görüyor.",
+    "Araştırmacılar, LLM'lerin iç işleyişinin hâlâ %0.01'den azının anlaşıldığını vurguluyor."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "AI güvenliği ve kontrolü açısından model yorumlamasının ilerlemesi, sektörde büyük bir ilgi ve tartışma yaratıyor; iddia henüz kanıtlanmamış olsa da araştırma yönü ve potansiyel etkisi yüksek.",
+  "etiketler": [
+    "mekanik yorumlama",
+    "LLM",
+    "sinir ağları",
+    "AI güvenliği",
+    "araştırma"
+  ],
+  "anilan_modeller": [
+    "Inception v1",
+    "modern LLMs"
+  ],
+  "yorum_tr": "Bu iddia, sinir ağlarının anlaşılabilirliğine dair yeni bir bakış açısı sunarak AI güvenliği çalışmalarına umut veriyor, ancak henüz deneysel bir temele dayanmıyor; geliştiriciler ve güvenlik uzmanları, iddiayı dikkatle izleyip daha sağlam kanıtlar beklemeli.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://wp.technologyreview.com/wp-content/uploads/2026/10/261016_LLMsNotcomplicated_V2.jpg?resize=1200,600",
+  "url": "https://www.technologyreview.com/2026/10/19/1147149/we-were-looking-at-it-wrong-the-explosive-claim-thats-upended-the-ai-world/",
+  "source": "MIT Technology Review AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-19T17:45:55.000Z",
+  "slug": "we-were-looking-at-it-wrong-the-explosive-claim-that-s-upend"
+}
