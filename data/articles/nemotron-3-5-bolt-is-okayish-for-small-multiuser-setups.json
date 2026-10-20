@@ -1,0 +1,48 @@
+{
+  "baslik_tr": "Nemotron 3.5 Bolt, küçük çoklu kullanıcı ortamları için yeterli performans sunuyor",
+  "ozet_tr": "Nemotron 3.5 Bolt, 2‑bit quantization ve NVFP4 desteğiyle 30 k‑500 k token aralığında düşük bellek tüketimi sağlarken, 27 B modeline kıyasla iki kat daha hızlı çalışıyor. Özellikle 128 GB RAM ve 4 x MI100 donanımına sahip küçük işletmelerde çoklu kullanıcı senaryoları için cazip bir seçenek olarak öne çıkıyor.",
+  "detayli_icerik_tr": "Reddit topluluğu üyelerinden 1ncehost, Nemotron 3.5 Bolt modelini 27 B büyüklüğündeki modellerle karşılaştırarak detaylı bir analiz sundu. Bolt, ağırlıklı olarak 2‑bit quantization ve kritik katmanlarda NVFP4 formatı kullanıyor; bu sayede modelin ağırlıklarının büyük bir kısmı düşük bitli temsil ile saklanıyor. Model, her beş lineer dikkat (Mamba2) katmanına bir tam dikkat (GQA) katmanı ekleyerek Qwen35'teki 4:1 oranından daha düşük bir tam dikkat oranı sunuyor.\n\nBellek verimliliği açısından Bolt, 30 k tokenlik bir bağlamı sadece 200 MB, 256 k tokenlik bir bağlamı ise 1 GB bellekle işleyebiliyor. Aynı bağlam uzunlukları Flash Next modelinde sırasıyla 500 MB ve 3.4 GB, 27 B modelinde ise 952 MB ve 8.5 GB gerektiriyor. Bu, KV cache kullanımında yeni Nemotron serisinin DS v4.1 Flash dışındaki en verimli modellerden biri olduğunu gösteriyor.\n\nPerformans testlerinde Bolt, aynı donanım (4 x MI100) üzerinde 27 B modeline göre yaklaşık iki kat daha hızlı çalıştı. Modelin zekâ seviyesi günümüz standartlarına göre ortalama olsa da, Qwen3.6 27 B ile benzer seviyede ve bazı üst düzey modellerden daha düşük halüsinasyon oranına sahip olduğu belirtiliyor. Bu, modelin uzun diyaloglarda daha temkinli ve kontrol odaklı yanıtlar üretmesine olanak tanıyor.\n\nYazar, Bolt'un yüksek bağlam kapasitesi ve büyük önbellek (prefix cache) sayesinde milyonlarca bağlam tokenini aynı anda bellekte tutabildiğini, tek bir RTX 5090 (NVFP4 ve 32 GB VRAM) ya da 128 GB SFF sunucunun ideal donanım olduğunu vurguluyor. Küçük ölçekli çoklu kullanıcı senaryoları, özellikle sınırlı bütçeli işletmeler için Bolt'un cazip bir seçenek olabileceği sonucuna varıyor.",
+  "onemli_maddeler": [
+    "Nemotron 3.5 Bolt, 2‑bit quantization ve NVFP4 ile yüksek bellek verimliliği sağlıyor.",
+    "30 k token bağlamı 200 MB, 256 k token bağlamı 1 GB bellek tüketiyor; 27 B modeline göre %4‑5 daha az bellek kullanıyor.",
+    "Aynı donanımda 27 B modeline göre yaklaşık iki kat daha hızlı çalışıyor."
+  ],
+  "kategori": "benchmark",
+  "onem": 3,
+  "onem_gerekce": "Modelin performans ve bellek verimliliği açısından ilgi çekici sonuçlar sunması, ancak henüz geniş çaplı bir pazar etkisi yaratmaması.",
+  "etiketler": [
+    "Nemotron",
+    "model",
+    "benchmark",
+    "quantization",
+    "multiuser"
+  ],
+  "anilan_modeller": [
+    "Nemotron 3.5 Bolt",
+    "Nemotron Ultra",
+    "Qwen3.6 27B",
+    "Qwen35",
+    "Flash Next",
+    "Nemotron Super",
+    "DS v4.1 Flash"
+  ],
+  "yorum_tr": "Nemotron 3.5 Bolt, düşük bellek tüketimi ve iki kat hız avantajıyla küçük ölçekli çoklu kullanıcı uygulamaları için pratik bir alternatif sunuyor; geliştiriciler bu verimliliği, maliyet etkin çözümler arayan işletmelerde değerlendirebilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Nemotron 3.5 Bolt",
+      "benchmark": "Speed vs 27B",
+      "skor": 2,
+      "birim": "x",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "double speed on 4x MI100",
+      "kaynak_metinden_alinti": "about double 27B on my hardware"
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/0tljsfsl7cwh1.png?width=140&height=93&auto=webp&s=205cba2f3bc8b3b971fc713f0b355b808480b6ee",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x9lkh5/nemotron_35_bolt_is_okayish_for_small_multiuser/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-19T02:48:40.000Z",
+  "slug": "nemotron-3-5-bolt-is-okayish-for-small-multiuser-setups"
+}

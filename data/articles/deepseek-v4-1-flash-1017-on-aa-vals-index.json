@@ -1,0 +1,79 @@
+{
+  "baslik_tr": "DeepSeek-V4.1-Flash-1017 Modelinin AA ve Vals Endeksindeki Performansı",
+  "ozet_tr": "DeepSeek-V4.1-Flash-1017, Terminal‑Bench 4.0 testinde model kartında bildirilen %42.3'lük skoru ile dikkat çekti. Ancak AA ve Vals indekslerinde sırasıyla %34 ve %31.82 gibi daha düşük puanlar elde edildi. Bu sonuçlar, aynı benchmarkta yeni çıkan Fable 5 modeliyle kıyaslandığında benzer bir seviyede olduğunu gösteriyor.",
+  "detayli_icerik_tr": "DeepSeek‑V4.1‑Flash‑1017, OpenAI‑Claude kod altyapısını kullanan Terminal‑Bench 4.0 testine tabi tutuldu. Model kartında bildirilen %42.3'lük skor, topluluk tarafından yapılan AA (Auto‑Eval) ve Vals indeks ölçümlerinde %34 ve %31.82 olarak raporlandı. Gözlemciler, AA ve Vals indekslerinin mini‑SWE‑agent tabanlı olması ve her bir görev için 8 saatlik zaman sınırlaması gibi faktörlerin skorları düşürmüş olabileceğini belirtti.\n\nBenzer bir test ortamında, 9 Haziran 2026'da piyasaya sürülen Fable 5 modeli %42 (AA) ve %41.41 (Vals) puanlar elde etti. DeepSeek‑V4.1‑Flash‑1017'nin model kartı skoru ile Fable 5'in AA skoru neredeyse eşdeğer olduğundan, topluluk bu iki modeli performans açısından paralel görmeye başladı.\n\nBenchmark sonuçlarının yorumlanmasında, test süresinin ve kullanılan token‑saniye hızının sonuçları etkileyebileceği vurgulandı. Özellikle terminal‑bench görevlerinin uzun sürelere sahip olması, donanım ve sağlayıcıların token işleme hızını skor üzerinde belirleyici kılıyor. Bu nedenle, aynı modelin farklı ortam ve ölçüm araçlarıyla elde ettiği puanlar arasında belirgin farklar ortaya çıkabiliyor.\n\nDeepSeek‑V4.1‑Flash‑1017'nin bu sonuçları, modelin yüksek potansiyelini gösterirken aynı zamanda topluluk ölçümlerinin standartlaştırılması ihtiyacını da gözler önüne seriyor. Geliştiriciler, benchmark koşullarını netleştirerek daha tutarlı karşılaştırmalar yapmayı hedeflemeli.",
+  "onemli_maddeler": [
+    "DeepSeek‑V4.1‑Flash‑1017 model kartında %42.3, AA'de %34 ve Vals indeksinde %31.82 skor elde etti.",
+    "Fable 5 modeli aynı testte %42 (AA) ve %41.41 (Vals) puanlarla DeepSeek ile benzer performans gösterdi.",
+    "AA ve Vals indekslerinin mini‑SWE‑agent tabanlı olması ve 8 saatlik görev süresi skorları düşürmüş olabilir."
+  ],
+  "kategori": "benchmark",
+  "onem": 3,
+  "onem_gerekce": "Topluluk tarafından yapılan benchmark sonuçları, model performansının karşılaştırmalı değerlendirilmesi açısından ilgi çekici ancak sektörel etkisi sınırlı bir haber niteliği taşımaktadır.",
+  "etiketler": [
+    "DeepSeek",
+    "Terminal-Bench 4.0",
+    "AA",
+    "Vals",
+    "benchmark"
+  ],
+  "anilan_modeller": [
+    "DeepSeek-V4.1-Flash-1017",
+    "Fable 5"
+  ],
+  "yorum_tr": "Bu benchmark sonuçları, DeepSeek‑V4.1‑Flash‑1017'nin rekabetçi bir performans sergilediğini gösterirken, ölçüm metodolojisinin standartlaştırılması gerektiğini de ortaya koyuyor. Geliştiriciler, benzer test koşullarını sağlayarak daha adil karşılaştırmalar yapabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "DeepSeek-V4.1-Flash-1017",
+      "benchmark": "Terminal-Bench 4.0 (AA)",
+      "skor": 34,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "AA",
+      "kaynak_metinden_alinti": "AA reports 34%"
+    },
+    {
+      "model": "DeepSeek-V4.1-Flash-1017",
+      "benchmark": "Terminal-Bench 4.0 (Vals index)",
+      "skor": 31.82,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Vals index",
+      "kaynak_metinden_alinti": "Vals index reports 31.82%"
+    },
+    {
+      "model": "DeepSeek-V4.1-Flash-1017",
+      "benchmark": "Terminal-Bench 4.0 (model card)",
+      "skor": 42.3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "model card",
+      "kaynak_metinden_alinti": "Model card reported 42.3%"
+    },
+    {
+      "model": "Fable 5",
+      "benchmark": "Terminal-Bench 4.0 (AA)",
+      "skor": 42,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "AA",
+      "kaynak_metinden_alinti": "AA reports 42%"
+    },
+    {
+      "model": "Fable 5",
+      "benchmark": "Terminal-Bench 4.0 (Vals)",
+      "skor": 41.41,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Vals",
+      "kaynak_metinden_alinti": "Vals reports 41.41%"
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/lvpe9muo5dwh1.png?width=140&height=66&auto=webp&s=76bc6aef908480f7815b346c337c4414c993fe5e",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x9owju/deepseekv41flash1017_on_aa_vals_index/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-19T05:56:18.000Z",
+  "slug": "deepseek-v4-1-flash-1017-on-aa-vals-index"
+}

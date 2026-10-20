@@ -1,0 +1,39 @@
+{
+  "baslik_tr": "Microsoft, AI ajanlarını iç tehdit gibi görerek Guardian Agents'ı tanıttı",
+  "ozet_tr": "Microsoft, kurumsal ortamlarda kullanılan yapay zeka ajanlarını iç tehdit olarak nitelendirerek yeni bir güvenlik katmanı olan Guardian Agents'ı duyurdu. Şirket, bu özellik sayesinde AI ajanlarının davranışlarını bağımsız bir denetim sistemiyle izleyip kontrol etmeyi hedefliyor.",
+  "detayli_icerik_tr": "Microsoft, Pazartesi günü kurumsal müşterileri için AI ajanlarını izleyen ve sınırlayan yeni bir güvenlik özelliği olan Guardian Agents'ı tanıttı. Bu özellik, Haziran ayında duyurulan Project Perception çerçevesinde geliştirildi ve Frontier modellerinin öngörülemez davranışları nedeniyle ortaya çıkan iç tehdit riskine yanıt vermeyi amaçlıyor.\n\nProject Perception, başlangıçta dışarıdan gelen AI hackerlarına karşı bir \"red team\" (saldırgan), bu saldırıları tespit eden bir \"blue team\" (savunma) ve tespit edilen açıkları kapatan bir \"green team\" (tamirci) olmak üzere üç sınıf ajan tanımlamıştı. Ancak Microsoft CEO'su Satya Nadella, AI ajanlarının şirket içinde birer iç tehdit haline gelebileceği uyarısını blogunda paylaştı ve model sağlayıcılarının güvence vaatlerinin sorumluluğu ortadan kaldırmadığını belirtti.\n\nGuardian Agents, Microsoft Defender ürününe entegre edilerek çalışanların getirdiği 60'a kadar farklı AI ajanını (Claude Code, Codex, OpenClaw vb.) tespit edebiliyor ve bu ajanların veri ve sistem erişimlerini dinamik olarak sınırlıyor. Riskli bir karar algılandığında insan onayı zorunlu kılıyor ve ajan izinlerini göreve göre ayarlıyor. Bu yaklaşım, AI ajanlarının \"krallığın anahtarlarını\" elinde bulunduran bir iç tehdit olarak görülmesi gerektiği görüşünü pekiştiriyor.\n\nMicrosoft, bu adımı aynı zamanda Nvidia'nın Open Agent Safety Platform'ına katılarak ve yeni Surface Laptop Ultra cihazlarıyla AI ajan güvenliğini donanım seviyesinde de destekleyerek sektörde bir güvenlik ekosistemi oluşturmayı hedefliyor. Şirket, OpenAI ve Anthropic gibi kendi yatırım ortaklarıyla rekabet içinde olmasına rağmen, AI ajan güvenliği pazarında bağımsız bir denetim çözümü sunarak hem müşteri güvenini artırmayı hem de yeni bir gelir modeli yaratmayı planlıyor.",
+  "onemli_maddeler": [
+    "Guardian Agents, AI ajanlarını izleyip kontrol eden bağımsız bir güvenlik katmanı olarak tanıtıldı.",
+    "Project Perception, dış tehdit yerine iç tehdit olarak AI ajanlarını ele alacak şekilde yeniden konumlandırıldı.",
+    "Microsoft Defender, 60'a kadar farklı AI ajanını tespit edip erişimlerini dinamik olarak sınırlayabiliyor.",
+    "Riskli kararlar için insan onayı zorunlu kılınarak ajan izinleri göreve göre ayarlanıyor.",
+    "Microsoft, Nvidia'nın Open Agent Safety Platform'ına katılarak donanım seviyesinde ajan güvenliği sağlıyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Microsoft'un yeni güvenlik katmanı, kurumsal AI ajan kullanımının denetlenmesi ve veri güvenliğinin artırılması açısından sektörde kritik bir adım olarak değerlendiriliyor.",
+  "etiketler": [
+    "AI",
+    "Güvenlik",
+    "Microsoft",
+    "Enterprise",
+    "Agent"
+  ],
+  "anilan_modeller": [
+    "Claude Code",
+    "Codex",
+    "OpenClaw",
+    "Mythos",
+    "Fable",
+    "Daybreak"
+  ],
+  "yorum_tr": "Bu güncelleme, AI ajanlarının iç tehdit olarak görülmesi gerektiği bilincini pekiştirerek güvenlik sorumluluğunu sağlayıcıdan kullanıcıya kaydırıyor. Geliştiriciler ve işletmeler, bağımsız denetim mekanizmaları sayesinde riskleri daha iyi yönetebilecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://techcrunch.com/wp-content/uploads/2026/10/Networked-AI-swarm-with-glowing-nodes.png?resize=1200,600",
+  "url": "https://techcrunch.com/2026/10/19/microsoft-says-ai-agents-are-like-insider-threats-as-frontier-models-cant-be-trusted/",
+  "source": "TechCrunch AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-19T22:04:28.000Z",
+  "slug": "microsoft-says-ai-agents-are-like-insider-threats-as-frontie"
+}

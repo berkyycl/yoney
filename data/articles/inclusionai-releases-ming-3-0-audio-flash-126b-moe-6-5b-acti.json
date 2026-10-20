@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "inclusionAI, Ming-3.0-audio-flash modelini duyurdu: 126B MoE / 6.5B aktif, ses anlama ve konuşma çıktısı, MIT lisansı",
+  "ozet_tr": "inclusionAI, 126 milyar parametreli MoE mimarisi ve 6,5 milyar aktif parametreye sahip Ming-3.0-audio-flash modelini Hugging Face üzerinden yayınladı. Model, ses dosyalarını metin talimatlarıyla birlikte işleyerek hem metin hem de sesli yanıt üretebiliyor ve Çince ile İngilizce'yi ana diller olarak destekliyor. MIT lisansı altında sunulan bu açık kaynak model, yerel dağıtım için Transformers, SGLang ve vLLM‑Omni entegrasyonlarını içeriyor.",
+  "detayli_icerik_tr": "inclusionAI, yeni Ming-3.0-audio-flash modelini Hugging Face platformunda erişime açtı. Model, ses ve metin girdilerini aynı anda işleyerek transkripsiyon, sesli Soru‑Cevap, uzun kayıtların anlaşılması ve konuşma, çevresel sesler ile müzik hakkında akıl yürütme gibi yetenekler sunuyor. Toplam 126 milyar parametreye sahip MoE (Mixture of Experts) mimarisi, sadece 6,5 milyar aktif parametreyle çalışıyor, bu da yüksek performans ve daha düşük donanım gereksinimi sağlıyor.\n\nÇince ve İngilizce modelin ana dilleri olarak belirlenmiş olsa da, aksanlar, lehçeler ve gürültülü ortamlar için destek vaat ediliyor. Kullanıcılar, yerleşik seslendirme motoru Talker aracılığıyla metin yanıtlarını sesli olarak da alabiliyor; bu motor, önceden tanımlı sesleri ya da referans ses dosyalarını kullanabiliyor. Model MIT lisansı altında dağıtıldığı için geliştiriciler ve araştırmacılar, kodu ve ağırlıkları serbestçe değiştirebilir ve kendi uygulamalarına entegre edebilir.\n\nYerel dağıtım için model kartı, üç farklı entegrasyon yolunu belgeledi: Transformers, SGLang ve vLLM‑Omni. SGLang yapılandırması, metin çıktısı üretmek için dört GPU önerirken, vLLM‑Omni 128K referans profili sekiz adet 80 GB H800 GPU'yu öneriyor. Bu gereksinimler referans konfigürasyonlar olup, minimum sistem gereksinimlerini temsil etmiyor; daha düşük donanımlı ortamlarda da çalıştırılabilir.\n\nModelin potansiyel kullanım senaryoları arasında çoklu konuşmacıların bulunduğu karmaşık ses kayıtlarını analiz etmek ve bu kayıtlar üzerinden sorulara yanıt vermek yer alıyor. Bu, özellikle sesli asistanlar ve ses tabanlı bilgi çıkarımı uygulamaları için değerli bir test alanı sunuyor.",
+  "onemli_maddeler": [
+    "126 B parametreli MoE mimarisi ve 6,5 B aktif parametre ile yüksek verimlilik",
+    "Ses ve metin girdilerini aynı anda işleyerek transkripsiyon, sesli Q&A ve müzik analizi gibi çok yönlü yetenekler",
+    "MIT lisansı sayesinde tam özgürlük ve topluluk katkısına açık",
+    "Transformers, SGLang ve vLLM‑Omni entegrasyonlarıyla esnek yerel dağıtım seçenekleri"
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Sesli yapay zeka modelleri alanında büyük ölçekli, açık kaynak bir modelin çıkışı, araştırma ve uygulama geliştirmede yeni fırsatlar yaratması bakımından sektöre önemli bir ivme kazandırıyor.",
+  "etiketler": [
+    "audio-LLM",
+    "Ming-3.0",
+    "inclusionAI",
+    "speech synthesis",
+    "open-source"
+  ],
+  "anilan_modeller": [
+    "Ming-3.0-audio-flash"
+  ],
+  "yorum_tr": "Ming-3.0-audio-flash, sesli etkileşim ve çoklu dil desteği sunarak yerel AI çözümlerinin kapsamını genişletecek. Geliştiriciler, açık lisans ve çeşitli entegrasyon yolları sayesinde modeli hızlıca prototiplerine dahil edebilecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/m3jrz8vprfwh1.png?width=640&crop=smart&auto=webp&s=91c1d12578ba73c43ea7f2074c7ba88a40767ad4",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x9yrfi/inclusionai_releases_ming30audioflash_126b_moe/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-19T14:42:49.000Z",
+  "slug": "inclusionai-releases-ming-3-0-audio-flash-126b-moe-6-5b-acti"
+}

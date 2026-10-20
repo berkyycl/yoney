@@ -1,0 +1,71 @@
+{
+  "baslik_tr": "Düşük Kaynaklı Programlama Dillerinde Kodlama Yeteneği Artıyor: GPT-6 Serisi Yeni Modeller",
+  "ozet_tr": "OpenAI, COBOL, Fortran ve Visual Basic gibi düşük kaynaklı dillerde kod üretme ve göç yeteneklerini büyük ölçüde geliştiren GPT-6 Astra, GPT-6 Luna ve GPT-6.1 Sol modellerini tanıttı. MultiLangBench testinde ortalama %87.4 başarı oranı elde eden Astra, maliyetleri %78 düşürürken, COBOL göç değerlendirmesinde %97.9 doğrulukla neredeyse sınır değerine ulaştı.",
+  "detayli_icerik_tr": "OpenAI, düşük kaynaklı programlama dillerine odaklanan yeni model serisini duyurdu. GPT-6 Astra, GPT-6 Luna ve GPT-6.1 Sol, COBOL, Fortran ve Visual Basic gibi kritik altyapı dillerinde kod üretme, hata ayıklama ve dil göçü konularında önceki nesillere göre çok daha yüksek doğruluk ve daha düşük maliyet sunuyor.\n\nŞirket, ilerlemeyi ölçmek için iki yeni değerlendirme seti geliştirdi: MultiLangBench ve COBOL göç değerlendirmesi. MultiLangBench, bir modelin 20 farklı dilde SQLite uyumlu bir veritabanı motoru inşa etme yeteneğini test ederken, COBOL göç değerlendirmesi modellerin mevcut COBOL programlarını C++, Java, Kotlin, Python veya Rust gibi modern dillere hatasız bir şekilde taşıyabilmesini ölçüyor.\n\nGPT-6 Astra, MultiLangBench'te %87.4 ortalama geçiş oranı yakaladı; bu, önceki model GPT-5.6 Sol'un %26.8'lik performansının çok üzerindedir ve tüm dillerde iyileşme gösterdi. Özellikle COBOL'de %72.1, Fortran'da %83.5 ve Visual Basic'te %89.4 başarı sağlandı. GPT-6 Luna ise daha düşük maliyetli bir seçenek olarak ortalama %40.3 geçiş oranı sunuyor ve API maliyetini %78 oranında azaltıyor.\n\nCOBOL göç değerlendirmesinde ise GPT-6.1 Sol, düşük akıl yürütme çabasıyla %86.6 doğruluk elde ederken, yüksek akıl yürütme çabasıyla %97.9 doğruluğa ulaşarak neredeyse sınır değerine ulaştı. Bu sonuçlar, eski sistemlerin modernleştirilmesi ve kritik hizmetlerin sürdürülebilirliği açısından büyük bir adım olarak görülüyor.",
+  "onemli_maddeler": [
+    "GPT-6 Astra, MultiLangBench'te %87.4 ortalama geçiş oranı ile %26.8'lik önceki performansın çok üzerindedir.",
+    "GPT-6 Luna, aynı testte %40.3 başarı sağlarken API maliyetini %78 azaltıyor.",
+    "GPT-6.1 Sol, COBOL göç değerlendirmesinde %86.6 doğruluk (düşük çaba) ve %97.9 doğruluk (yüksek çaba) elde ediyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "OpenAI'nin yeni GPT-6 serisi, kritik altyapı dillerinde kod üretme ve göç yeteneklerini %80'e yakın bir artışla ve maliyetleri %78 azaltarak sektörde büyük bir dönüşüm potansiyeli taşıyor.",
+  "etiketler": [
+    "kodlama",
+    "düşük kaynaklı diller",
+    "COBOL",
+    "model güncellemesi",
+    "benchmark"
+  ],
+  "anilan_modeller": [
+    "GPT-6 Astra",
+    "GPT-6 Luna",
+    "GPT-6.1 Sol"
+  ],
+  "yorum_tr": "Bu gelişme, eski sistemleri modernleştirmek isteyen işletmeler için daha güvenilir ve ekonomik bir yol sunarak yapay zekâ destekli yazılım mühendisliğinin kapsamını genişletecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GPT-6 Astra",
+      "benchmark": "MultiLangBench",
+      "skor": 87.4,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "average test pass rate across 20 languages",
+      "kaynak_metinden_alinti": "On MultiLangBench, GPT‑6 Astra achieves an average test pass rate of 87.4% across 20 programming languages, up from 26.8% for GPT‑5.6 Sol."
+    },
+    {
+      "model": "GPT-6 Luna",
+      "benchmark": "MultiLangBench",
+      "skor": 40.3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "average test pass rate across 20 languages",
+      "kaynak_metinden_alinti": "GPT‑6 Luna also outperforms GPT‑5.6 Sol, reaching 40.3% at approximately 78% lower estimated API cost."
+    },
+    {
+      "model": "GPT-6.1 Sol",
+      "benchmark": "COBOL migration evaluation (low reasoning effort)",
+      "skor": 86.6,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "low reasoning effort accuracy",
+      "kaynak_metinden_alinti": "On our COBOL migration evaluation, GPT‑6.1 Sol achieves 86.6% accuracy at low reasoning effort, compared with just 5.4% for GPT‑5.6 Sol, while costing 39% less."
+    },
+    {
+      "model": "GPT-6.1 Sol",
+      "benchmark": "COBOL migration evaluation (high reasoning effort)",
+      "skor": 97.9,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "high reasoning effort accuracy",
+      "kaynak_metinden_alinti": "At higher reasoning effort, accuracy reaches 97.9%, nearly saturating the evaluation."
+    }
+  ],
+  "gorsel_url": "https://images.ctfassets.net/kftzwdyauwt9/1wQpFFie9sKfVWvApPYyn5/db28adb6a2dfdfdef39fb548fca8913d/low_resource_programming__SEO_Card__3_.png?w=1600&h=900&fit=fill",
+  "url": "https://openai.com/index/low-resource-programming-languages",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-10-19T12:00:00.000Z",
+  "slug": "advancing-coding-in-low-resource-programming-languages"
+}
