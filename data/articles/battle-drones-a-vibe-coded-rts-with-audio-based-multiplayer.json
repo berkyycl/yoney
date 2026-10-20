@@ -1,0 +1,57 @@
+{
+  "baslik_tr": "Battle Drones: Ses Tabanlı Çoklu Oyunculu Vibe‑Kodlu RTS Oyunu",
+  "ozet_tr": "Simon Willison, Claude modelleriyle iş birliği yaparak, ses sinyalleriyle iki cihaz arasında senkronize olabilen bir gerçek zamanlı strateji oyunu (RTS) geliştirdi. 12 büyük iterasyon ve 321 commit sonrası ortaya çıkan Battle Drones, 3D modeller, rastgele harita jeneratörü ve AI‑vs‑AI modlarıyla tam bir tarayıcı deneyimi sunuyor.",
+  "detayli_icerik_tr": "Simon Willison, bağımsız bir blog yazarının, Claude Fable 5 ve Claude Opus 5.5 gibi büyük dil modellerini \"vibe coding\" yöntemiyle yönlendirerek bir Command & Conquer tarzı RTS oyunu oluşturduğunu duyurdu. Proje, ilk prototipten itibaren 12 ana sürüm geçerek, 2D Phaser tabanlı bir oyun motorundan three.js ile tam 3D bir ortama taşındı ve her sürümde yeni birimler, haritalar ve oyun mekanikleri eklendi.\n\nEn dikkat çekici gelişme, oyunun iki yakın cihaz arasında ses dalgalarıyla veri alışverişi yaparak çoklu oyuncu modunu desteklemesi. Willison, daha önceki \"Chirp Pong\" deneyi üzerine Claude Code for Web'u yönlendirerek bir ses modem sistemi geliştirdi; bu sistem iPhone, iPad ve laptop gibi cihazlarda sorunsuz çalışıyor ve statik HTML üzerinden sunucu maliyeti olmadan gerçek zamanlı eşleşmeler sağlıyor.\n\nBattle Drones, 9 bina, 7 kara aracı, 6 hava aracı ve 3 piyade birimi gibi kapsamlı bir birim yelpazesi, sis savaşı (fog of war), farklı biyomlarda (temperate, desert, arctic, volcanic, tropical) altı harita, rastgele harita jeneratörü ve Goliath gibi dev robot mech'leri içeriyor. Ayrıca AI kişilikleri (Balanced, Rush, Air Swarm vb.) ve AI‑vs‑AI modları sayesinde iki LLM'nin (ör. Claude Haiku 5.5 ve GPT‑6 Luna) birbirleriyle mücadele ettiği kayıtlı savaşlar da mümkün.\n\nWillison, oyunun geliştirilmesinde 1.200 AI‑vs‑AI test maçının sonuçlarını kullanarak dengelemeler yaptığını ve bu testlerde 25 dakikadan uzun süren berabere kalan oyunların %14'ten %0.9'a düştüğünü, geride 800+ scrap bulunan tarafın kazanma oranının %24'ten %46'ya yükseldiğini belirtti. Bu veriler, model destekli oyun tasarımının sadece prototip üretmekle kalmayıp, oynanabilirlik ve denge açısından da etkili olabileceğini gösteriyor.",
+  "onemli_maddeler": [
+    "Ses tabanlı çoklu oyuncu modu, cihazlar arasında sunucuya ihtiyaç duymadan gerçek zamanlı eşleşme sağlıyor.",
+    "Claude Opus 5.5, 1.200 AI‑vs‑AI test maçında oyunun dengelemelerini otomatik olarak iyileştirdi.",
+    "Goliath dev mech'i ve rastgele harita jeneratörü gibi yeni içeriklerle oyun 3D'ye taşındı.",
+    "AI‑vs‑AI modunda farklı LLM'ler (Claude Haiku 5.5, GPT‑6 Luna) karşı karşıya getirilebiliyor."
+  ],
+  "kategori": "diger",
+  "onem": 3,
+  "onem_gerekce": "Proje, büyük dil modellerinin oyun geliştirme sürecinde tasarım, dengeleme ve çoklu oyuncu iletişimi gibi kritik görevleri otomatikleştirebileceğini gösteren ilgi çekici bir örnek sunuyor, ancak henüz geniş çaplı bir pazar etkisi yaratmadığı için orta seviyede bir önem taşıyor.",
+  "etiketler": [
+    "AI oyun geliştirme",
+    "ses tabanlı multiplayer",
+    "Claude Opus",
+    "vibe coding",
+    "web RTS"
+  ],
+  "anilan_modeller": [
+    "Claude Fable 5",
+    "Claude Opus 5.5",
+    "Claude Code for Web",
+    "GPT-6 Sol",
+    "Claude Haiku 5.5",
+    "GPT-6 Luna"
+  ],
+  "yorum_tr": "Ses üzerinden veri iletimiyle sunucusuz çoklu oyuncu deneyimi, düşük maliyetli web oyunları için yeni bir yol haritası sunuyor. Geliştiriciler, LLM'lerin oyun dengelemesi ve içerik üretiminde otomatik rol alabileceğini gözlemleyerek tasarım süreçlerini hızlandırabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Claude Opus 5.5",
+      "benchmark": "AI-vs-AI test matches (Normal)",
+      "skor": 46,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "800+ scrap behind",
+      "kaynak_metinden_alinti": "The share of wins by a side that had been 800+ scrap behind rose from 24% to 46%."
+    },
+    {
+      "model": "Claude Opus 5.5",
+      "benchmark": "AI-vs-AI test matches (Undecided after 25 min)",
+      "skor": 0.9,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "25 dakikalık oyun süresi",
+      "kaynak_metinden_alinti": "In 1,200 AI-vs-AI test matches on Normal, games still undecided after 25 minutes fell from 14% to 0.9%."
+    }
+  ],
+  "gorsel_url": "https://static.simonwillison.net/static/2026/battledrones-v1.webp",
+  "url": "https://simonwillison.net/2026/Oct/20/battledrones/",
+  "source": "Simon Willison",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-20T19:34:19.000Z",
+  "slug": "battle-drones-a-vibe-coded-rts-with-audio-based-multiplayer"
+}

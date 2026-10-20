@@ -1,0 +1,43 @@
+{
+  "baslik_tr": "Elevenlabs, Gerçek Zamanlı AI Konuşmaları İçin İki Yeni Speech-to-Speech Modelini Tanıttı",
+  "ozet_tr": "Elevenlabs, gerçek zamanlı yapay zeka sohbetleri için tasarlanmış iki yeni speech-to-speech modeli olan Eleven Realtime v1 Max ve v1 Mini'yi duyurdu. Max modeli, Big Bench Audio testinde %98,8 doğruluk ve 0,57 saniye yanıt süresiyle lider konuma yükselirken, Mini modeli daha düşük maliyetle doğal diyalog akışı sunuyor.",
+  "detayli_icerik_tr": "Elevenlabs, sesli yapay zeka etkileşimlerini bir adım öteye taşıyan Eleven Realtime serisini piyasaya sürdü. Serinin üst segmenti olan v1 Max, Big Bench Audio benchmark'ında %98,8 doğruluk oranı elde ederken yalnızca 0,57 saniyelik yanıt süresi sağlıyor. Şirket, Artificial Analysis leaderboard'unda hem hız hem de doğruluk açısından şu ana kadar en iyi konumda olduğunu iddia ediyor.\n\nDaha hafif ve ekonomik bir seçenek sunan v1 Mini, doğal konuşma akışını koruyarak konuşmanın bittiğini ya da \"mm-hmm\" gibi dolgu seslerini algılayabiliyor. Bu özellik, düşük gecikmeli ve maliyet etkin bir çözüm arayan geliştiriciler ve işletmeler için ideal.\n\nHer iki model de ElevenAgents platformu üzerinden ve OpenAI uyumlu Realtime API aracılığıyla erişilebilir. Kullanıcılar, modelin kullanım süresine göre dakikalık ücretlendirme ve işlenen token başına ek maliyet ödeyecek; v1 Max'ın fiyatı v1 Mini'ye göre daha yüksek olacak.\n\nElevenlabs, modellerin tam teknik özelliklerini ve fiyatlandırma detaylarını resmi fiyat sayfasında paylaşıyor. Gerçek zamanlı müşteri destek sistemleri, interaktif eğitim uygulamaları ve sesli asistanlar gibi alanlarda bu düşük gecikmeli ve yüksek doğruluklu çözümler, sektörde yeni bir standart oluşturabilir.",
+  "onemli_maddeler": [
+    "Eleven Realtime v1 Max, Big Bench Audio testinde %98,8 doğruluk ve 0,57 saniye yanıt süresiyle lider konumda.",
+    "v1 Mini, düşük maliyetli ve konuşma sonu algılama yeteneğiyle doğal diyalog akışı sağlıyor.",
+    "Modeller, ElevenAgents platformu ve OpenAI‑uyumlu Realtime API üzerinden kullanılabiliyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Gerçek zamanlı sesli AI uygulamaları için hem yüksek doğruluk hem düşük gecikme sunan yeni modeller, sektördeki rekabeti ve ürün geliştirme hızını önemli ölçüde etkileyebilir.",
+  "etiketler": [
+    "speech-to-speech",
+    "real-time AI",
+    "Elevenlabs",
+    "audio benchmark",
+    "API"
+  ],
+  "anilan_modeller": [
+    "Eleven Realtime v1 Max",
+    "Eleven Realtime v1 Mini"
+  ],
+  "yorum_tr": "Bu modeller, özellikle müşteri hizmetleri ve interaktif eğitim gibi alanlarda gerçek zamanlı sesli etkileşimin kalitesini artırarak geliştiricilere daha esnek ve maliyet etkin çözümler sunacak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Eleven Realtime v1 Max",
+      "benchmark": "Big Bench Audio",
+      "skor": 98.8,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "0.57-second response time",
+      "kaynak_metinden_alinti": "The Max variant scores 98.8 percent on the Big Bench Audio benchmark with a 0.57-second response time."
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/10/elevenlabs.png",
+  "url": "https://the-decoder.com/elevenlabs-releases-two-new-speech-to-speech-models-designed-for-real-time-ai-conversations/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-20T19:03:15.000Z",
+  "slug": "elevenlabs-releases-two-new-speech-to-speech-models-designed"
+}

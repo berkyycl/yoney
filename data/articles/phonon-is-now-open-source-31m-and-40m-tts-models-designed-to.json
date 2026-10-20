@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "Phonon Açık Kaynak Oldu: Edge Cihazlarda Çalışabilen 31M ve 40M TTS Modelleri",
+  "ozet_tr": "Gradium, kenar cihazlarda çalışabilecek iki küçük ölçekli Text-to-Speech modeli olan Phonon-31M ve Phonon-40M'yi açık kaynak olarak yayınladı. Modelin bütün inference yığını Rust tabanlı ve CPU, GPU, NPU gibi 10'dan fazla platformu destekliyor. Topluluk, bu kod ve modeller üzerine yeni uygulamalar geliştirmeye davet ediliyor.",
+  "detayli_icerik_tr": "Gradium, ilk açık kaynak model serisini Phonon adı altında duyurdu. Phonon, 31 milyon ve 40 milyon parametreli iki ayrı Text-to-Speech (TTS) modelinden oluşuyor ve özellikle düşük güç tüketimi ve sınırlı donanım kaynakları olan kenar (edge) cihazlarda gerçek‑zamanlı ses sentezi yapabilmek için tasarlandı.\n\nModelin inference katmanı tamamen açık kaynak ve Rust diliyle yazılmış; bu sayede CPU, GPU ve NPU gibi ondan fazla farklı donanım arka planında çalıştırılabiliyor. Rust'un düşük seviyeli performans avantajı, ses üretiminde gecikme süresini minimize ederken, geliştiricilere güvenli ve hızlı bir entegrasyon imkanı sunuyor.\n\nGradium, modelleri Hugging Face Spaces üzerinden erişime açtı ve topluluğa geri bildirim, katkı ve yeni kullanım senaryoları geliştirme çağrısında bulundu. Açık kaynak lisansı, araştırmacıların ve geliştiricilerin modelleri özelleştirmesine, ince ayar yapmasına ve kendi uygulamalarına entegre etmesine olanak tanıyor.\n\nBu adım, kenar cihazlarda yüksek kaliteli ses sentezi ihtiyacını karşılamak için daha fazla açık kaynak seçeneğin ortaya çıkmasına zemin hazırlıyor. Phonon'un başarısı, gelecekte daha fazla mikro‑modelin ve donanım‑özel optimizasyonların geliştirilmesine öncülük edebilir.",
+  "onemli_maddeler": [
+    "Gradium, Phonon-31M ve Phonon-40M adlı iki küçük ölçekli TTS modelini açık kaynak olarak yayınladı.",
+    "Inference yığını Rust tabanlı ve CPU, GPU, NPU gibi 10'dan fazla backend'i destekliyor.",
+    "Modeller kenar cihazlarda düşük gecikme ve düşük kaynak tüketimiyle çalışacak şekilde tasarlandı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Kenar cihazlarda çalışabilen açık kaynak TTS modelleri, sesli asistanlar ve IoT uygulamaları için kritik bir eksikliği dolduruyor ve topluluk katkılarını teşvik ederek ekosistemi genişletebilir.",
+  "etiketler": [
+    "açık kaynak",
+    "TTS",
+    "kenar",
+    "Rust",
+    "Gradium"
+  ],
+  "anilan_modeller": [
+    "Phonon-31M TTS",
+    "Phonon-40M TTS"
+  ],
+  "yorum_tr": "Phonon'un açık kaynak olarak sunulması, kenar tabanlı ses sentezi çözümlerinin yaygınlaşmasını hızlandıracak ve geliştiricilere düşük maliyetli, özelleştirilebilir bir altyapı sağlayacak. Bu, özellikle IoT ve mobil cihazlarda sesli etkileşimlerin artmasıyla birlikte sektörel bir ivme kazandırabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/M2g1Z2NzbmdhbndoMdkzDIGQdo3EzgozIBWzFGde5vbzv3-D-PsuMBAG7tuG.png?width=640&crop=smart&auto=webp&s=ef3722ad83cfa3a698563fd856227bfc7a247a07",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xaw2vt/phonon_is_now_opensource_31m_and_40m_tts_models/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-20T16:01:49.000Z",
+  "slug": "phonon-is-now-open-source-31m-and-40m-tts-models-designed-to"
+}
