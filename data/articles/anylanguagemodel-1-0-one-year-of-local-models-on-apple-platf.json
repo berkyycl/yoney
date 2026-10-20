@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "AnyLanguageModel 1.0: Apple Platformlarında Yerel Model Desteği ve Gelişmiş API",
+  "ozet_tr": "Hugging Face, AnyLanguageModel kütüphanesinin 1.0 sürümünü duyurdu. Yeni sürüm, iOS, macOS ve visionOS üzerinde yerel ve bulut tabanlı büyük dil modellerini tek bir API ile kullanma imkanı sunuyor ve swift‑huggingface ile swift‑xet paketlerini de 1.0 seviyesine taşıyor.",
+  "detayli_icerik_tr": "Geçtiğimiz Kasım ayında tanıtılan AnyLanguageModel, Apple'ın Foundation Models çerçevesine drop‑in bir alternatif olarak geliştirildi. Geliştiricilerin hem cihaz içinde (local) hem de uzaktan (hosted) model çalıştırma ihtiyacını tek bir API üzerinden karşılaması hedeflendi; bu sayede farklı sağlayıcılar arasında geçiş yapmak ya da birden fazla entegrasyon kodu yazmak zorunluluğu ortadan kalktı.\n\nAnyLanguageModel 1.0, import satırını \"import FoundationModels\" yerine \"import AnyLanguageModel\" olarak değiştirmekle başlayıp aynı oturum kodunun hem sistem modeline, hem llama.cpp, MLX ve Core ML üzerinden açık ağırlıklı modellere, hem de OpenAI, Anthropic, Google Gemini, Ollama ve Hugging Face gibi bulut sağlayıcılarına yönlendirilmesini sağlıyor. Araç çağrısı (tool calling), yönlendirilmiş üretim (guided generation) ve görüntü ekleme gibi gelişmiş özellikler tüm sağlayıcılarla uyumlu hâle getirildi.\n\nYerel model desteği de önemli ölçüde genişletildi. Hub üzerinden en çok indirilen modeller arasında Google'ın Gemma 4 E2B (3.4 GB, Q4_0), Liquid AI'nin LFM2.5 2.6B (1.7 GB, Q4_K_M) ve Alibaba'nın Qwen3.8 27B (16 GB, 4‑bit) bulunuyor; ilk ikisi iPhone’da, üçüncüsü ise 32 GB RAM’e sahip bir Mac’te çalışabiliyor. Daha büyük modeller, örneğin Z.ai’nin GLM‑5.3 (≈1.5 TB BF16), yalnızca güçlü sunucularda veya inference provider aracılığıyla erişilebiliyor.\n\nYeni sürüm aynı zamanda bağımlılık yönetimini basitleştiriyor; Swift Package Manager üzerinden \"https://github.com/huggingface/AnyLanguageModel\" adresiyle 1.0.0 ve üzeri sürümler eklenebiliyor. Geçiş rehberleri, API anahtarlarının kapalı bir fonksiyon üzerinden alınması ve Linux uyumluluğu gibi konularda geliştiricilere yol gösteriyor. Topluluk katkılarıyla şekillenen bu güncellemeler, Apple ekosisteminde LLM tabanlı akıllı uygulamaların geliştirilmesini hızlandırmayı amaçlıyor.",
+  "onemli_maddeler": [
+    "AnyLanguageModel 1.0, yerel ve bulut modelleri tek bir API ile birleştirerek geliştiricilerin geçiş maliyetini sıfıra indiriyor.",
+    "Tool calling, guided generation ve görüntü ekleme gibi ileri seviye özellikler tüm sağlayıcılarla uyumlu hâle getirildi.",
+    "Gemma 4E2B, LFM2.5 2.6B ve Qwen3.8 27B gibi büyük modeller iPhone ve Mac cihazlarda doğrudan çalıştırılabiliyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Apple platformlarında LLM entegrasyonunu basitleştiren ve hem yerel hem de bulut modellerini tek çatı altında sunan bir SDK’nın 1.0 sürümü, mobil ve masaüstü geliştiricileri için kritik bir altyapı iyileştirmesi oluşturuyor.",
+  "etiketler": [
+    "AnyLanguageModel",
+    "Swift",
+    "Apple",
+    "LLM",
+    "YerelModel"
+  ],
+  "anilan_modeller": [
+    "Gemma 4E2B",
+    "LFM2.5 2.6B",
+    "Qwen3.8 27B",
+    "GLM-5.3"
+  ],
+  "yorum_tr": "AnyLanguageModel 1.0, Apple ekosisteminde LLM tabanlı uygulamaların geliştirilme sürecini büyük ölçüde hızlandıracak; geliştiriciler hem cihaz içinde düşük gecikmeli çözümler hem de bulut sağlayıcılarının gücünden faydalanabilecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://huggingface.co/blog/assets/anylanguagemodel-1-0/banner.png",
+  "url": "https://huggingface.co/blog/anylanguagemodel-1-0",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-10-20T00:00:00.000Z",
+  "slug": "anylanguagemodel-1-0-one-year-of-local-models-on-apple-platf"
+}

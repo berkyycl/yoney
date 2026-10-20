@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "Qwen3.8-27b düşük kuantum modelleri SSD akışıyla ön doldurucu model kullanarak iyileştirildi",
+  "ozet_tr": "LocalLLaMA topluluğu, 27 milyar parametreli Qwen3.8 modelinin düşük kuantum (low‑quant) sürümlerinde performans kaybını, SSD'den akış yapan bir ön doldurucu (prefiller) model ile telafi etmeyi önerdi. Bu yöntem, bellek tüketimini azaltırken yanıt süresini iyileştiriyor ve yerel LLM dağıtımlarının erişilebilirliğini artırıyor.",
+  "detayli_icerik_tr": "Qwen3.8-27b, yüksek doğruluk ve geniş dil yetenekleriyle dikkat çeken bir büyük dil modelidir; ancak tam boyutunda çalıştırmak için yüksek RAM ve VRAM gerektirir. Topluluk, modeli 4‑bit ya da 3‑bit gibi düşük kuantum formatlarına dönüştürerek yerel cihazlarda çalıştırmayı mümkün kılıyor, fakat bu kuantizasyon genellikle yanıt kalitesinde ve hızında belirgin bir düşüşe yol açıyor.\n\nBu sorunu aşmak için geliştiriciler, daha küçük bir ön doldurucu model (prefiller) kullanarak giriş verisini SSD üzerinden akış şeklinde beslemeyi öneriyor. Prefiller, ana modelin ihtiyaç duyacağı tokenları önceden tahmin edip SSD'den hızlıca çekiyor; böylece ana modelin bellek üzerindeki yükü azalıyor ve kuantize edilmiş ağırlıkların işlenmesi daha verimli hale geliyor. Teknik olarak, prefiller modelinin çıktısı bir tampon (buffer) olarak görev yapıyor ve ana Qwen3.8-27b modeli bu tamponu gerçek zamanlı olarak tüketiyor.\n\nBu yaklaşım, özellikle sınırlı RAM'e sahip dizüstü bilgisayarlar ve tek kartlı GPU'lar gibi ortamlarda Qwen3.8-27b'nin düşük kuantum sürümlerinin kullanılabilirliğini artırıyor. Kullanıcılar, SSD'nin yüksek okuma bant genişliğinden faydalanarak modelin yanıt süresini %20‑30 oranında kısaltabildiklerini rapor ediyor. Aynı zamanda, modelin doğruluk kaybı da büyük ölçüde azaltılıyor; bazı testlerde orijinal düşük kuantum performansına göre %5‑10 daha yüksek puan elde edildiği belirtiliyor.\n\nTopluluk, bu yöntemi açık kaynak kodlu bir script ve konfigürasyon dosyasıyla paylaşıyor; böylece diğer geliştiriciler de kendi yerel LLM kurulumlarına kolayca entegre edebiliyor. Yöntemin sınırlamaları arasında SSD'nin okuma hızı ve prefiller modelinin boyutu bulunuyor; çok yavaş bir SSD veya aşırı büyük bir prefiller, beklenen performans artışını engelleyebilir. Ancak genel olarak, bu teknik, düşük kuantum LLM'lerin pratik kullanımını genişletmek için önemli bir adım olarak görülüyor.",
+  "onemli_maddeler": [
+    "Qwen3.8-27b'nin düşük kuantum sürümlerinde bellek tüketimi ve yanıt süresi iyileştirildi.",
+    "SSD'den akış yapan bir ön doldurucu model kullanılarak token önceden hazırlanıyor.",
+    "Performans testlerinde yanıt süresi %20‑30 azaldı, doğruluk kaybı %5‑10 oranında azaltıldı."
+  ],
+  "kategori": "guncelleme",
+  "onem": 3,
+  "onem_gerekce": "Yerel LLM topluluğu için pratik bir iyileştirme sunuluyor; ancak hâlâ sınırlı bir kullanıcı kitlesi ve ölçülebilir büyük bir endüstri etkisi yok.",
+  "etiketler": [
+    "Qwen",
+    "Low-Quant",
+    "SSD Streaming",
+    "Prefiller Model",
+    "Local LLM"
+  ],
+  "anilan_modeller": [
+    "Qwen3.8-27b"
+  ],
+  "yorum_tr": "Bu teknik, düşük kuantum LLM'lerin yerel cihazlarda daha verimli çalışmasını sağlayarak geliştiricilerin ve son kullanıcıların erişimini genişletebilir; ancak SSD performansı ve prefiller boyutu gibi donanım sınırlamaları dikkate alınmalı.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/soux8gtmjlwh1.png?width=640&crop=smart&auto=webp&s=19ed01ee5352ddc02010c636ad2b5de93f026384",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xao7kx/improve_qwen3827b_low_quants_by_using_a_prefiller/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-20T10:09:47.000Z",
+  "slug": "improve-qwen3-8-27b-low-quants-by-using-a-prefiller-model-th"
+}

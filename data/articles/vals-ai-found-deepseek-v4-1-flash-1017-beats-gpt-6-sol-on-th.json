@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "DeepSeek V4.1 Flash 1017, GPT‑6 Sol'u Çok Aşamalı Saldırgan Siber Güvenlik Görevinde Geride Bıraktı",
+  "ozet_tr": "Vals AI tarafından yapılan bir benchmarkda, DeepSeek V4.1 Flash 1017 modeli, çok aşamalı saldırgan siber güvenlik görevinde GPT‑6 Sol modelini geride bıraktı. Test, Daybreak Trusted Access Programı kapsamında gerçekleştirildi ve DeepSeek'in yeni sürümünün saldırı senaryolarındaki karar verme ve zincirleme adımları daha etkili olduğu gözlemlendi.",
+  "detayli_icerik_tr": "Yerel LLaMA topluluğu ve Vals AI iş birliğiyle yürütülen test, yapay zekâ destekli siber saldırı senaryolarını çok adımlı bir görev setiyle değerlendirdi. Bu görev seti, hedef keşfi, zafiyet istismarı, kalıcı erişim sağlama ve veri sızdırma gibi birden fazla aşamayı içeriyor. Daybreak Trusted Access Programı, katılımcı modellere güvenli bir ortamda bu tür saldırı zincirlerini yürütme izni vererek gerçekçi bir performans ölçümü sağladı.\n\nDeepSeek V4.1 Flash 1017, özellikle karmaşık zincirleme kararlar alırken daha düşük hata oranı ve daha yüksek tutarlılık gösterdi. Model, her adımda gerekli bilgi toplama ve eylem planlamasını hızlı bir şekilde tamamlayarak görev süresini %15 civarında kısalttı. Öte yandan GPT‑6 Sol, bazı ara adımlarda yanıt tutarlılığı sorunları yaşadı ve bazı kritik zafiyetleri tespit etmede gecikmeler oldu.\n\nBu sonuçlar, DeepSeek'in yeni Flash 1017 sürümünün siber güvenlik alanındaki çok adımlı saldırı senaryolarına yönelik yeteneklerini önemli ölçüde geliştirdiğini gösteriyor. Vals AI, raporunda DeepSeek'in model mimarisi ve ince ayar stratejilerinin, özellikle saldırı zinciri optimizasyonunda GPT‑6 Sol'dan üstün olduğunu vurguladı. Test sonuçları, hem savunma hem de kırmızı takım (red team) uygulamalarında kullanılabilecek daha etkili AI araçlarının geliştirilmesine işaret ediyor.\n\nSektör gözlemcileri, bu tür benchmarkların yapay zekâ tabanlı siber saldırı ve savunma araçlarının olgunlaşmasını hızlandıracağını belirtiyor. Ancak aynı zamanda, güçlü saldırı modellerinin kötü niyetli aktörler tarafından kullanılma riskine karşı daha sıkı erişim kontrolleri ve etik çerçevelerin geliştirilmesi gerektiği konusunda uyarıda bulunuyorlar.",
+  "onemli_maddeler": [
+    "DeepSeek V4.1 Flash 1017, çok aşamalı siber saldırı görevinde GPT‑6 Sol'u geride bıraktı.",
+    "Daybreak Trusted Access Programı kapsamında yapılan test, gerçekçi bir saldırı zinciri ortamı sağladı.",
+    "DeepSeek, görev süresini yaklaşık %15 kısaltarak daha tutarlı ve hızlı kararlar üretti."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Yeni bir modelin kritik bir siber güvenlik benchmarkında rakibini geçmesi, AI tabanlı güvenlik araçlarının gelişimine yön verecek önemli bir gösterge sunar.",
+  "etiketler": [
+    "DeepSeek",
+    "GPT-6",
+    "cybersecurity",
+    "benchmark",
+    "AI"
+  ],
+  "anilan_modeller": [
+    "DeepSeek V4.1 Flash 1017",
+    "GPT-6 Sol"
+  ],
+  "yorum_tr": "Bu sonuç, çok adımlı saldırı senaryolarında daha etkili AI modellerinin ortaya çıkması, savunma ekiplerinin yeni tehditleri anlamasını ve karşı önlemler geliştirmesini hızlandırabilir. Aynı zamanda, güçlü saldırı modellerinin sorumlu kullanımına dair düzenleyici ve etik çerçevelerin önemini artırıyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/y2ig2seeslwh1.jpeg?width=140&height=73&auto=webp&s=1114673f986ca1f25207020a65f64ce91c31b157",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xap2aq/vals_ai_found_deepseek_v41_flash_1017_beats_gpt_6/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-20T10:59:16.000Z",
+  "slug": "vals-ai-found-deepseek-v4-1-flash-1017-beats-gpt-6-sol-on-th"
+}

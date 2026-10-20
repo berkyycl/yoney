@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "Eka Robotics, fiziksel AI modeliyle 1,5 Milyar Dolar değerine ulaştı",
+  "ozet_tr": "Eka Robotics, dokunma ve kuvvet verilerini kullanan yeni bir \"vision‑force‑action\" modeli sayesinde nesne yakalama konusunda insanüstü performans sergiliyor ve 150 Milyon dolar yatırım alarak 1,45 Milyar dolar değerlemeye ulaştı.",
+  "detayli_icerik_tr": "Robotic manipülasyon hâlâ görsel veriye dayalı modellerin sınırlamalarıyla mücadele ederken, MIT profesörü Pulkit Agrawal ve eski Google DeepMind araştırmacısı Tuomas Haarnoja tarafından kurulan Eka Robotics, kuvvet sensörleriyle donatılmış bir tutucu ve özel bir derin öğrenme mimarisi geliştirdi. Şirket, a16z ve F‑Prime liderliğindeki 150 Milyon dolar tutarındaki Seri A turunu tamamlayarak 1,45 Milyar dolar post‑money değerlemeye ulaştı.\n\nEka’nın robot kolu, bir saat içinde 1 kg’a kadar ağırlıktaki yaklaşık 1.500 nesneyi yakalayabiliyor; bu oran insanın 600 nesneye kıyasla üç katına yakın. Ayrıca nesneleri %95'in üzerinde bir başarı oranıyla tutuyor ve kuvvet sensörleri sayesinde bir raspberry gibi hassas nesneleri ezmeden yumuşak bir temas sağlıyor. Uzmanlar, robotun bu performansını “süperinsan” olarak nitelendiriyor ve laboratuvar dışı uygulamalarda da benzer sonuçların elde edilebileceğini öngörüyor.\n\nModelin temel farkı, geleneksel \"vision‑language‑action\" yaklaşımlarının aksine, dil, görsel ve eylem yerine dil, kuvvet ve eylem ilişkisine odaklanması. Bu sayede robot, nesnenin konumunu görsel olarak tahmin ederken, gerçek tutma sürecini kuvvet geri bildirimleriyle yönlendiriyor. Eğitim süreci, fiziksel simülatörlerde binlerce saatlik deneyimi dakikalar içinde üretmek üzere tasarlanmış bir pekiştirmeli öğrenme ortamı kullanıyor; böylece insan gösterimlerine bağımlı kalmadan ölçeklenebilir bir veri akışı sağlanıyor.\n\nEka’nın teknoloji hâlâ pilot aşamasında ve gizli endüstriyel müşterilerle pick‑and‑place ve kablo montajı gibi görevlerde test ediliyor. Şirket, düşük maliyetli (1.000 $ altında) ve 5 milyon döngü ömrüne sahip bir tutucu geliştirdi; uzun vadede 20 milyon döngü hedefine ulaşmayı hedefliyor. Uzmanlar, laboratuvar‑gerçek dünya geçişinin ve uzun vadeli dayanıklılığın hâlâ kritik zorluklar olduğunu belirtiyor.",
+  "onemli_maddeler": [
+    "Eka, vision‑force‑action modeliyle nesne yakalamada %95'in üzerinde başarı sağladı.",
+    "Robot kolu bir saatte 1.500 nesneyi işleyebiliyor; insanın üç katı hız.",
+    "Şirket, 150 Milyon dolar yatırım alarak 1,45 Milyar dolar değerlemeye ulaştı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Fiziksel AI’da yeni bir model mimarisi, robotik manipülasyonda insanüstü performans ve büyük yatırım çekmesi sektörde çığır açıcı bir etki yaratıyor.",
+  "etiketler": [
+    "robotik",
+    "AI",
+    "manipülasyon",
+    "pekistirmeli öğrenme",
+    "venture capital"
+  ],
+  "anilan_modeller": [
+    "Eka Vision-Force-Action Model"
+  ],
+  "yorum_tr": "Eka’nın kuvvet‑odaklı modeli, robotların gerçek dünyadaki ince dokunuş gerektiren görevlerde güvenilirliğini artırarak endüstriyel otomasyonda yeni bir standart oluşturabilir; geliştiriciler de simülasyon‑temelli veri üretimi sayesinde daha hızlı prototipleme yapabilecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://techcrunch.com/wp-content/uploads/2026/10/Screenshot-2026-10-19-at-1.21.23-PM.png?resize=1200,974",
+  "url": "https://techcrunch.com/2026/10/20/eka-is-worth-1-45-billion-thanks-to-a-physical-ai-model-that-has-experts-raving/",
+  "source": "TechCrunch AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-20T13:00:00.000Z",
+  "slug": "eka-is-worth-1-45b-thanks-to-a-physical-ai-model-that-has-ex"
+}

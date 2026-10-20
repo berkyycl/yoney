@@ -1,0 +1,74 @@
+{
+  "baslik_tr": "PyTorch 2.15 MPS Güncellemesi: FP8 Desteği, Hızlandırılmış LLM Çözümleme ve Video Bellek Tasarrufu",
+  "ozet_tr": "Hugging Face ekibi, PyTorch 2.15 sürümünde Apple Silicon MPS arka ucuna FP8 tensörleri, çok daha hızlı MoE ve dense LLM çözümleme yolları ve video VAE kodlamasında dramatik bellek düşüşü getirdi. Yeni Metal çekirdekleri sayesinde lineer katmanlar, softmax ve karmaşık lineer cebir işlemleri GPU’da doğrudan çalışıyor.",
+  "detayli_icerik_tr": "PyTorch 2.15, macOS 15 ve Python 3.11+ gereksinimleriyle Apple Silicon cihazlarda MPS (Metal Performance Shaders) desteğini büyük ölçüde genişletiyor. En dikkat çekici yenilik FP8 (float8_e4m3fn) tensörlerinin tanıtılması; bu tensörler bir baytlık depolama alanı kullanarak BF16 ve FP16’nın yarısı kadar bellek tüketiyor ve F.scaled_mm aracılığıyla doğrudan GPU’da çarpılıyor. \n\nLLM (büyük dil modelleri) çözümleme sürecinde hem dense hem de mixture‑of‑experts (MoE) katmanları için özel Metal çekirdekleri eklenmiş. M3 Ultra üzerinde torch.compile ile Qwen3.6‑35B‑A3B modeli 9.4 token/s'den 61.3 token/s'ye, LFM2.5‑8B‑A1B ise 23.6 token/s'den 123.6 token/s'ye yükseliyor. Tek satır lineer katmanlar ve vocab üzerindeki softmax işlemi de sırasıyla %23 ve %8 hız artışı sağlıyor. \n\nKompleks sayılar, LU, QR ve üçgensel çözümler gibi lineer cebir rutinleri artık MPS üzerinde çalışıyor; bu da kamera geometri ve görüntü dönüşümleri gibi küçük‑matris işlemlerinde belirgin performans kazancı getiriyor. Ayrıca conv1d, padding, dropout ve upsampling gibi ses‑video iş akışları için yeni Metal yolları tanıtıldı; özellikle Wan2.2 video VAE kodlamasında sürücü bellek ihtiyacı 270 GiB'den 8 GiB'ye düştü. \n\nPython seviyesinde kontrol de artıyor: torch.mps.Stream ve torch.mps.stream bağlam yöneticisi sayesinde geliştiriciler MPS akışlarını doğrudan seçebiliyor ve Tensor.record_stream ile bellek tahsiscisi akış takibini yapabiliyor. Bir dizi ek operasyon (torch.frexp, torch.logspace, torch.take vb.) da MPS üzerinde çalışır hâle getirildi. Gelecek sürüm 2.16’da dikkat (attention) tamamen Metal üzerine taşınacak ve daha fazla MPSGraph‑Metal geçişi planlanıyor.",
+  "onemli_maddeler": [
+    "FP8 tensörleri MPS üzerinde tanıtıldı; bellek tüketimi %50 azaldı ve F.scaled_mm ile doğrudan GPU çarpımı mümkün.",
+    "MoE ve dense LLM modelleri M3 Ultra’da 5‑6.5 kat daha hızlı token üretimi sağlıyor (Qwen3.6‑35B‑A3B 61.3 tokens/s).",
+    "Video VAE kodlamasında sürücü bellek ihtiyacı 270 GiB'den 8 GiB'ye düştü, büyük ölçekli video üretimi artık Mac’lerde mümkün.",
+    "Complex64 LU, QR ve üçgensel çözümler MPS’e taşındı; küçük‑matris işlemlerinde %10‑12 hız artışı.",
+    "Python API üzerinden MPS akış kontrolü ve yeni Metal çekirdekleri sayesinde daha tutarlı zamanlama ve düşük gecikme."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Apple Silicon kullanıcıları ve Mac‑tabanlı AI araştırmacıları için PyTorch 2.15, bellek ve performans sınırlamalarını büyük ölçüde kaldırarak yerel LLM ve multimodal iş akışlarını mümkün kılıyor; sektördeki rekabeti artırması bekleniyor.",
+  "etiketler": [
+    "PyTorch",
+    "MPS",
+    "Apple Silicon",
+    "FP8",
+    "LLM"
+  ],
+  "anilan_modeller": [
+    "Qwen3.6-35B-A3B",
+    "LFM2.5-8B-A1B",
+    "Wan2.2",
+    "Qwen-Image-2.1"
+  ],
+  "yorum_tr": "Bu güncellemeler, Mac üzerinde AI geliştirmeyi ciddi bir üretkenlik platformuna dönüştürüyor; geliştiriciler daha düşük bellek maliyetiyle büyük modelleri çalıştırabilirken, kullanıcılar da daha hızlı yanıt süreleri ve daha akıcı multimodal deneyimler elde edecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen3.6-35B-A3B",
+      "benchmark": "token throughput",
+      "skor": 61.3,
+      "birim": "tokens/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "M3 Ultra, torch.compile, 2.15",
+      "kaynak_metinden_alinti": "MoE models decode 5–6.5× faster than in 2.14: Qwen3.6-35B-A3B goes from 9.4 to 61.3 tokens/s on an M3 Ultra"
+    },
+    {
+      "model": "LFM2.5-8B-A1B",
+      "benchmark": "token throughput",
+      "skor": 123.6,
+      "birim": "tokens/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "M3 Ultra, torch.compile, 2.15",
+      "kaynak_metinden_alinti": "LFM2.5-8B-A1B from 23.6 to 123.6 tokens/s"
+    },
+    {
+      "model": "Softmax (vocab size 128256)",
+      "benchmark": "softmax latency",
+      "skor": 7,
+      "birim": "µs",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "FP32 softmax over [1, 128256] logits, 2.15",
+      "kaynak_metinden_alinti": "an FP32 softmax over a [1, 128256] row of logits drops from 57 µs to 7 µs, about 8× faster"
+    },
+    {
+      "model": "Wan2.2 video VAE decode",
+      "benchmark": "driver memory peak",
+      "skor": 8,
+      "birim": "GiB",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "constant padding on Metal, 2.15",
+      "kaynak_metinden_alinti": "peak driver memory drops from about 270 GiB to 8 GiB"
+    }
+  ],
+  "gorsel_url": "https://huggingface.co/blog/assets/mps-pytorch-2-15/thumbnail.png",
+  "url": "https://huggingface.co/blog/mps-pytorch-2-15",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-10-20T00:00:00.000Z",
+  "slug": "mps-in-pytorch-2-15"
+}

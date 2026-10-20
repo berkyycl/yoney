@@ -1,0 +1,55 @@
+{
+  "baslik_tr": "Cloudflare’ın Clairic modeli belgelerden veri çekmeyi LLM’lerden daha hızlı ve ucuz yapıyor",
+  "ozet_tr": "Cloudflare, belgelerden alan bazlı veri çıkarımı yapan Clairic adlı yeni yapay zeka modelini Workers AI önizlemesi olarak duyurdu. Model, istenen alanları tek bir geçişte döndürerek hem işlem süresini hem de maliyeti büyük ölçüde azaltıyor.",
+  "detayli_icerik_tr": "Cloudflare, belgelerden veri çekme görevini büyük dil modellerinden (LLM) daha hızlı ve daha ekonomik bir şekilde gerçekleştirecek Clairic modelini tanıttı. Model, kullanıcıların \"sipariş numarası\" ya da \"fatura tutarı\" gibi alanları belirtmelerine olanak tanıyor ve bu alanların değerlerini uygun formatta, yanlarında bir güven skoru ile geri döndürüyor. LLM'lerin kelime kelime metin üretmesi yerine Clairic, tüm alanları tek bir geçişte yanıtlayarak \"null\" değerleri de doğrudan sunabiliyor.\n\nClairic, sadece basit veri çıkarımıyla sınırlı kalmayıp temel hesaplamalar, tahminler ve öngörüler de yapabiliyor. Model, daha büyük bir ajan zincirinin bir parçası olarak tasarlandı; örneğin bir şikayet e‑postasında sipariş numarası, tutar ve hasar gibi bilgileri çekip, bir tahmin modeli (Clef) aracılığıyla onarım maliyetini hesaplayıp, ardından GLM-5.3 gibi bir LLM ile müşteriye yanıt üretebiliyor. Bu zincir, Cloudflare’a göre 19,3 saniye sürerken aynı üç adımı yalnızca GLM-5.3 ile gerçekleştirmek 61,7 saniye alıyor ve maliyet neredeyse iki katına çıkıyor.\n\nŞu an için Clairic, uzun ve karmaşık hesaplama zincirlerini güvenilir bir şekilde yönetemiyor; bu tür işlemlerin geliştiriciler tarafından ayrı kod bloklarıyla yürütülmesi öneriliyor. Modelin açık ağırlıkları yakında yayınlanacak ve geliştiriciler, Cloudflare Workers AI platformu üzerinden önizleme sürümünü deneyimleyebilecek. Clairic'in bu yaklaşımı, veri çıkarımı süreçlerini optimize ederek LLM tabanlı çözümlerin yüksek işlem maliyetleri ve gecikme sorunlarını azaltmayı hedefliyor.\n\nClairic'in piyasaya sürülmesi, özellikle finans, e‑ticaret ve müşteri hizmetleri gibi alanlarda büyük hacimli belge işleme ihtiyacı olan şirketler için önemli bir adım olarak görülüyor. Modelin hızlı ve maliyet etkin yapısı, veri odaklı otomasyon projelerinde LLM'lerin yerine daha hafif bir alternatif sunarak geliştirme sürecini hızlandırabilir ve operasyonel harcamaları düşürebilir.",
+  "onemli_maddeler": [
+    "Clairic, alan bazlı veri çıkarımını tek bir geçişte yaparak işlem süresini %68 azaltıyor (19,3 s vs 61,7 s).",
+    "Maliyet açısından aynı zincir, GLM-5.3 tek başına çalıştırılmaya göre neredeyse iki kat daha ucuz.",
+    "Model, güven skoru ile birlikte değer döndürür ve eksik alanlar için \"null\" yanıtı verir.",
+    "Şu an için uzun hesaplama zincirlerini desteklemiyor; bu adımlar geliştiriciler tarafından ayrı kodla yürütülmeli."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Clairic, veri çıkarımı ve hafif otomasyon senaryolarında LLM'lerin yüksek maliyetli ve yavaş alternatifine kıyasla daha verimli bir çözüm sunarak bulut tabanlı AI hizmetlerinde yeni bir kullanım modeli oluşturuyor.",
+  "etiketler": [
+    "yapay zeka",
+    "veri çıkarımı",
+    "Cloudflare",
+    "LLM",
+    "otomasyon"
+  ],
+  "anilan_modeller": [
+    "Clairic",
+    "GLM-5.3",
+    "Jev",
+    "Clef"
+  ],
+  "yorum_tr": "Clairic'in tanıtımı, yüksek hacimli belge işleme gerektiren uygulamalarda LLM'lerin yerini alabilecek daha hafif bir alternatif sunarak geliştiricilerin maliyet ve gecikme kaygılarını azaltabilir. Ancak uzun zincirli hesaplamalar için hâlâ ek kodlama ihtiyacı bulunması, modelin tam potansiyeline ulaşması için bir ara adım olarak değerlendirilebilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Clairic + GLM-5.3 zinciri",
+      "benchmark": "Zincir Çalışma Süresi",
+      "skor": 19.3,
+      "birim": "s",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Bu zincir 19.3 saniye sürüyor. GLM-5.3 tek başına tüm üç adım için 61.7 saniye gerekiyor."
+    },
+    {
+      "model": "GLM-5.3 tek başına",
+      "benchmark": "Zincir Çalışma Süresi",
+      "skor": 61.7,
+      "birim": "s",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "GLM-5.3 on its own needs 61.7 seconds for all three steps."
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/07/cloudflare_logo_wall-2.png",
+  "url": "https://the-decoder.com/cloudflares-clairic-pulls-data-from-documents-faster-and-cheaper-than-llms/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-20T12:04:56.000Z",
+  "slug": "cloudflare-s-clairic-pulls-data-from-documents-faster-and-ch"
+}

@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "DeepSeek, DeepInfer'ı Açık Kaynak Olarak Yayınladı: Yüksek Performanslı Büyük Ölçekli Çıkarım Çerçevesi",
+  "ozet_tr": "DeepSeek, DeepInfer adlı açık kaynaklı çıkarım çerçevesini duyurdu. Çerçeve, DeepSeek modelleri için yüksek performans ve büyük ölçekli dağıtım imkanı sunuyor. Geliştiriciler, bu yeni araç sayesinde çıkarım sürecini optimize edebilecek.",
+  "detayli_icerik_tr": "DeepSeek, yapay zeka topluluğu için yeni bir araç olan DeepInfer'ı resmi olarak yayınladı. DeepInfer, DeepSeek'in büyük dil modelleri ve kod üretim modelleriyle uyumlu, tamamen açık kaynaklı bir çıkarım (inference) çerçevesi olarak tasarlandı. Proje, GitHub üzerinden MIT lisansı altında erişilebilir hâle getirildi ve topluluk katkılarına açık bir geliştirme süreci vaat ediyor.\n\nÇerçevenin temel özellikleri arasında düşük gecikme süresi, çoklu GPU desteği ve dağıtık ortamda ölçeklenebilirlik bulunuyor. DeepInfer, model ağırlıklarını bellek içinde verimli bir şekilde yöneterek hem tek bir GPU'da hem de büyük veri merkezlerinde yüksek throughput (işlem hacmi) sağlamayı hedefliyor. Ayrıca, kullanıcıların kendi donanım konfigürasyonlarına göre özelleştirebilecekleri bir API katmanı sunuluyor.\n\nDeepSeek modelleri, özellikle DeepSeek‑Chat ve DeepSeek‑Coder gibi popüler sürümler, DeepInfer ile sorunsuz bir entegrasyon sunuyor. Geliştiriciler, bu çerçeveyi kullanarak model çıkarımını hızlandırabilir, maliyetleri düşürebilir ve üretim ortamlarında daha stabil bir performans elde edebilir. Proje dokümantasyonu, örnek kodlar ve benchmark raporları da paket içinde yer alıyor.\n\nTopluluk, DeepInfer'ın açık kaynak doğası sayesinde hızla benimsenmesi ve ek özelliklerin eklenmesi bekleniyor. DeepSeek, bu adımla sadece kendi modellerinin ekosistemini genişletmekle kalmayıp, AI araştırmacıları ve uygulama geliştiricileri için de güçlü bir altyapı sunmayı amaçlıyor.",
+  "onemli_maddeler": [
+    "DeepInfer tamamen açık kaynak ve MIT lisansı altında sunuluyor.",
+    "Çerçeve, düşük gecikme ve yüksek throughput sağlayarak büyük ölçekli çıkarımda performans artışı vaat ediyor.",
+    "DeepSeek‑Chat ve DeepSeek‑Coder gibi popüler modellerle sorunsuz entegrasyon sağlıyor.",
+    "Çoklu GPU ve dağıtık ortam desteğiyle ölçeklenebilirlik sunuyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "DeepInfer, büyük dil modellerinin üretim ortamlarına entegrasyonunu kolaylaştırarak AI altyapı maliyetlerini düşürür ve topluluk tarafından hızla benimsenebilecek bir araç sunar.",
+  "etiketler": [
+    "DeepSeek",
+    "DeepInfer",
+    "AçıkKaynak",
+    "ModelÇıkarımı",
+    "AIFramework"
+  ],
+  "anilan_modeller": [
+    "DeepSeek‑Chat",
+    "DeepSeek‑Coder"
+  ],
+  "yorum_tr": "DeepInfer, açık kaynaklı bir çıkarım çerçevesi olarak geliştiricilere maliyet ve performans açısından önemli bir avantaj sağlıyor; topluluk desteğiyle hızla olgunlaşması bekleniyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/jfifm2yGG5CPl4MgeE4uruwH6dlytSsZCRu8pHXHpQk.png?width=640&crop=smart&auto=webp&s=eacdaea37e3811ff70eeb18b437fc86369cedd50",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xanm55/deepseek_released_deepinfer_open_source/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-20T09:33:27.000Z",
+  "slug": "deepseek-released-deepinfer-open-source-high-performance-lar"
+}
