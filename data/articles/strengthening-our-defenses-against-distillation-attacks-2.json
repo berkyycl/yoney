@@ -1,0 +1,58 @@
+{
+  "baslik_tr": "Anthropic, Claude modellerinde distilasyon saldırılarına karşı savunmalarını güçlendirdi",
+  "ozet_tr": "Anthropic, son aylarda Claude serisine yönelik distilasyon saldırılarını %90‑99 oranında azaltan yeni savunma mekanizmaları geliştirdi. Yeni önlemler, modelin düşünce sürecini koruyan \"preserved thinking\" ve iki aşamalı sınıflandırıcı sistemiyle saldırıların büyük bir kısmını engelliyor, ancak bazı entegrasyon güncellemeleri ve bloklanan istekler için ücretlendirme gibi maliyetleri de beraberinde getiriyor.",
+  "detayli_icerik_tr": "Distilasyon saldırıları, bir modelin yeteneklerini izinsiz olarak başka bir modele kopyalamak amacıyla milyonlarca yanıt toplamak ve bu yanıtları eğitim verisi olarak kullanmak şeklinde gerçekleşiyor. Anthropic, bu tür saldırıların özellikle Claude'un düşünce süreçlerini (reasoning) içeren tam transkriptlerden faydalanarak daha etkili bir şekilde gerçekleştirildiğini belirtiyor. İlk savunma adımı olarak Claude'un düşünce sürecini özetleyip kullanıcıya sunması, distilatörlerin elde ettiği veri kalitesini %10‑15 oranında düşürdü.\n\nAncak saldırganlar, modelin tam düşünce sürecini ortaya çıkarmak için aktif yöntemlere yöneldi; \"tam düşünceyi karakter karakter ver\" gibi talimatlarla Claude'u zorlamaya çalıştılar. Bu durum, Anthropic'in ikinci savunma katmanını geliştirmesine yol açtı: 2026 Ağustos 31 tarihinden sonra oluşturulan API hesapları için \"preserved thinking\" özelliği getirildi ve bu hesapların Claude'un önceki bağlamını düzenlemesi engellendi. Ayrıca, Claude Sonnet 5.5 ve Opus 5.5 modellerinde düşünce transkriptleri yalnızca isteği yapan organizasyona sunuluyor.\n\nYeni savunma mekanizmasının kalbinde, biyolojik ve siber güvenlikte kullanılan sınıflandırıcılarla aynı yapıya sahip iki aşamalı bir sınıflandırıcı sistemi bulunuyor. Bu sistem, distilasyon girişimlerini %0,1'in altında bir yanlış pozitif oranıyla engelliyor ve Claude'un en yetenekli genel kullanım modellerinde (Claude Sonnet 5.5, Opus 5 ve 5.5, Fable 5 ve 5.1) aktif olarak çalışıyor. Sistem, sürekli güncellenerek yeni kaçak tekniklerini (örneğin, düşünceyi başka bir dile çevirme) hızlıca kapatıyor.\n\nUygulanan önlemlerin etkisi ölçüldü: yeni sınıflandırıcıdan sonra distilatörlerin elde ettiği düşünce token sayısı, önceki seviyelere göre 10‑100 kat azaldı ve bazı günlerde ölçülemez kadar düşük seviyelere düştü. Bu başarı, aynı zamanda on binlerce şüpheli hesabın birkaç saat içinde kapatılmasını sağladı. Ancak Anthropic, bu önlemlerin tamamen kusursuz olmadığını ve bazı geliştiricilerin entegrasyonlarını güncellemesi, nadir durumlarda meşru isteklerin bloklanması ve bloklanan istekler için ücret alınması gibi maliyetler getirdiğini kabul ediyor.",
+  "onemli_maddeler": [
+    "Distilasyon saldırılarında elde edilen veri miktarı %90‑99 oranında azaldı.",
+    "\"Preserved thinking\" ile yeni API hesaplarının Claude'un önceki bağlamını düzenlemesi engellendi.",
+    "İki aşamalı sınıflandırıcı sistemi %0,1'in altında yanlış pozitif oranıyla çalışıyor.",
+    "Distilatörlerin elde ettiği düşünce tokenları 10‑100 kat azaldı, on binlerce hesap hızlıca kapatıldı.",
+    "Bazı geliştiricilerin entegrasyon güncellemeleri yapması ve bloklanan istekler için ücretlendirme gibi ticari maliyetler ortaya çıktı."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Claude modellerinin güvenliği ve ulusal güvenlik açısından kritik bir tehdit olan distilasyon saldırılarına karşı kapsamlı savunma önlemleri, hem teknik hem de ticari açıdan sektörde geniş yankı uyandıracak bir güncelleme niteliğindedir.",
+  "etiketler": [
+    "distilasyon",
+    "güvenlik",
+    "Claude",
+    "AI savunması",
+    "API"
+  ],
+  "anilan_modeller": [
+    "Claude Fable 5.1",
+    "Claude Opus 5.5",
+    "Claude Sonnet 5.5",
+    "Claude Opus 5",
+    "Claude Fable 5",
+    "Claude Opus 4.8"
+  ],
+  "yorum_tr": "Anthropic'in yeni savunma katmanları, distilasyon saldırılarını büyük ölçüde zorlaştırarak model güvenliğini artırıyor; ancak geliştiriciler için entegrasyon maliyetleri ve bloklanan isteklerde ücretlendirme gibi yeni sorumluluklar da getiriyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Claude Opus 4.8",
+      "benchmark": "SWE-bench Verified",
+      "skor": 80.4,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "full transcripts",
+      "kaynak_metinden_alinti": "When training on the full transcripts, the distilled model achieved 80.4%."
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "benchmark": "SWE-bench Verified",
+      "skor": 71.8,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "summarized transcripts",
+      "kaynak_metinden_alinti": "with only the summarized transcripts, it achieved 71.8%."
+    }
+  ],
+  "gorsel_url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/a5934d1ae8428b2a97fae1963a5f427594fc7202-1200x630.jpg",
+  "url": "https://www.anthropic.com/news/distillation-defenses",
+  "source": "Anthropic",
+  "sourceTier": "resmi",
+  "date": "2026-10-12T00:00:00.000Z",
+  "slug": "strengthening-our-defenses-against-distillation-attacks-2"
+}

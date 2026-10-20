@@ -1,0 +1,81 @@
+{
+  "baslik_tr": "Mistral AI’dan Voxtral 3: Çok Dilli Gerçek Zamanlı Ses Ajanı SDK ve Yeni STT/TTS Modelleri",
+  "ozet_tr": "Mistral AI, sesli asistanların ve çağrı merkezi çözümlerinin temelini yeniden tanımlayan Voxtral 3'ü tanıttı. 50'yi aşkın dilde anlık, duygusal ve çok adımlı konuşmaları destekleyen yeni ses‑metin ve metin‑ses modelleri, aynı zamanda derin araç entegrasyonu ve veri egemenliği sunan bir SDK ile geliyor.",
+  "detayli_icerik_tr": "Mistral AI, Voxtral 3 ile sesli etkileşimlerde dört temel yeteneği bir arada sunmayı hedefliyor: yüksek doğruluklu çok dilli transkripsiyon, bağlam‑ağırlıklı anahtar kelime hatırlama, duygusal ve akıcı ses sentezi ve çok adımlı araç çağrıları. Yeni ses ajanı SDK'sı, dinleme, düşünme, araç çağırma ve konuşma süreçlerini gerçek zamanlı bir akış içinde birleştirerek telefon ve web üzerinden düşük gecikmeli, kesintisiz bir deneyim sağlıyor.\n\nVoxtral Small Transcribe 3, 50'den fazla dili destekleyen, diyafon (kim konuştu) ve bağlam‑biasing özellikli bir speech‑to‑text modeli olarak tanıtıldı. Model, konuşmanın sonunu algılayarak anlık yanıtlar vermeyi mümkün kılıyor. Aynı zamanda Voxtral Mini TTS 3, 35+ dil ve 50+ lehçede duygusal ton, tempo ve vurgu ayarlamaları yapabilen bir text‑to‑speech motoru sunuyor. Profesyonel kullanım senaryoları için 30 dakikalık ses örnekleriyle bir konuşmacının karakteristik sesini yeniden yaratabilen Pro Voice adaptasyonu da mevcut.\n\nMüşteriler, Voxtral 3'ü Mistral'ın AB‑konumlu API'si üzerinden ya da kendi altyapılarına kurarak veri egemenliğini koruyabiliyor. Modelin fiyatlandırması da rekabetçi: Small Transcribe 3 için $0.0035/dakika ve Mini TTS 3 için 1M karakter başına $13. Bu maliyetler, OpenAI, Deepgram ve ElevenLabs gibi rakiplerin benzer hizmetlerine kıyasla daha düşük seviyelerde.\n\nPerformans açısından Voxtral Small Transcribe 3, FLEURS 45 benchmark'ında zorunlu (forced) dilde %4.1, otomatik (inferred) dilde %4.0 WER ile en iyi sonuçları elde ederken, diyafon benchmark'ında %18.4 cpWER ile öne çıkıyor. Bağlam‑biasing testlerinde ise %94.6 anahtar kelime hatırlama oranına ulaşarak rakiplerinin çok üzerinde bir performans sergiliyor. Gerçek zamanlı transkripsiyon modeli Voxtral Mini Transcribe 3 ise 35 dilde ortalama %4.0 WER ile düşük gecikmeli uygulamalara uygun olduğunu kanıtladı.",
+  "onemli_maddeler": [
+    "Voxtral 3, 50+ dili destekleyen, gerçek zamanlı transkripsiyon ve duygusal TTS yeteneklerini tek bir SDK'da birleştiriyor.",
+    "Pro Voice adaptasyonu, sadece 30 dakikalık sesle konuşmacının karakteristik sesini çok dilli olarak klonlayabiliyor.",
+    "Müşteri verileri AB içinde kalıyor; hem API hem de kendi altyapısına kurulum seçeneğiyle tam veri egemenliği sağlanıyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Voxtral 3, çok dilli gerçek zamanlı ses işleme ve derin araç entegrasyonu sunarak ses tabanlı uygulamaların geliştirilmesini kökten değiştiriyor ve veri egemenliğiyle sektörde yeni bir standart belirliyor.",
+  "etiketler": [
+    "ses AI",
+    "speech-to-text",
+    "text-to-speech",
+    "SDK",
+    "veri egemenliği"
+  ],
+  "anilan_modeller": [
+    "Voxtral Small Transcribe 3",
+    "Voxtral Mini TTS 3",
+    "Voxtral Mini Transcribe 3",
+    "Voxtral Pro Voice"
+  ],
+  "yorum_tr": "Voxtral 3, sesli asistan ve çağrı merkezi pazarında yüksek doğruluk ve duygusal ifade gerektiren senaryoları düşük maliyetle sunarak geliştiricilerin ve işletmelerin yeni hizmetler yaratmasını hızlandıracak. Veri egemenliği odaklı dağıtım seçeneği ise özellikle AB düzenlemelerine tabi sektörlerde büyük bir avantaj sağlayacak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Voxtral Small Transcribe 3",
+      "benchmark": "FLEURS 45 (Forced) Word Error Rate",
+      "skor": 4.1,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "forced language",
+      "kaynak_metinden_alinti": "Forced=4.1% Inferred=4.0% ... Voxtral Small Transcribe 3"
+    },
+    {
+      "model": "Voxtral Small Transcribe 3",
+      "benchmark": "FLEURS 45 (Inferred) Word Error Rate",
+      "skor": 4,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "inferred language detection",
+      "kaynak_metinden_alinti": "Forced=4.1% Inferred=4.0% ... Voxtral Small Transcribe 3"
+    },
+    {
+      "model": "Voxtral Small Transcribe 3",
+      "benchmark": "Concatenated Minimum Permutation WER (diarization)",
+      "skor": 18.4,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "cpWER",
+      "kaynak_metinden_alinti": "18.4% ... Voxtral Small Transcribe 3"
+    },
+    {
+      "model": "Voxtral Small Transcribe 3",
+      "benchmark": "Keyphrase Recall with Context",
+      "skor": 94.6,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "with context",
+      "kaynak_metinden_alinti": "94.6% ... Voxtral Small Transcribe 3"
+    },
+    {
+      "model": "Voxtral Mini Transcribe 3",
+      "benchmark": "Realtime transcription WER (FLEURS 35)",
+      "skor": 4,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "realtime",
+      "kaynak_metinden_alinti": "4.0% ... Voxtral Mini Transcribe 3*"
+    }
+  ],
+  "gorsel_url": "https://mistral.ai/cms-media/api/media/file/hero-blog-voxtral.png",
+  "url": "https://mistral.ai/news/voxtral-3",
+  "source": "Mistral AI",
+  "sourceTier": "resmi",
+  "date": "2026-10-20T12:00:22.000Z",
+  "slug": "voxtral-3"
+}

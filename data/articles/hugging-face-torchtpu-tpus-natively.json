@@ -1,0 +1,56 @@
+{
+  "baslik_tr": "Hugging Face, TorchTPU ile PyTorch'u TPU'larda Yerel Hale Getirdi",
+  "ozet_tr": "Hugging Face, TorchTPU adlı yeni bir PyTorch arka ucunu duyurdu. Bu sayede Transformer, Diffusers ve özel çekirdekler, tek bir komutla TPU'ya gönderilerek, ek bir çeviri katmanı olmadan çalıştırılabiliyor. Kullanıcılar artık \"device_map=\\\"tpu\\\"\" ile modelleri doğrudan TPU üzerinde eğitebilir ve dağıtık eğitimden yararlanabilir.",
+  "detayli_icerik_tr": "Hugging Face, uzun süredir PyTorch kullanıcılarının TPU'ları kullanırken karşılaştığı zorlukları ortadan kaldırmak amacıyla TorchTPU'yu tanıttı. Önceden PyTorch/XLA (torch_xla) ve JAX gibi ek katmanlar gerektiren süreç, artık tek bir pip komutuyla kurulabilen ve PyTorch kodunun doğrudan TPU'ya yönlendirilebildiği bir altyapıya dönüştü. TorchTPU, Pallas tabanlı çekirdekler, dağıtık eğitim desteği ve torch.compile entegrasyonu sunarak performans artışı sağlıyor.\n\nYeni backend, Hugging Face ekosistemindeki Transformers ve Diffusers kütüphanelerine tam entegrasyon sağlıyor. Kullanıcılar bir model ID'si belirleyip \"device_map=\\\"tpu\\\"\" parametresiyle modeli TPU'ya yükleyebiliyor; tokenizasyon ve metin üretimi aynı PyTorch API'leriyle yürütülüyor. Diffusers kütüphanesinde ise pipeline'lar sadece \"pipe.to(\\\"tpu\\\")\" komutuyla TPU'ya taşınıyor ve isteğe bağlı olarak \"torch.compile\" ile derlenmiş modda çalıştırılabiliyor. Büyük modellerin birden fazla çip arasında bölünmesi için TensorParallelConfig desteği de mevcut.\n\nPerformans açısından TorchTPU, özellikle büyük dil modellerinde çarpıcı iyileştirmeler sunuyor. Batch size 64'te Qwen3-30B-A3B modeli, TPU v6e-8 üzerinde standart çekirdeklere kıyasla 21.5 kat daha hızlı decode ederken, Gemma 4 26B-A4B modeli %12.8 hız artışı sağlıyor. Görüntü üretiminde ise 1024×1024 çözünürlükte 40 adımlık bir StableDiffusion3 çalışması, derlenmiş modda 3.5 saniye sürerken, eager modda 8.0 saniye alıyor; bu da yaklaşık 2.3 kat hız kazancı demek. Daha büyük bir örnek olarak 1344×768 çözünürlükte 49 adımda derlenmiş mod 5.2 saniye, eager mod ise 262 saniye sürerek 50 katlık bir fark gösteriyor.\n\nTorchTPU'nun tanıtımı, Optimum TPU gibi ara çözümlere artık ihtiyaç kalmadığını belirtiyor. Hugging Face, bu yeni backend'i sürekli test ediyor; şu ana kadar TPU üzerinde çalışan testlerin %96.5'i başarılı ve ortaya çıkan hatalar doğrudan TorchTPU deposunda raporlanıp düzeltiliyor. Geliştiriciler, sorun yaşadıklarında GitHub üzerinden geri bildirimde bulunarak ekosistemin olgunlaşmasına katkı sağlayabilir.",
+  "onemli_maddeler": [
+    "TorchTPU, PyTorch kodunu tek bir satırla TPU'ya yönlendirerek ek bir çeviri katmanı gerektirmeden çalıştırma imkanı sunuyor.",
+    "Transformers ve Diffusers kütüphaneleri, \"device_map=\\\"tpu\\\"\" ve \"pipe.to(\\\"tpu\\\")\" komutlarıyla tam entegrasyon sağladı; dağıtık eğitim ve torch.compile desteği mevcut.",
+    "Batch size 64'te Qwen3-30B-A3B modeli %21.5, Gemma 4 26B-A4B modeli %12.8 daha hızlı decode ederken, görüntü üretiminde derlenmiş mod %2.3 ila %50 arasında hız artışı gösteriyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "TorchTPU, PyTorch ekosistemine TPU desteğini yerel ve sorunsuz bir şekilde ekleyerek büyük ölçekli model eğitimi ve dağıtımını hızlandırıyor; bu, araştırma ve üretim ortamlarında önemli verimlilik kazancı sağlıyor.",
+  "etiketler": [
+    "torch",
+    "TPU",
+    "HuggingFace",
+    "PyTorch",
+    "AI accelerators"
+  ],
+  "anilan_modeller": [
+    "Qwen3.5-9B",
+    "Qwen-Image-2.1",
+    "Qwen3-30B-A3B-Instruct-2507",
+    "Gemma 4 26B-A4B",
+    "StableDiffusion3 (stabilityai/stable-diffusion-3.5-medium)",
+    "MiniMax-H3"
+  ],
+  "yorum_tr": "TorchTPU, PyTorch topluluğu için TPU'ları erişilebilir kılarak araştırma sürecini kısaltıyor ve büyük ölçekli üretim modellerinin maliyet etkinliğini artırıyor; geliştiriciler artık ek çaba harcamadan yüksek performanslı donanımı kullanabilecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen3-30B-A3B",
+      "benchmark": "Decoding speedup",
+      "skor": 21.5,
+      "birim": "x",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "batch size 64",
+      "kaynak_metinden_alinti": "At batch size 64, decoding is 21.5× faster on Qwen3-30B-A3B"
+    },
+    {
+      "model": "Gemma 4 26B-A4B",
+      "benchmark": "Decoding speedup",
+      "skor": 12.8,
+      "birim": "x",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "batch size 64",
+      "kaynak_metinden_alinti": "and 12.8× faster on Gemma 4 26B-A4B"
+    }
+  ],
+  "gorsel_url": "https://huggingface.co/blog/assets/hf-torchtpu/thumbnail.png",
+  "url": "https://huggingface.co/blog/hf-torchtpu",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-10-20T00:00:00.000Z",
+  "slug": "hugging-face-torchtpu-tpus-natively"
+}

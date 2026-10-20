@@ -1,0 +1,37 @@
+{
+  "baslik_tr": "Ornith-1.5-122B: Qwen Tabanlı Self-Improvement Modeli Yayında",
+  "ozet_tr": "Ornith ekibi, Ornith-1.5-122B modelini duyurdu. Model, Qwen3.5 ve Gemma4 üzerine inşa edilen Ornith-1.0'ın üzerine, görev üretimi, scaffold oluşturma ve çözüm rollout'larını aynı anda optimize eden bir self‑improvement döngüsü ekleyerek temelden iyileştirme yeteneğini genişletiyor.",
+  "detayli_icerik_tr": "Ornith-1.5-122B, Ornith-1.0'ın devamı niteliğinde geliştirilen ve Qwen3.5 ile Gemma4 modellerinin üzerine ek ön‑eğitim, ara‑eğitim ve son‑eğitim adımlarıyla oluşturulmuş bir temel modeldir. Yeni sürüm, \"scaffold\" ve \"rollout\" optimizasyonunu aşarak, görev üretimi, scaffold inşası ve çözüm rollout'larını aynı anda iyileştiren bir self‑improvement döngüsü sunar. Bu sayede model, sabit insan‑tarafından hazırlanmış görev setlerine bağımlı kalmadan, sürekli yeni eğitim görevleri üretir, bu görevleri çözmek için etkili stratejiler keşfeder ve pekiştirmeli öğrenme (RL) yoluyla politikasını günceller.\n\nOrnith-1.5'in en dikkat çeken özelliği, görev ve harness (araç) tasarımını otomatikleştirerek, modelin kendi kendine öğrenme kapasitesini artırmasıdır. Geleneksel büyük dil modelleri, genellikle önceden tanımlanmış veri setleri ve insan müdahalesiyle eğitilirken, Ornith-1.5 bu süreci kapalı bir döngü içinde yürütür; yeni görevler oluşturulur, bu görevler için scaffold'lar hazırlanır ve elde edilen çözümler üzerinden ödül sinyalleriyle modelin politikası pekiştirilir.\n\nModelin teknik detayları ve ödül tasarımıyla ilgili daha fazla bilgi, Ornith ekibinin blogunda ve HuggingFace üzerindeki ilgili depolarda bulunabilir. Kullanıcılar, GGUF formatındaki model dosyalarına doğrudan erişim sağlayarak, kendi donanımlarında (örneğin NVFP4 gibi GPU'larda) çalıştırabilirler. Modelin açık kaynak doğası, topluluk tarafından test edilmesini ve daha da geliştirilmesini teşvik ediyor.\n\nOrnith-1.5-122B, topluluk içinde büyük bir merak uyandırdı ve özellikle kendi kendine görev üretme ve RL tabanlı iyileştirme konularında yeni bir referans noktası olarak görülüyor. Reddit'teki LocalLLaMA topluluğu, modelin performansını ve potansiyel uygulama alanlarını tartışmak için aktif bir platform sağladı.",
+  "onemli_maddeler": [
+    "Ornith-1.5-122B, Qwen3.5 ve Gemma4 temelli Ornith-1.0'ın üzerine self‑improvement döngüsü ekleyerek yeni bir nesil temel model sunuyor.",
+    "Model, sabit insan‑tarafından hazırlanmış görev setlerine bağımlı kalmadan, otomatik görev üretimi, scaffold oluşturma ve çözüm rollout'larını aynı anda optimize ediyor.",
+    "Pekiştirmeli öğrenme (RL) ile politika güncellemeleri yaparak, sürekli kendini geliştiren bir öğrenme süreci sağlıyor.",
+    "Model dosyaları GGUF formatında HuggingFace üzerinden indirilebilir ve NVFP4 gibi GPU'larda çalıştırılabilir.",
+    "Topluluk, Reddit LocalLLaMA üzerinden modelin teknik detayları ve potansiyel uygulamaları üzerine yoğun tartışmalar yürütüyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Ornith-1.5-122B, otomatik görev üretimi ve RL tabanlı kendini geliştirme mekanizmasıyla büyük dil modellerinin eğitim paradigmalarını değiştirme potansiyeline sahip, bu yüzden sektörde önemli bir güncelleme olarak değerlendiriliyor.",
+  "etiketler": [
+    "model",
+    "self-improvement",
+    "reinforcement learning",
+    "finetune",
+    "Qwen"
+  ],
+  "anilan_modeller": [
+    "Ornith-1.5-122B",
+    "Ornith-1.0",
+    "Qwen3.5",
+    "Gemma4"
+  ],
+  "yorum_tr": "Ornith-1.5-122B, model eğitiminin otomatikleştirilmesi ve sürekli iyileştirilmesi yönündeki trendi hızlandırarak, geliştiricilere daha az manuel veri hazırlama ihtiyacı bırakıyor. Kullanıcılar ise daha dinamik ve görev odaklı bir yapay zeka deneyimi elde edecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/XdKy6krZsjmMVd9FJJ84S5HqN9eZpmhT75otFP1pRUU.png?width=640&crop=smart&auto=webp&s=8c4f5185693121a6cd5098d3c7101bada8db2a4d",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xatebw/ornithaiornith15122b_qwen_finetune/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-20T14:19:07.000Z",
+  "slug": "ornith-ai-ornith-1-5-122b-qwen-finetune"
+}

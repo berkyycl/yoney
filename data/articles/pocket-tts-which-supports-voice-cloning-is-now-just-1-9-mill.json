@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "Pocket TTS, ses klonlamayı destekleyen, sadece 1.9M parametreye indirildi",
+  "ozet_tr": "Pocket TTS, ses klonlama yeteneğini koruyarak parametre sayısını 1.9 milyon seviyesine düşürdü. Bu küçülme, düşük kaynaklı cihazlarda gerçek zamanlı metin‑ses dönüşümünü mümkün kılıyor. Topluluk, modelin açık kaynak doğasını ve boyut avantajını öne çıkarıyor.",
+  "detayli_icerik_tr": "LocalLLaMA topluluğu, Pocket TTS adlı metin‑ses (TTS) modelini yeniden yapılandırarak sadece 1.9 milyon parametreye indirdiğini duyurdu. Model, önceki sürümlerinde ses klonlama özelliğiyle dikkat çekerken, yeni versiyon bu yeteneği koruyarak çok daha hafif bir yapıya kavuştu. Bu sayede akıllı telefonlar, tek‑board bilgisayarlar ve gömülü sistemler gibi sınırlı işlem gücüne sahip platformlarda bile yüksek kalitede ses sentezi yapılabiliyor.\n\nModelin boyut küçültülmesi, ağırlıklı olarak parametre paylaşımı, kuantizasyon ve verimli mimari tasarımların bir kombinasyonu sayesinde sağlandı. Geliştiriciler, Pocket TTS'nin 1.9M parametrelik yapısının, aynı görevdeki daha büyük modellerle benzer doğruluk ve doğal ses kalitesini koruduğunu belirtiyor. Bu, özellikle ses klonlama gibi veri yoğun görevlerde hafif modellerin performansını yeniden tanımlıyor.\n\nPocket TTS'nin açık kaynak lisansı, topluluk katkılarını ve hızlı adaptasyonu teşvik ediyor. Kullanıcılar, kendi ses veri setlerini modele entegre ederek kişiselleştirilmiş ses klonları oluşturabiliyor. Modelin küçülmüş hali, dağıtık eğitim ve ince ayar süreçlerini de hızlandırarak araştırmacıların ve geliştiricilerin deneme sürecini kısaltıyor.\n\nBu güncelleme, düşük maliyetli ve düşük enerji tüketimli yapay zeka çözümlerine yönelen bir trendin parçası olarak görülüyor. Pocket TTS, sesli asistanlar, oyun içi karakter seslendirmeleri ve erişilebilirlik araçları gibi çeşitli uygulamalarda kullanılabilecek bir temel sunuyor. Topluluk, modelin daha da optimize edilmesi ve yeni dillerle genişletilmesi için geri bildirim toplama aşamasında.",
+  "onemli_maddeler": [
+    "Pocket TTS'nin parametre sayısı 1.9 milyona düşürüldü",
+    "Ses klonlama özelliği boyut küçültülmesine rağmen korundu",
+    "Açık kaynak yapısı sayesinde topluluk tarafından hızlı adaptasyon ve özelleştirme mümkün",
+    "Düşük kaynaklı cihazlarda gerçek zamanlı TTS uygulamaları için ideal"
+  ],
+  "kategori": "guncelleme",
+  "onem": 3,
+  "onem_gerekce": "Modelin boyutunun önemli ölçüde küçülmesi, düşük kaynaklı ortamlarda yüksek kaliteli ses sentezinin mümkün olmasını sağlıyor; ancak henüz geniş çaplı ticari entegrasyon aşamasında değil.",
+  "etiketler": [
+    "Pocket TTS",
+    "ses sentezi",
+    "voice cloning",
+    "model compression",
+    "LocalLLaMA"
+  ],
+  "anilan_modeller": [
+    "Pocket TTS"
+  ],
+  "yorum_tr": "Pocket TTS'nin 1.9M parametreye indirilmesi, hafif yapay zeka çözümlerine yönelen geliştiriciler için önemli bir adım. Ses klonlama kalitesinin korunması, düşük maliyetli cihazlarda da kişiselleştirilmiş ses deneyimlerinin yaygınlaşmasını sağlayabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": null,
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xauekr/pocket_tts_which_supports_voice_cloning_is_now/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-20T14:59:15.000Z",
+  "slug": "pocket-tts-which-supports-voice-cloning-is-now-just-1-9-mill"
+}

@@ -1,0 +1,103 @@
+{
+  "baslik_tr": "Claude Opus 5.5 Tanıtıldı",
+  "ozet_tr": "Anthropic, yeni Claude Opus 5.5 modelini duyurdu. Model, önceki Opus 5'e kıyasla %40 daha düşük maliyetle çalışırken, kodlama, bilgisayar kullanımı ve bilgi işlerinde lider performans sergiliyor. Ayrıca otomatik davranış denetiminde en yüksek güvenlik puanını alıyor.",
+  "detayli_icerik_tr": "Anthropic, Claude Opus 5.5'i Claude 5.5 ailesinin ilk üyesi olarak tanıttı. Model, Claude Fable 5.1 seviyesinde bir performans sunarken, Opus 5'e göre çalıştırma maliyetini %40 azaltıyor. Dış değerlendirme kuruluşları Frontier Design ve METR gibi isimler tarafından test edilen Opus 5.5, şirketin en kapsamlı hizalanma testinde (automated behavioral audit) şimdiye kadar kaydedilen en yüksek puanı elde etti ve en gelişmiş güvenlik önlemlerine sahip.\n\nPerformans açısından Opus 5.5, özellikle büyük ölçekli kod tabanı geçişlerinde çarpıcı sonuçlar verdi. Bir testçi, 680.000 satırlık bir kod migrasyonunu bir günden kısa bir sürede tamamlayarak, aynı işi bir mühendis ekibinin haftalarca süreceği bir görevi devraldı. Web uygulaması sayfalarının yükleme sürelerini iyileştirme testinde 40 deneme üzerinden 39 başarılı sonuç elde ederken, Opus 5 daha sınırlı iyileştirmeler yaptı. Ayrıca, tek bir komutla oyun geliştirme görevinde grafik ve işçilik kalitesi bakımından diğer Claude modellerini geride bıraktı.\n\nGüvenlik yönünden Opus 5.5, otomatik davranış denetiminde en yüksek skorları alarak, istenmeyen eylemlere yönelme ve prompt enjeksiyonuna karşı direnç konusunda önceki modellere göre belirgin bir üstünlük sağladı. Model, uzun görevler, imkânsız senaryolar ve gerçek olaylara dayalı testlerle de sınanmış; ancak hâlâ sınırlamaları bulunuyor. Bu güvenlik seviyeleri, Claude Mythos 5.1 ve Claude Fable 5.1'in biyoloji ve siber güvenlik alanlarındaki koruma önlemleriyle paralel olarak uygulanıyor.\n\nMaliyet ve hız açısından Opus 5.5, aynı iş yüklerinde Opus 5'e göre %40 daha ucuz ve %30 daha hızlı çalışıyor. Girdi ve çıktı token başına fiyatlar sırasıyla $4 ve $20 (Opus 5'te $5 ve $25) olarak belirlenmiş, önbellek okuma maliyeti ise $0.20 (Opus 5'te $0.50) olarak %60 düşürülmüş. Ayrıca Pro, Max, Team ve Enterprise planlarında beş saatlik kullanım limitleri artırıldı ve abonelere oran sıfırlama özelliği tanındı. Claude Sonnet 5.5 ve Claude Haiku 5.5 modellerinin de önümüzdeki haftalarda aynı iyileştirmelerle gelmesi bekleniyor.",
+  "onemli_maddeler": [
+    "Claude Opus 5.5, Opus 5'e göre %40 daha düşük maliyet ve %30 daha yüksek hız sunuyor.",
+    "Model, otomatik davranış denetiminde (automated behavioral audit) en yüksek güvenlik puanını alarak prompt enjeksiyonuna karşı daha dirençli.",
+    "Agentic coding, computer use ve knowledge work gibi benchmarklarda lider skorlar elde etti; örneğin Terminal‑Bench 4.0'da %66.4 başarı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Claude Opus 5.5, büyük ölçekli kodlama ve bilgi işlerinde hem performans hem de maliyet açısından sektörde yeni bir standart belirliyor; aynı zamanda güvenlik önlemlerindeki iyileştirmelerle kurumsal kullanım için kritik bir adım oluşturuyor.",
+  "etiketler": [
+    "LLM",
+    "Claude Opus",
+    "Yapay Zeka",
+    "Kodlama",
+    "Güvenlik"
+  ],
+  "anilan_modeller": [
+    "Claude Opus 5.5",
+    "Claude Opus 5",
+    "Claude Fable 5.1",
+    "Claude Mythos 5.1",
+    "Claude Sonnet 5.5",
+    "Claude Haiku 5.5",
+    "GPT-6 Astra",
+    "GPT-5.6 Sol"
+  ],
+  "yorum_tr": "Opus 5.5'in maliyet‑verimlilik ve güvenlik avantajları, geliştiricilerin büyük ölçekli projeleri daha hızlı ve düşük bütçeyle tamamlamasını sağlayarak LLM tabanlı ajanların kurumsal benimsenmesini hızlandıracak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Claude Opus 5.5",
+      "benchmark": "Terminal-Bench 4.0",
+      "skor": 66.4,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "xhigh effort",
+      "kaynak_metinden_alinti": "Opus 5.5 66.4% on Terminal-Bench 4.0"
+    },
+    {
+      "model": "Claude Opus 5.5",
+      "benchmark": "FrontierCode v1.1 (Main)",
+      "skor": 54.4,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "medium effort",
+      "kaynak_metinden_alinti": "Opus 5.5 54.4% on FrontierCode v1.1 (Main)"
+    },
+    {
+      "model": "Claude Opus 5.5",
+      "benchmark": "CursorBench 4.0",
+      "skor": 57.8,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "medium effort",
+      "kaynak_metinden_alinti": "Opus 5.5 57.8% on CursorBench 4.0"
+    },
+    {
+      "model": "Claude Opus 5.5",
+      "benchmark": "Humanity's Last Exam (multidisciplinary reasoning with tools)",
+      "skor": 67.7,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Opus 5.5 67.7% with tools on Humanity's Last Exam"
+    },
+    {
+      "model": "Claude Opus 5.5",
+      "benchmark": "Terminal-Bench-Science 0.1",
+      "skor": 58.7,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Opus 5.5 58.7% on Terminal-Bench-Science 0.1"
+    },
+    {
+      "model": "Claude Opus 5.5",
+      "benchmark": "OSWorld 2.1 (computer use)",
+      "skor": 81.8,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "partial",
+      "kaynak_metinden_alinti": "Opus 5.5 81.8% partial on OSWorld 2.1"
+    },
+    {
+      "model": "Claude Opus 5.5",
+      "benchmark": "Chartography (visual chart recognition with tools)",
+      "skor": 89,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "with tools",
+      "kaynak_metinden_alinti": "Opus 5.5 89.0% with tools on Chartography"
+    }
+  ],
+  "gorsel_url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/f4d37a1d1f582f53f4e89440062b649b6273a093-1200x630.jpg",
+  "url": "https://www.anthropic.com/claude-opus-5-5",
+  "source": "Anthropic",
+  "sourceTier": "resmi",
+  "date": "2026-09-22T00:00:00.000Z",
+  "slug": "introducing-claude-opus-5-5"
+}

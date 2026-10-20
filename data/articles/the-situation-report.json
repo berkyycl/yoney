@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "Anthropic Claude, DRC'deki Bundibugyo Ebola Salgınına Müdahalede Durum Raporu Sürecini Hızlandırdı",
+  "ozet_tr": "Demokratik Kongo Cumhuriyeti'nde devam eden Bundibugyo Ebola salgınına yanıt verirken, Anthropic'in Claude yapay zekâsı, saha çalışanlarının verilerini analiz ederek durum raporlarını (sitrep) bir günden az bir sürede hazırlıyor. Bu sayede hastane yatak doluluğu, vaka sayısı ve aşı dağıtımı gibi kritik kararlar çok daha hızlı alınabiliyor.",
+  "detayli_icerik_tr": "19 Eylül 2026 itibarıyla Doğu Kongo'da 7.672 doğrulanmış vaka ve 3.699 ölümle yüzde 48,2 ölüm oranı kaydedilen Bundibugyo ebolavirus salgını, Ituri bölgesinde yoğunlaşıyor. Hastane yatakları neredeyse dolmuş durumda ve veri toplama süreçleri hâlâ WhatsApp ve PowerPoint gibi manuel araçlarla yürütülüyor. Bu yavaş ve hataya açık süreç, salgının yayılmasını kontrol altına almayı zorlaştırıyordu.\n\nBu zorlukların üstesinden gelmek amacıyla CEPI, WHO Afrika Ofisi ve Kongo Ulusal Biyomedikal Araştırma Enstitüsü (INRB) ortaklığı, Anthropic'in Beneficial Deployments ve Applied AI ekipleriyle birlikte Claude tabanlı bir çözüm geliştirdi. Claude, sağlık çalışanlarının saha notlarından vaka ve laboratuvar sayılarını otomatik olarak çekiyor, bir önceki günün raporu ile karşılaştırıyor, trenddeki değişiklikleri işaretleyip açıklıyor ve bölge raporlarını özetliyor. Böylece bir gün süren sitrep hazırlama süreci bir saatten az bir zamana indi.\n\nClaude sadece raporlamayı hızlandırmakla kalmadı; aynı zamanda veri analizi ve hastalık modellemesi için de kullanılıyor. WHO Afrika ekibi, Claude sayesinde birden fazla model çalıştırarak tedavi merkezlerinin konumlandırılması ve lojistik planlaması için daha güvenilir tahminler elde edebiliyor. Ayrıca Claude Science adlı iş tezgâhı, laboratuvarlarda genomik verilerin birleştirilmesi ve virüs ağaçlarının oluşturulması gibi bioinformatik görevleri doğal dil komutlarıyla yapabiliyor, bu da uzmanların zamanını kritik analizlere odaklamasını sağlıyor.\n\nBu uygulama, yapay zekânın acil sağlık müdahalelerinde pratik faydalarını gösteren bir örnek olarak öne çıkıyor. CEPI, Claude'un sunduğu veri organizasyonu sayesinde aşı geliştirme süreçlerini hızlandırmayı ve farklı aşı adaylarının çapraz reaktivitesini daha çabuk değerlendirmeyi hedefliyor. WHO Afrika da Claude'u diğer salgınlarda, örneğin chikungunya gibi hastalıklarda, kişi‑yer‑zaman listelerinin temizlenmesi ve tarihsel veri tabanlarının birleştirilmesi için kullanmayı planlıyor.",
+  "onemli_maddeler": [
+    "Claude, durum raporu (sitrep) hazırlama süresini bir günden bir saate düşürdü.",
+    "Claude Science, genomik verileri doğal dil komutlarıyla birleştirerek bioinformatik analizleri hızlandırıyor.",
+    "AI destekli çoklu hastalık modellemesi, tedavi merkezi planlaması ve lojistik kararlarını iyileştiriyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "AI tabanlı araçların salgın yönetiminde süreçleri hızlandırması, hayat kurtarıcı kararların zamanında alınmasını sağladığı için sektörel etkisi büyük.",
+  "etiketler": [
+    "Claude",
+    "Ebola",
+    "DRC",
+    "AI sağlık",
+    "CEPI"
+  ],
+  "anilan_modeller": [
+    "Claude",
+    "Claude Science"
+  ],
+  "yorum_tr": "Claude'un saha verilerini otomatik işleyip raporlamaya entegre etmesi, sağlık krizlerinde veri akışını hızlandırarak müdahale etkinliğini artırıyor. Bu tür uygulamalar, yapay zekânın kamu sağlığı alanındaki sorumluluk ve fayda dengesini göstermesi açısından kritik bir adım.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/01a7f8f55e83f615a5d9c0fad56863f1863a41d9-1200x630.jpg",
+  "url": "https://www.anthropic.com/features/ebola-response",
+  "source": "Anthropic",
+  "sourceTier": "resmi",
+  "date": "2026-09-21T00:00:00.000Z",
+  "slug": "the-situation-report"
+}

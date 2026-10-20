@@ -1,0 +1,91 @@
+{
+  "baslik_tr": "OpenAI, GPT-6'nın COBOL ve Fortran gibi eski programlama dillerinde çok daha iyi performans gösterdiğini duyurdu",
+  "ozet_tr": "OpenAI, yeni GPT-6 model ailesinin COBOL, Fortran ve Visual Basic gibi düşük kaynaklı eski programlama dillerinde önemli bir sıçrama yakaladığını açıkladı. MultiLangBench testinde ortalama %87,4 geçiş oranı elde eden GPT-6, kritik altyapı sistemlerini koruyan bu dillerdeki yeteneklerini iki katına çıkardı.",
+  "detayli_icerik_tr": "OpenAI, en yeni yapay zeka modeli GPT-6'yı, Python gibi yaygın dillerdeki geniş veri setlerine kıyasla çok daha sınırlı kod örneklerine sahip \"düşük kaynaklı\" programlama dilleri için optimize etti. COBOL, Fortran ve Visual Basic gibi diller, özellikle bankacılık ve ATM gibi kritik altyapıların temelini oluşturuyor; IBM'e göre COBOL, çevrimiçi bankacılık sistemlerinin %40'ından ve ATM işlemlerinin %95'inden sorumlu.\n\nBu iyileşmeyi ölçmek için OpenAI iki ayrı değerlendirme geliştirdi. MultiLangBench, modellere sıfırdan SQLite uyumlu bir veritabanı motoru inşa ettirmeyi amaçlayan bir test seti. GPT-6 Astra, 20 programlama dili üzerinde %87,4 ortalama geçiş oranı yakalarken, önceki nesil GPT-5.6 Terra sadece %38 civarında bir performans gösterdi. Daha düşük maliyetli bir seçenek olan GPT-6 Luna da %40,3 oranla hafif bir üstünlük sağladı.\n\nCOBOL göç benchmark'ı ise COBOL kodlarını C++, Java, Kotlin, Python veya Rust dillerine çevirme doğruluğunu ölçüyor. GPT-6.1 Sol, düşük akıl yürütme çabasıyla %86,6 doğruluk elde ederken, akıl yürütme çabasını artırdığında bu oran %97,9'a yükseliyor. Aynı testte GPT-5.6 Sol sadece %5,4 doğrulukla geride kaldı. Bu sonuçlar, GPT-6'nın eski sistemlerin modernleştirilmesinde çok daha etkili bir araç olabileceğini gösteriyor.\n\nOpenAI'nin bu hamlesi, özellikle finans ve kamu sektörlerinde hâlâ büyük ölçüde COBOL ve Fortran kullanan kuruluşlar için maliyetli kod yenileme süreçlerini hızlandırma ve otomatikleştirme potansiyeli taşıyor. Modelin yüksek doğruluk oranları, hatasız dönüşüm ve bakım maliyetlerinde belirgin bir azalma sağlayarak, eski altyapıların güvenli bir şekilde yeni teknolojilere taşınmasını mümkün kılıyor.",
+  "onemli_maddeler": [
+    "GPT-6 Astra, MultiLangBench testinde %87,4 ortalama geçiş oranı yakalayarak GPT-5.6'nın %38'lik performansını iki katına çıkardı.",
+    "GPT-6.1 Sol, COBOL‑to‑modern‑language çevirisinde düşük akıl yürütme çabasıyla %86,6, yüksek çaba ile %97,9 doğruluk elde etti.",
+    "OpenAI, düşük kaynaklı eski dillerdeki iyileşmeyle bankacılık ve ATM gibi kritik altyapıların modernleştirilmesini hızlandırmayı hedefliyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "GPT-6'nın eski programlama dillerindeki büyük performans artışı, kritik altyapıların modernleştirilmesinde sektörel bir dönüm noktası oluşturuyor ve geniş çaplı ekonomik etkiler yaratma potansiyeline sahip.",
+  "etiketler": [
+    "GPT-6",
+    "COBOL",
+    "Fortran",
+    "benchmark",
+    "legacy programming"
+  ],
+  "anilan_modeller": [
+    "GPT-6 Astra",
+    "GPT-6 Luna",
+    "GPT-6.1 Sol",
+    "GPT-5.6 Terra",
+    "GPT-5.6 Sol"
+  ],
+  "yorum_tr": "Bu gelişme, eski sistemleri sürdüren kurumların kod dönüşüm maliyetlerini düşürürken, yapay zeka destekli bakım ve geliştirme süreçlerini de hızlandıracak. Geliştiriciler, daha güvenilir otomatik çevirilerle modern platformlara geçişte yeni fırsatlar elde edecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GPT-6 Astra",
+      "benchmark": "MultiLangBench",
+      "skor": 87.4,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "GPT-6 Astra hits an average test pass rate of 87.4 percent across 20 languages"
+    },
+    {
+      "model": "GPT-6 Luna",
+      "benchmark": "MultiLangBench",
+      "skor": 40.3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "GPT-6 Luna scores 40.3 percent, barely edging out GPT-5.6 Terra (37.9 percent)"
+    },
+    {
+      "model": "GPT-5.6 Terra",
+      "benchmark": "MultiLangBench",
+      "skor": 38,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "GPT-5.6 Terra ... about 38 percent"
+    },
+    {
+      "model": "GPT-6.1 Sol",
+      "benchmark": "COBOL migration benchmark (low reasoning effort)",
+      "skor": 86.6,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "low reasoning effort",
+      "kaynak_metinden_alinti": "GPT-6.1 Sol reaches 86.6 percent accuracy at low reasoning effort"
+    },
+    {
+      "model": "GPT-6.1 Sol",
+      "benchmark": "COBOL migration benchmark (high reasoning effort)",
+      "skor": 97.9,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "high reasoning effort",
+      "kaynak_metinden_alinti": "Cranking up reasoning effort pushes accuracy to 97.9 percent"
+    },
+    {
+      "model": "GPT-5.6 Sol",
+      "benchmark": "COBOL migration benchmark",
+      "skor": 5.4,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "5.4 percent for GPT-5.6 Sol"
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/10/openai_safety.png",
+  "url": "https://the-decoder.com/openai-says-gpt-6-is-much-better-with-legacy-programming-languages-such-as-cobol-and-fortran/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-20T16:40:29.000Z",
+  "slug": "openai-says-gpt-6-is-much-better-with-legacy-programming-lan"
+}

@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "NVIDIA Cosmos3-H-Dreams: Klinik Cerrahi Simülasyonunda Gerçek Zamanlı Üretken Görüntüleme",
+  "ozet_tr": "NVIDIA, Cosmos3-H-Dreams adlı yeni bir üretken simülatörle klinik cerrahi sahnelerini gerçek zamanlı olarak canlandırıyor. Model, gerçek ameliyat kayıtlarından öğrenerek enzimatik kontrol ve doku deformasyonlarını anlık olarak yansıtıyor ve tek bir RTX PRO 6000 GPU’da çalışabiliyor.",
+  "detayli_icerik_tr": "NVIDIA, Cosmos3-H-Dreams'i duyurarak üretken yapay zekâ tabanlı cerrahi simülasyonun bir sonraki aşamasını tanıttı. Önceki Cosmos-H-Dreams sürümü, dVRK masaüstü dikiş uygulamaları için video ve robot kinematiğiyle eğitilmişti; yeni sürüm ise CMR Surgical Versius platformunda kaydedilen klinik kolesistektomi görüntülerinden öğrenerek iki enstrüman (sol Cadiere tutucu ve sağ monopolar kanca) kontrolüne dayalı gerçek zamanlı sahne üretimi sağlıyor. Model, 16 milyar parametreli Cosmos3-H-Embodied-Nano temeli üzerine, 28 eylem boyutlu (poz, kavrama, enerji ve joystick girdileri) bir öğretmen‑öğrenci eğitim hattı ile geliştirildi.\n\nEğitim sürecinde, öğretmen model 24 ila 72 kare (2,4‑7,2 saniye) uzunluğunda gelecekteki çerçeveleri tahmin ederken, distilasyon aşaması bu modeli neden‑sonuç ilişkisine dayalı bir öğrenciye dönüştürerek blok‑blok video üretimini mümkün kılıyor. Öğrenci model iki farklı sürümde sunuluyor: dört adımlı denoising ve iki adımlı denoising; ikincisi daha hızlı ancak görsel kalite açısından bir miktar gerileme içeriyor. Gerçek zamanlı akış, FlashDreams kütüphanesi ve uyarlanmış FadeMem modülü sayesinde uzun roll-out’larda artan dikkat geçmişi (key/value cache) etkili bir şekilde yönetiliyor.\n\nCosmos3-H-Dreams, sadece görsel gerçekçilikle sınırlı kalmayıp, enstrüman hareketlerine tutarlı doku tepkileri üretme yeteneğiyle de öne çıkıyor. Kullanıcılar aynı başlangıç karesinden farklı eylem dizileriyle yeni sahneler oluşturabiliyor, bu da modelin eğitim verisinde bulunmayan hareketleri genelleme kapasitesini gösteriyor. NVIDIA, bu araştırma simülatörünün klinik bir doğrulama aşamasında olmadığını vurgularken, cerrahi robotik politikaları, sayısal fiziksel simülasyonlarla entegrasyon ve çoklu enstrüman desteği gibi gelecekteki araştırma yönlerini de paylaşıyor.\n\nGeliştiriciler, sunulan dört‑ve‑iki‑adımlı checkpoint’leri kendi veri setlerine uyarlayabilir; NVIDIA, veri hazırlama, öğretmen ince ayarı ve Self‑Forcing distilasyonu için adım‑adım bir rehber sağlıyor. Bu sayede akademik ve endüstriyel araştırmacılar, senkronize video‑kinematik veriyle benzer gerçek zamanlı üretken simülatörler geliştirebilir ve kendi kontrolcü entegrasyonlarını aynı eylem normlarıyla gerçekleştirebilir.",
+  "onemli_maddeler": [
+    "Cosmos3-H-Dreams, klinik kolesistektomi kayıtlarından öğrenerek gerçek zamanlı, eylem‑koşullu cerrahi sahneler üretebilen ilk üretken simülatör.",
+    "Model, 16 milyar parametreli Cosmos3-H-Embodied-Nano temeli üzerine 28 eylem boyutlu bir kontrol setiyle çalışıyor ve tek RTX PRO 6000 GPU’da akıcı bir şekilde çalışıyor.",
+    "FlashDreams akış‑inference kütüphanesi ve FadeMem cache‑konsolidasyonu sayesinde uzun roll‑out’larda düşük gecikme ve tutarlı dikkat geçmişi sağlanıyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Klinik cerrahi prosedürlerine gerçek zamanlı, yüksek görsel gerçeklikte üretken simülasyon getiren bir temel modelin duyurulması, hem araştırma topluluğu hem de cerrahi robotik geliştirme süreçleri için büyük bir sıçrama oluşturuyor.",
+  "etiketler": [
+    "cerrahi simülasyon",
+    "generatif AI",
+    "NVIDIA",
+    "robotik cerrahi",
+    "derin öğrenme"
+  ],
+  "anilan_modeller": [
+    "Cosmos3-H-Dreams",
+    "Cosmos3-H-Embodied-Nano",
+    "Cosmos-Predict2.5",
+    "FlashDreams"
+  ],
+  "yorum_tr": "Cosmos3-H-Dreams, cerrahi eğitim ve politika geliştirme alanında gerçek zamanlı görsel geri bildirim sunarak araştırmacıların ve geliştiricilerin daha etkili simülasyon ortamları yaratmasını sağlayacak. Ancak klinik doğrulama aşamasına henüz ulaşmadığı için, pratik tıp uygulamalarına entegrasyonu uzun vadeli bir hedef olarak kalıyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://cdn-uploads.huggingface.co/production/uploads/67a4f15057fb66b9db6dac82/45XSEtdQHqTdspRe3wkYs.png",
+  "url": "https://huggingface.co/blog/nvidia/cosmos3-h-dreams",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-10-20T18:17:47.000Z",
+  "slug": "nvidia-cosmos3-h-dreams-bringing-clinical-surgery-to-life-th"
+}

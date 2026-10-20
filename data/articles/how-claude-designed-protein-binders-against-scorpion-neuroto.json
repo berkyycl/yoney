@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "Claude, Skorpion Nörotoksinlerine Karşı Protein Bağlayıcıları Tasarladı",
+  "ozet_tr": "Anthropic'in Claude modeli, 64 saat içinde 318.484 protein tasarımı üreterek beş farklı skorpion nörotoksinine karşı 17 etkili minibinder buldu. Bu bağlayıcılar laboratuvar ortamında 1 µM ya da daha düşük dissosiyasyon sabiti (KD) göstererek potansiyel antivenom adayları olarak öne çıktı.",
+  "detayli_icerik_tr": "Anthropic, Claude'un ilaç keşfi süreçlerini hızlandırma potansiyelini test etmek amacıyla, skorpion nörotoksinlerine karşı minibinder tasarlama projesi yürüttü. İç araştırma modeli, dört takip sorusu eşliğinde, 64 saat içinde 12 tasarım aracını kullanarak 318.484 tasarım üretti ve bunlardan 180'ini laboratuvar testine gönderdi. Adaptyv Bio ve Twist Bioscience iş birliğiyle 211 tasarım sentezlenip bağlanma yetenekleri ölçüldü; sonuçta 17 tasarım, belirlenen kriterleri (KD ≤ 1 µM ve yan etki olmaması) karşılayarak tek bir toksine bağlanabildi.\n\nProje, beş farklı skorpion toksinine (Cn2, Ts1, AaH I, AaH II, LqhIII) odaklandı ve hem tek toksin hem de çoklu toksin bağlayıcıları tasarlamayı denedi. Çoklu toksin bağlayıcıları henüz istenen bağlanma performansını gösteremedi; bu durum, mevcut tasarım araçlarının sınırlamaları, prompt stratejileri ve biyolojik fizyolojinin karmaşıklığı gibi faktörlere bağlanıyor. Tek toksin bağlayıcıları arasında en güçlü iki aday, Cn2-B1 ve Cn2-B2, tek haneli nanomolar KD değerleriyle Cn2 toksinine yüksek afinite gösterdi ve bilinen nötralleştirici antikor LR ile aynı epitopiye bağlandıkları kanıtlandı.\n\nBağlayıcıların laboratuvar testleri, iki farklı platformda (hücre dışı sistem ve insan böbrek hücrelerinde Fc füzyonları) gerçekleştirildi ve yüzey plazmon rezonansı (SPR) yöntemiyle KD ölçümleri alındı. Bağlayıcıların toksinleri nötralize edip edemeyeceği, hücre içi ve hayvan modellerinde henüz test edilmedi; bu aşama, güvenlik, stabilite ve maliyet gibi klinik geliştirme kriterlerinin değerlendirilmesi için kritik bir adım olacak. Anthropic, tüm 211 tasarım ve deneysel veriyi açık veri seti olarak yayınlayarak, araştırma topluluğunun antivenom geliştirme çalışmalarını hızlandırmayı hedefliyor.",
+  "onemli_maddeler": [
+    "Claude, 64 saat içinde 318.484 protein tasarımı üretti ve 180'ini test için seçti.",
+    "211 tasarımdan 17'si (≈8%) belirlenen bağlanma kriterlerini karşılayarak tek bir skorpion toksinine bağlandı.",
+    "En güçlü bağlayıcılar Cn2-B1 ve Cn2-B2, tek haneli nanomolar KD değerleriyle LR antikoru ile aynı epitopiye bağlanıyor."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "AI destekli de novo protein tasarımı, uzun süren antivenom geliştirme süreçlerini gün içinde prototip üretimine indirerek, ihmal edilen tropikal hastalıklara yönelik tedavi araştırmalarını hızlandırma potansiyeli taşıyor.",
+  "etiketler": [
+    "AI drug discovery",
+    "protein design",
+    "scorpion toxin",
+    "antivenom",
+    "Claude"
+  ],
+  "anilan_modeller": [
+    "Claude"
+  ],
+  "yorum_tr": "Claude'un bu başarısı, biyomedikal araştırmalarda AI'nın tasarım aşamasını büyük ölçüde hızlandırabileceğini gösteriyor; ancak bağlayıcıların klinik geçerliliği ve çoklu toksin hedefleme yeteneği hâlâ geliştirilmesi gereken alanlar.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/187c8077329b22f6bd02c5648ea58749af892e8c-1200x630.jpg",
+  "url": "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design",
+  "source": "Anthropic Research",
+  "sourceTier": "resmi",
+  "date": "2026-10-20T00:00:00.000Z",
+  "slug": "how-claude-designed-protein-binders-against-scorpion-neuroto"
+}

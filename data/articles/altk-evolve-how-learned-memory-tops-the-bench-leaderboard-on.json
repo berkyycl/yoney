@@ -1,0 +1,52 @@
+{
+  "baslik_tr": "ALTK-Evolve: Öğrenilen Hafıza, Sınır Modeli Olmadan Müşteri Hizmetinde τ²-bench Liderliğini Ele Geçiriyor",
+  "ozet_tr": "IBM Research ekibi, ALTK-Evolve adlı kütüphane ile GPT‑4.1 tabanlı bir müşteri hizmeti ajanına, geçmiş görevlerden otomatik olarak çıkarılan yönergeler ekleyerek, ağırlık güncellemesi yapmadan τ²-bench benchmark'unda en yüksek Pass^4 skorunu elde etti. Aynı yöntem, daha güçlü bir GPT‑5.5 modeliyle de uygulanıp, havayolu senaryosunda tüm sınır modelini geride bıraktı.",
+  "detayli_icerik_tr": "ALTK-Evolve, temel bir ReAct ajanının sistem istemine, modelin kendi çıktılarından türetilen kısa davranış kurallarını (guidelines) ekleyerek çalışıyor. Bu kurallar, önceki görev denemelerinin başarı ve hatalarından GPT‑4.1 kullanılarak otomatik olarak özetleniyor; örneğin \"kullanıcıyı kimlik doğrulama\", \"her işlem öncesi onay al\" gibi politikaları içeriyor. Ajanın ağırlıkları hiç değiştirilmez, sadece isteme ek bir metin bloğu eklenir.\n\nDeneyler, iki farklı müşteri hizmeti alanı – perakende ve havayolu – üzerinde yürütüldü. Her görev, bir LLM‑simüleli müşteriyle dört deneme yapılacak şekilde tasarlandı ve yalnızca tüm dört denemeyi geçen görevler Pass^4 olarak sayıldı. ReAct çerçevesi, gpt‑4.1 modelini ajan, gpt‑5.5 modelini müşteri simülatörü olarak kullandı. Yönergeler eklendiğinde perakende test setinde Pass^4 %57.5'ten %67.5'e (+10 puan) yükseldi; havayolu test setinde ise %35.0'dan %45.0'e (+10 puan) çıktı.\n\nYönergelerin miktarı da performansa etkiliydi. \"sup3\" (destek ≥3) gibi yüksek güvenilirlikli bir çekirdek, perakende alanında sadece %2.5 Pass^4 artışı sağlarken, tam \"lossless\" (tüm yönergeler) seti %10 artış getirdi. Havayolu senaryosunda ise daha kompakt sup3 çekirdeği %45 Pass^4 ile lossless'in %40'ını geride bıraktı. Bu, her alanın optimum yönerge yoğunluğunun farklı olabileceğini gösteriyor.\n\nMaliyet açısından, yönergeler yalnızca istem giriş tokenlarını artırıyor; konuşma uzunluğu ve tur sayısı aynı kalıyor hatta hafif azalıyor. Perakende için toplam maliyet konuşma başına $0.084'tan $0.139'a (%65 artış) yükselirken, bu ek maliyet önbellekleme ile büyük ölçüde azaltılabilir. Sonuç olarak, hafif bir token artışıyla hem doğruluk hem güvenilirlik hem de yanıt süresi iyileşiyor.\n\nALTK-Evolve, aynı yöntemi daha güçlü bir model (gpt‑5.5) ile de test etti ve havayolu alanında Pass^4 %70'ten %82'ye (+12 puan) çıkartarak tüm sınır modelleri geride bıraktı. Bu bulgular, model ağırlıklarını güncellemeden, sadece istem seviyesinde öğrenilen hafıza sayesinde ajanların sınır dışı performans elde edebileceğini gösteriyor.",
+  "onemli_maddeler": [
+    "GPT‑4.1 tabanlı bir ajan, sadece isteme eklenen 292 yönergeyle perakende senaryosunda %67.5 Pass^4 skoruna ulaşarak tüm frontier modelleri geride bıraktı.",
+    "Yönergeler, modelin ağırlıklarını değiştirmeden otomatik olarak çıkarıldığı için fine‑tuning maliyetine kıyasla çok daha ucuz ve taşınabilir bir iyileştirme sağlıyor.",
+    "Daha güçlü bir model (GPT‑5.5) ile aynı yöntem uygulandığında, havayolu senaryosunda %82 Pass^4 elde edilerek benchmark liderliğine ulaşıldı."
+  ],
+  "kategori": "benchmark",
+  "onem": 5,
+  "onem_gerekce": "Sınır dışı bir model (GPT‑4.1) sadece isteme eklenen yönergelerle frontier modelleri geride bırakarak, ağırlık güncellemesi gerektirmeyen bir performans artışı sunması sektörde büyük bir paradigma değişikliği yaratıyor.",
+  "etiketler": [
+    "ALTK-Evolve",
+    "τ²-bench",
+    "Müşteri Hizmeti",
+    "LLM",
+    "Prompt Engineering"
+  ],
+  "anilan_modeller": [
+    "gpt-4.1",
+    "gpt-5.5"
+  ],
+  "yorum_tr": "Bu gelişme, geliştiricilerin büyük modelleri yeniden eğitmek yerine, mevcut modelleri dinamik yönergelerle güçlendirebileceğini gösteriyor; hem maliyetleri düşürüyor hem de uygulama süresini kısaltıyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "gpt-4.1",
+      "benchmark": "τ²-bench Retail (base split)",
+      "skor": 67.5,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Pass^4",
+      "kaynak_metinden_alinti": "Retail: #1. On the base split the agent with learned guidelines reaches Pass^4 = 67.5%, ahead of every frontier model"
+    },
+    {
+      "model": "gpt-5.5",
+      "benchmark": "τ²-bench Airline (base split)",
+      "skor": 82,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Pass^4",
+      "kaynak_metinden_alinti": "Airline: #1 using gpt-5.5, ... the agent using gpt-5.5 reaches 82.0%, clearing every frontier entry"
+    }
+  ],
+  "gorsel_url": "https://cdn-uploads.huggingface.co/production/uploads/6435a1131860001f144239ea/rzXYJh7e7UdoYgCLwOZjH.jpeg",
+  "url": "https://huggingface.co/blog/ibm-research/altk-evolve-bc",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-10-20T15:19:48.000Z",
+  "slug": "altk-evolve-how-learned-memory-tops-the-bench-leaderboard-on"
+}

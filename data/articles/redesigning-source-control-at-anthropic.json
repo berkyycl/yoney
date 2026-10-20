@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "Anthropic, AI destekli monorepo için Scion adlı yeni sürüm kontrol sistemini tanıttı",
+  "ozet_tr": "Anthropic, Claude'un kod üretme kapasitesinin yarattığı devasa monorepo üzerindeki ölçeklenebilirlik sorunlarını aşmak için Scion adını verdiği iç kaynak kontrol sistemini hayata geçirdi. Beş ay içinde git'ten tamamen geçiş yaparak günlük 30.000'den fazla kod değişikliğini sorunsuz bir şekilde birleştiriyor.",
+  "detayli_icerik_tr": "Mayıs 2026'da Anthropic günde ortalama 2.500 kod değişikliği birleştirirken, Eylül 2026'da bu sayı 30.000'in üzerine çıktı. Bu artış, Claude'un araştırma döngülerini ve hizmet geliştirmeyi otomatikleştirmesinden kaynaklanıyor ve geleneksel insan ölçeğindeki altyapı – özellikle kaynak kontrol, derleme ve CI – artık darboğaz haline gelmişti. Bu sorunu çözmek için şirket, beş ay içinde monoreposunu git'ten tamamen Scion'a taşıdı ve aynı dönemde Antique adlı kod inceleme arayüzü, gelişmiş kod arama ve kapsamlı IAM sistemleri gibi ek araçları da hayata geçirdi.\n\nScion, klasik git mimarisinden farklı olarak \"her zaman çevrimiçi\" istemcileri temel alıyor. İstemciler sadece ihtiyaç duydukları dosyaları sunucudan talep ederken, tüm commit, merge ve rebase işlemleri sunucuda gerçekleşiyor. Bu sayede istemcilerdeki yerel veri miktarı minimuma indirgeniyor ve commit'ler kilitsiz, artımlı ve düşük maliyetli bir şekilde oluşturulabiliyor. Ayrıca, Scion'un veri yapısı bir \"changeset\" üzerine kurulu; bu değişim seti yalnızca değişen dosyaları ve içerik‑adresli blob referanslarını tutuyor, böylece yüksek throughput sağlanıyor.\n\nScion'un mimarisi, birden fazla katmanda (scn client, scion‑daemon, scion‑cache, scion‑server) çalışan büyük bir önbellek ağı üzerinden çalışıyor. Her katman %99'un üzerinde önbellek isabet oranına sahip ve sistem, önceki git mirroring altyapısına kıyasla CPU ve bellek tüketiminde %200'den fazla azalma sağladı. CI ve araştırma işlerinin kod çekme süresi dakikadan saniyelere düştü; bu da CI'nin %25 CPU kapasite tasarrufu elde etmesine yol açtı.\n\nScion'un geliştirilmesi, Claude Mythos Preview ve Claude Tag gibi yeni model sürümlerinin aynı anda ortaya çıkmasıyla hız kazandı. Claude, Scion'un ilk veri aktarım hattını yeniden yazarak bellek tüketimini %20, işlem hızını ise %4 artırdı. Yedi kişilik bir ekip, Scion ve Antique'yi sadece birkaç ay içinde tam üretim ortamına taşıyarak, AI‑destekli yazılım geliştirme süreçlerinin gelecekte daha küçük ekiplerle ve daha hızlı döngülerle yürütülebileceğinin bir kanıtını sundu.",
+  "onemli_maddeler": [
+    "Anthropic, monoreposunu git'ten Scion'a 5 ay içinde tamamen taşıyarak günlük 30.000+ kod değişikliği birleştirme kapasitesine ulaştı.",
+    "Scion, istemcilerin her zaman çevrimiçi olduğu varsayımıyla tasarlandı; commit, merge ve rebase işlemleri sunucuda gerçekleşiyor.",
+    "Yeni sistem, önceki git mirroring altyapısına göre CPU ve bellek tüketiminde %200'den fazla azalma ve CI çekme süresinde iki kat mertebe hız artışı sağladı."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "AI destekli kod üretiminin ölçeği hızla artarken, geleneksel VCS çözümleri yetersiz kalıyor; Scion bu soruna yenilikçi bir mimariyle yanıt veriyor ve sektörde benzer ihtiyaçları olan şirketler için örnek teşkil ediyor.",
+  "etiketler": [
+    "source control",
+    "Scion",
+    "AI coding",
+    "monorepo",
+    "CI"
+  ],
+  "anilan_modeller": [
+    "Claude",
+    "Claude Mythos Preview",
+    "Claude Tag"
+  ],
+  "yorum_tr": "Scion, AI‑odaklı büyük monorepo'ların yönetiminde yeni bir paradigma sunarak geliştiricilerin altyapı darboğazlarından kurtulmasını sağlıyor; bu, hem küçük ekiplerin hem de büyük ölçekli AI araştırma merkezlerinin verimliliğini artıracak.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/f51d635fde176783a022c74b185a4dea2a54e8a0-1200x630.jpg",
+  "url": "https://www.anthropic.com/research/redesigning-source-control",
+  "source": "Anthropic Research",
+  "sourceTier": "resmi",
+  "date": "2026-10-13T00:00:00.000Z",
+  "slug": "redesigning-source-control-at-anthropic"
+}

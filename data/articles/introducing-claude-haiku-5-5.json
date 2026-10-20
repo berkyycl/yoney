@@ -1,0 +1,83 @@
+{
+  "baslik_tr": "Claude Haiku 5.5 Tanıtıldı: En Hızlı ve En Ucuz Küçük Model",
+  "ozet_tr": "Anthropic, yüksek hacimli ve maliyet duyarlı iş akışları için tasarlanmış yeni Claude Haiku 5.5 modelini duyurdu. Model, önceki sürümüne göre %75 daha düşük maliyetle çalışırken, hız ve doğruluk açısından da önemli iyileşmeler sunuyor. Ayrıca fiyatlandırma politikalarında yapılan güncellemeler ve yeni API kredileri, geliştiricilerin daha fazla deneme yapmasını hedefliyor.",
+  "detayli_icerik_tr": "Claude Haiku 5.5, Anthropic'in şimdiye kadarki en hızlı ve en ucuz küçük ölçekli modeli olarak tanıtıldı. Özellikle özetleme, veri tabanı sorgulama, sınıflandırma ve hızlı yanıt gerektiren müşteri destek gibi yüksek hacimli görevlerde kullanılmak üzere optimize edildi. Model, Opus 5.5 ve Sonnet 5.5 ile birlikte bir alt ajan olarak kodlama işlerinde de etkili bir şekilde çalışabiliyor.\n\nPerformans açısından Haiku 5.5, bir dizi benchmark testinde önceki Haiku 4.5 sürümünü geride bıraktı. Terminal‑Bench 4.0 testinde %39.2'lik pass@1 skoru elde ederken, Humanity’s Last Exam (araçsız) testinde %45.9, aynı testte araç destekli sürümde ise %57.4 başarı sağladı. Görsel akıl yürütme Chartography benchmark'inde %46.4, FrontierCode 1.1 (Main) testinde ise %46.4 skor elde edildi. Bu sonuçlar, modelin hem maliyet hem de hız açısından daha verimli olduğunu gösteriyor.\n\nFiyatlandırma açısından Haiku 5.5, Haiku 4.5'e kıyasla ortalama %75 daha ucuz. 100.000 token'a kadar olan isteklerde token başına $0.10 (girdi) ve $0.50 (çıktı) gibi düşük birim fiyatlar sunuluyor. Ayrıca Claude Sonnet 5.5'in önbellek okuma maliyeti %50 azaltılarak $0.10/1M token seviyesine çekildi, bu da büyük ölçekli ajan görevlerinde yaklaşık %20 tasarruf sağlıyor. Max ve Team abonelerine yönelik yeni aylık API kredileri (Max 5x için $100, Max 20x için $200, Team için $500) da geliştiricilerin deneme ve prototipleme maliyetlerini düşürmeyi amaçlıyor.\n\nClaude Haiku 5.5, AWS, Google Cloud ve Microsoft Azure dahil tüm platformlarda kullanılabilir durumda. Geliştiriciler, Claude Python ve TypeScript SDK'larındaki yeni bilgisayar ve tarayıcı kullanım desteği sayesinde modeli doğrudan uygulamalarına entegre edebilecek. Anthropic, modelin güvenlik ve uyum değerlendirmelerinde de önceki sürümden daha az uyumsuz davranış sergilediğini ve siber güvenlik kısıtlamalarının dengeli bir şekilde ayarlandığını belirtiyor.",
+  "onemli_maddeler": [
+    "Claude Haiku 5.5, önceki sürümüne göre %75 daha düşük maliyetle çalışıyor.",
+    "Terminal‑Bench 4.0, Humanity’s Last Exam ve Chartography gibi benchmarklarda önemli performans artışı sağladı.",
+    "Claude Sonnet 5.5'in önbellek okuma fiyatı %50 düşürüldü, bu da büyük ölçekli ajan görevlerinde %20 tasarruf anlamına geliyor.",
+    "Max ve Team abonelerine yeni aylık API kredileri tanıtıldı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Claude Haiku 5.5, Anthropic'in en hızlı ve en ucuz küçük ölçekli modeli olarak piyasaya sürülmesi, yüksek hacimli maliyet duyarlı görevlerde performans ve fiyat avantajı sunması ve benchmarklarda belirgin iyileşmeler göstermesi nedeniyle sektörde büyük etki yaratıyor.",
+  "etiketler": [
+    "Claude Haiku 5.5",
+    "küçük model",
+    "AI ajanları",
+    "benchmark",
+    "fiyatlandırma"
+  ],
+  "anilan_modeller": [
+    "Claude Haiku 5.5",
+    "Claude Haiku 4.5",
+    "Claude Sonnet 5.5",
+    "Claude Opus 5.5",
+    "GPT-6 Luna"
+  ],
+  "yorum_tr": "Claude Haiku 5.5, düşük maliyetli ve yüksek hızlı yanıt gerektiren uygulamalarda geliştiricilere yeni bir seçenek sunuyor. Benchmark sonuçları, modelin küçük ölçekli görevlerde büyük modellerin bir kısmını geride bırakabileceğini gösteriyor, bu da AI platformları arasında rekabeti artıracak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Claude Haiku 5.5",
+      "benchmark": "Terminal-Bench 4.0",
+      "skor": 39.2,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Agentic coding Terminal-Bench 4.0 ... 39.2% ..."
+    },
+    {
+      "model": "Claude Haiku 5.5",
+      "benchmark": "Humanity’s Last Exam (no tools)",
+      "skor": 45.9,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Multidisciplinary reasoning Humanity’s Last Exam 45.9% no tools ..."
+    },
+    {
+      "model": "Claude Haiku 5.5",
+      "benchmark": "Humanity’s Last Exam (with tools)",
+      "skor": 57.4,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Humanity’s Last Exam ... 57.4% with tools"
+    },
+    {
+      "model": "Claude Haiku 5.5",
+      "benchmark": "Chartography (visual reasoning)",
+      "skor": 46.4,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Visual reasoning Chartography 46.4% no tools"
+    },
+    {
+      "model": "Claude Haiku 5.5",
+      "benchmark": "FrontierCode 1.1 (Main)",
+      "skor": 46.4,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Agentic coding FrontierCode 1.1 (Main) 46.4% ..."
+    }
+  ],
+  "gorsel_url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/89e9b0fbfe0181f6ca565d913686ce8e49b5e9c2-1200x630.jpg",
+  "url": "https://www.anthropic.com/claude-haiku-5-5",
+  "source": "Anthropic",
+  "sourceTier": "resmi",
+  "date": "2026-10-07T00:00:00.000Z",
+  "slug": "introducing-claude-haiku-5-5"
+}

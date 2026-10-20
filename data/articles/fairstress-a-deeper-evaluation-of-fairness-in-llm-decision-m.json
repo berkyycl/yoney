@@ -1,0 +1,66 @@
+{
+  "baslik_tr": "FairStress: LLM'lerde Demografik Adaletin Derinlemesine Ölçülmesi",
+  "ozet_tr": "AllenAI, demografik kimliklerin karar süreçlerine etkisini ölçmek için 300 senaryodan oluşan ve 13 milyon test durumuna kadar genişleyebilen FairStress benchmark'ını duyurdu. Modelin aynı kanıtlarla desteklenen bir kararı, hangi demografik gruba fayda sağladığına bakılmaksızın aynı ölçüde koruması hedefleniyor.",
+  "detayli_icerik_tr": "AllenAI, yüksek riskli uygulamalarda (işe alım, kredi, sağlık, eğitim, konut ve ceza adaleti) LLM'lerin kararlarını demografik kimliklere göre nasıl değiştirdiğini ortaya koyan FairStress benchmark'ını yayınladı. Benchmark, iki adaylı 300 gerçekçi senaryoyu 29 farklı alanda topluyor ve her senaryoya \"adversarial prefix\" adı verilen ikna edici ön ekler eklenerek modelin karar değişim duyarlılığı ölçülüyor. Bu ön ekler, üst yönetim tavsiyesi, tarihsel dezavantaj gibi çeşitli ikna tekniklerini içeriyor ve aynı argüman iki demografik grup için ayrı ayrı test ediliyor.\n\nDeneylerde, demografik bilgi hiç verilmediğinde modellerin kararları büyük ölçüde tutarlı kaldı; ancak kimlik açıkça belirtildiğinde asimetrik davranışlar ortaya çıktı. Özellikle azınlık kodlu adaylar için aynı ikna edici ön ek, modellerin doğru kararı terk etme olasılığını %6.9‑%9.3 oranında artırdı. Bu durum, \"anti‑stereotipik aşırı düzeltme\" olarak adlandırıldı: modeller, azınlık kodlu bir adaya fayda sağlayan argümana daha duyarlı hale geliyor.\n\nFrontier modeller Claude Opus 5 ve GPT‑5.5, hiçbir adayın objektif olarak üstün olmadığı durumlarda azınlık kodlu adayı %60‑%65 oranında seçti. Aynı zamanda, eşleşen adversarial prefix'ler altında azınlık kodlu adaylara doğru kayma %8.8‑%42.4 puan arasında değişti. Açıklama analizleri, azınlık kodlu seçimlerde daha pozitif ve \"çeşitlilik\" odaklı bir dil kullanıldığını, çoğunluk kodlu seçimlerde ise daha prosedürel bir dil tercih edildiğini gösterdi.\n\nİçsel aktivasyon analizleri, Gemma‑3‑12B‑it ve Qwen2.5‑7B‑Instruct modellerinde demografik yönelimleri %73 doğrulukla tahmin edebildi; metin açıklamaları ise %57‑%59 doğruluk sağladı. Bu bulgular, modelin karar izlerinin tüm içsel faktörleri yansıtmayabileceğini, özellikle demografik etkilerin gizli kalabileceğini işaret ediyor. FairStress, mevcut BBQ gibi sabit‑seçenekli ölçütlerin ötesinde, üretilen yanıtların ve karar değişimlerinin de değerlendirilmesi gerektiğini vurguluyor.",
+  "onemli_maddeler": [
+    "Demografik kimlik açıkça verildiğinde modellerin kararları %6.9‑%9.3 oranında asimetrikleşiyor.",
+    "Claude Opus 5 ve GPT‑5.5, belirsiz senaryolarda azınlık kodlu adayı %60‑%65 seçiyor.",
+    "Adversarial prefix'ler, azınlık kodlu adaylara doğru kaymayı %8.8‑%42.4 puan artırıyor."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "FairStress, LLM'lerde demografik adaleti ölçen yeni bir benchmark sunarak mevcut ölçütlerin eksik yönlerini ortaya koyuyor ve model geliştirme sürecinde kritik bir referans noktası oluşturuyor.",
+  "etiketler": [
+    "fairness",
+    "benchmark",
+    "LLM",
+    "bias",
+    "evaluation"
+  ],
+  "anilan_modeller": [
+    "Olmo",
+    "Llama",
+    "Qwen",
+    "Gemma",
+    "Claude Opus 5",
+    "GPT-5.5",
+    "Tülu 3.1 8B"
+  ],
+  "yorum_tr": "FairStress, modellerin sadece çıktıya bakarak adil olup olmadığını değerlendirmek yerine karar sürecinin dayanıklılığını da ölçerek geliştiricilere daha kapsamlı bir test aracı sunuyor. Bu, özellikle yüksek riskli uygulamalarda adil karar mekanizmaları tasarlamak isteyen ekipler için yönlendirici bir referans olacak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "average across 15 models",
+      "benchmark": "FairStress",
+      "skor": 6.9,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "implied identity",
+      "kaynak_metinden_alinti": "average gap in abandoning correct answers was 6.9 percentage points with implied identity"
+    },
+    {
+      "model": "average across 15 models",
+      "benchmark": "FairStress",
+      "skor": 9.3,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "explicit labels",
+      "kaynak_metinden_alinti": "average gap in abandoning correct answers was 9.3 points with explicit labels"
+    },
+    {
+      "model": "Gemma-3-12B-it",
+      "benchmark": "FairStress activation prediction",
+      "skor": 73,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "internal activations",
+      "kaynak_metinden_alinti": "internal activations predicted which demographic side it selected with about 73% accuracy"
+    }
+  ],
+  "gorsel_url": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/7zYjyTWswjO2erWsO5HNf.png",
+  "url": "https://huggingface.co/blog/allenai/fairstress",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-10-20T16:09:19.000Z",
+  "slug": "fairstress-a-deeper-evaluation-of-fairness-in-llm-decision-m"
+}
