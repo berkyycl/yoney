@@ -1,0 +1,38 @@
+{
+  "baslik_tr": "Motorlarınız Sırayla Çalışıyorsa 24 GB Yeterli",
+  "ozet_tr": "Berth, RTX 4090 gibi tek bir GPU'yu birden fazla LLM motoru arasında otomatik olarak yöneten bir sistem hizmeti. VRAM'i dinamik olarak takaslayarak çakışmaları önlüyor ve her motorun tam kapasite çalışmasını sağlıyor.",
+  "detayli_icerik_tr": "Yerel LLM topluluğu, RTX 4090 gibi yüksek bellek kapasiteli bir ekran kartını birden fazla yapay zeka motoru arasında paylaşmakta sıkıntı yaşadığını belirtiyor. Özellikle Linux ortamında bir node sürecinin terk edilmesi, comfyUI'nin otomatik başlatılması ve 500 MB VRAM tutması gibi sorunlar, Strata gibi motorların bellek talebini karşılayamamasına yol açıyordu.\n\nBu problemleri çözmek amacıyla geliştirilen Berth, GPU'yu izleyen bir servis olarak çalışıyor. Kullanıcıların bir motoru başlatıp kapatmalarını manuel olarak yönetmelerine gerek kalmadan, motorlar arasında sorunsuz bir geçiş sağlıyor. VRAM tamamen her fonksiyon için ayrılıyor; böylece \"VRAM squatters\" (bellek hırsızları) ortadan kalkıyor ve çakışmalar önleniyor.\n\nBerth, aynı RTX 4090'ı birden fazla cihazda kullanan geliştiriciler için de ideal. Örneğin, gece boyunca Hermes motoru çalıştırılırken, gündüz saatlerinde kart başka bir iş istasyonuna devredilebilir. Ayrıca Berth, motorları bir API üzerinden sunarak Strata, PolyStrata ve diğer özel motorların dinamik olarak yüklenmesini mümkün kılıyor. Bu sayede oyun oynarken ya da özel iş akışları yürütürken kartın başka bir süreç tarafından ele geçirilmesi riski ortadan kalkıyor.\n\nProjenin kaynak kodu GitHub üzerinden erişilebilir (https://github.com/T-Crypt/berth) ve topluluk tarafından aktif olarak test ediliyor. Kullanıcılar, Ninfer-4090 (llama-swap), Strata, comfyUI, OpenWebUI gibi popüler motorları sorunsuz bir şekilde aynı GPU üzerinde sırayla çalıştırabiliyorlar.",
+  "onemli_maddeler": [
+    "Berth, VRAM'i dinamik olarak takaslayarak motor çakışmalarını önlüyor.",
+    "Kullanıcıların motorları manuel olarak başlatıp durdurmalarına gerek kalmadan otomatik geçiş sağlıyor.",
+    "API desteği sayesinde motorlar uzaktan ve programatik olarak yüklenebiliyor.",
+    "Tek bir RTX 4090'ı birden fazla cihaz ve iş akışı arasında paylaşma imkanı sunuyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 3,
+  "onem_gerekce": "Yerel LLM çalıştırma ortamlarında VRAM yönetimi kritik bir sorun olduğundan, topluluk tarafından geliştirilen bu araç orta ölçekli kullanıcılar için önemli bir kolaylık sağlıyor ancak henüz geniş çaplı bir endüstri etkisi yaratmadı.",
+  "etiketler": [
+    "VRAM yönetimi",
+    "LLM inference",
+    "RTX 4090",
+    "Berth",
+    "LocalLLaMA"
+  ],
+  "anilan_modeller": [
+    "Ninfer-4090",
+    "Strata",
+    "comfyUI",
+    "OpenWebUI",
+    "Hermes",
+    "PolyStrata"
+  ],
+  "yorum_tr": "Berth, tek bir yüksek bellekli GPU'yu birden fazla LLM motoru arasında verimli bir şekilde paylaşarak yerel AI geliştirme süreçlerini hızlandırıyor. Geliştiriciler ve araştırmacılar, manuel bellek yönetimiyle uğraşmadan daha fazla deneme yapma fırsatı bulacak.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/OGYxbjg4MTRrandoMYzCCQyqikTvvCOjTKdVWIr1OWui9dFSiT8qnDWw95ot.jpeg?width=640&crop=smart&auto=webp&s=b88ee9ffade98ac67a38f567eeaf4ee8020345ba",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xahi82/24gb_is_plenty_if_your_engines_take_turns/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-20T03:27:05.000Z",
+  "slug": "24gb-is-plenty-if-your-engines-take-turns"
+}

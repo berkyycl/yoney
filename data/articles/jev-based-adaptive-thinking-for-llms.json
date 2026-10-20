@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "LLM'ler için JEV Tabanlı Uyarlamalı Düşünme",
+  "ozet_tr": "Bir Reddit kullanıcısı, büyük dil modellerinin (LLM) düşünme sürecini dinamik hâle getirmek için JEV mantığını kullanan bir yöntem geliştirdi. Her kelime için entropi ölçülerek modelin kararsız olduğu anlarda ek düşünme blokları tetikleniyor ve paralel konuşma ağaçlarıyla en uygun yanıt seçiliyor.",
+  "detayli_icerik_tr": "Yerel LLM topluluğu içinde paylaşılan yeni bir deney, JEV (Justified Entropy Voting) mantığını kullanarak modellerin yanıt üretim sürecini adaptif hâle getirmeyi amaçlıyor. Kullanıcı, her üretilen kelimenin entropisini ölçerek modelin ne kadar emin olduğunu belirliyor; belirsizlik tespit edildiğinde JEV kapısı devreye giriyor ve modele ek bir düşünme süreci başlatıp başlatmayacağını soruyor.\n\nBu yaklaşımda, modelin ilk düşüncesi her zaman gerçekleşiyor, ancak gerektiğinde ek düşünme blokları devreye alınıyor. Bu bloklar, paralel konuşma ağaçları şeklinde yapılandırılıyor ve her dalda yine JEV mantığıyla en tutarlı yanıt hattı seçiliyor. Böylece model, tek bir doğrusal akış yerine birden fazla olası yanıtı değerlendirerek daha tutarlı ve güvenilir sonuçlar üretebiliyor.\n\nYöntemin temel avantajı, özellikle yerel olarak çalışan modellerde (örneğin Local LLaMA) birden fazla akışın aynı anda yürütülebilmesi ve RAM hızının sınırlayıcı faktör olması. Kullanıcılar, bu teknik sayesinde bellek sınırlamalarına rağmen modelin düşünme derinliğini artırabiliyor. Proje, GitHub üzerinden açık kaynak olarak sunulmuş ve topluluk katkılarına açık.\n\nBu konsept, adaptif düşünme mekanizmalarının LLM'lerde nasıl uygulanabileceğine dair bir prototip sunuyor ve yerel model kullanıcıları için yeni bir araştırma alanı açıyor. Geliştiriciler, kodu kendi sistemlerine entegre ederek farklı model ve veri setleriyle denemeler yapabilir, JEV mantığının farklı senaryolardaki performansını ölçebilir.",
+  "onemli_maddeler": [
+    "Her kelime için entropi ölçümü yapılarak modelin kararsızlığı tespit ediliyor.",
+    "JEV mantığıyla ek düşünme blokları tetikleniyor ve paralel konuşma ağaçlarıyla en iyi yanıt seçiliyor.",
+    "Yerel LLM'lerde birden fazla akışın aynı anda çalıştırılması sayesinde adaptif düşünme mümkün oluyor.",
+    "Kod GitHub'da açık kaynak olarak paylaşıldı ve topluluk katkılarına açık."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 2,
+  "onem_gerekce": "Yöntem, yerel LLM kullanıcıları için ilgi çekici bir teknik olsa da henüz geniş çapta benimsenmiş bir çözüm değil ve etkisi sınırlı bir topluluk deneyimiyle sınırlı.",
+  "etiketler": [
+    "LLM",
+    "JEV",
+    "adaptive thinking",
+    "open-source",
+    "local models"
+  ],
+  "anilan_modeller": [
+    "Local LLaMA"
+  ],
+  "yorum_tr": "Bu yaklaşım, yerel modellerde adaptif yanıt üretimini artırma potansiyeli taşısa da, performans kazançları RAM ve işlemci sınırlamalarıyla ölçülmeli. Geliştiriciler, yöntemi farklı senaryolarda test ederek gerçek dünya faydasını değerlendirebilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/NHA3OTZzZjNwaHdoMbAWHM07yueknVeCOuBDtbXQ2ZuTY2uhB83Jy-xc1qyl.png?width=640&crop=smart&auto=webp&s=37e3dbdeef1e48f368ee4102c41228c28891c3f9",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xa9ffa/jev_based_adaptive_thinking_for_llms/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-19T21:18:28.000Z",
+  "slug": "jev-based-adaptive-thinking-for-llms"
+}

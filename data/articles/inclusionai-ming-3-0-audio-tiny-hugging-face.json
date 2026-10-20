@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "inclusionAI'nin Ming-3.0-audio-tiny Modeli Açıklandı: Küçük ve Çok Yönlü Ses‑Dil Modeli",
+  "ozet_tr": "inclusionAI, 9.3 Milyar parametreli ve her adımda 2.7 Milyar aktif parametre kullanan Ming-3.0-audio-tiny modelini duyurdu. Model, ses ve metin girdilerini birleştirerek konuşma tanıma, sesli soru‑cevap, uzun ses dosyası analizi ve hatta ses sentezi gibi görevleri tek bir çatı altında sunuyor.",
+  "detayli_icerik_tr": "inclusionAI, Hugging Face platformunda Ming-3.0-audio-tiny adlı yeni bir kompakt ses‑dil modeli yayınladı. Model, Mixture-of-Experts (MoE) mimarisiyle tasarlanmış olup toplamda 9.3 Milyar parametre barındırıyor; ancak her çıkarım adımında yalnızca 2.7 Milyar parametre aktif hâle geliyor. Bu yapı, yüksek performansı korurken işlem maliyetini ve bellek tüketimini önemli ölçüde azaltıyor.\n\nMing-3.0-audio-tiny, hem ses hem de metin talimatlarını aynı anda işleyebilen bir giriş arayüzüne sahip. Çıktı olarak yalnızca metin üretebileceği gibi, isteğe bağlı olarak dahili ses sentezleyicileriyle metni sesli yanıt haline de dönüştürebiliyor. Model, Çince ve İngilizce dillerinde, çeşitli aksan ve lehçelerle, gürültülü ortamlar ve çoklu konuşmacı kayıtları dahil olmak üzere geniş bir ses yelpazesini destekliyor.\n\nÖzellikle uzun‑form ses dosyalarının anlaşılması ve analiz edilmesi konusunda güçlü bir yetenek sunan Ming-3.0-audio-tiny, ses sahneleri, müzik ve konuşma dışı sesleri de tanıyıp yorumlayabiliyor. Bu sayede ses tabanlı akıl yürütme (audio reasoning) ve çok boyutlu algı (multidimensional perception) gibi ileri düzey uygulamalara imkan tanıyor. Geliştiriciler, modelin açık kaynak MIT lisansı altında sunulması sayesinde kendi projelerine kolayca entegre edebilir ve gerektiğinde özelleştirebilir.\n\nModel, Hugging Face'in Flash ve Tiny kütüphaneleriyle uyumlu olarak dağıtılıyor; örnek kod ve demo uygulamaları da topluluk tarafından erişilebilir durumda. Bu çıkış, yerel LLaMA topluluğu içinde ses‑dil modellerine yönelik ilginin artması ve daha verimli, düşük kaynak tüketimli çözümlerin talebiyle örtüşüyor.",
+  "onemli_maddeler": [
+    "9.3 B toplam parametre, her adımda 2.7 B aktif parametre ile verimli MoE mimarisi",
+    "Ses ve metin girdilerini aynı anda işleyerek konuşma tanıma, sesli Soru‑Cevap ve ses sentezi sunar",
+    "Çince ve İngilizce dillerinde, çeşitli aksan ve lehçelerle, gürültülü ortamlar dahil geniş ses yelpazesi",
+    "Uzun‑form ses dosyalarının anlaşılması ve ses‑tabanlı akıl yürütme yetenekleri"
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Kompakt bir MoE tabanlı ses‑dil modeli, düşük kaynak tüketimiyle çoklu dil ve görev desteği sunarak hem araştırmacıların hem de uygulama geliştiricilerin ilgisini çekecek bir yenilik olarak değerlendirilebilir.",
+  "etiketler": [
+    "audio-language model",
+    "Mixture-of-Experts",
+    "inclusionAI",
+    "Hugging Face",
+    "speech recognition"
+  ],
+  "anilan_modeller": [
+    "Ming-3.0-audio-tiny"
+  ],
+  "yorum_tr": "Ming-3.0-audio-tiny, ses‑dil entegrasyonunu tek bir modelde toplaması ve düşük işlem maliyetiyle sunması, özellikle kaynak sınırlı ortamlarda yeni uygulamaların geliştirilmesini hızlandırabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/QJONPUAJ94HapDiL12x2NW3jJNsivYAlJbY6IpjyAHo.png?width=640&crop=smart&auto=webp&s=619d9add7a516e4150844429badef6edf5bf8230",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x9yf3m/inclusionaiming30audiotiny_hugging_face/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-19T14:29:36.000Z",
+  "slug": "inclusionai-ming-3-0-audio-tiny-hugging-face"
+}
