@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "NVIDIA Kumo Forecast: Önceden Eğitilmiş Transformer ile Tarihsel Desen Getirimi ve Açıklanabilirlik",
+  "ozet_tr": "NVIDIA, çok değişkenli zaman serisi tahmini için yeni Kumo Forecast modelini duyurdu. Model, MOMENT-1-large tabanlı 340 M parametrelik bir encoder, tarihsel desen geri getirme (DARR) ve yerleşik açıklanabilirlik katmanını birleştiriyor. Apache 2.0 lisansı altında açık kaynak olarak sunuluyor.",
+  "detayli_icerik_tr": "NVIDIA Kumo Forecast, eski adıyla NV‑Tesseract Forecasting, çok değişkenli zaman serisi tahmininde yeni bir yaklaşım sunuyor. Model, önceden eğitilmiş MOMENT‑1‑large Transformer encoder'ını (yaklaşık 340 M parametre) temel alıyor ve bu encoder ağırlıkları dondurulmuş haldeyken, sadece tahmin başlığı (forecasting head) eğitiliyor. Bu sayede ön‑eğitimden elde edilen zengin temsiller, görev‑spesifik tahmin katmanına aktarılıyor.\n\nKumo Forecast iki ayrı akış üzerinden çalışıyor: doğrudan tahmin ve Domain‑Aware Representation and Retrieval (DARR) modu. Doğrudan akışta, modelin encoder çıktıları tahmin başlığına beslenerek istenen horizon için değerler üretiliyor; daha uzun horizonlar için özyinelemeli (autoregressive) genişletme desteği bulunuyor. DARR modunda ise, aynı zamanda tarihsel veri çerçevesinden (context_df) en benzer k‑en yakın komşu desenler alınarak, bu örüntüler doğrudan tahminle birleştiriliyor. Kullanıcılar, her iki akışın katkı oranını konfigürasyon seçenekleriyle ayarlayabiliyor.\n\nAyrıca Kumo Forecast, model‑agnostik bir açıklanabilirlik çerçevesi içeriyor. Etkinleştirildiğinde, her horizon için gecikme ve özellik katkılarını, semantik akış ve yörünge‑stabilite tanılarını ve opsiyonel gömülü Integrated Gradients analizlerini sunan bir açıklama paketi üretiyor. Bu açıklamalar, tahmin sonuçlarıyla birlikte sunuluyor ve ayrı bir açıklama modeli gerektirmiyor.\n\nKütüphane, pandas DataFrame‑ilk API, yapılandırılabilir tahmin horizonları, isteğe bağlı tarihsel bağlam ve Apache 2.0 lisansı gibi geliştirici dostu özellikler sağlıyor. Model kodu ve ağırlıkları NVIDIA/Kumo‑TS ve nvidia/Kumo‑Forecast repolarında bulunabiliyor; ayrıca kullanıcıların kendi CSV veri setleriyle ince ayar yapabilmeleri için örnek bir fine‑tuning akışı da sunulmuş.",
+  "onemli_maddeler": [
+    "340 M parametreli MOMENT‑1‑large Transformer encoder'ı ön‑eğitimli temsiller sağlıyor.",
+    "Domain‑Aware Representation and Retrieval (DARR) modu, tarihsel desen geri getirme ile tahmini güçlendiriyor.",
+    "Yerleşik açıklanabilirlik çerçevesi, horizon‑spesifik özellik ve gecikme katkılarını sunuyor.",
+    "DataFrame‑ilk API ve konfigüre edilebilir horizon desteğiyle geliştiricilere esneklik tanıyor.",
+    "Apache 2.0 lisansı altında açık kaynak olarak yayınlandı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Kumo Forecast, büyük ölçekli ön‑eğitimli transformer temelli zaman serisi tahminini tarihsel örüntü geri getirme ve açıklanabilirlik ile birleştirerek sektörde yeni bir standart oluşturma potansiyeline sahip.",
+  "etiketler": [
+    "time-series",
+    "forecasting",
+    "transformer",
+    "retrieval",
+    "interpretability"
+  ],
+  "anilan_modeller": [
+    "NVIDIA/Kumo-Forecast",
+    "NVIDIA/Kumo-TS"
+  ],
+  "yorum_tr": "Kumo Forecast, zaman serisi tahmininde hem performans hem de şeffaflık arayan geliştiriciler için güçlü bir araç sunuyor; DARR ve açıklanabilirlik özellikleri, özellikle kritik endüstriyel uygulamalarda karar güvenilirliğini artırabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://cdn-uploads.huggingface.co/production/uploads/660f5683b710b57b115a5483/pFl0vhvFrc-oZjk5qE8_0.png",
+  "url": "https://huggingface.co/blog/nvidia/kumo-forecast",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-10-21T12:51:24.000Z",
+  "slug": "nvidia-kumo-forecast-combines-pretrained-time-series-represe"
+}

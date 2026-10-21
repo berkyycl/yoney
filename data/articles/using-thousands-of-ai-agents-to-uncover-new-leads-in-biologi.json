@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "Binlerce AI ajanı sayesinde biyolojik verilerde yeni bulgular keşfedildi",
+  "ozet_tr": "OpenAI, PerturbAI ve Scripps Research, GPT‑Rosalind destekli binlerce yapay zeka ajanını paralel olarak çalıştırarak, fare beyni hücrelerinden oluşan CRISPR atlasını sadece 32 dakikada analiz etti. Bu dağıtık yaklaşım, gen bozulmalarının hücresel etkilerini literatürle ilişkilendirerek Alzheimer ve Parkinson gibi hastalıklara dair beklenmedik bağlantılar ortaya koydu.",
+  "detayli_icerik_tr": "Modern biyolojik deneyler, binlerce genin milyonlarca hücre üzerindeki etkilerini ölçen devasa veri setleri üretiyor; ancak bu verileri insan uzmanların tek tek incelemesi aylar hatta yıllar sürebiliyor. OpenAI, PerturbAI ve Scripps Research ortaklığı, bu sorunu çözmek için \"dağıtık biyolojik akıl yürütme\" adı verilen bir yöntem geliştirdi. Binlerce AI ajanı, her biri bir gen bozulmasını ele alarak, hücresel yanıtları analiz etti, ilgili bilimsel literatürü taradı ve bulgularını bir \"akıl yürütme atlası\"nda birleştirdi.\n\nBu süreçte, ajanlar sadece gen‑hücre ilişkilerini ortaya koymakla kalmadı, aynı zamanda iki hastalıkla ilişkili gen olan TSC1 ve TSC2'nin beyin hücrelerindeki farklı etkilerini ve kolesterol metabolizması ile nörodejenerasyon arasındaki olası bağlantıyı tespit etti. Özellikle DCTN1 geninin bozulmasıyla artan kolesterol sentezi, Perry sendromu gibi nörodejeneratif hastalıkların mekanizmalarına ışık tutabilir.\n\nYöntemin etkinliği, tek bir ajanla yapılan analizle karşılaştırıldığında belirgin bir fark gösterdi. Tek ajan en yüksek iş yükünde sadece 11 literatür kaynağına atıfta bulunurken, dağıtık ajanlar 700'den fazla referans kullandı ve insan uzmanlar tarafından yapılan kör değerlendirmelerde dağıtık raporlar %75 oranında tercih edildi. Bu sonuçlar, paralel AI ajanlarının daha geniş ve derin bir bilimsel bağlam sunarak araştırmacıların daha fazla potansiyel hipotezi keşfetmesine olanak tanıdığını gösteriyor.\n\nAraştırmacılar, oluşturulan akıl yürütme atlasını GitHub üzerinden erişime açtı; böylece dünya çapındaki bilim insanları bu verileri inceleyerek kendi deney tasarımlarını yönlendirebilir. Bu yaklaşım, büyük ölçekli biyolojik veri setlerinden elde edilen bilgiyi hızla test edilebilir hipotezlere dönüştürerek ilaç keşfi ve hastalık mekanizmalarının anlaşılmasında yeni bir dönemi başlatabilir.",
+  "onemli_maddeler": [
+    "Binlerce AI ajanı, fare beyni CRISPR atlasını 32 dakikada analiz etti.",
+    "Dağıtık ajanlar 700'den fazla literatür kaynağı kullandı ve insan uzmanlar tarafından %75 oranında tercih edildi.",
+    "TSC1/TSC2 ve DCTN1 genleri üzerinden yeni hastalık‑bağlantıları ve potansiyel tedavi hedefleri ortaya kondu."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "Büyük ölçekli biyolojik veri analizinde AI'nın paralel kullanımını gösteren ilk kapsamlı çalışma, araştırma süreçlerini hızlandırarak ilaç keşfi ve hastalık mekanizmalarının anlaşılmasına doğrudan katkı sağlıyor.",
+  "etiketler": [
+    "AI",
+    "biyoloji",
+    "genomik",
+    "GPT‑Rosalind",
+    "araştırma"
+  ],
+  "anilan_modeller": [
+    "GPT‑Rosalind"
+  ],
+  "yorum_tr": "Dağıtık AI ajanları, biyolojik veri setlerinin kapsamlı ve hızlı yorumlanmasını mümkün kılarak araştırmacıların hipotez üretme sürecini hızlandırıyor. Bu yöntem, özellikle karmaşık hastalık mekanizmalarının keşfinde yeni bir standart oluşturabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://images.ctfassets.net/kftzwdyauwt9/5Uhfx9LWwXWN8zKg7a6aNi/021edebfedf0c6f9638f929ba23900ab/scaling-ai-biological-data-social.png?w=1600&h=900&fit=fill",
+  "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-10-21T04:50:00.000Z",
+  "slug": "using-thousands-of-ai-agents-to-uncover-new-leads-in-biologi"
+}

@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "ChatGPT’in Yeni Reklam Altyapısı Kullanıcı Güveni ve Alaka Düzeyini Artırıyor",
+  "ozet_tr": "OpenAI, ChatGPT içinde çok aşamalı sohbetlerde niyetin evrimini izleyen ve yanıtları etkilemeyen ayrı bir hizmet olarak tasarlanan yeni bir reklam yığını (ad stack) geliştirdi. Sistem, özel bir post‑trained LLM aracılığıyla reklam adaylarını getiriyor, sıralıyor, uygunluğunu değerlendiriyor ve son aşamada açık artırma ile en değerli reklamı seçiyor. Lansmandan 200 gün önce yıllık 1 milyar dolar gelir hedefini aşarak 100 bin’den fazla reklamvereni platforma çekti.",
+  "detayli_icerik_tr": "Geleneksel reklam platformları, tek bir kullanıcı isteği (arama sorgusu ya da sayfa görüntüleme) üzerine çalışır ve bu olayları bağımsız olarak işler. ChatGPT ise kullanıcı niyetinin birden çok turda şekillendiği, bazen reklam anının net olmadığı bir ortam sunar. Bu yeni paradigma için OpenAI, sohbet geçmişini hatırlayan, niyeti yorumlayan ve reklam akışını ChatGPT yanıt üretiminden izole eden bir reklam yığını inşa etti.\n\nSistemin temel tasarım kararları üç başlıkta toplanıyor: (1) durum‑bilgili (stateful) reklam oturumları, yani niyet ve bağlamın birden fazla tur ve hatta farklı sohbetler arasında korunması; (2) konuşma bağlamını analiz edip reklam adaylarını seçen, sıralayan ve fiyatlandıran özel bir post‑trained LLM – \"orchestrator\"; (3) reklam seçiminin ChatGPT yanıt üretiminden ayrı bir hizmette yürütülmesi, böylece modelin nötr sesi ve kullanıcı güveni korunuyor.\n\nOrchestrator, sohbetin her adımını araç çağrılarıyla (retrieval, ranking, relevance, auction) yönlendiriyor. İlk aşamada, çok‑turlu diyalogdan elde edilen niyet, özetlenip semantik gömme (embedding) haline dönüştürülerek geniş bir reklam havuzundan adaylar çekiliyor. Ardından bütçe, politika, hedefleme gibi kriterlerle uygun olmayanlar eleniyor; kalan adaylar ise ilgililik, tahmini etkileşim ve geçmiş performans puanlarıyla değerlendirilip nihai açık artırmaya gönderiliyor. Açık artırma, kalite‑ağırlıklı sıralama ve fiyatlandırma yaparak tek bir reklamı seçiyor; seçilen reklam, sohbetin sonuna ek bir önsöz (preamble) ile birlikte kullanıcıya sunuluyor.\n\nMimari ayrım sayesinde reklam servisi yavaşlasa ya da kesintiye uğrasa bile ChatGPT yanıtları kesintisiz devam ediyor; aynı zamanda reklamların yalnızca gerçekten değer kattığı durumlarda gösterilmesi sağlanıyor. Sistem, reklamın zamanında gelmemesi ya da sohbet bağlamına uygun olmaması gibi iki durumda reklamı göstermeyi reddedebiliyor. Bu yaklaşım, kullanıcı deneyimini korurken reklam gelirini hızla ölçeklendirmeye olanak tanıyor; OpenAI, lansmandan 200 gün önce yıllık 1 milyar dolar gelir hedefini aşarak sektörde yeni bir referans noktası oluşturdu.",
+  "onemli_maddeler": [
+    "ChatGPT içinde niyetin çok‑turlu evrimini izleyen durum‑bilgili reklam oturumları.",
+    "Reklam akışını yöneten ve araç çağrılarıyla tüm süreci kontrol eden özel post‑trained LLM (orchestrator).",
+    "Reklam seçimi, ChatGPT yanıt üretiminden ayrı bir hizmette çalıştırılarak modelin nötrliği korunuyor.",
+    "Yıllık 1 milyar dolar gelir hedefi 200 gün içinde aşıldı; 100 bin+ reklamveren platformu kullandı."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "ChatGPT’e entegre edilen reklam altyapısı, çok‑aşamalı sohbetlerde niyet takibi ve ayrı hizmet mimarisiyle kullanıcı güvenini korurken reklam gelirini hızlıca ölçeklendirdi; bu, AI‑tabanlı ürünlerde reklam modelinin evriminde kritik bir adım olarak değerlendiriliyor.",
+  "etiketler": [
+    "ChatGPT",
+    "reklam",
+    "LLM",
+    "yapay zeka",
+    "gelir"
+  ],
+  "anilan_modeller": [
+    "ChatGPT Ads Orchestrator LLM"
+  ],
+  "yorum_tr": "Yeni reklam yığını, sohbet tabanlı yapay zeka ürünlerinde reklam entegrasyonunun nasıl yapılabileceğine dair bir şablon sunuyor; geliştiriciler için araç‑çağrısı mimarisi ilham verici, kullanıcılar ise daha az müdahaleci ve daha alakalı reklam deneyimi yaşayacak.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://images.ctfassets.net/kftzwdyauwt9/GsY5RrFvT4ZOnPC3oZUya/e3168194d55c5d9c8060ce5c5ba6c3ed/building-chatgpt-ad-stack-social.png?w=1600&h=900&fit=fill",
+  "url": "https://openai.com/index/building-chatgpt-ad-stack",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-10-21T07:00:00.000Z",
+  "slug": "how-we-built-chatgpt-s-novel-ad-stack-for-user-trust-and-rel"
+}

@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "MemT-1.0: Bellek‑Yerel Evrim İçin Yeni Mimarinin Tanıtımı",
+  "ozet_tr": "MemT-1.0, bellek yeteneğini temel model hesaplamasına entegre eden yeni bir mimari olarak tanıtıldı. Gated DeltaNet-2 ve Mixture-of-Storage bileşenleri sayesinde 128K token tarih uzunluğunda %1.86 daha hızlı ve %66 daha az kalıcı depolama gerektiriyor. Model ailesi MemT-1.0-Nano ve MemT-1.0-Flash, parametre‑tabanlı bellek çözümlerini geride bırakırken retrieval‑augmented yaklaşımlara da rekabetçi bir alternatif sunuyor.",
+  "detayli_icerik_tr": "Bellek‑yerel evrim, temel modellerin bilgi biriktirme ve sürekli kullanım yeteneğini doğrudan hesaplama içinde barındırmasını hedefliyor. Bu vizyon doğrultusunda, araştırmacılar Metis üzerine inşa edilen MemT-1.0 mimarisini duyurdu. MemT-1.0, her etkileşim turunda token‑düzeyinde kararlı bir bellek güncellemesi sağlayan Gated DeltaNet-2 mekanizması ve ölçeklenebilir bellek kapasitesi için Mixture-of-Storage katmanını kullanıyor.\n\nModelin geliştirilmesi iki aşamalı bir eğitim hattıyla gerçekleştirildi: önce 34 bilyon token içeren veri setiyle devamlı ön‑eğitim, ardından özel görevler ve bellek yetenekleri için post‑eğitim. Bu süreç, verimli eğitim ve çıkarım altyapısı sayesinde maliyet ve zaman açısından optimize edildi. Sonuç olarak, MemT-1.0 ailesi iki varyantta sunuldu: hafif ve hızlı MemT-1.0-Nano ile daha yüksek kapasiteli MemT-1.0-Flash.\n\nYapılan kapsamlı değerlendirmelerde, MemT-1.0 modelleri parametre‑tabanlı bellek temelli baz modelleri ortalama olarak geride bırakırken, retrieval‑augmented sistemlerle de rekabetçi performans sergiledi. Özellikle 128K token tarih uzunluğunda, MemT-1.0-Nano tam bağlam KV önbelleğine kıyasla yaklaşık 1.86 kat daha hızlı çalışıyor ve kalıcı depolama ihtiyacını %66 oranında azaltıyor. Bu avantajlar, uzun metin işleme ve ajan‑tabanlı görevlerde prosedürel deneyimlerin içselleştirilmesiyle görev başarısını artırıyor.\n\nAraştırmacılar, bu sonuçların bellek‑yerel evrimin pratik bir adımı olduğunu ve gelecekte daha karmaşık, uzun‑horizon görevlerde temel model yeteneklerini genişletebileceğini vurguluyor. Proje kodları, model ağırlıkları ve detaylı raporlar GitHub, HuggingFace ve arXiv üzerinden erişime açık.",
+  "onemli_maddeler": [
+    "MemT-1.0, bellek fonksiyonunu modelin çekirdeğine entegre eden ilk mimarilerden biri olarak öne çıkıyor.",
+    "128K token tarih uzunluğunda %1.86 daha hızlı çıkarım ve %66 daha az depolama gereksinimi sağlıyor.",
+    "MemT-1.0-Nano ve MemT-1.0-Flash iki farklı ölçeklendirme seçeneğiyle hem hafif hem de yüksek kapasiteli kullanım senaryolarını kapsıyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Bellek yeteneğini modelin temel hesaplamasına dahil eden yeni bir mimari sunulması, uzun bağlamlı görevlerde verimlilik ve performans artışı sağladığı için sektörde önemli bir adım olarak değerlendiriliyor.",
+  "etiketler": [
+    "bellek",
+    "foundation-model",
+    "gated-delta-net",
+    "mixture-of-storage",
+    "uzun-bağlam"
+  ],
+  "anilan_modeller": [
+    "MemT-1.0-Nano",
+    "MemT-1.0-Flash"
+  ],
+  "yorum_tr": "MemT-1.0'ün bellek‑yerel yaklaşımı, uzun metin ve ajan‑tabanlı uygulamalarda hem hız hem de depolama açısından önemli kazançlar sunarak geliştiricilere yeni bir tasarım paradigması sağlıyor. Kullanıcılar, retrieval‑augmented sistemlere kıyasla daha düşük altyapı maliyetiyle benzer performans elde edebilecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/kpici06h8twh1.jpeg?width=140&height=70&auto=webp&s=6f986534bd94f1ee649a9f64beae7efc2fffccdf",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xbl751/paper_memt10_towards_memorynative_evolution/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-21T12:00:06.000Z",
+  "slug": "paper-memt-1-0-towards-memory-native-evolution"
+}

@@ -1,0 +1,44 @@
+{
+  "baslik_tr": "IBM Granite Speech 5.0: Daha Doğru, Daha Hızlı ve Çok Dilli Konuşma Modelleri",
+  "ozet_tr": "IBM, Granite Speech 5.0 koleksiyonunda üç yeni güncellemeyi duyurdu: 2 B parametreli çok dilli ASR modeli granite-speech-5.0-2b, hız odaklı turboctc modeli granite-speech-5.0-470m-turboctc ve çok konuşmacılı toplantılar için geliştirilmiş granite-speech-4.1-2b-plus. Yeni modeller, gürültü ve yankı koşullarına dayanıklılık, 2.000 kelimelik anahtar kelime önyargısı ve daha doğru konuşmacı atama gibi özelliklerle öne çıkıyor.",
+  "detayli_icerik_tr": "IBM, Granite Speech 5.0 serisini üç farklı kullanım senaryosuna hitap edecek şekilde genişletti. Yeni 2 B parametreli granite-speech-5.0-2b modeli, İngilizce, Fransızca, Almanca, İspanyolca, Portekizce ve Japonca dillerinde otomatik konuşma tanıma (ASR) ve bu diller arasında çeviri yapabilme yeteneği sunuyor. Model, 390.000 saatlik halka açık ses verisi ve Japonca ASR, anahtar kelime önyargısı ve çeviri için sentezlenmiş veriyle eğitildi; ayrıca dil kimliği istemi ve 2.000 terime kadar anahtar kelime listeleriyle özelleştirilebiliyor.\n\nTurbo CTC sürümü, önceki 470 M parametreli sürümün mimarisini korurken çok dilli destek (İngilizce, Japonca, İspanyolca, Almanca, Fransızca, İtalyanca, Portekizce) ve yerel noktalama‑büyük harf dönüşümü ekledi. Yeni eğitim stratejileri sayesinde yankılı ve uzak mikrofonlu ortamlarda daha dayanıklı hale getirildi ve aynı zamanda 1,6 kat daha hızlı bir gerçek‑zaman faktörü (RTFx) elde edildi.\n\nGranite Speech 4.1-2b-plus modeli, toplantı ve çağrı gibi çok konuşmacılı uzun ses kayıtları için iyileştirildi. Konuşmacı atama doğruluğu, kelime diyafram hatası (WDER) ve konuşmacı‑özgü WER (cpWER) %7 azaldı; zaman damgaları daha kesin hâle getirildi (ortalama zaman kayması %53 azaldı) ve uzun konuşma performansı %24 iyileşti. Ayrıca 20 terimli anahtar kelime listelerinde hata oranı %45 düştü.\n\nTüm modeller Apache 2.0 lisansı altında sunuluyor ve Transformers, vLLM, llama.cpp ve Apple Silicon için mlx-audio gibi popüler çerçevelerle entegrasyon sağlanıyor. IBM, üretim ortamlarında ek risk tespiti için Granite Guardian entegrasyonunu öneriyor.",
+  "onemli_maddeler": [
+    "Granite Speech 5.0-2b, 5.06% ortalama İngilizce WER ile açık ağırlıklı ASR modelleri arasında #2 sırada.",
+    "Turbo CTC modeli, 19.870 RTFx hızına ulaşarak önceki sürümden %60 daha hızlı çalışıyor.",
+    "Granite Speech 4.1-2b-plus, konuşmacı atama ve zaman damgası doğruluğunda %7‑45 arasında hata iyileştirmesi sağladı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "IBM'nin açık kaynaklı konuşma modellerindeki performans artışı ve çok dilli yetenekler, kurumsal ses işleme çözümlerinde rekabeti artırarak sektörde geniş bir kullanıcı kitlesine hitap ediyor.",
+  "etiketler": [
+    "speech recognition",
+    "ASR",
+    "multilingual",
+    "IBM",
+    "open-source"
+  ],
+  "anilan_modeller": [
+    "granite-speech-5.0-2b",
+    "granite-speech-5.0-470m-turboctc",
+    "granite-speech-4.1-2b-plus"
+  ],
+  "yorum_tr": "Granite Speech 5.0 güncellemeleri, yüksek doğruluk ve düşük gecikme gerektiren kurumsal uygulamalarda açık kaynak alternatiflerini güçlendiriyor; geliştiriciler daha fazla kontrol ve özelleştirme imkanı elde ederken, son kullanıcılar daha akıcı ve doğru transkripsiyon deneyimi yaşayacak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "granite-speech-5.0-2b",
+      "benchmark": "Open ASR Leaderboard English short-form WER",
+      "skor": 5.06,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "average English WER on public short-form test sets",
+      "kaynak_metinden_alinti": "Chart 1: granite-speech-5.0-2b ranks #2 among top open-weight ASR models on average English WER (5.06%)."
+    }
+  ],
+  "gorsel_url": "https://cdn-uploads.huggingface.co/production/uploads/653fb52cbfd890805461d691/M_JJyIOBOWVzHXdy7CVVG.png",
+  "url": "https://huggingface.co/blog/ibm-granite/granite-speech-5",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-10-21T14:58:18.000Z",
+  "slug": "granite-speech-5-0-transcribe-translate-and-attribute-more-a"
+}

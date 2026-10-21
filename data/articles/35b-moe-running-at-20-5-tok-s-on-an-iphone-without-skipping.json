@@ -1,0 +1,44 @@
+{
+  "baslik_tr": "35B MoE modeli iPhone 18 Pro Max'te 20.5 tok/s hızla çalışıyor, uzmanlar atlanmadı",
+  "ozet_tr": "OpenBMB, büyük MoE modellerini yerel cihazlarda çalıştırmak için Lookahead Expert Scheduling (LES) adlı yeni bir teknik geliştirdi. Bu yöntem, uzman ağırlıklarını flash depolamadan hızlıca önceden yükleyerek 35B-A3B MoE modelini iPhone 18 Pro Max'te 20.51 tok/s hızla, uzmanları atlamadan çalıştırıyor.",
+  "detayli_icerik_tr": "OpenBMB, büyük Mixture-of-Experts (MoE) modellerinin mobil cihazlarda çalıştırılmasının temel engeli olan ağırlık aktarım gecikmesini Lookahead Expert Scheduling (LES) ile aşmayı başardı. LES, bir sonraki katmanda hangi uzmanların kullanılacağını tahmin ederek bu uzmanların ağırlıklarını mevcut hesaplamalar sürerken flash depolamadan önceden yükliyor ve hazır olan uzmanları öncelikli olarak işliyor. Bu sayede modelin yönlendirme mantığı değişmeden, uzmanlar atlanmadan çalışması sağlanıyor.\n\nMiniCPM-V 4.7 tabanlı 35B-A3B MoE modeli, iPhone 18 Pro Max 6.07 kat daha hızlı bir performans elde etti; token üretim hızı 3.38 tok/s'den 20.51 tok/s'ye yükseldi. Aynı zamanda uzman ağırlıkları %26.7 daha küçük hale getirildi ve beş farklı benchmark testinde sadece 0.16 puanlık bir doğruluk kaybı yaşandı. Düşük bellek konfigürasyonunda ise yaklaşık 3 GB tepe bellek tüketimi rapor edildi.\n\nBu performans iyileştirmeleri, ağırlık düzenlemeleri, karışık hassasiyetli kuantizasyon ve DSpark spekülatif dekodlama gibi ek optimizasyonlarla birleştirildi. OpenBMB, bu teknikleri ve LES entegrasyonunu açık kaynak olarak llama.cpp-omni projesine dahil etti, böylece geliştiriciler kendi MoE modellerini benzer şekilde mobil cihazlarda çalıştırabilir.\n\nLES'in sunduğu bellek darboğazı gizleme yeteneği, MoE mimarisinin doğrudan uygulanmasını mümkün kılıyor ve diğer MoE modelleri için de potansiyel bir yol haritası sunuyor. Bu gelişme, büyük dil modellerinin mobil AI uygulamaları, offline asistanlar ve düşük gecikmeli yanıt gerektiren senaryolarda daha geniş bir kullanıcı kitlesine ulaşmasını sağlayabilir.",
+  "onemli_maddeler": [
+    "Lookahead Expert Scheduling (LES) sayesinde uzman ağırlıkları önceden yüklenerek MoE modeli hızla çalıştırıldı.",
+    "35B-A3B MoE modeli iPhone 18 Pro Max'te 20.51 tok/s hızla, baz alana göre 6.07× daha hızlı çalıştı.",
+    "Ağırlıklar %26.7 küçültülürken doğruluk sadece 0.16 puan düştü; bellek tüketimi düşük konfigürasyonda ~3 GB.",
+    "Uygulama ve LES kodları llama.cpp-omni içinde açık kaynak olarak sunuldu."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Mobil cihazlarda 35B ölçeğinde MoE modellerinin uzmanları atlamadan çalıştırılması, geliştiricilere büyük dil modellerini uçta (edge) kullanma imkanı tanıyarak AI ekosisteminde önemli bir teknik sıçrama yaratıyor.",
+  "etiketler": [
+    "MoE",
+    "mobil AI",
+    "OpenBMB",
+    "LLM optimizasyonu",
+    "llama.cpp-omni"
+  ],
+  "anilan_modeller": [
+    "MiniCPM-V 4.7",
+    "35B-A3B MoE"
+  ],
+  "yorum_tr": "LES, büyük MoE modellerinin mobil cihazlarda pratik bir şekilde kullanılmasını sağlayarak geliştiricilerin ve son kullanıcıların AI deneyimini zenginleştirecek. Performans artışı ve düşük bellek gereksinimi, özellikle offline senaryolarda yeni uygulama fırsatları yaratabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "35B-A3B MoE",
+      "benchmark": "Token generation speed on iPhone 18 Pro Max",
+      "skor": 20.51,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "iPhone 18 Pro Max",
+      "kaynak_metinden_alinti": "20.51 tok/s on iPhone 18 Pro Max 6.07× faster than the 3.38 tok/s baseline"
+    }
+  ],
+  "gorsel_url": "https://external-preview.redd.it/Ynd5NnNjbG5rdHdoMfdaeANPnaE43lUUNGj9VaNb5seYKOPILFDCx31xy0Dp.png?width=640&crop=smart&auto=webp&s=7c7885b18cb3b142c77652e4dd7c798297a34b6e",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xbmsgf/35b_moe_running_at_205_toks_on_an_iphone_without/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-21T13:12:08.000Z",
+  "slug": "35b-moe-running-at-20-5-tok-s-on-an-iphone-without-skipping"
+}

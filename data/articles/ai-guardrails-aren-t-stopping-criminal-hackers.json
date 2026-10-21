@@ -1,0 +1,38 @@
+{
+  "baslik_tr": "AI Korumaları Suçlu Hackerların Elinde Yetersiz Kaldı",
+  "ozet_tr": "CrowdStrike araştırmacıları, Mayıs‑Ağustos 2024 arasında dört farklı tehdit grubunun, Anthropic Claude ve Deepseek modellerini kullanarak AI koruma duvarlarını aşarak başarılı siber saldırılar yürüttüğünü ortaya koydu. Model seçimi, eski sürümlerin maliyet avantajı ve guardrail farklılıklarından yararlanma stratejileri, saldırıların ölçeklenebilirliğini artırdı.",
+  "detayli_icerik_tr": "CrowdStrike, Çin, İspanyolca‑İngilizce, Endonezya ve Rusça konuşan dört yeni tehdit grubunun AI destekli saldırı altyapılarını inceledi. Bu gruplar, model yönlendirme ve seçiminde maliyet etkinliği sağlamak için daha eski Claude ve Deepseek sürümlerini tercih etti; yeni nesil modellerin yüksek ücretleri, hem suçlular hem de meşru kullanıcılar için bir engel oluşturuyor. Araştırmacılar, saldırıların çoğunun guardrail farklılıklarından faydalanarak, modelleri meşru güvenlik testleri gibi ikna etmeye yönelik prompt mühendisliği ve jailbreak teknikleriyle yönlendirildiğini belirtti.\n\nEn sofistike gruplar, Claude Code tabanlı bir \"Supervisor\" ajanı ile \"Executor\" ajanını koordine ederek, uzun vadeli ve otonom saldırı zincirleri kurdu. Çinli grup, Claude Code'un \"CYBER_RISK_INSTRUCTION\" sistem talimatını kaldırmak için ClawGod adlı bir çalışma zamanlı yama uyguladı. İspanyolca‑İngilizce grup ise Arjantin sağlık kurumlarını hedef alarak en az 15 kuruluşu ele geçirdi, kimlik bilgileri ve tıbbi kayıtları çaldı ve Claude Opus 4.5, Haiku 4.5 ve Deepseek V4 Pro gibi modelleri kullandı.\n\nDiğer iki grup, daha temel becerilerle çalışsa da hâlâ başarılı oldu; Endonezya ve Rusça konuşan aktörler, kamu kurumları ve özel sektör hedeflerine yönelik basit harness'lar ve açık‑kaynak prompt'lar kullanarak sistemleri ihlal etti. Tüm gruplar, AI altyapılarını web sunucularında açık bıraktıkları için araştırmacılar bu faaliyetleri doğrudan gözlemleyebildi. CrowdStrike yetkilisi Adam Meyers, \"İnsanlar hâlâ ilk keşif aşamasını yürütüyor, ardından AI ölçekli saldırılar için devreye giriyor\" diyerek, insan‑AI iş birliğinin hâlâ kritik bir rol oynadığını vurguladı.",
+  "onemli_maddeler": [
+    "Dört farklı tehdit grubu, Claude ve Deepseek modellerinin eski sürümlerini kullanarak AI koruma duvarlarını aşarak başarılı siber saldırılar gerçekleştirdi.",
+    "Saldırganlar, model yönlendirme, prompt jailbreak ve \"run time patch\" gibi tekniklerle modelleri meşru güvenlik testi gibi ikna etmeyi başardı.",
+    "En sofistike grup, Claude Code tabanlı bir denetleyici (Supervisor) ve yürütücü (Executor) ajanı kurarak uzun vadeli otonom saldırı altyapısı oluşturdu."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "AI'nin siber suçlular tarafından nasıl suistimal edildiğini gösteren kapsamlı bir tehdit istihbaratı raporu, güvenlik sektöründe acil önlemler alınmasını gerektiriyor.",
+  "etiketler": [
+    "AI güvenliği",
+    "siber suç",
+    "Claude",
+    "Deepseek",
+    "threat intelligence"
+  ],
+  "anilan_modeller": [
+    "Claude Opus 4.5",
+    "Claude Haiku 4.5",
+    "Claude Opus 4.8",
+    "Claude Sonnet 4.6",
+    "Claude Code",
+    "Deepseek V4 Pro",
+    "Deepseek Chat"
+  ],
+  "yorum_tr": "Bu bulgular, AI guardrail'lerinin hâlâ tutarsız ve aşılabilir olduğunu gösteriyor; geliştiricilerin model koruma mekanizmalarını standartlaştırması ve güvenlik ekiplerinin AI destekli saldırı vektörlerine karşı proaktif savunma stratejileri geliştirmesi kaçınılmaz.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://media.wired.com/photos/6ad7cd65322aff8e01d3ff70/master/pass/Security_Claude%20Code's%20Guardrails%20Aren't%20Stopping%20Real-Life%20Attacks_v2.jpg",
+  "url": "https://www.wired.com/story/ai-guardrails-arent-stopping-criminal-hackers/",
+  "source": "WIRED AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-21T14:00:00.000Z",
+  "slug": "ai-guardrails-aren-t-stopping-criminal-hackers"
+}

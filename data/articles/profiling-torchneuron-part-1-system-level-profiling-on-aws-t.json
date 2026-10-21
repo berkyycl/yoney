@@ -1,0 +1,63 @@
+{
+  "baslik_tr": "TorchNeuron Profiling: AWS Trainium’da RMSNorm Performans Analizi (Bölüm 1)",
+  "ozet_tr": "Hugging Face ve Amazon ortaklığıyla yayınlanan bu rehber, AWS Trainium çipinde TorchNeuron arka ucunu sistem seviyesinde nasıl profilereceğinizi adım adım gösteriyor. RMSNorm örneği üzerinden üç farklı uygulama (naif PyTorch, yerleşik fused fonksiyon ve torch.compile) incelenerek, işlem süresinin nereden kaynaklandığı ve nasıl azaltılabileceği ortaya konuluyor.",
+  "detayli_icerik_tr": "AWS Trainium, derin öğrenme eğitim ve çıkarım iş yükleri için özel olarak tasarlanmış bir AI çipi iken, TorchNeuron bu çipi PyTorch ile entegre eden açık kaynaklı bir arka uç sunuyor. Makale, Neuron'un PyTorch'un PrivateUse1 uzantısı üzerinden nasıl kaydedildiğini ve torch_neuronx paketinin bu entegrasyonu nasıl sağladığını açıklıyor. Profil oluşturmak için iki temel nesne – NeuronConfig ve NeuronProfiler – kullanılıyor; NeuronConfig cihaz ve runtime izlerini, izlenecek NeuronCore sayısını ve zaman korelasyonunu tanımlarken, NeuronProfiler bu ayarları torch.profiler.profile içinde experimental_config olarak geçiriyor ve iz çıktısını JSON ve .neff/.ntff dosyalarıyla birlikte kaydediyor.\n\nProfil aşamasında, RMSNorm işlemi üç farklı şekilde ele alınıyor. İlk örnek, ayrı ayrı PyTorch operasyonları (mul, mean, add, rsqrt) kullanarak naive bir implementasyon sunuyor; key_averages() tablosu, üç adet aten::mul çağrısının cihaz süresinin %49,5'ini oluşturduğunu gösteriyor ve toplam Neuron süresi 2,355 µs olarak ölçülüyor. İkinci örnek, PyTorch'un yerleşik torch.rms_norm fonksiyonunu kullanarak tek bir fused kernel'e indirgeniyor; bu durumda tek bir aten::_fused_rms_norm çağrısı %100 Neuron süresi (403,3 µs) alıyor. Üçüncü örnek ise aynı naive fonksiyonu @torch.compile(backend=\"neuron\") ile derleyerek otomatik füzyon sağlıyor; sonuçta tek bir Torch-Compiled Region görülüyor ve Neuron süresi 375,5 µs olarak kaydediliyor.\n\nBu üç senaryo, fused kernel'lerin ve torch.compile'ın naive implementasyona kıyasla cihaz süresini yaklaşık altı kat azalttığını ortaya koyuyor. Neuron Explorer aracı, sistem izlerini görsel olarak inceleyerek her bir ATen operasyonunun framework, runtime ve donanım katmanlarındaki yaşam döngüsünü gösteriyor; fused ve derlenmiş sürümlerde tek bir dispatch ve tek bir donanım olayı görülürken, naive sürümde her bir aritmetik adım ayrı ayrı izleniyor. Makale, bu metodolojinin daha büyük modellerde hotspot tespiti ve optimizasyonu için de uygulanabileceğini vurguluyor ve bir sonraki bölümde cihaz‑seviye izleme ve roofline analizi yapılacağını belirtiyor.",
+  "onemli_maddeler": [
+    "TorchNeuron, PyTorch'un PrivateUse1 uzantısı üzerinden entegre edilerek minimal kod değişikliğiyle Trainium çipinde çalışıyor.",
+    "key_averages() tablosu, hangi ATen operasyonlarının Neuron cihaz süresini domine ettiğini net bir şekilde gösteriyor.",
+    "Fused kernel (torch.rms_norm) ve torch.compile ile otomatik füzyon, naive implementasyona göre cihaz süresini yaklaşık %85 azaltıyor.",
+    "Neuron Explorer, framework‑runtime‑hardware yaşam döngüsünü görselleştirerek performans darboğazlarını tespit etmeyi kolaylaştırıyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 3,
+  "onem_gerekce": "Makale, AWS Trainium ve TorchNeuron kullanıcıları için kritik bir performans analiz yöntemi sunuyor; ancak yeni bir model çıkışı ya da büyük bir ürün güncellemesi olmadığı için sektörel etkisi orta seviyededir.",
+  "etiketler": [
+    "TorchNeuron",
+    "AWS Trainium",
+    "profiling",
+    "PyTorch",
+    "torch.compile"
+  ],
+  "anilan_modeller": [
+    "torch.rms_norm",
+    "torch.compile",
+    "RMSNorm"
+  ],
+  "yorum_tr": "Bu rehber, Trainium tabanlı uygulamaların performansını ölçmek ve iyileştirmek isteyen geliştiricilere somut bir yol haritası sunarak, fused kernel ve otomatik füzyon tekniklerinin önemini vurguluyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Naive RMSNorm (PyTorch ops)",
+      "benchmark": "Neuron device time",
+      "skor": 2355,
+      "birim": "µs",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Self NEURON total: 2.355 ms"
+    },
+    {
+      "model": "torch.rms_norm (fused)",
+      "benchmark": "Neuron device time",
+      "skor": 403.3,
+      "birim": "µs",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "aten::_fused_rms_norm 1 47.6 μs 403.3 μs 100% NEURON"
+    },
+    {
+      "model": "Naive RMSNorm with torch.compile",
+      "benchmark": "Neuron device time",
+      "skor": 375.5,
+      "birim": "µs",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Torch-Compiled Region: 0/0 1 98.4 μs 375.5 μs 100% NEURON"
+    }
+  ],
+  "gorsel_url": "https://cdn-uploads.huggingface.co/production/uploads/6ac67ea29579ea34f1f7e470/hEodPVvQZI24jETLbPooP.png",
+  "url": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-10-21T16:04:43.000Z",
+  "slug": "profiling-torchneuron-part-1-system-level-profiling-on-aws-t"
+}

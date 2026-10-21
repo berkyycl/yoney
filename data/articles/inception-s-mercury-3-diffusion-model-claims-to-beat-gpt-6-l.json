@@ -1,0 +1,76 @@
+{
+  "baslik_tr": "Inception'ın Mercury 3 Diffusion Modeli, GPT-6 Luna ve Claude Haiku 5.5'i Çok Daha Hızlı Geçiyor",
+  "ozet_tr": "Inception, yeni Mercury 3 diffusion tabanlı dil modelini tanıttı. Model, metni kelime kelime üretmek yerine bütün cevabı adım adım rafine ederek, 1.000'den fazla tokenı saniyede işleyebiliyor ve kendi iç benchmark'larında GPT-6 Luna ve Claude Haiku 5.5'i sekiz testten sekizde geride bırakıyor.",
+  "detayli_icerik_tr": "Inception, Mercury 3 adlı diffusion tabanlı bir dil modeli piyasaya sürdü. Geleneksel büyük dil modellerinin kelime kelime üretmesi yerine, Mercury 3 tüm yanıtın kaba bir taslağını oluşturup birden çok geçişte detaylandırıyor. Bu yaklaşım, modelin Nvidia GPU'larda 1.068 token/saniye hızla çalışmasını sağlıyor ve aynı donanımda Claude Haiku 5.5'in 240, GPT-6 Luna'nın ise 130 token/saniye hızının çok altında kalıyor.\n\nŞirket, Mercury 3'ün kendi iç benchmark'larında 12 testin 8'inde rakiplerini geride bıraktığını belirtiyor. IFBench testinde 76.84 puan alarak GPT-6 Luna'dan 15 puan daha yüksek bir skor elde etti. Ayrıca, SWE‑Bench Atlas testinde 51.08 puanla, rakiplerinin 33.33 ve 32.26 puanlarından belirgin bir fark yarattı. Claude Haiku 5.5 daha uzun kodlama testi DeepSWE'de üstünlük sağlarken, GPT-6 Luna iki Artificial Analysis testinde öne çıktı.\n\nMercury 3, bir seferde 1 milyon token'a kadar işleyebilen geniş bir bağlam penceresine sahip ve OpenAI uyumlu API üzerinden sunuluyor. Inception, modeli özellikle gerçek‑zamanlı uygulamalara, otonom AI ajanlarına, akıllı gözlüklere ve müşteri destek sistemlerine yönelik tasarladığını vurguluyor. Erken erişim ortakları, akıllı gözlüklerde arama süresinin sadece 80 ms olduğunu, modelin ise yanıt süresinin 0.9 saniyeye düştüğünü raporladı.\n\nFiyatlandırma açısından Mercury 3, lansmanda giriş fiyatı olarak milyon giriş tokenu başına 0.20 $, çıkış tokenu başına 0.70 $ olarak belirlenmiş ve bu fiyatlar %50 indirimli. İndirim süresi belirtilmemiş olsa da, uzun promptlarda rakip modellerin daha yüksek ücretlendirmesi nedeniyle Mercury 3 daha ekonomik bir seçenek sunuyor.",
+  "onemli_maddeler": [
+    "Mercury 3, diffusion tabanlı bir dil modeli olarak 1.068 token/saniye hızla çalışıyor ve geleneksel modellerden 4‑8 kat daha hızlı.",
+    "IFBench ve SWE‑Bench Atlas testlerinde sırasıyla 76.84 ve 51.08 puan alarak GPT-6 Luna ve Claude Haiku 5.5'i geride bıraktı.",
+    "Model, 1 milyon token'a kadar bağlamı işleyebiliyor ve OpenAI uyumlu API sayesinde mevcut uygulamalara kolay entegrasyon sağlıyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Diffusion tabanlı bir dil modelinin geleneksel büyük dil modellerine kıyasla hem hız hem de performans açısından üstünlük iddiası, AI ajanları ve gerçek‑zamanlı uygulamalar için yeni bir paradigma sunarak sektörde büyük bir etki yaratma potansiyeline sahip.",
+  "etiketler": [
+    "diffusion",
+    "dil modeli",
+    "benchmark",
+    "AI ajanları",
+    "fiyatlandırma"
+  ],
+  "anilan_modeller": [
+    "Mercury 3",
+    "GPT-6 Luna",
+    "Claude Haiku 5.5",
+    "Mercury 2",
+    "Mercury 1",
+    "DiffusionGemma",
+    "Gemini Diffusion",
+    "Gemma 4"
+  ],
+  "yorum_tr": "Mercury 3'ün yüksek hız ve geniş bağlam kapasitesi, özellikle gecikmenin kritik olduğu AI ajanları ve akıllı cihazlar için geliştiricilere yeni bir seçenek sunuyor; ancak bağımsız benchmark sonuçları henüz gelmediği için gerçek performansın doğrulanması gerekiyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Mercury 3",
+      "benchmark": "IFBench",
+      "skor": 76.84,
+      "birim": "points",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "On IFBench, Mercury 3 scores 76.84 points, 15 more than GPT-6 Luna."
+    },
+    {
+      "model": "Mercury 3",
+      "benchmark": "SWE-Bench Atlas",
+      "skor": 51.08,
+      "birim": "points",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "On SWE-Bench Atlas Mercury 3 scores 51.08 points, while its rivals reach 33.33 and 32.26."
+    },
+    {
+      "model": "Claude Haiku 5.5",
+      "benchmark": "Token Generation Speed",
+      "skor": 240,
+      "birim": "tokens/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Nvidia GPUs",
+      "kaynak_metinden_alinti": "Claude Haiku 5.5 manages about 240 [tokens per second]."
+    },
+    {
+      "model": "GPT-6 Luna",
+      "benchmark": "Token Generation Speed",
+      "skor": 130,
+      "birim": "tokens/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Nvidia GPUs",
+      "kaynak_metinden_alinti": "GPT-6 Luna about 130 [tokens per second]."
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/10/inception.png",
+  "url": "https://the-decoder.com/inceptions-mercury-3-diffusion-model-claims-to-beat-gpt-6-luna-and-claude-haiku-5-5-at-a-fraction-of-the-wait/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-21T14:45:45.000Z",
+  "slug": "inception-s-mercury-3-diffusion-model-claims-to-beat-gpt-6-l"
+}
