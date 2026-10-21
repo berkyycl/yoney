@@ -1,0 +1,81 @@
+{
+  "baslik_tr": "Intel Arc Pro B65 4x Konfigürasyonunda Uzun Bağlam ve Çeşitli Modeller İçin Token/Saniye Performans Ölçümleri",
+  "ozet_tr": "Reddit topluluğu üyesi SamSausages, Intel Arc Pro B65 GPU'larını dört birim olarak birleştirip uzun bağlam uzunluklarında çeşitli büyük dil modelleri için token/saniye bazlı throughput testleri gerçekleştirdi. Testler, vLLM sürümleri ve farklı veri tipleri (INT4, FP8, BF16) altında elde edilen sonuçları gösteriyor ve yüksek bellek bant genişliğinin gerçek dünyadaki etkisini ortaya koyuyor.",
+  "detayli_icerik_tr": "Yerel LLaMA topluluğunun bir üyesi, resmi vLLM dokümantasyonunu temel alarak Intel Arc Pro B65 GPU'larından dört tanesini (4× B65) bir araya getiren bir test rig'i kurdu ve bu sistemin uzun bağlam uzunluklarında nasıl performans gösterdiğini ölçtü. İlk adımda, sistemin yavaş ama kararlı bir kontrol konfigürasyonu oluşturuldu; bu aşamadan sonra önbellek boyutunu artırarak prefill sürelerini kısaltma gibi ayarlamalar denendi.\n\nTestlerde, Flash-Next W4A16 modeli ve Qwen3.8-27B modelinin farklı veri tipleri (INT4, FP8, BF16) kullanılarak çeşitli bağlam uzunlukları (0, 16K, 32K, 64K, 128K, 200K token) ve eşzamanlı istek sayıları (1‑16) altında throughput ölçümleri alındı. Ölçümler, 30 saniyelik tekrar eden istekler sırasında elde edilen ortalama token/saniye değerlerini içeriyor; bekleme süreleri de dahil olduğundan bu değerler saf model işleme hızını yansıtmaz.\n\nFlash-Next W4A16 modeli, MTP-3 etkinleştirilmiş vLLM 0.30.0 konfigürasyonunda 4 eşzamanlı istek ve bağlam uzunluğu 0 iken 243.2 token/saniye (kuyruklama dahil) performans gösterdi. MTP devre dışı bırakıldığında aynı koşulda bu değer 159.2 token/saniyeye düştü, bu da MTP'nin yüksek paralellikte önemli bir kazanç sağladığını gösteriyor. Qwen3.8-27B INT4 modeli ise 4× B65 ve vLLM 0.31.0+xpu.llmscaler altında 0 bağlam uzunluğunda 253.4 token/saniye, 8K bağlamda ise 239.6 token/saniye gibi yüksek değerler elde etti.\n\nFP8 ve BF16 veri tipleriyle yapılan testlerde ise performans daha düşük seviyelerde seyrediyor; örneğin Qwen3.8-27B FP8 modeli 0 bağlamda 116.2 token/saniye, BF16 modeli ise 110.0 token/saniye üretti. Bu sonuçlar, düşük hassasiyetli veri tiplerinin yüksek bellek bant genişliği avantajını tam olarak kullanamadığını, ancak hâlâ makul bir throughput sağladığını ortaya koyuyor. Sonuçların tamamı, yazarın kişisel sitesinde (https://b65.thekaiser.us/matrices/) detaylı matrisler halinde yayınlandı.",
+  "onemli_maddeler": [
+    "Intel Arc Pro B65 GPU'ları dört birim olarak birleştirildiğinde, uzun bağlam uzunluklarında 200K token'a kadar yüksek throughput değerleri elde edildi.",
+    "MTP-3 etkinleştirilmesi, Flash-Next modelinde token/saniye başına %50'ye varan performans artışı sağladı.",
+    "Qwen3.8-27B INT4 modeli, 4× B65 konfigürasyonunda 8K bağlamda 239.6 token/saniye ile en yüksek sürdürülebilir throughput değerini gösterdi."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Intel'in yeni nesil Arc Pro B65 GPU'larının çoklu birim yapılandırmasında uzun bağlam ve yüksek paralellikte elde edilen detaylı performans verileri, donanım ve LLM topluluğu için kritik bir referans noktası oluşturuyor.",
+  "etiketler": [
+    "Intel Arc Pro B65",
+    "vLLM",
+    "throughput",
+    "long context",
+    "LLM benchmark"
+  ],
+  "anilan_modeller": [
+    "Flash-Next W4A16",
+    "Qwen3.8-27B INT4",
+    "Qwen3.8-27B FP8",
+    "Qwen3.8-27B BF16"
+  ],
+  "yorum_tr": "Bu benchmark sonuçları, Intel'in yüksek bellek bant genişliğine sahip GPU'larının çoklu birim yapılandırmalarında LLM'lerin uzun bağlam senaryolarında da rekabetçi performans sunabileceğini gösteriyor; geliştiriciler bu verileri sistem tasarımlarını optimize etmek ve maliyet‑verimlilik dengesini yeniden değerlendirmek için kullanabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Flash-Next W4A16",
+      "benchmark": "Throughput (tokens/sec) – 4 requests, context 0",
+      "skor": 243.2,
+      "birim": "tokens/sec",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "4 simultaneous requests, context length 0",
+      "kaynak_metinden_alinti": "Flash-Next W4A16 — 4× B65 — MTP-3 enabled vLLM 0.30.0 · October 18, 2026   Context 0 1 request 2 requests 4 requests    0 84.5 145.6 243.2*"
+    },
+    {
+      "model": "Flash-Next W4A16",
+      "benchmark": "Throughput (tokens/sec) – 4 requests, context 0 (MTP disabled)",
+      "skor": 159.2,
+      "birim": "tokens/sec",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "4 simultaneous requests, context length 0",
+      "kaynak_metinden_alinti": "Flash-Next W4A16 — 4× B65 — MTP disabled vLLM 0.30.0 · October 18, 2026   Context 0 1 request 2 requests 4 requests    0 42.7 85.1 159.2"
+    },
+    {
+      "model": "Qwen3.8-27B INT4",
+      "benchmark": "Throughput (tokens/sec) – 4 requests, context 0",
+      "skor": 253.4,
+      "birim": "tokens/sec",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "4 simultaneous requests, context length 0",
+      "kaynak_metinden_alinti": "Qwen3.8-27B INT4 — 4× B65 vLLM 0.31.0+xpu.llmscaler · October 19, 2026   Context 0 1 request 2 requests 4 requests 8 requests 16 requests    0 50.4 129.8 253.4 468.2 458.1"
+    },
+    {
+      "model": "Qwen3.8-27B FP8",
+      "benchmark": "Throughput (tokens/sec) – 4 requests, context 0",
+      "skor": 116.2,
+      "birim": "tokens/sec",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "4 simultaneous requests, context length 0",
+      "kaynak_metinden_alinti": "Qwen3.8-27B FP8 — 4× B65 vLLM 0.32.0 · October 19, 2026   Context 0 1 request 2 requests 4 requests 8 requests 16 requests    0 30.5 59.7 116.2 222.8 404.2"
+    },
+    {
+      "model": "Qwen3.8-27B BF16",
+      "benchmark": "Throughput (tokens/sec) – 4 requests, context 0",
+      "skor": 110,
+      "birim": "tokens/sec",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "4 simultaneous requests, context length 0",
+      "kaynak_metinden_alinti": "Qwen3.8-27B BF16 — 4× B65 vLLM 0.32.0 · October 19, 2026   Context 0 1 request 2 requests 4 requests 8 requests 16 requests    0 28.6 56.2 110.0 211.0 389.5"
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/lhg74uys9nwh1.jpg?width=140&height=105&auto=webp&s=f4290de9b6ddbf50735c3c471b6379835de1ad41",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xavy8t/hardly_any_benchmarks_for_intel_b65_so_i_got_4x/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-20T15:57:27.000Z",
+  "slug": "hardly-any-benchmarks-for-intel-b65-so-i-got-4x-and-tested-t"
+}

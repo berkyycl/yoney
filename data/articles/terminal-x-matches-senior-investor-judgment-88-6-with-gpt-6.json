@@ -1,0 +1,52 @@
+{
+  "baslik_tr": "Terminal X, GPT-6.1 Sol ile kıdemli yatırımcı kararlarını %88.6 doğrulukla eşleştiriyor",
+  "ozet_tr": "Terminal X, OpenAI'nin GPT-6.1 Sol modelini kullanarak yatırım kararlarını kıdemli yatırımcıların yargılamasıyla %88.6 oranında eşleştirdiğini duyurdu. Model, aynı zamanda bir sonraki en iyi modele göre %30 daha düşük sorgu maliyeti ve %25 daha fazla uyumsuzluk tespiti sağlıyor.",
+  "detayli_icerik_tr": "Terminal X, finansal kurumların kıdemli yatırımcıların bilgi birikimini ve karar mantığını kaybetmelerine yol açan \"hafıza borcunu\" azaltmak amacıyla Capital Memory adlı işletim sistemi geliştirdi. Şirket, JPMorgan ve Blackstone gibi büyük kuruluşlarda görev yapmış mühendis ve yatırım uzmanlarını müşterilerin ekipleriyle bir araya getirerek, firmaların yatırım süreçlerini ajan temelli bir mimariye dönüştürüyor.\n\nBu mimarinin çekirdeğinde OpenAI'nin GPT-6.1 Sol ve GPT-6 Luna modelleri bulunuyor. GPT-6.1 Sol, uzun bağlamlı akıl yürütme ve token verimliliği sayesinde yatırım tezinin sentezlenmesi, kritik hususların belirlenmesi ve fon mandatına uygunluğun değerlendirilmesi gibi yüksek seviyeli görevleri üstleniyor. GPT-6 Luna ise yüksek hacimli, token tasarrufu gerektiren adımları yürütüyor.\n\nTerminal X'in geliştirdiği Eval Agent, her bir ajanın çıktısını 54 kriterlik bir rubriğe göre puanlayarak kıdemli insan denetçileriyle karşılaştırıyor. 500 değerlendirmeden elde edilen sonuçlarda GPT-6.1 Sol, insan denetçileriyle %88.6 oranında aynı fikirde bulunurken, bir sonraki en iyi model %86.4 oranına ulaştı; bu da 220 baz puanlık bir fark demek. Ayrıca model, fon mandatından sapma gösteren önerileri %25 daha fazla yakaladı ve aynı iş akışını %30 daha düşük maliyetle gerçekleştirdi.\n\nŞu ana kadar 1.700 firma Hafıza'sı oluşturulan Terminal X, bir milyondan fazla özelleştirilmiş iş akışı çalıştırdı ve haftalık aktif kullanıcı sayısını aylık aktif kullanıcıların %81'i olarak raporladı. Şirket, bu hafıza altyapısını bireysel yatırımcılara da genişleterek yatırım kararlarını veri olarak saklamayı ve sürekli iyileştirmeyi hedefliyor.",
+  "onemli_maddeler": [
+    "GPT-6.1 Sol, kıdemli yatırımcı yargılamasını %88.6 doğrulukla eşleştirerek bir sonraki en iyi modele göre 220 baz puan üstünlük sağladı.",
+    "Model, fon mandatından sapma gösteren önerileri %25 daha fazla tespit etti ve sorgu maliyetini %30 azalttı.",
+    "Terminal X, 1.700 firma Hafıza'sı ve 1 milyon+ özelleştirilmiş iş akışıyla yatırım kararlarını veri olarak saklamayı mümkün kılıyor."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Finans sektöründe karar destek sistemlerinin doğruluk ve maliyet etkinliği kritik; GPT-6.1 Sol'un yüksek doğruluk ve tasarruf oranları sektörel rekabeti ve AI entegrasyonunu önemli ölçüde etkileyebilir.",
+  "etiketler": [
+    "GPT-6.1",
+    "Terminal X",
+    "Finans",
+    "Yatırım",
+    "AI"
+  ],
+  "anilan_modeller": [
+    "GPT-6.1 Sol",
+    "GPT-6 Luna"
+  ],
+  "yorum_tr": "Bu sonuçlar, büyük yatırım firmalarının karar süreçlerini otomatikleştirirken insan uzmanlığının yerini tamamen almadığını, ancak verimliliği ve tutarlılığı artırarak önemli bir rekabet avantajı sağladığını gösteriyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GPT-6.1 Sol",
+      "benchmark": "Senior investor judgment agreement",
+      "skor": 88.6,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "500 scored judgments",
+      "kaynak_metinden_alinti": "Across 500 scored judgments, its Eval Agent on GPT‑6.1 Sol agreed with the senior human reviewer 88.6% of the time, vs. 86.4% for the next-best model"
+    },
+    {
+      "model": "GPT-6.1 Sol",
+      "benchmark": "Cost per query reduction vs next-best model",
+      "skor": 30,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "GPT‑6.1 Sol also ran the same workflows at about 30% lower cost per query than the next-best model"
+    }
+  ],
+  "gorsel_url": "https://images.ctfassets.net/kftzwdyauwt9/7btnUEAESJNvgHmdUPxexp/ac70fe93d02f52002ca5f146af8c7caf/Terminal-X-A-SEO-social-1920x1080.png?w=1600&h=900&fit=fill",
+  "url": "https://openai.com/index/terminal-x",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-10-20T07:00:00.000Z",
+  "slug": "terminal-x-matches-senior-investor-judgment-88-6-with-gpt-6"
+}

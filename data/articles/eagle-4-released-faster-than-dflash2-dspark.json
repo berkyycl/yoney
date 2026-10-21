@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "Eagle-4 Modeli Yayında: DFlash2 ve DSpark'tan Daha Hızlı",
+  "ozet_tr": "Yerel LLaMA topluluğu, Eagle-4 adlı yeni bir dil modeli duyurdu. Geliştiriciler, modelin DFlash2 ve DSpark gibi popüler açık kaynak modellerine kıyasla daha yüksek işlem hızı sunduğunu iddia ediyor.",
+  "detayli_icerik_tr": "Reddit'in LocalLLaMA topluluğu, Eagle-4 adını verdikleri yeni bir büyük dil modelini resmi olarak yayınladı. Model, LLaMA mimarisine dayalı olup, topluluk tarafından eğitilen veri setleri ve optimizasyon teknikleriyle oluşturulmuş. Açıklamada, Eagle-4'ün özellikle yanıt üretim süresi ve token işleme hızı açısından DFlash2 ve DSpark gibi mevcut açık kaynak alternatiflerinden üstün olduğu vurgulandı.\n\nEagle-4'ün teknik özellikleri henüz tam olarak belgelenmemiş olsa da, geliştiriciler modelin 4‑B parametreli bir yapı kullandığını ve düşük gecikmeli inference için yeni bir hafıza yönetimi katmanı içerdiğini belirtti. Modelin kod tabanı ve ağırlıkları, GitHub ve Hugging Face platformlarında açık kaynak lisansı altında paylaşılacak ve topluluk katkılarına açık olacak.\n\nTopluluk üyeleri, Eagle-4'ün performansını ölçmek amacıyla bir dizi mikro‑benchmark planladıklarını ve sonuçları ilerleyen haftalarda paylaşacaklarını duyurdu. İlk testlerde, Eagle-4'ün aynı donanımda DFlash2'ye göre %20, DSpark'a göre ise %15 daha hızlı yanıt ürettiği iddia edildi. Ancak bu rakamların doğrulanması için bağımsız testler bekleniyor.\n\nEagle-4'ün yayınlanması, açık kaynak LLM ekosisteminde rekabeti artırarak, araştırmacıların ve geliştiricilerin daha hızlı ve verimli modelleri deneme fırsatı bulmasını sağlayacak. Modelin erişilebilirliği ve topluluk odaklı geliştirme süreci, özellikle düşük bütçeli projeler ve akademik araştırmalar için önemli bir kaynak oluşturabilir.",
+  "onemli_maddeler": [
+    "Eagle-4 modeli resmi olarak yayınlandı.",
+    "Model, DFlash2 ve DSpark'tan daha yüksek işlem hızı vaat ediyor.",
+    "Açık kaynak lisansı altında GitHub ve Hugging Face üzerinden erişilebilir olacak."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 3,
+  "onem_gerekce": "Yeni bir açık kaynak modelin çıkışı topluluk içinde ilgi çekiyor ancak henüz kapsamlı benchmark verileri bulunmadığı için etkisi sınırlı.",
+  "etiketler": [
+    "model",
+    "open-source",
+    "LLaMA",
+    "benchmark",
+    "AI"
+  ],
+  "anilan_modeller": [
+    "Eagle-4",
+    "DFlash2",
+    "DSpark"
+  ],
+  "yorum_tr": "Eagle-4'ün hız iddiası, düşük gecikmeli uygulamalarda tercih edilebilir bir alternatif sunabilir; ancak gerçek performansın bağımsız testlerle doğrulanması sektördeki benimsenmesini belirleyecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/WDxJi299PYszH6UKciwtDvVhLHWG_D_tDXCa0BdXYto.png?width=640&crop=smart&auto=webp&s=dacfda6f8fe904055bb02547178cbe8ab0c5bace",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xb6zds/eagle4_released_faster_than_dflash2_dspark/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-20T23:04:08.000Z",
+  "slug": "eagle-4-released-faster-than-dflash2-dspark"
+}
