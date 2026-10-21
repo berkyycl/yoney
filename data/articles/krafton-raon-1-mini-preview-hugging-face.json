@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "KRAFTON'un Raon-1 mini Modeli Hugging Face'de Açık Kaynak Önizleme",
+  "ozet_tr": "KRAFTON AI, 30 milyar parametreli MoE mimarisine sahip Raon-1 mini modelini Apache 2.0 lisansı altında yayınladı. Model, Korece diyalog ve ajan tabanlı görevlerde öne çıkan performans sergiliyor ve çeşitli kuantizasyon seçenekleriyle tek bir RTX 5090 GPU’da çalıştırılabiliyor.",
+  "detayli_icerik_tr": "KRAFTON AI, sıfırdan geliştirdiği Raon-1 mini modelini Hugging Face platformunda ön izleme olarak sundu. 30B-A4B Mixture-of-Experts (MoE) mimarisine sahip bu dil modeli, özellikle Korece konuşma yeteneği ve ajan tabanlı görevlerdeki başarısıyla dikkat çekiyor. Model, Apache 2.0 lisansı altında açık kaynak olarak dağıtılıyor, bu da araştırmacıların ve geliştiricilerin özgürce erişip özelleştirmesine olanak tanıyor.\n\nRaon-1 mini, matematik ve fen bilimleri benchmark'larında lider sonuçlar elde ederek güçlü bir akıl yürütme (reasoning) yeteneği gösteriyor. Ayrıca, talimat takibi ve arama benchmark'larında da karşılaştırma modellerinin önünde yer alıyor. İngilizce performansı da sağlam olmakla birlikte, Korece dilinde elde ettiği üstün sonuçlar, bölgesel dil modelleri arasında öne çıkmasını sağlıyor.\n\nModel, Hermes Agent, Pi ve OpenCode gibi araçları destekleyerek araç çağrısı (tool calling) yeteneği sunuyor; bu da daha karmaşık, ajan odaklı iş akışlarının oluşturulmasını mümkün kılıyor. Ayrıca, DFlash2 adlı bir draft modeliyle spekülatif kodlama (speculative decoding) desteği sağlanıyor, böylece yanıt üretim hızı artırılabiliyor.\n\nKuantizasyon açısından Raon-1 mini, MXFP8 ve NVFP4 formatlarında sunuluyor. NVFP4 kuantizasyonu, 32 GB VRAM'li tek bir NVIDIA RTX 5090 GPU üzerinde çalıştırılabilmesini mümkün kılıyor, bu da yüksek performanslı donanım yatırımı yapmadan modeli denemek isteyen araştırmacılar için büyük bir avantaj sağlıyor.",
+  "onemli_maddeler": [
+    "30B-A4B MoE mimarisiyle yüksek performanslı Korece dil modeli.",
+    "Matematik, fen bilimleri ve talimat takibi benchmark'larında lider sonuçlar.",
+    "Hermes Agent, Pi ve OpenCode entegrasyonlarıyla araç çağrısı desteği.",
+    "NVFP4 kuantizasyonu sayesinde tek RTX 5090 GPU’da çalıştırma imkanı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Raon-1 mini, açık kaynaklı büyük bir MoE modeli olarak Korece NLP alanında önemli bir boşluğu dolduruyor ve düşük maliyetli donanımda yüksek performans sunmasıyla sektörde dikkat çekiyor.",
+  "etiketler": [
+    "MoE",
+    "Korean NLP",
+    "Open Source",
+    "AI",
+    "Quantization"
+  ],
+  "anilan_modeller": [
+    "Raon-1 mini"
+  ],
+  "yorum_tr": "Raon-1 mini, Korece odaklı uygulamalarda geliştiricilere güçlü bir araç sunarken, açık lisans ve düşük donanım gereksinimi sayesinde geniş bir kullanıcı kitlesine ulaşabilir. Ancak, modelin uzun vadeli güncellemeleri ve topluluk desteği, başarısının sürdürülebilirliği açısından kritik olacak.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/7r2v7Voj9FQSR5key9it_tPs5y42jjSXcWcADmtVIzQ.png?width=640&crop=smart&auto=webp&s=1276df37c5b8f5d32a099b38e33b327093ddef31",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xbh0ev/kraftonraon1minipreview_hugging_face/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-21T07:54:08.000Z",
+  "slug": "krafton-raon-1-mini-preview-hugging-face"
+}

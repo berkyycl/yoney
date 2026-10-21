@@ -1,0 +1,73 @@
+{
+  "baslik_tr": "Mistral, Voxtral 3'ü Sesli Asistan SDK'sı ve Çok Dilli STT/TTS Modelleriyle Tanıttı",
+  "ozet_tr": "Mistral, gerçek zamanlı akış desteği sunan Voxtral 3 ailesini ve sesli asistan SDK'sını duyurdu. 50'den fazla dili kapsayan yeni transkripsiyon ve konuşma sentez modelleri, düşük gecikme ve rekabetçi hata oranlarıyla iletişim merkezlerine yön veriyor.",
+  "detayli_icerik_tr": "Mistral, Voxtral 3 serisini hem konuşmadan metne (STT) hem de metinden konuşmaya (TTS) yönelik modellerle birlikte bir sesli ajan SDK'sı olarak piyasaya sürdü. Voxtral Small Transcribe 3, 50'yi aşkın dili destekleyerek diyafoni, bağlam önyargısı ve konuşma sonu algılama özellikleri sunuyor; FLEURS testinde %4.1 zorunlu ve %4.0 tahmini hata oranlarıyla Microsoft AI Transcribe 2'ye eşdeğer performans gösterdi.\n\nVoxtral Mini Transcribe 3, 4 milyar parametreli bir model olarak toplu kullanımda dakikada 0,0035 $, gerçek zamanlı kullanımda ise dakikada 0,008 $ maliyetle, 500 ms altı gecikme sağlıyor. Model, teknik terimler için anahtar kelime ve serbest bağlam girişi kabul ederek ince ayar gerektirmeden hatırlama oranını artırıyor. TTS tarafında ise Voxtral Mini TTS 3.0, 35'ten fazla dil ve 50'den fazla lehçede ses üretimi yapıyor; karakter başına 13 $ maliyetle duygu, tempo ve vurgu kontrolü, bağlamsal talimatlar ve 30 dakikalık ses örnekleriyle ses klonlama imkanı tanıyor.\n\nYeni LiveKit tabanlı SDK, transkripsiyon, akıl yürütme, araç çağrısı ve ses üretimini aynı anda yürütüyor. Genel bir model (ör. Mistral Small) akıl yürütme ve araç çağrısı yaparken, ses modelleri konuşmayı işliyor; bu sayede bir tur süresi bir saniyenin altında kalıyor ve arayan kesildiğinde ajan anında durabiliyor. SDK, SIP ve WebRTC üzerinden kimlik doğrulama, fatura kontrolü, randevu oluşturma, web araması ve özel sistemlerden veri çekme gibi görevleri yerine getirebiliyor.\n\nMüşteriler, kendi altyapılarına özel bulut ya da on‑premise kurulumlarıyla ses verilerini tamamen kontrol edebiliyor; barındırılan hizmet kullananlar ise Mistral'ın küresel API uç noktaları üzerinden erişim sağlıyor. Studio Playground ise API öncesi sesli ajan, transkripsiyon, konuşma sentezi ve ses klonlamasını test etmeye olanak tanıyor.",
+  "onemli_maddeler": [
+    "Voxtral Small Transcribe 3, 50+ dili destekleyerek %4.1 zorunlu ve %4.0 tahmini hata oranlarıyla rekabetçi performans sergiliyor.",
+    "Voxtral Mini TTS 3.0, 35 dil ve 50 lehçede duygu, tempo ve vurgu kontrolü sağlayarak 30 dakikalık ses örnekleriyle ses klonlama imkanı sunuyor.",
+    "LiveKit tabanlı sesli ajan SDK'sı, transkripsiyon, akıl yürütme, araç çağrısı ve konuşma üretimini aynı anda gerçek zamanlı işleyebiliyor.",
+    "Müşteriler, ses verilerini yerel ortamda tutarak gizlilik ve veri kontrolünü artırabilir; aynı zamanda bulut API üzerinden de hizmet alabilir."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Voxtral 3, çok dilli STT/TTS modelleri ve gerçek zamanlı sesli asistan SDK'sı ile iletişim merkezleri ve geliştiriciler için kapsamlı bir platform sunarak sektördeki rekabeti artırıyor.",
+  "etiketler": [
+    "speech-to-text",
+    "text-to-speech",
+    "voice agents",
+    "Mistral",
+    "AI models"
+  ],
+  "anilan_modeller": [
+    "Voxtral Small Transcribe 3",
+    "Voxtral Mini Transcribe 3",
+    "Voxtral Mini TTS 3.0",
+    "Voxtral 3 TTS"
+  ],
+  "yorum_tr": "Voxtral 3'ün çok dilli ve düşük gecikmeli yapısı, özellikle çağrı merkezleri ve el‑bellekli asistanlar için maliyet ve performans açısından önemli bir adım. SDK'nın modüler yapısı, geliştiricilerin sesli ajanları hızlıca özelleştirip dağıtmalarını sağlayarak inovasyonu hızlandıracak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Voxtral Small Transcribe 3",
+      "benchmark": "FLEURS forced error rate",
+      "skor": 4.1,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "In Mistral's 45-language FLEURS chart, it records forced and inferred error rates of 4.1% and 4.0%, matching Microsoft AI Transcribe 2..."
+    },
+    {
+      "model": "Voxtral Small Transcribe 3",
+      "benchmark": "FLEURS inferred error rate",
+      "skor": 4,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "In Mistral's 45-language FLEURS chart, it records forced and inferred error rates of 4.1% and 4.0%..."
+    },
+    {
+      "model": "Voxtral Small Transcribe 3",
+      "benchmark": "Artificial Analysis Speech to Text leaderboard rank",
+      "skor": 3,
+      "birim": "rank",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Voxtral Small Transcribe 3 takes the #3 spot on the Artificial Analysis Speech to Text leaderboard..."
+    },
+    {
+      "model": "Voxtral 3 TTS",
+      "benchmark": "Artificial Analysis Text to Speech leaderboard rank",
+      "skor": 12,
+      "birim": "rank",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Voxtral 3 TTS enters the top 12 in both Text to Speech arenas..."
+    }
+  ],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/10/banner-13.webp",
+  "url": "https://www.testingcatalog.com/mistral-launches-voxtral-3-with-a-voice-agent-sdk/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-21T06:12:44.000Z",
+  "slug": "mistral-launches-voxtral-3-with-a-voice-agent-sdk"
+}

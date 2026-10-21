@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "SimReady Central: Hugging Face'te Açık Simülasyon-Ready 3D Varlık Kütüphanesi",
+  "ozet_tr": "NVIDIA, SimReady Central adlı açık kütüphaneyi duyurdu. 2.000'den fazla SimReady uyumlu OpenUSD varlığı, robotik simülasyonları ve AI fabrika dijital ikizleri için ücretsiz ve erişime açık bir başlangıç noktası sunuyor. Geliştiriciler, varlıkların çarpışma geometrisi, kütle ve sürtünme gibi fiziksel özelliklerini önceden tanımlı profillere göre seçerek sahnelerini hızla oluşturabilecek.",
+  "detayli_icerik_tr": "SimReady Central, robotik ve endüstriyel AI uygulamaları için fiziksel davranış bilgileriyle donatılmış 3D modelleri tek bir platformda topluyor. OpenUSD formatındaki varlıklar, çarpışma geometrisi, kütle, sürtünme, eklem sınırları, semantik etiketler ve sensör materyalleri gibi simülasyon için kritik parametreleri içeriyor. Bu sayede geliştiriciler, CAD dosyalarını manuel olarak düzenlemek zorunda kalmadan Isaac Sim, Isaac Lab gibi NVIDIA simülasyon ortamlarında doğrudan kullanılabilir sahneler oluşturabiliyor.\n\nKütüphane, robotik kol ve kavrama uçlarından depo rafları, soğutma ekipmanları ve AI fabrika altyapısına kadar geniş bir yelpazede varlık sunuyor. OEM'ler (Comau, FANUC, Universal Robots, Vertiv, LG Electronics vb.) kendi CAD modellerini SimReady profillerine göre doğrulayıp kütüphaneye katkı sağlayabiliyor. Bu, üreticilerin ürünlerini geliştiricilere daha hızlı tanıtmasını ve son kullanıcıların simülasyon senaryolarını çabucak test etmesini mümkün kılıyor.\n\nSimReady Central, Hugging Face'in USD Search hizmetiyle doğal dil tabanlı arama imkanı da sunuyor. Geliştiriciler, \"FANUC robot kolu ve Robotiq kavrama\" gibi ifadelerle varlıkları bulup, otomatik olarak OpenUSD sahnesine ekleyebilen kod parçacıkları üretebiliyor. Ayrıca OpenAI GPT‑6 Astra gibi frontier modelleri, varlık seçiminden sahne montajına, görev tanımından önizleme render'ına kadar tam bir AI‑yardımlı iş akışı sağlayarak simülasyon oluşturma sürecini büyük ölçüde hızlandırıyor.\n\nKütüphanenin yol haritası, daha fazla OEM ortaklığı ve varlık çeşitliliği eklemeyi hedefliyor. Topluluk geri bildirimleri, eksik varlık tiplerinin ve entegrasyon sorunlarının belirlenmesinde kritik rol oynayacak. Kullanıcılar, varlıkları kendi Hugging Face veri setleriyle yönetebilir, OpenUSD katmanlarıyla senaryoları yeniden kullanabilir ve AI fabrika dijital ikizlerini gerçek zamanlı BMS ve IT telemetrileriyle senkronize edebilir.",
+  "onemli_maddeler": [
+    "SimReady Central, 2.000'den fazla önceden fiziksel özelliklerle donatılmış OpenUSD varlığını ücretsiz sunuyor.",
+    "OEM'ler varlıklarını SimReady profillerine göre doğrulayıp doğrudan geliştiricilere ulaştırabiliyor.",
+    "Hugging Face USD Search sayesinde doğal dil ile varlık arama ve AI‑yardımlı sahne oluşturma mümkün."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "SimReady Central, robotik ve AI fabrika simülasyonları için kritik veri setlerini standartlaştırarak geliştirme süresini kısaltıyor ve OEM‑geliştirici iş birliğini güçlendiriyor; bu da endüstriyel AI ekosisteminde geniş çaplı bir etki yaratma potansiyeline sahip.",
+  "etiketler": [
+    "SimReady",
+    "OpenUSD",
+    "Robotics",
+    "AI Factory",
+    "Hugging Face"
+  ],
+  "anilan_modeller": [
+    "GPT-6 Astra",
+    "NVIDIA Isaac Sim",
+    "PhysX",
+    "NVIDIA USD Search"
+  ],
+  "yorum_tr": "SimReady Central, simülasyon varlıklarının hazırlanması ve paylaşımını standartlaştırarak robotik ve dijital ikiz projelerinin prototipleme süresini önemli ölçüde azaltacak. Geliştiriciler ve OEM'ler arasındaki iş birliği hızlanırken, AI‑yardımlı sahne oluşturma akışları da daha erişilebilir hâle gelecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://cdn-uploads.huggingface.co/production/uploads/6abfe9e7d7cf09a9b38ef308/3wax5pSyzdQK6EWPgxhmR.png",
+  "url": "https://huggingface.co/blog/nvidia/simready-central-assets-robotics-ai-factories",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-10-21T10:59:42.000Z",
+  "slug": "announcing-simready-central-an-open-library-of-simulation-re"
+}

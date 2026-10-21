@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "Perplexity Computer artık Mac'te tamamen yerel çalışıyor",
+  "ozet_tr": "Perplexity, AI modelini, ajanını ve görev yürütmesini Apple Silicon üzerinde tamamen yerel olarak çalıştıran yeni bir sürümünü duyurdu. Kullanıcılar, Notlar, Mesajlar, Mail ve Numbers gibi yerel uygulamalara erişirken verilerini buluta göndermeden işlem yapabilecek.",
+  "detayli_icerik_tr": "Perplexity, Mac kullanıcıları için geliştirdiği Perplexity Computer uygulamasına iki yeni yürütme modu ekledi. \"Fully local\" modu, planlama, akıl yürütme ve dosya işleme gibi tüm adımları cihazda tutarak kişisel verilerin buluta çıkmasını engelliyor. \"Hybrid Compute\" ise bulut tabanlı en yeni modelleri kullanırken, hassas dosyalar ve yerel uygulamalar hâlâ cihazda işleniyor; bu sayede hem performans hem de gizlilik dengeleniyor.\n\nYerel modda, Apple Silicon'un gücünden faydalanarak Qwen 3.6 ya da PPLX Pro (Qwen'in sonradan eğitilmiş bir versiyonu) modelleri çalıştırılıyor. Bu modeller, Notlar'da proje görevlerini gözden geçirme, Mesajlar ve Mail'de gelen istekleri işleme, Numbers tablolarındaki harcama planlarını karşılaştırma ve toplantı davetiyeleri hazırlama gibi çok adımlı iş akışlarını yerel olarak yürütebiliyor. Ayrıca portföy incelemeleri, gizli müşteri brief'leri ve günlük eylem listeleri gibi senaryolar da destekleniyor.\n\nGüvenlik açısından, kod ve araç yürütmeleri izole sandbox'larda gerçekleşiyor; dosyalara ve uygulamalara erişim sıkı kontrol altında tutuluyor. Bu güvenlik protokolleri, bulut versiyonunda kullanılanlarla aynı seviyede. Perplexity, bu yerel sürümün Pro, Max ve Enterprise abonelikleriyle uyumlu olduğunu ve en az 36 GB RAM önerdiğini belirtiyor; yeni Mac mini M6 ve M5 Pro modelleri örnek cihazlar olarak gösteriliyor.\n\nBu güncelleme, Mayıs ayında tanıtılan \"Personal Computer for Mac\" ve daha önceki \"Hybrid Compute\" özelliklerinin üzerine eklenerek, kullanıcıların görev bazında tamamen yerel ya da hibrit bir yaklaşım seçebilmesine olanak tanıyor. Perplexity, yerel AI çözümlerinin benimsenmesini hızlandırarak veri gizliliği ve performans konularında rekabet avantajı sağlamayı hedefliyor.",
+  "onemli_maddeler": [
+    "Tamamen yerel modda AI modelinin, ajanının ve görev yürütmesinin cihazda çalışması, veri gizliliğini artırıyor.",
+    "Hybrid Compute seçeneği, bulut tabanlı en yeni modelleri yerel dosya işleme ile birleştiriyor.",
+    "Yerel modda Qwen 3.6 ve PPLX Pro modelleri kullanılabiliyor; 36 GB RAM ve Apple Silicon (M6/M5 Pro) öneriliyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Yerel AI yürütmesi, gizlilik ve performans açısından önemli bir adım; özellikle kurumsal ve hassas veri kullanan kullanıcılar için sektörel etkisi büyük.",
+  "etiketler": [
+    "Perplexity",
+    "Computer",
+    "Mac",
+    "Apple Silicon",
+    "Yerel AI"
+  ],
+  "anilan_modeller": [
+    "Qwen 3.6",
+    "PPLX Pro"
+  ],
+  "yorum_tr": "Bu güncelleme, geliştiricilere ve son kullanıcılara yerel AI çözümlerini güvenle entegre etme imkanı sunarak gizlilik kaygılarını azaltırken, Apple Silicon ekosisteminde rekabeti de artırıyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/10/f1a61df4d8a457f8dee90c42e98b486dafd51324-1920x1080.webp",
+  "url": "https://www.testingcatalog.com/perplexity-computer-now-runs-fully-locally-on-mac/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-21T06:10:20.000Z",
+  "slug": "perplexity-computer-now-runs-fully-locally-on-mac"
+}

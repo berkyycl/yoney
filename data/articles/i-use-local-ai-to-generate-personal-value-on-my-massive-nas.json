@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "Yerel AI ve Frontier Modeliyle NAS Tabanlı Kişisel Kütüphane Otomasyonu",
+  "ozet_tr": "Kullanıcı, RTX 5090 ve Strix Halo sunucularında çalışan yerel LLM'leri, Frontier AI destekli bir altyapıyla birleştirerek terabaytlık bir kitap, fotoğraf ve rapor arşivini otomatik olarak işliyor. Bu sistem, binlerce belge arasındaki bağlantıları ve ilginç bilgileri ortaya çıkararak kullanıcıya kişiselleştirilmiş keşif imkanı sunuyor.",
+  "detayli_icerik_tr": "Reddit kullanıcısı GunmetalZen, kodlama konusunda uzman olmamasına rağmen, yerel büyük dil modelleri (LLM) ve bir Frontier AI hizmeti sayesinde evindeki NAS üzerinde devasa bir dijital kütüphane oluşturdu. Başlangıçta Hermes Agent adlı bir yerel Gemma 4 31B Q4 modelini RTX 5090 GPU'su üzerinde çalıştırarak, Signal üzerinden uzaktan erişim, cron işleri ve SearXNG tabanlı araştırma gibi temel görevleri otomatikleştirdi.\n\nDaha sonra, Frontier AI'yi altyapı ve ilk görev tanımlamaları için kullanarak, üç yerel ajan (iki Strix Halo kutusunda çalışan GPT‑OSS 120B Q4 ve bir RTX 5090'da çalışan Gemma 31B Q4) kurdu. Bu ajanlar, terabaytlık veri yığınından kitap, rapor, fotoğraf ve sanat eserlerini tarıyor, alıntılar, ilginç gerçekler ve eserler arası bağlantılar çıkarıyor. Kullanıcı, bu sayede yüzbinlerce belgeyi manuel olarak incelemek yerine, ajanların sunduğu özet ve önerilerle neyi okuyup keşfetmek istediğine hızlıca karar verebiliyor.\n\nSistem ayrıca kişisel bir \"Google Earth\" haritası oluşturuyor; Wikipedia makaleleri coğrafi koordinatlarla eşleştiriliyor ve aynı mantıkla Ay ve Mars için de ilgi noktaları haritalanıyor. Kullanıcı, 24/7 çalışan bir ajan üzerinden kütüphane içindeki sorularına anlık yanıt alabiliyor, ilgili kitapları, alıntıları ya da görselleri bulabiliyor. Bu yapı, dış reklam, algoritmik öneri ve veri toplama gibi unsurlardan tamamen izole bir dijital ortam sağlıyor.\n\nProjenin maliyeti, Frontier AI için aylık 20 dolarlık bir abonelik ve kullanılan token miktarıyla sınırlıydı. Kullanıcı, bu düşük maliyetle kişisel veri mahremiyetini korurken, büyük ölçekli içerik yönetimi ve keşfi için güçlü bir otomasyon altyapısı elde etti.",
+  "onemli_maddeler": [
+    "RTX 5090 ve Strix Halo sunucularında çalışan yerel LLM'ler (Gemma 31B Q4, GPT‑OSS 120B Q4) ile büyük veri arşivi otomatik işlendi.",
+    "Frontier AI, altyapı kurulum ve görev tanımlama aşamasında kullanılarak yerel ajanların deterministik çalışması sağlandı.",
+    "Kişisel Wikipedia‑tabanlı coğrafi haritalar ve 24/7 sohbet ajanı sayesinde ev içinde tamamen izole bir dijital kütüphane oluşturuldu."
+  ],
+  "kategori": "diger",
+  "onem": 3,
+  "onem_gerekce": "Kişisel bir kullanım örneği olmasına rağmen, yerel AI ve bulut tabanlı Frontier modelinin entegrasyonu, büyük veri arşivlerinin mahremiyet odaklı otomasyonu konusunda ilham verici bir örnek sunuyor.",
+  "etiketler": [
+    "yerel AI",
+    "NAS",
+    "veri arşivi",
+    "frontier model",
+    "otomasyon"
+  ],
+  "anilan_modeller": [
+    "Gemma 4 31B Q4",
+    "GPT-OSS 120B Q4"
+  ],
+  "yorum_tr": "Bu tür bir kurulum, veri mahremiyetine önem veren bireysel kullanıcılar için yerel AI'nın pratik bir kullanım senaryosu sunuyor; aynı zamanda Frontier AI'nın altyapı desteği, deterministik görev akışları oluşturmak isteyen geliştiricilere yol gösteriyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://c1.neweggimages.com/ec/neweggkb/insider.newegg.com/3.1.jpeg",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xbd1hp/i_use_local_ai_to_generate_personal_value_on_my/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-21T03:58:19.000Z",
+  "slug": "i-use-local-ai-to-generate-personal-value-on-my-massive-nas"
+}

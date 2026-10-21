@@ -1,0 +1,73 @@
+{
+  "baslik_tr": "RK3588 NPU için Açık Kaynak Runtime: open_rknpu2_lm_infer ile Qwen3.5-4B %2 daha hızlı",
+  "ozet_tr": "Rockchip RK3588 tabanlı cihazlarda NPU'yu kullanmak isteyen geliştiricilere, tescilli inference kütüphanelerine ihtiyaç duymadan çalışan open_rknpu2_lm_infer sunuldu. Rust ve C++ ile yazılmış bu açık kaynak motoru, Qwen3.5-4B modelini yaklaşık 10 token/s hızında çalıştırarak aynı donanımda resmi RKLLM SDK'sından iki kat daha hızlı sonuç veriyor.",
+  "detayli_icerik_tr": "Yerel LLM (Large Language Model) çalıştırma ihtiyacını karşılamak amacıyla geliştirilen open_rknpu2_lm_infer, Rockchip RK3588 NPU'sunun tam potansiyelini açığa çıkarıyor. Proje, Rockchip'in kapalı kaynaklı kullanıcı alanı inference kütüphanelerine bağımlılığı ortadan kaldırarak, üst katmanı Rust, NPU operatörlerini ise C++ ile kodluyor. Bu sayede geliştiriciler kodu inceleyip, istedikleri gibi değiştirerek veya yeni operatörler ekleyerek motoru özelleştirebiliyor.\n\nMotor, Qwen3.5-4B modelini görüntü girdisiyle birlikte işleyebiliyor ve isteğe bağlı MTP (Multi-Token Prediction) spekülatif dekodlama özelliği sunuyor. Şu anki sürüm, terminal tabanlı sohbet, OpenAI uyumlu API, akış, araç çağrısı ve önbellekleme gibi modern LLM özelliklerini destekliyor. Ayrıca Qwen3-4B, Granite-4.2-3B ve MiniCPM5-2B gibi popüler checkpoint'ler de doğrulanmış durumda ve ARM64 Linux için önceden derlenmiş ikili dosyalar sağlanıyor.\n\nPerformans açısından yapılan karşılaştırmalarda, aynı donanımda çalışan resmi RKLLM 1.3.1 SDK'sına kıyasla open_rknpu2_lm_infer %2,5 ila %2,9 oranında daha yüksek token/s hızları elde ediyor. 512 tokenlık bir prompt için prefill aşamasında 147.83 tok/s, 3.800 tokenlık promptta 139.92 tok/s; dekod aşamasında ise 512 token sonrası 10.61 tok/s ve 3.800 token sonrası 9.90 tok/s değerleri ölçülmüş. Bu sonuçlar, özellikle uzun bağlamlı görevlerde ve gerçek zamanlı yanıt gerektiren uygulamalarda belirgin bir performans avantajı sağlıyor.\n\nGeliştiriciler, farklı RK3588 kartları, RAM konfigürasyonları ve sürücü versiyonlarıyla test sonuçlarını paylaşmaya davet ediliyor. Proje GitHub üzerinden erişilebilir ve topluluk katkılarına açık; hata raporları, yeni model entegrasyonları ve performans iyileştirmeleri için pull request'ler bekleniyor. Gelecek sürümlerde DFlash ve DSpark spekülasyonları, MiniCPM-V 4.7 35a3 gibi modellerin uzman önbellekleme desteği planlanıyor.",
+  "onemli_maddeler": [
+    "open_rknpu2_lm_infer, Rockchip'in tescilli inference kütüphanelerine ihtiyaç duymadan RK3588 NPU'yu kullanabiliyor.",
+    "Qwen3.5-4B modeli, görüntü girişi ve MTP spekülatif dekodlama desteğiyle çalıştırılıyor.",
+    "Benchmark sonuçları, aynı donanımda resmi RKLLM SDK'sından %2,5‑%2,9 daha yüksek token/s hızları gösteriyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Açık kaynak bir NPU runtime'ı, tescilli kütüphanelere bağımlılığı ortadan kaldırarak geliştiricilere daha fazla özgürlük ve optimizasyon imkanı sunuyor; ayrıca performans avantajı sektördeki gömülü AI çözümlerinin benimsenmesini hızlandırabilir.",
+  "etiketler": [
+    "RK3588",
+    "NPU",
+    "LLM",
+    "Qwen3.5-4B",
+    "open-source"
+  ],
+  "anilan_modeller": [
+    "Qwen3.5-4B",
+    "Qwen3-4B",
+    "Granite-4.2-3B",
+    "MiniCPM5-2B",
+    "MiniCPM-V 4.7 35a3"
+  ],
+  "yorum_tr": "Bu açık kaynak runtime, gömülü sistemlerde yüksek performanslı LLM çalıştırmayı demokratikleştirerek hem araştırmacıların hem de ürün geliştiricilerin maliyetlerini düşürebilir. Kullanıcıların kendi donanım konfigürasyonlarına göre ince ayar yapabilmesi, ekosistemde yeni inovasyonların ortaya çıkmasını teşvik edecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "open_rknpu2_lm_infer MTP1",
+      "benchmark": "Prefill, 512-token prompt",
+      "skor": 147.83,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "prefill, 512-token prompt",
+      "kaynak_metinden_alinti": "Prefill, 512-token prompt 147.83 tok/s"
+    },
+    {
+      "model": "open_rknpu2_lm_infer MTP1",
+      "benchmark": "Prefill, 3,800-token prompt",
+      "skor": 139.92,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "prefill, 3,800-token prompt",
+      "kaynak_metinden_alinti": "Prefill, 3,800-token prompt 139.92 tok/s"
+    },
+    {
+      "model": "open_rknpu2_lm_infer MTP1",
+      "benchmark": "Decode after 512 tokens",
+      "skor": 10.61,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "decode after 512 tokens",
+      "kaynak_metinden_alinti": "Decode after 512 tokens 10.61 tok/s"
+    },
+    {
+      "model": "open_rknpu2_lm_infer MTP1",
+      "benchmark": "Decode after 3,800 tokens",
+      "skor": 9.9,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "decode after 3,800 tokens",
+      "kaynak_metinden_alinti": "Decode after 3,800 tokens 9.90 tok/s"
+    }
+  ],
+  "gorsel_url": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/Qengineering/Qwen3.5-4B-rk3588.png",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xb45bq/i_built_an_rk3588_npu_runtime_without_any/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-20T21:03:58.000Z",
+  "slug": "i-built-an-rk3588-npu-runtime-without-any-proprietary-infere"
+}
