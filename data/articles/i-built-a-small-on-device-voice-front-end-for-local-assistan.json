@@ -1,0 +1,64 @@
+{
+  "baslik_tr": "Alkove: 5 küçük on-device ses modeliyle yerel asistanlar için ses ön işleme katmanı",
+  "ozet_tr": "Alkove, beş hafif model ve Rust tabanlı bir inference motoru ile cihaz içinde çalışan bir ses ön işleme katmanı sunuyor. Kullanıcıların sesini izole ederek yanlış tetiklemeleri azaltıyor ve sadece metin tabanlı bir uyanma kelimesiyle çalışabiliyor.",
+  "detayli_icerik_tr": "Alkove, yerel sesli asistanların ön işlem aşamasını iyileştirmek amacıyla geliştirilen beş küçük modelden oluşuyor: Lex (1.8 MB) metin tabanlı uyanma kelimelerinin telaffuzlarını üretirken, Spot (2.8 MB) bu telaffuzları yedi dilde dinliyor. Timbre (0.74 MB) ses izleri oluşturuyor; üç kez uyanma kelimesi söylendiğinde bir ses profili oluşturulup konuşma sırasında sürekli güncelleniyor. Focus (1.1 MB) sesinizi izole edip gürültü, müzik ve diğer konuşmacıların seslerini temizleyerek STT öncesi sadece sizin sesinizi bırakıyor. Cue (1.1 MB) ise her 30 ms'de konuşmayı algılayarak kişisel bir VAD (ses aktivasyonu algılayıcı) görevi görüyor.\n\nAlkove'un altyapısı, Rust ile yazılmış kendi küçük inference motoru sayesinde hem WebAssembly (tarayıcı) hem de yerel Python ve Android ortamlarında aynı çıktıyı veriyor. Motorun kendisi sadece 134 KB (brotli sıkıştırmalı) boyutunda ve tarayıcıda AudioWorklet üzerinden çalışan worker'lar aracılığıyla çalışıyor; ek COOP/COEP başlıkları gerektirmiyor. Paketleme açısından npm, pip, Kotlin ve LiveKit Agents ile Pipecat eklentileri sunuluyor, tek bağımlılık olarak sadece numpy bulunuyor.\n\nPerformans ölçümlerine göre Alkove, tek bir telefon çekirdeğinde gerçek zamanlı olarak çalışabiliyor: Focus modeli bir saniye ses için 38.6 ms, Spot 7.5 ms ve Cue 1.7 ms işlem süresi harcıyor. AMI toplantı kayıtlarında, Focus ve ses izini (voiceprint) kullanarak diğer katılımcıların kelimeleri dakikada 17'den 0.5'e düşürüldü. Spot modeli tek kelime tanıma testinde İngilizce %67 hatırlama oranı (saatte bir yanlış alarm) ve Fransızca %90, Portekizce %85 başarı sağladı. Ancak sistem hâlâ tek mikrofon ve tek kişi senaryoları için optimize edilmiş; aynı anda iki kişinin konuştuğu durumlarda ses ayrımı sınırlı ve 16 kHz işleme hızı 8 kHz'e kadar ses frekansını kapsıyor.\n\nAlkove, açık kaynak Apache‑2.0 lisansı altında GitHub'da (alkove-ai/alkove) kod ve ağırlıklarla sunuluyor. Geliştiriciler, sesli asistanlarını bu katmanla güçlendirerek yanlış tetiklemeleri azaltabilir, kişisel VAD ve ses izleme özelliklerini entegre edebilir ve yerel cihazda tam kontrol sağlayabilir. Proje hâlâ erken ön izleme aşamasında ve API değişiklikleri bekleniyor; topluluktan geri bildirim ve entegrasyon talepleri aktif olarak isteniyor.",
+  "onemli_maddeler": [
+    "Alkove, beş hafif model ve Rust tabanlı bir inference motoru ile cihaz içinde gerçek zamanlı ses izole etme ve uyanma kelimesi tanıma sağlıyor.",
+    "Focus modeli, ses izini (voiceprint) kullanarak diğer katılımcıların kelimelerini dakikada 17'den 0.5'e düşürüyor.",
+    "Spot modeli tek kelime tanıma testinde İngilizce %67, Fransızca %90 ve Portekizce %85 hatırlama oranı elde ediyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Yerel sesli asistanların ön işleme katmanını iyileştiren hafif modeller ve açık kaynak SDK, geliştiricilerin gizlilik ve gecikme sorunlarını çözmelerine yardımcı olacak kritik bir araç sunuyor.",
+  "etiketler": [
+    "voice-assistant",
+    "on-device",
+    "audio-processing",
+    "Rust",
+    "WebAssembly"
+  ],
+  "anilan_modeller": [
+    "Lex",
+    "Spot",
+    "Timbre",
+    "Focus",
+    "Cue"
+  ],
+  "yorum_tr": "Alkove, yerel asistanların ses ön işleme aşamasında gizlilik ve gecikme sorunlarını azaltarak geliştiricilere daha güvenli ve hızlı bir entegrasyon imkanı sunuyor. Ancak çoklu konuşmacı senaryolarındaki sınırlamaları, ilerleyen sürümlerde ele alınması gereken bir zayıflık olarak kalıyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Focus",
+      "benchmark": "AMI toplantı kayıtlarında diğer katılımcı kelimeleri",
+      "skor": 0.5,
+      "birim": "words/min",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "On AMI meetings recorded on headset mics, words from other people reaching the transcript go from about 17 per minute to 0.5 with Focus and a voiceprint."
+    },
+    {
+      "model": "Spot",
+      "benchmark": "English single-word recall",
+      "skor": 67,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "one false alarm per hour",
+      "kaynak_metinden_alinti": "Spot, on typed single words, recalls 67% of them in English at one false alarm per hour."
+    },
+    {
+      "model": "Focus",
+      "benchmark": "Native processing latency",
+      "skor": 38.6,
+      "birim": "ms/s",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Native speed on one thread of a phone: Focus 38.6 ms per second of audio."
+    }
+  ],
+  "gorsel_url": "https://external-preview.redd.it/MWMwZTVtOG9pdHdoMd9pSiQPaWURHpQf9IiswumsRKhYpCFw6jQsKNOjYVO7.png?width=640&crop=smart&auto=webp&s=22c734731ba146427790753e994730bfd3bece86",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xbmhct/i_built_a_small_ondevice_voice_frontend_for_local/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-21T12:59:41.000Z",
+  "slug": "i-built-a-small-on-device-voice-front-end-for-local-assistan"
+}

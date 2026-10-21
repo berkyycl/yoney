@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "InternScience Sage-A1.5: Uzun Vadeli Bilimsel Problem Çözümüne Yönelik Agentik MoE Modeli",
+  "ozet_tr": "InternScience, Qwen 3.6‑35B‑A3B tabanlı 35 Moe (Mixture‑of‑Experts) modelini Sage‑A1.5 olarak finetune etti. Model, uzun vadeli bilimsel görevlerde alt‑ajanlar aracılığıyla paralel araştırma, kendi kendine doğrulama ve keşif odaklı bir çalışma akışı sunuyor.",
+  "detayli_icerik_tr": "InternScience ekibi, Shanghai AI Laboratory tarafından geliştirilen Qwen3.6‑35B‑A3B modelini temel alarak Sage‑A1.5‑Q4_K_M ve Sage‑A1.5‑Q8_0 adlı iki GGUF ağırlık seti yayınladı. 35 milyar parametreli bu Mixture‑of‑Experts (MoE) model, özellikle uzun vadeli bilimsel problem çözümüne odaklanan bir ajan mimarisi sunuyor. Sage‑A1.5, önceki A1 sürümünün yeteneklerini genişleterek yalnızca tek bir görevi tamamlamakla kalmayıp, görev sürecinde iş akışını organize etme, stratejiyi revize etme ve sonuçları doğrulama yetileri kazandırıyor.\n\nModelin üç temel yeteneği vurgulanıyor: Agentic Orchestration, Verification ve Open Scientific Discovery. Agentic Orchestration, bağımsız bağlamlara sahip alt‑ajanların paralel olarak çalışmasını sağlayarak karmaşık görevlerin parçalanıp aynı anda yürütülmesine imkan tanıyor. Verification modu, modelin kendi zincir‑düşüncesi içinde bir duraklama yaparak elde ettiği kanıtları ve ilerlemeyi gözden geçirmesini, başarısız yolları tespit edip alternatif stratejiler üretmesini sağlıyor. Open Scientific Discovery ise modelin önceden tanımlı soruların ötesinde keşif yapabilmesini, araştırma sürecini interaktif ve denetlenebilir bir biçimde yürütmesini mümkün kılıyor.\n\nSage‑A1.5 ayrıca yerleşik fonksiyon çağrısı ve araç entegrasyonu desteği sunuyor; bu sayede API'lar, kod yorumlayıcıları, arama motorları ve benzeri dış araçlarla sorunsuz bir şekilde etkileşime girebiliyor. Bilimsel ve profesyonel bilgi alanlarında, araç‑entegreli akıl yürütme ve çoklu kısıtlamalı talimatları hassas bir şekilde yerine getirme yeteneğiyle öne çıkıyor. Geliştiriciler ve araştırmacılar, bu modeli Hugging Face üzerinden indirerek kendi bilimsel keşif projelerinde kullanabilir ve topluluk içinde açık bir temel oluşturulmasına katkı sağlayabilir.",
+  "onemli_maddeler": [
+    "Agentic Orchestration: Alt‑ajanlar arasında paralel araştırma ve bağımsız bağlam yönetimi.",
+    "Verification Mode: Modelin kendi zincir‑düşüncesi içinde ara duraklamalarla sonuçları kontrol edip strateji revize etmesi.",
+    "Open Scientific Discovery: Önceden tanımlı soruların ötesinde keşif yapabilen, denetlenebilir araştırma süreci."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Sage‑A1.5, uzun vadeli bilimsel görevlerde yeni bir ajan mimarisi sunarak araştırma odaklı LLM'lerin yeteneklerini önemli ölçüde genişletiyor; ancak henüz geniş çaplı ticari entegrasyon aşamasında değil.",
+  "etiketler": [
+    "Sage-A1.5",
+    "Qwen3.6",
+    "Mixture-of-Experts",
+    "Agentic AI",
+    "Scientific Discovery"
+  ],
+  "anilan_modeller": [
+    "Sage-A1.5",
+    "Qwen3.6-35B-A3B"
+  ],
+  "yorum_tr": "Sage‑A1.5, araştırmacıların karmaşık bilimsel projeleri daha modüler ve doğrulanabilir bir şekilde yürütmesine olanak tanıyarak geliştirme sürecini hızlandırabilir. Ancak araç entegrasyonu ve paralel ajan yönetimi gibi özelliklerin pratikte ne kadar stabil çalıştığı, topluluk testleriyle netleşecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/5qD41xp5xVe9is_Ep2AJTpIbrWP4s_zAHdFLcrEwHBE.png?width=640&crop=smart&auto=webp&s=1e3b65c11e75a74bb2a69c96d53f4b14204c6f1a",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xbi1hj/internsciencesagea15_finetune_of_qwen_36_35ba3b/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-21T08:59:41.000Z",
+  "slug": "internscience-sage-a1-5-finetune-of-qwen-3-6-35b-a3b"
+}

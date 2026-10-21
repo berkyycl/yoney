@@ -1,0 +1,56 @@
+{
+  "baslik_tr": "Recursive, Flint adlı laptop kodlama modelini duyurdu: AI tarafından büyük ölçüde inşa edildi",
+  "ozet_tr": "Recursive, geçen yıl kurulan yapay zeka girişimi, dört ay gibi kısa bir sürede büyük ölçüde kendi AI araştırma sistemi Eureka Machine tarafından geliştirilen Flint modelini ücretsiz olarak yayınladı. 40 milyar parametreli model, sadece 2,5 milyar parametreyi aynı anda kullanarak bir laptopta çalışabiliyor ve kodlama görevlerinde bulut tabanlı hizmetlere alternatif sunuyor.",
+  "detayli_icerik_tr": "Recursive, geçen yıl kurulan ve kendini geliştirebilen AI sistemleri üzerine çalışan bir girişim, ilk modeli Flint'i duyurdu. Şirket, AI araştırma asistanı \"Eureka Machine\"ı sayesinde modelin tasarımından eğitime ve çıkarıma kadar neredeyse tüm aşamaları otomatikleştirerek, dört ay içinde sıfırdan bir kodlama modeli oluşturdu. Flint, açık kaynak lisansı Apache 2.0 altında Hugging Face üzerinden ücretsiz indirilebiliyor.\n\nFlint, 40 milyar parametreli bir mixture‑of‑experts (MoE) mimarisine sahip; ancak her görevde yalnızca 2,5 milyar parametre aktif oluyor. Bu sayede model, sıradan bir laptopta çalışabilecek kadar hafif, aynı zamanda Meta’nın 816 milyar parametreli Muse Spark Open modelinden çok daha az bellek gerektiriyor. Flint'in hafif yapısı, geliştiricilerin kodlarını çevrim dışı yazmasına, veri gizliliğini korumasına ve bulut hizmetlerinin metin başına ücretlendirmesinden kaçınmasına olanak tanıyor.\n\nPerformans açısından Flint, Recursive'nin testlerinde Apple M4 Pro çipli bir MacBook Pro’da saniyede yaklaşık 131 token üretirken, benzer modeller (Google Gemma 4, Nvidia Nemotron 3.5 Lightning) 58‑69 token/s hızla çalışıyordu. Nvidia RTX Spark üzerinde ise 150 token/s üzerine çıkarak iki katına yakın bir hız farkı sağladı. SWE‑Bench Verified benchmark'ında ise 50 milyar parametrenin altındaki tüm modelleri geride bırakarak, sadece Alibaba’nın Qwen3.8 27B modeli Flint'ten daha yüksek bir puan elde etti.\n\nFlint'in açık kaynak olması ve yerel çalıştırılabilirliği, geliştiriciler için maliyet ve gizlilik açısından büyük avantaj sunuyor. Aynı zamanda Recursive, Eureka Machine'ın model şekli, düşük‑bit eğitimi (model boyutunu %71 küçülttü) ve özel çekirdekler gibi katkıları sayesinde kalite kaybı olmadan verimliliği artırdığını belirtiyor. Şirket, bu sürecin gelecekte tam bir özyinelemeli iyileştirme döngüsüne dönüşmesini ve her yeni modelin bir sonrakini daha hızlı ve bağımsız bir şekilde inşa etmesini hedefliyor.",
+  "onemli_maddeler": [
+    "Flint, sadece 2,5 milyar parametreyi aynı anda kullanarak bir laptopta çalışabiliyor ve geliştiricilere çevrim dışı, gizlilik odaklı bir kodlama deneyimi sunuyor.",
+    "Model, Recursive'nin AI‑destekli araştırma sistemi Eureka Machine sayesinde dört ay içinde büyük ölçüde otomatikleştirilmiş bir süreçle geliştirildi; bu, özyinelemeli AI gelişiminin erken bir örneği olarak görülüyor.",
+    "Flint, M4 Pro MacBook'ta saniyede 131 token, RTX Spark'ta 150 token üretim hızıyla benzer modellerin iki katı performans gösteriyor.",
+    "SWE‑Bench Verified benchmark'ında 50 milyar parametrenin altındaki tüm modelleri geride bırakarak sadece Alibaba’nın Qwen3.8 27B modelinden düşük bir farkla geride kaldı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Flint, büyük bir parametre sayısına rağmen laptop seviyesinde çalışabilen ilk açık kaynak kodlama modeli olarak sektörde yerel AI geliştirme ve AI‑in‑AI üretim sürecine dair önemli bir adım teşkil ediyor.",
+  "etiketler": [
+    "Flint",
+    "Recursive",
+    "kodlama modeli",
+    "AI self-improvement",
+    "SWE-Bench"
+  ],
+  "anilan_modeller": [
+    "Flint",
+    "Muse Spark Open",
+    "Gemma 4",
+    "Nemotron 3.5 Lightning",
+    "Qwen3.8 27B"
+  ],
+  "yorum_tr": "Flint'in açık kaynak ve yerel çalıştırılabilir olması, geliştiricilerin bulut maliyetlerinden kaçınarak veri gizliliğini korumasına olanak tanırken, AI‑in‑AI üretim sürecine dair pratik bir örnek sunuyor. Başarılı performans sonuçları, gelecekte daha büyük ve bağımsız modellerin hızlı bir şekilde ortaya çıkabileceğine işaret ediyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Flint",
+      "benchmark": "Token generation speed (MacBook Pro M4 Pro)",
+      "skor": 131,
+      "birim": "tokens/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "MacBook Pro M4 Pro",
+      "kaynak_metinden_alinti": "Flint generated about 131 tokens per second on a MacBook Pro with Apple’s M4 Pro chip — roughly twice the 58 to 69 tokens per second that similar models managed on the same machine"
+    },
+    {
+      "model": "Flint",
+      "benchmark": "Token generation speed (Nvidia RTX Spark)",
+      "skor": 150,
+      "birim": "tokens/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "RTX Spark",
+      "kaynak_metinden_alinti": "On Nvidia’s RTX Spark, Flint topped 150 tokens per second."
+    }
+  ],
+  "gorsel_url": "https://techcrunch.com/wp-content/uploads/2026/05/GettyImages-2157738833.jpg?resize=1200,800",
+  "url": "https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/",
+  "source": "TechCrunch AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-21T20:27:41.000Z",
+  "slug": "recursive-launches-flint-a-laptop-coding-model-it-says-was-l"
+}

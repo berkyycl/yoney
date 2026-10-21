@@ -1,0 +1,53 @@
+{
+  "baslik_tr": "VocabX ile Özel Sözlük Adaptasyonu, Gerçek Uygulamalarda Çıkarım Maliyetini %77 Azaltıyor",
+  "ozet_tr": "Dharma‑AI, VocabX adlı yeni bir sözlük özelleştirme yöntemiyle, tek bir alana yönelik dil modellerinin token başına maliyetini %77 oranında düşürdüğünü gösterdi. Yöntem, hem alt‑kelime hem de çok‑kelimeli makro tokenları aynı maliyet ölçütüyle seçerek, gereksiz kelime dağınıklığını ve büyük vocab‑matrisinin getirdiği bellek yükünü ortadan kaldırıyor.",
+  "detayli_icerik_tr": "Genel amaçlı büyük dil modellerinin tokenizerları, çok sayıda dil ve alanı kapsayacak şekilde tasarlanır ve bu da tek bir görev ya da dilde çalışan modellerde iki temel israf kaynağı oluşturur: parçalanma ve gereksiz kelime hazinesi. Dharma‑AI'nin portekizce essay grader'ı örneğinde, modelin yanıtları gereksiz token sayısı ve 151.669 tokenlik vocab‑matrisinin tamamını her adımda işlemek zorunda kalıyordu. VocabX, bu sorunu token başına maliyeti (örneğin yanıt tokeni için 7,4 kat daha pahalı) göz önünde bulundurarak, domain‑spesifik bir sözlük oluşturuyor.\n\nVocabX, iki aşamalı bir süreç izliyor. İlk aşamada, alt‑kelime birleştirme ile temel vocab küçültülür; ikinci aşamada ise tekrar eden ifadeler, satırlar, JSON yapıları gibi uzun spanlar otomatik minerler (uzun kelimeler, tam satırlar, ifadeler, cümleler, yapılandırılmış veri) tarafından tespit edilerek tek bir makro token haline getiriliyor. Her iki katman da aynı maliyet kriteri altında ve ayrı bütçelerle seçiliyor, böylece hem giriş hem de çıkışta tasarruf sağlanıyor.\n\nGerçek ölçümler, aynı temel model (Qwen3‑4B), veri ve eğitim tarifesi kullanılarak yedi farklı tokenizer versiyonu eğitildi ve 500 istek üzerinde RTX 5090 ve vLLM sunucusu ile test edildi. Sonuçta ortalama yanıt token sayısı 350'den 101'e düştü, çıkarım maliyeti %77 azaldı ve değerlendirme skoru 0.703'ten 0.810'a yükseldi. En kompakt makro token tasarımı kaliteyi düşürürken, grade tokenını ayrı tutmak hem kaliteyi artırdı hem de maliyet tasarrufunu %73,3'ten %77'ye çıkardı.\n\nVocabX'in üstünlüğü, beş farklı domain (sözleşmeler, tıbbi makaleler, bilimsel makaleler, haber, Python kodu) ve üç model ailesi (Qwen3, Llama‑3.1, Gemma‑3) üzerinde yapılan karşılaştırmalarda da kanıtlandı. Tüm 15 kombinasyonda VocabX, en güçlü referans yöntemlerinden (%1,2‑9,3 token tasarrufu) daha iyi performans gösterdi ve ortalama maliyet avantajı Qwen3 için 10,2 puan, Llama‑3.1 için 7,5 puan, Gemma‑3 için 13,6 puan olarak ölçüldü.",
+  "onemli_maddeler": [
+    "VocabX, token sayısı yerine token başına maliyeti optimize ederek çıkarım maliyetini %77 azalttı.",
+    "Alt‑kelime ve makro tokenları aynı maliyet ölçütüyle birleştirerek hem giriş hem de çıkışta tasarruf sağladı.",
+    "Beş farklı domain ve üç model ailesinde referans yöntemleri geride bırakarak, token tasarrufu ve maliyet avantajı sağladı."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Küçük ve orta ölçekli modellerin üretim ortamlarında maliyet ve bellek verimliliği kritik; VocabX bu alanda %77'lik bir maliyet düşüşü ve kalite artışı sunarak sektörde önemli bir optimizasyon fırsatı yaratıyor.",
+  "etiketler": [
+    "vocabx",
+    "tokenizasyon",
+    "inference maliyeti",
+    "LLM optimizasyonu",
+    "domaine özgü modeller"
+  ],
+  "anilan_modeller": [
+    "Qwen3-4B",
+    "Llama-3.1",
+    "Gemma-3"
+  ],
+  "yorum_tr": "VocabX, model ağırlıklarını değiştirmeden sadece sözlüğü daraltarak maliyet tasarrufu sağladığı için, özellikle düşük bütçeli üretim ortamlarında ve domain‑spesifik uygulamalarda geliştiricilere büyük bir avantaj sunuyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen3-4B",
+      "benchmark": "Inference Cost Reduction",
+      "skor": 77,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "vLLM inference server, RTX 5090",
+      "kaynak_metinden_alinti": "Cost dropped 77.0%."
+    },
+    {
+      "model": "Qwen3-4B",
+      "benchmark": "Grading Bench Score",
+      "skor": 0.81,
+      "birim": "score",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Quality, measured by the bench score, rose from 0.703 to 0.810."
+    }
+  ],
+  "gorsel_url": "https://cdn-uploads.huggingface.co/production/uploads/6a725daa5ca641a21ab61956/OWGtXjnbBov-7SI_04o4z.png",
+  "url": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-10-21T17:35:36.000Z",
+  "slug": "how-specializing-the-vocabulary-of-slms-can-cut-inference-co"
+}

@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "OpenAI GPT-5.6 Sol ve Google Gemini 4 Argon, milyonlarca siteyi etkileyen kritik PHP hatasını buldu",
+  "ozet_tr": "OpenAI'nin GPT-5.6 Sol modeli ve Google'ın Gemini 4 Argon modeli, \"Patch-the-Planet\" girişimi kapsamında, dünya çapında milyonlarca web sitesini riske atan kritik bir PHP güvenlik açığını tespit etti. Bu keşif, yapay zekâ destekli güvenlik araştırmalarının saldırı ve savunma dengelerini nasıl değiştirebileceğinin çarpıcı bir örneği oldu.",
+  "detayli_icerik_tr": "OpenAI'nin GPT-5.6 Sol modeli, \"Patch-the-Planet\" adlı güvenlik projesi çerçevesinde, PHP'nin çekirdek kodunda kritik bir hatayı ortaya çıkardı. Model, bu açığı saldırganların keşfetmesinden önce tespit ederek geliştiricilere ve güvenlik firmalarına müdahale süresi sağladı. Aynı açık, Google'ın Gemini 4 Argon modeli tarafından da bağımsız olarak doğrulandı; model, açığın istismar yollarını geliştirme, saldırı tespiti mekanizmaları oluşturma ve yama doğrulama süreçlerinde özellikle etkili oldu.\n\nGüvenlik firması Wiz, kendi Wiz Atlas platformu üzerinden aynı hatayı bağımsız olarak keşfetti ve bulgularını OpenAI ve Google ile paylaştı. Wiz'in açıklamasına göre, önceki PHP istismarları belirli bir kurulum için özelleştirilmiş bir çaba gerektirirken, büyük dil modelleri bu süreci otomatikleştirerek farklı PHP sürümleri, konfigürasyonları ve bellek düzenleri arasında hızlıca uyarlayabiliyor. Bu durum, saldırıların ölçeklenebilirliğini artırarak daha geniş bir hedef kitlesine ulaşma riskini doğuruyor.\n\nAçığın düzeltilmesi, PHP geliştiricileri, Wiz, Cloudflare ve ABD'nin CISA ve Beyaz Saray gibi kurumları dahil olmak üzere beş aşamalı iki aylık bir koordinasyon süreciyle gerçekleştirildi. OpenAI, bu süreci gelecekteki AI destekli güvenlik keşifleri için tekrarlanabilir bir çerçeve olarak öneriyor ve benzer ölçekli bulguların önümüzdeki aylarda artmasını bekliyor. Ancak şirket, aynı yapay zekâ yeteneklerinin kötü niyetli aktörler tarafından da kullanılabileceği konusunda uyarıda bulundu.\n\nBu gelişme, yapay zekânın siber güvenlik alanındaki çift yönlü etkisini bir kez daha gözler önüne seriyor. Model tabanlı keşifler, savunma tarafına büyük avantajlar sağlarken, aynı zamanda saldırı araçlarının geliştirilmesini de kolaylaştırıyor. Sektör, bu dengeyi korumak ve AI destekli güvenlik çözümlerini sorumlu bir şekilde entegre etmek için yeni politikalar ve iş birliği modelleri geliştirmeye yöneliyor.",
+  "onemli_maddeler": [
+    "GPT-5.6 Sol ve Gemini 4 Argon, kritik bir PHP güvenlik açığını tespit etti ve bu, milyonlarca web sitesini etkileyebilir.",
+    "Büyük dil modelleri, istismar kodlarını farklı PHP sürümleri ve konfigürasyonlarına otomatik olarak uyarlayarak saldırı barını düşürüyor.",
+    "Açığın düzeltilmesi, PHP geliştiricileri, güvenlik firmaları ve ABD hükümet kurumları arasında beş aşamalı bir koordinasyon süreciyle sağlandı."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "Kritik bir altyapı güvenlik açığının AI modelleri tarafından keşfedilmesi, hem savunma hem de saldırı perspektifinden sektörel etkisi yüksek bir gelişmedir.",
+  "etiketler": [
+    "PHP",
+    "güvenlik",
+    "yapay zeka",
+    "siber güvenlik",
+    "model"
+  ],
+  "anilan_modeller": [
+    "GPT-5.6 Sol",
+    "Gemini 4 Argon"
+  ],
+  "yorum_tr": "Bu keşif, yapay zekânın güvenlik araştırmalarında devrim yaratma potansiyelini gösterirken, aynı zamanda saldırı araçlarının otomatikleştirilmesi riskini de beraberinde getiriyor. Sektör, AI destekli savunma mekanizmalarını güçlendirirken, kötüye kullanımını önlemek için daha sıkı düzenlemeler ve iş birliği modelleri geliştirmeli.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/08/cybersecurity_kraken.png",
+  "url": "https://the-decoder.com/openais-gpt-5-6-sol-and-gemini-4-argon-discovered-the-critical-php-vulnerability-affecting-millions-of-websites/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-21T19:45:01.000Z",
+  "slug": "openai-s-gpt-5-6-sol-and-google-s-gemini-4-argon-found-criti"
+}

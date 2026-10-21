@@ -1,0 +1,31 @@
+{
+  "baslik_tr": "Walmart, AI ajanların alışveriş yapmasına izin veriyor",
+  "ozet_tr": "Walmart, önümüzdeki ay müşterilerine kendi yapay zeka ajanlarını siteye bağlayarak alışveriş yapma imkanı sunacak. Kullanıcılar, ajanların harcama limitlerini ve onay süreçlerini kontrol edebilecek, Amazon'un aksine AI ajanlarına kapılarını açıyor.",
+  "detayli_icerik_tr": "Walmart, AI ajanlarını doğrudan e-ticaret platformuna entegre edecek bir \"Agent Gateway\" geliştirdi. Bu altyapı, Model Context Protocol adlı açık standart üzerinden çalışıyor ve ajanların web tarayıcısı üzerinden gezinirken karşılaşabilecekleri teknik sorunları ortadan kaldırıyor. Kullanıcılar, kendi Walmart hesapları içinde bir \"Agent Profile\" oluşturacak ve bu profil aracılığıyla ajanların erişebileceği veri sınırlandırılacak.\n\nAjanların gerçekleştirebileceği işlemler, Walmart'ın belirlediği kurallarla sınırlandırılmış durumda. Ajanlar, müşterinin niyetinin ötesinde bir işlem yapamaz, ödeme yöntemini değiştiremez ve yalnızca alışverişi tamamlamak için gerekli bilgilere erişebilir. Kurallara uymayan ajanlar ise sistem tarafından engellenecek. Kullanıcılar, tüm satın alımları önceden onaylayabilir ya da belirli bir bütçe (örneğin 100 $) dahilinde otomatik alışverişe izin verebilir.\n\nWalmart, bu entegrasyon sayesinde müşterinin alışveriş geçmişi ve kişisel verilerini ajanlarla paylaşmayacak. Örneğin, bir müşterinin sık sık ekşi mayalı ekmek alması durumunda, sistem ajanı bu tercihi bilerek öneri sunabilir, ancak geniş alışveriş geçmişi gizli kalır. Aynı hizmet, Sam's Club platformunda da kullanılabilecek.\n\nAmazon'un Perplexity ve Meta'nın Muse gibi AI alışveriş asistanlarını platformundan men etmesinin aksine, Walmart bu adımı sektördeki rekabeti yeniden şekillendirebilir. AI ajanlarının güvenli ve kontrollü bir şekilde alışveriş yapabilmesi, hem kullanıcı deneyimini iyileştirebilir hem de perakende sektöründe yeni iş modellerinin önünü açabilir.",
+  "onemli_maddeler": [
+    "Walmart, AI ajanları için \"Agent Gateway\" ve Model Context Protocol üzerinden açık bir entegrasyon sunuyor.",
+    "Kullanıcılar, ajanların harcama limitlerini ve onay süreçlerini tam kontrol edebilecek.",
+    "Ajanlar, sadece alışverişi tamamlamak için gerekli verilere erişebilecek ve ödeme yöntemini değiştiremeyecek.",
+    "Walmart, AI ajanlarının müşteri veri gizliliğini koruyarak sadece ilgili ürün bilgilerine ulaşmasını sağlayacak."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Perakende sektöründe AI ajanlarının resmi olarak desteklenmesi, hem tüketici deneyimini hem de geliştirici ekosistemini önemli ölçüde etkileyen bir adım olarak değerlendiriliyor.",
+  "etiketler": [
+    "Walmart",
+    "AI",
+    "Alışveriş",
+    "Agent Gateway",
+    "Model Context Protocol"
+  ],
+  "anilan_modeller": [],
+  "yorum_tr": "Walmart'ın AI ajanlarını resmi olarak desteklemesi, perakende platformlarında yapay zekâ entegrasyonunun standartlaşmasına işaret ediyor. Geliştiriciler yeni hizmetler yaratabilirken, kullanıcılar da daha kişiselleştirilmiş ve kontrollü bir alışveriş deneyimi elde edecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/gettyimages-2247092603.jpg?quality=90&strip=all&crop=0,0,100,100",
+  "url": "https://www.theverge.com/ai-artificial-intelligence/1015715/walmart-ai-shopping-agents",
+  "source": "The Verge AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-21T19:30:00.000Z",
+  "slug": "walmart-is-inviting-ai-agents-to-shop-for-you"
+}

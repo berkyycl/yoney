@@ -1,0 +1,70 @@
+{
+  "baslik_tr": "NVIDIA Kumo Relational, Eğitim Gerektirmeden Relasyonel Verilerde Gözetimli Öğrenmeyi Aşıyor",
+  "ozet_tr": "NVIDIA, Kumo Relational adlı önceden eğitilmiş bir ilişkiselli temel modeli tanıttı. Model, bir tahmin sorgusu verildiğinde veritabanından 10.000'e kadar tarihsel örnek toplayarak tek bir ileri geçişte churn, talep ya da dolandırıcılık gibi sonuçları tahmin ediyor; hiçbir görev‑özel eğitim, özellik mühendisliği ya da tablo düzleştirme gerektirmiyor.",
+  "detayli_icerik_tr": "Kumo Relational, ilişkisel veritabanları üzerinde doğrudan çalışan bir temel model olarak tasarlandı. Geleneksel tabular makine öğreniminde veri tabanlarını tek bir düz tabloya indirgemek, önemli yapısal sinyallerin kaybolmasına ve yoğun insan çabasına yol açıyor. Model, veritabanının tablolarını, yabancı anahtarlarını ve zaman damgalarını koruyarak, her bir varlık için tarihsel alt‑grafik örneklerini bağlam olarak kullanıyor ve bu bağlamı modelin girişine ekliyor. Bu sayede, bir tahmin sorgusu sadece bir PQL (Predictive Query Language) ifadesiyle verildiğinde, model hem tablo içi hem de tablo arası ilişkileri dikkat mekanizmalarıyla işleyerek sonuç üretiyor.\n\nModelin mimarisi üç aşamadan oluşuyor: (1) tablo içi dikkat, sütun ve satır düzeyinde değerleri ilişkilendiriyor; (2) grafik dikkat, birincil‑anahtar/yabancı‑anahtar ilişkileri üzerinden satır gömmelerini yayarak tablo arası bağlamı kuruyor; (3) örnekler arası çapraz‑dikkat, bağlam örneklerini hedef varlıkla eşleştiriyor. Bu tasarım, hücre‑düzeyinde karekök maliyetini önleyerek 500 milyar satırdan fazla büyük veri setlerine ölçeklenebilirlik sağlıyor.\n\nKumo Relational, tamamen sentetik ilişkisel veri setleriyle ön‑eğitildi; bu veriler PluRel adlı bir sentezleyiciyle oluşturulup şema, yabancı‑anahtar bağlantıları ve yapısal nedensel modelleri içeriyor. Sentetik veri sayesinde ön‑eğitim sınırsızdır ve eklenen veritabanı sayısı arttıkça kayıp fonksiyonu bir güç‑kanunu izleyerek gerçek veri setlerine transfer edilebilir performans kazancı sağlıyor. Model, gerektiğinde belirli bir veri seti ve görev üzerinde ince ayar (fine‑tuning) yapılabilmesine de imkan tanıyor.\n\nPerformans testlerinde Kumo Relational, 15 veritabanı üzerindeki 41 görevi kapsayan RelBench V1/V2, SAP SALT ve 4DBInfer benchmarklarında gözetimli derin öğrenme modelleri ve uzman‑mühendislikli gradient‑boosted ağaç (XGBoost) boru hatlarını geride bıraktı. Özellikle SAP SALT benchmarkunda AutoGluon toplulukları üzerine %8 MRR artışı sağlarken, XGBoost karşısında sırasıyla %7 ve %13 MRR puan farkı elde etti. RelArena‑α liderlik tablosunda ise 1.842 Elo puan ve 1.000 örnek başına ortalama 17 saniye inferans süresiyle en iyi doğruluk‑verimlilik dengesini (Pareto ön ucu) yakaladı, en yüksek puanlı rakibi rt‑plurel ise aynı doğrulukta 7.300 saniye harcayarak yaklaşık 430 kat daha yavaştı.",
+  "onemli_maddeler": [
+    "Kumo Relational, tek bir ön‑eğitilmiş modelle ilişkisel veritabanlarından doğrudan tahmin yaparak görev‑özel eğitim ve özellik mühendisliğine ihtiyaç duymuyor.",
+    "SAP SALT benchmarkında AutoGluon toplulukları üzerine %8 MRR iyileştirmesi ve XGBoost karşısında %7‑%13 MRR farkı elde ederek tabular ML’deki klasik yaklaşımları geride bırakıyor.",
+    "RelArena‑α liderlik tablosunda 1.842 Elo puan ve 17 saniye inferans süresiyle en yüksek doğruluk‑verimlilik dengesini yakaladı; rakibi 430 kat daha yavaş çalışıyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "İlişkisel veri tabanları için eğitim gerektirmeyen bir temel modelin ortaya çıkması, kurumsal AI projelerinde zaman ve maliyet tasarrufu sağlayarak sektördeki üretkenliği ve model yönetimini kökten değiştirebilir.",
+  "etiketler": [
+    "yapay zeka",
+    "temel model",
+    "relasyonel veri",
+    "NVIDIA",
+    "makine öğrenimi"
+  ],
+  "anilan_modeller": [
+    "Kumo Relational",
+    "Kumo Tabular"
+  ],
+  "yorum_tr": "Kumo Relational, veri mühendisliği sürecini büyük ölçüde basitleştirerek ML ekiplerinin daha hızlı ve düşük maliyetli çözümler üretmesini mümkün kılıyor; aynı zamanda yüksek doğruluk vaat ettiği için büyük ölçekli kurumsal uygulamalarda benimsenmesi bekleniyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Kumo Relational",
+      "benchmark": "SAP SALT",
+      "skor": 8,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "mean reciprocal rank (MRR) improvement over AutoGluon ensembles",
+      "kaynak_metinden_alinti": "surpasses AutoGluon ensembles by 8% in mean reciprocal rank (MRR)"
+    },
+    {
+      "model": "Kumo Relational",
+      "benchmark": "RelBench V1 classification",
+      "skor": 4,
+      "birim": "AUROC points",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "average improvement over gradient-boosted trees",
+      "kaynak_metinden_alinti": "outperforms gradient-boosted trees on expert-engineered features by nearly 4 AUROC points on average"
+    },
+    {
+      "model": "Kumo Relational",
+      "benchmark": "SAP SALT (out-of-the-box)",
+      "skor": 7,
+      "birim": "MRR points",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "out-of-the-box vs XGBoost",
+      "kaynak_metinden_alinti": "beats XGBoost on engineered features by 7 MRR points out of the box"
+    },
+    {
+      "model": "Kumo Relational",
+      "benchmark": "SAP SALT (fine-tuned)",
+      "skor": 13,
+      "birim": "MRR points",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "after fine-tuning vs XGBoost",
+      "kaynak_metinden_alinti": "beats XGBoost on engineered features by 13 MRR points after fine-tuning"
+    }
+  ],
+  "gorsel_url": "https://cdn-uploads.huggingface.co/production/uploads/6ad8e88370f69967fafc8703/i-Flass3NMPRmc6lVfwO_.png",
+  "url": "https://huggingface.co/blog/nvidia/kumo-relational",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-10-21T18:26:30.000Z",
+  "slug": "nvidia-kumo-relational-outperforms-supervised-machine-learni"
+}
