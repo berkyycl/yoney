@@ -1,0 +1,46 @@
+{
+  "baslik_tr": "2-bit VRAM kopyası ve sistem RAM’de kalan ağırlıklarla spekülatif kodlama: GPU’ya sığmayan modeller için yeni yöntem",
+  "ozet_tr": "Araştırmacılar, büyük dil modellerini GPU belleğine sığdırmak için 2-bit bir kopya tutup geri kalan ağırlıkları sistem RAM’de saklayan bir spekülatif kodlama yöntemi önerdi. Bu teknik, modelin taslak çıktısını GPU’da hızlıca üretirken, tam doğrulama işlemini CPU‑RAM üzerinden yaparak veri akışını azaltıyor ve kabul edilen token oranını artırıyor.",
+  "detayli_icerik_tr": "Reddit topluluğu LocalLLaMA'da paylaşılan bir gönderide, bir geliştirici modelin sadece 2-bit versiyonunu GPU belleğine (VRAM) yerleştirip, geri kalan 6‑8 bitlik residual ağırlıkları sistem RAM'de tutarak spekülatif kodlama (speculative decoding) yapmayı önerdi. Bu yaklaşımda, GPU 2-bit kopya üzerinden taslak tokenlar üretirken, CPU tam modelin residual kısmını kontrol ediyor ve yalnızca aktivasyonlar PCIe üzerinden aktarılıyor. Böylece taslak üretimi ek bellek tüketimi yaratmıyor; doğrulama aşaması ise modelin yarısı kadar bellek kullanıyor.\n\nYapılan ölçümlere göre, 2-bit + 8-bit residual kombinasyonu, bf16 doğruluğuna Q8_0'den daha yakın bir performans sergiliyor ve KL sapması yaklaşık %50 daha düşük. 6-bit residual ise Q8_0 seviyesinde kalite sağlarken RAM'den okunan veri miktarını yaklaşık %28 azaltıyor. Ayrıca, 2-bit taslak modeli, Google'ın resmi Gemma 4 drafter'ına (31B, 16 düğüm ağaç) kıyasla %25‑30 daha fazla kabul edilen token sağlıyor (5.23 vs 4.20 token/kontrol).\n\nCPU çekirdeğiyle çalışan kernel, bellek sınırlı olduğu için 1 token kontrol süresiyle aynı sürede 16 token'i işleyebiliyor. Bu, özellikle VRAM kapasitesi yetersiz olduğunda Q8 modelinin çalıştırılamadığı senaryolarda önemli bir performans kazancı sunuyor. Yazar, bu yöntemi bir açık kaynak repo üzerinden paylaşıyor ve ilgili kodları https://huggingface.co/HappyGuitar123/twobit-residual-spec adresinde bulunabiliyor.\n\nYöntemin en yakın benzeri SubSpec olarak gösteriliyor; ancak SubSpec ayrı bir 4-bit kopya kullanıp ağırlıkları PCIe üzerinden akıtırken, bu yeni yaklaşım modeli bit seviyesinde bölerek veri akışını minimize ediyor. Yazar, yöntemin hâlâ deney aşamasında olduğunu ve Claude, Astra gibi modellerle denemeler yapılabileceğini belirtiyor.",
+  "onemli_maddeler": [
+    "2-bit VRAM kopyası ve 6‑8 bit residual RAM’de tutularak spekülatif kodlama yapılabiliyor.",
+    "2-bit + 8-bit kombinasyonu bf16'a daha yakın kalite sunuyor, KL sapması %50 daha düşük.",
+    "6-bit residual, Q8_0 kalitesini korurken RAM okuma miktarını %28 azaltıyor.",
+    "2-bit taslak, Gemma 4 drafter'a kıyasla %25‑30 daha fazla kabul edilen token sağlıyor (5.23 vs 4.20)."
+  ],
+  "kategori": "arastirma",
+  "onem": 3,
+  "onem_gerekce": "Yeni bir model çıkışı olmamakla birlikte, büyük modellerin GPU belleğine sığdırılamadığı durumlar için pratik bir optimizasyon sunması sektörde ilgi çekebilir ancak geniş çaplı benimsenmesi zaman alabilir.",
+  "etiketler": [
+    "spekülatif kodlama",
+    "model quantization",
+    "VRAM",
+    "CPU-GPU iş bölümü",
+    "LLM optimizasyonu"
+  ],
+  "anilan_modeller": [
+    "Claude",
+    "Astra",
+    "Gemma 4",
+    "llama.cpp"
+  ],
+  "yorum_tr": "Bu teknik, bellek sınırlı ortamlarda büyük dil modellerinin çalıştırılabilirliğini artırarak araştırmacı ve geliştiricilere maliyet tasarrufu sağlayabilir; ancak performansın gerçek zamanlı uygulamalara ne kadar yansıyacağı daha fazla test gerektiriyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "2-bit draft with residual",
+      "benchmark": "Accepted tokens per check (Gemma 4 drafter baseline)",
+      "skor": 5.23,
+      "birim": "token/check",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "the 2-bit draft ... gets 25-30% more accepted tokens per check than Google's official Gemma 4 drafter (31B, 16 node tree: 5.23 vs 4.20)"
+    }
+  ],
+  "gorsel_url": "https://i.redd.it/zhvkeo9uyawh1.jpeg",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xc55z3/2bit_copy_in_vram_exact_residual_in_system_ram_as/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-22T01:18:28.000Z",
+  "slug": "2-bit-copy-in-vram-exact-residual-in-system-ram-as-the-verif"
+}

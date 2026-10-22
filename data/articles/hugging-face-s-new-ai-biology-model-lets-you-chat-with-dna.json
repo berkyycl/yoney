@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "Hugging Face’ın Yeni AI Biyoloji Modeli Carbon‑X DNA’yı Sohbet Konusuna Çevriyor",
+  "ozet_tr": "Hugging Face, Çin'deki Zhongguancun Academy ve İtalya'daki Napoli Federico II Üniversitesi iş birliğiyle geliştirdiği Carbon‑X adlı açık kaynaklı bir model yayınladı. Model, DNA dizilerini doğal dil ile birleştirerek kullanıcıların genetik değişikliklerin etkilerini sohbet tarzında sorgulamasına olanak tanıyor ve 14 milyar parametresi sayesinde yerel bilgisayarlarda çalışabiliyor.",
+  "detayli_icerik_tr": "Hugging Face, 14 milyar parametreli Carbon‑X modelini, genomik diziler ve doğal dil verileriyle eğiterek DNA’yı bir sohbet partneri haline getirdi. Model, Zhongguancun Academy (Çin) ve Napoli Federico II Üniversitesi (İtalya) araştırmacılarının katkılarıyla, memeliler, omurgalılar, bitkiler, mantarlar ve protozoalar gibi geniş bir taksonomiden 300 milyar tokenlık veri seti üzerinde ince ayar yapıldı. DNA dizileri altı harflik gruplar halinde modele tanıtıldı ve model, yaklaşık 50 000 baz çifti uzunluğundaki parçaları işleyebilecek şekilde tasarlandı.\n\nCarbon‑X, kullanıcıların genetik mutasyonların hastalık yapıcı mı yoksa zararsız mı olduğunu sorgulamalarına, ilaç hedefi belirleme ve genetik terapi tasarımına destek olma potansiyeli taşıyor. Modelin yerel çalışabilmesi, hassas hasta genom verilerinin bulut tabanlı hizmetlere gönderilmesini engelliyor; bu sayede veri gizliliği ve güvenliği artırılıyor. Ancak geliştiriciler, modelin henüz laboratuvar deneyleriyle doğrulanmadığını ve tahminlerinin kesin doğruluk garantisi vermediğini vurguluyor.\n\nCarbon‑X, önceki DNA‑odaklı modellerden farklı olarak doğal dil arayüzü sunuyor. Google DeepMind’ın AlphaGenome'ı sayısal çıktılar üretirken, Nvidia‑Arc Institute ortaklığındaki Evo 2 tam genomlar oluşturabiliyordu; Carbon‑X ise DNA sorularına doğrudan metin yanıtları vererek daha geniş bir kullanıcı kitlesine – teknik olmayan araştırmacılar ve hatta hastalar – erişim sağlıyor. Modelin açık kaynak olması, topluluk tarafından geliştirilip iyileştirilebilmesini ve yeni biyoinformatik uygulamaların hızla ortaya çıkmasını mümkün kılıyor.\n\nModelin sınırlamaları arasında virüs genomları üzerinde eğitilmemiş olması ve sadece küçük DNA parçalarının sorgulanabilmesi yer alıyor. Bu kısıtlamalar, potansiyel kötüye kullanım risklerini azaltmayı ve etik sorunları önlemeyi amaçlıyor. Hugging Face, Ekim 2023'te Nvidia tarafından 13 milyar dolara satın alınmasının ardından da açık kaynak AI ekosistemine yatırımını sürdürdüğünü belirtiyor.",
+  "onemli_maddeler": [
+    "Carbon‑X, DNA dizilerini doğal dil ile birleştirerek sohbet tarzında sorgulanabilir hâle getiriyor.",
+    "Model 14 milyar parametreli ve yerel bilgisayarlarda çalışacak şekilde tasarlandı; veri gizliliği sağlanıyor.",
+    "Eğitim verisi 300 milyar token; DNA sekansları, İngilizce metinler ve biyolojik açıklamaları bir arada içeriyor.",
+    "Virüs genomları kullanılmadı ve sadece 50 000 baz çifti uzunluğundaki parçalar işlenebiliyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "DNA’yı doğal dil ile sorgulama yeteneği, biyoinformatik araştırmalarını demokratikleştirerek hem akademik hem de klinik alanda yeni uygulamaların önünü açıyor; aynı zamanda yerel çalıştırma özelliği veri güvenliğini artırıyor.",
+  "etiketler": [
+    "DNA",
+    "genomik",
+    "AI",
+    "Hugging Face",
+    "açık kaynak"
+  ],
+  "anilan_modeller": [
+    "Carbon-X",
+    "AlphaGenome",
+    "Evo 2"
+  ],
+  "yorum_tr": "Carbon‑X, genomik verilerin erişimini genişleterek araştırmacıların ve klinik uzmanların daha hızlı hipotez üretmesini sağlayabilir; ancak doğruluk ve güvenilirlik konularının laboratuvar testleriyle desteklenmesi, klinik uygulamalara geçişte kritik olacak.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://media.wired.com/photos/6ad9279b7f825128a68bc73a/master/pass/Science_HuggingFacesPowerfulNewDNAModelIsSmallEnou-ezgif.com-video-to-gif-converter.gif",
+  "url": "https://www.wired.com/story/hugging-face-new-ai-biology-model-chat-with-dna/",
+  "source": "WIRED AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-22T10:00:00.000Z",
+  "slug": "hugging-face-s-new-ai-biology-model-lets-you-chat-with-dna"
+}

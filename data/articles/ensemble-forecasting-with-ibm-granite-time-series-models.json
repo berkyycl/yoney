@@ -1,0 +1,82 @@
+{
+  "baslik_tr": "IBM Granite zaman serisi modelleriyle toplu tahmin (Ensemble) sunuldu",
+  "ozet_tr": "IBM Research, dört farklı Granite zaman serisi modelini birleştiren Granite Timeseries Ensemble'i duyurdu. Model ağırlıkları önceden ayarlanmayan bu yöntem, hem nokta tahmini hem de kuantil tahminleri sunarak kullanıcıların model seçimiyle uğraşmasını ortadan kaldırıyor. Ensemble, GIFT‑Eval benchmark'ında tek tek modellere kıyasla daha düşük MASE ve rekabetçi CRPS skorları elde etti.",
+  "detayli_icerik_tr": "IBM Research, önceden eğitilmiş dört Granite zaman serisi modelini tek bir arayüzde birleştiren Granite Timeseries Ensemble (R1) adlı yeni bir toplu tahmin çözümünü Hugging Face üzerinden yayınladı. Kullanıcılar, sadece bir pip komutu ile \"granite-tsfm\" paketini kurup, \"QuantileEnsembleForecaster\" sınıfını çağırarak 1024 zaman adımı geçmişi ve 24 adım öngörüsü için hem nokta tahmini hem de 0.1‑0.9 arası kuantil tahminlerini elde edebiliyor. Ensemble, model ağırlıklarını sabit tutan Probabilistic Ensemble (eşit ağırlık) ve tahmin aralığının daralmasına göre ağırlık veren IQR Ensemble olmak üzere iki ana tarif sunuyor.\n\nBu dört model – PatchTST‑FM‑r1, PatchTST‑FM‑r2, FlowState‑r1.1 ve Tiny Time Mixers (TTM‑r3) – farklı mimarilerle trend, mevsimsellik ve yerel varyasyonları yakalıyor. Her biri ayrı ayrı kuantil tahminleri üretirken, Probabilistic Ensemble bu kuantilleri olasılık uzayında birleştirip ortalama ve istenen kuantilleri çıkarıyor. IQR Ensemble ise her tahminin inter‑quartile aralığını ölçerek dar aralıklı modelleri daha fazla etkili kılıyor; ağırlıklar örnek, hedef ve ufuk adımına göre değişiyor ve isotonic regression ile kuantil çakışması önleniyor.\n\nGIFT‑Eval benchmark'ı üzerinde yapılan değerlendirmede, ensemble tarifleri hem nokta tahmininde (MASE) hem de olasılıksal tahminde (CRPS/MWQL) tek tek modellere göre üstün performans gösterdi. Probabilistic Ensemble, 0.683 MASE skoruyla en düşük nokta hatasını elde ederken, IQR Ensemble 0.471 CRPS/MWQL skoruyla en iyi ortalama CRPS sıralamasını yakaladı. Tek tek modeller arasında PatchTST‑FM‑r2 en düşük CRPS/MWQL (0.467) değerine sahipti, ancak MASE açısından ensemble hâlâ daha iyiydi. Sonuçlar, ensemble yaklaşımının farklı veri setlerinde tutarlı ve sağlam bir başlangıç noktası sunduğunu gösteriyor.\n\nEnsemble'in bir diğer avantajı, model ağırlıklarını yeniden eğitmeye gerek kalmadan çalışma süresi ve bellek tüketimi açısından tek bir modelden daha yüksek olsa da, esnek bir entegrasyon imkanı sunmasıdır. Geliştiriciler, aynı arayüz üzerinden dış model ve yeni tarifler ekleyerek kendi veri alanlarına özgü kombinasyonlar oluşturabilir. Ancak, mevcut tarifin çok değişkenli kanalları bağımsız olarak tahmin ettiği, çapraz‑kanal bilgisi kullanmadığı ve dört modelin aynı anda yüklenmesinin inference süresini artırdığı gibi sınırlamaları da göz önünde bulundurulmalı.",
+  "onemli_maddeler": [
+    "Granite Timeseries Ensemble, dört farklı ön‑eğitimli Granite modelini tek bir arayüzde birleştirerek model seçimi ihtiyacını ortadan kaldırıyor.",
+    "Probabilistic Ensemble (eşit ağırlık) ve IQR Ensemble (adaptif ağırlık) olmak üzere iki tarif sunuluyor; her ikisi de kuantil tahminleri üretir.",
+    "GIFT‑Eval benchmark'ında ensemble, tek tek modellere göre daha düşük MASE (0.683) ve rekabetçi CRPS/MWQL (0.471) skorları elde etti.",
+    "Tarif, model ağırlıklarını önceden ayarlamadan çalıştığı için yeni veri serilerine hızlı adaptasyon sağlıyor, ancak dört modelin aynı anda yüklenmesi bellek ve gecikme maliyetini artırıyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Model seçimi ve ağırlık ayarı gerektirmeyen bir ensemble çözümü, zaman serisi tahmininde geliştiricilerin iş akışını basitleştirerek geniş bir uygulama yelpazesinde kullanılabilirliği artırıyor.",
+  "etiketler": [
+    "zaman serisi",
+    "ensemble",
+    "forecasting",
+    "Granite",
+    "AI"
+  ],
+  "anilan_modeller": [
+    "Granite PatchTST-FM-r1",
+    "Granite PatchTST-FM-r2",
+    "Granite FlowState-r1.1",
+    "Granite TTM-r3"
+  ],
+  "yorum_tr": "Bu ensemble yaklaşımı, farklı mimarilerin hatalarını dengeleyerek daha tutarlı tahminler sunması bakımından geliştiricilere zaman kazandırıyor ve model seçimi riskini azaltıyor. Ancak, artan bellek ve gecikme maliyetleri, yüksek hacimli gerçek‑zaman uygulamalarda dikkatle değerlendirilmelidir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Granite Ensemble R1 — Probabilistic",
+      "benchmark": "MASE",
+      "skor": 0.683,
+      "birim": "",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Probabilistic Ensemble achieves the lowest MASE among these six forecasts: 0.683"
+    },
+    {
+      "model": "Granite Ensemble R1 — Probabilistic",
+      "benchmark": "CRPS / MWQL",
+      "skor": 0.471,
+      "birim": "",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Granite Ensemble R1 — Prob 0.471"
+    },
+    {
+      "model": "Granite Ensemble R1 — IQR",
+      "benchmark": "MASE",
+      "skor": 0.684,
+      "birim": "",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Granite Ensemble R1 — IQR 0.684"
+    },
+    {
+      "model": "Granite Ensemble R1 — IQR",
+      "benchmark": "CRPS / MWQL",
+      "skor": 0.471,
+      "birim": "",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Granite Ensemble R1 — IQR 0.471"
+    },
+    {
+      "model": "Granite PatchTST-FM-r2",
+      "benchmark": "CRPS / MWQL",
+      "skor": 0.467,
+      "birim": "",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "PatchTST-FM-r2 0.467★"
+    }
+  ],
+  "gorsel_url": "https://cdn-uploads.huggingface.co/production/uploads/6806091ee92bd22fd8ce9719/P6P8ZzHR8yL7GOOO4hQOg.png",
+  "url": "https://huggingface.co/blog/ibm-research/granite-timeseries-ensemble-r1",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-10-22T07:51:31.000Z",
+  "slug": "ensemble-forecasting-with-ibm-granite-time-series-models"
+}

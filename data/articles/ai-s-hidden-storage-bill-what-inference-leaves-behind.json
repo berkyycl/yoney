@@ -1,0 +1,30 @@
+{
+  "baslik_tr": "AI İnferansının Gizli Depolama Maliyeti: Veri Ayak İzinin Büyümesi",
+  "ozet_tr": "AI sistemleri sadece GPU ve enerji tüketimiyle değil, inferans sırasında üretilen ve saklanan devasa veri hacmiyle de maliyet artışı yaşıyor. WD’nin ölçümlerine göre, 8 saniyelik bir video çıktısı 3,97 MB iken arka planda 500 MB’dan fazla veri birikiyor; bu da kullanıcıya görünen dosya boyutunun 130 katına eşdeğer. İnferans talebinin 2030’a kadar %35 CAGR ile büyümesi, veri merkezi bütçelerinde depolama kaleminin göz ardı edilmemesi gerektiğini gösteriyor.",
+  "detayli_icerik_tr": "AI altyapısı planlamalarında geleneksel olarak odak noktası, yüksek enerji tüketimi ve maliyeti olan GPU’lar üzerinden eğitim sürecine verilmiştir. Eğitim bir kez gerçekleşir, ardından bütçelenir ve sona erer. Ancak inferans, model her sorguya yanıt verdiğinde sürekli devam eden bir süreçtir ve her yanıt, loglar, önbellekler, geçici renderlar ve güvenlik kayıtları gibi büyük miktarda arka uç verisi bırakır.\n\nWestern Digital (WD) tarafından yapılan dahili ölçümlere göre, 8 saniyelik bir AI‑oluşturulmuş video (720p, 3,97 MB) arka planda 500 MB’dan fazla veri üretmektedir. Bu, çıktının 130 katı bir veri ayak izine tekabül eder. Daha uzun ve yüksek çözünürlüklü videolar üretildiğinde bu miktar yüzlerce gigabayta ulaşabilir. McKinsey’in tahminine göre, inferans talebi 2030’a kadar yıllık %35 oranında büyürken, eğitim talebi %22 artış gösteriyor ve veri merkezlerinin %40’ından fazlasını oluşturacak.\n\nWD‑sponsorlu IDC anketi, 763 IT ve iş karar vericisinin %95’inin son 12 ayda generatif AI nedeniyle veri hacminde artış gördüğünü, %61’inin ise %25 ya da daha fazla büyüme kaydettiğini ortaya koydu. Katılımcılar, depolama ihtiyacının sadece kapasite değil, aynı zamanda daha hızlı arşiv erişimi gerektirdiğini de vurguladı. Bu durum, HDD gibi yüksek kapasiteli ancak düşük maliyetli çözümlerin hâlâ kritik bir rol oynadığını gösteriyor.\n\nFinans yöneticileri için bu, AI harcamalarının sadece “hesaplama” kalemiyle sınırlı olmadığı anlamına geliyor. Veri yükleme sürecinde GPU’nun boşta kalması, aynı maliyeti yaratırken, depolama maliyeti ise yıllık %25 oranında artarak bütçenin gözden kaçan bir kısmını domine edebilir. Şirketler, veri saklama politikalarını, depolama tedarik stratejilerini ve ölçeklenebilir kapasite planlamasını yeniden gözden geçirmeli; özellikle arşivlerin RAG (retrieval‑augmented generation) gibi yeni iş akışlarında aktif varlıklar haline gelmesi göz önüne alınmalı.",
+  "onemli_maddeler": [
+    "AI inferansı, her yanıtla birlikte 100+ kat daha fazla veri üretir; 8 saniyelik bir video 500 MB arka uç verisi bırakır.",
+    "McKinsey, inferans talebinin %35 CAGR ile 2030’da veri merkezlerinin %40’ını oluşturacağını öngörüyor.",
+    "IDC anketi, %95 katılımcının AI nedeniyle veri hacminde artış yaşadığını ve %61’inin %25+ büyüme kaydettiğini gösterdi."
+  ],
+  "kategori": "diger",
+  "onem": 4,
+  "onem_gerekce": "AI altyapısı bütçelerinde depolama maliyetlerinin göz ardı edilmesi, işletmelerin uzun vadeli maliyet tahminlerini çarpıtarak ölçeklenebilirlik sorunlarına yol açabilir; bu nedenle sektörel karar vericiler için kritik bir uyarıdır.",
+  "etiketler": [
+    "AI",
+    "inference",
+    "storage",
+    "data-center",
+    "enterprise-budget"
+  ],
+  "anilan_modeller": [],
+  "yorum_tr": "İnferans sürecinde biriken veri ayak izinin maliyet etkisi, AI projelerinin toplam sahip olma maliyetini yeniden tanımlıyor; geliştiriciler ve yöneticiler, depolama stratejilerini performansla birlikte ölçeklenebilirlik ve TCO açısından da optimize etmelidir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://wp.technologyreview.com/wp-content/uploads/2026/10/WD-MITTR-Infographic-Final@2x.png",
+  "url": "https://www.technologyreview.com/2026/10/22/1146948/ais-hidden-storage-bill-what-inference-leaves-behind/",
+  "source": "MIT Technology Review AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-22T08:41:18.000Z",
+  "slug": "ai-s-hidden-storage-bill-what-inference-leaves-behind"
+}

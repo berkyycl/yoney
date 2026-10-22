@@ -1,0 +1,42 @@
+{
+  "baslik_tr": "OpenAI ajanları fare beyni verilerini 32 dakikada analiz etti, insanlar aylar harcardı",
+  "ozet_tr": "OpenAI, PerturbAI ve Scripps Research iş birliğiyle binlerce AI ajanını GPT‑Rosalind modeli üzerine kurarak, fare beyni CRISPR atlasındaki milyonlarca hücreyi sadece 32 dakikada analiz etti. İnsan uzmanların aynı raporları değerlendirdiğinde, dağıtık ajanların çıktısını tek bir ajana göre %75 oranında tercih ettiği ortaya çıktı.",
+  "detayli_icerik_tr": "OpenAI, yeni nesil GPT‑Rosalind modelini temel alan binlerce bağımsız AI ajanını devreye alarak, fare beyni üzerindeki bütün‑beyin CRISPR atlasını işledi. Her bir ajan, tek bir gen pertürbasyonunu ele alıp, ilgili hücrelerin tepkilerini analiz ediyor ve bulgularını bilimsel literatürle çapraz kontrol ediyordu. Bu paralel yaklaşım sayesinde, milyonlarca hücreden oluşan veri seti 32 dakika içinde işlenebildi; aynı çalışmanın insan eliyle yapılması ise birkaç ay ila bir yıl arasında sürebilirdi.\n\nAnaliz sürecinde ajanlar, iki hastalıkla ilişkili gen arasında beklenmedik farklılıklar keşfetti ve kolesterol düzenlemesi ile nörodejenerasyon arasındaki olası bir bağlantıyı ortaya koydu. Bu bulgular, biyologların laboratuvar deneylerini önceliklendirmesine yardımcı olacak nitelikte ve \"Reasoning Atlas\" adı verilen bir rapor seti hâlinde GitHub üzerinden paylaşıldı. Çalışmanın tam metni ise bioRxiv'te yayımlandı.\n\nİnsan uzmanlarla yapılan kör karşılaştırmalarda, dağıtık ajanların oluşturduğu raporlar tek bir ajanın raporuna göre %75 oranında daha çok tercih edildi. Bu sonuç, çoklu ajan mimarisinin hem kapsam hem de açıklık açısından tek bir modelden üstün olduğunu gösteriyor. Ayrıca, bu yaklaşımın biyomedikal araştırmalarda hipotez üretimini hızlandırması ve laboratuvar kaynaklarını daha verimli kullanması bekleniyor.\n\nOpenAI'nin bu hamlesi, yapay zekânın biyoloji ve genetik araştırmalarındaki rolünü genişletirken, GPT‑Rosalind gibi özelleştirilmiş modellerin bilimsel keşiflerde pratik bir araç olarak kullanılabileceğini kanıtlıyor. Proje, AI‑driven biyoinformatik çalışmalarının gelecekteki yönünü şekillendirecek bir örnek teşkil ediyor.",
+  "onemli_maddeler": [
+    "Binlerce AI ajanı, GPT‑Rosalind modeliyle fare beyni CRISPR atlasını 32 dakikada analiz etti.",
+    "Dağıtık ajanların raporları, tek bir ajana göre insan uzmanlar tarafından %75 oranında tercih edildi.",
+    "Araştırma, hastalıkla ilişkili genler arasındaki beklenmedik farkları ve kolesterol‑nörodejenerasyon bağlantısını ortaya koydu."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "Biyomedikal araştırmalarda AI kullanımının ölçeklenebilirliğini ve verimliliğini gösteren, laboratuvar sürecini aylarca kısaltan kritik bir gelişme.",
+  "etiketler": [
+    "OpenAI",
+    "AI agents",
+    "genomics",
+    "mouse brain",
+    "bioinformatics"
+  ],
+  "anilan_modeller": [
+    "GPT-Rosalind"
+  ],
+  "yorum_tr": "Bu çalışma, AI ajanlarının paralel çalıştırılmasıyla biyolojik veri analizi sürecinin dramatik şekilde hızlanabileceğini gösteriyor; geliştiriciler ve araştırmacılar için ölçeklenebilir, açıklanabilir modellerin önemini bir kez daha vurguluyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GPT-Rosalind",
+      "benchmark": "Human expert preference",
+      "skor": 75,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "blind comparisons",
+      "kaynak_metinden_alinti": "In blind comparisons, human experts preferred the distributed agents' reports over those from a single agent 75 percent of the time."
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/10/openai_orchestra_bio.png",
+  "url": "https://the-decoder.com/openai-agents-analyze-mouse-brain-data-in-32-minutes-a-job-that-would-take-humans-months/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-22T10:01:53.000Z",
+  "slug": "openai-agents-analyze-mouse-brain-data-in-32-minutes-a-job-t"
+}

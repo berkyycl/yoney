@@ -1,0 +1,53 @@
+{
+  "baslik_tr": "LFM2.5-24B-A2B Modeli Performans Testinde Hayal Kırıklığı Yarattı",
+  "ozet_tr": "Kullanıcı, LFM2.5-24B-A2B modelini RTX A4500 kartında 130 token/s hızla çalıştırdığını, ancak Hermes memory‑plugin görevinde hatalı kod ürettiğini ve temel işlevleri atladığını belirtti. Model, llamaampere ortamında 40‑60 token/s hızla çalışsa da döngü hataları nedeniyle kullanılabilirliği sınırlı kaldı.",
+  "detayli_icerik_tr": "Reddit'in LocalLLaMA topluluğunda paylaşılan bir gönderide, kullanıcı /u/tracagnotto LFM2.5-24B-A2B modelinin performansını detaylı bir şekilde test etti. İlk denemeyi, belirli mimariler için optimize edilmiş llama.cpp tabanlı llamaampere sürümüyle yaptı; bu ortamda Qwen 3.8 27B Q4 Small modeli 40‑60 token/s hızla çalıştı ancak model kendini sürekli döngüye sokarak temel görevlerde takıldı.\n\nDaha sonra RTX A4500 GPU üzerinde LM Studio aracılığıyla modeli çalıştırdı ve token üretim hızını 130 token/s seviyesine çıkardı. LM Studio, modelin önceki ortamda gözlemlenen dalgalı davranışını bir ölçüde stabilize etti ve sohbet sırasında \"doğru‑ish\" yanıtlar verdi, fakat bu iyileşme sınırlıydı.\n\nKullanıcı, Hermes Desktop entegrasyonu ve özel bir Jinja şablonu (Sharp‑LFM2.5‑Chat‑Templates) kullanarak modelin Hermes memory‑plugin görevini test etti. Sonuçlar, modelin hatalı kod ürettiğini, gerekli işlevleri atladığını ve test edilmemiş doğrulamaları iddia ettiğini gösterdi. ChatGPT tarafından yapılan analiz de aynı eksiklikleri doğruladı.\n\nGönderide ayrıca modelin \"agentic harnesses\" (openclaw, hermes vb.) üzerine eğitildiği iddiasına da şüpheyle yaklaşıldı ve topluluk içinde bu tür iddiaların botlar tarafından yükseltilmiş olabileceği öne sürüldü. Kullanıcı, mevcut yapılandırma detaylarını ve şablon dosyasının bağlantısını paylaşarak, benzer testleri yapmak isteyen diğer geliştiricilere referans sağlamayı amaçladı.",
+  "onemli_maddeler": [
+    "RTX A4500 GPU üzerinde 130 token/s hızla çalıştırıldı, ancak görev bazlı hatalar devam etti.",
+    "Hermes memory‑plugin görevinde hatalı ve eksik kod üretti, doğrulama iddiaları test edilmedi.",
+    "llamaampere ortamında 40‑60 token/s hızla çalıştı fakat kendini döngüye sokarak kullanılabilirliği sınırlı kaldı.",
+    "Modelin \"agentic harnesses\" üzerine eğitildiği iddiası toplulukta şüpheyle karşılandı."
+  ],
+  "kategori": "benchmark",
+  "onem": 2,
+  "onem_gerekce": "Model, topluluk içinde tartışılan bir yeni model olmakla birlikte, yalnızca bir kullanıcı deneyimi raporu içerdiği ve geniş çaplı bir benchmark sunmadığı için sektörel etkisi sınırlıdır.",
+  "etiketler": [
+    "LFM2.5-24B-A2B",
+    "LlamaCPP",
+    "Hermes",
+    "RTX A4500",
+    "Model Değerlendirmesi"
+  ],
+  "anilan_modeller": [
+    "LFM2.5-24B-A2B",
+    "Qwen 3.8 27B Q4 Small"
+  ],
+  "yorum_tr": "Bu test, LFM2.5-24B-A2B'nin belirli görevlerde beklentileri karşılamadığını gösteriyor; geliştiriciler modelin kod üretim kalitesini iyileştirmek ve döngü hatalarını gidermek için ek optimizasyonlar yapmalı.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "LFM2.5-24B-A2B",
+      "benchmark": "token generation speed",
+      "skor": 130,
+      "birim": "tk/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "RTX A4500 GPU",
+      "kaynak_metinden_alinti": "I got a 130tk/s on a RTX A4500 card, so it was kinda of an achievement lol"
+    },
+    {
+      "model": "LFM2.5-24B-A2B",
+      "benchmark": "token generation speed (llamaampere)",
+      "skor": 50,
+      "birim": "tk/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "llamaampere (llama.cpp optimized)",
+      "kaynak_metinden_alinti": "run correctly Qwen 3.8 27b Q4 Small with very high (for me) 40-60 tk/s"
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/sw6dnz6agzwh1.png?width=140&height=140&crop=1:1,smart&auto=webp&s=9acc38ad908791a0f63c67de1d5a25e064ecec36",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xce5dd/tried_lfm2524a2b_its_crap_yes_i_double_confirm_it/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-22T09:45:24.000Z",
+  "slug": "tried-lfm2-5-24-a2b-it-s-crap-yes-i-double-confirm-it-i-woul"
+}

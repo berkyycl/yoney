@@ -1,0 +1,37 @@
+{
+  "baslik_tr": "Medium ve büyük (~50-150B parametre) MOE modelleri arasında favori hangisi?",
+  "ozet_tr": "Kullanıcı, yeni RAM yatırımı sayesinde RAM/VRAM bölerek çalıştırabileceği 50‑150 milyar parametreli MOE modellerini araştırıyor. Qwen Flash Next'in hâlâ kral olduğunu kabul ederken, kodlama dışındaki alanlarda öne çıkan alternatif modelleri merak ediyor.",
+  "detayli_icerik_tr": "Reddit'in LocalLLaMA topluluğunda, /u/FlyingFishMakeAWish adlı kullanıcı, masaüstü bilgisayarına ek RAM alarak büyük MOE (Mixture of Experts) modellerini RAM ve VRAM arasında bölüştürerek çalıştırma imkanı bulduğunu belirtti. Bu teknik, özellikle 50‑150 milyar parametre aralığındaki modelleri tek bir GPU'nun VRAM sınırını aşmadan denemeye olanak tanıyor.\n\nKullanıcı, Qwen Flash Next'in kodlama alanındaki üstünlüğünü kabul edip, bu alanda Claude veya Codex gibi modelleri tercih ettiğini ifade etti. Ancak, kodlamada zayıf ama başka görevlerde (örneğin, sohbet, bilgi çıkarımı, yaratıcı yazma) güçlü olabilecek modelleri keşfetmek istediğini vurguladı. Bu bağlamda, denemek istediği modeller listesinde GPT OSS 120B, Mistral 4 Small 119B, Qwen 3.5 122B, A10B ve Ling 3.0 Flash gibi seçenekler yer alıyor.\n\nKullanıcı, özellikle \"abliterated\" (katmanları azaltılmış) ya da özelleştirilmiş MOE modelleriyle ilgileniyor ve topluluktan öneri talep ediyor. Sorunun temelinde, büyük MOE modellerinin farklı uzmanlık alanlarında nasıl performans gösterdiği ve RAM/VRAM bölüştürme tekniğiyle hangi modellerin daha verimli çalıştığına dair deneyim paylaşımı bulunuyor.\n\nTopluluk yanıtları, RAM/VRAM bölüştürme stratejisinin büyük modelleri denemek için pratik bir yol olduğunu ve Qwen Flash Next dışındaki modellerin de belirli görevlerde rekabetçi olabileceğini belirtiyor. Ancak, bu tür bir tartışma hâlâ deneysel aşamada ve kesin performans karşılaştırmaları için resmi benchmark sonuçları eksik.",
+  "onemli_maddeler": [
+    "RAM/VRAM bölüştürme tekniği, 50‑150B parametreli MOE modellerinin tek bir GPU'da çalıştırılmasını mümkün kılıyor.",
+    "Kullanıcı, Qwen Flash Next'in kodlama dışındaki görevlerde alternatif MOE modellerini arıyor.",
+    "Listede GPT OSS 120B, Mistral 4 Small 119B, Qwen 3.5 122B, A10B ve Ling 3.0 Flash gibi modeller öne çıkıyor."
+  ],
+  "kategori": "diger",
+  "onem": 2,
+  "onem_gerekce": "Konu, büyük MOE modellerinin deneme sürecine dair topluluk tartışması olduğu için sektörel etkisi sınırlı, ancak teknik merak ve deneyim paylaşımı açısından niş bir ilgi oluşturuyor.",
+  "etiketler": [
+    "MOE",
+    "model",
+    "community",
+    "RAM",
+    "large-models"
+  ],
+  "anilan_modeller": [
+    "GPT OSS 120b",
+    "Mistral 4 small 119b",
+    "Qwen 3.5 122b",
+    "A10b",
+    "Ling 3.0 flash",
+    "Qwen flash next"
+  ],
+  "yorum_tr": "Bu tür topluluk tabanlı sorgulamalar, büyük MOE modellerinin pratik kullanım sınırlarını keşfetmek için değerli bir kaynak sunar; geliştiriciler RAM/VRAM bölüştürme yöntemlerini deneyerek yeni görevlerde rekabetçi performans elde edebilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://miro.medium.com/v2/resize:fit:1400/1*50il27RvkRXkkeUqqvlrBA.png",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xc84ht/whats_your_favorite_medium_to_large_50150b_params/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-22T03:44:31.000Z",
+  "slug": "what-s-your-favorite-medium-to-large-50-150b-params-moe-mode"
+}

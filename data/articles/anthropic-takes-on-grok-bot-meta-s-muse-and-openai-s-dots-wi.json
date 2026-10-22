@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "Anthropic, her zaman aktif çalışan AI asistanı Claude Duet'i tanıttı",
+  "ozet_tr": "Anthropic, profesyoneller ve küçük işletmeler için bulut tabanlı, her an çalışan bir AI asistanı olan Claude Duet'i araştırma önizlemesi olarak duyurdu. Kullanıcıların Gmail, Slack, Stripe gibi hizmetlerle entegre çalışan bu ajan, görevleri arka planda yürütürken her kritik adımda onay ister ve banka transferlerini tamamen engeller.",
+  "detayli_icerik_tr": "Anthropic, Claude Opus 5.5 üzerine inşa edilen Claude Duet'i, iOS, Android ve web üzerinden erişilebilen bağımsız bir uygulama olarak piyasaya sürdü. Uygulama, kullanıcıların mevcut Claude hesaplarından hafıza, beceri ve uygulama bağlantılarını devralarak, sabahları bağlı hizmetlerden önemli özetler gönderir ve yalnızca bir eylem gerektirdiğinde kullanıcıya bildirimde bulunur. Görev atamaları tek bir sohbet akışı içinde metin ya da sesli komutlarla yapılabilir; planlama, finansal tahmin, prototip geliştirme ve web uygulamaları gibi iş odaklı işlemler desteklenir.\n\nClaude Duet, 6.000'den fazla bağlayıcı ve eklentiye sahip Claude Marketplace üzerinden Gmail, Slack, Stripe, Docusign ve Shopify gibi popüler hizmetlerle entegre olur. Ödeme işlemlerinde Stripe Link ve sanal kart kullanılarak gerçek kart numarası paylaşılmaz; ayrıca banka transferleri ve menkul kıymet alım‑satımı gibi yüksek riskli işlemler tamamen kapatılmıştır. Kullanıcı onayı alınmadan hiçbir mesaj gönderilmez, belge imzalanmaz ya da veri silinmez.\n\nGüvenlik açısından Anthropic, ajanı doğrudan şifre ya da oturum belirteçlerine erişim vermeyecek şekilde tasarladı ve prompt injection saldırılarına karşı araştırma temelli savunmalar ekledi. Bağımsız kırmızı ekipler ve dış güvenlik firmaları tarafından gerçekleştirilen saldırı testleri, sistemin dayanıklılığını ölçmek için kullanıldı. Ayrıca Claude Duet, hassas veri sızıntılarını önlemek için özel bir sınıflandırıcı ve sistem istemcisiyle donatıldı; kredi kartı numarası ya da kimlik bilgileri gibi bilgiler yalnızca kullanıcı açıkça talep ettiğinde işlenir.\n\nİlk sürümde bazı eksiklikler de kabul edildi: mesaj dizilerini yanlış yorumlama, aciliyet seviyesini hatalı değerlendirme ve arka plan kontrollerinin birkaç saat aralıklarla yapılması gibi sınırlamalar bulunuyor. Bu sınırlamalar, kullanım sırasında abonelik limitlerini korumak amacıyla getirildi; arka plan kontrolleri diğer Claude ürünleriyle aynı kota üzerinden sayılıyor. Anthropic, erken kullanıcı geri bildirimleriyle ajan davranışlarını iyileştirmeyi ve Claude ana uygulamasıyla entegrasyon stratejisini netleştirmeyi planlıyor.",
+  "onemli_maddeler": [
+    "Claude Duet, bulut tabanlı bir sanal makinede çalışarak cihazların açık kalmasına gerek kalmadan görevleri yürütür.",
+    "Kullanıcı onayı olmadan ödeme, mesaj gönderme veya veri silme gibi riskli işlemler asla gerçekleşmez; banka transferleri tamamen engellenmiştir.",
+    "Gmail, Slack, Stripe, Docusign ve Shopify gibi 6.000'den fazla hizmetle entegrasyon sağlayan geniş bir bağlayıcı ekosistemi bulunur."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Claude Duet, AI asistan pazarında yeni bir rekabet unsuru olarak profesyonel kullanıcıların iş akışlarını otomatikleştirmeye yönelik kapsamlı bir çözüm sunuyor ve güvenlik önlemleriyle sektördeki standartları yükseltiyor.",
+  "etiketler": [
+    "Claude Duet",
+    "Anthropic",
+    "AI asistan",
+    "otomasyon",
+    "güvenlik"
+  ],
+  "anilan_modeller": [
+    "Claude Opus 5.5"
+  ],
+  "yorum_tr": "Claude Duet, iş odaklı AI asistanların güvenli ve sürekli çalışabilirliğine odaklanarak geliştiricilere yeni entegrasyon fırsatları sunarken, kullanıcıların veri gizliliği ve kontrolü konusundaki endişelerini de azaltıyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/10/Claude-Duet.png",
+  "url": "https://the-decoder.com/anthropic-takes-on-grok-bot-metas-muse-and-openais-dots-with-its-always-on-agent-claude-duet/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-22T08:35:22.000Z",
+  "slug": "anthropic-takes-on-grok-bot-meta-s-muse-and-openai-s-dots-wi"
+}
