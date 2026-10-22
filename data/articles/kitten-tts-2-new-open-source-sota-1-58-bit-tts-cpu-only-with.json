@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "Kitten-TTS 2: Açık Kaynak 1.58-bit TTS Modeli Gerçek Zamanlı CPU Üzerinde Çalışıyor",
+  "ozet_tr": "KittenML, dünyanın ilk 1.58-bit ternary ağırlıklı TTS modeli Kitten-TTS 2'yi duyurdu. Model, sadece CPU üzerinde gerçek zamanlı ses sentezi, sıfır‑shot ses klonlama, çok dilli destek ve duygu/ton kontrolü sunuyor.",
+  "detayli_icerik_tr": "KittenML, yeni nesil Kitten-TTS 2 modelinin kod ve ağırlıklarını açık kaynak olarak yayınladı. Model, her lineer ağırlığın -1, 0 ya da +1 değerlerinden birini aldığı ternary (1.58-bit) ağırlık yapısına sahip ve 1,7 milyar parametre içeriyor. Bu sayede model, düşük bellek ayak iziyle CPU üzerinde gerçek zamanlı ses üretimi yapabiliyor; GPU'ya ihtiyaç duymadan çalışıyor.\n\nKitten-TTS 2, sıfır‑shot ses klonlama yeteneğiyle sadece 5 saniyeden az bir referans ses kaydıyla konuşmacının sesini ve aksanını yakalıyor. Kullanıcılar, ekstra ince ayar (fine‑tuning) yapmadan klonlanan sesin duygusal ifadesini ve vurgusunu da kontrol edebiliyor. Model, 20'den fazla dili destekleyerek çok dilli ses sentezine olanak tanıyor; hatta farklı dillerdeki ses klonlamasıyla aksanlı konuşmalar üretilebiliyor.\n\nYeni mimari, önceki V0.8 sürümünden tamamen farklı bir yapı sunuyor. Kalite açısından belirgin bir iyileşme, doğal konuşma akıcılığı ve duygu kontrolü sağlanıyor. Ternary çekirdekleri sayesinde CPU için optimize edilmiş bir yürütme katmanı bulunuyor ve bu da düşük maliyetli yerel ya da self‑host çözümlerini mümkün kılıyor. Açık kaynak lisansı, geliştiricilere ve araştırmacılara ücretsiz erişim ve özelleştirme imkanı tanıyor; bu da ElevenLabs gibi ticari hizmetlere alternatif bir seçenek sunuyor.\n\nProje, GitHub ve Hugging Face üzerinden erişilebilir durumda ve KittenML topluluğu Discord üzerinden destek sağlıyor. Kullanıcılar, kodu kolayca kendi makinelerine kurabilir, model ağırlıklarını indirip doğrudan CPU üzerinde çalıştırabilir ya da hafif bir tüketici GPU'su ile de deneyebilirler. Bu yaklaşım, özellikle GPU kaynakları sınırlı olan araştırmacılar ve küçük ölçekli uygulama geliştiricileri için büyük bir avantaj olarak öne çıkıyor.",
+  "onemli_maddeler": [
+    "Dünyanın ilk 1.58-bit ternary ağırlıklı TTS modeli, gerçek zamanlı CPU inference imkanı.",
+    "Sıfır‑shot ses klonlama, 5 saniyeden az referansla çok dilli ve aksanlı ses üretimi.",
+    "Duygu/ton ve vurgulama kontrolü sayesinde ifadeli konuşma sentezi.",
+    "Tamamen açık kaynak; kod ve ağırlıklar GitHub ve Hugging Face üzerinden ücretsiz."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Yeni bir açık kaynak TTS modeli, düşük bellek ve işlemci gereksinimleriyle geniş kitlelere erişim sağlarken, ses klonlama ve çok dilli destek gibi ileri özellikleriyle sektördeki mevcut ticari çözümlere güçlü bir alternatif sunuyor.",
+  "etiketler": [
+    "TTS",
+    "open-source",
+    "voice cloning",
+    "multilingual",
+    "CPU inference"
+  ],
+  "anilan_modeller": [
+    "Kitten-TTS 2",
+    "Kitten-TTS V0.8"
+  ],
+  "yorum_tr": "Kitten-TTS 2, düşük maliyetli ve erişilebilir bir TTS çözümü sunarak özellikle kaynak sınırlı araştırmacılar ve geliştiriciler için önemli bir adım. Gerçek zamanlı CPU performansı ve çok dilli ses klonlama yetenekleri, sektördeki rekabeti artırabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/bHhhcTl2cDl2d3doMTfZINy-SGvcsjA_xN8QgjwgJn75hiku3E92maPQedNo.png?width=640&crop=smart&auto=webp&s=4e78bb609d6ea1294fbd63b363263cfbea9c1f3a",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xc48or/kittentts_2_new_opensource_sota_158_bit_tts/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-22T00:33:11.000Z",
+  "slug": "kitten-tts-2-new-open-source-sota-1-58-bit-tts-cpu-only-with"
+}

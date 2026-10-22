@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "Recursive Flint: GPU-az kodlama ajanları için yeni Qwen3.8 35B modeli",
+  "ozet_tr": "Recursive Flint, 40 Milyar parametreli (2,5 Milyar aktif) bir kodlama ajanı modeli olarak tanıtıldı ve Qwen3.6‑35B‑A3B'yi TerminalBench 2.1 ile SWE‑bench Pro v2'de geride bıraktığını iddia ediyor. Model, 262 k bağlam uzunluğu ve 3:1 SWA‑full attention mimarisiyle GPU‑kısıtlı ortamlarda performans artışı vaat ediyor. Ancak ilk geri bildirimler, Ornith‑1.5'in hâlâ bu sınıfta standart olduğunu gösteriyor.",
+  "detayli_icerik_tr": "Reddit'in LocalLLaMA topluluğu, yeni bir kodlama ajanı modeli olan Recursive Flint'i duyurdu. Model, 40 Milyar parametreye sahip olmakla birlikte yalnızca 2,5 Milyar parametresi aktif çalışıyor; bu sayede sınırlı GPU kaynaklarıyla yüksek performans sağlanması hedefleniyor. Recursive Flint, 262 000 token'lık bağlam uzunluğu ve 3:1 SWA‑full attention mimarisiyle dikkat çekiyor.\n\nTopluluk üyeleri, Recursive Flint'in Qwen3.6‑35B‑A3B modelini TerminalBench 2.1 ve SWE‑bench Pro v2 testlerinde geride bıraktığını belirtiyor. İlgili Hugging Face deposunda yayınlanan tabloya göre, model diğer gösterilen benchmarklarda da eşit ya da daha iyi sonuçlar elde etmiş. Bu başarı, özellikle GPU kaynakları sınırlı olan geliştiriciler için kod üretiminde yeni bir dönüm noktası olabileceği anlamına geliyor.\n\nRecursive Flint'in tanıtımı, Wired dergisinde \"korkunç derecede iyi\" olarak nitelendirildi ve modelin llama.cpp ve Unsloth GGUF formatları için resmi PR'ları yayınlandı. Modelin blog gönderisi ve ilgili haberler, topluluk içinde geniş bir ilgi uyandırdı.\n\nAncak, bir güncelleme notunda, bazı kullanıcıların Ornith‑1.5 modelinin hâlâ aynı sınıftaki en iyi performansı sunduğu yönünde geri bildirimlerde bulunduğu belirtiliyor. Geliştiriciler, bu durumun erken aşama uygulama hatalarından kaynaklanabileceğini ve ilerleyen günlerde iyileştirmelerle geride kalmayabileceğini umuyor.",
+  "onemli_maddeler": [
+    "Recursive Flint, 40 B parametreli ancak sadece 2,5 B aktif parametreyle GPU‑kısıtlı ortamlarda yüksek verim sunmayı hedefliyor.",
+    "TerminalBench 2.1 ve SWE‑bench Pro v2 testlerinde Qwen3.6‑35B‑A3B modelini geride bıraktı.",
+    "262 k bağlam uzunluğu ve 3:1 SWA‑full attention mimarisi, uzun kod parçacıklarının işlenmesinde avantaj sağlıyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Yeni bir kodlama ajanı modeli, sınırlı GPU kaynaklarıyla yüksek performans vaat ederek geliştiriciler ve araştırmacılar için önemli bir seçenek sunuyor.",
+  "etiketler": [
+    "coding-agent",
+    "Qwen",
+    "TerminalBench",
+    "SWE-bench",
+    "GPU-poor"
+  ],
+  "anilan_modeller": [
+    "Recursive Flint",
+    "Qwen3.8 35B",
+    "Qwen3.6-35B-A3B",
+    "Ornith-1.5"
+  ],
+  "yorum_tr": "Recursive Flint'in performans iddiaları, kodlama ajanları pazarında rekabeti artırarak geliştiricilerin daha az donanımla verimli çözümler üretmesine olanak tanıyabilir; ancak gerçek dünya testleri ve Ornith‑1.5 ile karşılaştırmalar sonuçları netleştirecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/CvzQDny_Lz0hbdj4wWrc-I0pXkhqvMdUrlCF5Vkmb6I.png?width=640&crop=smart&auto=webp&s=29b32fc38fd3ea32ae5779c6c21652c65421e04f",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xc23iq/recursive_flint_the_qwen38_35b_weve_all_been/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-21T22:55:43.000Z",
+  "slug": "recursive-flint-the-qwen3-8-35b-we-ve-all-been-waiting-for"
+}

@@ -1,0 +1,44 @@
+{
+  "baslik_tr": "748B DeepSeek-V4.1-Flash, €2k PC'de RTX 3090 ile Çalıştırıldı",
+  "ozet_tr": "Reddit kullanıcısı Vladowski, 24 GB VRAM'li RTX 3090 ve i9‑9900X işlemcili €2 000 tutarındaki bir bilgisayarda 748 milyar parametreli DeepSeek‑V4.1‑Flash modelini 1‑bit quant ile çalıştırarak saniyede 7,2 token elde etti. Model, 110 GB'lık Engram tablosunu NVMe üzerinden talep üzerine okuyarak belleğe sığdırdı.",
+  "detayli_icerik_tr": "Vladowski, geçen yıl ikinci el bir PC'yi 2 000 € altında almış: RTX 3090 24 GB, 128 GB DDR4 RAM ve Intel i9‑9900X işlemci. DeepSeek‑V4.1‑Flash‑1017 modelinin en küçük 1‑bit quant versiyonunu denemek istedi ve llama.cpp'in 30817 PR'sı üzerinden derlenmiş bir sürüm kullandı. Model, 7,2 token/s hızla çalıştı; yanıtında bir fizik hatası bulunması dışında işlevsel bir test olarak değerlendirildi.\n\nModelin 110 GB'lık Engram tablosu başlangıçta belleğe yüklenmedi; NVMe diskten sadece ihtiyaç duyulan satırlar talep üzerine okundu. Bu dinamik yükleme yöntemi, büyük bir modeli 24 GB VRAM'lı tek bir GPU'ya sığdırmasını sağladı. Kullanılan komut satırı parametreleri arasında \"-ngl 99\", \"--n-cpu-moe 36\", \"-lm mmap\" ve 16 384 token uzunluğunda konteks gibi ayarlar bulunuyor.\n\nVladowski, aynı donanımda Qwen serisi modellerinin de iyi performans gösterdiğini belirtti, ancak DeepSeek‑V4.1‑Flash'in çalıştırılabilirliğinin kendisi için bir başarı olduğunu vurguladı. Şu an modelin diskte kapladığı 233 GB alanı koruyup korumamaya karar vermek zorunda.\n\nBu deney, büyük ölçekli LLM'lerin tüketici sınıfı donanımla, özellikle disk‑tabanlı on‑demand bellek yönetimiyle, erişilebilirliğini gösteriyor ve açık kaynak topluluklarının model dağıtımını daha esnek hale getirme çabalarına ışık tutuyor.",
+  "onemli_maddeler": [
+    "748 M parametreli DeepSeek‑V4.1‑Flash modeli, tek RTX 3090 GPU ve 24 GB VRAM ile çalıştırıldı.",
+    "Model, 7,2 token/s hızla yanıt üretti; bu, 1‑bit quant ve dinamik Engram yüklemesi sayesinde mümkün oldu.",
+    "110 GB Engram tablosu NVMe üzerinden talep üzerine okunarak belleğe sığdırıldı, toplam disk alanı 233 GB.",
+    "Benzer donanımda Qwen modelleri de iyi performans gösterdi, ancak DeepSeek deneyimi topluluk için bir kilometre taşı oldu."
+  ],
+  "kategori": "benchmark",
+  "onem": 3,
+  "onem_gerekce": "Büyük bir LLM'nin tüketici sınıfı bir PC'de çalıştırılabilmesi, özellikle açık kaynak toplulukları için ilgi çekici ancak sektörel etkisi sınırlı bir gelişmedir.",
+  "etiketler": [
+    "DeepSeek",
+    "Flash",
+    "RTX 3090",
+    "LLM",
+    "Benchmark"
+  ],
+  "anilan_modeller": [
+    "DeepSeek-V4.1-Flash-1017",
+    "Qwen"
+  ],
+  "yorum_tr": "Bu deney, büyük modellerin düşük maliyetli donanımla erişilebilirliğini gösteriyor; geliştiriciler için daha esnek dağıtım seçenekleri sunarken, son kullanıcıların da yüksek parametreli LLM'leri deneme fırsatı bulmasını sağlıyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "DeepSeek-V4.1-Flash-1017",
+      "benchmark": "tokens per second",
+      "skor": 7.2,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "RTX 3090 24GB, 10 CPU threads, llama.cpp build",
+      "kaynak_metinden_alinti": "I was still happy to see it working at 7.2 tok/s."
+    }
+  ],
+  "gorsel_url": "https://external-preview.redd.it/ajVrYWxsMWQydndoMayVt24xIczDG2PTCBruRnemE0C1nEnYDKPDglpMVuIm.png?width=640&crop=smart&auto=webp&s=3fdbbc44971886c5d074537889fe0807a6f8147b",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xburkx/tried_running_748b_deepseekv41flash_on_a_2k_pc/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-21T18:11:28.000Z",
+  "slug": "tried-running-748b-deepseek-v4-1-flash-on-a-2k-pc"
+}

@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "Google Cloud, OpenAI’nin GPT-6 Serisini Özel Önizleme ile Model Garden’a Ekledi",
+  "ozet_tr": "Google Cloud, OpenAI’nin en yeni büyük dil modelleri GPT-6 Astra, GPT-6.1 Sol ve GPT-6 Luna’yı Model Garden platformunda özel önizleme olarak sunarak, kapalı kaynak LLM’leri tek bir bulut ortamında birleştiren ilk hiperskala sağlayıcı konumuna geldi. Bu entegrasyon, kurumsal müşterilere model seçimini, maliyet kontrolünü ve veri güvenliğini tek bir faturada yönetme imkanı tanıyor.",
+  "detayli_icerik_tr": "Google Cloud, OpenAI’nin en yeni kapalı kaynak büyük dil modellerini (LLM) Model Garden’a ekleyerek, 200'ün üzerindeki birinci‑taraf, üçüncü‑taraf ve açık‑kaynak modelin yanına GPT‑6 Astra, GPT‑6.1 Sol ve GPT‑6 Luna’yı da dahil etti. Bu adım, Google Cloud’u tüm üç önde gelen kapalı kaynak LLM’i tek bir platformda sunan tek hiperskala bulut sağlayıcısı hâline getiriyor ve kurumsal AI ekiplerine model çeşitliliği konusunda yeni bir esneklik sağlıyor.\n\nModel Garden’da sunulan üç model farklı kullanım senaryolarına göre konumlandırıldı. GPT‑6 Astra, yüksek kodlama, bilgisayar‑kullanımı, profesyonel ve bilimsel araştırma görevleri için tasarlanmış en yetenekli tier iken, GPT‑6.1 Sol benzer zekâ seviyesini daha düşük maliyetle sunarak ajans‑tabanlı kodlama ve bilgisayar kullanımını hedefliyor. GPT‑6 Luna ise ölçekli, günlük iş yükleri için hızlı ve maliyet‑verimli bir seçenek olarak tanıtıldı.\n\nOpenAI modellerinin kullanım ücreti doğrudan Google Cloud Marketplace üzerinden satın alınacak ve aynı Google Cloud faturası içinde görünecek. Bu sayede mevcut bulut taahhütlerine uygulanabilecek, Flexible Savings Plans kapsamında tasarruf sağlanabilecek ve model harcamaları tek bir fatura üzerinden kontrol edilebilecek. Böyle bir paketleme, birden fazla model sağlayıcısı arasında ayrı sözleşmeler yapma ihtiyacını ortadan kaldırıyor.\n\nGüvenlik ve uyumluluk açısından Google, modelleri müşterinin belirlediği veri sınırı içinde tutuyor, çıktılar eğitim amaçlı kullanılmıyor ve Zero Data Retention seçenekleri yakında sunulacak. Modeller, izole ağ geçitleri üzerinden çalıştırılıyor; Confidential Compute, kimlik doğrulamalı erişim, VPC Service Controls, birleşik denetim günlükleri ve yönetici görünürlüğü gibi kurumsal yönetişim katmanları tüm model ve ajan aktivitelerine uygulanıyor. Üçüncü‑taraf model sağlayıcılarının müşterinin bulut ortamına yetkisiz erişimi olmadığı vurgulandı.\n\nGPT‑6 Astra, GPT‑6.1 Sol ve GPT‑6 Luna şu anda özel önizleme aşamasında ve seçilmiş kurumsal müşterilere API’ler aracılığıyla sunuluyor. Kullanıcılar yerel Codex CLI ve Desktop iş akışlarını Google’ın Gemini platformu ile bağlayarak çıkarım yapabilecek. Erişim, bir ilgi formu üzerinden sağlanıyor ve ilerleyen dönemlerde daha fazla müşteriye açılması planlanıyor. Google ayrıca bu modelleri Gemini for Business ve Google Antigravity gibi hizmetlere de entegre etmeyi hedefliyor.",
+  "onemli_maddeler": [
+    "Google Cloud, Model Garden’da GPT‑6 Astra, GPT‑6.1 Sol ve GPT‑6 Luna’yı tek bir platformda sunarak kapalı kaynak LLM’leri tek bir bulut sağlayıcısına topladı.",
+    "Müşteriler modelleri API üzerinden seçip değiştirebilecek, maliyetler Google Cloud faturasıyla tek birleştirilecek ve Flexible Savings Plans sayesinde tasarruf sağlayabilecek.",
+    "Veriler müşterinin veri sınırı içinde kalıyor; model çıktıları eğitim için kullanılmıyor ve Confidential Compute, VPC Service Controls gibi güvenlik katmanları sağlanıyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "OpenAI’nin en yeni modellerinin Google Cloud altyapısına entegrasyonu, kurumsal AI projelerinde tek bir tedarikçi üzerinden model çeşitliliği, maliyet kontrolü ve güvenlik sağlanması anlamına geliyor; bu da sektörde rekabeti ve bulut‑tabanlı AI benimsenmesini önemli ölçüde artırıyor.",
+  "etiketler": [
+    "Google Cloud",
+    "OpenAI",
+    "LLM",
+    "Model Garden",
+    "Enterprise AI"
+  ],
+  "anilan_modeller": [
+    "GPT-6 Astra",
+    "GPT-6.1 Sol",
+    "GPT-6 Luna"
+  ],
+  "yorum_tr": "Bu entegrasyon, büyük ölçekli işletmelerin OpenAI modellerine erişimini kolaylaştırırken, Google Cloud’un güvenlik ve maliyet yönetimi özellikleri sayesinde AI projelerinin daha hızlı ve güvenli bir şekilde hayata geçirilmesini mümkün kılıyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/10/banner-14.webp",
+  "url": "https://www.testingcatalog.com/google-cloud-adds-openai-models-in-private-preview/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-21T23:30:02.000Z",
+  "slug": "google-cloud-adds-openai-models-in-private-preview"
+}

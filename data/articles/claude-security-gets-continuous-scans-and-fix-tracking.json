@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "Claude Security, sürekli tarama ve düzeltme takibiyle güncellendi",
+  "ozet_tr": "Claude Security, kod depolarını gerçek zamanlı izleyerek yeni değişikliklerde otomatik tarama yapıyor ve düzeltmeleri otomatik olarak takip ediyor. Bu özellikler, Claude Enterprise müşterileri için halka açık beta aşamasında sunuluyor ve güvenlik ekiplerine risk önceliklendirmesinde bağlam temelli kararlar alabilme imkanı tanıyor.",
+  "detayli_icerik_tr": "Claude Security, artık bağlanan depoları bir kez yapılandırdıktan sonra kodda meydana gelen her değişikliği izliyor. İlk derin tarama tamamlandıktan sonra, yeni commit'ler geldiğinde sistem risk ve karmaşıklık seviyelerine göre yeniden tarama gerçekleştiriyor, böylece tespit edilen güvenlik açıkları kodun mevcut durumuna yakın kalıyor.\n\nKullanıcılar, Claude GitHub uygulaması, GitHub Enterprise Server, GitLab ve diğer sağlayıcıların erişim token'ları aracılığıyla projeler oluşturup birden fazla depoyu tek bir proje altında birleştirebiliyor. Bu sayede hizmet sınırlarını aşan zayıflıklar, örneğin bir backend'in istemcinin doğrulamasına güvenmesi gibi durumlar da tespit edilebiliyor.\n\nClaude Security, açıkları kod değişiklikleriyle eşleştirerek düzeltme gerçekleştiğinde otomatik olarak kapatıyor; dışarıda yapılan düzeltmeler de algılanıyor. Aynı zafiyet tekrar ortaya çıkarsa bulgu otomatik olarak yeniden açılıyor. Her proje, ekiplerin sadece koddan çıkarılamayan güvenlik politikaları ve kontrol mekanizmalarını tanımlayabileceği bir bilgi tabanı içeriyor ve sistem bu bağlamı kullanarak koddan dinamik bir tehdit modeli oluşturuyor.\n\nYeni API, projeleri ve bulguları listeleme, okuma, çözme, yeniden açma ve depoları yönetme yetenekleri sağlıyor. Kişisel erişim token'ları kullanıcı izinlerini taşıyor, webhook'lar ise yeni bulgular hakkında anlık uyarı gönderiyor. MCP bağlayıcısı sayesinde mühendisler bir bulguyu alıp, tartışıp, düzeltme sürecine başlayıp aynı oturum içinde çözümleyebiliyor. Rol tabanlı erişim kontrolleri ise proje görüntüleme, triage ve oluşturma yetkilerini ayrı ayrı yönetiyor.\n\nNisan 2026'da halka açık beta aşamasına giren hizmet, şu ana kadar binlerce kuruluş tarafından kullanılarak bir milyondan fazla güvenlik açığı tespit edildi. Claude Mythos dahil tüm Claude model ailesi üzerinde çalışıyor ve Cyber Verification Programına erişim gerektirmiyor. Enterprise yöneticileri hizmeti yönetim konsolundan etkinleştirebiliyor ve iki ay boyunca her organizasyon için 25.000 USD tutarında ücretsiz kullanım kredisi sağlanıyor.",
+  "onemli_maddeler": [
+    "Claude Security, kod değişikliklerini anlık izleyerek otomatik yeniden tarama yapıyor.",
+    "Düzeltme takibi otomatik; dışarıda yapılan yamalar da algılanıp kapanıyor, tekrar ortaya çıkarsa bulgu yeniden açılıyor.",
+    "Proje bazlı bilgi tabanı ve dinamik tehdit modeli sayesinde bağlam temelli risk değerlendirmesi sağlanıyor.",
+    "Yeni API ve MCP bağlayıcısı, bulgu yönetimini tek oturumda yapabilme imkanı sunuyor.",
+    "Beta sürecinde iki ay boyunca 25.000 USD değerinde ücretsiz kullanım kredisi veriliyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Claude Security'nin sürekli tarama ve otomatik düzeltme takibi, kurumsal güvenlik süreçlerini otomatikleştirerek risk azaltma ve operasyonel verimlilik açısından kritik bir iyileştirme sunuyor.",
+  "etiketler": [
+    "Claude Security",
+    "sürekli tarama",
+    "vulnerability management",
+    "API",
+    "Enterprise"
+  ],
+  "anilan_modeller": [
+    "Claude Mythos"
+  ],
+  "yorum_tr": "Bu güncelleme, güvenlik ekiplerinin manuel tarama ve izleme yükünü büyük ölçüde hafifleterek daha proaktif bir savunma stratejisi benimsemelerini sağlayacak. Aynı zamanda API ve MCP entegrasyonları, mevcut geliştirme iş akışlarına sorunsuz bir şekilde dahil edilerek düzeltme sürecinin hızlanmasına katkı sağlayacak.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/10/banner-16.webp",
+  "url": "https://www.testingcatalog.com/claude-security-gets-continuous-scans-and-fix-tracking/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-21T23:34:20.000Z",
+  "slug": "claude-security-gets-continuous-scans-and-fix-tracking"
+}

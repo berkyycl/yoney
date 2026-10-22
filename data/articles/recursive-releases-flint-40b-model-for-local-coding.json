@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "Recursive, yerel kodlama için 40 milyar parametreli Flint modelini duyurdu",
+  "ozet_tr": "Recursive, yerel AI donanımında hızlı kodlama yapabilen 40 Milyar parametreli bir mixture‑of‑experts (MoE) modeli olan Flint'i piyasaya sürdü. Model, her token için yalnızca 2,5 Milyar aktif parametre kullanarak hesaplama maliyetini önemli ölçüde düşürüyor ve MacBook Pro ile RTX Spark üzerinde 125‑150 token/sn hızlara ulaşıyor.",
+  "detayli_icerik_tr": "Recursive, otomatik araştırma sistemi Eureka Machine'in desteğiyle dört ay içinde Flint'i geliştirdi. 40 Milyar toplam parametreye sahip olan model, MoE mimarisi sayesinde bir token üretildiğinde sadece 2,5 Milyar parametreyi aktif hâle getiriyor; bu da geleneksel yoğun (dense) modellerin iki katına kadar daha hızlı çalışmasını sağlıyor. Model, 125+ token/sn hızla bir M4 Pro MacBook Pro’da ve 150+ token/sn hızla 64 GB NVIDIA RTX Spark’da çalışıyor; kısa bağlamlarda 512 k token’a kadar destek sunuyor, ancak Recursive 256 k token sınırını öneriyor.\n\nFlint, SWE‑Bench Pro v2, Terminal‑Bench 2.1 ve SWE‑Bench Verified gibi kodlama odaklı benchmarklarda 50 Milyar parametreden az MoE modelleri arasında lider konumda. Aynı zamanda 25‑40 Milyar parametreli yoğun kodlama modelleriyle benzer performans gösterirken beş kat daha hızlı çalışıyor. Modelin açık ağırlıkları Apache 2.0 lisansı altında sunuluyor ve llama.cpp, Ollama, Unsloth, LM Studio, vLLM ve SGLang gibi popüler araçlarla uyumlu.\n\nEureka Machine, Flint'in mimarisi, veri seti, optimizasyon algoritmaları, eğitim tarifleri, altyapı, kuantizasyon ve çıkarım performansını otomatik olarak tasarlayıp test etti. Tasarım sürecinde 35 Milyar parametreli bir temel modelden 3 Milyar aktif parametreli bir yapıdan, 40 Milyar toplam ve 2,5 Milyar aktif parametreli bir modele geçildi. Kuantizasyon aşamasında çıktı katmanı dört bit’e düşürüldü ve 16‑bit model öğretmen olarak kullanılan offline distilasyon uygulandı; sonuçta NVFP4 modeli, 16‑bit sürümle sadece 0,7 puan farkla eşdeğer performans gösterdi ve eğitim adımlarını yarıya indirdi.\n\nRecursive ayrıca Flint için özel bir yerel çıkarım motoru olan \"rec\"i duyurdu. rec, Apple M4 Pro, M5 Pro ve M5 Max çipleriyle uyumlu ve modelin düşük‑bit projeksiyonları, MoE işlemleri, dikkat ve prompt işleme gibi bileşenleri için optimize edilmiş çekirdekler içeriyor. Bu sayede geliştiriciler, veri gizliliğini koruyarak, API maliyetlerinden kaçınarak ve çevrim dışı çalışarak kodlama ajanlarını yerel cihazlarda kullanabiliyor.",
+  "onemli_maddeler": [
+    "Flint, 40 Milyar toplam parametreye rağmen her token için sadece 2,5 Milyar aktif parametre kullanarak hesaplama maliyetini %50’ye kadar azaltıyor.",
+    "SWE‑Bench Pro v2, Terminal‑Bench 2.1 ve SWE‑Bench Verified gibi benchmarklarda 50 Milyar altı MoE modelleri arasında lider konumda.",
+    "MacBook Pro (M4 Pro) ve NVIDIA RTX Spark üzerinde sırasıyla 125+ ve 150+ token/sn hızlara ulaşarak yoğun kodlama modellerinden beş kat daha hızlı çalışıyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Flint, yerel kodlama ve AI donanımı pazarında yüksek performanslı, düşük maliyetli bir MoE modeli sunarak hem geliştiricilerin hem de şirketlerin API bağımlılığını azaltma potansiyeline sahip, sektörü dönüştürebilecek bir çıkış niteliğindedir.",
+  "etiketler": [
+    "Flint",
+    "Recursive",
+    "Mixture-of-Experts",
+    "Local Coding",
+    "AI Hardware"
+  ],
+  "anilan_modeller": [
+    "Flint"
+  ],
+  "yorum_tr": "Flint'in düşük aktif parametre tasarımı ve yüksek token hızı, yerel kodlama ajanları için maliyet ve gizlilik açısından büyük avantaj sağlıyor; geliştiriciler artık büyük bulut API'lerine bağımlı kalmadan güçlü kod üretim yeteneklerine erişebilecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/10/banner-15-1.webp",
+  "url": "https://www.testingcatalog.com/recursive-releases-flint-40b-model-for-local-coding/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-21T23:26:46.000Z",
+  "slug": "recursive-releases-flint-40b-model-for-local-coding"
+}
