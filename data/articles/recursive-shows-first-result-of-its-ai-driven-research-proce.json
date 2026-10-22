@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "Recursive, AI destekli araştırma sürecinin ilk sonucunu Flint ile gösterdi",
+  "ozet_tr": "Recursive, kendi iç AI sistemi \"Eureka Machine\" sayesinde geliştirdiği ilk programlama odaklı dil modeli Flint'i duyurdu. 40 milyar parametreli MoE mimarisiyle, sadece 2,5 milyar aktif parametre kullanarak yerel donanımda yüksek hızda çalışıyor ve açık kaynak lisansı altında Hugging Face'te sunuluyor.",
+  "detayli_icerik_tr": "AI girişimi Recursive, dört ay içinde geliştirdiği Flint adlı dil modelini kamuoyuna sundu. Model, \"Eureka Machine\" adlı otomatik araştırma sistemi tarafından mimari tasarım, veri seçimi, optimizasyon ve çekirdek kodlama aşamalarının büyük bir kısmını yürütmesiyle ortaya çıktı. Flint, 40 milyar toplam parametreye sahip bir mixture-of-experts (MoE) yapısı kullanıyor; her token üretiminde yalnızca 2,5 milyar parametre aktif hâlde, bu da hem hız hem de enerji verimliliği sağlıyor.\n\nFlint, Apple Silicon (M4, M5) ve Nvidia RTX Spark gibi yerel donanımlarda çalışmak üzere optimize edildi. Apple M4 Pro 48 GB bellekte 125 token/sn, Nvidia RTX Spark 64 GB bellekte 150 token/sn üretim hızına ulaşarak benzer boyuttaki yoğun (dense) modellerin iki katına kadar performans gösteriyor. Model, 512 000 token'a kadar bağlam penceresini destekliyor, ancak Recursive 256 000 token ile sınırlamayı öneriyor. Açık kaynak ağırlıkları Apache 2.0 lisansı altında Hugging Face'te yayınlandı ve llama.cpp, Ollama, LM Studio, vLLM ve SGLang gibi popüler çalışma zamanlarıyla uyumlu.\n\nFlint, SWE‑Bench Pro v2, Terminal‑Bench 2.1 ve SWE‑Bench Verified gibi kodlama benchmark'lerinde MoE modelleri arasında lider konumda. 27‑31 b milyar parametreli yoğun modellerin puanlarıyla eşdeğer sonuçlar elde ederken, aynı sınıf MoE modellerine göre iki kat daha hızlı token üretimi sağlıyor. Ancak bu sonuçların bağımsız doğrulaması henüz yapılmadı.\n\nRecursive, kurucuları Richard Socher ve eski DeepMind araştırmacısı Tim Rocktäschel gibi isimleri barındırıyor ve Mayıs 2026'da gizlilikten çıkıp 650 milyon dolar yatırım alarak 4,65 milyar dolar değerlemeye ulaştı. Şirket, Eureka Machine'in her yeni modelde araştırma yeteneklerini artırarak, uzun vadede kendi kendini geliştiren bir süper zekâ yaratma vizyonunu sürdürüyor. Flint, bu vizyonun ilk somut çıktısı olarak görülse de, tam anlamıyla özyinelemeli iyileşme hâlâ kanıtlanmamış bir aşama olarak kalıyor.",
+  "onemli_maddeler": [
+    "Flint, 40 M parametreli MoE mimarisiyle sadece 2,5 M aktif parametre kullanarak yerel donanımda yüksek hızda kod üretimi sağlıyor.",
+    "Model, Apple Silicon ve Nvidia RTX Spark üzerinde 2‑3 kat daha hızlı token üretimi sunarak yoğun modellerle rekabet ediyor.",
+    "Eureka Machine, mimari, kuantizasyon ve çekirdek optimizasyonlarını otomatikleştirerek model geliştirme sürecinin büyük bir kısmını yönetti."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Flint, AI destekli tam otomatik araştırma sürecinin ilk somut çıktısı olarak büyük bir teknik atılım sunuyor ve açık kaynak lisansı altında dağıtılması sektördeki rekabeti ve inovasyonu hızlandırabilir.",
+  "etiketler": [
+    "AI",
+    "language model",
+    "Mixture of Experts",
+    "open source",
+    "self-improving AI"
+  ],
+  "anilan_modeller": [
+    "Flint"
+  ],
+  "yorum_tr": "Flint'in açık kaynak olarak sunulması, geliştiricilerin yerel ortamda yüksek performanslı kodlama modellerine erişimini kolaylaştıracak ve AI‑destekli model geliştirme süreçlerine yeni bir örnek teşkil edecektir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/10/recursive-flint-header-1.jpg",
+  "url": "https://the-decoder.com/recursive-shows-first-result-of-its-ai-driven-research-process-with-flint/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-22T14:40:16.000Z",
+  "slug": "recursive-shows-first-result-of-its-ai-driven-research-proce"
+}

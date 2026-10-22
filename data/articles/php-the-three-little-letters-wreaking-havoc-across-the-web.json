@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "PHP’da 20 Yıllık Zafiyet: Tüm Sürümler Etkilendi, Web Siteleri Çöküyor",
+  "ozet_tr": "PHP'nin 20 yıldır taşıdığı iki kritik güvenlik açığı, internetin %70'ini etkileyen bir felakete yol açtı. Güçlü AI modellerinin yardımıyla ortaya çıkarılan bu Remote Code Execution (RCE) zafiyetleri, Wikipedia, WordPress, 4chan ve hatta devlet siteleri gibi büyük platformları geçici olarak kapattı. Geliştiriciler, desteklenmeyen eski sürümler nedeniyle güncelleme yapamayan hizmetlerin kalıcı olarak kapanma riskiyle karşı karşıya.",
+  "detayli_icerik_tr": "Güvenlik firması Wiz tarafından keşfedilen ve \"tarih boyunca yazılım güvenliğinde görülen en şiddetli zafiyetlerden biri\" olarak nitelendirilen iki PHP hatası, PHP 5'ten itibaren tüm sürümleri etkiliyor. Bu hatalar, saldırganların uzaktan kod çalıştırmasına izin vererek sunucularda zararlı komutlar yürütülmesini, veri çalınmasını ve web sayfalarının manipüle edilmesini mümkün kılıyor. AI destekli araçlar, özellikle GPT‑5.6 Sol gibi modeller, bu karmaşık exploit zincirini otomatikleştirerek saldırıların ölçeğini artırdı.\n\nAçıklanan zafiyetler, 4chan, DeviantArt, Wikipedia ve Pokémon Home gibi popüler sitelerin yanı sıra Hollanda ve Finlandiya'daki devlet kurumlarının da hizmetlerini geçici olarak durdurmasına neden oldu. Cloudflare, açıklamadan önceki 10 saat içinde binlerce, sonrasında ise yüzbinlerce saldırı kaydetti; gece yarısına kadar bu sayı milyonları buldu. Bu durum, internet altyapısının ne kadar kırılgan olduğunu bir kez daha gözler önüne serdi.\n\nPHP topluluğu, 10 AM ET'de yayınlanan güvenlik yamasıyla iki kritik hatayı kapattı ve tüm kullanıcıların mümkün olan en kısa sürede güncelleme yapması çağrısında bulundu. Ancak, 20 yıl öncesine dayanan ve artık desteklenmeyen sürümler hâlâ birçok eski web sitesinde çalışıyor. Bu siteler, yama alamadıkları için ya hizmet dışı kalacak ya da tamamen kapanacak. Uzmanlar, kritik güncellemelerin uygulanamaması durumunda internet tarihinin bir bölümünün kaybolma riskine işaret ediyor.\n\nBu gelişme, AI'nin güvenlik araştırmalarında bir ikiye kat fayda sağlarken aynı zamanda kötü niyetli aktörler için de yeni bir silah haline geldiğini gösteriyor. GPT‑5.6 Sol gibi modeller, karmaşık exploit zincirlerini otomatikleştirerek saldırıların maliyetini düşürüyor ve daha geniş bir saldırı yüzeyi yaratıyor. Bu durum, geliştiricilerin sadece kodlarını değil, aynı zamanda kullandıkları AI araçlarını da güvenlik perspektifinden değerlendirmelerini zorunlu kılıyor.",
+  "onemli_maddeler": [
+    "PHP 5'ten itibaren tüm sürümleri etkileyen iki Remote Code Execution (RCE) zafiyeti ortaya çıktı.",
+    "AI modelleri (GPT‑5.6 Sol) exploit zincirini otomatikleştirerek saldırıların ölçeğini artırdı.",
+    "Wikipedia, WordPress, 4chan, DeviantArt ve bazı devlet siteleri dahil birçok büyük platform geçici olarak kapandı.",
+    "Desteklenmeyen eski PHP sürümleri güncellenemediği için kalıcı kapanma riskiyle karşı karşıya."
+  ],
+  "kategori": "guncelleme",
+  "onem": 5,
+  "onem_gerekce": "PHP, internetin %70'ine hizmet veren temel altyapı; tüm sürümleri etkileyen RCE zafiyeti, büyük ölçekli hizmet kesintileri ve veri sızıntılarına yol açabilir.",
+  "etiketler": [
+    "PHP",
+    "güvenlik",
+    "zafiyet",
+    "web",
+    "AI"
+  ],
+  "anilan_modeller": [
+    "GPT-5.6 Sol"
+  ],
+  "yorum_tr": "Bu kritik PHP zafiyeti, internetin temel taşlarından birinin ne kadar savunmasız olabileceğini gösteriyor. Geliştiricilerin eski sürümleri güncelleyememesi, AI destekli saldırıların yaygınlaşmasıyla birleşince, güvenlik stratejileri yeniden gözden geçirilmeli.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/04/VRG_ILLO_STK001_carlo_cadenas_cybersecurity_virus.jpg?quality=90&strip=all&crop=0,0,100,100",
+  "url": "https://www.theverge.com/tech/1016574/php2shell-security-vulnerability-websites-down",
+  "source": "The Verge AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-22T15:12:27.000Z",
+  "slug": "php-the-three-little-letters-wreaking-havoc-across-the-web"
+}

@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "Claude, scorpion antivenom üretmedi: Citrini'nin AI destekli ilaç deneyi başarısız",
+  "ozet_tr": "Citrini Research, Anthropic'in henüz piyasaya sürülmemiş bir Claude sürümünü kullanarak skorpion antivenomu tasarlamaya çalıştı ancak sonuçlar bir ilaç geliştirmeye yeterli olmadı. Model 320.000 aday protein üretti, bunlardan 211'i test laboratuvarlarına gönderdi ve sadece 17'si hedef toksinlerden dördüne bağlanabildi. Uzmanlar, bağlayıcı keşfin kolay olduğunu, ancak bunları etkili bir tedaviye dönüştürmenin hâlâ büyük bir zorluk olduğunu vurguladı.",
+  "detayli_icerik_tr": "Yatırım araştırma firması Citrini, Anthropic ile iş birliği yaparak, henüz duyurulmamış bir Claude modelini scorpion antivenomu üretmek için kullandı. Model, 35 sayfalık bir prompt ve yaklaşık 300 alt ajanla çalışarak 64 saat içinde 320.000 olası protein tasarımı üretti; bunlardan 180'i toksin benzeri özellikler taşımadığı için elendi ve toplam 211 tasarım elde edildi.\n\nBu tasarımlar, İsviçreli biyoteknoloji şirketi Adaptyv Bio ve ABD merkezli Twist Biosciences gibi dış laboratuvarlara gönderildi. Testler, 150.000 dolar civarında bir maliyetle gerçekleştirildi ve 17 protein hedeflenen beş scorpion toksininden dördüne bağlanabildi; ancak hiçbir protein birden fazla toksine bağlanamadı ve bağlanmanın ilaç etkisi anlamına gelip gelmediği henüz kanıtlanmadı.\n\nTeknik uzmanlar, bağlayıcı keşfin nispeten kolay olduğunu, ancak bu bağlayıcıları güvenli, stabil ve etkili bir ilaç haline getirmenin çok daha karmaşık bir süreç olduğunu belirtti. Danimarka Teknik Üniversitesi'nden profesörler, sonuçların \"teknik olarak umut verici\" olduğunu ancak \"ilaç seviyesine ulaşmadan önce çok uzun bir yol kaldığını\" vurguladı.\n\nCitrini, deneyi bir başarı olarak nitelendirerek AI destekli ilaç keşfi yatırım fırsatlarını öne çıkarmaya çalıştı; ancak eleştirmenler, firmanın bir biyoteknoloji girişimi olmamasının ve deneyin sadece bağlayıcı keşfiyle sınırlı kalmasının sonuçları abarttığını savundu. Anthropic, deneyin maliyetini ve kullanılan hesaplama kaynaklarını karşılamış olsa da, laboratuvar testlerini kendi bünyesinde yapmadı ve bu durum da sürecin şeffaflığı hakkında soru işaretleri yarattı.",
+  "onemli_maddeler": [
+    "Claude, 320.000 aday protein tasarladı; bunlardan 211'i test laboratuvarlarına gönderildi.",
+    "Testlerde sadece 17 protein hedeflenen scorpion toksinlerinden dördüne bağlanabildi, ancak ilaç etkisi kanıtlanmadı.",
+    "Uzmanlar, bağlayıcı keşfin kolay olduğunu, ancak bunları güvenli ve etkili bir ilaç haline getirmenin hâlâ büyük bir zorluk olduğunu belirtti."
+  ],
+  "kategori": "arastirma",
+  "onem": 3,
+  "onem_gerekce": "Deney, AI’nın ilaç keşfindeki potansiyelini gösterse de gerçek bir ilaç geliştirmedeki sınırlamaları ortaya koyduğu için sektörel ilgi çekiyor; ancak doğrudan bir model çıkışı ya da klinik sonuç üretmediği için etkisi sınırlı.",
+  "etiketler": [
+    "AI",
+    "drug discovery",
+    "Claude",
+    "Anthropic",
+    "antivenom"
+  ],
+  "anilan_modeller": [
+    "Claude (unreleased)"
+  ],
+  "yorum_tr": "Bu deney, yapay zekanın erken aşama protein tasarımında fayda sağlayabileceğini gösteriyor, ancak bağlayıcıların ilaç haline gelmesi için gereken biyolojik ve klinik aşamaların hâlâ büyük bir engel olduğunu hatırlatıyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/GettyImages-2202529068_415155.jpg?quality=90&strip=all&crop=0,0,100,100",
+  "url": "https://www.theverge.com/ai-artificial-intelligence/1016443/anthropic-claude-citrini-vibecoding-scorpion-antivenom",
+  "source": "The Verge AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-22T12:21:07.000Z",
+  "slug": "claude-did-not-invent-scorpion-antivenom"
+}

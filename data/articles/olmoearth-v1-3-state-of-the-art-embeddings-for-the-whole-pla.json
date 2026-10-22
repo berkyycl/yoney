@@ -1,0 +1,57 @@
+{
+  "baslik_tr": "OlmoEarth v1.3: Tüm Gezegen İçin Son Teknoloji Uydu Gömülü Temsilleri",
+  "ozet_tr": "AllenAI, 10 metrelik çözünürlükte küresel önceden hesaplanmış gömülü temsilleri ve yeni bir tarayıcı tabanlı keşif aracıyla OlmoEarth v1.3'ü duyurdu. Model, Sentinel-1, Sentinel-2 ve Landsat zaman serilerini tek bir 128‑boyutlu vektöre dönüştürerek harita üretimini ve değişim takibini GPU gerektirmeden saniyeler içinde mümkün kılıyor.",
+  "detayli_icerik_tr": "OlmoEarth v1.3, bir vizyon transformerı ve attention pooler kullanarak bir yıl boyunca radar (Sentinel‑1) ve çok spektral (Sentinel‑2, Landsat) uydu görüntülerini işliyor ve her 10 metrelik piksel için 128 boyutlu bir vektör üretiyor; ilk 64 boyut da bağımsız bir gömme olarak kullanılabiliyor. Bu gömmeler, küresel ölçekte önceden hesaplanmış olarak Source Cooperative platformunda 150 TB'lık bir veri setiyle paylaşılıyor ve kullanıcıların sadece birkaç etiketle yerel sınıflandırıcılar eğiterek arazi örtüsü, tarım, madencilik gibi görevleri hızlıca gerçekleştirmesine olanak tanıyor.\n\nModelin performansı, AlphaEarth Foundations (AEF) ve Tessera v2 gibi güçlü rakiplerle karşılaştırıldığı 27 farklı değerlendirme setinde ölçüldü. OlmoEarth v1.3'ün 128‑boyutlu gömmeleri 27 testin 20'sinde en yüksek skoru alarak genel sıralamada birinciliği elde etti; 64‑boyutlu versiyonu ise 18 testte birincilik elde ederek boyut küçültme maliyetine rağmen üstünlüğünü korudu. Bu değerlendirmeler sırasında yeni geliştirilen PLANTEUR adlı tropikal tarım tipi benchmarku da kullanıldı ve OlmoEarth gömmelerinin görülmemiş bölgelerdeki genelleme yeteneği en iyi olarak belirlendi.\n\nEnerji ve maliyet açısından da önemli iyileştirmeler sunan v1.3, önceki sürüm v1.2'ye kıyasla eğitim süresini %53, karbon emisyonunu ise %50 azalttı. Modelin tam eğitim maliyeti, H100 GPU kiralama üzerinden yaklaşık 2.720 USD olarak tahmin ediliyor. Açık kaynak lisansı altında sunulan model ağırlıkları, ön‑eğitim verileri ve kodları, araştırmacıların ve endüstri paydaşlarının kendi veri setleriyle yeniden üretim yapmasını kolaylaştırıyor.\n\nOlmoEarth Embeddings Explorer, bu gömmeleri görselleştiren ve etkileşimli analiz imkanı sağlayan bir web aracı olarak da tanıtıldı. Kullanıcılar harita üzerinde istediği bölgeyi seçip benzer yerleri bulabiliyor, birkaç etiketle anlık sınıflandırıcı eğitebiliyor ve sonuçları GeoTIFF olarak dışa aktarabiliyor. Araç, hiçbir hesaplama kaynağına ihtiyaç duymadan saniyeler içinde küresel değişim haritaları üretmeyi mümkün kılıyor ve özellikle sınırlı altyapıya sahip araştırma ekipleri için büyük bir fırsat sunuyor.",
+  "onemli_maddeler": [
+    "OlmoEarth v1.3, tüm gezegen için 10 m çözünürlükte 128‑ve 64‑boyutlu önceden hesaplanmış gömmeler sunuyor.",
+    "27 farklı değerlendirme setinde 128‑boyutlu gömmeler 20, 64‑boyutlu gömmeler 18 testte birincilik elde etti.",
+    "Modelin eğitim süresi %53, karbon emisyonu %50 azaldı; tam eğitim maliyeti yaklaşık 2.720 USD.",
+    "Yeni tarayıcı tabanlı OlmoEarth Embeddings Explorer, GPU gerektirmeden anlık harita analizi ve sınıflandırma imkanı sağlıyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "OlmoEarth v1.3, küresel ölçekte erişilebilir, yüksek doğruluklu uzaktan algılama gömmeleri ve ücretsiz bir keşif aracı sunarak hem araştırma hem de uygulama alanında veri erişimini demokratikleştiriyor; aynı zamanda maliyet ve karbon ayak izindeki büyük düşüşle sürdürülebilir AI örneği teşkil ediyor.",
+  "etiketler": [
+    "uydu",
+    "gömülü temsiller",
+    "coğrafi AI",
+    "OlmoEarth",
+    "açık kaynak"
+  ],
+  "anilan_modeller": [
+    "OlmoEarth v1.3",
+    "OlmoEarth v1.3 Base",
+    "OlmoEarth v1.2",
+    "OlmoEarth v1",
+    "AlphaEarth Foundations (AEF)",
+    "Tessera v2"
+  ],
+  "yorum_tr": "Bu sürüm, büyük ölçekli jeo-uzamsal analizleri düşük maliyetle ve teknik engelleri azaltarak geniş bir kullanıcı kitlesine açıyor; geliştiriciler artık ön‑eğitimli gömmeler üzerine hızlı prototipler oluşturabilirken, son kullanıcılar da anlık harita içgörülerine ulaşabilecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "OlmoEarth v1.3 (128-dim)",
+      "benchmark": "27-evaluation suite (AEF, Tessera v2 vs.)",
+      "skor": 20,
+      "birim": "kazanç",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "27 değerlendirme",
+      "kaynak_metinden_alinti": "OlmoEarth’s 128-dimensional embeddings score highest on 20 of 27 evals and rank highest overall."
+    },
+    {
+      "model": "OlmoEarth v1.3 (64-dim)",
+      "benchmark": "27-evaluation suite (AEF, Tessera v2 vs.)",
+      "skor": 18,
+      "birim": "kazanç",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "27 değerlendirme",
+      "kaynak_metinden_alinti": "The 64-dimensional version, at half the size, still leads on 18 of 27 evals."
+    }
+  ],
+  "gorsel_url": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/VEmSzlLjei8J3cUVNe7G6.png",
+  "url": "https://huggingface.co/blog/allenai/olmoearth-v1-3",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-10-22T16:11:31.000Z",
+  "slug": "olmoearth-v1-3-state-of-the-art-embeddings-for-the-whole-pla"
+}

@@ -1,0 +1,45 @@
+{
+  "baslik_tr": "OpenAI Forward Deployed Engineering (FDE) Takımı ve Dağıtım Boşluğunu Kapatma Çabaları",
+  "ozet_tr": "OpenAI, 2025'te kurduğu Forward Deployed Engineering (FDE) ekibiyle, modellerin gösterdiği yetenekler ile gerçek iş ortamlarında kullanılabilirlik arasındaki \"dağıtım boşluğunu\" kapatmayı hedefliyor. Takım, John Deere gibi büyük müşterilerde kişiselleştirilmiş AI çözümleri geliştirerek, tarımda %70'e varan kimyasal tasarrufu ve yarı iletken doğrulama süreçlerinde %48 zaman tasarrufu gibi somut faydalar sağladı.",
+  "detayli_icerik_tr": "OpenAI, Codex'in bir dizi kullanım senaryosunu tek seferde halledebilmesi üzerine, bu yeteneklerin pratik iş akışlarına dönüşmesini sağlayacak bir ekip kurduğunu duyurdu. Forward Deployed Engineering (FDE) ekibi, müşterilerin en zor problemlerini anlayıp, doğrudan üretime geçebilecek çözümler üretmeyi ve bu süreçte araştırma ekibine geri bildirim sağlayarak model geliştirmeye yön vermeyi amaçlıyor. \n\nJohn Deere örneğinde, FDE ekibi, çiftçilere özelleştirilmiş tavsiyeler sunan ve tarım makinelerinin verimliliğini %70'e varan oranlarda artıran See & Spray teknolojisinin konfigürasyonunu ve sezon planlamasını doğal dilde destekleyen bir sistem geliştirdi. Bu sayede çiftçiler, ekipmanlarını daha etkili kullanarak sürdürülebilir tarım uygulamalarına geçiş yaptı. \n\nYarı iletken sektöründe ise 15 FDE mühendisi, bir müşterinin doğrulama sürecini AI‑native hâle getirerek yönlendirilmiş test üretiminde %48 zaman tasarrufu, çekirdek optimizasyonunda %22 performans artışı ve haftalar süren hata ayıklama sürecini saatlere indirdi. Bu başarı, ekip üyelerinin sektöre yeni girip kısa sürede uzmanlaşabilme yeteneğini gösterdi. \n\nFDE ekibi, elde edilen çözümleri tekrar kullanılabilir hâle getirerek özel kod miktarını %90 azalttı ve Codex'i ortak bir çekirdek olarak kullanarak yeni takımlara entegrasyonu bir ayaktan bir güne indirdi. Sesli müşteri hizmetleri projesinde ise modelin değerlendirme puanı, 2024 Aralık ayında %65.6 iken 2026 Mayıs'ında %92.29'a yükselerek üretim seviyesine ulaştı. Bu ilerleme, model geliştirme ve gerçek dünya uygulamaları arasındaki geri besleme döngüsünün ne kadar kritik olduğunu ortaya koydu.",
+  "onemli_maddeler": [
+    "FDE ekibi, modellerin gösterdiği yetenekleri gerçek iş değerine dönüştürerek \"dağıtım boşluğunu\" kapatıyor.",
+    "John Deere ile yapılan iş birliği, tarımda %70'e varan kimyasal tasarrufu ve kişiselleştirilmiş AI destekli karar alma süreçleri sağladı.",
+    "Yarı iletken doğrulama projesinde %48 zaman tasarrufu, %22 performans artışı ve hata ayıklama süresinin saatlere indirilmesi elde edildi.",
+    "Kod tabanındaki özel kod %90 oranında azaltıldı; yeni takımlara entegrasyon süresi bir ayaktan bir güne düşürüldü.",
+    "Sesli müşteri hizmetleri modelinin Audio Big Bench doğruluğu %65.6'dan %92.29'a yükselerek üretim seviyesine ulaştı."
+  ],
+  "kategori": "diger",
+  "onem": 4,
+  "onem_gerekce": "Makale, OpenAI'nin kurumsal AI uygulamalarını hızlandırma ve ölçeklendirme stratejilerini ortaya koyarak, sektördeki AI dağıtımının pratik sınırlarını yeniden tanımlıyor; bu, büyük ölçekli işletmeler ve AI geliştiricileri için kritik bir yol haritası sunuyor.",
+  "etiketler": [
+    "OpenAI",
+    "FDE",
+    "AI deployment",
+    "Enterprise AI",
+    "Model benchmarking"
+  ],
+  "anilan_modeller": [
+    "Codex",
+    "OpenAI voice model"
+  ],
+  "yorum_tr": "OpenAI'nin FDE yaklaşımı, AI modellerinin laboratuvar başarısını gerçek iş süreçlerine entegre etme sürecini sistematikleştirerek, hem geliştiricilere hem de kurumsal müşterilere daha hızlı değer yaratma imkanı sunuyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "OpenAI voice model",
+      "benchmark": "Audio Big Bench",
+      "skor": 92.29,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "model snapshots (Dec 2024 – May 2026)",
+      "kaynak_metinden_alinti": "Audio Big Bench accuracy rises across five model snapshots, from 65.6% in December 2024 to 92.29% in May 2026."
+    }
+  ],
+  "gorsel_url": "https://images.ctfassets.net/kftzwdyauwt9/avyxVkYFTgBKxOXiHxw1C/ab86099b3fc9ac1fa3fc3c13ff36c0c0/forward-deployed-engineering-means-social.png?w=1600&h=900&fit=fill",
+  "url": "https://openai.com/index/forward-deployed-engineering-means",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-10-22T06:00:00.000Z",
+  "slug": "what-fde-means-at-openai"
+}

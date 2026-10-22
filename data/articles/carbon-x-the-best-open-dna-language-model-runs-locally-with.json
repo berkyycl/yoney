@@ -1,0 +1,36 @@
+{
+  "baslik_tr": "Carbon-X: DNA ve Doğal Dil'i Birleştiren Açık 14B Model Yerel Olarak Çalışıyor",
+  "ozet_tr": "HuggingFaceBio ekibi, DNA ve doğal dili bir araya getiren 14 milyar parametreli Carbon-X modelini yayınladı. Beş DNA benchmark'ında açık kaynak modelleri geride bırakarak GPT-6.1 Sol ile eşdeğer performans sergiliyor ve maliyeti yaklaşık 1.000 kat daha düşük.",
+  "detayli_icerik_tr": "HuggingFaceBio, Qwen3 14B modelini DNA dizileri ve doğal dil verileriyle birleştirerek orta‑eğitim (midtraining) sürecine tabi tuttu ve yeni bir hibrit tokenizer geliştirdi. Bu süreç sonucunda ortaya çıkan 14 milyar parametreli Carbon-X, DNA anlayışı ve doğal dil işleme yeteneklerini tek bir çatı altında sunuyor.\n\nCarbon-X, beş farklı DNA benchmark'ında test edildi ve bu testlerde tüm açık kaynak büyük dil modellerini geride bırakarak GPT-6.1 Sol ile benzer sonuçlar elde etti. Ayrıca, aynı performansı yaklaşık 1.000 kat daha düşük bir maliyetle sağladığı belirtiliyor; bu da biyoinformatik araştırmalarında maliyet engelini büyük ölçüde azaltıyor.\n\nModel, HuggingFace Hub üzerinden hem standart hem de GGUF formatında sunuluyor. GGUF sürümü sayesinde kullanıcılar, llama.cpp gibi hafif yürütme motorlarıyla modeli yerel makinelerinde çalıştırabiliyor. Bu, özellikle yüksek veri gizliliği gerektiren genomik çalışmalar için kritik bir avantaj sağlıyor.\n\nCarbon-X'in potansiyel kullanım alanları arasında DNA dizilerini doğal dilde sorgulama, mutasyonların fonksiyonel etkilerini tahmin etme ve yeni DNA sekansları üretme yer alıyor. Açık kaynak olması, hassas genomik verilerin güvenli bir şekilde işlenmesini ve araştırmacıların model üzerinde tam kontrol sahibi olmasını mümkün kılıyor.",
+  "onemli_maddeler": [
+    "Carbon-X, 14B parametreli, DNA ve doğal dili aynı anda işleyebilen ilk açık model.",
+    "Beş DNA benchmark'ında tüm açık LLM'leri geride bırakarak GPT-6.1 Sol ile eşdeğer sonuç elde etti.",
+    "Maliyeti yaklaşık 1.000 kat daha düşük, yerel çalıştırma için GGUF formatında sunuldu.",
+    "Qwen3 14B üzerine DNA‑doğal dil karışımıyla orta‑eğitim ve yeni hibrit tokenizer kullanıldı.",
+    "Açık kaynak olması, hassas genomik verilerin güvenli ve özgür araştırmasını destekliyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "DNA odaklı büyük dil modelleri hâlâ sınırlı ve kapalı kalırken, Carbon-X'in açık ve yerel çalıştırılabilir yapısı, biyoinformatik araştırmalarında maliyet ve erişim engellerini büyük ölçüde azaltıyor.",
+  "etiketler": [
+    "DNA",
+    "biyoinformatik",
+    "açık kaynak",
+    "LLM",
+    "llama.cpp"
+  ],
+  "anilan_modeller": [
+    "Carbon-X",
+    "GPT-6.1 Sol",
+    "Qwen3 14B"
+  ],
+  "yorum_tr": "Carbon-X, genomik veri analizi için yüksek performanslı ve düşük maliyetli bir alternatif sunarak araştırmacıların yerel ortamda çalışabilmesini sağlıyor. Açık kaynak yapısı, veri gizliliği ve model şeffaflığı açısından sektöre olumlu bir ivme kazandıracak.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/qbkzaswkvzwh1.png?width=140&height=90&auto=webp&s=e472f54b0cc693518e10793850ba1c362ca474a4",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xcew36/carbonx_the_best_open_dna_language_model_runs/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-22T10:28:40.000Z",
+  "slug": "carbon-x-the-best-open-dna-language-model-runs-locally-with"
+}
