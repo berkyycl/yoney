@@ -1,0 +1,36 @@
+{
+  "baslik_tr": "OpenAI, Jev rakibi Decisions API'yi geniş ölçekte kullanıma sundu",
+  "ozet_tr": "OpenAI, hızlı ve düşük maliyetli karar modelleri pazarına yeni bir oyuncu olarak Decisions API'yi tüm müşterilerine açtı. ChatGPT Luna temelli bu model, yanıt süresini milisaniyeye indirerek geliştiricilerin LLM'leri yerine tercih edebileceği bir alternatif sunuyor.",
+  "detayli_icerik_tr": "OpenAI, Decisions API modelini ilk kez tüm kullanıcılarına sunarak, son dönemde TypeSafe'in Jev modeliyle popülerleşen \"süper sınıflandırıcı\" kategorisine doğrudan bir rakip getirdi. Şirket, Jev'in sunduğu hızlı seçenek belirleme ve güven puanı verme yeteneklerini, ChatGPT Luna'yı yeniden yapılandırarak benzer bir performansla ancak çok daha düşük gecikme süresi ve maliyetle sağladı. Handa, bu yeni API'nin yanıt süresini bir ila üç saniyeden 100‑180 milisaniyeye düşürdüklerini belirtti ve gelecekte özel eğitimlerle daha da iyileştirilebileceğini vurguladı.\n\nKarar modellerinin çoklu modalite desteği de genişletildi; ses ve görsel girdiler artık API üzerinden işlenebiliyor ve coğrafi olarak dağıtılmış çıkarım kaynakları sayesinde dünya çapında düşük gecikme sağlanıyor. Sep 29'da geliştirici gününde duyurulan bu hizmet, Perşembe günü (22 Ekim) tüm müşterilere açıldı. Box, Datadog, Ramp ve Speak gibi firmalar, Decisions API sayesinde LLM'leri daha yüksek verimlilikle değiştirdi; Speak'in CTO'su Andrew Hsu, işlem süresini 1.4 saniyeden 0.13 saniyeye düşürdüklerini söyledi.\n\nBenchmark sonuçları hâlâ belirsizliğini koruyor. AIM System One Index ve Artificial Analysis Decision Index gibi kamu benchmarkları, Liquid'in D1 Ultra ve Base Lab'in Elephant-1 modellerini üst sıralara taşısa da, Jev modeli sırasıyla 7. ve 3. sırada yer alıyor; OpenAI'nin Decisions API ise 8. ve 14. sırada bulunuyor. Bununla birlikte, JevMan adlı PacMan tabanlı benchmarkta en yeni Jev modeli birincilik elde ederken, OpenAI'nin çok-modalli Luna temelli modeli görüntü sınıflandırmada daha iyi kalibrasyon sunuyor.\n\nOpenAI, karar modellerinin hız ve maliyet avantajlarını daha da artırarak, örneğin 60 milisaniyelik yanıt süreleri hedefiyle video akışı gibi yeni kullanım senaryolarını mümkün kılmayı planlıyor. Şirket, bu alandaki talebin \"görünürde olmayan\" bir dizi kullanım durumunu ortaya çıkaracağını ve Jev'in adını taşıyan ekonomistin verimlilik prensibiyle paralel bir yaygınlaşma sağlayacağını öne sürüyor.",
+  "onemli_maddeler": [
+    "Decisions API, yanıt süresini 100‑180 ms'ye düşürerek LLM'lere göre çok daha hızlı karar verme imkanı sunuyor.",
+    "API, ses ve görsel modalitelerle çoklu veri girişini destekleyerek kullanım alanlarını genişletiyor.",
+    "Müşteriler (Box, Datadog, Ramp, Speak) API sayesinde işlem sürelerini %90'a yakın oranlarda kısalttı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Karar modelleri, düşük gecikme ve maliyet avantajlarıyla geniş bir geliştirici kitlesi için yeni bir altyapı sunuyor; OpenAI'nin bu alandaki geniş ölçekli erişimi sektördeki rekabeti ve uygulama çeşitliliğini önemli ölçüde artıracak.",
+  "etiketler": [
+    "OpenAI",
+    "Decisions API",
+    "decision model",
+    "Jev",
+    "AI benchmarks"
+  ],
+  "anilan_modeller": [
+    "Decisions API",
+    "Jev",
+    "ChatGPT Luna",
+    "D1 Ultra",
+    "Elephant-1"
+  ],
+  "yorum_tr": "Decisions API'nin düşük gecikme ve çok-modalli yapısı, geliştiricilerin gerçek zamanlı karar gerektiren uygulamalara yönelmesini hızlandıracak ve LLM'lerin yüksek maliyetli kullanımını azaltacak. Bu da AI ekosisteminde yeni iş modelleri ve hizmetlerin ortaya çıkmasına zemin hazırlayacak.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://techcrunch.com/wp-content/uploads/2026/10/Screenshot-2026-10-22-at-12.17.11-PM-1.png?resize=1200,988",
+  "url": "https://techcrunch.com/2026/10/22/openai-makes-its-jev-competitor-widely-available-as-decision-model-competition-heats-up/",
+  "source": "TechCrunch AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-22T19:00:00.000Z",
+  "slug": "openai-makes-its-jev-competitor-widely-available-as-decision"
+}

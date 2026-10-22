@@ -1,0 +1,63 @@
+{
+  "baslik_tr": "Microsoft'un MAI-DxO sistemi karmaşık vakalarda doktorları geride bıraktı",
+  "ozet_tr": "Microsoft AI, karmaşık tıbbi vakaları simülasyonda %83 doğrulukla teşhis eden MAI-DxO adlı sistemini tanıttı. Bu oran, aynı vakalarda genel pratisyen doktorların %36'sına kıyasla iki katından fazla. Şirket, bu adımı \"tıbbi süperzeka\"ye giden bir basamak olarak nitelendiriyor.",
+  "detayli_icerik_tr": "Microsoft AI, yeni tanı sistemini MAI-DxO (DxO) olarak adlandırdı ve birden fazla yapay zeka ajanının doktor paneli gibi çalışmasını sağladı. Sistem, hastayı sorguluyor, testler istiyor ve tanı üzerine tartışıyor. New England Journal of Medicine'den seçilen karmaşık vakalarla yapılan bir simülasyonda %83 doğruluk elde ederken, tek başına referans materyallerle çalışan birinci basamak hekimleri ve genel internistlerin doğruluk oranı sadece %36 idi. Bu vakalar genellikle uzman doktorlar ya da ekipler tarafından ele alınır; karşılaştırmada bu grup yer almadı.\n\nMAI-DxO'nun başarısının büyük kısmının, altında yatan daha güçlü büyük dil modellerinden (LLM) geldiği, orkestrasyon katmanının ise ek bir iyileştirme sağladığı belirtildi. Microsoft, OpenAI, Google, Anthropic, Meta ve DeepSeek gibi firmaların modelleriyle deneme yaptı; en yüksek performans OpenAI'nin GPT-5 ve yeni sürümü GPT-5.5 üzerinden elde edildi. GPT-5 tek başına %78.9 doğrulukla çalışırken, DxO katmanı maliyeti yaklaşık 3.000 dolar düşürüp doğruluğu dört puan artırdı. GPT-5.5'te ise DxO, %72'lik temel skoru %87'ye çıkararak hem doğruluk hem de maliyet açısından avantaj sağladı.\n\nDaha düşük kapasiteli modellerde DxO'nun etkisi daha belirgindi; örneğin Gemini 2.5 Flash tek başına %46.4 doğruluk gösterirken, DxO entegrasyonu bu oranı %69'a yükseltti. Ancak, daha güçlü modellerle fark azalıyor; acil servis vakalarında hem GPT-5 hem de GPT-5.5 ile DxO arasında anlamlı bir iyileşme gözlemlenmedi. Microsoft, Mayo Clinic ile ortak bir temel model geliştirme çalışması yürütüyor ve 2027'de tıbbi kayıtların akıcı bir şekilde tahmin edilebileceği bir dönüm noktasına ulaşmayı hedefliyor.\n\nŞirket, Boston'daki Beth Israel Deaconess Medical Center ile gerçek dünya değerlendirmeleri başlattı. Hastalar standart tedavi alırken, onay verenler aynı zamanda DxO ile etkileşime girecek ve önerileri insan doktorların kararlarıyla karşılaştırılacak. Bu çalışma, acil servis ve hızlı bakım ortamlarında sistemin ölçeklenebilirliğini ölçmeyi amaçlıyor ve Microsoft'un tıbbi süperzeka vizyonunu somut bir adım olarak konumlandırıyor.",
+  "onemli_maddeler": [
+    "MAI-DxO, karmaşık vakalarda %83 doğrulukla doktorları geride bıraktı (genel hekim %36).",
+    "DxO, GPT-5.5'in doğruluk oranını %72'den %87'ye yükselterek maliyeti de düşürdü.",
+    "Düşük kapasiteli modellerde DxO etkisi daha yüksek; Gemini 2.5 Flash %46.4'ten %69'a çıktı."
+  ],
+  "kategori": "guncelleme",
+  "onem": 5,
+  "onem_gerekce": "AI'nin klinik karar desteğinde doktorları geride bırakması, sağlık hizmetlerinin verimliliği ve güvenliği açısından sektörü dönüştürme potansiyeline sahip kritik bir gelişmedir.",
+  "etiketler": [
+    "AI",
+    "sağlık",
+    "diagnostik",
+    "Microsoft",
+    "MAI-DxO"
+  ],
+  "anilan_modeller": [
+    "MAI-DxO",
+    "GPT-5",
+    "GPT-5.5",
+    "Gemini 2.5 Flash"
+  ],
+  "yorum_tr": "Bu gelişme, tıbbi yapay zekanın klinik karar süreçlerine entegrasyonunu hızlandırarak hem maliyetleri düşürüp hem de tanı doğruluğunu artırma potansiyeli taşıyor; geliştiriciler için daha sofistike orkestrasyon katmanları, kullanıcılar için ise daha güvenilir destek anlamına geliyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "MAI-DxO",
+      "benchmark": "Complex case diagnostic accuracy (NEJM simulation)",
+      "skor": 83,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "simülasyon",
+      "kaynak_metinden_alinti": "The system ... was correct 83% of the time."
+    },
+    {
+      "model": "GPT-5.5 + DxO",
+      "benchmark": "Complex case diagnostic accuracy",
+      "skor": 87,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "simülasyon",
+      "kaynak_metinden_alinti": "With GPT-5.5, ... DxO increased ... accuracy score from 72% to nearly 87%."
+    },
+    {
+      "model": "Gemini 2.5 Flash + DxO",
+      "benchmark": "Complex case diagnostic accuracy",
+      "skor": 69,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "simülasyon",
+      "kaynak_metinden_alinti": "Gemini 2.5 Flash, for example, scored 46.4% on its own but nearly 69% with DxO."
+    }
+  ],
+  "gorsel_url": "https://techcrunch.com/wp-content/uploads/2026/10/GettyImages-1935915215.jpg?w=1024",
+  "url": "https://techcrunch.com/2026/10/22/microsofts-mustafa-suleyman-says-its-ai-outperforms-doctors-on-hard-cases-as-he-chases-medical-superintelligence/",
+  "source": "TechCrunch AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-22T18:43:53.000Z",
+  "slug": "microsoft-s-mustafa-suleyman-says-its-ai-outperforms-doctors"
+}

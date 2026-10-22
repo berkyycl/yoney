@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "Decisions API Genel Kullanıma Açıldı: Gerçek Zamanlı Karar Mekanizması",
+  "ozet_tr": "OpenAI, GPT‑6 Luna üzerine inşa edilen Decisions API'yi genel kullanıma sunarak geliştiricilere metin, görsel ve yapılandırılmış girdiler üzerinden anlık kararlar üretme imkanı tanıdı. Yeni API, yanıt süresini 10 kat hızlandırırken, maliyetleri de önemli ölçüde düşürüyor.",
+  "detayli_icerik_tr": "OpenAI, bugün Decisions API'yi genel kullanıma açtığını duyurdu. GPT‑6 Luna modelinin zekâsını sınırlı yanıt gerektiren sorulara odaklayan bu API, metin, görsel ve JSON formatındaki girdileri işleyerek anlık kararlar üretiyor ve Responses API'ye kıyasla işlem süresini on kata kadar kısaltıyor.\n\nBeta sürecinde eklenen yenilikler arasında yerel GPT‑Live entegrasyonu, tekrar kullanılan bağlamlar için prompt önbellekleme ve ABD ile AB bölgelerinde inference residency bulunuyor. Geliştiriciler artık JSON girdileriyle çalışabilir, sorulara görsel ekleyebilir ve bir istekte 400 soruya kadar sorabilir; bu, önceki 200 soruluk sınıra iki kat artırılmış bir limit.\n\nDecisions API üç yanıt türü sunuyor: \"predicate\" (0‑1 arasında olasılık), \"choice\" (önceden tanımlı seçeneklerden biri) ve \"score\" (rubrik seviyelerinin ağırlıklı ortalaması). Bu çeşitlilik, uygulamaların karar verme süreçlerini farklı senaryolara uyarlamasını sağlıyor. Örneğin, bir finans uygulaması işlem açıklamalarını sınıflandırabilir, bir iletişim ekibi içerik temalarını puanlayabilir ya da bir sesli asistan gerçek zamanlı konuşma sırasında yönlendirme ve duygu tepkileri üretebilir.\n\nFiyatlandırma açısından Decisions API, giriş tokenları için milyon başına 0,10 $, önbelleğe alınan girişler için ise 0,01 $ talep ediyor; çıktı tokenları için ek ücret yok. ABD ve AB bölgelerinde veri işleme, uygun müşteriler için sıfır veri saklama seçeneğiyle destekleniyor. Geliştiriciler, Decisions Playground ve API dokümantasyonu aracılığıyla ilk kararlarını hızlıca test edebilecek.",
+  "onemli_maddeler": [
+    "Decisions API, GPT‑6 Luna tabanlı olup karar verme süresini 10 kata kadar hızlandırıyor.",
+    "API, metin, görsel ve native JSON girdilerini destekleyerek 400 soruya kadar tek istekle yanıt verebiliyor.",
+    "Üç yanıt türü (probability, choice, score) sayesinde geniş bir kullanım yelpazesi sunuluyor.",
+    "Fiyatlandırma sadece giriş tokenları üzerinden; çıktı tokenları ücretsiz, önbellekleme maliyeti düşük."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Decisions API, OpenAI'nin en yeni modeli GPT‑6 Luna'yı odaklayarak gerçek zamanlı, düşük maliyetli karar mekanizmaları sunmasıyla geliştiricilerin uygulama gecikmesini azaltmasını ve yeni etkileşimli senaryolar yaratmasını sağlayacak kritik bir araçtır.",
+  "etiketler": [
+    "Decisions API",
+    "GPT-6 Luna",
+    "API",
+    "gerçek zamanlı",
+    "AI"
+  ],
+  "anilan_modeller": [
+    "GPT-6 Luna"
+  ],
+  "yorum_tr": "Decisions API, düşük gecikmeli karar verme ihtiyacı duyan uygulamalar için önemli bir adım; geliştiriciler hem performans hem de maliyet açısından avantaj elde ederken, kullanıcı deneyimi daha akıcı ve etkileşimli hale gelecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://images.ctfassets.net/kftzwdyauwt9/2oP82PTDAPhlalF1TRNt8Q/af6bb8e886e29d6e0880c75a0de781f8/build-more-responsive-apps-with-the-decisions-api-social.png?w=1600&h=900&fit=fill",
+  "url": "https://openai.com/index/decisions-api",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-10-22T19:00:00.000Z",
+  "slug": "build-more-responsive-apps-with-the-decisions-api"
+}

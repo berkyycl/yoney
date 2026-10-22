@@ -1,0 +1,81 @@
+{
+  "baslik_tr": "Snapdragon Mini PC’de ToRc Motoru ile 35B Modeli 315 tok/s Hıza Ulaştı – Flash Next Benchmark Sonuçları",
+  "ozet_tr": "Snapdragon X1 tabanlı mini PC'lerde geliştirilen yeni ToRc motoru, Qwen3.6 35B A3B modelini iki kutu konfigürasyonunda 315 tok/s okuma hızıyla çalıştırdı. Aynı sistemde Flash Next IQ4_NL modeli de 46.2 tok/s okuma performansı gösterdi. Bu sonuçlar, düşük maliyetli ARM cihazlarda büyük LLM’lerin gerçek zamanlı sohbet yeteneklerini ortaya koyuyor.",
+  "detayli_icerik_tr": "Reddit topluluğu üyesi WorldlyAd7946, £300 civarında bir Snapdragon X1-26-100 tabanlı Lenovo IdeaCentre Mini PC'yi iki adet birleştirerek 600 £'lık bir test ortamı kurdu. Cihazlar Windows 11 işletim sistemi, 32 GB LPDDR5 RAM ve 512 GB NVMe depolama ile donatıldı; GPU kullanılmadı ve sadece CPU çekirdekleri ile Hexagon NPU’dan yararlanıldı. \n\nKullanılan motorlar arasında klasik llama.cpp, Janas ve henüz yayınlanmamış ToRc bulunuyor. ToRc, CPU ve NPU'yu birleştirerek hem düz hem de MTP (Mixture of Tokens Prediction) başlıklarıyla çalışıyor. Testlerde aynı GGUF dosyaları farklı motorların .jns formatına dönüştürülerek karşılaştırıldı. \n\nBenchmark, yaklaşık 580 tokenlık bir Alice's Adventures in Wonderland giriş metni ve 128 tokenlık yanıt üretimini içeriyor; ayrıca 62 tokenlık bir kod isteği ve ardından 6 referans kontrolü de yapıldı. Ölçümler, istemci tarafından HTTP istek süresi dahil edilerek tok/s cinsinden raporlandı. ToRc iki kutuda çalıştırıldığında Qwen3.6 35B A3B modeli 315 tok/s okuma ve 43.3 tok/s yazma hızına ulaştı; tek kutuda ise 228 tok/s okuma ve 43.4 tok/s yazma elde edildi. \n\nFlash Next IQ4_NL modeli, 95 GB boyutundaki ağırlıkları nedeniyle tek kutuda RAM sınırlamasıyla çalıştırılamadı; ancak ToRc iki kutuda IQ4_NL için 46.2 tok/s okuma ve 20.3 tok/s yazma performansı sağladı. Bu, SSD üzerinden akış (streaming) yaparak büyük modellerin düşük bellekli ARM sistemlerde çalıştırılabileceğini gösteriyor. Enerji tüketimi ise iki kutu için yaklaşık 35 W civarında ölçüldü, bu da GPU tabanlı çözümlere göre çok daha ekonomik bir seçenek sunuyor.",
+  "onemli_maddeler": [
+    "ToRc motoru, iki Snapdragon mini PC'de Qwen3.6 35B A3B modelini 315 tok/s okuma hızıyla çalıştırdı.",
+    "Flash Next IQ4_NL modeli, ToRc ile iki kutuda 46.2 tok/s okuma ve 20.3 tok/s yazma performansı gösterdi.",
+    "GPU kullanılmadan, sadece CPU ve NPU ile büyük LLM’lerin akıcı sohbet ve kod üretimi yapılabildi.",
+    "İki kutu konfigürasyonu, tek kutuya göre okuma hızında %50’ye varan artış sağladı."
+  ],
+  "kategori": "benchmark",
+  "onem": 3,
+  "onem_gerekce": "Topluluk tarafından yapılan kapsamlı benchmark, düşük maliyetli Snapdragon mini PC üzerinde büyük LLM’lerin performansını gösteriyor, ancak hâlâ sınırlı bir kitleye hitap ediyor.",
+  "etiketler": [
+    "Snapdragon",
+    "LLM",
+    "benchmark",
+    "ToRc",
+    "Flash Next"
+  ],
+  "anilan_modeller": [
+    "Qwen3.6 35B A3B",
+    "Qwen3.8 Flash Next IQ4_NL",
+    "Qwen3.8 Flash Next UD-Q4_K_XL"
+  ],
+  "yorum_tr": "Bu sonuçlar, GPU’suz ARM tabanlı sistemlerde büyük dil modellerinin akıcı sohbet performansı sağlayabileceğini gösteriyor; geliştiriciler düşük maliyetli donanımla prototipler oluşturabilir, ancak ölçek ve hız açısından hâlâ GPU çözümlerinin gerisinde kalıyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen3.6 35B A3B",
+      "benchmark": "Read (prose)",
+      "skor": 315,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "two boxes",
+      "kaynak_metinden_alinti": "ToRc two boxes: 315 / 43.3 / 43.3."
+    },
+    {
+      "model": "Qwen3.6 35B A3B",
+      "benchmark": "Write (prose)",
+      "skor": 43.3,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "two boxes",
+      "kaynak_metinden_alinti": "ToRc two boxes: 315 / 43.3 / 43.3."
+    },
+    {
+      "model": "Qwen3.8 Flash Next IQ4_NL",
+      "benchmark": "Read (prose)",
+      "skor": 46.2,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "ToRc IQ4_NL 2 boxes",
+      "kaynak_metinden_alinti": "ToRc IQ4_NL, 2 boxes: 46.2 / 20.3."
+    },
+    {
+      "model": "Qwen3.8 Flash Next IQ4_NL",
+      "benchmark": "Write (code)",
+      "skor": 20.3,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "ToRc IQ4_NL 2 boxes",
+      "kaynak_metinden_alinti": "ToRc IQ4_NL, 2 boxes: 46.2 / 20.3."
+    },
+    {
+      "model": "Engine internal ToRc",
+      "benchmark": "Read (600-token prompt)",
+      "skor": 343.6,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "two boxes internal bench",
+      "kaynak_metinden_alinti": "Engine-internal (ToRc's own bench, no server in the way): two boxes read 343.6 tok/s on a 600-token prompt."
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/suwogb53k1xh1.jpeg?width=640&crop=smart&auto=webp&s=62bdbdb5255fa91880c80aaac4c22398b8e4f1d2",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xcmioz/q4_flash_next_for_300600_snapdragon_mini_pc/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-22T15:58:48.000Z",
+  "slug": "q4-flash-next-for-300-600-snapdragon-mini-pc-results-update"
+}

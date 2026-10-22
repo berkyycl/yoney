@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "Ant Ling, 124B parametreli Ling-3.0-flash-Sante modelini duyurdu",
+  "ozet_tr": "Ant Ling, sağlık odaklı yeni bir büyük dil modeli olan Ling-3.0-flash-Sante'yi tanıttı. Model, 124 milyar toplam parametreye ve token başına 5.1 milyar aktif parametreye sahip olup 256K bağlam penceresi sunuyor. Ağırlık dosyaları hâlihazırda Hugging Face üzerinde erişime açık.",
+  "detayli_icerik_tr": "Ant Ling, bugün ikinci modelini duyurarak topluluğa bir kez daha yenilik getirdi. Yeni model, Ling-3.0-flash tabanının üzerine inşa edilmiş ve \"Sante\" adıyla anılıyor. Toplam 124 milyar parametreye sahip olan model, her token için 5.1 milyar aktif parametre çalıştırarak yüksek verimlilik vaat ediyor. Ayrıca 256K bağlam penceresi sayesinde uzun metinlerde tutarlı çıkarım yapabilme kapasitesi bulunuyor.\n\nSante, özellikle tıbbi akıl yürütme, bilimsel literatür araştırması ve araç destekli iş akışları için optimize edilmiş bir versiyon olarak tanımlanıyor. Bu odaklanma, genel amaçlı büyük dil modellerinin sağlık sektöründeki spesifik ihtiyaçlarını karşılamada daha etkili olmasını hedefliyor. Modelin ağırlıkları Hugging Face platformunda yayınlanmış durumda, bu da araştırmacıların ve geliştiricilerin modeli doğrudan indirip incelemelerine olanak tanıyor.\n\nTopluluk içinde, önceki Ling-3.1-flash-1019 güncellemesinin ardından bellek gereksinimleriyle ilgili tartışmalar yaşanmıştı. Sante'nin daha eski bir temel üzerine inşa edilmesi, hafıza sınırlamalarıyla mücadele eden kullanıcılar için bir nefes aldırıcı oldu. Kullanıcılar, belirli bir alana odaklanmış modellerin, genel liderlik tablolarına göre daha değerli ve uygulanabilir sonuçlar sunduğunu belirtiyor.\n\nBu duyuru, Ant Ling'in aynı gün içinde iki model açıklaması yapmasıyla toplulukta büyük bir heyecan yarattı. Geliştiriciler, alan odaklı modellerin yaygınlaşmasıyla daha fazla özelleştirilmiş AI çözümlerinin ortaya çıkmasını bekliyor. Sante'nin açık kaynak olarak sunulması, tıp alanında araştırma ve uygulama geliştirmeyi hızlandırabilir.",
+  "onemli_maddeler": [
+    "Ling-3.0-flash-Sante, 124B toplam parametre ve 5.1B aktif parametreyle yüksek verimlilik sunuyor.",
+    "Model, 256K bağlam penceresi ve sağlık odaklı görevler için optimize edilmiş bir mimariye sahip.",
+    "Ağırlık dosyaları Hugging Face üzerinde yayınlanarak topluluk erişimine açık hâle getirildi."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 3,
+  "onem_gerekce": "Yeni bir büyük dil modeli duyurulması topluluk için ilgi çekici, ancak henüz geniş çaplı endüstri etkisi ve benchmark sonuçları bulunmadığından orta seviyede bir önem taşıyor.",
+  "etiketler": [
+    "Ling-3.0-flash",
+    "Sante",
+    "sağlık AI",
+    "büyük dil modeli",
+    "Hugging Face"
+  ],
+  "anilan_modeller": [
+    "Ling-3.0-flash-Sante"
+  ],
+  "yorum_tr": "Sante'nin sağlık odaklı tasarımı, tıp araştırmaları ve klinik karar destek sistemleri için özelleştirilmiş çözümler geliştirmeyi kolaylaştırabilir. Açık kaynak olarak sunulması, akademik ve endüstriyel iş birliğini teşvik ederek alandaki inovasyonu hızlandırabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/ngzr543fd1xh1.png?width=140&height=140&crop=1:1,smart&auto=webp&s=447f0eba959f9bee943ab9de24a2ad6f75ac93ae",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xcljvi/ant_ling_just_announced_a_second_model_today/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-22T15:22:41.000Z",
+  "slug": "ant-ling-just-announced-a-second-model-today-ling-3-0-flash"
+}

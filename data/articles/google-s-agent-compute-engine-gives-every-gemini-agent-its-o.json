@@ -1,0 +1,43 @@
+{
+  "baslik_tr": "Google, Gemini ajanları için donanım izoleli mikro VM'ler sunan Agent Compute Engine'i tanıttı",
+  "ozet_tr": "Google, Gemini tabanlı yapay zeka ajanlarını izole bir donanım ortamına taşıyan Agent Compute Engine (ACE) hizmetini duyurdu. Her ajan, Google'ın Titanium çipiyle korunan bir mikro sanal makine içinde çalışıyor ve boşta kaldığında otomatik olarak duraklatılarak kaynaklar serbest bırakılıyor. Testlerde 200.000 ajan arasında suspend‑resume süresi 500 milisaniyenin altında gerçekleşti.",
+  "detayli_icerik_tr": "Google, Gemini gibi büyük dil modelleriyle çalışan yapay zeka ajanları için yeni bir altyapı hizmeti olan Agent Compute Engine'i (ACE) tanıttı. ACE, her bir ajanı donanım‑izoleli bir mikro sanal makine (microVM) içinde çalıştırıyor; bu mikroVM'ler Google'ın özel Titanium çipiyle güvence altına alınıyor. Ajanlar etkin olmadığında VM otomatik olarak duraklatılıyor ve böylece aynı fiziksel sunucuda daha fazla ajan barındırılabiliyor.\n\nŞirket, ACE sayesinde aynı sunucuda on kat daha fazla ajan çalıştırabildiğini ve 200.000 ajanlık bir test ortamında bir ajanı duraklatıp yeniden başlatmanın 500 milisaniyeden az sürdüğünü belirtti. Paylaşımlı bellek (shared memory) mekanizması, mikroVM'ler arasındaki veri aktarımını optimize ederek çalışma maliyetlerini düşürüyor. Bu, özellikle büyük ölçekli ajan tabanlı sistemlerde maliyet etkinliğini artırmayı hedefleyen bir adım.\n\nACE, aynı zamanda denetim ve güvenlik özelliklerini de genişletiyor. Token takibi, model yönlendirme ve Ping Identity, SailPoint gibi üçüncü taraf kimlik sağlayıcılarıyla entegrasyon sayesinde, ajanların kimlik doğrulaması ve erişim kontrolü daha şeffaf hale geliyor. Bu denetim mekanizmaları Cloud Run, Google Kubernetes Engine (GKE) ve yönetilen uç noktalar gibi Google Cloud hizmetlerine de uygulanabiliyor.\n\nGoogle, bu altyapıyı açık kaynaklı Agent Substrate adlı bir Kubernetes çalışma zamanı ile destekliyor. Geliştiriciler, Agent Substrate sayesinde ACE'yi kendi Kubernetes kümelerinde kolayca dağıtabilir ve ölçeklendirebilir. ACE'nin tanıtımı, bulut tabanlı yapay zeka ajanlarının hem performans hem de güvenlik açısından yeni bir standart oluşturma potansiyeli taşıyor.",
+  "onemli_maddeler": [
+    "Her Gemini ajanı, donanım‑izoleli bir microVM içinde çalıştırılıyor ve boşta kaldığında otomatik olarak duraklatılıyor.",
+    "200.000 ajanlık testte suspend ve resume süresi 500 ms'nin altında gerçekleşti, bu da yüksek ölçeklenebilirlik sağlıyor.",
+    "Paylaşımlı bellek sayesinde aynı sunucuda on kat daha fazla ajan barındırılabiliyor, maliyetler önemli ölçüde azalıyor.",
+    "Token takibi, model yönlendirme ve üçüncü taraf kimlik sağlayıcıları entegrasyonu ile denetim ve güvenlik artırıldı."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Google'ın yeni Agent Compute Engine'i, Gemini gibi ajan tabanlı sistemlerin ölçeklenebilirliğini ve güvenliğini artırarak bulut AI altyapısında önemli bir verimlilik ve denetim adımı sunması nedeniyle yüksek öneme sahiptir.",
+  "etiketler": [
+    "Google Cloud",
+    "Gemini",
+    "AI agents",
+    "microVM",
+    "cloud infrastructure"
+  ],
+  "anilan_modeller": [
+    "Gemini"
+  ],
+  "yorum_tr": "Agent Compute Engine, büyük ölçekli yapay zeka ajanlarının maliyetini düşürürken güvenlik ve denetim kabiliyetlerini de güçlendiriyor; bu da geliştiricilerin daha fazla sayıda ajanı verimli bir şekilde dağıtmasını mümkün kılıyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Agent Compute Engine",
+      "benchmark": "Suspend/Resume latency",
+      "skor": 500,
+      "birim": "ms",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "200,000 agents test ortamı",
+      "kaynak_metinden_alinti": "In a test with 200,000 agents, suspend and resume took less than 500 milliseconds, according to Google."
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/06/google_logo_wall-2.png",
+  "url": "https://the-decoder.com/googles-agent-compute-engine-gives-every-gemini-agent-its-own-hardware-isolated-micro-virtual-machine/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-22T17:50:09.000Z",
+  "slug": "google-s-agent-compute-engine-gives-every-gemini-agent-its-o"
+}

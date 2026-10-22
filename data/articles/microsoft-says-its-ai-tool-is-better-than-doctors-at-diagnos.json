@@ -1,0 +1,56 @@
+{
+  "baslik_tr": "Microsoft'un AI destekli Diagnostic Orchestrator'u doktorlardan 4 kat daha doğru teşhis koyuyor",
+  "ozet_tr": "Microsoft, GPT‑5 tabanlı Diagnostic Orchestrator adlı yapay zeka aracının, tıbbi vaka raporları ve acil servis verileri üzerinde yapılan testlerde doktorların %36 ve %47 oranındaki doğruluklarını geride bırakarak %83‑%80 doğruluk elde ettiğini duyurdu. Şirket, bu sonuçları Science dergisinde yayımlanan bir makaleye dayandırarak SDBench adlı kendi benchmark'ını açık kaynak yapma planını açıkladı.",
+  "detayli_icerik_tr": "Microsoft AI CEO'su Mustafa Suleyman, The Verge ile yaptığı röportajda, yapay zekanın sağlık alanında gerçek bir dönüm noktasına ulaştığını belirtti. Şirket, OpenAI'nin GPT‑5 modelini temel alan Diagnostic Orchestrator adlı sistemini, semptomları ve tıbbi geçmişi analiz edip gerekli testleri önererek bir tanı koyma sürecini taklit edecek şekilde tasarladı. Bu sistem, birden fazla AI ajanının birlikte çalışmasıyla doktorların klinik karar verme adımlarını taklit ediyor.\n\nAraştırmacılar, sistemin performansını iki farklı veri setiyle ölçtü: New England Journal of Medicine'den alınan yüzlerce vaka raporu ve Boston'daki Beth Israel Deaconess Medical Center'ın acil servis hasta kabul verileri. NEJM vakalarında Diagnostic Orchestrator %83 doğruluk sağlarken, genel pratisyen doktorlar referanslarla %36, referans olmadan %22 oranında başarılı oldu. Acil servis senaryolarında ise sistem %80 doğruluk elde ederken, doktorların ortalama doğruluk oranı %47 idi. Ayrıca yapay zekanın tanı sürecinin maliyetinin insan doktorlara göre daha düşük olduğu kaydedildi.\n\nBu sonuçlar, Microsoft'un \"medikal süperzeka\" vizyonunun bir parçası olarak sunuldu. Şirket, SDBench benchmark'ını açık kaynak yaparak akademik ve endüstri topluluklarının aynı test ortamını kullanmasını hedefliyor. Ancak Suleyman, sistemin sadece geçmiş vakalar üzerinde test edildiğini ve gerçek klinik ortamlarda geçerli olup olmadığının henüz kanıtlanmadığını vurgulayarak, kapsamlı klinik doğrulama sürecinin gerektiğini belirtti.\n\nMicrosoft, önümüzdeki aylarda Diagnostic Orchestrator'ı Beth Israel Deaconess Medical Center'da pilot uygulamaya almayı planlıyor. Ticari lansman tarihi kesinleşmemiş olsa da, şirketin sağlık sektöründeki mevcut dijital araçları ve Copilot entegrasyonları göz önüne alındığında, bu teknoloji yakın gelecekte hastane sistemlerine entegre edilebilir. Süperzeka hedefi, tanı dışındaki alanlarda da klinik bakım koordinasyonu, tedavi kararı ve hasta‑doktor etkileşimini kapsayan beş ek yetkinliği geliştirmeyi içeriyor.",
+  "onemli_maddeler": [
+    "Diagnostic Orchestrator, NEJM vaka raporlarında %83, acil servis verilerinde %80 doğrulukla doktorları geride bıraktı.",
+    "Sistem, OpenAI GPT‑5 üzerine inşa edildi ve birden fazla AI ajanının birlikte çalışmasıyla tanı sürecini taklit ediyor.",
+    "Microsoft, testlerde kullanılan SDBench benchmark'ını açık kaynak yaparak sektörel standartların oluşturulmasını hedefliyor."
+  ],
+  "kategori": "benchmark",
+  "onem": 5,
+  "onem_gerekce": "AI destekli tanı sisteminin doktorları geride bırakması, sağlık hizmetlerinde verimlilik ve doğruluk açısından devrim niteliğinde bir adım oluşturuyor; bu da sektördeki rekabeti ve regülasyonları doğrudan etkileyebilir.",
+  "etiketler": [
+    "AI",
+    "healthcare",
+    "diagnostic",
+    "Microsoft",
+    "GPT-5"
+  ],
+  "anilan_modeller": [
+    "GPT-5",
+    "GPT-4.1",
+    "GPT-6 Astra",
+    "Muse Wonder Full",
+    "Gemini 4 Argon",
+    "Opus 5.5"
+  ],
+  "yorum_tr": "Bu gelişme, yapay zekanın klinik karar süreçlerine entegrasyonu konusunda önemli bir kanıt sunuyor; ancak gerçek dünya uygulamaları için kapsamlı klinik doğrulama ve düzenleyici onaylar şart. Geliştiriciler, çok‑ajanlı mimarileri daha da iyileştirirken, doktorlar da AI destekli araçları rutin iş akışlarına dahil etmeye hazırlanmalı.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Diagnostic Orchestrator (GPT-5)",
+      "benchmark": "SDBench (NEJM vaka raporları)",
+      "skor": 83,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "case reports",
+      "kaynak_metinden_alinti": "Microsoft’s system achieved a diagnostic accuracy of around 83 percent, compared with roughly 36 percent for generalist physicians using references and 22 percent for those working without them."
+    },
+    {
+      "model": "Diagnostic Orchestrator (GPT-5)",
+      "benchmark": "SDBench (Emergency department cases)",
+      "skor": 80,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "emergency department admissions",
+      "kaynak_metinden_alinti": "scoring 80 percent accuracy compared with an average of 47 percent for human physicians."
+    }
+  ],
+  "gorsel_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/gettyimages-2207866106.jpg?quality=90&strip=all&crop=0,0,100,100",
+  "url": "https://www.theverge.com/ai-artificial-intelligence/1016690/suleyman-microsoft-diagnostic-orchestrator-science-medical-superintelligence",
+  "source": "The Verge AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-22T18:00:00.000Z",
+  "slug": "microsoft-says-its-ai-tool-is-better-than-doctors-at-diagnos"
+}

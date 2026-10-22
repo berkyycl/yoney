@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "Anthropic, Agent Skills Açık Standardını Agentic AI Foundation'a Bağışladı",
+  "ozet_tr": "Anthropic, AI ajanları için geliştirilen açık standart Agent Skills'i, Linux Foundation çatısı altındaki Agentic AI Foundation (AAIF)'a devrediyor. Bu hamle, 70'ten fazla platformun entegrasyon sağladığı ve bir milyondan fazla becerinin yayınlandığı ekosistemin vendor‑neutral bir yapıda sürdürülmesini amaçlıyor.",
+  "detayli_icerik_tr": "Anthropic, Aralık 2025'te duyurduğu Agent Skills standardını, Agentic AI Foundation (AAIF) bünyesine bağışlayarak açık, topluluk odaklı ve satıcı bağımsız bir yapı oluşturmayı hedefliyor. Agent Skills, bir SKILL.md dosyası ve ilgili betikler ya da referans materyallerini içeren bir klasör yapısı üzerinden ajanlara belirli görev ya da alan bilgisi kazandıran bir paket olarak tanımlanıyor. Claude Code üzerinde geliştirilen bu beceriler, genel bilgi işlerinde başarılı olsa da gerçek iş süreçlerinde eksik kalan prosedürel bilgiyi tamamlamak için tasarlandı.\n\nStandardın lansmanından kısa bir süre sonra geliştiriciler GitHub üzerinde binlerce beceri yayınladı ve Codex, Cursor, OpenCode gibi platformlar için yükleyiciler (loader) oluşturdu. Bugüne kadar 1 milyon beceri yayınlanmış ve yaklaşık 280 milyon kez kurulmuş durumda; entegrasyonlar arasında ChatGPT, Cursor, GitHub Copilot ve VS Code gibi popüler AI ajan platformları yer alıyor.\n\nAAIF'e yapılan bağış, sadece standardın adı, logosu, GitHub organizasyonu ve agentskills.io alan adını kapsıyor. Anthropic, Google, OpenAI ve diğer şirketlerden mühendislerin, David Soria Parra ve Mahesh Murag liderliğinde bireysel katkı sağlayarak standardı sürdürmesi planlanıyor. AAIF, Linux Foundation altında bağımsız bir ev sahipliği sağlayarak topluluk geri bildirimlerine dayalı sürüm yönetimi, öneri süreçleri ve güvenlik rehberliği gibi konularda yol haritası oluşturacak.\n\nGelecek planları arasında sürümleme, resmi öneri mekanizması ve becerileri yazan ve kuran geliştiriciler için güvenlik yönergeleri bulunuyor. Topluluk, Discord kanalı ve GitHub üzerinden geri bildirimde bulunabilecek. Bu adım, AI ajan ekosisteminde standartlaşmış bir beceri paylaşım altyapısının uzun vadeli sürdürülebilirliğini güvence altına almayı amaçlıyor.",
+  "onemli_maddeler": [
+    "Agent Skills standardı, 70'ten fazla AI ajan platformu tarafından benimsenmiş ve 1 milyon beceri yayınlanmıştır.",
+    "Anthropic, standardı AAIF'e bağışlayarak Linux Foundation çerçevesinde vendor‑neutral bir yönetim modeli oluşturdu.",
+    "AAIF, sürümleme, öneri süreci ve güvenlik rehberliği gibi konularda topluluk odaklı bir yol haritası sunacak."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "AI ajanları için ortak bir beceri standardının vendor‑neutral bir çatı altında sürdürülmesi, ekosistemin ölçeklenebilirliği ve güvenliği açısından kritik bir gelişmedir.",
+  "etiketler": [
+    "AI",
+    "Agent Skills",
+    "Açık Standart",
+    "Anthropic",
+    "Agentic AI Foundation"
+  ],
+  "anilan_modeller": [
+    "Claude Code"
+  ],
+  "yorum_tr": "Agent Skills'in bağımsız bir vakıf altında yönetilmesi, geliştiricilerin standartları daha hızlı benimsemesini ve güvenli bir şekilde genişletmesini sağlayarak AI ajan pazarının olgunlaşmasına katkı sağlayacak.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/6d4a0d28992ade92d6fa63646fd9c9d318245c6c-2400x1260.jpg",
+  "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+  "source": "Anthropic",
+  "sourceTier": "resmi",
+  "date": "2026-10-22T00:00:00.000Z",
+  "slug": "donating-agent-skills-to-the-agentic-ai-foundation"
+}
