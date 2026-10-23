@@ -1,0 +1,43 @@
+{
+  "baslik_tr": "Anthropic'in Claude’u artık kod yazıyor ve otomatik olarak güvenliğini kanıtlıyor",
+  "ozet_tr": "Anthropic ve iş ortağı Theorem, Claude modelini kullanarak 123 açık kaynaklı kütüphane için 180 milyon satırdan fazla matematiksel kanıt üretti. Model, geleneksel testlerin kaçırdığı yüzlerce hatayı tespit ederek kodun güvenliğini otomatik olarak doğruladı. Bu adım, yapay zekâ destekli yazılım otomasyonunun yeni bir seviyeye taşınmasını işaret ediyor.",
+  "detayli_icerik_tr": "Anthropic'in Claude modeli, Theorem iş birliğiyle mevcut açık kaynak kodlarını matematiksel olarak kanıtlayarak doğrulama sürecini otomatikleştirdi. Model, Google'ın OSS‑Fuzz projesindeki 123 kütüphane için çökme testlerini matematiksel problemlere dönüştürdü, derlenmiş makine kodunu analiz etti ve yaklaşık 180 milyon satır kanıt kodu üretti. Bu kanıtlar, bağımsız bir doğrulama aracı olan Rocq tarafından otomatik olarak kontrol edildi ve insan denetimine neredeyse ihtiyaç duyulmadı.\n\nClaude, kanıt üretimi sırasında yüzlerce hatayı tespit etti ve kendisi düzeltti. Özellikle bir PDF okuyucusunun güvenlik açıkları bir haftada bir yıl içinde raporlanan hatalar kadar bulundu; başka bir kütüphanede ise on yıldan uzun süredir fark edilmemiş mantıksal bir hata ortaya çıkarıldı. Bu bulgular, geleneksel testlerin yalnızca belirli koşullarda ortaya çıkan hataları yakalayabildiğini, Claude'un ise çok daha nadir ve karmaşık senaryolarda da sorunları ortaya çıkarabildiğini gösteriyor.\n\nAncak Anthropic, bu tür \"formel doğrulanmış\" kodların hâlâ sınırlı koşullar altında geçerli olduğunu vurguluyor. Kanıtlar yalnızca belirli bir işlemci mimarisi, tek iş parçacıklı çalışma ve 64 MB altında giriş verileri için geçerli. Ayrıca bir kanıtın üretilmesi yüz milyonlarca token harcaması anlamına geliyor; toplam proje maliyeti açıklanmadı. Bununla birlikte, yeni nesil Claude Opus 5.5 modeli, önceki Opus 5 sürümüne göre kanıtların %40 daha az token harcayarak yarısını çözebildi.\n\nAnthropic, bu teknolojinin gelecekte standart test süreçlerinin yerini alabileceğini ve kritik altyapı bileşenleri (glibc, OpenSSL, cURL gibi) için de uygulanabileceğini öngörüyor. AI tarafından üretilen kodun kendi güvenliğini kanıtlayabilmesi, geliştiricilerin inceleme süresini kısaltıp maliyetleri düşürürken, yazılım güvenliğine dair güveni de artırabilir.",
+  "onemli_maddeler": [
+    "Claude, 123 açık kaynak kütüphane için 180 milyon satır kanıt kodu üreterek tam otomatik formel doğrulama sağladı.",
+    "Model, geleneksel testlerin kaçırdığı yüzlerce güvenlik hatasını tespit edip düzeltti; bir PDF okuyucusunda bir haftada bir yılın hatası bulundu.",
+    "Kanıtlar sadece belirli işlemci mimarisi, tek iş parçacığı ve 64 MB altı girişler için geçerli; token maliyeti yüz milyonları buluyor.",
+    "Claude Opus 5.5, önceki sürüme göre kanıtların %40 daha az token harcayarak yarısını çözebildi."
+  ],
+  "kategori": "guncelleme",
+  "onem": 5,
+  "onem_gerekce": "AI destekli tam otomatik formel doğrulama, yazılım güvenliği ve geliştirme maliyetlerini kökten değiştirebilecek bir atılımdır; bu yüzden sektörü derinden etkileyen kritik bir gelişmedir.",
+  "etiketler": [
+    "Claude",
+    "formal verification",
+    "AI coding",
+    "software security",
+    "Theorem"
+  ],
+  "anilan_modeller": [
+    "Claude Opus 5.5"
+  ],
+  "yorum_tr": "Claude'un kod yazma ve aynı anda güvenliğini kanıtlama yeteneği, geliştiricilerin inceleme süresini kısaltıp güvenlik risklerini azaltarak yazılım otomasyonunu yeni bir seviyeye taşıyacak. Ancak sınırlı koşullar ve yüksek token maliyeti, geniş çaplı benimsenmesi öncesinde çözülmesi gereken pratik engeller olarak kalıyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Claude Opus 5.5",
+      "benchmark": "Token usage per proof",
+      "skor": 40,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "token usage",
+      "kaynak_metinden_alinti": "Opus 5.5 solves half the proofs with about 40 percent fewer tokens than Opus 5."
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/10/anthropic_claude-2.png",
+  "url": "https://the-decoder.com/anthropics-claude-now-writes-code-and-proves-it-safe-automatically/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-23T11:32:19.000Z",
+  "slug": "anthropic-s-claude-now-writes-code-and-proves-it-safe-automa"
+}

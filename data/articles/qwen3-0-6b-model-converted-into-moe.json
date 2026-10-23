@@ -1,0 +1,126 @@
+{
+  "baslik_tr": "Qwen3-0.6B Modeli MoE Formuna Dönüştürüldü",
+  "ozet_tr": "Bayliner1980, Qwen3-0.6B modelini MoE (Mixture of Experts) mimarisine dönüştürerek topluluğa yeni bir sürüm sundu. Dönüşüm sırasında chat yeteneklerini korumak ve paylaşımlı uzman eksikliğini telafi etmek için pseudo‑shared expert deneyi yapıldı. Benchmark sonuçları, MoE versiyonunun bazı ölçütlerde kalite kaybına yol açtığını gösteriyor.",
+  "detayli_icerik_tr": "Yerel LLaMA topluluğunun aktif bir üyesi olan Bayliner1980, daha önce Qwen2.5 modelleri için geliştirdiği qwen2moe aracını temel alarak Qwen3-0.6B modelini MoE mimarisine çevirdi. Bu süreçte en büyük zorluk, modelin sohbet (chat) yeteneklerini korumak ve Qwen3'ün paylaşımlı uzman (shared expert) katmanının olmamasını aşmaktı. Paylaşımlı uzman eksikliği, önceki dönüşümlerde kaliteyi sabit tutan bir mekanizma olduğundan, MoE versiyonunda belirgin bir performans düşüşüne neden oldu.\n\nBu sorunu hafifletmek için yazar, router'ın her zaman seçtiği bir \"pseudo‑shared expert\" tanımladı. Gerçek bir paylaşımlı uzman kadar etkili olmasa da, kaybedilen kaliteyi bir ölçüde geri kazandırdı. Ayrıca, kaliteyi GGUF uyumluluğu pahasına artırabilecek alternatif bir dönüşüm seti yayınlama planı da gündemde; bu set, yoğun katman (dense-layer) ikamesi gibi teknikleri içerecek.\n\nYapılan değerlendirmelerde, Qwen3-0.6B dense (standart) ve MoE sürümleri arasındaki farklar sayısal olarak ortaya kondu. Wiki perplexity (ppl) %23.88'den %26.98'e, C4 ppl %31.63'ten %36.32'ye yükselirken, görev başarısı (Task) skoru %0.455'ten %0.425'e düştü. İşlem hızı açısından ise GPU üzerinde dense model 377 t/s, MoE model 352 t/s; CPU üzerinde ise dense 115 t/s, MoE 124 t/s değerleri elde edildi. Küçük 0.6B modellerde hız kazancı görülmezken, daha büyük 1.5B modellerde MoE dönüşümünün fayda sağladığı belirtiliyor.\n\nModelin sınırlamaları da açıkça ifade edildi: belirli gerçekleri hatalı vermesi (örneğin Mona Lisa'nın 1519'da boyandığını söylemesi), kod üretiminde hatalar ve düşünme (thinking) modunun çalışmaması. Sonuç olarak, düşük parametreli bir model arayan kullanıcıların orijinal Qwen3-0.6B modelini tercih etmeleri önerildi. Yazar, projeyi desteklemek isteyenlerden Ko‑fi üzerinden bağış talep ediyor.",
+  "onemli_maddeler": [
+    "Qwen3-0.6B modeli MoE mimarisine dönüştürüldü, ancak kalite bazı metriklerde düşüş gösterdi.",
+    "Paylaşımlı uzman eksikliği pseudo‑shared expert ile kısmen telafi edildi.",
+    "Benchmark sonuçları, MoE sürümünün Wiki ve C4 perplexity'sinde %10-15 artış, görev başarısında ise hafif düşüş olduğunu ortaya koydu.",
+    "GPU hızında küçük modellerde fark yok, ancak daha büyük modellerde MoE dönüşümü hız kazancı sağlıyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 3,
+  "onem_gerekce": "Topluluk tarafından yapılan bir model dönüşümü, sınırlı bir kullanıcı kitlesini ilgilendiriyor ancak teknik detayları ve benchmark sonuçları AI topluluğu için değerli.",
+  "etiketler": [
+    "MoE",
+    "model dönüşümü",
+    "Qwen3",
+    "GGUF",
+    "benchmark"
+  ],
+  "anilan_modeller": [
+    "Qwen3-0.6B dense",
+    "Qwen3-0.6B MoE",
+    "Qwen2.5"
+  ],
+  "yorum_tr": "MoE dönüşümü, özellikle büyük ölçekli modellerde performans ve maliyet avantajı sunabilir; ancak Qwen3-0.6B gibi küçük modellerde kalite kaybı, bu yaklaşımın her durumda tercih edilmemesi gerektiğini gösteriyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen3-0.6B dense",
+      "benchmark": "Wiki ppl",
+      "skor": 23.88,
+      "birim": "ppl",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Qwen3-0.6B dense 23.88"
+    },
+    {
+      "model": "Qwen3-0.6B MoE",
+      "benchmark": "Wiki ppl",
+      "skor": 26.98,
+      "birim": "ppl",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Qwen3-0.6B MoE 26.98"
+    },
+    {
+      "model": "Qwen3-0.6B dense",
+      "benchmark": "C4 ppl",
+      "skor": 31.63,
+      "birim": "ppl",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Qwen3-0.6B dense 31.63"
+    },
+    {
+      "model": "Qwen3-0.6B MoE",
+      "benchmark": "C4 ppl",
+      "skor": 36.32,
+      "birim": "ppl",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Qwen3-0.6B MoE 36.32"
+    },
+    {
+      "model": "Qwen3-0.6B dense",
+      "benchmark": "Task metric",
+      "skor": 0.455,
+      "birim": "",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Qwen3-0.6B dense 0.455"
+    },
+    {
+      "model": "Qwen3-0.6B MoE",
+      "benchmark": "Task metric",
+      "skor": 0.425,
+      "birim": "",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Qwen3-0.6B MoE 0.425"
+    },
+    {
+      "model": "Qwen3-0.6B dense",
+      "benchmark": "GPU throughput",
+      "skor": 377,
+      "birim": "t/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "GPU generation",
+      "kaynak_metinden_alinti": "Dense 377 t/s"
+    },
+    {
+      "model": "Qwen3-0.6B MoE",
+      "benchmark": "GPU throughput",
+      "skor": 352,
+      "birim": "t/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "GPU generation",
+      "kaynak_metinden_alinti": "MoE 352 t/s"
+    },
+    {
+      "model": "Qwen3-0.6B dense",
+      "benchmark": "CPU throughput",
+      "skor": 115,
+      "birim": "t/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "CPU generation",
+      "kaynak_metinden_alinti": "Dense 115 t/s"
+    },
+    {
+      "model": "Qwen3-0.6B MoE",
+      "benchmark": "CPU throughput",
+      "skor": 124,
+      "birim": "t/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "CPU generation",
+      "kaynak_metinden_alinti": "MoE 124 t/s"
+    }
+  ],
+  "gorsel_url": "https://substackcdn.com/image/fetch/$s_!_APX!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fbb3d5266-b65a-45ea-9f8f-98d7d8038b8e_3432x1536.png",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xd87wu/qwen306b_model_converted_into_moe/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-23T08:18:42.000Z",
+  "slug": "qwen3-0-6b-model-converted-into-moe"
+}

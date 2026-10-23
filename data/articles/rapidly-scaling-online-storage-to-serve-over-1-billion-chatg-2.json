@@ -1,0 +1,31 @@
+{
+  "baslik_tr": "OpenAI, Habitat Depolama Platformunu 1 Milyar Kullanıcıya Hizmet Verecek Şekilde Ölçeklendirdi (Part II)",
+  "ozet_tr": "OpenAI, ChatGPT'nin 1 milyar kullanıcıya milisaniyeler içinde yanıt verebilmesi için Habitat adlı çevrimiçi depolama platformunu 500 petabayt veri ve 20 milyon QPS kapasitesine çıkardı. Azure Cosmos DB ile ortak çalışarak çok kiracılı (multi‑tenant) mimariyi yeniden tasarladılar ve hem performans hem de güvenilirlikte yeni bir seviyeye ulaştılar.",
+  "detayli_icerik_tr": "OpenAI ürünlerinin hızlı ve güvenilir veri erişimi, Habitat adlı depolama platformu üzerinden sağlanıyor. Platform, 40 coğrafi bölgede 1 milyardan fazla kullanıcıya milisaniyeler içinde hizmet vermek zorunda. Bu hedefe ulaşmak için OpenAI, Habitat'ı basit bir Python istemcisinden, küresel ölçekte 500 petabayt veri yöneten bir hizmete dönüştürdü.\n\nİlk aşamalarda tek kiracılı (single‑tenant) sistemler tercih edildi; her ürün ekibi kendi Cosmos DB konteynerini yönetiyordu. Bu yaklaşım, patlama yarıçapını (blast radius) küçültse de kapasite planlamasını zorlaştırdı ve aşırı tahsis (over‑provisioning) maliyetlerini artırdı. Ayrıca, mantıksal bölüm anahtarları (partition keys) çakışmaları ve gürültülü komşu (noisy‑neighbor) sorunları, aynı fiziksel bölümlerdeki performans sınırlamalarına yol açtı.\n\nOpenAI, bu sorunları aşmak için bir dizi deneme yaptı: ayrı konteynerlerle izolasyon sağlandı, zayıf bölümleri (weak partitions) izleyen bir kontrol betiği geliştirildi ve kapasite planlaması ürün ekiplerine devredildi. Ancak, yeni hizmetlerin lansmanında konteynerlerin önceden ölçeklendirilmemesi SEV odalarına yol açtı ve organizasyonel ölçeklenebilirliği sınırladı.\n\nSon aşamada, OpenAI tekrar çok kiracılı bir mimariye yöneldi ve Azure Cosmos DB ekibiyle birlikte sıcak anahtar (hot key) sınırlaması, hizmet kalitesi (QoS) katmanları ve geliştirilmiş sunucusuz (serverless) mod gibi yenilikler ekledi. Bu iyileştirmeler, her fiziksel bölümün 10K RU/s'ye kadar ölçeklenmesini ve RU‑bazlı bölünmelerin otomatik gerçekleşmesini sağladı. Sonuç olarak, tek bir ortak konteynerle kapasite planlaması büyük ölçüde ortadan kalktı, gürültülü komşu olayları ortadan kalktı ve sistem, 10'larca petabayt veri ve 20M QPS'yi sorunsuzca işleyebiliyor. OpenAI ve Azure ekipleri, ortak izleme, test ve doğrudan mühendislik kanallarıyla bu ölçeği sürdürülebilir kılıyor.",
+  "onemli_maddeler": [
+    "Habitat, 500 petabayt veri ve 20M QPS kapasitesiyle 1 milyar ChatGPT kullanıcısına hizmet verecek şekilde ölçeklendirildi.",
+    "Azure Cosmos DB ile çok kiracılı mimari yeniden tasarlandı; sıcak anahtar sınırlaması ve QoS katmanları gürültülü komşu etkisini azalttı.",
+    "Geliştirilen sunucusuz mod, her fiziksel bölümü 10K RU/s'ye kadar otomatik ölçeklendirebiliyor ve manuel kapasite planlamasını ortadan kaldırıyor.",
+    "OpenAI ve Azure ekipleri, ortak izleme ve test süreçleriyle büyük ölçekli kesintileri önlemek için derin entegrasyon sağladı."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Habitat'ın bu ölçeklendirme ve mimari iyileştirmeleri, OpenAI'nin milyarlarca kullanıcıya sorunsuz hizmet sunmasını mümkün kılıyor ve bulut tabanlı çok kiracılı veri hizmetlerinde yeni bir referans noktası oluşturuyor.",
+  "etiketler": [
+    "Habitat",
+    "Azure Cosmos DB",
+    "online storage",
+    "multi-tenancy",
+    "OpenAI"
+  ],
+  "anilan_modeller": [],
+  "yorum_tr": "Bu altyapı güncellemesi, geliştiricilerin ve son kullanıcıların daha düşük gecikme ve yüksek güvenilirlik deneyimi yaşamasını sağlayacak. Aynı zamanda büyük ölçekli bulut hizmetlerinde çok kiracılı mimarilerin nasıl yönetileceğine dair sektörel bir örnek teşkil ediyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://images.ctfassets.net/kftzwdyauwt9/1p8WL4wct7MU8nnw6609WL/6ae794fe4cc93d37cc095d4d45730669/scaling-storage-one-billion-users-part-two-social.png?w=1600&h=900&fit=fill",
+  "url": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-10-23T17:00:00.000Z",
+  "slug": "rapidly-scaling-online-storage-to-serve-over-1-billion-chatg-2"
+}

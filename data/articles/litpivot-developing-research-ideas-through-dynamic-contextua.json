@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "LitPivot: Araştırma Fikirlerini Dinamik Bağlamlandırma ile Geliştiren Yeni Araç",
+  "ozet_tr": "Allen Institute for AI ve University of Pennsylvania iş birliğiyle geliştirilen LitPivot, araştırmacıların literatürle etkileşim içinde fikirlerini yeniden şekillendirmesine olanak tanıyan bir sistem. Araştırma önerisinin problem, katkı ve değerlendirme bölümlerini ayrı facet'ler olarak ele alıp, ilgili makalelerden alıntılarla desteklenen eleştiriler ve revizyon önerileri sunuyor.",
+  "detayli_icerik_tr": "LitPivot, araştırmacıların bir araştırma önerisini yazarken aynı anda literatür taraması yapıp, buldukları çalışmalara dayalı somut geri bildirim almasını sağlayan bir çalışma akışı sunuyor. Kullanıcı, önerisinin bir facet'ini (ör. problem tanımı, önerilen katkı veya değerlendirme planı) seçtiğinde, sistem Asta Paper Finder aracılığıyla ilgili makaleleri gruplayıp en alakalı grupları vurguluyor; ardından seçilen makalelerden alıntılarla desteklenen eleştiriler ve revizyon önerileri sunuluyor. Bu süreç, önerinin ilgili literatürle ne kadar uyumlu olduğunu anlık olarak yeniden sıralayarak, facet'ler arası tutarlılığı da kontrol ediyor.\n\nYapılan laboratuvar çalışmasında 17 araştırmacı, LitPivot ile bir öneri geliştirirken aynı veri kümesiyle çalışan bir metin editörü ve AI sohbet aracını kullanan kontrol grubuyla karşılaştırıldı. Bağımsız alan uzmanları, LitPivot ile oluşturulan önerilerin literatüre daha iyi yerleştirildiğini ve daha sağlam temellere dayandığını belirledi. Katılımcılar ayrıca önerilerinin yenilikçilik ve faydalılık açısından daha yüksek olduğunu, literatür hakkında daha derin bir anlayış kazandıklarını rapor etti.\n\nLitPivot, sadece erken aşama fikir üretiminde değil, mevcut projelerin olgunlaşma sürecinde de kullanılabiliyor. Takip eden bir çalışmada beş araştırmacı, kendi projelerinde 30 dakikalık oturumlar sırasında sistemi kullandı; iki katılımcı yeni fikirleri literatürle test ederken, üçü daha gelişmiş fikirlerin çerçevesini yeniden şekillendirmek için aracı kullandı. Sistem, bir facet'te yapılan değişikliğin diğer facet'leri nasıl etkileyebileceğini işaretleyerek, bütünsel bir revizyon süreci sağlıyor.\n\nLitPivot, AllenAI'nin Asta, HARPA, Scideator, IdeaSynth gibi diğer araştırma destek araçlarıyla birlikte, araştırmacıların test edilebilir hipotezler üretmesini ve mevcut bulgulara dayalı yenilikçi yönlendirmeler yapmasını hedefliyor. Literatür seçim sürecini revizyon aşamasına entegre ederek, bilimsel keşiflerde daha bilinçli ve veri odaklı kararlar alınmasına katkı sağlıyor.",
+  "onemli_maddeler": [
+    "LitPivot, araştırma önerisini problem, katkı ve değerlendirme facet'lerine ayırarak ilgili literatürle eş zamanlı değerlendirme imkanı sunuyor.",
+    "17 araştırmacı üzerinde yapılan laboratuvar çalışması, LitPivot ile geliştirilen önerilerin literatüre daha iyi yerleştirildiğini ve yenilikçilik açısından üstün olduğunu gösterdi.",
+    "Araç, sadece erken aşama fikir üretiminde değil, mevcut projelerin olgunlaşma sürecinde de kullanılabiliyor ve facet'ler arası tutarlılığı otomatik olarak işaretliyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Araştırma sürecine entegre edilen bu yeni araç, literatür taraması ve fikir revizyonunu birleştirerek akademik üretkenliği artırma potansiyeline sahip, bu yüzden sektörde önemli bir güncelleme olarak değerlendiriliyor.",
+  "etiketler": [
+    "Araştırma Araçları",
+    "Literatür Analizi",
+    "AI Destekli Yazım",
+    "Bilimsel Keşif",
+    "UIST 2026"
+  ],
+  "anilan_modeller": [
+    "Claude"
+  ],
+  "yorum_tr": "LitPivot, araştırmacıların literatürle etkileşimini sistematikleştirerek fikir geliştirme sürecini hızlandırıyor ve daha sağlam temellere dayalı çalışmalar ortaya çıkmasını sağlıyor. Bu, akademik toplulukta hem verimlilik hem de yenilikçilik açısından olumlu bir etki yaratacak.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/7F9q8BZloWigwe7m5YGLG.png",
+  "url": "https://huggingface.co/blog/allenai/litpivot",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-10-23T16:15:50.000Z",
+  "slug": "litpivot-developing-research-ideas-through-dynamic-contextua"
+}

@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "AWS Trainium’da Çalışan Modelleri Hızlıca Öğrenin: TorchNeuronx Model Desteği",
+  "ozet_tr": "Hugging Face, TorchNeuronx paketini kullanan bir Space aracılığıyla, Hub üzerindeki popüler Transformer modellerinin AWS Trainium (trn2) üzerinde çalışıp çalışmadığını tek bir ekrandan gösteriyor. Kullanıcılar, modelin kaç Trainium çekirdeği üzerinde parçalandığını, derleme dahil toplam çalışma süresini ve en yüksek bellek tüketimini anında görebiliyor.",
+  "detayli_icerik_tr": "Geçtiğimiz günlerde duyurulan TorchNeuronx, PyTorch tabanlı bir arka uç olarak AWS Trainium donanımını yerel olarak destekliyor ve Transformers kütüphanesindeki modellerin değişiklik yapmadan çalıştırılmasını sağlıyor. Hugging Face, bu entegrasyonu bir Space içinde sunarak, Hub üzerindeki en çok indirilen ve trend olan modellerin Trainium uyumluluğunu test ediyor ve sonuçları görsel bir tablo halinde sergiliyor. Her satırda modelin çalışıp çalışmadığı (PASS/FAIL), kullanılan Trainium çekirdek sayısı, derleme dahil toplam wall‑time ve en yüksek cihaz belleği gibi bilgiler yer alıyor.\n\nKullanıcılar, \"Selected\", \"Trending\" ya da \"Downloads\" görünümlerine geçerek ilgilendikleri modeli arayabilir ve modelin çalıştırma komutlarını, kullanılan Neuron derleyici (neuronx-cc) ve Transformers sürümünü doğrudan görebilir. Space ayrıca, modelin nasıl çalıştırılacağına dair bir run.py betiği sunuyor; bu betik, modeli from_pretrained ile yüklüyor, gerektiğinde tensor‑parallel ya da expert‑parallel yöntemleriyle parçalayarak torch.compile(backend=\"neuron\") ile derliyor. İlk çalıştırmada modelin grafikleri derleniyor; derleme süresini atlamak isteyenler, test sırasında oluşturulan NEFF önbellek dosyalarını public bir S3 bucket'ından senkronize edebiliyor.\n\nTest prosedürü, modeli bir trn2 örneğinde en az ağırlıkları tutabilecek çekirdek sayısına (genellikle 4 cihaz, yani 16 çekirdek) bölerek 32 token üretimini içeriyor. Tek çekirdekli çalıştırmalarda CPU çıktısıyla karşılaştırma yapılırken, çok çekirdekli paralel çalışmalarda ise kısa bir yargı modeliyle metnin akıcılığı kontrol ediliyor. Şu an sadece metin‑üretim ve görüntü‑metin‑metin modelleri test ediliyor; gelecekte diffusers, sentence‑transformers ve diğer Transformer görevlerine genişleme planlanıyor.",
+  "onemli_maddeler": [
+    "TorchNeuronx, Transformers modellerinin AWS Trainium üzerinde değişiklik yapmadan çalıştırılmasını sağlıyor.",
+    "Hugging Face Space, model uyumluluğunu, çekirdek sayısını, wall‑time ve bellek tüketimini tek bir tabloda sunuyor.",
+    "Run.py betiği, modelin otomatik olarak sharding yapmasını ve torch.compile ile derlenmesini içeriyor; NEFF önbellekleriyle derleme süresi atlanabiliyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "AWS Trainium, yüksek performanslı AI iş yükleri için kritik bir altyapı; TorchNeuronx ve bu yeni Space, geliştiricilerin modellerini hızlıca test edip üretime almasını kolaylaştırarak ekosistemi hızlandırıyor.",
+  "etiketler": [
+    "AWS Trainium",
+    "TorchNeuron",
+    "Hugging Face",
+    "Transformers",
+    "Model Compatibility"
+  ],
+  "anilan_modeller": [
+    "Qwen/Qwen3-0.6B"
+  ],
+  "yorum_tr": "Bu araç, model geliştiricileri ve araştırmacılar için Trainium uyumluluğunu anlık kontrol etme imkanı sunarak deneme süresini kısaltıyor ve bulut maliyetlerini optimize etmelerine yardımcı oluyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://huggingface.co/blog/assets/torch-neuronx-model-support/thumbnail.jpg",
+  "url": "https://huggingface.co/blog/torch-neuronx-model-support",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-10-23T00:00:00.000Z",
+  "slug": "does-your-model-run-on-aws-trainium-look-it-up"
+}
