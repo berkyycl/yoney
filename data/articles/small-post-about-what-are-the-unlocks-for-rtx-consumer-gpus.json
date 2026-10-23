@@ -1,0 +1,39 @@
+{
+  "baslik_tr": "RTX Tüketici GPU'larında FP32 Toplama Performansının Kilidinin Açılması ve Etkileri",
+  "ozet_tr": "NVIDIA, tüketici sınıfı RTX kartlarında FP32 toplama performansını kısıtlayarak profesyonel ve veri merkezi GPU'larına ayrıcalık tanıyor. Bu kısıtlama, FP16, BF16 ve FP8 gibi düşük hassasiyetli işlemlerde eğitim ve difüzyon gibi görevlerde performans kaybına yol açıyor. Reddit topluluğu, bu sınırlamayı kaldırmak için geliştirilen araçları ve olası riskleri paylaştı.",
+  "detayli_icerik_tr": "NVIDIA, tüketici GPU'larında FP32 birikimli GEMM (General Matrix Multiply) işlemlerinin performansını kasıtlı olarak yarıya indiriyor. Bu uygulama, Turing, Ampere, Ada ve Blackwell mimarilerinde RTX 20, 30, 40 ve 50 serileri gibi kartları etkiliyor ve profesyonel kartlarda (Quadro, A6000, A40, A100, RTX 6000 Ada vb.) bu kısıtlama bulunmuyor. Sonuç olarak, FP16, BF16 ve FP8 gibi düşük hassasiyetli veri tiplerinde FP32 birikimle çalışan eğitim, difüzyon ve büyük dil modellerinin ön doldurma (prefill) aşamaları tüketici kartlarda %50'ye varan performans düşüşü yaşıyor.\n\nBu durum, özellikle LoRA'lar, ince ayar (fine‑tuning) ve metin‑görüntü difüzyon modelleri gibi yoğun matris çarpımı gerektiren görevlerde belirgin bir yavaşlamaya neden oluyor. Tek bir örnek, RTX 6000 PRO kartının aynı iş yükünde RTX 5090'a göre %70 daha hızlı sonuç vermesi; bu fark, sadece çekirdek sayısındaki %10‑15'lik farktan çok daha büyük bir performans farkını gösteriyor. Tek bir işlemde (batch size 1) ise bant genişliği sınırlamaları hâkim olduğu için etkisi daha az.\n\nTopluluk, bu kısıtlamayı kaldırmak için çeşitli açık kaynak araçları geliştirdi. RTX 20 ve 30 serileri için \"HALF_SPEED\"/\"FULL_SPEED\" bayrağını değiştiren scriptler mevcut ve GitHub'da Zagitta/gpu-unlock projesiyle erişilebilir. RTX 40 serisi de benzer bir yöntemle test edilmiş ve Hugging Face üzerindeki AD103_win_unlocker reposunda çalıştırılabiliyor. Ancak RTX 50 serisinde NVIDIA, donanımsal füzyonlarla bu bayrağı sabitlemiş; bu yüzden kilidi açma şansı şu an düşük.\n\nGeliştiriciler ve araştırmacılar, bu kilit açma yöntemlerinin kartın garantisini etkilemediğini ve fiziksel olarak aynı çipleri kullandığını belirtiyor. Örneğin, RTX 3090 Ti ve A6000 aynı die'yi paylaşırken sadece bayrak farklılığı var. Bu da kilit açmanın riskli bir işlem olmadığını, ancak resmi destek ve garanti kapsamı dışına çıkabileceğini gösteriyor.",
+  "onemli_maddeler": [
+    "NVIDIA, tüketici RTX kartlarında FP32 birikimli GEMM performansını %50 oranında kısıtlıyor.",
+    "Bu kısıtlama, FP16, BF16 ve FP8 gibi düşük hassasiyetli veri tiplerinde eğitim ve difüzyon görevlerini yavaşlatıyor.",
+    "Açık kaynak araçları RTX 20/30 ve kısmen RTX 40 serileri için kilidi kaldırabiliyor; RTX 50 serisinde ise bu daha zor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 3,
+  "onem_gerekce": "Konu, AI eğitim ve inferans performansını etkileyen teknik bir sınırlamayı ve topluluk tarafından geliştirilen çözüm yollarını içerdiği için orta derecede sektörel ilgi uyandırıyor.",
+  "etiketler": [
+    "RTX",
+    "GPU Unlock",
+    "FP32",
+    "Tensor Cores",
+    "Yapay Zeka"
+  ],
+  "anilan_modeller": [
+    "RTX 20 series",
+    "RTX 30 series",
+    "RTX 40 series",
+    "RTX 50 series",
+    "RTX A6000",
+    "RTX 3090Ti",
+    "RTX 6000 Ada",
+    "RTX 6000 PRO"
+  ],
+  "yorum_tr": "Bu kilit açma çalışmaları, tüketici GPU'ların AI araştırma ve geliştirme maliyetlerini düşürerek daha geniş bir kullanıcı kitlesine erişim sağlayabilir; ancak resmi destek eksikliği ve potansiyel garanti dışı kalma riski, geliştiricilerin dikkatli değerlendirmesini gerektiriyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://cdn.mos.cms.futurecdn.net/PoZMnWmFeLmeAn93rJoCcJ.jpg",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xdg0v0/small_post_about_what_are_the_unlocks_for_rtx/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-23T14:44:31.000Z",
+  "slug": "small-post-about-what-are-the-unlocks-for-rtx-consumer-gpus"
+}

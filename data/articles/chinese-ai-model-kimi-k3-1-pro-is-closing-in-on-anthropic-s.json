@@ -1,0 +1,87 @@
+{
+  "baslik_tr": "Moonshot AI'nin Kimi K3.1 Pro modeli, Claude Opus 5.5'e sadece 3 puan farkla yaklaşıyor",
+  "ozet_tr": "Moonshot AI, 2.8 trilyon parametreli Kimi K3.1 Pro modelini piyasaya sürdü ve Artificial Analysis Intelligence Index'te 55 puanla dördüncü sıraya yükseldi. Model, ajan görevleri, kodlama ve 3D modelleme gibi alanlarda kayda değer ilerleme gösterirken, API fiyatları %33 düşürüldü. Ağırlıklı post‑training sayesinde açık‑ağırlık sürümü Kasım 2026'da yayınlanacak.",
+  "detayli_icerik_tr": "Moonshot AI, Kimi K3.1 Pro'yu Kimi K3'ün üzerine ek post‑training hesaplama gücü ekleyerek geliştirdi ve parametre sayısını 2.8 trilyon olarak korudu. Model, Artificial Analysis Intelligence Index'te 55 puan alarak bir önceki sürümden 11 puan yükseldi ve Claude Opus 5.5 (58 puan), Claude Sonnet 5.5 (56 puan) ve Muse Wonder Full (56 puan) gibi kapalı‑ağırlıklı modellerin hemen arkasına geçti. Şirket, Kasım 2026'da model ağırlıklarını açık hale getirmeyi planlıyor; bu adım, açık‑ağırlıklı modellerin puan farkını 12'den 3'e indirecek.\n\nKimi K3.1 Pro, özellikle ajan görevlerinde büyük sıçrama yaptı. GDPval‑AA benchmark'unda 1.846 Elo puan elde ederek Claude Opus 5.5'in 1.866 Elo'suna çok yaklaştı. Terminal‑Bench 4.0 testinde %65.7 başarı oranı yakalarken Claude Opus 5.5 %66.4, GPT‑6 Astra ise %58.2'yi geride bıraktı. Modelin halüsinasyon oranı da önemli ölçüde düştü; iç testlerde Kimi Hallu Bench Hard'da iddia‑seviyesi halüsinasyonlar %23.4'ten %8.3'e geriledi.\n\n3D modelleme ve kodlama konularında da K3.1 Pro iddialı. Unity, Unreal Engine ve Godot gibi oyun motorlarıyla doğrudan entegrasyon sağlayarak hem hızlı düzeltmeler hem de tam proje inşası yapabiliyor. BenchCAD (araçlı) testinde %92.7 başarı oranı elde ederken Claude Opus 5.5 %96.2'yi, GPT‑6 Astra %95.9'u yakaladı. Ayrıca, model parametrik mekanik parçalar, mimari yapılar ve konfigüre edilebilir ürünlerin modellemesinde öne çıkıyor.\n\nFiyatlandırma da dikkat çekiyor: Kimi K3.1 Pro'nun API maliyetleri %33 azalarak girişte 1 milyon token başına $2, çıktıda $10 ve önbellek erişiminde $0.20 oldu. Bu, önceki K3 modeline göre görev başına $1.98 maliyetle aynı verimliliği sağlıyor. Moonshot, açık‑ağırlıklı sürümde siber güvenlik risklerini azaltmak için eğitim verilerinden siber‑ilişkili içerikleri çıkardığını ve saldırı yeteneklerini sınırladığını belirtiyor.",
+  "onemli_maddeler": [
+    "Kimi K3.1 Pro, Artificial Analysis Intelligence Index'te 55 puan alarak Claude Opus 5.5'e sadece 3 puan farkla yaklaşmış durumda.",
+    "Model, ajan görevlerinde, kodlamada ve 3D modellemede büyük performans artışı gösteriyor; GDPval‑AA'da 1.846 Elo, Terminal‑Bench 4.0'de %65.7 başarı sağladı.",
+    "API fiyatları %33 düşürülerek giriş $2/MToken, çıktı $10/MToken ve önbellek $0.20/MToken seviyelerine indirildi.",
+    "Kasım 2026'da ağırlıkların açık hale getirilmesi planlanıyor; bu, açık‑ağırlıklı modellerin puan farkını 12'den 3'e indirecek.",
+    "Siber güvenlik açısından, eğitim verilerinden siber‑ilişkili içerikler temizlenerek saldırı yetenekleri sınırlandırıldı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Model, kapalı‑ağırlıklı liderlerle rekabet edebilecek performans seviyesine ulaşarak açık‑ağırlıklı AI ekosisteminde önemli bir sıçrama yapıyor ve fiyat indirimiyle geniş kullanıcı tabanına erişim sağlıyor.",
+  "etiketler": [
+    "Kimi K3.1 Pro",
+    "Moonshot AI",
+    "AI benchmark",
+    "Claude Opus 5.5",
+    "fiyatlandırma"
+  ],
+  "anilan_modeller": [
+    "Kimi K3.1 Pro",
+    "Claude Opus 5.5",
+    "Claude Sonnet 5.5",
+    "Muse Wonder Full",
+    "GPT-6 Astra",
+    "Claude Fable 5.1",
+    "DeepSeek-V4.1-Flash",
+    "GLM-5.3"
+  ],
+  "yorum_tr": "Kimi K3.1 Pro'nun kapalı‑ağırlıklı rakiplerine yakın performans sergilemesi, açık‑ağırlıklı modellerin araştırma ve uygulama alanındaki cazibesini artıracak. Geliştiriciler, daha düşük maliyetli ve yüksek yetenekli bir modelle yeni ürün ve hizmetler geliştirme fırsatı bulacak, kullanıcılar ise daha uygun fiyatlarla güçlü AI yeteneklerine erişebilecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Kimi K3.1 Pro",
+      "benchmark": "Terminal-Bench 4.0",
+      "skor": 65.7,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "On Terminal-Bench 4.0, Moonshot reports 65.7 percent, ahead of GPT-6 Astra (58.2 percent) and barely behind Claude Opus 5.5 (66.4 percent)."
+    },
+    {
+      "model": "Kimi K3.1 Pro",
+      "benchmark": "Kimi Hallu Bench Hard (claim-level hallucinations)",
+      "skor": 8.3,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "hard",
+      "kaynak_metinden_alinti": "On Moonshot's internal Kimi Hallu Bench Hard, claim-level hallucinations fell from 23.4 percent with K3 to 8.3 percent."
+    },
+    {
+      "model": "Kimi K3.1 Pro",
+      "benchmark": "BenchCAD (with tools)",
+      "skor": 92.7,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "On the BenchCAD benchmark, it scores 92.7 percent with tools, close to Claude Opus 5.5 (96.2 percent) and GPT-6 Astra (95.9 percent)."
+    },
+    {
+      "model": "Kimi K3.1 Pro",
+      "benchmark": "OfficeQA Pro v2",
+      "skor": 64.4,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "For general office tasks, the model tops all tested models on OfficeQA Pro v2, according to Moonshot."
+    },
+    {
+      "model": "Kimi K3.1 Pro",
+      "benchmark": "GPQA-Diamond",
+      "skor": 94.2,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "GPQA-Diamond 94.2 ... (table in article)."
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/10/kimi_k31pro.png",
+  "url": "https://the-decoder.com/chinese-ai-model-kimi-k3-1-pro-is-closing-in-on-anthropics-claude-opus-5-5/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-23T19:00:07.000Z",
+  "slug": "chinese-ai-model-kimi-k3-1-pro-is-closing-in-on-anthropic-s"
+}

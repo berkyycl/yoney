@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "NVIDIA Nemotron-3.5-Bolt-E4B-4GB Modeli Hugging Face Üzerinde Yayınlandı",
+  "ozet_tr": "NVIDIA, Gemma-4-E4B-it tabanlı yeni bir küçük dil modeli (SLM) olan Nemotron-3.5-Bolt-E4B-4GB'yi duyurdu. Model, çok‑turlu araç kullanımı, talimat takibi ve giriş bağlamlandırma konularında iyileştirmeler sunarak yerel ses asistanları ve kenar (edge) uygulamaları için tasarlandı.",
+  "detayli_icerik_tr": "NVIDIA, Gemma-4-E4B-it modelini temel alarak Nemotron-3.5-Bolt-E4B-4GB adlı yeni bir küçük dil modeli (SLM) geliştirdi ve Hugging Face platformunda yayınladı. Bu model, Gemma serisinin güçlü sohbet yeteneklerini korurken, çok‑turlu araç kullanımını, talimat takibini ve giriş bağlamlandırmasını daha da geliştiriyor; bu sayede yerel ses/cihaz asistanları, etkileşimli kişilikler ve gömülü/kenar arayüzleri için daha akıcı ve tutarlı yanıtlar sağlanabiliyor.\n\nModel, düşük bellek tüketimi ve düşük yanıt süresi (TTFT) hedefiyle tasarlandı; 4 GB parametre boyutu sayesinde sınırlı donanımlı cihazlarda bile hızlı yanıt üretimi mümkün. NVIDIA, spekülatif kodlama (speculative decoding) senaryoları için yan ürün olarak DFlash drafter adlı bir taslak oluşturucu sunuyor. Tam hassasiyetli (BF16) sürüm ise NVIDIA-Nemotron-3.5-Bolt-E4B-BF16 adıyla ayrı bir paket olarak mevcut.\n\nNemotron-3.5-Bolt-E4B-4GB, ticari ve ticari olmayan kullanım lisanslarıyla serbest bırakıldı; bu da araştırmacılar, geliştiriciler ve şirketlerin modeli doğrudan kendi uygulamalarına entegre edebilmesini sağlıyor. Modelin Hugging Face üzerindeki iki farklı dağıtımı (ggml-org ve unsloth) sayesinde farklı donanım ve çerçeve gereksinimlerine uyum sağlanabiliyor.\n\nBu yayın, NVIDIA'nın yerel ve kenar AI çözümlerine yönelik stratejisinin bir parçası olarak görülüyor. Küçük ölçekli, yüksek verimli dil modellerinin yaygınlaşması, bulut bağımlılığını azaltarak daha gizlilik odaklı ve düşük gecikmeli uygulamaların geliştirilmesine olanak tanıyacak.",
+  "onemli_maddeler": [
+    "Nemotron-3.5-Bolt-E4B-4GB, Gemma-4-E4B-it tabanlı bir SLM olarak çok‑turlu araç kullanımını ve talimat takibini iyileştiriyor.",
+    "Model, düşük bellek ve düşük TTFT gereksinimleriyle kenar cihazlarda hızlı yanıt üretimine odaklanıyor.",
+    "Spekülatif kodlama için DFlash drafter eklentisi ve tam hassasiyetli BF16 sürümü ayrı paketlerde sunuluyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Küçük ölçekli, düşük kaynak tüketimli dil modellerinin kenar AI ekosistemine entegrasyonu, hem gizlilik hem de gecikme açısından kritik bir adım olduğundan sektörde önemli bir etki yaratması bekleniyor.",
+  "etiketler": [
+    "NVIDIA",
+    "Nemotron",
+    "Küçük Dil Modeli",
+    "Edge AI",
+    "Hugging Face"
+  ],
+  "anilan_modeller": [
+    "Gemma-4-E4B-it",
+    "NVIDIA-Nemotron-3.5-Bolt-E4B-4GB",
+    "NVIDIA-Nemotron-3.5-Bolt-E4B-BF16"
+  ],
+  "yorum_tr": "Bu model, düşük maliyetli donanımlarda yüksek kaliteli dil işleme yetenekleri sunarak geliştiricilerin kenar AI çözümlerini daha hızlı prototiplemesini ve ölçeklendirmesini sağlayacak. Aynı zamanda, açık lisans politikası sayesinde akademik araştırmalara da geniş bir erişim imkanı tanıyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/xYr9teO9GhC9NNR0ab_yapwspq0aZMk04CrbNai8f6M.png?width=640&crop=smart&auto=webp&s=56c258155548565a469717ba79085a40fed5a10d",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xdiecx/nvidianvidianemotron35bolte4b4gb_hugging_face/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-23T16:13:05.000Z",
+  "slug": "nvidia-nvidia-nemotron-3-5-bolt-e4b-4gb-hugging-face"
+}
