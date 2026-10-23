@@ -1,0 +1,59 @@
+{
+  "baslik_tr": "Veritabanı Değerlendirmesini RL Ödüllerine Dönüştüren ThinkingBox ile Eğitim Sonrası Ajanlar",
+  "ozet_tr": "Microsoft ve Hugging Face, ThinkingBox çerçevesinde veritabanı durumunu doğrudan ödül sinyali olarak kullanan bir RL ince ayar yöntemi geliştirdi. 50 adımlık GRPO eğitimi sonrası Qwen3.8-27B modeli, ThinkingBox‑Bench testinde tekrarlanabilir başarı oranını %7,5'ten %21,1'e yükseltti.",
+  "detayli_icerik_tr": "ThinkingBox, bir ajanın gerçek bir veritabanı arka ucunda çalıştırıldığı ve son durumun yürütülebilir kontrollerle doğrulandığı bir benchmark seti sunuyor. 507 görevden oluşan ThinkingBox‑Bench, modelin araç çağrılarını değil, veritabanı kayıtlarındaki nihai değişiklikleri değerlendiriyor; bu sayede modelin yalnızca doğru sonuçları üretmesi değil, aynı zamanda tutarlı ve güvenilir bir davranış sergilemesi hedefleniyor.\n\nAraştırmacılar, bu yürütülebilir kontrol sinyallerini ödül fonksiyonu olarak kullanan bir offline politika‑göreceli zorluk ölçütü geliştirdi. Görevler, temel modelin (Qwen3.8‑27B) başarı olasılığına göre sınıflandırıldı; sadece bazen başarılı olup bazen başarısız olan görevler eğitim havuzuna alındı. Bu sayede RL eğitimi sırasında model, karşıt sonuçlar üretebilen örneklerden öğrenebildi.\n\nModel, 50 GRPO adımı boyunca 187 seçilmiş görevde tam parametreli RL ince ayarı yapıldı. Eğitim, 24 H100 GPU üzerinde 144 bölüm (8 rollout × 18 grup) ile yürütüldü; AdamW optimizasyonu 1e‑6 öğrenme oranı ve sıfır ağırlık çürümesiyle kullanıldı. Sonuç olarak, Qwen3.8‑27B'nin \"observed 20/20\" başarısı 38 görevden 107 göreve (%7,5'ten %21,1'e) üç katına çıktı, aynı zamanda pass@1 oranı %51,70'ten %60,78'e yükseldi. Ancak at‑least‑once kapsama (pass@20) %89,35'ten %87,97'ye hafif bir düşüş gösterdi.\n\nMaliyet analizinde, ince ayarlı modelin güvenilir bir görev başına maliyeti $8,00 olarak hesaplandı; bu, GPT‑5.4 ($6,80) ve GPT‑6 Astra ($7,45) gibi rakip modellerle kıyaslandığında rekabetçi bir seviyeye işaret ediyor. Sonuçlar, tutarlılık odaklı RL ince ayarının modelin tekrarlanabilirliğini artırdığını, ancak kapsamı (farklı görevlerde başarı) biraz daralttığını gösteriyor.",
+  "onemli_maddeler": [
+    "ThinkingBox, veritabanı durumunu doğrudan ödül sinyali olarak kullanan ilk RL eğitim çerçevesi olarak tanıtıldı.",
+    "Qwen3.8-27B modeli, 50 GRPO adımı sonrası \"observed 20/20\" başarısını %7,5'ten %21,1'e yükselterek üç katına çıkardı.",
+    "RL ince ayarı, pass@1 oranını %51,70'ten %60,78'e artırdı, ancak pass@20 (en az bir kez başarı) oranı hafifçe (%89,35'ten %87,97'ye) düştü.",
+    "Maliyet analizi, ince ayarlı modelin güvenilir görev başına maliyetini $8,00'a düşürerek büyük dil modelleri arasında rekabetçi bir konuma getirdi."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Mevcut büyük bir dil modelinin (Qwen3.8-27B) gerçek veritabanı görevlerinde tutarlılık ve güvenilirlik açısından kayda değer bir iyileşme göstermesi, üretim ortamlarındaki LLM tabanlı otomasyonların benimsenmesini doğrudan etkileyen kritik bir güncellemedir.",
+  "etiketler": [
+    "RL",
+    "ThinkingBox",
+    "Veritabanı",
+    "Qwen3.8-27B",
+    "Benchmark"
+  ],
+  "anilan_modeller": [
+    "Qwen3.8-27B",
+    "Claude Opus 5.5",
+    "Claude Opus 5",
+    "GPT-5.4",
+    "GPT-5.6 Sol",
+    "GPT-6 Astra",
+    "Kimi-K3",
+    "Claude Sonnet 4.6"
+  ],
+  "yorum_tr": "Bu geliştirme, veritabanı odaklı görevlerde LLM'lerin güvenilirliğini artırarak kurumsal otomasyonların risklerini azaltıyor; geliştiriciler daha az deneme‑yanılma maliyetiyle tutarlı çözümler üretebilir, kullanıcılar ise hatalı veri işlemlerine karşı daha güvenli bir deneyim elde eder.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen3.8-27B",
+      "benchmark": "ThinkingBox-Bench",
+      "skor": 60.78,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "pass@1",
+      "kaynak_metinden_alinti": "pass@1 (successful attempts) 5,242 (51.70%) → 6,163 (60.78%) +9.08 pt"
+    },
+    {
+      "model": "Qwen3.8-27B",
+      "benchmark": "ThinkingBox-Bench",
+      "skor": 107,
+      "birim": "tasks",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "observed 20/20",
+      "kaynak_metinden_alinti": "Observed 20/20 38 (7.50%) → 107 (21.10%) +69 tasks"
+    }
+  ],
+  "gorsel_url": "https://cdn-uploads.huggingface.co/production/uploads/64b8491203124195cd795cad/oS8I8qx7iBS8EcNIXR3q9.png",
+  "url": "https://huggingface.co/blog/microsoft/thinkingbox-training",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-10-22T22:24:34.000Z",
+  "slug": "turning-database-grading-into-rl-rewards-post-training-agent"
+}

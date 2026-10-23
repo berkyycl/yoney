@@ -1,33 +1,33 @@
 {
- "generatedAt": "2026-10-22T21:15:27.392Z",
+ "generatedAt": "2026-10-23T03:34:58.148Z",
  "sources": {
   "lmarena-text": {
-   "fetchedAt": "2026-10-22T21:15:27.392Z",
+   "fetchedAt": "2026-10-23T03:34:58.148Z",
    "count": 100,
-   "publishDate": "2026-10-20T00:00:00.000Z"
+   "publishDate": "2026-10-22T00:00:00.000Z"
   },
   "lmarena-coding": {
-   "fetchedAt": "2026-10-22T21:15:27.392Z",
+   "fetchedAt": "2026-10-23T03:34:58.148Z",
    "count": 60,
-   "publishDate": "2026-10-20T00:00:00.000Z"
+   "publishDate": "2026-10-22T00:00:00.000Z"
   },
   "lmarena-creative": {
-   "fetchedAt": "2026-10-22T21:15:27.392Z",
+   "fetchedAt": "2026-10-23T03:34:58.148Z",
    "count": 60,
-   "publishDate": "2026-10-20T00:00:00.000Z"
+   "publishDate": "2026-10-22T00:00:00.000Z"
   },
   "lmarena-hard": {
-   "fetchedAt": "2026-10-22T21:15:27.392Z",
+   "fetchedAt": "2026-10-23T03:34:58.148Z",
    "count": 60,
-   "publishDate": "2026-10-20T00:00:00.000Z"
+   "publishDate": "2026-10-22T00:00:00.000Z"
   },
   "lmarena-expert": {
-   "fetchedAt": "2026-10-22T21:15:27.392Z",
+   "fetchedAt": "2026-10-23T03:34:58.148Z",
    "count": 60,
-   "publishDate": "2026-10-20T00:00:00.000Z"
+   "publishDate": "2026-10-22T00:00:00.000Z"
   },
   "swe-bench-verified": {
-   "fetchedAt": "2026-10-22T21:15:27.392Z",
+   "fetchedAt": "2026-10-23T03:34:58.148Z",
    "count": 40,
    "publishDate": "2025-12-05T00:00:00.000Z"
   },
@@ -46,871 +46,871 @@
    "benchmarkId": "lmarena-text",
    "model": "Gemini 4 Argon (High)",
    "organization": "google",
-   "score": 1524,
-   "setting": "Arena sırası #1 · 4.900 oy",
+   "score": 1517,
+   "setting": "Arena sırası #1 · 10.083 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "lmarena-text",
-   "model": "Muse Wonder (Max)",
-   "organization": "meta",
-   "score": 1510,
-   "setting": "Arena sırası #2 · 5.099 oy",
-   "source": "LMArena",
-   "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "Claude Opus 5.5 (High)",
    "organization": "anthropic",
    "score": 1509,
-   "setting": "Arena sırası #3 · 9.496 oy",
+   "setting": "Arena sırası #2 · 10.322 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "lmarena-text",
+   "model": "Muse Wonder (Max)",
+   "organization": "meta",
+   "score": 1509,
+   "setting": "Arena sırası #3 · 6.001 oy",
+   "source": "LMArena",
+   "url": "https://lmarena.ai/leaderboard",
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "Claude Fable 5 (High)",
    "organization": "anthropic",
-   "score": 1504,
-   "setting": "Arena sırası #4 · 43.399 oy",
-   "source": "LMArena",
-   "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "lmarena-text",
-   "model": "Claude Opus 4.6 (High)",
-   "organization": "anthropic",
    "score": 1503,
-   "setting": "Arena sırası #5 · 82.619 oy",
+   "setting": "Arena sırası #4 · 44.253 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "Claude Fable 5.1 (Max)",
    "organization": "anthropic",
    "score": 1503,
-   "setting": "Arena sırası #6 · 15.623 oy",
+   "setting": "Arena sırası #5 · 16.343 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "lmarena-text",
+   "model": "Claude Opus 4.6 (High)",
+   "organization": "anthropic",
+   "score": 1503,
+   "setting": "Arena sırası #6 · 83.454 oy",
+   "source": "LMArena",
+   "url": "https://lmarena.ai/leaderboard",
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "Claude Opus 4.7 (High)",
    "organization": "anthropic",
    "score": 1501,
-   "setting": "Arena sırası #7 · 65.131 oy",
+   "setting": "Arena sırası #7 · 65.140 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "Claude Opus 4.6",
    "organization": "anthropic",
    "score": 1497,
-   "setting": "Arena sırası #8 · 87.372 oy",
+   "setting": "Arena sırası #8 · 88.206 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "Gemini 3.8 Flash (High)",
    "organization": "google",
    "score": 1496,
-   "setting": "Arena sırası #9 · 41.423 oy",
+   "setting": "Arena sırası #9 · 43.997 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "Muse Spark 1.3 (Max)",
    "organization": "meta",
-   "score": 1495,
-   "setting": "Arena sırası #10 · 19.323 oy",
+   "score": 1496,
+   "setting": "Arena sırası #10 · 20.506 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "Claude Opus 4.7",
    "organization": "anthropic",
    "score": 1494,
-   "setting": "Arena sırası #11 · 66.185 oy",
+   "setting": "Arena sırası #11 · 66.183 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "Muse Spark 1.2 (xHigh)",
    "organization": "meta",
-   "score": 1492,
-   "setting": "Arena sırası #12 · 9.578 oy",
+   "score": 1491,
+   "setting": "Arena sırası #12 · 10.470 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "Claude Opus 5 (Max)",
    "organization": "anthropic",
    "score": 1491,
-   "setting": "Arena sırası #13 · 33.683 oy",
+   "setting": "Arena sırası #13 · 34.526 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "lmarena-text",
+   "model": "Claude Opus 5 (High)",
+   "organization": "anthropic",
+   "score": 1491,
+   "setting": "Arena sırası #14 · 71.020 oy",
+   "source": "LMArena",
+   "url": "https://lmarena.ai/leaderboard",
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "Muse Spark 1.1",
    "organization": "meta",
    "score": 1490,
-   "setting": "Arena sırası #14 · 44.815 oy",
+   "setting": "Arena sırası #15 · 46.121 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
-   "model": "Claude Opus 5 (High)",
-   "organization": "anthropic",
+   "model": "Gemini 3.7 Flash (High)",
+   "organization": "google",
    "score": 1490,
-   "setting": "Arena sırası #15 · 69.307 oy",
+   "setting": "Arena sırası #16 · 30.501 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "Muse Spark",
    "organization": "meta",
    "score": 1489,
-   "setting": "Arena sırası #16 · 14.153 oy",
+   "setting": "Arena sırası #17 · 14.147 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "lmarena-text",
-   "model": "Gemini 3.7 Flash (High)",
-   "organization": "google",
-   "score": 1489,
-   "setting": "Arena sırası #17 · 29.177 oy",
-   "source": "LMArena",
-   "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "Kimi K3 (Max)",
    "organization": "moonshot",
-   "score": 1488,
-   "setting": "Arena sırası #18 · 34.325 oy",
+   "score": 1487,
+   "setting": "Arena sırası #18 · 35.379 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "Gemini 3.1 Pro Preview",
    "organization": "google",
    "score": 1487,
-   "setting": "Arena sırası #19 · 129.523 oy",
+   "setting": "Arena sırası #19 · 130.819 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "Gemini 3 Pro",
    "organization": "google",
-   "score": 1485,
-   "setting": "Arena sırası #20 · 42.059 oy",
+   "score": 1486,
+   "setting": "Arena sırası #20 · 42.054 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "GPT-5.6 Sol (xHigh)",
    "organization": "openai",
-   "score": 1484,
-   "setting": "Arena sırası #21 · 41.803 oy",
+   "score": 1485,
+   "setting": "Arena sırası #21 · 42.713 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "Gemini 3.6 Flash (High)",
    "organization": "google",
    "score": 1483,
-   "setting": "Arena sırası #22 · 36.079 oy",
+   "setting": "Arena sırası #22 · 36.102 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "Qwen3.8-Max",
    "organization": "alibaba",
    "score": 1483,
-   "setting": "Arena sırası #23 · 29.418 oy",
+   "setting": "Arena sırası #23 · 30.500 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "GPT-5.5 (High)",
    "organization": "openai",
-   "score": 1481,
-   "setting": "Arena sırası #24 · 69.340 oy",
+   "score": 1482,
+   "setting": "Arena sırası #24 · 69.375 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "Claude Opus 4.8 (High)",
    "organization": "anthropic",
    "score": 1481,
-   "setting": "Arena sırası #25 · 64.063 oy",
+   "setting": "Arena sırası #25 · 64.096 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "GLM-5.3 (Max)",
    "organization": "zai",
    "score": 1481,
-   "setting": "Arena sırası #26 · 24.035 oy",
+   "setting": "Arena sırası #26 · 25.144 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "lmarena-text",
+   "model": "GPT-6.1 Sol (Max)",
+   "organization": "openai",
+   "score": 1480,
+   "setting": "Arena sırası #27 · 8.305 oy",
+   "source": "LMArena",
+   "url": "https://lmarena.ai/leaderboard",
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "MiMo-V2.6-Pro",
    "organization": "xiaomi",
    "score": 1480,
-   "setting": "Arena sırası #27 · 4.065 oy",
+   "setting": "Arena sırası #28 · 4.067 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
-   "model": "GPT-6.1 Sol (Max)",
-   "organization": "openai",
-   "score": 1479,
-   "setting": "Arena sırası #28 · 7.453 oy",
+   "model": "Claude Sonnet 5.5 (xHigh)",
+   "organization": "anthropic",
+   "score": 1478,
+   "setting": "Arena sırası #29 · 8.977 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "Gemini 3.5 Flash (High)",
    "organization": "google",
    "score": 1477,
-   "setting": "Arena sırası #29 · 48.479 oy",
+   "setting": "Arena sırası #30 · 48.504 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "lmarena-text",
-   "model": "Claude Sonnet 5.5 (xHigh)",
-   "organization": "anthropic",
-   "score": 1477,
-   "setting": "Arena sırası #30 · 8.126 oy",
-   "source": "LMArena",
-   "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "GPT-5.5",
    "organization": "openai",
    "score": 1477,
-   "setting": "Arena sırası #31 · 70.970 oy",
+   "setting": "Arena sırası #31 · 70.998 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "lmarena-text",
-   "model": "GLM-5.2 (Max)",
-   "organization": "zai",
-   "score": 1476,
-   "setting": "Arena sırası #32 · 51.221 oy",
-   "source": "LMArena",
-   "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "lmarena-text",
-   "model": "Gemini 3.5 Flash (Medium)",
-   "organization": "google",
-   "score": 1476,
-   "setting": "Arena sırası #33 · 47.228 oy",
-   "source": "LMArena",
-   "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "GPT-6 Astra (Max)",
    "organization": "openai",
    "score": 1476,
-   "setting": "Arena sırası #34 · 13.293 oy",
+   "setting": "Arena sırası #32 · 14.076 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
-   "model": "GPT-5.2 Chat (20260210)",
-   "organization": "openai",
-   "score": 1475,
-   "setting": "Arena sırası #35 · 35.991 oy",
+   "model": "Gemini 3.5 Flash (Medium)",
+   "organization": "google",
+   "score": 1476,
+   "setting": "Arena sırası #33 · 47.271 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "DeepSeek-V4.1-Flash-20260910 (Max)",
    "organization": "deepseek",
-   "score": 1475,
-   "setting": "Arena sırası #36 · 13.444 oy",
+   "score": 1476,
+   "setting": "Arena sırası #34 · 13.750 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "lmarena-text",
+   "model": "GLM-5.3-Flash",
+   "organization": "zai",
+   "score": 1476,
+   "setting": "Arena sırası #35 · 38.359 oy",
+   "source": "LMArena",
+   "url": "https://lmarena.ai/leaderboard",
+   "date": "2026-10-22T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "lmarena-text",
+   "model": "GPT-5.2 Chat (20260210)",
+   "organization": "openai",
+   "score": 1476,
+   "setting": "Arena sırası #36 · 35.982 oy",
+   "source": "LMArena",
+   "url": "https://lmarena.ai/leaderboard",
+   "date": "2026-10-22T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "lmarena-text",
+   "model": "GLM-5.2 (Max)",
+   "organization": "zai",
+   "score": 1475,
+   "setting": "Arena sırası #37 · 52.283 oy",
+   "source": "LMArena",
+   "url": "https://lmarena.ai/leaderboard",
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "GPT-5.4 (High)",
    "organization": "openai",
    "score": 1475,
-   "setting": "Arena sırası #37 · 64.755 oy",
+   "setting": "Arena sırası #38 · 64.757 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "lmarena-text",
-   "model": "GLM-5.3-Flash",
-   "organization": "zai",
-   "score": 1475,
-   "setting": "Arena sırası #38 · 36.095 oy",
-   "source": "LMArena",
-   "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "Grok 4.20 Beta 1",
    "organization": "xai",
    "score": 1475,
-   "setting": "Arena sırası #39 · 27.918 oy",
+   "setting": "Arena sırası #39 · 27.914 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "Claude Opus 4.8",
    "organization": "anthropic",
    "score": 1474,
-   "setting": "Arena sırası #40 · 65.151 oy",
+   "setting": "Arena sırası #40 · 65.208 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "Qwen3.7-Max-Preview",
    "organization": "alibaba",
    "score": 1474,
-   "setting": "Arena sırası #41 · 3.942 oy",
+   "setting": "Arena sırası #41 · 3.941 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "Claude Opus 4.5 (High, 32K, 20251101)",
    "organization": "anthropic",
    "score": 1474,
-   "setting": "Arena sırası #42 · 37.500 oy",
+   "setting": "Arena sırası #42 · 37.485 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "GPT-5.5 Instant",
    "organization": "openai",
    "score": 1473,
-   "setting": "Arena sırası #43 · 27.154 oy",
+   "setting": "Arena sırası #43 · 27.163 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "Gemini 3 Flash",
    "organization": "google",
    "score": 1473,
-   "setting": "Arena sırası #44 · 31.311 oy",
+   "setting": "Arena sırası #44 · 31.313 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "Claude Sonnet 4.6",
    "organization": "anthropic",
    "score": 1472,
-   "setting": "Arena sırası #45 · 70.931 oy",
+   "setting": "Arena sırası #45 · 70.953 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "Grok 4.20 Beta (Reasoning, 0309)",
    "organization": "xai",
    "score": 1472,
-   "setting": "Arena sırası #46 · 66.403 oy",
+   "setting": "Arena sırası #46 · 66.418 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "Grok 4.20 Multi-Agent Beta (0309)",
    "organization": "xai",
    "score": 1471,
-   "setting": "Arena sırası #47 · 64.920 oy",
+   "setting": "Arena sırası #47 · 64.928 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "Claude Opus 4.5 (20251101)",
    "organization": "anthropic",
    "score": 1470,
-   "setting": "Arena sırası #48 · 72.863 oy",
+   "setting": "Arena sırası #48 · 72.850 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "GPT-5.6 Terra (xHigh)",
    "organization": "openai",
    "score": 1467,
-   "setting": "Arena sırası #49 · 45.201 oy",
+   "setting": "Arena sırası #49 · 46.470 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "ERNIE 5.1",
    "organization": "baidu",
    "score": 1467,
-   "setting": "Arena sırası #50 · 39.447 oy",
+   "setting": "Arena sırası #50 · 39.474 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "MiMo-V2.5-Pro",
    "organization": "xiaomi",
    "score": 1466,
-   "setting": "Arena sırası #51 · 77.367 oy",
+   "setting": "Arena sırası #51 · 77.883 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "Grok 4.5",
    "organization": "xai",
-   "score": 1465,
-   "setting": "Arena sırası #52 · 39.844 oy",
+   "score": 1466,
+   "setting": "Arena sırası #52 · 39.880 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "GLM-5.1",
    "organization": "zai",
    "score": 1465,
-   "setting": "Arena sırası #53 · 64.352 oy",
+   "setting": "Arena sırası #53 · 65.402 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "Grok 4.1 (Thinking)",
    "organization": "xai",
    "score": 1465,
-   "setting": "Arena sırası #54 · 66.478 oy",
+   "setting": "Arena sırası #54 · 66.479 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "GPT-5.4",
    "organization": "openai",
    "score": 1465,
-   "setting": "Arena sırası #55 · 67.829 oy",
+   "setting": "Arena sırası #55 · 67.855 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "Qwen3.5-Max-Preview",
    "organization": "alibaba",
    "score": 1465,
-   "setting": "Arena sırası #56 · 22.608 oy",
+   "setting": "Arena sırası #56 · 22.601 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "DeepSeek-V4-Pro (High, 20260813)",
    "organization": "deepseek",
    "score": 1465,
-   "setting": "Arena sırası #57 · 9.805 oy",
+   "setting": "Arena sırası #57 · 9.797 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "Claude Sonnet 5 (High)",
    "organization": "anthropic",
    "score": 1461,
-   "setting": "Arena sırası #58 · 50.871 oy",
+   "setting": "Arena sırası #58 · 51.784 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "Kimi K2.6",
    "organization": "moonshot",
    "score": 1461,
-   "setting": "Arena sırası #59 · 40.014 oy",
+   "setting": "Arena sırası #59 · 40.026 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "Qwen3.6-Max-Preview",
    "organization": "alibaba",
-   "score": 1460,
-   "setting": "Arena sırası #60 · 5.427 oy",
+   "score": 1461,
+   "setting": "Arena sırası #60 · 5.423 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "Grok 4.1",
    "organization": "xai",
    "score": 1459,
-   "setting": "Arena sırası #61 · 68.635 oy",
+   "setting": "Arena sırası #61 · 68.621 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "GPT-6 Sol (Max)",
    "organization": "openai",
    "score": 1459,
-   "setting": "Arena sırası #62 · 13.790 oy",
+   "setting": "Arena sırası #62 · 14.707 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "Gemini 3 Flash (Minimal)",
    "organization": "google",
    "score": 1458,
-   "setting": "Arena sırası #63 · 91.005 oy",
+   "setting": "Arena sırası #63 · 90.998 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "DeepSeek-V4-Pro",
    "organization": "deepseek",
    "score": 1458,
-   "setting": "Arena sırası #64 · 57.564 oy",
+   "setting": "Arena sırası #64 · 57.588 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "GLM-5",
    "organization": "zai",
    "score": 1457,
-   "setting": "Arena sırası #65 · 29.268 oy",
+   "setting": "Arena sırası #65 · 29.267 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "lmarena-text",
+   "model": "Grok 4.6 (High)",
+   "organization": "xai",
+   "score": 1456,
+   "setting": "Arena sırası #66 · 32.189 oy",
+   "source": "LMArena",
+   "url": "https://lmarena.ai/leaderboard",
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "Claude Sonnet 4.5 (High, 32K, 20250929)",
    "organization": "anthropic",
    "score": 1456,
-   "setting": "Arena sırası #66 · 83.921 oy",
+   "setting": "Arena sırası #67 · 83.906 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "Dola Seed 2.0 Pro",
    "organization": "bytedance",
    "score": 1456,
-   "setting": "Arena sırası #67 · 79.109 oy",
+   "setting": "Arena sırası #68 · 79.130 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "GPT-5.1 (High)",
    "organization": "openai",
    "score": 1456,
-   "setting": "Arena sırası #68 · 41.651 oy",
+   "setting": "Arena sırası #69 · 41.646 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "Qwen3.7-Plus",
    "organization": "alibaba",
    "score": 1456,
-   "setting": "Arena sırası #69 · 42.030 oy",
+   "setting": "Arena sırası #70 · 42.058 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "lmarena-text",
-   "model": "Grok 4.6 (High)",
-   "organization": "xai",
-   "score": 1455,
-   "setting": "Arena sırası #70 · 30.919 oy",
-   "source": "LMArena",
-   "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "Gemini 3.5 Flash-Lite",
    "organization": "google",
    "score": 1455,
-   "setting": "Arena sırası #71 · 35.820 oy",
+   "setting": "Arena sırası #71 · 35.829 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "Claude Sonnet 4.5 (20250929)",
    "organization": "anthropic",
    "score": 1455,
-   "setting": "Arena sırası #72 · 82.669 oy",
+   "setting": "Arena sırası #72 · 82.650 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "DeepSeek-V4-Pro Preview (High)",
    "organization": "deepseek",
    "score": 1455,
-   "setting": "Arena sırası #73 · 54.879 oy",
+   "setting": "Arena sırası #73 · 54.896 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "Hy3",
    "organization": "tencent",
-   "score": 1453,
-   "setting": "Arena sırası #74 · 12.791 oy",
+   "score": 1454,
+   "setting": "Arena sırası #74 · 13.220 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "GPT-5.6 Luna (xHigh)",
    "organization": "openai",
-   "score": 1452,
-   "setting": "Arena sırası #75 · 41.052 oy",
+   "score": 1453,
+   "setting": "Arena sırası #75 · 41.426 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "Gemma 4 31B",
    "organization": "google",
    "score": 1452,
-   "setting": "Arena sırası #76 · 6.134 oy",
+   "setting": "Arena sırası #76 · 6.137 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "GPT-5.3 Chat",
    "organization": "openai",
    "score": 1450,
-   "setting": "Arena sırası #77 · 34.343 oy",
+   "setting": "Arena sırası #77 · 34.324 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "Kimi K2.5 (Thinking)",
    "organization": "moonshot",
    "score": 1450,
-   "setting": "Arena sırası #78 · 74.712 oy",
+   "setting": "Arena sırası #78 · 74.744 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "Claude Opus 4.1 (Thinking 16K, 20250805)",
    "organization": "anthropic",
    "score": 1450,
-   "setting": "Arena sırası #79 · 49.545 oy",
+   "setting": "Arena sırası #79 · 49.536 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "lmarena-text",
-   "model": "MiMo-V2.6-Flash",
-   "organization": "xiaomi",
-   "score": 1449,
-   "setting": "Arena sırası #80 · 12.629 oy",
-   "source": "LMArena",
-   "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "ERNIE-5.0-Preview (1203)",
    "organization": "baidu",
    "score": 1449,
-   "setting": "Arena sırası #81 · 9.802 oy",
+   "setting": "Arena sırası #80 · 9.805 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "lmarena-text",
+   "model": "MiMo-V2.6-Flash",
+   "organization": "xiaomi",
+   "score": 1448,
+   "setting": "Arena sırası #81 · 13.730 oy",
+   "source": "LMArena",
+   "url": "https://lmarena.ai/leaderboard",
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "Claude Opus 4.1 (20250805)",
    "organization": "anthropic",
    "score": 1448,
-   "setting": "Arena sırası #82 · 77.226 oy",
+   "setting": "Arena sırası #82 · 77.211 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "MiMo-V2-Pro",
    "organization": "xiaomi",
    "score": 1448,
-   "setting": "Arena sırası #83 · 25.439 oy",
+   "setting": "Arena sırası #83 · 25.435 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "lmarena-text",
+   "model": "Step 5 Preview",
+   "organization": "stepfun",
+   "score": 1448,
+   "setting": "Arena sırası #84 · 9.792 oy",
+   "source": "LMArena",
+   "url": "https://lmarena.ai/leaderboard",
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "GPT-5.4 mini (High)",
    "organization": "openai",
    "score": 1447,
-   "setting": "Arena sırası #84 · 63.442 oy",
+   "setting": "Arena sırası #85 · 63.451 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "lmarena-text",
-   "model": "Step 5 Preview",
-   "organization": "stepfun",
-   "score": 1446,
-   "setting": "Arena sırası #85 · 8.756 oy",
-   "source": "LMArena",
-   "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "ERNIE 5.0 (0110)",
    "organization": "baidu",
    "score": 1446,
-   "setting": "Arena sırası #86 · 36.475 oy",
+   "setting": "Arena sırası #86 · 36.481 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "Gemini 2.5 Pro",
    "organization": "google",
    "score": 1445,
-   "setting": "Arena sırası #87 · 125.320 oy",
+   "setting": "Arena sırası #87 · 125.316 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
@@ -920,67 +920,67 @@
    "setting": "Arena sırası #88 · 14.547 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "Qwen3.6-Plus",
    "organization": "alibaba",
    "score": 1443,
-   "setting": "Arena sırası #89 · 48.129 oy",
+   "setting": "Arena sırası #89 · 48.142 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "ChatGPT-4o Latest (20250326)",
    "organization": "openai",
    "score": 1443,
-   "setting": "Arena sırası #90 · 81.904 oy",
+   "setting": "Arena sırası #90 · 81.905 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
-   "model": "Grok 4.7 (xHigh)",
-   "organization": "xai",
+   "model": "GPT-6 Luna (Max)",
+   "organization": "openai",
    "score": 1442,
-   "setting": "Arena sırası #91 · 13.489 oy",
+   "setting": "Arena sırası #91 · 72.504 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "lmarena-text",
+   "model": "Qwen3.5-397B-A17B",
+   "organization": "alibaba",
+   "score": 1442,
+   "setting": "Arena sırası #92 · 96.206 oy",
+   "source": "LMArena",
+   "url": "https://lmarena.ai/leaderboard",
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "Grok 4.3",
    "organization": "xai",
    "score": 1442,
-   "setting": "Arena sırası #92 · 71.347 oy",
+   "setting": "Arena sırası #93 · 71.348 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "Inkling",
    "organization": "thinky",
-   "score": 1441,
-   "setting": "Arena sırası #93 · 42.506 oy",
+   "score": 1442,
+   "setting": "Arena sırası #94 · 43.705 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "lmarena-text",
-   "model": "Qwen3.5-397B-A17B",
-   "organization": "alibaba",
-   "score": 1441,
-   "setting": "Arena sırası #94 · 95.123 oy",
-   "source": "LMArena",
-   "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
@@ -990,1067 +990,1067 @@
    "setting": "Arena sırası #95 · 12.245 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
-   "model": "GPT-6 Luna (Max)",
-   "organization": "openai",
+   "model": "Grok 4.7 (xHigh)",
+   "organization": "xai",
    "score": 1441,
-   "setting": "Arena sırası #96 · 63.594 oy",
+   "setting": "Arena sırası #96 · 14.693 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "MiniMax-M3",
    "organization": "minimax",
-   "score": 1441,
-   "setting": "Arena sırası #97 · 65.792 oy",
+   "score": 1440,
+   "setting": "Arena sırası #97 · 67.030 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "DeepSeek-V4-Flash Preview (High)",
    "organization": "deepseek",
    "score": 1439,
-   "setting": "Arena sırası #98 · 51.762 oy",
+   "setting": "Arena sırası #98 · 51.781 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "GPT-5.1",
    "organization": "openai",
    "score": 1439,
-   "setting": "Arena sırası #99 · 44.412 oy",
+   "setting": "Arena sırası #99 · 44.419 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-text",
    "model": "Gemma 4 26B A4B",
    "organization": "google",
    "score": 1437,
-   "setting": "Arena sırası #100 · 6.090 oy",
+   "setting": "Arena sırası #100 · 6.092 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-coding",
    "model": "Gemini 4 Argon (High)",
    "organization": "google",
-   "score": 1559,
-   "setting": "Arena sırası #1 · 1.236 oy",
+   "score": 1552,
+   "setting": "Arena sırası #1 · 2.385 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-coding",
    "model": "Claude Fable 5 (High)",
    "organization": "anthropic",
    "score": 1551,
-   "setting": "Arena sırası #2 · 11.128 oy",
+   "setting": "Arena sırası #2 · 11.336 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-coding",
    "model": "Claude Opus 4.7 (High)",
    "organization": "anthropic",
-   "score": 1551,
+   "score": 1550,
    "setting": "Arena sırası #3 · 18.580 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "lmarena-coding",
-   "model": "Muse Wonder (Max)",
-   "organization": "meta",
-   "score": 1550,
-   "setting": "Arena sırası #4 · 1.234 oy",
-   "source": "LMArena",
-   "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-coding",
    "model": "Claude Opus 5.5 (High)",
    "organization": "anthropic",
    "score": 1548,
-   "setting": "Arena sırası #5 · 2.143 oy",
+   "setting": "Arena sırası #4 · 2.314 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-coding",
    "model": "Claude Opus 4.6",
    "organization": "anthropic",
    "score": 1547,
-   "setting": "Arena sırası #6 · 24.104 oy",
+   "setting": "Arena sırası #5 · 24.319 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-coding",
    "model": "Claude Opus 4.6 (High)",
    "organization": "anthropic",
    "score": 1547,
-   "setting": "Arena sırası #7 · 21.348 oy",
+   "setting": "Arena sırası #6 · 21.519 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-coding",
    "model": "Claude Opus 4.7",
    "organization": "anthropic",
    "score": 1546,
-   "setting": "Arena sırası #8 · 18.786 oy",
+   "setting": "Arena sırası #7 · 18.781 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "lmarena-coding",
+   "model": "Muse Wonder (Max)",
+   "organization": "meta",
+   "score": 1545,
+   "setting": "Arena sırası #8 · 1.469 oy",
+   "source": "LMArena",
+   "url": "https://lmarena.ai/leaderboard",
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-coding",
    "model": "GPT-6 Astra (Max)",
    "organization": "openai",
    "score": 1543,
-   "setting": "Arena sırası #9 · 2.977 oy",
+   "setting": "Arena sırası #9 · 3.156 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-coding",
    "model": "Muse Spark 1.2 (xHigh)",
    "organization": "meta",
-   "score": 1542,
-   "setting": "Arena sırası #10 · 2.474 oy",
+   "score": 1541,
+   "setting": "Arena sırası #10 · 2.687 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-coding",
    "model": "Kimi K3 (Max)",
    "organization": "moonshot",
    "score": 1539,
-   "setting": "Arena sırası #11 · 8.643 oy",
+   "setting": "Arena sırası #11 · 8.871 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "lmarena-coding",
-   "model": "Claude Fable 5.1 (Max)",
-   "organization": "anthropic",
-   "score": 1539,
-   "setting": "Arena sırası #12 · 3.112 oy",
-   "source": "LMArena",
-   "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-coding",
    "model": "MiMo-V2.6-Pro",
    "organization": "xiaomi",
    "score": 1538,
-   "setting": "Arena sırası #13 · 1.102 oy",
+   "setting": "Arena sırası #12 · 1.102 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-coding",
-   "model": "Muse Spark 1.3 (Max)",
-   "organization": "meta",
-   "score": 1535,
-   "setting": "Arena sırası #14 · 4.958 oy",
+   "model": "Claude Fable 5.1 (Max)",
+   "organization": "anthropic",
+   "score": 1537,
+   "setting": "Arena sırası #13 · 3.237 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-coding",
    "model": "GPT-6.1 Sol (Max)",
    "organization": "openai",
-   "score": 1534,
-   "setting": "Arena sırası #15 · 1.462 oy",
+   "score": 1537,
+   "setting": "Arena sırası #14 · 1.641 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "lmarena-coding",
+   "model": "Muse Spark 1.3 (Max)",
+   "organization": "meta",
+   "score": 1536,
+   "setting": "Arena sırası #15 · 5.259 oy",
+   "source": "LMArena",
+   "url": "https://lmarena.ai/leaderboard",
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-coding",
    "model": "Claude Opus 5 (High)",
    "organization": "anthropic",
    "score": 1534,
-   "setting": "Arena sırası #16 · 17.823 oy",
+   "setting": "Arena sırası #16 · 18.182 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-coding",
    "model": "GPT-5.6 Sol (xHigh)",
    "organization": "openai",
    "score": 1534,
-   "setting": "Arena sırası #17 · 11.144 oy",
+   "setting": "Arena sırası #17 · 11.350 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-coding",
    "model": "Claude Opus 4.8 (High)",
    "organization": "anthropic",
    "score": 1533,
-   "setting": "Arena sırası #18 · 17.413 oy",
+   "setting": "Arena sırası #18 · 17.411 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-coding",
    "model": "Muse Spark 1.1",
    "organization": "meta",
    "score": 1533,
-   "setting": "Arena sırası #19 · 12.370 oy",
+   "setting": "Arena sırası #19 · 12.696 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-coding",
    "model": "Claude Opus 4.5 (High, 32K, 20251101)",
    "organization": "anthropic",
-   "score": 1531,
-   "setting": "Arena sırası #20 · 7.787 oy",
-   "source": "LMArena",
-   "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "lmarena-coding",
-   "model": "Claude Sonnet 5.5 (xHigh)",
-   "organization": "anthropic",
    "score": 1530,
-   "setting": "Arena sırası #21 · 1.914 oy",
+   "setting": "Arena sırası #20 · 7.783 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "lmarena-coding",
-   "model": "Claude Opus 5 (Max)",
-   "organization": "anthropic",
-   "score": 1530,
-   "setting": "Arena sırası #22 · 8.413 oy",
-   "source": "LMArena",
-   "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-coding",
    "model": "Claude Opus 4.8",
    "organization": "anthropic",
    "score": 1529,
-   "setting": "Arena sırası #23 · 18.073 oy",
+   "setting": "Arena sırası #21 · 18.082 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-coding",
    "model": "Muse Spark",
    "organization": "meta",
    "score": 1529,
-   "setting": "Arena sırası #24 · 3.941 oy",
+   "setting": "Arena sırası #22 · 3.942 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-coding",
-   "model": "Gemini 3.8 Flash (High)",
-   "organization": "google",
-   "score": 1529,
-   "setting": "Arena sırası #25 · 10.731 oy",
+   "model": "Claude Opus 5 (Max)",
+   "organization": "anthropic",
+   "score": 1528,
+   "setting": "Arena sırası #23 · 8.586 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-coding",
    "model": "Claude Sonnet 4.6",
    "organization": "anthropic",
    "score": 1528,
-   "setting": "Arena sırası #26 · 19.732 oy",
+   "setting": "Arena sırası #24 · 19.726 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-coding",
-   "model": "DeepSeek-V4.1-Flash-20260910 (Max)",
-   "organization": "deepseek",
-   "score": 1524,
-   "setting": "Arena sırası #27 · 3.680 oy",
+   "model": "Gemini 3.8 Flash (High)",
+   "organization": "google",
+   "score": 1528,
+   "setting": "Arena sırası #25 · 11.350 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "lmarena-coding",
+   "model": "Claude Sonnet 5.5 (xHigh)",
+   "organization": "anthropic",
+   "score": 1528,
+   "setting": "Arena sırası #26 · 2.117 oy",
+   "source": "LMArena",
+   "url": "https://lmarena.ai/leaderboard",
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-coding",
    "model": "GLM-5.3-Flash",
    "organization": "zai",
-   "score": 1524,
-   "setting": "Arena sırası #28 · 9.192 oy",
+   "score": 1525,
+   "setting": "Arena sırası #27 · 9.720 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-coding",
    "model": "Qwen3.7-Max-Preview",
    "organization": "alibaba",
-   "score": 1523,
-   "setting": "Arena sırası #29 · 1.163 oy",
+   "score": 1524,
+   "setting": "Arena sırası #28 · 1.165 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-coding",
    "model": "Qwen3.8-Max",
    "organization": "alibaba",
-   "score": 1523,
-   "setting": "Arena sırası #30 · 8.078 oy",
+   "score": 1524,
+   "setting": "Arena sırası #29 · 8.333 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "lmarena-coding",
+   "model": "DeepSeek-V4.1-Flash-20260910 (Max)",
+   "organization": "deepseek",
+   "score": 1523,
+   "setting": "Arena sırası #30 · 3.760 oy",
+   "source": "LMArena",
+   "url": "https://lmarena.ai/leaderboard",
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-coding",
    "model": "Claude Opus 4.5 (20251101)",
    "organization": "anthropic",
    "score": 1523,
-   "setting": "Arena sırası #31 · 17.969 oy",
+   "setting": "Arena sırası #31 · 17.965 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-coding",
    "model": "Gemini 3.1 Pro Preview",
    "organization": "google",
-   "score": 1521,
-   "setting": "Arena sırası #32 · 35.474 oy",
+   "score": 1522,
+   "setting": "Arena sırası #32 · 35.768 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "lmarena-coding",
+   "model": "GLM-5.3 (Max)",
+   "organization": "zai",
+   "score": 1521,
+   "setting": "Arena sırası #33 · 5.965 oy",
+   "source": "LMArena",
+   "url": "https://lmarena.ai/leaderboard",
+   "date": "2026-10-22T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "lmarena-coding",
+   "model": "GPT-5.4 (High)",
+   "organization": "openai",
+   "score": 1521,
+   "setting": "Arena sırası #34 · 17.590 oy",
+   "source": "LMArena",
+   "url": "https://lmarena.ai/leaderboard",
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-coding",
    "model": "MiMo-V2.5-Pro",
    "organization": "xiaomi",
    "score": 1521,
-   "setting": "Arena sırası #33 · 20.773 oy",
+   "setting": "Arena sırası #35 · 20.881 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-coding",
-   "model": "GLM-5.3 (Max)",
-   "organization": "zai",
-   "score": 1521,
-   "setting": "Arena sırası #34 · 5.699 oy",
-   "source": "LMArena",
-   "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "lmarena-coding",
-   "model": "GPT-5.4 (High)",
-   "organization": "openai",
+   "model": "Gemini 3.7 Flash (High)",
+   "organization": "google",
    "score": 1520,
-   "setting": "Arena sırası #35 · 17.594 oy",
+   "setting": "Arena sırası #36 · 8.211 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "lmarena-coding",
-   "model": "GPT-6 Sol (Max)",
-   "organization": "openai",
-   "score": 1520,
-   "setting": "Arena sırası #36 · 3.167 oy",
-   "source": "LMArena",
-   "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-coding",
    "model": "Claude Sonnet 5 (High)",
    "organization": "anthropic",
-   "score": 1519,
-   "setting": "Arena sırası #37 · 13.564 oy",
+   "score": 1520,
+   "setting": "Arena sırası #37 · 13.777 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-coding",
-   "model": "Claude Sonnet 4.5 (High, 32K, 20250929)",
-   "organization": "anthropic",
+   "model": "GPT-6 Sol (Max)",
+   "organization": "openai",
    "score": 1519,
-   "setting": "Arena sırası #38 · 19.940 oy",
+   "setting": "Arena sırası #38 · 3.371 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-coding",
    "model": "GPT-5.5 (High)",
    "organization": "openai",
    "score": 1519,
-   "setting": "Arena sırası #39 · 19.152 oy",
+   "setting": "Arena sırası #39 · 19.144 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-coding",
-   "model": "Gemini 3.7 Flash (High)",
-   "organization": "google",
+   "model": "Claude Sonnet 4.5 (High, 32K, 20250929)",
+   "organization": "anthropic",
    "score": 1519,
-   "setting": "Arena sırası #40 · 7.905 oy",
+   "setting": "Arena sırası #40 · 19.932 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-coding",
    "model": "Gemini 3.6 Flash (High)",
    "organization": "google",
    "score": 1518,
-   "setting": "Arena sırası #41 · 10.360 oy",
+   "setting": "Arena sırası #41 · 10.357 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-coding",
    "model": "GPT-5.6 Terra (xHigh)",
    "organization": "openai",
-   "score": 1517,
-   "setting": "Arena sırası #42 · 11.966 oy",
+   "score": 1518,
+   "setting": "Arena sırası #42 · 12.237 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-coding",
    "model": "Gemini 3 Pro",
    "organization": "google",
    "score": 1517,
-   "setting": "Arena sırası #43 · 8.805 oy",
+   "setting": "Arena sırası #43 · 8.807 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-coding",
    "model": "Kimi K2.6",
    "organization": "moonshot",
    "score": 1516,
-   "setting": "Arena sırası #44 · 11.093 oy",
+   "setting": "Arena sırası #44 · 11.097 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "lmarena-coding",
-   "model": "GLM-5.2 (Max)",
-   "organization": "zai",
-   "score": 1515,
-   "setting": "Arena sırası #45 · 13.716 oy",
-   "source": "LMArena",
-   "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-coding",
    "model": "GPT-5.2 Chat (20260210)",
    "organization": "openai",
-   "score": 1514,
-   "setting": "Arena sırası #46 · 9.635 oy",
+   "score": 1515,
+   "setting": "Arena sırası #45 · 9.626 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "lmarena-coding",
+   "model": "GLM-5.2 (Max)",
+   "organization": "zai",
+   "score": 1514,
+   "setting": "Arena sırası #46 · 13.954 oy",
+   "source": "LMArena",
+   "url": "https://lmarena.ai/leaderboard",
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-coding",
    "model": "Dola Seed 2.0 Pro",
    "organization": "bytedance",
    "score": 1514,
-   "setting": "Arena sırası #47 · 22.067 oy",
+   "setting": "Arena sırası #47 · 22.061 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-coding",
    "model": "Grok 4.5",
    "organization": "xai",
    "score": 1514,
-   "setting": "Arena sırası #48 · 11.105 oy",
+   "setting": "Arena sırası #48 · 11.106 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-coding",
    "model": "GPT-5.5 Instant",
    "organization": "openai",
    "score": 1513,
-   "setting": "Arena sırası #49 · 7.920 oy",
+   "setting": "Arena sırası #49 · 7.912 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-coding",
    "model": "Qwen3.5-Max-Preview",
    "organization": "alibaba",
    "score": 1513,
-   "setting": "Arena sırası #50 · 6.362 oy",
+   "setting": "Arena sırası #50 · 6.364 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-coding",
    "model": "GLM-5.1",
    "organization": "zai",
-   "score": 1512,
-   "setting": "Arena sırası #51 · 17.433 oy",
+   "score": 1513,
+   "setting": "Arena sırası #51 · 17.686 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-coding",
    "model": "Claude Sonnet 4.5 (20250929)",
    "organization": "anthropic",
    "score": 1512,
-   "setting": "Arena sırası #52 · 19.757 oy",
+   "setting": "Arena sırası #52 · 19.758 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "lmarena-coding",
+   "model": "Qwen3.6-Max-Preview",
+   "organization": "alibaba",
+   "score": 1512,
+   "setting": "Arena sırası #53 · 1.617 oy",
+   "source": "LMArena",
+   "url": "https://lmarena.ai/leaderboard",
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-coding",
    "model": "ERNIE 5.1",
    "organization": "baidu",
    "score": 1512,
-   "setting": "Arena sırası #53 · 10.905 oy",
+   "setting": "Arena sırası #54 · 10.918 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "lmarena-coding",
-   "model": "Qwen3.6-Max-Preview",
-   "organization": "alibaba",
-   "score": 1511,
-   "setting": "Arena sırası #54 · 1.615 oy",
-   "source": "LMArena",
-   "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-coding",
    "model": "GPT-5.4",
    "organization": "openai",
    "score": 1511,
-   "setting": "Arena sırası #55 · 18.925 oy",
+   "setting": "Arena sırası #55 · 18.934 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-coding",
    "model": "Claude Opus 4.1 (Thinking 16K, 20250805)",
    "organization": "anthropic",
    "score": 1511,
-   "setting": "Arena sırası #56 · 9.923 oy",
+   "setting": "Arena sırası #56 · 9.918 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-coding",
    "model": "MiMo-V2.6-Flash",
    "organization": "xiaomi",
    "score": 1511,
-   "setting": "Arena sırası #57 · 3.010 oy",
+   "setting": "Arena sırası #57 · 3.232 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "lmarena-coding",
-   "model": "GPT-5.5",
-   "organization": "openai",
-   "score": 1511,
-   "setting": "Arena sırası #58 · 20.053 oy",
-   "source": "LMArena",
-   "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-coding",
    "model": "Grok 4.20 Beta (Reasoning, 0309)",
    "organization": "xai",
    "score": 1511,
-   "setting": "Arena sırası #59 · 18.367 oy",
+   "setting": "Arena sırası #58 · 18.360 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "lmarena-coding",
+   "model": "GPT-5.5",
+   "organization": "openai",
+   "score": 1511,
+   "setting": "Arena sırası #59 · 20.052 oy",
+   "source": "LMArena",
+   "url": "https://lmarena.ai/leaderboard",
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-coding",
    "model": "Grok 4.6 (High)",
    "organization": "xai",
    "score": 1510,
-   "setting": "Arena sırası #60 · 7.668 oy",
+   "setting": "Arena sırası #60 · 7.973 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-creative",
    "model": "Claude Opus 5.5 (High)",
    "organization": "anthropic",
    "score": 1520,
-   "setting": "Arena sırası #1 · 2.241 oy",
+   "setting": "Arena sırası #1 · 2.453 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-creative",
    "model": "Gemini 4 Argon (High)",
    "organization": "google",
-   "score": 1516,
-   "setting": "Arena sırası #2 · 1.055 oy",
+   "score": 1512,
+   "setting": "Arena sırası #2 · 2.335 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-creative",
    "model": "Claude Fable 5 (High)",
    "organization": "anthropic",
    "score": 1501,
-   "setting": "Arena sırası #3 · 9.368 oy",
+   "setting": "Arena sırası #3 · 9.586 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-creative",
    "model": "Claude Opus 4.6 (High)",
    "organization": "anthropic",
-   "score": 1500,
-   "setting": "Arena sırası #4 · 15.218 oy",
+   "score": 1499,
+   "setting": "Arena sırası #4 · 15.413 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "lmarena-creative",
-   "model": "Gemini 3.7 Flash (High)",
-   "organization": "google",
-   "score": 1491,
-   "setting": "Arena sırası #5 · 6.466 oy",
-   "source": "LMArena",
-   "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-creative",
    "model": "Muse Wonder (Max)",
    "organization": "meta",
-   "score": 1490,
-   "setting": "Arena sırası #6 · 1.146 oy",
+   "score": 1492,
+   "setting": "Arena sırası #5 · 1.350 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "lmarena-creative",
+   "model": "Gemini 3.7 Flash (High)",
+   "organization": "google",
+   "score": 1492,
+   "setting": "Arena sırası #6 · 6.770 oy",
+   "source": "LMArena",
+   "url": "https://lmarena.ai/leaderboard",
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-creative",
    "model": "Claude Opus 4.7 (High)",
    "organization": "anthropic",
    "score": 1489,
-   "setting": "Arena sırası #7 · 11.816 oy",
+   "setting": "Arena sırası #7 · 11.804 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-creative",
    "model": "Claude Fable 5.1 (Max)",
    "organization": "anthropic",
-   "score": 1486,
-   "setting": "Arena sırası #8 · 3.551 oy",
+   "score": 1487,
+   "setting": "Arena sırası #8 · 3.729 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "lmarena-creative",
+   "model": "Gemini 3.8 Flash (High)",
+   "organization": "google",
+   "score": 1485,
+   "setting": "Arena sırası #9 · 9.817 oy",
+   "source": "LMArena",
+   "url": "https://lmarena.ai/leaderboard",
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-creative",
    "model": "Gemini 3 Pro",
    "organization": "google",
    "score": 1485,
-   "setting": "Arena sırası #9 · 6.543 oy",
+   "setting": "Arena sırası #10 · 6.542 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "lmarena-creative",
-   "model": "Gemini 3.8 Flash (High)",
-   "organization": "google",
-   "score": 1484,
-   "setting": "Arena sırası #10 · 9.182 oy",
-   "source": "LMArena",
-   "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-creative",
    "model": "Claude Opus 4.7",
    "organization": "anthropic",
    "score": 1482,
-   "setting": "Arena sırası #11 · 12.024 oy",
+   "setting": "Arena sırası #11 · 12.036 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-creative",
    "model": "Gemini 3.1 Pro Preview",
    "organization": "google",
    "score": 1481,
-   "setting": "Arena sırası #12 · 24.045 oy",
+   "setting": "Arena sırası #12 · 24.371 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-creative",
    "model": "Claude Opus 4.6",
    "organization": "anthropic",
    "score": 1478,
-   "setting": "Arena sırası #13 · 15.439 oy",
+   "setting": "Arena sırası #13 · 15.623 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-creative",
    "model": "Claude Opus 5 (Max)",
    "organization": "anthropic",
-   "score": 1473,
-   "setting": "Arena sırası #14 · 7.695 oy",
+   "score": 1474,
+   "setting": "Arena sırası #14 · 7.903 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-creative",
    "model": "Gemini 3.6 Flash (High)",
    "organization": "google",
    "score": 1471,
-   "setting": "Arena sırası #15 · 7.574 oy",
+   "setting": "Arena sırası #15 · 7.584 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-creative",
    "model": "Claude Opus 5 (High)",
    "organization": "anthropic",
    "score": 1471,
-   "setting": "Arena sırası #16 · 15.471 oy",
+   "setting": "Arena sırası #16 · 15.881 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "lmarena-creative",
+   "model": "GPT-5.6 Sol (xHigh)",
+   "organization": "openai",
+   "score": 1470,
+   "setting": "Arena sırası #17 · 8.988 oy",
+   "source": "LMArena",
+   "url": "https://lmarena.ai/leaderboard",
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-creative",
    "model": "Claude Opus 4.5 (High, 32K, 20251101)",
    "organization": "anthropic",
-   "score": 1470,
-   "setting": "Arena sırası #17 · 5.696 oy",
+   "score": 1469,
+   "setting": "Arena sırası #18 · 5.692 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-creative",
    "model": "Claude Opus 4.8 (High)",
    "organization": "anthropic",
    "score": 1469,
-   "setting": "Arena sırası #18 · 12.792 oy",
+   "setting": "Arena sırası #19 · 12.810 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "lmarena-creative",
-   "model": "GPT-5.6 Sol (xHigh)",
-   "organization": "openai",
-   "score": 1469,
-   "setting": "Arena sırası #19 · 8.740 oy",
-   "source": "LMArena",
-   "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-creative",
    "model": "Gemini 3.5 Flash (Medium)",
    "organization": "google",
-   "score": 1468,
-   "setting": "Arena sırası #20 · 9.462 oy",
+   "score": 1469,
+   "setting": "Arena sırası #20 · 9.480 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-creative",
    "model": "Qwen3.8-Max",
    "organization": "alibaba",
-   "score": 1467,
-   "setting": "Arena sırası #21 · 5.879 oy",
+   "score": 1468,
+   "setting": "Arena sırası #21 · 6.134 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-creative",
    "model": "Claude Sonnet 5.5 (xHigh)",
    "organization": "anthropic",
-   "score": 1465,
-   "setting": "Arena sırası #22 · 1.838 oy",
+   "score": 1466,
+   "setting": "Arena sırası #22 · 2.058 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "lmarena-creative",
-   "model": "Gemini 3.5 Flash (High)",
-   "organization": "google",
-   "score": 1464,
-   "setting": "Arena sırası #23 · 9.473 oy",
-   "source": "LMArena",
-   "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-creative",
    "model": "Muse Spark",
    "organization": "meta",
    "score": 1464,
-   "setting": "Arena sırası #24 · 2.048 oy",
+   "setting": "Arena sırası #23 · 2.047 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "lmarena-creative",
+   "model": "Gemini 3.5 Flash (High)",
+   "organization": "google",
+   "score": 1464,
+   "setting": "Arena sırası #24 · 9.477 oy",
+   "source": "LMArena",
+   "url": "https://lmarena.ai/leaderboard",
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-creative",
    "model": "Grok 4.20 Beta 1",
    "organization": "xai",
    "score": 1464,
-   "setting": "Arena sırası #25 · 4.184 oy",
+   "setting": "Arena sırası #25 · 4.185 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "lmarena-creative",
+   "model": "Muse Spark 1.3 (Max)",
+   "organization": "meta",
+   "score": 1463,
+   "setting": "Arena sırası #26 · 4.562 oy",
+   "source": "LMArena",
+   "url": "https://lmarena.ai/leaderboard",
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-creative",
    "model": "Claude Opus 4.8",
    "organization": "anthropic",
    "score": 1463,
-   "setting": "Arena sırası #26 · 12.821 oy",
+   "setting": "Arena sırası #27 · 12.844 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-creative",
    "model": "Kimi K3 (Max)",
    "organization": "moonshot",
-   "score": 1463,
-   "setting": "Arena sırası #27 · 7.019 oy",
-   "source": "LMArena",
-   "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "lmarena-creative",
-   "model": "Muse Spark 1.3 (Max)",
-   "organization": "meta",
    "score": 1462,
-   "setting": "Arena sırası #28 · 4.272 oy",
+   "setting": "Arena sırası #28 · 7.248 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-creative",
    "model": "Claude Opus 4.5 (20251101)",
    "organization": "anthropic",
-   "score": 1461,
-   "setting": "Arena sırası #29 · 11.406 oy",
+   "score": 1462,
+   "setting": "Arena sırası #29 · 11.407 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-creative",
    "model": "Gemini 3 Flash",
    "organization": "google",
    "score": 1457,
-   "setting": "Arena sırası #30 · 4.822 oy",
+   "setting": "Arena sırası #30 · 4.833 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-creative",
    "model": "GLM-5.3 (Max)",
    "organization": "zai",
-   "score": 1455,
-   "setting": "Arena sırası #31 · 5.455 oy",
+   "score": 1456,
+   "setting": "Arena sırası #31 · 5.741 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-creative",
    "model": "GPT-5.5 Instant",
    "organization": "openai",
    "score": 1455,
-   "setting": "Arena sırası #32 · 4.350 oy",
+   "setting": "Arena sırası #32 · 4.357 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "lmarena-creative",
-   "model": "GPT-6.1 Sol (Max)",
-   "organization": "openai",
-   "score": 1454,
-   "setting": "Arena sırası #33 · 1.688 oy",
-   "source": "LMArena",
-   "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-creative",
    "model": "Claude Sonnet 4.5 (20250929)",
    "organization": "anthropic",
    "score": 1454,
-   "setting": "Arena sırası #34 · 12.425 oy",
+   "setting": "Arena sırası #33 · 12.417 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "lmarena-creative",
+   "model": "GPT-6.1 Sol (Max)",
+   "organization": "openai",
+   "score": 1453,
+   "setting": "Arena sırası #34 · 1.871 oy",
+   "source": "LMArena",
+   "url": "https://lmarena.ai/leaderboard",
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-creative",
    "model": "GLM-5.2 (Max)",
    "organization": "zai",
-   "score": 1454,
-   "setting": "Arena sırası #35 · 10.217 oy",
+   "score": 1453,
+   "setting": "Arena sırası #35 · 10.456 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "lmarena-creative",
-   "model": "GPT-5.5 (High)",
-   "organization": "openai",
-   "score": 1451,
-   "setting": "Arena sırası #36 · 13.147 oy",
-   "source": "LMArena",
-   "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-creative",
    "model": "Grok 4.5",
    "organization": "xai",
-   "score": 1451,
-   "setting": "Arena sırası #37 · 8.280 oy",
+   "score": 1452,
+   "setting": "Arena sırası #36 · 8.288 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "lmarena-creative",
+   "model": "GPT-5.5 (High)",
+   "organization": "openai",
+   "score": 1452,
+   "setting": "Arena sırası #37 · 13.161 oy",
+   "source": "LMArena",
+   "url": "https://lmarena.ai/leaderboard",
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-creative",
    "model": "Claude Sonnet 4.5 (High, 32K, 20250929)",
    "organization": "anthropic",
    "score": 1450,
-   "setting": "Arena sırası #38 · 12.706 oy",
+   "setting": "Arena sırası #38 · 12.699 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "lmarena-creative",
-   "model": "Claude Sonnet 4.6",
-   "organization": "anthropic",
-   "score": 1449,
-   "setting": "Arena sırası #39 · 12.370 oy",
-   "source": "LMArena",
-   "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-creative",
    "model": "GPT-6 Astra (Max)",
    "organization": "openai",
    "score": 1449,
-   "setting": "Arena sırası #40 · 2.966 oy",
+   "setting": "Arena sırası #39 · 3.150 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "lmarena-creative",
+   "model": "Claude Sonnet 4.6",
+   "organization": "anthropic",
+   "score": 1449,
+   "setting": "Arena sırası #40 · 12.386 oy",
+   "source": "LMArena",
+   "url": "https://lmarena.ai/leaderboard",
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-creative",
    "model": "GPT-5.5",
    "organization": "openai",
    "score": 1448,
-   "setting": "Arena sırası #41 · 13.405 oy",
+   "setting": "Arena sırası #41 · 13.417 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-creative",
@@ -2060,1227 +2060,1227 @@
    "setting": "Arena sırası #42 · 4.859 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-creative",
    "model": "Grok 4.20 Multi-Agent Beta (0309)",
    "organization": "xai",
    "score": 1447,
-   "setting": "Arena sırası #43 · 11.299 oy",
+   "setting": "Arena sırası #43 · 11.296 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-creative",
    "model": "Gemini 3 Flash (Minimal)",
    "organization": "google",
    "score": 1447,
-   "setting": "Arena sırası #44 · 15.203 oy",
+   "setting": "Arena sırası #44 · 15.198 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-creative",
    "model": "DeepSeek-V4-Pro",
    "organization": "deepseek",
    "score": 1446,
-   "setting": "Arena sırası #45 · 9.724 oy",
+   "setting": "Arena sırası #45 · 9.731 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-creative",
    "model": "GLM-5.1",
    "organization": "zai",
    "score": 1446,
-   "setting": "Arena sırası #46 · 12.579 oy",
+   "setting": "Arena sırası #46 · 12.807 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "lmarena-creative",
+   "model": "MiMo-V2.6-Pro",
+   "organization": "xiaomi",
+   "score": 1446,
+   "setting": "Arena sırası #47 · 792 oy",
+   "source": "LMArena",
+   "url": "https://lmarena.ai/leaderboard",
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-creative",
    "model": "DeepSeek-V4-Pro (High, 20260813)",
    "organization": "deepseek",
    "score": 1446,
-   "setting": "Arena sırası #47 · 1.998 oy",
+   "setting": "Arena sırası #48 · 1.996 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-creative",
    "model": "Claude Opus 4.1 (Thinking 16K, 20250805)",
    "organization": "anthropic",
    "score": 1446,
-   "setting": "Arena sırası #48 · 6.868 oy",
+   "setting": "Arena sırası #49 · 6.868 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "lmarena-creative",
+   "model": "Grok 4.20 Beta (Reasoning, 0309)",
+   "organization": "xai",
+   "score": 1446,
+   "setting": "Arena sırası #50 · 11.437 oy",
+   "source": "LMArena",
+   "url": "https://lmarena.ai/leaderboard",
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-creative",
    "model": "Qwen3.5-Max-Preview",
    "organization": "alibaba",
    "score": 1445,
-   "setting": "Arena sırası #49 · 3.325 oy",
+   "setting": "Arena sırası #51 · 3.323 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "lmarena-creative",
-   "model": "Grok 4.20 Beta (Reasoning, 0309)",
-   "organization": "xai",
-   "score": 1445,
-   "setting": "Arena sırası #50 · 11.430 oy",
-   "source": "LMArena",
-   "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "lmarena-creative",
-   "model": "MiMo-V2.6-Pro",
-   "organization": "xiaomi",
-   "score": 1445,
-   "setting": "Arena sırası #51 · 791 oy",
-   "source": "LMArena",
-   "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "lmarena-creative",
-   "model": "Muse Spark 1.1",
-   "organization": "meta",
-   "score": 1443,
-   "setting": "Arena sırası #52 · 9.419 oy",
-   "source": "LMArena",
-   "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-creative",
    "model": "Gemini 2.5 Pro",
    "organization": "google",
    "score": 1443,
-   "setting": "Arena sırası #53 · 17.698 oy",
+   "setting": "Arena sırası #52 · 17.700 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "lmarena-creative",
+   "model": "Grok 4.6 (High)",
+   "organization": "xai",
+   "score": 1443,
+   "setting": "Arena sırası #53 · 7.194 oy",
+   "source": "LMArena",
+   "url": "https://lmarena.ai/leaderboard",
+   "date": "2026-10-22T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "lmarena-creative",
+   "model": "Muse Spark 1.1",
+   "organization": "meta",
+   "score": 1443,
+   "setting": "Arena sırası #54 · 9.741 oy",
+   "source": "LMArena",
+   "url": "https://lmarena.ai/leaderboard",
+   "date": "2026-10-22T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "lmarena-creative",
+   "model": "GPT-5.4 (High)",
+   "organization": "openai",
+   "score": 1442,
+   "setting": "Arena sırası #55 · 11.126 oy",
+   "source": "LMArena",
+   "url": "https://lmarena.ai/leaderboard",
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-creative",
    "model": "Claude Opus 4.1 (20250805)",
    "organization": "anthropic",
    "score": 1442,
-   "setting": "Arena sırası #54 · 10.875 oy",
+   "setting": "Arena sırası #56 · 10.881 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "lmarena-creative",
-   "model": "GPT-5.4 (High)",
-   "organization": "openai",
-   "score": 1442,
-   "setting": "Arena sırası #55 · 11.125 oy",
-   "source": "LMArena",
-   "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-creative",
    "model": "DeepSeek-V4.1-Flash-20260910 (Max)",
    "organization": "deepseek",
-   "score": 1441,
-   "setting": "Arena sırası #56 · 2.759 oy",
+   "score": 1442,
+   "setting": "Arena sırası #57 · 2.830 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "lmarena-creative",
-   "model": "Grok 4.6 (High)",
-   "organization": "xai",
-   "score": 1441,
-   "setting": "Arena sırası #57 · 6.900 oy",
-   "source": "LMArena",
-   "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "lmarena-creative",
-   "model": "Muse Spark 1.2 (xHigh)",
-   "organization": "meta",
-   "score": 1441,
-   "setting": "Arena sırası #58 · 2.023 oy",
-   "source": "LMArena",
-   "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-creative",
    "model": "DeepSeek-V4-Pro Preview (High)",
    "organization": "deepseek",
    "score": 1440,
-   "setting": "Arena sırası #59 · 9.383 oy",
+   "setting": "Arena sırası #58 · 9.401 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "lmarena-creative",
+   "model": "Muse Spark 1.2 (xHigh)",
+   "organization": "meta",
+   "score": 1439,
+   "setting": "Arena sırası #59 · 2.219 oy",
+   "source": "LMArena",
+   "url": "https://lmarena.ai/leaderboard",
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-creative",
    "model": "Qwen3.7-Max-Preview",
    "organization": "alibaba",
-   "score": 1440,
-   "setting": "Arena sırası #60 · 513 oy",
+   "score": 1438,
+   "setting": "Arena sırası #60 · 511 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-hard",
    "model": "Gemini 4 Argon (High)",
    "organization": "google",
-   "score": 1549,
-   "setting": "Arena sırası #1 · 3.131 oy",
+   "score": 1540,
+   "setting": "Arena sırası #1 · 6.319 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-hard",
    "model": "Claude Opus 5.5 (High)",
    "organization": "anthropic",
-   "score": 1534,
-   "setting": "Arena sırası #2 · 5.917 oy",
+   "score": 1535,
+   "setting": "Arena sırası #2 · 6.426 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-hard",
    "model": "Claude Opus 4.6 (High)",
    "organization": "anthropic",
    "score": 1530,
-   "setting": "Arena sırası #3 · 52.600 oy",
+   "setting": "Arena sırası #3 · 53.083 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-hard",
    "model": "Claude Fable 5 (High)",
    "organization": "anthropic",
    "score": 1529,
-   "setting": "Arena sırası #4 · 28.193 oy",
+   "setting": "Arena sırası #4 · 28.705 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-hard",
    "model": "Claude Opus 4.6",
    "organization": "anthropic",
    "score": 1527,
-   "setting": "Arena sırası #5 · 56.652 oy",
+   "setting": "Arena sırası #5 · 57.161 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-hard",
    "model": "Claude Opus 4.7 (High)",
    "organization": "anthropic",
    "score": 1525,
-   "setting": "Arena sırası #6 · 43.676 oy",
+   "setting": "Arena sırası #6 · 43.664 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-hard",
    "model": "Claude Fable 5.1 (Max)",
    "organization": "anthropic",
    "score": 1523,
-   "setting": "Arena sırası #7 · 9.089 oy",
+   "setting": "Arena sırası #7 · 9.488 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-hard",
    "model": "Muse Wonder (Max)",
    "organization": "meta",
-   "score": 1523,
-   "setting": "Arena sırası #8 · 3.187 oy",
+   "score": 1522,
+   "setting": "Arena sırası #8 · 3.744 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-hard",
    "model": "Claude Opus 4.7",
    "organization": "anthropic",
    "score": 1519,
-   "setting": "Arena sırası #9 · 44.373 oy",
+   "setting": "Arena sırası #9 · 44.355 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-hard",
    "model": "Gemini 3.8 Flash (High)",
    "organization": "google",
    "score": 1517,
-   "setting": "Arena sırası #10 · 26.670 oy",
+   "setting": "Arena sırası #10 · 28.260 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-hard",
    "model": "Muse Spark 1.3 (Max)",
    "organization": "meta",
    "score": 1517,
-   "setting": "Arena sırası #11 · 12.510 oy",
+   "setting": "Arena sırası #11 · 13.251 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-hard",
    "model": "Kimi K3 (Max)",
    "organization": "moonshot",
    "score": 1516,
-   "setting": "Arena sırası #12 · 21.953 oy",
+   "setting": "Arena sırası #12 · 22.590 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "lmarena-hard",
+   "model": "Claude Opus 5 (High)",
+   "organization": "anthropic",
+   "score": 1516,
+   "setting": "Arena sırası #13 · 46.165 oy",
+   "source": "LMArena",
+   "url": "https://lmarena.ai/leaderboard",
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-hard",
    "model": "Claude Opus 5 (Max)",
    "organization": "anthropic",
    "score": 1515,
-   "setting": "Arena sırası #13 · 21.745 oy",
+   "setting": "Arena sırası #14 · 22.219 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "lmarena-hard",
-   "model": "Claude Opus 5 (High)",
-   "organization": "anthropic",
-   "score": 1515,
-   "setting": "Arena sırası #14 · 45.136 oy",
-   "source": "LMArena",
-   "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-hard",
    "model": "Claude Opus 4.8 (High)",
    "organization": "anthropic",
    "score": 1513,
-   "setting": "Arena sırası #15 · 42.516 oy",
+   "setting": "Arena sırası #15 · 42.526 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "lmarena-hard",
+   "model": "Muse Spark 1.2 (xHigh)",
+   "organization": "meta",
+   "score": 1512,
+   "setting": "Arena sırası #16 · 6.652 oy",
+   "source": "LMArena",
+   "url": "https://lmarena.ai/leaderboard",
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-hard",
    "model": "GPT-5.6 Sol (xHigh)",
    "organization": "openai",
    "score": 1511,
-   "setting": "Arena sırası #16 · 27.137 oy",
+   "setting": "Arena sırası #17 · 27.653 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "lmarena-hard",
-   "model": "Muse Spark 1.2 (xHigh)",
-   "organization": "meta",
-   "score": 1511,
-   "setting": "Arena sırası #17 · 6.116 oy",
-   "source": "LMArena",
-   "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-hard",
    "model": "Muse Spark 1.1",
    "organization": "meta",
    "score": 1510,
-   "setting": "Arena sırası #18 · 29.563 oy",
+   "setting": "Arena sırası #18 · 30.395 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "lmarena-hard",
+   "model": "Gemini 3.7 Flash (High)",
+   "organization": "google",
+   "score": 1509,
+   "setting": "Arena sırası #19 · 19.840 oy",
+   "source": "LMArena",
+   "url": "https://lmarena.ai/leaderboard",
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-hard",
    "model": "Gemini 3.1 Pro Preview",
    "organization": "google",
    "score": 1508,
-   "setting": "Arena sırası #19 · 84.197 oy",
+   "setting": "Arena sırası #20 · 84.943 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "lmarena-hard",
-   "model": "Gemini 3.7 Flash (High)",
-   "organization": "google",
-   "score": 1507,
-   "setting": "Arena sırası #20 · 19.036 oy",
-   "source": "LMArena",
-   "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-hard",
    "model": "Muse Spark",
    "organization": "meta",
    "score": 1506,
-   "setting": "Arena sırası #21 · 9.159 oy",
+   "setting": "Arena sırası #21 · 9.158 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "lmarena-hard",
-   "model": "Claude Sonnet 5.5 (xHigh)",
-   "organization": "anthropic",
-   "score": 1506,
-   "setting": "Arena sırası #22 · 5.015 oy",
-   "source": "LMArena",
-   "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-hard",
    "model": "Claude Opus 4.8",
    "organization": "anthropic",
    "score": 1505,
-   "setting": "Arena sırası #23 · 43.360 oy",
+   "setting": "Arena sırası #22 · 43.382 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-hard",
    "model": "GLM-5.3 (Max)",
    "organization": "zai",
-   "score": 1504,
-   "setting": "Arena sırası #24 · 15.149 oy",
+   "score": 1505,
+   "setting": "Arena sırası #23 · 15.810 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "lmarena-hard",
+   "model": "Claude Sonnet 5.5 (xHigh)",
+   "organization": "anthropic",
+   "score": 1504,
+   "setting": "Arena sırası #24 · 5.536 oy",
+   "source": "LMArena",
+   "url": "https://lmarena.ai/leaderboard",
+   "date": "2026-10-22T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "lmarena-hard",
+   "model": "GPT-6.1 Sol (Max)",
+   "organization": "openai",
+   "score": 1504,
+   "setting": "Arena sırası #25 · 4.826 oy",
+   "source": "LMArena",
+   "url": "https://lmarena.ai/leaderboard",
+   "date": "2026-10-22T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "lmarena-hard",
+   "model": "Qwen3.8-Max",
+   "organization": "alibaba",
+   "score": 1504,
+   "setting": "Arena sırası #26 · 20.097 oy",
+   "source": "LMArena",
+   "url": "https://lmarena.ai/leaderboard",
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-hard",
    "model": "MiMo-V2.6-Pro",
    "organization": "xiaomi",
    "score": 1504,
-   "setting": "Arena sırası #25 · 2.619 oy",
+   "setting": "Arena sırası #27 · 2.619 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-hard",
    "model": "Claude Sonnet 4.6",
    "organization": "anthropic",
    "score": 1503,
-   "setting": "Arena sırası #26 · 46.227 oy",
+   "setting": "Arena sırası #28 · 46.226 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "lmarena-hard",
-   "model": "Qwen3.8-Max",
-   "organization": "alibaba",
-   "score": 1503,
-   "setting": "Arena sırası #27 · 19.425 oy",
-   "source": "LMArena",
-   "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-hard",
    "model": "Gemini 3 Pro",
    "organization": "google",
    "score": 1502,
-   "setting": "Arena sırası #28 · 23.177 oy",
+   "setting": "Arena sırası #29 · 23.177 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "lmarena-hard",
-   "model": "GPT-6.1 Sol (Max)",
-   "organization": "openai",
-   "score": 1502,
-   "setting": "Arena sırası #29 · 4.318 oy",
-   "source": "LMArena",
-   "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "lmarena-hard",
-   "model": "Gemini 3.6 Flash (High)",
-   "organization": "google",
-   "score": 1501,
-   "setting": "Arena sırası #30 · 24.133 oy",
-   "source": "LMArena",
-   "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-hard",
    "model": "GPT-5.5 (High)",
    "organization": "openai",
    "score": 1501,
-   "setting": "Arena sırası #31 · 45.527 oy",
+   "setting": "Arena sırası #30 · 45.534 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "lmarena-hard",
+   "model": "Gemini 3.6 Flash (High)",
+   "organization": "google",
+   "score": 1501,
+   "setting": "Arena sırası #31 · 24.129 oy",
+   "source": "LMArena",
+   "url": "https://lmarena.ai/leaderboard",
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-hard",
    "model": "GPT-6 Astra (Max)",
    "organization": "openai",
    "score": 1501,
-   "setting": "Arena sırası #32 · 8.080 oy",
+   "setting": "Arena sırası #32 · 8.537 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "lmarena-hard",
+   "model": "GLM-5.3-Flash",
+   "organization": "zai",
+   "score": 1501,
+   "setting": "Arena sırası #33 · 24.351 oy",
+   "source": "LMArena",
+   "url": "https://lmarena.ai/leaderboard",
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-hard",
    "model": "Claude Opus 4.5 (High, 32K, 20251101)",
    "organization": "anthropic",
    "score": 1501,
-   "setting": "Arena sırası #33 · 20.308 oy",
+   "setting": "Arena sırası #34 · 20.294 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "lmarena-hard",
-   "model": "GLM-5.3-Flash",
-   "organization": "zai",
-   "score": 1500,
-   "setting": "Arena sırası #34 · 22.985 oy",
-   "source": "LMArena",
-   "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-hard",
    "model": "GPT-5.5",
    "organization": "openai",
    "score": 1499,
-   "setting": "Arena sırası #35 · 47.276 oy",
+   "setting": "Arena sırası #35 · 47.289 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-hard",
    "model": "DeepSeek-V4.1-Flash-20260910 (Max)",
    "organization": "deepseek",
    "score": 1499,
-   "setting": "Arena sırası #36 · 8.655 oy",
+   "setting": "Arena sırası #36 · 8.819 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-hard",
    "model": "Claude Opus 4.5 (20251101)",
    "organization": "anthropic",
    "score": 1498,
-   "setting": "Arena sırası #37 · 43.232 oy",
+   "setting": "Arena sırası #37 · 43.218 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "lmarena-hard",
-   "model": "GPT-5.4 (High)",
-   "organization": "openai",
-   "score": 1496,
-   "setting": "Arena sırası #38 · 42.124 oy",
-   "source": "LMArena",
-   "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-hard",
    "model": "GPT-5.2 Chat (20260210)",
    "organization": "openai",
-   "score": 1496,
-   "setting": "Arena sırası #39 · 22.862 oy",
+   "score": 1497,
+   "setting": "Arena sırası #38 · 22.849 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "lmarena-hard",
+   "model": "GPT-5.4 (High)",
+   "organization": "openai",
+   "score": 1497,
+   "setting": "Arena sırası #39 · 42.123 oy",
+   "source": "LMArena",
+   "url": "https://lmarena.ai/leaderboard",
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-hard",
    "model": "GLM-5.2 (Max)",
    "organization": "zai",
    "score": 1496,
-   "setting": "Arena sırası #40 · 33.290 oy",
+   "setting": "Arena sırası #40 · 33.913 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "lmarena-hard",
+   "model": "Qwen3.7-Max-Preview",
+   "organization": "alibaba",
+   "score": 1495,
+   "setting": "Arena sırası #41 · 2.684 oy",
+   "source": "LMArena",
+   "url": "https://lmarena.ai/leaderboard",
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-hard",
    "model": "Gemini 3.5 Flash (Medium)",
    "organization": "google",
    "score": 1495,
-   "setting": "Arena sırası #41 · 31.491 oy",
+   "setting": "Arena sırası #42 · 31.505 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-hard",
    "model": "Gemini 3.5 Flash (High)",
    "organization": "google",
    "score": 1495,
-   "setting": "Arena sırası #42 · 32.389 oy",
+   "setting": "Arena sırası #43 · 32.399 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "lmarena-hard",
-   "model": "Qwen3.7-Max-Preview",
-   "organization": "alibaba",
-   "score": 1495,
-   "setting": "Arena sırası #43 · 2.683 oy",
-   "source": "LMArena",
-   "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-hard",
    "model": "MiMo-V2.5-Pro",
    "organization": "xiaomi",
    "score": 1494,
-   "setting": "Arena sırası #44 · 50.452 oy",
+   "setting": "Arena sırası #44 · 50.748 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-hard",
    "model": "Gemini 3 Flash",
    "organization": "google",
    "score": 1493,
-   "setting": "Arena sırası #45 · 17.156 oy",
+   "setting": "Arena sırası #45 · 17.151 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "lmarena-hard",
-   "model": "Qwen3.5-Max-Preview",
-   "organization": "alibaba",
-   "score": 1491,
-   "setting": "Arena sırası #46 · 14.540 oy",
-   "source": "LMArena",
-   "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-hard",
    "model": "GPT-5.5 Instant",
    "organization": "openai",
    "score": 1491,
-   "setting": "Arena sırası #47 · 18.434 oy",
+   "setting": "Arena sırası #46 · 18.438 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "lmarena-hard",
+   "model": "Qwen3.5-Max-Preview",
+   "organization": "alibaba",
+   "score": 1491,
+   "setting": "Arena sırası #47 · 14.538 oy",
+   "source": "LMArena",
+   "url": "https://lmarena.ai/leaderboard",
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-hard",
    "model": "GPT-5.6 Terra (xHigh)",
    "organization": "openai",
    "score": 1490,
-   "setting": "Arena sırası #48 · 29.450 oy",
+   "setting": "Arena sırası #48 · 30.211 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-hard",
    "model": "Claude Sonnet 5 (High)",
    "organization": "anthropic",
-   "score": 1489,
-   "setting": "Arena sırası #49 · 33.444 oy",
+   "score": 1490,
+   "setting": "Arena sırası #49 · 33.975 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-hard",
    "model": "GLM-5.1",
    "organization": "zai",
    "score": 1489,
-   "setting": "Arena sırası #50 · 42.115 oy",
+   "setting": "Arena sırası #50 · 42.737 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-hard",
    "model": "Grok 4.20 Beta (Reasoning, 0309)",
    "organization": "xai",
    "score": 1489,
-   "setting": "Arena sırası #51 · 43.508 oy",
+   "setting": "Arena sırası #51 · 43.514 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-hard",
    "model": "Grok 4.5",
    "organization": "xai",
    "score": 1488,
-   "setting": "Arena sırası #52 · 26.637 oy",
+   "setting": "Arena sırası #52 · 26.633 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-hard",
    "model": "Grok 4.20 Beta 1",
    "organization": "xai",
    "score": 1487,
-   "setting": "Arena sırası #53 · 17.459 oy",
+   "setting": "Arena sırası #53 · 17.455 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-hard",
    "model": "ERNIE 5.1",
    "organization": "baidu",
    "score": 1487,
-   "setting": "Arena sırası #54 · 25.656 oy",
+   "setting": "Arena sırası #54 · 25.676 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-hard",
    "model": "Claude Sonnet 4.5 (High, 32K, 20250929)",
    "organization": "anthropic",
    "score": 1487,
-   "setting": "Arena sırası #55 · 48.461 oy",
+   "setting": "Arena sırası #55 · 48.454 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-hard",
    "model": "GPT-5.4",
    "organization": "openai",
    "score": 1487,
-   "setting": "Arena sırası #56 · 44.723 oy",
+   "setting": "Arena sırası #56 · 44.730 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "lmarena-hard",
-   "model": "GPT-6 Sol (Max)",
-   "organization": "openai",
-   "score": 1486,
-   "setting": "Arena sırası #57 · 8.512 oy",
-   "source": "LMArena",
-   "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-hard",
    "model": "Kimi K2.6",
    "organization": "moonshot",
-   "score": 1486,
-   "setting": "Arena sırası #58 · 26.060 oy",
+   "score": 1485,
+   "setting": "Arena sırası #57 · 26.069 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "lmarena-hard",
+   "model": "GPT-6 Sol (Max)",
+   "organization": "openai",
+   "score": 1485,
+   "setting": "Arena sırası #58 · 9.052 oy",
+   "source": "LMArena",
+   "url": "https://lmarena.ai/leaderboard",
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-hard",
    "model": "Grok 4.20 Multi-Agent Beta (0309)",
    "organization": "xai",
    "score": 1484,
-   "setting": "Arena sırası #59 · 42.164 oy",
+   "setting": "Arena sırası #59 · 42.160 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-hard",
    "model": "Claude Sonnet 4.5 (20250929)",
    "organization": "anthropic",
    "score": 1483,
-   "setting": "Arena sırası #60 · 48.301 oy",
+   "setting": "Arena sırası #60 · 48.290 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-expert",
    "model": "Claude Fable 5 (High)",
    "organization": "anthropic",
    "score": 1550,
-   "setting": "Arena sırası #1 · 4.790 oy",
+   "setting": "Arena sırası #1 · 4.864 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-expert",
    "model": "Claude Opus 4.6 (High)",
    "organization": "anthropic",
    "score": 1544,
-   "setting": "Arena sırası #2 · 7.529 oy",
+   "setting": "Arena sırası #2 · 7.613 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-expert",
-   "model": "Gemini 4 Argon (High)",
-   "organization": "google",
-   "score": 1541,
-   "setting": "Arena sırası #3 · 507 oy",
+   "model": "Claude Opus 5.5 (High)",
+   "organization": "anthropic",
+   "score": 1539,
+   "setting": "Arena sırası #3 · 1.092 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-expert",
    "model": "Claude Opus 5 (High)",
    "organization": "anthropic",
    "score": 1538,
-   "setting": "Arena sırası #4 · 7.725 oy",
+   "setting": "Arena sırası #4 · 7.879 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-expert",
-   "model": "Claude Opus 5.5 (High)",
-   "organization": "anthropic",
-   "score": 1538,
-   "setting": "Arena sırası #5 · 1.025 oy",
+   "model": "Gemini 4 Argon (High)",
+   "organization": "google",
+   "score": 1537,
+   "setting": "Arena sırası #5 · 1.017 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-expert",
    "model": "Claude Sonnet 5.5 (xHigh)",
    "organization": "anthropic",
-   "score": 1536,
-   "setting": "Arena sırası #6 · 851 oy",
+   "score": 1535,
+   "setting": "Arena sırası #6 · 924 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-expert",
    "model": "Claude Opus 4.7",
    "organization": "anthropic",
    "score": 1534,
-   "setting": "Arena sırası #7 · 7.087 oy",
+   "setting": "Arena sırası #7 · 7.083 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-expert",
    "model": "Claude Opus 4.7 (High)",
    "organization": "anthropic",
    "score": 1534,
-   "setting": "Arena sırası #8 · 6.913 oy",
+   "setting": "Arena sırası #8 · 6.921 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-expert",
    "model": "Claude Opus 4.6",
    "organization": "anthropic",
-   "score": 1533,
-   "setting": "Arena sırası #9 · 8.983 oy",
+   "score": 1534,
+   "setting": "Arena sırası #9 · 9.066 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "lmarena-expert",
+   "model": "Claude Fable 5.1 (Max)",
+   "organization": "anthropic",
+   "score": 1533,
+   "setting": "Arena sırası #10 · 1.415 oy",
+   "source": "LMArena",
+   "url": "https://lmarena.ai/leaderboard",
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-expert",
    "model": "GPT-5.6 Sol (xHigh)",
    "organization": "openai",
-   "score": 1533,
-   "setting": "Arena sırası #10 · 4.661 oy",
+   "score": 1532,
+   "setting": "Arena sırası #11 · 4.761 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-expert",
    "model": "Kimi K3 (Max)",
    "organization": "moonshot",
    "score": 1532,
-   "setting": "Arena sırası #11 · 3.128 oy",
+   "setting": "Arena sırası #12 · 3.219 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "lmarena-expert",
-   "model": "Claude Fable 5.1 (Max)",
-   "organization": "anthropic",
-   "score": 1532,
-   "setting": "Arena sırası #12 · 1.355 oy",
-   "source": "LMArena",
-   "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-expert",
    "model": "Claude Opus 5 (Max)",
    "organization": "anthropic",
-   "score": 1531,
-   "setting": "Arena sırası #13 · 3.597 oy",
-   "source": "LMArena",
-   "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "lmarena-expert",
-   "model": "Muse Spark 1.3 (Max)",
-   "organization": "meta",
    "score": 1530,
-   "setting": "Arena sırası #14 · 2.111 oy",
+   "setting": "Arena sırası #13 · 3.673 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-expert",
    "model": "MiMo-V2.6-Pro",
    "organization": "xiaomi",
-   "score": 1529,
-   "setting": "Arena sırası #15 · 463 oy",
+   "score": 1528,
+   "setting": "Arena sırası #14 · 464 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-expert",
    "model": "Gemini 3.8 Flash (High)",
    "organization": "google",
-   "score": 1526,
-   "setting": "Arena sırası #16 · 4.889 oy",
+   "score": 1527,
+   "setting": "Arena sırası #15 · 5.147 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "lmarena-expert",
+   "model": "Muse Spark 1.3 (Max)",
+   "organization": "meta",
+   "score": 1527,
+   "setting": "Arena sırası #16 · 2.228 oy",
+   "source": "LMArena",
+   "url": "https://lmarena.ai/leaderboard",
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-expert",
    "model": "Claude Opus 4.8 (High)",
    "organization": "anthropic",
    "score": 1526,
-   "setting": "Arena sırası #17 · 7.057 oy",
+   "setting": "Arena sırası #17 · 7.063 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-expert",
    "model": "Muse Wonder (Max)",
    "organization": "meta",
-   "score": 1523,
-   "setting": "Arena sırası #18 · 551 oy",
+   "score": 1526,
+   "setting": "Arena sırası #18 · 622 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "lmarena-expert",
+   "model": "Gemini 3.7 Flash (High)",
+   "organization": "google",
+   "score": 1517,
+   "setting": "Arena sırası #19 · 3.457 oy",
+   "source": "LMArena",
+   "url": "https://lmarena.ai/leaderboard",
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-expert",
    "model": "GLM-5.3 (Max)",
    "organization": "zai",
-   "score": 1518,
-   "setting": "Arena sırası #19 · 2.358 oy",
+   "score": 1517,
+   "setting": "Arena sırası #20 · 2.449 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-expert",
    "model": "GPT-6.1 Sol (Max)",
    "organization": "openai",
-   "score": 1517,
-   "setting": "Arena sırası #20 · 668 oy",
+   "score": 1516,
+   "setting": "Arena sırası #21 · 759 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "lmarena-expert",
+   "model": "GPT-6 Astra (Max)",
+   "organization": "openai",
+   "score": 1516,
+   "setting": "Arena sırası #22 · 1.352 oy",
+   "source": "LMArena",
+   "url": "https://lmarena.ai/leaderboard",
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-expert",
    "model": "DeepSeek-V4.1-Flash-20260910 (Max)",
    "organization": "deepseek",
    "score": 1516,
-   "setting": "Arena sırası #21 · 1.496 oy",
+   "setting": "Arena sırası #23 · 1.522 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "lmarena-expert",
-   "model": "Gemini 3.7 Flash (High)",
-   "organization": "google",
-   "score": 1515,
-   "setting": "Arena sırası #22 · 3.337 oy",
-   "source": "LMArena",
-   "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-expert",
    "model": "Claude Opus 4.8",
    "organization": "anthropic",
    "score": 1515,
-   "setting": "Arena sırası #23 · 7.407 oy",
+   "setting": "Arena sırası #24 · 7.404 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-expert",
    "model": "GPT-5.4 (High)",
    "organization": "openai",
    "score": 1514,
-   "setting": "Arena sırası #24 · 6.357 oy",
+   "setting": "Arena sırası #25 · 6.362 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "lmarena-expert",
-   "model": "GPT-6 Astra (Max)",
-   "organization": "openai",
-   "score": 1513,
-   "setting": "Arena sırası #25 · 1.279 oy",
-   "source": "LMArena",
-   "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "lmarena-expert",
-   "model": "Qwen3.8-Max",
-   "organization": "alibaba",
-   "score": 1512,
-   "setting": "Arena sırası #26 · 3.256 oy",
-   "source": "LMArena",
-   "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-expert",
    "model": "GPT-5.5 (High)",
    "organization": "openai",
    "score": 1512,
-   "setting": "Arena sırası #27 · 7.400 oy",
+   "setting": "Arena sırası #26 · 7.407 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "lmarena-expert",
+   "model": "Qwen3.8-Max",
+   "organization": "alibaba",
+   "score": 1512,
+   "setting": "Arena sırası #27 · 3.345 oy",
+   "source": "LMArena",
+   "url": "https://lmarena.ai/leaderboard",
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-expert",
    "model": "Claude Sonnet 5 (High)",
    "organization": "anthropic",
-   "score": 1510,
-   "setting": "Arena sırası #28 · 5.651 oy",
+   "score": 1511,
+   "setting": "Arena sırası #28 · 5.728 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "lmarena-expert",
+   "model": "GLM-5.3-Flash",
+   "organization": "zai",
+   "score": 1511,
+   "setting": "Arena sırası #29 · 3.923 oy",
+   "source": "LMArena",
+   "url": "https://lmarena.ai/leaderboard",
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-expert",
    "model": "GPT-5.5",
    "organization": "openai",
    "score": 1510,
-   "setting": "Arena sırası #29 · 7.683 oy",
+   "setting": "Arena sırası #30 · 7.690 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "lmarena-expert",
-   "model": "GLM-5.3-Flash",
-   "organization": "zai",
-   "score": 1510,
-   "setting": "Arena sırası #30 · 3.726 oy",
-   "source": "LMArena",
-   "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-expert",
    "model": "Gemini 3.1 Pro Preview",
    "organization": "google",
    "score": 1509,
-   "setting": "Arena sırası #31 · 13.461 oy",
+   "setting": "Arena sırası #31 · 13.570 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-expert",
    "model": "GPT-5.6 Terra (xHigh)",
    "organization": "openai",
    "score": 1507,
-   "setting": "Arena sırası #32 · 5.245 oy",
+   "setting": "Arena sırası #32 · 5.350 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-expert",
    "model": "Qwen3.7-Max-Preview",
    "organization": "alibaba",
-   "score": 1506,
+   "score": 1507,
    "setting": "Arena sırası #33 · 392 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-expert",
    "model": "Claude Sonnet 4.6",
    "organization": "anthropic",
    "score": 1506,
-   "setting": "Arena sırası #34 · 7.391 oy",
+   "setting": "Arena sırası #34 · 7.395 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-expert",
    "model": "MiMo-V2.5-Pro",
    "organization": "xiaomi",
    "score": 1505,
-   "setting": "Arena sırası #35 · 7.606 oy",
+   "setting": "Arena sırası #35 · 7.647 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-expert",
    "model": "Claude Opus 4.5 (High, 32K, 20251101)",
    "organization": "anthropic",
    "score": 1503,
-   "setting": "Arena sırası #36 · 2.423 oy",
+   "setting": "Arena sırası #36 · 2.424 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-expert",
    "model": "Muse Spark 1.1",
    "organization": "meta",
-   "score": 1503,
-   "setting": "Arena sırası #37 · 5.224 oy",
-   "source": "LMArena",
-   "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "lmarena-expert",
-   "model": "Kimi K2.6",
-   "organization": "moonshot",
    "score": 1502,
-   "setting": "Arena sırası #38 · 3.848 oy",
+   "setting": "Arena sırası #37 · 5.389 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-expert",
    "model": "Claude Opus 4.5 (20251101)",
    "organization": "anthropic",
    "score": 1502,
-   "setting": "Arena sırası #39 · 5.687 oy",
+   "setting": "Arena sırası #38 · 5.685 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "lmarena-expert",
+   "model": "Kimi K2.6",
+   "organization": "moonshot",
+   "score": 1502,
+   "setting": "Arena sırası #39 · 3.857 oy",
+   "source": "LMArena",
+   "url": "https://lmarena.ai/leaderboard",
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-expert",
    "model": "GLM-5.2 (Max)",
    "organization": "zai",
    "score": 1502,
-   "setting": "Arena sırası #40 · 5.377 oy",
+   "setting": "Arena sırası #40 · 5.476 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "lmarena-expert",
+   "model": "Qwen3.6-Max-Preview",
+   "organization": "alibaba",
+   "score": 1500,
+   "setting": "Arena sırası #41 · 556 oy",
+   "source": "LMArena",
+   "url": "https://lmarena.ai/leaderboard",
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-expert",
    "model": "Gemini 3.6 Flash (High)",
    "organization": "google",
    "score": 1500,
-   "setting": "Arena sırası #41 · 4.212 oy",
+   "setting": "Arena sırası #42 · 4.213 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "lmarena-expert",
-   "model": "Qwen3.6-Max-Preview",
-   "organization": "alibaba",
-   "score": 1499,
-   "setting": "Arena sırası #42 · 555 oy",
-   "source": "LMArena",
-   "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "lmarena-expert",
-   "model": "Qwen3.5-Max-Preview",
-   "organization": "alibaba",
-   "score": 1499,
-   "setting": "Arena sırası #43 · 2.231 oy",
-   "source": "LMArena",
-   "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-expert",
    "model": "Gemini 3 Pro",
    "organization": "google",
    "score": 1499,
-   "setting": "Arena sırası #44 · 2.830 oy",
+   "setting": "Arena sırası #43 · 2.827 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "lmarena-expert",
+   "model": "Qwen3.5-Max-Preview",
+   "organization": "alibaba",
+   "score": 1499,
+   "setting": "Arena sırası #44 · 2.230 oy",
+   "source": "LMArena",
+   "url": "https://lmarena.ai/leaderboard",
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-expert",
@@ -3290,157 +3290,157 @@
    "setting": "Arena sırası #45 · 501 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-expert",
    "model": "Claude Sonnet 4.5 (High, 32K, 20250929)",
    "organization": "anthropic",
    "score": 1498,
-   "setting": "Arena sırası #46 · 6.086 oy",
+   "setting": "Arena sırası #46 · 6.078 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-expert",
    "model": "Gemini 3 Flash",
    "organization": "google",
    "score": 1497,
-   "setting": "Arena sırası #47 · 2.176 oy",
+   "setting": "Arena sırası #47 · 2.177 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "lmarena-expert",
-   "model": "Step 5 Preview",
-   "organization": "stepfun",
-   "score": 1497,
-   "setting": "Arena sırası #48 · 874 oy",
-   "source": "LMArena",
-   "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-expert",
    "model": "GLM-5.1",
    "organization": "zai",
    "score": 1497,
-   "setting": "Arena sırası #49 · 6.860 oy",
+   "setting": "Arena sırası #48 · 6.958 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-expert",
-   "model": "Grok 4.6 (High)",
-   "organization": "xai",
-   "score": 1496,
-   "setting": "Arena sırası #50 · 3.513 oy",
+   "model": "amazon-nova-experimental-chat (26-02-10)",
+   "organization": "amazon",
+   "score": 1495,
+   "setting": "Arena sırası #49 · 304 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-expert",
    "model": "GPT-6 Sol (Max)",
    "organization": "openai",
-   "score": 1496,
-   "setting": "Arena sırası #51 · 1.447 oy",
+   "score": 1494,
+   "setting": "Arena sırası #50 · 1.515 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "lmarena-expert",
+   "model": "Grok 4.6 (High)",
+   "organization": "xai",
+   "score": 1494,
+   "setting": "Arena sırası #51 · 3.665 oy",
+   "source": "LMArena",
+   "url": "https://lmarena.ai/leaderboard",
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-expert",
    "model": "ERNIE 5.1",
    "organization": "baidu",
    "score": 1494,
-   "setting": "Arena sırası #52 · 3.715 oy",
+   "setting": "Arena sırası #52 · 3.727 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "lmarena-expert",
-   "model": "amazon-nova-experimental-chat (26-02-10)",
-   "organization": "amazon",
-   "score": 1494,
-   "setting": "Arena sırası #53 · 305 oy",
-   "source": "LMArena",
-   "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-expert",
    "model": "MiMo-V2.6-Flash",
    "organization": "xiaomi",
-   "score": 1493,
-   "setting": "Arena sırası #54 · 1.271 oy",
-   "source": "LMArena",
-   "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
-  },
-  {
-   "benchmarkId": "lmarena-expert",
-   "model": "Gemini 3.5 Flash (High)",
-   "organization": "google",
    "score": 1492,
-   "setting": "Arena sırası #55 · 5.578 oy",
+   "setting": "Arena sırası #53 · 1.375 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-expert",
    "model": "MiMo-V2-Pro",
    "organization": "xiaomi",
    "score": 1492,
-   "setting": "Arena sırası #56 · 2.209 oy",
+   "setting": "Arena sırası #54 · 2.211 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "lmarena-expert",
+   "model": "Gemini 3.5 Flash (High)",
+   "organization": "google",
+   "score": 1492,
+   "setting": "Arena sırası #55 · 5.571 oy",
+   "source": "LMArena",
+   "url": "https://lmarena.ai/leaderboard",
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-expert",
    "model": "GPT-5.4",
    "organization": "openai",
    "score": 1491,
-   "setting": "Arena sırası #57 · 6.736 oy",
+   "setting": "Arena sırası #56 · 6.744 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-expert",
    "model": "GPT-5.2 Chat (20260210)",
    "organization": "openai",
    "score": 1491,
-   "setting": "Arena sırası #58 · 3.165 oy",
+   "setting": "Arena sırası #57 · 3.162 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-expert",
    "model": "Muse Spark",
    "organization": "meta",
    "score": 1491,
-   "setting": "Arena sırası #59 · 1.379 oy",
+   "setting": "Arena sırası #58 · 1.379 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "lmarena-expert",
-   "model": "GPT-6 Luna (Max)",
-   "organization": "openai",
-   "score": 1490,
-   "setting": "Arena sırası #60 · 6.698 oy",
+   "model": "Hy3",
+   "organization": "tencent",
+   "score": 1491,
+   "setting": "Arena sırası #59 · 1.396 oy",
    "source": "LMArena",
    "url": "https://lmarena.ai/leaderboard",
-   "date": "2026-10-20T00:00:00.000Z"
+   "date": "2026-10-22T00:00:00.000Z"
+  },
+  {
+   "benchmarkId": "lmarena-expert",
+   "model": "GPT-5.6 Luna (xHigh)",
+   "organization": "openai",
+   "score": 1490,
+   "setting": "Arena sırası #60 · 4.695 oy",
+   "source": "LMArena",
+   "url": "https://lmarena.ai/leaderboard",
+   "date": "2026-10-22T00:00:00.000Z"
   },
   {
    "benchmarkId": "swe-bench-verified",

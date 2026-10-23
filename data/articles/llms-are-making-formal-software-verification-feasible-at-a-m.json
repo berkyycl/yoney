@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "Claude, 123 açık kaynak kütüphanede büyük ölçekli formal doğrulama yaptı",
+  "ozet_tr": "Anthropic ve Theorem iş birliğiyle Claude, RISC‑V düzeyinde 123 açık kaynak kütüphanenin güvenlik özelliklerini kanıtlayarak formal yazılım doğrulamayı büyük ölçekte mümkün kıldı. Bu süreçte model, binlerce satır kodda yıllardır gizli kalan hataları ortaya çıkardı ve otomatik olarak düzeltti.",
+  "detayli_icerik_tr": "Anthropic'in araştırma ekibi, Claude adlı LLM'yi kullanarak 123 farklı OSS‑Fuzz projesinde derlenmiş RISC‑V ikili dosyalarının \"çökme yok\" (no‑crash) özelliklerini kanıtladı. Toplamda 239 giriş noktası için, her birinin 64 MB'a kadar girdi altında hiçbir çökme üretmeyeceği ispatlandı; bu kanıtlar ortalama 600 000 satır Rocq kodu ve toplamda 180 milyon satır Rocq içeriği oluşturdu. Proje, yalnızca tek‑iş parçacıklı, sabit bellek bütçeli statik ikili dosyalar varsayımıyla çalışıyor, ancak mimari ve işletim sistemi semantiklerinin genişletilmesiyle kapsamın artırılması mümkün.\n\nClaude, kanıt sürecinde tespit ettiği hataları otomatik olarak yamaladı ve ardından güncellenmiş kod üzerinden yeni kanıtları üretti. Bu sayede, fuzzerların yıllar içinde kaçırdığı 20 MB üzerindeki büyük girdi senaryoları, 2 GB bellek gerektiren durumlar ve nadir dosya düzeni hataları gibi kritik güvenlik açıkları ortaya çıkarıldı. Özellikle libexpat'ta yeniden keşfedilen CVE‑2026‑56132 ve büyük bellek erişim hataları, modelin sadece çökme tespiti değil, mantıksal hataları da bulabildiğini gösterdi.\n\nKanıtların doğruluğu, Rocq kanıt denetleyicisi tarafından otomatik olarak kontrol edildi; geliştiricilerin güvenmesi gereken tek unsurlar RISC‑V ve Linux süreç semantikleri, kanıtlanan teorem ifadeleri ve Rocq'in kendisidir. Anthropic, bu bileşenleri ve Claude'un ürettiği kanıtları açık kaynak olarak yayınlayarak bağımsız doğrulama ve topluluk katkılarını teşvik ediyor. Gelecekte, daha fazla mimari ve işletim sistemi desteği eklenerek formal doğrulamanın yazılım geliştirme sürecinin standart bir parçası hâline gelmesi hedefleniyor.",
+  "onemli_maddeler": [
+    "Claude, 123 açık kaynak kütüphanenin RISC‑V ikili kodları için \"no‑crash\" kanıtlarını otomatik olarak üretti.",
+    "Toplam 239 giriş noktasında 180 Milyon satır Rocq kanıtı üretildi; tipik bir kanıt 600 k satırdır.",
+    "Model, fuzzerların kaçırdığı büyük girdi ve bellek hatalarını tespit edip otomatik olarak yamaladı."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "Formal doğrulama alanında LLM'lerin büyük ölçekli ve otomatik kanıt üretmesi, güvenli yazılım geliştirme süreçlerini dönüştürme potansiyeline sahip kritik bir araştırma ilerlemesidir.",
+  "etiketler": [
+    "formal verification",
+    "LLM",
+    "Claude",
+    "RISC-V",
+    "OSS-Fuzz"
+  ],
+  "anilan_modeller": [
+    "Claude"
+  ],
+  "yorum_tr": "Bu gelişme, LLM'lerin sadece kod üretmekle kalmayıp, güvenlik garantileri sağlayan matematiksel kanıtlar da oluşturabileceğini göstererek, güvenli yazılım geliştirme ve hata ayıklama süreçlerini kökten değiştirebilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/80cf520cb540989c3643907f004b2514ec4d01f1-1200x630.jpg",
+  "url": "https://www.anthropic.com/research/formal-verification",
+  "source": "Anthropic Research",
+  "sourceTier": "resmi",
+  "date": "2026-10-22T00:00:00.000Z",
+  "slug": "llms-are-making-formal-software-verification-feasible-at-a-m"
+}

@@ -1,0 +1,117 @@
+{
+  "baslik_tr": "Flint 40B-A2.5B, Ornith 1.5 35B-A3B ve Nemotron 3.5 Lightning Modelleri Üzerinde Atomik Kodlama Benchmarkı",
+  "ozet_tr": "Üç küçük MoE modeli (Flint 40B-A2.5B, Ornith 1.5 35B-A3B ve Nemotron 3.5 Lightning) aynı Three.js Halloween sahnesi kodlama görevinde karşılaştırıldı. Flint en kısa duvar süresi ve en düşük Opus harcamasıyla en verimli sonuç verirken, Nemotron en yüksek decode ve prefill hızına sahip olsa da token üretiminde ve planlama dalgalarında çok daha fazla maliyet oluşturdu.",
+  "detayli_icerik_tr": "Atomic Agent v0.6.10 ve Opus 5.5 planlayıcısı kullanılarak, 20 saniyelik bir Halloween zincir reaksiyonunu Three.js ile kodlamak için aynı prompt, kuantizasyon ve ayarlar altında üç model paralel çalışan işçi olarak denetlendi. Her model Q8_0 GGUF formatında, llama.cpp b11803 ile RTX PRO 6000 Blackwell 96 GB GPU üzerinde çalıştırıldı; her bir slot 64 K bağlam kapasitesine sahipti.\n\nPerformans ölçümleri, duvar süresi, tek istek decode hızı, üç işçi aynı anda decode hızı, prefill hızı, model istek sayısı ve maksimum bağlam gibi metrikleri içeriyor. Flint 40B-A2.5B 7:36 duvar süresi, 244 t/s tek istek decode ve 5 230 t/s prefill hızıyla en kısa sürede tamamlandı. Ornith 1.5 35B-A3B 9:04 duvar süresi ve daha düşük hızlar gösterirken, Nemotron 3.5 Lightning 30:32 duvar süresiyle en uzun süreyi harcadı; ancak 295 t/s tek istek decode ve 7 670 t/s prefill gibi en yüksek token işleme hızına sahipti.\n\nMaliyet açısından, Opus planlayıcısının harcaması Flint için 0,41 $, Ornith için 0,49 $ ve Nemotron için 0,95 $ olarak belirlendi. Flint sadece 6 düzeltme ihtiyacı duyarken, Ornith 14 ve Nemotron 16 düzeltme yaptı. Nemotron, yüksek token üretimi (397 K yerel üretim) ve 369 model isteği nedeniyle planlama dalgalarını iki katına çıkardı; edit başarı oranı ise %17 seviyesindeydi. Flint ise 74 K token üretip 164 istekle daha az turda işi tamamladı ve sadece iki yazım hatası ve bir değişken bildirimsizliği gibi küçük hatalar içeriyordu.\n\nDeney tek bir çalıştırma ile sınırlı olduğundan varyans ölçülmedi ve NVFP4/MLX gibi farklı donanımlarda sonuçlar değişebilir. Sonuçlar, ham token/saniye hızının duvar süresini doğrudan tahmin etmediğini, edit başarı oranı ve planlama dalgalarının toplam verimliliği belirlediğini gösteriyor.",
+  "onemli_maddeler": [
+    "Flint en kısa duvar süresi (7:36) ve en düşük Opus harcaması ($0.41) ile en verimli model oldu.",
+    "Nemotron en yüksek decode (295 t/s) ve prefill (7 670 t/s) hızına sahip olsa da 5 kat daha fazla token üretti ve maliyeti iki katına çıkardı.",
+    "Opus planlayıcısının harcaması, kullanılan alt modelin verimliliğine doğrudan bağlı; aynı prompt ve ayarlar altında model değişimi $0.41'den $0.95'e yükseldi.",
+    "Edit başarı oranı kritik bir faktör; Nemotron %17 başarıyla çalışırken Flint çok daha az düzeltme ihtiyacı duydu."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Üç yeni MoE modelinin aynı görevdeki verimlilik ve maliyet karşılaştırması, geliştiricilerin sadece ham hız değil, edit başarısı ve planlama maliyeti gibi faktörleri de göz önünde bulundurmaları gerektiğini gösterdiği için sektörel açıdan önemli bir benchmark sunuyor.",
+  "etiketler": [
+    "MoE",
+    "Atomik Agent",
+    "Kod Üretimi",
+    "Benchmark",
+    "LLM"
+  ],
+  "anilan_modeller": [
+    "Flint 40B-A2.5B",
+    "Ornith 1.5 35B-A3B",
+    "Nemotron 3.5 Lightning 30B-A3B"
+  ],
+  "yorum_tr": "Bu benchmark, LLM'lerin sadece token işleme hızının değil, edit başarı oranı ve planlama maliyetinin de üretkenlikte belirleyici olduğunu ortaya koyuyor. Geliştiriciler, proje maliyetlerini optimize etmek için model seçiminde bu çok boyutlu ölçütleri dikkate almalı.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Flint 40B-A2.5B",
+      "benchmark": "Decode (single request)",
+      "skor": 244,
+      "birim": "t/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "single request",
+      "kaynak_metinden_alinti": "Decode, single request 244 t/s"
+    },
+    {
+      "model": "Ornith 1.5 35B-A3B",
+      "benchmark": "Decode (single request)",
+      "skor": 143,
+      "birim": "t/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "single request",
+      "kaynak_metinden_alinti": "Decode, single request 143 t/s"
+    },
+    {
+      "model": "Nemotron 3.5 Lightning 30B-A3B",
+      "benchmark": "Decode (single request)",
+      "skor": 295,
+      "birim": "t/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "single request",
+      "kaynak_metinden_alinti": "Decode, single request 295 t/s"
+    },
+    {
+      "model": "Flint 40B-A2.5B",
+      "benchmark": "Opus spend",
+      "skor": 0.41,
+      "birim": "$",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Opus spend $0.41"
+    },
+    {
+      "model": "Ornith 1.5 35B-A3B",
+      "benchmark": "Opus spend",
+      "skor": 0.49,
+      "birim": "$",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Opus spend $0.49"
+    },
+    {
+      "model": "Nemotron 3.5 Lightning 30B-A3B",
+      "benchmark": "Opus spend",
+      "skor": 0.95,
+      "birim": "$",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Opus spend $0.95"
+    },
+    {
+      "model": "Flint 40B-A2.5B",
+      "benchmark": "Fixes needed",
+      "skor": 6,
+      "birim": "",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Fixes needed to run 6"
+    },
+    {
+      "model": "Ornith 1.5 35B-A3B",
+      "benchmark": "Fixes needed",
+      "skor": 14,
+      "birim": "",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Fixes needed to run 14"
+    },
+    {
+      "model": "Nemotron 3.5 Lightning 30B-A3B",
+      "benchmark": "Fixes needed",
+      "skor": 16,
+      "birim": "",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Fixes needed to run 16"
+    }
+  ],
+  "gorsel_url": "https://external-preview.redd.it/Yzl5bHlzb2wxNHhoMVA7MZN31hZEjetWBUjNmSgOedhc107Taj8cts0qqFvI.png?width=640&crop=smart&auto=webp&s=b37aaef4499b76e943049a48111662228c698b74",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xczcgk/flint_40ba25b_vs_ornith_15_35ba3b_vs_nemotron_35/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-23T00:21:32.000Z",
+  "slug": "flint-40b-a2-5b-vs-ornith-1-5-35b-a3b-vs-nemotron-3-5-lightn"
+}

@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "inclusionAI Ling-3.0-flash-Sante Modeli Sağlık Alanında Açıklandı",
+  "ozet_tr": "inclusionAI, 124 milyar parametreli ve token başına 5,1 milyar aktif parametre kullanan yeni bir sağlık‑odaklı büyük dil modeli Ling-3.0-flash-Sante'yi duyurdu. Model, uzun bağlam (256K token) ve hibrit‑lineer MoE mimarisi sayesinde tıbbi akıl yürütme, araştırma ve araç‑destekli iş akışlarında yüksek performans vaat ediyor.",
+  "detayli_icerik_tr": "inclusionAI, Ling-3.0-flash üzerine inşa edilen ve adını Fransızca \"sağlık\" kelimesinden alan Ling-3.0-flash-Sante modelini kamuoyuna sundu. Toplam 124 milyar parametreye sahip model, her token için yalnızca 5,1 milyar parametreyi aktif hâle getirerek hesaplama verimliliği sağlıyor. Bu verimlilik, Kimi Delta Attention (KDA), gated MLA ve seyrek MoE katmanlarından oluşan hibrit‑lineer MoE mimarisi sayesinde mümkün oluyor.\n\nModel, 256 K token uzunluğunda bağlamları işleyebilecek şekilde eğitildi; bu sayede uzun belge analizi, kanıt sentezi ve çok adımlı araştırma görevlerinde avantaj sunuyor. Sağlık sektörüne yönelik olarak tasarlanan Sante, profesyonel sağlık görevleri, karmaşık tıbbi akıl yürütme, tıbbi bilgi ve sağlık güvenliği benchmark'larında güçlü performans gösterdiği belirtiliyor.\n\nLing-3.0-flash-Sante, sadece soru‑cevap (QA) odaklı değil; derin araştırma, araç‑destekli iş akışları ve çok‑ajanlı iş birliği senaryoları için de optimize edildi. \"Thinking mode\" varsayılan olarak etkinleştirilmiş olup, uyumlu servis çerçeveleri aracılığıyla araç çağrısı (tool calling) desteği sunuyor. Model ağırlıkları Hugging Face ve ModelScope platformlarında erişime açık.\n\nAncak model, bir tıbbi cihaz olarak nitelendirilmemekte ve çıktılarının eksik ya da hatalı olabileceği vurgulanıyor. Yüksek riskli uygulamalarda nitelikli insan denetimi, bağımsız doğrulama ve ilgili gizlilik, güvenlik ve sağlık düzenlemelerine uyum şart koşuluyor.",
+  "onemli_maddeler": [
+    "124 M parametreli, token başına 5,1 M aktif parametreyle yüksek verimlilik.",
+    "256 K token uzunluğunda bağlam desteği, uzun belge analizine olanak tanıyor.",
+    "Hibrit‑lineer MoE mimarisi (KDA, gated MLA, sparse MoE) sağlık görevlerinde güçlü performans sağlıyor.",
+    "Araç‑destekli iş akışları ve çok‑ajanlı senaryolar için yerleşik \"thinking mode\" ve tool calling."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Sağlık odaklı büyük dil modeli, 124 B parametre ölçeği ve uzun bağlam yeteneğiyle sektördeki araştırma ve uygulamalara önemli bir ivme kazandırabilir, ancak henüz klinik kullanım için onaylanmadığından etkisi sınırlı kalabilir.",
+  "etiketler": [
+    "sağlık",
+    "AI",
+    "büyük dil modeli",
+    "MoE",
+    "uzun bağlam"
+  ],
+  "anilan_modeller": [
+    "Ling-3.0-flash",
+    "Ling-3.0-flash-Sante"
+  ],
+  "yorum_tr": "Ling-3.0-flash-Sante, sağlık araştırmaları ve tıbbi akıl yürütme alanında yeni bir araç sunarak geliştiricilere ve araştırmacılara uzun bağlamlı analiz yeteneği sağlıyor. Ancak bir araştırma modeli olması ve tıbbi tavsiye yerine geçmemesi, gerçek klinik uygulamalarda dikkatli entegrasyon gerektirecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/IiIA-vO8aj4VECBHDhii8dTtu_q1GSD65X-bqh2Xb98.png?width=640&crop=smart&auto=webp&s=389272961c8485aa9ac5c6c3a26991b43cbde3b2",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xclfkp/inclusionailing30flashsante_hugging_face/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-22T15:18:35.000Z",
+  "slug": "inclusionai-ling-3-0-flash-sante-hugging-face"
+}
