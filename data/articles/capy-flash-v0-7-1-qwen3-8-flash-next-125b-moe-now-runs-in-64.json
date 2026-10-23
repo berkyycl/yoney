@@ -1,0 +1,71 @@
+{
+  "baslik_tr": "capy-flash v0.7.1: Qwen3.8-Flash-Next 125B MoE 64 GB RAM’da, Qwen3.8-27B 3‑bit tek 16 GB kartta çalışıyor",
+  "ozet_tr": "capy-flash'in 0.7.1 sürümü, 125 milyar parametreli Qwen3.8‑Flash‑Next modelini yalnızca 64 GB RAM ve bir ya da iki 16 GB RTX 50 kartı üzerinde çalıştırabiliyor. Aynı zamanda 27 milyar parametreli Qwen3.8‑27B modeli, 3‑bit quantize edilmiş ağırlıklarla tek bir 16 GB kartta çalıştırılabiliyor ve yüksek token işleme hızı sağlıyor.",
+  "detayli_icerik_tr": "Valerio Dolci tarafından geliştirilen capy-flash, açık kaynaklı bir inference motoru olarak Qwen3.8‑Flash‑Next (125B MoE) ve Qwen3.8‑27B modellerinin tüketici sınıfı RTX 50 serisi GPU'larda çalıştırılmasını hedefliyor. Önceki sürümlerde iki adet 16 GB GPU ve 96 GB RAM gibi yüksek donanım gereksinimleri varken, v0.7.1 bu gereksinimi 64 GB RAM ve tek bir 16 GB kartla da karşılayabilecek şekilde optimize etti.\n\nYeni sürümde, ISTA‑DASLab tarafından sağlanan GSQ‑RCO i‑quant (≈3 bit) ağırlıkları doğrudan kullanılıyor; bu sayede NVFP4 formatına kıyasla RAM tüketimi 65 GB'dan 48 GB'a düşürülmüş. Uzman (expert) katmanların bir kısmı VRAM'de tutulurken geri kalanları CPU üzerinden hesaplanıyor ve en yüksek RAM kullanımının yaklaşık 57 GB olduğu belirtiliyor. Ayrıca AVX2 destekli Zen 2/3 ve Intel client CPU'lar artık sorunsuz çalışıyor, Windows/WSL2'deki sayfa kilitli bellek sınırlaması da kaldırıldı.\n\nPerformans açısından, RTX 5070 Ti 16 GB ve Ryzen 9 9900X platformunda yapılan ölçümlerde Qwen3.8‑Flash‑Next modeli tek kartta 121 token/s, iki kartta 234 token/s hızına ulaşıyor. Qwen3.8‑27B modeli ise tek kartta 174 token/s, iki kartta 288 token/s hız gösteriyor. Tek bir 16 GB kartınız varsa, Flash‑Next için Strata hâlâ daha iyi bir seçenek olabilir; ancak iki kartla çalıştırıldığında capy-flash, tensor paralelizm ve ortak VRAM uzman önbelleği sayesinde avantaj sağlıyor.\n\nKalite ölçütlerinde, 27B modelinin 3‑bit versiyonu GSM8K testinde NVFP4 modeliyle eşdeğer performans sergilerken, MMLU‑Pro puanı %0.78'den %0.72'ye düşmüş. Flash‑Next'in 3‑bit uzmanları ise NVFP4 ile aynı seviyede kalitede. Geliştiriciler ve topluluk üyeleri, yeni sürümün kurulum komutlarını ve model dosyası seçeneklerini GitHub deposundan temin edebiliyor ve deneyimlerini paylaşmaları isteniyor.",
+  "onemli_maddeler": [
+    "capy-flash v0.7.1, 125B Qwen3.8‑Flash‑Next modelini 64 GB RAM ve tek/iki 16 GB GPU’da çalıştırabiliyor.",
+    "Qwen3.8‑27B 3‑bit ağırlıkları tek bir 16 GB kartta 174 tok/s hızla işleyebiliyor.",
+    "GSQ‑RCO i‑quant ağırlıkları sayesinde RAM tüketimi 65 GB’dan 48 GB’a düşürülmüş.",
+    "AVX2 destekli CPU’lar ve Windows/WSL2 bellek sınırlamaları artık engel oluşturmuyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Bu güncelleme, devasa dil modellerinin tüketici sınıfı donanımlarda çalıştırılmasını mümkün kılarak açık kaynak AI ekosisteminde erişilebilirliği ve deneysel geliştirmeyi artırıyor.",
+  "etiketler": [
+    "Qwen3.8",
+    "capy-flash",
+    "inference",
+    "GPU",
+    "quantization"
+  ],
+  "anilan_modeller": [
+    "Qwen3.8-Flash-Next (125B MoE)",
+    "Qwen3.8-27B"
+  ],
+  "yorum_tr": "capy-flash'in yeni sürümü, büyük modelleri ev tipi bilgisayarlara taşıyarak araştırmacıların ve geliştiricilerin deneme maliyetlerini düşürüyor; aynı zamanda performans‑kalite dengesinde hâlâ bazı sınırlamalar bulunuyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen3.8-Flash-Next (125B MoE) 3-bit experts",
+      "benchmark": "Token throughput (single 16 GB GPU)",
+      "skor": 121,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "RTX 5070 Ti 16 GB, Ryzen 9 9900X, LocalMaxxing reasoning‑v1, tek istek, MTP, doğrulanmış çalıştırma",
+      "kaynak_metinden_alinti": "Qwen3.8-Flash-Next, 3-bit experts 121 tok/s"
+    },
+    {
+      "model": "Qwen3.8-Flash-Next (125B MoE) 3-bit experts",
+      "benchmark": "Token throughput (dual 16 GB GPUs)",
+      "skor": 234,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "RTX 5070 Ti 16 GB x2, Ryzen 9 9900X, LocalMaxxing reasoning‑v1, tek istek, MTP, doğrulanmış çalıştırma",
+      "kaynak_metinden_alinti": "Qwen3.8-Flash-Next, 3-bit experts 234 tok/s"
+    },
+    {
+      "model": "Qwen3.8-27B 3-bit",
+      "benchmark": "Token throughput (single 16 GB GPU)",
+      "skor": 174,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "RTX 5070 Ti 16 GB, Ryzen 9 9900X, LocalMaxxing reasoning‑v1, tek istek, MTP, doğrulanmış çalıştırma",
+      "kaynak_metinden_alinti": "Qwen3.8-27B, 3-bit 174 tok/s"
+    },
+    {
+      "model": "Qwen3.8-27B 3-bit",
+      "benchmark": "Token throughput (dual 16 GB GPUs)",
+      "skor": 288,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "RTX 5070 Ti 16 GB x2, Ryzen 9 9900X, LocalMaxxing reasoning‑v1, tek istek, MTP, doğrulanmış çalıştırma",
+      "kaynak_metinden_alinti": "Qwen3.8-27B, 3-bit 288 tok/s"
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/capy-flash-qwen3-8-flash-next-125b-moe-in-full-nvfp4-on-two-v0-6uj80cy0wovh1.png?auto=webp&s=9a8f51d20068787511719c7aed8c3ead6278e46e",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xciqnj/capyflash_v071_qwen38flashnext_125b_moe_now_runs/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-22T13:34:44.000Z",
+  "slug": "capy-flash-v0-7-1-qwen3-8-flash-next-125b-moe-now-runs-in-64"
+}

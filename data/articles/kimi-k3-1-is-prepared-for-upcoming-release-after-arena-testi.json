@@ -1,0 +1,46 @@
+{
+  "baslik_tr": "Kimi K3.1 (Kibitz) Arena Testlerinden Geçti, Açık Kaynak SOTA Model Yakında Çıkıyor",
+  "ozet_tr": "Moonshot'un yeni modeli Kimi K3.1, Arena platformunda yapılan bir dizi testte dikkat çekti. Kullanıcılar, modelin hem hız hem de maliyet açısından GPT‑6 Astra'yı geride bıraktığını ve açık kaynaklı, düşük maliyetli bir SOTA çözüm olma iddiasını doğruluyor.",
+  "detayli_icerik_tr": "Moonshot, Kimi K3.1 adlı yeni modelini Arena test ortamında sergileyerek yakında piyasaya sürmeye hazırlanıyor. Model, \"Kibitz\" takma adıyla Arena'da ilk kez gözlemlendi ve sosyal medya üzerinden Kimi.ai ve Arena.ai hesapları tarafından duyuruldu. Kullanıcı Chetaslua, Kibitz'in JavaScript çizim yeteneklerini övdü ve modelin çok hızlı olduğunu belirtti; ayrıca Kimi içinden gelen bilgilerle modelin yüksek verimlilikte olacağına dair söylentiler paylaştı.\n\nArena'da yapılan \"Minecraft'ta kendinizi inşa edin\" deneyi, Kimi K3.1'in 13.707 blok yerleştirerek $0.38 maliyetle tamamlamasını gösterdi. Aynı testte GPT‑6 Astra 5.738 blok yerleştirip $5.31 harcadı. Bu sonuç, Kimi K3.1'in hem blok sayısı hem de maliyet açısından rakibini büyük ölçüde geride bıraktığını ortaya koyuyor. Ayrıca Lumina, modelin 15 dakikada detaylı bir 3D helikopter (çıkış, iniş, montaj, patlama ve X‑ray görünümleri) üretebildiğini gösterdi.\n\nKimi K3.1'in performansı sadece Minecraft testinde değil, Claude Fable 5.1 ile yapılan 3D render karşılaştırmasında da öne çıktı. Kullanıcı SPAC89, Kibitz'in Fable 5.1'e kıyasla belirgin bir hız avantajı sağladığını ve kalite açısından Opus 5.5 Medium seviyesine yakın olduğunu belirtti. Modelin varsayılan olarak en yüksek akıl yürütme ayarını kullandığı ve bu sayede yüksek kalite çıktılar ürettiği tahmin ediliyor.\n\nGeçmişte Kimi K3, 2.8 trilyon parametreli, 1M token bağlam pencereli bir model olarak Temmuz 2026'da tanıtılmış ve açık ağırlıkları bir hafta içinde yayınlanmıştı. K3.1'in de benzer bir hız ve fiyat stratejisiyle, düşük maliyetli açık kaynak SOTA model olarak piyasaya sürülmesi bekleniyor. Eğer Chris'in tahmini doğruysa, model önümüzdeki Salı gününden önce erişime açılacak ve $0.38 gibi düşük bir maliyetle yüksek performans sunacak.",
+  "onemli_maddeler": [
+    "Kimi K3.1 (Kibitz) Arena testlerinde GPT‑6 Astra'yı blok sayısı ve maliyet açısından geride bıraktı.",
+    "Model, 15 dakikada detaylı 3D helikopter tasarımı üretebiliyor ve Claude Fable 5.1'e göre daha hızlı.",
+    "Açık kaynak, düşük maliyetli SOTA model olarak önümüzdeki Salı günü piyasaya sürülmesi planlanıyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Kimi K3.1, yüksek performans ve çok düşük işletme maliyetiyle açık kaynak AI pazarına yeni bir rekabetçi güç getiriyor; bu, hem geliştiricileri hem de son kullanıcıları doğrudan etkileyen büyük bir model çıkışıdır.",
+  "etiketler": [
+    "Kimi",
+    "K3.1",
+    "Arena",
+    "Açık Kaynak",
+    "Yapay Zeka"
+  ],
+  "anilan_modeller": [
+    "Kimi K3.1",
+    "GPT-6 Astra",
+    "Claude Fable 5.1",
+    "Claude Opus 5.5 Medium",
+    "Kimi K3"
+  ],
+  "yorum_tr": "Kimi K3.1'in düşük maliyetli ve yüksek verimli yapısı, açık kaynak ekosisteminde yeni bir referans noktası oluşturacak; geliştiriciler daha ucuz altyapı maliyetleriyle güçlü uygulamalar inşa edebilecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Kimi K3.1",
+      "benchmark": "Minecraft Build Cost",
+      "skor": 0.38,
+      "birim": "$",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Kimi K3.1 placed 13,707 blocks for $0.38"
+    }
+  ],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/10/K3.1_-Orbital-Blue-Horizon-1.webp",
+  "url": "https://www.testingcatalog.com/kimi-k3-1-spotted-testing-arena/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-23T09:00:38.000Z",
+  "slug": "kimi-k3-1-is-prepared-for-upcoming-release-after-arena-testi"
+}

@@ -1,0 +1,63 @@
+{
+  "baslik_tr": "Canva, 2K Çözünürlükte Görüntü Üreten Craft Modelini ve API'yi Tanıttı",
+  "ozet_tr": "Canva, kendi araştırma ekibi tarafından sıfırdan geliştirilen ilk görüntü‑üretim temelli modeli Craft'i duyurdu. Model, 2 K çözünürlüğe kadar çıktı üretebiliyor, 30’dan fazla hazır en‑boy oranı ve özelleştirilebilir oranlar sunuyor; ayrıca çoklu dilde metin üretimi ve API erişimi sağlıyor.",
+  "detayli_icerik_tr": "Canva, tasarımcıların ihtiyaçlarını karşılamak amacıyla geliştirdiği Craft modelini hem Dream Lab üzerinden tüm Canva kullanıcılarına hem de geliştiricilere açık bir API aracılığıyla sunmaya başladı. Kullanıcılar, modelin 2 K çözünürlüğe kadar görüntü üretme yeteneği ve 30'dan fazla ön tanımlı en‑boy oranı ya da istedikleri özel oranı seçebilme esnekliği sayesinde yüksek kalitede tasarımlar oluşturabiliyor.\n\nCraft, kompozisyon planlamasını görüntü oluşturma aşamasından ayıran iki aşamalı bir mimariye sahip. Planlama modeli, istenen öğeleri, mekânsal ilişkileri, ölçeği ve görsel hiyerarşiyi haritalandırdıktan sonra ayrı bir render motoru görüntüyü üretir. Bu yapı, özellikle metin içeren tasarımlarda okunabilirliği ve konumlandırmayı artırırken, JSON boundary boxing özelliği sayesinde Magic Layers aracılığıyla oluşturulan görsellerin düzenlenebilir öğelere dönüştürülmesini kolaylaştırıyor.\n\nModelin eğitimi, Canva’nın milyonlarca insan yapımı şablonundan (poster, sunum, infografik, menü, sosyal medya gönderisi vb.) oluşan tasarım odaklı bir veri seti üzerine kuruldu. Ön‑eğitim sonrası, profesyonel tasarımcıların yönlendirdiği denetimli ince ayar ve pekiştirmeli öğrenme (RL) süreçleri uygulandı. Canva, 25 000'den fazla görüntü çiftini önde gelen modellerle karşılaştırarak tasarımcı yargılarını otomatik değerlendirmelerle birleştirdi ve bu sonuçları DesignArena sıralamasında Craft'in dördüncü sıraya yükselmesini sağladı.\n\nPerformans açısından, Canva milyarlarca tasarımcının ihtiyaçlarını karşılamak için modelin çıkarım maliyetini ve hızını optimize etti. Model distilasyonu, çıkarım adımlarını orijinalin bir kesrine indirdi; özel bir çıkarım motoru ise planlama aşamasını hızlandırdı. Canva, Craft'in önceki iç sürümüne göre bir mertebe daha hızlı olduğunu belirtiyor ve yakın gelecekte düşük maliyetli ve yüksek kalite sunacak Craft‑fast ve Craft‑ultrafast varyantlarını tanıtmayı planlıyor. Ayrıca, MCP desteği ve Canva Shield güvenlik çerçevesiyle giriş-çıkış denetimi, gizlilik ve güvenlik kontrolleri sağlanacak.",
+  "onemli_maddeler": [
+    "Craft, 2 K çözünürlükte çıktı üretebilen Canva’nın ilk görüntü‑üretim modeli.",
+    "30+ ön tanımlı en‑boy oranı ve özelleştirilebilir oran; 55 dilde metin üretimi destekleniyor.",
+    "DesignArena’da toplamda dördüncü, portre ve doğa kategorilerinde birinci sırada yer alıyor.",
+    "API ve Dream Lab üzerinden global erişim; Craft‑fast ve Craft‑ultrafast gibi düşük‑maliyetli varyantlar yakında geliyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Canva’nın 2 K çözünürlükte çıktı verebilen ve tasarım odaklı eğitimli ilk görüntü‑üretim modeli, tasarımcıların iş akışlarını hızlandıracak ve AI‑destekli görsel üretim pazarında rekabeti artıracak kadar büyük bir yenilik.",
+  "etiketler": [
+    "Canva",
+    "Craft",
+    "görsel oluşturma",
+    "yapay zeka",
+    "tasarım"
+  ],
+  "anilan_modeller": [
+    "Craft",
+    "Craft-fast",
+    "Craft-ultrafast"
+  ],
+  "yorum_tr": "Craft’in yüksek çözünürlük ve çok‑dilli metin yetenekleri, tasarımcıların AI‑destekli prototipleme sürecini önemli ölçüde kısaltabilir. API’nin açılması ise üçüncü parti geliştiricilerin Canva ekosistemine entegrasyon sağlamasını mümkün kılarak sektörde yeni hizmetlerin doğmasına zemin hazırlıyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Craft",
+      "benchmark": "DesignArena Overall Ranking",
+      "skor": 4,
+      "birim": "rank",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "4th among all models",
+      "kaynak_metinden_alinti": "Craft debuted as the fourth-ranked image model on DesignArena"
+    },
+    {
+      "model": "Craft",
+      "benchmark": "DesignArena Abstract & Patterns Ranking",
+      "skor": 2,
+      "birim": "rank",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "2nd among models",
+      "kaynak_metinden_alinti": "second for Abstract & Patterns"
+    },
+    {
+      "model": "Craft",
+      "benchmark": "DesignArena Products Ranking",
+      "skor": 4,
+      "birim": "rank",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "4th among models",
+      "kaynak_metinden_alinti": "fourth for Products"
+    }
+  ],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/10/banner-18.webp",
+  "url": "https://www.testingcatalog.com/canva-launches-craft-image-model-with-2k-output-and-api/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-23T08:25:51.000Z",
+  "slug": "canva-launches-craft-image-model-with-2k-output-and-api"
+}

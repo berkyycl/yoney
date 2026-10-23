@@ -1,0 +1,70 @@
+{
+  "baslik_tr": "Qwen 3.8 Flash Next (129 GB), DeepSeek V4.1 Flash 1017 (187 GB+203 GB Engram)’dan daha iyi",
+  "ozet_tr": "Reddit topluluğu, Qwen3.8‑Flash‑Next‑W4A16‑FP8PLE modelini DeepSeek‑V4.1‑Flash‑1017‑dsx‑2.6bit modeliyle karşılaştırdı ve Qwen’in hem tam puan alarak hem de çok daha kısa sürede doğru sonuçlar verdiğini gösterdi. Bu bulgular, açık kaynak LLM kullanıcıları için Qwen’in tercih edilmesi gerektiğine işaret ediyor.",
+  "detayli_icerik_tr": "Reddit’in LocalLLaMA topluluğu, iki popüler açık kaynak büyük dil modelini (LLM) aynı koşullarda test etmek için modifiye edilmiş BenchKit aracını kullandı. Testlerde Qwen3.8‑Flash‑Next‑W4A16‑FP8PLE modeli, \"xhigh reasoning\" ayarıyla 25 üzerinden tam 25 puan alırken, DeepSeek‑V4.1‑Flash‑1017‑dsx‑2.6bit modeli aynı benchmarkta 23 puan topladı.\n\nAyrıca, HumanEval benchmarkının 22. sorusu (Python fonksiyonunu tamamlamak) üzerinden yapılan denemelerde Qwen sadece 18,8 saniyede doğru fonksiyon gövdesini üretti. DeepSeek ise aynı soruyu yanıtlamak için 127,9 saniye harcadı ve sonunda döngü hatasıyla sonlandırıldı. İkinci bir HumanEval sorusunda (en büyük bölen) DeepSeek 297,7 saniye boyunca yanıt veremedi ve başarısız oldu; Qwen ise 34,5 saniyede doğru çözümü sundu.\n\nBu sonuçlar, Qwen modelinin hem doğruluk hem de yanıt süresi açısından DeepSeek modeline kıyasla belirgin bir üstünlük sağladığını ortaya koyuyor. Kullanıcılar, özellikle düşük gecikme ve yüksek güvenilirlik gerektiren uygulamalarda Qwen’i tercih etmeyi düşünebilir.\n\nTopluluk üyesi /u/whiteh4cker, bu bulguların sadece sınırlı bir örneklem olduğunu kabul etse de, mevcut veriler Qwen’in mevcut senaryolarda daha verimli bir seçenek olduğunu net bir şekilde gösteriyor.",
+  "onemli_maddeler": [
+    "Qwen3.8‑Flash‑Next, BenchKit testinde tam 25/25 puan alarak DeepSeek'in 23/25 puanını geçti.",
+    "HumanEval sorularında Qwen, DeepSeek'ten çok daha kısa sürede (18,8s ve 34,5s) doğru yanıtlar verdi.",
+    "DeepSeek, ikinci HumanEval görevinde 297,7 saniye boyunca yanıt veremedi ve başarısız oldu."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "İki popüler açık kaynak LLM'nin doğrudan karşılaştırmalı benchmark sonuçları, geliştiricilerin ve son kullanıcıların model seçiminde kritik bir referans sağlıyor.",
+  "etiketler": [
+    "Qwen",
+    "DeepSeek",
+    "HumanEval",
+    "Benchmark",
+    "Open-source LLM"
+  ],
+  "anilan_modeller": [
+    "Qwen3.8-Flash-Next-W4A16-FP8PLE",
+    "DeepSeek-V4.1-Flash-1017-dsx-2.6bit"
+  ],
+  "yorum_tr": "Qwen'in hem doğruluk hem de yanıt süresi açısından DeepSeek'i geride bırakması, düşük gecikme ve yüksek güvenilirlik isteyen uygulamalarda açık kaynak modellerin tercih edilme eğilimini güçlendirecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen3.8-Flash-Next-W4A16-FP8PLE",
+      "benchmark": "BenchKit custom benchmark (xhigh reasoning)",
+      "skor": 25,
+      "birim": "points",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "xhigh reasoning",
+      "kaynak_metinden_alinti": "DeepSeek V4.1 Flash 1017 2.6 bit scored 23/25, while Qwen scored 25/25 (full marks)."
+    },
+    {
+      "model": "DeepSeek-V4.1-Flash-1017-dsx-2.6bit",
+      "benchmark": "BenchKit custom benchmark (xhigh reasoning)",
+      "skor": 23,
+      "birim": "points",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "xhigh reasoning",
+      "kaynak_metinden_alinti": "DeepSeek V4.1 Flash 1017 2.6 bit scored 23/25, while Qwen scored 25/25 (full marks)."
+    },
+    {
+      "model": "Qwen3.8-Flash-Next-W4A16-FP8PLE",
+      "benchmark": "HumanEval (question 22: filter_integers)",
+      "skor": 1,
+      "birim": "correctness",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "18.8 seconds",
+      "kaynak_metinden_alinti": "Qwen: correct answer after 18.8 seconds: return [x for x in values if isinstance(x, int)]"
+    },
+    {
+      "model": "DeepSeek-V4.1-Flash-1017-dsx-2.6bit",
+      "benchmark": "HumanEval (question 22: filter_integers)",
+      "skor": 0,
+      "birim": "correctness",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "127.9 seconds",
+      "kaynak_metinden_alinti": "DeepSeek: thinked for 127.9 seconds, doom loop killed after a confirmed active cycle stayed at or above 80% for 10s"
+    }
+  ],
+  "gorsel_url": "https://cms.orcarouter.ai/api/media/file/Qwen%203.8%20vs%20DeepSeek%20V4-1.png",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xcylhj/qwen_38_flash_next_129_gb_is_better_than_26_bpw/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-22T23:47:26.000Z",
+  "slug": "qwen-3-8-flash-next-129-gb-is-better-than-2-6-bpw-deepseek-v"
+}

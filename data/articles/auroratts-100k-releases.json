@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "AuroraTTS-100K Modeli Resmi Olarak Yayınlandı",
+  "ozet_tr": "Topluluk destekli ses sentez projesi AuroraTTS-100K, bugün Reddit'teki LocalLLaMA topluluğu tarafından duyuruldu ve açık kaynak kodlarıyla birlikte erişime sunuldu. Model, geniş bir veri setiyle eğitilmiş olup, metin‑ses dönüşümünde yeni bir performans seviyesine ulaşmayı hedefliyor.",
+  "detayli_icerik_tr": "Yerel LLaMA topluluğu, uzun süredir geliştirmekte olduğu AuroraTTS-100K adlı metin‑ses sentez modelini resmi olarak yayınladı. Model, topluluk üyelerinin katkılarıyla oluşturulan büyük bir ses veri kümesi üzerinde eğitildi ve hem yüksek ses kalitesi hem de düşük gecikme süresi sunması amaçlandı.\n\nAuroraTTS-100K, açık kaynak lisansı altında GitHub ve Hugging Face platformlarında paylaşılacak ve araştırmacılar, geliştiriciler ile ses teknolojisi meraklıları tarafından özgürce indirilebilecek. Topluluk, modelin farklı dillerde ve aksanlarda test edilmesini teşvik ederek, geniş bir kullanıcı tabanının geri bildirimlerini toplamayı planlıyor.\n\nModelin teknik detayları henüz tam olarak açıklanmasa da, geliştiriciler modelin 100.000 saatlik ses verisiyle eğitildiğini ve modern transformer tabanlı mimariler kullanıldığını belirtiyor. Bu, mevcut açık kaynak TTS çözümlerine kıyasla daha büyük bir ölçek ve potansiyel olarak daha doğal ses üretimi anlamına geliyor.\n\nAuroraTTS-100K'nin yayınlanması, açık kaynak ses sentezi ekosisteminde rekabeti artırarak, ticari çözümlere alternatif sunmayı hedefliyor. Topluluk, modelin çeşitli uygulamalarda (örneğin, sesli asistanlar, eğitim materyalleri ve erişilebilirlik çözümleri) test edilmesini ve performansının benchmarklarla karşılaştırılmasını istiyor.",
+  "onemli_maddeler": [
+    "AuroraTTS-100K modelinin resmi olarak yayınlanması",
+    "Modelin açık kaynak lisansı altında sunulması ve topluluk katkısına açık olması",
+    "100.000 saatlik ses veri setiyle eğitildiği iddiası"
+  ],
+  "kategori": "model-cikisi",
+  "onem": 3,
+  "onem_gerekce": "Yeni bir açık kaynak TTS modelinin yayınlanması, topluluk tabanlı AI projelerinde çeşitliliği artırsa da henüz geniş çaplı test ve benchmark sonuçları mevcut olmadığı için etkisi sınırlı kalmaktadır.",
+  "etiketler": [
+    "text-to-speech",
+    "open-source",
+    "model",
+    "AuroraTTS",
+    "AI"
+  ],
+  "anilan_modeller": [
+    "AuroraTTS-100K"
+  ],
+  "yorum_tr": "AuroraTTS-100K, açık kaynak ses sentezi alanında yeni bir seçenek sunarak geliştiricilere ve araştırmacılara esnek bir platform sağlıyor; ancak gerçek performansının değerlendirilmesi için kapsamlı benchmark sonuçları ve kullanıcı geri bildirimleri bekleniyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/lqdsEA6CxrZ-1cHO9hLW--ozd4U7A9wXPKc-eUrmwXI.png?width=640&crop=smart&auto=webp&s=d19f61c7ab4c668bd3be856019f0a3e7fbf3366a",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xctcoe/auroratts100k_releases/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-22T20:08:54.000Z",
+  "slug": "auroratts-100k-releases"
+}
