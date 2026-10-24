@@ -1,0 +1,52 @@
+{
+  "baslik_tr": "8 GB GPU’da 262K bağlam, 3.5 BPW Qwen-Flash-Next Coder 70 T/s performansı",
+  "ozet_tr": "LocalLLaMA topluluğu, Qwen-Flash-Next Coder modelinin 8 GB VRAM ve 24 GB RAM ile 262 k bağlam uzunluğunda çalıştırılabildiğini ve seçici MOE offloading sayesinde 70 T/s (token/saniye) üretim hızı yakaladığını duyurdu. Model, 3.5 bit per weight (BPW) GSQ RCO kuantizasyonu ve yarı yarıya azaltılmış uzman katmanlarıyla etkili bir 1.89 bit/parametre oranına ulaşıyor.",
+  "detayli_icerik_tr": "Reddit'in LocalLLaMA topluluğu, Qwen-Flash-Next Coder modelinin 8 GB VRAM'li bir GPU üzerinde, 262 k bağlam uzunluğuyla çalıştırılabildiğini ve 70 T/s (token per second) üretim hızına ulaştığını raporladı. Model, 6 B aktif parametreye sahip olmasına rağmen, n‑gram ve MOE (Mixture of Experts) katmanlarını akıllı bir şekilde RAM ve SSD'ye dağıtarak bellek tüketimini minimize ediyor; en küçük MOE'ler VRAM'de tutulurken n‑gram verileri en hızlı SSD'de saklanıyor.\n\nKuantizasyon açısından model, ISTA DASLab tarafından geliştirilen 3.5 BPW \"Coder\" varyantı ve GSQ RCO kuantizasyonu kullanıyor. Uzman katmanlarının yarısı kaldırıldığı için etkili olarak 1.89 bit/parametre oranı elde edilmiş, ancak saklanan ağırlıklar hâlâ 3.5 BPW seviyesinde. Bu, hem pruningle hem de kuantizasyonla elde edilen birleşik bir sıkıştırma etkisi olarak açıklanıyor.\n\nPerformans ölçümleri, seçici MOE offloading (regex tabanlı) ve PCIe 3.0 sınırlamaları altında yapılmış. Bu konfigürasyonla model 70 T/s prompt processing (PP) ve 8 T/s token generation (TG) hızlarına ulaşmış; aynı etkiyi CPU‑MOE ile elde etmeye çalışıldığında daha yavaş sonuçlar alınmış. İlk çalıştırmada MMAP nedeniyle düşük hız gözlemlenmiş, ikinci çalıştırmada ise gerçek T/s değerleri ortaya çıkmış.\n\nKullanıcılar, CUDA ile 8 GB VRAM'de çalıştırma sorunları yaşadıklarından Vulkan backend'ini tercih etmeleri gerektiği konusunda uyarıldı. Ayrıca, bağlam boyutunu azaltmak, arka plan uygulamalarını kapatmak ve tarayıcı donanım hızlandırmasını devre dışı bırakmak gibi optimizasyon önerileri de paylaşıldı.",
+  "onemli_maddeler": [
+    "Model, 8 GB VRAM ve 24 GB RAM ile 262 k bağlam uzunluğunda çalıştırılabiliyor.",
+    "Seçici MOE offloading sayesinde 70 T/s prompt processing ve 8 T/s token generation hızı elde edildi.",
+    "3.5 BPW GSQ RCO kuantizasyonu, etkili olarak 1.89 bit/parametre oranı sağlıyor.",
+    "CUDA sorunları nedeniyle Vulkan backend öneriliyor; bağlam boyutu ve arka plan uygulamaları optimize edilmesi gerekiyor."
+  ],
+  "kategori": "benchmark",
+  "onem": 3,
+  "onem_gerekce": "Topluluk tarafından yapılan bu benchmark, düşük bellekli GPU'larda yüksek bağlam ve yüksek token hızı elde edilebileceğini gösteriyor; ancak sınırlı donanım koşuluna ve niche bir model tipine odaklandığı için sektörel etkisi orta seviyede.",
+  "etiketler": [
+    "llama.cpp",
+    "GPU",
+    "kuantizasyon",
+    "benchmark",
+    "MOE"
+  ],
+  "anilan_modeller": [
+    "Qwen-Flash-Next Coder 3.5 BPW"
+  ],
+  "yorum_tr": "Bu performans raporu, düşük bellekli sistemlerde büyük bağlam uzunlukları ve yüksek hız hedefleyen geliştiricilere yeni bir yol haritası sunuyor. Vulkan tabanlı çalıştırma ve MOE offloading gibi teknikler, benzer donanım kısıtlamalarına sahip projelerde uygulanabilir bir referans oluşturuyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen-Flash-Next Coder 3.5 BPW",
+      "benchmark": "Tokens per second (prompt processing)",
+      "skor": 70,
+      "birim": "T/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "selective MOE offloading (regex), PCIe 3.0",
+      "kaynak_metinden_alinti": "With selective moe-offloading (regex) we reach 70 T/s PP and 8~ T/s TG (Limited by PCIE, which I've 3.0 YMMV)"
+    },
+    {
+      "model": "Qwen-Flash-Next Coder 3.5 BPW",
+      "benchmark": "Tokens per second (token generation)",
+      "skor": 8,
+      "birim": "T/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "selective MOE offloading (regex), PCIe 3.0",
+      "kaynak_metinden_alinti": "With selective moe-offloading (regex) we reach 70 T/s PP and 8~ T/s TG (Limited by PCIE, which I've 3.0 YMMV)"
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/uhjbjns2nfxh1.jpeg?width=140&height=76&auto=webp&s=aef3eaf17bb0fca23f4efc0f7426e4f830b3fcfd",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xebdzl/8_gb_gpu_262k_context_35_bpw_qwenflashnext_coder/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-24T15:21:50.000Z",
+  "slug": "8-gb-gpu-262k-context-3-5-bpw-qwen-flash-next-coder-70-t-s-u"
+}

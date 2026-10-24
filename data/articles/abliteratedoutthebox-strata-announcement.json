@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "AbliteratedOutTheBox Strata Portu Duyuruldu",
+  "ozet_tr": "Geliştirici, llama.cpp tabanlı bir inference‑zamanı abliteration motorunu Strata platformuna taşıdığını duyurdu. Yeni araç, büyük VRAM gereksinimi olmadan abliterated modelleri çalıştırmayı hedefliyor ve topluluktan geri bildirim bekliyor.",
+  "detayli_icerik_tr": "Yerel LLaMA topluluğu üyesi /u/AccountAntique9327, llama.cpp üzerine inşa edilen bir inference‑zamanı abliteration motorunu Strata dalına taşıdığını açıkladı. Bu motor, modelin belirli kısımlarını çalışma anında devre dışı bırakarak, yüksek bellek tüketimi olmadan abliterated modellerin kullanılmasını sağlıyor; ayrıca modelin yeniden eğitilmesine (finetuning) ihtiyaç duymuyor.\n\nAbliteratedOutTheBox projesi, orijinal olarak llama.cpp için bir fork olarak geliştirilmişti ve GitHub üzerinden erişilebilir durumda (https://github.com/heterodoxin/AbliteratedOutTheBox). Geliştirici, Strata uyumlu sürümünün deneysel olduğunu ve tam model davranışı ile yanıt kalitesinin henüz doğrulanmadığını belirtti. Strata portu, aynı kod tabanının farklı bir yürütme ortamına adapte edilmesiyle ortaya çıktı ve ilgili kodlar https://github.com/heterodoxin/AbliteratedOutTheBox/tree/strata adresinde bulunuyor.\n\nBu yeni entegrasyon, özellikle sınırlı GPU belleğine sahip araştırmacılar ve geliştiriciler için ilgi çekici bir seçenek sunuyor. Abliteration tekniği, modelin belirli nöron ya da katmanlarını devre dışı bırakarak hafıza ayak izini küçültürken, performans kaybını minimumda tutmayı amaçlıyor. Strata üzerinden çalıştırıldığında, bu yaklaşımın ne kadar etkili olduğu ve yanıt kalitesinin nasıl değiştiği konusunda topluluktan gelen geri bildirimler kritik olacak.\n\nGeliştirici, Strata kullanan herkesin deneme yapmasını ve deneyimlerini paylaşmasını istiyor; proje yıldızlanması ve yorum yapılması da desteklenmesi gereken adımlar arasında. Topluluk geri bildirimleri, motorun stabilitesinin artırılması ve olası iyileştirmelerin belirlenmesi açısından önemli bir rol oynayacak.",
+  "onemli_maddeler": [
+    "AbliteratedOutTheBox motoru, inference‑zamanı abliteration sayesinde VRAM ihtiyacını azaltıyor.",
+    "Motor, llama.cpp tabanlı bir fork olarak Strata platformuna deneysel bir port sağladı.",
+    "Tam model davranışı ve yanıt kalitesi henüz doğrulanmadığından topluluk geri bildirimi bekleniyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 2,
+  "onem_gerekce": "Bu duyuru, sınırlı donanıma sahip araştırmacılar ve geliştiriciler için yeni bir açık kaynak araç sunuyor ancak henüz deneysel aşamada ve geniş çaplı bir etki yaratması zaman alacak.",
+  "etiketler": [
+    "llama.cpp",
+    "Strata",
+    "abliteration",
+    "inference",
+    "open-source"
+  ],
+  "anilan_modeller": [
+    "LLaMA",
+    "Strata",
+    "llama.cpp"
+  ],
+  "yorum_tr": "Strata üzerindeki bu deneysel port, düşük bellekli ortamlarda LLaMA tabanlı modelleri çalıştırmak isteyen geliştiriciler için faydalı bir deneme alanı sunuyor; ancak performans ve kalite doğrulaması yapılmadan geniş çapta benimsenmesi beklenmiyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://miro.medium.com/v2/resize:fit:2000/1*bMgfCSDYfVCxjxZVOB45qA.png",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xe8x9c/abliteratedoutthebox_strata_announcement/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-24T13:38:58.000Z",
+  "slug": "abliteratedoutthebox-strata-announcement"
+}

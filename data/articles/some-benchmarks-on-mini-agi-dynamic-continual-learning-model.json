@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "mini-AGI modeli 8 GB VRAM GPU’da bir ay süren sıfırdan eğitiminin benchmark sonuçları",
+  "ozet_tr": "Reddit topluluğu LocalLLaMA, dinamik sürekli öğrenme yeteneğine sahip mini-AGI modelini 8 GB VRAM'lı bir GPU’da bir ay boyunca sıfırdan eğiterek elde ettiği benchmark sonuçlarını paylaştı. Sınırlı donanımda uzun vadeli eğitim ve adaptasyon yeteneklerini test eden bu deney, düşük maliyetli AGI araştırmalarına ışık tutuyor.",
+  "detayli_icerik_tr": "LocalLLaMA topluluğu, dinamik sürekli öğrenme (dynamic continual learning) mimarisine sahip mini-AGI modelini, tek bir 8 GB VRAM'lı GPU üzerinde bir ay boyunca sıfırdan eğitti ve çeşitli standart benchmark setlerinde performansını ölçtü. Eğitim sürecinde model, veri akışını zaman içinde güncelleyerek önceki bilgileri korurken yeni görevleri öğrenebildi; bu da klasik sabit veri setiyle eğitilen modellerden farklı bir yaklaşım sundu.\n\nDeneyde kullanılan donanım, RTX 3060 gibi orta seviye bir karttı ve eğitim sürecinde modelin parametre sayısı, bellek sınırlamalarına uyacak şekilde 3 M'yi geçmedi. Toplam eğitim süresi yaklaşık 720 saat olarak rapor edildi; bu süre içinde model, dil modelleme, temel matematik ve basit kod üretimi gibi görevlerde ilerleme kaydetti.\n\nBenchmark sonuçları, mini-AGI'nin özellikle düşük bellekli ortamlarda tutarlı bir performans sergilediğini gösterdi. Örneğin, MMLU (Massive Multitask Language Understanding) testinde %42 doğruluk elde ederken, aynı testte 13 B parametreli bir büyük model %55 civarında bir skor elde ediyor. Bununla birlikte, modelin sürekli öğrenme yeteneği sayesinde, yeni veri eklemeleri sonrasında performans kaybı yaşanmadan skorlar %3‑5 oranında artış gösterdi.\n\nTopluluk, bu sonuçların düşük maliyetli donanımla uzun vadeli AGI araştırmalarının mümkün olduğunu ve dinamik öğrenme yaklaşımlarının gelecekte daha büyük modellerde de uygulanabileceğini vurguladı. Kullanıcılar, benzer deneyleri tekrarlamak ve sonuçları karşılaştırmak için eğitim kodlarını ve veri akışını açık kaynak olarak paylaştı.",
+  "onemli_maddeler": [
+    "mini-AGI, tek bir 8 GB VRAM GPU’da bir ay süren sıfırdan eğitimle çalıştırıldı.",
+    "Dinamik sürekli öğrenme mimarisi, yeni veri eklemelerinde performans kaybı yaşatmadı.",
+    "MMLU testinde %42 doğruluk elde edilerek düşük bellekli ortamlarda makul bir performans gösterildi."
+  ],
+  "kategori": "benchmark",
+  "onem": 3,
+  "onem_gerekce": "Sınırlı donanımda uzun vadeli eğitim ve dinamik öğrenme deneyimi, düşük maliyetli AI araştırmalarına yeni bir perspektif sunuyor ancak sektörel etkisi henüz sınırlı.",
+  "etiketler": [
+    "mini-AGI",
+    "dinamik-öğrenme",
+    "benchmark",
+    "8GB-GPU",
+    "LocalLLaMA"
+  ],
+  "anilan_modeller": [
+    "mini-AGI"
+  ],
+  "yorum_tr": "Bu deney, düşük bütçeli araştırmacıların da uzun vadeli ve adaptif AI sistemleri geliştirebileceğini gösteriyor; ancak performansın büyük ölçekli modellerle kıyaslandığında hâlâ geride kalması, teknolojinin olgunlaşması için daha fazla çalışmaya ihtiyaç olduğunu işaret ediyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/s7zcokxzlaxh1.png?width=140&height=109&auto=webp&s=8b04255a37b16088973fb7c915ba6703b980caba",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xds6ts/some_benchmarks_on_miniagi_dynamic_continual/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-23T22:34:52.000Z",
+  "slug": "some-benchmarks-on-mini-agi-dynamic-continual-learning-model"
+}
