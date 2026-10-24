@@ -1,0 +1,53 @@
+{
+  "baslik_tr": "M6 Mac Mini 32 GB sahipleri artık Qwen3.8‑27B modelini Apple Neural Engine’de yüksek kaliteyle çalıştırabiliyor",
+  "ozet_tr": "ANEMLL Forge 0.2.1 sürümü, Qwen3.8‑27B büyük dil modelini M6 çipli Mac Mini üzerinde 192 K bağlam uzunluğuna kadar çalıştırabiliyor. INT8 KV önbellek ve daha küçük drafter sayesinde bellek tüketimi %50’ye kadar azalırken, içerik tipine göre 10‑62 token/s decode hızı sağlanıyor. 96 K bağlamda optimum performans elde edilerek, 123 token/s prefill ve 27 token/s decode hızları sunuluyor.",
+  "detayli_icerik_tr": "ANEMLL Forge 0.2.1, Apple'ın M6 Neural Engine'ini hedef alarak Qwen3.8‑27B modelini 32 GB RAM'li Mac Mini'lerde çalıştırma yeteneğini genişletti. Yeni sürüm, INT8 K/V önbellek (FP16'nın yarısı) ve hedef çıkış başlığını paylaşan daha küçük bir drafter kullanarak ANE belleğinde 0,86 GB tasarruf sağlarken aynı işlem hızını koruyor.\n\nPerformans ölçümleri, modelin içerik tipine göre değişen decode hızlarını gösteriyor: JSON üretiminde 35‑62 token/s, kod üretiminde 18‑32 token/s ve düz metin (prose) üretiminde 10‑17 token/s. Prefill aşaması ise kısa bağlamlarda 260 token/s, 192 K bağlamda ise 62 token/s hızına ulaşıyor. 128K‑192K arası bağlamlarda bellek bütçesini korumak için prefill batch boyutu 64 yerine 32 satıra düşürülüyor.\n\nTam 192 K bağlam derlemesi ilk kez yaklaşık iki saat sürüyor; bu derleme bir kez yapıldıktan sonra önbelleğe alınıp sonraki çalıştırmalarda kullanılabiliyor. Kullanıcılar, `--ctx` parametresiyle yalnızca ihtiyaç duydukları bağlamı dışa aktararak derleme süresini büyük ölçüde kısaltabiliyor; 16 K bağlamda sadece 10 dakikada indirme ve sunucu başlatma mümkün.\n\nYazarlar, 96 K bağlamı \"tatlı nokta\" olarak belirtiyor: bu seviyede toplam bellek tüketimi 21,4 GB, prefill hızı 123 token/s ve decode hızı yaklaşık 27 token/s. Detaylı sürüm notları, bir Tetris videosu ve üç bit MLP vektör kuantizasyonu üzerine teknik bir makale de GitHub üzerinden erişilebilir.",
+  "onemli_maddeler": [
+    "ANEMLL Forge 0.2.1, Qwen3.8‑27B modelini M6 Neural Engine’de 192 K bağlam uzunluğuna kadar çalıştırabiliyor.",
+    "INT8 KV cache ve daha küçük drafter sayesinde ANE belleğinde 0,86 GB tasarruf sağlanıyor.",
+    "Decode hızı içerik tipine göre 10‑62 token/s, prefill hızı kısa bağlamda 260 token/s.",
+    "96 K bağlamda optimum performans: 123 token/s prefill, 27 token/s decode, 21.4 GB bellek tüketimi.",
+    "Tam 192 K derleme bir kez ~2 saat sürüyor; 16 K derleme ise ~10 dk içinde tamamlanıyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Apple Silicon ekosisteminde büyük dil modellerinin yüksek bağlam uzunluğu ve düşük bellek tüketimiyle çalıştırılması, geliştiriciler ve araştırmacılar için yeni bir performans eşiği oluşturuyor; ancak etkisi hâlen niche bir donanım sınıfıyla sınırlı.",
+  "etiketler": [
+    "Apple Neural Engine",
+    "Qwen3.8-27B",
+    "ANEMLL Forge",
+    "M6 Mac Mini",
+    "LLM performans"
+  ],
+  "anilan_modeller": [
+    "Qwen3.8-27B"
+  ],
+  "yorum_tr": "Bu güncelleme, Apple çipli cihazlarda büyük dil modellerinin daha uzun bağlamlarla ve daha düşük bellek ayak iziyle çalışmasını mümkün kılıyor; geliştiriciler artık yerel olarak daha karmaşık uygulamalar ve uzun metin analizleri yapabilecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen3.8-27B",
+      "benchmark": "prefill speed (short context)",
+      "skor": 260,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "prefill",
+      "kaynak_metinden_alinti": "Prefill 260 tok/s at short context"
+    },
+    {
+      "model": "Qwen3.8-27B",
+      "benchmark": "prefill speed (192K context)",
+      "skor": 62,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "prefill",
+      "kaynak_metinden_alinti": "62 at 192K"
+    }
+  ],
+  "gorsel_url": "https://i.ytimg.com/vi/7ugFOo8e8H4/maxresdefault.jpg",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xejv61/m6_mac_mini_owners_32gb_now_you_can_run_qwen3827b/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-24T21:05:21.000Z",
+  "slug": "m6-mac-mini-owners-32gb-now-you-can-run-qwen3-8-27b-in-high"
+}

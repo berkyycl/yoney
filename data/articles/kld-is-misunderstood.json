@@ -1,0 +1,30 @@
+{
+  "baslik_tr": "KLD Yanlış Anlaşılıyor: Kuantize Modellerde Ölçüm Yanılgısı",
+  "ozet_tr": "Reddit topluluğunda KLD (Kullback‑Leibler Divergence) metriğinin kuantize modellerin kalitesini tek başına ölçebileceği düşüncesi yaygın, ancak bu algı yanlıştır. KLD, sadece bir modelin çıktısı ile temel modelin çıktısı arasındaki dağılım farkını ölçer ve sınırlı veri setleriyle kolayca manipüle edilebilir.",
+  "detayli_icerik_tr": "Reddit'in LocalLLaMA topluluğunda, KLD sayısının kuantize modelleri sıralamak için kutsal bir ölçüt gibi kabul edildiği sıkça görülüyor. Ancak KLD, aynı metni temel model ve kuantize modeline vererek elde edilen logit dağılımları arasındaki farkı ölçen bir istatistik; bu farkın ortalaması token bazında alınır. Bu ölçüm, modelin gerçek kullanım senaryolarını yansıtmayabilir, çünkü üretim sırasında modelin kendi ürettiği tokenlar bağlamı genişletir ve rastgele Wikipedia metinleriyle yapılan testler bu durumu yakalayamaz.\n\nDaha güvenilir bir KLD değeri elde etmek için, temel modelden üretilen bir veri seti oluşturulup sadece bu üretilen tokenlar üzerinden KLD hesaplanmalı, prompt tokenlarına ağırlık verilmemelidir. İkinci bir sorun ise KLD'nin kolayca manipüle edilebilmesidir; kuantizasyon yöntemleri genellikle kalibrasyon verisi kullanır ve aynı veri setiyle KLD hesaplandığında sonuçlar yanıltıcı derecede iyi görünebilir. Kalibrasyon ve değerlendirme veri setleri aynı kaynaktan geliyorsa ya da çok benzer dağılımlara sahipse, KLD değeri güvenilir olmaz.\n\nBazı durumlarda, kuantizasyon ölçek parametreleri aynı veri seti üzerinde son‑uç ince ayarı (fine‑tuning) yapılabilir ve bu da KLD açısından çok daha büyük modelleri geride bırakır, fakat gerçek dünyadaki genelleme yeteneği düşük kalır. Dolayısıyla yüksek bir KLD, kuantize modelin görevlerde başarısız olacağı anlamına gelmez; sadece sınırlı bir veri setinde temel modele ne kadar yaklaştığını gösterir. Benchmark skorları ise genellikle büyük donanım ve hesaplama gücü gerektirirken, KLD'yi “güzel” göstermek çok daha ucuz bir manipülasyondur.\n\nSonuç olarak, KLD bir tanı aracı olarak faydalı olabilir, ancak kuantize modellerin kalitesini ölçen evrensel bir lider tablosu gibi kullanılmamalıdır. Geliştiricilerin ve kullanıcıların KLD'yi, modelin gerçek performansını yansıtan daha kapsamlı testlerle birlikte değerlendirmeleri gerekir.",
+  "onemli_maddeler": [
+    "KLD, sadece temel model ile kuantize model arasındaki dağılım farkını ölçer, modelin gerçek performansını yansıtmaz.",
+    "Rastgele metinlerle yapılan KLD hesaplamaları, üretim sırasında modelin kendi ürettiği tokenları içermediği için yanıltıcıdır.",
+    "Kalibrasyon verisiyle aynı veri seti üzerinden KLD ölçümü yapmak, sonuçları manipüle etme riskini artırır."
+  ],
+  "kategori": "diger",
+  "onem": 3,
+  "onem_gerekce": "KLD metriğinin yanlış anlaşılması, model değerlendirme pratiklerini etkileyebilir ancak sektörel çapta büyük bir dönüşüm yaratmaz.",
+  "etiketler": [
+    "KLD",
+    "kuantizasyon",
+    "model değerlendirme",
+    "benchmark",
+    "AI"
+  ],
+  "anilan_modeller": [],
+  "yorum_tr": "KLD'nin sınırlı bir tanı aracı olduğu gerçeği, geliştiricilerin model kalitesini daha kapsamlı metriklerle ölçmesini teşvik edecek. Kullanıcılar ise KLD'ye aşırı güvenmek yerine gerçek dünya performans testlerine odaklanmalı.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": null,
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xeim3m/kld_is_misunderstood/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-24T20:12:28.000Z",
+  "slug": "kld-is-misunderstood"
+}

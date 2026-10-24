@@ -1,0 +1,36 @@
+{
+  "baslik_tr": "Tarayıcıda Çalışan 4 Küçük Sinir Ağıyla Ritm Oyunu: Struna",
+  "ozet_tr": "Yerel olarak çalışan dört küçük sinir ağı, bir şarkıyı tarayıcı sekmesinde analiz ederek tamamen offline bir ritim oyunu oluşturuyor. BeatNet, Basic Pitch, Spleeter ve SwiftF0 modelleri, şarkının ritmi, notaları, vokal ayrımı ve ses perdesini gerçek zamanlı olarak işliyor ve oyun dünyasını şekillendiriyor.",
+  "detayli_icerik_tr": "Yerel LLM topluluğu Reddit'te paylaşılan bir proje, kullanıcıların kendi MP3 dosyalarını yükleyebildiği ve tüm ses işleme işlemlerinin tarayıcı içinde gerçekleştiği bir ritim koşucu oyunu sunuyor. Oyun, ONNX Runtime Web (WebAssembly) tabanlı dört ayrı modelin her birini kendi web worker'ında çalıştırarak şarkıyı analiz ediyor ve sonuçları oyun seviyesine dönüştürüyor.\n\nİlk model BeatNet, yaklaşık 1.6 MB boyutunda olup beat ve downbeat takibi yapıyor; bu bilgiler, oyunun ızgarasını ve engellerin konumlarını belirliyor. İkinci model Spotify tarafından geliştirilen Basic Pitch (0.2 MB) notaları transkribe ediyor; uzun notalar bir bar ya da sallanacak bir hat, solo bölümler ise oyuncunun uçacağı halka dizileri olarak kullanılıyor.\n\nÜçüncü model Spleeter (≈20 MB) vokalleri müzikten ayırarak geri kalan enstrümantal kısmın diğer modelleri yanıltmasını önlüyor. Dördüncü model SwiftF0 (≈0.1 MB) ise vokal perdesini ve hece başlangıçlarını 16 ms aralıklarla izliyor; bu sayede şarkının vokal kısmında oyuncu, sesin melodi çizgisine göre yükselip alçalabiliyor.\n\nToplamda yaklaşık 22 MB veri kullanan bu modeller, ilk yüklemeden sonra tarayıcıda önbelleğe alınıyor. Cihaz yeterli performansı sağlayamazsa oyun, klasik DSP (onset, ses şiddeti vb.) yöntemlerine geri dönerek hâlâ oynanabilir durumda kalıyor. Aynı şarkı her seferinde aynı oyun dünyasını ve hava durumunu üretiyor, bu da oyuncuların seviyeyi öğrenmesini mümkün kılıyor. Projenin kodları MIT lisansı altında GitHub'da açık kaynak olarak sunulmuş ve mobil cihazlarda da çalışabiliyor.",
+  "onemli_maddeler": [
+    "BeatNet, Basic Pitch, Spleeter ve SwiftF0 modelleri tarayıcı içinde ONNX Runtime Web ile çalıştırılıyor.",
+    "Tüm ses işleme tamamen yerel; hiçbir veri sunucuya gönderilmiyor.",
+    "Modeller toplamda ~22 MB ve bir kez yüklendikten sonra önbelleğe alınıyor, düşük performanslı cihazlar için DSP yedekleme mevcut.",
+    "Kod açık kaynak ve MIT lisansı altında; oyun mobil tarayıcılarda da çalışıyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 3,
+  "onem_gerekce": "Proje, tarayıcı tabanlı yerel yapay zeka kullanımının pratik bir örneğini gösteriyor ancak henüz geniş çaplı bir ürün ya da standart bir araç olarak benimsenmediği için etkisi sınırlı.",
+  "etiketler": [
+    "browser",
+    "local inference",
+    "audio models",
+    "open source",
+    "rhythm game"
+  ],
+  "anilan_modeller": [
+    "BeatNet",
+    "Basic Pitch",
+    "Spleeter",
+    "SwiftF0"
+  ],
+  "yorum_tr": "Bu tür yerel AI entegrasyonları, veri gizliliği ve düşük gecikme gerektiren interaktif uygulamalar için önemli bir yol haritası sunuyor; geliştiriciler benzer yaklaşımları oyun ve müzik analizinde daha geniş ölçekte benimseyebilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/Y284MnUxa20waHhoMZb8X2PI5g4XRJv_lVJY_ygZhqNuJ1c3brwzv5Qxgpjk.png?width=640&crop=smart&auto=webp&s=d923b1ea5bac85b3a69abb89dc4e02c59f97f88a",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xeia9o/made_a_rhythm_game_where_4_small_neural_nets/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-24T19:59:11.000Z",
+  "slug": "made-a-rhythm-game-where-4-small-neural-nets-listen-to-your"
+}
