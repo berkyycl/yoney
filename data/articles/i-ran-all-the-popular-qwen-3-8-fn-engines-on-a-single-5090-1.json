@@ -1,0 +1,66 @@
+{
+  "baslik_tr": "Qwen 3.8 FN modelleri RTX 5090'da test edildi: Basalt ve Infernix öne çıkıyor",
+  "ozet_tr": "Yerel LLaMA topluluğu, Qwen 3.8 FN checkpoint'ini aynı donanımda (RTX 5090, 128 GB RAM) çalışan yedi farklı motorla karşılaştırdı. Decode hızı ve prefill performansında Basalt ve Infernix %10 civarında farkla diğer motorların önünde yer alırken, tek GPU’da çalışan capy‑flash en iyi ikinci konumda kaldı.",
+  "detayli_icerik_tr": "Reddit'te LocalLLaMA topluluğunun bir üyesi, Qwen 3.8 FN modelinin farklı motorlarla (Basalt, Infernix, capy‑flash, Strata, ninfer‑ext, ninfer ve llama.cpp) aynı koşullarda çalıştırılmasını sağladı. Her motor, NVIDIA'nın NVFP4 formatına kendi dönüştürücüsüyle uyumlu hâle getirildi ve 400 W güç çeken bir RTX 5090 üzerinde, 7 farklı uzunlukta (25 K, 50 K, 100 K, 200 K token) greedy istekle test edildi. Sonuçlar, decode hızı (tokens per second), prefill hızı ve ilk token süresi gibi metriklerde sunuldu.\n\nDecode performansında Basalt 354 t/s, Infernix 349 t/s, capy‑flash 292 t/s, Strata 204 t/s, ninfer‑ext 140 t/s, ninfer 54 t/s ve llama.cpp 39 t/s değerleri elde edildi. Prefill aşamasında ise Basalt 6 492 t/s, Infernix 6 493 t/s, capy‑flash 4 026 t/s, Strata 3 530 t/s, ninfer‑ext 3 552 t/s, ninfer 2 080 t/s ve llama.cpp 1 354 t/s olarak ölçüldü. İlk token süresi açısından Basalt 0.35 s, Infernix 0.42 s, capy‑flash 0.88 s, Strata 0.45 s, ninfer‑ext 1.05 s, ninfer 1.78 s ve llama.cpp 1.09 s olarak kaydedildi.\n\nTestin en çarpıcı bulgusu, Basalt ve Infernix'in decode ve prefill aşamalarında birbirine çok yakın, ancak 50 K ve üzeri uzunluklarda Basalt'ın daha belirgin bir üstünlük gösterdiğidir. capy‑flash, iki GPU’ya yönelik tasarlandığı için tek GPU’da beklenen performansı tam olarak ortaya koyamadı. Llama.cpp ise MTP (multi‑token‑prediction) kapalı çalıştırıldığı için doğrudan karşılaştırma için referans niteliğindeydi. Bu benchmark, yerel LLM dağıtımlarında motor seçiminin performans üzerindeki etkisini net bir şekilde ortaya koyuyor.\n\nTest ortamı, Linux işletim sistemi, RTX 5090 (400 W PL) ve 128 GB RAM olarak belirlendi. Tüm istekler greedy (temperature 0) ayarıyla, int8 KV cache (llama.cpp f16) kullanılarak ve her isteğin soğuk bir sunucuda başlatılmasıyla gerçekleştirildi. Sonuçların %5'lik farkların bağlamında eşit kabul edildiği belirtiliyor.",
+  "onemli_maddeler": [
+    "Basalt ve Infernix, Qwen 3.8 FN için decode ve prefill hızında %10 civarında farkla diğer motorların önünde.",
+    "capy‑flash tek GPU’da en iyi ikinci performansı gösterdi; iki GPU tasarımı nedeniyle potansiyelini tam yansıtamadı.",
+    "Llama.cpp MTP kapalı çalıştırıldığı için sadece referans amaçlı kullanıldı, doğrudan karşılaştırma için uygun değil."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Yerel LLM motorlarının aynı donanımda karşılaştırılması, geliştiricilerin ve araştırmacıların en verimli motoru seçmesine doğrudan yön verir ve donanım‑yazılım uyumluluğu konusundaki kararları etkiler.",
+  "etiketler": [
+    "Qwen 3.8",
+    "RTX 5090",
+    "LLM benchmark",
+    "Local LLaMA",
+    "inference engine"
+  ],
+  "anilan_modeller": [
+    "Basalt",
+    "Infernix",
+    "capy-flash",
+    "Strata",
+    "ninfer-ext",
+    "ninfer",
+    "llama.cpp"
+  ],
+  "yorum_tr": "Bu benchmark, yerel LLM dağıtımlarında motor seçiminin performans farklarını somut verilerle ortaya koyarak, geliştiricilerin donanım kaynaklarını en verimli şekilde kullanmalarına yardımcı olur.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Basalt",
+      "benchmark": "Decode tokens per second (25K context)",
+      "skor": 354,
+      "birim": "tokens/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "25K context",
+      "kaynak_metinden_alinti": "Basalt 354"
+    },
+    {
+      "model": "Infernix",
+      "benchmark": "Decode tokens per second (25K context)",
+      "skor": 349,
+      "birim": "tokens/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "25K context",
+      "kaynak_metinden_alinti": "Infernix 349"
+    },
+    {
+      "model": "Basalt",
+      "benchmark": "Time to first token (seconds, 25K context)",
+      "skor": 0.35,
+      "birim": "s",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "25K context",
+      "kaynak_metinden_alinti": "Basalt 0.35"
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/21o6k7qeb9xh1.png?width=140&height=37&auto=webp&s=402eee8e66ccd3f7c5a88a0a63ac2c7321ba343d",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xdlunp/i_ran_all_the_popular_qwen_38_fn_engines_on_a/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-23T18:22:56.000Z",
+  "slug": "i-ran-all-the-popular-qwen-3-8-fn-engines-on-a-single-5090-1"
+}

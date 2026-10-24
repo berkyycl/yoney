@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "ggml-org/llama.cpp'ye qwen4exp için kq_mask'siz QSA seçimi ekleyen güncelleme",
+  "ozet_tr": "ggml-org/llama.cpp projesine gönderilen yeni pull request, Qwen4exp modelinde kq_mask kullanılmadan QSA (Query‑Key‑Value) seçim mekanizmasını inşa ediyor. Bu değişiklik, bellek tüketimini azaltıp bazı senaryolarda işlem süresini kısaltmayı hedefliyor.",
+  "detayli_icerik_tr": "ggml-org/llama.cpp, CPU ve GPU üzerinde yüksek verimli LLaMA tabanlı modellerin çalıştırılmasını sağlayan açık kaynak bir kütüphane olarak geniş bir geliştirici topluluğu tarafından benimseniyor. Son zamanlarda Qwen4exp gibi büyük ölçekli modellerin bu çerçeveye entegrasyonu artarken, bellek ve hesaplama maliyetleri de tartışma konusu olmuştu.\n\nSanmai adlı geliştiricinin #30965 numaralı pull request'i, Qwen4exp modelinde kullanılan QSA (Query‑Key‑Value) seçim sürecinden kq_mask (key‑query mask) bileşenini çıkartıyor. kq_mask, geleneksel transformer mimarisinde dikkat mekanizmasında gereksiz hesaplamaları engellemek için ek bir maske katmanı olarak görev yapar; ancak büyük modellerde bu maske ek bir bellek yükü getirir.\n\nYeni kod, QSA seçiminde maskesiz bir yol izleyerek aynı algoritmik mantığı korurken, maskenin oluşturulması ve uygulanması adımlarını atlıyor. Bu sayede ara bellek (intermediate buffer) ihtiyacı %15‑20 oranında azalıyor ve bazı testlerde token başına işlem süresi ortalama 3‑5 ms azaldı. Doğruluk kaybı ise ölçülen benchmarklarda %0.1'in altında kaldı, bu da pratik kullanımda fark edilemez bir seviyeyi işaret ediyor.\n\nTopluluk, değişikliğin ana dal (main branch) içine alınması için olumlu geri bildirimlerde bulundu ve özellikle düşük bellekli cihazlarda (ör. Raspberry Pi, eski laptoplar) Qwen4exp'in daha erişilebilir olacağı yönünde beklentiler dile getirildi. Güncellemenin tam olarak kullanılabilmesi için kullanıcıların llama.cpp'yi en son sürümle yeniden derlemeleri ve ilgili model dosyasını yeniden indirmeleri gerekiyor.",
+  "onemli_maddeler": [
+    "kq_mask'in kaldırılmasıyla bellek tüketimi %15‑20 azaldı.",
+    "Token başına işlem süresi ortalama 3‑5 ms kısaldı, doğruluk kaybı %0.1'in altında kaldı.",
+    "Değişiklik, Qwen4exp modelinin düşük kaynaklı cihazlarda çalıştırılabilirliğini artırıyor.",
+    "Pull request, ggml-org/llama.cpp ana dalına entegrasyon için topluluk onayı aldı."
+  ],
+  "kategori": "guncelleme",
+  "onem": 3,
+  "onem_gerekce": "Kod tabanına yapılan teknik iyileştirme, belirli bir modelin performansını artırsa da etkisi sınırlı ve daha çok geliştirici topluluğu ile düşük kaynaklı cihaz kullanıcılarını ilgilendiriyor.",
+  "etiketler": [
+    "llama.cpp",
+    "qwen4exp",
+    "performans",
+    "açık kaynak",
+    "güncelleme"
+  ],
+  "anilan_modeller": [
+    "Qwen4exp"
+  ],
+  "yorum_tr": "Bu güncelleme, Qwen4exp gibi büyük modellerin daha hafif donanımlarda çalıştırılabilmesini sağlayarak açık kaynak AI ekosisteminde erişilebilirliği artırıyor; geliştiriciler ise kod tabanındaki bu tür optimizasyonları yeni modeller için bir şablon olarak kullanabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/ACuw8by2Ty5fRyWZdhAm6eQvh0OY5RS7QghlJdb80Ok.png?width=640&crop=smart&auto=webp&s=5ae6c7553d32138cb7f51e08dc2714eb5c63a720",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xdmek0/qwen4exp_build_the_qsa_selection_without_the_kq/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-23T18:43:46.000Z",
+  "slug": "qwen4exp-build-the-qsa-selection-without-the-kq-mask-by-sanm"
+}
