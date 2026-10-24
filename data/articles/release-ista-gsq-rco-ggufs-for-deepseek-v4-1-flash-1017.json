@@ -1,0 +1,87 @@
+{
+  "baslik_tr": "ISTA GSQ-RCO GGUF'ları DeepSeek-V4.1-Flash-1017 için yayınlandı",
+  "ozet_tr": "ISTA Deep Algorithms and Systems Lab, 763.2 milyar parametreli DeepSeek-V4.1-Flash-1017 modelini 1.75‑2.25 bit/weight aralığında GSQ ve RCO teknikleriyle quantize edilmiş üç GGUF dosyası olarak sundu. 12 GB VRAM'li tek bir GPU’da çalıştırılabilen bu sürüm, düşük bit genişliğinde bile temel modelin performansını %98,7’ye kadar koruyor.",
+  "detayli_icerik_tr": "ISTADASLab, DeepSeek-V4.1-Flash-1017 modelini Gumbel‑Softmax Quantization (GSQ) ve Riemannian Constrained Optimization (RCO) yöntemleriyle post‑training aşamasında sıkıştırdı. Model, 384 yönlendirilmiş uzman katmanına sahip bir sparse mixture‑of‑experts mimarisiyle 6 aktif uzmanı token başına çalıştırıyor ve 1 M token bağlam penceresine sahip. Quantize edilmiş sürümler FP8 yoğun ağırlıklar ve FP4 yönlendirilmiş uzmanlar içeriyor.\n\nÜç farklı bit‑genişliği seçeneği sunuluyor: IQ1_M (1.75 bpw, 120.7 GB), IQ2_XXS (2.00 bpw, 138.2 GB) ve IQ2_XS (2.25 bpw, 155.2 GB). Ortak bir Engram dosyası (110.6 GB) tüm sürümler için tek seferde indiriliyor ve disk üzerinde memory‑mapped olarak kullanılabiliyor. Her bir yapı, tek bir 12 GB NVIDIA GPU’da Strata çerçevesiyle çalıştırılabiliyor; llama.cpp henüz DeepSeek‑V4.1'i desteklemediği için GGUF dosyaları bu ortamda kullanılmalı.\n\nBenchmark sonuçları, 2.00 bpw seviyesindeki IQ2_XXS sürümünün AIME25, GPQA‑Diamond ve LiveCodeBench v6 testlerinde temel modelle %100 eşleştiğini gösteriyor. IQ1_M sürümü ise AIME25'de %100, GPQA‑Diamond'da %88.38 (baz model %90.91) ve LiveCodeBench v6'da %88.57 (baz model %89.71) puanları alarak görev ortalamasında %98.7 performans koruması sağladı. Bu sonuçlar, düşük bit‑genişliğinde bile yüksek doğruluk elde edilebileceğini kanıtlıyor.\n\nModelin açık kaynak kodları ve akademik makaleleri de paylaşılmış; GSQ için arXiv 2604.18556 ve RCO için arXiv 2605.00649 referansları bulunuyor. Kullanıcılar, tek tıkla kurulum ve OpenAI‑uyumlu yerel uç nokta sağlayan Strata aracılığıyla modelleri deneyebilir, ayrıca yeni quantize istekleri de iletebilirler.",
+  "onemli_maddeler": [
+    "DeepSeek-V4.1-Flash-1017, 763.2 B parametreli sparse MoE modeli tek bir 12 GB GPU’da çalıştırılabilir.",
+    "GSQ ve RCO teknikleri sayesinde 1.75‑2.25 bpw aralığında %98,7’ye kadar temel model performansı korunuyor.",
+    "IQ2_XXS (2.00 bpw) sürümü, AIME25, GPQA‑Diamond ve LiveCodeBench v6 testlerinde %100 eşdeğer sonuç veriyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Büyük ölçekli bir dil modelinin düşük bit‑genişliğinde quantize edilerek tek GPU’da çalıştırılabilmesi, araştırma ve üretim ortamlarında maliyet ve enerji verimliliği açısından kritik bir adım oluşturuyor.",
+  "etiketler": [
+    "DeepSeek",
+    "GSQ",
+    "RCO",
+    "quantization",
+    "GGUF"
+  ],
+  "anilan_modeller": [
+    "DeepSeek-V4.1-Flash-1017"
+  ],
+  "yorum_tr": "Bu yayın, yüksek parametreli modellerin düşük donanım gereksinimleriyle erişilebilir olmasını sağlayarak geliştiricilerin ve araştırmacıların deneme maliyetlerini düşürüyor. Performans kaybının minimal olması, üretim ortamlarında da doğrudan kullanılabilirliğini artırıyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "DeepSeek-V4.1-Flash-1017 IQ1_M (1.75 bpw)",
+      "benchmark": "AIME25",
+      "skor": 100,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "reasoning effort 50",
+      "kaynak_metinden_alinti": "IQ1_M (1.75 bpw, 120.7 GB backbone): AIME25 100.00"
+    },
+    {
+      "model": "DeepSeek-V4.1-Flash-1017 IQ1_M (1.75 bpw)",
+      "benchmark": "GPQA-Diamond",
+      "skor": 88.38,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "reasoning effort 50",
+      "kaynak_metinden_alinti": "GPQA-Diamond 88.38 against 90.91"
+    },
+    {
+      "model": "DeepSeek-V4.1-Flash-1017 IQ1_M (1.75 bpw)",
+      "benchmark": "LiveCodeBench v6",
+      "skor": 88.57,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "reasoning effort 50",
+      "kaynak_metinden_alinti": "LiveCodeBench v6 88.57 against 89.71"
+    },
+    {
+      "model": "DeepSeek-V4.1-Flash-1017 IQ2_XXS (2.00 bpw)",
+      "benchmark": "AIME25",
+      "skor": 100,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "reasoning effort 50",
+      "kaynak_metinden_alinti": "IQ2_XXS (2.00 bpw, 138.2 GB backbone): AIME25 100.00"
+    },
+    {
+      "model": "DeepSeek-V4.1-Flash-1017 IQ2_XXS (2.00 bpw)",
+      "benchmark": "GPQA-Diamond",
+      "skor": 90.91,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "reasoning effort 50",
+      "kaynak_metinden_alinti": "GPQA-Diamond 90.91"
+    },
+    {
+      "model": "DeepSeek-V4.1-Flash-1017 IQ2_XXS (2.00 bpw)",
+      "benchmark": "LiveCodeBench v6",
+      "skor": 89.71,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "reasoning effort 50",
+      "kaynak_metinden_alinti": "LiveCodeBench v6 89.71"
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/nak9y6wchdxh1.png?width=140&height=105&auto=webp&s=dc1ca9df8814dfe35184874cfdc4527c17f2e9a8",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xe2wg8/release_ista_gsqrco_ggufs_for_deepseekv41flash1017/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-24T08:05:17.000Z",
+  "slug": "release-ista-gsq-rco-ggufs-for-deepseek-v4-1-flash-1017"
+}

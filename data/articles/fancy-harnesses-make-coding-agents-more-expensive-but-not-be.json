@@ -1,0 +1,56 @@
+{
+  "baslik_tr": "Kodlama ajanı harness'leri maliyeti artırıyor, performansı iyileştirmiyor: Çalışma buldu",
+  "ozet_tr": "Shandong Üniversitesi'nden iki araştırmacı, aynı dil modelini farklı kodlama ajanı harness'leriyle (Claude Code, OpenCode, mini‑SWE‑agent) çalıştırarak, harness değişiminin sonuçları yalnızca bir yeniden çalıştırma kadar etkilediğini ve maliyetin üç katına kadar çıkabildiğini gösterdi. Açıkça, OpenCode dışındaki harness'ler performans açısından birbirine eşdeğer, ancak sistem istemi ve araç tanımları token tüketimini büyük ölçüde artırıyor.",
+  "detayli_icerik_tr": "Araştırmacılar, bir kodlama ajanının bir dil modelini, sistem istemini, araçları ve bağlam yönetimini birleştirerek kod deposu içinde çalışmasını sağlayan bir \"harness\" ile çalıştığını belirtti. Claude Code, OpenCode ve mini‑SWE‑agent gibi yeni harness'ler her gün piyasaya sürülürken, lider panolar bu harness'leri serbestçe karıştırıyor. Liu ve Han, model sabit tutulduğunda harness'in gerçek etkisini ölçmek için beş modeli (Qwen3.6, Qwen3.8, Deepseek‑V4‑Flash, GLM‑5.3‑Flash ve HY4‑Preview) üç harness üzerinden test etti.\n\nTestler, SWE‑bench Verified veri setindeki en zor 45 görev ve ek olarak 447 daha geniş görev üzerinden yapıldı. Sonuçlar, en zor 45 görevde harness'ler arasında sadece iki‑beş görevlik fark bulunurken, aynı kurulumun iki kez tekrarlanması bile üç görevlik bir fark yaratıyordu. Büyük görev havuzunda Claude Code ve mini‑SWE‑agent arasındaki fark iki puanın altında kalırken, OpenCode diğer iki harness'ten dokuz puana kadar geride kaldı. Bu farkın büyük bir kısmı, OpenCode'un çıktı limitine erken ulaşması ve modelin adımın ortasında durmasıyla açıklanabiliyordu.\n\nMaliyet açısından ise fark daha belirgindi. Aynı model, aynı görev ve aynı fiyat listesi kullanıldığında, bir görev için harcanan token sayısı harness'e göre iki‑üç katına çıkabiliyor. Claude Code'un sistem istemi yaklaşık 16.600 token iken, OpenCode yaklaşık 7.000 token ve mini‑SWE‑agent ise 1.000 tokenın altında. Bu durum, GLM‑5.3‑Flash modeliyle Claude Code'un maliyetinin 1.81 yuan, OpenCode'un ise 0.56 yuan olmasına yol açtı. Token maliyetindeki bu artış, modelin aynı performansı vermesine rağmen toplam harcamayı önemli ölçüde yükseltiyor.\n\nAraştırmacılar, harness tasarımının çoğu zaman sadece maliyet artırdığını, geçerli bir performans artışı sağlamadığını vurguluyor. Tek bir istisna, \"Extended Thinking\" özelliğinin etkinleştirilmesiyle ortaya çıktı; bu özellik devre dışı bırakıldığında bazı modeller (örneğin HY4‑Preview) performans kaybı yaşadı. Çalışma, aynı zamanda Terminal‑Bench 2.1 üzerinde de benzer bir desen gözlemlendi ve sonuçların genellenebilirliğini destekledi. Sonuç olarak, yazarlar her harness karşılaştırmasıyla birlikte aynı kurulumun bir yeniden çalıştırmasını da yayınlamayı öneriyor.",
+  "onemli_maddeler": [
+    "Yeni harness'ler performans açısından birbirinden çok az fark gösteriyor; sonuçlar bir yeniden çalıştırma kadar değişken.",
+    "Sistem istemi ve araç tanımları token tüketimini iki‑üç kat artırıyor, bu da maliyeti üç katına kadar çıkarıyor.",
+    "OpenCode, diğer iki harness'e göre büyük bir maliyet avantajı sağlasa da, geçerlilik açısından 9 puana kadar geride kalıyor."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "Araştırma, kodlama ajanı geliştirmelerinde yaygın olarak kullanılan harness'lerin gerçek faydasını sorgulayarak maliyet‑performans dengesini yeniden değerlendirmeye zorlayıcı bir bulgu sunuyor.",
+  "etiketler": [
+    "coding agents",
+    "harness",
+    "SWE-bench",
+    "token cost",
+    "AI benchmarking"
+  ],
+  "anilan_modeller": [
+    "Qwen3.6",
+    "Qwen3.8",
+    "Deepseek-V4-Flash",
+    "GLM-5.3-Flash",
+    "HY4-Preview",
+    "Claude Opus 5"
+  ],
+  "yorum_tr": "Bu bulgular, geliştiricilerin yeni ve karmaşık harness'lere yatırım yapmadan önce maliyet‑fayda analizine odaklanması gerektiğini gösteriyor; aynı modelle basit bir harness kullanmak, bütçeyi korurken performansı koruyabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GLM-5.3-Flash",
+      "benchmark": "cost per trial (yuan) Claude Code",
+      "skor": 1.81,
+      "birim": "yuan",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "With GLM-5.3-Flash, Claude Code costs nearly twice as much as mini-SWE-agent. With GLM-5.3-Flash, a single trial in Claude Code costs 1.81 yuan..."
+    },
+    {
+      "model": "OpenCode",
+      "benchmark": "cost per trial (yuan) OpenCode",
+      "skor": 0.56,
+      "birim": "yuan",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "With GLM-5.3-Flash, a single trial in Claude Code costs 1.81 yuan versus 0.56 yuan in OpenCode."
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/10/harness-buys-tokens-nano-banana-pro.jpg",
+  "url": "https://the-decoder.com/fancy-harnesses-make-coding-agents-more-expensive-but-not-better-study-finds/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-24T09:21:39.000Z",
+  "slug": "fancy-harnesses-make-coding-agents-more-expensive-but-not-be"
+}
