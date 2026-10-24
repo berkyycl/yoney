@@ -1,0 +1,42 @@
+{
+  "baslik_tr": "Nvidia GPU Performans Kilidini Açan Yeni Yöntem RTX 3080 20GB'de %20+ Prefill Hız Artışı Sağladı",
+  "ozet_tr": "Zaggita tarafından geliştirilen GPU performans kilidi açma yöntemi, Çin versiyonu RTX 3080 20 GB kartlarda önceden doldurma (prefill) hızını %20‑30 oranında artırdı. Testler, aynı donanımda kilitli ve kilitsiz sürümler arasındaki TTFT ve prefilling token/s oranlarını karşılaştırarak net bir kazanç gösterdi.",
+  "detayli_icerik_tr": "Nvidia, tüketici sınıfı GPU'larda AI çalıştırmak için gerekli bazı donanım talimatlarını kısıtlayarak compute hızını sınırlamıştı. Zaggita'nın yeni \"unlock\" yöntemi bu kısıtlamayı kaldırıyor ve özellikle Çin pazarına yönelik RTX 3080 20 GB kartlarda belirgin bir performans artışı sağlıyor.\n\nTest ortamı iki adet RTX 3080 20 GB kartı, Threadripper 1920X CPU ve PCIe 3.0 x16 bağlantısı üzerinden kuruldu. Kartlar 240 W güç sınırına çekildi, Proxmox 9.2.3, Linux kernel 6.14.11-9-pve ve Nvidia sürücüsü 610.57.04 (CUDA 13.3) kullanıldı. Inference için vLLM 0.32.0, Debian 13 LXC konteyneri içinde tensor parallel (2 GPU) ve çeşitli optimizasyonlar (FLASHINFER, fp8 KV cache, MTP) etkinleştirildi.\n\nBenchmark sonuçları, prefilling aşamasında token/s hızının kilitli sürümde 967‑562 tok/s iken unlock sonrası 1 168‑723 tok/s seviyelerine çıktığını gösterdi; bu da %20.8‑%28.6 arasında bir artış demek. Decode (token üretim) adımlarında ise hızda %0‑1 değişim görülmedi. Testler sırasında hafif termal throttling yaşanmış, kartlar 1750 MHz'e düşmüş; daha iyi soğutma ile ek %10 performans artışı mümkün.\n\nBu sonuçlar, tüketici sınıfı GPU'larıyla büyük dil modelleri çalıştıran araştırmacılar ve geliştiriciler için maliyet etkin bir yol sunuyor. Aynı zamanda Nvidia'nın sınırlama politikalarına karşı topluluk temelli bir çözümün ne kadar etkili olabileceğini gösteriyor.",
+  "onemli_maddeler": [
+    "Zaggita'nın unlock yöntemi RTX 3080 20 GB kartlarda prefilling hızını %20‑30 artırdı.",
+    "Test ortamı iki RTX 3080, Threadripper 1920X ve vLLM 0.32.0 ile tensor parallel 2 GPU olarak yapılandırıldı.",
+    "Decode adımlarında hız değişikliği görülmedi; performans artışı tamamen prefilling aşamasına odaklandı."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Consumer seviyesindeki RTX 3080 20 GB kartların AI hesaplamalarında yaşadığı performans sınırlaması, yeni unlock sayesinde %20‑30 prefilling hızı artışı elde edildi; bu, geniş model çalıştıran geliştiriciler ve araştırmacılar için önemli bir kazanç.",
+  "etiketler": [
+    "Nvidia",
+    "RTX3080",
+    "AI",
+    "vLLM",
+    "GPU Unlock"
+  ],
+  "anilan_modeller": [
+    "Swift-1.5-Qwen3.8-27B-AWQ-INT4"
+  ],
+  "yorum_tr": "Bu kilit açma yöntemi, düşük maliyetli tüketici GPU'larıyla büyük dil modelleri çalıştırmak isteyen geliştiricilere performans açısından yeni bir seçenek sunuyor; aynı zamanda topluluk temelli optimizasyonların endüstri üzerindeki etkisini artırıyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Swift-1.5-Qwen3.8-27B-AWQ-INT4",
+      "benchmark": "Prefill token per second (prompt length 261 k tokens)",
+      "skor": 723,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "prompt length 261 k tokens",
+      "kaynak_metinden_alinti": "261 900 ... 562 723 +28.6% ..."
+    }
+  ],
+  "gorsel_url": "https://cdn.mos.cms.futurecdn.net/Ux8svVhiiyQpxRVG3Yb9Z5.jpg",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xdn33h/new_nvidia_unlock_works_on_chinese_3080_20gb_too/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-23T19:09:15.000Z",
+  "slug": "new-nvidia-unlock-works-on-chinese-3080-20gb-too"
+}

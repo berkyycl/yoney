@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "Meta, küçük AI modellerini token yerine ham baytları okuyacak şekilde eğitti; uzun vadede üstün performans vaat ediyor",
+  "ozet_tr": "Meta, yaklaşık 1 Milyar parametreli küçük dil modellerini token yerine ham baytları okuyacak şekilde eğitti ve bu modellerin uzun vadede aynı boyuttaki token‑temelli modellere göre daha iyi performans gösterebileceğini öne sürdü. İlk aşamalarda token modelleri önde olsa da, ek eğitimle bayt modelleri sürekli iyileşerek Llama 3.2 1B ve Gemma 3 1B'yi geride bırakma potansiyeli taşıyor.",
+  "detayli_icerik_tr": "Araştırmacılar, Meta'nın yeni bir çalışma kapsamında, geleneksel token tabanlı dil modelleri yerine ham baytları (tek harf seviyesinde) işleyen modeller geliştirdi. Yaklaşık bir milyar parametreye sahip bu küçük modeller, bazıları token, bazıları ise bayt seviyesinde eğitildi; büyük bir öğretmen modeli olarak Llama 3 8B kullanılarak distilasyon yöntemi uygulandı. Öğretmen modelinin token tabanlı düşünmesi, öğrenci modelinin ise bayt tabanlı çalışması nedeniyle iki temsil biçimi arasında temiz bir çeviri mekanizması geliştirmek zorunlu kıldı.\n\nDeney sonuçları, eğitim sürecinin erken aşamalarında token tabanlı modellerin daha yüksek doğruluk sağladığını gösterdi. Ancak eğitim ilerledikçe token modelleri bir plato seviyesine ulaştı ve performansları duraklarken, bayt modelleri sürekli bir iyileşme gösterdi. Eğitimin mevcut sınırlarını aşan bir eğri uzantısı üzerinden yapılan tahminlerde, bayt modeli Llama 3.2 1B ve Gemma 3 1B gibi aynı ölçekli modelleri birkaç puan farkla geride bırakabilir. Ayrıca bayt modellerinin aynı performansa ulaşması için gereken eğitim verisi miktarı, token modellerine göre yaklaşık altı kat daha azdı.\n\nAraştırmanın sınırlamaları da açıkça belirtildi. \"Daha iyi\" olduğu iddiası, mevcut eğitim verisinin ötesine uzatılan bir tahmine dayanıyor; gerçek deneylerde token modelleri hâlâ bir adım önde. Bayt seviyesinde okuma, bir tokenın ortalama 4‑5 harfe denk gelmesi nedeniyle aynı metni işlemek için yaklaşık beş kat daha fazla adım gerektiriyor ve bu da hesaplama süresini artırıyor. Yine de, özellikle akıllı telefon ve dizüstü bilgisayar gibi sınırlı kaynaklı cihazlarda, aynı model boyutundan daha yüksek kalite elde etme potansiyeli, bu yaklaşımın cazibesini artırıyor. Gelecekte bayt modellerinin hızını token modellerine eşitleyecek optimizasyonların geliştirilmesi, bu alandaki bir sonraki araştırma sorusu olarak öne çıkıyor.",
+  "onemli_maddeler": [
+    "Meta, 1 B parametreli küçük modelleri token yerine ham baytları okuyacak şekilde eğitti.",
+    "Eğitim sürecinde distilasyon kullanıldı; öğretmen model token, öğrenci model ise bayt tabanlı.",
+    "Bayt modelleri daha az veriyle aynı seviyeye ulaşırken, uzun vadede token modellerini geride bırakma potansiyeli gösterdi."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "Küçük ölçekli modellerin verimliliğini artırma ve token tabanlı yaklaşımlara alternatif sunma yönündeki bulgular, mobil ve kenar cihazlarda AI kullanımını doğrudan etkileyebilecek nitelikte.",
+  "etiketler": [
+    "Meta",
+    "bayt düzeyi model",
+    "distilasyon",
+    "Llama 3",
+    "küçük modeller"
+  ],
+  "anilan_modeller": [
+    "Llama 3 8B",
+    "Llama 3.2 1B",
+    "Gemma 3 1B"
+  ],
+  "yorum_tr": "Bu araştırma, token tabanlı yaklaşımların hâlâ geçerli olduğunu kabul ederken, bayt seviyesinde modelleme sayesinde veri verimliliği ve kalite artışı sağlanabileceğini gösteriyor. Geliştiriciler, özellikle kaynak kısıtlı cihazlarda daha etkili modeller üretmek için bu yöntemi değerlendirebilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/5hqehcnkyexh1.jpeg?width=640&crop=smart&auto=webp&s=a9f9317f5a8000a9cce96a96431c57ff5c91f3ab",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xe88ja/meta_trained_small_ai_models_to_read_raw_bytes/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-24T13:08:49.000Z",
+  "slug": "meta-trained-small-ai-models-to-read-raw-bytes-instead-of-to"
+}

@@ -1,0 +1,62 @@
+{
+  "baslik_tr": "PCIe x1 sınırlarını zorlayan lvgale, 27B, 9B ve 2B LLM'leri aynı anda çalıştırıyor",
+  "ozet_tr": "Karmaşık bir donanım topluluğu olan lvgale, farklı GPU üreticileri ve düşük bant genişliğine sahip PCIe x1/x2 hatları üzerinden aynı anda üç farklı büyüklükte LLM'yi çalıştırarak dikkat çekici bir performans elde etti. Slipstream adlı özel orkestrasyon motoru ve Vulkan tabanlı Flash Attention sayesinde 27B model 3.82 t/s, 9B model 4.75 t/s ve 2B model 12.47 t/s hızları yakalandı.",
+  "detayli_icerik_tr": "Reddit topluluğu LocalLLaMA'da paylaşılan bir gönderide, kullanıcı FieldMouse-AI, \"lvgale\" adlı bir deneme sunucusunun olağanüstü donanım yapısını ve elde ettiği sonuçları detaylandırdı. Sunucu, Intel Core i7-6700K işlemciye ve dört farklı GPU'ya (AMD RX 580, AMD RX 570, NVIDIA GTX 1660 Super, NVIDIA GTX 1070) sahip; bu GPU'lar PCIe x16, x1, x2 ve x1 hatları üzerinden bağlanmış durumda. Bu heterojen ve düşük bant genişliğine sahip yapı, aktivasyonların farklı mimariler arasında geçiş yapmasını zorlaştırıyor.\n\nYazılım tarafında, Slipstream adlı özel bir Python orkestrasyon motoru (Nuitka ile derlenmiş) kullanılıyor. Slipstream, karışık üretici Vulkan arka planını Flash Attention desteğiyle birleştirerek, parçalı topolojide kararlılığı sağlıyor. Bu sayede aynı anda üç farklı görsel LLM modeli çalıştırılabiliyor: Qwen3.8 27B-vision, Qwen3.5 9B-vision ve Qwen3.5 2B-vision.\n\nPerformans ölçümlerine göre, 27B model 3.82 token/s, 9B model 4.75 token/s ve 2B model 12.47 token/s hızları elde edildi. Özellikle 27B modelin düşük bant genişliğine rağmen çökmeden çalışması, Vulkan sürücüsü stabilitesi açısından büyük bir başarı olarak vurgulandı. 2B modelin modern bir laptop iGPU'sunda biraz daha hızlı çalışması, bellek birleştirme avantajını gösteriyor.\n\nBu deney, düşük maliyetli ve heterojen donanım ortamlarında büyük ölçekli LLM'lerin nasıl verimli bir şekilde koordine edilebileceğine dair pratik bir örnek sunuyor. Slipstream ve benzeri açık kaynaklı orkestrasyon çözümlerinin, gelecekte daha fazla araştırmacı ve geliştiricinin benzer yapılandırmalara yönelmesini teşvik etmesi bekleniyor.",
+  "onemli_maddeler": [
+    "lvgale, farklı üreticilerin GPU'larını PCIe x1/x2 hatları üzerinden birleştirerek 27B, 9B ve 2B LLM'leri aynı anda çalıştırıyor.",
+    "Slipstream adlı özel Python orkestrasyon motoru, Vulkan ve Flash Attention entegrasyonu sayesinde düşük bant genişliğinde kararlılığı sağlıyor.",
+    "Elde edilen token/s değerleri: 27B model 3.82 t/s, 9B model 4.75 t/s, 2B model 12.47 t/s."
+  ],
+  "kategori": "benchmark",
+  "onem": 3,
+  "onem_gerekce": "Heterojen donanım ve düşük bant genişliği ortamlarında büyük LLM'lerin aynı anda çalıştırılabilmesi, araştırma topluluğu için ilgi çekici bir teknik gösterge sunuyor ancak geniş ölçekli ticari uygulamalara doğrudan etkisi sınırlı.",
+  "etiketler": [
+    "PCIe",
+    "LLM",
+    "Vulkan",
+    "Slipstream",
+    "Benchmark"
+  ],
+  "anilan_modeller": [
+    "Qwen3.8 27B-vision",
+    "Qwen3.5 9B-vision",
+    "Qwen3.5 2B-vision"
+  ],
+  "yorum_tr": "Bu sonuçlar, düşük maliyetli ve karışık GPU altyapılarında büyük dil modellerinin verimli bir şekilde koordine edilebileceğini gösteriyor; geliştiriciler benzer yaklaşımları deneyerek donanım kısıtlamalarını aşabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen3.8 27B-vision",
+      "benchmark": "tokens per second",
+      "skor": 3.82,
+      "birim": "t/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "concurrent inference",
+      "kaynak_metinden_alinti": "Qwen3.8:27b-vision: 3.82 t/s."
+    },
+    {
+      "model": "Qwen3.5 9B-vision",
+      "benchmark": "tokens per second",
+      "skor": 4.75,
+      "birim": "t/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "concurrent inference",
+      "kaynak_metinden_alinti": "Qwen3.5:9b-vision: 4.75 t/s."
+    },
+    {
+      "model": "Qwen3.5 2B-vision",
+      "benchmark": "tokens per second",
+      "skor": 12.47,
+      "birim": "t/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "concurrent inference",
+      "kaynak_metinden_alinti": "Qwen3.5:2b-vision: 12.47 t/s."
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/nzf091si7axh1.jpeg?width=140&height=105&auto=webp&s=299f9c265c847e5a2fcea9cd812851db76d18fd7",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xdq2cj/pushing_pcie_x1_to_the_limit_lvgale_concurrently/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-23T21:05:21.000Z",
+  "slug": "pushing-pcie-x1-to-the-limit-lvgale-concurrently-serving-27b"
+}

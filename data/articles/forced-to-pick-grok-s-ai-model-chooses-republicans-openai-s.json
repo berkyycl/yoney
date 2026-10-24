@@ -1,0 +1,63 @@
+{
+  "baslik_tr": "Grok modeli Cumhuriyetçileri, OpenAI GPT-6.1 Sol ise Demokratları tercih ediyor",
+  "ozet_tr": "Convovo'nun yeni araştırması, SpaceXAI'nin Grok 4.7 modelinin sorulan seçim sorularına %92 oranla Cumhuriyetçi aday önerdiğini, OpenAI'nin GPT‑6.1 Sol modelinin ise %97 oranla Demokrat aday önerdiğini ortaya koydu. 500'den fazla yarışta iki modelin görüşleri %10'un altında örtüşürken, bu durum AI tabanlı seçim danışmanlığının tarafsızlığına dair ciddi soru işaretleri doğuruyor.",
+  "detayli_icerik_tr": "TechCrunch AI tarafından rapor edilen çalışmada, Convovo adlı araştırma stüdyosu, Grok 4.7 ve GPT‑6.1 Sol modellerine \"Kim için oy vermeliyim?\" sorusunu doğrudan ve alternatif sunmadan sordu. Model API'leri üzerinden alınan yanıtlar, Grok'un %92'sinde Cumhuriyetçi, GPT‑6.1'in %97'sinde ise Demokrat aday önerdiğini gösterdi. Bu sonuçlar, iki modelin sadece %10'dan az bir oranda aynı adayı önerdiği anlamına geliyor.\n\nAraştırmacılar, tüketici uygulamalarının bu soruya yanıt vermeyi reddettiğini, ancak API üzerinden yapılan sorgularda açık bir tercih ortaya çıktığını vurguladı. OpenAI sözcüsü, ChatGPT'nin politik konularda nesnel tasarlandığını ve API'nin bu deneyimi yansıtmadığını belirtti. SpaceXAI ise yorum yapmadı.\n\nModelin tercihlerini etkileyen faktörler de incelendi. Grok, yanıtlarında %39'unda Hristiyan muhafazakar seçmen rehberi, %23'ünde Turning Point Action ve %41'inde X gibi muhafazakar kaynakları kullandı. GPT‑6.1 ise Wikipedia, Associated Press, Axios ve Reddit gibi daha centristik ve haber odaklı kaynaklara yöneldi. Ayrıca Grok'un önerileri, özellikle Cumhuriyetçi adayın skandal içinde olduğu durumlarda Demokrat yönüne kayıyordu.\n\nİlginç bir bulgu, Grok API'sine gönderilen her isteğin yaklaşık 1.240 gizli token içerdiği ve bu tokenların modelin davranışını yönlendiren \"gizli talimatlar\" olabileceği. İnternet araması kapatıldığında ise Grok'un taraflılığı kaybolurken, GPT‑6.1'in Demokrat eğilimi ağırlıklı olarak ağırlıklarında (weights) kodlanmış gibi göründü. Çalışma, yaklaşan Kasım 3 seçimleri öncesinde AI tabanlı bilgi hizmetlerinin politik önyargılarını tartışmaya açtı.",
+  "onemli_maddeler": [
+    "Grok 4.7, zorunlu seçim sorularına %92 oranla Cumhuriyetçi aday önerdi.",
+    "OpenAI GPT‑6.1 Sol, aynı soruya %97 oranla Demokrat aday önerdi.",
+    "İki modelin önerileri 500'den fazla yarışta %10'un altında örtüştü.",
+    "Grok API'sine eklenen 1.240 gizli token, modelin yönlendirilmesinde rol oynayabilir."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "AI modellerinin seçim tavsiyelerinde gösterdiği güçlü partizan eğilim, demokratik süreçlerde bilgi güvenilirliğini tehdit ediyor ve geliştiriciler ile düzenleyiciler için acil politika ve teknik müdahale gerektiriyor.",
+  "etiketler": [
+    "AI bias",
+    "political bias",
+    "LLM",
+    "midterm elections",
+    "GPT-6"
+  ],
+  "anilan_modeller": [
+    "Grok 4.7",
+    "GPT-6.1 Sol",
+    "ChatGPT"
+  ],
+  "yorum_tr": "Bu bulgular, geliştiricilerin API üzerinden sunulan modellerde gizli talimatların ve veri seçimlerinin politik eğilimleri şekillendirebileceğini gösteriyor; hem kullanıcıların hem de düzenleyicilerin şeffaflık ve denetim mekanizmalarını güçlendirmesi kaçınılmaz.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Grok 4.7",
+      "benchmark": "Republican recommendation rate",
+      "skor": 92,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "forced choice question via API",
+      "kaynak_metinden_alinti": "SpaceXAI’s Grok 4.7 recommended the Republican candidate in 92% of its answers"
+    },
+    {
+      "model": "GPT-6.1 Sol",
+      "benchmark": "Democrat recommendation rate",
+      "skor": 97,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "forced choice question via API",
+      "kaynak_metinden_alinti": "OpenAI’s GPT-6.1 Sol picked the Democrat in 97%"
+    },
+    {
+      "model": "Both models",
+      "benchmark": "Agreement rate across races",
+      "skor": 10,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "across nearly 500 races",
+      "kaynak_metinden_alinti": "Across nearly 500 races, the two models agreed less than 10% of the time"
+    }
+  ],
+  "gorsel_url": "https://techcrunch.com/wp-content/uploads/2026/10/GettyImages-1777713346.jpg?resize=1200,900",
+  "url": "https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats/",
+  "source": "TechCrunch AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-24T15:00:00.000Z",
+  "slug": "forced-to-pick-grok-s-ai-model-chooses-republicans-openai-s"
+}
