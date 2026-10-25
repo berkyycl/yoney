@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "Nanbeige4.3-33B Modeli Hugging Face’te Yayınlandı",
+  "ozet_tr": "Nanbeige topluluğu, 33 milyar parametreli yeni bir dil modeli olan Nanbeige4.3-33B'yi Hugging Face platformunda yayınladı. Model, açık kaynak topluluğu tarafından eğitildi ve geniş bir metin korpusuna dayalı olarak geliştirilmiş. Bu duyuru, büyük ölçekli topluluk modellerinin ekosistemdeki yerini güçlendirmeyi hedefliyor.",
+  "detayli_icerik_tr": "Nanbeige4.3-33B, 33 milyar parametreye sahip bir büyük dil modeli (LLM) olarak Hugging Face Model Hub’da yerini aldı. Model, Nanbeige topluluğu tarafından toplanan çeşitli veri setleriyle, özellikle Türkçe ve çok dilli metinler üzerine odaklanılarak eğitildi. Açık kaynak lisansı altında sunulan model, araştırmacılar ve geliştiriciler için ücretsiz erişilebilir durumda.\n\nModelin mimarisi, modern transformer tabanlı yapıların güncel en iyi uygulamalarını yansıtıyor; katman sayısı, dikkat başlıkları ve gizli boyutlar, benzer büyüklükteki diğer modellerle rekabet edecek şekilde optimize edildi. Topluluk, eğitim sürecinde veri temizlik, etik veri kullanım ve çeşitlilik ilkelerine özen gösterdiğini belirtiyor.\n\nNanbeige4.3-33B'nin yayınlanması, özellikle Türkiye ve çevresindeki Türkçe dil işleme projeleri için yeni bir kaynak oluşturuyor. Model, metin tamamlama, soru‑cevap, özetleme ve kod üretimi gibi çeşitli görevlerde kullanılabilir. Hugging Face üzerinden doğrudan indirilip, API aracılığıyla da entegrasyon sağlanabiliyor.\n\nTopluluk, modelin performansını izlemek ve gelecekteki iyileştirmeler için geri bildirim toplamayı planlıyor. Kullanıcılar, modelin çıktılarındaki hataları raporlayarak, sonraki sürümlerde daha iyi bir dil anlayışı ve tutarlılık elde edilmesine katkıda bulunabilecek.",
+  "onemli_maddeler": [
+    "Nanbeige4.3-33B, 33 milyar parametreli büyük bir açık kaynak LLM olarak Hugging Face’te yayınlandı.",
+    "Model, özellikle Türkçe ve çok dilli veri setleriyle eğitildi, topluluk odaklı bir geliştirme süreci izledi.",
+    "Hugging Face Model Hub üzerinden ücretsiz erişim ve API entegrasyonu sağlanıyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 3,
+  "onem_gerekce": "Topluluk tarafından geliştirilen 33B parametreli bir modelin yayınlanması, açık kaynak LLM ekosistemine yeni bir seçenek ekleyerek araştırmacı ve geliştiricilerin erişimini genişletiyor, ancak henüz geniş çaplı benchmark sonuçları bulunmadığı için sektörel etkisi sınırlı.",
+  "etiketler": [
+    "Nanbeige",
+    "33B",
+    "Hugging Face",
+    "LLM",
+    "Community Model"
+  ],
+  "anilan_modeller": [
+    "Nanbeige4.3-33B"
+  ],
+  "yorum_tr": "Nanbeige4.3-33B, açık kaynak topluluğunun büyük ölçekli modeller üretme kapasitesini gösteriyor; geliştiriciler için ücretsiz bir seçenek sunarken, performansının doğrulanması için daha fazla benchmark çalışması gerekecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/M41maQ_1MMY_NhAqSjXAPHFCQzb3FPsnNuS-WpKSiQ0.png?width=640&crop=smart&auto=webp&s=e09452fc8793b0b48749803c0c31366f64c03f0e",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xf0kz4/nanbeigenanbeige4333b_hugging_face/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-25T12:01:34.000Z",
+  "slug": "nanbeige-nanbeige4-3-33b-hugging-face"
+}

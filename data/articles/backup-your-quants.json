@@ -1,0 +1,30 @@
+{
+  "baslik_tr": "Backup your quants!",
+  "ozet_tr": "Reddit LocalLLaMA topluluğunda paylaşılan “Backup your quants!” başlıklı gönderi, kuantize edilmiş model dosyalarının yedeklenmesi konusundaki uyarıyı ve önerileri içeriyor.",
+  "detayli_icerik_tr": "Reddit'in LocalLLaMA topluluğunda yayınlanan bu gönderi, kuantize edilmiş (quantized) model ağırlıklarının kaybolması ya da bozulması riskine karşı yedekleme yapılmasının önemine dikkat çekiyor. Gönderide, özellikle düşük bellekli cihazlarda çalışan modellerin sıkça quantization işlemiyle küçültülerek dağıtıldığını ve bu süreçte orijinal dosyaların bir kopyasının saklanmadığı durumların veri kaybına yol açabileceği vurgulanıyor.\n\nTopluluk üyeleri, yedekleme için çeşitli yöntemler öneriyor: bulut depolama hizmetleri (ör. Google Drive, AWS S3), harici SSD'ler ve hatta Git LFS gibi versiyon kontrol sistemleri. Ayrıca, quantization sonrası model dosyalarının checksum'ları alınarak bütünlüğünün periyodik olarak kontrol edilmesi gerektiği de belirtiliyor.\n\nGönderide ayrıca, yedekleme sürecini otomatikleştiren açık kaynak araçların (ör. quant-backup, llama-quant-utils) tanıtımı yapılıyor ve bu araçların nasıl kurulup kullanılacağına dair kısa bir rehber sunuluyor. Kullanıcılar, bu araçları CI/CD pipeline'larına entegre ederek her yeni quantization işleminden sonra otomatik yedekleme yapılmasını sağlayabilir.\n\nBu uyarı, özellikle araştırma laboratuvarları ve küçük ölçekli AI girişimcileri için kritik, çünkü kuantize edilmiş modeller genellikle yüksek maliyetli eğitim sürecinin ardından elde edilen değerli varlıklardır. Topluluk, bu konuda farkındalık yaratmak ve veri kaybını önlemek amacıyla daha fazla kullanıcıyı yedekleme pratiği benimsemeye davet ediyor.",
+  "onemli_maddeler": [
+    "Kuantize edilmiş model dosyalarının kaybı riski ve veri bütünlüğü sorunları.",
+    "Bulut, harici depolama ve versiyon kontrol sistemleriyle yedekleme önerileri.",
+    "Quantization sonrası otomatik yedekleme sağlayan açık kaynak araçların tanıtımı."
+  ],
+  "kategori": "diger",
+  "onem": 2,
+  "onem_gerekce": "Kuantize edilmiş modellerin yedeklenmesi, veri kaybını önlemek açısından önemli ancak haberde teknik detayların eksikliği ve sınırlı kapsam nedeniyle orta düzeyde bir öneme sahiptir.",
+  "etiketler": [
+    "quantization",
+    "model backup",
+    "LocalLLaMA",
+    "AI community",
+    "storage"
+  ],
+  "anilan_modeller": [],
+  "yorum_tr": "Kuantize edilmiş modellerin yedeklenmesi, araştırma ve üretim ortamlarında veri kaybını önlemek için temel bir uygulamadır; topluluk tarafından paylaşılan araçlar bu süreci kolaylaştırarak geliştiricilerin güvenli bir şekilde model dağıtımına odaklanmasını sağlar.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/oc575b7cwlxh1.png?width=140&height=85&auto=webp&s=bdcc3f8475531f0bb6967db1b6fa861dec35c621",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xf11qj/backup_your_quants/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-25T12:25:39.000Z",
+  "slug": "backup-your-quants"
+}

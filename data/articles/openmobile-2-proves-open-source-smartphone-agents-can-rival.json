@@ -1,0 +1,81 @@
+{
+  "baslik_tr": "OpenMobile-2, açık kaynak akıllı telefon ajanlarıyla kapalı modellere rakip çıktı",
+  "ozet_tr": "Nanjing Üniversitesi ve SenseTime araştırmacılarının geliştirdiği OpenMobile-2, 110'dan fazla simüle edilmiş uygulama üzerinde eğitilerek veri miktarından ziyade uygulama çeşitliliğinin başarıyı artırdığını gösterdi. 27 milyar parametreli modeli, gerçek Android cihazlarda SPA‑Bench'te 59.6 puan alarak açık kaynak modeller arasında en yüksek skoru elde etti.",
+  "detayli_icerik_tr": "OpenMobile-2 projesi, açık kaynaklı akıllı telefon ajanlarını, 110'dan fazla simüle edilmiş uygulama ortamında eğiterek, kapalı sistem modellerine yakın performans elde etti. Araştırmacılar, veri miktarını sabit tutup uygulama çeşitliliğini artırmanın başarı oranını %60.7'den %67.5'e çıkardığını gösterdi; bu, veri hacminden ziyade uygulama çeşitliliğinin kritik olduğunu ortaya koyuyor.\n\nİki model (9 milyar ve 27 milyar parametreli) Qwen3.5/3.6 temelli olarak sunuldu; büyük model AndroidWorld'de 79.9 puan, MobileWorld'de 50.4 puan ve gerçek Android cihazlarda SPA‑Bench'te 59.6 puan alarak açık kaynak modeller arasında en yüksek skoru elde etti. Küçük model ise AndroidWorld'de 74 puan topladı.\n\nEğitim ortamı, Çin'de popüler 35 uygulama ve küresel hizmetlerin yeniden inşa edilmesiyle 110+ uygulamayı kapsıyor; her simülasyon otomatik sıfırlanıyor ve ajan sadece ekran görüntüsü alıyor, bu da gerçek kullanıcı deneyimini taklit ediyor. Toplamda yaklaşık 11.600 iş akışı ve 2.000 pratik görev üretildi; Google Gemini 3.1 Pro öğretmen modeli örnekleri sağladı.\n\nDeneysel olarak, 50'den fazla simüle uygulama doğrudan komutlar (ör. \"add to cart\") sunuyor; ajan bu komutları kullandığında görev tamamlama oranı 10.3 puan artıyor ve adım sayısı beş azalıyor. Bu yetenek, eğitim sırasında hedeflenmiş komutlarla pekiştirildi ve araç kullanımına bonus faktörleri eklenerek pekiştirme öğrenmesiyle desteklendi.",
+  "onemli_maddeler": [
+    "Uygulama çeşitliliği, aynı veri bütçesinde başarı oranını %60.7'den %67.5'e yükseltti.",
+    "OpenMobile-2-27B, SPA‑Bench'te 59.6 puan alarak açık kaynak modeller arasında en yüksek skoru elde etti.",
+    "AndroidWorld ve MobileWorld benchmarklarında sırasıyla 79.9 ve 50.4 puanla önceki sürümden büyük sıçrama yaptı.",
+    "Model, 110+ simüle edilmiş uygulama üzerinden 11.600 iş akışı ve 2.000 pratik görevle eğitildi; Gemini 3.1 Pro öğretmen modeli kullanıldı.",
+    "Doğrudan komut ve araç entegrasyonu, görev tamamlama oranını 10.3 puan artırıp adım sayısını beş azalttı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Açık kaynak akıllı telefon ajanları, kapalı sistem modellerine yakın performans göstererek mobil AI ekosisteminde rekabeti artırıyor ve araştırma topluluğunun erişimini genişletiyor.",
+  "etiketler": [
+    "open-source",
+    "smartphone-agent",
+    "benchmark",
+    "AI",
+    "mobile"
+  ],
+  "anilan_modeller": [
+    "OpenMobile-2-9B",
+    "OpenMobile-2-27B"
+  ],
+  "yorum_tr": "OpenMobile-2'nin başarısı, geliştiricilere düşük maliyetli ve şeffaf bir platform sunarak mobil AI uygulamalarının hızla yaygınlaşmasını sağlayacak; kullanıcılar ise daha güvenilir ve özelleştirilebilir akıllı telefon asistanlarından faydalanabilecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "OpenMobile-2-27B",
+      "benchmark": "AndroidWorld",
+      "skor": 79.9,
+      "birim": "points",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "On AndroidWorld, the larger model jumps from 67.1 to 79.9 points"
+    },
+    {
+      "model": "OpenMobile-2-9B",
+      "benchmark": "AndroidWorld",
+      "skor": 74,
+      "birim": "points",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "the smaller one goes from 54.3 to 74"
+    },
+    {
+      "model": "OpenMobile-2-27B",
+      "benchmark": "MobileWorld",
+      "skor": 50.4,
+      "birim": "points",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "the larger model improves from 35.9 to 50.4 points"
+    },
+    {
+      "model": "OpenMobile-2-27B",
+      "benchmark": "SPA-Bench",
+      "skor": 59.6,
+      "birim": "points",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "the larger model climbs from 31.9 to 59.6 points on SPA-Bench"
+    },
+    {
+      "model": "OpenMobile-2-27B",
+      "benchmark": "Unseen App Success Rate",
+      "skor": 67.5,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "increasing the number of apps pushed the success rate on unseen applications from 60.7 to 67.5 percent"
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/10/open-mobile-2-smartphone-app-training-nano-banana-pro.jpg",
+  "url": "https://the-decoder.com/openmobile-2-proves-open-source-smartphone-agents-can-rival-proprietary-models/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-25T06:55:22.000Z",
+  "slug": "openmobile-2-proves-open-source-smartphone-agents-can-rival"
+}

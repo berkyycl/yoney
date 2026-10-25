@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "Google AI Studio, Yönetilen Ajanlar İçin Yeni Hub ve Agent Compute Engine Önizlemesi Hazırlıyor",
+  "ozet_tr": "Google, AI Studio içinde geliştiricilerin otonom ajanları tek bir yerden yönetebileceği bir Managed Agents hub'ı hazırlıyor. Bu hub, ajanlar, ortamlar, kimlik bilgileri, tetikleyiciler ve çalıştırma geçmişi gibi bileşenleri bir araya getirirken, aynı zamanda yeni duyurulan Agent Compute Engine'in mikroVM altyapısını da destekleyecek.",
+  "detayli_icerik_tr": "Google AI Studio, mevcut Gemini API ve AI Studio Playground'da sunulan yeteneklerin üzerine, geliştiricilerin otonom ajanları yapılandırıp izleyebileceği bir Managed Agents bölümü eklemeyi planlıyor. Arayüz, \"Agents\", \"Environments\", \"Credentials\", \"Triggers\" ve \"Runs\" sekmeleriyle ajanların tanımlanması, araçlarla bağlanması, yürütme tetikleyicilerinin ayarlanması ve geçmiş çalıştırmaların incelenmesi gibi işlevleri tek bir panelde topluyor. Bu özelliklerin ne zaman kullanılıma sunulacağı henüz açıklanmadı.\n\nYeni hub, 22 Ekim'de duyurulan Agent Compute Engine hizmetiyle yakından ilişkilendiriliyor. Bu hizmet, ajanları donanım izoleli mikroVM'lerde çalıştırarak kalıcı çalışma alanları, hızlı duraklatma‑devam etme yetenekleri ve düşük gecikmeli ölçeklenebilirlik sağlıyor. Google, ön izleme sürümünün önümüzdeki aylarda kullanılabilir olacağını belirtiyor; ancak AI Studio arayüzünün bu altyapıyla doğrudan entegre olup olmayacağı kesinleşmedi.\n\nGoogle Developer Programı kapsamında, AI Pro abonelerine aylık 10 $ GenAI ve Cloud kredisi, AI Ultra abonelerine ise daha yüksek tutarlarda kredi veriliyor. Bu krediler AI Studio ve bulut hizmetleri kullanımını karşılayabiliyor ve bir yıl içinde kullanılmazsa sona eriyor. Ayrıca, AI Studio projelerinde faturalandırma verilerinin yaklaşık on dakikalık bir gecikme yaşadığı, uzun süren ajan görevlerinde harcama limitlerinin aşılabileceği belirtiliyor; bu da maliyet kontrolü açısından kritik bir nokta.\n\nBu adımlar, Google'ın Anthropic'in Managed Agents platformu ve NVIDIA OpenShell gibi rakip sandbox projeleriyle rekabet etmeyi hedeflediğini gösteriyor. Şirket aynı zamanda Gemini API içinde \"Carbon\" adlı bir iç checkpoint'in güçlü kodlama performansı ile dikkat çektiğini duyurmuş; ancak bu modelin resmi adı ve çıkış tarihi henüz açıklanmadı. OpenAI ise 1 Ekim'de güvenlik nedeniyle kısa bir duraklamanın ardından frontier pekiştirmeli öğrenme eğitimine devam ettiğini belirtti.",
+  "onemli_maddeler": [
+    "Google AI Studio, ajanlar, ortamlar, kimlik bilgileri, tetikleyiciler ve çalıştırma geçmişi gibi bileşenleri tek bir panelde toplayan Managed Agents hub'ı tanıtıyor.",
+    "Agent Compute Engine, mikroVM tabanlı izole ortamlar, kalıcı çalışma alanları ve hızlı pause‑resume özellikleriyle ajanların ölçeklenebilir ve güvenli çalışmasını sağlıyor.",
+    "AI Pro ve AI Ultra abonelerine aylık bulut kredileri sunuluyor; krediler bir yıl içinde kullanılmazsa sona eriyor ve faturalandırma verileri yaklaşık 10 dakikalık gecikme ile raporlanıyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Yönetilen ajan platformu, geliştiricilerin otonom sistemleri daha güvenli ve ölçeklenebilir bir şekilde üretime almasını sağlayarak bulut AI ekosisteminde önemli bir rekabet avantajı yaratıyor.",
+  "etiketler": [
+    "Google AI Studio",
+    "Managed Agents",
+    "Agent Compute Engine",
+    "Gemini",
+    "Bulut Kredileri"
+  ],
+  "anilan_modeller": [
+    "Gemini",
+    "Carbon",
+    "Fable 5.5",
+    "Bell"
+  ],
+  "yorum_tr": "Google'ın bu platform güncellemesi, ajan tabanlı uygulamaların geliştirilmesini ve yönetilmesini kolaylaştırarak hem geliştiricilere hem de işletmelere yeni fırsatlar sunacak. Rekabetin artması, performans ve maliyet verimliliği açısından sektörde inovasyonu tetikleyecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/10/Agents-Google-AI-Studio-10-24-2026_08_09_PM--1-.jpg",
+  "url": "https://www.testingcatalog.com/google-ai-studio-prepares-new-managed-agents-hub/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-25T13:30:58.000Z",
+  "slug": "google-ai-studio-prepares-new-managed-agents-hub"
+}

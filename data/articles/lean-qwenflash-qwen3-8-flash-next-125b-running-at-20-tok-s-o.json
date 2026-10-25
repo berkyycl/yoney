@@ -1,0 +1,62 @@
+{
+  "baslik_tr": "Lean-QwenFlash: 125B Qwen3.8-Flash-Next modeli 16 GB VRAM ve 8 GB RAM’da ~20 tok/s hızla çalışıyor",
+  "ozet_tr": "MaxDev0, Qwen3.8-Flash-Next (125B) modelini doğrudan NVMe SSD üzerinden offload ederek 16 GB VRAM ve sadece 8 GB sistem RAM ile çalıştırabildiğini gösterdi. RTX 4090 ve RTX 3080 laptop gibi farklı donanımlarda 8 k ila 262 k token uzunluğunda bağlamlarda 18‑30 tok/s decode ve 650‑1 627 tok/s prefill hızları elde edildi. Bu sonuçlar, büyük dil modellerinin düşük bellekli makinelerde de verimli kullanılabileceğini kanıtlıyor.",
+  "detayli_icerik_tr": "Reddit'in LocalLLaMA topluluğunda paylaşılan yeni bir deney, Qwen3.8-Flash-Next (125B) modelinin bellek gereksinimlerini dramatik biçimde azaltarak yüksek performans elde edilmesini sağladı. Geleneksel kurulumlarda modelin 24 k uzman (expert) katmanı sistem RAM'inde (48‑64 GB) tutulurken, MaxDev0 bu katmanları doğrudan NVMe SSD'ye offload etti ve sadece 8 GB RAM ve 16 GB VRAM kullandı.\n\nBu yaklaşım, Alibaba'nın Flash-Next mimarisi ve sybil-solutions ekibinin GLM-5.3 için geliştirdiği flash-lite yöntemi temel alıyor. MaxDev0, bu yöntemi Qwen3.8-Flash-Next'e uyarlayarak, RTX 4090 kartında 8 k bağlamda prose metinlerde 28‑33 tok/s, kodda 19‑22 tok/s decode hızları ve 1 080 tok/s prefill performansı elde etti. Daha uzun bağlamlarda (100 k ve 262 k token) ise sırasıyla 20.8‑20.0 tok/s decode ve 1 536‑1 627 tok/s prefill hızları kaydedildi.\n\nRTX 3080 laptop konfigürasyonunda ise 100 k token bağlamda 18‑21 tok/s decode ve 650‑700 tok/s prefill hızları gözlendi; bu da VRAM sınırının 15.5 GB civarında olduğunu gösteriyor. Sonuçlar, büyük modellerin sadece yüksek seviye iş istasyonlarıyla sınırlı olmadığını, orta seviye dizüstü bilgisayarlarla da makul performans alınabileceğini ortaya koyuyor.\n\nProje kodları, model indirme script'leri ve paketleme araçları GitHub'da (https://github.com/MaxDevv/lean-qwenflash) yayınlandı. Bu sayede topluluk, ExLlamaV3, GLM flash offload ve Alibaba'nın Flash-Next teknolojilerini birleştirerek düşük bellekli ortamlarda büyük dil modelleri çalıştırma konusunda yeni bir referans noktası oluşturdu.",
+  "onemli_maddeler": [
+    "Qwen3.8-Flash-Next (125B) modeli, sadece 8 GB RAM ve 16 GB VRAM ile çalıştırılabiliyor.",
+    "NVMe SSD offload yöntemi sayesinde 8 k‑262 k token bağlamlarda 18‑30 tok/s decode ve 650‑1 627 tok/s prefill hızları elde edildi.",
+    "Kod ve prose için ayrı decode hızları raporlanarak modelin farklı kullanım senaryolarındaki verimliliği gösterildi."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Büyük dil modellerinin düşük bellekli cihazlarda çalıştırılabilmesi, araştırma ve geliştirme maliyetlerini düşürerek daha geniş bir kullanıcı kitlesine erişim sağlar; bu da sektördeki dağıtık AI uygulamalarının yaygınlaşmasını hızlandırır.",
+  "etiketler": [
+    "Qwen3.8-Flash-Next",
+    "NVMe offload",
+    "GPU benchmark",
+    "local LLM",
+    "flash-lite"
+  ],
+  "anilan_modeller": [
+    "Qwen3.8-Flash-Next (125B)",
+    "GLM-5.3",
+    "ExLlamaV3"
+  ],
+  "yorum_tr": "Bu teknik, büyük modellerin sınırlı donanımlı ortamlarda bile akıcı bir şekilde kullanılabilmesini mümkün kılıyor; geliştiriciler daha düşük maliyetli altyapılarla prototip oluşturabilir, kullanıcılar ise yüksek performanslı yanıtlar alabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen3.8-Flash-Next (125B)",
+      "benchmark": "decode speed (prose, 8k context, RTX 4090)",
+      "skor": 30,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "8k context, prose",
+      "kaynak_metinden_alinti": "Short context (8k): 28–33 tok/s prose"
+    },
+    {
+      "model": "Qwen3.8-Flash-Next (125B)",
+      "benchmark": "decode speed (code, 8k context, RTX 4090)",
+      "skor": 20,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "8k context, code",
+      "kaynak_metinden_alinti": "Short context (8k): 19–22 tok/s code"
+    },
+    {
+      "model": "Qwen3.8-Flash-Next (125B)",
+      "benchmark": "decode speed (100k context, RTX 4090)",
+      "skor": 20.8,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "100k context",
+      "kaynak_metinden_alinti": "100k context: 20.8 tok/s decode"
+    }
+  ],
+  "gorsel_url": "https://external-preview.redd.it/bWlkc2ZpMjQ3a3hoMXGKHbof1KFE83uadsI19M_ciTVaVeArB_5hIaX3yFYv.png?width=640&crop=smart&auto=webp&s=787381dcb1151e798f547398553a89d0c27dd2e3",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xev6bo/leanqwenflash_qwen38flashnext_125b_running_at_20/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-25T06:41:28.000Z",
+  "slug": "lean-qwenflash-qwen3-8-flash-next-125b-running-at-20-tok-s-o"
+}
