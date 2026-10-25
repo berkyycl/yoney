@@ -1,0 +1,43 @@
+{
+  "baslik_tr": "Anthropic kurucu ortağı Jack Clark, kendini geliştiren AI tahminini 2027'ye çekti",
+  "ozet_tr": "Anthropic'in yeni benchmark'u TasteVal, yapay zekâların deney tasarlama ve sonuçları yorumlama yeteneğini ölçerek, bu alandaki gelişimin üç ayda iki katına çıktığını gösterdi. Bu bulgular, kurucu ortak Jack Clark'ın kendini geliştiren (RSI) yapay zekâ için 2028 tahminini 2027'ye indirmesine yol açtı.",
+  "detayli_icerik_tr": "The Decoder tarafından yayınlanan haberde, P‑Zero Research tarafından geliştirilen TasteVal adlı benchmark'un, AI sistemlerinin \"araştırma tadı\" olarak adlandırılan iki yeteneğini (deney tasarlama ve sonuçları yorumlama) ölçtüğü belirtiliyor. Sekiz farklı görevde, modellerin deneyleri yönlendirmesi ve sonuçları analiz etmesi isteniyor; araştırma yönünü seçme aşaması insan tarafından önceden belirleniyor.\n\nBenchmark testleri, Anthropic'in Opus 5.5 modelinin, insan uzmanların en iyi performansını yarı yarıya daha az hesaplama gücüyle (compute multiplier 2.3) aşabildiğini ortaya koydu. Bu oran, modelin aynı sonuçları elde etmek için harcadığı GPU saatinin uzmanların bir otuzda biri kadar olduğunu gösteriyor. P‑Zero Research, bu compute multiplier değerinin Aralık 2025'ten bu yana her üç ayda bir ikiye katlandığını raporladı.\n\nBu sonuçlar, Jack Clark'ın daha önce 2028 olarak öngördüğü kendini geliştiren AI (RSI) zaman çizelgesini 2027'ye çekmesine neden oldu. Clark, yaratıcı yeteneklerin AI'nın kendi kendine daha güçlü nesiller üretmesindeki kilit faktör olduğunu vurgularken, TasteVal gibi ölçütlerin bu yaratıcı sürecin bir parçasını yakaladığını savunuyor. Ancak benchmark, uzun vadeli araştırma yönlendirmesini ölçmediği için, tam anlamıyla bağımsız RSI'nin gerçekleştiğini kanıtlamıyor.\n\nSektördeki tartışma da bu bulgularla birlikte evrim geçiriyor. Anthropic, hâlâ tam anlamıyla RSI'ye ulaşılmadığını kabul ederken, OpenAI ve diğer büyük laboratuvarlar da insan denetiminin kritik olduğunu belirtiyor. TasteVal, model performansının sadece görev çözümünden ziyade araştırma sürecine ne kadar entegre olabildiğini gösteren bir gösterge olarak öne çıkıyor; bu da AI geliştirme hızını artırırken, insan denetiminin zorlaşabileceği endişelerini de beraberinde getiriyor.",
+  "onemli_maddeler": [
+    "TasteVal benchmark'u, AI modellerinin deney tasarlama ve sonuç yorumlama yeteneğini ölçerek araştırma tadısını sayısal bir metrik haline getirdi.",
+    "Anthropic Opus 5.5, insan uzmanların performansını %50'den az bir maliyetle geçerek compute multiplier 2.3 elde etti.",
+    "Compute multiplier değeri, Aralık 2025'ten itibaren her üç ayda bir ikiye katlanarak hızlı bir iyileşme eğrisi gösterdi.",
+    "Jack Clark, bu veriler ışığında kendini geliştiren AI (RSI) tahminini 2028'den 2027'ye çekti."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Yeni bir benchmark'un ortaya koyduğu hızlı iyileşme trendi, AI araştırma süreçlerinin otomasyonuna dair sektörel beklentileri ve güvenlik tartışmalarını doğrudan etkiliyor.",
+  "etiketler": [
+    "yapay zeka",
+    "kendini geliştiren AI",
+    "benchmark",
+    "Anthropic",
+    "araştırma tadı"
+  ],
+  "anilan_modeller": [
+    "Opus 5.5"
+  ],
+  "yorum_tr": "TasteVal'in gösterdiği ivme, AI araştırma süreçlerinin otomasyona doğru kaydığına işaret ederken, bu durum hem geliştirme hızını artıracak hem de insan denetiminin karmaşıklığını yükseltecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Opus 5.5",
+      "benchmark": "TasteVal",
+      "skor": 2.3,
+      "birim": "x",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "compute multiplier",
+      "kaynak_metinden_alinti": "The top model, Anthropic's Opus 5.5, hit a compute multiplier of 2.3, reaching expert-level scores with less than half the compute."
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/10/tasteval_and_rsi.png",
+  "url": "https://the-decoder.com/anthropic-co-founder-jack-clark-moves-his-prediction-for-self-improving-ai-forward-to-2027/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-25T09:37:46.000Z",
+  "slug": "anthropic-co-founder-jack-clark-moves-his-prediction-for-sel"
+}

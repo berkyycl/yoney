@@ -1,0 +1,43 @@
+{
+  "baslik_tr": "ISTAnın GSQ-RCO 2-bit DeepSeek-V4.1-Flash modeli, temel modelle aynı puanı alıyor: Gerçek mi?",
+  "ozet_tr": "ISTAnın yeni GSQ-RCO 2‑bit quantizasyonu, DeepSeek‑V4.1‑Flash modelini temel sürümle aynı AIME25 puanına taşıdığı iddiasıyla toplulukta tartışma yarattı. Kullanıcılar, bu yüksek skorların gerçek performansı yansıtıp yansıtmadığını ve KLD ya da perplexity gibi ölçütlerde olası kalite kaybını sorguluyor.",
+  "detayli_icerik_tr": "Reddit'in LocalLLaMA topluluğunda, ISTA‑DASLab tarafından yayınlanan GSQ‑RCO GGUF dosyaları DeepSeek‑V4.1‑Flash modelinin 2‑bit (bpw) versiyonunu temsil ediyor. Paylaşılan benchmark sonuçlarına göre, IQ2_XXS konfigürasyonu temel modelle aynı performansı gösteriyor ve AIME25 testinde tüm sürümler 100 puan almış durumda. Ancak bu sonuçların %90 üzeri bir doygunluk seviyesinde olduğu ve AIME25'in her versiyonda 100 puan verdiği belirtiliyor, bu da ölçüm aralığının daralmasına ve olası kalite düşüşlerinin gizlenmesine yol açabilir.\n\nKullanıcı \"Queasy_Back2588\", bu yüksek skorların gerçek dünyadaki çıktıyı yansıtıp yansıtmadığını merak ediyor. Özellikle Kullandıkları KL Divergence (KLD) ve Perplexity (PPL) gibi metriklerin eksikliği, modelin düşük bit genişliğinde (≈2 bpw) ne kadar bilgi kaybı yaşadığını anlamayı zorlaştırıyor. Topluluk üyelerinden, GSQ‑RCO modelleri için KLD ölçümleri ya da perplexity değerleri talep ediliyor; böylece 2‑bit quantizasyonunun teorik olarak beklenen ~2 bpw seviyesindeki kalite kaybı doğrulanabilir.\n\nBu tartışma, düşük bit genişliğinde LLM quantizasyonunun sınırlarını ve benchmark metodolojisinin güvenilirliğini gündeme getiriyor. Eğer GSQ‑RCO gerçekten temel modelin performansını koruyorsa, 2‑bit quantizasyonu sayesinde depolama ve çıkarım maliyetlerinde büyük tasarruf sağlanabilir. Öte yandan, benchmarkların aşırı doygunlukta olması ve tek bir test (AIME25) üzerinden yüksek puan alınması, modelin gerçek kullanım senaryolarında beklenen performansı yansıtmayabileceği endişesini doğuruyor.\n\nTopluluk, ISTA‑DASLab'ın model dosyalarını inceleyerek ve bağımsız KLD/PPL testleri yaparak bu iddiaları doğrulamak istiyor. Bu süreç, LLM quantizasyonu alanında daha şeffaf ve çok yönlü değerlendirme standartlarının geliştirilmesi için bir fırsat sunabilir.",
+  "onemli_maddeler": [
+    "ISTAnın GSQ‑RCO 2‑bit quantizasyonu, DeepSeek‑V4.1‑Flash modelini AIME25 testinde 100 puanla temel modelle eşleştiriyor.",
+    "Benchmark sonuçları %90 üzeri doygunlukta ve tek bir test üzerinden yüksek puan alıyor, bu da kalite kaybının gizlenebileceği anlamına geliyor.",
+    "Kullanıcılar, KLD ve perplexity gibi ölçütlerle modelin gerçek performansını doğrulamak için bağımsız testler talep ediyor."
+  ],
+  "kategori": "benchmark",
+  "onem": 2,
+  "onem_gerekce": "Konu, belirli bir topluluk içinde teknik bir tartışma olup, geniş sektör etkisi sınırlı ancak LLM quantizasyonu meraklıları için ilgi çekici.",
+  "etiketler": [
+    "quantization",
+    "benchmark",
+    "DeepSeek",
+    "GSQ-RCO",
+    "LLM"
+  ],
+  "anilan_modeller": [
+    "DeepSeek-V4.1-Flash",
+    "GSQ-RCO"
+  ],
+  "yorum_tr": "Bu gelişme, düşük bit genişliğinde LLM dağıtımının maliyet avantajlarını gösterse de, benchmarkların aşırı doygunlukta olması gerçek kaliteyi gizleyebilir; bağımsız KLD ve perplexity ölçümleri kritik olacak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "DeepSeek-V4.1-Flash",
+      "benchmark": "AIME25",
+      "skor": 100,
+      "birim": "score",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "AIME25 is 100 for every version"
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/7hqwq5dicjxh1.png?width=640&crop=smart&auto=webp&s=3c54da7e82952e9182c47e36d7a311a5f8510087",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xes5x0/too_good_to_be_true_istas_gsqrco_2bit/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-25T03:48:25.000Z",
+  "slug": "too-good-to-be-true-ista-s-gsq-rco-2-bit-deepseek-v4-1-flash"
+}

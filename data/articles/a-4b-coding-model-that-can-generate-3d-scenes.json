@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "4 Milyar Parametreli Kodlama Modeli 3D Sahne Üretebiliyor",
+  "ozet_tr": "Yerel bir geliştirici, Qwen3.5-4B tabanlı 4B parametreli bir kodlama modelini 3D sahne üretme yeteneğiyle topluluğa sundu. Modelin Q4_K_M ve Q8_0 GGUF quantizasyonları Hugging Face üzerinden indirilebilir ve eğitim süreci hâlâ devam ediyor.",
+  "detayli_icerik_tr": "Yerel bir yapay zeka meraklısı, Qwen3.5-4B modelinin bağımsız bir ince ayarını gerçekleştirerek 4 milyar parametreli bir kodlama ve 3D sahne üretme modeli ortaya çıkardı. Küçük ölçekli modellerin 3D görevlerinde genellikle yetersiz kaldığı gözlemlenmişti; ancak bu yeni model, paylaşılan videodaki örneklerde olduğu gibi tatmin edici sonuçlar gösteriyor.\n\nModel, iki farklı GGUF quantizasyon formatı olan Q4_K_M ve Q8_0 ile paketlenmiş olarak Hugging Face platformunda sunuluyor. Kullanıcılar bu dosyaları indirerek yerel ortamda çalıştırabilir ve modelin kod üretme yeteneklerini 3D sahne oluşturma bağlamında test edebilir. Geliştirici, eğitim sürecinin hâlâ sürdüğünü ve önümüzdeki günlerde modeli tamamlayıp eğitim veri setini de toplulukla paylaşmayı planladığını belirtti.\n\nBu erken sürüm, açık kaynak topluluğu için bir deneme zemini oluşturuyor. Modelin kodlama ve 3D içerik üretiminde nasıl bir performans sergileyeceği, özellikle oyun geliştirme, AR/VR prototipleme ve otomatik sahne tasarımı gibi alanlarda merak konusu. Geliştiriciler, modelin çıktısını inceleyerek yeni yaratıcı iş akışları geliştirebilir ve kendi veri setleriyle ince ayar yapabilir.\n\nTopluluk, modelin potansiyelini keşfetmek ve geri bildirim sağlamak için davet edildi. Modelin ilerleyen sürümlerinde performans iyileştirmeleri, daha geniş veri setleri ve ek özelliklerin eklenmesi bekleniyor. Bu süreç, açık kaynak AI modellerinin hızla evrimleşmesi ve spesifik görevlerde (örneğin 3D sahne üretimi) uzmanlaşması açısından önemli bir örnek teşkil ediyor.",
+  "onemli_maddeler": [
+    "Qwen3.5-4B tabanlı bağımsız ince ayar ile 4B parametreli kodlama ve 3D sahne üretme modeli.",
+    "Modelin Q4_K_M ve Q8_0 GGUF quantizasyonları Hugging Face üzerinden indirilebilir.",
+    "Eğitim hâlâ devam ediyor; veri seti ve güncellenmiş model önümüzdeki günlerde paylaşılacak.",
+    "Küçük modellerin 3D görevlerindeki yetersizliklerine çözüm sunmayı hedefliyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Yeni bir 4B ölçekli modelin 3D sahne üretme yeteneği, kodlama ve içerik oluşturma alanında açık kaynak topluluğu için önemli bir adım oluşturuyor; ancak henüz erken aşamada olduğu için sektörel etkisi zamanla netleşecek.",
+  "etiketler": [
+    "kodlama",
+    "3D",
+    "model",
+    "Qwen",
+    "open-source"
+  ],
+  "anilan_modeller": [
+    "Qwen3.5-4B"
+  ],
+  "yorum_tr": "Bu model, kodlama ve 3D içerik üretimini birleştiren nadir açık kaynak projelerden biri olarak geliştiricilere yeni deneysel bir platform sunuyor. Başarısı, topluluk katkıları ve ilerleyen sürümlerdeki performans iyileştirmeleriyle şekillenecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/ZDR2bGwxMm8wa3hoMejSJ6JS7vRE7ZdUSeFa-rep7dK33QOgvgYi2Qf_18zQ.png?width=640&crop=smart&auto=webp&s=73c33d41d0370d6b511c5ef2a9c75206bd3609de",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xeuo7t/a_4b_coding_model_that_can_generate_3d_scenes/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-25T06:10:59.000Z",
+  "slug": "a-4b-coding-model-that-can-generate-3d-scenes"
+}

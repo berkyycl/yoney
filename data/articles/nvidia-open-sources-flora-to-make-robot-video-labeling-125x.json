@@ -1,0 +1,65 @@
+{
+  "baslik_tr": "Nvidia, robot video etiketlemesini GPT-6 Astra'ya göre 125 kat daha ucuz yapan Flora'yı açık kaynak yaptı",
+  "ozet_tr": "Nvidia, robot videolarını etiketlemek için üç aşamalı etiketleme sağlayan Flora adlı açık kaynak veri motorunu tanıttı. Şirket, Flora ile bir saat video etiketlemenin sadece 72 cent maliyetle yapılabildiğini ve aynı testte GPT-6 Astra'ya göre %57.1 kalite oranı yakaladığını belirtiyor. Araç, Qwen3.5 tabanlı üç modelden oluşuyor ve robotik veri setlerinin ölçeklenmesinde devrim yaratmayı hedefliyor.",
+  "detayli_icerik_tr": "Nvidia, GEAR araştırma laboratuvarının geliştirdiği Flora'yı açık kaynak olarak yayınlayarak robotik video etiketleme sürecini büyük ölçüde ucuzlatmayı vaat ediyor. Robotların öğrenmesi için videolardaki eylemlerin zaman damgaları, adım adım ilerleme değerlendirmeleri ve görev tamamlama başarıları gibi üç farklı etiket türüne ihtiyaç duyuluyor; mevcut araçların çoğu bu üçünü aynı anda sağlayamıyor. Flora, bu eksikliği gidermek için videoları zaman dilimlerine ayırıyor, her eylemi tanımlıyor ve hem yürütme hem de sonuç değerlendirmelerini yapıyor.\n\nFlora, üç ince ayarlı Qwen3.5 modelinden oluşuyor: 9 milyar parametreli bir model videoları eylem segmentlerine bölüyor, 27 milyar parametreli bir model bu segmentleri bağlam içinde açıklıyor ve aynı büyüklükteki Flora-Rewarder modeli ise bir komutla üç farklı rol üstlenerek başarı puanı, adım sınıflandırması ve rubrik puanlamasını gerçekleştiriyor. Sistem, Nvidia'nın GR00T modellerinin eğitimi sırasında günde 200.000 saat video işleyebiliyor ve modeller Hugging Face üzerinden erişilebilir durumda.\n\nYapılan 50 video testinde Flora, GPT-6 Astra'ya kıyasla %57.1 etiketleme kalitesiyle %53.7'lik bir skorun üzerine çıkarken, maliyet açısından saat başına sadece 0.72 dolar (72 cent) harcarken Astra için bu rakam 88.49 dolar olarak tahmin ediliyor. RoboRewardBench'te Flora'nın hata oranı Astra'ya göre %27.8 daha düşük ve başarısız adımları %53.3 oranında tespit ederken rakip modeller %11.7'nin altında kalıyor. Ancak Flora, normal adımları %11 oranında hatalı olarak işaretleyebiliyor.\n\nFlora, Scale AI gibi ticari hizmetlere açık bir alternatif sunarak araştırmacıların kendi robotik veri setlerini ölçeklendirmesine ve insan gösterimlerini robotlara aktarmasına olanak tanıyor. Nvidia, bu adımla hem geliştiricileri kendi donanım ekosistemine çekmeyi hem de robotik veri eksikliğini otomasyon ve simülasyonla kapatmayı amaçlıyor. Google'ın Gemini 4 Argon modeli de benzer bir yol izleyerek video tabanlı iş adımı tanıma ve hata işaretleme üzerine odaklanıyor.",
+  "onemli_maddeler": [
+    "Flora, robotik video etiketleme için üç tip etiketi tek bir sistemde sunarak veri hazırlama sürecini %125'e kadar maliyet düşürüyor.",
+    "Flora, 9B ve 27B Qwen3.5 modelleriyle video segmentasyonu, açıklama ve ödülleme görevlerini aynı anda yerine getiriyor.",
+    "Testlerde Flora, GPT-6 Astra'ya göre %57.1 kalite ve %27.8 daha düşük hata oranı elde ederken saatlik maliyetini 0.72 dolara indiriyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Robotik veri etiketleme maliyetlerini dramatik şekilde düşüren ve açık kaynak bir çözüm sunan Flora, sektördeki veri hazırlama süreçlerini yeniden şekillendirme potansiyeline sahip olduğu için yüksek öneme sahiptir.",
+  "etiketler": [
+    "Nvidia",
+    "Flora",
+    "robotics",
+    "video labeling",
+    "open-source"
+  ],
+  "anilan_modeller": [
+    "Flora (Qwen3.5 9B)",
+    "Flora (Qwen3.5 27B)",
+    "Flora-Rewarder (Qwen3.5 27B)",
+    "GPT-6 Astra",
+    "Claude Opus 5",
+    "Gemini 3.8 Flash"
+  ],
+  "yorum_tr": "Flora, robotik uygulamalarda veri etiketleme maliyetlerini önemli ölçüde azaltarak araştırma ve geliştirme süreçlerini hızlandırabilir; aynı zamanda açık kaynak yapısı sayesinde ekosistemdeki bağımsız geliştiricilerin de faydalanmasını sağlayacak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Flora",
+      "benchmark": "Annotation Quality",
+      "skor": 57.1,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Flora hits 57.1 percent annotation quality at $0.72 per video hour according to Nvidia, while GPT-6 Astra reaches 53.7 percent at $88.49."
+    },
+    {
+      "model": "Flora-Rewarder",
+      "benchmark": "Failed Step Detection Rate",
+      "skor": 53.3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Flora-Rewarder catches 53.3 percent of failed steps within an episode, while no competitor gets above 11.7 percent and Astra doesn't catch a single one."
+    },
+    {
+      "model": "Flora",
+      "benchmark": "Error Rate Reduction (RoboRewardBench)",
+      "skor": 27.8,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "On RoboRewardBench, Flora's error rate is 27.8 percent lower than Astra's."
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/10/nvidia-flora-hero-robot-hands.jpg",
+  "url": "https://the-decoder.com/nvidia-open-sources-flora-to-make-robot-video-labeling-125x-cheaper-than-gpt-6-astra/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-25T10:08:49.000Z",
+  "slug": "nvidia-open-sources-flora-to-make-robot-video-labeling-125x"
+}
