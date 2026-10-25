@@ -1,0 +1,51 @@
+{
+  "baslik_tr": "RTX 3080 20GB için ReBAR ve P2P kilidi açıldı, prompt işleme hızı %70‑115 arttı",
+  "ozet_tr": "RTX 3080 20GB kartları için ReBAR ve P2P kilidi açıldı; bu sayede tensor paralel modda prompt ön doldurma (prefill) hızı %70‑115 oranında yükseldi. Testler, iki GPU'lu bir sistemde vLLM 0.32.0 ve Swift‑1.5‑Qwen3.8‑27B‑AWQ‑INT4 modeliyle gerçekleştirildi.",
+  "detayli_icerik_tr": "Reddit topluluğu LocalLLaMA, RTX 3080 20GB kartları için ReBAR ve P2P (peer‑to‑peer) kilidinin açıldığını duyurdu. Bu geliştirme, NVIDIA sürücüsü 615.71.09 ve Linux kernel 6.14.11‑9‑pve altında, Proxmox VE 9.2.21 platformunda test edildi. Test ortamı, Threadripper 1920X işlemci, iki RTX 3080 20GB kartı (her biri 240 W güç sınırı) ve vLLM 0.32.0 ile Swift‑1.5‑Qwen3.8‑27B‑AWQ‑INT4 modelini kullanan bir yapıydı.\n\nPerformans ölçümleri üç konfigürasyonda yapıldı: (1) stok sürücü, (2) \"gpu‑unlock\" (sürücü kilidinin açılması) ve (3) \"gpu‑unlock + ReBAR + P2P\". Prompt ön doldurma hızı, \"prompt_length / time_to_first_token\" olarak hesaplandı ve sonuçlar token/s (tok/s) cinsinden raporlandı. 8 192 tokenlik bir prompt için stok konfigürasyonda 967 tok/s iken, unlock+P2P ile 2 080 tok/s elde edildi; bu %115'lik bir kazanç anlamına geliyor. Diğer uzunluklarda da %70‑115 arasında benzer artışlar gözlendi.\n\nDecode (token üretimi) performansı ise daha değişken çıktı. Ölçüm, adım arası gecikme (ITL) üzerinden yapıldı ve step/s cinsinden raporlandı. Örneğin 8 192 tokenlik bir promptta stok konfigürasyonda 15.43 step/s iken, unlock+P2P ile 15.98 step/s elde edildi (%4 artış). Ancak bazı uzunluklarda (ör. 32768 token) hafif düşüşler görüldü. Genel olarak, uzun prompt görevlerinde (ör. ajan tabanlı kodlama) prompt ön doldurma sürecinde büyük kazanç sağlanırken, token üretim hızında belirgin bir iyileşme yok.\n\nBu sonuçlar, tam PCIe bağlantısı olmayan sistemlerde daha sınırlı fayda sağlayabileceğini gösteriyor. Geliştiriciler ve araştırmacılar, uzun promptlu uygulamalarda bu kilit açma yöntemlerini denemeli; ancak token üretim performansı için ek optimizasyonların gerektiği unutulmamalı.",
+  "onemli_maddeler": [
+    "ReBAR ve P2P kilidi açılması, RTX 3080 20GB kartlarda prompt ön doldurma hızını %70‑115 artırdı.",
+    "Testler, iki RTX 3080 20GB kartlı bir sistemde vLLM 0.32.0 ve Swift‑1.5‑Qwen3.8‑27B‑AWQ‑INT4 modeliyle yapıldı.",
+    "Token üretim (decode) performansı büyük değişiklik göstermedi; bazı durumlarda hafif artış, bazılarında ise düşüş görüldü."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "RTX 3080 20GB sahipleri için ücretsiz bir performans artışı sağlanması, özellikle uzun promptlu LLM uygulamalarında önemli bir verimlilik kazancı sunuyor; bu da donanım seviyesinde bir güncellemenin yazılım performansına etkisini gösteriyor.",
+  "etiketler": [
+    "RTX 3080",
+    "ReBAR",
+    "P2P",
+    "vLLM",
+    "performans"
+  ],
+  "anilan_modeller": [
+    "Swift-1.5-Qwen3.8-27B-AWQ-INT4"
+  ],
+  "yorum_tr": "Bu kilit açma, RTX 3080 20GB kullanıcıları için uzun promptlu görevlerde maliyet ve gecikmeyi azaltarak daha verimli bir LLM çalıştırma imkanı sunuyor. Ancak token üretim hızındaki sınırlı etki, tam performans artışı için ek yazılım iyileştirmelerinin gerektiğini gösteriyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Swift-1.5-Qwen3.8-27B-AWQ-INT4",
+      "benchmark": "Prompt prefill throughput (tok/s)",
+      "skor": 2080,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "gpu_unlock+p2p, 8192 token prompt",
+      "kaynak_metinden_alinti": "8192 ... Prefill stock tok/s 967.1  Prefill gpu_unlock+p2p tok/s 2080  Gain 115%"
+    },
+    {
+      "model": "Swift-1.5-Qwen3.8-27B-AWQ-INT4",
+      "benchmark": "Decode step rate (step/s)",
+      "skor": 15.98223,
+      "birim": "step/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "gpu_unlock+p2p, 8192 token prompt",
+      "kaynak_metinden_alinti": "8192 ... Decode gpu_unlock+p2p step/s 15.98223  Gain 4%"
+    }
+  ],
+  "gorsel_url": "https://cdn.mos.cms.futurecdn.net/Ux8svVhiiyQpxRVG3Yb9Z5.jpg",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xf9kmd/rtx_3080_20gb_got_rebar_and_p2p_unlock_70_prompt/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-25T18:16:54.000Z",
+  "slug": "rtx-3080-20gb-got-rebar-and-p2p-unlock-70-prompt-processing"
+}

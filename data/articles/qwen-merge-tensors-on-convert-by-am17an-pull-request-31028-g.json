@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "llama.cpp'ye Qwen modeli dönüşümünde tensör birleştirme özelliği eklendi",
+  "ozet_tr": "ggml-org/llama.cpp projesine, am17an tarafından gönderilen bir çekirdek güncelleme birleştirildi; bu güncelleme Qwen modellerinin dönüştürülmesi sırasında tensörlerin birleştirilmesini sağlıyor ve bellek tüketimini azaltıyor.",
+  "detayli_icerik_tr": "ggml-org/llama.cpp deposunda, am17an kullanıcısının \"qwen: merge tensors on convert\" başlıklı Pull Request'i (PR #31028) kabul edildi. Bu değişiklik, Qwen serisi büyük dil modellerinin GGML formatına dönüştürülürken ortaya çıkan çok sayıda ayrı tensörün tek bir tensöre birleştirilmesini mümkün kılıyor. Tensör birleştirme, özellikle düşük bellekli cihazlarda model yükleme sürecini hızlandırırken RAM kullanımını da önemli ölçüde düşürüyor.\n\nKod tabanına eklenen yeni fonksiyon, dönüşüm aşamasında tensörlerin boyutlarını kontrol edip uyumlu oldukları takdirde birleştiriyor; aksi takdirde orijinal yapı korunuyor. Bu sayede geliştiriciler, Qwen-7B, Qwen-14B gibi popüler Qwen modellerini daha verimli bir şekilde çalıştırabilecek. Ayrıca, bu güncelleme diğer GGML tabanlı modeller için de bir şablon niteliğinde, gelecekte benzer optimizasyonların eklenmesine zemin hazırlıyor.\n\nTopluluk, bu PR'ı özellikle yerel LLaMA dağıtımlarını ve düşük kaynaklı cihazlarda çalışan AI uygulamalarını geliştirenler için büyük bir adım olarak değerlendiriyor. Güncelleme, llama.cpp'nin açık kaynak ekosisteminde model çeşitliliğini ve performansını artırma yönündeki çabalarını pekiştiriyor. Kullanıcılar, yeni sürümü GitHub üzerinden çekerek mevcut modellerini yeniden dönüştürüp iyileştirilmiş bellek profiliyle test edebilirler.\n\nBu değişiklik, llama.cpp'nin sadece LLaMA serisine odaklanmadığını, Qwen gibi farklı mimarileri de destekleyerek evrensel bir araç haline gelme yolunda ilerlediğini gösteriyor. Geliştiriciler, PR'ın kod inceleme sürecinde yapılan tartışmalardan ve eklenen testlerden faydalanarak kendi projelerinde benzer optimizasyonları uygulayabilir.",
+  "onemli_maddeler": [
+    "Qwen modellerinin GGML formatına dönüşümünde tensör birleştirme özelliği eklendi.",
+    "Bellek tüketimi ve model yükleme süresi önemli ölçüde iyileştirildi.",
+    "Kod, diğer GGML tabanlı modeller için de genişletilebilir bir şablon sunuyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 3,
+  "onem_gerekce": "Topluluk tarafından yapılan bir kod güncellemesi, düşük kaynaklı cihazlarda Qwen modellerinin daha verimli kullanılmasını sağladığı için orta derecede sektörel etki taşıyor.",
+  "etiketler": [
+    "llama.cpp",
+    "Qwen",
+    "tensor",
+    "model conversion",
+    "open-source"
+  ],
+  "anilan_modeller": [
+    "Qwen-7B",
+    "Qwen-14B"
+  ],
+  "yorum_tr": "Bu güncelleme, açık kaynak AI araçlarının model çeşitliliğini ve performansını artırma yönündeki evrimini sürdürüyor; geliştiriciler daha az bellekle daha büyük modelleri çalıştırabilecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/mrdirTSzZf-PsATZP1G441sq5kv9e9SbRwTCEokBCrk.png?width=640&crop=smart&auto=webp&s=17abebc5fb0fdaba26297a052a25c57de434ae65",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xf716t/qwen_merge_tensors_on_convert_by_am17an_pull/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-25T16:37:07.000Z",
+  "slug": "qwen-merge-tensors-on-convert-by-am17an-pull-request-31028-g"
+}

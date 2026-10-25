@@ -1,0 +1,42 @@
+{
+  "baslik_tr": "Strata/Basalt, Qwen3.8-Flash-Next IQ3_S benchmarkı: 16 GB VRAM, 55 GB RAM, 5.6 K tok/s prompt ve 250 tok/s üretim",
+  "ozet_tr": "Qwen3.8-Flash-Next IQ3_S modeli, Strata/Basalt altyapısında RTX 5080 ve Core Ultra 9 285K donanımıyla test edildi. Testlerde ortalama 5.0 K token/s prompt işleme ve 153 token/s üretim hızı elde edildi. Model, 262K token bağlam uzunluğunu int8 KV ile destekleyerek büyük bellek kapasitelerinden faydalanıyor.",
+  "detayli_icerik_tr": "Reddit topluluğu LocalLLaMA, Qwen3.8-Flash-Next IQ3_S modelini Strata/Basalt platformunda RTX 5080 16 GB ekran kartı, Core Ultra 9 285K CPU ve 62 GB DDR5-6800 RAM ile çalıştırarak kapsamlı bir benchmark yayınladı. Test ortamı, 262 K bağlam uzunluğu ve int8 KV (key‑value) sıkıştırmasıyla yapılandırıldı; bu sayede model büyük metin bloklarını düşük bellek tüketimiyle işleyebildi.\n\nİki ayrı iş yükü ölçüldü: \"Agent coding session\" (103 istek, 130 K bağlam) ve \"Context sweep\" (15 K‑207 K yeni promptlar). Agent oturumunda ortalama 5.011 token/s prompt işleme (PP) ve 5.118 token/s en yüksek değer, aynı zamanda 153 token/s ortalama üretim (TG) ve 262 token/s zirve üretim hızları kaydedildi. Context sweep testinde ise ortalama 5.475 token/s PP, 5.662 token/s PP zirvesi, 154.9 token/s TG ortalaması ve 186.6 token/s TG zirvesi elde edildi.\n\nDonanım kaynak kullanımına bakıldığında, her iki testte de VRAM tüketimi 15.7 GB, sistem RAM kullanımı 54.1 GB ve yaklaşık 5 GB serbest bellek kaldı. Promptların %99.5'i önbellekten geldiği için ilk tokenin medyan gecikmesi sadece 0.2 saniye oldu. Bu sonuçlar, Qwen3.8-Flash-Next IQ3_S modelinin yüksek paralel işleme kapasitesi ve büyük bağlam desteğiyle, özellikle kod üretimi ve uzun metin analizlerinde rekabetçi bir performans sunduğunu gösteriyor.\n\nBenchmark sonuçları, yerel LLM altyapılarının (Strata, Basalt) modern donanımla birleştiğinde, bulut tabanlı çözümlere kıyasla benzer ya da daha iyi verimlilik sağlayabileceğini işaret ediyor. Geliştiriciler, bu tür konfigürasyonları kendi uygulamalarına entegre ederek düşük gecikmeli ve yüksek hacimli yanıtlar alabilirler.",
+  "onemli_maddeler": [
+    "Ortalama 5.0 K token/s prompt işleme hızı, büyük ölçekli uygulamalarda düşük gecikme sağlıyor.",
+    "150+ token/s ortalama üretim hızı, uzun metin ve kod üretiminde verimliliği artırıyor.",
+    "262 K bağlam uzunluğu ve int8 KV sıkıştırması, bellek kullanımını optimize ederken geniş bağlamı destekliyor."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Modelin yüksek prompt ve üretim hızları, büyük bağlam desteği ve yerel donanımda elde edilen performans, LLM ekosisteminde önemli bir referans noktası oluşturuyor.",
+  "etiketler": [
+    "Qwen3.8",
+    "Benchmark",
+    "RTX 5080",
+    "Strata",
+    "Basalt"
+  ],
+  "anilan_modeller": [
+    "Qwen3.8-Flash-Next IQ3_S"
+  ],
+  "yorum_tr": "Bu benchmark, Qwen3.8-Flash-Next IQ3_S modelinin yerel yüksek performanslı donanımlarda rekabetçi hızlar sunabildiğini gösteriyor; geliştiriciler büyük bağlamlı görevlerde bulut maliyetlerini azaltabilirken, kullanıcılar daha hızlı yanıt deneyimi yaşayacak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen3.8-Flash-Next IQ3_S",
+      "benchmark": "Token generation (TG) avg",
+      "skor": 153,
+      "birim": "t/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "average generated tokens per second (Agent coding session)",
+      "kaynak_metinden_alinti": "Agent coding session ... 5,011 5,118 153.0 262 ..."
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/0chuu0t9djxh1.png?width=140&height=78&auto=webp&s=74621e6b330a028e26a01f84efd5fbaa7152fde9",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xesda1/benchmark_stratabasalt_runs_qwen38_flash_next_iq3/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-25T03:59:23.000Z",
+  "slug": "benchmark-strata-basalt-runs-qwen3-8-flash-next-iq3-s-with-1"
+}
