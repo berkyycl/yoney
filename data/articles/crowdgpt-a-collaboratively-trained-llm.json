@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "CrowdGPT: İşbirlikçi Eğitimle Açık Kaynak LLM Projesi",
+  "ozet_tr": "CrowdGPT, veri merkezlerine ve büyük bütçelere ihtiyaç duymadan, topluluk temelli bir şekilde 1 milyar parametreli bir dil modeli oluşturmayı hedefleyen açık kaynak bir girişim. Proje, herkesin kendi bilgisayarını kullanarak modeli eğitebilmesini ve katkılarını küresel modele ekleyebilmesini sağlayan bir protokol sunuyor.",
+  "detayli_icerik_tr": "Yerel bir topluluk girişimi olarak ortaya çıkan CrowdGPT, yapay zekâ geliştirme sürecinde merkeziyetçi altyapıların ve yüksek maliyetlerin önüne geçmeyi amaçlıyor. Projenin kurucusu, modelin 1 milyar parametreli bir ölçekle başlatılacağını ve bu aşamanın sadece bir kanıt niteliğinde olduğunu belirtiyor. Katılımcılar, kişisel bilgisayarlarındaki GPU kaynaklarını kullanarak modeli bağımsız bir şekilde eğitebilir ve ardından elde ettikleri ağırlıkları ortak havuza gönderebilirler.\n\nCrowdGPT'nin en dikkat çeken özelliği, eğitim verisinin %100'ünün ve model ağırlıklarının açıkça paylaşılması. Bu sayede herkes temiz veri setleri ekleyebilir, modelin yönünü belirlemede söz sahibi olabilir ve yeni kullanım senaryoları geliştirebilir. Proje, Amerikan ve Çin merkezli büyük AI şirketlerinin aksine tamamen şeffaf bir ekosistem sunmayı vaat ediyor.\n\nProjenin web sitesi ve GitHub deposu üzerinden topluluk, hem teknik geri bildirim hem de katkı sağlamak isteyenlerden öneri bekliyor. Katılımcıların motivasyonları arasında ücretsiz inference kredileri gibi karşılıklar da sorulmuş; ancak ana hedef, modelin erişilebilirliğini artırmak ve açık kaynak AI topluluğunu güçlendirmek.\n\nGelecek planları arasında modelin boyutunu artırmak ve performansını iyileştirmek bulunuyor. Şu anki 1B parametreli sürüm, topluluk tarafından test edilerek ölçeklenebilir bir temel oluşturmayı hedefliyor. Proje, açık kaynak AI'nin demokratikleşmesi yönündeki bir adım olarak görülüyor.",
+  "onemli_maddeler": [
+    "CrowdGPT, 1 milyar parametreli bir LLM'i topluluk temelli ve açık kaynak olarak eğitmeyi hedefliyor.",
+    "Modelin eğitim verisi ve ağırlıkları %100 şeffaf bir şekilde paylaşılacak.",
+    "Katılımcılar kişisel GPU'larını kullanarak modeli bağımsız şekilde eğitebilir ve katkılarını küresel modele ekleyebilir."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 3,
+  "onem_gerekce": "Proje, açık kaynak ve topluluk temelli LLM geliştirme yaklaşımıyla ilgi çekiyor ancak henüz erken aşamada ve geniş ölçekli bir etki yaratması zaman alacak.",
+  "etiketler": [
+    "açık kaynak",
+    "LLM",
+    "işbirliği",
+    "veri seti",
+    "GPU"
+  ],
+  "anilan_modeller": [
+    "CrowdGPT"
+  ],
+  "yorum_tr": "CrowdGPT, AI araştırma ve geliştirme süreçlerini daha demokratik hale getirme potansiyeli taşıyor. Geliştiriciler, düşük maliyetli bir ortamda model eğitimi yaparak deneyim kazanabilir; kullanıcılar ise şeffaf bir modelin faydalarından yararlanabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/q2lwnlqzpoxh1.png?width=640&crop=smart&auto=webp&s=cb173121f4ed55635b30e7c1c470e46b1a655f6a",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xff9e4/crowdgpt_a_collaboratively_trained_llm/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-25T22:07:17.000Z",
+  "slug": "crowdgpt-a-collaboratively-trained-llm"
+}

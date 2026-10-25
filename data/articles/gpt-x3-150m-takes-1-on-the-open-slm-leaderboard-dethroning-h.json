@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "GPT-X3-150M, Open SLM Liderlik Tablosunda #1 oldu, SmolLM2-135M'yi geride bıraktı",
+  "ozet_tr": "150 milyon parametreli GPT-X3-150M, GDN2/GQA hibrit mimarisiyle Open SLM Leaderboard'da birinci sıraya yükseldi ve HuggingFace'ın SmolLM2-135M modelini geride bıraktı. Bu başarı, küçük ölçekli dil modellerinin performans sınırlarını yeniden tanımlıyor.",
+  "detayli_icerik_tr": "Open SLM Leaderboard, açık kaynaklı dil modellerinin çeşitli görevlerdeki başarımını ölçen ve karşılaştıran bir platform olarak sektörde geniş bir referans noktası oluşturuyor. Geçtiğimiz günlerde topluluk üyeleri, GPT-X3-150M modelinin yeni bir sürümünü yayınlayarak tabloyu ilk sıraya taşıdığını duyurdu. Model, 150 milyon parametreye sahip olmasına rağmen GDN2 (Gated Dense Network) ve GQA (Gated Query Attention) bileşenlerini birleştiren hibrit bir mimari kullanıyor; bu sayede hem verimlilik hem de doğruluk açısından önemli bir denge sağlıyor.\n\nGPT-X3-150M'nin bu başarısı, bir önceki lider olan HuggingFace'ın SmolLM2-135M modelini geride bırakmasıyla dikkat çekti. SmolLM2-135M, 135 milyon parametreyle uzun süredir küçük ölçekli modeller arasında performans rekorları kırıyordu. Yeni modelin üstünlüğü, özellikle düşük kaynaklı ortamlarda ve kenar cihazlarda (edge devices) yüksek doğruluk gerektiren uygulamalara yöneliktir.\n\nTopluluk, bu geçişin sadece bir skor değişikliği olmadığını, aynı zamanda model mimarilerinde yeni bir trendin başlangıcı olabileceğini vurguluyor. GDN2/GQA hibrit yaklaşımı, parametre sayısını artırmadan model kapasitesini yükseltmeyi hedefleyen araştırmacılar için ilham kaynağı olabilir. Ayrıca, açık kaynaklı bir model olması, akademik ve endüstriyel geliştiricilerin hızlıca deneme ve uyarlama yapabilmesine olanak tanıyor.\n\nBu gelişme, açık kaynak ekosisteminde rekabeti artırarak daha fazla yenilikçi mimarinin ortaya çıkmasını teşvik edecek gibi görünüyor. Modelin kod ve ağırlıkları hâlen GitHub üzerinden erişilebilir durumda ve topluluk tarafından sürekli olarak iyileştirmeler yapılması bekleniyor.",
+  "onemli_maddeler": [
+    "GPT-X3-150M, Open SLM Leaderboard'da birinci sıraya yükseldi.",
+    "Model, GDN2/GQA hibrit mimarisiyle yüksek doğruluk ve verimlilik sağlıyor.",
+    "150M parametreli model, 135M parametreli SmolLM2-135M'yi geride bıraktı."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Küçük ölçekli dil modellerinin liderlik tablosunda değişmesi, performans sınırlarını yeniden tanımlayarak sektörde yeni araştırma ve geliştirme yönelimlerini tetikleyecek.",
+  "etiketler": [
+    "benchmark",
+    "leaderboard",
+    "GPT-X3",
+    "SmolLM2",
+    "OpenSLM"
+  ],
+  "anilan_modeller": [
+    "GPT-X3-150M",
+    "SmolLM2-135M"
+  ],
+  "yorum_tr": "Bu sıralama değişikliği, düşük parametreli modellerin de yüksek performans sunabileceğini göstererek geliştiricilere daha hafif ve maliyet etkin çözümler sunma fırsatı tanıyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/WhXs686FdsTwTAFQKaBQsiSzvtXiCZWOTTrlsaE8CzM.png?width=640&crop=smart&auto=webp&s=527efd8edd067d58c912d375157b4fc0397e0c20",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xerxtr/gptx3150m_takes_1_on_the_open_slm_leaderboard/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-25T03:36:15.000Z",
+  "slug": "gpt-x3-150m-takes-1-on-the-open-slm-leaderboard-dethroning-h"
+}

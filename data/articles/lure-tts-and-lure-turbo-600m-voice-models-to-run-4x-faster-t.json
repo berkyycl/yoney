@@ -1,0 +1,72 @@
+{
+  "baslik_tr": "Lure‑TTS ve Lure‑Turbo: 600M parametreli ses modelleri %400 gerçek zamanlı hız, $200 altında eğitim",
+  "ozet_tr": "Lure‑TTS ve Lure‑Turbo, Qwen3‑TTS tabanlı 600M parametreli ses modelleri, RLVR, OPD ve çok‑öğretmen distilasyonu gibi yeni tekniklerle eğitildi. Model, gerçek zamanlı faktör (RTF) 0.14 ile 4 kat daha hızlı çalışıyor ve sadece 200 $ maliyetle, RTX PRO 6000 gibi orta seviye bir GPU kullanılarak geliştirildi.",
+  "detayli_icerik_tr": "Yerel bir geliştirici, Qwen3‑TTS 0.6B modelini RLVR, OPD ve çok‑öğretmen OPD gibi son gelişmelerle ince ayar yaparak Lure‑TTS ve Lure‑Turbo adını verdiği iki yeni ses modeli oluşturdu. İlk aşamada, yoğunluk, kahkaha, ağlama gibi ses olaylarını ve yönlendirme etiketlerini tanımlayan sınıflandırıcılar eğitildi; ardından bu etiketler SFT (Supervised Fine‑Tuning) aşamasında modele entegre edildi.\n\nModelin farklı yetenekleri (ses klonlama, yönlendirme, metin etiketleri) ayrı öğretmen modelleri olarak eğitildi ve son bir on‑policy distilasyonu ile tek bir modelde birleştirildi. Geliştirici, özellikle ses klonlama ve konuşmacı benzerliği üzerine odaklanarak ECAPA‑based benzerlik skorunu 0.699 seviyesine çıkardı.\n\nHız optimizasyonu için 300M parametreli bir model 12 katmanla tasarlandı ve 15 geçişli kod tahmincisi üç geçişe indirildi. Bu sayede Lure‑Turbo, gerçek zamanlı faktör (RTF) 0.14 ile 5B Fish S2 Pro'nun 0.195 RTF değerinden daha hızlı çalışıyor. Eğitim maliyeti 200 $'ı aşmadı ve yalnızca RTX PRO 6000 GPU kullanıldı; H100 sadece test aşamasında kullanıldı.\n\nAyrıca geliştirici, CUDA, mlx‑audio ve audio.cpp tabanlı bir Lure‑TTS motoru yayınladı. Aynı 4090 GPU üzerinde referans Qwen‑TTS koduna kıyasla ilk ses çıktısı 0.17 s'ye (10.6 s yerine) düşürülürken, genel RTF 0.53'e (2.54'e karşı) iyileştirildi. Motor, hem NVIDIA GPU, hem CPU, hem de Mac ortamlarında tek bir Python API, CLI ve OpenAI‑uyumlu sunucu aracılığıyla çalışabiliyor.",
+  "onemli_maddeler": [
+    "Lure‑Turbo, RTF 0.14 ile gerçek zamanlıdan 4 kat daha hızlı çalışıyor.",
+    "Model, sadece $200 maliyetle ve RTX PRO 6000 GPU kullanılarak eğitildi.",
+    "ECAPA tabanlı konuşmacı benzerliği skoru 0.699 olarak yüksek tutuldu.",
+    "Lure‑TTS motoru, ilk ses çıktısını 0.17 s'ye indirerek 5 kat hız kazandı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Orta ölçekli (600M) bir ses modeli, düşük maliyet ve yüksek hızla sunulması, açık kaynak topluluğu ve ses asistanı geliştirenler için önemli bir ilerleme sağlıyor.",
+  "etiketler": [
+    "TTS",
+    "voice cloning",
+    "RTF",
+    "open-source",
+    "low-cost training"
+  ],
+  "anilan_modeller": [
+    "Lure TTS",
+    "Lure Turbo",
+    "Qwen3‑TTS 0.6B"
+  ],
+  "yorum_tr": "Bu modeller, yüksek performanslı ses sentezi ihtiyacını düşük bütçeli araştırmacılara ve geliştiricilere sunarak, ses asistanı ve içerik üretiminde yeni bir erişilebilirlik katmanı oluşturuyor. Açık kaynak kodlu motor ise platform bağımsız dağıtımı kolaylaştırıyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Lure Turbo",
+      "benchmark": "Real‑Time Factor",
+      "skor": 0.14,
+      "birim": "",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "this btw runs RTF of 0.14 vs 0.195 for the 5B Fish S2 Pro"
+    },
+    {
+      "model": "Lure Turbo",
+      "benchmark": "ECAPA speaker similarity",
+      "skor": 0.699,
+      "birim": "",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "while keeping the same speaker similarity (ECAPA 0.699)"
+    },
+    {
+      "model": "Lure‑TTS Engine",
+      "benchmark": "First audio latency (seconds)",
+      "skor": 0.17,
+      "birim": "s",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "it gets first audio out in 0.17 s instead of 10.6 s"
+    },
+    {
+      "model": "Lure‑TTS Engine",
+      "benchmark": "Real‑Time Factor (overall)",
+      "skor": 0.53,
+      "birim": "",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "runs about 5x faster overall (RTF 0.53 vs 2.54)"
+    }
+  ],
+  "gorsel_url": "https://external-preview.redd.it/O8608gskebkmj5HUiFqWElSEkzNunS9Ch_EG-FbdQeM.png?width=640&crop=smart&auto=webp&s=3ef4dbc4ea106ca7f846d79d611f4e7b258eea8d",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xf14j2/luretts_and_lureturbo_600m_voice_models_to_run_4x/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-25T12:29:32.000Z",
+  "slug": "lure-tts-and-lure-turbo-600m-voice-models-to-run-4x-faster-t"
+}
