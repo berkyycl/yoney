@@ -1,0 +1,60 @@
+{
+  "baslik_tr": "Legacy GPU'lar için yüksek performanslı llama.cpp çatalı: Kepler Desteği, CUDA Graphs ve Windows NCCL!",
+  "ozet_tr": "Geliştirici TheSpicyBoi123, eski NVIDIA Kepler ve diğer pre‑Ampere GPU'larda llama.cpp çalıştırmak için bir çatal oluşturdu. CuBLAS uyumluluğu, CUDA Graphs ve Windows NCCL entegrasyonu sayesinde 4 x Tesla K40c üzerinde 35‑55 tps arasında token üretim hızı elde edildi ve NCCL ile %5‑10 ek performans artışı sağlandı.",
+  "detayli_icerik_tr": "llama.cpp projesinin geliştiricileri, eski nesil NVIDIA GPU'ların (Kepler, Maxwell, Pascal, Volta vb.) artık çöp olarak görülmemesi gerektiğini savunarak performans iyileştirmeleri üzerine çalıştı. TheSpicyBoi123, cuBLAS'ın compute‑type seçiminde yaşanan uyumsuzlukları gideren bir yamayı ana dalına ekledi ve bu sayede Kepler tabanlı Tesla K40c kartları ilk defa modelin çalıştırılmasını sağladı.\n\nYapılan iyileştirmeler arasında CUDA Graphs desteği de bulunuyor; aynı donanımda bu özellik etkinleştirildiğinde token üretim hızı 35 tps'den 55 tps'ye yükseldi. Ayrıca Windows ortamında NCCL (NVIDIA Collective Communications Library) entegrasyonu, dağıtık işleme performansını %5‑10 oranında artırarak throughput değerinin 60 tps'nin üzerine çıkmasını mümkün kıldı. Bu sonuçlar, P.P. (prompt processing) aşamasında 70‑100 tps arasında değişen hızlarla da destekleniyor.\n\nProje kodları GitHub'da iki ayrı repo altında sunuluyor: ana geliştirme çatalı \"llama‑on‑legacy‑gpu\" ve Windows NCCL uyumlu versiyon \"nccl‑on‑windows\". Geliştiriciler, topluluktan geri bildirim, yeniden üretilebilir benchmark ve ek katkılar bekliyor. Bu tür bir destek, eski donanım sahiplerinin yapay zeka modellerini hâlâ verimli bir şekilde çalıştırabilmelerine olanak tanıyarak e‑atık sorununu da hafifletmeyi hedefliyor.\n\nİlgi duyan kullanıcılar, Kepler, Maxwell, Pascal ve Volta gibi mimarileri kullanan sistemlerde denemeler yaparak sonuçları paylaşabilir. Geniş bir test yelpazesi, farklı model ve kuantizasyon seviyeleriyle (ör. Q8_0) daha kesin performans tablolarının oluşturulmasını sağlayacak.",
+  "onemli_maddeler": [
+    "CuBLAS compute‑type seçimi hatası giderildi; Kepler GPU'larda llama.cpp artık başlatılabiliyor.",
+    "CUDA Graphs entegrasyonu sayesinde 4 x Tesla K40c üzerinde token hızı 35 tps'den 55 tps'ye yükseldi.",
+    "Windows NCCL desteği eklenerek dağıtık işleme %5‑10 performans artışı ve 60 tps üzeri throughput sağlandı."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 3,
+  "onem_gerekce": "Eski nesil GPU'ların yapay zeka uygulamalarında yeniden kullanılabilirliği, özellikle sınırlı bütçeli araştırma grupları ve geliştiriciler için önemli bir teknik gelişmedir; ancak etkisi daha çok niş bir topluluğa yöneliktir.",
+  "etiketler": [
+    "llama.cpp",
+    "legacy GPU",
+    "CUDA",
+    "NCCL",
+    "quantization"
+  ],
+  "anilan_modeller": [
+    "Qwen3.6-35B-A3B"
+  ],
+  "yorum_tr": "Bu güncellemeler, eski NVIDIA donanımını hâlâ kullanan araştırmacılar ve geliştiriciler için maliyet tasarrufu sağlayarak model çalıştırma esnekliğini artırıyor. Ancak performans artışı, modern GPU'larla kıyaslandığında hâlâ sınırlı kalıyor, bu yüzden geniş çaplı benimsenmesi zaman alabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen3.6-35B-A3B (Q8_0 quantization)",
+      "benchmark": "tokens per second",
+      "skor": 35,
+      "birim": "tps",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "4x Tesla K40c (compute capability 3.5), cuBLAS fix",
+      "kaynak_metinden_alinti": "Previously unable to start → 35 tps"
+    },
+    {
+      "model": "Qwen3.6-35B-A3B (Q8_0 quantization)",
+      "benchmark": "tokens per second",
+      "skor": 55,
+      "birim": "tps",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "4x Tesla K40c, CUDA graphs enabled",
+      "kaynak_metinden_alinti": "Approximately 35 → 55 tps after enabling CUDA graphs on my four-K40c setup"
+    },
+    {
+      "model": "Qwen3.6-35B-A3B (Q8_0 quantization)",
+      "benchmark": "tokens per second",
+      "skor": 60,
+      "birim": "tps",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "4x Tesla K40c, Windows NCCL integration",
+      "kaynak_metinden_alinti": "Throughput reaching above 60 tps while P.P. speeds are variable between 70-100 tps"
+    }
+  ],
+  "gorsel_url": "https://external-preview.redd.it/PQMUjMOsDy1Pstbq97LsYd_Vr8IJXFU_6FeNVaT6fAU.png?width=640&crop=smart&auto=webp&s=684d67cc294d2d09bcc42f2f7cd0a9561293ff19",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xeicw2/highperformance_llamacpp_fork_for_legacy_gpus/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-24T20:01:46.000Z",
+  "slug": "high-performance-llama-cpp-fork-for-legacy-gpus-kepler-suppo"
+}

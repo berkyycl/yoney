@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "Kimi K3.1 Pro, DeepSeek 4.1 Flash kadar iyi mi?",
+  "ozet_tr": "Kimi K3.1 Pro modelinin performansı, DeepSeek 4.1 Flash (1017) ile karşılaştırıldığında beklenen farkı göstermiyor. Kullanıcılar, Kimi K3.1 Pro'nun yüksek katman sayısı ve yavaş çalışma süresi nedeniyle yerel ortamda zorlayıcı olduğunu belirtiyor.",
+  "detayli_icerik_tr": "Reddit topluluğu LocalLLaMA'da paylaşılan bir yorumda, Kimi serisinin 2.8 milyar parametreli modellerine duyulan ilgi vurgulanıyor. Ancak yazar, yeni çıkan DeepSeek 1017 modelinin aynı boyutta daha iyi sonuçlar sunduğunu ve Kimi K3.1 Pro'nun bu performansı yakalamadığını ifade ediyor.\n\nKimi K3.1 Pro'nun 104 aktif katmana sahip olması, tek bir token üretmek için gereken işlem süresini uzatıyor. Bu durum, modelin yerel cihazlarda, özellikle düşük bellekli sistemlerde çalıştırılmasını zorlaştırıyor. Kuantizasyon uygulandığında ise çıktı kalitesinde belirgin bir düşüş yaşanıyor.\n\nDeepSeek 4.1 Flash (1017) ise daha küçük bir ayak izine sahip olmasına rağmen benzer ya da daha yüksek doğruluk sonuçları veriyor. Ayrıca model, daha hızlı yanıt süreleri sunarak yerel kullanım senaryoları için daha pratik bir seçenek olarak öne çıkıyor.\n\nYazar, Kimi K3.1 Pro'nun açık ağırlıklarının Kasım 4'te yayınlanacağını belirterek, bu sürümün de yüksek kuantizasyonla çalıştırıldığında DeepSeek'in yüksek kuantizasyonlu versiyonuna kıyasla geride kalacağını öngörüyor. Sonuç olarak, topluluk üyeleri DeepSeek 4.1 Flash'i tercih etmeyi ve Kimi K3.1 Pro'yu göz ardı etmeyi öneriyor.",
+  "onemli_maddeler": [
+    "Kimi K3.1 Pro, 104 aktif katman nedeniyle yerel çalıştırmada yavaş ve zorlayıcı.",
+    "DeepSeek 4.1 Flash (1017), daha düşük ayak iziyle benzer ya da daha iyi performans sağlıyor.",
+    "Kimi K3.1 Pro'nun kuantizasyonu çıktı kalitesini düşürürken, DeepSeek yüksek kuantizasyonda daha stabil kalıyor."
+  ],
+  "kategori": "benchmark",
+  "onem": 3,
+  "onem_gerekce": "Kullanıcı deneyimi ve yerel LLM performans karşılaştırması topluluk içinde ilgi çekiyor, ancak sektörel çapta büyük bir etki yaratmıyor.",
+  "etiketler": [
+    "Kimi",
+    "DeepSeek",
+    "Model Karşılaştırması",
+    "Yerel LLM",
+    "Performans"
+  ],
+  "anilan_modeller": [
+    "Kimi K3.1 Pro",
+    "DeepSeek 4.1 Flash",
+    "DeepSeek 1017"
+  ],
+  "yorum_tr": "Bu karşılaştırma, yerel ortamda düşük kaynak tüketimi ve yüksek hız isteyen geliştiriciler için DeepSeek 4.1 Flash'in daha uygun bir seçenek olduğunu gösteriyor. Kimi K3.1 Pro'nun potansiyeli olsa da, mevcut performans farkları nedeniyle geniş çaplı benimsenmesi zor görünüyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://pbs.twimg.com/media/HVWX_csbIAADFFp?format=webp&name=large",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xemxoq/is_it_just_me_or_kimi_k31_pro_dont_look_much/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-24T23:24:59.000Z",
+  "slug": "is-it-just-me-or-kimi-k3-1-pro-don-t-look-much-better-than-d"
+}

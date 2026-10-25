@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "ChatGPT Ses Modu, Silero VAD v6'yı Kullanıyor",
+  "ozet_tr": "OpenAI'nin ChatGPT sesli yanıt özelliği, topluluk gözlemleriyle Silero VAD v6 modelini entegre etti. Bu gelişme, sesli etkileşimlerde daha hassas konuşma algısı ve düşük gecikme vaat ediyor.",
+  "detayli_icerik_tr": "OpenAI, ChatGPT'nin sesli yanıt modunu (voice mode) geliştirmek amacıyla yeni bir ses aktivitesi algılama (VAD) modeli kullandığını Reddit'teki LocalLLaMA topluluğunun bir paylaşımıyla duyurdu. Paylaşıma göre, bu ses modunda kullanılan VAD modeli Silero VAD v6 olarak tanımlanıyor. Silero VAD, Rusya merkezli Silero ekibi tarafından geliştirilen, düşük gecikme ve yüksek doğruluk sağlayan açık kaynaklı bir konuşma algılama çözümüdür.\n\nSilero VAD v6, önceki sürümlere kıyasla daha iyi gürültü bastırma ve çoklu dil desteği sunuyor. Model, mikrofon girişindeki ses akışını gerçek zamanlı olarak analiz ederek konuşma ve sessizlik anlarını ayırıyor; bu sayede ChatGPT'nin sesli yanıtı, kullanıcının konuşma bitişini daha doğru algılayıp yanıtı hemen başlatabiliyor. Topluluk üyeleri, bu entegrasyonun özellikle düşük kaliteli mikrofonlar ve gürültülü ortamlarda deneyimi iyileştireceğini belirtiyor.\n\nOpenAI'nin resmi bir açıklama yapmamasına rağmen, topluluk gözlemleri ve kod incelemeleri, Silero VAD v6'nın OpenAI'nin sesli hizmetlerinde kullanılmaya başlandığını gösteriyor. Bu durum, büyük dil modellerinin yanına daha sofistike ön‑işleme katmanları eklenmesinin, kullanıcı deneyimini artırmada kritik bir adım olduğunu ortaya koyuyor. Ayrıca, Silero'nun açık kaynak lisansı sayesinde, diğer geliştiriciler de benzer entegrasyonları kendi sesli asistan projelerinde kullanabilecek.\n\nSilero VAD v6'nın ChatGPT ses modunda kullanılmaya başlanması, sesli yapay zeka uygulamalarında standartları yükseltebilir. Daha doğru konuşma algısı, yanıt gecikmesinin azalması ve enerji verimliliği, hem son kullanıcılar hem de geliştiriciler için önemli faydalar sağlayacak. Bu gelişme, sesli AI ekosisteminde açık kaynak çözümlerin büyük platformlar tarafından benimsenmesinin bir göstergesi olarak değerlendiriliyor.",
+  "onemli_maddeler": [
+    "ChatGPT sesli yanıt modunda Silero VAD v6 kullanılıyor.",
+    "Silero VAD v6, düşük gecikme ve yüksek doğrulukla konuşma/sessizlik ayrımı yapıyor.",
+    "Açık kaynak VAD entegrasyonu, diğer sesli AI projeleri için örnek teşkil ediyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 3,
+  "onem_gerekce": "Sesli AI hizmetlerinde yeni bir ön‑işleme modelinin benimsenmesi, kullanıcı deneyimini iyileştirse de sektörel etkisi henüz sınırlı bir alanda kalıyor.",
+  "etiketler": [
+    "Ses İşleme",
+    "VAD",
+    "ChatGPT",
+    "Silero",
+    "Yapay Zeka"
+  ],
+  "anilan_modeller": [
+    "Silero VAD v6",
+    "ChatGPT voice mode"
+  ],
+  "yorum_tr": "Silero VAD v6'nın entegrasyonu, sesli asistanların konuşma algısını güçlendirerek yanıt süresini kısaltıyor; geliştiriciler ise açık kaynak VAD çözümlerine yönelerek maliyet ve esneklik açısından avantaj elde edecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/xwljokv33gxh1.png?width=140&height=24&auto=webp&s=ccff1bc1cb6f7ae49a7a62a08e862eaca7dd91ef",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xedp2t/silero_vad_v6_being_used_by_chatgpt_voice_mode/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-24T16:54:54.000Z",
+  "slug": "silero-vad-v6-being-used-by-chatgpt-voice-mode"
+}
