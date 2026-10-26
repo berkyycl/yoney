@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "OpenAI, Codex'in Ultrafast Modu ile Olay İnceleme Süresini Saatlerden Dakikalara Düşürdü",
+  "ozet_tr": "OpenAI, Codex'in yeni Ultrafast modunu olay müdahalesi sürecine entegre ederek mühendislerin inceleme süresini saatlerden 10‑15 dakikaya, hatta 30 saniyeye kadar indirdi. Bu yüksek hızlı mod, aynı anda birden çok veri kaynağını tarayarak sorulara anlık yanıtlar sağlıyor ve ekiplerin odaklanmasını koruyor.",
+  "detayli_icerik_tr": "OpenAI, iç süreçlerinde kullandığı Codex modeline \"Ultrafast\" adını verdiği yüksek hızlı bir çalışma modu ekledi. Bu mod, olay müdahalesi sırasında mühendislerin sorularına yanıt bulma süresini dakikalardan dakikalarca hatta saniyelere indirerek, sorunların yayılmasını önlemeye yardımcı oluyor. Ultrafast, kod yürütme, araç kullanımı ve veri çekme gibi işlemleri aynı anda yapabilen bir paralel arama yeteneği sunuyor.\n\nOlay müdahalesi ekibinin lideri Aaron Friel, bir sorun ortaya çıktığında Slack kanalı açıp Codex'i sorulara yanıt vermesi için yönlendiriyor. Ultrafast sayesinde, potansiyel hata kaynaklarını tek tek incelemek yerine tüm olası \"samanlık\" içinde aynı anda iğneyi arayabiliyor. Bu, özellikle güvenlik olaylarında veri toplama ve normalleştirme sürecini 1‑2 saatten 10‑15 dakikaya düşürüyor.\n\nDatacenter Güvenlik Mimarı AJ Trbojevic ve Core Agent ekibi üyeleri Adam Perry ve Sayan Sisodiya, Ultrafast'ın kod tabanındaki eylemleri otomatikleştirerek manuel tarama ve Slack üzerinden bilgi toplama gibi görevleri anlık yanıtlarla değiştirdiğini belirtiyor. Artık mühendisler, Codex'in tarama süresi 30 saniyeyi aşmadığında Slack'te beklemek yerine doğrudan AI ile etkileşime geçiyor ve odaklarını kaybetmeden çalışmaya devam ediyor.\n\nUltrafast aynı zamanda büyük kod refaktörlerini de teşvik ediyor. Jeff Niu, teknik borcun daha hızlı ödenebildiğini ve kod üretiminin neredeyse anlık hale geldiğini vurguluyor. Codex, sabah toplantı özetlerinden tarayıcıda form doldurmaya kadar günlük iş akışlarını bir yardımcı olarak işliyor ve mühendislerin zamanını kritik görevlere odaklamasını sağlıyor.",
+  "onemli_maddeler": [
+    "Ultrafast modu, güvenlik olaylarının inceleme süresini 1‑2 saatten 10‑15 dakikaya düşürdü.",
+    "Mühendisler, Codex ile 30 saniye içinde yanıt alabiliyor, bu da odak kaybını önlüyor.",
+    "Kod refaktörleri ve rutin görevler anlık olarak tamamlanabiliyor, teknik borç yönetimi iyileşti."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 3,
+  "onem_gerekce": "İç süreçlerde verimliliği artıran bir araç güncellemesi, dış kullanıcıları doğrudan etkilemese de AI destekli operasyonların geleceği için önemli bir gösterge.",
+  "etiketler": [
+    "OpenAI",
+    "Codex",
+    "Ultrafast",
+    "Olay Müdahalesi",
+    "Yapay Zeka"
+  ],
+  "anilan_modeller": [
+    "Codex"
+  ],
+  "yorum_tr": "Ultrafast, AI destekli araçların gerçek zamanlı operasyonel görevlerde ne kadar etkili olabileceğini gösteriyor. Geliştiriciler, bu tür yüksek hızlı modları kendi iş akışlarına entegre ederek verimlilik ve yanıt süresinde belirgin iyileşmeler elde edebilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://images.ctfassets.net/kftzwdyauwt9/6H0c65mearAtOzTfg4UZNj/28cc9c689c98e9bd68ca92f8c40d9818/oai-ultrafast-series-og-2048.png?w=1600&h=900&fit=fill",
+  "url": "https://openai.com/index/openai-cut-incident-investigation",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-10-26T07:00:00.000Z",
+  "slug": "how-ultrafast-cut-incident-investigation-from-hours-to-minut"
+}

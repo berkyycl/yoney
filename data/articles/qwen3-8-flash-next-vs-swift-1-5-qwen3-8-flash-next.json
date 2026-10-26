@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "Qwen3.8-Flash-Next ve Swift-1.5 Karşılaştırması: Kullanıcı Deneyimleri",
+  "ozet_tr": "Kullanıcı, DSV4 Flash 0731'den Qwen3.8-Flash-Next'e geçiş yaptıktan sonra belirgin bir performans artışı yaşadığını belirtiyor. Ancak modelin token verimliliği düşük olduğu ve gereksiz derin düşünme eğiliminde olduğu vurgulanıyor. Swift-1.5'in bu sorunu azaltması bekleniyor ve topluluktan deneyim paylaşımı isteniyor.",
+  "detayli_icerik_tr": "Reddit'in LocalLLaMA topluluğunda paylaşılan bir gönderide, bir kullanıcı DSV4 Flash 0731 modelinden Qwen3.8-Flash-Next'e geçiş yaptığını ve modelin beklenenden çok daha iyi çalıştığını ifade etti. Kullanıcı, yanıtların kalitesinde ve tutarlılığında gözle görülür bir iyileşme olduğunu, ancak modelin \"derin çalışma\" eğilimi nedeniyle token başına verimliliğinin düşük olduğunu belirtti.\n\nBu derin çalışma, modelin düşünme ve bilgi çekme süreçlerini gereksiz yere uzatması anlamına geliyor; sonuçta yanıt süresi yavaşlıyor ve aynı içerik daha fazla token tüketiyor. Kullanıcı, bu durumun muhtemelen modelin RLHF (Reinforcement Learning from Human Feedback) sürecinde benchmark puanlarını maksimize etmek amacıyla tasarlandığını öne sürüyor.\n\nSwift-1.5 modeli, Qwen serisinin bu aşırı düşünme eğilimini dengelemek üzere geliştirilmiş bir sürüm olarak tanıtılıyor. Geliştiriciler, Swift-1.5'in token verimliliğini artırarak daha hızlı ve daha ekonomik yanıtlar sağlamasını hedefliyor. Gönderi sahibi, Swift-1.5'i denemek ve iki model arasındaki farkları ölçmek için topluluktan deneyim ve karşılaştırma sonuçları talep ediyor.\n\nTopluluk üyelerinden, hem anekdotik hem de kontrollü test sonuçlarıyla ilgili geri bildirimler bekleniyor. Bu tür kullanıcı odaklı geri bildirimler, model iyileştirmeleri ve yeni sürümlerin yönlendirilmesinde kritik bir rol oynuyor.",
+  "onemli_maddeler": [
+    "Qwen3.8-Flash-Next, DSV4 Flash 0731'e göre kalite artışı sağladı ancak token verimliliği düşük.",
+    "Modelin aşırı derin düşünme eğilimi, yanıt süresini uzatıp maliyeti artırıyor.",
+    "Swift-1.5, Qwen serisinin token verimliliğini iyileştirmek ve aşırı düşünmeyi azaltmak için tasarlandı."
+  ],
+  "kategori": "benchmark",
+  "onem": 3,
+  "onem_gerekce": "Kullanıcı deneyimine dayalı bir karşılaştırma olduğu için geliştiriciler ve topluluk için faydalı, ancak sayısal benchmark verisi içermediğinden etkisi sınırlı.",
+  "etiketler": [
+    "Qwen3.8-Flash-Next",
+    "Swift-1.5",
+    "LocalLLaMA",
+    "benchmark",
+    "token-efficiency"
+  ],
+  "anilan_modeller": [
+    "Qwen3.8-Flash-Next",
+    "Swift-1.5"
+  ],
+  "yorum_tr": "Bu tür topluluk temelli geri bildirimler, modelin gerçek dünya performansını anlamak ve sonraki sürümlerde verimlilik sorunlarını gidermek için geliştiricilere değerli yönlendirmeler sunar.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/ukisai/Swift1.5-Qwen3.8-Flash-Next.png",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xfl3wo/qwen38flashnext_vs_swift15qwen38flashnext/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-26T02:35:53.000Z",
+  "slug": "qwen3-8-flash-next-vs-swift-1-5-qwen3-8-flash-next"
+}

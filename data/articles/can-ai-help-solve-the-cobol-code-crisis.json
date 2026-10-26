@@ -1,0 +1,82 @@
+{
+  "baslik_tr": "AI, COBOL Kod Krizisini Çözebilir mi? OpenAI ve Anthropic'tan Modernizasyon İddiaları",
+  "ozet_tr": "OpenAI, en yeni modellerinin eski COBOL kodlarını modern dillere dönüştürme yeteneğinde %87‑%98 arasında davranış koruma başarısı elde ettiğini duyurdu. COBOL, hâlâ küresel bankacılık ve devlet hizmetlerinin %40‑%95'ini desteklerken, bu tür bir otomatik geçişin potansiyel ekonomik etkileri milyarlarca doları bulabilir. Uzmanlar ise, gerçek dünyadaki karmaşık sistemlerin parçalanması ve test edilmesinin hâlâ büyük bir engel olduğunu vurguluyor.",
+  "detayli_icerik_tr": "OpenAI, 19 Ekim'de yayınladığı blog yazısında, GPT‑6.1 Sol ve diğer yeni modellerinin COBOL gibi eski programlama dillerindeki kodları C++, Java, Kotlin, Python ve Rust gibi modern dillere çevirme konusunda \"önemli iyileşmeler\" sağladığını belirtti. Şirket, bir geçişin başarılı sayılabilmesi için tüm testlerin geçmesi gerektiğini vurgulayarak, GPT‑6.1 Sol'un düşük akıl yürütme çabasıyla %87, yüksek çaba ile %98 davranış koruma doğruluğu yakaladığını açıkladı.\n\nIBM verilerine göre, COBOL hâlâ çevrimiçi bankacılık sistemlerinin %40'ını, yüz yüze kredi kartı işlemlerinin %80'ini ve ATM işlemlerinin %95'ini destekliyor; ABD ekonomisine yıllık yaklaşık 105 milyar dolar maliyet getiriyor. Bu kodların yerine yenilerini koymak, sistemlerin kritik doğası ve eski programcıların emekliliği nedeniyle son derece riskli. OpenAI'nin sonuçları, bu riskleri azaltabilecek bir adım olarak görülse de, akademisyenler ve sektör uzmanları, modellerin sadece basit test senaryoları üzerinde değerlendirildiğini ve gerçek dünyadaki büyük, çok katmanlı sistemlerin parçalanmasının hâlâ çözülmemiş bir sorun olduğunu belirtiyor.\n\nAnthropic de benzer bir yaklaşım sergileyerek, Claude Code adlı kod modernizasyon ajanını tanıttı ve COBOL kodlarını Java ya da Python gibi dillere taşıma potansiyelini vurguladı; ancak performans ölçütleri sunmadı. Bu duyuru, IBM hisselerinin düşmesine yol açtı; şirket, hâlâ büyük ölçüde legacy sistem bakım hizmetlerinden gelir elde ediyor. Uzmanlar, AI'nın kod çevirisinden çok, sistem davranışının tam anlaşılması ve kapsamlı test süreçlerinin otomatikleştirilmesi gerektiğini, aksi takdirde küçük bir yüzde bile büyük hatalara yol açabileceğini uyarıyor.\n\nSonuç olarak, AI destekli kod modernizasyonu, COBOL gibi kritik altyapıların sürdürülebilirliğine dair umut vaat ediyor, ancak mevcut değerlendirme metodolojileri gerçek dünya karmaşıklığını tam yansıtmadığı için, insan denetimi ve formal doğrulama gibi ek önlemler hâlâ vazgeçilmez olarak kalıyor.",
+  "onemli_maddeler": [
+    "OpenAI'nin GPT‑6.1 Sol modeli, düşük akıl yürütme çabasıyla %87, yüksek çaba ile %98 davranış koruma doğruluğu sağladı.",
+    "COBOL, küresel bankacılık ve devlet hizmetlerinin büyük bir kısmını (%40‑%95) desteklemeye devam ediyor ve yıllık $105 milyar verim kaybına yol açıyor.",
+    "Uzmanlar, AI'nın kod çevirisinin sistem bütünlüğünü korumak için yeterli olmadığını, kapsamlı test ve formal doğrulama gerektirdiğini belirtiyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "OpenAI'nin modellerindeki önemli performans artışı, kritik altyapıların modernizasyonu için potansiyel bir dönüm noktası oluşturuyor; ancak uzman görüşleri, gerçek dünya uygulamalarının karmaşıklığı nedeniyle etkisinin sınırlı olabileceğini gösteriyor.",
+  "etiketler": [
+    "COBOL",
+    "AI kod modernizasyonu",
+    "OpenAI",
+    "legacy sistemler",
+    "yazılım mühendisliği"
+  ],
+  "anilan_modeller": [
+    "GPT-6.1 Sol",
+    "GPT-6 Astra",
+    "GPT-6 Sol",
+    "GPT-5.6 Sol",
+    "Claude Code"
+  ],
+  "yorum_tr": "AI destekli kod dönüşümü, COBOL gibi eski sistemlerin bakım maliyetlerini azaltma potansiyeli taşısa da, tam otomasyon hâlâ uzakta; geliştiriciler ve işletmeler, AI'yı bir hızlandırıcı olarak görüp, insan denetimi ve kapsamlı test süreçlerini sürdürmelidir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GPT-6.1 Sol",
+      "benchmark": "behavior preservation accuracy",
+      "skor": 87,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "low reasoning effort",
+      "kaynak_metinden_alinti": "GPT-6.1 Sol achieved 87 percent behavior preservation accuracy at low reasoning effort"
+    },
+    {
+      "model": "GPT-6.1 Sol",
+      "benchmark": "behavior preservation accuracy",
+      "skor": 98,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "higher reasoning effort",
+      "kaynak_metinden_alinti": "climbing to 98 percent at higher reasoning"
+    },
+    {
+      "model": "GPT-6 Astra",
+      "benchmark": "behavior preservation accuracy",
+      "skor": 86,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "low reasoning effort",
+      "kaynak_metinden_alinti": "GPT-6 Astra scored around 86 percent at low reasoning"
+    },
+    {
+      "model": "GPT-6 Sol",
+      "benchmark": "behavior preservation accuracy",
+      "skor": 21,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "low reasoning effort",
+      "kaynak_metinden_alinti": "GPT-6 Sol just 21 percent"
+    },
+    {
+      "model": "GPT-5.6 Sol",
+      "benchmark": "behavior preservation accuracy",
+      "skor": 5,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "low reasoning effort",
+      "kaynak_metinden_alinti": "GPT-5.6 Sol a mere 5 percent"
+    }
+  ],
+  "gorsel_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/gettyimages-1246435991.jpg?quality=90&strip=all&crop=0,0,100,100",
+  "url": "https://www.theverge.com/ai-artificial-intelligence/1018434/cobol-migration-legacy-code-openai-anthropic",
+  "source": "The Verge AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-26T13:15:00.000Z",
+  "slug": "can-ai-help-solve-the-cobol-code-crisis"
+}

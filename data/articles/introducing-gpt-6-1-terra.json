@@ -1,0 +1,64 @@
+{
+  "baslik_tr": "OpenAI, GPT-6.1 Terra Modelini Tanıttı: Görsel Akıl Yürütme ve Bilgisayar Kullanımında Yeni Dönem",
+  "ozet_tr": "OpenAI, görsel akıl yürütme, bilgisayar kontrolü ve doğal metin üretiminde büyük bir sıçrama sağlayan GPT-6.1 Terra'yı duyurdu. Model, önceki sürümüne göre %50 daha düşük API maliyeti ve üç kat daha hızlı işlem süresi vaat ediyor. Ayrıca hata oranı ve kodlama yeteneklerinde kayda değer iyileşmeler sunuyor.",
+  "detayli_icerik_tr": "OpenAI, yeni GPT-6.1 Terra modelini tanıtarak, görsel anlama, bilgisayar kullanımı ve metin üretiminde önceki nesillere göre daha yüksek performans ve maliyet etkinliği sunduğunu açıkladı. GPT-6.1 Terra, GPT‑5.6 Terra ve GPT‑6.1 Sol modellerine kıyasla standart API fiyatlarını %50 oranında düşürerek geliştiricilerin yüksek hacimli iş akışlarını otomatikleştirmesini kolaylaştırıyor. ChatGPT Work ve Codex planları da aynı kullanım kotasını daha fazla görevle genişletiyor.\n\nModelin bilgisayar‑kullanım yetenekleri, \"Agents’ Last Exam\" gibi profesyonel görevleri içeren benchmarklarda, orta seviyeli çaba harcarken GPT‑5.6 Terra'ya göre %15 puanlık bir üstünlük sağlarken maliyetini üçte birine indiriyor. Ayrıca, aynı görevlerde Claude Opus 5.5'e göre üç kat token verimliliği ve fiyat açısından bir çeyrek maliyetle çalışıyor; görev başına yaklaşık 9 kat daha düşük maliyetle sonuç veriyor. İşlem süresi açısından ise GPT‑6 Astra ve GPT‑6.1 Sol'dan üç kat daha hızlı.\n\nGörsel akıl yürütme alanında MMMU‑Pro benchmark'inde GPT‑6.1 Terra, tüm akıl yürütme ayarlarında GPT‑5.6 Terra'yı geride bırakarak, en yetenekli sınır modeli GPT‑6 Astra ve GPT‑6.1 Sol'a çok daha düşük maliyetle yaklaşan puanlar elde etti. OSWorld 2.1 testinde de çok adımlı masaüstü uygulama görevlerinde orta çaba seviyesinde GPT‑5.6 Terra'nın en iyi skorunu çok daha düşük maliyetle geçti.\n\nGüvenilirlik açısından, OpenAI iç testlerinde düşük çaba seviyesinde hata oranını %53.6'dan %16.7'ye, maksimum çaba seviyesinde ise %22.6'dan %4.3'e düşürdü. Kodlama yeteneklerinde ise Terminal‑Bench 4.0 benchmark'inde maksimum çaba ile %50.3 başarı oranı yakalayarak, GPT‑5.6 Terra'nın %21.5'lik skorunun iki katından fazla bir performans sergiledi. Daha karmaşık kodlama görevlerinde hâlâ GPT‑6 Astra ve GPT‑6.1 Sol daha uygun olsa da, GPT‑6.1 Terra maliyet‑verimlilik açısından cazip bir seçenek olarak öne çıkıyor.",
+  "onemli_maddeler": [
+    "API fiyatları %50 düşürülerek geliştiricilere yüksek hacimli otomasyon için daha uygun maliyet sağlandı.",
+    "Agents’ Last Exam ve Terminal‑Bench 4.0 gibi benchmarklarda GPT‑5.6 Terra'ya göre %15 puan ve %28.8 puanlık (50.3% vs 21.5%) iyileşme gösterildi.",
+    "Düşük çaba seviyesinde hata oranı %53.6'dan %16.7'ye, maksimum çaba seviyesinde %22.6'dan %4.3'e düşürüldü."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "GPT-6.1 Terra, görsel akıl yürütme, bilgisayar kontrolü ve metin üretiminde hem performans hem de maliyet açısından önemli bir adım atarak AI model pazarında büyük bir etki yaratıyor.",
+  "etiketler": [
+    "GPT-6.1 Terra",
+    "OpenAI",
+    "AI modeli",
+    "visual reasoning",
+    "fiyat"
+  ],
+  "anilan_modeller": [
+    "GPT-6.1 Terra",
+    "GPT-5.6 Terra",
+    "GPT-6.1 Sol",
+    "GPT-6 Astra",
+    "Claude Opus 5.5"
+  ],
+  "yorum_tr": "GPT-6.1 Terra, yüksek verimlilik ve düşük maliyetle kurumsal otomasyon ihtiyaçlarını karşılayarak geliştiricilerin ve işletmelerin AI entegrasyonunu hızlandıracak. Aynı zamanda hata oranındaki düşüş, güvenilirlik beklentilerini yükseltecek ve modelin geniş çaplı benimsenmesini destekleyecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GPT-6.1 Terra",
+      "benchmark": "Internal error-inducing prompts benchmark",
+      "skor": 16.7,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "low reasoning effort",
+      "kaynak_metinden_alinti": "error rate at low reasoning effort fell from 53.6% with GPT-5.6 Terra to 16.7% with GPT-6.1 Terra"
+    },
+    {
+      "model": "GPT-6.1 Terra",
+      "benchmark": "Internal error-inducing prompts benchmark",
+      "skor": 4.3,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "maximum reasoning effort",
+      "kaynak_metinden_alinti": "At maximum effort, the error rate fell by 18 percentage points to 4.3%, nearly matching the rates for GPT-6 Astra and GPT-6.1 Sol."
+    },
+    {
+      "model": "GPT-6.1 Terra",
+      "benchmark": "Terminal-Bench 4.0",
+      "skor": 50.3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "maximum reasoning effort",
+      "kaynak_metinden_alinti": "At maximum reasoning effort, GPT‑6.1 Terra solves 50.3% of tasks, more than double GPT‑5.6 Terra’s published score of 21.5%."
+    }
+  ],
+  "gorsel_url": "https://cdn.openai.com/mdx-assets/71f084db-a08b-48c5-b96e-5fbdc21a1a00/terra-art-card-16x9.0394724b.png",
+  "url": "https://openai.com/index/introducing-gpt-6-1-terra",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-10-26T00:00:00.000Z",
+  "slug": "introducing-gpt-6-1-terra"
+}

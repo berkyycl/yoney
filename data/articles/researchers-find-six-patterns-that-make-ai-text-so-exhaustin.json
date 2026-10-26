@@ -1,0 +1,49 @@
+{
+  "baslik_tr": "Araştırma: AI Metinlerini Yorucu Kılan Altı Dilsel Desen",
+  "ozet_tr": "New York Üniversitesi ve Texas Üniversitesi araştırmacıları, büyük dil modellerinin insan okumasını zorlaştıran altı ortak dilsel deseni tespit etti. Çalışma, Claude, GPT‑5.6, GLM‑5 ve açık kaynak modelleri gibi 14 modeli analiz ederek, bu kalıpların özellikle bilgi yoğun görevlerde aşırı kullanıldığını gösterdi.",
+  "detayli_icerik_tr": "New York Üniversitesi ve University of Texas at Austin'ten bir ekip, 14 farklı dil modelinin casual sohbet, kodlama oturumu ve argümantatif deneme üretimlerini inceledi. Toplam 120 sohbet, 45 kodlama oturumu ve 980 deneme insan yazılarıyla (film altyazıları, StackExchange ve öğrenci denemeleri) karşılaştırıldı. Analiz, modellerin \"reader‑patience budget\" gibi nadir insan kullanımına sahip kelime kombinasyonlarını, uzun ara cümlelerle özne‑yüklem ilişkisini uzatarak ve isimleri üst üste koyarak (ör. \"horror movie soundtrack generator\") okuma yükünü artırdığını ortaya koydu.\n\nAraştırma, altı belirgin dilsel kalıbı tanımladı: (1) alışılmadık kelime birleştirmeleri, (2) uzun ara cümlelerle özneyi uzaklaştırma, (3) bağlaçsız kısaltılmış referanslar, (4) üst üste gelen isim tamlamaları, (5) isimleri fiile dönüştürme ve (6) cansız ögelere canlandırıcı fiiller atama. Örneğin Claude Opus 5, \"A cat who can always get up and away is a much calmer cat\" cümlesinde özne ve yüklemi uzun bir ara cümleyle ayırarak okuma akışını kesiyor.\n\nModel performansları arasında belirgin farklar da gözlemlendi. Daha küçük modeller olan Llama ve Olmo, insan metinlerine en yakın yapıyı sergiledi; Olmo ailesinde temel modelden Olmo Think'e doğru skorlar istikrarlı bir artış gösterdi. Claude Opus 5.5, önceki Opus 5'i 21 kıyaslamadan 19'unda geride bırakarak, hedefli ince ayarların okunabilirliği artırabileceğini kanıtladı. Araştırmacılar, modern LLM'lerin RLHF yerine RLVR gibi doğrulanabilir ödül tabanlı öğrenme yöntemlerine geçişinin, bilgi yoğunluğunu ön planda tutup açıklık ödülünü ihmal ettiğini ve bu yüzden bir \"LLM psikolojisi\" ortaya çıktığını belirtiyor.\n\nÇözüm önerisi olarak, ekip bir modelin eğitimine kısa yanıtları ödüllendiren bir ceza terimi ekledi. Bu model, bağlamdan bağımsız olarak kısa ifadeleri tercih etti ve daha önce görmediği kalıplara bile aynı tercihi genelleştirdi. İnsanların ise bağlama göre uzun ya da kısa ifadeler arasında seçim yapabildiği vurgulandı. Çalışma, model tasarımında okunabilirliğin de bir performans metriği olarak ele alınması gerektiğine işaret ediyor.",
+  "onemli_maddeler": [
+    "Modeller, insan yazısına kıyasla nadir kelime kombinasyonları ve uzun ara cümlelerle okuma zorluğu yaratıyor.",
+    "Claude Opus 5.5, hedefli ince ayar sayesinde Opus 5'i 19/21 kıyaslamada geride bıraktı.",
+    "RLVR gibi doğrulanabilir ödül tabanlı öğrenme, açıklık yerine bilgi yoğunluğunu ödüllendirerek 'LLM psikolojisi' oluşturuyor."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "Dil modeli okunabilirliği üzerine yapılan bu kapsamlı analiz, hem akademik hem de endüstri uygulamalarında model tasarımının yeniden gözden geçirilmesi gerektiğini gösteriyor.",
+  "etiketler": [
+    "AI okunabilirliği",
+    "dil modelleri",
+    "NLP araştırma",
+    "RLVR",
+    "ince ayar"
+  ],
+  "anilan_modeller": [
+    "Claude Opus 5",
+    "Claude Opus 5.5",
+    "GPT-5.6",
+    "GLM-5",
+    "Kimi K2.5",
+    "Llama",
+    "Olmo",
+    "Olmo Think"
+  ],
+  "yorum_tr": "Araştırma, model geliştiricilerinin sadece doğruluk değil, metin akıcılığı ve insan odaklılık gibi kriterleri de optimize etmeleri gerektiğini vurguluyor; kullanıcılar ise daha doğal ve anlaşılır yanıtlar bekleyebilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Claude Opus 5.5",
+      "benchmark": "Opus 5 ile karşılaştırma",
+      "skor": 19,
+      "birim": "out of 21",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Claude Opus 5.5 beats its predecessor Opus 5 in 19 out of 21 comparisons"
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/10/language_letters.png",
+  "url": "https://the-decoder.com/researchers-find-six-patterns-that-make-ai-text-so-exhausting-to-read/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-26T17:50:15.000Z",
+  "slug": "researchers-find-six-patterns-that-make-ai-text-so-exhaustin"
+}

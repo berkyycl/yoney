@@ -1,0 +1,52 @@
+{
+  "baslik_tr": "Ternary Nemotron 30B-A3B Modeli 12 GB GPU’da 368K Bağlam ve Yüksek Hızda Çalışıyor",
+  "ozet_tr": "Boro64 tarafından yayınlanan ternary (1.58‑bit) 30B‑A3B MoE modeli, sadece 12 GB GPU belleğiyle 368 K bağlam uzunluğunu destekliyor. Stock llama.cpp ve PrismML fork’unda aynı dosyayla çalışabilen model, 172 tok/s dekod ve 7 000+ tok/s ön‑dolgu hızı sunuyor.",
+  "detayli_icerik_tr": "Yerel LLaMA topluluğu, boro64 adlı geliştiricinin yeni bir ternary MoE (Mixture‑of‑Experts) modeli olan Ternary Nemotron 30B‑A3B'yi duyurdu. Model, 1.58‑bit ternary kuantizasyonu sayesinde 30 billion parametreli bir yapıyı sadece 12 GB GPU belleğiyle çalıştırabiliyor ve 368 K token uzunluğunda bağlamı işleyebiliyor. Bu, özellikle düşük VRAM'li donanımlarda uzun metin üretimi ve analizine olanak tanıyor.\n\nModel, hem orijinal llama.cpp motoru (b11555+, b11796 sürümleriyle doğrulanmış) hem de PrismML fork/Bonsai (b10793 sürümüyle doğrulanmış) üzerinde tek bir GGUF dosyasıyla çalışıyor. Kullanıcılar, aynı model dosyasını iki farklı motorla test edebildikleri için entegrasyon sürecinde büyük esneklik sağlıyor. Performans ölçümlerine göre model, dekod aşamasında 172 token/s, ön‑dolgu (prefill) aşamasında ise 7 000 token/s üzeri bir hız elde ediyor.\n\nTopluluk, bu modelin ikinci ternary MoE olduğunu ve ilk örnek olarak \"maple-preview\" modelinin stock llama.cpp ile uyumlu olduğunu belirtiyor. Kullanıcılar, CPU‑only performans ölçümlerinin ve daha düşük VRAM (≈10 GB) ortamlarındaki sonuçların paylaşılmasını talep ediyor. Bu talepler, modelin farklı donanım sınıflarında ne kadar ölçeklenebilir olduğunu anlamak için kritik.\n\nModelin açık kaynaklı GGUF formatında sunulması, araştırmacıların ve geliştiricilerin hızlıca deneme yapmasını ve kendi uygulamalarına entegre etmesini kolaylaştırıyor. Ayrıca, yüksek bağlam uzunluğu ve düşük bellek gereksinimi, uzun belgeler, kod tabanları ve çok‑adımlı diyaloglar gibi görevlerde yeni kullanım senaryolarını mümkün kılıyor.",
+  "onemli_maddeler": [
+    "Ternary Nemotron 30B‑A3B, 12 GB GPU’da 368 K bağlam uzunluğunu destekliyor.",
+    "Model, stock llama.cpp ve PrismML fork’da aynı GGUF dosyasıyla çalışıyor.",
+    "Dekod hızı 172 tok/s, ön‑dolgu hızı 7 000+ tok/s olarak raporlandı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 3,
+  "onem_gerekce": "Model, düşük bellekli GPU’larda yüksek bağlam uzunluğu ve ternary kuantizasyonu sayesinde yeni bir teknik yaklaşım sunuyor; ancak topluluk dışı bir duyuru ve sınırlı performans verisi nedeniyle sektörel etkisi orta seviyede.",
+  "etiketler": [
+    "ternary",
+    "MoE",
+    "llama.cpp",
+    "GPU",
+    "AI"
+  ],
+  "anilan_modeller": [
+    "Ternary Nemotron 30B-A3B",
+    "maple-preview"
+  ],
+  "yorum_tr": "Bu model, düşük VRAM sınırlamalarına sahip araştırmacılar ve geliştiriciler için uzun bağlamlı görevlerde yeni bir seçenek sunuyor. Ancak performans verilerinin daha geniş donanım yelpazesinde doğrulanması, benimsenmesini hızlandıracak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Ternary Nemotron 30B-A3B",
+      "benchmark": "Decode throughput",
+      "skor": 172,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "172 tok/s decode"
+    },
+    {
+      "model": "Ternary Nemotron 30B-A3B",
+      "benchmark": "Prefill throughput",
+      "skor": 7000,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "7000+ tok/s prefill"
+    }
+  ],
+  "gorsel_url": "https://external-preview.redd.it/BpR8mNXhZOwd02AeMKoNS2BYEpTE9io7M-akwxNKZGM.png?width=640&crop=smart&auto=webp&s=643041d21707525d5fa7fcfaf74b560ac41bd898",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xfqi2d/boro64ternarynemotron35lightning30ba3bgguf/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-26T07:49:18.000Z",
+  "slug": "boro64-ternary-nemotron-3-5-lightning-30b-a3b-gguf-hugging-f"
+}

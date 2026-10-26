@@ -1,0 +1,44 @@
+{
+  "baslik_tr": "Fanatics ve OpenAI, Fan Deneyimini Yapay Zeka ile Yeniden Şekillendiriyor",
+  "ozet_tr": "Fanatics, OpenAI destekli \"Shop the Look\" özelliğiyle taraftarların maç günü kıyafetlerini tek tıkla tamamlamasını sağlıyor. ChatGPT Work ve Codex kullanılarak geliştirilen sistem, envanter verileri ve takım bilgilerini birleştirerek uyumlu ürün önerileri sunuyor ve ilk testlerde %10 daha yüksek etkileşim sağladı.",
+  "detayli_icerik_tr": "Fanatics, küresel bir dijital spor platformu olarak OpenAI ile ortak bir çalışma başlattı ve \"Shop the Look\" adlı yeni bir özellik hayata geçirdi. Bu özellik, bir takımın forması gibi bir ürün incelendiğinde, aynı takıma ait ve stokta bulunan uyumlu kıyafet ve aksesuarları otomatik olarak öneriyor. Öneriler, OpenAI modellerinin zenginleştirilmiş ürün, takım ve envanter verilerini kullanması ve Fanatics'ın merchandising kurallarına göre filtrelenmesiyle oluşturuluyor; böylece önerilen kombinler her gün katalog güncellemeleriyle yenileniyor.\n\nBu çözüm, Fanatics'ın ChatGPT Work ve Codex araçlarını kullanarak özel veri zenginleştirme, uyumlu ürün bulma, öneri değerlendirme ve kombin oluşturma süreçlerini hızla hayata geçirmesiyle mümkün oldu. İlk 50 ürün için öneri seti, sadece 24 saat içinde geliştirildi ve test edildi; ardından Fanatics ekibi geri bildirim vererek birkaç gün içinde MVP'yi onayladı. Bu hızlı iterasyon, yeni özelliğin aynı hafta içinde üretim ortamına alınmasını sağladı.\n\nPilot aşamasında yaklaşık 30.000 MLB ürününde test edilen sistem, önceki deneyime kıyasla %10 daha yüksek kullanıcı etkileşimi elde etti. Fanatics, bu başarıyı \"Shop the Look\" özelliğini NFL, NBA, MLB ve NHL gibi diğer liglerin resmi online mağazalarına da genişleterek binlerce ürüne ölçeklendirmeyi planlıyor. Böylece taraftarlar, favori takımlarının renk ve stiline uygun tam bir oyun günü görünümü oluşturabilecek.",
+  "onemli_maddeler": [
+    "Fanatics, OpenAI destekli \"Shop the Look\" özelliğini hayata geçirdi.",
+    "ChatGPT Work ve Codex kullanılarak 50 ürün için öneri seti 24 saat içinde geliştirildi.",
+    "30.000 MLB ürününde yapılan testlerde %10 daha yüksek kullanıcı etkileşimi sağlandı.",
+    "Özellik NFL, NBA, MLB ve NHL resmi mağazalarında da kullanılmaya başlandı."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 3,
+  "onem_gerekce": "Taraftar deneyimini iyileştiren yeni bir AI tabanlı öneri sistemi, sektörde ilgi çekici bir iş birliğini gösteriyor ancak doğrudan bir model çıkışı ya da büyük pazar etkisi yaratmıyor.",
+  "etiketler": [
+    "Fanatics",
+    "OpenAI",
+    "Yapay Zeka",
+    "E-ticaret",
+    "Spor"
+  ],
+  "anilan_modeller": [
+    "ChatGPT Work",
+    "Codex"
+  ],
+  "yorum_tr": "Bu iş birliği, spor e-ticaretinde yapay zekanın kişiselleştirilmiş alışveriş deneyimi sunma potansiyelini gösteriyor. Geliştiriciler, OpenAI araçlarını hızlı prototipleme için bir örnek olarak görebilir, kullanıcılar ise daha akıcı ve ilgi çekici bir alışveriş süreci yaşayacak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "OpenAI-powered Shop the Look",
+      "benchmark": "Kullanıcı etkileşimi artışı",
+      "skor": 10,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "After testing the recommendations across roughly 30,000 MLB products, the OpenAI-powered Shop the Look experience achieved 10% higher engagement than the previous experience."
+    }
+  ],
+  "gorsel_url": "https://images.ctfassets.net/kftzwdyauwt9/4HesvKzyeH10Tdn3X9RNpq/28039b261753134c4addc73a90aa3103/fanatics-seo-image.png?w=1600&h=900&fit=fill",
+  "url": "https://openai.com/index/fanatics-streamline-fan-experience",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-10-26T07:00:00.000Z",
+  "slug": "how-fanatics-and-openai-streamline-the-fan-experience"
+}
