@@ -1,0 +1,44 @@
+{
+  "baslik_tr": "Tencent Hy-SimulMT-30B-A3B: Gerçek Zamanlı Çift Yönlü Konuşma‑Konuşma Çeviri Modeli Hugging Face’te",
+  "ozet_tr": "Tencent Hunyuan tarafından geliştirilen Hy‑SimulMT‑30B‑A3B, Çince‑İngilizce arasında gerçek zamanlı, çift yönlü konuşma‑konuşma çevirisi sunuyor. Model, ses akışını anlık olarak çevirirken konuşmacının ses karakterini koruyan gerçek zamanlı ses klonlaması da sağlıyor. Açık kaynak kodlu sürümü Hugging Face üzerinden erişilebilir ve hem akademik hem de ticari uygulamalarda kullanılabilecek bir altyapı sunuyor.",
+  "detayli_icerik_tr": "Tencent Hunyuan ekibi, Hy‑SimulMT‑30B‑A3B modelini, toplantılar, konuşmalar ve röportajlar gibi canlı iletişim senaryoları için tasarladı. Model, gelen ses akışını anlık olarak işleyerek hem çevirilen metni hem de sesli çıktıyı üretir; aynı zamanda konuşmacının ses tonunu ve karakteristik özelliklerini koruyan gerçek zamanlı ses klonlaması özelliği bulunur. Bu sayede çeviri sürecinde bekleme süresi minimuma indirilir ve iletişim akıcılığı artırılır.\n\nModelin performansı, kamuya açık benchmark'lar, gerçek dünya ses kayıtları ve profesyonel simultane tercümanlarla yapılan karşılaştırmalarla ölçülmüştür. RealSI uzun biçimli ses değerlendirmesinde Hy‑SimulMT, yaklaşık 3 saniyelik StreamLAAL (Ses Gecikmesi) değeriyle karşılaştırılan sistemler arasında en düşük gecikmeye ulaşmıştır. Ayrıca GEMBA skorunda, açık kaynak alternatiflerin ve beş ticari API'nin dört tanısının üzerindedir.\n\nHy‑SimulMT, GitHub üzerindeki SimulInfer çıkarım servisi ve SimulTrain eğitim araçlarıyla birlikte sunulmaktadır. Ses çıktısı ve ses klonlaması için ayrı bir TTS hizmeti yapılandırılması gerekir. Kullanıcılar, modelin yeteneklerini Hy Translate uygulaması üzerinden de deneyimleyebilirler. Modelin GGUF formatındaki iki versiyonu (standart ve Interleave) Hugging Face'te yayınlanmıştır.\n\nBu model, açık kaynak topluluğu ve geliştiriciler için gerçek zamanlı konuşma‑konuşma çevirisi alanında yeni bir referans noktası oluşturuyor. Hem akademik araştırmalarda hem de ticari ürünlerde entegrasyon kolaylığı, düşük gecikme süresi ve ses klonlaması gibi özellikleri, çok dilli iletişim çözümlerinin geliştirilmesinde önemli bir adım olarak görülüyor.",
+  "onemli_maddeler": [
+    "Hy‑SimulMT‑30B‑A3B, Çince‑İngilizce çift yönlü gerçek zamanlı konuşma‑konuşma çevirisi sunar.",
+    "Model, yaklaşık 3 saniyelik StreamLAAL gecikmesiyle en düşük yanıt süresine sahiptir.",
+    "GEMBA skorunda açık kaynak modeller ve dört ticari API'nin üzerindedir.",
+    "GitHub'ta SimulInfer ve SimulTrain araçlarıyla çıkarım ve eğitim desteği sağlanır."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Gerçek zamanlı konuşma‑konuşma çevirisi ve ses klonlaması sunan açık kaynak bir model, düşük gecikme süresi ve yüksek kalite skorlarıyla sektördeki mevcut çözümlere kıyasla önemli bir rekabet avantajı sağlıyor.",
+  "etiketler": [
+    "simultaneous-translation",
+    "speech-to-speech",
+    "voice-cloning",
+    "Tencent",
+    "open-source"
+  ],
+  "anilan_modeller": [
+    "Hy-SimulMT-30B-A3B",
+    "Hy-SimulMT-30B-A3B-Interleave"
+  ],
+  "yorum_tr": "Hy‑SimulMT‑30B‑A3B, düşük gecikme süresi ve ses klonlamasıyla gerçek zamanlı çeviri ihtiyaçlarını karşılamada yeni bir standart oluşturabilir; geliştiriciler ve işletmeler, bu modeli kendi iletişim çözümlerine entegre ederek maliyetleri düşürüp performansı artırabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Hy-SimulMT-30B-A3B",
+      "benchmark": "StreamLAAL",
+      "skor": 3,
+      "birim": "seconds",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "RealSI long-form audio evaluation",
+      "kaynak_metinden_alinti": "Hy‑SimulMT achieved a StreamLAAL of approximately 3 seconds, the lowest among the systems shown in the comparison."
+    }
+  ],
+  "gorsel_url": "https://external-preview.redd.it/BdD5UOF5f042otxJTNPM6VI74iUbImXmPOsrbRXUmXM.png?width=640&crop=smart&auto=webp&s=a67fac39a3fd8152bd19d96c8b6e89ec3d8d4040",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xfrgt5/tencenthysimulmt30ba3b_hugging_face/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-26T08:51:23.000Z",
+  "slug": "tencent-hy-simulmt-30b-a3b-hugging-face"
+}

@@ -1,0 +1,46 @@
+{
+  "baslik_tr": "8 GB VRAM ve 32 GB RAM ile Qwen 3.8 Flash Next, 900 t/s PP ve 30 t/s TG hızına ulaştı",
+  "ozet_tr": "Reddit kullanıcısı, RTX 5060 laptopunda 8 GB VRAM ve 32 GB RAM ile Qwen 3.8 Flash Next modelini Strata sayesinde çalıştırıp, 131 K tokenlik bağlamda 930‑1 040 t/s prompt‑processing (PP) ve 30‑45 t/s token‑generation (TG) performansı elde etti. Bu sonuçlar, aynı donanımda çalışan Qwen 3.6 35B A3B modelinin çok üzerinde ve yerel kodlama‑ajan görevlerinde yeni bir kilometre taşı olarak görülüyor.",
+  "detayli_icerik_tr": "Reddit topluluğu LocalLLaMA'da paylaşılan gönderide, kullanıcı BleynSpecnaz RTX 5060 laptop (8 GB VRAM) ve 32 GB DDR5‑5200 RAM üzerine Strata adlı bellek‑paylaşım katmanını kurarak Qwen 3.8 Flash Next Q2 modelini çalıştırdı. Strata, modelin uzman (expert) bölümlerini VRAM, RAM ve SSD arasında dinamik olarak dağıtarak 125 M parametrelik modelleri bile sınırlı GPU belleğiyle çalıştırabilme yeteneği sunuyor. Kullanıcı, \"--mmap-experts\", \"--kv-resident 20480\", \"--vram-reserve-mib 500\" ve \"STRATA_RESIDENT_HEADROOM_GIB=4\" gibi parametreleri ayarlayarak bellek kullanımını optimize etti.\n\nPerformans ölçümleri iki farklı yapılandırma üzerinden yapıldı: Chat (tek oturum) ve Agentic (çoklu oturum ve delegasyon). Chat yapılandırmasında 262 K bağlamda PP 800‑970 t/s, TG 30‑40 t/s; 131 K bağlamda ise PP 930‑1 040 t/s, TG 30‑45 t/s elde edildi. Agentic yapılandırmasında ise aynı bağlamlarda PP 520‑740 t/s ve 670‑890 t/s, TG 30‑40 t/s ve 30‑45 t/s değerleri raporlandı. Bu sonuçlar, aynı donanımda Strata kullanılmadan çalışan Qwen 3.6 35B A3B modelinin PP 630‑680 t/s ve TG 27‑35 t/s performansının çok üzerindedir.\n\nKullanılan quant modeli Gyro S idi; yazar, bu quant'ın kalite‑hız dengesinin en iyi olduğunu belirtti. Diğer denenen quant'lar (GSQ‑RCO Coder, GSQ‑RCO IQ2_XS) ya tekrarlayan döngülere takıldı ya da İngilizce dışı dillerde zorlandı. Vision modülü CPU üzerinde çalıştırıldı ve görüntü işleme 1‑2 saniye sürdü, bu da VRAM tasarrufu sağladı. Ayrıca, uzun bağlamlı (131 K token) görevlerde \"--parallel\" seçeneğinin OOM hatalarına yol açabileceği uyarısı yapıldı; bunun yerine \"--conversation-cache\" parametresi önerildi.\n\nYazar, bu yapılandırmanın gerçek dünya testlerinde kodlama ajanlarının verimliliğini beş kat artırdığını ve kalite açısından da 8 GB VRAM sınırının altında çalışan diğer modellerden üstün olduğunu vurguladı. Paylaşılan konfigürasyon dosyaları (Pastebin, Google Drive) ve kalibrasyon komutları, topluluk üyelerinin benzer donanımlarda deneme yapabilmesi için rehber niteliğinde sunuldu.",
+  "onemli_maddeler": [
+    "Strata sayesinde 8 GB VRAM ve 32 GB RAM ile Qwen 3.8 Flash Next modelinin 900‑1 040 t/s PP ve 30‑45 t/s TG hızına ulaşması.",
+    "Gyro S quant'ının kalite‑hız dengesinde diğer quant'ları geride bırakması ve kodlama ajanlarının verimliliğini 5 kat artırması.",
+    "Chat ve Agentic yapılandırmalarında farklı bağlam boyutları için ayrıntılı performans ölçümlerinin paylaşılması."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Yerel LLM kullanıcıları için düşük bellekli donanımlarda yüksek performans elde edilmesi, model dağıtım tekniklerinin pratik kanıtı ve kodlama‑ajan uygulamalarında verim artışı sağlaması bakımından sektörel etkisi büyük.",
+  "etiketler": [
+    "Qwen",
+    "Strata",
+    "local-LLM",
+    "benchmark",
+    "GPU"
+  ],
+  "anilan_modeller": [
+    "Qwen 3.8 Flash Next",
+    "Qwen 3.6 35B A3B",
+    "Gyro S",
+    "GSQ-RCO Coder",
+    "GSQ-RCO IQ2_XS"
+  ],
+  "yorum_tr": "Strata’nın bellek‑paylaşım yetenekleri, sınırlı VRAM’e sahip laptoplarda bile büyük modellerin akıcı çalışmasını mümkün kılıyor; bu da yerel LLM ekosisteminde daha geniş bir kullanıcı kitlesine yüksek performanslı çözümler sunma potansiyelini artırıyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen 3.6 35B A3B",
+      "benchmark": "Token Generation throughput",
+      "skor": 31,
+      "birim": "t/s",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "TG 27-35 t/s"
+    }
+  ],
+  "gorsel_url": "https://external-preview.redd.it/cmptczU3N2lmc3hoMWtw9J_RnMb3B54nb6jzdqvNCwiwqdjmt7fw3sp33zAY.png?width=640&crop=smart&auto=webp&s=c271f63f4b5509a387e2217dea484917c89f3c56",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xft2ae/have_8_gb_of_vram_and_32_gb_of_ram_you_can_run/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-26T10:26:48.000Z",
+  "slug": "have-8-gb-of-vram-and-32-gb-of-ram-you-can-run-qwen-3-8-flas"
+}
