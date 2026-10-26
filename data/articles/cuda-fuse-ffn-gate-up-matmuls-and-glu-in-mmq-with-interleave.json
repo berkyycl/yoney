@@ -1,0 +1,287 @@
+{
+  "baslik_tr": "CUDA’da FFN gate/up matmul ve GLU birleştirme ile MMQ’da %2‑10 hız artışı",
+  "ozet_tr": "ggml-org/llama.cpp projesine eklenen yeni CUDA çekirdeği, FFN gate/up matmul ve GLU işlemlerini tek adımda birleştirerek çeşitli büyük dil modellerinde token başına saniye (tok/s) oranını %2‑10 oranında artırdı. Testler, DGX Spark (GB10) ve RTX 5090 donanımlarında gerçekleştirildi ve tüm kuantizasyon tiplerinde tutarlı iyileşmeler gösterdi.",
+  "detayli_icerik_tr": "ggml-org/llama.cpp deposuna gönderilen 29948 numaralı pull request, MMQ (Matrix Multiplication Queue) içinde FFN katmanının gate ve up projeksiyonlarını, ayrıca GLU (Gated Linear Unit) işlemlerini birleştiren yeni bir CUDA çekirdeği içeriyor. Bu birleştirme, veri akışını iyileştirerek bellek erişim gecikmelerini azaltıyor ve aynı anda birden fazla matris çarpımını işleyebiliyor.\n\nYapılan benchmarklar, iki farklı donanım platformunda (DGX Spark GB10 ve RTX 5090) çeşitli model ve kuantizasyon kombinasyonlarıyla gerçekleştirildi. DGX Spark üzerinde Qwen3.8-27B modelinin Q4_K_M kuantizasyonunda token/s hızı 840.1'den 899.9'a yükselerek %7.1 artış sağlandı. Benzer şekilde Llama-3.1-8B modelinin Q4_K_M kuantizasyonunda %9.1'lik bir hız artışı gözlendi.\n\nRTX 5090 testlerinde de benzer iyileşmeler kaydedildi; Qwen3.8-27B Q8_0 kuantizasyonunda tok/s 3617.3'ten 3766.9'a çıkarak %4.1 artış gösterdi. Llama-3.1-8B modelinde ise Q4_K_M kuantizasyonunda %4.6, Q5_K_M kuantizasyonunda %4.0 gibi tek haneli yüzde artışları elde edildi. Tüm sonuçlar, yeni çekirdeğin farklı kuantizasyon tiplerinde ve donanımlarda tutarlı bir performans kazancı sağladığını ortaya koyuyor.\n\nBu geliştirme, özellikle düşük bellekli kuantizasyonlarla çalışan araştırmacılar ve üretim ortamları için önemli bir adım. Daha yüksek token/s oranları, aynı donanımda daha uzun metinlerin daha hızlı işlenmesini ve maliyet etkinliğinin artmasını mümkün kılıyor. Geliştiriciler, bu değişikliği kendi projelerinde kullanmak için ilgili PR'ı inceleyebilir ve kod tabanına entegre edebilirler.",
+  "onemli_maddeler": [
+    "FFN gate/up ve GLU matmul işlemlerinin tek bir CUDA çekirdeğinde birleştirilmesi.",
+    "DGX Spark ve RTX 5090 gibi farklı donanımlarda %2‑10 arasında token/s hız artışı.",
+    "Qwen3.8-27B, Qwen3.6-27B ve Llama-3.1-8B modellerinde tüm kuantizasyon tiplerinde tutarlı iyileşme."
+  ],
+  "kategori": "benchmark",
+  "onem": 3,
+  "onem_gerekce": "Topluluk tarafından geliştirilen bu CUDA optimizasyonu, popüler LLM çerçevelerinde performans artışı sağladığı için ilgi çekici ancak henüz geniş çapta üretim ortamlarına yayılmamış bir gelişmedir.",
+  "etiketler": [
+    "CUDA",
+    "LLM",
+    "performans",
+    "kuantizasyon",
+    "benchmark"
+  ],
+  "anilan_modeller": [
+    "Qwen3.8-27B",
+    "Qwen3.6-27B",
+    "Llama-3.1-8B"
+  ],
+  "yorum_tr": "Bu iyileştirme, düşük bellekli kuantizasyonlarla çalışan geliştiricilere ve araştırmacılara daha hızlı çıkarım imkanı sunarak maliyet ve zaman tasarrufu sağlayabilir. Ancak gerçek dünya uygulamalarında tam fayda, entegrasyon ve diğer sistem bileşenleriyle uyumluluğa bağlı olacaktır.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen3.8-27B",
+      "benchmark": "tok/s",
+      "skor": 899.9,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Qwen3.8-27B Q4_K_M 840.1 899.9 +7.1%"
+    },
+    {
+      "model": "Qwen3.8-27B",
+      "benchmark": "tok/s",
+      "skor": 880.6,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Qwen3.8-27B Q5_K_M 840.1 880.6 +4.8%"
+    },
+    {
+      "model": "Qwen3.8-27B",
+      "benchmark": "tok/s",
+      "skor": 785.8,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Qwen3.8-27B Q6_K 751.2 785.8 +4.6%"
+    },
+    {
+      "model": "Qwen3.8-27B",
+      "benchmark": "tok/s",
+      "skor": 940.1,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Qwen3.8-27B Q8_0 876.2 940.1 +7.3%"
+    },
+    {
+      "model": "Qwen3.8-27B",
+      "benchmark": "tok/s",
+      "skor": 948,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Qwen3.8-27B IQ4_XS 882.4 948.0 +7.4%"
+    },
+    {
+      "model": "Qwen3.6-27B",
+      "benchmark": "tok/s",
+      "skor": 865.6,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Qwen3.6-27B Q4_K_M 816.6 865.6 +6.0%"
+    },
+    {
+      "model": "Qwen3.6-27B",
+      "benchmark": "tok/s",
+      "skor": 851.1,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Qwen3.6-27B Q5_K_M 800.0 851.1 +6.4%"
+    },
+    {
+      "model": "Qwen3.6-27B",
+      "benchmark": "tok/s",
+      "skor": 770.4,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Qwen3.6-27B Q6_K 720.8 770.4 +6.9%"
+    },
+    {
+      "model": "Qwen3.6-27B",
+      "benchmark": "tok/s",
+      "skor": 940.2,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Qwen3.6-27B Q8_0 876.9 940.2 +7.2%"
+    },
+    {
+      "model": "Qwen3.6-27B",
+      "benchmark": "tok/s",
+      "skor": 948.5,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Qwen3.6-27B IQ4_XS 882.2 948.5 +7.5%"
+    },
+    {
+      "model": "Llama-3.1-8B",
+      "benchmark": "tok/s",
+      "skor": 3000.6,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Llama-3.1-8B Q4_K_M 2749.3 3000.6 +9.1%"
+    },
+    {
+      "model": "Llama-3.1-8B",
+      "benchmark": "tok/s",
+      "skor": 2960.3,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Llama-3.1-8B Q5_K_M 2699.4 2960.3 +9.7%"
+    },
+    {
+      "model": "Llama-3.1-8B",
+      "benchmark": "tok/s",
+      "skor": 2616,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Llama-3.1-8B Q6_K 2392.2 2616.0 +9.4%"
+    },
+    {
+      "model": "Llama-3.1-8B",
+      "benchmark": "tok/s",
+      "skor": 3249,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Llama-3.1-8B IQ4_XS 2933.9 3249.0 +10.7%"
+    },
+    {
+      "model": "Qwen3.8-27B",
+      "benchmark": "tok/s",
+      "skor": 3790.9,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Qwen3.8-27B Q4_K_M 3688.4 3790.9 +2.8%"
+    },
+    {
+      "model": "Qwen3.8-27B",
+      "benchmark": "tok/s",
+      "skor": 3659.6,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Qwen3.8-27B Q5_K_M 3589.5 3659.6 +2.0%"
+    },
+    {
+      "model": "Qwen3.8-27B",
+      "benchmark": "tok/s",
+      "skor": 3281,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Qwen3.8-27B Q6_K 3220.5 3281.0 +1.9%"
+    },
+    {
+      "model": "Qwen3.8-27B",
+      "benchmark": "tok/s",
+      "skor": 3766.9,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Qwen3.8-27B Q8_0 3617.3 3766.9 +4.1%"
+    },
+    {
+      "model": "Qwen3.8-27B",
+      "benchmark": "tok/s",
+      "skor": 3926.8,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Qwen3.8-27B IQ4_XS 3796.2 3926.8 +3.4%"
+    },
+    {
+      "model": "Qwen3.6-27B",
+      "benchmark": "tok/s",
+      "skor": 3660.3,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Qwen3.6-27B Q4_K_M 3567.9 3660.3 +2.6%"
+    },
+    {
+      "model": "Qwen3.6-27B",
+      "benchmark": "tok/s",
+      "skor": 3525.3,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Qwen3.6-27B Q5_K_M 3429.8 3525.3 +2.8%"
+    },
+    {
+      "model": "Qwen3.6-27B",
+      "benchmark": "tok/s",
+      "skor": 3187.8,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Qwen3.6-27B Q6_K 3105.2 3187.8 +2.7%"
+    },
+    {
+      "model": "Qwen3.6-27B",
+      "benchmark": "tok/s",
+      "skor": 3788.4,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Qwen3.6-27B Q8_0 3628.7 3788.4 +4.4%"
+    },
+    {
+      "model": "Qwen3.6-27B",
+      "benchmark": "tok/s",
+      "skor": 3915.4,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Qwen3.6-27B IQ4_XS 3785.6 3915.4 +3.4%"
+    },
+    {
+      "model": "Llama-3.1-8B",
+      "benchmark": "tok/s",
+      "skor": 12625.9,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Llama-3.1-8B Q4_K_M 12071.5 12625.9 +4.6%"
+    },
+    {
+      "model": "Llama-3.1-8B",
+      "benchmark": "tok/s",
+      "skor": 12297.3,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Llama-3.1-8B Q5_K_M 11823.0 12297.3 +4.0%"
+    },
+    {
+      "model": "Llama-3.1-8B",
+      "benchmark": "tok/s",
+      "skor": 10928.6,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Llama-3.1-8B Q6_K 10513.1 10928.6 +4.0%"
+    },
+    {
+      "model": "Llama-3.1-8B",
+      "benchmark": "tok/s",
+      "skor": 13603.3,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Llama-3.1-8B IQ4_XS 12997.6 13603.3 +4.7%"
+    }
+  ],
+  "gorsel_url": "https://external-preview.redd.it/9FUlr8vCsUCvQCMyA19EW7GIND8XYBMGEUe67JrGFWY.png?width=640&crop=smart&auto=webp&s=b38383298e4b59b21b7609015ca54499c7ad32a9",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xey0uw/cuda_fuse_ffn_gateup_matmuls_and_glu_in_mmq_with/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-25T09:35:12.000Z",
+  "slug": "cuda-fuse-ffn-gate-up-matmuls-and-glu-in-mmq-with-interleave"
+}

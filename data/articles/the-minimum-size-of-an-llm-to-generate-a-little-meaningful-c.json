@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "En Küçük LLM Hangi Boyutta Anlamlı İngilizce Üretebilir?",
+  "ozet_tr": "Kullanıcı, CPU’da rahat çalışabilecek, 10 milyon parametrenin altında bir dil modelinin akıcı ve bağlam içinde tutarlı İngilizce metin üretebilme kapasitesini araştırıyor. Şu ana kadar denediği Supra‑Mini‑v6‑1M modeli, tutarsız ve neredeyse anlamsız çıktılar verdi.",
+  "detayli_icerik_tr": "Reddit'in LocalLLaMA topluluğunda bir kullanıcı, \"normal\" İngilizce üretme yeteneğine sahip en küçük dil modelini bulma çabasıyla dikkat çekti. Modelin, dilbilgisi açısından doğru ve bağlam içinde mantıklı cümleler üretmesi hedeflenirken, aynı zamanda CPU üzerinde çalışabilecek kadar hafif olması isteniyor. Bu doğrultuda, 10 milyon parametreden daha az bir model arayışı içinde, Supra‑Mini‑v6‑1M gibi 1 milyon parametreli bir mikro‑LLM denendi.\n\nDeneme sonucunda elde edilen örnek çıktı, \"Once upon a time\" gibi klasik bir başlangıç promptuna verilen yanıtın, kelime seçimlerinde tutarsızlıklar, anlamsız ifadeler ve hatta bazı bölümlerde tamamen rastgele karakter dizileri içerdiğini gösterdi. Kullanıcı, çıktının hem dilbilgisel hatalarla dolu olduğunu hem de bağlamdan kopuk, neredeyse şablon tabanlı bir metin gibi göründüğünü belirtti.\n\nBu deney, mikro‑LLM'lerin hâlâ dil üretiminde kalite açısından büyük zorluklar yaşadığını ortaya koyuyor. Özellikle düşük parametre sayısına sahip modeller, dilin ince nüanslarını yakalamakta ve tutarlı bir anlatı oluşturmakta yetersiz kalıyor. Topluluk üyeleri, daha büyük parametreli ama hâlâ hafif modeller (örneğin 20‑30M parametreli LLaMA‑mini türevleri) veya quantization teknikleriyle performans artırma yollarını öneriyor.\n\nKullanıcı, \"minimum parametre sayısı nedir?\" sorusunu sorarak, topluluktan daha iyi sonuçlar alabilecek alternatif mikro‑LLM önerileri talep ediyor. Bu tür bir talep, düşük kaynaklı cihazlarda (örneğin eski dizüstü bilgisayarlar, Raspberry Pi) yerel LLM çalıştırmak isteyen geliştiriciler ve araştırmacılar için önemli bir referans noktası oluşturabilir.",
+  "onemli_maddeler": [
+    "Kullanıcı, 10M parametreden az bir LLM ile akıcı İngilizce üretmek istediğini belirtti.",
+    "Denenen Supra‑Mini‑v6‑1M modeli, tutarsız ve anlamsız çıktılar verdi.",
+    "Topluluk, daha büyük ama hâlâ hafif modeller veya quantization yöntemleriyle iyileştirme öneriyor."
+  ],
+  "kategori": "diger",
+  "onem": 2,
+  "onem_gerekce": "Konu, düşük kaynaklı cihazlarda LLM kullanımıyla ilgilenen niş bir topluluk sorusu; sektörel etkisi sınırlı ancak geliştiriciler için faydalı olabilir.",
+  "etiketler": [
+    "mikro-LLM",
+    "CPU",
+    "düşük parametre",
+    "LocalLLaMA",
+    "model değerlendirme"
+  ],
+  "anilan_modeller": [
+    "Supra-Mini-v6-1M"
+  ],
+  "yorum_tr": "Bu tür bir sorgu, düşük donanım gereksinimli yapay zeka çözümlerine ilgi duyan geliştiricileri yönlendirebilir; ancak mevcut mikro‑LLM'lerin kalite sınırları, daha büyük modellerin hafifletilmiş versiyonlarına yönelmeyi zorunlu kılıyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://miro.medium.com/v2/resize:fit:700/1*nK9zWxK95h-m7dJkB1wt6g.png",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xf4sxg/the_minimum_size_of_an_llm_to_generate_a_little/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-25T15:09:15.000Z",
+  "slug": "the-minimum-size-of-an-llm-to-generate-a-little-meaningful-c"
+}
