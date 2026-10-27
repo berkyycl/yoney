@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "Baidu Unlimited OCR 2: Sınırsız Belge İşleme ve SR-SWA ile Yeni Dönem",
+  "ozet_tr": "Baidu, 27 Ekim 2026'da Unlimited OCR 2 modelini duyurdu. Yeni model, Sparse Reference Sliding Window Attention (SR‑SWA) sayesinde belge uzunluğundan bağımsız, sabit gecikmeli ve düşük bellek tüketimli OCR sunuyor. MPDocBench ve MarathonDocBench gibi uzun‑belge benchmark'larında da üstün performans sergiliyor.",
+  "detayli_icerik_tr": "Baidu, yerel topluluk platformu Hugging Face üzerinden Unlimited OCR 2'yi yayınladı. Model, ultra‑uzun metin‑görsel dizilerini sabit boyutlu referans setlerine (örneğin 512 token) sıkıştıran Sparse Reference Sliding Window Attention (SR‑SWA) mekanizmasıyla çalışıyor. Bu sayede her adımda hesaplama karmaşıklığı ve bellek ihtiyacı, belge uzunluğuna bağlı olarak artmıyor.\n\nSR‑SWA, geleneksel tam‑dönüşlü dikkat (full‑attention) mimarisinin quadratik ölçeklenmesini ortadan kaldırarak, uzun belgelerdeki gecikme ve bellek darboğazlarını neredeyse sabit bir seviyede tutuyor. Model, sınırsız‑ufuk (unlimited‑horizon) ayrıştırma yeteneğiyle, sabit bir bağlam penceresi içinde teorik olarak sınırsız sayıda sayfa içeren dokümanları işleyebiliyor.\n\nPerformans açısından Unlimited OCR 2, MPDocBench gibi on‑on sayfalık benchmark'larda ve MarathonDocBench gibi yüzlerce sayfalık ekstrem testlerde state‑of‑the‑art sonuçlar elde etti. Bu başarı, uzun‑belge OCR alanında önceki modellerin karşılaştığı quadratik dikkat ve bellek sınırlamalarını aşarak yeni bir çıta koydu.\n\nModel, Hugging Face reposunda topluluk tarafından erişilebilir durumda ve açık kaynak kodu, araştırmacıların ve geliştiricilerin SR‑SWA'yı kendi OCR çözümlerine entegre etmelerini kolaylaştırıyor. Baidu'nun bu hamlesi, uzun‑döküman işleme ihtiyacı duyan sektörlerde (hukuk, finans, akademik yayıncılık) daha verimli ve ölçeklenebilir çözümler sunma potansiyeli taşıyor.",
+  "onemli_maddeler": [
+    "SR‑SWA, dikkat etkileşimlerini sabit boyutlu referans setine sıkıştırarak hesaplama ve bellek maliyetini belge uzunluğundan bağımsız hâle getiriyor.",
+    "Unlimited OCR 2, sınırsız‑ufuk ayrıştırma yeteneğiyle teorik olarak sınırsız sayfa uzunluğundaki belgeleri işleyebiliyor.",
+    "MPDocBench ve MarathonDocBench gibi uzun‑belge benchmark'larında state‑of‑the‑art performans sergileyerek sektörde yeni bir standart belirledi."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Yeni bir OCR modeli, uzun‑belge işleme sorununu çözerek birçok sektörde verimliliği artırma potansiyeline sahip; ancak henüz geniş çaplı ticari benimsenme aşamasında değil.",
+  "etiketler": [
+    "OCR",
+    "Baidu",
+    "SR-SWA",
+    "Uzun Belge İşleme",
+    "AI"
+  ],
+  "anilan_modeller": [
+    "Unlimited OCR 2"
+  ],
+  "yorum_tr": "Unlimited OCR 2, uzun belgelerdeki bellek ve gecikme sorunlarını aşarak OCR teknolojisinin sınırlarını genişletiyor. Geliştiriciler, SR‑SWA'yı diğer modellerde de kullanarak benzer ölçeklenebilirlik kazanabilir; kullanıcılar ise daha büyük ve karmaşık dokümanları sorunsuzca işleyebilecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/ZtwmBC6QEP-NgiwfuUEz-5mAebQU5DZzRxaKL6xaIvs.png?width=640&crop=smart&auto=webp&s=20d0f49d17637c0547426bbeb41e7e21826d6486",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xgnbtq/baiduunlimitedocr2_hugging_face/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-27T08:54:41.000Z",
+  "slug": "baidu-unlimited-ocr-2-hugging-face"
+}

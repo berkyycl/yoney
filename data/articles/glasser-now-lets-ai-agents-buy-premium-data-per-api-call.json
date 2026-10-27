@@ -1,0 +1,39 @@
+{
+  "baslik_tr": "Glasser, AI ajanlarının API çağrısı başına premium veri satın almasını sağladı",
+  "ozet_tr": "Glasser, tek bir API anahtarıyla 80'den fazla sağlayıcıdan 2.000'den fazla ücretli veri uç noktasına erişim sunuyor ve AI ajanlarının her çağrı için ayrı ayrı ödeme yapmasına imkan tanıyor. Ahrefs, Semrush ve Apollo gibi popüler hizmetler, kullanım hacmine göre dakikada birkaç sentten başlayan fiyatlarla sunuluyor.",
+  "detayli_icerik_tr": "Glasser, AI ajanlarının tek tek premium veri çağrıları yapabilmesi için bir veri hizmeti katmanı oluşturdu. Tek bir API anahtarı, 80'den fazla veri sağlayıcıdan 2.000'den fazla ücretli uç noktaya erişim sağlıyor; bu uç noktalar arasında şirket kayıtları, SEO metrikleri, sosyal medya verileri ve finansal dosyalar bulunuyor. Normalde bu hizmetler aylık abonelik planlarıyla sınırlı iken, Glasser her bir çağrı için ayrı bir ücret talep ediyor.\n\nKullanım süreci oldukça basit: Kullanıcı, Glasser sitesinden tek satırlık bir kurulum komutunu kopyalayıp Claude Code, Codex, Cursor gibi bir AI ajanına yapıştırıyor. Ajan, Glasser komut satırı aracını kuruyor, tarayıcı üzerinden oturum açıyor ve ardından görev için en uygun veri kaynağını seçiyor, çağrı maliyetini kontrol ediyor ve işlemi gerçekleştiriyor. Sonuç olarak, her çağrıdan önce ücret gösteriliyor ve kullanıcı onayı alınıyor; ayrıca mevcut bir sağlayıcı anahtarı varsa onun kullanılması tercih ediliyor.\n\nFiyatlandırma açısından Glasser, Ahrefs organik anahtar kelime verisini 0,055 $ per call, Semrush anahtar kelime metriklerini 0,0011 $ per call ve Apollo şirket aramasını 0,026 $ per call olarak listeliyor. Bu fiyatlarla, örneğin Apollo'da bir kullanıcı ayda 2.500'den fazla şirket araması yapmadıkça, aylık oturum ücretinden daha ucuz bir seçenek elde ediyor. Aynı mantık Ahrefs Lite planı için de geçerli; 2.300'den az anahtar kelime sorgusu yapanlar için per-call ödeme daha avantajlı.\n\nGlasser ayrıca GitHub'da açık kaynak bir beceri kütüphanesi sunuyor. Bu kütüphane, bir rekabet analizi ya da SEO denetimi gibi istekleri doğru veri çağrıları dizisine dönüştüren tarifler (recipes) içeriyor ve sağlayıcı değiştiğinde bile becerilerin çalışmaya devam etmesini sağlıyor. TestingCatalog, Claude üzerinden Glasser bağlayıcısını kullanarak Perplexity domain'i için bir test gerçekleştirdi; bir şirket araması 0,0049 $ maliyetle 2 saniye içinde tamamlandı ve bir Semrush anahtar kelime raporu 0,0055 $ karşılığında elde edildi.",
+  "onemli_maddeler": [
+    "Glasser, AI ajanlarının tek tek premium veri çağrıları yapabilmesi için per-call ödeme modeli sunuyor.",
+    "Ahrefs, Semrush ve Apollo gibi popüler veri sağlayıcıları, kullanım hacmine göre dakikada birkaç sentten başlayan fiyatlarla erişilebilir.",
+    "Kurulum tek bir satırlık komutla yapılabiliyor; ajanlar Glasser CLI'yı kurup otomatik olarak en uygun veri kaynağını seçiyor.",
+    "GitHub'da açık kaynak beceri kütüphanesi, veri çağrısı tariflerini sağlayıcı değişikliklerine karşı dayanıklı hâle getiriyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "AI ajanlarının veri erişim maliyetlerini esnek bir şekilde yönetebilmesi, özellikle düşük hacimli kullanım senaryolarında maliyetleri düşürerek geniş bir geliştirici kitlesine hitap ediyor.",
+  "etiketler": [
+    "AI ajanları",
+    "veri API'leri",
+    "per-call ödeme",
+    "Glasser",
+    "premium veri"
+  ],
+  "anilan_modeller": [
+    "Claude Code",
+    "Codex",
+    "Cursor",
+    "Gemini CLI",
+    "OpenClaw",
+    "Hermes",
+    "Claude on the web"
+  ],
+  "yorum_tr": "Glasser'ın per-call veri satın alma modeli, düşük hacimli projeler ve deneysel AI uygulamaları için maliyet etkin bir alternatif sunarak veri erişiminde yeni bir esneklik katmanı oluşturuyor. Geliştiriciler, ihtiyaç duydukları veriyi anlık olarak ve sadece kullandıkları kadar ödeyerek daha hızlı prototipleme yapabilecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/10/glasser-banner.webp",
+  "url": "https://www.testingcatalog.com/glasser-now-lets-ai-agents-buy-premium-data-per-api-call/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-27T11:28:21.000Z",
+  "slug": "glasser-now-lets-ai-agents-buy-premium-data-per-api-call"
+}

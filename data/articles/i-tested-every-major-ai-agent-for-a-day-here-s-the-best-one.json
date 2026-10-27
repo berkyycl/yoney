@@ -1,0 +1,209 @@
+{
+  "baslik_tr": "Bir Gün İçinde Tüm Büyük AI Ajanlarını Test Ettim: En İyi Hangisi?",
+  "ozet_tr": "WIRED AI, iPhone’da çalışan altı popüler yapay zeka ajanını bir gün boyunca denedi ve görev tamamlama, tarayıcı kontrolü ve proaktif hatırlatma yeteneklerini puanladı. En yüksek puanları OpenAI Dots ve Meta Muse aldı, düşük performans ise Grok Bot ve Instinct gibi seçeneklerde gözlendi.",
+  "detayli_icerik_tr": "Geçtiğimiz yıl, yapay zeka ajanlarının hâlâ pek çok eksikliği olduğu yönündeki eleştirileri sıkça duyan WIRED ekibi, bu yıl piyasaya sürülen yeni nesil ajanların ne kadar ilerlediğini ölçmek için bir deneme düzenledi. Yazar, iPhone’una Meta Muse, OpenAI Dots, Instinct, Anthropic Claude Duet, Google Gemini Spark ve xAI Grok Bot olmak üzere altı ajan kurdu ve her birine dört temel senaryo üzerinden puan verdi: sabah haber derlemesi, öğle yemeği siparişi, takvim çakışması tespiti ve tatil planı hazırlama.\n\nSabah haber derlemesi testinde, ajanların araştırma süresi ve başlık kalitesi değerlendirildi. Gemini Spark 5 üzerinden 5 puan alarak en kapsamlı ve ilgi çekici başlığı sundu, ardından Claude Duet 4 puan, Muse 3 puan, Dots 2 puan ve Grok Bot ile Instinct ise 1 puan aldı. Öğle yemeği senaryosunda ise Dots 5 puanla en doğru ve uygun siparişi oluştururken, Gemini Spark sadece 1 puan alarak yetersiz bir menü önerdi.\n\nTakvim çakışması testinde, ajanların e-posta ve takvim verilerini birleştirerek çakışmayı tespit edip alternatif önerme yetenekleri ölçüldü. Dots yine 5 puanla en hızlı ve etkili uyarıyı sağladı, Claude Duet 4 puanla çakışmayı fark etti ancak çözüm önerisi sunamadı. Grok Bot, Instinct ve Muse 2 puan alırken, Gemini Spark 1 puanla çakışmayı hiç fark etmedi.\n\nTatildeki rota planlama testinde sadece Muse puan verildi; 5 üzerinden 5 puan alarak net, tablo şeklinde ve görsel açıdan anlaşılır bir Çin seyahat programı sundu. Diğer ajanların bu testteki performansına dair detaylar metinde yer almadı. Test sonuçları, ajanların hâlâ görev odaklılık ve veri bütünlüğü konularında farklı seviyelerde olgunlaştığını gösteriyor ve gizlilik, güvenlik risklerinin hâlâ önemli bir endişe kaynağı olduğunu vurguluyor.",
+  "onemli_maddeler": [
+    "OpenAI Dots ve Meta Muse, dört testte de en yüksek puanları alarak güncel AI ajanları arasında lider konumda.",
+    "Google Gemini Spark, haber derlemesinde yüksek puan alırken, diğer senaryolarda düşük performans gösterdi.",
+    "AI ajanları hâlâ gizlilik ve veri güvenliği riskleri taşıyor; kullanıcıların kişisel takvim ve e-posta verilerini paylaşması güven sorunları yaratabiliyor."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "AI ajanları, kişisel ve kurumsal otomasyonun geleceğini şekillendirecek; bu kapsamlı karşılaştırma, geliştiriciler ve erken benimseyenler için kritik yönlendirmeler sunuyor.",
+  "etiketler": [
+    "AI ajanları",
+    "otomasyon",
+    "yapay zeka",
+    "karşılaştırma",
+    "verimlilik"
+  ],
+  "anilan_modeller": [
+    "Meta Muse",
+    "OpenAI Dots",
+    "Instinct",
+    "Anthropic Claude Duet",
+    "Google Gemini Spark",
+    "xAI Grok Bot"
+  ],
+  "yorum_tr": "Bu test, AI ajanlarının iş akışlarını otomatikleştirmedeki potansiyelini ortaya koyarken, performans farklılıklarının ve gizlilik kaygılarının da göz önünde bulundurulması gerektiğini gösteriyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Google Gemini Spark",
+      "benchmark": "Sabah Haber Derlemesi",
+      "skor": 5,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "1-5 ölçeği",
+      "kaynak_metinden_alinti": "Gemini Spark: 5/5. A conversational headline that identifies a core tension online."
+    },
+    {
+      "model": "Anthropic Claude Duet",
+      "benchmark": "Sabah Haber Derlemesi",
+      "skor": 4,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "1-5 ölçeği",
+      "kaynak_metinden_alinti": "Claude Duet: 4/5. Another interesting and timely pitch."
+    },
+    {
+      "model": "Meta Muse",
+      "benchmark": "Sabah Haber Derlemesi",
+      "skor": 3,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "1-5 ölçeği",
+      "kaynak_metinden_alinti": "Muse: 3/5. Not bad, but not that strong."
+    },
+    {
+      "model": "OpenAI Dots",
+      "benchmark": "Sabah Haber Derlemesi",
+      "skor": 2,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "1-5 ölçeği",
+      "kaynak_metinden_alinti": "Dots: 2/5. More evergreen than news."
+    },
+    {
+      "model": "xAI Grok Bot",
+      "benchmark": "Sabah Haber Derlemesi",
+      "skor": 1,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "1-5 ölçeği",
+      "kaynak_metinden_alinti": "Grok Bot: 1/5. Old news."
+    },
+    {
+      "model": "Instinct",
+      "benchmark": "Sabah Haber Derlemesi",
+      "skor": 1,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "1-5 ölçeği",
+      "kaynak_metinden_alinti": "Instinct: 1/5. A bland and hard-to-measure experiment."
+    },
+    {
+      "model": "OpenAI Dots",
+      "benchmark": "Öğle Yemeği Siparişi",
+      "skor": 5,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "1-5 ölçeği",
+      "kaynak_metinden_alinti": "Dots: 5/5. Actually ordered what this bot put in the cart."
+    },
+    {
+      "model": "Meta Muse",
+      "benchmark": "Öğle Yemeği Siparişi",
+      "skor": 4,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "1-5 ölçeği",
+      "kaynak_metinden_alinti": "Muse: 4/5. Very similar to the order that I actually placed."
+    },
+    {
+      "model": "xAI Grok Bot",
+      "benchmark": "Öğle Yemeği Siparişi",
+      "skor": 4,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "1-5 ölçeği",
+      "kaynak_metinden_alinti": "Grok Bot: 4/5. Another strong alternative."
+    },
+    {
+      "model": "Anthropic Claude Duet",
+      "benchmark": "Öğle Yemeği Siparişi",
+      "skor": 3,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "1-5 ölçeği",
+      "kaynak_metinden_alinti": "Claude Duet: 3/5. Picked Freshroll and asked if I wanted the order through DoorDash or Uber Eats."
+    },
+    {
+      "model": "Instinct",
+      "benchmark": "Öğle Yemeği Siparişi",
+      "skor": 2,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "1-5 ölçeği",
+      "kaynak_metinden_alinti": "Instinct: 2/5. Created a similar cart as Claude Duet, but it was $4 more expensive."
+    },
+    {
+      "model": "Google Gemini Spark",
+      "benchmark": "Öğle Yemeği Siparişi",
+      "skor": 1,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "1-5 ölçeği",
+      "kaynak_metinden_alinti": "Gemini Spark: 1/5. If I brought my boss a single $6 spring roll for lunch, he’d end up hangry."
+    },
+    {
+      "model": "OpenAI Dots",
+      "benchmark": "Takvim Çakışması Tespiti",
+      "skor": 5,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "1-5 ölçeği",
+      "kaynak_metinden_alinti": "Dots: 5/5. Flagged the issue almost immediately and suggested a reasonable alternative."
+    },
+    {
+      "model": "Anthropic Claude Duet",
+      "benchmark": "Takvim Çakışması Tespiti",
+      "skor": 4,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "1-5 ölçeği",
+      "kaynak_metinden_alinti": "Claude Duet: 4/5. Flagged the conflict hours before it happened, but didn’t find alternatives."
+    },
+    {
+      "model": "xAI Grok Bot",
+      "benchmark": "Takvim Çakışması Tespiti",
+      "skor": 2,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "1-5 ölçeği",
+      "kaynak_metinden_alinti": "Grok Bot: 2/5. Missed the conflict on my schedule, though it shared how to avoid this happening again."
+    },
+    {
+      "model": "Instinct",
+      "benchmark": "Takvim Çakışması Tespiti",
+      "skor": 2,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "1-5 ölçeği",
+      "kaynak_metinden_alinti": "Instinct: 2/5. It didn't flag the overlap, but it provided tips to fix similar issues in the future."
+    },
+    {
+      "model": "Meta Muse",
+      "benchmark": "Takvim Çakışması Tespiti",
+      "skor": 2,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "1-5 ölçeği",
+      "kaynak_metinden_alinti": "Muse: 2/5. Made the same mistake and offered similar fixes."
+    },
+    {
+      "model": "Google Gemini Spark",
+      "benchmark": "Takvim Çakışması Tespiti",
+      "skor": 1,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "1-5 ölçeği",
+      "kaynak_metinden_alinti": "Gemini Spark: 1/5. It didn't flag the overlapping events and didn’t suggest easy ways to avoid this in the future."
+    },
+    {
+      "model": "Meta Muse",
+      "benchmark": "Tatilde Rota Planı",
+      "skor": 5,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "1-5 ölçeği",
+      "kaynak_metinden_alinti": "Muse: 5/5. This draft itinerary was extremely easy to read, with visual tables and straightforward tips."
+    }
+  ],
+  "gorsel_url": "https://media.wired.com/photos/6adbdf82eed013bcc79da54f/master/pass/gear-ai-agent-best.jpg",
+  "url": "https://www.wired.com/story/i-tested-every-major-ai-agent-for-a-day-heres-the-best-one/",
+  "source": "WIRED AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-27T09:30:00.000Z",
+  "slug": "i-tested-every-major-ai-agent-for-a-day-here-s-the-best-one"
+}

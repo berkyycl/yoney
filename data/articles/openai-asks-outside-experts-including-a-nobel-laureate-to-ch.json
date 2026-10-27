@@ -1,0 +1,30 @@
+{
+  "baslik_tr": "OpenAI, Nobel ödüllülü uzmanlar dahil dış uzmanlardan AI tarafından üretilen kanıtları incelemesini istedi",
+  "ozet_tr": "OpenAI, yapay zekâ modellerinin matematik, bilgisayar bilimi ve fizik alanlarında ürettiği kanıtları bağımsız uzmanlara sundu ve bu kanıtların geçerliliğini teyit etmeleri için bir “shepherd” süreci başlattı. Şirket, kanıtları Lean programlama diliyle formalize ederek araştırmacıların incelemesine açtı.",
+  "detayli_icerik_tr": "OpenAI, dahili yapay zekâ sistemlerinin Exponential Time Hypothesis (ETH)’yi çürüttüğünü, yerel yumuşatma (local smoothing) varsayımını tüm boyutlarda kanıtladığını ve dört boyutta bazı kuantum alan teorilerinin var olduğunu iddia eden üç ayrı bilimsel sonuç yayınladı. Bu sonuçların her biri, ilgili alanda yıllardır kabul edilen temel varsayımları sarsma potansiyeline sahip.\n\nBilgisayar bilimi alanında, ETH’nin yanlış olduğu iddiası SAT probleminin en kötü durum zaman karmaşıklığını yeniden tanımlayabilir. OpenAI’nin kanıtı, bu varsayım üzerine inşa edilen yüzlerce çalışmanın temellerini sarsabilir; ancak pratik etkileri hâlâ belirsiz. MIT’li Ryan Williams ve UC San Diego’dan Russell Impagliazzo, Ramamohan Paturi gibi isimler, gizlilik anlaşması olmadan bağımsız inceleme yapacaklarını ve ara bulgularını paylaşacaklarını duyurdu.\n\nMatematikte, Christopher Sogge’nin 1991’de ortaya attığı yerel yumuşatma varsayımının tüm boyutlarda kanıtlandığı iddiası, Kakeya ve Stein kısıtlama varsayımlarını da otomatik olarak çözmüş olur. OpenAI, bu kanıtları da Lean’e çevirdi ve doğrudan topluluğa yayınladı; henüz bir “shepherd” grubu atanmadı.\n\nFizik kısmında ise, yapay zekâ dört boyutta Yang‑Mills teorisinin varlığını kanıtladığını, ancak kütle boşluğunu (mass gap) çözmediğini belirtti. Bu, Clay Mathematics Institute’un bir Millennium Prize Problem’inin bir kısmının çözülmesi anlamına geliyor. Nobel ödüllü David Gross ve ekibi, bu sonuçları incelemek üzere bir grup oluşturdu ve OpenAI, ilgili materyalleri henüz paylaşmayıp kendi raporlarını hazırlayacaklarını açıkladı.\n\nOpenAI, sürecin şeffaflığı ve bilimsel kredinin doğru dağıtılması gerektiğini vurgulayarak, tüm ham verileri ve Lean kanıtlarını yayınladı, ayrıca bu alandaki tartışmaları desteklemek için Simons Foundation’a 5 milyon dolar bağışta bulundu.",
+  "onemli_maddeler": [
+    "OpenAI, ETH’nin yanlış olduğunu iddia eden kanıtı dış uzmanlara sundu; bu, karmaşıklık teorisinin temelini sarsabilir",
+    "Yerel yumuşatma varsayımının tüm boyutlarda kanıtlandığı iddiası, Kakeya ve Stein kısıtlama varsayımlarını da çözüyor",
+    "AI, dört boyutta Yang‑Mills teorisinin varlığını kanıtladı; bu, Millennium Prize Problem’inin bir kısmının çözülmesi anlamına geliyor"
+  ],
+  "kategori": "arastirma",
+  "onem": 5,
+  "onem_gerekce": "AI tarafından üretilen temel bilim kanıtlarının bağımsız doğrulama sürecine alınması, hem yapay zekânın araştırma metodolojisini hem de ilgili disiplinlerin teorik temellerini kökten etkileyebilecek nitelikte olduğundan sektörde büyük önem taşımaktadır.",
+  "etiketler": [
+    "AI",
+    "matematik",
+    "bilgisayar bilimi",
+    "fizik",
+    "kanıt doğrulama"
+  ],
+  "anilan_modeller": [],
+  "yorum_tr": "Bu adım, yapay zekânın bilimsel keşiflerde doğrudan üretken bir rol oynamasını mümkün kılarken, sonuçların güvenilirliğini sağlamak için yeni bir inceleme ekosistemi gerektireceğini gösteriyor. Geliştiriciler, modellerin formal kanıt üretme yeteneklerini daha şeffaf ve denetlenebilir hale getirmeye odaklanmalı.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/10/openai_navier.png",
+  "url": "https://the-decoder.com/openai-asks-outside-experts-including-a-nobel-laureate-to-check-proofs-its-ai-produced-in-math-computer-science-and-physics/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-27T12:37:24.000Z",
+  "slug": "openai-asks-outside-experts-including-a-nobel-laureate-to-ch"
+}

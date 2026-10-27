@@ -1,0 +1,53 @@
+{
+  "baslik_tr": "Ling-3.1-flash-1019 ağırlıkları yayınlandı, temel model de sunuldu",
+  "ozet_tr": "InclusionAI, 560 milyar parametreli Ling-3.1-flash-1019 modelinin ağırlıklarını Hugging Face üzerinden erişime açtı. Model, 25 milyar aktif parametresi ve 1 M bağlam penceresiyle dikkat çekerken, AA Intelligence Index puanı 41'den 44'e, AutomationBench‑AA ise %62'den %68'e yükseldi.",
+  "detayli_icerik_tr": "InclusionAI, beş gün içinde \"coming soon\" olarak duyurduğu Ling-3.1-flash-1019 modelinin ağırlıklarını resmi olarak yayınladı. Toplam 560 milyar parametreye sahip modelin aktif kısmı 25 milyar parametre olarak sunuluyor ve 1 M tokenlık bağlam penceresi, uzun metin işleme yeteneğini önemli ölçüde artırıyor. Ağırlıklar Hugging Face platformunda \"inclusionAI/Ling-3.1-flash-1019\" adıyla bulunabiliyor.\n\nYayınla birlikte, modelin AA Intelligence Index v4.3.2 puanı 41'den 44'e yükseltilmiş olarak rapor edildi. Bu puan, modelin genel zekâ ve problem çözme yeteneklerini ölçen bir endeks olup, güncellenmiş sürümün önceki versiyona göre daha rekabetçi olduğunu gösteriyor. Ayrıca, AutomationBench‑AA skorunda %62'den %68'e bir artış kaydedildi; bu yüzde, otomasyon ve görev odaklı benchmarklarda modelin performansının iyileştiğini işaret ediyor.\n\nInclusionAI, aynı zamanda Ling-3.1-flash-base modelini BF16 formatında yayınlayarak topluluğa kendi ince ayar (post‑training) süreçlerini başlatma imkanı sundu. Bu temel model, araştırmacıların ve geliştiricilerin sıfırdan bir sohbet modeli yerine, daha hafif bir başlangıç noktası üzerinden özelleştirme yapmalarını sağlıyor. Kullanıcıların dikkat etmesi gereken tek nokta, 1019 sürümünün README dosyasındaki SGLang örnek komutunun hâlâ eski model yolunu (inclusionAI/Ling-3.1-flash) göstermesi; yeni checkpoint için yolun \"inclusionAI/Ling-3.1-flash-1019\" olarak güncellenmesi gerekiyor.\n\nBu adım, açık kaynak büyük dil modelleri ekosisteminde hem erişilebilirliği artırıyor hem de topluluk tarafından daha fazla araştırma ve uygulama geliştirilmesine zemin hazırlıyor. Modelin yüksek parametre sayısı ve geniş bağlam penceresi, özellikle uzun doküman analizi, kod üretimi ve çok aşamalı diyalog senaryolarında yeni fırsatlar sunuyor.",
+  "onemli_maddeler": [
+    "Ling-3.1-flash-1019 ağırlıkları Hugging Face'te yayınlandı (560B toplam, 25B aktif).",
+    "Modelin bağlam penceresi 1 M token olarak belirlendi.",
+    "AA Intelligence Index v4.3.2 puanı 41'den 44'e, AutomationBench‑AA %62'den %68'e yükseldi.",
+    "Ling-3.1-flash-base BF16 formatında sunularak özelleştirme imkanı sağlandı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Yeni büyük ölçekli modelin yayınlanması ve benchmark skorlarındaki belirgin iyileşmeler, araştırmacılar ve geliştiriciler için önemli bir kaynak ve performans artışı sunuyor.",
+  "etiketler": [
+    "Ling-3.1",
+    "flash",
+    "ağırlık",
+    "benchmark",
+    "AI"
+  ],
+  "anilan_modeller": [
+    "Ling-3.1-flash-1019",
+    "Ling-3.1-flash-base"
+  ],
+  "yorum_tr": "Bu yayın, açık kaynak topluluğuna yüksek kapasiteli bir model ve özelleştirilebilir bir temel sunarak inovasyonu hızlandırıyor. Geliştiriciler, artan benchmark skorları sayesinde daha güvenilir uygulamalar geliştirebilir, kullanıcılar ise uzun bağlam gerektiren senaryolarda daha tutarlı deneyimler yaşayabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Ling-3.1-flash-1019",
+      "benchmark": "AA Intelligence Index v4.3.2",
+      "skor": 44,
+      "birim": "",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "This is the update they reported at 44 on the AA Intelligence Index v4.3.2, up from 41."
+    },
+    {
+      "model": "Ling-3.1-flash-1019",
+      "benchmark": "AutomationBench-AA",
+      "skor": 68,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "AutomationBench-AA went from 62% to 68%, according to the release."
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/9pgeqvalb0yh1.jpeg?width=640&crop=smart&auto=webp&s=e2039061a0b727beb8a08a2489adf1f55374d490",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xgrr8n/ling31flash1019_weights_are_out_and_they_released/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-27T12:55:08.000Z",
+  "slug": "ling-3-1-flash-1019-weights-are-out-and-they-released-the-ba"
+}

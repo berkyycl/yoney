@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "Eski DeepMind araştırmacısı AlphaGo'nun yöntemiyle AI halüsinasyonlarını önlemeyi hedefliyor",
+  "ozet_tr": "Thore Graepel, DeepMind'den ayrılarak kurduğu Metis Reasoning projesiyle, AlphaGo'nun oyun içi arama mekanizmasını genel yapay zeka akıl yürütmesine uyarlamayı planlıyor. Bilgi ağırlıklı bir \"knowledge ledger\" oluşturarak her çıkarımı bağımsız bir doğrulama modülüyle kontrol etmeyi ve böylece model ağırlıklarına gömülü hatalı bilgilerden kaynaklanan halüsinasyonları azaltmayı amaçlıyor.",
+  "detayli_icerik_tr": "Thore Graepel, AlphaGo'nun 2016'da Lee Sedol'u yenmesinde kritik rol oynayan iki sinir ağı ve sistematik arama kombinasyonunu, genel amaçlı yapay zeka sistemlerine taşımak için Metis Reasoning adlı bir girişim başlattı. Metis, model ağırlıklarından bağımsız bir \"knowledge ledger\" (bilgi defteri) kullanarak, sistemin neyi bildiğini, hangi güven seviyesine sahip olduğunu ve hangi soruların hâlâ açık olduğunu kaydediyor. Bu deftere yeni bir bilgi eklendiğinde, ayrı bir doğrulama modülü hesaplamalar, formal kanıtlar ya da ampirik verilerle kontrol ediyor; eğer doğrulama başarısız olursa, o bilgiye dayanan tüm sonuçlar yeniden değerlendirilerek hatalı çıktılar önleniyor.\n\nMetis'in mimarisi, AlphaGo'nun öneri ve değerlendirme ağlarını genelleştirerek iki sinir ağı arasında bir oyun tahtası gibi işlev gören bilgi durumunu oluşturuyor. Her adımda sistem, belirsizliği en çok azaltacak \"hamle\"yi – bir soru, deney ya da mevcut varsayımın sorgulanması – seçiyor ve bu hamle yalnızca bağımsız doğrulama kurallarını geçtiğinde bilgi defterine işleniyor. Bu sayede ortaya çıkan yanıtlar, kaynakça ile desteklenmiş açıklamalara sahip oluyor ve gerektiğinde model yeniden eğitilmeden bilgi silinebiliyor.\n\nGraepel, mevcut büyük dil modellerinin sadece ağırlıklara gömülü bilgiye dayanarak halüsinasyon üretmeye devam ettiğini ve bu durumun ekonomik etkilerini sınırladığını vurguluyor. Metis'in yaklaşımı, özellikle robotik, tıp, finans ve çip tasarımı gibi alanlarda, kararların izlenebilir ve geri alınabilir olması gerektiği durumlarda fayda sağlayabilir. Ancak şirket, şu ana kadar sadece bir araştırma programı ve beyaz kağıt sunmuş; çalışan bir sistem, benchmark sonuçları ya da gerçek dünya testleri henüz mevcut değil.\n\nGraepel'in geçmişi DeepMind'de AlphaGo, AlphaZero ve MuZero projelerinde yer alması ve Microsoft Research'te TrueSkill geliştirmesiyle dikkat çekiyor. Metis, düşük ondalık milyon dolar seviyesinde bir ilk yatırım turu toplarken, daha büyük bir sonraki tur için yüz milyon dolarlık bir değerleme hedefliyor. Bu girişim, DeepMind'in yetenekli araştırmacılarının bağımsız girişimlerde yeni AI güvenilirliği çözümleri üretme eğiliminin bir göstergesi olarak görülüyor.",
+  "onemli_maddeler": [
+    "Metis Reasoning, AlphaGo'nun arama temelli yaklaşımını genel AI akıl yürütmesine uyarlamayı öneriyor.",
+    "Bilgi ağırlıklı bir \"knowledge ledger\" ile her çıkarım bağımsız bir doğrulama modülünden geçiyor, böylece halüsinasyon riski azalıyor.",
+    "Proje şu ana kadar sadece teorik bir çerçeve; çalışan bir sistem, benchmark veya gerçek dünya uygulaması henüz bulunmuyor."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "AI halüsinasyonları ve açıklanabilirlik sorunları, endüstriyel uygulamalarda kritik bir engel oluşturuyor; AlphaGo temelli yeni bir mimarinin önerilmesi sektörde önemli bir araştırma yönü sunuyor.",
+  "etiketler": [
+    "AI güvenilirliği",
+    "AlphaGo",
+    "Metis Reasoning",
+    "halüsinasyon",
+    "yapay zeka araştırması"
+  ],
+  "anilan_modeller": [
+    "AlphaGo",
+    "AlphaZero",
+    "MuZero"
+  ],
+  "yorum_tr": "Metis'in önerdiği dışsal bilgi defteri ve bağımsız doğrulama mekanizması, AI sistemlerinin güvenilirliğini artırma potansiyeli taşısa da, henüz prototip aşamasında olduğu için pratik etkisi belirsiz. Başarılı bir uygulama, özellikle yüksek riskli sektörlerde AI kabulünü hızlandırabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/10/metis-reasoning-07-reasoning-illustration.jpg",
+  "url": "https://the-decoder.com/former-deepmind-researcher-thinks-alphagos-playbook-can-cure-ai-hallucinations/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-27T13:55:24.000Z",
+  "slug": "former-deepmind-researcher-thinks-alphago-s-playbook-can-cur"
+}

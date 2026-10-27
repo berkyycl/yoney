@@ -1,0 +1,74 @@
+{
+  "baslik_tr": "OpenAI, Hassas Bilgisayar Kullanımı İçin GPT-6.1 Terra’yı Tanıttı",
+  "ozet_tr": "OpenAI, görsel akıl yürütme, kesin bilgisayar kullanımı ve doğal yazım yeteneklerini birleştiren yeni GPT-6.1 Terra modelini duyurdu. Şirket, modelin önceki sürüm GPT-5.6 Terra’ya göre orta seviyedeki akıl yürütme testlerinde %15 daha yüksek performans gösterdiğini ve maliyet açısından üç kat daha verimli olduğunu belirtiyor.",
+  "detayli_icerik_tr": "OpenAI, GPT-6.1 Terra’yı \"hızlı, verimli ve görsel‑akıl yürütme odaklı\" bir model olarak tanıttı. Model, teknik çizimler, formlar, öneri hazırlama ve video düzenleme gibi görevlerde yüksek doğruluk sunarken, aynı zamanda daha doğal ve akıcı bir dil üretimi sağlıyor. OpenAI, Terra’nın GPT-5.6 Terra’ya kıyasla orta seviyedeki akıl yürütme testlerinde %15 puanlık bir üstünlük elde ettiğini ve token başına maliyetinin GPT-6 Astra’nın onda biri olduğunu vurguladı.\n\nTerra, maksimum çaba seviyesinde Claude Opus 5.5’e göre üç kat daha token‑verimli ve token başına fiyatının dörtte biri olduğu için görev başına yaklaşık dokuz kat daha düşük maliyetle çalışıyor. Ayrıca, aynı çaba seviyesinde GPT-6 Astra ve GPT-6.1 Sol modellerine göre görevleri üç kat daha hızlı tamamlıyor. Bu performans farkları, özellikle büyük ölçekli kurumsal ve eğitim ortamlarında maliyet ve zaman tasarrufu sağlayacak.\n\nBenchmark sonuçları da modelin rekabet gücünü ortaya koyuyor. \"Agents’ Last Exam\" testinde Terra, orta akıl yürütme puanında %15 daha yüksek bir skor elde ederken, \"Terminal‑Bench 4.0\" görev çözüm oranı %50.3’e ulaşarak GPT-5.6 Terra’nın %21.5’lik oranının iki katından fazla bir başarı gösterdi. Dahili hata‑yaratan prompt benchmark’ında düşük çaba seviyesinde hata oranı %53.6’dan %16.7’ye, maksimum çaba seviyesinde ise %4.3’e gerileyerek hata oranını %18.3 puan düşürdü.\n\nModel, OpenAI’nin güvenlik çerçevesi kapsamında \"Kritik siber güvenlik\" sınıflandırması almış ve önceki sürüme göre daha sıkı kapsam uyumu, sınırlamaların dürüst açıklanması ve prompt enjeksiyonuna karşı direnç gibi iyileştirmeler içeriyor. GPT-6.1 Terra, ChatGPT Work ve Codex platformlarında Plus, Pro, Enterprise ve Edu kullanıcıları için kullanılabilir durumda ve API model kimliği \"gpt-6.1-terra\" olarak belirlenmiş. Standart fiyatlandırma, giriş tokenları için milyon başına 1 $, önbellekli giriş tokenları için 0.05 $, çıkış tokenları için 5 $ olarak duyuruldu; bu, önceki modellerin fiyatının %50 altında bir maliyet anlamına geliyor.",
+  "onemli_maddeler": [
+    "GPT-6.1 Terra, orta akıl yürütme testlerinde GPT-5.6 Terra’ya göre %15 daha yüksek skor elde etti.",
+    "Maksimum çaba seviyesinde Claude Opus 5.5’e göre üç kat daha token‑verimli ve görev başına ~9 kat daha düşük maliyet.",
+    "Terminal‑Bench 4.0’da %50.3 görev çözüm oranı, önceki sürümün %21.5 oranının iki katından fazla.",
+    "Düşük çaba hata oranı %53.6’dan %16.7’ye, maksimum çaba hata oranı %4.3’e gerileyerek %18.3 puan iyileşme sağladı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "OpenAI’nin en yeni büyük ölçekli modeli piyasaya sürülmüş, hem performans hem maliyet açısından sektörde önemli bir sıçrama yaratıyor.",
+  "etiketler": [
+    "GPT-6.1 Terra",
+    "OpenAI",
+    "AI model",
+    "benchmark",
+    "computer use"
+  ],
+  "anilan_modeller": [
+    "GPT-6.1 Terra",
+    "GPT-5.6 Terra",
+    "GPT-6 Astra",
+    "Claude Opus 5.5",
+    "GPT-6.1 Sol"
+  ],
+  "yorum_tr": "GPT-6.1 Terra, yüksek verimlilik ve düşük maliyetle karmaşık bilgisayar‑kullanım görevlerini yerine getirebilmesi sayesinde geliştiricilerin ve kurumsal kullanıcıların iş akışlarını hızlandıracak. Aynı zamanda güvenlik ve prompt‑enjeksiyon direnciyle daha güvenilir bir AI platformu sunuyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GPT-6.1 Terra",
+      "benchmark": "Agents' Last Exam",
+      "skor": 15,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "medium reasoning",
+      "kaynak_metinden_alinti": "Terra at medium reasoning scores 15 percentage points above GPT-5.6 Terra"
+    },
+    {
+      "model": "GPT-6.1 Terra",
+      "benchmark": "Internal error-inducing prompt benchmark (low effort)",
+      "skor": 16.7,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "low effort",
+      "kaynak_metinden_alinti": "low-effort error rate fell to 16.7% from 53.6% for GPT-5.6 Terra"
+    },
+    {
+      "model": "GPT-6.1 Terra",
+      "benchmark": "Internal error-inducing prompt benchmark (maximum effort)",
+      "skor": 4.3,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "maximum effort",
+      "kaynak_metinden_alinti": "At maximum effort it reached 4.3%, an 18-percentage-point reduction"
+    },
+    {
+      "model": "GPT-6.1 Terra",
+      "benchmark": "Terminal-Bench 4.0",
+      "skor": 50.3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "maximum effort",
+      "kaynak_metinden_alinti": "Terra solves 50.3% of Terminal-Bench 4.0 tasks at maximum effort"
+    }
+  ],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/10/banner-19.webp",
+  "url": "https://www.testingcatalog.com/openai-launches-gpt-6-1-terra-for-precise-computer-use/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-27T10:35:29.000Z",
+  "slug": "openai-launches-gpt-6-1-terra-for-precise-computer-use"
+}

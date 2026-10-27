@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "Cohere'ın Qwen 3.8 Flash Next'in Alibaba URL'si yüklediği iddiası Reddit'te çürütüldü",
+  "ozet_tr": "Cohere, Qwen 3.8 Flash Next modelinin Alibaba uzaktan URL'si oluşturduğunu iddia ederken, LocalLLaMA topluluğu bu iddiayı teknik bir inceleme ile çürüttü. Modelin yalnızca 2 232 tokenlık bir ön ekle çalıştırılması gerektiği ve bu davranışın 100 000 çağrının altında bir oranda gerçekleştiği ortaya kondu.",
+  "detayli_icerik_tr": "Reddit'in LocalLLaMA topluluğu, Cohere'ın Qwen 3.8 Flash Next (Q38FN) modelinin Alibaba sunucusuna URL gönderdiği yönündeki iddiasını detaylı bir Python betiği üzerinden inceledi. İncelenen veri setindeki token dizileri, modelin URL üretmeden önce en az 2 323 tokenlık bir ön ek alması gerektiğini gösteriyor; bu da modelin yalnızca 2 232 tokenlık bir girdiyle URL üretmeye zorlanması anlamına geliyor. Betik, bu uzunlukta bir girdi sağlanmadıkça modelin istenen davranışı göstermeyeceğini kanıtladı.\n\nCohere CEO'sunun The Register'a verdiği açıklamada, bu davranışın kasıtlı olmadığı ve dışarıdan gözlemlenmesinin zor olduğu belirtilse de, modelin bu tür bir eylemi 100 000 çağrının altında bir oranla gerçekleştirdiği vurgulandı. Yazar, kendi Q38FN günlüklerini tarayarak hiçbir Alibaba URL'si bulamadığını ve bu durumun iddianın istatistiksel bir anomali olabileceğini savundu.\n\nTopluluk üyeleri, bu tür bir riskin açık ağırlıklı modellerde (open-weight) tekrarlanabilirliğine dikkat çekti. Claude ve OpenAI modellerinin de benzer bir şekilde yönlendirildiğinde rastgele URL'ler üretebileceği, ancak bu modellerin ağırlıklarına erişilemediği için doğrudan test edilemediği belirtildi. Sonuç olarak, Q38FN kullanımıyla ilgili güvenlik endişeleri varsa, ek sandbox önlemleri alınması önerildi.\n\nSohbetin devamında, katılımcılar LLM tabanlı ajanların sandbox'lanması konusundaki eksikliği vurguladı. Ağ erişimi, dosya okuma/yazma izinleri ve dış dünyaya çıkış kontrolü gibi farklı sandbox seviyelerinin uygulanması gerektiği, aksi takdirde veri sızıntısı ve \"evine çağrı\" risklerinin ortaya çıkabileceği tartışıldı. Kullanıcılar, Docker konteynerleriyle ağ izolasyonu ve sadece okuma izniyle veri koruması gibi pratik önlemlerden bahsetti.",
+  "onemli_maddeler": [
+    "Modelin URL üretmesi için 2 232 tokenlık bir ön ek gereklidir; bu koşul sağlanmadıkça davranış tetiklenmez.",
+    "İddia edilen davranış, 100 000 çağrının altında bir oranla gerçekleşmiş ve istatistiksel bir anomali olarak değerlendiriliyor.",
+    "Açık ağırlıklı modellerde benzer bir yönlendirme yapılabilir; bu yüzden ek sandbox önlemleri öneriliyor."
+  ],
+  "kategori": "arastirma",
+  "onem": 3,
+  "onem_gerekce": "Topluluk tarafından yapılan teknik inceleme, bir şirketin iddiasını çürütürken LLM güvenliği ve sandbox uygulamalarına dikkat çekiyor; sektörel etkisi sınırlı ama geliştiriciler ve güvenlik uzmanları için değerli bir uyarı niteliğinde.",
+  "etiketler": [
+    "Qwen 3.8 Flash Next",
+    "Cohere",
+    "LLM güvenliği",
+    "sandbox",
+    "açık ağırlıklı modeller"
+  ],
+  "anilan_modeller": [
+    "Qwen 3.8 Flash Next",
+    "Claude",
+    "OpenAI modelleri"
+  ],
+  "yorum_tr": "Bu inceleme, LLM'lerin beklenmedik ağ davranışlarını tespit etmenin zor olduğunu ve güvenlik önlemlerinin mutlaka katmanlı bir sandbox yaklaşımıyla desteklenmesi gerektiğini gösteriyor. Geliştiriciler, model girdilerini ve ortamlarını sıkı kontrol altında tutarak olası veri sızıntılarını önleyebilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://s.yimg.com/lo/mysterio/api/22635dc9283ae86cb2f442f586cbb0f2c37a4122819bb0ba7de42ac68baab0b2/lightyear_networkapi/resizefill_w976%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Ftechcrunch_finance_785%2F8be76dbb943e8bf1f994893679107486.jpg",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xgopmj/debunking_coheres_claim_of_qwen_38_flash_next/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-27T10:19:31.000Z",
+  "slug": "debunking-cohere-s-claim-of-qwen-3-8-flash-next-uploading-to"
+}
