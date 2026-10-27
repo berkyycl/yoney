@@ -1,0 +1,86 @@
+{
+  "baslik_tr": "GPT-6.1 Terra, API fiyatlarını yarıya indiriyor ve büyük modellerle rekabet ediyor",
+  "ozet_tr": "OpenAI, orta ölçekli iş görevlerine odaklanan GPT-6.1 Terra modelini tanıttı. Model, önceki nesile göre API fiyatlarını %50 azalttığı gibi, performans ve güvenlik açısından da önemli iyileştirmeler sunuyor.",
+  "detayli_icerik_tr": "OpenAI, yeni orta seviye yapay zeka modeli GPT-6.1 Terra'yı duyurdu. Model, özellikle ofis işleri, teknik çizim yorumlama ve formları doldurma gibi günlük görevlerde hızlı görsel akıl yürütme ve hassas bilgisayar kontrolü sağlamak üzere tasarlandı. API fiyatları, önceki nesil GPT-5.6 Terra'ya göre yarıya indirildi; giriş tokenları milyon başına 1 $, çıkış tokenları ise 5 $ olarak belirlendi. Önbellekli girişler ise sadece 0,05 $/milyon token ödeyecek.\n\nTerra, fiyat-performans oranı bakımından yeni bir çıta oluşturdu. Artificial Analysis tarafından yapılan değerlendirmeye göre, maksimum akıl yürütme çabasında model, aynı görevde GPT-5.6 Terra'ya kıyasla üç kat daha düşük maliyetle (0,40 $ vs 1,40 $) çalışıyor ve Intelligence Index'te 6 puanlık bir artış sağlıyor. Düşük çaba seviyelerinde ise bu fark 7‑13 puana kadar çıkıyor ve model, maliyet‑performans Pareto sınırının üzerine çıkıyor.\n\nPerformans testlerinde Terra, çeşitli benchmarklarda öne çıktı. Coding Agent Index v2.0'de 48 puan alarak GPT-6.1 Sol'un 6 puan gerisinde, ancak GPT-6 Luna'nın 17 puan üzerindeydi. AA-Omniscience testinde yanıtı bilmediği durumlarda %38 oranında tahmin yaparken, önceki sürüm %88 idi; aynı zamanda doğruluk iki puan yükseldi. Terminal-Bench 4.0'da maksimum çaba ile %50,3 oranında görev çözerken, GPT-5.6 Terra %21,5 ile geride kaldı. Görsel akıl yürütme benchmarku MMMU‑Pro'da da önceki sürümün tüm seviyelerinde üstünlük sağladı ve GPT-6 Astra ile neredeyse eşdeğer performans gösterdi.\n\nGüvenlik açısından da önemli adımlar atıldı. Terra, OpenAI'nin \"Critical\" siber güvenlik eşiğini karşılıyor ve önceki sürüme göre dolaylı prompt enjeksiyon saldırılarına karşı savunma oranını %96,2'den %98,8'e yükseltti. Model, talimat hiyerarşisine yönelik doğrudan saldırılarda %99,99 başarı oranı elde ediyor. Bu iyileştirmeler, hem geliştiricilerin hem de son kullanıcıların daha güvenli ve maliyet etkin bir yapay zeka deneyimi yaşamasını hedefliyor.",
+  "onemli_maddeler": [
+    "API fiyatları giriş tokenları için $1/milyon, çıkış tokenları için $5/milyon olarak yarıya indirildi.",
+    "Intelligence Index'te 48 puan alarak önceki nesilden 6 puan daha yüksek performans gösterdi.",
+    "AA-Omniscience benchmarkında tahmin oranı %38'e düştü, önceki sürüm %88 idi.",
+    "Terminal-Bench 4.0'da görev çözme oranı %50,3'e yükseldi (önceki %21,5).",
+    "Dolaylı prompt enjeksiyon savunma oranı %98,8'e çıkarıldı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Orta ölçekli bir modelin fiyat-performans oranını %50 azaltması ve bir dizi benchmarkta önemli iyileşmeler sunması, hem geliştiriciler hem de kurumsal kullanıcılar için sektörde büyük bir etki yaratıyor.",
+  "etiketler": [
+    "GPT-6.1 Terra",
+    "API fiyatları",
+    "benchmark",
+    "güvenlik",
+    "kodlama"
+  ],
+  "anilan_modeller": [
+    "GPT-6.1 Terra",
+    "GPT-5.6 Terra",
+    "GPT-6.1 Sol",
+    "GPT-6 Astra",
+    "Claude Sonnet 5.5",
+    "Claude Opus 5.5",
+    "GPT-6 Luna"
+  ],
+  "yorum_tr": "Terra, maliyet etkinliği ve güvenlik iyileştirmeleriyle orta ölçekli AI pazarında yeni bir standart belirliyor; geliştiriciler daha düşük maliyetle yüksek performans alırken, kullanıcılar da daha az hatalı ve daha güvenli bir deneyim elde edecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GPT-6.1 Terra",
+      "benchmark": "Intelligence Index",
+      "skor": 48,
+      "birim": "points",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "GPT-6.1 Terra scores 48, between GPT-6.1 Sol (52) and GPT-5.6 Terra (42)."
+    },
+    {
+      "model": "GPT-6.1 Terra",
+      "benchmark": "Coding Agent Index v2.0",
+      "skor": 48,
+      "birim": "points",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "In the new Coding Agent Index v2.0, Terra scores 48, six points below GPT-6.1 Sol (54) and 17 points above GPT-6 Luna (31)."
+    },
+    {
+      "model": "GPT-6.1 Terra",
+      "benchmark": "AA-Omniscience guessing rate",
+      "skor": 38,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "the model resorts to guessing only 38 percent of the time when it lacks the answer, down from 88 percent for GPT-5.6 Terra."
+    },
+    {
+      "model": "GPT-6.1 Terra",
+      "benchmark": "Terminal-Bench 4.0",
+      "skor": 50.3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "GPT-6.1 Terra solves 50.3 percent of tasks at maximum reasoning effort, up from 21.5 percent for GPT-5.6 Terra."
+    },
+    {
+      "model": "GPT-6.1 Terra",
+      "benchmark": "Indirect Prompt Injection Defense",
+      "skor": 98.8,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Terra's defense rate sits at 98.8 percent, up from 96.2 percent with GPT-5.6 Terra."
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/10/openai_logo_earth.png",
+  "url": "https://the-decoder.com/gpt-6-1-terra-halves-openais-api-prices-and-still-gains-ground-on-its-larger-models/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-26T20:30:55.000Z",
+  "slug": "gpt-6-1-terra-halves-openai-s-api-prices-and-still-gains-gro"
+}

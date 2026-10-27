@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "GPT-6.1 Sol, CodeRabbit’ın güvenlik ajanına entegrasyonla karmaşık kod tabanlarında güvenliği artırıyor",
+  "ozet_tr": "OpenAI’nin yeni nesil modeli GPT‑6.1 Sol, CodeRabbit’ın güvenlik ajanına entegre edilerek pull‑request incelemelerinde dosyalar arası davranışları bağlayıp potansiyel güvenlik açıklarını ortaya çıkarıyor. Model, bağımsız bir tarama katmanı olarak mevcut güvenlik tarayıcılarını tamamlıyor ve geliştiricilerin riskleri daha geniş bir perspektiften değerlendirmesine imkan tanıyor.",
+  "detayli_icerik_tr": "Yazılım geliştirme süreçlerinde yapay zekâ, kod üretiminden güvenlik taramasına kadar birçok aşamayı hızlandırıyor. OpenAI’nin en yeni modeli GPT‑6.1 Sol, CodeRabbit tarafından güvenlik ajanının çekirdeği olarak kullanılıyor ve tek bir değişikliğin ötesinde, paylaşılan kütüphaneler, bağımlılıklar ve uygulamanın diğer bölümlerindeki etkileri analiz edebiliyor.\n\nPull‑request incelemeleri sırasında Sol, dosyalar ve bileşenler arasındaki davranış ilişkilerini ortaya koyarak olası güvenlik sorunlarını işaretliyor. CodeRabbit’ın “Deep Scan” özelliği, bu modeli kullanarak birden fazla depoyu ve bağımlılık ağını tarayabiliyor; böylece bir zayıflığın tüm sistem üzerindeki yayılımı değerlendirilebiliyor. Bu yaklaşım, geleneksel statik tarayıcıların sınırlı kalabildiği alanları dolduruyor.\n\nCodeRabbit Secure, GPT‑6.1 Sol’dan gelen bulguları binlerce depo ve organizasyona yayarak otomatik olarak pull‑request iş akışlarına entegre ediyor. Kullanıcıların seçtiği bulgular için izole bir sandbox ortamında istismar doğrulaması yapılabiliyor ve desteklenen sorunlar için model, insan denetimiyle onaylanacak bir düzeltme önerisi hazırlayarak yeni bir pull‑request oluşturabiliyor.\n\nBu entegrasyon, AI‑destekli mantığın yazılım güvenliğine nasıl katkı sağlayabileceğinin somut bir örneği olarak öne çıkıyor. Model, riskleri geniş bir bağlamda anlamlandırırken nihai karar hâlâ insan geliştiricilere bırakılıyor; bu da otomasyon ve kontrol dengesini koruyor.",
+  "onemli_maddeler": [
+    "GPT‑6.1 Sol, CodeRabbit’ın güvenlik ajanına entegre edilerek dosyalar arası risk analizini mümkün kılıyor.",
+    "Deep Scan özelliği, birden fazla depo ve bağımlılık ağını tarayarak güvenlik açıklarının sistem çapında etkisini değerlendiriyor.",
+    "Model, tespit edilen sorunlar için izole sandbox ortamında istismar doğrulaması yapabiliyor ve otomatik düzeltme önerileri sunabiliyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "GPT‑6.1 Sol’un CodeRabbit güvenlik ajanına entegrasyonu, AI‑destekli kod incelemesinin kapsamını genişleterek büyük ölçekli kod tabanlarında güvenlik risklerini erken tespit etmeye olanak tanıyor; bu, yazılım güvenliği süreçlerinde önemli bir adım.",
+  "etiketler": [
+    "GPT-6.1 Sol",
+    "CodeRabbit",
+    "yazılım güvenliği",
+    "AI kod inceleme",
+    "pull request"
+  ],
+  "anilan_modeller": [
+    "GPT-6.1 Sol"
+  ],
+  "yorum_tr": "Bu iş birliği, geliştiricilerin güvenlik taramalarını daha proaktif ve kapsamlı bir şekilde yürütmelerini sağlayarak güvenlik açıklarını erken aşamada yakalama şansını artırıyor. Aynı zamanda insan denetiminin hâlâ kritik olduğunu vurgulayarak otomasyon ve sorumluluk dengesini koruyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://images.ctfassets.net/kftzwdyauwt9/1ksgDNZQ7aw2uHUY6xbaVm/0ffd141428e2cea70f4dcbf67ccd6245/gpt-6-1-sol-helps-coderabbit-strengthen-security-across-complex-codebases-social.png?w=1600&h=900&fit=fill",
+  "url": "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-10-26T13:45:00.000Z",
+  "slug": "gpt-6-1-sol-helps-coderabbit-strengthen-security-across-comp"
+}

@@ -1,0 +1,72 @@
+{
+  "baslik_tr": "GPU Unlock'ları: Turing, Ampere ve Ada’da FP32 Accumulation Açıldı, Blackwell’da Neden Mümkün Değil?",
+  "ozet_tr": "NVIDIA, tüketici sınıfı GPU'larda FP16/BF16/TF32 gibi veri tiplerinin FP32 birikimle çalıştırılmasını kasıtlı olarak yavaşlatıyor. Turing, Ampere ve Ada nesillerinde bir firmware açığı sayesinde bu sınırlama kaldırılabiliyor, ancak yeni Blackwell kartlarında aynı yöntem işe yaramıyor.",
+  "detayli_icerik_tr": "NVIDIA, tüketici kartlarda tensor çekirdeklerinin FP16, BF16, FP8 ve TF32 girişlerini FP32 birikimle işleyebilme hızını fabrika içinde yanmış füslere (fuse) bağlı olarak yarı hızda tutuyor. Bu, profesyonel kartlarda tam hızda çalışan aynı donanımın performansını kasıtlı olarak sınırlıyor. Normal CUDA çekirdeklerinde FP32 işlemleri bu kısıtlamadan etkilenmiyor.\n\nTuring (RTX 20), Ampere (RTX 30) ve Ada (RTX 40) nesillerinde, NVIDIA sürücüsü bir \"Booter\" adlı imzalı mikrofirmware'i GPU içindeki SEC2 (Falcon) denetleyicisine yükleyerek GSP'yi başlatıyor. 2026 yılında Jon Pry'nin \"A Canary in the Crypto Mine\" adlı çalışması, bu Booter'da bir tampon taşması (buffer overflow) bulduğunu gösterdi. Saldırganlar bu açığı kullanarak Booter'ı ele geçirip, override register'ı tam hız (FULL_SPEED) olarak ayarlayabiliyor ve kartı yeniden başlattıktan sonra bu ayar kalıcı hâle geliyor.\n\nBu yöntemle açılan performans artışı, teorik olarak FP16/BF16/TF8 ile FP32 birikiminde iki katına kadar çıkabiliyor. Örneğin, bir RTX 4090'un FP16/BF16+FP32 birikim hızı 165 TFLOP'tan 331 TFLOP'a çıkıyor; RTX 3090 Ti'de BF16 GEMM 87 TFLOP'tan 157 TFLOP'a, RTX 2080 Ti'de ise FP16+FP32 birikim 47 TFLOP'tan 94 TFLOP'a yükseliyor. Gerçek dünya GEMM'lerde güç sınırları nedeniyle %1.5‑2.0 kat artış görülüyor. Eğitim, difüzyon ve LLM ön doldurma (prefill) gibi görevlerde ise 6000 PRO kartları, aynı konfigürasyondaki 5090'lara göre %70‑90 daha hızlı sonuç veriyor.\n\nBlackwell (RTX 50) neslinde ise aynı füslere ve override register'ına rağmen açma imkanı yok. Bunun nedeni, Hopper ve Blackwell'de güvenlik mimarisinin SEC2 yerine RISC‑V tabanlı FSP (Foundation Security Processor) ile değiştirilmiş olması. FSP, GPU açıldığında ROM'dan doğrudan çalışıyor ve sürücü sadece imzalı bir hash gönderiyor; Booter artık bulunmadığı için önceki tampon taşması açığı burada mevcut değil. NVIDIA, FSP firmware'ini SPARK adlı formal doğrulanabilir bir dilde yazarak kritik hataları önlemeye çalışıyor. Bu yüzden şu an için Blackwell kartlarında aynı unlock yöntemi uygulanamıyor.",
+  "onemli_maddeler": [
+    "Turing, Ampere ve Ada kartlarında FP16/BF16/TF8+FP32 birikim hızı, firmware açığı sayesinde tam hıza (FULL_SPEED) çıkarılabiliyor.",
+    "Blackwell neslinde güvenlik mimarisi değiştiği için aynı açığı kullanmak mümkün değil; Booter artık yok.",
+    "Teorik TFLOP artışı %100 olsa da gerçek dünya uygulamalarda güç sınırları nedeniyle %30‑70 performans kazancı sağlanıyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Tüketici GPU'larda yapay zeka ve LLM iş yüklerinin performansını ikiye katlayabilecek bir hack, sektörde büyük ilgi uyandırıyor; ancak Blackwell'de uygulanamaması güvenlik trendlerini de gösteriyor.",
+  "etiketler": [
+    "GPU unlock",
+    "Tensor cores",
+    "FP32 accumulation",
+    "NVIDIA",
+    "Blackwell"
+  ],
+  "anilan_modeller": [
+    "FP16 with FP32 accumulation",
+    "BF16 with FP32 accumulation",
+    "TF32",
+    "FP8 with FP32 accumulation"
+  ],
+  "yorum_tr": "Bu unlock, tüketici sınıfı GPU'ların AI iş yüklerinde profesyonel seviyeye yaklaşmasını sağlarken, Blackwell'in güvenlik mimarisi gelecekteki firmware tabanlı sınırlamaların daha dayanıklı olacağını gösteriyor. Geliştiriciler, bu tür açıkları izleyerek performans iyileştirmeleri için yeni yollar aramaya devam edecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "RTX 4090",
+      "benchmark": "FP16/BF16 with FP32 accumulation raw TFLOPS",
+      "skor": 331,
+      "birim": "TFLOPS",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "raw instruction rate",
+      "kaynak_metinden_alinti": "4090 FP16/BF16 with FP32 acc goes from 165 to 331 TFLOPS (raw instruction rate)"
+    },
+    {
+      "model": "RTX 3090 Ti",
+      "benchmark": "BF16 GEMM raw TFLOPS",
+      "skor": 157,
+      "birim": "TFLOPS",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "raw instruction rate",
+      "kaynak_metinden_alinti": "3090 Ti BF16 GEMM from 87 to 157 TFLOPS"
+    },
+    {
+      "model": "RTX 2080 Ti",
+      "benchmark": "FP16 with FP32 accumulation raw TFLOPS",
+      "skor": 94,
+      "birim": "TFLOPS",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "raw instruction rate",
+      "kaynak_metinden_alinti": "2080 Ti FP16 with FP32 acc from 47 to 94 TFLOPS"
+    },
+    {
+      "model": "RTX 4090 (unlocked)",
+      "benchmark": "Power consumption during GEMM",
+      "skor": 346,
+      "birim": "W",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "peak power",
+      "kaynak_metinden_alinti": "unlocked 4090 doing the same GEMMs peaked at 346W vs 313W stock"
+    }
+  ],
+  "gorsel_url": "https://cdn.videocardz.com/1/2026/10/NVIDIA-RTX-40-30-20-AI-UNLOCK-1200x624.jpg",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xgaapw/gpu_unlocks_fp32_accumulation_why_can_it_be/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-26T21:48:50.000Z",
+  "slug": "gpu-unlocks-fp32-accumulation-why-can-it-be-unlocked-on-turi"
+}

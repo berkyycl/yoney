@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "Qwen3.8 Davranış İncelemesi İçin İz Verileri Açık Kaynak Olarak Paylaşıldı",
+  "ozet_tr": "Cohere ekibi, Qwen3.8 modelinde tespit edilen garip bağlantı davranışını incelemek amacıyla ham iz verilerini ve yeniden üretme betiğini halka açık bir veri seti olarak sundu. Açık ağırlıklı modellerin şeffaflığı sayesinde güvenlik topluluğu bu sorunu daha derinlemesine analiz edebilecek.",
+  "detayli_icerik_tr": "Reddit'in LocalLLaMA topluluğunda paylaşılan bir duyuruda, Cohere araştırmacıları Qwen3.8 modelinin nadir bir durumda ortaya çıkan tuhaf link üretimini belgeledi ve bu davranışı yeniden oluşturmak isteyen geliştiriciler için tam iz verisi, ham token akışı ve minimal bir yeniden üretme betiği yayınladı. Veri seti Hugging Face üzerinden \"CohereLabs/10-2026-qwen-investigation-traces\" adıyla erişime açıldı.\n\nAraştırmacılar, modelin önceden doldurulmuş bir prompt olmadan da bu anormalliği gösterdiğini, ancak daha tutarlı bir yeniden üretim için belirli bir prompt ile ön doldurma yapıldığını belirtti. Açık ağırlıklı modellerin bu tür güvenlik açıklarını ortaya çıkarmada kritik bir rol oynadığı vurgulandı; geliştiriciler kendi makinelerinde Qwen3.8'i çalıştırarak sorunu fark etti ve ağırlıkların açık olması, davranışın detaylı incelenebilmesini sağladı.\n\nCohere, bu şeffaflık yaklaşımının AI ve güvenlik toplulukları arasında yapıcı bir tartışma başlattığını ve açık‑ağırlıklı modellerin gelecekte AI güvenliğinin temel taşlarından biri olacağını ifade etti. Şirket, Apache 2.0 lisansı altında birkaç model daha yayınlayarak bu vizyonu desteklemeye devam ediyor.\n\nBu veri seti, araştırmacıların benzer anormallikleri tespit etmeleri, model davranışlarını analiz etmeleri ve potansiyel güvenlik önlemleri geliştirmeleri için bir referans noktası sunuyor. Topluluk, sağlanan izleri kullanarak modelin hangi koşullarda istenmeyen çıktılar üretebileceğini haritalamayı ve gelecekteki model tasarımlarında bu tür riskleri minimize etmeyi hedefliyor.",
+  "onemli_maddeler": [
+    "Cohere, Qwen3.8 modelindeki anormal link üretimini belgeleyen iz verilerini açık kaynak olarak yayınladı.",
+    "Veri seti Hugging Face üzerinden erişilebilir ve minimal bir yeniden üretme betiği içeriyor.",
+    "Açık‑ağırlıklı modellerin şeffaflığı, AI güvenlik araştırmalarının hızlanmasına ve topluluk tartışmalarının artmasına olanak tanıyor."
+  ],
+  "kategori": "arastirma",
+  "onem": 3,
+  "onem_gerekce": "Açık veri seti, AI güvenlik araştırmalarına katkı sağlasa da haber topluluk bazlı ve sınırlı bir teknik etki taşıdığı için orta seviyede önem taşımaktadır.",
+  "etiketler": [
+    "Qwen3.8",
+    "AI güvenliği",
+    "açık ağırlık",
+    "veri seti",
+    "araştırma"
+  ],
+  "anilan_modeller": [
+    "Qwen3.8"
+  ],
+  "yorum_tr": "Bu paylaşım, açık‑ağırlıklı modellerin güvenlik açıklarını tespit ve analiz etme sürecini hızlandırarak araştırmacıların daha proaktif önlemler geliştirmesine yardımcı olacak. Ancak etkisi, veri setinin benimsenmesi ve topluluk tarafından aktif olarak kullanılmasına bağlı olarak şekillenecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/lOwaPkarvcfFstgvZSJslj1EZ-Jagv5_9UjrRwfHmxg.png?width=640&crop=smart&auto=webp&s=360dd808e74c98bf348a650ad0defde34a3e188c",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xgbm28/qwen_investigation_traces_release/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-26T22:42:31.000Z",
+  "slug": "qwen-investigation-traces-release"
+}

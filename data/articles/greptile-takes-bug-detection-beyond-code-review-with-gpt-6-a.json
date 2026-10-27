@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "Greptile, GPT‑6 Astra ile kod incelemesinin ötesinde hata tespiti sağlıyor",
+  "ozet_tr": "Greptile, OpenAI'nin yeni GPT‑6 Astra modelini kullanarak kod inceleme sürecine görsel ve etkileşimli test yetenekleri ekliyor. Modelin bilgisayar kullanım ve görsel algılaması sayesinde, uygulama arayüzündeki gizli hatalar otomatik olarak tespit edilebiliyor ve güvenlik savunmaları güçlendirilebiliyor.",
+  "detayli_icerik_tr": "Greptile, kod tabanının tam bağlamını anlayabilen AI ajanları geliştirerek yazılım hatalarını azaltmayı ve güvenilirliği artırmayı hedefliyor. Şirketin kurucu ve CEO'su Daksh Gupta, bu vizyonun gerçekleşmesi için sadece kodu okumak yetmez, aynı zamanda uygulamanın gerçek davranışını test etmek gerektiğini vurguluyor. GPT‑6 Astra’nın bilgisayar kullanım yeteneği, Greptile’ın bir pull request için geliştirme sunucusunu başlatıp, iPhone boyutunda bir tarayıcı penceresi açarak UI üzerinden testler yürütmesine olanak tanıyor; model ekranı görsel olarak analiz edip, örneğin bir butonun mobil görünümde kaybolduğunu tespit edebiliyor.\n\nBu otomatik test süreci, geleneksel QA ekiplerinin manuel olarak gerçekleştirdiği testleri ölçeklendirme sorununu ortadan kaldırıyor. Gupta, \"GPT‑6 Astra sayesinde, bir QA firmasının tüm değişiklikleri test etmesi pratikte imkânsız; modellerle kodu hızlıca ship etmek mümkün\" diyerek, modelin hız ve maliyet avantajlarını öne çıkarıyor. Greptile ayrıca Daybreak adlı bir güvenlik katmanı geliştirerek, daha güçlü modellerin saldırganlar tarafından kötüye kullanılma riskine karşı müşterilerine gelişmiş savunma mekanizmaları sunmayı amaçlıyor.\n\nGreptile’ın Codex entegrasyonu da dikkat çekiyor. Şirket, müşterilerin kod tabanını ve dokümantasyonunu Model Context Protocol (MCP) sunucusu üzerinden Codex’e sunarak, modelin mevcut kodlama kalıplarına uygun yeni kod üretmesini sağlıyor. Bu bağlamda, AI‑tarafından üretilen kodun geri alınma (revert) oranının düştüğü ve müşterilerin zaman ve işlem maliyetlerinden tasarruf ettiği rapor ediliyor. Greptile, aynı zamanda kendi iç yazılım ve ajanlarını da Codex ile geliştiriyor ve bu sayede mühendislik fonksiyonlarında büyük ölçekli kullanım sağlıyor.\n\nGelecek vizyonu ise Ultrafast adlı bir çerçeveyle geliştirme sürecini daha da hızlandırmak. Gupta, model zekâsının zaten birçok görevi yerine getirebildiğini, asıl engelin fikirleri hızlıca çalışır yazılıma dönüştürmek olduğunu belirtiyor. OpenAI’nin desteğiyle, kritik kurumsal yazılımların değişimi ve dağıtımı bir yan proje kadar basit hale getirilmek isteniyor.",
+  "onemli_maddeler": [
+    "GPT‑6 Astra, görsel algı ve bilgisayar kullanım yeteneğiyle UI‑tabanlı hataları otomatik tespit edebiliyor.",
+    "Daybreak, müşterilerin sistemlerini daha güçlü saldırı savunmalarıyla korumak için yeni bir güvenlik katmanı sunuyor.",
+    "Codex entegrasyonu sayesinde, Greptile’ın bilgi tabanı üzerinden bağlamlı kod üretimi ve daha az revert oranı sağlanıyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "GPT‑6 Astra, kod inceleme süreçlerine görsel ve etkileşimli test yetenekleri ekleyerek yazılım geliştirme ve güvenlik alanında büyük bir adım atıyor; bu da sektördeki otomasyon ve güvenlik standartlarını yükseltecek bir yenilik.",
+  "etiketler": [
+    "AI kod inceleme",
+    "GPT-6 Astra",
+    "Greptile",
+    "otomatik test",
+    "yazılım güvenliği"
+  ],
+  "anilan_modeller": [
+    "GPT-6 Astra",
+    "Codex",
+    "Daybreak",
+    "Ultrafast"
+  ],
+  "yorum_tr": "GPT‑6 Astra’nın görsel test yetenekleri, kod inceleme süreçlerini otomatikleştirerek geliştiricilerin hata ayıklama süresini kısaltacak ve güvenlik ekiplerinin savunma kapasitesini artıracak. Bu da yazılım teslimat hızını yükseltirken, kalite ve güvenlik standartlarını da yükseltecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://images.ctfassets.net/kftzwdyauwt9/41HmEnWTxiRSX2JLf1g8IJ/86b6e146a0620d83db05f4010e6b058e/greptile-connections-social.png?w=1600&h=900&fit=fill",
+  "url": "https://openai.com/index/greptile-code-review-codex-astra",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-10-26T22:00:00.000Z",
+  "slug": "greptile-takes-bug-detection-beyond-code-review-with-gpt-6-a"
+}
