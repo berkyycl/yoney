@@ -1,0 +1,36 @@
+{
+  "baslik_tr": "Yerel Model, Bulut Modeli Yeniyor: Qwen 3.8 FN",
+  "ozet_tr": "Bir yüksek lisans tez modülünde veri gizliliği ve işlem hızı gereksinimlerini karşılamak için yerel bir LLM olan Qwen 3.8 FN kullanıldı. Model, bulut tabanlı çözümlerle benzer bir zekâ seviyesine sahipken, veri güvenliği ve GDPR uyumluluğu açısından büyük avantaj sağladı.",
+  "detayli_icerik_tr": "Türkiye'de bir şirketin MSc tez modülünde, öğrenci ve danışman eşleştirmeleri, proje tercihleri ve not takibi gibi yıllık tekrarlanan süreçler için bir veri tabanı oluşturulması gerekiyordu. Gelen veriler MS Forms, öğrenci kayıt sistemi ve Moodle gibi farklı kaynaklardan CSV formatında geliyordu; isimlerin farklı yazımları ve eksik alanlar gibi tutarsızlıklar da bulunuyordu. Geleneksel bir ilişkisel veritabanı çözümü mantıklı olsa da, bu sürecin yalnızca bir kez yılda gerçekleşmesi ve kod geliştirme süresinin kısıtlı olması nedeniyle önceki yıllarda bulut tabanlı yapay zeka çözümleri tercih edilmişti.\n\nGizlilik endişeleri, özellikle öğrenci ve danışman kişisel bilgilerinin bulut sunucularına gönderilmesi riskini doğuruyordu. Bu nedenle yazar, Qwen 3.8 Flash Next (FN) modelini yerel bir Docker konteynerinde, vllm arka ucu ile çalıştırdı. Model, sadece okuma izniyle giriş verilerine erişebiliyor ve çıktılarını yerel bir çalışma alanına yazabiliyordu. Ayrıca web erişimi, Python, PyPDF, LibreOffice ve pip ile paket kurma yetenekleri de sağlanmıştı.\n\nUygulama, bir SQLite veritabanına CSV dosyalarını aktararak veri temizleme ve tutarlı bir şema oluşturma işlevini otomatikleştirdi. Model, farklı veri kaynaklarından gelen tutarsızlıkları tespit edip düzeltti, tipografik hataları giderdi ve proje listelerini otomatik olarak bir DOCX broşürüne dönüştürdü. İşlem süresi birkaç saniye içinde tamamlandı; bu, aynı görevi bulut tabanlı Codex ile yürütmeye kıyasla hem hız hem de yanıt süresi açısından belirgin bir üstünlük sağladı.\n\nYazar, Qwen 3.8 FN'in zekâ seviyesinin Codex ve GPT‑5.6 ile benzer olduğunu, ancak bazı GPT‑6 serisi modellerinin (Astra, Sol) kendi kullanım senaryosunda daha düşük performans gösterdiğini belirtti. Modelin hafıza yönetimi ve kalıcılık (persistence) açısından Opencode arayüzünün, Hermes ve Pi gibi diğer ajanlardan daha dengeli olduğu vurgulandı. Sonuç olarak, yerel bir LLM'in hem gizlilik hem de verimlilik açısından bulut çözümlerine rakip olabileceği, özellikle 64‑128 GB VRAM'li donanımlarda yaygınlaşması durumunda geleceğin AI altyapısının şekillenebileceği öne sürüldü.",
+  "onemli_maddeler": [
+    "Qwen 3.8 FN, veri gizliliği gerektiren iş akışlarında bulut modellerine eşdeğer performans gösterdi.",
+    "Model, heterojen CSV veri setlerini otomatik olarak temizleyip bir SQLite veritabanına aktardı ve DOCX raporları oluşturdu.",
+    "Yerel Docker ortamı, sadece okuma izniyle veri girişine erişim sağlayarak GDPR uyumluluğunu garantiledi."
+  ],
+  "kategori": "diger",
+  "onem": 3,
+  "onem_gerekce": "Kullanıcı deneyimi açısından yerel LLM'lerin gizlilik ve hız avantajlarını gösteren ilgi çekici bir örnek; sektörel etkisi sınırlı ama gelecekteki AI dağıtım modellerine ışık tutuyor.",
+  "etiketler": [
+    "Qwen 3.8",
+    "yerel model",
+    "gizlilik",
+    "AI otomasyonu",
+    "vllm"
+  ],
+  "anilan_modeller": [
+    "Qwen 3.8 FN",
+    "Codex",
+    "GPT-5.6",
+    "GPT-6 Astra",
+    "GPT-6.1 Sol"
+  ],
+  "yorum_tr": "Bu deneyim, veri güvenliğinin kritik olduğu kurumlarda yerel LLM'lerin bulut alternatiflerine kıyasla yeterli performans sunabileceğini gösteriyor. Geliştiriciler, benzer senaryolarda yerel modelleri tercih ederek hem maliyet hem de uyumluluk avantajı elde edebilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://i.ytimg.com/vi/fZ7IqQvhy1k/sddefault.jpg",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xg3rms/local_beats_cloud_qwen_38_fn/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-26T17:43:57.000Z",
+  "slug": "local-beats-cloud-qwen-3-8-fn"
+}

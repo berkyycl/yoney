@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "WebGPU destekli tarayıcıda çalışan Qwen3.5-4B için etkileşimli nöron yönlendirme oyun alanı",
+  "ozet_tr": "Kullanıcıların LLM'lerdeki tek bir ya da iki nöronu manipüle ederek model davranışını yönlendirebildiği bir akım ortaya çıktı. Bu bağlamda geliştirilen yeni bir web tabanlı oyun alanı, Qwen3.5-4B modelini tamamen tarayıcıda, WebGPU sayesinde çalıştırarak nöronları interaktif olarak keşfetmeye olanak tanıyor.",
+  "detayli_icerik_tr": "Son dönemde X platformunda, büyük dil modellerinin belirli nöronlarını hedef alarak modelin çıktısını dramatik biçimde değiştirebilecekleri keşfedildi. Örneğin, Qwen3.5-4B modelinde sadece iki nöronun aktivasyonu, modelin kullanıcıyı tehdit eden, aşırı özür dileyen ya da tamamen anime karakteri gibi davranmasına yol açabiliyor.\n\nBu fenomeni gözlemleyen bir geliştirici, Hugging Face Spaces üzerinde \"neuron-studio\" adlı bir interaktif playground oluşturdu. Kullanıcılar, modelin tüm ağırlıklarını yerel olarak tarayıcıda çalıştırarak WebGPU aracılığıyla nöronları seçip etkinleştirebiliyor, sonuçları anında görebiliyor. Böylece teknik bilgi gerektirmeden, model davranışını deneysel olarak yönlendirmek mümkün hale geliyor.\n\nAraç, Qwen3.5-4B gibi 4 milyar parametreli modelleri destekliyor ve tamamen offline çalışıyor; bu da veri gizliliği ve düşük gecikme açısından avantaj sağlıyor. Kullanıcılar, farklı nöron kombinasyonlarını kaydedebiliyor, paylaşabiliyor ve topluluk içinde yeni keşifler oluşturabiliyor. Proje, yerel LLM çalıştırma ekosistemine yeni bir katman ekleyerek araştırmacıların ve meraklıların model iç dinamiklerini daha iyi anlamalarına yardımcı olmayı hedefliyor.\n\nBu girişim, LLM'lerin içsel yapısına dair şeffaflık ve kontrol taleplerine yanıt verirken, aynı zamanda potansiyel kötüye kullanım risklerini de gözler önüne seriyor. Topluluk, bu tür araçların sorumlu kullanımını teşvik etmek ve model davranışlarını etik sınırlar içinde yönlendirmek için rehberlik ve tartışma platformları oluşturmayı planlıyor.",
+  "onemli_maddeler": [
+    "Qwen3.5-4B modeli tamamen tarayıcıda, WebGPU ile çalıştırılıyor.",
+    "Tek bir ya da iki nöronun aktivasyonu, modelin davranışını dramatik şekilde değiştirebiliyor.",
+    "Hugging Face Spaces üzerinde sunulan interaktif playground, nöron yönlendirmesini herkesin denemesine olanak tanıyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 3,
+  "onem_gerekce": "Yerel LLM çalıştırma ve nöron seviyesinde model kontrolü, araştırmacılar ve geliştiriciler için yeni deneysel bir alan açıyor; ancak henüz geniş çaplı bir etki yaratmadığı için orta seviyede önem taşıyor.",
+  "etiketler": [
+    "Qwen3.5-4B",
+    "WebGPU",
+    "Neuron Steering",
+    "Local LLM",
+    "Hugging Face"
+  ],
+  "anilan_modeller": [
+    "Qwen3.5-4B"
+  ],
+  "yorum_tr": "Bu araç, model iç dinamiklerini keşfetmek isteyen geliştiriciler ve araştırmacılar için değerli bir deneysel platform sunuyor. Ancak nöron manipülasyonunun etik sınırları ve potansiyel kötüye kullanım riskleri, topluluk içinde dikkatle ele alınmalı.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/MzNla2Npczk0d3hoMd8t7p9fgJSNMKeJ2bIPc0gMQIqeTymTLm6bnAbVOgSE.png?width=640&crop=smart&auto=webp&s=6c136aa26e7463faf05634c4aa8acb72b5db719c",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xgbr9y/interactive_neuron_steering_playground_for/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-26T22:48:42.000Z",
+  "slug": "interactive-neuron-steering-playground-for-qwen3-5-4b-that-r"
+}
