@@ -1,0 +1,38 @@
+{
+  "baslik_tr": "LiquidAI, LFM3-1.7B ve Yeni Omni‑Modal Modelleriyle Edge AI’da Yeni Dönem",
+  "ozet_tr": "LiquidAI, 1.7 milyar parametreli LFM3-1.7B metin modelini ve tri‑hybrid mimarisiyle desteklenen bir dizi omni‑modal modeli duyurdu. Model, 256K token bağlam penceresi ve 4‑bit hassasiyette sadece 1 GB bellek tüketimiyle telefon ve laptop gibi uç cihazlarda çalışabilecek şekilde tasarlandı. Ayrıca, tek GPU üzerinden hızlı ince ayar imkanı sunarak özel alanlarda kullanılabilirliği artırıyor.",
+  "detayli_icerik_tr": "LiquidAI, yeni tri‑hybrid mimarisine dayanan LFM3-1.7B modelini Hugging Face üzerinden yayınladı. 1.73 Milyar parametreli bu metin modeli, 24 katmandan oluşuyor; 13 kapılı kısa konvolüsyon, 5 kaydırmalı pencere dikkat ve 6 global dikkat katmanı içeriyor. Model, 256 K token uzunluğunda bir bağlam penceresi sunarak uzun metin ve çok adımlı diyaloglarda avantaj sağlıyor. 4‑bit kuantizasyon sayesinde yalnızca yaklaşık 1 GB RAM tüketiyor, bu da onu akıllı telefonlar ve düşük‑güçlü laptoplar gibi uç cihazlar için uygun kılıyor.\n\nModel, Hermes Agent, Pi ve OpenClaw gibi ajan tabanlı sistemler için \"agentic training\" adı verilen bir son‑eğitim sürecinden geçti. Bu süreç, modelin araç çağrısı, yapılandırılmış çıktı üretme ve yerel ajan entegrasyonları gibi görevlerde daha tutarlı davranmasını sağlıyor. Ancak geliştiricilere, modelin boyutu nedeniyle karmaşık çok‑adımlı akıl yürütme ve kod üretiminde sınırlı kalabileceği uyarısı yapıldı.\n\nLFM3 ailesi, sadece metin modeliyle sınırlı kalmayıp, LFM3‑VL‑2B (görsel‑dil), LFM3‑Audio‑2B (ses), LFM3‑Omni‑2B (tam omni‑modal) ve karar modelleri d1‑Omni‑2B, d1‑2B gibi çeşitli türevleri de içeriyor. Özellikle LFM3‑Omni‑2B, 2.2 B parametreyle tek bir modelde metin, görsel, video ve ses işleme yeteneği sunarak ayrı ayrı ASR, VLM ve TTS sistemlerine ihtiyaç duymayan bir çözüm vaat ediyor. Karar modelleri ise bir ileri geçişte kalibre edilmiş yanıtlar üreterek milisaniye seviyesinde karar süresi sağlıyor (örneğin d1‑Omni‑2B 5.8 ms, d1‑2B 5.7 ms).\n\nLFM3‑1.7B‑Base adlı ön‑eğitim kontrol noktası da aynı mimariyi temel alıyor ve 22 trilyon token üzerinden eğitilmiş. Son 3.5 trilyon token, ajan izleri ve araç çağrıları içeren özel bir veri setiyle hazırlanmış, bu da modelin bağlam penceresini 256 K tokena genişletiyor. Llama.cpp desteği de eklenerek topluluk tarafından kolayca kullanılabilir hâle getirildi.",
+  "onemli_maddeler": [
+    "LFM3-1.7B, 256K token bağlam penceresi ve 4‑bit kuantizasyonla sadece 1 GB RAM tüketimiyle uç cihazlarda çalışabiliyor.",
+    "Tri‑hybrid mimarisi, kısa konvolüsyon, kaydırmalı pencere ve global dikkat katmanlarını birleştirerek verimli uzun‑metin işleme sağlıyor.",
+    "Aile içinde LFM3‑VL‑2B, LFM3‑Audio‑2B, LFM3‑Omni‑2B ve karar modelleri d1‑Omni‑2B, d1‑2B gibi omni‑modal ve karar odaklı modeller de duyuruldu."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Model, büyük bağlam penceresi ve ultra‑düşük bellek gereksinimiyle yerel AI uygulamalarının sınırlarını genişletiyor; aynı zamanda bir dizi omni‑modal ve karar modeliyle ekosistemi zenginleştirerek sektörde yeni bir standart oluşturma potansiyeline sahip.",
+  "etiketler": [
+    "LFM3",
+    "tri-hybrid",
+    "edge AI",
+    "local agents",
+    "omni-modal"
+  ],
+  "anilan_modeller": [
+    "LFM3-1.7B",
+    "LFM3-VL-2B",
+    "LFM3-Audio-2B",
+    "LFM3-Omni-2B",
+    "d1-Omni-2B",
+    "d1-2B",
+    "LFM3-1.7B-Base"
+  ],
+  "yorum_tr": "LFM3-1.7B ve beraberindeki omni‑modal modeller, düşük kaynaklı cihazlarda çok‑modal AI yeteneklerini birleştirerek geliştiricilere yeni bir esneklik katıyor. Ancak modelin sınırlı parametre sayısı, karmaşık kod üretimi ve derin akıl yürütme gerektiren senaryolarda dikkatli kullanılmasını gerektirecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/3UsYAM9HnZkajrb1eW23i3nsXJr4e2wsh4uklS-wrwc.png?width=640&crop=smart&auto=webp&s=0802ea4b66ab43e68bbc7a9e9e984c4625cbbd5f",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xgy8s3/liquidailfm317b_hugging_face/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-27T17:04:16.000Z",
+  "slug": "liquidai-lfm3-1-7b-hugging-face"
+}

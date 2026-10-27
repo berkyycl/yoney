@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "Google DeepMind'in Genie 4, Gerçek Zamanlı Etkileşimli Dünya Modeliyle Ses ve Diyaloğu Üretiyor",
+  "ozet_tr": "Google DeepMind, gerçek zamanlı çerçeve bazlı hesaplamalar yapan ve ortam sesleri ile karakter diyaloglarını doğrudan üretebilen yeni bir dünya modeli Genie 4'ü tanıttı. Model, Gemini serisiyle birlikte çalışarak çok adımlı görevleri planlıyor ve kullanıcı metin komutlarına anlık olarak yanıt veriyor, ancak uzun oturumlarda ve karmaşık fiziksel etkileşimlerde hâlâ sınırlamalar bulunuyor.",
+  "detayli_icerik_tr": "DeepMind, geçen yıl tanıttığı Genie 3'ün üzerine inşa edilen Genie 4'ü araştırma önizlemesi olarak duyurdu. Yeni sistem, sahneyi önceden kaydedilmiş bir video gibi sunmak yerine, her kareyi anlık olarak hesaplayarak kullanıcı girişlerine göre dinamik olarak değiştiriyor. Kullanıcılar klavye ile sahnede hareket ederken, metin komutlarıyla hava durumunu, nesne konumlarını ve karakter etkileşimlerini yönlendirebiliyor. Model, her ortam için rüzgar, yaprak hışırtısı gibi arka plan seslerini otomatik olarak üretirken, karakterlerin birbirleriyle gerçek zamanlı diyalog kurmasını sağlıyor.\n\nGenie 4'ün arkasındaki planlama motoru, Gemini serisinin farklı sürümlerinden oluşuyor. Gemini 3.8 Flash, sahneyi sürekli izleyerek hedefleri adımlara bölüyor ve her adımın gerçekleşip gerçekleşmediğini yeni çerçevelerle kontrol ediyor. Kullanıcı bir değişiklik yaptığında ya da ortam beklenmedik bir şekilde evrildiğinde, Gemini planı yeniden düzenleyerek tutarlılığı koruyor. Ayrıca DeepMind, Gemini 4 Argon'u robotik araştırmalarıyla entegre ederek, örneğin Apptronik'in Apollo humanoid robotunun sanal bir satranç oyununu oynamasını simüle eden bir demo gösterdi.\n\nModel hâlâ erken aşamalarda ve sadece seçkin test kullanıcılarına açık. DeepMind, kısa oturumlarda tutarlı bir deneyim sağlarken, uzun vadeli simülasyonlarda görsel detayların kaybolduğunu ve nesnelerin kalıcılığının azaldığını belirtiyor. Karmaşık fiziksel etkileşimler, gerçek zamanlı ses sentezi ve metin okunabilirliği gibi alanlarda da araştırma devam ediyor. Gelecekte Genie 4, Google AI Ultra abonelerine ve Gemini API ile Google AI Studio'ya erken erişim sağlayan ortaklara sunulacak. Tüm üretilen video ve ses dosyaları, DeepMind'in SynthID su işaretiyle işaretlenecek.\n\nDeepMind, bu hibrit dünya modelinin robotlar ve diğer AI ajanları için veri yerine deneyim tabanlı öğrenme ortamları oluşturma potansiyeline işaret ediyor. Gemini'nin dil ve kod yetenekleriyle piksel seviyesindeki simülasyonu birleştiren bu yaklaşım, yapay zekâ araştırmalarında yeni bir paradigma oluşturabilir.",
+  "onemli_maddeler": [
+    "Genie 4, gerçek zamanlı çerçeve bazlı hesaplamalarla ortam sesleri ve karakter diyaloglarını doğrudan üretiyor.",
+    "Gemini 3.8 Flash ve Gemini 4 Argon, sahne planlaması ve robotik entegrasyonu sağlayarak çok adımlı görevleri yönetiyor.",
+    "Model hâlâ deneysel; uzun oturumlarda görsel tutarlılık ve karmaşık fiziksel etkileşimlerde sınırlamalar mevcut."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Genie 4, gerçek zamanlı etkileşimli dünya modellemesinde ses ve diyalog üretimini birleştirerek AI simülasyonlarının sınırlarını genişletiyor; sektörde yeni araştırma ve uygulama alanları yaratma potansiyeline sahip.",
+  "etiketler": [
+    "Genie 4",
+    "DeepMind",
+    "World Model",
+    "Gemini",
+    "AI Simulation"
+  ],
+  "anilan_modeller": [
+    "Genie 4",
+    "Gemini 3.8 Flash",
+    "Gemini 4 Argon",
+    "Gemini Omni"
+  ],
+  "yorum_tr": "Genie 4'ün gerçek zamanlı ses ve diyalog üretimi, simülasyon tabanlı eğitim ve etkileşimli içerik oluşturma süreçlerini hızlandırabilir. Ancak sınırlı erişim ve uzun oturumlardaki tutarsızlıklar, geniş çaplı benimsenmeden önce çözülmesi gereken teknik engelleri gösteriyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/10/Genie-4-Google-title.png",
+  "url": "https://the-decoder.com/google-deepminds-genie-4-puts-a-modern-spin-on-agent-designs-that-predate-llms/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-27T17:25:09.000Z",
+  "slug": "google-deepmind-s-genie-4-puts-a-modern-spin-on-agent-design"
+}

@@ -1,0 +1,101 @@
+{
+  "baslik_tr": "LLM'ler Araştırma Fikri Yeniliğini Değerlendirebilir mi?",
+  "ozet_tr": "Allen Institute for AI, insan ve yapay zeka tarafından üretilen araştırma fikirlerinin yeniliğini ölçmek için \"Old Ideas, Novel Problems\" adlı bir benchmark yayınladı. Altı büyük LLM üzerinden yapılan testlerde, prompt değişiklikleri gibi küçük ayarlamalar bile doğruluk oranlarını yüzde 50'ye kadar sarsabiliyor. Sonuçlar, mevcut yenilik yargılayıcılarının güvenilirliğinin hâlâ büyük ölçüde soru işareti taşıdığını gösteriyor.",
+  "detayli_icerik_tr": "AllenAI, bilimsel keşif sürecine destek veren sistemler geliştirdikten sonra, bu sistemlerin ürettiği fikirlerin gerçekten yeni olup olmadığını ölçmek için bir değerlendirme mekanizması olan \"novelty judge\" kavramını tanıttı. Bu yargılayıcıların nasıl inşa edildiği, kullanılan model, prompt, akıl yürütme bütçesi ve literatür arama sistemleri gibi faktörlerin sonuçları büyük ölçüde etkilediği, ancak çoğu zaman sadece insan yazısı makalelerle doğrulandığı belirtiliyor.\n\nAraştırmacılar, ICLR 2026 peer review'larından elde edilen verileri kullanarak iki ayrı havuz oluşturdu: yüksek yenilikli (154 kabul edilen, yenilik övgüsü alan) ve düşük yenilikli (145 reddedilen, yenilik şüphesi taşıyan) fikirler. Bu \"Human-Only\" setinin yanı sıra, aynı insan fikirleriyle eşleştirilen basit bir LLM tarafından üretilen 154 fikirden oluşan \"Human+Generated\" seti de hazırlandı. Uzman bir değerlendirme, tüm 30 çiftte insan fikirlerinin daha yenilikçi olduğunu doğruladı.\n\nAltı LLM (GPT-5.1, GPT-5.2, GPT-5.4, Claude Sonnet 4.5, Claude Opus 4.5, Claude Opus 4.6) üzerinden yapılan testlerde, prompt değişiklikleri en büyük performans dalgalanmasına yol açtı. Örneğin, GPT-5.4 için aynı çiftleri iki farklı promptla sorduklarında doğruluk %93,5'ten %40,9'a düştü. Claude Opus 4.6 bile aynı değişiklikle %21 puan kaybetti. Arama ve ek akıl yürütme ise tutarlı bir iyileşme sağlamadı; yüksek bütçeli bir GPT-5.6 Sol yargılayıcı, basit Claude Opus 4.6'ya göre 11 puan daha düşük macro‑F1 (0,78 vs 0,89) elde etti ve maliyeti yaklaşık 10 kat daha yüksek oldu.\n\nEn basit prompt ve düşük akıl yürütme bütçesiyle çalışan Claude Opus 4.6, üç çağrı üzerinden çoğunluk oylamasıyla $2,59 maliyetle 0,854 macro‑F1 skoru elde ederek, literatür‑temelli Idea Novelty Checker (0,642, $30,66) ve Sakana AI Scientist (0,772, $82,05) gibi özel sistemlerden hem daha doğru hem de çok daha ucuz çıktı. Bu bulgular, yenilik değerlendirmesinin özellikle AI‑tarafından üretilen fikirlerde kırılgan olduğunu ve mevcut LLM‑tabanlı yargılayıcıların güvenilir bir ölçüt sağlamadığını ortaya koyuyor.",
+  "onemli_maddeler": [
+    "Prompt değişiklikleri aynı LLM için doğruluk oranını %50'ye kadar düşürebiliyor.",
+    "Basit bir Claude Opus 4.6 promptu, karmaşık retrieval‑tabanlı sistemlerden daha yüksek macro‑F1 ve çok daha düşük maliyet sağladı.",
+    "İnsan‑yazılı fikirlerde bile yargılayıcıların kararlılığı düşük; AI‑üretimli fikirlerde ise bu durum daha da belirginleşiyor."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Yenilik değerlendirmesi, AI destekli bilimsel keşiflerin güvenilirliği için kritik bir aşama; bu benchmark, mevcut yöntemlerin zayıflıklarını ortaya koyarak alandaki araştırma ve geliştirme yönelimlerini şekillendirecek.",
+  "etiketler": [
+    "LLM",
+    "novelty evaluation",
+    "benchmark",
+    "AI research",
+    "Hugging Face"
+  ],
+  "anilan_modeller": [
+    "GPT-5.1",
+    "GPT-5.2",
+    "GPT-5.4",
+    "Claude Sonnet 4.5",
+    "Claude Opus 4.5",
+    "Claude Opus 4.6"
+  ],
+  "yorum_tr": "Bu çalışma, LLM tabanlı yenilik yargılayıcılarının hâlâ istikrarsız olduğunu ve prompt tasarımının sonuçları büyük ölçüde etkilediğini gösteriyor. Geliştiricilerin daha sağlam, literatür‑entegre ve maliyet‑etkin çözümler üretmesi, AI‑destekli bilimsel araştırmaların güvenilirliğini artıracak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GPT-5.4",
+      "benchmark": "pairwise novelty accuracy (Human+Generated)",
+      "skor": 93.5,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "detaylı prompt (reviewers found exactly one novel)",
+      "kaynak_metinden_alinti": "When we switched to the simpler prompt, accuracy dropped from 93.5% to 40.9% – below chance"
+    },
+    {
+      "model": "GPT-5.4",
+      "benchmark": "pairwise novelty accuracy (Human+Generated)",
+      "skor": 40.9,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "basit prompt (which idea is novel)",
+      "kaynak_metinden_alinti": "When we switched to the simpler prompt, accuracy dropped from 93.5% to 40.9% – below chance"
+    },
+    {
+      "model": "Claude Opus 4.6",
+      "benchmark": "macro-F1 (Human+Generated)",
+      "skor": 0.89,
+      "birim": "score",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "baseline prompt",
+      "kaynak_metinden_alinti": "The agentic judge scored 0.78 macro-F1 – 11 points behind Claude Opus 4.6 at 0.89"
+    },
+    {
+      "model": "Claude Opus 4.6",
+      "benchmark": "macro-F1 (Human+Generated)",
+      "skor": 0.854,
+      "birim": "score",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "simple prompt, low reasoning, majority voting across three calls",
+      "kaynak_metinden_alinti": "simple Claude Opus 4.6 prompt using low reasoning and majority voting across three calls achieved 0.854 macro-F1 at a total evaluation cost of $2.59"
+    },
+    {
+      "model": "Idea Novelty Checker",
+      "benchmark": "macro-F1 (Human+Generated)",
+      "skor": 0.642,
+      "birim": "score",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "literature‑grounded retrieval and reranking pipeline",
+      "kaynak_metinden_alinti": "Idea Novelty Checker, a literature-grounded retrieval and reranking pipeline, scored 0.642 at $30.66"
+    },
+    {
+      "model": "Sakana AI’s AI Scientist",
+      "benchmark": "macro-F1 (Human+Generated)",
+      "skor": 0.772,
+      "birim": "score",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "iterative search on Semantic Scholar using Claude Opus 4.6",
+      "kaynak_metinden_alinti": "Sakana AI’s AI Scientist, whose novelty evaluator iteratively searches Semantic Scholar, scored 0.772 at $82.05"
+    },
+    {
+      "model": "GPT-5.6 Sol",
+      "benchmark": "macro-F1 (Human+Generated)",
+      "skor": 0.78,
+      "birim": "score",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "extra‑high reasoning budget with live iterative search restricted to arXiv",
+      "kaynak_metinden_alinti": "The agentic judge scored 0.78 macro-F1 – 11 points behind Claude Opus 4.6 at 0.89"
+    }
+  ],
+  "gorsel_url": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/ZrKpGOLkSf0LmAf3bnJIX.png",
+  "url": "https://huggingface.co/blog/allenai/novelty-bench",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-10-27T16:12:42.000Z",
+  "slug": "can-we-trust-llms-to-judge-whether-a-research-idea-is-novel"
+}

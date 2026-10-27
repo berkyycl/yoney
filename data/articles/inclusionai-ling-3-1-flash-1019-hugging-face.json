@@ -1,0 +1,81 @@
+{
+  "baslik_tr": "inclusionAI Ling-3.1-flash-1019 Modeli Yayınlandı",
+  "ozet_tr": "inclusionAI, 560 Milyar parametreli ve 1 M token bağlam penceresine sahip yeni Ling-3.1-flash-1019 modelini duyurdu. Model, post‑training iyileştirmeleri sayesinde AA‑Briefcase skorunu 1524 Elo'ya, AutomationBench‑AA başarısını %68'e yükseltti.",
+  "detayli_icerik_tr": "inclusionAI, Ling-3.1-flash serisinin geliştirilmiş bir versiyonu olan Ling-3.1-flash-1019'u tanıttı. Model, toplam 560 Milyar parametreye ve token başına 25 Milyar aktif parametreye sahip; ayrıca 1 M token uzunluğunda bir bağlam penceresi sunuyor. Bu mimari, uzun belgeler ve çok adımlı görevlerde daha tutarlı performans sağlamak üzere tasarlandı.\n\nPost‑training optimizasyonları, modelin karmaşık akıl yürütme ve gerçek‑dünya ajan yeteneklerinde belirgin bir sıçrama yakalamasına yol açtı. AA‑Briefcase benchmark'ında skor yaklaşık 1400'den 1524 Elo'ya yükselirken, AutomationBench‑AA testinde başarı oranı %62'den %68'e çıktı. Bilimsel görevlerde de ilerleme kaydedildi; CritPt testinde %18'den %26'ya, SciCode testinde ise %54'ten %57'ye yükseldi.\n\nYeni model aynı zamanda Artificial Analysis Intelligence Index v4.3.2'de 41'den 44'e bir puan artışı elde ederek, çok yönlü analitik ve ajan tabanlı iş akışlarında daha yüksek bir verimlilik sergiledi. Bu gelişmeler, Ling-3.1-flash-1019'un çok adımlı görev yürütme, karmaşık problem çözme ve gerçek dünyadaki ajan senaryolarında önceki sürümüne göre daha yetkin olduğunu gösteriyor.\n\nİlaveten, inclusionAI Ling-3.1-flash serisinin temel kontrol noktası olan Ling-3.1-flash-base'i de yayınladı. 560 B toplam parametre ve 25 B aktif parametreye sahip bu temel model, topluluk araştırmaları, alan uyarlamaları ve ileri post‑training çalışmaları için bir altyapı sunuyor. Açık kaynak topluluğu, bu yeni checkpoint'leri kullanarak kendi uygulama ve deneylerini hızlandırabilecek.",
+  "onemli_maddeler": [
+    "560 B toplam parametre ve token başına 25 B aktif parametre ile devasa bir model.",
+    "1 M token bağlam penceresi, uzun metinlerde tutarlı performans sağlıyor.",
+    "AA‑Briefcase skoru 1524 Elo'ya yükselerek önceki sürümden 124 puan fark yarattı.",
+    "AutomationBench‑AA %68 başarı, CritPt %26, SciCode %57 gibi bilimsel benchmarklarda iyileşme."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "560 B ölçeğinde bir LLM'nin açık kaynak topluluğuna sunulması, araştırmacıların ve geliştiricilerin büyük ölçekli modelleri incelemesini ve özelleştirmesini mümkün kılıyor; aynı zamanda benchmark iyileştirmeleri sektörde rekabeti artırıyor.",
+  "etiketler": [
+    "Ling-3.1-flash-1019",
+    "inclusionAI",
+    "large-language-model",
+    "benchmark",
+    "open-source"
+  ],
+  "anilan_modeller": [
+    "Ling-3.1-flash-1019",
+    "Ling-3.1-flash-base",
+    "Ling-3.1-flash"
+  ],
+  "yorum_tr": "Bu sürüm, büyük ölçekli modellerin açık kaynak ekosistemine entegrasyonunu hızlandırarak araştırma ve uygulama geliştirmede yeni fırsatlar yaratıyor. Geliştiriciler, iyileştirilmiş bağlam uzunluğu ve benchmark performansı sayesinde daha karmaşık ajan tabanlı sistemler inşa edebilecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Ling-3.1-flash-1019",
+      "benchmark": "AA-Briefcase",
+      "skor": 1524,
+      "birim": "Elo",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Its AA-Briefcase score rises from approximately 1400 to 1524 Elo"
+    },
+    {
+      "model": "Ling-3.1-flash-1019",
+      "benchmark": "AutomationBench-AA",
+      "skor": 68,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "performance on AutomationBench-AA increases from 62% to 68%"
+    },
+    {
+      "model": "Ling-3.1-flash-1019",
+      "benchmark": "CritPt",
+      "skor": 26,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "including CritPt (18% → 26%)"
+    },
+    {
+      "model": "Ling-3.1-flash-1019",
+      "benchmark": "SciCode",
+      "skor": 57,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "SciCode (54% → 57%)"
+    },
+    {
+      "model": "Ling-3.1-flash-1019",
+      "benchmark": "Artificial Analysis Intelligence Index v4.3.2",
+      "skor": 44,
+      "birim": "points",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Overall, it scores 44 on the Artificial Analysis Intelligence Index v4.3.2, up from 41 for its predecessor"
+    }
+  ],
+  "gorsel_url": "https://external-preview.redd.it/olergsHHFHkRNUgM28Qh2Rup-srxgcRzUskWCThfLL0.png?width=640&crop=smart&auto=webp&s=ee3eefe373387c7c0e52b01aabcfcad30ab568e4",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xgpo4q/inclusionailing31flash1019_hugging_face/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-27T11:12:14.000Z",
+  "slug": "inclusionai-ling-3-1-flash-1019-hugging-face"
+}

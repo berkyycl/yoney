@@ -1,0 +1,37 @@
+{
+  "baslik_tr": "Anima, GPT-6 ve GPT‑Live ile kliniklerde çağrı bekleme süresini %75 azalttı",
+  "ozet_tr": "Anima, OpenAI'nin GPT‑6, GPT‑Live ve diğer özel modellerini kullanarak kliniklerde hasta taleplerini, belge işleme ve not hazırlama süreçlerini otomatikleştirdi. Bu entegrasyon sayesinde telefon bekleme süreleri %75 oranında kısaldı, belge yığınları günler içinde temizlendi ve klinik notları saniyeler içinde oluşturulabiliyor.",
+  "detayli_icerik_tr": "Anima, Birleşik Krallık'ta 1.000'den fazla klinik ve 14 milyon hastaya hizmet veriyor; aylık 800.000'den fazla vaka işliyor. Şirket, hasta taleplerini, klinik belgeleri ve takip işlerini tek bir platformda toplayan bir AI asistanı geliştirdi. Bu asistan, GPT‑Live tabanlı sesli resepsiyonist \"Andi\" sayesinde hastaların semptomlarını telefonla alıyor, OpenAI'nin GPT‑5.4 mini modeli uygun anketi seçiyor ve elde edilen tıbbi geçmişi yapılandırılmış bir vaka olarak klinik panosuna aktarıyor.\n\nAnima, Andi'yi kullanan kliniklerde telefon bekleme süresini 40‑50 dakikadan 10 dakikaya düşürerek %75'lik bir azalma sağladı; hasta anketlerinde %86'sı Andi'yi tekrar kullanmak istediğini belirtti. Ayrıca, 80‑90 yaş aralığındaki hastalar sesli asistanı özellikle memnuniyetle karşıladı.\n\nBelge işleme ürününde GPT‑6 modelleri, gelen klinik belgelerden gönderici, alıcı, belge türü ve tarih gibi bilgileri çıkarıyor, çok aşamalı bir boru hattı sayesinde belgeleri doğru hastaya eşleştiriyor, SNOMED kodlarını tanımlıyor ve sonraki eylemi öneriyor. Bu sayede saat başına işlenen belge sayısı 15'ten 30‑60'a çıkarken, bazı klinikler 100.000'den fazla belgeyi birkaç gün içinde temizleyebildi.\n\nScribe ürünü, GPT‑5.6 Luna ile görüşme transkriptlerini yapılandırılmış klinik notlara dönüştürüyor; aynı bağlamı kullanarak sevk mektupları ve hasta takip mesajları da saniyeler içinde hazırlanıyor. Doktorlar artık notları dakikalar yerine saniyeler içinde alabiliyor, bu da hastaların anlık geri bildirim almasını ve kliniklerin mesai saatleri içinde işlerini tamamlamasını sağlıyor. Anima, platformdaki vakaların %90'ının 24 saat içinde, medyan çözüm süresinin ise yaklaşık 3,5 saat olduğunu rapor ediyor.",
+  "onemli_maddeler": [
+    "Andi sayesinde telefon bekleme süresi %75 azaldı (40‑50 dakikadan 10 dakikaya).",
+    "GPT‑6 tabanlı belge işleme, 100.000'den fazla belgeyi günler içinde temizledi.",
+    "Scribe, klinik notları ve sevk mektuplarını saniyeler içinde oluşturuyor.",
+    "Hasta anketlerinde %86 memnuniyet, 80‑90 yaş grubunda yüksek kabul oranı.",
+    "Ortalama vaka çözüm süresi 3,5 saat, %90'ı 24 saat içinde tamamlanıyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Sağlık sektöründe AI destekli otomasyonun klinik verimliliği ve hasta memnuniyetini büyük ölçüde artırması, sektördeki diğer çözümler için bir referans noktası oluşturması.",
+  "etiketler": [
+    "sağlık",
+    "yapay zeka",
+    "GPT-6",
+    "klinik otomasyonu",
+    "dokümantasyon"
+  ],
+  "anilan_modeller": [
+    "GPT-6",
+    "GPT-Live",
+    "GPT-5.4 mini",
+    "GPT 5.6 Luna"
+  ],
+  "yorum_tr": "Anima'nın OpenAI modelleriyle entegrasyonu, klinik iş akışlarını hızlandırarak hem hasta deneyimini iyileştiriyor hem de sağlık çalışanlarının yükünü hafifletiyor; bu tür çözümler, AI'nın sağlık hizmetlerinde kritik bir altyapı haline gelmesinin önünü açıyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://images.ctfassets.net/kftzwdyauwt9/WR6DkwGxpOG1YhFm2znvn/c9b1a9408b52cbdeb6dcdc85aadc8c26/anima-pressed-pathways-social.png?w=1600&h=900&fit=fill",
+  "url": "https://openai.com/index/anima",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-10-23T00:00:00.000Z",
+  "slug": "anima-helps-clinics-cut-call-waits-by-75-with-gpt-6-and-gpt"
+}

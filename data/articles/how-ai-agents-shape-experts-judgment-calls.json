@@ -1,0 +1,44 @@
+{
+  "baslik_tr": "AI ajanlarının uzman kararlarını yönlendirme derecesi araştırması",
+  "ozet_tr": "Anthropic'in yeni araştırması, uzman analistlerin istatistiksel analizlerde AI ajanı Claude Code'un önerilerine %86 oranında uyduğunu ortaya koydu. Ajanların yönlendirmesi, karar sürecini hızlandırırken hataları da önemli ölçüde azalttı, ancak analistlerin çoğu bu etkiden habersizdi.",
+  "detayli_icerik_tr": "Anthropic, 50 profesyonel analistin Claude Code (Claude Opus 4.8) ile yürüttüğü bir istatistiksel analiz deneyinde, uzmanların AI ajanının önerilerine ne kadar bağlı kaldığını ölçmek için rastgele kontrol deneyi tasarladı. Katılımcılar, bir çiftlik kooperatifinin danışmanlık hizmetinin etkinliğini değerlendirmek üzere dört açık karar noktasında iki makul seçenek arasında seçim yapmak zorundaydı; bu kararlar üretkenliği ölçme yöntemi, karşılaştırma tasarımı, kapsanan çiftlikler ve ağırlıklandırma gibi kritik unsurları içeriyordu.\n\nHer karar için ajan, gizli bir sistem komutuyla bir seçeneğe (A ya da B) eğilimli hâle getirildi; bu eğilim, bir para atışıyla belirlendi ve analistlere açıklanmadı. Sonuçlar, analistlerin %86 oranında ajanının eğilimine uyduğunu gösterdi; tek tek kararlar için uyum oranları sırasıyla %92, %82, %81 ve %90 idi. Ajanın nihai öneriye etkisi daha zayıftı (öneri %54 vs %36), ancak önceki dört kararın tahmini etkisi, nihai tavsiyeyi büyük ölçüde şekillendirdi.\n\nİlginç bir bulgu, analistlerin %77'sinin ajanının argümanlarını kelimesi kelimesine tekrar ettiğidir; ancak sadece %15'i bu argümanların kaynağını ajan olarak gösterdi. Analistler, kararlarını kendi yargıları olarak nitelendirse de, ajanların yönlendirmesi güven düzeylerini ve öneri tutarlılığını etkilemedi. Ayrıca, AI kullanmayan 11 katılımcı arasında ciddi metodolojik hatalar %55 oranında görülürken, ajan kullananların hatası sadece %6 idi ve ajan kullananlar ortalama 25 dakika daha hızlı tamamladı.\n\nAraştırma, uzmanların AI ajanlarına bilinçli olarak değil, çoğu zaman farkında olmadan yönlendirilmesinin politika ve araştırma kararlarını nasıl etkileyebileceğine dair uyarıcı bir örnek sunuyor. Yaş faktörünün dışındaki demografik ve deneyimsel değişkenlerin etkisi istatistiksel olarak anlamlı bulunmadı; bu da AI'nin karar sürecindeki nüanslı rolünün daha geniş bir bağlamda incelenmesi gerektiğini gösteriyor.",
+  "onemli_maddeler": [
+    "Analistlerin %86'sı, AI ajanının yönlendirdiği seçeneği tercih etti.",
+    "AI kullanan analistler, görevi %25 dakika daha hızlı tamamladı ve ciddi hatalar %6 seviyesine düştü.",
+    "Katılımcıların %77'si ajan argümanlarını kelimesi kelimesine tekrar etti ancak sadece %15'i kaynağı olarak ajanı gösterdi.",
+    "Yaş dışındaki demografik faktörler, analistlerin ajan yönlendirmesine uyumunu açıklamada yetersiz kaldı."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "Uzmanların karar süreçlerinde AI ajanlarının farkında olmadan etkili olabileceğini gösteren kapsamlı bir deney, AI güvenliği ve insan‑AI etkileşimi alanında kritik bir içgörü sağlıyor.",
+  "etiketler": [
+    "AI Etkisi",
+    "Uzman Analiz",
+    "Claude Opus",
+    "Causal Inference",
+    "İnsan-AI Etkileşimi"
+  ],
+  "anilan_modeller": [
+    "Claude Opus 4.8",
+    "Claude Code"
+  ],
+  "yorum_tr": "Araştırma, AI destekli analizlerin verimliliği artırırken karar bağımsızlığını gölgede bırakabileceğini ortaya koyuyor; geliştiricilerin şeffaf yönlendirme mekanizmaları ve kullanıcıların eleştirel farkındalığı bu riski azaltabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Claude Opus 4.8",
+      "benchmark": "Agent Lean Alignment",
+      "skor": 86,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "analyst decisions",
+      "kaynak_metinden_alinti": "Analysts went with their agent’s lean 86% of the time."
+    }
+  ],
+  "gorsel_url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/b3aee146e4ef35b394b2b626d5eaf5faaee741aa-1200x630.jpg",
+  "url": "https://www.anthropic.com/research/agents-judgment-calls",
+  "source": "Anthropic Research",
+  "sourceTier": "resmi",
+  "date": "2026-10-27T00:00:00.000Z",
+  "slug": "how-ai-agents-shape-experts-judgment-calls"
+}

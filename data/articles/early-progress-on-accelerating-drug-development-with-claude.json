@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "Claude ile ilaç geliştirme sürecinde erken ilerlemeler",
+  "ozet_tr": "Anthropic, Claude yapay zekâ modelini altı farklı biyoteknoloji şirketiyle ortak çalışarak ilaç keşfi ve geliştirme aşamalarında kullanıyor. Model, molekül tasarımından regülasyon belgelerinin hazırlanmasına kadar geniş bir yelpazede süreçleri hızlandırarak önemli verimlilik artışları sağladı. Şirket, bu başarıları temel alarak Claude'un klinik aşamalara entegrasyonunu ve daha fazla iş birliğini planlıyor.",
+  "detayli_icerik_tr": "Anthropic'in yaşam bilimleri ekibi, son birkaç ay içinde BigHat Biosciences, Bristol Myers Squibb, Divergence Labs, Enveda, Generate Biomedicines ve The Column Group gibi altı kuruluşla derin araştırma ortaklıkları kurdu. Bu ortaklıklar, Claude'un ilaç geliştirme sürecinin erken araştırmadan klinik deneme planlamasına kadar her aşamada nasıl kullanılabileceğini gösteren bir dizi vaka çalışması sundu.\n\nGenerate Biomedicines, CAR‑T hücre tedavisini solid tümörlerde de etkili kılmak için genetik talimatların bir kısmını %70 oranında kısaltmayı başardı; laboratuvar testlerinde bu yeni tasarım, bağışıklık hücrelerinin yaklaşık 10 kat daha fazla reseptör üretmesini ve tümör hücrelerini daha verimli öldürmesini sağladı. Divergence Labs, gıda alerjileri için iki kollu bir antikor tasarlamak amacıyla Claude ile yaklaşık 35.000 tasarım üretti ve erken testlerde IgE'yi bağlayan üç ve serbest bırakan yirmi aday buldu.\n\nBigHat Biosciences, Claude'u laboratuvar veri sistemi Reccy'ye bağlayarak iki antikor fragmanının bağlanma gücünü, ısı stabilitesini ve agregasyon eğilimini iyileştirdi; 1.010 varyant üretildi ve en iyi versiyonlar orijinaline göre 10 kat daha sıkı bağlandı, çözelti sıcaklığı 18 °C yükseldi ve agregasyon 100 kat yavaşladı. Enveda, üretim belgelerinin incelenmesinde Claude'un insan denetçilerin bulduğu 11 sorunu tespit etmesinin yanı sıra yedi yeni sorunu da ortaya çıkarmasıyla inceleme süresini %89 azaltarak 25 saatten üç saate düşürdü ve iki regülasyon belgesini dört saat içinde taslak olarak hazırladı.\n\nAnthropic ayrıca kendi araştırma programı Mithril Medicine'i başlatarak nadir çocukluk kas hastalıkları için Claude'un sözleşme, lojistik ve deney yönetimini üstlenmesini sağladı; bu sayede bir tedavi adayı fikir aşamasından farelerde umut verici sonuçlara 18 ay içinde ulaştı ve 2028 sonuna kadar insan denemeleri hedefleniyor. Şirket, Claude Science adlı araştırmacılar için AI çalışma ortamını yaygınlaştırıyor, Life Sciences Verification Program ile güvenlik önlemlerini esneterek daha fazla kurumun güçlü modelleri kullanmasını sağlıyor ve yaşam bilimleri alanında misafir araştırmacı davetleri açıyor.",
+  "onemli_maddeler": [
+    "Generate Biomedicines, Claude ile %70 daha kısa bir CAR‑T tasarımı geliştirerek bağışıklık hücrelerinin 10 kat daha fazla reseptör üretmesini sağladı.",
+    "Divergence Labs, Claude'un otomatik tasarım yeteneği sayesinde bir ay içinde yaklaşık 35.000 antikor tasarımı üretti ve IgE'yi bağlayan ve serbest bırakan birden fazla 'hit' buldu.",
+    "BigHat Biosciences, Claude'un önerileriyle lead optimizasyonunda bağlanma gücünü 10 kat artırdı, ısı stabilitesini 18 °C yükseltti ve agregasyonu 100 kat yavaşlattı.",
+    "Enveda, Claude sayesinde regülasyon belgelerinin incelenme süresini %89 azaltarak 25 saatten üç saate düşürdü ve iki belgeyi dört saat içinde taslak olarak hazırladı.",
+    "Anthropic'in kendi girişimi Mithril Medicine, Claude'un operasyonel desteğiyle bir kas hastalığı tedavisini fikir aşamasından farelerde etkili sonuçlara 18 ay içinde taşıdı."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "Claude'un ilaç keşfi ve geliştirme süreçlerinde gösterdiği somut iyileştirmeler, AI'nın biyoteknoloji sektöründe ölçeklenebilir bir değer yaratma potansiyelini kanıtlıyor.",
+  "etiketler": [
+    "AI",
+    "ilaç keşfi",
+    "life sciences",
+    "Claude",
+    "Anthropic"
+  ],
+  "anilan_modeller": [
+    "Claude",
+    "Claude Code"
+  ],
+  "yorum_tr": "Claude'un çok aşamalı ilaç geliştirme sürecine entegrasyonu, araştırma laboratuvarlarından regülasyon birimlerine kadar verimliliği artırarak sektördeki AI adaptasyonunu hızlandırabilir. Geliştiriciler, modelin bu kapsamlı yeteneklerinden faydalanarak daha kısa sürede daha etkili adaylar üretebilir, kullanıcılar ise maliyet ve zaman tasarrufu elde eder.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/6a50f5ba4c0931f8d2c411f26d860955c1efeae7-1200x630.jpg",
+  "url": "https://www.anthropic.com/research/early-progress-drug-development",
+  "source": "Anthropic",
+  "sourceTier": "resmi",
+  "date": "2026-10-27T00:00:00.000Z",
+  "slug": "early-progress-on-accelerating-drug-development-with-claude"
+}

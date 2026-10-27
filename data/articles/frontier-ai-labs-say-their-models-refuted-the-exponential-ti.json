@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "OpenAI ve Anthropic modelleri Exponential Time Hypothesis'ı çürüttü: Ne anlama geliyor?",
+  "ozet_tr": "OpenAI, üç büyük matematik problemini çözerken Exponential Time Hypothesis (ETH) adlı temel varsayımı çürüttüğünü iddia etti. Anthropic de kısa sürede kendi çürütmesini yayınladı. Bu iddialar, P=NP tartışmalarını ve kriptografi güvenliğini yeniden gözden geçirmeyi zorunlu kılıyor.",
+  "detayli_icerik_tr": "OpenAI, uzun süredir bilgisayar biliminde zorlu bir varsayımlı olan Exponential Time Hypothesis (ETH)’i çürüttüğünü duyurdu. Şirket, üç farklı disiplin için çözümlerini ayrı kanallardan paylaştı: matematikçiler GitHub üzerinden, bilgisayar bilimcileri bir çalışma grubu ve konferans desteği talep ederek, fizikçiler ise ayrı bir grup oluşturarak sonuçları değerlendirecek. MIT’li bilgisayar bilimcisi Ryan Williams, ETH’nin ilk yayıncıları Russell Impagliazzo ve Ramamohan Paturi ile birlikte OpenAI’nin bulgularını yorumlamak ve topluluğa bir açık mektup aracılığıyla geri bildirim toplamak için çalışıyor.\n\nAnthropic’in matematikçi Levent Alpöge’nin eleştirisinin ardından aynı gün kendi ETH çürütmesini yayınlaması, alandaki rekabeti artırdı. Williams, OpenAI’nin önceki “kanıt dökümü”nü “matematikçilere DDOS saldırısı” olarak nitelendirmişti; ancak bu sefer laboratuvar, bulguların kamuoyu ve akademik tartışma ortamına daha kontrollü bir şekilde sunulmasını sağlamak istiyor.\n\nETH, P≠NP varsayımını destekleyen bir kanıt olarak kabul ediliyor; yani belirli mantık bulmacalarında çözüm süresi değişken sayısı arttıkça üstel olarak artıyor. OpenAI ve Anthropic’in modelleri, bu bulmacaları “sub‑exponential” bir sürede çözebildiklerini iddia ediyor, bu da ETH’nin yanlış olduğunu ve P=NP’ye giden bir yol açabileceğini gösteriyor. Ancak uzmanlar, bu algoritmaların hâlâ en iyi olamayabileceğini ve daha derin araştırmalara ihtiyaç duyulduğunu vurguluyor.\n\nBu iddiaların en büyük etkisi, kriptografi alanında. Eğer yeni algoritmalar gerçekten sub‑exponential ise, mevcut şifreleme sistemlerinin güvenliği tehlikeye girebilir. OpenAI’nin bilimsel lideri Dan Roberts, bu riskleri kontrol ettiklerini ve şu an için kritik bir kırılma olmadığını belirtti. Yine de, bilgisayar bilimcileri yeni bir konferans ve çalışma grubu aracılığıyla bu sonuçların temel bilgisayar teorisi ve güvenlik protokolleri üzerindeki etkilerini değerlendirecek.",
+  "onemli_maddeler": [
+    "OpenAI, Exponential Time Hypothesis (ETH)’i çürüttüğünü ve sub‑exponential algoritmalar geliştirdiğini iddia etti.",
+    "Anthropic, aynı gün kendi ETH çürütmesini yayınlayarak rekabeti artırdı ve bilimsel topluluğun tepkisini çekti.",
+    "Bu iddialar, P=NP tartışmalarını ve mevcut kriptografik sistemlerin güvenliğini yeniden değerlendirmeyi zorunlu kılıyor."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "ETH gibi temel bir varsayımın çürütülmesi, bilgisayar teorisi, kriptografi ve AI araştırmalarını derinden etkileyebilecek potansiyele sahip olduğundan yüksek önem taşır.",
+  "etiketler": [
+    "OpenAI",
+    "Anthropic",
+    "ETH",
+    "P vs NP",
+    "kriptografi"
+  ],
+  "anilan_modeller": [
+    "OpenAI model (isim belirtilmemiş)",
+    "Anthropic model (isim belirtilmemiş)"
+  ],
+  "yorum_tr": "Bu gelişme, AI’nın bilimsel keşif süreçlerine entegrasyonunun hızlandığını gösterirken, aynı zamanda teorik bilgisayar bilimi ve güvenlik alanlarında yeni risk ve fırsatları da beraberinde getiriyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://techcrunch.com/wp-content/uploads/2026/04/Screenshot-2026-04-14-at-7.00.44-PM.png?resize=1200,783",
+  "url": "https://techcrunch.com/2026/10/27/frontier-ai-labs-say-their-models-refuted-the-exponential-time-hypothesis-what-does-that-mean/",
+  "source": "TechCrunch AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-27T17:08:08.000Z",
+  "slug": "frontier-ai-labs-say-their-models-refuted-the-exponential-ti"
+}

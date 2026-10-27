@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "Ben bir Kralım, ama yerel 😂",
+  "ozet_tr": "LocalLLaMA topluluğunun bir üyesi, iki Strata motorunu günde 70 tps hızında çalıştırarak 12 milyon token tükettiğini iddia etti. Aynı zamanda, Twitter'da \"Poteto\" takma adıyla tanınan bir geliştiricinin dakikada 34 milyon token harcadığı ortaya çıktı.",
+  "detayli_icerik_tr": "Reddit'in LocalLLaMA topluluğunda paylaşılan bir gönderide, kullanıcı /u/perelmanych, iki Strata motorunu aynı anda çalıştırarak günde toplam 12 milyon token tükettiğini ve bu motorların her birinin 70 token/saniye (tps) hızında çalıştığını belirtti. Bu iddia, yerel büyük dil modellerinin (LLM) yüksek işlem hacmiyle ne kadar yoğun kullanılabildiğine dair bir örnek sunuyor.\n\nGönderide ayrıca, \"Poteto\" adlı bir Twitter kullanıcısının dakikada 34 milyon token harcadığına dair bir gönderiye rastlandığı ve bu rakamın topluluğun dikkatini çektiği vurgulandı. Poteto'nun kim olduğu ve bu kadar yüksek token tüketimini nasıl sağladığı merak konusu oldu.\n\nPoteto'nun kim olduğuna dair ek bilgiler de paylaşıldı: Poteto, daha önce Cursor şirketinde çalışmış ve XAI tarafından satın alındıktan sonra Cursor ve GrokBot projelerine ayda ortalama 2.500 pull request (PR) gönderiyor. Bu yüksek PR sayısı, geliştiricinin kod tabanına yaptığı katkıların yoğunluğunu ve muhtemelen büyük ölçekli veri işleme süreçlerini yansıtıyor.\n\nTopluluk üyeleri, bu tür yüksek token tüketim örneklerinin yerel LLM altyapılarının sınırlarını zorladığını ve ölçeklenebilirlik, maliyet ve altyapı yönetimi konularında yeni tartışmalar başlattığını belirtiyor. Özellikle, Strata gibi motorların performansının ve token başına maliyetin nasıl optimize edilebileceği, geliştiriciler ve araştırmacılar için önemli bir odak noktası haline geldi.",
+  "onemli_maddeler": [
+    "Kullanıcı, iki Strata motorunu 70 tps hızında çalıştırarak günde 12 milyon token tükettiğini iddia etti.",
+    "Twitter'da \"Poteto\" takma adıyla bilinen geliştiricinin dakikada 34 milyon token harcadığı ortaya çıktı.",
+    "Poteto, Cursor'da çalıştı, XAI tarafından satın alındı ve ayda 2.500 PR göndererek Cursor ve GrokBot'a katkı sağlıyor."
+  ],
+  "kategori": "diger",
+  "onem": 2,
+  "onem_gerekce": "Topluluk içinde paylaşılan bu tür kullanım istatistikleri, yerel LLM altyapılarının ölçeklenebilirliği hakkında bilgi verir ancak sektörel çapta büyük bir etki yaratmaz.",
+  "etiketler": [
+    "token-usage",
+    "LocalLLaMA",
+    "Strata",
+    "Cursor",
+    "GrokBot"
+  ],
+  "anilan_modeller": [
+    "Strata"
+  ],
+  "yorum_tr": "Bu tür yüksek token tüketim örnekleri, yerel LLM'lerin maliyet ve performans yönetimi konularında daha fazla optimizasyona ihtiyaç duyduğunu gösteriyor; geliştiriciler için altyapı planlaması kritik bir faktör haline geliyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/yfo3ifrxi1yh1.png?width=640&crop=smart&auto=webp&s=136ebb206ffb99ff578b42b22ee4beb1855f1582",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xgy5ic/i_am_a_king_but_local/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-27T17:01:06.000Z",
+  "slug": "i-am-a-king-but-local"
+}

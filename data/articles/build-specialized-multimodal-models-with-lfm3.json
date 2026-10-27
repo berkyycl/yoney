@@ -1,0 +1,65 @@
+{
+  "baslik_tr": "LFM3 ile Özelleştirilebilir Çok Modlu Modeller",
+  "ozet_tr": "LiquidAI, 2 milyar parametre civarında çalışan ve metin, görsel, ses, omni ve karar modellerini tek bir omurgada birleştiren LFM3 serisini tanıttı. Yeni tri‑hibrit mimari, aynı parametre sayısıyla önceki nesilden %35 daha yüksek performans sağlarken, tek GPU’da ince ayar ve kenar cihazlarda çalıştırma imkanı sunuyor.",
+  "detayli_icerik_tr": "LiquidAI, LFM3 ailesiyle çok modlu yapay zekâ uygulamalarının geliştirilmesini kökten değiştirmeyi hedefliyor. LFM3‑1.7B‑Base modeli, 24 katman ve üç farklı katman tipini (kısa konvolüsyon, kayar‑pencere dikkat ve global dikkat) birleştiren tri‑hibrit katman karışımına sahip. Gated attention ve kısmi RoPE gibi yenilikler, kuantizasyon sırasında aktivasyon uç değerlerini azaltarak 4‑bit hassasiyette 1 GB'lık bir bellek ayak iziyle kenar cihazlarda çalışabilmesini sağlıyor.\n\nYeni mimari, 14 farklı cihaz ve arka uç kombinasyonunda (akıllı telefonlar, Raspberry Pi 5, dizüstü bilgisayarlar, bulut CPU/GPU ve Qualcomm Hexagon NPU) yapılan donanım‑döngüsü mimari aramalarıyla optimize edildi. Sonuç olarak, LFM3‑1.7B‑Base 22 trilyon token üzerinden eğitildi ve son 3,5 trilyon token, ajan‑odaklı izler ve araç çağrılarıyla zenginleştirilmiş bir orta‑eğitim aşamasını içeriyor; bu da bağlam penceresini 256 K tokena çıkarıyor.\n\nLFM3 serisi, tek bir omurgadan türeyen altı ayrı model sunuyor: metin (LFM3‑1.7B), görsel‑metin‑video (LFM3‑VL‑2B), ses (LFM3‑Audio‑2B), omni (LFM3‑Omni‑2B) ve karar modelleri (d1‑2B, d1‑omni‑2B). Vision ve audio kodlayıcıları, önceki nesillere göre %2,2‑3,5 daha az FLOP harcarken aynı doğruluk seviyesini koruyor. LiquidCodec adlı ses tokenleştiricisi, tek CPU çekirdeğinde gerçek zamanın %87 katı hızında ses üretimi sağlıyor.\n\nBu modeller, Hugging Face Transformers kütüphanesi üzerinden tek satır kodla kullanılabiliyor ve tek GPU’da ince ayar yapılabiliyor. LFM3‑1.7B, WebArena‑Verified testinde 38,42 puan alarak önceki LFM2‑1.2B modelini geride bırakıyor; LFM3‑VL‑2B ise 62 görsel benchmarkta ortalama skoru 71,4'e yükselterek 3,1 B parametreli rakiplerine eşdeğer performans sergiliyor. d1‑2B modeli ise ImajevBench'te 75,5 puanla önceki d1‑3B modelinin 64,0 puanını geçiyor.",
+  "onemli_maddeler": [
+    "LFM3‑1.7B, önceki nesilden %35 daha az parametreyle daha yüksek performans sunuyor.",
+    "Tek omurgadan türeyen altı model, metin, görsel, ses, video ve karar görevlerini tek bir çatı altında birleştiriyor.",
+    "Yeni vision ve audio kodlayıcıları, FLOP tüketimini %2,2‑3,5 azaltırken doğruluk kaybı yaşatmıyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "LFM3 serisi, çok modlu yapay zekâ modellerinin kenar cihazlarda tek GPU ile ince ayar yapılabilmesini sağlayarak hem performans hem de erişilebilirlik açısından sektörde büyük bir adım oluşturuyor.",
+  "etiketler": [
+    "multimodal",
+    "edge AI",
+    "foundation models",
+    "LiquidAI",
+    "HuggingFace"
+  ],
+  "anilan_modeller": [
+    "LFM3-1.7B",
+    "LFM3-VL-2B",
+    "LFM3-Audio-2B",
+    "LFM3-Omni-2B",
+    "d1-2B",
+    "d1-omni-2B"
+  ],
+  "yorum_tr": "LFM3'ün kenar cihazlarda tek GPU ile çalışabilen çok modlu yapısı, geliştiricilerin özelleştirilmiş ajanlar ve robotik uygulamalar oluşturmasını hızlandıracak; aynı zamanda düşük maliyetli AI çözümlerinin yaygınlaşmasına öncülük edecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "LFM3-1.7B",
+      "benchmark": "WebArena-Verified",
+      "skor": 38.42,
+      "birim": "score",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "on WebArena-Verified, it scores 38.42 against 3.02"
+    },
+    {
+      "model": "LFM3-VL-2B",
+      "benchmark": "62 vision benchmarks average",
+      "skor": 71.4,
+      "birim": "score",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "raises the average across 62 vision benchmarks from 57.6 to 71.4"
+    },
+    {
+      "model": "d1-2B",
+      "benchmark": "ImajevBench",
+      "skor": 75.5,
+      "birim": "score",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "scores higher on all four of our decision suites, for example, 75.5 against 64.0 on ImajevBench"
+    }
+  ],
+  "gorsel_url": "https://cdn-uploads.huggingface.co/production/uploads/644249b08443bce4c9890a0f/wEKXxH6qGa7vmHjn5KA-W.png",
+  "url": "https://huggingface.co/blog/LiquidAI/lfm3",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-10-27T17:16:52.000Z",
+  "slug": "build-specialized-multimodal-models-with-lfm3"
+}
