@@ -1,0 +1,105 @@
+{
+  "baslik_tr": "Google DeepMind, Gemini 4 Carbon'ı Tanıttı: İki Hafta Arada Güvenlik ve Kodlama Performansında Önemli İyileşmeler",
+  "ozet_tr": "Google DeepMind, sadece iki hafta aradan Gemini 4 Argon'un ardından Gemini 4 Carbon modelini duyurdu. Carbon, Artificial Analysis Intelligence Index v5'te 59 puanla birincilik elde ederken, siber güvenlik testlerinde de lider konuma yükseldi. Model, çok gün süren otonom geliştirme iş akışları ve uzun bağlamlı görevlerde kayda değer performans artışı sunuyor.",
+  "detayli_icerik_tr": "Google DeepMind, Gemini 4 Carbon'u tanıtarak yapay zeka alanında bir adım daha öne çıktı. Model, sadece iki hafta önce piyasaya sürülen Gemini 4 Argon'un üzerine inşa edilerek Artificial Analysis Intelligence Index v5'te 59 puanla birinci sıraya yerleşti; Argon ise 50 puanla geride kaldı. Carbon, çok gün süren otonom geliştirme iş akışları için tasarlandı ve uzun bağlamlı, çok adımlı kodlama problemlerini kendi başına çözebildiği iddia ediliyor.\n\nGüvenlik yetenekleri özellikle vurgulandı. SEC-bench Pro testinde %88.2 başarı oranı ile tüm rakiplerini geride bırakan Carbon, CWE‑Bench'te %71.0 ve ExploitGym'de %54.8 başarı elde etti. Bu sonuçlar, modelin güvenlik açıklarını tespit etme, doğrulama ve yamalama süreçlerinde insan müdahalesine ihtiyaç duymadan çalışabildiğini gösteriyor. Bu nedenle model, ABD hükümetinin gönüllü ön test sürecine alındı ve ilk etapta sadece seçilmiş siber güvenlik uzmanlarına sunulacak.\n\nKodlama ve bilimsel akıl yürütme alanlarında da önemli ilerlemeler kaydedildi. Vals AI platformunda %70.36 doğruluk oranı ile Claude Sonnet 5.5'in hemen arkasında yer alırken, WebDev Arena'da 1.769 puanla dördüncü sırada bulunuyor. Arena.ai'de Text Arena liderliğini 1.528 puanla sürdürürken, Agent Arena'da %16.2 net iyileşme ve %18.6 steerability artışı sağladı. Ayrıca, Carbon'un çoklu token üretim kapasitesi Argon'a göre %64 daha yüksek, ancak hâlâ rakip modellerin çıktısının yarısından az.\n\nFiyatlandırma açısından Carbon, Argon ile aynı giriş fiyatını koruyor: giriş token başına 2 $, çıkış token başına 10 $. Görev başına ortalama maliyet 7.76 $ olarak hesaplanıyor ve bu, Claude Opus 5.5'in 10.04 $'lık maliyetinden %23 daha düşük. Modelin erişimi, öncelikle güvenlik uzmanları ve Google DeepMind'in Fairwind Programı kapsamında güvenilir ortaklarla sınırlı olacak, ardından geliştiricilere ve son kullanıcılara açılacak.",
+  "onemli_maddeler": [
+    "Gemini 4 Carbon, Artificial Analysis Intelligence Index v5'te 59 puanla birinci sırada yer alarak Argon'u geride bıraktı.",
+    "SEC-bench Pro (%88.2), CWE‑Bench (%71.0) ve ExploitGym (%54.8) gibi güvenlik benchmark'larında lider konumda.",
+    "Uzun bağlamlı ve çok adımlı kodlama görevlerinde çok gün süren otonom çalışma yeteneğiyle dikkat çekiyor.",
+    "Fiyatlandırma Argon ile aynı kalırken, görev başına maliyet %23 daha düşük.",
+    "Model, ABD hükümetinin gönüllü ön test sürecine alındı ve ilk etapta seçilmiş siber güvenlik uzmanlarına sunulacak."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Google DeepMind'in yeni nesil Gemini 4 Carbon modeli, hem genel AI performansında hem de siber güvenlik yeteneklerinde sektördeki lider konumunu güçlendiriyor; fiyatlandırma politikası ve erişim stratejisi de geniş çaplı benimsenmeye zemin hazırlıyor.",
+  "etiketler": [
+    "Gemini 4 Carbon",
+    "DeepMind",
+    "AI Benchmark",
+    "Siber Güvenlik",
+    "Agentic AI"
+  ],
+  "anilan_modeller": [
+    "Gemini 4 Argon",
+    "Claude Opus 5.5",
+    "Claude Sonnet 5.5",
+    "GPT-6 Astra",
+    "Kimi K3.1 Pro",
+    "Muse Wonder",
+    "Grok 4.7",
+    "Fable-5.1"
+  ],
+  "yorum_tr": "Gemini 4 Carbon'un güvenlik ve uzun‑horizontlu kodlama yeteneklerindeki sıçraması, geliştiricilerin ve kurumların daha karmaşık görevleri otomatikleştirmesine olanak tanıyacak; aynı zamanda rekabeti kızıştırarak diğer büyük model sağlayıcılarını da benzer güvenlik odaklı iyileştirmeler yapmaya zorlayacak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Gemini 4 Carbon",
+      "benchmark": "Artificial Analysis Intelligence Index v5",
+      "skor": 59,
+      "birim": "points",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Carbon tops the Artificial Analysis Intelligence Index v5 with 59 points, up from Argon's 50."
+    },
+    {
+      "model": "Gemini 4 Carbon",
+      "benchmark": "Artificial Analysis Coding Agent Index",
+      "skor": 59,
+      "birim": "points",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "It's closing the gap fast in Artificial Analysis's Coding Agent Index (59 points vs. Argon's 50)."
+    },
+    {
+      "model": "Gemini 4 Carbon",
+      "benchmark": "Vals AI Accuracy",
+      "skor": 70.36,
+      "birim": "percent",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "The evaluation platform Vals AI puts Carbon in second place at 70.36 percent accuracy."
+    },
+    {
+      "model": "Gemini 4 Carbon",
+      "benchmark": "SEC-bench Pro",
+      "skor": 88.2,
+      "birim": "percent",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "On SEC-bench Pro, which measures autonomous vulnerability discovery in real-world software, Carbon scores 88.2 percent and leads all tested models."
+    },
+    {
+      "model": "Gemini 4 Carbon",
+      "benchmark": "ExploitGym",
+      "skor": 54.8,
+      "birim": "percent",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "ten hours of runtime",
+      "kaynak_metinden_alinti": "On ExploitGym, which tests whether a system can turn discovered vulnerabilities into working exploits, the model reaches 54.8 percent."
+    },
+    {
+      "model": "Gemini 4 Carbon",
+      "benchmark": "CWE-Bench",
+      "skor": 71,
+      "birim": "percent",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Carbon also holds a wide first-place lead in writing fixes on CWE-Bench."
+    },
+    {
+      "model": "Gemini 4 Carbon",
+      "benchmark": "Agent Arena Net Improvement",
+      "skor": 16.2,
+      "birim": "percent",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "In the Agent Arena, the model places second across more than 21,900 real sessions, ahead of GPT-6 Astra and Fable-5.1, with a net improvement of 16.2 percent."
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/10/gemini_4_argon-2.png",
+  "url": "https://the-decoder.com/google-deepmind-releases-gemini-4-carbon-just-two-weeks-after-argon-with-gains-across-the-board/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-28T19:17:58.000Z",
+  "slug": "google-deepmind-releases-gemini-4-carbon-just-two-weeks-afte"
+}

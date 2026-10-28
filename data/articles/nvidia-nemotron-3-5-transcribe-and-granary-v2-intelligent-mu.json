@@ -1,0 +1,108 @@
+{
+  "baslik_tr": "NVIDIA Nemotron 3.5 Transcribe ve Granary v2: Prompt ile Uyarlanabilir Çok Dilli Transkripsiyon",
+  "ozet_tr": "NVIDIA, açık ağırlıklı Nemotron 3.5 Transcribe modelini ve Granary v2 veri setini duyurdu. Model, 40 dili transkribe ederken 31 dili İngilizce'ye çeviriyor, 13 dilde konuşmacı etiketlemesi yapıyor ve bir saatlik kayıtları işleyebiliyor. Prompt tabanlı kontrol ve alan‑özel ince ayar imkanı, özellikle tıp ve toplantı gibi uzmanlaşmış senaryolarda büyük avantaj sağlıyor.",
+  "detayli_icerik_tr": "NVIDIA, Hugging Face ve ModelScope platformlarında yayınladığı Nemotron 3.5 Transcribe modelini, Granary v2 veri setiyle birlikte tanıttı. Tek bir checkpoint üzerinden ses kaydını metne dönüştürme, konuşmacı etiketleme (diarization), çeviri ve sesli soru‑cevap gibi görevleri aynı anda yerine getirebilen model, 40 dili doğrudan transkribe ederken 31 dili İngilizce'ye ya da İngilizce'den çeviriyor ve 13 dilde konuşmacı kimliğini belirliyor. Model, bir saat uzunluğundaki kayıtları işleyebiliyor ve aynı anda sekiz konuşmacıya kadar etiketleyebiliyor.\n\nModel, doğal dil ile yönlendirilebilen prompt yapısı sayesinde aynı ses dosyasından farklı çıktılar üretilebiliyor: örneğin \"Bu kaydı transkribe et ve konuşmacıları etiketle\" ya da \"Bu ses dosyasını İngilizce'ye çevir\" gibi talimatlar verilebiliyor. Ayrıca, alan‑özel kelime dağarcığı ve aksanlara uyum sağlamak için prompt içinde terim listeleri eklenebiliyor. Granary v2, 463.062 saatlik çok dilli ses verisini 48 dilde ve 16 kaynak korpusta toplayarak, modelin eğitimi için üç farklı transkript biçimi (verbatim, itn_raw, itn_clean) sunuyor.\n\nPerformans açısından Nemotron 3.5 Transcribe, açık ağırlıklı modeller arasında bir dizi liderlik elde etti. Hugging Face Open ASR Leaderboard'da İngilizce için ortalama %5.33 WER, çok dilli için %4.62 WER ve uzun‑form kayıtlar için %10.98 WER ile en düşük hatayı kaydetti. Artificial Analysis Speech‑to‑Text Leaderboard'da %2.8 AA‑WER ile birinci sırada yer alırken, aynı platformun AgentTalk alt setinde %1.8 WER elde etti. David AI'nin çok dilli diarization yarışmasında %18.26 DER ile en düşük hatayı gösterdi ve VoiceArena Diarization‑Bench'te %32.4 cpWER ile 14 sistem arasında birinci oldu.\n\nGranary v2'nin sunduğu veri ve NeMo Speech ince ayar araçları, özellikle tıbbi alanda belirgin bir iyileşme sağladı. Eka Care'in Hindistan'daki doktor ve öğrenci konuşmalarını içeren benchmark'ta, sadece prompt optimizasyonu %23.8 WER'e, tam ince ayar ise %12.17 WER'e (yüzde 45.8 relatif azalma) düşürdü. Bu sonuç, modelin genel İngilizce performansını (LibriSpeech test‑clean %1.54'ten %1.69'a hafif artış) etkilemeden, alan‑özel terminolojiye yüksek doğrulukla uyum sağlayabildiğini gösteriyor.",
+  "onemli_maddeler": [
+    "Nemotron 3.5 Transcribe, 40 dili doğrudan transkribe ederken 31 dili çeviriyor ve 13 dilde konuşmacı etiketlemesi yapıyor.",
+    "Hugging Face Open ASR Leaderboard'da İngilizce %5.33, çok dilli %4.62 ve uzun‑form %10.98 WER ile açık‑ağırlıklı modeller arasında birinci sırada.",
+    "Granary v2, 463k saatlik çok dilli ses verisini 48 dilde ve üç transkript biçimiyle sunarak model eğitimi ve ince ayarını kolaylaştırıyor.",
+    "Medical fine‑tuning çalışması, held‑out WER'i %12.17'ye düşürerek %45.8 relatif iyileşme sağladı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "NVIDIA'nın açık‑ağırlıklı, çok dilli ve konuşmacı tanıma yetenekleriyle birleşen yeni modeli, hem performans hem de esneklik açısından sektörde büyük bir adım oluşturuyor.",
+  "etiketler": [
+    "ASR",
+    "multilingual",
+    "NVIDIA",
+    "open-source",
+    "speech AI"
+  ],
+  "anilan_modeller": [
+    "Nemotron 3.5 Transcribe",
+    "Nemotron 3 Diarization",
+    "Multitalker Parakeet"
+  ],
+  "yorum_tr": "Nemotron 3.5 Transcribe, açık‑ağırlıklı modeller arasında hem doğruluk hem de aktif parametre verimliliğiyle öne çıkıyor; geliştiriciler prompt ve veri seti ince ayarıyla alan‑özel uygulamalara hızlıca adapte edebilecek. Kullanıcılar ise daha düşük hata oranları ve çok dilli destek sayesinde daha güvenilir ve kapsamlı transkripsiyon deneyimi yaşayacak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Nemotron 3.5 Transcribe",
+      "benchmark": "Hugging Face Open ASR Leaderboard (English)",
+      "skor": 5.33,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "first among open-weight models at 5.33% average WER"
+    },
+    {
+      "model": "Nemotron 3.5 Transcribe",
+      "benchmark": "Hugging Face Open ASR Leaderboard (Multilingual)",
+      "skor": 4.62,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "4.62% mean WER across seven languages, the lowest among evaluated open-weight models"
+    },
+    {
+      "model": "Nemotron 3.5 Transcribe",
+      "benchmark": "Hugging Face Open ASR Leaderboard (Long-form)",
+      "skor": 10.98,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "10.98% mean WER for long-form recordings, also the lowest in that comparison"
+    },
+    {
+      "model": "Nemotron 3.5 Transcribe",
+      "benchmark": "Artificial Analysis Speech-to-Text Leaderboard (AA-WER)",
+      "skor": 2.8,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "ties for first among open-weight models at 2.8% AA-WER"
+    },
+    {
+      "model": "Nemotron 3.5 Transcribe",
+      "benchmark": "Artificial Analysis AA-AgentTalk",
+      "skor": 1.8,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "scores 1.8% WER on the held-out voice-agent speech set"
+    },
+    {
+      "model": "Nemotron 3.5 Transcribe",
+      "benchmark": "David AI DAI-ASR-I18N Diarization",
+      "skor": 18.26,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "lowest overall diarization error rate (DER) of 18.26% across 21 languages"
+    },
+    {
+      "model": "Nemotron 3.5 Transcribe",
+      "benchmark": "VoiceArena Diarization-Bench (cpWER)",
+      "skor": 32.4,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "leads at 32.4% cpWER, lowest among 14 systems"
+    },
+    {
+      "model": "Nemotron 3.5 Transcribe",
+      "benchmark": "Medical fine-tuning on Eka Care benchmark (held-out WER)",
+      "skor": 12.17,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "fine-tuning cuts held-out WER to 12.17%, a 45.8% relative reduction"
+    }
+  ],
+  "gorsel_url": "https://cdn-uploads.huggingface.co/production/uploads/68127936de624fb6f57d9989/3vFxCEUXz_xJVrTBr4hNr.jpeg",
+  "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-10-28T14:58:17.000Z",
+  "slug": "nvidia-nemotron-3-5-transcribe-and-granary-v2-intelligent-mu"
+}

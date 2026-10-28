@@ -1,0 +1,90 @@
+{
+  "baslik_tr": "Google Gemini 4 Carbon: Siber Güvenlik ve Uzun Vadeli Görevlerde Yeni Lider Model",
+  "ozet_tr": "Google, Gemini 4 Carbon modelini duyurdu. Model, siber güvenlik savunma döngüsünde %88.2 SEC-bench Pro başarısı ve uzun vadeli kodlama yetenekleriyle öne çıkıyor. Ayrıca, güvenlik ve uyumluluk açısından çok katmanlı koruma mekanizmalarıyla sunuluyor.",
+  "detayli_icerik_tr": "Google, Gemini 4 Carbon'ı en güçlü model olarak tanıttı ve bu modelin siber güvenlikte ve uzun vadeli mühendislik görevlerinde çığır açtığını vurguladı. Carbon, güncellenen v5.0 Artificial Analysis Intelligence Index'te 59 puanla bir numaraya yükselirken, kodlama ve ajan tabanlı görevlerde de belirgin iyileşmeler sağladı. SEC-bench Pro testinde %88.2 başarı oranı, ExploitGym'de %54.8 ve CWE-bench'te %71.0 puan alarak siber savunma yaşam döngüsünün tüm aşamalarında lider konuma geldi.\n\nModel, Gemini 4 Argon'un iki hafta önce piyasaya sürülmesinin ardından geliştirildi ve güvenlik, uyumluluk ve hizalama konularında çok katmanlı bir koruma yığını içeriyor. Argon'un %0.7'lik prompt injection başarısızlık oranını sıfıra indiren Carbon, Terminal-Bench 4.0'da hileli davranışları %0.0 başarıyla engelliyor. İç testlerde, yüksek şiddette uyumsuzluk uyarıları %80 azaldı ve desteklenmeyen iddialar iki kat azaldı.\n\nCarbon, uzun vadeli mühendislik problemlerine odaklanarak günlerce süren çok adımlı görevlerde kod tabanlarındaki ince hataları tespit edip kök nedenlerine inebiliyor. Web geliştirme alanında ise WebDev Arena sıralamasında +89 elo puan kazanarak 1768 puanla dördüncü sıraya yükseldi. Google, modeli ilk olarak siber savunma ekiplerine ve güvenilir ortaklara Fairwind Programı kapsamında sunacak, ardından geliştiriciler, işletmeler ve tüketiciler için ürün yüzeylerine entegre etmeyi planlıyor.\n\nFiyatlandırma açısından Carbon, Argon ile aynı giriş fiyatını koruyor: giriş token başına 2 $, çıkış token başına 10 $, önbellekli giriş tokenları ise %95 indirimli. Google, modelin güvenlik ve uyumluluk çerçevesini sürekli iyileştirerek, hem geliştiricilere hem de son kullanıcılara güvenli ve etkili bir yapay zeka deneyimi sunmayı hedefliyor.",
+  "onemli_maddeler": [
+    "Gemini 4 Carbon, SEC-bench Pro, ExploitGym ve CWE-bench testlerinde sırasıyla %88.2, %54.8 ve %71.0 puan alarak siber güvenlikte yeni bir standart belirledi.",
+    "Model, Prompt Injection saldırılarına %0.0 başarı oranı ile tamamen direnç gösterdi ve Terminal-Bench 4.0'da hileli davranışları %0.0 ile engelledi.",
+    "WebDev Arena sıralamasında +89 elo puan kazanarak 1768 puanla dördüncü sıraya yükseldi, kodlama ve çok adımlı görevlerde performans artışı sağladı.",
+    "Carbon, Argon ile aynı fiyatlandırma modelini koruyor ve ilk olarak güvenilir siber savunma ortaklarına Fairwind Programı aracılığıyla sunulacak.",
+    "Güvenlik ve uyumluluk açısından çok katmanlı koruma yığını, hizalama iyileştirmeleri ve şeffaflık mekanizmalarıyla modelin güvenilirliği artırıldı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Gemini 4 Carbon, siber güvenlik ve uzun vadeli kodlama görevlerinde çığır açan performans ve güvenlik iyileştirmeleri sunarak yapay zeka pazarında önemli bir rekabet avantajı sağlıyor.",
+  "etiketler": [
+    "Yapay Zeka",
+    "Model",
+    "Siber Güvenlik",
+    "Kodlama",
+    "Benchmark"
+  ],
+  "anilan_modeller": [
+    "Gemini 4 Argon",
+    "Gemini 4 Carbon"
+  ],
+  "yorum_tr": "Gemini 4 Carbon, siber savunma ve karmaşık mühendislik görevlerinde yüksek doğruluk ve güvenlik sunarak geliştiricilerin ve kurumların yapay zekayı daha güvenli bir şekilde benimsemelerini kolaylaştıracak. Modelin çok katmanlı güvenlik önlemleri ve düşük yanıt hataları, sektördeki güvenlik standartlarını yükseltebilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Gemini 4 Carbon",
+      "benchmark": "SEC-bench Pro",
+      "skor": 88.2,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Carbon achieves a state-of-the-art 88.2% on SEC-bench Pro, autonomously uncovering complex flaws buried in real-world software."
+    },
+    {
+      "model": "Gemini 4 Carbon",
+      "benchmark": "ExploitGym",
+      "skor": 54.8,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Carbon sets a new state-of-the-art on the popular exploitation benchmark ExploitGym (54.8%)."
+    },
+    {
+      "model": "Gemini 4 Carbon",
+      "benchmark": "CWE-bench",
+      "skor": 71,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Carbon reaches 71.0% on Collinear’s CWE-bench, turning validated findings directly into working code fixes."
+    },
+    {
+      "model": "Gemini 4 Carbon",
+      "benchmark": "WebDev Arena",
+      "skor": 1768,
+      "birim": "ELO",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Carbon jumps +89 elo points to land at #4 (1768) on WebDev Arena."
+    },
+    {
+      "model": "Gemini 4 Carbon",
+      "benchmark": "Terminal-Bench 4.0 (cheating success rate)",
+      "skor": 0,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Carbon reduced successful cheating on Terminal-Bench 4.0 to 0.0%."
+    },
+    {
+      "model": "Gemini 4 Carbon",
+      "benchmark": "Gray Swan’s Indirect Prompt Injection (IPI) Benchmark",
+      "skor": 0,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "While Argon previously led ... with a very low 0.7% attack success rate, Carbon achieves 0.0% — resisting every evaluated attack attempt."
+    }
+  ],
+  "gorsel_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini_carbon_102726_social_share.width-1300.png",
+  "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+  "source": "Google Gemini",
+  "sourceTier": "resmi",
+  "date": "2026-10-28T17:00:00.000Z",
+  "slug": "gemini-4-carbon-our-next-frontier-model-2"
+}

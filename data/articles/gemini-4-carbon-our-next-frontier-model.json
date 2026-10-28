@@ -1,0 +1,99 @@
+{
+  "baslik_tr": "Gemini 4 Carbon: Yeni Sınır Modelimiz",
+  "ozet_tr": "Google DeepMind, en güçlü yapay zeka modeli Gemini 4 Carbon’ı tanıttı. Model, siber güvenlik ve uzun vadeli mühendislik görevlerinde çığır açan performans sergileyerek SEC-bench Pro, ExploitGym ve CWE-bench gibi kritik benchmark’larda lider konuma yükseldi.",
+  "detayli_icerik_tr": "Google DeepMind, iki hafta önce piyasaya sürülen Gemini 4 Argon üzerine inşa edilen Gemini 4 Carbon'ı duyurdu. Carbon, önceki nesillere göre çok daha gelişmiş siber güvenlik savunma yetenekleri ve uzun vadeli, çok adımlı mühendislik problemlerini sürdürülebilir bir şekilde çözebilme kapasitesi sunuyor. Model, güvenlik odaklı bir yaklaşım benimseyerek çok katmanlı güvenlik ve uyum mekanizmalarıyla birlikte geliyor.\n\nCarbon, siber güvenlik yaşam döngüsünün tüm aşamalarında çığır açan sonuçlar elde etti. SEC-bench Pro testinde %88.2 başarı oranı yakalarken, ExploitGym’de %54.8 ve CWE-bench’de %71.0 puanla en yüksek performansı gösterdi. Bu sonuçlar, gerçek dünyadaki yazılımlarda karmaşık zafiyetleri tespit etme, bu zafiyetlerin sömürülebilirliğini doğrulama ve kök nedenine yönelik yamalar üretme konularında modelin üstünlüğünü kanıtlıyor.\n\nKodlama ve ajan tabanlı görevlerde de önemli iyileşmeler mevcut. Carbon, uzun vadeli mühendislik problemlerinde günlerce çalışabilen bir ajan olarak tasarlandı ve iç testlerde güvenli kod üretiminde Argon’a göre iki kat daha yüksek bir başarı oranı sağladı. Web geliştirme alanında ise WebDev Arena sıralamasında +89 elo puan kazanarak #4 (1768) konumuna yükseldi. Bu, tam yığın web geliştirme ve multimodal anlama yeteneklerinin belirgin bir artışını gösteriyor.\n\nGüvenlik ve uyumluluk açısından Carbon, Argon’un çok katmanlı güvenlik yığınına ek olarak daha sıkı hizalama ve yanıt doğruluğu geliştirmeleri içeriyor. Terminal-Bench 4.0’da hileli davranış oranı %0.0’a düşürülürken, Gray Swan’ın Indirect Prompt Injection (IPI) benchmark’ında da %0.0 saldırı başarı oranı elde edildi. Model, desteklenmeyen iddiaları iki kat azaltarak ve kullanıcıyla etkileşimde daha şeffaf ve işbirlikçi bir tutum sergileyerek yanıt kalitesini artırdı.\n\nCarbon, şu anda ABD hükümetinin gönüllü ön test sürecine dahil edilerek sınırlı bir siber savunma topluluğuna sunuluyor. Fairwind Programı kapsamında güvenilir ortaklara kademeli olarak erişim sağlanacak ve geri bildirimler doğrultusunda güvenlik önlemleri iyileştirildikten sonra geliştiricilere, işletmelere ve son kullanıcılara geniş çapta açılacak. Fiyatlandırma, Argon ile aynı giriş ve çıkış token ücretleri üzerinden belirlenmiş; giriş tokeni başına 2 $, çıkış tokeni başına 10 $, önbellekli giriş tokenleri ise %95 indirimli.",
+  "onemli_maddeler": [
+    "SEC-bench Pro testinde %88.2 başarı oranı ile lider konum",
+    "ExploitGym’de %54.8, CWE-bench’de %71.0 puanla en yüksek performans",
+    "WebDev Arena’da +89 elo puan artışıyla #4 (1768) sıralaması",
+    "Terminal-Bench 4.0’da hileli davranış oranı %0.0, IPI saldırı başarısı %0.0",
+    "Uzun vadeli mühendislik ve güvenli kod üretiminde Argon’a göre 2 kat daha yüksek başarı"
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Gemini 4 Carbon, siber güvenlik ve uzun vadeli kodlama görevlerinde önceki modelleri geride bırakan performans ve güvenlik iyileştirmeleri sunarak AI model pazarında önemli bir sıçrama yaratıyor.",
+  "etiketler": [
+    "Gemini 4 Carbon",
+    "Siber Güvenlik",
+    "Kodlama",
+    "AI Modeli",
+    "Güvenlik"
+  ],
+  "anilan_modeller": [
+    "Gemini 4 Argon",
+    "Gemini 4 Carbon"
+  ],
+  "yorum_tr": "Carbon’ın siber güvenlikteki üstün performansı, güvenlik ekiplerinin yapay zekâ destekli zafiyet tespiti ve onarım süreçlerini hızlandıracak. Aynı zamanda güvenlik ve uyumluluk odaklı geliştirmeler, geliştiricilerin model güvenilirliğine olan güvenini artıracak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Gemini 4 Carbon",
+      "benchmark": "Artificial Analysis Intelligence Index v5.0",
+      "skor": 59,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Carbon ranks #1 on the recently updated v5.0 of Artificial Analysis Intelligence Index at 59."
+    },
+    {
+      "model": "Gemini 4 Carbon",
+      "benchmark": "SEC-bench Pro",
+      "skor": 88.2,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Carbon achieves a state-of-the-art 88.2% on SEC-bench Pro, autonomously uncovering complex flaws buried in real-world software."
+    },
+    {
+      "model": "Gemini 4 Carbon",
+      "benchmark": "ExploitGym",
+      "skor": 54.8,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Carbon sets a new state-of-the-art on the popular exploitation benchmark ExploitGym (54.8%)."
+    },
+    {
+      "model": "Gemini 4 Carbon",
+      "benchmark": "CWE-bench",
+      "skor": 71,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Carbon reaches 71.0% on Collinear’s CWE-bench, turning validated findings directly into working code fixes."
+    },
+    {
+      "model": "Gemini 4 Carbon",
+      "benchmark": "WebDev Arena",
+      "skor": 1768,
+      "birim": "ELO",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Carbon jumps +89 elo points to land at #4 (1768) on WebDev Arena."
+    },
+    {
+      "model": "Gemini 4 Carbon",
+      "benchmark": "Terminal-Bench 4.0",
+      "skor": 0,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Carbon reduced successful cheating on Terminal-Bench 4.0 to 0.0%, with attempts to cheat dropping to 0.4%."
+    },
+    {
+      "model": "Gemini 4 Carbon",
+      "benchmark": "Gray Swan Indirect Prompt Injection (IPI) Benchmark",
+      "skor": 0,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "While Argon previously led the Gray Swan’s Indirect Prompt Injection (IPI) Benchmark ... Carbon achieves 0.0% — resisting every evaluated attack attempt."
+    }
+  ],
+  "gorsel_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini_carbon_102726_social_share.width-1300.png",
+  "url": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+  "source": "Google DeepMind",
+  "sourceTier": "resmi",
+  "date": "2026-10-28T17:00:58.000Z",
+  "slug": "gemini-4-carbon-our-next-frontier-model"
+}

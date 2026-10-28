@@ -1,0 +1,83 @@
+{
+  "baslik_tr": "Nvidia, Açık Kaynak Nemotron 3.5 Transcribe Modelini Tanıttı: Transkripsiyon, Çeviri ve Konuşmacı Tanıma Bir Arada",
+  "ozet_tr": "Nvidia, 30 milyar parametreli ancak adım başına yalnızca 4 milyar aktif parametre kullanan Nemotron 3.5 Transcribe modelini duyurdu. Tek bir GPU’da çalışabilen model, 40 dili transkribe edebiliyor, 31 dili İngilizce’ye/İngilizce’den çevirebiliyor ve 13 dilde konuşmacı tanıma yeteneği sunuyor.",
+  "detayli_icerik_tr": "Nvidia, yeni Nemotron 3.5 Transcribe modelini açık kaynak olarak yayınladı. Model 30 milyar parametreye sahip ancak işlem adımında yalnızca yaklaşık 4 milyar parametre aktif hâle getirildiği için tek bir Nvidia GPU’sunda (örneğin RTX PRO 6000 Blackwell Server Edition) çalışabiliyor ve bir saatlik kaydı üç dakikadan kısa sürede işleyebiliyor.\n\nModel, 40 dili doğrudan transkribe edebiliyor, bu dillerin 31’ini İngilizce’ye ya da İngilizce’den çevirebiliyor ve 13 dilde konuşmacı tanıma (diarization) yapabiliyor. Kullanıcılar, basit metin komutlarıyla aynı ses kaydını farklı çıktılara dönüştürebiliyor: konuşmacı etiketli bir transkript, İngilizce çeviri ya da karar özetleri gibi. En fazla sekiz konuşmacıyı tanıyabilen sistem, bir saatlik kayıtları işleyebiliyor ve teknik terimler gibi özel kelimeler için ipuçları alabiliyor.\n\nPerformans açısından Nemotron 3.5 Transcribe, bir dizi bağımsız benchmarkta üst sıralarda yer alıyor. Hugging Face İngilizce Open ASR Leaderboard’da ortalama kelime hata oranı (WER) %5.33 ile açık‑ağırlıklı modeller arasında birinci konumda. Artificial Analysis karşılaştırmasında %2.81 WER elde ederken, daha büyük Voxtral Small modelinin %2.77 WER’ine çok yakın bir sonuç gösterdi. VoiceArena’nın konuşmacı tanıma testinde ise kesintili konuşmalarda %8.32 kelime kaçırma oranıyla medyan %31’in çok altında bir performans sergiledi.\n\nModelin yanında Nvidia, Granary v2 adlı 844 000 saatlik ses verisinden oluşan, 48 dili kapsayan büyük bir açık veri seti de yayınladı. Veri seti, farklı transkripsiyon stilleri (tam metin, doldurulmuş kelimeler, temizlenmiş) içeriyor ve geliştiricilerin kendi alanlarına göre ince ayar yapmalarına olanak tanıyor. Özellikle Hindistan’da doktor ve tıp öğrencileriyle yapılan ince ayar denemelerinde, genel hata oranı %30.8’den %23.8’e, ardından %11.8’e düşürülerek tıbbi alanda rekabetçi bir sonuç elde edildi. Görülmeyen konuşmacılar için hata oranı %22.44’ten %12.17’ye (%45.8 relatif iyileşme) geriledi. Bu ince ayar süreci tek bir Nvidia GB300 GPU’sunda yaklaşık 14 saatlik işlem süresi gerektirdi.\n\nNemotron 3.5 Transcribe hâlâ gerçek zamanlı işleme desteklemiyor ve bazı dillerde özellik farklılıkları mevcut. Ses sorularına yanıt verme yeteneği yalnızca İngilizce için eğitildi. Nvidia, modelin ve Granary v2 veri setinin Hugging Face üzerinde bulunabileceğini ve ince ayar için rehberler ile bir AI kodlama asistanı uzantısı sunduğunu belirtiyor.",
+  "onemli_maddeler": [
+    "30 milyar parametreli model, adım başına sadece 4 milyar aktif parametre kullanarak tek GPU’da çalışıyor.",
+    "40 dili transkribe, 31 dili İngilizce’ye/İngilizce’den çeviriyor ve 13 dilde konuşmacı tanıma yapabiliyor.",
+    "Hugging Face Open ASR Leaderboard’da %5.33 WER ile birinci, Artificial Analysis’da %2.81 WER ile Voxtral Small’a yakın performans.",
+    "Granary v2 veri seti 844 000 saat ses, 48 dil ve çeşitli transkripsiyon stilleri sunuyor.",
+    "Tıbbi alanda ince ayar sonrası hata oranı %11.8’e düşürülerek sektördeki açık modelleri geride bıraktı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Nemotron 3.5 Transcribe, tek GPU’da çok‑dilli transkripsiyon, çeviri ve konuşmacı tanıma sunarak açık kaynak konuşma AI’sinde performans ve erişilebilirlik açısından yeni bir standart belirliyor.",
+  "etiketler": [
+    "Nvidia",
+    "Nemotron 3.5",
+    "Speech AI",
+    "Open Source",
+    "Benchmark"
+  ],
+  "anilan_modeller": [
+    "Nemotron 3.5 Transcribe",
+    "Voxtral Small",
+    "Nemotron 3 Diarization",
+    "Parakeet"
+  ],
+  "yorum_tr": "Bu model, düşük donanım gereksinimiyle yüksek doğruluk sunarak geliştiricilerin çok‑dilli ses uygulamalarını daha hızlı ve maliyet etkin bir şekilde hayata geçirmesine olanak tanıyor; aynı zamanda tıbbi gibi özel alanlarda ince ayar imkanıyla sektörel adaptasyonu da hızlandırıyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Nemotron 3.5 Transcribe",
+      "benchmark": "Hugging Face English Open ASR Leaderboard",
+      "skor": 5.33,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "average word error rate of 5.33 percent"
+    },
+    {
+      "model": "Nemotron 3.5 Transcribe",
+      "benchmark": "Artificial Analysis ASR Comparison",
+      "skor": 2.81,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "scores 2.81 percent"
+    },
+    {
+      "model": "Nemotron 3.5 Transcribe",
+      "benchmark": "VoiceArena speaker recognition test (conversation with interruptions)",
+      "skor": 8.32,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "dropped the fewest words, missing 8.32 percent compared to a median of about 31 percent"
+    },
+    {
+      "model": "Nemotron 3.5 Transcribe (medical fine‑tuned)",
+      "benchmark": "Medical domain error rate (full benchmark)",
+      "skor": 11.8,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "fine‑tuned on Indian doctors recordings",
+      "kaynak_metinden_alinti": "after fine‑tuning, the rate fell to 11.8 percent"
+    },
+    {
+      "model": "Nemotron 3.5 Transcribe (medical fine‑tuned)",
+      "benchmark": "Speaker identification error rate for unseen speakers (medical domain)",
+      "skor": 12.17,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "unseen speakers after fine‑tuning",
+      "kaynak_metinden_alinti": "drop from 22.44 to 12.17 percent, a relative improvement of 45.8 percent"
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/08/nvidia_logo.png",
+  "url": "https://the-decoder.com/nvidias-open-nemotron-3-5-transcribe-combines-transcription-translation-and-speaker-recognition/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-28T15:49:39.000Z",
+  "slug": "nvidia-s-open-nemotron-3-5-transcribe-combines-transcription"
+}

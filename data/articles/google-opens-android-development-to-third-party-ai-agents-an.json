@@ -1,0 +1,55 @@
+{
+  "baslik_tr": "Google, Android Studio'yu Üçüncü Taraf AI Ajanlarına Açtı ve Yeni Gemini API'lerini Tanıttı",
+  "ozet_tr": "Google, Android Studio Rabbit 2 ile \"Bring Your Own Agent\" (BYOA) özelliğini hayata geçirerek geliştiricilerin IDE içinde Claude, Codex ve diğer 40'tan fazla dış AI kodlama ajanını kullanabilmesini sağladı. Yeni Gemini Nano 4 destekli Agentic API ve Model Context Protocol (MCP) sayesinde uygulama hizmetleri doğrudan Google Search ve Gemini uygulamasına bağlanabilecek. Ayrıca XREAL ile ortaklaşa tanıtılan $1.099 fiyatındaki AURA akıllı gözlükler, Android XR ve Gemini entegrasyonunu gerçek dünyaya taşıyor.",
+  "detayli_icerik_tr": "Android Dev Summit'te duyurulan güncellemeler, Android Studio Rabbit 2'ye entegre edilen \"Bring Your Own Agent\" (BYOA) özelliğiyle geliştiricilere IDE içinde 40'tan fazla üçüncü taraf kodlama ajanını doğrudan çalıştırma imkanı tanıyor. Açık Agent Client Protocol (ACP) sayesinde Claude, Codex, Google Antigravity gibi ajanlar proje yapısı, sembol çözümleme, emülatör ve Logcat gibi araçlara anlık erişim sağlayarak kod üretimini hızlandırıyor. Aynı zamanda Android Bench liderlik tablosunun 2.0 sürümü, çok günlük geliştirme projelerinde model performansını işlevsellik, harcanan zaman ve maliyet açısından ölçüyor.\n\nYeni terminal araçları, AI ajanlarının token tüketimini azaltmak ve geliştirme süresini kısaltmak amacıyla genişletildi. CLI eklentileri, Compose önizlemelerini emülatör açmadan terminalde render edebiliyor; bu özellik, iç testlerde UI görevlerini %77 daha hızlı tamamlamalarını ve token kullanımını üç kat azaltmalarını sağladı. Ayrıca LeakCanary hafıza sızıntı tespit kütüphanesi CLI ve Android Studio Profiler'a entegre edildi; Claude Opus 5.5 modeliyle yapılan A/B testinde hafıza sızıntılarını bulma süresi neredeyse iki kat hızlandı ve token tüketimi %25 azaldı.\n\nUygulama tarafında, Gemini Nano 4 destekli alfa seviyesindeki Agentic API, ML Kit içinde yer alarak yerel cihazda fonksiyon yürütme, sohbet geçmişi yönetimi ve güvenlik filtreleri sunuyor. Model Context Protocol (MCP) ve beta aşamasındaki AppFunctions API, uygulamaların yerel ya da sistem çapında ajanlarla fonksiyon paylaşmasını tek bir katmanda birleştiriyor. Jetpack Compose için tanıtılan Agent-to-UI (A2UI) arayüzü, ajanların sadece metin değil, uygulama bileşenlerinden oluşan etkileşimli UI'lar üretmesini mümkün kılıyor.\n\nDonanım tarafında ise Google, XREAL ile ortaklaşa geliştirdiği XREAL AURA akıllı gözlükleri tanıttı. Android XR çalıştırabilen bu kablolu gözlükler, Snapdragon Reality Elite çipine sahip ve beş sanal pencereyi kullanıcı görüş alanına yansıtıyor. Gemini entegrasyonu sayesinde gözlük, gerçek dünyayı ve sanal ekranları aynı anda analiz ederek pencere düzenleme, oyun ipuçları sunma ve fiziksel nesneleri vurgulama gibi görevleri yerine getiriyor. Ürün, ABD, Kanada ve Güney Kore'de 1.099 dolara ön siparişe açıldı.",
+  "onemli_maddeler": [
+    "Android Studio Rabbit 2'de BYOA özelliği ile 40+ dış AI kodlama ajanı doğrudan IDE içinde kullanılabilir.",
+    "Yeni terminal araçları ve LeakCanary entegrasyonu, AI ajanlarının UI görevlerini %77 daha hızlı ve token tüketimini %25 azaltarak gerçekleştirmesini sağladı.",
+    "Gemini Nano 4 destekli Agentic API ve Model Context Protocol, uygulamalarda yerel AI fonksiyonları ve etkileşimli UI oluşturmayı mümkün kılıyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Android geliştirme ekosistemine AI ajanlarını entegre eden kapsamlı güncellemeler, hem geliştiricilerin verimliliğini artırıyor hem de yeni Gemini API'leriyle uygulama deneyimini zenginleştiriyor; bu, sektördeki AI‑destekli geliştirme trendlerini hızlandıracak bir adım.",
+  "etiketler": [
+    "Android Studio",
+    "AI ajanları",
+    "Gemini",
+    "Smart glasses",
+    "Geliştirici araçları"
+  ],
+  "anilan_modeller": [
+    "Claude",
+    "Claude Opus 5.5",
+    "Codex",
+    "Google Antigravity",
+    "Gemini Nano 4"
+  ],
+  "yorum_tr": "Bu güncellemeler, Android ekosisteminde AI destekli kod üretimini standart hâle getirerek geliştiricilerin iş akışını kökten değiştirebilir; aynı zamanda Gemini entegrasyonlu akıllı gözlükler, mobil ve artırılmış gerçeklik uygulamalarının yeni bir kullanım senaryosunu ortaya koyuyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Various AI coding agents",
+      "benchmark": "UI Task Completion Speed",
+      "skor": 77,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Internal Google tests show agents finished UI tasks 77 percent faster and used up to three times fewer tokens with this feature."
+    },
+    {
+      "model": "Claude Opus 5.5",
+      "benchmark": "Memory Leak Fix Speed",
+      "skor": 2,
+      "birim": "x",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "In a Google A/B test using Anthropic's Claude Opus 5.5 model, the CLI tool helped find and fix memory leaks nearly twice as fast while cutting token usage by about 25 percent."
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/05/Android-Robot-Logo-Background-Nano-Banana-Pro.jpg",
+  "url": "https://the-decoder.com/google-opens-android-development-to-third-party-ai-agents-and-unveils-new-gemini-apis/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-28T16:59:59.000Z",
+  "slug": "google-opens-android-development-to-third-party-ai-agents-an"
+}

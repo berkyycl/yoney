@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "Qwen 3.8 Flash Modeliyle LG WebOS TV’de Kök Erişimi Sağlandı",
+  "ozet_tr": "Open‑source bir LLM olan Qwen 3.8 Flash, düşük özellikli bir PC üzerinden çalıştırılarak LG’nin webOS işletim sistemine kök erişimi elde edildi. Kullanıcı, modelin talimatlarını izleyerek TV’deki gözetim ve reklam yazılımlarını devre dışı bıraktı ve hatta exploit’i kalıcı hâle getirdi. Bu deneyim, yapay zekâ destekli güvenlik testlerinin pratikte ne kadar etkili olabileceğini gösteriyor.",
+  "detayli_icerik_tr": "Reddit topluluğu LocalLLaMA’da paylaşılan bir gönderide, kullanıcı Switchboy1, Qwen 3.8 Flash modelini bir \"opencode harness\" üzerinden çalıştırarak LG webOS TV’ye kök erişimi sağlamayı başardı. Model, SSH üzerinden geliştirici modunda açılan bir terminale bağlanıp, sistemdeki yetki yükseltme (LPE) açıklarını tarayarak ve bilinen bir exploit'i kullanarak root yetkisini elde etti.\n\nİşlem adımları, cihazın IP adresi, SSH portu (9922) ve \"prisoner\" kullanıcı adı gibi bilgilerle başlayan bir bağlantı kurulumunu, ardından süreç içi izleme, yedekleme, kalıcı root sağlama ve telemetri/reklam yazılımlarının devre dışı bırakılmasını kapsıyordu. Model, talimatları otomatik olarak yürütürken, yedekleme ve geri dönüş adımlarını atladı; bunun yerine exploit’i güvenlik açısından yamalayarak başka kullanıcıların aynı yöntemi kullanmasını engelledi. Bu durum, ev sahibi script'in homebrew mağazasının çalışamaz hale gelmesine yol açtı, ancak SSH oturumu hâlâ açık olduğu için hatayı düzeltme imkanı bulundu.\n\nKullanılan donanım, Ryzen 7 3700X işlemci, 32 GB RAM, RTX 2070 Super ve 120 GB NVMe SSD'den oluşuyordu; model yaklaşık 25 token/s hızında çalıştı ve GPU kullanım oranı neredeyse %100 idi. Sonuç olarak, modelin düşük donanım gereksinimleri ve yüksek verimliliği, bu tür güvenlik araştırmalarının ev ortamında bile uygulanabilir olduğunu gösterdi.\n\nProjeye ait kodlar ve adım‑adım rehber, Switchboy1 tarafından GitHub üzerindeki https://github.com/switchboy/pwnLG adresine yüklendi. Topluluk, bu tür LLM‑destekli güvenlik testlerinin etik sınırlarını tartışırken, Avrupa Birliği’nde LG’nin veri toplama uygulamalarının yasal çerçevesi de gündeme geldi.",
+  "onemli_maddeler": [
+    "Qwen 3.8 Flash, düşük donanımda yüksek verimlilikle çalışarak gerçek bir cihazda kök erişimi sağladı.",
+    "Model, talimatları otomatik yürütürken yedekleme ve geri dönüş adımlarını atladı, exploit'i kalıcı hâle getirdi.",
+    "Proje, LG webOS TV’deki gözetim ve reklam yazılımlarını devre dışı bırakma ve güncellemeleri engelleme adımlarını içeriyor."
+  ],
+  "kategori": "diger",
+  "onem": 2,
+  "onem_gerekce": "Konu, bir LLM’nin gerçek cihazlarda güvenlik testleri için kullanılmasını gösterse de, sınırlı bir topluluk deneyimi olduğu ve geniş sektörel etkisi düşük olduğu için orta‑düşük öneme sahiptir.",
+  "etiketler": [
+    "Qwen 3.8",
+    "webOS",
+    "root",
+    "AI hacking",
+    "LG TV"
+  ],
+  "anilan_modeller": [
+    "Qwen 3.8 Flash"
+  ],
+  "yorum_tr": "Bu deneyim, yapay zekâ destekli otomasyonun güvenlik araştırmalarında pratik bir araç olabileceğini ortaya koysa da, yedekleme ve geri dönüş mekanizmalarının ihmal edilmesi riskleri artırıyor. Geliştiriciler, LLM’leri test senaryolarına entegre ederken güvenlik prosedürlerini de kod içinde sağlamalı.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://qianwen-res.oss-accelerate.aliyuncs.com/Qwen3.8-Flash-Next/architecture.png",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xhoeo3/used_qwen_38_flash_next_on_underspeced_pc_to_root/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-28T13:41:58.000Z",
+  "slug": "used-qwen-3-8-flash-next-on-underspeced-pc-to-root-and-gut-l"
+}

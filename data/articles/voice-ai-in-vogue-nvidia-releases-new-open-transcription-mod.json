@@ -1,0 +1,36 @@
+{
+  "baslik_tr": "Nvidia, 30 Milyar Parametreli Açık Ağırlıklı Nemotron 3.5 Transcribe Modelini Yayınladı",
+  "ozet_tr": "Nvidia, 40 dile kadar ses transkripsiyonu yapabilen ve 31 dili İngilizce'ye çeviren Nemotron 3.5 Transcribe modelini ücretsiz olarak duyurdu. Model, bir saatlik kayıtları işleyebiliyor, sekiz konuşmacıyı ayırt edebiliyor ve tek bir çip üzerinde çalıştırılabiliyor.",
+  "detayli_icerik_tr": "Nvidia, Çarşamba günü 30 milyar parametreli Nemotron 3.5 Transcribe modelini açık ağırlık (open-weight) olarak piyasaya sürdü. Model, 40 farklı dili destekleyerek ses dosyalarını metne dönüştürüyor ve aynı zamanda 31 dili İngilizce'ye ve İngilizce'den çevirme yeteneğine sahip. Kayıt uzunluğu bir saate kadar çıkabiliyor ve sekiz ayrı konuşmacıyı ayırt edebiliyor, bu da toplantı ve tıbbi transkripsiyon gibi karmaşık senaryolar için ideal bir çözüm sunuyor.\n\nNemotron 3.5'in yanı sıra Nvidia, Granary veri setinin ikinci versiyonunu da yayınladı. Açık kaynaklı bu konuşma veri seti, geliştiricilerin modeli sektörel jargon ve özel terminolojiye göre ince ayar yapmalarına olanak tanıyor. Nvidia, NeMo Speech çerçevesi ve güncellenmiş Granary veri setiyle birlikte, uygulama geliştiricilerin kendi ses tanıma çözümlerini hızlıca özelleştirebileceklerini vurguladı.\n\nModelin bir diğer dikkat çeken özelliği, tek bir çip üzerinde çalışabilmesi. Jetson AGX Thor robotik kontrolcüsü, DGX Spark dizüstü bilgisayar çipi ve yeni Blackwell veri merkezi çipleri gibi çeşitli Nvidia donanımlarıyla uyumlu olduğu belirtiliyor. Bu sayede hem kenar (edge) cihazlarda hem de yüksek performanslı veri merkezlerinde düşük maliyetli ve ölçeklenebilir bir ses işleme altyapısı sağlanıyor.\n\nNvidia, Nemotron 3.5'in Hugging Face'in Open ASR Leaderboard gibi benchmarklarda rakiplerini geride bıraktığını iddia ediyor, ancak kesin sayısal sonuçlar paylaşılmadı. Model, mevcut ses AI pazarında Mistral'ın Voxtral 3'ü, ElevenLabs'ın Realtime'ı ve Salesforce'un Launa-Omni modeli gibi yeni girişimlerle rekabet içinde. Tek sınırlama olarak, modelin yalnızca önceden kaydedilmiş ses dosyalarını işleyebildiği, canlı yayınları desteklemediği belirtiliyor.",
+  "onemli_maddeler": [
+    "Nemotron 3.5 Transcribe, 40 dili destekleyen ve bir saate kadar uzunluktaki ses kayıtlarını işleyebilen 30 milyar parametreli açık ağırlıklı bir model.",
+    "Model, tek bir Nvidia çipi (Jetson AGX Thor, DGX Spark, Blackwell) üzerinde çalıştırılabiliyor, bu da kenar ve veri merkezi uygulamaları için maliyet avantajı sağlıyor.",
+    "Granary v2 veri seti ve NeMo Speech araçlarıyla geliştiriciler, sektörel jargon ve özel terminolojiye göre modeli özelleştirebilecek."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Nvidia'nın büyük ölçekli, ücretsiz ve açık ağırlıklı ses transkripsiyon modeli, AI ses pazarında önemli bir boşluğu dolduruyor ve hem geliştiriciler hem de işletmeler için geniş bir kullanım senaryosu sunuyor.",
+  "etiketler": [
+    "Nvidia",
+    "Nemotron 3.5 Transcribe",
+    "Ses Tanıma",
+    "Açık Ağırlık",
+    "AI"
+  ],
+  "anilan_modeller": [
+    "Nemotron 3.5 Transcribe",
+    "Parakeet",
+    "Voxtral 3",
+    "Realtime",
+    "Launa-Omni"
+  ],
+  "yorum_tr": "Nemotron 3.5, yüksek parametre sayısı ve tek çipte çalıştırılabilirliği sayesinde ses tabanlı uygulamaların maliyet ve ölçeklenebilirlik sorunlarını hafifletebilir. Ancak canlı akış desteğinin eksikliği, gerçek zamanlı iletişim senaryolarında bir sınırlama oluşturuyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://techcrunch.com/wp-content/uploads/2026/10/AI-on-the-tongue.png?resize=1200,600",
+  "url": "https://techcrunch.com/2026/10/28/voice-ai-in-vogue-nvidia-releases-new-open-transcription-model/",
+  "source": "TechCrunch AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-28T15:00:00.000Z",
+  "slug": "voice-ai-in-vogue-nvidia-releases-new-open-transcription-mod"
+}

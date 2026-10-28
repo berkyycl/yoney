@@ -1,0 +1,47 @@
+{
+  "baslik_tr": "AA artık saçma bir seviyeye geldi: En Çekici Dörtlükte Açık Ağırlıklı Modeller Yok",
+  "ozet_tr": "Artificial Analysis (AA) indeksinin en yeni sürümü v5.0, En Çekici Dörtlük (Most Attractive Quadrant) içinde açık ağırlıklı (open‑weight) modelleri tamamen dışarıda bıraktı. Kullanıcılar, DeepSeek, GLM, Kimi ve Qwen gibi önceki sürümlerde yer alan modellerin artık bu bölgeye girmediğini fark etti.",
+  "detayli_icerik_tr": "Reddit'in LocalLLaMA topluluğunda paylaşılan bir gönderide, kullanıcı Realistic_Gap_5871, AA'nın v5.0 sürümündeki indeks değişikliğine dikkat çekti. Yeni versiyonda, En Çekici Dörtlük içinde açık ağırlıklı modellerin sayısının sıfıra düştüğünü ve bu bölgenin Pareto çizgisine yaklaşmadığını gösteren bir ekran görüntüsü paylaştı. Önceki sürümlerde DeepSeek, GLM, Kimi ve Qwen gibi modeller bu alanda yer alırken, yeni güncelleme bu modelleri tamamen dışarıda bırakıyor.\n\nGönderide, indeksin gerçek zamanlı olarak güncellenmediği, puanların toplu olarak işlenebileceği ve bu yüzden grafiklerin hâlâ boş göründüğü ihtimali de dile getirildi. Kullanıcı, farklı tarayıcı ve gizli pencere kullanarak da aynı eksikliği doğruladı ve AA'nın güncellemeleri toplu olarak yapıyor olabileceğini öne sürdü. Ayrıca, tüm büyük modellerin manuel olarak eklenmiş olduğu bir link de paylaşılarak, mevcut durumun daha net görülmesi sağlandı.\n\nBu durum, açık ağırlıklı modellerin performans ve çekicilik açısından sektördeki algısını yeniden şekillendirebilir. Geliştiriciler, modellerinin AA indeksinde daha görünür olabilmesi için yeni metrikler ve optimizasyonlar üzerinde çalışmak zorunda kalabilir. Aynı zamanda, kapalı‑ağırlıklı (closed‑weight) büyük modellerin hâlâ öne çıktığı bir ortamda, açık ağırlıklı toplulukların rekabet gücünü koruması için stratejik adımlar atması gerekebilir.\n\nTopluluk üyeleri, AA indeksinin güncellemelerini yakından izlemeye devam ederken, bu tür değişikliklerin benchmark ekosistemindeki şeffaflık ve adillik tartışmalarını da alevlendireceği öngörülüyor.",
+  "onemli_maddeler": [
+    "AA v5.0 indeksinde En Çekici Dörtlük içinde açık ağırlıklı modeller tamamen yok.",
+    "DeepSeek, GLM, Kimi ve Qwen gibi daha önce öne çıkan modeller artık bu bölgede yer almıyor.",
+    "Kullanıcılar, indeksin gerçek zamanlı güncellenmediğini ve puanların toplu işlenebileceğini belirtiyor."
+  ],
+  "kategori": "benchmark",
+  "onem": 3,
+  "onem_gerekce": "Topluluk içinde tartışma yaratan ve açık ağırlıklı modellerin görünürlüğünü etkileyen bir indeks değişikliği, sektörel algıyı ve rekabet dinamiklerini etkileyebilir ancak geniş çaplı bir endüstri etkisi henüz net değil.",
+  "etiketler": [
+    "AA",
+    "benchmark",
+    "open-weight",
+    "model değerlendirme",
+    "AI topluluğu"
+  ],
+  "anilan_modeller": [
+    "step-5",
+    "inkling",
+    "mimo-v2-6-pro",
+    "gpt-6-astra",
+    "claude-opus-5-5",
+    "mistral-large-4",
+    "muse-spark-open",
+    "claude-fable-5-1",
+    "ling-3-1-flash-1019",
+    "grok-4-7",
+    "kimi-k3-1-pro",
+    "reflection-beam",
+    "gpt-6-luna",
+    "claude-haiku-5-5",
+    "gemini-3-8-flash",
+    "qwen3-8-27b"
+  ],
+  "yorum_tr": "AA indeksindeki bu değişiklik, açık ağırlıklı modellerin sektördeki görünürlüğünü azaltarak geliştiricileri performans ve değerlendirme metriklerini yeniden gözden geçirmeye zorlayabilir. Kullanıcılar ise indeksin güncelleme sıklığı ve şeffaflığı konusunda daha fazla bilgi talep edecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/dvq3y314o6yh1.png?width=140&height=48&auto=webp&s=292f8518b831480fbe66abc0468c16722c579497",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xhk7hp/aa_is_getting_ridiculous_now_zero_open_weights_in/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-28T10:19:22.000Z",
+  "slug": "aa-is-getting-ridiculous-now-zero-open-weights-in-the-most-a"
+}
