@@ -1,0 +1,74 @@
+{
+  "baslik_tr": "Artificial Analysis Intelligence Index v5: Büyük Güncelleme ve Açık Ağırlıklı Modellerde Genişleyen Boşluk",
+  "ozet_tr": "Artificial Analysis Intelligence Index, v5 sürümüyle önemli bir güncelleme alarak sıralama doğruluğunu artırdı. Açık ağırlıklı modeller ile kapalı modeller arasındaki fark 3 puandan 12 puana yükseldi ve indeksin %60'ı özel test setlerine dayandırıldı, bu da sonuçların yeniden üretilememesine yol açıyor.",
+  "detayli_icerik_tr": "Reddit topluluğu LocalLLaMA, Artificial Analysis Intelligence Index'in (AAII) v5 sürümünü duyurdu. Güncellenen indeks, daha kapsamlı değerlendirmeler ve yeni ağırlıklandırma metodolojisi sayesinde model sıralamalarında daha hassas bir ölçüm sunmayı hedefliyor. Özellikle açık ağırlıklı modellerin performans farkı, önceki sürümde 3 puan iken şimdi 12 puana çıktı.\n\nAAII v5, indeksin %60'ını özel test setleri ve tutulan cevaplarla oluşturuyor. Bu yaklaşım, sonuçların dışarıdan bağımsız olarak doğrulanmasını zorlaştırıyor ve bazı araştırmacıların metodolojinin şeffaflığı konusunda eleştirilerde bulunmasına neden oldu. Topluluk üyeleri, özellikle GPT‑Terra‑6.1'in Fable‑5.1'den daha iyi performans gösterdiği deneyimlerini paylaşarak indeksin güvenilirliğine dair soru işaretleri oluşturdu.\n\nSıralamada öne çıkan modeller arasında, henüz ağırlıkları yayınlanmamış olan Kimi K3.1 Pro, 46 puanla en yüksek açık ağırlıklı skoru elde etti. Açık ağırlıklı modeller arasında en yüksek puanları alan DeepSeek V4.1 Flash (1017 max) ve GLM‑5.3 (max) ise 32 puanla liderin 14 puan gerisinde yer alıyor. Kapalı model Claude Haiku 5.5 ise 36 puanla ikinci sırada bulunuyor.\n\nBu güncelleme, açık ağırlıklı model geliştiricileri için hem bir motivasyon hem de bir uyarı niteliğinde. Daha yüksek puanlar elde etmek için özel veri setlerine erişim ve test prosedürlerinin şeffaflığı kritik hale geliyor. Endüstri gözlemcileri, indeksin metodolojisinin daha açık bir şekilde paylaşılması ve yeniden üretilebilirliğin artırılması gerektiğini vurguluyor.",
+  "onemli_maddeler": [
+    "AAII v5, indeksin %60'ını özel test setlerine dayandırarak sonuçların yeniden üretilememesine yol açıyor.",
+    "Açık ağırlıklı modeller ile kapalı modeller arasındaki performans farkı 3 puandan 12 puana yükseldi.",
+    "Kimi K3.1 Pro, 46 puanla açık ağırlıklı modeller arasında lider konumda; DeepSeek V4.1 Flash ve GLM‑5.3 ise 32 puanla ikinci sırada."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Benchmark indeksindeki büyük metodolojik değişiklik ve açık‑kapalı model farkının belirginleşmesi sektördeki rekabeti ve araştırma şeffaflığını etkileyen kritik bir gelişmedir.",
+  "etiketler": [
+    "benchmark",
+    "AI-index",
+    "open-weight",
+    "closed-model",
+    "AI-research"
+  ],
+  "anilan_modeller": [
+    "Kimi K3.1 Pro",
+    "DeepSeek V4.1 Flash",
+    "GLM-5.3",
+    "Claude Haiku 5.5",
+    "GPT-Terra-6.1",
+    "Fable-5.1"
+  ],
+  "yorum_tr": "AAII v5 güncellemesi, açık ağırlıklı modellerin rekabet gücünü artırırken, indeksin şeffaflığı ve yeniden üretilebilirliği konusundaki endişeleri de beraberinde getiriyor; geliştiricilerin hem performans hem de metodoloji açısından daha açık bir yaklaşım benimsemeleri gerekecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Kimi K3.1 Pro",
+      "benchmark": "Artificial Analysis Intelligence Index v5",
+      "skor": 46,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "private test sets",
+      "kaynak_metinden_alinti": "Kimi K3.1 Pro (weights not yet released) is the top open weights model at 46."
+    },
+    {
+      "model": "DeepSeek V4.1 Flash",
+      "benchmark": "Artificial Analysis Intelligence Index v5",
+      "skor": 32,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "private test sets",
+      "kaynak_metinden_alinti": "DeepSeek V4.1 Flash 1017 (max) ... lead at 32."
+    },
+    {
+      "model": "GLM-5.3",
+      "benchmark": "Artificial Analysis Intelligence Index v5",
+      "skor": 32,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "private test sets",
+      "kaynak_metinden_alinti": "GLM-5.3 (max) lead at 32."
+    },
+    {
+      "model": "Claude Haiku 5.5",
+      "benchmark": "Artificial Analysis Intelligence Index v5",
+      "skor": 36,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "private test sets",
+      "kaynak_metinden_alinti": "Claude Haiku 5.5 (max, 36)."
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/7t2z1w57p4yh1.jpeg?width=140&height=66&auto=webp&s=1bc2ae95c9f85fd2c2c65835d6d375c5cfaba42c",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xhdmlk/artificial_analysis_intelligence_index_v5_major/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-28T03:36:56.000Z",
+  "slug": "artificial-analysis-intelligence-index-v5-major-update"
+}

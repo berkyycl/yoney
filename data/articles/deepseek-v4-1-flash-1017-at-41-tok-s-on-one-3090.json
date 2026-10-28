@@ -1,0 +1,61 @@
+{
+  "baslik_tr": "DeepSeek-V4.1-Flash-1017, tek RTX 3090'da 41 tok/s hızla çalıştı",
+  "ozet_tr": "DeepSeek'in Q2 GGUF formatındaki V4.1-Flash-1017 modeli, tek bir NVIDIA RTX 3090 üzerinde ortalama 41 token/sn hızla çalıştırıldı. Model, genel metinlerde %90.2, kod ve matematik görevlerinde ise %92.4 doğrulukla DeepSeek API'sinin bir sonraki token tahminine eşleşti. 1M token konteks desteği ve çeşitli kuantizasyon seçenekleriyle açık kaynak bir Windows motoru üzerinden sunuldu.",
+  "detayli_icerik_tr": "Yerel LLaMA topluluğu üyesi musicurgy, DeepSeek-V4.1-Flash-1017 modelinin Q2 GGUF sürümünü Windows ortamında, WSL kullanmadan tek bir RTX 3090 (24 GB VRAM) üzerinde çalıştırdığını duyurdu. 192 GB RAM ve 385 GB boş alan gerektiren bu kurulum, ortalama 41 token/sn (tok/s) üretim hızı sağladı; aynı donanımda 16 GB VRAM ile 31 tok/s, 12 GB VRAM ile 17 tok/s elde edildi. Model, 1 M token uzunluğunda konteks ile tam uyumlu.\n\nPerformans ölçümleri, modelin çıktısının DeepSeek'in resmi API'siyle ne kadar tutarlı olduğunu gösterdi. Genel metinlerde bir sonraki token tahmini %90.2, kod ve matematik örneklerinde ise %92.4 doğruluk oranına ulaştı; bu da \"exact routing\" olarak adlandırılan ölçekte bir puanlık farkla neredeyse mükemmel bir eşleşme demek.\n\nKullanıcı, üç popüler kuantizasyon formatını (nazeshinjite'in ds4 Q2 GGUF, ISTA‑DASLab'ın GSQ‑RCO IQ2_XS/XXS/IQ1_M ve Unsloth'un UD‑IQ1_S‑UD‑Q8_K_XL) aynı ZIP paketinden seçebiliyor. Kuantizasyonların dosya boyutları 125 GB‑233 GB arasında değişirken, token üretim hızları 38‑42 tok/s arasında farklılık gösteriyor. En yüksek doğruluk %91.5 (ds4 Q2) olarak raporlandı.\n\nKurulum, GitHub'da bulunan \"delta-inference-engine\" deposundan ZIP dosyasını indirip \"Start DeepSeek.bat\" dosyasını çalıştırmakla tamamlanıyor. İlk çalıştırmada Python ve önceden derlenmiş CPU motoru otomatik olarak kuruluyor; ardından model dosyaları SHA‑256 ile doğrulanıyor. Motor, sadece localhost üzerinden hizmet veriyor ve kullanıcı girdileri varsayılan olarak diske kaydedilmiyor. Gereksinimler: 12 GB+ VRAM (24 GB’da 41 tok/s), 128 GB+ RAM, hızlı NVMe SSD ve AVX2 destekli x86‑64 CPU.",
+  "onemli_maddeler": [
+    "DeepSeek-V4.1-Flash-1017, tek RTX 3090'da ortalama 41 token/sn hızla çalışıyor.",
+    "Model, genel metinlerde %90.2, kod/matematikte %92.4 API doğruluğu sağlıyor.",
+    "Farklı kuantizasyon seçenekleri 125‑233 GB dosya boyutlarıyla sunuluyor ve hızları 38‑42 tok/s arasında değişiyor.",
+    "Kurulum tamamen Windows tabanlı, tek bir ZIP paketinden otomatik olarak gerçekleşiyor."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Tüketici sınıfı bir GPU üzerinde büyük bir dil modelinin yüksek hız ve doğrulukla çalıştırılması, açık kaynak araçların olgunlaşması ve yerel toplulukların model performansını ölçmesi açısından sektörel bir adım olarak değerlendirilebilir.",
+  "etiketler": [
+    "DeepSeek",
+    "RTX 3090",
+    "GGUF",
+    "quantization",
+    "benchmark"
+  ],
+  "anilan_modeller": [
+    "DeepSeek-V4.1-Flash-1017"
+  ],
+  "yorum_tr": "Bu sonuç, yüksek bellek kapasiteli tek bir tüketici GPU'sunun büyük dil modellerini gerçek zamanlı üretim için kullanılabilir kıldığını gösteriyor; geliştiriciler daha düşük maliyetli donanımla yüksek doğruluklu uygulamalar geliştirebilirken, kullanıcılar da açık kaynak çözümlerle API bağımlılığından kurtulabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "DeepSeek-V4.1-Flash-1017",
+      "benchmark": "Token Generation Speed (RTX 3090)",
+      "skor": 41,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "single RTX 3090, Windows 10/11, no WSL",
+      "kaynak_metinden_alinti": "I'm writing at 41 tok/s (average across multiple prompts)"
+    },
+    {
+      "model": "DeepSeek-V4.1-Flash-1017",
+      "benchmark": "Top-1 vs API Accuracy (General Text)",
+      "skor": 90.2,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "general text prompts, exact routing",
+      "kaynak_metinden_alinti": "the output agrees with DeepSeek's own API on the next token 90.2% of the time on general text"
+    },
+    {
+      "model": "DeepSeek-V4.1-Flash-1017",
+      "benchmark": "Top-1 vs API Accuracy (Code/Math)",
+      "skor": 92.4,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "code/math prompts, exact routing",
+      "kaynak_metinden_alinti": "and 92.4% on code/math, aka within a point of exact routing"
+    }
+  ],
+  "gorsel_url": "https://external-preview.redd.it/09LownW39Oa0rsGKx3Nu6yd_nHwWr60UIGgjRa071FE.png?width=640&crop=smart&auto=webp&s=fba1d7f7d302ee595c629ab5c2a25a16456cd12c",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xh9yf7/deepseekv41flash1017_at_41_toks_on_one_3090/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-28T00:39:45.000Z",
+  "slug": "deepseek-v4-1-flash-1017-at-41-tok-s-on-one-3090"
+}

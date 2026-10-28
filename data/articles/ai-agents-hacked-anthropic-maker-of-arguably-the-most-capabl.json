@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "AI ajanları Anthropic'in iç sistemlerine sızdı: En yetkin siber savunma modelleri bile hedefte",
+  "ozet_tr": "Siber güvenlik girişimi Cathedral, AI ajanlarıyla Anthropic'in iç sistemlerine sızarak Slack mesajları, maaş verileri ve diğer kritik kayıtları saatler içinde ele geçirdi. Şirket, saldırının kendi bug bounty programı kapsamında gerçekleştiğini belirterek, model ağırlıkları ve kaynak kodunun ifşa edilmediğini vurguladı. Olay, en gelişmiş AI savunma modellerine sahip bir laboratuvarın bile AI destekli saldırılara karşı savunmasız kalabileceğini gösteriyor.",
+  "detayli_icerik_tr": "Cybersecurity startup'ı Cathedral, Anthropic'in üçüncü taraf iş yazılımları üzerinden AI ajanları kullanarak şirketin iç sistemlerine girdi. Şirket, bug bounty programı kapsamında raporlanan iki güvenlik açığından birini keşfederek, satış, insan kaynakları ve BT sistemlerine erişim sağladı; bu sayede müşteri ve ortak iletişim bilgileri, temel kullanıcı verileri ve Slack mesajları gibi hassas bilgilere ulaştı. Cathedral, bu erişimi on saat içinde elde ettiğini iddia ederken, Anthropic saldırının birkaç gün sürdüğünü ve erişimin sınırlı bir veri setiyle kaldığını savunuyor.\n\nAnthropic, saldırının tespit edildiği anda ilgili erişim noktalarını kapattığını, üçüncü taraf programlarını devre dışı bıraktığını ve ABD federal yetkililerine bildirdiğini açıkladı. Şirket, Claude sohbet geçmişi, kaynak kodu ve model ağırlıklarının asla açığa çıkmadığını yineledi. Ancak, eski OpenAI çalışanı Will Depue, Cathedral'ın Slack çalışma alanına tam yönetici erişimi elde ettiğini ve tüm mesajları okuyabildiğini iddia ederek, Anthropic'in olayın boyutunu küçülttüğünü öne sürüyor.\n\nAnthropic'in kırmızı takım uzmanı Logan Graham, bu tür saldırıların artık AI ajanları sayesinde 7/24 gerçekleşebileceğini ve dış bağımlılıkların (ör. üçüncü taraf uygulamalar) güvenlik zafiyetlerinin sektörde yaygın bir sorun olduğunu vurguladı. Graham, şirketlerin sürekli iç penetrasyon testleri yapması ve yazılımları formal doğrulama ile yeniden inşa etmesi gerektiğini belirtti. AI ajanlarının yaratıcı ve otomatik saldırı yetenekleri, mevcut savunma mekanizmalarını hızla eskitebilir.\n\nBu olay, AI destekli siber savunma çözümlerinin bile kendi içinde güvenlik açıkları barındırabileceğini ve AI yarışının hızının güvenlik önlemlerini geride bırakabileceğini gösteriyor. Sektör oyuncularının, AI modellerinin sadece savunma değil, aynı zamanda saldırı araçları olarak da kullanılabileceği gerçeğine göre güvenlik stratejilerini yeniden şekillendirmeleri kaçınılmaz hâle geldi.",
+  "onemli_maddeler": [
+    "Cathedral, AI ajanlarıyla Anthropic'in üçüncü taraf iş yazılımları üzerinden iç sistemlere erişti.",
+    "Anthropic, model ağırlıkları ve kaynak kodunun ifşa edilmediğini, ancak sınırlı veri setine erişildiğini belirtti.",
+    "Saldırı, AI destekli siber saldırıların 7/24 otomatik olarak gerçekleşebileceğini ve en gelişmiş savunma modellerinin bile savunmasız kalabileceğini ortaya koydu."
+  ],
+  "kategori": "diger",
+  "onem": 4,
+  "onem_gerekce": "Anthropic, AI tabanlı siber savunma alanında lider bir firma; bu tür bir ihlal, sektörde AI ajanlarının saldırı araçları olarak kullanılabileceği gerçeğini gözler önüne sererek güvenlik paradigmalarını kökten sarsıyor.",
+  "etiketler": [
+    "AI güvenliği",
+    "siber saldırı",
+    "Anthropic",
+    "Cathedral",
+    "AI ajanları"
+  ],
+  "anilan_modeller": [
+    "Claude"
+  ],
+  "yorum_tr": "Bu olay, AI tabanlı savunma sistemlerinin bile dış bağımlılıkları üzerinden saldırıya açık olabileceğini gösteriyor. Geliştiricilerin sürekli kırmızı takım testleri ve formal doğrulama süreçlerine yatırım yapması, gelecekte benzer ihlallerin önlenmesi açısından kritik olacak.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/10/claude_hack.png",
+  "url": "https://the-decoder.com/ai-agents-hacked-anthropic-maker-of-arguably-the-most-capable-ai-models-for-cyberdefense/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-28T10:56:24.000Z",
+  "slug": "ai-agents-hacked-anthropic-maker-of-arguably-the-most-capabl"
+}
