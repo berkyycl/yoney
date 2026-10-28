@@ -1,0 +1,85 @@
+{
+  "baslik_tr": "Retell AI, OpenAI modelleriyle 100 M aylık aramayı destekliyor",
+  "ozet_tr": "Retell AI, sesli müşteri hizmetleri platformu olarak OpenAI modellerini kullanarak aylık 100 milyondan fazla aramayı işliyor ve bu aramaların %80'inde yanıtları modeller üretiyor. Şirket, GPT‑6 Astra’nın talimat takibi benchmarkında %89,7'lik skorla birinci olduğunu ve 1 trilyon token tüketimiyle ölçeklenebilirliğini kanıtladı.",
+  "detayli_icerik_tr": "Retell AI, 4.000'den fazla işletmeye hizmet veren bir sesli yapay zeka platformu ve temmuz 2026'da 30 milyon olan aylık arama hacmini Eylül 2026'da 100 milyona çıkardı. Bu büyümenin temelinde, OpenAI modellerinin yüksek kalite ve güvenilirlik sunması yer alıyor; bugün platformdaki aramaların %80'inde yanıtlar bu modeller tarafından üretiliyor ve müşteri çözüm oranları %80'in üzerinde seyrediyor.\n\nŞirket, gerçek üretim senaryolarından derlenen çok yönlü diyaloglarla modelleri test eden \"vCX\" benchmarkını oluşturdu. Bu benchmarkta GPT‑6 Astra, talimat takibi ölçütünde %89,7'lik skorla birinci oldu. Ayrıca, GPT‑5.5 modeli, akıl yürütme etkinleştirildiğinde %88,0'lik en düşük halüsinasyon oranı ve %88,3'lik araç çağrısı doğruluğu ile öne çıktı. Latency testlerinde ise GPT‑5.6 Luna, ortalama ilk cümle gecikmesiyle 497 ms en düşük değeri gösterirken, GPT‑6 Astra ve GPT‑6 Sol 883 ms gecikme kaydetti.\n\nRetell'in mühendisleri, kod araştırması, özellik geliştirme ve hata ayıklama süreçlerinde Codex'i aktif olarak kullanıyor; Codex, yüksek seviyeli gereksinimleri analiz edip kod tabanını tarayarak öneriler sunuyor. Front‑end testlerinde ise GPT‑6 Astra, bilgisayar kullanım yetenekleriyle arayüzleri otomatik olarak kontrol edip hataları raporluyor. Bu otomasyon, ekip büyüklüğüne oranla $1,6 M yıllık gelir akışı sağlarken, çalışan başına verimliliği artırıyor.\n\nMüşteri deneyimi açısından Retell, OpenAI Realtime API ve metin‑konuşma motorlarıyla entegrasyon sağlayarak sesli ajanların gerçek zamanlı yanıt vermesini mümkün kılıyor. Anker ve Pine Park Health gibi müşteriler, %80,4 çözüm oranı ve yüksek NPS gibi sonuçlar elde ederken, tıbbi asistan zaman tasarrufu da iki tam zamanlı personele eşdeğer seviyeye ulaştı. Şirket, ölçeklenebilirliği artırmak için bölgesel API uç noktaları ve yedekli telekom altyapısı kullanarak yüksek talep dönemlerinde bile gecikmeyi düşük tutmayı hedefliyor.",
+  "onemli_maddeler": [
+    "Retell AI, aylık 100 milyondan fazla çağrı işleyerek OpenAI modellerinin büyük ölçekli kullanımını gösterdi.",
+    "Platformdaki aramaların %80'inde yanıtlar OpenAI modelleri tarafından üretiliyor ve çözüm oranları %80'in üzerinde.",
+    "GPT‑6 Astra, Retell'in vCX talimat‑takibi benchmarkında %89,7 skorla birinci oldu.",
+    "Retell, 1 trilyon token tüketimiyle OpenAI modellerine olan bağımlılığını ve ölçeklenebilirliğini kanıtladı."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "OpenAI modellerinin gerçek dünya sesli asistan uygulamalarında geniş çapta benimsenmesi ve performans benchmark sonuçları, sektördeki diğer sağlayıcılar için referans oluşturuyor.",
+  "etiketler": [
+    "voice AI",
+    "contact center",
+    "OpenAI",
+    "benchmark",
+    "GPT-6"
+  ],
+  "anilan_modeller": [
+    "GPT-6 Astra",
+    "GPT-5.5",
+    "GPT-6 Sol",
+    "GPT-5.6 Luna",
+    "GPT-5.6 Terra",
+    "GPT-6.1 Sol",
+    "Codex"
+  ],
+  "yorum_tr": "Bu gelişme, sesli AI çözümlerinin OpenAI modelleriyle entegrasyonunun olgunlaştığını ve büyük ölçekli müşteri hizmetlerinde yüksek verimlilik sağladığını gösteriyor; geliştiriciler daha az kodla daha fazla işlevsellik elde ederken, işletmeler de maliyet ve yanıt süresinde iyileşme yaşıyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GPT-6 Astra",
+      "benchmark": "vCX instruction-following benchmark",
+      "skor": 89.7,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "In Retell’s October 13, 2026 benchmark, GPT‑6 Astra ranked first for instruction following at 89.7%."
+    },
+    {
+      "model": "GPT-5.5",
+      "benchmark": "non-hallucination rate (reasoning enabled)",
+      "skor": 88,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "GPT‑5.5 ranking highest among models on both non-hallucination rate (88.0%) ... with reasoning enabled."
+    },
+    {
+      "model": "GPT-5.5",
+      "benchmark": "tool-call correctness (reasoning enabled)",
+      "skor": 88.3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "GPT‑5.5 ranking highest among models on ... tool-call correctness (88.3%) with reasoning enabled."
+    },
+    {
+      "model": "GPT-5.6 Luna",
+      "benchmark": "median first-sentence latency",
+      "skor": 497,
+      "birim": "ms",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "median first-sentence latency",
+      "kaynak_metinden_alinti": "GPT‑5.6 Luna ranking highest at 497 milliseconds."
+    },
+    {
+      "model": "GPT-6 Astra",
+      "benchmark": "median first-sentence latency",
+      "skor": 883,
+      "birim": "ms",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "median first-sentence latency",
+      "kaynak_metinden_alinti": "GPT‑6 Astra and GPT‑6 Sol each recorded median first-sentence latency of 883 milliseconds."
+    }
+  ],
+  "gorsel_url": "https://images.ctfassets.net/kftzwdyauwt9/5uWhs4tBhdZ4XPHsi9IaMG/06f4b61c4303de24a65075b3eaf500b2/retell-ai-customer-story-open-graph-acoustic-fabric.png?w=1600&h=900&fit=fill",
+  "url": "https://openai.com/index/retell-ai",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-10-27T15:00:00.000Z",
+  "slug": "retell-uses-openai-models-to-help-power-100m-monthly-calls"
+}

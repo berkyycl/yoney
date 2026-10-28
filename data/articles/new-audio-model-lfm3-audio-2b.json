@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "Yeni ses modeli: LFM3-Audio-2B",
+  "ozet_tr": "Liquid AI, LFM3-Audio-2B adlı yeni bir ses modelini duyurdu. Model, metin ve ses girdilerini işleyerek hem metin hem de ses çıktısı üretebilen, yerel cihazlarda çalışabilen bir yapay zeka çözümü sunuyor.",
+  "detayli_icerik_tr": "Liquid AI, LFM3-Audio-2B modelini tanıtarak, 2 milyar parametreli, kompakt ve tam özellikli bir ses modeli sunduğunu belirtti. Model, dizüstü bilgisayarlar ve kenar (edge) cihazlar gibi sınırlı donanımlı ortamlarda yerel olarak çalışabiliyor ve hem metin hem de ses girdilerini işleyebiliyor.\n\nKullanıcılar, modeli sesli sorular sorarak ve yanıtları hem metin hem de gerçek zamanlı ses akışı şeklinde alarak bir sesli sohbet deneyimi yaşayabiliyor. Metin tabanlı yanıtlar için model, soruya yanıt vermeden önce mantıksal bir akıl yürütme süreci de gerçekleştirebiliyor.\n\nLFM3-Audio-2B, 18 dili kapsayan çok dilli konuşma tanıma, sentez ve çeviri yeteneklerine sahip. Kullanıcılar, bir dili konuşarak diğerine anında çeviri yapabilir, ses kayıtlarını metne dönüştürebilir ve aynı model üzerinden ses senteziyle yeni içerikler oluşturabilir.\n\nModel ayrıca sesli istekleri araç çağrısına dönüştürerek uygulama ve cihaz kontrolünü sesle yönetme imkanı tanıyor. Bu özellik, konuşma tabanlı komutların doğrudan API veya yerel araçlarla etkileşime girmesini sağlayarak geliştiricilere yeni entegrasyon senaryoları sunuyor.",
+  "onemli_maddeler": [
+    "Tamamen yerel çalışabilen 2 Milyar parametreli ses modeli",
+    "Metin ve ses girişini işleyerek aynı anda metin, ses ya da her ikisini üretebiliyor",
+    "18 dilde konuşma tanıma, sentez ve çeviri desteği",
+    "Gerçek zamanlı konuşma tanıma ve akıcı sesli sohbet yeteneği",
+    "Sesli komutları araç çağrısına dönüştürerek uygulama kontrolü"
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Model, yerel ve kenar cihazlarda yüksek performanslı ses işleme sunarak AI‑yazılım ekosistemine yeni bir katman ekliyor; ancak henüz geniş çaplı endüstri benimsenmesi beklenmediği için en üst seviye (5) yerine yüksek bir önem derecesi (4) verildi.",
+  "etiketler": [
+    "ses modeli",
+    "yerel AI",
+    "edge computing",
+    "multilingual",
+    "tool calling"
+  ],
+  "anilan_modeller": [
+    "LFM3-Audio-2B"
+  ],
+  "yorum_tr": "LFM3-Audio-2B, yerel cihazlarda sesli etkileşim ve çok dilli çeviri gibi karmaşık görevleri gerçekleştirebilmesiyle geliştiricilere ve son kullanıcılara daha bağımsız bir AI deneyimi vaat ediyor. Özellikle veri gizliliği ve düşük gecikme gerektiren senaryolarda önemli bir alternatif olarak öne çıkabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/S7iwpFL5Z3DuqHS4OW1frzDmsTo6C0PNEIX98NUufGk.png?width=640&crop=smart&auto=webp&s=108dcedd6bab2f0a88d336fcd5657bcc87dc80f0",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xh50at/new_audio_model_lfm3audio2b/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-27T21:14:07.000Z",
+  "slug": "new-audio-model-lfm3-audio-2b"
+}

@@ -1,0 +1,52 @@
+{
+  "baslik_tr": "1.3B OCR modeli gerçek belge taramasında %93.68 puan aldı, OCR hataları için AI yargıcı da geldi",
+  "ozet_tr": "OpenBMB, 1.3 milyar parametreli MiniCPM-OCR 1.0 modelini Real5-OmniDocBench'te %93.68 başarıyla yayınladı. Aynı zamanda MiniCPM-OCR Jev adlı 2 B parametreli bir OCR kalite yargıcını tanıttı; bu yargı modeli %93.6 AUROC ile 397 B parametreli dev bir modele yakın performans sergiliyor.",
+  "detayli_icerik_tr": "OpenBMB, iki yeni açık kaynak OCR çözümünü duyurdu. MiniCPM-OCR 1.0, 1.3 B parametreli bir model olarak gerçek‑dünya belgelerinde, eğimli sayfalar, telefon fotoğrafları ve karmaşık düzenler gibi zorlu koşullarda %93.68 başarı puanı elde etti. Bu sonuç, Real5-OmniDocBench adlı benchmark testinde kaydedildi ve mevcut OCR çözümlerinin üstünde bir performans sergiliyor.\n\nModelin işlem hızını artırmak için DSpark kod çözücü (decoding) hızlandırması eklendi; bu sayede uçtan uca işleme verimliliği %55 oranında yükseldi. MiniCPM-OCR 1.0, vLLM, SGLang, llama.cpp ve Ollama gibi popüler altyapılarla uyumlu olarak sunuluyor, bu da geliştiricilerin mevcut pipeline'larını kolayca entegre edebilmelerini sağlıyor.\n\nİkinci model MiniCPM-OCR Jev ise 2 B parametreli bir OCR kalite yargıcını temsil ediyor. Jev, orijinal görüntüyü aday metinle karşılaştırarak formüller, tablolar ve metin hatalarını tespit ediyor ve %0.936 AUROC skoruyla 397 B parametreli bir modelin performansına çok yakın bir sonuç gösteriyor. İlginç bir özellik olarak, Jev diğer OCR sistemlerinin çıktısını da değerlendirebiliyor, bu da mevcut OCR altyapılarını değiştirmeden kalite kontrolü eklemeye olanak tanıyor.\n\nHer iki model de Hugging Face üzerinden indirilebilir ve açık kaynak lisansı altında dağıtılıyor. Bu adım, OCR alanında daha erişilebilir, yüksek performanslı ve denetimli çözümler sunarak araştırmacıların ve endüstri oyuncularının iş akışlarını iyileştirmeyi hedefliyor.",
+  "onemli_maddeler": [
+    "MiniCPM-OCR 1.0, Real5-OmniDocBench'te %93.68 başarı puanı elde etti.",
+    "DSpark decoding hızlandırması sayesinde işlem verimliliği %55 arttı.",
+    "MiniCPM-OCR Jev, %0.936 AUROC ile 397 B parametreli modele yakın kalite yargısı sağlıyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Yeni açık kaynak OCR modeli yüksek benchmark skoru ve hız iyileştirmesiyle sektördeki rekabeti artırıyor; ayrıca kalite yargıcının eklenmesi OCR pipeline'larına denetim katmanı getiriyor.",
+  "etiketler": [
+    "OCR",
+    "Açık kaynak",
+    "Benchmark",
+    "Yapay zeka",
+    "Belge işleme"
+  ],
+  "anilan_modeller": [
+    "MiniCPM-OCR 1.0",
+    "MiniCPM-OCR Jev"
+  ],
+  "yorum_tr": "Bu modeller, düşük parametreli yapılarla yüksek doğruluk ve hız sunarak OCR uygulamalarının maliyetini düşürürken kalite kontrolünü de güçlendiriyor. Geliştiriciler, mevcut sistemlerini değiştirmeden Jev'i entegre ederek hataları otomatik tespit edebilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "MiniCPM-OCR 1.0",
+      "benchmark": "Real5-OmniDocBench",
+      "skor": 93.68,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "MiniCPM-OCR 1.0 (1.3B): Scores 93.68 on Real5-OmniDocBench"
+    },
+    {
+      "model": "MiniCPM-OCR Jev",
+      "benchmark": "AUROC (OCR quality judge)",
+      "skor": 0.936,
+      "birim": "AUROC",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "It achieves 0.936 AUROC, close to a 397B-parameter model on the same evaluation."
+    }
+  ],
+  "gorsel_url": "https://external-preview.redd.it/C8rh3YBvc_NR48UpDoZuRHkCwWyJIKXWTSHQoS73BNc.png?width=640&crop=smart&auto=webp&s=7864094e6da0f1984f7865512f77ec122ef6e03d",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xgx26j/a_13b_ocr_model_just_hit_9368_on_realworld/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-27T16:21:51.000Z",
+  "slug": "a-1-3b-ocr-model-just-hit-93-68-on-real-world-document-parsi"
+}
