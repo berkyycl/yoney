@@ -1,0 +1,109 @@
+{
+  "baslik_tr": "Mistral Large 4 (Le Chonk) Açık Ağırlıklarla Kodlama ve Güvenlikte Yeni Rekorlar Kırdı",
+  "ozet_tr": "Mistral, 1 trilyon parametreli ve çok modelli Mistral Large 4 modelinin (Le Chonk) açık ağırlıklarını yayınladı. Model, kodlama ajanları ve siber güvenlik görevlerinde hem performans hem de verimlilik açısından sektördeki açık‑ağırlıklı rakiplerini geride bıraktı. Ek olarak, yeni güçlendirilmiş öğrenme aşaması sayesinde çıkarım maliyetleri ve token tüketimi önemli ölçüde azaldı.",
+  "detayli_icerik_tr": "Mistral, geçen ay kamu önizlemesi yapılan Le Chonk kod adlı modelin ağırlıklarını bugün tamamen açtı. 1 trilyon parametreye sahip bu çok modelli model, kod üretimi, siber güvenlik ve kurumsal ajan uygulamaları için optimize edildi ve üç haftalık ek pekiştirmeli öğrenme (RL) süreciyle akıl yürütme verimliliği ile çıkarım maliyetlerinde iyileşmeler sağlandı.\n\nPerformans testlerinde model, Cognition’ın özel FrontierCode 2.0 benchmark'ında %19,7 skor elde ederek açık‑ağırlıklı modeller arasında bir numara oldu. Artificial Analysis’ın Coding Agent Index’inde %48 puan alırken görev başına %47 daha az token kullandı; Terminal‑Bench 4.0’da ise %41 skorla önceki önizlemeden %13 puan yükseldi ve çıktı tokenları %30 azaldı. Ayrıca Surge Code’un kör karşılaştırmalarında Claude Opus 5.5’in gerisinde, diğer açık modellerin (GLM‑5.3, Kimi K3, DeepSeek V4.1 Flash) önünde yer aldı.\n\nSiber güvenlik odaklı testlerde Mistral Large 4, Artificial Analysis Cyber Index’te %51 başarı gösterdi ve kötü niyetli isteklerin %96,6’sını reddederek açık modeller arasında en yüksek savunma oranına ulaştı. Model, Finch finans iş akışları benchmark’unda %73,3, BrowseComp testinde %84,5 ve B3 Agent Security Benchmark’inde %97,1 saldırı direnci puanı alarak güvenlik performansını da kanıtladı. Bu sonuçlar, modelin hem kodlama hem de güvenlik senaryolarında yüksek doğruluk ve düşük kaynak tüketimi sunduğunu gösteriyor.\n\nMistral Large 4, Avrupa altyapısında sıfırdan geliştirilen bir karışık‑uzman (Mixture‑of‑Experts) mimarisiyle 160'tan fazla dili doğal olarak işleyebiliyor. Açık‑ağırlık lisansı, MIT tabanlı bir değişiklikle ücretsiz kullanım, özelleştirme ve ticarileştirmeye izin verirken, Model‑as‑a‑Service hizmetleri için ayrı bir ticari lisans gerektiriyor. Model, Mistral Studio, API, OpenRouter, Hugging Face, Microsoft Foundry ve NVIDIA uç noktaları üzerinden erişilebilir; ayrıca vLLM ve SGLang ile kendi altyapınıza kurulum yapabilirsiniz.",
+  "onemli_maddeler": [
+    "Mistral Large 4, 1 trilyon parametreli açık‑ağırlıklı model olarak kodlama ve siber güvenlikte %48‑%97 arası yüksek benchmark skorları elde etti.",
+    "Model, %96,6 oranında kötü niyetli siber istekleri reddederek açık modeller arasında en yüksek savunma başarısını gösterdi.",
+    "Avrupa altyapısında geliştirilen ve 160+ dili destekleyen Mixture‑of‑Experts mimarisi, egemen AI stratejisine önemli bir ivme kazandırıyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Mistral Large 4, büyük ölçekli açık‑ağırlıklı bir modelin hem kodlama hem de siber güvenlikte lider performans sergilemesi ve Avrupa temelli altyapısı sayesinde AI egemenliği ve özelleştirilebilirlik alanında sektörel bir dönüm noktası oluşturuyor.",
+  "etiketler": [
+    "Mistral",
+    "Large 4",
+    "open‑weight",
+    "coding",
+    "cybersecurity"
+  ],
+  "anilan_modeller": [
+    "Mistral Large 4",
+    "GLM‑5.3",
+    "Kimi K3",
+    "DeepSeek V4.1 Flash",
+    "Claude Opus 5.5"
+  ],
+  "yorum_tr": "Mistral Large 4'ün açık ağırlıklarla sunulması, geliştiricilerin ve kurumsal kullanıcıların yüksek performanslı bir modeli kendi altyapılarına entegre edip özelleştirmesini mümkün kılıyor; bu da hem maliyetleri düşürür hem de veri egemenliği konusundaki endişeleri azaltıyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Mistral Large 4",
+      "benchmark": "FrontierCode 2.0",
+      "skor": 19.7,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "The model scored 19.7% on Cognition’s private FrontierCode 2.0 benchmark."
+    },
+    {
+      "model": "Mistral Large 4",
+      "benchmark": "Coding Agent Index",
+      "skor": 48,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "On Artificial Analysis’s Coding Agent Index, it reached 48%."
+    },
+    {
+      "model": "Mistral Large 4",
+      "benchmark": "Terminal-Bench 4.0",
+      "skor": 41,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Its Terminal-Bench 4.0 score rose 13 percentage points from preview to 41%."
+    },
+    {
+      "model": "Mistral Large 4",
+      "benchmark": "Artificial Analysis Cyber Index",
+      "skor": 51,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Mistral Large 4 scored 51% on the Artificial Analysis Cyber Index."
+    },
+    {
+      "model": "Mistral Large 4",
+      "benchmark": "Finch (finance workflows)",
+      "skor": 73.3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "reached 73.3% on Finch for finance workflows"
+    },
+    {
+      "model": "Mistral Large 4",
+      "benchmark": "BrowseComp",
+      "skor": 84.5,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "84.5% on BrowseComp, up from 75% at the SFT checkpoint"
+    },
+    {
+      "model": "Mistral Large 4",
+      "benchmark": "B3 Agent Security Benchmark",
+      "skor": 97.1,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "97.1% attack resistance on the B3 Agent Security Benchmark"
+    },
+    {
+      "model": "Mistral Large 4",
+      "benchmark": "Malicious request refusal rate",
+      "skor": 96.6,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "refusing an average of 96.6% of malicious cyber requests"
+    }
+  ],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/10/banner-24.webp",
+  "url": "https://www.testingcatalog.com/mistral-opens-large-4-weights-for-coding-and-security/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-29T15:47:04.000Z",
+  "slug": "mistral-opens-large-4-weights-for-coding-and-security"
+}

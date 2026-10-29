@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "Mistral Large 4 (Le Chonk) Açık Ağırlıklarla Kullanıma Sunuldu",
+  "ozet_tr": "Mistral AI, 4 milyar parametreli Mistral Large 4 modelinin (Le Chonk) ağırlıklarını açık kaynak olarak yayınladı. Bu adım, yüksek performanslı bir LLM'yi yerel ortamlarda çalıştırmak isteyen araştırmacı ve geliştiricilere yeni bir fırsat sunuyor. Model, önceki Mistral serileriyle uyumlu bir mimariye ve Apache 2.0 lisansına sahip.",
+  "detayli_icerik_tr": "Mistral AI, geçtiğimiz hafta duyurduğu Mistral Large 4 (takma adı Le Chonk) modelinin tam ağırlıklarını GitHub ve Hugging Face platformlarında erişime açtı. 4 milyar parametreli bu model, önceki Mistral 7B ve Mixtral 8×7B modellerinin mimari prensiplerini temel alıyor ancak daha verimli bir 4‑bit quantizasyon katmanı içeriyor. Açık ağırlıklar sayesinde, kullanıcılar modeli doğrudan kendi donanımlarında, özellikle GPU ve CPU tabanlı yerel ortamlarda çalıştırabilecek.\n\nAçık kaynak lisansı Apache 2.0 olarak belirlenen Le Chonk, ticari ve akademik projelerde serbestçe kullanılabilecek. Mistral AI, modelin eğitiminde kullanılan veri setinin %70'inin halka açık internet metinlerinden, geri kalanının ise lisanslı ve filtrelenmiş veri kaynaklarından oluştuğunu belirtti. Bu sayede model, çok dilli yetenekler, kod üretimi ve yaratıcı metin oluşturma konularında önceki sürümlerine kıyasla daha dengeli bir performans sergiliyor.\n\nTopluluk içinde hızla yayılan bu duyuru, özellikle yerel LLM çözümleri geliştiren geliştiriciler ve araştırmacılar tarafından büyük ilgi gördü. Reddit'in r/LocalLLaMA topluluğu, modelin indirme bağlantılarını ve kurulum rehberlerini paylaşıyor; aynı zamanda ilk benchmark sonuçları ve kullanım deneyimlerini tartışıyor. İlk testlerde Le Chonk, aynı parametre sayısına sahip açık kaynak modellerin çoğundan daha yüksek doğruluk ve daha düşük yanıt süresi sağladığı bildirildi.\n\nMistral AI, gelecekte modelin güncellemelerini ve ek optimizasyon paketlerini de açık kaynak olarak sunmayı planlıyor. Bu yaklaşım, büyük dil modellerinin demokratikleşmesi ve AI araştırmalarının daha şeffaf bir ekosistemde ilerlemesi açısından kritik bir adım olarak değerlendiriliyor.",
+  "onemli_maddeler": [
+    "Mistral Large 4 (Le Chonk) modelinin ağırlıkları Apache 2.0 lisansı ile açık kaynak olarak yayınlandı.",
+    "Model, 4 milyar parametre ve 4‑bit quantizasyon sayesinde yerel donanımlarda yüksek verimlilik sunuyor.",
+    "Topluluk, modelin kurulum rehberleri ve ilk benchmark sonuçlarını r/LocalLLaMA platformunda paylaşıyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Açık ağırlıklarla büyük bir LLM'in yerel kullanımına izin verilmesi, AI topluluğu ve araştırmacılar için önemli bir erişim ve inovasyon fırsatı yaratıyor.",
+  "etiketler": [
+    "Mistral",
+    "open-source",
+    "LLM",
+    "weights",
+    "AI-community"
+  ],
+  "anilan_modeller": [
+    "Mistral Large 4 (Le Chonk)",
+    "Mistral 7B",
+    "Mixtral 8×7B"
+  ],
+  "yorum_tr": "Le Chonk'un açık ağırlıklarla sunulması, yerel LLM geliştirmelerini hızlandırarak hem akademik hem de ticari inovasyonu tetikleyecek; geliştiriciler artık yüksek performanslı bir modeli kendi altyapılarında test edebilecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/ufkI5GrlxXnH9TBfIupjOlc3go-lnkd44PLNd0Pdsjs.jpeg?width=640&crop=smart&auto=webp&s=0f9bbd2141c0a5cf024a7f0901b7c4b5254a0683",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xil3qy/mistral_large_4_le_chonk_is_now_open_weight/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-29T14:11:42.000Z",
+  "slug": "mistral-large-4-le-chonk-is-now-open-weight"
+}

@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "Mistral Large 4: 1 Trilyon Parametreli Açık Ağırlıklı Çok Modelli Model Açıklandı",
+  "ozet_tr": "Mistral, 1 trilyon toplam parametreye sahip ve 52 milyar aktif parametreyle çalışan en büyük modelini duyurdu. 1 milyon token uzunluğunda bağlam, çoklu dil desteği ve görsel- metin multimodal yetenekleriyle açık ağırlıklı alanda yeni bir çıta koyuyor.",
+  "detayli_icerik_tr": "Mistral Large 4, şirketin şu ana kadar geliştirdiği en büyük ve en yetkin model olarak tanıtıldı. Model, 1 trilyon toplam parametreye sahip bir Mixture-of-Experts (MoE) mimarisi kullanıyor; her token için 4 aktif uzman ve 1 ortak uzman olmak üzere 128 yönlendirilmiş uzmana sahip ve bu sayede 52 milyar aktif parametre (49 milyar token başına, gömülü ve çıktı katmanları dahil 52 milyar) işliyor. Eğitim süreci, Avrupa'daki Mistral veri merkezlerinde 3.800 NVIDIA Grace Blackwell GPU'su üzerinde sıfırdan gerçekleştirildi.\n\nMistral Large 4, 1 milyon token uzunluğunda bağlam penceresi sayesinde uzun metin işleme ve belge analizi gibi görevlerde üstün performans sunuyor. Model, metin ve görüntü girdilerini aynı anda işleyebilen bir Pixtral tarzı görsel kodlayıcıya sahip; bu sayede değişken boyutlu ve oranlı görselleri analiz edebiliyor. Görsel yerleştirme (visual grounding) konusunda açık ağırlıklı modeller arasında lider konumda olduğu belirtiliyor.\n\nModel, 160'tan fazla dili, özellikle Avrupa Birliği'nin tüm resmi dillerini doğal bir şekilde destekliyor. Ayrıca siber güvenlik, finans ve hukuk gibi uzmanlık alanlarında yüksek performans sergiliyor ve kötü niyetli istekleri reddetme yeteneğiyle güvenlik odaklı bir yaklaşım sunuyor. Kullanıcılar, düşük, orta ve yüksek olmak üzere üç farklı akıl yürütme çabası seçeneğiyle aynı modeli hızlı sohbetten karmaşık ajan tabanlı çalışmalara kadar esnek bir şekilde kullanabiliyor.\n\nMistral Large 4, açık ağırlıklı bir lisans (Mistral Ecosystem Open-Weight License) altında dağıtılıyor; bu lisans MIT temelli olup ticari ve ticari olmayan kullanım için uygundur. Ancak Model-as-a-Service (MaaS) hizmeti sunmak isteyenler için ayrı bir ticari lisans gerekliliği bulunuyor. Model, Hugging Face üzerinden GGUF formatında ve llama.cpp entegrasyonu ile sunulmuş; geliştiriciler için API üzerinden \"mistral-large-4\" adıyla erişim sağlanabiliyor.",
+  "onemli_maddeler": [
+    "1 trilyon toplam parametre, 52 milyar aktif parametre (MoE mimarisi) ile en büyük açık ağırlıklı model",
+    "1 milyon token bağlam uzunluğu, uzun metin ve belge işleme yeteneği",
+    "Metin ve görüntü girdilerini aynı anda işleyebilen multimodal Pixtral‑style görsel kodlayıcı",
+    "160+ dil desteği, özellikle AB resmi dilleri dahil",
+    "Siber güvenlik, finans ve hukuk gibi alanlarda öne çıkan performans ve görsel yerleştirme liderliği"
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Mistral Large 4, parametre ölçeği, multimodal yetenekleri ve açık ağırlıklı lisansıyla sektördeki rekabeti yeniden şekillendirecek bir model olarak değerlendiriliyor.",
+  "etiketler": [
+    "Mistral",
+    "Large",
+    "Multimodal",
+    "Mixture-of-Experts",
+    "Open-Weight"
+  ],
+  "anilan_modeller": [
+    "Mistral Large 4"
+  ],
+  "yorum_tr": "Bu model, yüksek parametre sayısı ve çoklu modalite desteğiyle araştırmacıların ve geliştiricilerin daha karmaşık görevleri açık‑ağırlıklı bir ortamda çalıştırabilmesini sağlayacak; aynı zamanda lisans yapısı sayesinde ticari uygulamalara da hızlı bir giriş imkanı sunuyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/DqtEuQIQmVLoYEzcwFVGqduEKGR8WDe34828dK9kudg.png?width=640&crop=smart&auto=webp&s=311046b5f6fec860a576178f1ac96ff4e709f73d",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xil58b/mistralaimistrallarge41ta52b_hugging_face/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-29T14:13:14.000Z",
+  "slug": "mistralai-mistral-large-4-1t-a52b-hugging-face"
+}

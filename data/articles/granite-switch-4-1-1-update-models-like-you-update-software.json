@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "Granite Switch 4.1.1: Yazılım Güncellemesi Gibi Model Güncellemeleri",
+  "ozet_tr": "IBM, Granite Switch 4.1'in üzerine tamamen geriye uyumlu bir yama sürümü olan Granite Switch 4.1.1'i duyurdu. Yeni sürüm, çok dilli ses‑metin (ASR) adaptörü ve geliştirilmiş Decision adaptörü gibi ek bileşenlerle geliyor ve temel modelde hiçbir yeniden eğitim yapılmadan dağıtılıyor.",
+  "detayli_icerik_tr": "IBM, geçen hafta Granite Switch 4.1'i tanıttıktan kısa bir süre sonra Granite Switch 4.1.1 adlı bir yama sürümü yayınladı. Bu sürüm, yazılım dünyasındaki sürüm numaralandırma mantığını benimseyerek 4.1 ile %100 geriye uyumlu olduğunu ve geçiş için ek bir migrasyon adımı gerektirmediğini vurguluyor. \n\nYeni Granite Switch 4.1.1, iki ana adaptör güncellemesi içeriyor. İlk olarak, Granite Speech ASR modeli 10 dili kapsayan çok dilli bir ses‑metin çözümüne yükseltildi; çıktılar yerel noktalama ve büyük harf kullanımını içerdiği için ek bir biçimlendirme adımına ihtiyaç duymuyor. İkinci olarak, granitelib‑core içinde yer alan Decision adaptörü Jev Decision Index test setinde genel performans iyileştirmeleri sağladı. \n\nÖne çıkan nokta, bu iyileştirmelerin temel model üzerinde hiçbir yeniden hesaplama gerektirmemesi. IBM, sadece yeni adaptörleri eğiterek ve mevcut modelin üzerine bağlayarak güncellemeyi tamamladı; bu da güncelleme sürecinin hızını ve maliyet etkinliğini artırıyor. Şirket, bu yaklaşımın sadece yama sürümleriyle sınırlı kalmayıp, üçüncü taraf geliştiricilerin de kendi adaptörlerini oluşturup sürümlemelerini mümkün kılacak bir Adapter SDK ve eğitim materyalleriyle destekleneceğini belirtiyor. \n\nIBM, geliştiricileri yeni çok dilli ve noktalama özelliklerini deneyimlemeye ve Speech‑to‑Decisions demosunu test etmeye davet ediyor. Bu adım, tek bir uç noktadan sohbet, karar verme ve ses işleme yeteneklerini sunan bir platformun ne kadar esnek ve ölçeklenebilir olabileceğini gösteriyor.",
+  "onemli_maddeler": [
+    "Granite Switch 4.1.1 tamamen geriye uyumlu bir yama sürümüdür; temel modelde hiçbir yeniden eğitim yapılmaz.",
+    "Granite Speech ASR modeli 10 dili destekleyecek şekilde güncellenmiş ve yerel noktalama‑büyük harf özellikleri eklenmiştir.",
+    "Decision adaptörü Jev Decision Index test setinde performans iyileştirmesi göstermiştir.",
+    "Adapter SDK ve eğitim materyalleri yakında geliştiricilere sunulacak, böylece üçüncü taraf adaptör geliştirme ve sürümleme mümkün olacak."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Patch sürümü, IBM’in modüler adaptör mimarisi sayesinde yeni yetenekleri hızlı ve maliyet etkin bir şekilde sunmasını gösteriyor; bu, kurumsal AI uygulamalarında güncelleme süreçlerini yazılım güncellemeleri gibi basitleştiriyor.",
+  "etiketler": [
+    "Granite Switch",
+    "ASR",
+    "Adapter SDK",
+    "IBM",
+    "Modüler AI"
+  ],
+  "anilan_modeller": [
+    "Granite Switch 4.1.1",
+    "Granite Speech ASR",
+    "Decision adapter"
+  ],
+  "yorum_tr": "Granite Switch 4.1.1, IBM’in adaptör‑tabanlı yaklaşımının pratik faydasını ortaya koyuyor; geliştiriciler yeni yetenekleri temel modeli bozmadan ekleyebilecek. Bu da AI hizmetlerinin bakım ve yenileme maliyetlerini düşürerek daha sürdürülebilir bir ekosistem yaratabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://cdn-uploads.huggingface.co/production/uploads/662836b742709fe826510597/az6afuuoAkyiMImufSePe.png",
+  "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1-1",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-10-29T13:37:07.000Z",
+  "slug": "granite-switch-4-1-1-update-models-like-you-update-software"
+}

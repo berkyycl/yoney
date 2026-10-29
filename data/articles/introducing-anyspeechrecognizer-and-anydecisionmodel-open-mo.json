@@ -1,0 +1,70 @@
+{
+  "baslik_tr": "AnySpeechRecognizer ve AnyDecisionModel paketleri Apple platformları için açık kaynaklı konuşma ve karar modelleri",
+  "ozet_tr": "Hugging Face, Apple ekosisteminde Swift tabanlı iki yeni paket duyurdu: AnySpeechRecognizer, SpeechAnalyzer API'sine farklı motorlar ekleyerek yerel konuşma tanıma ve konuşmacı ayırma sağlıyor; AnyDecisionModel ise metin tabanlı karar sorularını olasılıklarla yanıtlayan bir Swift API'si sunuyor. Her iki paket de Hugging Face Hub'dan açık modelleri indirip cihazda çalıştırma imkanı tanıyor.",
+  "detayli_icerik_tr": "Hugging Face, Swift paket yöneticisi üzerinden dağıtılan AnySpeechRecognizer ve AnyDecisionModel paketlerini tanıttı. AnySpeechRecognizer, Apple'ın yeni SpeechAnalyzer API'sini genişleterek NVIDIA Parakeet (v3, Ultra, Unified) ve Alibaba Qwen3‑ASR (0.6B, 1.7B) gibi Core ML uyumlu motorları seçme olanağı sunuyor; ayrıca NVIDIA Streaming Sortformer tabanlı bir konuşmacı diarizasyon modülü ekleyerek aynı anda dört konuşmacıyı ayırt edebiliyor. \n\nPaket, model varlıklarını AssetInventory aracılığıyla talep üzerine indiriyor; Parakeet modelleri yaklaşık 600 MB, Qwen3‑ASR modelleri 0.9‑2.4 GB, Sortformer ise 250 MB büyüklüğünde. Çevrim içi (live) ve dosya tabanlı transkripsiyon performansları, LibriSpeech test setinde %1.43‑%4.73 arasında değişen kelime hata oranları (WER) gösteriyor; Parakeet Ultra canlı girişte %2.65‑%3.28 WER ile en düşük hatayı veriyor. \n\nAnyDecisionModel, metin, JSON ya da çok‑seçenekli sorulara doğrudan olasılık temelli yanıtlar üreten bir Swift API'si. MLXDecisionModel, MLXHeadDecisionModel (Clef‑Flash) ve Jev/Ollama gibi altı farklı backend'i destekliyor; karar soruları bağımsız olarak işleniyor ve her bir seçenek için olasılık, güven değeri ve entropi temelli bir skor sağlanıyor. Örnek uygulama Emoji Magnet, 343 emoji için aynı anda 16 soruyu bir ileri geçişte yanıtlayarak yaklaşık 10 saniyede tam bir değerlendirme yapabiliyor. \n\nHer iki paket de Swift 6.2+, macOS 26 / iOS 26 ve Apple Silicon gerektiriyor. Core ML dönüşüm süreçleri FluidInference'ın mobius script'leriyle otomatikleştirildi ve her modelin checksum'ı ve kaynak checkpoint'i paket içinde sabitlenmiş. Geliştiriciler, paketleri mevcut kod tabanlarına sadece import satırını değiştirerek entegre edebiliyor ve aynı API üzerinden farklı motorları deneme şansı elde ediyor.",
+  "onemli_maddeler": [
+    "AnySpeechRecognizer, Apple'ın tek motorlu SpeechAnalyzer API'sine Parakeet ve Qwen3‑ASR gibi açık kaynaklı motorları ekleyerek yerel konuşma tanıma ve diarizasyonu mümkün kılıyor.",
+    "AnyDecisionModel, karar sorularını olasılık temelli yanıtlarla sunan bir Swift API'si sağlayarak LLM'lerin metin üretiminden ziyade karar verme görevlerine odaklanmasını sağlıyor.",
+    "Her iki paket de Hugging Face Hub'dan Core ML formatına dönüştürülmüş modelleri indirip cihazda çalıştırıyor; bu sayede gizlilik, gecikme ve maliyet açısından bulut tabanlı çözümlere göre avantaj sunuyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Apple ekosisteminde yerel AI iş akışlarını genişleten iki yeni Swift paketi, geliştiricilerin cihaz içinde yüksek performanslı konuşma ve karar modelleri kullanmasını sağlayarak hem gizlilik hem de maliyet açısından sektörde önemli bir adım oluşturuyor.",
+  "etiketler": [
+    "Swift",
+    "Core ML",
+    "speech recognition",
+    "decision model",
+    "Apple"
+  ],
+  "anilan_modeller": [
+    "Parakeet v3",
+    "Parakeet Ultra",
+    "Parakeet Unified",
+    "Qwen3‑ASR 0.6B",
+    "Qwen3‑ASR 1.7B",
+    "Streaming Sortformer v2",
+    "Streaming Sortformer v2.1",
+    "MLXDecisionModel",
+    "MLXHeadDecisionModel (Clef‑Flash)",
+    "Jev",
+    "Ollama"
+  ],
+  "yorum_tr": "Bu paketler, Apple cihazlarında gizlilik odaklı AI çözümlerinin yaygınlaşmasını hızlandıracak; geliştiriciler bulut bağımlılığını azaltarak daha hızlı ve maliyet etkin uygulamalar oluşturabilecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Parakeet v3",
+      "benchmark": "LibriSpeech test-clean",
+      "skor": 1.55,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "test-clean",
+      "kaynak_metinden_alinti": "Parakeet v3, file 1.55% 2.78% (test-clean, test-other)"
+    },
+    {
+      "model": "Parakeet Ultra",
+      "benchmark": "LibriSpeech test-other (live)",
+      "skor": 3.28,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "test-other",
+      "kaynak_metinden_alinti": "Parakeet Ultra, live 2.65% 3.28% (test-clean, test-other)"
+    },
+    {
+      "model": "Apple transcriber",
+      "benchmark": "LibriSpeech test-other (file)",
+      "skor": 3.97,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "test-other",
+      "kaynak_metinden_alinti": "Apple's transcriber, file 2.12% 3.97% (test-clean, test-other)"
+    }
+  ],
+  "gorsel_url": "https://huggingface.co/blog/assets/anydecisionmodel/banner.png",
+  "url": "https://huggingface.co/blog/anydecisionmodel",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-10-29T00:00:00.000Z",
+  "slug": "introducing-anyspeechrecognizer-and-anydecisionmodel-open-mo"
+}

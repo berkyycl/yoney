@@ -1,0 +1,105 @@
+{
+  "baslik_tr": "Mistral Large 4 (Le Chonk) Açık Ağırlıklı 1 Trilyon Parametreli Modelin Ağırlıkları Açıldı",
+  "ozet_tr": "Mistral AI, 1 trilyon parametreli çok modelli model Le Chonk'un (Mistral Large 4) ağırlıklarını açık kaynak olarak yayınladı. Model, kod üretimi, siber güvenlik ve akıl yürütme verimliliğinde kayda değer iyileştirmeler sunarak açık‑ağırlıklı alanda lider konuma yükseldi.",
+  "detayli_icerik_tr": "Mistral AI, Avrupa altyapısında sıfırdan eğitilmiş ve tamamen açık‑ağırlıklı bir model olan Mistral Large 4'ü (Le Chonk) kamu önizlemesinden sonra geliştirilmiş ağırlıklarla sunuyor. Model, 1 trilyon parametreye sahip olup çok modelli (metin‑görsel) yetenekleriyle kodlama, siber savunma ve genel akıl yürütme görevlerinde maliyet‑performans dengesini artırıyor. Üç farklı akıl yürütme modu (Low, Medium, High) sayesinde kullanıcılar, görev zorluğuna göre performans ve maliyet arasında ince ayar yapabiliyor.\n\nKodlama alanında FrontierCode 2.0 benchmark'inde %19.7'lik lider puan elde eden Le Chonk, aynı zamanda Terminal‑Bench 4.0'da %41 skorla açık‑ağırlıklı modeller arasında birinci sırada yer alıyor ve görev başına token tüketimini %30 azalttı. Artificial Analysis Coding Agent Index'te %48 başarı oranı yakalarken, aynı benchmarkta %47 daha az token kullanarak verimliliği artırdı.\n\nSiber güvenlik performansı da ön plana çıktı: Artificial Analysis Cyber Index'te %51 başarı puanı alarak açık‑ağırlıklı modeller arasında en yüksek skoru elde etti ve kötü niyetli siber isteklerde %96.6 oranında reddetme (refusal) gösterdi. B3 Agent Security Benchmark'te %97.1 saldırı direnciyle güvenli ajan dağıtımlarının temelini attı. Ayrıca BrowseComp web tarama benchmark'inde %84.5 başarı ve Finch (FinWorkBench) finansal görevlerde %73.3 puanla ikinci sırada yer aldı.\n\nMistral, modelin özelleştirilebilir, veri‑egemen ve kendi altyapısında barındırılabilir olmasını vurgulayarak Avrupa ve küresel kuruluşların AI kontrolünü ellerine almasını hedefliyor. Modelin açık‑ağırlıklı doğası, güvenlik araştırmacılarının ve geliştiricilerin modeli incelemesine, uyarlamasına ve şeffaf bir şekilde güvenlik uygulamalarına entegre etmesine olanak tanıyor.",
+  "onemli_maddeler": [
+    "Le Chonk, FrontierCode 2.0'de %19.7'lik lider skorla açık‑ağırlıklı kodlama benchmark'inde birinci oldu.",
+    "Artificial Analysis Cyber Index'te %51 başarı ve %96.6 kötü niyetli istek reddetme oranı ile siber savunma yetenekleri öne çıktı.",
+    "Üç akıl yürütme modu (Low, Medium, High) sayesinde kullanıcılar performans‑maliyet dengesini görev tipine göre ayarlayabiliyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "1 trilyon parametreli, çok modelli ve tamamen açık‑ağırlıklı bir modelin yayınlanması, hem kodlama hem de siber güvenlik alanlarında açık‑ağırlıklı rekabeti yeniden şekillendirerek veri egemenliği ve özelleştirilebilir AI ihtiyacını karşılıyor.",
+  "etiketler": [
+    "open-weight",
+    "coding",
+    "cybersecurity",
+    "multimodal",
+    "sovereign AI"
+  ],
+  "anilan_modeller": [
+    "Mistral Large 4 (Le Chonk)"
+  ],
+  "yorum_tr": "Le Chonk'un açık‑ağırlıklı yapısı, geliştiricilere ve güvenlik ekiplerine tam kontrol ve özelleştirme imkanı sunarak AI tabanlı savunma ve kodlama çözümlerinin maliyet ve güvenlik dengesini yeniden tanımlıyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Mistral Large 4",
+      "benchmark": "FrontierCode 2.0",
+      "skor": 19.7,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Mistral Large 4 leads with a score of 19.7% on Cognition's private FrontierCode 2.0 benchmark"
+    },
+    {
+      "model": "Mistral Large 4",
+      "benchmark": "Terminal-Bench 4.0",
+      "skor": 41,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "On Terminal-Bench 4.0, Mistral Large 4 improved by 13 percentage points to 41%"
+    },
+    {
+      "model": "Mistral Large 4",
+      "benchmark": "Artificial Analysis Coding Agent Index",
+      "skor": 48,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "On the Artificial Analysis Coding Agent Index, Mistral Large 4 scores 48%"
+    },
+    {
+      "model": "Mistral Large 4",
+      "benchmark": "Artificial Analysis Cyber Index",
+      "skor": 51,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Mistral Large 4 scores 51% on the Artificial Analysis Cyber Index"
+    },
+    {
+      "model": "Mistral Large 4",
+      "benchmark": "Malicious Cyber Request Refusal Rate",
+      "skor": 96.6,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "achieving an average refusal rate of 96.6% on malicious cyber requests, the highest we measure among open models"
+    },
+    {
+      "model": "Mistral Large 4",
+      "benchmark": "B3 Agent Security Benchmark",
+      "skor": 97.1,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Mistral Large 4 resisting 97.1% of attacks vs 93.3% in Preview on the B3 Agent Security Benchmark"
+    },
+    {
+      "model": "Mistral Large 4",
+      "benchmark": "BrowseComp",
+      "skor": 84.5,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Our RL pipeline enabled us to reach 84.5% on BrowseComp"
+    },
+    {
+      "model": "Mistral Large 4",
+      "benchmark": "Finch (FinWorkBench)",
+      "skor": 73.3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Finch scores climbing to 73.3%, second only to Kimi K3 for open models"
+    }
+  ],
+  "gorsel_url": "https://mistral.ai/cms-media/api/media/file/cover-mistral-sovereign%20copie.webp",
+  "url": "https://mistral.ai/news/mistral-large-4-oss",
+  "source": "Mistral AI",
+  "sourceTier": "resmi",
+  "date": "2026-10-29T12:00:07.000Z",
+  "slug": "le-chonk-built-for-coders-trusted-by-defenders"
+}

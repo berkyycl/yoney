@@ -1,0 +1,106 @@
+{
+  "baslik_tr": "Le Chonk: Mistral Large 4 Hugging Face'te Yayınlandı",
+  "ozet_tr": "Mistral, 1 trilyon toplam parametreli ve 49 milyar aktif parametreli MoE tabanlı yeni modeli Mistral Large 4'ü (Le Chonk) resmi olarak Hugging Face platformunda kullanıma sundu. Model, metin‑ve‑görsel girişleri işleyebilen 1 M token uzunluğunda bir bağlam penceresine ve siber güvenlik, kodlama ve çoklu modalite alanlarında öne çıkan performansa sahip.",
+  "detayli_icerik_tr": "Mistral Large 4, metin ve görüntüleri aynı anda işleyebilen bir multimodal dil modeli olarak tanıtıldı. Toplamda yaklaşık 1 trilyon parametreye sahip olmasına rağmen, aktif olarak kullanılan sadece 49 milyar parametre bulunuyor; bu, modelin MoE (Mixture‑of‑Experts) mimarisi sayesinde her token için dört uzman seçilerek sağlanıyor. Model, 1 M token'lık devasa bir bağlam penceresi sunarak uzun belgeler ve kod tabanları üzerinde etkili bir şekilde çalışabiliyor. \n\nMimari açıdan, Mistral Large 4'ün metin çözücüsü 72 katmandan oluşuyor; gizli boyutu 6 144 ve 64 dikkat başlığı bulunuyor. Dikkat blokları, Multi‑head Latent Attention (MLA) ile DeepSeek Sparse Attention (DSA) indeksleyicisini birleştiriyor; DSA her sorgu için en fazla 2 048 anahtar konumunu seçiyor. Katmanlarda 3:1 RoPE‑NoPE desenine göre RoPE kullanılan üç katman, dördüncüsü NoPE oluyor ve KV durumu katmanlar arasında paylaşılıyor. İlk katman yoğun bir feed‑forward ağ, geri kalan 71 katman ise MoE blokları içeriyor; her token için 128 uzmandan dört tanesi ve her zaman çalışan bir ortak uzman seçiliyor. Görüntü kodlayıcı ise 1,6 M parametreli Pixtral encoder, 30 katman, 2 048 gizli boyut ve 16 dikkat başlığı ile çalışıyor. \n\nSiber güvenlik yetenekleri özellikle dikkat çekiyor: Model, Açık Analiz Siber Endeksi testinde %82 başarı elde ederek gerçek bir açık kodu yeniden üretebilme ve yamalama yeteneğini gösterdi. Bu skor, kapalı kaynak modellerin çoğunun sıfır puan almasının çok üzerinde. Ayrıca Cybench yarışmasındaki 40 güvenlik görevinden %93'ünü çözdü ve Lakera’nın B3 benchmark'ında %93,3 saldırı direnci gösterdi. Kodlama alanında ise DeepSWE v1.1 (%61,7), SWE‑Atlas‑QnA (%59,4) ve Terminal‑Bench 4 (%28,3) gibi testlerde rekabetçi sonuçlar aldı; birleşik Coding Agent Index puanı %49,8 olarak DeepSeek V4 Pro 0813 ve Qwen 3.8 Max'in önünde yer alıyor. \n\nMistral Large 4, Transformers, vLLM ve llama.cpp gibi popüler çerçevelerle gün‑başından (day‑0) destekleniyor; FP8 ve NVFP4 kuantizasyonları mevcut. Kullanıcılar, Hugging Face Inference Endpoints üzerinden 8 x NVIDIA H200 GPU'lu bir tarifle, 131 K token bağlamı ve aynı anda 16 istek işleyebilen bir dağıtık hizmeti hızlıca devreye alabiliyor. Model, TRL ve PEFT ile LoRA tabanlı ince ayar (fine‑tuning) süreçlerine de hazır; örnek bir çokdilli düşünme veri setiyle 8 x B300s düğümde eğitilebiliyor. Bu açık‑ağırlıklı lisans, hem araştırmacıların hem de geliştiricilerin modeli kendi altyapılarında güvenli bir şekilde dağıtmasına ve siber savunma sistemlerine entegre etmesine olanak tanıyor.",
+  "onemli_maddeler": [
+    "1 trilyon toplam, 49 milyar aktif parametre ve 1 M token bağlam penceresi ile devasa bir MoE modeli.",
+    "Siber güvenlik testinde %82 skorla açık yeniden üretme ve yamalama yeteneği, %93 Cybench ve %93,3 Lakera B3 saldırı direnci.",
+    "Transformers, vLLM ve llama.cpp için day‑0 destek; FP8 ve NVFP4 kuantizasyonları, Hugging Face Inference Endpoints üzerinden dağıtık hizmet.",
+    "Açık‑ağırlıklı lisans sayesinde kurumlar ve araştırmacılar modelin kullanım politikalarını ve dağıtımını kontrol edebiliyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Mistral Large 4, 1 trilyon ölçeğinde bir MoE modeli olarak açık‑ağırlık ekosistemine yeni bir rekabetçi seçenek getiriyor; siber güvenlik ve kodlama alanlarındaki yüksek benchmark skorları sektördeki uygulamaları ve araştırmaları doğrudan etkileyebilir.",
+  "etiketler": [
+    "Mistral",
+    "Large 4",
+    "MoE",
+    "multimodal",
+    "cybersecurity"
+  ],
+  "anilan_modeller": [
+    "Mistral Large 4"
+  ],
+  "yorum_tr": "Mistral Large 4'ün açık‑ağırlık lisansı ve güçlü siber güvenlik performansı, geliştiricilerin ve güvenlik ekiplerinin kendi altyapılarını kurarak modelin tam kontrolünü elde etmelerini sağlayacak, bu da bulut tabanlı API bağımlılığını azaltarak daha esnek ve güvenli çözümler sunacak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Mistral Large 4",
+      "benchmark": "Artificial Analysis Cyber Index",
+      "skor": 82,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Mistral Large 4 scores 82% on the Artificial Analysis Cyber Index test that asks a model to reproduce a real vulnerability in open-source software and then patch the software."
+    },
+    {
+      "model": "Mistral Large 4",
+      "benchmark": "Cybench",
+      "skor": 93,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Cybench: ML4 solves 93% of a suite of 40 challenges drawn from security competitions, demonstrating strong performance on hands-on security problems."
+    },
+    {
+      "model": "Mistral Large 4",
+      "benchmark": "Lakera B3",
+      "skor": 93.3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Mistral Large 4 also demonstrates 93.3% attack resistance on Lakera’s B3 benchmark, adding evidence of robustness against prompt-injection attacks."
+    },
+    {
+      "model": "Mistral Large 4",
+      "benchmark": "DeepSWE v1.1",
+      "skor": 61.7,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "On coding, ML4 achieves 61.7% on DeepSWE v1.1"
+    },
+    {
+      "model": "Mistral Large 4",
+      "benchmark": "SWE-Atlas-QnA",
+      "skor": 59.4,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "On coding, ML4 achieves 59.4% on SWE-Atlas-QnA"
+    },
+    {
+      "model": "Mistral Large 4",
+      "benchmark": "Terminal-Bench 4",
+      "skor": 28.3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "On coding, ML4 achieves 28.3% on Terminal-Bench 4"
+    },
+    {
+      "model": "Mistral Large 4",
+      "benchmark": "Coding Agent Index",
+      "skor": 49.8,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Its combined Coding Agent Index score of 49.8% places it ahead of DeepSeek V4 Pro 0813 and Qwen3.8 Max."
+    },
+    {
+      "model": "Mistral Large 4",
+      "benchmark": "AutomationBench",
+      "skor": 59.9,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Coding capabilities of ML4 extend to knowledge work, with 59.9% on AutomationBench"
+    }
+  ],
+  "gorsel_url": "https://huggingface.co/blog/assets/ml4/thumbnail.png",
+  "url": "https://huggingface.co/blog/mistral-large4",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-10-29T00:00:00.000Z",
+  "slug": "welcome-le-chonk-mistral-large-4-on-hugging-face"
+}

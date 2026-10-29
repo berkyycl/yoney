@@ -1,0 +1,46 @@
+{
+  "baslik_tr": "HemmingwayAI'dan 27B Parametreli Hemmingway-1.5: İnsan Yazısına Benzer ve AI Dedektörlerini Geçen Model",
+  "ozet_tr": "HemmingwayAI, 27 milyar parametreli Hemmingway-1.5 modelini duyurdu. Açık ağırlıklı ve ticari olmayan kullanım için ücretsiz olan model, AI dedektörlerini %90 oranında geçerek insan yazısına neredeyse ayırt edilemez bir performans sunuyor.",
+  "detayli_icerik_tr": "HemmingwayAI, Qwen tabanlı bir finetune süreciyle geliştirdiği Hemmingway-1.5 modelini Hugging Face üzerinden yayınladı. Model, 27 milyar parametreye sahip ve açık ağırlıklarla sunuluyor; bu sayede araştırmacılar ve geliştiriciler, ticari olmayan projelerde ücretsiz olarak erişebiliyor. Modelin resmi sayfasında \"The undetectable AI\" sloganı yer alıyor ve insan yazısına benzerlik iddiasını çeşitli AI dedektörleriyle test etmiş.\n\nYapılan testlerde Hemmingway-1.5, dünyanın en iyi AI dedektörlerinden biri olan GPTZero üzerinde %90 başarı oranıyla (10 denemede 9 kez) tespit edilmeden geçiyor. İlginç bir karşılaştırma olarak, gerçek insan yazısı aynı dedektörlerde %86 başarı oranıyla tespit edilemezken, Fable, GPT-6 ve Gemini gibi diğer popüler modeller çoğu zaman yakalanıyor. Bu sonuçlar, modelin özellikle metin üretiminde insan benzeri bir stil yakalama konusunda iddialı olduğunu gösteriyor.\n\nModelin ekosistemi, Hemmingway-1 ve Hemmingway-1-Unlocked (yetişkin içerik için sansürsüz adaptör) gibi önceki sürümleri de kapsıyor. Hemmingway-1.5, bu serinin en yeni ve en büyük versiyonu olarak konumlandırılıyor. Modelin API'si, masaüstü (Mac, Windows) ve mobil (Android) uygulamalarıyla entegrasyon imkanı sunuyor; ayrıca GitHub üzerinden kod ve örnek uygulamalara erişilebiliyor.\n\nBu duyuru, açık kaynak AI topluluğu içinde büyük ilgi topladı. Reddit'in LocalLLaMA topluluğu, modeli inceleyen ve benchmark sonuçlarını paylaşan kullanıcıların yorumlarını topladı. Modelin ücretsiz ve açık ağırlıklı olması, özellikle akademik araştırmalar ve düşük bütçeli start-up'lar için cazip bir seçenek oluşturuyor.",
+  "onemli_maddeler": [
+    "Hemmingway-1.5, 27 milyar parametreyle açık ağırlıklı ve ticari olmayan kullanım için ücretsiz.",
+    "GPTZero AI dedektöründe %90 başarı oranıyla tespit edilmeden geçiyor.",
+    "Gerçek insan yazısı %86 başarı oranıyla aynı dedektörde geçiyor; diğer büyük modeller (Fable, GPT-6, Gemini) daha düşük performans gösteriyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Model, büyük parametre sayısı ve AI dedektörlerini geçme iddiasıyla açık kaynak AI ekosisteminde dikkat çekiyor, ancak sektörel dönüşüm yaratacak bir yenilikten ziyade bir iyileştirme olarak değerlendirilebilir.",
+  "etiketler": [
+    "AI modeli",
+    "Hemmingway-1.5",
+    "Qwen",
+    "AI dedektörleri",
+    "açık kaynak"
+  ],
+  "anilan_modeller": [
+    "Hemmingway-1",
+    "Hemmingway-1-Unlocked",
+    "Fable",
+    "GPT-6",
+    "Gemini"
+  ],
+  "yorum_tr": "Hemmingway-1.5'in AI dedektörlerini geçme başarısı, metin üretiminde insan benzeri kalite arayan geliştiriciler için ilgi çekici bir seçenek sunuyor. Ancak açık kaynak topluluğunda güvenilirlik ve etik kullanım konularının da tartışılması gerekiyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Hemmingway-1.5",
+      "benchmark": "GPTZero detection pass rate",
+      "skor": 90,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "10 denemede 9 kez geçme",
+      "kaynak_metinden_alinti": "Hemmingway-1.5 passes the world's best AI detectors 90% of the time. On GPTZero it passes 9 times in 10, at every thinking level."
+    }
+  ],
+  "gorsel_url": "https://external-preview.redd.it/VlL5rzsOJtP0g-Xq6BXNEjjHjRe9_eBAPinwme1cg7w.png?width=640&crop=smart&auto=webp&s=2b40a7abf5bd6e1aa89a5979cda4b21f84588dc5",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xif7hy/hemmingwayaihemmingway15_qwen_finetune/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-29T09:27:19.000Z",
+  "slug": "hemmingwayai-hemmingway-1-5-qwen-finetune"
+}

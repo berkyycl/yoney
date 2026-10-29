@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "Mistral, trilyon parametreli Le Chonk modelinin ağırlıklarını yayınladı ve siber güvenliğe odaklandı",
+  "ozet_tr": "Fransız yapay zeka şirketi Mistral, trilyon parametreli açık kaynak modeli Mistral Large 4 (Le Chonk) için eğitim ağırlıklarını yayınladı. Model, siber güvenlik uygulamalarında daha az token tüketimi ve üstün kodlama yetenekleriyle öne çıkıyor.",
+  "detayli_icerik_tr": "Fransız AI girişimi Mistral, geçen ay tanıttığı trilyon parametreli açık kaynak modeli Mistral Large 4'ün (ML4) eğitim ağırlıklarını resmi olarak yayınladı. \"Le Chonk\" takma adıyla anılan model, hem işletmeler hem de devlet kurumları tarafından indirilebilir ve kendi altyapılarına kurularak kullanılabilir hâle geldi.\n\nMistral, ML4'ün performansının Çin menşeli açık‑ağırlıklı rakibi GLM‑5.3 ile benzer seviyede olduğunu, ancak görev başına %47 daha az token kullandığını iddia ediyor. Bu verimlilik, özellikle siber güvenlik gibi yüksek hacimli veri işleyen senaryolarda maliyet ve gecikme açısından büyük avantaj sağlıyor. Ayrıca model, Artificial Analysis tarafından yürütülen Coding Agent Index'te tüm açık modeller arasında en yüksek puanı alarak ajan‑tabanlı kodlama görevlerinde lider konumda bulunuyor.\n\nAğırlıkların Hugging Face platformu ve Mistral'ın API'si üzerinden sunulması, kurumların modeli kendi veri merkezlerinde, yani on‑prem ortamda çalıştırabilmelerine imkan tanıyor. Mistral CEO'su Arthur Mensch, yapay zekanın \"güçlendirme aracı\" olması gerektiğini vurgularken, şirketin bu adımının dış sağlayıcılara bağımlılığı azaltıp, kritik altyapıların güvenliğini artıracağını belirtti.\n\nMistral Bilim Başkan Yardımcısı Pierre Stock, modelin siber saldırı tespiti, analiz ve yanıt süreçlerini gerçek zamanlı olarak koordine edebileceğini, açık ağırlıklı olmasının ise erişimin kesintiye uğramasını önleyeceğini söyledi. Aynı zamanda, kötü niyetli aktörlerin benzer teknolojileri kullanma riskine de değinen Stock, bu riskin \"çözülmesi gereken bir problem\" olduğunu ve ekosistemin hızlı bir şekilde güçlendirilmesi gerektiğini ifade etti.",
+  "onemli_maddeler": [
+    "Mistral Large 4 (Le Chonk) modelinin trilyon parametresi ve açık ağırlıkları yayınlandı",
+    "Model, GLM‑5.3'e göre %47 daha az token tüketerek daha verimli çalışıyor",
+    "Artificial Analysis Coding Agent Index'te tüm açık modeller arasında en yüksek puanı aldı",
+    "Ağırlıklar Hugging Face ve Mistral API üzerinden erişilebilir, on‑prem dağıtım mümkün"
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Trilyon parametreli açık kaynak modelin ağırlıklarının serbest bırakılması, büyük dil modellerine erişimde bağımsızlığı artırarak hem ticari hem de devlet siber güvenliği uygulamalarını dönüştürme potansiyeline sahip.",
+  "etiketler": [
+    "Mistral",
+    "AI",
+    "siber güvenlik",
+    "açık kaynak",
+    "trilyon parametre"
+  ],
+  "anilan_modeller": [
+    "Mistral Large 4",
+    "GLM-5.3"
+  ],
+  "yorum_tr": "Bu adım, yüksek kapasiteli modellerin güvenli ve bağımsız kullanımını mümkün kılarak siber savunma alanında rekabeti artırabilir. Geliştiriciler, açık ağırlıkları sayesinde özelleştirilmiş çözümler üretebilir, kullanıcılar ise veri gizliliği riskini azaltabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://techcrunch.com/wp-content/uploads/2024/06/GettyImages-1760104305.jpg?resize=1200,798",
+  "url": "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/",
+  "source": "TechCrunch AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-29T14:00:00.000Z",
+  "slug": "mistral-releases-weights-for-its-trillion-parameter-ai-model"
+}

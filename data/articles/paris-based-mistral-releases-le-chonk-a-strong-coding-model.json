@@ -1,0 +1,87 @@
+{
+  "baslik_tr": "Paris merkezli Mistral, “Le Chonk” kodlama modelini yayınladı; Çin modellerinin gerisinde kalıyor",
+  "ozet_tr": "Paris merkezli yapay zeka girişimi Mistral, yaklaşık bir trilyon parametreli ve 52 milyar aktif parametreli yeni kodlama modeli \"Le Chonk\"u (Mistral Large 4) ağırlık dosyalarıyla birlikte yayınladı. Model, açık lisans altında kendi donanımınızda çalıştırılabiliyor ve kodlama benchmarklerinde açık modellerin en iyisi konumunda, ancak genel zeka sıralamasında Çin menşeli modellerin gerisinde kalıyor.",
+  "detayli_icerik_tr": "Mistral, en büyük modeli olan Large 4'ün (takma adı \"Le Chonk\") ağırlıklarını üç hafta sonra Hugging Face üzerinden erişime açtı. Model toplamda yaklaşık bir trilyon parametreye sahip, her adımda 52 milyar aktif parametre kullanıyor ve standart sürümü sekiz adet Nvidia B300 GPU, sıkıştırılmış versiyonu ise dört GPU üzerinde çalışabiliyor. Şirket, modelin eğitimine pekiştirmeli öğrenme (RL) ekleyerek özellikle kodlama ve siber savunma yeteneklerinde kayda değer iyileşmeler sağladığını belirtiyor.\n\nKodlama alanında Large 4, bağımsız testlerde açık modeller arasında öne çıkıyor. Artificial Analysis'ın Coding Agent Index'inde %48 puan alarak GLM‑5.3 ile neredeyse eşit seviyeye geldi ve aynı benchmarkta %47 daha az token harcıyor. Terminal‑Bench 4.0'da %41 başarı oranı yakalarken FrontierCode 2.0'de %19,7 ile açık modellerin en iyisi konumunda. Ancak daha geniş kapsamlı Artificial Analysis Intelligence Index'te sadece 26 puan alarak DeepSeek V4.1 Flash ve GLM‑5.3 gibi Çin modellerinin gerisinde kalıyor.\n\nSiber savunma performansında Large 4, Artificial Analysis Cyber Index'te %51 başarı puanı elde ederek açık modeller arasında üçüncü sırada yer alıyor; DeepSeek V4.1 Flash %57 ve MiMo‑V2.6‑Pro %56 ile daha iyi. Model, zararlı siber istekleri %96,6 oranında reddederek bu alanda en yüksek güvenlik seviyesini sunuyor. Fiyatlandırma açısından ise giriş token başına $0,70, çıkış token başına $2,10 olarak belirlenmiş; bu, GLM‑5.3 ve Kimi K3.1 Pro gibi rakiplerinden daha ucuz ancak DeepSeek V4.1 Flash gibi modellerden pahalı.\n\nMistral, modeli \"sovereign AI\" olarak konumlandırıyor; tamamen Avrupa’da eğitildiği ve açık bir MIT‑türevi lisansla sunulduğu için şirketler kendi sunucularında kullanabilir ya da Microsoft Foundry gibi bulut platformları üzerinden erişebilir. Şirket, modelin daha fazla kaynak ve sermaye ile Çin ve ABD laboratuvarlarının seviyesine ulaşabileceğini ve gelecekte özel güvenlik versiyonlarıyla penetrasyon testleri gibi alanlarda da kullanılabileceğini vurguluyor.",
+  "onemli_maddeler": [
+    "Model yaklaşık bir trilyon parametreye, 52 milyar aktif parametreye sahip ve 8 Nvidia B300 GPU gerektiriyor.",
+    "Kodlama benchmarklerinde açık modellerin en iyisi: Terminal‑Bench 4.0'de %41, Coding Agent Index'te %48.",
+    "Intelligence Index puanı sadece 26, Çin açık modellerinin gerisinde.",
+    "Siber savunma görevlerinde %96,6 reddetme oranı ve Cyber Index'te %51 başarı.",
+    "Açık MIT‑türevi lisansla sunuluyor; kendi altyapınızda çalıştırabilir veya bulut hizmetiyle kullanabilirsiniz."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Mistral'ın Avrupa menşeli, açık ağırlıklı büyük modeli, kodlama performansında açık modellerin lideri olması ve düşük maliyetli self‑host imkanı sunması sektörde önemli bir rekabet unsuru oluşturuyor; ancak genel zeka sıralamasında Çin modellerinin gerisinde kalması, etkisini sınırlıyor.",
+  "etiketler": [
+    "Mistral",
+    "Le Chonk",
+    "coding model",
+    "open weights",
+    "AI benchmarking"
+  ],
+  "anilan_modeller": [
+    "Mistral Large 4",
+    "Claude Opus 5.5",
+    "DeepSeek V4.1 Flash",
+    "GLM-5.3",
+    "Kimi K3.1 Pro",
+    "MiMo-V2.6-Pro",
+    "Google Gemini 4 Carbon",
+    "GPT-6.1 Terra"
+  ],
+  "yorum_tr": "Le Chonk, Avrupa’nın kendi kendine barındırabileceği güçlü bir kodlama modeli sunması bakımından geliştiriciler için cazip bir seçenek. Ancak genel AI performansında Çin’in açık modelleriyle geride kalması, Mistral’ın rekabet avantajını sınırlı tutuyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Mistral Large 4",
+      "benchmark": "Terminal-Bench 4.0",
+      "skor": 41,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "percent",
+      "kaynak_metinden_alinti": "After three more weeks of training, Large 4's score on Terminal-Bench 4.0 rose from 28 to 41 percent."
+    },
+    {
+      "model": "Mistral Large 4",
+      "benchmark": "Coding Agent Index",
+      "skor": 48,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "percent",
+      "kaynak_metinden_alinti": "Mistral says Large 4 hits 48 percent on Artificial Analysis' Coding Agent Index."
+    },
+    {
+      "model": "Mistral Large 4",
+      "benchmark": "FrontierCode 2.0",
+      "skor": 19.7,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "percent",
+      "kaynak_metinden_alinti": "On Cognition's new FrontierCode 2.0 benchmark, Large 4 leads the open models at 19.7 percent."
+    },
+    {
+      "model": "Mistral Large 4",
+      "benchmark": "Cyber Index",
+      "skor": 51,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "percent",
+      "kaynak_metinden_alinti": "Mistral calls Large 4 the leading open model for cyber defense. The company says the final version scores 51 percent on Artificial Analysis' Cyber Index."
+    },
+    {
+      "model": "Mistral Large 4",
+      "benchmark": "Intelligence Index",
+      "skor": 26,
+      "birim": "points",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "On Artificial Analysis' Intelligence Index, it scores 26 points, behind open Chinese models like DeepSeek V4.1 Flash and GLM-5.3."
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/07/mistral_ai-3.png",
+  "url": "https://the-decoder.com/paris-based-mistral-releases-le-chonk-a-strong-coding-model-that-still-trails-china-overall/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-29T15:25:27.000Z",
+  "slug": "paris-based-mistral-releases-le-chonk-a-strong-coding-model"
+}
