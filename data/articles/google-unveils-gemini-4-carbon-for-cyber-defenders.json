@@ -1,0 +1,100 @@
+{
+  "baslik_tr": "Google, siber savunucular için Gemini 4 Carbon'ı tanıttı",
+  "ozet_tr": "Google DeepMind, siber savunuculara yönelik en güçlü yapay zeka modeli Gemini 4 Carbon'ı duyurdu. Model, sadece iki hafta arayla gelen Gemini 4 Argon'un ardından geldi ve güvenlik odaklı görevlerde çığır açan performans gösteriyor.",
+  "detayli_icerik_tr": "Google DeepMind, Gemini 4 Carbon'ı siber savunuculara özel bir aşama programı olan Fairwind Programı kapsamında bu hafta sınırlı bir gruba sunarak duyurdu. İlk erişim, güvenilir siber savunuculara verilecek ve geri bildirimler doğrultusunda modelin güvenlik kalkanları ve kullanım kısıtlamaları iyileştirilecek. Daha sonra model, geliştiricilere, işletmelere ve son kullanıcılara ürünler aracılığıyla ulaştırılacak.\n\nGemini 4 Carbon, Artificial Analysis Intelligence Index v5'te 59 puanla bir numara oldu ve dış güvenlik değerlendirmelerinde etkileyici sonuçlar verdi: SEC-bench Pro'da %88.2 zafiyet keşfi, ExploitGym'de %54.8 istismar başarısı ve Collinear’ın CWE-bench'inde %71.0 çalışan düzeltme oranı elde etti. Bu sonuçlar, modelin karmaşık güvenlik senaryolarında hem keşif hem de düzeltme yeteneklerinin önceki nesillere göre belirgin bir üstünlük sağladığını gösteriyor.\n\nİç testlerde, Carbon'un güvenli kod üretiminde Argon'dan iki kat daha yüksek başarı oranı yakaladığı ve Chrome ekibinin, başka bir büyük modelin on katı hızında yüksek kaliteli yamalar ürettiği bildirildi. WebDev Arena'da 1769 Elo puanla dördüncü sıraya yükselirken, Text Arena'da birinci, Agent Arena'da ikinci ve Code Arena (WebDev)da dördüncü olarak listelendi. Güvenlik açısından, Terminal-Bench 4.0'da %0.0 başarılı hile ve Gray Swan’ın Indirect Prompt Injection Benchmark'inde %0.0 saldırı başarısı gibi neredeyse sıfır riskli sonuçlar elde edildi.\n\nFiyatlandırma açısından, Gemini 4 Carbon Argon'un giriş fiyatını koruyarak giriş token başına milyon token başına 2 $, çıkış token başına ise 10 $ olarak belirlendi. Önbellekli girişlerde ise standart giriş token fiyatının %95'i kadar bir indirim uygulanacak. Modelin kademeli olarak piyasaya sürülmesi, ABD hükümetinin gönüllü ön test sürecine katılımını ve güvenlik önlemlerinin titizlikle test edilmesini de kapsıyor.",
+  "onemli_maddeler": [
+    "Gemini 4 Carbon, Artificial Analysis Intelligence Index v5'te 59 puanla bir numara oldu.",
+    "SEC-bench Pro'da %88.2, ExploitGym'de %54.8 ve CWE-bench'de %71.0 başarı oranları elde etti.",
+    "Terminal-Bench 4.0'da %0.0 başarılı hile ve Gray Swan IPI benchmark'inde %0.0 saldırı başarısı gösterdi.",
+    "WebDev Arena'da 1769 Elo puanla dördüncü sırada yer alırken, Text Arena ve Agent Arena'da birinci ve ikinci oldu.",
+    "Fiyatlandırma: giriş token başına $2, çıkış token başına $10; önbellekli girişlerde %95 indirim."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Google'ın en güçlü siber güvenlik odaklı modelini tanıtması, AI güvenliği ve kod üretiminde yeni bir çıta belirleyerek sektörde geniş çaplı etkiler yaratacak.",
+  "etiketler": [
+    "Gemini 4 Carbon",
+    "siber güvenlik",
+    "yapay zeka",
+    "benchmark",
+    "Google"
+  ],
+  "anilan_modeller": [
+    "Gemini 4 Carbon",
+    "Gemini 4 Argon",
+    "Claude Opus 5.5"
+  ],
+  "yorum_tr": "Gemini 4 Carbon, siber güvenlik ekiplerine daha hızlı ve doğru zafiyet keşfi ve otomatik düzeltme imkanı sunarak güvenlik süreçlerini hızlandırabilir. Düşük hata ve saldırı başarısı oranları, geliştiricilerin ve işletmelerin AI destekli kod üretimine daha fazla güven duymasını sağlayacak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Gemini 4 Carbon",
+      "benchmark": "Artificial Analysis Intelligence Index v5",
+      "skor": 59,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Carbon ranks first on version 5.0 of the Artificial Analysis Intelligence Index with a score of 59."
+    },
+    {
+      "model": "Gemini 4 Carbon",
+      "benchmark": "SEC-bench Pro",
+      "skor": 88.2,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "it scored 88.2% on SEC-bench Pro for vulnerability discovery"
+    },
+    {
+      "model": "Gemini 4 Carbon",
+      "benchmark": "ExploitGym",
+      "skor": 54.8,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "54.8% on ExploitGym for exploitation"
+    },
+    {
+      "model": "Gemini 4 Carbon",
+      "benchmark": "CWE-bench",
+      "skor": 71,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "71.0% on Collinear’s CWE-bench for producing working fixes"
+    },
+    {
+      "model": "Gemini 4 Carbon",
+      "benchmark": "WebDev Arena",
+      "skor": 1769,
+      "birim": "ELO",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Its web development performance rose by 89 Elo points to fourth place on WebDev Arena with a score of 1769."
+    },
+    {
+      "model": "Gemini 4 Carbon",
+      "benchmark": "Terminal-Bench 4.0",
+      "skor": 0,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Carbon recorded 0.0% successful cheating on Terminal-Bench 4.0"
+    },
+    {
+      "model": "Gemini 4 Carbon",
+      "benchmark": "Indirect Prompt Injection Benchmark",
+      "skor": 0,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Its attack success rate on Gray Swan’s Indirect Prompt Injection Benchmark fell from Argon’s 0.7% to 0.0%."
+    }
+  ],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/10/banner-22.webp",
+  "url": "https://www.testingcatalog.com/google-unveils-gemini-4-carbon-for-cyber-defenders/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-28T20:48:38.000Z",
+  "slug": "google-unveils-gemini-4-carbon-for-cyber-defenders"
+}

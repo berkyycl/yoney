@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "Yeni Artificial Analysis Endeksi Açık ve Kapalı Modeller Arasındaki Boşluğu Genişletiyor",
+  "ozet_tr": "Artificial Analysis, Intelligence Index'ini yeniden yapılandırarak açık modeller ile lider kapalı modeller arasındaki farkı 3 puandan 12 puana çıkardı. Yeni indeksin %60'ı özel test setlerinden oluştuğu için \"benchmaxxing\" pratiği büyük ölçüde engellendi ve Kimi K3.1 Pro gibi açık modeller sıralamada geriledi.",
+  "detayli_icerik_tr": "Artificial Analysis, Intelligence Index'in beşinci sürümünü yayınladı ve bu güncelleme, açık modellerin lider kapalı modellere göre performans farkını üç puandan on iki puana çıkararak sıralamadaki uçurumu belirginleştirdi. Önceden dördüncü sırada yer alan Kimi K3.1 Pro, yeni indeks sayesinde beş sıra kaybederek dokuzuncu konuma geriledi ve sekiz kapalı modelin gerisinde kaldı.\n\nEndeksin yeni versiyonunda test setlerinin %60'ı özel olarak hazırlanmış veri kümelerinden oluşuyor. Bu yaklaşım, modellerin bilinen test sorularına yönelik özel eğitim almasını önleyerek \"benchmaxxing\" olarak adlandırılan manipülasyonu büyük ölçüde azaltıyor. Ancak bu gizlilik, dışarıdan hatalı veya belirsiz soruları tespit etmeyi zorlaştırıyor; AA-Omniscience bilgi testi, yeni indeksin bazı sorularda hâlâ hatalar barındırdığını ortaya koydu.\n\nGrok 4.7 de benzer bir düşüş yaşadı; puanını on iki puan kaybederek yeni sıralamada geriledi. AI araştırmacısı Nathan Lambert, sadece benchmaxxing'in sorunun bir kısmı olduğunu, güncel eğitim kazançlarının büyük ölçüde pekiştirmeli öğrenme (RL) ortamlarından geldiğini ve bu ortamların çoklu görev performansını aynı anda sürdürmek için karmaşık altyapılar gerektirdiğini belirtiyor. Bu altyapıya sahip olmayan laboratuvarlar, yeni indeksin getirdiği zorluklarla daha fazla mücadele edecek.\n\nEndeksin bu revizyonu, açık model geliştiricileri için bir uyarı niteliği taşıyor. Özel test setleriyle daha güvenilir bir değerlendirme sağlansa da, modellerin gerçek dünya performansını ölçmek ve hataları tespit etmek için şeffaflık ve dış denetim mekanizmalarının da önemi vurgulanıyor.",
+  "onemli_maddeler": [
+    "Artificial Analysis Intelligence Index'in %60'ı özel test setlerinden oluşuyor, bu da benchmaxxing'i engelliyor.",
+    "Kimi K3.1 Pro beş sıra kaybederek 9. sıraya düştü, açık modellerin lider kapalı modellere göre farkı 12 puana yükseldi.",
+    "Grok 4.7 de 12 puan kaybederek sıralamada geriledi; RL tabanlı eğitim altyapısının önemi vurgulandı."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Intelligence Index'in güncellenmesi, model değerlendirme standartlarını değiştirdiği ve açık modellerin rekabet gücünü doğrudan etkilediği için sektörde geniş yankı uyandırıyor.",
+  "etiketler": [
+    "Artificial Analysis",
+    "AI Benchmark",
+    "Open Models",
+    "Closed Models",
+    "Benchmaxxing"
+  ],
+  "anilan_modeller": [
+    "Kimi K3.1 Pro",
+    "Grok 4.7"
+  ],
+  "yorum_tr": "Endeksin gizli test setlerine geçişi, model performansını daha gerçekçi ölçmeye yardımcı olurken, şeffaflık eksikliği nedeniyle hataların dışarıdan tespit edilmesini zorlaştırıyor. Açık model geliştiricileri, bu yeni değerlendirme koşullarına uyum sağlamak için RL altyapılarını güçlendirmeli.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/10/kimi_k31pro.png",
+  "url": "https://the-decoder.com/new-artificial-analysis-index-widens-the-gap-between-open-and-closed-models/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-28T15:04:43.000Z",
+  "slug": "new-artificial-analysis-index-widens-the-gap-between-open-an"
+}

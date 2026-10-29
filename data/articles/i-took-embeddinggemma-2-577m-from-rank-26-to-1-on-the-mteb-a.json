@@ -1,0 +1,71 @@
+{
+  "baslik_tr": "EmbeddingGemma-2, 2.4 MB PCA başlığıyla MAEB sıralamasını 26’dan 1’e taşıdı",
+  "ozet_tr": "Google'un 577M parametreli EmbeddingGemma-2 modeli, sadece 2,4 MB boyutundaki bir PCA katmanı eklenerek MAEB (Massive Audio Embedding Benchmark) sıralamasında 26. sıradan birinciye yükseldi. Eğitim yapılmadan elde edilen bu %5,1'lik artış, 9 B parametreli multimodal modelleri geride bıraktı ve kenar cihazlarda yüksek performans vaat ediyor.",
+  "detayli_icerik_tr": "Reddit topluluğu LocalLLaMA'da paylaşılan bir deneyde, kullanıcı JeanMichelRanu, Google'ın edge‑friendly embeddinggemma-2 modeline (577 M parametre, 768‑dimensional vektör) 2,37 MB büyüklüğünde bir safetensors dosyasıyla dondurulmuş PCA matrisleri ekledi. Bu ek, modelin MAEB skorunu %49,3'ten %54,4'e çıkararak sıralamada 26. sıradan birinciye taşıdı ve aynı zamanda tam MAEB (audio‑only ve text‑audio) sıralamasında da birinci konuma yükseltti.\n\nModelin temel avantajı, 9 B parametreli Omni gibi büyük multimodal modellerle kıyaslandığında çok daha düşük kaynak tüketimi. 577 M parametre ve 768‑dimensional vektörleri sayesinde dizüstü bilgisayar ya da kenar cihazlarda rahatça çalışabiliyor. Geleneksel metin‑odaklı ses modelleri, söylenen kelimeleri yakalamada başarılı olsa da sesin ton, duygu ve konuşmacı özelliklerini kaybediyor. EmbeddingGemma-2'nin erken katmanları (Layer 2 ve Layer 6) bu akustik bilgileri hâlâ taşıyor.\n\nAraştırmacılar, erken katmanların konuşmacı, perde ve duygu gibi özellikleri sakladığını gösteren çalışmalara (Pasad et al.; Bouziane, Mdhaffar & Estève) atıfta bulunarak, bu katmanların çıktısını 256 boyuta düşüren bir PCA uyguladı. PCA, 1.400 dış ses klibi üzerinde eğitildi ve elde edilen temsiller, modelin 768‑dimensional vektöründeki 256 boş (null space) yönde dolduruldu. Bu sayede ses‑ses görevlerinde büyük bir performans artışı sağlandı.\n\nSonuçlar çarpıcı: ses‑ses sesli kimlik/ cinsiyet kümeleme %0,05'ten %63,1'e, sanatçı/şarkı arama %55,2'den %93,8'e ve vokal duygu sınıflandırması %19,7'den %40,2'ye yükseldi. Ancak, bazı sadece konuşma‑niyetli görevlerde (ör. MInDS14) performans %97,6'dan %88,3'e geriledi. Bu durum, eklenen akustik özelliklerin ağırlıksız bir şekilde bütün vektöre eklenmesinin bazı görevlerde yan etkisi olabileceğini gösteriyor. Tam detay ve kullanım talimatları Hugging Face model kartında bulunabilir.",
+  "onemli_maddeler": [
+    "EmbeddingGemma-2, sadece 2,4 MB ek PCA başlığıyla MAEB skorunu %49,3'ten %54,4'e yükseltti.",
+    "Ses‑ses görevlerinde (ses/kime/duygu) performans %0,05'ten %63,1'e, %55,2'den %93,8'e ve %19,7'den %40,2'ye çıktı.",
+    "Model, 577 M parametreyle laptop ve kenar cihazlarda çalışabilir, 9 B modelleri geride bıraktı."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Küçük bir modelin, sıfır eğitimle büyük modelleri geride bırakarak lider benchmark skoruna ulaşması, kenar AI ve düşük kaynaklı uygulamalarda önemli bir ivme sağlar.",
+  "etiketler": [
+    "audio embeddings",
+    "MAEB",
+    "PCA",
+    "EmbeddingGemma-2",
+    "edge AI"
+  ],
+  "anilan_modeller": [
+    "EmbeddingGemma-2",
+    "google/embeddinggemma-2",
+    "Omni 9B multimodal models"
+  ],
+  "yorum_tr": "Bu bulgu, büyük modellerin aşırı eğitilmesinin içinde hâlâ kullanılmayan akustik sinyaller olduğunu ve basit lineer dönüşümlerle büyük performans kazanımları elde edilebileceğini gösteriyor. Geliştiriciler, düşük maliyetli kenar çözümlerinde benzer teknikleri uygulayarak daha verimli sistemler tasarlayabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "EmbeddingGemma-2",
+      "benchmark": "MAEB (Massive Audio Embedding Benchmark) audio-only",
+      "skor": 54.4,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "MAEB score from 49.3% to 54.4% (+5.1 points), jumping from Rank #26 to #1 on MAEB audio-only"
+    },
+    {
+      "model": "EmbeddingGemma-2",
+      "benchmark": "Unsupervised voice/gender clustering",
+      "skor": 63.1,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Unsupervised voice/gender clustering: 0.05% -> 63.1%"
+    },
+    {
+      "model": "EmbeddingGemma-2",
+      "benchmark": "Artist / song audio-to-audio search",
+      "skor": 93.8,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Artist / song audio-to-audio search: 55.2% -> 93.8%"
+    },
+    {
+      "model": "EmbeddingGemma-2",
+      "benchmark": "Vocal emotion classification",
+      "skor": 40.2,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Vocal emotion classification: 19.7% -> 40.2%"
+    }
+  ],
+  "gorsel_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/embeddinggemma2-banner_169.width-1300.png",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xhny7x/i_took_embeddinggemma2_577m_from_rank_26_to_1_on/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-28T13:23:06.000Z",
+  "slug": "i-took-embeddinggemma-2-577m-from-rank-26-to-1-on-the-mteb-a"
+}

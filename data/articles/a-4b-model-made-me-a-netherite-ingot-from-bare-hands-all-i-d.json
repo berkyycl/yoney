@@ -1,0 +1,37 @@
+{
+  "baslik_tr": "Mica v0.5 4B Modeli Tek Cümleyle Netherite Ingot Üretti",
+  "ozet_tr": "Yerel bir 4 milyar parametreli LLM olan Mica v0.5, tek bir doğal‑dil cümlesini adım adım karar sorularına bölerek Minecraft içinde bir oyuncuya üç domuz eti ve bir netherite ingotu getirdi. Model, talebi hedeflere ayırıp her aşamada olasılık temelli seçimler yaparak oyunun tüm aşamalarını (odun toplama, maden çıkarma, portal inşa etme vb.) yönetti.",
+  "detayli_icerik_tr": "Reddit'te paylaşılan bir video, Mica v0.5 4B modelinin bir oyuncunun \"Açım, bana en az 3 domuz eti ve bir netherite ingotu getir\" talimatını nasıl yerine getirdiğini gösteriyor. Model, cümleyi önce kaç farklı öğe istendiğine ve bir \"gel\" komutu olup olmadığına karar veriyor, ardından her öğeyi kategori, alt‑kategori ve kesin oyun içi eşleşmesiyle tanımlıyor. Bu aşamaların her biri, oyun veri tabanından sağlanan çoktan seçmeli seçenekler arasından en yüksek olasılıklı yanıtı seçerek ilerliyor.\n\nKarar sürecinin merkezinde bir \"recipe planner\" bulunuyor; bu planlayıcı mevcut durumda geçerli olabilecek eylemleri listeliyor ve Mica bir sonraki adımı bu listeden seçiyor. Model, doğrudan oyunu kontrol etmiyor; bir bot onun elleri ve ayakları olarak hareket ederek yürümeyi, madenciliği ve zanaatçılığı gerçekleştiriyor. Video, her karar anını ve modelin verdiği olasılıkları sağ panelde gösteriyor, böylece izleyiciler sürecin şeffaflığını görebiliyor.\n\nMica'nın en dikkat çeken yönü, doğal‑dil isteği tek seferde anlamaya çalışmak yerine bir dizi küçük yargıya bölerek doğruluk oranını artırması. Yazar, bu yaklaşımın sadece Minecraft ajanları için değil, daha geniş AI karar sistemleri için de geçerli olabileceğini vurguluyor. Ayrıca, yerel bir AMD GPU'sunda çalıştırıldığı için karar süreleri NVIDIA RTX 3090 tahminiyle karşılaştırıldığında daha yavaş, fakat hâlâ API‑only karar modelleri (Jev, Clef, Ms Decision) gibi hizmetlerden yaklaşık 60 kat daha hızlı.\n\nHenüz tam bir ürün olarak yayınlanmasa da, yazar Mica'yı açık kaynak kodlu bir proje olarak GitHub ve Hugging Face üzerinden paylaşıyor ve benzer bir sistemin Claude Code ya da Codex gibi kodlama ajanlarıyla da inşa edilebileceğini belirtiyor. Bu, geliştiricilere kendi oyun içi görev yürütücülerini oluşturma konusunda yeni bir yol haritası sunuyor.",
+  "onemli_maddeler": [
+    "Mica v0.5 4B, tek cümlelik doğal‑dil talimatını bir dizi çoktan seçmeli karar sorusuna bölerek Minecraft içinde tam bir üretim zinciri oluşturdu.",
+    "Model, her adımda olasılık temelli seçimler yapıyor ve bir \"recipe planner\" aracılığıyla geçerli eylemleri dinamik olarak belirliyor.",
+    "Yerel 4B model, API‑only karar modellerine göre ortalama 60 kat daha hızlı çalışıyor, bu da yerel LLM'lerin karar verme görevlerinde hâlâ rekabetçi olduğunu gösteriyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 3,
+  "onem_gerekce": "Minecraft içinde doğal dil talimatlarını adım adım karar ağacına bölerek gerçekleştirebilmesi, yerel 4B modelin pratik bir örnek sunması ve API‑only modellere göre 60 kat daha hızlı olması, AI‑tabanlı oyun ajanları alanında ilgi çekici bir ilerleme olarak değerlendirilebilir.",
+  "etiketler": [
+    "Minecraft",
+    "LLM",
+    "Karar Modeli",
+    "Yerel Model",
+    "AI Ajanı"
+  ],
+  "anilan_modeller": [
+    "Mica v0.5 4B",
+    "Jev",
+    "Clef",
+    "Ms Decision",
+    "Claude Code",
+    "Codex"
+  ],
+  "yorum_tr": "Bu gösterim, doğal‑dil talimatları küçük yargı adımlarına bölerek yüksek doğruluk elde edebileceğini kanıtlıyor; geliştiriciler benzer mimarileri oyun dışı görev otomasyonu için de uyarlayabilir. Ancak model hâlâ tam bir otonomiye sahip değil ve gerçek‑zaman performansının donanım bağımlılığı, geniş çaplı uygulamalarda dikkat edilmesi gereken bir faktör.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/amFqZDgzY2cwOXloMWGnwjOFFPeE7mwOqTbsjf4W0F9ZBlnyTnCtXCtySZeM.png?width=640&crop=smart&auto=webp&s=932c0d098a87cde32cf498d932259c12063d81e4",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xhw2l0/a_4b_model_made_me_a_netherite_ingot_from_bare/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-28T18:21:25.000Z",
+  "slug": "a-4b-model-made-me-a-netherite-ingot-from-bare-hands-all-i-d"
+}
