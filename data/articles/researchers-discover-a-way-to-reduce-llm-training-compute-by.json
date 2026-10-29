@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "Araştırmacılar, LLM Eğitim Hesaplamasını Kaliteyi Bozmadan %15 Azaltmanın Yolunu Buldular",
+  "ozet_tr": "EMNLP 2026'da T-Tech araştırmacıları, katman‑entegre hafıza (LIMe) adlı yeni bir yöntemle büyük dil modellerinin eğitim maliyetini %15 oranında düşürürken kaliteyi koruduklarını gösterdi. LIMe, dikkat mekanizmasına öğrenilebilir yönlendirme ağırlıkları ekleyerek önceki katmanlardaki temsilleri yeniden kullanıyor.",
+  "detayli_icerik_tr": "EMNLP 2026 konferansında, Macaristan'da gerçekleşen oturumda T-Tech ekibi, LIMe (Layer-Integrated Memory) adlı bir teknik tanıttı. Geleneksel Transformer mimarisinde her katman yalnızca bir önceki katmanın gizli durumuna dayanır ve bu durum, temsil çöküşüne yol açarak tokenların birbirine benzemesine ve model kalitesinin düşmesine neden olur. LIMe, bu sorunu hafifletmek için her katmanın zaten tuttuğu anahtar-değer tamponlarını kullanır ve her dikkat başlığına özgü öğrenilebilir yönlendirme ağırlıkları ekler; bu sayede bir başlık yalnızca bir önceki katmandan değil, aynı zamanda daha önceki katmanlardan da temsilleri çekip birleştirebilir.\n\nYöntemin temel avantajı, gizli durum boyutunu değiştirmeden önceki hesaplamaları yeniden kullanmasıdır. Yaklaşık bir milyar parametreli modeller üzerinde yapılan deneylerde, LIMe aynı eğitim kaybını elde ederken %15 daha az hesaplama gerektirdi. Ayrıca, dil modelleme ve çok adımlı akıl yürütme benchmark'larında rakip yöntemlerin önüne geçerek özellikle sentetik aritmetik görevlerinde ve daha derin mimarilerde belirgin iyileşmeler sağladı.\n\nAraştırmacılar, LIMe'nin değer vektörlerinde daha yüksek entropi ve token ayrımında artış yarattığını, bunun da temsil çöküşünün etkili bir şekilde azaltıldığını rapor etti. Öğrenilen yönlendirme ağırlıklarının analizi, modelin hem yerel hem de uzun menzilli özellikleri sistematik olarak yeniden kullandığını ortaya koydu. Çalışmanın tam metni ve resmi kod uygulaması ilgili linklerde sunulmaktadır.",
+  "onemli_maddeler": [
+    "LIMe, dikkat mekanizmasına öğrenilebilir yönlendirme ağırlıkları ekleyerek önceki katmanlardaki temsilleri yeniden kullanabiliyor.",
+    "Yaklaşık 1 Milyar parametreli modellerde aynı eğitim kaybını korurken %15 daha az hesaplama gerektiriyor.",
+    "Dil modelleme, çok adımlı akıl yürütme ve sentetik aritmetik görevlerinde rekabetçi yöntemleri geride bırakarak token ayrımını ve değer vektörlerinin entropisini artırıyor."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "Eğitim maliyetindeki %15 azalma, büyük ölçekli LLM geliştirme süreçlerinde hem çevresel hem de ekonomik açıdan önemli bir tasarruf sağlayarak araştırma ve endüstri toplulukları için kritik bir ilerleme temsil ediyor.",
+  "etiketler": [
+    "LIMe",
+    "Transformer",
+    "Compute Reduction",
+    "EMNLP 2026",
+    "LLM Training"
+  ],
+  "anilan_modeller": [
+    "LLaMA"
+  ],
+  "yorum_tr": "LIMe'nin sunduğu verimlilik artışı, büyük dil modellerinin daha sürdürülebilir bir şekilde eğitilmesine olanak tanıyacak ve araştırmacıların daha derin ya da daha geniş veri setleriyle denemeler yapmasını kolaylaştıracaktır. Kullanıcılar ise aynı performansı daha düşük maliyetle elde edebilecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/8n6r0uygwcyh1.jpeg?width=640&crop=smart&auto=webp&s=1d29f9169dd94fc6eb40d3c1f4cba135de6b6bc1",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xid3i8/researchers_discover_a_way_to_reduce_llm_training/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-29T07:11:57.000Z",
+  "slug": "researchers-discover-a-way-to-reduce-llm-training-compute-by"
+}

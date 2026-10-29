@@ -1,0 +1,31 @@
+{
+  "baslik_tr": "Modeller Gerçekçi Olmayan Benchmark'ları Kovalıyor, Çalışma Düzeyindeki Zeka Zaten Elde Edildi",
+  "ozet_tr": "Yapay zeka topluluğu, son dönemde popülerleşen benchmarkların gerçek dünya geliştiricilerinin ihtiyaçlarını yansıtmadığını savunuyor. Kullanıcılar, modellerin sadece talep edilen görevi basit ve doğru bir şekilde yerine getirmesinin yeterli olduğunu, süslü 3D render gibi ek özelliklerin puanları şişirdiğini belirtiyor.",
+  "detayli_icerik_tr": "Reddit'in LocalLLaMA topluluğunda paylaşılan bir yorumda, son benchmarkların geliştiricilerin günlük iş akışlarında nadiren karşılaştığı senaryoları ölçtüğü iddia edildi. Özellikle ikili tersine mühendislik, tek seferde karmaşık bir uygulamayı çözümleme gibi \"uç nokta\" görevlerin, çoğu işletme ve uygulama geliştirme sürecinde öncelikli olmadığı vurgulandı.\n\nYorum sahibi, bir modelin \"pelikan bisiklet sürerken bir SVG oluştur\" gibi basit bir talebi %100 başarıyla yerine getirmesinin yeterli olduğunu, modelin otomatik olarak 3D gölgelendirme, animasyon ya da süslü arka plan eklemesinin gereksiz olduğunu belirtiyor. Bu tür eklemeler, yalnızca sorunun kendisinde istenmediği sürece puan tablolarında haksız bir avantaj sağlıyor.\n\nTopluluk, bu durumun model geliştirme yönünde yanlış bir önceliklendirmeye yol açtığını, araştırmacıların ve şirketlerin kaynaklarını gerçek iş ihtiyaçlarına uygun yetenekler yerine gösteriş amaçlı özellikler üzerine harcadığını öne sürüyor. Bu bağlamda, benchmarkların ağırlıklandırma kriterlerinin yeniden gözden geçirilmesi ve \"günlük kullanım\" odaklı ölçütlerin eklenmesi çağrısında bulunuldu.\n\nYazar, model kapasitesinin sürekli artırılmasının piyasa değerini yükseltmek için bir araç olarak kullanılmasının da eleştirildiğini belirtiyor. Gerçek iş senaryolarında daha düşük kapasiteli bir modelin aynı performansı sunabilmesi, maliyet ve enerji verimliliği açısından daha sürdürülebilir bir yaklaşım olacağını vurguluyor.",
+  "onemli_maddeler": [
+    "Mevcut benchmarklar, geliştiricilerin nadiren karşılaştığı uç senaryoları ölçerek gerçek dünya değerini aşırı şişiriyor.",
+    "Modellerin sadece talep edilen görevi basit ve doğru bir şekilde yerine getirmesi, süslü ek özelliklerden daha önemli kabul edilmeli.",
+    "Benchmark ağırlıklandırma kriterlerinin yeniden düzenlenmesi, iş odaklı yapay zeka değerlendirmeleri için kritik.",
+    "Daha düşük kapasiteli modellerin aynı işlevi sunabilmesi, maliyet ve enerji verimliliği açısından avantaj sağlayabilir."
+  ],
+  "kategori": "benchmark",
+  "onem": 3,
+  "onem_gerekce": "Topluluk içinde tartışılan konu, benchmark metodolojisinin yeniden değerlendirilmesi gerektiğini vurguluyor; sektörel etkisi var ancak henüz geniş çaplı bir politika değişikliği yaratmadığı için orta seviyede önem taşıyor.",
+  "etiketler": [
+    "benchmark",
+    "model değerlendirme",
+    "AI geliştirme",
+    "yapay zeka",
+    "topluluk"
+  ],
+  "anilan_modeller": [],
+  "yorum_tr": "Bu eleştiri, benchmarkların gerçek iş ihtiyaçlarını yansıtması gerektiğini hatırlatarak geliştiricilerin daha odaklı ve maliyet etkin modeller seçmesine yönlendirebilir; aynı zamanda ölçüm standartlarının güncellenmesi için bir baskı oluşturabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": null,
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xhydgj/models_are_chasing_unrealistic_benchmarks_but_the/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-28T19:44:18.000Z",
+  "slug": "models-are-chasing-unrealistic-benchmarks-but-the-working-le"
+}

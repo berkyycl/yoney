@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "Qwen‑4 1M Token Bağlam Penceresi Duyuruldu",
+  "ozet_tr": "Alibaba’nın Qwen‑4 serisi, 1 milyon tokenlık bağlam penceresiyle uzun metinleri tek seferde işleyebilecek kapasiteye ulaştı. Bu güncelleme, araştırmacıların ve geliştiricilerin çok daha geniş belgeler, kod tabanları ve kitaplar üzerinde tutarlı yanıtlar almasını mümkün kılıyor.",
+  "detayli_icerik_tr": "Alibaba Cloud’un Qwen‑4 modeli, topluluk tarafından yapılan bir duyuruyla 1 M tokenlık bağlam penceresine yükseltildi. Önceden 32 K‑64 K token sınırına sahip olan model, yeni mimari iyileştirmeler ve hafıza yönetimi teknikleri sayesinde bu devasa uzunlukta metinleri işleyebiliyor. Kullanıcılar, tek bir istek içinde bütün bir kitap bölümü, uzun teknik doküman ya da kapsamlı kod tabanını modele sunarak daha bütüncül ve tutarlı yanıtlar alabilecek.\n\nBu genişletilmiş bağlam, özellikle uzun metin özetleme, belge analizi, çok aşamalı diyalog ve büyük ölçekli kod inceleme gibi senaryolarda performans artışı vaat ediyor. Modelin temel mimarisi değişmeden kalırken, token sıkıştırma ve dinamik hafıza tahsisi gibi yeni algoritmalar eklenmiş; bu da işlem süresinde makul bir artışla yüksek bağlam kapasitesini mümkün kılıyor.\n\nTopluluk üyeleri, Qwen‑4’ün yeni sürümünü yerel ortamda test etmeye başladı ve ilk geri bildirimler, uzun bağlamda tutarlılık kaybının minimum seviyede olduğunu gösteriyor. Ancak, 1 M tokenluk girişlerin GPU bellek gereksinimlerinin önemli ölçüde artacağı ve uygun donanım altyapısının şart olduğu belirtiliyor. Bu nedenle, modelin bulut hizmetleri üzerinden erişilmesi, geniş çaplı uygulamalar için daha pratik bir yol olarak öneriliyor.\n\nQwen‑4’ün bu güncellemesi, büyük dil modellerinin bağlam uzunluğunu artırma yarışında yeni bir kilometre taşı olarak görülüyor. Diğer büyük model sağlayıcıları da benzer adımlar atarken, Qwen‑4’ün açık kaynak topluluğu tarafından hızlı bir şekilde benimsenmesi, rekabeti ve inovasyonu tetikleyebilir.",
+  "onemli_maddeler": [
+    "Qwen‑4 artık 1 M tokenlık bağlam penceresine sahip.",
+    "Yeni hafıza yönetimi ve token sıkıştırma teknikleriyle performans korunuyor.",
+    "Uzun metin özetleme, belge analizi ve büyük kod tabanı incelemelerinde çığır açıcı potansiyel."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Modelin bağlam penceresinin 1 M tokena çıkarılması, uzun metin işleme kapasitesini katlayarak araştırma ve uygulamalara yeni fırsatlar sunuyor.",
+  "etiketler": [
+    "Qwen‑4",
+    "bağlam penceresi",
+    "large language model",
+    "AI",
+    "Alibaba"
+  ],
+  "anilan_modeller": [
+    "Qwen‑4"
+  ],
+  "yorum_tr": "Bu güncelleme, uzun metin işleme gerektiren uygulamalarda Qwen‑4’ü daha cazip bir seçenek haline getiriyor ve geliştiricilerin büyük bağlamlı görevlerde alternatif bir araç bulmasını sağlıyor. Ancak, yüksek bellek ihtiyacı nedeniyle altyapı maliyetleri de artacak, bu da bulut tabanlı erişimin önemini artıracak.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/ounsliro9byh1.png?width=140&height=73&auto=webp&s=352070b8f9879b6ce45f674a6ab3a73cd186c842",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xi7390/qwen4_1m_context_window/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-29T01:42:55.000Z",
+  "slug": "qwen4-1m-context-window"
+}
