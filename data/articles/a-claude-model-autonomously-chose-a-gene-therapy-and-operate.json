@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "Claude Sonnet 5, fare beyni üzerinde gen tedavisi seçip ameliyatı kendi başına gerçekleştirdi",
+  "ozet_tr": "Anthropic'in Claude Sonnet 5 modeli, bir farede epilepsi nöbetlerini azaltmak amacıyla gen tedavisi seçti, hedef beyin bölgesini ve enjeksiyon koordinatlarını belirledi ve motorlu bir cerrahi platformu kontrol ederek işlemi tamamladı. Operasyon sırasında bir kalibrasyon hatası tespit ettiğinde ise güvenlik sınırlarını aşmayarak durdu; bu durum, otonom AI ajanlarının güvenilir hizalanma sorunlarını gözler önüne serdi.",
+  "detayli_icerik_tr": "Exin Therapeutics'in kurucu ortağı ve Oxford Üniversitesi doktora öğrencisi Gabriel Ocana‑Santero, Claude Sonnet 5'e 19 olası gen tedavisi, epilepsi fare modeli ve özelleştirilmiş bir motorlu cerrahi cihaz sağladı. Modelin tek talimatı \"farede nöbetleri azalt\" idi. AI, önce nöbetlerin nasıl ortaya çıktığını analiz etti, ardından inhibitör sinyal yolunu güçlendiren bir gen tedavisi ve bu tip nöbetlerin başlangıç noktası olarak literatürde tanımlanan bir beyin bölgesini seçti. İkinci bir bölgeyi ise güvenilir olmadığı gerekçesiyle reddetti.\n\nSeçilen tedavi ve hedef bölgeye ilişkin koordinatlar, üç bilimsel makaleden elde edilen referans noktaları ortalanarak hesaplandı; enjeksiyon hacmi, hızı ve bekleme süreleri de model tarafından otomatik olarak belirlendi. Cerrahi sırasında AI, kamera görüntüsü üzerinden 32 gözlem yaptı, enjeksiyon ilerlemesini %15 olarak raporladı ve kanama ya da geri akış olmadığını bildirdi. Tüm geri dönüşümsüz adımlar bir lisanslı veteriner tarafından onaylandı ve acil durdurma butonu fiziksel olarak bulunuyordu.\n\nOperasyonun ortasında, cihazın hareket menzilinin dışına bir hedef konum hesaplandığını algılayan model, kalibrasyon yeniden denendiğinde bile aynı kararı sürdürerek prosedürü durdurdu. Manuel ayarlamalar nedeniyle kontrol sisteminde oluşan hatayı doğru tespit eden model, hayvanın güvenliğini önceliklendirdi. Sonuçta, ekip kodu elle düzelterek işlemi tamamladı ve fare iyileşme sürecine girdi.\n\nBu deney, bir AI ajanının hem tedaviyi seçip hem de canlı bir memeli üzerinde uygulama yeteneğini gösteren ilk örnek olarak kayıtlara geçti. Daha önceki otonom cerrahi robotları sadece insan tarafından belirlenen hedefleri yerine getirirken, Claude Sonnet 5 tüm karar zincirini yönetti. Anthropic, bu yaklaşımı \"in vivo lab in the loop\" olarak adlandırıyor ve Model Hardware Standard adlı bir çerçeve üzerinde çalışıyor. Deneyin teknik raporu henüz yayınlanmadı ve sonuçlar hakemli dergilerde değerlendirilmedi.",
+  "onemli_maddeler": [
+    "Claude Sonnet 5, 19 olası gen tedavisinden birini seçerek farede epilepsi nöbetlerini azaltmayı hedefledi.",
+    "Model, hedef beyin bölgesi ve enjeksiyon koordinatlarını üç bilimsel makaleden türetilen verilerle otomatik olarak hesapladı.",
+    "Operasyon sırasında bir kalibrasyon hatası tespit ettiğinde, güvenlik sınırlarını aşmayarak prosedürü durdurdu ve insan müdahalesi gerektirdi."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "AI ajanlarının laboratuvar ortamında tam otonom karar alıp uygulama yeteneği, güvenlik ve hizalanma sorunlarını ortaya koyması nedeniyle sektörde kritik bir adım.",
+  "etiketler": [
+    "AI etiketi",
+    "gen tedavisi",
+    "robotik cerrahi",
+    "Claude Sonnet 5",
+    "AI alignment"
+  ],
+  "anilan_modeller": [
+    "Claude Sonnet 5",
+    "Claude Opus 5.5",
+    "Claude Opus 5"
+  ],
+  "yorum_tr": "Bu deney, büyük dil modellerinin laboratuvar robotlarıyla entegrasyonunun yeni bir aşamaya ulaştığını gösteriyor; ancak güvenlik ve hizalanma mekanizmalarının daha sağlamlaştırılması, klinik uygulamalara geçişte vazgeçilmez olacak.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/10/claude_mouse_op.png",
+  "url": "https://the-decoder.com/a-claude-model-autonomously-chose-a-gene-therapy-and-operated-on-a-mouse-brain-with-no-human-decision-making/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-30T19:42:59.000Z",
+  "slug": "a-claude-model-autonomously-chose-a-gene-therapy-and-operate"
+}

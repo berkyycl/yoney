@@ -1,0 +1,44 @@
+{
+  "baslik_tr": "MOSS Takımı AMA Düzenliyor: MOSS-Image, MOSS-TTS ve Diğer Modeller Hakkında Sorularınızı Yanıtlayacak",
+  "ozet_tr": "Şanghay merkezli MOSS ekibi, ses, görüntü ve video alanındaki modelleriyle ilgili soruları yanıtlamak üzere bir \"Ask Us Anything\" oturumu düzenliyor. MOSS-Image, MOSS-TTS ve yeni ses‑video senkronizasyon çözümleri gibi ürünlerin detayları ve erişim yolları paylaşılacak.",
+  "detayli_icerik_tr": "MOSS, Fudan Üniversitesi'nden OpenMOSS araştırma ekibi ve Shanghai Innovation Institute'in ortak girişimi olarak, konuşma, ses, görüntü ve video üzerine odaklanan bir model ailesi geliştirdi. Ekip, Reddit'in r/LocalLLaMA topluluğunda bir AMA (Ask Me Anything) etkinliği düzenleyerek, modelleri, araştırma hedefleri ve açık kaynak kaynakları hakkında bilgi vermeyi planlıyor. Etkinlik 30 Ekim'de 8–11 AM PT saatleri arasında gerçekleşecek ve ardından 48 saat boyunca sorulara yanıt verilmeye devam edilecek.\n\nMOSS-Image, 5 Milyar parametreli DiT mimarisi üzerine kurulu bir metin‑görüntü modeli; hem Çince hem İngilizce metinleri işleyebiliyor ve JSON tabanlı yerleşim kontrolü sunuyor. Modelin temel ve SFT ağırlıkları Apache 2.0 lisansı altında sunuluyor ve Hugging Face üzerindeki trend listelerinde üst sıralarda yer alıyor; ComfyUI entegrasyonu 3,7 Milyon indirme sayısına ulaşmış.\n\nSes üretim portföyü MOSS‑TTS serisiyle genişliyor: MOSS‑TTS ses sentezi ve ses klonlaması, MOSS‑TTSD çok konuşmacılı uzun diyalog ve podcast üretimi, MOSS‑TTS‑Realtime akış tabanlı konuşma, MOSS‑TTS‑Nano 100 M parametreli hafif model ve MOSS‑VoiceGenerator metin tanımlamalarıyla ses tasarımı gibi çözümler sunuluyor. Ayrıca MOSS‑SoundEffect metin‑temelli ses efekti üretimi sağlıyor.\n\nSes ve müzik anlama alanında MOSS‑Transcribe‑Diarize konuşma transkripsiyonu, konuşmacı etiketleme ve zaman damgaları, MOSS‑Audio ses ve müzik akıl yürütmesi ve MOSS‑Music şarkı sözleri, enstrümantasyon ve yapı analizi gibi yetenekler bulunuyor. Görüntü‑video anlayışı MOSS‑VL ve MOSS‑VL‑Realtime ile uzun videoların analizi, MOVA ise senkronize ses‑video üretimi sağlıyor. Tüm bu araçlar Hugging Face, GitHub ve kendi web sitesindeki API ve Playground üzerinden erişilebiliyor.",
+  "onemli_maddeler": [
+    "MOSS-Image 5B DiT tabanlı, çok dilli ve JSON yerleşim kontrolü sunan bir text‑to‑image modeli.",
+    "MOSS‑TTS serisi, gerçek zamanlı akış, hafif CPU‑dostu ve ses klonlama gibi çeşitli konuşma üretim seçenekleri içeriyor.",
+    "MOSS‑VL ve MOVA, uzun video analizi ve senkronize ses‑video üretimiyle görsel‑işitsel anlayışı birleştiriyor."
+  ],
+  "kategori": "diger",
+  "onem": 3,
+  "onem_gerekce": "MOSS ekibinin geniş model portföyü ve açık kaynak erişimi topluluk ilgisini çekiyor, ancak yeni bir model duyurusu olmadığı için sektörel etkisi sınırlı.",
+  "etiketler": [
+    "MOSS",
+    "text-to-image",
+    "speech synthesis",
+    "AI research",
+    "AMA"
+  ],
+  "anilan_modeller": [
+    "MOSS-Image",
+    "MOSS-TTS",
+    "MOSS-TTSD",
+    "MOSS-TTS-Realtime",
+    "MOSS-TTS-Nano",
+    "MOSS-VoiceGenerator",
+    "MOSS-SoundEffect",
+    "MOSS-Transcribe-Diarize",
+    "MOSS-Audio",
+    "MOSS-Music",
+    "MOSS-VL",
+    "MOSS-VL-Realtime",
+    "MOVA"
+  ],
+  "yorum_tr": "MOSS ekibinin açık kaynak modelleri ve kapsamlı API desteği, araştırmacı ve geliştiricilerin çok modelli AI projeleri oluşturmasını kolaylaştırıyor; AMA etkinliği ise topluluk etkileşimini artırarak geri bildirim akışını hızlandırabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/88eb2wo0dmyh1.png?width=140&height=78&auto=webp&s=b609506a9ff3ad3f7d335fa11c062e45b51f2173",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xjhpn9/were_moss_the_team_behind_mossimage_mosstts_and/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-30T15:00:55.000Z",
+  "slug": "we-re-moss-the-team-behind-moss-image-moss-tts-and-more-ask"
+}

@@ -1,0 +1,37 @@
+{
+  "baslik_tr": "LocalLLaMa topluluğunun ortak görüşüne genellikle aykırı olan görüşleriniz var mı?",
+  "ozet_tr": "Reddit'in LocalLLaMA topluluğu, açık‑ağırlıklı büyük dil modelleri üzerine yoğun bir tartışma içinde. Kullanıcı, son haftada yaptığı gözlemlerle topluluğun bazı sıralama ve benchmark algılarını sorguluyor ve popüler modellerin aşırı övgüsüne karşı eleştirilerde bulunuyor.",
+  "detayli_icerik_tr": "Reddit kullanıcısı ForsookComparison, LocalLLaMA ve genel olarak açık‑ağırlıklı/self‑hosted topluluğunun LLM'ler hakkındaki tutumlarını eleştiren bir gönderi paylaştı. Kullanıcı, \"Artificial‑Analysis V5 Index\" gibi bazı indekslerin bazı durumlarda anlamsız olduğunu, örneğin Gemini‑Flash'in Qwen3.8‑2.4T'ye göre daha düşük bir puan almasının mantıksız olduğunu belirtiyor. Ayrıca, önceki V4 sürümünde açık‑ağırlıklı modellerin çok yüksek puanlandığını, bu sefer ise bazı \"sevgili\" modellerin aşırı derecede yükseltildiğini savunuyor; GLM 5.3'ün kendi testlerinde Grok rakibi olmadığını vurguluyor.\n\nGönderide, Haiku 5.5'in performansının şaşırtıcı derecede iyi olduğu ve DeepSeek‑V4.1‑Flash‑1017 ile kıyaslandığında hâlâ üstün olduğu iddia ediliyor. Bu görüşe karşı çıkanların, Haiku'yu küçümseyenlerin daha fazla deneme yapması gerektiği ifade ediliyor. Strata Dev adlı geliştiricinin 0.1 sürümünün topluluğu yanlış yönlendirdiği yönündeki algının, aslında geliştiricinin kendi vizyonunu hayata geçirmeye çalışmasından kaynaklandığına dikkat çekiliyor.\n\nBunun yanı sıra, ThreeJS benchmark'inin artık tamamen göz ardı edilmesi gerektiği, çünkü bir modelin pagoda animasyonu yapmadaki başarısı ile genel ya da kodlama görevlerindeki performansı arasında bir korelasyon bulunmadığı savunuluyor. Kullanıcı, bu tür görsel‑odaklı benchmark'lerin topluluk içinde aşırı önem kazandığını ve karar mekanizmalarını yanıltıcı bir şekilde etkilediğini belirtiyor.\n\nSon olarak, yazar topluluğa bu görüşlerden hangileriyle aynı fikirde olduklarını ve kendi aykırı düşüncelerini paylaşmalarını istiyor, böylece daha dengeli bir değerlendirme ortamı oluşturulmasını hedefliyor.",
+  "onemli_maddeler": [
+    "Artificial‑Analysis V5 Index'in bazı sıralamaları mantıksız bulunuyor.",
+    "GLM 5.3 modelinin Grok ile rekabet edebilecek seviyede olmadığı vurgulanıyor.",
+    "Haiku 5.5'in DeepSeek‑V4.1‑Flash‑1017'ye kıyasla üstün olduğu savunuluyor.",
+    "ThreeJS benchmark'inin model performansını ölçmede güvenilir olmadığı belirtiliyor."
+  ],
+  "kategori": "diger",
+  "onem": 2,
+  "onem_gerekce": "Yerel bir topluluk içinde tartışma olması, geniş çaplı sektörel etki yaratmasa da açık‑ağırlıklı model değerlendirmelerinde farkındalık yaratabilir.",
+  "etiketler": [
+    "LLM",
+    "Topluluk",
+    "Benchmark",
+    "Yapay Zeka",
+    "Open-weight"
+  ],
+  "anilan_modeller": [
+    "Gemini Flash",
+    "Qwen3.8-2.4T",
+    "GLM 5.3",
+    "Haiku 5.5",
+    "DeepSeek V4.1 Flash 1017"
+  ],
+  "yorum_tr": "Bu tür topluluk içi eleştiriler, model sıralamaları ve benchmark seçimlerinin daha şeffaf ve çok yönlü değerlendirilmesine katkı sağlayabilir; geliştiriciler ve kullanıcılar, tek bir metrik üzerine aşırı odaklanmadan daha dengeli bir perspektif kazanabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/do-you-have-any-opinions-that-generally-go-against-r-v0-i2oj9tvmcnyh1.png?width=627&format=png&auto=webp&s=93b6dbcbc9878125e7b899fefe8f92d1d2ade5a9",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xjltn3/do_you_have_any_opinions_that_generally_go/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-30T17:32:42.000Z",
+  "slug": "do-you-have-any-opinions-that-generally-go-against-r-localll"
+}
