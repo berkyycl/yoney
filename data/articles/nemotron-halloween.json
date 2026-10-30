@@ -1,0 +1,57 @@
+{
+  "baslik_tr": "NVIDIA Nemotron ile Halloween’da Konuşan Garaj Kapısı: MonsterHouse Projesi",
+  "ozet_tr": "NVIDIA Nemotron Voice Agent ve ilgili açık kaynak modeller kullanılarak tek bir iş istasyonunda çalışan bir interaktif \"MonsterHouse\" oluşturuldu. Model zinciri Nemotron Speech ASR, Bolt E4B 4GB, Magpie TTS Zeroshot ve Audio2Face‑3D gibi bileşenleri birleştirerek ziyaretçilerin sesli komutlarını algılıyor, karakterin huysuz bir korsan sesinde yanıt veriyor ve Unreal Engine 5 içinde animasyonlu bir ağız hareketi sağlıyor.",
+  "detayli_icerik_tr": "Hikayenin temelini NVIDIA Nemotron Voice Agent oluşturuyor; bu altyapı, ses tanıma (Nemotron Speech ASR), metin üretimi (Bolt E4B 4GB) ve metinden sese (Magpie TTS Zeroshot) adımlarını tek bir akışta birleştiriyor. Kullanıcıların konuşması önce ASR ile metne dönüştürülüyor, ardından LoRA adaptörüyle kişilik kazandırılmış Bolt E4B modeli yanıtı üretiyor ve bu metin Magpie TTS tarafından kısa bir referans örnekten türetilen grumpy korsan sesine dönüştürülüyor. Son adımda NVIDIA Audio2Face‑3D, temiz ses sinyalini Unreal Engine 5 içinde oluşturulan 3D karakterin ağzına senkronize ediyor.\n\nProjenin teknik çekirdeği, tek bir RTX PRO 6000 Blackwell Max‑Q ve bir RTX PRO 4000 Blackwell GPU’dan oluşan iş istasyonu. Dil ve ses modelleri RTX 6000’da çalışırken, görselleştirme ve animasyon RTX 4000 üzerinde yürütülüyor; bu sayede bellek sınırlamaları değil, işlem gücü yönetimi ön planda tutuluyor. Model seçimi açısından, Bolt E4B 4GB'in 4‑bit kuantize sürümü tercih edildi; aynı zamanda BF16 checkpoint'i de karşılaştırma amaçlı kullanılabiliyor. Yazar, Qwen‑3 serisi gibi daha büyük modellerle denemeler yapmış ancak daha düşük ayak izi ve yeterli yanıt kalitesi nedeniyle Bolt E4B'yi seçmiş.\n\nSistemin performans ölçümleri, gerçek zamanlı etkileşimin kritik olduğu bir senaryoda iki farklı ölçüt sunuyor. Bolt E4B ve Magpie TTS kombinasyonu ile üretilen yanıtların \"ses‑son‑audio\" gecikmesi ortalama 1.70 s iken, önceden hazırlanmış ve önbelleğe alınmış yanıtlar için bu süre 0.72 s’ye düşüyor. Bu fark, özellikle uzun yanıtların ortasında bile konuşmaya başlanabilmesi sayesinde karakterin daha akıcı ve doğal algılanmasını sağlıyor. Ayrıca, sistem YOLO ve ByteTrack tabanlı bir nesne algılayıcıyla ziyaretçileri sayıp izleyerek Nemotron 3 Nano Omni VLM aracılığıyla kostüm tanıma yeteneği ekliyor.\n\nYazının sonunda geliştiriciye yönelik bir rehber sunuluyor: Nemotron Voice Agent'ı klonlayıp Generic Assistant örneğini çalıştırmak, Bolt E4B'yi beyin modeli olarak eklemek, LoRA adaptörleriyle kişilik eğitmek ve Magpie TTS Zeroshot ile ses oluşturmak. Tüm bu bileşenler Hugging Face ve NVIDIA’nın resmi GitHub sayfalarında erişilebilir durumda, bu da benzer karakter tabanlı projelerin hızlı prototipleme sürecine büyük bir ivme kazandırıyor.",
+  "onemli_maddeler": [
+    "MonsterHouse, NVIDIA Nemotron Voice Agent, Bolt E4B, Magpie TTS ve Audio2Face‑3D gibi açık kaynak modelleri tek bir iş istasyonunda birleştiriyor.",
+    "Bolt E4B 4GB, düşük bellek ayak izi ve yeterli yanıt kalitesi sayesinde tercih edilen küçük LLM olarak öne çıkıyor.",
+    "Gerçek zamanlı yanıt gecikmesi: dinamik yanıtlar için ortalama 1.70 s, önbellekli yanıtlar için 0.72 s.",
+    "Unreal Engine 5 içinde Audio2Face‑3D ile senkronize 3D ağız animasyonu sağlanıyor.",
+    "YOLO ve ByteTrack ile ziyaretçi takibi, Nemotron 3 Nano Omni ile kostüm tanıma entegrasyonu."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 3,
+  "onem_gerekce": "Projede NVIDIA’nın açık kaynak Nemotron modelleri birleştirilerek tek bir iş istasyonunda gerçek zamanlı sesli etkileşim sağlanması, geliştiricilere benzer karakter tabanlı uygulamaları hızlıca hayata geçirme örneği sunuyor.",
+  "etiketler": [
+    "Nemotron",
+    "Voice Agent",
+    "AI karakter",
+    "Unreal Engine",
+    "LoRA"
+  ],
+  "anilan_modeller": [
+    "NVIDIA Nemotron 3.5 Bolt E4B 4GB",
+    "NVIDIA Nemotron Speech ASR",
+    "NVIDIA Magpie TTS Zeroshot",
+    "NVIDIA Audio2Face-3D",
+    "NVIDIA Nemotron 3 Nano Omni"
+  ],
+  "yorum_tr": "Bu proje, açık kaynak Nemotron bileşenlerinin tek bir cihazda bütünleşik bir karakter deneyimi sunabileceğini göstererek, düşük maliyetli ve offline AI etkileşim çözümlerine ilham veriyor. Geliştiriciler benzer pipeline'ları kendi senaryolarına uyarlayarak yaratıcı uygulamalar geliştirebilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Bolt E4B + Magpie TTS",
+      "benchmark": "end-of-speech-to-audio latency (dynamic response)",
+      "skor": 1.7,
+      "birim": "s",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "median end-of-speech-to-audio with Bolt Q4 & TTS = 1.70 seconds"
+    },
+    {
+      "model": "Bolt E4B + Magpie TTS (cached)",
+      "benchmark": "end-of-speech-to-audio latency (cached response)",
+      "skor": 0.72,
+      "birim": "s",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "median end-of-speech-to-audio cached responses = 0.72 seconds"
+    }
+  ],
+  "gorsel_url": "https://cdn-uploads.huggingface.co/production/uploads/6ab2a746c7d0655b3d8dfbb9/fownH6rn05tSp1jDBTz8m.png",
+  "url": "https://huggingface.co/blog/nvidia/nemotron-halloween",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-10-30T17:57:24.000Z",
+  "slug": "nemotron-halloween"
+}

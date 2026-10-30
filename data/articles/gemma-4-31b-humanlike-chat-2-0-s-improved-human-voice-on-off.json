@@ -1,0 +1,109 @@
+{
+  "baslik_tr": "Gemma-4-31B-Humanlike-Chat: 2.0'ın geliştirilmiş insan sesli sohbeti",
+  "ozet_tr": "Yerel LLaMA topluluğu, Google'ın resmi Gemma‑4‑31B modeline insan‑odaklı bir ince ayar uygulayarak Gemma-4-31B-Humanlike-Chat'i yayınladı. Model, kör yargı testinde gerçek kullanıcı yanıtlarını %26 oranında taklit edebildi ve çeşitli araç‑çağırma benchmarklarında %90'ın üzerindeki başarılar elde etti.",
+  "detayli_icerik_tr": "Reddit'te yer alan bir gönderide, daha önce 136 bin kez indirilen Qwen3.8-27B-Humanlike-Chat 2.0 modelinin başarısı üzerine, topluluk üyesi kvyb, aynı ince ayar metodunu Google'ın Gemma‑4‑31B modeline uyguladığını duyurdu. Yeni model, \"humanlike chat\" özelliğiyle, kullanıcıdan açık bir prompt almadan doğal, kısa ve küçük harfli yanıtlar üretiyor; aynı zamanda bir yargıcın gerçek kişi mesajı ile modelin yanıtını karşılaştırdığı testte %26 oranında gerçek kişi gibi algılandı.\n\nBenchmark sonuçları, modelin araç‑çağırma ve tutarsızlık konularında Google'ın orijinal Gemma‑4‑31B'yi geride bıraktığını gösteriyor. When2Call (doğru çağrı, sor, reddet) testinde %66, BFCL irrelevance (uygunsuz araç çağrısı yapmama) testinde %90, BFCL simple (doğru araç ve argüman) testinde %96 gibi puanlar alırken, bilgi ölçütü MMLU‑Pro'da %82,5 ile Google tabanıyla eşit seviyede kaldı. Ayrıca LiveCodeBench (kod üretimi) ve IFEval (talimat takibi) gibi ölçütlerde de %66 ve %90 puanlarıyla belirgin bir üstünlük sağladı.\n\nModelin eğitimi iki aşamalı bir süreçle gerçekleştirildi: İlk aşamada 13 740 satırdan oluşan SFT (Supervised Fine‑Tuning) verisi ve 1 H200 GPU kullanıldı; ikinci aşamada ise insan tercihleriyle yönlendirilen on‑policy distilasyon uygulandı. Bu süreçte model, kendi yanıtlarını yazar, iki öğretmen token‑bazlı olarak puan verir ve gizli bir talimat sayesinde prompt almadan insan gibi sohbet eder. Uzun sohbetlerde tek kelimelik yanıtların %28'den %12'ye düşürülmesi gibi kalite iyileştirmeleri de rapor edildi.\n\nModel, Apache‑2.0 lisansı altında HuggingFace'de çeşitli formatlarda (GGUF, Safetensors, FP8, GPTQ‑Int4) sunuluyor ve vLLM ya da SGLang gibi altyapılarla araç‑çağırma desteği sağlanıyor. Topluluk, bu yeni sürümün deneme amaçlı kullanılmasını ve geri bildirimlerin paylaşılmasını teşvik ediyor.",
+  "onemli_maddeler": [
+    "Kör yargı testinde model, gerçek kişi yanıtını %26 oranında taklit etti.",
+    "When2Call, BFCL irrelevance ve BFCL simple benchmarklarında sırasıyla %66, %90 ve %96 puan alarak Google tabanını geride bıraktı.",
+    "Eğitim iki aşamalı SFT + on‑policy distilasyon ile 13 740 satır veri ve 1 H200 GPU kullanılarak gerçekleştirildi.",
+    "Model, Apache‑2.0 lisansı altında çeşitli formatlarda HuggingFace'de yayınlandı ve vLLM/ SGLang entegrasyonu mevcut."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Google Gemma‑4‑31B üzerine yapılan ince ayar, insan‑odaklı sohbet yeteneği ve araç‑çağırma benchmarklarında belirgin iyileşmeler sunarak topluluk tabanlı LLM geliştirmelerinde önemli bir örnek teşkil ediyor.",
+  "etiketler": [
+    "Gemma",
+    "Humanlike-Chat",
+    "Benchmark",
+    "Fine-tune",
+    "LLM"
+  ],
+  "anilan_modeller": [
+    "Gemma-4-31B-Humanlike-Chat",
+    "Gemma-4-31B",
+    "Qwen3.8-27B-Humanlike-Chat 2.0",
+    "Qwen 2.0"
+  ],
+  "yorum_tr": "Bu ince ayar, açık kaynak topluluklarının büyük modelleri özel kullanım senaryolarına adapte etme kapasitesini gösteriyor; geliştiriciler daha doğal diyaloglar ve güvenilir araç‑çağırma yetenekleri elde ederken, kullanıcılar da daha tutarlı ve insan benzeri etkileşimler yaşayacak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Gemma-4-31B-Humanlike-Chat",
+      "benchmark": "When2Call",
+      "skor": 66,
+      "birim": "",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "greedy decoding",
+      "kaynak_metinden_alinti": "When2Call (call, ask or refuse correctly) 46 66"
+    },
+    {
+      "model": "Gemma-4-31B-Humanlike-Chat",
+      "benchmark": "BFCL irrelevance",
+      "skor": 90,
+      "birim": "",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "greedy decoding",
+      "kaynak_metinden_alinti": "BFCL irrelevance (don't call a tool when none fits) 81 90"
+    },
+    {
+      "model": "Gemma-4-31B-Humanlike-Chat",
+      "benchmark": "BFCL simple",
+      "skor": 96,
+      "birim": "",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "greedy decoding",
+      "kaynak_metinden_alinti": "BFCL simple (right tool, right arguments) 95 96"
+    },
+    {
+      "model": "Gemma-4-31B-Humanlike-Chat",
+      "benchmark": "MMLU-Pro",
+      "skor": 82.5,
+      "birim": "",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "greedy decoding",
+      "kaynak_metinden_alinti": "MMLU-Pro 82.5 82.5 (same)"
+    },
+    {
+      "model": "Gemma-4-31B-Humanlike-Chat",
+      "benchmark": "Humanlike judge (real person)",
+      "skor": 26,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Model Judge thought it was the real person ... Gemma-4-31B-Humanlike-Chat 26%"
+    },
+    {
+      "model": "Gemma-4-31B-Humanlike-Chat",
+      "benchmark": "LiveCodeBench",
+      "skor": 66,
+      "birim": "",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "greedy decoding",
+      "kaynak_metinden_alinti": "LiveCodeBench (code) 51 66"
+    },
+    {
+      "model": "Gemma-4-31B-Humanlike-Chat",
+      "benchmark": "IFEval",
+      "skor": 90,
+      "birim": "",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "greedy decoding",
+      "kaynak_metinden_alinti": "IFEval (instruction following) 83.4 90.0"
+    },
+    {
+      "model": "Gemma-4-31B-Humanlike-Chat",
+      "benchmark": "IFBench",
+      "skor": 45.7,
+      "birim": "",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "greedy decoding",
+      "kaynak_metinden_alinti": "IFBench (harder instruction following) 43.7 45.7"
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/n7sqnni1hlyh1.png?width=140&height=140&crop=1:1,smart&auto=webp&s=985a51f1ddaccfade5fcd07958cb241e476783d2",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xjdjy0/gemma431bhumanlikechat_20s_improved_human_voice/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-30T12:05:50.000Z",
+  "slug": "gemma-4-31b-humanlike-chat-2-0-s-improved-human-voice-on-off"
+}

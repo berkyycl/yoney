@@ -1,0 +1,96 @@
+{
+  "baslik_tr": "Unsloth, DeepSeek-V4.1-Flash-1017 Dynamic V3.1 GGUF'larıyla 7 Benchmark'te Rekor Performans Gösterdi",
+  "ozet_tr": "Unsloth, DeepSeek‑V4.1‑Flash‑1017 Dynamic V3.1 (preview) GGUF modellerini yayınladı ve bu modellerin 7 farklı benchmark'ta önceki GSQ‑RCO GGUF'lara göre %91‑97 arasında %1‑5'lik üstünlük sağladığını duyurdu. AIME25, GPQA‑Diamond, MMLU‑Pro ve LCB gibi ölçütlerde yeni kuantizasyonların hem doğruluk hem de KLD açısından daha iyi sonuçlar verdiği vurgulandı.",
+  "detayli_icerik_tr": "Unsloth, DeepSeek‑V4.1‑Flash‑1017 Dynamic V3.1 (preview) adlı yeni GGUF kuantizasyon setini yayınlayarak, aynı modelin farklı bit derinliklerinde (Q8_K_XL, Q2_K_XL, IQ2_XXS, IQ1_M, IQ1_S) 7 ayrı benchmark'ta ölçülen doğruluk oranlarını paylaştı. Özellikle AIME25 testinde UD‑Q8_K_XL %97.08, UD‑Q2_K_XL %97.50 gibi puanlar elde ederken, rakip GSQ‑RCO IQ1_M sadece %91.88 elde etti. GPQA‑Diamond, MMLU‑Pro ve LCB v6 (32K) gibi diğer ölçütlerde de benzer bir üstünlük gözlemlendi.\n\nBenchmark çalışmaları, her bir testin en az üç kez (AIME25 için 16 kez) tekrarlanıp ortalaması alınarak gerçekleştirildi; bu sayede sonuçların güvenilirliği artırıldı. Unsloth ayrıca Kullandıkları Kullback‑Leibler Divergence (KLD) ölçümünün, kuantize edilmiş modelin 16‑bit referans modele ne kadar yakın olduğunu gösterdiğini belirtti; düşük KLD değerlerinin hem disk alanı tasarrufu hem de doğruluk kaybının minimal olduğunu işaret etti.\n\nModelin donanım gereksinimleri de duyuruldu: 128 GB RAM ya da birleşik bellekli cihazlarda sorunsuz çalışabileceği, 64 GB RAM üzerinde ise engram offloading ile kullanılabileceği belirtildi. Bunun yanı sıra Unsloth Desktop'ta tarayıcı entegrasyonu, otomatik sıkıştırma, yeni bir TTS boru hattı (ses klonlama ve ayrıştırma dahil) ve sandbox gibi yeni özellikler tanıtıldı.\n\nTüm benchmark verileri, metodolojileri ve ek görseller Unsloth blogunda yayımlandı; ilgili blog ve Hugging Face depolarına yönlendiren linkler paylaşıldı. Geliştiriciler ve araştırmacılar, bu yeni GGUF'ları inceleyerek düşük bit kuantizasyonların yüksek doğrulukla nasıl birleştirilebileceği konusunda yeni bir referans noktası elde edecekler.",
+  "onemli_maddeler": [
+    "Unsloth Dynamic V3.1, AIME25 testinde %97.5'e kadar doğruluk elde ederek GSQ‑RCO'nun %91.88'lik skorunu geride bıraktı.",
+    "KLD ölçümünde %0'a yakın değerler elde edilerek kuantize modelin 16‑bit referansa neredeyse eşdeğer olduğu gösterildi.",
+    "Model 128 GB RAM cihazlarda, 64 GB RAM'de ise engram offloading ile çalışabilecek şekilde optimize edildi."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Yeni GGUF kuantizasyonları, düşük bellek tüketimiyle yüksek doğruluk sağlayarak LLM kuantizasyon alanında önemli bir performans sıçraması sunuyor ve mevcut benchmark liderlerini geride bırakıyor.",
+  "etiketler": [
+    "DeepSeek",
+    "Unsloth",
+    "GGUF",
+    "benchmark",
+    "kuantizasyon"
+  ],
+  "anilan_modeller": [
+    "DeepSeek-V4.1-Flash-1017 Dynamic V3.1"
+  ],
+  "yorum_tr": "Bu duyuru, düşük bit kuantizasyonların hâlâ yüksek doğruluk sağlayabileceğini kanıtlayarak geliştiricilere daha hafif ve maliyet etkin modeller sunma fırsatı veriyor; aynı zamanda benchmark sonuçları, sektördeki rekabeti artırarak yeni optimizasyon tekniklerinin araştırılmasını teşvik edecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "UD-Q8_K_XL",
+      "benchmark": "AIME25",
+      "skor": 97.08,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "UD-Q8_K_XL 508.4 97.08 68.94 90.47 88.61 95.10 85.90 87.68 -"
+    },
+    {
+      "model": "UD-Q2_K_XL",
+      "benchmark": "AIME25",
+      "skor": 97.5,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "UD-Q2_K_XL 334.8 97.50 69.89 89.58 88.28 94.92 84.76 87.49 -"
+    },
+    {
+      "model": "GSQ-RCO IQ1_M",
+      "benchmark": "AIME25",
+      "skor": 91.88,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "GSQ-RCO IQ1_M 231.3 91.88 53.60 85.10 85.49 91.77 82.86 81.78 29.78"
+    },
+    {
+      "model": "UD-IQ2_XXS",
+      "benchmark": "GPQA-D",
+      "skor": 88.95,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "UD-IQ2_XXS 300.5 96.88 67.61 88.95 87.53 95.19 83.62 86.63 44.38"
+    },
+    {
+      "model": "GSQ-RCO IQ2_XS",
+      "benchmark": "GPQA-D",
+      "skor": 88.64,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "GSQ-RCO IQ2_XS 265.8 95.00 64.39 88.64 86.62 94.27 84.95 85.64 41.57"
+    },
+    {
+      "model": "UD-IQ1_M",
+      "benchmark": "LCB v6 (32K)",
+      "skor": 85.55,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "UD-IQ1_M 250.4 95.00 62.88 88.38 87.53 95.10 84.38 85.55 42.13"
+    },
+    {
+      "model": "GSQ-RCO IQ1_M",
+      "benchmark": "LCB v6 (32K)",
+      "skor": 81.78,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "GSQ-RCO IQ1_M 231.3 91.88 53.60 85.10 85.49 91.77 82.86 81.78 29.78"
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/v9q24jegzlyh1.png?width=640&crop=smart&auto=webp&s=a1cfbaf01b0e765a97f26346530243ab25be6028",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xjfuqh/introducing_deepseekv41flash1017_dynamic_v31/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-30T13:48:01.000Z",
+  "slug": "introducing-deepseek-v4-1-flash-1017-dynamic-v3-1-unsloth-gg"
+}

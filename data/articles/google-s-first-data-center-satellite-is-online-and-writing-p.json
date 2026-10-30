@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "Google'un ilk veri merkezi uydusu Suncatcher çevrimiçi, şiir yazıyor",
+  "ozet_tr": "Google, Suncatcher adlı prototip uzay veri merkezi uydusunu başarıyla yerleştirdi ve yer istasyonundan gelen ilk komutla önceden yüklenmiş Gemma 4 modelini bir haiku yazdırdı. Uyduda dört TPU bulunmasına rağmen enerji sınırlamaları nedeniyle aynı anda yalnızca bir tanesi yaklaşık yirmi dakika çalışabiliyor.",
+  "detayli_icerik_tr": "Google, bu ay SpaceX Falcon 9 roketiyle 100'den fazla diğer uzay aracının arasında Suncatcher prototipini yörüngeye yerleştirdi. Uyduda dört Google Tensor Processing Unit (TPU) bulunuyor ve 1 kW'a kadar elektrik üretebiliyor; ancak yüksek güç tüketimi nedeniyle bir seferde yalnızca bir TPU yaklaşık 20 dakika çalıştırılabiliyor. Bu sınırlama, uzay‑yer iletişimini zaten karmaşık bir hâle getiriyor.\n\nKomisyon süreci üç hafta sürdü ve tüm alt sistemler test edildi. Yer istasyonundan gönderilen ilk istemle, uydunun önceden yüklenmiş DeepMind Gemma 4 modeli uzay temalı bir haiku üretti: \"Blue marble below / Data streams in silent grace / Starlight feeds my core.\" Şirket, modelin uzay temalı limeriklerle de denendiğini belirtti.\n\nŞu anki test kampanyası, TPU'ların termal stres ve uzay radyasyonu ortamındaki performansını incelemeye odaklanıyor. Radyasyon, bellekte \"bit flip\"lere yol açarak veri bozulmasına neden olabiliyor; bu durum, yer tabanlı testlerde eğitim görevleri için daha kritik görülse de, gerçek uzay koşullarında doğrulama yapılması gerekiyor. Başarılı sonuçlar, 2027'de iki ek uyduyu daha yüksek güç üretimi ve uydu‑arası optik bağlantılarla donatmayı mümkün kılabilir.\n\nGoogle'un Starcloud projesi, uzaydaki veri merkezleri arasında yüksek hızlı lazer bağlantıları kurarak dağıtık iş yüklerini koordine etmeyi hedefliyor. SpaceX'in de benzer bir vizyonu var, ancak uydularının yörüngeleri daha dağınık. Her iki şirket de bu altyapıyı hayata geçirmek için hâlâ geliştirilmekte olan Starship roketine bağımlı. Suncatcher, Alphabet'in AI‑odaklı uzun vadeli stratejisinin bir parçası olarak 2030'lu yıllarda ekonomik bir uzay veri merkezi altyapısı oluşturma amacını taşıyor.",
+  "onemli_maddeler": [
+    "Suncatcher prototipi uzayda aktif bir veri merkezi olarak ilk kez çevrimiçi oldu.",
+    "Uyduda dört TPU bulunmasına rağmen enerji sınırlamaları nedeniyle aynı anda yalnızca bir tanesi çalıştırılabiliyor.",
+    "Önceden yüklenmiş Gemma 4 modeli uzay temalı bir haiku üretti ve uzay‑yer iletişimi test edildi.",
+    "Gelecek yıl iki ek uydu daha yüksek güç ve uydu‑arası optik bağlantılarla gönderilecek."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Uzayda AI‑odaklı veri işleme altyapısının ilk pratik gösterimi, gelecekteki büyük ölçekli uzay‑tabanlı AI hizmetlerinin temelini atıyor.",
+  "etiketler": [
+    "AI",
+    "Uzay",
+    "Satellit",
+    "TPU",
+    "Gemma 4"
+  ],
+  "anilan_modeller": [
+    "Gemma 4"
+  ],
+  "yorum_tr": "Bu deneme, uzayda yüksek performanslı AI işlemcilerinin gerçek ortamda nasıl çalıştığını göstererek hem uzay endüstrisine hem de AI geliştiricilerine yeni bir hesaplama platformu sunabilir. Ancak enerji ve radyasyon sınırlamaları, ölçeklenebilirlik konusunda hâlâ önemli mühendislik zorlukları oluşturuyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://techcrunch.com/wp-content/uploads/2026/10/DSC_0298.jpg?resize=1200,800",
+  "url": "https://techcrunch.com/2026/10/30/googles-first-data-center-satellite-is-online-and-writing-poetry/",
+  "source": "TechCrunch AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-30T17:00:00.000Z",
+  "slug": "google-s-first-data-center-satellite-is-online-and-writing-p"
+}
