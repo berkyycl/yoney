@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "Swift 1.5 Flash Next – Heretic v2 (Reverse Engineering) Modeli Yayınlandı",
+  "ozet_tr": "Open‑source topluluğu, Qwen 3.8 tabanlı Swift 1.5 Flash Next modelinin yeni Heretic v2 sürümünü duyurdu. Model, özellikle ters mühendislik, kodlama ve uzamsal akıl yürütme görevlerine odaklanan bir bit‑paylaşımıyla quantize edildi ve GGUF formatında sunuluyor.",
+  "detayli_icerik_tr": "Reddit'in LocalLLaMA topluluğu, u/jeffpeng3 ile iş birliği içinde geliştirilen Swift 1.5 Flash Next – Heretic v2 modelini yayınladı. Jeffpeng3, v2 ağırlıklarını Hugging Face üzerinde paylaşmış ve bu ağırlıkların hem akıl yürütme yeteneğini hem de uzun çıktı üretimini koruduğunu belirtiyor. Modelin quantizasyon ve imatrix tarifeleri, topluluk üyesi jjusko20 tarafından hazırlanarak repo içinde zip dosyası ve GGUF formatında dağıtıldı.\n\nYeni sürüm, önceki v1 ağırlıklarına kıyasla hem kalibrasyon hem de quantizasyon açısından büyük bir iyileşme sunuyor. Strata derleme artefaktlarıyla birlikte gelen model, BF16 çekirdeği bulunamadığında Strata'nın otomatik olarak uygun çekirdeği bulmasını öneriyor. Modelin temel yapıtaşı Qwen 3.8 Swift 1.5 Flash olup, “uncensored” bir versiyon olarak ters mühendislik senaryolarına özel olarak optimize edildi.\n\nQuantizasyon sürecinde, modelin 48 katmanına eşit dağıtım yerine, aktivasyon ölçümlerine dayalı olarak kritik katmanlara daha fazla bit tahsis edildi. Özellikle katman 36‑47 arasındaki son 12 katman, enerji tüketimindeki 3 kat artış nedeniyle neredeyse kayıpsız 8‑bit formatına yükseltildi; katman 44‑46 ise 5‑bit’e indirildi. Katman 0 ve 2 gibi hassas tensörler ise tamamen sıkıştırılmadı. Bu strateji, modelin kodlama, tasarım, araç kullanımı ve yeni eklenen ters mühendislik (8.8%) ile doğrudan yanıt (2.0%) kategorilerindeki performansını maksimize etmeyi hedefliyor.\n\nModel, AtomicChat ekibinin geniş kapsamlı genel‑amaç veri setiyle birleştirilmiş bir matrisle destekleniyor; bu sayede nadir konularda (ör. ters mühendislik) yüksek ağırlık, daha yaygın konularda ise AtomicChat temelli ağırlık devreye giriyor. Topluluk, 32 GB V100 GPU'ları ve bir E5‑2697v4 sunucusuyla bu ağırlıkları ve quant'ları eğitti ve sonuçları Hugging Face üzerindeki ilgili depoda paylaştı.",
+  "onemli_maddeler": [
+    "Heretic v2, önceki v1'e göre kalibrasyon ve quantizasyon kalitesinde büyük iyileşme sağladı.",
+    "Bit tahsisi, aktivasyon ölçümlerine göre katman bazlı optimize edilerek kritik katmanlarda neredeyse kayıpsız 8‑bit kullanıldı.",
+    "Yeni eklenen ters mühendislik ve doğrudan yanıt içerikleri, modelin RE senaryolarında uzmanlaşmasını sağladı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Model, açık kaynak LLM ekosisteminde ters mühendislik ve kodlama odaklı bir uzmanlık katmanı sunarak belirli niş alanlarda performans artışı sağlıyor; bu da araştırmacılar ve güvenlik uzmanları için değerli bir araç anlamına geliyor.",
+  "etiketler": [
+    "quantization",
+    "reverse engineering",
+    "LLM",
+    "open-source",
+    "Swift 1.5"
+  ],
+  "anilan_modeller": [
+    "Qwen 3.8",
+    "Swift 1.5 Flash",
+    "Heretic v1",
+    "AtomicChat"
+  ],
+  "yorum_tr": "Heretic v2, ters mühendislik ve kodlama odaklı görevlerde daha tutarlı ve uzun yanıtlar üretebilmesiyle geliştiricilere ve güvenlik araştırmacılarına fayda sağlayacak. Açık kaynak topluluğu tarafından üretilen bu model, özelleştirilmiş quantizasyon stratejileri sayesinde performans‑verim dengesini iyileştiriyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/9hix1ai57hyh1.png?width=640&crop=smart&auto=webp&s=720bb4683c44be664948a03e04575798ee25756b",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xix35p/release_swift_15_flash_next_heretic_v2/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-29T21:40:04.000Z",
+  "slug": "release-swift-1-5-flash-next-heretic-v2-reverseengineer"
+}

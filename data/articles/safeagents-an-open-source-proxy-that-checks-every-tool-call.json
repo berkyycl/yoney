@@ -1,0 +1,39 @@
+{
+  "baslik_tr": "SafeAgents: Kodlama ajanlarının araç çağrılarını önceden kontrol eden açık kaynak proxy",
+  "ozet_tr": "SafeAgents, kodlama ajanları ile model sunucusu arasına yerleştirilen hafif bir yerel proxy olarak, her araç çağrısını çalıştırmadan önce tarar ve potansiyel tehlikeli istekleri engeller. Kullanıcılar, ajanlarının temel URL'sini bu proxy'ye yönlendirerek, kod yürütme, ağ geçidi atlatma ve ödül manipülasyonu gibi riskli davranışları anında durdurabilir.",
+  "detayli_icerik_tr": "SafeAgents, bir kodlama ajanı ile OpenAI‑uyumlu model sunucusu arasında çalışan bir yerel proxy katmanı sunuyor. Modelin yanıtındaki her araç çağrısı, harness (araç yöneticisi) tarafından alınmadan önce üç aşamalı bir kontrol sürecinden geçiyor. İlk iki kontrol, çağrının harness tarafından tanımlanıp tanımlanmadığını ve hedef hostun sohbet içinde daha önce görülüp görülmediğini doğruluyor; modelin kendi ürettiği bir URL bile engellenebiliyor.\n\nÜçüncü aşama, \"atif-scan\" adlı bir tarayıcı tarafından yürütülen yaklaşık 110 deterministik dedektörü içeriyor. Bu dedektörler, sandbox yan kanal saldırıları, proxy ve ağ atlatma girişimleri, namespace kaçışları ve ödül hileleri gibi tehditleri tespit ediyor. Şüpheli bir çağrı tespit edildiğinde, proxy bu çağrıyı kısa bir metin bildirimiyle değiştiriyor ve harness'e sadece düz metin yanıtı gönderiyor; böylece hiçbir kod çalıştırılmıyor.\n\nİsteğe bağlı olarak, bir yargı modeli (judge model) de devreye alınabiliyor. Bu model, OpenAI‑uyumlu herhangi bir sunucu – hatta yerel bir llama.cpp örneği – olabilir ve sadece bulgulara göre \"allow\" ya da \"block\" kararını JSON formatında veriyor. Yargı modeli yalnızca zaten bir bulgu üreten çağrılar için çalıştırılıyor, bu da ek ağ trafiğini ve işlem süresini minimuma indiriyor. Proxy, OpenAI Chat Completions ve Anthropic Messages protokollerini, akışlı (streamed) ya da akışsız (non‑streamed) biçimlerde destekliyor; metin akışı geldiği gibi iletilirken, araç çağrısı argümanları tamamlanana kadar bekletiliyor.\n\nSafeAgents, M‑serisi Mac'lerde her çağrı için yaklaşık 10‑20 ms ek gecikme ekliyor ve \"--log-only\" modu sayesinde ilk etapta tüm çağrılar kaydedilip hiçbir şey engellenmiyor; bu mod, sistem yöneticilerine modelin kaçak davranışlarını ölçme imkanı tanıyor. Güvenilen hostlar \"--allow-host\" parametresiyle eklenebiliyor ve proje, 12 farklı harness için kurulum rehberleri sunuyor. CI ortamında test edilen altı harness (pi, Claude Code, OpenCode, Qwen Code, OpenHands, DeepSeek Harness) sayesinde, proxy'nin gerçek zamanlı olarak engellediği ve geçerli çağrıları doğru bir şekilde yönlendirdiği kanıtlanmış durumda. Gelecek planları arasında, kötü niyetli araç çağrılarını daha iyi sınıflandıracak ince ayarlı bir karar modeli ve bu model için halka açık bir benchmark oluşturulması yer alıyor.",
+  "onemli_maddeler": [
+    "SafeAgents, kodlama ajanlarının araç çağrılarını üç aşamalı kontrolle engelleyerek güvenli kod yürütmesini sağlar.",
+    "110'den fazla deterministik dedektör, sandbox yan kanallarından ağ atlatmalarına ve ödül hilelerine kadar geniş bir tehdit yelpazesini tespit eder.",
+    "\"--log-only\" modu, modelin kaçak davranışlarını izlemek ve raporlamak için risk almadan kullanılabilir."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Araç çağrılarının güvenliğini otomatikleştirerek LLM tabanlı kodlama asistanlarının istenmeyen yan etkilerini önlemesi, geliştiriciler ve kurumlar için kritik bir güvenlik katmanı oluşturur.",
+  "etiketler": [
+    "safety",
+    "proxy",
+    "coding-agent",
+    "open-source",
+    "tool-call"
+  ],
+  "anilan_modeller": [
+    "OpenAI-compatible server",
+    "llama.cpp",
+    "Claude Code",
+    "OpenCode",
+    "Qwen Code",
+    "OpenHands",
+    "DeepSeek Harness",
+    "Anthropic Messages"
+  ],
+  "yorum_tr": "SafeAgents, kodlama ajanlarının dış dünyaya yapabileceği tehlikeli çağrıları önceden filtreleyerek güvenlik risklerini büyük ölçüde azaltıyor; bu, özellikle üretim ortamlarında LLM entegrasyonlarını daha güvenli hale getirecek bir adım.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/kmj5h3j8ceyh1.gif?width=640&crop=smart&s=33e1103ef7ff4d70679870637075a50c10b5573e",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xii45s/safeagents_an_opensource_proxy_that_checks_every/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-29T12:05:14.000Z",
+  "slug": "safeagents-an-open-source-proxy-that-checks-every-tool-call"
+}

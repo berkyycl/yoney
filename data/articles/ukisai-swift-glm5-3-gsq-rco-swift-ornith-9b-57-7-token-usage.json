@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "UkisAI Swift GLM5.3-Flash ve Swift Ornith 9B modelleri token kullanımını %57.7 azalttı, %1'in altında doğruluk kaybı",
+  "ozet_tr": "UkisAI, topluluk talebi üzerine Swift model serisini iki yeni sürümle genişletti: Swift1.5 GLM‑5.3‑Flash ve Swift1.5 Ornith‑9B. Her iki model de düşünme token'larını %61‑%33 arasında azaltarak, doğrulukta %0.5'in altında kayıp yaşattı ve aşırı döngüleri iki kat azalttı.",
+  "detayli_icerik_tr": "UkisAI ekibi, topluluk tarafından talep edilen iki yeni Swift modelini duyurdu. Swift1.5 GLM‑5.3‑Flash, MMLU‑PRO testinde düşünme token'larını %61,4 oranında düşürürken, tüm benchmarklarda ortalama %0,46 doğruluk kaybı yaşadı. Model, Terminal‑Bench 2.1, DeepSWE v1.1, GPQA‑Diamond, MMLU‑Pro, C‑Eval, IFBench, AIME 2026, HMMT ve LiveCodeBench v6 gibi farklı tohumlarla yapılan beş kat test setinde değerlendirildi.\n\nModelin verimliliği, \"patolojik aşırı düşünme\" token'larını tespit edip cezalandırma ve ardından RL ile on‑policy distilasyonu yoluyla yeniden eğitilmesiyle sağlandı. Bu süreç, modelin daha az mantık uzunluğuna uyum sağlamasını ve aynı zamanda doğruluk seviyesini korumasını mümkün kıldı. Swift1.5 GLM‑5.3‑Flash için 1‑bit‑8‑bit GGUF, W4A16AWQ ve NVFP4 gibi çeşitli kuantizasyon seçenekleri sunuluyor ve HuggingFace üzerinden indirilebilir.\n\nSwift1.5 Ornith‑9B ise düşünme token'larını %33,5 oranında azaltıyor ve doğrulukta hiçbir kayıp rapor etmiyor. En dikkat çekici özelliği, aşırı düşünme döngülerinin iki kat azalması; bu sayede model, verilen istemi tamamlamada daha az takılıyor. Ornith‑9B için 4‑bit‑8‑bit GGUF kuantizasyonları sağlanmış ve aynı platformda erişime açılmış.\n\nUkisAI, topluluğa hangi modellerin daha fazla mantıksal verimlilik kazanması gerektiği ve ek kuantizasyon talepleri konusunda geri bildirim istemeye devam ediyor. Ayrıca, Swift DeepSeek v4.1 Flash 1017 modelinin şu anda en iyi performans gösterdiği ve 1B ile 4B ölçekli temel modellerin Kasım 2026'da yayınlanacağı duyuruldu.",
+  "onemli_maddeler": [
+    "Swift1.5 GLM‑5.3‑Flash, düşünme token'larını %61,4 azaltırken sadece %0,46 doğruluk kaybı yaşadı.",
+    "Swift1.5 Ornith‑9B, token kullanımını %33,5 düşürürken doğrulukta %0 kayıp ve döngü süresinde %50 azalma sağladı.",
+    "Her iki model de çeşitli kuantizasyon formatları (1‑bit‑8‑bit GGUF, W4A16AWQ, NVFP4, 4‑bit‑8‑bit) ile sunuluyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Topluluk odaklı iki yeni modelin token verimliliğinde büyük iyileşme sunması, düşük VRAM gereksinimi ve açık kuantizasyon seçenekleriyle geniş kullanıcı kitlesine hitap etmesi sektörde önemli bir güncelleme olarak değerlendiriliyor.",
+  "etiketler": [
+    "Swift",
+    "GLM-5.3",
+    "Ornith-9B",
+    "token efficiency",
+    "benchmark"
+  ],
+  "anilan_modeller": [
+    "Swift1.5 GLM-5.3-Flash",
+    "Swift1.5 Ornith-9B"
+  ],
+  "yorum_tr": "Bu modeller, özellikle sınırlı donanım kaynaklarına sahip araştırmacılar ve geliştiriciler için mantıksal verimliliği artırarak maliyetleri düşürme potansiyeli taşıyor. Doğruluk kaybının çok düşük seviyelerde kalması, performans‑verimlilik dengesini koruyan bir yaklaşım olduğunu gösteriyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/YW8zYWJ3N3g4Z3loMURF1fAZrMVF_83ub8oV3G0h1GsMXwPxs4jPTJ0yKWHH.png?width=640&crop=smart&auto=webp&s=dc5c4c9af14c62348baa962b572358330e66b587",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xisqge/ukisai_swift_glm53_gsqrco_swift_ornith_9b_577/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-29T18:54:31.000Z",
+  "slug": "ukisai-swift-glm5-3-gsq-rco-swift-ornith-9b-57-7-token-usage"
+}
