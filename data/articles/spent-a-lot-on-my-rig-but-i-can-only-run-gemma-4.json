@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "Çok para harcadım ama sadece Gemma 4 çalıştırabiliyorum",
+  "ozet_tr": "Reddit'te bir kullanıcı, yüksek maliyetli bir donanım kurulumuna rağmen yalnızca Gemma 4 modelini çalıştırabildiğini belirterek hayal kırıklığını dile getirdi. Kullanıcı, Google'ın 1 kW güç tüketen ve sadece 20 dakika çalışabilen bir TPU'lu uydu projesine de değinerek, Qwen 3.8 27B gibi daha büyük modelleri denemeyi önerdi.",
+  "detayli_icerik_tr": "Yerel LLaMA topluluğunda paylaşılan bir gönderide, /u/Frail_Waif adlı kullanıcı, yüksek bütçeli bir AI rig'i kurduğunu ancak bu sistemde sadece Google DeepMind'in açık kaynaklı Gemma 4 modelini çalıştırabildiğini ifade etti. Kullanıcı, harcadığı paranın karşılığını alamadığını ve daha büyük modellerin çalıştırılamadığını vurguladı.\n\nGönderide, Google'ın uzayda büyük ölçekli çıkarım iş yüklerini yürütmek amacıyla geliştirdiği, dört Tensor Processing Unit (TPU) barındıran ve saat başına 1 kW enerji tüketen bir uydu projesine de atıfta bulunuldu. TechCrunch'tan alınan alıntıya göre, bu uydu yalnızca bir TPU'yu aynı anda yaklaşık 20 dakika çalıştırabiliyor, bu da uzay‑yer iletişimi ve enerji yönetimi açısından zorlu bir durum yaratıyor.\n\nKullanıcı, Google'ın bu sınırlı enerji tüketimi ve kısa çalışma süresi sorununu aşmak için alternatif model önerileri sundu. Özellikle, Alibaba'nın Qwen 3.8 27B modeli, daha yüksek parametre sayısı ve performans potansiyeliyle dikkat çekiyor ve benzer donanımda daha verimli çalışabilir.\n\nTopluluk üyeleri, bu tür donanım‑model uyumsuzluklarının AI araştırma ve geliştirme süreçlerinde sıkça karşılaşılan bir sorun olduğunu belirterek, daha düşük güç tüketimli çipler, model sıkıştırma teknikleri ve bulut tabanlı çıkarım hizmetlerinin değerlendirilmesi gerektiğini önerdi.",
+  "onemli_maddeler": [
+    "Yüksek maliyetli AI rig'inde sadece Gemma 4 çalıştırılabiliyor.",
+    "Google'ın 1 kW güç tüketen, 20 dakika sınırlı çalışma süresi olan TPU uydu projesi.",
+    "Kullanıcı, Qwen 3.8 27B gibi daha büyük modelleri denemeyi öneriyor.",
+    "Topluluk, donanım‑model uyumluluğu ve enerji verimliliği konularında çözüm arayışında."
+  ],
+  "kategori": "diger",
+  "onem": 2,
+  "onem_gerekce": "Konu, sınırlı bir Reddit topluluk tartışması olup, sektörel ölçekte geniş bir etki yaratmıyor; somut benchmark ya da yeni ürün duyurusu içermiyor.",
+  "etiketler": [
+    "Gemma",
+    "TPU",
+    "Google",
+    "satellite",
+    "AI hardware"
+  ],
+  "anilan_modeller": [
+    "Gemma 4",
+    "Qwen 3.8 27B"
+  ],
+  "yorum_tr": "Bu tür geribildirimler, donanım yatırımının model seçimiyle uyumlu planlanması gerektiğini hatırlatıyor; geliştiriciler, enerji verimliliği ve model boyutu arasındaki dengeyi yeniden gözden geçirmeli.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://miro.medium.com/v2/resize:fit:1200/1*-clSjTvfOU6v5IVtXkVFyw.png",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xkcyn6/spent_a_lot_on_my_rig_but_i_can_only_run_gemma_4/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-31T15:22:08.000Z",
+  "slug": "spent-a-lot-on-my-rig-but-i-can-only-run-gemma-4"
+}

@@ -1,0 +1,36 @@
+{
+  "baslik_tr": "Anthropic, dört eski Claude modeline su işareti ekledi; iki modelde ayar değişikliğiyle su işareti atlatılabiliyor",
+  "ozet_tr": "Anthropic, Claude Mythos 5, Claude Opus 4.7, Claude Opus 4.6 ve Claude Sonnet 4.6 modellerine metin su işareti (watermark) ekledi. Ancak Opus 4.6 ve Sonnet 4.6’da su işareti yalnızca temperature, top_p ve top_k parametreleri varsayılan bırakıldığında aktif oluyor; bu parametrelerden birini değiştirerek işaretten kaçınmak mümkün.",
+  "detayli_icerik_tr": "Anthropic, EU AI Act'in Aralık 2026 tarihli uyumluluk süresine yetişmek amacıyla dört Claude modeline yeni bir metin su işareti (watermark) uygulamaya başladı. Claude Mythos 5, Claude Opus 4.7, Claude Opus 4.6 ve Claude Sonnet 4.6 modelleri artık bu gizli desenle üretilen çıktılara sahip olacak. Daha yeni model Claude Opus 5.5 gibi modeller ise su işaretini ilk sürümünden itibaren taşıyor ve Amazon Bedrock üzerindeki dağıtımı birkaç gün gecikebilir.\n\nSu işareti, kelime seçiminde “görünmez bir desen” oluşturacak şekilde rastgelelik parametrelerini (temperature, top_p, top_k) hafifçe değiştiriyor; metnin anlamı, kalitesi ve okunabilirliği etkilenmiyor, ek token ya da maliyet artışı yok, yanıt süresi de çok az yavaşlıyor. Anthropic, bu desenin kullanıcı, organizasyon ya da sohbet içeriği hakkında bilgi içermediğini vurguluyor.\n\nÖzellikle Claude Opus 4.6 ve Claude Sonnet 4.6 modellerinde su işaretinin yalnızca varsayılan sampling ayarlarıyla aktif olduğu belirtildi. Geliştiriciler bu üç parametreden birini bile farklı bir değere ayarladıklarında su işaretini devre dışı bırakabiliyor. Anthropic, e‑posta bildiriminde bu durumun yalnızca iki eski model için geçerli olduğunu ve Mythos 5 ile Opus 4.7'de ayar bağımsız olarak su işaretinin uygulanacağını ima ediyor. Opus 4.6 hâlâ Anthropic'in en iyi yazı modeli olarak kabul ediliyor ve su işareti atlatma imkanı, bu modelin kullanımını etkileyebilir.\n\nŞirket, su işaretini doğrulamak için hâlihazırda özel bir tespit API'si sunuyor ve bu API şu anda özel ön izleme aşamasında. Su işareti, model seviyesinde gömülü olduğu için AWS, Google Cloud ve Microsoft Foundry gibi tüm bulut platformlarında aynı şekilde çalışıyor ve müşteriler tarafından kapatılamıyor. Anthropic, Google DeepMind'in SynthID metin yönteminin bir varyantını kullanıyor; OpenAI ise Ekim 2026'da EU kullanıcıları için varsayılan olarak çalışan textGrain adlı bir su işareti sistemi tanıttı. Bu gelişmeler, su işaretinin metin kalitesine etkisi ve çoklu su işareti katmanlarının yasal riskleri konusunda tartışmaları da beraberinde getiriyor.",
+  "onemli_maddeler": [
+    "Anthropic, Claude Mythos 5, Opus 4.7, Opus 4.6 ve Sonnet 4.6 modellerine yeni bir metin su işareti ekledi.",
+    "Opus 4.6 ve Sonnet 4.6’da su işareti yalnızca temperature, top_p ve top_k varsayılan bırakıldığında aktif; bir parametre değiştirildiğinde işaret atlatılabiliyor.",
+    "Su işareti, EU AI Act uyumluluğu için zorunlu hâle getirildi ve model seviyesinde gömülü olduğu için tüm bulut platformlarında devre dışı bırakılamıyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "EU AI Act uyumluluğu ve büyük bir kullanıcı kitlesinin model çıktılarının izlenebilirliği, hem geliştiricileri hem de son kullanıcıları doğrudan etkileyen kritik bir güncellemedir.",
+  "etiketler": [
+    "Anthropic",
+    "Claude",
+    "watermark",
+    "EU AI Act",
+    "AI compliance"
+  ],
+  "anilan_modeller": [
+    "Claude Mythos 5",
+    "Claude Opus 4.7",
+    "Claude Opus 4.6",
+    "Claude Sonnet 4.6",
+    "Claude Opus 5.5"
+  ],
+  "yorum_tr": "Su işareti uygulaması, Anthropic'in yasal düzenlemelere hızlı yanıt vermesini sağlarken, geliştiricilerin varsayılan ayarları korumaları gerektiğini hatırlatıyor; aynı zamanda su işareti atlatma imkanı, model kalitesi ve güvenilirliği konularında yeni tartışmalar doğurabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/08/Claude-Watermark.png",
+  "url": "https://the-decoder.com/anthropics-watermark-rollout-leaves-a-loophole-on-two-older-claude-models/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-31T19:20:55.000Z",
+  "slug": "anthropic-s-watermark-rollout-leaves-a-loophole-on-two-older"
+}

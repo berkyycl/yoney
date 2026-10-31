@@ -1,0 +1,92 @@
+{
+  "baslik_tr": "QEngine 1.3.1, 2x RTX 5090’da Qwen3.8-Flash-Next’i Tek Akışta %1.5‑1.9 Kat Hızlandırıyor",
+  "ozet_tr": "QEngine 1.3.1, iki adet RTX 5090 ve Threadripper PRO 3975WX üzerine kurulan test ortamında, Qwen3.8‑Flash‑Next modelinin tek‑akış decode performansını %1.5‑1.9 oranında Strata’dan daha hızlı gösterdi. KV‑cache’in RAM‑moduna alınması, uzun süreli boş oturumlarda yanıt gecikmesini önemli ölçüde düşürürken, kod üretim kalitesi ise rakip GGUF kuantumlarıyla eşdeğer seviyede bulundu.",
+  "detayli_icerik_tr": "Reddit topluluğu üyesi Relative‑Ant‑9249, QEngine'in (bpx03) v1.3.1 sürümünü RTX 5090 GPU’ları için yeniden derleyerek Qwen3.8‑Flash‑Next modelini dört farklı motor üzerinden çalıştırdı. Test ortamı 2× RTX 5090 (32 GB VRAM), Threadripper PRO 3975WX ve 251 GB RAM'den oluşuyordu; model 262 K token uzunluğunda bir bağlamı destekledi. QEngine, INT4 AutoRound kuantumu ve \"sm_120\" CUDA mimarisi hedefiyle derlendi ve 53 saniyelik bir başlatma süresiyle hizmet vermeye başladı.\n\nPerformans ölçümleri, aynı betik ve istemleri kullanan \"club‑3090 bench.sh\" aracılığıyla yapıldı. Tek‑akış decode hızları QEngine 1.3.1 (VRAM‑mod) için 370 tok/s (narratif) ve 439 tok/s (kod) iken, RAM‑modda 406 / 504 tok/s olarak kaydedildi. Bu değerler, Strata ISTA IQ3_S'in 214 / 293 tok/s ve Strata UD‑IQ4_XS'in 180 / 239 tok/s performansının yaklaşık 1.4‑1.9 katı ve bucko vLLM fast‑256k (tuned) sürümünün üç katı seviyesinde. Prefill hızı 10 K bağlamda QEngine için ~5.7 K tok/s, 90 K bağlamda ise ~7.3 K tok/s olarak ölçüldü; Strata ise 90 K’da daha yüksek bir artış gösterdi.\n\nAraç‑kullanım senaryolarında (12‑tur, 35 K bağlam) QEngine 1.3.1'in yanıt süresi 1.75 s iken, Strata IQ4_XS 1.7‑1.9 s, ThinkingCap 27B dual‑fast 2.07 s ve bucko 4.36 s olarak kaydedildi; bu da QEngine ve Strata’nın benzer seviyede, diğer motorlardan iki kat daha hızlı olduğunu gösteriyor. KV‑cache RAM‑modu, 8 uzun sohbet oturumunda 1.56‑2.01 s içinde ısıtılmış yanıtlar sağlarken, VRAM‑modunda yalnızca 2 oturum ısıtılmış kaldı ve diğerleri soğuk başlangıç süresi (8.7‑9.4 s) ile karşılaştı.\n\nKalite ve kararlılık açısından QEngine, 44‑görevli asistan testinde %100 başarı (44/44) elde ederken, Strata benzer testlerde 42/44 başarı gösterdi. Kod üretim testinde QEngine 26/30 puan alarak Strata’nın 24‑26 aralığına eşdeğer bir performans sergiledi. Sonuç olarak, QEngine 1.3.1, tek‑akış decode’da en hızlı Flash‑Next motoru, uzun boş oturumlarda KV‑cache RAM‑modu sayesinde pratik bir avantaj ve kod kalitesinde rakipleriyle eşdeğer bir seviyeye sahip olarak öne çıkıyor. Tek dezavantajları, sınırlı VRAM tüketimi, kaynak kodundan derleme gereksinimi ve vLLM ya da Strata kadar uzun çalışma geçmişine sahip olmaması.",
+  "onemli_maddeler": [
+    "QEngine 1.3.1, RTX 5090 çiftliğinde tek‑akış decode hızını 370‑504 tok/s arasında sağlayarak Strata’dan %1.5‑1.9 daha hızlı çalışıyor.",
+    "KV‑cache RAM‑modu, uzun süreli boş oturumlarda yanıt gecikmesini 1.5‑2 s’ye düşürerek VRAM‑moduna göre büyük bir verimlilik kazancı sunuyor.",
+    "Kod üretim kalitesi QEngine’in INT4 AutoRound kuantumu ile Strata’nın GGUF kuantumlarıyla eşdeğer seviyede, 44‑görevli asistan testinde %100 başarı elde edildi."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Tek‑akış decode ve araç‑kullanım senaryolarında QEngine’in rakip motorlara göre belirgin performans üstünlüğü, yeni nesil RTX 5090 donanımının sınırlarını zorlaması ve KV‑cache yönetimindeki yenilik sektördeki optimizasyon çalışmalarını yönlendirecek nitelikte.",
+  "etiketler": [
+    "Qwen3.8",
+    "QEngine",
+    "RTX 5090",
+    "decode",
+    "benchmark"
+  ],
+  "anilan_modeller": [
+    "QEngine 1.3.1",
+    "Strata ISTA IQ3_S",
+    "Strata UD-IQ4_XS",
+    "bucko vLLM fast-256k",
+    "bucko vLLM ple",
+    "Infernix"
+  ],
+  "yorum_tr": "QEngine’in bu performans sıçraması, yüksek‑bant genişliğine sahip GPU’larda LLM servislerinin maliyet ve gecikme açısından daha verimli hale gelmesini sağlayabilir; geliştiriciler, kaynak‑koddan derleme adımını kabul ettikçe, daha geniş bir ekosistemde benzer optimizasyonları uygulama fırsatı bulacak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "QEngine 1.3.1 (KV in VRAM)",
+      "benchmark": "single-stream decode (narrative)",
+      "skor": 370,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "single-stream",
+      "kaynak_metinden_alinti": "QEngine 1.3.1 (KV in VRAM, default) 370 / 439"
+    },
+    {
+      "model": "QEngine 1.3.1 (KV in VRAM)",
+      "benchmark": "single-stream decode (code)",
+      "skor": 439,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "single-stream",
+      "kaynak_metinden_alinti": "QEngine 1.3.1 (KV in VRAM, default) 370 / 439"
+    },
+    {
+      "model": "QEngine 1.3.1 (FLASH_KV=ram)",
+      "benchmark": "single-stream decode (narrative)",
+      "skor": 406,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "single-stream",
+      "kaynak_metinden_alinti": "QEngine 1.3.1 (FLASH_KV=ram) 406 / 504"
+    },
+    {
+      "model": "QEngine 1.3.1 (FLASH_KV=ram)",
+      "benchmark": "single-stream decode (code)",
+      "skor": 504,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "single-stream",
+      "kaynak_metinden_alinti": "QEngine 1.3.1 (FLASH_KV=ram) 406 / 504"
+    },
+    {
+      "model": "Strata ISTA IQ3_S",
+      "benchmark": "single-stream decode (narrative)",
+      "skor": 214,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "single-stream",
+      "kaynak_metinden_alinti": "Strata ISTA IQ3_S 214 / 293"
+    },
+    {
+      "model": "QEngine 1.3.1",
+      "benchmark": "12-turn tool-use latency",
+      "skor": 1.75,
+      "birim": "s",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "12-turn tool-use",
+      "kaynak_metinden_alinti": "QEngine 1.3.1: 1.75 s"
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/1v9476r28pyh1.png?width=640&crop=smart&auto=webp&s=3bc9214ecdc9317ea612a3ae946da4c15dcad8d1",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xjx0ez/qwen38flashnext_on_2x_rtx_5090_with_504_toks/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-31T01:09:03.000Z",
+  "slug": "qwen3-8-flash-next-on-2x-rtx-5090-with-504-tok-s-decode-qeng"
+}

@@ -1,0 +1,80 @@
+{
+  "baslik_tr": "Betelgeuse, Qwen 3.8 Flash Next IQ4_XS'i 2x8GB DDR4'de 24 tok/s hızla çalıştırdı, tek kanalda %50 artış",
+  "ozet_tr": "Betelgeuse motoru, Qwen 3.8 Flash Next modelinin IQ4_XS (4‑bit) kuantizasyonunu RTX 3060 12 GB GPU ve 16 GB toplam sistem RAM üzerinde test etti. Tek kanallı 16 GB DDR4 konfigürasyonunda 14 tok/s elde edilirken, çift kanallı 2 × 8 GB DDR4'ye geçildiğinde performans 24 tok/s'ye yükseldi. Bu artış, Betelgeuse'un özel host RAM victim cache ve async DMA mimarisinin bant genişliği avantajlarından kaynaklanıyor.",
+  "detayli_icerik_tr": "Betelgeuse ekibi, önceki bir tartışmada IQ2_XS kuantizasyonunun 22 tok/s performansını gösterdiği, ancak 4‑bit IQ4_XS kuantizasyonunun daha büyük uzman (expert) ağı nedeniyle aynı donanımda nasıl bir sonuç vereceği sorulmuştu. Bu soruya yanıt olarak, oracle + victim‑cache DMA yolunu yükselttiler ve IQ4_XS (100 GB+ sınıfı, tam 4‑bit uzmanlar) paketleyerek aynı RTX 3060 12 GB kartı iki farklı RAM konfigürasyonunda test ettiler.\n\nTest ortamı iki şekilde yapılandırıldı: A) Tek kanallı 1 × 16 GB DDR4 (yaklaşık 19 GB/s host bant genişliği) ve B) Çift kanallı 2 × 8 GB DDR4 (yaklaşık 38 GB/s host bant genişliği). Her iki senaryoda da toplam sistem RAM 16 GB olarak sabit tutuldu. Ölçülen sonuçlar, IQ4_XS kuantizasyonu için tek kanalda ~14 tok/s, çift kanalda ise 24 tok/s token işleme hızı sağlandığını gösterdi. Betelgeuse, bu süreçte %100 byte‑exact uyumluluğu korudu.\n\nKarşılaştırma açısından, aynı donanımda Stock llama.cpp Strata (--low‑ram) sürümü tek kanalda ~0.5 tok/s, çift kanalda ~0.6 tok/s gibi çok düşük performans sergiledi. IQ2_XS (GSQ‑RCO) tek kanalda 22.03 tok/s (48 tok/s patlamalı) ve Q8_K_XL (8‑bit) ise tek kanalda OOM hatası verip <0.1 tok/s performans gösterdi; ancak soğuk ve sıcak durumlarda sırasıyla 8 tok/s ve 12 tok/s elde edildi.\n\nBetelgeuse'un başarısının temelinde, VRAM slot havuzu ile NVMe sürücü arasında çalışan Exclusive Host RAM Victim Cache ve Async Hardware DMA (MOE_DMA=1) bulunuyor. Tek kanallı DDR4'de sınırlı bellek bant genişliği nedeniyle CPU ve PCIe H2D DMA motoru aynı 64‑bit kanalını paylaşırken, çift kanallı yapı bant genişliğini iki katına çıkararak GPU'nun DMA motorunun victim‑cache hit'lerini tam hızda çekmesini sağladı. Geliştiriciler, bu mimariyi DeepSeek V4.1 Flash modeline de taşıyarak benzer donanımda ~25 tok/s hedefliyor.",
+  "onemli_maddeler": [
+    "Betelgeuse, IQ4_XS (4‑bit) kuantizasyonunda tek kanallı DDR4'de 14 tok/s, çift kanallı DDR4'de 24 tok/s performans elde etti.",
+    "Özel Exclusive Host RAM Victim Cache + Async DMA mimarisi, bellek bant genişliğini iki katına çıkararak token işleme hızını %70 artırdı.",
+    "Stock llama.cpp Strata sürümü aynı donanımda sadece ~0.5 tok/s performans gösterirken, Betelgeuse %100 byte‑exact uyumlulukla çok daha yüksek verim sağladı."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Betelgeuse'un yeni bellek mimarisi, düşük bellek bant genişliğine sahip tüketici sınıfı sistemlerde 4‑bit kuantize modellerin kullanılabilirliğini ve performansını önemli ölçüde artırıyor; bu, LLM dağıtımında maliyet ve donanım gereksinimlerini yeniden şekillendirebilir.",
+  "etiketler": [
+    "Betelgeuse",
+    "Qwen 3.8",
+    "IQ4_XS",
+    "RTX3060",
+    "benchmark"
+  ],
+  "anilan_modeller": [
+    "Qwen 3.8 Flash Next",
+    "Alpha-Orionis-XS",
+    "DeepSeek V4.1 Flash"
+  ],
+  "yorum_tr": "Bu geliştirme, düşük bellek kapasiteli sistemlerde 4‑bit kuantizasyonun pratik bir seçenek olabileceğini gösteriyor ve geliştiricilerin daha ucuz donanımla yüksek performanslı LLM'leri çalıştırmasını kolaylaştırıyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen 3.8 Flash Next IQ4_XS",
+      "benchmark": "Token throughput (tok/s) – 1x16GB DDR4 (single-channel)",
+      "skor": 14,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "tok/s",
+      "kaynak_metinden_alinti": "IQ4_XS (4-bit) 1x 16GB (Single-Channel) 14.0 tok/s"
+    },
+    {
+      "model": "Qwen 3.8 Flash Next IQ4_XS",
+      "benchmark": "Token throughput (tok/s) – 2x8GB DDR4 (dual-channel)",
+      "skor": 24,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "tok/s",
+      "kaynak_metinden_alinti": "IQ4_XS (4-bit) 2x 8GB (Dual-Channel) 24.0 tok/s"
+    },
+    {
+      "model": "Qwen 3.8 Flash Next IQ2_XS (GSQ-RCO)",
+      "benchmark": "Token throughput (tok/s) – 1x16GB DDR4 (single-channel)",
+      "skor": 22.03,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "tok/s",
+      "kaynak_metinden_alinti": "IQ2_XS (GSQ-RCO) 1x 16GB (Single-Channel) 22.03 tok/s (48 tok/s bursts)"
+    },
+    {
+      "model": "Qwen 3.8 Flash Next Q8_K_XL (8-bit)",
+      "benchmark": "Token throughput (tok/s) – 1x16GB DDR4 (single-channel) cold",
+      "skor": 8,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "tok/s",
+      "kaynak_metinden_alinti": "Q8_K_XL (8-bit) 1x 16GB (Single-Channel) 8.0 cold tok/s"
+    },
+    {
+      "model": "Qwen 3.8 Flash Next Q8_K_XL (8-bit)",
+      "benchmark": "Token throughput (tok/s) – 1x16GB DDR4 (single-channel) warm",
+      "skor": 12,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "tok/s",
+      "kaynak_metinden_alinti": "Q8_K_XL (8-bit) 1x 16GB (Single-Channel) 12.0 warm tok/s"
+    }
+  ],
+  "gorsel_url": "https://i.redd.it/0e4xche7lhuh1.png",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xkh2ns/betelgeuse_running_qwen_38_flash_next_iq4_xs_at/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-31T18:06:52.000Z",
+  "slug": "betelgeuse-running-qwen-3-8-flash-next-iq4-xs-at-24-tok-s-on"
+}
