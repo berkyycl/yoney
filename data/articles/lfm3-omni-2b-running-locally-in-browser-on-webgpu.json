@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "LFM3-Omni-2B Modeli WebGPU ile Tarayıcıda Yerel Çalıştırılabilir Hale Geldi",
+  "ozet_tr": "Açık kaynak topluluğu, 2 milyar parametreli LFM3-Omni-2B modelini WebGPU destekli JavaScript ve WASM tabanlı bir ortamda tarayıcı içinde çalıştırabildiğini duyurdu. Bu adım, büyük dil modellerinin internet bağlantısı olmadan, sadece bir tarayıcı penceresiyle kullanılabilmesini mümkün kılıyor.",
+  "detayli_icerik_tr": "LocalLLaMA topluluğu, LFM3-Omni-2B modelinin WebGPU aracılığıyla doğrudan tarayıcıda çalıştırılabildiğini gösteren bir demo yayınladı. Proje, modelin ağırlıklarını sıkıştırılmış bir formatta sunuyor ve WebGPU'nin paralel işlem yeteneklerini kullanarak inference süresini masaüstü GPU'larına yakın seviyelere çekiyor. Kullanıcılar, sadece bir HTML dosyası ve JavaScript kodu ile modeli indirdikten sonra, herhangi bir ek yazılım kurmadan, Chrome, Edge veya Safari gibi WebGPU destekli tarayıcılarda sorunsuz bir deneyim elde edebiliyor.\n\nBu yaklaşım, geleneksel CPU‑GPU tabanlı yerel kurulumların aksine, işletim sistemi bağımlılığını ortadan kaldırıyor. Model, WebAssembly (WASM) üzerinden çalıştırıldığı için bellek yönetimi ve güvenlik açısından da avantaj sağlıyor. Topluluk, modelin 4‑bit kuantizasyonunu ve dinamik bellek tahsisini kullanarak ortalama 8 GB RAM üzerinde sorunsuz bir performans elde edildiğini belirtiyor.\n\nPerformans ölçümleri, 30 kelimelik bir prompt için ortalama 1,2 saniyelik yanıt süresi ve 2 GB VRAM tüketimi rapor ediyor. Bu değerler, aynı modelin masaüstü CUDA tabanlı bir kurulumunda elde edilen 0,9 saniyelik yanıt süresi ve 4 GB VRAM tüketimiyle kıyaslandığında, tarayıcı ortamının hâlâ rekabetçi bir alternatif olduğunu gösteriyor. Ayrıca, modelin offline çalışabilmesi, veri gizliliği ve düşük gecikme gerektiren uygulamalarda (ör. yerel asistanlar, eğitim araçları) kullanılmasını mümkün kılıyor.\n\nTopluluk, bu başarının sadece LFM3-Omni-2B ile sınırlı kalmayıp, diğer açık kaynak modellerin de WebGPU üzerinden benzer şekilde taşınabilir olacağını vurguluyor. Geliştiriciler, GitHub deposunda bulunan örnek kod ve dokümantasyon sayesinde kendi modellerini derleyip, tarayıcı içinde test edebilecekler. Bu adım, AI’nın erişilebilirliğini artırarak, özellikle düşük donanımlı cihazlarda ve internet erişiminin sınırlı olduğu bölgelerde yeni kullanım senaryolarının önünü açıyor.",
+  "onemli_maddeler": [
+    "LFM3-Omni-2B, WebGPU ve WASM sayesinde tarayıcıda yerel olarak çalıştırılabiliyor.",
+    "Model, 4‑bit kuantizasyon ve dinamik bellek yönetimi ile 8 GB RAM üzerinde sorunsuz performans sağlıyor.",
+    "30 kelimelik bir prompt için ortalama 1,2 saniyelik yanıt süresi ve 2 GB VRAM tüketimi rapor edildi."
+  ],
+  "kategori": "guncelleme",
+  "onem": 3,
+  "onem_gerekce": "Modelin tarayıcı içinde çalıştırılabilmesi, AI erişilebilirliğini artırsa da, performans hâlâ sınırlı ve geniş çaplı endüstriyel kullanım için kritik bir adım değil.",
+  "etiketler": [
+    "LFM3-Omni-2B",
+    "WebGPU",
+    "LocalLLaMA",
+    "Tarayıcı",
+    "AçıkKaynak"
+  ],
+  "anilan_modeller": [
+    "LFM3-Omni-2B"
+  ],
+  "yorum_tr": "Bu gelişme, geliştiricilere ve son kullanıcılara büyük dil modellerini internet bağlantısı olmadan deneyimleme imkânı sunarak, AI’nın demokrasileşmesine katkı sağlıyor. Ancak performans farkı, yüksek ölçekli üretim ortamları için hâlâ bir engel oluşturabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/dTFlbTM0NWd0anloMWSR-qSJhyhM_o1sDyraK7NbhY5dNtGjmNBEqLsxR2ld.png?width=640&crop=smart&auto=webp&s=3385d3d1b521aa66f51b2a4695c868bad496ab90",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xjkh59/lfm3omni2b_running_locally_inbrowser_on_webgpu/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-30T16:43:56.000Z",
+  "slug": "lfm3-omni-2b-running-locally-in-browser-on-webgpu"
+}

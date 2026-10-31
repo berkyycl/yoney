@@ -1,0 +1,70 @@
+{
+  "baslik_tr": "Google DeepMind ve WRI, AI destekli küresel orman tipolojisi haritası ForTy'yi yayınladı",
+  "ozet_tr": "Google DeepMind ve Dünya Kaynakları Enstitüsü, 2020 yılına ait dünya çapında 10 metrelik çözünürlükte ormanları altı sınıfa ayıran ForTy (Forest Typology) haritasını duyurdu. AlphaEarth Foundations ve çok aşamalı görüntü tanıma modelleriyle oluşturulan bu harita, %90,2 genel doğrulukla Avrupa Komisyonu haritalarını geride bırakıyor.",
+  "detayli_icerik_tr": "Google DeepMind ve World Resources Institute (WRI), AlphaEarth Foundations modelini temel alarak ForTy adlı bir AI haritası geliştirdi. Sistem, uydu görüntülerini, radar ve lidar verilerini, iklim simülasyonlarını tek bir 10x10 metrelik piksel tanımına sıkıştırıyor ve bu tanımları üç aşamalı görüntü tanıma modeliyle işleyerek ormanları beş görsel olarak benzer sınıfa (birincil orman, doğal yeniden oluşan orman, dikim ormanı, plantasyon ve ağaç mahsulleri) ve diğer arazi tiplerine ayırıyor.\n\nForTy, özellikle Avrupa Birliği'nin 2020 sonrası ormansızlaşma yasağı (EUDR) kapsamında, bir arazi parçasının 2020'deki kullanımını belirlemek isteyen şirketler için kritik bir referans noktası sunuyor. Harita, 2020 yılına ait araziyi altı kategoriye ayırıyor ve 10 metrelik çözünürlükte her bir kilometrekarede hâkim sınıfı gösteriyor. Toplamda dünya çapında yaklaşık 4,1 milyar hektar orman tespit edildi; bunların 3,9 milyar hektarı doğal, 2 milyar hektarı birincil orman olarak sınıflandırıldı.\n\nModel, iki uzman tarafından rastgele seçilen 8.190 noktanın incelenmesiyle %90,2 genel doğruluk elde etti. Ancak sınıflar arasında performans farklılıkları var: birincil ormanların %89'ı doğru tanımlanırken, dikim ormanlar ve ağaç mahsulleri sadece %50 civarında tespit edildi ve plantasyonların %60'ı doğru sınıflandırıldı. Avrupa Komisyonu haritalarıyla yapılan karşılaştırmada ForTy, orman‑olmayan sınıflandırmada %95,5 (EC %93,6) ve orman tipleri sınıflandırmasında %90,9 (EC %87,8) puanlarla üstün çıktı.\n\nForTy, açık kaynak kodlu GeeFlow ve JEO depoları aracılığıyla Google Earth Engine üzerinde CC BY 4.0 lisansı altında sunuluyor. Kullanıcılar, her sınıf için sağlanan güven skorlarını kullanarak kendi eşiklerini belirleyebilir ve haritayı kendi ihtiyaçlarına göre uyarlayabilir. Gelecek sürümlerde açık ormanlar gibi eksik sınıfların eklenmesi planlanıyor.",
+  "onemli_maddeler": [
+    "ForTy, dünya çapında 10 metrelik çözünürlükte altı orman ve arazi sınıfını ayıran ilk küresel harita.",
+    "Sistem, %90,2 genel doğrulukla Avrupa Komisyonu haritalarını geride bırakarak EUDR uyumluluğu için kritik bir referans sağlıyor.",
+    "AlphaEarth Foundations ve Gemini modelleriyle çok aşamalı aktif öğrenme süreci sayesinde 43.000 ek örnekle hatalar düzeltildi."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Küresel orman tipolojisi haritası, sürdürülebilir tedarik zinciri ve EU ormansızlaşma düzenlemeleri gibi politikalar için temel veri kaynağı sunarak çevre teknolojileri alanında büyük bir etki yaratıyor.",
+  "etiketler": [
+    "uydu verisi",
+    "orman haritalama",
+    "AI",
+    "EUDR",
+    "çevre"
+  ],
+  "anilan_modeller": [
+    "AlphaEarth Foundations",
+    "Gemini"
+  ],
+  "yorum_tr": "ForTy, yüksek çözünürlükteki orman sınıflandırmasıyla hem politika yapıcıların hem de şirketlerin sürdürülebilirlik raporlamasını kolaylaştırıyor; ancak plantasyon ve ağaç mahsulleri gibi sınıflardaki düşük doğruluk, gelecekteki iyileştirmeler için bir fırsat sunuyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "ForTy",
+      "benchmark": "Overall accuracy",
+      "skor": 90.2,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "The map, 2 experts reviewed each of 8,190 randomly selected sites, finding it correct in 90.2 percent of cases."
+    },
+    {
+      "model": "ForTy",
+      "benchmark": "Primary forest identification",
+      "skor": 89,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "The map correctly identified 89 percent of primary forests that experts confirmed on the ground."
+    },
+    {
+      "model": "ForTy",
+      "benchmark": "Forest vs non‑forest classification (EUDR test)",
+      "skor": 95.5,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "ForTy still outperforms European Commission maps ... scoring 95.5 percent compared with 93.6 percent for forest versus nonforest classification."
+    },
+    {
+      "model": "ForTy",
+      "benchmark": "Forest type classification (EUDR test)",
+      "skor": 90.9,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "ForTy ... scoring 90.9 percent compared with 87.8 percent for forest types."
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/10/forest-typology-01-hero.jpg",
+  "url": "https://the-decoder.com/google-deepmind-creates-a-global-map-of-forests-with-satellite-data-and-ai/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-10-31T10:15:45.000Z",
+  "slug": "google-deepmind-creates-a-global-map-of-forests-with-satelli"
+}

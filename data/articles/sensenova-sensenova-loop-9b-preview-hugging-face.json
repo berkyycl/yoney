@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "SenseNova-Loop-9B-Preview: Uzun Bağlam ve Çok Modelli Dil Modeli Tanıtıldı",
+  "ozet_tr": "SenseNova-Loop-9B-Preview, uzun bağlam ve ajan tabanlı iş akışları için tasarlanmış yeni bir multimodal dil modelidir. Metin ve görsel girdileri işleyerek belge anlama, kod üretimi ve dış araçlarla etkileşim gibi senaryolarda metin üretir.",
+  "detayli_icerik_tr": "SenseNova-Loop-9B-Preview, 9 milyar parametreli bir multimodal dil modeli olarak Hugging Face platformunda yayınlandı. Model, metin ve görüntü girdilerini aynı anda alabilen bir yapıya sahip ve özellikle uzun bağlamlı (262.144 token'a kadar) görevlerde yüksek performans sunmayı hedefliyor.\n\nModelin mimarisi, \"looped decoder\" adı verilen bir döngüsel kod çözücü katmanı ile iki akışlı manifold-kısıtlı hiper‑bağlantılar (mHC) içeriyor. 24 katmanlık bir blok, ağırlıkları paylaşarak iki kez çalıştırılıyor; bu sayede 32 farklı katmandan 56 dekoder katmanı yürütmesi elde ediliyor. Öğrenilmiş haritalar, döngü içindeki iki kalıntı akışı arasında bilgi akışını yönlendirerek parametre çoğaltmadan daha derin bir işlem yolu sağlıyor.\n\nEk olarak, model hibrit dikkat mekanizması kullanıyor; dört katmanlık bir desen içinde lineer ve tam dikkat katmanları ardışık olarak yer alıyor. Bu yapı, uzun sekanslarda bellek tüketimini kontrol ederken aynı zamanda tam dikkat gerektiren kritik adımlarda yüksek doğruluk sağlıyor.\n\nEğitim sürecinde, metin, görsel, kod ve araç etkileşim trajektörleri gibi çok modlu veri setleri kullanıldı. Eğitim sırasında maksimum sekans uzunluğu 256K token olarak belirlenmiş ve bu, belge anlama ya da kod tamamlama gibi uzun metin gerektiren uygulamalarda modelin avantajını ortaya koyuyor. Geliştiricilere, en iyi performansı elde etmek için belgelenmiş dağıtım ortamı ve yapılandırma parametrelerinin kullanılmasını öneriyor.",
+  "onemli_maddeler": [
+    "Looped decoder sayesinde 24 katman iki kez çalıştırılarak 56 dekoder yürütmesi elde edildi, ancak parametre sayısı sadece 32 katmanla sınırlı.",
+    "İki akışlı manifold‑kısıtlı hiper‑bağlantılar (mHC) bilgi akışını iki residual akış arasında yönlendirerek derin işlem yolları sağlıyor.",
+    "Maksimum 262.144 token uzunluğunda çok modlu (metin + görüntü + kod + araç) eğitim verisiyle uzun bağlam performansı hedefleniyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Uzun bağlam ve multimodal yetenekleri birleştiren yeni bir model olması, özellikle belge analizi ve araç entegrasyonu gerektiren uygulamalarda önemli bir adım oluşturuyor.",
+  "etiketler": [
+    "multimodal",
+    "long-context",
+    "decoder-loop",
+    "HuggingFace",
+    "AI model"
+  ],
+  "anilan_modeller": [
+    "SenseNova-Loop-9B-Preview"
+  ],
+  "yorum_tr": "SenseNova-Loop-9B-Preview, uzun sekans ve çok modlu veri işleme ihtiyacı duyan geliştiriciler için yeni bir seçenek sunuyor; ancak gerçek dünya performansı, benchmark sonuçlarıyla netleşecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/DqBmCaAAmzoPzVI5jKHVNZIyeRH4YfAj8DA19YtD19I.png?width=640&crop=smart&auto=webp&s=88bb2382ef39f121411eb9890ae1ea1a41abb0fb",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xje5oo/sensenovasensenovaloop9bpreview_hugging_face/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-30T12:34:31.000Z",
+  "slug": "sensenova-sensenova-loop-9b-preview-hugging-face"
+}
