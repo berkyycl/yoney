@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "DeepSeek-V4.1-Flash-1017 ve Unsloth Kuantizasyon Karşılaştırmasında Token Bütçesi Farkı Açıklandı",
+  "ozet_tr": "DeepSeek-V4.1-Flash-1017 modelinin performansına ilişkin son karşılaştırmalarda, Unsloth tarafından kullanılan 32K tokenlık sınırlı bir mantık bütçesi ile ISTA'nın 128K tokenlık çıkış bütçesi arasındaki farkın sonuçları belirgin şekilde etkilediği ortaya kondu. ISTA, modelin 763 milyar parametresi ve 1M bağlam uzunluğuna uygun standart ayarlarla test edildiğini vurguluyor.",
+  "detayli_icerik_tr": "ISTA ekibi, Reddit'te yayınladığı bir açıklamada, DeepSeek-V4.1-Flash-1017 modelinin Unsloth tarafından yapılan kuantizasyon karşılaştırmalarının kendi sonuçlarıyla uyumsuz olduğunu belirtti. Açıklamada, modelin 763 milyar parametreye sahip olduğu ve 1 milyon tokenlık bağlam penceresini desteklediği, bu nedenle testlerde 128K tokenlık bir çıktı penceresi ve mantık çabası (reasoning effort) 50 olarak ayarlandığı ifade edildi.\n\nUnsloth'un karşılaştırmalarında ise 32K tokenlık sıkı bir mantık bütçesi kullanıldığı, bu durumun modelin potansiyel performansını kısıtladığı ve sonuçların düşüşe yol açtığı iddia edildi. ISTA, bu farkın modelin kalitesinden değil, test koşullarındaki farklılıklardan kaynaklandığını vurguluyor. Özellikle, 1M bağlam penceresine sahip bir model için 32K tokenlık bir sınırın tutarsız olduğu belirtilerek, ISTA'nın testlerinin modelin tasarımına daha uygun olduğu savunuldu.\n\nIST A, tüm kodlarını GitHub üzerinden açık kaynak olarak paylaştığını ve ilgili makalelerin arXiv'de yayımlandığını hatırlatarak topluluk iş birliğine ve şeffaflığa önem verdiğini yineledi. Ayrıca, bağımsız doğrulama için aynı ayarlarla (128K çıktı bütçesi, mantık çabası 50) test yapılmasını davet etti ve daha önceki modellerinin Benjamin Marie (The Kaitchup) gibi üçüncü taraflarca da benchmarklandığını hatırlattı.\n\nEk olarak, ISTA ekibi şu anda kendi ortamlarında aynı karşılaştırmaları yürüttüklerini ve sonuçları yakında paylaşacaklarını belirtti. Bu süreç, modelin gerçek performansını doğru bir şekilde ölçmek ve topluluk içinde güvenilir bir referans noktası oluşturmak amacıyla yürütülüyor.",
+  "onemli_maddeler": [
+    "ISTA, DeepSeek-V4.1-Flash-1017 testlerinde 128K tokenlık çıktı bütçesi ve mantık çabası 50 kullandı.",
+    "Unsloth karşılaştırmalarında 32K tokenlık sıkı bir mantık bütçesi kullanıldı; bu fark performans sonuçlarını etkiledi.",
+    "ISTA, tüm kod ve makaleleri açık kaynak olarak paylaşıyor ve bağımsız doğrulamayı toplulukla davet ediyor."
+  ],
+  "kategori": "benchmark",
+  "onem": 3,
+  "onem_gerekce": "Topluluk içinde benchmark metodolojisinin doğru anlaşılması, model karşılaştırmalarının güvenilirliği açısından orta derecede kritik bir konudur.",
+  "etiketler": [
+    "DeepSeek",
+    "quantization",
+    "benchmark",
+    "AI",
+    "LLM"
+  ],
+  "anilan_modeller": [
+    "DeepSeek-V4.1-Flash-1017"
+  ],
+  "yorum_tr": "Bu açıklama, büyük ölçekli LLM'lerin performans değerlendirmelerinde token bütçesi gibi parametrelerin kritik rol oynadığını ve standartlaştırılmış test koşullarının gerekliliğini bir kez daha ortaya koyuyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/release-ista-gsq-rco-ggufs-for-deepseek-v4-1-flash-1017-v0-nak9y6wchdxh1.png?width=1080&crop=smart&auto=webp&s=8fc0e7356d42d83e14d8bafff1eb8b8480ff6a59",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xjkjla/ista_deepseekv41flash1017_gsqrco_quants_comparison/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-30T16:46:21.000Z",
+  "slug": "ista-deepseek-v4-1-flash-1017-gsq-rco-quants-comparison"
+}

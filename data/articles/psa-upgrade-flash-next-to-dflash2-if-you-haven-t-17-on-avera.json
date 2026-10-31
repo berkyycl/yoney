@@ -1,0 +1,84 @@
+{
+  "baslik_tr": "Uyarı: Flash Next'i DFlash2'ye Yükseltin, Ortalama %17 Hız Artışı",
+  "ozet_tr": "llama.cpp v0.8.0 sürümü, Qwen3.8-Flash-Next modelinin DFlash2 uyumluluğunu getirerek performans artışı sağladı. Yapılan testlerde DFlash2, kod, liste ve uzun bağlam gibi çeşitli görevlerde ortalama %17 daha yüksek işleme hızı sundu.",
+  "detayli_icerik_tr": "Geçtiğimiz günlerde Qwen3.8-Flash-Next modeli için DFlash2 sürümü yayınlanmıştı, ancak ilk etapta llama.cpp ile uyumlu değildi. llama.cpp v0.8.0, DFlash2 desteğini ekleyerek bu eksikliği giderdi ve yazar, kendi quantize ettiği GGUF dosyalarını bu sürümde test etti.\n\nPerformans ölçümleri, Apple Silicon M5 Max cihazında, MTP ve DFlash2 için parametre taraması yapıldıktan sonra en uygun ayarlarla gerçekleştirildi. Kullanılan ayarlar MTP için n-max=3, p-min=0.75; DFlash2 için ise n-max=5, p-min=0.75 idi. Ölçümler, kabul oranı (acceptance) üzerinden tps (tokens per second) değerleriyle raporlandı.\n\nSonuçlar, DFlash2'nin kod (code) ve liste (list) görevlerinde sırasıyla %18 ve %39 oranında, uzun bağlam (6k ctx) görevinde %19 oranında bir hız artışı sağladığını gösterdi. Prose (metin) görevinde ise %3'lük hafif bir gerileme yaşandı ancak bu fark gürültü seviyesinin içinde değerlendirildi. Geometrik ortalama üzerinden bakıldığında DFlash2, MTP'ye kıyasla %17 daha yüksek bir throughput (87.9 tps) elde etti.\n\nDFlash2'nin bir diğer avantajı, draft head modelinin sadece ~350 MB olması; önceki Q4_0 ggml MTP head'i ise 2.2 GB büyüklüğündeydi. Bellek tasarrufu VRAM'e yansımasa da, modelin compute buffer ihtiyacı bu farkı dengeledi. Ayrıca, DFlash2 3.8 27B sürümünün aksine görsel girdileri de işleyebiliyor; görüntü destekli promptlar tutarlı ve kabul edilebilir yanıtlar üretti.",
+  "onemli_maddeler": [
+    "DFlash2 artık llama.cpp v0.8.0 ile uyumlu.",
+    "Ortalama %17 daha yüksek throughput (87.9 tps) elde edildi.",
+    "Draft head modeli sadece ~350 MB, önceki 2.2 GB'den çok daha küçük.",
+    "Görsel destekli promptlarda da tutarlı yanıtlar alındı."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Yeni DFlash2 desteği ve sağladığı performans artışı, özellikle Apple Silicon üzerinde çalışan geliştiriciler ve araştırmacılar için önemli bir verimlilik kazancı sunuyor.",
+  "etiketler": [
+    "DFlash2",
+    "Flash-Next",
+    "llama.cpp",
+    "MTP",
+    "Apple Silicon"
+  ],
+  "anilan_modeller": [
+    "Qwen3.8-Flash-Next",
+    "DFlash2",
+    "MTP",
+    "Q4_K_XL",
+    "Q4_0",
+    "Q8_0"
+  ],
+  "yorum_tr": "Bu güncelleme, düşük bellek tüketimi ve hız artışı sayesinde yerel LLaMA dağıtımlarının ölçeklenebilirliğini artırıyor; geliştiriciler daha büyük bağlamlarla ve görsel girdilerle çalışabilirken, kullanıcı deneyimi de iyileşiyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "DFlash2 (Q4_K_XL)",
+      "benchmark": "code throughput (tps)",
+      "skor": 95.1,
+      "birim": "tps",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "acceptance",
+      "kaynak_metinden_alinti": "Q4_K_XL (code) 80.5 tps (94%) 95.1 tps (84%) +18%"
+    },
+    {
+      "model": "DFlash2 (Q4_K_XL)",
+      "benchmark": "list throughput (tps)",
+      "skor": 127,
+      "birim": "tps",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "acceptance",
+      "kaynak_metinden_alinti": "Q4_K_XL (list) 91.4 tps (98%) 127 tps (98%) +39%"
+    },
+    {
+      "model": "DFlash2 (Q4_K_XL)",
+      "benchmark": "prose throughput (tps)",
+      "skor": 51.9,
+      "birim": "tps",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "acceptance",
+      "kaynak_metinden_alinti": "Q4_K_XL (prose) 53.8 tps (78%) 51.9 tps (64%) -3%"
+    },
+    {
+      "model": "DFlash2 (Q4_K_XL)",
+      "benchmark": "6k context throughput (tps)",
+      "skor": 95.3,
+      "birim": "tps",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "acceptance",
+      "kaynak_metinden_alinti": "Q4_K_XL (6k ctx) 80.2 tps (97%) 95.3% (90%) +19%"
+    },
+    {
+      "model": "DFlash2 (Q4_K_XL)",
+      "benchmark": "geometric mean throughput (tps)",
+      "skor": 87.9,
+      "birim": "tps",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "acceptance",
+      "kaynak_metinden_alinti": "Geometric mean 75.1 tps 87.9 tps +17%"
+    }
+  ],
+  "gorsel_url": "https://external-preview.redd.it/JIl6p0wdWPIyTK6CfDb_9K4rB0MsYfkMgynOHWawXZo.png?width=640&crop=smart&auto=webp&s=9a1be0e39e5f3582a9094c8352c3f72f4ac1472e",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xjlgm4/psa_upgrade_flash_next_to_dflash2_if_you_havent/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-30T17:19:41.000Z",
+  "slug": "psa-upgrade-flash-next-to-dflash2-if-you-haven-t-17-on-avera"
+}
