@@ -1,0 +1,72 @@
+{
+  "baslik_tr": "Betelgeuse Engine, RTX 3060'da Qwen 3.8 Flash Next'i 22 tok/s sürdürülebilir hızla çalıştırdı",
+  "ozet_tr": "Betelgeuse adlı yeni bir llama.cpp çatalı, 12 GB VRAM ve 16 GB DDR4 RAM'li bir RTX 3060 sisteminde Qwen 3.8 Flash Next modelini ortalama 22 tok/s hızla, zirvede ise 48 tok/s'e kadar çıkararak çalıştırdı. Bu performans, aynı donanımda stock llama.cpp'un 1.5 tok/s seviyesindeki yavaşlığına kıyasla çarpıcı bir iyileşme sunuyor.",
+  "detayli_icerik_tr": "Reddit topluluğu LocalLLaMA'da kullanıcı zyxciss, Qwen 3.8 Flash Next'in 68 GB'lık GSQ‑RCO‑IQ2_XS sürümünü bütçeli bir oyun bilgisayarında çalıştırmak için Betelgeuse adlı bir motor geliştirdi. Motor, llama.cpp'nin bir çatalı olarak sıfır gate pruning ve %100 bit‑tamlık garantisi sunuyor; yani her katmandaki 10 yönlendirilmiş uzman (expert) tam hassasiyetle hesaplanıyor ve 28 080 yönlendirici kaydı ile 576 token arasında hiçbir fark (0.000e+00) bulunmadı.\n\nBetelgeuse, VRAM içinde yaklaşık 5 000 uzman yuvasını (slot) barındıran bir \"Arrival‑Slack VRAM Slot Pool\" kullanıyor ve katman başına farklı sayıda slot dağıtarak bellek kullanımını optimize ediyor. Ayrıca, CPU‑GPU zamanlayıcı bölünmelerini ortadan kaldıran bir \"In‑Stream GPU Doorbell + 1‑Split CUDA Graph Replay\" mekanizması sayesinde uzman eksikliği durumunda sadece 2 µs içinde çözüm bulunuyor. Eksik uzmanlar ise ayrı bir RAM \"victim cache\"e taşınıyor; bu sayede fiziksel NVMe okuma miktarı 71 MB/token'dan 12.43 MB/token'a düşüyor.\n\nTest sonuçları, RTX 3060 12 GB + 16 GB DDR4 (MemoryMax=12G) konfigürasyonunda Betelgeuse'un soğuk başlangıçta 16.80 tok/s, ısınmış (warm) koşulda 22.03 tok/s sürdürülebilir hız sağladığını gösteriyor. Uzmanlar tamamen VRAM/victim cache içinde olduğunda ise hız 48 tok/s'e kadar çıkıyor. Karşılaştırma olarak stock llama.cpp sadece 1.47 tok/s, Strata ise 8.11 tok/s performans gösteriyor. Aynı zamanda Q8_K_XL kuantizasyonu (≈190 GB) altında da Betelgeuse 8 tok/s (soğuk) ve 12 tok/s (ısınmış) hızlarıyla çalışıyor, stock sürüm ise OOM hatası veriyor.\n\nGeliştiriciler, bu mimariyi DeepSeek V4.1 Flash modeline de taşımayı planlıyor ve aynı donanımda 25 tok/s civarında sonuçlar almayı hedefliyor. Betelgeuse kodu GitHub'da açık kaynak olarak sunulmuş ve llama.cpp ana deposuna bir PR olarak gönderilmiş durumda.",
+  "onemli_maddeler": [
+    "Betelgeuse, Qwen 3.8 Flash Next'i RTX 3060'da ortalama 22 tok/s, zirvede 48 tok/s hızla çalıştırıyor.",
+    "Sıfır gate pruning ve %100 bit‑tamlık sayesinde model çıktısı orijinalle birebir aynı kalıyor.",
+    "VRAM‑RAM victim cache mimarisi NVMe okuma miktarını %82 azaltarak performansı artırıyor."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Bütçeli bir oyun bilgisayarında büyük bir MoE modelinin bu kadar yüksek ve tutarlı hızlarla çalıştırılması, açık kaynak LLM motorları ve düşük‑maliyetli AI dağıtımı alanında önemli bir kilometre taşıdır.",
+  "etiketler": [
+    "Qwen 3.8",
+    "Betelgeuse",
+    "llama.cpp",
+    "GPU",
+    "benchmark"
+  ],
+  "anilan_modeller": [
+    "Qwen 3.8 Flash Next",
+    "Qwen 3.6 35B",
+    "DeepSeek V4.1 Flash",
+    "Qwen 3.8 Flash Next (Q8_K_XL)"
+  ],
+  "yorum_tr": "Bu gelişme, geliştiricilerin yüksek kapasiteli MoE modellerini tüketici sınıfı donanımla verimli bir şekilde çalıştırabilmesini sağlayarak, AI araştırması ve uygulamalarının erişilebilirliğini artırıyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Betelgeuse (bel-server)",
+      "benchmark": "Cold Decode",
+      "skor": 16.8,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "cold",
+      "kaynak_metinden_alinti": "Betelgeuse (bel-server) 16.80 tok/s"
+    },
+    {
+      "model": "Betelgeuse (bel-server)",
+      "benchmark": "Warm Decode",
+      "skor": 22.03,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "warm",
+      "kaynak_metinden_alinti": "Betelgeuse (bel-server) 22.03 tok/s"
+    },
+    {
+      "model": "Betelgeuse (bel-server)",
+      "benchmark": "Peak Burst",
+      "skor": 48,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "burst",
+      "kaynak_metinden_alinti": "Up to 48 tok/s"
+    },
+    {
+      "model": "Betelgeuse (bel-server)",
+      "benchmark": "Physical SSD Reads",
+      "skor": 12.43,
+      "birim": "MiB/tok",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "12.43 MiB/tok"
+    }
+  ],
+  "gorsel_url": "https://external-preview.redd.it/MHBxZnUwMjVuc3loMf6cJBR025efvWrD2XCjAiBgMTC0twf5SvBtR0_E6AIp.png?width=640&crop=smart&auto=webp&s=9df97dd7f80d1a38f8f509937180724668483df1",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xk8s6z/betelgeuse_running_qwen_38_flash_next_at_22_toks/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-31T12:20:02.000Z",
+  "slug": "betelgeuse-running-qwen-3-8-flash-next-at-22-tok-s-sustained"
+}

@@ -1,0 +1,42 @@
+{
+  "baslik_tr": "Mage-VL-Cowork: 4B Görüntü-Dil Modeli, OSWorld-Verified'de %66 Başarıyla Çift Taraflı Bilgisayar Kullanımını Öğreniyor",
+  "ozet_tr": "Microsoft'un yeni 4 milyar parametreli Mage-VL-Cowork modeli, öğretmen‑harness evrimi, Mage-CUA-Forge ortam sentezi ve beş aşamalı uzmanlaşma‑birleştirme müfredatıyla hibrit bilgisayar kullanımını kavradı. OSWorld-Verified testinde %66 başarı elde ederken, çevrimiçi pekiştirmeli öğrenme sonrası model çağrılarında %13, çıktı tokenlerinde %25,4 tasarruf sağladı.",
+  "detayli_icerik_tr": "Microsoft araştırmacıları, Mage-VL-Cowork adlı yeni bir görsel‑dil modelini tanıttı. Model, yalnızca 4 milyar parametreye sahip olmasına rağmen, öğretmen‑harness evrimi ve \"workflow‑first\" ortam sentezi (Mage-CUA-Forge) ile desteklenen beş aşamalı bir \"specialize‑then‑unify\" müfredatı sayesinde karmaşık bilgisayar etkileşimlerini öğrenebiliyor.\n\nBu yaklaşım, modelin hem görsel hem de metinsel girdileri birleştirerek masaüstü ortamında görevleri bağımsız olarak yerine getirmesine olanak tanıyor. Özellikle, modelin çevrimiçi pekiştirmeli öğrenme (RL) sürecinden sonra, aynı görevleri yerine getirirken %13,0 daha az model çağrısı ve %25,4 daha az çıktı tokeni kullanması, enerji ve işlem maliyetlerinde önemli bir azalma sağlıyor.\n\nMage-VL-Cowork, OSWorld-Verified benchmark'ında %66,0 başarı oranı elde ederek 4 B ölçeğindeki en yüksek performansı gösterdi. Bu sonuç, aynı ölçekteki diğer görsel‑dil modellerinin gerisinde kalırken, özellikle cihaz içinde çalışan otonom masaüstü ajanları için yeni bir sınır çizdi.\n\nModelin Hugging Face platformunda paylaşılması, topluluk tarafından hızlıca test edilip entegrasyonların yapılabilmesini sağlıyor. Araştırmacılar, bu tür verimli ve güçlü modellerin gelecekteki AI asistanları, üretkenlik araçları ve hatta erişilebilir AI çözümleri için temel oluşturacağını belirtiyor.",
+  "onemli_maddeler": [
+    "Mage-VL-Cowork, 4 B parametreyle OSWorld-Verified testinde %66,0 başarı yakaladı.",
+    "Çevrimiçi RL sonrası model çağrılarında %13,0, çıktı tokenlerinde %25,4 tasarruf sağladı.",
+    "Mage-CUA-Forge ortam sentezi ve beş aşamalı uzmanlaşma‑birleştirme müfredatıyla hibrit bilgisayar kullanımını öğrendi."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Küçük ölçekli (4 B) bir modelin, görsel‑dil entegrasyonu ve on‑cihaz verimliliği açısından kayda değer bir performans ve maliyet avantajı sunması, AI asistanları ve üretkenlik uygulamaları için önemli bir adım teşkil ediyor.",
+  "etiketler": [
+    "vision-language",
+    "on-device AI",
+    "benchmark",
+    "reinforcement learning",
+    "Hugging Face"
+  ],
+  "anilan_modeller": [
+    "Mage-VL-Cowork"
+  ],
+  "yorum_tr": "Mage-VL-Cowork, düşük parametre sayısına rağmen yüksek doğruluk ve verimlilik sunarak, masaüstü tabanlı otonom ajanların yaygınlaşmasına zemin hazırlıyor. Geliştiriciler, bu modeli cihaz içinde çalıştırarak daha hafif ve maliyet etkin çözümler üretebilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Mage-VL-Cowork",
+      "benchmark": "OSWorld-Verified",
+      "skor": 66,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Achieving the best performance at the 4B scale (66.0% on OSWorld-Verified)"
+    }
+  ],
+  "gorsel_url": "https://external-preview.redd.it/0v5Yr7YwP4GDZYp0OL9T15eRSq_Oo3_gH66jlxUz9nY.png?width=640&crop=smart&auto=webp&s=eb6fe4262f17d5daa0436c56fcdc001bc4addd95",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xk6blw/microsoftmagevlcowork_hugging_face/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-31T10:02:47.000Z",
+  "slug": "microsoft-mage-vl-cowork-hugging-face"
+}
