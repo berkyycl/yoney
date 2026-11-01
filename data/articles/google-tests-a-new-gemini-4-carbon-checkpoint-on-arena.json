@@ -1,0 +1,73 @@
+{
+  "baslik_tr": "Google, Arena’da Gemini 4 Carbon’un Yeni Checkpoint’ini Test Etti",
+  "ozet_tr": "Google, Gemini 4 Carbon modelinin yeni bir checkpoint'ini Arena platformunda test etmeye başladı. İlk geri bildirimler, önceki sürüme göre daha hızlı ve 3D modelleme yeteneklerinde belirgin bir iyileşme olduğunu gösteriyor. Model hâlâ sınırlı bir kullanıcı kitlesine açık olsa da, güncellemeler geniş çaplı lansman öncesi ince ayarların sürdüğüne işaret ediyor.",
+  "detayli_icerik_tr": "Google, 28 Ekim 2026'da Gemini 4 Carbon'ı tanıttı ve modelin sadece seçkin siber savunma ekipleri tarafından kullanılabileceğini duyurdu. Ancak model, halka açık test platformu Arena’da yeni bir checkpoint ile güncellenmiş olarak ortaya çıktı. X platformundaki erken kullanıcılar, yeni sürümün önceki Carbon build'ine göre \"daha belirgin ve daha hızlı\" olduğunu belirtiyor.\n\nYeni checkpoint, \"Carbon-H\" adıyla Argon etiketi altında sunuluyor ve testçiler, özellikle kodlama, tasarım ve 3D modelleme alanlarında önceki sürümden daha iyi sonuçlar aldığını rapor ediyor. 3D modelleme konusunda, Argon sürümünün blok temelli bir inşa yöntemi kullandığı, Carbon-H'nin ise yuvarlak, sivri ve hatta elmas şekilli parçalarla daha estetik bir inşa sağladığı gözlemlendi.\n\nKullanıcılar ayrıca modelin Three.js ortamında gösterdiği performansı övdü; bir testçi, Carbon'un çıktılarının bazen 8‑10 dakika kadar düşündüğünü, ancak bu sürenin modelin daha tutarlı ve yaratıcı sonuçlar üretmesine yol açtığını belirtti. Front‑end kodlama hâlâ zayıf bir nokta olarak kalmış olsa da, Google'ın bu alandaki eksikleri kapatması beklentileri artırıyor.\n\nGüvenlik şirketi Wiz'in başkanı Nagli, Carbon'un karmaşık exploit zincirlerini çözmede \"daha önce hiç olmadığı kadar yeni keşif\" sağladığını ve modelin bug hunting süreçlerine büyük katkı sağladığını dile getirdi. Google, Carbon'un geniş çaplı lansmanında giriş fiyatı olarak Argon'un fiyatlandırmasını (girdi token başına 2 $, çıktı token başına 10 $) koruyacağını da açıkladı. Bu güncellemeler, DeepMind'un Genie 4 ses entegrasyonu ve Antigravity projesinin bulut yürütme hazırlıklarıyla paralel bir stratejik hamle olarak görülüyor.",
+  "onemli_maddeler": [
+    "Arena’da sunulan yeni Carbon-H checkpoint'i, önceki sürüme göre daha hızlı ve 3D modelleme kalitesinde belirgin bir iyileşme sağladı.",
+    "Kullanıcılar, modelin Three.js ortamında yüksek hareket kabiliyeti gösterdiğini ve güvenlik araştırmalarında yeni exploit keşifleri ürettiğini rapor etti.",
+    "Carbon hâlâ front‑end kodlama konusunda zayıf, ancak Google'ın bu eksikliği kapatması bekleniyor; fiyatlandırma Argon ile aynı seviyede tutulacak."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Modelin yeni checkpoint'i, performans ve 3D yeteneklerinde kayda değer bir iyileşme sunarak Google'ın AI pazarındaki rekabet gücünü artırıyor ve geniş çaplı lansman öncesi kritik bir aşamayı temsil ediyor.",
+  "etiketler": [
+    "Gemini 4",
+    "Carbon",
+    "Arena",
+    "AI model",
+    "Google"
+  ],
+  "anilan_modeller": [
+    "Gemini 4 Carbon",
+    "Gemini 4 Argon",
+    "GPT-6 Astra",
+    "Opus 5.5",
+    "GPT-6.1 Terra"
+  ],
+  "yorum_tr": "Gemini 4 Carbon'un yeni checkpoint'i, özellikle 3D içerik üretiminde rakiplerine göre avantaj sağlarken, front‑end kodlama eksikliği hâlâ geliştiricilerin dikkatini çekecek bir zayıflık olarak kalıyor. Modelin performans artışı, Google'ın AI hizmetlerini daha geniş bir kullanıcı kitlesine sunma stratejisinin bir parçası olarak olumlu bir sinyal veriyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Gemini 4 Carbon",
+      "benchmark": "Pixel T-Rex animation (kullanıcı puanı)",
+      "skor": 9.5,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "kullanıcı puanı (10 üzerinden)",
+      "kaynak_metinden_alinti": "OltAi ... gave them scores of 9.5, 8.8, 9.3, and 4.9 out of 10, respectively."
+    },
+    {
+      "model": "GPT-6 Astra",
+      "benchmark": "Pixel T-Rex animation (kullanıcı puanı)",
+      "skor": 8.8,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "kullanıcı puanı (10 üzerinden)",
+      "kaynak_metinden_alinti": "OltAi ... gave them scores of 9.5, 8.8, 9.3, and 4.9 out of 10, respectively."
+    },
+    {
+      "model": "Opus 5.5",
+      "benchmark": "Pixel T-Rex animation (kullanıcı puanı)",
+      "skor": 9.3,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "kullanıcı puanı (10 üzerinden)",
+      "kaynak_metinden_alinti": "OltAi ... gave them scores of 9.5, 8.8, 9.3, and 4.9 out of 10, respectively."
+    },
+    {
+      "model": "GPT-6.1 Terra",
+      "benchmark": "Pixel T-Rex animation (kullanıcı puanı)",
+      "skor": 4.9,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "kullanıcı puanı (10 üzerinden)",
+      "kaynak_metinden_alinti": "OltAi ... gave them scores of 9.5, 8.8, 9.3, and 4.9 out of 10, respectively."
+    }
+  ],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/11/gemini_carbon_102726_social_share.width-1300.png",
+  "url": "https://www.testingcatalog.com/google-tests-new-gemini-4-carbon-checkpoint-arena/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-01T08:43:59.000Z",
+  "slug": "google-tests-a-new-gemini-4-carbon-checkpoint-on-arena"
+}

@@ -1,0 +1,58 @@
+{
+  "baslik_tr": "Çin yapay zeka modelleri politik olarak karmaşık, sadece devlet sözcüsü değil",
+  "ozet_tr": "Vals AI tarafından yürütülen yeni bir araştırma, Çin yapay zeka modellerinin politik sorulara yanıt verirken tek tip bir hükümet söylemi izlemediklerini ortaya koydu. Modelin yanıt dili ve kullanım bağlamı, yanıtların hükümet yanlılığı seviyesini belirgin şekilde etkiliyor. Bazı Batı modelleri de zaman zaman resmi Çin tutumunu benimseyebiliyor.",
+  "detayli_icerik_tr": "AI benchmark firması Vals AI, Çin, ABD ve diğer ülkelerin dil modellerine yönelik yüzlerce politik soru sordu ve yanıtların hükümetle uyum seviyesini \"pro‑China lean\" adı verilen -1 ile +1 arasında bir ölçekte değerlendirdi. Sonuçlar, Çin modellerinin beklenenden daha düşük bir hükümet yanlılığı sergilediğini, ancak modelden modele büyük farklılıklar olduğunu gösterdi. Örneğin GLM‑5.3 Flash, insan hakları ihlallerinin belgelenmiş olduğunu açıkça kabul ederken, Kimi K3 ise Uygur toplama kamplarını \"aşırılık ve terörle mücadele amaçlı mesleki eğitim merkezleri\" olarak nitelendirdi.\n\nAraştırma, yanıt dilinin politik eğilimi güçlü bir şekilde şekillendirdiğini ortaya koydu. Çoğu model, sorular Çince (Basitleştirilmiş) olarak sorulduğunda İngilizce, Rusça ya da İspanyolca sorulduklarına kıyasla daha hükümet yanlısı yanıtlar verdi. Bu etki, Çin modellerinde çok daha belirgin olurken, Amerikan modellerinde de aynı yönelim gözlemlendi ancak daha sınırlıydı. Ayrıca, aynı sorunun geleneksel Çince (Tayvan ve Hong Kong’da yaygın) ile basitleştirilmiş Çince arasında da küçük ama tutarlı bir fark tespit edildi.\n\nModelin yanıt formatı da sonuçları etkiledi. Politik sorulara sadece \"evet\" ya da \"hayır\" gibi kapalı yanıtlar vermesi istenen modeller, açık uçlu yanıtlar veren modellere göre daha az hükümet yanlısı çıktı. Benzer şekilde, modeller bir kodlama asistanı çerçevesinde sistem talimatları ve araç tanımlarıyla çalıştırıldığında ya da web arama erişimi sağlandığında (gerçekte arama yapılmasa bile) pro‑government skoru düştü. Bu bulgular, model davranışının sadece eğitim verisiyle değil, aynı zamanda kullanım bağlamı ve talimatlarla da şekillendiğini gösteriyor.\n\nAraştırma, bazı modellerin hâlâ resmi Çin söylemini benimseyebildiğini vurguladı. Örneğin Qwen3.8 Max, bir seyahat uygulaması çevirisinde \"Taiwan, China\" ifadesini kullandı; GPT Image 2.5 Sunburst ise Çince bir harita örneğinde Tayvan'ı \"Taiwan Province\" ve Güney Çin Denizi'ndeki dokuz çizgili sınır çizgisini gösterdi. Ancak Thomson Reuters tarafından ince ayar yapılan Thomson 1.0 Small modeli, temel Qwen3.6 35B modeline kıyasla bu tür yanıtları %84,6'dan %15,0'e düşürerek hükümet yanlılığını önemli ölçüde azalttı. Bu sonuçlar, modelin eğitimi ve ince ayarıyla politik eğilimlerin yönetilebileceğine işaret ediyor.",
+  "onemli_maddeler": [
+    "Yanıt dili, modelin politik eğilimini belirgin şekilde etkiliyor; Çince sorular daha hükümet yanlısı yanıtlar üretiyor.",
+    "Modelin yanıt formatı (kapalı vs. açık uçlu) ve sistem talimatları da pro‑government skorunu düşürebiliyor.",
+    "Thomson Reuters'in ince ayarı, Qwen3.6 35B modelinin hükümet yanlılığını %84,6'dan %15,0'e düşürdü."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "Çin yapay zeka modellerinin politik yanıtları, hem regülasyon hem de küresel AI güvenliği açısından kritik bir konudur; araştırma, dil, bağlam ve ince ayarın bu eğilimleri nasıl şekillendirdiğini göstererek sektörel politika ve model geliştirme süreçlerine doğrudan etki sağlar.",
+  "etiketler": [
+    "Çin",
+    "AI modelleri",
+    "politik eğilim",
+    "Vals AI",
+    "benchmark"
+  ],
+  "anilan_modeller": [
+    "GLM-5.3 Flash",
+    "MiMo V2.6 Pro",
+    "Kimi K3",
+    "Qwen3.8 Max",
+    "Thomson 1.0 Small",
+    "Qwen3.6 35B",
+    "DeepSeek",
+    "GPT Image 2.5 Sunburst"
+  ],
+  "yorum_tr": "Araştırma, dil ve kullanım bağlamının model davranışını yönlendirebileceğini göstererek geliştiricilere ince ayar ve talimat yönetiminin politik yanıtları dengelemede önemli bir araç olduğunu hatırlatıyor. Kullanıcılar ise model seçerken ve prompt tasarlarken dil tercihlerinin yanıt içeriğini etkileyebileceğini göz önünde bulundurmalı.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Thomson 1.0 Small",
+      "benchmark": "Pro-government alignment share",
+      "skor": 15,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Thomson 1.0 Small, model fine-tuned by Thomson Reuters, adopted official Chinese positions far less often in testing than the original Qwen3.6 35B it was based on. The share dropped from 84.6 to 15.0 percent."
+    },
+    {
+      "model": "Qwen3.6 35B",
+      "benchmark": "Pro-government alignment share",
+      "skor": 84.6,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Thomson 1.0 Small, model fine-tuned by Thomson Reuters, adopted official Chinese positions far less often in testing than the original Qwen3.6 35B it was based on. The share dropped from 84.6 to 15.0 percent."
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/10/KI-Bias-Propaganda.png",
+  "url": "https://the-decoder.com/chinese-ai-models-are-politically-complex-not-just-government-mouthpieces-study-finds/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-01T12:33:01.000Z",
+  "slug": "chinese-ai-models-are-politically-complex-not-just-governmen"
+}

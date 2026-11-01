@@ -1,0 +1,61 @@
+{
+  "baslik_tr": "64 GB Artık Yerel LLM'lerde Ölü Bölge Değil: 27B Modeli ve Uzun Bağlamda Ajan Çalıştırma Deneyimi",
+  "ozet_tr": "Bir kullanıcı, 64 GB RAM'e sahip bir M4 Max cihazda Qwen3.8 27B modelini 256 k bağlam uzunluğunda ajan tabanlı kodlama oturumlarıyla çalıştırarak, önceki \"64 GB ölü bölge\" görüşünün artık geçerli olmadığını gösterdi. Modelin ağırlıkları, KV önbellek ve prompt cache gibi bileşenlerin toplam bellek tüketimi yaklaşık 48 GB GPU RAM'ine ulaşıyor ve uzun bağlamlar için pratik bir kullanım senaryosu sunuyor.",
+  "detayli_icerik_tr": "Reddit topluluğu üyelerinden biri, 64 GB RAM'e sahip bir Apple M4 Max cihazda Qwen3.8 27B modelini (16 GB MLX kuantizasyonlu) LM Studio üzerinden 256 k token bağlamıyla çalıştırdığını bildirdi. Model, 100‑200 k token aralığında kodlama ajanı oturumları yürütürken, 164 k token seviyesinde motor süreci toplamda 48 GB bellek, bunun 46 GB'u GPU belleği olarak tüketiyor. Bellek dağılımı yaklaşık 16 GB model ağırlıkları, ~11 GB KV önbellek (her token başına ~64 KB, sadece 16 katman tam dikkatli) ve prompt cache'in ikinci bir kopyası ile lineer dikkat kontrol noktalarını içeriyor.\n\nKullanıcı, KV önbellek kuantizasyonunun MLX vizyon yolunda desteklenmediğini, sadece metin‑only yolunun izin verdiğini ancak bu durumda önbellek kontrol noktalarının atlandığını ve hibrit modellerde tam yeniden işleme ihtiyacının arttığını belirtti. Bu sebeple 48 GB bellek sınırında, bağlam uzunluğunu ~128 k token'a düşürmeden ya da llama.cpp ile q8 KV kuantizasyonu kullanmadan çalıştırmak mümkün değil. Llama.cpp ile aynı bağlamda KV önbelleği kuantize edildiğinde bellek ihtiyacı 25‑30 GB'a düşse de önbellek doldurma (prefill) süresi önemli ölçüde yavaşlıyor.\n\nDeneyim, 64 GB RAM'in artık 27 B model ve uzun bağlamlı ajan uygulamaları için \"tatlı nokta\" olduğunu gösteriyor. Bellek kullanımının %93'üne ulaşıldığında bir turda yaklaşık 1 k yeni token işlenebiliyor; önbellek kaçırıldığında ise tam prefill işlemi yaklaşık 20 dakika sürüyor. Kullanıcı, daha büyük MoE modelleri ya da aynı anda iki model çalıştırmak isteyenlerin hâlâ 128 GB RAM'e ihtiyaç duyduğunu vurguladı ve benzer deneyimler yaşayanların geri bildirimlerini istedi.\n\nBu bulgular, yerel LLM geliştiricileri ve araştırmacıları için donanım planlamasında yeni bir referans noktası oluşturuyor. 64 GB RAM, yüksek kapasiteli modelleri ve uzun bağlamları destekleyebilecek seviyeye ulaşmışken, KV önbellek kuantizasyonu ve prefill optimizasyonları hâlâ iyileştirme alanı olarak görülüyor.",
+  "onemli_maddeler": [
+    "64 GB RAM, 27 B Qwen3.8 modeli ve 256 k token bağlamıyla ajan tabanlı kodlama oturumlarını çalıştırmak için yeterli hale geldi.",
+    "Modelin bellek tüketimi: 16 GB ağırlık, ~11 GB KV önbellek, geri kalan GPU belleği prompt cache ve kontrol noktalarına ayrılıyor; toplamda 48 GB GPU RAM kullanılıyor.",
+    "KV önbellek kuantizasyonu LM Studio'nun vizyon yolunda desteklenmiyor; metin‑only yolunda kuantizasyon yapılırsa önbellek kontrol noktaları atlanıyor ve performans düşüyor."
+  ],
+  "kategori": "benchmark",
+  "onem": 3,
+  "onem_gerekce": "Yerel LLM'lerde 64 GB RAM'in artık ölü bölge olmadığına dair pratik bir kanıt sunulması, geliştiricilerin donanım seçimlerini yeniden gözden geçirmesine yol açabilir; ancak bu, sınırlı bir kullanıcı deneyimine dayandığı için sektörel etkisi orta düzeydedir.",
+  "etiketler": [
+    "64GB",
+    "Local LLM",
+    "Qwen3.8",
+    "LM Studio",
+    "KV cache"
+  ],
+  "anilan_modeller": [
+    "Qwen3.8 27B",
+    "llama.cpp"
+  ],
+  "yorum_tr": "Bu bulgu, 64 GB RAM'e sahip cihazların uzun bağlamlı ajan uygulamaları için artık yeterli olduğunu göstererek, orta ölçekli modellerin yerel kullanımını genişletebilir. Ancak KV önbellek kuantizasyonu ve prefill süresi gibi performans darboğazları, gelecekteki optimizasyonlar için hâlâ önemli bir odak noktası olacak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen3.8 27B",
+      "benchmark": "GPU memory usage at 164k tokens",
+      "skor": 48,
+      "birim": "GB",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "164k tokens context",
+      "kaynak_metinden_alinti": "At 164k tokens, LM Studio's engine process is using 48 GB, 46 GB of it GPU memory."
+    },
+    {
+      "model": "Qwen3.8 27B",
+      "benchmark": "Prefill duration on cache miss",
+      "skor": 20,
+      "birim": "minute",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "cache miss",
+      "kaynak_metinden_alinti": "When it misses, a full prefill takes about 20 minutes."
+    },
+    {
+      "model": "Qwen3.8 27B",
+      "benchmark": "KV cache size per token",
+      "skor": 64,
+      "birim": "KB/token",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "KV cache per token",
+      "kaynak_metinden_alinti": "~11 GB KV cache (~64 KB/token, only 16 of the 64 layers are full attention)"
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/hboxdgjh2xyh1.png?width=140&height=23&auto=webp&s=134e3bddd40374bed99bdda30ff9c1d22beee5a7",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xksj75/64gb_isnt_the_dead_zone_anymore_if_you_run_agents/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-01T03:02:34.000Z",
+  "slug": "64gb-isn-t-the-dead-zone-anymore-if-you-run-agents"
+}

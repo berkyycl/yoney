@@ -1,0 +1,65 @@
+{
+  "baslik_tr": "Google, Video Asistanı StreamVibe ile Ne Zaman Yardım Sunulacağını Öğretiyor",
+  "ozet_tr": "Google araştırmacıları, StreamVibe adını verdikleri yeni bir video asistanı geliştirdi. Model, kullanıcıların açık, örtük ve değişen niyetlerini algılayarak yalnızca gerektiğinde konuşuyor ve böylece kesintisiz bir iş akışı sağlıyor.",
+  "detayli_icerik_tr": "Google, Stanford, Oxford ve ABD'deki çeşitli üniversitelerden araştırmacıların ortak çalışmasıyla ortaya çıkan StreamVibe, video tabanlı görevlerde (örneğin yemek pişirme, mobilya montajı) kullanıcının ne zaman yardıma ihtiyaç duyduğunu otomatik olarak belirleyen bir yapay zeka ajanı. Geleneksel video asistanları yalnızca net komutları işleyebildiği için, \"Su kaynamaya başladığında haber ver\" gibi açık talimatlara yanıt verirken, kullanıcıların söylemediği ama ihtiyacı olabilecek istekleri kaçırabiliyor. StreamVibe, bu eksikliği gidermek için üç aşamalı bir test seti oluşturdu: açık talimatlar, belirsiz hedefler ve zaman içinde değişen istekler.\n\nAraştırmacılar, 183 saatlik gerçek yaşam ve yazılım kaydı içeren 4.100 örnekten oluşan bir benchmark derledi. Bu benchmarkte, Gemini 2.5 Flash modeli ne zaman yardım sunulacağını önerdi ve dört insan değerlendiricinin oybirliğiyle onayladığı örnekler üzerinden ölçüm yapıldı. StreamVibe-VL, Alibaba'nın Qwen3.5-9B modeline dayandırılarak her saniye sessiz kalıp konuşup konuşmayacağına karar veriyor; ikinci aşamada pekiştirmeli öğrenme (RL) ile gereksiz kesintileri azaltması sağlanıyor. Ayrı bir hafıza sistemi, tamamlanan adımları ve bekleyen istekleri izleyerek modelin yalnızca konuşma zamanını ve içeriğini seçmesine yardımcı oluyor.\n\nDeney sonuçları, StreamVibe-VL'nin yanıt zamanlaması ve kalitesinde diğer modellere göre %10,7'lik bir iyileşme sağladığını gösterdi. Ek olarak, hafıza sistemi proaktif etkileşimi %12,3 artırarak gereksiz kesintileri azalttı. Ancak video uzunluğu arttıkça tüm modellerin doğru anı yakalama başarısı düşüyor; özellikle beş dakikadan uzun videolarda yanıt zamanlaması %61,5 kadar gerilebiliyor. StreamVibe-VL, temel model ve açık kaynak alternatiflerinin çoğunu geride bırakırken, Google'ın tescilli Gemini 3.8 Flash bazı testlerde daha yüksek puan alıyor. Uzun videolarda modelin geçmiş yanıtları birikerek hataları artırması, içerik kalitesi metriğinde ciddi düşüşlere yol açıyor.\n\nGoogle, bu araştırmayı Gemini serisiyle entegre video analiz yeteneklerini genişletme çabalarının bir parçası olarak konumlandırıyor. Gelecek çalışmalar, gerçek dünya ortamlarındaki kullanıcı tercihleri ve çevresel faktörlerin asistan davranışına etkisini incelemeyi hedefliyor. StreamVibe, yalnızca videoyu betimlemek yerine, doğru adımda spesifik öneriler sunarak video asistanlarının yeni bir kullanım senaryosuna öncülük ediyor.",
+  "onemli_maddeler": [
+    "StreamVibe, kullanıcıların açık, örtük ve değişen niyetlerini algılayarak yalnızca gerektiğinde konuşuyor.",
+    "Benchmark testinde yanıt zamanlaması ve kalitesinde %10,7 iyileşme, hafıza sistemiyle %12,3 ek proaktif etkileşim sağlandı.",
+    "Video uzunluğu arttıkça tüm modellerin doğru anı yakalama başarısı %61,5 oranında düşüyor.",
+    "Model, Qwen3.5-9B tabanlı olup pekiştirmeli öğrenme ve ayrı bir hafıza sistemiyle destekleniyor."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "Video tabanlı yapay zeka asistanlarının kesintisiz ve bağlamsal yardım sunma yeteneği, hem tüketici uygulamaları hem de endüstriyel otomasyon için kritik bir adım oluşturuyor.",
+  "etiketler": [
+    "video AI",
+    "asistan",
+    "benchmark",
+    "Google",
+    "multimodal"
+  ],
+  "anilan_modeller": [
+    "StreamVibe-VL",
+    "Gemini 2.5 Flash",
+    "Gemini 3.8 Flash",
+    "Qwen3.5-9B",
+    "JoyAI"
+  ],
+  "yorum_tr": "StreamVibe, video asistanlarının yalnızca betimleme yapmaktan çıkıp bağlamsal ve zamanlamalı öneriler sunmasını sağlayarak geliştiricilere yeni bir prototip sunuyor; kullanıcı deneyimi açısından kesintisiz yardım, verimliliği artırabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "StreamVibe-VL",
+      "benchmark": "Yanıt Zamanlaması ve Kalite İyileştirmesi",
+      "skor": 10.7,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "StreamVibe-VL improves response timing and quality by 10.7 percent over other models"
+    },
+    {
+      "model": "StreamVibe-VL hafıza sistemi",
+      "benchmark": "Proaktif Etkileşim Artışı",
+      "skor": 12.3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "the memory system is designed to boost proactive interaction by another 12.3 percent"
+    },
+    {
+      "model": "Tüm Test Edilen Modeller",
+      "benchmark": "İçerik Metriği Düşüşü (Uzun Videolarda)",
+      "skor": 61.5,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "a key content metric for the responses drops by up to 61.5 percent based on the system's own history"
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/11/02-streamvibe-kochassistent-1920x1080-1.jpg",
+  "url": "https://the-decoder.com/google-wants-video-ai-to-understand-what-people-need-as-they-workgoogle-researchers-are-teaching-a-video-assistant-when-to-offer-help/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-01T11:25:21.000Z",
+  "slug": "google-wants-video-ai-to-understand-what-people-need-as-they"
+}

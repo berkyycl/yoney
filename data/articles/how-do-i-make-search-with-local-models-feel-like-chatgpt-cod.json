@@ -1,0 +1,36 @@
+{
+  "baslik_tr": "Yerel LLM'lerle Arama Deneyimini ChatGPT Kalitesine Nasıl Çıkarabilirim?",
+  "ozet_tr": "Kullanıcı, Crawl4AI ve SearXNG entegrasyonunu yerel modellerle (GLM 5.3 Flash, DeepSeek V4.1 Flash 1017) kullanırken sonuçların yetersiz ve eski olduğunu belirtiyor. ChatGPT ve Codex'in sunduğu kapsamlı ve güncel araştırma kalitesine ulaşmak için hangi ayarlamaların veya ek araçların gerektiğini soruyor.",
+  "detayli_icerik_tr": "Reddit'in LocalLLaMA topluluğunda bir kullanıcı, yerel büyük dil modelleri (LLM) ile yapılan web arama ve araştırma süreçlerinin ChatGPT ya da Codex kadar tatmin edici olmadığını dile getirdi. Kullanıcı, Crawl4AI ve SearXNG kombinasyonunu \"en güncel ve ilgili bilgiler\" talimatıyla yönlendiriyor, ancak elde edilen yanıtların eksik, eski ya da alakasız içerik barındırdığını belirtiyor.\n\nBahsedilen yerel modeller arasında GLM 5.3 Flash ve DeepSeek V4.1 Flash 1017 bulunuyor. Bu modeller, ZCode, DeepSeek Harness ve OpenCode gibi farklı harness (araç) setleriyle çalıştırılıyor. Kullanıcı, bu kombinasyonların sonuç kalitesini artırmak için olası ayar değişiklikleri, ek bileşenler ya da farklı bir arama stratejisi arıyor.\n\nTopluluk üyelerinin önerileri arasında, SearXNG'nin sorgu ön işleme parametrelerini (ör. sonuç sayısı, filtreleme, tarih aralığı) optimize etmek, Crawl4AI'nin veri toplama sıklığını artırmak ve model prompt'larını daha detaylı ve yapılandırılmış hale getirmek yer alıyor. Ayrıca, yerel modellerin bilgi kesim tarihleri (cutoff) göz önünde bulundurularak, güncel veri kaynaklarını dışarıdan besleyen bir önbellek ya da RAG (Retrieval‑Augmented Generation) katmanı eklenmesi öneriliyor.\n\nKullanıcı, bu sorunun sadece teknik bir eksiklik mi yoksa yerel modellerin temel bilgi tabanı sınırlamaları mı olduğunu da sorguluyor. Topluluk, model ince ayarı (fine‑tuning) ve daha geniş veri setleriyle yeniden eğitimin, özellikle güncel web içeriğiyle entegrasyonun kalitesini artırabileceğini vurguluyor.",
+  "onemli_maddeler": [
+    "Crawl4AI + SearXNG entegrasyonu, yerel LLM'lerde beklenen güncel ve kapsamlı sonuçları vermekte zorlanıyor.",
+    "GLM 5.3 Flash ve DeepSeek V4.1 Flash 1017 gibi modeller, ZCode, DeepSeek Harness ve OpenCode harness'larıyla çalıştırılıyor.",
+    "Sorgu ön işleme, veri toplama sıklığı ve prompt mühendisliği gibi ayarlar, sonuç kalitesini artırmak için kritik."
+  ],
+  "kategori": "diger",
+  "onem": 2,
+  "onem_gerekce": "Yerel LLM'lerin araştırma ve arama senaryolarındaki performans eksikliği, geliştiricilerin ve hobbyistlerin beklentilerini karşılamıyor; ancak konu hâlâ niş bir topluluk tartışması olduğu için sektörel etkisi sınırlı.",
+  "etiketler": [
+    "yerel-modeller",
+    "arama",
+    "Crawl4AI",
+    "SearXNG",
+    "LLM"
+  ],
+  "anilan_modeller": [
+    "GLM 5.3 Flash",
+    "DeepSeek V4.1 Flash 1017",
+    "ZCode",
+    "DeepSeek Harness",
+    "OpenCode"
+  ],
+  "yorum_tr": "Yerel modellerin güncel web verisiyle entegrasyonu hâlâ gelişim aşamasında; doğru ayarlar ve RAG mimarileriyle bu boşluk kapatılabilir, ancak tam anlamıyla ChatGPT seviyesine ulaşmak için daha kapsamlı veri güncellemeleri ve ince ayarlar gerekir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://substackcdn.com/image/fetch/$s_!w1ai!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F98ebec9f-115a-4896-926d-5461220de62a_10126x2817.png",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xkm2yb/how_do_i_make_search_with_local_models_feel_like/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-31T21:37:26.000Z",
+  "slug": "how-do-i-make-search-with-local-models-feel-like-chatgpt-cod"
+}
