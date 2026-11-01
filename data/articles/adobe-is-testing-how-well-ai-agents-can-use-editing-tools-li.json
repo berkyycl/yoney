@@ -1,0 +1,58 @@
+{
+  "baslik_tr": "Adobe ve UC San Diego, Photoshop gibi araçları profesyonel gibi kullanan EditAgent adlı AI editörünü test ediyor",
+  "ozet_tr": "Adobe Research ve UC San Diego, görüntü düzenleme görevlerini alt adımlara bölerek genel amaçlı bir editörle uzman araçları eşleştiren EditAgent adlı bir yapay zeka sistemini tanıttı. Sistem, paralel olarak oluşturulan varyantları standart bir dil modeliyle sayısal doğrulama verileri üzerinden değerlendirerek, önceki AI ajanlarından on kat daha fazla işlem gücü harcasa da çok daha doğru sonuçlar elde ediyor.",
+  "detayli_icerik_tr": "Adobe Research ve Kaliforniya Üniversitesi, San Diego (UCSD) ortaklığıyla geliştirilen EditAgent, bir görüntü düzenleme isteğini bağımlı adımlara ayırıyor ve her adımda genel amaçlı bir editörü (ör. Flux-2-Klein-9B) ilgili uzman araçlarla (keskinleştirme, döndürme, yakınlaştırma vb.) karşılaştırıyor. Oluşturulan her varyant için yakın plan kırpması, değişim haritası ve parlaklık‑renk istatistikleri gibi doğrulama kayıtları hazırlanıyor; bu sayısal veriler, değiştirilmemiş bir dil modeli tarafından tek bir geçişte en iyi sonucu seçmek için kullanılıyor.\n\n600 editörlük bir benchmarkta, beş profesyonel tarafından kör olarak değerlendirilen sonuçlarda, genel amaçlı editör Flux-2-Klein-9B %42,7 oranında kullanılabilir bir çıktı üretemedi. Uzman araçlar bu başarısızlıkların yaklaşık iki‑üçte birini (özellikle keskinleştirme, döndürme ve yakınlaştırma) düzeltti. Ayrıca, aynı editörün tekrar tekrar denenmesi başarıyı çok az artırdı.\n\nAraştırmacılar, adım‑adım iyileştirme yerine orijinal görüntüden paralel olarak birden çok varyant üretmenin daha etkili olduğunu gösterdi. Profesyoneller, paralel oluşturulan varyantları %78,5 oranında tercih etti ve bu yöntem değerlendirme geçiş sayısını yarıya indirdi. EditAgent, bu iki bulguyu birleştirerek her adımda hem genel editörü hem de uygun uzman araçları aynı anda çalıştırıyor ve standart bir dil modeliyle en iyi sonucu seçiyor.\n\nDoğrulama kayıtları sayesinde, yedi farklı dil modeli de ince ayarlı değerlendirme modellerini geride bıraktı. Örneğin, Qwen3.8‑27B modeli, kullanılabilir bir seçimi %81,3 oranında yaparken, en güçlü ince ayarlı model EditScore‑72B %74,8 başarı gösterdi. EditAgent, açık kaynak editörleri Qwen‑Image‑Edit‑2511 ve Flux‑2‑Klein‑9B'yi üç benchmarkta iyileştirdi ve EdiVal benchmarkında ticari modeller Seedream 4.0 ve GPT‑Image‑1.5'i geride bıraktı. Ancak bu performans, tek bir editöre kıyasla yaklaşık on kat daha fazla hesaplama gücü gerektiriyor. EditAgent ayrıca 26 000 doğrulanmış eğitim örneği üreterek, bu verilerle yeniden eğitilen editörlerin tüm benchmarklarda daha iyi sonuç vermesini sağladı.",
+  "onemli_maddeler": [
+    "EditAgent, genel amaçlı editörle uzman araçları paralel çalıştırıp sayısal doğrulama verileriyle en iyi sonucu seçiyor.",
+    "Paralel varyant üretimi, adım‑adım iyileştirmeye göre %78,5 daha yüksek profesyonel tercih oranı sağladı.",
+    "Doğrulama kayıtlarıyla desteklenen standart dil modelleri, ince ayarlı değerlendirme modellerini %81,3‑%74,8 oranında geride bıraktı.",
+    "Sistem, 10 kat daha fazla hesaplama gerektirse de 26 000 yüksek kaliteli eğitim örneği üreterek daha hızlı editörlerin performansını artırıyor."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "Görüntü düzenleme alanında AI ajanlarının araç seçimi ve çıktı doğrulaması konusundaki yeni yaklaşımı, hem akademik hem de endüstriyel uygulamalarda kaliteyi artırma potansiyeli taşıdığı için sektörel etkisi yüksek bir araştırma olarak değerlendirildi.",
+  "etiketler": [
+    "yapay zeka",
+    "görüntü düzenleme",
+    "Adobe",
+    "benchmark",
+    "EditAgent"
+  ],
+  "anilan_modeller": [
+    "Flux-2-Klein-9B",
+    "Qwen3.8-27B",
+    "EditScore-72B",
+    "Qwen-Image-Edit-2511",
+    "Flux-3 Image Klein",
+    "Seedream 4.0",
+    "GPT-Image-1.5"
+  ],
+  "yorum_tr": "EditAgent, doğrulama verileriyle desteklenen dil modellerinin değerlendirme gücünü göstererek, gelecekte daha az hesaplama maliyetli ama yüksek kaliteli editörlerin eğitilmesine olanak tanıyabilir. Geliştiriciler, bu yöntemi veri üretiminde kullanarak kendi modellerini hızla iyileştirebilir; kullanıcılar ise daha tutarlı ve profesyonel sonuçlar elde edecektir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen3.8-27B",
+      "benchmark": "600-edit benchmark (usable pick rate)",
+      "skor": 81.3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "pick usable result among candidates",
+      "kaynak_metinden_alinti": "Qwen3.8-27B made a usable pick 81.3 percent of the time, compared to 74.8 percent for EditScore-72B."
+    },
+    {
+      "model": "Flux-2-Klein-9B",
+      "benchmark": "600-edit benchmark (failure rate)",
+      "skor": 42.7,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "percentage of edits resulting in unusable output",
+      "kaynak_metinden_alinti": "general-purpose editor Flux-2-Klein-9B failed to produce a usable result 42.7 percent of the time."
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/11/adobe_logo-2.png",
+  "url": "https://the-decoder.com/adobe-is-testing-how-well-ai-agents-can-use-editing-tools-like-a-photoshop-professional-would/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-01T14:56:44.000Z",
+  "slug": "adobe-is-testing-how-well-ai-agents-can-use-editing-tools-li"
+}

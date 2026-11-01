@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "Heretic 2.0 Yayınlandı: Model Değişikliği Artık Herkes İçin",
+  "ozet_tr": "Heretic projesi, beş aylık geliştirme sürecinin ardından Heretic 2.0 sürümünü yayınladı. Yeni sürüm, sansür kaldırmanın ötesinde, çok yönlü model yönlendirme, eklenti tabanlı mimari ve gelişmiş skorlayıcılar sunarak LLM'lerde davranış kontrolünü genişletiyor.",
+  "detayli_icerik_tr": "Heretic, GitHub'da 37 bin yıldız ve Hugging Face üzerinde 8 500'den fazla model ile toplam 88 milyon indirme sayısına ulaşmış bir açık kaynak projesi. 2.0 sürümü, sadece sansür kaldırma işlevini iyileştirmekle kalmayıp, genel amaçlı model değişikliği platformu haline geliyor. Yeni \"Arbitrary‑Rank Ablation\" (ARA) yöntemi, geleneksel tek yönlü \"abliteration\" yaklaşımını geride bırakarak, modelin residual uzayındaki temsilleri herhangi bir rütbeye sınırlamadan optimize ediyor. Bu mikro‑eğitim tarzı, L‑BFGS optimizasyonu ile matrisleri tek tek değiştirerek istenen davranışı şekillendiriyor.\n\nSürüm, tamamen eklenti (plugin) temelli bir mimariye taşındı. Scorer eklentileri, modelin hangi metrikler üzerinden optimize edileceğini tanımlarken, Modifier eklentileri ARA gibi yönlendirme yöntemlerini uygular. Kullanıcılar, basit bir Python dosyasıyla kendi eklentilerini yazıp yükleyebiliyor ve aynı anda birden fazla skoru minimize ya da maksimize edebiliyor. Varsayılan olarak hâlâ \"refusal count\" ve KL‑divergence skorları bulunuyor, ancak yeni benchmark ve BERT sınıflandırıcı eklentileri, yanıt kalitesini daha hassas ölçümle destekliyor.\n\nHeretic 2.0 artık etkileşimsiz (non‑interactive) çalışabiliyor; bu sayede tam uç‑uç testler uygulanarak kalite kontrolü sıkılaştırıldı. Model desteği, hiper‑bağlantılı ve \"thinking\" modelleri kapsayacak şekilde genişletildi. Ancak yeni sürüm, 1.x konfigürasyonlarıyla geriye dönük uyumlu değil; kullanıcıların eski ayarlarını yeni yapılandırma dosyasına göre güncellemeleri gerekiyor. Örnek bir kullanım hâlâ basit: `heretic Qwen/Qwen3.5-4B` komutuyla sansür kaldırma gerçekleştirilebiliyor.\n\nTopluluk katkıları da sürümde kritik bir rol oynadı. kabachuha, ARA'yı Heretic'in LoRA sistemiyle uyumlu hâle getirdi; varunbln ise performans iyileştirmeleri sağladı. Scorer eklentileri, uzun süredir projeye katkıda bulunan red40maxxer ve Vinay Umrethe gibi geliştiricilerin emeğiyle şekillendi. Bu ekosistem, araştırmacıların ve geliştiricilerin kendi yönlendirme stratejilerini hızlıca prototiplemesini mümkün kılıyor.",
+  "onemli_maddeler": [
+    "Arbitrary‑Rank Ablation (ARA) ile yönlendirme artık rank sınırlamasına tabi değil.",
+    "Tamamen eklenti tabanlı mimari; scorer ve modifier eklentileriyle özelleştirilebilir optimizasyon.",
+    "Scorer eklentileri sayesinde anahtar kelime sayımı dışındaki ölçütlerle model kalitesi ölçülebilir.",
+    "Etkinlikli uç‑uç testler ve non‑interactive çalışma desteği kalite kontrolünü artırdı.",
+    "Model desteği hiper‑bağlantılı ve düşünme yeteneği yüksek modelleri kapsayacak şekilde genişletildi."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Heretic 2.0, LLM'lerde davranış kontrolü ve sansür kaldırma konularında yeni bir açık kaynak altyapı sunarak geliştiricilerin ve araştırmacıların model yönlendirmesini özelleştirmesini büyük ölçüde kolaylaştırıyor.",
+  "etiketler": [
+    "sansür kaldırma",
+    "model değişikliği",
+    "plugin",
+    "ARA",
+    "LLM"
+  ],
+  "anilan_modeller": [
+    "Qwen/Qwen3.5-4B"
+  ],
+  "yorum_tr": "Heretic 2.0, açık kaynak topluluğuna model davranışı üzerinde ince ayar yapma imkanı tanıyarak, etik ve güvenlik odaklı LLM uygulamalarının geliştirilmesini hızlandırabilir. Geliştiriciler, eklenti sistemi sayesinde kendi ölçütlerini tanımlayarak daha kontrollü ve kaliteli modeller elde edebilecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://storage.ghost.io/c/6b/16/6b16ac9c-cd67-432f-b0f3-bbec941084ff/content/images/2026/02/heretic_2843590235872385796283975.png",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xl2tcm/heretic_20_released_model_modification_for/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-01T13:16:24.000Z",
+  "slug": "heretic-2-0-released-model-modification-for-everyone"
+}
