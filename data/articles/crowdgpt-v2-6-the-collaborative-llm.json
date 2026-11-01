@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "CrowdGPT v2.6: Açık Kaynaklı İşbirlikçi LLM Güncellemesi",
+  "ozet_tr": "CrowdGPT projesi, veri merkezlerine ve büyük bütçelere ihtiyaç duymadan 1 milyar parametreli bir dil modeli oluşturma hedefiyle, v2.6 sürümünde büyük bir güncelleme aldı. Yeni sürüm, 6 gün içinde 4,5 milyar token eğitimi, güvenlik iyileştirmeleri ve açık kaynaklı bir benchmark sistemi sunuyor.",
+  "detayli_icerik_tr": "CrowdGPT, topluluk üyelerinin kişisel bilgisayarlarını kullanarak ortak bir dil modeli eğitmesini sağlayan bir protokol üzerine kurulu. Proje, veri merkezlerine bağımlı olmadan, açık ve işbirlikçi bir yaklaşımla 1 milyar parametreli bir modelin eğitilebileceğini kanıtlamayı amaçlıyor ve daha büyük yoğun modeller ya da MoE mimarileri için ölçeklenebilir bir temel sunuyor.\n\nv2.6 güncellemesi, topluluktan gelen güvenlik odaklı geri bildirimlerin büyük bir kısmını hayata geçirdi. Sunucu tarafında daha sağlam kontrol mekanizmaları eklendi, istemci kurulumu ve GPU seçimi iyileştirildi, çökme sorunları büyük ölçüde giderildi. Ayrıca, istemci kodu artık yalnızca geliştiricinin cihazında bulunan bir anahtar ile kriptografik olarak imzalanıyor, böylece otomatik güncellemeler üzerinden kötü amaçlı kod yürütülmesi riski ortadan kalktı.\n\nYeni sürümde \"Engrams\" özelliği Crowd‑v1 modeline aktarılarak gerçek‑bilgi hatırlama yeteneği artırıldı ve 400 KB'tan fazla topluluk verisi, doğrulama ve kürasyon süreçlerinden geçtikten sonra eğitimde kullanılmak üzere bir veri gönderim hattı oluşturuldu. Güvenlik açısından, Byzantine çapraz‑kontrollerle aynı veriyi üç farklı istemci aynı anda işleyerek sahte katkıların ve zehirleme saldırılarının etkisi büyük ölçüde azaltıldı; kötü niyetli bir istemcinin bir turda yalnızca %2‑3 oranında zararlı veri ekleyebilmesi sağlandı.\n\nİlk kez tanıtılan CrowdBench, topluluk tarafından eklenebilen deterministik cevaplı genel zekâ sorularıyla LLM'leri test etmeyi amaçlayan açık kaynaklı bir benchmark platformu. Kod tabanı hâlâ erken aşamada olsa da, çalışır durumda ve geliştiricilerin model performansını standart bir çerçevede ölçmesine olanak tanıyor.",
+  "onemli_maddeler": [
+    "Topluluk temelli, veri merkezi ve büyük bütçe gerektirmeyen işbirlikçi LLM eğitimi",
+    "v2.6 ile 6 günde 4,5 milyar token eğitildi, önceki iki ayın süresine kıyasla %100'den fazla hız artışı",
+    "Kriptografik imzalı istemci ve Byzantine çapraz‑kontrollerle güvenlik ve zehirleme riskleri azaltıldı",
+    "Veri gönderim hattı ve önceden doğrulanmış 400 KB veri setiyle işbirlikçi veri toplama",
+    "CrowdBench: açık kaynaklı, topluluk katkılı LLM benchmark platformu"
+  ],
+  "kategori": "guncelleme",
+  "onem": 3,
+  "onem_gerekce": "Proje, açık kaynak toplulukları için yenilikçi bir işbirlikçi eğitim modeli sunuyor ancak henüz geniş çaplı ticari uygulamalara dönüşmemiştir; bu yüzden sektörel etkisi sınırlı ama ilgi çekicidir.",
+  "etiketler": [
+    "açık kaynak",
+    "LLM",
+    "işbirlikçi eğitim",
+    "güvenlik",
+    "benchmark"
+  ],
+  "anilan_modeller": [
+    "CrowdGPT v2.6",
+    "CrowdGPT v1"
+  ],
+  "yorum_tr": "CrowdGPT v2.6, açık kaynak topluluğunun büyük ölçekli dil modeli geliştirme konusundaki deneyimini artırıyor ve güvenlik önlemleriyle daha güvenilir bir federated öğrenme ortamı sunuyor. Ancak, henüz sınırlı kullanıcı tabanı ve performans ölçütleri nedeniyle etkisi zamanla netleşecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/4zhosp53cuyh1.png?width=640&crop=smart&auto=webp&s=f7fadf482d0bd42161f137edadca370a304b82ba",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xkibxw/crowdgpt_v26_the_collaborative_llm/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-31T18:57:36.000Z",
+  "slug": "crowdgpt-v2-6-the-collaborative-llm"
+}

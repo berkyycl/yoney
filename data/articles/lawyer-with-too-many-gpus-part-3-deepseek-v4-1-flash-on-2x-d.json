@@ -1,0 +1,62 @@
+{
+  "baslik_tr": "DeepSeek-V4.1-Flash, 2x DGX Spark + 3090 kutusu ile 2,600+ tok/s prefill 256K ve 322 tok/s yapılandırılmış çıktı",
+  "ozet_tr": "DeepSeek-V4.1-Flash modeli, iki DGX Spark sunucusu ve ek bir 3090 kutusuyla çalıştırılarak 256K promptta 2,618 tok/s prefill hızı ve dört akışta 322 tok/s yapılandırılmış JSON çıktısı elde edildi. KV önbellek kapasitesi 1.93M tokena ulaşırken, ilk token gecikmesi 58.6 saniyeden 2.58 saniyeye düştü. Model, gerçek dünyadaki araç‑çağrı testinde %95.9 doğruluk gösterdi.",
+  "detayli_icerik_tr": "Nick Mermiges, PLI Labs kurucusu ve \"lawyer with too many GPUs\" projesinin yürütücüsü, DeepSeek-V4.1-Flash-1017 modelini iki DGX Spark sunucusu ve bir EPYC tabanlı 3090 kutusuyla birleştirerek yeni bir benchmark ortamı oluşturdu. Model, EXL3 2.75 bpw quantizasyonu ve vLLM tensor paralelliğiyle çalıştırıldı; 3090 kutusu ise Engram tablolarını sistem RAM'inde tutup RDMA üzerinden Spark'lara hizmet veriyor ve NVLinked çift 3090'da spekülatif drafter'ı çalıştırıyor.\n\nBu yapılandırmada KV önbellek havuzu 1.93 milyon tokena, NVMe üzerindeki prefix cache ise 150 000 tokena kadar genişletildi; böylece bir sunucu yeniden başlatıldığında 150 K uzunluğundaki bir prompt kaybolmadı. İlk token yanıt süresi soğuk durumda 58.6 saniyeden 2.58 saniyeye düşürülerek büyük bir iyileşme sağlandı. Prefill hızı, 4 K'dan 256 K'ya kadar tüm prompt uzunluklarında 2,600+ tok/s seviyelerinde sabit kaldı; özellikle 256 K promptta 2,618 tok/s elde edildi.\n\nYapılandırılmış çıktı (JSON) performansı dört akışta 322 tok/s iken, tek akışta 138 tok/s olarak ölçüldü. Kod üretiminde dört akışta 192 tok/s, tek akışta 110 tok/s; prose (temp 0) tek akışta 66 tok/s, dört akışta 130 tok/s; temp 0.7'de ise 56 ve 105 tok/s olarak kaydedildi. Bu değerler, MiaAI ve bertholomus gibi rakiplerin aynı testlerdeki sonuçlarıyla karşılaştırıldığında prefill aşamasında üstünlük sağlasa da, prose üretiminde ve 128 K sonrası decode hızında geride kalıyor.\n\nGerçek iş akışlarında modelin doğruluğu da test edildi: sudoingX'in KLD panelinde araç‑çağrı tahminleri, orijinal modelin en yüksek olasılıklı tokeniyle %95.9 oranında aynıydı (KLD 0.018). Bu, bertholomus'un %79.4'lük performansının çok üzerindedir. Tüm kod, başlatma betikleri, benchmark araçları ve ham JSON sonuçları GitHub reposunda (https://github.com/ProprietaryLegal/DeepSeek-V4.1-Flash-2xDGX-Spark-x86-offload) açıkça paylaşıldı; sadece prefix‑cache kodu bir sonraki güncellemede yayınlanacak.",
+  "onemli_maddeler": [
+    "256K promptta 2,618 tok/s prefill hızı, rakiplerden belirgin üstünlük.",
+    "4 akışta yapılandırılmış JSON çıktısı 322 tok/s, kod üretiminde 192 tok/s.",
+    "KV cache 1.93M token, prefix cache 150K promptu sunucu yeniden başlatmada korur.",
+    "İlk token gecikmesi 58.6 s'den 2.58 s'ye düşürülerek yanıt süresi dramatik olarak iyileştirildi.",
+    "Gerçek araç‑çağrı testinde %95.9 doğruluk, KLD 0.018 ile rakiplerin çok üzerinde."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Derinlemesine bir donanım‑yazılım entegrasyonu ve kapsamlı benchmark sonuçları, büyük ölçekli LLM dağıtımları ve on‑prem AI çözümleri için kritik performans göstergeleri sunuyor.",
+  "etiketler": [
+    "DeepSeek",
+    "DGX Spark",
+    "GPU inference",
+    "benchmark",
+    "LLM"
+  ],
+  "anilan_modeller": [
+    "DeepSeek-V4.1-Flash-1017"
+  ],
+  "yorum_tr": "Bu benchmark, yüksek bellek kapasiteli GPU kümelerinin LLM ön‑bellekleme ve uzun bağlam performansını nasıl artırabileceğini gösteriyor; geliştiriciler benzer mimarileri benimseyerek yanıt süresini ve throughput'u önemli ölçüde iyileştirebilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "DeepSeek-V4.1-Flash-1017",
+      "benchmark": "Structured output (JSON) 4 streams",
+      "skor": 322,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "stream=4",
+      "kaynak_metinden_alinti": "Structured output (JSON) 138 tok/s 322 tok/s"
+    },
+    {
+      "model": "DeepSeek-V4.1-Flash-1017",
+      "benchmark": "First token latency (cold start)",
+      "skor": 2.58,
+      "birim": "s",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "First token comes back in 2.58 s instead of 58.6 s cold."
+    },
+    {
+      "model": "DeepSeek-V4.1-Flash-1017",
+      "benchmark": "Tool‑call accuracy on sudoingX KLD panel",
+      "skor": 95.9,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "on sudoingX's KLD panel, real tool-call turns agree with the original model's top token 95.9% of the time"
+    }
+  ],
+  "gorsel_url": "https://external-preview.redd.it/lawyer-with-too-many-gpus-part-3-deepseek-v4-1-flash-on-2x-v0-v-fGADbeQGIYwNdiUWf0P7xmVj-pW6YxWxDHvdopcYk.png?width=1080&crop=smart&auto=webp&s=e2afdc54f191c67cafce3e91b920ce36932be5e7",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xk20x5/lawyer_with_too_many_gpus_part_3_deepseekv41flash/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-31T05:32:04.000Z",
+  "slug": "lawyer-with-too-many-gpus-part-3-deepseek-v4-1-flash-on-2x-d"
+}

@@ -1,0 +1,81 @@
+{
+  "baslik_tr": "Motorunuz modelinizi lobotomize mi ediyor? Kısmen evet, ve ölçtüm",
+  "ozet_tr": "Yerel bir LLaMA topluluğu üyesi, MoE (Mixture of Experts) modellerinde kullanılan hız artırıcı bayrakların model doğruluğunu ne kadar etkilediğini ölçtü. Qwen 3.8 Flash Next modeli ve Basalt motoru üzerinde yapılan testlerde, “routing bias” ve “tail skip” gibi seçeneklerin KLD ve görev performansını ciddi şekilde düşürdüğü ortaya çıktı.",
+  "detayli_icerik_tr": "Reddit kullanıcısı jesdga95, Qwen 3.8 Flash Next modelini Basalt motoru ile çalıştırarak iki yaygın \"speed\" bayrağını (routing bias ve tail skip) inceleyen bir deney tasarladı. Bu bayraklar, GPU belleğine sığmayan uzmanları atlayarak ya da mevcut uzmanlara yönlendirerek yanıt süresini kısaltıyor, ancak modelin çıktısında tutarsızlıklara yol açıyor. Deney, RTX 5090 + RTX 5060 Ti ve 128 GB DDR5 sistemde, farklı kuantizasyon paketleri ve bayrak kombinasyonlarıyla yürütüldü.\n\nKLD (Kullback‑Leibler Divergence) ölçümleri, referans olarak kullanılan llama.cpp Q8 modeline göre karşılaştırıldı. En düşük KLD 0.031 (Q8_0 exact) iken, en kötü ayar (Q8_0 + worst) 1.616'ya yükseldi; bu, modelin kalite kaybının neredeyse 50 kat artması demekti. Benzer bir düşüş, top‑1 doğruluk oranında da gözlendi; en iyi durumda %94.1 iken, en kötü senaryoda %56.8'e geriledi.\n\nGörev bazlı değerlendirmelerde de aynı trend ortaya çıktı. 300 adımlık zincirli mantık soruları (Ladders) ve 1.200 gerçek bilgi sorusu (Facts) setlerinde, \"shipped\" bayrakları hafif bir düşüş (≈1‑2 puan) getirirken, \"worst\" ayarları Ladders testinde %18.8, Facts testinde ise %35.3'lük dramatik bir gerilemeye neden oldu. Küçük GPU'larda (16 GB sınırı) hız artışı %56 iken, doğruluk kaybı çok daha belirgin oldu.\n\nEk olarak, model ağırlıklarında bir döngü hatası tespit edildi; belirli bir prompt, modelin sıfır token'ları üretmeye takılıp kalmasına yol açtı. Bu sorun, hem Basalt hem de OpenRouter API üzerinden gelen yanıtlarla aynı oranda ortaya çıktı ve 256 aynı token'dan sonra kesilerek düzeltildi. Sonuç olarak, motorun hızı artırmak için kullanılan bu \"hack\"ler ücretsiz değildir; özellikle düşük bellekli kartlarda modelin hatırlama ve çok adımlı mantık yetenekleri ciddi şekilde zarar görüyor.",
+  "onemli_maddeler": [
+    "Routing bias ve tail skip gibi hız artırıcı bayraklar, modelin KLD skorunu 0.031'den 1.616'ya yükselterek kalite kaybına yol açıyor.",
+    "En kötü ayarlarda, fakt bazlı testlerde doğruluk %38'den %3'e düşüyor; zincirli mantık görevlerinde ise %18.8'lik bir gerileme görülüyor.",
+    "Küçük GPU'larda (16 GB) hız artışı %56 iken, doğruluk kaybı çok daha yüksek; büyük kartlarda etkisi çok daha az.",
+    "Model ağırlıklarında tespit edilen döngü hatası, tüm kuantizasyon seviyelerinde aynı oranda ortaya çıkıyor ve 256 aynı token sonrası kesilerek düzeltildi."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "MoE modellerinde yaygın olarak kullanılan hız artırıcı ayarların doğruluk üzerindeki etkisi, geliştiricilerin ve kullanıcıların performans‑kalite dengesini yeniden değerlendirmesini gerektirecek kadar kritik bir bulgu sunuyor.",
+  "etiketler": [
+    "MoE",
+    "quantization",
+    "engine",
+    "benchmark",
+    "performance"
+  ],
+  "anilan_modeller": [
+    "Qwen 3.8 Flash Next",
+    "Basalt",
+    "llama.cpp"
+  ],
+  "yorum_tr": "Bu bulgular, hız odaklı motor ayarlarının model güvenilirliğini ciddi şekilde zedeleyebileceğini gösteriyor; geliştiricilerin varsayılan ayarları gözden geçirmesi ve kullanıcıların performans‑kalite trade‑off'larını bilinçli seçmesi gerekiyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Q8_0 exact",
+      "benchmark": "KLD",
+      "skor": 0.031,
+      "birim": "",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "KLD mean",
+      "kaynak_metinden_alinti": "Q8_0 exact 178 GiB 3.276 0.031 94.1%"
+    },
+    {
+      "model": "NVFP4 + shipped",
+      "benchmark": "KLD",
+      "skor": 0.348,
+      "birim": "",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "KLD mean",
+      "kaynak_metinden_alinti": "NVFP4 + shipped 122 GiB 3.931 0.348 81.8%"
+    },
+    {
+      "model": "IQ3_S + shipped",
+      "benchmark": "KLD",
+      "skor": 0.244,
+      "birim": "",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "KLD mean",
+      "kaynak_metinden_alinti": "IQ3_S + shipped 81 GiB 3.583 0.244 84.3%"
+    },
+    {
+      "model": "Q8_0 + worst",
+      "benchmark": "KLD",
+      "skor": 1.616,
+      "birim": "",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "KLD mean",
+      "kaynak_metinden_alinti": "Q8_0 + worst 178 GiB 12.858 1.616 56.8%"
+    },
+    {
+      "model": "Q8_0 + worst",
+      "benchmark": "Facts accuracy",
+      "skor": 2.7,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Facts Δ",
+      "kaynak_metinden_alinti": "Q8_0 + worst 26.6 2.7 -18.8 -35.3 379"
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/i-asked-an-unrestricted-intelligence-system-whats-the-v0-a8ovlpdtvoug1.jpg?width=640&crop=smart&auto=webp&s=3a50535b54a3e9b19168319a6db47d215a88cc07",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xkbbqi/is_your_engine_lobotomizing_your_model_kinda_and/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-10-31T14:14:51.000Z",
+  "slug": "is-your-engine-lobotomizing-your-model-kinda-and-i-measured"
+}
