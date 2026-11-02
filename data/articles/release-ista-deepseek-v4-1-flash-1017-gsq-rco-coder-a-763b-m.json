@@ -1,0 +1,52 @@
+{
+  "baslik_tr": "ISTA DeepSeek-V4.1-Flash-1017 GSQ‑RCO Coder: 763B model 1 bit parametreyle",
+  "ozet_tr": "ISTA Deep Algorithms and Systems Lab, DeepSeek‑V4.1‑Flash‑1017 modelinin kod üretimi odaklı bir sürümünü 1 bitlik parametre sıkıştırmasıyla yayınladı. Model, yarı uzman (expert‑pruned) bir yapı kullanarak katman başına 192 uzman tutuyor ve orijinal 551.9 B transformer parametresinin %98,7'sini koruyor.",
+  "detayli_icerik_tr": "ISTADASLab, DeepSeek‑V4.1‑Flash‑1017 modelinin yeni bir \"Coder\" yapısını duyurdu. Bu sürüm, GSQ (Gumbel‑Softmax Quantization) ve RCO (Riemannian Constrained Optimization) teknikleriyle sıkıştırılarak 1 bit parametre başına düşen bir boyuta getirildi. Model, 384 yönlendirilmiş uzmana sahip katmanlarda her token için yalnızca 6 uzmanı aktif tutuyor; ancak yeni sürümde her katmanda 192 uzman (yarısı) korunarak hafıza tüketimi %48 azalıyor.\n\nSıkıştırma sürecinde, 72,1 GB'lık transformer ağırlıkları, orijinal 138,2 GB'lık IQ2_XXS sürümüne kıyasla büyük ölçüde küçültüldü. Parametre başına ortalama 2,06 bit kullanılan 280,1 B parametre, kalan uzmanların kalitesini korurken, kaldırılan uzmanlar sıfır bit olarak sayılıyor. Ortak Engram dosyası (110,6 GB) ve görsel projeksiyon dosyaları değişmeden kalıyor, böylece kullanıcılar bu dosyaları yalnızca bir kez indirmek zorunda kalıyor.\n\nGSQ, düşük bit genişliğinde skaler kuantizasyonun vektörel kuantizasyona yakın performans göstermesini sağlarken, standart GGUF formatlarıyla uyumlu kalıyor. RCO ise, her katman için kesin bir uzman bütçesi belirleyerek, bu bütçeyi kayıp fonksiyonunun gradyanı üzerinden optimize ediyor; böylece katmanlar arasında tutarlı bir uzman sayısı sağlanıyor ve ek dolgu (padding) ihtiyacı ortadan kalkıyor.\n\nPerformans açısından model, LiveCodeBench v6 testinde 88,57 puan alarak temel sürümün 89,71 puanına %98,7 oranında yaklaştı. SWE‑bench Verified testinde ise 77,00 puan elde etti; bu da orijinal 81,20 puanın %94,8'ine denk geliyor. Uzun vadeli kod üretimi senaryolarında hafıza kaybının etkisi daha belirgin olsa da, tek‑adım kod üretiminde performans kaybı minimal seviyede tutulmuş. Gerçek dünyadan örnekler arasında bisiklet süren bir pelikan SVG animasyonu, üç.js tabanlı voxel pagoda bahçesi ve oynanabilir bir voxel sandbox bulunuyor.",
+  "onemli_maddeler": [
+    "Model, 763,2 B parametreye rağmen ortalama 1 bitlik sıkıştırma sağlayarak 72,12 GB'lık bir boyuta indirildi.",
+    "GSQ ve RCO teknikleri, düşük bit genişliğinde yüksek kaliteyi korurken katman bazlı kesin uzman bütçesi sunuyor.",
+    "LiveCodeBench v6'da %98,7, SWE‑bench Verified'de %94,8 oranında orijinal performansa yakın sonuçlar elde edildi."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Büyük ölçekli (763 B) bir modelin 1 bitlik parametre sıkıştırması ve uzman‑pruned yapısı, depolama ve dağıtım maliyetlerini önemli ölçüde düşürürken kod üretiminde yüksek performans koruması sağlıyor; bu, geliştiriciler ve araştırmacılar için kritik bir ilerleme.",
+  "etiketler": [
+    "DeepSeek",
+    "GSQ",
+    "RCO",
+    "coder",
+    "quantization"
+  ],
+  "anilan_modeller": [
+    "DeepSeek-V4.1-Flash-1017",
+    "DeepSeek-V4.1-Flash-1017-GSQ-RCO-Coder-GGUF"
+  ],
+  "yorum_tr": "Bu sıkıştırma ve uzman‑pruning yaklaşımı, büyük dil modellerinin daha erişilebilir hâle gelmesini sağlayarak hem bulut hem de kenar (edge) uygulamalarda kullanım alanını genişletecek. Geliştiriciler, düşük depolama gereksinimiyle yüksek kaliteli kod üretimi yapabilecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "DeepSeek-V4.1-Flash-1017-GSQ-RCO-Coder",
+      "benchmark": "LiveCodeBench v6",
+      "skor": 88.57,
+      "birim": "score",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "LiveCodeBench v6: 88.57 against 89.71 for the base model, retaining 98.7%"
+    },
+    {
+      "model": "DeepSeek-V4.1-Flash-1017-GSQ-RCO-Coder",
+      "benchmark": "SWE-bench Verified",
+      "skor": 77,
+      "birim": "score",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "SWE-bench Verified: 77.00 against 81.20, retaining 94.8%"
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/g3qx4abmm7zh1.png?width=140&height=105&auto=webp&s=1c211cc02f7da0961d2d4f8a366197ead87c0cc8",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xlys6k/release_ista_deepseekv41flash1017_gsqrco_coder_a/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-02T14:33:20.000Z",
+  "slug": "release-ista-deepseek-v4-1-flash-1017-gsq-rco-coder-a-763b-m"
+}

@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "Qodo, Codex eklentisiyle AI kod incelemesine bağlamsal bilgi ekliyor",
+  "ozet_tr": "Qodo, OpenAI'nin GPT‑6 Astra modellerini kullanan Codex eklentisiyle kod inceleme sürecine organizasyonel bağlam kazandırıyor. Bu entegrasyon, binlerce depodaki bağımlılıkları göz önünde bulundurarak P0 seviyesindeki hataları önceden tespit etmeyi hedefliyor.",
+  "detayli_icerik_tr": "Qodo, yazılım kalitesini artırmak ve kod inceleme süreçlerini otomatikleştirmek amacıyla OpenAI modelleri, özellikle GPT‑6 Astra, üzerine kurulu bir Codex eklentisi geliştirdi. Şirket, bu eklentinin geliştiricilerin kod oturumlarına doğrudan bağlamsal bilgi, organizasyonel kurallar ve bağımsız inceleme mekanizmaları getirdiğini vurguluyor. Co‑founder ve CEO Itamar Friedman, bu çözümü \"kodlama ajanının en iyi arkadaşı\" olarak nitelendiriyor.\n\nEklenti, özellikle 10.000'den fazla depoya sahip büyük kuruluşlarda, bir kod değişikliğinin alt hizmetlerde yaratabileceği zincirleme hataları (P0 bug'ları) tespit etmeye odaklanıyor. Codex, Qodo'nun Agentic Toolbox aracılığıyla kod tabanı bilgisine, kurallara ve geçmiş pull‑request desenlerine erişerek, yerel bir görevi tüm sistem bağlamında değerlendirebiliyor. Bu sayede farklı Git sağlayıcıları veya Kafka gibi mesajlaşma servisleri üzerinden bağlanan bağımlılıklar da göz önüne alınıyor.\n\nİş akışı, Codex'in kod üretmeden önce ilgili kuralları ve geçmişi çekmesi, ardından Qodo'nun bağımsız bir inceleme yapıp bulgularını aynı oturumda Codex'e geri bildirmesi şeklinde ilerliyor. Geliştiriciler, bu süreçte hâlâ nihai kararları ve kritik incelemeleri insan gözüyle onaylayarak, kodlama ve inceleme ajanlarını \"yin ve yang\" gibi birbirini tamamlayan roller olarak konumlandırıyor. Bu yaklaşım, güven oluşturmayı ve insan müdahalesini en kritik noktalara odaklamayı amaçlıyor.\n\nQodo ayrıca OpenAI'nin yeni Decisions API'sini kullanarak, 200'ün üzerindeki kurallar arasından sadece ilgili olanları seçip modelin karar verme sürecine sokmayı planlıyor. Bu, hem işlem maliyetlerini düşürürken hem de inceleme kalitesini artırmayı hedefliyor. Şirket, bu entegrasyonu bir \"yazılım fabrikası\" vizyonunun temel taşı olarak görüyor; müşteriler kendi kodlama ve inceleme ajanlarını, şirket bilgisiyle beslenmiş bir sistemde birleştirerek sahip olabilecekler.",
+  "onemli_maddeler": [
+    "Qodo, Codex eklentisiyle kod inceleme sürecine organizasyonel bağlam ve bağımlılık bilgisi ekliyor.",
+    "GPT‑6 Astra modelleri, yüksek performans ve hız sunarak büyük ölçekli depo ortamlarında P0 hatalarını tespit etmeye yardımcı oluyor.",
+    "Decisions API kullanımı, yalnızca ilgili kuralların seçilmesini sağlayarak maliyet ve gecikmeyi azaltıyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Kod inceleme ve otomasyon süreçlerine bağlamsal bilgi eklenmesi, büyük ölçekli yazılım geliştirme ortamlarında hataları erken tespit etmeyi ve geliştirme verimliliğini artırmayı sağlayarak sektörde önemli bir yenilik sunuyor.",
+  "etiketler": [
+    "AI kod inceleme",
+    "Codex",
+    "GPT-6",
+    "Yazılım otomasyonu",
+    "Qodo"
+  ],
+  "anilan_modeller": [
+    "GPT-6 Astra"
+  ],
+  "yorum_tr": "Bu entegrasyon, kodlama ve inceleme ajanlarının birlikte çalışmasını sağlayarak geliştiricilerin yalnızca kritik kararları gözden geçirmesine imkan tanıyor; böylece hem güven hem de verimlilik açısından sektöre değer katıyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://images.ctfassets.net/kftzwdyauwt9/388S4jJRtLn7LVaUJU9lUc/662cc99212751754f89d370e4b8901aa/qodo-codex-frosted-acrylic-seo-image-1920x1080.png?w=1600&h=900&fit=fill",
+  "url": "https://openai.com/index/qodo-codex-plugin",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-11-02T00:00:00.000Z",
+  "slug": "qodo-builds-context-into-ai-code-review-with-codex"
+}

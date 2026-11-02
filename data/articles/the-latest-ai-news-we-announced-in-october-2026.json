@@ -1,0 +1,48 @@
+{
+  "baslik_tr": "Google, Gemini 4 Argon ve Carbon, Genie 4, EmbeddingGemma 2 ve Uzay TPU’siyle Ekim 2026 Güncellemelerini Açıkladı",
+  "ozet_tr": "Google, Ekim 2026'da Gemini 4 Argon ve yeni nesil Gemini 4 Carbon modellerini, gerçek zamanlı simülasyon Genie 4'ü ve gizlilik odaklı EmbeddingGemma 2'yi tanıttı. Ayrıca Android için gelişmiş sahtecilik koruması, SynthID Detector genişlemesi ve uzayda çalışan bir TPU prototipi gibi altyapı yenilikleri duyuruldu.",
+  "detayli_icerik_tr": "Google, Ekim 2026'da bir dizi büyük AI güncellemesi duyurdu. Gemini 4 Argon, karmaşık kodlama, finansal analiz ve hukuki iş akışları için geliştirilen bir frontier reasoning modeli olarak geliştiricilere, işletmelere ve tüketicilere sunuldu. Model, Google AI Studio, Gemini API, Google Cloud, Search ve Gemini uygulaması üzerinden erişilebiliyor ve robotik alanında fiziksel dünya akıl yürütmesi yetenekleri de barındırıyor.\n\nİki hafta sonra tanıtılan Gemini 4 Carbon, uzun vadeli mühendislik ve siber güvenlik savunması için tasarlanmış en güçlü model olarak ön plana çıktı. Şu an ABD hükümeti ve güvenilir siber savunma ortaklarıyla Fairwind Programı kapsamında ön sürüm testleri yürütülüyor; geniş çaplı geliştirici ve tüketici lansmanına hazırlanıyor.\n\nGenie 4, gerçek zamanlı etkileşimli dünya simülasyonları sunarak doğal ses, gelişmiş fizik ve insan hareketlerini doğal dil komutlarıyla yönlendirme imkanı tanıyor. Google, bu teknolojiyi robot ve AI ajanları için güvenli eğitim ortamları oluşturma adımı olarak konumlandırıyor. Aynı zamanda SynthID Detector, 180 milyar görüntü ve video ile 240.000 yıllık ses içeriğini su işaretiyle işaretleyerek AI üretimli içeriğin tespitini küresel ölçekte İngilizce olarak genişletiyor.\n\nAndroid cihazlarda yeni sahtecilik koruma modu, Private AI Compute ve Gemini modelleriyle gelişmiş konuşma dolandırıcılıklarını tespit ediyor; ayda 5 milyondan fazla şüpheli arama ve mesajı engelliyor. Diğer yenilikler arasında Fitbit Edge akıllı fitness takipçi, AMIE tıbbi sohbet asistanı, Google AI Studio ile kodsuz mobil uygulama geliştirme, EmbeddingGemma 2 adlı 740 milyon parametreli çok-modelli gömme modeli ve Project Suncatcher projesi kapsamında uzaya gönderilen TPU'nun ilk AI yanıtı (bir haiku) yer alıyor. Quantum AI ekibi, Willow işlemcisinde \"magic state cultivation\" tekniğiyle hata oranını yaklaşık 40 kat azaltarak kuantum bilgisayarların ölçeklenebilirliğine büyük bir adım attı.",
+  "onemli_maddeler": [
+    "Gemini 4 Argon, karmaşık kodlama ve finansal analiz gibi yüksek seviyeli görevler için geliştirildi.",
+    "Gemini 4 Carbon, uzun vadeli mühendislik ve siber güvenlik savunması odaklı en güçlü model olarak ön sürüm testlerine başladı.",
+    "Genie 4, gerçek zamanlı etkileşimli dünya simülasyonlarıyla AI ve robot eğitiminde yeni bir çığır açıyor.",
+    "EmbeddingGemma 2, 740M parametreli gizlilik‑odaklı çok‑modelli gömme modeliyle cihazda offline aramaları 6 kat daha verimli hâle getiriyor.",
+    "Willow kuantum işlemcisinde \"magic state cultivation\" tekniği, hata oranını 40 kat azaltarak kuantum bilgisayarların ölçeklenebilirliğini hızlandırdı."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Birden fazla frontier modelin piyasaya sürülmesi, güvenlik ve gizlilik odaklı araçların genişletilmesi ve kuantum donanımındaki çığır açıcı ilerlemeler, AI ekosisteminde hem geliştiriciler hem de son kullanıcılar için geniş kapsamlı etki yaratıyor.",
+  "etiketler": [
+    "Gemini",
+    "Genie",
+    "Quantum Computing",
+    "AI Safety",
+    "Developer Tools"
+  ],
+  "anilan_modeller": [
+    "Gemini 4 Argon",
+    "Gemini 4 Carbon",
+    "Genie 4",
+    "EmbeddingGemma 2",
+    "Willow quantum processor"
+  ],
+  "yorum_tr": "Bu güncellemeler, Google'ın AI model kapasitesini ve güvenlik çerçevesini aynı anda genişletme stratejisini pekiştiriyor; geliştiriciler daha güçlü araçlara, kullanıcılar ise daha güvenli ve etkileşimli deneyimlere erişebilecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Willow quantum processor",
+      "benchmark": "magic state error reduction",
+      "skor": 40,
+      "birim": "x",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "cutting errors roughly 40-fold compared to uncultivated states"
+    }
+  ],
+  "gorsel_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Oct_AI_Recap_social.width-1300.png",
+  "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-october-2026/",
+  "source": "Google Gemini",
+  "sourceTier": "resmi",
+  "date": "2026-11-02T17:45:00.000Z",
+  "slug": "the-latest-ai-news-we-announced-in-october-2026"
+}

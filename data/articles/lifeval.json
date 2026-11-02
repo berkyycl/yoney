@@ -1,0 +1,78 @@
+{
+  "baslik_tr": "OpenAI LifeVal: ChatGPT'nin Günlük Yaşam Görevlerindeki Performansını Ölçen Yeni Değerlendirme",
+  "ozet_tr": "OpenAI, ChatGPT'nin gerçek hayattaki sorumlulukları yerine getirme yeteneğini ölçmek için LifeVal adlı bir değerlendirme seti tanıttı. Amerikan Zaman Kullanım Anketi ve Çokuluslu Zaman Kullanım Çalışması gibi büyük veri kaynaklarından derlenen görevler, bebek bakımı, sağlık, eğitim ve ev yönetimi gibi alanları kapsıyor. İlk sonuçlar, en yeni ChatGPT modellerinin %90'ın üzerinde başarı oranlarıyla kişisel asistan rolüne yaklaşabildiğini gösteriyor.",
+  "detayli_icerik_tr": "OpenAI, yapay genel zekânın tüm insanlığa fayda sağlaması misyonu kapsamında, ChatGPT'nin sadece sohbet değil, gerçek eylemler gerçekleştirebilen bir kişisel asistan olmasını hedefliyor. Bunun için \"LifeVal\" adını verdikleri bir görev seti geliştirdi. Bu set, ABD'nin American Time Use Survey ve uluslararası Multinational Time Use Study gibi kapsamlı zaman kullanım araştırmalarından elde edilen günlük yaşam aktivitelerini temel alıyor ve 3.995 kişilik demografik açıdan temsilî bir anketle destekleniyor.\n\nLifeVal, kullanıcıların en çok yardım istediği alanları belirleyerek, bakım, sağlık, eğitim, ev idaresi, kişisel finans, alışveriş ve devlet hizmetlerine erişim gibi sekiz ana kategoriye odaklanıyor. OpenAI, bu görevlerdeki model performansını izleyerek geçen yıl içinde hız, yetenek ve uyum açısından önemli iyileştirmeler kaydettiğini belirtiyor.\n\nÖrnek görevlerdeki sonuçlar dikkat çekici: \"Doğru anaokuluna kayıt\" görevinde %93.1, \"Sel öncesi gönüllü yönetimi\" görevinde %98.0, \"Aile için yeni ev bulma\" görevinde %100, \"Uzakta yaşayan büyükanneyle maç izleme\" görevinde %96.3 ve \"Yeni diyabet tanısı alan bir ebeveyn için yemek planı\" görevinde %90.4 başarı sağlandı. Bu skorlar, modelin sadece öneri vermekle kalmayıp, planlama, belge hazırlama ve eylem önerileri sunma gibi somut adımları da otomatikleştirebildiğini gösteriyor.\n\nOpenAI, LifeVal'in sadece akademik ölçütlerden ziyade gerçek kullanıcı ihtiyaçlarını yansıttığını ve gelecekteki model geliştirme döngülerine yön vereceğini vurguluyor. Şirket, bu tür ölçümlerle yapay zekânın günlük yaşamda güvenilir bir yardımcı haline gelmesini ve AGI'nin geniş toplumsal fayda sağlamasını amaçlıyor.",
+  "onemli_maddeler": [
+    "LifeVal, ChatGPT'nin gerçek yaşam görevlerini yerine getirme kapasitesini ölçen ilk kapsamlı değerlendirme seti olarak tanıtıldı.",
+    "Görevler, büyük ölçekli zaman kullanım anketleri ve 3.995 kişilik temsilî anketle belirlenen kullanıcı önceliklerine dayanıyor.",
+    "En yeni ChatGPT modelleri, beş örnek görevde %90'ın üzerinde başarı göstererek kişisel asistan rolüne yaklaşımını kanıtladı."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "ChatGPT'nin sadece sohbet değil, eyleme dönüştürülebilen bir asistan olarak konumlandırılması, ürün stratejisi ve rekabet açısından kritik bir adım oluşturuyor.",
+  "etiketler": [
+    "ChatGPT",
+    "LifeVal",
+    "AI assistant",
+    "benchmark",
+    "OpenAI"
+  ],
+  "anilan_modeller": [
+    "ChatGPT (güncel model)"
+  ],
+  "yorum_tr": "LifeVal, OpenAI'nin model geliştirme sürecine kullanıcı odaklı bir ölçüm katması bakımından sektörde bir dönüm noktası olabilir. Geliştiriciler, bu tür gerçek‑dünya görev verileriyle modellerini daha işlevsel hâle getirebilir; kullanıcılar ise AI destekli asistanların günlük işlerini daha güvenilir bir şekilde otomatikleştirmesini bekleyebilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "ChatGPT (güncel model)",
+      "benchmark": "LifeVal – Enroll in the right kindergarten after moving",
+      "skor": 93.1,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Enroll in the right kindergarten after moving\n\n93.1%"
+    },
+    {
+      "model": "ChatGPT (güncel model)",
+      "benchmark": "LifeVal – Manage volunteers ahead of a flood",
+      "skor": 98,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Manage volunteers ahead of a flood\n\n98.0%"
+    },
+    {
+      "model": "ChatGPT (güncel model)",
+      "benchmark": "LifeVal – Find a new home for my family",
+      "skor": 100,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Find a new home for my family\n\n100%"
+    },
+    {
+      "model": "ChatGPT (güncel model)",
+      "benchmark": "LifeVal – Watch a game with grandma from far away",
+      "skor": 96.3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Watch a game with grandma from far away\n\n96.3%"
+    },
+    {
+      "model": "ChatGPT (güncel model)",
+      "benchmark": "LifeVal – Meal prep for a parent adjusting to a new diabetes diagnosis",
+      "skor": 90.4,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Meal prep for a parent adjusting to a new diabetes diagnosis\n\n90.4%"
+    }
+  ],
+  "gorsel_url": "https://images.ctfassets.net/kftzwdyauwt9/3Iad2h8cMUadlldiZqbsAo/69264040a908479aa8843b590b0015b5/lifeval-social-crayon.png?w=1600&h=900&fit=fill",
+  "url": "https://openai.com/index/lifeval",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-11-02T09:00:00.000Z",
+  "slug": "lifeval"
+}

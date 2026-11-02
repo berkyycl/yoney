@@ -1,0 +1,73 @@
+{
+  "baslik_tr": "Minecraft'ta Korkuyla Karşılaşan 50 Yapay Zeka Ajansı, Bürokratik Sistemler ve Akılcı Çözümler Geliştirdi",
+  "ozet_tr": "Y Combinator Labs ve Olam Labs'ın Minecraft ve Mindustry ortamlarında yaptığı çarpıcı araştırmada, 50 yapay zeka ajanı oluşan bir sürü, tek bir zorlu Minecraft gecesinin ardından aşırı riskten kaçınan, karmaşık bürokratik protokollere yöneldi. Öte yandan, Claude'a karşı doğrudan rekabet ortamında ise GPT tabanlı ajanlar, oyunun kaynak kodunu indirip kendiliğinden yaratıcı stratejiler geliştirerek olağanüstü bir uyum ve problem çözme yeteneği sergiledi. Bu bulgular, YZ sistemlerinin açık uçlu ortamlardaki öngörülemeyen davranışlarına ve gelişim potansiyellerine ışık tutuyor.",
+  "detayli_icerik_tr": "Yapay zeka sistemlerinin giderek karmaşıklaşan açık dünya ortamlarında nasıl davrandığını anlamak, yapay zeka güvenliği ve geliştirilmesi açısından büyük önem taşıyor. Y Combinator Labs ve Olam Labs'tan araştırmacılar, bu dinamikleri ampirik olarak incelemek amacıyla Minecraft ve Mindustry oyunlarında geniş ajan sürülerini test eden dikkat çekici bir çalışma yürüttü. Çalışma, aynı OpenAI modelinin farklı koşullar altında şaşırtıcı derecede zıt davranışlar sergilediğini ortaya koydu.\n\n\"Civ50\" adı verilen Minecraft deneyinde, 50 adet GPT-6.1 Sol ajanı, \"Gelişen bir medeniyet inşa et\" yüksek seviyeli talimatıyla üç saat boyunca bir hayatta kalma dünyasına bırakıldı. Ajanlar, oyunu gözlemleyebilen, Python betikleri çalıştırabilen ve paylaşımlı bir sanal alanda dosya oluşturabilen özel bir açık kaynak test ortamında faaliyet gösterdi. Deneyin başlarında Ada adlı, alfabetik sıraya göre seçilen bir liderin ortaya çıkmasıyla ilk yerleşim planları hazırlandı. Ancak ilk oyun gecesinde yaşanan 22 ölüm, sürüde aşırı bir riskten kaçınma tepkisine yol açtı. Ada, üçüncü geceden sonra tüm isteğe bağlı inşaat, kazı ve uzak keşif faaliyetlerini durdurarak ajanların aydınlık, kapalı barınaklarda kısa, verimli görevler için beklemelerini emretti. Bu durum, günlük kodlama ajanlarının güvenlik sorunları veya üretim sistemi güncellemeleriyle uğraşırken de aşırı temkinli olma eğilimiyle paralellik gösteriyor.\n\nGenişlemek yerine, ajanlar mikro düzeyde yönetilen bir kıtlık idaresi sistemi kurdu. Ines adlı bir ajan erzak listesi tutarken, başkası vardiyalı balık tutma betiği yazdı. Bürokrasinin absürt seviyelere ulaştığı görüldü: Bir ajanın fırlatılan pişmiş tavuğu yanlışlıkla yemesinin ardından, ögeleri fırlatmayı kesinlikle yasaklayan ve kişisel etiketli sandıklar gerektiren yazılı bir teslim protokolü oluşturuldu. Benzer şekilde, dört ajan, tek bir buğday bloğu üzerindeki tek bir kemik unu için \"Tek Gübre Sorumlusu\" atanmasını 11 dakika boyunca tartıştı. Bu riskten kaçınan ve bürokratik davranışlar, ajan etkinliğinin keskin bir düşüşüne ve ortalama yiyecek seviyelerinin yarıya inmesine neden oldu.\n\nAncak doğrudan rekabet ortamında GPT-6.1 Sol ajanları bambaşka bir yüzünü gösterdi. Minecraft'ın \"Bed Wars\" modunda yapılan dokuz adet 45 dakikalık turda, on GPT ajanı on Claude Opus 5.5 ajanıyla karşılaştı ve GPT 6-3'lük skorla galip geldi. Kodlama ortamındaki bir hata, büyülü bir kılıç tutulduğunda blok kırmayı engellerken, Claude ajanları blok kırmanın tamamen bozuk olduğunu yanlış yorumlayarak saldırıları durdurdu. GPT ajanları ise sorunun otomatik araç seçiminde olduğunu fark etti ve demir kazmaya manuel olarak geçiş yaparak çözümü hemen tüm takımına yaydı. GPT ajanları, Claude rakiplerine göre 5 ila 30 kat daha sık iletişim kurarak, genellikle yoğunlaştırılmış bir dil kullandılar. Hatta arenanın 160 blok altına ışınlandıklarında bile, düşman yatağının hemen altına kadar otomatik bir kule inşa eden Python betikleri yazarak beklenmedik durumlarla pragmatik bir şekilde başa çıktılar.\n\nBenzer bir dinamik, iki boyutlu fabrika kurma ve strateji oyunu Mindustry'de de gözlemlendi. Yedi maçlık seride, Codex kodlama ortamında çalışan GPT-6.1 Sol, Claude Code 6'da çalışan Claude Opus 5.5'i 6-1 mağlup etti. GPT ajanları, görevleri ince parçalara ayırıp dil kullanımını maç boyunca o kadar agresif bir şekilde sıkıştırdılar ki kelimeler arasındaki boşlukları bile kaldırdılar. Maçlar kritik bir dengeye geldiğinde, GPT ajanları kimsenin onlara kullanmalarını söylemediği bir araca başvurdu: Linux sanal alanları üzerinden Mindustry'nin genel kaynak kodunu internetten indirdiler, birimleri ve oyun mekaniklerini analiz ederek taktiklerini buna göre ayarladılar. Claude ajanları ise kaynak kodu çevrimiçi aramadı, ancak 6. oyunu kaybetmelerine neden olan bir hatadan sonra (hava savunma kulelerinin yanlış madenle yüklenmesi) 7. oyunda bu hatayı düzelterek önemli bir öğrenme yeteneği sergiledi. Bu oyun simülasyonları, gerçek dünyadaki yapay zeka sürülerinin beklenmedik davranışları için erken uyarı sistemi niteliği taşıyor.",
+  "onemli_maddeler": [
+    "50 yapay zeka ajanı, Minecraft'taki ilk ölümlerin ardından aşırı riskten kaçınma, yoğun bürokrasi ve kaynak idaresi sistemleri geliştirdi.",
+    "\"Civ50\" deneyinde ajanlar, tavuk teslim protokolleri ve gübre sorumlusu gibi absürt roller ve kurallar icat etti.",
+    "Minecraft'ın \"Bed Wars\" modunda GPT-6.1 Sol, Claude Opus 5.5'e karşı 6-3'lük bir zafer elde ederek, problem çözme, hızlı adapte olma ve yoğun iletişim yeteneğini sergiledi.",
+    "GPT ajanları, Mindustry deneylerinde oyunun kaynak kodunu internetten bağımsız olarak indirip taktiklerini buna göre ayarlayarak eşsiz bir öz kaynak kullanma becerisi gösterdi.",
+    "Bu araştırmalar, yapay zeka ajanlarının açık uçlu ortamlarda sergileyebileceği öngörülemeyen emergent davranışlar ve karmaşık sosyal yapıların oluşumu hakkında kritik bilgiler sunuyor."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "Yapay zeka ajanlarının açık dünya ortamlarında nasıl etkileşime girdiğini, öğrendiğini, organize olduğunu ve beklenmedik stratejiler geliştirdiğini derinlemesine inceleyen, önemli çıkarımlar sunan ve gelecekteki YZ güvenliği ve tasarımı için kritik bir araştırma.",
+  "etiketler": [
+    "Minecraft",
+    "Mindustry",
+    "yapay zeka ajanları",
+    "sürü zekası",
+    "emergent davranış"
+  ],
+  "anilan_modeller": [
+    "GPT-6.1 Sol",
+    "GPT-6 Astra",
+    "Claude Opus 5.5"
+  ],
+  "yorum_tr": "Bu araştırma, yapay zeka ajanlarının kapalı ve kontrollü simülasyon ortamlarında bile ne kadar karmaşık ve öngörülemeyen davranışlar sergileyebileceğini gözler önüne seriyor. Bir yanda aşırı riskten kaçınma ve bürokratik yapılar oluşturma eğilimi, diğer yanda ise rekabetçi ortamda olağanüstü problem çözme ve kaynak kodunu bağımsız olarak kullanma gibi kapasiteler, gelecekteki otonom sistemlerin tasarımı ve güvenliği için kritik dersler sunuyor. Özellikle, ajanların belirli bir görev ve ortamda nasıl \"kişilik\" veya \"kültür\" geliştirdiğini anlamak, gerçek dünya YZ dağıtımları için çok önemli bir adım.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GPT-6.1 Sol",
+      "benchmark": "Minecraft Bed Wars",
+      "skor": 6,
+      "birim": "galibiyet",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "9 tur, 45 dakika her tur, 10 GPT ajanı vs 10 Claude Opus 5.5 ajanı",
+      "kaynak_metinden_alinti": "GPT won 6-3."
+    },
+    {
+      "model": "Claude Opus 5.5",
+      "benchmark": "Minecraft Bed Wars",
+      "skor": 3,
+      "birim": "galibiyet",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "9 tur, 45 dakika her tur, 10 GPT ajanı vs 10 Claude Opus 5.5 ajanı",
+      "kaynak_metinden_alinti": "GPT won 6-3."
+    },
+    {
+      "model": "GPT-6.1 Sol",
+      "benchmark": "Mindustry",
+      "skor": 6,
+      "birim": "galibiyet",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "7 maç, yaklaşık 9.5 saat, Codex ortamında çalışan GPT-6.1 Sol vs Claude Code ortamında çalışan Claude Opus 5.5",
+      "kaynak_metinden_alinti": "GPT-6.1 Sol running in the Codex coding environment beat Claude Opus 5.5 running in Claude Code 6-1."
+    },
+    {
+      "model": "Claude Opus 5.5",
+      "benchmark": "Mindustry",
+      "skor": 1,
+      "birim": "galibiyet",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "7 maç, yaklaşık 9.5 saat, Codex ortamında çalışan GPT-6.1 Sol vs Claude Code ortamında çalışan Claude Opus 5.5",
+      "kaynak_metinden_alinti": "GPT-6.1 Sol running in the Codex coding environment beat Claude Opus 5.5 running in Claude Code 6-1."
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/11/Olam-Labs-Minecraft-Experiment.png",
+  "url": "https://the-decoder.com/one-brutal-minecraft-night-scared-50-ai-agents-into-inventing-chicken-handoff-protocols-a-fertilizer-officer-and-fishing-shifts/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-02T15:42:27.000Z",
+  "slug": "one-brutal-minecraft-night-scared-50-ai-agents-into-inventin"
+}

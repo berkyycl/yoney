@@ -1,0 +1,88 @@
+{
+  "baslik_tr": "Yerel Kuantum Modelleri vs Claude: 9 Gerçek Hata Üzerinde Performans ve Token/S Karşılaştırması",
+  "ozet_tr": "Reddit kullanıcısı FeydRowan, kendi geliştirdiği capy‑flash motorunda iki RTX 5070 Ti ve Ryzen 9900X üzerinde çalışan yerel kuantize modelleri, Claude Opus ve Sonnet serileriyle aynı 9 gerçek kod hatası görevinde karşılaştırdı. Modelin hatayı tespit edip düzeltme başarısı puanla, düşünme süresi ve ürettiği token sayısı ise token/s metriğiyle ölçüldü.",
+  "detayli_icerik_tr": "FeydRowan, kendi kod tabanındaki 9 gerçek regresyonu (C++/CUDA) alıp, her birini önceden hatalı hâliyle ve bir hata raporu şeklinde sunarak modellerin \"sıfırdan\" bir yama üretmesini istedi. Modeller, ağ bağlantısı ve CUDA araç zinciri olmayan bir Mac sandbox'ında çalıştırıldı; bu yüzden sadece kodu okuyup mantıksal bir çözüm üretmeleri beklendi. Her görev için en fazla 80 adım ve üç deneme hakkı tanındı; sonuçlar iki aşamalı bir puanlama sistemiyle değerlendirildi: otomatik gizli anahtar kontrolü ve Claude Opus 5 tarafından verilen kör yargı puanı.\n\nPuanlamada 0 ile 1 arasında bir skor verilirken, derlenemeyen yamalar 0.25 ile sınırlı kaldı. Otomatik ve yargı puanları arasında r=0.79 korelasyonu bulundu ve Claude modelleri genellikle daha düşük puan alırken, Qwen3.8‑Flash‑Next NVFP4 modeli 0.50, 3‑bit versiyonu 0.48 gibi puanlarla yer aldı. En yüksek puan Claude Opus 5.5 API'den (0.74) geldi; Claude Sonnet 5.5 (0.58) ve Claude Haiku 5.5 (0.47) de sırasıyla ikinci ve üçüncü sırada yer aldı.\n\nToken/s açısından ise 3‑bit kuantizasyonun etkisi incelendi. Aynı modelin NVFP4 ve 3‑bit sürümleri arasında token sayısı %40 artarken (27B modelinde) skor farkı gürültü içinde (+0.05) kaldı. 3‑bit model daha yavaş bir ön‑dolgu yoluna sahip olsa da, toplam düşünme süresi daha uzun olduğu için token/s metriğiyle daha verimli göründü. Ancak gerçek hata düzeltme başarısı (puan) açısından bu avantaj yansımadı; örneğin Flash‑Next 5/27 yama üretirken 3‑bit sürüm sadece 1/27 başarılı oldu.\n\nSonuç olarak, yerel kuantize modeller token/s bakımından maliyet avantajı sağlayabilirken, Claude Opus 5.5 gibi büyük modeller doğruluk ve verimlilik açısından hâlâ önde. Bu benchmark, sadece kod okuma ve mantıksal yama üretme aşamasını ölçtüğü için tam bir edit‑build‑test döngüsü yansıtmasa da, gerçek geliştirme ortamlarında model seçiminde önemli bir referans sunuyor.",
+  "onemli_maddeler": [
+    "Claude Opus 5.5, 0.74 puanla tüm modeller arasında en yüksek hata düzeltme başarısını gösterdi.",
+    "3‑bit kuantizasyon token sayısını %40 artırdı ancak puan farkı gürültü içinde kalarak doğrulukta bir iyileşme sağlamadı.",
+    "Yerel Qwen3.8‑Flash‑Next NVFP4 modeli 0.50 puan alarak Claude Sonnet 5.5'ten daha iyi performans gösterdi."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Gerçek kod tabanlı hata düzeltme görevlerinde yerel kuantize modellerin Claude ile karşılaştırılması, token/s verimliliği ve doğruluk açısından sektörel değerlendirme sunuyor.",
+  "etiketler": [
+    "kod",
+    "hata-düzeltme",
+    "kuantizasyon",
+    "benchmark",
+    "LLM"
+  ],
+  "anilan_modeller": [
+    "Claude Opus 5.5 API",
+    "Claude Sonnet 5.5 API",
+    "Qwen3.8-Flash-Next NVFP4 local",
+    "Qwen3.8-Flash-Next 3-bit local",
+    "Claude Haiku 5.5 API",
+    "Qwen3.8-27B 3-bit local",
+    "Qwen3.8-27B NVFP4 local",
+    "Claude Sonnet 5 API",
+    "Claude Sonnet 4.5 API",
+    "Claude Haiku 4.5 API",
+    "Gemma 4 26B-A4B local"
+  ],
+  "yorum_tr": "Bu benchmark, token/s maliyetini düşürmek isteyen geliştiriciler için kuantize modellerin cazip bir seçenek olabileceğini, ancak kritik hata düzeltme doğruluğu açısından büyük modellerin hâlâ üstün olduğunu gösteriyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Claude Opus 5.5 API",
+      "benchmark": "9 gerçek kod hatası düzeltme",
+      "skor": 0.74,
+      "birim": "score",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "80 steps max, 3 runs per task",
+      "kaynak_metinden_alinti": "Claude Opus 5.5 API 0.74"
+    },
+    {
+      "model": "Claude Sonnet 5.5 API",
+      "benchmark": "9 gerçek kod hatası düzeltme",
+      "skor": 0.58,
+      "birim": "score",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "80 steps max, 3 runs per task",
+      "kaynak_metinden_alinti": "Claude Sonnet 5.5 API 0.58"
+    },
+    {
+      "model": "Qwen3.8-Flash-Next NVFP4 local",
+      "benchmark": "9 gerçek kod hatası düzeltme",
+      "skor": 0.5,
+      "birim": "score",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "80 steps max, 3 runs per task",
+      "kaynak_metinden_alinti": "Qwen3.8-Flash-Next NVFP4 local 0.50"
+    },
+    {
+      "model": "Qwen3.8-Flash-Next 3-bit local",
+      "benchmark": "9 gerçek kod hatası düzeltme",
+      "skor": 0.48,
+      "birim": "score",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "80 steps max, 3 runs per task",
+      "kaynak_metinden_alinti": "Qwen3.8-Flash-Next 3-bit local 0.48"
+    },
+    {
+      "model": "Claude Haiku 5.5 API",
+      "benchmark": "9 gerçek kod hatası düzeltme",
+      "skor": 0.47,
+      "birim": "score",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "80 steps max, 3 runs per task",
+      "kaynak_metinden_alinti": "Claude Haiku 5.5 API 0.47"
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/ufmzse0g77zh1.png?width=640&crop=smart&auto=webp&s=f74412000fde8124f06ced1bd9aea22fa3c62b09",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xlwpqv/not_another_toks_post_local_quants_vs_claude_on_9/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-02T13:08:34.000Z",
+  "slug": "not-another-tok-s-post-local-quants-vs-claude-on-9-real-bugs"
+}

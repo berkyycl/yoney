@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "AI kodlama ajanları için token yerine birleştirilmiş PR başına maliyet ölçümü önerisi",
+  "ozet_tr": "AI destekli kodlama süreçlerinde token sayısı yerine, birleştirilmiş pull request başına maliyet ölçümü, harcamanın gerçek değerini ortaya koyuyor. HPE'nin hibrit AI platformu, açık ağırlıklı modellerle rutin işleri yönlendirerek token maliyetlerini %30‑50 azaltıyor ve sahip olunan altyapının avantajlarını vurguluyor.",
+  "detayli_icerik_tr": "Geliştiriciler bir AI ajanına kodlama görevi verdiklerinde, ajan sadece bir yanıt üretmekle kalmaz; planlama, kod üretimi, test çalıştırma ve hataları düzeltme adımlarını tekrarlar. Bu döngü bir sohbet istemine göre 10 ila 50 kat daha fazla token tüketebilir ve per‑token fiyatlandırma modeli, en yüksek katma değerli iş akışlarını aynı zamanda en pahalı hâle getirebilir. Uber'in 2026 bütçesini Nisan ayında tüketmesi ve GitHub Copilot'un sabit ücret modelinden kullanım başına kredi modeline geçmesi, bu maliyet baskısının somut örnekleri.\n\nŞirketler genellikle token tüketimini sınırlamak için kullanım kotaları, oturum sayısı ve onay mekanizmaları uygular. Ancak bu tür kısıtlamalar, değeri yüksek olan iş akışlarını da engelleyebilir. Makale, token başına maliyetin sonuçları ölçmediğini, gerçek ölçütün birleştirilmiş pull request başına maliyet olduğunu savunuyor. Bu metrik, AI destekli geliştirme maliyetini, inceleme ve birleştirme aşamasını geçen değişiklik sayısına bölerek, harcamanın ne kadarının işe dönüştüğünü gösterir.\n\nMaliyet verimliliğini artırmak için iki temel adım öneriliyor: (1) pahalı çıkarım (inference) yalnızca zor planlama ve yeni mantık gerektiren adımlara ayrılmalı, rutin kod üretimi ve test oluşturma gibi görevler açık ağırlıklı, şirket içinde çalışan modellerle yapılmalı; (2) sahip olunan altyapı (owned capacity) tercih edilerek, sabit bir yatırım üzerinden ek çağrılar daha ucuz hale getirilmeli. HPE'nin hibrit AI platformu, 150'den fazla iç uygulamadan gelen rutin iş yüklerini açık ağırlıklı modellerle yönlendirerek token maliyetlerini %30‑50 düşürdü.\n\nSahip olunan altyapının bir diğer avantajı, hassas kodun şirket içinde kalması ve sadece onaylı planlama isteklerinin dış modellerle paylaşılmasıdır. Bu sayede güvenlik engelleri aşılırken, yüksek katma değerli kod üretimi de devam eder. Şirketler, AI harcamasını geliştirici başına ve birleştirilmiş PR başına ölçerek, altyapı değişikliğinin gerçek etkisini değerlendirebilir. Sonuçta, AI kullanımının artması maliyet artışı yerine daha fazla yazılım teslimiyle sonuçlanmalı; bunu başaran firmalar rekabet avantajı elde edecektir.",
+  "onemli_maddeler": [
+    "AI kodlama iş akışlarında token sayısı yerine birleştirilmiş pull request başına maliyet ölçümü, harcamanın gerçek değerini gösterir.",
+    "Hibrit AI platformu, rutin görevleri açık ağırlıklı modellerle yönlendirerek token maliyetlerini %30‑50 azaltabilir.",
+    "Sahip olunan altyapı (owned capacity) uzun vadede ek çağrılar için maliyeti düşürür ve hassas kodun güvenliğini sağlar."
+  ],
+  "kategori": "diger",
+  "onem": 4,
+  "onem_gerekce": "Kurumsal AI kodlama maliyetlerinin ölçüm ve optimizasyonu, büyük ölçekli yazılım geliştirme süreçlerinde maliyet kontrolü ve güvenlik açısından kritik bir dönüşüm sunuyor.",
+  "etiketler": [
+    "AI coding",
+    "token pricing",
+    "hybrid AI",
+    "owned capacity",
+    "software development"
+  ],
+  "anilan_modeller": [
+    "Claude Code"
+  ],
+  "yorum_tr": "Bu yaklaşım, AI destekli geliştirme maliyetlerini daha anlamlı bir metrikle ölçerek, şirketlerin hem bütçe hem de güvenlik hedeflerine daha etkili ulaşmasını sağlayabilir. Ancak, açık ağırlıklı modellerin performansının iş akışına uygunluğu titiz bir değerlendirme gerektirir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://wp.technologyreview.com/wp-content/uploads/2026/10/iStock-2297734847.jpg?w=840",
+  "url": "https://www.technologyreview.com/2026/11/02/1147702/stop-counting-tokens-start-counting-what-ships/",
+  "source": "MIT Technology Review AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-02T13:10:32.000Z",
+  "slug": "stop-counting-tokens-start-counting-what-ships"
+}
