@@ -1,0 +1,44 @@
+{
+  "baslik_tr": "RTX 3090 Ti ile DeepSeek-V4.1-Flash ve Qwen3.8-Flash-Next modellerinde 35‑140 tok/s dekode hızı elde edildi",
+  "ozet_tr": "Gentoo tabanlı bir sistemde tek bir NVIDIA RTX 3090 Ti kullanılarak, DeepSeek-V4.1-Flash-1017 modeli 35 token/s, Qwen3.8-Flash-Next modeli ise 138‑140 token/s dekode hızıyla çalıştırıldı. Bu performans, GPU-unlock çekirdek modülü ve Xolotl inference motorunun birleşimi sayesinde mümkün oldu.",
+  "detayli_icerik_tr": "Reddit topluluğu üyesi uniVocity, 6‑yıllık bir donanım seti – AMD Ryzen Threadripper 3990X, 128 GB DDR4 RAM ve tek bir NVIDIA GeForce RTX 3090 Ti – üzerinde büyük MoE (Mixture‑of‑Experts) modellerini çalıştırmak için kapsamlı bir kurulum rehberi paylaştı. Öncelikle, RTX 3000 serisi tüketici kartlarında bulunan yapay firmware sınırlamalarını kaldıran açık kaynaklı **gpu-unlock** çekirdek modülü derlendi ve önyükleme parametrelerine `gpu_unlock.targets=all` eklendi. Ardından, NVIDIA sürücü ayarlarıyla bellek tahsisleri ve akış işlemleri optimize edilerek kartın tam güç limitine ulaşması sağlandı.\n\nSistem bağımlılıkları Gentoo paket yöneticisiyle kuruldu; GCC 14, CUDA araç takımı, CMake, Ninja ve gerekli Python ortamı hazırlandı. Xolotl adlı inference motoru, çok katmanlı bellek yönetimi, NVMe Engram akışı ve DSpark spekülatif dekodlama mantığını birleştirerek 40 katmanlı, 384 uzmanlı MoE yapısına sahip DeepSeek‑V4.1‑Flash‑1017 (≈39 B aktif parametre) ve 125 B'lik Qwen3.8‑Flash‑Next modellerinin tek GPU’da çalışmasını mümkün kıldı.\n\nModel ağırlıkları Hugging Face üzerinden indirildikten sonra, DeepSeek için FP8 Engram tabloları NVMe’ye çıkarıldı ve 4‑bit ara formatlarla (DeltaNet lineer KV) Qwen3.8‑Flash‑Next hazırlandı. Xolotl yapılandırması, 80 GiB'lik RAM arena, 131 k token bağlam uzunluğu ve MTP (Multi‑Token Prediction) spekülatif dekodlama gibi parametrelerle özelleştirildi. Sonuç olarak, DeepSeek‑V4.1‑Flash‑1017 yaklaşık **35 token/s** dekode hızı, Qwen3.8‑Flash‑Next ise **138‑140 token/s** dekode hızı elde edildi.\n\nBu başarı, tüketici sınıfı GPU’ların büyük MoE modellerini tek bir kartta çalıştırabilmesi için gerekli yazılım optimizasyonlarının ve donanım kilitlerinin aşılabileceğini gösteriyor. Kullanıcılar, benzer bir kurulumla yüksek bellek gereksinimli modelleri daha düşük maliyetli altyapılarda deneyimleyebilir ve araştırma‑geliştirme süreçlerini hızlandırabilir.",
+  "onemli_maddeler": [
+    "GPU-unlock çekirdek modülü, RTX 3000 serisi kartlarda yapay FP16/BF16 throttling'ini kaldırarak tam performans sağlar.",
+    "Xolotl inference motoru, NVMe Engram akışı ve DSpark spekülatif dekodlama sayesinde 40‑katmanlı MoE modellerini tek RTX 3090 Ti üzerinde çalıştırır.",
+    "DeepSeek‑V4.1‑Flash‑1017 modeli 35 token/s, Qwen3.8‑Flash‑Next modeli ise 138‑140 token/s dekode hızına ulaştı.",
+    "Kurulum, Gentoo paket yönetimi, CUDA, CMake ve Python ortamı gibi adımları içerir; tüm süreç komut satırı betikleriyle otomatikleştirildi."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Tüketici sınıfı GPU'ların büyük MoE modellerini tek kartta çalıştırabilmesi, maliyet etkin AI araştırması ve geliştirme için kritik bir adım oluşturuyor.",
+  "etiketler": [
+    "RTX 3090 Ti",
+    "DeepSeek",
+    "Qwen",
+    "MoE",
+    "Xolotl"
+  ],
+  "anilan_modeller": [
+    "DeepSeek-V4.1-Flash-1017",
+    "Qwen3.8-Flash-Next"
+  ],
+  "yorum_tr": "Bu teknik ilerleme, yüksek bellekli büyük modelleri düşük bütçeli altyapılara taşıyarak daha geniş bir geliştirici kitlesinin erişimini artıracak ve AI deneylerini demokratikleştirecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "DeepSeek-V4.1-Flash-1017",
+      "benchmark": "decode speed",
+      "skor": 35,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "decode",
+      "kaynak_metinden_alinti": "~35 tok/s decode (with MTP/DSpark active)"
+    }
+  ],
+  "gorsel_url": "https://external-preview.redd.it/deepseek-v4-1-flash-1017-at-41-tok-s-on-one-3090-v0-09LownW39Oa0rsGKx3Nu6yd_nHwWr60UIGgjRa071FE.png?auto=webp&s=aba9c7faa9d09cded31ec5be74071e86b2735c98",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xlec67/getting_incredible_results_with_a_single_rtx/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-01T21:01:42.000Z",
+  "slug": "getting-incredible-results-with-a-single-rtx-3090ti-and-128g"
+}

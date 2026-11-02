@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "GLM-5.3-Flash ve GPT-6.1 Sol, OpenCode’da yerel kodlama asistanı olarak bir araya geldi",
+  "ozet_tr": "Bir geliştirici, 4 H200 GPU’sunda çalışan GLM-5.3-Flash modelini 512 KB bağlam penceresiyle kodlama iş yükünün ana motoru olarak kullandı ve GPT-6.1 Sol’u orkestratör olarak entegre etti. OpenCode çerçevesi, farklı sağlayıcıların modellerini tek bir oturumda birleştirerek hem maliyetleri düşürmeyi hem de üretkenliği artırmayı mümkün kıldı.",
+  "detayli_icerik_tr": "Yerel LLaMA topluluğunun bir üyesi, son haftalarda GLM-5.3-Flash (MoE, toplam 320 Milyar parametre, aktif 18 Milyar) modelini dört adet NVIDIA H200 GPU’sunda çalıştırarak 512 KB bağlam penceresiyle kodlama görevlerini yürütmeye başladı. Kullanıcı, bu yapılandırmanın beklediğinden çok daha verimli olduğunu ve bulut tabanlı API aboneliklerine olan bağımlılığını önemli ölçüde azalttığını belirtti.\n\nModelin tek başına tüm geliştirme sürecini yönetmesi mümkün olmasa da, GPT-6.1 Sol modeliyle birlikte çalıştırıldığında etkileyici bir sinerji sağlandı. Sol, oturumun ana yöneticisi (orchestrator) rolünü üstlenirken, GLM-5.3-Flash alt ajan (sub‑agent) olarak kod parçacıklarını araştırıyor, yazarak ve doğrudan uygulamaya koyuyor. Bu iki‑modelli yaklaşım, özellikle büyük kod tabanları ve uzun bağlam gerektiren projelerde performans artışı sağladı.\n\nKullanıcı, Claude Code ve Codex gibi mevcut kodlama asistanlarından farklı olarak, OpenCode platformunun bir oturum içinde farklı sağlayıcıların modellerini aynı anda kullanabilme esnekliğini vurguladı. Bu sayede, hem yerel GLM-5.3-Flash hem de ChatGPT aboneliği üzerinden erişilebilen Sol aynı çalışma akışında bir arada bulunabiliyor. Açık kaynak topluluğu için bu, model bağımsız bir ajan mimarisi oluşturmanın pratik bir örneği oldu.\n\nAyrıca, yazar bir blog yazısı yayınlayarak kurulum adımlarını, performans ölçümlerini ve olası iyileştirme önerilerini paylaştı. Diğer geliştiricilerin de benzer çok‑modelli yapılandırmaları denemeleri ve deneyimlerini paylaşmaları bekleniyor.",
+  "onemli_maddeler": [
+    "GLM-5.3-Flash, 4 H200 GPU’da 512 KB bağlam penceresiyle yerel kodlama iş yükünün ana motoru olarak kullanıldı.",
+    "GPT-6.1 Sol, OpenCode aracılığıyla orkestratör rolünde çalışarak GLM‑5.3‑Flash’ın alt‑ajan görevlerini yönetti.",
+    "OpenCode, farklı sağlayıcıların modellerini tek oturumda birleştirerek hem maliyetleri düşürüp hem de üretkenliği artırdı."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 2,
+  "onem_gerekce": "Konu, yerel model kullanımını ve çok‑modelli entegrasyonu gösteren ilgi çekici bir örnek olsa da, sektörel çapta geniş bir etki yaratması beklenmiyor.",
+  "etiketler": [
+    "GLM-5.3-Flash",
+    "GPT-6.1 Sol",
+    "OpenCode",
+    "yerel inference",
+    "kodlama asistanı"
+  ],
+  "anilan_modeller": [
+    "GLM-5.3-Flash",
+    "GPT-6.1 Sol"
+  ],
+  "yorum_tr": "OpenCode’un çok‑modelli mimarisi, geliştiricilerin hem açık kaynak hem de bulut tabanlı modelleri bir arada kullanmasını sağlayarak maliyet etkin bir alternatif sunuyor; bu yaklaşım, yerel AI altyapısına yatırım yapan ekipler için önemli bir yol haritası oluşturabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/z38LHKJwGPzHlwSe8_wyPkgqxdSmRpvmo8zjhHQQVhk.jpeg?width=640&crop=smart&auto=webp&s=dabe699c3470020add3d729f98141d25706b6d94",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xkz4lf/glm53flash_on_our_h200s_does_most_of_my_coding/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-01T09:49:34.000Z",
+  "slug": "glm-5-3-flash-on-our-h200s-does-most-of-my-coding-now-while"
+}

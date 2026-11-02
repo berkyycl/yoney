@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "llama2.c, 2006 iPod’ta 80 MHz, 64 MB RAM ve FPU’suz Çalıştırıldı",
+  "ozet_tr": "Bir geliştirici, 2006 model bir iPod’un 80 MHz ARM7TDMI işlemcisi ve 64 MB RAM’i üzerinde, FPU olmadan Karpathy’nin llama2.c TinyStories modelini çalıştırdı. Model, tamamen tamsayı matematiği kullanan bir port sayesinde cihazın müzik tamponuna doğrudan yüklenebiliyor.",
+  "detayli_icerik_tr": "Reddit topluluğu LocalLLaMA’da paylaşılan bir gönderide, kullanıcı r0tlier0, eski bir iPod (PortalPlayer PP5022, ARM7TDMI @ 80 MHz, 64 MB RAM) üzerine Rockbox eklentisi yazarak llama2.c TinyStories modellerini çalıştırdı. Cihazda donanım FPU’su bulunmadığından, geliştirici int8 runq.c dosyasını sadece tamsayı işlemleriyle çalışacak şekilde yeniden derledi.\n\nPortlama sürecinde, üstel ve softmax fonksiyonları için önceden hazırlanmış lookup tabloları, RMSNorm için ise tamsayı karekök algoritması kullanıldı. Bu sayede, modelin 15 M parametresi (17 MB) doğrudan iPod’un sabit diskinden müzik tamponuna yüklenebildi ve işlemci sadece tamsayı aritmetiğiyle çalıştı.\n\nUygulama, iPod’un video 5.5G formatını destekleyen bir Rockbox eklentisi olarak sunuluyor; ancak model çalışırken cihazda müzik çalınamıyor. Geliştirici, ileride iki çekirdeği aynı anda kullanarak performansı artırmayı ve iPod temalı bir yerel müzik öneri modeli geliştirmeyi hedefliyor.\n\nBu deney, düşük güçlü, FPU’suz gömülü cihazlarda modern dil modellerinin nasıl çalıştırılabileceğine dair pratik bir örnek sunuyor ve açık kaynak toplulukları için yeni bir yol haritası çiziyor.",
+  "onemli_maddeler": [
+    "80 MHz ARM7TDMI işlemcili, 64 MB RAM ve FPU’suz bir iPod üzerinde llama2.c TinyStories modeli çalıştırıldı.",
+    "Model, tamamen tamsayı matematiği kullanan bir port sayesinde int8 runq.c dosyasına adapte edildi.",
+    "15 M parametreli model (17 MB) doğrudan sabit diskten müzik tamponuna yüklendi, ancak çalışırken müzik çalma mümkün değil.",
+    "Gelecek planları arasında iki çekirdeği paralel kullanmak ve iPod temalı yerel müzik öneri modeli geliştirmek yer alıyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 2,
+  "onem_gerekce": "Eski bir tüketici cihazında modern bir dil modelinin çalıştırılması teknik açıdan ilgi çekici olsa da, sınırlı bir topluluk ve düşük ölçekli bir uygulama olduğu için sektörel etkisi sınırlıdır.",
+  "etiketler": [
+    "llama2.c",
+    "iPod",
+    "Rockbox",
+    "int8",
+    "gömülü sistem"
+  ],
+  "anilan_modeller": [
+    "llama2.c TinyStories 15M"
+  ],
+  "yorum_tr": "Bu tür bir port, düşük güçlü gömülü cihazlarda yapay zeka uygulamalarının sınırlarını zorlayarak geliştiricilere yeni deneyler sunuyor. Ancak performans ve kullanım senaryoları açısından hâlâ sınırlı kalması, geniş çaplı benimsenmesini zorlaştırıyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/anphbGszZTl3MXpoMeB-DSl8hFr9iwSrVpA_ijWXLCy55JdqfAfEIPFZ4Asv.jpeg?width=640&crop=smart&auto=webp&s=a426d0ec031bdd10aa257a85b0359ef9c8a2792a",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xlboqi/llama2c_on_a_2006_ipod_80_mhz_w_64_mb_ram_and_no/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-01T19:15:26.000Z",
+  "slug": "llama2-c-on-a-2006-ipod-80-mhz-w-64-mb-ram-and-no-fpu"
+}
