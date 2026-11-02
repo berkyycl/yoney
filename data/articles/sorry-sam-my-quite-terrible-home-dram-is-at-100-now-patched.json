@@ -1,0 +1,52 @@
+{
+  "baslik_tr": "Strata'ya Yama: DeepSeek V4.1 Ajan Oturumları Standart Gaming GPU’da 20 Kat Hızlandı",
+  "ozet_tr": "DeepSeek V4.1 Flash modelinin yerel bir oyun GPU’sunda (RX 9070 XT) çalıştırılması, Strata motoruna yapılan iki temel yama sayesinde oturum açma süresinde yaklaşık 20 kat hız kazanarak veri merkezi gereksinimini ortadan kaldırdı. KV splice ve resident‑only routing teknikleri, sistem istemcisinin tekrar tekrar tam promptu okumasını engelleyerek VRAM ve RAM’deki uzmanları daha verimli kullandı.",
+  "detayli_icerik_tr": "OpenAI CEO'su Sam Altman, dünya çapındaki DRAM kaynaklarının bireysel bilgisayarlarda düşük kullanım oranıyla boşa harcandığını eleştirirken, bir Reddit kullanıcısı evindeki \"tamamen berbat\" bir DRAM kurulumuyla DeepSeek V4.1 Flash modelini çalıştırmayı başardı. Kullanıcı, 16 GB VRAM’li bir RX 9070 XT, 64 GB DDR4 RAM ve PCIe 3.0 NVMe SSD ile 1 M token konteksinde (IST‑DAS 1.75 bpw, modelin %98.7 performansı) modeli tamamen çevrim dışı çalıştırdı.\n\nModelin en büyük darboğazı, her yeni OpenCode oturumu için yaklaşık 37 K tokenlık sistem istemcisinin yeniden okunmasıydı; bu işlem oturumun ilk tokenını üretmeden önce yaklaşık 100 saniye bekletiyordu. Yazar, bu sorunu iki yama ile çözdü: KV splice, önceden okunan satırları önbellekten çıkararak yalnızca değişen kısımları yeniden okur; resident‑only routing ise prompt okuma aşamasında uzmanları SSD yerine VRAM ya da RAM’de tutarak veri akışını azaltır.\n\nBu iyileştirmeler sonucunda oturum açma süresi %20’ye kadar azaldı ve üretim hızı hâlâ ~7 token/s seviyesinde sürdü. Ancak yama yalnızca AMD HIP (gfx1201) mimarisi için geçerli; CUDA, SYCL ya da Metal desteği henüz eklenmedi. KV splice yaklaşık bir kesme yöntemi olduğu için uzun yönlendirme satırları modelin bağlamında hâlâ etkili olabilir, fakat kısa talimatlarda fark görülmedi. Kullanıcı, bu yamaları varsayılan olarak etkinleştirerek (STRATA_DS4_REORDER=0 ve STRATA_DS4_PROMPT_RESIDENT=0) deneyimledi ve ilgili kodu GitHub’da \"dsv41‑kv‑splice\" dalı altında paylaştı.\n\nYazılım geliştiricileri ve ev kullanıcıları, bu tür topluluk odaklı yamaların veri merkezi maliyetlerini düşürerek yüksek kapasiteli LLM’leri daha erişilebilir kıldığını gözlemliyor. Ancak resmi destek eksikliği ve donanım sınırlamaları, geniş çaplı benimsenmesini şu an için kısıtlıyor.",
+  "onemli_maddeler": [
+    "KV splice: sistem istemcisindeki sabit satırları önbellekten çıkararak yalnızca değişen kısımları yeniden okur.",
+    "Resident‑only routing: prompt okuma sırasında uzmanları VRAM/RAM’de tutar, SSD akışını azaltır.",
+    "Oturum açma süresi yaklaşık 20× hızlandı, 100 saniyelik bekleme süresi büyük ölçüde ortadan kalktı.",
+    "Yama yalnızca AMD HIP (gfx1201) mimarisi için geçerli; CUDA/SYCL/Metal desteği yok."
+  ],
+  "kategori": "guncelleme",
+  "onem": 3,
+  "onem_gerekce": "Topluluk tarafından geliştirilen bir yama, ev kullanıcılarının DeepSeek V4.1’i düşük maliyetli bir GPU’da verimli çalıştırmasını sağlıyor; ancak sınırlı donanım ve resmi destek eksikliği nedeniyle sektörel etkisi sınırlı.",
+  "etiketler": [
+    "DeepSeek",
+    "Strata",
+    "KV splice",
+    "resident routing",
+    "GPU"
+  ],
+  "anilan_modeller": [
+    "DeepSeek V4.1 Flash"
+  ],
+  "yorum_tr": "Bu yama, ev ortamında yüksek kapasiteli LLM’leri çalıştırmak isteyen geliştiriciler ve araştırmacılar için maliyet bariyerini önemli ölçüde düşürüyor, fakat resmi destek ve çoklu donanım uyumluluğu eksikliği geniş çaplı benimsenmesini kısıtlıyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "DeepSeek V4.1 Flash",
+      "benchmark": "session start latency",
+      "skor": 20,
+      "birim": "x",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "session start",
+      "kaynak_metinden_alinti": "The problem was prompt reading... about 100 s before the first token. ... Sessions start ~20× faster."
+    },
+    {
+      "model": "DeepSeek V4.1 Flash",
+      "benchmark": "generation throughput",
+      "skor": 7,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "generation",
+      "kaynak_metinden_alinti": "Generation at ~7 tok/s was fine."
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/dwgmz70zi3zh1.png?width=640&crop=smart&auto=webp&s=09057788828cfce3d0098a50b3ffddf13ca7ad62",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xljdnj/sorry_sam_my_quite_terrible_home_dram_is_at_100/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-02T00:44:53.000Z",
+  "slug": "sorry-sam-my-quite-terrible-home-dram-is-at-100-now-patched"
+}

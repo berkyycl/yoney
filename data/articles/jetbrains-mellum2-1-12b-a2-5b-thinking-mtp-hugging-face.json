@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "JetBrains Mellum2.1-12B-A2.5B-Thinking-MTP modeli Hugging Face'de yayınlandı",
+  "ozet_tr": "JetBrains, Mellum2.1 serisine çoklu token tahmini (MTP) başlığı ekleyerek yeni bir model varyantı sundu. MTP başlığı, spekülatif taslak üretimi sayesinde yanıt üretimini %1.4‑%1.8 oranında hızlandırıyor ve taslak tokenların yaklaşık %90'ı kabul ediliyor. Model, vLLM, Transformers ve llama.cpp gibi popüler inference çerçevelerinde doğrudan kullanılabiliyor.",
+  "detayli_icerik_tr": "JetBrains, Mellum2.1-12B-A2.5B-Thinking-MTP adlı yeni model varyantını Hugging Face platformunda duyurdu. Bu sürüm, \"Multi-token Prediction\" (MTP) başlığı adı verilen ek bir transformer bloğu içeriyor; bu blok, örneklenen tokenın hemen sonrasını tahmin ederek spekülatif bir taslak oluşturuyor. Inference aşamasında model, taslak tokenları doğruluyor; böylece çıktının içeriği değişmeden, dekodlama süresi %1.4‑%1.8 oranında kısalıyor ve taslak tokenların %90'ı kabul ediliyor.\n\nMTP başlığı, model dosyalarının içinde \"model-mtp.safetensors\" adlı dosyada \"mtp.\" önekiyle yer alıyor ve config.json dosyasında \"num_nextn_predict_layers\": 1 olarak tanımlanıyor. Diğer tüm yapılandırma ayarları Mellum2.1 Thinking sürümüyle aynı kalıyor, bu da mevcut Mellum2.1 kullanıcılarının yeni özellikten sorunsuz faydalanabilmesini sağlıyor.\n\nYeni model, vLLM 0.33 ve üzeri sürümlerde \"--speculative-config '{\"method\": \"mtp\", \"num_speculative_tokens\": 1}'\" parametresiyle etkinleştirilebiliyor. Transformers 5.20 ve üzeri sürümlerde ise generate fonksiyonuna \"use_mtp=True\" argümanı eklenerek MTP desteği sağlanıyor. Llama.cpp kullanıcıları da GGUF deposunu kullanarak \"--spec-type draft-mtp --spec-draft-n-max 1\" seçenekleriyle bu özelliği aktif edebiliyor.\n\nTopluluk, bu yeni model varyantını Reddit'in LocalLLaMA alt forumunda paylaştı ve teknik detayların yanı sıra entegrasyon örnekleriyle geniş bir geliştirici kitlesine ulaştı. MTP başlığının getirdiği hız artışı, özellikle gerçek‑zamanlı yanıt gerektiren uygulamalarda ve düşük gecikmeli sohbet botlarında önemli bir performans iyileştirmesi vaat ediyor.",
+  "onemli_maddeler": [
+    "MTP başlığı, spekülatif taslak üretimiyle dekodlama süresini %1.4‑%1.8 hızlandırıyor.",
+    "Taslak tokenların %90'ı kabul edilerek çıktı kalitesi korunuyor.",
+    "vLLM, Transformers ve llama.cpp gibi popüler çerçevelerde tek satır parametreyle etkinleştirilebiliyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Mellum2.1 serisine spekülatif dekodlama yeteneği eklenmesi, LLM performansını artırarak geliştiricilerin ve son kullanıcıların deneyimini iyileştirecek önemli bir güncellemedir.",
+  "etiketler": [
+    "Mellum2.1",
+    "MTP",
+    "speculative decoding",
+    "LLM",
+    "Hugging Face"
+  ],
+  "anilan_modeller": [
+    "Mellum2.1-12B-A2.5B-Thinking-MTP"
+  ],
+  "yorum_tr": "MTP başlığı, düşük gecikmeli uygulamalarda LLM'lerin daha hızlı yanıt vermesini sağlayarak hem araştırmacıların hem de ürün geliştiricilerin iş akışlarını hızlandıracak. Özellikle sohbet botları ve gerçek‑zamanlı asistanlar için bu tür spekülatif teknikler, maliyet ve performans dengesini iyileştirebilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/HKYTFY5x8tIPJdXVrlnzREiE9dkHNpvmsrbRG0p5yOY.png?width=640&crop=smart&auto=webp&s=9e471a6775656bc8b773b61a047e1fcbdc84f917",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xln8f2/jetbrainsmellum2112ba25bthinkingmtp_hugging_face/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-02T03:58:06.000Z",
+  "slug": "jetbrains-mellum2-1-12b-a2-5b-thinking-mtp-hugging-face"
+}
