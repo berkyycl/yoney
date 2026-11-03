@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "RTX 8000 48GB fiyatları iki yılda düştü, 3090 ise iki katına çıktı",
+  "ozet_tr": "Kullanıcı, RTX 8000 48GB kartının iki yıl içinde fiyatının 2400 dolardan 2100 dolara gerilediğini, aynı dönemde RTX 3090'un fiyatının iki katına çıktığını belirtiyor. Daha düşük güç tüketimi ve yüksek bellek kapasitesiyle RTX 8000, ev laboratuvarları için maliyet‑etkin bir seçenek olarak öne çıkıyor.",
+  "detayli_icerik_tr": "2024 yılında 2400 dolar ödeyerek bir RTX 8000 48 GB GPU satın alan Reddit kullanıcısı, son iki yılda bu kartın fiyatının yaklaşık 2100 dolara gerilediğini raporladı. Performans açısından RTX 8000, 672 GB/s veri işleme hızıyla RTX 3090’un 936 GB/s hızının biraz gerisinde kalırken, iki katı bellek (48 GB) sayesinde daha büyük modeller ve uzun bağlam uzunlukları çalıştırabiliyor.\n\nGüç tüketiminde de belirgin bir avantaj sunan RTX 8000, tek kartta 265 W çekerken aynı bellek kapasitesine ulaşmak için iki RTX 3090 kartının toplamda yaklaşık 700 W tüketmesi gerekiyor. Bu durum, GB başına maliyet açısından RTX 8000’ü daha cazip kılıyor; iki RTX 3090’un toplam maliyeti 1600‑1800 $ iken tek bir RTX 3090 şu anda 1500‑1600 $ aralığında bulunuyor.\n\nKullanıcı, RTX 8000’in sürücüler, uyumluluk ve yazılım açısından iki yıl boyunca sorunsuz çalıştığını, 256 k token’a kadar “local” seviye modelleri tamamen VRAM’de çalıştırabildiğini ve Q6 kuantizasyonlu modellerde (Qwen 3.8 27B, Llama 3 70B vb.) yüksek performans sağladığını belirtti. Daha büyük MoE modelleri de sistem RAM’e katman offload yapılarak (ör. GPT‑OSS 120B) sorunsuz çalıştırılıyor; Strata ve QFN gibi araçlarla 390 k bağlamda Q4_xs kuantizasyonu 850 t/s prompt işleme ve 60‑70 t/s token üretimi sağlıyor.\n\nSonuç olarak, 2100 $ fiyatındaki RTX 8000, ev‑lab ortamlarında tek kartla hem bellek hem de enerji verimliliği sunarak iki RTX 3090, Strix Halo, DGX Spark ve RTX 6000 gibi daha pahalı çözümlere göre daha ekonomik bir “her şeyi yap” seçeneği olarak öne çıkıyor.",
+  "onemli_maddeler": [
+    "RTX 8000 48 GB fiyatı iki yılda 2400 $'dan 2100 $'a düştü, RTX 3090 ise fiyatını iki katına çıkardı.",
+    "RTX 8000, 265 W güç tüketimiyle 48 GB bellek sunarken, aynı bellek kapasitesi için iki RTX 3090 toplamda ~700 W tüketiyor.",
+    "Kullanıcı, RTX 8000 ile 256 k token’a kadar modelleri VRAM’de çalıştırabildiğini ve Q4_xs kuantizasyonunda 390 k bağlamda 850 t/s prompt işleme elde ettiğini raporladı."
+  ],
+  "kategori": "fiyat-limit",
+  "onem": 3,
+  "onem_gerekce": "GPU fiyat dalgalanmaları ve enerji verimliliği, yerel LLM çalıştıran araştırmacı ve hobi kullanıcıları için maliyet planlamasını etkileyen orta ölçekli bir gelişmedir.",
+  "etiketler": [
+    "GPU",
+    "fiyat",
+    "RTX8000",
+    "LLM",
+    "donanım"
+  ],
+  "anilan_modeller": [
+    "RTX 8000 48GB",
+    "RTX 3090",
+    "RTX 6000"
+  ],
+  "yorum_tr": "Bu fiyat düşüşü, yüksek bellekli GPU'ları ev laboratuvarları için daha ulaşılabilir kılıyor; geliştiriciler daha büyük modelleri düşük enerji maliyetiyle çalıştırabilir, ancak RTX 3090'un fiyat artışı hâlâ bütçe dostu seçenekleri zorlaştırıyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://miro.medium.com/v2/resize:fit:1200/1*y2_ZzbpMJc1We8n0tQVwZA.png",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xmgmd8/rtx_8000_48gb_prices_have_decreased_over_the_last/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-03T02:09:42.000Z",
+  "slug": "rtx-8000-48gb-prices-have-decreased-over-the-last-two-years"
+}

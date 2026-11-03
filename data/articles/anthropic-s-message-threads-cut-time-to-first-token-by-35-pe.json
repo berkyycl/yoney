@@ -1,0 +1,42 @@
+{
+  "baslik_tr": "Anthropic, Claude Platformunda Message Threads Özelliğiyle Uzun Konuşmalarda İlk Token Süresini %35 Kısalttı",
+  "ozet_tr": "Anthropic, Claude API'sine yeni bir Message Threads özelliği ekledi. Bu özellik, uzun diyaloglarda önceki mesajların tamamını yeniden göndermek yerine yalnızca değişen kısmı aktararak ilk token üretim süresini yaklaşık %35 oranında azaltıyor.",
+  "detayli_icerik_tr": "Anthropic, Claude platformunda Message Threads adını verdiği yeni bir özellik setini kamu beta aşamasına çıkardı. Geleneksel API çağrılarında, her istek önceki tüm konuşma geçmişini yeniden gönderiyordu; bu da özellikle 500.000 ile 1.000.000 token arasında değişen uzun diyaloglarda yanıt süresini uzatıyordu. Message Threads, yalnızca son mesajdan bu yana değişen tokenları ileterek bu sorunu ortadan kaldırıyor.\n\nŞirket, bu yenilik sayesinde 500.000 ila bir milyon token arasında değişen isteklerde ilk token üretim süresinin %35 oranında azaldığını belirtiyor. Token tüketimi aynı kalıyor, çünkü Claude hâlâ tam konuşma geçmişini okuyor; sadece veri iletiminde tasarruf sağlanıyor. Özellik, bellek içinde şifreli olarak tutuluyor ve beş dakikalık bir hareketsizlik süresinden sonra otomatik olarak sonlandırılıyor.\n\nMessage Threads, özellikle kodlama ajanları, bilgisayar kullanım ajanları ve çok sayıda belge ya da görsel işleyen iş akışları için büyük fayda sağlıyor. Bu tip uygulamalarda veri aktarımının azaltılması, yanıt gecikmelerini düşürerek daha akıcı ve verimli bir kullanıcı deneyimi sunuyor. Özelliğin Claude platformu üzerinden ve AWS, Microsoft Foundry ve Google Cloud entegrasyonlarıyla da kullanılabildiği belirtiliyor.\n\nAnthropic, bu güncellemeyle API performansını iyileştirirken, geliştiricilerin mevcut kodlarını büyük ölçüde değiştirmeden yeni özelliği entegre edebileceklerini vurguluyor. Detaylı teknik bilgiler ve entegrasyon yönergeleri resmi dokümantasyonda yer alıyor.",
+  "onemli_maddeler": [
+    "Message Threads, uzun konuşmalarda veri iletimini sadece değişen tokenlarla sınırlayarak ilk token süresini %35 azaltıyor.",
+    "Özellik, 500.000‑1.000.000 token arası isteklerde en yüksek performans iyileştirmesini sağlıyor.",
+    "Bellek içinde şifreli tutulan thread beş dakika hareketsizlik sonrası sona eriyor, token tüketimi değişmiyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Claude API'sinin performansını önemli ölçüde artıran bir güncelleme, özellikle büyük ölçekli uygulamalarda yanıt süresini düşürerek rekabet avantajı sağlıyor.",
+  "etiketler": [
+    "Anthropic",
+    "Claude",
+    "Message Threads",
+    "API",
+    "AI"
+  ],
+  "anilan_modeller": [
+    "Claude"
+  ],
+  "yorum_tr": "Bu güncelleme, uzun diyalog ve belge işleme gerektiren uygulamalarda yanıt gecikmelerini azaltarak geliştiricilerin daha verimli sistemler inşa etmesine olanak tanıyor. Kullanıcı deneyimi iyileşirken, altyapı maliyetlerinde de potansiyel tasarruf sağlanabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Claude",
+      "benchmark": "Time to first token reduction",
+      "skor": 35,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "500,000-1,000,000 token istekleri",
+      "kaynak_metinden_alinti": "cutting time to first token by about 35 percent for requests between 500,000 and one million tokens"
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/08/claude_logo-1.png",
+  "url": "https://the-decoder.com/anthropics-message-threads-cut-time-to-first-token-by-35-percent-for-long-conversations/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-03T12:35:49.000Z",
+  "slug": "anthropic-s-message-threads-cut-time-to-first-token-by-35-pe"
+}

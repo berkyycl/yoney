@@ -1,0 +1,64 @@
+{
+  "baslik_tr": "Transformers Model Integration Contracts (MIC) ile Entegre Testler Hızlandırıldı",
+  "ozet_tr": "Hugging Face, Transformers kütüphanesinde Model Integration Contracts (MIC) adlı yeni bir standart tanıttı. MIC, gerçek checkpoint'lerden küçültülmüş fixture'lar, kullanım örnekleri ve insan onaylı baz hatlarıyla hataları erken yakalamayı hedefliyor. Bu yaklaşım, büyük modellerin CI sürecinde maliyetli GPU çalıştırmalarını azaltarak regresyonları ana dalda (main) ortaya çıkmadan engelliyor.",
+  "detayli_icerik_tr": "Hugging Face, Temmuz 2026'da T5 modeline PyTorch'un scaled dot-product attention (SDPA) desteği eklenirken ortaya çıkan bir hatayı, iki ay boyunca ana dalda (main) kalmasına rağmen, sadece CPU üzerinde çalışan küçültülmüş bir UMT5 fixture'ı sayesinde tespit etti. Bu deney, büyük modellerin tam entegrasyon testlerini her PR'da çalıştırmanın pratik olmadığını ve daha hafif fixture'ların erken hata yakalama konusunda etkili olabileceğini gösterdi.\n\nModel Integration Contract (MIC) üç bileşenden oluşuyor: (1) gerçek checkpoint'in konfigürasyonundan türetilen, katman sayısı ve genişliği azaltılmış bir fixture, (2) modelin tipik bir kullanım senaryosunu gösteren çalıştırılabilir bir Markdown örneği ve (3) bu örnekten elde edilen, insan tarafından onaylanmış baz hatları. Contract, aynı mimari ve kullanım yolunu paylaşan farklı checkpoint'ler için aynı fixture'ı ve baz hatları yeniden kullanabiliyor.\n\nMIC'in oluşturulma süreci, konfigürasyon küçültme, ön işleme dosyalarının korunması, ağırlıkların oluşturulup doğrulanması ve son olarak sabit bir sürüm olarak yayınlanması adımlarını içeriyor. Örneğin, Llama 4 Scout modelinin 108.6 milyar parametresi 44.7 milyon parametreye indirgenerek aynı katman çeşitliliği korunmuş. Bu fixture'lar, CPU üzerinde 66 MB ağırlıkla çalıştırılarak gerçek checkpoint'in 1.2 GB'lık boyutuna kıyasla büyük ölçüde kaynak tasarrufu sağlıyor.\n\nMIC'lerin CI içinde kullanımı, değiştirilen dosyalara göre ilgili contract'ların seçilmesi ve hızlı entegrasyon testlerinin çalıştırılması şeklinde. UMT5 örneğinde, hatalı SDPA kodu sadece eager attention yolunda görülmezken, MIC'in SDPA yolunu kullanan fixture'ı hatayı %1.22 log‑prob ve %0.20 eğitim kaybı farkı olarak raporladı. Testin CPU üzerindeki çalışma süresi ise 13.4 saniye olarak ölçüldü. Bu sonuçlar, MIC'in gerçek hataları yakalama yeteneğini ve CI maliyetlerini düşürmedeki potansiyelini ortaya koyuyor.",
+  "onemli_maddeler": [
+    "MIC, büyük modellerin tam entegrasyon testlerini her PR'da çalıştırmadan hataları erken tespit etmeyi sağlıyor.",
+    "Küçültülmüş fixture'lar gerçek checkpoint'lerin konfigürasyonunu korurken ağırlık boyutunu %95 oranında azaltıyor.",
+    "UMT5 regresyonu, MIC sayesinde log‑probabilite farkı 1.22 ve eğitim kaybı farkı 0.20 olarak tespit edildi."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Model entegrasyon testlerinin otomatikleştirilmesi, büyük dil modellerinin güvenilirliğini artırırken CI maliyetlerini önemli ölçüde düşürüyor; bu da topluluk ve şirketler için kritik bir gelişme.",
+  "etiketler": [
+    "MIC",
+    "CI",
+    "model testing",
+    "HuggingFace",
+    "Transformers"
+  ],
+  "anilan_modeller": [
+    "T5",
+    "UMT5",
+    "SmolLM",
+    "Whisper",
+    "Llama 4 Scout"
+  ],
+  "yorum_tr": "MIC, geliştiricilerin büyük modelleri daha hızlı ve düşük maliyetle test etmelerini sağlayarak hataların prodüksiyona geçmeden yakalanmasını mümkün kılıyor. Kullanıcılar ise daha stabil modellerle çalışarak entegrasyon sürecinde güven artışı yaşayacak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "UMT5",
+      "benchmark": "Log-probability deviation",
+      "skor": 1.22,
+      "birim": "point",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Label log-probabilities differed from the reviewed baseline by 1.22"
+    },
+    {
+      "model": "UMT5",
+      "benchmark": "Training loss deviation",
+      "skor": 0.2,
+      "birim": "point",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "training loss by about 0.20"
+    },
+    {
+      "model": "T5 contract",
+      "benchmark": "CPU runtime",
+      "skor": 13.4,
+      "birim": "seconds",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "the selected T5 contract's runner step took 13.4 seconds on CPU"
+    }
+  ],
+  "gorsel_url": "https://huggingface.co/blog/assets/transformers-mic/mic-logo.png",
+  "url": "https://huggingface.co/blog/transformers-mic",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-11-03T00:00:00.000Z",
+  "slug": "transformers-model-integration-contracts"
+}

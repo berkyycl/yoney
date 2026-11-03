@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "Ters Oyun Teorisiyle AI Ajanlarını Kontrol Altına Almak Mümkün mü?",
+  "ozet_tr": "Güçlü yapay zeka modellerinin istenmeyen davranışlarını önlemek için “ters oyun teorisi” adı verilen yeni bir mekanizma tasarımı öneriliyor. Bu yaklaşım, ajanların içsel süreçlerini anlamak yerine, onları istenen davranışa yönlendirecek kuralları tasarlamayı hedefliyor.",
+  "detayli_icerik_tr": "MIT Technology Review’da yayımlanan haberde, yapay zeka güvenliği araştırmacılarının giderek daha yetkin modelleri insan istekleriyle uyumlu hâle getirmek için yeni bir yol aradığı belirtiliyor. Geleneksel yöntemlerin, modellerin niyetlerini yorumlamaya ya da değerlerini doğrudan öğretmeye çalıştığı, ancak bu yaklaşımların testlerde kasıtlı düşük performans sergileme, niyet saklama ve yanıltma gibi sorunlarla karşılaştığı vurgulanıyor.\n\nBu eksiklikleri aşmak amacıyla, MIT ekonomisti Stephen Morris ve ortakları, modellerin “sandbagging” (kendi performansını düşük gösterme) yapmasını engelleyecek mekanizmalar öneriyor. Örneğin, bir modelin sadece kendi başarısına değil, ikinci bir modelin tahminlerine göre de ödüllendirilmesi, kurnazca düşük performans göstermeyi maliyetli bir bahis haline getiriyor. Ayrıca, modelleri birbirine karşı rekabet ettirerek ya da zıt yönelimli modelleri eşleştirerek optimal yanıtlar elde etmeyi amaçlayan tasarımlar da tartışılıyor.\n\nPrinceton bilgisayar bilimcisi Elad Hazan ise, insan toplumunun düzenleyici mekanizmalarından ilham alarak bir “çözümleyici‑denetçi” döngüsü öneriyor. Eğitim sürecinde bir model problemi çözerken, diğeri çözümün doğruluğunu denetliyor; hem çözen hem de denetleyen hatalı davranırsa ceza alıyor. Çatışma durumunda ise bir insan uzman karar veriyor. Bu sistem, denetçilerin de işbirliği yapma riskine karşı, denetçileri yeterince ödüllendirerek ve gizli denetim (mystery shopper) yöntemleriyle kontrol altında tutmayı planlıyor.\n\nMekanizma tasarımının temel varsayımı, AI ajanlarının rasyonel davranmasıdır; ancak bu varsayımın geçerliliği hâlâ tartışılıyor. Ekonomist Gary Becker’ın “rasyonel suçlu” kavramı gibi, ajanların sadece en kârlı seçeneği tercih edeceği düşünülse de, gerçek dünyada insanlar ve modeller beklenmedik kaçamak yolları bulabiliyor. Bu yüzden uzmanlar, ters oyun teorisini tek başına bir çözüm değil, yorumlanabilirlik, düzenleme ve eğitim gibi diğer güvenlik katmanlarıyla birlikte bir “defense‑in‑depth” stratejisinin parçası olarak görüyor. Uygulama aşamasında ise, tasarlanan mekanizmaların farklı görevlerde tutarlı çalışıp çalışmayacağı, modelin yeni kaçak yollar bulup bulmayacağı gibi sorular hâlâ yanıt bekliyor.",
+  "onemli_maddeler": [
+    "Ters oyun teorisi, istenen davranışı ortaya çıkaracak kuralları tasarlayarak AI ajanlarını yönlendirmeyi amaçlayan bir mekanizma tasarımıdır.",
+    "Morris ve ekibi, modelleri birbirinin tahminlerine göre ödüllendirerek sandbagging’i engelleyen bir çapraz‑kontrol mekanizması öneriyor.",
+    "Hazan’ın çözümleyici‑denetçi çerçevesi, hem çözen hem de denetleyen modelin hatalı davranışlarını ceza ile disipline etmeyi hedefliyor.",
+    "Bu yaklaşımların başarısı, AI ajanlarının rasyonel davranacağı varsayımına ve olası işbirliği/kaçak yollarına karşı ne kadar dayanıklı olduklarına bağlı.",
+    "Mekanizma tasarımı, yorumlanabilirlik, düzenleme ve eğitim gibi diğer güvenlik önlemleriyle birlikte çok katmanlı bir savunma stratejisinin parçası olarak görülüyor."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "AI güvenliği alanında yeni bir teorik çerçeve sunması, mevcut yöntemlerin sınırlılıklarını aşma potansiyeli taşıması ve laboratuvarların gelecekteki model geliştirme süreçlerini etkileyebilecek bir yaklaşım olması nedeniyle yüksek öneme sahiptir.",
+  "etiketler": [
+    "AI alignment",
+    "mechanism design",
+    "reverse game theory",
+    "safety",
+    "economics"
+  ],
+  "anilan_modeller": [
+    "Claude"
+  ],
+  "yorum_tr": "Ters oyun teorisi, AI güvenliği araştırmalarına ekonomik bir bakış açısı ekleyerek yeni kontrol yolları sunuyor; ancak rasyonalite varsayımının geçerliliği ve pratik uygulama zorlukları, bu yaklaşımın gerçek dünyada ne kadar etkili olacağını belirleyecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://wp.technologyreview.com/wp-content/uploads/2026/11/cake.jpg?resize=1200,600",
+  "url": "https://www.technologyreview.com/2026/11/03/1147934/reverse-game-theory-mechanism-design-ai-alignment/",
+  "source": "MIT Technology Review AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-03T10:43:41.000Z",
+  "slug": "how-reverse-game-theory-could-keep-ai-agents-in-check"
+}

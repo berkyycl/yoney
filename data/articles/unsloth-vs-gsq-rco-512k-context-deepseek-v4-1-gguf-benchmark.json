@@ -1,0 +1,64 @@
+{
+  "baslik_tr": "Unsloth, DeepSeek-V4.1 GGUF Modelleriyle GSQ-RCO'yu 512K Bağlamda 10-20% Geride Bıraktı",
+  "ozet_tr": "Unsloth ekibi, DeepSeek‑V4.1 Flash GGUF modellerini 512 K bağlamda çalıştırarak Terminal Bench, DeepSWE ve Automation Bench gibi testlerde GSQ‑RCO referans modelinden %10‑20 daha iyi sonuç elde etti. Toplam 35,1 M tokenlık benchmark verisiyle, ölçülen iyileşmelerin istatistiksel olarak anlamlı olduğu gösterildi.",
+  "detayli_icerik_tr": "Reddit topluluğu LocalLLaMA'da yayınlanan rapora göre, Unsloth'un yeni Dynamic 3.1 GGUF sürümü, DeepSeek UD 3.1 tabanlı 512 K bağlamda DeepSWE, Terminal Bench, Automation Bench, HLE ve SciCode testlerini çalıştırdı. Bu testlerin yanı sıra 128 K bağlamda 14 farklı benchmark da yürütülerek toplam 35,1 M tokenlık veri toplandı; önceki çalışmalarda kullanılan 1,3 M tokena kıyasla 27 kat daha fazla veri analiz edildi.\n\nBenchmark sürecinde, önceki eleştirileri gidermek amacıyla 32 K bağlam sınırı kaldırıldı ve yeni, doymamış \"agentic\" tarzı testler (Terminal Bench, DeepSWE, Automation Bench) eklendi. Değerlendirme altyapısı da güncellenerek Math Verify, geliştirilmiş grader'lar ve GPT‑6‑Luna XHigh gibi modellerle HLE testi yeniden yapıldı. Terminal Bench 2.1 ve DeepSWE v1.1 için mini‑swe‑agent kullanıldı; maksimum adım sayıları sırasıyla 150 ve 500 olarak belirlendi.\n\nSonuçlar, Unsloth modellerinin GSQ‑RCO'nun IQ1_M, IQ2_XXS ve IQ2_XS varyantlarına kıyasla %10‑20 daha yüksek performans gösterdiğini ortaya koydu. Özellikle IQ1_M için ölçülen kurtarma oranı %97,24 (%96,23‑%98,21 %95 CI) iken GSQ‑RCO'nun iddia ettiği %98,70'lik oran istatistiksel olarak anlamlı bir farkla (p=0.00002) daha düşük bulundu. IQ2_XXS ve IQ2_XS için de benzer şekilde ölçülen kurtarma oranları %98,38 ve %99,54 olarak rapor edildi.\n\nUnsloth ekibi, tüm metodoloji ve veri setlerini blog yazısı ve Hugging Face deposu üzerinden paylaştı ve GSQ‑RCO'nun benchmark koşulları hakkında daha fazla bilgi alındığında ek testler yapmaya hazır olduklarını belirtti. Bu şeffaflık, topluluk içinde model karşılaştırmalarının güvenilirliğini artırmayı hedefliyor.",
+  "onemli_maddeler": [
+    "Unsloth Dynamic 3.1 GGUF modelleri, 512 K bağlamda yürütülen benchmarklarda GSQ‑RCO'dan %10‑20 daha iyi performans gösterdi.",
+    "Benchmark sürecinde 35,1 M tokenlık veri toplandı; önceki çalışmalara göre 27 kat daha fazla test verisi kullanıldı.",
+    "GSQ‑RCO IQ1_M, IQ2_XXS ve IQ2_XS için iddia edilen kurtarma oranları istatistiksel olarak ölçülen değerlerden düşük bulundu (p‑değerleri 0.00002‑0.0013)."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Model performansının büyük ölçekli bağlamlarda detaylı ve istatistiksel olarak doğrulanmış bir şekilde ölçülmesi, LLM ekosisteminde rekabeti ve güvenilir benchmark uygulamalarını artırdığı için yüksek öneme sahiptir.",
+  "etiketler": [
+    "DeepSeek",
+    "Unsloth",
+    "Terminal Bench",
+    "AIME2025",
+    "GGUF"
+  ],
+  "anilan_modeller": [
+    "DeepSeek-V4.1-Flash-1017-GGUF",
+    "GSQ-RCO IQ1_M",
+    "GSQ-RCO IQ2_XXS",
+    "GSQ-RCO IQ2_XS",
+    "DeepSeek UD version 3.1 GGUF"
+  ],
+  "yorum_tr": "Bu sonuçlar, yüksek bağlam uzunluklarında çalışan modellerin gerçek dünya uygulamalarında daha etkili olabileceğini gösteriyor; geliştiriciler, Unsloth'un açık veri ve metodoloji paylaşımını referans alarak kendi benchmark süreçlerini iyileştirebilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GSQ-RCO IQ1_M",
+      "benchmark": "Recovery",
+      "skor": 97.24,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "95% CI [96.23, 98.21]",
+      "kaynak_metinden_alinti": "GSQ-RCO IQ1_M claims 98.7% recovery, but we measured 97.24 [96.23, 98.21] with a p-value of 0.0013."
+    },
+    {
+      "model": "GSQ-RCO IQ2_XXS",
+      "benchmark": "Recovery",
+      "skor": 98.38,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "95% CI [97.52, 99.22]",
+      "kaynak_metinden_alinti": "GSQ-RCO IQ2_XXS claiming 100% recovery, but we measured 98.38 [97.52, 99.22] with a p-value of 0.0001."
+    },
+    {
+      "model": "GSQ-RCO IQ2_XS",
+      "benchmark": "Recovery",
+      "skor": 99.54,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "95% CI [98.88, 100.18]",
+      "kaynak_metinden_alinti": "GSQ-RCO IQ2_XS claims 99.80% recovery but we measured 99.54 [98.88, 100.18] with a p-value of 0.16."
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/mjqrl0p8z7zh1.png?width=640&crop=smart&auto=webp&s=13c1c027015095409857a4541ca9f8de73d10e15",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xm102d/unsloth_vs_gsqrco_512k_context_deepseekv41_gguf/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-02T15:57:37.000Z",
+  "slug": "unsloth-vs-gsq-rco-512k-context-deepseek-v4-1-gguf-benchmark"
+}

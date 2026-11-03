@@ -1,0 +1,80 @@
+{
+  "baslik_tr": "DeepSeek-V4.1-Flash-1017 Modeli 12 GB VRAM’da Refusals’ı %85’ten %0’a Düşürdü",
+  "ozet_tr": "Atomic.Chat ekibi, DeepSeek‑V4.1‑Flash‑1017 modelinin 12 GB GPU ve SSD‑tabanlı Engram dosyasıyla çalışan sürümünde jailbreak reddetmelerini %85'ten %0'a indirdi. Modifikasyon sadece 82 yoğun tensörü değiştirerek gerçekleştirildi ve MMLU‑500, GPQA‑Diamond ve AIME25 gibi standart benchmarklarda performans aynı seviyede kaldı.",
+  "detayli_icerik_tr": "DeepSeek‑V4.1‑Flash‑1017 modelinin \"uncensored\" (sansürsüz) bir versiyonu, ISTA‑DASLab'ın GSQ‑RCO kuantizasyon dosyaları ve Strata Engine kullanılarak 12 GB VRAM ve 64 GB RAM + SSD konfigürasyonunda çalıştırıldı. Geliştiriciler, modelin sadece 82 yoğun tensörünü (attention output, shared expert down proj ve Engram value proj) değiştirerek, orijinal dosya başlıkları ve boyutlarıyla uyumlu bir şekilde yeni bir Engram dosyasıyla takas yaptı.\n\nBu değişiklik sonucunda, JailbreakBench testlerinde modelin reddetme oranı %85'in üzerinden %0'a düştü; hatta düşünme aşamasındaki reddetmeler de %27'den %1'e geriledi. Üç farklı model boyutu (IQ1_M, IQ2_XXS, IQ2_XS) için aynı Strata ortamı kullanıldı ve her birinde MMLU‑500 skorları sırasıyla %80.6, %82.8 ve %81.6 olarak kaydedildi. IQ2_XS hâlâ düşünme sırasında 2/30 soruda reddetme gösterdiği için IQ2_XXS tercih edildi.\n\nPerformans açısından modelin zekâ seviyesinde bir gerileme görülmedi. GPQA‑Diamond benchmark'ı %83.3 puanla hem orijinal hem de sansürsüz sürümde aynı sonucu verdi. AIME25 testinde ise sansürsüz sürüm %80.0 puan alırken, orijinal sürüm %76.7 puan elde etti; ancak test sadece 30 sorudan oluştuğu için fark istatistiksel olarak önemsiz kabul edildi. Testler 8K bağlam uzunluğunda kiralanan bir GPU üzerinde yapıldı; uzun bağlam ve hız ölçümleri henüz rapor edilmedi.\n\nModifikasyon, Strata Engine dışındaki ortamlar için de geçerli. Llama.cpp kullanıcıları, aynı düzenlemeyi içeren eski bir GGUF sürümünü Hugging Face üzerinden indirebilir. Geliştiriciler, deneyimlerini ve token/saniye ile RAM tüketim ölçümlerini paylaşmaları için topluluğu davet ediyor.",
+  "onemli_maddeler": [
+    "Sadece 82 yoğun tensör değişikliğiyle modelin jailbreak reddetmeleri %85'ten %0'a indirildi.",
+    "MMLU‑500, GPQA‑Diamond ve AIME25 benchmarklarında performans aynı seviyede veya hafif iyileşti.",
+    "Değişiklik, 12 GB VRAM sınırlı GPU'larda ve Strata Engine ile uyumlu şekilde çalışıyor.",
+    "Llama.cpp kullanıcıları için aynı düzenlemeyi içeren GGUF sürümü Hugging Face'te mevcut."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Modelin jailbreak reddetmelerini büyük ölçüde ortadan kaldırması ve performansının benchmarklarda korunması, 12 GB GPU sınırlı ortamlarda kullanılabilirliği artırması.",
+  "etiketler": [
+    "DeepSeek",
+    "Strata Engine",
+    "Jailbreak",
+    "Benchmark",
+    "AI Model"
+  ],
+  "anilan_modeller": [
+    "DeepSeek-V4.1-Flash-1017",
+    "DeepSeek-V4.1-Flash-1017-Uncensored"
+  ],
+  "yorum_tr": "Bu güncelleme, düşük bellekli sistemlerde güvenlik filtrelerini devre dışı bırakmak isteyen araştırmacılar ve geliştiriciler için önemli bir adım sunuyor; aynı zamanda modelin temel yeteneklerini koruması, performans kaybı endişesini azaltıyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "DeepSeek-V4.1-Flash-1017-Uncensored",
+      "benchmark": "MMLU-500",
+      "skor": 80.6,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "IQ1_M ... 80.6% 0.021"
+    },
+    {
+      "model": "DeepSeek-V4.1-Flash-1017-Uncensored",
+      "benchmark": "MMLU-500",
+      "skor": 82.8,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "IQ2_XXS ... 82.8% 0.023"
+    },
+    {
+      "model": "DeepSeek-V4.1-Flash-1017-Uncensored",
+      "benchmark": "MMLU-500",
+      "skor": 81.6,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "IQ2_XS ... 81.6% 0.027"
+    },
+    {
+      "model": "DeepSeek-V4.1-Flash-1017-Uncensored",
+      "benchmark": "GPQA-Diamond",
+      "skor": 83.3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "GPQA came out 83.3% vs 83.3%"
+    },
+    {
+      "model": "DeepSeek-V4.1-Flash-1017-Uncensored",
+      "benchmark": "AIME25",
+      "skor": 80,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "AIME 80.0% vs 76.7%"
+    }
+  ],
+  "gorsel_url": "https://external-preview.redd.it/dFlp54iSI2fuAJd0F74XniA6CvPYkJawTSjOGnMFgBE.png?width=640&crop=smart&auto=webp&s=d24cefe211d9192e4f0df7b28bd27d1b6af9695b",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xm0uy0/running_uncensored_deepseekv41flash1017_on_a_12/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-02T15:52:25.000Z",
+  "slug": "running-uncensored-deepseek-v4-1-flash-1017-on-a-12-gb-vram"
+}
