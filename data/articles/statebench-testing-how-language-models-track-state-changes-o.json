@@ -1,0 +1,51 @@
+{
+  "baslik_tr": "StateBench: Uzun Belgelerde Durum Takibini Ölçen Yeni Benchmark",
+  "ozet_tr": "AllenAI, uzun bağlamlı belgelerde varlıkların durum değişimlerini izleme yeteneğini ölçmek için StateBench adlı yeni bir benchmark tanıttı. Benchmark, dört zorluk seviyesinde değişik atama tiplerini test ederek, transformer tabanlı modellerin sınırlarını ve tekrarlamalı‑hibrit mimarilerin avantajlarını ortaya koyuyor.",
+  "detayli_icerik_tr": "AllenAI, uzun‑metinlerdeki \"state tracking\" (durum takibi) problemlerine odaklanan StateBench benchmark'ını duyurdu. Benchmark, bir dizi değişken atamasını içeren metinlerde, modellerin en son ya da zincirleme güncellemeleri doğru şekilde takip edip edemediğini ölçüyor. Dört zorluk seviyesi tanımlandı: r‑trivial (değişmez atama), aperiodic (en son değeri bulma), soluble (kendine referanslı güncellemeler) ve general finite (referansla atama ve değişim zincirleri). Bu seviyeler, programlama dilindeki değişken atama çeşitleriyle ve Krohn‑Rhodes teorisindeki monoid sınıflandırmasıyla paralel bir yapı sunuyor.\n\nAraştırmacılar, aynı veri seti ve 64.000 tokenlık bağlam uzunluğuna kadar eğitilmiş iki 7 Milyar parametreli model – transformer tabanlı Olmo 3 ve Gated DeltaNet katmanları eklenmiş Olmo Hybrid – ile daha küçük 275 M ve 2.7 B parametreli modelleri test etti. Sonuçlar, tüm modellerin r‑trivial seviyesinde yüksek doğruluk gösterdiğini, aperiodic seviyesinde uzun girdilerde doğruluğun düştüğünü ve general finite seviyesinde ise neredeyse rastgele (chance) performans sergilediğini ortaya koydu.\n\nDaha ileri bir aşamada, Gemini 3.8 Flash, Claude Opus 5.5, GPT‑6 Sol ve GPT‑6 Luna gibi son teknoloji \"frontier\" modelleri aynı testlere tabi tutuldu. Bu modeller r‑trivial ve aperiodic görevlerde başarılı olurken, soluble ve özellikle general finite seviyelerinde uzun girdilerde doğruluk %13 ya da daha düşük seviyelere geriledi. Bu durum, daha karmaşık durum zincirlerinde tek bir kaçırılan adımın son cevabı tamamen bozabilmesinden kaynaklanıyor.\n\nAraştırmacılar, 275 M parametreli modelleri StateBench üzerinde sıfırdan eğiterek mimarinin etkisini izole etti. Gated DeltaNet ve hibrit modeller, 256 atamaya kadar eğitim gördükleri bir ortamda, 64.000 atamaya kadar uzanan testlerde neredeyse mükemmel genelleme gösterdi. Transformer tabanlı modeller ise daha uzun dizilerde performans kaybı yaşadı ve en zor seviyeyi (general finite) hiç öğrenemedi. En esnek bellek güncelleme mekanizmasına sahip Gated DeltaNet varyantı, eğitim uzunluğunun yaklaşık 10 katına kadar yüksek doğruluk koruyabildi.\n\nStateBench, mevcut testlerin yalnızca en zor durumları ele almasının ötesinde, daha yaygın ve basit durum takibi senaryolarını da kapsayarak araştırmacılara mimarilerin hangi seviyelerde güçlü ya da zayıf olduğunu belirleme imkanı sunuyor. Gelecek çalışmaların, değişken sayısının dinamik olarak artması ve yeni varlıkların ortaya çıkması gibi gerçek‑dünya senaryolarını da içerecek şekilde benchmark'ı genişletmesi planlanıyor.",
+  "onemli_maddeler": [
+    "StateBench, dört seviyeli bir yapı sunarak durum takibi problemlerini basitten karmaşığa sistematik olarak sınıflandırıyor.",
+    "Recurrent ve hibrit mimariler (Gated DeltaNet, hybrid) uzun bağlamlarda transformer'ların çok ötesinde genelleme yapabiliyor.",
+    "Frontier modeller bile en zor (general finite) seviyede uzun girdilerde %13'ün altında doğruluk göstererek hâlâ sınırlı kalıyor.",
+    "Doğrudan StateBench üzerinde eğitilen hibrit modeller, eğitim uzunluğunun 10 katına kadar yüksek performans sürdürebiliyor."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Uzun bağlamlı LLM'lerde durum takibi kritik bir yetenek; StateBench bu alanda mimarilerin güçlü ve zayıf yönlerini ölçen ilk kapsamlı benchmark olarak sektörel araştırmalara yön veriyor.",
+  "etiketler": [
+    "state tracking",
+    "long-context",
+    "benchmark",
+    "LLM",
+    "recurrent architectures"
+  ],
+  "anilan_modeller": [
+    "Gemini 3.8 Flash",
+    "Claude Opus 5.5",
+    "GPT-6 Sol",
+    "GPT-6 Luna",
+    "Olmo 3",
+    "Olmo Hybrid",
+    "Gated DeltaNet",
+    "Hybrid Model",
+    "Transformer"
+  ],
+  "yorum_tr": "StateBench, uzun belgelerdeki durum takibi sorunlarını sistematik olarak ortaya koyarak, araştırmacıların mimari seçimlerini ve eğitim stratejilerini yeniden gözden geçirmesine olanak tanıyor; özellikle hibrit ve tekrarlamalı modellerin potansiyeli, mevcut transformer tabanlı sistemlerin sınırlarını aşma yönünde yeni bir ivme sağlayabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Gemini 3.8 Flash",
+      "benchmark": "StateBench",
+      "skor": 13,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "en uzun general finite problemler",
+      "kaynak_metinden_alinti": "dropping to 13% or lower on the longest general finite problems."
+    }
+  ],
+  "gorsel_url": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/5g9HfQLFFaQE0fslWrxh0.png",
+  "url": "https://huggingface.co/blog/allenai/statebench",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-11-03T17:15:21.000Z",
+  "slug": "statebench-testing-how-language-models-track-state-changes-o"
+}

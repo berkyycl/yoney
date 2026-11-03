@@ -1,0 +1,51 @@
+{
+  "baslik_tr": "OpenAI, GPT-6 Astra'nın bir hafta içinde sıfırdan donanım cihazı tasarladığını duyurdu",
+  "ozet_tr": "OpenAI, yeni GPT-6 Astra modelinin bir yan proje kapsamında sadece bir hafta içinde tamamen yeni bir donanım cihazını tasarladığını açıkladı. Model, kasa tasarımından PCB yerleşimine, firmware geliştirmesinden kullanıcı arayüzüne kadar tüm adımları yönetti.",
+  "detayli_icerik_tr": "OpenAI'nin donanım ekibi, GPT-6 Astra'yı kullanarak kullanıcıların Codex kodlama ajanı ile etkileşim kurmasını sağlayan bir cihazı sıfırdan tasarladı. Astra, cihazın dış kabuk tasarımı, bileşen seçimi, iz yönlendirmesi ve PCB yerleşimi gibi karmaşık mühendislik görevlerini tek başına yürüttü; ayrıca firmware ve kullanıcı arayüzü geliştirmesini de tamamladı.\n\nTasarım tamamlandıktan sonra bir sözleşmeli üretici, prototipleri bir ay içinde küçük bir parti halinde üretti. Ancak üretim sürecinde Astra'nın bazı tasarım kararları, üretim toleransları ve montaj detayları göz önüne alınmadığı için birkaç revizyon turu gerekti. Bu durum, yapay zekâ destekli tasarımın hâlâ insan denetimine ihtiyaç duyduğunu gösterdi.\n\nOpenAI, aynı zamanda modelin performansında önemli bir sıçrama olduğunu belirtti. Şirket içi bir model, BenchCAD 2.0 benchmark'ında 0.875 puan alırken, GPT-6 Astra en yüksek akıl yürütme seviyesinde 0.594 puan elde etti. BenchCAD 2.0, modellerin 3D parçaları ve montajları yeniden oluşturma ve PCB üzerindeki bağlantıları tanımlama yeteneklerini ölçen bir testtir.\n\nOpenAI, donanım ekiplerinin Codex ve ChatGPT'i CAD modelleri, üretim çizimleri ve simülasyonlar için kullandığını ve Şubat ayından bu yana token tüketiminin 23 kat arttığını da paylaştı. Şirket ayrıca, bir AI hoparlör ile akıllı telefon arasında bir konumda olacak kendi donanım cihazını geliştirdiğini duyurdu.",
+  "onemli_maddeler": [
+    "GPT-6 Astra, bir hafta içinde tamamen yeni bir donanım cihazını tasarladı ve üretim sürecine entegre etti.",
+    "Model, kasa tasarımı, PCB yerleşimi, firmware ve UI dahil olmak üzere tüm mühendislik adımlarını yönetti.",
+    "BenchCAD 2.0 benchmark'ında GPT-6 Astra 0.594, şirket içi model ise 0.875 puan aldı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "GPT-6 Astra'nın kısa sürede tam donanım tasarımı yapabilmesi, yapay zekâ destekli mühendislik süreçlerinde çığır açıcı bir adım olarak sektörü derinden etkileyebilir.",
+  "etiketler": [
+    "GPT-6",
+    "Astra",
+    "donanım tasarımı",
+    "BenchCAD",
+    "OpenAI"
+  ],
+  "anilan_modeller": [
+    "GPT-6 Astra"
+  ],
+  "yorum_tr": "Bu gelişme, yapay zekânın ürün geliştirme döngülerini hızlandırma potansiyelini gösteriyor; geliştiriciler tasarım sürecinde daha az zaman harcarken, kullanıcılar daha hızlı yeniliklere erişebilecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "internal model",
+      "benchmark": "BenchCAD 2.0",
+      "skor": 0.875,
+      "birim": "",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "A newer \"internal model\" scores 0.875 on the BenchCAD 2.0 benchmark"
+    },
+    {
+      "model": "GPT-6 Astra",
+      "benchmark": "BenchCAD 2.0",
+      "skor": 0.594,
+      "birim": "",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "GPT-6 Astra at its highest reasoning level hits 0.594"
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/11/openai_ai_hardware.png",
+  "url": "https://the-decoder.com/openai-says-gpt-6-astra-designed-a-hardware-device-from-scratch-in-under-a-week/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-03T20:15:45.000Z",
+  "slug": "openai-says-gpt-6-astra-designed-a-hardware-device-from-scra"
+}

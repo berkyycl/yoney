@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "DeepSeek V5, Huawei Ascend çipleriyle ön‑eğitime hazırlanıyor",
+  "ozet_tr": "DeepSeek'in bir sonraki nesil büyük modeli V5'in, Huawei'nin Ascend çipleri üzerinde ön‑eğitime alınacağı duyuruldu. Bu adım, Çin'in üst düzey LLM'lerini yerli donanımda tam anlamıyla eğitebilme iddiasını somut bir aşamaya taşıyor ve sektörde büyük bir merak uyandırıyor.",
+  "detayli_icerik_tr": "STAR Market Daily'den edinilen rapora göre, DeepSeek V5'in ön‑eğitimi Huawei Ascend çipleriyle gerçekleştirilecek. Ascend çipleri daha önce DeepSeek modellerinin yalnızca çıkarım (inference) aşamasında kullanılmıştı; ilk büyük ölçekli dağıtım ise 2025 bahar bayramı döneminde gerçekleşmişti. Zhejiang Üniversitesi'nden Fang Xingdong'un \"The Rise of Ascend\" adlı eserinde, Huawei Cloud'un 28 Ocak 2025'te DeepSeek'e hızlı destek sağlamak üzere bir direktif verdiği ve iki gün içinde 3.000'den fazla Ascend çipinin dağıtım ve doğrulamasının tamamlandığı belirtiliyor.\n\nBu iş birliği, DeepSeek‑V3/R1 modellerinin Huawei Cloud Guian Veri Merkezi'nde barındırılmasıyla somutlaştı ve Spring Festival sırasında Ren Zhengfei'nin trafiği yönetmek için doğrudan müdahalesiyle desteklendi. Ocak 2025'te SiliconFlow ve Huawei Cloud, Ascend platformu üzerinde DeepSeek‑V3 ve R1 için çıkarım hizmetleri başlattı. Nisan 2026'da DeepSeek‑V4'ün piyasaya sürülmesinin ardından Huawei, \"çip‑model sinerjisi\" sayesinde Ascend süper‑node ürünlerinin V4 serisini tam destekleyebileceğini duyurdu.\n\nDeepSeek'in resmi API sayfasında V4‑Pro modelinin hizmet verimliliğinin yüksek‑performanslı hesaplama gücüne bağlı olduğu ve Ascend 950 süper‑node serisinin ikinci yarıda seri üretime girmesiyle Pro sürümünün fiyatının önemli ölçüde düşeceği öngörülüyor. 30 Eylül'de DeepSeek, Huawei Ascend platformu için TileLang derleme aracı, DeepGEMM, FlashMLA, TileKernel, DeepSelect gibi yüksek performanslı kütüphaneler ve dağıtık iletişim kütüphanesi DeepEP gibi altyapı bileşenlerini açık kaynak olarak yayınladı.\n\nHuawei, Ascend SuperPoD Flex mimarisi, UBL128 ağ çözümü ve Ascend C programlama arayüzü ile düşük seviyeli talimat setini açarak TileLang'i destekliyor. Bu, DeepSeek'in sadece çıkarım için değil, eğitim aşamasında da Ascend ekosistemine tam entegrasyon sağladığını gösteriyor. Şu ana kadar yerli çiplerin büyük ölçekte eğitimde kullanımı sınırlı kalmışken, Shenzhen Hetao College, Harbin Institute of Technology (Shenzhen) ve Huawei ekipleri, Ascend 910C işlemcili bir AI kümesiyle DeepSeek‑V4‑Pro'nun (1.6 trilyon parametre) tam‑parametre sonrası‑eğitimini tamamladı; ancak ön‑eğitim aşaması henüz gerçekleşmedi.\n\nEğer DeepSeek V5, Huawei Ascend platformunda ön‑eğitime alınırsa, Çin'in en üst düzey LLM'lerini yerli donanımda sıfırdan eğitebilme sorusuna ilk somut yanıt verilecek ve hem ekosistem geçiş maliyetleri hem de dışa bağımlılık açısından sektöre yeni bir dönüm noktası sunulacak.",
+  "onemli_maddeler": [
+    "DeepSeek V5'in Huawei Ascend çipleriyle ön‑eğitime alınacağı duyuruldu.",
+    "Huawei, Ascend SuperPoD Flex mimarisi ve açık kaynak araçlarıyla DeepSeek'in eğitim altyapısını destekliyor.",
+    "DeepSeek‑V4‑Pro (1.6 trilyon parametre) Ascend 910C üzerinde tam‑parametre sonrası‑eğitim yaptı, ancak ön‑eğitim henüz gerçekleşmedi."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "DeepSeek V5'in yerli çiplerle tam eğitim sürecine girmesi, Çin'in AI bağımsızlığı ve yerli donanım ekosistemi için kritik bir kilometre taşıdır; sektörde rekabet dinamiklerini ve maliyet yapılarını kökten etkileyebilir.",
+  "etiketler": [
+    "DeepSeek",
+    "Huawei",
+    "Ascend",
+    "AI training",
+    "large language model"
+  ],
+  "anilan_modeller": [
+    "DeepSeek V5",
+    "DeepSeek V4",
+    "DeepSeek V3/R1",
+    "DeepSeek V4-Pro"
+  ],
+  "yorum_tr": "Bu gelişme, Çin'in büyük dil modellerini tamamen yerli altyapı üzerinde eğitebilme kapasitesine yaklaşmasını gösteriyor; geliştiriciler için daha düşük maliyetli ve güvenli bir eğitim ortamı, kullanıcılar için ise hizmet sürekliliği ve fiyat avantajı anlamına gelebilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://substackcdn.com/image/fetch/$s_!I8Mp!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb1deb2b8-1f43-45f1-b6f9-f768c4f5ded1_1200x800.avif",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xmmadn/deepseek_v5_is_planned_to_be_pretrained_on_huawei/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-03T07:07:11.000Z",
+  "slug": "deepseek-v5-is-planned-to-be-pre-trained-on-huawei-ascend-ch"
+}

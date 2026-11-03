@@ -1,0 +1,45 @@
+{
+  "baslik_tr": "MIT CSAIL, Qwen3.5-0.8B'nin Düşünce Döngülerini %0.016 Ağırlık Düzenlemesiyle Çözdü",
+  "ozet_tr": "MIT CSAIL, GPT-6 Astra kullanarak Qwen3.5-0.8B modelinin mantık döngülerini sadece ağırlıkların %0.016'sını değiştirerek iyileştirdi. Bu düzenleme, MATH-500 testindeki başarı oranını %7.9'dan %48.1'e çıkardı ve model yerel ortamda çalıştırılabilir hâle geldi.",
+  "detayli_icerik_tr": "MIT Computer Science and Artificial Intelligence Laboratory (CSAIL), OpenAI'nin GPT-6 Astra modelini kullanarak Qwen3.5-0.8B'nin \"Wait\" ifadesiyle takılı kalma sorununun köküne inmeyi başardı. Sadece modelin toplam ağırlıklarının 0.016'sını değiştirerek, modelin mantıksal akışındaki döngüleri kırdı ve MATH-500 benchmark'ında %7.9'luk düşük başarıyı %48.1'e yükseltti.\n\nDüzenleme sonrası ortaya çıkan fark dosyası (diff) toplulukla paylaşıldı; bu sayede herkes aynı ağırlık değişikliğini yeniden oluşturup yerel olarak çalıştırabiliyor. Değişiklik, GGUF formatına sorunsuz bir şekilde dönüştürüldü ve Q4_K_M kuantizasyonu altında da aynı performansı korudu; 40 denemede sadece bir döngü tespit edildi.\n\nAraştırmacı Claude, Anthropic'in Jacobian lensiyle modelin karar anlarını görselleştirdi. Düzenlemeden önce, model \"Wait\" yazmaya karar verdiği tokende lens \"Wrong\", \"Nope\" ve \"Hmm\" gibi şüphe ifadelerini gösteriyordu. Düzenleme sonrası ise aynı tokende \"Verification\", \"Completion\" ve \"Result\" gibi kesinlik ifadeleri ortaya çıktı, bu da modelin artık yanıtı doğrulama aşamasına geçtiğini gösteriyor.\n\nDeneyler, llama.cpp (Vulkan) üzerinden Ryzen AI 9 HX 370 mini PC'de yürütüldü. Kod ve veri seti GitHub ve GitHub Pages üzerinden erişime sunuldu, böylece topluluk üyeleri hem yöntemi inceleyebiliyor hem de kendi modellerinde denemeler yapabiliyor.",
+  "onemli_maddeler": [
+    "GPT-6 Astra ile sadece %0.016 ağırlık değişikliği yapılarak Qwen3.5-0.8B'nin mantık döngüsü sorunu çözüldü.",
+    "MATH-500 benchmark'ında başarı %7.9'dan %48.1'e yükseldi.",
+    "Anthropic Jacobian lensi, düzenleme öncesi ve sonrası modelin token bazlı düşünce akışını görselleştirdi.",
+    "Düzenleme GGUF formatına dönüştürüldü ve Q4_K_M kuantizasyonunda da aynı performans korundu."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Mevcut bir modelin sadece çok küçük bir ağırlık değişikliğiyle önemli bir performans artışı sağlaması, model düzenleme tekniklerinin olgunlaştığını ve topluluk tarafından yeniden üretilebileceğini gösterdiği için sektörde yüksek öneme sahiptir.",
+  "etiketler": [
+    "Qwen",
+    "GPT-6 Astra",
+    "Claude",
+    "Model Düzenleme",
+    "Llama.cpp"
+  ],
+  "anilan_modeller": [
+    "Qwen3.5-0.8B",
+    "GPT-6 Astra",
+    "Claude"
+  ],
+  "yorum_tr": "Bu ağırlık temelli düzeltme, büyük modellerde ince ayarların maliyetini düşürerek araştırmacıların ve geliştiricilerin daha hızlı deneme yapmasını sağlayacak. Kullanıcılar ise daha tutarlı ve mantıklı yanıtlar alarak uygulama kalitesinde belirgin bir iyileşme görecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen3.5-0.8B",
+      "benchmark": "MATH-500",
+      "skor": 48.1,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "accuracy",
+      "kaynak_metinden_alinti": "MATH-500 went from 7.9% to 48.1%"
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/9xp6rgam8ezh1.png?width=640&crop=smart&auto=webp&s=25b05413f0335a5a3f3356ea3e01b6c2a0a6465a",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xms9ii/what_qwen_is_thinking_when_it_gets_stuck_saying/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-03T12:58:05.000Z",
+  "slug": "what-qwen-is-thinking-when-it-gets-stuck-saying-wait"
+}

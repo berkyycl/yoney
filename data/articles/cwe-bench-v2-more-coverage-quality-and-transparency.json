@@ -1,0 +1,82 @@
+{
+  "baslik_tr": "CWE-bench v2: Güvenlik Açığı Düzeltme Benchmark'inde Yeni Görev Seti ve Güncel Model Performansları",
+  "ozet_tr": "Collinear AI, açık kaynaklı bir güvenlik zafiyeti düzeltme benchmark'ı olan CWE-bench'in ikinci sürümünü duyurdu. 100 görevden oluşan set, 91 farklı CWE'yi kapsayarak modellerin saldırı yüzeylerini anlama ve düzeltme yeteneklerini ölçüyor. Gemini 4 Argon ve Claude Opus 5.5 gibi önde gelen LLM'ler, %67‑%68 pass@1 oranlarıyla lider konumda.",
+  "detayli_icerik_tr": "CWE-bench v2, siber güvenlik alanındaki sınırları zorlamak amacıyla geliştirilen bir değerlendirme platformu. Her görev, gerçek bir açık kaynak kod deposunun bir kopyasını ve kısa bir talimatı içeriyor; modelin amacı, işlevselliği bozmadan güvenlik zafiyetini tespit edip düzeltmek. Skorlama tamamen programatik ve deterministik; bu sayede sonuçlar ek maliyet olmadan tekrarlanabilir.\n\nBenchmark, LLM yargı panelleri tarafından incelenen ve zorluk ile adil olma kriterlerine göre şekillendirilen testler sunuyor. Ayrıca, modellerin daha önce görmediği bir \"held‑out\" seti de bulunuyor; bu set üzerinden ilerleme takibi yapılabiliyor ve erişim için cyber@collinear.ai adresiyle iletişime geçilmesi gerekiyor.\n\nSonuçlar, Hugging Face Hub üzerindeki iki ayrı lider tablosunda yayınlanıyor. Açık ağırlıklı modeller arasında Gemini 4 Argon %67.8 pass@1 ve %81.0 pass@4 oranlarıyla öne çıkarken, Claude Opus 5.5 %67.3 pass@1 ve %78.0 pass@4 elde etti. Toplam 95 görev en az bir model tarafından çözülebilirken, lider model bile %19'luk bir hata payı bırakıyor.\n\nMaliyet açısından DeepSeek V4.1 Flash (1017) %57.0 pass@1 oranını $0.04/rollout fiyatıyla sunarak Pareto sınırının bir ucunu oluşturuyor; Claude Opus 5.5 ise $1.83 ve Gemini 4 Argon $3.92 maliyetle daha yüksek başarı sağlıyor. Benchmark, Docker tabanlı Harbor ortamı üzerinden tek komutla çalıştırılabiliyor ve aynı altyapı, savunma ajanlarının eğitimi için de kullanılabiliyor.",
+  "onemli_maddeler": [
+    "CWE-bench v2, 100 görevle 91 farklı CWE'yi kapsayan en kapsamlı güvenlik zafiyeti benchmark'ı.",
+    "Gemini 4 Argon %67.8 pass@1 ve %81.0 pass@4 oranlarıyla lider konumda.",
+    "DeepSeek V4.1 Flash, $0.04/rollout maliyetle %57.0 pass@1 oranı sağlayarak maliyet‑verimlilikte öne çıkıyor.",
+    "Held‑out set sayesinde modellerin gerçek dünyadaki ilerlemesi izlenebiliyor.",
+    "Benchmark tamamen açık kaynak, Docker‑tabanlı Harbor ile tek komutla çalıştırılabiliyor."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "CWE-bench v2, siber güvenlik odaklı LLM değerlendirmelerinde yeni bir standart sunarak araştırmacı ve geliştiricilerin modellerini karşılaştırmasını ve iyileştirmesini sağlayan kritik bir güncelleme niteliğindedir.",
+  "etiketler": [
+    "CWE-bench",
+    "güvenlik",
+    "benchmark",
+    "LLM",
+    "siber güvenlik"
+  ],
+  "anilan_modeller": [
+    "Gemini 4 Argon",
+    "Claude Opus 5.5",
+    "DeepSeek V4.1 Flash"
+  ],
+  "yorum_tr": "CWE-bench v2, güvenlik odaklı LLM'lerin yeteneklerini ölçmek için gerekli altyapıyı sunarak sektörde daha güvenli ve etkili modellerin geliştirilmesini teşvik edecek. Açık kaynak ve maliyet‑verimlilik odaklı yaklaşımı, hem akademik hem de endüstriyel paydaşların geniş çapta benimsemesini sağlayabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Gemini 4 Argon",
+      "benchmark": "CWE-bench v2",
+      "skor": 67.8,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "pass@1",
+      "kaynak_metinden_alinti": "Gemini 4 Argon leads with 67.8% pass@1"
+    },
+    {
+      "model": "Gemini 4 Argon",
+      "benchmark": "CWE-bench v2",
+      "skor": 81,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "pass@4",
+      "kaynak_metinden_alinti": "Gemini 4 Argon leads with ... 81.0% pass@4"
+    },
+    {
+      "model": "Claude Opus 5.5",
+      "benchmark": "CWE-bench v2",
+      "skor": 67.3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "pass@1",
+      "kaynak_metinden_alinti": "Claude Opus 5.5 (67.3% pass@1"
+    },
+    {
+      "model": "Claude Opus 5.5",
+      "benchmark": "CWE-bench v2",
+      "skor": 78,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "pass@4",
+      "kaynak_metinden_alinti": "Claude Opus 5.5 ... 78.0% pass@4"
+    },
+    {
+      "model": "DeepSeek V4.1 Flash",
+      "benchmark": "CWE-bench v2",
+      "skor": 57,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "pass@1",
+      "kaynak_metinden_alinti": "DeepSeek V4.1 Flash reaches 57.0% pass@1 at $0.04 per rollout"
+    }
+  ],
+  "gorsel_url": "https://huggingface.co/blog/assets/cwe-bench/thumbnail.jpg",
+  "url": "https://huggingface.co/blog/cwe-bench",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-11-03T00:00:00.000Z",
+  "slug": "cwe-bench-v2-more-coverage-quality-and-transparency"
+}

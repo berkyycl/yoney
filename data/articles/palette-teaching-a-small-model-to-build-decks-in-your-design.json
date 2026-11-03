@@ -1,0 +1,44 @@
+{
+  "baslik_tr": "Palette: Küçük Modelle Tasarım Dilinizde Sunum Decki Oluşturma",
+  "ozet_tr": "IBM Research, IBM Design Language üzerine sentezlenmiş verilerle eğitilmiş 20 Milyar parametreli açık ağırlıklı bir model olan Palette'i tanıttı. Model, deck oluşturma sürecini tasarımcı ve kodlayıcı rollerine ayırarak hem görsel tutarlılığı sağlıyor hem de kendi altyapısında çalıştırılabiliyor. PresentBench benchmark'ında üç alanda üst sıralara çıkarak, büyük kapalı modellerle rekabet edebildiği gösterildi.",
+  "detayli_icerik_tr": "Palette, tasarım dili tutarlılığı ve veri gizliliği gibi iki temel sorunu çözmek amacıyla geliştirildi. Büyük dil modelleri, kendi stilistik önyargılarını taşıyarak şablonlara uymayan deck'ler üretirken, Palette küçük bir açık‑ağırlıklı modelin bu tarzı benimsemesini engelliyor. Model, IBM Design Language'ine uygun sentezlenmiş yaklaşık 1.000 deck ve 10.000 slayt üzerinden LoRA adaptörüyle ince ayar yapıldı; tasarımcı rolü planı JSON formatında oluştururken, kodlayıcı rolü pptxgenjs JavaScript kodunu yazarak slaytı çizer.\n\nModelin mimarisi, iki aşamalı bir iş akışıyla hataları önceden yakalayıp onarıyor. İlk aşamada basit kurallar ve bir geometri denetleyicisi, renk çakışmaları, metin taşması gibi sorunları tespit eder; tespit edilen hatalar ayrı bir editör modeline gönderilerek kod yeniden üretilir ve sadece iyileşme sağlandığında kabul edilir. Bu \"check‑and‑repair\" harness'i, 131 test deck'inde ortalama 3.5 puanlık bir performans artışı sağladı.\n\nPalette'in başarısı, PresentBench benchmark'ındaki sonuçlarla kanıtlandı. Model, Economics ve Education alanlarında birincilik, Talk alanında üçüncülük elde ederken, üç alanın ortalama puanında %1.8 geride kalarak (59.7) NotebookLM'in (60.8) hemen arkasında yer aldı. Bu sonuçlar, 20 B'lik açık‑ağırlıklı bir modelin, kapalı büyük modellerle kıyaslandığında bile rekabetçi olabileceğini gösteriyor.\n\nGelecek planları arasında, harness'in ödül sinyali olarak kullanılacağı pekiştirmeli öğrenme, figür‑ağır deck'ler için otomatik görsel çıkarımı ve mevcut .pptx şablonlarından hızlı yeniden stilizasyon yer alıyor. Palette'in geliştirme sürecinde edinilen dersler – veri içinde gerekçelendirme eklemek, referans deck'leri iyileştirerek model davranışını yönlendirmek ve onarımları güvenli kılmak – benzer yapılandırılmış çıktı gerektiren diğer görevler (ör. UI tasarımları, diyagramlar) için de uygulanabilir.",
+  "onemli_maddeler": [
+    "Palette, 20 B parametreli açık‑ağırlıklı bir modelle IBM Design Language'e uygun deck üretimini mümkün kılıyor.",
+    "Check‑and‑repair harness'i, hatalı slaytları otomatik tespit edip güvenli bir şekilde onarıyor ve ortalama 3.5 puanlık performans artışı sağlıyor.",
+    "PresentBench benchmark'ında üç alanda üst sıralara çıkarak, kapalı büyük modellerle rekabet edebildiği gösterildi."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Açık‑ağırlıklı bir modelin, tasarım dili tutarlılığı ve veri gizliliği gereksinimlerini karşılayarak büyük kapalı sistemlerle rekabet etmesi, hem araştırma topluluğu hem de kurumsal AI uygulamaları için kritik bir ilerleme teşkil ediyor.",
+  "etiketler": [
+    "deck generation",
+    "design language",
+    "open-weight model",
+    "fine-tuning",
+    "benchmark"
+  ],
+  "anilan_modeller": [
+    "NotebookLM",
+    "Manus 1.6",
+    "Palette"
+  ],
+  "yorum_tr": "Palette, küçük ölçekli açık modellerin yapılandırılmış çıktı görevlerinde güvenilir ve yüksek kaliteli sonuçlar üretebileceğini göstererek, şirket içi AI çözümlerinin özelleştirilmesi ve veri güvenliği açısından yeni bir standart oluşturabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Palette (20B LoRA)",
+      "benchmark": "PresentBench",
+      "skor": 59.7,
+      "birim": "score",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Palette ranks first on Economics and Education, third on Talk, and second on the three-domain mean. ... Palette (blue) ... 59.7 vs 60.8"
+    }
+  ],
+  "gorsel_url": "https://cdn-uploads.huggingface.co/production/uploads/63890e3843d8b0797a0ad606/5pHD09UHuAK-6OyKGKimD.png",
+  "url": "https://huggingface.co/blog/ibm-research/palette-deck-building",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-11-03T16:35:36.000Z",
+  "slug": "palette-teaching-a-small-model-to-build-decks-in-your-design"
+}

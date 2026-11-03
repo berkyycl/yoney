@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "Cisco, OpenAI ile Makine Hızında Savunma Sağlıyor",
+  "ozet_tr": "Cisco, OpenAI'nin ileri seviye yapay zeka modellerini ağ telemetrisiyle birleştirerek siber tehditlere makine hızında yanıt verebilen bir savunma platformu sundu. Zero data retention ve izole veri sınırları sayesinde müşteri verileri korunurken, Daybreak ve GPT‑6 Astra gibi yeni modeller güvenlik ekiplerinin zafiyet tespiti ve yanıt süresini kısaltıyor.",
+  "detayli_icerik_tr": "Cisco, kurumsal ağların ve güvenlik altyapısının temelini oluşturan telemetri verilerini OpenAI'nin en yeni modelleriyle işleyerek saldırıların otomatikleştirilmiş, makine‑hızında gerçekleştiği bir ortamda savunmayı yeniden tanımlıyor. Şirket, güvenlik sınırlarını tek bir duvar yerine mikro hizmetler, konteynerler ve Kubernetes kümeleri gibi dağıtık bileşenlere yayarak her bir birimin önüne mini bir güvenlik yığını yerleştirebiliyor. Bu yaklaşım, hizmetler arası iletişimi sadece gerekli bağlantılarla sınırlayarak saldırganların yayılma yollarını azaltıyor.\n\nOpenAI'nin veri gizliliği politikası – sıfır veri saklama, sıkı müşteri veri sınırları ve doğrulanabilir izolasyon – Cisco'nun kritik sistemlerde frontier AI kullanmasını mümkün kılıyor. Bu sayede, ağ üzerindeki milyarlarca sinyal, iki ayrı olayın tek başına zararsız görünse bile birlikte anlamlı bir tehdit modeli oluşturduğunda anında tespit edilebiliyor. Patel, bu yeteneğin saldırganların zafiyetleri istismar etme süresi ile kuruluşların yamalama süresi arasındaki boşluğu daraltacağını vurguluyor.\n\nCisco'nun Daybreak Defense Network ve GPT‑6 Astra gibi girişimleri, güvenlik ekiplerinin zafiyet tarama iş akışlarına sorunsuz entegre olabiliyor. Bu sayede, zafiyetlerin bulunması, yamalanması ve olay yanıtının süresi önemli ölçüde kısalıyor. Patel, \"Daybreak ve GPT‑6 Astra, sadece güvenlik duruşumuzu değil, müşterilerimizin güvenlik duruşunu da bir adım ileri taşıyan bir sıçrama fonksiyonu\" diyerek bu teknolojilerin etkisini özetliyor.\n\nAyrıca, otonom ajanların artan rolü göz önüne alındığında, Cisco güvenlik ekiplerinin hem kötü niyetli saldırıları hem de beklenmedik ajan davranışlarını gerçek zamanlı olarak ayırt edebilmesi gerektiğini belirtiyor. Bu bağlamda, ağ telemetrisi ve gözlemlenebilirlik verileri birleştirilerek, ajanların niyetli ya da hatalı hareketleri hızlıca tespit edilip müdahale edilebilecek bir çerçeve oluşturuluyor.",
+  "onemli_maddeler": [
+    "Cisco, OpenAI modelleriyle ağ telemetrisi analizini makine hızına taşıyarak saldırı tespit ve yanıt süresini kısalttı.",
+    "Daybreak ve GPT‑6 Astra, mevcut zafiyet tarama iş akışlarına sorunsuz entegrasyon sağlayarak yamalama verimliliğini artırıyor.",
+    "OpenAI'nin sıfır veri saklama ve izole veri sınırları, müşteri gizliliğini korurken frontier AI kullanımını mümkün kılıyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Cisco'nun OpenAI ile entegrasyonu, kurumsal siber güvenlikte AI kullanımının ölçeklenebilirliğini gösteriyor ve sektördeki savunma stratejilerini yeniden şekillendirebilir.",
+  "etiketler": [
+    "Cisco",
+    "OpenAI",
+    "Siber Güvenlik",
+    "Yapay Zeka",
+    "Daybreak"
+  ],
+  "anilan_modeller": [
+    "GPT-6 Astra",
+    "Daybreak"
+  ],
+  "yorum_tr": "Bu iş birliği, AI destekli savunma mekanizmalarının kurumsal ağlarda yaygınlaşmasını hızlandırarak güvenlik ekiplerine daha hızlı ve kapsamlı bir tehdit analizi sunuyor. Geliştiriciler, veri gizliliği standartlarını korurken yüksek performanslı modelleri entegre etme fırsatı bulacak.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://images.ctfassets.net/kftzwdyauwt9/36h62E2b83Pzjfkrm6ZnOF/e611d7923f6c0533eed4d76ea9b48c08/cisco-cyber-social.png?w=1600&h=900&fit=fill",
+  "url": "https://openai.com/index/cisco-cyber",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-11-03T08:00:00.000Z",
+  "slug": "how-cisco-defends-at-machine-speed-with-openai"
+}

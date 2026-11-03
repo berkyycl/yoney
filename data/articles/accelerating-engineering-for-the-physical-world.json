@@ -1,0 +1,53 @@
+{
+  "baslik_tr": "OpenAI, GPT-6 Astra ile Mühendislik Tasarım ve Üretim Süreçlerini Hızlandırıyor",
+  "ozet_tr": "OpenAI, GPT-6 Astra modelini çok modlu ve bilgisayar kullanım yetenekleriyle birleştirerek mekanik, elektronik ve yazılım tasarımlarını otomatikleştiriyor. Model, bir cihazın dış kasa, PCB ve firmware'ini insan müdahalesi olmadan bir hafta içinde tasarlayabildi; ancak üretim toleransları ve montaj detayları hâlâ iyileştirme gerektiriyor.",
+  "detayli_icerik_tr": "OpenAI, mühendislerin mekanik tasarım, elektronik devre ve yazılım entegrasyonlarını tek bir akışta birleştiren yeni bir çalışma serisi başlattı. GPT-6 Astra, bir cihazın işlevsel gereksinimlerini tanımlamaktan, dış kabin ve iç yapıyı CAD ortamında modellemeye, PCB yerleşimini planlamaya ve firmware üretmeye kadar tüm adımları otomatikleştirerek iki mühendis tarafından bir haftada tamamlandı. Prototip üretimi ise bir ay içinde bir dış tedarikçi tarafından gerçekleştirildi.\n\nBu süreçte modelin tasarım estetiği, oyun ve oyuncak referanslarından ilham alarak oluşturuldu; mekanik yapı ve elektronik bileşen yerleşimi ise teknik gereksinimlere göre optimize edildi. Ancak üretim aşamasında model, üreticinin tolerans limitlerini ve montaj detaylarını tam olarak hesaba katmadığı için ek revizyonlar gerekti. OpenAI bu eksiklikleri, gelecekteki modellerin daha güvenilir üretim desteği sunması için bir yol haritası olarak görüyor.\n\nOpenAI'nin donanım ve altyapı ekipleri de Codex ve ChatGPT'yi CAD modelleme, üretim çizimi ve simülasyon hazırlama gibi görevlerde kullanıyor. Şubat ayından bu yana bu ekiplerde model kullanımının token bazlı ölçümü 23 kat artış gösterdi. Ayrıca, BenchCAD 2.0 benchmark testinde yeni bir iç model ortalama 0.875 puan alırken, GPT-6 Astra en yüksek akıl yürütme ayarında 0.594 puan elde etti.\n\nOpenAI, Chip Ganassi Racing ve Mazda gibi sektör ortaklarıyla iş birliği yaparak 3D taramalardan düzenlenebilir CAD modelleri ve aerodinamik simülasyonlara kadar gerçek mühendislik problemlerinde AI destekli çözümler deniyor. Bu ortaklıklar, model çıktılarının doğruluğu ve üretilebilirliği konusunda geribildirim toplayarak güvenli ve ölçeklenebilir bir dağıtım stratejisi geliştirmeyi hedefliyor.",
+  "onemli_maddeler": [
+    "GPT-6 Astra, bir cihazın tasarımını, PCB yerleşimini ve firmware'ini insan müdahalesi olmadan bir hafta içinde tamamladı.",
+    "BenchCAD 2.0 testinde GPT-6 Astra 0.594 puan alırken, yeni bir iç model 0.875 puan elde etti.",
+    "OpenAI, Chip Ganassi Racing ve Mazda ile iş birliği yaparak AI destekli CAD ve aerodinamik simülasyonlarını gerçek üretim ortamlarında test ediyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "GPT-6 Astra'nın mühendislik tasarım akışlarını otomatikleştirmedeki başarısı, AI'nın fiziksel ürün geliştirme sürecine entegrasyonunda kritik bir adım olarak görülüyor ve sektördeki prototipleme hızını önemli ölçüde artırma potansiyeline sahip.",
+  "etiketler": [
+    "AI",
+    "Mühendislik",
+    "GPT-6",
+    "CAD",
+    "Simülasyon"
+  ],
+  "anilan_modeller": [
+    "GPT-6 Astra",
+    "Codex",
+    "ChatGPT"
+  ],
+  "yorum_tr": "Bu gelişme, mühendislik ekiplerinin tasarım ve prototipleme sürecinde zaman ve maliyet tasarrufu sağlayarak yenilik hızını artırabilir; aynı zamanda modelin üretim toleranslarına hâlâ duyarlı olması, güvenli ve güvenilir bir entegrasyon için ek iyileştirmeler gerektiğini gösteriyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GPT-6 Astra",
+      "benchmark": "BenchCAD 2.0",
+      "skor": 0.594,
+      "birim": "score",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "en yüksek akıl yürütme ayarı",
+      "kaynak_metinden_alinti": "A newer internal model achieved an average score of 0.875, compared with 0.594 for GPT‑6 Astra at its highest reasoning setting."
+    },
+    {
+      "model": "Internal model",
+      "benchmark": "BenchCAD 2.0",
+      "skor": 0.875,
+      "birim": "score",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "A newer internal model achieved an average score of 0.875, compared with 0.594 for GPT‑6 Astra at its highest reasoning setting."
+    }
+  ],
+  "gorsel_url": "https://images.ctfassets.net/kftzwdyauwt9/3NAeFNOstkEE0aSxayt8NT/cedb470d8c0bcd7e6a2ca828c1db136c/accelerating-engineering-physical-world-social.png?w=1600&h=900&fit=fill",
+  "url": "https://openai.com/index/accelerating-engineering-for-the-physical-world",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-11-03T12:00:00.000Z",
+  "slug": "accelerating-engineering-for-the-physical-world"
+}

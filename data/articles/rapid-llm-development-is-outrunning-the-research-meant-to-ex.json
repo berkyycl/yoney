@@ -1,0 +1,110 @@
+{
+  "baslik_tr": "Stanford araştırması, LLM bulgularının yarı yarıya bir yılda geçersiz olduğunu ortaya koydu",
+  "ozet_tr": "Stanford Üniversitesi'nden Owen Queen ve James Zou, 20 büyük dil modelini test ederek, literatürdeki 50 yaygın iddianın %44'ünün zaten geçersiz olduğunu belirledi. Ortalama bir bulgunun ömrü sadece 15,7 ay ve özellikle modelin \"ne yapamayacağı\" yönündeki iddialar en hızlı şekilde siliniyor.",
+  "detayli_icerik_tr": "Stanford araştırmacıları, Temmuz 2024 ile Eylül 2026 arasında piyasaya sürülen 20 büyük dil modelini inceleyerek, literatürde sıkça atıfta bulunulan 50 iddianın geçerlilik süresini ölçtü. Sonuçlar, incelenen iddiaların %44'ünün hâlihazırda \"süresi dolmuş\" olduğunu ve kalan %34'ünün ise önemli ölçüde zayıfladığını gösterdi. Ortalama bir bulgunun ömrü sadece 15,7 ay olarak belirlendi; bir yıl içinde %16, iki yıl içinde ise %39'u geçersiz hâle geldi.\n\nEn hızlı süresi dolan iddialar, modellerin \"ne yapamayacağı\" konusundaki zayıflıklarla ilgiliydi. Dokuz mantıkla ilgili bulgudan beşi süresi dolmuş, hiçbiri ise güçlenmemişti. Bu bulgular arasında, \"strawberry\" kelimesindeki harf sayısını sayma, alışılmadık sayı sistemlerinde aritmetik yapma, uzun bağlamlarda bilgiyi kaybetme ve kullanıcı itirazları karşısında doğru cevabı bırakma gibi klasik hatalar yer alıyor. Araştırmacılar, bu hataların geliştiricilere net bir eğitim hedefi sunduğunu ve bu yüzden hızla ortadan kalktığını öne sürüyor.\n\nDiğer yandan, model davranışına dair bazı bulgular daha dayanıklı çıktı. On bir bulgu ya sabit kaldı ya da güçlendi; bunlar arasında modellerin kendi yanıtlarını tercih etmesi, akademik makaleleri aynı şekilde değerlendirmesi ve tıbbi özetlerdeki dilsel çarpıtmalar tarafından etkilenmesi bulunuyor. Ayrıca, sol eğilimli politik yanlılık, açık uçlu sorulara benzer yanıtlar ve rastgele sayı üretimindeki tutarsız dağılımlar gibi eğilimler de uzun ömürlüydü.\n\nÇalışma, model bazında büyük farklılıklar olduğunu da vurguladı. Örneğin, DeepSeek V4 Pro için süresi dolmuş bulgu sayısı 11 iken, GPT-6.1 Sol için bu sayı 30'a ulaştı. Modelin yayın tarihi, sağlayıcı ya da boyutu bu farkları açıklamıyor. Araştırmacılar, LLM araştırmalarının bulgularını belirli bir model, sürüm ve tarih bağlamında raporlaması, prompt ve kodun da paylaşılması gerektiğini savunuyor. Bu sayede gelecekteki modellerde aynı testlerin tekrarlanabilirliği sağlanabilir.",
+  "onemli_maddeler": [
+    "İncelenen iddiaların %44'ü zaten geçersiz hâle gelmiş, ortalama ömür sadece 15,7 ay.",
+    "Modellerin \"ne yapamayacağı\" yönündeki hatalar en hızlı şekilde ortadan kalkıyor; mantıkla ilgili 9 bulgudan 5'i süresi dolmuş.",
+    "Bazı davranışsal bulgular (ör. kendi yanıtlarını tercih etme, politik yanlılık) daha dayanıklı ve hatta güçleniyor."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "LLM'lerin hızla evrimleştiği bir dönemde, literatürdeki iddiaların geçerlilik süresinin sistematik olarak ölçülmesi, araştırmacıların ve geliştiricilerin güvenilir değerlendirme metodolojileri oluşturması açısından kritik bir adım.",
+  "etiketler": [
+    "LLM",
+    "Araştırma",
+    "Model Değerlendirme",
+    "Stanford",
+    "Yanıltıcı Bilgi"
+  ],
+  "anilan_modeller": [
+    "GPT-6.1 Sol",
+    "Claude Sonnet 5.5",
+    "Qwen3.7-Flash",
+    "DeepSeek V4 Pro",
+    "GPT-3.5",
+    "ChatGPT"
+  ],
+  "yorum_tr": "Araştırma, LLM performansının ve davranışının sürekli değiştiğini göstererek, akademik çalışmaların model ve sürüm detaylarıyla birlikte belgelenmesi gerektiğini vurguluyor. Geliştiriciler bu verileri, modellerini daha güvenilir ve şeffaf hale getirmek için bir yol haritası olarak kullanabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Genel",
+      "benchmark": "Expired Findings Percentage",
+      "skor": 44,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Stanford researchers ... found that 44 percent have already \"expired.\""
+    },
+    {
+      "model": "Genel",
+      "benchmark": "Findings Lifespan",
+      "skor": 15.7,
+      "birim": "months",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Among the 22 findings with an estimated expiration date, the average lifespan was just 15.7 months."
+    },
+    {
+      "model": "GPT-6.1 Sol",
+      "benchmark": "Fabricated References Rate",
+      "skor": 0,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "GPT-6.1 Sol fabricated 0 percent."
+    },
+    {
+      "model": "Claude Sonnet 5.5",
+      "benchmark": "Fabricated References Rate",
+      "skor": 1,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Claude Sonnet 5.5 came in at 1 percent."
+    },
+    {
+      "model": "Qwen3.7-Flash",
+      "benchmark": "Fabricated References Rate",
+      "skor": 69,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Qwen3.7-Flash, also a 2026 model, still fabricated 69 percent of its references."
+    },
+    {
+      "model": "DeepSeek V4 Pro",
+      "benchmark": "Expired Findings Count",
+      "skor": 11,
+      "birim": "count",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "the number of expired findings ranges from 11 for DeepSeek V4 Pro to 30 for GPT-6.1 Sol."
+    },
+    {
+      "model": "GPT-6.1 Sol",
+      "benchmark": "Expired Findings Count",
+      "skor": 30,
+      "birim": "count",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "the number of expired findings ranges from 11 for DeepSeek V4 Pro to 30 for GPT-6.1 Sol."
+    },
+    {
+      "model": "Claude Sonnet 5.5",
+      "benchmark": "Two-hop Failure Rate",
+      "skor": 10,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "two-hop questions",
+      "kaynak_metinden_alinti": "Claude Sonnet 5.5 still fails in about 10 percent of cases where it correctly answers both individual questions."
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/11/ai_goalpost_moving.png",
+  "url": "https://the-decoder.com/rapid-llm-development-is-outrunning-the-research-meant-to-explain-it-study-finds/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-03T19:41:43.000Z",
+  "slug": "rapid-llm-development-is-outrunning-the-research-meant-to-ex"
+}

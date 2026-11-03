@@ -1,0 +1,63 @@
+{
+  "baslik_tr": "Qwen 3.8 27B Yerel Laptopta Model Ağırlıklarını Yorumlayabiliyor",
+  "ozet_tr": "Simon Willison, ‘Sparks of Weight‑Space Programming’ adlı çalışmanın örneklerini kendi dizüstü bilgisayarında çalıştırarak Qwen 3.8 27B modelinin ham sinir ağı ağırlıklarını okuyup oyun tipini tanımlayabildiğini gösterdi. Model, 10x10’luk grid oyunlarının ağırlıklarını inceleyerek Breakout, Pong ve Pac‑Man gibi klasik oyunları yüksek güvenle belirledi.",
+  "detayli_icerik_tr": "Rikiya Takehi ve ortakları, GPT‑6 Astra’nın ham model ağırlıklarını analiz edip hem oyunları tanımlayabildiğini hem de ağırlıkları doğrudan düzenleyerek performans artışı sağlayabildiğini gösteren bir makale yayımladı. Bu \"Weight‑Space Programming\" kavramı, LLM’lerin kod çalıştırmadan, sadece sayısal ağırlık dizilerini inceleyerek bir ağın ne işe yaradığını ve nasıl iyileştirilebileceğini ortaya koyuyor.\n\nWillison, aynı deneyleri açık kaynak kodlu GitHub deposundaki prompt dosyalarıyla Qwen 3.8 27B modelini test etti. Model, 27 b milyar parametreli ve 17 GB RAM gerektiren bir sürüm olduğu için yerel bir laptopta çalıştırılabiliyor. İlk denemede Pac‑Man ağırlıkları verildiğinde model, 46 dakika 12 saniye içinde 43 506 akıl yürütme tokeni harcayarak %72 güvenle oyunu tanımladı. Ardından Pong ve Breakout için sırasıyla 1 saat 4 dakika 54 saniye (%75 güven) ve 52 dakika 25 saniye (%88 güven) sürdü.\n\nFreeway oyununda ise model başarısız oldu ve yanlış bir tahmin yaptı; bu sonuç, daha az bilinen oyunların ağırlık temsillerinin yorumlanmasının hâlâ zor olduğunu gösteriyor. Willison, bu deneylerin LLM’lerin “kaynak kodu” yerine doğrudan ağırlık düzeyinde çalışabilme potansiyelini gösterdiğini, ancak hâlâ insan araştırmacıların müdahalesine ihtiyaç duyulduğunu vurguladı.\n\nBu bulgular, yerel LLM’lerin büyük bulut modellerine alternatif olarak, model inceleme ve hafif iyileştirme görevlerinde kullanılabileceğini işaret ediyor. Ancak Willison, bu yeteneklerin hâlâ erken aşamada olduğunu ve \"kaynak kodunun sonu\" iddiasının henüz kanıtlanmadığını belirtiyor.",
+  "onemli_maddeler": [
+    "Qwen 3.8 27B, ham model ağırlıklarını okuyarak oyun tipini %72‑%88 arasında bir güvenle tanımlayabildi.",
+    "Deneyler, araç (kod) kullanılmadan sadece ağırlık verisiyle model davranışının anlaşılabileceğini gösterdi.",
+    "Freeway gibi daha az bilinen oyunlarda başarısızlık, ağırlık‑temelli yorumlamanın hâlâ sınırlı olduğunu ortaya koydu."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Modelin yerel ortamda ağırlık düzeyinde analiz yapabilmesi, LLM araştırmalarında yeni bir değerlendirme boyutu açıyor ve büyük bulut modellerine bağımlılığı azaltma potansiyeli taşıdığı için sektörel etkisi yüksek.",
+  "etiketler": [
+    "weight-space programming",
+    "model interpretability",
+    "local LLM",
+    "benchmark",
+    "AI research"
+  ],
+  "anilan_modeller": [
+    "Qwen 3.8 27B",
+    "GPT-6 Astra",
+    "Kimi K3.1 Pro",
+    "Qwen3.5-0.8B"
+  ],
+  "yorum_tr": "Bu bulgu, LLM'lerin sadece metin üretmekle kalmayıp, model parametrelerini doğrudan analiz edebileceğini göstererek araştırmacılara yeni bir araç sunuyor. Ancak pratikte geniş çaplı iyileştirmeler için hâlâ insan uzmanlığı ve ek araçlar gerekecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen 3.8 27B",
+      "benchmark": "Game Identification from Raw Weights (Pac‑Man)",
+      "skor": 72,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "no tools, raw weight input",
+      "kaynak_metinden_alinti": "Game: A simplified Pac-Man-style gridworld... Confidence: 72%"
+    },
+    {
+      "model": "Qwen 3.8 27B",
+      "benchmark": "Game Identification from Raw Weights (Pong)",
+      "skor": 75,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "no tools, raw weight input",
+      "kaynak_metinden_alinti": "Pong — specifically a Pong-like paddle/ball game... Confidence: 75%"
+    },
+    {
+      "model": "Qwen 3.8 27B",
+      "benchmark": "Game Identification from Raw Weights (Breakout)",
+      "skor": 88,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "no tools, raw weight input",
+      "kaynak_metinden_alinti": "Game: Breakout, or an Arkanoid-like paddle/ball/brick game... Confidence: 88%"
+    }
+  ],
+  "gorsel_url": "https://substackcdn.com/image/fetch/$s_!ZhP5!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffab634ae-de2f-4976-a3d0-e631139bf650_2520x1440.png",
+  "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
+  "source": "Simon Willison",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-03T16:29:48.000Z",
+  "slug": "qwen-3-8-27b-on-my-laptop-can-interpret-model-weights-too"
+}

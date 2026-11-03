@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "Google Antigravity ile Agentik Cheminformatics: İlaç Keşfinde Yeni Bir Dönem",
+  "ozet_tr": "Google DeepMind, Antigravity adlı yeni bir yapay zeka platformunu duyurdu. Bu sistem, agentik yetenekleri ve Cheminformatics Skills'i birleştirerek ilaç keşif süreçlerini hızlandırmayı, kimyasal bileşenleri aramayı ve yeni, rijit makrosikluslar önermeyi hedefliyor.",
+  "detayli_icerik_tr": "Google DeepMind, yapay zekâ tabanlı kimya araştırmalarına yönelik yeni bir araç olan Google Antigravity'i tanıttı. Antigravity, \"agentic\" yani özerk karar verme yeteneğine sahip bir LLM (büyük dil modeli) üzerine inşa edilmiş ve Cheminformatics Skills adı verilen özel kimya bilgi tabanıyla entegre edilmiştir. Bu kombinasyon, araştırmacıların büyük kimyasal veri havuzlarını taramasını, potansiyel ilaç adaylarını hızlıca belirlemesini ve sentezlenmesi zor ancak biyolojik olarak etkili olabilecek rijit makrosiklusları otomatik olarak tasarlamasını sağlıyor.\n\nPlatform, moleküler yapıların temsilinde graf tabanlı kodlamalar ve enerji minimizasyon algoritmaları kullanıyor. Kullanıcılar, doğal dil komutlarıyla hedef protein, istenen farmakofor özellikleri ya da sentez kısıtlamaları gibi kriterleri belirtebiliyor; Antigravity ise bu girdileri değerlendirerek milyonlarca olası bileşiği süzüyor ve en umut vaat eden adayları puanlıyor. Ayrıca sistem, sentezlenebilirlik tahmini ve ADMET (Absorpsiyon, Dağılım, Metabolizma, Ekskresyon, Toksisite) profilleri gibi kritik değerlendirmeleri de entegre bir şekilde sunuyor.\n\nGoogle Antigravity'in en dikkat çeken özelliklerinden biri, \"rigidified macrocycles\" adı verilen büyük, esnek olmayan halkalı moleküllerin otomatik tasarımıdır. Bu tür yapılar, genellikle yüksek özgüllük ve stabilite gerektiren hedeflerde (örneğin protein‑protein etkileşimlerini kesmek) tercih edilir, ancak geleneksel tasarım yöntemleriyle elde edilmesi zordur. Antigravity, bu zorluğu aşmak için genetik algoritmalar ve reinforcement learning (pekiştirmeli öğrenme) tekniklerini birleştirerek, tasarım sürecini tamamen otomatikleştiriyor.\n\nAraç, hem akademik laboratuvarlar hem de büyük ilaç firmaları için bir API üzerinden erişilebilir hâle getirildi. Geliştiriciler, kendi veri setlerini ve özel değerlendirme metriklerini entegre ederek platformu özelleştirebiliyor. DeepMind, bu adımla yapay zekâ destekli ilaç keşfinin daha geniş bir kitleye ulaşmasını ve araştırma döngülerinin aylar yerine haftalar içinde tamamlanmasını hedefliyor.",
+  "onemli_maddeler": [
+    "Agentik yapay zekâ sayesinde özerk kimyasal tasarım ve aday seçimi.",
+    "Rijit makrosiklusların otomatik üretilmesi, zorlu hedef proteinlere yeni çözümler.",
+    "Doğal dil komutlarıyla entegrasyon ve ADMET değerlendirmeleriyle uçtan uca iş akışı.",
+    "Geliştiriciler için açık API ve özelleştirilebilir modüller."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Google Antigravity, ilaç keşfi sürecinde otomasyon ve yeni molekül tasarımı sağlayarak sektördeki araştırma verimliliğini artıracak kritik bir araç sunuyor.",
+  "etiketler": [
+    "cheminformatics",
+    "drug discovery",
+    "AI",
+    "Google Antigravity",
+    "molecule design"
+  ],
+  "anilan_modeller": [
+    "Google Antigravity"
+  ],
+  "yorum_tr": "Bu platform, ilaç geliştirme sürecindeki zaman ve maliyet engellerini azaltarak hem büyük firmalar hem de akademik araştırmacılar için önemli bir avantaj sağlayacak. Geliştiricilerin API üzerinden entegrasyon yapabilmesi, ekosistemin hızlı bir şekilde genişlemesine olanak tanıyacak.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://lh3.googleusercontent.com/UFTBrp1IrRBrc6_f4ibNgtV35iY8F2iTYaqOb1lzR-qZNy-Mb5726xrLKTozohfdZ_3quHe50uyn8z-Wh_Eril_8CVh7py7gH0188sl_EXkoJknlqg=w528-h297-n-nu-rw-lo",
+  "url": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/",
+  "source": "Google DeepMind",
+  "sourceTier": "resmi",
+  "date": "2026-11-03T17:01:49.000Z",
+  "slug": "agentic-cheminformatics-with-google-antigravity"
+}
