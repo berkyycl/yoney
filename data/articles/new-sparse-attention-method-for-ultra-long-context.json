@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "Yeni Seyrek Dikkat Yöntemi Ultra-Uzun Bağlam İçin",
+  "ozet_tr": "Araştırma ekibi, Qwen 3.8 27B modelinin dikkat mekanizmasını seyrekleştirerek 10 milyon token'a kadar bağlam genişletmeyi mümkün kıldı. Seyrek dikkat, tam dikkatle aynı doğrulama kaybını korurken işlem süresini önemli ölçüde azalttı ve açık kaynak kodlarıyla topluluğa sunuldu.",
+  "detayli_icerik_tr": "Yerel LLaMA topluluğu, Qwen 3.8 27B modelinin dikkat (attention) katmanını seyrekleştirerek ultra‑uzun bağlamları işleyebilen yeni bir yöntem geliştirdiğini duyurdu. Yapılan deneylerde, modelin dikkatini %70'e kadar seyrekleştirmesine rağmen doğrulukta gözle görülür bir kayıp yaşanmadı; bu, büyük dil modellerinin bellek tüketimini azaltmak için kritik bir adım olarak değerlendiriliyor.\n\nAraştırmacılar, bağlam uzunluğunu 10 M token'a kadar çıkardıklarında bazı özel görevlerde hafif bir doğruluk düşüşü gözlemlediler, ancak NIAH gibi çoğu görevde performans aynı seviyede kaldı. Bu bulgu, seyrek dikkat yönteminin yalnızca belirli karmaşık görevlerde değil, geniş bir yelpazedeki uygulamalarda da kullanılabileceğini gösteriyor.\n\nMetodun bir diğer yeniliği, sadece bir sonraki token tahmini kaybı (next‑token prediction loss) üzerinden seyrek dikkat eğitilebilmesi. Bu sayede model, tam dikkatli versiyonla aynı doğrulama kaybına ulaşırken eğitim süresi ve GPU bellek ihtiyacı önemli ölçüde azaldı. Ekip, bu çalışmayı H200/B300 sınıfı GPU'lar ve daha büyük ölçekli sistemler üzerinde de test etmeyi planlıyor.\n\nAraştırmanın tüm bileşenleri – özelleştirilmiş çekirdekler, SGLang entegrasyonu, teknik makale ve detaylı dokümantasyon – açık kaynak olarak GitHub üzerinden paylaşıldı. Geliştiriciler ve araştırmacılar, bu kaynakları kullanarak kendi açık‑ağırlıklı modellerinde uzun bağlam maliyetlerini düşürebilir ve yeni deneyler yapabilirler.",
+  "onemli_maddeler": [
+    "Qwen 3.8 27B modelinin dikkati %70'e kadar seyrekleştirildi ve doğruluk kaybı gözlemlenmedi.",
+    "Bağlam uzunluğu 10 M token'a çıkarıldı; çoğu görevde performans aynı kaldı.",
+    "Seyrek dikkat, sadece next‑token prediction loss ile eğitilebiliyor ve tam dikkatle aynı doğrulama kaybına ulaşıyor."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "Modelin bellek ve hız verimliliğini artıran yeni bir dikkat yöntemi, açık kaynak olarak sunulmuş ve geniş topluluk tarafından kullanılabilir hâle getirilmiştir; bu, uzun bağlamlı uygulamalarda önemli bir teknik ilerleme sağlar.",
+  "etiketler": [
+    "sparse attention",
+    "ultra-long context",
+    "Qwen",
+    "open-source",
+    "SGLang"
+  ],
+  "anilan_modeller": [
+    "Qwen 3.8 27B"
+  ],
+  "yorum_tr": "Seyrek dikkat yöntemi, büyük dil modellerinin uzun bağlamları daha düşük maliyetle işlemesini sağlayarak araştırmacıların ve geliştiricilerin yeni uygulama alanları keşfetmesine olanak tanıyacak. Açık kaynak paylaşımı ise topluluk temelli inovasyonu hızlandıracak.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://pbs.twimg.com/media/GkDUL57aAAARneI?format=webp&name=large",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xmbj0v/new_sparse_attention_method_for_ultralong_context/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-02T22:24:18.000Z",
+  "slug": "new-sparse-attention-method-for-ultra-long-context"
+}

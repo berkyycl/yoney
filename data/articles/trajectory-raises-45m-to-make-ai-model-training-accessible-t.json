@@ -1,0 +1,30 @@
+{
+  "baslik_tr": "Trajectory, AI model eğitimini teknik olmayan uzmanlara sunmak için 45 Milyon dolar topladı",
+  "ozet_tr": "AI modelleri hatalarından öğrenmek için yeniden eğitilmek zorunda. Trajectory, bu süreci otomatikleştirerek teknik olmayan uzmanların da modelleri sürekli iyileştirmesini sağlayan bir platform geliştirdi ve 45 Milyon dolar Series A yatırımı aldı.",
+  "detayli_icerik_tr": "OpenAI, Anthropic gibi büyük firmaların geliştirdiği temel modeller, hatalarından kendi kendine öğrenme yeteneğine sahip değil. Şirketler bu eksikliği gidermek için modelleri özel veri setleriyle ince ayar (fine‑tuning) yapıyor, ancak bu süreç genellikle iç araştırma ekipleri ya da pahalı danışmanlar (forward‑deployed engineers) gerektiriyor. Stanford'dan mezun üç eski DeepMind ve Apple çalışanı tarafından bir yıl önce kurulan Trajectory, bu sorunu \"sürekli öğrenme\" (continual learning) adı verilen bir yaklaşımla çözmeyi hedefliyor.\n\nŞirket, açık kaynak bir AI modelini müşterinin uygulamasına bağlayarak modelin performansına dair geri bildirim topluyor ve bu verileri kullanarak modeli periyodik olarak yeniden eğitiyor. Bu sayede avukatlar, doktorlar ve diğer uzmanlar, teknik bilgiye ihtiyaç duymadan modelleri kendi alanlarına özgü görevlerde zaman içinde daha yetkin hâle getirebiliyor. Platformu hâlihazırda Harvey, Rogo, Decagon, Mercor ve Nvidia gibi firmalar kullanıyor; bu müşteriler modellerini belirli sözleşme türlerini incelemek ya da belirli finansal metodolojilerle şirket değerlemesi yapmak gibi görevlerde uzmanlaştırıyor.\n\nTrajectory'nin kurucu ortakları, modelin kendini tamamen otonom bir şekilde geliştirmesinin (recursive self‑improvement) riskli olabileceğini vurgulayarak, insan gözetiminin güvenlik açısından kritik olduğunu belirtiyor. Şirket, tasarım odaklı bir arayüz geliştirerek teknik olmayan kullanıcıların da geri bildirim tanımlayıp model iyileştirmelerini tetikleyebilmelerini sağlıyor. Bu yaklaşım, model dağıtım süresini kısaltıp maliyetleri düşürerek AI’nın sektörel adaptasyonunu hızlandırmayı amaçlıyor.\n\nTrajectory, Sequoia liderliğinde ve Nvidia, Bessemer Venture Partners ve Bain Capital Ventures katılımıyla 45 Milyon dolar topladı; şirket değeri 300 Milyon dolar olarak belirlendi. Rekabet ortamında Thinking Machines Lab, Tinker, Applied Compute ve Prime Intellect gibi firmalar da benzer post‑training çözümler sunuyor, ancak Trajectory'nin en büyük avantajı kurucu ekibin DeepMind ve Apple gibi önde gelen araştırma merkezlerinden gelen deneyimi ve tasarım odaklı ürün geliştirme yeteneği.",
+  "onemli_maddeler": [
+    "Trajectory, teknik olmayan uzmanların da AI modellerini sürekli öğrenme yoluyla iyileştirmesini sağlayan bir platform geliştirdi.",
+    "Şirket, Sequoia liderliğinde 45 Milyon dolar Series A yatırımı alarak 300 Milyon dolar değerlemeye ulaştı.",
+    "Mevcut müşterileri arasında Harvey, Rogo, Decagon, Mercor ve Nvidia gibi firmalar bulunuyor; bu firmalar modellerini hukuk, finans ve diğer uzmanlık alanlarında özelleştiriyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "AI modelinin özel alanlarda kullanılabilirliğini artıran yeni bir post‑training platformu, sektördeki geliştirme maliyetlerini düşürerek daha geniş bir kullanıcı kitlesine ulaşmasını sağlayabilir.",
+  "etiketler": [
+    "AI",
+    "fine-tuning",
+    "fundraising",
+    "venture",
+    "continual learning"
+  ],
+  "anilan_modeller": [],
+  "yorum_tr": "Trajectory'nin sunduğu otomatik sürekli öğrenme altyapısı, özellikle teknik kaynakları sınırlı olan işletmeler için model özelleştirmeyi demokratikleştirerek AI adaptasyon hızını artırabilir. Ancak insan gözetiminin zorunlu tutulması, güvenlik risklerini azaltırken platformun tam otomasyon iddiasını sınırlayabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://techcrunch.com/wp-content/uploads/2026/11/Trajectory_3.jpg?resize=1200,900",
+  "url": "https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts/",
+  "source": "TechCrunch AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-02T23:13:53.000Z",
+  "slug": "trajectory-raises-45m-to-make-ai-model-training-accessible-t"
+}

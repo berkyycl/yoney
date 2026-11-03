@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "Alibaba'nın Qwen Code deposundan qwen4-max, qwen4-coder-plus ve qwen4-omni-120b modelleri sızdırıldı",
+  "ozet_tr": "Alibaba'ya ait Qwen Code GitHub deposunda yapılan bir dizi pull request, qwen4-max, qwen4-coder-plus ve qwen4-omni-120b gibi henüz duyurulmamış büyük modellerin varlığını ortaya çıkardı. Bu sızıntı, topluluk içinde modelin mimarisi ve potansiyel performansı hakkında spekülasyonları tetikledi.",
+  "detayli_icerik_tr": "Alibaba'nın QwenLM ekibi, Qwen Code projesi kapsamında GitHub'da bir dizi pull request (PR) yayınladı. PR'lar arasında, 79a9b753c60 commit'inde ölçüm yapılan ve \"qwen4\", \"qwen4-max\", \"qwen4-plus\", \"qwen4.5-max\", \"qwen4-coder-plus\", \"qwen4-max-2026-10-01\", \"openai/qwen4-max\" ve \"qwen4-omni-120b\" gibi model kimliklerinin 262.144 token uzunluğuna sahip olduğu belirtiliyor. Bu kimliklerin bir kısmı, omni test ortamında oturum modeli olarak zaten kullanılıyor, bu da modellerin sadece teorik olmadığını gösteriyor.\n\nKullanıcı /u/feelspeaceman, bu PR'ların bir sonraki nesil modelin (Q38FN'in halefi) ipuçlarını taşıdığını belirterek topluluğa duyurdu. Sızıntı, özellikle qwen4-omni-120b modelinin 120 milyar parametreli bir yapı olduğunu ima ediyor; bu, mevcut en büyük açık kaynak modelleriyle rekabet edebilecek bir ölçek.\n\nBu gelişme, Qwen serisinin yol haritasını ve Alibaba'nın büyük dil modelleri stratejisini yeniden gözden geçirmesine neden olabilir. Topluluk, modelin mimarisi, eğitim verisi ve lisans koşulları hakkında daha fazla bilgi talep ederken, aynı zamanda güvenlik ve etik açıdan sızdırılan kodun potansiyel risklerini de tartışıyor.\n\nReddit'teki LocalLLaMA topluluğu, bu sızıntıyı hem bir fırsat hem de bir uyarı olarak değerlendiriyor. Geliştiriciler, sızdırılan modellerin açık kaynak versiyonlarını inceleyerek kendi projelerinde denemeler yapabilir, ancak aynı zamanda telif hakları ve veri gizliliği konularında dikkatli olmaları gerektiği vurgulanıyor.",
+  "onemli_maddeler": [
+    "GitHub PR'ları, qwen4-max, qwen4-coder-plus ve qwen4-omni-120b gibi 120B parametreli modellerin varlığını ortaya koydu.",
+    "Modellerin token uzunluğu 262.144 olarak belirtilmiş ve bazıları omni test ortamında oturum modeli olarak zaten kullanılıyor.",
+    "Topluluk, bu sızıntıyı Q38FN'in halefi olabilecek yeni bir nesil modelin habercisi olarak yorumladı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Büyük ölçekli, henüz duyurulmamış modellerin sızdırılması sektörde rekabet, güvenlik ve lisanslama konularında önemli etkiler yaratabilir.",
+  "etiketler": [
+    "Qwen",
+    "Alibaba",
+    "Model Leak",
+    "AI",
+    "Large Language Model"
+  ],
+  "anilan_modeller": [
+    "qwen4-max",
+    "qwen4-coder-plus",
+    "qwen4-omni-120b"
+  ],
+  "yorum_tr": "Bu sızıntı, büyük dil modeli ekosisteminde yeni bir oyuncunun ortaya çıkabileceğine işaret ediyor; geliştiriciler erken erişim avantajı elde ederken, lisans ve güvenlik riskleri de artıyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/rZinDhLetYEVHArY_maRo38c3OtJmbJ7LBLdHOON_YE.png?width=640&crop=smart&auto=webp&s=25b2094ae8df9ad8a78e530a7616d0675f338935",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xmitzx/alibabas_qwen_code_repo_just_leaked_qwen4max/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-03T03:55:43.000Z",
+  "slug": "alibaba-s-qwen-code-repo-just-leaked-qwen4-max-qwen4-coder-p"
+}

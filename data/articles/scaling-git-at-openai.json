@@ -1,0 +1,40 @@
+{
+  "baslik_tr": "OpenAI, Git Monorepo’sini Pando ile 5 Kat Hızlandırdı",
+  "ozet_tr": "OpenAI, artan monorepo taleplerine yanıt olarak Git altyapısını tamamen yeniledi ve Pando adını verdiği yeni bir backend geliştirdi. Pando, aynı anda binlerce dalda paralel push işlemlerini destekleyerek push gecikmesini neredeyse beş kat azalttı ve günlük bir petabaytlık veri akışı sağladı.",
+  "detayli_icerik_tr": "OpenAI, Codex’in getirdiği paralel geliştirme hızının monorepo üzerindeki baskısını karşılamak için geleneksel Git servislerini yeniden tasarlamaya karar verdi. Yeni sistem Pando, Git protokolü ve istemcileriyle tam uyumluluk korurken, yazma işlemlerini yatay olarak ölçeklendirmeyi ve okuma performansını maksimize etmeyi hedefliyor. Bu sayede mühendisler ve otomatik ajanlar, mevcut iş akışlarını değiştirmeden aynı Git komutlarını kullanarak yüksek bant genişliğine ulaşabiliyor.\n\nPando’nun temel mimarisi iki ana ilkeyi birleştiriyor: dal bazlı bağımsız güncellemeler ve paket dosyalarının (packfile) yeniden kullanımını. Her dal için güncellemeler ayrı ayrı koordine edildiğinden, birbirinden bağımsız dallara yapılan push’lar aynı anda işlenebiliyor. Ayrıca sunucu, aynı packfile’ı birden çok istemciye aynı anda sunarak CPU ve disk I/O yükünü azaltıyor. Bu yaklaşım, klasik üç aşamalı commit (3PC) ve yazma-ahead log (WAL) tabanlı sistemlerin karşılaştığı koordinasyon ve manifest çakışması sorunlarını ortadan kaldırıyor.\n\nPando, tutarlılık modelini de gevşeterek \"nedensel tutarlılık\" (causal consistency) sunuyor. Bu modelde, bir dalda yapılan güncellemeler seri hale getirilirken, farklı dallardaki okuma işlemleri tek bir anlık anlık görüntüye ihtiyaç duymuyor; okuyucular yalnızca ilgili dalın tarihçesini alıyor. Bu, özellikle çok sayıda dalın aynı anda güncellenip okunması gereken büyük ölçekli araştırma ve CI ortamları için kritik bir avantaj sağlıyor. Gerçek dünyadaki testlerde, Pando median push gecikmesini %80 oranında düşürürken, günlük veri aktarımını bir petabayta çıkararak OpenAI’nın altyapı maliyetlerini de azaltıyor.\n\nOpenAI, Pando’nun açık kaynak Git kopyasını GitHub’da paylaşarak topluluğa da katkıda bulunmayı planlıyor. Gelecek aşamalarda, sistemin daha fazla veri merkeziyle entegrasyonu ve agent‑scale çalışma yükleri için ek optimizasyonlar bekleniyor.",
+  "onemli_maddeler": [
+    "Pando, aynı anda binlerce dalda paralel push yapabilme yeteneğiyle Git yazma performansını 5 kat artırdı.",
+    "Packfile yeniden kullanımı sayesinde okuma (fetch/clone) gecikmesi önemli ölçüde azaldı ve günlük bir petabayt veri akışı sağlandı.",
+    "Git protokolü ve istemcileriyle tam uyumluluk korunarak mevcut geliştirme süreçlerine dokunulmadı."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "OpenAI’nın devasa monorepo’sunu ölçeklendiren Pando, büyük ölçekli AI araştırma ekipleri ve CI sistemleri için kritik bir altyapı iyileştirmesi sunuyor; sektörde benzer ölçek sorunları yaşayan diğer şirketler için de örnek teşkil edebilir.",
+  "etiketler": [
+    "Git",
+    "Monorepo",
+    "Pando",
+    "OpenAI",
+    "Scalable Infrastructure"
+  ],
+  "anilan_modeller": [],
+  "yorum_tr": "Pando, Git’in temel protokolünü bozmadan yüksek paralellik ve düşük gecikme sağlayarak büyük ölçekli kod tabanları için yeni bir standart oluşturabilir. Geliştiriciler, mevcut iş akışlarını koruyarak daha hızlı iterasyon yapabilecek, kurumlar ise altyapı maliyetlerini düşürebilecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Pando",
+      "benchmark": "median push latency reduction",
+      "skor": 5,
+      "birim": "x",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "In production, Pando cut median push latency by nearly 5x."
+    }
+  ],
+  "gorsel_url": "https://images.ctfassets.net/kftzwdyauwt9/CMZECnCACxZO52Dqy7SnB/d7451310a4c165a396517dc7387b9b71/scaling-git-at-openai-seo-card.png?w=1600&h=900&fit=fill",
+  "url": "https://openai.com/index/scaling-git-at-openai",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-11-02T15:30:00.000Z",
+  "slug": "scaling-git-at-openai"
+}

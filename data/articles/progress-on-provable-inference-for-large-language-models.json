@@ -1,0 +1,51 @@
+{
+  "baslik_tr": "FlashProve ile Büyük Dil Modelleri İçin Kanıtlanabilir Çıktı: 400B MoE Modelde 110 Token/sn Hızında zkSNARK Üretimi",
+  "ozet_tr": "Anthropic, büyük dil modelleri için sıfır bilgi kanıtı (zkSNARK) tabanlı bir provable inference prototipi olan FlashProve'i duyurdu. 400 milyar parametreli Llama 4 Maverick modeli üzerinde tek bir H100 GPU ile saniyede 110 token üretirken, kanıt boyutu 1.024 token başına yaklaşık 19 MB seviyesinde. Açık kaynak kodlu bu sistem, model ağırlıklarını gizli tutarak yanıtların gerçekten iddia edilen modele ait olduğunu kanıtlamayı hedefliyor.",
+  "detayli_icerik_tr": "Anthropic araştırma ekibi, yapay zeka hizmetlerinde güven ve şeffaflık eksikliğini gidermek amacıyla \"provable inference\" (kanıtlanabilir çıkarım) kavramını geliştirdi. Bu yaklaşım, bir model sağlayıcısının yanıtları, belirli bir model ağırlığı setine bağlı olarak ürettiğini kanıtlayan kriptografik bir kanıt (zkSNARK) sunmasını sağlıyor. Böylece kullanıcılar, yanıtların iddia edilen modelden geldiğini, ağırlıkların gizli kalması koşuluyla doğrulayabiliyor.\n\nFlashProve adlı sistem, büyük bir karışık uzman (Mixture-of-Experts) modeli olan Llama 4 Maverick (400 B parametre) üzerinde test edildi. 4‑bit kuantizasyon ve tam sayı aritmetiği kullanılarak, tek bir NVIDIA H100 GPU, 1.024 tokenlik istek başına yaklaşık 19 MB büyüklüğünde kanıtlar üreterek 110 token/sn hızına ulaştı. Bu performans, aynı modelin vLLM kütüphanesiyle çalıştırılmasına kıyasla GPU süresinde %70‑%95 oranında bir tasarruf sağlıyor.\n\nProjenin teknik katkıları arasında, modern kriptografi araçlarının yaratıcı bir şekilde uygulanması ve kanıt sistemlerinin sağlam tasarım ilkelerine bağlı kalınması yer alıyor. Kanıtlar, modelin ağırlıklarını gizli tutarken sadece çıktının doğru olduğunu gösteriyor; model mimarisi gizlenmiyor. Ayrıca, sistemin güvenlik garantileri Lean formal doğrulama diliyle üst düzeyde denetlenebilir hâle getirildi.\n\nAnthropic, blog gönderisi, teknik rapor, protokol tanımı, çalıştırılabilir kod (prover ve iki doğrulayıcı, C++ hızlı doğrulayıcı ve Lean tabanlı doğrulayıcı) ve Lean kanıtlarıyla birlikte interaktif bir görselleştirici sunarak projeyi Apache 2.0 lisansı altında açık kaynak olarak yayınladı. Bu adım, araştırmacıların ve geliştiricilerin sistemi incelemesini, iyileştirmesini ve AI güvenliği, düzenleyici denetim ve model kullanımının izlenmesi gibi alanlarda uygulanmasını teşvik etmeyi amaçlıyor.",
+  "onemli_maddeler": [
+    "FlashProve, 400 B parametreli Llama 4 Maverick modeli için tek bir H100 GPU’da 110 token/sn kanıt üretme hızı sağlıyor.",
+    "Kanıt boyutu 1.024 token başına yaklaşık 19 MB; bu, vLLM ile aynı işlem süresine göre %70‑%95 daha az GPU zamanı gerektiriyor.",
+    "Sistem, zkSNARK tabanlı kanıtlarla model ağırlıklarını gizli tutarak yanıtların doğru modelden geldiğini kanıtlıyor ve Lean ile formel doğrulama sağlanıyor."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "Provable inference, AI güvenliği ve düzenleyici denetim açısından kritik bir altyapı sunarak model sahteciliğini önleme potansiyeline sahip; performans iyileştirmeleri ise bu yaklaşımın pratik kullanımını mümkün kılıyor.",
+  "etiketler": [
+    "zkSNARK",
+    "provable inference",
+    "AI güvenliği",
+    "FlashProve",
+    "Llama 4 Maverick"
+  ],
+  "anilan_modeller": [
+    "Llama 4 Maverick (400B MoE)"
+  ],
+  "yorum_tr": "FlashProve, büyük dil modellerinin çıktılarının doğrulanabilirliğini sağlayarak hem kullanıcı güvenini artırıyor hem de düzenleyicilerin model kullanımını izlemelerini kolaylaştırıyor; performans iyileştirmeleri, bu kriptografik yöntemin gerçek dünya uygulamalarına geçişini hızlandırabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Llama 4 Maverick (400B MoE)",
+      "benchmark": "Proof generation throughput",
+      "skor": 110,
+      "birim": "tokens/second",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "single H100 GPU, 4-bit quantized weights, integer arithmetic in prefill",
+      "kaynak_metinden_alinti": "a single H100 GPU generates proofs at around 110 tokens/second"
+    },
+    {
+      "model": "Llama 4 Maverick (400B MoE)",
+      "benchmark": "Proof size per 1,024-token request",
+      "skor": 19,
+      "birim": "MB",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "single H100 GPU, 4-bit quantized weights",
+      "kaynak_metinden_alinti": "proof size of ~19 MB per 1,024-token request"
+    }
+  ],
+  "gorsel_url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/2eba335a28661a8253187053fa36add230af728b-2000x1125.jpg",
+  "url": "https://www.anthropic.com/research/provable-inference",
+  "source": "Anthropic Research",
+  "sourceTier": "resmi",
+  "date": "2026-11-02T00:00:00.000Z",
+  "slug": "progress-on-provable-inference-for-large-language-models"
+}

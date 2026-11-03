@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "OpenAI, yeni güvenlik sprinti ve artırılmış bug bounty programı ile savunma yeteneklerini güçlendiriyor",
+  "ozet_tr": "OpenAI, iç güvenlik sprinti kapsamında araştırmacılarını ve güvenlik ortaklarını modelleriyle test ederek sistemlerini güçlendirmeyi hedefliyor. Cathedral ile iş birliği yaparak savunma açıklarını tespit etmeyi ve kritik buluşlar için ödülleri dört katına çıkarmayı planlıyor. Ayrıca, öncü hizmet sağlayıcıları için altı ay boyunca 1 milyar dolarlık sübvanse edilmiş erişim taahhüdünde bulunuyor.",
+  "detayli_icerik_tr": "OpenAI, yeni bir iç güvenlik sprinti başlatarak araştırmacılarını, güvenlik ortaklarını ve kendi mühendislik ekiplerini bir araya getiriyor. Bu sprintte, OpenAI modelleri, özellikle Codex, güvenlik açıklarını tespit etmek ve düzeltmek için kullanılacak; ekipler bulguları izole ortamda yeniden üretecek ve yamaları gözden geçirecek. Ortaklık yapılan güvenlik firması Cathedral, farklı uzmanlık ve yaklaşımlarıyla savunma mekanizmalarını zorlayacak.\n\nŞirket, Security Bug Bounty programını da önemli ölçüde güncelliyor. Kritik bulgular için verilen ödüller dört katına çıkarılıyor ve araştırmacıların varsayımları sorgulaması teşvik ediliyor. Bu adım, hem OpenAI platformlarını hem de savunma yöntemlerini güçlendirmeyi amaçlıyor.\n\nGeçtiğimiz sprintte, ürün mühendislerinin %25'i güvenlik açıklarını bulma ve düzeltme çalışmalarına odaklandı; bu sayede AI destekli bir savunma döngüsü oluşturuldu. OpenAI, geleneksel siber savunmanın yetersiz kaldığı bir dönemde, yapay zekâyı sürekli zayıflık tespiti ve onarımı için bir araç olarak konumlandırıyor.\n\nOpenAI ayrıca, Daybreak müşterileri ve kritik altyapıyı koruyan öncü savunucular için altı ay boyunca 1 milyar dolarlık sübvanse edilmiş erişim sağlama sözü verdi. Geçmiş sprintte elde edilen mimari ve dersler, açık kaynak bir \"defense factory\" rehberi ve sektör genelinde savunma yeteneklerini artırmak için bir \"blueprint\" ile paylaşılacak. Şirket, bu çabaların sektördeki savunma penceresini (defender’s window) genişleteceğini ve saldırganların önüne geçmek için sürekli bir eylem gerektirdiğini vurguluyor.",
+  "onemli_maddeler": [
+    "OpenAI, Cathedral ile iş birliği yaparak modelleriyle güvenlik açıklarını test edecek yeni bir iç güvenlik sprinti başlattı.",
+    "Security Bug Bounty programındaki ödüller kritik bulgular için dört katına çıkarıldı.",
+    "Geçmiş sprintte ürün mühendislerinin %25'i güvenlik iyileştirmelerine odaklandı ve AI destekli savunma döngüsü oluşturuldu.",
+    "Daybreak müşterileri ve kritik hizmet sağlayıcıları için 6 ay boyunca 1 milyar dolarlık sübvanse edilmiş erişim taahhüdü verildi."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "OpenAI'nin güvenlik altyapısını AI ile güçlendirme ve bug bounty programındaki büyük ödül artışı, sektördeki siber savunma yaklaşımlarını etkileyebilecek kritik bir güncellemedir.",
+  "etiketler": [
+    "güvenlik",
+    "bug bounty",
+    "AI savunma",
+    "OpenAI",
+    "Cathedral"
+  ],
+  "anilan_modeller": [
+    "Codex"
+  ],
+  "yorum_tr": "Bu adım, yapay zekânın siber güvenlikte aktif bir araç olarak kullanılmasının pratik bir örneğini sunuyor ve diğer teknoloji firmalarını benzer güvenlik sprintleri düzenlemeye yönlendirebilir. Artan ödül yapısı, dış araştırmacıların katılımını teşvik ederek güvenlik açıklarının daha hızlı tespit edilmesini sağlayacak.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://images.ctfassets.net/kftzwdyauwt9/3I6XNOAyDMl6T0tummrXmo/b10602bfeb5ca42409706b86011ceacb/preparing-our-next-security-sprint-to-harden-openai-social.png?w=1600&h=900&fit=fill",
+  "url": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-11-02T18:00:00.000Z",
+  "slug": "preparing-our-next-security-sprint-to-harden-openai"
+}
