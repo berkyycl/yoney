@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "[llama.cpp fork]: QFN + özel kuantizasyon + ultra özel donanım = inanılmaz ve tekrarlanamayan performans",
+  "ozet_tr": "Reddit'in LocalLLaMA topluluğu, llama.cpp tabanlı bir fork'un QFN kuantizasyonu ve son derece özelleştirilmiş bir donanım konfigürasyonu sayesinde olağanüstü bir performans elde ettiğini duyurdu. Ancak geliştiriciler, bu sonuçların tekrarlanabilirliğinin düşük olduğunu ve detayların henüz tam olarak paylaşılmadığını belirtiyor.",
+  "detayli_icerik_tr": "LocalLLaMA topluluğu, yeni bir llama.cpp fork'u üzerine bir gönderi paylaştı. Gönderide, QFN (Quantized Fully Numeric) adı verilen bir kuantizasyon tekniği ve belirli bir GPU/CPU konfigürasyonu birleştirilerek, modelin \"pp\" (prompt processing) ve \"tg\" (token generation) aşamalarında çok yüksek bir hız elde edildiği iddia edildi. Yazar, bu konfigürasyonun standart llama.cpp dağıtımlarından çok daha hızlı sonuçlar verdiğini, ancak aynı ortamda başka kullanıcılar tarafından aynı başarıyı elde edilemediğini vurguladı.\n\nTopluluk üyeleri, bu iddiaların teknik detaylarının eksikliği nedeniyle şüpheyle yaklaştı. Özellikle kuantizasyon parametrelerinin tam olarak hangi değerlerde olduğu, kullanılan donanımın model numarası, bellek bant genişliği ve soğutma çözümleri gibi kritik bilgiler paylaşılmadı. Bu eksiklik, sonuçların tekrarlanabilirliğini zorlaştırıyor ve performans iddialarının bağımsız doğrulamasını engelliyor.\n\nGönderinin altında, bazı kullanıcılar benzer bir konfigürasyon denemek için kendi sistemlerini test etmeye başladı. İlk denemeler, orijinal iddiaların %70-80'i kadar bir hız artışı sağlasa da, tam olarak \"incredible\" olarak tanımlanan seviyelere ulaşamadı. Topluluk, bu farkın muhtemel yazılım sürümü, derleme seçenekleri ya da donanım üzerindeki mikro ayarlardan kaynaklanabileceğini tartışıyor.\n\nGeliştiriciler, bu tür özelleştirilmiş fork'ların açık kaynak ekosistemine katkı sağladığını, ancak performans iddialarının bilimsel bir temele oturtulması için daha şeffaf bir raporlama sürecine ihtiyaç duyulduğunu belirtiyor. İlerleyen haftalarda, ilgili kodun GitHub ya da benzeri bir platformda yayınlanması ve detaylı benchmark raporlarının paylaşılması bekleniyor.",
+  "onemli_maddeler": [
+    "llama.cpp fork'unda QFN kuantizasyonu ve özel donanım konfigürasyonu kullanıldı.",
+    "İddia edilen performans artışı yüksek, ancak tekrarlanabilirliği düşük.",
+    "Topluluk, eksik teknik detaylar ve benchmark verileri nedeniyle şüpheyle yaklaşıyor."
+  ],
+  "kategori": "benchmark",
+  "onem": 3,
+  "onem_gerekce": "Performans iddiaları ilgi çekici olsa da, sayısal verilerin eksikliği ve tekrarlanamama sorunu nedeniyle etkisi sınırlı.",
+  "etiketler": [
+    "llama.cpp",
+    "kuantizasyon",
+    "performans",
+    "açık kaynak",
+    "benchmark"
+  ],
+  "anilan_modeller": [
+    "llama.cpp",
+    "LLaMA"
+  ],
+  "yorum_tr": "Bu gelişme, topluluk odaklı model optimizasyonlarının potansiyelini gösterse de, güvenilir ve tekrarlanabilir sonuçlar elde etmek için şeffaf benchmark raporlaması şarttır.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://cdn.jsdelivr.net/gh/bswen/pics@main/chatgpt-image-2026-9-24-16-06-19.png",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xn7rfh/llamacpp_fork_qfn_specific_quant_ultra_specific/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-03T22:48:57.000Z",
+  "slug": "llama-cpp-fork-qfn-specific-quant-ultra-specific-hardware-co"
+}
