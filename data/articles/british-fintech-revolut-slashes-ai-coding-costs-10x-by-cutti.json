@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "Revolut, Claude'ı Bırakarak Kendi Sunucularında Çalıştırdığı LLM ile AI Kodlama Maliyetlerini 10 Kat Azalttı",
+  "ozet_tr": "İngiltere merkezli fintech şirketi Revolut, kod üretiminde kullandığı Anthropic Claude modelini kendi veri merkezlerinde barındırdığı açık kaynak LLM ile değiştirdi. Bu geçiş sayesinde AI destekli kodlama maliyetlerini on kat düşürerek hem bütçesini rahatlatıyor hem de yanıt sürelerini iyileştiriyor.",
+  "detayli_icerik_tr": "Revolut, son aylarda ürün geliştirme süreçlerinde yapay zeka destekli kod üretim araçlarını yoğun şekilde kullanıyor. Başlangıçta Anthropic'in Claude modelini API üzerinden tüketen şirket, yüksek kullanım ücretleri ve veri gizliliği endişeleri nedeniyle alternatif bir yol arayışına girdi. \n\nŞirket, açık kaynak Large Language Model (LLM) ekosistemindeki gelişmeleri takip ederek, kendi sunucularında barındırabileceği bir model seçti ve bu modeli iç altyapısına entegre etti. Modelin eğitimi ve optimizasyonu için mevcut mühendislik kaynakları kullanıldı; böylece dış hizmet sağlayıcılarına olan bağımlılık ortadan kalktı. \n\nGeçişin ardından yapılan iç maliyet analizi, Claude üzerinden yapılan API çağrılarının maliyetinin yaklaşık %90'ının ortadan kalktığını gösterdi. Revolut, kod tamamlama, hata ayıklama ve otomatik test üretimi gibi görevlerde yeni modelin performansının yeterli olduğunu ve bazı durumlarda daha hızlı yanıt süreleri sağladığını belirtti. \n\nBu adım, fintech sektöründe veri güvenliği ve maliyet etkinliği konularında bir örnek teşkil ederken, diğer teknoloji firmalarına da benzer bir yol haritası sunabilir. Revolut, gelecekte modelin yeteneklerini genişletmek ve daha fazla iç hizmette kullanmak için planlar yapıyor.",
+  "onemli_maddeler": [
+    "Revolut, Claude yerine kendi veri merkezlerinde barındırdığı açık kaynak LLM'yi kullanarak AI kodlama maliyetlerini %90 oranında azalttı.",
+    "Geçiş, veri gizliliği ve yanıt süresi gibi kritik faktörlerde iyileşme sağladı.",
+    "Bu hamle, fintech firmaları için dışa bağımlı AI hizmetlerine alternatif bir model sunuyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Şirketin AI altyapısında büyük bir maliyet ve güvenlik değişikliği yapması, sektörde benzer adımların artmasına yol açabilir.",
+  "etiketler": [
+    "Revolut",
+    "AI",
+    "coding",
+    "self-hosted",
+    "Claude"
+  ],
+  "anilan_modeller": [
+    "Claude",
+    "Local LLaMA"
+  ],
+  "yorum_tr": "Revolut'un kendi LLM'sini devreye alması, yüksek API maliyetlerinden kaçınarak daha sürdürülebilir bir geliştirme ortamı yaratıyor. Bu yaklaşım, benzer ölçeklerdeki fintech firmaları için maliyet ve veri güvenliği açısından cazip bir örnek oluşturuyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://i.ytimg.com/vi/oeTCc01Ve7E/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGF4gXiheMA8=&rs=AOn4CLCnALxED4s02qfCmsduV2vRgxTkJg",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xn568h/british_fintech_revolut_slashes_ai_coding_costs/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-03T21:05:30.000Z",
+  "slug": "british-fintech-revolut-slashes-ai-coding-costs-10x-by-cutti"
+}

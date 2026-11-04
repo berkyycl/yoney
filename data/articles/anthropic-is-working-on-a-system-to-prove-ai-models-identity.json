@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "Anthropic, AI Model Kimliğini Kanıtlayan FlashProve Sistemini Geliştiriyor",
+  "ozet_tr": "Anthropic, model çıktılarının kaynağını kriptografik olarak kanıtlayan açık kaynaklı FlashProve adlı bir sistem üzerinde çalıştığını duyurdu. Sistem, bir modelin \"parmak izini\" yayınlayarak çıktının o modele ait olduğunu matematiksel olarak doğrulama imkanı sunuyor.",
+  "detayli_icerik_tr": "Anthropic, blog yazısında FlashProve adını verdiği yeni bir açık kaynak sistemin temelini açıkladı. Bu sistem, \"kanıtlanabilir çıkarım\" (provable inference) adı verilen bir kriptografik kanıt mekanizmasıyla, bir AI modelinin ürettiği çıktının gerçekten o modele ait olduğunu matematiksel olarak garantiliyor. FlashProve, e-posta imzalarına benzer şekilde çalışarak, sahte model taklitlerine karşı dayanıklı bir doğrulama yöntemi sunuyor.\n\nSistem, laboratuvarların yayınladığı model \"parmak izleri\" sayesinde çalışıyor. Bu parmak izleri, modelin ağırlıklarını (weights) ifşa etmeden, sadece kimliğini tanımlayan bir kriptografik özet içeriyor. Böylece Anthropic ve OpenAI gibi kapalı model sahipleri, değerli varlıklarını koruyarak bu kimlik doğrulama mekanizmasını ticari modelleri için de kullanabiliyor. FlashProve, hem daha ucuz bir modele geçişi gizlemeyi önleyebilecek hem de performans iddialarını sahte bir modelle şişirmeyi engelleyebilecek.\n\nAraç, hafif bir yapıya sahip olduğundan doğrulama işlemi yerel cihazlarda bile gerçekleştirilebiliyor. Açık kaynak lisansı altında GitHub'da yayınlanan teknik spesifikasyon ve kodlar, geliştiricilerin sistemi incelemesini, uyarlamasını ve iyileştirmesini hedefliyor. Anthropic, şu an için FlashProve'yi kendi laboratuvarında ya da başka bir laboratuvarda üretim ortamına almamayı, araştırma aşamasında olduğunu ve ileride topluluk katkılarıyla olgunlaşmasını beklediğini belirtiyor.\n\nBu gelişme, AI modelinin çıktısının kaynağını doğrulama ihtiyacının giderek artan bir endüstri sorunu olduğunun altını çiziyor. Model sahteciliği, maliyet optimizasyonu ve performans raporlaması gibi konularda şeffaflık sağlamak, hem geliştiriciler hem de son kullanıcılar için kritik bir güven unsuru haline geliyor.",
+  "onemli_maddeler": [
+    "FlashProve, model çıktısının kaynağını kriptografik bir kanıtla doğruluyor.",
+    "Sistem, model ağırlıklarını ifşa etmeden \"parmak izi\" yayınlamaya dayanıyor.",
+    "Açık kaynak kod ve teknik spesifikasyon GitHub'da yayınlandı, topluluk katkısı bekleniyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Model kimliğinin doğrulanması, sahte model kullanımı ve performans manipülasyonunu önlemek için kritik bir altyapı sağlıyor; bu da AI ekosisteminde güven ve şeffaflık açısından büyük bir adım.",
+  "etiketler": [
+    "Anthropic",
+    "FlashProve",
+    "Kriptografi",
+    "Model Kimliği",
+    "Açık Kaynak"
+  ],
+  "anilan_modeller": [
+    "Claude",
+    "GPT-4"
+  ],
+  "yorum_tr": "FlashProve, AI model sahteciliğine karşı yeni bir savunma katmanı sunarak geliştiricilerin ve işletmelerin güvenini artırabilir. Ancak sistemin geniş çapta benimsenmesi, standart parmak izi protokollerinin endüstri genelinde kabul görmesine bağlı.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://techcrunch.com/wp-content/uploads/2026/09/GettyImages-2294192768.jpg?resize=1200,798",
+  "url": "https://techcrunch.com/2026/11/03/anthropic-is-working-on-a-system-to-prove-ai-models-identity/",
+  "source": "TechCrunch AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-03T22:41:03.000Z",
+  "slug": "anthropic-is-working-on-a-system-to-prove-ai-models-identity"
+}

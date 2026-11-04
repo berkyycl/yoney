@@ -1,0 +1,63 @@
+{
+  "baslik_tr": "Claude Opus 5.5, Gemma 4 12B'de 8 Nöronu Düzenleyerek İtalyanca Çeviri Zamanını Değiştirdi",
+  "ozet_tr": "MIT'nin ağırlık‑alanı programlama (weight‑space programming) yöntemini taklit eden bir kullanıcı, Claude Opus 5.5 ile Gemma 4 12B modelinin sadece 8 MLP nöronunu değiştirerek İtalyanca çevirilerde tercih edilen geçmiş zaman kipini iyileştirdi. Bu el ile yapılan düzenleme, %26'lık hatalı kullanım oranını %5'e düşürürken, modelin geri kalan çıktısında neredeyse hiçbir bozulma yaratmadı.",
+  "detayli_icerik_tr": "MIT CSAIL, geçen hafta GPT‑6 Astra'yı kullanarak Qwen3.5‑0.8B modelinin birkaç nöronunu elle değiştirip matematik döngülerini ortadan kaldırdığını duyurdu. Bu deney, modelin ağırlıklarını geleneksel eğitim süreci olmadan, sadece ileri yönlü geçişlerle (forward passes) ve gradient kullanmadan iyileştirebileceğini gösterdi.\n\nBu yaklaşımı kendi çalışma alanına uyarlamak isteyen Reddit kullanıcısı FeydRowan, yerel modellerle sıkça yaptığı İtalyanca çeviri görevinde Gemma 4 12B'nin belirli bir geçmiş zaman kipini (\"si nascondeva\") tercih etmediğini fark etti. Model, \"He had been hiding...\" cümlesini \"Si era nascosto...\" şeklinde çeviriyor, ki bu çeviri anlamı tam olarak yansıtmıyordu.\n\nKullanıcı, Claude Opus 5.5'i bir Python çekirdeği üzerinden Gemma ağırlıklarına bağladı, 50 ileri geçişle test cümlelerini değerlendirdi ve modelin orta katmanlarında bu iki zaman kipini ayıran bir lineer probun zaten mevcut olduğunu tespit etti. Ancak model bu bilgiyi fiil seçimine yansıtamıyordu. Claude, 8 MLP nöronunu (toplam 11.9 M parametrenin sadece 92 kB'lık bir kısmı) bir \"anahtar\" nöron haline getirerek, ilgili bağlamda doğru zamanı seçmesini sağladı.\n\nSonuçlar, el ile yapılan düzenlemenin etkisini tabloyla gösterdi: eski formun hâlâ kullanıldığı oran %26 iken, Claude'un düzenlemesiyle bu oran %5'e düştü. Kontrol cümlelerinde bozulma oranı %16'ya yükselse de, 200 bağımsız çevirmenin %99'u (182) tamamen değişmeden kaldı. Diğer yöntemler (LoRA ince ayarı, klasik fark‑ortalamaları) daha fazla yan etki yarattı. Bu deney, tek bir yapı ve tek model üzerinde iki kez aynı \"anahtar nöron\" tasarımının bağımsız olarak ortaya çıkmasıyla, ağırlık‑alanı programlamanın pratikte tekrarlanabilirliğini gösterdi.",
+  "onemli_maddeler": [
+    "MIT'nin ağırlık‑alanı programlama yöntemi, model ağırlıklarını gradient olmadan doğrudan düzenleyebiliyor.",
+    "Claude Opus 5.5, Gemma 4 12B'de sadece 8 nöron (≈92 KB) değiştirerek İtalyanca geçmiş zaman tercihini %26'dan %5'e düşürdü.",
+    "El ile yapılan düzenleme, diğer yöntemlere kıyasla yan etkileri (kontrol bozulması, bağımsız çevirilerde değişiklik) en aza indirdi.",
+    "Deney, aynı anahtar nöron tasarımının iki bağımsız çalışmada ortaya çıkmasıyla yöntemin tutarlılığını kanıtladı."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Model ağırlıklarını eğitimsiz şekilde düzenleyerek belirli dilsel davranışı iyileştirme, yerel LLM kullanıcıları ve araştırmacılar için yeni bir ince ayar paradigması sunuyor.",
+  "etiketler": [
+    "weight-space programming",
+    "Gemma 4",
+    "Claude Opus 5.5",
+    "İtalyanca çeviri",
+    "model editing"
+  ],
+  "anilan_modeller": [
+    "Gemma 4 12B",
+    "Qwen3.5-0.8B",
+    "GPT-6 Astra"
+  ],
+  "yorum_tr": "Bu deney, büyük modellerin sadece birkaç parametresini değiştirerek istenen dilsel davranışı elde etmenin mümkün olduğunu gösteriyor; geliştiriciler için düşük maliyetli, hızlı ve hedefe yönelik ince ayar seçenekleri sunuyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Gemma 4 12B",
+      "benchmark": "Claude's hand edit old‑form share",
+      "skor": 5,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "test 1",
+      "kaynak_metinden_alinti": "Claude's hand edit 5 % 16 % 2 182"
+    },
+    {
+      "model": "Gemma 4 12B",
+      "benchmark": "LoRA fine‑tune old‑form share",
+      "skor": 12,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "test 1",
+      "kaynak_metinden_alinti": "LoRA fine‑tune on the same data 12 % 23 % 0 120"
+    },
+    {
+      "model": "Gemma 4 12B",
+      "benchmark": "Classic difference of means old‑form share",
+      "skor": 49,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "test 1",
+      "kaynak_metinden_alinti": "Classic \"difference of means\" ablation 49 % 75 % 53 43"
+    }
+  ],
+  "gorsel_url": "https://miro.medium.com/1*JwrN4sExvE-2WTIeKyeHrQ.png",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xn1gs9/i_tried_mits_weightspace_programming_on_my_own/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-03T18:48:57.000Z",
+  "slug": "i-tried-mit-s-weight-space-programming-on-my-own-use-case-cl"
+}
