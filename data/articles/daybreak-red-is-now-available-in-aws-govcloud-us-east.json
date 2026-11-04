@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "Daybreak Red, AWS GovCloud (US-East) ortamında kullanılabilir",
+  "ozet_tr": "OpenAI, Daybreak Red hizmetini AWS GovCloud (US-East) bölgesinde sunarak, yetkili devlet güvenlik ekiplerine GPT‑5.6 Cyber tabanlı gelişmiş siber güvenlik yetenekleri sağladı. Bu adım, hassas kamu altyapılarında güvenlik araştırması ve zafiyet doğrulama süreçlerini bulut ortamına entegre etmeyi kolaylaştırıyor.",
+  "detayli_icerik_tr": "OpenAI, daha önce Amazon Bedrock üzerinden erişilebilen Daybreak modellerini, AWS GovCloud (US-East) bölgesine genişletti. Bu genişleme sayesinde, onaylı müşteriler Daybreak Red aracılığıyla GPT‑5.6 Cyber modeline ulaşarak, yetkilendirilmiş zafiyet araştırması, exploit doğrulama ve güvenlik testleri gerçekleştirebilecek.\n\nDaybreak Red, OpenAI’nin siber güvenlik odaklı, amaç‑eğitilmiş modellerini sunar. GPT‑5.6 Cyber, karmaşık yazılım hatalarını analiz etme, kontrollü ortamda zafiyetleri yeniden üretme ve etkili önlemler geliştirme konularında savunma ekiplerine yardımcı olur. Ancak, önerilen düzeltmelerin uygulanmasından önce yetkili güvenlik uzmanları tarafından incelenmesi şarttır.\n\nDevlet kurumları için siber güvenlik çözümlerinin sadece performansla değil, aynı zamanda güvenlik, yönetişim ve operasyonel gereksinimlerle uyumlu olması gerekir. AWS GovCloud (US-East) entegrasyonu, bu gereksinimleri karşılayacak kimlik doğrulama, izleme ve erişim kontrol mekanizmalarıyla birlikte GPT‑5.6 Cyber'ün Amazon Bedrock üzerinden kullanılmasını mümkün kılıyor. Daybreak Red kullanımı sırasında üretilen çıkarım verileri model eğitimi için kullanılmaz ve müşterilerin verileri OpenAI ile paylaşılmaz.\n\nErişim sağlamak için OpenAI Daybreak Red onayı ve AWS tarafında gerekli yapılandırma adımları gerekir. İlgilenen kurumlar Daybreak başvuru formunu doldurmalı veya OpenAI ya da AWS hesap ekipleriyle iletişime geçerek uygunluklarını doğrulamalıdır. Onay alındıktan sonra, AWS ekipleriyle birlikte hizmeti etkinleştirmek gerekir; Daybreak Red onayı otomatik olarak AWS üzerinde model erişimini açmaz.",
+  "onemli_maddeler": [
+    "Daybreak Red, GPT‑5.6 Cyber modelini AWS GovCloud (US-East) bölgesinde sunarak devlet güvenlik ekiplerine bulut tabanlı siber güvenlik araçları sağlıyor.",
+    "Model, yetkili zafiyet araştırması, exploit doğrulama ve güvenlik testi gibi görevlerde kullanılabilir; veri çıkarımları model eğitimi için kullanılmaz.",
+    "Erişim için OpenAI Daybreak Red onayı ve AWS yapılandırması gereklidir; onay süreci ayrı bir başvuru ve ekip koordinasyonu içerir."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Güvenlik odaklı bir modelin resmi devlet bulut ortamına entegrasyonu, kamu sektörü siber savunma kapasitesini artırdığı için sektörde yüksek öneme sahiptir.",
+  "etiketler": [
+    "Güvenlik",
+    "AWS GovCloud",
+    "OpenAI",
+    "GPT-5.6 Cyber",
+    "Daybreak Red"
+  ],
+  "anilan_modeller": [
+    "GPT-5.6 Cyber"
+  ],
+  "yorum_tr": "Bu genişleme, devlet kurumlarının bulut tabanlı siber güvenlik çözümlerine güvenli ve uyumlu bir şekilde erişmesini sağlayarak, savunma süreçlerini hızlandırabilir ve veri gizliliği risklerini azaltabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://images.ctfassets.net/kftzwdyauwt9/5kxMZV1Js4071yUAa9rsyx/2ac76c7318411b493ec032afb3d7aaf9/daybreak-red-aws-govcloud-social.png?w=1600&h=900&fit=fill",
+  "url": "https://openai.com/index/daybreak-red-aws-govcloud",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-11-04T07:00:00.000Z",
+  "slug": "daybreak-red-is-now-available-in-aws-govcloud-us-east"
+}

@@ -1,0 +1,53 @@
+{
+  "baslik_tr": "Yeni açık kaynak benchmark, AI'nın bulut operasyonlarındaki en büyük darboğazının akıl yürütme olduğunu ortaya koydu",
+  "ozet_tr": "CloudOpsBench adlı yeni açık kaynak benchmark, AI ajanlarının bulut ortamındaki DevOps görevlerini ne kadar iyi yerine getirdiğini ölçüyor ve sonuçlar, akıl yürütme yeteneğinin hâlâ en büyük engel olduğunu gösteriyor.",
+  "detayli_icerik_tr": "CloudOpsBench, AI ajanlarının tipik DevOps görevlerini (servis onarımı, kaynak silme, erişim hakları kısıtlama, güncelleme dağıtımı ve proje kapatma) AWS üzerinde nasıl yönettiğini ölçen bir açık kaynak benchmark olarak tanıtıldı. İlk sürüm 1.0, deneyimli DevOps mühendisleri tarafından hazırlanmış 45 ayrı görevi içeriyor ve gerçek AWS bulutunda ve bir emülatörde aynı koşullarda çalıştırılıyor.\n\nBenchmark sonuçları, en iyi modellerin bile birçok görevi başaramadığını gösterdi. Claude Fable 5.1 yüzde 60 başarı oranı yakalarken, GPT-6 Astra yüzde 53 oranla geride kaldı; hiçbir model tüm görevleri eksiksiz tamamlayamadı. Bu durum, mevcut AI sistemlerinin bulut operasyonlarındaki karmaşık senaryolara hâlâ tam anlamıyla uyum sağlayamadığını ortaya koyuyor.\n\nYapılan hata analizi, başarısızlıkların %80'inin akıl yürütme hatalarından kaynaklandığını belirledi. Modeller, görev kapsamını yanlış değerlendiriyor, ilgili hizmetleri tam taramıyor ya da işlemi erken sonlandırıyor. Kalan %20'lik kısım ise yanlış eylemlerden oluşuyor; bu hatalar bazen altyapıya geri dönüşü olmayan zararlar verebiliyor.\n\nProje, Apache 2.0 lisansı altında GitHub'da yayınlanmış durumda ve GCP, Azure ve OCI gibi diğer bulut sağlayıcıları için uzantılar planlanıyor. Ayrıntılı bir hata analizi raporu da toplulukla paylaşılarak, araştırmacıların ve geliştiricilerin modellerini bu kritik akıl yürütme eksikliklerini giderecek şekilde iyileştirmeleri hedefleniyor.",
+  "onemli_maddeler": [
+    "CloudOpsBench, AWS üzerinde 45 gerçek dünya DevOps görevini ölçen ilk açık kaynak benchmark olarak sunuldu.",
+    "En iyi model Claude Fable 5.1 yüzde 60, GPT-6 Astra ise yüzde 53 başarı oranı elde etti; hiçbir model tüm görevleri tamamlayamadı.",
+    "Başarısızlıkların %80'i akıl yürütme hatalarından, %20'si ise geri dönüşü olmayan yanlış eylemlerden kaynaklandı.",
+    "Benchmark, Apache 2.0 lisansı altında açık kaynak olarak yayınlandı ve GCP, Azure, OCI uzantıları planlanıyor."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "AI destekli bulut yönetiminde akıl yürütme yeteneklerinin kritik bir eksikliği olduğunu gösteren kapsamlı bir benchmark olması, araştırmacı ve geliştiriciler için yönlendirici bir veri seti sunması nedeniyle yüksek önem taşımaktadır.",
+  "etiketler": [
+    "AI",
+    "bulut",
+    "DevOps",
+    "benchmark",
+    "Claude"
+  ],
+  "anilan_modeller": [
+    "Claude Fable 5.1",
+    "GPT-6 Astra"
+  ],
+  "yorum_tr": "Bu benchmark, AI destekli bulut yönetiminde akıl yürütme yeteneklerinin iyileştirilmesi gerektiğini net bir şekilde ortaya koyuyor. Geliştiriciler, modellerini daha güçlü mantıksal zincirler ve kapsamlı durum takibi üzerine odaklayarak performansı artırabilir; kullanıcılar ise mevcut sınırlamaları göz önünde bulundurarak otomasyon seviyesini ayarlamalı.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Claude Fable 5.1",
+      "benchmark": "CloudOpsBench",
+      "skor": 60,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Claude Fable 5.1 solved 60 percent"
+    },
+    {
+      "model": "GPT-6 Astra",
+      "benchmark": "CloudOpsBench",
+      "skor": 53,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "GPT-6 Astra managed 53 percent"
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2025/02/Huginn-RM-title.png",
+  "url": "https://the-decoder.com/new-open-source-benchmark-reveals-reasoning-as-the-biggest-bottleneck-for-ai-in-cloud-operations/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-04T16:42:52.000Z",
+  "slug": "new-open-source-benchmark-reveals-reasoning-as-the-biggest-b"
+}

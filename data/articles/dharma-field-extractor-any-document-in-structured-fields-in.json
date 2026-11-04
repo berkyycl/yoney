@@ -1,0 +1,64 @@
+{
+  "baslik_tr": "Dharma Field Extractor: Her Belge Girişi, JSON Çıktısında Yapılandırılmış Alanlar",
+  "ozet_tr": "Dharma-AI, 2 milyar parametreli yeni bir model olan Dharma Field Extractor'ı tanıttı. Model, belge görüntülerinden istenen alanları doğrudan JSON formatında döndürerek OCR sonrası manuel haritalamaya gerek kalmadan yüksek doğruluk ve düşük maliyet vaat ediyor.",
+  "detayli_icerik_tr": "Dharma-AI, Nisan ayında yayımladığı OCR odaklı DharmaOCR-LITE modelinin üzerine inşa edilen ve 2 milyar parametreye sahip Dharma Field Extractor'ı duyurdu. Model, bir belge görüntüsünü alıp ya tüm bulunabilir alanları otomatik olarak çıkartıyor ya da kullanıcı tarafından tanımlanan şemaya göre tam olarak istenen alanları dolduruyor; sonuçlar tiplenmiş, iç içe geçmiş JSON yapısı olarak sunuluyor. Bu sayede fatura satırları, kimlik bilgileri ya da tıbbi istek formları gibi farklı belge tiplerinden sadece gerekli veriler doğrudan veri tabanına aktarılabiliyor.\n\nModel, temelini DharmaOCR-LITE v1.1'den alıyor ve üzerine 43.384 örnekten oluşan bir LoRA adaptörüyle eğitildi. Eğitim verileri üç akıştan oluşuyor: İngilizce çoklu alan verileri, Brezilya'ya özgü Portekizce belgeler ve diğer Avrupa‑Asya dillerini kapsayan çok dilli veri seti. Tüm veri setleri alan seviyesinde etiketlenmiş; fatura, makbuz, kimlik, banka ekstresi gibi çeşitli belge türlerini içeriyor. Bu çok alanlı yaklaşım, modelin tek bir checkpoint üzerinden farklı belge tiplerini ince ayar yapmadan işleyebilmesini sağlıyor.\n\nBenchmark testleri 546 belge ve 1.638 senaryo üzerinden gerçekleştirildi. Model, alan‑seviye F1 skoru, Levenshtein benzerliği ve geçerli JSON oranı çarpımıyla 0.834 puan elde ederken, en yakın rakibi Claude Opus 5 0.816, GPT‑5.6 Luna ise 0.741 puan aldı. Maliyet açısından ise aynı görevde GPT‑5.6 Luna'ya göre yaklaşık 6 kat, GPT‑5.6 Sol'a göre ise 147 kat daha düşük bir GPU saat maliyeti (L40S $2.24/saat) gösterdi. Bu sonuçlar, dar bir görev için özel olarak eğitilmiş küçük bir modelin, genel amaçlı büyük modelleri kalite ve maliyet açısından geride bırakabildiğini kanıtlıyor.\n\nDharma Field Extractor, açık bir şema kullanılmadığında belge içindeki etiket‑değer çiftlerini otomatik keşfederken, şema‑yönlendirmeli modda tam olarak istenen alanları ve tiplerini (string, number, boolean) döndürüyor; eksik alanlar null olarak işaretleniyor. Bu esneklik, yüksek hacimli iş akışlarında API maliyetlerini ve gecikmeleri azaltarak işletmelerin belge işleme süreçlerini daha verimli hâle getiriyor.",
+  "onemli_maddeler": [
+    "2 milyar parametreli model, tüm sınadıkları frontier LLM'leri kalite açısından geride bırakarak %0.834 F1 skoru elde etti.",
+    "Maliyet, aynı görevde GPT‑5.6 Luna'ya göre 6‑147 kat daha düşük; self‑hosted GPU saat ücreti $2.24 olarak belirtiliyor.",
+    "Model, açık ve şema‑yönlendirmeli iki modda çalışarak belge alanlarını doğrudan tiplenmiş JSON olarak sunuyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Küçük, görev‑özel bir modelin büyük genel‑amaçlı LLM'leri kalite ve maliyet açısından geride bırakması, belge işleme pazarında rekabeti ve altyapı maliyetlerini kökten değiştirebilir.",
+  "etiketler": [
+    "field extraction",
+    "OCR",
+    "LLM",
+    "DharmaAI",
+    "JSON"
+  ],
+  "anilan_modeller": [
+    "DharmaOCR-LITE v1.1",
+    "Dharma Field Extractor",
+    "Claude Opus 5",
+    "GPT-5.6 Luna",
+    "GPT-5.6 Sol"
+  ],
+  "yorum_tr": "Bu model, yüksek hacimli belge işleme ihtiyacı olan şirketler için hem maliyet hem de performans açısından yeni bir standart belirleyebilir; geliştiriciler artık büyük API'lere bağımlı kalmadan kendi altyapılarında benzer ya da daha iyi sonuçlar elde edebilecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Dharma Field Extractor",
+      "benchmark": "Custom Field Extraction Benchmark",
+      "skor": 0.834,
+      "birim": "",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "field-level F1 * Levenshtein similarity * valid JSON share",
+      "kaynak_metinden_alinti": "A 2-billion-parameter model scored 0.834, above every frontier configuration we tested, from Claude Opus 5 at 0.816 to GPT-5.6 Luna at 0.741"
+    },
+    {
+      "model": "Claude Opus 5",
+      "benchmark": "Custom Field Extraction Benchmark",
+      "skor": 0.816,
+      "birim": "",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "field-level F1 * Levenshtein similarity * valid JSON share",
+      "kaynak_metinden_alinti": "Against general-purpose LLMs, the quality gap runs from 1.8 points (Claude Opus 5, the closest) to 9.3 points (GPT-5.6 Luna, the widest)."
+    },
+    {
+      "model": "GPT-5.6 Luna",
+      "benchmark": "Custom Field Extraction Benchmark",
+      "skor": 0.741,
+      "birim": "",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "field-level F1 * Levenshtein similarity * valid JSON share",
+      "kaynak_metinden_alinti": "Against general-purpose LLMs, the quality gap runs from 1.8 points (Claude Opus 5, the closest) to 9.3 points (GPT-5.6 Luna, the widest)."
+    }
+  ],
+  "gorsel_url": "https://cdn-uploads.huggingface.co/production/uploads/6a725daa5ca641a21ab61956/c1ik58RednXjcqrx5s2Fo.png",
+  "url": "https://huggingface.co/blog/Dharma-AI/dharma-field-extractor",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-11-04T17:50:10.000Z",
+  "slug": "dharma-field-extractor-any-document-in-structured-fields-in"
+}

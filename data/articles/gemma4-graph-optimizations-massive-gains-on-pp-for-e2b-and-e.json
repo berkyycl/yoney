@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "Gemma4 için ggml-org/llama.cpp'ye Grafik Optimizasyonları: E2B ve E4B Kuantizasyonlarında Büyük Performans Artışı",
+  "ozet_tr": "ggml-org/llama.cpp deposuna eklenen yeni pull request, Gemma4 modelinin E2B (2‑bit) ve E4B (4‑bit) kuantizasyonlarında grafik tabanlı optimizasyonlar sunuyor. Bu iyileştirmeler, özellikle prompt‑processing (pp) aşamasında belirgin hız kazançları sağlıyor. Geliştiriciler, aynı donanımda daha düşük gecikme ve daha yüksek verimlilik elde edebilecek.",
+  "detayli_icerik_tr": "ggml-org/llama.cpp projesine max‑krasnyansky tarafından gönderilen #31356 numaralı pull request, Gemma4 modelinin çalışma grafiğini yeniden yapılandırarak bellek akışını ve işlem sırasını optimize ediyor. Özellikle E2B ve E4B kuantizasyon modlarında, grafik optimizasyonları sayesinde ara katmanların yeniden düzenlenmesi ve gereksiz veri kopyalarının ortadan kaldırılması hedefleniyor.\n\nBu değişiklikler, Gemma4'ün prompt‑processing (pp) sürecinde önemli bir performans artışı vaat ediyor. Geliştiriciler, aynı CPU/GPU kaynaklarıyla daha fazla token işleyebilecek ve yanıt süresi önemli ölçüde azalacak. Optimizasyonlar, ggml'in düşük‑bit kuantizasyon yeteneklerini korurken, işlem grafiğinin daha verimli yürütülmesini sağlıyor.\n\nLlama.cpp topluluğu, bu güncellemeyi özellikle yerel LLM dağıtımları ve düşük kaynaklı cihazlarda çalışan araştırmacılar için kritik bir adım olarak değerlendiriyor. Pull request, açık kaynak kod tabanına doğrudan katkı sağladığı için, diğer model ve kuantizasyon tiplerine de benzer iyileştirmelerin uygulanabileceği bir şablon sunuyor.\n\nGüncelleme, henüz resmi sürümde yer almamakla birlikte, geliştiricilere test amaçlı olarak master dalından derleme yapma imkanı tanıyor. Topluluk, performans ölçümlerini ve geribildirimleri paylaşarak optimizasyonların daha da rafine edilmesini hedefliyor.",
+  "onemli_maddeler": [
+    "Gemma4'ün E2B ve E4B kuantizasyonlarında grafik tabanlı optimizasyonlar eklendi.",
+    "Prompt‑processing (pp) aşamasında belirgin hız kazançları sağlanıyor.",
+    "Optimizasyonlar, düşük‑bit kuantizasyonların bellek ve işlem verimliliğini artırıyor.",
+    "Llama.cpp topluluğu, bu güncellemeyi yerel LLM dağıtımları için kritik bir iyileştirme olarak görüyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Gemma4 gibi popüler açık kaynak LLM'lerin düşük‑bit kuantizasyon performansını artırması, geniş bir geliştirici kitlesi ve düşük kaynaklı cihazlar için önemli bir verimlilik kazancı sağlıyor.",
+  "etiketler": [
+    "Gemma4",
+    "llama.cpp",
+    "grafik optimizasyonu",
+    "kuantizasyon",
+    "açık kaynak"
+  ],
+  "anilan_modeller": [
+    "Gemma4"
+  ],
+  "yorum_tr": "Bu optimizasyon, Gemma4'ün düşük‑bit kuantizasyonlarda daha hızlı çalışmasını sağlayarak, yerel dağıtımların ölçeklenebilirliğini artırıyor. Geliştiriciler, aynı donanımda daha yüksek yanıt hızı elde ederken, topluluk da kod tabanına katkı yapma fırsatı buluyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/RjgfsmDgPzKbigszPlsO5md7O0FzZxk9NWj1nOBMGx4.png?width=640&crop=smart&auto=webp&s=834a58a733ae9fd7a24f7145651dd68a43ba439e",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xn6mm0/gemma4_graph_optimizations_massive_gains_on_pp/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-03T22:02:49.000Z",
+  "slug": "gemma4-graph-optimizations-massive-gains-on-pp-for-e2b-and-e"
+}

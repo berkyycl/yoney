@@ -1,0 +1,40 @@
+{
+  "baslik_tr": "Anthropic'in metin watermark'ı eski Claude modellerinde kolayca atlatılabiliyor",
+  "ozet_tr": "Anthropic, Claude Opus 4.6, Opus 4.5, Sonnet 4.5 ve Haiku 4.5 modellerine 16 Kasım 2026 itibarıyla metin watermark'ı ekledi. Ancak iki eski modelde (Opus 4.6 ve Sonnet 4.6) watermark, sadece varsayılan sıcaklık, top_p ve top_k ayarlarıyla etkinleşiyor; bu parametrelerden birini değiştirmek işareti tamamen yok ediyor.",
+  "detayli_icerik_tr": "Anthropic, EU AI Act'in Aralık 2026 son tarihine uyum sağlamak amacıyla dört eski Claude modeline (Claude Opus 4.6, Claude Opus 4.5, Claude Sonnet 4.5 ve Claude Haiku 4.5) metin watermark'ı ekledi. İlk dalga modelleri (Claude Mythos 5, Claude Opus 4.7, Claude Opus 4.6 ve Claude Sonnet 4.6) 3 Kasım'da su işaretini almışken, yeni duyuruda Opus 4.6 ve diğer üç modelin uygulama tarihi 16 Kasım olarak gecikti.\n\nWatermark, modelin kelime seçimindeki rastgeleliği hafifçe değiştirerek okunabilir bir desen oluşturuyor; bu, anlamı, kaliteyi veya okunurluğu etkilemiyor ve ek token ya da maliyet getirmiyor. Ancak Opus 4.6 ve Sonnet 4.6 modellerinde watermark yalnızca sıcaklık, top_p ve top_k parametreleri varsayılan değerlerdeyken devreye giriyor. Geliştiriciler bu parametrelerden birini bile değiştirirse işaret tamamen ortadan kalkıyor ve metin tespit API'siyle de algılanamaz.\n\nAnthropic, yeni watermark'ın tüm platformlarda (AWS, Google Cloud, Microsoft Foundry) zorunlu olduğunu ve devre dışı bırakılamayacağını vurguluyor. Şirket, watermark'ı tespit etmek için hâlihazırda özel bir API'yi ön izleme aşamasında sunuyor ve içerik etiketleme sayfasında daha fazla teknik bilgi sağlıyor. Bu adım, 2 Ağustos 2026 sonrası piyasaya sürülen modellerin (ör. Claude Opus 5.5) ilk günden itibaren watermark taşımasıyla tutarlı bir strateji izliyor.\n\nOpenAI, aynı dönemde EU kullanıcıları için varsayılan olarak etkinleştirilen \"textGrain\" adlı bir watermark sunarken, Google DeepMind ise SynthID'yi açık kaynak yapıp Gemini modellerine entegre etti. Uzmanlar, watermark'ın metin kalitesine etkisi konusunda farklı görüşler taşıyor; bazıları kelime seçimindeki hafif sapmanın anlam bütünlüğünü zedeleyebileceğini savunurken, yasal danışmanlar birden fazla watermark'ın aynı belgede bulunmasının uyumluluk ve gizlilik risklerini artırabileceğini belirtiyor.",
+  "onemli_maddeler": [
+    "Anthropic, dört eski Claude modeline 16 Kasım 2026'da metin watermark'ı ekledi.",
+    "Opus 4.6 ve Sonnet 4.6 modellerinde watermark, sadece varsayılan sıcaklık, top_p ve top_k ayarlarıyla çalışıyor; bir parametre değişikliği işareti tamamen ortadan kaldırıyor.",
+    "Watermark, EU AI Act uyumluluğu için zorunlu ve tüm bulut platformlarında devre dışı bırakılamaz.",
+    "Anthropic, watermark tespiti için özel bir API sunuyor; OpenAI ve Google DeepMind da benzer sistemler geliştiriyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "EU AI Act uyumluluğu ve geliştiricilerin güvenlik önlemlerine güveni açısından kritik bir güncelleme; aynı zamanda watermark'ın teknik sınırlamaları geliştiricileri doğrudan etkiliyor.",
+  "etiketler": [
+    "Claude",
+    "Anthropic",
+    "watermark",
+    "EU AI Act",
+    "API"
+  ],
+  "anilan_modeller": [
+    "Claude Opus 4.6",
+    "Claude Opus 4.5",
+    "Claude Sonnet 4.5",
+    "Claude Haiku 4.5",
+    "Claude Mythos 5",
+    "Claude Opus 4.7",
+    "Claude Sonnet 4.6",
+    "Claude Opus 5.5"
+  ],
+  "yorum_tr": "Bu güncelleme, geliştiricilerin watermark'ı varsayılan ayarlarla kullanmalarını zorunlu kılarak uyumluluk riskini azaltırken, parametre ayarlarını değiştiren uygulamalarda güvenlik boşlukları yaratıyor. Uzun vadede, watermark teknolojisinin kalite üzerindeki etkisi ve çoklu işaretlerin yönetimi sektörde yeni standartların oluşmasına yol açabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/08/Claude-Watermark.png",
+  "url": "https://the-decoder.com/anthropics-text-watermark-is-easy-to-bypass-on-several-older-claude-models/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-04T19:03:55.000Z",
+  "slug": "anthropic-s-text-watermark-is-easy-to-bypass-on-several-olde"
+}

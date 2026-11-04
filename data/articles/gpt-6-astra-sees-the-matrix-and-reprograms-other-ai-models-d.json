@@ -1,0 +1,55 @@
+{
+  "baslik_tr": "GPT-6 Astra, ağırlıklar üzerinden diğer yapay zeka modellerini doğrudan yeniden programlıyor",
+  "ozet_tr": "MIT araştırmacıları, GPT-6 Astra'nın diğer yapay zeka modellerinin ağırlıklarını doğrudan okuyup değiştirebildiğini gösterdi. Bu \"Weight‑Space Programming\" yöntemi, geleneksel yeniden eğitim ihtiyacını ortadan kaldırarak model ayarlamalarını çok daha hızlı ve maliyet etkin hale getirebilir.",
+  "detayli_icerik_tr": "MIT araştırmacıları, OpenAI'nin GPT-6 Astra modelini kullanarak \"Weight‑Space Programming\" adı verilen yeni bir yaklaşımı denedi. Bu yöntemde, bir dil modeli, başka bir yapay zeka modelinin ağırlık matrislerini doğrudan analiz eder ve gerektiğinde tek tek \"düğmeleri\" çevirerek davranışlarını değiştiriyor. Geleneksel eğitim sürecinde milyonlarca adım ve büyük veri setleri gerekirken, Astra sadece birkaç yüz test yinelemesiyle hedef modelin performansını iyileştirebiliyor.\n\nİlk deneylerde, Astra'ya dört farklı bilgisayar oyununu oynayan önceden eğitilmiş ağların ham ağırlıkları verildi ve hangi oyunu oynadıkları soruldu. Model, doğru oyunu %100 oranında tanımladı ve aynı zamanda bir görüntü üreteci tarafından oluşturulan temel şekilleri de tanıyabildi, ancak dolu şekilleri hatalı olarak dış hatlarla karıştırdı. Küçük dil modellerinin eğitim dilini de ağırlıklardan çıkararak tespit edebildi; ancak iki ince ayarlı model arasındaki farkı yalnızca ağırlıklarla ayırt edemedi, modelin dikkat mekanizmalarını da gözlemlemesi gerekti.\n\nAstra, oyun kurallarını ve kaynak kodunu temel alarak tamamen yeni ağırlık setleri üretti ve bu ağırlıklarla oluşturulan modelleri geleneksel eğitimle elde edilen modellerle karşılaştırdı. Breakout oyununda Astra'nın modeli ortalama 517 puan alırken, aynı görevde eğitilmiş temel model sadece 25 puan elde etti. Diğer iki oyunda ise en uzun sürede eğitilmiş modelleri geride bırakamadı. 9x9 Go tahtasında ise 1,5 milyon parametreli bir ağın ağırlıklarını 50 test yinelemesiyle optimize ederek, 20 milyon oyunla eğitilmiş bir rakibe üstünlük sağladı.\n\nEn pratik uygulama, 0,8 milyar parametreli Qwen3.5 modelinin matematik yeteneklerini iyileştirmek oldu. Astra, sadece %0,016'lik bir ağırlık değişikliğiyle MATH-500 benchmark'ında doğruluk oranını %7,9'dan %48,1'e yükseltti ve talimat‑takibi başarısını %21'den %62'ye çıkardı. Ancak model hâlâ \"düşünme döngüleri\" adı verilen, yanıtları kesintisiz uzatan hataları tamamen ortadan kaldıramadı. Daha küçük bir model (Gemma 3 270M) üzerinde benzer bir iyileştirme elde edilemedi.\n\nAraştırmacılar, bu yöntemin güvenlik denetimleri, hedefli davranış değişiklikleri ve maliyetli yeniden eğitim ihtiyacının azaltılması gibi alanlarda büyük potansiyele sahip olduğunu vurguluyor. Yine de yeteneklerin hâlâ sınırlı olduğu ve sistematik ölçüm için yeni benchmark'ların geliştirilmesi gerektiği belirtiliyor. Deney logları GitHub'da, düzenlenmiş Qwen modeli ise Hugging Face'de yayınlandı.",
+  "onemli_maddeler": [
+    "GPT-6 Astra, diğer modellerin ağırlıklarını doğrudan okuyup değiştirerek \"Weight‑Space Programming\" yöntemini kanıtladı.",
+    "Breakout oyununda Astra'nın ağırlık‑türetilen modeli 517 puan alarak geleneksel eğitimli modeli 25 puandan çok geride bıraktı.",
+    "Qwen3.5-0.8B modelinin sadece %0,016'luk ağırlık değişikliğiyle MATH-500 doğruluğu %7,9'dan %48,1'e yükseltildi."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "Model ağırlıklarını doğrudan manipüle edebilme yeteneği, AI geliştirme ve güvenlik süreçlerini kökten değiştirebilir; bu da sektördeki araştırma ve uygulama yönelimlerini yeniden şekillendirecek kadar kritik bir adım.",
+  "etiketler": [
+    "GPT-6 Astra",
+    "Weight-Space Programming",
+    "Model Tuning",
+    "AI Research",
+    "MIT"
+  ],
+  "anilan_modeller": [
+    "GPT-6 Astra",
+    "Qwen3.5-0.8B",
+    "Gemma 3 270M",
+    "Breakout",
+    "Go (9x9)"
+  ],
+  "yorum_tr": "Bu bulgu, model güncellemelerinin maliyetini ve zamanını dramatik şekilde azaltarak geliştiricilere daha esnek bir kontrol mekanizması sunabilir; aynı zamanda güvenlik denetimlerinde ağırlık seviyesinde ince ayar yapma imkanı sağlayarak risk yönetimini güçlendirebilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GPT-6 Astra",
+      "benchmark": "Breakout (points)",
+      "skor": 517,
+      "birim": "points",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "In Breakout, Astra's model scored an average of 517 points versus 25 for the trained baseline."
+    },
+    {
+      "model": "Qwen3.5-0.8B (after Astra weight edit)",
+      "benchmark": "MATH-500 accuracy",
+      "skor": 48.1,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Accuracy on the MATH-500 benchmark jumped from 7.9 to 48.1 percent after Astra modified 0.016 percent of the weights."
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/11/Weight-Space-Programming.png",
+  "url": "https://the-decoder.com/gpt-6-astra-sees-the-matrix-and-reprograms-other-ai-models-directly-through-their-weights/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-04T15:44:44.000Z",
+  "slug": "gpt-6-astra-sees-the-matrix-and-reprograms-other-ai-models-d"
+}

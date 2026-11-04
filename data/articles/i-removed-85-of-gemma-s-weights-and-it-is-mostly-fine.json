@@ -1,0 +1,52 @@
+{
+  "baslik_tr": "Gemma 26B MoE Modelinin %85 Ağırlığı Kaldırıldı, Performans Çoğu Görevde Yeterli",
+  "ozet_tr": "Bir geliştirici, Gemma 4 26B-A4B MoE modelinin ağırlıklarının %85'ini kaldırarak sadece %15'ini bıraktı ve sınıflandırma görevinde orijinal modelle %92 oranında aynı sonuç elde etti. Bu küçültülmüş model, aynı cihazda iki kat daha hızlı çalışıyor ve bellek tüketimini yarıya indiriyor.",
+  "detayli_icerik_tr": "Reddit topluluğu LocalLLaMA'da paylaşılan bir gönderide, /u/Accomplished_Ad_56, Gemma 4 26B-A4B adlı bir MoE (Mixture of Experts) modelini %85 oranında budayarak sadece %15'ine indirdi. Bu işlem sonucunda model, 8 uzman (expert) katmanı seçilerek tüm katmanlarda aynı 8 uzman kullanıldı; böylece yönlendirici (router) artık seçim yapmadığı için model yoğun (dense) bir yapıya dönüştü ve parametre sayısı 3.81 milyar, quantize edilmiş haliyle 2.75 GB bellek tüketimi sağladı.\n\nKüçültülmüş model, dar bir sınıflandırma görevinde orijinal modelle %92 oranında aynı yanıtı verdi. Bu oran, 12 B modelinin 26 B modeline göre %90 uyum göstermesiyle karşılaştırıldığında oldukça yakın. Ancak geliştirici, bu modelin genel görevlerde ve bilgi gerektiren uygulamalarda performansının düşebileceğini, çünkü bilgi tabanının büyük bir kısmının budanmış olduğunu belirtti.\n\nPerformans açısından, model Mac üzerinde 79 token/sn hızla çalışıyor; bu, aynı cihazda 12 B modelinin hızının yaklaşık iki katı. Bellek tüketimi ise 3.8 GB, yani orijinal modelin yarısı. Geliştirici, bu yöntemin kullanıcıların kendi cihazlarında, kendi verileriyle yaklaşık 5 GB bellek kullanarak ince ayar yapabilmesine olanak tanıyacağını, ancak henüz gerçek kullanıcı cihazlarında test edilmediğini ifade etti.\n\nBu yaklaşım, blok‑yerel eğitim (block‑local training) kullanarak modelin aynı girdiye aynı çıktıyı üretmesini hedefliyor; yani cevap yerine düşünce sürecinin aynı olmasını sağlamak amaçlanıyor. Yöntemin detayları ve tasarım gerekçeleri, geliştiricinin tolby.app üzerindeki blog yazısında (\"Frankensteining Gemma's Experts\") daha ayrıntılı olarak açıklanıyor.",
+  "onemli_maddeler": [
+    "Gemma 26B modelinin %85'i kaldırıldı, parametre sayısı 3.81 B'ye düştü.",
+    "Dar bir sınıflandırma görevinde orijinal modelle %92 uyum sağlandı.",
+    "Mac'te 79 token/sn hızla çalışarak 12 B modelinin iki katı performans gösterdi."
+  ],
+  "kategori": "guncelleme",
+  "onem": 3,
+  "onem_gerekce": "Topluluk tarafından yapılan bir model optimizasyonu; on‑device LLM uygulamaları için ilgi çekici ancak sektörel çapta geniş bir etki yaratması henüz sınırlı.",
+  "etiketler": [
+    "Gemma",
+    "pruning",
+    "MoE",
+    "on-device",
+    "LLM"
+  ],
+  "anilan_modeller": [
+    "Gemma 4 26B-A4B",
+    "Gemma 12B"
+  ],
+  "yorum_tr": "Bu tür ağırlık budama teknikleri, sınırlı kaynaklı cihazlarda büyük modelleri çalıştırmak için değerli bir yol sunuyor; ancak bilgi yoğun görevlerde performans kaybı riski hâlâ mevcut.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Gemma 4 26B-A4B (pruned)",
+      "benchmark": "Classification agreement with original",
+      "skor": 92,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "agreement with original model on a classification task",
+      "kaynak_metinden_alinti": "It gets 92% agreement with the original on a classification task."
+    },
+    {
+      "model": "Gemma 4 26B-A4B (pruned)",
+      "benchmark": "Token generation speed on Mac",
+      "skor": 79,
+      "birim": "tokens/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Mac performance",
+      "kaynak_metinden_alinti": "On my Mac it hits 79 tokens/s, which is roughly double the speed of the 12B."
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/moelxv5iplzh1.png?width=640&crop=smart&auto=webp&s=fb560db17d4a8a1ccc24873a93776a3c54ac9f0c",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xnoqyy/i_removed_85_of_gemmas_weights_and_it_is_mostly/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-04T13:53:30.000Z",
+  "slug": "i-removed-85-of-gemma-s-weights-and-it-is-mostly-fine"
+}

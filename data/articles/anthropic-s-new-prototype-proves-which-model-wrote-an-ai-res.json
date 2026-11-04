@@ -1,0 +1,43 @@
+{
+  "baslik_tr": "Anthropic, model ağırlıklarını ifşa etmeden yanıtın hangi modelden geldiğini kanıtlayan FlashProve prototipini duyurdu",
+  "ozet_tr": "Anthropic, AI yanıtının iddia edilen modelden geldiğini gizli ağırlıkları açığa çıkarmadan kanıtlayan FlashProve adlı araştırma prototipini açık kaynak olarak yayınladı. Sistem, zkSNARK tabanlı kriptografik kanıtlar üreterek modelin dijital parmak izini doğruluyor ve bu sayede hizmet sağlayıcıların yanıtları manipüle etme riskine karşı bir denetim mekanizması sunuyor.",
+  "detayli_icerik_tr": "Anthropic, yeni araştırma prototipi FlashProve'i tanıttı. FlashProve, model sağlayıcısının ağırlıklarının dijital bir parmak izini oluşturup, her yanıtla birlikte bu iz üzerinden bir zkSNARK kanıtı sunmasını sağlıyor. Kanıt, modelin ağırlıklarını ifşa etmeden yalnızca belirli bir modelin çıktısını ürettiğini gösteriyor. Bu yaklaşım, bir yönlendirme hizmetinin daha ucuz bir modele geçiş yapmasını veya bir saldırganın veri akışını manipüle etmesini önlemek için düzenleyicilere ve hizmet sağlayıcılara yeni bir doğrulama aracı sunuyor.\n\nTeknik rapora göre, FlashProve tek bir NVIDIA H100 GPU üzerinde Meta'nın 400 milyar parametreli Llama 4 Maverick modeli için saniyede yaklaşık 110 token kanıtı üretebiliyor. Oluşturulan kanıtın boyutu yaklaşık 19 MB ve standart bir CPU üzerinde 17 saniyede doğrulanabiliyor. Bu, normal çıkarım süresine göre 70‑95 katlık bir ek yük anlamına geliyor; ancak önceki açık kaynak sistemin 1.000 tokeni işlemek için 14 saat harcaması ve 93,6 GB kanıt üretmesiyle karşılaştırıldığında büyük bir ilerleme.\n\nFlashProve hâlâ bir araştırma prototipi olduğu için sınırlamaları bulunuyor. Kanıt yalnızca 1.024 tokene kadar bağlamı kapsayabiliyor ve modelin en olası bir sonraki tokeni seçmesi durumunda çalışıyor; yani tipik sohbet botlarında kullanılan rastgele örnekleme yöntemleri desteklenmiyor. Ayrıca modelin mimarisi gizli tutulmuyor, sadece ağırlıklar korunuyor. Tüm kod, Lean kanıtları ve dokümantasyon Apache 2.0 lisansı altında GitHub'da yayınlandı.\n\nAnthropic, bu prototipi düzenleyicilerin onaylı modelleri gerçekten çalıştırıp çalıştırmadığını kontrol etme, şirketlerin güvenlik modelleriyle kod incelemesi yaptığını kanıtlama ve sunuculardaki olası saldırı ya da yetkisiz model eklemelerini tespit etme gibi senaryolarda kullanılabileceğini belirtiyor. Şirket, aynı hedefe yönelik ayrı bir proje ile güvenilir donanım gerektirmeyen bir trafik imzalama çözümü geliştirdiğini ve FlashProve'in tamamen kriptografik bir yaklaşım sunduğunu vurguluyor.",
+  "onemli_maddeler": [
+    "FlashProve, zkSNARK kullanarak modelin ağırlıklarını ifşa etmeden yanıtın hangi modelden geldiğini kanıtlıyor.",
+    "Tek bir H100 GPU üzerinde Llama 4 Maverick için saniyede 110 token kanıtı üretiliyor; kanıt boyutu 19 MB, doğrulama süresi 17 saniye.",
+    "Prototip sadece 1.024 tokene kadar bağlamı ve deterministik (en olası token) çıktıyı destekliyor; rastgele örnekleme ve geniş bağlamlar henüz mümkün değil.",
+    "Kod ve belgeler Apache 2.0 lisansı altında açık kaynak olarak GitHub'da sunuldu."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "FlashProve, model doğrulama ve düzenleyici denetim için yeni bir kriptografik araç sunarak AI hizmetlerinde güveni artırma potansiyeline sahip, ancak hâlâ sınırlı bağlam ve deterministik çıktı gereksinimi nedeniyle henüz geniş çapta uygulanabilir değil.",
+  "etiketler": [
+    "zkSNARK",
+    "model doğrulama",
+    "AI güvenliği",
+    "Anthropic",
+    "FlashProve"
+  ],
+  "anilan_modeller": [
+    "Meta's Llama 4 Maverick"
+  ],
+  "yorum_tr": "FlashProve, AI yanıtlarının kaynağını kanıtlamak isteyen düzenleyiciler ve şirketler için önemli bir adım olsa da, mevcut sınırlamaları nedeniyle günlük sohbet uygulamalarında doğrudan kullanılabilirliği sınırlı kalacak. Teknolojinin olgunlaşması ve daha geniş bağlam desteği eklenmesi, sektörde daha yaygın bir benimsenmeye yol açabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Meta's Llama 4 Maverick",
+      "benchmark": "Proof generation speed",
+      "skor": 110,
+      "birim": "tokens/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "single H100 GPU",
+      "kaynak_metinden_alinti": "FlashProve generates proofs at roughly 110 tokens per second on a single H100 GPU for Meta's Llama 4 Maverick"
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/11/Anthropic-FlashProve.webp",
+  "url": "https://the-decoder.com/anthropics-new-prototype-proves-which-model-wrote-an-ai-response-without-exposing-its-weights/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-04T15:23:49.000Z",
+  "slug": "anthropic-s-new-prototype-proves-which-model-wrote-an-ai-res"
+}

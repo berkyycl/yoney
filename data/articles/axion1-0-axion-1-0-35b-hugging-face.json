@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "Axion 1.0: Açık Kaynaklı Ajan Temelli Modelin Tanıtımı",
+  "ozet_tr": "ByteDance tarafından duyurulan Axion 1.0, sadece üç aşamalı bir eğitim süreciyle güçlü ve geniş kapsamlı ajan yetenekleri sunan tamamen açık bir temel modeldir. Model, hafif süpervised ince ayar ve takviye öğrenme adımlarıyla uzun vadeli akıl yürütme ve araç entegrasyonunda rekabetçi performans sergiliyor. Açık veri, kod ve eğitim tarifesi sayesinde topluluk, modeli yeniden üretip geliştirebilecek.",
+  "detayli_icerik_tr": "ByteDance araştırma ekibi, Axion 1.0'ı sadece üç aşamada eğiterek geleneksel büyük dil modellerinin karmaşık eğitim boru hatlarını sadeleştirdi. İlk süpervised ince ayar (SFT) aşamasında, modelin kendi başarılı çözüm stratejilerini kullanarak zorlu problemler sentezleniyor ve bu problemler adversarial olarak güçlendiriliyor; bu sayede modelin bağımsız akıl yürütme yeteneği artırılıyor.\n\nİkinci aşamada, aynı SFT prosedürü araç‑bağımlı akıl yürütmeye genişletiliyor. Gerçek dünya veri kaynakları ve deterministik hesaplamalar üzerinden otomatik olarak doğrulanabilir görevler oluşturuluyor; böylece model, dış araçları ve API'leri etkin bir şekilde kullanmayı öğreniyor. Üçüncü ve son aşama takviye öğrenme (RL) ile uzun vadeli planlama ve çevresel etkileşim yetenekleri pekiştiriliyor.\n\nAxion 1.0, bu kompakt eğitim tarifesine rağmen ajan‑bazlı benchmark setlerinde güçlü sonuçlar elde etti ve bazı ticari modellerle rekabet edebildi. Modelin ağırlıkları, veri seti, veri oluşturma ve filtreleme süreçleri, doğrulama prosedürleri ve eğitim kodu tamamen açık kaynak olarak Hugging Face ve GitHub üzerinden paylaşılıyor. Bu şeffaflık, araştırmacıların ve geliştiricilerin modeli yeniden üretmesini, iyileştirmesini ve yeni uygulamalara adapte etmesini mümkün kılıyor.\n\nProje, https://arxiv.org/abs/2611.03233 adresindeki makalede detaylandırılmış ve ilgili kod, veri ve dokümantasyonlar sırasıyla GitHub, Hugging Face ve proje web sitesinde bulunabilir. Açık bir ajan temelli model sunumu, sektörde kapalı‑kaynak ticari çözümlere alternatif oluşturma potansiyeli taşıyor.",
+  "onemli_maddeler": [
+    "Axion 1.0, sadece üç aşamalı bir eğitim süreciyle (iki SFT + RL) güçlü ajan yetenekleri kazandırıyor.",
+    "Model, veri sentezi, otomatik doğrulama ve araç‑bağımlı görev oluşturma pipeline'ı sayesinde geniş bir yelpazede test edildi.",
+    "Ağırlıklar, veri, kod ve eğitim tarifi tamamen açık kaynak; topluluk tarafından yeniden üretilebilir ve geliştirilebilir."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Axion 1.0, açık kaynaklı bir ajan temelli model sunması ve basit bir eğitim prosedürüyle ticari düzeyde performans göstermesi nedeniyle sektörde büyük bir etki yaratma potansiyeline sahiptir.",
+  "etiketler": [
+    "açık-kaynak",
+    "ajan-modeli",
+    "takviye-öğrenme",
+    "LLM",
+    "benchmark"
+  ],
+  "anilan_modeller": [
+    "Axion 1.0"
+  ],
+  "yorum_tr": "Axion 1.0, açık kaynak topluluğuna yüksek kapasiteli bir ajan modeli sağlarken, basitleştirilmiş eğitim akışı maliyetleri düşürüp yenilikçi araştırmaları hızlandırabilir. Geliştiriciler, tam şeffaflık sayesinde modeli kendi uygulamalarına uyarlayarak daha güvenli ve denetlenebilir AI çözümleri oluşturabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/pivgD2twh2o9eCkI8UdEVsSTCOYpFUld9fEn2IS39b0.png?width=640&crop=smart&auto=webp&s=fb7b4c168b6779e5af46d1ab7d463c3e695c9416",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xnjiu4/axion10axion1035b_hugging_face/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-04T09:02:58.000Z",
+  "slug": "axion1-0-axion-1-0-35b-hugging-face"
+}
