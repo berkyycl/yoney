@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "Box, Nvidia’nın Nemotron Embedding Modeliyle Yeni Agent‑İlk İçerik Getirme Özelliği Tanıttı",
+  "ozet_tr": "Box, geliştirici konferansında Nemotron embedding sistemini temel alan \"Box Content Retrieval\" özelliğini duyurdu. Nvidia’nın açık ağırlıklı Nemotron Embed modeli sayesinde sorgular dört kat daha hızlı yanıtlanacak, hata oranı %20 azalacak ve token tüketimi %90 düşecek. Özellik, önümüzdeki yılın başında Box Enterprise Advance müşterilerine sunulacak.",
+  "detayli_icerik_tr": "Box, geçtiğimiz Perşembe günü düzenlediği geliştirici konferansında yeni bir özellik olan Box Content Retrieval'ı tanıttı. Bu özellik, Nvidia’nın Nemotron embedding sistemini doğrudan Box platformunun çekirdeğine entegre ederek, yapay zeka ajanlarının sorgulara yanıt verirken daha doğru ve hızlı sonuçlar üretmesini sağlıyor. Nemotron Embed, açık ağırlıklı bir embedding modeli olarak veri ön işleme aşamasında metinleri kavramsal düzeyde haritalıyor ve böylece geleneksel anahtar kelime tabanlı aramaların ötesine geçiyor.\n\nBox CEO'su Aaron Levie, bu entegrasyonun arama teknolojisinin alaka düzeyini büyük ölçüde artırdığını vurguladı. \"Bir ajanın her belgeyi tek tek okuması yerine, kullanıcı sorgusuna en uygun belge parçalarını geri döndürebiliyoruz,\" diyerek, özellikle hukuk gibi belge yoğun sektörlerdeki faydaları öne çıkardı. Nvidia’nın generatif AI yazılım başkan yardımcısı Kari Briski ise, yeni sistemin sorgu yanıt sürelerini dört kat hızlandıracağını, hata oranını %20 azaltacağını ve kullanılan token sayısını %90 oranında düşüreceğini belirtti.\n\nNemotron Embed projesi, büyük laboratuvarların çoğu tarafından göz ardı edilen, LLM'leri veri ön işleme için kullanan bir yaklaşımı temsil ediyor. Nvidia, Temmuz ayında yayınladığı Nemotron modeliyle RTEB (Retrieval‑Based Evaluation) benchmark'ında birincilik elde etmişti; bu benchmark, bilgi getirme kalitesini ölçen standart bir testtir. Box, bu modeli kendi meta veri ve izin kontrol sistemleriyle birleştirerek tek bir API altında beş farklı teknolojiyi paketlediğini söyledi.\n\nYeni özellik, Box’ın Enterprise Advance müşterilerine erken 2027'de sunulacak ve özellikle avukatlar gibi uzmanların ilgili maddeleri ve içtihatları hızlıca bulmalarına yardımcı olacak. Nemotron’un kavramsal embedding'leri, farklı ifadelerle aynı temayı taşıyan belgeleri de tespit edebildiği için, dil farklılıkları ve eşanlamlı kelimeler arasında bile yüksek doğruluk sağlanıyor. Ancak sistem, Box’ın mevcut meta veri altyapısına ve izin yönetimine sıkı sıkıya bağlı olduğundan, tamamen sıfırdan kopyalanması zor olacaktır.",
+  "onemli_maddeler": [
+    "Box, Nvidia’nın Nemotron Embed modelini kullanarak yeni Box Content Retrieval özelliğini tanıttı.",
+    "Performans iddiaları: sorgular 4 kat daha hızlı, hata oranı %20 azalıyor, token tüketimi %90 düşüyor.",
+    "Özellik, 2027 başında Box Enterprise Advance müşterilerine sunulacak ve özellikle hukuk gibi sektörlerde kullanılacak.",
+    "Nemotron, Temmuz 2026'da RTEB benchmark'ında birincilik elde etmişti; bu, bilgi getirme kalitesinde lider olduğunu gösteriyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Box’ın büyük kurumsal müşterilerine yönelik kritik bir ürün güncellemesi; performans iyileştirmeleri ve Nvidia’nın lider embedding modeli entegrasyonu sektördeki rekabeti artırıyor.",
+  "etiketler": [
+    "AI",
+    "Box",
+    "Nvidia",
+    "Nemotron",
+    "Content Retrieval"
+  ],
+  "anilan_modeller": [
+    "Nemotron"
+  ],
+  "yorum_tr": "Bu entegrasyon, kurumsal yapay zeka asistanlarının veri getirme yeteneklerini önemli ölçüde yükselterek, özellikle belge‑ağır sektörlerde verimliliği artıracak. Geliştiriciler, açık‑ağırlıklı Nemotron modelini bir API içinde birleştirmenin getirdiği esneklikten faydalanabilecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://techcrunch.com/wp-content/uploads/2024/08/GettyImages-1178603809.jpg?w=1024",
+  "url": "https://techcrunch.com/2026/11/05/box-taps-nvidias-nemotron-for-new-agent-first-content-retrieval-system/",
+  "source": "TechCrunch AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-05T14:00:00.000Z",
+  "slug": "box-taps-nvidia-s-nemotron-for-new-agent-first-content-retri"
+}

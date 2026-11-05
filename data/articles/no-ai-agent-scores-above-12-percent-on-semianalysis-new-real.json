@@ -1,0 +1,85 @@
+{
+  "baslik_tr": "Hiçbir AI ajanı SemiAnalysis'ın yeni gerçek dünya iş benchmark'ında %12'nin üzerine çıkamadı",
+  "ozet_tr": "Analytics firması SemiAnalysis, AI ajanlarını gerçek iş ortamlarında test eden GDPx benchmark'ını duyurdu. 206 görevde Claude Opus 5.5 en yüksek %12 skorla liderliği elinde tutarken, diğer modeller %10.9 ve %9.6 gibi düşük oranlar gösterdi. Güvenlik filtreleri ve kapalı görev seti gibi faktörler sonuçların yorumlanmasını zorlaştırıyor.",
+  "detayli_icerik_tr": "SemiAnalysis, AI ajanlarını sekiz saate kadar süren, Siemens NX gibi profesyonel yazılımları kullanan, veri odalarında binlerce dosyayı arayan ve canlı kurumsal sistemlere saldırı düzenleyen gerçek iş senaryolarına sokan GDPx adlı yeni bir benchmark geliştirdi. Toplam 206 görev, çip tasarımı, biyoloji, nicel ticaret, siber güvenlik ve hukuk gibi on bir alanda eşit ağırlıkta dağıtıldı; yönetim ve sigorta gibi sektörler dışarıda bırakıldı.\n\nBenchmark sonuçları, mevcut AI ajanlarının performansının hâlâ çok düşük olduğunu gösterdi. Claude Opus 5.5 %12 ile birincilik elde ederken, Google'ın daha ucuz Gemini 4 Carbon %10.9 ve OpenAI'nin GPT-6 Astra %9.6 puan aldı. En düşük seviyelerde GPT-6 Luna ve DeepSeek 4.1 Flash gibi modeller yaklaşık %5 skor elde etti. Hiçbir model finans ve hukuk görevlerini tam olarak çözümleyemedi; bir tablo hatası bile çıktının pratikte işe yaramaz olmasına yol açtı.\n\nSonuçlar, güvenlik filtrelerinin puanlamayı önemli ölçüde etkilediğini de ortaya koydu. Siber, biyoloji ve uyumluluk (alignment) alanları çıkarıldığında, GPT-6 Astra %11.8 ile Claude Opus 5.5'i geride bıraktı. Ancak bu filtreli analiz, Meta'nın Muse Wonder Full modelinin %35.2 gibi yüksek bir skor elde etmesine rağmen genel sıralamada yediye düşmesi gibi çarpıcı değişiklikler getirdi.\n\nEleştirmenler, görevlerin büyük bir kısmının kapalı kalması, yalnızca bir örnek görevin kamuoyunda paylaşılması ve bazı alt alanların sadece on kadar görev içermesi nedeniyle sonuçların volatil ve doğrulanamaz olduğunu belirtiyor. Ayrıca, her modelin kendi sağlayıcısının ajan yazılımı içinde çalıştırılması, araç kalitesindeki farklılıkların adil bir karşılaştırmayı zorlaştırdığını vurguluyor. SemiAnalysis, benchmark'ı üç ila altı ayda bir güncellemeyi planlıyor.",
+  "onemli_maddeler": [
+    "Claude Opus 5.5 %12 ile GDPx benchmark'ında birincilik elde etti.",
+    "Hiçbir model %12'yi aşamadı; finans ve hukuk görevlerinde tam çözüm yok.",
+    "Güvenlik filtreleri sonuçları çarpıtarak, filtrelenmemiş analizde GPT-6 Astra %11.8 puana yükseldi.",
+    "Görevlerin büyük kısmı kapalı ve sadece bir örnek kamuoyuna açık, bu da doğrulanabilirliği zorlaştırıyor."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Yeni bir gerçek dünya iş benchmark'ı AI ajanlarının pratik performansını ölçüyor ve sektördeki beklentileri yeniden şekillendirebilir.",
+  "etiketler": [
+    "AI agents",
+    "benchmark",
+    "Claude Opus",
+    "Gemini",
+    "GPT-6"
+  ],
+  "anilan_modeller": [
+    "Claude Opus 5.5",
+    "Gemini 4 Carbon",
+    "GPT-6 Astra",
+    "GPT-6 Luna",
+    "DeepSeek 4.1 Flash",
+    "Muse Wonder Full",
+    "GPT-6.1 Sol"
+  ],
+  "yorum_tr": "GDPx, AI ajanlarının gerçek iş akışlarındaki sınırlılıklarını net bir şekilde ortaya koyarak geliştiricileri daha sağlam entegrasyon ve güvenlik çözümleri geliştirmeye yönlendirebilir. Kullanıcılar ise mevcut modellerin karmaşık görevlerde henüz güvenilir bir performans sunmadığını göz önünde bulundurmalı.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Claude Opus 5.5",
+      "benchmark": "GDPx",
+      "skor": 12,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "overall",
+      "kaynak_metinden_alinti": "Claude Opus 5.5 tops the leaderboard at 12 percent."
+    },
+    {
+      "model": "Gemini 4 Carbon",
+      "benchmark": "GDPx",
+      "skor": 10.9,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "overall",
+      "kaynak_metinden_alinti": "Gemini 4 Carbon follows at 10.9 percent but costs just $16.29 per task, roughly a third of the price."
+    },
+    {
+      "model": "GPT-6 Astra",
+      "benchmark": "GDPx",
+      "skor": 9.6,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "overall",
+      "kaynak_metinden_alinti": "GPT-6 Astra comes in at 9.6 percent."
+    },
+    {
+      "model": "GPT-6 Luna",
+      "benchmark": "GDPx",
+      "skor": 5,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "overall",
+      "kaynak_metinden_alinti": "GPT-6 Luna ... hit roughly five percent for about a dollar per task."
+    },
+    {
+      "model": "DeepSeek 4.1 Flash",
+      "benchmark": "GDPx",
+      "skor": 5,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "overall",
+      "kaynak_metinden_alinti": "DeepSeek 4.1 Flash hit roughly five percent for about a dollar per task."
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/11/semianalysis.png",
+  "url": "https://the-decoder.com/no-ai-agent-scores-above-12-percent-on-semianalysis-new-real-world-work-benchmark/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-05T16:46:24.000Z",
+  "slug": "no-ai-agent-scores-above-12-percent-on-semianalysis-new-real"
+}

@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "Baidu, 280 Milyar Parametreli ERNIE 5.5 Flash Base Modelini Açık Kaynak Olarak Yayınladı",
+  "ozet_tr": "Baidu, 280 milyar parametreli ve 14 milyar aktif parametreli bir karışım‑uzmanı (Mixture‑of‑Experts) mimarisine sahip ERNIE‑5.5‑Flash‑Base modelini açık kaynak olarak sundu. Model, 33,5 trilyon token üzerinden 128 k token bağlamıyla ön‑eğitildi ve ince ayar ile çıkarımda bir milyon token bağlamını destekleyecek şekilde tasarlandı.",
+  "detayli_icerik_tr": "Baidu, yapay zeka araştırma ve geliştirme çalışmalarını topluluğa açarak ERNIE‑5.5‑Flash‑Base modelini açık kaynak temelli bir temel model (foundation model) olarak yayınladı. Model, 280 milyar parametreli bir karışım‑uzmanı mimarisi kullanıyor; her bir girdi için yalnızca 14 milyar parametre aktif hâle geliyor, bu da yüksek verimlilik ve ölçeklenebilirlik sağlıyor.\n\nÖn‑eğitim sürecinde model, 33,5 trilyon token üzerinden çalıştırıldı ve 128 000 token uzunluğunda bir bağlam penceresine sahip. Baidu, modelin ince ayar ve çıkarım aşamalarında bağlam uzunluğunu bir milyon tokena kadar genişletebileceğini belirtiyor; bu, uzun metin analizleri ve çok aşamalı diyaloglar için önemli bir avantaj sunuyor.\n\nModelin ağırlıkları Hugging Face platformunda FP8 ve BF16 formatlarında sunuluyor ve geliştiricilerin doğrudan indirilip kullanabilmesi hedefleniyor. Baidu, henüz modelin ince ayarlı (post‑trained) bir versiyonunu yayınlamamış olsa da, topluluk tarafından bu sürümün yakında geliştirileceği öngörülüyor.\n\nBaidu, ERNIE‑5.5‑Flash‑Base'i DeepSeek‑V4‑Flash‑Base, Hy3‑preview‑Base ve MiMo‑V2.5‑Base gibi benzer büyüklükteki açık kaynak temelli modellerle aynı değerlendirme boru hattı üzerinden karşılaştırdı. Değerlendirme, Exam, STEM, Reasoning, Knowledge, Code, Multilingual ve Long Context gibi kategorileri kapsıyor; Baidu'nun iddialarına göre model, özellikle akıl yürütme, kod üretimi ve uzun bağlam görevlerinde rakipleriyle rekabet edebiliyor.",
+  "onemli_maddeler": [
+    "ERNIE‑5.5‑Flash‑Base, 280 milyar parametreli ve 14 milyar aktif parametreli bir Mixture‑of‑Experts mimarisiyle geliyor.",
+    "Model, 33,5 trilyon token üzerinden 128 k bağlam uzunluğuyla ön‑eğitildi ve bir milyon token bağlamını destekleyecek şekilde tasarlandı.",
+    "Ağırlıklar Hugging Face'te FP8 ve BF16 formatlarında açık kaynak olarak sunuldu; ince ayarlı sürümün yakında gelmesi planlanıyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "280 milyar parametreli, uzun bağlam desteği ve açık kaynak lisansıyla sektördeki en büyük ve en erişilebilir temel modellerden biri olması, rekabeti ve inovasyonu artıracak kritik bir çıkıştır.",
+  "etiketler": [
+    "Baidu",
+    "ERNIE",
+    "Foundation Model",
+    "Mixture of Experts",
+    "Open Source"
+  ],
+  "anilan_modeller": [
+    "ERNIE-5.5-Flash-Base",
+    "DeepSeek-V4-Flash-Base",
+    "Hy3-preview-Base",
+    "MiMo-V2.5-Base"
+  ],
+  "yorum_tr": "Bu model, büyük ölçekli açık kaynak temelli AI altyapısına yeni bir seçenek ekleyerek geliştiricilerin uzun bağlamlı uygulamalar ve yüksek verimli akıl yürütme senaryoları oluşturmasını kolaylaştıracak. İnce ayarlı bir versiyonun hızlıca gelmesi, rekabeti daha da kızıştırabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/11/ernie_logo.png",
+  "url": "https://the-decoder.com/baidu-releases-ernie-5-5-flash-base-with-280-billion-parameters-as-an-open-source-foundation-model/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-05T17:56:41.000Z",
+  "slug": "baidu-releases-ernie-5-5-flash-base-with-280-billion-paramet"
+}

@@ -1,0 +1,65 @@
+{
+  "baslik_tr": "Tencent Hy4 modeli görüntü ve bilgisayar kullanımını destekliyor, Çin AI modelleri arasında ikinci sırada",
+  "ozet_tr": "Tencent, görsel anlayış ve bağımsız bilgisayar kontrolü yetenekleriyle Hy4 modelini piyasaya sürdü. Model, finans, kodlama ve ofis görevlerine odaklanarak Çin içindeki açık ağırlıklı modeller arasında ikinci sırada yer alıyor. Ağırlıklar henüz yayınlanmasa da bulut hizmetleri üzerinden erişilebiliyor.",
+  "detayli_icerik_tr": "Tencent, Hy4 adlı yeni yapay zeka modelini tanıttı. Model, ilk kez görselleri analiz edebiliyor ve kendi başına yazılım çalıştırabiliyor; bu sayede fotoğraf ve karmaşık diyagramlardaki ince detayları tanımlayabiliyor. Demo kapsamında, iki metre çapındaki bir bileşeni büyük bir havadan çekim görüntüsünde bulmak için kod yazarak bölümler oluşturdu.\n\nHy4, özellikle kodlama, finans ve ofis uygulamaları için optimize edildi. Blender, CAD ve popüler oyun motorları (Unreal, Unity, Godot) gibi profesyonel araçlarda eğitim alarak, oyun geliştirme ve web sitesi oluşturma gibi görevlerde yüksek performans sergiliyor. Honor of Kings oyununda konfigürasyon görevlerini neredeyse hatasız yerine getirirken, hata kök nedenlerini bulma oranı da önemli ölçüde arttı.\n\nFinans alanında, 200'den fazla finans uzmanının değerlendirdiği 600 gerçek dünya görevinde Hy4, Deepseek V4.1 Flash, Kimi K3.1 Pro ve GLM-5.3 Flash gibi yerli rakiplerinin önüne geçti. Ayrıca, web araştırması sırasında halüsinasyon oranı %16'dan %5'e düşürülerek doğruluk artırıldı ve Word, Excel, PowerPoint dosyalarında gerçek zamanlı iş birliği sağlandı.\n\nBağımsız bir değerlendirme olan Artificial Analysis Intelligence Index'te Hy4 35 puan alarak Çin laboratuvar modelleri arasında ikinci sırada yer aldı; tek bir puan farkla Kimi K3.1 Pro'nun 46 puanının gerisinde kaldı. Ancak AA-Omniscience gerçeklik testi gibi zorlu sınavlarda sadece %50 doğru yanıt vererek, bilinmeyen sorularda %89 oranında uydurma cevaplar ürettiği tespit edildi. Hy4'ün fiyatlandırması, ön izleme sürümüyle aynı kalırken, bir milyon giriş tokeni $0.83, çıkış tokeni $2.50 olarak belirlendi. Gelecek planları arasında daha hızlı ve ucuz bir Hy4 Flash versiyonu da bulunuyor.",
+  "onemli_maddeler": [
+    "Hy4, görsel anlayış ve bağımsız bilgisayar kontrolü yetenekleriyle yeni bir nesil AI modeli olarak tanıtıldı.",
+    "Finans ve kodlama görevlerinde yerli rakiplerini geride bırakarak Çin içindeki açık ağırlıklı modeller arasında ikinci sırada yer alıyor.",
+    "Artificial Analysis Intelligence Index'te 35 puan alarak Kimi K3.1 Pro'nun 46 puanının gerisinde kalmasına rağmen, halüsinasyon oranı %5'e düşürüldü."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Hy4, görsel ve bilgisayar kontrolü gibi yeni yetenekleriyle Çin AI ekosisteminde önemli bir adım oluşturuyor; ancak küresel lider modellerin gerisinde kalması nedeniyle en üst düzey bir çıkış olarak değerlendirilemez.",
+  "etiketler": [
+    "Tencent",
+    "Hy4",
+    "görsel-işleme",
+    "AI-modelleri",
+    "finans"
+  ],
+  "anilan_modeller": [
+    "Claude Opus 5.5",
+    "GPT-6.1 Sol",
+    "Kimi K3.1 Pro",
+    "Deepseek V4.1 Flash",
+    "GLM-5.3 Flash",
+    "Grok 4.7"
+  ],
+  "yorum_tr": "Hy4, görsel ve çoklu uygulama entegrasyonu açısından Çin pazarında önemli bir sıçrama sağlarken, hâlâ zorlu matematik ve uzun kodlama projelerinde lider modellerin gerisinde kalıyor. Geliştiriciler için yeni bir araç sunulması, özellikle oyun ve finans sektörlerinde verimlilik artışı vaat ediyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Hy4",
+      "benchmark": "Artificial Analysis Intelligence Index",
+      "skor": 35,
+      "birim": "point",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "On its Intelligence Index, which combines knowledge work, coding, science, and general knowledge, Hy4 scores 35 points, above the median of 30."
+    },
+    {
+      "model": "Hy4",
+      "benchmark": "Hy-FrontierMath T5",
+      "skor": 13,
+      "birim": "point",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "On the Hy-FrontierMath T5, Hy4 scores 13.0 points compared to 97.5 for GPT 6.1 Sol and 91.3 for Claude Opus 5.5."
+    },
+    {
+      "model": "Hy4",
+      "benchmark": "AA-Omniscience factual accuracy",
+      "skor": 50,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "On the AA-Omniscience factual accuracy test, Hy4 answers about half the questions correctly from its training data."
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/09/tencent.png",
+  "url": "https://the-decoder.com/tencent-releases-hy4-with-vision-and-computer-use-claims-second-place-among-chinese-ai-models/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-05T16:06:31.000Z",
+  "slug": "tencent-releases-hy4-with-vision-and-computer-use-claims-sec"
+}

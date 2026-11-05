@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "OpenAI, yeni siber güvenlik modeli ChatGPT Cyber'ı duyurdu",
+  "ozet_tr": "OpenAI, siber güvenlik araştırmacılarına yönelik yeni bir öncü modeli olan ChatGPT Cyber'ı tanıttı. Model, Linux çekirdeğinde 948 potansiyel ve Firefox'ta 81 yeni güvenlik açığı tespit ederek AI destekli zafiyet keşfinin hızını artırdı. Şirket aynı zamanda siber güvenlik profesyonelleri için 1 milyar dolarlık bir destek girişimi başlattı.",
+  "detayli_icerik_tr": "Charge Robotics'in kurucu ortağı ve CTO'su Max Justicz, OpenAI'nin Temmuz ayında piyasaya sürdüğü GPT 5.6 Sol modelini kullanarak Ubuntu işletim sistemini hedef alan kritik bir güvenlik açığını ortaya çıkardı. Justicz, \"ChatGPT'yi aynı kod tabanına yönlendirdim ve iki saat içinde karmaşık bir hata buldu\" diyerek, modelin insan gözünden kaçan hataları tespit etmedeki yeteneğini vurguladı. Açık, Debian projesine bildirildi ve hızlı bir yama ile kapatıldı; hâlâ bu açığın kötü niyetli bir şekilde kullanıldığına dair bir kanıt bulunmuyor.\n\nOpenAI, bu gelişmenin ardından siber güvenlik odaklı yeni bir model olan ChatGPT Cyber'ı duyurdu. Model, Daybreak Red programının en üst seviyesindeki kullanıcılara sunulacak ve saldırı araştırmacıları ile savunma ekiplerine zafiyet tarama ve yama hazırlama imkanı tanıyacak. Açıklamaya göre, ChatGPT Cyber yalnızca bir gün içinde Linux çekirdeğinde 948 potansiyel sorun ve Firefox tarayıcısında 81 \"yeni\" zafiyet tespit etti.\n\nŞirket, aynı zamanda siber güvenlik uzmanlarını kritik altyapı (elektrik şebekesi, su sistemleri vb.) korumaya yönlendirmek amacıyla 1 milyar dolarlık bir fon oluşturdu. Ancak bu girişim, Daybreak Blue programının \"nerfed\" edilmesi ve erişim kısıtlamaları nedeniyle tartışma yarattı. Justicz, programın katılım şartlarının sürücü belgesi fotoğrafı gibi basit bir doğrulama ile sağlandığını belirterek, kötü niyetli aktörlerin açık ağırlıklı modelleri daha az kısıtlamayla kullanabileceği endişesini dile getirdi.\n\nOpenAI teknik ekibinden Eric Wallace, \"Ön uç hesaplama kaynaklarımızı açık kaynak kod tabanlarındaki zafiyetleri keşfetmek ve ücretsiz olarak yamalamak için tahsis ediyoruz\" dedi. Linux zafiyet avı projesi 1,2 milyon dolar maliyetle tamamlandı; bu rakam, şirketin akışkan dinamiği problemini çözmek için harcadığı yaklaşık 6 milyon dolar token harcamasına kıyasla daha düşük. Uzmanlar, AI modellerinin siber saldırı yeteneklerinin hızla artmasıyla savunma ekiplerinin kaynaklarının yetersiz kalabileceği uyarısında bulunuyor.",
+  "onemli_maddeler": [
+    "GPT 5.6 Sol ile Ubuntu çekirdeğinde kritik güvenlik açığı bulundu ve hızlıca yama geliştirildi.",
+    "OpenAI, \"ChatGPT Cyber\" adlı siber güvenlik odaklı modeli Daybreak Red programına ekledi.",
+    "Model, Linux çekirdeğinde 948 potansiyel, Firefox'ta 81 yeni güvenlik açığı tespit etti.",
+    "OpenAI, siber güvenlik profesyonelleri için 1 milyar dolarlık destek programı başlattı.",
+    "Daybreak Blue programının kısıtlanması ve erişim politikaları sektörde tartışma yarattı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Yeni bir güvenlik modeli duyurulması ve AI destekli zafiyet keşfinin ölçeği, sektördeki savunma ve saldırı dinamiklerini kökten etkileyebilecek nitelikte olduğundan.",
+  "etiketler": [
+    "AI",
+    "siber güvenlik",
+    "OpenAI",
+    "Daybreak",
+    "zafiyet keşfi"
+  ],
+  "anilan_modeller": [
+    "GPT 5.6 Sol",
+    "ChatGPT Cyber"
+  ],
+  "yorum_tr": "ChatGPT Cyber, AI destekli güvenlik araştırmalarını hızlandırarak savunma ekiplerine önemli bir avantaj sağlasa da, aynı teknolojinin kötü niyetli aktörler tarafından kullanılma riski yeni bir denge sorunu yaratıyor. Şirketlerin ve düzenleyicilerin erişim politikalarını dikkatle yönetmesi kritik olacak.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://techcrunch.com/wp-content/uploads/2026/08/openai-daybreak.jpg?resize=1200,798",
+  "url": "https://techcrunch.com/2026/11/05/openai-released-a-new-cybersecurity-model-is-that-enough/",
+  "source": "TechCrunch AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-05T19:06:12.000Z",
+  "slug": "openai-released-a-new-cybersecurity-model-is-that-enough"
+}

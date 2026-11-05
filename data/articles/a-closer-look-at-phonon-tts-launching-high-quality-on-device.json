@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "Phonon TTS: Yüksek Kaliteli Cihaz İçinde Çalışan Metin‑Ses Modeli Açık Kaynak",
+  "ozet_tr": "Hugging Face, ağırlığı 65‑75 MB arasında değişen ve beş dili destekleyen Phonon TTS modelini duyurdu. Model, tamamen cihaz içinde çalışıyor, ağırlıkları Apache 2.0 ve CC BY‑NC lisanslarıyla sunuluyor ve hem ses sentezi kalitesi hem de CPU üzerindeki gecikme süresiyle mevcut büyük modelleri geride bırakıyor.",
+  "detayli_icerik_tr": "Phonon, metin‑ses (TTS) teknolojisinin büyük bir kısmının bulut tabanlı çalıştığı bir ortamda, verinin cihaz dışına çıkmamasını sağlayarak gizlilik ve gecikme sorunlarını ortadan kaldırıyor. Model iki boyutta sunuluyor: yaklaşık 65 MB'lık Phonon‑31m İngilizce‑odaklı sürüm Apache 2.0 lisansı altında, 75 MB'lık Phonon‑40m ise beş dili (İngilizce, Fransızca, Almanca, İspanyolca, Portekizce) kapsayan ve yalnızca ticari olmayan projeler için CC BY‑NC lisansı ile dağıtılıyor. Kullanıcılar, Gradium Studio üzerinden 100'den fazla yerleşik ses arasından seçim yapabilir ya da kısa bir kayıtla kendi seslerini klonlayabilir.\n\nModel, Pocket TTS serisinden evrimleşerek akış eşleştirme (flow matching) yöntemiyle ses latents'lerini üretiyor. Bu yaklaşım, modelin boyutunu küçültürken doğal ses kalitesini korumasını sağladı; ancak eğitim aşamasında sayısal istikrarsızlıklar ortaya çıktı ve beş dilde tutarlı sonuçlar elde etmek için çeşitli teknik hileler uygulanması gerekti.\n\nPhonon, telefon, laptop, tek‑kart bilgisayarlar ve hatta tarayıcı sekmesi gibi çok çeşitli platformlarda çalışıyor. Yeni bir çıkarım çerçevesi olan ptts, CPU (Intel, Arm, WebAssembly), GPU (CUDA, Vulkan, Metal, WebGPU) ve NPU (Apple Core ML, Snapdragon®) gibi ondan fazla backend'i destekleyerek gerçek zamanlı ses üretiminde zaman‑ilk‑audio (time‑to‑first‑audio) ölçütünde CPU streaming benchmark'inde birincilik elde etti. Transformers kütüphanesinin 5.21 sürümünden itibaren de yer alıyor, bu da geliştiricilerin PyTorch tabanlı toplu üretim ve veri seti sentezi yapabilmesini mümkün kılıyor.\n\nLansman sonrası iki hafta içinde 200 000'den fazla indirme alarak Hugging Face topluluğunda trend olmaya devam etti. Apple Watch, iPhone, offline dino koşucu oyunu ve robotik projeler gibi çeşitli demo senaryoları, modelin düşük gecikme ve yüksek kalite performansını gösteriyor. Hugging Face Open TTS Leaderboard'ta Almanca ve İspanyolca dillerinde anlaşılabilirlik (word error rate) açısından birinci, diğer dillerde ise ilk üç içinde yer alarak, 100 kat daha büyük modellerle rekabet edebildiği kanıtlandı.",
+  "onemli_maddeler": [
+    "Phonon, tamamen cihaz içinde çalışan, ağırlığı 65‑75 MB olan çok dilli bir TTS modeli sunuyor.",
+    "Model, Apache 2.0 ve CC BY‑NC lisanslarıyla açık kaynak ve ticari kullanım için ücretsiz.",
+    "CPU streaming benchmark'inde zaman‑ilk‑audio ölçütünde birinci sırada yer alarak büyük modelleri geride bırakıyor.",
+    "Open TTS Leaderboard'da Almanca ve İspanyolca dillerinde anlaşılabilirlikte birinci, diğer dillerde ise ilk üç içinde."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Phonon, cihaz içinde yüksek kalite ses sentezi sağlayarak gizlilik, gecikme ve maliyet sorunlarını çözüyor; aynı zamanda açık lisansları ve çok dilli desteğiyle TTS ekosisteminde yeni bir standart oluşturma potansiyeline sahip.",
+  "etiketler": [
+    "text-to-speech",
+    "on-device",
+    "open-source",
+    "benchmark",
+    "Hugging Face"
+  ],
+  "anilan_modeller": [
+    "gradium/phonon-31m-en",
+    "gradium/phonon-40m-multilingual",
+    "Pocket TTS"
+  ],
+  "yorum_tr": "Phonon'un cihaz içinde çalışabilen yapısı, bulut bağımlılığını azaltarak geliştiricilere daha düşük gecikme ve veri gizliliği avantajı sunuyor; aynı zamanda açık lisansları sayesinde ticari projelerde hızlı entegrasyon imkanı sağlıyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://huggingface.co/blog/assets/phonon-closer-look/thumbnail.png",
+  "url": "https://huggingface.co/blog/phonon-tts",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-11-05T00:00:00.000Z",
+  "slug": "a-closer-look-at-phonon-tts-launching-high-quality-on-device"
+}

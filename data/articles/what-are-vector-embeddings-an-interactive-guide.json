@@ -1,0 +1,30 @@
+{
+  "baslik_tr": "Vektör Gömülmeleri Nedir? Etkileşimli Rehber ve 'SemanticGuessr' Oyunu",
+  "ozet_tr": "Makine öğrenimi mühendisi Abdur‑Rahman Butler, vektör gömülmelerini kavramadan öğrenmek isteyenler için interaktif bir rehber ve oyun geliştirdi. 43 339 yaygın İngilizce kelimeyi 2‑D harita üzerinde gezdiren 'SemanticGuessr', gömülme uzayındaki benzerlik ve yönelimleri pratik bir şekilde deneyimletiyor.",
+  "detayli_icerik_tr": "Reddit'in r/LocalLLaMA topluluğunda paylaşılan gönderide, Isaacus'ta çalışan mühendis Abdur‑Rahman Butler, vektör gömülmelerinin temellerini anlatan interaktif bir yazı hazırladığını duyurdu. Yazı, Brendan Bycroft'un LLM görselleştirme rehberinden ilham alarak, gömülme kavramını sadece teorik açıklamalarla sınırlamıyor; aynı zamanda kullanıcıların doğrudan deneyimleyebileceği görselleştirmeler ve Python kod parçacıkları içeriyor.\n\nRehberde, vektörleştirme, kosinüs benzerliği, semantik arama, hiyerarşik geri getirme, kümeleme, sıfır‑atış sınıflandırma ve veri tekrarı önleme gibi temel konular etkileşimli grafiklerle gösteriliyor. En dikkat çekici bölüm, 'SemanticGuessr' adlı oyun. Wordle ve GeoGuessr'den esinlenen bu oyun, 43 339 kelimenin 2‑D haritasında rastgele bir hedef kelimeyi bulmak için tahminler yapmayı ve bu tahminleri vektörel denklemlerle yönlendirmeyi gerektiriyor. Kullanıcılar \"london - english + french\" gibi ifadelerle kelime uzayında gezinerek hedefe en yakın konumu bulmaya çalışıyor.\n\nButler, oyunun web sayfasında statik olarak çalıştığını ve bunun için gömülme boyutlarını 512'ye düşürüp her bir değeri 4 bit'e sıkıştırdığını belirtti. Bu optimizasyon, veri paketini 311 MB'den 12,3 MB'ye indirerek sadece %6 civarında bir doğruluk kaybına yol açtı. Rehberde ayrıca, bu teknikleri takip etmek isteyenler için Python kod örnekleri de sunulmuş; böylece geliştiriciler kendi projelerinde gömülme manipülasyonlarını deneyebilir.\n\nButler, Melbourne Üniversitesi Hukuk Fakültesi'nden öğrencilerle oyunu denediğini ve farklı vektör denklemlerinin sonuçlarını izlemekten keyif aldıklarını paylaştı. İlgi görürse, benzer encoder‑tabanlı oyunları içeren ayrı bir sayfa oluşturma planı da söz konusu. Kullanıcıların en yüksek skorlarını ve tercih ettikleri yol haritalarını paylaşmaları davet ediliyor.",
+  "onemli_maddeler": [
+    "Vektör gömülmelerini interaktif olarak öğrenmek için 'SemanticGuessr' oyunu sunuldu.",
+    "Gömülme boyutları 512'ye düşürülüp 4‑bit sıkıştırma ile veri boyutu 311 MB'den 12,3 MB'ye indirildi, doğruluk kaybı sadece %6.",
+    "Rehber, kosinüs benzerliği, semantik arama, kümeleme ve sıfır‑atış sınıflandırma gibi konuları görselleştiriyor ve Python kod örnekleri sağlıyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 3,
+  "onem_gerekce": "Araç, gömülme kavramını pratik bir şekilde öğretmesi ve düşük boyutlu sıkıştırma tekniklerini göstermesi bakımından geliştiriciler ve akademisyenler için ilgi çekici, ancak sektörel etkisi sınırlı bir yenilik sunuyor.",
+  "etiketler": [
+    "vector embeddings",
+    "semantic search",
+    "interactive tool",
+    "machine learning",
+    "LLM"
+  ],
+  "anilan_modeller": [],
+  "yorum_tr": "Bu interaktif rehber, gömülme temellerini kavramak isteyen araştırmacı ve geliştiricilere pratik bir öğrenme ortamı sağlıyor; düşük boyutlu sıkıştırma yaklaşımı da veri verimliliği konusundaki tartışmalara katkı sunabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/5SYP9CqSGavqH0cYvp-L_bsGwcx65KKWD9vchiIwYXw.jpeg?width=640&crop=smart&auto=webp&s=aebd01069fdcd2cbb2623e328801db127c9f3461",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xo9vl3/what_are_vector_embeddings_an_interactive_guide/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-05T04:46:30.000Z",
+  "slug": "what-are-vector-embeddings-an-interactive-guide"
+}

@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "Qwen3.8 27B Q4 Modeli Eski Dizüstü Bilgisayarda Çalıştırıldı, Kodlama İçin Ana Model Oldu",
+  "ozet_tr": "Kullanıcı, 8. nesil i7 işlemcili, 20 GB RAM ve 4 GB VRAM'li eski bir dizüstü bilgisayarda Qwen3.8 27B Q4 modelini çalıştırarak kodlama ve hata ayıklama işlerinde ana model olarak benimsedi. Model, saniyede 0,67‑0,77 token üretme hızıyla oldukça yavaş olsa da, ücretsiz API'lerin kısıtlı olduğu ve uluslararası ödemelerin yasaklandığı bir ortamda yerel LLM'lerin değerini ortaya koydu.",
+  "detayli_icerik_tr": "Reddit'in LocalLLaMA topluluğunda paylaşılan bir gönderide, Felix_455-788 adlı kullanıcı, i7 8. nesil işlemcili, 20 GB RAM ve 4 GB VRAM'li eski bir dizüstü bilgisayarda Qwen3.8 27B Q4 modelini çalıştırdığını belirtti. Donanım sınırlamaları nedeniyle model, saniyede 0,67‑0,77 token üretme hızıyla oldukça yavaş bir performans sergiledi; ancak bu durum, kullanıcının ücretsiz API'lere erişiminin kısıtlı olduğu ve ülkesinde uluslararası ödeme sistemlerinin yasaklandığı bir ortamda yerel büyük dil modellerine yönelmesini zorunlu kıldı.\n\nKullanıcı, Qwen modelini sadece metin üretimi için değil, aynı zamanda eski projelerdeki hataları düzeltmek, oyun modlaması (Grey Hack, Cell to Singularity ve itch.io üzerindeki bazı oyunlar) ve tersine mühendislik araçları (Dnspy, Ghidra) ile entegrasyon sağlamak için de kullandığını ifade etti. Bu süreçte LM Studio ve Pi Agent gibi yardımcı araçlardan faydalanarak modelin kod üretim yeteneklerini test etti ve OpenCode gibi ek çözümlerle deneyimlerini zenginleştirdi.\n\nFelix, Qwen3.8'ün kendisine sağladığı istikrar ve esnekliği övgüyle anlatırken, aynı zamanda Ornith 1.5 122B A10B modeline de ilgi duyduğunu ve bu modeli Q3 K XL mimarisiyle mmap kullanarak denemeyi planladığını belirtti. Bu yaklaşım, düşük bellekli cihazlarda büyük modelleri daha verimli çalıştırma stratejileri üzerine bir örnek teşkil ediyor.\n\nKullanıcının deneyimi, düşük donanımlı cihazlarda bile yerel LLM'lerin üretkenlik ve problem çözme süreçlerine entegrasyonunun mümkün olduğunu gösteriyor. Özellikle API kısıtlamaları ve ödeme engelleriyle karşılaşan geliştiriciler için, açık kaynak modellerin ve yerel çalışma ortamlarının önemi bir kez daha vurgulanmış oldu.",
+  "onemli_maddeler": [
+    "Qwen3.8 27B Q4 modeli, 20 GB RAM ve 4 GB VRAM'li eski bir dizüstü bilgisayarda çalıştırıldı.",
+    "Model, saniyede 0,67‑0,77 token üretme hızıyla oldukça yavaş bir performans sergiledi.",
+    "Kullanıcı, modeli hata ayıklama, oyun modlaması ve kod üretimi gibi çeşitli görevlerde başarıyla kullandı."
+  ],
+  "kategori": "benchmark",
+  "onem": 2,
+  "onem_gerekce": "Konu, düşük donanımlı cihazlarda yerel LLM kullanımına dair kişisel bir deneyim olduğu için sektörel etkisi sınırlı, ancak benzer kısıtlamalarla karşılaşan geliştiriciler için değerli bir referans sunuyor.",
+  "etiketler": [
+    "Qwen3.8",
+    "Local LLM",
+    "Kodlama",
+    "Düşük Donanım",
+    "Benchmark"
+  ],
+  "anilan_modeller": [
+    "Qwen3.8 27B Q4",
+    "Ornith 1.5 122B A10B",
+    "Pi Agent",
+    "OpenCode"
+  ],
+  "yorum_tr": "Bu deneyim, ücretsiz API'lerin sınırlı olduğu ve ödeme engellerinin bulunduğu bölgelerde yerel büyük dil modellerinin hâlâ üretken bir alternatif olabileceğini gösteriyor. Ancak düşük token hızı, yoğun kodlama görevlerinde performans sınırlamaları yaratabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://tech-insider.org/wp-content/uploads/2026/08/how-to-run-qwen3-8-27b-locally-ollama-2026-1.webp",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xnzo38/qwen38_27b_q4_on_my_lowend_laptop_and_it_became/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-04T20:56:55.000Z",
+  "slug": "qwen3-8-27b-q4-on-my-low-end-laptop-and-it-became-my-main-mo"
+}

@@ -1,0 +1,72 @@
+{
+  "baslik_tr": "Claude’un Bilimsel Keşiflerde Kullanımı: 207.000 Oturum Analizi",
+  "ozet_tr": "Anthropic, 207.000 Claude ve Claude Code oturumunu gizlilik korumalı yöntemlerle inceleyerek, yapay zekânın bilimsel araştırmalarda hangi alanlarda ve görevlerde yoğunlaştığını ortaya koydu. Formal bilimlerde, özellikle veri analizi ve yazımda yüksek kullanım oranları görülürken, veri toplama ve fikir üretimi gibi kritik görevlerde düşük temsil oranları tespit edildi.",
+  "detayli_icerik_tr": "Anthropic, 2 Ağustos‑30 Eylül 2026 tarihleri arasında tüketici planları üzerinden yürütülen 207.049 bilimsel oturumu analiz etti. Oturumlar, birincil sınıflandırıcıyla bilimsel içerik olup olmadığı belirlenip, ikinci bir sınıflandırıcıyla SciNet taksonomisine göre alan, alt alan ve görev bazında etiketlendi. Bu süreçte yalnızca alan ve görev bilgileri saklandı; veri setleri, hipotezler veya deneysel bulgular gibi açık uçlu bilgiler hiçbir zaman kaydedilmedi.\n\nAnaliz, Claude’un (genel amaçlı sohbet arayüzü) 128.914, Claude Code’un (kodlama odaklı ajan) ise 78.135 oturuma sahip olduğunu gösterdi. Alan bazında, bilgisayar bilimi oturumların %11,9, mühendislik %8,4 ve tıp %7,7'sini oluştururken, fiziksel laboratuvar bilimlerinde (ör. kimya) kullanım oranı daha düşük kaldı. Claude Code ise özellikle nicel disiplinlerde yoğunlaşarak, dünya araştırmacılarının %4,3'ünü oluşturan bilgisayar bilimi alanının %32,7'sini kapsadı.\n\nGörev dağılımına bakıldığında, veri analizi Claude oturumlarının %33,7, Claude Code oturumlarının %48,1'ini oluşturdu ve bu oranlar araştırmacıların bu göreve harcadığı zamanın (%27,6) üzerindeydi. Yazım ve iletişim görevleri Claude’da %32,0, araştırmacıların harcadığı %16,0 zamanla kıyaslandığında aşırı temsil edildi. Öte yandan veri toplama görevleri Claude’da %11,5, Claude Code’da %11,9 oranında yer alırken, araştırmacıların bu göreve ayırdığı %28,6 zamanın çok altında kaldı.\n\nClaude’un kullanımının, teorik AI yetenek ölçütüyle yüksek korelasyon gösterdiği belirlendi: AI’nın en uygun olduğu görevlerde (üst %20) kullanım iki‑dört kat artarken, fiziksel iş gerektiren düşük uygunluklu görevlerde (alt %20) kullanım neredeyse yoktu. Bu bulgu, yapay zekânın bilişsel, tekrarlayan görevlerde daha verimli olduğunu ve bilim insanlarının da bu alanlarda AI’yı tercih ettiğini gösteriyor. Senaryolar, mevcut yeteneklerin geniş çapta benimsenmesiyle bazı alanlarda araştırma çıktısının iki katına çıkabileceğini, tüm fizik dışı görevlerin otomatikleştirilmesi durumunda ise bilgisayar bilimi ve istatistik gibi alanlarda 15 kat, kimya ve biyoloji gibi laboratuvar temelli alanlarda 3‑4 kat artış olabileceğini öngörüyor.",
+  "onemli_maddeler": [
+    "Claude, bilimsel araştırmalarda veri analizi (%33,7) ve yazım (%32,0) görevlerinde araştırmacıların harcadığı zamandan daha fazla kullanılıyor.",
+    "Bilgisayar bilimi, matematik ve istatistik gibi formal bilimlerde Claude kullanım oranı, alanın araştırmacı sayısına göre orantısız derecede yüksek.",
+    "AI’nın teorik yetenek ölçütüyle uyumlu görevlerde kullanım iki‑dört kat artarken, fiziksel iş gerektiren görevlerde neredeyse yok.",
+    "Mevcut AI yetenekleriyle bazı disiplinlerde araştırma çıktısı iki katına çıkabilir; tam otomasyon senaryosunda ise 15 katına kadar yükselme potansiyeli var."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "Claude’un bilimsel süreçlerdeki gerçek kullanım dağılımı ve potansiyel etkileri, AI’nın araştırma verimliliğine olan katkısını ölçen nadir büyük ölçekli bir çalışma olduğundan sektörde önemli bir referans niteliği taşıyor.",
+  "etiketler": [
+    "AI",
+    "bilimsel keşif",
+    "Claude",
+    "veri analizi",
+    "araştırma otomasyonu"
+  ],
+  "anilan_modeller": [
+    "Claude",
+    "Claude Code",
+    "Claude Science"
+  ],
+  "yorum_tr": "Claude’un mevcut yetenekleri, veri analizi ve yazım gibi bilişsel görevlerde araştırma hızını artırırken, laboratuvar temelli veri toplama gibi fiziksel süreçlerde sınırlı fayda sağlıyor. Geliştiriciler, bu boşlukları kapatacak özel bilimsel araçlar üreterek AI’nın araştırma üzerindeki etkisini dengeleyebilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Claude",
+      "benchmark": "Veri analizi oturum payı",
+      "skor": 33.7,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "session share",
+      "kaynak_metinden_alinti": "Data analysis accounts for 33.7% of sessions on Claude"
+    },
+    {
+      "model": "Claude Code",
+      "benchmark": "Veri analizi oturum payı",
+      "skor": 48.1,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "session share",
+      "kaynak_metinden_alinti": "Data analysis accounts for 48.1% of sessions on Claude Code"
+    },
+    {
+      "model": "Claude",
+      "benchmark": "Yazım ve iletişim oturum payı",
+      "skor": 32,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "session share",
+      "kaynak_metinden_alinti": "Writing and communication tasks account for 32.0% of Claude sessions"
+    },
+    {
+      "model": "Claude",
+      "benchmark": "Veri toplama oturum payı",
+      "skor": 11.5,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "session share",
+      "kaynak_metinden_alinti": "Data gathering tasks account for 11.5% of sessions on Claude"
+    }
+  ],
+  "gorsel_url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/0c1a04cc7042949252ee54565755780fe21d5ecf-1200x630.jpg",
+  "url": "https://www.anthropic.com/research/how-researchers-use-claude",
+  "source": "Anthropic Research",
+  "sourceTier": "resmi",
+  "date": "2026-11-05T00:00:00.000Z",
+  "slug": "ai-for-scientific-discovery-how-researchers-use-claude"
+}

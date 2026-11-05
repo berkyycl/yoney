@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "Claude AI, Plaid üzerinden banka hesabınıza bağlanarak kişisel finans yönetimi sunuyor",
+  "ozet_tr": "Anthropic, Claude sohbet botuna Plaid aracılığıyla banka ve kart hesaplarını okuma yetkisi veren yeni \"Personal Finance\" özelliğini beta aşamasında kullanıma sundu. Kullanıcılar, harcama kalemlerini sınıflandıran raporlar, gelecek ödeme takibi ve bütçe önerileri gibi finansal sorulara yanıt alabilecek. Özellik, yalnızca okuma izni veriyor ve yatırım tavsiyesi ya da para transferi gibi işlemleri desteklemiyor.",
+  "detayli_icerik_tr": "Anthropic, Claude AI'yi kişisel finans yönetimi için yeniden konumlandırıyor. Plaid adlı banka köprüleme platformu sayesinde, Claude Pro, Claude Max ve Claude Ultra aboneleri, banka ve kredi kartı hesaplarını okuma izniyle bağlayarak \"Bu ay param nereye gitti?\" gibi sorular sorabiliyor. Bot, gelir-gider dengesini, harcama kategorilerini (kira, faturalar, alışveriş, yiyecek vb.) ve iki yıla kadar geçmiş işlemleri analiz ederek görsel bir özet sunuyor.\n\nErişim tamamen sadece okuma modunda; Claude, şifreleri görmüyor, bankalar da AI botlarının doğrudan hesabı yönetmesine izin vermiyor. Kullanıcılar, hesap adı, türü, son dört hanesi, bakiye, kredi limiti ve işlem geçmişi gibi bilgilerle sınırlı bir veri setine erişebiliyor. Ancak Claude, bu verileri kullanarak finansal terimleri açıklayabilir, kalan fatura tutarlarını ve bir sonraki maaş gününe kadar ne kadar harcama yapabileceğinizi tahmin edebilir.\n\nÖzellik, bu hafta içinde ABD'deki Claude Pro, Max ve Ultra plan abonelerine beta olarak dağıtılıyor. Anthropic, benzer bir hizmeti Mayıs ayında OpenAI'nin ChatGPT'ine eklemesinin ardından bu adımı attığını belirtiyor. Şirket, bu ilk adımın ardından AI'nın daha büyük para kararlarında lisanslı finansal profesyonellerle birlikte çalışması gerektiğini vurguluyor ve bankalar, varlık yöneticileri ve finansal hizmet sağlayıcılarıyla iş birliği arayışında olduklarını duyurdu.\n\nGüvenlik ve gizlilik konularına da değinen Anthropic, Plaid'in güvenli bağlantı katmanı sayesinde kullanıcıların banka şifreleri asla AI modeline aktarılmadığını ve verilerin yalnızca analiz amaçlı kullanılacağını belirtiyor. Bu yaklaşım, AI destekli finansal danışmanlık hizmetlerine yönelik artan talep ve aynı zamanda veri koruma endişeleri arasında bir denge kurmayı hedefliyor.",
+  "onemli_maddeler": [
+    "Claude, Plaid üzerinden banka ve kart hesaplarını okuma izniyle bağlayarak harcama analizi yapabiliyor.",
+    "Özellik sadece okuma modunda; para transferi, yatırım tavsiyesi veya hesap yönetimi yapılmıyor.",
+    "Beta sürümü, Claude Pro, Max ve Ultra plan abonelerine ABD'de bu hafta dağıtılıyor.",
+    "Anthropic, AI'nın finansal kararları lisanslı profesyonellerle birlikte ele alması gerektiğini vurguluyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Claude'ın yeni kişisel finans özelliği, AI destekli finansal analiz pazarına giriş yaparak hem kullanıcı deneyimini zenginleştiriyor hem de rekabeti artırıyor; bu, sektördeki büyük oyuncular arasında yeni bir hizmet standardı oluşturma potansiyeline sahip.",
+  "etiketler": [
+    "Claude",
+    "Anthropic",
+    "Plaid",
+    "kişisel finans",
+    "AI bankacılık"
+  ],
+  "anilan_modeller": [
+    "Claude Pro",
+    "Claude Max",
+    "Claude Ultra"
+  ],
+  "yorum_tr": "Bu güncelleme, geliştiricilere ve son kullanıcılara AI tabanlı finansal içgörü sağlama konusunda yeni bir yol açıyor; ancak veri gizliliği ve sorumlu kullanım konularının hâlâ titizlikle ele alınması gerekiyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Personal-Finance-in-Claude-hed.jpg?quality=90&strip=all&crop=0,0,100,100",
+  "url": "https://www.theverge.com/ai-artificial-intelligence/1027652/anthropic-claude-plaid-personal-finance",
+  "source": "The Verge AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-05T18:00:00.000Z",
+  "slug": "claude-ai-can-plug-directly-into-your-bank-account"
+}

@@ -1,0 +1,78 @@
+{
+  "baslik_tr": "OpenAI, GPT‑6 Cyber'ı Tanıttı: Siber Güvenlikte Yeni Nesil Hizalanmış Yapay Zeka Ajenti",
+  "ozet_tr": "OpenAI, güvenlik araştırmalarında çığır açacak yeni bir model olan GPT‑6 Cyber'ı duyurdu. Model, ExploitGym gibi kritik siber güvenlik benchmark'lerinde %48.5 başarı elde ederek önceki sürümüne göre %51'lik bir iyileşme gösteriyor ve gerçek dünyada Linux ve Firefox gibi büyük kod tabanlarında binlerce açığı keşfetti.",
+  "detayli_icerik_tr": "OpenAI, GPT‑6 Cyber'ı güvenlik araştırmalarında bir adım öteye taşıyarak, güvenlik açıklarını bulma ve düzeltme konularında önceki model GPT‑5.6 Cyber'dan çok daha yetkin bir performans sundu. Model, ExploitGym benchmark'inde %48.5 başarı oranı yakalarken, aynı testte %32.1 olan önceki sürümünün %51'lik bir göreceli iyileşmesini sağladı. Ayrıca, modelin görev sınırları içinde kalma yeteneği de büyük ölçüde güçlendi; dağıtım güvenlik komutları olmadan %99.93, komutlarla ise %100 oranında sınır dışı eylemlerden kaçındı.\n\nGerçek dünya uygulamalarında GPT‑6 Cyber, Linux çekirdeğinde 948 ayrı ayrı ayrıcalık yükseltme açığı ve Firefox'ta 81 yeni yüksek şiddette güvenlik açığı keşfederek, bu bulguların birçoğu için Mozilla tarafından yamalar yayınlandı. Cisco, Calif ve CodeRabbit gibi güvenlik ekipleri de modeli kod inceleme ve zafiyet araştırması için kullanıyor. OpenAI, kendi altyapısını da bu modelle güçlendirerek, mikroVM'lerden kaçma ve kod yürütme gibi riskli senaryolarda modelin yeteneklerini test etti.\n\nModelin yeni güvenlik odaklı özellikleri Daybreak Red ve Daybreak Blue platformlarıyla entegre edildi. Daybreak Red, yetkili güvenlik testleri ve gelişmiş exploit geliştirme için tasarlanırken, Daybreak Blue, doğrulanmış savunucuların zafiyet ve yamaları daha az reddetme ile doğrulamasını sağlıyor. RemoteExploitBench benchmark'inde GPT‑6 Cyber, %95 başarı oranıyla görevleri tamamlayarak, aynı ortamda Daybreak Blue kullanan GPT‑6 Astra'nın %100 reddetme oranını geride bıraktı.\n\nGüçlü hizalanma ve güvenlik önlemleri de modelin temelinde yer alıyor. OpenAI, modelin yetkisiz hizmetleri hedef almasını önlemek için özel hizalanma eğitimi ve Honeypot testleri uyguladı. Ayrıca, kötü niyetli kullanım tespiti, IP beyaz listesi, özel güvenlik işleme (PSP) ve kritik altyapı koruması gibi yeni güvenlik katmanlarıyla modelin kötüye kullanım riski minimize edildi. Daybreak for Frontline Defenders programı, sınırlı bütçeli kurum ve kritik altyapı savunucularına model erişimini desteklemek amacıyla bir milyar dolarlık fon sağlıyor.",
+  "onemli_maddeler": [
+    "GPT‑6 Cyber, ExploitGym benchmark'inde %48.5 başarı elde ederek %51'lik göreceli iyileşme sağladı.",
+    "Model, gerçek dünyada Linux çekirdeğinde 948 ayrı ayrıcalık yükseltme açığı ve Firefox'ta 81 yeni yüksek şiddette güvenlik açığı keşfetti.",
+    "Daybreak Red ve Daybreak Blue entegrasyonlarıyla yetkili güvenlik testleri ve daha az reddetme oranı sunuldu; RemoteExploitBench'te %95 başarı sağlandı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Siber güvenlik alanında kritik bir modelin duyurulması, hem güvenlik araştırmalarının verimliliğini artırıyor hem de yapay zekâ güvenliği ve hizalanması konularında yeni standartlar getiriyor.",
+  "etiketler": [
+    "siber güvenlik",
+    "yapay zeka",
+    "model duyurusu",
+    "alignement",
+    "vulnerability research"
+  ],
+  "anilan_modeller": [
+    "GPT‑6 Cyber"
+  ],
+  "yorum_tr": "GPT‑6 Cyber, güvenlik araştırmacılarına daha hızlı ve kapsamlı zafiyet keşfi imkanı sunarken, güçlü hizalanma ve koruma mekanizmaları sayesinde kötüye kullanım riskini de azaltıyor; bu, hem geliştiriciler hem de kurumlar için kritik bir adım.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GPT‑6 Cyber",
+      "benchmark": "ExploitGym",
+      "skor": 48.5,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "On ExploitGym, which tests whether models can exploit a specified vulnerability, GPT‑6 Cyber scores 48.5%, up from 32.1% for GPT‑5.6 Cyber."
+    },
+    {
+      "model": "GPT‑6 Cyber",
+      "benchmark": "ExploitGym Honeypot",
+      "skor": 99.93,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "without deployment prompt",
+      "kaynak_metinden_alinti": "When tested without deployment safety prompts, it avoided exploiting out-of-scope services in 99.93% of cases, up from 94.49% for GPT‑5.6 Cyber."
+    },
+    {
+      "model": "GPT‑6 Cyber",
+      "benchmark": "ExploitGym Honeypot",
+      "skor": 100,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "with deployment prompt",
+      "kaynak_metinden_alinti": "With those prompts, GPT‑6 Cyber stayed within bounds 100% of the time."
+    },
+    {
+      "model": "GPT‑6 Cyber",
+      "benchmark": "Web Penetration Recall",
+      "skor": 40.3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "GPT‑6 Cyber achieved 40.3% recall of vulnerabilities compared with 32.0% for GPT‑6 Astra."
+    },
+    {
+      "model": "GPT‑6 Cyber",
+      "benchmark": "RemoteExploitBench",
+      "skor": 95,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "GPT‑6 Cyber completed 95% of tasks; its only failure was an exploit it could not get to work remotely."
+    }
+  ],
+  "gorsel_url": "https://images.ctfassets.net/kftzwdyauwt9/73cvZmLsj7WIXQAgMDX8kz/4996c7a084b81e21a8f1357fe395c30b/gpt-6-cyber-social.png?w=1600&h=900&fit=fill",
+  "url": "https://openai.com/index/introducing-gpt-6-cyber",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-11-05T09:00:00.000Z",
+  "slug": "gpt-6-cyber-advancing-the-frontier-of-aligned-cybersecurity"
+}
