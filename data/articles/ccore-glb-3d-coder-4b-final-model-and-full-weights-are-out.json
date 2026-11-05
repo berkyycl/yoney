@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "CCORE GLB-3D-Coder 4B Modeli ve Tam Ağırlık Dosyaları Yayınlandı",
+  "ozet_tr": "LocalLLaMA topluluğu, Qwen3.5-4B tabanlı CCORE GLB-3D-Coder 4B modelinin son sürümünü ve tam Safetensors ağırlıklarını yayınladı. Model, yalnızca 4 B parametreyle Three.js tabanlı HTML sahneleri ve GLB dosyaları üretebiliyor; karakter, ortam, araç ve animasyon gibi geniş bir 3D varlık yelpazesini kapsıyor.",
+  "detayli_icerik_tr": "Yerel LLaMA topluluğu, Qwen3.5-4B modelinin tam bir ince ayarını içeren CCORE GLB-3D-Coder 4B'yi duyurdu. Model, kullanıcıların doğal dilde tanımladığı istekleri Three.js uyumlu HTML sahnelerine dönüştürerek, bir \"Export GLB\" butonu aracılığıyla doğrudan GLB formatında dışa aktarılabilir hâle getiriyor. Bu sayede oluşturulan sahneler Godot, Blender, Unity gibi GLB destekleyen oyun ve tasarım motorlarına kolayca entegre edilebiliyor.\n\nModelin yetenekleri sadece fantastik karakterlerle sınırlı kalmayıp, binalar, ortamlar, silahlar, araçlar, laboratuvar ekipmanları, spor gereçleri ve mobilya gibi çeşitli nesneleri de üretme kapasitesine sahip. Ayrıca animasyon üretimi de destekleniyor; oluşturulan GLB dosyalarına hareketli içerik eklenebiliyor. Topluluk, modelin 4 B parametreli olmasına rağmen detay seviyesi ve karakter tasarımlarında DeepSeek V4.1 Flash ile yapılan yan yana karşılaştırmalarda etkileyici sonuçlar verdiğini belirtiyor.\n\nAğırlık dosyaları iki formatta sunulmuş: Q4_K_M GGUF (yaklaşık 2.7 GB) ve Q8_0 GGUF, ayrıca tam model ağırlıkları Safetensors formatında da erişilebilir. Model, Hugging Face üzerindeki proje sayfasından indirilebilir; sistem istemi, önerilen ayarlar ve indirme linkleri burada paylaşılmış. Eğitim veri seti ise 6 Kasım'da yayınlanacak ve topluluk üyelerinin geri bildirimleriyle sürekli iyileştirileceği vurgulanıyor.\n\nGeliştiriciler, modelin bazı çıktılarının yeniden deneme veya küçük kod düzeltmeleri gerektirebileceğini kabul etse de, önceki sürüme göre kayda değer bir gelişme sağlandığını ifade ediyor. Topluluk, yeni modelin test edilmesini, sonuçların ve hata durumlarının paylaşılmasını ve gelecekteki veri setleri ve eğitim çalışmaları için destek olunmasını istiyor.",
+  "onemli_maddeler": [
+    "CCORE GLB-3D-Coder 4B, Qwen3.5-4B üzerine tam bir ince ayar olarak 4 B parametreyle 3D varlık üretimi sağlıyor.",
+    "Model, doğal dil komutlarından Three.js HTML sahneleri ve GLB dosyaları oluşturup, Unity, Blender gibi araçlara doğrudan aktarılabilir.",
+    "Ağırlık dosyaları Q4_K_M ve Q8_0 GGUF formatlarının yanı sıra Safetensors olarak da sunuluyor; indirme Hugging Face üzerinden yapılabiliyor.",
+    "DeepSeek V4.1 Flash ile yapılan yan yana karşılaştırmalarda karakter tasarımı ve detay seviyesi açısından üstünlük gösteriyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "4 B parametreli açık kaynak bir model, 3D içerik üretiminde düşük maliyetli bir alternatif sunarak geliştiriciler ve içerik üreticileri için yeni fırsatlar yaratıyor.",
+  "etiketler": [
+    "3D‑generasyon",
+    "GLB",
+    "Qwen3.5",
+    "LocalLLaMA",
+    "Açık‑Kaynak"
+  ],
+  "anilan_modeller": [
+    "CCORE GLB-3D-Coder 4B",
+    "Qwen3.5-4B",
+    "DeepSeek V4.1 Flash"
+  ],
+  "yorum_tr": "Bu model, düşük parametreli bir yapıyla yüksek kaliteli 3D varlık üretimini mümkün kılarak indie geliştiriciler ve araştırmacılar için erişilebilir bir araç sunuyor. Topluluk odaklı geliştirme ve veri seti paylaşımı, modelin sürekli iyileştirilmesine ve ekosistemin genişlemesine katkı sağlayacak.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/dDhwdndidjVmcXpoMdATf-8Xp_s2kD-hsn5Tl7S0Um_KuQ6TsHijxPwKMHWz.png?width=640&crop=smart&auto=webp&s=5ca3438ea2112c3b4c6e82d1e4c66f89432ff690",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xobe4h/ccore_glb3dcoder_4b_final_model_and_full_weights/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-05T06:14:09.000Z",
+  "slug": "ccore-glb-3d-coder-4b-final-model-and-full-weights-are-out"
+}

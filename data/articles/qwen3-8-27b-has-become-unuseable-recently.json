@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "Qwen3.8-27B Modeli Son Zamanlarda Kullanılamaz Hale Geldi",
+  "ozet_tr": "Kullanıcılar, Qwen3.8-27B'nin Q4 quant versiyonunun önceki performansının geride kaldığını ve temel görevlerde bile hatalar verdiğini bildiriyor. Modelin bilinçli bir şekilde nerfleştirildiği ve performansının düşürüldüğü iddiaları, topluluk içinde tartışma yaratıyor.",
+  "detayli_icerik_tr": "Reddit'in LocalLLaMA topluluğunda bir kullanıcı, Qwen3.8-27B modelinin Q4 quant sürümünü RTX 4090 üzerinde llama.cpp ile çalıştırdığını ve ilk denemelerde \"neredeyse her türlü görevi\" başarıyla yerine getirdiğini belirtti. Model, karmaşık kod düzeltmeleri ve detaylı talimatları sorunsuz işleyebiliyordu.\n\nAncak aynı kullanıcı, son zamanlarda modelin temel görevlerde bile hatalar ürettiğini, talimatları unutup yanıtları tutarsız hale getirdiğini iddia ediyor. Kullanıcı, bu durumun modelin yeniden nerfleştirildiği ya da bilinçli olarak performansının düşürüldüğü yönündeki spekülasyonlarını dile getirdi. Bu spekülasyon, Qwen4 gibi yeni bir modelin daha iyi görünmesi için eski modelin kasıtlı olarak geriletildiği düşüncesine dayanıyor.\n\nKullanıcı, modelin artık \"temiz bir şekilde\" karmaşık görevleri tamamlamaktan kaçındığını ve bazı durumlarda yanıtları tamamen durdurduğunu ifade etti. Bu durum, özellikle yüksek performanslı donanım (RTX 4090) kullanan geliştiriciler ve araştırmacılar için hayal kırıklığı yaratıyor. Kullanıcı, yaşadığı sorunlar nedeniyle ödemesini geri talep ettiğini de ekledi.\n\nTopluluk içinde bu şikayet, modelin nerfleştirme sürecinin şeffaflığı ve sürüm kontrolü konularında daha fazla bilgi talep edilmesine yol açtı. Geliştiricilerin, model güncellemeleri ve quantizasyon süreçlerini açıkça belgelemeleri, benzer sorunların önüne geçmek açısından kritik görülüyor.",
+  "onemli_maddeler": [
+    "Qwen3.8-27B'nin Q4 quant sürümü, ilk denemelerde yüksek performans sergilemişti.",
+    "Kullanıcılar, son dönemde modelin temel görevlerde hatalar verdiğini ve talimatları unuttuğunu bildiriyor.",
+    "Modelin bilinçli olarak nerfleştirildiği ve performansının düşürüldüğü iddiaları toplulukta tartışma yaratıyor."
+  ],
+  "kategori": "diger",
+  "onem": 2,
+  "onem_gerekce": "Kullanıcı deneyimi ve topluluk geri bildirimi açısından önemli ancak resmi bir ürün duyurusu ya da teknik güncelleme içermediği için etkisi sınırlıdır.",
+  "etiketler": [
+    "Qwen3.8-27B",
+    "quantization",
+    "llama.cpp",
+    "RTX 4090",
+    "model degradation"
+  ],
+  "anilan_modeller": [
+    "Qwen3.8-27B"
+  ],
+  "yorum_tr": "Modelin beklenmedik performans düşüşü, topluluk güvenini sarsabilir ve geliştiricilerin quantizasyon süreçlerini daha şeffaf hale getirmeleri gerektiğini gösteriyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://kingy.ai/wp-content/uploads/2026/08/download-2026-08-17T215417.958-1024x572.png",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xoeeyf/qwen3827b_has_become_unuseable_recently/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-05T09:31:10.000Z",
+  "slug": "qwen3-8-27b-has-become-unuseable-recently"
+}
