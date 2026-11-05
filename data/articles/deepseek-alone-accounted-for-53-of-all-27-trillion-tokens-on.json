@@ -1,0 +1,43 @@
+{
+  "baslik_tr": "OpenRouter'da Deepseek Modeli Tek Gün İçinde %53 Token Kullanımını Elde Etti, Açık Ağırlıklı Modeller %75'e Yaklaştı",
+  "ozet_tr": "OpenRouter platformunda dün gerçekleşen token tüketiminde Deepseek modeli tek başına tüm tokenlerin %53'ünü kullandı. Toplam 27 trilyon tokenin büyük bir kısmını oluşturan bu kullanım, açık ağırlıklı (open‑weights) modellerin de platformdaki payının %75'in üzerine çıktığını gösteriyor.",
+  "detayli_icerik_tr": "OpenRouter, farklı büyük dil modellerine (LLM) tek bir API üzerinden erişim sağlayan bir ara katman hizmeti olarak, geliştiriciler ve araştırmacılar arasında yoğun bir ilgi görüyor. Platformun günlük token raporuna göre, 27 trilyon tokenlik işlem hacmi içinde Deepseek modeli yalnız başına %53'lük bir paya sahipti. Bu oran, Deepseek'in hem maliyet etkinliği hem de performansıyla kullanıcıların tercihini büyük ölçüde yansıttığını gösteriyor.\n\nİlginç bir diğer veri ise açık ağırlıklı (open‑weights) modellerin toplam token tüketimindeki payının %75'in üzerine çıkması. Open-weights laboratuvarları, topluluk tarafından geliştirilen ve açık kaynak kodlu modelleri kapsıyor; bu modellerin artan benimsenmesi, kapalı kaynak büyük modellerin pazar payına karşı bir denge oluşturuyor. Kullanıcıların maliyet, özelleştirilebilirlik ve şeffaflık gibi faktörleri göz önünde bulundurarak bu modelleri tercih ettiği görülüyor.\n\nDeepseek'in bu yüksek kullanım oranı, modelin son güncellemeleri ve yeni fine‑tuning teknikleriyle sağladığı iyileştirmelerden kaynaklanıyor olabilir. Model, özellikle kod üretimi, metin tamamlama ve sohbet uygulamalarında düşük gecikme süresi ve yüksek doğruluk oranları sunarak rekabet avantajı elde etmiş durumda. Açık ağırlıklı modellerin yükselişi ise, topluluk destekli inovasyonun ve açık veri setlerinin AI ekosistemindeki etkisini bir kez daha ortaya koyuyor.\n\nBu istatistikler, OpenRouter gibi ara platformların sadece bir erişim noktası olmanın ötesinde, model ekosisteminin dinamiklerini şekillendiren bir gösterge panosu haline geldiğini işaret ediyor. Geliştiriciler, token maliyetlerini optimize etmek ve modellerin performansını karşılaştırmak için bu tür kullanım verilerini yakından takip etmeye başlayacak.",
+  "onemli_maddeler": [
+    "Deepseek modeli, OpenRouter'da tek bir günde %53 token payına ulaştı.",
+    "Toplam 27 trilyon token işlem hacmi içinde Deepseek'in etkisi belirgin.",
+    "Açık ağırlıklı (open‑weights) modellerin platformdaki toplam token payı %75'in üzerine çıktı.",
+    "Bu dağılım, maliyet ve şeffaflık odaklı modellerin artan benimsenmesini gösteriyor."
+  ],
+  "kategori": "benchmark",
+  "onem": 3,
+  "onem_gerekce": "Token kullanım istatistikleri, model tercihleri ve pazar dinamikleri hakkında değerli veri sağlasa da, doğrudan bir ürün ya da model çıkışı içermediği için sektörel etki orta seviyededir.",
+  "etiketler": [
+    "Deepseek",
+    "OpenRouter",
+    "Token Usage",
+    "Open-weights",
+    "AI Models"
+  ],
+  "anilan_modeller": [
+    "Deepseek"
+  ],
+  "yorum_tr": "Deepseek'in yüksek token payı, performans ve maliyet dengesiyle geliştiricilerin gözdesi olduğunu gösteriyor. Açık ağırlıklı modellerin %75 üzerindeki kullanımı ise topluluk odaklı AI çözümlerinin giderek daha fazla benimsenmeye başladığını işaret ediyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Deepseek",
+      "benchmark": "OpenRouter Token Share",
+      "skor": 53,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Deepseek alone accounted for 53% of all (27 trillion) tokens on Openrouter yesterday."
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/b9gkyw2jpnzh1.png?width=640&crop=smart&auto=webp&s=ba935ec9aa006f7266f84e44adaf22192906f3cb",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xnz8ct/deepseek_alone_accounted_for_53_of_all_27/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-04T20:39:28.000Z",
+  "slug": "deepseek-alone-accounted-for-53-of-all-27-trillion-tokens-on"
+}

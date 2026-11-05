@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "Claude ile Prokaryotik Vault Parçacıklarının İlk 3D Yapısı ve Hızlandırılmış Keşif",
+  "ozet_tr": "Anthropic'in biyoloji araştırma laboratuvarı, Claude yapay zekâsını kullanarak prokaryotik hücrelerde bulunan bir vault parçacığının ilk 3D yapısını ortaya koydu. Model, izolasyon süresini üç günden 90 dakikaya, ilk yapısal modelin hazırlanmasını ise haftalardan 34 saate indirdi.",
+  "detayli_icerik_tr": "Anthropic, vault adı verilen büyük protein kabuklarının işlevinin hâlâ belirsiz olduğu bir gerçeği, Claude'un araştırma sürecindeki her adımda aktif rol almasıyla aşmaya çalıştı. Claude, protein veri tabanlarını tarayarak vault proteinlerinin prokaryotlarda ve bakteriyofajlarda bulunabileceğini tespit etti, DNA konstrüksiyonlarını tasarladı ve izolasyon protokolünü optimize etti. Geleneksel üç günlük izolasyon yöntemi yerine, Claude'un önerdiği boyut dışı kromatografi yöntemi sayesinde vaultlar 90 dakikada saflaştırıldı.\n\nCryo‑EM ile incelenen prokaryotik vault, 96 kopya tek bir protein (L05) tarafından oluşturulmuş ve yaklaşık 9,5 megadalton kütleye sahip. Uzunluğu 54 nm, genişliği 45 nm olan bu yapı, memeli vaultlarından daha kısa ama daha küresel olduğu için %25 daha fazla hacim barındırıyor. Kapak bölgesi üç aşamalı bir kubbe şeklinde kapanıyor ve aynı protein zincirinin farklı konformasyonları bu aşamaları oluşturuyor.\n\nAraştırmacılar, Claude ile birlikte 15 farklı protein varyantı ürettiler; bazı tek mutasyonlar kapak bölgesinde parçacığın kapanmasını engelleyerek açık, rozet benzeri yapılar ortaya çıkardı. Ayrıca, protein zincirindeki tekrar segmentlerini iki katına çıkararak insan vaultındaki 78 yerine 96 kopya içeren daha büyük bir vault elde edildi; bu, hacmi yaklaşık %20 artırdı. Yapının içinde, her bir protein kopyasının ortasında coenzim A benzeri bir küçük molekülün bağlandığı bir pocket tespit edildi, bu da fonksiyonel ipuçları sunabilir.\n\nProje, Claude'un çok ajanlı bir ortamda RELION gibi açık kaynaklı yazılımları kurup çalıştırmasıyla 34 saat içinde ilk tam modelin, bir hafta içinde ise nihai haritaların elde edilmesini sağladı. Bu hız, geleneksel biyolojik yapı belirleme süreçlerinin haftalarca sürebileceği gerçeğiyle karşılaştırıldığında çarpıcı bir verimlilik artışı gösteriyor. Araştırma ekibi, Claude'un hatalarını da belgeleyerek modelin geliştirilmesine katkı sağladı ve bu deneyimin, büyük biyomoleküler komplekslerin keşfinde yapay zekânın rolünü yeniden tanımlayabileceğini vurguladı.",
+  "onemli_maddeler": [
+    "Prokaryotik hücrelerde bulunan bir vault parçacığının ilk 3D yapısı çözüldü; 96 kopya proteinle 9,5 MDa kütleye sahip.",
+    "Claude sayesinde vault izolasyonu 3 günden 90 dakikaya, yapısal modelleme 2 haftadan 34 saate indirildi.",
+    "Protein tasarımında yapılan mutasyonlar kapak kapanışını engelleyerek yapısal fonksiyonel bölgelerin önemini gösterdi.",
+    "Vault kapağındaki pocket içinde coenzim A benzeri bir molekül tespit edildi, potansiyel fonksiyonel ipucu sağladı."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "Claude'un laboratuvar süreçlerini hızlandırması ve yeni bir biyolojik yapının keşfi, yapay zekâ destekli temel biyoloji araştırmalarının sınırlarını genişletiyor.",
+  "etiketler": [
+    "vault",
+    "cryogenic electron microscopy",
+    "protein engineering",
+    "AI-assisted research",
+    "Claude"
+  ],
+  "anilan_modeller": [
+    "Claude"
+  ],
+  "yorum_tr": "Claude'un araştırma sürecine entegrasyonu, biyolojik keşiflerde zaman ve kaynak tasarrufu sağlayarak laboratuvar verimliliğini artırıyor; bu da yapay zekânın temel bilimlerde daha yaygın kullanılmasının önünü açıyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/99ce1c2ac2d0649d677f097132829da2ab3c4e18-1280x1280.jpg",
+  "url": "https://www.anthropic.com/research/investigating-vault-particles-with-claude",
+  "source": "Anthropic Research",
+  "sourceTier": "resmi",
+  "date": "2026-11-04T00:00:00.000Z",
+  "slug": "investigating-vault-particles-with-claude"
+}

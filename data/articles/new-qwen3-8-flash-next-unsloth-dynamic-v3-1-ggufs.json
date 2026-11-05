@@ -1,0 +1,73 @@
+{
+  "baslik_tr": "Qwen3.8-Flash-Next için Unsloth Dynamic V3.1 GGUF'ler Yayınlandı",
+  "ozet_tr": "Unsloth, Qwen3.8-Flash-Next modeline yönelik Dynamic V3.1 GGUF dosyalarını duyurdu. Yeni kuantizasyonlar, DeepSWE, Terminal Bench ve Aider Polyglot gibi testlerde %10‑15 daha yüksek doğruluk sağlıyor ve BF16, Q8_0, Q5_1, IQ4_NL gibi farklı hassasiyetlerde geçiş (engram switching) imkanı sunuyor.",
+  "detayli_icerik_tr": "Unsloth ekibi, Qwen3.8-Flash-Next modelinin yeni Unsloth Dynamic v3.1 GGUF sürümlerini toplulukla paylaştı. Bu sürümler, DeepSWE, Terminal Bench, Aider Polyglot ve benzeri benchmarklarda %10‑15 oranında doğruluk artışı göstererek önceki GSQ‑RCO referansına göre belirgin bir üstünlük sağlıyor. \n\nYeni sürümler, BF16, Q8_0, Q5_1 ve IQ4_NL gibi farklı kuantizasyon seviyeleri arasında dinamik geçiş (engram switching) yapabilen bir süreçle birlikte geliyor. Bu süreç, https://unsloth.ai/docs/models/qwen3.8-next#mix-n-match-engrams adresindeki dokümantasyonda ayrıntılı olarak açıklanıyor ve her bir kuantizasyonun dosya boyutu ve BF16'ya göre göreceli RMSE değerleri sunuluyor. \n\nBenchmark testleri 256K token uzunluğunda agentik görevler ve 128K token uzunluğunda diğer görevler için yürütüldü. Testler, sıcaklık 1.0, top_p 0.95, top_k 20 parametreleriyle, ceza uygulanmadan ve preserve_thinking ile xhigh reasoning ayarlarıyla gerçekleştirildi. Toplamda 26.2 milyar token üzerinden yapılan testlerde DeepSWE 18.1 milyar, Terminal Bench ise 5.2 milyar token tüketti; LiveCodeBench üç kez, HMMT ve diğer testler 8‑16 kez tekrarlandı. \n\nDosya boyutları ve RMSE değerleri şu şekilde: BF16 (102.4 GB, RMSE 0), Q8_0 (54.4 GB, RMSE 0.0053), Q5_1 (38.4 GB, RMSE 0.0376) ve IQ4_NL (28.8 GB, RMSE 0.0757). Tüm yeni UD 3.1 kuantizasyonları HuggingFace üzerindeki https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF adresinden indirilebilir. Küçük kuantizasyonlar güncellenmiş olup, UD‑Q4_K_XL ve daha büyük boyutların da yakında güncellenmesi planlanıyor.",
+  "onemli_maddeler": [
+    "Dynamic V3.1 GGUF'ler %10‑15 daha yüksek doğruluk sunuyor.",
+    "BF16, Q8_0, Q5_1 ve IQ4_NL arasında dinamik engram geçişi sağlanıyor.",
+    "Benchmark testleri 26.2 B token üzerinden, DeepSWE ve Terminal Bench ağırlıklı olarak yürütüldü.",
+    "RMSE değerleri BF16'ya göre ölçülerek kuantizasyon kalitesi belirlendi."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Yeni kuantizasyonlar, popüler Qwen3.8 modeline önemli performans artışı getiriyor ve topluluk içinde geniş kullanım potansiyeli taşıyor.",
+  "etiketler": [
+    "Qwen3.8-Flash-Next",
+    "Unsloth",
+    "GGUF",
+    "Benchmark",
+    "Kuantizasyon"
+  ],
+  "anilan_modeller": [
+    "Qwen3.8-Flash-Next-engram-BF16.gguf",
+    "Qwen3.8-Flash-Next-engram-Q8_0.gguf",
+    "Qwen3.8-Flash-Next-engram-Q5_1.gguf",
+    "Qwen3.8-Flash-Next-engram-IQ4_NL.gguf"
+  ],
+  "yorum_tr": "Bu güncellemeler, geliştiricilere daha düşük bellek tüketimiyle yüksek doğruluk sağlayan seçenekler sunarak model dağıtımını kolaylaştırıyor ve özellikle sınırlı donanım ortamlarında performans artışı vaat ediyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen3.8-Flash-Next-engram-Q8_0.gguf",
+      "benchmark": "RMSE vs BF16",
+      "skor": 0.0053,
+      "birim": "RMSE",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Q8_0 54.4 GB 0.0053"
+    },
+    {
+      "model": "Qwen3.8-Flash-Next-engram-Q5_1.gguf",
+      "benchmark": "RMSE vs BF16",
+      "skor": 0.0376,
+      "birim": "RMSE",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Q5_1 38.4 GB 0.0376"
+    },
+    {
+      "model": "Qwen3.8-Flash-Next-engram-IQ4_NL.gguf",
+      "benchmark": "RMSE vs BF16",
+      "skor": 0.0757,
+      "birim": "RMSE",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "IQ4_NL 28.8 GB 0.0757"
+    },
+    {
+      "model": "Qwen3.8-Flash-Next-engram-BF16.gguf",
+      "benchmark": "RMSE vs BF16",
+      "skor": 0,
+      "birim": "RMSE",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "BF16 102.4 GB 0"
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/m6soixxrymzh1.png?width=640&crop=smart&auto=webp&s=0ca455ec4f0ca84c5f95fabf28a8a1914f8916b6",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xnvbxn/new_qwen38flashnext_unsloth_dynamic_v31_ggufs/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-04T18:08:58.000Z",
+  "slug": "new-qwen3-8-flash-next-unsloth-dynamic-v3-1-ggufs"
+}

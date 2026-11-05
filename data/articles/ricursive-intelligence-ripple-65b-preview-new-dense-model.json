@@ -1,0 +1,82 @@
+{
+  "baslik_tr": "Ricursive Intelligence Ripple-65B-Preview: Yeni Yoğun 65B Model",
+  "ozet_tr": "Ricursive Intelligence, yeni 65 milyar parametreli yoğun model Ripple-65B-Preview'ı duyurdu. Model, yapılan ilk benchmark sonuçlarıyla Amerikan açık‑ağırlıklı modellerin ön saflarında yer alıyor ve özellikle kodlama ajanları için hafif bir post‑training sürecinden geçmiş. Bu çıkış, toplulukta uzun süredir beklenen ~70B ölçekli bir modelin nihai versiyonu olma potansiyeli taşıyor.",
+  "detayli_icerik_tr": "Ricursive Intelligence, Reddit'in LocalLLaMA topluluğunda Ripple-65B-Preview adlı yeni bir yoğun (dense) 65 milyar parametreli dil modelini ön izleme olarak yayınladı. Şirket, modelin \"midtraining, uzun bağlam, SFT, uzun bağlam SFT ve karışık alan RL\" gibi standart bir post‑training tarifesiyle eğitildiğini, ancak şu anki sürümün özellikle ajan‑tabanlı kodlama görevlerine odaklanan hafif bir post‑training aşamasından geçtiğini belirtti.\n\nModel, 80 katman ve 5120 boyutlu bir mimariye sahip; katman‑başına ince ve derin bir oran (4:1 SWA) ve global attention, gated attention, FFN aktivasyon kırpması, global NoPE ve değer residualları gibi tasarım kararları içeriyor. Ayrıca, modelin ön‑eğitim checkpoint'i, orta‑eğitim ya da sentetik Soru‑Cevap verisi kullanılmadan hazırlanmış.\n\nRipple-65B-Preview, topluluk tarafından sağlanan birkaç benchmark testinde Qwen3.8‑27B ve Qwen3.8‑Flash‑Next modelleriyle karşılaştırıldı. Terminal‑Bench 2.1'de %80.5 skor elde ederken, rakip Qwen3.8‑27B %73.0 puan aldı. SWE‑bench Pro'da %61.4, DeepSWE'de %1.1, IFBench'de %79.2 ve GPQA Diamond'da %85.2 puanlar elde edildi; bu sonuçlar modelin genel performansının rekabetçi olduğunu gösteriyor.\n\nModelin GGUF formatındaki boyutları da duyuruldu: Q8_0 sürümü 68.8 GB, Q4_K_M sürümü ise 38.8 GB. Kullanıcılar, AtomicChat GGUF'lerini (imatrix yakında) indirerek modelin yerel ortamda çalıştırılmasını sağlayabilir. Ricursive Intelligence, modelin kodlama ajanları için potansiyelini vurgularken, tam potansiyeline ulaşmak için daha kapsamlı bir post‑training sürecinin planlandığını belirtti.",
+  "onemli_maddeler": [
+    "Ripple-65B-Preview, 65 Milyar parametreli yoğun bir model olarak Amerikan açık‑ağırlıklı modellerin ön saflarında yer alıyor.",
+    "Terminal‑Bench 2.1'de %80.5 skorla Qwen3.8‑27B'yi geride bıraktı; diğer benchmarklarda da rekabetçi sonuçlar gösterdi.",
+    "Model, hafif bir post‑training süreciyle özellikle ajan‑tabanlı kodlama görevlerine odaklandı ve GGUF formatında iki farklı sıkıştırma seçeneği sunuyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Yeni bir 65 B yoğun modelin ön izleme sürümü, açık‑ağırlıklı LLM ekosisteminde rekabeti artırıyor ve toplulukta uzun süredir talep edilen bir ölçeği sunuyor.",
+  "etiketler": [
+    "dense model",
+    "benchmark",
+    "open-weight",
+    "LLM",
+    "kodlama ajanı"
+  ],
+  "anilan_modeller": [
+    "Ripple-65B-Preview",
+    "Muse Spark Open",
+    "Reflection's Beam",
+    "Qwen3.8-27B",
+    "Qwen3.8-Flash-Next"
+  ],
+  "yorum_tr": "Ripple-65B-Preview, yüksek parametre sayısı ve güçlü benchmark sonuçlarıyla geliştiricilere daha güçlü bir açık‑ağırlıklı araç sunuyor; tam post‑training aşamasına geçildiğinde performansının daha da artması bekleniyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Ripple-65B-Preview",
+      "benchmark": "Terminal-Bench 2.1",
+      "skor": 80.5,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Terminal-Bench 2.1 80.5 73.0 —"
+    },
+    {
+      "model": "Ripple-65B-Preview",
+      "benchmark": "SWE-bench Pro",
+      "skor": 61.4,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "SWE-bench Pro 61.4 61.7 62.5"
+    },
+    {
+      "model": "Ripple-65B-Preview",
+      "benchmark": "DeepSWE",
+      "skor": 1.1,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "DeepSWE 1.1 44.3 42.2"
+    },
+    {
+      "model": "Ripple-65B-Preview",
+      "benchmark": "IFBench",
+      "skor": 79.2,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "IFBench 79.2 79.5 81.3"
+    },
+    {
+      "model": "Ripple-65B-Preview",
+      "benchmark": "GPQA Diamond",
+      "skor": 85.2,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "GPQA Diamond 85.2 89.2 91.7"
+    }
+  ],
+  "gorsel_url": "https://external-preview.redd.it/nPRXa50Rrj7qDtMKbtHAdYhz0ZRzwREQWzYRM3zJ1uY.png?width=640&crop=smart&auto=webp&s=b9f36b6b573c6e511bbccf24a2ba504a28c44cec",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xo2arv/ricursive_intelligence_ripple65bpreview_new_dense/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-04T22:42:48.000Z",
+  "slug": "ricursive-intelligence-ripple-65b-preview-new-dense-model"
+}

@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "Binlerce Yol Azaldı: OpenAI'nin Linux Çekirdeği Güvenlik Araştırması",
+  "ozet_tr": "OpenAI, Linux çekirdeğinde 2.308 aday bulgu tespit eden ve bunların 1.724'ünü dinamik olarak doğrulayan bir güvenlik araştırma hattı geliştirdi. Bu süreç 948 yerel yetki yükseltme (LPE) exploit'i ve aynı sayıda yamayı ortaya çıkardı; maliyet analizi ise model tabanlı güvenlik araştırmalarının hâlâ yüksek bütçeli bir çaba olduğunu gösterdi.",
+  "detayli_icerik_tr": "OpenAI Cyber ekibi, Linux çekirdeği gibi 40 milyondan fazla satır kod içeren kritik bir kod tabanında güvenlik açıklarını sistematik bir şekilde keşfetmek için beş aşamalı bir prototip pipeline oluşturdu. İlk aşamada Scout ajanları, düşük ayrıcalıklı kullanıcılar tarafından erişilebilen ve güvenlik açısından kritik olan %7'lik bir kod dilimini (yaklaşık 2,8 milyon satır) belirleyerek 5.034 denetim hedefi tespit etti ve bu adım $3.426 API kredisi maliyetle tamamlandı.\n\nAnalyst ajanları, bu hedefleri tarayarak 12 saat içinde 2.308 aday bulgu üretti; bu aşama $316.549 maliyetle gerçekleşti. Sonraki doğrulama aşamasında, triage ajanları izole bir VM'de KASAN ile çalıştırarak 1.724 bulguyu %74,7 oranında yeniden üretebildi ve $73.330 maliyetle sonuçlandırdı. Doğrulama sonrası, exploit geliştirme ajanları 1.238 yerel yetki yükseltme ve 313 bilgi sızıntısı adayını test ederek sırasıyla 1.169 ve 291 çalışan exploit üretti; bu aşama toplam $775.929 API kredisi harcandı.\n\nÜretilen exploit'ler için 948 farklı yamalar geliştirildi ve Linux çekirdek bakımcılarıyla iş birliği içinde raporlandı. Araştırma sürecinde, bakımcıların 61 LPE'yi zaten yamalamış, 43'ü sahneleme yamaları almış ve 299'u hâlen tartışma aşamasında olduğu gözlemlendi. Ayrıca, GPT‑5.6 Sol modeli 166 benzersiz LPE bulurken, yeni nesil cyber modeli aynı dönemde 948 LPE keşfetti; bu da model yeteneklerinin hızla artığını gösterdi.\n\nAraştırma, ajanların 10 yeni exploit tekniği geliştirdiğini ve bu tekniklerin kernel güvenlik uzmanları için de yeni olduğunu ortaya koydu. OpenAI, bu bulguların savunma tarafına maliyet avantajı sağlamak ve saldırganların maliyetini artırmak amacıyla kullanılmasını vurguladı.",
+  "onemli_maddeler": [
+    "2.308 aday bulgu, 1.724 doğrulanan güvenlik açığı ve 948 yerel yetki yükseltme exploit'i üretildi.",
+    "Pipeline'ın beş aşaması toplam $1,213,430 API kredisi maliyetle çalıştı; doğrulama aşaması en pahalı adımlardan biriydi.",
+    "Model yetenekleri arttıkça keşfedilen LPE sayısı 166'dan 948'e yükseldi; yeni exploit teknikleri geliştirildi.",
+    "Linux çekirdek bakımcıları hızlı bir şekilde yamalar yayınladı; 61 LPE zaten yamalanmış, 43 sahneleme aşamasındaydı."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "OpenAI'nin büyük ölçekli kod tabanında model destekli güvenlik araştırması, AI güvenliği ve açık keşfi süreçlerinde yeni bir metodoloji sunarak sektörde önemli bir dönüşüm yaratıyor.",
+  "etiketler": [
+    "Linux kernel",
+    "vulnerability research",
+    "AI security",
+    "OpenAI Cyber",
+    "Patch the Planet"
+  ],
+  "anilan_modeller": [
+    "GPT-5.5 Cyber",
+    "GPT-5.6 Sol",
+    "upcoming cyber model"
+  ],
+  "yorum_tr": "Bu araştırma, AI destekli güvenlik taramalarının ölçeklenebilirliğini gösterirken, maliyet ve doğrulama süreçlerinin hâlâ optimize edilmesi gerektiğini ortaya koyuyor; geliştiriciler ve savunma ekipleri, model yeteneklerindeki hızlı ilerlemeyi yakından izlemeli.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://images.ctfassets.net/kftzwdyauwt9/400PQ4WTCOvXwwvk1OMOHv/03970ddeafd22fdbc9832669deacc59c/a-thousand-fewer-paths-to-root-social.png?w=1600&h=900&fit=fill",
+  "url": "https://openai.com/index/a-thousand-fewer-paths-to-root",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-11-04T08:00:00.000Z",
+  "slug": "a-thousand-fewer-paths-to-root"
+}
