@@ -1,0 +1,112 @@
+{
+  "baslik_tr": "Thinking Machines' Inkling 2 Small, Batı açık ağırlıklı modeller arasında birinci sırada",
+  "ozet_tr": "Thinking Machines, eski OpenAI CTO'su Mira Murati'nin kurduğu startup, 594 milyar parametreli ancak aynı anda 17 milyar aktif parametre kullanan Inkling 2 Small modelini tanıttı. Model, Artificial Analysis Intelligence Index'te 31 puan alarak batı açık ağırlıklı modeller arasında lider konuma yükseldi ve özellikle ajan tabanlı görevlerde büyük sıçrama yakaladı. Ancak bu performans artışı, görev başına yaklaşık 1,18 $ maliyetle önceki sürümün altı katı bir fiyat artışı anlamına geliyor.",
+  "detayli_icerik_tr": "Thinking Machines, OpenAI'nin eski CTO'su Mira Murati tarafından kurulan bir girişim olarak, Inkling 2 Small adlı yeni bir mixture-of-experts (MoE) modelini duyurdu. Toplam 594 milyar parametreye sahip model, aynı anda yalnızca 17 milyar parametreyi aktif tutarak hem ölçeklenebilirlik hem de verimlilik sağlıyor. Metin ve görsel girdileri işleyebilen Inkling 2 Small, kullanıcıların hız ve detay seviyesi arasında seçim yapmalarına olanak tanıyan ayarlanabilir bir düşünme derinliği sunuyor.\n\nModel, Artificial Analysis Intelligence Index'te 31 puan elde ederek bir önceki Inkling Small (13 puan) modelinden 18 puanlık bir sıçrama kaydetti ve Google Gemini 3.8 Flash ile neredeyse eşdeğer bir performans sergiledi. En belirgin iyileşmeler, çok adımlı iş akışlarını bağımsız olarak yürütebilen ajan görevlerinde görülüyor; AutomationBench-AA skorunda %5'ten %46'ya, FrontierCode 2.0'da ise %5'ten %25,4'e yükseliş kaydedildi. AA‑Briefcase bilgi‑iş benchmark'inde ise 1 527 Elo puan alarak rakiplerinin çok önünde yer aldı.\n\nGörsel yeteneklerde de öne çıkan Inkling 2 Small, GDP.pdf (karmaşık PDF belgelerinden soru yanıtlama) benchmark'inde %25,2 ile en yüksek skoru, MMMU Pro (akademik diyagram ve şekil anlama) testinde %81,6, PerceptionBench (görsel algı) testinde %64,7 ve DesignArena Website (AI‑tarafından oluşturulan web sitelerinin değerlendirilmesi) testinde 1 340 Elo puan elde etti. Ayrıca DeepSWE (kodlama) benchmark'inde %72,1 ve SWEBench Pro v2 (Hard) testinde %86,3 başarı gösterdi.\n\nPerformans artışı, modelin ortalama 150 000 çıktı tokeni üretmesi ve görev başına $1,18 maliyetle çalışmasıyla birlikte geliyor; bu, önceki sürümün altı katı bir maliyet artışı demek. Yine de Gemini 3.8 Flash ($7,77) ve Claude Sonnet 5.5 ($10,02) gibi rakiplerine kıyasla hâlâ daha uygun bir fiyat aralığında. Inkling 2 Small, şu anda şirketin Tinker platformu üzerinden tescilli bir hizmet olarak sunuluyor ve ağırlıkların Apache 2.0 lisansı altında açık kaynak olarak yayınlanması planlanıyor. Model, 12 trilyon tokenlik oldukça kompakt bir eğitim süreci geçirdi; bu süreçte sadece 3 trilyon token, 2 048 GPU ve dokuz gün süren bir pekiştirmeli öğrenme aşaması kullanıldı.",
+  "onemli_maddeler": [
+    "Inkling 2 Small, 594 M parametreli MoE yapısı ile aynı anda 17 M aktif parametre kullanıyor.",
+    "Artificial Analysis Intelligence Index'te 31 puan alarak batı açık ağırlıklı modeller arasında lider konuma geldi.",
+    "AutomationBench-AA ve FrontierCode 2.0 gibi ajan görevlerinde %5'ten %46 ve %25,4'e büyük sıçrama yaptı.",
+    "Model, görev başına $1,18 maliyetle çalışıyor; bu, önceki sürümün altı katı ama hâlâ rakiplerinden daha ucuz."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Inkling 2 Small, açık ağırlıklı modeller arasında hem performans hem de maliyet açısından yeni bir denge kurarak sektörde rekabeti yeniden şekillendiriyor ve geniş bir kullanıcı kitlesi için erişilebilir bir yüksek kapasiteli model sunuyor.",
+  "etiketler": [
+    "Inkling 2 Small",
+    "Mixture-of-Experts",
+    "AI Benchmark",
+    "Open-Weight",
+    "Thinking Machines"
+  ],
+  "anilan_modeller": [
+    "Inkling 2 Small",
+    "Inkling Small",
+    "Gemini 3.8 Flash",
+    "Claude Sonnet 5.5",
+    "DeepSeek V4.1 Flash",
+    "Kimi K3",
+    "Kimi K3.1 Pro"
+  ],
+  "yorum_tr": "Inkling 2 Small, yüksek parametre verimliliği ve güçlü ajan yetenekleriyle geliştiricilere daha az maliyetle güçlü bir temel model sunuyor; ancak token tüketimi ve sınırlı ses/sohbet desteği, bazı uygulama senaryolarında dikkat gerektirebilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Inkling 2 Small",
+      "benchmark": "Artificial Analysis Intelligence Index",
+      "skor": 31,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "On the Artificial Analysis Intelligence Index, Inkling 2 Small scores 31, an 18-point gain over its predecessor."
+    },
+    {
+      "model": "Inkling 2 Small",
+      "benchmark": "AutomationBench-AA",
+      "skor": 46,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "On AutomationBench-AA the score jumps from 5 to 46 percent."
+    },
+    {
+      "model": "Inkling 2 Small",
+      "benchmark": "FrontierCode 2.0",
+      "skor": 25.4,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "On FrontierCode 2.0, Inkling 2 Small reaches 25.4 percent."
+    },
+    {
+      "model": "Inkling 2 Small",
+      "benchmark": "DeepSWE",
+      "skor": 72.1,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "On DeepSWE it reaches 72.1 percent."
+    },
+    {
+      "model": "Inkling 2 Small",
+      "benchmark": "SWEBench Pro v2 (Hard)",
+      "skor": 86.3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "On SWEBench Pro v2 (Hard) it reaches 86.3 percent."
+    },
+    {
+      "model": "Inkling 2 Small",
+      "benchmark": "GDP.pdf",
+      "skor": 25.2,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "On the document benchmark GDP.pdf, it scores 25.2 percent, the highest among the compared models."
+    },
+    {
+      "model": "Inkling 2 Small",
+      "benchmark": "MMMU Pro",
+      "skor": 81.6,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "On MMMU Pro, Inkling 2 Small reaches 81.6 percent."
+    },
+    {
+      "model": "Inkling 2 Small",
+      "benchmark": "PerceptionBench",
+      "skor": 64.7,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "On PerceptionBench, it leads with 64.7 percent."
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/07/thinking_machines_inkling_logo.png",
+  "url": "https://the-decoder.com/thinking-machines-inkling-2-small-claims-top-spot-among-western-open-weight-models/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-06T13:25:09.000Z",
+  "slug": "thinking-machines-inkling-2-small-claims-top-spot-among-west"
+}

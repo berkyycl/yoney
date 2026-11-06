@@ -1,0 +1,55 @@
+{
+  "baslik_tr": "Ücretsiz Çin AI Modelleri Ağ Saldırılarında Kapalı Modelleri Yakından Takip Ediyor",
+  "ozet_tr": "Vals araştırması, açık ağırlıklı Çin yapay zekâ modellerinin, kapalı laboratuvar modelleri kadar etkili ağ saldırıları gerçekleştirebildiğini ortaya koydu. OpenAI'nin Daybreak modeli %81 başarıyla görevleri tamamlarken, DeepSeek %73 oranla yakından eşleşti. Açık modellerin hem maliyet hem de erişim avantajı, siber güvenlik dinamiklerini kökten değiştirebilir.",
+  "detayli_icerik_tr": "Vals, iki farklı sahte kurumsal ağ senaryosunda çeşitli yapay zekâ modellerinin çok adımlı ağ saldırı talimatlarını ne kadar iyi yerine getirdiğini ölçtü. İlk senaryo, halka açık bir web sitesi üzerinden erişilebilen bir kurumsal ağdı; ikinci senaryoda ise bir ağın ele geçirilmesi, ardından ikinci bir ağa geçiş sağlanması gerekiyordu. Bu testlerde, OpenAI'nin sadece güvenilir ortaklara sunduğu Daybreak modeli ortalama %81 başarı oranıyla en yüksek performansı gösterdi. Çin menşeli açık ağırlıklı DeepSeek modeli ise %73 başarıyla görevleri tamamlayarak farkı dar bir aralıkta kapattı.\n\nAraştırma, aynı zamanda maliyet farkını da vurguladı. Daybreak (GPT-6‑Sol tabanlı) bir saldırı için token başına 17‑46 dolar arasında bir maliyet gerektirirken, DeepSeek sadece 2‑3 dolar arasında bir ücretle çalışabiliyor. Açık modellerin kendi donanımınızda çalıştırılabilmesi, hem maliyet hem de ölçeklenebilirlik açısından büyük bir avantaj sağlıyor. Vals CEO'su Rayan Krishnan, bu durumun savunma ekiplerini de açık modelleri tercih etmeye yönlendirebileceğini belirtti.\n\nBu bulgular, ABD merkezli laboratuvarların (Anthropic gibi) yeni modelleri sınırlı erişimle sunma stratejisinin etkisini sorgulatıyor. Anthropic'in Project Glasswing projesi, gelişmiş modelleri savunma ekiplerine erken erişim sağlamak amacıyla tasarlandı; ancak Vals'in verileri, bu tür kapalı modellerin artık açık modellerle rekabet edebileceğini gösteriyor. Uzmanlar, bu durumun siber suçluların da aynı açık modelleri kullanarak daha sofistike saldırılar düzenleyebileceği anlamına geldiğini uyarıyor.\n\nGüvenlik topluluğu, hâlâ AI'nın siber güvenlik temellerini kökten değiştirip değiştirmediği konusunda tartışıyor. Bazı analistler, yapay zekânın mevcut güvenlik zafiyetlerini sadece hızlandırdığını, yeni bir tehdit türü yaratmadığını savunurken, diğerleri açık modellerin yaygınlaşmasının saldırı yüzeyini genişleteceğini ve savunma stratejilerini yeniden şekillendireceğini öne sürüyor.",
+  "onemli_maddeler": [
+    "Açık ağırlıklı modeller, kapalı laboratuvar modelleriyle benzer seviyede ağ saldırısı yeteneği gösterdi.",
+    "Daybreak %81, DeepSeek %73 başarı oranıyla görevleri tamamladı; bazı görevlerde eşit performans sergiledi.",
+    "Open-source modeller, token başına 2‑3 dolar maliyetle kapalı modellere göre çok daha ucuz.",
+    "Bu gelişme, siber savunma ve saldırı stratejilerinin yeniden değerlendirilmesini zorunlu kılıyor."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Açık modellerin kapalı modellere eşdeğer siber saldırı yeteneği göstermesi, güvenlik ekosisteminde büyük bir paradigm değişikliğine işaret ediyor.",
+  "etiketler": [
+    "AI güvenliği",
+    "açık‑ağırlıklı modeller",
+    "siber saldırı",
+    "benchmark",
+    "DeepSeek"
+  ],
+  "anilan_modeller": [
+    "Daybreak",
+    "DeepSeek",
+    "GPT-6-Sol",
+    "Claude Mythos Preview"
+  ],
+  "yorum_tr": "Açık ağırlıklı modellerin artık kapalı sistemlerle rekabet edebilmesi, savunma ekiplerinin maliyet etkin çözümlere yönelmesini sağlayabilir; ancak aynı zamanda saldırganların da bu erişilebilir araçları kullanarak daha sofistike saldırılar düzenleme riskini artırıyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Daybreak",
+      "benchmark": "Mock corporate network hacking tasks",
+      "skor": 81,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "average completion rate across two test scenarios",
+      "kaynak_metinden_alinti": "The researchers found OpenAI’s most advanced cyber model, Daybreak... completing 81 percent of the tasks it was given in an average of two tests."
+    },
+    {
+      "model": "DeepSeek",
+      "benchmark": "Mock corporate network hacking tasks",
+      "skor": 73,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "average completion rate across two test scenarios",
+      "kaynak_metinden_alinti": "The Chinese open-weight model DeepSeek was not far behind, completing 73 percent of the objectives on average."
+    }
+  ],
+  "gorsel_url": "https://media.wired.com/photos/6aebae965d3f8b6dd99468be/master/pass/Security_Open-WeightAIModels.gif",
+  "url": "https://www.wired.com/story/free-chinese-ai-models-are-getting-scary-good-at-hacking/",
+  "source": "WIRED AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-06T18:43:43.000Z",
+  "slug": "free-chinese-ai-models-are-getting-scary-good-at-hacking"
+}

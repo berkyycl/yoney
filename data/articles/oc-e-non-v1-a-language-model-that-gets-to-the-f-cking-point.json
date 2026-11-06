@@ -1,0 +1,43 @@
+{
+  "baslik_tr": "Oc-e-Non-v1: Yanıt Uzunluğunu %50 Azaltan Yeni Dil Modeli",
+  "ozet_tr": "Oc-e-Non-v1, Qwen3-4B-Instruct-2507'nin tersleştirilmiş bir türevi olarak geliştirildi ve ortalama yanıt uzunluğunu yarıya indiriyor. Model, sadece \"evet\" ya da \"hayır\" gibi kısa cevaplar vermekle kalmayıp, kod örneklerinde de gereksiz açıklamaları atlayarak daha öz bir çıktı sunuyor.",
+  "detayli_icerik_tr": "Reddit'in LocalLLaMA topluluğu, Qwen3-4B-Instruct-2507 tabanlı Oc-e-Non-v1 modelini tanıttı. Model, \"Oc-e-Non\" (Occitan dilinde \"Evet ve Hayır\") takma adıyla, yanıtların ortalama uzunluğunu %50 oranında kısaltmayı hedefliyor. Geliştiriciler, bu tersleştirme işlemini Heretic adlı bir araçla, config.terse.toml yapılandırma dosyasını kullanarak gerçekleştirdiklerini belirtiyor.\n\nOc-e-Non-v1'in performans örnekleri, aynı soruya iki farklı modelin verdiği yanıtları yan yana gösteriyor. \"1+1 nedir?\" sorusuna GPT-5.6 Terra ayrıntılı bir açıklama sunarken, Oc-e-Non-v1 sadece \"2\" yanıtını veriyor. Benzer şekilde, \"Köpekler memeli mi?\" sorusuna uzun bir açıklama yerine sadece \"Yes\" yanıtı veriliyor. Python kodu örneğinde de model, gereksiz yorum satırlarını atlayarak sadece fonksiyon tanımını sunuyor.\n\nModelin arkasındaki teknik yaklaşım, Qwen'ın son yerel, düşünme yeteneği olmayan sürümünü (Qwen3-4B) temel alıyor. Bu sayede modelin mantık yürütme çabası kontrol edilemiyor, ancak tersleştirme sayesinde yanıtların özlülüğü artırılıyor. Geliştiriciler, bu tekniğin aynı zamanda prompt mühendisliğiyle de elde edilebileceğini, ancak model içinde kalıcı bir çözüm olarak sunulmasının ilgi çekici olduğunu vurguluyor.\n\nOc-e-Non-v1, topluluk tarafından hafif bir mizah unsuru olarak da görülüyor; geliştiriciler, Qwen4'ün çıkmasını beklerken bu tür deneysel modellerin araştırma ve geliştirme sürecine renk kattığını belirtiyor. Model, açık kaynaklı bir proje olarak Heretic'in en güncel master sürümüyle (pip install git+https://github.com/p-e-w/heretic.git) kolayca kurulabiliyor ve aynı tersleştirme yaklaşımı diğer modellerde de uygulanabilir.",
+  "onemli_maddeler": [
+    "Oc-e-Non-v1, Qwen3-4B-Instruct-2507'nin yanıt uzunluğunu %50 oranında kısaltıyor.",
+    "Model, Heretic aracı ve config.terse.toml dosyasıyla kolayca oluşturulabiliyor.",
+    "Yanıt örnekleri, aynı soruya iki modelin verdiği cevapları karşılaştırarak tersleştirmenin etkisini gösteriyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 3,
+  "onem_gerekce": "Topluluk tarafından geliştirilen bir tersleştirme modeli olması, LLM'lerde yanıt özlülüğü konusuna yeni bir bakış açısı getirse de henüz geniş çaplı bir kullanım veya ticari etkisi bulunmuyor.",
+  "etiketler": [
+    "LLM",
+    "Qwen",
+    "Model Tersification",
+    "Heretic",
+    "Open-source"
+  ],
+  "anilan_modeller": [
+    "Oc-e-Non-v1",
+    "Qwen3-4B-Instruct-2507"
+  ],
+  "yorum_tr": "Oc-e-Non-v1, yanıtların gereksiz ayrıntılardan arındırılması gerektiği senaryolarda faydalı olabilir; ancak mantık yürütme yeteneği sınırlı olduğu için karmaşık sorgular için hâlâ daha kapsamlı modeller tercih edilecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Oc-e-Non-v1",
+      "benchmark": "Mean response length reduction",
+      "skor": 50,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "It reduces Qwen's mean response length by 50%."
+    }
+  ],
+  "gorsel_url": "https://external-preview.redd.it/rJ6SiiGC0OQSFBHF10NaT6wxn_TwTlUK39r9wYNTRVU.png?width=640&crop=smart&auto=webp&s=0d7f7107338da87579181b71a4bada7b6dd8b145",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xpfhpm/ocenonv1_a_language_model_that_gets_to_the_fcking/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-06T15:23:37.000Z",
+  "slug": "oc-e-non-v1-a-language-model-that-gets-to-the-f-cking-point"
+}

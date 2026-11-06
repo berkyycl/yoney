@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "KURE-sparse-nano modeli, 0.6B yoğun gömme modellerini yerel sistemlerde geride bıraktı",
+  "ozet_tr": "Kullanıcılar, KURE-sparse-nano adlı ultra hafif SPLADE tabanlı gömme modelinin, Qwen3-Embedding-0.6B gibi 0.6 B parametreli yoğun modelleri aynı sorgu hızında ve çok daha düşük bellek tüketimiyle geçtiğini kanıtladı. Model, 8 GB RAM ve 1,5 GB VRAM sınırındaki bir Windows PC ya da 5‑yıllık M1 MacBook Air gibi düşük kaynaklı cihazlarda sorunsuz çalışıyor.",
+  "detayli_icerik_tr": "Yerel büyük dil modeli (RAG) uygulamaları, veri kümesi içinde metin arama için gömme modellerine dayanıyor. Ancak Qwen3-Embedding ya da Gemini Embedding gibi yoğun gömme modelleri, 8 GB RAM ve sınırlı GPU belleği bulunan ortamlarda çalıştırmakta zorlanıyor; hatta sistem aşırı ısınarak yeniden başlatılıyor. Bu soruna çözüm arayan bir geliştirici, SPLADE tabanlı bir yaklaşım olan KURE-sparse-nano modelini denedi.\n\nKURE-sparse-nano, geleneksel BM25 gibi seyrek (sparse) geri getirme yöntemini semantik anlamla birleştiriyor. Kullanıcı, kendi Mac'inde birkaç yüz sorgudan oluşan bir değerlendirme veri seti hazırladı; veri kümesi büyük ölçüde Korece, bir kısmı İngilizce içeriyordu. Test sonuçları, KURE-sparse-nano'nun Qwen3-Embedding-0.6B'yi benzer sorgu hızıyla geçmesinin yanı sıra, bellek kullanımını 1,5 GB VRAM'ın altına düşürerek çok daha stabil bir performans sunduğunu gösterdi.\n\nDeney, M5 çipli 16 GB RAM'li bir MacBook Air üzerinde gerçekleştirildi. Yoğun gömme modeli çalıştırıldığında cihaz aşırı ısınarak yeniden başlatıldı ve bellek hataları (OOM) ortaya çıktı. KURE-sparse-nano ise hiçbir OOM hatası vermeden test sürecini tamamladı. Ayrıca, modelin hem İngilizce hem de Korece metinlerde yüksek doğruluk sağlaması, çok dilli yerel RAG sistemleri için büyük bir avantaj olarak öne çıktı.\n\nGeliştirici, KURE-sparse-nano'nun kodunu ve AutoRAG Agent entegrasyonunu açık kaynak olarak paylaştığını belirtti. Rust tabanlı LanceDB indeksleme ve ters indeks (inverted index) uygulamalarıyla sorgu süresi daha da iyileştirildi. Sonuç olarak, düşük kaynaklı cihazlarda hızlı ve maliyet etkin bir yerel RAG çözümü arayanlar için SPLADE tabanlı seyrek modellerin yoğun gömme modellere göre üstün olduğu vurgulandı.",
+  "onemli_maddeler": [
+    "KURE-sparse-nano, 0.6 B parametreli yoğun gömme modellerine kıyasla aynı sorgu hızında ve %50'ye yakın daha az bellek tüketimi sağlıyor.",
+    "Model, 8 GB RAM ve 1,5 GB VRAM sınırındaki düşük kaynaklı PC'lerde ve 5‑yıllık M1 MacBook Air'de sorunsuz çalışıyor.",
+    "Hybrid (seyrek + yoğun) geri getirme, yalnızca seyrek SPLADE modeli kadar etkili olmuyor; tek başına KURE-sparse-nano daha iyi sonuç veriyor."
+  ],
+  "kategori": "benchmark",
+  "onem": 3,
+  "onem_gerekce": "Yerel RAG sistemlerinde düşük donanım gereksinimi ve yüksek performans sunması, geliştiriciler için pratik bir çözüm sağlasa da sektörel çapta büyük bir dönüşüm yaratmıyor.",
+  "etiketler": [
+    "SPLADE",
+    "KURE-sparse-nano",
+    "RAG",
+    "embedding",
+    "yerel inference"
+  ],
+  "anilan_modeller": [
+    "Qwen3-Embedding-0.6B",
+    "Gemini Embedding",
+    "SPLADE",
+    "KURE-sparse-nano"
+  ],
+  "yorum_tr": "Bu bulgu, düşük kaynaklı cihazlarda semantik arama için seyrek modellerin tercih edilmesinin maliyet ve enerji verimliliği açısından cazip bir alternatif olduğunu gösteriyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/qaye3fas000i1.png?width=140&height=98&auto=webp&s=d2bbde1361eea74fd316aa442b44a91d17563b0c",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xpdk0i/a_01b_model_just_killed_8b_embedding_models_i/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-06T14:02:37.000Z",
+  "slug": "a-0-1b-model-just-killed-8b-embedding-models-i-tried-it-out"
+}

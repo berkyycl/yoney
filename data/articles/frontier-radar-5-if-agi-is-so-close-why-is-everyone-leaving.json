@@ -1,0 +1,51 @@
+{
+  "baslik_tr": "Frontier Radar #5: AGI yakınsa neden herkes büyük laboratuvarları terk ediyor? Neolablar ve bahisleri",
+  "ozet_tr": "OpenAI ve Nvidia AGI'nin geldiğini duyururken, aynı dönemde en önde gelen araştırmacılar OpenAI, DeepMind ve Meta'dan ayrılarak kendi bağımsız laboratuvarlarını kuruyor. Bu \"neolab\"lar milyarlarca dolar fon topluyor ancak henüz bir ürün ya da akademik yayın sunmadı; temel inançları, mevcut devasa dil modeli tarifinin AGI'yi getirmeyecek olması.",
+  "detayli_icerik_tr": "OpenAI'nin GPT-6 Astra modelini tanıttıktan ve Nvidia CEO'su Jensen Huang'ın \"AGI geldi\" açıklamasının ardından, sektörde bir paradoks ortaya çıktı: pek çok kilit isim, Ilya Sutskever, Jerry Tworek, David Silver, Yann LeCun ve Jeff Dean gibi, büyük laboratuvarları terk ederek yeni araştırma şirketleri kurdu. Bu şirketler, \"neolab\" olarak adlandırılan, uzun vadeli teknik bahisler üzerine odaklanan bağımsız AI girişimleri olarak tanımlanıyor.\n\nNeolabların ortak özelliği, mevcut \"büyük model, büyük veri, pekiştirmeli öğrenme\" tarifinin AGI'ye ulaşmak için yetersiz olduğuna inanmaları. Bu bağlamda, 27 laboratuvar altı temel araştırma bahsi etrafında sınıflandırıldı: sürekli öğrenme, az örnekle öğrenme, deneyim temelli öğrenme ve benzeri. Örneğin, Adaption ve Core Automation modellerinin ağırlıklarını dağıtım sırasında güncelleyerek kullanıcıya özgü adaptasyon sağlamayı hedeflediği, Flapping Airplanes ve Ndea'nın ise çok az veriyle yetenek kazanmayı amaçladığı vurgulandı.\n\nFinansal açıdan bu girişimler büyük ilgi gördü. SSI (Safe Superintelligence) Nvidia ile ortaklık kurarak 5 milyar dolar yatırım aldı; Prometheus (Jeff Bezos'un girişimi) 12 milyar dolar topladı; Flapping Airplanes bir milyar dolar Series A ile 6 milyar değerlemeye ulaştı. Ancak bu fonların çoğu hâlâ ürün ya da akademik çıktı üretmemiş durumdaki laboratuvarlara yönlendirildi. Yatırımcıların motivasyonu, büyük şirketlerin inovasyon ikilemi (innovator's dilemma) nedeniyle kaçırabilecekleri teknik boşlukları küçük, çevik ekiplerin doldurabileceği inancı.\n\nBu trendin sektörel etkileri hâlâ belirsiz. Küçük laboratuvarların bir ürün geliştirmeden önce büyük bir modelin pazar lideri konumuna gelmesi durumunda, kısa bir rekabet avantajı elde etmeleri mümkün. TypeSafe AI'nin Jev karar modeli ve OpenAI'nin Decisions API'si arasındaki iki haftalık fark buna örnek. Ancak hâlâ büyük sorular var: bu yeni araştırma yaklaşımları gerçekten AGI'ye giden yolu kısaltabilecek mi, yoksa mevcut devasa ölçekli modellerin hâlâ hâkim kalacağı bir ekosisteme mi dönüşecek?",
+  "onemli_maddeler": [
+    "OpenAI, DeepMind ve Meta'dan önde gelen araştırmacıların bağımsız \"neolab\"lara geçişi ve bu laboratuvarların milyar dolarlık fon toplaması.",
+    "Neolabların ortak araştırma bahsi: mevcut büyük model ölçeğinin AGI'yi getirmeyecek olması ve bunun yerine sürekli öğrenme, az örnekle öğrenme ve deneyim temelli öğrenme gibi yaklaşımlar.",
+    "Nvidia'nın SSI ile ortaklığı ve büyük yatırım tutarları, büyük donanım sağlayıcılarının bu yeni girişimlere stratejik destek vermesi."
+  ],
+  "kategori": "diger",
+  "onem": 4,
+  "onem_gerekce": "AGI iddialarıyla büyük laboratuvarların içinde bir kırılma yaşanıyor; bu durum AI araştırma ekosisteminin yönünü ve yatırım akışlarını yeniden şekillendirebilir.",
+  "etiketler": [
+    "AGI",
+    "neolab",
+    "AI araştırma",
+    "finansman",
+    "sürekli öğrenme"
+  ],
+  "anilan_modeller": [
+    "GPT-6 Astra"
+  ],
+  "yorum_tr": "Neolabların yükselişi, büyük şirketlerin inovasyon ikilemini ortaya çıkararak yeni araştırma paradigmalarının hız kazanmasını sağlayabilir; ancak ürün ve ölçek açısından hâlâ büyük bir belirsizlik mevcut.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GPT-6 Astra",
+      "benchmark": "ARC-AGI-3",
+      "skor": 99.9,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "up to 99.9 percent in September",
+      "kaynak_metinden_alinti": "On ARC-AGI-3, launched in March, GPT-6 Astra scored up to 99.9 percent in September"
+    },
+    {
+      "model": "GPT-6 Astra",
+      "benchmark": "ARC-AGI-3",
+      "skor": 62.7,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "standard setup",
+      "kaynak_metinden_alinti": "and 62.7 percent in the standard setup"
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/11/Frontier-Radar-5-Neolabs.png",
+  "url": "https://the-decoder.com/frontier-radar-5-if-agi-is-so-close-why-is-everyone-leaving-the-neolabs-and-their-bets/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-06T15:55:23.000Z",
+  "slug": "frontier-radar-5-if-agi-is-so-close-why-is-everyone-leaving"
+}

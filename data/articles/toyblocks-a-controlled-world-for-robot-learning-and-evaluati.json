@@ -1,0 +1,65 @@
+{
+  "baslik_tr": "ToyBlocks: Robotik Öğrenme ve Değerlendirme İçin Kontrollü Simülasyon Çerçevesi",
+  "ozet_tr": "AllenAI, robotik araştırmacılarının eğitim, test ve hata ayıklama süreçlerini ölçekli ve tekrarlanabilir bir ortamda yürütmesini sağlayan ToyBlocks adlı açık kaynaklı bir FoundationWorld tanıttı. Çerçeve, gerçekçi fizik, otomatik görev ve gösteri üretimi ve uzun vadeli planlama ile düşük seviyeli kontrolü birleştirerek robotların bloklarla etkileşimini sistematik olarak incelemeye olanak tanıyor.",
+  "detayli_icerik_tr": "AllenAI, robotik sistemlerin karmaşık davranışlarını anlamak ve iyileştirmek için kontrollü bir laboratuvar ortamı gerektirdiğini vurgulayarak ToyBlocks'u tanıttı. Bu yeni FoundationWorld, bir robot kolu ve masa üzerindeki bloklardan oluşan basit bir sahne sunuyor; blokların yüzeylerinde harf ve renkler bulunuyor, bu da arama, sıralama ve harf dizme gibi yüksek seviyeli görevleri mümkün kılıyor. Fiziksel özellikler ve sahne parametreleri (blok boyutu, masa yüksekliği vb.) rastgele değiştirilebiliyor, böylece modellerin genelleme yetenekleri kapsamlı bir şekilde test edilebiliyor.\n\nToyBlocks, görev ve hareket planlayıcıları (TAMP) ve Isaac Lab tabanlı takviye öğrenme (RL) yöntemleriyle otomatik olarak kısa vadeli beceriler (itme, çevirme, yerleştirme) ve bunların ardışık kombinasyonlarını üretiyor. Bu süreç, tek bir GPU üzerinde paralel olarak yüzlerce planı çalıştırarak gerçek zamanın 24 katına kadar veri üretim hızı sağlıyor. Üretilen gösteriler, sensör gözlemleri üzerinden blok pozisyonlarını tahmin eden modelleri eğitmek için kullanılabiliyor; böylece teleoperasyon ihtiyacı ortadan kalkıyor.\n\nÇerçeve, yüksek seviyeli planlayıcı (Molmo 2 gibi bir VLM) ve düşük seviyeli eylem modeli (ManiFlow) arasındaki hiyerarşik yapıyı da destekliyor. Molmo 2, blokları işaretleyerek hangi becerinin uygulanacağını seçerken, ManiFlow robot kolunu gerçek zamanlı olarak kontrol ediyor. Bu mimari, araştırmacıların veri karışımları oluşturup belirli becerileri vurgulamalarına, veri miktarının model performansına etkisini ölçmelerine ve görülmemiş görevlerde genelleme yeteneğini incelemelerine imkan tanıyor.\n\nToyBlocks ayrıca, Claude Opus 5.5 gibi frontier modellerin araç çağrıları (Model Context Protocol) üzerinden doğal dil komutlarıyla blokları manipüle etmesini sağlayan bir web arayüzü sunuyor. Deneyler, bu modellerin blok harflerini tanıma, görevlerin uygulanabilirliğini belirleme ve kendi hipotezlerini test etme yeteneklerini ölçerek, hâlâ algı hataları ve yönlendirme sorunları yaşadıklarını ortaya koydu. Bu bulgular, robotik alanında veri odaklı araştırmaların ve araç‑model entegrasyonlarının ne kadar kritik olduğunu bir kez daha gösterdi.",
+  "onemli_maddeler": [
+    "ToyBlocks, gerçekçi fizik ve otomatik görev üretimiyle robotik araştırmalarda tekrarlanabilir bir test ortamı sunuyor.",
+    "İlk sürüm, blokların boyut, renk ve harf gibi özelliklerini rastgele değiştirerek model genelleme yeteneğini ölçebiliyor.",
+    "Claude Opus 5.5, 30/30 blok‑yığma görevini başarıyla tamamlayarak %100 başarı oranı elde etti; aynı modelin görev‑uygulanabilirlik testinde %63 başarı sağlandı."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "ToyBlocks, robotik araştırmacılarına veri üretimi, görev tasarımı ve model değerlendirmesi için ölçeklenebilir ve kontrol edilebilir bir platform sağladığından, akademik ve endüstriyel robotik çalışmalarının verimliliğini ve tekrarlanabilirliğini artıracak kritik bir araç olarak değerlendiriliyor.",
+  "etiketler": [
+    "robotik",
+    "simülasyon",
+    "veri üretimi",
+    "yapay zeka",
+    "foundationworld"
+  ],
+  "anilan_modeller": [
+    "Molmo 2",
+    "ManiFlow",
+    "Claude Opus 5.5",
+    "Claude Fable 5.1",
+    "MolmoAct 2",
+    "π0.5"
+  ],
+  "yorum_tr": "ToyBlocks, robotik araştırmalarda veri ve görev çeşitliliğini otomatikleştirerek model geliştirme sürecini hızlandırıyor; geliştiriciler daha az manuel çabayla geniş kapsamlı testler yapabilirken, kullanıcılar da robotların gerçek dünyadaki karmaşık senaryolara adaptasyonunu daha güvenilir bir şekilde değerlendirebilecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Claude Opus 5.5",
+      "benchmark": "Block-stacking task (30 tasks)",
+      "skor": 100,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "success rate",
+      "kaynak_metinden_alinti": "Claude Opus 5.5 solves all 30 of a group of block-stacking tasks ... 30 out of 30"
+    },
+    {
+      "model": "Claude Opus 5.5",
+      "benchmark": "Search-and-spell feasibility task",
+      "skor": 63,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "success or correct infeasibility declaration",
+      "kaynak_metinden_alinti": "agent was able to successfully solve or correctly declare infeasible 63% of the tasks"
+    },
+    {
+      "model": "ToyBlocks data generator",
+      "benchmark": "Real-time performance",
+      "skor": 24,
+      "birim": "x",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "relative to real time",
+      "kaynak_metinden_alinti": "reaching up to 24 times real-time performance"
+    }
+  ],
+  "gorsel_url": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/OAJMu2jr7i5jVAbmsKdZW.jpeg",
+  "url": "https://huggingface.co/blog/allenai/toyblocks",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-11-06T14:00:48.000Z",
+  "slug": "toyblocks-a-controlled-world-for-robot-learning-and-evaluati"
+}
