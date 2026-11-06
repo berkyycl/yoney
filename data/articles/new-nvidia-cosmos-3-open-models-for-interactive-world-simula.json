@@ -1,0 +1,36 @@
+{
+  "baslik_tr": "NVIDIA Cosmos 3 Açık Ağırlıklı Modelleriyle Etkileşimli Dünya Simülasyonu",
+  "ozet_tr": "NVIDIA, Cosmos 3 serisine dört yeni açık‑ağırlıklı checkpoint ekledi: Cosmos3‑Nano‑Transfer‑Auto, Cosmos3‑Nano‑Sim‑Auto, Cosmos3‑Nano‑Sim‑Transfer ve Cosmos3‑Nano‑Sim‑Bimanual. Bu modeller, çok‑sensörlü sürüş verisi üretiminden robotik eylem‑tabanlı video tahminine kadar etkileşimli dünya simülasyonunu gerçek‑zamanlı olarak destekliyor. OpenMDW 1.1 lisansı sayesinde hem ticari hem de akademik projelerde serbestçe kullanılabiliyor.",
+  "detayli_icerik_tr": "NVIDIA, Cosmos 3 dünya modeli geliştirme platformuna dört yeni açık‑ağırlıklı checkpoint ekledi. Cosmos3‑Nano‑Transfer‑Auto, çoklu kamera ve LiDAR senkronizasyonu sağlayarak farklı hava koşulları, aydınlatma ve günün saatine göre sürüş sahneleri üretirken, Cosmos3‑Nano‑Sim‑Auto bu verileri düşük gecikmeli, akış‑temelli bir biçimde gerçek zamanlı olarak oluşturuyor. Cosmos3‑Nano‑Sim‑Transfer, bir fizik simülatörünün kontrol sinyallerini ve metin komutlarını foto‑gerçekçi videolara dönüştürürken, Cosmos3‑Nano‑Sim‑Bimanual iki kollu robot eylemlerine karşılık gelen video çıktısı üretiyor.\n\nTüm modeller, Cosmos 3 Nano tabanından türetilmiş 16 milyar eğitilebilir parametreye sahip ve OpenMDW 1.1 lisansı altında dağıtılıyor; bu lisans hem ticari hem de ticari olmayan kullanım için izin veriyor. Modelin çekirdeği, metin işleme ve görsel üretim ağlarını birleştiren Mixture‑of‑Transformers (MoT) mimarisiyle çalışıyor. Üretilen video, sıkıştırılmış latents biçiminde temsil ediliyor; her latent adımı dört RGB çerçevesine karşılık geliyor ve denoising adımlarıyla netleştiriliyor. Zaman‑nedeni‑nedeni dikkat mekanizması, geçmiş gözlemleri ve kontrol sinyallerini okuyarak gelecekteki kareleri engelliyor.\n\nCosmos 3 modelleri dört aşamalı bir post‑training tarifesi izliyor: (0) çift‑yönlü adaptasyon, (1) öğretmen zorlaması, (2) tutarlılık distilasyonu ve (3) kendi‑kendine zorlamalı (self‑forcing) eğitim. Bu süreç, modelin hatalı tahminlerinin sonraki karelerde birikmesini önlemek ve akış‑temelli üretimin maliyetini düşürmek için tasarlanmış. Kullanıcılar, kendi sensör düzenlemeleri, LiDAR konfigürasyonları ve ortam koşulları için Transfer‑Auto modelini post‑train ederek özelleştirebilir, ardından Sim‑Auto’ya distilasyon yaparak hızlı simülasyon elde edebilir.\n\nNVIDIA, bu açık modellerin araştırmacı ve geliştiricilere ortak bir başlangıç noktası sunarak simülasyon kalitesini artırmayı ve politika‑öğrenme süreçlerini daha güvenilir hale getirmeyi hedefliyor. Modelin gereksinimleri Linux, NVIDIA GPU, Docker ve NVIDIA Container Toolkit; test ortamı GB200 üzerinde yapılmış. Gelecek adım, bu modellerin politika öğrenme ve değerlendirme üzerindeki güvenilirliğini ölçmek, sınırlarını anlamak ve eksik yönlerini iyileştirmek olacak.",
+  "onemli_maddeler": [
+    "Cosmos3‑Nano‑Transfer‑Auto ve Cosmos3‑Nano‑Sim‑Auto, senkronize kamera‑LiDAR verisini çok‑görüşlü sürüş senaryoları için üretir.",
+    "Cosmos3‑Nano‑Sim‑Transfer, simülatör kontrol sinyallerini ve metin istemlerini foto‑gerçekçi videolara dönüştürür.",
+    "Cosmos3‑Nano‑Sim‑Bimanual, iki‑kollu robot eylemlerine karşılık gelen video tahmini yaparak robotik manipülasyon araştırmalarını destekler.",
+    "Tüm modeller 16 B parametreli, OpenMDW 1.1 lisanslı ve post‑training tarifeleriyle özelleştirilebilir."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "NVIDIA’nın Cosmos 3 serisine eklenen dört açık‑ağırlıklı model, robotik ve otonom sürüş araştırmalarında gerçek‑zamanlı ve çok‑sensörlü simülasyon üretimini mümkün kılıyor; açık lisans ve post‑training tarifleri topluluk geliştirmesini hızlandırıyor.",
+  "etiketler": [
+    "NVIDIA",
+    "Cosmos3",
+    "world simulation",
+    "robotics",
+    "autonomous driving"
+  ],
+  "anilan_modeller": [
+    "Cosmos3-Nano-Transfer-Auto",
+    "Cosmos3-Nano-Sim-Auto",
+    "Cosmos3-Nano-Sim-Transfer",
+    "Cosmos3-Nano-Sim-Bimanual"
+  ],
+  "yorum_tr": "Bu modeller, simülasyon tabanlı politika eğitimi ve sensör füzyonu araştırmalarına düşük maliyetli ve ölçeklenebilir bir altyapı sunarak geliştiricilerin prototip süresini kısaltacak. Açık ağırlık ve lisans politikası, akademik iş birliğini ve endüstri adaptasyonunu da teşvik edecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://cdn-uploads.huggingface.co/production/uploads/677c471f8b4c4e271e57eaa5/rtmGVvFdD6JqkjBc26vsp.png",
+  "url": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-11-05T19:35:16.000Z",
+  "slug": "new-nvidia-cosmos-3-open-models-for-interactive-world-simula"
+}

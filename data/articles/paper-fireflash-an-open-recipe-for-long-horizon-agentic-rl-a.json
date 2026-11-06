@@ -1,0 +1,44 @@
+{
+  "baslik_tr": "FireFlash: Uzun Vadeli Ajan RL İçin Açık Tarif, 300B Model Performans-Maliyet Pareto Çizgisinde",
+  "ozet_tr": "Araştırmacılar, uzun vadeli ajan görevlerine odaklanan 300 milyar parametreli FireFlash modelini tanıttı. Model, Terminal-Bench 4.01 testinde %46.2 başarı elde ederek Fable 5 ve GPT‑6 Sol ile eşdeğer performans gösterirken, aynı görevi %30'dan fazla daha düşük maliyetle tamamlıyor.",
+  "detayli_icerik_tr": "FireFlash, uzun vadeli ajan tabanlı pekiştirmeli öğrenme (RL) görevleri için özel olarak tasarlanmış 300B ölçekli bir dil modelidir. Model, terminal ve kodlama ajanı olarak iki alanda öne çıkıyor; Terminal-Bench 4.01 benchmark'ında %46.2 başarı oranı yakalayarak Fable 5 ve GPT‑6 Sol gibi büyük ölçekli modellerle aynı seviyeye ulaşıyor. Ancak FireFlash, aynı görevi tamamlamak için gereken işlem maliyetini %30'dan fazla azaltarak, maliyet‑performans açısından yeni bir pareto sınırı çiziyor.\n\nPerformans avantajı sadece terminal görevleriyle sınırlı kalmıyor. FireFlash, DeepSWE v1.12 ve SWE‑Bench Pro Verified3 gibi yazılım mühendisliği benchmark'larında da rekabetçi sonuçlar elde ediyor. Bu, modelin hem genel amaçlı hem de kod üretiminde yüksek verimlilik sunduğunu gösteriyor.\n\nAraştırma ekibi, bu verimliliği üç temel faktöre bağlıyor: (1) her görevin doğru zorluk seviyesinde güvenilir bir sinyal sağladığı özenle seçilmiş ajan RL ortamları, (2) uzun, eski ve düşük hassasiyetli roll-out'lar için optimize edilmiş bir RL tarifi ve (3) modelin eğitim ve değerlendirme süreçlerine özel olarak uyarlanmış kodlama altyapısı. Bu bileşenler sayesinde, 64 NVIDIA B300 GPU'luk bir küme üzerinde beş gün içinde performans‑maliyet pareto sınırına ulaşılmıştır.\n\nAraştırmacılar, tam tarifi ve ağırlıkları (ağırlıklar yakında yayınlanacak) toplulukla paylaşarak, benzer ölçekli araştırma ve geliştirme çalışmalarının daha geniş bir kitle tarafından yürütülmesini hedefliyor. Blog gönderisi ve tweet üzerinden ek bilgiler sunulmuş, topluluk geri bildirimleri davet edilmiştir.",
+  "onemli_maddeler": [
+    "FireFlash, 300B parametreyle Terminal-Bench 4.01'de %46.2 başarı yakaladı ve Fable 5 ile GPT‑6 Sol ile eşdeğer performans gösterdi.",
+    "Model, aynı görevi %30'dan fazla daha düşük maliyetle tamamlayarak performans‑maliyet pareto çizgisini genişletti.",
+    "64 NVIDIA B300 GPU ile 5 gün içinde eğitim tamamlandı; üç temel verimlilik faktörü (ortam seçimi, RL tarifi, kodlama altyapısı) bu başarıyı sağladı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "FireFlash, büyük ölçekli ajan RL modellerinde maliyet verimliliği sağlayarak araştırma ve uygulama alanında yeni bir referans noktası oluşturuyor; bu, hem akademik hem de endüstriyel topluluklar için önemli bir gelişme.",
+  "etiketler": [
+    "agentic RL",
+    "long-horizon",
+    "Terminal-Bench",
+    "model efficiency",
+    "SWE-Bench"
+  ],
+  "anilan_modeller": [
+    "FireFlash",
+    "Fable 5",
+    "GPT-6 Sol"
+  ],
+  "yorum_tr": "FireFlash'in düşük maliyetli yüksek performansı, uzun vadeli ajan görevlerinde daha geniş bir araştırma yelpazesine olanak tanıyacak ve küçük ölçekli laboratuvarların da rekabetçi sonuçlar üretmesini sağlayacak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "FireFlash",
+      "benchmark": "Terminal-Bench 4.01",
+      "skor": 46.2,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "achieving 46.2% on Terminal-Bench 4.01"
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/orkgrqsqjtzh1.jpeg?width=140&height=117&auto=webp&s=543c65a91791905e11e47c7c94b29d64fdb8179e",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xomst7/paper_fireflash_an_open_recipe_for_longhorizon/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-05T16:17:42.000Z",
+  "slug": "paper-fireflash-an-open-recipe-for-long-horizon-agentic-rl-a"
+}

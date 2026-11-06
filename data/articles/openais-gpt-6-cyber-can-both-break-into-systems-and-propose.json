@@ -1,0 +1,63 @@
+{
+  "baslik_tr": "OpenAI, güvenlik açıklarını bulup düzeltme öneren GPT-6 Cyber modelini tanıttı",
+  "ozet_tr": "OpenAI, siber güvenlik odaklı yeni GPT-6 Cyber modelini duyurdu. Model, yazılımda kritik açıkları tespit edip çalışır exploit'ler üretirken aynı zamanda yama önerileri de sunuyor. İlk testlerde Firefox ve Linux çekirdeğinde yüzlerce yeni güvenlik sorunu ortaya çıkardı.",
+  "detayli_icerik_tr": "OpenAI, GPT-6 Cyber adını verdiği yeni bir yapay zeka modelini tanıttı. Model, güvenlik açıklarını keşfetmek, çalışır exploit'ler geliştirmek ve bu açıkları kapatmak için öneriler sunmak üzere özel olarak eğitildi. OpenAI, modelin operasyonel sınırlarını korumak için bir honeypot sistemi ve özel güvenlik talimatları kullandığını, bu sayede sınır ihlallerini %99,93 oranında önlediğini belirtiyor.\n\nYapılan hedefli testlerde GPT-6 Cyber, Firefox tarayıcısında daha önce bilinmeyen 81 kritik güvenlik açığını buldu ve Mozilla bu açıkları hızla yamaladı. Linux çekirdeği üzerinde ise model 5.034 güvenlik odaklı konumu taradı, 2.308 adayı filtreledi ve 1.724 güvenlik açığını doğruladı; bunların 948'si için çalışan exploit'ler geliştirildi. Bu sonuçlar, önceki nesil GPT-5.6 Cyber'un aynı koşullarda elde ettiği 166 exploit'tan beş kat daha fazla.\n\nModelin performansı, ExploitGym adlı benchmark'ta da ölçüldü. GPT-6 Cyber %48,5 başarı oranı yakalarken, önceki nesil %32,1, aynı zamanda standart GPT-6 Astra %42,4 oranla ikinci sırada yer aldı. Kaynak kodu olmayan web uygulamalarında güvenlik açığı bulma testinde ise GPT-6 Cyber %40,3, GPT-6 Astra ise %32,0 oranla daha düşük bir hit rate gösterdi.\n\nErişim şu anda OpenAI'nin \"Daybreak Red\" programı kapsamında seçilmiş müşterilere API ve Codex üzerinden sunuluyor; ilerleyen dönemlerde daha geniş bir kullanıcı kitlesine açılması planlanıyor. OpenAI, modelin kötüye kullanım riskine karşı IP tabanlı erişim kısıtlamaları, otomatik güvenlik kontrolleri ve izole ortam önerileri gibi önlemler geliştirdi ve kritik altyapıların korunmasına özel bir fon ayırdı.",
+  "onemli_maddeler": [
+    "GPT-6 Cyber, Firefox'ta 81 yeni kritik güvenlik açığı buldu ve Mozilla bu açıkları yamaladı.",
+    "Linux çekirdeğinde 1.724 güvenlik açığı tespit edildi, 948'si için çalışan exploit geliştirildi; toplam maliyet $1,213,430.",
+    "ExploitGym benchmark'ında GPT-6 Cyber %48,5 başarı oranı elde ederek rakiplerini geride bıraktı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Güvenlik odaklı yeni bir büyük modelin tanıtılması, hem siber savunma hem de potansiyel kötüye kullanım açısından sektörde büyük etki yaratıyor.",
+  "etiketler": [
+    "GPT-6 Cyber",
+    "siber güvenlik",
+    "AI exploit",
+    "OpenAI",
+    "model duyurusu"
+  ],
+  "anilan_modeller": [
+    "GPT-6 Cyber",
+    "GPT-6 Astra",
+    "GPT-5.6 Cyber",
+    "GPT-5.6 Sol"
+  ],
+  "yorum_tr": "GPT-6 Cyber, güvenlik araştırmalarını otomatikleştirerek savunma ekiplerine büyük bir avantaj sağlarken, aynı zamanda kötü niyetli aktörlerin eline geçmesi durumunda riskleri de artırıyor. Modelin kontrollü erişim ve güvenlik önlemleri, bu dengeyi yönetmek için kritik önemde.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GPT-6 Cyber",
+      "benchmark": "ExploitGym",
+      "skor": 48.5,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "GPT-6 Cyber scores 48.5 percent according to OpenAI, compared to 32.1 percent for its predecessor GPT-5.6 Cyber."
+    },
+    {
+      "model": "GPT-6 Astra",
+      "benchmark": "ExploitGym",
+      "skor": 42.4,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "GPT-6 Astra (Daybreak Blue) at 42.4 percent."
+    },
+    {
+      "model": "GPT-6 Cyber",
+      "benchmark": "Web App Vulnerability Test (no source code)",
+      "skor": 40.3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "hit rate of 40.3 percent, versus 32.0 percent for GPT-6 Astra."
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/11/openai_cybersecurity.png",
+  "url": "https://the-decoder.com/openais-gpt-6-cyber-can-both-break-into-systems-and-propose-how-to-fix-them/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-05T20:36:25.000Z",
+  "slug": "openais-gpt-6-cyber-can-both-break-into-systems-and-propose"
+}

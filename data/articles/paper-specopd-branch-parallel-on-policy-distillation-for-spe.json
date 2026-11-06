@@ -1,0 +1,66 @@
+{
+  "baslik_tr": "SpecOPD: Şube-Paralel On-Policy Distilasyon ile Spekülatif Kodlama",
+  "ozet_tr": "SpecOPD, spekülatif kodlamada şube-paralel bir on-policy distilasyon çerçevesi sunarak, taslak bloklarının bağımsız dallar üzerinden aynı anda örneklenmesini ve hedef denetiminin sağlanmasını mümkün kılıyor. Bu yaklaşım, kabul uzunluğunu %41,45'e kadar artırırken, denetimli token işleme kapasitesini 16,09 kat ve toplam üretim hızını ise 3,56 kat yükseltiyor.",
+  "detayli_icerik_tr": "Spekülatif kodlama (Speculative Decoding - SD), büyük dil modellerinin token‑token üretimindeki ardışık maliyeti azaltarak çıkarım süresini kısaltmayı hedefler. Geleneksel SD yöntemleri, bir ileri geçişte tüm blokları tahmin eden paralel taslak üreteçleriyle öneri maliyetini düşürür, ancak nihai hız artışı hâlâ kabul uzunluğuna (acceptance length) bağlıdır. On‑policy distilasyon (OPD) ise, iyi eğitilmiş taslak üreteçlerini bu sınırlamanın ötesine taşıyabilir; fakat mevcut OPD boru hatları, denetimi ardışık taslak‑doğrulama döngüleriyle toplar.\n\nSpecOPD, bu bağımlılığı ortadan kaldırarak, bir taslak bloğunun yalnızca referans ön ekine ve taslak tarafından örneklenen geçmişe dayanarak denetlenebileceği görüşünden yola çıkar. Çerçeve, referans ankarlardan türetilen bağımsız dallar üzerinden taslak örneklemesini ve hedef denetimini paralelleştirir; bu dallar daha sonra ortak hedef‑ön ek hesaplamasını paylaşmak üzere öneri ağaçları içinde paketlenir. Tam dikkat için ağaç maskeleri, seyrek dikkat için dal‑tutarlı indeks grupları ve lineer dikkat için indeksli durum tekrarları (indexed state replay) kullanılarak her dalın geçmişi korunur.\n\nE2E‑TV (end‑to‑end token‑level value) adlı bir surrogate kayıp fonksiyonu, doğrudan kabul uzunluğunu hedef alarak taslak üreteci eğitir. Çalışma, üç farklı hedef model boyutunu ve mimarisini kapsar: 8 B tam‑dikkat (GQA), 27 B tam‑lineer (GQA‑GDN) ve 125 B seyrek‑lineer (QSA‑GDN). Ayrıca üç paralel taslak mimarisi (DFlash, DSpark ve DFlash V2) ve dört görev alanı (sohbet, kodlama, matematik ve ajan‑tabanlı) üzerinde test edilmiştir.\n\nDeneysel sonuçlar, SpecOPD'nin ortalama kabul uzunluğunu %41,45 artırdığını, yerel konfigürasyonlarda ardışık‑rollout OPD'ye kıyasla denetimli token işleme verimliliğini 16,09 kat yükselttiğini ve otoregresif kodlamaya göre üretim hızını 3,56 kat artırdığını gösteriyor. Bu bulgular, spekülatif kodlamada paralel denetim stratejilerinin potansiyelini ve büyük dil modellerinin gerçek‑zamanlı uygulamalardaki kullanılabilirliğini önemli ölçüde genişletiyor.",
+  "onemli_maddeler": [
+    "SpecOPD, taslak bloklarını bağımsız dallar üzerinden paralel örnekleyerek on‑policy denetimi hızlandırıyor.",
+    "Ortalama kabul uzunluğunda %41,45 artış ve denetimli token işleme kapasitesinde 16,09× iyileşme sağlandı.",
+    "Tam dikkat, seyrek dikkat ve lineer dikkat mimarileri için ortak hedef‑ön ek hesaplamasını paylaşan ağaç maskeleri ve indeksli durum tekrarları kullanıldı."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "Spekülatif kodlama ve büyük dil modeli çıkarımında paralel denetim teknikleri, hem akademik hem de endüstriyel uygulamalarda performans sınırlarını zorlayarak yeni nesil gerçek‑zamanlı AI sistemlerine kapı aralıyor.",
+  "etiketler": [
+    "spekülatif kodlama",
+    "on-policy distilasyon",
+    "paralel çıkarım",
+    "büyük dil modelleri",
+    "araştırma"
+  ],
+  "anilan_modeller": [
+    "SpecOPD",
+    "DFlash",
+    "DSpark",
+    "DFlash V2",
+    "GQA",
+    "GQA‑GDN",
+    "QSA‑GDN"
+  ],
+  "yorum_tr": "SpecOPD'nin sunduğu şube‑paralel denetim, spekülatif kodlamada kabul uzunluğunu artırarak daha uzun blokların güvenle kullanılmasını sağlıyor; bu da geliştiricilerin yanıt sürelerini kısaltıp maliyetleri düşürmelerine olanak tanıyacak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "SpecOPD",
+      "benchmark": "Mean acceptance length increase",
+      "skor": 41.45,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "native configurations",
+      "kaynak_metinden_alinti": "SpecOPD achieves up to 41.45% higher mean acceptance length"
+    },
+    {
+      "model": "SpecOPD",
+      "benchmark": "Supervised-token throughput",
+      "skor": 16.09,
+      "birim": "×",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "sequential-rollout OPD baseline",
+      "kaynak_metinden_alinti": "16.09× supervised-token throughput over sequential-rollout OPD under native configurations"
+    },
+    {
+      "model": "SpecOPD",
+      "benchmark": "Generation speedup over autoregressive decoding",
+      "skor": 3.56,
+      "birim": "×",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "up to 3.56× generation speedup over autoregressive decoding"
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/nrft41x6stzh1.jpeg?width=140&height=41&auto=webp&s=a7b04a821389f8cb8f0bd5378b74bfbd81b4e737",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xoo0pp/paper_specopd_branchparallel_onpolicy/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-05T17:03:58.000Z",
+  "slug": "paper-specopd-branch-parallel-on-policy-distillation-for-spe"
+}

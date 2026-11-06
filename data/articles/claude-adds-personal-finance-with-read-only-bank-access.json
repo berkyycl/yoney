@@ -1,0 +1,36 @@
+{
+  "baslik_tr": "Claude, Okuma-Only Bank Erişimiyle Kişisel Finans Hub'ını Kullanıma Açtı",
+  "ozet_tr": "Anthropic, Claude için \"Personal Finance\" adlı yeni bir hub başlattı. Bu özellik, Plaid aracılığıyla bağlanan banka ve kart hesaplarından yalnızca okuma izni alarak, kullanıcıların harcamalarını analiz etmelerine ve finansal sorular sormalarına olanak tanıyor. Beta aşaması, ABD'deki Pro, Max ve Ultra abonelerine bu hafta sunuluyor.",
+  "detayli_icerik_tr": "Anthropic, popüler yapay zeka asistanı Claude'a yeni bir kişisel finans modülü ekledi. \"Personal Finance\" hub'ı, kullanıcıların banka ve kart hesaplarını Plaid üzerinden bağlamalarına izin veriyor; ancak erişim sadece okuma ile sınırlı, yani Claude para transferi, yatırım ya da hesap yönetimi yapamıyor. Bu sayede kullanıcılar, harcamalarının nereden geldiğini, bir sonraki maaş gününe kadar ne kadar para kaldığını ya da olağandışı harcama kalıplarını sorularıyla hızlıca öğrenebiliyor.\n\nBeta sürümü, ABD'de Claude Pro, Claude Max ve Claude Ultra abonelerine bu hafta dağıtılmaya başladı. Kullanıcılar, Plaid üzerinden banka kimlik bilgilerini onayladıktan sonra, hesap adı, türü, son dört hanesi, bakiye, kredi limiti ve iki yıla kadar olan işlem geçmişi gibi verileri Claude'a sunabiliyor. Bağlantıyı istedikleri zaman kaldırma imkanı da bulunuyor. Platform, bu sohbetlerdeki verileri model eğitimi için kullanmadığını ve gizlilik ayarlarının hub dışındaki etkileşimlerde de geçerli olduğunu vurguluyor.\n\nClaude, bağlanan verileri analiz ederek aylık harcama kalemlerini sınıflandırıyor, tekrarlayan ödemeleri, beklenmedik ücretleri ve artan faturaları işaretliyor. Örneğin, bir deneme senaryosunda aylık 4.309,37$ harcama, bunun %50'sinden fazlasının kira ve faturalar olduğu, yemek ve içecek için 1.024,51$ harcandığı gösterildi. Sistem ayrıca bir üyelik yenilemesini, yaklaşan ödemeleri ve maaş gününden önce kalan bakiyeyi hesaplayabiliyor. Kullanıcılar, harcama grafikleri, fatura takvimleri ve özelleştirilebilir dashboard'lar da oluşturabiliyor.\n\nAnthropic, bu özelliğin banka, varlık yöneticileri ve finansal hizmet sağlayıcılarıyla iş birliği içinde daha kapsamlı finansal karar destek sistemlerine evrilmesini hedeflediğini belirtiyor. Ancak şu an için yatırım tavsiyesi vermek ya da kredi kartı, kredi gibi ürün önerileri sunmak gibi hizmetler bulunmuyor. Kullanıcıların Claude'un sağladığı rakamları bankalarıyla doğrulaması ve hatalı analizleri kontrol etmesi öneriliyor.",
+  "onemli_maddeler": [
+    "Claude Personal Finance, Plaid üzerinden okuma-only banka erişimi sağlayarak finansal sorulara yanıt veriyor.",
+    "Beta aşaması ABD'deki Pro, Max ve Ultra abonelerine bu hafta dağıtıldı.",
+    "Kullanıcı verileri model eğitimi için kullanılmıyor; gizlilik ayarları hub içinde ve dışında geçerli.",
+    "Claude, harcama sınıflandırması, tekrarlayan ödemeler ve bütçe tahmini gibi analizler sunuyor, ancak yatırım tavsiyesi vermiyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Claude'un temel işlevine finansal analiz yeteneği eklenmesi, AI asistanlarının günlük yaşamda daha kapsamlı ve pratik kullanım senaryolarına ulaşmasını sağlıyor.",
+  "etiketler": [
+    "Claude",
+    "Anthropic",
+    "Kişisel Finans",
+    "Plaid",
+    "AI Asistan"
+  ],
+  "anilan_modeller": [
+    "Claude",
+    "Claude Pro",
+    "Claude Max",
+    "Claude Ultra"
+  ],
+  "yorum_tr": "Bu güncelleme, yapay zekâ asistanlarının finansal yönetim alanına ilk adımını temsil ediyor; geliştiriciler yeni entegrasyon fırsatları bulurken, kullanıcılar da tek bir sohbet arayüzünden finansal durumlarını hızlıca özetleyebilecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/11/banner-1.webp",
+  "url": "https://www.testingcatalog.com/claude-adds-personal-finance-with-read-only-bank-access/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-05T22:45:26.000Z",
+  "slug": "claude-adds-personal-finance-with-read-only-bank-access"
+}

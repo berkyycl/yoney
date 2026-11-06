@@ -1,0 +1,40 @@
+{
+  "baslik_tr": "Delta Inference Engine v0.93 Güncellemesi: 64‑128 GB RAM Desteği, Unsloth Kuantları ve 99 Soruluk Benchmark Sonuçları",
+  "ozet_tr": "Delta Inference Engine'in yeni v0.93 sürümü, 64‑128 GB RAM desteği, Unsloth kuantları ve çoklu GPU iyileştirmeleriyle geldi. 99 soruluk zorlu bir benchmarkta UD‑IQ2_XXS modeli tam API'ye %2 puan farkla yaklaşarak 57 doğru yanıt elde etti. İlk token gecikmesi %40 azaldı ve tek bir RTX 3090 üzerinde 41 token/s hız korunuyor.",
+  "detayli_icerik_tr": "Delta Inference Engine v0.93, topluluk tarafından talep edilen pek çok özelliği bir araya getiriyor. Yeni sürüm 64, 96 ve 128 GB RAM konfigürasyonlarını tam olarak destekliyor ve Unsloth kuantlarını (IQ2, IQ1_S, Q2_K_XL, IQ3_XXS) yerel Engram tablosu okuyucusu sayesinde tam hızda çalıştırabiliyor. RTX 3090 (24 GB) ve i5‑13600K üzerinde, 192 GB RAM ile 41 token/s sabit bir hız sağlanırken, daha düşük RAM seviyelerinde de makul performans kayıpları görülüyor.\n\nBenchmark sonuçları, 99 zor soruluk bir test setinde (greedy, 43 K token bütçesi) ölçüldü. UD‑IQ2_XXS modeli 57 doğru yanıt alarak tam API'nin %91.1 genel metin uyumu ve %95.9 kod/matematik uyumuna %2 puan yakın bir performans gösterdi. Aynı testte önceki ds4 Q2 sürümü 52 doğru, tam DeepSeek modeli 59 doğru ve Qwen 3.8 Flash‑Next API'si ise 44 doğru yanıt verdi. UD‑IQ2_XXS, tam modele göre %11 daha az token tüketerek aynı hızda çalıştı.\n\nYeni sürümde ilk token gecikmesi %40 oranında iyileştirildi; 180 tokenlik bir prompt artık 3.8 saniyeden 2.3 saniyeye yanıt veriyor. Ayrıca, SSD read‑ahead ve dosya sırasına göre prompt okuma sayesinde düşük RAM konfigürasyonlarında %18‑22 performans artışı sağlandı. Çoklu GPU desteği temel bir 7 % hız artışı sunuyor (3060 + 3090), ancak 3‑4 GPU ölçeklemesi için Project Maya öneriliyor. Diğer iyileştirmeler arasında EXL3 2.5 bpw desteği, kamu CI (GitHub Actions) ile otomatik paketleme ve çeşitli hata düzeltmeleri yer alıyor.\n\nDelta Inference Engine, Windows 10/11, NVIDIA RTX 12 GB+ GPU, en az 64 GB RAM (128 GB önerilir) ve hızlı NVMe SSD gerektiriyor. MIT lisanslı kod, Xolotl ve Strata üzerine inşa edilmiş ve GitHub üzerinden erişilebilir. Geliştiriciler ve araştırmacılar, kendi modellerini \"custom model\" klasörüne ekleyerek web‑UI üzerinden seçebilirler.",
+  "onemli_maddeler": [
+    "Delta Inference Engine v0.93, 64‑128 GB RAM ve Unsloth kuantlarıyla tam hızda çalışıyor.",
+    "99 soruluk benchmarkta UD‑IQ2_XXS modeli %57.6 doğrulukla tam API'ye %2 puan farkla yaklaştı.",
+    "İlk token gecikmesi %40 azaldı; 180 tokenlik prompt 2.3 saniyede yanıt veriyor.",
+    "Temel çoklu GPU desteği 7 % hız artışı sağlıyor, ancak 3‑4 GPU ölçeklemesi için Project Maya öneriliyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Delta Inference Engine, tek bir GPU üzerinde yüksek kalite ve hız sunan bir LLM inference motoru; yeni RAM ve kuant desteği, performans iyileştirmeleri ve benchmark sonuçları, geliştiriciler ve araştırmacılar için önemli bir adım oluşturuyor.",
+  "etiketler": [
+    "Delta Inference Engine",
+    "Unsloth",
+    "GPU",
+    "Benchmark",
+    "DeepSeek"
+  ],
+  "anilan_modeller": [
+    "DeepSeek-V4.1-Flash-1017",
+    "UD-IQ2_XXS",
+    "ds4 Q2",
+    "Full model",
+    "Qwen 3.8 Flash-Next",
+    "UD-Q2_K_XL",
+    "UD-IQ3_XXS",
+    "UD-IQ1_S"
+  ],
+  "yorum_tr": "Bu güncelleme, düşük bellekli sistemlerde bile yüksek kaliteli LLM yanıtları almayı mümkün kılıyor ve geliştiricilere daha esnek dağıtım seçenekleri sunuyor. Benchmark sonuçları, Unsloth kuantlarının tam model performansına yaklaşabildiğini göstererek, maliyet‑verimlilik açısından da sektöre yeni bir referans noktası oluşturuyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/3lwJBRV1SW6bKKW-Bme3QrrSta5zz0W2LUyP3fDpDk8.png?width=640&crop=smart&auto=webp&s=f897db59a1cd2633e8c5dca2a5b90f2cd0d88573",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xoq4vq/deepseekv41flash1017_on_one_rtx_3090_big_updates/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-05T18:23:22.000Z",
+  "slug": "deepseek-v4-1-flash-1017-on-one-rtx-3090-big-updates-to-the"
+}

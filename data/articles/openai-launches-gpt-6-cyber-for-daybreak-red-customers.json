@@ -1,0 +1,74 @@
+{
+  "baslik_tr": "OpenAI, GPT-6 Cyber Modelini Daybreak Red Müşterilerine Sunuyor",
+  "ozet_tr": "OpenAI, siber güvenlik araştırmalarına odaklanan yeni GPT‑6 Cyber modelini Daybreak Red müşterilerine API ve Codex üzerinden sunmaya başladı. Model, exploit bulma, doğrulama ve düzeltme yeteneklerini geliştirirken, araştırmacı‑tanımlı sınırlar içinde kalacak şekilde hizalanmış ve kritik bir güvenlik sınıflandırması almış.",
+  "detayli_icerik_tr": "OpenAI, GPT‑6 Cyber adlı yeni bir büyük dil modelini duyurdu. Model, araştırmacı‑tanımlı sınırlar içinde kalırken istismar edilebilir güvenlik açıklarını bulma, doğrulama ve düzeltme yeteneklerine sahip. İlk etapta yalnızca seçilmiş Daybreak Red müşterilerine API ve Codex aracılığıyla erişim sağlanıyor; ilerleyen dönemde tüm Daybreak Red müşterilerine açılması planlanıyor. Daybreak Red, yetkili test ve gelişmiş exploit geliştirme süreçlerini desteklerken, Daybreak Blue ise doğrulama aşamasında gereksiz reddetmelerin önüne geçmeyi hedefliyor.\n\nGPT‑6 Cyber, güvenlik benchmark'larında önemli sıçramalar kaydetti. ExploitGym testinde %48.5 başarı elde ederken, önceki sürüm GPT‑5.6 Cyber'un %32.1'lik skoru üzerine %51'lik göreli artış gösterdi. Siyah kutu web penetrasyon testlerinde ise %40.3'lük zafiyet hatırlama oranına ulaşarak GPT‑6 Astra'nın %32.0'lık oranını geride bıraktı. RemoteExploitBench görevlerinin %95'ini tamamlayarak GitLab, PostgreSQL ve Jenkins gibi kritik yazılımlarda kontrol edilen dağıtımlarda yüksek bir başarı sergiledi.\n\nModelin uyumluluk ve güvenlik önlemleri de vurgulandı. ExploitGym Honeypot testinde, model güvenlik dışı hizmetleri %99.93 oranında kaçınarak GPT‑5.6 Cyber'un %94.49'luk performansını geride bıraktı; güvenlik istemiyle %100 içinde kaldı. OpenAI, bu sürümü siber‑özel izleme, tehdit kontrolleri, kimlik koruması, IP beyaz listesi, sandboxing ve insan denetimi gibi ek koruma katmanlarıyla destekliyor. Model, Mozilla'nın Firefox 159 sürümünde yüksek şiddette 81 yeni zafiyeti yeniden üretip raporladı ve 30 bilinen sorunu daha ciddi olarak sınıflandırdı; bu bulgulara yönelik yamalar hâlihazırda uygulanıyor.\n\nLinux çekirdeği araştırmalarında da etkileyici sonuçlar elde edildi: GPT‑6 Cyber, 1.724 çekirdek zafiyetini yeniden üretti ve bunların 948'inde çalışan exploit geliştirdi; bu, aynı ortamda GPT‑5.6 Sol'un 166 exploit'ine kıyasla büyük bir fark. Toplam 304 kritik bulgu, ilgili bakıcılarla paylaşılarak aday yamalar sunuldu. OpenAI, aynı modeli kendi altyapısına yönelik kontrollü kampanyalarda da kullandı; mikroVM'lerden kaçış ve ana hosta erişim sağlanarak güvenlik önlemlerinin güçlendirilmesi sağlandı. Cisco, Calif ve CodeRabbit gibi firmalar da Daybreak Red kapsamında bu modeli zafiyet araştırması ve kod incelemesi için kullanıyor. Ayrıca, kritik altyapı savunucuları için Daybreak Red grubu oluşturuluyor ve $1 milyar tutarındaki Daybreak for Frontline Defenders hibesiyle erişim sübvanse ediliyor.",
+  "onemli_maddeler": [
+    "GPT‑6 Cyber, ExploitGym testinde %48.5 skorla önceki sürümün %32.1'ini geride bırakarak %51'lik göreli artış sağladı.",
+    "Model, siyah kutu web penetrasyon testlerinde %40.3 zafiyet hatırlama oranı ve RemoteExploitBench'te %95 görev tamamlama başarısı gösterdi.",
+    "OpenAI, GPT‑6 Cyber'u kritik siber güvenlik sınıflandırması (Critical) altında konumlandırdı ve kapsamlı erişim kısıtlamaları, izleme ve insan denetimiyle güvenli dağıtım sağladı.",
+    "Model, 81 yeni Firefox zafiyeti ve 1.724 Linux çekirdek zafiyeti gibi yüksek etkili güvenlik bulgularını yeniden üreterek gerçek dünyada yamalar ve düzeltmelerin geliştirilmesine katkı sağladı.",
+    "Erişim, başlangıçta seçilmiş Daybreak Red müşterileriyle sınırlı; ilerleyen dönemde tüm Daybreak Red müşterilerine ve Daybreak Blue alpha kullanıcılarına açılması planlanıyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "GPT‑6 Cyber, siber güvenlik araştırmalarında yeni bir yetenek seviyesi sunarak model performansını ve güvenlik sınıflandırmasını önemli ölçüde yükseltti; ayrıca erişim sınırlamaları ve sorumlu kullanım çerçevesiyle sektörde geniş etki yaratması bekleniyor.",
+  "etiketler": [
+    "siber güvenlik",
+    "yapay zeka",
+    "OpenAI",
+    "GPT-6",
+    "Daybreak Red"
+  ],
+  "anilan_modeller": [
+    "GPT-6 Cyber",
+    "GPT-5.6 Cyber",
+    "GPT-6 Astra",
+    "GPT-5.6 Sol"
+  ],
+  "yorum_tr": "GPT‑6 Cyber'un piyasaya sürülmesi, güvenlik araştırmacıları için daha güçlü ve sorumlu bir araç sunarken, aynı yeteneklerin kötüye kullanım riskini de artırıyor; OpenAI'nin sınırlı erişim ve sıkı denetim mekanizmaları bu dengeyi sağlamaya çalışıyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GPT-6 Cyber",
+      "benchmark": "ExploitGym",
+      "skor": 48.5,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "GPT‑6 Cyber scored 48.5% on ExploitGym, up from 32.1% for GPT‑5.6 Cyber."
+    },
+    {
+      "model": "GPT-6 Cyber",
+      "benchmark": "Black-box web penetration testing",
+      "skor": 40.3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "vulnerability recall",
+      "kaynak_metinden_alinti": "it reached 40.3% vulnerability recall versus 32.0% for GPT‑6 Astra."
+    },
+    {
+      "model": "GPT-6 Cyber",
+      "benchmark": "RemoteExploitBench",
+      "skor": 95,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "It also completed 95% of RemoteExploitBench tasks against controlled deployments of software including GitLab, PostgreSQL and Jenkins."
+    },
+    {
+      "model": "GPT-6 Cyber",
+      "benchmark": "ExploitGym Honeypot",
+      "skor": 99.93,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "out-of-scope avoidance",
+      "kaynak_metinden_alinti": "the model avoided out-of-scope services in 99.93% of tests without a deployment safety prompt, compared with 94.49% for GPT‑5.6 Cyber, and stayed within bounds in 100% with the prompt."
+    }
+  ],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/11/gpt-6-cyber-social.webp",
+  "url": "https://www.testingcatalog.com/openai-launches-gpt-6-cyber-for-daybreak-red-customers/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-05T22:50:33.000Z",
+  "slug": "openai-launches-gpt-6-cyber-for-daybreak-red-customers"
+}

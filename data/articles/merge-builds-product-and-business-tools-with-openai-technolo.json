@@ -1,0 +1,44 @@
+{
+  "baslik_tr": "Merge, ürün ve iş araçlarını OpenAI teknolojisiyle güçlendiriyor",
+  "ozet_tr": "Merge, müşteri verisi entegrasyonundan AI ajanlarının iş sistemlerine erişimine kadar geniş bir yelpazede OpenAI modellerini kullanarak yeni ürün ve iş akışları sunuyor. Şirket, GPT‑6 Astra ve Codex'i kod incelemeden pazarlama içeriklerine kadar her alanda kullanıyor ve araç çağrılarında %99,9 başarı oranı elde etti.",
+  "detayli_icerik_tr": "Merge, müşterilerin veri entegrasyonlarını kolaylaştıran Merge Unified, AI ajanları için güvenli erişim sağlayan Merge Agent Handler ve model yönlendirme ile maliyet kontrolü yapan Merge Gateway gibi ürünlerle şirket içi ve dışı yazılım geliştirmeyi birleştiriyor. CEO ve kurucu ortağı Shensi Ding, ürün kodlarını incelemek için Codex'i, ürün testleri ve pazarlama çalışmalarını ise GPT‑6 Astra'yı tercih ettiğini belirtti.\n\nMerge, AI destekli iş akışlarıyla operasyonel verimliliği artırıyor. Şirket içi bir araç olan \"dinner bot\", Salesforce, Gong, Google Sheets ve Gmail gibi sistemlere bağlanarak davetiyeleri otomatikleştiriyor; bu sayede bir etkinlik planlama süresi, önceki ayların ortalama on saatlik süresinden 30 dakikaya düştü. Q3'te 16, Q2'de 8 olmak üzere yürütülen üst düzey yemekler, AI destekli planlamanın ölçeklenebilirliğini gösteriyor.\n\nÜrün geliştirme sürecinde Merge, çalışanların istedikleri AI araçlarını seçmesine izin veriyor; bu da içsel bir deneme kültürü oluşturuyor. Satış ekibi, anlaşma onayları ve tahmin güncellemeleri için yeniden kullanılabilir AI iş akışları oluştururken, sosyal medya ve pazarlama ekipleri GPT‑6 Astra'yı içerik takibi ve mesaj netleştirme için kullanıyor. Şirket, AI araçlarının her seviyedeki çalışan tarafından kullanılabilmesini vurgulayarak, teknik olmayan ekiplerin de yenilikçi çözümler üretmesini sağlıyor.\n\nDing, yöneticilerin AI okuryazarlığını artırmak ve düşük riskli ortamlar yaratmak gerektiğini vurguluyor. Merge'in içindeki AI kullanımının, sadece ürün geliştirme değil, aynı zamanda şirketin günlük operasyonlarını da dönüştürdüğü ve gelecekte AI'nın iş süreçlerini tamamen otomatikleştirebileceği bir vizyon sunduğu belirtiliyor.",
+  "onemli_maddeler": [
+    "Merge ürün portföyü: Unified, Agent Handler ve Gateway ile veri entegrasyonu, AI ajan erişimi ve model yönlendirme sağlanıyor.",
+    "Araç çağrılarında %99,9 başarı oranı – kamu MCP sunucularının %60'ına kıyasla çok daha yüksek güvenilirlik.",
+    "GPT‑6 Astra ve Codex, kod incelemeden pazarlama içeriklerine kadar şirket içi tüm süreçlerde aktif olarak kullanılıyor.",
+    "AI destekli \"dinner bot\" sayesinde etkinlik planlama süresi saatlerden 30 dakikaya düşürüldü."
+  ],
+  "kategori": "diger",
+  "onem": 3,
+  "onem_gerekce": "Şirket içi ve müşteri odaklı ürünlerde OpenAI modellerinin geniş çapta kullanılmasını gösteren bir örnek, ancak doğrudan bir model duyurusu ya da sektörel dönüşüm içermediği için orta seviyede önem taşıyor.",
+  "etiketler": [
+    "OpenAI",
+    "GPT-6 Astra",
+    "Codex",
+    "Enterprise AI",
+    "Automation"
+  ],
+  "anilan_modeller": [
+    "GPT-6 Astra",
+    "Codex"
+  ],
+  "yorum_tr": "Merge'in OpenAI modellerini ürün geliştirme ve iş süreçlerine entegre etmesi, kurumsal AI benimsenmesinin pratik bir örneği olarak sektöre ilham verebilir. Ancak bu tür iç kullanım örnekleri, modelin kendisinden ziyade uygulama katmanındaki inovasyonları öne çıkarıyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Merge tool calls",
+      "benchmark": "Tool call success rate",
+      "skor": 99.9,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "public MCP servers (%60)",
+      "kaynak_metinden_alinti": "Tool calls through Merge succeed 99.9% of the time, compared to public MCP servers, which are around 60%."
+    }
+  ],
+  "gorsel_url": "https://images.ctfassets.net/kftzwdyauwt9/1ioOJt6IEab7sdVSiBFTET/fb2a79d20b4639407ca0b35af68a443c/og.png?w=1600&h=900&fit=fill",
+  "url": "https://openai.com/index/merge-builds-with-openai",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-11-05T08:00:00.000Z",
+  "slug": "merge-builds-product-and-business-tools-with-openai-technolo"
+}
