@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "CCORE GLB-3D-Coder veri seti yayınlandı: 3.918 örnek, 40 alan",
+  "ozet_tr": "Yerel LLaMA topluluğu, Three.js ve GLB formatında 3D varlık üretimi için eğitilen 4 Milyar parametreli CCORE GLB-3D-Coder modelinin temelini oluşturan veri setini paylaştı. 3.918 örnek, 40 farklı kategoriye yayılmış ve her biri render edilip doğrulanmış durumda.",
+  "detayli_icerik_tr": "Reddit'in LocalLLaMA topluluğu, CCORE GLB-3D-Coder adlı 4 B parametreli modelin eğitiminde kullanılan veri setini resmi olarak yayınladı. Toplam 3.918 örnekten oluşan bu koleksiyon, karakterler, yaratıklar, araçlar, laboratuvar ekipmanları, müzik aletleri, mimari yapılar, makineler, doğa öğeleri ve günlük nesneler gibi 40 farklı alanda çeşitlilik gösteriyor.\n\nVeri seti, tam konuşma geçmişi, akıl yürütme izleri ve HTML/JavaScript yanıtlarını içeriyor; ayrıca her örnek için render edilmiş referans görseli ve GLB formatında doğrulanmış dışa aktarım dosyası sağlanıyor. 3.501 örnek eğitim, 417 örnek ise doğrulama amaçlı ayrılmış durumda. Tüm içerik MIT lisansı altında sunuluyor, bu da araştırmacıların ve geliştiricilerin serbestçe kullanıp yeniden dağıtabilmesini mümkün kılıyor.\n\nPaylaşımda, statik varlıkların yanı sıra animasyon ve etkileşimli örnekler de yer alıyor; bu sayede modelin dinamik 3D sahneler üretme yeteneği test edilebiliyor. Topluluk üyesi ConfidentDinner6648, veri setinin yanı sıra modelin tam ağırlık dosyalarını da erişime açtığını belirtti ve gelecekteki sürümler için planlarını duyurdu.\n\nBu kaynak, özellikle Three.js tabanlı web uygulamaları geliştiren ve 3D varlık üretimini otomatikleştirmek isteyen AI araştırmacıları için değerli bir referans olacak. Kullanıcıların veri setini deneyimleyip geri bildirimde bulunmaları, modelin sonraki iyileştirmeleri için kritik bir rol oynayacak.",
+  "onemli_maddeler": [
+    "3.918 örnek ve 40 farklı 3D varlık kategorisi içeriyor.",
+    "Her örnek render edilip GLB formatında doğrulanmış, MIT lisansı altında dağıtılıyor.",
+    "Tam konuşma geçmişi, akıl yürütme izleri ve HTML/JavaScript yanıtları veri setine eklenmiş."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 3,
+  "onem_gerekce": "Topluluk odaklı bir veri seti olması ve 3D AI model eğitimi için kapsamlı bir kaynak sunması, sektörde orta ölçekli bir etki yaratıyor ancak henüz geniş çaplı ticari uygulamalara dönüşmediği için önem seviyesi 3 olarak değerlendirildi.",
+  "etiketler": [
+    "3d",
+    "dataset",
+    "glb",
+    "threejs",
+    "ai"
+  ],
+  "anilan_modeller": [
+    "CCORE GLB-3D-Coder"
+  ],
+  "yorum_tr": "Bu veri seti, 3D içerik üretiminde yapay zeka kullanımını hızlandırmak isteyen geliştiriciler ve araştırmacılar için önemli bir adım. Açık lisans ve kapsamlı örnekler, topluluk temelli inovasyonu destekleyecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/ulne0ine2wzh1.jpeg?width=640&crop=smart&auto=webp&s=f0f631e225cb9359b86ef0c33d6b91568224e8f0",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xozbe6/ccore_glb3dcoder_dataset_is_here_3918_rendered/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-06T00:43:25.000Z",
+  "slug": "ccore-glb-3d-coder-dataset-is-here-3-918-rendered-and-tested"
+}

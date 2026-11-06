@@ -1,0 +1,37 @@
+{
+  "baslik_tr": "OrcaCyber-Nano-1.0 Modeline Topluluk Takdiri ve Deneyim Paylaşımı",
+  "ozet_tr": "Reddit topluluğu üyelerinden JackMasterN1, OrcaCyber-Nano-1.0 finetune modelini deneyimlerini paylaşarak övdü. Modelin Qwen 3.8 27B tabanlı dayanıklılığı ve hızlı yanıt yeteneği, 24 GB VRAM'li bir çift GPU kurulumunda 15.7 GB boyutlu bir dosya olarak sorunsuz çalıştı.",
+  "detayli_icerik_tr": "LocalLLaMA topluluğunda paylaşılan bir gönderide, kullanıcı JackMasterN1, OrcaCyber-Nano-1.0 modelinin kendisi için en iyi finetune olduğunu belirtti. Modeli, AREX, Swift ve Peculiar Ragdoll'ın Spark şablonu gibi diğer popüler finetunelerle karşılaştırdı ve özellikle komut zincirlerini tek seferde çözme yeteneğiyle öne çıktığını vurguladı.\n\nKullanıcı, modelin Qwen 3.8 27B tabanlı dayanıklılığını korurken yanıt süresinin daha hızlı olduğunu, bu sayede planlama ve uygulama geliştirme süreçlerinde verimlilik sağladığını ifade etti. Özellikle Gemini 4 Argon ile yapılan bir testte, OrcaCyber-Nano-1.0'ın plan güncellemelerinde daha iyi performans gösterdiği bildirildi.\n\nDonanım açısından, model 15.7 GB boyutunda olup 24 GB VRAM (RTX 5070 Ti + RTX 3070) sistemde çalıştırıldı. KV cache ayarları (kvarn5, kvarn4 ve q5_1) kullanılarak beellama ve llama.cpp arasında geçiş yapıldığı belirtildi. Kullanıcı, bu modeli artık varsayılan olarak kullandığını ve genel amaçlı uygulama geliştirme için tercih ettiğini ekledi.\n\nGönderi, Orcarouter ekibine ve önceki Orcarouter Uncensored tanıtımına teşekkür ederek topluluk içinde modelin farkındalığını artırmayı amaçladı. Kullanıcı, İngilizce'nin ana dili olmadığını ve metni AI yardımıyla düzenlediğini de belirtti.",
+  "onemli_maddeler": [
+    "OrcaCyber-Nano-1.0, Qwen 3.8 27B tabanlı dayanıklılık sunarken yanıt süresinde avantaj sağlıyor.",
+    "Model, 24 GB VRAM'li çift GPU (RTX 5070 Ti + RTX 3070) sistemde 15.7 GB boyutuyla sorunsuz çalışıyor.",
+    "Gemini 4 Argon ile yapılan testte plan güncellemelerinde diğer modellerden daha iyi performans gösterdi."
+  ],
+  "kategori": "diger",
+  "onem": 2,
+  "onem_gerekce": "Paylaşılan içerik topluluk deneyimine dayalı bir takdir mesajı olup, resmi bir model duyurusu veya teknik benchmark sunmuyor; bu nedenle sektörel etkisi sınırlı.",
+  "etiketler": [
+    "OrcaCyber-Nano-1.0",
+    "finetune",
+    "LLM",
+    "LocalLLaMA",
+    "performans"
+  ],
+  "anilan_modeller": [
+    "OrcaCyber-Nano-1.0",
+    "Qwen 3.8 27B",
+    "AREX",
+    "Swift",
+    "Spark",
+    "Gemini 4 Argon"
+  ],
+  "yorum_tr": "OrcaCyber-Nano-1.0, topluluk içinde olumlu geri bildirimler alarak özellikle düşük kaynaklı ortamlarda verimli bir alternatif sunuyor; geliştiriciler bu tür finetuneleri denemeye daha istekli olabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/0tP33dXBTN-sjhs0my61JyiZT2ypzNixGYT1rV4YcL8.png?width=640&crop=smart&auto=webp&s=69ad754b161df1a1e5b81bf49c76f75861dd42a4",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xosw1w/appreciation_post_for_orcacybernano10/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-05T20:09:52.000Z",
+  "slug": "appreciation-post-for-orcacyber-nano-1-0"
+}

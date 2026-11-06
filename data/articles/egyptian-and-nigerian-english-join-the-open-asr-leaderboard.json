@@ -1,0 +1,30 @@
+{
+  "baslik_tr": "Egyptian ve Nijerya İngilizcesi Open ASR Leaderboard'a eklendi",
+  "ozet_tr": "Hugging Face, Liva AI iş birliğiyle Open ASR Leaderboard'a iki yeni aksan ekledi: Mısırlı ve Nijeryalı İngilizcesi. Toplam 2,89 saatlik konuşma verisi, spontane ve noktalı transkripsiyonlarla sunuluyor. Bu adım, ASR değerlendirmelerinde coğrafi çeşitliliği artırarak daha güvenilir sonuçlar elde etmeyi hedefliyor.",
+  "detayli_icerik_tr": "Geçtiğimiz aylarda Open ASR Leaderboard, Appen ve DataOceanAI'dan beş aksanı kapsayan 11 özel veri bölümüyle genişlemişti. Topluluk, bu özel setlerin değerlendirme güvenilirliğini artırdığına dair olumlu geri bildirimlerde bulunmuştu. Sonrasında Voice Arena ile Hindistan aksanı eklenmişti.\n\nŞimdi Liva AI ile yapılan yeni iş birliği sayesinde, Mısırlı (Egyptian) ve Nijeryalı (Nigerian) İngilizce aksanları da platforma dahil edildi. Liva AI, 1,34 saatlik Mısırlı ve 1,55 saatlik Nijeryalı konuşma verisini, spontane, konuşma içinde hatalar ve duraklamalar içeren, noktalı ve büyük/küçük harf duyarlı transkripsiyonlarla sağladı.\n\nBu eklemeler, Kachru'nun Üç Çember modeli çerçevesinde aksanların daha ayrıntılı bir şekilde sınıflandırılmasını mümkün kılıyor. Artık Open ASR Leaderboard, \"US vs. non-US\" ve \"Inner Circle vs. Outer & Expanding Circles\" gibi iki ana karşılaştırma sunacak; dış çemberde Hindistan, Nijerya ve Mısır gibi yeni aksanlar yer alacak.\n\nLiva AI, gerçek kullanıcıların tüketici ürünleri üzerinden topladığı çok modlu etkileşim verileriyle, model boşluklarını hedef alan veri toplama imkanı sağlıyor. Bu sayede, yapay zeka sistemlerinin sadece laboratuvar ortamlarında değil, gerçek dünya kullanım senaryolarında da performansını ölçmek mümkün hale geliyor.",
+  "onemli_maddeler": [
+    "Open ASR Leaderboard'a Mısırlı ve Nijeryalı İngilizce aksanları eklendi (toplam 2,89 saat veri).",
+    "Veriler, Liva AI tarafından toplanıp, spontane ve noktalı transkripsiyonlarla sunuldu.",
+    "Kachru'nun Üç Çember modeliyle aksan sınıflandırması zenginleştirildi; US vs. non-US ve Inner vs. Outer/Expanding Circle karşılaştırmaları getirildi."
+  ],
+  "kategori": "guncelleme",
+  "onem": 3,
+  "onem_gerekce": "Yeni aksanların eklenmesi ASR değerlendirmelerinde çeşitliliği artırsa da, doğrudan bir model çıkışı ya da büyük performans sıçraması içermediği için orta düzeyde bir öneme sahiptir.",
+  "etiketler": [
+    "ASR",
+    "Open ASR Leaderboard",
+    "Egyptian English",
+    "Nigerian English",
+    "Liva AI"
+  ],
+  "anilan_modeller": [],
+  "yorum_tr": "Bu güncelleme, özellikle düşük temsil edilen aksanların değerlendirme setlerine dahil edilmesiyle ASR sistemlerinin küresel geçerliliğini artıracak ve geliştiricilere daha kapsayıcı test ortamları sunacak.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://huggingface.co/blog/assets/open-asr-leaderboard-liva/thumbnail.png",
+  "url": "https://huggingface.co/blog/open-asr-leaderboard-liva",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-11-06T00:00:00.000Z",
+  "slug": "egyptian-and-nigerian-english-join-the-open-asr-leaderboard"
+}

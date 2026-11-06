@@ -1,0 +1,43 @@
+{
+  "baslik_tr": "Inkling 2 Small Modeli Tanıtıldı",
+  "ozet_tr": "Inkling 2 Small, 594 Milyar toplam parametreli bir Mixture‑of‑Experts (MoE) modeli olarak duyuruldu. Model, sadece 17 Milyar aktif parametreyle görüntü girişi ve değişken çaba (variable effort) desteği sunuyor ve Artificial Analysis Intelligence Index'te 31 puan alarak önceki sürümlerini geride bırakıyor.",
+  "detayli_icerik_tr": "Yerel LLaMA topluluğu, Inkling 2 Small adlı yeni nesil yapay zeka modelini tanıttı. Model, 594 Milyar toplam parametreye sahip bir Mixture‑of‑Experts mimarisi kullanıyor; ancak aynı anda yalnızca 17 Milyar parametre aktif durumda, bu da yüksek verimlilik ve düşük maliyet anlamına geliyor. Inkling 2 Small, görüntü girdilerini işleyebilme yeteneği ve \"variable effort\" özelliği sayesinde farklı görevlerde dinamik olarak kaynak tahsis edebiliyor.\n\nPerformans açısından model, Artificial Analysis Intelligence Index (AAII) testinde 31 puan elde ederek önceki Inkling Small sürümünün çok ötesine geçti. Bu skor, özellikle ajan tabanlı kodlama, görsel algı, bilgi işi ve mantıksal akıl yürütme gibi alanlarda kaydedilen iyileştirmeleri yansıtıyor. Geliştiriciler, bu gelişimin eğitim sürecinin her aşamasında yapılan iyileştirmeler—daha verimli ön‑eğitim ve büyük ölçekli birleşik pekiştirmeli öğrenme (RL) çalışması—sayesinde mümkün olduğunu belirtiyor.\n\nInkling 2 Small ilk etapta Tinker platformu üzerinden kapalı ağırlıklarla (closed weights) erişime açılacak. Güvenli bir yol haritası çerçevesinde, dış güvenlik testleri ve kırmızı takım (red‑team) değerlendirmelerinin tamamlanmasının ardından modelin tam ağırlıkları Apache 2.0 lisansı altında açık kaynak olarak yayınlanacak. Kullanıcılar, Tinker Playground'da modeli deneyimleyebilecek ve aynı platformda ince ayar (fine‑tuning) ve örnekleme (sampling) işlemleri yapabilecek. Ağırlık dosyaları, Inkling 2 Small'ın resmi sürümüyle birlikte indirilebilir olacak.\n\nÖnceki Inkling Small modeli 276 Milyar toplam ve 12 Milyar aktif parametreye sahipti; yeni sürüm bu rakamları iki katına yakın bir artışla genişletiyor. Topluluk, yakın gelecekte Mini veya Nano gibi daha küçük ölçekli sürümlerin de duyurulmasını bekliyor.",
+  "onemli_maddeler": [
+    "Inkling 2 Small, 594 B toplam ve 17 B aktif parametreyle MoE mimarisinde büyük bir ölçek artışı sağlıyor.",
+    "Model, Artificial Analysis Intelligence Index'te 31 puan alarak önceki sürümün performansını önemli ölçüde aşıyor.",
+    "İlk olarak Tinker platformunda kapalı ağırlıklarla sunulacak, ardından Apache 2.0 lisansı altında açık kaynak olarak yayınlanacak."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Yeni bir büyük ölçekli modelin duyurulması, özellikle MoE mimarisi ve görüntü desteği gibi teknik yenilikler sektörde dikkat çekiyor; ancak henüz geniş çaplı ticari kullanım ve benchmark çeşitliliği sınırlı olduğu için 5 yerine 4 verildi.",
+  "etiketler": [
+    "Mixture-of-Experts",
+    "Inkling",
+    "Tinker",
+    "AI Model",
+    "Vision"
+  ],
+  "anilan_modeller": [
+    "Inkling 2 Small",
+    "Inkling Small"
+  ],
+  "yorum_tr": "Inkling 2 Small, yüksek parametre verimliliği ve çok modlu yetenekleriyle geliştiricilere daha esnek bir araç sunuyor; açık kaynak ağırlıkların yakında erişime açılması da topluluk katkısını ve güvenlik testlerini hızlandıracak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Inkling 2 Small",
+      "benchmark": "Artificial Analysis Intelligence Index",
+      "skor": 31,
+      "birim": "",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Inkling 2 Small far surpasses our previous models’ scores on the Artificial Analysis Intelligence Index with a score of 31"
+    }
+  ],
+  "gorsel_url": "https://external-preview.redd.it/27JH1RiMGKdxY-v2Ar-xCScxoVemeeFjOD9gEl1ht_w.png?width=640&crop=smart&auto=webp&s=35740ca5f1ca80d240b5b3065376dc99521c5474",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xp32od/introducing_inkling_2_small/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-06T03:50:26.000Z",
+  "slug": "introducing-inkling-2-small"
+}
