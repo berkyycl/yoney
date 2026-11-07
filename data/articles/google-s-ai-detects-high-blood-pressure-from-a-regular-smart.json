@@ -1,0 +1,42 @@
+{
+  "baslik_tr": "Google'ın AI'sı, normal bir akıllı saatle manşonsuz kan basıncını tespit ediyor",
+  "ozet_tr": "Google Research, akıllı saatlerdeki nabız ve hareket sensörlerini kullanan bir yapay zeka modeliyle yüksek tansiyonu manşonsuz olarak algılayabildiğini duyurdu. 196 kişilik klinik çalışmada, model %65,8 duyarlılık göstererek geleneksel ofis ölçümünün %55,3'ünden daha iyi sonuç verdi.",
+  "detayli_icerik_tr": "Google Research ekibi, modern akıllı saatlerde halihazırda bulunan nabız ve hareket sensörlerinden elde edilen verileri kullanan bir sinir ağı geliştirdi. Model, yaklaşık 500.000 saatlik sensör verisini, kısa segmentleri karşılaştırarak aynı kişiye ait olup olmadığını öğrenerek, tanı etiketine ihtiyaç duymadan tipik nabız ve kalp atış desenlerini tanımlamayı başardı.\n\nElde edilen desenler birkaç gün boyunca ortalanarak yüksek tansiyon olasılığı hesaplandı. Bu yöntem, Nature dergisinde yayımlanan bir araştırma kapsamında, Amerika Birleşik Devletleri'nde beş farklı araştırma merkezinde toplam 196 gönüllü üzerinde test edildi. Sonuçlar, akıllı saatle tespit edilen hipertansiyon vakalarının %65,8'ini doğru bir şekilde belirlerken, geleneksel ofis ölçümünün %55,3'üne kıyasla daha yüksek bir duyarlılık sağladı.\n\nGoogle, bu bulguları Google Health uygulamasındaki \"kan basıncı trendleri\" özelliğine entegre etti; ancak yöntem hâlâ bir araştırma projesi olarak kalıyor ve klinik tanı yerine geçmiyor. Şirket, bu teknolojinin kullanıcıları daha fazla kan basıncı kontrolü yapmaya yönlendirmeyi amaçladığını vurguluyor. Yüksek tansiyonun farkında olmayan bireylerin oranının %50'yi aştığı göz önüne alındığında, manşonsuz ölçüm imkanı, erken teşhis ve müdahale açısından önemli bir adım olarak görülüyor.\n\nAraştırmanın bir diğer yeniliği, modelin eğitimi sırasında herhangi bir hastalık etiketi kullanılmaması; bunun yerine yalnızca sensör sinyallerinin benzerliğine dayalı bir kendiliğinden öğrenme süreci uygulanması. Bu yaklaşım, benzer biyometrik verilerden hastalık tahmini yapabilen daha genel bir AI çerçevesi geliştirilmesine de ışık tutuyor.",
+  "onemli_maddeler": [
+    "Model, sadece nabız ve hareket sensörlerini kullanarak yüksek tansiyonu %65,8 duyarlılıkla tespit etti.",
+    "Araştırma, 500.000 saatlik sensör verisiyle eğitilen bir sinir ağı sayesinde tanı etiketine ihtiyaç duymadan çalışıyor.",
+    "Google Health uygulamasına entegre edilen özellik, kullanıcıları kan basıncı kontrolüne yönlendirmeyi hedefliyor."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "Manşonsuz kan basıncı ölçümü, evde sağlık takibini dönüştürme potansiyeline sahip; bu alandaki ilk büyük ölçekli akademik çalışma sektördeki araştırma ve ürün geliştirme yönelimlerini etkileyebilir.",
+  "etiketler": [
+    "AI",
+    "sağlık",
+    "akıllı saat",
+    "hipertansiyon",
+    "Google Health"
+  ],
+  "anilan_modeller": [
+    "SensorFM"
+  ],
+  "yorum_tr": "Bu gelişme, giyilebilir cihazların klinik ölçümlere yaklaşmasını sağlayarak erken tanı ve önleyici sağlık hizmetlerine yeni bir boyut kazandırıyor. Geliştiriciler, benzer veri‑temelli yaklaşımları diğer biyometrik ölçümlere genişletebilir; kullanıcılar ise daha az invaziv bir yöntemle sağlıklarını izleyebilecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "SensorFM",
+      "benchmark": "Hypertension detection sensitivity",
+      "skor": 65.8,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "196 kişilik klinik çalışma, 5 ABD araştırma sitesi",
+      "kaynak_metinden_alinti": "the watch spotted hypertension about as well as a traditional cuff, identifying 65.8 percent of those with high blood pressure compared to 55.3 percent for the standard in-office measurement."
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/11/googel_hypertension.png",
+  "url": "https://the-decoder.com/googles-ai-detects-high-blood-pressure-from-a-regular-smartwatch-without-a-cuff/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-07T09:54:09.000Z",
+  "slug": "google-s-ai-detects-high-blood-pressure-from-a-regular-smart"
+}

@@ -1,0 +1,53 @@
+{
+  "baslik_tr": "Betelgeuse, DeepSeek V4.1 Flash Q8_XL Modelini RTX 3060’da 62 tok/s Prefill ve 19 tok/s Decode Hızıyla Çalıştırdı",
+  "ozet_tr": "Betelgeuse, DeepSeek V4.1 Flash Q8_XL (1017) modelini RTX 3060 12 GB GPU ve 16 GB RAM üzerine, out-of-core MoE mimarisiyle, önceden yaşanan prefill darboğazını aşarak çalıştırdı. Yeni önbellek bölümlendirme ve tek geçişli katman‑ağırlıklı prefill teknikleri sayesinde 500 token’lık bir prompt için ilk token süresi (TTFT) neredeyse anında gerçekleşiyor.",
+  "detayli_icerik_tr": "Reddit topluluğu LocalLLaMA’da paylaşılan gönderide, Betelgeuse (bel-cli / bel-server) adlı bir motorun DeepSeek V4.1 Flash Q8_XL modelini (305.6 GB + 110.6 GB Engram tablosu) RTX 3060 12 GB GPU ve 16 GB DDR4‑3200 RAM’e sahip bir oyun bilgisayarında çalıştırabildiği anlatılıyor. Model, PCIe 4.0 NVMe SSD üzerinden tamamen dış‑bellek (out‑of‑core) olarak yükleniyor; Engram tablosu sadece katman 1 ve 14’te aktif olduğundan, her token için yalnızca 48 satır (≈192 KB) okunuyor ve bu veriler 2 MB’lık bir VRAM tamponuna aktarılıyor.\n\nPrefill darboğazını çözmek için üç temel iyileştirme yapıldı: (1) Katman başına 20 kalıcı slot (5 VRAM sıcak slot + 15 host‑RAM slot) içeren konum‑bağımsız önbellek bölümlendirmesi, (2) 3‑tokenlik mikro‑batch’ler yerine 16‑tokenlik tam‑büyük ubatch’lerle tek geçişli katman‑ağırlıklı prefill, ve (3) İlk geçiş sonunda en çok kullanılan 5 uzmanı (expert) VRAM sıcak slotlarına taşıyan fiziksel konsolidasyon. Bu yaklaşımlar, GPU’nun boşta kalmasını önleyip PCIe veri akışını paralel hale getiriyor.\n\nSonuçlar çarpıcı: Warm Prompt Processing hızı 3‑6 tok/s seviyesinden 61.80 tok/s’ye yükseldi; TTFT neredeyse sıfır oldu. Decode aşamasında 18.15‑18.92 tok/s, decode tepe hızı 27.92 tok/s ve ajan‑çalışma decode 24.22 tok/s elde edildi. Betelgeuse, aynı donanımda Strata’ya kıyasla daha düşük bellek tüketimi (10.61 GiB) ve sıfır disk okuma oranı (0.00 %) sağladı. DeepSeek’in yerel DSpark drafter’ı da %80‑90 kabul oranıyla kod üretiminde ek verim kazandırıyor.\n\nBu gelişme, tüketici sınıfı GPU’larda bile 100 GB‑ üzeri MoE modelleri çalıştırmanın mümkün olduğunu gösteriyor. Geliştiriciler, Betelgeuse’un açık kaynak kodlarını GitHub üzerinden inceleyebilir ve bellek katmanlaması ya da kapı‑zili (doorbell) senkronizasyonu konularında sorular sorabilir.",
+  "onemli_maddeler": [
+    "Betelgeuse, DeepSeek V4.1 Flash Q8_XL modelini RTX 3060 12 GB GPU ve 16 GB RAM’de gerçek‑zamanlı hızlarla çalıştırdı.",
+    "Prefill darboğazı, konum‑bağımsız önbellek bölümlendirmesi, tek geçişli katman‑ağırlıklı prefill ve VRAM konsolidasyonu ile çözüldü.",
+    "Warm Prompt Processing hızı 61.80 tok/s’ye, decode hızı ise 18‑19 tok/s’ye ulaştı; TTFT neredeyse anında gerçekleşiyor."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Tüketici sınıfı donanımlarda 100 GB üzeri MoE modellerinin interaktif hızlarla çalıştırılması, büyük dil modellerinin erişilebilirliğini artırarak araştırma ve geliştirme süreçlerini hızlandırır.",
+  "etiketler": [
+    "DeepSeek",
+    "Betelgeuse",
+    "MoE",
+    "out-of-core",
+    "benchmark"
+  ],
+  "anilan_modeller": [
+    "DeepSeek V4.1 Flash Q8_XL",
+    "Qwen 3.8 Flash Next",
+    "Strata"
+  ],
+  "yorum_tr": "Bu performans iyileştirmeleri, geliştiricilerin yüksek kapasiteli MoE modellerini düşük maliyetli donanımla denemelerine olanak tanıyacak ve açık kaynak toplulukları arasında yeni uygulama senaryolarının ortaya çıkmasını hızlandıracaktır.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "DeepSeek V4.1 Flash Q8_XL",
+      "benchmark": "Warm Prompt Processing (PP)",
+      "skor": 61.8,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "16-token ubatches, Q8_XL quantization",
+      "kaynak_metinden_alinti": "Warm Prompt Processing went from crawling at 3–6 tok/s up to 61.80 tok/s."
+    },
+    {
+      "model": "DeepSeek V4.1 Flash Q8_XL",
+      "benchmark": "Decode Peak",
+      "skor": 27.92,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "peak throughput during decode",
+      "kaynak_metinden_alinti": "Decode Peak 27.92 tok/s"
+    }
+  ],
+  "gorsel_url": "https://external-preview.redd.it/bDh6c2g0Y2J4ODBpMawVR2bpW2wIIUm3qGih2EwjuuK85-B-Moho9HA0Rzjt.png?width=640&crop=smart&auto=webp&s=68c742babc2bc60fab5be49f9f066bc15112ecc2",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xqfekg/betelgeuse_running_deepseek_v41_flash_q8_xl_1017/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-07T19:58:54.000Z",
+  "slug": "betelgeuse-running-deepseek-v4-1-flash-q8-xl-1017-at-19-tok"
+}

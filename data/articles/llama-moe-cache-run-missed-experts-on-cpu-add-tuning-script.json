@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "llama.cpp’da MoE önbellek güncellemesi: Kaçırılan uzmanlar CPU’da çalıştırılacak, yeni ayar betiği eklendi",
+  "ozet_tr": "llama.cpp projesine gönderilen 30966 numaralı pull request, MoE (Mixture‑of‑Experts) önbellek mekanizmasında CPU’ya geçiş yeteneği kazandırıyor. Ayrıca, kaçırılan uzmanların yeniden işlenmesini sağlayan bir tuning betiği de pakete dahil edildi. Bu geliştirme, sınırlı GPU belleğiyle çalışan yerel LLaMA dağıtımlarının verimliliğini artırmayı hedefliyor.",
+  "detayli_icerik_tr": "GitHub üzerindeki ggml‑org/llama.cpp deposuna eklenen 30966 numaralı PR, MoE mimarisinde \"missed experts\" (beklenen uzmanların önbellekte bulunamaması) durumunu ele alıyor. Önceden bu durumlarda işlem durur ya da hata verilirken, yeni kod akışı bu uzmanları CPU’da çalıştırarak modelin kesintisiz devam etmesini sağlıyor.\n\nBu geçiş, özellikle düşük‑bellekli GPU’lar veya tek‑GPU kurulumları kullanan yerel LLaMA kullanıcıları için kritik. GPU belleği yetersiz olduğunda uzman ağırlıkları CPU’ya taşınarak hesaplama süresi uzasa da, modelin yanıt vermeyi durdurması engelleniyor. Geliştiriciler, bu davranışı kontrol eden yeni bir komut satırı parametresi ve konfigürasyon dosyası ekledi.\n\nAyrıca PR, \"tuning script\" adı verilen bir betiği de içeriyor. Bu betik, MoE önbellek ayarlarını otomatik olarak analiz edip, kaçırılan uzmanların olasılığını minimize edecek şekilde parametreleri yeniden düzenliyor. Kullanıcılar, tek bir komutla hem önbellek boyutunu hem de CPU‑fallback oranını optimize edebiliyor.\n\nGeliştiriciler, bu güncellemenin açık‑kaynak topluluğunda test edilmesini ve geri bildirim toplanmasını istiyor. PR hâlen inceleme aşamasında ve birleştirilmesi durumunda, yeni sürümde \"--moe-cpu-fallback\" ve \"--moe-tune\" gibi bayrakların belgelerde yer alması planlanıyor.",
+  "onemli_maddeler": [
+    "CPU fallback özelliği sayesinde MoE önbellekte eksik uzmanlar çalıştırılabilecek",
+    "Yeni tuning betiği otomatik önbellek ayarlarını optimize ediyor",
+    "Kullanıcılar GPU bellek sınırlamalarına rağmen model çalıştırmaya devam edebilecek",
+    "Komut satırı parametreleri ve konfigürasyon dosyasıyla kontrol sağlanıyor"
+  ],
+  "kategori": "guncelleme",
+  "onem": 3,
+  "onem_gerekce": "Yerel LLaMA dağıtımlarında GPU bellek kısıtlamaları sıkça karşılaşılan bir sorun; CPU fallback ve otomatik tuning, bu sorunu hafifleterek daha geniş kullanıcı kitlesine fayda sağlıyor.",
+  "etiketler": [
+    "llama.cpp",
+    "MoE",
+    "CPU",
+    "tuning",
+    "open-source"
+  ],
+  "anilan_modeller": [
+    "LLaMA",
+    "llama.cpp"
+  ],
+  "yorum_tr": "Bu güncelleme, sınırlı donanım kaynaklarına sahip geliştiriciler ve araştırmacılar için model çalıştırılabilirliğini artırıyor. CPU fallback performans kaybı yaşatsa da, kesintisiz hizmet sunumu açısından önemli bir adım olarak değerlendirilebilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/gWxcQlTgQBsDYl_TgL_7AP9RdCiV1zKUUXncQZMyVos.png?width=640&crop=smart&auto=webp&s=776b5d8fa664304ba8043e634ef1eb36710df13b",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xqacka/llama_moe_cache_run_missed_experts_on_cpu_add/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-07T16:25:06.000Z",
+  "slug": "llama-moe-cache-run-missed-experts-on-cpu-add-tuning-script"
+}

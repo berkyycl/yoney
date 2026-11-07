@@ -1,0 +1,52 @@
+{
+  "baslik_tr": "Qwen3.8 27B Üzerinde KV Önbellek Kuantizasyonunun Etkileri",
+  "ozet_tr": "KV önbellek kuantizasyonunun model çıktısı üzerindeki etkileri, 35 farklı ağırlık kuantizasyonu ve üç farklı motor (llama.cpp, ExLlamaV3, vLLM) kullanılarak Kullback‑Leibler Divergence (KLD) ölçümüyle incelendi. 8‑bit KV önbellek neredeyse hiç KLD artışı yaratmazken, 4‑bit önbellek özellikle uzun bağlamlarda ölçülebilir bir performans kaybına yol açıyor.",
+  "detayli_icerik_tr": "Reddit topluluğunun uzun süredir tartıştığı KV cache kuantizasyonu, \"asla kuantize etme\" ile \"4 bit yeterli\" arasında geniş bir görüş yelpazesi barındırıyordu. Bu belirsizliği gidermek amacıyla Hefty_Wolverine_553, Qwen3.8 27B modelini tam hassasiyet (bf16) ile çalıştırıp, aynı modelin 16‑bit, 8‑bit ve (desteklenen yerlerde) 4‑bit KV önbelleklerle karşılaştırmalı KLD ölçümleri yaptı. Toplam 35 farklı ağırlık kuantizasyonu, llama.cpp, ExLlamaV3 ve vLLM motorları üzerinden test edildi; veri seti ise araç kullanım senaryoları ve çeşitli metin alanlarından oluşan, satır başına 64 k token uzunluğunda bir bağlam içeriyor.\n\nSonuçlar, 8‑bit KV önbelleğin hafıza tüketimini %50’ye kadar düşürürken KLD artışının 0.00012'den az olduğunu gösterdi; bu fark istatistiksel gürültü seviyesinin içinde ve motorlar arasında ölçülemeyecek kadar küçük. vLLM'de FP8 tabanlı 8‑bit önbellek ise hafif bir artış (0.0004‑0.0006) gösterdi, ancak bu da pratikte ihmal edilebilir bir seviyede. Öte yandan, 4‑bit KV önbellek belirgin bir KLD artışı yarattı: q4_0 kuantizasyonu için +0.0016‑+0.0027, daha yüksek bit‑weight kuantizasyonlarında ise bu artış +0.0032‑+0.0033 seviyelerine ulaştı. Uzun bağlamlarda (16‑32k token) bu zarar %15‑30 oranında daha da yükseldi.\n\nAğırlık kuantizasyonu ile KV cache kuantizasyonunun KLD etkileri farklılık gösterdi; özellikle 4‑bit KV önbellek, uzun bağlamlarda modelin olasılık dağılımını daha fazla bozuyor. NVIDIA’nın NVFP4 ve Qwen’in FP8 checkpoint'leri, aktivasyon kuantizasyonu sayesinde vLLM'de KLD'yi yarı yarıya azaltabiliyor, ancak hâlâ 8‑bit KV önbellek kadar düşük bir etki seviyesine ulaşamıyor. Bu bulgular, düşük VRAM'li sistemlerde 8‑bit KV önbelleğin güvenli bir hafıza tasarrufu sağlarken, 4‑bit KV önbelleğin yalnızca çok düşük bit‑weight kuantizasyonlarıyla (Q3 ve altı) düşünülmesi gerektiğini ortaya koyuyor.\n\nAraştırmacılar, sonuçları interaktif grafikler ve tablolarla paylaşarak, farklı motor ve kuantizasyon kombinasyonlarının KLD performansını şeffaf bir şekilde sunuyor. Bu çalışma, KV cache kuantizasyonunun pratik etkilerini nicel bir temele oturtarak, geliştiricilerin hafıza‑performans dengesini daha bilinçli bir şekilde ayarlamasına olanak tanıyor.",
+  "onemli_maddeler": [
+    "8‑bit KV önbellek hafıza tüketimini %50’ye kadar azaltırken KLD artışı 0.00012'den az, yani pratikte yok denecek kadar az.",
+    "4‑bit KV önbellek KLD'yi +0.0016‑+0.0033 arasında artırıyor; uzun bağlamlarda (%15‑30) bu zarar daha da büyüyor.",
+    "vLLM'de FP8 tabanlı 8‑bit KV önbellek hafif bir KLD artışı (0.0004‑0.0006) gösteriyor, ancak hâlâ kabul edilebilir bir takas.",
+    "NVFP4 ve FP8 checkpoint'leri aktivasyon kuantizasyonu sayesinde vLLM'de KLD'yi %50’ye kadar düşürebiliyor, ancak 8‑bit KV önbellek kadar düşük seviyeye ulaşamıyor."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "KV cache kuantizasyonu, düşük VRAM'li sistemlerde büyük modelleri çalıştırmak için kritik bir optimizasyon; bu çalışmanın sonuçları, geliştiricilerin hafıza‑performans dengesini güvenli bir şekilde ayarlamasına doğrudan yön veriyor.",
+  "etiketler": [
+    "KV cache",
+    "kuantizasyon",
+    "Qwen3.8",
+    "benchmark",
+    "llama.cpp"
+  ],
+  "anilan_modeller": [
+    "Qwen3.8 27B"
+  ],
+  "yorum_tr": "Bu bulgular, 8‑bit KV önbelleğin hafıza tasarrufu sağlarken performans kaybı yaratmadığını, 4‑bit önbelleğin ise uzun bağlamlarda dikkatle kullanılmasını gerektirdiğini gösteriyor. Geliştiriciler, düşük VRAM ortamlarında 8‑bit KV kuantizasyonunu tercih ederek verimliliği artırabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen3.8 27B",
+      "benchmark": "8-bit KV cache KLD increase",
+      "skor": 0.00012,
+      "birim": "KL",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "token-by-token KLD karşılaştırması",
+      "kaynak_metinden_alinti": "8‑bit KV caches work well... there’s essentially no difference in KLD. ... move KL by less than 0.00012 in either direction."
+    },
+    {
+      "model": "Qwen3.8 27B",
+      "benchmark": "4-bit KV cache penalty growth (16‑32k tokens)",
+      "skor": 0.0044,
+      "birim": "KL",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "context length 16‑32k tokens",
+      "kaynak_metinden_alinti": "There’s about 15-30% more damage at 16-32k context than in the first 4k tokens."
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/ngifk5jz180i1.png?width=140&height=75&auto=webp&s=777060fd98ede32803c348bbb5d398c2124d1eb8",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xqbesv/effects_of_kv_cache_quantization_on_qwen38_27b/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-07T17:09:51.000Z",
+  "slug": "effects-of-kv-cache-quantization-on-qwen3-8-27b"
+}
