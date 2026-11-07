@@ -1,0 +1,52 @@
+{
+  "baslik_tr": "NousResearch, Alibaba Qwen3.8-27B Modelini Arete-27B Olarak Değer Uyarlamalı İnce Ayar Yaptı",
+  "ozet_tr": "Nous Research, Alibaba'nın Qwen3.8-27B modelini batı değerlerine uygun hâle getirmek için süpervised ince ayar (SFT) uygulayarak Arete-27B adlı 27 Milyar parametreli yeni bir model ortaya çıkardı. Model, gerçek bilgi doğruluğunu artırırken propaganda içeren yanıtların oranını %22'den %0,9'a düşürdü.",
+  "detayli_icerik_tr": "Nous Research, açık kaynak topluluğunun elinde bulunan Alibaba'nın Qwen3.8-27B modelini temel alarak Arete-27B adını verdiği yeni bir 27 Milyar parametreli dil modeli geliştirdi. Model, sadece metin tabanlı veri setleriyle süpervised fine‑tuning (SFT) yöntemiyle eğitildi; pekiştirmeli öğrenme (RL), tercih optimizasyonu ya da mimari değişiklikler kullanılmadı.\n\nAraştırmacılar, Qwen3.8-27B'nin politik olarak hassas konularda Çin Devlet Partisi (CCP) perspektifine dayalı yanıtlar verdiğini ve bu yanıtların %22'sinin propaganda içerdiğini tespit etti. Bu sorunu çözmek amacıyla yedi değer kategorisine (ifade özgürlüğü, devlet ideolojisi, serbest piyasa vs.) odaklanarak modelin çerçeveleme (framing) davranışını yeniden şekillendirdi.\n\nYapılan değerlendirmelerde Arete-27B, gerçek bilgi hatırlama (fact recall) puanını 2.32'den 2.98'e (5 üzerinden) yükseltti ve propaganda içeren yanıtların oranını %22'den %0.9'a düşürdü. Bu iyileşmeler, yedi değer kategorisinin tamamında gözlemlendi ve genel yetenek ve ajanlık (agentic) benchmark'larında anlamlı bir gerileme görülmedi.\n\nArete-27B, genel asistanlık ve ajanlık görevleri için tasarlandı; kullanıcıların modelin değer perspektifini değiştirilmiş bir biçimde tercih etmeleri hedefleniyor. Araştırmacılar, topluluğu modeli kendi gereksinimlerine göre test etmeye ve değer uyumu üzerine daha fazla deney yapmaya davet ediyor.",
+  "onemli_maddeler": [
+    "Arete-27B, Qwen3.8-27B'nin politik çerçeveleme yanıtlarını %22'den %0.9'a düşürdü.",
+    "Fact score puanı 2.32'den 2.98'e yükseltilerek bilgi doğruluğu artırıldı.",
+    "Model sadece süpervised fine‑tuning ile eğitildi; RL ya da tercih optimizasyonu kullanılmadı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Yeni bir açık kaynak modelin değer uyarlamalı ince ayarı, etik AI ve bölgesel önyargıların giderilmesi açısından önemli bir adım oluşturuyor, ancak henüz geniş çaplı ticari etkisi sınırlı.",
+  "etiketler": [
+    "değer uyumu",
+    "ince ayar",
+    "Qwen",
+    "açık kaynak",
+    "AI etik"
+  ],
+  "anilan_modeller": [
+    "Qwen3.8-27B",
+    "Arete-27B"
+  ],
+  "yorum_tr": "Arete-27B'nin değer yönelimli iyileştirmeleri, araştırmacıların ve geliştiricilerin model davranışlarını kendi etik çerçevelerine göre şekillendirebileceğini gösteriyor; bu, hem güvenilirlik hem de bölgesel önyargıların azaltılması açısından olumlu bir gelişme.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Arete-27B",
+      "benchmark": "Fact Score",
+      "skor": 2.98,
+      "birim": "out of 5",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "out of 5",
+      "kaynak_metinden_alinti": "Arete-27B raised its fact score from 2.32 to 2.98 out of 5"
+    },
+    {
+      "model": "Arete-27B",
+      "benchmark": "Propaganda Answer Rate",
+      "skor": 0.9,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "%",
+      "kaynak_metinden_alinti": "cut answers containing propaganda from 22% to 0.9%"
+    }
+  ],
+  "gorsel_url": "https://external-preview.redd.it/WOL_2MiLWeCANel2ZAc33_kBKh24AfOCR3a1QNud8IQ.png?width=640&crop=smart&auto=webp&s=462c17f67582d7535349b95488c8fc755e2d0386",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xpmj33/nousresearcharete27b_hugging_face_qwen_finetune/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-06T19:58:47.000Z",
+  "slug": "nousresearch-arete-27b-hugging-face-qwen-finetune"
+}

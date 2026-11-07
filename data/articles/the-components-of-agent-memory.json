@@ -1,0 +1,59 @@
+{
+  "baslik_tr": "Claude ajanlarının hafıza bileşenleri ve Dreaming yöntemiyle performans artışı",
+  "ozet_tr": "Anthropic, Claude modellerinin hafıza yönetimini insan beynindeki uyku ve yeniden oynatma süreçlerine benzeterek yeni bir \"dreaming\" mekanizması geliştirdi. Bu yöntem, hatalı notları düzeltmek, yeni kurallar oluşturmak ve bilgi haritaları (wiki) inşa etmek suretiyle uzun vadeli görevlerdeki başarı oranını yüzde 13'ten yüzde 48'e çıkardı.",
+  "detayli_icerik_tr": "Anthropic araştırmacıları, insan beyninin hafıza konsolidasyonunu uyku sırasında gerçekleştirmesinden ilham alarak, AI ajanları için benzer bir bölünmüş hafıza mimarisi önerdi. Modeller, etkileşim sırasında log ve transcript'leri kaydederken, boş zamanlarda (\"dreaming\") bu kayıtları gözden geçirip hataları düzeltir, notlar yazar ve yeni hafıza temsilleri oluşturur. Bu süreç, Claude'un uzun vadeli görevlerdeki performansını artırmak için kritik bir adım olarak tanımlandı.\n\nClaude'un hafıza yönetimi iki ana bileşene ayrıldı: anlık olarak işaretlenen önemli olayların hafıza notları olarak saklanması ve bu notların gelecekteki oturumlarda kullanılmak üzere bir hafıza dizinine kaydedilmesi. Modeller, \"salience\" (önem) tahminleri yaparak hangi bilgilerin hatırlanması gerektiğine karar verir; örneğin, doğrulanmış bir kuralı gelecekteki sorgularda tekrar kontrol etmeden kullanmak bir tahmindir.\n\nCL-Bench 1.0 veri tabanı görevinde, Claude Opus 5, Opus 5.5 ve Sonnet 5 gibi modeller hafıza dizinini etkin şekilde kullanarak öğrenme döngüsünü kapattı ve hatalı yanıtları düzeltmek için kurallar oluşturdu. Pokémon Red oyun testinde ise hafıza stratejileri farklı sonuçlar verdi: Sonnet 3.7 413 dosya yazarak sadece bir rozet kazanırken, Fable 5 sadece dokuz dosya yazarak dört rozet elde etti. Bu, gereksiz ve güncel olmayan bilgilerin hafıza klasörünü şişirip performansı düşürdüğünü gösterdi.\n\nDreaming, hafıza notlarını oturum transkriptleriyle karşılaştırarak hataları otomatik düzeltme yeteneği sağladı. Örneğin, Claude'un Mt. Moon mağarasındaki PokéCenter konum hatasını dreaming sayesinde düzeltilmesi, oyunun ilerlemesini doğrudan etkiledi. Ayrıca, büyük bir iç doküman koleksiyonunda (350.000 dosya, 420M token) wiki oluşturma süreci, 128 dreaming oturumu sonunda sorulara verilen doğru yanıt oranını %13'ten %48'e çıkardı; arama aracıyla birlikte kullanıldığında bu oran %54'ten %61'e yükseldi.",
+  "onemli_maddeler": [
+    "Claude'un \"dreaming\" süreci, hafıza notlarını oturum transkriptleriyle karşılaştırarak hataları otomatik düzeltir.",
+    "Bellek yönetiminde salience tahmini, modellerin hangi bilgiyi saklayacağına karar vermesini sağlar ve performansı artırır.",
+    "Pokémon Red testinde, gereksiz hafıza dosyaları performansı düşürürken, odaklı stratejik notlar rozet sayısını dört katına çıkardı.",
+    "Wiki tabanlı hafıza temsilleri, büyük doküman koleksiyonlarında soru yanıt doğruluğunu %13'ten %48'e yükseltti."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Araştırma, AI ajanlarının uzun vadeli hafıza yönetiminde yeni bir metodoloji sunarak performans artışı sağladı ve bu sonuçlar çeşitli benchmarklarda ölçülebilir iyileşmeler gösterdi.",
+  "etiketler": [
+    "AI hafıza",
+    "Claude",
+    "Dreaming",
+    "CL-Bench",
+    "Pokémon"
+  ],
+  "anilan_modeller": [
+    "Claude Sonnet 4.6",
+    "Claude Opus 4.7",
+    "Claude Sonnet 5",
+    "Claude Opus 5",
+    "Claude Opus 5.5",
+    "Claude Sonnet 5.5",
+    "Claude Fable 5",
+    "Claude Sonnet 3.7"
+  ],
+  "yorum_tr": "Dreaming tabanlı hafıza yönetimi, AI ajanlarının hataları kendi kendine düzeltmesini ve bilgi birikimini verimli bir şekilde genişletmesini sağlıyor; bu da geliştiricilere daha az müdahale ile daha karmaşık görevleri yerine getirebilen sistemler sunuyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Claude Opus 5",
+      "benchmark": "Internal document wiki QA",
+      "skor": 48,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "graded criteria",
+      "kaynak_metinden_alinti": "performance on the 25 questions grew from 13% to 48% of graded criteria"
+    },
+    {
+      "model": "Claude Opus 5",
+      "benchmark": "Search + Wiki QA",
+      "skor": 61,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "aggregate score",
+      "kaynak_metinden_alinti": "Claude’s aggregate score rose from 54% to 61% as that wiki grew, compared with 53% when it had access to the search tool alone"
+    }
+  ],
+  "gorsel_url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/6ab2663a2c0bd6a41409d90136a59a5d72995ea5-1200x630.jpg",
+  "url": "https://www.anthropic.com/research/components-of-agent-memory",
+  "source": "Anthropic Research",
+  "sourceTier": "resmi",
+  "date": "2026-11-06T00:00:00.000Z",
+  "slug": "the-components-of-agent-memory"
+}

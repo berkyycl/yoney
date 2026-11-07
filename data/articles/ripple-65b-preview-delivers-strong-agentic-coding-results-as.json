@@ -1,0 +1,72 @@
+{
+  "baslik_tr": "Ripple-65B Preview, tam Apache 2.0 lisanslı açık ABD modeli olarak güçlü ajan kodlama sonuçları sunuyor",
+  "ozet_tr": "Ricursive Intelligence, 12 trilyon token ile eğitilmiş 65 milyar parametreli Ripple-65B Preview modelini duyurdu. Model, TerminalBench 2.1 kodlama benchmark’inde %80.52 puan alarak açık ABD modelleri arasında en yüksek skoru elde etti.",
+  "detayli_icerik_tr": "Ricursive Intelligence, yapay zeka çip tasarımı konusunda uzmanlaşmış bir firma olarak, 12 trilyon token üzerinden ön‑eğitim yapılan Ripple-65B Preview modelini kamuoyuna tanıttı. Model, 65 milyar parametreli yoğun bir Transformer mimarisiyle inşa edildi ve Apache 2.0 lisansı altında tamamen açık kaynak olarak sunuluyor; bu sayede ABD içinde ve dışında geliştiriciler, modeli istedikleri gibi kullanıp dağıtma özgürlüğüne sahip.\n\nRipple, yaygın olarak tercih edilen mixture‑of‑experts (MoE) yaklaşımları yerine tek bir dense mimariyi benimseyerek Nvidia donanımına özel optimizasyonlar içeriyor. Şirket, modelin Inkling 2 Small gibi yeni çıkan rakiplerinden daha düşük benchmark puanları aldığını kabul etse de, daha hafif donanım gereksinimleri ve yerel dağıtım kolaylığı sayesinde birçok kullanıcı için daha uygulanabilir bir seçenek olduğunu vurguluyor.\n\nBenchmark sonuçları, Ripple-65B Preview’un kodlama yeteneklerini net bir şekilde ortaya koyuyor. TerminalBench 2.1 testinde %80.52 puan alarak açık ABD modelleri arasında lider konuma yükseldi. Aynı zamanda SWE‑Bench Pro v2.0 Hard testinde %79.1, DeepSWE v1.1 testinde %44.3 ve MCP Atlas testinde %71.67 skorları elde edildi. Bu sonuçlar, Inkling 2 Small’ın %86.3, %72.1 ve %85.4 gibi daha yüksek puanlar almasına rağmen, Ripple’ın performansının hâlâ rekabetçi seviyede olduğunu gösteriyor.\n\nRicursive, modelin geliştirme ve eğitim maliyetinin sadece 32 milyon dolar olduğunu belirterek, büyük dil modellerinin maliyet bariyerini önemli ölçüde düşürdüklerini iddia ediyor. Ripple‑65B Preview, Hugging Face platformu üzerinden Apache 2.0 lisansı ile indirilebilir ve topluluk tarafından özgürce kullanılabilir hâle getirildi. Açık kaynak kodlu bu model, araştırmacılar, start‑uplar ve büyük şirketler için güçlü bir kod üretme aracı olarak sektörde yeni bir dinamik yaratmayı hedefliyor.",
+  "onemli_maddeler": [
+    "Ripple-65B Preview, 65 milyar parametreli yoğun Transformer mimarisiyle geliştirildi.",
+    "TerminalBench 2.1 kodlama benchmark’inde %80.52 puan alarak açık ABD modelleri arasında lider konumda.",
+    "Model, Apache 2.0 lisansı altında Hugging Face üzerinden ücretsiz olarak dağıtılıyor.",
+    "Eğitim maliyeti sadece 32 milyon dolar olarak açıklanmış, bu da açık kaynak büyük modellerin maliyetini düşürüyor.",
+    "Inkling 2 Small’dan daha düşük benchmark puanları almasına rağmen, donanım gereksinimleri daha hafif ve yerel dağıtım için daha uygun."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Tam açık kaynak lisansına sahip, yüksek kodlama performansı gösteren 65 B parametreli bir modelin piyasaya sürülmesi, araştırmacılar ve geliştiriciler için erişilebilir büyük dil modelleri ekosistemini genişletiyor.",
+  "etiketler": [
+    "açık kaynak",
+    "dil modeli",
+    "kodlama benchmark",
+    "TerminalBench",
+    "Apache 2.0"
+  ],
+  "anilan_modeller": [
+    "Ripple-65B Preview",
+    "Inkling 2 Small"
+  ],
+  "yorum_tr": "Ripple-65B Preview, açık kaynak topluluğuna yüksek kapasiteli bir kodlama modeli sunarak rekabeti artırıyor ve özellikle donanım sınırlamaları olan ekipler için cazip bir seçenek oluşturuyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Ripple-65B Preview",
+      "benchmark": "TerminalBench 2.1",
+      "skor": 80.52,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "achieved a score of 80.52 on the TerminalBench 2.1 coding benchmark"
+    },
+    {
+      "model": "Ripple-65B Preview",
+      "benchmark": "SWE-Bench Pro v2.0 Hard",
+      "skor": 79.1,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "SWE-Bench Pro v2.0 Hard 79.1% 86.3%"
+    },
+    {
+      "model": "Ripple-65B Preview",
+      "benchmark": "DeepSWE v1.1",
+      "skor": 44.3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "DeepSWE v1.1 44.3% 72.1%"
+    },
+    {
+      "model": "Ripple-65B Preview",
+      "benchmark": "MCP Atlas",
+      "skor": 71.67,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "MCP Atlas 71.67% 85.4/85.0%"
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/11/ricurisve_intelligence.png",
+  "url": "https://the-decoder.com/ripple-65b-preview-delivers-strong-agentic-coding-results-as-a-fully-apache-2-0-open-us-model/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-06T19:47:04.000Z",
+  "slug": "ripple-65b-preview-delivers-strong-agentic-coding-results-as"
+}

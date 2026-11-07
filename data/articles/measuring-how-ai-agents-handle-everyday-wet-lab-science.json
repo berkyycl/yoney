@@ -1,0 +1,104 @@
+{
+  "baslik_tr": "BioBasicsBench: AI ajanların günlük wet-lab bilimini nasıl yönettiği ölçülüyor",
+  "ozet_tr": "OpenAI, biyoteknoloji şirketi Ligo ile ortaklaşa geliştirdiği BioBasicsBench benchmark'ını tanıttı. 100 görevden oluşan bu test, AI ajanlarının ham deneysel verileri yorumlama, hataları tespit etme ve sonuçların güvenilirliğini değerlendirme yeteneklerini ölçüyor. En yüksek çaba ayarında GPT‑6 Astra, %66.7 ortalama ödül puanıyla önceki nesillere göre belirgin bir üstünlük sağladı.",
+  "detayli_icerik_tr": "OpenAI, yapay genel zekânın tüm insanlığa fayda sağlaması misyonu kapsamında, biyolojik araştırmaları hızlandırmak amacıyla yeni bir benchmark olan BioBasicsBench'i duyurdu. Laboratuvar ortamında sıkça karşılaşılan başarısız deneyler, belirsiz görüntüler ve çelişkili gözlemler gibi gerçek dünya zorluklarını yansıtmak için, Ligo şirketiyle birlikte 100 görev tasarlandı. Bu görevler, protein yöntemleri, görüntüleme ve sitometri, kantifikasyon ve assay'ler, nükleik asit yöntemleri ve moleküler klonlama gibi beş temel wet‑lab alanını kapsıyor ve gel görüntülerinden mikroskopik zaman‑serilerine, sekans dosyalarından protokol videolarına kadar çeşitli ham veri türlerini içeriyor.\n\nGörevler, bilim insanları tarafından kendi deneylerinden derlenen gerçek verilerle oluşturuldu; her bir soruya uzmanlar tarafından yazılmış bir değerlendirme rubriği eşlik ediyor. İç ve dış uzman incelemelerinden geçen bu süreç, soruların ve rubriklerin bilimsel doğruluğunu güvence altına alıyor. Modeller, yapılandırılmış bir yanıt vererek sonuç, ölçüm ya da öneri sunuyor ve rubriğe göre puanlanıyor; bu sayede doğru sonuç ile kısmen doğru analiz arasındaki fark net bir şekilde ölçülüyor.\n\nYapılan değerlendirmede yedi model (GPT‑5.2, GPT‑5.4, GPT‑5.5, GPT‑5.6 Sol, GPT‑6.1 Sol, GPT‑6 Luna ve GPT‑6 Astra) 37 farklı akıl yürütme‑çaba ayarıyla test edildi; her görev için beş deneme yapılarak toplam 18.500 sonuç elde edildi. En yüksek çaba ayarı (xhigh) altında GPT‑6 Astra %66.7 ortalama ödül puanı elde ederken, bir önceki nesil GPT‑5.6 Sol %43.8 puan aldı. GPT‑6.1 Sol %62.0, GPT‑6 Luna %38.3, GPT‑5.5 %35.4 gibi sonuçlar da kaydedildi. Bu puanlar, modellerin çoklu modalite (görüntü, video, sekans vb.) işleme yeteneklerinin geliştiğini, ancak hâlâ kontrol ve bağlam yorumlamada eksik kaldığını gösteriyor.\n\nSonuçlar, GPT‑6 Astra'nın veri sınırlamalarını daha iyi tanıma, çoklu modal verileri daha hassas analiz etme ve deneysel bağlamı koruma konularında ilerleme kaydettiğini ortaya koysa da, model hâlâ bazı durumlarda varsayımları kontrol verilerinin önüne koyabiliyor ve çelişkili gözlemleri göz ardı edebiliyor. Bu eksiklikler, AI ajanlarının laboratuvar ortamında güvenilir karar destek sistemi olarak kullanılabilmesi için daha fazla iyileştirme gerektiğini işaret ediyor.",
+  "onemli_maddeler": [
+    "BioBasicsBench, 100 görev ve beş wet‑lab alanı üzerinden AI ajanlarının deneysel veri yorumlama yeteneğini ölçen ilk kapsamlı benchmark'tır.",
+    "GPT‑6 Astra, xhigh çaba ayarında %66.7 ortalama ödül puanı elde ederek GPT‑5.6 Sol'un %43.8 puanının çok üzerindedir.",
+    "Modellerin çoklu modalite (görüntü, video, sekans vb.) işleme becerileri ilerlemiş, ancak hâlâ kontrol ve bağlam yorumlamada hatalar görülmektedir.",
+    "Değerlendirme 7 model, 37 akıl yürütme‑çaba ayarı ve 18.500 deneme üzerinden gerçekleştirilmiştir.",
+    "Astra'nın bazı durumlarda varsayımları kontrol verilerinin önüne koyması, laboratuvar güvenilirliği açısından kritik bir eksikliği vurgulamaktadır."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "AI'nın biyomedikal araştırmalarda doğrudan laboratuvar verilerini yorumlayabilmesi, bilimsel verimliliği artırma potansiyeli taşıdığı için sektörde büyük bir adım olarak görülüyor.",
+  "etiketler": [
+    "AI",
+    "wet-lab",
+    "benchmark",
+    "multimodal",
+    "biyoinformatik"
+  ],
+  "anilan_modeller": [
+    "GPT-5.2",
+    "GPT-5.4",
+    "GPT-5.5",
+    "GPT-5.6 Sol",
+    "GPT-6.1 Sol",
+    "GPT-6 Luna",
+    "GPT-6 Astra"
+  ],
+  "yorum_tr": "BioBasicsBench, AI ajanlarının laboratuvar ortamındaki gerçekçi görevlerde performansını ölçen kritik bir araç olarak öne çıkıyor; modellerin ilerlemesi, biyoteknoloji araştırmalarında otomasyon ve karar desteği potansiyelini artırırken, hâlâ güvenilirlik sorunları geliştiricilerin odaklanması gereken alanları işaret ediyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GPT-6 Astra",
+      "benchmark": "BioBasicsBench",
+      "skor": 66.7,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "xhigh",
+      "kaynak_metinden_alinti": "GPT‑6 Astra earned an average of 66.7% of the available credit, compared with 43.8% for GPT‑5.6 Sol."
+    },
+    {
+      "model": "GPT-6.1 Sol",
+      "benchmark": "BioBasicsBench",
+      "skor": 62,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "xhigh",
+      "kaynak_metinden_alinti": "GPT‑6.1 Sol achieved a mean reward of 62.0% at the xhigh reasoning effort setting."
+    },
+    {
+      "model": "GPT-5.6 Sol",
+      "benchmark": "BioBasicsBench",
+      "skor": 43.8,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "xhigh",
+      "kaynak_metinden_alinti": "GPT‑5.6 Sol earned an average of 43.8% of the available credit."
+    },
+    {
+      "model": "GPT-6 Luna",
+      "benchmark": "BioBasicsBench",
+      "skor": 38.3,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "xhigh",
+      "kaynak_metinden_alinti": "GPT‑6 Luna scored a mean reward of 38.3% at the xhigh setting."
+    },
+    {
+      "model": "GPT-5.5",
+      "benchmark": "BioBasicsBench",
+      "skor": 35.4,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "xhigh",
+      "kaynak_metinden_alinti": "GPT‑5.5 achieved a mean reward of 35.4%."
+    },
+    {
+      "model": "GPT-5.4",
+      "benchmark": "BioBasicsBench",
+      "skor": 33.2,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "xhigh",
+      "kaynak_metinden_alinti": "GPT‑5.4 achieved a mean reward of 33.2%."
+    },
+    {
+      "model": "GPT-5.2",
+      "benchmark": "BioBasicsBench",
+      "skor": 31.2,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "xhigh",
+      "kaynak_metinden_alinti": "GPT‑5.2 achieved a mean reward of 31.2%."
+    }
+  ],
+  "gorsel_url": "https://images.ctfassets.net/kftzwdyauwt9/3lNbSQIg31Dg9aBrUjuQMI/131fea8d534499ca30f7a9f880269d74/biobasicsbench-social.png?w=1600&h=900&fit=fill",
+  "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-11-06T00:00:00.000Z",
+  "slug": "measuring-how-ai-agents-handle-everyday-wet-lab-science"
+}

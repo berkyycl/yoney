@@ -1,0 +1,64 @@
+{
+  "baslik_tr": "Mirage: 22 MB'lık Görsel-Dil Modeli Tek Geçişte Çoklu Görev Çözüyor",
+  "ozet_tr": "Cactus Compute, sadece 22 MB ağırlık dosyasıyla sahne açıklaması, nesne algılama, OCR, segmentasyon ve mekânsal ilişki analizi gibi görevleri tek bir geçişte gerçekleştiren Mirage adlı yeni bir görsel-dil modeli tanıttı. Model, Samsung Galaxy S26 üzerinde NPU’da 74 ms, CPU’da 107 ms sürede çalışıyor ve yedi dili destekliyor. Mirage’ın çıktısı, metin‑only büyük dil modellerine (LLM) VLM yetenekleri kazandırarak VQA performansını önemli ölçüde artırıyor.",
+  "detayli_icerik_tr": "Cactus Compute araştırmacısı Henry, Mirage'ı akıllı telefonlar, giyilebilir cihazlar, robotlar ve benzeri tüketici donanımları için tasarladıklarını belirtti. Model, toplam 51,3 M parametreye sahip; bunların 7,8 M'ı görüntü kodlayıcı, 40,8 M'ı dil çözücü ve 2,6 M'ı OCR ile mekânsal başlıklara ayrılıyor. Görüntü kodlayıcı, sabit Hadamard dönüşümleri ve küçük öğrenilmiş konvolüsyonları birleştiren HConvGLU mimarisini, çözücü ise Needle ve Whistle projelerinde kullanılan Simple Attention ve Hadamard MLP ailesini kullanıyor.\n\nMirage, aynı görüntü özelliklerini nesne algılama ve maske üretimi için paylaşıyor; ayrıca OCR ve mekânsal ilişkiler için ayrı başlıklar barındırıyor. Çıktı, nesne adları, özellikleri, ilişkileri ve kısa bir akıl yürütme izini içeren yapılandırılmış bir kayıt sunuyor. Bu yapı, metin‑only büyük dil modellerine (ör. Qwen3‑0.6B, Qwen3‑1.7B, Qwen3‑4B‑Instruct‑2507) doğrudan beslenerek VLM yetenekleri kazandırıyor.\n\nDeneylerde, 256 VQAv2 sorusundan oluşan bir test setinde, Qwen3‑0.6B yalnızca soruyla 9,3 puan alırken, Mirage’ın yapılandırılmış kaydı ve izini eklediğinde puanı 31,3'e yükseldi. Benzer şekilde, Qwen3‑1.7B 27,5 puandan 31,6 puana, Qwen3‑4B‑Instruct‑2507 ise 33,4 puandan 37,3 puana çıktı. Bu sonuçlar, modellerin ince ayar yapılmadan bile Mirage’ın sağladığı görsel bilgilerle performans kazandığını gösteriyor.\n\nMirage ayrıca bazı algılama hataları da sergiledi; örneğin bir kaykay fotoğrafında kaykay nesnesi atlandı ve sadece arabalar, insanlar ve ayakkabılar tanımlandı. Bu tür durumlar, metin‑only okuyucunun ilgili gözlemi içermediğinde hatalı tahminler yapabileceğini ortaya koyuyor. Cactus Compute, Mirage kayıtlarıyla ince ayar yapılmış okuyucular geliştirmeyi ve sonuçları toplulukla paylaşmayı planlıyor.",
+  "onemli_maddeler": [
+    "Mirage sadece 22 MB ağırlıkla sahne açıklaması, nesne algılama, OCR, segmentasyon ve mekânsal analiz gibi çoklu görevleri tek geçişte gerçekleştiriyor.",
+    "Samsung Galaxy S26 üzerinde NPU’da 74 ms, CPU’da 107 ms sürede çalışarak mobil cihazlarda gerçek‑zaman performans sunuyor.",
+    "Mirage’ın yapılandırılmış çıktısı, metin‑only büyük dil modellerine VLM yetenekleri kazandırarak VQA skorlarını 9,3'ten 31,3'e kadar artırdı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Mirage, mobil ve uç cihazlarda çalışabilecek kadar küçük bir VLM sunarak görsel‑dil entegrasyonunu demokratikleştiriyor ve büyük dil modellerine görsel bilgi ekleyerek performans kazandırmasıyla araştırma ve uygulama alanında önemli bir adım oluşturuyor.",
+  "etiketler": [
+    "görsel-dil modeli",
+    "mobil AI",
+    "uç cihaz",
+    "OCR",
+    "nesne algılama"
+  ],
+  "anilan_modeller": [
+    "Mirage",
+    "Qwen3-0.6B",
+    "Qwen3-1.7B",
+    "Qwen3-4B-Instruct-2507",
+    "Nemotron"
+  ],
+  "yorum_tr": "Mirage, sınırlı kaynaklı cihazlarda çoklu görsel görevleri tek bir modelle sunarak AI’nın erişilebilirliğini artırıyor. Aynı zamanda, görsel çıktıyı metin‑only LLM'lere besleyerek yeni bir hibrit yaklaşımın potansiyelini gösteriyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen3-0.6B",
+      "benchmark": "VQA",
+      "skor": 31.3,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "consensus credit",
+      "kaynak_metinden_alinti": "Qwen3-0.6B went from 9.3 with the question alone to 31.3 with Mirage's structured record and full trace, measured as VQA consensus credit out of 100."
+    },
+    {
+      "model": "Qwen3-1.7B",
+      "benchmark": "VQA",
+      "skor": 31.6,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "consensus credit",
+      "kaynak_metinden_alinti": "Qwen3-1.7B 27.5 (question only) 31.6 (Mirage record and trace)"
+    },
+    {
+      "model": "Qwen3-4B-Instruct-2507",
+      "benchmark": "VQA",
+      "skor": 37.3,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "consensus credit",
+      "kaynak_metinden_alinti": "Qwen3-4B-Instruct-2507 33.4 (question only) 37.3 (Mirage record and trace)"
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/yeo2x908i10i1.png?width=140&height=110&auto=webp&s=94897cf505e279ff8a9a290bf6a074bc96a95bd7",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xpm8mw/mirage_a_22_mb_visuallanguage_model_that_runs/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-06T19:46:41.000Z",
+  "slug": "mirage-a-22-mb-visual-language-model-that-runs-scene-descrip"
+}

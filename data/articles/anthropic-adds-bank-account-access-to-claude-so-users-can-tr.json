@@ -1,0 +1,37 @@
+{
+  "baslik_tr": "Anthropic, Claude'a banka hesabı bağlama özelliği ekledi",
+  "ozet_tr": "Anthropic, Claude yapay zekâ asistanına banka hesabı bağlama özelliği ekleyerek kullanıcıların harcamalarını analiz etmelerini sağladı. \"Personal Finance\" adı verilen bu beta özellik, yalnızca okuma izni veriyor ve Plaid aracılığıyla güvenli bir şekilde çalışıyor.",
+  "detayli_icerik_tr": "Anthropic, Claude kullanıcılarına banka hesaplarını bağlayarak harcama kalıplarını inceleme imkânı sunan \"Personal Finance\" adlı yeni bir özelliği beta aşamasında piyasaya sürdü. Özellik, Plaid entegrasyonu sayesinde kullanıcıların banka şifrelerini asla görmeden, sadece okuma izniyle veri akışı sağlar.\n\nKullanıcılar harcamalarını kategori bazında ayırabilir, yaklaşan ödemeleri görebilir ve \"Gelirimden daha fazla harcıyor muyum?\" gibi sorular sorabilir. Bu hizmet, ABD'de Pro, Max ve Ultra abonelerine beta olarak sunuluyor ve kullanıcılar istedikleri zaman hesap bağlantılarını kesebiliyor. Claude ile yapılan sohbetlerin kişisel finans bölümü, model eğitimi için kullanılmayacak ve reklam ya da sponsorlu öneri gösterilmeyecek.\n\nGüvenlik açısından, Plaid üzerinden gerçekleşen bağlantı şifreleri asla Claude'a iletilmez; sadece token tabanlı bir erişim sağlanır. Ayrıca, Claude bu verileri sadece okuma amaçlı kullanır; para transferi, yatırım ya da fon yönetimi gibi işlemler tamamen engellenmiştir.\n\nAnthropic, uzun vadede Claude'u lisanslı finansal danışmanlar ve düzenlenmiş finans kurumlarıyla entegre etmeyi hedefliyor. Bu adım, OpenAI'nin ABD'de sunduğu \"Finances\" özelliğiyle doğrudan rekabet oluştururken, AI destekli kişisel finans yönetiminin yaygınlaşmasına öncülük ediyor.",
+  "onemli_maddeler": [
+    "Claude artık Plaid üzerinden banka hesabı bağlayarak harcama analizleri yapabiliyor.",
+    "Özellik sadece okuma izni veriyor; para transferi, yatırım veya yönetim mümkün değil.",
+    "US'de Pro, Max ve Ultra abonelerine beta olarak sunuluyor ve sohbet verileri model eğitimi için kullanılmayacak.",
+    "Kullanıcılar istedikleri zaman bağlantıyı kesebiliyor ve reklam/sponsor önerisi almayacak.",
+    "Anthropic, gelecekte lisanslı finansal danışmanlar ve düzenlenmiş firmalarla entegrasyon planlıyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Kişisel finans yönetimi AI asistanlarına entegrasyonu, kullanıcı deneyimini ve veri güvenliğini etkileyen kritik bir adım olduğundan yüksek önem taşıyor.",
+  "etiketler": [
+    "Claude",
+    "Anthropic",
+    "kişisel finans",
+    "Plaid",
+    "AI"
+  ],
+  "anilan_modeller": [
+    "Claude",
+    "Claude Pro",
+    "Claude Max",
+    "Claude Ultra"
+  ],
+  "yorum_tr": "Bu özellik, AI destekli finansal analizlerin yaygınlaşmasını hızlandırarak hem bireysel kullanıcıların bütçe takibini kolaylaştırıyor hem de veri gizliliği konusundaki endişeleri azaltıyor. Geliştiriciler, Plaid entegrasyonu sayesinde güvenli bir veri akışı sağlarken, rekabet açısından OpenAI'nin benzer hizmetiyle kıyaslandığında Anthropic'in konumunu güçlendiriyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/11/Claude-Finances-title-scaled.png",
+  "url": "https://the-decoder.com/anthropic-adds-bank-account-access-to-claude-so-users-can-track-their-spending/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-06T11:33:13.000Z",
+  "slug": "anthropic-adds-bank-account-access-to-claude-so-users-can-tr"
+}
