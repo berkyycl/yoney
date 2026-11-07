@@ -1,0 +1,97 @@
+{
+  "baslik_tr": "Açık ve kapalı AI modellerinin siber yetenek farkı hızla daralıyor",
+  "ozet_tr": "Vals AI tarafından gerçekleştirilen CyberOffense benchmarkları, kapalı kaynaklı GPT-6 Sol Daybreak modelinin %80,8'lik başarı oranı elde ederken, açık ağırlıklı Deepseek V4.1 Flash 1017 modelinin %72,8 ile yaklaştığını gösterdi. Açık modellerin maliyet avantajı ve token tüketimindeki ilerlemeleri, güvenlik savunucularına yeni fırsatlar sunuyor.",
+  "detayli_icerik_tr": "Vals AI, gerçekçi kurumsal ağları taklit eden CyberOffense benchmark serisini, tek bir AI ajanının izole bir Kali Linux makinesinden sıfır insan müdahalesiyle saldırı yürütmesini ölçmek için kullandı. Her bir eylem dışarıdan kaydedildi ve otomatik olarak puanlandı. En iyi sonuç, OpenAI'nin sınırlı Daybreak programına dahil GPT-6 Sol modelinin %80,8 hedef tamamlama oranı oldu; açık ağırlıklı Deepseek V4.1 Flash 1017 ise %72,8 ile yaklaştı.\n\nTestler iki senaryoya ayrıldı: daha basit \"Nova\" (21 hedef) ve daha zor \"Lighthouse\" (31 hedef). Nova senaryosunda Deepseek V4.1 Flash 1017 ortalama 16,3 hedefe ulaşarak GPT-6 Sol'un 15,7 ortalamasını geçti. Lighthouse senaryosunda ise GPT-6 Sol 27 hedefi tamamlayarak Deepseek'in 21 hedefini geride bıraktı. Ancak Deepseek, token tüketimi açısından daha uzun sürede (100 milyon token sonrası) performansını artırdı; ilk 25 milyon tokende sıfır sonuç verdi.\n\nMaliyet açısından açık modeller büyük avantaj sağladı. Deepseek V4.1 Flash bir çalıştırma başına yaklaşık 3 $, GPT-6 Sol ise yaklaşık 22 $ maliyetle çalışıyor. Bu fark, özellikle büyük ölçekli siber‑range testlerinde açık modelleri daha çekici kılıyor. Ayrıca, açık modellerin güvenlik önlemlerinin sınırlı etkili olduğu ve aynı modellerin savunma amaçlı kullanılabileceği vurgulandı.\n\nBu bulgular, Birleşik Krallık AI Security Institute (AISI) raporuyla da uyumlu; açık ve kapalı modeller arasındaki fark 2025'te 6‑10 ay iken, 2026'da 4‑7 aya geriledi. Açık modellerin siber saldırı yetenekleri hızla olgunlaşırken, maliyet ve erişilebilirlik avantajları da artıyor, bu da güvenlik ekiplerinin hem tehdit hem de savunma senaryolarını yeniden değerlendirmesine yol açıyor.",
+  "onemli_maddeler": [
+    "GPT-6 Sol Daybreak %80,8 başarı oranıyla açık model Deepseek V4.1 Flash 1017'nin %72,8'ini geçti.",
+    "Deepseek V4.1 Flash, Nova testinde ortalama 16,3 hedefle GPT-6 Sol'un 15,7 ortalamasını geride bıraktı.",
+    "Açık modellerin çalıştırma maliyeti 3 $ iken, kapalı model 22 $; bu, büyük ölçekli siber testlerde maliyet avantajı sağlıyor.",
+    "Token tüketimi 100 milyonun üzerindeki açık modeller, kısa benchmarklarda düşük performans gösterse de uzun vadede ciddi ilerleme kaydediyor."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Açık AI modellerinin siber saldırı yeteneklerinde kapalı modellere yaklaşması, güvenlik sektöründe hem tehdit hem de savunma stratejilerini kökten etkileyebilecek kritik bir gelişmedir.",
+  "etiketler": [
+    "AI güvenliği",
+    "siber saldırı",
+    "benchmark",
+    "açık model",
+    "kapalı model"
+  ],
+  "anilan_modeller": [
+    "GPT-6 Sol Daybreak",
+    "Deepseek V4.1 Flash 1017",
+    "Kimi K3.1 Pro",
+    "Meta Wonder",
+    "Grok",
+    "Kimi K3",
+    "GLM 5.3 Flash",
+    "GLM-5-3",
+    "Mythos",
+    "Anthropic Opus 4.5"
+  ],
+  "yorum_tr": "Açık modellerin maliyet ve erişilebilirlik avantajları, siber güvenlik ekiplerinin daha sık ve geniş ölçekli testler yapmasını mümkün kılıyor; aynı zamanda bu modellerin savunma amaçlı kullanılabilmesi, güvenlik stratejilerinin yeniden şekillenmesine yol açacak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GPT-6 Sol Daybreak",
+      "benchmark": "Vals AI CyberOffense overall",
+      "skor": 80.8,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "GPT-6 Sol, part of OpenAI's restricted Daybreak cyber program, posted the best result at 80.8 percent of objectives."
+    },
+    {
+      "model": "Deepseek V4.1 Flash 1017",
+      "benchmark": "Vals AI CyberOffense overall",
+      "skor": 72.8,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Deepseek V4.1 Flash 1017, a freely available open-weight model, isn't far behind at 72.8 percent."
+    },
+    {
+      "model": "GPT-6 Sol Daybreak",
+      "benchmark": "Nova test (21 objectives)",
+      "skor": 15.7,
+      "birim": "objective",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "average of 3 runs",
+      "kaynak_metinden_alinti": "GPT-6 Sol Daybreak 15.7 (average of 3, range 12–19) in Nova test."
+    },
+    {
+      "model": "Deepseek V4.1 Flash 1017",
+      "benchmark": "Nova test (21 objectives)",
+      "skor": 16.3,
+      "birim": "objective",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "average of 3 runs",
+      "kaynak_metinden_alinti": "Deepseek V4.1 Flash 1017 16.3 (average of 3, range 15–18) in Nova test."
+    },
+    {
+      "model": "GPT-6 Sol Daybreak",
+      "benchmark": "Lighthouse test (31 objectives)",
+      "skor": 27,
+      "birim": "objective",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Daybreak took over admin control of the first company, stole passwords, and used them to break into the second company. It completed 27 of 31 objectives in under three hours."
+    },
+    {
+      "model": "Deepseek V4.1 Flash 1017",
+      "benchmark": "Lighthouse test (31 objectives)",
+      "skor": 21,
+      "birim": "objective",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Deepseek managed 21 objectives at a tenth of the cost and wasn't limited solely by safety guardrails."
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/10/cyber_kraken.png",
+  "url": "https://the-decoder.com/the-gap-between-open-and-closed-ai-models-in-cyber-capabilities-keeps-shrinking/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-07T15:35:50.000Z",
+  "slug": "the-gap-between-open-and-closed-ai-models-in-cyber-capabilit"
+}

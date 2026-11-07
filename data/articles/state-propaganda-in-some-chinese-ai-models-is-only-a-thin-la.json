@@ -1,0 +1,114 @@
+{
+  "baslik_tr": "Nous Research, Çinli AI modellerindeki devlet propagandasını ince ayarlarla yok etti",
+  "ozet_tr": "Nous Research, Alibaba'nın Qwen3.8-27B modelini 53 milyon token üzerinden süpervizörlü ince ayar yaparak propaganda oranını %22'den %0,9'a düşürdü ve Arete-27B adını verdiği yeni açık‑ağırlıklı modeli yayınladı. Modelin genel yetenekleri neredeyse aynı kalırken, Batı‑değerlerine daha uyumlu yanıtlar vermesi sektörde büyük yankı uyandırdı.",
+  "detayli_icerik_tr": "Nous Research, Alibaba'nın açık‑ağırlıklı Qwen3.8-27B modelini 53 milyon tokenlık veri setiyle iki tur süpervizörlü ince ayar (SFT) gerçekleştirerek Çin devlet propagandasını büyük ölçüde azalttı. Bu süreçte pekiştirmeli öğrenme ya da tercih optimizasyonu kullanılmadı; eğitim verileri, özgürlük, gözetim, demokrasi gibi yedi değer kategorisine eşit şekilde dağıtıldı. Sonuçta modelin propaganda oranı %22'den %0,9'un altına indi ve faktüel doğruluk skoru 2.32'den 2.98'e yükseldi.\n\nAraştırmacılar, 803 soruluk bir test seti hazırlayarak her soruya iki‑dört gerçek referans ekledi. Bu referansları kullanan ve yanıtların gerçeklerle çelişip çelişmediğini kontrol eden yargı modeli olarak Elon Musk'un xAI firmasına ait Grok 4.7 kullanıldı. Propaganda, resmi Pekin anlatısının tekrarı, onaylanması ya da eşit bir bakış açısı olarak sunulmasıyla tanımlandı. Test sonuçları, Arete-27B'nin propaganda oranının Batı modelleriyle (Mistral Large 4, Gemma 4 31B) eşdeğer seviyeye gerilediğini gösterdi.\n\nGenel yeteneklerde ise Arete-27B, Nous'un dahili Hermes Bench testinde %65.60 başarı elde ederken temel Qwen3.8-27B'nin %65.77 skoruyla neredeyse aynı performansı korudu. Terminal‑Bench 2.1 testinde ise Arete-27B %70 başarı puanı alarak %67'lik temel model puanının üzerine çıktı, ancak yazarlar bu farkı test koşullarının farklılığına bağladı. Sonuç olarak, Çin‑odaklı modellerdeki politik önyargının ağırlıklı olarak son katmanlarda ve ince bir katmanda yer aldığı, bu katmanın sadece birkaç on milyon tokenlık dikkatli denetimle silinebileceği vurgulandı.\n\nBu gelişme, Çinli açık‑ağırlıklı modellerin güçlü performanslarıyla birlikte taşıdığı devlet yönlendirmeli davranışların da kolayca düzeltilebileceğini gösteriyor. Nous Research, Arete‑27B'nin ağırlıklarını, test veri setini ve eğitim verilerini Apache 2.0 lisansı altında Hugging Face üzerinden yayınlayarak topluluk katılımını ve şeffaflığı teşvik ediyor. Şirket, aynı zamanda 90 milyon dolarlık Seri B yatırımını “Hermes for Businesses” adlı kurumsal çözümlerine yönlendirecek.",
+  "onemli_maddeler": [
+    "Nous Research, Qwen3.8-27B modelindeki propaganda oranını %22'den %0,9'a düşürdü.",
+    "Yeni model Arete-27B, faktüel doğruluk skorunu 2.32'den 2.98'e yükseltti ve Batı modelleriyle benzer propaganda seviyesine ulaştı.",
+    "İnce ayar sadece 53 milyon token ve iki epoch ile gerçekleştirildi; genel yeteneklerde ölçülebilir bir kayıp görülmedi.",
+    "Ağırlıklar, test seti ve eğitim verileri Apache 2.0 lisansı altında açık kaynak olarak yayınlandı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Çinli açık‑ağırlıklı modellerin güçlü performanslarıyla birlikte taşıdığı devlet yönlendirmeli önyargının sadece ince bir katmanda olduğu kanıtlandı; bu, küresel AI güvenliği ve etik standartları açısından kritik bir gelişmedir.",
+  "etiketler": [
+    "propaganda",
+    "ince ayar",
+    "açık‑ağırlıklı",
+    "Çin AI",
+    "etik AI"
+  ],
+  "anilan_modeller": [
+    "Qwen3.8-27B",
+    "Arete-27B",
+    "Mistral Large 4",
+    "Gemma 4 31B",
+    "GLM-5.3",
+    "DeepSeek V4.1 Flash",
+    "Nemotron 3 Ultra",
+    "Inkling",
+    "Kimi K2.5"
+  ],
+  "yorum_tr": "Bu sonuç, politik önyargının sadece modelin üst katmanlarında yoğunlaştığını ve düşük maliyetli ince ayarlarla giderilebileceğini gösteriyor; geliştiriciler için daha güvenilir ve değer‑nötr modeller üretmek artık daha ulaşılabilir bir hedef.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen3.8-27B",
+      "benchmark": "Propaganda Rate",
+      "skor": 22,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "803 prompts across seven categories",
+      "kaynak_metinden_alinti": "Unmodified Qwen3.8-27B scored ... 22 percent of its answers contained propaganda."
+    },
+    {
+      "model": "Arete-27B",
+      "benchmark": "Propaganda Rate",
+      "skor": 0.9,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "803 prompts across seven categories",
+      "kaynak_metinden_alinti": "Arete-27B drops its propaganda rate from 22 percent to under one percent."
+    },
+    {
+      "model": "Qwen3.8-27B",
+      "benchmark": "Factual Accuracy",
+      "skor": 2.32,
+      "birim": "out of 5",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "803 prompts across seven categories",
+      "kaynak_metinden_alinti": "Unmodified Qwen3.8-27B scored 2.32 out of 5 on factual accuracy."
+    },
+    {
+      "model": "Arete-27B",
+      "benchmark": "Factual Accuracy",
+      "skor": 2.98,
+      "birim": "out of 5",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "803 prompts across seven categories",
+      "kaynak_metinden_alinti": "Arete-27B scores 2.98 on factual accuracy."
+    },
+    {
+      "model": "Qwen3.8-27B",
+      "benchmark": "Hermes Bench",
+      "skor": 65.77,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "internal Hermes Bench",
+      "kaynak_metinden_alinti": "On the company's internal Hermes Bench, Arete-27B hits 65.60 percent compared to 65.77 percent for the base model."
+    },
+    {
+      "model": "Arete-27B",
+      "benchmark": "Hermes Bench",
+      "skor": 65.6,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "internal Hermes Bench",
+      "kaynak_metinden_alinti": "On the company's internal Hermes Bench, Arete-27B hits 65.60 percent compared to 65.77 percent for the base model."
+    },
+    {
+      "model": "Qwen3.8-27B",
+      "benchmark": "Terminal-Bench 2.1",
+      "skor": 67,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Terminal-Bench 2.1",
+      "kaynak_metinden_alinti": "On Terminal-Bench 2.1, the score rises from 67 to 70 percent, but Nous doesn't call that a real gain because the test setups differed."
+    },
+    {
+      "model": "Arete-27B",
+      "benchmark": "Terminal-Bench 2.1",
+      "skor": 70,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Terminal-Bench 2.1",
+      "kaynak_metinden_alinti": "On Terminal-Bench 2.1, the score rises from 67 to 70 percent, but Nous doesn't call that a real gain because the test setups differed."
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/11/arete-27b-01-hero.jpg",
+  "url": "https://the-decoder.com/state-propaganda-in-some-chinese-ai-models-is-only-a-thin-layer-that-fine-tuning-can-strip-away/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-07T12:32:45.000Z",
+  "slug": "state-propaganda-in-some-chinese-ai-models-is-only-a-thin-la"
+}

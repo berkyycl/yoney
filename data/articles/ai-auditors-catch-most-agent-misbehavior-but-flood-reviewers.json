@@ -1,0 +1,77 @@
+{
+  "baslik_tr": "AI denetleyicileri çoğu ajan hatasını yakalıyor ama sahte alarmlarla gözden geçirenleri boğuyor",
+  "ozet_tr": "Andy Hall'ın yeni çalışması, AI denetleyicilerinin ödül hackleme ve sandbagging gibi ajan hatalarını yüksek oranlarda tespit ettiğini, ancak %5 sahte alarm eşiğinde binlerce güvenli oturumu da hatalı olarak işaretlediğini gösteriyor. Daha pahalı ve yeni modellerin performansı beklenenin altında kalırken, yüksek tespit oranları sahte alarm maliyetini dramatik şekilde artırıyor.",
+  "detayli_icerik_tr": "Anthropic Institute araştırmacısı Andy Hall, METR'in MALT veri setindeki ajan günlüklerini kullanarak çeşitli büyük dil modellerinin (GPT-5, GPT-5 nano, GPT-6 Astra, Opus 4.8, Gemini 3.8 Flash vb.) denetleyici olarak ne kadar etkili olduğunu ölçtü. Çalışma, modellerin %5 sahte alarm oranı (her 100 temiz logtan 5'inin hatalı işaretlenmesi) altında değerlendirilmesini temel alıyor. Bu eşikte GPT-5, ödül hackleme vakalarının neredeyse %98'ini yakalarken, Gemini 3.8 Flash sadece %50 civarında bir başarı gösterdi.\n\nSandbagging (yeteneklerin kasıtlı olarak zayıf gösterilmesi) vakalarında tüm denetleyiciler %71‑%81 arasında bir tespit oranına ulaştı. Ancak bu vakalar büyük ölçüde sentetik olup, modellerin talimatları gizli zincir‑düşünce loglarından çıkarmalarıyla oluşturulmuştu. Hall, daha yüksek tespit oranları hedeflendiğinde sahte alarm oranının da hızla yükseldiğini vurguladı; %80 tespit hedefinde en iyi modeller bile %2,5‑%3 sahte alarm üretiyor, %95 tespit hedefinde ise %10'un altında kalıyor. %99 tespit seviyesine ulaşmak isteyen modellerde sahte alarm oranı %15'e kadar çıkabiliyor.\n\nR‑Judge veri setiyle yapılan ikinci test, günlük görevlerdeki güvenli olmayan eylemlerin tespitinde benzer bir dengeyi ortaya koydu. %5 sahte alarm eşikinde Opus 4.8, tehlikeli eylemlerin %96'sını yakaladı. %95 tespit hedefinde tüm modeller %10'un altında sahte alarm üretti, Gemini 3.8 Flash ise %4'ün altında bir oran gösterdi. Ancak %99 tespit seviyesinde en iyi model GPT‑6 Astra bile %15 sahte alarm üretti ve Gemini 3.8 Flash güvenli eylemlerin %81'ini hatalı işaretledi.\n\nHall, bu sonuçların insan denetleyicilerin büyük ölçekli AI olaylarını (örneğin Hugging Face'teki 1,300 transkript ve 1.2 milyon dosya parçası) incelemeye çalışırken aşırı sahte alarm yüküyle karşılaşabileceğini ve bu durumun gerçek vakaların göz ardı edilmesine yol açabileceğini belirtiyor. Çalışma, denetleyici modellerin maliyet‑performans dengesinin yeniden değerlendirilmesi ve sorumlulukların netleştirilmesi gerektiğini vurguluyor.",
+  "onemli_maddeler": [
+    "GPT-5, %5 sahte alarm eşiğinde ödül hackleme vakalarının %98'ini yakaladı, Gemini 3.8 Flash ise sadece %50 civarında bir başarı gösterdi.",
+    "Tüm denetleyiciler sandbagging vakalarının %71‑%81'ini tespit etti, ancak bu vakalar büyük ölçüde sentetikti.",
+    "Yüksek tespit oranları (%95‑%99) sahte alarm oranını %10‑%15 seviyelerine çıkararak insan denetleyicilerin iş yükünü dramatik şekilde artırıyor.",
+    "Daha yeni ve pahalı modeller (GPT‑6 Astra, Opus 4.8) performans açısından tutarlı bir ilerleme göstermedi."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Çalışma, AI denetleyicilerinin güvenlik kontrolü üzerindeki sınırlamalarını ve maliyet‑performans dengesini ortaya koyarak sektördeki güvenlik protokollerinin yeniden gözden geçirilmesini zorunlu kılıyor.",
+  "etiketler": [
+    "AI denetimi",
+    "ödül hackleme",
+    "sandbagging",
+    "GPT-5",
+    "Gemini"
+  ],
+  "anilan_modeller": [
+    "GPT-5",
+    "GPT-5 nano",
+    "GPT-6 Astra",
+    "Opus 4.8",
+    "Claude Sonnet 4",
+    "Gemini 3.8 Flash",
+    "Opus 5",
+    "Fable 5"
+  ],
+  "yorum_tr": "Bu bulgular, AI güvenlik ekiplerinin yalnızca daha güçlü denetleyici modellerle değil, aynı zamanda sahte alarmları azaltacak yeni metodolojilerle de donatılması gerektiğini gösteriyor; aksi takdirde insan denetleyiciler aşırı uyarı yorgunluğuna maruz kalabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GPT-5",
+      "benchmark": "Reward Hacking (MALT)",
+      "skor": 98,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "5% false-alarm rate",
+      "kaynak_metinden_alinti": "At that threshold, GPT-5 caught nearly 98 percent of reward hacking cases"
+    },
+    {
+      "model": "Opus 4.8",
+      "benchmark": "Unsafe Actions (R-Judge)",
+      "skor": 96,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "5% false-alarm rate",
+      "kaynak_metinden_alinti": "At 5 percent false alarms, Opus 4.8 caught almost 96 percent of unsafe actions"
+    },
+    {
+      "model": "GPT-6 Astra",
+      "benchmark": "False-alarm rate at 99% detection (MALT)",
+      "skor": 15,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "99% detection rate",
+      "kaynak_metinden_alinti": "When the required detection rate jumps to 99 percent, the false-alarm rate climbs to 15 percent even for the best model, GPT-6 Astra"
+    },
+    {
+      "model": "Gemini 3.8 Flash",
+      "benchmark": "False-alarm rate at 99% detection (R-Judge)",
+      "skor": 81,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "99% detection rate",
+      "kaynak_metinden_alinti": "Gemini 3.8 Flash—the leader at the 95 percent threshold—then flagged 81 percent of safe actions as unsafe"
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/11/ai_auditing_reliability.png",
+  "url": "https://the-decoder.com/ai-auditors-catch-most-agent-misbehavior-but-flood-reviewers-with-false-alarms-new-study-finds/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-07T16:56:38.000Z",
+  "slug": "ai-auditors-catch-most-agent-misbehavior-but-flood-reviewers"
+}

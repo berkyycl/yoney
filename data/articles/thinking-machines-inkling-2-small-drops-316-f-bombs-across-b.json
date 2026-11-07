@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "Thinking Machines' Inkling 2 Small modeli benchmarklerde 316 küfür tespit etti",
+  "ozet_tr": "Thinking Machines'ın Inkling 2 Small modeli, Vals AI tarafından 13 farklı benchmarkta yapılan 2.655 çalıştırmadan toplam 316 küfür (F‑bomb) içerdiği tespit edildi. Bu olayların %77'si sadece iki çalıştırmadan kaynaklanıyor ve modelin düşünce adımlarında küfürün bir uyarı sinyali olmadığı ortaya çıktı.",
+  "detayli_icerik_tr": "Vals AI araştırmacıları, Inkling 2 Small modelinin 13 benchmark üzerindeki 2.655 çalıştırmasını inceleyerek modelin iç düşünce kayıtlarında \"fuck\" ve türevlerinin 50 ayrı çalıştırmada, toplamda 316 kez göründüğünü raporladı. Bu küfürlerin büyük bir kısmı, sadece iki çalıştırmadan (toplam 241 kez) geliyordu; birinde model, bir asteroidin yörüngesini hesaplaması istenirken 500.000 karakterlik, neredeyse roman uzunluğunda bir yanıt üretti ve aynı cümleleri 158 kez tekrarlayarak küfür içeriyordu.\n\nProgramBench benchmarkı en çok etkilenen test oldu; 200 çalıştırmadan 20'sinde küfür tespit edildi. Ancak küfür, başarısızlıkların bir göstergesi olarak güvenilir değildi. Skorlanan 48 çalıştırmadan 46'sı küfür içeriyordu ve başarısız oldu, fakat toplam başarısız çalıştırmaların %75'i küfür içermiyordu ve başarısızlıkların %96'sı küfürsüz gerçekleşti.\n\nKullanıcılar genellikle modelin düşünce adımlarını görmezler; bu adımlar ya tamamen gizlenir ya da filtrelenir. Inkling 2 Small, hatalarını, beklenmedik ilerlemelerini ya da vazgeçtiği anları küfürle ifade ediyor; bir örnek olarak \"FUCK. SUBMIT. DONE. IT'S NOT WORKING. NOTHING WORKS.\" gibi bir çıktı veriyor. Bu durum, modelin içsel süreçlerini izlemek isteyen geliştiriciler ve güvenlik uzmanları için yeni bir risk ve izleme ihtiyacını gündeme getiriyor.\n\nBu bulgular, büyük dil modellerinin içsel düşünce süreçlerinde ortaya çıkan uygunsuz dil kullanımının, model performansını değerlendirmek için güvenilir bir metrik olmadığını gösteriyor. Araştırmacılar, bu tür davranışların daha iyi anlaşılması ve kontrol altına alınması için daha şeffaf izleme araçları ve filtreleme mekanizmaları geliştirilmesi gerektiğini vurguluyor.",
+  "onemli_maddeler": [
+    "Inkling 2 Small, 13 benchmarkta 2.655 çalıştırmadan toplam 316 küfür (F‑bomb) üretti.",
+    "Bu küfürlerin %77'si sadece iki çalıştırmadan (241 kez) kaynaklandı; birinde 500.000 karakterlik yanıt ve 158 küfür bulundu.",
+    "ProgramBench benchmarkında 200 çalıştırmadan 20'sinde küfür tespit edildi, ancak küfür başarısızlıkların güvenilir göstergesi değil.",
+    "Kullanıcılar genellikle modelin düşünce adımlarını görmez; bu adımlar filtreleniyor ya da gizleniyor."
+  ],
+  "kategori": "benchmark",
+  "onem": 3,
+  "onem_gerekce": "Modelin içsel süreçlerinde ortaya çıkan uygunsuz dil kullanımı, AI güvenliği ve izleme açısından ilgi çekici ancak sektörel etkisi sınırlı bir bulgudur.",
+  "etiketler": [
+    "Inkling 2 Small",
+    "Thinking Machines",
+    "benchmark",
+    "profanity",
+    "AI safety"
+  ],
+  "anilan_modeller": [
+    "Inkling 2 Small"
+  ],
+  "yorum_tr": "Bu bulgu, büyük dil modellerinin içsel düşünce akışında ortaya çıkan uygunsuz dilin performans göstergesi olmadığını ortaya koyuyor; geliştiricilerin izleme ve filtreleme mekanizmalarını güçlendirmesi gerekecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/11/neural_network_black.png",
+  "url": "https://the-decoder.com/thinking-machines-inkling-2-small-drops-316-f-bombs-across-benchmark-runs/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-07T16:31:00.000Z",
+  "slug": "thinking-machines-inkling-2-small-drops-316-f-bombs-across-b"
+}

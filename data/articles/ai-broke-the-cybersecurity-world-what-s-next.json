@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "AI, siber güvenlik dünyasını alt üst etti: Ne bekleniyor?",
+  "ozet_tr": "Yapay zekâ, siber saldırıların tüm aşamalarını otomatikleştirerek güvenlik sektörünü bir 'karanlık çağa' sürüklüyor. Alex Stamos, AI destekli açık kaynak araçların büyük ölçekli veri ihlallerine yol açtığını ve geleneksel savunma modellerinin artık yetersiz kaldığını vurguluyor.",
+  "detayli_icerik_tr": "The Verge'in Decoder podcast'inde Cognition'ın baş güvenlik sorumlusu Alex Stamos, yapay zekânın siber güvenlikte yarattığı çığır açıcı dönüşümü ele aldı. Stamos, son haftalarda PHP, Node.js gibi popüler platformlarda ortaya çıkan kritik açıkların ardından bir dizi zincirleme saldırının gerçekleştiğini, bu saldırıların AI destekli araçlar sayesinde otomatik olarak keşfedilip istismar edildiğini belirtti. Fireworks, Cursor ve binlerce şirketi etkileyen bu zincirleme ihlaller, API anahtarlarının çalınması ve kötü amaçlı eklentilerin yayılmasıyla gerçekleşti.\n\nStamos, saldırıların arkasındaki aktörlerin hem devlet destekli gruplar (Rusya, Kuzey Kore) hem de özel sektöre yönelik suç örgütleri olduğunu, ancak AI'nin bu gruplara yetenek farkını ortadan kaldırdığını ifade etti. Açık kaynak bir araç olan \"ARTEX\" ve Çin menşeli \"GLM‑5.3\" gibi modeller, tek bir bilgisayarda çalıştırıldığında binlerce hedefi gerçek zamanlı tarayıp istismar kodu üretebiliyor. Bu durum, geçmişte sadece elit hackerların yapabildiği \"kill chain\" sürecini, sıradan bir script kiddie'nin de gerçekleştirebilmesine yol açıyor.\n\nStamos, siber güvenlik endüstrisinin 2000'li yılların başında Microsoft'un \"güvenilir bilişim\" yaklaşımıyla şekillenen bir kültüre dayandığını, bug bounty programları ve güvenlik danışmanlık firmalarıyla büyük bir ekosistem oluşturduğunu hatırlattı. Ancak AI'nin gelmesiyle bu ekosistemin temeli sarsılıyor; beceri bariyerleri kalkıyor ve maliyetler düşüyor. Artık bir Mac Studio ve bir açık ağırlıklı modelle, bir saldırgan çok sayıda sistemi aynı anda tarayıp istismar edebiliyor, bu da savunma ekiplerini DEFCON 2 seviyesinde bir alarm durumuna itiyor.\n\nStamos, bu yeni dönemin sadece teknik bir meydan okuma olmadığını, aynı zamanda ekonomik ve hukuki bir kriz yarattığını vurguladı. AI destekli saldırıların ölçeği ve hızı, geleneksel savunma stratejilerini geçersiz kılıyor ve düzenleyicilerin, yapay zekâ kullanımına dair daha sıkı denetim ve izleme mekanizmaları geliştirmesini zorunlu kılıyor.",
+  "onemli_maddeler": [
+    "AI, saldırıların keşif, istismar ve yayılım aşamalarını gerçek zamanlı otomatikleştirerek \"kill chain\"i tersine çeviriyor.",
+    "Açık kaynak araç ARTEX ve GLM‑5.3 gibi modeller, tek bir cihazla binlerce kurumu hedef alabilecek kapasitede.",
+    "Siber güvenlik endüstrisinin geçmişteki hiyerarşik beceri yapısı, AI sayesinde düşük maliyetli ve geniş çaplı saldırılara dönüşüyor."
+  ],
+  "kategori": "diger",
+  "onem": 5,
+  "onem_gerekce": "Yapay zekânın siber saldırıların tüm aşamalarını otomatikleştirerek sektörü kökten değiştirmesi, hem teknik hem de ekonomik açıdan büyük bir dönüşüm yaratıyor ve tüm dijital ekosistemi etkiliyor.",
+  "etiketler": [
+    "yapay zeka",
+    "siber güvenlik",
+    "AI saldırıları",
+    "teknoloji",
+    "güvenlik"
+  ],
+  "anilan_modeller": [
+    "ARTEX",
+    "GLM-5.3"
+  ],
+  "yorum_tr": "AI destekli saldırıların yaygınlaşması, güvenlik ekiplerinin savunma stratejilerini yeniden tasarlamasını zorunlu kılıyor; geliştiriciler daha güçlü tespit ve yanıt mekanizmaları geliştirmeli, kullanıcılar ise temel güvenlik hijyenine daha fazla özen göstermelidir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/VRG_DCD_110726.jpg?quality=90&strip=all&crop=0,0,100,100",
+  "url": "https://www.theverge.com/podcast/1029038/ai-cybersecurity-hackers-data-breach-dark-age-alex-stamos",
+  "source": "The Verge AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-07T15:00:00.000Z",
+  "slug": "ai-broke-the-cybersecurity-world-what-s-next"
+}

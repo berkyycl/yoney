@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "MIT gönderisindeki ağırlık düzenleme yöntemini denedim: İlginç uygulamalar, ama çığır açıcı değil",
+  "ozet_tr": "Reddit kullanıcısı Kevin, Opus 5.5 modeliyle ağırlık düzenleme (weight editing) tekniğini deneyerek, prompt enjeksiyonu ve sessizde hayal görme gibi belirgin hataları düzeltmeyi başardı. Bu yöntem, eğitim sonrası ortaya çıkan basit ama net hataları modelin ağırlıklarını doğrudan değiştirerek yamalamaya olanak tanıyor, ancak yapay zekanın kendi kendini geliştirmesi anlamına gelmiyor.",
+  "detayli_icerik_tr": "Kevin, MIT tarafından yayınlanan ağırlık düzenleme (weight editing) metodunu kullanarak, çeşitli LLaMA tabanlı modellerde gözlemlenen açık kusurları test etti. Prompt enjeksiyonuna karşı savunmasız olan bir model, Opus 5.5'in ağırlıklarını düzenleyerek bu zafiyeti ortadan kaldırdı; benzer şekilde, sessiz ortamda ses üretmeye (whisper hallucination) meyilli bir model de aynı teknikle düzeltildi.\n\nBu yaklaşım, modelin eğitim sürecini yeniden başlatmadan, sadece belirli bir hatayı hedef alarak ağırlık matrisinde ince ayar yapmayı mümkün kılıyor. Kevin, bu yöntemin \"çok çılgın\" bir gelişme olmadığını, ancak pratikte eğitim sonrası ortaya çıkan basit hataları hızlıca gidermek için değerli bir araç olduğunu vurguladı.\n\nKod ve örnekler, Kevin'in GitHub deposunda (https://github.com/kevinpl07/weight-patching) ve detaylı sayısal sonuçların yer aldığı bir demo sitesinde (https://kevinpl07.github.io/weight-patching/) paylaşıldı. Kullanıcılar, kendi modellerine bu yöntemi uygulayarak benzer hataları düzeltme imkanı bulabilir.\n\nYöntemin sınırlamaları da açıkça belirtildi: Karmaşık, çok katmanlı hatalar ya da modelin genel performansını etkileyen geniş çaplı sorunlar için bu teknik yeterli olmayabilir. Dolayısıyla, ağırlık düzenleme, belirli ve iyi tanımlanmış kusurları hedefleyen bir \"patch\" aracı olarak konumlandırılıyor.",
+  "onemli_maddeler": [
+    "Opus 5.5 ile ağırlık düzenleme, eğitim sonrası ortaya çıkan belirgin hataları hızlıca düzeltmeye olanak tanıyor.",
+    "Kod ve demo örnekleri GitHub ve özel demo sitesinde açıkça paylaşılmış, topluluk tarafından test edilebilir.",
+    "Yöntem, karmaşık model iyileştirmelerinden ziyade basit, net tanımlanabilir kusurları hedefleyen bir yamalama aracı olarak konumlandırılıyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 3,
+  "onem_gerekce": "Ağırlık düzenleme, model bakım ve hata giderme süreçlerine yeni bir yaklaşım getiriyor, ancak etkisi sınırlı ve henüz geniş çaplı bir endüstri dönüşümü yaratmadığı için orta seviyede önem taşıyor.",
+  "etiketler": [
+    "weight-editing",
+    "model-patching",
+    "Opus 5.5",
+    "LocalLLaMA",
+    "prompt injection"
+  ],
+  "anilan_modeller": [
+    "Opus 5.5"
+  ],
+  "yorum_tr": "Bu teknik, geliştiricilere eğitim sonrası model hatalarını hızlıca düzeltme imkanı sunarak bakım maliyetlerini azaltabilir, ancak kapsamlı model iyileştirmeleri için hâlâ geleneksel yeniden eğitim yöntemlerine ihtiyaç duyulacak.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/6f5qu2d5m10i1.jpeg?width=140&height=140&crop=1:1,smart&auto=webp&s=d30cddd24161bdf95edc8edaa5c9b61fb4ecfd7b",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xpls17/tried_the_weight_editing_thing_from_the_mit_post/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-06T19:27:43.000Z",
+  "slug": "tried-the-weight-editing-thing-from-the-mit-post-some-cool-a"
+}

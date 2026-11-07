@@ -1,0 +1,63 @@
+{
+  "baslik_tr": "Obsessive-1.7B: 1.1 GB Web-Arama Alt Ajanı",
+  "ozet_tr": "LFM3-1.7B modeline LoRA ile ince ayar yapılarak tek bir web araması gerçekleştiren ve yanıtı alıntı, URL ve kısa değer olarak dönen Obsessive-1.7B ortaya çıktı. Model, büyük bir ana modelin alt ajanı olarak tasarlandı ve sadece tek soruya odaklanıyor.",
+  "detayli_icerik_tr": "Muzaffer Mahi, LFM3-1.7B temel modelini LoRA rank 16 ile yaklaşık 9.000 araç‑çağrısı içeren diyalog üzerinden ince ayarlayarak Obsessive-1.7B adlı 1,7 milyar parametreli bir alt ajan geliştirdi. Model, verilen bir gerçek soruyu alıp yalnızca bir kez Wikipedia ya da FineWeb üzerinden arama yapıyor, ardından yanıtı kelime kelime alıntı, kaynak URL ve kısa bir değer olarak sunuyor; eğer arama sonuçları içinde cevap yoksa \"Not found in the search results.\" mesajını veriyor.\n\nBu model, tek soruya odaklandığı için çoklu tur sohbetlerde karışıklık yaşayabiliyor ve bazen gerçek cevapları kaçırabiliyor. Testlerde, 131 tutulan SimpleQA sorusunun %50'sinde doğru cevabı bulurken, cevap bulunamadığında %0 \"not found\" mesajı veriyor; ancak %10 oranında uydurulmuş yanıt üretiyor. Canlı Wikipedia testinde ise %38 oranında herhangi bir yanıt döndürürken, doğru yanıt oranı 120 sorudan 37 olarak kaydedildi.\n\nObsesif model, yalnızca bir kez arama yapıp alıntılayarak yanıt verdiği için, uzun yanıtlar üreten temel modelin aksine daha kontrollü ve öngörülebilir bir davranış sergiliyor. Ancak bu tasarım, bazı senaryolarda yanıt bulunamama riskini artırıyor ve sadece İngilizce sorulara yanıt verebiliyor. Model, RTX 4060 dizüstü bilgisayarında 5,1 saniye ortalama sorgu süresiyle çalışıyor ve GGUF formatında Hugging Face üzerinden dağıtılıyor.\n\nObsesif-1.7B, açık lisans altında sunuluyor ve geliştiricilerden geri bildirim bekleniyor. Modelin kodu, Pi, OpenCode ve Hermes gibi platformlar için konfigürasyonlar ve anahtar gerektirmeyen bir Python betiği içeriyor. Bu, düşük kaynaklı ortamlarda ve yerel LLM entegrasyonlarında web‑araç çağrısı yeteneklerini denemek isteyen araştırmacılar ve geliştiriciler için değerli bir kaynak oluşturuyor.",
+  "onemli_maddeler": [
+    "Obsesif-1.7B, tek bir web‑arama yapıp alıntı ve URL ile yanıt veren bir alt ajan olarak tasarlandı.",
+    "Fixed‑results benchmark testinde %50 doğru cevap bulma ve %10 uydurma yanıt oranı elde edildi.",
+    "Canlı Wikipedia testinde %38 yanıt üretme oranı, ancak %62'lik bir kesimde yanıt verememe sorunu yaşandı.",
+    "Model, RTX 4060 dizüstü bilgisayarında ortalama 5,1 saniye sorgu süresiyle çalışıyor ve GGUF formatında dağıtılıyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Araç‑çağrısı yeteneği eklenmiş 1,7B ölçekli bir model, düşük kaynaklı ortamlarda web‑araştırma fonksiyonelliği sunarak açık‑kaynak LLM ekosistemine yeni bir kullanım senaryosu getiriyor.",
+  "etiketler": [
+    "Llama",
+    "LoRA",
+    "Web Search",
+    "Tool Calling",
+    "Open Source"
+  ],
+  "anilan_modeller": [
+    "LFM3-1.7B",
+    "Obsessive-1.7B",
+    "qwen 3.8 flash"
+  ],
+  "yorum_tr": "Obsesif-1.7B, özellikle sınırlı donanımda tek seferlik bilgi çekme ihtiyacı olan uygulamalar için pratik bir çözüm sunuyor; ancak çoklu tur diyalog ve yanıt bulunamama sorunları, daha geniş kullanım senaryoları için ek geliştirmeler gerektirebilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Obsessive-1.7B",
+      "benchmark": "Fixed-results benchmark (SimpleQA)",
+      "skor": 50,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "131 held-out SimpleQA questions, 29 with answer removed",
+      "kaynak_metinden_alinti": "Finds the answer when it’s there 50%"
+    },
+    {
+      "model": "Obsessive-1.7B",
+      "benchmark": "Invented answers (Fixed-results)",
+      "skor": 10,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "Fixed-results benchmark",
+      "kaynak_metinden_alinti": "Invented answers 10%"
+    },
+    {
+      "model": "Obsessive-1.7B",
+      "benchmark": "Live Wikipedia search",
+      "skor": 38,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "120 questions + 40 multi-fact requests, unseen search backend",
+      "kaynak_metinden_alinti": "Returns any reply 38%"
+    }
+  ],
+  "gorsel_url": null,
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xq4yju/obsessive17b_a_11_gb_websearch_subagent/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-07T12:13:29.000Z",
+  "slug": "obsessive-1-7b-a-1-1-gb-web-search-subagent"
+}

@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "Başka bir benchmark, kuant savaşını alevlendirdi",
+  "ozet_tr": "ISTA-DASLab'ın gsq‑rco kuantları, unsloth topluluğu tarafından yayınlanan benchmark sonuçlarını yeniden üretme konusunda eleştirildi. Basalt adlı çıkarım motorunun geliştiricisi, aynı boyutta unsloth kuantlarıyla yapılan testlerde farklı performans elde ettiğini gösteren ekran görüntülerini paylaştı.",
+  "detayli_icerik_tr": "Yerel LLaMA topluluğu içinde ISTA‑DASLab'ın geliştirdiği gsq‑rco kuantları, daha önce yayınladıkları benchmark sonuçlarıyla dikkat çekmişti. Ancak unsloth ekibi, bu sonuçların metodolojisinin açıklanmadığını ve sayısal değerlerin yeniden üretilemediğini belirterek eleştiride bulundu. \n\nEleştiriyi derinleştiren unsloth, kendi kuantlarıyla yapılan testlerde gsq‑rco kuantlarından daha iyi performans elde ettiklerini iddia etti. Bu iddiaların doğrulanması için gerekli deneysel prosedürler ve veri setleri topluluk tarafından paylaşılmadı, bu da sonuçların şeffaflığını sorgulatan bir durum yarattı. \n\nBu tartışmaya yeni bir boyut ekleyen, basalt adlı bir çıkarım motorunun geliştiricisi olan bir kullanıcı, daha önce qwen‑flash‑next kuantlarını kullanarak benzer bir test süreci yürüttüğünü açıkladı. Kendi testlerinde, ISTA‑DASLab kuantlarını temel alıp ardından aynı boyutta unsloth kuantlarıyla değiştirerek elde ettiği performans farklarını ekran görüntüleriyle belgeledi. \n\nTopluluk, bu yeni kanıtların ışığında benchmark metodolojisinin standartlaştırılması ve sonuçların bağımsız olarak doğrulanabilir hale getirilmesi gerektiği konusunda ortak bir görüşe varıyor. Geliştiriciler, gelecekteki kuantlaştırma çalışmaları için açık veri ve tekrarlanabilir deney protokollerinin önemine vurgu yapıyor.",
+  "onemli_maddeler": [
+    "ISTA‑DASLab'ın gsq‑rco kuantları için yayınladığı benchmark sonuçları metodoloji eksikliği nedeniyle yeniden üretilemedi.",
+    "unsloth ekibi, kendi kuantlarıyla yapılan testlerde gsq‑rco kuantlarından daha iyi performans elde ettiğini iddia etti.",
+    "Basalt çıkarım motorunun geliştiricisi, aynı boyutta unsloth kuantlarıyla yapılan test sonuçlarını ekran görüntüleriyle paylaştı."
+  ],
+  "kategori": "benchmark",
+  "onem": 3,
+  "onem_gerekce": "Benchmark reproducibility (tekrarlanabilirlik) tartışması topluluk içinde teknik standartların güçlendirilmesi açısından önemli, ancak geniş çaplı bir sektörel etki yaratması henüz sınırlı.",
+  "etiketler": [
+    "benchmark",
+    "quantization",
+    "ISTA-DASLab",
+    "unsloth",
+    "LocalLLaMA"
+  ],
+  "anilan_modeller": [
+    "gsq-rco",
+    "unsloth",
+    "qwen-flash-next",
+    "basalt"
+  ],
+  "yorum_tr": "Bu gelişme, kuantlaştırma benchmarklarının şeffaf ve tekrarlanabilir olmasının gerekliliğini bir kez daha gözler önüne seriyor; geliştiriciler ve araştırmacılar, sonuçların bağımsız doğrulanabilirliğini sağlamak için metodolojik detayları paylaşmalı.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/9tv63uh7940i1.png?width=140&height=100&auto=webp&s=1258e4e39a5cdd1119e2c695597dbb4e21316f68",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xpxfob/another_benchmark_has_hit_the_quant_war/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-07T04:28:19.000Z",
+  "slug": "another-benchmark-has-hit-the-quant-war"
+}
