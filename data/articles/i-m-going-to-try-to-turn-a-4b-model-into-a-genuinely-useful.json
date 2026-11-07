@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "4B'lik bir modeli, büyük modellerle rekabet edebilecek faydalı bir kodlama ajanına dönüştürme denemesi",
+  "ozet_tr": "Yerel LLaMA topluluğu, Qwen 3.5 4B tabanlı bir kodlama ajanı oluşturma projesini duyurdu. Yazar, yüksek kaliteli süpervizyonlu ince ayar (SFT) ile küçük modellerin beklenenden çok daha yetenekli olabileceğini savunuyor ve topluluktan veri, alan ve değerlendirme önerileri istiyor.",
+  "detayli_icerik_tr": "Reddit'te LocalLLaMA topluluğuna gönderilen bir paylaşımda, geliştirici ConfidentDinner6648, önceki 3D Coder ve GLB 3D Coder modellerinin deneyimlerinden yola çıkarak, 4 milyar parametreli Qwen 3.5 modelini özel bir kodlama ajanına dönüştürmeyi planladığını açıkladı. İlk aşamada, modelin temel kodlama görevlerinde (Vite projeleri oluşturma, bağımlılık kurma, basit uygulama derleme) zaten tutarlı bir performans sergilediği, ancak daha karmaşık senaryolarda tutarsızlıklar gösterdiği belirtildi.\n\nYazar, modelin yeteneklerini geliştirmek için önce yüksek kaliteli, tutarlı bir veri setiyle süpervizyonlu ince ayar (SFT) yapmayı, ardından gerektiğinde DPO/GRPO gibi pekiştirmeli öğrenme (RL) tekniklerine başvurmayı planlıyor. Ancak, SFT tek başına modelin Three.js sahneleri ve 64K token uzunluğundaki çıktılar üretmesindeki başarısı, küçük modellerin potansiyelini yeniden değerlendirmesine yol açtı. Bu bağlamda, güçlü modellerin keşfettiği yeteneklerin, daha küçük modellere daha ucuz bir şekilde aktarılabileceği hipotezi ortaya kondu.\n\nProje, 100‑200 mini SaaS uygulaması üzerinden pilot bir eğitim seti oluşturmayı ve ardından 30‑40 alt alanı kapsayan 100.000'e yakın çok‑turlu veri yolu üretmeyi hedefliyor. Önerilen alanlar arasında React, Vue, Next.js gibi web çerçeveleri, Python ve Node.js tabanlı backend geliştirme, oyun ve 3D varlık üretimi, ayrıca web aramaları ve dokümantasyon entegrasyonu gibi araştırma‑otomasyon görevleri bulunuyor. Her eğitim örneği, araç etkileşimleri, hatalar ve gerçek düzeltmeler içerecek şekilde tasarlanacak.\n\nVeri toplama ve model eğitimi sürecinde kullanılacak kodlama harness (araç) seçimi de tartışma konusu. Yazar, lisans ve veri kullanım hakları nedeniyle Claude Code dışındaki seçenekleri (OpenCode, Pi, özel harness) değerlendirmek istediğini belirtti. Topluluktan, hangi harness'in en stabil ve lisans açısından güvenli olduğu konusunda öneri ve geri bildirim talep ediyor.",
+  "onemli_maddeler": [
+    "Qwen 3.5 4B modeli, yüksek kaliteli SFT ile beklenenden daha karmaşık kodlama görevlerini yerine getirebiliyor.",
+    "Proje, 100‑200 mini SaaS uygulaması ve ardından 100.000'e yakın çok‑turlu veri yolu ile kapsamlı bir eğitim seti oluşturmayı hedefliyor.",
+    "Kodlama harness seçimi, lisans ve veri kullanım hakları nedeniyle kritik bir karar; Claude Code dışındaki alternatifler değerlendiriliyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 3,
+  "onem_gerekce": "Küçük ölçekli modellerin kodlama ajanı olarak kullanılabilirliği üzerine topluluk temelli bir deneyim, akademik ve geliştirici ilgisini çekecek ancak henüz geniş çaplı bir etki yaratmadığı için orta seviyede önem taşımaktadır.",
+  "etiketler": [
+    "kodlama",
+    "model eğitimi",
+    "küçük modeller",
+    "açık kaynak",
+    "reinforcement learning"
+  ],
+  "anilan_modeller": [
+    "Qwen 3.5 4B"
+  ],
+  "yorum_tr": "Bu girişim, yüksek kaliteli veriyle SFT'nin küçük modellerde ne kadar etkili olabileceğini göstererek, düşük maliyetli kodlama asistanları geliştirilmesine ilham verebilir. Başarılı sonuçlar, özellikle kaynak sınırlı ekipler ve açık‑kaynak toplulukları için yeni bir yol haritası sunabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/cqmy8w1mf20i1.png?width=640&crop=smart&auto=webp&s=bdd448c7d7365ff3141010ea8ba19c8cc0de1e47",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xppw37/im_going_to_try_to_turn_a_4b_model_into_a/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-06T22:17:58.000Z",
+  "slug": "i-m-going-to-try-to-turn-a-4b-model-into-a-genuinely-useful"
+}

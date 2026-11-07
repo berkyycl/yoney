@@ -1,0 +1,80 @@
+{
+  "baslik_tr": "Lamplight: Yerel‑İlk AI Harness’inden Çıkarılan Dersler ve Performans Sonuçları",
+  "ozet_tr": "Kod geliştiricisi CodeSamurai, iki güçlü makineyi birleştirerek %95 oranında yerel AI kullanımını sağlayan Lamplight adlı özel bir harness geliştirdi. Hem donanım hem de yazılım seviyesinde yaptığı ayarlamalar sayesinde Qwen 3.8 Flash‑Next modeliyle yüksek hız ve doğruluk elde etti. Paylaştığı deneyimler, yerel AI kurulumları için tasarım, soğutma ve ayar optimizasyonunun önemini vurguluyor.",
+  "detayli_icerik_tr": "Kod geliştiricisi CodeSamurai, son iki yılda yerel AI kullanımını %95'e çıkarmak amacıyla Lamplight adını verdiği özel bir harness inşa etti. Bu sistem, bir MacBook Pro M5 Max (128 GB birleşik bellek) ve RTX 5090 FE tabanlı \"Jade\" adlı mini PC'yi birleştirerek görevleri otomatik olarak yönlendiren bir orkestratör görevi üstleniyor. Kullanıcı arayüzü, 3D ortam ve hatta bir lamba gibi görsel öğelerle zenginleştirilmiş; lamba, sistemin kullanıcıdan bir şey istediğinde yanıp sönecek şekilde tasarlanmış.\n\nLamplight, Pi‑Bolt (Pi'nin önceden derlenmiş bir sürümü) üzerine eklenen özel uzantılar ve araçlarla çalışıyor; iş akışı git worktree'ları ve olay‑tabanlı bir iş sistemiyle koordine ediliyor. Her iki makine de aynı model olan Qwen 3.8 Flash‑Next'i çalıştırıyor ve farklı motorlar (Basalt, mlx‑serve vb.) üzerinden test edildi. Test sonuçları, Jade'in RTX 5090'lu konfigürasyonunun ortalama 302 tok/s, 36 k token bağlamında 343 tok/s gibi yüksek dekode hızları sağladığını gösterdi; MacBook ise 100 tok/s ve 77 tok/s hızlarına ulaştı.\n\nPerformans açısından, HumanEval testinde Jade %99.4, Slate %98.8 başarı elde ederken, LiveCodeBench v6 ve MMLU‑Pro gibi standart benchmark'larda da %85‑87 aralığında sonuçlar alındı. Kendi oluşturduğu üç büyük kodlama görevinden oluşan ajan bataryasında ise 50 testten 48'i başarıyla geçti. Bu sonuçların arkasında, donanımın aşırı ısınmasını önlemek için yapılan özelleştirilmiş undervolt ve fan eğrisi ayarları, ayrıca model sıcaklığı ve \"medium\" ayarının optimum olduğu tespit edildi.\n\nCodeSamurai, bu deneyimlerden çıkarılan temel derslerin \"stok ayarların genellikle kötü\" olduğu ve özelleştirilmiş ayarların performans ve doğrulukta büyük fark yarattığı olduğunu vurguluyor. Gelecek planları arasında yeni motor ve model denemeleri, UI iyileştirmeleri ve oturum yöneticisi eklemek yer alıyor. Lamplight, yerel AI altyapısının sadece teknik bir meydan okuma değil, aynı zamanda kişisel üretkenliği artıran bir deneyim olduğunu gösteriyor.",
+  "onemli_maddeler": [
+    "Lamplight, iki farklı donanımı (MacBook Pro M5 Max ve RTX 5090‑li mini PC) tek bir orkestratör altında birleştirerek %95 yerel AI kullanımına ulaştı.",
+    "Özelleştirilmiş undervolt ve fan eğrisi ayarları, RTX 5090'un 575 W güç limitinde 83 °C, CPU'nun ise 96 °C sıcaklıklara ulaşmasını önleyerek daha sessiz ve verimli bir çalışma sağladı.",
+    "Qwen 3.8 Flash‑Next modeliyle HumanEval, LiveCodeBench ve MMLU‑Pro benchmark'larında %85‑99 arasında yüksek doğruluk elde edildi; özellikle HumanEval %99.4 başarı oranı gösterdi."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 3,
+  "onem_gerekce": "Yerel AI kurulumları ve özelleştirilmiş harness geliştiren topluluk üyeleri için teknik detaylar ve performans sonuçları değerli bir referans sunuyor, ancak geniş çaplı bir endüstri etkisi henüz sınırlı.",
+  "etiketler": [
+    "local AI",
+    "Lamplight",
+    "benchmark",
+    "hardware",
+    "AI harness"
+  ],
+  "anilan_modeller": [
+    "Qwen 3.8 Flash-Next",
+    "Qwen 3.8 27B",
+    "GLM-5.3-Flash"
+  ],
+  "yorum_tr": "Lamplight gibi açık kaynaklı, yerel‑ilk harness'ler, geliştiricilerin bulut bağımlılığını azaltarak maliyet ve gizlilik avantajı elde etmelerini sağlıyor; aynı zamanda özelleştirilmiş ayarların performans üzerindeki etkisini göstererek topluluk içinde daha fazla deney paylaşımını teşvik edecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen 3.8 Flash-Next",
+      "benchmark": "HumanEval",
+      "skor": 99.4,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "HumanEval / HumanEval+ 99.4% / 93.9%"
+    },
+    {
+      "model": "Qwen 3.8 Flash-Next",
+      "benchmark": "LiveCodeBench v6",
+      "skor": 85.7,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "LiveCodeBench v6 (175 problems) 85.7%"
+    },
+    {
+      "model": "Qwen 3.8 Flash-Next",
+      "benchmark": "MMLU-Pro (140-question subset)",
+      "skor": 87.9,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "MMLU-Pro (140-question subset) 87.9%"
+    },
+    {
+      "model": "Qwen 3.8 Flash-Next",
+      "benchmark": "Decode speed (average)",
+      "skor": 302,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Decode speed, average 302 tok/s"
+    },
+    {
+      "model": "Qwen 3.8 Flash-Next",
+      "benchmark": "Time to first token (9K prompt)",
+      "skor": 1.7,
+      "birim": "s",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Time to first token, 9K / 36K prompt 1.7 s / 4.2 s"
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/8xzxvwnaf10i1.gif?frame=1&width=140&height=107&auto=webp&s=06fe6d1cfbf6aa3ae6fe9d3d090b731bc5fa946b",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xpkqo2/lamplight_lessons_learned_from_building_a/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-06T18:47:21.000Z",
+  "slug": "lamplight-lessons-learned-from-building-a-local-first-harnes"
+}
