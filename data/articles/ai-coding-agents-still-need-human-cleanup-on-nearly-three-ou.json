@@ -1,0 +1,74 @@
+{
+  "baslik_tr": "AI kodlama ajanları gerçek dünyada dört görevden üçünde insan müdahalesi gerektiriyor",
+  "ozet_tr": "Alibaba ve Asya üniversitelerinin ortak çalışması, kodlama ajanlarını gerçek kullanıcı değişiklik isteklerine dayalı yeni bir benchmark olan Co-Design Bench ile test etti. En iyi model bile görevlerin sadece %26,4'ünü tamamen doğru tamamlayabiliyor; bu da önceki testlerde görülen %99+ skorların gerçek dünyadaki geçerliliğini sorgulatıyor.",
+  "detayli_icerik_tr": "Araştırmacılar, mevcut web uygulamalarını kullanıcı isteklerine göre yeniden düzenleyen bir dizi gerçek değişiklik senaryosu oluşturdu. Bu senaryolar, metin, resim, ses ve video gibi çoklu ortam girdilerini de içeren karmaşık, çok yönlü görevlerden oluşuyor. Co-Design Bench, modellerin yalnızca kodu üretmesini değil, aynı zamanda tarayıcıda çalışan tam bir uygulama olarak doğrulanmasını da gerektiriyor; bir AI yargıç uygulamayı çalıştırıp, her işlevi test ediyor ve sadece çalışan özelliklere puan veriyor.\n\nTestte on farklı model değerlendirildi. En yüksek ortalama gereksinim karşılama oranı %70 olan GPT-6 Astra, görevlerin sadece %26,4'ünü tamamen doğru çözdü. Multimodal görevlerde bu oran %41'e, kod deposu tabanlı görevlerde ise %18'in altına düştü. Claude Opus 5 ve Qwen3.8‑Max ikinci sırada yer alırken, Grok 4.6 en düşük puanı aldı. İlginç bir bulgu, daha küçük Qwen3.8‑27B modelinin büyük değişikliklerde %75'lik bir başarı elde etmesi, ancak aynı modelin farklı bir çalışma ortamında (harness) sadece %56 puan almasıydı.\n\nModel performansının yanı sıra, çalışma ortamının (harness) sonuçları büyük ölçüde etkilediği ortaya çıktı. Aynı model iki farklı ortamda test edildiğinde puan farkı %19'a kadar çıkabiliyor. Bu durum, sadece modelin değil, aynı zamanda onu çalıştıran sistemin de değerlendirilmesi gerektiğini gösteriyor. Araştırmacılar, şirketlerin bir kodlama ajanı seçerken model ve ortam kombinasyonunu birlikte test etmelerini öneriyor.\n\nCo-Design Bench'in sınırlamaları da mevcut: her görev için tek bir sabit istek kullanılıyor, ara sorular veya kullanıcı geri bildirimleri testte yer almıyor. Ayrıca AI yargıçların hatalı değerlendirme yapabileceği ve gerçek dünyadaki kabul oranının, popüler SWE‑bench Verified gibi benchmarkların sonuçlarından %24 puan daha düşük olabileceği belirtiliyor. Bu bulgular, mevcut benchmarkların yapay zeka kod üretimindeki gerçek kullanılabilirliği abarttığını gösteriyor.",
+  "onemli_maddeler": [
+    "En iyi model (GPT-6 Astra) bile görevlerin sadece %26,4'ünü tamamen doğru tamamlayabiliyor.",
+    "Çoklu ortam (multimodal) görevlerde başarı oranı %41 iken, kod deposu görevlerinde %18'in altında kalıyor.",
+    "Çalışma ortamı (harness) model performansını %19'a kadar etkileyebiliyor; aynı model iki ortamda %75 ve %56 puan alıyor."
+  ],
+  "kategori": "benchmark",
+  "onem": 5,
+  "onem_gerekce": "Gerçek dünyadaki kodlama senaryolarında AI ajanlarının hâlâ önemli eksiklikleri olduğunu gösteren kapsamlı bir benchmark, sektörde model değerlendirme ve ürün seçim süreçlerini yeniden şekillendirebilir.",
+  "etiketler": [
+    "kodlama",
+    "yapay zeka",
+    "benchmark",
+    "GPT-6",
+    "Co-Design Bench"
+  ],
+  "anilan_modeller": [
+    "GPT-6 Astra",
+    "Claude Opus 5",
+    "Qwen3.8-Max",
+    "Grok 4.6",
+    "Qwen3.8-27B",
+    "GLM-5.2"
+  ],
+  "yorum_tr": "Bu bulgular, geliştiricilerin AI kodlama asistanlarını doğrudan üretim ortamına entegre etmeden önce kapsamlı entegrasyon testleri yapması gerektiğini vurguluyor; aynı zamanda benchmarkların gerçek kullanım senaryolarını yansıtması için yeni ölçütlerin geliştirilmesi gerektiğini işaret ediyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GPT-6 Astra",
+      "benchmark": "Co-Design Bench (tam doğru çözüm oranı)",
+      "skor": 26.4,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "According to the paper, GPT-6 Astra, the best of the ten models tested, meets about 70 percent of a task's requirements on average. But the result is fully correct in only 26.4 percent of tasks."
+    },
+    {
+      "model": "GPT-6 Astra",
+      "benchmark": "Co-Design Bench (multimodal tam çözüm oranı)",
+      "skor": 41,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "multimodal",
+      "kaynak_metinden_alinti": "GPT-6 Astra leads both tracks but fully solves only 41 percent of multimodal tasks and just under 18 percent of repository tasks."
+    },
+    {
+      "model": "Qwen3.8-27B",
+      "benchmark": "Co-Design Bench (harness farklılığı)",
+      "skor": 75,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "first harness",
+      "kaynak_metinden_alinti": "Qwen3.8-27B scored 75 or just 56 percent on larger overhauls depending on the environment."
+    },
+    {
+      "model": "Qwen3.8-27B",
+      "benchmark": "Co-Design Bench (harness farklılığı)",
+      "skor": 56,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "second harness",
+      "kaynak_metinden_alinti": "Qwen3.8-27B scored 75 or just 56 percent on larger overhauls depending on the environment."
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/11/co-design-bench-nano-banana-pro.jpg",
+  "url": "https://the-decoder.com/ai-coding-agents-still-need-human-cleanup-on-nearly-three-out-of-four-tasks-in-a-real-world-test/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-08T09:50:59.000Z",
+  "slug": "ai-coding-agents-still-need-human-cleanup-on-nearly-three-ou"
+}

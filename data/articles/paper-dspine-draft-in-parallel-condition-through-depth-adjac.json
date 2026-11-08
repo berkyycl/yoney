@@ -1,0 +1,53 @@
+{
+  "baslik_tr": "DSpine: Paralel Taslak Oluşturma ve Derinlik Üzerinden Koşullu Enjeksiyon ile Spekülatif Kodlama",
+  "ozet_tr": "Tencent'in yeni DSpine yöntemi, spekülatif kodlamada paralel taslak üretimini her katmanda neden-sonuç koşullu enjeksiyonla güçlendiriyor. Bu sayede öncül tokenların tahmin özellikleri ardıl tokenlara derinlik boyunca aktarılıyor ve kabul edilen önek uzunluğu kayda değer şekilde artıyor.",
+  "detayli_icerik_tr": "Parallel spekülatif taslak oluşturma, tek bir backbone geçişinde birden çok aday üretirken bağımsız token seçimi tutarsız devamlara yol açabiliyor ve kabul edilen önek uzunluğunu kısaltabiliyor. Mevcut yöntemler genellikle koşullu kodlamayı backbone sonrası hafif bir modüle bırakıyor; bu da önceki token bilgilerinin sonraki tokenlara akışını sınırlıyor.\n\nTencent araştırmacıları, DFlash analizinde erken katmanların sığ katmanlarda bile geri kazanılabilir tahminler oluşturduğunu ve doğru komşu öncüllerin sonraki tokenları daha erken girdiklerinde daha fazla fayda sağladığını gösterdi. Bu gözlemlerden yola çıkarak DSpine, her katmanda kapılı komşu enjeksiyonunu kullanarak her bir öncülün tahmin özelliğini ardılına yazıyor; böylece neden-sonuç koşullu zinciri ağ derinliği boyunca uzanıyor ve tüm pozisyonlar paralel olarak güncelleniyor.\n\nYöntem, hedef modelin çıktı gömme vektörlerinden oluşturulan birleşik bir transfer alanı sayesinde katman‑katman enjeksiyonu ve öncül‑koşullu kodlamayı birleştiriyor. Katman‑bazlı çıktı‑gömme denetimi, sığ katmanlarda tahmin özelliklerinin oluşumunu teşvik ediyor. Uygulama açısından, birleşik çekirdekler ve geçiş önbelleği SGLang içinde hem verimli hem de paralel çalıştırılabiliyor.\n\nYedi farklı matematik, kod ve sohbet benchmark'ında DSpine, Qwen3-4B ve Qwen3-8B modellerinde hem sıcaklıklarda hem de sıcaklık sıfırında en uzun kabul uzunluğunu elde etti. Özellikle Qwen3-8B üzerinde sıcaklık sıfırda ortalama kabul uzunluğu DFlash'in 3.77'den 4.82'ye (%27.8 artış) yükseldi. SGLang servis testlerinde ise ortalama %23.3 daha yüksek throughput sağladı.",
+  "onemli_maddeler": [
+    "DSpine, her katmanda neden‑sonuç koşullu enjeksiyon yaparak paralel spekülatif taslak oluşturmanın tutarlılığını artırıyor.",
+    "Qwen3-8B modelinde sıcaklık sıfırda ortalama kabul uzunluğu %27.8 artarak 4.82'ye yükseldi.",
+    "SGLang servis testlerinde DSpine, DFlash'e kıyasla ortalama %23.3 daha yüksek throughput sağladı.",
+    "Katman‑bazlı çıktı‑gömme denetimi, sığ katmanlarda tahmin özelliklerinin erken oluşumunu teşvik ediyor."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "Spekülatif kodlama ve paralel taslak üretiminde yeni bir mimari sunarak kabul uzunluğunu ve verimliliği artırması, büyük dil modellerinin gerçek‑zaman uygulamalarında önemli bir performans iyileştirmesi sunması nedeniyle sektörde yüksek etki potansiyeline sahiptir.",
+  "etiketler": [
+    "spekülatif kodlama",
+    "dil modelleri",
+    "DSpine",
+    "Qwen3",
+    "SGLang"
+  ],
+  "anilan_modeller": [
+    "Qwen3-4B",
+    "Qwen3-8B"
+  ],
+  "yorum_tr": "DSpine'in katman‑derinliği boyunca koşullu bilgi akışı sağlaması, spekülatif kodlama verimliliğini artırarak geliştiricilerin daha uzun ve tutarlı yanıtlar üretmesine olanak tanıyacak. Kullanıcılar ise daha hızlı yanıt süreleri ve daha az kesintiyle daha akıcı deneyimler yaşayacak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen3-8B",
+      "benchmark": "seven-benchmark mean acceptance length (temperature zero)",
+      "skor": 4.82,
+      "birim": "",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "temperature zero",
+      "kaynak_metinden_alinti": "At temperature zero on Qwen3-8B, it raises the seven-benchmark mean from DFlash's 3.77 to 4.82 (+27.8%)"
+    },
+    {
+      "model": "Qwen3-8B",
+      "benchmark": "throughput increase in SGLang serving tests",
+      "skor": 23.3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "SGLang serving tests",
+      "kaynak_metinden_alinti": "in SGLang serving tests, it delivers 23.3% higher throughput than DFlash on average"
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/ea256nlpo70i1.png?width=140&height=61&auto=webp&s=771793e18db53f08f993e37704e02afcb3a4c02d",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xq9hf6/paper_dspine_draft_in_parallel_condition_through/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-07T15:48:50.000Z",
+  "slug": "paper-dspine-draft-in-parallel-condition-through-depth-adjac"
+}

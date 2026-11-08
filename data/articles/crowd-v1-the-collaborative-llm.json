@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "Crowd‑v1: Topluluk tarafından eğitilen 1 Milyar parametreli açık kaynak LLM",
+  "ozet_tr": "Crowd‑v1, topluluk katkısıyla sıfır maliyetle eğitilen ilk 1 Milyar parametreli transformer modeli olarak tanıtıldı. Proje, büyük veri merkezlerine ve milyon dolarlık bütçelere ihtiyaç duymadan, gönüllü GPU sahiplerinin bir araya gelerek rekabetçi bir LLM oluşturabileceğini gösteriyor.",
+  "detayli_icerik_tr": "Reddit'in LocalLLaMA topluluğu, CrowdGPT projesinin bir sonraki aşaması olarak Crowd‑v1 adlı 1 Milyar parametreli bir dil modelini duyurdu. Model, tamamen kar amacı gütmeyen, açık kaynak ve topluluk odaklı bir yaklaşımla, hiçbir veri merkezi ya da finansal yatırım olmaksızın geliştiriliyor. Projenin temel iddiası, büyük Nvidia GPU kümeleri ve yüksek bütçeler olmadan da rekabetçi bir LLM üretilebileceğini kanıtlamaktır.\n\nİlk aşamada 85 gönüllü kayıt oldu ve bir hafta içinde 13 Milyar token işlenerek modelin temel eğitimi tamamlandı. Katılımcıların çoğu, boşta kalan GPU kaynaklarını bağışlayarak bu sürece katkı sağladı; bu da \"1000+ kişi ve boşta GPU'lar\" hedefinin ne kadar ulaşılabilir olduğunu gösteriyor. Proje, ileride 7 B parametreli bir A1B MoE (Mixture of Experts) ya da 30 B parametreli A3B MoE sürümlerine ölçeklenmeyi planlıyor.\n\nTeknik hedef, Crowd‑v1'in benchmark performansında Qwen3‑0.6B modelini eşitleyip aşmasıdır. Qwen3‑0.6B, düşük parametreli segmentte güçlü bir referans olarak kabul ediliyor; bu hedefe ulaşılması, topluluk temelli eğitimin kalite açısından da geçerli bir alternatif olabileceğini gösterir. Başarı durumunda, daha büyük modellerin geliştirilmesi için aynı işbirliği modeli kullanılabilir.\n\nProje tamamen şeffaf bir yapıya sahip; tüm kaynak kodu GitHub üzerinden incelenebilir ve veri katkısı https://crowdgpt.net/#submit adresinden yapılabilir. Katkı süreci veri hazırlığından eğitim aşamasına, hatta benchmark testlerine kadar her adımı kapsıyor. Geliştiriciler, kod incelemeleri ve pull request'ler aracılığıyla projeye doğrudan müdahale edebiliyor, bu da güvenlik ve kalite kontrolünün topluluk tarafından sağlanmasını mümkün kılıyor.",
+  "onemli_maddeler": [
+    "Crowd‑v1, 1 Milyar parametreli bir model olarak topluluk tarafından sıfır maliyetle eğitiliyor.",
+    "85 gönüllü, bir hafta içinde 13 Milyar token işleyerek temel eğitimi tamamladı.",
+    "Model, Qwen3‑0.6B performansını eşitlemeyi ve aşmayı hedefliyor; gelecekte 7 B‑30 B MoE sürümlerine ölçeklenebilir.",
+    "Tüm kod ve veri akışı GitHub üzerinden denetlenebilir; katkı süreci veri toplama, eğitim ve benchmark aşamalarını kapsıyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Topluluk tarafından sıfır maliyetle büyük bir LLM'in eğitilebileceğini gösteren bir kanıt-örnek olması, açık‑kaynak AI ekosisteminde yeni bir paradigma sunması ve gelecekte daha büyük modellerin temeli olabilecek potansiyeli nedeniyle yüksek öneme sahiptir.",
+  "etiketler": [
+    "crowd-v1",
+    "açık‑kaynak",
+    "topluluk‑eğitimi",
+    "LLM",
+    "GPU‑paylaşımı"
+  ],
+  "anilan_modeller": [
+    "Crowd-v1",
+    "Qwen3-0.6B",
+    "CrowdGPT"
+  ],
+  "yorum_tr": "Crowd‑v1, topluluk temelli model geliştirme yaklaşımını somut bir örnekle kanıtlayarak, bağımsız araştırmacıların ve küçük şirketlerin büyük dil modellerine erişimini demokratikleştirebilir. Ancak modelin kalite ve güvenliği, geniş ölçekli testlerle doğrulanana kadar sınırlı kalacaktır.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://i.redd.it/4zhosp53cuyh1.png",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xqh8hk/crowdv1_the_collaborative_llm/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-07T21:19:40.000Z",
+  "slug": "crowd-v1-the-collaborative-llm"
+}

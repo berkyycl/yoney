@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "16GB VRAM ile Yerel AI Çalıştıran Var mı?",
+  "ozet_tr": "Reddit'in LocalLLaMA topluluğunda bir kullanıcı, 16 GB VRAM sınırlamasıyla günlük görevler, araştırma ve geliştirme için yerel AI ajanları çalıştırmak istediğini belirtiyor. Goose, Hermes Agent ve OpenCode gibi araçları denediğini, ancak tatmin edici sonuç alamadığını ifade ediyor. Kullanıcı, başarılı kurulumları, model seçimlerini ve gerekli ayarları paylaşacak deneyimli kişileri arıyor.",
+  "detayli_icerik_tr": "LocalLLaMA topluluğunda paylaşılan bir gönderide, kullanıcı Stitch10925, 16 GB VRAM'e sahip bir sistemde yerel yapay zeka ajanları çalıştırma ihtiyacını dile getiriyor. Günlük iş akışını otomatikleştirecek bir yardımcı ajan, konuları araştıracak bir araştırma ajanı ve kod geliştirme süreçlerine destek verecek bir geliştirici ajanı kurmak istiyor.\n\nBu amaçla, Goose, Hermes Agent ve OpenCode gibi popüler harness (araç) ve model paketlerini denediğini, fakat henüz tatmin edici bir performans elde edemediğini belirtiyor. Kullanıcı, bu başarısızlığın yetersiz ayarlamalardan, eksik araçlardan ya da model uyumsuzluğundan kaynaklanıp kaynaklanmadığını netleştiremediğini ifade ediyor.\n\nŞu anki deneme ortamı olarak Ollama'yı kullandığını ve vLLM'yi denediğini, ancak yanlış model seçimi durumunda sistemin çökmesi nedeniyle bu yöntemi tercih etmediğini ekliyor. Kullanıcı, topluluktan benzer donanım konfigürasyonunda çalışanların hangi modelleri, hangi parametreleri ve hangi optimizasyonları kullandığını öğrenmek istiyor.\n\nGönderi, yerel AI çözümlerinin donanım sınırlamalarıyla nasıl şekillendiğine dair bir topluluk tartışması başlatmayı hedefliyor. Katılımcıların deneyimlerini paylaşması, 16 GB VRAM gibi kısıtlı kaynaklarda verimli model seçimi ve ayarları konusunda yol gösterici olabilir.",
+  "onemli_maddeler": [
+    "16 GB VRAM sınırlamasıyla yerel AI ajanları çalıştırma ihtiyacı.",
+    "Goose, Hermes Agent ve OpenCode gibi harness'lerin denendiği ancak istenen verim alınamadığı.",
+    "Ollama platformu tercih edilirken vLLM'nin model uyumsuzluğu nedeniyle sorun yaşandığı.",
+    "Topluluktan benzer donanımda çalışanların model, ayar ve optimizasyon önerileri talep ediliyor."
+  ],
+  "kategori": "diger",
+  "onem": 2,
+  "onem_gerekce": "Konu, belirli bir topluluk içinde teknik bir soruya odaklanıyor ve sektörel çapta geniş bir etki yaratma potansiyeli düşük; daha çok bireysel kullanıcı deneyimi ve paylaşımına yönelik.",
+  "etiketler": [
+    "local-llama",
+    "AI-agents",
+    "16GB VRAM",
+    "Ollama",
+    "model-tuning"
+  ],
+  "anilan_modeller": [
+    "Goose",
+    "Hermes Agent",
+    "OpenCode"
+  ],
+  "yorum_tr": "Bu tür topluluk soruları, sınırlı donanımda yerel AI çözümlerinin pratik sınırlarını ortaya koyarak geliştiricilere yol gösterici olabilir, ancak sektörel ölçekte büyük bir dönüşüm yaratması beklenmiyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/anyone-running-local-ai-on-16gb-vram-v0-ft61mh5apc0i1.png?width=281&format=png&auto=webp&s=a89a6c8789d12c9b0cc5fb702196321621b84cb5",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xqjenw/anyone_running_local_ai_on_16gb_vram/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-07T23:00:19.000Z",
+  "slug": "anyone-running-local-ai-on-16gb-vram"
+}
