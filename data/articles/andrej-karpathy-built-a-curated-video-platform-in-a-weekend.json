@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "Andrej Karpathy, Claude Opus 5.5 ile bir hafta sonu içinde HackerTube ve TristanTube'ı hayata geçirdi",
+  "ozet_tr": "OpenAI kurucu ortağı ve Anthropic araştırmacısı Andrej Karpathy, Claude Opus 5.5 modelini kullanarak sadece bir hafta sonu içinde HackerTube adlı bir video öneri platformu ve TristanTube adlı bir başka kanalı oluşturdu. Model, 20 yıllık Hacker News verilerini işleyerek 43 milyon yorumu 6.454 videoya, bir YouTube kanal listesini ise 47.000 videoya dönüştürdü.",
+  "detayli_icerik_tr": "Karpathy, Claude Opus 5.5'in \"Claude Code\" yeteneği sayesinde veri analizi, sunucu kurulumu ve kod üretimini neredeyse tamamen otomatikleştirdi. Tek yaptığı şey bir Google Cloud API anahtarı, kiralanmış bir sunucu ve bir domain satın almak oldu. Model, 20 yıllık Hacker News arşivindeki 43 milyon yorumu tarayarak en ilgi çekici içerikleri 6.454 videoya özetledi ve bu videolar HackerTube'da önerildi.\n\nHackerTube, kullanıcıların giriş yapmasına gerek kalmadan, video önizlemesi olarak ortadaki bir kareyi göstererek ve tarayıcıda yerel durum saklayarak YouTube'un öneri sistemine kıyasla daha temiz bir izleme deneyimi sunduğunu Karpathy X üzerinden duyurdu. Aynı süreç, Claude Code ile sadece üç dakikada TristanTube adlı platformu da ortaya çıkardı; bu platform, Tristan Hume'un YouTube kanal listesinden 47.000 video içeriği oluşturdu.\n\nKarpathy, bu projelerin haftalar süren geliştirme süreçlerini birkaç saat içinde tamamlayabildiğini belirterek, modern LLM'lerin yazılım geliştirme sürecini kökten değiştirebileceğine işaret etti. Bu deney, Claude Opus 5.5'in kod üretme, veri işleme ve sistem entegrasyonu konularındaki çok yönlülüğünü gösterirken, AI destekli hızlı prototiplemenin yeni bir standart haline gelebileceğini gösteriyor.\n\nBu tür bir uygulama, özellikle startup'lar ve bağımsız geliştiriciler için maliyet ve zaman tasarrufu anlamında büyük bir potansiyel taşıyor. Ancak, modelin veri filtreleme ve içerik seçimi süreçlerinde oluşabilecek önyargılar ve telif hakları gibi konuların da dikkatle ele alınması gerekiyor.",
+  "onemli_maddeler": [
+    "Claude Opus 5.5, 43 milyon Hacker News yorumunu işleyerek 6.454 video önerisi oluşturdu.",
+    "Claude Code, veri analizi, sunucu kurulumu ve kod üretimini otomatikleştirerek iki platformun sadece bir hafta sonunda hayata geçmesini sağladı.",
+    "HackerTube, giriş gerektirmeyen, tek kare önizleme ve tarayıcıda yerel durum saklama özellikleriyle YouTube öneri sistemine kıyasla daha iyi bir izleme deneyimi sunuyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Claude Opus 5.5'in kod üretme ve veri işleme yeteneklerinin gerçek bir ürün geliştirme sürecinde bu denli hızlı ve kapsamlı kullanılabilmesi, AI destekli yazılım geliştirme paradigmalarını dönüştürme potansiyeli taşıdığı için yüksek öneme sahiptir.",
+  "etiketler": [
+    "Claude Opus 5.5",
+    "AI kod üretimi",
+    "HackerTube",
+    "TristanTube",
+    "Andre Karpathy"
+  ],
+  "anilan_modeller": [
+    "Claude Opus 5.5"
+  ],
+  "yorum_tr": "Bu gelişme, geliştiricilerin prototip oluşturma süresini dramatik şekilde kısaltarak yenilikçi ürünleri daha hızlı piyasaya sürmelerine olanak tanıyor. Ancak, otomatik içerik seçimi ve telif hakları konularında dikkatli denetim gerekecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/11/comments_to_youtube.png",
+  "url": "https://the-decoder.com/andrej-karpathy-built-a-curated-video-platform-in-a-weekend-using-claude-and-20-years-of-hacker-news/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-08T14:23:00.000Z",
+  "slug": "andrej-karpathy-built-a-curated-video-platform-in-a-weekend"
+}

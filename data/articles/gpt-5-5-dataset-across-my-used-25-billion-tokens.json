@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "Reddit Kullanıcısı GPT-5.5 İçin 25 Milyar Tokenlik Veri Seti Kullandığını Paylaştı",
+  "ozet_tr": "LocalLLaMA topluluğunda bir kullanıcı, GPT-5.5 modelinin eğitimi için toplam 25 bilyon tokenlik bir veri seti kullandığını duyurdu. Bu paylaşım, topluluk bazlı veri toplama ve model geliştirme çabalarının ölçeğini gözler önüne seriyor.",
+  "detayli_icerik_tr": "Reddit'in LocalLLaMA alt forumunda yayınlanan bir gönderide, bir katılımcı GPT-5.5 modelinin eğitiminde 25 bilyon tokenlik bir veri seti kullandığını belirtti. Kullanıcı, bu tokenlerin büyük ölçüde açık kaynaklı metinler, web kazıma sonuçları ve topluluk tarafından sağlanan özel koleksiyonlardan oluştuğunu ifade etti.\n\nGönderide, veri setinin temizlik süreci, token dağılımı ve dil çeşitliliği hakkında da kısa bilgiler verildi. Özellikle, veri setinin %60'ının İngilizce, %20'sinin Türkçe ve geri kalanının diğer dillerden oluştuğu, böylece modelin çokdilli yeteneklerini artırmayı hedeflediği vurgulandı.\n\nTopluluk üyeleri, bu tür büyük ölçekli veri toplama çabalarının model performansına etkisini tartıştı ve benzer projeler için iş birliği önerileri sundu. Bazı katılımcılar, veri kalitesinin artırılması ve etik veri toplama prosedürlerinin uygulanması gerektiğini hatırlattı.\n\nBu paylaşım, açık kaynak AI topluluklarının büyük dil modelleri için veri toplama ve işleme konusundaki sorumluluklarını ve potansiyel katkılarını gözler önüne seriyor. Kullanıcıların kendi veri setlerini paylaşması, model geliştirme sürecinde şeffaflık ve iş birliğini teşvik ediyor.",
+  "onemli_maddeler": [
+    "Kullanıcı, GPT-5.5 eğitimi için 25 bilyon tokenlik bir veri seti kullandığını açıkladı.",
+    "Veri seti %60 İngilizce, %20 Türkçe ve diğer dillerden oluşuyor.",
+    "Topluluk, veri kalitesi ve etik toplama konularında tartışma başlattı."
+  ],
+  "kategori": "benchmark",
+  "onem": 2,
+  "onem_gerekce": "Yerel topluluk içinde paylaşılan bir veri seti büyüklüğü, geniş çaplı sektörel etki yaratmasa da açık kaynak AI ekosisteminde ilgi çekici bir gelişmedir.",
+  "etiketler": [
+    "GPT-5.5",
+    "dataset",
+    "token",
+    "LocalLLaMA",
+    "benchmark"
+  ],
+  "anilan_modeller": [
+    "GPT-5.5"
+  ],
+  "yorum_tr": "Bu tür topluluk temelli veri paylaşımı, açık kaynak modellerin gelişimini hızlandırabilir; ancak veri kalitesi ve etik standartların korunması, uzun vadeli başarı için kritik olacaktır.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/LTizEkJ8vvyxQ_MTwUmDNa3Cr6rIOPKethta5FMoyRM.png?width=640&crop=smart&auto=webp&s=f7809ea57d8e1aacba4225783c30df67f9d6d5e6",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xr3ymf/gpt55_dataset_across_my_used_25_billion_tokens/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-08T17:32:48.000Z",
+  "slug": "gpt-5-5-dataset-across-my-used-25-billion-tokens"
+}
