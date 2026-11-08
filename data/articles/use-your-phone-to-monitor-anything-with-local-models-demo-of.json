@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "Observer: Telefonunuzla Her Şeyi İzleyebilen %100 Yerel AI Agent Demo",
+  "ozet_tr": "Roy3838, iOS ve Android platformları için tamamen yerel çalışan bir AI ajanı olan Observer'ı tanıttı. Telefonunuzdaki düşük kapasiteli modellerle, aracın fotoğraf çekip bildirim göndermesinden telefon araması yapmaya kadar pek çok senaryoyu izleyebileceksiniz.",
+  "detayli_icerik_tr": "Yerel LLaMA topluluğu içinde paylaşılan yeni bir demo, Observer adlı açık kaynaklı bir mobil ajanı tanıtıyor. Kullanıcı, telefonunun kamerasını ve mikrofonunu kullanarak çeşitli olayları algılayıp anında bildirim alabiliyor. Örneğin, aracına yaklaşan bir yabancı tespit edildiğinde fotoğraf gönderilmesi, kuş yuvasındaki bir kuşun fotoğrafının Telegram üzerinden iletilmesi ya da çamaşır makinesinin durulama döngüsüne girdiğinde arama yapılması gibi senaryolar gösterildi.\n\nObserver, iki hafif modelle çalışıyor: karar verme sürecini yöneten OneJev-0.8b ve olayları algılayan LLM gözetleyicisi qwen-0.8b. Bu modeller, eski akıllı telefonlarda bile sorunsuz çalışacak şekilde optimize edilmiş; böylece cihazlar tozlu bir rafta kalmak yerine aktif bir izleme birimine dönüşüyor. Uygulama, iOS App Store ve Google Play üzerinden ücretsiz olarak indirilebiliyor ve kaynak kodu GitHub'da tamamen açık.\n\nGeliştirici, topluluktan gelen geri bildirimlerle ajanı daha da iyileştirmek istediğini belirtti. Kullanıcıların hangi senaryoları izlemek istediklerini sorarak, yeni tetikleyiciler ve entegrasyonlar eklemeyi planlıyor. Kamera kalitesinin düşük olması gibi sınırlamalar da kabul edilerek, demo hızlı bir şekilde yayınlanmış ve gerçek dünya testleri için topluluk katılımı teşvik edilmiş.\n\nObserver, yerel AI çözümlerinin mobil cihazlarda pratik kullanımını gösteren bir örnek olarak öne çıkıyor. Açık kaynak yapısı, geliştiricilerin kendi izleme senaryolarını eklemesini ve modeli ihtiyaçlarına göre uyarlamasını mümkün kılıyor. Bu da veri gizliliği ve çevrimdışı çalışabilirlik açısından önemli bir adım olarak değerlendirilebilir.",
+  "onemli_maddeler": [
+    "Observer, telefonunuzda %100 yerel çalışan iki hafif model (OneJev-0.8b ve qwen-0.8b) kullanıyor.",
+    "Uygulama iOS ve Android platformlarında ücretsiz ve açık kaynak olarak sunuluyor.",
+    "Kullanıcılar, fotoğraf, ses ve bildirim tabanlı izleme senaryolarını kolayca tanımlayabiliyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 3,
+  "onem_gerekce": "Mobil cihazlarda yerel AI çalıştırma örneği sunması ve açık kaynak topluluk katılımını teşvik etmesi bakımından ilgi çekici ancak sektörel etkisi henüz sınırlı.",
+  "etiketler": [
+    "Observer",
+    "yerel model",
+    "mobil AI",
+    "open source",
+    "iOS Android"
+  ],
+  "anilan_modeller": [
+    "OneJev-0.8b",
+    "qwen-0.8b"
+  ],
+  "yorum_tr": "Observer, veri gizliliği ve çevrimdışı çalışabilirlik isteyen geliştiriciler için pratik bir prototip sunuyor. Ancak model boyutları ve cihaz performansı sınırlı olduğundan, geniş ölçekli ticari uygulamalara doğrudan geçiş için ek optimizasyonlar gerekebilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/N3A5dXo2ZmhjODBpMW_apGTg9Ajdcbh1unJZegYd2EArLZ3JBPqZMQBJz8t3.png?width=640&crop=smart&auto=webp&s=4153b5f03cefefcf5acfe489e143f66a29c38efe",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xqd058/use_your_phone_to_monitor_anything_with_local/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-07T18:16:41.000Z",
+  "slug": "use-your-phone-to-monitor-anything-with-local-models-demo-of"
+}

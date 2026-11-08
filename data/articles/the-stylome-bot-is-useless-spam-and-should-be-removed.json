@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "Stylome Botu Gereksiz Spam Olarak Eleştirildi ve Kaldırılması İsteniyor",
+  "ozet_tr": "Reddit'in LocalLLaMA topluluğunda, Stylize botunun yorumları AI olarak işaretlemesi düşük güven seviyeleriyle gerçekleşiyor ve kullanıcılar bu durumu spam olarak nitelendiriyor. Kullanıcılar, botun özel bir şirket tarafından kontrol edildiğini ve veri toplama risklerini sorguluyor.",
+  "detayli_icerik_tr": "LocalLLaMA subreddit'inde aktif bir üye, Stylome botunun her yorumda \"AI tarafından yazıldı\" ibaresini düşük bir güven skoru ile göstermesinin topluluk içinde rahatsızlık yarattığını belirtti. Bot, bir moderatör olarak görev yapıyor ve yorumların yapay zeka üretimi olup olmadığını tespit etmeye çalışıyor, ancak kullanıcılar bu tespitin tutarsız ve düşük güvenilirlikte olduğunu gözlemliyor.\n\nKullanıcı, kendi yorumlarını Google Gemini ile yeniden yazarak bir test gerçekleştirdi. Stylome botu, bu yeniden yazılmış metinleri hâlâ insan tarafından yazılmış olarak işaretledi ve yine düşük bir güven seviyesi raporladı. Bu durum, botun algoritmasının ya da eğitim verisinin yetersizliğini ve yanlış pozitif sonuçlar verdiğini gösteriyor.\n\nŞikayet, botun bir özel şirketin kontrolünde olmasından ve topluluk verilerinin bu şirketle paylaşılmasından kaynaklanan gizlilik endişelerini de içeriyor. Kullanıcılar, yerel bir modelin bu işlevi üstlenmesinin daha güvenli ve şeffaf olacağını savunuyor. Ayrıca, botun sürekli olarak spam niteliğinde mesajlar üretmesinin, moderasyon sürecini zorlaştırdığı ve kullanıcı deneyimini olumsuz etkilediği vurgulandı.\n\nBu eleştiriler, Reddit topluluklarında AI tabanlı moderasyon araçlarının doğruluk, şeffaflık ve veri güvenliği konularında daha fazla denetim ve iyileştirme ihtiyacını ortaya koyuyor. Stylome botunun kaldırılması ya da işlevinin yeniden gözden geçirilmesi talebi, topluluk yöneticileri ve platform geliştiricileri tarafından değerlendirilmesi gereken bir konu haline geldi.",
+  "onemli_maddeler": [
+    "Stylome botu, AI yazılı yorumları düşük güven skoru ile insan olarak işaretliyor.",
+    "Kullanıcı, Gemini ile yeniden yazılmış yorumları test ederek botun tutarsızlığını ortaya koydu.",
+    "Botun özel bir şirket tarafından yönetilmesi ve veri toplama endişeleri toplulukta tartışılıyor."
+  ],
+  "kategori": "diger",
+  "onem": 2,
+  "onem_gerekce": "Topluluk içinde bir moderasyon aracının hatalı çalışması ve veri gizliliği endişeleri, platform deneyimini etkileyebilir ancak geniş ölçekli sektörel etkisi sınırlıdır.",
+  "etiketler": [
+    "AI",
+    "moderasyon",
+    "spam",
+    "Reddit",
+    "Stylome"
+  ],
+  "anilan_modeller": [
+    "Gemini"
+  ],
+  "yorum_tr": "Bu tür topluluk geri bildirimleri, AI destekli moderasyon araçlarının doğruluk ve şeffaflık açısından yeniden değerlendirilmesi gerektiğini gösteriyor; geliştiriciler, düşük güven skorlarıyla yanlış sınıflandırma yapmaktan kaçınmalı.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://commoncog.com/content/images/2025/09/how_to_use_ai_without_stupid.jpg",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xqinb7/the_stylome_bot_is_useless_spam_and_should_be/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-07T22:24:14.000Z",
+  "slug": "the-stylome-bot-is-useless-spam-and-should-be-removed"
+}

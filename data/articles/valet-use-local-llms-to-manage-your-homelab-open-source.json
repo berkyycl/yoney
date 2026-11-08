@@ -1,0 +1,43 @@
+{
+  "baslik_tr": "Valet: Yerel LLM'lerle Homelab Yönetimi İçin Açık Kaynak Araç",
+  "ozet_tr": "Valet, yerel ya da barındırılan büyük dil modelleriyle entegre olabilen, 185'ten fazla hizmeti tek bir panodan kontrol etmeyi sağlayan açık kaynak bir otomasyon platformu. Kullanıcılar, sohbet aracılığıyla hizmetleri duraklatabilir, logları inceletebilir ya da konfigürasyon dosyalarını onaylarıyla güncelleyebilir. Proje, Qwen 3.8 27B modeliyle 230 token/sn hızında çalışıyor ve yanıt süresi 2‑5 saniye arasında değişiyor.",
+  "detayli_icerik_tr": "Reddit topluluğu LocalLLaMA'da paylaşılan Valet, homelab ortamlarını yönetmek isteyenler için tasarlanmış bir kontrol paneli ve sohbet ajanı sunuyor. Kullanıcılar, \"pi-hole'ı duraklat\", \"çökme loglarını incele\" ya da \"film öner\" gibi doğal dil komutlarıyla 185'ten fazla entegrasyona erişebiliyor; ayrıca özel eklentilerle işlevsellik genişletilebiliyor. Valet, kendi dokümantasyonunu da okuyarak kendini yapılandırabiliyor; bir değişiklik talebi geldiğinde, konfigürasyon dosyasını düzenleyip kullanıcı onayını bekliyor.\n\nPerformans açısından geliştirici, Qwen 3.8 27B modelini RTX 5090 GPU üzerinde çalıştırdığını ve saniyede yaklaşık 230 token işlediğini belirtiyor. Çoğu yanıt 2‑5 saniye içinde geliyor ve model, yazarın hazırladığı küçük bir değerlendirme setinin %90'ını başarıyla geçiyor. Açık uçlu sorgularda (ör. \"Bu zamanlayıcı neden çalışmıyor?\") ise araç çağrıları yoğunlaşarak yanıt süresi uzayabiliyor. Token tüketimini azaltmak için kullanılmayan araç tanımları gizleniyor, düşünme modu kapatılıyor ve araçlar gerektiğinde tembel yükleme (lazy load) yöntemiyle ekleniyor; bu optimizasyonlar yanıt başına %30‑50 token tasarrufu sağlıyor.\n\nGüvenlik ve gizlilik de projenin temel taşlarından biri. Valet tamamen yerel donanımda çalışıyor, hiçbir telemetri ya da dış hesap gerektirmiyor. Varsayılan olarak okuma‑sadece erişim sağlanıyor; değişiklikler yalnızca yerel hesap, OIDC ya da ters proxy üzerinden kimlik doğrulama ile yapılabiliyor. API anahtarları .env dosyasında saklanıyor ve tarayıcıya sadece işlenmiş kartlar gönderiliyor, böylece yapay zeka modelinin anahtarlara erişimi engelleniyor. Docker erişimi ise socket proxy üzerinden yalnızca okuma izniyle sınırlı.\n\nValet'in kodlamasında yazar, Claude modelini (Claude 2) neredeyse tüm kod üretimi için kullandığını, ancak mimari kararları ve güvenlik incelemelerini kendisinin yaptığını vurguluyor. Proje hâlâ erken aşamalarda ve bazı kenar durumları eksik kalabilir, ancak açık kaynak lisansı ve kapsamlı konfigürasyon seçenekleri sayesinde topluluk katkılarına açık bir yapı sunuyor.",
+  "onemli_maddeler": [
+    "Valet, 185+ hizmetle entegrasyon ve özelleştirilebilir eklentilerle homelab yönetimini tek bir sohbet arayüzüne taşıyor.",
+    "Qwen 3.8 27B modeliyle 230 token/sn hızında çalışıyor; küçük bir değerlendirme setinde %90 başarı oranı elde ediyor.",
+    "Güvenlik odaklı tasarım: yerel çalıştırma, telemetri yok, API anahtarları sunucuda kalıyor ve değişiklikler kullanıcı onayıyla gerçekleşiyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 3,
+  "onem_gerekce": "Yerel LLM'lerin homelab otomasyonunda kullanılabilirliğini gösteren bir açık kaynak proje olması, geliştiriciler ve DIY meraklıları için ilgi çekici ancak sektörel etkisi sınırlı bir yenilik olarak değerlendirildi.",
+  "etiketler": [
+    "homelab",
+    "local-llm",
+    "open-source",
+    "automation",
+    "AI-ops"
+  ],
+  "anilan_modeller": [
+    "Qwen 3.8 27B",
+    "Claude"
+  ],
+  "yorum_tr": "Valet, yerel LLM'lerin pratik bir kullanım senaryosunu somutlaştırarak homelab yöneticilerine gizlilik ve özelleştirilebilirlik sunuyor; ancak performans ve araç yönetimi optimizasyonları, model ve donanım seçimine göre değişebileceği için geniş çaplı benimsenmesi zaman alabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen 3.8 27B",
+      "benchmark": "küçük değerlendirme seti",
+      "skor": 90,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Qwen passes about 90% of a small eval set I wrote."
+    }
+  ],
+  "gorsel_url": "https://external-preview.redd.it/bGtwOHhmbWc3NzBpMVga1gzuYCekorVjFmXudqH75-ll_60Xphou6SqVe1uG.png?width=640&crop=smart&auto=webp&s=4e32bd8692b70a0029e07a09c799f086cd4bba70",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xq7qi4/valet_use_local_llms_to_manage_your_homelab_open/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-07T14:32:04.000Z",
+  "slug": "valet-use-local-llms-to-manage-your-homelab-open-source"
+}
