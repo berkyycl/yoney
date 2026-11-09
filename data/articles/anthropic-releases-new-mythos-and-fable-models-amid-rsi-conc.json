@@ -1,0 +1,45 @@
+{
+  "baslik_tr": "Anthropic, Mythos 5.2 ve Fable 5.2'yi Tanıttı; Fable'ın Maliyeti Düşürüldü ve Hızı %30 Artırıldı",
+  "ozet_tr": "Anthropic, en gelişmiş modelleri Mythos 5.2 ve Fable 5.2'yi piyasaya sürdü. Yeni Fable modeli, giriş token başına maliyetini 10 dolardan 8 dolara indirerek GPT-6 Astra'dan daha ucuz hale geldi ve yanıt süresini %30 oranında hızlandırdı. Aynı zamanda, METR raporunun gündeme getirdiği RSI (recursive self‑improvement) endişeleri de bu sürümle birlikte yeniden tartışılıyor.",
+  "detayli_icerik_tr": "Anthropic, Pazartesi günü Claude Mythos 5.2 ve Claude Fable 5.2 adlı iki yeni modelin beta sürümünü duyurdu. Şirket, bu sürümlerin kodlama, akıl yürütme ve görsel işleme gibi kritik alanlarda belirgin iyileşmeler sağladığını ve kullanıcılarla daha net bir iletişim kurduğunu belirtiyor. Mythos 5.2, önceki Claude modellerine kıyasla gizli akıl yürütme durumunda daha güçlü örtülü (covert) yetenekler sergilediği halde, sistem kartı bu yeteneklerin düşük mutlak performans seviyelerinde kaldığını ve yüksek riskli senaryolarda tespit edilebilir olduğunu vurguluyor.\n\nFable 5.2 ise fiyat ve performans açısından önemli bir adım atıyor. Giriş token başına maliyeti 10 dolardan 8 dolara düşürülerek, doğrudan rakibi GPT-6 Astra'dan daha ekonomik bir seçenek sunulmuş oldu. Ayrıca, modelin yanıt süresi tüm çaba seviyelerinde %30 daha hızlı çalışıyor; daha hızlı bir inference hizmeti ise iki kat fiyat karşılığında sunulabiliyor. Enterprise Frontier Safeguards sistemi sayesinde Fable 5.2, sıfır veri saklama (ZDR) politikalarıyla uyumlu ve bu da kurumsal müşterilerin veri güvenliği kaygılarını azaltıyor.\n\nBu sürüm, METR adlı bağımsız değerlendirme grubunun yayımladığı ve Anthropic'in model eğitimini bağımsız olarak sürdürebilecek bir recursive self‑improvement (RSI) aşamasına yaklaşabileceği iddiasını içeren raporunun ardından geliyor. METR, iç modellerin Anthropic'in AI ilerlemesini yaklaşık iki kat hızlandırdığını öne sürse de, bu iddiaların kesinliği hâlâ belirsiz. Anthropic, model değerlendirme sıklığının artmasının gerçek dünya davranışlarını ölçmeyi zorlaştırdığını kabul ederek, gelecekteki modellerde bu zorluğun daha da büyüyeceğini belirtiyor.\n\nFable 5.2, ön sürümde seçkin ortaklara sunulmuşken, iki açık teorik fizik problemi çözdüğü, Fermat'ın Son Teoremi'ni biçimlendirdiği ve çeşitli araştırma projelerine destek olduğu iddia ediliyor. Aynı gün, Physical Superintelligence adlı bir girişim, Aaronson‑Ambainis varsayımının kanıtını duyurdu ve bu çalışmanın “kamu dışı bir Anthropic modeli” kullanılarak gerçekleştirildiğini belirtti; Anthropic, bu modelin Fable 5.2 olup olmadığını doğrulamadı.",
+  "onemli_maddeler": [
+    "Anthropic, Claude Mythos 5.2 ve Claude Fable 5.2 modellerini piyasaya sürdü.",
+    "Fable 5.2'nin maliyeti token başına 10 dolardan 8 dolara düşürüldü; GPT-6 Astra'dan daha ucuz.",
+    "Fable 5.2 yanıt süresini %30 oranında hızlandırdı; daha hızlı hizmet iki kat fiyatla sunulabiliyor.",
+    "Model, sıfır veri saklama (ZDR) politikalarıyla uyumlu ve Enterprise Frontier Safeguards sistemini destekliyor.",
+    "METR raporu, Anthropic'in olası recursive self‑improvement (RSI) aşamasına yaklaştığını öne sürerek sektörde tartışma yarattı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Anthropic'in en yeni büyük modellerinin tanıtımı, fiyat ve hız iyileştirmeleriyle rekabeti yeniden şekillendiriyor; aynı zamanda RSI endişeleri sektörde güvenlik ve düzenleme tartışmalarını tetikliyor.",
+  "etiketler": [
+    "Anthropic",
+    "Mythos",
+    "Fable",
+    "RSI",
+    "AI modeli"
+  ],
+  "anilan_modeller": [
+    "Claude Mythos 5.2",
+    "Claude Fable 5.2"
+  ],
+  "yorum_tr": "Yeni modeller, hem maliyet hem de performans açısından rekabeti kızıştırarak geliştiricilere daha erişilebilir seçenekler sunuyor. Ancak RSI konusundaki belirsizlikler, güvenlik ve düzenleyici çerçevelerin hızla adapte edilmesi gerektiğini gösteriyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Claude Fable 5.2",
+      "benchmark": "yanıt süresi iyileştirmesi",
+      "skor": 30,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "tüm effort seviyelerinde",
+      "kaynak_metinden_alinti": "Fable 5.2 is now cheaper than its primary competitor GPT-6 Astra. Anthropic says that the new version of Fable will return responses 30% faster across effort levels."
+    }
+  ],
+  "gorsel_url": "https://techcrunch.com/wp-content/uploads/2026/06/GettyImages-2279025960.jpg?w=1024",
+  "url": "https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns/",
+  "source": "TechCrunch AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-09T19:24:51.000Z",
+  "slug": "anthropic-releases-new-mythos-and-fable-models-amid-rsi-conc"
+}

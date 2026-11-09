@@ -1,0 +1,55 @@
+{
+  "baslik_tr": "Meta, tekrarlayan görevler için tasarlanmış küçük AI modeli Muse Ember'ı tanıttı",
+  "ozet_tr": "Meta, rutin AI ajan görevlerini yerine getirmek üzere optimize edilmiş yeni bir model olan Muse Ember'ı duyurdu. Model, metin, görsel, ses ve video işleyebilme yeteneğiyle bir milyon tokena kadar çıkabiliyor ve maliyet‑verimlilik açısından Claude Haiku 5.5 ve GPT‑6 Luna gibi rakiplerinden daha iyi performans sunuyor.",
+  "detayli_icerik_tr": "Meta, yapay zeka araştırma ve ürün portföyüne en küçük ve en verimli modeli ekleyerek Muse Ember'ı piyasaya sürdü. Model, AI ajanlarının gün boyunca gerçekleştirdiği tekrarlayan görevler—araçları çağırma, küçük kodlama işleri, istek yönlendirme, veri çıkarımı ve uzun belgelerin işlenmesi—için özel olarak tasarlandı. Tek bir modelin metin, görsel, ses ve video verilerini aynı anda işleyebilmesi ve bir seferde bir milyon tokena kadar desteklemesi, geliştiricilere ve işletmelere çok yönlü bir çözüm sunuyor.\n\nMeta, Muse Ember'ın yapay zeka analiz testinde görev başına yaklaşık 0,14 $ maliyetle 36 puan elde ettiğini belirtiyor. Aynı testte, daha büyük ve pahalı olan Muse Spark 1.3 modeli 2,39 $ maliyetle 37 puan alırken, Muse Ember çok daha düşük bir maliyetle benzer bir performans sergiliyor. Şirket, modelin Claude Haiku 5.5 ve GPT‑6 Luna gibi rakiplerinden her akıl yürütme seviyesinde daha fazla zeka‑dolar oranı sağladığını iddia ediyor.\n\nBununla birlikte, FrontierCode 2.0-AA adlı gerçek kodlama görevleri benchmark'unda Claude Haiku 5.5 %34,9 oranıyla Muse Ember'ın %27,2 oranını geride bıraktı. Meta, bu farkın modelin hâlâ kodlama odaklı görevlerde iyileştirme gerektirdiğini, ancak genel görevlerde maliyet‑verimlilik açısından öne çıktığını vurguluyor. Model, Meta Model API ve Muse Code üzerinden erişilebilir olup, giriş token başına 0,10 $, çıkış token başına 0,50 $ ücretlendirme uygulanıyor.\n\nMuse Ember'ın tanıtımı, büyük dil modellerinin sadece yüksek performans değil, aynı zamanda operasyonel maliyet ve ölçeklenebilirlik açısından da rekabetçi olmasını hedefleyen bir trendin parçası. Meta, bu modeli geliştiricilere sunarak, AI ajanlarının günlük iş akışlarını daha ekonomik ve hızlı bir şekilde otomatikleştirmeyi amaçlıyor.",
+  "onemli_maddeler": [
+    "Muse Ember, Meta'nın en küçük ve en verimli AI modeli olarak tanıtıldı",
+    "Model, metin, görsel, ses ve video işleyebiliyor ve bir seferde 1 M tokena kadar destek veriyor",
+    "Artificial Analysis Intelligence Index testinde 36 puan alarak görev başına sadece 0,14 $ maliyetle yüksek verim sağladı",
+    "FrontierCode 2.0-AA benchmark'ında kodlama performansı Claude Haiku 5.5'in gerisinde kaldı"
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Meta'nın yeni modeli, hem maliyet hem de çok modalliğiyle sektördeki büyük dil modeli rekabetine yeni bir boyut kazandırıyor; bu, geliştiriciler ve işletmeler için önemli bir dönüşüm anlamına geliyor.",
+  "etiketler": [
+    "Meta",
+    "Muse Ember",
+    "AI agents",
+    "large language model",
+    "benchmark"
+  ],
+  "anilan_modeller": [
+    "Muse Ember",
+    "Claude Haiku 5.5",
+    "GPT-6 Luna",
+    "Muse Spark 1.3"
+  ],
+  "yorum_tr": "Muse Ember, düşük maliyetli ve çok modalli yapısıyla AI ajanlarının rutin işlerini daha ekonomik hâle getiriyor; ancak kodlama gibi uzmanlaşmış görevlerde hâlâ iyileştirme alanı bulunuyor. Bu denge, geliştiricilerin kullanım senaryolarına göre modeli seçerken maliyet‑performans değerlendirmesi yapmalarını gerektirecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Muse Ember",
+      "benchmark": "Artificial Analysis Intelligence Index",
+      "skor": 36,
+      "birim": "",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Muse Ember achieves a score of 36 on the Artificial Analysis Intelligence Index at a particularly low cost per task."
+    },
+    {
+      "model": "Muse Ember",
+      "benchmark": "FrontierCode 2.0-AA",
+      "skor": 27.2,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "In FrontierCode 2.0-AA, Muse Ember scored 27.2 percent, while Claude Haiku 5.5 scored 34.9 percent."
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/07/meta_logo-2.png",
+  "url": "https://the-decoder.com/meta-launches-muse-ember-a-small-ai-model-built-for-the-repetitive-work-agents-actually-do/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-09T19:41:51.000Z",
+  "slug": "meta-launches-muse-ember-a-small-ai-model-built-for-the-repe"
+}

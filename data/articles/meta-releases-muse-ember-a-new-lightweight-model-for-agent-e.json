@@ -1,0 +1,39 @@
+{
+  "baslik_tr": "Meta, hafif ve maliyet etkin AI modeli Muse Ember'ı duyurdu",
+  "ozet_tr": "Meta Superintelligence Lab, düşük maliyetli ve çok yönlü bir ajan yürütme modeli olan Muse Ember'ı tanıttı. Model, milyon başına 10 cent gibi çarpıcı bir fiyatla hem metin hem görsel hem ses girdilerini işleyebiliyor ve daha büyük Muse Wonder modeliyle birlikte ölçekli görevlerde kullanılmak üzere tasarlandı.",
+  "detayli_icerik_tr": "Meta Superintelligence Lab, Pazartesi günü yeni bir yapay zeka modeli olan Muse Ember'ı piyasaya sürdü. Laboratuvar, Ember'ı \"karmaşık akıl yürütme yürütme ve ajanların gün boyu tekrarladığı görevler: araç çağrıları, kodlama alt görevleri, yönlendirme, veri çıkarımı ve uzun belge ayrıştırma\" için tasarlandığını belirtti. Model, Meta'nın Muse serisinin dördüncü üyesi olarak Spark (Nisan), Glimmer (Ağustos) ve Wonder (Ekim) modellerinin ardından geliyor.\n\nEmber'ın en dikkat çeken özelliği maliyet verimliliği. Meta, modelin giriş token başına 0,10 dolar (milyon token başına 10 cent) maliyetle çalıştığını ve bu fiyatın Anthropic'in Haiku ve OpenAI'nin Luna gibi rakiplerinden daha düşük olduğunu vurguladı. Ayrıca DeepSeek V4.1 Flash ve GLM 5.3 Flash gibi açık kaynak alternatifleriyle de maliyet açısından rekabet edebildiği belirtildi.\n\nModel, tek bir modelle çoklu medya türlerini işleyebilecek şekilde eğitildi. Metin, görsel, ses, ekran görüntüsü, grafik, taranmış belge, sesli not, toplantı kaydı ve video gibi çeşitli girdileri doğrudan işleyebiliyor. Bu sayede bir müşteri destek ajanı gibi senaryolarda, daha ağır bir model (Muse Wonder) kuralları belirlerken, Ember bu kuralları on binlerce vaka üzerine uygulayarak hacmi yönetebiliyor.\n\nMeta, Muse Ember'ı büyük bir modelle birlikte bir ajan mimarisinde kullanmayı öneriyor: \"Muse Wonder planları, Muse Ember ise hacmi yönetir\" şeklinde bir iş bölümü öngörülüyor. Bu yaklaşım, yüksek hacimli ve düşük maliyetli görevlerde ölçeklenebilirlik sağlarken, aynı zamanda çoklu medya işleme yeteneği sayesinde geliştiricilere esnek bir araç sunuyor.",
+  "onemli_maddeler": [
+    "Muse Ember, giriş token başına sadece 10 cent maliyetle çalışıyor ve rakip modellerden daha ucuz.",
+    "Model, metin, görsel ve ses gibi çoklu medya türlerini tek bir çatı altında işleyebiliyor.",
+    "Ajan mimarisinde büyük bir model (Muse Wonder) ile birlikte çalışarak yüksek hacimli görevleri düşük maliyetle yürütüyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Meta'nın düşük maliyetli ve çok modelli bir ajan modeli sunması, hem bulut maliyetlerini düşürmek isteyen işletmeler hem de ölçeklenebilir AI çözümleri arayan geliştiriciler için sektörde önemli bir adım oluşturuyor.",
+  "etiketler": [
+    "Meta",
+    "Muse Ember",
+    "AI ajanları",
+    "çok modelli model",
+    "maliyet verimliliği"
+  ],
+  "anilan_modeller": [
+    "Muse Ember",
+    "Muse Wonder",
+    "Spark",
+    "Glimmer",
+    "Haiku",
+    "Luna",
+    "DeepSeek V4.1 Flash",
+    "GLM 5.3 Flash"
+  ],
+  "yorum_tr": "Muse Ember, düşük maliyetli ve çok modelli yapısı sayesinde büyük ölçekli AI ajan uygulamalarının ekonomik hâle gelmesini sağlayabilir; geliştiriciler, yüksek hacimli görevlerde daha hafif modelleri tercih ederek altyapı harcamalarını azaltabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://techcrunch.com/wp-content/uploads/2026/11/Blog-Header-Visual.png?resize=1200,675",
+  "url": "https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/",
+  "source": "TechCrunch AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-09T18:00:00.000Z",
+  "slug": "meta-releases-muse-ember-a-new-lightweight-model-for-agent-e"
+}

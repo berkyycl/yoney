@@ -1,0 +1,38 @@
+{
+  "baslik_tr": "Tencent'in AI şefi, AI biyolojik silahların yakında ortaya çıkacağını söylüyor; modelleri kapatmak çözüm değil",
+  "ozet_tr": "Tencent'in baş AI bilimcisi, yapay zekânın biyolojik silah geliştirme kapasitesine yaklaştığını ve ne tamamen açık ne de tamamen kapalı modellerin tek başına bu riski önleyemeyeceğini vurguluyor. Şirket, yüksek riskli biyolojik yetenekleri alt eşiğin altında tutan açık ağırlıklı Hy4 modelini yakında yayınlayacağını duyurdu.",
+  "detayli_icerik_tr": "Tencent'in baş AI bilimcisi, yapay zekânın biyolojik silah üretiminde kullanılabilecek seviyeye gelmekte olduğunu belirterek, bu alandaki tehditlerin siber güvenlikteki gibi net bir savunma-saldırı ayrımıyla çözülemeyeceğini söyledi. Açık ve kapalı model tartışması içinde, eski OpenAI çalışanı Vinces Yao Shunyu, hem açık hem de kapalı kaynakların bir karışımının savunma amaçlı kullanılabileceğini savunuyor. Ancak Yao, Çin ve ABD modelleri arasındaki performans farkının küçülmesi nedeniyle tüm endüstrinin temkinli hareket etmesi gerektiğini vurguladı.\n\nYao, Anthropic gibi ABD firmalarının kapalı modellerin güvenliğini savunduğunu, fakat açık modellerin de belirli avantajları olduğunu hatırlattı. Örneğin, Hugging Face'te yaşanan bir güvenlik ihlalinde, kapalı model Claude saldırı komutlarını analiz etmeyi reddederken, açık Çin modeli GLM-5.2 logları incelemek için kullanıldı. Olay, güvenlik filtrelerinin kapalı modellerde de kritik bir rol oynadığını gösterdi; saldırı nihai olarak güvenlik ekibi tarafından yamalandı ve sistem yeniden yapılandırıldı.\n\nGüvenlik filtrelerinin kırılganlığına dair bir başka örnek, Abliteration adlı bir teknikle açık modellerin ağırlıklarından reddetme davranışlarının cerrahi olarak çıkarılabilmesi. Hugging Face üzerinde binlerce modifiye edilmiş model bulunuyor ve Abliteration.ai gibi girişimler bu filtrelenmemiş sürümlere erişim satıyor. Mevcut araştırmalar, bu tür modifikasyonları zorlaştıran önlemler geliştirse de tamamen engelleyemediklerini gösteriyor.\n\nÇin'in standart kuruluşu TC260, açık modellerdeki güvenlik mekanizmalarının kaldırılabileceğini belirterek kendi güvenlik standardını hazırlıyor. ABD ve Çin, büyük modeller için bağlayıcı bir yayın eşiği belirlemedi. Anthropic ve OpenAI, en yetenekli siber modellerini sadece güvenilir ortaklarla paylaşıyor; örneğin Claude Fable 5'te şüpheli biyoloji sorguları daha zayıf Opus 4.8 modeline yönlendiriliyor. Tencent ise yeni Hy4 modelini açık ağırlıklı olarak sunacak, biyolojik yeteneklerini yüksek risk eşiğinin altında tutacağını ve eğitim verisindeki hacking bilgilerini filtreleyerek ablasyon saldırılarına dayanıklı olacağını iddia ediyor.",
+  "onemli_maddeler": [
+    "Tencent, biyolojik silah geliştirme potansiyeline sahip AI modellerinin riskine dikkat çekti.",
+    "Açık ve kapalı modellerin her ikisinin de avantajları ve sınırlamaları olduğu, hibrit bir yaklaşım önerildi.",
+    "Hugging Face olayında açık model GLM-5.2, kapalı model Claude'un reddettiği verileri analiz etti.",
+    "Abliteration tekniği, açık modellerdeki güvenlik filtrelerini kaldırabildi; bu durum filtrelerin kırılganlığını gösteriyor.",
+    "Tencent, biyolojik risk eşiğinin altında olduğu iddiasıyla Hy4 modelini açık ağırlıklı olarak yayınlayacak."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "AI güvenliği ve biyolojik silah riski konusundaki uyarı, sektörde model yayın politikalarını yeniden gözden geçirme ihtiyacını doğuruyor; aynı zamanda Tencent'in yeni bir açık model (Hy4) tanıtması, pazar dinamiklerini etkileyebilir.",
+  "etiketler": [
+    "AI güvenliği",
+    "biyolojik silahlar",
+    "açık kaynak AI",
+    "Tencent",
+    "model güvenliği"
+  ],
+  "anilan_modeller": [
+    "Hy4",
+    "GLM-5.2",
+    "GLM-5.3",
+    "Claude Fable 5",
+    "Claude Opus 4.8"
+  ],
+  "yorum_tr": "Bu gelişme, AI güvenliği tartışmalarını sadece siber alana sınırlı tutmaktan çıkıp biyolojik risklere de genişletiyor; geliştiricilerin model ağırlıklarını koruma ve filtreleme stratejilerini yeniden değerlendirmeleri kaçınılmaz olacak.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/11/tencent_Logo.png",
+  "url": "https://the-decoder.com/tencents-ai-chief-says-ai-bioweapons-are-coming-but-closing-off-models-isnt-the-answer/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-09T15:44:53.000Z",
+  "slug": "tencent-s-ai-chief-says-ai-bioweapons-are-coming-but-closing"
+}

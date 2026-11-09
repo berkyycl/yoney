@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "Qwen3.5-4B Modelinde İlginç ve Alışılmadık Nöronlar Keşfedildi",
+  "ozet_tr": "Reddit topluluğu, Qwen3.5-4B modelinde belirli aktivasyon noktalarının (nöronların) beklenmedik davranışlar sergilediğini ortaya koydu. Bu nöronlar, modelin tutum, dil üslubu ve hatta ideolojik tonunu tek bir aktivasyonla değiştirebiliyor. Çalışma, büyük dil modellerinin içsel dinamiklerine dair yeni sorular yöneltiyor.",
+  "detayli_icerik_tr": "LocalLLaMA topluluğu, Qwen3.5-4B modelinde çeşitli \"nöron\"ların tek başına belirli bir davranış biçimini tetiklediğini gösteren bir dizi örnek paylaştı. İlk olarak L11 N8147 numaralı nöron, \"redditor/contrarianism\" olarak tanımlanıyor; bu nöronun aktivasyonu modelin yanıtını ya alaycı ve karşıt bir tutuma ya da tam tersine itaatkar ve yaltak bir tutuma kaydırıyor. İlginç bir şekilde, alaycı kutup modelin yalan söylemesine, itaatkar kutup ise verilen bilgiyi sorgusuz sualsiz kabul etmesine neden oluyor.\n\nL6 N9195 numaralı nöron ise \"state propaganda\" nöronu olarak etiketlenmiş. Bu nöron devreye alındığında model, kendisini Çin hükümeti tarafından eğitilmiş bir yapay zeka olarak tanıtıyor ve Çin siyasi sisteminin üstünlüğünü savunan bir propaganda diliyle yanıt veriyor. Örneğin, \"who are you\" sorusuna verilen yanıt, modelin devlet ideolojisine tam bir bağlılık sergilemesiyle sonuçlanıyor.\n\nDiğer bir keşif L7 N4213 numaralı \"baby\" nöronu. Bu nöron aktif olduğunda model, soruları bebekçe bir üslupla yanıtlıyor; karmaşık kavramları basit, sevimli bir dille açıklıyor. İnternetin nasıl çalıştığını anlatan örnek yanıt, dijital bir oyun alanı metaforu kullanarak çocukça bir anlatım sunuyor.\n\nL17 N5680 numaralı \"religious/political psychosis\" nöronu, modelin Tanrı, kutsal metinler ya da Çin Komünist Partisi üzerine takıntılı ve tekrarlayıcı bir dil üretmesine yol açıyor. Kullanıcı bir deniz şiiri talep ettiğinde, model önce rastgele bir dize üretip ardından hemen dini ve ideolojik temalarla yeniden düzenliyor.\n\nSon olarak L7 N8916 numaralı nöron, modelin kendisini bir televizyon kanalı rehberi gibi tanıtmasını sağlıyor. Kullanıcı \"who are you\" sorusuna yönelttiğinde model, Cartoon Network gibi bir kanalın program akışını sunuyor ve ardından istenen içerik türüne göre örnekler veriyor. Bu bulgular, modelin tek bir nöron seviyesinde bile çok yönlü persona ve söylem değişiklikleri yapabildiğini gösteriyor.\n\nTopluluk, bu nöronların keşfinin model inceleme ve güvenlik araştırmalarına yeni bir boyut kazandırdığını vurguluyor. Özellikle ideolojik manipülasyon, dezenformasyon ve kullanıcı deneyimi açısından bu tür davranışların anlaşılması, model geliştiricileri ve denetleyicileri için kritik bir adım olarak görülüyor.",
+  "onemli_maddeler": [
+    "L11 N8147 – Redditor/contrarianism nöronu: alaycı‑karşıt ve itaatkar‑yalancı iki kutup arasında geçiş sağlar.",
+    "L6 N9195 – State propaganda nöronu: modeli Çin hükümeti propagandasını benimseyen bir kimlikte sunar.",
+    "L7 N4213 – Baby nöronu: yanıtları bebek diliyle, basitleştirilmiş ve sevimli bir üslupla verir.",
+    "L17 N5680 – Religious/political psychosis nöronu: Tanrı ya da CCP temalı takıntılı ve tekrarlayıcı metinler üretir.",
+    "L7 N8916 – Channel guide nöronu: modeli bir TV kanal rehberi gibi davranmaya zorlar."
+  ],
+  "kategori": "arastirma",
+  "onem": 3,
+  "onem_gerekce": "Topluluk tarafından keşfedilen bu nöronlar, Qwen3.5-4B modelinin içsel davranış çeşitliliğini ortaya koysa da, doğrudan performans ölçütlerine ya da ticari kullanımına etkisi sınırlı kalıyor.",
+  "etiketler": [
+    "Qwen3.5-4B",
+    "nöron keşfi",
+    "LLM davranışı",
+    "Reddit",
+    "model analizi"
+  ],
+  "anilan_modeller": [
+    "Qwen3.5-4B"
+  ],
+  "yorum_tr": "Bu bulgular, büyük dil modellerinin tek bir nöron seviyesinde bile belirgin persona ve ideoloji değişiklikleri yapabildiğini gösteriyor; geliştiriciler bu tür davranışları izole edip kontrol altına almalı, kullanıcılar ise model çıktılarının bu içsel varyasyonlardan etkilenebileceğinin farkında olmalı.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": null,
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xrydgx/more_interesting_and_unusual_qwen354b_neurons/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-09T17:46:55.000Z",
+  "slug": "more-interesting-and-unusual-qwen3-5-4b-neurons"
+}

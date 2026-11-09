@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "Google, Gizli AI İş Yükleri İçin TPU 8tx ve Bellek Yoğun İş Yükleri İçin TPU 8i Max'i Tanıttı",
+  "ozet_tr": "Google, sekizinci nesil Tensor Processing Unit (TPU) serisini iki yeni sistemle genişletti: gizli AI iş yüklerine odaklanan TPU 8tx ve büyük bellek gereksinimi olan ajanlar için tasarlanan TPU 8i Max. Yeni konfigürasyonlar mevcut silikon üzerine inşa edilerek paketleme, bellek ve güvenlik özelliklerinde esneklik sağlıyor.",
+  "detayli_icerik_tr": "Google, sekizinci nesil TPU portföyüne iki yeni sistem ekleyerek gizli AI iş yükleri ve bellek yoğun ajanlar için özel çözümler sundu. TPU 8tx, TPU 8t çipini AMD CPU hostlarıyla birleştirerek donanım seviyesinde gizli hesaplama yeteneği kazandırıyor; bu sayede veri ve model ağırlıkları işleme sırasında da şifreli kalıyor. Sistem, Boardfly ağını kullanarak TPU 8t performansının iki katına kadar çıkış sağlarken güvenlik özellikleri neredeyse sıfır performans kaybı getiriyor.\n\nTPU 8i Max ise iki TPU 8i çipini tek bir pakette birleştirerek SRAM, yüksek bant genişliğine sahip bellek (HBM) ve hesaplama gücünü ikiye katlıyor. Google, bu konfigürasyonun büyük kod tabanları, uzun videolar ve milyon token bağlamları gibi bellek yoğun görevlerde iki kat daha fazla compute ve bant genişliği sunduğunu belirtiyor. Mevcut TPU 8i'nin 288 GB HBM, 384 MB SRAM ve 8 601 GB/s bellek bant genişliği değerlerine göre, Max versiyonunda SRAM ve bant genişliği iki katına çıkıyor.\n\nDonanım genişlemesi, yazılım tarafında da destekleniyor. TorchTPU, PyTorch tabanlı modellerin TPU üzerinde doğrudan çalıştırılmasını sağlarken vLLM ve SGLang için özel TPU arka uçları sunuyor. Ayrıca, Claude Code, Cursor ve Google Antigravity gibi araçlarla entegrasyon sağlayan bir TPU ajan paketi ön izleme aşamasında bulunuyor. XLA Serving Engine ise düşük gecikmeli C++ çalışma zamanı üzerinden modellerin TPU, GPU ve CPU'larda servis edilmesini mümkün kılıyor.\n\nOrkestrasyon ve yönetim açısından Google, Cloud Pathways'ı GKE üzerinde genel kullanıma sundu. Bu hizmet, Gemini'nin arkasındaki çalışma zamanını müşterilere getirerek birden fazla TPU dilimini tek bir kontrolcü üzerinden yönetmeye olanak tanıyor. Dinamik dilimleme özelliği ise optik devre anahtarlama ile TPU kaynaklarını daha büyük konfigürasyonlara birleştiriyor ya da daha küçük iş yüklerine bölüyor; bu sayede iş başlatma süresi beş kat, arıza kurtarma süresi ise 4,5 kat hızlanıyor.",
+  "onemli_maddeler": [
+    "TPU 8tx, donanım seviyesinde gizli hesaplama sağlayarak veri ve model ağırlıklarını işleme sırasında da korur.",
+    "TPU 8i Max, iki çipli paketle SRAM ve bellek bant genişliğini ikiye katlayarak büyük bağlamlı görevlerde performans artışı sunar.",
+    "TorchTPU ve XLA Serving Engine gibi yeni yazılım araçları, TPU'ların PyTorch ve düşük gecikmeli servis senaryolarına entegrasyonunu kolaylaştırır."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Yeni TPU konfigürasyonları, gizli hesaplama ve büyük bağlamlı model çalıştırma gibi kritik AI senaryolarını destekleyerek Google Cloud ve veri merkezi müşterileri için önemli performans ve güvenlik iyileştirmeleri sunuyor.",
+  "etiketler": [
+    "TPU",
+    "gizli hesaplama",
+    "AI donanımı",
+    "Google Cloud",
+    "makine öğrenimi"
+  ],
+  "anilan_modeller": [
+    "TPU 8t",
+    "TPU 8i",
+    "TPU 8tx",
+    "TPU 8i Max"
+  ],
+  "yorum_tr": "Bu duyuru, gizli AI iş yükleri ve büyük bellek gereksinimi olan uygulamalar için daha güvenli ve yüksek performanslı bir altyapı sunarak hem kurumsal hem de araştırma odaklı kullanıcıların ihtiyaçlarını karşılamada önemli bir adım olarak görülüyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/11/8th-Gen-range_samesize.webp",
+  "url": "https://www.testingcatalog.com/google-adds-new-tpu-8tx-and-tpu-8i-max-for-ai-workloads/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-09T13:11:52.000Z",
+  "slug": "google-adds-new-tpu-8tx-and-tpu-8i-max-for-ai-workloads"
+}

@@ -1,0 +1,51 @@
+{
+  "baslik_tr": "Claude Fable 5.2, Gerçek Dünya Elektronik Tasarımında PCB ve Enkapsül Üretimini Başarıyla Gerçekleştirdi",
+  "ozet_tr": "Anthropic, Claude Fable 5.2 modelini Diode Computers iş birliğiyle üç gerçek cihazın (hoparlör telefon, ses asistanı hub'ı ve taşınabilir sanal evcil hayvan) tasarımından prototip üretimine kadar yönetti. Model, geometrik yerleşim, parça yönlendirme ve üretim kısıtlamalarını otomatik olarak hesaba katarak tamamen çalışan prototipler ortaya koydu.",
+  "detayli_icerik_tr": "Geçtiğimiz yıl Claude'un temel elektronik devre tasarımı yetenekleri sınırlıydı; devre kartı yerleşimi ve bileşen uyumu konusunda güvenilir sonuçlar veremiyordu. Bu eksikliği gidermek amacıyla Anthropic, Diode Computers ile ortak çalışarak Claude Fable 5.2'yi eğitti ve modelin geometrik problem çözme yeteneğini test etti. Model, bir USB‑C üzerinden bilgisayara bağlanan bir hoparlör telefon, bir ev içi ses asistanı hub'ı ve bir bataryalı taşınabilir sanal evcil hayvan gibi üç farklı cihazın tüm tasarım aşamalarını (şematik çizim, PCB yerleşimi, 3D kabin tasarımı, firmware kodlaması ve parça listesi) minimal bir prompt ile tamamladı.\n\nClaude, her tasarımda bileşenleri optimal konumlandırdı, yüksek hızlı ve yüksek akım sinyallerini önce yönlendirdi, izleme uzunluklarını eşitledi ve gürültüye duyarlı hatları izole etti. Örneğin ses asistanı hub'ında USB ve Ethernet izlerini aynı uzunlukta tutarak sinyal bütünlüğünü sağladı ve güç kaynağı düzenlemelerini verimlilik artırıcı şekilde konumlandırdı. Model, tasarım sürecinde kendi hatalarını fark edip, pin atamalarını değiştirerek katman geçişlerini azaltma ve izleri tamamen yeniden çizme gibi otomatik revizyonlar yaptı.\n\nModelin performansı, Diode'in iç benchmark'ı PCB Gym'de %69 başarı skoru (önceki Fable 5'in %25'i) ve halka açık BenchCAD 2.1 testinde %83.5 skor (Fable 5.1'in neredeyse yarısı) elde ederek ölçüldü. Bu sonuçlar, Claude'un karmaşık PCB yerleşimlerini ve 3D parça yeniden oluşturma yeteneklerini önceki sürümlerden çok daha yüksek bir seviyeye taşıdığını gösteriyor. Ayrıca Claude, tasarım‑üretim (DFM) ve parça tedarik kontrollerini de kendi başına yürüttü; örneğin ses asistanı hub'ındaki ince lehim maskesi bölgelerini genişleterek üretim hatalarını önledi.\n\nDiode, Claude'un tasarım dosyalarından doğrudan üretim yapabildiğini ve prototiplerin haftalarca sorunsuz çalıştığını belirtti. Bu, geleneksel mühendislik döngülerinde sıkça yaşanan çoklu revizyon ve fabrika geri bildirimlerinin ortadan kalkması anlamına geliyor ve yapay zekâ destekli donanım geliştirme sürecinin pratikte ne kadar ilerlediğine dair güçlü bir kanıt sunuyor.",
+  "onemli_maddeler": [
+    "Claude Fable 5.2, PCB yerleşim ve iz yönlendirmesinde %69 (PCB Gym) ve %83.5 (BenchCAD 2.1) skorlarla önceki sürümlerden iki kat daha iyi performans gösterdi.",
+    "Model, tasarım sürecinde kendi hatalarını otomatik olarak revize ederek katman geçişlerini azaltıp izleri yeniden çizdi.",
+    "Claude, DFM ve parça tedarik kontrollerini kendi başına yaparak üretim hatalarını önledi ve prototipleri doğrudan üretime gönderdi."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Claude Fable 5.2'nin elektronik tasarım yeteneklerindeki büyük sıçrama, AI‑destekli donanım mühendisliğinde yeni bir kilometre taşı oluşturuyor ve sektördeki prototipleme süreçlerini kökten değiştirme potansiyeline sahip.",
+  "etiketler": [
+    "Claude",
+    "Fable 5.2",
+    "PCB tasarımı",
+    "AI mühendislik",
+    "Diode Computers"
+  ],
+  "anilan_modeller": [
+    "Claude Fable 5.2"
+  ],
+  "yorum_tr": "Claude Fable 5.2'nin gerçek dünya elektronik tasarımındaki başarısı, mühendislerin prototipleme süresini kısaltıp maliyetleri düşürürken, AI tabanlı tasarım asistanlarının güvenilirliğini artırıyor. Bu gelişme, özellikle küçük ölçekli donanım girişimcileri ve büyük üretim firmaları için yeni iş akışları yaratabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Claude Fable 5.2",
+      "benchmark": "PCB Gym",
+      "skor": 69,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Fable 5.2 scored 69% on the benchmark, compared with 25% for Fable 5"
+    },
+    {
+      "model": "Claude Fable 5.2",
+      "benchmark": "BenchCAD 2.1",
+      "skor": 83.5,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Fable 5.2 scored 83.5%, nearly double the score of its predecessor, Claude Fable 5.1"
+    }
+  ],
+  "gorsel_url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/b953cc611ebe78f0b84e996dd54a614efd38b3f4-2000x1125.jpg",
+  "url": "https://www.anthropic.com/research/claude-electronics-design",
+  "source": "Anthropic Research",
+  "sourceTier": "resmi",
+  "date": "2026-11-09T00:00:00.000Z",
+  "slug": "testing-claude-on-real-world-electronics-design"
+}

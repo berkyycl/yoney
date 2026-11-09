@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "NVIDIA ve Elith, Japon Finans Sektörü İçin 9 Milyon Kişilik Sentetik Veri Seti Nemotron-Personas-Finance-Japan'ı Açtı",
+  "ozet_tr": "NVIDIA ve Elith, Japonya'nın resmi istatistikleriyle harmanlanmış 9 milyon sentetik persona içeren Nemotron-Personas-Finance-Japan veri setini duyurdu. Finansal senaryoları gerçek demografik ve hanehalkı varlık dağılımlarıyla yansıtacak bu açık veri, gizlilik risklerini ortadan kaldırarak yerel AI geliştirmelerini hızlandırmayı hedefliyor.",
+  "detayli_icerik_tr": "Finans sektöründe gerçek müşteri verilerinin kullanımı, sıkı gizlilik düzenlemeleri ve uyum gereksinimleri nedeniyle büyük engellerle karşılaşıyor. Bu bağlamda NVIDIA ve Elith, gerçek verilerin risklerini taşıyan ancak demografik, hanehalkı yapısı ve varlık durumlarını yansıtan sentetik bir veri seti sunarak, Japon finansal AI uygulamalarının geliştirilmesine yeni bir zemin hazırlıyor.\n\nNemotron-Personas-Finance-Japan, Japonya'nın resmi nüfus ve işgücü istatistikleriyle birlikte hanehalkı finans ve finansal okuryazarlık verilerini birleştiriyor. Toplam 9 milyon persona (1 milyon kayıt x 9 persona) 50 alanda detaylandırılmış; bunlar arasında 9 persona alanı, 11 persona özelliği ve 30 bağlamsal alan bulunuyor. Veri seti yaklaşık 1,5 milyar token içeriyor ve 950 bin benzersiz isim ile 1 600'den fazla meslek kategorisini kapsıyor.\n\nVeri setinin üretiminde NVIDIA'nın NeMo Data Designer platformu ve NeMo SDG-PGMs (probabilistik grafiksel model) kullanıldı; Japonca metin üretimi için ise gemma‑4‑31B‑it modeli tercih edildi. Geliştirme sürecinde Sompo Japan, Tokio Marine, Bank of Fukuoka, Mizuho Financial Group ve Meiji Yasuda gibi önde gelen finans kurumlarıyla yapılan iş birliği, veri setinin gerçek finansal kullanım senaryolarına uygunluğunu artırdı.\n\nCC BY 4.0 lisansı altında hem ticari hem de ticari olmayan amaçlarla kullanılabilen bu veri seti, çoklu tur diyalog üretimi, alan‑özel AI asistanları, önyargı ve adalet testleri gibi çeşitli uygulamalara hizmet verecek. Ayrıca, aynı gün yayınlanan Nemotron-PII-Japan veri setiyle birlikte, sentetik müşteri verileriyle çalışan sistemlerin gizlilik korumasını test etmek mümkün olacak.",
+  "onemli_maddeler": [
+    "9 milyon sentetik persona, 50 alan ve 1,5 milyar token ile Japonya'nın demografik ve finansal çeşitliliğini kapsıyor.",
+    "NeMo Data Designer ve NeMo SDG-PGMs kullanılarak oluşturulan veri seti, gizlilik risklerini tamamen ortadan kaldırıyor.",
+    "Finans kurumlarıyla ortak geliştirme, veri setinin gerçek finansal senaryolara uygunluğunu ve sektörel kabulünü artırıyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Finansal AI geliştirmelerinde veri erişimi sınırlı olduğundan, büyük ölçekli ve gizlilik‑güvenli bir sentetik veri seti sektörel inovasyonu ve araştırma faaliyetlerini önemli ölçüde hızlandıracak.",
+  "etiketler": [
+    "sentetik veri",
+    "finans AI",
+    "Japonya",
+    "NVIDIA",
+    "NeMo"
+  ],
+  "anilan_modeller": [
+    "NeMo SDG-PGMs",
+    "gemma-4-31B-it",
+    "Nemotron-Personas-Japan",
+    "Nemotron-PII-Japan"
+  ],
+  "yorum_tr": "Bu veri seti, Japon finansal AI ekosisteminde veri kıtlığını ortadan kaldırarak hem büyük kurumların hem de girişimlerin daha güvenli ve kültürel açıdan uyumlu çözümler üretmesini sağlayacak.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://cdn-uploads.huggingface.co/production/uploads/604ad59e2fad27aca4515dab/-hyd03JaQoRhMbmlw9-uJ.jpeg",
+  "url": "https://huggingface.co/blog/nvidia/nemotron-personas-finance-japan",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-11-09T15:05:57.000Z",
+  "slug": "nemotron-personas-finance-japan-a-synthetic-dataset-capturin"
+}

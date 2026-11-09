@@ -1,0 +1,102 @@
+{
+  "baslik_tr": "Claude Fable 5.2 ve Mythos 5.2, Anthropic'in IPO öncesi AI liderliğini pekiştiriyor",
+  "ozet_tr": "Anthropic, teknik görevler için tasarlanmış iki yeni amiral gemisi modeli Claude Fable 5.2 ve Claude Mythos 5.2'yi tanıttı. Model, Artificial Analysis Intelligence Index v5'te 65 puanla birinci sırada yer alarak Gemini 4 Carbon ve önceki sürümünden önemli farklar gösterdi. Şirket, bu modelleri IPO öncesi pazara sunarak rekabet avantajını güçlendirmeyi hedefliyor.",
+  "detayli_icerik_tr": "Anthropic, 9 Kasım 2026 tarihinde Claude Fable 5.2 ve Claude Mythos 5.2 adlı iki yeni modelini duyurdu. Her iki model de aynı temel mimariye sahip ancak erişim ve güvenlik kısıtlamaları bakımından farklılık gösteriyor. Fable 5.2, tüm kullanıcılara açık ve siber güvenlik ile biyoloji alanındaki riskli görevleri engelleyen korumalar içerirken, Mythos 5.2 bu kısıtlamaları kaldırarak yalnızca Anthropic'in Doğrulama Programları aracılığıyla kabul edilen kuruluşlara sunuluyor. Fiyatlandırma ise giriş seviyesi için giriş token başına 8 $, çıkış token başına 40 $ olarak belirlenmiş; önceki sürümlere göre bir indirim söz konusu.\n\nModel performansları, Artificial Analysis tarafından yürütülen bir dizi benchmark testinde öne çıktı. En yüksek hesaplama seviyesinde Intelligence Index v5'te Fable 5.2 65 puan alarak beş puan farkla Gemini 4 Carbon ve on beş puan farkla Fable 5.1'i geride bıraktı. Ayrıca HLE‑Diamond testinde %80, Terminal‑Bench‑Science testinde %73 ve FrontierCode 2.0 testinde %49,1 başarı sağladı. Çok adımlı bilgi işi benchmarku AA‑Briefcase'te 1.785 Elo puan elde ederek Claude Sonnet 5.5 ve Opus 5.5'in yakınında konumlandı.\n\nGüvenlik alanında Mythos 5.2, Anthropic'in iç testinde CVE Rediscovery senaryosunda Opus 5.5 ve önceki Mythos sürümünden sırasıyla %10,2 ve %14,4 daha fazla güvenlik açığı tespit etti. 1.829 CVE üzerinden yapılan ölçümde, modelin bulduğu açıkların bir kısmı diğer önde gelen modeller tarafından tamamen gözden kaçırıldı. Bu sonuçlar, Mythos 5.2'nin siber güvenlik araştırmaları ve savunma uygulamaları için güçlü bir araç olduğunu gösteriyor.\n\nModelin teknik yetenekleri aynı zamanda matematiksel kanıt üretiminde de dikkat çekti. Claude Fable 5.2, yaklaşık 1.000 ajan kullanarak Fermat'ın Son Teoremi'ni Lean programlama diliyle tam olarak formalize etti ve bu süreci 30 saat içinde tamamladı. Aynı koşullarda Opus 5.5 sadece %26 ilerleme kaydedebildi. Bu başarı, modelin karmaşık, çok aşamalı görevlerde insan müdahalesi olmadan iş birliği yapabilme kapasitesini ortaya koyuyor.",
+  "onemli_maddeler": [
+    "Claude Fable 5.2, Artificial Analysis Intelligence Index v5'te 65 puanla birinci sırada yer alıyor.",
+    "Mythos 5.2, CVE Rediscovery testinde Opus 5.5'ten %10,2 daha fazla güvenlik açığı tespit etti.",
+    "Fable 5.2, Fermat'ın Son Teoremi'ni 30 saatte tam olarak formalize ederek Opus 5.5'i geride bıraktı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "IPO öncesi piyasaya sürülen iki yeni amiral gemisi model, benchmark sonuçlarıyla rakiplerini geride bırakarak sektördeki liderliğini pekiştiriyor ve yatırımcı güvenini artırıyor.",
+  "etiketler": [
+    "Anthropic",
+    "Claude Fable 5.2",
+    "Claude Mythos 5.2",
+    "AI benchmark",
+    "IPO"
+  ],
+  "anilan_modeller": [
+    "Claude Fable 5.2",
+    "Claude Mythos 5.2",
+    "Claude Opus 5.5",
+    "Gemini 4 Carbon",
+    "Claude Sonnet 5.5",
+    "GPT-6 Astra",
+    "Kimi K3.1 Pro"
+  ],
+  "yorum_tr": "Bu modeller, yüksek performanslı teknik görevlerdeki üstünlükleriyle Anthropic'in pazar konumunu güçlendirirken, geliştiricilere daha hızlı ve güvenli bir AI altyapısı sunuyor. Özellikle güvenlik ve bilimsel araştırma alanlarındaki iyileştirmeler, kurumsal kullanıcıların tercihinde belirleyici olabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Claude Fable 5.2",
+      "benchmark": "Artificial Analysis Intelligence Index v5 (high compute tier)",
+      "skor": 65,
+      "birim": "points",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "high compute tier",
+      "kaynak_metinden_alinti": "Fable 5.2 ranks first with 65 points on the Artificial Analysis Intelligence Index v5"
+    },
+    {
+      "model": "Claude Fable 5.2",
+      "benchmark": "HLE-Diamond",
+      "skor": 80,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "It hits 80 percent on HLE-Diamond"
+    },
+    {
+      "model": "Claude Fable 5.2",
+      "benchmark": "Terminal-Bench-Science",
+      "skor": 73,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "73 percent on Terminal-Bench-Science"
+    },
+    {
+      "model": "Claude Fable 5.2",
+      "benchmark": "FrontierCode 2.0",
+      "skor": 49.1,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "49.1% on FrontierCode 2.0"
+    },
+    {
+      "model": "Claude Fable 5.2",
+      "benchmark": "AA-Briefcase",
+      "skor": 1785,
+      "birim": "Elo",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "It reaches 1,785 Elo on AA-Briefcase"
+    },
+    {
+      "model": "Claude Mythos 5.2",
+      "benchmark": "CVE Rediscovery (vulnerabilities found)",
+      "skor": 10.2,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "more than Opus 5.5",
+      "kaynak_metinden_alinti": "Mythos 5.2 found 10.2 percent more vulnerabilities than Opus 5.5"
+    },
+    {
+      "model": "Claude Fable 5.2",
+      "benchmark": "Terminal-Bench 4.0",
+      "skor": 60,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "On Terminal-Bench 4.0, it scores 60 percent, tied with Opus 5.5"
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/11/fable_52_sand.png",
+  "url": "https://the-decoder.com/claude-fable-5-2-and-mythos-5-2-cement-anthropics-ai-lead-just-before-its-ipo/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-09T21:15:23.000Z",
+  "slug": "claude-fable-5-2-and-mythos-5-2-cement-anthropic-s-ai-lead-j"
+}

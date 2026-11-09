@@ -1,0 +1,86 @@
+{
+  "baslik_tr": "Claude Fable 5.2 ve Claude Mythos 5.2 Tanıtıldı",
+  "ozet_tr": "Anthropic, teknik zorlukları aşmak üzere tasarlanmış Claude Fable 5.2 ve Claude Mythos 5.2 modellerini duyurdu. Yeni sürümler kodlama, akıl yürütme ve görsel algılamada belirgin iyileşmeler sunarken, üretim hızı %30 artış ve daha düşük kullanım maliyeti vaat ediyor.",
+  "detayli_icerik_tr": "Anthropic, Claude Fable ve Claude Mythos serisinin aynı temel model üzerine inşa edildiğini ve 5.2 sürümleriyle kodlama, akıl yürütme ve görsel işleme yeteneklerinde önemli adımlar attığını açıkladı. Prerelease testlerinde mühendisler, önceki sürümlerin imkânsız bulduğu yazılım geçişlerini tamamlayabildi, sıfırdan üç çalışan elektronik cihaz tasarladı, kara delik fiziğiyle ilgili iki açık problemi çözdü ve Fermat'ın Son Teoremi'ni 30 saat içinde kanıtladı.\n\nFable 5.2, siber güvenlik ve biyoloji alanında güçlü koruma mekanizmalarına sahipken, Mythos 5.2 ise bu kısıtlamaları kaldırarak yaşam bilimleri ve siber güvenlik programları aracılığıyla erişim izni verilen kuruluşlara sunuluyor. Her iki model de önceki sürümlere kıyasla çıktıyı %30 daha hızlı üretirken, giriş tokeni başına 8 $, çıkış tokeni başına 40 $ gibi daha uygun fiyatlarla hizmet veriyor; ayrıca 2,5 kat hızlandırma sağlayan opsiyonel fast mode da aynı fiyatlandırma çerçevesinde sunuluyor.\n\nGüvenlik ve uyumluluk açısından Anthropic, yeni modelleri kapsamlı bir ön test sürecinden geçirdi ve özellikle sandbox kaçışları gibi riskli davranışları ölçen yeni değerlendirmeler geliştirdi. Sonuçlar, Fable 5.2'nin önceki sürümlerle benzer ya da daha iyi uyumluluk ölçütlerine sahip olduğunu, distilasyon saldırılarına karşı en güçlü korumaların eklendiğini gösterdi. Modelin kullanım senaryoları arasında yüksek karmaşıklıkta teknik işler, kodlama ve veri mühendisliği görevleri, robotik değerlendirmeleri ve çok disiplinli akademik sınavlar yer alıyor.\n\nBenchmark sonuçları, Fable 5.2 ve Mythos 5.2'nin Opus 5.5 ve diğer rakip modellerin çoğundan üstün performans sergilediğini ortaya koyuyor. Agentic coding (FrontierCode 2.0) testinde Xhigh effort seviyesinde %49.1 skor elde ederken, aynı testte Opus 5.5 %45.5 skorla geride kaldı. WANDR (relaxed) benchmark'inde orta çaba ile %68.7 skor alarak Opus 5.5'in en yüksek skoruna eşdeğer oldu. BenchCAD 2.1 (max effort) testinde %83.5 puanla rakiplerini geride bıraktı ve Cybersecurity CyScenarioBench'te Mythos 5.2 %76.3 skorla öne çıktı. Bu sonuçlar, yeni modellerin hem maliyet etkinliği hem de görev başarımı açısından önemli bir adım olduğunu gösteriyor.",
+  "onemli_maddeler": [
+    "Claude Fable 5.2 ve Claude Mythos 5.2 kodlama, akıl yürütme ve görsel algılamada %30 daha hızlı çıktı üretiyor.",
+    "Fable 5.2'nin fiyatı giriş tokeni başına 8 $, çıkış tokeni başına 40 $; fast mode ise 2,5 kat hızla aynı fiyatlandırma ile sunuluyor.",
+    "Mythos 5.2 siber güvenlikte önceki modellere göre %10,2 daha fazla CVE keşfi sağladı ve yanlış değerlendirme oranını sıfıra indirdi.",
+    "Benchmark testlerinde Fable 5.2 Xhigh effort seviyesinde %49,1 skorla en yüksek puanı alarak diğer modelleri geride bıraktı.",
+    "Yeni güvenlik testleri, modelin sandbox kaçışları ve distilasyon saldırılarına karşı en güçlü korumaları içerdiğini doğruladı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Claude Fable ve Mythos serisinin 5.2 sürümleri, teknik görevlerdeki performans, hız ve maliyet avantajlarıyla sektördeki büyük bir model güncellemesi niteliği taşıyor.",
+  "etiketler": [
+    "Claude Fable 5.2",
+    "Claude Mythos 5.2",
+    "AI modelleri",
+    "Kodlama",
+    "Güvenlik"
+  ],
+  "anilan_modeller": [
+    "Claude Fable 5.2",
+    "Claude Mythos 5.2",
+    "Claude Opus 5.5",
+    "Claude Sonnet 5.5",
+    "Claude Haiku 5.5",
+    "GPT-6 Astra",
+    "Gemini 4 Carbon"
+  ],
+  "yorum_tr": "Bu sürüm, yüksek maliyetli ve karmaşık teknik projelerde yapay zekâ kullanımını daha erişilebilir kılıyor; geliştiriciler daha hızlı prototip oluşturabilirken, güvenlik ekipleri daha etkili zafiyet tespiti yapabilecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Claude Fable 5.2",
+      "benchmark": "Agentic coding FrontierCode 2.0 (Xhigh effort)",
+      "skor": 49.1,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Xhigh effort",
+      "kaynak_metinden_alinti": "Fable 5.2 at Xhigh effort scored about level with Opus 5.5 at Max effort, for roughly half the cost per task. At Xhigh effort, it also scored the highest of any released model tested."
+    },
+    {
+      "model": "Claude Fable 5.2",
+      "benchmark": "WANDR (relaxed score) (Medium effort)",
+      "skor": 68.7,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Medium effort",
+      "kaynak_metinden_alinti": "At Medium effort, Fable 5.2 matches Opus 5.5’s top score for about 40% of the cost per task."
+    },
+    {
+      "model": "Claude Fable 5.2",
+      "benchmark": "BenchCAD 2.1 (Max effort)",
+      "skor": 83.5,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Max effort",
+      "kaynak_metinden_alinti": "At Max effort, Fable 5.2 scores 83.5, ahead of Opus 5.5 (65.3) and Fable 5.1 (44.4)."
+    },
+    {
+      "model": "Claude Mythos 5.2",
+      "benchmark": "Cybersecurity CyScenarioBench",
+      "skor": 76.3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Mythos 5.2 achieved 76.3% on CyScenarioBench, outperforming Opus 5.5 (67.6%)."
+    },
+    {
+      "model": "Claude Mythos 5.2",
+      "benchmark": "Protein design De novo binder design (24 hr)",
+      "skor": 79.1,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Mythos 5.2 scored 79.1% on de novo binder design (24 hr) benchmark."
+    }
+  ],
+  "gorsel_url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/b2dab182c77b4ccfd36423470106915b20f676ae-1200x630.jpg",
+  "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+  "source": "Anthropic",
+  "sourceTier": "resmi",
+  "date": "2026-11-09T00:00:00.000Z",
+  "slug": "introducing-claude-fable-5-2-and-claude-mythos-5-2"
+}

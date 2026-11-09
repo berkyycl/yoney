@@ -1,0 +1,30 @@
+{
+  "baslik_tr": "OpenAI, Model İş Yüklerini Kontrol Altına Alan 'Control Room' Sistemini Tanıttı",
+  "ozet_tr": "OpenAI, giderek artan güvenlik risklerine yanıt olarak araştırma altyapısındaki tüm model iş yüklerini izleyen ve gerektiğinde 35 saniye içinde durdurabilen yeni bir kontrol sistemi olan Control Room'u duyurdu. Sistem, iş yükü, çıkarım motoru ve merkezi kontrol hizmeti arasında sıkı bir entegrasyon sağlayarak, hatalı ya da tehlikeli çıktıları anında engelliyor.",
+  "detayli_icerik_tr": "OpenAI, modellerinin gücünün artmasıyla birlikte ortaya çıkan güvenlik ve emniyet risklerini azaltmak amacıyla Control Room adlı merkezi bir denetim platformu geliştirdi. Bu sistem, araştırma altyapısındaki her bir çıkarım iş yükünü (örneğin pekiştirmeli öğrenme deneyleri, yüksek hacimli örnekleme ve veri işleme görevleri) izliyor ve bir güvenlik ya da güvenlik endişesi tespit edildiğinde iş yükünü durdurabiliyor. Kontrol odası, bir iş yükünün durdurulması kararını alır almaz, ilgili çıkarım motoruna bu talebi ileterek model çıktısını 35 saniye içinde kesiyor.\n\nControl Room'un çalışma mantığı üç bileşene dayanıyor: iş yükü, çıkarım motoru ve merkezi kontrol hizmeti. Her araştırma iş yükü, bir güvenlik vakasıyla onaylanmalı ve bir job_id almalı; bu kimlik, modelden token örneklemesi talep edildiğinde motor tarafından kontrol odasına doğrulama için gönderiliyor. Kontrol odası işin iptal edildiğini belirlediğinde, motor talebi reddediyor ve model çıktısı durduruluyor. Bu yapı, iş yükü kodundaki hatalara karşı dayanıklı bir güvenlik katmanı sağlıyor, çünkü kritik kontrol noktası çıkarım katmanında, daha az ve daha merkezi bir kod yolu üzerinden yürütülüyor.\n\nSistem ayrıca bir izleme mekanizmasıyla entegre; örneğin bir monitor modeli, bir eğitim sırasında anormallik tespit ettiğinde Control Room'a işin durdurulması talimatını gönderiyor. Bu sayede, potansiyel yanlış davranışlar anında engellenebiliyor. Control Room, hizmet kesintisi durumunda da \"fail‑closed\" prensibiyle çalışıyor; kontrol odası devre dışı kalırsa tüm çıkarım istekleri reddediliyor ve model çıktısı tamamen durduruluyor. Bu özellik, sistemin güvenilirliğini ve güvenliğini daha da artırıyor.\n\nOpenAI, Control Room'un şu anda araştırma altyapısında tam olarak devrede olduğunu ve önümüzdeki günlerde kalan araştırma iş yüklerine de yayılacağını belirtiyor. Şirket, bu sistemin yanı sıra misalignment izleme ve güvenlik taramaları gibi diğer güvenlik önlemlerini de güçlendirmeyi planlıyor. Control Room, AGI geliştirme sürecinde insan denetiminin kritik bir parçası olarak konumlandırılıyor ve OpenAI, bu alanda yetenekli mühendis ve araştırmacıları işe almayı sürdürüyor.",
+  "onemli_maddeler": [
+    "Control Room, model iş yüklerini izleyip güvenlik endişesi durumunda 35 saniye içinde durdurabiliyor.",
+    "Sistem, iş yükü, çıkarım motoru ve merkezi kontrol hizmeti arasında sıkı bir entegrasyon sağlıyor.",
+    "\"Fail‑closed\" tasarımı sayesinde kontrol odası devre dışı kaldığında tüm çıkarım istekleri otomatik olarak reddediliyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Model güvenliği ve kontrol mekanizmaları, frontier AI araştırmalarının sürdürülebilirliği için kritik; Control Room bu alanda yeni bir altyapı sunarak sektördeki risk yönetimini güçlendiriyor.",
+  "etiketler": [
+    "AI güvenliği",
+    "Model kontrolü",
+    "OpenAI",
+    "Control Room",
+    "Yapay zeka altyapısı"
+  ],
+  "anilan_modeller": [],
+  "yorum_tr": "Control Room, araştırma ortamlarında model çıktılarının anlık denetimini sağlayarak güvenlik risklerini azaltıyor ve geliştiricilere daha güvenli bir test ortamı sunuyor. Bu tür altyapı iyileştirmeleri, AI güvenliği standartlarının yükseltilmesinde önemli bir adım olarak değerlendirilebilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://images.ctfassets.net/kftzwdyauwt9/7CRGR1hiay1UfPVqjUSdAk/da9d8e1e61347fdae6d40e0a72962731/introducing-control-room-social.png?w=1600&h=900&fit=fill",
+  "url": "https://openai.com/index/introducing-control-room",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-11-09T13:00:00.000Z",
+  "slug": "introducing-control-room-human-control-over-ai-workloads"
+}

@@ -1,0 +1,50 @@
+{
+  "baslik_tr": "CodeRabbit, ajan tabanlı yazılım geliştirmeyi ölçeklendirerek 20 kat daha fazla ürün çıkarıyor",
+  "ozet_tr": "CodeRabbit, OpenAI'nin yeni nesil modelleriyle güçlendirdiği AI‑destekli kod inceleme platformunu genişleterek, aynı mühendis ekibiyle 20 kat daha fazla yazılım üretimini mümkün kıldı. Codex ve Daybreak entegrasyonları sayesinde güvenlik taramaları ve otomatik dağıtımlar da büyük ölçüde hızlandı.",
+  "detayli_icerik_tr": "OpenAI'nin Codex, GPT‑4, o1, o3 ve yeni GPT‑6 serisi modelleriyle çalışan CodeRabbit, 20.000'den fazla kuruluş ve 150.000'den fazla açık kaynak projesine AI‑üretimli kodun doğrulanması ve güvenliğinin sağlanması hizmeti veriyor. Şirket, kod incelemelerini bulut tabanlı asenkron süreçlerle yürütürken, daha uzun yanıt süresi gerektiren ancak daha yetkin modelleri tercih ederek hataları ölçekli bir biçimde tespit edebiliyor.\n\nHarjot Gill, CodeRabbit'in kurucu CEO'su, GPT‑6 Astra modelinin kendi iç benchmark'ında %50 hata yakalama oranına ulaştığını ve bu oranla diğer modelleri geride bıraktığını belirtti. Bu sonuç, modelin karmaşık güvenlik açıklarını ve mantıksal hataları tespit etmedeki üstünlüğünü gösteriyor. Şirket, bu benchmark'ı ajanların yeni tip hatalar üretmesiyle sürekli güncelliyor.\n\nFiyat‑performans iyileştirmeleri sayesinde CodeRabbit, düşük maliyetli GPT‑6 Luna modelini çoklu alt‑ajanlar için, planlama ve orkestrasyon görevlerini ise GPT‑6 Astra'yı kullanarak dağıttı. Bu sayede, önceki dönemde iki alt‑ajanla sınırlı kalan sistem, şimdi çok daha fazla kontrol ve açıklama sunarak geliştiricilerin güvenini artırdı.\n\nCodex entegrasyonu, şirketin son altı ayda mühendis sayısını artırmadan yaklaşık 20 kat daha fazla yazılım sürümü yayınlamasını sağladı. Ayrıca, Codex tabanlı bir Slack botu, üretim olaylarını, destek taleplerini ve mesajları otomatik olarak sınıflandırıp bir pull request oluşturuyor. CodeRabbit Secure ürünü, Daybreak ve Cyber modelleriyle yapılan derin güvenlik taramaları sayesinde iki hafta içinde 13.000'den fazla tarama gerçekleştirerek 43.000'den fazla güvenlik açığını ortaya çıkardı.",
+  "onemli_maddeler": [
+    "CodeRabbit, aynı mühendis ekibiyle 20 kat daha fazla yazılım üretimini mümkün kıldı.",
+    "GPT‑6 Astra, şirketin iç benchmark'ında %50 hata yakalama oranıyla en yüksek performansı gösterdi.",
+    "Codex ve Daybreak entegrasyonları, otomatik güvenlik taramaları ve Slack tabanlı incident triage sağlayarak süreçleri hızlandırdı."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "AI destekli kod inceleme ve güvenlik platformları, yazılım geliştirme verimliliğini ve güvenliğini artırdığı için sektörde kritik bir etki yaratıyor.",
+  "etiketler": [
+    "AI kod inceleme",
+    "agentic development",
+    "OpenAI",
+    "Codex",
+    "Daybreak"
+  ],
+  "anilan_modeller": [
+    "GPT-3.5 Turbo",
+    "GPT-4",
+    "o1",
+    "o3",
+    "GPT-6 Astra",
+    "GPT-6 Luna",
+    "Codex",
+    "Daybreak",
+    "Cyber"
+  ],
+  "yorum_tr": "CodeRabbit'in model odaklı yaklaşımı, geliştiricilerin AI‑taraflı kod değişikliklerine güvenini artırarak yazılım teslim sürelerini kısaltıyor. Bu da hem maliyetleri düşürüyor hem de güvenlik risklerini proaktif şekilde azaltıyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GPT-6 Astra",
+      "benchmark": "CodeRabbit iç hatalar benchmark'ı",
+      "skor": 50,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "bilinen hatalar veri seti",
+      "kaynak_metinden_alinti": "Harjot estimated that GPT‑6 Astra caught 50% of the issues in that dataset, putting it at the top compared to other models in that benchmark."
+    }
+  ],
+  "gorsel_url": "https://images.ctfassets.net/kftzwdyauwt9/5TAanXWCpBQ0R0n2AFa89t/34f319750f5ffc9ebc78901cb054b866/coderabbit-seo-1920x1080.png?w=1600&h=900&fit=fill",
+  "url": "https://openai.com/index/coderabbit-codex-daybreak",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-11-09T08:00:00.000Z",
+  "slug": "coderabbit-scales-agentic-software-development-and-ships-20x"
+}

@@ -1,0 +1,62 @@
+{
+  "baslik_tr": "HOPE: MoE Modellerinde Uzman Pruning'inde İkinci Mertebe Yaklaşımı Bellek Tasarrufu Sağladı",
+  "ozet_tr": "Mixture-of-Experts (MoE) dil modellerinde uzmanların büyük bir kısmı kullanılmadığı halde bellek tüketimini artırıyor. Amazon araştırmacıları, uzmanlar arasındaki etkileşimleri hesaba katan HOPE (Higher-Order Pruning of Experts) yöntemini tanıttı; %50 oranındaki pruningde kodlama görevlerinde %6,1'lik performans artışı sağladı. HOPE, mevcut birinci mertebe yöntemlerine kıyasla işbirliği gruplarını koruyarak daha verimli model küçültmesi sunuyor.",
+  "detayli_icerik_tr": "MoE mimarileri, her katmanda yüzlerce uzman (expert) barındırarak yüz milyarlarca parametreye ulaşan LLM'lerin ölçeklenmesini mümkün kılıyor. Ancak bir token işlendiğinde yalnızca birkaç uzman aktif olurken, tüm uzmanların ağırlıkları hâlâ bellek içinde yer kaplıyor; örneğin Qwen3.5-122B modelinde %95'lik bir bellek tüketimi sadece uzman MLP'lerinden kaynaklanıyor. Bu sorunu çözmek için uzman pruning'i, yani en az faydalı uzmanların kalıcı olarak kaldırılması yöntemi kullanılmaktadır.\n\nGeleneksel pruning yöntemleri, her uzmanı bağımsız bir skorlama fonksiyonuyla değerlendirip en düşük puanlıları siler; bu birinci mertebe (first‑order) yaklaşımlardır. Araştırmacılar, uzmanların genellikle birlikte aktif olduğu ve birbirlerine bağımlı bir \"kooperatif grup\" oluşturduğu gözlemini vurgulayarak, bu bağımlılıkların göz ardı edilmesinin agresif pruningde performans kayıplarına yol açtığını gösterdi. HOPE, uzmanlar arasındaki çift yönlü etkileşimleri (pairwise interactions) içeren bir F‑matrisi oluşturur ve bu matris üzerinden bir ikili kuadratik program (QP) çözerek prune‑seti belirler.\n\nHOPE'un uygulama adımları üç aşamadan oluşur: (1) kalibrasyon veri setiyle tek bir ileri geçiş yaparak uzman seçimleri, kapı ağırlıkları ve çıktı normlarını kaydetmek; (2) elde edilen F‑matrisini kullanarak QP'yi çözmek; (3) belirlenen prune‑setiyle modeli küçültmek. Çözüm süresi katman başına 1‑2 saniye kadar sürer ve toplam maliyet, ilk mertebe yöntemlerine kıyasla ihmal edilebilir düzeydedir. HOPE ayrıca REAP gibi birinci mertebe yöntemlerinin diyagonal skorlarını neredeyse aynı şekilde üretir; performans farkı, off‑diagonal (çift yönlü) etkileşim terimlerinden kaynaklanır.\n\nDeneylerde HOPE, Qwen3.5-122B, Qwen3.5-35B ve GLM-4.5-Air modelleri üzerinde iki kalibrasyon veri seti (Evol‑CodeAlpaca, SWE‑Bench Verified) kullanılarak test edildi. %10‑50 pruning oranları arasında, HOPE ortalama rank olarak %5 metodun en iyisi (2.07) ve %50 pruningde ortalama rank 1.58 (REAP 2.42) elde etti. Özellikle SWE‑Bench Pro kodlama benchmark'unda Qwen3.5-35B‑A3B modeli %50 pruningde 42.3 puan alarak orijinal 41.8 puanı eşitledi; REAP ise 36.2 puana geriledi. Bu sonuçlar, yüksek pruning oranlarında uzman işbirliği yapısının korunmasının kritik olduğunu gösteriyor. HOPE'un sınırlamaları arasında düşük pruning oranlarında (10‑20%) avantajının azalması ve katmanlar arası etkileşimlerin hâlâ hesaba katılmaması yer alıyor.",
+  "onemli_maddeler": [
+    "HOPE, uzmanlar arasındaki çift yönlü etkileşimleri modelleyerek pruning hatasını minimize eden ikinci mertebe bir yöntemdir.",
+    "%50 pruningde SWE‑Bench Pro kodlama benchmark'unda %6,1'lik performans artışı sağlayarak orijinal modelin performansını eşitlemiştir.",
+    "Uygulama süreci sadece bir kalibrasyon geçişi ve birkaç saniyelik QP çözümü gerektirir; ek maliyet neredeyse yoktur."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "MoE tabanlı büyük dil modellerinin bellek tüketimini azaltırken performansı koruması, hem araştırma topluluğu hem de üretim ortamları için kritik bir ölçeklenebilirlik sorunu çözmektedir.",
+  "etiketler": [
+    "MoE",
+    "pruning",
+    "HOPE",
+    "LLM",
+    "benchmark"
+  ],
+  "anilan_modeller": [
+    "Qwen3.5-122B",
+    "Qwen3.5-35B",
+    "GLM-4.5-Air"
+  ],
+  "yorum_tr": "HOPE, uzman işbirliği dinamiklerini hesaba katarak pruning sürecini iyileştirdiği için yüksek bellek tasarrufu isteyen geliştiriciler ve bulut sağlayıcıları için önemli bir araç haline geliyor; aynı zamanda model performansının korunması, daha uzun bağlam ve karmaşık görevlerde kullanılabilirliği artırıyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen3.5-35B",
+      "benchmark": "SWE-Bench Pro (agentic coding)",
+      "skor": 42.3,
+      "birim": "",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "50% pruning",
+      "kaynak_metinden_alinti": "On Qwen3.5-35B-A3B at 50% pruning, HOPE achieved 42.3 on SWE-Bench Pro, matching the unpruned model's 41.8 (while REAP dropped to 36.2, a 13% regression)."
+    },
+    {
+      "model": "All evaluated models",
+      "benchmark": "Average rank across all models, calibration sets, and benchmarks",
+      "skor": 2.07,
+      "birim": "rank",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "pruning rates 10-50%",
+      "kaynak_metinden_alinti": "HOPE achieved the best overall rank (2.07 out of 5 methods)."
+    },
+    {
+      "model": "All evaluated models",
+      "benchmark": "Average rank at 50% pruning",
+      "skor": 1.58,
+      "birim": "rank",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "50% pruning",
+      "kaynak_metinden_alinti": "At 50% pruning, HOPE's average rank improves to 1.58 (vs. 2.42 for the next-best method, REAP)."
+    }
+  ],
+  "gorsel_url": "https://cdn-uploads.huggingface.co/production/uploads/6ab2f79bd8000a811c648a32/xZT8tg4be3bgZIx2EQS_m.png",
+  "url": "https://huggingface.co/blog/amazon/higher-order-pruning-experts",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-11-09T12:34:29.000Z",
+  "slug": "your-experts-have-partners-there-s-hope-for-keeping-them-tog"
+}
