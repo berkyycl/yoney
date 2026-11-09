@@ -1,0 +1,61 @@
+{
+  "baslik_tr": "Intel Arc Pro B70 32GB vs NVIDIA RTX 5090: Yarı Hız, Beş Kat Ucuz – Qwen3.8-27B Benchmarkı",
+  "ozet_tr": "Reddit kullanıcısı, 32 GB VRAM'li Intel Arc Pro B70'yi 1.299 $'a alıp aynı modeldeki Qwen3.8-27B'yi çalıştırdı ve sonuçları NVIDIA RTX 5090'la kıyasladı. Arc Pro, prompt ön işleme ve metin üretiminde sırasıyla yaklaşık %34 ve %53 oranında daha yavaş olsa da fiyat‑performans oranı beş kat daha avantajlı çıktı.",
+  "detayli_icerik_tr": "Kullanıcı, ASRock resmi mağazasından 32 GB VRAM'li Intel Arc Pro B70 kartını 1.299 $'a satın aldı ve aynı VRAM kapasitesine sahip bir RTX 5090'ı 6.500 $'ın üzerindeki piyasa fiyatı nedeniyle tercih edemedi. İlk denemelerde kartın performansı düşük çıktı, ancak BIOS güncellemeleri, Kernel 6.17+, Resizable BAR etkinleştirilmesi ve Intel'in compute runtime paketinin kurulması gibi bir dizi ayar değişikliğiyle performans ikiye katlandı.\n\nLinux ortamında Ubuntu 24.04 ve Mesa 26.x sürümüne yükseltilmesi, Vulkan tabanlı Ollama yerine SYCL (Intel oneAPI) ile derlenmiş llama.cpp kullanılması, KV cache'in f16 formatına ayarlanması ve MTP (Multi‑Token‑Prompt) özelliğinin etkinleştirilmesi gibi optimizasyonlar, özellikle uzun bağlamlı (64 k token) isteklerde büyük hız artışı sağladı. SYCL üzerinden çalışan sistem, 215 k tokenlik bir prompta ilk tokeni 1,9 saat yerine 8,6 dakikada üretebildi.\n\nBenchmark sonuçları, Qwen3.8-27B Q6 modeliyle yapılan ölçümlere dayanıyor. Intel Arc Pro B70, prompt işleme hızında yaklaşık 960 token/s ve metin üretiminde 52 token/s sağlarken, RTX 5090 aynı ölçekte sırasıyla 2.830 token/s ve 98 token/s elde etti. Diğer testlerde SYCL tabanlı yapılandırma, prompt hızını 908 token/s, üretim hızını ise 49 token/s seviyelerine çıkararak Vulkan tabanlı çözümlerden üç kat daha iyi performans gösterdi.\n\nSonuç olarak, NVIDIA hâlâ ham performans ve yazılım ekosistemi bakımından lider konumda olsa da, Intel Arc Pro B70, çok daha düşük bir maliyetle (yaklaşık 1/5'i) kabul edilebilir bir hız sunuyor. Bu durum, bütçesi sınırlı olan araştırmacılar ve yaratıcı profesyoneller için NVIDIA dışı GPU'ların da değerlendirilmesi gerektiğini gösteriyor.",
+  "onemli_maddeler": [
+    "Intel Arc Pro B70, RTX 5090'ın yaklaşık yarısı hızında çalışsa da fiyat‑performans oranı 5 kat daha iyi.",
+    "BIOS güncellemesi, Kernel 6.17+, Resizable BAR ve Intel compute runtime kurulumu performansı ikiye katladı.",
+    "SYCL (oneAPI) ile derlenen llama.cpp, Vulkan tabanlı çözümlere göre prompt ve üretim hızını 3‑4 kat artırdı."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Fiyat‑performans dengesinde önemli bir kırılma noktası sunarak, NVIDIA dışı GPU'ların LLM uygulamalarında ciddi bir alternatif olabileceğini gösteriyor.",
+  "etiketler": [
+    "Intel",
+    "NVIDIA",
+    "GPU",
+    "LLM",
+    "Benchmark"
+  ],
+  "anilan_modeller": [
+    "Qwen3.8-27B Q6",
+    "Qwen3.6-35B-A3B"
+  ],
+  "yorum_tr": "Bu bulgular, düşük bütçeli AI araştırmacıları ve yaratıcı profesyoneller için Intel'in yeni nesil GPU'larını denemeyi cazip kılıyor; ancak yazılım ekosistemi ve ham performans açısından NVIDIA hâlâ lider konumda.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen3.8-27B Q6 (Intel Arc Pro B70)",
+      "benchmark": "Prompt processing speed",
+      "skor": 960,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "prompt",
+      "kaynak_metinden_alinti": "Prompt processing ~960 tok/s"
+    },
+    {
+      "model": "Qwen3.8-27B Q6 (Intel Arc Pro B70)",
+      "benchmark": "Generation speed",
+      "skor": 52,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "generation",
+      "kaynak_metinden_alinti": "Generation ~52 tok/s"
+    },
+    {
+      "model": "Qwen3.8-27B Q6 (NVIDIA RTX 5090)",
+      "benchmark": "Generation speed",
+      "skor": 98,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "generation",
+      "kaynak_metinden_alinti": "Generation ~98 tok/s"
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/mt9p7uufzf0i1.png?width=140&height=110&auto=webp&s=bf9eed9d8583566cc1e2a8fed01bb726f7032020",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xr78s5/intel_arc_pro_b70_32gb_1299_vs_nvidia_rtx_5090/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-08T19:46:49.000Z",
+  "slug": "intel-arc-pro-b70-32gb-1-299-vs-nvidia-rtx-5090-6-500-on-qwe"
+}
