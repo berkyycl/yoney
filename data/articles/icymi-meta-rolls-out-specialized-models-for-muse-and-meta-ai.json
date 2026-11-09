@@ -1,0 +1,70 @@
+{
+  "baslik_tr": "Meta, Muse ve Meta AI için Özelleştirilmiş Modelleri Yayına Aldı",
+  "ozet_tr": "Meta, Muse Wonder altyapısını genişleterek Muse ve Meta AI hizmetlerine Active Memory ve Active Focus özelliklerini taşıyan yeni özelleştirilmiş modelleri duyurdu. Bu modeller, kritik bilgileri unutma oranını 2,4 kat azaltırken, beklenmedik sorunlarla karşılaşıldığında görev tamamlama başarısını %67 artırıyor.",
+  "detayli_icerik_tr": "Meta, geçtiğimiz haftalarda tanıtılan Muse Wonder model serisinin bazı yeteneklerini daha geniş kullanıcı kitlesine sunmak amacıyla Muse ve Meta AI için özelleştirilmiş modelleri hayata geçirdi. Muse Wonder, kişisel ve profesyonel ajan görevlerinde çığır açan performansıyla dikkat çekerken, yeni modeller bu yetenekleri Active Memory ve Active Focus sistemleri aracılığıyla tüm kullanıcılara ulaştırıyor.\n\nActive Memory, modellerin zaman içinde önemli bilgileri ayırt edip saklamasını ve önceki konuşmalardan gelen bağlamı gerektiğinde yeniden hatırlamasını sağlıyor. Meta'nun testlerine göre, yeni Muse modelleri kritik bağlamı %90 oranında doğru kullanırken, önceki sürüm %76 seviyesindeydi. Ayrıca, kritik bilgileri unutma olasılığı 2,4 kat azaldı ve Personal Superintelligence Index puanı %38'den %47'ye yükseldi.\n\nActive Focus ise beklenmedik engellerle karşılaşıldığında modelin hedefe odaklanmasını sürdürüyor. Gerçek dünya senaryolarına dayalı eğitimle, modeller sorunları aşma, alternatif yollar bulma veya kullanıcı adına çözüm üretme yeteneği kazandı. Bu sayede günlük görev tamamlama oranı %67 oranında iyileşti.\n\nMeta AI tarafında da benzer iyileştirmeler uygulanıyor; model daha karmaşık problemleri adım adım bölerek çözüm öneriyor, daha keskin takip soruları soruyor ve kullanıcı yön değiştirdiğinde sohbet akışını koruyor. Meta, bu güncellemelerle süper zekâ erişimini geniş kitlelere yaymayı ve daha güçlü bir düşünce ortağı sunmayı hedefliyor.",
+  "onemli_maddeler": [
+    "Active Memory sayesinde kritik bağlamın doğru kullanımı %90'a yükseldi (önceki %76).",
+    "Yeni modeller kritik bilgileri unutma olasılığını 2,4 kat azalttı.",
+    "Active Focus ile beklenmedik sorunlarda görev tamamlama %67 oranında iyileşti."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Meta'nın mevcut AI hizmetlerine getirdiği bu iyileştirmeler, geniş kullanıcı tabanına daha yüksek performanslı ve tutarlı yapay zeka deneyimi sunarak sektörde rekabeti artırıyor.",
+  "etiketler": [
+    "Meta",
+    "Muse",
+    "Active Memory",
+    "Active Focus",
+    "AI modeli güncellemesi"
+  ],
+  "anilan_modeller": [
+    "Muse (özelleştirilmiş)",
+    "Meta AI (özelleştirilmiş)"
+  ],
+  "yorum_tr": "Bu güncellemeler, özellikle kurumsal ve bireysel kullanıcıların AI asistanlarından daha tutarlı ve hatasız yanıtlar almasını sağlayarak geliştirme sürecini hızlandıracak ve kullanıcı memnuniyetini artıracaktır.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Muse (özelleştirilmiş)",
+      "benchmark": "Active Memory evaluation",
+      "skor": 90,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "On Meta’s Active Memory evaluation, current Muse models correctly use critical context in 90% of tasks, compared with 76% for previous models."
+    },
+    {
+      "model": "Muse (özelleştirilmiş)",
+      "benchmark": "Personal Superintelligence Index",
+      "skor": 47,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "They also score 47% on the Personal Superintelligence Index, up from 38% for the earlier generation."
+    },
+    {
+      "model": "Muse (özelleştirilmiş)",
+      "benchmark": "Forgetting reduction",
+      "skor": 2.4,
+      "birim": "x",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Meta says its current Muse models show a 2.4x reduction in forgetting critical information needed to help users reach their goals."
+    },
+    {
+      "model": "Muse (özelleştirilmiş)",
+      "benchmark": "Everyday task completion gain",
+      "skor": 67,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Meta reports a 67% gain in completing everyday tasks where unexpected issues arise."
+    }
+  ],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/11/banner-2.webp",
+  "url": "https://www.testingcatalog.com/icymi-meta-rolls-out-specialized-models-for-muse-and-meta-ai/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-09T10:24:55.000Z",
+  "slug": "icymi-meta-rolls-out-specialized-models-for-muse-and-meta-ai"
+}

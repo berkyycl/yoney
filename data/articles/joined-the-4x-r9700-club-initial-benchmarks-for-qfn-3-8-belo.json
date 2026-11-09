@@ -1,0 +1,51 @@
+{
+  "baslik_tr": "4x Radeon R9700 ile Qwen 3.8 Flash Next Uzun Bağlam Performans Testi",
+  "ozet_tr": "Radeon AI PRO R9700 kartlarından dört tanesini bir araya getirerek Qwen 3.8‑Flash‑Next modelinin 32 K‑128 K token bağlam uzunluğunda çoklu‑kullanıcı senaryolarındaki performansı ölçtü. Prefill aşamasında 6 800 token/s sabit bir throughput elde edilirken, aynı anda sekiz kullanıcı 128 K bağlamla çalıştığında ilk token gecikmesi 2,5 saniyeye kadar çıkıyor ve her kullanıcı 80‑225 token/s arasında yanıt üretiyor.",
+  "detayli_icerik_tr": "Reddit topluluğu LocalLLaMA üyesi Anarchaotic, üç Gigabyte R9700 ve bir XFX R9700 kartını 210 W güç sınırına ayarlayarak 16 000 CAD tutarında bir çok‑kullanıcı inference sunucusu kurdu. Sistem EPYC 7402P işlemci, 128 GB DDR4‑2666 RAM ve Ubuntu 26.04.1/ROCm 10.1 ortamında Radiance v1.17.0 yazılımı ile çalışıyor. Model olarak qwen3.8‑next‑flash‑fp8‑iq4r‑moe.rad (int8, 4‑bit kod kitaplığı) kullanıldı ve tüm ağırlıklar (17,4 GiB) her kartın VRAM'ine yerleştirildi; KV önbellek 11,6 GiB/kart, yani 1,6 M token ya da sekiz 200 K oturum.\n\nBenchmark sonuçları, bağlam uzunluğu ve eşzamanlı kullanıcı sayısına göre iki aşamalı bir ölçüm içeriyor: Turn 1 (soğuk ön‑prefill) ve Turn 2 (önbellekli takip). 32 K bağlamda tek kullanıcı için ilk token 4,8 s, yazma hızı 195 tok/s iken, sekiz kullanıcıda ilk token 36,9 s, yazma hızı 83 tok/s olarak kaydedildi. 128 K bağlamda sekiz kullanıcıda ilk token 150,8 s (median 2,5 s) ve yazma hızı 80 tok/s civarında gerçekleşti. Prefill aşaması her senaryoda toplamda yaklaşık 6 800 tok/s sabit bir hız sağladı.\n\nSistem, kartların 210 W güç sınırına rağmen sessiz çalıştı; en yüksek sıcaklıklar iki orta kartta 91 °C, hafıza sıcaklığı 92 °C olarak ölçüldü. Host önbellek (prefix‑cache) 32 GiB olarak ayarlandığında %98 önbellekleme oranı elde edildi ve ilk token gecikmesi 1,5 s'ye düştü. Bu sonuçlar, uzun bağlam ve yüksek eşzamanlılık gerektiren gizli veri işleme senaryoları için R9700 tabanlı bir çözümün pratik bir alternatif olabileceğini gösteriyor.",
+  "onemli_maddeler": [
+    "Prefill aşamasında kart sayısına bakılmaksızın sabit 6 800 token/s throughput sağlandı.",
+    "8 kullanıcı 128 K bağlamda aynı anda çalıştığında ilk token gecikmesi 2,5 saniyeye kadar uzadı, ancak takip eden yanıtlar 80‑225 token/s hızında üretildi.",
+    "Host prefix‑cache 32 GiB'ye ayarlandığında %98 önbellekleme ve 1,5 s ilk token süresi elde edildi."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "R9700 kartlarıyla çoklu‑kullanıcı uzun bağlam senaryolarında elde edilen yüksek throughput ve düşük gecikme, yüksek bellek sınırlı AI inference sunucularının tasarımına yeni bir referans noktası sunuyor.",
+  "etiketler": [
+    "R9700",
+    "Qwen3.8",
+    "multi‑user inference",
+    "ROCm",
+    "GPU benchmark"
+  ],
+  "anilan_modeller": [
+    "qwen3.8-next-flash-fp8-iq4r-moe.rad"
+  ],
+  "yorum_tr": "Bu benchmark, R9700 tabanlı birden fazla GPU'nun uzun bağlam ve yüksek eşzamanlılık gerektiren görevlerde maliyet‑etkin bir performans sunabileceğini gösteriyor; geliştiriciler ve işletmeler, benzer yapılandırmalarla gizli veri işleme yüklerini yerel olarak çalıştırma fırsatı bulabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "qwen3.8-next-flash-fp8-iq4r-moe.rad",
+      "benchmark": "First token latency (8 users, 128K context)",
+      "skor": 2.5,
+      "birim": "s",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "median",
+      "kaynak_metinden_alinti": "8 x 128K (1.02M tokens) took 151 s. ... with 8 x 128K that means about 2.5 minutes for everyone."
+    },
+    {
+      "model": "qwen3.8-next-flash-fp8-iq4r-moe.rad",
+      "benchmark": "Writing speed per user (8 users, 128K context)",
+      "skor": 80,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "median",
+      "kaynak_metinden_alinti": "Follow-ups are where this setup shines. ... each user writes at 80 to 225 tok/s."
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/m1hd0vwe4h0i1.jpeg?width=640&crop=smart&auto=webp&s=2c40eee357f0bfbce8655d5833dbb670401bc1e1",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xrcia4/joined_the_4x_r9700_club_initial_benchmarks_for/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-08T23:36:45.000Z",
+  "slug": "joined-the-4x-r9700-club-initial-benchmarks-for-qfn-3-8-belo"
+}

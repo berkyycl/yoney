@@ -1,0 +1,132 @@
+{
+  "baslik_tr": "Qwen3.5-0.8B modelini ince ayar yaparak İngilizce komutları Bash'e dönüştürdüm: sonuçlar ve öğrenimler",
+  "ozet_tr": "Kullanıcı, Qwen3.5-0.8B modelini ince ayar geçirerek doğal İngilizce ifadeleri doğrudan Bash komutlarına çeviren \"dale\" adlı bir terminal yardımcı programı geliştirdi. 471 test isteği üzerinde yapılan değerlendirmede, ince ayarlı 0.8B modeli %79,4 doğrulukla büyük modelleri geride bıraktı. Ancak modelin performansı veri kalitesine çok duyarlı; uzun ve karmaşık isteklerde doğrulukta duraklama yaşandı.",
+  "detayli_icerik_tr": "Reddit topluluğu LocalLLaMA'da paylaşılan gönderide, yazar \"dale\" adını verdiği bir uygulama geliştirdi. Uygulama, kullanıcıdan doğal dilde bir talep alıyor, ince ayarlı bir LLM bu talebi Bash komutuna çeviriyor ve ardından deterministik bir risk denetleyicisi komutun güvenliğini sınıflandırıyor. Komut yalnızca kullanıcı onayıyla çalıştırılıyor, bu da tamamen çevrim dışı bir terminal asistanı sağlıyor.\n\nModelin performansı 471 tutulan İngilizce ve İspanyolca istek üzerinden ölçüldü. İnce ayarlı \"dale-0.8b\" modeli %79,4 doğruluk (95% CI: 75,5–82,8) elde ederken, aynı görevde stok Qwen3.5-9B sadece %62,8 doğruluk gösterdi. Diğer ince ayarlı modeller (dale-9b, dale-4b, dale-2b) da %87‑89 aralığında yüksek başarılar sergiledi. Performans açısından, 2020 model bir dizüstü bilgisayarda CPU ile çalışan 0.8B model ortalama 1,7 saniyede yanıt verirken, 4B model bir GPU üzerinden 1,2 saniyede sonuç üretiyor.\n\nİnce ayar sürecinde yazar, veri setinin uzun ve karmaşık istekler içerdiğinde modelin %74 seviyesinde takıldığını fark etti. Dört tur veri toplama, DPO, 27B öğretmen modeliyle distilasyon ve öğrenme oranı taramaları gibi yöntemler denendi ancak doğruluk artışı sağlanamadı. Sonunda, test isteklerinin biçimiyle uyumlu yeni bir veri seti ekleyerek doğru oranını %375'e (p=0.001) yükseltti. Bu deney, küçük bir modelin dar bir görevde tavan değerine ulaşmadan önce veri kalitesinin kritik olduğunu gösterdi.\n\nProje tamamen açık kaynak; kod MIT lisansı altında, modeller Apache‑2.0 lisanslı GGUF formatında ve llama.cpp ile çalışıyor. Eğitim için kiralanan RTX 5090 ve RTX Pro 6000 GPU'ları kullanıldı. Yazar, daha büyük bir öğretmenden 1B altı bir modele distilasyonun faydalı olup olmadığı konusunda topluluktan görüş bekliyor.",
+  "onemli_maddeler": [
+    "İnce ayarlı 0.8B model %79,4 doğrulukla büyük stok modelleri geride bıraktı.",
+    "Veri setinin uzun ve karmaşık isteklerle uyumsuzluğu, modelin doğruluk tavanını düşürdü.",
+    "Yeni, testle uyumlu 9 000 ek istekle doğruluk %375'e (p=0.001) yükseltildi."
+  ],
+  "kategori": "benchmark",
+  "onem": 3,
+  "onem_gerekce": "Küçük bir modelin ince ayarı ve veri kalitesinin etkisi üzerine değerli teknik bulgular sunuyor, ancak sektörel çapta geniş bir etki yaratması sınırlı.",
+  "etiketler": [
+    "Qwen3.5",
+    "fine-tuning",
+    "bash",
+    "llama.cpp",
+    "benchmark"
+  ],
+  "anilan_modeller": [
+    "dale-9b",
+    "dale-4b",
+    "dale-2b",
+    "dale-0.8b",
+    "Qwen3.5-9B",
+    "Gemma 4 E4B-it",
+    "Qwen3.5-4B",
+    "Gemma 4 E2B-it",
+    "Qwen3.5-2B",
+    "Qwen3.5-0.8B"
+  ],
+  "yorum_tr": "Bu çalışma, düşük kaynaklı modellerin doğru veri hazırlığıyla büyük modelleri geride bırakabileceğini gösteriyor; geliştiriciler, veri seti biçimlendirmesine odaklanarak ince ayar verimliliğini artırabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "dale-9b",
+      "benchmark": "English & Spanish request accuracy",
+      "skor": 89.2,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "95% CI",
+      "kaynak_metinden_alinti": "dale-9b (GPU) 5.6 GB 420 89.2% 86.0–91.7"
+    },
+    {
+      "model": "dale-4b",
+      "benchmark": "English & Spanish request accuracy",
+      "skor": 87,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "95% CI",
+      "kaynak_metinden_alinti": "dale-4b (GPU) 2.7 GB 410 87.0% 83.7–89.8"
+    },
+    {
+      "model": "dale-2b",
+      "benchmark": "English & Spanish request accuracy",
+      "skor": 81.7,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "95% CI",
+      "kaynak_metinden_alinti": "dale-2b 1.3 GB 385 81.7% 78.0–85.0"
+    },
+    {
+      "model": "dale-0.8b",
+      "benchmark": "English & Spanish request accuracy",
+      "skor": 79.4,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "95% CI",
+      "kaynak_metinden_alinti": "dale-0.8b (CPU) 529 MB 374 79.4% 75.5–82.8"
+    },
+    {
+      "model": "Qwen3.5-9B",
+      "benchmark": "English & Spanish request accuracy",
+      "skor": 62.8,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "95% CI",
+      "kaynak_metinden_alinti": "Qwen3.5-9B, stock 5.7 GB 296 62.8% 58.4–67.1"
+    },
+    {
+      "model": "Gemma 4 E4B-it",
+      "benchmark": "English & Spanish request accuracy",
+      "skor": 62.8,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "95% CI",
+      "kaynak_metinden_alinti": "Gemma 4 E4B-it, stock 5.0 GB 296 62.8% 58.4–67.1"
+    },
+    {
+      "model": "Qwen3.5-4B",
+      "benchmark": "English & Spanish request accuracy",
+      "skor": 54.6,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "95% CI",
+      "kaynak_metinden_alinti": "Qwen3.5-4B, stock 2.7 GB 257 54.6% 50.0–59.0"
+    },
+    {
+      "model": "Gemma 4 E2B-it",
+      "benchmark": "English & Spanish request accuracy",
+      "skor": 53.9,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "95% CI",
+      "kaynak_metinden_alinti": "Gemma 4 E2B-it, stock 3.1 GB 254 53.9% 49.4–58.4"
+    },
+    {
+      "model": "Qwen3.5-2B",
+      "benchmark": "English & Spanish request accuracy",
+      "skor": 32.3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "95% CI",
+      "kaynak_metinden_alinti": "Qwen3.5-2B, stock 1.3 GB 152 32.3% 28.2–36.6"
+    },
+    {
+      "model": "Qwen3.5-0.8B",
+      "benchmark": "English & Spanish request accuracy",
+      "skor": 14.9,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "95% CI",
+      "kaynak_metinden_alinti": "Qwen3.5-0.8B, stock 533 MB 70 14.9% 11.9–18.4"
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/r3tlntwioe0i1.png?width=140&height=75&auto=webp&s=1fb1c93d98e42c53cf2d125f547852cb4b5d4bb5",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xr0ykk/i_finetuned_qwen3508b_to_turn_plain_english_into/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-08T15:26:31.000Z",
+  "slug": "i-fine-tuned-qwen3-5-0-8b-to-turn-plain-english-into-bash-wh"
+}

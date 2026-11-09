@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "Yerel modellerin gerçekten nerelerde faydalı olduğunu insanlar neler buluyor?",
+  "ozet_tr": "Kullanıcılar, yerel büyük dil modellerini (LLM) sınırdaki modellerin yüksek token maliyetine alternatif olarak çeşitli pratik görevlerde kullanıyor. Reddit topluluğu, DeepSeek v4.1 Flash 1017 gibi modellerin gerçek dünyadaki faydalarını ve performansını paylaşarak, yerel AI ekosisteminin potansiyelini ortaya koyuyor.",
+  "detayli_icerik_tr": "Reddit'in LocalLLaMA topluluğunda, /u/prestodigitarium adlı kullanıcı, yerel modellerin sınırdaki (frontier) modellerle kıyaslandığında nasıl somut faydalar sağladığını örneklerle açıkladı. Kendi kurulumunda DeepSeek v4.1 Flash 1017 modelini, Fraser Price'ın BRRR kod tabanını ve 4x RTX 6000 Blackwell GPU'ları kullanarak çalıştırdığını belirtti; model c=1 ayarında yaklaşık 550 token/saniye (tps) ve c=16'da birkaç bin tps performans gösteriyor.\n\nKullanıcı, modelin en faydalı olduğu alanları şu şekilde sıraladı: \"Scouts\" – sınırdaki modellerin basit web araştırmalarını yerel model aracılığıyla yapması, böylece token tüketimini azaltması; \"Masons\" – sınırdaki modellerin küçük kod parçacıkları üretmesi, yerel modelin bu kodu tamamlayıp geri göndermesi; \"Hermes\" ajanlarıyla Hacker News, YouTube gibi sitelerden ilgi çekici haberleri filtrelemesi; haftalık aile e‑posta özetleri için bir etkinlik tarayıcısı; terminal ve tarayıcı kullanımını kaydeden kişisel asistan; ve neredeyse anlık geri dönüş sağlayan konuşmadan metne (speech‑to‑text) çeviri.\n\nKullanıcı, bu senaryoların hâlâ kendi müdahalesine bağımlı olduğunu ve süreçlerin kendisini (kullanıcıyı) darboğaz yaptığını vurguladı. \"Software factory\" gibi daha otomatik çözümler denediğini ancak henüz çığır açan bir sonuç elde edemediğini belirtti. Son olarak, topluluktan diğer üyelerin yerel modellerle elde ettikleri başarıları ve yaratıcı kullanım örneklerini paylaşmalarını istedi.\n\nBu paylaşım, yerel LLM'lerin sadece araştırma ve deneme aşamasında kalmayıp, günlük iş akışlarına entegrasyonunun mümkün olduğunu gösteriyor. Özellikle yüksek performanslı donanım ve özelleştirilmiş kod tabanlarıyla, yerel modellerin token maliyetini düşürürken aynı zamanda kişisel asistanlık, veri toplama ve kod üretimi gibi görevlerde etkili bir rol oynayabileceği ortaya kondu.",
+  "onemli_maddeler": [
+    "DeepSeek v4.1 Flash 1017, 4x RTX 6000 Blackwell GPU'larda c=1'de 550 tps, c=16'da birkaç bin tps performans sağlıyor.",
+    "Yerel modeller, sınırdaki modellerin yüksek token tüketen web araştırmalarını \"Scouts\" aracılığıyla üstlenerek maliyet tasarrufu sağlıyor.",
+    "Kod üretimi, haber filtreleme, etkinlik özetleme, kişisel asistan ve konuşmadan metne çeviri gibi çok yönlü görevlerde yerel modeller pratik fayda sunuyor."
+  ],
+  "kategori": "diger",
+  "onem": 3,
+  "onem_gerekce": "Yerel LLM'lerin gerçek dünya kullanım senaryoları ve performans ölçümleri topluluk tarafından paylaşılması, AI ekosisteminde yeni iş akışları ve maliyet optimizasyonu konularında ilgi çekici bir perspektif sunar.",
+  "etiketler": [
+    "yerel modeller",
+    "DeepSeek",
+    "AI uygulamaları",
+    "performans",
+    "topluluk"
+  ],
+  "anilan_modeller": [
+    "DeepSeek v4.1 Flash 1017"
+  ],
+  "yorum_tr": "Bu tür topluluk temelli deneyimler, geliştiricilerin yerel modelleri üretkenlik araçları olarak benimsemelerini hızlandırabilir; aynı zamanda donanım ve yazılım entegrasyonunun olgunlaşmasıyla daha geniş bir kullanıcı kitlesine ulaşması muhtemeldir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/local-models-went-from-mostly-useless-to-actually-useful-v0-knc4ht7bft7h1.png?width=1048&format=png&auto=webp&s=b51fb087cdd1fdd6e6ef30ff9133e8862a664578",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xr4iv0/what_are_people_finding_local_models_actually/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-08T17:56:13.000Z",
+  "slug": "what-are-people-finding-local-models-actually-useful-for"
+}

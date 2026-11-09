@@ -1,0 +1,31 @@
+{
+  "baslik_tr": "AI destekli PR açıklamalarını <details><summary> ile gizleyin",
+  "ozet_tr": "Simon Willison, yapay zeka tarafından oluşturulan çekirdek PR açıklamalarının uzun ve ayrıntılı olmasından kaynaklanan okuma yorgunluğunu gidermek için GitHub Markdown'ta desteklenen <details><summary> etiketlerini kullanmayı öneriyor. Bu yöntemle yalnızca insan tarafından seçilen kısa bir özet gösterilir, geri kalan detaylar isteğe bağlı olarak genişletilebiliyor.",
+  "detayli_icerik_tr": "Willison, son zamanlarda Claude Code ve Codex gibi kodlama ajanlarının PR açıklamalarını otomatik olarak üretmesinin, açıklamaların hem doğru hem de kapsamlı olmasına rağmen okuyucuların ilgisini kaybetmesine yol açtığını belirtiyor. Bu durum, geliştiricilerin PR'ları incelemek için harcadıkları zamanı artırıyor ve AI‑yazılı metinlerin “slop” gibi algılanmasına neden oluyor.\n\nBu soruna basit bir çözüm olarak HTML <details><summary> öğelerinin GitHub Markdown içinde çalıştığını vurguluyor. Açıklamanın ilk paragrafı, insan gözüyle hızlıca anlaşılabilecek bir özet olarak kalıyor; geri kalan ayrıntılı AI‑yazısı ise <details> bloğu içine yerleştiriliyor. Kullanıcılar, özetin yanındaki ok simgesine tıklayarak tam metni görüntüleyebiliyor.\n\nWillison, bu yöntemi kendi projelerinde, özellikle Datasette ve llm gibi açık kaynak repo'larda denedi ve örnek PR'lar sunarak faydasını gösterdi. Özet kısmına genellikle model adı ve çaba seviyesi (ör. \"Claude Opus 5.5 Medium\") ekleyerek, PR'ın kaynağını ve zorluk derecesini açıkça belirtiyor. Görseller de eklenerek yüksek seviyeli bilgi hızlıca aktarılıyor.\n\nYazar, <summary> ve <details> etiketlerinin sırasını hatırlamak için \"details-summary\" şeklinde bir akronim öneriyor ve GitHub'ın Markdown editörüne bu etiketler için bir buton eklemesini talep ediyor. Bu basit ama etkili yaklaşım, AI‑yazılı PR'ların okunabilirliğini artırarak geliştiricilerin zamanını korumayı hedefliyor.",
+  "onemli_maddeler": [
+    "GitHub Markdown, <details><summary> etiketlerini destekler; bu sayede PR açıklamaları gizlenip genişletilebilir.",
+    "İlk paragraf insan tarafından seçilen kısa bir özet olur, geri kalan detaylar AI tarafından üretilir ve <details> içinde saklanır.",
+    "Özet kısmına model adı ve çaba seviyesi eklenerek PR'ın kaynağı ve zorluğu netleştirilir.",
+    "Willison, bu yöntemi Datasette ve llm projelerinde uygulayarak PR okunabilirliğini artırdığını gösterdi."
+  ],
+  "kategori": "diger",
+  "onem": 3,
+  "onem_gerekce": "Geliştiricilerin AI‑yazılı PR açıklamalarının okunabilirliğini artıran pratik bir öneri; sektörel etkisi sınırlı ama geniş bir geliştirici kitlesi için faydalı.",
+  "etiketler": [
+    "github",
+    "markdown",
+    "ai-generated",
+    "pr",
+    "details-summary"
+  ],
+  "anilan_modeller": [],
+  "yorum_tr": "Bu yöntem, AI destekli kodlama akışlarında insan denetimini korurken bilgi yoğunluğunu yönetmek isteyen ekipler için düşük maliyetli bir iyileştirme sunuyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://static.simonwillison.net/static/2026/details-summary-pr.gif",
+  "url": "https://simonwillison.net/2026/Nov/9/details-summary/",
+  "source": "Simon Willison",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-09T04:25:05.000Z",
+  "slug": "hide-your-slop-pr-descriptions-behind"
+}
