@@ -1,0 +1,117 @@
+{
+  "baslik_tr": "Gemini 4 Carbon artık kullanılabilir",
+  "ozet_tr": "Google, Gemini 4 Carbon modelini geliştiriciler, işletmeler, bilim insanları ve son kullanıcılar için kullanıma açtı. Carbon, siber güvenlik, çok adımlı kodlama ve bilimsel araştırma gibi zorlu görevlerde sınırları zorlayan bir performans sunuyor.",
+  "detayli_icerik_tr": "Google, Gemini 4 Carbon'ı bugün API, Google AI Studio ve Gemini for Business üzerinden tüm ücretli geliştiricilere ve işletmelere aynı giriş fiyatı (girdi token başına 2 $, çıktı token başına 10 $) ile sunuyor. Carbon, önceki nesil Gemini 4 Argon'dan daha fazla token kullanarak derinlemesine akıl yürütme, uzun vadeli doğrulama döngüleri ve kapsamlı veri çekme yetenekleri sağlıyor. Model, siber güvenlik savunucuları, karmaşık çok‑adımlı kodlama ve hata ayıklama, açık uçlu bilimsel keşif gibi sınırları zorlayan görevlerde kullanılmak üzere tasarlandı.\n\nYeni /swarm özelliği sayesinde tek bir istemle birden fazla Carbon ajanı koordine edilerek gerçek zamanlı ekip çalışması yürütülebiliyor. Geliştiriciler, mimari tasarım, koordinasyon ve denetim gibi derin akıl yürütme gerektiren rolleri Carbon'a atarken, daha hafif modellerle paralel çalışma alanları ve adversarial doğrulayıcılar oluşturabiliyor. Bu yapı, tarihsel fotoğraflardan Eiffel Kulesi'nin 1887‑1889 inşaatını Three.js tabanlı 3D sergiye dönüştürmekten, 906 bin üçgenli bir ofis modelini gece boyunca inşa etmeye kadar çeşitli örneklerde gösterildi.\n\nPerformans açısından Carbon, bağımsız benchmarklarda öne çıkıyor: CursorBench 4.0, Perplexity’nin WANDR ve Zapier’in AutomationBench testlerinde #1 sırada yer alırken, yeni Multimodal Knowledge Agent (MKA) benchmarkında #2 konumunda bulunuyor ve aynı zamanda görev başına maliyeti bir sonraki en iyi dış modelin %2’si kadar düşük. Siber güvenlikte ise SEC‑bench Pro, ExploitGym ve CWE‑bench v1 gibi testlerde %99 bloklama oranı, %0,8 ihlal oranı ve %2,17 otomatik saldırı başarı oranı gibi rakamlarla liderlik sağlıyor. Güvenlik önlemleri sayesinde Gray Swan IPI benchmarkında %0 prompt‑injection başarısı elde edildi.\n\nBilimsel ve matematiksel akıl yürütmede de Carbon, fizik, kimya ve yaşam bilimleri problemlerinde çok adımlı çözüm yeteneklerini artırdı. Axiom Bio, toksisite mekanizmalarını keşfetmek için Carbon'u tercih ederken, Google araştırmacıları AlphaProof Code çerçevesiyle kriptografik protokollerin formal kanıtlarını haftalar içinde üretmeyi başardı. Laboratuvar verilerindeki anormallikleri tespit etme, protein homoloji aramaları ve büyük ölçekli veri setlerinden bilgi çıkarma konularında da model, mevcut yöntemlerin çok ötesinde verimlilik sağladı.",
+  "onemli_maddeler": [
+    "Carbon, geliştiriciler, işletmeler ve bilim insanları için aynı giriş fiyatı ($2/1M input, $10/1M output) ile kullanılabilir.",
+    "CursorBench 4.0, WANDR ve AutomationBench testlerinde #1, Multimodal Knowledge Agent benchmarkında #2 olarak lider konumda.",
+    "Siber güvenlikte %99 bloklama, %0,8 ihlal ve %2,17 otomatik saldırı başarı oranı gibi rekor güvenlik performansı.",
+    "/swarm özelliği sayesinde çok‑ajanlı gerçek zamanlı iş akışları ve 3D görselleştirme yetenekleri.",
+    "Güvenlik ve uyumluluk iyileştirmeleri: %0 prompt‑injection başarısı, %92 görev doğruluk oranı (agentic honesty benchmark)."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Gemini 4 Carbon, çok‑adımlı kodlama, siber güvenlik ve bilimsel araştırma gibi kritik alanlarda sınırları zorlayan performans ve maliyet avantajı sunarak AI ekosisteminde yeni bir çıta belirliyor.",
+  "etiketler": [
+    "Gemini",
+    "Carbon",
+    "AI",
+    "Cybersecurity",
+    "Multimodal"
+  ],
+  "anilan_modeller": [
+    "Gemini 4 Argon",
+    "Gemini 4 Carbon"
+  ],
+  "yorum_tr": "Carbon, yüksek maliyetli araştırma ve güvenlik görevlerini daha erişilebilir kılıyor; geliştiriciler karmaşık çok‑adımlı iş akışlarını otomatikleştirirken, kurumlar siber savunma ve veri analitiğinde daha güvenilir bir yardımcı elde ediyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Gemini 4 Carbon",
+      "benchmark": "CursorBench 4.0 rank",
+      "skor": 1,
+      "birim": "rank",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Carbon ranks #1 on CursorBench 4.0"
+    },
+    {
+      "model": "Gemini 4 Carbon",
+      "benchmark": "Perplexity WANDR rank",
+      "skor": 1,
+      "birim": "rank",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Carbon ranks #1 on Perplexity’s WANDR"
+    },
+    {
+      "model": "Gemini 4 Carbon",
+      "benchmark": "Zapier AutomationBench rank",
+      "skor": 1,
+      "birim": "rank",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Carbon ranks #1 on Zapier’s AutomationBench"
+    },
+    {
+      "model": "Gemini 4 Carbon",
+      "benchmark": "Multimodal Knowledge Agent (MKA) rank",
+      "skor": 2,
+      "birim": "rank",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Carbon ranks #2 on the Multimodal Knowledge Agent (MKA) benchmark"
+    },
+    {
+      "model": "Gemini 4 Carbon",
+      "benchmark": "Agentic honesty benchmark pass rate",
+      "skor": 92,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "it passed 92% of tasks (compared to 70% for Argon)"
+    },
+    {
+      "model": "Gemini 4 Carbon",
+      "benchmark": "Prompt injection attack success rate (Gray Swan IPI)",
+      "skor": 0,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Carbon achieved a 0% prompt injection attack success rate on the Gray Swan IPI benchmark"
+    },
+    {
+      "model": "Gemini 4 Carbon",
+      "benchmark": "Cyber attack block rate (ExploitBench & CyScenarioBench)",
+      "skor": 99,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Carbon blocked 99% of attack trajectories"
+    },
+    {
+      "model": "Gemini 4 Carbon",
+      "benchmark": "Breach rate (simulated cyberattack testing)",
+      "skor": 0.8,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "The Carbon safeguards lowered the per-attempt breach rate to just 0.8%"
+    },
+    {
+      "model": "Gemini 4 Carbon",
+      "benchmark": "Automated cyberattack query success rate (Gray Swan)",
+      "skor": 2.17,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Carbon lowered the automated cyberattack query success rate to 2.17% (down from 9.86% on Argon)"
+    }
+  ],
+  "gorsel_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini_4_carbon_key_art_16-9_lockup.width-1300.jpg",
+  "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+  "source": "Google Gemini",
+  "sourceTier": "resmi",
+  "date": "2026-11-10T16:00:00.000Z",
+  "slug": "gemini-4-carbon-is-now-available-2"
+}

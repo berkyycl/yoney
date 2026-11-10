@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "Google, Antigravity için Agent Swarm modunu test ediyor",
+  "ozet_tr": "Google, Antigravity platformunda çoklu ajanların paralel görevleri bölüştürerek çalıştığı yeni bir \"Swarm\" modunu deniyor. Kullanıcılar, bu komut sayesinde ajanların mesaj panosunda gerçekleşen koordinasyonu doğrudan görebilecek ve karmaşık iş akışlarını daha verimli hâle getirebilecek.",
+  "detayli_icerik_tr": "Google, Antigravity içinde \"Swarm\" adı verilen bir bee‑işareti slash komutunu test ediyor. Komut, paralelleştirilebilen görevleri birden fazla ajan arasında dağıtarak her birine farklı roller atıyor; örneğin Greeter ve Verifier gibi ajanlar senaryoyu tanımlayıp koordineli bir şekilde çalışıyor. Test sırasında, bir gösterge paneli aracılığıyla panodaki mesajlar, katılan ajanlar ve iş akışı grafiği kullanıcıya sunuldu.\n\nSwarm modunun en dikkat çeken özelliği, Kimi, Meta’nın Contemplating Mode ya da Grok Heavy gibi diğer çok‑ajan çözümlerinden farklı olarak koordinasyonun tamamen şeffaf olması. Kullanıcılar, ajanların birbirlerine gönderdiği mesajları doğrudan görebiliyor ve bu sayede görev dağılımının nasıl gerçekleştiğini izleyebiliyor. Ancak, bu şeffaflık aynı zamanda yüksek token tüketimine işaret ediyor; özellikle Gemini 4 Argon ya da Carbon modelleriyle çalıştırıldığında kota tüketiminin hızla artacağı uyarısı bulunuyor.\n\nSwarm, daha önce TestingCatalog tarafından tespit edilen ve son sürümlerde kaybolmuş olan \"Chief of Staff\" adlı deneysel bir Antigravity ajanıyla da bağlantılı olabilir. Chief of Staff, bir ajanı tek başına çalıştırmak yerine sürüleri yönlendirmek için tasarlanmıştı ve Swarm'un seçili‑mod simgesi bu eski ikona benziyor. Bu durum, Google'ın çok‑ajan orkestrasyonunu tek bir ajan üzerinden değil, dinamik sürüler üzerinden gerçekleştirmeye yöneldiğini gösteriyor.\n\nGoogle, Antigravity'nin ajan yeteneklerini genişletmeye devam ederken, Swarm modunun karmaşık görevlerde ham model performansının ötesinde bir verimlilik sağlayıp sağlayamayacağını görmek için benchmark sonuçlarına ihtiyaç duyulacak. Modun sadece Antigravity içinde kalıp kalmayacağı, AI Studio ve Google Cloud gibi diğer platformlara da yayılıp yayılmayacağı ise henüz belirsiz. Şirketin bu hafta içinde Antigravity’ye dair ek değişiklikler planladığına dair ipuçları da mevcut.",
+  "onemli_maddeler": [
+    "Swarm modu, ajanların mesaj panosunda gerçekleşen koordinasyonu şeffaf bir şekilde göstererek çok‑ajan iş akışını görselleştiriyor.",
+    "Komut, görevleri paralel ajanlara dağıtarak Gemini 4 Argon ve Carbon gibi büyük modellerde yüksek token tüketimine yol açabilir.",
+    "Swarm, önceki \"Chief of Staff\" deneyine benzer bir yapıyı yeniden canlandırarak dinamik sürü yönetimini mümkün kılıyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Swarm modu, Google'ın çoklu ajan koordinasyonunu görünür kılarak Antigravity performansını artırma potansiyeli taşıdığı için sektörel rekabette önemli bir adım.",
+  "etiketler": [
+    "Google",
+    "Antigravity",
+    "Swarm",
+    "AI agents",
+    "multi-agent"
+  ],
+  "anilan_modeller": [
+    "Gemini 4 Argon",
+    "Gemini 4 Carbon",
+    "Claude Fable 5.2"
+  ],
+  "yorum_tr": "Swarm modu, görevleri paralelize ederek modelin tek başına sağlayamadığı verimliliği artırabilir; geliştiriciler daha karmaşık iş akışlarını düşük gecikmeyle yönetebilirken, kullanıcılar da daha hızlı sonuçlar görebilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/11/Screenshot-2026-11-10-at-00.32.21.png",
+  "url": "https://www.testingcatalog.com/google-testing-agent-swarm-mode-for-antigravity/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-10T13:49:12.000Z",
+  "slug": "google-testing-agent-swarm-mode-for-antigravity"
+}

@@ -1,0 +1,95 @@
+{
+  "baslik_tr": "Anthropic Fable 5.2, Gerçek Freelance İşlerin %41'ini Tamamladı",
+  "ozet_tr": "Anthropic'in yeni modeli Fable 5.2, Scale Labs ve CAIS'in Remote Labor Index (RLI) benchmark'inde %41,3 başarı oranı yakalayarak bir önceki yıl %2,5 olan seviyenin 16 katına ulaştı. Bu performans, aynı testte ikinci sırada yer alan Opus 5.5 (%21,25) ve GPT‑6 Astra (%20,83) gibi rakipleri büyük ölçüde geride bırakıyor.",
+  "detayli_icerik_tr": "Anthropic, Fable 5.2 modeliyle Remote Labor Index (RLI) adlı benchmark'te çığır açtı. Scale Labs ve Center for AI Safety (CAIS) tarafından yürütülen bu test, AI ajanlarının gerçek freelance projelerini müşterinin kabul edeceği kalitede tamamlayıp tamamlamadığını ölçüyor. Toplam 240 proje, 358 doğrulanmış Upwork profesyonelinden derlenmiş ve yaklaşık 144.000 $ değerinde. Ortalama bir işin maliyeti 632,60 $ ve bir insan freelancer ortalama 29 saat harcıyor.\n\nFable 5.2, testte %41,3 başarı oranı elde ederek bir önceki yıl %2,5 ile liderlik yapan Manus modelinin 16 katı performans gösterdi. Model, Temmuz 2026'da %16 ile lider konumda olan Fable 5'in de iki buçuk katı bir skor elde etti. Doğrudan öncülü Fable 5.1 ise %18'in altında bir oranla geride kaldı. Sıralamada ikinci sırada Anthropic Opus 5.5 (%21,25) ve üçüncü sırada OpenAI GPT‑6 Astra (%20,83) yer alıyor. Google'ın Gemini Argon 4 modeli ise %17,08 ile beşinci sırada.\n\nScale Labs, Fable 5.2'nin özellikle ses ve müzik düzenleme, mimari ve iç mekan tasarımı ve 3D modelleme alanlarında büyük sıçramalar yaptığını vurguluyor. Model, uzun ve karmaşık projeleri de önceki nesil modellerin başarısız olduğu durumlarda tamamlayabiliyor. Testte başarılı tamamlanan işlerin neredeyse 50 tanesi, daha önce hiçbir AI ajanının çözemediği görevlerdi. Ancak hâlâ endüstriyel ürün tasarımı ve animasyon gibi bazı alanlarda zayıf kalıyor.\n\nDeğerlendirme süreci, insan uzmanların AI çıktısını ilgili profesyonel yazılımlarda (Blender, GIMP, Audacity vb.) açıp insan freelancer'ın teslimatıyla karşılaştırmasıyla yapılıyor. Otomatik AI denetçileri, hâlâ profesyonel araçları yeterince kullanamadıkları için hatalı sonuçları kaçırıyor ve modelleri fazla yüksek puanlandırıyor. Bu durum, RLI'nin insan gözetimli doğrulama sürecinin önemini bir kez daha ortaya koyuyor.",
+  "onemli_maddeler": [
+    "Fable 5.2, Remote Labor Index'te %41,3 başarı oranı yakalayarak bir önceki yıl %2,5 olan seviyenin 16 katına ulaştı.",
+    "Model, ses/müzik düzenleme, mimari tasarım ve 3D modelleme gibi karmaşık görevlerde rakiplerinden iki kat daha yüksek performans gösterdi.",
+    "Test, 240 gerçek freelance projesi üzerinden yürütülüyor; toplam iş değeri yaklaşık 144.000 $, ortalama proje maliyeti 632,60 $.",
+    "İnsan uzmanlar tarafından yapılan manuel doğrulama, otomatik AI denetçilerinin hâlâ yetersiz olduğunu gösterdi."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Remote Labor Index gibi gerçek dünya iş akışlarını ölçen bir benchmark'te %41'lik başarı oranı, AI'nın profesyonel üretkenlikte kritik bir dönüm noktasına ulaştığını gösteriyor ve sektördeki rekabeti yeniden şekillendirebilir.",
+  "etiketler": [
+    "Anthropic",
+    "Fable 5.2",
+    "Remote Labor Index",
+    "AI benchmark",
+    "freelance otomasyonu"
+  ],
+  "anilan_modeller": [
+    "Fable 5.2",
+    "Fable 5.1",
+    "Fable 5",
+    "Opus 5.5",
+    "GPT-6 Astra",
+    "Gemini Argon 4",
+    "GPT-5.2",
+    "Gemini 3 Pro"
+  ],
+  "yorum_tr": "Fable 5.2'nin bu seviyeye ulaşması, AI ajanlarının gerçek iş dünyasındaki uygulanabilirliğini büyük ölçüde artırıyor; geliştiriciler daha karmaşık entegrasyonlar üzerine odaklanabilirken, kullanıcılar da daha yüksek kalite ve verimlilik beklentisi içinde olacak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Fable 5.2",
+      "benchmark": "Remote Labor Index",
+      "skor": 41.3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Anthropic's new model Fable 5.2 makes a massive leap on the Remote Labor Index, completing more than 41 percent of real freelance projects at professional quality."
+    },
+    {
+      "model": "Opus 5.5",
+      "benchmark": "Remote Labor Index",
+      "skor": 21.25,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "The next spots on the current leaderboard go to Anthropic's Opus 5.5 at 21.25 percent"
+    },
+    {
+      "model": "GPT-6 Astra",
+      "benchmark": "Remote Labor Index",
+      "skor": 20.83,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "OpenAI's GPT 6 Astra at 20.83 percent"
+    },
+    {
+      "model": "Gemini Argon 4",
+      "benchmark": "Remote Labor Index",
+      "skor": 17.08,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Google's strongest model in the test, Gemini Argon 4, lands in fifth place at 17.08 percent"
+    },
+    {
+      "model": "Fable 5",
+      "benchmark": "Remote Labor Index",
+      "skor": 16,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "In July, Fable 5, an older model from the same family, was still in front at about 16 percent."
+    },
+    {
+      "model": "Manus",
+      "benchmark": "Remote Labor Index",
+      "skor": 2.5,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "When the benchmark launched about a year ago, the top system at the time, Manus, managed just 2.5 percent of tasks."
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/07/Remote-labor-index-bench-title.png",
+  "url": "https://the-decoder.com/anthropics-fable-5-2-completes-41-percent-of-real-freelance-jobs-up-from-2-5-percent-a-year-ago/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-10T14:07:47.000Z",
+  "slug": "anthropic-s-fable-5-2-completes-41-percent-of-real-freelance"
+}

@@ -1,0 +1,51 @@
+{
+  "baslik_tr": "Google Gemini 4 Carbon, Multimodal Knowledge Agent (MKA) Benchmark'ında kalite ve maliyet açısından öne çıktı",
+  "ozet_tr": "Google DeepMind, Artificial Analysis iş birliğiyle Multimodal Knowledge Agent (MKA) benchmark'ını tanıttı. Görsel açıdan karmaşık dosyalar üzerinden gerçek dünya bilgi işi görevlerini çözme yeteneğini ölçen bu testte, Gemini 4 Carbon kalite sıralamasında ikinci sırada yer alırken, maliyet açısından da en iyi performans gösterdi.",
+  "detayli_icerik_tr": "Google, görsel odaklı profesyonel iş akışlarını değerlendirmek amacıyla Multimodal Knowledge Agent (MKA) benchmark'ını duyurdu. Benchmark, mimarlar, biyologlar, sigorta uzmanları ve veri bilimcileri gibi 10 sektördeki 83 meslek grubundan uzmanların katkısıyla 200 çok adımlı görevden oluşuyor; her görev üç ila sekiz saatlik bir iş sürecini temsil ediyor ve yaklaşık 70 evet/hayır kontrolünden oluşan bir rubrikle değerlendiriliyor. \n\nGörevler, görsel dosyaların (mimari planlar, mühendislik şemaları, tablolar vb.) yanı sıra metin girdilerini de içeriyor; bu sayede sadece metin tabanlı benchmark'ların yetersiz kaldığı gerçek dünyadaki bilgi işini ölçmek mümkün oluyor. Değerlendirme, aynı açık kaynaklı ajan çerçevesi (Stirrup) ve aynı araç setiyle çalışan modelleri karşılaştırıyor; sonuçlar, bir otoriter otomatik puanlayıcı tarafından inceleniyor ve uzmanların %96'lık bir mutabakat oranı sağlanıyor. \n\nTest sonuçları, frontier modellerin verimlilik açısından büyük farklılıklar gösterdiğini ortaya koydu; bazı modeller bir görevi tamamlamak için ortalama 30 tur (turn) kullanırken, diğerleri 130 tura kadar çıkıyor. Gemini 4 Carbon, kalite açısından ikinci sırada yer alırken, aynı görevleri en yüksek puanlı modele kıyasla ortalama 6 kat daha düşük maliyetle tamamlayarak kalite‑maliyet pareto sınırının üzerinde konumlandı. \n\nGemini 4 Carbon, bugün Gemini API üzerinden Google AI Studio'da kullanılabilir hâlde ve geliştiriciler yeni Gemini 4 dokümantasyonu ile entegrasyonlarını başlatabilir. Benchmark'ın 10 halka açık görev seti Hugging Face'te paylaşılarak, topluluğun kendi ajanlarını test etmesi teşvik ediliyor.",
+  "onemli_maddeler": [
+    "MKA benchmark'ı, görsel‑ağır iş akışlarını ölçen ilk büyük ölçekli çok‑modelli ajan testi olarak tanıtıldı.",
+    "Gemini 4 Carbon, kalite sıralamasında #2 konumunda ve aynı görevlerde en yüksek modelin maliyetinin 6 katı kadar düşük bir maliyetle çalışıyor.",
+    "Uzmanların %96'ı, otomatik puanlayıcı ile aynı sonuçları onaylayarak değerlendirme sürecinin güvenilirliğini pekiştirdi."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Yeni bir çok‑modelli ajan benchmark'ının tanıtılması ve Gemini 4 Carbon'un bu benchmark'ta gösterdiği yüksek kalite‑maliyet dengesi, görsel odaklı iş süreçlerinde AI değerlendirme standartlarını yükseltiyor.",
+  "etiketler": [
+    "multimodal",
+    "benchmark",
+    "AI agents",
+    "Gemini",
+    "visual AI"
+  ],
+  "anilan_modeller": [
+    "Gemini 4 Carbon"
+  ],
+  "yorum_tr": "MKA benchmark'ı, görsel veriyle çalışan profesyoneller için daha gerçekçi bir performans ölçütü sunarak model geliştirmeyi yönlendirecek. Gemini 4 Carbon'un maliyet avantajı, geniş çaplı kurumsal benimsenmeyi hızlandırabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Gemini 4 Carbon",
+      "benchmark": "Multimodal Knowledge Agent (MKA) quality rank",
+      "skor": 2,
+      "birim": "rank",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Gemini 4 Carbon achieves #2 in quality among the models we tested"
+    },
+    {
+      "model": "Gemini 4 Carbon",
+      "benchmark": "Multimodal Knowledge Agent (MKA) cost efficiency",
+      "skor": 6,
+      "birim": "x",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "completes tasks at 6x lower cost on average compared to the top scoring model"
+    }
+  ],
+  "gorsel_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/01_Hero_MKA_Benchmark_2784x1566.png",
+  "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/multimodal-knowledge-agent-benchmark/",
+  "source": "Google Gemini",
+  "sourceTier": "resmi",
+  "date": "2026-11-10T16:00:00.000Z",
+  "slug": "introducing-the-multimodal-knowledge-agent-benchmark"
+}

@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "Karar Modeliyle LLM Ağırlıkları Doğrudan Düzenlenebiliyor: Laya Açık Kaynak Projesi",
+  "ozet_tr": "Reddit topluluğu LocalLLaMA, iki ay süren geliştirme sonrası Laya adlı açık kaynak karar modelini tanıttı. Bu model, enerji‑tabanlı bir karar motorundan öğrenerek Qwen 3.5 0.8B gibi küçük bir LLM'ye yeni bir beceri kazandırıyor ve ağırlık düzenlemelerini sadece 3 ms sürede gerçekleştiriyor.",
+  "detayli_icerik_tr": "18 Eylül tarihinde topluluğun talebi üzerine Laya adlı karar modeli ilk kez yayınlandı ve büyük bir ilgi gördü. Geliştirici Nandakishor_ml, MIT'in doğrudan ağırlık düzenleme çalışmasından ilham alarak aynı prensibi bir karar modeli üzerinden uygulamayı başardı. Bu yeni yaklaşım, enerji‑tabanlı bir karar motorundan elde edilen \"vadi\" benzeri kararları LLM'nin ağırlıklarına yazarak modelin yanıtlarını istenen yönde yönlendiriyor.\n\nLaya, Qwen 3.5 0.8B modeline bir araç çağırma (tool calling) becerisi kazandırmak için bir distilasyon süreci izliyor. Karar motorunun ürettiği kararlar, bir peyzajın vadileri gibi davranıyor; modelin her cevabı bu vadilere doğru kayıyor ve sonuçta daha dürüst bir güven skoru elde ediliyor. Bu yöntem, geleneksel LoRA adaptasyonuna benzer bir performans sunarken, ağırlık düzenlemesi sadece 3 milisaniye sürüyor ve modelin hafıza kaybına uğraması gibi bir sorun yaşanmıyor.\n\nProjenin kodları ve deneysel sonuçları Kaggle üzerinde bir notebook olarak paylaşıldı (https://www.kaggle.com/code/nandakishorconvai/fast-edits-decsion-model). Topluluk, bu hızlı ve hafif ağırlık düzenleme tekniğinin, özellikle düşük kaynaklı ortamlarda ve hızlı prototipleme süreçlerinde büyük bir potansiyel taşıdığını belirtiyor. Laya'nın açık kaynak lisansı, geliştiricilerin kendi modellerine benzer karar tabanlı düzenlemeler eklemelerini kolaylaştırıyor.\n\nBu gelişme, LLM adaptasyon yöntemlerinde yeni bir yön açarak, eğitim maliyetlerini düşürürken aynı zamanda model davranışını daha ince ayarlarla kontrol etme imkanı sunuyor. Ancak, yöntemin geniş ölçekli modellerde ve farklı görevlerde ne kadar tutarlı olduğu henüz kapsamlı bir benchmark ile doğrulanmadı.",
+  "onemli_maddeler": [
+    "Laya, karar modeli üzerinden LLM ağırlıklarını 3 ms içinde düzenleyebilen ilk açık kaynak sistem.",
+    "Qwen 3.5 0.8B modeline araç çağırma becerisi kazandırmak için enerji‑tabanlı bir distilasyon yöntemi kullanılıyor.",
+    "Performans açısından LoRA'ya eşdeğer sonuçlar verirken hafıza kaybı yaşanmıyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 3,
+  "onem_gerekce": "Yeni bir ağırlık düzenleme yöntemi topluluk içinde ilgi çekiyor, ancak henüz geniş çaplı benchmark ve endüstri uygulamalarıyla doğrulanmadığı için etkisi sınırlı.",
+  "etiketler": [
+    "LLM",
+    "karar modeli",
+    "ağırlık düzenleme",
+    "LoRA",
+    "open-source"
+  ],
+  "anilan_modeller": [
+    "Qwen 3.5 0.8B"
+  ],
+  "yorum_tr": "Laya, düşük maliyetli ve hızlı adaptasyon ihtiyacı duyan geliştiriciler için çekici bir seçenek sunuyor; ancak yöntemin farklı model ölçekleri ve görevlerdeki tutarlılığı ilerleyen çalışmalarla netleşecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/t1xa0p9ssr0i1.png?width=640&crop=smart&auto=webp&s=3c8d76b9ea67e739b6e5ba74337f6de8e9fa214c",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xski9d/decision_model_to_edit_llm_weight_directly_no/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-10T11:27:44.000Z",
+  "slug": "decision-model-to-edit-llm-weight-directly-no-training"
+}

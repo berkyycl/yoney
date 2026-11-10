@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "Google, iki yeni TPU çipiyle AI donanım portföyünü genişletiyor",
+  "ozet_tr": "Google, bulut hizmetlerinde dışa bağımlılığı azaltmak amacıyla TPU 8tx ve TPU 8i Max adını verdiği iki yeni donanım varyantını tanıttı. TPU 8tx, gizli eğitim ve çıkarım (inference) süreçlerini donanım seviyesinde korurken, TPU 8i Max bellek kapasitesini iki katına çıkararak büyük ölçekli sorgularda daha fazla veri işleyebiliyor.",
+  "detayli_icerik_tr": "Google, bulut bilişim iş yüklerinde üçüncü taraf çiplere olan bağımlılığını azaltmak için yeni nesil Tensor Processing Unit (TPU) serisini genişletti. Şirket, bu Pazartesi duyurusunda, sekizinci nesil TPU'ların iki yeni varyantı olan TPU 8tx ve TPU 8i Max'i tanıttı. Her iki çip de Nisan 2026'da tanıtılan TPU 8t ve TPU 8i tabanlı olup, önceki modellerin sunduğu yüksek çıkarım kapasitesi ve büyük eğitim gereksinimlerini temel alıyor.\n\nTPU 8tx, AMD ile ortaklaşa geliştirilen ve TPU 8t üzerine inşa edilen bir çip. En büyük yeniliği, güvenliği doğrudan donanım katmanına entegre etmesi; böylece hassas veri ve model ağırlıkları, aktif kullanım sırasında bile izole ve korunmuş durumda. Ayrıca, özel bir çıkarım ağı sayesinde eğitim sırasında aynı anda akıl yürütme (reasoning) yapabiliyor; bu da şirketlerin kendi verileri üzerinde modeli yeniden eğitmek için veriyi cihazlar arasında taşıma ihtiyacını ortadan kaldırıyor.\n\nTPU 8i Max ise, Nisan ayında piyasaya sürülen iki adet TPU 8i çipinin birleştirilmesiyle elde edilen tek bir paket. Bellek kapasitesi, işlem gücü ve bant genişliği iki katına çıkarılarak, AI modellerinin sorgulama sırasında çok daha geniş veri setlerini işleyebilmesi sağlanıyor. Bu, özellikle büyük dil modelleri ve çoklu modalite uygulamaları için kritik bir avantaj sunuyor.\n\nBu hamle, Microsoft, Amazon, OpenAI ve Anthropic gibi diğer büyük ölçekli bulut sağlayıcılarının da kendi AI‑özel yarı iletkenlerini geliştirmeye yöneldiği bir dönemde geliyor. Nvidia’nın pazar hakimiyeti, CEO’su Jensen Huang’ın kişisel skandallarıyla sarsılırken, Google’ın kendi çip portföyünü çeşitlendirmesi sektörde rekabeti artırabilir ve donanım maliyetlerinde yeni denge noktaları yaratabilir.",
+  "onemli_maddeler": [
+    "TPU 8tx, gizli eğitim ve çıkarım süreçlerini donanım seviyesinde güvenli hale getiriyor.",
+    "TPU 8i Max, bellek ve işlem gücünü iki katına çıkararak büyük ölçekli AI sorgularını destekliyor.",
+    "Google, dış çip bağımlılığını azaltarak bulut AI hizmetlerinde maliyet ve performans avantajı hedefliyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Google'ın yeni TPU varyantları, AI donanım pazarında Nvidia’ya alternatif sunarak rekabeti kızıştırıyor ve bulut hizmetlerinde güvenlik ile ölçeklenebilirlik açısından önemli bir adım teşkil ediyor.",
+  "etiketler": [
+    "AI",
+    "AI chips",
+    "Google",
+    "TPU",
+    "hardware"
+  ],
+  "anilan_modeller": [
+    "TPU 8tx",
+    "TPU 8i Max",
+    "TPU 8t",
+    "TPU 8i"
+  ],
+  "yorum_tr": "Bu güncelleme, bulut sağlayıcılarının kendi çiplerini üretme eğilimini pekiştirerek donanım maliyetlerini düşürme ve veri gizliliğini artırma yönünde sektöre yeni bir ivme kazandırabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://techcrunch.com/wp-content/uploads/2024/09/GettyImages-1484622878.jpeg?resize=1200,800",
+  "url": "https://techcrunch.com/2026/11/10/google-broadens-its-ai-hardware-portfolio-with-two-new-specialized-chips/",
+  "source": "TechCrunch AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-10T15:54:08.000Z",
+  "slug": "google-broadens-its-ai-hardware-portfolio-with-two-new-speci"
+}

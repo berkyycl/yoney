@@ -1,0 +1,30 @@
+{
+  "baslik_tr": "AlphaProof Code: Derin Yazılım Doğrulama İçin Yeni Bir Araç",
+  "ozet_tr": "Google DeepMind, AlphaProof Code adlı yeni doğrulama aracını tanıttı. Bu sistem, Lean tabanlı kanıtları otomatik olarak üreterek Signal'in çekirdek şifreleme katmanını üç milyon satır kodla doğruladı. Yazılım güvenliği ve kriptografi alanında çığır açıcı bir adım olarak öne çıkıyor.",
+  "detayli_icerik_tr": "Google DeepMind, yapay zekâ destekli kanıt üretim sistemini AlphaProof Code adıyla duyurdu. Sistem, büyük ölçekli yazılım bileşenlerini formal bir dil olan Lean'e çevirerek otomatik kanıtlar oluşturuyor ve bu kanıtları matematiksel olarak doğruluyor. İlk gösterim, popüler anlık mesajlaşma uygulaması Signal'in çekirdek şifreleme protokolünün üç milyon satır Lean kanıtı ile incelenmesiyle gerçekleşti.\n\nAlphaProof Code, derin öğrenme modelleriyle birleşen bir akıllı ajan mimarisi kullanıyor. Bu ajanlar, kod tabanını analiz edip ilgili güvenlik özelliklerini tanımlıyor, ardından Lean içinde tutarlı ve eksiksiz kanıtlar üretmek için yönlendiriliyor. Sonuçta, geliştiriciler manuel doğrulama sürecine harcadıkları zamanı büyük ölçüde azaltarak, hataya açık noktaları daha erken aşamalarda tespit edebiliyor.\n\nSignal örneği, AlphaProof Code'un gerçek dünya kriptografik protokollerine uygulanabilirliğini gösteriyor. Üç milyon satır kanıt, sadece bir akademik gösterimden öte, endüstri standartlarında bir güvenlik denetiminin otomatikleştirilebileceğini kanıtlıyor. Bu, özellikle yüksek güvenlik gerektiren finans, sağlık ve devlet uygulamaları için kritik bir avantaj sunuyor.\n\nDeepMind, AlphaProof Code'un açık kaynaklı bir SDK olarak sunulacağını ve geliştiricilerin kendi projelerinde entegrasyonunu kolaylaştıracağını belirtti. Araç, Lean topluluğu ve mevcut doğrulama çerçeveleriyle uyumlu olacak şekilde tasarlandı; böylece mevcut kod tabanlarıyla sorunsuz bir geçiş sağlanabilecek. Gelecek güncellemelerde, daha geniş programlama dilleri ve daha karmaşık sistemler için destek eklenmesi planlanıyor.",
+  "onemli_maddeler": [
+    "AlphaProof Code, üç milyon satır Lean kanıtı üreterek Signal'in çekirdek şifrelemesini doğruladı.",
+    "Araç, yapay zekâ destekli ajanlar sayesinde büyük ölçekli kod tabanlarını otomatik olarak analiz edip kanıt üretiyor.",
+    "DeepMind, AlphaProof Code'u açık kaynak SDK olarak sunarak geliştiricilerin kendi projelerinde kullanmasını hedefliyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Yazılım doğrulama süreçlerini otomatikleştirerek güvenlik denetim maliyetlerini düşürmesi ve kritik kriptografik protokollerin kanıtlanabilirliğini sağlaması, sektörde büyük bir etki yaratma potansiyeline sahip.",
+  "etiketler": [
+    "AlphaProof Code",
+    "Lean",
+    "software verification",
+    "Signal encryption",
+    "DeepMind"
+  ],
+  "anilan_modeller": [],
+  "yorum_tr": "AlphaProof Code, güvenlik odaklı yazılım geliştirme süreçlerinde doğrulama süresini kısaltarak hem geliştiricilere hem de son kullanıcılara daha güvenli ürünler sunma imkanı tanıyor. Açık kaynak SDK olarak sunulması, ekosistemin hızlı benimsenmesini ve yeni inovasyonların ortaya çıkmasını teşvik edecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://lh3.googleusercontent.com/hn6AiI6lYFo6chi1mL6uJ9nOW9UXfsAKnSyOApiie2urHNU2tmSPUmGn0hNfWyYLRcsWCGjCIrBZSCt1ihZmvW-LDJPfyolsr5w-yvzlknZVzmaH=w528-h297-n-nu-rw-lo",
+  "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+  "source": "Google DeepMind",
+  "sourceTier": "resmi",
+  "date": "2026-11-10T12:02:28.000Z",
+  "slug": "introducing-alphaproof-code-a-breakthrough-in-verifying-comp"
+}

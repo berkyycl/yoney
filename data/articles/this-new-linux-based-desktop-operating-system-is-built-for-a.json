@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "Kora: AI Odaklı Yeni Linux Tabanlı Masaüstü İşletim Sistemi",
+  "ozet_tr": "Kora, AI yerli kullanıcıları için tasarlanmış, Linux çekirdeği üzerine kurulu yeni bir masaüstü işletim sistemi olarak tanıtıldı. 2027'de piyasaya sürülmesi planlanan sistem, farklı yapay zeka modellerini sistem seviyesinde birleştirerek geliştiricilere ve yaratıcı profesyonellere tek bir platformda bütünleşik bir deneyim sunmayı hedefliyor.",
+  "detayli_icerik_tr": "Kora, CEO ve kurucu ortak Kirt McMaster tarafından \"AI native, not mass market\" yaklaşımıyla geliştirildi ve Windows ya da macOS'a alternatif bir masaüstü ortamı sunmayı amaçlıyor. Sistem, kullanıcı etkileşimlerinden elde edilen bağlamı tüm AI araçları arasında paylaşarak, örneğin bir OpenAI modeliyle tasarım yapıp ardından Anthropic araçlarıyla kod dağıtımı gerçekleştirmeyi ve yerel bir modelle token maliyetlerini düşürmeyi mümkün kılıyor.\n\nLinux çekirdeği üzerine inşa edilen Kora, doğrudan donanımda çalışıyor ve Snapdragon PC'ler için Qualcomm iş birliğiyle, ayrıca x86-64 mimarisi sayesinde mevcut Intel ve AMD tabanlı bilgisayarlara da kurulabiliyor. Windows uygulamaları için yerleşik uyumluluk katmanları bulunurken, temel iletişim ve takvim gibi işlevler için yerel uygulamalar ve üçüncü taraf geliştiriciler için bir SDK da sunuluyor.\n\nKora'nın en yenilikçi özelliği \"nöral dosya sistemi\" olarak adlandırılan yapı. Dosyalar anlamlarıyla indeksleniyor; kullanıcılar dosya adını hatırlamasa bile, içerik hakkında hatırladıkları bir detayı yazarak arama yapabiliyor ve sistem ilgili dosyaları bulabiliyor. Bu, AI destekli sohbet botlarıyla etkileşime benzer bir deneyim sağlıyor.\n\nŞirket, Kora'yı önceki girişimi Playtron'un GameOS projesinden elde ettiği deneyimle şekillendirdi. GameOS'un mimarisi Kora içinde \"GameFrame\" adıyla yer alıyor ve yeterli donanıma sahip kullanıcıların PC oyunlarını da çalıştırabilmesini sağlıyor. Kora, en az 64 GB RAM gerektiren yüksek bellek kapasiteli makinelerde optimum performans sunacak şekilde optimize edildi; bu da Google'ın Gemini tabanlı Googlebook OS'undan iki kat daha fazla bellek anlamına geliyor.",
+  "onemli_maddeler": [
+    "Kora, AI modellerini sistem seviyesinde birleştirerek tek bir platformda bütünleşik çalışma imkanı sunuyor.",
+    "Linux tabanlı olmasına rağmen Windows uygulamaları için uyumluluk katmanları ve kendi SDK'sı bulunuyor.",
+    "Nöral dosya sistemi sayesinde dosyalar anlamlarıyla aranabiliyor, bu da AI destekli dosya yönetimini kolaylaştırıyor."
+  ],
+  "kategori": "diger",
+  "onem": 4,
+  "onem_gerekce": "AI odaklı yeni bir işletim sistemi, geliştiriciler ve yaratıcı profesyoneller için yeni bir ekosistem oluşturma potansiyeli taşıdığı için sektörde önemli bir yenilik olarak değerlendiriliyor.",
+  "etiketler": [
+    "AI",
+    "Linux",
+    "İşletim Sistemi",
+    "Kora",
+    "Yazılım"
+  ],
+  "anilan_modeller": [
+    "OpenAI",
+    "Anthropic",
+    "Gemini",
+    "Local AI Model"
+  ],
+  "yorum_tr": "Kora, AI entegrasyonunu işletim sistemi seviyesine taşıyarak geliştiricilere ve ileri düzey kullanıcılarına daha akıcı bir deneyim vaat ediyor; ancak büyük pazar payına sahip Windows ve macOS ile rekabet etmesi uzun vadeli bir meydan okuma olacak.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://media.wired.com/photos/6af27401edee43782ec1ac6b/master/pass/gear_ai_operating_system_nerdy.jpg",
+  "url": "https://www.wired.com/story/kora-new-linux-based-desktop-operating-system-is-built-for-ai-nerds/",
+  "source": "WIRED AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-10T14:00:00.000Z",
+  "slug": "this-new-linux-based-desktop-operating-system-is-built-for-a"
+}

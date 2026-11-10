@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "Hugging Face Karar Modelleri: Yeni \"decision\" Pipeline'ı ve GEV-26B-Decide Modeli",
+  "ozet_tr": "Hugging Face, karar modelleri için ortak bir API tanımlayarak \"decision\" adlı yeni bir pipeline sunuyor. Bu pipeline, durum ve sorular girdisi alıp olasılık dağılımlarıyla yapılandırılmış kararlar döndüren modelleri çalıştırıyor ve örnek olarak autotrust/GEV-26B-Decide modeli gösteriliyor.",
+  "detayli_icerik_tr": "Hugging Face, büyük dil modellerinin (LLM) metin üretimindeki başarısının ötesinde, uygulamaların önceden tanımlı seçenekler arasında karar vermesini sağlayan \"karar modelleri\" kavramını tanıttı. Yeni \"decision\" pipeline'ı, bir \"state\" (durum) ve bir dizi \"questions\" (soru) alarak, her soruya uygun bir karar tipi (choice, score, noul) üzerinden olasılık dağılımları ve güven skorları üretiyor.\n\nBu yaklaşım, geleneksel sınıflandırma modellerinin sabit etiket başlıklarıyla sınırlı kalmasının aksine, çalışma zamanında dinamik olarak tanımlanan seçeneklerle çalışabiliyor. Örneğin, bir müşteri destek talebinin hangi departmana yönlendirileceği, aciliyet seviyesi ve iade talebi olup olmadığı gibi sorular tek bir istek içinde yanıtlanabiliyor. Model, her bir seçenek için softmax tabanlı olasılıkları ve en yüksek olasılığa sahip seçeneğin yanı sıra dağılımın ne kadar odaklandığını gösteren \"confidence\" değerini döndürüyor.\n\nKarar modelleri, klasik sıfır‑atış sınıflandırma (zero‑shot classification) yöntemlerine benzer bir mantık izlese de, sadece bir sınıfa atama yapmakla kalmayıp, çoklu tipte sorulara (seçim, sıralı puanlama, ikili evet/hayır) aynı anda yanıt verebiliyor. Bu sayede uygulamalar, örneğin bir talebin aciliyetini bir skala üzerinden ölçerken aynı anda talebin iade isteği olup olmadığını Bernoulli dağılımı olarak alabiliyor.\n\nHugging Face, bu ortak arayüzün model bağımsız olmasını vurgulayarak, farklı mimarilerde (LLM tabanlı, başlık‑bağlantılı, multimodal) çalışan karar modellerinin aynı pipeline üzerinden kullanılabileceğini belirtiyor. Böylece, inference motorları (llama.cpp gibi) tek bir entegrasyonla çeşitli karar modellerini hizmete sunabilecek ve ekosistemdeki araçların uyumluluğu artırılacak.",
+  "onemli_maddeler": [
+    "Yeni \"decision\" pipeline'ı, durum‑soru‑cevap formatında olasılık dağılımlı kararlar üretiyor.",
+    "Karar modelleri, choice, score ve noul olmak üzere üç temel karar tipini destekliyor.",
+    "autotrust/GEV-26B-Decide modeli, Hugging Face'in örnek karar modeli olarak sunuldu."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Karar modelleri, LLM tabanlı uygulamalarda yapılandırılmış çıktılar üretmek için yeni bir paradigma sunarak geliştirme sürecini hızlandırıyor ve hatalı JSON üretim riskini azaltıyor; bu da platformun hem geliştiriciler hem de işletmeler için değerini artırıyor.",
+  "etiketler": [
+    "karar modelleri",
+    "Hugging Face",
+    "pipeline",
+    "LLM",
+    "sınıflandırma"
+  ],
+  "anilan_modeller": [
+    "autotrust/GEV-26B-Decide",
+    "facebook/bart-large-mnli",
+    "ggml-org/gemma-4-e4b-it-GGUF"
+  ],
+  "yorum_tr": "Karar modelleri, uygulamaların sadece metin üretmek yerine doğrudan iş mantığına uygun kararlar almasını sağlayarak geliştirme maliyetlerini düşürebilir ve yanıt tutarlılığını artırabilir. Bu, özellikle müşteri hizmetleri ve otomasyon senaryolarında büyük bir verimlilik artışı vaat ediyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://huggingface.co/blog/assets/decision/thumbnail.png",
+  "url": "https://huggingface.co/blog/decision",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-11-10T00:00:00.000Z",
+  "slug": "decision-models-in-hugging-face"
+}

@@ -1,0 +1,134 @@
+{
+  "baslik_tr": "Gemini 4 Carbon artık kullanılabilir",
+  "ozet_tr": "Google DeepMind, en güçlü çok‑modelli modeli Gemini 4 Carbon'ı geliştiriciler, işletmeler, bilim insanları ve son kullanıcılar için erişime açtı. Carbon, siber güvenlik, uzun vadeli ajan tabanlı iş akışları ve bilimsel araştırmalarda çığır açan doğruluk ve maliyet verimliliği sunuyor.",
+  "detayli_icerik_tr": "Google DeepMind, Gemini 4 Carbon'ı resmi olarak duyurarak modelin artık API, Google AI Studio, Gemini for Business ve Google Antigravity gibi platformlarda kullanılabileceğini bildirdi. Carbon, önceki nesil Gemini 4 Argon'dan daha fazla token kullanarak çok adımlı kodlama, hata ayıklama ve açık uçlu bilimsel keşif gibi zorlu görevlerde derinlemesine akıl yürütme yeteneği sağlıyor. Model, siber güvenlik savunucularına yönelik Fairwind Programı kapsamında iki hafta önce sınırlı bir grup kullanıcıya sunulmuştu; şimdi tüm geliştiriciler ve işletmeler için genişletildi.\n\nPerformans açısından Carbon, bağımsız benchmarklerde öne çıkıyor: CursorBench 4.0, Perplexity’nin WANDR ve Zapier’in AutomationBench testlerinde birincilik elde ederken, aynı görevlerde bir sonraki en iyi dış modelin iki katı daha düşük maliyetle çalışıyor. Multimodal Knowledge Agent (MKA) benchmark'unda ise ikinci sırada yer alıyor ve en iyi modeli aşan 6 kat daha düşük ortalama görev maliyeti gösteriyor. Ayrıca, Project Fortify iç testlerinde tarama aşamasında %100 hatasız geri çağırma ve triage aşamasında %95 doğruluk sağladı.\n\nCarbon'un siber güvenlik yetenekleri de dikkat çekiyor. SEC-bench Pro, ExploitGym ve CWE-bench v1 gibi benchmarklarda en yüksek bulma, istismar ve yama performansını sergileyen model, simüle edilmiş siber saldırı ortamlarında %99 saldırı rotasını engelleyerek yalnızca %0,8 kırılma oranı ve %2,17 otomatik saldırı sorgu başarı oranı elde etti. Gray Swan IPI testinde ise %0 prompt enjeksiyon başarısı göstererek güvenlikte yeni bir kilometre taşı koydu. Model aynı zamanda 375 görevlik ajan dürüstlük benchmark'unda %92 başarı oranı yakaladı.\n\nGemini 4 Carbon, çok‑ajanslı /swarm özelliği sayesinde tek bir komutla birden fazla ajanı koordine ederek 3D görselleştirmeler, interaktif oyunlar ve karmaşık mühendislik tasarımları üretme kapasitesine sahip. Bu yetenekler, bilimsel araştırmalarda protein homoloji aramaları, laboratuvar veri analizi ve formal doğrulama gibi alanlarda da kanıtlandı; örneğin AlphaProof Code çerçevesiyle milyonlarca satır Lean kodu üreterek kriptografik protokollerin matematiksel kanıtlarını haftalar içinde sağladı. Carbon'un erişilebilir fiyatlandırması ($2/1M giriş token, $10/1M çıkış token) ve geniş platform entegrasyonu, yapay zeka uygulamalarının bir sonraki aşamasını şekillendirecek gibi görünüyor.",
+  "onemli_maddeler": [
+    "Gemini 4 Carbon, siber güvenlik, çok‑adımlı kodlama ve bilimsel araştırmalarda çığır açan doğruluk ve %2‑%6 daha düşük maliyet sunuyor.",
+    "Model, CursorBench 4.0, WANDR ve AutomationBench gibi benchmarklerde birincilik elde ederken, MKA benchmark'unda ikinci sırada yer alıyor.",
+    "Simüle edilmiş siber saldırı testlerinde %99 engelleme, %0,8 kırılma oranı ve %2,17 sorgu başarı oranı gibi güvenlik performansları sağladı.",
+    "Yeni /swarm özelliği sayesinde tek komutla çoklu ajan koordinasyonu ve 3D interaktif uygulamalar üretilebiliyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Gemini 4 Carbon, Google DeepMind'in en güçlü çok‑modelli modeli olarak siber güvenlik, bilimsel araştırma ve çok‑ajanslı iş akışlarında hem performans hem de maliyet açısından sektörde yeni bir standart belirliyor.",
+  "etiketler": [
+    "Yapay Zeka",
+    "Gemini",
+    "Carbon",
+    "Siber Güvenlik",
+    "Multimodal"
+  ],
+  "anilan_modeller": [
+    "Gemini 4 Carbon",
+    "Gemini 4 Argon"
+  ],
+  "yorum_tr": "Carbon'un sunduğu yüksek doğruluk ve düşük maliyet, geliştiricilerin karmaşık uygulamaları daha hızlı ve ekonomik bir şekilde hayata geçirmesini sağlayacak. Aynı zamanda güvenlik ve etik korumaları, modelin sorumlu kullanımını destekleyerek kurumsal ve araştırma ortamlarında benimsenmesini hızlandırabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Gemini 4 Carbon",
+      "benchmark": "CursorBench 4.0",
+      "skor": 1,
+      "birim": "rank",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Carbon ranks #1 on CursorBench 4.0"
+    },
+    {
+      "model": "Gemini 4 Carbon",
+      "benchmark": "Perplexity WANDR",
+      "skor": 1,
+      "birim": "rank",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Carbon ranks #1 on Perplexity’s WANDR"
+    },
+    {
+      "model": "Gemini 4 Carbon",
+      "benchmark": "Zapier AutomationBench",
+      "skor": 1,
+      "birim": "rank",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Carbon ranks #1 on Zapier’s AutomationBench"
+    },
+    {
+      "model": "Gemini 4 Carbon",
+      "benchmark": "Multimodal Knowledge Agent (MKA) benchmark",
+      "skor": 2,
+      "birim": "rank",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Carbon ranks #2 while being more than 6X lower in average cost per task compared to the top performing model"
+    },
+    {
+      "model": "Gemini 4 Carbon",
+      "benchmark": "Project Fortify scanning recall",
+      "skor": 100,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "recall",
+      "kaynak_metinden_alinti": "Carbon hit 100% recall on scanning"
+    },
+    {
+      "model": "Gemini 4 Carbon",
+      "benchmark": "Project Fortify triage precision",
+      "skor": 95,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "precision",
+      "kaynak_metinden_alinti": "and 95% precision on triage"
+    },
+    {
+      "model": "Gemini 4 Carbon",
+      "benchmark": "Simulated cyberattack block rate",
+      "skor": 99,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "block rate",
+      "kaynak_metinden_alinti": "Carbon blocked 99% of attack trajectories"
+    },
+    {
+      "model": "Gemini 4 Carbon",
+      "benchmark": "Per-attempt breach rate",
+      "skor": 0.8,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "breach rate",
+      "kaynak_metinden_alinti": "per-attempt breach rate to just 0.8% (down from 3.1% on Argon)"
+    },
+    {
+      "model": "Gemini 4 Carbon",
+      "benchmark": "Automated cyberattack query success rate",
+      "skor": 2.17,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "success rate",
+      "kaynak_metinden_alinti": "automated cyberattack query success rate to 2.17% (compared to 9.86% on Argon)"
+    },
+    {
+      "model": "Gemini 4 Carbon",
+      "benchmark": "Gray Swan IPI prompt injection success rate",
+      "skor": 0,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "success rate",
+      "kaynak_metinden_alinti": "Carbon achieved a 0% prompt injection attack success rate on the Gray Swan IPI benchmark"
+    },
+    {
+      "model": "Gemini 4 Carbon",
+      "benchmark": "Agentic honesty benchmark pass rate",
+      "skor": 92,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "pass rate",
+      "kaynak_metinden_alinti": "it passed 92% of tasks (compared to 70% for Argon)"
+    }
+  ],
+  "gorsel_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini_4_carbon_key_art_16-9_lockup.width-1300.jpg",
+  "url": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/",
+  "source": "Google DeepMind",
+  "sourceTier": "resmi",
+  "date": "2026-11-10T16:03:47.000Z",
+  "slug": "gemini-4-carbon-is-now-available"
+}

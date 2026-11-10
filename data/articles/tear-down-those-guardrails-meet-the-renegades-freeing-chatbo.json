@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "Koruma Duvarlarını Yıkın! Chatbotları Şirket Zincirlerinden Kurtaran Asi Girişimciler",
+  "ozet_tr": "Abliteration AI, en güçlü açık‑ağırlıklı modellerin güvenlik duvarlarını kaldırarak herkese erişilebilir hâle getiriyor. Şirket, model ağırlıklarındaki bir \"master switch\"i silerek yanıt reddetme mekanizmasını ortadan kaldırıyor ve bu sayede siber güvenlik, veri sentezi ve diğer hassas görevlerde kullanılabilecek özgür modeller sunuyor.",
+  "detayli_icerik_tr": "Apple'da mühendis olarak çalışan Devon Thomas, 2025 Kasım ayında büyük laboratuvarların sağladığı modellerin sıkı güvenlik kısıtlamalarından bıktı ve kendi ev laboratuvarında 20.000 dolarlık bir bilgisayar kümesi kurarak açık‑ağırlıklı modelleri denemeye başladı. Modellerin sık sık soruları reddetmesi ve kullanıcı bilgilerini koruma adına hesabının yasaklanması, Thomas'ı bu kısıtlamaları aşmanın yollarını aramaya itti.\n\nThomas, Reddit, Discord ve X gibi platformlarda benzer düşüncelere sahip bir toplulukla tanıştı ve \"abliteration\" adı verilen bir teknik keşfetti. 2024'te akademik bir grup, bir modelin reddetme davranışını yöneten ağırlıkların tek bir anahtar gibi çalıştığını gösterdi; bu ağırlıkları kaldırmak modeli hiç yanıt vermeyi reddetmeyecek hâle getiriyordu. Bu yöntemi geliştirenler, Heretic adlı bir araçla binlerce modeli \"abliterated\" (korumasız) hâle getirdi ve Hugging Face üzerinde 12.000'den fazla model bu etiketle işaretlendi.\n\nThomas ve ortakları, Abliteration AI adlı şirketi kurarak bu korumasız modelleri özellikle siber güvenlik firmalarına sundu. Ağustos 2026'da şirket, Çinli Z.ai tarafından geliştirilen GLM-5.3 modelinin abliterated versiyonunu piyasaya sürdü; bu model, Anthropic ve OpenAI'nin en güçlü modellerine yakın bir yetenek seviyesine sahip. Şirket, modellerin çocuk istismarı ve öz‑zarar gibi etik dışı içeriklere otomatik olarak yanıt vermemesini sağlarken, diğer tüm sorgulara özgürce yanıt vermesine izin veriyor.\n\nBu hareket, AI güvenliği topluluğunda büyük tartışmalara yol açtı. Eleştirmenler, korumasız modellerin yasa dışı faaliyetlerde (ör. bomba yapımı, siber saldırı planlaması) kullanılabileceğini savunurken, savunucular model kontrolünün kullanıcıya ait olması gerektiğini ve güvenlik duvarlarının büyük şirketlerin iş modelini korumak için bir araç olduğunu iddia ediyor. Thomas, bu yaklaşımın bilgisayar ve çekiç gibi araçların kötüye kullanılabileceği, ancak esas sorumluluğun kullanıcıda olduğu görüşünü dile getiriyor.",
+  "onemli_maddeler": [
+    "Abliteration AI, açık‑ağırlıklı modellerdeki yanıt reddetme mekanizmasını kaldıran \"abliteration\" tekniğini ticari hizmet olarak sunuyor.",
+    "Şirket, GLM-5.3 gibi büyük modellerin abliterated sürümlerini yayınlayarak siber güvenlik ve veri sentezi gibi alanlarda yeni pazarlar oluşturdu.",
+    "Hugging Face üzerinde 12.000'den fazla model \"abliterated\" olarak işaretlenmiş; bu, topluluk tarafından hızla benimsenen bir hareket haline geldi."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Model güvenliği ve erişim politikaları üzerine yeni bir araç ve iş modeli sunulması, AI ekosisteminde hem teknik hem de etik açıdan önemli bir dönüşüm yaratıyor.",
+  "etiketler": [
+    "abliteration",
+    "open-weight models",
+    "AI safety",
+    "cybersecurity",
+    "decentralized AI"
+  ],
+  "anilan_modeller": [
+    "GLM-5.3",
+    "Dolphin",
+    "Qwen 4B",
+    "Meta Llama"
+  ],
+  "yorum_tr": "Abliteration AI'nin sunduğu korumasız modeller, geliştiricilere daha fazla esneklik sağlarken, aynı zamanda kötüye kullanım riskini artırıyor; bu denge, AI güvenliği politikalarının yeniden gözden geçirilmesini zorunlu kılıyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://media.wired.com/photos/6aea5020a9094bad7a4244a9/master/pass/ai_security_abliterators.gif",
+  "url": "https://www.wired.com/story/tear-down-those-guardrails-meet-the-renegades-freeing-chatbots-from-corporate-enslavers/",
+  "source": "WIRED AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-10T11:00:00.000Z",
+  "slug": "tear-down-those-guardrails-meet-the-renegades-freeing-chatbo"
+}
