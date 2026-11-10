@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "Ağırlık Silme Yöntemi LLM'lerde Tam İnce Ayar Performansını Eşliyor",
+  "ozet_tr": "Araştırmacılar, büyük bir dil modelinin sadece %0,05'inden azını sıfırlayarak tam ince ayar (FFT) performansına ulaşabildiklerini gösterdi. Deletion Tuning adı verilen bu yöntem, ikili bir maske öğrenerek modelin ağırlıklarını siliyor ve aynı zamanda unutma problemini büyük ölçüde azaltıyor.",
+  "detayli_icerik_tr": "Yerel LLM topluluğu tarafından paylaşılan bir Reddit gönderisinde, araştırmacılar \"Deletion Tuning\" adlı yeni bir post‑training tekniğini tanıttı. Yöntem, transformer bloklarının kapı projeksiyonları üzerine ikili bir maske öğrenerek, modelin ağırlıklarının yalnızca %0,05'inden azını sıfırlıyor. Bu minimal değişiklik, üç farklı ince ayar senaryosunda (doğrulanabilir ödüllü pekiştirmeli öğrenme, denetimli ince ayar ve politika‑temelli distilasyon) tam ince ayar (FFT) sonuçlarıyla eşdeğer performans sağladı.\n\nDeletion Tuning'in iki pratik avantajı vurgulandı: İlk olarak, eğitilen maske, tam ince ayar kontrol noktasına göre yüzlerce hatta binlerce kat daha küçük bir dosya boyutuna sahip. İkinci olarak, yöntem unutma (catastrophic forgetting) sorununu çok daha az yaşatıyor; pekiştirmeli öğrenme ortamında, temel görev doğruluğu temel modele yakın kalırken, FFT, LoRA ve rastgele seyrek ince ayar yöntemleri 5,4 puana kadar düşüş gösterdi.\n\nAraştırmacılar, maskenin tek başına yeterli olmasının nedenini anlamak için ağırlık değişikliklerinin geometrisini, stabil rank, spektrum kayması ve temel‑ağırlık örtüşmesi gibi ölçütlerle inceledi. Sonuçlar, Deletion Tuning'in LoRA ve rastgele seyrek ince ayar yöntemlerine kıyasla bu üç ölçütte FFT'ye en yakın olduğunu ortaya koydu. Çalışmanın kodları GitHub, model maskeleri HuggingFace ve detaylı bir blog yazısı ile birlikte paylaşıldı; ayrıca NeurIPS 2026 posteri de erişime sunuldu.\n\nBu bulgular, büyük dil modellerinin ince ayar süreçlerinde parametre verimliliği ve unutma riskini azaltma konusunda yeni bir yol haritası sunuyor. Geliştiriciler, çok daha hafif checkpoint'ler sayesinde dağıtık ortamlarda ve sınırlı depolama koşullarında model güncellemelerini daha pratik bir şekilde uygulayabilir.",
+  "onemli_maddeler": [
+    "Deletion Tuning, sadece %0,05'lik ağırlık silme ile tam ince ayar performansını yakalıyor.",
+    "Eğitilen ikili maske, FFT checkpoint'ine göre yüzlerce kat daha küçük bir dosya boyutuna sahip.",
+    "Pekiştirmeli öğrenme senaryosunda, yöntem unutma problemini büyük ölçüde azaltıyor; doğruluk kaybı 5,4 puana kadar düşmüyor.",
+    "Ağırlık değişikliklerinin geometrik analizi, maskenin etkinliğini FFT, LoRA ve rastgele seyrek ince ayar ile karşılaştırıyor."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "LLM'lerde ince ayar maliyetlerini ve unutma sorununu azaltan yeni bir yöntem, araştırma ve uygulama alanında önemli bir adım olarak değerlendiriliyor.",
+  "etiketler": [
+    "LLM",
+    "fine-tuning",
+    "silme",
+    "continual learning",
+    "research"
+  ],
+  "anilan_modeller": [
+    "Transformer tabanlı büyük dil modeli"
+  ],
+  "yorum_tr": "Deletion Tuning, model güncellemelerinde depolama ve veri aktarım maliyetlerini düşürürken, performanstan ödün vermeyen bir alternatif sunuyor. Bu, özellikle sınırlı kaynaklı ortamlarda ve sürekli öğrenme senaryolarında geliştiriciler için büyük bir avantaj sağlayabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/q3evP6JeDpAC2MdSQHWYxnCYTqbJkElIQsLFqVSdkss.png?width=640&crop=smart&auto=webp&s=de730fbf7ecace6df0036b21470c16a2d4feacfb",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xswmb7/the_surprising_effectiveness_of_deleting_weights/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-10T19:44:57.000Z",
+  "slug": "the-surprising-effectiveness-of-deleting-weights-in-llm-post"
+}

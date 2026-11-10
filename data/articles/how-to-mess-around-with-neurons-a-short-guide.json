@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "Qwen3.5-4B Üzerinde Nöron Yönlendirme Rehberi",
+  "ozet_tr": "Reddit topluluğu üyesi, Qwen3.5-4B modelindeki tek bir nöronu sabit bir dozla artırarak model davranışını yönlendiren \"neuron steering\" tekniğini adım adım anlatıyor. PyTorch ve transformers kullanarak hook ekleme, doz ayarı ve kontrol vektörü oluşturma süreçleri detaylandırılıyor.",
+  "detayli_icerik_tr": "Qwen3.5-4B, 32 katmanda her birinde 9.216 nöron barındıran bir MLP yapısına sahip; toplamda yaklaşık 295.000 nöron bulunuyor. \"Neuron steering\" kavramı, bir nörona sabit bir değer (doz) ekleyerek modelin çıktısını yönlendirmeyi ifade ediyor; bu, geleneksel ince ayar ya da karmaşık prompt tekniklerinden farklı, sadece tek bir nöronun aktivasyonunu değiştirerek çalışan basit bir yöntem.\n\nUygulama aşamasında, model PyTorch ve transformers kütüphaneleriyle yükleniyor, hedef katmanın down_proj katmanına bir forward pre‑hook kaydediliyor. Hook içinde, seçilen nöronun aktivasyonuna \"dose * median_residual_norm[L] / W_down[:, n].norm()\" formülüyle hesaplanan bir miktar ekleniyor. Doz değeri 1 büyük bir itme anlamına gelirken, 0.75 genellikle stabil sonuçlar verir; 1‑1.5 üstündeki değerler ise anlamsız çıktılara yol açabiliyor.\n\nİlginç nöronları bulmak için üç temel yöntem öneriliyor: rastgele arama, gradient‑tabanlı kısa listeleme ve LLM‑denetimli değerlendirme, ve aktivasyon madenciliği. Rastgele arama, orta katmanlardan rastgele nöronlar seçip pozitif ve negatif dozlarla test etmeyi içerirken, gradient yöntemi stil‑özelleştirilmiş sistem promptlarıyla nöronların etkisini ölçüyor. Aktivasyon madenciliği ise modelin çeşitli konularda kısa yanıtlar üretmesini sağlayıp, sadece belirli bir konuya yanıt veren nöronları tespit etmeye çalışıyor.\n\nBulunan bir nöronun gerçekten etkili olup olmadığını doğrulamak için aynı katmandan 3‑5 rastgele nöron da aynı dozla test edilmeli; benzer sonuçlar alınırsa etki muhtemelen nöron spesifik değildir. Ayrıca farklı doz seviyeleri, polarite değişiklikleri ve çeşitli promptlarla denemeler yapılarak nöronun davranışı daha iyi anlaşılabilir. Sonuçlar, kontrol vektörü olarak kaydedilip llama.cpp gibi inference araçlarıyla \"--control-vector\" parametresiyle kullanılabilir.",
+  "onemli_maddeler": [
+    "Neuron steering, tek bir nöronun aktivasyonuna sabit bir değer ekleyerek model davranışını yönlendirir; ince ayar gerektirmez.",
+    "Hook eklemek için PyTorch'ta down_proj katmanına forward pre‑hook kaydedilir ve doz, katman ortalama residual normu ile ölçeklenir.",
+    "İlginç nöronları bulmak için rastgele arama, gradient‑tabanlı kısa listeleme ve aktivasyon madenciliği gibi yöntemler kullanılabilir."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 3,
+  "onem_gerekce": "Kılavuz, LLM araştırmacıları ve geliştiricileri için yeni bir aktivasyon manipülasyonu yöntemi sunuyor, ancak geniş çaplı bir ürün duyurusu ya da model çıkışı olmadığı için etkisi sınırlı.",
+  "etiketler": [
+    "neuron steering",
+    "Qwen3.5-4B",
+    "PyTorch",
+    "LLM",
+    "kontrol vektörü"
+  ],
+  "anilan_modeller": [
+    "Qwen3.5-4B"
+  ],
+  "yorum_tr": "Neuron steering, model davranışını ince ayar maliyetine girmeden deneysel olarak keşfetmek isteyen araştırmacılar için pratik bir araç sunuyor; ancak yöntemin tutarlılığı ve ölçeklenebilirliği hâlâ sınırlı kalabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://static.wixstatic.com/media/68f1c8_44849d9c17fc45fcafff259d06d5fb36~mv2.png/v1/fill/w_1536,h_1024,al_c/68f1c8_44849d9c17fc45fcafff259d06d5fb36~mv2.png",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xs81f3/how_to_mess_around_with_neurons_a_short_guide/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-09T23:59:37.000Z",
+  "slug": "how-to-mess-around-with-neurons-a-short-guide"
+}

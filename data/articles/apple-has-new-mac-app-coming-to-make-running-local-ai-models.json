@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "Apple, yerel AI modellerini çalıştırmayı kolaylaştıracak yeni Mac uygulamasını duyurdu",
+  "ozet_tr": "Apple, macOS için geliştirilen yeni bir uygulama ile kullanıcıların yerel büyük dil modellerini (LLM) tek tıkla indirip çalıştırabilmesini hedefliyor. Uygulama, Core ML entegrasyonu ve Apple Silicon GPU hızlandırması sayesinde modelleri offline ve gizlilik odaklı bir ortamda çalıştırmayı mümkün kılıyor.",
+  "detayli_icerik_tr": "Apple, yakın gelecekte macOS kullanıcılarına sunacağı yeni bir uygulama üzerinden yerel yapay zeka modellerinin kurulumu ve çalıştırılmasını büyük ölçüde basitleştirecek. Reddit'in LocalLLaMA topluluğunda paylaşılan bilgilere göre, bu uygulama bir \"Model Hub\" işlevi görecek; kullanıcılar popüler açık kaynak modelleri (örneğin LLaMA, LLaMA 2, Mistral, Gemma) doğrudan uygulama içinden indirebilecek ve tek bir arayüzde yönetebilecek.\n\nUygulamanın temel özelliği, Apple'ın kendi donanım ve yazılım ekosistemiyle sıkı entegrasyon sağlaması. Core ML çerçevesi üzerinden model dönüşümü otomatik olarak yapılacak ve Apple Silicon çiplerinin GPU birimlerinden (Apple GPU, Neural Engine) yararlanarak inferans hızı artırılacak. Bu sayede, yüksek bellek gereksinimi olan modeller bile M1/M2/M3 serisi cihazlarda akıcı bir şekilde çalıştırılabilecek.\n\nApple, gizlilik ve veri güvenliğine de vurgu yapıyor. Yerel model çalıştırma, verilerin buluta gönderilmesini engellediği için özellikle kurumsal ve hassas veri içeren uygulamalarda tercih edilecek. Uygulama ayrıca model parametrelerini özelleştirme, prompt yönetimi ve çıktı analizi gibi geliştirici dostu araçları da içinde barındıracak.\n\nBeta sürümünün 2024'ün son çeyreğinde yayınlanması planlanıyor ve geliştiricilerin geri bildirimlerine göre özellikler genişletilecek. Apple, bu adımıyla yapay zeka ekosisteminde sadece bulut tabanlı çözümler sunan rakiplerinden farklılaşarak, yerel AI çözümlerine yönelen bir pazar segmentine de hizmet vermeyi amaçlıyor.",
+  "onemli_maddeler": [
+    "Apple, macOS için yerel LLM çalıştırma uygulamasını duyurdu; Core ML ve Apple Silicon entegrasyonu sağlanacak.",
+    "Uygulama, LLaMA, Mistral gibi popüler açık kaynak modellerin tek tıkla indirilip yönetilmesini mümkün kılıyor.",
+    "Gizlilik odaklı tasarım sayesinde veriler buluta gönderilmeden cihaz üzerinde işlenebilecek."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Apple'ın ekosistemine yeni bir AI geliştirme aracı eklemesi, yerel model kullanımını yaygınlaştırarak sektörde önemli bir yön değişikliğine işaret ediyor.",
+  "etiketler": [
+    "Apple",
+    "Mac",
+    "Yerel AI",
+    "LLaMA",
+    "Geliştirici Araçları"
+  ],
+  "anilan_modeller": [
+    "LLaMA",
+    "LLaMA 2",
+    "Mistral",
+    "Gemma"
+  ],
+  "yorum_tr": "Apple'ın bu hamlesi, yerel AI çözümlerine ilgi duyan geliştiriciler ve gizlilik odaklı işletmeler için yeni bir fırsat yaratırken, platform bağımlılığını da artırabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/RsfBvYDZIdmJIOcEDnLBJ-iJKrXX5iBbX4ZhVH2CIfU.jpeg?width=640&crop=smart&auto=webp&s=f5f9c2a59b927a02fdf861f72b879464de98f727",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xszbe7/apple_has_new_mac_app_coming_to_make_running/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-10T21:30:36.000Z",
+  "slug": "apple-has-new-mac-app-coming-to-make-running-local-ai-models"
+}

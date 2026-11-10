@@ -1,0 +1,48 @@
+{
+  "baslik_tr": "Google Gemini 4 Carbon genel kullanıma sunuldu, Argon'u geride bırakarak yüksek maliyetli görevlerde öne çıktı",
+  "ozet_tr": "Google, iki haftalık ön test sürecinin ardından Gemini 4 Carbon modelini genel kullanıma açtı. Argon modeline tamamlayıcı olarak tasarlanan Carbon, çok adımlı kodlama, hata ayıklama ve bilimsel araştırma gibi karmaşık görevlerde daha derin akıl yürütme yeteneği sunuyor ancak token tüketimi daha yüksek. Yeni \"/swarm\" özelliğiyle tek bir komut, gerçek zamanlı olarak birden çok AI ajanına bölünerek paralel çalışabiliyor.",
+  "detayli_icerik_tr": "Google, Gemini 4 Carbon'ı iki haftalık bir test aşamasının ardından geliştiriciler ve işletme müşterileri için genel erişime açtı. Model, daha önce tanıtılan Gemini 4 Argon ile aynı token fiyatına sahip olmasına rağmen, çok adımlı kodlama, hata ayıklama ve açık uçlu bilimsel araştırma gibi yüksek zorluk seviyeli görevlerde daha fazla token harcayarak daha derin bir akıl yürütme sağlıyor. Bu sayede, özellikle karmaşık hata ayıklama döngüleri ve uzun doğrulama süreçlerinde Argon'dan daha yüksek performans sunuyor.\n\nCarbon, Google AI Studio, Android Studio ve Gemini for Business üzerinden Gemini API aracılığıyla kullanılabiliyor. Giriş fiyatı hâlâ milyon giriş tokeni başına 2 $, milyon çıkış tokeni başına 10 $ olarak sabitlenmiş durumda. Modelin maliyet-etkinliği, Artificial Analysis testinde çözüm başına 7,76 $ maliyetle ölçülmüş; bu, daha eski Flash 3.8 modelinden daha ucuzken daha iyi performans sağladığını gösteriyor. Aynı testte Opus 5.5 Max 10,04 $, GPT‑6 Astra Max 6,25 $, Fable 5.2 ise yüksek seviyede 26,50 $ maliyetle yer alıyor.\n\nPerformans açısından Carbon, CursorBench 4.0, Perplexity'nin WANDR ve Zapier AutomationBench gibi benchmarklarda birinci sırada yer alıyor. CursorBench 4.0'da yüzde 60'ın altında bir skor elde ederek Fable 5.2 ve Argon'u geride bıraktı. Maliyet‑performans oranı da dikkat çekici; görev başına ortalama 8‑10 $ maliyetle en yüksek skoru alırken, benzer maliyetli rakip modeller daha düşük puanlar gösterdi. Multimodal Knowledge Agent (MKA) benchmarkında ise ikinci sırada yer alarak Fable 5.2'nin hemen arkasında durdu.\n\nGüvenlik yetenekleri de Carbon'un öne çıkan özelliklerinden. Google, iki büyük SaaS sağlayıcısında iki saat içinde gerçek sıfır‑gün açıkları buldu ve kendi bulut güvenlik ekibi, popüler bir açık kaynak projesindeki iki bilinen hatayı kanıtlayıcı exploit'ler yazarak doğruladı. Model, SEC‑bench Pro, ExploitGym ve CWE‑bench v1 gibi güvenlik benchmarklarında lider konumda. Ayrıca, prompt enjeksiyon testinde %0 başarı oranı yakalayan ilk model olduğunu iddia ediyor; bu, 375 görevlik içsel dürüstlük testinde %92 başarı ve %98 sahte veri üretmeme oranıyla da destekleniyor.",
+  "onemli_maddeler": [
+    "Gemini 4 Carbon, Argon'a kıyasla daha derin akıl yürütme yeteneği sunarken token tüketimi daha yüksek.",
+    "CursorBench 4.0, WANDR ve AutomationBench gibi benchmarklarda birinci sırada yer alıyor.",
+    "Yeni \"/swarm\" özelliği, tek bir komutla birden çok AI ajanının gerçek zamanlı paralel çalışmasını sağlıyor.",
+    "Güvenlik testlerinde gerçek sıfır‑gün açıkları bulma ve %0 prompt enjeksiyon başarısı gibi üstün performans gösterdi."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Google'ın en yeni büyük ölçekli modeli Gemini 4 Carbon, hem performans hem de maliyet‑etkinlik açısından sektörde yeni bir standart belirleyerek rekabeti hızlandırıyor.",
+  "etiketler": [
+    "AI modeli",
+    "Google",
+    "benchmark",
+    "güvenlik",
+    "agent swarm"
+  ],
+  "anilan_modeller": [
+    "Gemini 4 Carbon",
+    "Gemini 4 Argon",
+    "Fable 5.2",
+    "Opus 5.5 Max",
+    "GPT-6 Astra Max",
+    "Flash 3.8"
+  ],
+  "yorum_tr": "Gemini 4 Carbon'un piyasaya sürülmesi, yüksek karmaşıklıktaki görevlerde daha güçlü bir alternatif sunarak geliştiricilerin ve güvenlik ekiplerinin verimliliğini artırabilir. Ancak token tüketiminin artması, maliyet yönetimini dikkatli planlamayı gerektirecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Gemini 4 Carbon",
+      "benchmark": "Artificial Analysis (cost per solved task)",
+      "skor": 7.76,
+      "birim": "$",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "standard price of $4 per million input tokens and $20 per million output tokens",
+      "kaynak_metinden_alinti": "Carbon cost $7.76 per solved task, cheaper than Flash 3.8 while delivering better performance."
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/11/gemini-4_carbon_logo.png",
+  "url": "https://the-decoder.com/gemini-4-carbon-arrives-just-in-time-to-feel-like-yesterdays-news-in-the-fastest-model-cycle-yet/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-10T18:19:13.000Z",
+  "slug": "gemini-4-carbon-arrives-just-in-time-to-feel-like-yesterday"
+}

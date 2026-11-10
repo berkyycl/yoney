@@ -1,0 +1,82 @@
+{
+  "baslik_tr": "Nvidia’nın GR00T 2 Modeli Videodan İnsan Hareketlerini Öğrenerek Robot Kollarına Aktarıyor",
+  "ozet_tr": "Nvidia, insan hareketlerini video üzerinden yakalayıp robot kollarına aktarabilen yeni bir temel model GR00T 2’yi tanıttı. Model, gelecekteki kamera görüntülerini difüzyonla tahmin ederek “dünya‑eylem” (world‑action) yaklaşımını benimsiyor ve teleoperasyon ihtiyacını büyük ölçüde azaltıyor.",
+  "detayli_icerik_tr": "Nvidia, robotlara yeni görevler öğretirken mühendislerin saatlerce uzaktan kontrol (teleoperasyon) yapması gerektiği gerçeğine çözüm sunmak amacıyla GR00T 2 adlı bir yapay zeka temelli model geliştirdi. Önceki nesil GR00T 1’in aksine, GR00T 2 yalnızca görsel‑dil‑eylem çerçevesinde çalışmak yerine bir \"world‑action model\" (WAM) olarak tasarlandı; model aynı anda bir sonraki hareketi ve o hareketin sonucunda ortaya çıkacak kısa bir video sekansını üretiyor. Bu video tahmini, robot kolunun bir nesneyi kavradığında kamera görüntüsünün nasıl değişeceğini öngörerek farklı robot platformları arasında hareket dizilerini aktarabilmeyi mümkün kılıyor.\n\nModel, binlerce GB300 çipli bir küme üzerinde yaklaşık 400.000 saatlik insan‑odaklı video verisiyle eğitildi. Görev öğretimi için bir kişi veri eldiveni, özel el tutucu ya da parmak ekso‑skeletiyle adımları gösteriyor; bu kayıtlar hedef robotun genel hareket verileriyle birleştirildiğinde, AI insan kolu yerine robot kolunu videoda canlandırıyor ve eşleşen kontrol komutlarını türetiyor. Laboratuvar testlerinde beş parmaklı bir robot kol, bir kibrit yakma, muz dilimleme ve paketleri konveyöre atma gibi görevleri teleoperasyon olmadan gerçekleştirdi; başarı oranları görev bazında %10‑%80 arasında değişti.\n\nGR00T 2, tek bir insan el hareketi videosundan çivi çakma gibi görevleri bilgisayar simülasyonu aracılığıyla da öğrenebildi. 50 seçilmiş görevde, model birkaç örnekle iyi performans gösterdi ve geleneksel eğitim süresi üç dakikadan az olduğunda başarı oranı %40’tan %95’e yükseldi. Daha karmaşık montaj işlerinde Nvidia, modelin üstüne OpenAI’nin GPT‑6 Astra gibi üst‑seviye bir dil modeli ekleyerek görevleri adım adım bölüyor, kavrama noktalarını renk kodluyor ve parçalar düşerse yardımcı rutinleri devreye sokuyor. Bu kombinasyon, dağınık bir masada bulunan oyuncak araba parçalarını %97 oranında başarıyla birleştirirken, dil modeli olmadan aynı denemede sadece %23 başarı sağlandı.\n\nBipedal robotlar için geliştirilen daha hafif GR00T 2 Turbo, Jetson Thor yerleşik bilgisayarında çalışıyor ve patlamış mısır toplama, masa temizleme ve ayak altındaki havluyla sıvı silme gibi günlük işleri denedi. Ancak bu görevlerde başarı oranı %50’nin altında kaldı ve dokunma sensör verilerini doğrudan işleyememesi, yarım dönmüş vidalar gibi ince hataları kaçırması gibi sınırlamalar hâlâ mevcut. Ayrıca, üst‑seviye dil modelinin planlama sürecinde ortalama yedi saniye bekleme süresi yaratması, robotun toplam çalışma süresinin yaklaşık üçte birini boşta geçirmesine neden oluyor.",
+  "onemli_maddeler": [
+    "GR00T 2, video tabanlı \"world‑action\" modeliyle teleoperasyon ihtiyacını %80’e kadar azaltıyor",
+    "Model, tek bir insan hareket videosundan yeni görevleri öğrenebiliyor ve üç dakikadan kısa sürede %95 başarı elde ediyor",
+    "GPT‑6 Astra gibi üst‑seviye dil modeli entegrasyonu, montaj başarısını %23’ten %97’ye çıkarıyor",
+    "GR00T 2 Turbo, Jetson Thor üzerinde çalışarak bipedal robotlarda hafif bir versiyon sunuyor ancak başarı oranı %50’nin altında"
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Robotik alanında görev öğretim sürecini videodan doğrudan öğrenmeye taşıyan bir temel modelin tanıtılması, endüstriyel otomasyon ve hizmet robotları için maliyet ve zaman tasarrufu sağlayarak sektörde büyük bir dönüşüm potansiyeli yaratıyor.",
+  "etiketler": [
+    "robotik",
+    "yapay zeka",
+    "video‑tabanlı öğrenme",
+    "world‑action model",
+    "Nvidia"
+  ],
+  "anilan_modeller": [
+    "GR00T 2",
+    "GR00T 1",
+    "GR00T 2 Turbo",
+    "GPT-6 Astra"
+  ],
+  "yorum_tr": "GR00T 2’nin video‑tabanlı öğrenme yaklaşımı, robotik sistemlerde veri toplama ve programlama maliyetlerini önemli ölçüde düşürerek geliştiricilerin daha hızlı prototip üretmesine olanak tanıyacak. Ancak sensör entegrasyonu ve planlama süresindeki gecikmeler, gerçek‑dünya uygulamaları için hâlâ çözülmesi gereken teknik engeller olarak kalıyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GR00T 2",
+      "benchmark": "Görev Başarı Oranı (çeşitli görevler)",
+      "skor": 80,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "çeşitli görevlerde %10‑%80 arası",
+      "kaynak_metinden_alinti": "Success rates varied between 10 and 80 percent depending on the task."
+    },
+    {
+      "model": "GR00T 2",
+      "benchmark": "Az örnekli eğitim sonrası başarı",
+      "skor": 95,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "<3 dakika geleneksel eğitim",
+      "kaynak_metinden_alinti": "For 50 selected tasks ... less than three minutes of conventional training was enough to raise the success rate from 40 to 95 percent."
+    },
+    {
+      "model": "GR00T 2 + GPT-6 Astra",
+      "benchmark": "Oyuncak araba montajı başarı oranı",
+      "skor": 97,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "loose parts on table, no order",
+      "kaynak_metinden_alinti": "the combined system assembled them in at least 97 percent of trials."
+    },
+    {
+      "model": "GR00T 2 (dil modeli olmadan)",
+      "benchmark": "Oyuncak araba montajı başarı oranı",
+      "skor": 23,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "without corrective language model",
+      "kaynak_metinden_alinti": "Without the corrective language model ... succeeded in only 23 out of 100 attempts."
+    },
+    {
+      "model": "GR00T 2 Turbo",
+      "benchmark": "Patlamış mısır toplama başarı oranı",
+      "skor": 50,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "bipedal robot test",
+      "kaynak_metinden_alinti": "That last task, though, succeeded in just under half of all attempts."
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/11/GR00T-2-Nvidia.png",
+  "url": "https://the-decoder.com/nvidias-model-gr00t-2-watches-humans-on-video-then-imagines-itself-as-the-robot/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-10T18:41:52.000Z",
+  "slug": "nvidia-s-model-gr00t-2-watches-humans-on-video-then-imagines"
+}

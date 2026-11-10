@@ -1,0 +1,31 @@
+{
+  "baslik_tr": "Hugging Face Hub Kullanımı Google Cloud Faturasıyla Ödenebilir",
+  "ozet_tr": "Hugging Face, organizasyonların Hub hizmetlerini Google Cloud Marketplace üzerinden faturalandırmalarını sağlayarak tek bir bulut faturasıyla ödeme imkanı sunuyor. Bu entegrasyon, kredi kartı yerine kurumsal bulut hesabı üzerinden kullanım takibi ve ödeme yapmayı mümkün kılıyor.",
+  "detayli_icerik_tr": "Hugging Face, artık organizasyonların Hub hizmetlerini Google Cloud hesabına bağlayarak tüm kullanım ücretlerini mevcut Google Cloud faturası üzerinden alıyor. Bu sayede şirketler, ayrı bir satıcı ve kredi kartı yönetimiyle uğraşmadan, bulut harcamalarını tek bir yerde toplayabiliyor. Entegrasyon, Google Cloud Marketplace üzerinden Hugging Face Hub listesine abone olunması ve ardından organizasyonun yönetici yetkisiyle bağlanması adımlarıyla gerçekleşiyor.\n\nAbonelik sürecinde, kullanıcılar Google Cloud Marketplace'te Hugging Face Hub kaydını seçip bir proje ve faturalama hesabı belirliyor, ardından Hugging Face yönlendirmesiyle organizasyonları bağlanıyor. Bağlantı tamamlandığında, ödeme yöntemi Google Cloud hesabı olarak güncelleniyor; ancak onay aşamasına kadar mevcut kredi kartı üzerinden faturalama devam ediyor. Onaylandığında, organizasyonun bir sonraki faturalama döneminde ya da ücretsiz katmanda ise anında Google Cloud üzerinden ücretlendirme başlıyor.\n\nBu entegrasyonun sunduğu avantajlar arasında tek fatura, mevcut tedarikçi ve satın alma süreçlerinin korunması ve tüm Hugging Face compute hizmetlerinin (Jobs, Inference Endpoints, Inference Providers, GPU Spaces vb.) aynı faturalama üzerinden izlenmesi yer alıyor. Ayrıca, Team ya da Enterprise aboneliklerinde aylık dahil krediler, Google Cloud üzerinden raporlanmadan önce uygulanıyor; kredi ekleme gibi işlemler ise Marketplace faturalaması aktifken mümkün değil.\n\nKullanıcılar, organizasyon ayarları üzerinden faturalama durumunu anlık izleyebiliyor ve Google Cloud konsolundaki Billing raporlarından detaylı harcama analizlerine ulaşabiliyor. Bağlantı ve bağlantının kaldırılması işlemleri denetim loglarında kayıt altına alınıyor, bu da kurumsal denetim ve uyumluluk açısından ek bir güvenlik katmanı sağlıyor.",
+  "onemli_maddeler": [
+    "Hugging Face Hub kullanım ücretleri Google Cloud faturasıyla tek bir fatura altında toplanıyor.",
+    "Yeni bir satıcı ve kredi kartı ekleme ihtiyacı ortadan kalkıyor, mevcut bulut satın alma süreçleri korunuyor.",
+    "Team ve Enterprise aboneliklerinde dahil krediler, Google Cloud üzerinden raporlanmadan önce uygulanıyor.",
+    "Bağlantı ve bağlantının kaldırılması denetim loglarında izleniyor, kurumsal uyumluluğu artırıyor."
+  ],
+  "kategori": "fiyat-limit",
+  "onem": 3,
+  "onem_gerekce": "Kurumsal AI hizmetlerinin bulut ortamına entegrasyonu, faturalama ve tedarik süreçlerini basitleştirerek operasyonel verimliliği artırıyor; ancak teknik yenilik açısından sınırlı bir etki yaratıyor.",
+  "etiketler": [
+    "Hugging Face",
+    "Google Cloud",
+    "billing",
+    "Marketplace",
+    "AI"
+  ],
+  "anilan_modeller": [],
+  "yorum_tr": "Bu entegrasyon, büyük ölçekli AI projeleri yürüten şirketler için faturalama ve tedarik süreçlerini sadeleştirerek maliyet yönetimini kolaylaştırıyor. Kullanıcı deneyimi açısından da tek bir bulut hesabı üzerinden tüm harcamaları izlemek, operasyonel şeffaflığı artırıyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://huggingface.co/blog/assets/hub-gcp-marketplace/thumbnail.jpg",
+  "url": "https://huggingface.co/blog/hub-gcp-marketplace",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-11-10T00:00:00.000Z",
+  "slug": "pay-for-hugging-face-hub-with-your-google-cloud-account"
+}
