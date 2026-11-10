@@ -1,0 +1,73 @@
+{
+  "baslik_tr": "Anthropic, Claude Fable 5.2 ve Mythos 5.2'yi piyasaya sürdü",
+  "ozet_tr": "Anthropic, açık uçlu teknik görevler için aynı temel modeli kullanan iki yeni yapay zeka modeli Claude Fable 5.2 ve Claude Mythos 5.2'yi tanıttı. Fable, siber güvenlik ve biyoloji korumalarıyla birlikte tüm Claude platformları ve büyük bulut sağlayıcıları üzerinden erişilebilirken, Mythos yalnızca doğrulanmış siber güvenlik ve yaşam bilimleri kuruluşlarına sunuluyor.",
+  "detayli_icerik_tr": "Anthropic, Claude Fable 5.2 ve Claude Mythos 5.2 modellerini duyurarak, kodlama, bilimsel araştırma, donanım mühendisliği, robotik ve karmaşık analiz gibi alanlarda daha yüksek performans vaat ediyor. Her iki model de aynı temel mimari üzerine inşa edilmiş olup, Fable siber güvenlik ve biyoloji güvenlik önlemleriyle donatılmış ve Amazon Web Services, Google Cloud ve Microsoft Azure üzerinden kullanılabiliyor. Mythos ise Anthropic'in doğrulama programları aracılığıyla sadece seçilmiş siber güvenlik ve yaşam bilimleri kuruluşlarına erişim izni veriyor.\n\nYeni modeller, önceki sürümlere kıyasla kodlama, akıl yürütme ve görsel anlama konularında belirgin iyileşmeler gösteriyor. Anthropic, Fable ve Mythos'un çıktılarının Fable ve Mythos 5.1'e göre %30 daha hızlı üretildiğini ve standart fiyatların giriş token başına 8 $, çıkış token başına 40 $ olduğunu belirtiyor. Ayrıca, isteğe bağlı hızlı modda üretim hızı 2,5 katına kadar çıkabiliyor; bu modda fiyatlar giriş token başına 16 $, çıkış token başına 80 $ olarak belirlenmiş.\n\nPerformans testlerinde Fable 5.2, FrontierCode 2.0 benchmark'ında Xhigh effort seviyesinde %49,1 skor elde ederken, Mythos 5.2 CVE Rediscovery değerlendirmesinde %89,6 başarı gösterdi. Fable ayrıca RoboDojo Sim robotik testinde %64,9 puan alarak, yapay zeka destekli mühendislik ve robotik görevlerde rekabet gücünü kanıtladı. Artificial Analysis Intelligence Index v5'te ise Fable 5.2 65 puanla birinci sırada yer alarak, Gemini 4 Carbon (60) ve Claude Opus 5.5 (59) gibi rakiplerini geride bıraktı.\n\nErken erişim deneyimlerine göre, Vercel, Shopify ve Datadog gibi büyük teknoloji firmaları Fable 5.2'yi belirsiz mühendislik problemlerinde özellikle yetkin buldu. Anthropic, modelin yüksek riskli senaryolarda düşük uyumsuzluk riski taşıdığını ve Fable 5.1'e göre %55 daha az bloklama ürettiğini raporladı. Mythos ise 34 deneme içinde 28 AAV kapsidini doğru modelleyerek biyoteknoloji alanında da güçlü bir araç olduğunu gösterdi. Bu gelişmeler, Anthropic'in modellerini hem genel amaçlı hem de sektörel uzmanlık gerektiren görevlerde bir adım öne taşıdığını işaret ediyor.",
+  "onemli_maddeler": [
+    "Claude Fable 5.2 ve Claude Mythos 5.2, aynı temel model üzerine inşa edilerek teknik görevlerde %30 daha hızlı çıktı sağlıyor.",
+    "Fable 5.2, FrontierCode 2.0 (Xhigh effort) benchmark'ında %49,1 skor alırken, Mythos 5.2 CVE Rediscovery testinde %89,6 başarı gösterdi.",
+    "Artificial Analysis Intelligence Index v5'te Fable 5.2, 65 puanla birinci sırada yer alarak sektörde lider konumuna yükseldi."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Anthropic'in yeni modelleri, hem performans hem de fiyat açısından önemli iyileşmeler sunarak büyük bulut platformlarında geniş erişim sağlıyor; benchmark sonuçları da sektördeki rekabeti yeniden şekillendirecek düzeyde.",
+  "etiketler": [
+    "Claude",
+    "Anthropic",
+    "Fable 5.2",
+    "Mythos 5.2",
+    "AI modelleri"
+  ],
+  "anilan_modeller": [
+    "Claude Fable 5.2",
+    "Claude Mythos 5.2",
+    "Claude Opus 5.5",
+    "Gemini 4 Carbon",
+    "Claude Sonnet"
+  ],
+  "yorum_tr": "Bu modeller, yüksek maliyetli teknik projelerde daha hızlı ve güvenli bir yapay zeka desteği sunarak geliştiricilerin ve araştırmacıların verimliliğini artıracak; aynı zamanda fiyatlandırma stratejisi, geniş kullanıcı tabanının erişimini kolaylaştırıyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Claude Fable 5.2",
+      "benchmark": "FrontierCode 2.0",
+      "skor": 49.1,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Xhigh effort",
+      "kaynak_metinden_alinti": "Fable 5.2 scored 49.1% on FrontierCode 2.0 at Xhigh effort"
+    },
+    {
+      "model": "Claude Mythos 5.2",
+      "benchmark": "CVE Rediscovery",
+      "skor": 89.6,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Mythos 5.2 reached 89.6% on Anthropic’s CVE Rediscovery evaluation"
+    },
+    {
+      "model": "Claude Fable 5.2",
+      "benchmark": "RoboDojo Sim",
+      "skor": 64.9,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Fable 5.2 scored 64.9% on the RoboDojo Sim robotics test"
+    },
+    {
+      "model": "Claude Fable 5.2",
+      "benchmark": "Artificial Analysis Intelligence Index v5",
+      "skor": 65,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Claude Fable 5.2 took the #1 spot on the Artificial Analysis Intelligence Index v5 at 65"
+    }
+  ],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/11/New-session-Claude-11-09-2026_11_33_PM.jpg",
+  "url": "https://www.testingcatalog.com/anthropic-launches-claude-fable-5-2-and-mythos-5-2/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-09T22:32:09.000Z",
+  "slug": "anthropic-launches-claude-fable-5-2-and-mythos-5-2"
+}

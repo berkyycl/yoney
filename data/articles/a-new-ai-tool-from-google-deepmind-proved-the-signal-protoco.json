@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "Google DeepMind’ın Yeni AI Aracı Signal Protokolünü Matematiksel Olarak Doğruladı",
+  "ozet_tr": "Google DeepMind araştırmacıları, AlphaProof Code adlı yapay zeka çerçevesiyle Signal protokolünün kritik kriptografik garantilerini matematiksel olarak kanıtladı. Dört haftalık bir deneme sürecinde, protokolün mevcut sürümlerinde yeni bir güvenlik açığı bulunmadığı ve eski, hatalı sürümlerdeki sorunların doğru şekilde tespit edildiği gösterildi.",
+  "detayli_icerik_tr": "DeepMind ekibi, son dört hafta içinde AlphaProof Code adlı yeni bir AI çerçevesi kullanarak Signal protokolünün belirli bölümlerini formal olarak doğruladı. Bu çalışma, Signal uygulaması, Google Messages ve WhatsApp gibi milyarlarca iletiyi koruyan kriptografik altyapının bağımsız bir doğrulamasını sunuyor ve DeepMind’ın formal doğrulama yeteneklerini sergiliyor.\n\nFormal doğrulama, yazılımın matematiksel kanıtlarla istenen özellikleri sağladığını gösteren bir güvenlik yaklaşımıdır. Geleneksel süreçlerde bu, uzun zaman alan manuel tanımlamalar ve formülasyonlar gerektirirken, AlphaProof Code gibi ajan‑temelli yapay zekalar bu adımları otomatikleştirerek süreci haftalar yerine günlere indiriyor. Ancak araştırmacılar, bu denemenin Signal uygulamasının tamamını kapsamadığını ve ölçeklenebilirlik konusunda hâlâ önemli zorlukların bulunduğunu vurguluyor.\n\nDeneyde, AlphaProof Code eski Signal sürümlerindeki bilinen ve uzun süredir düzeltilmiş güvenlik açıklarını doğru bir şekilde tespit etti ve bu sürümlerin formal olarak doğrulanamadığını gösterdi. Yeni sürümlerde ise yeni bir zafiyet bulunmadı. DeepMind, elde ettiği spesifikasyon ve kanıtları açık kaynak olarak paylaşarak diğer araştırmacıların da formal doğrulama çalışmalarını hızlandırmayı hedefliyor.\n\nSignal'in CTO'su Ehren Kret, önceki formal doğrulama çabalarının daha sınırlı olduğunu, DeepMind’ın yaklaşımının ise bu alanda önemli bir genişleme sağladığını belirtti. Google Cloud ve DeepMind araştırma başkanı Pushmeet Kohli ise, bankalar ve yüksek riskli hizmetler gibi kritik altyapıların tüm kod tabanının formal olarak doğrulanabilmesinin gelecekte güvenlik standartlarını kökten değiştirebileceğine işaret etti. Ancak maliyet, ölçek ve ticari ürünleşme konularında hâlâ belirsizlikler bulunuyor.",
+  "onemli_maddeler": [
+    "AlphaProof Code, Signal protokolünün belirli bölümlerini dört hafta içinde matematiksel olarak doğruladı.",
+    "Araç, eski sürümlerdeki bilinen güvenlik açıklarını tespit ederken yeni sürümlerde yeni bir zafiyet bulmadı.",
+    "DeepMind, spesifikasyon ve kanıtları açık kaynak olarak yayınlayarak formal doğrulama topluluğuna katkı sağladı."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "Formal doğrulama alanında AI destekli bir kanıt, geniş çaplı iletişim güvenliğinin bağımsız olarak teyit edilmesi ve AI‑tabanlı güvenlik araçlarının potansiyelini gösterdiği için sektörde büyük ilgi uyandırıyor.",
+  "etiketler": [
+    "AI",
+    "formal doğrulama",
+    "kriptografi",
+    "Signal",
+    "DeepMind"
+  ],
+  "anilan_modeller": [
+    "AlphaProof Code"
+  ],
+  "yorum_tr": "Bu gelişme, yapay zekanın güvenlik doğrulama süreçlerini hızlandırabileceğini gösteriyor; ancak ölçeklenebilirlik ve maliyet sorunları çözülmeden, tüm yazılım ekosistemlerine yaygın olarak uygulanması zor kalabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://media.wired.com/photos/6af239fd5613664a71d65edb/master/pass/Security_V1-ezgif.com-video-to-gif-converter.gif",
+  "url": "https://www.wired.com/story/a-new-ai-tool-from-google-deepmind-formally-verified-the-signal-protocol/",
+  "source": "WIRED AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-10T05:01:00.000Z",
+  "slug": "a-new-ai-tool-from-google-deepmind-proved-the-signal-protoco"
+}

@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "Claude ile Gizemli Bipin Kaynağını Bulmak İçin Beep Locator Geliştirildi",
+  "ozet_tr": "Simon Willison, Claude Code kullanarak bir odadaki gizemli bip sesinin konumunu tespit eden Beep Locator adlı bir sistem inşa etti. Python tabanlı bir web sunucusu, WebSocket üzerinden birden çok cihazın mikrofonunu dinleyerek sesleri üçgenleme yöntemiyle konumlandırdı ve yaklaşık 40 cm doğrulukla kaynağı buldu.",
+  "detayli_icerik_tr": "Willison, taşınma sonrası odada rastgele çalan bir bip sesinin kaynağını bulmak için Claude Code ile bir proje başlattı. Claude, 2007 tarihli \"BeepBeep\" adlı akademik makaleyi referans göstererek, sadece hoparlör, mikrofon ve cihazlar arası iletişim kullanan bir yazılım çözümü önerdi. Bu öneri üzerine, bir Python web uygulaması geliştirildi; dinleyici cihazlar (iPad, iPhone, MacBook, Surface vb.) WebSocket aracılığıyla sunucuya bağlanıp mikrofon erişimi talep etti.\n\nDinleyiciler, 60 saniyelik ses tamponlarını kaydederek FFT ve yüksek geçiş filtresiyle bipleri tespit etti. Bir bip raporlandığında, sunucu en düşük gecikmeye sahip cihazı kısa bir chirp (çınlama) çalmaya yönlendirdi ve ardından tüm dinleyicilerden bip öncesi 0,6 saniye ile sonrası 0,8 saniyeyi içeren ses klipleri toplandı. Bu chirp, kliplerin zamanlamasını hizalayarak üçgenleme için kritik bir adım sağladı. Kullanıcı arayüzü, cihazların konumlarını harita üzerinde sürükleyerek kaba bir yerleşim (Rough mode) tanımlamaya izin verdi; sistem daha sonra bu tahmini konumları ses verileriyle iyileştirdi.\n\nEk özellikler arasında, kullanıcıların ellerini çırparak (clap) test yapabilmesi, çırpma seslerinin haritada farklı bir simge (elmas) ile gösterilmesi ve her ses kaydının zaman damgası ile birlikte oynatılabilmesi yer aldı. Ayrıca, dinleyicilere yeni JavaScript kodları göndererek (hot‑swap) uygulamayı yeniden başlatmadan yeni işlevler eklenebildi. Sonuçta sistem, bip kaynağını yaklaşık 40 cm içinde tespit etti ve eski bir karbon monoksit dedektörünün pillerinin bitmek üzere olduğunu ortaya çıkardı.\n\nBu proje, Claude Code'un ses girişini doğrudan işleyememesine rağmen, JavaScript ve Python aracılığıyla cihazların mikrofonlarından gelen verileri analiz edip, gerçek dünyadaki bir problemi çözebileceğini gösterdi. Willison, benzer bir yaklaşımın GitHub Universe'da da kullanıldığını belirterek, kodlama ajanlarının fiziksel ortamı algılaması ve etkileşime girmesinin yeni bir kullanım alanı olduğunu vurguladı.",
+  "onemli_maddeler": [
+    "Claude Code, çoklu cihazdan gelen mikrofon verilerini işleyerek gerçek zamanlı ses üçgenlemesi sağlayan Beep Locator'ı oluşturdu.",
+    "Sistem, Python web sunucusu, WebSocket ve WebAudio API kullanarak cihazları koordine etti ve FFT tabanlı bip algılama algoritmasıyla çalıştı.",
+    "Hot‑swap modülü sayesinde dinleyicilere yeni kodlar anında gönderilebildi, böylece manuel müdahale olmadan sistem güncellenebildi.",
+    "Yaklaşık 40 cm doğrulukla bip kaynağı tespit edildi ve eski bir karbon monoksit dedektörünün pilleri değiştirildi."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Claude Code'un çoklu cihaz senkronizasyonu, ses işleme ve dinamik kod dağıtımı yeteneklerini gösteren pratik bir örnek olması, geliştiricilerin LLM tabanlı kodlama ajanlarını gerçek dünya IoT problemlerine uygulama potansiyelini ortaya koyuyor.",
+  "etiketler": [
+    "Claude",
+    "Beep Locator",
+    "audio triangulation",
+    "coding agents",
+    "WebSockets"
+  ],
+  "anilan_modeller": [
+    "Claude Opus 5.5",
+    "Fable 5.2"
+  ],
+  "yorum_tr": "Bu proje, LLM destekli kodlama ajanlarının fiziksel sensör ağlarını yönetme ve gerçek zamanlı veri analizi yapma yeteneğini kanıtlayarak, IoT prototipleme sürecini büyük ölçüde hızlandırabilir ve geliştiricilerin karmaşık algı sistemlerini daha az çabayla hayata geçirmesine olanak tanır.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://static.simonwillison.net/static/2026/beep-locator-ui.webp",
+  "url": "https://simonwillison.net/2026/Nov/9/mysterious-beeps/",
+  "source": "Simon Willison",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-09T23:57:21.000Z",
+  "slug": "locating-the-source-of-a-mysterious-beep-with-claude"
+}

@@ -1,0 +1,75 @@
+{
+  "baslik_tr": "Meta, Düşük Maliyetli Ajan Görevleri İçin Muse Ember'ı Tanıttı",
+  "ozet_tr": "Meta, yüksek hacimli ajan iş akışları için tasarlanmış en küçük ve en verimli modeli Muse Ember'ı duyurdu. 1 milyon token bağlam penceresi ve rekabetçi fiyatlandırmasıyla, araç çağrıları, kodlama alt görevleri ve uzun belge işleme gibi tekrarlayan görevlerde maliyet başına daha fazla zekâ sunuyor.",
+  "detayli_icerik_tr": "Meta, Muse Ember'ı en küçük ve en verimli modeli olarak tanıttı; bu model, araç çağrıları, kodlama alt görevleri, yönlendirme, veri çıkarımı ve uzun belge ayrıştırma gibi yüksek hacimli ajan işlerini yürütmek için tasarlandı. Muse Code ve Meta Model API üzerinden \"muse-ember-1.0\" adıyla ve Responses API desteğiyle kullanılabiliyor.\n\nEmber, 1 milyon tokenlık bağlam penceresi ve 512 000 çıkış tokenına kadar destek sunarak tek bir istekte tüm bir kod tabanını ya da belge setini işleyebiliyor. Metin, görüntü, ses ve video gibi çoklu modaliteleri doğal olarak işleyebilen model, ekran görüntüleri, grafikler, taramalar, sesli notlar, toplantı kayıtları ve uzun belgeler gibi içeriklerle de çalışabiliyor.\n\nFiyatlandırma, giriş tokenları için milyon başına 0,10 $, önbelleğe alınmış giriş tokenları için milyon başına 0,004 $, ve çıkış tokenları için milyon başına 0,50 $ olarak belirlendi; bu da rakip flash modellerin maliyetinin yaklaşık üçte birine tekabül ediyor. Meta, Ember'ın Claude Haiku 5.5 ve GPT‑6 Luna gibi modellerden daha yüksek zekâ‑başına‑dolar verimliliği sağladığını iddia ediyor.\n\nBenchmark sonuçlarında Ember, maksimum akıl yürütme seviyesinde Artificial Analysis Intelligence Index'te 35,8 puan alırken görev başına tahmini maliyeti 0,136 $ olarak hesaplanıyor. Ayrıca AutomationBench‑AA'da 37,8 ve Agents' Last Exam'de 61,6 puanla rakiplerini geride bırakıyor; FrontierCode 2.0‑AA'da ise 27,2 puan alarak Haiku'nun 34,9 puanının gerisinde kalıyor. Muse Spark 1.3 ile karşılaştırıldığında, Ember indeks puanında 36 elde ederken maliyetini 2,39 $'dan 0,14 $'a düşürüyor.\n\nBox, Cline, Oracle, Cloudflare ve You.com gibi erken ortaklar, Ember'ı sözleşme risk puanlaması, aday tarama, kod alt‑ajanları ve belge analizi gibi senaryolarda test ediyor. Güvenlik değerlendirmeleri, Ember'ı kimyasal, biyolojik, siber güvenlik ve kontrol kaybı riskleri açısından yüksek risk eşiğinin altında konumlandırdı; ayrıca prompt enjeksiyonu, hassas veri işleme ve yüksek etkili eylemler öncesinde insan girdisi talep etme gibi güvenlik önlemleri de içeriyor.",
+  "onemli_maddeler": [
+    "1 M token bağlam penceresi ve 512 k çıkış tokenı, tek bir çağrıda tam kod tabanı veya belge seti işleyebilme.",
+    "Milyon token başına 0,10 $, önbellekli giriş tokenı 0,004 $, çıkış tokenı 0,50 $ fiyatlandırma – rakip flash modellerin üçte biri.",
+    "Benchmarklerde Artificial Analysis Intelligence Index 35,8, AutomationBench‑AA 37,8 ve Agents' Last Exam 61,6 puanla liderlik.",
+    "Box, Oracle, Cloudflare ve You.com gibi büyük şirketlerin düşük maliyetli ajan iş akışları için erken benimsemesi.",
+    "Muse Wonder Full ile eğitilen ilk model; Muse Spark ve Muse Wonder aileleriyle birlikte farklı planlama ve kodlama ihtiyaçlarını kapsıyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Meta'nın en küçük ve en verimli modeli Muse Ember, yüksek hacimli ajan görevlerinde maliyet verimliliği ve performans açısından sektörde yeni bir referans noktası oluşturuyor; fiyatlandırma ve benchmark sonuçları, geniş çaplı kurumsal benimsenme potansiyelini gösteriyor.",
+  "etiketler": [
+    "Meta",
+    "Muse Ember",
+    "AI agents",
+    "large language model",
+    "pricing"
+  ],
+  "anilan_modeller": [
+    "Muse Ember",
+    "Claude Haiku 5.5",
+    "GPT-6 Luna",
+    "Muse Spark 1.3",
+    "Muse Wonder Full"
+  ],
+  "yorum_tr": "Muse Ember, düşük maliyetli ve yüksek hacimli ajan iş akışları için tasarlanmış olmasıyla geliştiricilere daha ekonomik bir seçenek sunarken, benchmark performansı da rekabetçi modelleri geride bırakıyor; bu durum, özellikle büyük ölçekli otomasyon ve belge işleme projelerinde kullanımını artırabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Muse Ember",
+      "benchmark": "Artificial Analysis Intelligence Index",
+      "skor": 35.8,
+      "birim": "",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "maximum reasoning",
+      "kaynak_metinden_alinti": "At maximum reasoning, Ember reaches 35.8 on the Artificial Analysis Intelligence Index at an estimated $0.136 per task..."
+    },
+    {
+      "model": "Muse Ember",
+      "benchmark": "AutomationBench-AA",
+      "skor": 37.8,
+      "birim": "",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Ember also leads both rivals on AutomationBench-AA with 37.8..."
+    },
+    {
+      "model": "Muse Ember",
+      "benchmark": "Agents' Last Exam",
+      "skor": 61.6,
+      "birim": "",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Ember also leads ... Agents' Last Exam with 61.6..."
+    },
+    {
+      "model": "Muse Ember",
+      "benchmark": "FrontierCode 2.0-AA",
+      "skor": 27.2,
+      "birim": "",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "its 27.2 on FrontierCode 2.0-AA trails Haiku's 34.9."
+    }
+  ],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/11/Model-API-11-09-2026_06_52_PM.jpg",
+  "url": "https://www.testingcatalog.com/meta-launches-muse-ember-for-low-cost-agentic-tasks/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-09T22:28:21.000Z",
+  "slug": "meta-launches-muse-ember-for-low-cost-agentic-tasks"
+}

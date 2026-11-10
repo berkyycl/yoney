@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "Google AI Studio Build’da Google Maps Platform Özellikleri Kullanıma Açıldı",
+  "ozet_tr": "Google, AI Studio Build ortamına Google Maps Platform entegrasyonunu getirerek, tek bir komutla harita tabanlı uygulamaları dakikalar içinde oluşturma imkanı sundu. Kullanıcılar, sadece bir fikir girdikten sonra Gemini, API anahtarını yöneterek harita, rota, yer ve çevresel veri katmanlarını otomatik olarak yapılandırıyor.",
+  "detayli_icerik_tr": "Google, Google Maps Platform'u Google AI Studio'nun Build bölümüne entegre etti ve geliştiricilerin ya da teknik olmayan kullanıcıların yazılı bir talimatla çalışan bir harita uygulaması üretmesini sağladı. Bu yeni özellik, mağaza bulucu, rota planlayıcı, sinematik 3D uçuşlar ve gerçek zamanlı hava kalitesi izleyicileri gibi dört temel kategori üzerinden hizmet veriyor. Kullanıcı bir senaryo tanımlıyor, Gemini otomatik olarak gerekli Maps API'lerini yapılandırıyor, API anahtarını güvenli bir şekilde ekliyor ve ön izleme alanında etkileşimli bir harita sunuyor.\n\nEntegre araç, tek tıklamayla kurulum yapma yeteneği sayesinde, harita döşemeleri, yer bilgileri, hava durumu, yönlendirme ve 3D görselleştirme gibi bileşenleri tek bir komutla birleştiriyor. Ayrıca, Google Cloud projesi üzerinden yönlendirme yapmadan doğrudan AI Studio içinde harita ekleyebiliyor ve mevcut bir projeyle de bağlanabiliyor. Ücretsiz deneme ortamı, her API için günde 100 çağrı limiti tanıyor; bu limit 24 saatlik periyotlarla sıfırlanıyor ve beklenmedik ücretlendirmeleri önlüyor.\n\nGoogle, bu entegrasyonu desteklemek amacıyla galeri projeleri de yayınladı. \"City Immersive Tour\" gibi örneklerde 3D şehir haritaları, özelleştirilebilir kamera yolları ve yer işaretleri bulunurken, \"Pet Grooming Route Optimizer\" çok duraklı rotaları, randevu zamanlamalarını ve sürücü vardiya sınırlamalarını gösteriyor. \"Store Locator & Near Me Finder\" ise vektör haritaları ve Places API'yi birleştirerek mesafeye göre arama, çalışma saatleri ve şube detaylarını sunuyor.\n\nÜcretsiz sandbox'tan üretim ortamına geçiş, bir Google Cloud faturalama hesabı gerektiriyor. Bu sayede standart Google Maps Platform fiyatlandırması ve aylık ücretsiz kullanım kotası devreye giriyor. Google, bu adımla harita API'lerini Gemini tabanlı uygulama oluşturma süreciyle tek bir çalışma alanında birleştirerek, geliştiricilerin ve iş birimlerinin prototipleme süresini büyük ölçüde kısaltmayı hedefliyor.",
+  "onemli_maddeler": [
+    "Tek tıklamayla Google Maps Platform kurulumu ve API anahtarı yönetimi",
+    "Ücretsiz sandbox ortamı: her API için günde 100 çağrı limiti",
+    "Dört ana kategori (Maps, Places, Routes, Environment) üzerinden kapsamlı harita özellikleri",
+    "Galeride sunulan örnek projelerle hızlı prototipleme ve yeniden kullanım",
+    "Üretim ortamına geçişte Google Cloud faturalama hesabı ve standart fiyatlandırma"
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Harita hizmetlerinin AI destekli düşük kodlu geliştirme ortamına entegrasyonu, geliştiricilerin prototip süresini kısaltarak ürün geliştirme hızını artırması bakımından sektörde önemli bir adım olarak değerlendirilebilir.",
+  "etiketler": [
+    "Google AI Studio",
+    "Google Maps Platform",
+    "Gemini",
+    "Uygulama Geliştirme",
+    "No-code"
+  ],
+  "anilan_modeller": [
+    "Gemini"
+  ],
+  "yorum_tr": "Bu entegrasyon, harita tabanlı çözümler geliştirmek isteyen ekipler için düşük kodlu bir yol sunarak zaman ve maliyet tasarrufu sağlayacak. Aynı zamanda Gemini'in API yönetim yeteneklerini göstererek, AI‑destekli uygulama oluşturma süreçlerinin kapsamını genişletecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/11/banner-4.webp",
+  "url": "https://www.testingcatalog.com/google-maps-features-come-to-google-ai-studio-build/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-09T22:26:02.000Z",
+  "slug": "google-maps-features-come-to-google-ai-studio-build"
+}

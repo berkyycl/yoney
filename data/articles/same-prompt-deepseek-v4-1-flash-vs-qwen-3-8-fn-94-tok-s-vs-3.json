@@ -1,0 +1,53 @@
+{
+  "baslik_tr": "DeepSeek V4.1 Flash vs Qwen 3.8 FN: 94 tok/s vs 350 tok/s",
+  "ozet_tr": "Yerel olarak çalıştırılabilen iki üst düzey MoE modelinin aynı tek seferlik prompt ile performansı karşılaştırıldı. DeepSeek V4.1 Flash 94 token/sn hızla 250 k token üretirken, Qwen 3.8 FN ortalama 350 token/sn hızla 443 k token üretti. Sonuçlar, hız ve çıktı kalitesi açısından farklılıkları ortaya koydu.",
+  "detayli_icerik_tr": "Reddit topluluğu üyesi, DeepSeek V4.1 Flash ve Qwen 3.8 FN modellerinin aynı \"V8 motoru\" promptunu çalıştırarak yerel ortamda ne kadar farklı performans gösterdiğini ölçtü. Prompt, Three.js/WebGL tabanlı tam etkileşimli bir V8 motoru simülasyonu oluşturmayı talep ediyor ve modelden detaylı 3D bileşenler, animasyonlar ve kontrol mekanizmaları üretmesini istiyor.\n\nDeney, RTX 5090 ve RTX 5060 Ti GPU'ları, Ryzen 9 9950X işlemci ve 128 GB DDR5 RAM içeren bir Basalt sisteminde Quecto Harness kullanılarak gerçekleştirildi. DeepSeek V4.1 Flash, tek bir ajan olarak yaklaşık 60 dakikada 250 k token üretip ~94 token/sn hız yakaladı; model 346 k tokenlık bağlamı sıkıştırma yapmadan işledi ve motorun temel işlevlerini doğru bir şekilde oluşturdu.\n\nQwen 3.8 FN ise ana ajan ve beş alt ajan (aynı anda en fazla üç) ile çalıştı; toplamda yaklaşık 70 dakikada 443 k token üretip ortalama 350 token/sn hız sağladı. Model 804 k tokenlık bağlamı iki kez sıkıştırdı, daha fazla parça ve detaylı bir kesit sundu, hatta motor sesini ekledi; ancak bazı alt ajanlar görevlerini tamamlamadı ve bazı parçalar hâlâ havada kaldı. Kullanıcı, Qwen 3.8 FN'in kod refaktörleme ve özellik ekleme konularında güçlü olduğunu, ancak kritik görevlerde Opus 5.5 gibi bulut modellerine tercih edildiğini belirtti.\n\nDeney, iki modelin hız, bağlam yönetimi ve çıktı kalitesi açısından farklı avantajlar sunduğunu gösterdi. DeepSeek V4.1 Flash, daha tutarlı ve sıkıştırmasız bir bağlamla daha düşük hızda çalışırken, Qwen 3.8 FN daha yüksek token üretim hızı ve daha zengin içerik sağladı, fakat çıktının bütünlüğü ve stabilitesi konusunda bazı eksiklikler gösterdi.",
+  "onemli_maddeler": [
+    "DeepSeek V4.1 Flash 94 tok/s hızla 250 k token üretti",
+    "Qwen 3.8 FN ortalama 350 tok/s hızla 443 k token üretip daha büyük bağlamı iki kez sıkıştırdı",
+    "DeepSeek tek ajanla daha tutarlı sonuç verirken, Qwen çoklu ajan yapısıyla daha detaylı ama bazı eksik çıktılar sundu",
+    "Deney RTX 5090 + RTX 5060 Ti, Ryzen 9 9950X ve 128 GB DDR5 üzerinde Quecto Harness ile yapıldı"
+  ],
+  "kategori": "benchmark",
+  "onem": 3,
+  "onem_gerekce": "Yerel MoE modellerinin gerçek dünya promptları üzerindeki hız ve çıktı kalitesi farklarını gösteren topluluk temelli bir benchmark olması, geliştiriciler için pratik bir referans sunuyor ancak sektörel çapta geniş etkisi sınırlı.",
+  "etiketler": [
+    "DeepSeek V4.1",
+    "Qwen 3.8",
+    "MoE",
+    "Token Hızı",
+    "Yerel LLM"
+  ],
+  "anilan_modeller": [
+    "DeepSeek V4.1 Flash",
+    "Qwen 3.8 FN"
+  ],
+  "yorum_tr": "Bu karşılaştırma, yerel ortamda yüksek performanslı MoE modelleri seçerken hız, bağlam yönetimi ve çıktı bütünlüğü arasında denge kurmanın önemini vurguluyor; geliştiriciler ihtiyaçlarına göre model tercihlerini daha bilinçli yapabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "DeepSeek V4.1 Flash",
+      "benchmark": "Token Generation Speed",
+      "skor": 94,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "DeepSeek V4.1 Flash ... 250k tokens generated at ~94 tok/s."
+    },
+    {
+      "model": "Qwen 3.8 FN",
+      "benchmark": "Token Generation Speed (aggregate)",
+      "skor": 350,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Qwen 3.8 FN ... ~350 tok/s aggregate."
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/du0slvsh8o0i1.png?width=140&height=79&auto=webp&s=357d8a91b90ff5149bd06c113f3a45ef7069d413",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xs7ffm/same_prompt_deepseek_v41_flash_vs_qwen_38_fn_94/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-09T23:32:31.000Z",
+  "slug": "same-prompt-deepseek-v4-1-flash-vs-qwen-3-8-fn-94-tok-s-vs-3"
+}

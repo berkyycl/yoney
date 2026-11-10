@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "ArtificialAnalysis açık ağırlıklı modellera karşı önyargılı mı?",
+  "ozet_tr": "Reddit kullanıcısı Rare_Subject2343, ArtificialAnalysis'in açık ağırlıklı (open weight) modelleri, kapalı kaynaklı ABD modelleriyle karşılaştırıldığında sistematik olarak düşük puanladığını iddia ediyor. Platformun “intelligence index”i, Claude ve GPT gibi ticari modelleri öne çıkarırken DeepSeek ve GLM gibi açık modellerin gerçek yeteneklerini göz ardı ediyor.",
+  "detayli_icerik_tr": "Reddit'in LocalLLaMA topluluğunda paylaşılan bir gönderide, kullanıcı ArtificialAnalysis'in benchmark sonuçlarını bilinçli olarak yeniden kalibre ettiğini ve bu sayede açık ağırlıklı modelleri düşük performanslı gösterdiğini öne sürüyor. Gönderide, bu manipülasyonun özellikle X/Twitter üzerinden yapılan tanıtımlarda açıkça görülerek, Claude ve GPT gibi tescilli modellerin üstünlüğünün vurgulandığı, ancak DeepSeek ve GLM gibi modellerin kodlama gibi kritik görevlerdeki gerçek performansının göz ardı edildiği belirtiliyor.\n\nKullanıcı, bu durumun iş dünyasındaki karar vericileri yanıltarak, açık ağırlıklı modelleri tercih etmeyi bıraktırıp, Anthropic gibi şirketlerin abonelik hizmetlerine yönlendirdiğini iddia ediyor. ArtificialAnalysis'in, “doymuş” benchmarkları düzeltmek bahanesiyle bu değişiklikleri gizli bir şekilde uyguladığı ve bu sürecin bir tür finansal çıkar ilişkisiyle desteklendiği yönünde spekülasyonlar bulunuyor.\n\nGönderi, açık ağırlıklı modellerin şeffaflığı ve erişilebilirliği nedeniyle topluluk içinde büyük bir destek bulduğunu, ancak bu tür platformların objektif değerlendirme yapmadığı takdirde, araştırmacıların ve geliştiricilerin doğru yönlendirilmesinin zorlaşacağını vurguluyor. Ayrıca, benchmarkların metodolojisinin şeffaf olmaması, sonuçların güvenilirliğini sorgulatan bir ortam yaratıyor.\n\nBu iddialar, yapay zeka ekosisteminde açık kaynak modellerin konumunu korumak ve bağımsız değerlendirme mekanizmalarının geliştirilmesi gerektiği tartışmasını yeniden alevlendirdi. Topluluk, daha açık ve tarafsız benchmark standartları talep ederken, platformların metodolojik şeffaflıklarını artırması gerektiğini belirtiyor.",
+  "onemli_maddeler": [
+    "ArtificialAnalysis'in benchmark sonuçlarını yeniden kalibre ettiği iddiası.",
+    "Açık ağırlıklı modellerin (DeepSeek, GLM) gerçek yeteneklerinin göz ardı edilmesi.",
+    "Şeffaf olmayan benchmark metodolojisinin iş dünyasındaki kararları yanıltma riski."
+  ],
+  "kategori": "benchmark",
+  "onem": 3,
+  "onem_gerekce": "Benchmarkların güvenilirliği yapay zeka ekosisteminde kritik bir rol oynar; bu tür iddialar topluluk içinde tartışma yaratırken, sektörel etkisi henüz geniş çapta ölçülmemiştir.",
+  "etiketler": [
+    "ArtificialAnalysis",
+    "benchmark",
+    "open-weight",
+    "Claude",
+    "GPT"
+  ],
+  "anilan_modeller": [
+    "Claude",
+    "GPT",
+    "DeepSeek",
+    "GLM"
+  ],
+  "yorum_tr": "Benchmark platformlarının şeffaflığı, geliştiricilerin ve kullanıcıların doğru model seçimleri yapabilmesi için hayati öneme sahiptir; bu tür iddialar, bağımsız ve açık değerlendirme mekanizmalarının geliştirilmesi gerektiğini bir kez daha ortaya koyuyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/glw3miqrvn0i1.png?width=640&crop=smart&auto=webp&s=0db61f65e6f993f50b490aa894956f96031408bf",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xs5pkl/is_artificialanalysis_biased_against_open_weight/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-09T22:22:35.000Z",
+  "slug": "is-artificialanalysis-biased-against-open-weight-models"
+}

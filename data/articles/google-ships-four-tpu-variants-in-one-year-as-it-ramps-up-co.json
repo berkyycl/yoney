@@ -1,0 +1,36 @@
+{
+  "baslik_tr": "Google, bir yılda dört yeni TPU varyantı sunarak Nvidia'ya rakip oluyor",
+  "ozet_tr": "Google, sekizinci nesil TPU serisine iki yeni sistem ekleyerek gizli veri işleme ve bellek yoğun uygulamalar için çözümler sundu. Yeni TPU 8tx, veriyi işleme sırasında şifreli tutarken, TPU 8i Max aynı raf içinde iki çipi birleştirerek hesaplama ve bellek kapasitesini ikiye katlıyor. Bu hamle, Google'ın TPU'ları dış müşterilere yönelik bir platform haline getirme stratejisinin bir göstergesi.",
+  "detayli_icerik_tr": "Google, sekizinci nesil AI hızlandırıcı serisine iki yeni sistem tanıttı: gizli bilgi işleme odaklı TPU 8tx ve bellek‑ağır iş yüklerini hedefleyen TPU 8i Max. Her iki varyant da mevcut TPU 8i ve TPU 8t çiplerinin üzerine farklı paketleme, ağ ve bellek konfigürasyonları ekleyerek geliştirildi; yeni bir çip üretimi yapılmadı. Bu modüler yaklaşım, yeni donanım varyantlarını aylar içinde piyasaya sürme imkanı tanıyor.\n\nTPU 8tx, veri ve model ağırlıklarının işleme sırasında bile şifreli kalmasını sağlayarak kurumsal ve devlet müşterilerinin gizli verilerini korumayı amaçlıyor. Google, bu sistemin düşük gecikmeli Boardfly ağıyla entegrasyon sayesinde TPU 8t'ye kıyasla iki kat daha düşük gecikme sunduğunu iddia ediyor. Böylece tek bir sistem içinde model ince ayarı, büyük modellerin küçültülmesi ve takviye öğrenme tabanlı ajan eğitimi gibi işlemler, verinin farklı kümelere taşınmasına gerek kalmadan gerçekleştirilebilecek.\n\nTPU 8i Max ise bellek darboğazını aşmak için aynı paket içinde iki TPU 8i çipini birleştiriyor. Sonuç olarak aynı raf içinde hesaplama gücü, bellek kapasitesi ve bellek bant genişliği iki katına çıkıyor; bu da büyük kod tabanları veya saatlerce video işleyen AI ajanları için performans yoğunluğunu artırıyor. Google, bu konfigürasyonun veri merkezi alanı başına performansı önemli ölçüde yükselttiğini vurguluyor.\n\nDonanım yeniliklerinin yanı sıra Google, TPU ekosistemini geliştiriciler için daha erişilebilir kılmak amacıyla TorchTPU'yu açık kaynak olarak yayınladı. Bu sayede PyTorch kodları minimal değişiklikle TPU'larda çalıştırılabiliyor ve vLLM, SGLang gibi popüler çıkarım çerçeveleri de destekleniyor. Şirket, dış müşterileri sayısının neredeyse 100'e ulaştığını belirterek, TPU'ları sadece iç kullanım için değil, günlük model çıkarımı pazarına da sunma stratejisini pekiştiriyor.",
+  "onemli_maddeler": [
+    "Google, aynı çip üzerine farklı paketleme ve ağ konfigürasyonları ekleyerek bir yıl içinde dört yeni TPU sistemini piyasaya sürdü.",
+    "TPU 8tx, veri işleme sırasında şifreli kalmasını sağlayarak gizli AI iş yüklerine yönelik bir çözüm sunuyor.",
+    "TPU 8i Max, iki çipi tek paket içinde birleştirerek bellek ve hesaplama kapasitesini ikiye katlıyor.",
+    "TorchTPU'nun açık kaynak olarak yayınlanması, PyTorch tabanlı uygulamaların TPU'larda çalıştırılmasını büyük ölçüde kolaylaştırıyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Google'ın TPU portföyüne yeni varyantlar eklemesi, dış müşterilere yönelik AI hızlandırıcı pazarında rekabeti artırarak Nvidia'ya doğrudan bir alternatif sunması bakımından sektörel etkisi yüksek bir güncellemedir.",
+  "etiketler": [
+    "TPU",
+    "Google",
+    "AI accelerators",
+    "confidential computing",
+    "inference"
+  ],
+  "anilan_modeller": [
+    "TPU 8tx",
+    "TPU 8i Max",
+    "TPU 8t",
+    "TPU 8i"
+  ],
+  "yorum_tr": "Google'ın yeni TPU varyantları, gizli veri işleme ve bellek yoğun uygulamalara yönelik çözümler sunarak AI çıkarım pazarında daha geniş bir müşteri tabanına ulaşmasını sağlayacak. Geliştiriciler, açık kaynak TorchTPU sayesinde entegrasyon sürecini hızlandırabilecek, bu da rekabetin yoğun olduğu donanım ekosisteminde yeni bir denge oluşturabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/02/google_tpu_chips.png",
+  "url": "https://the-decoder.com/google-ships-four-tpu-variants-in-one-year-as-it-ramps-up-competition-with-nvidia/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-09T12:59:02.000Z",
+  "slug": "google-ships-four-tpu-variants-in-one-year-as-it-ramps-up-co"
+}

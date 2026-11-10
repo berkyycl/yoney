@@ -1,0 +1,30 @@
+{
+  "baslik_tr": "Control Room: Araştırma Altyapısında Model İş Yüklerini İzleyen ve Durduran Merkez Sistem",
+  "ozet_tr": "OpenAI, artan model gücü ve güvenlik risklerine yanıt olarak Control Room adlı merkezi bir izleme ve durdurma sistemi geliştirdi. Sistem, araştırma ortamındaki tüm model çıkarım iş yüklerini 35 saniyelik bir gecikmeyle durdurabiliyor ve hizmet kesintisi durumunda da otomatik olarak kapanıyor.",
+  "detayli_icerik_tr": "OpenAI, modellerin gücü arttıkça ortaya çıkan güvenlik ve emniyet risklerini yönetmek amacıyla Control Room adlı yeni bir altyapı bileşeni tanıttı. Bu sistem, araştırma altyapısındaki her bir çıkarım iş yükünü (örneğin pekiştirmeli öğrenme deneyleri, değerlendirme, yüksek hacimli örnekleme ve veri işleme) izliyor ve güvenlik ya da güvenlik endişeleri tespit edildiğinde iş yüklerini dakikalar içinde durdurabiliyor. Control Room, bir iş yükünün başlatılması sırasında bir job_id alır ve model motorları her token örnekleme talebinde bu job_id üzerinden yetki kontrolü yapar; iş durdurulmuşsa talep reddedilir ve model çıktısı kesilir.\n\nSistem, mevcut izleme mekanizmalarıyla entegre çalışıyor; bir izleme modeli bir anormallik algıladığında Control Room'a durdurma komutu gönderiyor. Bu entegrasyon sayesinde, bir işin herhangi bir motor üzerindeki tüm sonraki çıkarım istekleri otomatik olarak engelleniyor. OpenAI, bu sürecin maksimum gecikmesini 35 saniye olarak ölçtü ve bu sürenin önbellek katmanından kaynaklandığını belirtti. Gelecek aşamalarda gecikmeyi sıfıra indirmeyi hedefliyor.\n\nControl Room'un mimarisi, iş yükü kodundan ziyade çıkarım katmanına odaklanarak güvenlik korumasını daha merkezi ve dayanıklı bir hale getiriyor. Çıkarım kod yolları sınırlı sayıda olduğundan, bu katmanda yapılan yetkilendirme kontrolleri tüm araştırma ortamında tutarlı bir güvenlik sağlayabiliyor. Ayrıca sistem \"fails closed\" prensibiyle tasarlandı; Control Room hizmeti herhangi bir sebeple devre dışı kalırsa, tüm çıkarım istekleri otomatik olarak reddediliyor ve model çıktısı tamamen durduruluyor.\n\nOpenAI, Control Room'un sadece bir parçası olduğunu ve misalignment izleme, güvenlik ihlali tespiti gibi diğer güvenlik önlemleriyle birlikte çalıştığını vurguladı. Şirket, önümüzdeki aylarda sistemi genişleterek tüm araştırma iş yüklerine yaymayı ve AGI geliştirme sürecinde güvenliğin temel bir yapı taşı olmasını hedefliyor.",
+  "onemli_maddeler": [
+    "Control Room, araştırma altyapısındaki tüm model çıkarım iş yüklerini 35 saniyelik bir gecikmeyle durdurabiliyor.",
+    "Sistem, izleme modelleriyle entegre çalışarak anormallik tespit edildiğinde otomatik olarak iş durdurma komutu gönderiyor.",
+    "\"Fails closed\" tasarımı sayesinde Control Room hizmeti kesintiye uğrarsa tüm çıkarım istekleri reddediliyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Model güvenliği ve emniyetinin kritik bir aşamaya geldiği bir dönemde, araştırma altyapısına entegre merkezi bir durdurma mekanizması sunması sektördeki risk yönetimi standartlarını yükseltiyor.",
+  "etiketler": [
+    "AI safety",
+    "inference",
+    "monitoring",
+    "OpenAI",
+    "research infrastructure"
+  ],
+  "anilan_modeller": [],
+  "yorum_tr": "Control Room, araştırma ortamındaki model çıkarımlarını merkezi bir kontrol noktasına taşıyarak güvenlik müdahalelerinin hızını ve güvenilirliğini artırıyor. Geliştiriciler, bu sayede iş yükü kodundaki hatalardan bağımsız olarak kritik güvenlik önlemlerini uygulayabilecek ve kullanıcılar da potansiyel risklerin daha hızlı bertaraf edildiğini görecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://images.ctfassets.net/kftzwdyauwt9/7CRGR1hiay1UfPVqjUSdAk/da9d8e1e61347fdae6d40e0a72962731/introducing-control-room-social.png?w=1600&h=900&fit=fill",
+  "url": "https://openai.com/index/control-room",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-11-09T13:00:00.000Z",
+  "slug": "control-room-a-central-system-to-track-and-stop-model-worklo"
+}
