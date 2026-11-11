@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "llama.cpp, FP8 KV-cache desteğiyle bellek tüketimini %50'ye kadar düşürdü",
+  "ozet_tr": "Açık kaynak kodlu LLaMA inference motoru llama.cpp, yeni FP8 KV-cache özelliğiyle dikkat çekiyor. 8‑bit kayan nokta formatına geçiş, dikkat mekanizmasının anahtar‑değer önbellek boyutunu önemli ölçüde küçülterek hem GPU hem de CPU üzerindeki bellek yükünü hafifletiyor. Geliştiriciler, bu güncellemeyi performans‑maliyet dengesini iyileştiren kritik bir adım olarak değerlendiriyor.",
+  "detayli_icerik_tr": "llama.cpp projesinin son sürümünde, KV-cache (key‑value cache) veri yapısının FP8 (8‑bit floating point) formatına dönüştürülmesi sağlandı. KV-cache, transformer tabanlı modellerin her bir katmanında geçmiş tokenların anahtar ve değer temsillerini saklayarak sonraki adımlarda tekrar hesaplamayı önler; bu da özellikle uzun bağlamlı metin üretiminde kritik bir rol oynar. Geleneksel olarak FP16 ya da FP32 ile tutulan bu önbellek, modelin bellek ayak izini katlanarak artırıyordu.\n\nFP8 formatı, aynı anda hem dinamik aralık hem de nüanslı değerleri korurken yalnızca 8 bitlik bir depolama alanı kullanıyor. llama.cpp ekibi, KV-cache'i FP8'e indirgerken, dikkat skorlarının ölçeklendirilmesi ve kuantizasyon hatalarının kontrolü için yeni bir ölçekleme tablosu ve hata düzeltme mekanizması ekledi. Bu sayede, model çıktısının doğruluğu büyük ölçüde korunurken, bellek tüketiminde %40‑%60 arasında bir azalma sağlanıyor.\n\nPerformans testleri, özellikle 7B ve 13B parametreli LLaMA modellerinde belirgin bir hız artışı gösterdi. Aynı donanımda (ör. RTX 4090) FP8 KV-cache kullanan bir oturum, aynı prompt uzunluğunda %1.8‑%2.2 oranında daha yüksek token/saniye (t/s) performansı elde etti. CPU‑only çalıştırmalarda ise bellek sınırları nedeniyle daha uzun bağlamlar (32k token) sorunsuzca işlenebildi.\n\nBu güncelleme, topluluk tarafından GitHub üzerinden açık bir pull‑request olarak sunuldu ve kısa sürede ana dal (main) üzerine birleştirildi. Geliştiriciler, yeni özelliği etkinleştirmek için \"--kv‑cache‑type fp8\" bayrağını kullanabiliyor ve mevcut modellerle geriye dönük uyumluluk korunuyor. FP8 KV-cache, özellikle düşük‑bütçeli AI araştırmacıları ve mobil/edge cihazlarda çalışan geliştiriciler için maliyet‑verimlilik açısından büyük bir fırsat sunuyor.",
+  "onemli_maddeler": [
+    "FP8 KV-cache, KV-cache bellek tüketimini %40‑%60 oranında azaltıyor.",
+    "Model doğruluğu büyük ölçüde korunurken token/saniye performansında %1.8‑%2.2 artış sağlanıyor.",
+    "Yeni \"--kv-cache-type fp8\" bayrağıyla kolayca etkinleştirilebiliyor ve mevcut modellerle geriye dönük uyumlu."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "llama.cpp, açık kaynak LLaMA inference ekosisteminin temel bileşeni; FP8 KV-cache, hem bellek hem de hız açısından kritik iyileştirme getirerek geniş kullanıcı kitlesini etkiliyor.",
+  "etiketler": [
+    "llama.cpp",
+    "FP8",
+    "KV-cache",
+    "performans",
+    "açık kaynak"
+  ],
+  "anilan_modeller": [
+    "LLaMA 2 7B",
+    "LLaMA 2 13B",
+    "LLaMA 3 8B",
+    "LLaMA 3 70B"
+  ],
+  "yorum_tr": "FP8 KV-cache, düşük bellekli ortamlarda LLaMA modellerinin daha uzun bağlamları işleyebilmesini sağlayarak araştırma ve üretim aşamalarında maliyetleri düşürecek; geliştiriciler ise performans‑verimlilik dengesini daha esnek bir şekilde yönetebilecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/UgpDKpMkwPCMv7u_lZ_dHzlSOVOQ-cUCUMY2J9wuWyM.png?width=640&crop=smart&auto=webp&s=47462ec8d37c535debd27f3653c734b49ab25913",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xt9o3t/llamacpp_add_fp8_kvcache/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-11T05:36:19.000Z",
+  "slug": "llama-cpp-add-fp8-kv-cache"
+}

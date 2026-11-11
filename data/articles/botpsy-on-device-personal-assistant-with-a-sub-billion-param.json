@@ -1,0 +1,118 @@
+{
+  "baslik_tr": "BotPsy: 0.8 Milyar Parametreli On-Device Kişisel Asistan",
+  "ozet_tr": "Tether AI Research, Qwen3.5 tabanlı 0.8 B parametreli BotPsy modelini duyurdu. Model, araç‑kullanımı ve ajan‑tabanlı iş akışlarında aynı sınıftaki tüm modelleri geride bırakarak, bulut bağımlılığını azaltıp gizliliği artırmayı hedefliyor.",
+  "detayli_icerik_tr": "Tether AI Research, bulut tabanlı büyük dil modellerinin yüksek maliyet ve erişim risklerine alternatif olarak BotPsy adlı 0,8 M parametreli bir kişisel asistan modeli tanıttı. Qwen3.5‑0.8B üzerine inşa edilen BotPsy, araç çağrısı (function calling) ve ajan‑tabanlı iş akışları için özel olarak eğitildi ve cihaz içinde çalıştırılabilecek biçimde paketlendi. Model, web arama, seyahat, finans, cihaz kontrolü, takvim ve e‑posta gibi günlük görevleri yerine getirirken, düşük‑orta zorluk seviyesindeki görevlerde yüksek verimlilik sunuyor.\n\nBotPsy, aynı sınıftaki tüm modelleri geride bırakarak beş üzerinden altı araç‑kullanım ve ajan benchmark'unda lider konuma yükseldi. BFCL v4 (44.0), ACEBench (58.7), τ‑bench (51.5), ToolSandbox (64.6) ve BrowseComp‑Plus (4.5) puanlarıyla 1,2 B parametre altındaki rakiplerini geçerken, yalnızca Claw‑Eval testinde 2,5 kat daha büyük Qwen3.5‑2B‑Think modeli (48.9) önde kaldı. Ayrıca, genel bilgi ölçütlerinde GPQA Diamond (38.1) ve MMLU‑Pro (48.9) gibi testlerde de en iyi skorları elde etti.\n\nGüvenlik ve verimlilik açısından da önemli iyileştirmeler sunan BotPsy, otomatik kırmızı‑takım testlerinde %21 güvenli olmayan yanıt oranı ile en düşük oranı kaydetti; bu oran temel modelin %36'sına kıyasla önemli bir düşüş. Prompt‑enjeksiyon saldırılarında da %31'e gerileyen risk oranı, aynı modelde %46 idi. Model, aynı soruları yanıtlamak için gereken token sayısını %70‑80 oranında azaltarak cihaz içi gecikmeyi düşürmeyi vaat ediyor.\n\nBotPsy, Apache 2.0 lisansı altında açık kaynak ağırlıklı olarak sunulacak ve bf16, Q8 ve Q4 gibi üç farklı hassasiyette Hugging Face safetensors ve GGUF dosyaları şeklinde dağıtılacak. Gelecek vizyonunda, yerel P2P sorgular, cihaz‑cihaz iş birliği ve kişiselleştirilmiş ince ayar mekanizmalarıyla tamamen bağımsız bir kişisel AI ekosistemi oluşturma hedefi bulunuyor.",
+  "onemli_maddeler": [
+    "BotPsy, 0.8 B parametreyle aynı sınıftaki tüm modelleri geride bırakarak beş üzerinden altı araç‑kullanım benchmark'unda lider.",
+    "2.5 kat daha büyük Qwen3.5‑2B‑Think modelini beş benchmark'ta yenerek, küçük modellerin yüksek performans potansiyelini gösterdi.",
+    "Apache 2.0 lisansı altında açık kaynak olarak sunulacak; bf16, Q8 ve Q4 formatlarında cihaz içinde çalıştırılabilir."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Küçük parametreli ama ajan‑tabanlı görevlerde lider performans gösteren bir modelin açık kaynak olarak sunulması, gizlilik‑odaklı on‑device AI ekosistemine büyük bir ivme kazandırıyor.",
+  "etiketler": [
+    "on-device",
+    "agentic",
+    "tool-use",
+    "LLM",
+    "open-source"
+  ],
+  "anilan_modeller": [
+    "BotPsy-0.8B",
+    "Qwen3.5-0.8B-Think",
+    "Qwen3.5-2B-Think",
+    "LFM2.5-1.2B-Think",
+    "MiniCPM5-1B-Think"
+  ],
+  "yorum_tr": "BotPsy, düşük kaynaklı cihazlarda çalışan güvenli ve özelleştirilebilir asistanlar için yeni bir standart belirliyor; geliştiriciler bulut maliyetlerinden kaçınırken, kullanıcılar veri gizliliğini koruyabilecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "BotPsy-0.8B",
+      "benchmark": "BFCL v4",
+      "skor": 44,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "BotPsy outperforms leading models ... on BFCL v4 (44.0 vs 37.7)"
+    },
+    {
+      "model": "BotPsy-0.8B",
+      "benchmark": "ACEBench",
+      "skor": 58.7,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "BotPsy outperforms ... on ACEBench (58.7 vs 55.4)"
+    },
+    {
+      "model": "BotPsy-0.8B",
+      "benchmark": "τ-bench",
+      "skor": 51.5,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "BotPsy outperforms ... on τ-bench (51.5 vs 46.5)"
+    },
+    {
+      "model": "BotPsy-0.8B",
+      "benchmark": "ToolSandbox",
+      "skor": 64.6,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "BotPsy outperforms ... on ToolSandbox (64.6 vs 41.2)"
+    },
+    {
+      "model": "BotPsy-0.8B",
+      "benchmark": "BrowseComp-Plus",
+      "skor": 4.5,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "BotPsy outperforms ... on BrowseComp-Plus (4.5 vs 2.8)"
+    },
+    {
+      "model": "BotPsy-0.8B",
+      "benchmark": "GPQA Diamond",
+      "skor": 38.1,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "GPQA Diamond rises from 33.2 to 38.1"
+    },
+    {
+      "model": "BotPsy-0.8B",
+      "benchmark": "MMLU-Pro",
+      "skor": 48.9,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "MMLU-Pro rises from 41.6 to 48.9"
+    },
+    {
+      "model": "BotPsy-0.8B",
+      "benchmark": "IFEval",
+      "skor": 90.8,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "IFEval rising from 59.7 to 90.8"
+    },
+    {
+      "model": "BotPsy-0.8B",
+      "benchmark": "IFBench",
+      "skor": 55.9,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "IFBench rising from 22.0 to 55.9"
+    }
+  ],
+  "gorsel_url": "https://cdn-uploads.huggingface.co/production/uploads/6468b319b2321e47d3267049/Emr86qw6NAueYLdIEiTTD.png",
+  "url": "https://huggingface.co/blog/qvac/botpsy",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-11-11T05:01:16.000Z",
+  "slug": "botpsy-on-device-personal-assistant-with-a-sub-billion-param"
+}

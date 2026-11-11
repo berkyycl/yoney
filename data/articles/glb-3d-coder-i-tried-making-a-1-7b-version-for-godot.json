@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "GLB-3D-Coder: Qwen3-1.7B modeli Godot için CPU dostu sürüm olarak tanıtıldı",
+  "ozet_tr": "Reddit topluluğu, 4B GLB-3D-Coder modelinin ardından daha hafif bir alternatif olarak Qwen3-1.7B modelini ince ayar yaparak yayınladı. Bu sürüm, sadece 1.83 GB boyutundaki Q8 GGUF dosyasıyla CPU veya sınırlı VRAM sahip makinelerde çalışabilecek şekilde tasarlandı.",
+  "detayli_icerik_tr": "Yerel LLaMA topluluğu, önceki 4B GLB-3D-Coder modelinin başarısını takiben, daha düşük kaynak tüketimi hedefiyle Qwen3-1.7B modelini aynı görev için ince ayarladı. Model, bir varlık tanımı girildiğinde Three.js tabanlı HTML kodunu üretip, \"Export GLB\" butonuyla doğrudan Godot ya da diğer 3D editörlerine aktarılabilir bir GLB dosyası oluşturuyor.\n\nİlk testlerde, modelin çıktıları genellikle istenen varlıkları tanımlasa da bazı promptlarda yeniden deneme (retry) ihtiyacı ortaya çıktı. Geliştirici, modelin eğitim sürecinin hâlâ devam ettiğini ve ağırlıkların güncellenmiş versiyonlarının eğitim tamamlandığında Hugging Face üzerinden paylaşılacağını belirtti.\n\nBu sürüm, Q8 GGUF formatında 1.83 GB boyutunda olduğu için CPU tabanlı çalıştırmalara ve sınırlı VRAM'e sahip bilgisayarlara uygun. Böylece, yüksek performanslı GPU'ya erişimi olmayan bağımsız geliştiriciler ve hobi amaçlı kullanıcılar da 3D varlık üretim otomasyonundan faydalanabilecek.\n\nTopluluk, model ve indirme bağlantılarını Hugging Face üzerinde paylaştı; ayrıca proje hakkında geri bildirim ve tartışmalar Reddit'teki ilgili başlık altında toplanıyor. Geliştiriciler, modelin ilerleyen sürümlerinde prompt uyumluluğunu artırmayı ve daha karmaşık sahneler üretmeyi hedefliyor.",
+  "onemli_maddeler": [
+    "Qwen3-1.7B modelinin GLB-3D-Coder görevine ince ayar yapılması, düşük kaynaklı ortamlarda 3D varlık üretimini mümkün kılıyor.",
+    "Model, Q8 GGUF formatında sadece 1.83 GB boyutunda ve CPU/az VRAM cihazlarda çalıştırılabilir.",
+    "İlk testlerde bazı promptlarda yeniden deneme ihtiyacı görülse de topluluk ağırlıkları güncelleyerek performansı artırmayı planlıyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 3,
+  "onem_gerekce": "Küçük ölçekli bir modelin topluluk tarafından ince ayar yapılması, CPU ve düşük VRAM ortamlarında 3D varlık üretimini mümkün kılıyor ancak henüz resmi bir ürün değil, sınırlı test aşamasında.",
+  "etiketler": [
+    "Qwen3",
+    "GLB-3D-Coder",
+    "Godot",
+    "3D asset generation",
+    "fine-tuning"
+  ],
+  "anilan_modeller": [
+    "Qwen3-1.7B"
+  ],
+  "yorum_tr": "Bu girişim, düşük donanımlı geliştiricilerin 3D içerik üretiminde yapay zekâdan faydalanmasını genişletirken, modelin olgunlaşması ve benchmark sonuçlarının ortaya çıkması sektörel etkisini artırabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/Z3VlMWpwY21kdzBpMS1gMDmEUlNzUE4coIYk4q5aPak65kNNeqq9XaT5CmKt.png?width=640&crop=smart&auto=webp&s=8c23665d6d643b533aba5c0ddf38996e07353c1c",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xt6rc7/glb3dcoder_i_tried_making_a_17b_version_for_godot/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-11T03:03:09.000Z",
+  "slug": "glb-3d-coder-i-tried-making-a-1-7b-version-for-godot"
+}
