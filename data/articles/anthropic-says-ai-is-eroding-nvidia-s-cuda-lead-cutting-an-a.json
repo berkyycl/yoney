@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "Anthropic, AI ile Nvidia’nın CUDA üstünlüğünü aşarak AMD çip geçişini aylar yerine üç güne indirdi",
+  "ozet_tr": "Anthropic, Claude modelini AMD Instinct GPU'lara sadece üç gün içinde taşıyarak Nvidia’nın CUDA ekosistemine karşı büyük bir adım attı. Şirket, dört ana çip ailesini tek bir hesaplama havuzu gibi kullanarak donanım bağımlılığını ortadan kaldırdığını iddia ediyor.",
+  "detayli_icerik_tr": "Anthropic, kurucu ortağı Tom Brown'ın açıklamalarına göre, çoklu çip stratejisi sayesinde Claude modelini dört büyük çip ailesi – AWS Trainium, Google TPU, Nvidia GPU ve AMD GPU – üzerinde aynı anda eğitip çalıştırabiliyor. Bu yaklaşım, her bir donanım platformu için ayrı ayrı yazılım ve inference yığını geliştirme ihtiyacını ortadan kaldırarak maliyet ve zaman tasarrufu sağlıyor.\n\nŞirket, AMD Instinct MI355X GPU'larına geçiş sürecini örnek göstererek, kendi frontier modeli Mythos'un neredeyse %100 kernel'i üç gün içinde otomatik olarak yazdığını ve port ettiğini belirtiyor. Geleneksel yöntemlerle bu süreç altı ila on iki ay sürerken, Anthropic'in AI destekli otomasyonu bu süreyi dramatik şekilde kısaltıyor. Bu iddialar, yatırımcı sunumundan alınmış olup bağımsız olarak doğrulanmamış.\n\nAnthropic, bu çoklu çip yaklaşımını, sıkı tedarik zinciri koşullarında en iyi fiyat-performans oranını yakalamak ve farklı iş yükleri için en uygun donanımı seçmek amacıyla kullanıyor. Nvidia hâlâ AI çip pazarında %70'in üzerinde kâr marjına sahipken, Anthropic'in stratejisi bu avantajı azaltabilir ve sektörde rekabeti yeniden şekillendirebilir.\n\nFinansal açıdan ise Nvidia, Anthropic'e 2025'teki $45 milyar Microsoft anlaşması kapsamında $10 milyar yatırım yaptı ve 2026'da koşullu $26 milyar ek yatırım planladı. AMD ise Temmuz 2026'da maksimum $5 milyar yatırım sözü vererek, 2027'nin ilk yarısında iki gigawattlık AMD Instinct MI455X GPU dağıtımını hedefliyor. Bu yatırımlar, iki büyük GPU üreticisinin Anthropic ile stratejik bağlarını güçlendiriyor.",
+  "onemli_maddeler": [
+    "Anthropic, Claude modelini AMD GPU'lara sadece üç gün içinde taşıyarak geleneksel 6‑12 ay süren portlama süresini kısalttı.",
+    "Şirket, dört ana çip ailesini tek bir hesaplama havuzu gibi kullanarak donanım bağımlılığını ortadan kaldırmayı hedefliyor.",
+    "Nvidia ve AMD, Anthropic'e sırasıyla $10 milyar ve $5 milyar yatırım yaparak stratejik ortaklıklarını derinleştiriyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Nvidia’nın CUDA ekosistemi uzun süredir AI donanım pazarının kilit avantajı olarak görülüyordu; Anthropic’in çoklu çip ve otomatik portlama yeteneği bu avantajı azaltarak sektörde rekabet dinamiklerini değiştirme potansiyeline sahip.",
+  "etiketler": [
+    "Anthropic",
+    "AMD",
+    "Nvidia",
+    "CUDA",
+    "multi-chip"
+  ],
+  "anilan_modeller": [
+    "Claude",
+    "Mythos"
+  ],
+  "yorum_tr": "Bu gelişme, AI laboratuvarlarının donanım bağımlılığını azaltarak daha esnek ve maliyet etkin bir altyapı kurmalarına olanak tanıyabilir; geliştiriciler ve kullanıcılar, tercih ettikleri GPU sağlayıcısını performans ve fiyat kriterlerine göre daha rahat seçebilecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/11/nvidia_moat.png",
+  "url": "https://the-decoder.com/anthropic-says-ai-is-eroding-nvidias-cuda-lead-cutting-an-amd-chip-switch-from-months-to-three-days/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-11T14:25:20.000Z",
+  "slug": "anthropic-says-ai-is-eroding-nvidia-s-cuda-lead-cutting-an-a"
+}

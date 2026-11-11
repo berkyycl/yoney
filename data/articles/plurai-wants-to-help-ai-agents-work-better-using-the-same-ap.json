@@ -1,0 +1,62 @@
+{
+  "baslik_tr": "Plurai, AI ajanlarının performansını sürücüsüz araçların yol almasını sağlayan simülasyonlarla artırmayı hedefliyor",
+  "ozet_tr": "AI ajanları hâlâ güvenilirlik sorunlarıyla mücadele ederken, Plurai adlı girişim, şirketlerin dijital sistemlerini taklit eden sentetik veri tabanlı simülasyonlarla bu eksikliği kapatmayı vaat ediyor. Şirket, bu yaklaşımı sürücüsüz araçların sahada test edilmesinden esinlenerek geliştiriyor ve yeni bir tohum turunda 13 milyon dolar topladı.",
+  "detayli_icerik_tr": "AI ajanları, karmaşık görevlerde hâlâ denetim gerektiren sistemler olarak görülüyor. LiveBench 2.0 gibi benchmarklar Claude Fable 5.2'nin 100 üzerinden 82.9, ChatGPT-6 Astra'nın ise 75.6 puan aldığını gösteriyor; ayrıca EON'un simüle edilmiş kurumsal ortam testinde Claude Opus 4.8 %76.8 doğruluk sağladı. Bu sonuçlar, mevcut ajanların güvenilirlik ve maliyet açısından hâlâ sınırda olduğunu ortaya koyuyor.\n\nPlurai, bu sorunu çözmek için şirketlerin elektronik sistemlerinin dijital ikizini (digital twin) oluşturuyor. Bilgi tabanları, araçlar ve API'ler gibi tüm bileşenleri kapsayan bir grafik üzerinden olası akışları haritalıyor, ardından sentetik veri üretip modelin kenar durumlarına (edge case) karşı dayanıklılığını artırıyor. Platform, Claude Code, Codex, Copilot ve Cursor gibi mevcut ajan araçlarıyla entegre çalışıyor ve müşteriye özel, açık ağırlıklı (open-weight) modellerin post‑training'ini mümkün kılıyor.\n\nKurucular Ilan Kadar ve Elad Levi, daha önce Waymo ve Nexar gibi otonom sürüş firmalarında çalışmış; Kadar, Waymo'nun uçtan uca sürüş yazılımını simüle edip değerlendirmişti. Plurai, bu deneyimi AI ajanlarına taşıyarak, büyük dil modellerini daha düşük maliyetle, belirli iş senaryolarına uyarlanmış modellerle değiştirmeyi hedefliyor. Nvidia ve Nebius iş birliğiyle yapılan testlerde, Plurai'nin modellerinin orta seviye frontier modelleri aşarken maliyetin bir ya da iki mertebe daha düşük olduğu gösterildi.\n\nŞirket, 13 milyon dolarlık tohum yatırımını Team8 liderliğinde, U&I, Velocity ve Mercer gibi yatırımcılardan aldı. Google DeepMind araştırmacısı Reah Miyara da şirkete melek yatırımcı olarak destek veriyor ve Plurai'nin üretim ortamındaki hata modlarını anlayıp sentetik veriyle model ayarlamasının, işletmelerin AI harcamalarını sürdürülebilir kılacak bir rekabet avantajı sağlayacağını belirtiyor. Bu yaklaşım, genel amaçlı büyük modellerin hâlâ iş süreçlerine özgü politikaları ve veri dağılımlarını tam olarak yakalayamamasına bir çözüm sunuyor.",
+  "onemli_maddeler": [
+    "Plurai, şirketlerin dijital ikizini oluşturarak AI ajanlarını sentetik veriyle eğitiyor ve kenar durumlarını önceden test ediyor.",
+    "LiveBench 2.0 ve EON testleri, mevcut ajanların hâlâ %70-80 doğruluk seviyelerinde olduğunu, güvenilirlik sorunları yaşadığını gösteriyor.",
+    "Şirket, 13 M$ tohum yatırımı alarak, büyük dil modellerine kıyasla bir ya da iki mertebe daha düşük maliyetle benzer ya da daha yüksek performans vaat ediyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "AI ajanlarının güvenilirliği ve maliyet etkinliği, kurumsal AI uygulamalarının ölçeklenmesinde kritik bir engel oluşturuyor; Plurai'nin simülasyon temelli yaklaşımı bu sorunu çözme potansiyeline sahip.",
+  "etiketler": [
+    "AI agents",
+    "simulation",
+    "synthetic data",
+    "startup",
+    "seed funding"
+  ],
+  "anilan_modeller": [
+    "Claude Fable 5.2",
+    "ChatGPT-6 Astra",
+    "Claude Opus 4.8"
+  ],
+  "yorum_tr": "Plurai'nin dijital ikiz ve sentetik veri tabanlı simülasyonları, AI ajanlarının üretim ortamındaki başarısını artırarak maliyetleri düşürme vaadiyle sektörde önemli bir adım olarak görülüyor. Bu yaklaşım, büyük dil modellerinin genel yeteneklerini iş‑özel gereksinimlere uyarlama ihtiyacını karşılayabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Claude Fable 5.2",
+      "benchmark": "LiveBench 2.0",
+      "skor": 82.9,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "LiveBench 2.0 shows Claude Fable 5.2 ... succeeding on 82.9 ... out of 100 tasks"
+    },
+    {
+      "model": "ChatGPT-6 Astra",
+      "benchmark": "LiveBench 2.0",
+      "skor": 75.6,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "LiveBench 2.0 shows ... ChatGPT-6 Astra succeeding on 75.6 out of 100 tasks"
+    },
+    {
+      "model": "Claude Opus 4.8",
+      "benchmark": "EON simulated corporate environment test",
+      "skor": 76.8,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "EON ... found the most successful model tested, Claude Opus 4.8, performed tasks at 76.8% accuracy"
+    }
+  ],
+  "gorsel_url": "https://techcrunch.com/wp-content/uploads/2026/11/Plurai-team-photo.-Credit-Guy-Hamoy.jpg?resize=1200,800",
+  "url": "https://techcrunch.com/2026/11/11/plurai-wants-to-help-ai-agents-work-better-using-the-same-approach-that-helped-get-self-driving-cars-to-roads/",
+  "source": "TechCrunch AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-11T14:00:00.000Z",
+  "slug": "plurai-wants-to-help-ai-agents-work-better-using-the-same-ap"
+}

@@ -1,0 +1,42 @@
+{
+  "baslik_tr": "AlphaGenome 2: Tek Hücre Düzeyinde DNA Varyantlarını Tahmin Eden Yeni Model",
+  "ozet_tr": "DeepMind, AlphaGenome 2 adlı yeni nesil DNA sekans modeliyle, genetik varyantların yüzlerce insan hücresindeki etkilerini tahmin edebiliyor. Model, tek hücre biyolojisi ve insan genetiğini birleştirerek hastalıkla ilişkili varyantları önceki sürümden iki kat daha iyi ortaya koyuyor.",
+  "detayli_icerik_tr": "DeepMind, AlphaGenome 2'yi duyurarak DNA dizilerinin ve varyantlarının spesifik insan hücre tipleri üzerindeki etkilerini tahmin edebilen bir model sundu. Model, tek hücre biyolojisi ve insan genetiği arasındaki boşluğu dolduruyor; 100 milyondan fazla tek hücre profili ve 68 doku üzerinden eğitilerek, sabit hücre atlaslarını öngörü motoruna dönüştürüyor. AlphaGenome 2, önceki sürümden farklı olarak koşullu bir mimariye sahip; bir DNA sekansı ve hedef hücre tipi aynı anda modele girerek, aynı DNA parçasının farklı hücrelerde nasıl okunacağını öğreniyor.\n\nKoşullu mimari, modelin tek bir hücre durumu için tahmin yapmasını sağlarken, eksik deneysel verileri de doldurabiliyor. Tek bir ölçüm (ör. tek hücre RNA‑seq) girildiğinde, kromatin erişilebilirliği gibi ölçülmemiş özellikler tahmin edilebiliyor. Bu sayede araştırmacılar, hangi deneyleri önceliklendireceklerine dair daha bilinçli kararlar alabiliyor. Model, hem insan hem de fare örneklerinden elde edilen bulk ve tek hücre verileriyle eğitildi ve DNA metilasyonu gibi yeni okuma tiplerini de destekliyor.\n\nPerformans açısından AlphaGenome 2, TenK10K veri setinde (28 birincil bağışıklık hücresi tipi) nedensel varyantları %30 oranında tespit ederken, önceki AlphaGenome sürümü %16 idi; yönsel gen etkileri de %43 vs %23 olarak iki kat artış gösterdi. Ayrıca, eğitim dışı hücre tiplerinde ve hastalık/ aşı durumlarında (ör. COVID‑19 mRNA aşı çalışması) yeni tek hücre deneylerine yeniden eğitmeye gerek kalmadan uyum sağlayabiliyor. Bu yetenek, hastalıkla ilişkili varyantların hücre‑spesifik etkilerini ortaya çıkarmada kritik bir adım olarak öne çıkıyor.\n\nAlphaGenome 2, GWAS sonuçlarını tek hücre haritalarıyla eşleştirerek, hastalıkla ilişkili varyantların hedef gen ve hücre tiplerini belirlemeye yardımcı oluyor. Önceden hesaplanmış tahminler, yükseklik, tip 2 diyabet gibi karmaşık hastalıklar için en olası varyant ve hücre tiplerini işaretliyor. Model, şu anda araştırma amaçlı ücretsiz API üzerinden erişilebilir ve ticari araştırmalar için özel önizleme aşamasında. Gelecek planları arasında, bu modeli Google Antigravity platformundaki Gemini 4 gibi ajan tabanlı bilim araçlarıyla entegre etmek yer alıyor.",
+  "onemli_maddeler": [
+    "AlphaGenome 2, tek hücre seviyesinde DNA varyant etkilerini tahmin ederek önceki modelden iki kat daha fazla varyantı ortaya çıkarıyor.",
+    "Koşullu mimari sayesinde model, tek bir hücre durumu için tahmin yapabiliyor ve eksik deneysel verileri doldurabiliyor.",
+    "TenK10K veri setinde nedensel varyant tespit oranı %30, yönsel gen etkisi %43 olarak önceki sürümün iki katına ulaştı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Genomik araştırmalarda hücre‑spesifik varyant tahmini büyük bir adım; modelin performans artışı ve yeni koşullu mimarisi, hastalık mekanizmalarının anlaşılmasını hızlandıracak.",
+  "etiketler": [
+    "genomik",
+    "AI",
+    "tek hücre",
+    "varyant tahmini",
+    "DeepMind"
+  ],
+  "anilan_modeller": [
+    "AlphaGenome 2"
+  ],
+  "yorum_tr": "AlphaGenome 2, genomik araştırmalarda hücre‑spesifik varyantların hızlı ve doğru tespiti sayesinde hem akademik hem de ilaç geliştirme süreçlerini hızlandıracak, veri eksikliği sorununu da hafifletecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "AlphaGenome 2",
+      "benchmark": "TenK10K dataset causal variant recall",
+      "skor": 30,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "causal variant identification",
+      "kaynak_metinden_alinti": "On the TenK10K dataset, AlphaGenome 2 reliably identified nearly twice as many causal variants (30% vs. 16%) and directional gene effects (43% vs. 23%) as the original AlphaGenome fine-tuned on single-cell data."
+    }
+  ],
+  "gorsel_url": "https://lh3.googleusercontent.com/VPOhADdGu1T7kK_gWBiGzyVawQbKCjpL3-B0L0wxpYCyr8cHxviYmo9Hghy4f1laeIo2YKwuz8E07TR9HWWk2b0EONi0uvju-8TDLHX6YWHG4dXe3w=w528-h297-n-nu-rw-lo",
+  "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
+  "source": "Google DeepMind",
+  "sourceTier": "resmi",
+  "date": "2026-11-11T15:00:15.000Z",
+  "slug": "alphagenome-2-deciphering-how-cells-read-dna-to-better-under"
+}

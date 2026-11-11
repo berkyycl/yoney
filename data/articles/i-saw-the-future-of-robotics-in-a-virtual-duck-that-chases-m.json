@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "Sanal Ördekle Robotik Geleceği: Kedime Hizmet Eden Mikro Ördek",
+  "ozet_tr": "OpenAI'nin GPT-6 Sol modeli ve Nvidia'nın Isaac Sim'i kullanarak sanal bir Microduck robotu, birkaç saat içinde kedileri tanıyıp hareket etmeyi öğrendi. Aynı zamanda Nvidia ve UC Berkeley ekibi, robotların yeni beceriler keşfetmesini sağlayan açık kaynaklı Aspire çerçevesini duyurdu.",
+  "detayli_icerik_tr": "Yazar, OpenAI'nin GPT-6 Sol modelini ve Nous Research'ten Hermes adlı ajan kılıfını kullanarak, Pollen Robotics ve Hugging Face iş birliğiyle geliştirilen sanal Microduck robotunu bir Bengal kedisini tanıyıp ona ödül maması dağıtacak şekilde eğitti. Eğitim süreci sadece birkaç saat sürdü; robotun odada dolaşması, kediyi tespit etmesi ve başını eğerek 3D‑yazıcıyla üretilen bir depolama odasından ödül vermesi simüle edildi.\n\nBu başarının arkasında, OpenAI'nin geçen Eylül ayında tanıttığı Astra modeli bulunuyor. UC Berkeley'li profesör Ken Goldberg ve ekibi, Astra'yı Nvidia'nın Newton aracına bağlayarak gerçek bir robot videosundan tam bir 3D simülasyon oluşturdu; kamera konumu, ışıklandırma ve malzemeler bir saat içinde ayarlandı. Astra, aynı zamanda simülasyon tabanlı robot eğitiminin tekrarlayan işlerini otomatikleştirerek deneyleri yürütüp sonuçları analiz edebiliyor.\n\nYazar, eğitim sırasında Nvidia DGX Spark üzerinde çalışan Isaac Sim'i kullandı; model, sanal robotun hareketlerini izleyip performansını değerlendirdi ve eğitim parametrelerini önerdi. Bu süreç sayesinde Microduck, devrilmeden odada dolaşmayı öğrendi. Ayrıca, Nvidia araştırmacısı Jim Fan ve Goldberg ekibi, robotların yeni beceriler keşfetmesini sağlayan Aspire adlı açık kaynaklı bir ajan çerçevesi yayınladı; örneklerde Astra'nın robot kollarıyla Rubik küpünü çözmesi ve bir robot kolunun Altın Kapı Köprüsü resmini boyaması gösterildi.\n\nYazar, bu teknolojilerin hâlâ mühendislik zorlukları içerdiğini, özellikle gerçek robotların görsel algı sistemlerinin güvenilir olmadığını kabul ediyor. Ancak, AI destekli robot eğitiminin hızı ve kolaylığı, üretim, e‑ticaret ve hobi robotik alanlarında devrim yaratma potansiyeline sahip.",
+  "onemli_maddeler": [
+    "GPT-6 Sol ve Hermes ajan kılıfı, sanal Microduck robotunu birkaç saat içinde kedileri tanıyıp ödül dağıtacak şekilde eğitti.",
+    "OpenAI Astra modeli, bir video üzerinden tam 3D simülasyon oluşturup robot eğitiminin tekrarlayan adımlarını otomatikleştirdi.",
+    "Nvidia ve UC Berkeley, robotların yeni beceriler öğrenmesini sağlayan açık kaynaklı Aspire çerçevesini yayınladı."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "AI destekli robot eğitimi ve açık kaynak çerçevelerin ortaya çıkışı, robotik geliştirme sürecini hızlandırarak sektörde geniş çaplı uygulamalara zemin hazırlıyor.",
+  "etiketler": [
+    "robotik",
+    "yapay zeka",
+    "GPT-6",
+    "Isaac Sim",
+    "Aspire"
+  ],
+  "anilan_modeller": [
+    "GPT-6 Sol",
+    "GPT-6 Astra"
+  ],
+  "yorum_tr": "Bu gelişme, robotik prototipleme süresini dramatik biçimde kısaltarak hem endüstriyel üreticilerin hem de hobi geliştiricilerin daha hızlı deneme yapmasını sağlayacak. Açık kaynak Aspire çerçevesi, topluluk katkısı ve paylaşımıyla robot becerilerinin evrimini hızlandırabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://media.wired.com/photos/6af37240c46e83fb6f2598a7/master/pass/AI-Lab-I-Trained-Simulated-Microduck-to-Dance-and-Do-Other-Fun-Things-Business.jpg",
+  "url": "https://www.wired.com/story/i-trained-a-microduck-to-be-my-cats-butler/",
+  "source": "WIRED AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-11T19:55:54.000Z",
+  "slug": "i-saw-the-future-of-robotics-in-a-virtual-duck-that-chases-m"
+}

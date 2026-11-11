@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "Google DeepMind’ın AlphaGenome 2 Modeli DNA Mutasyonlarını Hücre Düzeyinde Tahmin Ediyor",
+  "ozet_tr": "Google DeepMind, hücre tipine ve durumuna göre genetik varyantların etkilerini tahmin edebilen AlphaGenome 2 modelini duyurdu. Model, 100 milyondan fazla tek hücre profiliyle eğitilerek aynı DNA değişikliğinin farklı hücrelerde nasıl farklı sonuçlar doğurabileceğini ortaya koyuyor. Bu sayede hastalıkla ilişkili genetik etkilerin daha ince bir şekilde haritalanması ve yeni tedavi hedeflerinin belirlenmesi mümkün hale geliyor.",
+  "detayli_icerik_tr": "DeepMind araştırmacıları, AlphaGenome 2'yi önceki AlphaGenome modelinin üzerine inşa ederek, tek hücre düzeyinde genetik varyantların etkilerini tahmin edebilen bir yapay zeka sistemi geliştirdi. Model, 68 farklı doku ve 100 milyon bireysel hücre profiliyle eğitildi; bu veri seti, hücrelerin gen ekspresyonundaki ince farkları yakalayarak aynı mutasyonun farklı hücre tiplerinde ve biyolojik durumlarda nasıl değişik sonuçlar doğurabileceğini gösteriyor.\n\nAlphaGenome 2, statik hücre atlaslarını \"öngörü motoru\"na dönüştürerek, araştırmacıların laboratuvar deneylerinde hangi genetik değişikliklerin hangi hücrelerde patolojik etki yaratabileceğini önceden görmelerine olanak tanıyor. Şirket, yeni modelin önceki sürümden iki kat daha fazla varyantı gen ekspresyonunu değiştirebilecek şekilde tanımladığını belirtiyor. Ayrıca model, yeniden eğitilmeden yeni hücre tipleri ve durumları hakkında tahmin yapabilme yeteneği sayesinde deneysel veri boşluklarını da işaretleyebiliyor.\n\nDeepMind genomik lideri Žiga Avsec, AlphaGenome 2'nin ilaç geliştirme süreçlerinde kritik bir rol oynayacağını vurguladı. İlaçlar belirli proteinleri ve hücre tiplerini hedef alır; bu bağlamda modelin sağladığı hücre‑spesifik genetik bilgi, hastalığa özgü tedavi stratejilerinin tasarlanmasını hızlandırabilir. Gelecek versiyonların çoklu tür verileriyle eğitilmesi ve \"sanal hücre\" simülasyonlarına entegrasyonu da planlanıyor.\n\nModelin yüksek hesaplama maliyeti nedeniyle hâlâ geniş çaplı genom atlası üretiminde kullanılmadığı belirtilse de, AlphaGenome 2 şu anda araştırma amaçlı API üzerinden, ticari olmayan projeler için erişime açıldı. Google, sınırlı bir \"özel önizleme\" ile ticari araştırmalara da kapı aralıyor ve genomik alandaki rekabeti artırarak diğer AI laboratuvarlarının da benzer çözümler geliştirmesine ivme kazandırıyor.",
+  "onemli_maddeler": [
+    "AlphaGenome 2, 100 M+ tek hücre profili ve 68 doku üzerinden eğitildi; aynı mutasyonun hücre tipine göre farklı etkilerini tahmin edebiliyor.",
+    "Model, önceki sürümden iki kat daha fazla gen ekspresyonunu değiştiren varyantı tanımlayarak hastalık‑ilişkili genetik sinyalleri daha hassas bir şekilde ortaya koyuyor.",
+    "Yeniden eğitilmeden yeni hücre tipleri ve biyolojik durumlar hakkında tahmin yapabilme yeteneği, deneysel veri eksikliklerini doldurabilir ve laboratuvar önceliklerini yönlendirebilir."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "AlphaGenome 2, genomik araştırmalarda hücre‑spesifik genetik etkileri ilk kez büyük ölçekli bir yapay zeka modeliyle sunarak hastalık mekanizmalarının anlaşılması ve ilaç keşfi süreçlerini kökten değiştirme potansiyeline sahip.",
+  "etiketler": [
+    "genomik",
+    "AI",
+    "DeepMind",
+    "hastalık",
+    "ilaç keşfi"
+  ],
+  "anilan_modeller": [
+    "AlphaGenome",
+    "AlphaGenome 2",
+    "AlphaGenome Atlas"
+  ],
+  "yorum_tr": "AlphaGenome 2, genetik araştırmalarda hücre‑düzeyinde ayrıntılı öngörüler sağlayarak hem akademik hem de endüstriyel araştırmacıların daha hedefli deneyler tasarlamasına olanak tanıyacak; ancak yüksek işlem maliyeti, geniş çaplı kullanım öncesinde altyapı yatırımlarını zorunlu kılıyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/alphagenome-atlas-cover__background.jpg?quality=90&strip=all&crop=0,0,100,100",
+  "url": "https://www.theverge.com/ai-artificial-intelligence/1031524/google-deepmind-alphagenome-2-genetic-ai-model",
+  "source": "The Verge AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-11T15:00:00.000Z",
+  "slug": "google-s-alphagenome-2-zooms-in-on-the-cellular-roots-of-dis"
+}

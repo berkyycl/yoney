@@ -1,0 +1,53 @@
+{
+  "baslik_tr": "Token Havuzlamalı Eğitim ile Çoklu Vektör Gömme Modellerinde Depolama ve Performans İyileştirmesi",
+  "ozet_tr": "Hugging Face, çoklu‑vektör arama modellerinde belge vektör sayısını azaltırken geri getirme kalitesini koruyan token pooling‑aware eğitim yöntemini tanıttı. Pool_factor=4 ayarıyla, standart modelin %94.6'lık nDCG@10 performansı, aynı depolama bütçesinde %97.8'e yükseltiliyor.",
+  "detayli_icerik_tr": "Çoklu‑vektör gömme modelleri, her sorgu token'ının belge içinde bir eşleşme bulma şansı sayesinde arama kalitesini artırıyor, ancak bu durum milyonlarca belge için yüz milyonlarca vektör üretip depolama maliyetini katlıyor. Token pooling, benzer token vektörlerini birleştirerek bu temsilleri küçültüyor; ancak agresif sıkıştırma, önemli bilgilerin kaybolmasına yol açabiliyor. Bu sorunu çözmek için geliştirilen pooling‑aware eğitim, encoder'ı vektörler birleştirildiğinde bile kritik bilgiyi korumaya yönlendiriyor.\n\nHierarchicalTokenPooling, Ward hiyerarşik kümeleme yöntemiyle benzer token gömmelerini gruplandırıyor ve her grubu ortalama vektörle temsil ediyor. pool_factor=4 gibi bir ayar, belgelerin yaklaşık %25'ini korurken daha uzun belgeler orantılı olarak daha fazla kapasite tutabiliyor. Kullanıcılar, max_tokens, pool_factor veya distance_threshold gibi üç farklı kontrolle sıkıştırma seviyesini belirleyebiliyor.\n\nPooling‑aware eğitim, iki kayıp fonksiyonunu aynı anda optimize ediyor: tam vektörlerle yapılan geri getirme ve aynı belgelerin sıkıştırılmış (ör. %25) temsilleriyle yapılan geri getirme. Bu iki kayıp %0.5 oranında ağırlıklandırılarak ortalanıyor ve model, hem tam hem de sıkıştırılmış temsillerdeki hatalardan öğreniyor. Eğitim sırasında, Ward kümeleme kararları için straight‑through estimator kullanılarak gruplara ait token'lara geri yayılım sağlanıyor.\n\nHugging Face, bu yöntemi Sentence Transformers çerçevesi içinde MultiVectorTokenPoolingLoss adlı bir kayıp sarmalayıcıyla sunuyor. Örnek eğitim scripti, 64‑lik mini‑batch ve 256‑lık toplam batch boyutu ile MS MARCO 120.000 triplet veri seti üzerinde bir epoch çalıştırıyor. Sonuçlar, pool_factor=4 ile sıkıştırılmış modelin NanoBEIR nDCG@10 skorunu %97.8'e çıkarırken, aynı depolama bütçesindeki standart modelin %94.6'lık skorunu geride bırakıyor. Ayrıca, CUDA ve Triton tabanlı kernel hızlandırmaları sayesinde Ward kümeleme ve MaxSim skorlama işlemleri %30‑150 kat daha hızlı gerçekleşiyor.",
+  "onemli_maddeler": [
+    "HierarchicalTokenPooling, benzer token gömmelerini Ward kümeleme ile birleştirerek belge vektör sayısını %75 oranında azaltıyor.",
+    "Pooling‑aware eğitim, orijinal ve sıkıştırılmış temsillerde aynı anda kayıp fonksiyonunu optimize ederek nDCG@10 performansını %94.6'dan %97.8'e yükseltiyor.",
+    "CUDA/Triton tabanlı kernel entegrasyonu, kümeleme ve MaxSim skorlama işlemlerini 30‑150 kat hızlandırıyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Yeni bir eğitim yöntemi ve kayıp sarmalayıcı sunulması, çoklu‑vektör arama sistemlerinde depolama maliyetini düşürürken kalite kaybını minimuma indiriyor; bu da büyük ölçekli bilgi erişim platformları için kritik bir iyileştirme sağlıyor.",
+  "etiketler": [
+    "çoklu vektör",
+    "token pooling",
+    "sentence transformers",
+    "retrieval",
+    "ML"
+  ],
+  "anilan_modeller": [
+    "tomaarsen/mve-ModernBERT-base-token-pooling",
+    "tomaarsen/mve-ModernBERT-base-token-pooling-baseline",
+    "answerdotai/ModernBERT-base"
+  ],
+  "yorum_tr": "Pooling‑aware eğitim, büyük belge koleksiyonlarında depolama gereksinimini önemli ölçüde azaltırken geri getirme kalitesini koruması sayesinde arama motorları ve bilgi erişim sistemleri için yeni bir verimlilik standardı oluşturabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "tomaarsen/mve-ModernBERT-base-token-pooling-baseline",
+      "benchmark": "NanoBEIR nDCG@10",
+      "skor": 94.6,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "with pool_factor=4, my normally trained model retains 94.6% of its unpooled NanoBEIR nDCG@10"
+    },
+    {
+      "model": "tomaarsen/mve-ModernBERT-base-token-pooling",
+      "benchmark": "NanoBEIR nDCG@10",
+      "skor": 97.8,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Token pooling-aware training raises that retention to 97.8% at the same storage budget"
+    }
+  ],
+  "gorsel_url": "https://huggingface.co/blog/assets/train-sentence-transformers/st-hf-thumbnail.png",
+  "url": "https://huggingface.co/blog/token-pooling",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-11-11T00:00:00.000Z",
+  "slug": "token-pooling-aware-training-for-multi-vector-embedding-mode"
+}

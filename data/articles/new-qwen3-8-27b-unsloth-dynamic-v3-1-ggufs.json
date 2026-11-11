@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "Unsloth Dynamic v3.1 GGUF'ları Qwen3.8-27B için Yayınlandı, %5-10 Daha İyi Doğruluk",
+  "ozet_tr": "Unsloth, Qwen3.8-27B modeline yönelik yeni Dynamic v3.1 GGUF quant'larını duyurdu. 2‑bit ile 6‑bit arasındaki tüm boyutlarda %5‑10 daha yüksek doğruluk vaat ediyor ve DeepSWE, Terminal Bench gibi kritik benchmark'larda önceki sürümlere göre üstün performans gösteriyor.",
+  "detayli_icerik_tr": "Reddit'in LocalLLaMA topluluğunda yapılan duyuruda, Unsloth ekibi Qwen3.8-27B modeline yeni Dynamic v3.1 GGUF quant'larını sunuyor. 2‑bit, 4‑bit, 5‑bit ve 6‑bit gibi çeşitli bit derinliklerinde güncellenen bu quant'lar, önceki UD3, GSQ‑RCO ve Exllama‑3 sürümlerine kıyasla %5‑10 arasında doğruluk artışı sağlıyor. Özellikle DeepSWE ve Terminal Bench gibi agentic benchmark'larda 256K bağlam uzunluğunda, diğer testlerde ise 128K bağlamda ölçüm yapıldı.\n\nBenchmark çalışmaları, sıcaklık 1.0, top_p 0.95, top_k 20 gibi standart ayarlarla gerçekleştirildi ve LiveCodeBench, HMMT gibi testlerde 6‑16 kez tekrarlanan denemelerle sonuçlar istatistiksel olarak güvenilir hale getirildi. Unsloth, 3‑bit quant'ların mevcut UD3 ile eşdeğer performans gösterdiğini belirterek, bu boyutta bir güncelleme yapmadığını açıkladı.\n\nKarşılaştırmalı analizlerde, GSQ‑RCO ve Exllama‑3'ün BF16 gömme katmanı kullandığı için doğrudan RAM ve disk kullanım karşılaştırması zorlaştırıldı; ancak saf RAM ve disk kullanımına göre Exllama‑3 daha düşük performans sergiledi. LiveCodeBench'te UD3 eski quant'ları ISTA'nın yöntemlerinden daha iyi sonuç verirken, UD3.1 ise bu farkı daha da kapattı. AIME25 benchmark'ında ISTA'nın tek deneme sonuçları %100 doğruluk gösterirken, Unsloth'un 14 deneme üzerinden ortalama %93‑96 doğruluk geri kazanımı elde ettiği vurgulandı.\n\nUnsloth, bu güncellemelerin yanı sıra Qwen4 için de benzer verimli ve doğru quant'ların geliştirilmesi üzerinde çalıştığını belirtti. Tüm yeni GGUF dosyaları Hugging Face üzerindeki https://huggingface.co/unsloth/Qwen3.8-27B-GGUF adresinden indirilebilir.",
+  "onemli_maddeler": [
+    "2‑bit‑6‑bit arası tüm quant'lar %5‑10 daha yüksek doğruluk sağlıyor.",
+    "DeepSWE ve Terminal Bench gibi agentic benchmark'larda 256K bağlamda test edildi.",
+    "LiveCodeBench ve AIME25 gibi testlerde UD3.1, önceki sürümlere göre ortalama %93‑96 doğruluk geri kazanımı elde etti.",
+    "3‑bit quant'lar mevcut UD3 ile eşdeğer olduğu için güncellenmedi."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Mevcut Qwen3.8-27B modeline yönelik quant'ların doğruluk ve verimlilik açısından önemli iyileştirmeler sunması, açık kaynak toplulukları ve düşük kaynaklı uygulamalar için kritik bir güncelleme oluşturuyor.",
+  "etiketler": [
+    "Qwen3.8-27B",
+    "Unsloth",
+    "GGUF",
+    "Quantization",
+    "Benchmark"
+  ],
+  "anilan_modeller": [
+    "Qwen3.8-27B (Unsloth Dynamic v3.1)"
+  ],
+  "yorum_tr": "Bu güncelleme, düşük bellekli ortamlarda yüksek performans isteyen geliştiriciler için daha güvenilir bir seçenek sunuyor ve Qwen4'ün de benzer iyileştirmelerle gelmesi beklentisini artırıyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/rdisl2kib01i1.png?width=640&crop=smart&auto=webp&s=1f05bee5a5d50194e1f2e8541bd55004fec46616",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xtlyhe/new_qwen3827b_unsloth_dynamic_v31_ggufs/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-11T16:17:55.000Z",
+  "slug": "new-qwen3-8-27b-unsloth-dynamic-v3-1-ggufs"
+}

@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "Google, Gemini Decision 1 ile 1.000 soruyu tek seferde yanıtlayarak karar-modeli dalgasına katıldı",
+  "ozet_tr": "Google DeepMind, çoklu modaliteyi destekleyen ve aynı anda 1.000 kapalı uçlu soruyu işleyebilen Gemini Decision 1 modelini duyurdu. Model, metin, görsel, ses, video ve PDF üzerinden evet/hayır, çoktan seçmeli ve ölçekli sorulara 150‑250 ms içinde olasılık ve güven değeri döndürüyor.",
+  "detayli_icerik_tr": "Google DeepMind, karar‑modeli pazarına yeni bir katman ekleyerek Gemini Decisions API'yi tanıttı. Bu API, evet/hayır, çoktan seçmeli ve ölçekli sorular gibi kapalı uçlu kararları hızlı bir şekilde işlemek üzere tasarlandı ve Gemini Decision 1 modeli bu altyapının çekirdeğini oluşturuyor.\n\nGemini Decision 1, aynı anda 1.000 bağımsız soruyu tek bir geçişte işleyebilen bir multimodal model. Metin, görsel, ses, video ve PDF gibi farklı veri tiplerini aynı anda analiz ederek her soruya doğrudan olasılık ve güven değeri atıyor. İşlem süresi 150‑250 milisaniye arasında değişiyor, bu da gerçek‑zamanlı uygulamalarda kullanılabilirliği artırıyor.\n\nGoogle, bu API'yi dahili olarak Gemini Notebook'ta dinamik model yönlendirme, Stitch platformunda tasarım prototipleme ve Google Search'te güvenlik kontrolleri gibi alanlarda kullanıyor. Fiyatlandırma ise giriş tokeni başına 0,10 $ ve çıktı tokeni ücreti yok; bu, Gemini 3.5 Flash‑Lite'tan yaklaşık beş kat daha ucuz bir maliyet sunuyor. API, Google AI Studio üzerinden erişilebilir ve OpenRouter, LangChain, Vercel gibi popüler platformlarla entegrasyonları sürüyor.\n\nBenchmark sonuçları açısından Gemini Decision 1, ajan yönlendirme, akıl yürütme ve çoklu modalite anlayışı gibi kategorilerde lider konumda. Özellikle en düşük kalibrasyon hatası (Top‑1 ECE) elde ederek modelin tahminlerinin güvenilirliğini kanıtladı. Son haftalarda Jev, OpenAI, Cloudflare ve Microsoft gibi firmalar benzer karar‑modeli çözümleri sunarak rekabeti kızıştırdı.",
+  "onemli_maddeler": [
+    "Gemini Decision 1, tek seferde 1.000 bağımsız soruyu işleyebiliyor.",
+    "Metin, görsel, ses, video ve PDF gibi çoklu modaliteleri destekleyerek evet/hayır, çoktan seçmeli ve ölçekli sorulara doğrudan olasılık ve güven değeri veriyor.",
+    "API maliyeti sadece giriş tokeni başına 0,10 $, çıktı tokeni ücreti yok; Gemini 3.5 Flash‑Lite'tan yaklaşık beş kat daha ucuz.",
+    "Google AI Studio üzerinden anında erişim ve OpenRouter, LangChain, Vercel gibi platformlarla entegrasyon sağlanıyor.",
+    "Benchmarklerde ajan yönlendirme, akıl yürütme ve çoklu modalite anlayışında lider, en düşük kalibrasyon hatası (Top‑1 ECE) elde edildi."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Google'ın Gemini Decision 1 modeli, aynı anda bin soruyu işleyebilen ilk büyük ölçekli karar‑modeli olarak sektörde yeni bir standart belirliyor; düşük gecikme, çoklu modalite ve maliyet avantajları geliştiricilerin ve ürün ekiplerinin karar‑motorlarını yeniden şekillendirebilir.",
+  "etiketler": [
+    "Gemini",
+    "Google AI",
+    "multimodal",
+    "decision model",
+    "API"
+  ],
+  "anilan_modeller": [
+    "Gemini Decision 1",
+    "Gemini 3.5 Flash-Lite"
+  ],
+  "yorum_tr": "Bu model, yüksek hacimli kapalı uçlu sorulara anlık yanıt gerektiren uygulamalarda geliştiricilere yeni bir araç sunuyor ve maliyet etkinliği sayesinde geniş çaplı benimsenmeyi teşvik edebilir. Aynı zamanda benchmark liderliği, Google'ın karar‑modeli alanındaki rekabet avantajını pekiştiriyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/10/gemini_4_logo_wall.png",
+  "url": "https://the-decoder.com/google-joins-the-decision-model-wave-with-gemini-decision-1-scoring-1000-questions-in-a-single-pass/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-11T20:12:46.000Z",
+  "slug": "google-joins-the-decision-model-wave-with-gemini-decision-1"
+}
