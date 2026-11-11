@@ -1,0 +1,57 @@
+{
+  "baslik_tr": "Qwen3.8 ve Qwen3.6 Modelleri Elixir, OCaml ve Haskell Gibi Az Bilinen Dillerde Test Edildi: Yeni Bir Kod Benchmarkı Orta",
+  "ozet_tr": "Reddit'te yayımlanan yeni bir topluluk benchmarkı, Qwen3.8 27B ve Qwen3.6 27B modellerinin Elixir, OCaml, Haskell gibi yaygın olmayan 13 programlama dilindeki performansını değerlendirdi. Toplamda 202 gerçek GitHub görevinin kullanıldığı bu testlerde Qwen3.8, Qwen3.6'ya kıyasla önemli bir gelişim göstererek görevlerin %43'ünü başarıyla tamamladı. Bu çalışma, spesifik niş dillerle çalışan geliştiriciler için yapay zeka kod modellerinin yeteneklerini somut verilerle ortaya koyuyor.",
+  "detayli_icerik_tr": "Yapay zeka modellerinin kod üretme yetenekleri genellikle Python, Java, JavaScript gibi popüler diller üzerinden değerlendirilirken, bazı geliştiriciler daha niş veya akademik dillerde çalışmaktadır. r/LocalLLaMA topluluğundan bir ekip, bu boşluğu doldurmak amacıyla Elixir, OCaml, Haskell, Clojure, Kotlin, Swift, Julia ve R gibi 13 farklı, genel benchmarklarda nadiren yer alan programlama dilini kapsayan yeni bir test seti oluşturdu. Bu benchmark, gerçek GitHub depolarından alınan 202 adet görevi içeriyor.\n\nEkip, sınırlı hesaplama bütçelerine rağmen özellikle popüler açık kaynak modellerden Qwen3.6 27B ve Qwen3.8 27B'yi bu test setinde karşılaştırdı. Elde edilen sonuçlar, Qwen serisinin en yeni iterasyonu olan Qwen3.8'in kayda değer bir performans artışı sergilediğini ortaya koydu. Qwen3.6 27B, görevlerin sadece %17'sini çözebilirken, Qwen3.8 27B bu oranı %43'e çıkararak selefine göre belirgin bir iyileşme kaydetti.\n\nTestin dikkat çeken bir diğer yönü, Qwen3.8'in skorunda potansiyel bir düşüşe neden olan \"zor görevlerin seçimi\" önyargısıdır. Ekip, Qwen3.8'in test için zorlu görevleri seçmede kullanıldığını, bu durumun modelin gerçek performansını bir miktar düşük göstermiş olabileceğini belirtiyor. Bu tür bir önyargının, modelin gerçek dünya senaryolarındaki potansiyelini tam olarak yansıtmayabileceği anlamına geliyor.\n\nBenchmark, sadece Qwen modelleriyle sınırlı kalmayıp, Kimi K3, DeepSeek, GLM ve bazı kapalı kaynak modelleriyle de karşılaştırma imkanı sunan bir liderlik tablosu içeriyor. Bu liderlik tablosu, her dil için ayrı ayrı performans dökümlerini de barındırarak geliştiricilere detaylı bir bakış açısı sunuyor. Bu inisiyatif, yerel yapay zeka modellerinin spesifik programlama paradigmalarındaki yeterliliğini anlamak ve bu alandaki gelişimi hızlandırmak adına önemli bir adım teşkil ediyor.",
+  "onemli_maddeler": [
+    "Elixir, OCaml, Haskell gibi 13 az yaygın dilde 202 gerçek GitHub görevi içeren yeni bir benchmark oluşturuldu.",
+    "Qwen3.8 27B modeli görevlerin %43'ünü çözerken, Qwen3.6 27B modeli sadece %17'sini çözdü.",
+    "Qwen3.8'in test için zorlu görevleri seçmede kullanılması nedeniyle skoru hafifçe düşük çıkmış olabilir.",
+    "Benchmark, Kimi K3, DeepSeek, GLM ve kapalı kaynak modellerle karşılaştırma imkanı sunan bir liderlik tablosu içeriyor.",
+    "Bu testler, niş programlama dilleri kullanan geliştiriciler için yapay zeka kod asistanlarının potansiyelini ortaya koyuyor."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Niş programlama dillerinde yapay zeka modellerinin performansını değerlendiren spesifik ve kapsamlı bir topluluk benchmarkı olması, bu alandaki bilgi eksikliğini gidermesi ve önemli bir karşılaştırma sağlaması nedeniyle yüksek önem taşıyor.",
+  "etiketler": [
+    "Yapay Zeka",
+    "Kodlama",
+    "Benchmark",
+    "Qwen",
+    "Elixir"
+  ],
+  "anilan_modeller": [
+    "Qwen3.6 27B",
+    "Qwen3.8 27B",
+    "GLM-5.3 Flash",
+    "Kimi K3",
+    "DeepSeek"
+  ],
+  "yorum_tr": "Bu benchmark, büyük dil modellerinin yaygın olmayan programlama dillerindeki yeteneklerini ölçmek için önemli bir adım. Geliştiriciler için, kullandıkları spesifik dillerde hangi modellerin daha iyi performans gösterdiğini anlamalarına yardımcı olacak ve model geliştiricileri için bu niş alanlarda iyileştirme yapmaları için değerli geri bildirim sağlayacaktır. Özellikle Qwen3.8'in kaydettiği ilerleme, açık kaynak modellerin daha geniş bir dil yelpazesinde rekabetçi hale geldiğini gösteriyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen3.8 27B",
+      "benchmark": "202 GitHub tasks (13 less common languages)",
+      "skor": 43,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Qwen3.8 solves 43% of the tasks"
+    },
+    {
+      "model": "Qwen3.6 27B",
+      "benchmark": "202 GitHub tasks (13 less common languages)",
+      "skor": 17,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "up from 17% for Qwen3.6"
+    }
+  ],
+  "gorsel_url": "https://external-preview.redd.it/6iqJC_OQBf_kD5iSYHgH6Y9ZKA8j8Yf_rB5iiVc2Rds.png?width=640&crop=smart&auto=webp&s=3915f20479a7bb110398889aa8dc24e4ca706f1f",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xsorsx/we_tested_qwen36_27b_qwen38_27b_and_glm53_flash/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-10T14:48:25.000Z",
+  "slug": "we-tested-qwen3-6-27b-qwen3-8-27b-and-glm-5-3-flash-on-real"
+}

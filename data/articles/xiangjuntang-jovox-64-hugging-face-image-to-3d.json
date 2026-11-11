@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "JoVox-64: Tek Görüntüden 64³ Voxel Yapısı Üreten Yeni Model",
+  "ozet_tr": "JoVox-64, tek bir görüntüden 64³ voxel yapısını oluşturabilen yeni bir image-to-3D modeli olarak tanıtıldı. Discrete flow matching temelli bu çerçeve, hiyerarşik dağılımları öğrenerek 4³, 16³ ve 64³ seviyelerini tek bir ağ üzerinden üretmeyi sağlıyor.",
+  "detayli_icerik_tr": "JoVox-64, \"Joint Hierarchical Flow Matching for Lightweight Voxel Generation\" başlıklı bir çalışma kapsamında geliştirilen bir modeldir. Model, görüntü koşullu olarak voxel yapıları üretmek üzere tasarlanmış olup, 4³, 16³ ve 64³ çözünürlüklerdeki voxel bloklarını tek bir ağ üzerinden ardışık olarak oluşturur. Bu sayede hem hafif bir mimari hem de yüksek çözünürlüklü 3D temsiller elde edilir.\n\nModelin temelini oluşturan discrete flow matching çerçevesi, voxel dağılımlarının hiyerarşik ilişkilerini ortak bir dağılım olarak öğrenir. Bu yaklaşım, geleneksel voxel jeneratörlerine kıyasla daha az parametre ve hesaplama maliyeti gerektirirken, çıktının kalitesinde belirgin bir düşüş yaşanmaz. JoVox-64, tek bir görüntüden üç farklı ölçekli voxel seti üretme yeteneği sayesinde, 3D içerik oluşturma, oyun geliştirme ve AR/VR uygulamaları gibi alanlarda hızlı prototipleme imkanı sunar.\n\nAraştırma ekibi, modelin kodunu ve önceden eğitilmiş ağı Hugging Face platformunda paylaşmıştır. Ayrıca GitHub üzerinden erişilebilen açık kaynak kodları, topluluk tarafından kolayca test edilip genişletilebilecek bir altyapı sağlar. Çalışmanın tam metni arXiv'de (arXiv:2611.10690) yayımlanmış olup, proje sayfasında ekran görüntüleri, benchmark sonuçları ve kullanım kılavuzları yer almaktadır.\n\nJoVox-64'ün duyurusu, görüntüden 3D model üretimi alanında hâlâ sınırlı olan açık kaynak çözümlerine yeni bir alternatif getiriyor. Modelin hafif yapısı, düşük donanım gereksinimleriyle daha geniş bir geliştirici kitlesine ulaşmasını mümkün kılıyor ve gelecekteki araştırma ve ticari uygulamalara zemin hazırlıyor.",
+  "onemli_maddeler": [
+    "JoVox-64, tek bir görüntüden 64³ voxel yapısını oluşturabilen ilk modellerden biri.",
+    "Discrete flow matching çerçevesi sayesinde 4³, 16³ ve 64³ seviyeleri tek bir ağ üzerinden hiyerarşik olarak üretiliyor.",
+    "Model ve önceden eğitilmiş ağı Hugging Face ve GitHub üzerinden açık kaynak olarak sunuldu.",
+    "Hafif mimarisi, düşük donanım gereksinimleriyle 3D içerik üretimini geniş bir kitleye erişilebilir kılıyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Yeni bir 3D içerik üretim modeli olması ve açık kaynak olarak sunulması, araştırmacı ve geliştiricilerin voxel tabanlı uygulamalara hızlı erişimini sağlayarak sektörde önemli bir adım oluşturuyor.",
+  "etiketler": [
+    "image-to-3D",
+    "voxel",
+    "flow-matching",
+    "HuggingFace",
+    "arXiv"
+  ],
+  "anilan_modeller": [
+    "JoVox-64"
+  ],
+  "yorum_tr": "JoVox-64, görüntüden yüksek çözünürlüklü voxel üretimini hafif bir mimariyle sunarak 3D modelleme sürecini hızlandırıyor; geliştiriciler için maliyet ve zaman açısından cazip bir seçenek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/P-5R_mT96ag8lgaY6E31Vycap1baJN2BoOlRmCewG0Q.png?width=640&crop=smart&auto=webp&s=7d63b41dc0c2626cc6ffca168a4c44f18ba79cb3",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xskr0m/xiangjuntangjovox64_hugging_face_imageto3d/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-10T11:41:51.000Z",
+  "slug": "xiangjuntang-jovox-64-hugging-face-image-to-3d"
+}
