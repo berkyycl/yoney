@@ -1,0 +1,37 @@
+{
+  "baslik_tr": "TRELLIS.2 3D Modeli için LoRA Tabanlı Fine-Tuning Rehberi",
+  "ozet_tr": "Hugging Face, TRELLIS.2 modelini belirli 3D nesne kategorilerine uyarlamak isteyen geliştiriciler için LoRA tabanlı bir fine‑tuning kılavuzu yayınladı. Rehber, hem bulut ortamında Hugging Face Jobs hem de yerel Docker konteynerleriyle çalışacak tam bir pipeline sunuyor.",
+  "detayli_icerik_tr": "3D nesne üretimi, robotik, simülasyon ve medya gibi alanlarda giderek daha kritik bir rol oynuyor. Ancak mevcut modeller, farklı dosya formatları (GLB, PLY) ve temsiller (NeRF, 3DGS) arasında tutarlı sonuçlar vermekte zorlanıyor. TRELLIS.2, bu çeşitliliği tek bir \"birleşik latent temsil\" içinde toplayarak farklı çıktılar üretebilen bir yapı sunuyor, fakat hâlâ belirli görevlerde (ör. mobilya ya da ayakkabı gibi) detay hataları yapabiliyor.\n\nBu eksikliği gidermek için Hugging Face, LoRA (Low‑Rank Adaptation) yöntemini kullanarak TRELLIS.2'nin iki kritik bileşenine – Sparse‑Structure Flow DiT ve Shape Flow DiT – adaptörler ekliyor. LoRA, orijinal ağı dondurup sadece küçük adaptör matrislerini eğittiği için sadece 9,3 M parametreyle sınırlı bir veri seti (GSO'dan 188 ayakkabı) üzerinde bile etkili bir ince ayar sağlıyor. Rank 8 ve rank 16 adaptörleri, dikkat ve MLP katmanlarında farklı boyutlarda uygulanıyor.\n\nKılavuz, süreci üç ana adıma bölüyor: veri hazırlama, LoRA eğitimi ve sonuçların değerlendirilmesi. Veri hazırlama aşamasında Blender kullanılarak her nesne için 16 farklı görüş renderlanıyor ve bu görüntüler, TRELLIS.2'nin giriş token'ları olarak hizmet veriyor. Eğitim aşaması ise Hugging Face Jobs üzerinde A100‑large GPU'larıyla yürütülüyor; her DiT için ayrı bir job tanımlanıyor ve Trackio panosu üzerinden metrikler izlenebiliyor. Yerel Docker alternatifleri de aynı komut setiyle sağlanıyor, böylece bulut erişimi olmayan kullanıcılar da süreci tekrarlayabiliyor.\n\nSonuç olarak, LoRA adaptörleri sayesinde ayakkabı tabanının (sole) geometrik doğruluğu belirgin şekilde iyileştirildi ve modelin genel renk‑doku performansı korunarak \"catastrophic forgetting\" riski önlendi. Rehber, aynı metodolojinin diğer nesne kategorilerine de kolayca uygulanabileceğini vurgulayarak, 3D içerik üretiminde özelleştirilmiş model geliştirme sürecini demokratikleştirmeyi hedefliyor.",
+  "onemli_maddeler": [
+    "LoRA adaptörleri sadece Sparse‑Structure Flow ve Shape Flow DiT'lere eklenerek sadece 9,3 M parametreyle ince ayar yapılabiliyor.",
+    "Hugging Face Jobs ve Docker konteynerleri sayesinde süreç hem bulutta hem de yerelde aynı komut setiyle çalıştırılabiliyor.",
+    "GSO veri setinden seçilen 188 ayakkabı örneğiyle yapılan deney, ayakkabı tabanının geometrik doğruluğunu önemli ölçüde artırdı."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "3D içerik üretiminde özelleştirilmiş model eğitimi genellikle yüksek maliyetli ve karmaşık bir süreçtir; LoRA tabanlı hafif fine‑tuning ve hazır konteynerler bu engeli büyük ölçüde azaltıyor.",
+  "etiketler": [
+    "3D generation",
+    "LoRA",
+    "Hugging Face Jobs",
+    "TRELLIS.2",
+    "fine-tuning"
+  ],
+  "anilan_modeller": [
+    "TRELLIS.2",
+    "DINOv3",
+    "BiRefNet",
+    "Sparse-Structure Flow DiT",
+    "Shape Flow DiT",
+    "Texture Flow DiT"
+  ],
+  "yorum_tr": "Bu rehber, 3D modelleme topluluğuna düşük maliyetli ve ölçeklenebilir bir özelleştirme yolu sunarak, özellikle dar veri setlerine sahip araştırmacı ve geliştiricilerin model performansını hızla iyileştirmesine olanak tanıyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://huggingface.co/blog/assets/3d-lora-finetuning/thumbnail.gif",
+  "url": "https://huggingface.co/blog/3d-lora-finetuning",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-11-12T00:00:00.000Z",
+  "slug": "the-definitive-fine-tuning-guide-for-3d-generation-models"
+}

@@ -1,0 +1,82 @@
+{
+  "baslik_tr": "KQuant: Qwen modelleri için %3.7 daha iyi KL‑divergence azaltımı sağlayan yeni kuantizasyon tekniği",
+  "ozet_tr": "Nace ekibi, Qwen ailesi modelleri için KQuant adını verdikleri yeni bir kuantizasyon yöntemi geliştirdi. Açık kaynak olarak yayınlanan paketler, aynı bellek boyutunda %1.45‑%3.7 daha düşük KL‑divergence elde ederken, bazı modellerde %6‑%15 daha hızlı yanıt üretimi sağlıyor.",
+  "detayli_icerik_tr": "Nace firmasının ML mühendisi Alish, Qwen serisine yönelik geliştirdikleri KQuant kuantizasyon tekniğini Reddit'te duyurdu. KQuant, gerçek metin verileriyle ağırlık gruplarının ölçek ve ofsetlerini belirleyerek hassas katmanlara ekstra bitler ekliyor; bu işlem bulut GPU kümelerinde önceden yürütülüyor ve sonuçta standart 4‑bit kuantizasyonlara göre çok daha düşük KL‑divergence sağlanıyor. \n\nKQuant paketleri Hugging Face üzerinden indirilebilir ve MLX formatında sunuluyor. 4‑bit paketlerde Qwen3.5‑4B modelinin KL değeri 0.048 iken, halka açık referans 0.070; Qwen3.8‑Flash‑Next modelinde ise 0.067 (3.7 kat daha iyi) ve boyut da 105.20 GB yerine 110.62 GB olarak küçültülmüş. Ayrıca Q5 (5‑bit) paketleri de sunularak daha yüksek hassasiyetli seçenekler mevcut. \n\nPerformans açısından KQuant, Apple M5 Pro çipinde Kapitsa 0.2.35 sürümüyle çalıştırıldığında 4‑bit paketlere kıyasla %6‑%15 daha hızlı metin üretimi sağlıyor. Bu hız artışı, 4B, 9B ve 27B modellerinde, 35B modelinde ise Youssofal MTPLX 4‑bit paketlerine göre gözlemleniyor. \n\nKQuant'ın en büyük avantajı, özel çekirdek ya da yükleyici gerektirmemesi; kullanıcılar standart MLX paketini indirip doğrudan çalıştırabiliyor. Geliştiriciler, istedikleri modelleri KQuant ile kuantize ettirmek için ekip ile iletişime geçebileceklerini belirtiyor.",
+  "onemli_maddeler": [
+    "KQuant, Qwen modellerinde KL‑divergence'ı %1.45‑%3.7 oranında azaltarak orijinal modele daha yakın sonuçlar sunuyor.",
+    "Aynı bellek boyutunda %6‑%15 daha hızlı yanıt üretimi sağlanıyor, özellikle Apple M5 Pro cihazlarda belirgin bir performans artışı görülüyor.",
+    "Paketler açık kaynak ve MLX formatında, özel çekirdek gerektirmeden doğrudan kullanılabiliyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Yeni bir kuantizasyon yöntemi ve açık kaynak paketleri, büyük dil modellerinin daha verimli ve hızlı kullanılmasını sağladığı için sektörde önemli bir gelişme olarak değerlendiriliyor.",
+  "etiketler": [
+    "kuantizasyon",
+    "Qwen",
+    "MLX",
+    "KQuant",
+    "KL-divergence"
+  ],
+  "anilan_modeller": [
+    "Qwen3.5-4B",
+    "Qwen3.5-9B",
+    "Qwen3.8-27B",
+    "Qwen3.6-35B-A3B",
+    "Qwen3.8-Flash-Next"
+  ],
+  "yorum_tr": "KQuant, büyük dil modellerinin mobil ve masaüstü ortamlarda daha düşük bellek tüketimiyle çalıştırılmasını mümkün kılıyor; geliştiriciler için maliyet ve performans açısından cazip bir seçenek sunuyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen3.5-4B",
+      "benchmark": "KL divergence",
+      "skor": 0.048,
+      "birim": "KL",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "original-text predictions",
+      "kaynak_metinden_alinti": "Qwen3.5-4B 0.048 (1.45x better) 0.070 2.37 / 2.37"
+    },
+    {
+      "model": "Qwen3.5-9B",
+      "benchmark": "KL divergence",
+      "skor": 0.03,
+      "birim": "KL",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "original-text predictions",
+      "kaynak_metinden_alinti": "Qwen3.5-9B 0.030 (2.6x better) 0.081 5.29 / 5.04"
+    },
+    {
+      "model": "Qwen3.8-27B",
+      "benchmark": "KL divergence",
+      "skor": 0.035,
+      "birim": "KL",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "original-text predictions",
+      "kaynak_metinden_alinti": "Qwen3.8-27B 0.035 (1.5x better) 0.054 15.13 / 15.13"
+    },
+    {
+      "model": "Qwen3.6-35B-A3B",
+      "benchmark": "KL divergence",
+      "skor": 0.059,
+      "birim": "KL",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "original-text predictions",
+      "kaynak_metinden_alinti": "Qwen3.6-35B-A3B 0.059 (1.6x better) 0.096 19.51 / 19.51"
+    },
+    {
+      "model": "Qwen3.8-Flash-Next",
+      "benchmark": "KL divergence",
+      "skor": 0.067,
+      "birim": "KL",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "original-text predictions",
+      "kaynak_metinden_alinti": "Qwen3.8-Flash-Next 0.067 (3.7x better at a smaller size) 0.249 105.20 / 110.62"
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/4ycpy0nao51i1.png?width=640&crop=smart&auto=webp&s=457aeceb0866a518b9320d566099ebe886b6edf8",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xu9onk/kquant_new_quantization_technique_37_better/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-12T10:47:24.000Z",
+  "slug": "kquant-new-quantization-technique-3-7-better-quants-for-qwen"
+}

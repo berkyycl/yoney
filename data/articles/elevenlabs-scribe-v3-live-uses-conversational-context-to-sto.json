@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "ElevenLabs Scribe v3 Live, konuşma bağlamını kullanarak ses ajanlarının arayanı cümle ortasında kesmesini önlüyor",
+  "ozet_tr": "ElevenLabs, gürültülü ortamlar ve çakışan konuşmalar için tasarlanmış iki yeni ses‑metin modeli Scribe v3 ve Scribe v3 Live'ı duyurdu. Scribe v3, önceden kaydedilmiş dosyalarda %25 daha az kelime hatası sunarken, Scribe v3 Live gerçek zamanlı uygulamalarda konuşma bağlamını analiz ederek arayanların cümlelerini yarıda kesmeyi engelliyor.",
+  "detayli_icerik_tr": "ElevenLabs, ses tanıma teknolojisini bir adım ileri taşıyarak Scribe v3 ve Scribe v3 Live modellerini piyasaya sürdü. Scribe v3, 102 dili kapsayan önceden kaydedilmiş ses dosyalarında önceki sürümüne göre kelime hatasını yaklaşık %25 oranında azaltıyor ve özellikle Almanca gibi dillerde doğruluk artışı sağlıyor. Model, büyük grup konuşmalarında konuşmacı ayrımını (speaker diarization) daha güvenilir bir şekilde gerçekleştiriyor.\n\nScribe v3 Live ise düşük gecikmeli, gerçek zamanlı senaryolar için geliştirildi. Geleneksel ses ajanları, konuşmacının kısa bir duraklamasını bitiş sinyali olarak algılayıp cümleyi yarıda kesebiliyor; yeni model ise ses sinyaliyle birlikte konuşma bağlamını değerlendirerek gerçek bitiş anını tespit ediyor. Bu sayede telefon ve robotik asistanlarda kullanıcı deneyimi önemli ölçüde iyileştiriliyor.\n\nModelin geliştiricilere sunduğu ek özellikler arasında, binlerce özel terimin (marka isimleri, ilaçlar vb.) önceden yüklenebilmesi, sayı ve tarih formatlama kurallarının belirlenebilmesi ve çok dilli modda cümle içinde dil geçişlerinin sorunsuz işlenmesi bulunuyor. Kurumsal müşteriler için AB içinde izole sunucular ve sıfır‑saklama (zero‑retention) modu da sunuluyor.\n\nElevenLabs, bu modelleri ElevenAPI ve ElevenAgents platformları üzerinden erişime açtı ve Nvidia ile genişletilmiş bir ortaklık sayesinde Nemotron 3.5 Super VL dil modelini entegrasyonla compute kapasitesini artırıyor. Ayrıca McKinsey ile yeni bir iş birliği, sistem entegratörleri için genişletilmiş ortaklık programı ve Salesforce, IBM, Zendesk gibi firmaların hazır ses ajanlarını barındıran bir pazar yeri de duyuruldu.",
+  "onemli_maddeler": [
+    "Scribe v3, önceki sürümüne göre kelime hatasını %25 azaltıyor ve 102 dili destekliyor.",
+    "Scribe v3 Live, gerçek zamanlı konuşma bağlamını analiz ederek ses ajanlarının cümle ortasında kesilmesini önlüyor.",
+    "Modeller, geliştiricilere özel terim ön yükleme, formatlama kuralları ve çok dilli geçiş desteği sağlıyor.",
+    "ElevenLabs, Nvidia ile iş birliğini genişleterek Nemotron 3.5 Super VL entegrasyonu ve AB‑tabanlı izole sunucular sunuyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Ses tanıma alanında gerçek zamanlı bağlam analizi ve yüksek doğruluk, hem kurumsal hem de tüketici uygulamalarında deneyimi dönüştürerek sektörde rekabeti yeniden şekillendirebilir.",
+  "etiketler": [
+    "speech-to-text",
+    "real-time transcription",
+    "ElevenLabs",
+    "AI",
+    "enterprise"
+  ],
+  "anilan_modeller": [
+    "Scribe v3",
+    "Scribe v3 Live"
+  ],
+  "yorum_tr": "Bu modeller, gürültülü ve çok konuşmacılı ortamlarda yüksek doğruluk sunarken gerçek zamanlı kesintisiz etkileşim ihtiyacını karşılayarak geliştiricilere ve işletmelere yeni fırsatlar yaratıyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/10/elevenlabs.png",
+  "url": "https://the-decoder.com/elevenlabs-scribe-v3-live-uses-conversational-context-to-stop-voice-agents-from-cutting-off-callers-mid-sentence/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-12T13:48:19.000Z",
+  "slug": "elevenlabs-scribe-v3-live-uses-conversational-context-to-sto"
+}

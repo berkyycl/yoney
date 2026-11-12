@@ -1,0 +1,44 @@
+{
+  "baslik_tr": "Birisi CMP 170HX madencilik kartını voltaj glitche ile A100-80G'ye dönüştürdü, perakende A100'den %18 daha hızlı",
+  "ozet_tr": "Kate, CMP 170HX madencilik kartındaki HBM kilidini voltaj hatasıyla aşarak kartı tam işlevli bir A100-80G'ye dönüştürdü. Bu modifikasyon sayesinde kart, 85.9 TFLOP/s FP16 performansla perakende A100'ün 72.5 TFLOP/s performansını aştı ve 80 GB HBM tamamen kullanılabilir hâle geldi.",
+  "detayli_icerik_tr": "NVIDIA'nın CMP 170HX modeli, 8 GB bellekle satılsa da kart üzerinde toplamda ~80 GB HBM bulunuyor; ancak bu bellek, üretim aşamasında bir füze kilidiyle (fuse lock) erişime kapatılmış. Kate, bu kilidi aşmak için voltaj hatası enjeksiyonu (voltage fault injection) yöntemi kullandı ve kartın donanımını doğrudan manipüle etti.\n\nBu süreç, özel bir STM32 tabanlı glitch cihazı, kart üzerindeki devrelerin yeniden kablolanması ve bir kart başına 1 ila 48 saat arasında süren glitch denemelerini içeriyordu. Deneylerin sonucunda, on kartlık deneme serisinin sadece birinde 64 GB HBM sorunsuz çalışırken, diğer kartta tam 80 GB HBM kullanılabilir hâle getirildi.\n\nKilit kaldırıldıktan sonra, Kate kartın tüm çalışan SM (Streaming Multiprocessor) birimlerini etkinleştirdi; bu birimler 120‑126 aralığında olup, standart A100'ün 108 SM birimiyle karşılaştırıldığında daha fazladır. Sonuç olarak, kart 85.9 TFLOP/s FP16 performans elde etti, bu da perakende A100'ün 72.5 TFLOP/s performansının yaklaşık %18 daha fazlası demek.\n\nAyrıca, NVLink ve PCIe Gen4 bağlantı özellikleri de geri getirildi, bu da kartın veri aktarım hızlarını ve çoklu GPU senaryolarındaki ölçeklenebilirliğini artırdı. Kate'in detaylı raporu blogunda yayınlandı ve topluluk tarafından büyük ilgi gördü; bu tür bir donanım hack'i, AI altyapısının güvenlik ve erişilebilirlik konularında yeni sorular ortaya koyuyor.",
+  "onemli_maddeler": [
+    "CMP 170HX kartındaki 80 GB HBM, voltaj glitche ile tamamen açıldı.",
+    "Tüm SM birimleri etkinleştirildi; FP16 performansı 85.9 TFLOP/s, perakende A100'ün %18 üzerinde.",
+    "NVLink ve PCIe Gen4 desteği geri getirildi, tam veri yolu özellikleri sağlandı.",
+    "Modifikasyon için özel STM32 glitch cihazı ve 1‑48 saat arası yoğun deneme süreci gerekti."
+  ],
+  "kategori": "benchmark",
+  "onem": 3,
+  "onem_gerekce": "AI donanım topluluğu için teknik bir yenilik ve performans artışı sağlasa da, uygulama maliyeti ve ölçeklenebilirliği sınırlı olduğundan sektörel etkisi orta düzeydedir.",
+  "etiketler": [
+    "voltage glitching",
+    "CMP 170HX",
+    "A100",
+    "GPU hack",
+    "FP16 performans"
+  ],
+  "anilan_modeller": [
+    "CMP 170HX",
+    "NVIDIA A100-80G"
+  ],
+  "yorum_tr": "Bu hack, GPU donanımının güvenlik kilitlerinin kırılabilir olduğunu gösteriyor ve yüksek performanslı AI uygulamaları için yeni bir yol açabilir; ancak maliyet ve riskler, geniş çaplı benimsenmesini zorlaştırıyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "CMP 170HX (glitched)",
+      "benchmark": "FP16 TFLOP/s",
+      "skor": 85.9,
+      "birim": "TFLOP/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "85.9 TFLOP/s FP16 vs 72.5 on a retail A100"
+    }
+  ],
+  "gorsel_url": "https://cdn.wccftech.com/wp-content/uploads/2026/08/NVIDIA-CMP-170HX-64-80-GB-GPUs.jpg",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xu1dkz/someone_voltageglitched_a_cmp_170hx_mining_card/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-12T02:47:50.000Z",
+  "slug": "someone-voltage-glitched-a-cmp-170hx-mining-card-into-a-work"
+}

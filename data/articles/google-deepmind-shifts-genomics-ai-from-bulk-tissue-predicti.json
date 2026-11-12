@@ -1,0 +1,52 @@
+{
+  "baslik_tr": "Google DeepMind, AlphaGenome 2 ile genomik AI'ı toplu doku tahminlerinden tek hücre tipine taşıyor",
+  "ozet_tr": "Google DeepMind, genomik araştırmalara yönelik yeni AlphaGenome 2 modelini duyurdu. Model, DNA dizilerinin etkilerini tek tek insan hücre tiplerinde tahmin ederek, önceki sürümden iki kat daha fazla ilgili genetik varyantı ortaya çıkarıyor ve şu anda ticari olmayan araştırmalar için API üzerinden erişilebilir.",
+  "detayli_icerik_tr": "Google DeepMind, AlphaGenome 2 adlı yeni bir yapay zeka modelini tanıttı. Model, DNA dizileri ve bu dizilerin varyantlarının belirli insan hücre tipleri üzerindeki etkilerini tahmin ediyor. 107 milyondan fazla tek hücre profili (68 doku) kullanılarak eğitilen sistem, gen ifadesi seviyesinin yanı sıra DNA'nın nükleusta nasıl paketlendiği ve DNA metilasyonu gibi kimyasal anahtarların durumunu da hesaplayabiliyor.\n\nAlphaGenome 1'in toplu doku seviyesinde çalışan paralel yaklaşımının, benzer hücre tipleri arasındaki ince farkları yakalamada yetersiz kaldığı belirtilirken, AlphaGenome 2 koşullu bir model olarak DNA dizisiyle birlikte belirli bir biyolojik durumu da girdi olarak alıyor. Bu sayede model, tek bir hücre ölçümünden eksik verileri tahmin edebiliyor; örneğin sadece gen aktivitesi ölçülen bir hücrede DNA paketleme durumu da öngörülüyor.\n\nTenK10K benchmark setinde, 28 birincil bağışıklık hücresi tipi üzerinde AlphaGenome 2, nedensel varyantların %30'unu tespit ederken, bu varyantların gen ifadesini artırıp azaltacağını %43 oranında doğru tahmin etti. Aynı benchmarkta, ince ayar yapılmış AlphaGenome 1 sadece %16 ve %23 başarı gösteriyordu. Model ayrıca kan kök hücrelerinin eritrositlere olgunlaşması gibi sürekli değişen süreçleri de daha yüksek doğrulukla modelleyebiliyor.\n\nUygulama açısından, modelin önceden hesaplanmış tahminleri GWAS analizlerini daraltmak, hastalıkla ilişkili genleri ve etkili hücre tiplerini (ör. beyin astrositleri, belirli bağışıklık hücreleri) belirlemek için kullanılacak. AlphaGenome 2 şu anda ticari olmayan araştırmalar için bir API aracılığıyla kullanılabilir; ticari erişim ise kapalı bir önizleme sürecinde. Ayrıca DeepMind, bu modeli Gemini 4 gibi araçlarla birleştirerek otomatik araştırma iş akışları oluşturmayı planlıyor.",
+  "onemli_maddeler": [
+    "AlphaGenome 2, tek hücre tipinde genetik varyant etkilerini tahmin ederek önceki sürümden iki kat daha fazla ilgili varyant buluyor.",
+    "Model, DNA paketleme ve metilasyon gibi epigenetik özellikleri de hesaplayabiliyor ve eksik veri tahmininde kullanılabiliyor.",
+    "TenK10K benchmark testinde AlphaGenome 2, nedensel varyant tespitinde %30, yön tahmininde %43 başarı göstererek AlphaGenome 1'i geride bıraktı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Genomik alanda tek hücre çözünürlüğü sağlayan bir modelin çıkışı, hastalık mekanizmalarının anlaşılması ve ilaç hedefi keşfi için kritik bir adım oluşturuyor.",
+  "etiketler": [
+    "genomik",
+    "AI",
+    "tek hücre",
+    "AlphaGenome 2",
+    "DeepMind"
+  ],
+  "anilan_modeller": [
+    "AlphaGenome 1",
+    "AlphaGenome 2"
+  ],
+  "yorum_tr": "AlphaGenome 2, genomik araştırmalarda hücre tipine özgü analizleri mümkün kılarak hem akademik hem de ilaç geliştirme süreçlerini hızlandırabilir. Geliştiriciler, modelin koşullu yapısını yeni deneysel veri setlerine yeniden eğitim gerektirmeden uygulayabilecekleri için iş akışlarını otomatikleştirme fırsatı bulacak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "AlphaGenome 2",
+      "benchmark": "TenK10K",
+      "skor": 30,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "AlphaGenome 2 identified about 30 percent of causal variants."
+    },
+    {
+      "model": "AlphaGenome 2",
+      "benchmark": "TenK10K",
+      "skor": 43,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "In 43 percent of cases, it also correctly predicted whether a variant upregulates or downregulates a gene."
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/11/deepmind_alphagenome2.png",
+  "url": "https://the-decoder.com/google-deepmind-shifts-genomics-ai-from-bulk-tissue-predictions-to-single-cell-type-resolution-with-alphagenome-2/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-12T12:09:43.000Z",
+  "slug": "google-deepmind-shifts-genomics-ai-from-bulk-tissue-predicti"
+}
