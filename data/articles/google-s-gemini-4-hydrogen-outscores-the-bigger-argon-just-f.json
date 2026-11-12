@@ -1,0 +1,183 @@
+{
+  "baslik_tr": "Google Gemini 4 Hydrogen, sadece dört hafta içinde daha büyük Argon'u geride bıraktı",
+  "ozet_tr": "Google, geliştiriciler ve günlük kullanıcılar için yeni bir genel amaçlı model olan Gemini 4 Hydrogen'ı duyurdu. Model, bir milyon tokenlık giriş‑çıkış penceresi, dört düşünme seviyesi ve düşük maliyetle Argon modelini birçok benchmarkta geride bıraktı. Hydrogen, kodlama, veri analizi ve çok modlu bilgi iş akışlarında yüksek performans sunuyor.",
+  "detayli_icerik_tr": "Google, Gemini 4 Hydrogen'ı Gemini API, Gemini uygulaması, Google Search ve yeni Antigravity platformu üzerinden erişime açtı. Model, Gemini 3.8 Flash'ın yerini alacak şekilde tasarlandı ve günlük kodlama, araştırma ve çok modlu belge özetleme gibi görevlerde yüksek hız ve düşük maliyet vaat ediyor. Hydrogen, bir milyon tokenlık giriş ve çıkış penceresine sahip; bu, uzun belgeler ve geniş bağlamlı sorgular için önemli bir avantaj sağlıyor.\n\nHydrogen dört düşünme seviyesi sunuyor: low, medium, high (varsayılan) ve yeni bir xhigh seviyesi. Bu seviyeler, modelin performansını ve maliyetini dengelemek için kullanılabiliyor. Varsayılan \"high\" seviyesinde model, Artificial Analysis Intelligence Index (AA Index v5.0) testinde 51 puan alırken, xhigh seviyesinde bu puan 54'e çıkıyor. Argon ise aynı testte 50 puan alıyor. Ayrıca Hydrogen, Terminal‑Bench 4.1 (cheating‑adjusted) testinde %57.0 skor elde ederek Flash'ın %18.2'lik skorunu geride bıraktı.\n\nBenchmark sonuçları, Hydrogen'ın özellikle ajan‑tabanlı kodlama ve veri analizi görevlerinde öne çıktığını gösteriyor. Vals Tax Agent Bench'te %52.3 ile birinci, Vals Legal Research Bench'te %55.8 ile birinci sırada yer alıyor. SWE‑sweep testinde %13.5, FrontierSWE 2'de %61.2 puan alarak diğer Gemini modellerini aşıyor. Çok modlu anlayışta ise MKA (Climb WSR) benchmarkında %53.4, Chartography testinde %66.6 başarı sağladı.\n\nMaliyet açısından Hydrogen, giriş token başına $1.50 ve çıkış token başına $7.50 ücretlendirilirken, önbellek hit'leri için $0.075 uygulanıyor. \"High\" seviyesinde bir görev ortalama $1.87, \"xhigh\" seviyesinde ise $3.16 maliyetle gerçekleştirilebiliyor. Bu fiyat‑performans dengesi, Hydrogen'ı Claude Sonnet 5.5 ve GPT‑6.1 Sol gibi rakip modellerin çok altında tutuyor ve geliştiriciler için cazip bir seçenek sunuyor.",
+  "onemli_maddeler": [
+    "Gemini 4 Hydrogen, bir milyon tokenlık giriş‑çıkış penceresi ve dört düşünme seviyesiyle Argon'u birçok benchmarkta geride bıraktı.",
+    "Terminal‑Bench 4.1'de %57.0 skor elde ederek Flash modeline göre 2.5 kat daha hızlı görev tamamlama sağladı.",
+    "Maliyet‑performans açısından $3.16'lık bir görev maliyetiyle Claude Sonnet 5.5 ve GPT‑6.1 Sol'dan yaklaşık üçte bir maliyetle daha yüksek zeka puanı sunuyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Hydrogen, hem performans hem de maliyet açısından mevcut büyük modelleri geride bırakarak geliştiricilerin ve günlük kullanıcıların AI kullanımını genişletiyor; bu da AI pazarında rekabeti ve inovasyonu hızlandırıyor.",
+  "etiketler": [
+    "Gemini",
+    "Hydrogen",
+    "AI coding",
+    "benchmark",
+    "Google"
+  ],
+  "anilan_modeller": [
+    "Gemini 4 Hydrogen",
+    "Gemini 4 Argon",
+    "Gemini 4 Carbon",
+    "Gemini 3.8 Flash",
+    "Claude Sonnet 5.5",
+    "GPT-6.1 Sol",
+    "Claude Opus 5.5"
+  ],
+  "yorum_tr": "Hydrogen, yüksek performanslı ama düşük maliyetli bir seçenek sunarak geliştiricilerin üretkenliğini artırırken, Google'ın Frontier model serisinin günlük kullanım senaryolarına yönelik stratejisini yeniden şekillendiriyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Gemini 4 Hydrogen",
+      "benchmark": "Artificial Analysis Intelligence Index v5.0 (high)",
+      "skor": 51,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "high",
+      "kaynak_metinden_alinti": "Hydrogen beats the larger Argon on the Artificial Analysis Intelligence Index at the default \"high\" thinking level (51 vs. 50)"
+    },
+    {
+      "model": "Gemini 4 Hydrogen",
+      "benchmark": "Artificial Analysis Intelligence Index v5.0 (xhigh)",
+      "skor": 54,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "xhigh",
+      "kaynak_metinden_alinti": "At \"xhigh,\" Gemini 4 Hydrogen scores 54 on the Artificial Analysis Intelligence Index"
+    },
+    {
+      "model": "Gemini 4 Hydrogen",
+      "benchmark": "Terminal-Bench 4.1 (cheating-adjusted)",
+      "skor": 57,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "cheating-adjusted",
+      "kaynak_metinden_alinti": "On Terminal-Bench 4.1, the score jumps from 18.2 percent (Flash) to 57 percent (Hydrogen)"
+    },
+    {
+      "model": "Gemini 4 Hydrogen",
+      "benchmark": "Vals Tax Agent Bench",
+      "skor": 52.3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Google says it takes first place on the Vals Tax Agent Bench with 52.3 percent"
+    },
+    {
+      "model": "Gemini 4 Hydrogen",
+      "benchmark": "Vals Legal Research Bench",
+      "skor": 55.8,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "ties for first on the Vals Legal Research Bench with 55.8 percent"
+    },
+    {
+      "model": "Gemini 4 Hydrogen",
+      "benchmark": "SWE-sweep",
+      "skor": 13.5,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "SWE-sweep 13.5% (Hydrogen) 9.6% (Carbon) 4.3% (Argon)"
+    },
+    {
+      "model": "Gemini 4 Hydrogen",
+      "benchmark": "FrontierSWE 2",
+      "skor": 61.2,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "FrontierSWE 2 — 61.2% (Hydrogen) 55.0% (Carbon)"
+    },
+    {
+      "model": "Gemini 4 Hydrogen",
+      "benchmark": "Agents' Last Exam v1.1",
+      "skor": 71.6,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Agents’ Last Exam v1.1 71.6% (Hydrogen) 77.4% (Carbon) 69.0% (Argon)"
+    },
+    {
+      "model": "Gemini 4 Hydrogen",
+      "benchmark": "AutomationBench",
+      "skor": 76.1,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "AutomationBench 76.1% (Hydrogen)"
+    },
+    {
+      "model": "Gemini 4 Hydrogen",
+      "benchmark": "OSWorld-2.1 (offline subset) – Computer Use",
+      "skor": 77.6,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Computer Use OSWorld-2.1 (offline subset) 77.6% (Hydrogen) 81.5% (Carbon) 74.7% (Argon)"
+    },
+    {
+      "model": "Gemini 4 Hydrogen",
+      "benchmark": "Multimodal Knowledge Agent Benchmark",
+      "skor": 53.4,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Hydrogen scores 53.4 percent on Google's new Multimodal Knowledge Agent Benchmark"
+    },
+    {
+      "model": "Gemini 4 Hydrogen",
+      "benchmark": "Chartography",
+      "skor": 66.6,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Chartography 66.6% (Hydrogen) 72.5% (Carbon) 71.6% (Argon)"
+    },
+    {
+      "model": "Gemini 4 Hydrogen",
+      "benchmark": "Terminal-Bench-Science 0.1",
+      "skor": 51.4,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "0.1",
+      "kaynak_metinden_alinti": "Terminal-Bench-Science 0.1 51.4% (Hydrogen)"
+    },
+    {
+      "model": "Gemini 4 Hydrogen",
+      "benchmark": "RiemannBench",
+      "skor": 80,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "RiemannBench — 80.0% (Hydrogen) 76.0% (Argon)"
+    },
+    {
+      "model": "Gemini 4 Hydrogen",
+      "benchmark": "Reasoning HLE-Diamond",
+      "skor": 58.8,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Reasoning HLE-Diamond 58.8% (Hydrogen)"
+    },
+    {
+      "model": "Gemini 4 Hydrogen",
+      "benchmark": "SEC-bench Pro",
+      "skor": 88.2,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "SEC-bench Pro 88.2% (Hydrogen) 83.4% (Carbon)"
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/10/gemini_logo-2.png",
+  "url": "https://the-decoder.com/googles-gemini-4-hydrogen-outscores-the-bigger-argon-just-four-weeks-after-its-launch/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-12T19:58:43.000Z",
+  "slug": "google-s-gemini-4-hydrogen-outscores-the-bigger-argon-just-f"
+}

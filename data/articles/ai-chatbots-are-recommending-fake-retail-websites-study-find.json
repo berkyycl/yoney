@@ -1,0 +1,62 @@
+{
+  "baslik_tr": "AI sohbet botları sahte perakende sitelerini öneriyor, çalışma bulguları",
+  "ozet_tr": "Podqi tarafından yürütülen bir test, Google Gemini, OpenAI ChatGPT ve Perplexity gibi popüler sohbet botlarının alışveriş sorularına yanıt verirken sahte ya da riskli web sitelerini önerdiğini ortaya koydu. Üç model arasında riskli URL gösterim oranı %4 ile Gemini'den %15'e kadar Perplexity'ye kadar değişiyor.",
+  "detayli_icerik_tr": "IP koruma firması Podqi, Eylül ayındaki iki test döneminde 151 farklı marka (Lululemon, Birkenstock, Stüssy, Le Creuset vb.) hakkında alışveriş odaklı sorular sorarak Gemini, ChatGPT ve Perplexity'yi değerlendirdi. Toplam 6.795 yanıt üzerinden, \"riskli\" olarak tanımlanan sahte perakende siteleri, eski domainlerin yeniden kaydedilmesi ya da tamamen aktif olmayan siteler gibi durumlar incelendi.\n\nSonuçlar, Gemini'nin en düşük riskli URL oranına (%4) sahip olduğunu gösterirken, Perplexity %15 ile en yüksek oranı kaydetti. ChatGPT ise %8 oranla ortada yer aldı ve özellikle riskli bir siteyi gösterdiğinde %24 oranla kullanıcıyı uyarma eğilimi gösterdi. Büyük markalarla ilgili sorularda riskli siteler yarı yarıya daha az görülürken, küçük ve bölgesel marka sorguları daha yüksek oranda sahte sitelerle sonuçlandı.\n\nAraştırma, belirli prompt tiplerinin (örneğin bölgesel web siteleri soruları) riskli sonuçları tetiklediğini de ortaya koydu. Perplexity, bir örnek konuşmada Stüssy'nin resmi sitesi olarak yanlış bir sayfayı önerdi ve bunu \"güvenilir\" olarak nitelendirdi. Şirket temsilcileri, Gemini'nin en iyi performansı gösterdiğini ve modellerin sürekli iyileştirildiğini vurgularken, OpenAI ve Google da kullanıcıların kaynakları doğrulamasının önemine dikkat çekti.\n\nBu bulgular, özellikle yaklaşan tatil alışveriş sezonunda tüketicilerin AI destekli alışverişe yönelmesiyle birlikte sahte sitelerden korunma ihtiyacının artacağını gösteriyor. Markalar ve perakendeciler, AI yanıtlarının güvenilirliğini izlemek ve olası dolandırıcılık risklerini azaltmak için ek önlemler almayı düşünmek zorunda kalabilir.",
+  "onemli_maddeler": [
+    "Gemini, ChatGPT ve Perplexity arasında riskli URL gösterim oranı sırasıyla %4, %8 ve %15 olarak belirlendi.",
+    "ChatGPT, riskli bir siteyi gösterdiğinde %24 oranla kullanıcıyı uyarma yeteneği gösterdi.",
+    "Küçük ve bölgesel marka sorguları, büyük markalara göre iki kat daha fazla sahte site önerisi üretti."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Alışveriş amaçlı AI kullanımının artması, tüketicileri ve markaları sahte sitelerden koruma ihtiyacını ortaya koyarak sektörde güvenlik ve model iyileştirme çabalarını tetikliyor.",
+  "etiketler": [
+    "yapay zeka",
+    "sohbet botu",
+    "e-ticaret",
+    "güvenlik",
+    "benchmark"
+  ],
+  "anilan_modeller": [
+    "Gemini",
+    "ChatGPT",
+    "Perplexity"
+  ],
+  "yorum_tr": "Bu çalışma, AI sohbet botlarının perakende yönlendirmelerinde güvenilirlik sorunlarını gözler önüne seriyor; geliştiriciler daha sıkı doğrulama mekanizmaları eklerken, kullanıcıların da önerilen siteleri kontrol etmesi kritik hâle geliyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Gemini",
+      "benchmark": "Risky URL Rate",
+      "skor": 4,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "cevap sayısı",
+      "kaynak_metinden_alinti": "Google’s Gemini showed risky sites least often of the three, linking to or mentioning a risky site in 4 percent of answers."
+    },
+    {
+      "model": "ChatGPT",
+      "benchmark": "Risky URL Rate",
+      "skor": 8,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "cevap sayısı",
+      "kaynak_metinden_alinti": "ChatGPT fell somewhere in the middle at 8 percent."
+    },
+    {
+      "model": "Perplexity",
+      "benchmark": "Risky URL Rate",
+      "skor": 15,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "cevap sayısı",
+      "kaynak_metinden_alinti": "Perplexity performed the worst, showing risky sites in 15 percent of answers."
+    }
+  ],
+  "gorsel_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/STKS539_AI_AGENTS_SHOPPING_E.jpg?quality=90&strip=all&crop=0,0,100,100",
+  "url": "https://www.theverge.com/ai-artificial-intelligence/1032020/gemini-chatgpt-perplexity-shopping-test-risky-fake-websites-citations",
+  "source": "The Verge AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-12T17:00:00.000Z",
+  "slug": "ai-chatbots-are-recommending-fake-retail-websites-study-find"
+}

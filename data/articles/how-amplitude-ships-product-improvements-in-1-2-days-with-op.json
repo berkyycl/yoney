@@ -1,0 +1,72 @@
+{
+  "baslik_tr": "Amplitude, OpenAI modelleriyle ürün iyileştirmelerini 1–2 günde gönderiyor",
+  "ozet_tr": "Amplitude, Wave adlı proaktif ürün ajanını OpenAI'nin GPT‑6.1 Sol, GPT‑6 Luna ve GPT‑Image‑2.5 Flare modelleriyle güçlendirerek, ürün iyileştirmelerini bir aya kıyasla 1‑2 günde hayata geçiriyor. Wave, veri analizi, kod incelemesi ve görsel mockup üretimini otomatikleştirerek, önerilen iyileştirmelerin kodlama ajanlarına (Codex) hızlıca aktarılmasını sağlıyor.",
+  "detayli_icerik_tr": "Amplitude, ürün ekiplerinin gerçek kullanıcı davranışlarını görmesini sağlayan bir analiz platformu olarak, yeni Wave ajanını OpenAI modelleriyle entegre etti. Wave, ürün alanı ve hedef metrikleri alarak Amplitude verileri, oturum tekrarları, müşteri geri bildirimleri ve kod tabanını birleştiriyor; fırsatları tanımlıyor, önceliklendiriyor ve uygulanabilir teknik planlar oluşturuyor. Oluşturulan planlar, Codex gibi kodlama ajanlarına gönderilerek otomatik ya da yarı otomatik bir şekilde hayata geçiriliyor ve sonuçlar izleniyor.\n\nWave'in arka planında üç farklı OpenAI modeli görevlerine göre dağıtılıyor. GPT‑6.1 Sol, derin veri ve kod incelemeleri gibi yüksek mantık gerektiren görevlerde kullanılırken, GPT‑6 Luna daha düşük maliyetli ve sık tekrarlanan kod tarama ve küçük değerlendirme kontrolleri için tercih ediliyor. Görsel mockup üretimi ise GPT‑Image‑2.5 Flare tarafından, oturum tekrarlarından alınan ekran görüntüleriyle gerçekleştiriliyor.\n\nAmplitude, Wave'i kendi ana sayfasında test ederek, öneri kartlarını kişiselleştirdiğinde kart üzerinden gönderilen mesajların %160 artış gösterdiğini raporladı. Ayrıca, Wave'in keşfettiği fırsatlardan %25'i aynı gün, %50'si dört gün içinde ve %75'i bir hafta içinde hayata geçirildi; bu da geleneksel bir ay süren geliştirme döngüsüne kıyasla dramatik bir hızlanma.\n\nModel değerlendirmelerinde, GPT‑6.1 Sol Opportunity Investigator görevinde 5 üzerinden 4.06 puan alarak tüm alternatif modelleri geride bıraktı ve ortalama 54 dakikalık en hızlı inceleme süresine sahip oldu. Data Science Agent değerlendirmesinde ise 100 üzerinden 67.5 puan elde ederken, bir dispatch başına ortalama maliyeti $1.28 olarak daha ucuz bir seçenek sundu. Görsel üretim modeli GPT‑Image‑2.5 Flare ise wireframe kalitesinde 100 üzerinden 80.3 puan alarak rakip modelin %63.9 puanını geride bıraktı.",
+  "onemli_maddeler": [
+    "Wave, ürün iyileştirmelerini bir aya kıyasla 1‑2 günde hayata geçirerek geliştirme süresini %80 azaltıyor.",
+    "GPT‑6.1 Sol, Opportunity Investigator görevinde 4.06/5 puan ve en hızlı 54 dk inceleme süresiyle öne çıktı.",
+    "Kişiselleştirilmiş öneri kartları, Wave sayesinde %160 daha fazla etkileşim sağladı."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "OpenAI modellerinin bir SaaS ürününde entegrasyonu, geliştirme hızını ve kullanıcı etkileşimini önemli ölçüde artırdığı için sektörde dikkat çeken bir gelişmedir.",
+  "etiketler": [
+    "Amplitude",
+    "OpenAI",
+    "GPT-6",
+    "Wave",
+    "Ürün İyileştirme"
+  ],
+  "anilan_modeller": [
+    "GPT-6.1 Sol",
+    "GPT-6 Luna",
+    "GPT-Image-2.5 Flare",
+    "Codex"
+  ],
+  "yorum_tr": "Wave'in OpenAI modelleriyle desteklenmesi, ürün ekiplerine veri odaklı ve hızlı iyileştirme yapma imkanı sunarak rekabet avantajı sağlıyor. Geliştiriciler, yüksek maliyetli mantık modelleriyle kritik görevleri, düşük maliyetli modellerle ise tekrarlayan kontrolleri otomatikleştirerek verimliliği artırabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GPT-6.1 Sol",
+      "benchmark": "Opportunity Investigator overall score",
+      "skor": 4.06,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "GPT‑6.1 Sol scored 4.06 out of 5 overall, compared with 3.62, 3.52, and 2.94 for three alternative models."
+    },
+    {
+      "model": "GPT-6.1 Sol",
+      "benchmark": "Data Science Agent evaluation score",
+      "skor": 67.5,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "GPT‑6.1 Sol scored 67.5 out of 100, compared with 69.3 for another leading model, at a mean model cost of $1.28 versus $2.63 per dispatch."
+    },
+    {
+      "model": "GPT-Image-2.5 Flare",
+      "benchmark": "Wireframe generation quality score",
+      "skor": 80.3,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "OpenAI’s image generation model scored 80.3 out of 100 for solution wireframes, compared with 63.9 for another image generation model."
+    },
+    {
+      "model": "Wave",
+      "benchmark": "Card-driven sends lift",
+      "skor": 160,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Wave helped personalize suggestion cards, driving a 160% lift in card-driven sends."
+    }
+  ],
+  "gorsel_url": "https://images.ctfassets.net/kftzwdyauwt9/7xyAtQVA8C5CZGHW7aQidr/a71aedc6e0ed7395f081f75411af6d03/amplitude-wave-seo.png?w=1600&h=900&fit=fill",
+  "url": "https://openai.com/index/amplitude",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-11-12T20:00:00.000Z",
+  "slug": "how-amplitude-ships-product-improvements-in-1-2-days-with-op"
+}

@@ -1,0 +1,45 @@
+{
+  "baslik_tr": "Mimari Trendler: Tam Dikkatten Yerel Dikkate Geçiş",
+  "ozet_tr": "LLM mimarilerinde tam dikkat (global) kullanımının yerini hibrit ve tamamen yerel dikkat yaklaşımları almaya başladı. 2026'nın ikinci yarısında tam dikkat modelleri tamamen ortadan kalkarken, hibrit modeller %50 oranında hâlâ varlığını sürdürüyor.",
+  "detayli_icerik_tr": "Reddit topluluğu üyelerinden Sebastian Raschka, LLM mimarilerindeki dikkat (attention) trendlerini inceleyerek 2025'te hâlâ çok sayıda tam dikkat (global MHA, GQA, dense MLA, CCA) modeli bulunduğunu, ancak bu modellerin sayısının giderek azaldığını belirtiyor. 2026'nın ilk yarısında \"bazı tam dikkat\" hibrit modellerin oranı artarken, ikinci yarısında tam dikkat kullanan modeller tamamen yok oldu ve mimariler %50 hibrit, %50 tamamen yerel dikkat (sparse, sliding‑window, KDA vb.) şeklinde bir dengeye ulaştı.\n\nTam dikkat tanımı, her katmanda yoğun çoklu başlıklı dikkat (global MHA), GQA, yoğun MLA ve CCA gibi katmanların bulunmasıdır. \"Bazı tam dikkat\" hibrit modeller ise bu katmanları kayar‑pencere, parça‑parça dikkat, Gated DeltaNet, KDA, Mamba‑2, Lightning Attention, konvolüsyon ve seyrek dikkat gibi yöntemlerle birleştirir. \"Tamamen yerel dikkat\" ise hiçbir yoğun global katman içermez; tüm bilgi işleme yerel veya seyrek mekanizmalarla gerçekleşir.\n\nBu dönüşümün temel etkisi, uzun bağlamların daha ucuz ve verimli kullanılabilmesidir. Seyrek dikkat ve benzeri teknikler, bağlamdaki token veya blokları seçerek sadece bu alt küme üzerinde maliyetli dikkat hesaplaması yapar; böylece hem hesaplama süresi hem de bellek tüketimi azalır. Ayrıca Gated DeltaNet gibi yinelemeli katmanlar sabit boyutlu bir durum (state) tutarak bellek ihtiyacını daha da düşürür, ancak tarihçeyi sıkıştırma nedeniyle kesin geri getirme zorluğu ortaya çıkar ve bu yüzden genellikle geleneksel dikkat yöntemleriyle karıştırılır.\n\nAraştırmacılar ve geliştiriciler, bu mimari eğilimleri daha ayrıntılı incelemek için Raschka'nın hazırladığı \"LLM Architecture Gallery\"deki tüm figür ve verileri inceleyebilirler. Bu kaynak, farklı dikkat kombinasyonlarının performans ve kaynak tüketimi üzerindeki etkilerini karşılaştırmalı olarak sunar ve yeni model tasarımları için bir referans noktası oluşturur.",
+  "onemli_maddeler": [
+    "2026'nın ikinci yarısında tam dikkat (global) kullanan modeller tamamen ortadan kalktı.",
+    "Mimari trend %50 hibrit, %50 tamamen yerel dikkat modellerine bölündü.",
+    "Uzun bağlam maliyetleri, seyrek ve hibrit dikkat teknikleri sayesinde önemli ölçüde azaldı.",
+    "Bellek tasarrufu, Gated DeltaNet gibi yinelemeli katmanların sabit‑boyutlu durumları sayesinde sağlandı.",
+    "Tüm veriler ve görseller, Sebastian Raschka'nın LLM Architecture Gallery sitesinde erişilebilir."
+  ],
+  "kategori": "arastirma",
+  "onem": 3,
+  "onem_gerekce": "Trend, LLM mimarilerinde uzun bağlam kullanımını ve maliyet etkinliğini etkileyen önemli bir yön değişikliğini gösteriyor ancak henüz bir ürün ya da model çıkışı olmadığı için sektörel etkisi sınırlı kalıyor.",
+  "etiketler": [
+    "dikkat",
+    "LLM",
+    "mimari",
+    "seyrek dikkat",
+    "uzun bağlam"
+  ],
+  "anilan_modeller": [
+    "Global MHA",
+    "GQA",
+    "dense MLA",
+    "CCA",
+    "sliding-window attention",
+    "chunked attention",
+    "Gated DeltaNet",
+    "KDA",
+    "Mamba-2",
+    "Lightning Attention",
+    "convolutions",
+    "sparse attention"
+  ],
+  "yorum_tr": "Tam dikkat modellerinin tamamen ortadan kalkması, uzun metin ve kod işleme gerektiren uygulamalarda maliyetleri düşürerek geliştiricilere daha ölçeklenebilir çözümler sunacak. Ancak hibrit yaklaşımların karmaşıklığı, model tasarımı ve optimizasyon süreçlerinde yeni zorluklar da yaratabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/bjcpjuye921i1.jpeg?width=640&crop=smart&auto=webp&s=56f1fce69caf51dac98a71d730ebe527f42ca584",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xtvxtp/architecture_trends_from_full_to_local_attention/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-11T22:38:09.000Z",
+  "slug": "architecture-trends-from-full-to-local-attention"
+}

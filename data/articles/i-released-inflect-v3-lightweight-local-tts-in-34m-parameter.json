@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "Inflect v3: 34M parametreli hafif yerel TTS modeli yayınlandı",
+  "ozet_tr": "Inflect v3, yerel olarak çalışabilen üç farklı boyutta (Mini, Micro, Atom) metin‑konuşma modeli sunuyor. Mini sürümü 34.31 M parametreyle altı ses, ses‑etiketleri ve referans‑ses ayarı gibi özellikleri destekliyor. Model Apache 2.0 lisansı altında açık kaynak olarak dağıtılıyor.",
+  "detayli_icerik_tr": "Yerel yapay zeka topluluğu, Owen Song tarafından geliştirilen Inflect v3'ü duyurdu. Model ailesi üç farklı ölçeklendirme sunuyor: 34.31 M parametreli Mini, 11.79 M parametreli Micro ve sadece 157 K parametreli Atom. Mini sürümü, altı farklı ses profili, 48 kHz ses iyileştirmesi ve CPU ile CUDA desteğiyle öne çıkıyor.\n\nInflect Mini V3, referans‑ses ayarı (reference‑voice tuning) özelliği sayesinde bir kayıt üzerinden profil oluşturulmasına ve bu profil üzerinden konuşma üretimine olanak tanıyor. Kullanıcılar, [laugh], [sigh], [gasp] gibi ses‑etiketlerini metne ekleyerek kahkaha, iç çekme gibi ses efektlerini yerleştirebiliyor; ancak bu etiketlerin tekrarı sınırlı varyasyon sağlıyor ve çevredeki kelimelerin telaffuzunu etkilemiyor.\n\nMicro ve Atom sürümleri, daha düşük donanım gereksinimleriyle hafif cihazlarda ve gömülü sistemlerde kullanılmak üzere tasarlandı. Micro, 11.79 M parametreyle temel konuşma kalitesini korurken, Atom sadece 157 K parametreyle çok sınırlı bir çekirdek sunuyor; ön uç ve opsiyonel bileşenler bu sayılara ekleniyor. Tüm modellerin ağırlıkları ve çıkarım kodu Apache 2.0 lisansı altında sunulurken, üçüncü‑taraf bileşenler kendi lisanslarını koruyor.\n\nKod, kurulum talimatları ve örnekler GitHub üzerinden erişilebilir ve HuggingFace Spaces'ta bir deneme ortamı (playground) sağlanmış. Kullanıcılar hatalı çıktılarla karşılaştıklarında metin, ses ve ayarları geliştiriciyle paylaşarak modelin iyileştirilmesine katkıda bulunabilirler.",
+  "onemli_maddeler": [
+    "Inflect v3 üç ölçekli (Mini, Micro, Atom) açık kaynaklı yerel TTS modeli sunuyor.",
+    "Mini sürümü 34.31 M parametre, 6 ses, referans‑ses ayarı ve ses‑etiketleri gibi gelişmiş özellikler içeriyor.",
+    "Model Apache 2.0 lisansı altında dağıtılıyor; CPU ve CUDA desteğiyle geniş donanım yelpazesinde çalışabiliyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Yerel ve açık kaynaklı bir TTS çözümünün yayınlanması, özellikle veri gizliliği ve düşük kaynaklı cihazlarda ses üretimi ihtiyacı olan geliştiriciler ve araştırmacılar için önemli bir adım oluşturuyor.",
+  "etiketler": [
+    "metin-konuşma",
+    "açık-kaynak",
+    "Inflect",
+    "yerel AI",
+    "ses sentezi"
+  ],
+  "anilan_modeller": [
+    "Inflect Mini V3",
+    "Inflect Micro V3",
+    "Inflect Atom V3"
+  ],
+  "yorum_tr": "Inflect v3, düşük parametreli ama fonksiyonel bir TTS sunarak yerel AI ekosistemine çeşitlilik katıyor; geliştiriciler ve son kullanıcılar, internet bağlantısı olmadan da yüksek kaliteli ses üretimi yapabilecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/emJxbmszaW0yMzFpMb6-hNctCFtYF8Gl9qgiWWG6vmdSWxoYGdJFNmcRTCWK.png?width=640&crop=smart&auto=webp&s=4a0a5bb808d8ef9c3f1b7ee60c97cb2e1e1f4f6e",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xtzwxf/i_released_inflect_v3_lightweight_local_tts_in/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-12T01:36:10.000Z",
+  "slug": "i-released-inflect-v3-lightweight-local-tts-in-34m-parameter"
+}

@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "Gemma 4‑31b Modelinde Latent Uzay Keşfi: Tek Üç Nöronla 'Caring' ve 'Contempt' Duygularını Kontrol Etme",
+  "ozet_tr": "Gemma 4‑31b modelinin latent uzayında, kullanıcı davranışını yöneten aynı üç nöronun 'caring' ve 'contempt' ifadelerini kontrol edebildiği ortaya çıktı. Araştırmacılar, bu nöronları manipüle ederek kişiselleştirilmiş yönlendirme tarifleri (steering recipes) oluşturdu ve bu tarifleri GGUF formatına dönüştürerek llama.cpp ile kullanılabilir hâle getirdi.",
+  "detayli_icerik_tr": "Reddit'in LocalLLaMA topluluğu, Gemma 4‑31b modelinin içsel temsillerinde şaşırtıcı bir yapı keşfetti. Yapılan incelemeler, modelin duygu yönlendirmesini (sentiment steering) tek bir üç nöron seti aracılığıyla yönlendirebildiğini gösterdi. Bu nöronlar, hem \"caring\" (şefkat) hem de \"contempt\" (küçümseme) gibi zıt duygusal tonları aynı anda etkileyebiliyor; bu da modelin latent uzayının yüksek derecede yoğun ve birbirine bağlı olduğunu işaret ediyor.\n\nKeşif, nöron aktivasyon haritalarının detaylı görselleştirilmesi ve aktivasyonların istatistiksel analizleriyle desteklendi. Araştırmacılar, bu üç nöronu hedef alarak \"steering recipes\" adı verilen yönlendirme tarifleri geliştirdi. Tarifler, belirli bir duygu tonunu artırmak ya da azaltmak için nöronların aktivasyon değerlerini sistematik olarak ayarlıyor. Bu yöntem, modelin çıktısında istenen duygusal tonu hassas bir şekilde şekillendirmeye olanak tanıyor.\n\nTopluluk, oluşturulan tarifleri GGUF (GGML Unified Format) formatına dönüştürerek llama.cpp çerçevesinde çalıştırılabilir hâle getirdi. GGUF, model ağırlıklarını ve yönlendirme vektörlerini tek bir paket içinde saklayarak düşük bellek tüketimi ve yüksek performans sağlıyor. Bu sayede, yerel cihazlarda (CPU/GPU) Gemma 4‑31b'nin duygu kontrolü daha erişilebilir ve hızlı bir şekilde uygulanabiliyor.\n\nBu bulgu, büyük dil modellerinin içsel temsillerinin daha iyi anlaşılması ve kullanıcı kontrolünün artırılması yönünde önemli bir adım olarak görülüyor. Araştırmacılar, benzer yöntemlerin diğer modellerde de uygulanabileceğini ve model güvenliği, etik kullanım ve özelleştirilmiş asistan geliştirme süreçlerine yeni fırsatlar sunabileceğini vurguluyor.",
+  "onemli_maddeler": [
+    "Gemma 4‑31b modelinde aynı üç nöron, 'caring' ve 'contempt' duygularını aynı anda yönlendirebiliyor.",
+    "Bu nöronlar üzerinden oluşturulan 'steering recipes' GGUF formatına dönüştürülerek llama.cpp ile kullanılabiliyor.",
+    "Latent uzay keşfi, model içsel temsillerinin daha iyi anlaşılması ve kullanıcı kontrolünün artırılması için yeni bir yol sunuyor."
+  ],
+  "kategori": "arastirma",
+  "onem": 3,
+  "onem_gerekce": "Topluluk temelli bir keşif olması ve teknik detaylar sunması ilgi çekici, ancak henüz geniş çaplı bir ürün güncellemesi ya da benchmark sonuçları içermediği için etkisi sınırlı.",
+  "etiketler": [
+    "Gemma",
+    "latent uzay",
+    "steering",
+    "GGUF",
+    "llama.cpp"
+  ],
+  "anilan_modeller": [
+    "Gemma 4‑31b"
+  ],
+  "yorum_tr": "Bu keşif, geliştiricilere model davranışını ince ayar yapma imkanı tanıyarak özelleştirilmiş asistanlar oluşturma sürecini hızlandırabilir; aynı zamanda model güvenliği ve etik yönlendirme konularında yeni tartışmalar başlatabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/hluc9ko7c41i1.png?width=140&height=140&crop=1:1,smart&auto=webp&s=729685b1f0da2f4ae10ee1af23e1c3f71d630d0c",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xu4n7b/gemma431b_latent_space_discovery_caring_and/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-12T05:37:54.000Z",
+  "slug": "gemma4-31b-latent-space-discovery-caring-and-contempt-for-us"
+}

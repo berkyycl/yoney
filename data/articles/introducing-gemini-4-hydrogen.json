@@ -1,0 +1,117 @@
+{
+  "baslik_tr": "Gemini 4 Hydrogen Tanıtıldı: Hızlı ve Verimli Geliştirici Modeli",
+  "ozet_tr": "Google DeepMind, Gemini 4 serisinin yeni üyesi Hydrogen'ı duyurdu. Model, yüksek hız ve düşük maliyetle kodlama ve ajan tabanlı iş akışlarını hedefleyerek geliştiricilere ve işletmelere daha verimli bir yapay zeka deneyimi sunuyor.",
+  "detayli_icerik_tr": "Google DeepMind, Gemini 4 Hydrogen'ı bugün duyurarak, yüksek hız ve verimlilik odaklı bir modelin tüm Google AI Studio, Gemini API, Gemini for Business, Gemini uygulaması ve Google Search gibi platformlarda kullanılabilir olacağını açıkladı. Hydrogen, Carbon ve Argon gibi sınır modelinin derin uzun vadeli akıl yürütme yeteneklerine kıyasla, günlük kodlama, test çalıştırma ve araç entegrasyonu gibi görevlerde daha hızlı yanıtlar üretiyor.\n\nModel, 1 milyon tokenlık bir bağlam penceresinde sabit bir fiyatlandırma sunuyor: giriş tokenları için milyon başına 1,50 $, çıkış tokenları için ise 7,50 $. Bu fiyatlandırma, çoklu‑model iş akışlarında Carbon ve Argon gibi büyük modellerle birlikte kullanılabilecek bir verimlilik katmanı sağlıyor. Orchestrator adlı yeni bir yönlendirici sayesinde aynı oturum içinde modeller dinamik olarak değiştirilebiliyor; bu sayede görev başarı oranları Carbon seviyesine yakın kalırken, token tüketimi %24 azalıp işlem süresi %19 kısalıyor.\n\nHydrogen, Gemini 3.8 Flash'tan geçiş yapan ekipler için hem hız hem de zekâ açısından büyük bir sıçrama vaat ediyor. Yüksek varsayılan ayarında görevleri 2,5 kat daha hızlı tamamlayabiliyor ve Terminal‑Bench 4.1 skorlarını %57'ye çıkararak önceki %18,2'den üç kat üstüne taşıyor. Ayrıca, kod üretiminde sahte iddiaları 5 kat azaltıyor ve araç çağrısı başarısız olduğunda sorunsuz bir şekilde uyum sağlıyor. Multimodal bilgi çalışması, büyük veri setleri ve görsel dosyalar üzerinde de üstün performans gösteriyor.\n\nGüvenlik ve uyumluluk açısından da önemli iyileştirmeler içeriyor. Hydrogen, ajan tabanlı görevlerde aşırı genişleme riskini %81, hizmet dışı kalma riskini %79 azaltıyor ve yanlış yönlendirme eylemlerini 12 kat daha az gerçekleştiriyor. İç denetimlerde %99,9 zincir‑düşünce okunabilirliği sağlanırken, Gray Swan IPI benchmark'ında 2,3 kat daha dayanıklı olduğu kanıtlandı. Tüm bu özellikler, hem geliştiriciler hem de son kullanıcılar için daha güvenilir ve etkili bir yapay zeka deneyimi sunmayı amaçlıyor.",
+  "onemli_maddeler": [
+    "Hydrogen, 1 milyon token bağlam penceresinde sabit fiyatlandırma (giriş $1,50 / çıkış $7,50) sunuyor.",
+    "Orchestrator sayesinde Carbon ve Hydrogen modelleri aynı oturumda dinamik olarak değiştirilebiliyor, %24 daha az token ve %19 daha hızlı sonuç elde ediliyor.",
+    "Terminal‑Bench 4.1 skorları %57'ye yükseltilerek önceki %18,2'den üç kat artış sağlandı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Google DeepMind, Gemini serisinin yeni bir üyesi Hydrogen'ı duyurarak geliştiriciler ve işletmeler için yüksek hız, düşük maliyet ve çoklu‑model entegrasyonu sunuyor; bu, AI‑destekli yazılım geliştirme ve günlük iş akışlarını köklü biçimde dönüştürme potansiyeline sahip.",
+  "etiketler": [
+    "Gemini",
+    "Hydrogen",
+    "AI",
+    "Google",
+    "Developer"
+  ],
+  "anilan_modeller": [
+    "Gemini 4 Hydrogen",
+    "Gemini 4 Carbon",
+    "Gemini 4 Argon",
+    "Gemini 3.8 Flash"
+  ],
+  "yorum_tr": "Hydrogen, geliştiricilerin rutin kodlama ve test görevlerini hızlandırırken, çoklu‑model iş akışlarıyla maliyet etkinliği artırıyor. Bu, hem bireysel kullanıcılar hem de büyük ölçekli işletmeler için yapay zekanın günlük işlerde daha ulaşılabilir olmasını sağlayacak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Gemini 4 Hydrogen",
+      "benchmark": "Artificial Analysis Intelligence Index",
+      "skor": 51,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Hydrogen surpasses Argon on the Artificial Analysis Intelligence Index at its default high thinking level (51 vs. 50, and reaching 54 at its highest xhigh thinking setting)"
+    },
+    {
+      "model": "Gemini 4 Hydrogen",
+      "benchmark": "Terminal-Bench 4.1",
+      "skor": 57,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "more than tripling Terminal-Bench 4.1 scores (57% vs. 18.2%)"
+    },
+    {
+      "model": "Gemini 4 Hydrogen",
+      "benchmark": "HLE-Diamond",
+      "skor": 58.8,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "it leads its class on HLE-Diamond (58.8%)"
+    },
+    {
+      "model": "Gemini 4 Hydrogen",
+      "benchmark": "Vals Tax Agent Bench",
+      "skor": 52.3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "ranks #1 overall on Vals Tax Agent Bench (52.3%)"
+    },
+    {
+      "model": "Gemini 4 Hydrogen",
+      "benchmark": "Vals Legal Research Bench",
+      "skor": 55.8,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "ties for #1 on the Vals Legal Research Bench (55.8%)"
+    },
+    {
+      "model": "Gemini 4 Hydrogen",
+      "benchmark": "Multimodal Knowledge Agent (MKA)",
+      "skor": 53.4,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "outperforms other models on the new Multimodal Knowledge Agent (MKA) benchmark (53.4%)"
+    },
+    {
+      "model": "Gemini 4 Hydrogen",
+      "benchmark": "Agents’ Last Exam v1.1",
+      "skor": 71.6,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "leads its class on Agents’ Last Exam v1.1 (71.6%)"
+    },
+    {
+      "model": "Gemini 4 Hydrogen",
+      "benchmark": "HealthBench Pro",
+      "skor": 0.4,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "keeping false refusals on HealthBench Pro under 0.4%"
+    },
+    {
+      "model": "Gemini 4 Hydrogen",
+      "benchmark": "Internal Agent Honesty Evaluation",
+      "skor": 96.7,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "achieves a 96.7% honesty rate on our internal agent honesty evaluation"
+    }
+  ],
+  "gorsel_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-4-hydrogen__key-art__lockup__16-9.width-1300.jpg",
+  "url": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/",
+  "source": "Google DeepMind",
+  "sourceTier": "resmi",
+  "date": "2026-11-12T18:00:50.000Z",
+  "slug": "introducing-gemini-4-hydrogen"
+}

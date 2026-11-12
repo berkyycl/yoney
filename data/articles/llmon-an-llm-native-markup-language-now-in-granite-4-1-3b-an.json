@@ -1,0 +1,52 @@
+{
+  "baslik_tr": "LLMON: LLM‑Yerel İşaretleme Dili, Granite 4.1 3B ve 8B Modellerinde",
+  "ozet_tr": "IBM, Granite 4.1 tabanlı iki yeni ön izleme modeli (3B ve 8B) ile LLM‑native bir işaretleme dili olan LLMON'u tanıttı. LLMON, talimat‑veri ayrımını açıkça işaretleyerek prompt enjeksiyon saldırılarına karşı dayanıklılığı büyük ölçüde artırıyor ve aynı zamanda modelin genel yeteneklerini koruyor.",
+  "detayli_icerik_tr": "LLM'ler, bağlam içinde sistem istemi, geçmiş diyalog, araç yanıtları ve veri gereksinimleri gibi birçok bileşeni barındırır; bu bileşenler genellikle JSON gibi modeller için tasarlanmamış formatlarda kodlanır ve modelin kırılganlığına yol açar. IBM, bu sorunu çözmek amacıyla LLMON (LLM Object Notation) adlı, özel tokenlarla çevrelenmiş XML‑benzeri bir işaretleme dili geliştirdi. LLMON, her bileşeni anlamlı etiketlerle işaretleyerek veri şemalarını, talimatları ve gereksinimleri açıkça tanımlar; benzersiz kimlikler sayesinde talimatlar belirli veri bloklarına bağlanabilir.\n\nBu yeni işaretleme diliyle eğitilen iki deneysel model, granite-4.1-3b-LLMON-preview ve granite-4.1-8b-LLMON-preview, Granite 4.1 Instruct modellerinin performansını korurken, OPI, ASB ve StruQ gibi benchmark'larda prompt enjeksiyon saldırı başarı oranlarını neredeyse sıfıra indiriyor. Özellikle OPI testinde, LLMON modelleri en iyi sınır modeline göre %47, açık kaynak modellerine göre ise %95 daha az saldırı başarısı gösterdi.\n\nLLMON'un bir diğer avantajı, mevcut JSON tabanlı veri akışlarını kayıpsız bir şekilde LLMON formatına dönüştüren bir araç seti sunmasıdır. Geliştiriciler, kendi etiket taksonomilerini tanımlayarak ve LoRA adaptörleriyle ince ayar yaparak alan‑özgü yapıları modelde kullanabilir; örnek olarak ScienceWorld senaryosu ve araç‑çağırma ajanları gösterilmiştir. LLMON, chat şablonlarını tamamen değiştirmeden, bunları zenginleştirerek talimatların ve verinin model tarafından doğru şekilde anlaşılmasını sağlar.\n\nIBM, bu modellerin hâlâ deneysel aşamada olduğunu ve üretim ortamları için önerilmediğini belirtiyor. Ancak geliştiricilerin Mellea platformu üzerinden LLMON desteğini deneyimleyebileceği, GitHub'da bir repo ve çeşitli örnek notebook'ların bulunduğu bir ekosistem sunulmuş. Bu adım, LLM'lerin güvenliğini artırma ve yapılandırılmış veri işleme konularında yeni bir paradigma oluşturma potansiyeli taşıyor.",
+  "onemli_maddeler": [
+    "LLMON, talimat‑veri ayrımını açıkça işaretleyerek prompt enjeksiyon saldırılarını %95'e kadar azaltıyor.",
+    "Granite 4.1 tabanlı 3B ve 8B modelleri, LLMON ile eğitilerek genel performanslarını koruyor.",
+    "JSON‑LLMON dönüştürücüleri ve örnek notebook'lar sayesinde mevcut veri akışları kayıpsız entegrasyon sağlanıyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Granite 4.1 serisine LLM‑native işaretleme dili eklenmesi, güvenlik açıklarını büyük ölçüde azaltırken performansı koruması nedeniyle sektörde önemli bir gelişme olarak değerlendiriliyor.",
+  "etiketler": [
+    "LLMON",
+    "Granite",
+    "prompt injection",
+    "AI safety",
+    "LLM markup"
+  ],
+  "anilan_modeller": [
+    "granite-4.1-3b-LLMON-preview",
+    "granite-4.1-8b-LLMON-preview"
+  ],
+  "yorum_tr": "LLMON, özellikle küçük ölçekli modellerde güvenlik zafiyetlerini azaltarak geliştiricilere daha güvenilir bir yapı sunuyor; aynı zamanda mevcut JSON tabanlı iş akışlarını bozmadan entegrasyon imkanı vermesi, benimsenmesini hızlandırabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "granite-4.1-3b-LLMON-preview",
+      "benchmark": "OPI (robustness improvement)",
+      "skor": 47,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "LLMON practically eliminates the problem on this benchmark, avoiding 47% more attacks relative to the best frontier model that we tested, and 95% more than the best open-source model."
+    },
+    {
+      "model": "granite-4.1-8b-LLMON-preview",
+      "benchmark": "OPI (robustness improvement)",
+      "skor": 95,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "LLMON practically eliminates the problem on this benchmark, avoiding 47% more attacks relative to the best frontier model that we tested, and 95% more than the best open-source model."
+    }
+  ],
+  "gorsel_url": "https://cdn-uploads.huggingface.co/production/uploads/6484ca4d5ff9a3d2ee52a83b/6KFZDHIJkxpICiErHLqAw.gif",
+  "url": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-11-12T19:07:35.000Z",
+  "slug": "llmon-an-llm-native-markup-language-now-in-granite-4-1-3b-an"
+}

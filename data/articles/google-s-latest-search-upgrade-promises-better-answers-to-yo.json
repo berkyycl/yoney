@@ -1,0 +1,46 @@
+{
+  "baslik_tr": "Google Search, Gemini 4 Hydrogen modeliyle daha karmaşık sorulara daha iyi yanıtlar sunuyor",
+  "ozet_tr": "Google, yeni Gemini 4 Hydrogen modelini Search'e entegre ederek çok parçalı, yüksek özgüllükteki ve hatalı yazılmış sorulara daha hızlı ve doğru yanıtlar vermeyi hedefliyor. Hydrogen, önceki hızlı modeli Gemini 3.8 Flash'tan 2,5 kat daha hızlı çalışıyor ve bazı durumlarda daha güçlü Gemini 4 Argon'u geride bırakıyor.",
+  "detayli_icerik_tr": "Google, arama deneyimini geliştirmek amacıyla Gemini 4 Hydrogen adlı yeni bir model duyurdu. Hydrogen, çok adımlı görevleri kendi başına yürütebilen bir \"agentic\" çalışma biçimine odaklanıyor ve özellikle karmaşık, çok bölümlü sorular, çok spesifik istekler ve hatalı yazılmış ifadelerle başa çıkmak için tasarlandı. Şirket, bu modelin \"Search'e en büyük model iyileştirmesi\" olduğunu belirtiyor.\n\nGemini 4 Carbon ve Gemini 4 Argon gibi daha derin akıl yürütme yeteneklerine sahip sınır modellerinin aksine, Hydrogen daha düşük gecikme süresi ve maliyetle çalışıyor. Google, Hydrogen'ın Gemini 3.8 Flash'tan 2,5 kat daha hızlı olduğunu ve aynı zamanda Artificial Analysis Intelligence Index adlı geniş bir zekâ benchmark'ında Argon'u geçerek yüksek düşünme seviyesinde (default) üstün performans sergilediğini iddia ediyor.\n\nSearch'te Hydrogen'ın getirdiği yenilikler arasında kullanıcı niyetinin daha iyi anlaşılması, daha faydalı bağlantı ve görsel yanıtların sunulması, ve çok dilli destekte iyileştirmeler bulunuyor. Model, sorunun her bir parçasını daha hassas bir şekilde ele alarak, hatalı yazımları da doğru bir şekilde yorumlayabiliyor. Ayrıca, sorguyu alt‑sorgulara bölerek \"fan‑out\" tekniğini geliştiriyor; bu sayede kullanıcılar, ana sorgularına bağlı olarak kaçırılabilecek ilgili siteleri keşfedebiliyor.\n\nHydrogen, AI Mode’da görsel yanıtlar, karşılaştırma tabloları ve yapılandırılmış cevaplar gibi öğeleri artırıyor. Dört düşünme seviyesi (düşük, orta, yüksek ve yeni \"xhigh\") sunan model, çok adımlı araştırma, veri analizi ve büyük kod tabanı gezinmesi gibi görevlerde daha az çıktı tokenı ile daha hızlı sonuç veriyor. Agent Arena benchmark'ında beşinci sırada yer alması, modelin çok‑adımlı görevlerdeki rekabet gücünü gösteriyor. Hydrogen, Google AI Studio, Gemini API, Gemini App ve ücretli AI Pro & Ultra aboneliklerinde de kullanılabilecek.",
+  "onemli_maddeler": [
+    "Gemini 4 Hydrogen, Gemini 3.8 Flash'tan 2,5 kat daha hızlı çalışıyor.",
+    "Hydrogen, Artificial Analysis Intelligence Index benchmark'ında Gemini 4 Argon'u geride bıraktı.",
+    "Search'te daha iyi niyet algısı, görsel yanıtlar ve çok dilli destek sağlıyor.",
+    "Agent Arena benchmark'ında 5. sırada yer alarak çok‑adımlı görevlerde rekabetçi performans gösterdi."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Google Search'ün temel işlevini iyileştiren yeni bir modelin lansmanı, arama motoru pazarında rekabeti artırarak hem geliştiricileri hem de son kullanıcıları doğrudan etkileyen büyük bir sektörel değişim yaratıyor.",
+  "etiketler": [
+    "Google Search",
+    "Gemini",
+    "AI",
+    "Hydrogen",
+    "Search Upgrade"
+  ],
+  "anilan_modeller": [
+    "Gemini 4 Hydrogen",
+    "Gemini 4 Carbon",
+    "Gemini 4 Argon",
+    "Gemini 3.8 Flash"
+  ],
+  "yorum_tr": "Hydrogen'ın hızlı ve maliyet‑etkin yapısı, arama sonuçlarının kalitesini artırırken aynı zamanda geliştiricilere daha esnek bir model seçeneği sunuyor. Bu, Google'ın AI‑destekli arama pazarındaki liderliğini pekiştirebilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Gemini 4 Hydrogen",
+      "benchmark": "Agent Arena",
+      "skor": 5,
+      "birim": "rank",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "On multi-step tasks like deep research, data analysis, and broad codebase navigation, Hydrogen ranks No. 5 on Agent Arena’s benchmarks"
+    }
+  ],
+  "gorsel_url": "https://techcrunch.com/wp-content/uploads/2026/11/hydrogen-at-2.01.42-PM.jpg?resize=1200,589",
+  "url": "https://techcrunch.com/2026/11/12/googles-latest-search-upgrade-promises-better-answers-to-your-most-complicated-questions/",
+  "source": "TechCrunch AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-12T19:27:45.000Z",
+  "slug": "google-s-latest-search-upgrade-promises-better-answers-to-yo"
+}

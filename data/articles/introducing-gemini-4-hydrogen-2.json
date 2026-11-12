@@ -1,0 +1,99 @@
+{
+  "baslik_tr": "Google Gemini 4 Hydrogen: Hızlı ve Verimli Yeni Model Tüm Kullanıcılara Açıldı",
+  "ozet_tr": "Google, Gemini 4 serisine yeni bir üye ekleyerek Gemini 4 Hydrogen'ı duyurdu. Model, yüksek hız ve düşük maliyetle kodlama, çok adımlı görevler ve multimodal bilgi işleme gibi günlük iş akışlarını hedefliyor. Hydrogen, hem geliştiriciler hem de son kullanıcılar için geniş bir erişim sunuyor.",
+  "detayli_icerik_tr": "Google, Gemini 4 serisinin en yeni üyesi Gemini 4 Hydrogen'ı tanıttı. Carbon ve Argon gibi derin düşünme yeteneklerine sahip sınır modellerinin aksine Hydrogen, hızlı yürütme ve düşük token maliyetiyle günlük kodlama ve ajan tabanlı iş akışları için tasarlandı. Model, 1 milyon tokenlık giriş ve çıkış penceresinde sabit $1,50 giriş ve $7,50 çıkış fiyatıyla sunuluyor.\n\nHydrogen, çoklu model iş akışlarını otomatikleştiren Orchestrator özelliğiyle birlikte çalışıyor. Orchestrator, aynı oturum içinde Carbon ve Hydrogen gibi modelleri dinamik olarak değiştirerek görev başarı oranlarını Carbon seviyesine yaklaştırırken, %24 daha az kota tüketimi ve %19 daha hızlı tamamlama sağlıyor. Bu yapı, büyük kod tabanlarında paralel çalışan ajanlar sayesinde projelerin daha çabuk ve maliyet etkin bir şekilde teslim edilmesini mümkün kılıyor.\n\nPerformans açısından Hydrogen, Gemini 3.8 Flash'tan geçiş yapan ekipler için belirgin bir sıçrama vaat ediyor. Model, yüksek varsayılan ayarında görevleri 2,5 kat daha hızlı bitirirken, Terminal-Bench 4.1 testinde %57 skor elde ederek %18,2'lik önceki skoru üç katına çıkardı. Ayrıca yapay analiz zekâ indeksi (Artificial Analysis Intelligence Index) üzerinde varsayılan yüksek düşünme seviyesinde 51 puan alarak Argon'u 50 puanla geride bıraktı ve xhigh seviyesinde 54 puana ulaştı.\n\nHydrogen, kodlama, veri analizi, multimodal rapor üretimi ve web geliştirme gibi çeşitli senaryolarda öne çıkıyor. Agent Arena'da #5, HLE‑Diamond'da %58,8, Vals Tax Agent Bench'te %52,3 ve Vals Legal Research Bench'te %55,8 gibi sınıf lideri puanlar topladı. Multimodal Knowledge Agent benchmark'inde %53,4, Agents’ Last Exam v1.1'de ise %71,6 başarı gösterdi. Güvenlik ve uyumluluk açısından da model, görev atlamalarını %81, hizmet dışı kalma oranını %79 azalttı ve iç değerlendirmelerde %96,7 dürüstlük oranı yakaladı.",
+  "onemli_maddeler": [
+    "Hydrogen, 1 milyon tokenlık konteks penceresinde sabit fiyatlandırma ile yüksek verimlilik sunuyor.",
+    "Orchestrator sayesinde Carbon ve Hydrogen modelleri aynı oturumda dinamik olarak değiştirilebiliyor, bu da %24 daha az token tüketimi ve %19 daha hızlı sonuç anlamına geliyor.",
+    "Terminal‑Bench 4.1, HLE‑Diamond, Vals Tax Agent Bench ve Agents’ Last Exam gibi benchmark'lerde sınıf lideri puanlar elde edildi."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Google'ın Gemini 4 serisine eklediği Hydrogen, hem geliştiriciler hem de son kullanıcılar için yüksek performanslı, düşük maliyetli bir AI sunarak sektörde rekabeti yeniden şekillendirecek ve çoklu model iş akışlarını standartlaştıracak.",
+  "etiketler": [
+    "Google",
+    "Gemini",
+    "AI",
+    "Hydrogen",
+    "Model"
+  ],
+  "anilan_modeller": [
+    "Gemini 4 Hydrogen",
+    "Gemini 4 Carbon",
+    "Gemini 4 Argon",
+    "Gemini 3.8 Flash"
+  ],
+  "yorum_tr": "Hydrogen, yüksek hız ve düşük maliyet dengesiyle geliştiricilerin günlük iş akışlarını hızlandırırken, işletmelerin çoklu model stratejilerini daha verimli bir şekilde uygulamasına olanak tanıyacak. Güvenlik iyileştirmeleri de geniş kullanıcı tabanında güvenilir bir deneyim sağlayacak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Gemini 4 Hydrogen",
+      "benchmark": "Artificial Analysis Intelligence Index",
+      "skor": 51,
+      "birim": "point",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Hydrogen surpasses Argon on the Artificial Analysis Intelligence Index at its default high thinking level (51 vs. 50, and reaching 54 at its highest xhigh thinking setting)"
+    },
+    {
+      "model": "Gemini 4 Hydrogen",
+      "benchmark": "Terminal-Bench 4.1",
+      "skor": 57,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Hydrogen ... more than tripling Terminal-Bench 4.1 scores (57% vs. 18.2%)"
+    },
+    {
+      "model": "Gemini 4 Hydrogen",
+      "benchmark": "HLE-Diamond",
+      "skor": 58.8,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "For deep domain reasoning and analysis, it leads its class on HLE-Diamond (58.8%)"
+    },
+    {
+      "model": "Gemini 4 Hydrogen",
+      "benchmark": "Vals Tax Agent Bench",
+      "skor": 52.3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "ranks #1 overall on Vals Tax Agent Bench (52.3%)"
+    },
+    {
+      "model": "Gemini 4 Hydrogen",
+      "benchmark": "Vals Legal Research Bench",
+      "skor": 55.8,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "ties for #1 on the Vals Legal Research Bench (55.8%)"
+    },
+    {
+      "model": "Gemini 4 Hydrogen",
+      "benchmark": "Multimodal Knowledge Agent",
+      "skor": 53.4,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "It outperforms other models on the new Multimodal Knowledge Agent (MKA) benchmark (53.4%)"
+    },
+    {
+      "model": "Gemini 4 Hydrogen",
+      "benchmark": "Agents’ Last Exam v1.1",
+      "skor": 71.6,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "and on Agents’ Last Exam v1.1 (71.6%) for end-to-end professional workflows"
+    }
+  ],
+  "gorsel_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-4-hydrogen__key-art__lockup__16-9.width-1300.jpg",
+  "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+  "source": "Google Gemini",
+  "sourceTier": "resmi",
+  "date": "2026-11-12T18:00:00.000Z",
+  "slug": "introducing-gemini-4-hydrogen-2"
+}
