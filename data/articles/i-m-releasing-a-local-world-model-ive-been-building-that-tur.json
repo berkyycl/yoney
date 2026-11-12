@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "Local World Model: Görüntüleri Gerçek Zamanlı Etkileşimli Videoya Dönüştüren Yeni Model",
+  "ozet_tr": "Bir geliştirici, Reddit ve HuggingFace üzerinden, herhangi bir görüntüyü gerçek zamanlı kontrol edilebilen videoya dönüştüren bir yerel dünya modeli (World Model) yayınladı. Model, RTX 3060 ve üzeri GPU'larda çalışıyor ve transformer tabanlı öğrenilmiş özetlemeler kullanıyor.",
+  "detayli_icerik_tr": "Geliştirici lucidml_lover, LocalLLaMA topluluğunda birkaç ay aktif olduktan sonra, \"gta\" adlı bir HuggingFace deposunda barındırdığı yeni dünya modelini kamuoyuna sundu. Model, tek bir görüntüyü alıp, kullanıcıların anlık olarak yönlendirebileceği bir video akışına dönüştürerek, etkileşimli bir sanal ortam yaratıyor.\n\nModelin mimarisi, öğrenilmiş özetlemeler üzerinden çalışan bir transformer yapısına dayanıyor ve geliştiricinin \"summaryformer\" adlı teknik raporunda detaylandırılmış. Şu anki sürüm, tutarlılık ve kalite açısından sınırlamalara sahip olsa da, geliştirici gelecekteki eğitimlerle bu sorunları gidermeyi hedefliyor.\n\nKullanıcılar, modelin demo sürümüne VAST AI üzerinden erişebiliyor; 3070, 3080, 4080 ve bazı 50 serisi kartlar destekleniyor. Ancak 50 serisi kartlar, fps sınırlaması nedeniyle tam potansiyelini gösteremiyor. Model, RTX 3060 ve 4060 gibi orta seviye GPU'larda da çalışabiliyor, bu da geniş bir donanım yelpazesinde deneme imkanı sağlıyor.\n\nBu ilk halka açık sürüm, geliştiricinin toplulukla etkileşime geçerek geri bildirim toplamasına ve modelin ilerleyen versiyonlarını iyileştirmesine olanak tanıyor. Modelin açık kaynak kodu ve demo sitesi, yapay zeka araştırmacıları ve yaratıcı geliştiriciler için yeni bir deneysel platform sunuyor.",
+  "onemli_maddeler": [
+    "Model, tek bir görüntüyü gerçek zamanlı kontrol edilebilen videoya dönüştürebiliyor.",
+    "RTX 3060 ve üzeri GPU'larda çalışarak orta seviye donanımlarda erişilebilirlik sağlıyor.",
+    "Transformer tabanlı mimari ve öğrenilmiş özetlemeler kullanıyor, teknik rapor \"summaryformer\" ile detaylandırılmış."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 3,
+  "onem_gerekce": "Model, topluluk içinde ilk kez yayınlanan bir dünya modeli olup, gerçek zamanlı etkileşimli video üretimi sunması ve RTX 3060 gibi orta seviye GPU'larda çalışabilmesiyle dikkat çekiyor; ancak henüz geniş çaplı değerlendirme ve benchmark sonuçları bulunmadığı için sektörel etkisi sınırlı.",
+  "etiketler": [
+    "world model",
+    "transformer",
+    "interactive video",
+    "huggingface",
+    "GPU"
+  ],
+  "anilan_modeller": [
+    "gta"
+  ],
+  "yorum_tr": "Bu model, yaratıcı uygulamalar ve araştırma prototipleri için yeni bir araç sunuyor; ancak performans ve tutarlılık sorunları hâlâ çözülmesi gereken alanlar. Geniş kullanıcı tabanının ilgisi, gelecekteki iyileştirmeler ve olası benchmark sonuçlarıyla modelin etkisini artırabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/bTdzbmpidzN3MDFpMZ5un8Va9DN4s6XoVSFdCpja6HydJjaQal3CtJzwcqYl.png?width=640&crop=smart&auto=webp&s=9b2cafb1f7aa1e37f96b1f50dcf1b92d08d62bbe",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xtpc2v/im_releasing_a_local_world_model_ive_been/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-11T18:20:57.000Z",
+  "slug": "i-m-releasing-a-local-world-model-ive-been-building-that-tur"
+}

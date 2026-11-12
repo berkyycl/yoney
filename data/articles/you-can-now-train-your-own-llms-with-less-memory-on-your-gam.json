@@ -1,0 +1,53 @@
+{
+  "baslik_tr": "Ternary Optimizasyonla 27B LLM'i 24 GB GPU'da Eğitebilirsiniz",
+  "ozet_tr": "Araştırmacı Oğuz Elderli, ağırlık başına 16 bayt yerine 1 bayt veya daha az bellek kullanan yeni bir ternary optimizasyon yöntemi geliştirdi. Bu sayede 27 milyar parametreli bir modeli tek bir 24 GB RTX 3090'da eğitmek mümkün hale geliyor. Açık kaynak kodlu repolar ve ilk benchmark sonuçları da paylaşıldı.",
+  "detayli_icerik_tr": "Oğuz Elderli, geleneksel AdamW optimizasyonunun her ağırlık için yaklaşık 16 bayt VRAM gerektirdiğini ve bu durumun büyük ölçekli modellerin tüketici sınıfı GPU'larda eğitilmesini engellediğini belirtti. BitNet çalışmasından esinlenerek ternary (üç değerli) ağlar üzerine odaklanan yeni bir optimizasyon algoritması geliştirdi; bu algoritma ağırlık başına sadece 1 bayt veya daha az bellek tüketiyor.\n\nBu bellek tasarrufu, 27 B parametreli bir modeli tek bir 24 GB RTX 3090'da ve 23 B parametreli bir modeli 16 GB VRAM'li bir GPU'da eğitebilme imkanı sağladı. Eğitim sırasında kullanılan model, yaklaşık 1.6 bit/weight (≈6 GB) boyutunda ve geleneksel 16‑bit temsile göre 10 kat, Q8 temsile göre 5 kat daha küçük. Elderli, aynı zamanda Qwen‑3.8 27 B modelini ternary formatına dönüştürerek 8 GB'lık bir GGUF dosyası oluşturdu.\n\nİlk benchmark sonuçları da paylaşıldı: ternary‑optimizasyonlu Qwen‑3.8 27 B modeli GSM8K testinde %89.5 başarı (tam hassasiyetle eşdeğer) ve HumanEval testinde 0.84 puan (tam hassasiyetin 0.93'üne yakın) elde etti. Model, 12 GB bir RTX 4080 laptopta yaklaşık 23 token/sn hızla çalışıyor; daha özelleştirilmiş kernel'larla bu hızın artırılabileceği belirtiliyor.\n\nKod ve model dosyaları GitHub ve Hugging Face üzerinden açık kaynak olarak sunuluyor. Eğitim, dönüşüm ve çalıştırma için ayrı ayrı repolar bulunuyor ve sadece ticari olmayan kullanım için lisanslanmış durumda. Elderli, topluluktan katkı ve yıldız isteyerek projenin uzun vadeli geliştirilmesini hedefliyor.",
+  "onemli_maddeler": [
+    "Yeni ternary optimizasyonu, ağırlık başına 1 bayt bellek tüketerek 27 B modelin tek bir 24 GB RTX 3090'da eğitilmesini sağladı.",
+    "Model boyutu %90'a yakın bir oranda küçültülerek 6 GB'ye indirildi; bu, 16‑bit temsile göre 10 kat, Q8 temsile göre 5 kat daha az bellek demek.",
+    "GSM8K %89.5 ve HumanEval 0.84 gibi benchmark sonuçları, tam hassasiyetli modellerle rekabet edebilecek performans gösteriyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Tüketici sınıfı GPU'larda büyük ölçekli LLM eğitimi mümkün kılarak araştırma maliyetlerini düşürüyor ve topluluk temelli model özelleştirmesine yeni bir yol açıyor.",
+  "etiketler": [
+    "LLM eğitimi",
+    "memory optimization",
+    "ternary networks",
+    "open-source",
+    "consumer GPUs"
+  ],
+  "anilan_modeller": [
+    "Qwen 3.8 27B",
+    "Qwen Flash Next 27B",
+    "10‑20B parametreli modeller"
+  ],
+  "yorum_tr": "Bu teknik, büyük modelleri ev tipi donanımla eğitmek isteyen araştırmacılar ve geliştiriciler için maliyet bariyerini önemli ölçüde azaltıyor. Ancak hâlâ fakt hatırlama ve döngü problemleri gibi kalite sorunları bulunuyor, bu da ilerideki iyileştirmelere ihtiyaç duyulduğunu gösteriyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen 3.8 27B (ternary trained)",
+      "benchmark": "GSM8K",
+      "skor": 0.895,
+      "birim": "",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "It scores GSM8K 0.895, the same as full precision"
+    },
+    {
+      "model": "Qwen 3.8 27B (ternary trained)",
+      "benchmark": "HumanEval",
+      "skor": 0.84,
+      "birim": "",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "HumanEval 0.84 vs 0.93"
+    }
+  ],
+  "gorsel_url": "https://external-preview.redd.it/you-can-now-train-your-own-llms-with-less-memory-on-your-v0-vtJ2CQelgjAlh31RiKKyUyuxfxB9qQjI1G4AURhK96k.png?auto=webp&s=da5aef69c9cc94ac54c8b27fc35f42a5dc03a1e7",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xtgnh9/you_can_now_train_your_own_llms_with_less_memory/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-11T12:36:21.000Z",
+  "slug": "you-can-now-train-your-own-llms-with-less-memory-on-your-gam"
+}

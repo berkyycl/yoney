@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "DeepL, yeni Aure modeliyle gerçek zamanlı çeviride alay ve duygu geçişlerini yakalıyor",
+  "ozet_tr": "DeepL, sesli çeviride devrim yaratacak Aure modelini tanıttı. Model, konuşmacının ton, duygu, vurgu ve konuşma hızını hedef dile aktararak alay ve ruh hali değişimlerini gerçek zamanlı yakalıyor.",
+  "detayli_icerik_tr": "DeepL, sesli çevirideki en büyük eksiklerden biri olan duygu ve alay tespiti sorununu çözmek için Aure adlı yeni bir ses modeli geliştirdi. Aure, çevirinin metin kısmını ve orijinal ses akışını aynı anda analiz ederek, konuşmacının ses kimliğini, melodi ve içeriğini ayrı katmanlar halinde işler ve bu katmanları hedef dile bağımsız olarak aktarır. Bu sayede çevirideki ton, duygu, vurgu ve konuşma hızı gibi nüanslar korunur.\n\nModelin eğitim sürecinde ses kimliği, konuşma melodi ve içerik bileşenleri ayrıştırılır; ardından takviye öğrenme (reinforcement learning) teknikleriyle aksanların hedef dile sızması engellenir. Aure, DeepL Voice hizmeti içinde Online Meetings, Yüz Yüze Konuşmalar ve DeepL API üzerinden otomatik olarak çalıştırılabilir hâle getirildi.\n\nLansman itibarıyla Aure, İngilizce, Almanca, İspanyolca, Fransızca, İtalyanca, Japonca, Portekizce ve Korece dillerini destekliyor. DeepL, bu modeli Eylül ayında ses kimliğini koruma özelliğiyle tanıttıktan sonra, Mayıs ayında 250 kişilik işten çıkarmalarla daha küçük, AI‑native bir organizasyona dönüşme sürecini başlattı ve ses akışı uzmanı Mixhalo ekibini satın alarak gerçek zamanlı çeviri yeteneklerini güçlendirdi.\n\nRakip şirket Block da benzer bir hedefe yönelerek, ses üzerinden duygu ve alay tespiti yapabilen Dessa modelini duyurdu. DeepL'in Aure modeli, sesli çevirideki bağlamsal anlamı kelimelerin ötesine taşıyarak, çok dilli toplantıların ve uluslararası iletişimin doğallığını artırma potansiyeline sahip.",
+  "onemli_maddeler": [
+    "Aure, gerçek zamanlı çeviride ton, duygu, vurgu ve konuşma hızını hedef dile aktararak alay ve ruh hali değişimlerini yakalar.",
+    "Model, ses kimliği, melodi ve içeriği ayrı katmanlar olarak işleyip takviye öğrenme ile aksanları önler.",
+    "Lansman itibarıyla İngilizce, Almanca, İspanyolca, Fransızca, İtalyanca, Japonca, Portekizce ve Korece dillerini destekler.",
+    "DeepL Voice for Online Meetings, In-Person Conversations ve DeepL API üzerinden otomatik olarak kullanılabilir.",
+    "DeepL'in AI‑native dönüşüm süreci kapsamında Mixhalo ekibi satın alındı ve 250 işten çıkarma gerçekleşti."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Gerçek zamanlı sesli çeviride duygu ve alay gibi ince nüansları yakalayan yeni bir model, çok dilli iletişimin doğallığını artırarak sektörde büyük bir adım teşkil ediyor.",
+  "etiketler": [
+    "DeepL",
+    "gerçek zamanlı çeviri",
+    "ses modeli",
+    "AI-native",
+    "Aure"
+  ],
+  "anilan_modeller": [
+    "Aure"
+  ],
+  "yorum_tr": "Aure, sesli çevirideki bağlamsal duyarlılığı artırarak hem kurumsal toplantılarda hem de bireysel iletişimde daha doğal bir deneyim sunacak; geliştiriciler de API üzerinden bu yeteneği uygulamalarına entegre edebilecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/11/DeepL-Logo-ChatGPT-5.6.jpg",
+  "url": "https://the-decoder.com/with-its-new-voice-model-deepl-voice-now-translates-intonation-and-speaking-speed-into-other-languages-as-well/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-11T13:50:30.000Z",
+  "slug": "deepl-wants-real-time-translation-to-finally-capture-sarcasm"
+}
