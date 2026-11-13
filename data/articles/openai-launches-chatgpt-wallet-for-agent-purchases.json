@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "OpenAI, ChatGPT Wallet ile Ajent Alımları İçin Yeni Ödeme Sistemi Tanıttı",
+  "ozet_tr": "OpenAI, ChatGPT Pro aboneleri için ajentlerin gerçek kart bilgilerine erişmeden alışveriş yapmasını sağlayan ChatGPT Wallet'ı duyurdu. Kullanıcılar tek seferlik kart ekleyip, her işlemde Face ID ya da parmak izi gibi bir güvenlik kontrolüyle onay veriyor; ardından ödeme ağı, gerçek kart bilgileri yerine bir token oluşturuyor.",
+  "detayli_icerik_tr": "OpenAI, ChatGPT Wallet adlı yeni bir ödeme altyapısını sınırlı bir şekilde ABD'deki 18 yaş ve üzeri ChatGPT Pro abonelerine sunmaya başladı. Kullanıcılar bir kez kart ekledikten sonra, her bir ajent (dot) üzerinden yapılan alışverişte toplam tutarı, seçilen kartı ve ürünleri gözden geçiriyor ve Face ID ya da parmak izi gibi biyometrik bir doğrulama ile işlemi onaylıyor. Onay sonrası ödeme ağı, gerçek kart numarası, CVV ve son tarih gibi bilgileri içermeyen bir token oluşturuyor; bu token, ajent ve işletme arasında gerçek kart bilgilerinin gizli kalmasını sağlıyor.\n\nBu sistem, American Express, Mastercard ve Visa gibi büyük kart ağlarıyla uyumlu çalışıyor ve mevcut e-ticaret altyapılarına sorunsuz entegrasyon sunuyor. OpenAI'nin yeni \"Commerce Partner Playbook\"u, işletmelerin kimliklerini doğrulamasını, şirket bilgilerini güncellemesini ve ürün beslemelerini (price ve availability) ChatGPT içinde yayınlamasını mümkün kılıyor. İşletmeler, Web Bot Auth üzerinden imzalı istekleri tanıyan güvenlik duvarları ya da CDN'ler kurarak token tabanlı ödemeleri kabul edebiliyor.\n\nRisk yönetimi açısından OpenAI, Forter, Riskified, Sardine ve Signifyd gibi firmalarla iş birliği yaparak ajent alımlarının sahtecilik olarak işaretlenmesini önlemeye çalışıyor. Ayrıca, Adyen, Checkout.com ve Stripe gibi ödeme sağlayıcılarıyla da entegrasyon sağlanıyor. İlk aşamada sistem, sadece kullanıcıların mevcut kart ödül ve koruma haklarını korurken, gelecekte önceden belirlenmiş harcama limitleri, kategori ya da zaman dilimlerine göre delegasyon özellikleri eklemeyi planlıyor.\n\nOpenAI, haftada 1,2 milyar ChatGPT kullanıcısının ürün araştırması ve karşılaştırma yaptığı gerçeğinden yola çıkarak, ajentlerin güvenli bir ödeme yöntemiyle doğrudan işletmelere ödeme yapabilmesinin e-ticaret deneyimini hızlandıracağını ve yeni gelir modelleri yaratacağını belirtiyor. İlk sürümün dar kapsamlı olması, gerçek dünyadaki satın alımlardan öğrenerek sistemin kapsamını ve uyumluluğunu zaman içinde genişletmeyi hedefliyor.",
+  "onemli_maddeler": [
+    "ChatGPT Wallet, ajentlerin gerçek kart bilgilerine erişmeden ödeme yapmasını sağlayan token tabanlı bir sistem sunuyor.",
+    "Her işlemde biyometrik doğrulama (Face ID/parmak izi) zorunlu; bu sayede güvenlik ve kullanıcı onayı artırılıyor.",
+    "OpenAI, Forter, Riskified, Sardine, Signifyd ve ödeme sağlayıcıları (Adyen, Checkout.com, Stripe) ile iş birliği yaparak sahtecilik riskini azaltıyor.",
+    "İlk aşamada sadece ABD'deki 18+ ChatGPT Pro abonelerine sınırlı bir lansman yapılacak, gelecekte harcama limitleri ve kategori bazlı delegasyon özellikleri planlanıyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "ChatGPT Wallet, AI ajentlerinin e-ticaret işlemlerinde güvenli ödeme yapabilmesini sağlayarak hem geliştiricilere yeni bir entegrasyon katmanı sunuyor hem de milyarlarca kullanıcıya yeni bir alışveriş deneyimi getiriyor; bu, AI destekli ticaret ekosisteminde kritik bir adım olarak değerlendirilebilir.",
+  "etiketler": [
+    "OpenAI",
+    "ChatGPT Wallet",
+    "Payments",
+    "AI Agents",
+    "E-commerce"
+  ],
+  "anilan_modeller": [
+    "ChatGPT"
+  ],
+  "yorum_tr": "ChatGPT Wallet, ajent tabanlı satın alma süreçlerini güvenli bir token mekanizmasıyla destekleyerek geliştiricilere ve işletmelere yeni bir ödeme entegrasyonu sunuyor; kullanıcılar ise kart bilgilerini paylaşmadan alışveriş yapabilmenin rahatlığını yaşayacak.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/11/banner-8.webp",
+  "url": "https://www.testingcatalog.com/openai-launches-chatgpt-wallet-for-agent-purchases/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-13T17:20:34.000Z",
+  "slug": "openai-launches-chatgpt-wallet-for-agent-purchases"
+}

@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "llama.cpp v1.0.0 Yayınlandı: Yerel AI Ekosistemi İçin Daha Sağlam Bir Temel",
+  "ozet_tr": "Hugging Face, llama.cpp ve ggml projelerinin 1.0.0 sürümünü duyurdu. Yeni sürüm, stabil bir API/ABI, geniş donanım desteği ve çoklu dağıtım kanallarıyla yerel LLM çalıştırmayı her seviyede erişilebilir kılıyor.",
+  "detayli_icerik_tr": "llama.cpp, çok modlu büyük dil modellerini (LLM) tüketici düzeyindeki bilgisayarlardan yüksek performanslı sunuculara kadar geniş bir donanım yelpazesinde çalıştırabilen bir C/C++ kütüphanesi. 3,5 yıllık gelişim sürecinin ardından proje, 1.0.0 sürümüyle resmi olarak stabil bir API ve ABI sunuyor; bundan sonraki büyük sürüm artışları geriye dönük uyumsuzlukları işaret edecek.\n\nYeni sürüm, hem llama.cpp hem de temel tensor motoru ggml için ayrı ayrı 1.0.0 sürüm numaralarıyla yayınlandı. Semantic versioning kuralları netleştirildi: MAJOR artışı kamu API'sinde kırıcı değişiklik, MINOR geriye uyumlu özellik ve backend güncellemeleri, PATCH ise sadece hata düzeltmeleri anlamına geliyor. Bu şeffaflık, kütüphaneyi kullanan binlerce downstream uygulama için kritik bir güvence sağlıyor.\n\nDağıtım açısından proje, Linux, macOS, Windows, Android, iOS gibi platformların yanı sıra Docker, Homebrew, conda‑forge, MacPorts, Winget ve XCFramework gibi paket yöneticileriyle entegrasyon sunuyor. Böylece geliştiriciler, tercih ettikleri ortamda tek bir komutla en güncel sürümü alabiliyor. CI altyapısı da Hugging Face'in HF Buckets ve HF Jobs hizmetleriyle güçlendirilerek, NVIDIA, AMD, Qualcomm, Arm, IBM ve Intel gibi çeşitli donanımlarda self‑hosted runner'lar aracılığıyla test kapsamı artırıldı.\n\nTeknik açıdan ggml, dinamik olarak yüklenebilen backend'ler sayesinde neredeyse tüm mevcut donanımlarda çalışabiliyor. Şu anda llama.cpp, 150'den fazla mimari varyantı ve tüm yaygın spekülatif decoding yöntemlerini destekliyor. Bu geniş model kapsama alanı, yerel AI çözümlerinin gizlilik ve performans gereksinimlerini karşılamada önemli bir adım olarak görülüyor.",
+  "onemli_maddeler": [
+    "llama.cpp ve ggml 1.0.0 sürümleriyle stabil API/ABI sunuldu; MAJOR sürüm artışı geriye dönük uyumsuzlukları işaret ediyor.",
+    "150'den fazla model mimarisi ve tüm spekülatif decoding yöntemleri destekleniyor, çok modlu LLM çalıştırma kapasitesi artırıldı.",
+    "Linux, macOS, Windows, Android, iOS, Docker, Homebrew, conda‑forge, MacPorts, Winget ve XCFramework gibi geniş dağıtım kanalları eklendi.",
+    "CI altyapısı HF Buckets ve HF Jobs ile güçlendirildi; NVIDIA, AMD, Qualcomm, Arm, IBM ve Intel gibi donanımlarda self‑hosted runner'lar kullanılıyor.",
+    "Semantic versioning kuralları netleştirildi; MAJOR, MINOR ve PATCH değişiklikleri açıkça tanımlandı."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Yerel AI ve gizlilik odaklı uygulamaların temelini oluşturan llama.cpp, 1.0.0 sürümüyle geniş donanım desteği ve stabil API sunarak geliştiricilerin güvenle entegrasyon yapmasını sağlıyor; bu, açık kaynak AI altyapısının ekosisteminde kritik bir güncelleme.",
+  "etiketler": [
+    "llama.cpp",
+    "ggml",
+    "AI inference",
+    "C++",
+    "open-source"
+  ],
+  "anilan_modeller": [],
+  "yorum_tr": "Bu sürüm, yerel LLM çözümlerinin ölçeklenebilirliğini ve güvenilirliğini artırarak geliştiricilere daha stabil bir temel sunuyor; aynı zamanda açık kaynak topluluğunun AI altyapısına olan güvenini pekiştiriyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://cdn-uploads.huggingface.co/production/uploads/63148d3b996c52bf0142cdbe/2PgU1GxpJX_LVORaP2RRy.png",
+  "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-11-13T14:05:22.000Z",
+  "slug": "llama-cpp-v1-0-0-a-stronger-foundation-for-the-local-ai-ecos"
+}

@@ -1,0 +1,81 @@
+{
+  "baslik_tr": "DeepSeek-V4.1-Flash, 8 V100 GPU’da NVFP4 kalitesine yakın performans gösterdi",
+  "ozet_tr": "DeepSeek-V4.1-Flash modeli, 2018 üretimi 8 adet V100 GPU üzerinde çalıştırılarak NVFP4 ağırlık setine yakın kalite ve 524K bağlam uzunluğu sağladı. Model, tek istek başına 118,9 tok/s, iki eşzamanlı istekte 159 tok/s ve üç istekte 192,3 tok/s üretim hızı elde etti. Ayrıca %95,1 token eşleşme oranı ve 0,079 nats KL sapmasıyla kalite açısından da NVIDIA’nın tam NVFP4 paketine çok yakın sonuçlar verdi.",
+  "detayli_icerik_tr": "Reddit topluluğu LocalLLaMA'da paylaşılan bir gönderide, kullanıcı TumbleweedNew6515, DeepSeek-V4.1-Flash 1017 modelinin 8 V100‑SXM2‑32GB kart üzerinde çalıştırıldığını ve NVFP4 ağırlık setine neredeyse eşdeğer bir kalite sunduğunu belgeledi. Model, 524.288 token uzunluğunda bağlamı işleyebiliyor ve tek bir istek için 118,9 token/s, iki eşzamanlı istekte toplam 159 token/s, üç istekte ise 192,3 token/s üretim hızı sağlıyor. Prompt okuma hızı ise 256K tokenlik bir bağlamda 2.329‑2.430 token/s arasında değişiyor, ilk tokenin ortaya çıkması ise 108,4 saniye sürüyor.\n\nKalite ölçümlerine göre, 15.360 yönlendirilmiş uzmanın 5.949'u tam NVFP4 hassasiyetinde çalışıyor ve decode rotalarının %78‑85'i bu NVFP4 uzmanlarına yönlendiriliyor. Karşılaştırılan tokenların %95,1'i NVIDIA’nın tam NVFP4 paketindeki tokenlarla aynı sonucu veriyor. KL sapması 0,079 nats olarak ölçülürken, 2‑bit yapı için bu değer 0,196 nats idi; çok‑seçmeli cevaplarda ise sadece %1,6 değişim gözlemlenmiş, 2‑bit yapı %15,4 değişim gösteriyordu.\n\nBu performans, Opus 5.5 ve Fable 5.2 gibi araçların DeepSeek'i hızlı, yüksek bağlamlı ve yüksek hassasiyetli bir şekilde çalıştırmak için özelleştirilmiş çekirdekler ve yeniden kuantizasyon teknikleriyle desteklenmesi sayesinde mümkün oldu. Kullanıcı, iki DGX Spark sunucusunun 3‑4 eşzamanlı DeepSeek oturumunu (1M bağlam) ve ek 8 V100 kartının bir başka yüksek hassasiyetli DeepSeek ajanı olarak kullanılabileceğini belirtti. Ayrıca, Fable’ın özel Volta çekirdekleri ve NVFP4 ağırlıklarına dinamik geçiş yapabilen bir sistem geliştirdiği vurgulandı.\n\nBu yapı, tamamen yerel bir kurumsal çözüm olarak sunuluyor; dışa veri akışı yok, tüm işlem ve ince ayarlar açık kaynak Apache‑2.0 lisansı altında paylaşılmış. Kod, çekirdekler ve ölçümler GitHub’da yayınlanmış ve model ağırlıkları Hugging Face üzerinden indirilebilir durumda.",
+  "onemli_maddeler": [
+    "DeepSeek-V4.1-Flash, 8 V100 GPU’da %95,1 token eşleşme oranı ve 0,079 nats KL sapmasıyla NVFP4 kalitesine çok yakın sonuçlar verdi.",
+    "Model, 524K bağlam uzunluğunda 100+ tok/s tek istek, iki eşzamanlı istekte 159 tok/s ve üç istekte 192,3 tok/s üretim hızı sağladı.",
+    "Opus 5.5 ve Fable 5.2 sayesinde özelleştirilmiş Volta çekirdekleri ve yeniden kuantizasyon teknikleriyle yüksek hassasiyetli ve hızlı yerel LLM çalıştırma imkanı sunuldu."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Yerel büyük dil modellerinin eski nesil V100 donanımıyla yüksek doğruluk ve uzun bağlam desteği sunabilmesi, topluluk ve kurumsal AI projeleri için maliyet etkin bir yol haritası oluşturuyor.",
+  "etiketler": [
+    "DeepSeek",
+    "V100",
+    "NVFP4",
+    "yerel LLM",
+    "benchmark"
+  ],
+  "anilan_modeller": [
+    "DeepSeek-V4.1-Flash",
+    "Opus 5.5",
+    "Fable 5.2",
+    "Claude"
+  ],
+  "yorum_tr": "Bu sonuçlar, eski donanım altyapısına sahip kurumların da yüksek kaliteli, uzun bağlamlı LLM çözümlerini yerel olarak çalıştırabileceğini gösteriyor; geliştiriciler için maliyet tasarrufu ve veri gizliliği açısından önemli bir adım.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "DeepSeek-V4.1-Flash",
+      "benchmark": "Decode throughput (single request)",
+      "skor": 118.9,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "single request",
+      "kaynak_metinden_alinti": "one request at a time: 118.9 tok/s"
+    },
+    {
+      "model": "DeepSeek-V4.1-Flash",
+      "benchmark": "Decode throughput (two concurrent requests)",
+      "skor": 159,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "two concurrent requests",
+      "kaynak_metinden_alinti": "two requests at once: 159.0 tok/s total (1.34x)"
+    },
+    {
+      "model": "DeepSeek-V4.1-Flash",
+      "benchmark": "Decode throughput (three concurrent requests)",
+      "skor": 192.3,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "three concurrent requests",
+      "kaynak_metinden_alinti": "three at once on the three-slot option: 192.3 tok/s total (1.62x)"
+    },
+    {
+      "model": "DeepSeek-V4.1-Flash",
+      "benchmark": "Token match rate with NVIDIA NVFP4 full pack",
+      "skor": 95.1,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "compared tokens",
+      "kaynak_metinden_alinti": "same next token as NVIDIA's full NVFP4 pack on 95.1 % of compared tokens"
+    },
+    {
+      "model": "DeepSeek-V4.1-Flash",
+      "benchmark": "KL divergence against NVFP4 reference",
+      "skor": 0.079,
+      "birim": "nats",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "full NVFP4 reference",
+      "kaynak_metinden_alinti": "KL divergence from the NVFP4 reference is 0.079 nats"
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/vzjsgibin91i1.jpeg?width=140&height=105&auto=webp&s=928601dac6e3d328069968744b67204dd207fd53",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xus81t/lawyer_with_too_many_gpus_part_5_deepseekv41flash/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-12T23:31:29.000Z",
+  "slug": "lawyer-with-too-many-gpus-part-5-deepseek-v4-1-flash-at-near"
+}

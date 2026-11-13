@@ -1,0 +1,56 @@
+{
+  "baslik_tr": "XYBench: Yanlış Soruların Arkasındaki Sorunları Çözmek İçin Yeni Benchmark",
+  "ozet_tr": "Hugging Face, AI asistanlarının kullanıcıların yanlış varsayımlara dayanan sorularını doğru hedefe yönlendirme yeteneğini ölçen XYBench adlı 8.000'den fazla soruluk bir benchmark yayınladı. XY problem olarak adlandırılan bu durum, modellerin yalnızca sorulan soruya (Y) odaklanıp asıl amaca (X) ulaşamamasıyla ortaya çıkıyor. İlk değerlendirmeler, beş büyük dil modelinin bu konuda insan performansının gerisinde kaldığını gösterdi.",
+  "detayli_icerik_tr": "XYBench, Carnegie Mellon, NVIDIA ve Johns Hopkins araştırmacılarıyla ortaklaşa geliştirilen ve programlama, yemek tarifleri, ev tamiri gibi günlük prosedürel görevleri kapsayan 8.115 gerçek dünya sorusundan oluşan bir test setidir. Her soruda, kullanıcı tarafından açıkça istenen yaklaşım (Y) ile asıl ulaşılmak istenen hedef (X) ayrıştırılarak modellerin bu iki katmanı ne kadar doğru ayırt edebildiği ölçülür.\n\nAraştırmacılar, Claude Sonnet 4.6, GPT-5, Gemini 3.1 Pro, Qwen3.5-9B ve DeepSeek-V4 Pro modellerini tek yanıtlı bir ortamda test etti. Sonuçlar, modellerin genellikle Y'ye yönelik çözümler sunduğunu, ancak X'i hedef alan yanıtlar üretmede %35-41 arasında düşük bir başarı gösterdiğini ortaya koydu. Özellikle, Stack Overflow sorularında modellerin %75‑86 oranında Y'ye çözüm sunduğu, ancak X'e yönelik çözüm oranının %59‑71 arasında kaldığı belirlendi.\n\nModel performansını daha iyi anlamak için bir \"oracle\" deneyi yapıldı; bu deneyde soruya hem Y hem de X açıkça verildi. Claude Sonnet 4.6 için X'e yönelik çözüm oranı %59'dan %67'ye yükselirken, yanlış varsayımı tanıma oranı %47'den %34'e geriledi. Bu, niyetin açıkça belirtilmesinin modeli yönlendirebileceğini, ancak hâlâ insan seviyesindeki yönlendirme yeteneğine ulaşmadığını gösterdi.\n\nEk bir çoktan seçmeli testte, aynı beş model ve ek olarak GPT-4.1, iki olası yanıt arasından hangisinin daha faydalı olduğunu değerlendirdi. Tüm altı model, hedef odaklı yanıtı %71‑84 oranında tercih etti; bu da modellerin doğru yanıtı tanıma konusunda üretimden daha başarılı olduğunu ortaya koydu. XYBench, bu farkı ortaya çıkararak araştırmacıların sadece yanıt üretimini değil, aynı zamanda niyet algısını da ölçebilecekleri bir çerçeve sunuyor.",
+  "onemli_maddeler": [
+    "XYBench, AI asistanlarının XY problemine yanıt verirken asıl kullanıcı amacını tanıma ve yönlendirme yeteneğini ölçen ilk kapsamlı benchmark'tır.",
+    "Değerlendirilen beş büyük LLM, Y'ye odaklanıp X'i göz ardı etme eğiliminde olup, insan referans yanıtlarının gerisinde kalmıştır.",
+    "Oracle deneyinde niyetin açıkça verilmesi, bazı modellerde X'e yönelik çözüm oranını artırsa da yanlış varsayımı tanıma yeteneğini düşürmüştür."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "XYBench, AI asistanlarının gerçek dünya kullanım senaryolarında kritik bir eksikliği ortaya koyarak model geliştirme ve değerlendirme süreçlerine yeni bir ölçüt getiriyor.",
+  "etiketler": [
+    "XY problem",
+    "benchmark",
+    "LLM",
+    "pragmatics",
+    "AI assistants"
+  ],
+  "anilan_modeller": [
+    "Claude Sonnet 4.6",
+    "GPT-5",
+    "Gemini 3.1 Pro",
+    "Qwen3.5-9B",
+    "DeepSeek-V4 Pro",
+    "GPT-4.1"
+  ],
+  "yorum_tr": "XYBench, modellerin sadece sorulan soruya değil, kullanıcının gerçek ihtiyacına yanıt vermesini zorunlu kılarak, asistanların güvenilirliğini ve kullanılabilirliğini artırma yönünde önemli bir adım sunuyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Claude Sonnet 4.6",
+      "benchmark": "Underlying goal solution rate (oracle experiment)",
+      "skor": 67,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "oracle experiment",
+      "kaynak_metinden_alinti": "Sonnet 4.6’s rate of including a solution to the underlying goal rose from 59% to 67%"
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "benchmark": "Misconception identification rate (oracle experiment)",
+      "skor": 34,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "oracle experiment",
+      "kaynak_metinden_alinti": "its misconception-identification rate fell from 47% to 34%"
+    }
+  ],
+  "gorsel_url": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/aOWdQgZ8ioJcx9Eii4iob.png",
+  "url": "https://huggingface.co/blog/allenai/xybench",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-11-13T17:02:35.000Z",
+  "slug": "xybench-helping-with-the-problem-behind-the-question"
+}

@@ -1,0 +1,31 @@
+{
+  "baslik_tr": "Edge0-145B: 145 Milyar Parametreli Açık Kaynak On-Device AI Modeli",
+  "ozet_tr": "Topluluk, 145 milyar parametreye sahip yeni bir açık kaynak büyük dil modeli Edge0-145B'yi duyurdu. Model, özellikle cihaz içinde çalışabilecek şekilde optimize edildiği için yerel AI uygulamalarında devrim yaratmayı hedefliyor.",
+  "detayli_icerik_tr": "LocalLLaMA topluluğu, Reddit üzerinden Edge0-145B adlı yeni bir açık kaynak büyük dil modelini tanıttı. Model, 145 milyar parametreye sahip olup, geleneksel bulut tabanlı LLM'lerin aksine cihaz içinde (on‑device) çalışacak şekilde tasarlanmış. Bu yaklaşım, veri gizliliği, gecikme süresi ve bant genişliği maliyetlerini azaltmayı amaçlıyor.\n\nEdge0-145B, mevcut açık kaynak modellerinin çoğunun 7‑30 milyar parametre sınırını aşarak, daha karmaşık görevlerde yüksek performans sunmayı hedefliyor. Topluluk, modelin eğitim ve ince ayar süreçlerini kamuya açık bir şekilde paylaşarak, araştırmacıların ve geliştiricilerin katkı sağlamasını teşvik ediyor. Modelin mimarisi, verimli bellek yönetimi ve düşük güç tüketimi için özel olarak optimize edilmiş.\n\nModelin yayınlandığı platformda, topluluk üyeleri modelin indirme bağlantılarını, kurulum rehberlerini ve örnek uygulamaları paylaştı. Edge0-145B'nin mobil cihazlar, IoT aygıtları ve uç (edge) sunucular gibi sınırlı kaynaklara sahip ortamlarda kullanılabilmesi için quantization ve sparsity teknikleriyle hafifletildiği belirtiliyor.\n\nHenüz resmi bir benchmark raporu yayınlanmamış olsa da, topluluk üyeleri modelin çeşitli dil görevlerinde (metin tamamlama, soru‑cevap, kod üretimi) mevcut açık kaynak modellerine kıyasla rekabetçi sonuçlar verdiğini iddia ediyor. Edge0-145B'nin açık kaynak lisansı, araştırma ve ticari kullanım için geniş bir özgürlük sunuyor ve AI ekosisteminde daha fazla şeffaflık ve iş birliği çağrısında bulunuyor.",
+  "onemli_maddeler": [
+    "145 milyar parametreyle mevcut açık kaynak LLM'lerin en büyüğü",
+    "Cihaz içinde (on‑device) çalışacak şekilde bellek ve güç optimizasyonu",
+    "Tamamen açık kaynak kod ve veri seti, topluluk katkısına açık"
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "145B parametreli bir modelin açık kaynak olarak sunulması, on‑device AI alanında yeni bir kilometre taşı oluşturuyor ve hem araştırmacılar hem de geliştiriciler için büyük bir fırsat sağlıyor.",
+  "etiketler": [
+    "open-source",
+    "on-device AI",
+    "large language model",
+    "Edge0-145B"
+  ],
+  "anilan_modeller": [
+    "Edge0-145B"
+  ],
+  "yorum_tr": "Edge0-145B, büyük ölçekli modelleri cihaz seviyesine taşıyarak veri gizliliği ve gecikme sorunlarını hafifletebilir; ancak performans ve kaynak gereksinimlerinin gerçek dünyadaki cihazlarla uyumu yakından izlenmeli.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/8wVYJLvtLuSZbiMgXJurLuNONs1CamPKgXW9t6Km-Is.png?width=640&crop=smart&auto=webp&s=4130d41689f85b69829ae63b9c734de4fc6b680d",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xuuq0b/edge0145b_opensource_ondevice_ai_with_145b/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-13T01:25:20.000Z",
+  "slug": "edge0-145b-open-source-on-device-ai-with-145b-parameters"
+}

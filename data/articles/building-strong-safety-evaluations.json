@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "Anthropic'den Güçlü AI Güvenlik Değerlendirmeleri İçin Rehber",
+  "ozet_tr": "Anthropic, AI modellerinin güvenliğini ölçen değerlendirmelerin nasıl inşa edilmesi gerektiğine dair kapsamlı bir rehber yayımladı. Makalede, çok disiplinli ekiplerin önemi, tasarımın soruya göre şekillendirilmesi ve gerçek‑dünya senaryolarına dayalı çok‑turlu testlerin gerekliliği vurgulanıyor.",
+  "detayli_icerik_tr": "Anthropic, bir modelin \"öncekinden daha güvenli\" olduğunu iddia etmenin, arkasındaki güvenlik değerlendirmesinin ne kadar sağlam olduğuna bağlı olduğunu belirtiyor. Güvenlik eval'leri, modelin zararlı çıktılar üretme olasılığını ve bu zararın şiddetini ölçmeyi amaçlarken, sadece yetenekleri değil, istek üzerine verilen yanıtların doğru olup olmadığını da inceliyor. Bu bağlamda, zararlı istekler (ör. kendine zarar verme talimatları) ve zararsız ama yüksek riskli istekler (ör. ilaç dozu bilgisi) gibi farklı senaryolar ayrı ayrı ele alınıyor.\n\nMakalede, güvenlik eval'lerinin başarılı olabilmesi için çok disiplinli bir ekip kurulması gerektiği vurgulanıyor. Yöntem uzmanları örnekleme, puanlama ve analiz süreçlerini tasarlarken, psikolog, biyolog ya da siyaset bilimci gibi alan uzmanları gerçekçi ve çeşitli test vakalarını belirliyor. Bu iş birliği, teknik titizliği alan uzmanlığının kapsamlılığıyla dengeleyerek eksik ya da yanlı değerlendirmelerin önüne geçiyor.\n\nDeğerlendirmelerin tasarım aşamasında sorulan temel soru, \"Ne ölçmek istiyoruz?\" olmalı. Gözlemsel tasarımlar modeller arasındaki farkları gösterirken, nedensel tasarımlar tek bir değişkeni izole ederek belirli müdahalelerin güvenliğe etkisini ortaya koyar. Anthropic, özellikle çok‑turlu senaryolarda \"uygun yanıt oranı\" gibi ölçütleri benimseyerek, sadece reddetme oranına (refusal) bakmanın yetersiz olduğunu, bazen empatik ve yönlendirici yanıtların daha güvenli olduğunu açıklıyor.\n\nGerçek dünyaya yakın senaryolar oluşturmak için Anthropic, bir iç araçla kullanıcı niyetini ve taktiklerini tanımlayan spesifikasyonlar hazırlıyor. Bu spesifikasyonlar, persona, ton, durum gibi boyutları içeriyor ve ardından bir Claude modeli sonraki kullanıcı turlarını üretiyor. Modelin yanıtları bir grader modeli (yine Claude) tarafından rubriklere göre puanlanıyor. Çok‑turlu testler, tek‑turlu testlerin yakalayamadığı kademeli kötüye kullanım risklerini ortaya çıkarıyor ve modelin bağlamı koruyarak uygun yanıt verip vermediğini ölçüyor.",
+  "onemli_maddeler": [
+    "Güvenlik eval'leri için çok disiplinli ekipler (alan uzmanları + yöntem uzmanları) oluşturulmalı.",
+    "Gözlemsel ve nedensel tasarımlar arasındaki farklar netleştirilmeli; amaç doğrultusunda uygun tasarım seçilmeli.",
+    "Tek‑tur yerine çok‑turlu senaryolar, gerçek‑dünya etkileşimlerini daha iyi yansıtarak modelin bağlam takibini test eder."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "AI güvenliği, model dağıtım kararlarını ve düzenleyici politikaları doğrudan etkileyen kritik bir alan; Anthropic'in metodolojik önerileri sektörde standartların yükseltilmesine katkı sağlayabilir.",
+  "etiketler": [
+    "AI güvenliği",
+    "değerlendirme metodolojisi",
+    "çok‑turlu test",
+    "Anthropic",
+    "model denetimi"
+  ],
+  "anilan_modeller": [
+    "Claude"
+  ],
+  "yorum_tr": "Bu rehber, güvenlik değerlendirmelerinin bilimsel temellere oturtulması gerektiğini göstererek geliştiricilere daha güvenilir test süreçleri sunuyor. Kullanıcıların gerçek‑dünya risklerine karşı daha dayanıklı modeller üretmek, hem şirketlerin sorumluluklarını hafifletir hem de düzenleyicilerin beklentilerini karşılar.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://assets.claude.com/04a298be2efa241bd5a4a810b97c62bb8ef257dc.jpg",
+  "url": "https://www.anthropic.com/research/building-strong-safety-evaluations",
+  "source": "Anthropic Research",
+  "sourceTier": "resmi",
+  "date": "2026-11-13T00:00:00.000Z",
+  "slug": "building-strong-safety-evaluations"
+}

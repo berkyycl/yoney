@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "Meta'nın içsel Muse Spark 1.4 modeli RocksDB PR'ında ortaya çıktı",
+  "ozet_tr": "Meta'ya ait henüz duyurulmamış bir LLM olan muse‑spark‑1.4‑internal, Meta'nın RocksDB deposundaki bir pull request'te log satırı olarak görüldü. Bu bulgu, modelin şirket içi üretim araçlarında zaten aktif olarak kullanıldığını ve 1.4 sürümünün yakında kamuoyuna sunulabileceğini işaret ediyor.",
+  "detayli_icerik_tr": "Meta'nın RocksDB deposunda açılan bir pull request, deneysel \"live tuning\" özelliğine yönelik küçük bir loglama değişikliği içeriyor. Live tuning, bir AI danışmanının veritabanı performansını izleyip yapılandırma önerileri sunduğu bir mekanizma; Meta’da bu danışman, iç hizmeti muse üzerinden çalışan bir LLM olarak tanımlanıyor. PR notlarında otomatik olarak oluşturulan bir satırda, kullanılan modelin adı \"muse-spark-1.4-internal\" olarak kaydedilmiş.\n\nBu log kaydı, modelin yalnızca test ortamında değil, gerçek üretim akışında da çalıştığını gösteriyor. Tek bir çağrıda 33.535 giriş token'ı (17.780'i önbellekten) ve 8.169 çıkış token'ı (7.867'si akıl yürütme token'ı) tüketilmiş; işlem yaklaşık 65 saniye sürmüş. Bu istatistikler, Meta'nın yeni nesil modelini hem maliyet hem de sonuç açısından küçük, yerel modellerle karşılaştırma hedefiyle topladığını ortaya koyuyor.\n\nMeta, Eylül 2022'de Muse Spark 1.3'ü duyurmuş ve bu modeli 1M token bağlam uzunluğu, giriş başına 1,25 $ ve çıkış başına 4,25 $ fiyatlandırma ile sunmuştu. 1.3 sürümü, önceki 1.2'ye göre %25 daha az token tüketerek kodlama ve uzun vadeli ajan görevlerinde önemli bir adım olarak tanıtılmıştı. Şimdi, 1.4 sürümünün iç sistemlerde aktif olması, yeni bir güncellemenin çok yakın bir gelecekte duyurulabileceğine işaret ediyor; ancak Meta henüz resmi bir isim, tarih veya özellik listesi paylaşmadı.\n\nPR birkaç saat içinde kapatılmış ve birleştirilmemiş; bu, Meta'nın iç değişikliklerini genellikle kendi sistemleri üzerinden dağıttığını gösteren rutin bir durum. Ayrıca, Meta API Platform'unun yakın zamanda bir UI revizyonu geçirdiği de haberde belirtiliyor.",
+  "onemli_maddeler": [
+    "Meta'nın içsel LLM'si muse‑spark‑1.4‑internal, RocksDB live tuning PR'ında loglanarak üretim ortamında aktif olduğu ortaya çıktı.",
+    "Tek bir model çağrısında 33.535 giriş token'ı, 8.169 çıkış token'ı ve 65 saniye işlem süresi kaydedildi; bu, maliyet‑performans karşılaştırması için veri toplama amacı taşıyor.",
+    "Muse Spark 1.3'ün Eylül 2022'de duyurulması ve fiyatlandırması hatırlatılarak, 1.4 sürümünün yakın zamanda resmi olarak yayınlanabileceği spekülasyonu yapıldı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Meta'nın popüler LLM serisinin yeni bir sürümünün iç sistemlerde aktif olması, sektörde rekabeti ve model geliştirme hızını doğrudan etkileyen kritik bir gelişmedir.",
+  "etiketler": [
+    "Meta",
+    "Muse Spark",
+    "RocksDB",
+    "LLM",
+    "AI tooling"
+  ],
+  "anilan_modeller": [
+    "muse-spark-1.4-internal",
+    "Muse Spark 1.3",
+    "Muse Spark 1.2"
+  ],
+  "yorum_tr": "Muse Spark 1.4'ün iç kullanımda görülmesi, Meta'nın model yeniliklerini hızlı bir şekilde üretim ortamına entegre ettiğini gösteriyor; geliştiriciler daha verimli kodlama ve ajan görevleri için yeni bir araç bekleyebilirken, maliyet‑performans analizleri de sektördeki fiyat rekabetini şekillendirebilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/11/Muse-Spark-Particle-Wave-1.webp",
+  "url": "https://www.testingcatalog.com/meta-muse-spark-1-4-surfaces-in-rocksdb-pull-request/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-13T17:14:52.000Z",
+  "slug": "meta-muse-spark-1-4-surfaces-in-rocksdb-pull-request"
+}

@@ -1,0 +1,31 @@
+{
+  "baslik_tr": "OpenAI, ChatGPT Wallet'ı Tanıttı: Ajanslar İçin Güvenli Ödeme Çözümü",
+  "ozet_tr": "OpenAI, ajansların kullanıcılar adına ödeme yapmasını sağlayan ChatGPT Wallet'ı duyurdu. Kullanıcıların kart bilgileri gizli kalırken her işlemde biyometrik güvenlik kontrolü uygulanıyor ve mevcut kart ödülleri ile itiraz hakları korunuyor.",
+  "detayli_icerik_tr": "OpenAI, ChatGPT Pro aboneleri için ABD'de sınırlı bir aşamada ChatGPT Wallet'ı kullanıma sundu. Bu yeni cüzdan, ajansların (ChatGPT'nin yanıt üreten \"agent\"ları) kullanıcıların kart bilgilerine erişmeden ödeme yapabilmesini sağlıyor; her satın alma öncesinde kullanıcı Face ID, parmak izi gibi biyometrik bir güvenlik kontrolüyle onay veriyor. Onay sonrası ödeme ağı, gerçek kart detaylarını gizleyen bir token oluşturuyor ve bu token üzerinden işlem gerçekleşiyor.\n\nKullanıcılar tek seferlik onayların yanı sıra gelecekte harcama limitleri, kategori kısıtlamaları ve zaman dilimleri gibi parametrelerle ajanslarına tam yetki verebilecek. Bu sayede ajanslar, kullanıcıların belirlediği sınırlar içinde tamamen bağımsız alışveriş yapabilecek. Ödül puanları, kart korumaları ve iade hakları gibi mevcut avantajlar da aynı kalıyor; dolayısıyla kullanıcılar, ChatGPT Wallet üzerinden yapılan alışverişlerde de aynı tüketici haklarından faydalanıyor.\n\nOpenAI, işletmelerin bu yeni ödeme modeline uyum sağlaması için bir \"Commerce Partner Playbook\" yayınladı. Kılavuz, web sitelerinin CDN ve güvenlik duvarı ayarlarını ajans isteklerini tanıyacak şekilde yapılandırma, ödeme ve risk sağlayıcılarıyla iş birliği yaparak token tabanlı ödemelerin reddedilmesini önleme ve ajansların ürün bilgilerine erişimini kolaylaştırma gibi konularda pratik adımlar sunuyor. Ayrıca Forter, Riskified, Sardine, Signifyd, Adyen, Checkout.com ve Stripe gibi büyük fraud önleme ve ödeme hizmeti sağlayıcılarıyla entegrasyon çalışmaları yürütülüyor.\n\nChatGPT Wallet'ın ilk aşaması, kullanıcıların bir kart ekleyip her satın alma için onay vermesini gerektiren bir akışa dayanıyor. İşletmeler, ajansların sitelerine erişimini engelleyen yanlış yapılandırılmış güvenlik önlemlerini düzeltmek ve token tabanlı ödemeleri mevcut checkout süreçlerine sorunsuz entegre etmek zorunda. OpenAI, gerçek dünya kullanımından elde edeceği geri bildirimlerle hizmeti genişletmeyi ve daha fazla ülkede, farklı kart tipleriyle kullanılabilir hâle getirmeyi planlıyor.",
+  "onemli_maddeler": [
+    "ChatGPT Wallet, ajansların kullanıcı kart bilgilerini görmeden güvenli ödeme yapmasını sağlıyor.",
+    "Her işlem, Face ID veya parmak izi gibi biyometrik bir güvenlik kontrolüyle kullanıcı onayı gerektiriyor.",
+    "İşletmeler, ajans erişimini engelleyen güvenlik ayarlarını düzeltmek ve token tabanlı ödemeleri mevcut sistemlerine entegre etmek zorunda.",
+    "OpenAI, işletmelere rehberlik etmek için \"Commerce Partner Playbook\" ve büyük ödeme/ fraud sağlayıcılarıyla iş birliği sunuyor."
+  ],
+  "kategori": "diger",
+  "onem": 4,
+  "onem_gerekce": "ChatGPT Wallet, AI destekli ajansların e-ticaret ekosistemine entegrasyonunu sağlayarak ödeme güvenliğini artırıyor ve OpenAI'nin hizmet yelpazesini genişletiyor; bu, hem geliştiriciler hem de perakendeciler için önemli bir dönüşüm anlamına geliyor.",
+  "etiketler": [
+    "ChatGPT Wallet",
+    "ajans ödemeleri",
+    "biyometrik güvenlik",
+    "e-ticaret",
+    "OpenAI"
+  ],
+  "anilan_modeller": [],
+  "yorum_tr": "ChatGPT Wallet, AI ajanlarının ödeme süreçlerine dahil edilmesiyle e-ticarette yeni bir güvenlik standardı oluşturuyor. Geliştiriciler ve işletmeler, bu altyapıyı benimseyerek kullanıcı deneyimini iyileştirirken dolandırıcılık riskini azaltabilecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://images.ctfassets.net/kftzwdyauwt9/2xTvIZkcQhKk3VNFioQ4CR/4efb84a6adbddb41311f6b18158fad8b/introducing-chatgpt-wallet-social.png?w=1600&h=900&fit=fill",
+  "url": "https://openai.com/index/introducing-chatgpt-wallet",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-11-13T15:00:00.000Z",
+  "slug": "introducing-chatgpt-wallet"
+}

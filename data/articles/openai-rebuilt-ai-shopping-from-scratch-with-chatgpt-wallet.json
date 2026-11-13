@@ -1,0 +1,36 @@
+{
+  "baslik_tr": "OpenAI, ChatGPT Wallet ile AI alışverişini yeniden tasarladı",
+  "ozet_tr": "OpenAI, ChatGPT Pro abonelerine ABD'de sunulan yeni ChatGPT Wallet özelliğiyle yapay zeka ajanlarının kullanıcı adına online alışveriş yapmasını sağladı. Her ödeme, Face ID ya da parmak izi gibi biyometrik onayla gerçekleşiyor ve gerçek kart bilgileri satıcıya hiç ulaşmıyor.",
+  "detayli_icerik_tr": "OpenAI, daha önce denediği Instant Checkout sistemini iptal ettikten sonra, ChatGPT Wallet adını verdiği yeni bir ödeme altyapısını tanıttı. Bu özellik, yalnızca ABD'de yaşayan ve ChatGPT Pro aboneliği bulunan yetişkin kullanıcılar için geçerli ve bir kez kart eklenerek kullanılabiliyor. Her satın alma işleminden önce sistem, ürünleri, toplam tutarı ve kullanılacak kartı gösteriyor; kullanıcı ise Face ID ya da parmak izi gibi bir güvenlik kontrolüyle ödemeyi onaylıyor.\n\nÖdeme sürecinde gerçek kart numarası satıcıya hiç iletilmiyor. Visa, Mastercard ve American Express gibi büyük ödeme ağları, kart bilgilerini temsil eden tek kullanımlık tokenler oluşturuyor. Bu tokenler, ayrı bir güvenlik kodu ile birlikte işlemde kullanılıyor ve OpenAI, mevcut kart ödüllerinin ve bankaların tipik itiraz korumalarının bu tokenler üzerinden de geçerli olduğunu belirtiyor.\n\nChatGPT, alışveriş akışını kullanıcı isteğiyle başlatıyor: kullanıcı ne istediğini tarif ediyor, ardından model web, API'ler ya da satıcıların ürün feed'leri üzerinden seçenekleri getiriyor. Kullanıcı seçenekleri karşılaştırıp bir ürün seçtikten sonra, ChatGPT ya satıcının web sitesinde bir tarayıcı oturumu açarak ya da yapılandırılmış eylemleri destekleyen bir eklenti aracılığıyla sepeti yöneterek satın almayı tamamlıyor. Ödeme ve kimlik doğrulama ise ChatGPT Wallet ve \"Sign‑in with ChatGPT\" entegrasyonu sayesinde otomatikleşiyor.\n\nOpenAI, bu yeni özelliği geliştirirken birçok e‑ticaret sitesinin AI ajanlarını bot olarak algılayıp satın alımları engellediğini de göz önünde bulundurdu. Bu sorunu aşmak için \"Commerce Partner Playbook\" adlı bir rehber yayınlayarak satıcıların güvenlik duvarlarını nasıl ayarlamaları, ürün verilerini nasıl sunmaları ve Stripe, Adyen, Riskified gibi ödeme sağlayıcılarıyla nasıl entegrasyon yapmaları gerektiğini açıklıyor. Şirket, uzun vadede kullanıcıların harcama limitleri, ürün kategorileri ve zaman dilimleri gibi kriterler belirleyerek alışverişi tamamen ajanlara devretmeyi planlıyor.",
+  "onemli_maddeler": [
+    "ChatGPT Wallet, AI ajanlarının gerçek kart bilgisi olmadan token tabanlı ödeme yapmasını sağlıyor.",
+    "Her işlem, Face ID ya da parmak iziyle biyometrik onay gerektiriyor ve sadece ABD'de Pro abonelere açık.",
+    "OpenAI, Instant Checkout'u iptal edip daha esnek bir alışveriş akışı sunmak için bu yeni sistemi geliştirdi.",
+    "Commerce Partner Playbook, satıcıların AI‑tabanlı alışverişi desteklemesi için teknik yönergeler içeriyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "ChatGPT Wallet, OpenAI'nin AI‑güdümlü e‑ticaret pazarına girişini temsil ediyor ve mevcut rekabet ortamında önemli bir ürün güncellemesi olarak sektörel dinamikleri etkileyebilir.",
+  "etiketler": [
+    "ChatGPT",
+    "AI Shopping",
+    "Payment Tokens",
+    "OpenAI",
+    "Digital Wallet"
+  ],
+  "anilan_modeller": [
+    "ChatGPT",
+    "Claude Duet",
+    "Muse",
+    "Grok Bot"
+  ],
+  "yorum_tr": "ChatGPT Wallet, OpenAI'nin AI alışveriş yeteneklerini rakiplerinin gerisinde kalmadan güncellemesi açısından kritik bir adım. Kullanıcılar için daha güvenli ve kontrol edilebilir bir ödeme deneyimi sunarken, geliştiriciler ve satıcılar da yeni entegrasyon standartlarına uyum sağlamak zorunda kalacak.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/11/ChatGPT-Wallet-title-scaled.png",
+  "url": "https://the-decoder.com/openai-rebuilt-ai-shopping-from-scratch-with-chatgpt-wallet/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-13T18:55:21.000Z",
+  "slug": "openai-rebuilt-ai-shopping-from-scratch-with-chatgpt-wallet"
+}
