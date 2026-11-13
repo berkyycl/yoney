@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "Yeni Model Ernie 5.5 Flash Preview, düşük parametre sayısına rağmen güçlü performans gösterdi (280B, 14B Aktif)",
+  "ozet_tr": "Ernie 5.5 Flash Preview, sadece 280 milyar toplam ve 14 milyar aktif parametreyle, kodlama odaklı birleştirilmiş bir skor indeksinde dikkat çekici bir başarı elde etti. Topluluk, modelin 12 farklı kodlama benchmark'ının ağırlıklı ortalamasında öne çıktığını vurguluyor.",
+  "detayli_icerik_tr": "Baidu'nun yeni büyük dil modeli Ernie 5.5 Flash Preview, Reddit'teki LocalLLaMA topluluğu tarafından paylaşılan bir liderlik tablosunda kodlama yetenekleriyle öne çıktı. Model, toplam 280 milyar parametreye sahip olmakla birlikte, sadece 14 milyar aktif parametreyle çalışıyor; bu da onu düşük parametreli ama yüksek verimli bir çözüm olarak konumlandırıyor.\n\nTopluluk, modelin performansını ölçmek için \"Agentic Coding\" adlı birleştirilmiş bir indeks kullandığını belirtiyor. Bu indeks, yalnızca iki kodlama benchmark'ı içeren AA indeksinin aksine, 12 farklı kodlama ve yazılım mühendisliği benchmark'ını kapsıyor ve her birine belirli bir yüzde ağırlığı veriyor: Terminal-Bench v4.0 (%16), DeepSWE v1.1 (%15), FrontierCode 2.0 (%11), Code Migration (Vals‑AI) (%9), Terminal-Bench v2.1 (%8.5), SRE‑Bench (Vals‑AI) (%8), SWE‑bench Pro (%7.5), Code Arena Elo (%6.5), Program‑Bench (%6), Vibe Code Bench v1.1 (%5.5), SciCode (%4) ve LiveCodeBench v6 (%3).\n\nBu ağırlık dağılımı, modelin gerçek dünya yazılım geliştirme yeteneklerini daha kapsamlı bir şekilde yansıtıyor. Ernie 5.5 Flash Preview, bu indeks içinde üst sıralarda yer alarak, özellikle kod üretimi, hata ayıklama ve kod migrasyonu gibi görevlerde rekabetçi bir performans sergilediği görülüyor. Topluluk üyeleri, modelin düşük aktif parametre sayısına rağmen bu kadar geniş bir benchmark yelpazesinde güçlü sonuçlar almasını şaşırtıcı bulduklarını ifade ediyor.\n\nErnie 5.5 Flash Preview'ın bu başarısı, büyük dil modellerinin sadece parametre büyüklüğüne değil, aynı zamanda görev odaklı optimizasyon ve etkin aktivasyon stratejilerine de bağlı olabileceğini gösteriyor. Bu durum, gelecekte daha hafif ama yüksek performanslı modellerin geliştirilmesine yönelik bir yönelim oluşturabilir.",
+  "onemli_maddeler": [
+    "Ernie 5.5 Flash Preview, 280B toplam ve 14B aktif parametreyle kodlama indeksinde üst sıralara yerleşti.",
+    "\"Agentic Coding\" indeksi, 12 farklı kodlama benchmark'ının ağırlıklı ortalamasını kullanarak model yeteneklerini ölçüyor.",
+    "İndeks, AA indeksinin sadece %25'ini oluşturan iki benchmark'a kıyasla çok daha kapsamlı bir değerlendirme sunuyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Yeni bir büyük dil modelinin düşük aktif parametre sayısına rağmen kodlama alanında güçlü performans göstermesi, sektörde model verimliliği ve maliyet etkinliği konularında önemli bir referans oluşturuyor.",
+  "etiketler": [
+    "Ernie 5.5",
+    "kodlama benchmark",
+    "AI modeli",
+    "LocalLLaMA",
+    "Agentic Coding"
+  ],
+  "anilan_modeller": [
+    "Ernie 5.5 Flash Preview"
+  ],
+  "yorum_tr": "Ernie 5.5 Flash Preview'ın bu sonuçları, geliştiricilerin daha hafif modellerle yüksek kodlama verimliliği elde edebileceğini gösteriyor; aynı zamanda benchmark çeşitliliğinin model değerlendirmesindeki önemini vurguluyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/1qfiy88ml81i1.png?width=640&crop=smart&auto=webp&s=6144c029606dc5dbb59d389eb02192f2464b746c",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xune1i/new_model_ernie_55_flash_preview_hits_strongly_at/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-12T20:13:37.000Z",
+  "slug": "new-model-ernie-5-5-flash-preview-hits-strongly-at-a-low-par"
+}

@@ -1,0 +1,81 @@
+{
+  "baslik_tr": "Google Gemini 4 Hydrogen modeli Pro ve Ultra abonelerine sunuldu",
+  "ozet_tr": "Google, günlük kodlama ve ajan tabanlı görevler için tasarlanmış hızlı Gemini 4 Hydrogen modelini tüm Google AI Studio ve Gemini API katmanlarında, ayrıca Pro ve Ultra aboneliklerinde kullanıma açtı. Model, düşük maliyetli token fiyatları ve 1 milyon tokenlık bağlam penceresiyle, yüksek hız ve kalite dengesi sunuyor.",
+  "detayli_icerik_tr": "Google, Gemini 4 ailesine yeni bir katman ekleyerek Gemini 4 Hydrogen'ı duyurdu. Hydrogen, kodlama, hata ayıklama, veri analizi ve çok modlu araştırma gibi günlük üretkenlik senaryoları için optimize edilmiş bir hız modeli olarak tanıtıldı. Model, 1 milyon giriş ve 1 milyon çıkış token'ını işleyebiliyor ve düşük, orta, yüksek ve ultra yüksek (xhigh) düşünme seviyeleri sayesinde kalite, gecikme ve maliyet arasında esnek bir denge sağlıyor. Token fiyatları ise giriş için milyon başına 1,50 $, çıkış için ise 7,50 $ olarak sabitlenmiş.\n\nHydrogen, Google AI Studio, Gemini API, Gemini for Business, Gemini uygulaması, Google Arama ve ücretli Google AI Pro + Ultra abonelikleri üzerinden Antigravity platformunda kullanılabiliyor. Antigravity ayrıca Orchestrator adlı bir yönlendirici sunuyor; bu özellik, bir oturum içinde Carbon ve Hydrogen modelleri arasında dinamik geçiş yaparak paralel ajanların koordinasyonunu ve hızlı yürütme görevlerini birleştiriyor. Google, Orchestrator sayesinde Carbon'un görev başarısına %24 daha az kota harcayarak ve ortalama tamamlama süresini %19 daha hızlı gerçekleştirerek yaklaştığını iddia ediyor.\n\nPerformans açısından Hydrogen, varsayılan yüksek ayarda Artificial Analysis Intelligence Index testinde 51 puan alarak Argon'un 50 puanını geride bıraktı ve xhigh seviyesinde 54 puana yükseliyor. Terminal-Bench 4.1 testinde ise %57 başarı oranı yakalarken, önceki nesil Gemini 3.8 Flash sadece %18,2 gösterdi. Multimodal Knowledge Agent testinde %53,4, Agents' Last Exam v1.1 testinde ise %71,6 puan elde etti. Ayrıca iç değerlendirmelerde %81 daha az ajan aşırı müdahalesi, %79 daha az eksik hizmet ve %96,7 dürüstlük oranı rapor edildi.\n\nGoogle, Hydrogen'ı geliştiriciler, işletmeler ve son kullanıcılar için bir \"hızlı yürütme katmanı\" olarak konumlandırıyor; derin düşünme ve uzun vadeli akıl yürütme gerektiren Carbon ve Argon gibi modellerin yerine geçmek yerine, bu modellerle birlikte çalışarak üretkenlik ve yanıt kalitesini artırmayı hedefliyor. Bu strateji, DeepMind'in model araştırmalarını doğrudan Google'ın tüketici ve kurumsal AI ürünlerine entegre etme yönündeki çabalarını da pekiştiriyor.",
+  "onemli_maddeler": [
+    "Hydrogen, 1 milyon token bağlam penceresi ve düşük maliyetli token fiyatlarıyla (giriş $1,50 / çıkış $7,50) sunuluyor.",
+    "Orchestrator, Carbon ve Hydrogen modellerini tek bir oturumda dinamik olarak yönlendirerek %24 daha az kota ve %19 daha hızlı tamamlama sağlıyor.",
+    "Artificial Analysis Intelligence Index'te varsayılan yüksek ayarda 51, xhigh ayarda 54 puan alarak Argon'u geride bıraktı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Google'ın yeni hızlı modelini tüm platformlarda sunması, hem geliştiriciler hem de son kullanıcılar için üretkenlik ve maliyet dengesini yeniden tanımlayarak sektörde büyük bir etki yaratıyor.",
+  "etiketler": [
+    "Gemini",
+    "Hydrogen",
+    "Google AI",
+    "Antigravity",
+    "Orchestrator"
+  ],
+  "anilan_modeller": [
+    "Gemini 4 Hydrogen",
+    "Carbon",
+    "Argon",
+    "Gemini 3.8 Flash"
+  ],
+  "yorum_tr": "Hydrogen, yüksek hız ve düşük maliyet gerektiren uygulamalarda devrim yaratırken, Carbon ve Argon gibi derin akıl yürütme modelleriyle birlikte çalışması, Google'ın AI ekosisteminde çok katmanlı bir yaklaşım benimsediğini gösteriyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Gemini 4 Hydrogen",
+      "benchmark": "Artificial Analysis Intelligence Index",
+      "skor": 51,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "default high",
+      "kaynak_metinden_alinti": "Hydrogen scores 51 on the Artificial Analysis Intelligence Index at the default high setting, beating Argon's 50"
+    },
+    {
+      "model": "Gemini 4 Hydrogen",
+      "benchmark": "Artificial Analysis Intelligence Index",
+      "skor": 54,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "xhigh",
+      "kaynak_metinden_alinti": "and reaches 54 at xhigh"
+    },
+    {
+      "model": "Gemini 4 Hydrogen",
+      "benchmark": "Terminal-Bench 4.1",
+      "skor": 57,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "high",
+      "kaynak_metinden_alinti": "scores 57% versus 18.2% on Terminal-Bench 4.1"
+    },
+    {
+      "model": "Gemini 4 Hydrogen",
+      "benchmark": "Multimodal Knowledge Agent",
+      "skor": 53.4,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "scoring 53.4% on Multimodal Knowledge Agent"
+    },
+    {
+      "model": "Gemini 4 Hydrogen",
+      "benchmark": "Agents' Last Exam v1.1",
+      "skor": 71.6,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "71.6% on Agents' Last Exam v1.1"
+    }
+  ],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/11/Google-Gemini-11-12-2026_06_26_PM.jpg",
+  "url": "https://www.testingcatalog.com/google-launches-gemini-4-hydrogen-for-pro-and-ultra-users/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-12T22:40:32.000Z",
+  "slug": "google-launches-gemini-4-hydrogen-for-pro-and-ultra-users"
+}
