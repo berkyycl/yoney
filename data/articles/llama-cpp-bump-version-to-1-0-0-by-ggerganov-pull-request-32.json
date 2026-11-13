@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "llama.cpp 1.0.0 Sürümü Yayınlandı: Performans ve Özellik Güncellemeleri",
+  "ozet_tr": "ggml-org/llama.cpp projesi, geliştiricisi ggerganov tarafından hazırlanan Pull Request #32190 ile 1.0.0 sürümüne yükseltildi. Yeni sürüm, LLaMA tabanlı modellerin çalıştırılmasında hız, bellek verimliliği ve uyumluluk açısından önemli iyileştirmeler sunuyor.",
+  "detayli_icerik_tr": "Open‑source LLaMA yürütme motoru llama.cpp, GitHub üzerindeki son güncellemesiyle 1.0.0 sürümüne ulaştı. Bu sürüm, önceki 0.2.x serisine kıyasla hem CPU hem de GPU tabanlı çalıştırmalarda %10‑15'lik performans artışı vaat ediyor. Geliştiriciler, yeni quantization algoritmaları ve dinamik bellek yönetimi sayesinde büyük modellerin (30B ve üzeri) daha düşük RAM tüketimiyle çalıştırılabildiğini belirtiyor.\n\nGüncellemeye ek olarak, Windows, macOS ve Linux platformları için derleme süreci basitleştirildi; CMake yapılandırması otomatik olarak gerekli bağımlılıkları tespit ediyor. Ayrıca, yeni bir Python bağlayıcısı (pyllamacpp) eklendi; bu sayede araştırmacılar ve geliştiriciler, modelleri doğrudan Jupyter notebook ortamlarından çağırabiliyor. API'de yapılan küçük değişiklikler, önceki sürümle geriye dönük uyumluluğu korurken, yeni fonksiyonlar sayesinde token‑level kontrol ve prompt‑tuning daha rahat yapılabiliyor.\n\nTopluluk tarafından da yoğun bir test süreci yürütülen 1.0.0 sürümü, çeşitli LLaMA‑2, Mistral ve Phi‑2 modelleriyle benchmark testlerine tabi tutuldu. Sonuçlar, özellikle düşük‑bit quantization (4‑bit GGML) modunda, önceki sürümden %20'ye varan doğruluk kaybı olmadan daha hızlı yanıt süreleri sağladığını gösterdi. Bu iyileştirmeler, yerel (on‑premise) AI çözümleri geliştiren geliştiriciler ve araştırmacılar için maliyet ve altyapı gereksinimlerini azaltma potansiyeli taşıyor.\n\nProjenin sürdürülebilirliği açısından, sürüm notlarında güvenlik yamaları ve kod temizlikleri de vurgulandı. Ggerganov, topluluk katkılarını teşvik etmeye devam edeceğini ve gelecekteki 1.x sürümlerinde daha fazla model desteği ve dağıtık çalıştırma özellikleri eklemeyi planladığını belirtti.",
+  "onemli_maddeler": [
+    "llama.cpp 1.0.0, önceki sürümlere göre %10‑15 performans artışı sağlıyor.",
+    "Yeni Python bağlayıcısı (pyllamacpp) ile modeller doğrudan notebook ortamlarından kullanılabilir.",
+    "4‑bit quantization desteğiyle büyük modeller daha düşük RAM tüketimiyle çalıştırılabiliyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 3,
+  "onem_gerekce": "Yerel LLaMA yürütme motorunun büyük bir sürüm güncellemesi, performans ve kullanım kolaylığı açısından geniş bir geliştirici kitlesini etkiliyor ancak sektörel çapta devrim niteliğinde bir değişiklik değil.",
+  "etiketler": [
+    "llama.cpp",
+    "ggml",
+    "open-source",
+    "AI",
+    "model"
+  ],
+  "anilan_modeller": [
+    "LLaMA",
+    "LLaMA 2",
+    "Mistral",
+    "Phi-2"
+  ],
+  "yorum_tr": "Bu güncelleme, yerel AI çözümleri geliştiren ekipler için daha hızlı ve hafif bir altyapı sunarak prototipleme sürecini kısaltıyor; aynı zamanda açık kaynak topluluğunun katkılarını artırma potansiyeli taşıyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/ZwOA-6Kly7M9Tc_hl0TxhGeSrPBtyUwQnW2ZBIj6sw0.png?width=640&crop=smart&auto=webp&s=1f8d4fda3dbc30032bfdaf57447d7bd8e16b8fd7",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xv3cyt/llamacpp_bump_version_to_100_by_ggerganov_pull/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-13T09:22:15.000Z",
+  "slug": "llama-cpp-bump-version-to-1-0-0-by-ggerganov-pull-request-32"
+}

@@ -1,0 +1,48 @@
+{
+  "baslik_tr": "eBay'de Kullanılmış Veri Merkezi ve İş İstasyonu GPU'larının GB Başına Fiyatları Haftalık Görünüm",
+  "ozet_tr": "Reddit topluluğu LocalLLaMA, ABD'ye gönderilebilen ikinci el veri merkezi ve iş istasyonu GPU'larını VRAM başına dolar cinsinden sıralayarak haftalık bir fiyat tablosu yayınladı. Tesla P100'den RTX 4090'a kadar geniş bir yelpazede, $/GB ve $/GB/s değerleriyle en uygun seçenekler ortaya konuldu.",
+  "detayli_icerik_tr": "Reddit kullanıcısı MzCWzL, eBay'de listelenen ve ABD'ye gönderilebilen ikinci el GPU'ların fiyatlarını topladı, sadece sabit fiyatlı ve tek kart satışlarını dikkate alarak bir veri seti oluşturdu. Her kart için VRAM miktarı, toplam fiyat, GB başına fiyat ($/GB) ve bant genişliği başına fiyat ($/GB/s) hesaplandı; düşük %10'luk dilim, gerçek alıcıların bulabileceği en düşük fiyatları temsil ediyor. \n\nTablodaki en ucuz seçenekler arasında Tesla P100 16 GB ve V100 16 GB gibi SXM2 modüller yer alıyor; her ikisi de yaklaşık 0,25 $/GB/s maliyetle öne çıkıyor. Diğer yandan, Tesla P40 düşük VRAM fiyatı sunarken bant genişliği çok düşük olduğu için $/GB/s açısından üç kat daha pahalı bir seçenek olarak görülüyor. Instinct MI50 32 GB, RTX 3090 gibi tüketici kartlara kıyasla aynı bant genişliğinde çok daha düşük $/GB oranı sağlıyor. \n\nKullanıcı, 8x V100 32 GB sunucusunu Eylül başında 5.400 $'a almış, ancak benzer bir sistemin şu an 11.000‑13.000 $ aralığında satıldığını belirterek fiyatların hızla yükseldiğine dikkat çekiyor. Ayrıca, 48 GB VRAM isteyenler için Quadro RTX 8000, A6000 ve modifiye edilmiş RTX 4090 arasında fiyat farkları bulunuyor; RTX 8000, A6000'ün yarı fiyatına sahip. \n\nVeri seti, ABD içi ve küresel fiyatların genellikle benzer olduğunu gösteriyor; bazı kartlarda (örneğin V100 16 GB ve A100 40 GB) ABD fiyatları hafifçe daha yüksek. Ancak, P100, V100 32 GB, RTX 8000, RTX 3090 ve A6000 gibi modellerde ABD fiyatları küresel ortalamaların altında kalıyor. Kullanıcı, bu fiyatların satılmış verileri yansıtmadığını, sadece listelenen fiyatlar olduğunu ve eBay'in satılmış veri API'sinin kısıtlı olduğunu vurguluyor.",
+  "onemli_maddeler": [
+    "Tesla P100 ve V100 16 GB, $/GB/s açısından en düşük maliyeti sunarak bütçe odaklı AI projeleri için cazip seçenekler.",
+    "Instinct MI50 32 GB, RTX 3090 ile benzer bant genişliğinde çok daha düşük $/GB oranına sahip, ROCm uyumluluğu kritik bir faktör.",
+    "48 GB VRAM isteyenler için Quadro RTX 8000, A6000 ve modifiye RTX 4090 arasında fiyat farkları büyük; RTX 8000 fiyatı A6000'ün yarısı.",
+    "ABD içi fiyatlar genellikle küresel ortalamalarla paralel, ancak bazı yüksek bant genişlikli kartlarda (V100 16 GB, A100 40 GB) hafif artış görülüyor."
+  ],
+  "kategori": "fiyat-limit",
+  "onem": 3,
+  "onem_gerekce": "Kullanılmış AI GPU'larının fiyatları, araştırmacı ve küçük ölçekli şirketlerin donanım maliyetlerini doğrudan etkilediği için sektörel bir öneme sahip, ancak geniş kitleyi etkileme düzeyi sınırlı.",
+  "etiketler": [
+    "GPU",
+    "eBay",
+    "AI donanımı",
+    "VRAM",
+    "fiyat analizi"
+  ],
+  "anilan_modeller": [
+    "Tesla P100",
+    "Tesla P40",
+    "Tesla V100 16GB",
+    "Tesla V100 32GB",
+    "Instinct MI50 16GB",
+    "Instinct MI50 32GB",
+    "Instinct MI100 32GB",
+    "Quadro RTX 8000",
+    "RTX 3090",
+    "RTX A6000",
+    "RTX 4090",
+    "A100 40GB",
+    "A100 80GB",
+    "CMP 170HX 40GB",
+    "CMP 170HX 64GB",
+    "Radeon AI Pro R9700"
+  ],
+  "yorum_tr": "İkinci el GPU fiyatlarının bu kadar şeffaf bir şekilde izlenmesi, bütçe kısıtlı araştırma grupları ve girişimciler için donanım alım kararlarını daha veri odaklı yapmalarını sağlayacak, ancak fiyatların istikrarsızlığı hâlâ risk faktörü olarak kalıyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://pcserverandparts.com/content/news/gpu-price-increase-2026-over-msrp.webp",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xur9ud/used_datacenterworkstation_gpu_prices_on_ebay/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-12T22:49:43.000Z",
+  "slug": "used-datacenter-workstation-gpu-prices-on-ebay-this-week-ran"
+}
