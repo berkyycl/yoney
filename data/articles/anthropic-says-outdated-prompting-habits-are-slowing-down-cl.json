@@ -1,0 +1,36 @@
+{
+  "baslik_tr": "Anthropic, Claude Opus 5.5'te Performansı Düşüren Eski Prompt Alışkanlıklarını Uyardı",
+  "ozet_tr": "Anthropic, Claude Opus 5.5'in yeni adaptif akıl yürütme yeteneklerine rağmen kullanıcıların hâlâ eski nesil modellerde kullandıkları talimatları sürdürdüklerini belirtti. \"think hard\" gibi ifadelerden kaçınmak, varsayılan \"Medium\" çaba seviyesini tercih etmek ve tek bir mesajda istenen çıktıyı tanımlamak, modelin hızını ve verimliliğini artırıyor.",
+  "detayli_icerik_tr": "Anthropic, Pro, Max, Ultra ve Team planlarının varsayılan modeli haline gelen Claude Opus 5.5 için kullanıcıların hâlâ eski nesil modellerde işe yarayan bazı prompt kalıplarını kullandığını tespit etti. Şirket, \"think hard\" ya da \"think carefully\" gibi ifadelerin modelin kendi akıl yürütme mekanizmasını yavaşlattığını, kalite kaybına yol açmadığını ancak yanıt süresini uzattığını belirtti.\n\nYeni model, görev ve seçilen çaba seviyesine göre akıl yürütme derinliğini otomatik olarak ayarlıyor. Anthropic'in iç testlerinde, bu ifadeler olmadan verilen prompt'ların yanıt süresi daha hızlı, kalite ise ölçülebilir bir fark göstermiyor. Bu nedenle, kullanıcıların bu eski kalıpları prompt'larından çıkarmaları öneriliyor.\n\nOpus 5.5'in varsayılan çaba seviyesi \"Medium\" olarak ayarlandı; bu seviye, önceki nesil Opus 5'in \"High\" seviyesindeki performansına eşdeğer. Daha yüksek çaba seviyeleri (High) ek maliyet getiriyor ve her zaman daha iyi sonuç vermiyor. Kullanıcılar, yalnızca Medium seviyenin yetersiz kaldığı durumlarda çaba seviyesini yükseltmeli ve bu ayarı gönder düğmesinin yanındaki model menüsünden değiştirebiliyor.\n\nAnthropic, ayrıca dosya ve sistem entegrasyonlarını, istenen sonucun tek bir mesajda tanımlanmasını, diyagram ve tabloların görsel ya da dosya olarak eklenmesini ve tasarım görevlerinde istenmeyen stillerin spesifik olarak adlandırılmasını öneriyor. Bu yaklaşımlar, modelin çok adımlı görevleri tek seferde tamamlamasını, yoğun grafiklerden değer okumasını ve tasarım stilini daha hassas bir şekilde yönlendirmesini sağlıyor. Sonuç olarak, daha güçlü bir model olan Opus 5.5, daha az adımda ve daha düşük token maliyetiyle daha yüksek kalite sunabiliyor.",
+  "onemli_maddeler": [
+    "Prompt'larda \"think hard\" gibi eski ifadelerden kaçının; model kendi akıl yürütmesini otomatik yapar.",
+    "Varsayılan \"Medium\" çaba seviyesini kullanın; yüksek seviyeler ekstra maliyet getirir ve her zaman daha iyi sonuç vermez.",
+    "İstenen çıktıyı tek bir mesajda tanımlayın; hedef, format ve geri bildirim zamanını aynı anda belirtin.",
+    "Diyagram, tablo ve dosyaları görsel ya da ek dosya olarak gönderin; metin tabanlı transkripsiyonlara gerek kalmaz.",
+    "Tasarım talimatlarında istenmeyen stilleri spesifik olarak adlandırın, genel yasaklamalardan kaçının."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Claude Opus 5.5'in yeni çaba seviyeleri ve adaptif akıl yürütme özellikleri, kullanıcıların verimliliğini ve maliyet etkinliğini doğrudan etkileyen kritik güncellemeler içeriyor.",
+  "etiketler": [
+    "Claude Opus 5.5",
+    "prompting",
+    "Anthropic",
+    "effort level",
+    "AI best practices"
+  ],
+  "anilan_modeller": [
+    "Claude Opus 5.5",
+    "Claude Opus 5",
+    "Sonnet"
+  ],
+  "yorum_tr": "Bu öneriler, geliştiricilerin ve son kullanıcıların Opus 5.5'in potansiyelini tam olarak kullanmasını sağlayarak yanıt süresini kısaltıp maliyetleri düşürür; aynı zamanda yeni modelin adaptif akıl yürütme yeteneklerine uygun modern prompt tekniklerinin benimsenmesini teşvik eder.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/11/anthropic_claude_logo.png",
+  "url": "https://the-decoder.com/anthropic-says-outdated-prompting-habits-are-slowing-down-claude-opus-5-5/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-14T16:42:56.000Z",
+  "slug": "anthropic-says-outdated-prompting-habits-are-slowing-down-cl"
+}

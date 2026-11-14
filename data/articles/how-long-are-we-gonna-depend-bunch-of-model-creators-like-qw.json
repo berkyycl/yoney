@@ -1,0 +1,53 @@
+{
+  "baslik_tr": "100B Model Boyutlarına Sahip Model Yaratıcılarına Ne Kadar Bağlı Kalacağız?",
+  "ozet_tr": "Kullanıcılar, 2027 yılına kadar yaklaşık 100 milyar parametreli modellerin hâlâ yeterli olacağını, ancak sonrasında 300B ve üzeri modellerin donanım sınırlarını zorlayacağını belirtiyor. Bu durumun üstesinden gelmek için topluluk, distilasyon ve düşük-bit model tekniklerine yöneliyor.",
+  "detayli_icerik_tr": "Reddit topluluğu, mevcut 100B civarındaki modellerin (Qwen 4.X & 5, Gemma‑5, NVIDIA'nın 25‑200B arası orta‑büyük modelleri) 2027 yılına kadar yeterli kalacağını öne sürüyor. Ancak 2028 ve sonrasında model boyutlarının 300B'yi aşarak 500B seviyelerine ulaşması bekleniyor; bu büyüklükler 128 GB RAM ve 24‑32 GB VRAM gibi tipik cihazların kapasitesini aşacak.\n\nBüyüyen model boyutları, özellikle Unified 128 GB cihazları ve Q4 gibi sınırlı bellekli sistemlerde çalıştırılamaz hale gelecek. Kullanıcılar, bu soruna çözüm olarak iki ana yaklaşımı vurguluyor: model distilasyonu ve düşük‑bit (1‑bit, 2‑bit, ternary, BitNet) modeller. Distilasyon konusunda şu ana kadar üç önemli örnek bulunuyor: DeepSeek‑R1‑Distills, Empero's Distills ve XiaomiMiMo'nun MiMo‑V2.6‑Distill‑Qwen‑9B.\n\nDüşük‑bit modeller ise iki kategoriye ayrılıyor. Kategori 1, yüksek kaliteye sahip yerel (native) düşük‑bit büyük modelleri içeriyor; örnekler arasında NVIDIA‑Nemotron‑3.5‑Bolt‑74B‑A9B‑24GB‑GGUF ve AngelSlim'in Hy4‑preview‑GGUF ve Hy3‑GGUF modelleri yer alıyor. Kategori 2, Bonsai gibi diğer düşük‑bit modelleri kapsıyor. Topluluk, özellikle 100B seviyesindeki ternary modellerin 20 GB gibi bir boyuta indirgenebileceğini ve sadece 24‑32 GB RAM ile CPU‑only çalıştırılabileceğini belirtiyor.\n\nKullanıcılar, gelecekteki büyük modellerin erişilebilirliğini korumak için bu alternatif yöntemlerin geliştirilmesi ve paylaşılması gerektiğini vurguluyor. Topluluk içindeki tartışmalar, yeni distilasyon teknikleri ve düşük‑bit model optimizasyonları için daha fazla kaynak ve iş birliği talep ediyor.",
+  "onemli_maddeler": [
+    "2027'ye kadar ~100B modeller hâlâ yeterli kabul ediliyor.",
+    "2028 sonrası 300B‑500B modeller mevcut donanım sınırlarını aşacak.",
+    "Distilasyon ve düşük‑bit (1‑bit, 2‑bit, ternary) modeller alternatif çözüm olarak öneriliyor.",
+    "Topluluk, mevcut distilasyon ve düşük‑bit model örneklerini paylaşarak iş birliğini teşvik ediyor."
+  ],
+  "kategori": "diger",
+  "onem": 3,
+  "onem_gerekce": "Topluluk içinde gelecekteki model boyutu trendleri ve donanım sınırlamaları üzerine yapılan tartışma, geliştiriciler ve son kullanıcılar için planlama açısından önemli ancak henüz sektörel bir değişiklik yaratmadığı için orta seviyede bir öneme sahiptir.",
+  "etiketler": [
+    "model-boyutu",
+    "donanım",
+    "distilasyon",
+    "düşük-bit",
+    "AI-topluluğu"
+  ],
+  "anilan_modeller": [
+    "Qwen 4.X",
+    "Qwen 5",
+    "Gemma-5",
+    "NVIDIA medium/big 25-200B",
+    "DeepSeek-V4-Flash-0731",
+    "DeepSeek-V4.1-Flash-1017",
+    "Ling-3.0-flash",
+    "Ling-3.1-flash",
+    "MiniMax-M2.7",
+    "MiniMax-M3",
+    "MiniMax-M3.1-Flash",
+    "Step-3.7-Flash",
+    "Step-5-Preview",
+    "Inkling-Small",
+    "Inkling-2-Small",
+    "GLM-4.X",
+    "GLM-5.X",
+    "Mistral-Large-3",
+    "Mistral-Large-4",
+    "Hy3",
+    "Hy4"
+  ],
+  "yorum_tr": "Model boyutlarının hızla büyümesi, mevcut uç cihazların sınırlarını zorlayacak; bu yüzden distilasyon ve düşük‑bit teknikleri, erişilebilir AI çözümleri için kritik bir rol oynayacak.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/87ipy7w9kk1i1.gif?width=320&crop=smart&s=ea779ed9843169b176468b6b4b225968cd08dc7a",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xw0xeu/how_long_are_we_gonna_depend_bunch_of_model/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-14T12:10:50.000Z",
+  "slug": "how-long-are-we-gonna-depend-bunch-of-model-creators-like-qw"
+}

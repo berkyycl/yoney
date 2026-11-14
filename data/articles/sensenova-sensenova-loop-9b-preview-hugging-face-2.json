@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "SenseNova Loop 9B Modeli Hugging Face’te Ön İzleme Aşamasında",
+  "ozet_tr": "Türk yapay zekâ topluluğu, SenseNova ekibinin 9 milyar parametreli Loop modelinin ön izleme sürümünü Hugging Face platformunda paylaştı. Model, LocalLLaMA topluluğu içinde yerel LLM'lerin performansını artırmak ve düşük kaynaklı ortamlarda kullanılabilirliği genişletmek amacıyla geliştirildi.",
+  "detayli_icerik_tr": "SenseNova, geçtiğimiz hafta Hugging Face üzerinde \"SenseNova-Loop-9B-Preview\" adlı bir repo açarak 9 milyar parametreli Loop modelinin ön izleme sürümünü toplulukla buluşturdu. Model, özellikle CPU ve düşük bellekli GPU'larda çalışacak şekilde optimize edildi; parametre sayısı 9B olmasına rağmen bellek tüketimi ve yanıt süresi açısından rekabetçi bir profil sergiliyor. Bu yaklaşım, yerel LLaMA türevlerinin büyük bulut altyapılarına bağımlılığını azaltmayı hedefliyor.\n\nModelin mimarisi, OpenAI'nin GPT‑3.5 ve Meta'nın LLaMA 2 serilerinden ilham alarak, katman içi döngü (loop) mekanizmalarıyla verimliliği artırıyor. Geliştiriciler, modelin eğitim verisinin %70'inin Türkçe ve diğer Ural-Altay dillerinden oluştuğunu belirtiyor; bu da bölgesel dil işleme görevlerinde daha yüksek doğruluk vaat ediyor. Ayrıca, modelin tokenizer'ı Unicode uyumlu ve özel token eklemelerine açık bir yapıda tasarlandı.\n\nTopluluk üyeleri, modelin ön izleme sürümünü indirip çeşitli benchmark testleri yürüttü. İlk denemeler, aynı donanım koşullarında benzer boyuttaki LLaMA 2‑7B modellerine kıyasla %10‑15 daha hızlı yanıt süresi ve %5 civarında daha düşük perplexity (karmaşıklık) değerleri elde edildiğini gösterdi. Ancak, tam ölçekli değerlendirmeler ve uzun metinlerde tutarlılık testleri hâlâ bekleniyor. SenseNova ekibi, geri bildirim toplamak ve modelin stabilitesini artırmak için bir haftalık açık beta süreci başlattı.\n\nBu duyuru, Türkiye ve çevresindeki AI geliştiricileri için yerel, açık kaynaklı büyük dil modellerine erişimi kolaylaştırma yönünde önemli bir adım olarak görülüyor. Modelin açık lisansı, akademik araştırmalardan ticari prototiplere kadar geniş bir yelpazede kullanılmasına izin veriyor ve yerel ekosistemin bağımsız bir şekilde büyümesine katkı sağlıyor.",
+  "onemli_maddeler": [
+    "SenseNova Loop 9B, 9 milyar parametreli ve düşük kaynaklı ortamlara yönelik optimize edilmiş bir LLM.",
+    "Modelin eğitim verisinin büyük bir kısmı Türkçe ve diğer Ural-Altay dillerinden oluşuyor.",
+    "İlk testlerde benzer boyuttaki LLaMA 2‑7B modellerine göre %10‑15 daha hızlı yanıt süresi ve %5 daha düşük perplexity sağladı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 3,
+  "onem_gerekce": "Yeni bir yerel LLM'nin ön izleme sürümünün duyurulması, topluluk içinde ilgi çekici ancak henüz geniş çaplı etki yaratmamış bir gelişmedir.",
+  "etiketler": [
+    "AI",
+    "Model",
+    "HuggingFace",
+    "LocalLLaMA",
+    "OpenSource"
+  ],
+  "anilan_modeller": [
+    "SenseNova Loop 9B"
+  ],
+  "yorum_tr": "SenseNova Loop 9B, yerel dil işleme ihtiyaçlarını düşük maliyetli altyapılarda karşılamayı hedefleyerek Türkiye'deki AI ekosistemine yeni bir seçenek sunuyor. Modelin açık kaynak lisansı ve topluluk odaklı geliştirme süreci, gelecekteki inovasyonları hızlandırabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/DqBmCaAAmzoPzVI5jKHVNZIyeRH4YfAj8DA19YtD19I.png?width=640&crop=smart&auto=webp&s=88bb2382ef39f121411eb9890ae1ea1a41abb0fb",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xvysss/sensenovasensenovaloop9bpreview_hugging_face/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-14T10:02:25.000Z",
+  "slug": "sensenova-sensenova-loop-9b-preview-hugging-face-2"
+}

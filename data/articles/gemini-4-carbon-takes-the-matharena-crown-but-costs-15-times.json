@@ -1,0 +1,74 @@
+{
+  "baslik_tr": "Gemini 4 Carbon, MathArena'da birinciliği elde etti ancak GPT-6.1 Sol'dan 15 kat pahalı",
+  "ozet_tr": "Google'ın Gemini 4 Carbon modeli, MathArena matematik benchmark'ında %85.4 başarı oranıyla birinci oldu ve OpenAI'nin GPT-6.1 Sol modelini geride bıraktı. Ancak aynı test koşullarında modelin işlem maliyeti, GPT-6.1 Sol'dan yaklaşık 15 kat daha yüksek bulunuyor.",
+  "detayli_icerik_tr": "The Decoder'ın haberine göre, Google'ın yeni Gemini 4 Carbon modeli, MathArena adlı matematik benchmark'ında %85.4 ±3.0 puan alarak birincilik tacını taktı. Bu başarı, bir süredir OpenAI dışındaki modellerin liderliğini elinde tutamadığı bir alanda önemli bir kırılma noktası olarak görülüyor.\n\nİkinci sırada Anthropic'in Claude Fable 5.2 modeli %82.8 ±5.3 puanla yer alırken, üçüncü sırada OpenAI'nin henüz kamuya açık olmayan GPT-6.1 Sol modeli %80.6 ±2.7 puanla konumlandı. Açık kaynaklı en iyi model ise Moonshot AI'nin Kimi K3.1 Pro'su %54.3 ±5.8 puanla listede yer alıyor.\n\nPerformans açısından Gemini 4 Carbon, görevleri yarıda bırakmadan tamamlamasıyla öne çıkıyor; tek bir testte 11 saatten fazla süren bir script çalıştırarak zaman sınırını aşması, hem dayanıklılığını hem de potansiyel risklerini gösterdi. Bununla birlikte, aynı test ayarları altında modelin maliyeti yaklaşık $15.70 ±$1.33 iken, GPT-6.1 Sol sadece $1.07 ±$0.018 tutuyor; yani Carbon modeli yaklaşık 15 kat daha pahalı.\n\nBu fiyat farkı, yüksek doğruluk ve süreklilik isteyen akademik ve endüstriyel uygulamalar için Gemini 4 Carbon'un cazip olabileceğini, ancak maliyet hassasiyeti yüksek projeler için OpenAI'nin daha ekonomik çözümlerini tercih edebileceğini işaret ediyor. Modelin Kasım 10, 2026'da piyasaya sürülmesi, benchmark sonuçlarının güncel ve rekabetçi bir ortamda elde edildiğini gösteriyor.",
+  "onemli_maddeler": [
+    "Gemini 4 Carbon, MathArena benchmark'ında %85.4 puanla birinci oldu.",
+    "Modelin işlem maliyeti, GPT-6.1 Sol'dan yaklaşık 15 kat daha yüksek ($15.70 vs $1.07).",
+    "En yaygın başarısızlık modu zaman sınırını aşmak; bir testte 11 saatlik script çalıştırdı.",
+    "Claude Fable 5.2 ikinci sırada %82.8 puanla yer alırken, maliyeti $40.20, yani daha da pahalı.",
+    "Açık kaynak en iyi model Kimi K3.1 Pro %54.3 puanla geride kaldı."
+  ],
+  "kategori": "benchmark",
+  "onem": 5,
+  "onem_gerekce": "MathArena gibi kritik bir matematik benchmark'ında Google'ın modeli birincilik elde etmesi, sektörde model rekabetini ve fiyat-performans dengelerini yeniden şekillendirebilir.",
+  "etiketler": [
+    "MathArena",
+    "Gemini",
+    "GPT-6.1",
+    "Claude Fable",
+    "AI benchmark"
+  ],
+  "anilan_modeller": [
+    "Gemini 4 Carbon",
+    "Claude Fable 5.2",
+    "GPT-6.1 Sol",
+    "Kimi K3.1 Pro"
+  ],
+  "yorum_tr": "Gemini 4 Carbon'un yüksek doğrulukla öne çıkması, araştırmacılar ve yüksek‑riskli mühendislik uygulamaları için yeni bir seçenek sunuyor; ancak maliyet farkı, geniş ölçekli kullanımda OpenAI modellerinin hâlâ tercih edilmesine yol açabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Gemini 4 Carbon",
+      "benchmark": "MathArena",
+      "skor": 85.4,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Gemini 4 Carbon has become the first non-OpenAI model in a while to top the MathArena math benchmark. It knocked GPT-6.1 Sol from the top spot"
+    },
+    {
+      "model": "Claude Fable 5.2",
+      "benchmark": "MathArena",
+      "skor": 82.8,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Claude Fable 5.2 came in second"
+    },
+    {
+      "model": "GPT-6.1 Sol",
+      "benchmark": "MathArena",
+      "skor": 80.6,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "GPT-6.1 Sol (max) ... 80.6% ±2.7%"
+    },
+    {
+      "model": "Kimi K3.1 Pro",
+      "benchmark": "MathArena",
+      "skor": 54.3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Best open model Kimi K3.1 Pro (max) ... 54.3% ±5.8%"
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/11/gemini-4_carbon_logo.png",
+  "url": "https://the-decoder.com/gemini-4-carbon-takes-the-matharena-crown-but-costs-15-times-more-than-gpt-6-1-sol/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-14T16:48:01.000Z",
+  "slug": "gemini-4-carbon-takes-the-matharena-crown-but-costs-15-times"
+}
