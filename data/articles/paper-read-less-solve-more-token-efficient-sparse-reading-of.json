@@ -1,0 +1,69 @@
+{
+  "baslik_tr": "Daha Az Oku, Daha Fazla Çöz: AI Ajanları İçin Token-Etkili Seyrek Okuma",
+  "ozet_tr": "Araştırmacılar, AI ajanlarının web sayfaları ve belgeler gibi dış kaynakları okurken gereksiz veri tüketimini azaltan SparseRead adlı bir okuma kontrol katmanı geliştirdi. Model mimarisine dokunmadan, okuma niyeti protokolü ve bütçeli okuma kapısı sayesinde token sayısı %92,9’a kadar, yanıt süresi ise %89’a kadar düşürülüyor.",
+  "detayli_icerik_tr": "Web‑tabanlı AI ajanları, görevlerini yerine getirirken genellikle tam sayfa ya da belge içeriğini alır; bu da token ve gecikme maliyetlerini artırırken ilgili kanıtların gölgelendiği bir durum yaratır. Bu sorunu çözmek amacıyla geliştirilen SparseRead, ajan modeline müdahale etmeden içerik kabulünü yöneten yeniden kullanılabilir bir katman sunar. Katman, Read Intent Protocol ile ajanların değişen bilgi ihtiyaçlarını ve kaynak kapsamını izler, Adaptive Reader Backends aracılığıyla kanıtların nasıl bulunup sunulacağını belirler ve Budgeted Read Gate ile bir oturumdaki toplam ham veri maruziyetini sınırlar; gerektiğinde tam görünüm geri dönüşü de sağlar.\n\nSparseRead'in tek bir arayüzü, farklı veri kaynakları (web sayfaları, kod depoları, araç yanıtları vb.) arasında kanıt edinimini değiştirilebilir kılar. Altı farklı büyük dil modeli, Claude Opus 5 dahil, ve beş senaryo üzerinde yapılan deneylerde, toplam token tüketimi %92,9’a, işlem süresi %89,0’a kadar azaldı; görev kalitesi ise %97 oranında korundu ya da iyileştirildi. Özellikle web derin‑arama görevlerinde token tasarrufu %31‑43, görev tamamlama süresi ise %23‑37 oranında azaldı.\n\nAyrıntılı ayrıştırma çalışmaları, üç temel tasarım bileşeninin (niyet protokolü, adaptif okuyucu ve bütçeli kapı) her birinin performans üzerindeki etkisini doğruladı. Ayrıca SparseRead, üç farklı ajan çerçevesiyle entegrasyonu sayesinde geniş bir uygulama yelpazesinde taşınabilirliğini kanıtladı. Proje kodları, GitHub üzerinden erişilebilir ve teknik rapor arXiv'de yayımlandı.",
+  "onemli_maddeler": [
+    "SparseRead, dış içerik okuma sürecinde token tüketimini %92,9’a kadar azaltıyor.",
+    "Wall‑time (işlem süresi) %89,0’a kadar düşürülerek yanıt gecikmesi önemli ölçüde azaltılıyor.",
+    "Model kalitesini %97 oranında koruyarak ya da iyileştirerek görev başarısını sürdürüyor."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "Token ve gecikme maliyetlerini büyük ölçüde düşüren bir yöntem, özellikle maliyet‑sensitif bulut ortamlarında ve gerçek‑zamanlı AI ajan uygulamalarında kritik bir araştırma ilerlemesi olarak değerlendirilebilir.",
+  "etiketler": [
+    "AI ajanları",
+    "SparseRead",
+    "token verimliliği",
+    "benchmark",
+    "LLM"
+  ],
+  "anilan_modeller": [
+    "Claude Opus 5"
+  ],
+  "yorum_tr": "SparseRead, AI ajanlarının dış veri tüketimini optimize ederek hem maliyet hem de performans açısından geliştiricilere yeni bir araç sunuyor; bu, ölçeklenebilir ve düşük gecikmeli uygulamalarda geniş çaplı benimsenmeyi tetikleyebilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Claude Opus 5",
+      "benchmark": "Total Token Reduction",
+      "skor": 92.9,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "up to",
+      "kaynak_metinden_alinti": "SparseRead reduces total tokens by up to 92.9%"
+    },
+    {
+      "model": "Claude Opus 5",
+      "benchmark": "Wall Time Reduction",
+      "skor": 89,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "up to",
+      "kaynak_metinden_alinti": "SparseRead reduces wall time by up to 89.0%"
+    },
+    {
+      "model": "Claude Opus 5",
+      "benchmark": "Web Deep-Search Token Reduction",
+      "skor": 43,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "31.0-43.0",
+      "kaynak_metinden_alinti": "On Web deep-search tasks, it reduces tokens by 31.0--43.0%"
+    },
+    {
+      "model": "Claude Opus 5",
+      "benchmark": "Web Deep-Search Time Reduction",
+      "skor": 37,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "23.0-37.0",
+      "kaynak_metinden_alinti": "On Web deep-search tasks, it reduces task completion time by 23.0--37.0%"
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/5x3jcp5smi1i1.gif?width=640&crop=smart&s=3356b2ea78bcbcd17f443cb0eef59971d7d20ac7",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xvuit5/paper_read_less_solve_more_tokenefficient_sparse/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-14T05:41:22.000Z",
+  "slug": "paper-read-less-solve-more-token-efficient-sparse-reading-of"
+}

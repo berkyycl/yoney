@@ -1,0 +1,62 @@
+{
+  "baslik_tr": "OpenAI, robotik araştırmacılarını diğer ekiplere yönlendiriyor; genel amaçlı modeller robotik AI ihtiyacını azaltabilir",
+  "ozet_tr": "OpenAI, robotik ekibini yeniden yapılandırarak araştırmacılarını ana araştırma ve uygulama birimlerine taşıdı. Şirket, GPT-6 Astra gibi genel amaçlı modellerin robotları doğrudan kontrol edebileceğini ve bu sayede özel robotik AI modellerine duyulan ihtiyacın azalacağını belirtiyor.",
+  "detayli_icerik_tr": "OpenAI, robotik araştırma ekibini iki ana gruba ayırdı. Araştırmacılar, Chief Research Officer Mark Chen liderliğindeki ana araştırma ekibine katılırken, uygulamalı robotik ve donanım ekipleri Greg Brockman'ın Applied organizasyonuna dahil edildi. Bu karar, şirketin CoRL (Conference on Robot Learning) fuarı için rezerve ettiği standın boş kalmasıyla kısa sürede hayata geçti.\n\nŞirket, bu yeniden yapılandırmanın temel gerekçesi olarak GPT-6 Astra gibi genel amaçlı modellerin robotları doğrudan yönlendirebilme yeteneğini gösteriyor. Nvidia tarafından yürütülen bir çalışmada, Astra destekli bir ajan, simüle edilmiş DROID robotu üzerinde %74.8 başarı oranı yakalarken, en iyi özelleşmiş robotik modeller %51 başarı gösterdi.\n\nOpenAI ayrıca yeni bir robotik benchmark olan StationeryBench'i tanıttı. Bu testte, çift kollu YAM robot kolları üzerinde masa üzerindeki nesnelerle ilgili beş görevden oluşan 200 deneme gerçekleştirildi. Astra, 100 görevden 7 tanesini tamamen tamamlayarak %7 tamamlama oranı elde etti; MolmoAct2 ise hiçbir görevi tamamlayamadı. Ortalama ilerleme puanı açısından Astra 46, MolmoAct2 ise 12 puan aldı.\n\nOpenAI, 2020'de robotik birimini kapatmış, 2024'te yeniden kurmuş ve 2027'de halka açık bir robot demosu hedefliyor. Ancak şirket, Anthropic gibi rakiplerin ilerlemesi ve finansal baskılar nedeniyle temel yapay zeka işine odaklanma ihtiyacı duyuyor. Uzmanlar, genel amaçlı modellerin maliyet, güvenilirlik ve enerji tüketimi gibi konularda hâlâ özelleşmiş modellerin avantajlarını koruyabileceğini vurguluyor.",
+  "onemli_maddeler": [
+    "Robotik araştırmacılar, ana araştırma ve uygulama ekiplerine yeniden atanarak OpenAI'nin organizasyon yapısı değiştirildi.",
+    "GPT-6 Astra, simüle edilmiş robotik görevlerde %74.8 başarı oranı yakalayarak özelleşmiş modelleri geride bıraktı.",
+    "StationeryBench benchmark'inde Astra, 200 denemede %7 tamamlama oranı ve 46 ortalama ilerleme puanı elde etti.",
+    "OpenAI, 2027'de halka açık bir robot demosu hedefliyor ve finansal baskılar nedeniyle temel AI işine odaklanıyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "OpenAI'nin robotik ekibini yeniden yapılandırması ve genel amaçlı modellerin robotik alandaki üstün performansı sektördeki stratejik yönelimleri ve araştırma önceliklerini etkileyen kritik bir gelişmedir.",
+  "etiketler": [
+    "OpenAI",
+    "robotik",
+    "GPT-6 Astra",
+    "genel amaçlı modeller",
+    "benchmark"
+  ],
+  "anilan_modeller": [
+    "GPT-6 Astra",
+    "MolmoAct2"
+  ],
+  "yorum_tr": "Genel amaçlı modellerin robotik görevlerdeki başarısı, OpenAI'nin özelleşmiş robotik ekiplerine olan ihtiyacını azaltabilir ve sektörde daha entegre AI çözümlerine yönelim yaratabilir. Ancak maliyet ve enerji verimliliği gibi faktörlerde özelleşmiş modellerin hâlâ avantajları bulunuyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GPT-6 Astra",
+      "benchmark": "Nvidia simulated robotics tasks",
+      "skor": 74.8,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "success rate",
+      "kaynak_metinden_alinti": "In an Nvidia study, an Astra-powered agent achieved a 74.8 percent success rate on simulated robotics tasks, compared to 51 percent for the best specialized models."
+    },
+    {
+      "model": "GPT-6 Astra",
+      "benchmark": "StationeryBench completion rate",
+      "skor": 7,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "full task completion",
+      "kaynak_metinden_alinti": "Across 200 trials, Astra fully completed 7 out of 100 tasks, while MolmoAct2 didn't complete a single one."
+    },
+    {
+      "model": "GPT-6 Astra",
+      "benchmark": "StationeryBench average progress score",
+      "skor": 46,
+      "birim": "points",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "average progress score",
+      "kaynak_metinden_alinti": "Astra's average progress score was 46, compared to 12 for MolmoAct2."
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/09/openai_robot_arms.png",
+  "url": "https://the-decoder.com/openai-reassigns-robotics-researchers-to-other-teams-as-general-purpose-models-might-make-specialized-robotics-ai-unnecessary/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-14T11:40:51.000Z",
+  "slug": "openai-reassigns-robotics-researchers-to-other-teams-as-gene"
+}

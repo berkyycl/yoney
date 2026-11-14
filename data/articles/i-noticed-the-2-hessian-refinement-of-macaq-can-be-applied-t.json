@@ -1,0 +1,51 @@
+{
+  "baslik_tr": "Hessian Refine ile GGUF Kuantizasyonunda %13'ten Fazla İyileşme",
+  "ozet_tr": "Reddit topluluğu, MACaQ makalesindeki iki Hessian tabanlı iyileştirme adımını doğrudan GGUF kuantizasyon dosyalarına uygulayarak Qwen3.8-27B modelinde %13,23 daha düşük KL sapması ve %4 daha yüksek LiveCodeBench puanı elde etti. Bu yöntem, ek bir donanım, VRAM ya da kod güncellemesi gerektirmeden tüm GGUF‑tabanlı çözücülerde kullanılabilir.",
+  "detayli_icerik_tr": "Yerel LLaMA topluluğu üyesi wapswaps, MACaQ çalışmasında önerilen üç bileşenin yalnızca birinci ve ikincisini uygulayarak GGUF kuantizasyon dosyalarını iyileştirdiğini duyurdu. Bu iki adım, katman bazlı Hessian‑rehberli kuantizasyon seçimleri ve ağırlıkların çok katmanlı hataları telafi edecek şekilde yeniden ayarlanmasını içeriyor. Sonuç olarak Qwen3.8-27B‑UD_4_XL modeli, aynı donanımda (tek bir RTX 5090) %13,23 daha düşük KL divergence ve LiveCodeBench testinde %4 daha yüksek performans gösterdi.\n\nİlk adım, her katmanın sıkıştırma etkisini Hessian matrisleriyle ölçerek aynı sıkıştırma oranını korurken en az hasarı veren katman kombinasyonunu buluyor. Kullanıcılar bu süreci tamamen ücretsiz olarak, ek bir hesaplama maliyeti olmadan ve sadece 200 bayt daha az VRAM tüketimiyle elde ediyor. İkinci adım ise örnek veri (Wikipedia) üzerinden toplanan hataları doğrudan ağırlıklara yansıtıyor; bu sayede kuantize edilmiş model, orijinal BF16 modeline daha yakın bir dağılıma sahip oluyor.\n\nÜçüncü bir teknik olarak sunulan rastgele Hadamard dönüşümü ve ölçekleme, değerleri n‑boyutlu bir uzayda (n=2048) neredeyse eşit hale getirerek kuantizasyon verimliliğini artırıyor. Ancak bu adım, inference sırasında ek bir işlem gerektirdiği ve bazı durumlarda %20'ye varan yavaşlamaya yol açabileceği için, kernel'ların yeniden derlenmesini veya özel bir yama uygulanmasını zorunlu kılıyor. Yine de, bu dönüşümün bir kısmı ağırlıklara \"bake\" edilerek sadece bir adımda kullanılabilir hâle getirilebiliyor.\n\nYazar, bu iyileştirmelerin sadece metin modelleriyle sınırlı kalmayıp, görüntü modelleri ve Whisper gibi ses modelleri için de geçerli olduğunu vurguluyor. Tek yapılması gereken, mevcut GGUF dosyasını yeni, Hessian‑refine edilmiş sürümle değiştirmek. Topluluk, bu yöntemin Unslooth gibi popüler kuantizasyon kütüphanelerine entegre edilmesini ve daha büyük bir GPU (ör. B300) ile daha yüksek iyileştirmeler elde edilmesini umut ediyor.",
+  "onemli_maddeler": [
+    "Hessian‑rehberli kuantizasyon, katman bazlı sıkıştırma hatasını ölçerek en az kayıpla aynı sıkıştırma oranını sağlıyor.",
+    "Uygulama tamamen ücretsiz; ek VRAM ya da ekstra hesaplama gerektirmiyor, sadece GGUF dosyasının değiştirilmesi yeterli.",
+    "LiveCodeBench testinde %4 performans artışı ve KL divergence’da %13,23 azalma sağlandı."
+  ],
+  "kategori": "guncelleme",
+  "onem": 3,
+  "onem_gerekce": "Topluluk içinde teknik bir iyileştirme olarak ilgi çekici, ancak geniş çaplı bir ürün duyurusu ya da akademik yayın olmadığı için orta seviyede bir öneme sahiptir.",
+  "etiketler": [
+    "quantization",
+    "GGUF",
+    "Hessian",
+    "LLM",
+    "benchmark"
+  ],
+  "anilan_modeller": [
+    "Qwen3.8-27B"
+  ],
+  "yorum_tr": "Bu Hessian‑refine yöntemi, kuantize edilmiş LLM'lerin doğruluk kaybını minimuma indirerek performans‑maliyet dengesini iyileştiriyor; geliştiriciler için ek bir kod değişikliği gerektirmediği sürece hızlı benimsenme potansiyeli taşıyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen3.8-27B-UD_4_XL",
+      "benchmark": "KL divergence",
+      "skor": 13.23,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Qwen3.8-27B UD_4_XL quant with 13.23% less KL divergence than unsloth"
+    },
+    {
+      "model": "Qwen3.8-27B-UD_4_XL",
+      "benchmark": "LiveCodeBench",
+      "skor": 4,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Technically it performs 4% better on my LiveCodeBench benchmark"
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/open-source-method-macaq-beats-unsloth-ggufs-v0-37wuumlwy01i1.png?width=1052&format=png&auto=webp&s=e71846710ab0920a6e2b9f6a7829ff2be7ac9e63",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xvbqqa/i_noticed_the_2_hessian_refinement_of_macaq_can/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-13T16:03:56.000Z",
+  "slug": "i-noticed-the-2-hessian-refinement-of-macaq-can-be-applied-t"
+}

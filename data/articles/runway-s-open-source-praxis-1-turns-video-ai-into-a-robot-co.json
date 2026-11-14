@@ -1,0 +1,63 @@
+{
+  "baslik_tr": "Runway'in açık kaynaklı Praxis-1, video AI'ı robot kontrolcüsüne dönüştürüyor",
+  "ozet_tr": "Runway, video verilerinden öğrenen ve açık ağırlıklarla sunulan Praxis-1 robot modelini duyurdu. Model, kamera görüntüsü, metin komutu ve robot konum bilgilerini işleyerek anlık hareket tahminleri yapıyor ve çeşitli robot platformlarında test edildi.",
+  "detayli_icerik_tr": "Runway, video tabanlı bir modelin robot kontrolüne uyarlanmasıyla ortaya çıkan Praxis-1'i Apache 2.0 lisansı altında açık kaynak olarak yayınladı. Model, öncelikle nesnelerin hareketlerini ve etkileşimlerini sıradan video görüntülerinden öğreniyor; ardından insan eylemleri ve robot verileriyle ince ayar yapılarak robotik görevler için optimize ediliyor. Kamera görüntüleri, metin talimatları ve robotun konum verileri girdisi olarak alınıp, ortamın nasıl değişeceği tahmin edildikten sonra uygun robot hareketleri hesaplanıyor.\n\nPraxis-1, video ön‑eğitimi sayesinde robot‑özel veri setlerine olan ihtiyacı azaltmayı hedefliyor. Şirket, modelin Franka robot kolu için 277 saatlik DROID veri seti ve çift kollu depo robotu için 1.400‑2.600 saatlik veriyle uyarladığını belirtiyor. Ancak hâlâ benzer görünümlü nesneleri karıştırma ve karmaşık eylem dizilerini tek başına planlama konusunda sınırlamaları bulunuyor; uzun görevlerde adım adım talimatlar verilmesi gerekiyor.\n\nBenchmark testlerinde Praxis-1, Nvidia'nın RoboLab-120 liderlik tablosunda %46.2 başarı oranıyla World Action Model kategorisinde birincilik elde etti ve FLUX 3 Action'ın %42.9'luk skorunu geride bıraktı. Gerçek Franka kolu üzerinde yapılan deneyde, model aynı on görevde (her biri 10 deneme) %88 başarı yakaladı. Ayrıca, daha önce görmediği bir mobil robot platformu üzerinde 95 saatlik veriyle ince ayar yapıldıktan sonra simülasyonda %80 başarı oranı elde edildi; bu, Google'ın RT-1 modelinin %52.4'lük skorunun çok üzerindeydi.\n\nPraxis-1'in temel sürümü 80 GB GPU belleği gerektirirken, sıkıştırılmış versiyonu RTX 5090 gibi 32 GB VRAM'li bir kartta çalıştırılabiliyor. Model, Hugging Face üzerinden erişim şartlarını kabul eden geliştiricilere indirilebilir durumda ve GitHub'da kaynak kodu bulunuyor. Runway, gelecekte Praxis-1'i daha genel amaçlı AI modelleriyle birleştirerek karmaşık görevlerin adım adım bölünmesini ve hızlı hareket yürütülmesini sağlamayı planlıyor.",
+  "onemli_maddeler": [
+    "Praxis-1, video ön‑eğitimi sayesinde robotik veri ihtiyacını azaltmayı hedefliyor.",
+    "RoboLab-120 benchmark'unda %46.2 başarıyla World Action Model kategorisinde birinci oldu.",
+    "Gerçek robot testinde %88, yeni robot tipine transfer testinde %80 başarı oranı elde edildi."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Açık kaynaklı bir robot kontrol modeli olarak sektörde veri maliyetlerini düşürme ve performans liderliği potansiyeli taşıdığı için yüksek öneme sahiptir.",
+  "etiketler": [
+    "robotics",
+    "video AI",
+    "open-source",
+    "Praxis-1",
+    "benchmark"
+  ],
+  "anilan_modeller": [
+    "Praxis-1",
+    "FLUX 3 Action",
+    "RT-1",
+    "Gen-4.5"
+  ],
+  "yorum_tr": "Praxis-1, video temelli öğrenme yaklaşımını robotik alanına taşıyarak geliştiricilere daha esnek ve maliyet etkin bir kontrol çözümü sunuyor; ancak hâlâ karmaşık görev planlamasında sınırlamaları bulunuyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Praxis-1",
+      "benchmark": "RoboLab-120",
+      "skor": 46.2,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "simulation",
+      "kaynak_metinden_alinti": "On Nvidia's RoboLab-120 leaderboard, Praxis-1 scores a 46.2 percent success rate."
+    },
+    {
+      "model": "Praxis-1",
+      "benchmark": "Real Franka robot arm test",
+      "skor": 88,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "real robot",
+      "kaynak_metinden_alinti": "Praxis-1 succeeded 88 times out of 100 attempts on a real Franka robot arm."
+    },
+    {
+      "model": "Praxis-1",
+      "benchmark": "Unseen robot transfer simulation",
+      "skor": 80,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "simulation (unseen robot)",
+      "kaynak_metinden_alinti": "After fine-tuning on about 95 hours of robot data, the model hit an average success rate of 80 percent in simulated tests."
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/11/Runway-Praxis-1.jpg",
+  "url": "https://the-decoder.com/runways-open-source-praxis-1-turns-video-ai-into-a-robot-controller/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-14T09:45:45.000Z",
+  "slug": "runway-s-open-source-praxis-1-turns-video-ai-into-a-robot-co"
+}

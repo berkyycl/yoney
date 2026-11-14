@@ -1,0 +1,104 @@
+{
+  "baslik_tr": "Perplexity, Decider v1.3 (26B) ve Decider Flash v1.3 (5B) modellerini açık kaynak olarak yayınladı",
+  "ozet_tr": "Perplexity, Qwen tabanlı iki yeni karar‑modeli olan Decider v1.3 ve Decider Flash v1.3'ü Apache 2.0 lisansı altında sundu. Bu modeller, metin ve görsel girdileri sınıflandırıp olasılık dağılımları üretirken, yeni \"locate\" özelliğiyle doğrudan metin parçacıklarını da çıkarabiliyor.",
+  "detayli_icerik_tr": "Perplexity, generatif LLM çekirdeklerinden türetilen iki açık‑ağırlıklı sınıflandırma modeli duyurdu. Decider v1.3, Qwen3.8‑27B modelinden ince ayar yapılmış 26 milyar parametreli bir yapı ve BF16 formatında yaklaşık 49 GiB ağırlığa sahip. Decider Flash v1.3 ise Qwen3.5‑4B modelinden distile edilerek 5 milyar parametreye indirgenmiş, ağırlıkları ise 8.5 GiB civarında. Her iki model de metin ve görsel girdileri işleyebiliyor ve OpenRouter ile Perplexity API üzerinden erişilebiliyor.\n\nModelin çalışma prensibi, bir \"state\" (girdi) ve bir veya daha fazla soru alıp, her soru için yanıt seçenekleri üzerine olasılık dağılımı döndürmek. Soru tipleri arasında evet/hayır, 255'e kadar çoktan seçmeli, sıralı puanlama ve yeni \"locate\" tipi bulunuyor. Locate, karakter offsetleriyle birlikte doğrudan metin parçacıklarını (ör. kişi adı, e‑posta) çıkararak NER, PII tespiti ve çıkarımsal Soru‑Cevap gibi görevlerde kullanılabiliyor. Bu tip sadece metinle sınırlı ve bir istek içinde en fazla 128 locate sorusu destekleniyor.\n\nv1.3 sürümünde eklenen locate özelliği, ayrı bir LoRA adaptörü ve span başlığı sayesinde sınıflandırma performansını bozmadan çalışıyor; ancak sınıflandırma ve locate sorularının aynı istekte karıştırılması ek ileri geçişler gerektiriyor. Modelin tam‑dikkat katmanları çift yönlü olduğu için çıktıyı yeniden üretmek amacıyla özel \"pplx_decider\" paketinin kullanılması şart.\n\nPerformans açısından Perplexity, 17 dış‑domain NER/PII/ekstraktif‑QA görevinde Decider v1.3 için ortalama 69.0, Flash için 63.6 puan elde etti; bu, Liquid d1'in 43.3, Cloudflare Clairic'in 41.5 ve GLiNER large v2.5'in 33.6 puanının oldukça üzerindedir. 8 dilde çok‑dilli sınıflandırma doğruluğu sırasıyla %88.16 ve %86.50 iken, 72 geri getirme görevinde nDCG@10 skoru 83.99 olarak Qwen3‑Reranker‑8B'yi 1.81 puan geride bırakıyor. Yapay Analiz Karar İndeksi (Artificial Analysis Decision Index) ise v1.3 için yaklaşık 70, Flash için 64 puan veriyor; maliyet ise sırasıyla 1 M görev başına 68 $ ve 34 $ olarak aynı maliyet‑performans eğrisinde konumlanıyor.",
+  "onemli_maddeler": [
+    "Decider v1.3 ve Decider Flash v1.3 açık‑ağırlıklı, Apache 2.0 lisanslı sınıflandırma modelleri olarak yayınlandı.",
+    "Yeni \"locate\" sorusu tipi, metin içinde doğrudan span çıkarımı yaparak NER ve PII gibi görevlerde kullanılabiliyor.",
+    "Performans testlerinde Decider modelleri, mevcut en iyi açık‑kaynak araçların (Liquid d1, Clairic, GLiNER) çok üzerinde sonuçlar gösterdi."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Genel‑amaçlı karar‑modellerinin açık kaynak olarak sunulması, sınıflandırma ve span çıkarımı gibi görevlerde yeni bir standart oluşturabilir ve geliştiricilerin maliyet‑verimlilik odaklı çözümler üretmesini sağlar.",
+  "etiketler": [
+    "decision-model",
+    "classification",
+    "open-weight",
+    "Perplexity",
+    "LLM"
+  ],
+  "anilan_modeller": [
+    "pplx-decider-v1.3",
+    "pplx-decider-flash-v1.3",
+    "Qwen3.8-27B",
+    "Qwen3.5-4B",
+    "Liquid d1",
+    "Cloudflare Clairic",
+    "GLiNER large v2.5",
+    "TypeSafe Jev 1.14",
+    "Qwen3-Reranker-8B"
+  ],
+  "yorum_tr": "Bu modeller, açık lisans ve düşük maliyetle yüksek doğruluk sunarak hem araştırmacıların hem de üretim ortamlarındaki geliştiricilerin karar‑tabanlı AI çözümlerini hızla prototiplemesini ve ölçeklendirmesini mümkün kılıyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "pplx-decider-v1.3",
+      "benchmark": "Locate average across 17 out-of-domain tasks",
+      "skor": 69,
+      "birim": "score",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "On 17 out-of-domain NER, PII, extractive-QA and structured-extraction tasks, Perplexity reports an average of 69.0 (v1.3)"
+    },
+    {
+      "model": "pplx-decider-flash-v1.3",
+      "benchmark": "Locate average across 17 out-of-domain tasks",
+      "skor": 63.6,
+      "birim": "score",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "On 17 out-of-domain NER, PII, extractive-QA and structured-extraction tasks, Perplexity reports an average of 63.6 (Flash)"
+    },
+    {
+      "model": "pplx-decider-v1.3",
+      "benchmark": "Multilingual classification across 8 languages",
+      "skor": 88.16,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Multilingual classification across 8 languages: 88.16% (v1.3)"
+    },
+    {
+      "model": "pplx-decider-flash-v1.3",
+      "benchmark": "Multilingual classification across 8 languages",
+      "skor": 86.5,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Multilingual classification across 8 languages: 86.50% (Flash)"
+    },
+    {
+      "model": "pplx-decider-v1.3",
+      "benchmark": "Reranking across 72 retrieval tasks",
+      "skor": 83.99,
+      "birim": "nDCG@10",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Reranking across 72 retrieval tasks: 83.99 nDCG@10"
+    },
+    {
+      "model": "pplx-decider-v1.3",
+      "benchmark": "Artificial Analysis Decision Index",
+      "skor": 70,
+      "birim": "score",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Artificial Analysis Decision Index: roughly 70 for v1.3"
+    },
+    {
+      "model": "pplx-decider-flash-v1.3",
+      "benchmark": "Artificial Analysis Decision Index",
+      "skor": 64,
+      "birim": "score",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Artificial Analysis Decision Index: roughly 64 for Flash"
+    }
+  ],
+  "gorsel_url": "https://external-preview.redd.it/8NexKOdMNGuw0dDaC4Bo-Vpl6eyn0zfw_EgkJqBqjtA.png?width=140&height=75&auto=webp&s=b1ba17cad9bbe2cc6a232cd4a825c707aba19914",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xv7fku/perplexity_releases_decider_v13_26b_and_decider/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-13T13:08:10.000Z",
+  "slug": "perplexity-releases-decider-v1-3-26b-and-decider-flash-v1-3"
+}
