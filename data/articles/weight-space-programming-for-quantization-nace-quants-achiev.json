@@ -1,0 +1,90 @@
+{
+  "baslik_tr": "Nace, Qwen ve Flash-Next modelleri için Weight Space Programming tabanlı yeni quant'lar yayınladı",
+  "ozet_tr": "Nace.ai, Qwen 9B, 27B, 35B ve Flash-Next modelleri için ağırlık alanı programlaması (Weight Space Programming) kullanan yeni quant'ları GGUF formatında sundu. Bu yöntem, aynı boyuttaki diğer quant'lara kıyasla KL divergence açısından iki kat daha iyi sonuçlar elde ediyor ve uzun bağlamda istikrar sağlıyor.",
+  "detayli_icerik_tr": "Nace.ai ve Kapitsa ekipleri, Qwen serisi ve Flash-Next modelleri için ağırlık alanı programlaması (WSP) tabanlı bir quantizasyon süreci geliştirdi. İlk aşamada 9B model üzerinde 10-50 farklı tensör hassasiyeti kombinasyonu denendi, ardından bir ajan sürüsü (Astra/Fable/Carbon) önerilen değişiklikleri KL divergence ölçümüyle değerlendirerek en iyi ağırlık düzenlemelerini seçti. Bu yöntem, bir modelin başka bir modeli ağırlık düzeyinde düzenlemesi konseptini hayata geçirerek, mevcut SOTA quant'ların (Unsloth, EXL3) ötesine geçmeyi sağladı.\n\nGeliştirilen quant'lar, İngiliz Wikipedia makaleleri, sohbet ve araç çağrısı transkriptleri ve GitHub kodu gibi çeşitli veri setlerinde 512 token'dan 128K token'a kadar test edildi. Sonuçlar, 9B Q3_K_XL quant'ının %90.5 top‑1 doğrulukla 4.7 GB dosya boyutunda, 27B Q4_K_XL'nin %97.7 doğrulukla 17.3 GB, 35B Q3_K_S'nin %91.2 doğrulukla 15.3 GB ve Flash‑Next'in %93.0 doğrulukla 93 GB dosya boyutunda en yüksek puanları aldığını gösterdi. KL divergence tabloları ise Nace quant'larının aynı boyuttaki diğer çözümlerden daha düşük ortalama ve p99 değerlerine sahip olduğunu ortaya koydu.\n\nUzun bağlam stabilitesi açısından da Nace quant'ları öne çıktı. Çoğu quant kısa metinlerde optimize edilirken, Nace'nin 27B modeli 128K token bağlamda KL değerinde neredeyse hiç kayma göstermedi. 9B IQ3_M gibi diğer quant'lar ise 512 token'da düşük KL değerine sahipken 128K'da belirgin bir artış gösterdi. Bu, Nace'nin WSP tabanlı yaklaşımının uzun metin işleme senaryolarında da güvenilir olduğunu kanıtlıyor.\n\nNace ekibi, bu sonuçların bir kısmını hâlâ GPU kaynakları sınırlaması nedeniyle tam olarak ölçeklendiremediğini belirtti ve Deepseek ve QFN gibi daha büyük modeller için iyileştirmeler üzerinde çalıştıklarını duyurdu. İlgilenen araştırmacılar ve geliştiriciler, proje için GPU desteği sağlamak üzere doğrudan DM yoluyla iletişime geçebilir.",
+  "onemli_maddeler": [
+    "Weight Space Programming ile yapılan quant'lar, KL divergence açısından mevcut en iyi çözümlerden iki kat daha düşük değerler elde etti.",
+    "9B, 27B, 35B ve Flash-Next modellerinde 128K bağlamda %90‑98 arası top‑1 doğruluk sağlandı.",
+    "Uzun bağlam stabilitesi testlerinde Nace quant'ları, diğer quant'ların aksine KL kayması göstermedi."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Weight-space programming tabanlı quant'lar, düşük kaynaklı dağıtımlarda ve uzun bağlam gerektiren uygulamalarda performans sınırlarını zorlayarak açık kaynak topluluğu için kritik bir adım oluşturuyor.",
+  "etiketler": [
+    "quantization",
+    "weight-space programming",
+    "Qwen",
+    "GGUF",
+    "benchmark"
+  ],
+  "anilan_modeller": [
+    "Qwen 9B",
+    "Qwen 27B",
+    "Qwen 35B",
+    "Flash-Next"
+  ],
+  "yorum_tr": "Bu yenilik, düşük bellekli ortamlarda yüksek doğruluk ve uzun bağlam tutarlılığı isteyen geliştiriciler için önemli bir avantaj sunuyor; aynı zamanda açık kaynak topluluğunun quantizasyon tekniklerini yeniden tanımlamasına yol açabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen 9B Q3_K_XL",
+      "benchmark": "Top-1 accuracy (poster) 128K context",
+      "skor": 90.5,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "128K context",
+      "kaynak_metinden_alinti": "the 9B Q3_K_XL gets 90.5% at 4.7 GB"
+    },
+    {
+      "model": "Qwen 35B Q3_K_S",
+      "benchmark": "Top-1 accuracy (poster) 128K context",
+      "skor": 91.2,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "128K context",
+      "kaynak_metinden_alinti": "the 35B Q3_K_S 91.2% at 15.3 GB"
+    },
+    {
+      "model": "Qwen 27B Q4_K_XL",
+      "benchmark": "Top-1 accuracy (poster) 128K context",
+      "skor": 97.7,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "128K context",
+      "kaynak_metinden_alinti": "the 27B 97.7% at 17.3 GB"
+    },
+    {
+      "model": "Flash-Next Q3_K_XL",
+      "benchmark": "Top-1 accuracy (poster) 128K context",
+      "skor": 93,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "128K context",
+      "kaynak_metinden_alinti": "Flash-Next 93.0% at 93 GB"
+    },
+    {
+      "model": "Qwen 9B Q3_K_XL",
+      "benchmark": "Mean KL divergence (Prose)",
+      "skor": 0.161,
+      "birim": "",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "Prose",
+      "kaynak_metinden_alinti": "9B Q3_K_XL 4.70 0.161 0.846 0.0410"
+    },
+    {
+      "model": "Qwen 9B Q3_K_XL",
+      "benchmark": "p99 KL divergence",
+      "skor": 1.25,
+      "birim": "",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "worst 1% tokens",
+      "kaynak_metinden_alinti": "The 9B Q3_K_XL's worst 1% sits at 1.25."
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/v7dhnjfb9e1i1.png?width=640&crop=smart&auto=webp&s=495dcfcf5c101292d46628be833af75fb6f5f5f0",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xvh4ag/weight_space_programming_for_quantization_nace/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-13T19:23:54.000Z",
+  "slug": "weight-space-programming-for-quantization-nace-quants-achiev"
+}

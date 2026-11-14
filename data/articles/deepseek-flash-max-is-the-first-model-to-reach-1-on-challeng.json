@@ -1,0 +1,55 @@
+{
+  "baslik_tr": "DeepSeek Flash Max, zorlu SWE-sweep hata bulma benchmark'inde %1'in üzerini yakalayan ilk model",
+  "ozet_tr": "DeepSeek v4.1 Flash (max), açık ağırlıklı modeller arasında SWE-sweep hata bulma benchmark'inde %1'in üzerindeki başarıyı elde eden ilk model olarak öne çıktı. Bu sonuç, uzun vadeli ve yoğun akıl yürütme gerektiren bu zorlu testte açık kaynak modellerin ilerleyebileceğini gösteriyor.",
+  "detayli_icerik_tr": "Reddit topluluğu LocalLLaMA, SWE-sweep liderlik tablosunu güncelleyerek DeepSeek v4.1 Flash (max) modelinin %1'in üzerinde bir başarı elde ettiğini duyurdu. SWE-sweep, yüzlerce hataya sahip büyük bir kod deposunun anlık bir görüntüsünü alıp, hiçbir ipucu olmadan tüm hataları bulup düzeltmeyi gerektiren, son derece zorlayıcı bir benchmark olarak biliniyor.\n\nDeğerlendirme, tüm modellerin aynı test ortamında (harness) çalıştırılmasıyla gerçekleştirildi; Claude Code ve Codex harness'leriyle yapılan karşılaştırmaların sonuçları ise belirgin bir fark yaratmadı. Topluluk, çok ajanlı yaklaşımlarla ölçeklendirme olasılığını da araştırıyor ve değerlendirme kodunu GitHub üzerinden herkesin çalıştırabileceği şekilde paylaşıyor.\n\nDeepSeek'in bu başarısının yanında, şu ana kadar en yüksek performansı gösteren kapalı kaynak modellerin Gemini 4 Hydrogen %13.5 ve GPT Astra 6 %9.5 olduğu belirtildi. Açık ağırlıklı modeller hâlâ bu seviyelere ulaşmakta geride kalıyor, ancak DeepSeek'in %1'in üzerindeki skoru, topluluk içinde yeni model geliştirmeleri ve iyileştirmeler için bir motivasyon kaynağı oldu.\n\nTopluluk, liderlik tablosuna eklenebilecek daha fazla model önerisi bekliyor ve açık kaynak kod tabanının bu alandaki rekabet gücünü artırmak için iş birliğini teşvik ediyor.",
+  "onemli_maddeler": [
+    "DeepSeek v4.1 Flash (max), açık ağırlıklı modeller arasında SWE-sweep benchmark'inde %1'in üzerindeki başarıyı elde etti.",
+    "SWE-sweep, büyük kod depolarındaki yüzlerce hatayı hiçbir ön bilgi olmadan tespit edip düzeltmeyi gerektiren zorlu bir testtir.",
+    "Kapalı kaynak modeller arasında en yüksek skorlar Gemini 4 Hydrogen %13.5 ve GPT Astra 6 %9.5 olarak raporlandı."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Açık ağırlıklı bir modelin zorlu bir kod hata bulma benchmark'inde %1'in üzerini yakalaması, topluluk temelli AI geliştirmelerinin rekabet gücünü artırdığı için sektörde önemli bir kilometre taşıdır.",
+  "etiketler": [
+    "SWE-sweep",
+    "DeepSeek",
+    "benchmark",
+    "açık-ağırlık",
+    "kod-tamamlama"
+  ],
+  "anilan_modeller": [
+    "DeepSeek v4.1 Flash (max)",
+    "Gemini 4 Hydrogen",
+    "GPT Astra 6",
+    "Claude Code",
+    "Codex"
+  ],
+  "yorum_tr": "Bu sonuç, açık kaynak topluluklarının kod tamamlama ve hata bulma alanında kapalı kaynak rakiplerine yaklaşabileceğini gösteriyor; geliştiriciler daha fazla model denemeye ve çok ajanlı yaklaşımları keşfetmeye yönlendirilebilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Gemini 4 Hydrogen",
+      "benchmark": "SWE-sweep",
+      "skor": 13.5,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "The best proprietary model at the moment is Gemini 4 Hydrogen with 13.5% (according to google's model card)"
+    },
+    {
+      "model": "GPT Astra 6",
+      "benchmark": "SWE-sweep",
+      "skor": 9.5,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "followed by GPT Astra 6 with 9.5% (evaluated by us)"
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/b0q561b1pe1i1.png?width=640&crop=smart&auto=webp&s=f072b169eadfa687e7e8dcfa1dc2ce1b53beaa45",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xvcgxq/deepseek_flash_max_is_the_first_model_to_reach_1/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-13T16:31:47.000Z",
+  "slug": "deepseek-flash-max-is-the-first-model-to-reach-1-on-challeng"
+}

@@ -1,0 +1,38 @@
+{
+  "baslik_tr": "Eski OpenAI araştırmacısı, altı Çin AI modelinde Nvidia Blackwell izlerini tespit etti",
+  "ozet_tr": "Will DePue, Çinli yapay zeka laboratuvarlarının Nvidia'nın yeni Blackwell GPU'larına eriştiğine dair ilk teknik kanıtı sundu. Altı modelde tespit edilen donanım parmak izleri, ABD ihracat kontrollerine rağmen bu çiplerin kullanıldığını gösteriyor.",
+  "detayli_icerik_tr": "Geçmişte OpenAI'de Sora, GPT‑4o ve GPT‑5 projelerinde görev almış araştırmacı Will DePue, The Decoder için yaptığı adli incelemede DeepSeek, Moonshot AI, MiniMax ve Ant Group gibi Çinli AI şirketlerinin Blackwell nesli GPU'ları kullandığını ortaya koydu. DePue, model ağırlıklarının eğitim öncesi rastgele doldurulma sürecinde GPU çekirdek sayısının bıraktığı karakteristik istatistiksel izi analiz ederek, 148 ya da 152 çekirdekli Blackwell çiplerinin (B200/B300 veya GB200/GB300) izlerini tespit etti.\n\nAnaliz, Nisan 2026'dan bu yana yayınlanan altı modelde (DeepSeek‑V4‑Flash, DeepSeek‑V4‑Pro, MiniMax‑M3, Kimi K3, Kimi K3.1‑Pro ve Ant Group Ling‑3.1‑flash) bu izlerin net bir şekilde görüldüğünü gösterdi. Daha eski modeller, örneğin DeepSeek‑V3 ve Kimi K2.5, Hopper nesli (H100/H800) çiplerine ait izler taşıyor. DePue, bulgularını GitHub'da paylaştığı doğrulama kodu ile gerçek Blackwell donanımında yeniden üretebildiğini belirtti.\n\nDePue'un raporuna göre, incelenen beş büyük eğitim çalışması toplamda yaklaşık 12.000 Blackwell GPU'ya eşdeğer bir işlem gücü gerektirmiş; bu da 30.000 eski H100 çipine denk geliyor. Tek bir model olan Kimi K3'ün yaklaşık 4.500 Blackwell GPU ile 70 gün süren bir eğitim süreci geçirdiği tahmin ediliyor ve bu da tek başına 200‑300 milyon dolar maliyet anlamına geliyor. Toplamda bu beş sistemin maliyeti yarım milyar doları aşmış olabilir.\n\nAraştırma, diğer Çinli laboratuvarların (Alibaba Qwen3.8, Zhipu, Tencent, Xiaomi, StepFun) hâlâ Hopper izleri taşıdığını ve Meituan'ın LongCat‑2.0 modelinin Huawei donanımına işaret ettiğini de ortaya koydu. DePue, yöntemin sadece ağırlıkların ilk rastgele doldurulma aşamasındaki donanım izlerini gösterdiğini, eğitim sürecinin aynı sistemlerde gerçekleşmiş olma ihtimalinin yüksek olduğunu, ancak bu bulguların tek başına ABD ihracat yasalarının ihlalini kanıtlamadığını vurguladı.",
+  "onemli_maddeler": [
+    "Altı Çin AI modelinde Nvidia Blackwell GPU'larına ait özgün donanım parmak izleri tespit edildi.",
+    "Ağırlıkların rastgele doldurulma sürecindeki çekirdek sayısı farkı, Blackwell (148/152 çekirdek) ve Hopper (132 çekirdek) çiplerini ayırt etti.",
+    "Tahmini eğitim maliyeti yarım milyar doların üzerinde; tek bir model Kimi K3 için 4.500 Blackwell GPU ve 70 gün süren eğitim gerektiği belirlendi.",
+    "Diğer Çinli modeller hâlâ Hopper izleri taşıyor; bulgular teknik kanıt sağlasa da yasal ihlali doğrudan kanıtlamıyor."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "Nvidia'nın en yeni Blackwell GPU'larının Çinli AI laboratuvarları tarafından kullanıldığına dair ilk teknik kanıt, ABD ihracat kontrolleri ve küresel AI rekabeti açısından kritik bir gelişmedir.",
+  "etiketler": [
+    "Nvidia",
+    "Blackwell",
+    "Çin AI",
+    "GPU izleme",
+    "İhracat kontrolü"
+  ],
+  "anilan_modeller": [
+    "DeepSeek-V4-Flash",
+    "DeepSeek-V4-Pro",
+    "MiniMax-M3",
+    "Kimi K3",
+    "Kimi K3.1-Pro",
+    "Ant Group Ling-3.1-flash"
+  ],
+  "yorum_tr": "Bu bulgu, Çinli AI firmalarının en üst düzey GPU'lara eriştiğini göstererek rekabet dinamiklerini yeniden şekillendirebilir; aynı zamanda ihracat denetimlerinin etkinliğini sorgulayan yeni bir tartışma başlatıyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/06/china_vs_usa_ai_race.png",
+  "url": "https://the-decoder.com/former-openai-researcher-says-he-found-nvidia-blackwell-fingerprints-hidden-inside-six-chinese-ai-models/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-13T15:21:04.000Z",
+  "slug": "former-openai-researcher-says-he-found-nvidia-blackwell-fing"
+}

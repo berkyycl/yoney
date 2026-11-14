@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "Qwen3.5-9B, PS4 GPU'sunda Çevrimdışı Çalışıyor ve MTP Başlığıyla Spekülatif Çözümleme Sunuyor",
+  "ozet_tr": "Açık kaynak geliştirici Leonardo Alegria, Qwen3.5-9B modelini standart bir PlayStation 4'ün GPU'sunda çalıştırarak 31‑39 token/s hızına ulaştırdı. Model, özel 3‑bit ve 4‑bit ağırlık paketlemesi ve spekülatif MTP (Multi‑Token Prediction) başlığı sayesinde bulut ya da ek donanım gerektirmeden çevrimdışı konuşma, dinleme ve kod üretme yeteneklerini sunuyor.",
+  "detayli_icerik_tr": "Leonardo Alegria, GitHub üzerinden yayımladığı \"garlic-llm\" projesiyle Qwen3.5-9B modelini doğrudan bir PS4'ün dahili GPU'sunda çalıştırabilen bir pipeline geliştirdi. Model, 9 milyar parametreye sahip olmasına rağmen ağırlıklar 4,5 GiB'lık bir alana sığdırmak için özel 3‑bit ve 4‑bit formatlarına yeniden paketlendi. Bu sayede eski nesil bir konsol, modelin tam bir geçişte iki token'i taslak olarak üretip ardından tek bir adımda doğrulamasını sağlayan MTP (Multi‑Token Prediction) başlığıyla 31‑39 token/s hızına ulaştı.\n\nMTP başlığı, spekülatif çözümleme tekniğini kullanarak bir seferde iki token taslak üretip, tam modelin bu taslakları tek bir geçişte kontrol etmesini mümkün kılıyor. Bu optimizasyon, modelin önceki 22 token/s hızını %40‑80 arasında artırdı. Proje, ağırlıkların sıkıştırılması, CUDA olmayan bir ortamda çalışabilme ve PS4'ün sınırlı bellek yapısına uyum sağlama gibi bir dizi teknik zorluğu aşarak, bulut tabanlı hizmetlere bağımlı olmadan yerel AI deneyimi sunuyor.\n\nKullanıcılar, projenin kod tabanına doğrudan erişebilecek ve kendi PS4'lerine kurulum yapabilecek. Proje, Linux tabanlı bir işletim sistemi gerektirmiyor; PS4'ün orijinal işletim sistemi üzerinden çalışıyor. Bu da özellikle oyun konsollarını düşük maliyetli AI platformu olarak değerlendiren geliştiriciler ve hobi meraklıları için önemli bir adım.\n\nProjenin açık kaynak doğası, topluluk tarafından genişletilebilmesini ve farklı konsol ya da gömülü cihazlara uyarlanabilmesini sağlıyor. Ancak PS4'ün donanım sınırlamaları nedeniyle modelin karmaşık görevlerdeki performansı hâlâ büyük ölçekli GPU'larla kıyaslandığında sınırlı kalıyor. Yine de, bu çalışma AI'nın erişilebilirliğini artırma ve düşük maliyetli cihazlarda yerel inferans yapma yönündeki trendi pekiştiriyor.",
+  "onemli_maddeler": [
+    "Qwen3.5-9B modeli, standart bir PS4'ün GPU'sunda 31‑39 token/s hızında çalıştırıldı.",
+    "MTP (Multi‑Token Prediction) başlığı, spekülatif çözümleme sayesinde hızı %40‑80 artırdı.",
+    "Ağırlıklar, 3‑bit ve 4‑bit özel formatlara sıkıştırılarak 4,5 GiB'lık bir alana sığdırıldı.",
+    "Proje tamamen açık kaynak, bulut ya da ek abonelik gerektirmiyor ve doğrudan PS4 üzerinde çalışıyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 3,
+  "onem_gerekce": "Bu proje, eski bir oyun konsolunu AI çalıştırma platformuna dönüştürerek düşük maliyetli ve bulutsuz çözümler arayan geliştiriciler için ilgi çekici bir örnek sunuyor, ancak performans ve ölçek açısından sınırlı bir etki yaratıyor.",
+  "etiketler": [
+    "Qwen3.5-9B",
+    "PS4",
+    "MTP",
+    "spekülatif çözümleme",
+    "açık kaynak"
+  ],
+  "anilan_modeller": [
+    "Qwen3.5-9B"
+  ],
+  "yorum_tr": "PS4 gibi tüketici donanımlarının AI modelleri çalıştırabilmesi, yerel inferansın yaygınlaşması ve bulut bağımlılığının azalması açısından olumlu bir adım. Ancak modelin gerçek‑zamanlı karmaşık görevlerdeki sınırlı hızı, daha güçlü donanımlara kıyasla sadece niş bir kullanım senaryosu sunuyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/dTg1a25oNDlrZTFpMapFYESdjE_gXHkL_a0u2WVB9qkzxN6CPntOxBrzUPM5.png?width=640&crop=smart&auto=webp&s=f2b074c3716e45f971fe2f3dc19ddef10b79f588",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xvbn2m/qwen359b_running_on_a_ps4s_gpu_offline_using_its/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-13T16:00:36.000Z",
+  "slug": "qwen3-5-9b-running-on-a-ps4-s-gpu-offline-using-its-own-mtp"
+}
