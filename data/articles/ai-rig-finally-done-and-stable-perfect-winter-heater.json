@@ -1,0 +1,51 @@
+{
+  "baslik_tr": "AI Rig nihayet tamamlandı ve stabil, mükemmel kış ısıtıcısı",
+  "ozet_tr": "Kullanıcı, 8 adet RTX 3090 GPU'dan oluşan ev yapımı bir AI rig'i kurdu ve sistemin stabil çalıştığını, özellikle de düşük sıcaklıklarda mükemmel bir ısıtıcı görevi gördüğünü belirtti. Modifikasyonlu sürücüler ve özel soğutma çözümleri sayesinde yüksek bellek bant genişliği ve token üretim hızı elde edildi.",
+  "detayli_icerik_tr": "Reddit kullanıcısı, 8x RTX 3090 24GB Gaming OC kartını, 2026 başlarında fiyatların yükselmesinden önce temin etti ve hepsini Romed8-2t anakartına PCIe 4.0 x16 üzerinden bağladı; en sağdaki iki kart ise aynı slotu paylaşarak 8x hızında çalışıyor. Sistem, iki adet yüksek kapasiteli güç kaynağı (Ax1600i ve HX1500i) ile besleniyor; bir tanesi beş GPU'yu, diğeri ise anakart ve kalan üç GPU'yu destekliyor ve her GPU yaklaşık 50W ek güç çekiyor.\n\nSoğutma açısından, GPU'ların altında yer kalmadığı için su soğutma radyatörü CPU üzerine yerleştirildi ve GPU'lar aliexpress'ten temin edilen 60 cm ve 40 cm uzunluğundaki PCIe 4.0 riser kabloları ile bağlandı. Güç sınırı 270W olarak ayarlandı ve modifiye edilmiş NVIDIA sürücüleri sayesinde GPU'lar arasında gerçek 22 GB/s P2P veri akışı sağlanıyor.\n\nYazılım tarafında, Qwen-Flash modeli vLLM ve OpenCode çerçeveleriyle çalıştırıldı. Tek bir ajan yaklaşık 60 token/saniye üretirken, aynı anda 10 ajan çalıştırıldığında toplamda 370 token/saniye üretim hızı elde edildi. Bu performans, özellikle küçük modellerin ince ayar (fine-tuning) süreçlerinde bellek bant genişliği ve işlem gücünün kritik olduğu durumlar için dikkat çekici.\n\nKullanıcı, piyasada bulunan 192GB Gorgon Halo gibi devasa sistemlerle karşılaştırıldığında, evde inşa ettiği bu rig'in bir \"canavar\" olduğunu vurguladı. Ancak sistemin 300W boşta güç tüketimi yüksek ve enerji maliyetleri göz önünde bulundurulmalı. Yine de, düşük maliyetli bir çözümle yüksek performans elde edilebileceğinin bir örneği olarak topluluğa ilham veriyor.",
+  "onemli_maddeler": [
+    "8 adet RTX 3090 GPU ile 24GB bellek ve 22 GB/s P2P bant genişliği sağlandı.",
+    "Modifiye NVIDIA sürücüleri sayesinde GPU'lar arasında gerçek P2P veri akışı mümkün oldu.",
+    "Qwen-Flash modeli vLLM ile tek ajan 60 tok/s, 10 paralel ajan 370 tok/s üretim hızı elde etti."
+  ],
+  "kategori": "diger",
+  "onem": 2,
+  "onem_gerekce": "Kişisel bir AI rig kurulumu ve performans ölçümleri topluluk içinde ilgi çekse de, sektörel çapta geniş bir etki yaratma potansiyeli sınırlıdır.",
+  "etiketler": [
+    "AI rig",
+    "RTX 3090",
+    "GPU kümesi",
+    "vLLM",
+    "performans"
+  ],
+  "anilan_modeller": [
+    "Qwen-Flash"
+  ],
+  "yorum_tr": "Bu tür ev yapımı yüksek kapasiteli GPU kümeleri, araştırmacıların ve geliştiricilerin düşük maliyetli deneyler yapmasına olanak tanıyor; ancak enerji tüketimi ve soğutma gereksinimleri pratik sınırlamalar oluşturuyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen-Flash",
+      "benchmark": "Token Generation Throughput (single agent)",
+      "skor": 60,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "single agent",
+      "kaynak_metinden_alinti": "Single agent around 60 tok/sec gen"
+    },
+    {
+      "model": "Qwen-Flash",
+      "benchmark": "Token Generation Throughput (10 parallel agents)",
+      "skor": 370,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "10 agents in parallel",
+      "kaynak_metinden_alinti": "10 agents in parallel peaked at aggregate 370 tok/sec gen"
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/222u81unwm1i1.jpeg?width=640&crop=smart&auto=webp&s=e76a2e5b9f3339140ec9895994c7f572766b2119",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xwc3m7/ai_rig_finally_done_and_stable_perfect_winter/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-14T20:13:38.000Z",
+  "slug": "ai-rig-finally-done-and-stable-perfect-winter-heater"
+}
