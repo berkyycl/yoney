@@ -1,0 +1,89 @@
+{
+  "baslik_tr": "Basalt 0.4.0 Güncellemesi: Çoklu Model Desteği ve Qwen 3.8 27B ile 770 tok/s Hıza Ulaştı",
+  "ozet_tr": "Basalt 0.4.0 sürümü, çoklu model ve router desteğiyle birlikte DeepSeek V4.1 Flash ve yeni yoğun (dense) Qwen 3.8 27B modelini getiriyor. Qwen 3.8 27B, yapılandırılmış çıktıda 776 tok/s hızına ulaşarak hem hız hem de doğrulukta dikkat çekiyor.",
+  "detayli_icerik_tr": "Basalt ekibi, son sürüm 0.4.0'da çoklu model ve router entegrasyonunu hayata geçirerek DeepSeek V4.1 Flash modelini desteklemeye başladı. Bu model, RTX 5090 ve 5060 Ti kombinasyonunda 90 tok/s konuşma ve 246 tok/s yapılandırılmış çıktı performansı gösteriyor. Ayrıca video desteği, sohbetlerde dosya ekleme ve bir dizi hata düzeltmesi de yeni sürüme eklendi.\n\nEn büyük yenilik, Basalt'ın ilk yoğun (dense) modeli olan Qwen 3.8 27B'nin entegrasyonu. Model, BF16 referansına kıyasla %92.8 top‑1 doğruluk oranı (0.0262 KLD) sunuyor ve aynı zamanda yüksek hızlarla çalışıyor: yapılandırılmış çıktıda 776 tok/s, sohbetlerde 262 tok/s ve düz metin (prose) üretiminde 194 tok/s. Tek akış (single‑stream) modunda, 4k bağlamda 12.000 tok/s ön‑dolgu (prefill) hızı da elde edilebiliyor.\n\nBu performans, Qwen 4'ün hazırlanması sürecinde yoğun çekirdek (dense kernel) geliştirmelerine erken bir başlangıç sağladı. Basalt, 262K bağlam uzunluğuna kadar sohbet, araç entegrasyonu, düşünme, görsel ve video işleme yeteneklerini destekleyerek geniş bir kullanım senaryosuna hitap ediyor. Topluluk katkıları ve sponsor desteği sayesinde proje, kısa sürede önemli bir ivme kazandı.\n\nBasalt'ın GitHub deposu ve resmi sitesi üzerinden yeni sürüm ve model ağırlıkları (Qwen3.8‑27B‑Basalt) erişilebilir durumda. Geliştiriciler, bu güncellemelerle daha hızlı ve daha doğru LLM uygulamaları oluşturabilir, aynı zamanda video ve dosya tabanlı etkileşimleri deneyimleyebilir.",
+  "onemli_maddeler": [
+    "Basalt 0.4.0, çoklu model ve router desteğiyle DeepSeek V4.1 Flash'ı ekledi.",
+    "Yeni yoğun Qwen 3.8 27B modeli %92.8 top‑1 doğruluk ve 776 tok/s yapılandırılmış çıktı hızı sağlıyor.",
+    "Video, dosya ekleme ve 262K bağlam uzunluğuna kadar sohbet/araç entegrasyonu gibi yeni özellikler sunuldu."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Yeni yoğun Qwen 3.8 27B modelinin entegrasyonu ve yüksek token işleme hızları, açık kaynak LLM ekosisteminde performans çıtasını yükselterek geliştiricilerin daha verimli uygulamalar üretmesini sağlıyor.",
+  "etiketler": [
+    "Basalt",
+    "Qwen",
+    "token throughput",
+    "model update",
+    "open-source LLM"
+  ],
+  "anilan_modeller": [
+    "DeepSeek V4.1 Flash",
+    "Qwen 3.8 27B",
+    "Qwen 4"
+  ],
+  "yorum_tr": "Basalt 0.4.0, açık kaynak topluluğuna yüksek doğruluk ve hız sunan yeni bir yoğun model getirerek geliştirme sürecini hızlandırıyor; aynı zamanda çoklu model desteği, farklı kullanım senaryolarını tek bir çatı altında birleştiriyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen 3.8 27B",
+      "benchmark": "Top-1 accuracy",
+      "skor": 92.8,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "vs BF16 model",
+      "kaynak_metinden_alinti": "top-1 92.8% vs the full BF16 model"
+    },
+    {
+      "model": "Qwen 3.8 27B",
+      "benchmark": "Token throughput (structured output)",
+      "skor": 776,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "structured output",
+      "kaynak_metinden_alinti": "Up to 776 tok/s on structured output"
+    },
+    {
+      "model": "Qwen 3.8 27B",
+      "benchmark": "Token throughput (conversation)",
+      "skor": 262,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "conversation",
+      "kaynak_metinden_alinti": "262 conversation"
+    },
+    {
+      "model": "Qwen 3.8 27B",
+      "benchmark": "Token throughput (prose)",
+      "skor": 194,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "prose",
+      "kaynak_metinden_alinti": "194 on prose"
+    },
+    {
+      "model": "DeepSeek V4.1 Flash",
+      "benchmark": "Token throughput (conversation)",
+      "skor": 90,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "conversation on a 5090 + 5060 Ti",
+      "kaynak_metinden_alinti": "IQ1_M 90 tok/s conv, 246 tok/s struct on a 5090 + 5060 Ti"
+    },
+    {
+      "model": "DeepSeek V4.1 Flash",
+      "benchmark": "Token throughput (structured output)",
+      "skor": 246,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "structured on a 5090 + 5060 Ti",
+      "kaynak_metinden_alinti": "IQ1_M 90 tok/s conv, 246 tok/s struct on a 5090 + 5060 Ti"
+    }
+  ],
+  "gorsel_url": "https://external-preview.redd.it/aDVxeDJsMXo0dDFpMXSsguq7RzI5TbnEdxYNshMh74sYqM9VzKczylkqkXW3.png?width=640&crop=smart&auto=webp&s=da4fc07a3d165f8bee2a2024b0ca57514c1ec236",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xx1cu9/basalt_040_more_models_still_as_fast_qwen_27b_up/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-15T17:30:31.000Z",
+  "slug": "basalt-0-4-0-more-models-still-as-fast-qwen-27b-up-to-770-to"
+}

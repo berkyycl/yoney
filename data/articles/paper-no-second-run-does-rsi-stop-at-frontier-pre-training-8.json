@@ -1,0 +1,37 @@
+{
+  "baslik_tr": "801-30B-A3B-Base Modeli Ön Eğitimde RSI ile Tanıtıldı, Qwen ve Nemotron Modellerini Geride Bıraktı",
+  "ozet_tr": "Araştırmacılar, ön eğitim aşamasında tekrarlanamayan bir çalışmayı parçalara ayırarak Recursive Self‑Improvement (RSI) uyguladıklarını ve 30 Milyar parametreli MoE modeli 801‑30B‑A3B‑Base'i 11,8 trilyon token üzerinde üç ayda eğittiklerini duyurdu. Model, Qwen3‑30B‑A3B ve Nemotron‑3.5‑Lightning‑30B‑A3B gibi güçlü rakipleri geride bırakarak sadece daha büyük Qwen3.5‑35B‑A3B'nin gerisinde kaldı. Açık kaynak olarak sunulan bu temel model, hafif SFT ile dört ajan‑bazlı benchmarkta en yüksek ortalamayı elde etti.",
+  "detayli_icerik_tr": "Temel yapay zeka modellerinin performansı, genellikle ön eğitim aşamasının kalitesiyle belirlenir; bu aşama ise yüz binlerce GPU‑saatlik maliyet ve aylar süren bir süreç gerektirir. Bu zorluklar, RSI (Recursive Self‑Improvement) çalışmalarını çoğunlukla mevcut modeller üzerinde, post‑training aşamasına sınırlamıştır. Reddit'te yayınlanan yeni bir çalışma, bu sınırlamayı aşarak ön eğitim sürecine doğrudan RSI uyguladığını ve bu süreci daha küçük, tekrarlanabilir döngülere bölerek yönetilebilir hâle getirdiğini iddia ediyor.\n\nAraştırmacılar, 801‑30B‑A3B‑Base adlı 30 Milyar parametreli bir MoE (Mixture‑of‑Experts) modelini sıfırdan, 11,8 trilyon token üzerinden ve üç ay içinde eğittiler. Model, yeni kurulan bir ekip tarafından geliştirildi ve aynı veri ve altyapı koşulları altında yapılan hafif SFT (6 Milyar token, RL olmadan) ile test edildi. Bu SFT, sadece post‑training başlıklarını ölçmek yerine, ön eğitimdeki iyileştirme potansiyelini de ortaya koydu.\n\nPerformans açısından 801‑30B‑A3B‑Base, Qwen3‑30B‑A3B ve Nemotron‑3.5‑Lightning‑30B‑A3B modellerini geride bıraktı; tek farkı, daha büyük Qwen3.5‑35B‑A3B'nin bir adım önünde olmaması. Hafif SFT uygulandığında ise dört ajan‑bazlı benchmarkta (detaylar kaynakta verilmemiştir) tam post‑trained modelleri, Qwen3.6‑35B‑A3B dahil olmak üzere, geride bıraktı. Bu sonuçlar, ön eğitimde RSI uygulamasının modelin temel kapasitesini artırmada etkili olabileceğini gösteriyor.\n\nAraştırmacılar, modelin ve hafif SFT veri setinin açık kaynak olarak GitHub ve Hugging Face üzerinden erişilebilir olduğunu belirtti. Ayrıca, ilgili akademik makale (arXiv:2611.10719) ve PDF dokümanları da paylaşıldı. Bu adım, topluluk tarafından yeniden üretilebilir araştırma ve yeni model geliştirme süreçlerine şeffaf bir temel sunmayı amaçlıyor.",
+  "onemli_maddeler": [
+    "801‑30B‑A3B‑Base, ön eğitimde RSI uygulamasını ilk kez tam kapsamlı bir şekilde raporladı.",
+    "Model, Qwen3‑30B‑A3B ve Nemotron‑3.5‑Lightning‑30B‑A3B'yi geride bırakarak sadece daha büyük Qwen3.5‑35B‑A3B'nin gerisinde kaldı.",
+    "Hafif SFT ile dört ajan‑bazlı benchmarkta en yüksek ortalama skoru elde etti, tam post‑trained modelleri geride bıraktı.",
+    "Model ve SFT veri seti açık kaynak olarak GitHub ve Hugging Face üzerinden sunuldu."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Ön eğitim aşamasında RSI uygulaması, temel model geliştirme paradigmasını değiştirebilecek yenilikçi bir yaklaşım sunuyor ve 30 B parametreli güçlü bir MoE modeli toplulukla paylaşarak sektörde geniş etki yaratma potansiyeline sahip.",
+  "etiketler": [
+    "RSI",
+    "pre‑training",
+    "MoE",
+    "801‑30B‑A3B",
+    "açık‑kaynak"
+  ],
+  "anilan_modeller": [
+    "801-30B-A3B-Base",
+    "Qwen3-30B-A3B",
+    "Nemotron-3.5-Lightning-30B-A3B",
+    "Qwen3.5-35B-A3B",
+    "Qwen3.6-35B-A3B"
+  ],
+  "yorum_tr": "Bu gelişme, ön eğitim sürecine entegre edilen RSI'nin model kalitesini artırabileceğini göstererek araştırmacıların ve geliştiricilerin yeni iyileştirme döngüleri tasarlamasına ilham verebilir. Açık kaynak olarak sunulması, topluluk temelli inovasyonu hızlandıracak ve benzer projelerin daha hızlı prototiplenmesini sağlayacaktır.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/ui3qjsm7gr1i1.png?width=140&height=69&auto=webp&s=2014a3f3e795266108c13b5d9df88f08a0b03606",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xwt3ri/paper_no_second_run_does_rsi_stop_at_frontier/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-15T11:21:12.000Z",
+  "slug": "paper-no-second-run-does-rsi-stop-at-frontier-pre-training-8"
+}

@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "Haru-4B: Düşük Gecikmeli ve Çok Dilli Tam Çift Yönlü Sürekli Konuşma Temelli Model",
+  "ozet_tr": "Haru-4B, aynı anda dinleme ve konuşma yeteneğiyle tam çift yönlü (full‑duplex) bir konuşma temelli model olarak tanıtıldı. 7.5 Hz gecikme süresiyle her 133 ms'de bir ses ve metin çıktısı üretebilen model, çoklu dil desteği ve karakter‑ses kontrolü sunuyor.",
+  "detayli_icerik_tr": "Haru-4B, düşük gecikmeli ve çok dilli bir tam çift yönlü (full‑duplex) konuşma temelli model olarak araştırma topluluğuna sunuldu. Model, bir telefon görüşmesinde olduğu gibi aynı anda dinleyip konuşabiliyor; her 133 ms'de bir kullanıcı sesinin bir çerçevesini alıp aynı anda kendi ses ve metin çerçevesini üretiyor. Bu işlem, ses, model ses ve model metinlerinin tek bir konumda birleştirilmesiyle gerçekleşiyor, böylece dinleme ve konuşma birbirini beklemiyor.\n\nModelin ses üretimi, dil modelinin gizli durumundan tek adımda 64‑boyutlu bir latent vektör oluşturulmasıyla sağlanıyor. Bu süreç, ayrı bir ses transformer'ı veya ayrık ses token'ları kullanmadan, MeanFlow örnekleme yöntemiyle çalışan küçük bir MLP başlığı (head) aracılığıyla gerçekleşiyor. Böyle bir mimari, hem hesaplama maliyetini düşürüyor hem de gerçek‑zamanlı uygulamalara uygun bir akış sağlıyor.\n\nHaru-4B, karakter ve ses kontrolünü iki basit mekanizma üzerinden sunuyor: bir metin kartı karakteri belirlerken, kısa bir referans ses klibi modelin ses tonunu ayarlıyor. Model, İngilizce, İspanyolca, Portekizce, Almanca, Fransızca, Çince, Japonca, Rusça ve Korece olmak üzere on farklı dili destekliyor, bu da çok dilli diyalog sistemleri için geniş bir uygulama yelpazesi oluşturuyor.\n\nModel, Hugging Face platformunda \"Higurashi‑AI/Haru‑4B\" adıyla yayınlandı ve araştırma amaçlı kullanılmak üzere açık kaynak kodlu bir temel model (base model) olarak sunuluyor. Kullanıcılar modeli doğrudan indirme, ince ayar (fine‑tune) yapma ve kendi tam çift yönlü ses‑metin uygulamalarını geliştirme imkanı bulacaklar.",
+  "onemli_maddeler": [
+    "Tam çift yönlü (full‑duplex) mimari sayesinde model aynı anda dinleyip konuşabiliyor.",
+    "7.5 Hz gecikme (133 ms per frame) ile gerçek zamanlı diyalog akışı sağlanıyor.",
+    "Ses üretimi ayrı bir ses transformer'ı olmadan, 64‑boyutlu latent ve MeanFlow‑tabanlı MLP ile tek adımda gerçekleşiyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Tam çift yönlü konuşma yeteneği ve düşük gecikme süresi, gerçek zamanlı ses‑metin sistemlerinde yeni bir paradigma sunarak araştırma ve geliştirme süreçlerini hızlandırabilir.",
+  "etiketler": [
+    "speech",
+    "full-duplex",
+    "multilingual",
+    "foundation model",
+    "research"
+  ],
+  "anilan_modeller": [
+    "Haru-4B"
+  ],
+  "yorum_tr": "Haru-4B, gerçek zamanlı diyalog uygulamaları için düşük gecikmeli ve çok dilli bir altyapı sağladığından, sesli asistanlar ve çağrı merkezleri gibi alanlarda geliştiricilere yeni fırsatlar sunacak.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/mg4n7QvBlSSv_tYp8QwCybhUrhZrzA9OBke31D86IAE.png?width=640&crop=smart&auto=webp&s=32a6c29a4547a79824c735575a52c91f41fea905",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xww5o2/higurashiaiharu4b_hugging_face/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-15T13:58:52.000Z",
+  "slug": "higurashi-ai-haru-4b-hugging-face"
+}

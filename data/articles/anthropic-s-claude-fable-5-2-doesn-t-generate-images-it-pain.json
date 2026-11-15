@@ -1,0 +1,55 @@
+{
+  "baslik_tr": "Anthropic'in Claude Fable 5.2 Görüntü Üretmiyor, Boyuyor",
+  "ozet_tr": "Anthropic, yeni Claude Fable 5.2 modelini tanıttı; model, görüntüleri difüzyonla üretmek yerine Python kodu aracılığıyla sanal bir tuvalde binlerce fırça darbesiyle resim yapıyor. RoboDojo Sim benchmark'inde %64,9 başarı elde ederken, gerçek robot kol testlerinde hâlâ hız ve ince motor kontrolü açısından rakiplerine göre geride kalıyor.",
+  "detayli_icerik_tr": "Anthropic'in en yeni dil modeli Claude Fable 5.2, geleneksel metin‑görüntü modellerinin aksine, bir Python programı yazarak sanal bir tuvalde fırça darbelerini simüle ediyor. Model, bir alışveriş arabasını bir otoparkta gösteren fotoğraf gerçekliğinde bir sahneyi yaklaşık 700 000 fırça darbesiyle oluşturdu; bir kuş resmi ise sadece 111 koordinat dizisiyle 21 saniyelik bir video şeklinde sunuldu. Her bir darbe, renk kodu, fırça genişliği ve hafif dalgalı yol noktaları gibi parametrelerle tanımlanıyor ve model, bir geri alma (undo) butonu olmadan her hamleyi kalıcı olarak kaydediyor.\n\nBu yaklaşım, modelin kendi sanatçı kişiliklerini ve stilistik arka planlarını yaratmasına da olanak tanıyor. Önceki Opus 5.5 sürümünün sadece mevcut eserleri taklit ettiği eleştirilerine yanıt olarak, Fable 5.2, hayali sanatçı kimlikleriyle tutarlı bir üslup geliştiriyor ve binlerce fırça darbesini yorumlayarak hataları üzerine yeni darbeler ekleyebiliyor. Örneğin, bir kuşun kanadı çok ince çıktığında model, daha kalın bir darbe ekleyerek hatayı \"düzeltmiş\" ve bu da gerçek bir ressamın hatalarını kapatmasıyla benzer bir etki yaratıyor.\n\nModelin yetenekleri sanal ortamla sınırlı kalmıyor; Anthropic, Fable 5.2'yi uzun vadeli teknik görevler için tasarladığını belirtiyor. İç testlerde model, kara delik fiziği problemlerini çözmüş, bir elektronik cihaz tasarlamış ve 1 000'den fazla alt‑ajan kullanarak sekiz gün içinde kendi dizüstü bilgisayarının işletim sistemini programlamış. Fiziksel robot kollarla yapılan bir denemede, Anthropic araştırmacısı Aris Zhu, Fable 5.2'yi OpenAI'nin GPT‑6 Astra modeliyle karşılaştırdı; her iki model de Van Gogh'un \"Yıldızlı Gece\" tablosunu boyamaya çalıştı. RoboDojo Sim benchmark'inde Fable 5.2 %64,9, Astra ise %29,8 puan alırken, gerçek robot testinde Astra daha hızlı çalıştı ve bir dominoyu ayakta tutma gibi ince motor kontrolü gerektiren bir görevi başarıyla tamamladı.\n\nClaude Fable 5.2'nin bu yenilikçi yaklaşımı, AI‑destekli yaratıcı süreçlerde yeni bir paradigma sunuyor. Model, görüntü üretiminde difüzyon yerine fiziksel boyama sürecini taklit ederek, hem sanatçılık hem de robotik uygulamalarda daha doğal ve hata toleranslı bir çalışma biçimi sağlıyor. Ancak hâlâ hız ve ince motor kontrolü gibi alanlarda geliştirme ihtiyacı bulunuyor, bu da gelecekteki model güncellemeleri ve araştırma odakları için önemli bir yol haritası oluşturuyor.",
+  "onemli_maddeler": [
+    "Claude Fable 5.2, görüntüleri difüzyon yerine Python kodu ile binlerce fırça darbesiyle sanal bir tuvalde boyuyor.",
+    "Model, RoboDojo Sim benchmark'inde %64,9 başarı elde ederek GPT‑6 Astra'nın %29,8 puanının iki katından fazla puan topladı.",
+    "Fiziksel robot kol testlerinde hâlâ hız ve ince motor kontrolü açısından GPT‑6 Astra'ya göre geride kalıyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Claude Fable 5.2, görüntü üretiminde tamamen yeni bir metodoloji sunarak AI sanat ve robotik alanlarında büyük bir yenilik getiriyor; benchmark sonuçları ve fiziksel robot testleri sektördeki rekabeti ve araştırma yönelimlerini doğrudan etkiliyor.",
+  "etiketler": [
+    "Claude Fable 5.2",
+    "AI painting",
+    "RoboDojo benchmark",
+    "robotic arm",
+    "image generation"
+  ],
+  "anilan_modeller": [
+    "Claude Fable 5.2",
+    "GPT-6 Astra",
+    "Opus 5.5",
+    "Mythos 5.2",
+    "Flux 3"
+  ],
+  "yorum_tr": "Claude Fable 5.2'nin fırça darbesi temelli yaklaşımı, yaratıcı AI uygulamalarında daha doğal ve hata toleranslı bir süreç sunarak geliştiricilere yeni bir araç seti sağlıyor; ancak gerçek robotik performansındaki eksiklikler, modelin endüstriyel kullanımını sınırlı tutabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Claude Fable 5.2",
+      "benchmark": "RoboDojo Sim",
+      "skor": 64.9,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Anthropic reports a score of 64.9 percent for Fable 5.2 on its internal RoboDojo Sim benchmark"
+    },
+    {
+      "model": "GPT-6 Astra",
+      "benchmark": "RoboDojo Sim",
+      "skor": 29.8,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "compared with 29.8 percent for OpenAI's GPT-6 Astra"
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/11/claude_fable_5.2_painting.png",
+  "url": "https://the-decoder.com/anthropics-claude-fable-5-2-doesnt-generate-images-it-paints-them/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-15T15:42:03.000Z",
+  "slug": "anthropic-s-claude-fable-5-2-doesn-t-generate-images-it-pain"
+}
