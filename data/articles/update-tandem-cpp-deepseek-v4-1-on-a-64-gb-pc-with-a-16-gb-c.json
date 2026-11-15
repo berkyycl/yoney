@@ -1,0 +1,65 @@
+{
+  "baslik_tr": "tandem.cpp Güncellemesi: DeepSeek-V4.1 ve AMD ROCm Desteğiyle Büyük MoE Modelleri Daha Hızlı Çalışıyor",
+  "ozet_tr": "tandem.cpp, llama.cpp üzerine geliştirilen bir yama seti olarak, VRAM sınırının çok ötesindeki MoE modellerini GPU ve CPU arasında akıllı bir şekilde bölüştürerek performansı iki katına kadar çıkarıyor. Güncellenen sürüm AMD ROCm (HIP) desteği ekleyerek RX 7900 XTX gibi kartlarda da benzer kazançlar sağlıyor ve DeepSeek‑V4.1, Qwen3.8‑Flash‑Next gibi devasa modellerde ölçülebilir hız artışları gösteriyor.",
+  "detayli_icerik_tr": "tandem.cpp, llama.cpp tabanlı bir uzantı olarak, uzman (expert) katmanlarını GPU belleğinde tutup geri kalan hesaplamaları CPU'ya devrediyor. Bu sayede 16 GB VRAM ve 64 GB RAM gibi sınırlı donanımlarda bile 139 GiB büyüklüğündeki DeepSeek‑V4.1‑Flash IQ2_XS modeli çalıştırılabiliyor. Testlerde RTX 5070 Ti üzerinde vanilla llama.cpp'un 7.4 tok/s hızına karşı tandem.cpp 14.2 tok/s, RTX 5090’da ise 11.5 tok/s yerine 33.1 tok/s hız elde edildi.\n\nModelin avantajı, VRAM ve RAM toplamının çok altında bir donanımda bile performans artışı sağlaması. Örneğin 32 GB RAM ve 16 GB VRAM'lı bir sistemde Qwen3.8‑Flash‑Next IQ3_S modeli, vanilla llama.cpp'un 14.9 tok/s hızını tandem.cpp ile 34.3 tok/s'ye çıkarıyor. Diğer MoE modelleri (gpt‑oss‑120b, GLM‑4.5‑Air, Qwen3.6) de benzer 1.4‑2.1 katlık kazançlar gösteriyor.\n\nAMD tarafında ise yama HIP ile derlenebiliyor ve RX 7900 XTX üzerinde Qwen3.8 IQ3_S + MTP modeli test edildi. tandem.cpp 68.6 tok/s üretirken, Strata’nın RDNA3 çatallaması 80.1 tok/s, Avalon ise 83.6 tok/s ulaştı. Ortak CUDA/HIP kodu sayesinde NVIDIA kartlarda da %1.3‑2.5 oranında ek performans artışı sağlanıyor. Vulkan desteği henüz bulunmuyor, ancak kurulum adımları README'de detaylı olarak veriliyor.\n\nGüncellenen sürümde 128 GB RAM'li sistemlerde LLAMA_MOE_STORE_AUTO ayarının otomatik olarak RAM sınırına çok yaklaşması sorunu giderildi; artık varsayılan ayarlarla çalışıyor. Geliştiriciler ve topluluk üyeleri, özellikle 32 GB RAM ve AMD kartlarıyla ilgili deneyimlerini paylaşmaya davet ediliyor.",
+  "onemli_maddeler": [
+    "tandem.cpp, MoE modellerini GPU ve CPU arasında bölüştürerek VRAM sınırının çok ötesindeki modelleri çalıştırabiliyor.",
+    "DeepSeek‑V4.1‑Flash ve Qwen3.8‑Flash‑Next gibi 100 GiB üzerindeki modellerde %1.4‑2.1 performans artışı sağlanıyor.",
+    "AMD ROCm (HIP) desteği eklendi; RX 7900 XTX üzerinde 68.6 tok/s hız elde edildi.",
+    "128 GB RAM sistemlerinde LLAMA_MOE_STORE_AUTO hatası düzeltildi, varsayılan ayarlar artık sorunsuz çalışıyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "tandem.cpp, büyük MoE modellerinin sınırlı donanımlarda çalıştırılmasını mümkün kılarak araştırma ve geliştirme süreçlerini hızlandırıyor; AMD ROCm desteği ise platform çeşitliliğini artırıyor.",
+  "etiketler": [
+    "tandem.cpp",
+    "llama.cpp",
+    "MoE",
+    "AMD ROCm",
+    "benchmark"
+  ],
+  "anilan_modeller": [
+    "DeepSeek-V4.1-Flash IQ2_XS",
+    "Qwen3.8-Flash-Next IQ3_S",
+    "gpt-oss-120b",
+    "GLM-4.5-Air",
+    "Qwen3.6"
+  ],
+  "yorum_tr": "Bu güncelleme, yüksek bellek gereksinimi olan MoE modellerinin daha geniş bir donanım yelpazesinde kullanılabilmesini sağlayarak geliştiricilerin maliyetlerini düşürüyor ve AMD ekosistemine de aynı performans avantajını getiriyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "DeepSeek-V4.1-Flash IQ2_XS",
+      "benchmark": "tok/s",
+      "skor": 33.1,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "RTX 5090 32 GB, 128 GB RAM, i5-14600KF",
+      "kaynak_metinden_alinti": "RTX 5090 32 GB, 128 GB RAM, i5-14600KF 11.5 33.1 28.0"
+    },
+    {
+      "model": "Qwen3.8-Flash-Next IQ3_S",
+      "benchmark": "tok/s",
+      "skor": 34.3,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "RTX 5070 Ti 16 GB, 32 GB RAM, i5-12400F, budget DRAM-less SSD",
+      "kaynak_metinden_alinti": "RTX 5070 Ti 16 GB, 32 GB RAM, i5-12400F, budget DRAM-less SSD 14.9 34.3 30.3"
+    },
+    {
+      "model": "Qwen3.8 IQ3_S + MTP",
+      "benchmark": "tok/s",
+      "skor": 68.6,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "RX 7900 XTX (i7-8700, 64 GB DDR4, PCIe 3.0)",
+      "kaynak_metinden_alinti": "Engine tok/s tandem.cpp 68.6"
+    }
+  ],
+  "gorsel_url": "https://cdn.sanity.io/images/wy75wyma/production/531337dc2a8462c406802385cd6dc9de91c60991-2240x1260.png",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xwan2j/update_tandemcpp_deepseekv41_on_a_64_gb_pc_with_a/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-14T19:12:45.000Z",
+  "slug": "update-tandem-cpp-deepseek-v4-1-on-a-64-gb-pc-with-a-16-gb-c"
+}

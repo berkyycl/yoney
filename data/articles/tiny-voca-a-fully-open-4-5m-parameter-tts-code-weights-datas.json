@@ -1,0 +1,44 @@
+{
+  "baslik_tr": "tiny-voca: Tamamen açık kaynaklı 4.5M parametreli TTS, CPU’da 70 kat gerçek zamanlı",
+  "ozet_tr": "tiny-voca, sadece 4.5M parametreye sahip, iki sesli ve tarayıcıda çalışan bir İngilizce metin‑konuşma modeli. Model, 4 CPU çekirdeğinde gerçek zamanlıdan 70 kat daha hızlı çalışıyor ve kod, ağırlıklar, eğitim verisi ve fonemleştirici tamamen açık kaynak olarak sunuluyor.",
+  "detayli_icerik_tr": "Yerel bir geliştirici, \"tiny-voca\" adını verdiği yeni bir İngilizce metin‑konuşma (TTS) modelini duyurdu. Model, 4.537.291 parametre ve 18 MB boyutunda; iki ses (bir kadın, bir erkek) 24 kHz örnekleme oranıyla sunuluyor. En dikkat çekici özelliği, dört CPU iş parçacığında gerçek zamanlıdan yaklaşık 70 kat daha hızlı çalışabilmesi ve tamamen tarayıcı içinde, hiçbir veri sunucuya gönderilmeden çalışması.\n\nModel, PyTorch, ONNX ve WebAssembly destekli bir pipeline ile çalışıyor. Eğitim süreci sıfırdan, tek bir RTX 4090 GPU üzerinde sadece 7,7 saat sürmüş. Tiny‑voca, geleneksel bir sinirsel vokoder yerine küçük bir kaynak‑filtre sentezleyici kullanıyor; bu sayede hem boyut hem de hız açısından büyük avantaj sağlanıyor. Ayrıca geliştirici, özel bir fonemleştirici (dizione) entegre etmiş ve eğitim verisini Qwen3‑TTS ile sentezleyerek tamamen açık bir veri seti sunmuş.\n\nHenüz sınırlamaları bulunuyor: Model yalnızca İngilizce destekli ve sadece iki ses içeriyor; ses klonlama, yabancı isimlerin doğru telaffuzu ve doğal ses kalitesi gibi konularda eksiklikler var. Eğitim verisinin de sentetik olması, nihai ses kalitesinin sınırlı kalmasına yol açıyor. Geliştirici, topluluktan zor metin örnekleri (sayısal ifadeler, tarih, uzun cümleler) gönderilmesini ve hatalı çıktılar hakkında geri bildirim alınmasını istiyor.\n\nProjeye ait kod, model ağırlıkları, veri seti ve fonemleştirici GitHub ve Hugging Face üzerinden erişilebilir durumda. Demo sayfası üzerinden doğrudan tarayıcıda deneme yapılabiliyor. Açık kaynak doğası, araştırmacılar ve geliştiriciler için düşük maliyetli, hızlı ve özelleştirilebilir bir TTS çözümü sunma potansiyeli taşıyor.",
+  "onemli_maddeler": [
+    "Tamamen açık kaynak: kod, ağırlıklar, eğitim tarifi ve veri seti herkesin kullanımına açık.",
+    "Sadece 4.5M parametre ve 18 MB boyutunda, iki ses (kadın ve erkek) sunuyor.",
+    "4 CPU iş parçacığında gerçek zamanlıdan 70 kat daha hızlı çalışıyor.",
+    "Tek bir RTX 4090 GPU üzerinde 7,7 saat içinde sıfırdan eğitildi."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 3,
+  "onem_gerekce": "Model, açık kaynak ve düşük kaynak gereksinimiyle ilgi çekici olsa da sadece İngilizce ve iki sesle sınırlı; sektörde geniş çaplı bir etki yaratması beklenmiyor.",
+  "etiketler": [
+    "metin-konuşma",
+    "açık-kaynak",
+    "CPU",
+    "yapay-zeka",
+    "tiny-voca"
+  ],
+  "anilan_modeller": [
+    "tiny-voca",
+    "Qwen3-TTS"
+  ],
+  "yorum_tr": "tiny-voca, düşük donanım gereksinimi ve tam açık kaynak yapısıyla araştırmacılar ve geliştiriciler için erişilebilir bir TTS alternatifi sunuyor. Ancak sınırlı dil ve ses çeşitliliği, geniş çaplı ticari uygulamalarda kullanılmasını kısıtlayabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "tiny-voca",
+      "benchmark": "Real-time factor",
+      "skor": 70,
+      "birim": "x",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "4 CPU threads",
+      "kaynak_metinden_alinti": "About 70x faster than real time on 4 CPU threads."
+    }
+  ],
+  "gorsel_url": "https://i.redd.it/uv3r22gt2m1i1.png",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xw7zrg/tinyvoca_a_fully_open_45mparameter_tts_code/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-14T17:26:13.000Z",
+  "slug": "tiny-voca-a-fully-open-4-5m-parameter-tts-code-weights-datas"
+}

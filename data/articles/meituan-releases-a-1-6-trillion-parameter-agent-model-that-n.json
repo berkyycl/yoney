@@ -1,0 +1,79 @@
+{
+  "baslik_tr": "Meituan, Nvidia GPU'siz 1.6 Trilyon Parametreli LongCat-2.5 Ajan Modelini Açtı",
+  "ozet_tr": "Meituan, tamamen Çin donanımıyla eğitilmiş ve 1.6 trilyon parametreye sahip LongCat-2.5 ajan modelinin ağırlıklarını MIT lisansı altında yayınladı. Model, çok adımlı kodlama görevlerinde batıdaki üst düzey modellerle rekabet edebilecek seviyede performans sergiliyor ve Nvidia GPU'larına hiç dokunmadan çalışıyor.",
+  "detayli_icerik_tr": "Meituan'ın LongCat ekibi, LongCat-2.5'in ağırlıklarını resmi olarak yayınlayarak, 1.6 trilyon parametreli bir mixture-of-experts (MoE) mimarisine sahip ajan modelini duyurdu. Toplam parametre sayısının sadece yaklaşık 48 milyarının her token için aktif olduğu bu yapı, bir token işlenirken yalnızca ilgili uzman alt‑ağları devreye alarak verimliliği artırıyor. Model, bir API üzerinden aynı anda bir milyon token işleyebiliyor ve 128.000 token uzunluğunda yanıtlar üretebiliyor; metin, görüntü ve video anlayışı sunuyor, ayrıca gerekirse akıl yürütme modunu açıp kapatabiliyor.\n\nLongCat-2.5, önceki sürüm LongCat-2.0 üzerine inşa edilerek görüntü işleme yeteneği ekledi. Görüntüler, modelin metinle aynı token akışına dönüştürülerek işleniyor; bu, ayrı bir görüntü kodlayıcı eklemek yerine güncel LLM'lerde yaygın olan bir yaklaşım. Araştırma modeli LongCat-Next'ten ilham alınarak görsel kodlama, tasarım ve 3D görevlerinde performans artırıldı.\n\nEğitim sürecinde, ekip GitHub pull‑request'lerinden gerçek yazılım görevleri ve yeniden oluşturulmuş ajan hataları kullandı. Çevrim içi arama ve Git geçmişi gibi kısayollar devre dışı bırakıldı; modelin çözümleri bir dil modeli tarafından denetlendi. Uzman öğretmen modellerinin (ajan, akıl yürütme, diyalog) bilgileri LongCat-2.5'e distile edildi. Model, ağırlık ve aktivasyonları 4‑bit hassasiyete kuantize ederek Huawei Ascend A2 serisi çiplerinde çalıştırıldı; 194 çiplik bir kümede (2 görüntü, 64 prompt, 128 yanıt) testlerde 8‑bit sürüme göre %43 civarında hız artışı sağlandı ve doğruluk aynı seviyede kaldı.\n\nBenchmark sonuçları, LongCat-2.5'in batı modellerine yakın performans gösterdiğini ortaya koyuyor. Terminal Bench v2.1'de 88.4 puan alarak Claude Opus 5'in 89.1 puanına çok yaklaştı; DeepSWE testinde 64.6 puanla sadece Claude Opus 4.8'in gerisinde kaldı. Daha zor Terminal Bench v4.0'da 38.5 puan elde ederken GPT‑5.6 Sol'un 37.3 puanını geçti, ancak Opus 5'in 53.9 puanının çok altında kaldı. Web arama benchmarku BrowseComp'te ise 91.9 puanla tablonun en yüksek skorunu aldı. Ağırlıklar MIT lisansı altında sunuluyor ve hem OpenAI hem de Anthropic API formatlarını destekleyen bir chat arayüzü üzerinden deneme imkanı sağlanıyor. Lansman döneminde girişim, giriş token başına yaklaşık €0.27, çıkış token başına €1.07 tutarında promosyonel bir fiyatlandırma uyguluyor.",
+  "onemli_maddeler": [
+    "LongCat-2.5, 1.6 trilyon parametreli bir MoE ajan modeli olarak, sadece 48 milyar aktif parametreyle yüksek verimlilik sağlıyor.",
+    "Model, tamamen Çin yapımı Huawei Ascend çipleri üzerinde eğitildi ve Nvidia GPU'larına hiç ihtiyaç duymuyor.",
+    "Terminal Bench v2.1'de 88.4 puan alarak batıdaki Claude Opus 5'e çok yakın bir performans gösterdi.",
+    "Ağırlıklar MIT lisansı altında açıkça sunuluyor; hem OpenAI hem de Anthropic API formatlarını destekliyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "1.6 trilyon parametreli yeni bir ajan modeli, Çin donanımıyla eğitildi ve batıdaki üst düzey modellerle rekabet edebilecek seviyede benchmark sonuçları elde etti; Nvidia bağımlılığını kırması ve açık lisansla sunulması sektörde büyük yankı uyandırıyor.",
+  "etiketler": [
+    "AI",
+    "agent model",
+    "Meituan",
+    "multimodal",
+    "Chinese hardware"
+  ],
+  "anilan_modeller": [
+    "LongCat-2.5",
+    "LongCat-2.0",
+    "Claude Opus 5",
+    "GPT-5.6 Sol",
+    "Deepseek-V4.1-Flash",
+    "Claude Opus 5.5",
+    "GPT-6.1 Sol",
+    "Kimi K3.1",
+    "GLM-5.3",
+    "LongCat-Image"
+  ],
+  "yorum_tr": "LongCat-2.5'in Nvidia dışı donanımda bu kadar büyük bir model sunması, Çin'in AI altyapısındaki bağımsızlık çabalarını pekiştiriyor ve geliştiricilere alternatif bir yüksek‑kapasiteli ajan platformu sağlıyor. Açık lisansla dağıtılması, küresel araştırma ve uygulama ekosisteminde yeni işbirliklerine kapı aralayabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "LongCat-2.5",
+      "benchmark": "Terminal Bench v2.1",
+      "skor": 88.4,
+      "birim": "points",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "v2.1",
+      "kaynak_metinden_alinti": "LongCat-2.5 reports 88.4 points on Terminal Bench v2.1"
+    },
+    {
+      "model": "LongCat-2.5",
+      "benchmark": "DeepSWE",
+      "skor": 64.6,
+      "birim": "points",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "LongCat-2.5 jumps from 9.7 to 64.6 points"
+    },
+    {
+      "model": "LongCat-2.5",
+      "benchmark": "Terminal Bench v4.0",
+      "skor": 38.5,
+      "birim": "points",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "v4.0",
+      "kaynak_metinden_alinti": "LongCat-2.5 at 38.5 points, slightly above GPT-5.6 Sol's 37.3 but well below Opus 5's 53.9"
+    },
+    {
+      "model": "LongCat-2.5",
+      "benchmark": "BrowseComp",
+      "skor": 91.9,
+      "birim": "points",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "own environment",
+      "kaynak_metinden_alinti": "The model posts 91.9 on the web search benchmark BrowseComp, the highest score in the table"
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/11/meituan-logo-wall-chatgpt-5.6.jpg",
+  "url": "https://the-decoder.com/meituan-releases-a-1-6-trillion-parameter-agent-model-that-never-touched-an-nvidia-gpu/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-15T10:06:06.000Z",
+  "slug": "meituan-releases-a-1-6-trillion-parameter-agent-model-that-n"
+}
