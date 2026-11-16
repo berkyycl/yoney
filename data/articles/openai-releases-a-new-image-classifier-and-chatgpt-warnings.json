@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "OpenAI, Çocuk Cinsel İstismarı İçeriklerini Tespit Eden Yeni Görüntü Sınıflandırıcısı ve ChatGPT Uyarılarını Yayınladı",
+  "ozet_tr": "OpenAI, çocuk cinsel istismarı materyallerine (CSAM) karşı mücadele amacıyla yeni bir görüntü sınıflandırıcısı ve ChatGPT içinde uyarı mekanizmaları geliştirdi. Bu araçlar, AI tarafından üretilen ve gerçek fotoğrafları ayırt ederek inceleme sürecini hızlandırmayı hedefliyor.",
+  "detayli_icerik_tr": "OpenAI, CSAM ile mücadele kapsamında yeni bir görüntü sınıflandırıcısı tanıttı. NCMEC (National Center for Missing and Exploited Children) ile ortaklaşa geliştirilen bu sistem, daha önce görülmemiş görsellerde istismar izlerini tespit edip bir skor atayarak inceleyicilere yönlendirme sağlıyor. Erken testlerde sınıflandırıcı, aynı sayıda istismar içeren görseli bulurken işaretlediği görüntü sayısını %48 oranında azaltmış ve işaretlenen görsellerin istismar içermesi olasılığı iki katına çıkmıştır.\n\nBu sınıflandırıcı, seçili şirketlere API üzerinden ücretsiz olarak sunulacak ve OpenAI, Tech Coalition ve ROOST gibi ortaklarla erişim paylaşımını genişletecek. Aynı zamanda ChatGPT içinde yeni uyarı ekranları devreye alındı; kullanıcılar çocukları cinselleştiren içerik talep ettiğinde bir uyarı gösterilecek, destek hatlarına yönlendirilecek ve hesabı 24 saatliğine askıya alacak. Tekrarlanan ihlaller kalıcı hesabın kapatılmasına yol açabilecek.\n\nOpenAI, geliştiriciler için de bir rehber yayımladı. Bu rehber, OpenAI araçlarını kullananların CSAM tespiti, raporlaması ve önlenmesi konularında nasıl hareket etmeleri gerektiğini açıklıyor. Erken testlerde bu yönergeler, bir dizi geliştiricinin çocuk güvenliği araçlarını benimsemesini ve NCMEC'ye raporlamasını sağladı.\n\nKanun uygulayıcıları da AI destekli eklentiler, soruşturma araçları ve karmaşık veri analizleriyle donatıldı. OpenAI, bu araçların erişimini program yöneticileri aracılığıyla kontrol ediyor ve araştırmacılara eğitim materyalleri ve saha kılavuzu sunuyor. Şirket, son bir yılda güvenlik planı, içerik yönergeleri ve model ayarlamalarıyla ilgili bir dizi iyileştirme yaptı; bunlar arasında gençler için özel bir ChatGPT sürümü de bulunuyor.",
+  "onemli_maddeler": [
+    "OpenAI, NCMEC iş birliğiyle %48 daha az yanlış pozitifle aynı sayıda CSAM görüntüsünü tespit eden yeni bir görüntü sınıflandırıcısı geliştirdi.",
+    "ChatGPT, çocukları cinselleştiren içerik taleplerine karşı uyarı ekranı, 24 saatlik geçici askıya alma ve tekrarlanan ihlallerde kalıcı hesap kapatma gibi yeni önlemler ekledi.",
+    "Geliştiriciler için yayımlanan rehber, CSAM tespiti ve raporlamasını standartlaştırarak daha fazla şirketin çocuk güvenliği araçlarını benimsemesini sağladı."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Çocuk istismarı içeriğinin AI tarafından üretilmesi ve yayılması riski giderek artıyor; OpenAI'nin bu kapsamlı güvenlik araçları, sektördeki en büyük risklerden birine doğrudan çözüm sunarak hem geliştiricileri hem de son kullanıcıları koruma potansiyeline sahip.",
+  "etiketler": [
+    "OpenAI",
+    "CSAM",
+    "Güvenlik",
+    "ChatGPT",
+    "AI"
+  ],
+  "anilan_modeller": [
+    "ChatGPT"
+  ],
+  "yorum_tr": "Bu güncellemeler, AI tabanlı platformların çocuk koruma sorumluluğunu somut adımlarla yerine getirmesine örnek teşkil ediyor ve sektörde benzer güvenlik önlemlerinin yaygınlaşmasını teşvik edecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://techcrunch.com/wp-content/uploads/2026/11/OpenAI-chatgpt-CSAM.jpeg?resize=1200,675",
+  "url": "https://techcrunch.com/2026/11/16/openai-releases-a-new-image-classifier-and-chatgpt-warnings-to-combat-csam/",
+  "source": "TechCrunch AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-16T17:00:00.000Z",
+  "slug": "openai-releases-a-new-image-classifier-and-chatgpt-warnings"
+}

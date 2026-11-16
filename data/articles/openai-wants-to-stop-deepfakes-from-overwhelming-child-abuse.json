@@ -1,0 +1,43 @@
+{
+  "baslik_tr": "OpenAI, Çocuk İstismarı Bildirim Hatlarını Aşırı Deepfake'lerden Koruyan CSAM Sınıflandırıcısını Tanıttı",
+  "ozet_tr": "OpenAI, çocuk istismarı görüntülerini (CSAM) tespit eden ve özellikle yapay zeka üretimli deepfake'leri ayırt eden yeni bir sınıflandırıcı duyurdu. Yeni araç, insan denetçileri için yanlış pozitifleri %48 oranında azaltırken, tespit ettiği içeriklerin gerçek istismar olma olasılığını iki katına çıkarıyor.",
+  "detayli_icerik_tr": "Washington, DC'de yapılan basın toplantısında OpenAI, çocuk istismarı araştırmacılarına ve yasa uygulayıcılarına AI‑taraflı sahte görüntülerle boğuşmadan kurtulmalarını sağlayacak bir CSAM sınıflandırıcı sunacağını açıkladı. Bu sınıflandırıcı, hem gerçek hem de yapay zeka tarafından üretilen çocuk pornografisi içeren görselleri tanıyabiliyor ve raporlamada kullanılan NCMEC CyberTipline gibi sistemlerin iş yükünü hafifletmeyi hedefliyor.\n\nGeçtiğimiz yıllarda NCMEC, 2024'te 67.000, 2025'te ise 400.000 AI‑ilişkili rapor alarak rapor sayısında patlama yaşadı. Uzmanlar, bu artışın gerçek istismar vakalarını gölgede bırakabileceği ve inceleme süreçlerini yönetilemez hâle getirebileceği konusunda uyarıda bulunmuştu. OpenAI'nin yeni sınıflandırıcısı, bu soruna yanıt olarak, yanlış pozitifleri %48 azaltarak denetçilerin yalnızca gerçekten zararlı içeriğe odaklanmasını sağlıyor.\n\nSınıflandırıcı, açık kaynak modeller, \"nudifying\" uygulamaları ve diğer AI araçlarıyla üretilen sahte çocuk görüntülerini de tespit edebiliyor. OpenAI'nin çocuk güvenliği politikası sorumlusu John Buckley, bu özelliğin sektöre, sahte ve gerçek çocuk görüntülerini ayırt etme konusunda kritik bir adım olduğunu vurguladı. Ayrıca, sınıflandırıcı, AI‑taraflı içerik için ayrı bir işaretleme sunarak, yasa uygulayıcılarının raporlama akışlarını daha etkili yönetmesine olanak tanıyor.\n\nOpenAI, aynı zamanda ChatGPT görüntü oluşturucusunun CSAM taleplerini otomatik olarak reddetmesini ve bu tür isteklerde bulunan kullanıcıları uyarı mesajları ve 24 saatlik erişim durdurma gibi önlemlerle yönlendirmesini duyurdu. Kullanıcıların ilk ihlali, hesaplarının kalıcı olarak kapatılabileceği uyarısıyla birlikte, destek kaynaklarına yönlendirilerek zararlı davranışların önlenmesi hedefleniyor. Bu adımlar, hem teknik hem de politik açıdan AI'nın çocuk istismarıyla mücadelede sorumlu kullanımını pekiştirmeyi amaçlıyor.",
+  "onemli_maddeler": [
+    "OpenAI'nin yeni CSAM sınıflandırıcısı, yanlış pozitifleri %48 azaltıyor.",
+    "Tespit edilen içeriklerin gerçek istismar olma olasılığı iki katına çıkıyor.",
+    "Araç, AI‑taraflı sahte çocuk görüntülerini de ayırt ederek NCMEC'in iş yükünü hafifletmeyi hedefliyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Çocuk istismarıyla mücadelede AI destekli sahte içeriklerin artışı kritik bir risk oluşturuyor; OpenAI'nin sınıflandırıcısı bu soruna teknik bir çözüm getirerek sektördeki güvenlik standartlarını yükseltiyor.",
+  "etiketler": [
+    "CSAM",
+    "deepfake",
+    "AI safety",
+    "OpenAI",
+    "classifier"
+  ],
+  "anilan_modeller": [
+    "ChatGPT",
+    "OpenAI CSAM Classifier"
+  ],
+  "yorum_tr": "Bu sınıflandırıcı, AI üretimli çocuk istismarı içeriğinin tespiti ve raporlanmasında önemli bir adım olup, hem araştırmacılar hem de yasa uygulayıcılar için daha verimli bir çalışma ortamı sağlayacak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "OpenAI CSAM Classifier",
+      "benchmark": "False Positive Reduction",
+      "skor": 48,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "OpenAI says its classifier dramatically cuts down on false positives, flagging 48 percent fewer images"
+    }
+  ],
+  "gorsel_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/STK155_OPEN_AI_CVirginia_C-1.jpg?quality=90&strip=all&crop=0,0,100,100",
+  "url": "https://www.theverge.com/policy/1034527/openai-csam-classifier",
+  "source": "The Verge AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-16T19:23:45.000Z",
+  "slug": "openai-wants-to-stop-deepfakes-from-overwhelming-child-abuse"
+}

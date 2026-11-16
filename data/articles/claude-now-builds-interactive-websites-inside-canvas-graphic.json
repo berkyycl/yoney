@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "Claude artık canvas grafik içinde etkileşimli web siteleri oluşturuyor, Flash çağrısını gerçek HTML ile canlandırıyor",
+  "ozet_tr": "Anthropic'in Claude modeli, HTML öğelerini doğrudan canvas içinde çalıştırarak gerçek metin ve butonların etkileşimini koruyan yeni bir \"HTML-in-Canvas\" özelliği sundu. Bu sayede geliştiriciler, görsel olarak karmaşık ve 3D efektli tasarımları, erişilebilir ve seçilebilir HTML bileşenleriyle birleştirebilecek.",
+  "detayli_icerik_tr": "Claude, artık metin, düğme ve diğer web öğelerini karmaşık grafikler ve 3D efektler içinde gömerek gerçek HTML'in interaktif özelliklerini koruyor. Geleneksel canvas, tarayıcı tarafından düz bir resim gibi işlenirken, bu yeni yaklaşım gerçek sayfa öğelerini canvas içinde konumlandırıyor; böylece kullanıcılar metni seçebilir, bağlantılara tıklayabilir ve ekran okuyucularla uyumlu bir deneyim elde edebiliyor.\n\nBu özellik, Anthropic'te Claude üzerinde çalışan Felix Rieseberg'in X üzerinden yaptığı açıklamayla duyuruldu ve \"Flash çağrısını anımsatan\" bir yenilik olarak nitelendirildi. Demo sayfasında, örnek olarak örgü desenleri, 3D küpler ve katmanlı patlama görünümleri gibi 15 farklı tasarım gösteriliyor; tüm içerik gerçek metin olarak kalıyor ve kopyalanabiliyor.\n\nHTML-in-Canvas, Google tarafından bir web standardı olarak geliştiriliyor ve Chrome ile Edge'in 157. sürümlerinde, Claude'un masaüstü uygulamalarında ise 5.11492 sürümünden itibaren destekleniyor. Safari ve Firefox henüz bu özelliği sunmuyor, bu da geliştiricilerin tarayıcı uyumluluğunu göz önünde bulundurmasını gerektiriyor. Kullanıcıların bu işlevi etkinleştirebilmeleri için Claude'a açıkça HTML-in-Canvas talep etmeleri gerekiyor.\n\nClaude, görsel görevlerdeki yaratıcılığını da artırıyor; yakın zamanda Claude Fable 5.2, kendi yazdığı Python kodlarıyla foto-gerçekçi sanat eserleri üretebiliyor. Bu gelişme, yapay zekâ destekli web tasarımının sınırlarını genişleterek, tasarımcıların ve geliştiricilerin daha dinamik ve erişilebilir interaktif deneyimler yaratmasına olanak tanıyor.",
+  "onemli_maddeler": [
+    "Claude, canvas içinde gerçek HTML öğeleri (metin, buton, link) barındırarak etkileşimi ve erişilebilirliği koruyor.",
+    "HTML-in-Canvas özelliği Chrome ve Edge 157 sürümünden, Claude masaüstü uygulamalarında ise 5.11492 sürümünden itibaren destekleniyor.",
+    "Demo sayfasında 15 farklı örnek gösteriliyor; tasarımlar gerçek metin içeriyor ve kopyalanabilir.",
+    "Google, bu yaklaşımı bir web standardı haline getirmeyi hedefliyor; Safari ve Firefox henüz destek vermiyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Claude'un HTML-in-Canvas özelliği, web tasarımında etkileşim ve erişilebilirliği birleştiren yeni bir yaklaşım sunarak geliştiricilerin ve tasarımcıların yaratıcı sınırlarını genişletiyor; tarayıcı desteği ve standartlaşma süreci sektörde önemli bir etki yaratacak.",
+  "etiketler": [
+    "Claude",
+    "HTML-in-Canvas",
+    "Web Development",
+    "Anthropic",
+    "Tarayıcı Desteği"
+  ],
+  "anilan_modeller": [
+    "Claude",
+    "Claude Fable 5.2"
+  ],
+  "yorum_tr": "Bu özellik, görsel olarak zengin web deneyimlerini erişilebilir tutarak tasarımcıların iş akışını hızlandırabilir ve standartlaşma süreciyle birlikte daha geniş bir kullanıcı kitlesine ulaşmasını sağlayabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/11/claude_gemini_pro-scaled.png",
+  "url": "https://the-decoder.com/claude-now-builds-interactive-websites-inside-canvas-graphics-reviving-the-flash-era-with-real-html/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-16T16:10:22.000Z",
+  "slug": "claude-now-builds-interactive-websites-inside-canvas-graphic"
+}

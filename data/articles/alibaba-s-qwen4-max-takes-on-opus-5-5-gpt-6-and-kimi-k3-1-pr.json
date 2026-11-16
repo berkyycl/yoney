@@ -1,0 +1,103 @@
+{
+  "baslik_tr": "Alibaba Qwen4-Max, Opus 5.5, GPT-6 ve Kimi K3.1 Pro'yu Çok Daha Düşük Fiyatlarla Geride Bırakıyor",
+  "ozet_tr": "Alibaba, 2.4 trilyon parametreli Qwen4-Max modelini tanıttı. Yeni mimari, uzun bağlamları üç katmanla sıkıştırıp sadece önemli bölümleri işleyerek token başına maliyeti %25 düşürüyor ve görev başına ortalama maliyeti %62 azaltıyor. Model, Artificial Analysis Intelligence Index'te 43 puanla ikinci sırada yer alırken, Work360 ve Terminal‑Bench 4.0 gibi endüstri odaklı benchmarklarda da önemli performans artışları gösterdi.",
+  "detayli_icerik_tr": "Alibaba, Qwen4-Max'i 2.4 trilyon parametreli bir mixture‑of‑experts modeli olarak duyurdu. Model, her token için yalnızca 71 milyar parametreyi aktif hâle getiriyor ve bir milyon tokena kadar bağlam penceresini destekliyor. Mimari, standart dikkat katmanlarının yanı sıra üç sıkıştırma katmanı ve bir seçim katmanı kullanarak uzun metinlerdeki hesaplama maliyetini büyük ölçüde azaltıyor; ayrıca dört paralel bağlantı ve dinamik kapılar bilgi akışını stabilize ediyor. N‑gram gömme katmanı 328 milyar parametreyle yaygın token dizilerini hazır bloklar olarak sunuyor.\n\nVerimlilik iddiaları, Alibaba'nın kendi Work360 benchmark'unda net bir şekilde ortaya çıkıyor. Qwen4-Max, önceki sürümüne kıyasla görev başına kullanılan token sayısını %25‑%33 oranında azaltıyor ve ortalama maliyeti $4.43'tan $1.67'ye (%62) düşürüyor. Aynı benchmark'ta puan 47.74'ten 52.69'a yükseliyor. Terminal‑Bench 4.0'de ise token tüketimi neredeyse yarıya inmiş, model %48 başarı oranı yakalarken Kimi K3.1 Pro %67 ile önde. Uzun‑horizon ajan görevleri için Agents' Last Exam v1.1'de 46.7 puan alarak grup içinde en yüksek skoru elde etti, ancak Humanity's Last Exam ve HealthBench Professional gibi testlerde GPT modelleri ve Opus 5.5'in gerisinde kaldı.\n\nQwen4-Max'in yeni \"Live Delivery\" özelliği, uzun süren ajan görevlerinde ara sonuçları kullanıcıya sunarak sürecin ortasında müdahale imkanı tanıyor. Bu özellik açık kaynaklı Qwen‑Live‑Delivery‑Plugin ile sağlanıyor. Model, otomotivde programlama süresini 475 dakikadan 24 dakikaya düşürmek, finansal veri entegrasyonunu 90 MCP aracıyla otomatikleştirerek izlenebilir Excel ve PowerPoint raporları üretmek gibi gerçek dünya uygulamalarında da etkisini gösterdi. Laboratuvar ortamında ise Mira sistemiyle 2.7 milyon molekül adayı tarayarak yeni bir soğutucu tasarladı; PharmMaster ile Alzheimer hastalığına yönelik 24 bileşiği optimize ederek bağlanma gücünü 3.6 kat artırdı.\n\nGüvenlik açısından, Last Secure Code Bench testinde fonksiyonel ve güvenli kod oranı %22'den %31.8'e yükseldi, tam güvenli kod oranı ise %8'den %14.7'ye neredeyse iki katına çıktı. CBRN (kimyasal, biyolojik, radyolojik, nükleer) risk değerlendirmelerinde modelin tehlikeli bir yetenek kazancı göstermediği bildirildi. Qwen4-Max, QwenCloud, QwenWork, Qoder ve QwenStudio üzerinden hizmete sunuluyor; daha küçük Qwen4 modellerinin açık kaynak olarak yayınlanması planlanıyor.",
+  "onemli_maddeler": [
+    "Qwen4-Max, token başına maliyeti %25, görev başına maliyeti %62 azaltarak önceki sürümüne göre çok daha ekonomik bir çözüm sunuyor.",
+    "Model, 2.4 trilyon parametreye rağmen her token için sadece 71 milyar parametreyi aktif hâle getirerek uzun bağlamları (1M token) verimli bir şekilde işliyor.",
+    "\"Live Delivery\" özelliği, uzun süren ajan görevlerinde ara sonuçları kullanıcıya sunarak sürecin ortasında müdahale imkanı tanıyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Qwen4-Max, hem mimari yenilikleri hem de maliyet avantajlarıyla büyük ölçekli endüstriyel ve bilimsel uygulamalarda rekabeti yeniden şekillendirecek potansiyele sahip.",
+  "etiketler": [
+    "Qwen4-Max",
+    "Alibaba",
+    "AI modeli",
+    "Maliyet verimliliği",
+    "Uzun bağlam"
+  ],
+  "anilan_modeller": [
+    "Opus 5.5",
+    "GPT-6",
+    "Kimi K3.1 Pro",
+    "Qwen3.8-Max",
+    "Tencent Hy4",
+    "Claude Opus 5.5",
+    "DeepSeek V4-Pro",
+    "GLM-5.3"
+  ],
+  "yorum_tr": "Qwen4-Max'in düşük maliyetli ve uzun bağlamları etkin işleyebilmesi, özellikle finans, otomotiv ve ilaç keşfi gibi yüksek veri gerektiren sektörlerde büyük bir ivme yaratabilir; geliştiriciler ise Live Delivery sayesinde uzun süren görevlerde daha fazla kontrol elde edecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen4-Max",
+      "benchmark": "Work360 cost per task",
+      "skor": 1.67,
+      "birim": "$",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Ortalama maliyet per Work360 görev %62 düşerek $4.43'tan $1.67'ye indi."
+    },
+    {
+      "model": "Qwen4-Max",
+      "benchmark": "Work360 score",
+      "skor": 52.69,
+      "birim": "points",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Benchmark skoru 47.74'ten 52.69'a yükseldi."
+    },
+    {
+      "model": "Qwen4-Max",
+      "benchmark": "Terminal-Bench 4.0",
+      "skor": 48,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Terminal-Bench 4.0'de Qwen4-Max %48 puan alıyor, Kimi K3.1 Pro %67."
+    },
+    {
+      "model": "Qwen4-Max",
+      "benchmark": "Agents' Last Exam v1.1",
+      "skor": 46.7,
+      "birim": "points",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Agents' Last Exam v1.1'de 46.7 puan alarak grup içinde en yüksek skoru elde etti."
+    },
+    {
+      "model": "Qwen4-Max",
+      "benchmark": "Artificial Analysis Intelligence Index",
+      "skor": 43,
+      "birim": "points",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "AI Index'te 43 puan alarak Qwen3.8-Max'ten 9 puan daha yüksek, Kimi K3.1 Pro'dan 3 puan düşük."
+    },
+    {
+      "model": "Qwen4-Max",
+      "benchmark": "FrontierCode 2.0 coding benchmark",
+      "skor": 26,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "FrontierCode 2.0'de Kimi ile %26'da eşit, Tencent Hy4 %31'de önde."
+    },
+    {
+      "model": "Qwen4-Max",
+      "benchmark": "Last Secure Code Bench functional+secure share",
+      "skor": 31.8,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Fonksiyonel ve güvenli kod oranı %22'den %31.8'e yükseldi."
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/07/qwen_logo-1.png",
+  "url": "https://the-decoder.com/alibabas-qwen4-max-takes-on-opus-5-5-gpt-6-and-kimi-k3-1-pro-at-much-lower-prices/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-16T16:56:04.000Z",
+  "slug": "alibaba-s-qwen4-max-takes-on-opus-5-5-gpt-6-and-kimi-k3-1-pr"
+}

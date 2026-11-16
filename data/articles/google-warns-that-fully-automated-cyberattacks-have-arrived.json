@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "Google, tam otomatik siber saldırıların geldiğini ve hızla kötüleşeceğini uyardı",
+  "ozet_tr": "Google'ın Tehdit İstihbarat Grubu (GTIG), insan müdahalesi olmadan zafiyet keşfi ve istismarını gerçekleştiren tam otomatik bir saldırı altyapısının aktif olduğunu tespit etti. Bu sistem, yamalar öncesi ve sonrası kodları karşılaştırarak açıkları bulup, istismar kodları üretip, anında çalıştırıyor. GTIG, bu tür saldırıların şu anda seviye 5'te olduğunu ve önümüzdeki aylarda çok daha güçlü, daha az gözlemlenebilir saldırıların ortaya çıkabileceğini belirtiyor.",
+  "detayli_icerik_tr": "Google'ın Tehdit İstihbarat Grubu (GTIG), son zamanlarda bir sunucunun \"exploit_agent\" adlı bir AI çerçevesi çalıştırdığını keşfetti. Bu çerçeve, birden fazla büyük dil modeline bağlanarak yazılım kodlarını yamalar öncesi ve sonrası karşılaştırıyor, potansiyel güvenlik açıklarını otomatik olarak tanımlıyor ve bu açıklar için istismar kodları üretiyor. Üretilen istismarlar, insan müdahalesi olmadan doğrudan hedef sistemlere uygulanıyor.\n\nKonfigürasyon dosyalarında Rusça yorumlar bulunması, operatörün Rusça konuştuğunu gösteriyor. GTIG, bu altyapının özellikle Fransa'daki medya, eğlence ve eğitim sektöründeki web sitelerini hedef aldığını ve saldırıların hız odaklı olduğu için iz bırakma eğiliminde olduğunu raporladı. Bu durum, saldırıların tespit edilmesini zorlaştırmasa da mevcut aşamada iz bırakma oranı yüksek olduğu için adli analizle tespit edilebiliyor.\n\nGoogle, bu otomatik saldırıların şu anki seviyesini \"Level 5\" olarak sınıflandırdı; yani yapay zeka araçları saldırının birden fazla aşamasını insan müdahalesi olmadan yürütüyor. Şirket, bu teknolojinin birkaç ay içinde daha sofistike, daha az iz bırakan ve daha geniş çaplı saldırılara dönüşebileceği uyarısında bulundu. Bu gelişme, siber güvenlik savunma stratejilerinin otomasyon ve yapay zeka temelli tehdit algılama sistemlerine yönlendirilmesi gerektiğini ortaya koyuyor.\n\nUzmanlar, bu tür tam otomatik saldırıların ortaya çıkmasının, savunma tarafının da benzer otomasyon seviyelerine ulaşması gerektiğini vurguluyor. AI destekli savunma çözümlerinin geliştirilmesi, anomali tespiti ve hızlı yanıt mekanizmalarının entegrasyonu, gelecekteki saldırı dalgalarına karşı kritik öneme sahip olacak.",
+  "onemli_maddeler": [
+    "Google, insan müdahalesi olmadan zafiyet keşfi ve istismarını gerçekleştiren tam otomatik bir saldırı altyapısını tespit etti.",
+    "\"exploit_agent\" adlı AI çerçevesi, birden fazla büyük dil modeline bağlanarak kodları analiz ediyor, açıkları buluyor ve istismarları otomatik olarak çalıştırıyor.",
+    "GTIG, bu saldırıların şu anda \"Level 5\" seviyesinde olduğunu ve önümüzdeki aylarda daha güçlü, daha az iz bırakan saldırıların ortaya çıkabileceğini uyarıyor."
+  ],
+  "kategori": "diger",
+  "onem": 4,
+  "onem_gerekce": "Tam otomatik AI destekli siber saldırıların ortaya çıkması, güvenlik sektöründe savunma stratejilerinin köklü bir şekilde yeniden şekillenmesini gerektiren kritik bir gelişmedir.",
+  "etiketler": [
+    "siber güvenlik",
+    "yapay zeka",
+    "otomasyon",
+    "Google",
+    "tehdit istihbaratı"
+  ],
+  "anilan_modeller": [
+    "exploit_agent"
+  ],
+  "yorum_tr": "Bu gelişme, siber güvenlik alanında otomasyonun hem savunma hem de saldırı tarafında ne kadar hızlı ilerlediğini gösteriyor. Geliştiriciler, AI destekli savunma çözümlerine yatırım yapmalı; kullanıcılar ise güvenlik farkındalığını artırmalı.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://industrialcyber.co/wp-content/uploads/2026/05/2026.05.12-AI-enabled-cyberattacks-evolving-from-experimentation-to-operational-reality-with-potential-to-scale-industrially.webp",
+  "url": "https://the-decoder.com/google-warns-that-fully-automated-cyberattacks-have-arrived-and-will-get-worse-fast/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-16T19:42:13.000Z",
+  "slug": "google-warns-that-fully-automated-cyberattacks-have-arrived"
+}

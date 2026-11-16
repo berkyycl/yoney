@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "Google, Small Gemma 4 Tokenizer'larını Güncelledi: Belirli Tokenlerde Çıktı Hatası Düzeltildi",
+  "ozet_tr": "Google, Small Gemma 4 serisinin (E2B, E4B ve 12B) tokenizasyon kütüphanelerinde kritik bir hatayı giderdi. Güncelleme, belirli tokenlerle karşılaşıldığında ortaya çıkan anlamsız çıktıyı ortadan kaldırıyor. Bu düzeltme, LocalLLaMA topluluğu içinde hızlıca duyuruldu.",
+  "detayli_icerik_tr": "Google, Small Gemma 4 ailesine ait tokenizasyon dosyalarını (E2B, E4B ve 12B) güncelledi ve yeni sürümde belirli tokenlerin işlenmesi sırasında ortaya çıkan anlamsız çıktı sorununu çözdü. Reddit'te LocalLLaMA topluluğu, bu değişikliği /u/TuskNaPrezydenta2020 kullanıcısının paylaşımıyla duyurdu. Güncellemenin temel amacı, modelin giriş metnini doğru bir şekilde parçalayarak, hatalı token eşleşmelerinin sebep olduğu bozuk yanıtları engellemek.\n\nBu güncelleme, özellikle Gemma 4 E4B modelini örnek alarak yapılmış olsa da aynı yamayı E2B ve 12B modellerine de uygulamış. Topluluk üyeleri, bu değişikliğin GGUF formatındaki modellerde de otomatik olarak yansıyıp yansımayacağını merak ediyor; ancak resmi bir açıklama henüz gelmedi. Tokenizer hatası, modelin performansını sadece metin üretiminde değil, aynı zamanda ince ayar (fine-tuning) süreçlerinde de olumsuz etkileyebildiği için, bu düzeltme geliştiriciler için kritik bir adım olarak değerlendiriliyor.\n\nKullanıcılar, güncellenmiş tokenizer dosyalarını ilgili depolardan indirerek modellerini yeniden yapılandırabilir. Güncellemenin uygulanması, modelin tokenizasyon aşamasında daha tutarlı bir davranış sergilemesini sağlayacak ve sonuçta daha güvenilir çıktı elde edilmesine katkı sağlayacak. Bu tür teknik iyileştirmeler, açık kaynak toplulukları içinde model paylaşımının ve yeniden üretilebilirliğin sürdürülebilirliğine de olumlu bir etki yapıyor.\n\nYerel LLaMA topluluğu, bu güncellemeyi takip eden bir dizi test ve benchmark planladığını belirtti. İlk bulgular, hatalı tokenlerin ortadan kalkmasıyla birlikte metin kalitesinde belirgin bir iyileşme olduğunu gösteriyor. Ancak, tam performans değerlendirmesi için daha geniş bir test seti ve farklı görevlerdeki sonuçların paylaşılması bekleniyor.",
+  "onemli_maddeler": [
+    "Google, Small Gemma 4 (E2B, E4B, 12B) tokenizasyon dosyalarını güncelledi.",
+    "Güncelleme, belirli tokenlerde ortaya çıkan anlamsız çıktı hatasını gideriyor.",
+    "LocalLLaMA topluluğu, güncellenmiş tokenizer'ların GGUF formatına yansıyıp yansımayacağını sorguluyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 3,
+  "onem_gerekce": "Tokenizer düzeltmesi, modelin temel işlevselliğini etkileyen teknik bir güncelleme olduğundan sektörde ilgi çekiyor ancak geniş çaplı bir ürün lansmanı ya da yeni model çıkışı olmadığı için orta seviyede önem taşıyor.",
+  "etiketler": [
+    "Gemma",
+    "tokenizer",
+    "Google",
+    "LocalLLaMA",
+    "LLM"
+  ],
+  "anilan_modeller": [
+    "Gemma 4 E2B",
+    "Gemma 4 E4B",
+    "Gemma 4 12B"
+  ],
+  "yorum_tr": "Tokenizer güncellemesi, geliştiricilerin model performansını istikrarlı bir şekilde elde etmelerini sağlayarak ince ayar ve üretim aşamalarında güvenilirliği artırıyor. Kullanıcılar, yeni dosyaları entegre ettikten sonra daha tutarlı çıktılar bekleyebilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/eslpZ4E4x-cX-V9zGC92iGiGxB-APko9EldVA702_JE.png?width=640&crop=smart&auto=webp&s=bebf5b8e837e4f23df5c066a7f433932b74d74aa",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xxxs0a/small_gemma_4_tokenizers_were_recently_updated_by/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-16T18:55:18.000Z",
+  "slug": "small-gemma-4-tokenizers-were-recently-updated-by-google-fix"
+}

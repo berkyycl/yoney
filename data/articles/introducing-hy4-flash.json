@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "Hy4 flash modeli tanıtıldı: 224B parametre, 12B aktif, 1M token bağlam",
+  "ozet_tr": "Hy4 flash, topluluk tarafından geliştirilen en maliyet-etkin Hy serisi modeli olarak duyuruldu. Toplam 224 milyar parametreye (64B Engram) sahip ve token başına yalnızca 12 milyar aktif parametre kullanıyor. 1 milyon token bağlam penceresi ve yerel çokmodallik özellikleriyle, Qwen-Flash-Next'e yakın bir fiyat-performans dengesi vaat ediyor.",
+  "detayli_icerik_tr": "Yerel LLaMA topluluğu, Hy4 flash adlı yeni bir büyük dil modelini tanıttı. Model, toplam 224 milyar parametre içeriyor; bu parametrelerin 64 milyarı Engram (hafıza) katmanına ayrılmış durumda. Ancak her bir token üretiminde yalnızca 12 milyar aktif parametre işleniyor, bu da işlem maliyetini önemli ölçüde düşürüyor.\n\nHy4 flash, önceki Hy4 modelinin çokmodallik yeteneklerini koruyor ve 1 milyon token uzunluğunda bir bağlam penceresi sunuyor. Bu, uzun metinlerde tutarlı bağlam takibi ve görsel-işitsel veri entegrasyonu gibi senaryolarda avantaj sağlıyor. Modelin düşük API fiyatlandırması, özellikle araştırmacılar ve küçük ölçekli girişimler için erişilebilirliği artırmayı hedefliyor.\n\nTopluluk, Hy4 flash'in performansını Qwen-Flash-Next ile benzer bir seviyede konumlandırıyor. Bu benzerlik, modelin orta ölçekli donanımlarda çalıştırılabileceği anlamına geliyor; yani yüksek maliyetli GPU kümelerine ihtiyaç duymadan, makul bir donanım konfigürasyonu ile deneme ve geliştirme yapılabilir. Modelin resmi çıkış tarihi henüz belirtilmemiş olsa da, topluluk üyeleri erken erişim ve test süreçlerine ilgi gösteriyor.\n\nHy4 flash'in tanıtımı, açık kaynak ve topluluk temelli büyük dil modeli ekosisteminin hızla büyüdüğünün bir göstergesi. Geliştiriciler, bu modeli kendi uygulamalarına entegre ederek, düşük maliyetli çokmodallik çözümlerinden faydalanabilir. Aynı zamanda, modelin Engram tabanlı hafıza yapısı, uzun vadeli bilgi saklama ve hatırlama yeteneklerinde yeni araştırma fırsatları sunuyor.",
+  "onemli_maddeler": [
+    "Hy4 flash, 224B toplam parametre ve 12B aktif parametreyle maliyet-etkin bir büyük dil modeli sunuyor.",
+    "Model, 1M token bağlam penceresi ve yerel çokmodallik desteğiyle uzun metin ve multimodal senaryolara uygun.",
+    "API fiyatlandırması önceki Hy serisine göre daha düşük, Qwen-Flash-Next seviyesinde performans vaat ediyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Topluluk temelli yeni bir büyük dil modeli duyurusu, parametre ölçeği ve maliyet avantajlarıyla sektörde dikkat çekiyor ancak henüz büyük bir şirketin resmi lansmanı olmadığı için 5 yerine 4 verildi.",
+  "etiketler": [
+    "Hy4 flash",
+    "büyük dil modeli",
+    "çokmodallik",
+    "AI",
+    "API fiyatlandırması"
+  ],
+  "anilan_modeller": [
+    "Hy4 flash",
+    "Hy4",
+    "Qwen-Flash-Next"
+  ],
+  "yorum_tr": "Hy4 flash'in düşük aktif parametre tasarımı, yüksek performansı daha uygun maliyetle sunarak araştırmacı ve geliştiricilerin erişimini genişletebilir. Çokmodallik ve uzun bağlam desteği, yeni uygulama alanlarının keşfine olanak tanıyacak.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://cms.orcarouter.ai/api/media/file/1-4145.png",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xxlgpb/introducing_hy4_flash/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-16T09:52:44.000Z",
+  "slug": "introducing-hy4-flash"
+}

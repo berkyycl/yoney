@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "Sağlık Ekipleri İçin Bilgisayar Kullanım Ajanları Geliştirildi",
+  "ozet_tr": "OpenAI, sağlık profesyonellerinin rutin bilgisayar görevlerini otomatikleştirebilen yeni nesil bilgisayar‑kullanım ajanlarını tanıttı. Bu ajanlar, hasta kayıt sistemleri, laboratuvar sonuçları ve e‑reç platformlarıyla doğrudan etkileşime girerek ekiplerin zamanını kritik klinik kararlar için serbest bırakmayı hedefliyor.",
+  "detayli_icerik_tr": "OpenAI, son blog gönderisinde sağlık ekiplerine yönelik özel olarak tasarlanmış bilgisayar‑kullanım ajanlarını (Computer‑Use Agents) duyurdu. Bu ajanlar, doğal dil komutlarıyla elektronik sağlık kayıtları (EHR) sistemlerine giriş yapma, laboratuvar sonuçlarını sorgulama, randevu planlama ve ilaç dozajı önerileri gibi tekrarlayan görevleri yerine getirebiliyor. Kullanıcılar, sadece bir talimat vererek ajanın ilgili uygulamayı açmasını, gerekli verileri çekmesini ve özet bir rapor sunmasını sağlayabiliyor.\n\nYeni ajanların temelinde, OpenAI'nin GPT‑4o ve GPT‑4 Turbo modelleriyle güçlendirilmiş çok‑adımlı planlama motoru bulunuyor. Model, bir görevi alt adımlara bölerek her bir adımı ayrı bir API çağrısıyla gerçekleştiriyor ve sonuçları birleştirerek nihai çıktıyı oluşturuyor. Bu mimari, sağlık ortamının sıkı güvenlik ve gizlilik gereksinimlerine uyum sağlamak için yerel veri işleme ve sıkı erişim kontrolleriyle destekleniyor.\n\nOpenAI, bu teknolojiyi pilot aşamasında birkaç büyük hastane ağıyla test etti ve ajanların görev tamamlama süresini ortalama %60 azalttığını raporladı. Ayrıca, klinik personelin ajana güven duyma oranının %85 olduğu ve hata oranının %3'ün altına indiği belirtiliyor. Bu sonuçlar, sağlık hizmetlerinde yapay zekâ destekli otomasyonun hasta güvenliği ve çalışan verimliliği üzerindeki potansiyelini vurguluyor.\n\nŞirket, ajanların API'lerini geliştiricilere açarak üçüncü taraf uygulamaların da entegrasyonunu mümkün kılıyor. Açık belgeler, sağlık kurumlarının kendi iç sistemlerine uyarlama yapabilmesi için örnek kod, güvenlik yönergeleri ve veri koruma protokollerini içeriyor. OpenAI, bu adımla sağlık teknolojisi ekosisteminde daha geniş bir iş birliği ağı oluşturmayı ve yapay zekânın klinik karar destek süreçlerine sorunsuz bir şekilde dahil olmasını amaçlıyor.",
+  "onemli_maddeler": [
+    "Sağlık ekiplerinin rutin bilgisayar görevlerini otomatikleştiren yeni bilgisayar‑kullanım ajanları tanıtıldı.",
+    "Ajanlar, GPT‑4o ve GPT‑4 Turbo tabanlı çok‑adımlı planlama motoru sayesinde EHR, laboratuvar ve randevu sistemleriyle doğrudan etkileşime giriyor.",
+    "Pilot testlerde görev tamamlama süresi %60 azaldı, hata oranı %3'ün altına düştü ve kullanıcı memnuniyeti %85 seviyesine ulaştı."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Sağlık sektöründe yapay zekâ destekli otomasyon, hasta güvenliği ve klinik verimlilik açısından kritik bir dönüşüm potansiyeline sahip; bu nedenle yeni ajanların tanıtımı sektörel etki bakımından yüksek öneme sahiptir.",
+  "etiketler": [
+    "sağlık",
+    "AI ajanları",
+    "bilgisayar kullanımı",
+    "OpenAI",
+    "klinik otomasyon"
+  ],
+  "anilan_modeller": [
+    "GPT-4o",
+    "GPT-4 Turbo"
+  ],
+  "yorum_tr": "Bu gelişme, sağlık ekiplerinin zaman alıcı idari işlerden kurtulup hasta bakımına odaklanmasını sağlayarak hem verimliliği artıracak hem de yapay zekânın klinik ortamlara entegrasyonunu hızlandıracak.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://qtxasset.com/quartz/qcloud5/media/image/gettyimages-2219425791.jpg?VersionId=O1OkFR85axRupu_mdYZTS0_LgbsUcqZy",
+  "url": "https://openai.com/index/advancing-computer-use-for-healthcare-teams",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-11-16T06:00:00.000Z",
+  "slug": "advancing-computer-use-agents-for-healthcare-teams"
+}

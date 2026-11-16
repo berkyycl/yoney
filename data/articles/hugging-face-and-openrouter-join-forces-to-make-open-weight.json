@@ -1,0 +1,55 @@
+{
+  "baslik_tr": "Hugging Face ve OpenRouter İşbirliğiyle Açık Ağırlıklı Modellerin Çalıştırılması Kolaylaşıyor",
+  "ozet_tr": "Hugging Face, OpenRouter ile ortaklık kurarak açık‑ağırlıklı (open‑weight) modellerin ölçekli hizmetini tek bir API üzerinden sunuyor. Kullanıcılar aynı Hugging Face tokenı ile modelleri çağırırken, OpenRouter en iyi fiyat‑hız‑güvenilirlik dengesini sağlayan sağlayıcıyı otomatik seçiyor. Bu değişiklik, kodun değişmeden kalmasını sağlarken, performans ve maliyet açısından önemli iyileştirmeler vaat ediyor.",
+  "detayli_icerik_tr": "Hugging Face Hub'da yayınlanan her açık‑ağırlıklı model, artık OpenRouter'ın 80'den fazla sağlayıcı arasından en uygununu seçerek çalıştırılabiliyor. Şirket, kendi özel yönlendiricisini OpenRouter'a devrederek, dil modeli isteklerini canlı fiyat, yanıt süresi ve güvenilirlik ölçütlerine göre yönlendiriyor; bir sağlayıcı başarısız olursa istek otomatik olarak bir sonraki en iyi sağlayıcıya yönlendiriliyor. Bu sayede kod tabanı aynı kalıyor ve geliştiriciler tek bir Hugging Face tokenı ile hem depolama, hem iş, hem de özel inference uç noktalarına erişebiliyor.\n\nOpenRouter, aylık 800 trilyon tokenı 10 milyondan fazla kullanıcıya 600'ün üzerindeki model üzerinden sunuyor. Yeni yönlendirme mantığı, önceki tek‑sağlayıcı yaklaşımına kıyasla kapasite hatalarını %46 azalttı, ilk token süresini %16.9, throughput'u ise %16.3 artırdı. Kullanıcılar hâlâ model kimliğine \":fastest\", \":cheapest\" gibi ekler ekleyerek tercihlerini belirleyebiliyor ve X‑HF‑Session‑Id başlığıyla konuşma önbelleğini sabitleyebiliyor.\n\nAçık‑ağırlıklı modellerin kullanım oranı da çarpıcı bir artış gösterdi: Ekim 2025'te %26.8 iken Eylül 2026'da %71.7'ye yükseldi; haftalık hacim ise 60 kat artış kaydetti. En çok kullanılan model DeepSeek V4.1 Flash 1017, 59.2 trilyon token işledi. Maliyet açısından ise açık‑ağırlıklı modeller giriş tokenı başına ortalama $0.28, çıkış tokenı başına $1.62 iken kapalı modeller $1.27 ve $6.36'ya kadar çıkıyor.\n\nPerformans açısından en iyi açık‑ağırlıklı model Kimi K3.1 Pro, Artificial Analysis Intelligence Index'te 46 puan alırken, en iyi kapalı model Claude Fable 5.2 65 puan elde etti. Ancak Kimi K3.1 Pro, görev başına maliyet açısından Claude Fable 5.2'nin yaklaşık yedide biri ($3.68 vs $26.54) olarak daha ekonomik bir seçenek sunuyor. Bu denge, birçok iş yükü için açık‑ağırlıklı modellerin cazip bir alternatif olmasını sağlıyor.",
+  "onemli_maddeler": [
+    "Hugging Face, inference yönlendiricisini OpenRouter'a devrederek açık‑ağırlıklı modellerin tek bir API üzerinden en uygun sağlayıcıyla çalıştırılmasını sağladı.",
+    "Yeni yönlendirme mekanizması kapasite hatalarını %46 azalttı, ilk token süresini %16.9 ve throughput'u %16.3 artırdı.",
+    "Açık‑ağırlıklı modellerin token payı Ekim 2025'te %26.8 iken Eylül 2026'da %71.7'ye yükseldi; maliyetleri ise kapalı modellere göre 4 kat daha düşük.",
+    "Kimi K3.1 Pro, Artificial Analysis Intelligence Index'te 46 puan alarak en iyi açık‑ağırlıklı model oldu, ancak Claude Fable 5.2'nin 65 puanına kıyasla daha düşük performans gösterdi."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Hugging Face'in OpenRouter ile entegrasyonu, açık‑ağırlıklı modellerin ölçeklenebilir ve maliyet‑etkin kullanımını artırarak hem geliştiricileri hem de son kullanıcıları doğrudan etkileyen kritik bir altyapı güncellemesidir.",
+  "etiketler": [
+    "open-weight",
+    "inference",
+    "routing",
+    "Hugging Face",
+    "OpenRouter"
+  ],
+  "anilan_modeller": [
+    "DeepSeek V4.1 Flash 1017",
+    "Kimi K3.1 Pro",
+    "Claude Fable 5.2",
+    "GLM-5.3"
+  ],
+  "yorum_tr": "Bu işbirliği, açık‑ağırlıklı modellerin üretim ortamlarına entegrasyonunu basitleştirerek maliyet avantajı ve performans iyileştirmeleri sunuyor; geliştiriciler tek bir tokenla çoklu sağlayıcıları yönetebilecek, kullanıcılar ise daha düşük fiyatlarla yüksek kaliteli modellerden faydalanabilecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Kimi K3.1 Pro",
+      "benchmark": "Artificial Analysis Intelligence Index",
+      "skor": 46,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Kimi K3.1 Pro, the best open-weight model, scores 46 against 65 for Claude Fable 5.2"
+    },
+    {
+      "model": "Claude Fable 5.2",
+      "benchmark": "Artificial Analysis Intelligence Index",
+      "skor": 65,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Claude Fable 5.2 scores 65 on the Artificial Analysis Intelligence Index"
+    }
+  ],
+  "gorsel_url": "https://huggingface.co/blog/assets/openrouter/thumbnail.jpg",
+  "url": "https://huggingface.co/blog/openrouter",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-11-16T00:00:00.000Z",
+  "slug": "hugging-face-and-openrouter-join-forces-to-make-open-weight"
+}
