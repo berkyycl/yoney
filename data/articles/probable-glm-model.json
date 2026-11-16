@@ -1,0 +1,62 @@
+{
+  "baslik_tr": "GLM serisinin yeni Pro, Med ve Small modelleri olabileceği yönünde topluluk spekülasyonu",
+  "ozet_tr": "Reddit topluluğu, GLM serisine ait üç yeni modelin (Pro, Med, Small) varlığına dair ipuçları paylaştı. Görsellerdeki bulanıklaştırılmış isimlerin yanındaki %59,4 / %57,1 / %54,0 oranları, bu modellerin bir liderlik tablosundaki performansını gösteriyor. Ancak model isimleri ve detayları hâlâ spekülasyon aşamasında.",
+  "detayli_icerik_tr": "LocalLLaMA topluluğu, Theo gg'nin bir tweeti üzerine QFN DeepResearch adlı bir swarm ajanı çalıştırarak GLM serisine ait yeni modellerin izini sürmeye başladı. Paylaşılan görsellerde üç farklı modelin isimleri bulanıklaştırılmış şekilde gösterilirken, yanlarında %59,4, %57,1 ve %54,0 oranları yer alıyor. Topluluk üyeleri bu oranları, muhtemel \"GLM-Pro\", \"GLM-Med\" ve \"GLM-Small\" modellerinin bir liderlik tablosundaki başarı puanları olarak yorumladı.\n\nBir deneyde, bir kullanıcı bulanıklaştırılmış metni yeniden oluşturup Gaussian blur (σx ≈ 6,9 px) uygulayarak orijinal görüntüye sadece 1,254/255 RMSE farkı elde etti. Bu, model isimlerinin tahmin edilmesinde yüksek bir doğruluk sağladığını gösteriyor. Ayrıca, AICodeKing'in geçmiş GLM duyurularını resmi çıkış tarihleriyle karşılaştırması, yeni modellerin çıkış zamanlamasının Anthropic IPO'su gibi büyük sektörel olaylarla çakışabileceğine işaret ediyor.\n\nDiğer bir sinyal ise Hugging Face üzerindeki aktivite artışı; son 27 gün içinde model dosyalarının indirilme ve güncellenme sıklığı, önceki dönemlere göre 3‑4 gün içinde belirgin bir artış gösterdi. Bu durum, topluluk içinde GLM-Nano gibi daha küçük bir modelin de yakın zamanda yayınlanabileceği spekülasyonunu güçlendiriyor.\n\nHenüz resmi bir duyuru yapılmadığı için bu bilgiler spekülasyon olarak kalıyor ve Reddit gönderisinin kaldırılma riski bulunuyor. Ancak topluluk üyeleri, bu tür ipuçlarını bir araya getirerek olası model çıkış tarihlerini ve özelliklerini tahmin etmeye çalışıyor.",
+  "onemli_maddeler": [
+    "Reddit topluluğu, üç yeni GLM modelinin (Pro, Med, Small) varlığına dair bulanıklaştırılmış görseller ve %59,4 / %57,1 / %54,0 oranlarını paylaştı.",
+    "Gaussian blur deneyi, model isimlerinin orijinaline sadece 1,254/255 RMSE farkıyla ulaşabildiğini gösterdi.",
+    "Hugging Face üzerindeki aktivite artışı, yeni GLM modellerinin yakın zamanda yayınlanabileceğine işaret ediyor."
+  ],
+  "kategori": "diger",
+  "onem": 3,
+  "onem_gerekce": "Spekülasyonlar henüz resmi bir duyuru içermese de topluluk içinde geniş ilgi gördüğü ve olası model çıkış tarihleri hakkında önemli ipuçları sunduğu için orta dereceli bir önem taşımaktadır.",
+  "etiketler": [
+    "GLM",
+    "Model Spekülasyonu",
+    "AI",
+    "Benchmark",
+    "Reddit"
+  ],
+  "anilan_modeller": [
+    "GLM-Pro (tahmini)",
+    "GLM-Med (tahmini)",
+    "GLM-Small (tahmini)"
+  ],
+  "yorum_tr": "Eğer bu modeller gerçekten duyurulursa, GLM serisinin ölçeklenebilirliği ve performans çeşitliliği açısından önemli bir adım olur; geliştiriciler daha geniş bir model yelpazesiyle uygulama geliştirme esnekliği kazanırken, kullanıcılar da ihtiyaçlarına uygun boyutta modeller seçebilecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GLM-Pro (tahmini)",
+      "benchmark": "Leaderboard",
+      "skor": 59.4,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "THREE model names, blurred out, sitting at 59.4% / 57.1% / 54.0%."
+    },
+    {
+      "model": "GLM-Med (tahmini)",
+      "benchmark": "Leaderboard",
+      "skor": 57.1,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "THREE model names, blurred out, sitting at 59.4% / 57.1% / 54.0%."
+    },
+    {
+      "model": "GLM-Small (tahmini)",
+      "benchmark": "Leaderboard",
+      "skor": 54,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "THREE model names, blurred out, sitting at 59.4% / 57.1% / 54.0%."
+    }
+  ],
+  "gorsel_url": "https://preview.redd.it/k7ife2j2ms1i1.png?width=140&height=126&auto=webp&s=912371f57bce10bb7c9ef8dd5620fca1437a65a5",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xwy3ka/probable_glm_model/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-15T15:21:11.000Z",
+  "slug": "probable-glm-model"
+}

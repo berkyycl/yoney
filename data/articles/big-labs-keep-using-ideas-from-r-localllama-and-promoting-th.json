@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "Büyük Laboratuvarlar r/LocalLLaMA Topluluğunun Fikirlerini Kendi Olarak Sunuyor",
+  "ozet_tr": "Reddit topluluğu r/LocalLLaMA, OpenAI ve Microsoft'un son projelerinde topluluk üyelerinin önceden paylaştığı fikirlerin kaynak gösterilmeden kullanılmasını kınıyor. Kullanıcılar, ağırlık düzenleme ve dağıtık GPU tabanlı LLM eğitimi gibi yeniliklerin topluluk tarafından ortaya konduğunu, büyük şirketlerin ise bu çalışmaları kendi patent ve yayınlarıyla ticarileştirdiğini belirtiyor.",
+  "detayli_icerik_tr": "Dört ay önce r/LocalLLaMA üyesi u/Extraaltodeus, ağırlık düzenleme (weight-editing) üzerine bir proje duyurmuş ve topluluk içinde geniş yankı bulmuştu. Yaklaşık bir ay önce OpenAI, benzer bir \"yenilikçi\" ağırlık düzenleme mekanizması yayınladı; ancak bu duyuruda topluluk ya da u/Extraaltodeus'tan hiçbir bahsetme bulunmadı ve yayınlanan makalede ilham alınan bir kaynak olarak topluluk çalışmasına yer verilmedi.\n\nBir ay önce ise u/Vxtzq1, CrowdGPT adını verdiği, boşta kalan GPU'ları kullanarak LLM'leri dağıtık biçimde eğitmeyi amaçlayan bir prototip paylaştı. Bu fikir, topluluk içinde \"decentralised AI training\" olarak adlandırıldı ve birçok kullanıcı tarafından denendi. Ancak bir hafta içinde Microsoft, aynı konsepti içeren bir patent başvurusunda bulundu ve topluluk projesine atıfta bulunmadı. Bu durum, topluluk üyelerinin fikirlerinin büyük şirketler tarafından ticarileştirilirken haklarının göz ardı edildiği algısını güçlendirdi.\n\nTopluluk üyeleri, bu tür durumların önüne geçmek için iki temel strateji öneriyor: İlk olarak, CrowdGPT gibi topluluk projelerini medyada daha görünür kılmak ve bu projelerin öncülüğünü vurgulamak; ikinci olarak, benzer bir fikir ortaya çıktığında medya mensuplarıyla iletişime geçerek topluluğun öncülüğünü duyurmak. Böylece, okuyucular ve potansiyel yatırımcılar, bir şirketin iddia ettiği yeniliğin aslında topluluk tarafından daha önce geliştirilmiş olduğunu fark edebilir.\n\nBu tartışma, açık kaynak ve topluluk temelli AI araştırmalarının büyük şirketlerin patent ve ticari stratejileriyle nasıl çelişebileceğine dair daha geniş bir sorunu da gündeme getiriyor. Topluluk, fikirlerini korumak ve adil bir şekilde takdir edilmesini sağlamak için daha güçlü bir iletişim ağı ve belki de yasal destek mekanizmaları geliştirmeyi hedefliyor.",
+  "onemli_maddeler": [
+    "OpenAI, topluluk tarafından geliştirilen ağırlık düzenleme mekanizmasını kaynak göstermeden yayınladı.",
+    "Microsoft, CrowdGPT benzeri bir dağıtık GPU eğitim fikri için patent başvurusunda bulundu ve topluluğa atıfta bulunmadı.",
+    "Topluluk, projelerini medyada daha görünür kılarak ve medya ile iş birliği yaparak haklarını savunmayı planlıyor."
+  ],
+  "kategori": "diger",
+  "onem": 3,
+  "onem_gerekce": "Topluluk temelli AI inovasyonlarının büyük şirketler tarafından kaynak göstermeden ticarileştirilmesi, açık kaynak ekosisteminin motivasyonunu ve güvenini etkileyebilecek bir sorun olduğundan orta derecede önem taşımaktadır.",
+  "etiketler": [
+    "AI etiketi",
+    "topluluk",
+    "patent",
+    "açık kaynak",
+    "ağırlık düzenleme"
+  ],
+  "anilan_modeller": [
+    "CrowdGPT",
+    "Super Harmful Model D"
+  ],
+  "yorum_tr": "Bu gelişme, açık kaynak AI topluluklarının fikirlerinin korunması ve takdir edilmesi gerektiğine dair bir uyarı niteliği taşıyor; şirketler ise yenilikleri ticarileştirirken topluluk katkılarını göz ardı etmemelidir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/6l_A9WpF_QO6q1Uab37Ily5NJP28aVIvzBgRsCQY_Xg.png?width=640&crop=smart&auto=webp&s=9fafb0dad06093dc0636df0b86995ddd81a35f87",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xxao34/big_labs_keep_using_ideas_from_rlocalllama_and/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-15T23:57:24.000Z",
+  "slug": "big-labs-keep-using-ideas-from-r-localllama-and-promoting-th"
+}

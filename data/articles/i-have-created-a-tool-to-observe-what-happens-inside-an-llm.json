@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "inside-llm: LLM içindeki işlemleri görselleştiren ve iki kuantizasyonu karşılaştıran açık kaynaklı araç",
+  "ozet_tr": "inside-llm, llama.cpp tabanlı iki GGUF modelini aynı anda tarayıcıda görselleştirerek token‑bazlı karşılaştırma imkanı sunan yeni bir açık kaynak projesi. Modelin olasılık dağılımları, entropy, Jensen‑Shannon ve KL gibi metrikler ile sampler zinciri adımları anlık olarak izlenebiliyor.",
+  "detayli_icerik_tr": "Manuel G. tarafından geliştirilen inside-llm, aynı modelin farklı kuantizasyonlarını (örneğin Q4 vs Q8) aynı bağlamda çalıştırıp, her adımda ortaya çıkan logit dağılımlarını ve seçim olasılıklarını tarayıcıda iki sütun halinde gösteriyor. Parlaklık, token olasılıklarını, magenta işaretleri ise iki modelin farklı token seçtiği anları vurguluyor; lockstep ve free modları sayesinde karşılaştırma ya aynı metin üzerinden ya da modellerin kendi yollarını izleyerek yapılabiliyor.\n\nAraç, aday dağılımları, entropy, efektif seçenek sayısı, Jensen‑Shannon ve iki yönlü KL gibi istatistikleri sunarken, sampler zincirinin (top‑k, top‑p, temperature vb.) her aşamasını da görselleştiriyor. Kullanıcılar, bir tokena tıkladıklarında o noktadan itibaren dallanma ağacını genişletebiliyor; her dal, modelin KV‑state anlık görüntüsü sayesinde yeniden hesaplama yapmadan geri dönüp devam edebiliyor. Ayrıca logit lens özelliği, katman bazında tahminleri 2D harita ve 3D relief olarak sunuyor.\n\ninside-llm, C++17 ile llama.cpp'yi doğrudan bağlayan tek bir süreçte çalışıyor ve her adımda logitleri alıp WebSocket üzerinden Svelte‑5 + Canvas 2D arayüzüne ikili ikili çerçeveler olarak iletiyor. Çerçeveler sıkıştırılmış bir oturum kaydı olarak saklanabiliyor; böylece model ya da GPU olmadan statik bir sayfada tekrar oynatılabiliyor. Linux (glibc 2.35+), Windows, CUDA ve Vulkan destekli paketleri mevcut; tek bir GPU yeterli, iGPU kullanılmıyor, GPU yoksa CPU fallback yapıyor.\n\nAraç tamamen yerel çalışıyor, 127.0.0.1 üzerinden hizmet veriyor, hiçbir telemetri ya da hesap gerektirmiyor ve MIT lisansı altında dağıtılıyor. Tek sınırlama, iki modelin aynı tokenleştiriciyi paylaşması ve aynı anda VRAM'e sığması; ayrıca çok parçalı GGUF ya da embedding modelleri desteklenmiyor.",
+  "onemli_maddeler": [
+    "İki farklı kuantizasyonun token‑bazlı farklılıkları anlık ve görsel olarak izlenebiliyor.",
+    "Entropy, Jensen‑Shannon, KL ve sampler zinciri adımları gibi metrikler detaylı şekilde sunuluyor.",
+    "KV‑state anlık görüntüleri sayesinde dallanma ağacında geri dönüp yeniden üretim yapılmadan devam edilebiliyor.",
+    "Linux, Windows, CUDA ve Vulkan destekli tek paketler halinde dağıtılıyor, yerel ve gizlilik odaklı."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Araç, LLM kuantizasyonları arasındaki farkları görselleştirerek araştırmacı ve geliştiricilerin model optimizasyon süreçlerini derinlemesine analiz etmelerini sağlıyor; bu, model inceleme ve performans iyileştirme alanında önemli bir adım.",
+  "etiketler": [
+    "LLM",
+    "quantization",
+    "visualization",
+    "open-source",
+    "llama.cpp"
+  ],
+  "anilan_modeller": [
+    "Qwen3.5-0.8B_Q4_K_M",
+    "Qwen3.5-0.8B_Q8_0"
+  ],
+  "yorum_tr": "inside-llm, kuantize edilmiş modellerin davranışsal farklarını şeffaf bir şekilde ortaya koyarak geliştirme döngülerini hızlandırabilir. Kullanıcıların model seçimi ve metrik taleplerine göre genişletilebilir bir platform olması, topluluk katkılarını da teşvik edecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/YTU2aGRkZXVqdTFpMbuQjYKuS0e50jz76JAFlHw97tpbQhsuU6u19fp57dBZ.png?width=640&crop=smart&auto=webp&s=261b9343ee57563464332114f08ca1138cfb07fc",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xx7qbf/i_have_created_a_tool_to_observe_what_happens/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-15T21:46:56.000Z",
+  "slug": "i-have-created-a-tool-to-observe-what-happens-inside-an-llm"
+}
