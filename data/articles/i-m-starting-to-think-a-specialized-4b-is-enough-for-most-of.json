@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "Küçük 4B Modellerin Özelleştirilmiş Eğitimle Çoğu Görevi Yeterli Kılabileceği Görüldü",
+  "ozet_tr": "Yerel bir geliştirici, Qwen3.5-4B-3D-Coder ve 350M gibi daha küçük modelleri uzun süreli ve kaliteli veri setleriyle eğiterek, 3D varlık üretiminden kodlamaya kadar birçok pratik görevi başarıyla yerine getirebildiklerini raporladı. Özelleştirilmiş ince ayar (SFT) ve yeterli epoch sayısının, model kapasitesinden çok veri kalitesine bağlı olduğunu vurguluyor.",
+  "detayli_icerik_tr": "Reddit'in LocalLLaMA topluluğunda paylaşılan bir güncellemede, geliştirici ConfidentDinner6648, Qwen3.5-4B-3D-Coder modelini eğitmeye başladığını ve beklenenden çok daha iyi sonuçlar aldığını belirtti. 4 milyar parametreli bir modelin, özellikle 3D sahneler, web geliştirme, backend kodlaması ve tersine mühendislik gibi alanlarda, görev odaklı ince ayarlarla yeterli performans sergileyebileceği gözlemlendi.\n\nDeneylerde, 350M parametreli LFM2.5 modeli de aynı veri setiyle eğitildi. Başlangıçta tekrarlama döngülerine takılan model, daha fazla epoch geçtikçe kod tamamlama ve sahne oluşturma yeteneklerinde belirgin bir iyileşme gösterdi. 350M model, orta karmaşıklıktaki kodlama görevlerinde 16K token uzunluğunda, 4B modeller ise 96K token'a kadar uzanan bağlamlarda etkili sonuçlar üretti.\n\nYazar, denetimli ince ayarın (SFT) maliyetinin, pekiştirmeli öğrenmeye (RL) kıyasla çok daha düşük olduğunu ve yüksek kaliteli örnek veri setlerinin mevcut olduğu durumlarda SFT'nin benzer performansı çok daha az kaynak harcayarak sağlayabileceğini savunuyor. Ayrıca, 8GB VRAM'li tüketici sınıfı GPU'larda 350M modelin tam ince ayarının mümkün olduğunu, doğru bellek optimizasyonlarıyla birkaç saat içinde tamamlanabileceğini belirtti.\n\nBu bulgular, model kapasitesinin sınırlarını yeniden değerlendirmemiz gerektiğini ve daha küçük, görev odaklı modellerin uygun veri ve eğitim süresiyle büyük modellerin yerini alabileceğini gösteriyor. Geliştirici, yeni 3D veri seti ve potansiyel olarak iyileştirilmiş 350M modelini yakında yayınlayacağını duyurdu.",
+  "onemli_maddeler": [
+    "4B parametreli modeller, görev odaklı ince ayarlarla çoğu pratik LLM görevini karşılayabiliyor.",
+    "350M parametreli model, uzun bağlamlarda (16K token) ve orta karmaşıklıktaki kodlama görevlerinde beklenenden iyi performans gösterdi.",
+    "Denetimli ince ayar (SFT), yüksek kaliteli veri setleriyle RL'ye kıyasla çok daha düşük maliyetle etkili sonuçlar üretebiliyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 3,
+  "onem_gerekce": "Küçük modellerin görev odaklı ince ayarlarla büyük modellerin bir kısmını ikame edebileceği yönündeki gözlemler, araştırma ve geliştirme toplulukları için yeni bir yaklaşım öneriyor ancak henüz geniş çaplı bir endüstri etkisi yaratmadı.",
+  "etiketler": [
+    "4B",
+    "ince ayar",
+    "3D",
+    "küçük modeller",
+    "LLM"
+  ],
+  "anilan_modeller": [
+    "Qwen3.5-4B-3D-Coder",
+    "LFM2.5-350M"
+  ],
+  "yorum_tr": "Bu gelişme, özellikle sınırlı donanım kaynaklarına sahip ekipler için maliyet etkin bir yol sunuyor; doğru veri ve yeterli eğitim süresiyle küçük modellerin geniş bir yelpazede kullanılabilirliği artacak.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/sz8229m1hw1i1.png?width=640&crop=smart&auto=webp&s=bf34db7cd4f502fd469046e75a1a5be8906d286f",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xxfv69/im_starting_to_think_a_specialized_4b_is_enough/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-16T04:13:31.000Z",
+  "slug": "i-m-starting-to-think-a-specialized-4b-is-enough-for-most-of"
+}

@@ -1,0 +1,36 @@
+{
+  "baslik_tr": "llama.cpp Performansında Zamanla Gelen İyileşme (Gemma4 Modelleri)",
+  "ozet_tr": "Kullanıcı Danmoreng, RTX 5080 dizüstü bilgisayarında kendi kodladığı bir motoru llama.cpp ile karşılaştırdı ve son benchmark sonuçlarının llama.cpp'yi geride bıraktığını gösterdi. 16k ön doldurma ve 1k çıktı testi, Gemma4 12B ve 26B modelleri üzerinde yapıldı ve llama.cpp'nin performansındaki artış vurgulandı.",
+  "detayli_icerik_tr": "Geçtiğimiz aylarda, Ninfer'ın çıkışı sonrasında Reddit topluluğunda bir hobi projesi olarak RTX 5080 16 GB dizüstü GPU'su için kendi kodladığı bir inference motoru (vibe‑coded engine) geliştiren Danmoreng, o dönemde llama.cpp'nin vLLM gibi çözümlere kıyasla daha yavaş olduğunu belirtti. Ancak vLLM'in VRAM'i verimsiz kullandığını ve kendi motorunun daha hızlı sonuçlar verdiğini raporladı.\n\nBugün aynı test ortamı tekrar çalıştırıldı ve sonuçlar değişti: llama.cpp, aynı 16 k ön doldurma ve 1 k çıktı senaryosunda, Wikipedia metni üzerinde optimal ayarlarla, hem 12 B hem de 26 B Gemma4 checkpoint'lerinde rakibini geride bıraktı. 12 B model aynı checkpoint'i paylaşırken, 26 B modelde farklı kuantizasyonlar kullanıldığı için tam bir karşılaştırma yapılamasa da, llama.cpp'nin üstün performansı netleşti.\n\nKullanıcı, bu gelişmeyi \"projeye biraz daha yavaş olsa da zaman içinde anlamlı performans iyileştirmeleri getirmesi\" olarak nitelendiriyor ve stabil, özellik açısından zengin bir motorun (llama.cpp) tercih edilmesinin uzun vadede daha mantıklı olduğunu vurguluyor. Paylaşılan grafik, testlerin bilimsel bir metodolojiye dayanmamasına rağmen, performans trendini görsel olarak ortaya koyuyor.\n\nBu gelişme, topluluk tabanlı açık kaynak projelerinin sürekli optimizasyonlarla ticari çözümlere yaklaşabileceğini gösteriyor. Özellikle sınırlı VRAM'e sahip dizüstü cihazlarda, llama.cpp'nin güncel sürümü hem verimlilik hem de kullanım kolaylığı açısından cazip bir seçenek haline geliyor.",
+  "onemli_maddeler": [
+    "llama.cpp, aynı test koşullarında Gemma4 12B ve 26B modellerinde kendi kodladığı motoru geride bıraktı.",
+    "Test, 16 k ön doldurma ve 1 k çıktı uzunluğunda Wikipedia metniyle, her motorun optimal ayarlarıyla yapıldı.",
+    "26 B modelde farklı kuantizasyonlar kullanılsa da, llama.cpp'nin performansı hâlâ üstün olarak değerlendirildi."
+  ],
+  "kategori": "benchmark",
+  "onem": 3,
+  "onem_gerekce": "Topluluk tarafından yapılan bir performans karşılaştırması, açık kaynak araçların gelişimini gösteriyor ancak sektörel çapta geniş bir etki yaratmıyor.",
+  "etiketler": [
+    "llama.cpp",
+    "benchmark",
+    "performans",
+    "Gemma4",
+    "AI donanım"
+  ],
+  "anilan_modeller": [
+    "llama.cpp",
+    "Gemma 4 12B",
+    "Gemma 4 26B",
+    "vLLM",
+    "Ninfer"
+  ],
+  "yorum_tr": "Bu sonuç, açık kaynak inference motorlarının düzenli güncellemelerle ticari alternatiflere yaklaşabileceğini gösteriyor. Geliştiriciler, llama.cpp'nin stabilite ve özellik seti sayesinde daha az bakım gerektiren bir çözüm tercih edebilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://preview.redd.it/sgekm82a5u1i1.png?width=640&crop=smart&auto=webp&s=6ac3afac160e482bcfa0455a7f1fd0af0a54c51d",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xx607x/llamacpp_performance_improvement_over_time_gemma4/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-15T20:34:44.000Z",
+  "slug": "llama-cpp-performance-improvement-over-time-gemma4-models"
+}

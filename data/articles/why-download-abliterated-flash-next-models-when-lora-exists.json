@@ -1,0 +1,67 @@
+{
+  "baslik_tr": "LoRA ile Ablated Flash‑Next Modelleri Yerine Kullanarak 150 GB Tasarruf Sağlandı",
+  "ozet_tr": "Reddit topluluğu, Flash‑Next modellerinin büyük ablasyon dosyalarını indirmek yerine, aynı işlevi gören minik bir LoRA dosyası sunuyor. Bu LoRA, mevcut quant modeli üzerine anlık olarak uygulanabiliyor ve 150 GB’a varan depolama ihtiyacını ortadan kaldırıyor.",
+  "detayli_icerik_tr": "LocalLLaMA topluluğu üyesi Dario, Flash‑Next serisinin ablasyon (refusal) davranışlarını tek bir rank‑1 LoRA dosyasıyla yeniden oluşturduğunu duyurdu. Kullanıcılar, mevcut Qwen3.8‑Flash‑Next quant modeline \"--lora HUIHUI-V2-Qwen3.8-Flash-Next-LoRA-F32.gguf\" parametresini ekleyerek, orijinal ablasyonlu modelin tam işlevselliğini anlık olarak elde edebiliyor. Bu yöntem, aynı modelin 150 GB’lık ablasyonlu sürümünü indirmeye gerek kalmadan, sadece birkaç megabaytlık LoRA dosyasıyla aynı sonuçları sağlıyor.\n\nLoRA’nın uygulanışı iki şekilde mümkün: model başlatılırken kalıcı olarak eklenebilir ya da \"--lora-init-without-apply\" bayrağıyla sadece talep üzerine devreye alınabilir. Böylece çoğu istekte orijinal model çalıştırılır, bir reddetme (refusal) algılandığında LoRA devreye girerek isteği yeniden gönderir ve yanıt devam eder. Bu dinamik yaklaşım, özellikle API benzeri hizmetlerde gereksiz yeniden doldurma maliyetini azaltıyor.\n\nPerformans açısından Dario, LoRA’yı Unsloth Q5_K_XL temel modeliyle karşılaştırdı. Wikitext veri kümesinde Kullback‑Leibler Divergence (KLD) 0.040 ve en yüksek olasılıklı token eşleşmesi %93.7 olarak ölçüldü; perplexity ise istatistiksel olarak aynı kaldı. Ayrıca Jailbreak Bench (100 zararlı prompt) testinde reddetme oranı %93'ten %3'e düştü, yani 93/100'den sadece 3/100'e geriledi. Aider Polyglot kodlama benchmark'larında da huihui‑v2 LoRA, temel modelden daha az token harcayarak daha tutarlı sonuçlar verdi.\n\nBu teknik, sadece Qwen3.8‑Flash‑Next için değil, Strata ve ds4/dwarfstar gibi diğer çerçevelerde de \"control vectors\" (deneysel‑speed‑projection) bayrağıyla benzer şekilde kullanılabiliyor. Dario, topluluğa daha fazla model için LoRA üretmeyi teklif ederek, yerel LLM kullanıcılarının depolama ve bakım maliyetlerini azaltmayı hedefliyor.",
+  "onemli_maddeler": [
+    "LoRA dosyası sadece birkaç MB, ancak tam ablasyonlu modelin 150 GB’lık depolama ihtiyacını ortadan kaldırıyor.",
+    "KLD 0.040, top‑token eşleşmesi %93.7 ve perplexity aynı kalırken, reddetme oranı Jailbreak Bench'te %93'ten %3'e düştü.",
+    "LoRA, llama.cpp komut satırında kalıcı ya da talep‑bazlı olarak uygulanabiliyor; diğer çerçevelerde de benzer kontrol vektörleriyle destekleniyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Yerel LLM kullanıcıları için depolama tasarrufu ve aynı zamanda model davranışını dinamik olarak kontrol etme imkanı sunması, topluluk içinde geniş çaplı benimsenme potansiyeli taşıyor.",
+  "etiketler": [
+    "LoRA",
+    "llama.cpp",
+    "Flash-Next",
+    "abliteration",
+    "local-LLM"
+  ],
+  "anilan_modeller": [
+    "Qwen3.8-Flash-Next-UD-Q5_K_XL-00001-of-00006.gguf",
+    "HUIHUI-V2-Qwen3.8-Flash-Next-LoRA-F32.gguf",
+    "Unsloth Q5_K_XL",
+    "huihui v2",
+    "heretic",
+    "Orcarouter",
+    "Claude Opus 5.5",
+    "Claude Opus 4.8"
+  ],
+  "yorum_tr": "Bu LoRA tabanlı yaklaşım, yerel LLM dağıtımlarında depolama ve bakım maliyetlerini ciddi ölçüde azaltırken, aynı zamanda dinamik reddetme kontrolü sağlayarak geliştiricilere esnek bir kullanım sunuyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "huihui Q5_K_XL vs Unsloth Q5_K_XL",
+      "benchmark": "Wikitext KLD",
+      "skor": 0.04,
+      "birim": "KLD",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Wikitext KLD on huihui Q5_K_XL vs. an identical Unsloth Q5_K_XL base model was 0.040"
+    },
+    {
+      "model": "huihui Q5_K_XL vs Unsloth Q5_K_XL",
+      "benchmark": "Top token match",
+      "skor": 93.7,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "same top token was 93.7% even with the drastically altered refusal behaviors"
+    },
+    {
+      "model": "huihui LoRA",
+      "benchmark": "Jailbreak Bench (harmful 100 prompts) refusal rate",
+      "skor": 3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "On Jailbreak Bench (harmful 100 prompts), with thinking on refusals dropped from 93/100 to just 3/100"
+    }
+  ],
+  "gorsel_url": "https://external-preview.redd.it/GV7ZHfSlQHB7eh5ofVSsj4GRn0FsitN8yAMq3HNWJT0.png?width=640&crop=smart&auto=webp&s=d94020ad3ac7d5febac6195b621c42da6578643a",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xxawbh/why_download_abliterated_flash_next_models_when/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-16T00:06:16.000Z",
+  "slug": "why-download-abliterated-flash-next-models-when-lora-exists"
+}
