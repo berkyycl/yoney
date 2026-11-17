@@ -1,0 +1,77 @@
+{
+  "baslik_tr": "Hugging Face, Inference Providers Yönlendirmesini OpenRouter’a Taşıdı",
+  "ozet_tr": "Hugging Face, dil modeli isteklerini kendi yönlendiricisinden OpenRouter’a taşıyarak açık ağırlıklı modellerin çalıştırılmasını kolaylaştırdı. OpenRouter, fiyat, hız ve güvenilirlik kriterlerine göre en uygun sağlayıcıyı otomatik seçiyor ve hatalı sağlayıcılar için anında yedekleme yapıyor.",
+  "detayli_icerik_tr": "Hugging Face, Inference Providers hizmetini kendi özel yönlendiricisinden OpenRouter platformuna taşıdı. Bu değişiklikle, geliştiriciler Hugging Face Hub üzerindeki herhangi bir açık ağırlıklı modeli aynı API ve token ile çağırabiliyor; OpenRouter ise her isteği canlı fiyat, yanıt süresi ve hizmet süresi (uptime) verilerine göre en iyi sağlayıcıya yönlendiriyor. Sağlayıcı yavaşladığında veya hata verdiğinde otomatik olarak bir sonraki en iyi sağlayıcıya geçiş yapılıyor ve aynı çağrı içinde yeniden deneme gerçekleştiriliyor.\n\nYeni yönlendirme sistemi, OpenAI Chat Completions, Anthropic Messages API ve diğer sohbet modelleri için tek bir API sunuyor. Kullanıcılar hâlâ model kimliğine \":fastest\", \":cheapest\" gibi ekler ya da doğrudan sağlayıcı adını ekleyerek yönlendirme politikasını özelleştirebiliyor. Ayrıca, X-HF-Session-Id başlığıyla oturum bazlı önbellek tutma desteği getirildi; bu sayede bir konuşma aynı sağlayıcıda kalabiliyor.\n\nFiyatlandırmada bir değişiklik yok; kullanıcılar sağlayıcıların belirlediği fiyatı Hugging Face faturalarına ek bir marj olmadan ödüyor. PRO aboneleri aylık 2 $ kredi, Team ve Enterprise planları ise kullanıcı başına 2 $ kredi alıyor. Model sayfalarına yeni \"Providers\" ve \"Metrics\" sekmeleri eklendi; bu sekmeler fiyat, hız, uptime, throughput, ilk token süresi ve bağlam uzunluğu gibi metrikleri gösteriyor ve kullanıcılar istemedikleri sağlayıcıları devre dışı bırakabiliyor. Tek bir kırılma noktası: dil modelleri için özel sağlayıcı API anahtarları artık çalışmıyor, ancak görüntü, video ve ses üretimi bu anahtarlarla devam ediyor.\n\nOpenRouter, 800 trilyon tokenı aşan aylık trafiği 10 milyon kullanıcıya 600'den fazla model üzerinden 80'den fazla sağlayıcıyla sunuyor. Platform, yönlendirme iyileştirmeleri sayesinde kapasite hatalarını %46 azalttı, ilk token süresini %16,9 iyileştirdi ve throughput'u %16,3 artırdı. Açık ağırlıklı modellerin token payı, Ekim 2025'te %26,8 iken Eylül 2026'da %71,7'ye yükselmiş ve ortalama maliyetleri kapalı modellere göre dört kat daha düşük. Hugging Face, bu entegrasyonu iş ortaklığının ilk adımı olarak nitelendiriyor ve gelecekte OpenRouter hesabı bağlama ve daha fazla görevin yönlendirilmesi planlarını duyurdu.",
+  "onemli_maddeler": [
+    "Hugging Face, tüm dil modeli isteklerini OpenRouter üzerinden yönlendirerek sağlayıcı seçimini otomatikleştirdi.",
+    "OpenRouter, fiyat, hız ve uptime kriterlerine göre en iyi sağlayıcıyı seçiyor ve hatalı sağlayıcılar için anlık failover sağlıyor.",
+    "Fiyatlandırma değişmedi; PRO, Team ve Enterprise kullanıcıları aylık 2 $ kredi alıyor.",
+    "Model sayfalarına yeni Providers ve Metrics sekmeleri eklendi; kullanıcılar istenmeyen sağlayıcıları devre dışı bırakabiliyor.",
+    "OpenRouter, kapasite hatalarını %46 azalttı, ilk token süresini %16,9, throughput'u %16,3 artırdı."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Hugging Face'in yönlendirme altyapısının OpenRouter'a taşınması, açık ağırlıklı modellerin erişilebilirliğini ve performansını artırarak geniş geliştirici topluluğunu etkileyen kritik bir güncellemedir.",
+  "etiketler": [
+    "Hugging Face",
+    "OpenRouter",
+    "Inference",
+    "Routing",
+    "Open-weight Models"
+  ],
+  "anilan_modeller": [
+    "Claude Code",
+    "Codex",
+    "OpenCode",
+    "Pi",
+    "Hermes Agent",
+    "OpenAI Chat Completions",
+    "Anthropic Messages API"
+  ],
+  "yorum_tr": "Bu entegrasyon, açık ağırlıklı modellerin daha düşük maliyetle ve yüksek güvenilirlikle kullanılmasını sağlayarak geliştiricilerin altyapı yönetim yükünü hafifletecek ve ekosistemdeki rekabeti iş birliğine yönlendirecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "OpenRouter",
+      "benchmark": "Capacity Error Reduction",
+      "skor": 46,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "OpenRouter serves more than 800 trillion tokens a month ... its rebuilt routing cut capacity errors by 46%"
+    },
+    {
+      "model": "OpenRouter",
+      "benchmark": "Time to First Token Improvement",
+      "skor": 16.9,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "its rebuilt routing ... improving time to first token by 16.9%"
+    },
+    {
+      "model": "OpenRouter",
+      "benchmark": "Throughput Improvement",
+      "skor": 16.3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "its rebuilt routing ... improving ... throughput by 16.3%"
+    },
+    {
+      "model": "OpenRouter",
+      "benchmark": "Open-weight Token Share",
+      "skor": 71.7,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "open-weight models rose from 26.8% of tokens served on OpenRouter in October 2025 to 71.7% at the end of September 2026"
+    }
+  ],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/11/banner-10.webp",
+  "url": "https://www.testingcatalog.com/hugging-face-moves-inference-providers-routing-to-openrouter/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-17T11:53:40.000Z",
+  "slug": "hugging-face-moves-inference-providers-routing-to-openrouter"
+}

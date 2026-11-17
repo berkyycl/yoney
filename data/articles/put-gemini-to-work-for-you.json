@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "Google Gemini, Görev Modu ile Randevu, Fatura ve Alışverişi Otomatikleştiriyor",
+  "ozet_tr": "Google Gemini, yeni Görev Modu sayesinde e-posta, takvim ve ödeme bilgilerinizi güvenli bir ortamda birleştirerek randevu ayarlama, fatura analiz etme ve çevrimiçi alışveriş yapma yeteneklerini sunuyor. Kullanıcılar, Android/iOS uygulamasındaki toggle'ı değiştirerek ya da gemini@google.com adresine e-posta yönlendirerek bu özellikleri ücretsiz olarak deneyebilecek.",
+  "detayli_icerik_tr": "Google, Gemini uygulamasına eklediği Görev Modu ile yapay zekâ asistanını bir adım öteye taşıyarak kullanıcıların günlük işlerini otomatikleştirmesine olanak tanıyor. Model, Google ekosistemi içinde depolanan e-posta, takvim, fotoğraf, dosya ve ödeme kartı gibi hassas verileri izole bir donanım‑tabanlı sanal makinede işleyerek, randevu planlamadan fatura analizine, market alışverişinden uçak bileti rezervasyonuna kadar geniş bir yelpazede görevleri yerine getiriyor.\n\nYeni özellikler, Gemini 4 Hydrogen modeline dayalı olarak ABD, Japonya, Kore, Kanada, Avustralya ve Hindistan'da yüz milyonlarca kullanıcıya ücretsiz sunuluyor. Kullanıcılar, uygulamadaki \"Chat\"‑den \"Task\"‑a geçiş yaparak, Android/iOS üzerinden metin mesajı gönderebilir ya da e-posta yönlendirmesiyle görev talep edebiliyor. Entegrasyonlar arasında Google Pay, Google Shopping Graph, Instacart ve yeni RCS mesajlaşma protokolü bulunuyor; ayrıca Agent Payments Protocol (AP2) sayesinde American Express, Mastercard ve Visa gibi kartlarla güvenli ödeme yapılabiliyor.\n\nGüvenlik açısından Gemini, her kullanıcı için ayrı bir Google Cloud Agent Compute Engine sanal makinesi oluşturuyor. Bu VM'ler donanım izoleli, sandbox ortamında çalışıyor ve Google'ın red team testleri, prompt‑injection filtreleri ve Safe Browsing kontrolleriyle korunuyor. Kullanıcılar, görev sırasında Gemini'in onay istemesini, belirli adımları otomatik olarak kabul etmesini ya da tamamen durdurulmasını ayarlayabiliyor; ayrıca geçmiş sohbetleri silme ve üçüncü‑taraf uygulama bağlantılarını kesme gibi gizlilik kontrol seçenekleri mevcut.\n\nGoogle, bu yeni yeteneklerin hâlâ deneysel olduğunu vurgulayarak kullanıcı geri bildirimlerini toplama ve hata raporlarını \"thumbs down\" ile işaretleme çağrısında bulunuyor. Şirket, web sitelerinin asistanlarla uyumlu hâle gelmesi için büyük siteler ve güvenlik sağlayıcılarıyla ortaklık kurduğunu, açık ve doğrulanabilir standartların geliştirilmesinin sektöre uzun vadeli fayda sağlayacağını belirtiyor.",
+  "onemli_maddeler": [
+    "Gemini, e-posta, takvim ve ödeme bilgilerini izole bir sanal makinede işleyerek randevu, fatura ve alışveriş gibi görevleri otomatikleştiriyor.",
+    "Yeni Görev Modu, Google Pay, Shopping Graph ve Instacart gibi hizmetlerle entegre çalışıyor; AP2 protokolü üzerinden kart güvenliği sağlanıyor.",
+    "Kullanıcı verileri, donanım‑izoleli VM'lerde saklanıyor ve çok katmanlı güvenlik (red‑team testleri, prompt‑injection filtreleri, Safe Browsing) ile korunuyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Gemini’nin yeni görev modu, kişisel asistan işlevlerini genişleterek milyonlarca kullanıcıya günlük işlerini otomatikleştirme imkanı sunuyor; güvenlik önlemleri ve ödeme entegrasyonları sektördeki AI asistanlarının kapsamını artırıyor.",
+  "etiketler": [
+    "Gemini",
+    "AI asistan",
+    "görev otomasyonu",
+    "Google",
+    "veri güvenliği"
+  ],
+  "anilan_modeller": [
+    "Gemini 4 Hydrogen"
+  ],
+  "yorum_tr": "Bu güncelleme, AI destekli kişisel asistanların sadece bilgi sağlamakla kalmayıp, gerçek dünyadaki işlemleri de yürütmesini mümkün kılıyor; geliştiriciler için yeni entegrasyon fırsatları, kullanıcılar için ise zaman tasarrufu ve güvenli bir deneyim anlamına geliyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Hero_2784_x_1566_1.width-1300.png",
+  "url": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/",
+  "source": "Google Gemini",
+  "sourceTier": "resmi",
+  "date": "2026-11-17T17:00:00.000Z",
+  "slug": "put-gemini-to-work-for-you"
+}

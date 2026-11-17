@@ -1,0 +1,45 @@
+{
+  "baslik_tr": "OpenAI, GPT‑6.2 Astra ve Sol modellerini tanıttı",
+  "ozet_tr": "OpenAI, en zorlu profesyonel görevler için tasarlanmış yeni frontier modeli GPT‑6.2 Astra ve günlük iş akışları için daha verimli bir seçenek olan GPT‑6.2 Sol'u duyurdu. Her iki model de çıktıda daha az token harcayarak maliyetleri düşürürken, benchmark testlerinde rakiplerinden daha yüksek puanlar elde etti.",
+  "detayli_icerik_tr": "OpenAI, yapay zekâ alanında bir adım daha ileri giderek GPT‑6.2 Astra ve GPT‑6.2 Sol modellerini piyasaya sürdü. Astra, karmaşık profesyonel projelerde yüksek kalite sunarken, Sol daha çok günlük işlerde verimlilik ve düşük maliyet odaklı bir performans sağlıyor. İki model de aynı anda daha az çıktı tokeni tüketerek kullanım limitleri içinde daha fazla iş yapılabilmesini mümkün kılıyor.\n\nGPT‑6.2 Astra, slayt, elektronik tablo ve belge üretiminde sektörel şablonlara ve terminolojiye daha yakın sonuçlar veriyor; kod yazımında daha temiz ve uyumlu çözümler sunuyor. Özellikle web, oyun ve 3D tasarım alanlarında ön plana çıkan model, \"Agents’ Last Exam\" gibi çok adımlı profesyonel iş akışlarını ölçen benchmarklarda GPT‑6 Astra'ya göre 5.2 puan, Claude Fable 5.2'ye göre ise 5.5 puan daha yüksek skor elde etti.\n\nBenchmark sonuçları da yeni modellerin üstünlüğünü kanıtlıyor. AA‑AnalystAgent testinde GPT‑6.2 Astra, soruların %62.5'ini doğru yanıtlayarak dikkat çekerken, AA‑3D görsel‑uzamsal değerlendirmesinde 1,318 Elo puanla birincilik elde etti. Ayrıca Terminal‑Bench‑Science 0.1 ve Vals Science Index gibi bilimsel görevlerde de önceki sürümlere kıyasla yüzde 9 ve daha yüksek puan artışları kaydedildi.\n\nMaliyet açısından da önemli iyileştirmeler sunan Astra, giriş ve çıkış token fiyatlarını %20 düşürürken, önbelleğe alınmış girişlerde %60 indirim sağlıyor (giriş: 8 $/M token, önbellek: 0.40 $/M token, çıkış: 40 $/M token). Sol modeli ise GPT‑6.1 Sol'un fiyatlandırma politikasını koruyor. Güvenlik ve uyumluluk açısından da daha sıkı koruma mekanizmaları devreye alındı; siber güvenlik yardımı için yüksek riskli isteklerde sınırlamalar getirildi ve modeller Critical ve High güvenlik eşiklerini karşıladığını belgeledi.",
+  "onemli_maddeler": [
+    "GPT‑6.2 Astra, en karmaşık profesyonel görevlerde önceki modellerden %9 daha yüksek bilimsel benchmark skorları ve %5.2 puanlık liderlik sağladı.",
+    "GPT‑6.2 Sol, günlük iş akışlarında %5 daha düşük maliyetle benzer performans sunarak geliştiricilerin ve işletmelerin verimliliğini artırıyor.",
+    "Her iki model de token başına fiyatları %20 düşürerek ve önbellek indirimleriyle maliyetleri önemli ölçüde azaltıyor.",
+    "AA‑AnalystAgent testinde %62.5 doğru yanıt oranı ve AA‑3D görsel değerlendirmesinde 1,318 Elo puanla liderlik elde edildi.",
+    "Güçlendirilmiş güvenlik ve uyumluluk önlemleri, modelleri siber güvenlik ve biyolojik/kimyasal riskler açısından yüksek koruma seviyelerine taşıdı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "OpenAI'nin GPT‑6.2 serisi, hem frontier hem de günlük kullanım için yeni bir nesil model sunarak performans, maliyet ve güvenlik açısından sektörde önemli bir sıçrama yaratıyor.",
+  "etiketler": [
+    "GPT-6.2",
+    "Astra",
+    "Sol",
+    "benchmark",
+    "AI safety"
+  ],
+  "anilan_modeller": [
+    "GPT-6.2 Astra",
+    "GPT-6.2 Sol"
+  ],
+  "yorum_tr": "GPT‑6.2 Astra ve Sol, yüksek performans ve düşük maliyet dengesini bir araya getirerek geliştiricilerin daha karmaşık projeleri daha ekonomik bir şekilde hayata geçirmesine olanak tanıyacak. Güçlendirilmiş güvenlik önlemleri ise özellikle siber güvenlik ve biyoteknoloji alanlarında sorumlu kullanım için kritik bir adım olarak öne çıkıyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GPT-6.2 Astra",
+      "benchmark": "AA‑AnalystAgent",
+      "skor": 62.5,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "GPT‑6.2 Astra answers 62.5% of questions correctly on all five independent attempts."
+    }
+  ],
+  "gorsel_url": "https://cdn.openai.com/mdx-assets/e193aefe-5e58-431c-8cd2-adadac0c1496/44573edd-9653-49b3-ba07-7b3643545ef9.d3072be3.png",
+  "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-11-17T17:45:00.000Z",
+  "slug": "introducing-gpt-6-2-astra-and-sol"
+}

@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "Tam Sunucu‑Tarafı Datasette Uygulaması Tarayıcıda Service Worker ve Pyodide ile Çalıştırıldı",
+  "ozet_tr": "Simon Willison, Datasette Lite'ın tamamen yeniden yazılmış sürümünü hizmet çalışanları (service workers) ve Pyodide tabanlı WebAssembly sayesinde tarayıcıda çalıştırarak, gerçek sunucu‑tarafı uygulamasına neredeyse hiç fark bırakmayan bir deneyim sundu. Kullanıcılar, URL parametreleriyle SQLite sürümlerini, eklentileri ve veri kaynaklarını seçebiliyor, böylece tam bir demo ortamı kurmak için sunucuya ihtiyaç duymuyor.",
+  "detayli_icerik_tr": "Simon Willison, 2022'de ilk kez bir şaka olarak ortaya çıkan Datasette Lite projesini, yeni bir mimariyle tamamen yeniledi. Yeni sürüm, Pyodide içinde çalışan bir web çalışanı (web worker) yerine, tarayıcının service worker özelliğini kullanarak HTTP isteklerini yakalıyor ve bunları istemci tarafında işliyor. Bu sayede JavaScript ve CSS gibi ek kaynaklar sorunsuzca yüklenebiliyor ve eklentiler tam anlamıyla çalışıyor.\n\nKullanıcılar, lite.datasette.io adresine özel URL parametreleri ekleyerek farklı SQLite sürümlerini (ör. ?sqlite=3.54.1), PyPI'den eklentileri (ör. ?install=datasette-maplibre) ve veri dosyalarını (CSV, JSON, SQLite) doğrudan tarayıcıda çalıştırabiliyor. URL içinde bir oturum kimliği (/app/<session>/) eklenerek birden fazla sekme aynı anda bağımsız Datasette örnekleri çalıştırabiliyor; böylece bir sekmede bir demo, diğerinde başka bir demo sorunsuzca izole ediliyor.\n\nBu güncelleme, özellikle hata raporları ve yeni özelliklerin gösterimi için büyük kolaylık sağlıyor. Örneğin, bir pagination hatası iki farklı Datasette Lite URL'siyle (eski ve yeni sürüm) karşılaştırılarak hızlıca doğrulanabiliyor. Ayrıca, 163 farklı SQLite sürümünü içeren WebAssembly tabanlı pysqlite3-wasm-wheels deposu sayesinde, geliştiriciler yeni SQLite özelliklerini tarayıcıda test edebiliyor ve ardından ortamı kapattıklarında tüm kaynaklar siliniyor.\n\nWillison, bu yaklaşımın sadece Datasette ile sınırlı olmadığını, neredeyse tüm Python web uygulamalarının benzer bir şekilde tarayıcı içinde çalıştırılabileceğini vurguluyor. C ve Rust uzantılarının Pyodide uyumlu WebAssembly'e derlenmesiyle, gelecekte daha karmaşık Python ekosistemlerinin de bu modelden faydalanması mümkün olacak.",
+  "onemli_maddeler": [
+    "Service Worker tabanlı mimari, JavaScript ve CSS dahil tam bir Datasette deneyimi sunuyor.",
+    "URL parametreleriyle SQLite sürümü, eklentiler ve veri kaynakları seçilebiliyor; sunucu kurmaya gerek kalmıyor.",
+    "Oturum kimliği sayesinde birden fazla sekmede bağımsız Datasette örnekleri çalıştırılabiliyor.",
+    "163 farklı SQLite sürümünü içeren WebAssembly paketleri, yeni SQLite özelliklerinin tarayıcıda test edilmesini sağlıyor.",
+    "Bu yöntem, diğer Python web uygulamaları için de önizleme ve hata reproduksiyon ortamı oluşturma potansiyeli taşıyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Tarayıcı içinde tam bir sunucu‑tarafı Python uygulamasının çalıştırılması, geliştiricilerin demo, test ve hata ayıklama süreçlerini büyük ölçüde hızlandırarak altyapı maliyetlerini düşürüyor ve WebAssembly ekosisteminin Python ile entegrasyonunu genişletiyor.",
+  "etiketler": [
+    "Datasette",
+    "Pyodide",
+    "WebAssembly",
+    "Service Workers",
+    "SQLite"
+  ],
+  "anilan_modeller": [],
+  "yorum_tr": "Bu güncelleme, Python tabanlı veri keşif araçlarının tarayıcıda çalıştırılmasını mümkün kılarak geliştiricilere hızlı prototipleme ve hataları izole bir ortamda yeniden üretme imkanı tanıyor; aynı zamanda WebAssembly‑Pyodide ekosisteminin olgunlaşmasına da işaret ediyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://static.simonwillison.net/static/cors-allow/2026/datasette-maplibre.webp",
+  "url": "https://simonwillison.net/2026/Nov/17/datasette-lite/",
+  "source": "Simon Willison",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-17T16:48:33.000Z",
+  "slug": "running-the-full-server-side-datasette-python-app-in-the-bro"
+}

@@ -1,0 +1,52 @@
+{
+  "baslik_tr": "OpenAI'nin GPT-6 Astra ve Luna, tıbbi formları doldurup sigorta taleplerini otomatikleştiriyor",
+  "ozet_tr": "OpenAI, GPT-6 Astra ve GPT-6 Luna modellerini klinik programları ve sigorta portallarını fare tıklamaları ve klavye girişleriyle yöneten yazılım ajanları olarak tanıttı. Testlerde iki model de tıbbi idari görevleri güvenli ve maliyet etkin bir şekilde yerine getirirken, Luna modelinin bir görev başına maliyeti sadece 8,5 cent olarak bildirildi.",
+  "detayli_icerik_tr": "OpenAI, Eylül ayında duyurduğu Agents API kapsamında GPT-6 Astra ve GPT-6 Luna'yı sağlık hizmetlerinde kullanılmak üzere sunuyor. Bu ajanlar, elektronik sağlık kayıtları (EHR) ile dış web portalları arasında veri aktarımını insan çalışan gibi fare tıklamaları ve klavye komutlarıyla gerçekleştiriyor. Örneğin, bir hastanın sırt ağrısı şikayeti geldiğinde ajan, geçmiş bulguları tarayıp bir MRI talebi ve hastaya yanıt taslağı hazırlıyor; ardından sigorta portalında ön yetkilendirme isteği oluşturuyor. Hazırlanan taslaklar, klinisyenler ve idari personel tarafından gözden geçirilip onaylandıktan sonra gönderiliyor.\n\nModel performansına ilişkin OpenAI'nin yayınladığı değerlendirmelerde, GPT-6 Astra 325 görevden %99'unun klinik açıdan güvenli olduğu, %93'ünün ise çok ya da aşırı derecede faydalı bulunduğu bildirildi. Aynı zamanda, Stanford Üniversitesi araştırmacılarının bağımsız HealthAdminBench benchmark'ında Astra %94,3, Luna ise %91,8 puan alarak yüksek başarı gösterdi. Luna, düşük API fiyatlandırmasıyla tasarlandığı için Astra'ya göre %98 daha ucuz ve görev başına sadece 8,5 cent maliyetle çalışıyor.\n\nBu teknoloji, CVS Health ve Cigna Healthcare gibi büyük ABD sağlık şirketleri tarafından da pilot olarak kullanılmaya başlandı. CVS Health, ajanların yönlendirme ve uzman konsültasyon belgelerini tek bir hafta sonu içinde temizlemesini sağlarken, Cigna hastanın ondan fazla sistemden gelen verisini birleştiriyor. Diğer girişimler, Abridge ve Ambience gibi firmalar da hastane taburculuk planlaması ve güvenlik mekanizmaları geliştirmek için bu ajanları adapte ediyor.\n\nVeri gizliliği ve HIPAA uyumluluğu da kritik bir odak noktası. OpenAI, kurumların verilerini temel model eğitiminde kullanmadığını ve ChatGPT for Healthcare'in rol tabanlı erişim kontrolleri ve denetim günlükleri sunduğunu belirtiyor. Kuruluşların OpenAI ile bir İş Ortağı Anlaşması (BAA) imzalaması ve gerekli güvenlik ayarlarını uygulaması gerekiyor. Şu an için hizmet ABD pazarına odaklanmış; Avrupa GDPR uyumluluğu henüz netleşmemiş durumda.",
+  "onemli_maddeler": [
+    "GPT-6 Astra ve Luna, fare tıklamaları ve klavye girişleriyle sağlık yazılımlarını otomatikleştirerek idari yükü azaltıyor.",
+    "Luna modeli bir görev başına sadece 8,5 cent maliyetle çalışıyor, bu da Astra'ya göre %98 daha ucuz.",
+    "HealthAdminBench benchmark'ında Astra %94,3, Luna %91,8 puan alarak yüksek doğruluk gösterdi."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Sağlık sektöründe idari süreçlerin otomasyonu, maliyet tasarrufu ve hasta deneyimini iyileştirme potansiyeliyle sektörü kökten değiştirebilir; aynı zamanda HIPAA uyumluluğu ve veri gizliliği konularında yeni standartlar getirebilir.",
+  "etiketler": [
+    "AI",
+    "Sağlık",
+    "GPT-6",
+    "Otomasyon",
+    "HIPAA"
+  ],
+  "anilan_modeller": [
+    "GPT-6 Astra",
+    "GPT-6 Luna"
+  ],
+  "yorum_tr": "Bu ajanlar, sağlık hizmetlerinde idari verimliliği artırarak klinik personelin daha çok hasta bakımına odaklanmasını sağlayabilir; ancak güvenlik, denetim ve yasal sorumlulukların netleştirilmesi, geniş çaplı benimsenmenin önündeki kilit faktörler olarak kalacak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GPT-6 Astra",
+      "benchmark": "HealthAdminBench",
+      "skor": 94.3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "GPT-6 Astra scored 94.3 percent of possible points."
+    },
+    {
+      "model": "GPT-6 Luna",
+      "benchmark": "HealthAdminBench",
+      "skor": 91.8,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "GPT-6 Luna ... scored 91.8 percent."
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/11/openai_healthcare_agents.png",
+  "url": "https://the-decoder.com/ai-agents-are-starting-to-fill-out-medical-forms-and-file-insurance-requests-in-place-of-human-staff/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-17T16:55:47.000Z",
+  "slug": "ai-agents-are-starting-to-fill-out-medical-forms-and-file-in"
+}

@@ -1,0 +1,101 @@
+{
+  "baslik_tr": "Astra for Law, hukuk zekâsında lider konumda",
+  "ozet_tr": "OpenAI, GPT‑6.2 Astra temelli yeni bir konfigürasyon olan Astra for Law'u güncelleyerek Harvey LAB‑AA ve Vals AI Legal Research Bench gibi kritik benchmarklarda liderliğini pekiştirdi. Model, tam kredi elde etme oranını %20,8'e çıkarırken, malzeme hallucination oranını %0,03 seviyesine düşürdü ve çıktısı da rakiplerinden %54 daha az token tüketiyor.",
+  "detayli_icerik_tr": "OpenAI, bugün Astra for Law'un güncellenmiş sürümünü duyurdu. Bu konfigürasyon, en yeni frontier modeli GPT‑6.2 Astra'yı genişletilmiş bir hukuk arama indeksi ve soruları araştırma, otoriteleri tartma ve yanıtı yazma talimatlarıyla birleştiriyor. Güncellenen model, Harvey'in LAB‑AA benchmark'unda %20,8 tam kredi oranı elde ederek birinci sırada yer aldı; bu oran, bir sonraki en iyi model olan GPT‑6.2 Astra'nın %15,0 ve Muse Wonder Full'ın %13,1'inin çok üzerindeydi.\n\nAstra for Law, aynı benchmark'ta çıktısı 64.000 token ile rakip Muse Wonder Full'ın 139.000 token'lık çıktısının neredeyse yarısı kadar, yani %54 daha az kaynak harcayarak aynı ya da daha yüksek başarı sağladı. Bu verimlilik, kullanım başına ödeme yapan hukuk ekipleri için bütçe kontrolü açısından kritik bir avantaj sunuyor. Ayrıca, malzeme hallucination oranı sadece 0,03 (tam kredi alan görevlerde sıfır) iken, en düşük seviyedeki dış model Claude Opus 5.5'in 0,59 olduğu gözlemlendi; bu, Astra for Law'un yanlış bilgi üretiminde %95 daha az hata yaptığı anlamına geliyor.\n\nVals AI Legal Research Bench'te de performans kayda değer. Eylül ayında %46 tam kredi elde eden model, iki ay içinde bu oranı %53,8'e (208 sorudan 112 tam kredi) yükseltti ve toplam puanların %90,9'unu topladı. Bu gelişme, modelin hem araştırma kalitesini hem de kapsamlı yanıt üretme yeteneğini artırdığını gösteriyor. Ayrıca, Harvey ve Grubel ortaklığındaki LAB: USCL benchmark'ında Astra for Law, araştırma ve taslak aşamasında 1.844 puan alarak Claude Opus 5.5'in 1.817 puanını geride bıraktı.\n\nGüncellenen Astra for Law, ChatGPT Enterprise müşterileri için Trusted Access Program aracılığıyla API ve ChatGPT arayüzünde erişime açıldı. Hukuk firmaları ve iç hukuk ekipleri, modelin sunduğu güçlü araştırma ve yazım yeteneklerini, politika analizi, dış danışmanlık ön hazırlığı ve otomatik iş akışı oluşturma gibi çeşitli senaryolarda kullanarak iş süreçlerini hızlandırabilir ve hatasız sonuçlar elde edebilir.",
+  "onemli_maddeler": [
+    "Astra for Law, Harvey LAB‑AA testinde %20,8 tam kredi oranı ile birinci oldu, rakiplerinden %59 daha yüksek başarı sağladı.",
+    "Model, malzeme hallucination oranını 0,03'e düşürerek Claude Opus 5.5'in %0,59'luk oranının %95 altında kaldı.",
+    "Vals AI Legal Research Bench'te tam kredi oranı %46'dan %53,8'e yükselerek iki ay içinde sekiz puanlık artış gösterdi.",
+    "Çıktı token sayısı 64.000 ile rakip Muse Wonder Full'ın 139.000 token'ının %54'ü kadar, maliyet verimliliği sağladı."
+  ],
+  "kategori": "guncelleme",
+  "onem": 5,
+  "onem_gerekce": "Astra for Law'un güncellenmesi, hukuk alanında AI kullanımının doğruluk, verimlilik ve maliyet açısından kritik bir sıçrama yapmasını sağladı; benchmark sonuçları sektördeki rekabeti ve uygulama potansiyelini doğrudan etkiliyor.",
+  "etiketler": [
+    "hukuk AI",
+    "benchmark",
+    "OpenAI",
+    "Astra for Law",
+    "legal intelligence"
+  ],
+  "anilan_modeller": [
+    "Astra for Law",
+    "GPT-6.2 Astra",
+    "Muse Wonder Full",
+    "Claude Opus 5.5",
+    "Gemini 4 Argon"
+  ],
+  "yorum_tr": "Astra for Law'un bu güncellemesi, hukuk pratiğinde yapay zekâ güvenilirliğini artırarak hem büyük firmaların hem de bireysel avukatların iş akışlarını dönüştürme potansiyeli taşıyor. Düşük hallucination oranı ve yüksek verimlilik, AI destekli hukuk hizmetlerinin yaygınlaşması için kritik bir itici güç olacak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Astra for Law",
+      "benchmark": "Harvey LAB-AA full credit",
+      "skor": 20.8,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "tam kredi görev oranı",
+      "kaynak_metinden_alinti": "Astra for Law ranked first, earning full credit on 20.8% of assignments"
+    },
+    {
+      "model": "GPT-6.2 Astra",
+      "benchmark": "Harvey LAB-AA full credit",
+      "skor": 15,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "tam kredi görev oranı",
+      "kaynak_metinden_alinti": "ahead of GPT‑6.2 Astra at 15.0%"
+    },
+    {
+      "model": "Muse Wonder Full",
+      "benchmark": "Harvey LAB-AA full credit",
+      "skor": 13.1,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "tam kredi görev oranı",
+      "kaynak_metinden_alinti": "Muse Wonder Full at 13.1%"
+    },
+    {
+      "model": "Astra for Law",
+      "benchmark": "material hallucinations per assignment (LAB-AA)",
+      "skor": 0.03,
+      "birim": "count",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "material hallucinations",
+      "kaynak_metinden_alinti": "Astra for Law tied (with GPT‑6) for the lowest rate of material hallucinations:0.03 per assignment"
+    },
+    {
+      "model": "Claude Opus 5.5",
+      "benchmark": "material hallucinations per assignment (LAB-AA)",
+      "skor": 0.59,
+      "birim": "count",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "material hallucinations",
+      "kaynak_metinden_alinti": "0.59 for Claude Opus 5.5 (the next lowest non-OpenAI model)"
+    },
+    {
+      "model": "Astra for Law",
+      "benchmark": "Vals AI Legal Research Bench full credit",
+      "skor": 53.8,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "full credit answers",
+      "kaynak_metinden_alinti": "earned full credit on 112 of 208 questions (53.8%)"
+    },
+    {
+      "model": "Astra for Law",
+      "benchmark": "Vals AI Legal Research Bench points earned",
+      "skor": 90.9,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "available points",
+      "kaynak_metinden_alinti": "earned 90.9% of the available points"
+    }
+  ],
+  "gorsel_url": "https://images.ctfassets.net/kftzwdyauwt9/3MwSwa1GcJHdJGeOy7u0LZ/7ecfaba7da6555bc46c1e85f50c13bdb/astra-law-legal-intelligence-social-smooth.png?w=1600&h=900&fit=fill",
+  "url": "https://openai.com/index/astra-law-6-2",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-11-17T00:00:00.000Z",
+  "slug": "astra-for-law-leads-in-legal-intelligence"
+}
