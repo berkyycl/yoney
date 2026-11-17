@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "Maxwell-V1-Flash: 35B MoE LLM, 256K token uzunluğunda yüksek performanslı model",
+  "ozet_tr": "Maxwell ekibi, 35 milyar parametreli ve token başına 3 milyar aktif parametre kullanan yeni bir Mixture-of-Experts (MoE) dil modeli Maxwell-V1.0-Flash'i duyurdu. Model, 256 K token'a kadar uzanan bağlam uzunluğu ve blok-sparse dikkat mekanizması sayesinde uzun metinlerde düşük gecikme süresi vaat ediyor.",
+  "detayli_icerik_tr": "Maxwell-V1.0-Flash, 35 B toplam parametreye sahip bir MoE mimarisiyle tasarlandı; her token için 3 B aktif parametre kullanılıyor ve gömülü katmanlar bu sayıya dahil değil. Model, 256 K token'a kadar bağlam uzunluğunu destekleyerek uzun metinlerde tutarlı mantık yürütme ve ajan tabanlı görevlerde yüksek performans sağlıyor.\n\nTemel yeniliklerden biri Maxwell Block Sparse Attention (MBSA) adlı dikkat çekirdeği. MBSA, her KV grubunda sabit 8 ön ek ve 8 yerel 128‑token bloğu tutarken, öğrenilmiş bir indeksleyici aracılığıyla 16 uzaktan blok seçiyor. Bu sayede KV grubu başına maksimum 4 096 token dikkat sınırı uygulanıyor, ancak tam tarihçe KV önbelleği hâlâ erişilebilir durumda. MBSA çekirdeği, 256 K bağlamda yoğun GQA'ya göre 6,7 kat daha hızlı çalışıyor.\n\nModel ayrıca Manifold‑Constrained Hyper‑Connections adlı bir yapı sunuyor; birden çok residual akış, girişe bağlı öğrenilmiş birleştirme ve kısıtlı karıştırma ile bilgi akışını genişletiyor, ek dikkat ya da feed‑forward hesaplaması gerektirmiyor. MoE mimarisi, dinamik yönlendirme düzeltme bias'ı ve hafif bir sekans‑bazlı yük‑dengeleme kaybı ile birlikte, her zaman aktif ortak uzmanlarla ince‑granüler yönlendirilmiş uzmanları birleştiriyor.\n\nÖn‑eğitim aşamasında yaklaşık 26 trilyon token çok dilli veri kullanıldı ve Muon optimizasyonu çoğu gizli ağırlık matrisine uygulandı. Eğitim, başlangıçta yoğun (dense) olarak başladı; 128 K token'ta blok‑sparse dikkat devreye alındı ve indeksleyici yoğun tam‑tarihçe dikkatle ısındıktan sonra temel modelle birlikte eğitildi. Uzun‑bağlam eğitimi, 4 K'dan 256 K'ya kadar aşamalı olarak artırıldı. İki aşamalı SFT (Supervised Fine‑Tuning) süreci, genel, mantıksal ve ajan yeteneklerini geliştirdikten sonra daha zor mantık problemleri ve ajan yolculukları üzerine odaklandı. Bağımsız RL dalları, genel görevler, doğrulanabilir mantık (matematik, bilim, kod) ve ajan görevleri (arama, terminal kullanımı, fonksiyon çağrısı, yazılım mühendisliği) için ayrı ayrı eğitildi ve çok‑öğretmenli on‑policy distilasyonu ile tek bir modele birleştirildi.",
+  "onemli_maddeler": [
+    "35 B toplam parametre, token başına 3 B aktif parametre ile yüksek verimlilik.",
+    "256 K token bağlam uzunluğu ve MBSA sayesinde 6,7× daha hızlı blok‑sparse dikkat.",
+    "26 T token çok dilli ön‑eğitim, Muon optimizasyonu ve iki aşamalı SFT ile güçlü mantık ve ajan yetenekleri."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Maxwell-V1-Flash, uzun bağlam ve MoE mimarisini birleştirerek büyük ölçekli LLM'lerde maliyet‑verim dengesini iyileştiriyor; bu, araştırmacılar ve geliştiriciler için yeni bir performans çıtası oluşturuyor.",
+  "etiketler": [
+    "Mixture-of-Experts",
+    "Sparse Attention",
+    "Long Context",
+    "LLM",
+    "Open Source"
+  ],
+  "anilan_modeller": [
+    "Maxwell-V1-Flash"
+  ],
+  "yorum_tr": "Model, uzun metin işleme ve karmaşık görevlerde maliyet etkin çözümler sunarak LLM ekosistemine önemli bir alternatif getiriyor. Geliştiriciler, MBSA ve dinamik MoE yönlendirmesinden faydalanarak daha hızlı ve ölçeklenebilir uygulamalar geliştirebilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://external-preview.redd.it/rC062Fglp6msA2dKmUhTrFdtc4Xn_pPnUGCLt0R6pd8.png?width=640&crop=smart&auto=webp&s=3ce6f14a1944d9d64c22244deb571937aff3f540",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xyamk6/maxwellmodelmaxwellv1flash_hugging_face/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-17T04:04:39.000Z",
+  "slug": "maxwell-model-maxwell-v1-flash-hugging-face"
+}

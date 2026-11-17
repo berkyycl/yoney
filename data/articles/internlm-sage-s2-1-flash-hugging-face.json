@@ -1,0 +1,70 @@
+{
+  "baslik_tr": "Shanghai AI Laboratuvarı'ndan Sage S2.1 Flash: Çok Modlu Bilimsel Model ve Benchmark Başarıları",
+  "ozet_tr": "Shanghai Artificial Intelligence Laboratory tarafından geliştirilen Sage S2.1 Flash, moleküler grafiklerden protein 3B yapısına kadar ondan fazla bilimsel veri tipini tek bir temsil alanına kodlayarak çok aşamalı analiz ve doğrulama yetenekleri sunuyor. Model, 15 benchmark içinde dört tanesinde birinci, yedi tanesinde ise ikinci olarak öne çıkarak özellikle makine öğrenmesi mühendisliği ve ofis belge işleme alanlarında yüksek puanlar elde etti.",
+  "detayli_icerik_tr": "Sage S2.1 Flash, Shanghai Artificial Intelligence Laboratory'ın Sage SciPerception adlı birleşik temsil mimarisi üzerine inşa edilmiş bir bilimsel çok modlu modeldir. Moleküler grafikler, kristal yapılar, protein dizileri ve 3B yapılar gibi ondan fazla bilimsel girdi tipini doğal dil talimatlarıyla birlikte işleyebilen model, bu girdileri ortak bir temsil uzayına kodlayarak tahmin, sınıflandırma, bölge lokalizasyonu, nicel analiz ve yapı çıkarımı gibi görevlerde kullanılabiliyor.\n\nModelin en dikkat çeken özelliği, özel yazılımları çağırarak analiz yapabilmesi, ara çıktıları ve görsel geri bildirimleri kontrol edip sonuçları doğrulaması ve bu doğrulamalara göre sonraki adımları dinamik olarak ayarlamasıdır. Bu sayede araştırma sürecinde birden fazla turda veri işleme ve sonuç kontrolü gerektiren karmaşık bilimsel görevlerde etkili bir asistan rolü üstleniyor.\n\nBenchmark sonuçları açısından Sage S2.1 Flash, 15 testten oluşan bir set içinde dört benchmarkta birinci, yedi benchmarkta ise ikinci sırada yer alarak güçlü bir performans sergiledi. Özellikle MLE-bench Lite testinde %90.3 puanla birinci olurken, DeepSeek-V4.1-Flash-1017'yi geride bıraktı. Ofis ve profesyonel belge işleme alanında OfficeQA Pro (%72.2), Harvey LAB (%25.0) ve SpreadsheetBench 2 (%37.1) testlerinde birinci oldu. Araç kullanımı ve araştırma yürütme kategorilerinde ise AutomationBench, ALE-CLI, BFCL V4, WebArena-Verified, DeepResearch Bench II, JobBench ve OSWorld-Verified testlerinde ikinci sırada yer aldı.\n\nBu sonuçlar, Sage S2.1 Flash'in hem bilimsel veri işleme hem de genel amaçlı yapay zeka görevlerinde rekabetçi bir seçenek olduğunu gösteriyor. Model, Hugging Face platformunda yayınlanarak araştırmacıların ve geliştiricilerin erişimine sunuldu; bu da bilimsel AI ekosisteminde yeni bir referans noktasının oluşmasına katkı sağlıyor.",
+  "onemli_maddeler": [
+    "Sage S2.1 Flash, 10+ bilimsel veri tipini tek bir temsil alanına kodlayarak çok modlu analiz yapabiliyor.",
+    "MLE-bench Lite testinde %90.3 puanla birinci, OfficeQA Pro, Harvey LAB ve SpreadsheetBench 2 testlerinde de birinci oldu.",
+    "Araç kullanımı ve araştırma yürütme benchmarklarında toplam yedi testte ikinci sırada yer alarak geniş bir yelpazede rekabetçi performans sergiledi."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Yeni bir bilimsel çok modlu modelin piyasaya sürülmesi ve birden fazla benchmarkta üst sıralarda yer alması, araştırma ve endüstri uygulamaları için önemli bir gelişmedir.",
+  "etiketler": [
+    "multimodal",
+    "bilimsel AI",
+    "benchmark",
+    "Hugging Face",
+    "Shanghai AI Lab"
+  ],
+  "anilan_modeller": [
+    "Sage S2.1 Flash",
+    "DeepSeek-V4.1-Flash-1017"
+  ],
+  "yorum_tr": "Sage S2.1 Flash'in çok modlu yetenekleri ve yüksek benchmark puanları, bilimsel araştırma süreçlerini otomatikleştirmek isteyen geliştiriciler ve akademisyenler için yeni bir araç seti sunuyor; aynı zamanda rekabeti artırarak model inovasyonunu tetikleyecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Sage S2.1 Flash",
+      "benchmark": "MLE-bench Lite",
+      "skor": 90.3,
+      "birim": "",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Sage S2.1 Flash placed first on MLE-bench Lite with 90.3, ahead of DeepSeek-V4.1-Flash-1017 at 89.2."
+    },
+    {
+      "model": "Sage S2.1 Flash",
+      "benchmark": "OfficeQA Pro",
+      "skor": 72.2,
+      "birim": "",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "It placed first on OfficeQA Pro, Harvey LAB, and SpreadsheetBench 2, scoring 72.2, 25.0, and 37.1, respectively."
+    },
+    {
+      "model": "Sage S2.1 Flash",
+      "benchmark": "Harvey LAB",
+      "skor": 25,
+      "birim": "",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "It placed first on OfficeQA Pro, Harvey LAB, and SpreadsheetBench 2, scoring 72.2, 25.0, and 37.1, respectively."
+    },
+    {
+      "model": "Sage S2.1 Flash",
+      "benchmark": "SpreadsheetBench 2",
+      "skor": 37.1,
+      "birim": "",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "It placed first on OfficeQA Pro, Harvey LAB, and SpreadsheetBench 2, scoring 72.2, 25.0, and 37.1, respectively."
+    }
+  ],
+  "gorsel_url": "https://external-preview.redd.it/bb-AwTPyf7TAAs2yjUYzv72iv0aQXOGtgvEiNxg5JTA.png?width=640&crop=smart&auto=webp&s=5785ec9e8396166ec91c1f5dc0781d90935e716f",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xxn631/internlmsages21flash_hugging_face/",
+  "source": "Reddit LocalLLaMA (Topluluk & Benchmark)",
+  "sourceTier": "topluluk",
+  "date": "2026-11-16T11:36:14.000Z",
+  "slug": "internlm-sage-s2-1-flash-hugging-face"
+}
