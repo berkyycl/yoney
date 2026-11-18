@@ -1,0 +1,72 @@
+{
+  "baslik_tr": "OpenAI, GPT-6.2 Astra ve Sol Modellerini ChatGPT ve API'lerde Kullanıma Açtı",
+  "ozet_tr": "OpenAI, profesyonel iş akışları için tasarlanmış GPT-6.2 Astra ve GPT-6.2 Sol modellerini duyurdu. Her iki model de ChatGPT Work, Codex ve API üzerinden Plus, Pro, Enterprise ve Edu kullanıcılarına sunuluyor ve daha az token harcayarak daha yüksek verim vaat ediyor.",
+  "detayli_icerik_tr": "OpenAI, yeni nesil GPT-6.2 model çiftini tanıttı: Astra, en karmaşık projeler için geliştirilen sınır modeliyken, Sol günlük görevlerde yüksek verimlilik ve esneklik sağlamak üzere tasarlandı. Modeller, ChatGPT Work ve Codex platformlarında Plus, Pro, Enterprise ve Edu planlarıyla kullanılabilirken, geliştiriciler API üzerinden gpt-6.2-astra ve gpt-6.2-sol kimlikleriyle erişebilecek.\n\nAstra, Agents' Last Exam gibi çok adımlı profesyonel iş testlerinde GPT-6 Astra'dan 5.2 puan, Claude Fable 5.2'den ise 5.5 puan daha yüksek skor elde ederken, maliyet açısından da üçte birinin altında bir fiyatla sunuluyor. Terminal-Bench-Science 0.1 benchmark'ında %9'luk bir artışla yeni bir rekor kırdı ve Vals Science Index'te bilim insanları için dünyanın en iyi modeli olarak konumlandırıldı. Ayrıca AA-3D turnuvasında 1.318 Elo puanla birincilik elde ederek rakiplerini geride bıraktı.\n\nSol modeli ise GPT-6.1 Sol'un üzerine inşa edilerek aynı görevlerde Astra'ya sadece 0.5 puan farkla yaklaşırken, maliyet açısından bir beşte bir seviyesinde çalışıyor. Artificial Intelligence Index'te 57.3 puan alarak yüksek bir sıralamaya ulaştı ve LifeVal, FrontierCode 2.0 gibi testlerde Astra'ya yakın performans gösterdi. Kullanıcı raporları, Sol'un daha temiz kod üretimi, daha güçlü ön yüz geliştirme ve CAD/simülasyon araçlarında daha hassas bilgisayar kullanımı sağladığını belirtiyor.\n\nFiyatlandırma açısından Astra, girdi token başına 8 $, önbellek girdi başına 0.40 $, çıktı token başına 40 $ olarak belirlenirken, bu oran GPT-6 Astra'ya göre %20 daha düşük. Sol ise GPT-6.1 Sol ile aynı 2 $, 0.10 $, 10 $ tarifelerini koruyor. Pro 500 abonelerine Ultrafast özelliği sunuluyor ve Pro 200 kullanıcıları da ilk kez Sol modelinde bu hıza erişebilecek. Modeller, OpenAI'nin Hazırlık Çerçevesi kapsamında Kritik siber güvenlik ve Yüksek biyolojik/kimyasal eşiklerini karşılayarak daha sıkı güvenlik önlemleriyle birlikte geliyor.",
+  "onemli_maddeler": [
+    "Astra, AA-3D turnuvasında 1.318 Elo puanla birincilik elde etti.",
+    "Sol, Artificial Intelligence Index'te 57.3 puan alarak yüksek bir sıralamaya ulaştı.",
+    "Astra, ARC-AGI-3 benchmark'ında %100 başarı oranı yakalayarak SOTA seviyesine ulaştı.",
+    "Astra'nın giriş token fiyatı $8, çıktı token fiyatı $40; Sol ise önceki fiyatlarını koruyor.",
+    "Her iki model de OpenAI'nin Hazırlık Çerçevesi'nde Kritik siber güvenlik ve Yüksek biyolojik/kimyasal eşiklerini karşılıyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "OpenAI'nin en yeni profesyonel model çiftini tanıtması, hem performans hem maliyet açısından sektörde büyük etki yaratması ve benchmarklarda lider konumlara ulaşması nedeniyle.",
+  "etiketler": [
+    "GPT-6.2",
+    "Astra",
+    "Sol",
+    "OpenAI",
+    "API"
+  ],
+  "anilan_modeller": [
+    "GPT-6.2 Astra",
+    "GPT-6.2 Sol"
+  ],
+  "yorum_tr": "Astra ve Sol'un piyasaya sürülmesi, yüksek maliyetli AI çözümlerine erişimi genişleterek geliştiricileri ve kurumsal kullanıcıları daha verimli iş akışları oluşturma yönünde teşvik edecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GPT-6.2 Sol",
+      "benchmark": "Artificial Intelligence Index",
+      "skor": 57.3,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "GPT-6.2 Sol scores 57.3 on the Artificial Intelligence Index."
+    },
+    {
+      "model": "GPT-6.2 Astra",
+      "benchmark": "ARC-AGI-3",
+      "skor": 100,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "GPT-6.2 Astra is the first model to achieve a 100% score on ARC-AGI-3."
+    },
+    {
+      "model": "GPT-6.2 Astra",
+      "benchmark": "ARC-AGI-2",
+      "skor": 95.8,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "ARC-AGI-2: 95.8% (SOTA)"
+    },
+    {
+      "model": "GPT-6.2 Astra",
+      "benchmark": "ARC-AGI-1",
+      "skor": 98.5,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "ARC-AGI-1: 98.5% (SOTA)"
+    }
+  ],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/11/banner-11.webp",
+  "url": "https://www.testingcatalog.com/openai-launches-gpt-6-2-astra-and-sol-on-chatgpt-and-apis/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-17T18:55:50.000Z",
+  "slug": "openai-launches-gpt-6-2-astra-and-sol-on-chatgpt-and-apis"
+}
