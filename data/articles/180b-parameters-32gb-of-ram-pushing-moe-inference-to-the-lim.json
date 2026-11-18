@@ -1,0 +1,67 @@
+{
+  "baslik_tr": "180 Milyar Parametreli MoE Modelleri 32 GB RAM’da Transformers ile Çalıştırma",
+  "ozet_tr": "Hugging Face, 180 b milyar parametreli MoE modellerini sadece 32 GB RAM ve iki RTX 4090 gibi tüketici sınıfı donanımlarda çalıştırmak için yeni bir uzman akış (expert streaming) yöntemi sundu. Bu yöntem, sadece yönlendirilen uzmanları SSD’den akışlayarak, bir LRU önbellek ve 3‑bit kuantizasyonla ağırlıkları büyük ölçüde küçültüyor. Son benchmarklar, güncellenen Transformers kütüphanesinin, Strata motoruna %6 kadar yakın bir performans sergilediğini gösteriyor.",
+  "detayli_icerik_tr": "MoE (Mixture‑of‑Experts) mimarileri, uzman ağırlıklarının %90'ından fazlasını içerdiği için geleneksel GPU bellek sınırlarını zorlar. 180 B parametreli bir modelin tüm uzmanlarını tek bir RTX 4090’da tutmak mümkün değildir; bu yüzden uzmanları RAM ya da diske taşıyan bir akış sistemi gerekir. Strata, bu alanda uzmanları sadece ihtiyaç duyulduğunda SSD’den okuyan ve bir önbellek aracılığıyla tekrar eden uzmanları GPU’da tutan bir motor olarak öne çıkıyor.\n\nMevcut açık kaynak çözümler—llama.cpp, vLLM ve Transformers’ın Accelerate tabanlı offload yöntemi—her biri farklı bir strateji izliyor. llama.cpp, uzmanları CPU’ya mmap ile yükleyip sadece aktivasyonları PCIe üzerinden gönderiyor; vLLM ise ağırlıkları sabit RAM’e yerleştiriyor ancak her token’da uzmanları tekrar PCIe üzerinden okuyor. Transformers ise katman bazlı bir offload yapıyor, bu da her token’da tüm uzman bankasını GPU’ya kopyalıyor ve performansı ciddi şekilde düşürüyor. Bu sınırlamaların farkına varıldıktan sonra, Hugging Face geliştiricileri Transformers içinde doğrudan bir \"experts_offload\" seçeneği ekleyerek, disk‑tabanlı akış ve LRU önbellek mekanizmasını entegre etti.\n\nUygulama, OLMoE‑1B‑7B modeliyle başlatıldı; uzmanlar diske yerleştirildi, bir slot havuzu ve per‑layer tabloyla LRU önbellek oluşturuldu. İlk denemeler 10.1 tok/s verirken, grup‑matmul (grouped_mm) optimizasyonu sayesinde 34.6 tok/s’ye, vanilla Transformers’ın 38.1 tok/s’sine yaklaşarak yükseltildi. Daha sonra gerçek hedef model Qwen3.8‑Flash‑Next (48 katman, 512 uzman, 10 aktif) 3‑bit kuantizasyonla 49 GB disk alanına indirildi ve 12 GiB GPU önbelleğiyle çalıştırıldı. Modelin toplam bellek ihtiyacı 18 GiB’ye düştü, 6 K token prompt’da ise 25.4 GiB’ye ulaştı.\n\nBenchmark sonuçları, Strata’nın 14.8 tok/s decode hızına karşı Transformers’ın 13.9 tok/s (≈%6 fark) elde ettiğini gösteriyor. Prefill aşamasında ise Transformers 228 tok/s’ye ulaşarak Strata’yı eşitledi. Geri kalan darboğaz, host‑GPU senkronizasyon gecikmeleri (≈10 ms/token) ve Python‑GPU arasındaki veri akışı; bu da PyTorch’un MPS akışında daha düşük seviyeli bir kontrol gerektirdiğini ortaya koyuyor. Sonuç olarak, yeni akış desteği Transformers’ı MoE modelleri için tüketici donanımında ciddi bir adım öne taşıdı, ancak tam performans eşitliğine ulaşmak için derin sistem değişiklikleri gerekiyor.",
+  "onemli_maddeler": [
+    "Strata motoru, sadece yönlendirilen uzmanları SSD’den akışlayarak 180 B MoE modellerini tüketici GPU’larında çalıştırabiliyor.",
+    "Transformers kütüphanesine eklenen \"experts_offload\" özelliği, disk‑tabanlı akış, LRU önbellek ve 3‑bit kuantizasyonla uzman ağırlıklarını %60‑70 oranında küçültüyor.",
+    "Benchmarklarda Transformers, Strata’ya sadece %6 farkla 13.9 tok/s decode hızıyla yaklaşıyor; prefilling aşamasında ise 228 tok/s ile Strata’yı eşitliyor.",
+    "Performansın kalan sınırlayıcısı, host‑GPU senkronizasyon gecikmeleri ve PyTorch MPS akışının eksik kontrolü.",
+    "Bu geliştirme, büyük MoE modellerinin yerel cihazlarda deneysel olarak kullanılabilmesini sağlayarak araştırma ve geliştirme maliyetlerini düşürüyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "MoE modellerinin tüketici sınıfı donanımlarda çalıştırılabilmesi, geliştiricilerin ve araştırmacıların büyük ölçekli LLM'leri yerel ortamda test etmesini mümkün kılıyor; bu da altyapı maliyetlerini azaltıp inovasyonu hızlandırıyor.",
+  "etiketler": [
+    "MoE",
+    "Transformers",
+    "GPU",
+    "Inference",
+    "Benchmark"
+  ],
+  "anilan_modeller": [
+    "Qwen3.8-Flash-Next",
+    "Qwen3.6-35B-A3B",
+    "Strata",
+    "llama.cpp",
+    "vLLM",
+    "OLMoE-1B-7B"
+  ],
+  "yorum_tr": "Bu güncelleme, MoE tabanlı büyük dil modellerinin tüketici donanımına erişimini genişleterek geliştiricilerin deneysel çalışmalarını hızlandırıyor. Performans farkının %6 seviyesinde kalması, sistem seviyesinde daha derin optimizasyonların gerektiğini gösteriyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Strata",
+      "benchmark": "Decode (tok/s)",
+      "skor": 14.8,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Strata Gap Decode, 200 tokens 10.0 tok/s 14.8 1.5x"
+    },
+    {
+      "model": "Transformers (expert streaming)",
+      "benchmark": "Decode (tok/s)",
+      "skor": 13.9,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Transformers Strata Gap Decode, 200 tokens 13.9 tok/s 14.8 1.06x"
+    },
+    {
+      "model": "vLLM (FP8, --cpu-offload-gb 16 --cpu-offload-params experts)",
+      "benchmark": "Engine Decode (tok/s)",
+      "skor": 20.1,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "FP8, --cpu-offload-gb 16 --cpu-offload-params experts",
+      "kaynak_metinden_alinti": "vLLM, FP8, --cpu-offload-gb 16 --cpu-offload-params experts 20.1"
+    }
+  ],
+  "gorsel_url": "https://huggingface.co/blog/assets/moe-expert-streaming/thumbnail.png",
+  "url": "https://huggingface.co/blog/moe-expert-streaming",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-11-18T00:00:00.000Z",
+  "slug": "180b-parameters-32gb-of-ram-pushing-moe-inference-to-the-lim"
+}

@@ -1,0 +1,47 @@
+{
+  "baslik_tr": "OpenAI modelleri, AMD çip tasarımına bir yıllık optimizasyon katkısı sağladı",
+  "ozet_tr": "OpenAI, modellerini AMD'nin amiral gemisi GPU IP'sine entegre ederek sadece beş ay içinde %14 PPA iyileştirmesi elde etti. Şirket, bu gelişmenin bir yıllık mühendislik çalışmasına eşdeğer olduğunu ve bazı değişikliklerin üretime gönderilen tasarıma dahil edildiğini açıkladı.",
+  "detayli_icerik_tr": "OpenAI ve AMD iş birliği, OpenAI modellerinin çip tasarım süreçlerine entegre edilmesiyle AMD'nin amiral gemisi GPU IP'sinde beş ay içinde %14 PPA (güç, performans ve alan) iyileştirmesi sağladığını duyurdu. Bu iyileştirme, AMD mühendislerinin yıllarca süren optimizasyon çalışmalarına ek olarak bir yıllık ilerleme anlamına geliyor; bazı değişiklikler zaten üretime gönderilen tasarıma dahil edildi.\n\nOpenAI ayrıca kendi özel inference çipi Jalapeño'yu da aynı yöntemle geliştirdi ve açık kaynak RISC‑V çekirdekleri üzerinde yeni GPT‑6.2 Astra modelinin nesil bazlı en iyi sonuçları verdiğini belirtti. Bu model, farklı nesil AI modelleri arasında en yüksek performansı göstererek çip tasarımında AI kullanımının etkinliğini kanıtladı.\n\nŞirket, Synopsys ile ortaklaşa GPT‑Synopsys adlı bir model geliştirerek EDA araçlarını AI destekli hale getirmeyi hedefliyor; bu, çip tasarımını daha geniş bir geliştirici kitlesine erişilebilir kılacak. GPT‑Synopsys, tasarım doğrulama ve optimizasyon süreçlerini otomatikleştirerek mühendislik süresini kısaltmayı amaçlıyor.\n\nRakip Anthropic de benzer bir yaklaşım benimseyerek Mythos modeliyle AMD MI355X GPU'ları üzerinde prompt işleme süresini 6‑12 aydan sadece üç güne indirdi ve Claude modelini dört çip ailesinde maliyet‑performans optimizasyonu için kullanıyor. Bu gelişmeler, çip tasarım sürecinde AI kullanımının hız ve verimlilik açısından devrim yaratma potansiyelini gösteriyor.",
+  "onemli_maddeler": [
+    "OpenAI modelleri, AMD'nin amiral gemisi GPU IP'sinde %14 PPA iyileştirmesi elde etti, bu bir yıllık mühendislik ilerlemesi eşdeğeri.",
+    "GPT‑6.2 Astra, açık RISC‑V çekirdeklerinde nesil bazlı en yüksek performansı gösterdi.",
+    "OpenAI, Synopsys ile GPT‑Synopsys modelini geliştirerek AI‑destekli EDA araçlarını yaygınlaştırmayı planlıyor.",
+    "Anthropic'in Mythos modeli, AMD MI355X GPU'larında prompt işleme süresini 6‑12 aydan 3 güne düşürdü.",
+    "Bu gelişmeler, çip tasarım sürecinde AI kullanımının hız ve verimlilik açısından devrim yaratma potansiyelini ortaya koyuyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "AI modellerinin çip tasarımına entegrasyonu, donanım geliştirme süresini ve maliyetini önemli ölçüde azaltarak sektörde rekabeti ve inovasyonu hızlandırıyor.",
+  "etiketler": [
+    "OpenAI",
+    "AMD",
+    "çip tasarımı",
+    "AI‑destekli EDA",
+    "performans optimizasyonu"
+  ],
+  "anilan_modeller": [
+    "GPT-6.2 Astra",
+    "Mythos",
+    "Claude",
+    "GPT-Synopsys"
+  ],
+  "yorum_tr": "Bu gelişme, AI'nın donanım mühendisliğine entegrasyonunun olgunlaştığını ve tasarım döngülerini kısaltarak maliyet etkin çözümler sunabileceğini gösteriyor. Geliştiriciler ve çip üreticileri, AI destekli araçları benimseyerek rekabet avantajı elde edebilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GPT-6.2 Astra",
+      "benchmark": "PPA improvement on AMD flagship GPU IP",
+      "skor": 14,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "5 ay içinde",
+      "kaynak_metinden_alinti": "OpenAI says its models delivered up to 14 percent PPA improvement on AMD's flagship GPU IP in less than five months."
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/07/openai_red_Logo.png",
+  "url": "https://the-decoder.com/openai-says-its-models-delivered-a-years-worth-of-chip-optimization-on-top-of-amds-own-engineering/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-18T18:00:33.000Z",
+  "slug": "openai-says-its-models-delivered-a-year-s-worth-of-chip-opti"
+}

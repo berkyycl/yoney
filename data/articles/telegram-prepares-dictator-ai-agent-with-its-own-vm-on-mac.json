@@ -1,0 +1,36 @@
+{
+  "baslik_tr": "Telegram, macOS için kendi VM'li 'Dictator' AI ajanını hazırlıyor",
+  "ozet_tr": "Telegram, macOS beta sürümlerinde uzun süredir geliştirdiği 'Dictator' adlı AI ajanını yakında kullanıma sunmayı planlıyor. Hermes Agent altyapısı üzerine kurulu olan bu ajan, farklı büyük dil modelleri ve eklentileri destekleyerek, kullanıcıların mesajlarını okuyup yanıtlamasını ve Mac üzerinde görevler yürütmesini sağlayacak.",
+  "detayli_icerik_tr": "Telegram, kendi AI ajanı \"Dictator\"ı için macOS beta sürümlerinde bir ajan harness'ı geliştirdiğini X kullanıcısı SenditHighor üzerinden duyurdu. Bu harness, Nous Research tarafından geliştirilen Hermes Agent üzerine inşa edilmiş ve bir Linux sanal makinesi (VM) içinde izole bir ortamda çalışıyor; böylece kişisel dosyalar kullanıcıların erişiminden korunuyor. \n\nDictator, ChatGPT, Claude, OpenRouter ve yerel modeller gibi çeşitli LLM'leri destekleyecek ve Claude Code, Xcode, Notion, Linear gibi popüler araçlar için eklentiler sunacak. Kullanıcılar, Telegram içinde ajan için \"İzin Ver\", \"Sor\" ya da \"Asla\" seçenekleriyle hangi eylemlerin yapılabileceğini belirleyebilecek; gizli sohbetler ve oturum kodları ise kesinlikle erişilemez kalacak. \n\nYeni bir dikte modu da tanıtıldı: Kullanıcılar Option tuşunu basılı tutarak herhangi bir uygulamada konuşabilir, AI ise metni otomatik olarak düzelterek imleç konumuna yerleştiriyor. Beta sürümlerinde, çağrı notları, çeviri, metin düzenleme ve araştırma gibi şablonlarla önceden yapılandırılmış ajanlar bulunuyor; ayrıca özel talimatlarla kişiselleştirilebilen boş bir şablon da mevcut. \n\nTelegram, botlar, mini uygulamalar ve Stars ödeme sistemi gibi özelliklerle mesajlaşma platformunu zenginleştirmişti. Dictator gibi bir AI asistanının entegrasyonu, bir milyardan fazla kullanıcıya sohbetlerinin içinde doğrudan bir kişisel asistan sunarak, rekabetçi AI ekosisteminde önemli bir adım olarak görülüyor.",
+  "onemli_maddeler": [
+    "Dictator, Hermes Agent altyapısı üzerinde çalışan izole bir Linux VM içinde çalışıyor.",
+    "ChatGPT, Claude, OpenRouter ve yerel modeller dahil olmak üzere çoklu LLM desteği sunuyor.",
+    "Claude Code, Xcode, Notion ve Linear gibi araçlar için eklentiler mevcut.",
+    "Dikte modu sayesinde Option tuşu ile konuşarak metin otomatik olarak düzeltilip yerleştirilebiliyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Telegram'ın milyarlarca kullanıcıya sahip platformunda AI ajanının entegrasyonu, mesajlaşma deneyimini genişleterek rekabetçi AI asistan pazarında önemli bir konum kazandırıyor.",
+  "etiketler": [
+    "Telegram",
+    "AI ajanı",
+    "Dictator",
+    "Hermes",
+    "macOS"
+  ],
+  "anilan_modeller": [
+    "ChatGPT",
+    "Claude",
+    "OpenRouter",
+    "yerel modeller"
+  ],
+  "yorum_tr": "Dictator, Telegram kullanıcılarının günlük iş akışlarını mesajlaşma üzerinden otomatikleştirmesine olanak tanıyarak geliştiricilere yeni entegrasyon fırsatları sunacak ve son kullanıcılar için daha akıcı bir deneyim sağlayacak.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/11/Screenshot-2026-11-18-at-14.37.01.png",
+  "url": "https://www.testingcatalog.com/telegram-prepares-dictator-ai-agent-with-its-own-vm-on-mac/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-18T14:06:31.000Z",
+  "slug": "telegram-prepares-dictator-ai-agent-with-its-own-vm-on-mac"
+}

@@ -1,0 +1,99 @@
+{
+  "baslik_tr": "DaisyRose-27B: Post-Training Verimliliğinde Yeni Bir Sınır",
+  "ozet_tr": "RadixArk, Qwen3.8-27B temelli ilk modeli DaisyRose-27B'yi duyurdu. Model, sadece 1.200 özel görevle 18 gün içinde 144 H200 GPU’da eğitilerek Terminal‑Bench 4.1'de pass@1 oranını %5.6'dan %12.0'a yükseltti.",
+  "detayli_icerik_tr": "RadixArk, 27 milyar parametreli Qwen3.8-27B mimarisini temel alarak geliştirdiği DaisyRose-27B modelini 18 gün süren bir eğitim sürecinde tamamladı. Model, Miles adlı açık kaynaklı pekiştirmeli öğrenme çerçevesiyle, uzun‑horizontlu ajan görevlerinde 1 milyon tokena kadar oturumlar yürüterek sadece 1.200 özenle seçilmiş görev üzerinden eğitildi. Eğitim, 144 NVIDIA H200 GPU ve asenkron bir altyapı sayesinde 57% daha az GPU süresi harcayarak gerçekleştirildi.\n\nModel, Terminal‑Bench 4.1 testinde pass@1 başarısını %5.6'dan %12.0'a çıkararak en büyük sıçramayı gösterdi; aynı zamanda Terminal‑Bench 2.1, DeepSWE v1.1, SWE Bench Pro v2, HLE (text‑only), IFBench ve GPQA Diamond gibi çeşitli akıl yürütme, talimat takibi ve kodlama benchmark'larında da orijinal Qwen3.8-27B'yi geride bıraktı. Skorlar, BF16 ve FP8 çalıştırmalarının en yüksek değerleri alınarak raporlandı ve iki format arasındaki fark bir puanın altında kaldı.\n\nEğitim sürecinin başarısının üç temel bileşeni vurgulandı: yüksek kaliteli, hataya odaklı görev seti; verimli ve asenkron bir eğitim altyapısı; ve %99,95 başarı oranına ulaşan sağlam bir sandbox hizmeti. Sandbox ortamı, her deneme için izole bir ortam sağlayarak ajanların komut çalıştırması, dosya düzenlemesi ve otomatik değerlendirme yapmasını mümkün kıldı. Bu hizmet, bulut sağlayıcılarına kıyasla %80 daha düşük maliyetle 944.000'den fazla sandbox çalıştırdı.\n\nDaisyRose-27B, SGLang ve DSpark spekülatif dekodlama ile sunulması öneriliyor; Hugging Face üzerinden Apache 2.0 lisansı altında BF16, FP8 ve NVFP4 formatlarında indirilebilir. Kullanıcılar, OpenAI uyumlu Python istemcisiyle modeli sorgulayabilir ve modelin hem akıl yürütme (reasoning_content) hem de nihai yanıt (content) çıktısını ayrı ayrı alabilir. RadixArk, topluluk geri bildirimlerini ve farklı görevlerdeki performans sonuçlarını modelin Community sekmesinde paylaşmayı davet ediyor.",
+  "onemli_maddeler": [
+    "DaisyRose-27B, Terminal‑Bench 4.1'de pass@1 oranını %5.6'dan %12.0'a yükseltti.",
+    "Eğitim, 144 H200 GPU’da 57% daha az GPU süresi harcayarak tamamlandı.",
+    "Sandbox hizmeti %99,95 başarı oranı ve bulut maliyetine göre %80 tasarruf sağladı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Model, büyük bir açık kaynak LLM'nin verimlilik ve performansını önemli ölçüde artırarak hem araştırma topluluğunu hem de endüstriyel uygulamaları etkileyebilecek bir adım sunuyor.",
+  "etiketler": [
+    "post-training",
+    "reinforcement learning",
+    "Terminal-Bench",
+    "AI benchmarking",
+    "open-source"
+  ],
+  "anilan_modeller": [
+    "Qwen3.8-27B",
+    "DaisyRose-27B",
+    "Qwen3.6-35B-A3B",
+    "GLM-5.3-Flash"
+  ],
+  "yorum_tr": "DaisyRose-27B, düşük maliyetli uzun‑horizontlu ajan eğitimi için yeni bir referans noktası oluşturuyor; geliştiriciler daha az kaynak harcayarak benzer performans artışları elde edebilir, kullanıcılar ise daha tutarlı ve akıl yürütme yeteneği yüksek modellerden faydalanacak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "DaisyRose-27B",
+      "benchmark": "Terminal Bench 4.1",
+      "skor": 12,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "pass@1",
+      "kaynak_metinden_alinti": "DaisyRose-27B improves Terminal-Bench 4.1 pass@1 from 5.6% to 12.0%."
+    },
+    {
+      "model": "DaisyRose-27B",
+      "benchmark": "Terminal Bench 2.1",
+      "skor": 75.5,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "pass@1",
+      "kaynak_metinden_alinti": "Terminal Bench 2.1 73.0 75.5"
+    },
+    {
+      "model": "DaisyRose-27B",
+      "benchmark": "DeepSWE v1.1",
+      "skor": 46.2,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "pass@1",
+      "kaynak_metinden_alinti": "DeepSWE v1.1 42.2 46.2"
+    },
+    {
+      "model": "DaisyRose-27B",
+      "benchmark": "SWE Bench Pro v2",
+      "skor": 94.7,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "pass@1",
+      "kaynak_metinden_alinti": "SWE Bench Pro v2 91.3 94.7"
+    },
+    {
+      "model": "DaisyRose-27B",
+      "benchmark": "HLE (text-only)",
+      "skor": 34.3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "HLE (text-only) 33.9 34.3"
+    },
+    {
+      "model": "DaisyRose-27B",
+      "benchmark": "IFBench",
+      "skor": 82.4,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "IFBench 79.5 82.4"
+    },
+    {
+      "model": "DaisyRose-27B",
+      "benchmark": "GPQA Diamond",
+      "skor": 90.7,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "GPQA Diamond 89.2 90.7"
+    }
+  ],
+  "gorsel_url": "https://cdn-uploads.huggingface.co/production/uploads/6aeabf9f2efd990530425e58/faP4Su889q_DIgN3wmU9M.png",
+  "url": "https://huggingface.co/blog/RadixArk/daisyrose-27b-pushing-the-frontier-of-post-trainin",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-11-18T19:54:56.000Z",
+  "slug": "daisyrose-27b-pushing-the-frontier-of-post-training-efficien"
+}

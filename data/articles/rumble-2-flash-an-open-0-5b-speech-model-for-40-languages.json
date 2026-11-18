@@ -1,0 +1,68 @@
+{
+  "baslik_tr": "Rumble-2-Flash: 0.5B parametreli, 40+ dili destekleyen açık kaynak konuşma modeli",
+  "ozet_tr": "Hugging Face, 0.5 milyar parametreli Rumble-2-Flash modelini Apache 2.0 lisansı altında açık kaynak olarak sundu. Model, 40'tan fazla dili otomatik algılayarak, sadece bir saatlik ses kaydını yarım saniyede işleyebiliyor ve büyük modellerin 3‑60 katı boyutunda benzer doğruluk sağlıyor.",
+  "detayli_icerik_tr": "Rumble-2-Flash, Qwen3-ASR mimarisini temel alarak geliştirildi ve Transformer ile vLLM çerçevelerinde ek bir kod gerektirmeden çalışabiliyor. Model, on‑policy distilasyon yöntemiyle daha büyük Rumble-2 modelinden öğrenerek, öğretmenin her token için sağladığı olasılıkları öğrenci modele aktarıyor; bu süreç, GOLD adlı token birleştirme tekniği sayesinde farklı tokenizasyon sistemlerini de uyumlu hale getiriyor.\n\nModelin performansı, Open ASR Leaderboard çokdilli izinde ortalama %6.96 hata oranı (WER) elde ederek, 15 kat daha büyük Meta omniASR‑LLM 7B ve Whisper large‑v3 gibi modelleri geride bırakıyor. İngilizce izinde ise %6.6 WER kaydedildi. Hız açısından ise tam dolu batch'lerde 7.000'in üzerinde RTFx (gerçek zaman faktörü) ulaştırarak bir saatlik ses kaydını yaklaşık 0.5 saniyede işleyebiliyor.\n\nGerçek telefon görüşmelerinde, AppTek'in 302 saatlik çağrı‑merkezi veri setinde %7.86 WER ile NVIDIA'nın 30 milyar parametreli Nemotron 3.5 Transcribe modelinin %7.78 WER'ine eşdeğer bir performans sergiliyor. Bu sonuç, aynı model ailesinden Qwen3‑ASR 0.6B (%8.7) ve Qwen3‑ASR 1.7B (%7.4) modelleriyle karşılaştırıldığında da rekabetçi bir konumda olduğunu gösteriyor.\n\nModel, Hugging Face Hub üzerinden \"Reson8/Rumble-2-Flash\" adıyla indirilebilir ve aynı zamanda API üzerinden de erişilebilir. Geliştiriciler, 🤗 Transformers kütüphanesiyle sadece birkaç satır kod yazarak modeli ses dosyalarına uygulayabilir, dil tespiti, sayı biçimi kontrolü ve zorunlu dil gibi özellikleri kullanabilir. Açık kaynak doğası, araştırmacıların ve ürün ekiplerinin düşük maliyetli, yüksek performanslı çokdilli konuşma tanıma çözümleri geliştirmesine olanak tanıyor.",
+  "onemli_maddeler": [
+    "0.5B parametreyle 40+ dili destekleyerek büyük modellerin 3‑60 katı boyutunda benzer doğruluk ve hız sunuyor.",
+    "On‑policy distilasyon ve GOLD token birleştirme tekniği sayesinde öğretmen‑öğrenci token uyumsuzlukları aşılmıştır.",
+    "Open ASR Leaderboard çokdilli izinde %6.96 hata oranı, İngilizce izinde %6.6 WER ve çağrı‑merkezi benchmarkunda %7.86 WER elde edildi.",
+    "Tam dolu batch'lerde 7.000+ RTFx hızına ulaşarak bir saatlik ses kaydını yarım saniyede işleyebiliyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Model, sadece 0.5 milyar parametreyle çokdilli konuşma tanıma görevinde büyük modellerin performansına yaklaşarak, açık kaynak lisansı ve Transformer/vLLM entegrasyonu sayesinde geniş geliştirici topluluğu ve üretim ortamları için kritik bir adım oluşturuyor.",
+  "etiketler": [
+    "speech recognition",
+    "open source",
+    "multilingual",
+    "distillation",
+    "AI models"
+  ],
+  "anilan_modeller": [
+    "Rumble-2-Flash",
+    "Rumble-2",
+    "Qwen3-ASR",
+    "Meta omniASR-LLM 7B",
+    "Whisper large-v3",
+    "NVIDIA Nemotron 3.5 Transcribe (30B)",
+    "Qwen3-ASR 0.6B",
+    "Qwen3-ASR 1.7B"
+  ],
+  "yorum_tr": "Rumble-2-Flash, düşük kaynak gereksinimiyle yüksek doğruluk ve hız sunarak özellikle sınırlı donanım ortamlarında ve çokdilli uygulamalarda geliştiricilerin işini kolaylaştırıyor. Açık kaynak lisansı, topluluk katkılarını ve hızlı adaptasyonu teşvik ederek konuşma tanıma ekosisteminde yeni bir rekabet seviyesi yaratabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Rumble-2-Flash",
+      "benchmark": "Open ASR Leaderboard multilingual track",
+      "skor": 6.96,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "On the Open ASR Leaderboard multilingual track, Rumble-2-Flash averages a 6.96% error rate across Chinese, German, French, Italian, Spanish, Portuguese, Hindi, Dutch and English."
+    },
+    {
+      "model": "Rumble-2-Flash",
+      "benchmark": "Open ASR Leaderboard English track",
+      "skor": 6.6,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "On the English track it averages 6.6% WER."
+    },
+    {
+      "model": "Rumble-2-Flash",
+      "benchmark": "AppTek call-centre benchmark (302 hours)",
+      "skor": 7.86,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "On AppTek's call-centre benchmark (302 hours of helpline calls...), Rumble-2-Flash reaches 7.86% WER, on par with NVIDIA's Nemotron 3.5 Transcribe (30B) at 7.78%."
+    }
+  ],
+  "gorsel_url": "https://huggingface.co/blog/assets/rumble-2-flash/thumbnail.png",
+  "url": "https://huggingface.co/blog/rumble-2-flash",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-11-18T00:00:00.000Z",
+  "slug": "rumble-2-flash-an-open-0-5b-speech-model-for-40-languages"
+}

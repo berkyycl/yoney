@@ -1,0 +1,36 @@
+{
+  "baslik_tr": "Google Labs'tan Stitch Loop: Tam Döngü Otomatik AI Ürün Ajanı",
+  "ozet_tr": "Google, Stitch platformunu genişleterek Stitch Loop adlı otonom AI ajanını tanıttı. Bu yeni deney, ürün keşfinden canlı izlemeye, kod düzeltmelerinden güvenlik taramalarına kadar tüm yaşam döngüsünü otomatikleştiriyor ve ekiplerin sadece hedef belirleyip sonuçları onaylamasını sağlıyor.",
+  "detayli_icerik_tr": "Google Labs, Stitch'i uzun vadeli, otonom bir ürün ajanına dönüştüren Stitch Loop'u duyurdu. Stitch, tasarım ve prototipleme aşamasında ekiplere yardımcı olurken, Loop ürün canlıya alındıktan sonra da sürekli iyileştirme, izleme ve güvenlik kontrolleri yaparak tam bir yaşam döngüsü yönetimi sunuyor. Bekleme listesi küresel olarak açıldı; Google AI Ultra aboneleri öncelikli erişim elde ediyor ve çözüm, hızlı teslimat yapan ancak lansman sonrası iş yüküyle başa çıkmakta zorlanan küçük ekipleri hedefliyor.\n\nKullanıcılar GitHub, log dosyaları, kullanıcı davranışı ve geri bildirim gibi ürün bağlamını 180'den fazla entegrasyon, özel MCP sunucuları ya da CLI üzerinden bağlayabiliyor. Her bir \"loop\" kanıt temelli öneriler sunuyor, çözüm önerilerini izole bir bulut sandbox'ında test ediyor, ardından bir GitHub pull request'i oluşturuyor. PR, bir insan tarafından incelenip onaylanana kadar otomatik birleştirme gerçekleşmiyor, bu sayede kontrol tamamen kullanıcıda kalıyor.\n\nLoop'un içinde güvenlik, gecikme ve WCAG erişilebilirliği gibi önceden tanımlı döngüler bulunuyor; bu döngüler Gemini 4 Carbon ve CodeMender ile çalışarak kod tabanını sürekli tarıyor, güvenlik açıklarını kanıtlarla işaretliyor ve düzeltme önerileriyle PR'lar açıyor. Takımlar ayrıca checkout dönüşüm oranı gibi özel hedefler için kendi döngülerini oluşturabiliyor. Google Antigravity gibi kodlama ajanları da Stitch CLI ve MCP aracılığıyla ürün bağlamını çekerek ek işlevsellik sağlıyor. Slack entegrasyonu sayesinde günlük içgörü özetleri otomatik olarak bir @stitch botu tarafından dağıtılıyor.\n\nTest sürecinde yazar, Loop'un TestingCatalog.com sitesinde tema iyileştirmeleri, erişilebilirlik ve uyumluluk önerileri sunduğunu belirtiyor. Başlangıçta Gemini 3.8 Flash üzerinde çalışan sistem, şimdi Gemini 4 Carbon ile güçlendirilmiş. Bu yükseltme, modelin önceki seriye göre daha iyi bağlam anlama ve öneri kalitesi sunduğunu gösteriyor. Loop, bir AI yöneticisi gibi davranarak diğer ajanları yönetiyor; kullanıcıların rolü hedef tanımlamak, sonuçları gözden geçirmek ve karar vermekle sınırlı kalıyor, bu da ekiplerin daha yüksek seviyede delegasyon yapmasına olanak tanıyor.",
+  "onemli_maddeler": [
+    "Stitch Loop, ürün keşfinden canlı izlemeye kadar tam bir yaşam döngüsü otomasyonu sağlıyor.",
+    "Gemini 4 Carbon ve CodeMender entegrasyonu sayesinde güvenlik taramaları ve otomatik düzeltme PR'ları oluşturuluyor.",
+    "180'den fazla entegrasyon ve özelleştirilebilir döngülerle ekipler hedef odaklı iyileştirmeler yapabiliyor.",
+    "Kullanıcı sadece hedef belirliyor, AI ajanı önerileri test ediyor ve PR'ları onaylatıyor; nihai karar her zaman insanda kalıyor.",
+    "Beta bekleme listesi global olarak açık; Google AI Ultra abonelerine öncelik tanınıyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Stitch Loop, ürün geliştirme ve operasyon süreçlerini tamamen otomatikleştiren yeni bir AI ajanı sunarak geliştiricilerin ve ürün ekiplerinin iş akışını kökten değiştirme potansiyeline sahip, bu da sektördeki verimlilik ve güvenlik standartlarını yükseltebilir.",
+  "etiketler": [
+    "Google AI",
+    "Stitch Loop",
+    "Gemini 4 Carbon",
+    "Otomatik AI Ajanı",
+    "Yazılım Geliştirme"
+  ],
+  "anilan_modeller": [
+    "Gemini 4 Carbon",
+    "CodeMender",
+    "Google Antigravity"
+  ],
+  "yorum_tr": "Stitch Loop, AI destekli ürün yönetiminde yeni bir delegasyon katmanı tanıtarak geliştiricilerin rutin bakım ve güvenlik görevlerini otomatikleştiriyor; bu da ekiplerin inovasyona daha fazla odaklanmasını sağlayacak.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/11/Loops-Stitch-Loop-11-18-2026_06_40_PM.jpg",
+  "url": "https://www.testingcatalog.com/early-look-at-loop-new-autonomous-ai-agent-from-google/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-18T17:46:36.000Z",
+  "slug": "early-look-at-loop-new-autonomous-ai-agent-from-google"
+}

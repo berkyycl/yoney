@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "OpenAI Codex Sandbox: Geliştiriciler ve Kurumsal Kullanıcılar İçin Derinlemesine Güvenlik Katmanı",
+  "ozet_tr": "OpenAI, Codex ajanının komut çalıştırma yetkisini sınırlamak ve veri sızıntısını önlemek amacıyla yeni bir sandbox mekanizması tanıttı. Kullanıcılar, dosya sistemi ve ağ erişimini izin profilleriyle özelleştirerek, modelin mevcut ortamda güvenli bir şekilde çalışmasını sağlayabiliyor.",
+  "detayli_icerik_tr": "OpenAI, Codex ajanının en sık yaptığı ve potansiyel risk taşıyan işlemlerden biri olan yerel komut çalıştırmalarını kontrol altına almak için \"Codex sandbox\" adlı bir güvenlik katmanı geliştirdi. Sandbox, bir programın çalışırken neye erişebileceğini sınırlandırarak, dosya sistemi ve ağ erişimini kullanıcıların belirlediği izin profilleri çerçevesinde yönetiyor. Örneğin, bir fotoğraf düzenleme görevinde sadece `~/Pictures` klasörüne okuma‑yazma izni verilirken, ağ erişimi tamamen engellenebiliyor.\n\nSandbox'un varsayılan ayarları, bir Git deposunu çalışma alanı kökü olarak alıp `:workspace` profili üzerinden dosya sistemi izinlerini tanımlıyor. Bu profil, `.git` ve `.codex` gibi kritik dizinleri salt okunur tutarken, çalışma alanı içinde serbest yazma izni sağlıyor. Ağ erişimi ise varsayılan olarak kapalı; bu, dış servislere veri sızdırma riskini azaltıyor ancak bağımlılık indirme gibi işlemler için ek izin gerektiriyor. OpenAI, bu sınırlamaların hâlâ kötü niyetli kod enjeksiyonuna yol açabileceğini kabul ederek, savunma‑derinliği yaklaşımını vurguluyor.\n\nKodun sandbox mekanizması, sanal makineler ya da konteynerler yerine işletim sisteminin yerel sandbox özelliklerini kullanıyor. Bu sayede geliştiriciler, kendi laptoplarında kurdukları özelleşmiş geliştirme ortamını yeniden oluşturmak zorunda kalmıyor. macOS, Windows ve Linux için ortak bir API sunan harness, komut ve izin profilini alarak süreci başlatıyor; alt süreçler de aynı kısıtlamaları miras alıyor. Böylece, örneğin iOS uygulama geliştirme gibi platform‑spesifik araçların host ortamında çalışması mümkün oluyor.\n\nKullanıcılar ve işletmeler, `config.toml` dosyasında tanımlı adlandırılmış izin profilleriyle sandbox ayarlarını yönetebiliyor. Profil, dosya yolları için `read`, `write` ya da `deny` gibi erişim seviyeleri tanımlarken, ağ erişimi ya tamamen kapatılabilir, tam erişim verilebilir ya da bir proxy üzerinden sınırlanabilir. OpenAI ayrıca katmanlı yapılandırma ve yönetilen gereksinimler (ör. `requirements.toml`) sayesinde, kurumların kullanıcıların izin profillerini kısıtlamasına ve merkezi politika uygulamasına olanak tanıyor. `codex sandbox` komutu ise bu altyapıyı bağımsız bir CLI aracı olarak sunarak, geliştiricilerin kendi araçlarında aynı güvenlik modelini yeniden kullanmasını sağlıyor.",
+  "onemli_maddeler": [
+    "Varsayılan `:workspace` izin profili, çalışma alanı içinde serbest yazma, kritik dizinleri salt‑okunur tutma ve ağ erişimini kapatma politikasıyla denge sağlıyor.",
+    "İzin profilleri `config.toml` üzerinden tanımlanıp, dosya ve ağ erişim seviyeleri `read`, `write`, `deny` ve proxy kurallarıyla özelleştirilebiliyor.",
+    "Sandbox, OS‑spesifik yerel mekanizmaları kullanarak, Docker gibi ayrı ortamlar gerektirmeden host ortamında güvenli komut çalıştırmayı mümkün kılıyor.",
+    "Katmanlı yapılandırma ve `requirements.toml` gibi yönetilen gereksinimler, kurumsal düzeyde politika uygulaması ve kullanıcı izinlerinin denetlenmesini sağlıyor.",
+    "`codex sandbox` CLI komutu, geliştiricilerin kendi araç ve script'lerinde aynı güvenlik çerçevesini kolayca entegre etmelerine imkan tanıyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Codex'in komut çalıştırma yetkisinin güvenli bir şekilde sınırlandırılması, hem bireysel geliştiriciler hem de kurumsal müşteriler için veri güvenliği ve operasyonel riskleri azaltarak AI‑destekli kodlama araçlarının benimsenmesini hızlandıracak kritik bir adım.",
+  "etiketler": [
+    "Codex",
+    "sandbox",
+    "güvenlik",
+    "OpenAI",
+    "geliştirici araçları"
+  ],
+  "anilan_modeller": [
+    "Codex"
+  ],
+  "yorum_tr": "Bu sandbox çözümü, AI ajanlarının yerel sistemlerde çalıştırdığı komutların kontrolünü artırarak, güvenlik endişelerini büyük ölçüde azaltıyor; geliştiriciler daha özgürce Codex'i entegre ederken, işletmeler de politika uyumluluğunu koruyabilecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://images.ctfassets.net/kftzwdyauwt9/1PnylD7lJwgUw7jYNP8wLh/7fa5553001136f3982e8d4db44146de3/inside-the-codex-sandbox-social.png?w=1600&h=900&fit=fill",
+  "url": "https://openai.com/index/inside-the-codex-sandbox",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-11-18T08:00:00.000Z",
+  "slug": "inside-the-codex-sandbox"
+}

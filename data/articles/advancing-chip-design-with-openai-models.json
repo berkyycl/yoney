@@ -1,0 +1,54 @@
+{
+  "baslik_tr": "OpenAI modelleri çip tasarımında %15'lik alan tasarrufu ve RISC‑V çekirdeklerinde yeni performans rekorları elde etti",
+  "ozet_tr": "OpenAI, GPT‑4o ve yeni nesil GPT‑6.2 Astra modelleriyle kendi özel çipleri Jalapeño ve AMD'nin GPU/CPU tasarımlarında önemli PPA iyileştirmeleri sağladı. Aynı zamanda açık kaynak RISC‑V çekirdeklerinde tasarım ve optimizasyon görevlerinde ortalama %0.7‑%0.75 skor elde ederek model yeteneklerini sayısal olarak kanıtladı.",
+  "detayli_icerik_tr": "OpenAI, 2025'in başlarında GPT‑4o'yu kullanarak kendi özel inference çipi Jalapeño'nun vektör ve matris birimlerinde %15'e varan hücre alanı tasarrufu ve gecikme iyileştirmeleri elde etti. Vektör biriminde floating‑point toplama ve çarpma birimleri, dönüşüm fonksiyonları ve özel fonksiyon birimi yeniden düzenlenerek standart hücre alanı %13, matris biriminde ise %10 azaldı; bu değişiklikler silisyum seviyesinde doğrulandı.\n\nAMD ile ortaklıkta, OpenAI modelleri SystemVerilog RTL kodunu yeniden yazarak flagman GPU IP'sinde %14'e varan PPA artışı sağladı. Modelin önerileri, beş ay içinde beş ayda bir yıl sürecek bir geliştirme sürecini beş ayda tamamlayarak üretim dosyalarına eklendi ve AMD'nin gelecek nesil CPU tasarımlarında tek haneli yüzde bazlı iyileştirmeler elde edildi.\n\nRISC‑V çekirdekleri üzerinde yapılan testlerde, GPT‑6.2 Astra modeli 112 000 tokenlık bütçeyle PicoRV32 ve OpenTitan (Ibex) çekirdeklerinde ortalama skorları sırasıyla 0.7 ve 0.75 olarak kaydetti. Bu skorlar, aynı bütçedeki diğer modellerden iki kat daha yüksek performans anlamına geliyor ve modelin RTL seviyesinde uzman mikro-mimari kararları alabileceğini gösteriyor.\n\nGelecek planları arasında, Synopsys ile ortaklaşa geliştirilen GPT‑Synopsys modeli sayesinde EDA araçlarıyla doğrudan entegrasyon sağlanması ve daha karmaşık işlemci mimarilerinin keşfi yer alıyor. OpenAI, bu yaklaşımın çip tasarım sürecini hızlandırarak hem kendi hem de üçüncü taraf donanım üreticileri için maliyet ve zaman tasarrufu getireceğini vurguluyor.",
+  "onemli_maddeler": [
+    "GPT‑4o ile Jalapeño çipinin vektör ve matris birimlerinde %13‑%15 hücre alanı tasarrufu sağlandı.",
+    "AMD iş birliğinde model, GPU IP'sinde %14 PPA iyileştirmesi ve CPU tasarımlarında tek haneli yüzde artışları elde etti.",
+    "GPT‑6.2 Astra, açık kaynak RISC‑V çekirdeklerinde tasarım ve optimizasyon görevlerinde 0.7‑0.75 ortalama skorla liderlik etti."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Model yeteneklerinin çip tasarımında somut PPA iyileştirmeleri ve sayısal benchmark sonuçlarıyla gösterilmesi, AI donanım geliştirme süreçlerini dönüştürme potansiyeli taşıdığı için yüksek öneme sahiptir.",
+  "etiketler": [
+    "AI chip design",
+    "OpenAI",
+    "GPT-6",
+    "RISC-V",
+    "EDA"
+  ],
+  "anilan_modeller": [
+    "GPT‑4o",
+    "GPT‑6.2 Astra",
+    "GPT‑6.1 Sol",
+    "GPT‑5.6 Sol"
+  ],
+  "yorum_tr": "Bu gelişme, AI modellerinin çip tasarımındaki uzmanlık seviyesini kanıtlayarak donanım mühendislerinin tasarım döngülerini kısaltmasını ve maliyetleri düşürmesini mümkün kılıyor; aynı zamanda EDA araçlarıyla entegrasyon, sektörde yeni bir iş akışı standardı oluşturabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GPT‑6.2 Astra",
+      "benchmark": "PicoRV32 specification design",
+      "skor": 0.7,
+      "birim": "score",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "112,000 tokens",
+      "kaynak_metinden_alinti": "Starting from a PicoRV32 specification, GPT‑6.2 Astra passes a mean score of 0.7 near 112,000 tokens and scores higher at the next two observed budgets."
+    },
+    {
+      "model": "GPT‑6.2 Astra",
+      "benchmark": "Ibex specification design",
+      "skor": 0.75,
+      "birim": "score",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "112,000 tokens",
+      "kaynak_metinden_alinti": "On Ibex, GPT‑6.2 Astra averages about 0.75 near 112,000 tokens when designing from a specification."
+    }
+  ],
+  "gorsel_url": "https://images.ctfassets.net/kftzwdyauwt9/658zg0FHAg7zuL73DTFCfC/fff21fd18c260ce64a10a14ee8d4e851/advancing-chip-design-social.png?w=1600&h=900&fit=fill",
+  "url": "https://openai.com/index/advancing-chip-design-with-our-models",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-11-18T00:00:00.000Z",
+  "slug": "advancing-chip-design-with-openai-models"
+}

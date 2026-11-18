@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "Claude, iki açık kara delik problemini çözdü",
+  "ozet_tr": "Anthropic'in Claude yapay zekâsı, kara delik fiziğinde iki yıllardır çözülemeyen sorunu tamamlayarak kuantum yerçekimi araştırmalarına yeni bir ışık tuttu. İlk olarak Hawking‑Page faz geçişinin belirsiz uzayda da keskin bir geçiş olduğunu kanıtladı, ikinci olarak ise iki‑boyutlu bir evrende en hafif kara deliğin ağırlığına dair üst sınırı kesin olarak belirledi.",
+  "detayli_icerik_tr": "Modern fiziğin iki temel çerçevesi olan genel görelilik ve kuantum mekaniği, kara deliklerin hem büyük ölçekli hem de çok küçük ölçekli etkileri nedeniyle bir arada inceleniyor. Anthropic araştırmacısı Hongbin Chen, Claude'u bu alandaki açık problemleri taraması için görevlendirdi ve modelin birden fazla kopyasını paralel ajanlar olarak çalıştırdı. Altı hafta süren bu süreçte, Claude hem Hawking‑Page faz geçişinin belirsiz uzayda da ani bir değişim olduğunu gösteren hesaplamayı tamamladı hem de iki‑boyutlu bir evrende \"bootstrap\" yöntemiyle en hafif kara deliğin ağırlığına dair teorik bir tavanı kesin olarak ortaya koydu.\n\nİlk problem, anti‑de Sitter (AdS) uzayında sıcaklık yükseldiğinde bir gazın aniden kara deliğe dönüşmesiyle ilgiliydi. 1983'te Hawking ve Page, bu geçişin keskin bir faz değişimi olduğunu, ancak yalnızca klasik uzay ölçeğinde geçerli olduğunu göstermişti. Claude, zayıf bağlanma (weak coupling) bölgesinde, yani uzayın şeklinin bulanıklaştığı alanda, aynı keskin geçişin hâlâ var olduğunu, binlerce terimi içeren üç döngülü (three‑loop) hesaplamayı tamamlayarak kanıtladı. Bu, kara delik oluşumunun sadece görelilikten kaynaklanmadığını, kuantum teorisinin de temel bir özelliği olduğunu gösteriyor.\n\nİkinci problem ise iki‑boyutlu bir uzayda \"modüler bootstrap\" yöntemiyle en hafif kara deliğin kütlesine dair bir üst sınırın belirlenmesiydi. 2009'dan beri fizikçiler bu sınırı sayısal olarak daraltmaya çalışıyor, ancak kesin bir kanıt elde edemiyordu. Claude, sayısal sonuçlarda gözden kaçan bir desen fark ederek, yüksek boyutlu küre paketleme problemlerinden alınan bir yöntemi bu bağlama uyarladı ve sınırı daha da düşürmenin imkânsız olduğunu kanıtladı. Sonuç, Lean kanıt denetleyicisiyle doğrulandı ve Claude tarafından hazırlanan makale, bir fizikçi tarafından incelendi.\n\nHer iki bulgu da doğrudan gözlemlenebilir bir uygulama sunmasa da, kuantum yerçekimi teorilerinin sınırlarını çizen önemli adımlar olarak görülüyor. Claude'un bu başarıları, yapay zekânın karmaşık teorik hesaplamaları insan araştırmacılarla iş birliği içinde hızlandırabileceğini ve yeni fiziksel içgörüler elde etmede bir araç olarak konumunu güçlendirdi.",
+  "onemli_maddeler": [
+    "Claude, 20+ yıllık bir açık problemi çözerek Hawking‑Page faz geçişinin belirsiz uzayda da keskin olduğunu kanıtladı.",
+    "İki‑boyutlu evrende en hafif kara deliğin ağırlığına dair teorik üst sınırı kesin olarak belirledi ve daha düşük bir sınırın mümkün olmadığını gösterdi.",
+    "Çözüm, paralel Claude ajanları ve Lean kanıt denetleyicisiyle doğrulanan bir süreçle elde edildi, yapay zekâ‑insan iş birliğinin gücünü ortaya koydu."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "Kara delik fiziği ve kuantum yerçekimi alanındaki uzun süredir çözülemeyen problemleri yapay zekâ sayesinde çözmesi, teorik fizik topluluğu için metodolojik bir dönüm noktası ve yapay zekânın bilimsel araştırmadaki rolünü yeniden tanımlıyor.",
+  "etiketler": [
+    "kara delik",
+    "kuantum yerçekimi",
+    "Claude",
+    "holografik dualite",
+    "teorik fizik"
+  ],
+  "anilan_modeller": [
+    "Claude"
+  ],
+  "yorum_tr": "Bu gelişme, yapay zekânın karmaşık teorik hesaplamaları hızlandırarak bilimsel keşif sürecine entegrasyonunun bir örneği olarak sektörde yeni araştırma metodolojileri geliştirilmesine öncülük edebilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://assets.claude.com/57a443b51d13727573b7c1290130d09c5f434b2c.jpg",
+  "url": "https://www.anthropic.com/research/claude-black-hole-physics",
+  "source": "Anthropic Research",
+  "sourceTier": "resmi",
+  "date": "2026-11-17T00:00:00.000Z",
+  "slug": "claude-solves-two-open-problems-in-the-physics-of-black-hole"
+}

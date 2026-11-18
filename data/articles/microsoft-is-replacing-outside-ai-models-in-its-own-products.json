@@ -1,0 +1,79 @@
+{
+  "baslik_tr": "Microsoft, dış AI modellerini kendi daha ucuz iç modelleriyle değiştiriyor",
+  "ozet_tr": "Microsoft, Ignite konferansında yedi yeni özel modelini tanıttı ve bu modelleri OpenAI ve Anthropic gibi dış sağlayıcıların yerine sunarak her zaman açık AI ajanları için maliyetleri düşürmeyi hedefliyor. MAI Code 2, MAI Cyber 2 Flash ve MAI Image 2.7 gibi modeller, performans açısından rakiplerine %90'ın üzerinde oranlar sunarken fiyatları yüzdeler seviyesinde kalıyor.",
+  "detayli_icerik_tr": "Microsoft AI (MAI) ekibi, Ignite etkinliğinde kod, güvenlik, görüntü düzenleme, ses ve karar verme alanlarında yedi yeni model duyurdu. Bu modeller, özellikle sürekli çalışan AI ajanları için token harcamalarını azaltmak amacıyla tasarlandı ve OpenAI ile Anthropic'in mevcut çözümlerine fiyat‑performans açısından alternatif oluşturuyor.\n\nKodlama modeli MAI Code 2, dört iç benchmarkta (DeepSWE 1.1, Terminal Bench 2.1, SWE‑Atlas, FrontierCode v1.1) GPT‑6.1 Sol'un %98 performansını %40 maliyetle sunuyor. Claude Opus 5.5 karşısında ise %96 performans elde ederken maliyet sadece %5 seviyesinde. İnsan değerlendirmelerinde ise çıktıları %64 oranında tercih ediliyor. Model, GitHub Copilot ve Microsoft 365 içinde kullanılacak ve token başına $0.50 (giriş) – $2.50 (çıkış) gibi promosyonel fiyatlarla sunulacak.\n\nGüvenlik modeli MAI Cyber 2 Flash, CyberGym‑E2E zafiyet testinde %92.3 görev çözerek GPT‑6 Astra'nın %91.5 performansını aşarken, aynı işi %2'nin altında bir maliyetle gerçekleştiriyor. WebExploitBench'te de %40.4 başarı puanı elde ederek rakiplerinden bir adım önde. Bu model, Microsoft'un MDASH güvenlik platformunda taramaların %40'ını halledecek ve seçili müşterilere özel olarak sunulacak.\n\nGörüntü düzenleme modeli MAI Image 2.7, Artificial Analysis'ın görüntü‑düzenleme liderlik tablosunda 1.215 Elo puanla birinci sırada yer alıyor ve GPT‑Image 2.6 Sunburst'tan beş kat daha düşük maliyetle aynı kaliteyi sağlıyor. Model, Bing Image Creator ve çeşitli tasarım araçlarıyla entegrasyon içinde kullanılacak. Ses modeli MAI Realtime 1 ise gerçek‑zamanlı konuşma‑konuşma yeteneğiyle OpenAI Realtime API ile uyumlu, Big Bench Audio testinde en yüksek puanı alıyor ve ses dakikası başına 1 ¢ ücretlendirme ile sunuluyor.\n\nMicrosoft ayrıca Decision 1.1 adlı karar verme modelini Google Gemma tabanlı bir MoE mimarisiyle tanıttı; Decision Index v2.1'de 68 puan alarak rakiplerini geride bıraktı ve görüntü, metin ve iş akışı kararlarını daha hızlı ve ucuz bir şekilde işliyor. Tüm bu modeller, Azure üzerinden özelleştirilebilir lisanslı ağırlıklar ve fine‑tuning seçenekleriyle kurumsal müşterilere sunulacak, veri ve özelleştirmeler müşteride kalacak şekilde tasarlandı.",
+  "onemli_maddeler": [
+    "MAI Code 2, GPT‑6.1 Sol performansının %98'ini %40 maliyetle sunuyor ve Claude Opus 5.5'e göre %96 performansla %5 maliyet sağlıyor.",
+    "MAI Cyber 2 Flash, CyberGym‑E2E testinde %92.3 başarı oranı yakalarken maliyeti GPT‑6 Astra'nın %2'si seviyesinde.",
+    "MAI Image 2.7, Artificial Analysis görüntü‑düzenleme liderlik tablosunda 1.215 Elo puanla birinci, maliyeti ise GPT‑Image 2.6'nın beşte biri.",
+    "Decision 1.1, Decision Index v2.1'de 68 puan alarak en yüksek doğruluk ve hız performansını gösterdi.",
+    "MAI Realtime 1, ses‑ses dönüşümde Big Bench Audio'da en yüksek puanı alarak OpenAI Realtime API ile uyumlu bir alternatif sunuyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Microsoft'un yeni MAI modelleri, büyük dil modellerine maliyet açısından güçlü bir alternatif sunarak Azure ekosisteminde entegrasyonu derinleştiriyor ve kurumsal AI kullanımının ölçeklenebilirliğini artırıyor.",
+  "etiketler": [
+    "Microsoft",
+    "AI",
+    "Model",
+    "Azure",
+    "Maliyet"
+  ],
+  "anilan_modeller": [
+    "MAI Code 2",
+    "MAI Code 2 Flash",
+    "MAI Cyber 2 Flash",
+    "MAI Image 2.7",
+    "MAI Image 2.7 Flash",
+    "MAI Realtime 1",
+    "Decision 1.1",
+    "Microsoft-Retriever-1",
+    "MAI Licensed Weights"
+  ],
+  "yorum_tr": "Bu modeller, Microsoft'un dış sağlayıcılara bağımlılığını azaltarak fiyat‑performans dengesini iyileştiriyor ve kurumsal müşterilere veri gizliliğiyle birlikte özelleştirilebilir AI çözümleri sunuyor. Uzun vadede, sektörde rekabeti artırarak daha fazla şirketin kendi AI altyapılarını inşa etmesine yön verebilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "MAI Code 2",
+      "benchmark": "Four internal benchmarks (DeepSWE 1.1, Terminal Bench 2.1, SWE-Atlas, FrontierCode v1.1)",
+      "skor": 98,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "four benchmarks",
+      "kaynak_metinden_alinti": "MAI Code 2 averages 98 percent of GPT-6.1 Sol's performance across four benchmarks at 40 percent of the cost."
+    },
+    {
+      "model": "MAI Code 2",
+      "benchmark": "Claude Opus 5.5 performance comparison",
+      "skor": 96,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "relative performance",
+      "kaynak_metinden_alinti": "Against Claude Opus 5.5, it reaches 96 percent of the performance at 5 percent of the cost."
+    },
+    {
+      "model": "MAI Cyber 2 Flash",
+      "benchmark": "CyberGym-E2E vulnerability benchmark",
+      "skor": 92.3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "vulnerability tasks",
+      "kaynak_metinden_alinti": "MAI Cyber 2 Flash solves 92.3 percent of the tasks in the CyberGym-E2E vulnerability benchmark, Microsoft says."
+    },
+    {
+      "model": "Decision 1.1",
+      "benchmark": "Decision Index v2.1",
+      "skor": 68,
+      "birim": "points",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "On the Decision Index v2.1 from Artificial Analysis, Decision 1.1 scores 68 points."
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/06/microsoft_logo_red_pink.png",
+  "url": "https://the-decoder.com/microsoft-is-replacing-outside-ai-models-in-its-own-products-with-cheaper-in-house-alternatives/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-18T18:47:36.000Z",
+  "slug": "microsoft-is-replacing-outside-ai-models-in-its-own-products"
+}

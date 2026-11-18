@@ -1,0 +1,65 @@
+{
+  "baslik_tr": "Fine-tuning Süre Tahmini: FLOP Hesaplarından Çok Daha Doğru Bir Model",
+  "ozet_tr": "Hugging Face'in Dharma‑AI ekibi, 272 gerçek fine‑tuning çalışmasından elde ettiği verilerle, geleneksel FLOP tabanlı tahminlerin çok geride kaldığını gösterdi. KatBoost tabanlı bir regresyon modeli, işin bitiş süresini %98 R² ve ortalama 1,71 saat hata ile öngörebiliyor. Bu bulgu, paylaşımlı GPU kümelerinde planlamayı tahmin yerine veri‑güdümlü bir yaklaşımla yapma imkanı sunuyor.",
+  "detayli_icerik_tr": "GPU'lar, günümüz AI araştırmalarının en pahalı ve kıt kaynakları arasında. Ortak bir kümede hangi işin hangi GPU'ya ne zaman atanacağı, işin süresine dair doğru bir tahmine dayanıyor. Geleneksel yöntem, model parametresi sayısı (P) ve işlenecek token sayısı (D) üzerinden FLOP hesabı yapıp, GPU'nun peak performansını (FLOPS_peak) ve tahmini bir Model FLOPs Utilization (MFU) oranını (genellikle %30‑%60) kullanarak bir süre tahmini üretmek. Ancak gerçek dünyada bellek trafiği, iletişim gecikmeleri ve kernel verimsizlikleri nedeniyle MFU değeri önceden bilinmiyor ve işin çevresel hazırlık, değerlendirme, checkpoint ve veri transferi gibi ek yükleri bu basit formüle yansımıyor.\n\nDharma‑AI, bu sorunu çözmek için işin konfigürasyonundan elde edilebilecek tüm ön‑gönderim bilgilerini içeren bir özellik vektörü oluşturdu ve süreci denetimli bir regresyon problemi olarak ele aldı. 272 üretim ortamı SFT çalışması (toplam 7.382 GPU‑saat) üzerinden, CatBoost, XGBoost, Ridge ve Linear Regression gibi modelleri denedi. Özellik seçimi, korelasyon filtreleme, mutual information ve permutation importance gibi yöntemlerle 24 kritik özellik belirledi; bunlar arasında değerlendirme veri sayısı, checkpoint sayısı, model parametresi sayısı ve GPU‑başına token hacmi öne çıktı.\n\nSonuçlar, FLOP tabanlı tahminin R²=0.31 ve ortalama 12,41 saat hata (MAE) verdiğini gösterirken, CatBoost modeli R²=0.98 ve MAE=1,71 saat (medyan hata 0,51 saat) ile çok daha yüksek bir doğruluk sağladı. XGBoost da benzer performans gösterdi (R²=0.97, MAE=1,95 saat). Model, sadece iş gönderilmeden önce bilinen konfigürasyon verileriyle çalıştığı için, planlama aşamasında doğrudan kullanılabilir. Ancak modelin geçerliliği sadece NVIDIA H200 GPU'ları ve SFT işlerine özgü; RLHF, DPO gibi diğer eğitim stratejileri ve farklı GPU nesilleri için yeniden eğitilmesi gerekiyor.\n\nBu tahmin aracının pratik faydası, iş kuyruğu yöneticilerinin GPU'ları daha verimli doldurabilmesi, işlerin çakışma riskini azaltması ve teslim tarihlerini daha güvenilir bir şekilde planlayabilmesidir. Gelecek çalışmalar, donanım‑spesifik özellikler, çoklu GPU tipleri ve uzun süren işlerin veri eksikliği gibi sınırlamaları aşmayı hedefliyor.",
+  "onemli_maddeler": [
+    "FLOP tabanlı süre tahmini, gerçek sürenin %30‑%60'ını açıklamaktan uzaktır (R²=0.31, MAE=12.41 h).",
+    "CatBoost regresörü, önceden bilinen konfigürasyon özellikleriyle %98 R² ve ortalama 1.71 h hata elde etti.",
+    "Değerlendirme veri miktarı ve checkpoint sayısı, tahmin doğruluğunda FLOP ve model parametresi sayısından daha etkili.",
+    "Model sadece NVIDIA H200 GPU'ları ve SFT işlerine göre kalibre edildi; diğer donanım ve eğitim tipleri için yeniden eğitilmesi gerekiyor."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "Fine-tuning süresinin daha doğru tahmin edilmesi, büyük ölçekli GPU kümelerinin verimliliğini artırarak maliyetleri düşürür ve AI projelerinin zaman çizelgelerini güvenilir kılar; bu da hem araştırma hem de üretim ortamları için kritik bir iyileştirmedir.",
+  "etiketler": [
+    "fine-tuning",
+    "GPU scheduling",
+    "performans tahmini",
+    "CatBoost",
+    "Hugging Face"
+  ],
+  "anilan_modeller": [
+    "CatBoost",
+    "XGBoost",
+    "Linear Regression",
+    "Ridge",
+    "Calculon"
+  ],
+  "yorum_tr": "Bu çalışma, GPU kaynak yönetiminde veri‑güdümlü yaklaşımların hâlâ deneysel aşamada olmadığını, aksine pratik planlama problemlerine doğrudan uygulanabilir olduğunu gösteriyor. Geniş veri setleri ve donanım çeşitliliği eklendikçe, benzer tahmin modelleri endüstri standartı haline gelebilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "FLOP baseline (MFU 30%)",
+      "benchmark": "MAE",
+      "skor": 12.41,
+      "birim": "h",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "FLOP baseline (MFU 30%) 0.31 20.45 12.41"
+    },
+    {
+      "model": "CatBoost",
+      "benchmark": "MAE",
+      "skor": 1.71,
+      "birim": "h",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "5-fold cross-validation",
+      "kaynak_metinden_alinti": "CatBoost 0.98 ± 0.01 3.52 ± 0.78 1.71 ± 0.33"
+    },
+    {
+      "model": "XGBoost",
+      "benchmark": "MAE",
+      "skor": 1.95,
+      "birim": "h",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "5-fold cross-validation",
+      "kaynak_metinden_alinti": "XGBoost 0.97 ± 0.01 4.18 ± 1.17 1.95 ± 0.32"
+    }
+  ],
+  "gorsel_url": "https://cdn-uploads.huggingface.co/production/uploads/6a725daa5ca641a21ab61956/J6DIf4Len_31Tj-CQlQXY.png",
+  "url": "https://huggingface.co/blog/Dharma-AI/predicting-fine-tuning-time",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-11-18T18:53:43.000Z",
+  "slug": "why-your-fine-tuning-job-takes-longer-than-the-flops-say"
+}

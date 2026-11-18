@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "IBM ve Confluent, CPU’da Çalışan Zaman Serisi Temelli Model Ailesiyle Gerçek Zamanlı Karar Desteği Sunuyor",
+  "ozet_tr": "IBM ve Confluent, 50 milyondan fazla indirilen dört modelden oluşan zaman serisi temelli temel modelleri (Granite) Confluent platformuna entegre etti. Bu modeller, Apache Flink üzerinden SQL ile gerçek‑zamanlı tahmin, anomali tespiti ve semantik zeka sağlayarak karar süreçlerini veri akışı içinde hızlandırıyor. CPU‑tabanlı çalışmaları sayesinde bulut, on‑prem ve Confluent Cloud ortamlarında ek GPU altyapısına ihtiyaç duymadan kullanılabiliyor.",
+  "detayli_icerik_tr": "IBM ve Confluent, zaman serisi temelli temel modelleri (Granite Time‑Series Foundation Models) Confluent Data Streaming Platformu içinde yerel fonksiyonlar olarak sunuyor. Modeller, Apache Flink ile entegrasyon sağlayarak veri akışı sırasında SQL sorguları aracılığıyla tahmin, anomali tespiti ve semantik çıkarım yapabiliyor; sonuçlar ise anlık olarak uygulamalara ve operatörlere iletiliyor. Bu sayede üretim hatlarından perakende satışlara, bankacılıktan havacılığa kadar geniş bir yelpazedeki sektörlerde kararların zaman kaybı olmadan alınması mümkün hale geliyor.\n\nModellerin en büyük avantajı, GPU gerektirmeyen CPU‑optimizasyonu ve bulut ya da on‑prem ortamlarında tamamen yönetilen bir hizmet olarak sunulması. Confluent Cloud’da hiçbir kurulum gerekmiyor; on‑prem ortamda ise Confluent Platform for Apache Flink üzerinden kurum içi altyapıya entegre edilebiliyor. Bu yapı, özellikle düşük gecikmeli ve maliyet duyarlı senaryolarda GPU altyapısına bağımlılığı ortadan kaldırıyor.\n\nIBM’nin sunduğu kullanım senaryoları arasında üretim optimizasyonu, perakende anomali tespiti, tedarik zinciri planlaması, kart dolandırıcılığı önleme, ticaret hacmi tahmini ve zaman serisi benzerlik aramaları yer alıyor. Örneğin, bir dondurma fabrikasında SCADA verileriyle her 10 dakikada bir kalite tahmini yapılırken, anormallik tespit edildiğinde otomatik setpoint ayarlamaları öneriliyor. Benzer şekilde, perakende mağazalarında satış verileri anlık olarak beklenen aralıklarla karşılaştırılıyor ve stok yenileme kararları önceden tetikleniyor.\n\nBu entegrasyon, zaman serisi modellerinin bir “Streamhouse” mimarisinde akış verisiyle birleşerek gerçek‑zamanlı zeka katmanı oluşturmasını sağlıyor. Flink veri akışını zenginleştirirken, Granite modelleri tahmin ve anomali sinyallerini olaylarla birlikte sunuyor; büyük dil modelleri ve diğer makine öğrenimi sistemleri de gerektiğinde bu katmanda iş birliği yapıyor. Sonuç olarak, işletmeler model geliştirme süresini kısaltıyor, tahminleri veri değiştikçe yeniliyor ve sinyalleri karar noktalarına daha yakın bir konumda sunarak operasyonel verimliliği artırıyor.",
+  "onemli_maddeler": [
+    "Granite zaman serisi temelli modeller Confluent Cloud ve on‑prem ortamda CPU‑tabanlı olarak çalışıyor",
+    "Modeller Apache Flink üzerinden SQL ile gerçek‑zamanlı tahmin, anomali tespiti ve semantik zeka sağlıyor",
+    "50 M+ indirme ve dört modelden oluşan aile, üretim, perakende, bankacılık ve havacılık gibi sektörlerde kullanılabiliyor",
+    "Model çıktıları doğrudan operasyonel uygulamalara ve AI ajanlarına yönlendirilebiliyor"
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Zaman serisi temelli temel modellerin gerçek‑zamanlı akış platformuna entegrasyonu, CPU‑optimizasyonu ve bulut/on‑prem esnekliği sayesinde geniş sektörlerde AI‑destekli karar süreçlerini kökten değiştirecek bir adım olarak değerlendiriliyor.",
+  "etiketler": [
+    "time-series",
+    "streaming",
+    "IBM",
+    "Confluent",
+    "Apache Flink"
+  ],
+  "anilan_modeller": [
+    "Granite Time Series Foundation Model",
+    "PatchTST-FM",
+    "TSPulse"
+  ],
+  "yorum_tr": "Bu entegrasyon, zaman serisi analitiğini gerçek‑zamanlı veri akışıyla birleştirerek geliştiricilerin ve işletmelerin model dağıtım maliyetlerini düşürürken karar hızını artırmasını sağlıyor. CPU‑tabanlı çalışması, özellikle GPU kaynaklarının sınırlı olduğu ortamlarda geniş bir benimsenme potansiyeli sunuyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://cdn-uploads.huggingface.co/production/uploads/64e8143f6de557454220921e/yf6E9vJHIkGHG_toGSasb.gif",
+  "url": "https://huggingface.co/blog/ibm-research/time-series-powered-streamhouse",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-11-18T15:00:23.000Z",
+  "slug": "time-series-models-in-the-streamhouse-a-new-frontier-and-use"
+}
