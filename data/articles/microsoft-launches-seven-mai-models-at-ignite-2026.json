@@ -1,0 +1,61 @@
+{
+  "baslik_tr": "Microsoft Ignite 2026'da Yedi Yeni MAI Modelini Tanıttı",
+  "ozet_tr": "Microsoft, Ignite 2026 etkinliğinde kurumsal müşterilere yönelik yedi yeni MAI modelini duyurdu. Yeni modeller, kodlama, güvenlik, görüntü üretimi, ses ve model yönlendirme gibi alanlarda frontier performansı sunarken, maliyetleri çok daha düşük tutmayı hedefliyor.",
+  "detayli_icerik_tr": "Microsoft, Ignite 2026 konferansında MAI (Microsoft AI) ailesine yeni bir soluk getirerek yedi farklı modelin lansmanını yaptı. Bu modeller, kurumsal düzeyde 24/7 çalışan ajanlar için tasarlandı ve yüksek performans‑maliyet oranı sunmayı amaçlıyor. Yeni ürün yelpazesi kodlama, siber güvenlik, görüntü oluşturma, ses işleme ve model yönlendirme gibi kritik iş akışlarını kapsıyor.\n\nKodlama segmentinde MAI Code 2 ve MAI Code 2 Flash öne çıkıyor. Microsoft, Code 2'nin kalite açısından GPT‑6.1 Sol'un %98'ine, fiyat açısından ise %40'ına ulaştığını ve Claude Opus 5.5'in %96'sına %5 fiyatla eşdeğer olduğunu belirtiyor. Code 2 Flash ise rutin düzenlemeler için GPT‑6 Luna'ya %65 fiyatla ve Claude Haiku 5.5'e %20 fiyatla eşdeğer performans sağlıyor. Her iki model de GitHub Copilot içinde kullanılabilir; Flash modeli ayrıca Microsoft Foundry’da sınırlı ön izleme aşamasında.\n\nSiber güvenlik alanında MAI Cyber 2 Flash, CyberGym‑E2E testinde %92.3 başarı puanı elde ederken, aynı testte GPT‑6 Astra %91.5 puan alıyor ve maliyet açısından görev başına %2'nin altında bir harcama sunuyor. Görüntü işleme segmentinde MAI‑Image‑2.7 ve MAI‑Image‑2.7‑Flash, fiyat‑performans cephesinde lider konuma yerleşti; tam model 1.000 görüntü başına $34.82, Flash sürümü ise $10.24 maliyetle sunuluyor. Her iki model de public preview aşamasında Foundry ve çeşitli partner platformlarda (fal, Genspark, OpenRouter, Vercel) erişime açıldı.\n\nSes işleme tarafında MAI Realtime 1, gerçek zamanlı konuşmadan konuşmaya (speech‑to‑speech) modeli olarak dakikada $0.01 fiyatla sunuluyor ve ilgi kaydı MAI Labs üzerinden alınıyor. Ayrıca, Microsoft‑Decision‑1.1 yönlendirme modeli, istekleri yalnızca gerektiğinde daha büyük modellere yönlendirerek maliyet tasarrufu sağlıyor ve Artificial Analysis Decision Index v2.1'de 68 puan alarak önceki sürümün 62 puanından yükseldi. Yeni MAI Licensed Weights hizmeti, işletmelerin frontier MAI modellerini kendi verileriyle özelleştirip Azure içinde çalıştırmalarına imkan tanıyor. Bu lansman, Microsoft AI’nın Copilot, Foundry ve Azure üzerinden düşük maliyetli, yüksek performanslı bir model tedarikçisi olarak konumunu güçlendiriyor.",
+  "onemli_maddeler": [
+    "MAI Code 2, kodlama modeli olarak GPT‑6.1 kalitesinin %98'ine %40 maliyetle ulaşarak Claude Opus 5.5'in %96'sına %5 fiyatla eşdeğer performans sağlıyor.",
+    "MAI Cyber 2 Flash, CyberGym‑E2E testinde %92.3 başarı puanı elde ederek GPT‑6 Astra'dan %2 daha yüksek bir skor ve görev başına %2 altında maliyet sunuyor.",
+    "MAI‑Image‑2.7 ve Flash, görüntü oluşturma ve düzenleme alanında fiyat‑performans cephesinde lider konuma gelerek 1.000 görüntü başına sırasıyla $34.82 ve $10.24 fiyatla sunuluyor.",
+    "MAI Realtime 1, gerçek zamanlı konuşmadan konuşmaya modeli olarak dakikada $0.01 fiyatla hizmet veriyor.",
+    "MAI Licensed Weights sayesinde işletmeler, frontier MAI modellerini Azure içinde kendi verileriyle özelleştirip çalıştırabilecek."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Microsoft'un yeni MAI modelleri, kurumsal AI pazarında yüksek performans‑maliyet oranı sunarak OpenAI ve Anthropic gibi rakiplerle rekabeti derinleştiriyor; aynı zamanda geniş model yelpazesi ve lisanslı ağırlık seçenekleriyle işletmelerin AI entegrasyonunu hızlandırıyor.",
+  "etiketler": [
+    "Microsoft",
+    "MAI",
+    "Ignite2026",
+    "AI",
+    "Model"
+  ],
+  "anilan_modeller": [
+    "MAI Code 2",
+    "MAI Code 2 Flash",
+    "MAI Decision 1",
+    "MAI Cyber 2 Flash",
+    "MAI-Image-2.7",
+    "MAI-Image-2.7-Flash",
+    "MAI Realtime 1",
+    "MAI Transcribe 2",
+    "Microsoft-Decision-1.1"
+  ],
+  "yorum_tr": "Bu model serisi, düşük maliyetli yüksek performans sunarak kurumsal AI benimsenmesini hızlandıracak ve Microsoft'un bulut ekosisteminde rekabet avantajını pekiştirecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "MAI Cyber 2 Flash",
+      "benchmark": "CyberGym-E2E",
+      "skor": 92.3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "MAI Cyber 2 Flash scores 92.3% on CyberGym-E2E against 91.5% for GPT-6 Astra at under 2% of the cost per task"
+    },
+    {
+      "model": "Microsoft-Decision-1.1",
+      "benchmark": "Artificial Analysis Decision Index v2.1",
+      "skor": 68,
+      "birim": "points",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Microsoft-Decision-1.1 scores 68 on the Artificial Analysis Decision Index v2.1, up from 62 for the previous version"
+    }
+  ],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/11/HXWOGsZWsAEnlxQ.png",
+  "url": "https://www.testingcatalog.com/microsoft-launches-seven-mai-models-at-ignite-2026/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-17T19:16:22.000Z",
+  "slug": "microsoft-launches-seven-mai-models-at-ignite-2026"
+}

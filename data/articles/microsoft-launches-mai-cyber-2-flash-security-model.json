@@ -1,0 +1,66 @@
+{
+  "baslik_tr": "Microsoft, MAI Cyber 2 Flash Güvenlik Modelini Tanıttı",
+  "ozet_tr": "Microsoft, Ignite etkinliğinde yeni MAI Cyber 2 Flash modelini duyurdu. Gerçek dünya güvenlik görevlerinde büyük modellere kıyasla çok daha düşük maliyetle yüksek performans sunuyor. Model, güvenlik ekiplerinin 7/24 zafiyet tespiti, düzeltme önerisi ve tehdit araştırması yapmasını hedefliyor.",
+  "detayli_icerik_tr": "Microsoft, Ignite konferansında MAI Cyber 2 Flash adlı yeni bir güvenlik modelini tanıttı. Şirket, modelin gerçek dünya güvenlik görevlerinde daha büyük modellere göre çok daha düşük bir maliyetle lider performans sağladığını belirtiyor. Model, özellikle zafiyet bulma, düzeltme önerme ve tehdit araştırması gibi sürekli AI desteği gerektiren güvenlik iş akışları için tasarlandı.\n\nMAI Cyber 2 Flash, CyberGym‑E2E benchmark'inde %92.3 başarı oranı elde ederek, aynı görevde yarı yarıya daha az hesaplama bütçesi ve görev başına %2'den az maliyetle GPT‑6 Astra'nın %91.5 skorunu geride bıraktı. Microsoft, bu maliyet karşılaştırmasını giriş token başına 0,10 $, önbellek token başına 0,01 $, çıktı başına 0,50 $ olarak hesapladı; GPT‑6 Astra ise Azure OpenAI Global üzerinden sırasıyla 10 $, 1 $ ve 50 $ maliyetle çalışıyor. Aynı bütçede model, GPT‑5.6 Cyber'u da CyberGym‑E2E ve WebExploitBench testlerinde %40.4 ile %38.4'lük bir farkla geride bıraktı.\n\nModel, Microsoft'un uzun yıllara dayanan güvenlik verisi ve uzmanlığını temel alıyor ve bir milyon tokenlık bağlam penceresine sahip; bu, önceki MAI Cyber 1.1 Flash modelinin dört katı büyüklükte. Erken değerlendirmeler, Microsoft Perception aracılığıyla, modelin araştırma ajanı çalışmaları ve güvenlik tespiti oluşturma konularında önde gelen modellerle benzer performans gösterdiğini ortaya koydu. Insight Enterprises, MAI Cyber modellerinin GPT‑5.4, GPT‑5.3 Codex ve GPT‑5.4 Mini'ye kıyasla %20 daha token‑verimli olduğunu raporladı.\n\nMAI Cyber 2 Flash, yalnızca Microsoft güvenlik ürünlerinde, özellikle Codename MDASH içinde kullanılacak. Model, orta Aralık ayında uygun müşteriler için mevcut MAI profilindeki modeli otomatik olarak değiştirecek. Bu adım, Microsoft AI'nin güvenlik odaklı uzman modeller serisinin bir parçası olarak, daha fazla iş yüküne yüksek performans sunarken büyük modellerin maliyetini azaltmayı amaçlıyor.",
+  "onemli_maddeler": [
+    "MAI Cyber 2 Flash, CyberGym‑E2E benchmark'inde %92.3 skorla GPT‑6 Astra'yı yarı yarıya daha düşük maliyetle geride bıraktı.",
+    "Model, bir milyon token bağlam penceresi ve %20 daha token‑verimli performans sunuyor.",
+    "Sadece Microsoft güvenlik ürünlerinde, özellikle Codename MDASH'te kullanılacak ve mevcut modeli Aralık ayında değiştirecek."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Güvenlik odaklı AI modelinin yüksek performansı ve çok düşük maliyeti, sektördeki güvenlik ekiplerinin AI kullanımını genişletmesi ve maliyet yapısını değiştirmesi bakımından büyük etki yaratıyor.",
+  "etiketler": [
+    "cybersecurity",
+    "AI model",
+    "Microsoft",
+    "benchmark",
+    "MAI Cyber 2 Flash"
+  ],
+  "anilan_modeller": [
+    "MAI Cyber 2 Flash",
+    "GPT-6 Astra",
+    "GPT-5.6 Cyber",
+    "GPT-5.4",
+    "GPT-5.3 Codex",
+    "GPT-5.4 Mini",
+    "MAI Cyber 1.1 Flash"
+  ],
+  "yorum_tr": "MAI Cyber 2 Flash'in düşük maliyetli yüksek performansı, güvenlik ekiplerinin AI entegrasyonunu hızlandırarak daha sık ve kapsamlı tehdit analizleri yapmasını sağlayacak. Geliştiriciler, modelin büyük token bağlamı sayesinde daha karmaşık kod tabanlarını inceleyebilecek, kullanıcılar ise güvenlik hizmetlerinde daha uygun fiyatlarla ileri düzey koruma elde edecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "MAI Cyber 2 Flash",
+      "benchmark": "CyberGym-E2E",
+      "skor": 92.3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "half reasoning budget, <2% cost per task",
+      "kaynak_metinden_alinti": "On CyberGym-E2E, a benchmark that measures real-world vulnerability discovery, MAI Cyber 2 Flash scores 92.3% against 91.5% for GPT-6 Astra, using half the reasoning budget and less than 2% of the cost per task."
+    },
+    {
+      "model": "MAI Cyber 2 Flash",
+      "benchmark": "CyberGym-E2E",
+      "skor": 40.4,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "same reasoning budget",
+      "kaynak_metinden_alinti": "At the same reasoning budget, the model also beats GPT-5.6 Cyber on CyberGym-E2E and WebExploitBench, reaching 40.4% against 38.4%."
+    },
+    {
+      "model": "MAI Cyber 2 Flash",
+      "benchmark": "WebExploitBench",
+      "skor": 40.4,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "same reasoning budget",
+      "kaynak_metinden_alinti": "At the same reasoning budget, the model also beats GPT-5.6 Cyber on CyberGym-E2E and WebExploitBench, reaching 40.4% against 38.4%."
+    }
+  ],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/11/banner-14.webp",
+  "url": "https://www.testingcatalog.com/microsoft-launches-mai-cyber-2-flash-security-model/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-17T23:18:35.000Z",
+  "slug": "microsoft-launches-mai-cyber-2-flash-security-model"
+}

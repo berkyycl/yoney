@@ -1,0 +1,84 @@
+{
+  "baslik_tr": "OpenAI, GPT-6.2 Astra ve Sol modellerini daha düşük API fiyatları ve benchmark iyileştirmeleriyle piyasaya sürdü",
+  "ozet_tr": "OpenAI, bilim, hukuk ve finans gibi uzmanlık gerektiren alanlar için GPT-6.2 Astra, günlük görevler için ise GPT-6.2 Sol modellerini tanıttı. Her iki model de önceki sürümlerine göre daha düşük API maliyetleri sunarken, çeşitli benchmarklarda maliyet‑performans oranında öne çıkıyor.",
+  "detayli_icerik_tr": "OpenAI, yeni nesil GPT-6.2 serisinin iki varyantını duyurdu: Astra ve Sol. Astra, bilim, hukuk ve finans gibi karmaşık ve yüksek doğruluk gerektiren profesyonel iş akışları için tasarlanmışken, Sol daha hızlı ve hafif bir yapıyla günlük kullanım senaryolarına odaklanıyor. Her iki model de Plus, Pro, Enterprise ve Edu planları kapsamında ChatGPT Work ve Codex üzerinden erişilebilir hâle getirildi; Pro-500 aboneleri Ultrafast modunu, Pro-200 aboneleri ise ilk kez Sol modeliyle bu modu kullanabilecek.\n\nAPI fiyatlandırması da önemli bir değişiklik gösteriyor. GPT-6.2 Astra, önceki sürümüne kıyasla %20 daha ucuz bir fiyatla $8/1M giriş tokenı, $0.40/1M önbellek tokenı ve $40/1M çıkış tokenı olarak sunuluyor. Sol modeli ise GPT-6.1 Sol ile aynı fiyatları koruyor: giriş tokenı $2/1M, önbellek $0.10/1M ve çıkış $10/1M. Bu fiyat indirimleri, modellerin maliyet‑performans oranını artırarak rekabetçi bir konuma taşıyor.\n\nBenchmark sonuçları, Astra'nın özellikle çok adımlı profesyonel iş akışlarını test eden \"Agents' Last Exam\" ve 3D tasarım \"AA-3D\" gibi ölçütlerde öne çıktığını gösteriyor. AA-3D benchmark'inde Astra 1.318 Elo puanla birinci sırada yer alırken, Claude Fable 5.2 1.271 puan ve Sol 1.259 puan aldı. Ayrıca Artificial Analysis Intelligence Index'te Astra 62 puanla ikinci sırada, Sol ise 57 puanla üçüncü sırada yer alıyor. Astra, Epoch Capabilities Index'te 174 puan alarak Claude Fable 5.2 ile eşleşti ve FrontierMath Erdős benchmark'inde 68 sorudan 7'sini çözdü.\n\nGüvenlik açısından da iyileştirmeler yapıldı. Her iki model, OpenAI'nin Hazırlık Çerçevesi'nde \"Kritik\" seviyesine ulaşarak siber güvenlik testlerinde daha yüksek başarı oranları gösterdi; Astra, ExploitBench testinde %50 başarı oranı elde etti. Bununla birlikte, potansiyel kötüye kullanım riskini azaltmak için daha katı güvenlik önlemleri ve izleme sistemleri (Control Room) devreye alındı. OpenAI, Astra'nın \"Yüksek\" öz‑iyileştirme eşiğine ulaşmasının getirdiği riskleri de kabul ederek, araştırma ortamlarında sıkı denetimler ve otomatik izleme mekanizmaları geliştirdi.",
+  "onemli_maddeler": [
+    "GPT-6.2 Astra, bilim, hukuk ve finans gibi uzmanlık gerektiren alanlarda önceki sürümüne göre %20 daha düşük API maliyetiyle sunuluyor.",
+    "Astra, AA-3D benchmark'inde 1.318 Elo puanla birinci, Artificial Analysis Intelligence Index'te 62 puanla ikinci sırada yer alıyor.",
+    "Sol modeli, günlük görevlerde düşük maliyetli performans sunarken, FrontierCode 2.0 benchmark'inde Astra'ya sadece 0.5 puan farkla yakın performans sergiliyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "GPT-6.2 serisi, OpenAI'nin en yeni ve en güçlü modellerini içeriyor; hem fiyat politikası hem de benchmark sonuçlarıyla sektörde rekabeti yeniden şekillendirecek potansiyele sahip.",
+  "etiketler": [
+    "GPT-6.2",
+    "Astra",
+    "Sol",
+    "API fiyatları",
+    "benchmark"
+  ],
+  "anilan_modeller": [
+    "GPT-6.2 Astra",
+    "GPT-6.2 Sol",
+    "Claude Fable 5.2",
+    "Gemini 4 Carbon",
+    "Claude Opus 5.5",
+    "GPT-6 Astra",
+    "GPT-6.1 Sol"
+  ],
+  "yorum_tr": "Astra ve Sol modellerinin maliyet‑performans avantajları, özellikle büyük ölçekli kurumsal ve akademik projelerde OpenAI'yi tercih eden kullanıcılar için cazip bir seçenek oluşturuyor. Ancak yüksek öz‑iyileştirme yeteneği, güvenlik ve denetim mekanizmalarının daha da güçlendirilmesini zorunlu kılıyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GPT-6.2 Astra",
+      "benchmark": "Artificial Analysis Intelligence Index",
+      "skor": 62,
+      "birim": "points",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "In the Artificial Analysis Intelligence Index, GPT-6.2 Astra finishes second, just behind Anthropic's Claude Fable 5.2. Astra reaches 62 points."
+    },
+    {
+      "model": "GPT-6.2 Sol",
+      "benchmark": "Artificial Analysis Intelligence Index",
+      "skor": 57,
+      "birim": "points",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "GPT-6.2 Sol picks up two points to reach 57, matching GPT-6 Astra's level at only about 15 percent of the cost per task."
+    },
+    {
+      "model": "GPT-6.2 Astra",
+      "benchmark": "Epoch Capabilities Index",
+      "skor": 174,
+      "birim": "points",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Epoch AI tested GPT-6.2 Astra on its own benchmarks before launch. The model scores 174 points in the Epoch Capabilities Index (ECI), tying Anthropic's Fable 5.2."
+    },
+    {
+      "model": "GPT-6.2 Astra",
+      "benchmark": "ExploitBench",
+      "skor": 50,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "On the internal ExploitBench test, models must turn known browser vulnerabilities into working exploits. GPT-6.2 Astra clears a 50 percent success rate, far outpacing its predecessor GPT-6 Astra."
+    },
+    {
+      "model": "GPT-6.2 Astra",
+      "benchmark": "FrontierMath Erdős",
+      "skor": 7,
+      "birim": "tasks",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "On FrontierMath Erdős, a benchmark of unsolved math problems, GPT-6.2 Astra cracked 7 of 68 tasks, each formally verified in the proof assistant Lean."
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/11/openai_vals_sol.png",
+  "url": "https://the-decoder.com/openai-launches-gpt-6-2-astra-and-sol-with-lower-api-prices-and-some-benchmark-gains/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-17T20:30:50.000Z",
+  "slug": "openai-launches-gpt-6-2-astra-and-sol-with-lower-api-prices"
+}
