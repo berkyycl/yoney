@@ -1,0 +1,89 @@
+{
+  "baslik_tr": "Google Gemini 4 Neon Modelinin Tanıtımı ve Performans Detayları",
+  "ozet_tr": "Google, Gemini 4 Neon'u duyurarak 1 milyon token bağlam penceresi, çok modlu veri işleme ve düşük maliyetli kullanım sunan yeni bir LLM'yi piyasaya sürdü. Model, Artificial Analysis Intelligence Index'te 61 puanla üçüncü, Vals Index'te %70.9 ile ikinci ve Agent Arena Index'te 1336 puanla ikinci sırada yer alıyor. Ayrıca güvenlik, kod üretimi ve bilimsel araştırma gibi alanlarda rakiplerinin önünde benchmark sonuçları elde etti.",
+  "detayli_icerik_tr": "Google, Gemini 4 Neon'u 18 Kasım 2026 tarihinde resmi olarak tanıttı. Neon, karmaşık yazılım mühendisliği, bilgi işi ve bilimsel iş akışlarını uçtan uca hızlı bir şekilde tamamlayabilen bir model olarak konumlandırılıyor. 1 milyon token'lık bağlam penceresi sayesinde tablolar, PDF'ler, grafikler, ses ve video gibi çoklu veri türlerini tek bir oturumda işleyebiliyor ve yapılandırılmış çıktılar üretebiliyor.\n\nPerformans açısından Neon, Artificial Analysis Intelligence Index'te 61 puanla üçüncü sırada yer alırken, Vals Index'te %70.9'luk bir başarıyla ikinci, Agent Arena Index'te ise 1336 puanla ikinci sırada bulunuyor. Model, Legal Research Bench ve Tax Agent Bench gibi özel benchmarklarda birincilik elde ederken, Chartography testinde %73.5, Agents' Last Exam v1.1'de %75.8 ve Zapier AutomationBench'te %56.3 gibi yüksek yüzdeler yakaladı. Bilimsel ve matematiksel akıl yürütmede ise Terminal-Bench Science (%70.5), RiemannBench (%84.0) ve HLE‑Diamond (%71.3) gibi testlerde sınıfının en iyisi konumunda.\n\nNeon'un kod üretim yetenekleri de dikkat çekiyor: Artificial Analysis Coding Agent Index'te %58.6 puanla birinci, Terminal‑Bench 4.1'de %65.2, FrontierCode 2.0'de %46.2 ve mini‑SWE harness'te %12.8 gibi sonuçlar elde edildi. Google Antigravity ortamında yapılan testlerde ise %39.0'lık bir performans sergileyerek mevcut büyük modellerin yarı maliyetinde benzer sonuçlar sundu. Siber güvenlikte ise AutoBaxBench'in zor seviyesinde %76, WebExploitBench v1.2'de %51.26 ve SEC‑bench Pro'da %90.5 gibi lider skorlar elde edildi.\n\nFiyatlandırma açısından Neon, giriş token başına 3 $, çıkış token başına 15 $ ücretlendirilirken, önbelleğe alınmış giriş tokenları için %95 indirimle 0.15 $ uygulanıyor. Model, Google AI Studio, Gemini for Business, Google AI Pro ve Ultra abonelikleri ve özel Fairwind programı kapsamında kullanılabilir. Güvenlik ve uyum açısından, Neon Carbon seviyesindeki kötüye kullanım korumalarını korurken, gerçek zamanlı savunma mekanizmaları sayesinde terminal‑bench testlerinde %0.0 hile ve %0.09 uyumsuz eylem oranı gibi düşük değerler gösteriyor.",
+  "onemli_maddeler": [
+    "1 M token bağlam penceresi ve çok modlu veri işleme yeteneğiyle kurumsal ve bilimsel iş akışlarını dönüştürüyor.",
+    "Artificial Analysis Intelligence Index'te 61 puan, Vals Index'te %70.9 ve Agent Arena Index'te 1336 puanla üst sıralarda yer alıyor.",
+    "Kod üretimi, siber güvenlik ve bilimsel benchmarklarda %84'e kadar yüksek skorlar elde ederek rakiplerinin önüne geçiyor.",
+    "Giriş token başına 3 $, çıkış token başına 15 $ fiyatlandırma ve önbellek indirimiyle maliyet etkin bir çözüm sunuyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Google'ın yeni Gemini 4 Neon modeli, geniş bağlam kapasitesi, düşük maliyet ve çok sayıda benchmarkta lider performans sunarak kurumsal, geliştirici ve araştırma toplulukları için büyük bir etki yaratma potansiyeline sahip.",
+  "etiketler": [
+    "Yapay Zeka",
+    "Large Language Model",
+    "Google",
+    "Gemini",
+    "AI Benchmark"
+  ],
+  "anilan_modeller": [
+    "Gemini 4 Carbon",
+    "Gemini 4 Hydrogen"
+  ],
+  "yorum_tr": "Gemini 4 Neon, yüksek bağlam kapasitesi ve maliyet avantajı sayesinde üretkenlik odaklı uygulamalarda yeni bir standart belirleyebilir; geliştiriciler ve işletmeler daha karmaşık görevleri daha düşük fiyatla otomatikleştirecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Gemini 4 Neon",
+      "benchmark": "Artificial Analysis Intelligence Index",
+      "skor": 61,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Neon ranks ahead of comparable models and #3 overall with a score of 61 on the Artificial Analysis Intelligence Index"
+    },
+    {
+      "model": "Gemini 4 Neon",
+      "benchmark": "Vals Index",
+      "skor": 70.9,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "On the Vals Index, Neon ranks #2 and lands on the Pareto frontier."
+    },
+    {
+      "model": "Gemini 4 Neon",
+      "benchmark": "Agent Arena Index",
+      "skor": 1336,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Finally, it debuts #2 globally with a score of 1336 on Arena's new Agent Arena Index"
+    },
+    {
+      "model": "Gemini 4 Neon",
+      "benchmark": "Chartography",
+      "skor": 73.5,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "It scores 73.5% on Chartography for reading dense professional charts"
+    },
+    {
+      "model": "Gemini 4 Neon",
+      "benchmark": "Terminal-Bench Science",
+      "skor": 70.5,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Neon is best in class on Terminal-Bench Science (70.5%)"
+    },
+    {
+      "model": "Gemini 4 Neon",
+      "benchmark": "SEC-bench Pro",
+      "skor": 90.5,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Neon achieves state-of-the-art performance on SEC-bench Pro (90.5%)"
+    }
+  ],
+  "gorsel_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-4-neon__blog-header__sm.width-1300.png",
+  "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+  "source": "Google Gemini",
+  "sourceTier": "resmi",
+  "date": "2026-11-18T21:00:00.000Z",
+  "slug": "introducing-gemini-4-neon-2"
+}

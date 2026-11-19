@@ -1,0 +1,205 @@
+{
+  "baslik_tr": "Google DeepMind, Gemini 4 Neon Modelini Tanıttı: 1 Milyon Token Bağlam, Düşük Maliyet ve Üstün Performans",
+  "ozet_tr": "Google DeepMind, Gemini 4 Neon'u duyurarak 1 milyon token bağlam penceresi, hızlı uçtan uca görev tamamlama ve çok adımlı talimat takibi gibi yeteneklerle, hem maliyet hem de performans açısından sektörde yeni bir çıta koydu. Model, Vals Index'te %70.9 ile ikinci sırada yer alırken, Agent Arena Index'te 1336 puanla küresel ikinci konumda bulunuyor.",
+  "detayli_icerik_tr": "Google DeepMind, 18 Kasım 2026 tarihinde Gemini 4 Neon modelini resmi blog yazısıyla duyurdu. Neon, karmaşık yazılım mühendisliği, bilgi işi ve bilimsel iş akışlarında hızlı ve yüksek doğrulukta sonuçlar üretmek üzere tasarlandı. 1 milyon token'lık bağlam penceresi sayesinde, birden fazla veri kaynağını (spreadsheets, PDF'ler, görseller, ses ve video) tek bir oturumda işleyebiliyor ve yapılandırılmış çıktılar sunabiliyor. Model, $3 milyon giriş tokeni başına ve $15 milyon çıkış tokeni başına fiyatlandırılıyor; önbelleğe alınmış giriş tokenleri için %95 indirimle $0.15 uygulanıyor.\n\nNeon, bağımsız değerlendirmelerde bir dizi benchmark'ta üst sıralarda yer alıyor. Vals Index'te %70.9 ile ikinci, Agent Arena Index'te 1336 puanla ikinci ve Artificial Analysis Intelligence Index'te 61 puanla üçüncü sırada bulunuyor. Legal Research Bench ve Tax Agent Bench gibi alanlarda birinci, Chartography'da %73.5 ve Agents' Last Exam v1.1'de %75.8 gibi yüksek puanlar elde etti. Finans, muhasebe ve karmaşık kısıtlama takibi gibi görevlerde Surge AI platformunda birinci sırada yer alırken, Zapier AutomationBench (%56.3) ve Andon Labs Vending-Bench 2 ($16,843) gibi otomasyon testlerinde de lider konumda.\n\nBilimsel ve matematiksel akıl yürütme alanında da Neon öne çıkıyor: Terminal-Bench Science (%70.5), RiemannBench (%84.0) ve HLE-Diamond (%71.3) gibi testlerde sınıfının en iyisi olarak değerlendirildi. Kodlama ve üretim odaklı görevlerde Artificial Analysis Coding Agent Index (%58.6), Terminal-Bench 4.1 (%65.2) ve FrontierCode 2.0 (%46.2) gibi ölçütlerde güçlü performans sergiledi. Mini‑SWE harness'te %12.8, Google Antigravity ortamında ise %39.0 gibi sonuçlarla, uzun süren ve araç‑ağır iş akışlarında da verimliliği kanıtladı.\n\nSiber güvenlikte Neon, AutoBaxBench'in zor seviyesinde %76 ile en iyi sonuç, WebExploitBench v1.2'de %51.26, SEC‑bench Pro'da %90.5 gibi skorlarla kod güvenliği ve penetrasyon testlerinde de lider. Model, güvenli ve sorumlu kullanım için Carbon seviyesinde kötüye kullanım ve prompt enjeksiyon korumalarıyla birlikte, %0.09 gibi düşük uyumsuz eylem oranı ve %99.2 doğrulukla güvenilirlik vaat ediyor. Bu özellikler, Neon'un üretim ortamlarında hem maliyet hem de risk yönetiminde önemli bir avantaj sunmasını sağlıyor.",
+  "onemli_maddeler": [
+    "1M token bağlam penceresi ve düşük maliyetli (giriş $3M, çıkış $15M) fiyatlandırma modeli.",
+    "Vals Index %70.9, Agent Arena Index 1336 ve AI Index 61 puanla üst sıralarda.",
+    "Bilimsel (Terminal‑Bench Science %70.5) ve kodlama (Artificial Analysis Coding Agent Index %58.6) benchmark'larında sınıfının en iyisi."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Gemini 4 Neon, hem geniş bağlam işleme kapasitesi hem de düşük maliyetli kullanım modeliyle kurumsal AI uygulamalarında yeni bir standart belirliyor; benchmark sonuçları da mevcut en iyi modellerle rekabet edebildiğini gösteriyor.",
+  "etiketler": [
+    "Gemini 4 Neon",
+    "Google DeepMind",
+    "AI Modeli",
+    "Kurumsal AI",
+    "Siber Güvenlik"
+  ],
+  "anilan_modeller": [
+    "Gemini 4 Carbon",
+    "Gemini 4 Hydrogen"
+  ],
+  "yorum_tr": "Neon'un yüksek performansı ve düşük işlem maliyeti, geliştiricilerin ve işletmelerin karmaşık görevleri daha hızlı ve ekonomik bir şekilde otomatikleştirmesine olanak tanıyacak, aynı zamanda güvenlik ve uyumluluk risklerini azaltarak AI entegrasyonunu hızlandıracaktır.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Gemini 4 Neon",
+      "benchmark": "Artificial Analysis Intelligence Index",
+      "skor": 61,
+      "birim": "",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Neon ranks ahead of comparable models and #3 overall with a score of 61 on the Artificial Analysis Intelligence Index"
+    },
+    {
+      "model": "Gemini 4 Neon",
+      "benchmark": "Vals Index",
+      "skor": 70.9,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "On the Vals Index, Neon ranks #2 and lands on the Pareto frontier."
+    },
+    {
+      "model": "Gemini 4 Neon",
+      "benchmark": "Agent Arena Index",
+      "skor": 1336,
+      "birim": "",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Finally, it debuts #2 globally with a score of 1336 on Arena's new Agent Arena Index"
+    },
+    {
+      "model": "Gemini 4 Neon",
+      "benchmark": "Chartography",
+      "skor": 73.5,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "It scores 73.5% on Chartography for reading dense professional charts"
+    },
+    {
+      "model": "Gemini 4 Neon",
+      "benchmark": "Agents' Last Exam v1.1",
+      "skor": 75.8,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "performs on par with leading models on Agents' Last Exam v1.1 (75.8%)"
+    },
+    {
+      "model": "Gemini 4 Neon",
+      "benchmark": "Zapier AutomationBench",
+      "skor": 56.3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "#1 overall on both Zapier’s AutomationBench (56.3%)"
+    },
+    {
+      "model": "Gemini 4 Neon",
+      "benchmark": "Terminal-Bench Science",
+      "skor": 70.5,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Neon is best in class on Terminal-Bench Science (70.5%)"
+    },
+    {
+      "model": "Gemini 4 Neon",
+      "benchmark": "RiemannBench",
+      "skor": 84,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Neon is best in class on RiemannBench (84.0%)"
+    },
+    {
+      "model": "Gemini 4 Neon",
+      "benchmark": "HLE-Diamond",
+      "skor": 71.3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Neon is best in class on HLE-Diamond (71.3%)"
+    },
+    {
+      "model": "Gemini 4 Neon",
+      "benchmark": "Artificial Analysis Coding Agent Index",
+      "skor": 58.6,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "ranking #1 overall on the Artificial Analysis Coding Agent Index (58.6)"
+    },
+    {
+      "model": "Gemini 4 Neon",
+      "benchmark": "Terminal-Bench 4.1",
+      "skor": 65.2,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "score of 65.2% on Terminal-Bench 4.1"
+    },
+    {
+      "model": "Gemini 4 Neon",
+      "benchmark": "FrontierCode 2.0",
+      "skor": 46.2,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "46.2% (at its default high setting) on FrontierCode 2.0"
+    },
+    {
+      "model": "Gemini 4 Neon",
+      "benchmark": "mini-SWE harness",
+      "skor": 12.8,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "leads on the mini-SWE harness (12.8%)"
+    },
+    {
+      "model": "Gemini 4 Neon",
+      "benchmark": "Google Antigravity SWE",
+      "skor": 39,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "more than triples to a state-of-the-art 39.0% in Google Antigravity showing what the Antigravity harness unlocks"
+    },
+    {
+      "model": "Gemini 4 Neon",
+      "benchmark": "AutoBaxBench (hard tier)",
+      "skor": 76,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "state-of-the-art on the hard tier (76%)"
+    },
+    {
+      "model": "Gemini 4 Neon",
+      "benchmark": "WebExploitBench v1.2",
+      "skor": 51.26,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "state-of-the-art (51.26%) at half the cost of competing large models"
+    },
+    {
+      "model": "Gemini 4 Neon",
+      "benchmark": "SEC-bench Pro",
+      "skor": 90.5,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Neon achieves state-of-the-art performance on SEC-bench Pro (90.5%)"
+    },
+    {
+      "model": "Gemini 4 Neon",
+      "benchmark": "CWE-bench v2",
+      "skor": 70.7,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Neon reaches 70.7% on Collinear’s CWE-bench v2"
+    },
+    {
+      "model": "Gemini 4 Neon",
+      "benchmark": "Gray Swan IPI",
+      "skor": 0,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Neon resisted every attack within this Gray Swan benchmark, matching the 0.0% attack success rate"
+    }
+  ],
+  "gorsel_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-4-neon__blog-header__sm.width-1300.png",
+  "url": "https://deepmind.google/blog/introducing-gemini-4-neon/",
+  "source": "Google DeepMind",
+  "sourceTier": "resmi",
+  "date": "2026-11-18T21:35:43.000Z",
+  "slug": "introducing-gemini-4-neon"
+}

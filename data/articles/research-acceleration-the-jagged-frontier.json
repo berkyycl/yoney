@@ -1,0 +1,75 @@
+{
+  "baslik_tr": "OpenAI Araştırma Hızlandırma Raporu: Kodlama Ajanları ve Güvenlik Çalışmalarındaki Artış",
+  "ozet_tr": "OpenAI, bu yıl içinde kodlama ajanlarının araştırma süreçlerine entegrasyonunu ölçen yeni bir rapor yayımladı. Araştırmacı başına günlük harcama ve ajan çalışma günleri on kat artarken, güvenlik ve uyum alanındaki insan çabası da neredeyse ikiye katlandı. Şirket, bu verileri yapay zekâ temelli özyinelemeli iyileştirme (RSI) göstergeleri olarak kamuoyuyla paylaşarak şeffaflık ve yönetişim tartışmalarına katkı sağlamayı amaçlıyor.",
+  "detayli_icerik_tr": "OpenAI, 2026 yılına ait iç ölçümlerle kodlama ajanlarının araştırma organizasyonundaki kullanımını üç ana başlıkta inceledi: girdiler, süreç ve çıktılar. Girdiler kısmında, araştırmacıların günlük ortalama $2.400 harcama yaptığı ve %62 artış gösterdiği, en yüksek %105 artışın ise %90'lık dilimdeki araştırmacılarda gözlemlendiği belirtildi. Bu harcamalar, her sekiz saatlik ajan kullanımını bir \"ajan iş günü\" olarak tanımlayan ölçekte, araştırmacı başına 0,5'ten 5,7'ye yükselen bir artışa işaret ediyor.\n\nAraştırma sürecinde, ajanların bağımsız olarak görev tamamlama oranları da ölçüldü. O*NET AI R&D taksonomisine göre, iletişim (69%) ve analiz (58%) görevlerinde başarı oranı yüksekken, inşa (43%) gibi daha karmaşık görevlerde yüzde 25-29 arasında düşük performans gözlendi. Bu heterojen başarı dağılımı, yüksek verimlilik artışının hâlâ bazı görevlerde darboğaz oluşturabileceğini gösteriyor. Ayrıca, araştırmacıların anket sonuçları, kodlama ajanlarının yokluğunda aynı iş hacmini üç ayda tamamlamak için üç kat daha fazla zaman ve kaynak gerektiğini ortaya koydu.\n\nÇıktı analizinde, 2026 yılı içinde güvenlik ve uyum (Safety & Alignment) çalışmalarına ayrılan zamanın iki katına çıktığı vurgulandı. Bu artış, Temmuz ayında yaşanan Hugging Face güvenlik olayı sonrasındaki organizasyonel yeniden odaklanmanın bir yansıması olarak değerlendirildi. OpenAI, bu verileri, AI laboratuvarlarının özyinelemeli iyileştirme süreçlerini izleme ve raporlama sorumluluğu çerçevesinde paylaşarak, sektörel şeffaflık ve risk yönetimi standartlarını güçlendirmeyi hedefliyor.",
+  "onemli_maddeler": [
+    "Araştırmacı başına günlük kodlama ajanı harcaması $2.400 seviyesine yükseldi; %90'lık dilimde %105 artış.",
+    "Ajan iş günü sayısı araştırmacı başına 0,5'ten 5,7'ye yükselerek on kat artış gösterdi.",
+    "Görev bazlı başarı oranları büyük farklılık gösterdi: iletişim %69, analiz %58, inşa %43; düşük performanslı görevler potansiyel darboğaz.",
+    "Güvenlik & Uyum çalışmalarına ayrılan zaman iki katına çıktı, Hugging Face olayı sonrası odak değişimiyle ilişkilendirildi."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "OpenAI'nin iç ölçümlerle AI araştırma verimliliğini ve insan‑AI etkileşimini şeffaf bir şekilde raporlaması, sektörde benzer ölçüm çerçevelerinin benimsenmesini teşvik ederek politika ve yönetişim tartışmalarını şekillendirebilir.",
+  "etiketler": [
+    "AI araştırma",
+    "kodlama ajanları",
+    "verimlilik",
+    "güvenlik",
+    "RSI"
+  ],
+  "anilan_modeller": [
+    "GPT-5.2",
+    "GPT-6 Astra",
+    "GPT-6.2 Astra",
+    "Codex",
+    "ChatGPT",
+    "o1-preview"
+  ],
+  "yorum_tr": "Rapor, AI araştırma süreçlerinde ajanların artan rolünü nicel verilerle ortaya koyarak, geliştiricilere verimlilik fırsatları ve potansiyel darboğazlar hakkında net bir tablo sunuyor. Kullanıcılar ve laboratuvarlar, bu şeffaflık sayesinde AI‑destekli çalışma modellerini daha bilinçli bir şekilde tasarlayabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Kodlama Ajanları (genel)",
+      "benchmark": "Görev Başarı Oranı – İletişim",
+      "skor": 69,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "estimated success rates without human intervention was higher for Communicate (69%)"
+    },
+    {
+      "model": "Kodlama Ajanları (genel)",
+      "benchmark": "Görev Başarı Oranı – Analiz",
+      "skor": 58,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "estimated success rates without human intervention was higher for ... Analyze (58%)"
+    },
+    {
+      "model": "Kodlama Ajanları (genel)",
+      "benchmark": "Görev Başarı Oranı – İnşa",
+      "skor": 43,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "estimated success rates ... for Build (43%)"
+    },
+    {
+      "model": "Kodlama Ajanları (genel)",
+      "benchmark": "Görev Başarı Oranı – İzleme Çalışmaları",
+      "skor": 79,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "estimated success rates were higher for tasks such as monitoring runs for issues (79%)"
+    }
+  ],
+  "gorsel_url": "https://images.ctfassets.net/kftzwdyauwt9/2YS8yWiGpKflhlEnAkcLU/f51ead4391706f6c3198f0d61a0f147a/research-acceleration-the-jagged-frontier-social.png",
+  "url": "https://openai.com/index/research-acceleration-jagged-frontier",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-11-18T08:00:00.000Z",
+  "slug": "research-acceleration-the-jagged-frontier"
+}

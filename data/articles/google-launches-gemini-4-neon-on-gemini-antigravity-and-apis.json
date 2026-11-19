@@ -1,0 +1,102 @@
+{
+  "baslik_tr": "Google, Gemini, Antigravity ve API'lerde Gemini 4 Neon'u Başlattı",
+  "ozet_tr": "Google, Gemini 4 ailesine yeni bir üye ekleyerek Neon modelini duyurdu. Neon, yazılım mühendisliği, bilgi işi ve bilimsel görevlerde yüksek hız ve ileri düzey akıl yürütme sunarken, farklı Google platformlarında kullanılabilir hâle geldi.",
+  "detayli_icerik_tr": "Google DeepMind, Gemini 4 Neon'u resmi olarak piyasaya sürdü. Neon, Gemini 4 Carbon ve Gemini 4 Hydrogen arasında konumlanıyor; Carbon uzun vadeli, zorlu projeler için tasarlanmışken Hydrogen günlük hızlı görevler için optimize edilmiş. Neon, 1 milyon tokenlık bağlam penceresiyle çalışma, elektronik tablolar, PDF'ler, grafikler, ses ve video gibi çoklu veri tiplerini işleyebilme yeteneğine sahip.\n\nModel, Google AI Studio, Gemini API, Android Studio ve Google Antigravity gibi hizmetlerde erişime açıldı. Ücretlendirme ise girdi token başına 3 $, çıktı token başına 15 $; önbelleğe alınmış girdi tokenları 0.15 $ ve ortalama görev maliyeti Carbon modeline göre %32 daha düşük. Kullanıcılar, dört farklı düşünme seviyesinden istedikleri seviyeyi seçerek zekâ ve token harcamasını dengeleyebiliyor.\n\nGemini 4 Neon, bir dizi bağımsız benchmark testinde öne çıktı. Artificial Analysis Intelligence Index'te 61 puan alarak üçüncü sırada yer alırken, Artificial Analysis Coding Agent Index'te 58.6 puanla birinci oldu. Vals Index'te %70.9 ile ikinci sırada, CursorBench 4.1'de %65.4, Terminal‑Bench 4.1'de %65.2 ve SWE‑sweep içinde %39.0 puan elde etti. Ayrıca Agent Arena Index'te 1,336 puanla ikinci, Text Arena'da ise 1,518 puanla üçüncü oldu.\n\nGüvenlik açısından Neon, Carbon seviyesinde kötüye kullanım ve prompt enjeksiyon korumaları sunuyor ve iç testlerde en düşük sahte bilgi oranını kaydetti. Google, modelin karmaşık ve yüksek frekanslı iş akışları için sınırları zorlayan akıl yürütme yeteneği sağladığını, daha hızlı ve daha düşük maliyetli bir alternatif olduğunu vurguluyor.",
+  "onemli_maddeler": [
+    "Neon, Google AI Studio, API, Android Studio ve Antigravity platformlarında kullanılabilir.",
+    "1 milyon token bağlam penceresi ve çoklu veri türü (PDF, tablo, ses, video) desteği.",
+    "Girdi token başına 3 $, çıktı token başına 15 $ fiyatlandırma; Carbon'a göre %32 daha düşük görev maliyeti.",
+    "Artificial Analysis Intelligence Index'te 61, Vals Index'te %70.9 ve CursorBench 4.1'de %65.4 gibi yüksek benchmark skorları.",
+    "Carbon seviyesinde güvenlik korumaları ve en düşük sahte bilgi oranı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Gemini 4 Neon, Google'ın yapay zeka portföyüne yeni bir üst seviye model ekleyerek hem performans hem de maliyet açısından sektörde önemli bir rekabet avantajı sağlıyor.",
+  "etiketler": [
+    "Gemini 4 Neon",
+    "Google AI",
+    "API",
+    "Benchmark",
+    "Artificial Analysis"
+  ],
+  "anilan_modeller": [
+    "Gemini 4 Neon",
+    "Gemini 4 Carbon",
+    "Gemini 4 Hydrogen",
+    "Claude Opus 5.5",
+    "Claude Fable 5.2"
+  ],
+  "yorum_tr": "Neon'un yüksek performansı ve düşük maliyeti, geliştiricilerin ve kurumsal kullanıcıların karmaşık iş akışlarını daha hızlı ve ekonomik bir şekilde otomatikleştirmesine olanak tanıyacak, rekabeti de hızlandıracak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Gemini 4 Neon",
+      "benchmark": "Artificial Analysis Intelligence Index",
+      "skor": 61,
+      "birim": "",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "xhigh",
+      "kaynak_metinden_alinti": "Google reports a score of 61 on the Artificial Analysis Intelligence Index at xhigh, ranking third behind larger, slower models"
+    },
+    {
+      "model": "Gemini 4 Neon",
+      "benchmark": "Artificial Analysis Coding Agent Index",
+      "skor": 58.6,
+      "birim": "",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "first place on the Artificial Analysis Coding Agent Index at 58.6"
+    },
+    {
+      "model": "Gemini 4 Neon",
+      "benchmark": "Vals Index",
+      "skor": 70.9,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Neon debuts at #2 on the Vals Index (70.9%)"
+    },
+    {
+      "model": "Gemini 4 Neon",
+      "benchmark": "CursorBench 4.1",
+      "skor": 65.4,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Neon scores 65.4% on CursorBench 4.1 against 58.1% for Claude Opus 5.5"
+    },
+    {
+      "model": "Gemini 4 Neon",
+      "benchmark": "Terminal-Bench 4.1",
+      "skor": 65.2,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "plus 65.2% on Terminal-Bench 4.1"
+    },
+    {
+      "model": "Gemini 4 Neon",
+      "benchmark": "SWE-sweep",
+      "skor": 39,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "inside Antigravity",
+      "kaynak_metinden_alinti": "and 39.0% on SWE-sweep inside Antigravity"
+    },
+    {
+      "model": "Gemini 4 Neon",
+      "benchmark": "Agent Arena Index",
+      "skor": 1336,
+      "birim": "points",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Neon debuts second on its new Agent Arena Index with 1,336 points from about 4,200 real-world agent sessions"
+    }
+  ],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/11/Build-Google-AI-Studio-11-18-2026_11_24_PM.jpg",
+  "url": "https://www.testingcatalog.com/google-launches-gemini-4-neon-on-gemini-antigravity-and-apis/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-18T22:33:01.000Z",
+  "slug": "google-launches-gemini-4-neon-on-gemini-antigravity-and-apis"
+}

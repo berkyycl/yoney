@@ -1,0 +1,66 @@
+{
+  "baslik_tr": "Hugging Face, model isteklerini OpenRouter üzerinden fiyat ve hız avantajı sağlayacak şekilde yönlendiriyor",
+  "ozet_tr": "Hugging Face, Inference Providers hizmetinde model isteklerini OpenRouter aracılığıyla otomatik olarak fiyat, hız ve güvenilirliğe göre yönlendirecek yeni bir rota sistemi tanıttı. Geliştiriciler, \":fastest\" ve \":cheapest\" gibi eklerle yönlendirmeyi kontrol edebilecek ve ayrı API anahtarları kullanmadan doğrudan faturalandırma alacak.",
+  "detayli_icerik_tr": "Hugging Face, Inference Providers hizmetine OpenRouter entegrasyonunu ekleyerek model isteklerini fiyat, yanıt süresi ve hizmet sürekliliği gibi kriterlere göre otomatik olarak yönlendiriyor. Sistem, her çağrı için en uygun sağlayıcıyı seçiyor ve bir sağlayıcıda kesinti olduğunda otomatik olarak başka birine geçiyor. Mevcut kod tabanında herhangi bir değişiklik yapmaya gerek kalmadan bu yeni yönlendirme devreye giriyor.\n\nYönlendirme tercihleri, isteğin sonuna \":fastest\" eklenerek en yüksek throughput sağlayıcısına, \":cheapest\" eklenerek ise en düşük maliyetli sağlayıcıya yönlendirme yapılmasını sağlıyor. Ayrıca geliştiriciler doğrudan sağlayıcı adını belirtebilir ve \"X-HF-Session-Id\" başlığıyla oturum bazlı önbellek avantajlarından faydalanabilir. Bu esneklik, uygulamaların performans ve maliyet dengesini dinamik olarak ayarlamasına imkan tanıyor.\n\nFaturalandırma da değişti: Dil modeli sağlayıcıları için ayrı API anahtarları artık gerekli değil; Hugging Face, OpenRouter üzerinden alınan fiyatları %0 markup ile doğrudan müşteriye yansıtıyor. Pro kullanıcıları ve kurumsal ekipler için aylık kredi imkanı bulunuyor. Görsel, video ve ses üretimi gibi diğer hizmetlerde eski anahtar sistemi hâlâ geçerli.\n\nOpenRouter üzerindeki açık ağırlıklı (open-weight) modellerin payı, Ekim 2025'teki %26,8'den Eylül 2026'da %71,7'ye yükseldi; Temmuz ayında kısa bir süre %77,5'e ulaştı. Açık modeller, kapalı modellere kıyasla ortalama %75 daha ucuz ve token başına maliyetleri dörtte bir seviyesinde. En popüler açık model Kimi K3.1 Pro, revize edilmiş Artificial Analysis Intelligence Index'te 46 puan alırken, Claude Fable 5.2 65 puan elde ediyor ancak görev başına maliyeti yaklaşık yedi kat daha yüksek.\n\nYeni yönlendirme sayesinde OpenRouter ölçümlerine göre kapasite hataları %46 azaldı, ilk token süresi %16,9 iyileşti ve throughput %16,3 arttı. Platform, ayda 800 trilyon token işleyerek 10 milyondan fazla kullanıcıya 80'den fazla sağlayıcıdan 600'ün üzerinde modeli sunuyor. Bu gelişmeler, hem geliştiricilerin maliyetlerini düşürürken hem de uygulama performansını artırarak AI ekosistemindeki rekabet dinamiklerini yeniden şekillendirebilir.",
+  "onemli_maddeler": [
+    "Hugging Face, model isteklerini fiyat, hız ve güvenilirliğe göre otomatik yönlendiren OpenRouter entegrasyonunu hayata geçirdi.",
+    "\":fastest\" ve \":cheapest\" gibi eklerle geliştiriciler yönlendirmeyi kontrol edebilecek, ayrı API anahtarları artık gerekli değil.",
+    "OpenRouter üzerindeki açık modellerin token payı %71,7'ye yükseldi; açık modeller kapalı modellere göre ortalama %75 daha ucuz."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Hugging Face'in altyapı ve faturalandırma değişikliği, geniş geliştirici kitlesi için maliyet ve performans optimizasyonu sağladığı için sektörde önemli bir güncelleme niteliği taşıyor.",
+  "etiketler": [
+    "Hugging Face",
+    "OpenRouter",
+    "model yönlendirme",
+    "açık modeller",
+    "AI faturalandırma"
+  ],
+  "anilan_modeller": [
+    "Kimi K3.1 Pro",
+    "Claude Fable 5.2",
+    "Claude Code",
+    "Codex",
+    "OpenCode",
+    "Pi",
+    "Hermes Agent"
+  ],
+  "yorum_tr": "Bu güncelleme, geliştiricilerin hem maliyet hem de performans açısından daha esnek seçimler yapabilmesini sağlayarak AI hizmetlerinin ölçeklenebilirliğini artırıyor; aynı zamanda açık modellerin pazar payının hızla büyümesi, kapalı model sağlayıcıları için rekabet baskısını artırabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "OpenRouter yönlendirme (Hugging Face entegrasyonu)",
+      "benchmark": "Kapasite hataları",
+      "skor": 46,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "azalma",
+      "kaynak_metinden_alinti": "According to OpenRouter's own measurements, capacity errors dropped 46 percent with the new routing."
+    },
+    {
+      "model": "OpenRouter yönlendirme (Hugging Face entegrasyonu)",
+      "benchmark": "Time to First Token",
+      "skor": 16.9,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "azalma",
+      "kaynak_metinden_alinti": "Time to first token improved by 16.9 percent."
+    },
+    {
+      "model": "OpenRouter yönlendirme (Hugging Face entegrasyonu)",
+      "benchmark": "Throughput",
+      "skor": 16.3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "artış",
+      "kaynak_metinden_alinti": "throughput rose by 16.3 percent."
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/11/huggingface-openrouter-01-hero.jpg",
+  "url": "https://the-decoder.com/hugging-face-now-routes-model-requests-through-openrouter-for-the-best-price-or-speed/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-18T14:33:44.000Z",
+  "slug": "hugging-face-now-routes-model-requests-through-openrouter-fo"
+}
