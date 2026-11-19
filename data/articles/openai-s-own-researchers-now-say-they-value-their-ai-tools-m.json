@@ -1,0 +1,36 @@
+{
+  "baslik_tr": "OpenAI araştırmacıları, AI araçlarını meslektaşlarının neredeyse yarısından daha çok değerli bulduklarını söylüyor",
+  "ozet_tr": "OpenAI, iç araştırma raporunda kodlama ajanları ve diğer AI araçlarının kullanımının araştırmacıların maaşlarını aşan bir token maliyetine ulaştığını ortaya koydu. Araçların başarısı rutin görevlerde artarken, karmaşık mühendislik işlerinde hâlâ sınırlı kalıyor.",
+  "detayli_icerik_tr": "OpenAI, iç araştırma hızlandırma raporunda Codex ve Dots gibi kodlama ajanlarının kullanımının hızla arttığını ve Ekim ayında ortalama bir araştırmacının teorik token harcamasının 2.400 dolara, bir ay önceki seviyenin %62 üzerisine çıktığını bildirdi. En üst %10'luk dilimde bu rakam günlük 23.000 dolara kadar çıkıyor ve bu, bir araştırmacının sekiz saatlik çalışma süresine denk gelen 5,7 iş gününü AI ajanlarıyla geçirdiği anlamına geliyor.\n\nAraçların paralel kullanım oranı da yüksek; izlenen araştırmacıların iki üçte biri aynı anda dört ya da daha fazla ajan çalıştırıyor. Bu kullanım, şirketin toplam araştırma hesaplama kapasitesinin sadece %2'sini oluşturuyor ancak maaş maliyetlerinin iki katına eşdeğer bir değer taşıyor. Ancak bu hesaplamalar, çalışanların %70‑%80'ini oluşturan hisse senedi paketlerini içermiyor.\n\nBaşarı oranları ise görev karmaşıklığına göre değişiyor. İki‑dört saatlik görevlerde bağımsız çalışan ajanların başarı oranı %23'ten %46'ya, dört‑sekiz saatlik görevlerde ise %13'ten %35'e yükseldi. Ancak bu oranlar, daha karmaşık mühendislik görevlerinde hâlâ düşük kalıyor; örneğin değerlendirme ortamı oluşturma %29, çıkarım ve servis kodu yazma %25 başarı sağlıyor. Araştırmacılar, üç ay boyunca kodlama ajanlarından mahrum kalmanın ekip personeli %40'ını ya da hesaplama kapasitesinin %30'unu feda etmeye değeceğini belirtiyor.\n\nNiteliksel görüşmeler, AI ajanlarının araştırma kalitesi ve veri bütünlüğü konusunda \"tat\" eksikliği taşıdığını ortaya koydu. Ajanlar gereksiz adımlara sapıyor, hatalı varsayımlarla analiz yapıyor ve düşük kaliteli kod değişiklikleri üretiyor. Bu yüzden insan denetimi hâlâ kritik. GPT‑6 Astra ve GPT‑6.2 Astra gibi yeni modellerin temel fikirleri hâlâ insan araştırmacılar tarafından geliştiriliyor; sadece GPT‑6.2 Astra'nın ön‑eğitim aşamasında bazı araştırmacılar Codex ile diyalog kurarak içgörü elde etmiş. OpenAI, bu verilerin doğrusal olarak genellenemeyebileceği uyarısında bulunurken, AI‑destekli araştırmanın hızını artırma potansiyeline dikkat çekiyor.",
+  "onemli_maddeler": [
+    "Ekim 2026'da ortalama bir araştırmacının AI araçları harcaması 2.400 $'a, en üst %10'luk dilimde 23.000 $'a yükseldi.",
+    "Araçların paralel kullanımı yüksek; iki üçte bir araştırmacı aynı anda dört veya daha fazla ajan çalıştırıyor.",
+    "Bağımsız ajanların başarı oranı iki‑dört saatlik görevlerde %46'ya, dört‑sekiz saatlik görevlerde %35'e çıktı, ancak karmaşık mühendislik işlerinde hâlâ düşük performans gösteriyor.",
+    "Araştırmacılar, üç ay boyunca kodlama ajanlarından mahrum kalmanın ekip personelinin %40'ını ya da hesaplama kapasitesinin %30'unu feda etmeye değeceğini belirtti."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "OpenAI'nin iç raporu, AI araçlarının araştırma süreçlerine entegrasyonunun maliyet ve verimlilik açısından sektördeki dönüşümünü gösteriyor; bu, hem geliştiricileri hem de yöneticileri AI destekli çalışma modelleri üzerine yeniden düşünmeye zorlayacak bir veri seti sunuyor.",
+  "etiketler": [
+    "OpenAI",
+    "AI Araçları",
+    "Kodlama Ajanları",
+    "Araştırma Otomasyonu",
+    "RSI"
+  ],
+  "anilan_modeller": [
+    "Codex",
+    "Dots",
+    "GPT-6 Astra",
+    "GPT-6.2 Astra"
+  ],
+  "yorum_tr": "AI ajanlarının rutin görevlerdeki verimliliği artarken, karmaşık mühendislik işlerinde hâlâ insan denetimine ihtiyaç duyulması, bu araçların bir tamamlayıcı olarak konumlandırılması gerektiğini gösteriyor. Şirketler, maliyet fayda analizlerini yaparken AI kullanımının sınırlarını ve denetim mekanizmalarını netleştirmeli.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/10/openai_logo_numbers.png",
+  "url": "https://the-decoder.com/openais-own-researchers-now-say-they-value-their-ai-tools-more-than-nearly-half-their-colleagues/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-19T13:08:35.000Z",
+  "slug": "openai-s-own-researchers-now-say-they-value-their-ai-tools-m"
+}

@@ -1,0 +1,74 @@
+{
+  "baslik_tr": "Google DeepMind, Gemini 4 Neon modelini tanıttı: Önceki modelden iki kat hızlı, daha ucuz ve daha akıllı",
+  "ozet_tr": "Google DeepMind, sadece haftalar içinde Gemini 4 Carbon'un yerini alacak yeni Gemini 4 Neon modelini duyurdu. Neon, 110 token/sn hızla önceki modelin neredeyse iki katı performans sunarken, token başına fiyatı düşürerek maliyet avantajı sağlıyor. Yapay zeka benchmark'larında da üst sıralara yükselerek OpenAI ve Anthropic'in modellerine yakın sonuçlar elde etti.",
+  "detayli_icerik_tr": "Google DeepMind, son yedi hafta içinde dördüncü modelini, Gemini 4 Neon'u piyasaya sürdü. Neon, bir milyon tokenlık bağlam penceresiyle metin, görsel, ses ve video işleyebiliyor ve Gemini 4 Carbon'dan yaklaşık iki kat daha hızlı, saniyede 110 token üretirken Carbon 57 token/s hızında çalışıyor. Bu hız artışı, benchmark testlerinde işlem süresinin 36 dakikadan 21 dakikaya düşmesine yol açtı.\n\nMaliyet açısından Neon, giriş tokenları için bir milyon token başına 3 $, çıkış tokenları için 15 $ fiyatla listeleniyor; bu, Carbon modelinin 4 $ ve 20 $'lık fiyatlarının %25 altında. Neon'un görev başına ortalama maliyeti xhigh seviyesinde 6,44 $ iken Carbon 7,76 $'a çıkıyor; bu %17 tasarruf, daha düşük liste fiyatından kaynaklanıyor, çünkü Neon görev başına %15 daha fazla çıktı tokenı tüketiyor.\n\nBenchmark sonuçları da Neon'un üstünlüğünü gösteriyor. Artificial Analysis Index'te Neon, xhigh seviyesinde 61 puan alarak Carbon'un 60 puanını geçti ve OpenAI'nin GPT-6.2 Astra ve Anthropic'in Claude Fable 5.2 modellerinin ardından üçüncü sırada yer alıyor. Coding Agent Index'te ise Neon 59 puanla Carbon'un 55 puanını ve Claude Opus 5.5 ile Claude Fable 5.2'nin 58 puanını geride bıraktı; ortalama bir kodlama görevinin maliyeti Neon için 6,86 $, Opus için 12,61 $, Fable için 15,47 $ olarak belirlendi.\n\nGörsel ve güvenlik testlerinde de Neon öne çıkıyor. AA‑Briefcase testinde 1771 Elo puanla en iyi sunum kalitesine sahipken, SEC‑bench Pro ve WebExploitBench v1.2 gibi siber güvenlik benchmark'larında sırasıyla %90,5 ve %51,26 başarı elde etti. Model kartı, Gray‑Swan benchmark'ında dolaylı prompt‑injection saldırılarını %100 engellediğini belirtiyor.",
+  "onemli_maddeler": [
+    "Gemini 4 Neon, 110 token/sn hızıyla Gemini 4 Carbon'dan iki kat daha hızlı.",
+    "Maliyet açısından Neon, token başına %25 daha düşük fiyatla görev başına %17 tasarruf sağlıyor.",
+    "Artificial Analysis Index'te 61 puanla üçüncü sırada yer alarak OpenAI ve Anthropic'in modellerine yakın performans gösterdi."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Google DeepMind'in kısa sürede birden fazla yeni model çıkarması ve Neon'un hem performans hem de maliyet açısından sektördeki rekabeti yeniden şekillendirecek özellikler sunması, AI model pazarını önemli ölçüde etkileyen bir gelişmedir.",
+  "etiketler": [
+    "Gemini 4 Neon",
+    "Google DeepMind",
+    "AI benchmark",
+    "kodlama modeli",
+    "görsel analiz"
+  ],
+  "anilan_modeller": [
+    "Gemini 4 Carbon",
+    "Gemini 4 Hydrogen",
+    "GPT-6.2 Astra",
+    "Claude Fable 5.2",
+    "Claude Opus 5.5",
+    "GPT-6.2 Sol"
+  ],
+  "yorum_tr": "Neon'un daha yüksek hız ve düşük maliyetle sunulması, geliştiricilerin büyük ölçekli uygulamalarda daha verimli çözümler üretmesini mümkün kılacak; aynı zamanda rekabetin artması, diğer sağlayıcıların da fiyat ve performans iyileştirmelerine yönelmesini tetikleyecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Gemini 4 Neon",
+      "benchmark": "Artificial Analysis Index - Intelligence",
+      "skor": 61,
+      "birim": "point",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "xhigh",
+      "kaynak_metinden_alinti": "Neon scores 61 points on the Intelligence Index, edging past Gemini 4 Carbon at 60 points"
+    },
+    {
+      "model": "Gemini 4 Neon",
+      "benchmark": "Coding Agent Index",
+      "skor": 59,
+      "birim": "point",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "xhigh",
+      "kaynak_metinden_alinti": "Neon at xhigh scores 59 points, beating Carbon (55 points) as well as Claude Fable 5.2 and Claude Opus 5.5 (58 points each)"
+    },
+    {
+      "model": "Gemini 4 Neon",
+      "benchmark": "AA‑Briefcase",
+      "skor": 1771,
+      "birim": "Elo",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Neon takes the lead for best presentation quality with 1771 Elo points, ahead of Opus 5.5"
+    },
+    {
+      "model": "Gemini 4 Neon",
+      "benchmark": "SEC‑bench Pro",
+      "skor": 90.5,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Neon delivers top scores on SEC-bench Pro (90.5 percent) at half the price of competing models"
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/11/gemini-4-neon__blog-header__sm.width-1600.format-webp.webp",
+  "url": "https://the-decoder.com/googles-latest-ai-model-is-faster-cheaper-and-smarter-than-its-flagship-predecessor-from-just-weeks-ago/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-19T11:18:18.000Z",
+  "slug": "google-s-latest-ai-model-is-faster-cheaper-and-smarter-than"
+}

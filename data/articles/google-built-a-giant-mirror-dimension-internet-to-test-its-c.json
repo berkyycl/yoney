@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "Google, Chrome AI Asistanlarını Test Etmek İçin Dev Bir ‘Ayna Boyutu’ İnternet Oluşturdu",
+  "ozet_tr": "Google Chrome ekibi, Gemini tabanlı AI tarama asistanlarını gerçek web ortamında güvenli bir şekilde eğitmek için tamamen kontrol ettikleri bir alternatif internet ağı kurdu. Bu \"Ayna Boyutu\" adlı izole ekosistem, gerçek sitelerin işlevselliğini taklit ederken, saldırı senaryoları ve prompt‑injection testleriyle ajanların dayanıklılığını ölçüyor.",
+  "detayli_icerik_tr": "Google, Gemini modelleriyle güçlendirilmiş Chrome AI tarama özelliklerini geliştirirken, ajanların gerçek internette rastgele davranışlar sergilemesinin ve test ortamını fark etmesinin (eval awareness) risklerini fark etti. Bu sorunu aşmak için, ekip \"Mirror Dimension\" adı verilen, tamamen Google'ın kontrolündeki bir alternatif web evreni inşa etti. Bu ortam, sosyal medya, alışveriş siteleri ve banka panelleri gibi gerçek dünyadaki hizmetlerin tüm bileşenlerini ve veri akışlarını taklit ediyor; böylece AI ajanları, gerçek bir tarayıcıda olduğu gibi görevleri tamamlamak zorunda kalıyor.\n\nOrtamın oluşturulması, devasa bir web ve uygulama geliştirme ajanları ordusunun, özel bir AI harness ile yönlendirilmesiyle hızlandırıldı. Bu sayede promosyon kodu girme, sosyal medya gönderisi oluşturma gibi ince detaylar bile gerçekçi bir şekilde simüle edildi. Ayrıca, ajanların Chrome'un yerleşik güvenlik ve geçerlilik kontrollerini aşabilmesi için sahte web sertifikaları gibi \"god‑mode\" erişimleri sağlandı; bu adımlar normal kullanıcılar için mümkün olmayan bir ortam yaratıyor.\n\nAraştırmacılar, test edilen tarama asistanlarının hâlâ zararsız olduğunu ve siber yetenekleri bulunmadığını vurgulasa da, Mirror Dimension'ın Google içindeki diğer ekipler tarafından da kullanılmasını hedefliyor. Doug Turner, bu yaklaşımın hem iç hem de dış ekipler için bir referans noktası olacağını ve gelecekte daha karmaşık modellerin eğitimi için ortamın sürekli olarak gerçekçiliğinin artırılacağını belirtti.\n\nBu girişim, AI güvenliği ve model dayanıklılığı konularında yeni bir standart oluşturma potansiyeli taşıyor. Kontrol edilen bir web evreni sayesinde, geliştiriciler gerçek dünyadaki saldırı vektörlerini güvenli bir şekilde test edebilecek ve AI asistanlarının kullanıcı verilerini koruma yeteneklerini iyileştirebilecek.",
+  "onemli_maddeler": [
+    "Google, AI tarama asistanlarını gerçek internette test etmek yerine tamamen kontrol ettiği \"Mirror Dimension\" adlı izole bir web ekosistemi oluşturdu.",
+    "Ortam, sosyal medya, e‑ticaret ve banka gibi gerçek sitelerin tüm işlevlerini taklit ederken, gizli prompt‑injection saldırılarıyla ajanların savunma yeteneklerini ölçüyor.",
+    "Mirror Dimension, özel bir AI harness ile yönlendirilen binlerce web geliştirme ajanı sayesinde hızlıca ve detaylı bir şekilde inşa edildi."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "AI tarama asistanlarının güvenli ve etkili bir şekilde eğitilmesi, hem kullanıcı güvenliği hem de model performansı açısından kritik bir adım olduğundan sektörde büyük yankı uyandırıyor.",
+  "etiketler": [
+    "Chrome AI",
+    "Google",
+    "Mirror Dimension",
+    "AI güvenliği",
+    "Web tarayıcıları"
+  ],
+  "anilan_modeller": [
+    "Gemini"
+  ],
+  "yorum_tr": "Bu izole web ortamı, AI tarama asistanlarının gerçek dünyadaki risklerle karşılaşmadan olgunlaşmasını sağlayarak geliştiricilere daha güvenli bir test sahası sunuyor; uzun vadede kullanıcı güvenliği ve model dayanıklılığı açısından sektöre yön verici bir adım olarak değerlendirilebilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://media.wired.com/photos/6aff303dd91b5ce0f67d7c99/master/pass/security_chrome_mirror_browser_ai_agent.jpg",
+  "url": "https://www.wired.com/story/google-built-a-giant-mirror-dimension-internet-to-test-its-chrome-ai-agents/",
+  "source": "WIRED AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-19T17:00:00.000Z",
+  "slug": "google-built-a-giant-mirror-dimension-internet-to-test-its-c"
+}

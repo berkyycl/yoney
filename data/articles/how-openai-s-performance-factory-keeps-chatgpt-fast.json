@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "OpenAI, Performans Fabrikası ile ChatGPT'in Hızını Otomatik Olarak Koruyor",
+  "ozet_tr": "OpenAI, performans regresyonlarını tespit, kök neden analizi ve düzeltme aşamalarını tamamen otomatikleştiren Performance Factory adlı sistemini tanıttı. Codex tabanlı ajanlar, üç ay içinde 1.700'den fazla inceleme yaparak 600'ün üzerindeki sorunu çözdü ve günlük ortalama 17 otomatik araştırma gerçekleştirdi.",
+  "detayli_icerik_tr": "OpenAI, geleneksel performans mühendisliği yaklaşımlarının hızla artan model geliştirme temposuna ayak uyduramadığını belirterek, bulut tabanlı ve tam otomatik bir sistem olan Performance Factory'yi hayata geçirdi. Sistem, Codex'in kod tabanını tarama, metrik ve izleri analiz etme yeteneklerini kullanarak performans uyarılarını algılayıp, kök neden araştırması, düzeltme önerisi ve iyileşme doğrulamasını bir akış içinde yürütüyor.\n\nPerformance Factory dört temel bileşenden oluşuyor: görev hizmeti (task service) ile mühendislerin iş akışlarını Markdown tabanlı konfigürasyonlarla tanımlaması, hazır görevleri ajanlara yönlendiren bir dispatch döngüsü, Codex'in bulut ortamında çalıştırıldığı bir API ve olay tabanlı abonelikler sayesinde ajanların gerektiğinde uyanması. Bu mimari, görevlerin durumunu ve bulgularını merkezi bir UI'de izlenebilir kılıyor, böylece hem ajanlar hem de mühendisler aynı görev üzerinde sorunsuzca iş birliği yapabiliyor.\n\nİlk otomatik iş akışı, \"Regression Workflow\" adıyla, bir performans uyarısı tetiklendiğinde bir görev açıyor, ajanlar yavaşlamanın başladığı zamanı ve etkilenen istekleri belirliyor, dağıtım ve konfigürasyon değişikliklerini inceliyor ve kodu analiz ediyor. Elde edilen bulgular, bir adversarial (karşıt) Codex oturumu tarafından doğrulanıyor; bu adım hatalı teşhislerin önüne geçmek için tasarlandı. Doğrulanan kök neden üzerine, ajan bir düzeltme kodu üretip bir pull request açıyor; mühendis bu PR'ı inceleyip birleştiriyor ve ardından bir başka ajan performansın eski seviyeye dönüp dönmediğini kontrol ediyor.\n\nOpenAI, bu sistemin geliştirilmesi sırasında elde ettiği bazı istatistikleri de paylaştı: üç ay içinde 1.700'den fazla otomatik araştırma yürütülmüş ve bu araştırmaların %70'i doğru kök neden teşhisi sağlamış. Ancak düzeltme aşamasının hâlâ insan denetimine ihtiyaç duyduğu, özellikle karmaşık mimari kararlar ve yan etkileri olan değişikliklerde mühendis gözetiminin kritik olduğu vurgulandı. OpenAI, gelecekte ajanların önerdiği düzeltmeleri sentez testleriyle önceden ölçerek insan müdahalesini daha da azaltmayı hedefliyor.",
+  "onemli_maddeler": [
+    "Performance Factory, performans regresyonlarını otomatik olarak tespit, analiz ve düzeltme sürecini üç ayda 1.700'den fazla vaka ile yürüttü.",
+    "Codex tabanlı ajanlar, kök neden bulma ve düzeltme önerisi aşamalarında adversarial inceleme ile doğruluk oranını %70'e çıkardı.",
+    "Sistem, görev hizmeti, dispatch döngüsü, bulut Codex API'si ve olay abonelikleri gibi dört bileşenle modüler bir mimariye sahip."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Performans mühendisliği süreçlerini otomatikleştirerek büyük ölçekli yapay zeka hizmetlerinin sürdürülebilirliğini artırması, sektörde benzer otomasyon çözümlerinin geliştirilmesine öncülük etmesi.",
+  "etiketler": [
+    "Performans",
+    "Otomasyon",
+    "Codex",
+    "Yapay Zeka",
+    "OpenAI"
+  ],
+  "anilan_modeller": [
+    "Codex",
+    "ChatGPT"
+  ],
+  "yorum_tr": "Performance Factory, yüksek trafikli AI hizmetlerinde performans sorunlarını hızlıca çözerek mühendislerin odaklanmasını kritik yeniliklere kaydırıyor; aynı zamanda otomatikleştirilmiş hata tespiti ve düzeltme akışları, endüstride benzer sistemlerin geliştirilmesine ilham verebilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://images.ctfassets.net/kftzwdyauwt9/1GmNPxrS3qwhYU0t43dsaa/0df53811b9acf8f9699ace630362f112/performance-factory-social.png?w=1600&h=900&fit=fill",
+  "url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-11-19T08:00:00.000Z",
+  "slug": "how-openai-s-performance-factory-keeps-chatgpt-fast"
+}
