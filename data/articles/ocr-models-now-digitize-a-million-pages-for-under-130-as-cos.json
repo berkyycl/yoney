@@ -1,0 +1,52 @@
+{
+  "baslik_tr": "OCR modelleri 18 ayda maliyeti beş kat azalttı, bir milyon sayfa tarama $130 altında",
+  "ozet_tr": "Hugging Face araştırmacısı Daniel van Strien, sekiz açık kaynak OCR modelini 850 sayfalık test setiyle karşılaştırdı ve en eski modelin 1.000 sayfa başına maliyetinin %90'ının yeni nesil modellerde düştüğünü ortaya koydu. En yeni LightOnOCR-3-0.8B modeli, aynı GPU üzerinde çalıştırıldığında bir milyon sayfayı sadece 65‑130 $ arasında tarayabiliyor. Model optimizasyonu ve daha hızlı GPU kullanımı, maliyet düşüşünde model yenilemesinden bile daha büyük bir etki sağladı.",
+  "detayli_icerik_tr": "Daniel van Strien, Hugging Face'in kiraladığı Nvidia RTX PRO 6000 GPU (saatlik 2,75 $) üzerinde sekiz farklı OCR modelini aynı koşullarda test etti. Test seti, 1771 tarihli Encyclopaedia Britannica'dan alınan eski doğa tarih kitapları, tipografik arşiv belgeleri ve tipik taranmış sayfalardan oluşuyordu. En eski model olan RolmOCR (Nisan 2025) 1.000 sayfa başına yaklaşık 51 cent maliyetle çalışırken, en yeni LightOnOCR-3-0.8B (Ekim 2026) aynı ölçekte sadece 10 cent'in altında bir maliyetle işlem yaptı.\n\nMaliyet farkının büyük bir kısmı, modellerin çalıştırılma şekline yapılan optimizasyonlardan kaynaklandı. Van Strien, sayfaların daha eşit dağıtılması, daha küçük tarama boyutları, yazılım güncellemeleri ve daha hızlı GPU seçimi gibi adımların, yeni modele geçişten elde edilen tasarrufla neredeyse eşdeğer olduğunu belirtti. Bu sayede bir milyon sayfalık tarama işi, kaynak materyale bağlı olarak 65 $ ile 130 $ arasında bir maliyetle tamamlanabiliyor.\n\nDoğruluk açısından, en yeni model eski modele kıyasla en az aynı seviyede performans gösterdi; ancak bazı modeller boş sayfalarda sahte metin üretme (halüsinasyon) ya da aynı içeriği tekrarlama sorunları yaşadı. Bu durum, yüksek hacimli dijitalleştirme projelerinde model seçiminin sadece maliyet değil, aynı zamanda hata toleransı açısından da değerlendirilmesi gerektiğini ortaya koyuyor.\n\nBu gelişme, özellikle kütüphaneler, arşivler ve tarihsel belgeleri dijitalleştirmek isteyen kurumlar için maliyet bariyerini önemli ölçüde düşürerek, büyük ölçekli tarama projelerinin ekonomik olarak daha ulaşılabilir hâle gelmesini sağlıyor.",
+  "onemli_maddeler": [
+    "18 ayda OCR modellerinin 1.000 sayfa başına maliyeti %80'in üzerinde düşerek 51 cent'ten 10 cent'in altına indi.",
+    "Model optimizasyonu (sayfa dağılımı, tarama boyutu, GPU seçimi) yeni model geçişinden daha fazla tasarruf sağladı.",
+    "En yeni LightOnOCR-3-0.8B, eski modele eşdeğer doğruluk sunarken bazı modeller hâlâ boş sayfalarda halüsinasyon yapabiliyor."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Maliyetlerdeki beş katlık düşüş ve açık kaynak OCR modellerinin performansının iyileşmesi, dijital arşivleme ve belge işleme sektöründe büyük ölçekli projelerin ekonomik sürdürülebilirliğini artırabilir.",
+  "etiketler": [
+    "OCR",
+    "AI",
+    "Maliyet",
+    "Hugging Face",
+    "GPU"
+  ],
+  "anilan_modeller": [
+    "RolmOCR",
+    "LightOnOCR-3-0.8B"
+  ],
+  "yorum_tr": "Bu maliyet düşüşü, özellikle kamu kurumları ve akademik arşivler için büyük bir fırsat sunuyor; geliştiriciler ise performans‑maliyet dengesini daha da iyileştirmek için optimizasyon tekniklerine odaklanmalı.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "RolmOCR",
+      "benchmark": "Cost per 1,000 pages",
+      "skor": 51,
+      "birim": "cent",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "per 1,000 pages",
+      "kaynak_metinden_alinti": "The oldest model from April 2025 (RolmOCR) cost about 51 cents per 1,000 pages."
+    },
+    {
+      "model": "LightOnOCR-3.0.8B",
+      "benchmark": "Cost per 1,000 pages",
+      "skor": 10,
+      "birim": "cent",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "per 1,000 pages",
+      "kaynak_metinden_alinti": "The newest from October 2026 (LightOnOCR-3-0.8B) came in at just under 10 cents."
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/07/baidu-ocr-machine-nano-banana-pro.jpg",
+  "url": "https://the-decoder.com/ocr-models-now-digitize-a-million-pages-for-under-130-as-costs-drop-fivefold-in-18-months/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-19T09:28:01.000Z",
+  "slug": "ocr-models-now-digitize-a-million-pages-for-under-130-as-cos"
+}
