@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "OpenAI Codex Güvenlik Eklentisi Demo ile Tanıtıldı",
+  "ozet_tr": "OpenAI, Codex Security Plugin'in çalışma şeklini gösteren bir demo videosu yayınladı. Video, eklentinin kurulumundan sonuçların incelenmesine kadar tüm adımları ayrıntılı olarak sergiliyor.",
+  "detayli_icerik_tr": "OpenAI, geliştiricilere kod güvenliğini otomatikleştirme imkanı sunan Codex Security Plugin'i tanıttı ve bu eklentinin nasıl kullanılacağını gösteren bir demo videosu yayınladı. Videoda, eklentinin OpenAI Codex modeliyle entegrasyonu, kod parçacıklarının analiz edilmesi ve potansiyel güvenlik açıklarının raporlanması süreci adım adım izleniyor.\n\nDemo, eklentinin ilk kurulumu ve API anahtarının yapılandırılmasıyla başlıyor. Kullanıcılar, bir GitHub deposu ya da yerel dosya sistemi üzerinden kodlarını eklentiye gönderiyor ve Codex, statik analiz teknikleriyle güvenlik risklerini tespit ediyor. Sonuçlar, açıklama, risk seviyesi ve önerilen düzeltme adımlarını içeren bir rapor şeklinde sunuluyor.\n\nOpenAI, bu eklentinin özellikle büyük ölçekli kod tabanlarına sahip şirketler ve güvenlik odaklı geliştiriciler için tasarlandığını vurguluyor. Codex Security Plugin, mevcut CI/CD pipeline'larına kolayca entegre edilebilecek şekilde tasarlandı; böylece güvenlik taramaları otomatikleştirilebiliyor ve güvenlik ekiplerinin müdahale süresi kısalıyor.\n\nEklentinin açık kaynak bileşenleri ve API dokümantasyonu da OpenAI'nin geliştirici portalında yer alıyor. Bu sayede topluluk, eklentiyi kendi ihtiyaçlarına göre özelleştirebilir, yeni güvenlik kuralları ekleyebilir ve sonuçları diğer güvenlik araçlarıyla birleştirebilir.",
+  "onemli_maddeler": [
+    "OpenAI, Codex Security Plugin'in tam bir demo videosunu yayınlayarak kullanım akışını gösterdi.",
+    "Eklenti, Codex modeliyle entegre çalışarak kodda güvenlik açıklarını otomatik tespit ediyor ve raporlıyor.",
+    "CI/CD süreçlerine kolay entegrasyon imkanı sunarak güvenlik taramalarını otomatikleştiriyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 3,
+  "onem_gerekce": "Yeni bir güvenlik eklentisi tanıtımı, geliştiriciler ve güvenlik ekipleri için faydalı ancak sektörel etkisi henüz sınırlı olduğu için orta seviyede önem taşımaktadır.",
+  "etiketler": [
+    "güvenlik",
+    "plugin",
+    "OpenAI",
+    "kod analizi",
+    "yazılım geliştirme"
+  ],
+  "anilan_modeller": [
+    "Codex"
+  ],
+  "yorum_tr": "Codex Security Plugin, kod güvenliğini otomatikleştirerek geliştiricilerin riskleri erken aşamada tespit etmesine yardımcı olacak; ancak geniş çaplı benimsenmesi zaman alabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://substackcdn.com/image/fetch/$s_!vm4S!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3a2ba089-fc1b-4adf-bf9b-ebd6b484b88c_1672x941.png",
+  "url": "https://openai.com/business/learn/codex-security-plugin-demo",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-11-19T00:00:00.000Z",
+  "slug": "explore-the-codex-security-plugin"
+}

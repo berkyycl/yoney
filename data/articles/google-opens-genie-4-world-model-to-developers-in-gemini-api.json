@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "Google, Genie 4 Dünya Modelini Gemini API Üzerinden Geliştiricilere Açtı",
+  "ozet_tr": "Google DeepMind'in en yeni dünya modeli Genie 4, Gemini API ve Google AI Studio aracılığıyla geliştiricilere sunuldu. Model, gerçek zamanlı 720p, 24 fps video ve senkronize ses üretimi yapabiliyor ve sadece bir API anahtarıyla erişilebiliyor.",
+  "detayli_icerik_tr": "Google, DeepMind ekibinden çıkan en yeni dünya modeli Genie 4'ü, Gemini API ve Google AI Studio üzerinden geliştiricilere açtı. Model, \"models/genie-4\" adıyla API'ye eklenerek, geliştiricilerin demo izlemek yerine doğrudan kendi uygulamalarında gerçek zamanlı dünya simülasyonları oluşturmasına imkan tanıyor.\n\nGenie 4, metin istemi, referans görseli ya da her ikisinin kombinasyonu ile başlatılıyor ve 720p çözünürlükte, saniyede 24 kare hızında, yerel ses efektleri ve karakter diyalogları içeren bir dünya üretiyor. Kullanıcılar WASD ya da ok tuşlarıyla sahnede hareket edebiliyor, oturum sırasında anlık metin komutlarıyla hava durumu, aydınlatma, nesneler ya da olaylar değiştirilebiliyor; Gemini'in akıl yürütme yeteneği ise dünya durumunun tutarlılığını sağlıyor. Tüm çıktılar, algılanamaz bir SynthID filigranı taşıyor.\n\nGoogle, bu modelin interaktif deneyim prototipleme, mekânsal tasarım görselleştirme ve robotik ya da AI ajan eğitimi gibi alanlarda kullanılmasını hedefliyor. API, tarayıcı uygulamaları için WebRTC, sunucu tarafı kodları için ise WebSocket üzerinden akış sağlıyor; tek oturum geçici tokenlarla korunuyor ve ana API anahtarı istemciye gösterilmiyor. Kullanım için ücretli bir anahtar gerekiyor; fiyatlandırma 1,5 $ / milyon giriş tokenı, 9 $ / milyon metin çıktı tokenı ve 17,5 $ / milyon video çıktı tokenı olarak belirlenmiş, bu da yaklaşık 0,10 $ / saniye video akışı anlamına geliyor. Oturum süresi 120 saniye ile sınırlı, klavye hareketleri yaklaşık 0,5 saniye, metin komutları ise 1‑2 saniye içinde işleniyor. Hizmet, ABD, Batı Avrupa ve Japonya veri merkezlerinden sağlanıyor.\n\nGenie 4'ün duyurusu, DeepMind'in Gemini ailesi üzerine inşa edilen bir dizi araştırma modelinin ardından geliyor. Gemini Omni, gerçekçi görselleri sağlarken diğer Gemini modelleri akıl yürütmeyi üstleniyor. Google, bu teknolojiyle AGI'ye giden yolda güvenli eğitim ortamları ve yaratıcı üretim araçları sunmayı amaçlıyor; modelin Gemini API'ye entegrasyonu, araştırma aşamasından çıkıp üçüncü taraf uygulamalara, oyunlara ve ajan boru hatlarına geçişi temsil ediyor.",
+  "onemli_maddeler": [
+    "Genie 4, Gemini API ve Google AI Studio üzerinden geliştiricilere açıldı; artık gerçek zamanlı 720p, 24 fps video ve senkronize ses üretimi yapılabiliyor.",
+    "Model, metin, görsel ya da her ikisinin kombinasyonu ile başlatılıyor ve WASD/ok tuşlarıyla etkileşimli dünyada hareket imkanı sunuyor.",
+    "Fiyatlandırma: 1,5 $ / milyon giriş tokenı, 9 $ / milyon metin çıktı tokenı, 17,5 $ / milyon video çıktı tokenı (yaklaşık 0,10 $ / saniye video).",
+    "Oturum süresi 120 saniye ile sınırlı; klavye hareketleri ~0,5 saniye, metin komutları 1‑2 saniye içinde yanıt veriyor.",
+    "Servis, ABD, Batı Avrupa ve Japonya veri merkezlerinden sağlanıyor ve WebRTC/WebSocket üzerinden akış yapıyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Genie 4, gerçek zamanlı video ve ses üretimi yeteneğiyle AI dünyasında yeni bir nesil interaktif simülasyon sunuyor; geliştiricilerin erişimine açılması sektörde yaratıcı ve endüstriyel uygulamaların hızla yayılmasını tetikleyecek.",
+  "etiketler": [
+    "Genie 4",
+    "Gemini API",
+    "real-time simulation",
+    "AI video generation",
+    "Google DeepMind"
+  ],
+  "anilan_modeller": [
+    "Genie 4"
+  ],
+  "yorum_tr": "Genie 4'ün API üzerinden sunulması, geliştiricilerin interaktif 3D deneyimler ve robotik eğitim ortamları oluşturmasını kolaylaştırarak AI uygulama ekosistemini genişletecek. Ancak yüksek fiyatlandırma ve oturum süresi sınırlamaları, özellikle büyük ölçekli projeler için maliyet ve tasarım kısıtlamaları yaratabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/11/Google-AI-Studio-11-19-2026_08_02_PM--1-.jpg",
+  "url": "https://www.testingcatalog.com/google-opens-genie-4-world-model-to-developers-in-gemini-api/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-19T23:21:27.000Z",
+  "slug": "google-opens-genie-4-world-model-to-developers-in-gemini-api"
+}

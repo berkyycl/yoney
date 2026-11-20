@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "Google Gemini, Diğer AI Asistanlarından Sohbet Geçmişi Aktarımını Sunuyor",
+  "ozet_tr": "Google Gemini, kullanıcıların başka bir yapay zeka asistanında biriktirdikleri sohbet geçmişi, tercih ve bağlamı doğrudan Gemini'e taşımasına olanak tanıyan yeni bir aktarım özelliği ekledi. Bu adım, Gemini'e geçişi sıfırdan başlamak zorunda kalmadan sorunsuz bir deneyime dönüştürüyor.",
+  "detayli_icerik_tr": "Google, 19 Kasım 2026 tarihinde yayınladığı blog yazısında Gemini kullanıcılarına, mevcut AI asistanlarından (örneğin ChatGPT, Claude vb.) sohbet geçmişi ve kişisel tercihleri içe aktarma imkanı sunduğunu duyurdu. Kullanıcılar, Gemini ayarları içinde bir \"import\" komut dosyasını kopyalayıp, önceki asistanlarına yapıştırarak tercih özetlerini oluşturabiliyor ve bu özeti Gemini'e yapıştırarak profilini hızlıca yapılandırabiliyor.\n\nİşlem iki ana aşamadan oluşuyor: İlk olarak, önceki AI hizmetinin ayarlar menüsünden sohbet geçmişi ZIP dosyası dışa aktarılıyor. Bu ZIP arşivi, Gemini'in ayarlar bölümüne yüklenerek geçmiş konuşmalar otomatik olarak tanımlanıyor ve kullanıcı aynı noktadan devam edebiliyor. İkinci aşamada ise tercih özetinin oluşturulması için verilen prompt, eski asistan üzerinden çalıştırılıyor; elde edilen yanıt Gemini'e yapıştırılarak kişiselleştirilmiş öneri ve bağlam ayarları otomatik olarak uygulanıyor.\n\nBu özellik, özellikle uzun vadeli projeler ve kişisel asistan kullanım alışkanlıkları geliştiren profesyoneller için büyük bir zaman tasarrufu sağlıyor. Kullanıcılar, geçmişte biriktirdikleri bilgi birikimini yeniden girmek zorunda kalmadan Gemini'in daha gelişmiş dil modellerinden faydalanabilecek. Google, bu adımı Gemini'in ekosistemini genişletmek ve rakip AI platformlarından kullanıcı çekmek amacıyla attığını belirtiyor.\n\nGemini'in bu yeni aktarım yeteneği, veri gizliliği ve güvenliği konularında da titiz bir yaklaşım içeriyor. ZIP dosyalarının sadece kullanıcı tarafından yüklenmesi ve aktarım sürecinin yerel olarak gerçekleşmesi, üçüncü taraf veri sızıntısı riskini minimize ediyor. Google, bu süreçte şifreleme ve anonimleştirme protokollerinin kullanıldığını vurguluyor.",
+  "onemli_maddeler": [
+    "Gemini, diğer AI asistanlarından sohbet geçmişi ve tercih özetlerini doğrudan içe aktarabiliyor.",
+    "Kullanıcılar, önceki asistanlarından ZIP formatında sohbet geçmişi dışa aktararak Gemini'de kaldıkları yerden devam edebiliyor.",
+    "Veri gizliliği için aktarım süreci yerel olarak gerçekleşiyor ve şifreleme protokolleriyle korunuyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 3,
+  "onem_gerekce": "Mevcut bir AI platformuna yeni bir veri aktarım özelliği eklenmesi, kullanıcı deneyimini iyileştirirken rekabetçi bir avantaj sağlıyor, ancak sektörel etkisi sınırlı bir güncelleme olarak değerlendirilebilir.",
+  "etiketler": [
+    "Google Gemini",
+    "AI asistanları",
+    "veri aktarımı",
+    "kullanıcı deneyimi",
+    "yapay zeka"
+  ],
+  "anilan_modeller": [
+    "Gemini"
+  ],
+  "yorum_tr": "Bu özellik, Gemini'e geçiş yapmak isteyen kullanıcıların bariyerlerini azaltarak platformun benimsenmesini hızlandırabilir; aynı zamanda veri gizliliği konusundaki hassasiyetleri de göz önünde bulunduruyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Transfer_socialshare.max-1440x810.png",
+  "url": "https://blog.google/innovation-and-ai/products/gemini-app/switch-ai-assistants-transfer-history/",
+  "source": "Google Gemini",
+  "sourceTier": "resmi",
+  "date": "2026-11-19T20:30:00.000Z",
+  "slug": "icymi-transfer-your-history-from-other-ai-apps-into-gemini"
+}

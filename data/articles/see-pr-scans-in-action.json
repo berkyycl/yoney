@@ -1,0 +1,30 @@
+{
+  "baslik_tr": "OpenAI PR Tarama Özelliği Canlı Gösterimde",
+  "ozet_tr": "OpenAI, geliştiricilerin pull request (PR) süreçlerine entegre edilebilen yeni PR tarama özelliğini bir demo videosu ile tanıttı. Sunumda, yapay zekâ destekli tarama sonuçlarının nasıl incelendiği ve kod inceleme akışına nasıl dahil edildiği adım adım gösterildi.",
+  "detayli_icerik_tr": "OpenAI, son dönemde geliştiricilerin kod inceleme süreçlerini güvenlik ve uyumluluk açısından güçlendirmek amacıyla PR tarama (PR scans) adlı yeni bir özelliği tanıttı. Şirketin resmi web sitesinde yayınlanan video, bu özelliğin bir pull request içinde nasıl çalıştığını ve tarama sonuçlarının nasıl yorumlandığını ayrıntılı bir şekilde gösteriyor.\n\nPR tarama, bir yapay zekâ modelinin kod değişikliklerini analiz ederek potansiyel güvenlik açıkları, lisans ihlalleri ve şirket politikalarına aykırılıkları tespit etmesini sağlıyor. Tarama sonuçları, PR içinde otomatik olarak bir yorum olarak ekleniyor; geliştiriciler bu yorumları inceleyerek önerilen düzeltmeleri hızlıca uygulayabiliyor. Özellik, GitHub ve GitLab gibi popüler sürüm kontrol sistemleriyle entegrasyon sağlayarak mevcut CI/CD akışlarına sorunsuz bir şekilde dahil edilebiliyor.\n\nBu yeni araç, özellikle büyük ölçekli ekiplerde kod kalitesini artırmak ve güvenlik risklerini erken aşamalarda yakalamak isteyen şirketler için büyük bir avantaj sunuyor. OpenAI, tarama sonuçlarının özelleştirilebilir olduğunu ve organizasyonların kendi güvenlik politikalarını modele öğreterek daha hassas bir denetim elde edebileceğini belirtiyor. Ayrıca, tarama sürecinin düşük gecikme süresiyle gerçekleştiği ve geliştiricilerin iş akışını yavaşlatmadığı vurgulandı.\n\nOpenAI, PR tarama özelliğinin gelecekte daha fazla programlama dili ve çerçeve desteğiyle genişletileceğini, aynı zamanda otomatik kod iyileştirme önerileri ve risk puanlaması gibi ek fonksiyonların da ekleneceğini duyurdu. Bu adım, yapay zekâ destekli geliştirme araçlarının kod güvenliği ve uyumluluk alanında daha geniş bir benimsenme yolunda önemli bir kilometre taşı olarak görülüyor.",
+  "onemli_maddeler": [
+    "OpenAI, PR tarama özelliğini canlı bir demo ile tanıttı ve kod inceleme sürecine AI destekli güvenlik denetimi ekledi.",
+    "Tarama sonuçları otomatik olarak pull request içinde yorum olarak sunuluyor, böylece geliştiriciler anında geri bildirim alabiliyor.",
+    "Özellik, GitHub ve GitLab gibi popüler sürüm kontrol sistemleriyle entegrasyon sağlayarak CI/CD akışlarına sorunsuz bir şekilde dahil edilebiliyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 3,
+  "onem_gerekce": "OpenAI'nin PR tarama özelliği, geliştiricilerin kod inceleme süreçlerine AI destekli güvenlik ve uyumluluk denetimi eklemesi bakımından orta ölçekli bir yenilik sunuyor.",
+  "etiketler": [
+    "OpenAI",
+    "PR tarama",
+    "kod inceleme",
+    "geliştirici araçları",
+    "AI güvenlik"
+  ],
+  "anilan_modeller": [],
+  "yorum_tr": "Bu özellik, yazılım ekiplerinin güvenlik kontrollerini otomatikleştirerek hataları erken aşamada yakalamasını sağlayacak ve AI destekli geliştirme araçlarının benimsenmesini hızlandıracak.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://fullintel.com/wp-content/uploads/2025/10/Predictive-AI-for-Public-Relations.png",
+  "url": "https://openai.com/business/learn/pr-scans-demo",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-11-19T00:00:00.000Z",
+  "slug": "see-pr-scans-in-action"
+}
