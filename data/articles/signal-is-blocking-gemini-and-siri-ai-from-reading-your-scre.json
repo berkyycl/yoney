@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "Signal, Gemini ve Siri gibi AI Asistanlarının Ekran Görüntüsü Okumasını Engelliyor",
+  "ozet_tr": "Signal, iOS ve Android cihazlarda ekran görüntüsü almayı kısıtlayarak Gemini, Siri ve diğer AI asistanlarının ekrandaki içeriği taramasını engelliyor. Şirket, bu adımı uygulama katmanındaki gizliliği korumak için “AI ajanlarının gizliliğe düşman” olduğunu belirterek attı.",
+  "detayli_icerik_tr": "Signal, mobil uygulamasında ekran görüntüsü alma özelliğini varsayılan olarak devre dışı bırakıyor. Kullanıcılar, iOS ve Android ayarlarından bu özelliği yeniden etkinleştirebilecek, ancak bu durumda mesajların AI asistanları tarafından okunma riski artacak. Signal başkan yardımcısı Meredith Whittaker, işletim sistemlerine entegre edilen AI ajanlarının ekrandaki verileri analiz ederek gizlilik garantilerini baltaladığını vurguladı.\n\nWhittaker, Google, Apple, Microsoft gibi platform sağlayıcılarının geliştiricilere AI veri erişimini sınırlama konusunda yeterli araç sunmadığını belirtti. Bu eksiklik, macOS gibi bazı platformlarda aynı korumayı uygulamanın önünde teknik bir engel oluşturuyor. Signal, geçen yıl Microsoft'un Recall özelliğinin şifreli sohbetleri yakalamasını önlemek için benzer bir önlem almıştı; bu sefer ise AI ajanlarının ekran içeriğine erişimini engellemeye odaklandı.\n\nUygulama içinde sunulan yeni güvenlik ayarı, ekran görüntüsü almayı engellemenin yanı sıra Siri ve Gemini gibi yerleşik AI asistanlarının ekrandaki metni taramasını da durduruyor. Kullanıcılar bu korumayı devre dışı bırakabilir, ancak Whittaker bu seçeneğin gizlilik garantilerini zayıflatacağını açıkça belirtiyor. Ayrıca, AI ajanlarının dosya sistemi üzerinden veri çekme gibi alternatif yollarla da erişim sağlayabileceği, bu önlemin tam bir çözüm olmadığı kabul edildi.\n\nSignal, bu sorunun çözümü için Apple, Google ve Microsoft'tan daha şeffaf teknik belgeler ve basit araçlar talep ediyor. Şirket, Meta’nın Muse gibi üçüncü taraf AI ajanlarının erişim derinliği ayarlarını “iskelet anahtarı” gibi kullanmasını da riskli buluyor ve ek önlemlerin geliştirilmesi gerektiğini vurguluyor. Whittaker, bu durumun sadece Signal için değil, tüm bağımsız uygulama geliştiricileri ve kullanıcılar için bir uyarı olduğunu ve gizlilik haklarının korunması adına ekosistemin harekete geçmesi gerektiğini ifade etti.",
+  "onemli_maddeler": [
+    "Signal, iOS ve Android'de ekran görüntüsü almayı varsayılan olarak engelliyor.",
+    "Bu engelleme, Gemini, Siri ve benzeri AI asistanlarının ekrandaki içeriği taramasını durduruyor.",
+    "Kullanıcılar ayarlardan bu korumayı devre dışı bırakabilir, ancak gizlilik garantileri risk altına giriyor.",
+    "Signal, platform sağlayıcılarından AI veri erişimini sınırlayan teknik araçlar ve belgeler talep ediyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "AI asistanlarının ekran içeriğini okuyarak gizlilik ihlallerine yol açma potansiyeli, milyonlarca mesajlaşma kullanıcısını etkileyebilecek kritik bir güvenlik sorunu oluşturuyor.",
+  "etiketler": [
+    "gizlilik",
+    "Signal",
+    "AI",
+    "ekran görüntüsü",
+    "mobil"
+  ],
+  "anilan_modeller": [
+    "Gemini",
+    "Siri",
+    "Meta Muse"
+  ],
+  "yorum_tr": "Signal'ın bu adımı, AI entegrasyonunun gizlilik üzerindeki risklerini gözler önüne seriyor ve platform sağlayıcılarını daha güçlü koruma mekanizmaları sunmaya zorlayabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/protecting-your-privacy-1.png?quality=90&strip=all&crop=0,0,100,100",
+  "url": "https://www.theverge.com/ai-artificial-intelligence/1038390/signal-blocking-ai-agent-screenshots-mobile-app",
+  "source": "The Verge AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-20T12:30:47.000Z",
+  "slug": "signal-is-blocking-gemini-and-siri-ai-from-reading-your-scre"
+}

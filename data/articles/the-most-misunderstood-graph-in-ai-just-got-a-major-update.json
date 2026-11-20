@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "METR'nin zaman ufku grafiği güncellendi: Açık uçlu görevlerde ilerleme yavaş ama kayda değer",
+  "ozet_tr": "AI değerlendirme kuruluşu METR, zaman ufku grafiğini yeni, daha zor ve yargı gerektiren görevlerle güncelledi. Verilebilir (kod, matematik) görevlerdeki üssel ilerleme devam ederken, hâlâ insan seviyesinin gerisinde kalan açık uçlu görevlerde modellerin performansı sınırlı kalıyor.",
+  "detayli_icerik_tr": "METR, yapay zeka sistemlerinin yeteneklerini ölçmek için uzun süredir kullandığı \"time horizon\" grafiğini genişletti. Yeni sürüm, insanlara saatlerce sürebilecek daha karmaşık görevleri ve açık uçlu, yargı gerektiren testleri içeriyor. Bu görevlerin zorluğu, insan test katılımcılarının tamamlaması için harcadığı süreyle ölçülüyor; yeni raporda bu süreler tahmini olarak eklenmiş, çünkü gerçek insan maliyeti çok yüksek.\n\nGrafiğin önceki versiyonu, modellerin dört ayda bir iki kat daha uzun sürede tamamlayabildiği görevleri gösteriyordu ve bu, kodlama ve matematik gibi otomatik olarak doğrulanabilen alanlarda üssel bir gelişme olduğunu ortaya koymuştu. Ancak METR, bu tür \"verifiable\" görevlerin ilerlemesinin, araştırma ve geliştirme gibi daha soyut, başarı ölçümü zor olan alanlara ne kadar taşınabileceği sorusunu gündeme getirdi.\n\nYeni raporda iki yeni görev öne çıkıyor: modellerin METR için yeni AI değerlendirme metodolojileri tasarlamaları ve felsefi argümanları puanlamaları. En gelişmiş modeller, yazılım mühendisliği görevlerinde insanları geride bırakırken, bu açık uçlu görevlerde hâlâ yetersiz kalıyor; tasarlanan değerlendirmeler METR çalışanları tarafından kullanılabilir bulunmadı ve felsefi argüman puanlamasında da insan performansının gerisinde kaldı.\n\nBazı en yeni modeller, örneğin Opus 5.5, \"borderline above the bar\" (çubuğun biraz üzeri) seviyesinde bir performans sergileyerek bir yıl önceki \"clearly below the bar\" (çubuğun açıkça altında) seviyesinden bir adım ilerledi. Ancak bu ilerleme hâlâ pratik bir araştırma aracı olarak yeterli değil ve ölçüm metodolojisinin sınırlamaları, özellikle açık uçlu görevlerde trendleri net bir şekilde ortaya koymayı zorlaştırıyor.",
+  "onemli_maddeler": [
+    "Verifiable (kod, matematik) görevlerdeki üssel ilerleme devam ediyor, her dört ayda bir görev süresi iki katına çıkıyor.",
+    "Grafiğe, insanların saatlerce sürebileceği açık uçlu ve yargı gerektiren görevler eklendi.",
+    "En gelişmiş modeller hâlâ bu açık uçlu görevlerde insan performansının gerisinde; Opus 5.5 bile sadece \"borderline above the bar\" seviyesinde.",
+    "Yeni görevlerin puanlaması tahmini insan süresine dayanıyor, bu da ölçüm belirsizliğini artırıyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "AI performans ölçümünün temel grafiğinin genişletilmesi, araştırma ve geliştirme otomasyonu konusundaki beklentileri doğrudan etkileyen kritik bir gelişmedir.",
+  "etiketler": [
+    "AI değerlendirme",
+    "METR",
+    "zaman ufku grafiği",
+    "açık uçlu görevler",
+    "model performansı"
+  ],
+  "anilan_modeller": [
+    "Opus 5.5"
+  ],
+  "yorum_tr": "METR'nin grafiğe açık uçlu görevleri eklemesi, model değerlendirmelerinin daha gerçekçi bir perspektife kaymasını sağlıyor; geliştiriciler bu alandaki eksikliği fark edip yeni eğitim ve ölçüm yöntemleri geliştirmeye yönelmelidir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://wp.technologyreview.com/wp-content/uploads/2026/11/metr2a.jpg?resize=1200,600",
+  "url": "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/",
+  "source": "MIT Technology Review AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-20T18:15:15.000Z",
+  "slug": "the-most-misunderstood-graph-in-ai-just-got-a-major-update"
+}

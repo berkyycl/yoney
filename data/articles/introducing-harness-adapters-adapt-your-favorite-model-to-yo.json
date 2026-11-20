@@ -1,0 +1,44 @@
+{
+  "baslik_tr": "Harness Adaptörleriyle Qwen3.8-27B Modeli Performans ve Maliyet Açısından Büyük İyileşme Sağlandı",
+  "ozet_tr": "Hugging Face, Qwen3.8-27B modeline özel olarak eğitilen RL‑tabanlı LoRA adaptörleri (harness adapters) sayesinde, aynı modelin pi, OpenCode ve Hermes Agent harness'larında %39'dan %55'e kadar pass@1 başarısı ve token tüketiminde %48 azalma elde edildiğini duyurdu. Bu adaptörler, modelin genel amaçlı performansını aşarak belirli görev dağılımları ve araç kullanımını optimize ediyor.",
+  "detayli_icerik_tr": "Hugging Face ekibi, modelin belirli bir harness ve görev dağılımına göre tam olarak optimize edilmediğini, bunun da performans ve verimlilik kayıplarına yol açtığını vurguladı. Bu sorunu çözmek için, Qwen3.8-27B modelinin ağırlıkları dondurulup, her bir harness (pi, OpenCode, Hermes Agent) için RL ile eğitilmiş bir LoRA adaptörü (harness adapter) eklenerek modelin mantık yürütme süresi, araç çağrısı sayısı ve ilk denemedeki doğruluğu iyileştirildi.\n\nDeneylerde, pi harness'ı altında temel modelin Terminal-Bench 2.1 skorunun %39 olduğu ve ortalama 2.9K token tükettiği gösterildi. Aynı koşullarda eğitilen harness adapteri %55 pass@1 skoru ve ortalama 1.5K token tüketimi sağladı. Benzer iyileştirmeler OpenCode ve Hermes Agent harness'larında da gözlemlendi; her bir adaptör kendi harness'ı altında hem doğruluk hem de token verimliliği açısından temel modeli geride bıraktı.\n\nAdaptörlerin eğitimi, Hugging Face Hub üzerindeki Jobs, TRL'nin AsyncGRPOTrainer'ı, OpenEnv ve Harbor entegrasyonlarıyla gerçekleştirildi. Eğitim sırasında görev setleri üç kaynaktan (SWE‑smith, SWE‑Gym ve Tasksmith) toplanarak kalite kontrolünden geçirildi; sadece bazen çözülen (qualified) görevler RL sürecine dahil edildi. Ayrıca, güvenli bir eğitim ortamı sağlamak için safeagents eklentisi kullanıldı ve modelin tehlikeli araç çağrılarını engelleme oranı eğitim ilerledikçe azaldı.\n\nEğitilen üç ayrı LoRA adaptörü, katman bazında birbirine çok düşük kosinüs benzerliği (%1‑2) gösterdiği için, bu adaptörler birleştirilerek tek bir \"super‑adapter\" oluşturuldu. Birleştirme, adaptörlerin birbirine müdahalesini en aza indirerek, tek bir adaptörün üç harness altında da yüksek doğruluk ve düşük token tüketimi sunmasını sağladı. Tüm adaptörler, GGUF formatında ve Hugging Face koleksiyonunda yayınlanarak topluluğun kendi görev ve harness kombinasyonları için yeniden üretilebilmesi hedeflendi.",
+  "onemli_maddeler": [
+    "Qwen3.8-27B modeline özel RL‑eğitilmiş LoRA adaptörleri, pi harness'ında pass@1 skorunu %39'dan %55'e yükseltti ve token tüketimini %48 azalttı.",
+    "Üç farklı harness (pi, OpenCode, Hermes Agent) için ayrı adaptörler eğitildi ve hepsi temel modeli hem doğruluk hem de verimlilik açısından geride bıraktı.",
+    "Adaptörler, Hugging Face Hub, TRL AsyncGRPOTrainer, OpenEnv ve Harbor entegrasyonlarıyla tamamen yeniden üretilebilir bir pipeline içinde geliştirildi.",
+    "Üç adaptör, düşük kosinüs benzerliği sayesinde birleştirilerek tek bir super‑adapter oluşturuldu; bu adaptör tüm harness'larda tutarlı performans sağladı.",
+    "Safeagents eklentisi sayesinde eğitim sırasında modelin tehlikeli araç çağrıları engellendi ve güvenlik seviyesi adım adım iyileştirildi."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Mevcut büyük dil modellerinin belirli görev ve ortamlar için optimize edilmemesi, performans ve maliyet kayıplarına yol açıyor; harness adaptörleri bu sorunu çözerek %55'e varan doğruluk ve token tasarrufu sağlıyor, bu da geniş çaplı uygulamalarda önemli tasarruf ve verimlilik anlamına geliyor.",
+  "etiketler": [
+    "harness adapters",
+    "RL",
+    "LoRA",
+    "Qwen3.8-27B",
+    "Terminal-Bench 2.1"
+  ],
+  "anilan_modeller": [
+    "Qwen3.8-27B"
+  ],
+  "yorum_tr": "Harness adaptörleri, modelin belirli uygulama ortamlarına özgü verimliliğini artırarak geliştiricilerin aynı modeli daha düşük maliyetle ve daha yüksek doğrulukla kullanmasını mümkün kılıyor. Bu yaklaşım, büyük modellerin özelleştirilmiş görevlerdeki performans sınırlarını yeniden tanımlayabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen3.8-27B + pi harness adapter",
+      "benchmark": "Terminal-Bench 2.1",
+      "skor": 55,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "pi harness, pass@1",
+      "kaynak_metinden_alinti": "If we freeze those weights and add a custom RL-trained LoRA adapter we can get 55% pass@1, with average token usage of 1.5K."
+    }
+  ],
+  "gorsel_url": "https://huggingface.co/blog/assets/harness-adapters-at-scale/thumbnail.png",
+  "url": "https://huggingface.co/blog/harness-adapters-at-scale",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-11-20T00:00:00.000Z",
+  "slug": "introducing-harness-adapters-adapt-your-favorite-model-to-yo"
+}

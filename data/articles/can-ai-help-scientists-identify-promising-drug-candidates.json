@@ -1,0 +1,92 @@
+{
+  "baslik_tr": "OpenAI, MedChemBench ile İlaç Adayı Belirlemede AI Performansını Ölçtü",
+  "ozet_tr": "OpenAI, ilaç keşfi sürecindeki kritik kararları değerlendirebilen yeni bir benchmark olan MedChemBench'i tanıttı. 99 gerçek dünyadan problem üzerinden yapılan testlerde, GPT‑6.2 Astra %84.5, GPT‑6 Astra %83.3 gibi yüksek puanlar alarak moleküler yapı ve bilimsel gerekçelendirme konularında güçlü performans sergiledi.",
+  "detayli_icerik_tr": "OpenAI, ilaç araştırmalarında moleküler yapıyı deneysel bulgularla ilişkilendirebilen yapay zeka modellerini ölçmek amacıyla MedChemBench adlı bir benchmark geliştirdi. Benchmark, 117 makale ve patente dayanan 99 problem içeriyor; bu problemler moleküler yapı yeniden oluşturma, bilimsel gerekçelendirme, bileşik sıralama ve özellik tahmini gibi dört bileşeni kapsıyor.\n\nTestler, GPT‑6.2 Astra'nın xhigh akıl yürütme ayarında %84.5, GPT‑6 Astra'nın %83.3, GPT‑6.1 Sol'un %82.0 ve GPT‑5.6 Sol'un %58.2 puan almasıyla sonuçlandı. Özellikle Astra serisi, moleküler yapı yeniden oluşturma ve deneysel kanıtları açıklama konularında öne çıktı; yapı bileşeninde %95.4 kredi toplarken, bileşik seçimi ve sayısal özellik tahmini alanlarında sadece yarı yarıya başarı gösterdi.\n\nBenchmark, bir PRMT5 inhibitörü örneğiyle modellerin birden fazla özelliği (hücre içi aktivite, geçirgenlik, metabolik stabilite) aynı anda tahmin etme yeteneğini test etti. Bu tür çoklu özellik tahmini, ilaç kimyasının sıkça karşılaştığı aktivite‑permeabilite‑metabolizma dengesini yansıtıyor.\n\nSonuçlar, modellerin tek bir deneme ve araçsız bir ortamda çalıştığını, gerçek laboratuvar deneyleri ve geri bildirim döngülerinin henüz dahil edilmediğini vurguluyor. OpenAI, MedChemBench'in AI destekli ilaç keşfi araştırmalarını yönlendirecek eksikleri ortaya koyacağını ve gelecekteki model iyileştirmeleri için bir yol haritası sağlayacağını belirtiyor.",
+  "onemli_maddeler": [
+    "MedChemBench, ilaç keşfi sürecindeki moleküler yapı‑özellik ilişkisini ölçen ilk kapsamlı AI benchmark'ı.",
+    "GPT‑6.2 Astra, xhigh ayarında %84.5 kredi alarak en yüksek genel performansı gösterdi; yapı yeniden oluşturma bileşeninde %95.4 kredi topladı.",
+    "Modeller, bileşik seçimi ve sayısal özellik tahmini gibi kritik görevlerde hâlâ %50 civarında bir başarı oranına sahip, bu da iyileştirme alanı olduğunu gösteriyor."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Yeni bir benchmark, AI modellerinin ilaç keşfi alanındaki yetkinliğini ölçerek araştırma ve geliştirme yönlerini belirlemesi açısından sektörel bir etki yaratıyor.",
+  "etiketler": [
+    "medicinal chemistry",
+    "AI benchmark",
+    "drug discovery",
+    "GPT-6",
+    "MedChemBench"
+  ],
+  "anilan_modeller": [
+    "GPT-6.2 Astra",
+    "GPT-6 Astra",
+    "GPT-6.1 Sol",
+    "GPT-5.6 Sol",
+    "GPT-6.1 Terra",
+    "GPT-5.6 Luna"
+  ],
+  "yorum_tr": "MedChemBench, AI'nın ilaç tasarımındaki çoklu özellik dengelerini kavrayabilme kapasitesini somut bir ölçütle ortaya koyarak, geliştiricilerin model iyileştirmelerine ve bilim insanlarının AI destekli karar süreçlerine yön verecek bir referans noktası sunuyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GPT-6.2 Astra",
+      "benchmark": "MedChemBench",
+      "skor": 84.5,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "xhigh",
+      "kaynak_metinden_alinti": "At the xhigh reasoning setting, GPT‑6.2 Astra earned 84.5% of the available credit"
+    },
+    {
+      "model": "GPT-6 Astra",
+      "benchmark": "MedChemBench",
+      "skor": 83.3,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "xhigh",
+      "kaynak_metinden_alinti": "GPT‑6 Astra earned 83.3% of the available credit at the shared xhigh setting"
+    },
+    {
+      "model": "GPT-6.1 Sol",
+      "benchmark": "MedChemBench",
+      "skor": 82,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "xhigh",
+      "kaynak_metinden_alinti": "GPT‑6.1 Sol earned 82.0% of the available credit"
+    },
+    {
+      "model": "GPT-5.6 Sol",
+      "benchmark": "MedChemBench",
+      "skor": 58.2,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "xhigh",
+      "kaynak_metinden_alinti": "GPT‑5.6 Sol earned 58.2% of the available credit"
+    },
+    {
+      "model": "GPT-6 Astra",
+      "benchmark": "MedChemBench structure component",
+      "skor": 95.4,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "xhigh",
+      "kaynak_metinden_alinti": "Astra earned 95.4% of the available credit at xhigh for the structure component"
+    },
+    {
+      "model": "GPT-6 Astra",
+      "benchmark": "MedChemBench max effort",
+      "skor": 83.8,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "max effort",
+      "kaynak_metinden_alinti": "At max effort, GPT‑6 Astra reached 83.8%"
+    }
+  ],
+  "gorsel_url": "https://images.ctfassets.net/kftzwdyauwt9/37ZvKdwVigsgJ7G3FMr4Nb/12854063a79d19d63278704bf54e3010/introducing-medchembench-social.png?w=1600&h=900&fit=fill",
+  "url": "https://openai.com/index/introducing-medchembench",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-11-20T00:00:00.000Z",
+  "slug": "can-ai-help-scientists-identify-promising-drug-candidates"
+}

@@ -1,0 +1,71 @@
+{
+  "baslik_tr": "OpenAI, GPT‑6.2 serisinde adversarial distilasyon savunmalarını güçlendirdi",
+  "ozet_tr": "OpenAI, frontier AI modellerinin korunması için yeni bir savunma katmanı tanıttı. GPT‑6.2 Astra ve GPT‑6.2 Sol modellerinde, korunan akıl yürütme izlerinin (chain‑of‑thought) çıkarılma oranı %54'ten %0.2'ye düşürülerek adversarial distilasyon riskleri büyük ölçüde azaltıldı.",
+  "detayli_icerik_tr": "OpenAI, son dönemde \"adversarial distillation\" adı verilen bir saldırı vektörüne karşı yeni koruma mekanizmaları geliştirdi. Bu saldırı, bir frontier modelin çıktılarından, özellikle de ara akıl yürütme izlerinden (chain‑of‑thought) yeni bir model eğitilerek aynı yeteneklerin korunmasız bir şekilde yeniden üretilebilmesini içeriyor. OpenAI, bu riski hem model‑seviyesi hem de API‑seviyesi savunmalarla ele alıyor.\n\nYeni savunma stratejisi, saldırı tespitinde kullanılan giriş ve çıkış sınıflandırıcıları, model davranışını yönlendiren adversarial eğitim örnekleri ve API düzeyinde konuşma geçmişine bağlı korunan akıl yürütme bağlamı gibi birden fazla katmanı birleştiriyor. Özellikle, bir modelin önceki isteklerde ürettiği korunan akıl yürütme, yeni mesajlarla ilişkilendirilerek yeniden kullanılmasının önüne geçiliyor; geçmişteki bir mesaj değiştirildiğinde ilgili akıl yürütme otomatik olarak düşürülüyor.\n\nOpenAI, bu güncellemeleri içeren bir iç değerlendirme (adaptive red‑team) yürüttü. Sonuçlar, GPT‑6 Astra modelinde korunan akıl yürütme çıkarma saldırı başarı oranının %54.0 iken, aynı saldırıların GPT‑6.2 Astra üzerinde %0.2'ye düştüğünü gösterdi. Aynı test, mevcut istek üzerinden yapılan çıkarma saldırılarında da %22.9'dan %0.9'a bir azalma kaydetti. Bu düşüş, savunma katmanlarının birlikte çalışmasının etkisini ortaya koyuyor.\n\nOpenAI ayrıca, koordineli distilasyon kampanyalarını tespit edip, hesap seviyesinde müdahale ederek binlerce hesabı kapattığını belirtti. Şirket, bu bulguları sektörel paydaşlarla ve hükümetle paylaşarak, benzer savunma mekanizmalarının yaygınlaştırılmasını hedefliyor. Ulusal güvenlik açısından, yabancı aktörlerin ABD menşeli modellerden korumasız yetenekler elde etmesini engellemek amacıyla yasa önerileri ve ihracat kontrolleri konusunda da destek veriyor.",
+  "onemli_maddeler": [
+    "GPT‑6.2 Astra ve Sol modellerinde korunan akıl yürütme çıkarma saldırı başarı oranı %54'ten %0.2'ye düşürüldü.",
+    "Savunma katmanı, giriş/çıkış sınıflandırıcıları, adversarial eğitim ve API‑seviyesi korumaları birleştiriyor.",
+    "Koordineli distilasyon kampanyalarına karşı binlerce hesabın kapatılması ve sektörel iş birliği sağlanması."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Frontier AI modellerinin güvenliği ve ulusal güvenlik riskleri açısından kritik bir savunma güncellemesi; saldırı başarı oranındaki dramatik düşüş sektördeki güvenlik standartlarını yükseltiyor.",
+  "etiketler": [
+    "adversarial distillation",
+    "AI safety",
+    "GPT-6.2",
+    "cybersecurity",
+    "model safeguards"
+  ],
+  "anilan_modeller": [
+    "GPT-6 Astra",
+    "GPT-6.2 Astra",
+    "GPT-6.2 Sol"
+  ],
+  "yorum_tr": "Bu güncellemeler, frontier modellerin korunmasında yeni bir standart belirleyerek geliştiricilere daha güvenli bir altyapı sunuyor; aynı zamanda saldırı maliyetini artırarak kötü niyetli aktörlerin distilasyon yoluyla yetenek çalmasını zorlaştırıyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GPT-6 Astra",
+      "benchmark": "Adaptive extraction ASR (earlier request)",
+      "skor": 54,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "adaptive black-box",
+      "kaynak_metinden_alinti": "Extracting protected reasoning from an earlier request 54.0"
+    },
+    {
+      "model": "GPT-6.2 Astra",
+      "benchmark": "Adaptive extraction ASR (earlier request)",
+      "skor": 0.2,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "adaptive black-box",
+      "kaynak_metinden_alinti": "Extracting protected reasoning from an earlier request 0.2"
+    },
+    {
+      "model": "GPT-6 Astra",
+      "benchmark": "Adaptive extraction ASR (current request)",
+      "skor": 22.9,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "adaptive black-box",
+      "kaynak_metinden_alinti": "Extracting protected reasoning from the current request 22.9"
+    },
+    {
+      "model": "GPT-6.2 Astra",
+      "benchmark": "Adaptive extraction ASR (current request)",
+      "skor": 0.9,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "adaptive black-box",
+      "kaynak_metinden_alinti": "Extracting protected reasoning from the current request 0.9"
+    }
+  ],
+  "gorsel_url": "https://images.ctfassets.net/kftzwdyauwt9/5SUtPGdssrttC7LfP1yoJ1/b6b000846ab3576c1735c29534ab20b0/combatting-adversarial-distillation-social.png?w=1600&h=900&fit=fill",
+  "url": "https://openai.com/index/combatting-adversarial-distillation",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-11-20T10:00:00.000Z",
+  "slug": "combatting-adversarial-distillation"
+}
