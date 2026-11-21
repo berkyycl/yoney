@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "Nvidia Araştırmacıları, Devasa AI Bağlam Pencerelerinin Çıkmazda Olduğunu Söylüyor",
+  "ozet_tr": "Nvidia araştırma ekibi, dil modellerinin bağlam penceresini milyonlarca tokena çıkarmanın maliyet açısından verimsiz olduğunu savunuyor. Yapılan testlerde, periyodik özetlemeler ve hedefli bilgi çekme yöntemlerinin aynı kaliteyi çok daha düşük kaynak tüketimiyle sağladığı gösterildi.",
+  "detayli_icerik_tr": "Nvidia araştırmacıları, dil modellerinin \"bağlam penceresi\" olarak adlandırılan çalışma belleğinin giderek büyütülmesinin pratikte bir çıkmaz olduğunu iddia ediyor. Bağlam penceresi, modelin yanıt üretirken aynı anda görebildiği metin miktarını belirler ve son yıllarda bu pencere boyutu dramatik bir artış gösterdi.\n\n2023 Mart'ında piyasaya sürülen GPT-4, 8.192 tokenlık bir pencereye sahipti. Nvidia'nın yeni nesil modeli GPT‑5.6 Sol ise yaklaşık bir milyon token işleyebiliyor; bu da GPT‑4'ün yaklaşık 120 katı bir kapasite ve Tolstoy'un \"Savaş ve Barış\" gibi devasa eserleri tek seferde işleyebilecek düzeyde.\n\nAraştırma ekibi, bu devasa pencere boyutunun çoğu senaryoda aşırı olduğunu ve gereksiz hesaplama maliyetlerine yol açtığını belirtiyor. Testlerde, periyodik özetlemeler ve belirli bilgi parçacıklarını hedefleyen arama (retrieval) mekanizmalarının, büyük pencereye kıyasla benzer doğruluk ve tutarlılık sağladığı gözlemlendi.\n\nSonuç olarak, Nvidia gelecekteki model tasarımlarının sadece pencere genişletmeye odaklanmak yerine, akıllı hafıza yönetimi, dinamik özetleme ve etkili bilgi çekme tekniklerine yönelmesi gerektiğini savunuyor. Bu yaklaşım, hem donanım gereksinimlerini hafifletecek hem de bulut hizmetlerinin maliyetini düşürebilecek.",
+  "onemli_maddeler": [
+    "GPT‑5.6 Sol, yaklaşık 1 M tokenlık bağlam penceresiyle GPT‑4'ün 120 katı kapasiteye ulaştı.",
+    "Nvidia araştırmacıları, büyük pencere boyutunun yüksek maliyetli ve çoğu uygulama için gereksiz olduğunu gösterdi.",
+    "Periyodik özetleme ve hedefli bilgi çekme yöntemleri, aynı performansı çok daha düşük kaynak tüketimiyle sağladı.",
+    "Bu bulgular, model mimarilerinin hafıza yönetimi ve dinamik özetleme üzerine odaklanmasını teşvik ediyor."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "Bağlam penceresinin ölçeklendirilmesinin sınırlı faydaları ve maliyetleri üzerine yapılan bu araştırma, model tasarımı ve donanım gereksinimleri açısından sektöre yön gösterici bir perspektif sunuyor.",
+  "etiketler": [
+    "Nvidia",
+    "bağlam penceresi",
+    "dil modelleri",
+    "AI araştırma",
+    "token sayısı"
+  ],
+  "anilan_modeller": [
+    "GPT-4",
+    "GPT-5.6 Sol"
+  ],
+  "yorum_tr": "Bu bulgu, geliştiricilerin devasa bağlam pencereleri yerine daha verimli hafıza yönetimi tekniklerine yönelmelerini teşvik edecek; kullanıcılar ise daha düşük maliyetli ve hızlı yanıtlar alabilecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/11/you-dont-need-long-context-nano-banana-pro.jpg",
+  "url": "https://the-decoder.com/nvidia-researchers-argue-huge-ai-context-windows-are-a-dead-end/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-21T16:23:45.000Z",
+  "slug": "nvidia-researchers-argue-huge-ai-context-windows-are-a-dead"
+}

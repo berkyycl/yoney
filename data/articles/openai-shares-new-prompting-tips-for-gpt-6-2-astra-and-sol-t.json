@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "OpenAI, GPT-6.2 Astra ve Sol için yeni istem (prompt) önerileri paylaştı: Kısa yanıtlar ve gereksiz soruları önleme",
+  "ozet_tr": "OpenAI, GPT-6.2 Astra ve Sol modelleri için sistem istemlerini güncelleyerek yanıtların daha öz ve sorusuz olmasını hedefliyor. Yeni şablonlar, modelin varsayımlarla ilerlemesini, kod üretiminde tekrar kullanım ve testleri sınırlı tutmasını ve API'de geçmiş düzenlemelerinin mantık kaybına yol açmasını önlemeyi amaçlıyor.",
+  "detayli_icerik_tr": "OpenAI, GPT-6.2 Astra ve Sol modellerinin varsayılan yanıt tarzını daha kısa ve doğrudan hâle getirdiğini duyurdu ve geliştiricilere sistem istemlerini bu yeni davranışa göre yeniden yapılandırmalarını önerdi. Astra, önceki sürümlere kıyasla daha özlü yanıtlar veriyor; bu nedenle \"be concise\" gibi talimatların artık gereksiz olduğu vurgulandı. Kullanıcı ve kaynak terminolojisini benimseyen, aktif ses kullanan ve ana noktaları öne çıkaran bir istem, modelin dış okuyucular için bağlam eksikliğini telafi etmesini sağlıyor.\n\nModelin belirsiz bir isteğe karşı kendi varsayımlarıyla ilerlemesi teşvik ediliyor. OpenAI, modelin bir sonraki adımı önerip onay beklemesi yerine, yetki verilen durumlarda otomatik olarak ilerlemesini ve yalnızca kapsam değişikliği, engel, karar gerektiren durumlar ya da geri dönüşü olmayan eylemler için duraklamasını isteyen bir şablon sundu. Bu yaklaşım, uzun görevlerde ara yorumların son yanıta karışmasını önleyerek, son cevabın bağımsız ve tam anlamlı olmasını garanti ediyor.\n\nKod üretiminde ise GPT-6.2, önceki modellerden daha verimli kod yazıyor. Yeni şablon, mevcut kod tabanını yeniden kullanmayı, gereksiz yardımcı fonksiyonlardan kaçınmayı ve testleri yalnızca talep edildiğinde, depo gereksinimi olduğunda ya da belirli regresyonları yakalamak için eklemeyi öngörüyor. Kodun okunabilirliği ve basitliği vurgulanıyor; satır sayısını azaltmak ya da değişken adlarını kısaltmak kaliteyi artırmaz.\n\nAPI tarafında ise, konuşma geçmişinde yapılan düzenlemeler artık önceki akıl yürütme adımlarını silerek yanıt kalitesini düşürebilir ve token maliyetini artırabilir. OpenAI, yeni entegrasyonlarda \"medium\" akıl yürütme seviyesini, mevcut \"none\" ya da \"minimal\" kullananları ise \"low\" seviyesine geçmelerini öneriyor. Ayrıca \"temperature\" ve \"top_p\" parametreleri artık desteklenmiyor. Fiyatlandırma da güncellenmiş; Astra için giriş tokeni başına 8 $, çıkış tokeni başına 40 $ (272 k tokena kadar) ve üst limitlerde fiyatlar iki katına çıkıyor.",
+  "onemli_maddeler": [
+    "GPT-6.2 Astra ve Sol artık varsayılan olarak daha kısa ve doğrudan yanıtlar veriyor; sistem istemleri buna göre yeniden düzenlenmeli.",
+    "Model, belirsiz isteklerde varsayımlarla ilerlemeli ve yalnızca kritik kararlar için kullanıcı onayı almalı.",
+    "Kod üretiminde mevcut kodun yeniden kullanımı, gereksiz soyutlamalardan kaçınma ve testleri sadece talep üzerine ekleme önceliği getirildi.",
+    "API'de konuşma geçmişi düzenlendiğinde önceki akıl yürütme siliniyor; \"temperature\" ve \"top_p\" parametreleri kaldırıldı."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Model davranışındaki temel değişiklikler ve API güncellemeleri, geliştiricilerin entegrasyonlarını yeniden tasarlamasını gerektirdiği için sektörde geniş çaplı etkisi olacak.",
+  "etiketler": [
+    "GPT-6.2",
+    "Astra",
+    "Sol",
+    "prompting",
+    "API"
+  ],
+  "anilan_modeller": [
+    "GPT-6.2 Astra",
+    "GPT-6.2 Sol"
+  ],
+  "yorum_tr": "Bu güncellemeler, geliştiricilerin istem tasarımlarını yeniden gözden geçirmesini zorunlu kılarak verimliliği artırabilir; aynı zamanda API değişiklikleri maliyet ve performans yönetiminde yeni dengelemeler gerektirecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/06/openai_logo_chatgpt-2.png",
+  "url": "https://the-decoder.com/openai-shares-new-prompting-tips-for-gpt-6-2-astra-and-sol-to-fix-brief-answers-and-unnecessary-questions/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-21T13:32:35.000Z",
+  "slug": "openai-shares-new-prompting-tips-for-gpt-6-2-astra-and-sol-t"
+}
