@@ -1,0 +1,37 @@
+{
+  "baslik_tr": "Araştırmacı 2 Milyon Dijital Kaniyeri AI Tedarik Zincirine Yerleştirerek Gizlilik Felaketini Ortaya Çıkardı",
+  "ozet_tr": "Güvenlik araştırmacısı HD Moore, AI hizmetleri üzerinden geçen iki milyon benzersiz prompta gizli anahtarlar ve URL'ler ekleyerek bir canary deneyi yürüttü. Sonuçlar, AI yönlendiricileri, yeniden satıcıları ve bazı büyük sağlayıcıların gizlilik ayarlarını hiçe sayarak hassas verileri sızdırdığını gösterdi.",
+  "detayli_icerik_tr": "Araştırmacı HD Moore, iki milyon \"canary\" içeren promptu, OpenRouter, Vercel gibi AI yönlendiricileri ve çeşitli model sağlayıcılarına gönderdi. Her bir canary, daha önce hiç kullanılmamış AWS erişim anahtarı, SSH parolası, özel git deposu URL'si gibi gerçek gizli bilgiler içeriyordu. Bu bilgiler, zincirdeki herhangi bir adımda sızdırıldığında, Moore'un kontrol ettiği altyapı üzerinden hangi hizmetin sorumlu olduğunu tespit edebiliyordu.\n\nDeneyin bulguları çarpıcıydı: en az üç AI sağlayıcısının saldırganlar tarafından ele geçirildiği, bu saldırganların sızdırılan anahtarları doğrudan AWS API çağrılarında kullanarak on binlerce ek kaynak erişimi elde ettiği ortaya çıktı. Ayrıca, bazı yeniden satıcıların düşük fiyat vaatleriyle promptları kaydedip, bu verileri kendi sunucularına yönlendirdiği tespit edildi. Gizlilik bayrakları (Zero Data Retention, \"no data collection\") ne kadar sıkı olursa olsun, saldırganların bu sistemlerin içine sızması durumunda bu önlemlerin etkisiz kaldığı gösterildi.\n\nEn endişe verici bulgu, bir Çin AI laboratuvarının, gönderilen gizli URL'leri otomatik olarak tarayıp veri topladığıydı. Bu tarama, yalnızca doğrudan laboratuvara gönderilen isteklerde değil, ABD'li hosting sağlayıcıları üzerinden yönlendirilen isteklerde de gerçekleşti. Böylece, ABD'de veri saklamayı tercih eden müşterilerin bile verileri Çin laboratuvarının eline geçebildiği ortaya çıktı. Benzer şekilde, bir başka ABD sağlayıcısı iki ay boyunca gizli URL'leri taramaya devam etti.\n\nMoore, bu sızıntıların önüne geçmek için en etkili yolun modelleri kendi veri merkezlerinde barındırmak olduğunu belirtiyor, ancak bunun maliyetinin yüksek olduğunu vurguluyor. Daha ulaşılabilir bir çözüm olarak, tek bir birinci sınıf sağlayıcıyla doğrudan sözleşme yapıp, ara yönlendiricileri ve yeniden satıcıları ortadan kaldırmak öneriliyor. Ancak bu bile %100 güvenlik garantisi vermiyor; AI ekosistemindeki gizlilik ve güvenlik açıkları hâlâ büyük bir risk oluşturuyor.",
+  "onemli_maddeler": [
+    "En az üç büyük AI sağlayıcısının saldırganlar tarafından ele geçirilerek promptların ve gizli anahtarların sızdırıldığı belirlendi.",
+    "AI yönlendiricileri ve yeniden satıcıları, düşük fiyat vaatleriyle promptları kaydedip veri sızdırma faaliyetlerinde bulundu.",
+    "Bir Çin AI laboratuvarı, gizli URL'leri otomatik olarak tarayarak \"no data collection\" işaretli isteklerde bile veri topladı."
+  ],
+  "kategori": "arastirma",
+  "onem": 5,
+  "onem_gerekce": "Araştırma, AI hizmet zincirindeki sistematik gizlilik ihlallerini ortaya koyarak sektördeki güvenlik paradigmalarını kökten sarsıyor ve hem geliştiricileri hem de son kullanıcıları acil önlem almaya zorunlu kılıyor.",
+  "etiketler": [
+    "AI güvenliği",
+    "veri gizliliği",
+    "prompt sızıntısı",
+    "AI yönlendiriciler",
+    "siber saldırı"
+  ],
+  "anilan_modeller": [
+    "OpenRouter",
+    "Vercel",
+    "Anthropic",
+    "OpenAI",
+    "AWS Bedrock",
+    "Çin AI laboratuvarı"
+  ],
+  "yorum_tr": "Bu bulgular, AI ekosistemindeki çok katmanlı hizmet zincirinin gizlilik risklerini gözler önüne seriyor; geliştiricilerin veri sızıntılarını önlemek için doğrudan birinci sınıf sağlayıcılarla çalışması ve mümkünse modelleri kendi altyapılarına taşıması kaçınılmaz bir gereklilik haline geliyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/ai-privacy-leakage-1152x648.jpg",
+  "url": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
+  "source": "Ars Technica AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-20T20:59:08.000Z",
+  "slug": "researcher-plants-2m-canaries-into-the-ai-supply-chain-a-pri"
+}

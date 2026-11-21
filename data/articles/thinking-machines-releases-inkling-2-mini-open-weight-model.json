@@ -1,0 +1,83 @@
+{
+  "baslik_tr": "Thinking Machines, Inkling 2 Mini Açık Ağırlıklı Modelini Yayınladı",
+  "ozet_tr": "Thinking Machines Lab, 26.4 Milyar parametreli ve sadece 20 GB bellek izine sahip Inkling 2 Mini modelini duyurdu. Model, döngülü (looped) transformer mimarisi sayesinde bir dizüstü bilgisayarda çalışabiliyor ve ajan tabanlı görevlerde yüksek performans sergiliyor.",
+  "detayli_icerik_tr": "Thinking Machines Lab, Inkling 2 Mini adlı yeni bir açık‑ağırlıklı modeli piyasaya sürdü. Model, 24 katmandan oluşan bir döngülü transformer mimarisiyle tasarlandı; ortadaki 12 katman her token için üç kez, kalan altı katman ise tek sefer çalışıyor. Bu sayede daha uzun bir akıl yürütme süreci sağlanırken token sayısı düşük tutuluyor. Inkling 2 Mini, Mixture‑of‑Experts (MoE) yapısına sahip ve toplam 26.4 B parametre, aktif 3.4 B parametre ve döngü hesaba katıldığında token başına 5.4 B ağırlık aktivasyonu sunuyor. Ağırlıkların büyük bir kısmı NVFP4, son dört katmanı ise MXFP8 formatında olduğu için ek bir kuantizasyon kaybı yok ve modelin bellek ayak izi yaklaşık 20 GB.\n\nModel, açık kaynaklı ortamlar için SGLang, vLLM, Ollama, Unsloth, NVIDIA Dynamo ve TokenSpeed gibi çerçevelerde anında kullanılabilir. Ayrıca SkyRL, Miles ve NVIDIA AutoModel üzerinden pekiştirmeli öğrenme (RL) ince ayarı da destekleniyor. Inkling 2 Mini, 1 M token bağlam penceresi ve Apache 2.0 lisansı ile sunuluyor; araştırmacılar Hugging Face üzerinden ağırlıkları ve değişken‑döngü (variable‑loop) versiyonunu indirerek kendi deneylerini yapabiliyor.\n\nPerformans açısından Inkling 2 Mini, 100 B altındaki tüm açık‑ağırlıklı modelleri DeepSWE v1.1 testinde %48.2 başarı oranı ve Vals Index v2.2'de %46.5 puanla lider konumda. Ayrıca Artificial Analysis Index'te 20.1 puan alarak Qwen 3.8‑27B ile eşitleniyor. Maliyet ve hız açısından ise aynı görevde Qwen 3.8‑27B'ye kıyasla yaklaşık %6 daha ucuz ($0.59 vs $3.53) ve %4 daha hızlı (9.0 dk vs 38.2 dk) çalışıyor. GPT‑6 Luna (max) ise $0.15 maliyetle 28 puan elde ediyor.\n\nInkling 2 Mini'nin döngülü mimarisi, modelin düşünme sürecini daha uzun tutup sonuçları daha az tokenla üretmesini sağlıyor. Araştırmacılar, döngü sayısı arttıkça modelin zincir‑düşünce (CoT) süresinin 16 saniyeden 37 saniyeye çıktığını, ancak düşünce zincirinin hâlâ okunabilir kaldığını gözlemledi. Değişken‑döngü araştırma modeli, bu dinamiği daha derinlemesine incelemek isteyen akademisyenlere sunuluyor. Thinking Machines, National Deep Inference Fabric ile iş birliği yaparak bu modeli yorumlanabilirlik araştırmalarına da açıyor.",
+  "onemli_maddeler": [
+    "Inkling 2 Mini, 26.4 B toplam parametre, 3.4 B aktif parametre ve döngü başına 5.4 B ağırlık aktivasyonu ile 20 GB bellek izinde çalışıyor.",
+    "DeepSWE v1.1'de %48.2, Vals Index v2.2'de %46.5 ve Artificial Analysis Index'te 20.1 puan alarak 100 B altındaki açık‑ağırlıklı modelleri geride bırakıyor.",
+    "Maliyet ve hız açısından Qwen 3.8‑27B'ye göre %6 daha ucuz ($0.59) ve %4 daha hızlı (9.0 dk) bir performans sunuyor.",
+    "SGLang, vLLM, Ollama, Unsloth, NVIDIA Dynamo ve TokenSpeed gibi platformlarda açık kaynaklı inference, SkyRL, Miles ve NVIDIA AutoModel ile RL fine‑tuning destekleniyor.",
+    "Değişken‑döngü araştırma modeli, döngü sayısının düşünme süresi ve zincir‑düşünce okunabilirliği üzerindeki etkilerini incelemek için yayınlandı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Inkling 2 Mini, döngülü transformer mimarisi ve açık‑ağırlıklı lisansıyla yerel AI modellerinde yeni bir performans ve erişilebilirlik standardı belirliyor; hem akademik hem de endüstriyel araştırmacılar için önemli bir araç.",
+  "etiketler": [
+    "Inkling 2 Mini",
+    "looped transformer",
+    "open-weight model",
+    "Mixture-of-Experts",
+    "AI benchmarking"
+  ],
+  "anilan_modeller": [
+    "Inkling 2 Mini",
+    "Inkling 2 Small",
+    "Qwen 3.8-27B",
+    "GPT-6 Luna"
+  ],
+  "yorum_tr": "Inkling 2 Mini, düşük donanım gereksinimi ve yüksek görev verimliliği sayesinde yerel LLM ekosisteminde rekabeti artıracak; geliştiriciler daha hızlı prototipler oluşturabilirken, araştırmacılar döngülü mimarinin yorumlanabilirliği üzerine yeni çalışmalar yapabilecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Inkling 2 Mini",
+      "benchmark": "Artificial Analysis Index",
+      "skor": 20.1,
+      "birim": "points",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Inkling 2 Mini is a looped transformer ... powerful enough for agentic work with a score of 20.1 on AA Index."
+    },
+    {
+      "model": "Inkling 2 Mini",
+      "benchmark": "DeepSWE v1.1",
+      "skor": 48.2,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Inkling 2 Mini leads every open-weights model under 100B total parameters on DeepSWE v1.1 with 48.2%."
+    },
+    {
+      "model": "Inkling 2 Mini",
+      "benchmark": "Vals Index v2.2",
+      "skor": 46.5,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Inkling 2 Mini leads ... on Vals Index v2.2 with 46.5%."
+    },
+    {
+      "model": "Inkling 2 Mini",
+      "benchmark": "Intelligence Index task cost",
+      "skor": 0.59,
+      "birim": "$",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "per task",
+      "kaynak_metinden_alinti": "It costs $0.59 and takes 9.0 minutes per Intelligence Index task vs. $3.53 and 38.2 minutes for Qwen3.8 27B."
+    },
+    {
+      "model": "Inkling 2 Mini",
+      "benchmark": "Intelligence Index task time",
+      "skor": 9,
+      "birim": "minutes",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "per task",
+      "kaynak_metinden_alinti": "It costs $0.59 and takes 9.0 minutes per Intelligence Index task vs. $3.53 and 38.2 minutes for Qwen3.8 27B."
+    }
+  ],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/11/Tinker-11-20-2026_11_11_PM.jpg",
+  "url": "https://www.testingcatalog.com/thinking-machines-releases-inkling-2-mini-looped-open-model/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-20T22:07:14.000Z",
+  "slug": "thinking-machines-releases-inkling-2-mini-open-weight-model"
+}

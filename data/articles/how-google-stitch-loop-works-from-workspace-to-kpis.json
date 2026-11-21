@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "Google Stitch Loop: Ürün Yönetiminde Otonom AI Döngüsü",
+  "ozet_tr": "Google, bekleme listesiyle sınırlı bir şekilde erişilebilen Stitch Loop adlı otonom Stitch ajanını tanıttı. Jitro kod adıyla geliştirilen bu sistem, GitHub projelerini bir Workspace içinde toplayıp, 100'den fazla entegrasyonla veri izleyerek hedef odaklı KPI döngüleri oluşturuyor.",
+  "detayli_icerik_tr": "Google, yeni bir deneysel ürün olan Stitch Loop'u duyurdu. İç adı Jitro olan bu self‑improving Stitch ajanı, bir GitHub projesi için Workspace oluşturulmasıyla çalışmaya başlıyor ve kullanıcıların önceden tanımlı \"Harden Application Security\" gibi döngüleri seçmelerine ya da kendi hedeflerini, başlıklarını, ikonlarını ve amaçlarını girerek özel döngüler yaratmalarına olanak tanıyor.\n\nLoop, proje dosyaları, bağlantılar, depolar ve Jira, Linear, Datadog, Sentry, Notion, Snowflake, Salesforce, Intercom, Discord, Slack, Figma gibi 100'ün üzerindeki entegrasyonlardan gelen bağlamı analiz ediyor. Bu verileri kullanarak ürün ve metrikler üzerine kendi \"Skills\" belgelerini Markdown formatında oluşturuyor; önerilen KPI'lar ve hedef değerler anında döngü olarak ekleniyor ve ilerleme durumu görsel olarak izlenebiliyor.\n\nTestlerde, Telegram topluluğunun katkılarını artırma hedefi, üyeler, kayıtlı katkıda bulunanlar ve aktif üyeler gibi ayrı KPI'lara bölünerek bir gösterge panosunda sunuldu. Eksik bir tartışma botu ve kanal etiketleri gibi sorunlar tespit edildi, ardından Gemini destekli bir Bot API entegrasyonu geliştirildi ve üretim KPI'ları izlenerek etki ölçüldü. Loop, bu tür görevleri otomatikleştirerek mühendislik ve ürün liderlerinin rolünü, birden fazla ekip üzerinde yönetsel bir bakış açısına dönüştürüyor.\n\nYazar, Stitch Loop'un şirket içi ürün geliştirme süreçlerini otonom AI organizasyonlarına doğru bir adım olarak gördüğünü belirtiyor. 2027'de AI'nın yarı düzenlenmiş bir ortamda ilerlemesiyle bu tür sistemlerin daha da olgunlaşması ve yönetim katmanlarını azaltması bekleniyor.",
+  "onemli_maddeler": [
+    "Stitch Loop, Jitro adıyla geliştirilen ve hedef odaklı KPI döngüleri oluşturan otonom bir AI ajanıdır.",
+    "100'ün üzerindeki entegrasyon (Jira, Slack, Snowflake vb.) sayesinde proje bağlamı otomatik olarak toplanır ve analiz edilir.",
+    "Kullanıcılar, önceden tanımlı veya özel döngüler oluşturarak ürün metriklerini izleyebilir ve Gemini destekli geliştirme süreçlerini otomatikleştirebilir."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Stitch Loop, ürün yönetiminde AI‑destekli otomasyonu geniş ölçekte sunarak geliştiricilerin ve yöneticilerin iş akışını kökten değiştirme potansiyeline sahip, sektördeki AI araçlarının evriminde kritik bir adım olarak değerlendirilebilir.",
+  "etiketler": [
+    "Google",
+    "Stitch Loop",
+    "AI agent",
+    "Ürün yönetimi",
+    "Entegrasyonlar"
+  ],
+  "anilan_modeller": [
+    "Gemini",
+    "Jules v2"
+  ],
+  "yorum_tr": "Stitch Loop, ürün ekiplerinin veri odaklı karar almasını otomatikleştirerek hem geliştirme hızını artıracak hem de yöneticilerin stratejik odaklanmasını sağlayacak; bu da AI‑destekli ürün yönetiminde yeni bir standart oluşturabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/11/Accelerate-beta-alert-delivery-Stitch-Loop-11-21-2026_12_59_AM.jpg",
+  "url": "https://www.testingcatalog.com/how-google-stitch-loop-works-from-workspace-to-kpis/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-21T00:08:45.000Z",
+  "slug": "how-google-stitch-loop-works-from-workspace-to-kpis"
+}

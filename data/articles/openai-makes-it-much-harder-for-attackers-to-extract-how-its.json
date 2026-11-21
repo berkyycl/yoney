@@ -1,0 +1,73 @@
+{
+  "baslik_tr": "OpenAI, GPT-6 ve GPT-6.2 modellerinde içsel akıl yürütmeyi çıkarmayı çok daha zorlaştırdı",
+  "ozet_tr": "OpenAI, GPT-6 Astra ve yeni GPT-6.2 Astra modelleri için savunma katmanlarını güçlendirerek, içsel akıl yürütme bilgilerinin saldırganlar tarafından çıkarılma oranını yüzde 54'ten yüzde 0.2'ye düşürdü. Güncellenen korumalar, hedefli eğitim, giriş‑çıkış filtreleri ve API engelleriyle bireysel istekleri, haftalık binlerce hesabın yasaklanmasıyla da koordine saldırıları engelliyor.",
+  "detayli_icerik_tr": "OpenAI, son model güncellemesiyle GPT-6 Astra ve GPT-6.2 Astra üzerinde içsel akıl yürütme verilerinin dışarı sızdırılmasını önlemek için bir dizi yeni savunma mekanizması devreye aldı. İç testlerde, önceki isteklere yönelik korumalı akıl yürütme çıkarma saldırılarının başarı oranı GPT-6 Astra'da %54 iken, aynı saldırı GPT-6.2 Astra'da sadece %0.2'ye geriledi. Aktif isteklerdeki saldırı başarısı da %22.9'dan %0.9'a düştü.\n\nBu savunma katmanları iki seviyede çalışıyor. Tek tek isteklerde, model hedefli eğitim verileriyle güçlendirilirken, gelen mesaj ve araç çağrıları için giriş‑çıkış filtreleri uygulanıyor ve eski modellerin korumalı akıl yürütme verilerini okumasını engelleyen API blokları ekleniyor. Koordine saldırı kampanyalarına karşı ise OpenAI, haftada binlerce ila on binlerce hesabı otomatik olarak yasaklayarak geniş çaplı veri hırsızlığını önlüyor.\n\nOpenAI, aynı iyileştirmeleri GPT-6 Astra modeline de kademeli olarak getiriyor. Bu adımlar, sadece OpenAI ekosistemi içinde değil, rakip şirketlerin de benzer önlemler almasına ilham veriyor. Anthropic, sistematik distilasyon saldırılarına karşı benzer bir yaklaşım benimseyerek, on binlerce hesabı yasaklamış ve %90‑99 oranında başarı elde ettiğini duyurdu.\n\nŞirket, bu güncellemelerin yanı sıra sektörel bir iş birliği çağrısında bulunarak, politika yapıcıların ve diğer yapay zeka sağlayıcılarının da ortak bir savunma stratejisi geliştirmesini istiyor. Bu, gelecekteki model hırsızlığı ve bilgi sızdırma risklerini azaltmak için kritik bir adım olarak görülüyor.",
+  "onemli_maddeler": [
+    "GPT-6 Astra'da korumalı akıl yürütme çıkarma saldırı başarısı %54'ten %0.2'ye düştü.",
+    "Aktif isteklerdeki saldırı başarısı %22.9'dan %0.9'a geriledi.",
+    "Savunma katmanları hedefli eğitim, giriş‑çıkış filtreleri ve API bloklarını içeriyor.",
+    "OpenAI, haftada binlerce ila on binlerce hesabı yasaklayarak koordine saldırıları engelliyor.",
+    "Anthropic de benzer önlemler alarak %90‑99 başarı oranıyla veri hırsızlığını önledi."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Mevcut büyük dil modellerinin içsel akıl yürütme bilgilerinin sızdırılmasını büyük ölçüde azaltan kritik bir güvenlik güncellemesi, sektördeki model koruma standartlarını yükseltiyor.",
+  "etiketler": [
+    "OpenAI",
+    "GPT-6",
+    "AI güvenliği",
+    "Model koruması",
+    "Siber saldırı"
+  ],
+  "anilan_modeller": [
+    "GPT-6 Astra",
+    "GPT-6.2 Astra",
+    "GPT-6.2 Sol"
+  ],
+  "yorum_tr": "Bu güncelleme, geliştiricilerin model içeriğini koruma konusundaki güvenini artırırken, kullanıcıların da daha güvenli bir hizmet almasını sağlıyor. Endüstri çapında benzer savunma mekanizmalarının benimsenmesi, yapay zeka güvenliğinin standartlaşmasına katkı verecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GPT-6 Astra",
+      "benchmark": "Adaptive Extraction ASR (prior request)",
+      "skor": 54,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "adaptive black-box red teaming, aggregated across six attacker models",
+      "kaynak_metinden_alinti": "Attacks pulling protected reasoning from prior requests dropped from a 54.0 percent success rate on GPT-6 Astra to 0.2 percent on GPT-6.2 Astra."
+    },
+    {
+      "model": "GPT-6.2 Astra",
+      "benchmark": "Adaptive Extraction ASR (prior request)",
+      "skor": 0.2,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "adaptive black-box red teaming, aggregated across six attacker models",
+      "kaynak_metinden_alinti": "Attacks pulling protected reasoning from prior requests dropped from a 54.0 percent success rate on GPT-6 Astra to 0.2 percent on GPT-6.2 Astra."
+    },
+    {
+      "model": "GPT-6 Astra",
+      "benchmark": "Adaptive Extraction ASR (current request)",
+      "skor": 22.9,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "adaptive black-box red teaming, aggregated across six attacker models",
+      "kaynak_metinden_alinti": "Attacks on active requests fell from 22.9 to 0.9 percent, OpenAI says."
+    },
+    {
+      "model": "GPT-6.2 Astra",
+      "benchmark": "Adaptive Extraction ASR (current request)",
+      "skor": 0.9,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "adaptive black-box red teaming, aggregated across six attacker models",
+      "kaynak_metinden_alinti": "Attacks on active requests fell from 22.9 to 0.9 percent, OpenAI says."
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/02/ai_model_distill.jpeg",
+  "url": "https://the-decoder.com/openai-makes-it-much-harder-for-attackers-to-extract-how-its-latest-ai-models-think/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-20T20:31:50.000Z",
+  "slug": "openai-makes-it-much-harder-for-attackers-to-extract-how-its"
+}

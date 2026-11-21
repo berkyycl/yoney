@@ -1,0 +1,37 @@
+{
+  "baslik_tr": "Inkling 2 Mini Tanıtıldı: Yerel Kurulumlar İçin Keskin Performans",
+  "ozet_tr": "Thinking Machines Lab, 26 milyar parametreli fiziksel büyüklüğe sahip ama token başına sadece 3 B aktif parametre kullanan yeni Inkling 2 Mini modelini duyurdu. Model, katman döngüsü sayesinde 48 katman ziyareti gerçekleştirerek büyük modellerin kapasitesini taklit ediyor ve 1 M token bağlam, görüntü‑metin çoklu mod desteği sunuyor.",
+  "detayli_icerik_tr": "Inkling 2 Mini, 24 katmanlı bir decoder mimarisine sahip bir Mixture‑of‑Experts (MoE) modeli. Ortadaki 12 katman üç kez döngüye alınarak toplamda 48 katman ziyareti yapılır; bu sayede fiziksel olarak 24 katman bulunmasına rağmen model, 48 katmanlı bir ağ gibi davranır. Her katman ziyareti sırasında token, 128 uzman arasından 8 tanesine yönlendirilir ve döngü geçişlerinde çapraz‑geçiş mesajlarıyla bilgi akışı sağlanır. Katmanlar 0‑5 ve 18‑23 bir kez, 6‑17 arası ise üç kez çalışır ve aynı ağırlıklar tekrar kullanılır.\n\nModelin gizli boyutu 2 304, uzmanların ara katman genişliği 1 152 olarak belirlenmiştir. Uzmanlar SwiGLU tabanlıdır ve seçilen skorlar normalize edilip 8 ile ölçeklendirilir. Dönüşümcüler, tam‑dikkat katmanlarında dinamik anahtar‑değer konvolüsyonları ve öğrenilmiş göreceli konum logitleri kullanır. Ayrıca, NVFP4 ve MXFP8 karışık‑kesirli ağırlık formatı sayesinde model, düşük bellek tüketimiyle yüksek doğruluk sunar.\n\nInkling 2 Mini, yerel AI kurulumları için optimize edilmiştir; Hugging Face Transformers, llama.cpp, MLX ve SGLang gibi popüler çerçevelerde doğrudan kullanılabilir. GGUF 4‑bit (IQ4_NL) ve 8‑bit (Q8_0) kuantizasyonları mevcuttur ve SGLang içinde spekülatif DSpark drafter desteğiyle hızlandırma sağlanabilir. Araştırma varyantı, döngü sayısını 1‑2‑3 arasında ayarlayarak hız‑kalite dengesini değiştirme imkanı tanır.\n\nBenchmark sonuçları, Inkling 2 Mini'nin Artificial Analysis Intelligence Index v5'te sınıfının en iyisi olduğunu gösteriyor. 48 benchmarktan 32'sinde Gemma 4 31B, Muse Glimmer, Qwen 3.8‑27B ve Nemotron 3.5 Super VL gibi rakipleri geride bırakıyor. FrontierCode v2.0'de lider, Terminal‑Bench 4.0'de Qwen 3.8‑27B ile eşit, AutomationBench‑AA v1.0.6'da ise biraz geride kalıyor. Bu sonuçlar, modelin kod üretimi ve bilgi‑iş akışı görevlerinde güçlü bir yerel yardımcı olma potansiyelini ortaya koyuyor.",
+  "onemli_maddeler": [
+    "Inkling 2 Mini, 24 fiziksel katmanla 48 katman ziyareti yaparak büyük modellerin kapasitesini taklit eden döngülü transformer mimarisi kullanıyor.",
+    "Model, 1 M token bağlam, çoklu‑mod (görüntü‑metin) desteği ve 128 uzman arasından 8'ini seçen MoE yapısıyla yüksek verimlilik sağlıyor.",
+    "GGUF 4‑bit ve 8‑bit kuantizasyonları, SGLang spekülatif DSpark drafter ve yerel ortamlar için geniş çerçeve entegrasyonları (Transformers, llama.cpp, MLX) sunuluyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Inkling 2 Mini, yerel AI kurulumları için büyük ölçekli modellerin performansını düşük bellek ve maliyetle sunarak geliştiricilerin ve araştırmacıların erişimini genişletiyor; aynı zamanda yenilikçi döngülü MoE mimarisi sektörde yeni bir tasarım trendi oluşturabilir.",
+  "etiketler": [
+    "Inkling 2 Mini",
+    "Mixture-of-Experts",
+    "lokal AI",
+    "multimodal",
+    "benchmark"
+  ],
+  "anilan_modeller": [
+    "Inkling 2 Mini",
+    "Inkling 2 Small",
+    "Qwen 3.8 27B",
+    "Gemma 4 31B",
+    "Muse Glimmer",
+    "Nemotron 3.5 Super VL"
+  ],
+  "yorum_tr": "Inkling 2 Mini, yerel donanımda yüksek kapasiteli çoklu‑mod modelleri çalıştırmak isteyen geliştiriciler ve araştırmacılar için önemli bir adım. Döngülü katman mimarisi ve düşük‑bit kuantizasyonları, performans‑maliyet dengesini iyileştirerek yeni uygulama senaryolarının önünü açıyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://huggingface.co/blog/assets/inkling2mini/thumbnail.png",
+  "url": "https://huggingface.co/blog/inkling2mini",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-11-20T00:00:00.000Z",
+  "slug": "welcome-inkling-2-mini-cutting-edge-performance-for-your-loc"
+}

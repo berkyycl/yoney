@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "Signal, iOS 27 ve Android'de Ekran Görüntüsü Almayı Engelleyerek AI Ajanslarının Özel Sohbetleri Okumasını Önlüyor",
+  "ozet_tr": "Signal, iOS 27 ve desteklenen Android sürümlerinde ekran görüntüsü almayı engelleyerek yapay zeka asistanlarının şifreli sohbetleri doğrudan ekrandan okuyup işleme almasını önlemeye başladı. Şirket, bu adımı gizlilik için \"varoluşsal bir tehdit\" olarak nitelendirerek, platformların AI entegrasyonlarını yeniden gözden geçirmesi gerektiğini vurguluyor.",
+  "detayli_icerik_tr": "Signal, son güncellemeleriyle iOS 27 ve belirli Android sürümlerinde ekran görüntüsü almayı otomatik olarak engelleyen bir koruma katmanı ekledi. Bu koruma, bir AI asistanı (örneğin Apple'ın Siri AI'sı veya Google'ın Gemini Intelligence'ı) ekran içeriğine erişmeye çalıştığında devreye giriyor ve ekran görüntüsü alınmasını engelliyor. Böylece, uçtan uca şifreleme protokolünün ötesinde, mesajların ekranda görüntülenmesi yoluyla dışa sızması engellenmiş oluyor.\n\nŞirket, Reuters'a verdiği açıklamada, AI ajanlarının ekran içeriğini yakalayıp işleyebilmesinin gizlilik açısından \"varoluşsal bir tehdit\" olduğunu belirtti. Meta'nın Muse adlı AI ajanının Android ve macOS'ta geniş izinler (erişilebilirlik araçları ve ekran görüntüsü alma) sayesinde Signal içeriğini yakaladığına dair bir örnek verildi; Meta bu durumun yalnızca kullanıcı izniyle gerçekleştiğini savunuyor.\n\nSignal, daha önce Windows üzerindeki Microsoft Recall özelliğini de engellemişti, ancak macOS'ta ekran görüntüsü engellemenin hâlâ güvenilir bir şekilde yapılamadığını ve AI ajanlarının dosya sistemine ve bildirimlere erişiminin devam eden bir risk olduğunu kabul ediyor. Şirket, Apple, Google ve Microsoft'un AI ajanlarını uygulamalardan tamamen izole etmeyi kolaylaştıracak sistem seviyesinde çözümler sunmasını talep ediyor.\n\nBu gelişme, mobil mesajlaşma uygulamalarının gizlilik savunmalarını güçlendirme yönündeki trendin bir parçası olarak görülüyor. AI entegrasyonlarının artmasıyla birlikte, platform sağlayıcılarının sadece veri şifrelemesi değil, aynı zamanda ekran ve sistem düzeyinde veri sızıntılarını da önleyecek mekanizmalar geliştirmesi bekleniyor.",
+  "onemli_maddeler": [
+    "Signal, iOS 27 ve desteklenen Android sürümlerinde ekran görüntüsü almayı otomatik olarak engelliyor.",
+    "AI asistanları (Siri, Gemini vb.) ekran içeriğini yakalayarak şifreli mesajları dışa aktarabilir; bu yeni koruma bu riski ortadan kaldırıyor.",
+    "Meta'nın Muse AI ajanının geniş izinlerle Signal içeriğini yakaladığı örneği, gizlilik tehditlerinin somut bir göstergesi olarak sunuldu."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Gizlilik odaklı bir mesajlaşma uygulamasının AI ajanlarına karşı yeni bir savunma mekanizması eklemesi, sektörde veri koruma standartlarını yükseltebilir ve diğer platformların benzer önlemler almasını tetikleyebilir.",
+  "etiketler": [
+    "gizlilik",
+    "yapay zeka",
+    "mobil güvenlik",
+    "Signal",
+    "ekran görüntüsü engelleme"
+  ],
+  "anilan_modeller": [
+    "Siri",
+    "Gemini",
+    "Muse",
+    "Recall"
+  ],
+  "yorum_tr": "Signal'in bu güncellemesi, AI destekli asistanların gizlilik üzerindeki potansiyel tehditlerine karşı bir uyarı niteliğinde. Geliştiriciler, benzer koruma katmanlarını entegre etmeyi düşünürken, kullanıcılar da AI entegrasyonlarının sınırlandırılması konusunda daha bilinçli olacak.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/11/signal_ai_agents.png",
+  "url": "https://the-decoder.com/signal-blocks-screenshots-on-ios-27-and-android-to-stop-ai-agents-from-reading-private-chats/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-20T19:50:27.000Z",
+  "slug": "signal-blocks-screenshots-on-ios-27-and-android-to-stop-ai-a"
+}

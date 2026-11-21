@@ -1,0 +1,69 @@
+{
+  "baslik_tr": "Hebbia, GPT-6 Astra ile finansal araştırmalarda %13,6'lık alıntı üstünlüğü ve %97,9 sunum başarısı yakaladı",
+  "ozet_tr": "Hebbia, OpenAI'nin yeni GPT-6 Astra modelini finansal araştırma süreçlerine entegre ederek kaynak alıntılamada %13,6 puan, alıntı alaka düzeyinde %99,5 ve sunum kalitesinde %97,9 başarı elde etti. Model, hem belge seçimi hem de banka sunumları hazırlama aşamasında rakip modellerin önüne geçti.",
+  "detayli_icerik_tr": "OpenAI'nin GPT-6 Astra modeli, Hebbia'nın Matrix platformunda finansal araştırma ve raporlama iş akışlarını yeniden şekillendiriyor. Bir banka uzmanı, 2.000'den fazla dosyayı içeren bir veri odasını inceleyerek gelir dayanıklılığı, müşteri yoğunluğu ve sözleşme şartlarını analiz ederken, GPT-6 Astra ilgili belgeleri otomatik olarak seçip yanıtları PowerPoint slaytlarına dönüştürüyor. Bu sayede kullanıcılar, kaynakları doğrudan alıntılayarak kararların izlenebilirliğini artırıyor ve sunumları firmanın şablon ve marka standartlarına uygun şekilde oluşturuyor.\n\nHebbia'nın testlerinde GPT-6 Astra, gerekli kaynak türlerini alıntılamada en iyi alternatifi %13,6 puan geride bıraktı ve alıntılanan metinlerin %99,5'i soruya tam anlamıyla yanıt veriyordu. Sunum gereksinimlerine uyum konusunda ise model %97,9 başarı oranı yakalayarak en iyi rakibini %14,4 puan farkla geride bıraktı. Bu sonuçlar, modelin hem kapsamlı belge taraması hem de talimatları hassas bir şekilde takip etme yeteneğinin bir göstergesi olarak vurgulandı.\n\nHebbia'nın teknik ekibi, testleri Ağustos-Eylül 2026 döneminde ön sürüm üzerinden yürüttü ve aynı finansal senaryolar ile değerlendirme kriterleri tüm modeller için sabit tutuldu. Uzmanlar, veri odasındaki binlerce belge arasında tek bir yüzde puanlık iyileşmenin bile büyük maliyet ve zaman tasarrufu sağladığını belirtiyor. GPT-6 Astra'nın ürettiği slaytlar, firma logosu ve stiline uygun şekilde tasarlanıyor; ayrıca her slayt dipnotunda alıntı yapılan belgeye doğrudan bağlantı sunuluyor.\n\nHebbia, bu başarıları gelecekte finans profesyonelleri için arka planda çalışan ajanların, kritik sinyalleri erken tespit edip kullanıcılara sunması vizyonunu desteklemek amacıyla kullanmayı planlıyor. Modelin yüksek doğruluk ve izlenebilirlik sunması, bankacılık ve yatırım danışmanlığı gibi yüksek riskli karar süreçlerinde yapay zekanın güvenilir bir yardımcı olma potansiyelini pekiştiriyor.",
+  "onemli_maddeler": [
+    "GPT-6 Astra, kaynak alıntılamada %13,6 puanlık liderlik sağladı ve alıntı alaka düzeyi %99,5'e ulaştı.",
+    "Sunum gereksinimlerine uyumda %97,9 başarı oranı elde ederek en iyi alternatifi %14,4 puan geride bıraktı.",
+    "Model, hem belge seçimi hem de PowerPoint şablonuna uygun sunum üretiminde rakip modellerin önüne geçti."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "GPT-6 Astra, finansal araştırma ve raporlama süreçlerinde hem doğruluk hem de üretkenlik açısından sektördeki mevcut modelleri geride bırakarak büyük verimlilik ve güvenilirlik artışı sağlıyor.",
+  "etiketler": [
+    "finans",
+    "yapay zekâ",
+    "GPT-6 Astra",
+    "Hebbia",
+    "döküman analizi"
+  ],
+  "anilan_modeller": [
+    "GPT-6 Astra"
+  ],
+  "yorum_tr": "GPT-6 Astra'nın yüksek alıntı doğruluğu ve sunum kalitesi, finansal analistlerin iş akışlarını hızlandırarak karar alma süreçlerinde daha fazla güven sağlamasına olanak tanıyacak. Geliştiriciler, bu performans seviyesini diğer sektörlerde de tekrarlayarak yapay zekanın iş dünyasındaki rolünü genişletebilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GPT-6 Astra",
+      "benchmark": "Required source types cited lead",
+      "skor": 13.6,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "percentage-point lead over the best alternative",
+      "kaynak_metinden_alinti": "GPT‑6 Astra scored 13.6 percentage points above the best alternative tested on citing the required types of sources."
+    },
+    {
+      "model": "GPT-6 Astra",
+      "benchmark": "Citation relevance",
+      "skor": 99.5,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "99.5% of the excerpts it cited were relevant to the question in Hebbia’s tests."
+    },
+    {
+      "model": "GPT-6 Astra",
+      "benchmark": "Presentation requirements met",
+      "skor": 97.9,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "GPT‑6 Astra met 97.9% of the applicable presentation requirements in Hebbia’s tests."
+    },
+    {
+      "model": "GPT-6 Astra",
+      "benchmark": "Presentation requirement lead",
+      "skor": 14.4,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "percentage-point lead over the best alternative",
+      "kaynak_metinden_alinti": "It put it 14.4 percentage points ahead of the best alternative tested on that measure."
+    }
+  ],
+  "gorsel_url": "https://images.ctfassets.net/kftzwdyauwt9/70gWqYyqb096it9EoD7OqI/5df8cad1c7fdf2a4e942c3183a10f405/hebbia-smoked-depth-social.png?w=1600&h=900&fit=fill",
+  "url": "https://openai.com/business/customer-stories/hebbia",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-11-20T00:00:00.000Z",
+  "slug": "hebbia-sees-improvements-in-financial-research-with-gpt-6-as"
+}
