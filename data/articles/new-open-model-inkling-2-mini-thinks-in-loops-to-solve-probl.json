@@ -1,0 +1,63 @@
+{
+  "baslik_tr": "Yeni Açık Model Inkling 2 Mini, Döngülerle Düşünüyor, Daha Az Kelimeyle Sorun Çözüyor ve Dizüstü Bilgisayarda Çalışıyor",
+  "ozet_tr": "Thinking Machines, 26.4 milyar parametreli açık kaynaklı Inkling 2 Mini modelini duyurdu. Model, katmanları döngüsel olarak üç kez çalıştırarak aynı token başına yalnızca 5.4 milyar aktif parametreyle daha uzun içsel akıl yürütme sağlıyor ve bir dizüstü bilgisayarda sorunsuz çalışabiliyor.",
+  "detayli_icerik_tr": "Thinking Machines, Inkling 2 Mini adlı yeni bir \"looped transformer\" modeli piyasaya sürdü. Bu mimaride, modelin 24 katmanından 12 tanesi her token için ardışık üç kez çalıştırılıyor; böylece model, daha fazla metin üretmeden içsel olarak daha uzun bir düşünme süreci gerçekleştiriyor. Toplamda 26.4 milyar parametreye sahip olan Inkling 2 Mini, döngüler sayesinde token başına sadece 5.4 milyar aktif parametre kullanıyor, bu da hem maliyet hem de enerji açısından büyük bir verimlilik sağlıyor.\n\nInkling 2 Mini, metin ve görüntü işleme yeteneklerine sahip ve 1 milyon tokenlık bir bağlam penceresi sunuyor. Model, Apache 2.0 lisansı altında açık kaynak olarak sunuluyor; ağırlık dosyaları Hugging Face üzerinden indirilebilir ve değişken döngü sayısı içeren bir araştırma sürümü de mevcut. Ayrıca, modelin yerel olarak en az 32 GB RAM'e sahip Mac'lerde ve Nvidia DGX Spark platformunda çalıştırılabildiği belirtiliyor.\n\nPerformans açısından Inkling 2 Mini, 100 milyar parametrenin altındaki tüm açık modeller arasında öne çıkıyor. Agentic coding testlerinde DeepSWE v1.1'de %48.2 ve Vals Index v2.2'de %46.5 başarı oranı elde etti. Artificial Analysis tarafından oluşturulan Intelligence Index'te ise 20 puan alarak Qwen3.8 27B (xhigh) ve Nanbeige4.3-33B modelleriyle eşitlenmiş durumda. Aktif parametre sayısının çok daha düşük olmasına rağmen, model Pareto ön cephesinde yer alıyor ve maliyet‑verimlilik açısından rakiplerinden yaklaşık altı kat daha ucuz ve dört kat daha hızlı çalışıyor.\n\nInkling 2 Mini, hem araştırmacılar hem de geliştiriciler için güçlü bir araç sunuyor; açık lisans, yüksek bağlam penceresi ve düşük donanım gereksinimi, modelin geniş bir kullanıcı kitlesi tarafından benimsenmesini kolaylaştırıyor. Şirket, modeli Tinker Playground üzerinden deneme imkanı da sağlıyor, bu da topluluk geri bildirimlerini hızla toplama ve modelin evrimini yönlendirme stratejisiyle uyumlu.",
+  "onemli_maddeler": [
+    "Inkling 2 Mini, 12 katmanı üç kez çalıştıran \"looped transformer\" mimarisiyle aynı token başına sadece 5.4 M parametre aktif tutuyor.",
+    "Model, 1 M token bağlam penceresi ve metin‑görüntü işleme yeteneğiyle Apache 2.0 lisansı altında açık kaynak olarak sunuluyor.",
+    "DeepSWE v1.1'de %48.2, Vals Index v2.2'de %46.5 skorlarıyla 100 B altındaki tüm açık modelleri geride bıraktı.",
+    "Artificial Analysis Intelligence Index'te 20 puan alarak Qwen3.8 27B ve Nanbeige4.3‑33B ile eşit seviyede, ancak çok daha düşük maliyet ve daha yüksek hız sağlıyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Inkling 2 Mini, yeni bir model mimarisi (looped transformer) ve açık lisansla sunulması, düşük donanım gereksinimi ve yüksek benchmark performansı sayesinde açık kaynak AI ekosisteminde önemli bir kilometre taşı oluşturuyor.",
+  "etiketler": [
+    "inkling 2 mini",
+    "looped transformer",
+    "açık model",
+    "AI benchmark",
+    "Apache 2.0"
+  ],
+  "anilan_modeller": [
+    "Inkling 2 Mini",
+    "Qwen3.8 27B",
+    "Nanbeige4.3-33B"
+  ],
+  "yorum_tr": "Inkling 2 Mini, verimlilik odaklı mimarisiyle hem araştırmacıların hem de geliştiricilerin düşük maliyetli yüksek performanslı modelleri deneyimlemesini mümkün kılıyor; bu da açık kaynak AI yarışında yeni bir denge noktası yaratıyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Inkling 2 Mini",
+      "benchmark": "DeepSWE v1.1",
+      "skor": 48.2,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "scoring 48.2 percent on DeepSWE v1.1"
+    },
+    {
+      "model": "Inkling 2 Mini",
+      "benchmark": "Vals Index v2.2",
+      "skor": 46.5,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "scoring 46.5 percent on the Vals Index v2.2"
+    },
+    {
+      "model": "Inkling 2 Mini",
+      "benchmark": "Artificial Analysis Intelligence Index",
+      "skor": 20,
+      "birim": "points",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Artificial Analysis gives it 20 points on its Intelligence Index"
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2025/09/thinking_machines_ca_illustration.png",
+  "url": "https://the-decoder.com/new-open-model-inkling-2-mini-thinks-in-loops-to-solve-problems-with-fewer-words-and-still-runs-on-a-laptop/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-21T10:33:02.000Z",
+  "slug": "new-open-model-inkling-2-mini-thinks-in-loops-to-solve-probl"
+}
