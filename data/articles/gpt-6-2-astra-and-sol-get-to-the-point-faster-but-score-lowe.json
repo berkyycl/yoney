@@ -1,0 +1,162 @@
+{
+  "baslik_tr": "GPT-6.2 Astra ve Sol modelleri daha kısa yanıt veriyor, şeffaflık puanları Claude’dan düşük",
+  "ozet_tr": "OpenAI'nin yeni GPT-6.2 Astra ve Sol modelleri, önceki sürümlerine kıyasla yanıt uzunluğunu %34‑%40 oranında kısaltırken, belirsizlik kabul etme gibi şeffaflık özelliklerinde ciddi düşüşler gösterdi. Anthropic'in Claude Fable 5.2 ve Opus 5.5 modelleri ise yapı ve şeffaflık açısından öne çıkıyor.",
+  "detayli_icerik_tr": "Artificial Analysis tarafından yürütülen AA‑PersonalityBench değerlendirmesi, OpenAI'nin GPT-6.2 serisinin iletişim stilinde köklü bir değişim olduğunu ortaya koydu. Astra ve Sol, ortalama yanıt uzunluklarını sırasıyla 352'den 210 kelimeye (%40) ve 337'den 223 kelimeye (%34) düşürerek soruya daha doğrudan ve kısa yanıtlar veriyor. Bununla birlikte başlık ve uzun tire (em‑dash) kullanımını da büyük ölçüde azalttılar; Astra başlık sayısı 1.99'dan 0.11'e, Sol ise 1.85'ten 0.25'e geriledi.\n\nBu yapı değişiklikleri, \"Organization\" (Organizasyon) ve \"Answer First\" (Soruya İlk Cevap) gibi indekslerde dramatik bir düşüşe yol açtı. Astra'nun Organizasyon puanı 70'ten 11'e, Sol'un ise 86'dan 27'ye geriledi. Öte yandan, soruya doğrudan yanıt verme yeteneği (Answer First) Astra için 49'dan 89'a, Sol için 64'ten 87'ye yükseldi. Ancak en çarpıcı kayıp, \"Admits Uncertainty\" (Belirsizlik Kabul Etme) özelliğinde yaşandı; Astra puanı 96'dan 24'e, Sol ise 98'den 51'ye düştü.\n\nAnthropic'in Claude Fable 5.2 ve Opus 5.5 modelleri, aynı değerlendirmede şeffaflık ve organizasyon indekslerinde açık bir üstünlük sergiledi. Opus 5.5, \"Transparency\" (Şeffaflık) ve \"Organization\" indekslerinde sırasıyla 90 ve 79 puan alarak en yüksek skorları elde etti. Ayrıca \"Informativeness\" (Bilgi Yoğunluğu) indeksinde 90 puanla diğer modelleri geride bıraktı. Bu sonuçlar, modelin yanıt kalitesiyle değil, iletişim tarzıyla ilgili olduğunu vurguluyor; düşük şeffaflık puanı mutlaka hatalı yanıt anlamına gelmiyor.\n\nAA‑PersonalityBench, 900 İngilizce test sorusuna sistem mesajı olmadan verilen yanıtları üç bağımsız AI yargıcının değerlendirmesine tabi tutuyor. Her bir kişilik özelliği için 1‑100 arasında bir puan hesaplanıyor ve bu puanlar sekiz üst‑seviye indeks içinde toplanıyor. Sonuçlar, OpenAI'nin yeni modellerinin daha öz ve hızlı yanıtlar üretme yönündeki stratejik hamlesini, aynı zamanda kullanıcıların belirsizlik ve açıklık beklentileriyle çelişebileceğini gösteriyor.",
+  "onemli_maddeler": [
+    "GPT-6.2 Astra ve Sol yanıt uzunluğunu %34‑%40 oranında kısalttı ve başlık kullanımını büyük ölçüde azalttı.",
+    "Belirsizlik kabul etme puanı Astra için 96'dan 24'e, Sol için 98'den 51'e düştü; şeffaflık skorları Claude modellerinin gerisinde kaldı.",
+    "Claude Opus 5.5, Transparency ve Informativeness indekslerinde 90 puanla en yüksek performansı gösterdi."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "OpenAI'nin yeni GPT-6.2 serisinin iletişim tarzındaki değişiklikler, model değerlendirme kriterlerini yeniden şekillendiriyor ve Anthropic'in Claude modelleriyle karşılaştırmalı performansları sektördeki rekabeti etkiliyor.",
+  "etiketler": [
+    "GPT-6.2",
+    "Claude",
+    "Artificial Analysis",
+    "PersonalityBench",
+    "AI iletişim"
+  ],
+  "anilan_modeller": [
+    "GPT-6.2 Astra",
+    "GPT-6.2 Sol",
+    "Claude Fable 5.2",
+    "Claude Opus 5.5"
+  ],
+  "yorum_tr": "Bu bulgular, geliştiricilerin model tasarımında hız ve özlülük ile şeffaflık ve belirsizlik yönetimi arasında denge kurmaları gerektiğini gösteriyor; kullanıcılar ise daha kısa yanıtlar alırken açıklık beklentilerini göz önünde bulundurmalı.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GPT-6.2 Astra",
+      "benchmark": "Answer Length Reduction",
+      "skor": 40,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "average answer length drop",
+      "kaynak_metinden_alinti": "Astra'nın ortalama yanıt uzunluğu 352'den 210 kelimeye, %40 azaldı."
+    },
+    {
+      "model": "GPT-6.2 Sol",
+      "benchmark": "Answer Length Reduction",
+      "skor": 34,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "average answer length drop",
+      "kaynak_metinden_alinti": "Sol'un ortalama yanıt uzunluğu 337'den 223 kelimeye, %34 azaldı."
+    },
+    {
+      "model": "GPT-6.2 Astra",
+      "benchmark": "Organization Index",
+      "skor": 11,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "max model variants",
+      "kaynak_metinden_alinti": "Astra organizasyon puanı 70'ten 11'e düştü."
+    },
+    {
+      "model": "GPT-6.2 Sol",
+      "benchmark": "Organization Index",
+      "skor": 27,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "max model variants",
+      "kaynak_metinden_alinti": "Sol organizasyon puanı 86'dan 27'ye geriledi."
+    },
+    {
+      "model": "Claude Fable 5.2",
+      "benchmark": "Organization Index",
+      "skor": 54,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "max model variants",
+      "kaynak_metinden_alinti": "Claude Fable 5.2 organizasyon puanı 54."
+    },
+    {
+      "model": "Claude Opus 5.5",
+      "benchmark": "Organization Index",
+      "skor": 79,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "max model variants",
+      "kaynak_metinden_alinti": "Claude Opus 5.5 organizasyon puanı 79."
+    },
+    {
+      "model": "GPT-6.2 Astra",
+      "benchmark": "Transparency Index",
+      "skor": 41,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "max model variants",
+      "kaynak_metinden_alinti": "Astra şeffaflık puanı 41."
+    },
+    {
+      "model": "GPT-6.2 Sol",
+      "benchmark": "Transparency Index",
+      "skor": 57,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "max model variants",
+      "kaynak_metinden_alinti": "Sol şeffaflık puanı 57."
+    },
+    {
+      "model": "Claude Fable 5.2",
+      "benchmark": "Transparency Index",
+      "skor": 81,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "max model variants",
+      "kaynak_metinden_alinti": "Claude Fable 5.2 şeffaflık puanı 81."
+    },
+    {
+      "model": "Claude Opus 5.5",
+      "benchmark": "Transparency Index",
+      "skor": 90,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "max model variants",
+      "kaynak_metinden_alinti": "Claude Opus 5.5 şeffaflık puanı 90."
+    },
+    {
+      "model": "Claude Opus 5.5",
+      "benchmark": "Informativeness Index",
+      "skor": 90,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "max model variants",
+      "kaynak_metinden_alinti": "Opus 5.5 bilgi yoğunluğu puanı 90."
+    },
+    {
+      "model": "GPT-6.2 Astra",
+      "benchmark": "Slope Index",
+      "skor": 7,
+      "birim": "puan",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "max model variants",
+      "kaynak_metinden_alinti": "Astra Slope puanı 7 (düşük daha iyi)."
+    },
+    {
+      "model": "GPT-6.2 Sol",
+      "benchmark": "Slope Index",
+      "skor": 11,
+      "birim": "puan",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "max model variants",
+      "kaynak_metinden_alinti": "Sol Slope puanı 11 (düşük daha iyi)."
+    },
+    {
+      "model": "Claude Opus 5.5",
+      "benchmark": "Slope Index",
+      "skor": 20,
+      "birim": "puan",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "max model variants",
+      "kaynak_metinden_alinti": "Opus 5.5 Slope puanı 20 (düşük daha iyi)."
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/11/OpenAI-Logo.png",
+  "url": "https://the-decoder.com/gpt-6-2-astra-and-sol-get-to-the-point-faster-but-score-lower-on-transparency-than-claude/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-22T09:41:37.000Z",
+  "slug": "gpt-6-2-astra-and-sol-get-to-the-point-faster-but-score-lowe"
+}
