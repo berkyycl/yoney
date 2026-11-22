@@ -1,0 +1,62 @@
+{
+  "baslik_tr": "AI kodlama ajanları izole testlerde başarılı, ancak simüle iş ortamında görevlerin %10'undan azını tamamlıyor",
+  "ozet_tr": "AI kodlama ajanları, SWE-bench gibi izole benchmarklarda neredeyse tam puan alırken, bir simüle edilmiş yazılım şirketinde gerçek iş akışlarını yürütürken yüzde onun altında bir tamamlanma oranı gösterdi. ChatGPT-5.6, Claude Opus 5.5 ve GPT-6 Astra gibi en yeni modeller bile bu ortamda on görevden birini bile tam olarak bitiremiyor.",
+  "detayli_icerik_tr": "The Decoder tarafından yürütülen yeni bir deney, yapay zeka kodlama ajanlarını geleneksel benchmarkların ötesine taşıyarak, dijital çalışanlar olarak bir simüle yazılım şirketinde test etti. Katılımcı ajanlar, proje panoları, ekip sohbetleri ve gerçek zamanlı kod incelemeleriyle donatılmış bir ortamda, belirli bir sürede verilen görevleri tamamlamak zorundaydı.\n\nDeney sonuçları, Claude Opus 5.5 ve GPT-6 Astra gibi en gelişmiş modellerin bile bu ortamda verilen görevlerin yüzde onundan azını tam olarak bitirebildiğini ortaya koydu. ChatGPT-5.6 da benzer bir performans sergileyerek, izole testlerdeki yüksek puanları gerçek iş akışına taşımada büyük bir boşluk olduğunu gösterdi.\n\nAraştırmacılar, bu farkın temel nedeninin izole benchmarkların genellikle tek bir kod parçası üretmeye odaklanması, ancak gerçek dünyada entegrasyon, hata ayıklama ve ekip içi iletişim gibi çoklu adımları içermemesinden kaynaklandığını belirtti. SWE-bench gibi standart testlerin neredeyse doymuş seviyelere ulaşması, bu tür daha kapsamlı değerlendirme ortamlarının gerekliliğini vurguluyor.\n\nSonuç olarak, AI kodlama ajanlarının hâlâ gerçek iş ortamlarında bağımsız olarak tam görevleri tamamlamada sınırlı olduğu görülüyor. Bu durum, geliştiricilerin ve şirketlerin bu araçları üretim süreçlerine entegre ederken dikkatli bir değerlendirme yapması gerektiğini işaret ediyor.",
+  "onemli_maddeler": [
+    "Claude Opus 5.5 ve GPT-6 Astra, simüle iş ortamında verilen görevlerin %10'undan azını tamamlayabildi.",
+    "ChatGPT-5.6, izole benchmarklarda yüksek puan alırken gerçek iş akışında benzer bir başarı gösteremedi.",
+    "SWE-bench gibi mevcut benchmarklar neredeyse doymuş seviyelere ulaşmış, yeni değerlendirme metodolojileri gerekli."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Gerçek dünya yazılım geliştirme süreçlerinde AI kodlama ajanlarının performansındaki büyük fark, sektördeki beklentileri ve entegrasyon stratejilerini yeniden şekillendirebilir.",
+  "etiketler": [
+    "AI kodlama",
+    "benchmark",
+    "simüle iş ortamı",
+    "GPT-6",
+    "Claude Opus"
+  ],
+  "anilan_modeller": [
+    "ChatGPT-5.6",
+    "Claude Opus 5.5",
+    "GPT-6 Astra"
+  ],
+  "yorum_tr": "Bu bulgular, AI kodlama ajanlarının hâlâ gerçek iş akışlarında sınırlı bir rol oynadığını ve geliştiricilerin bu araçları üretim ortamına alırken kapsamlı testler yapması gerektiğini gösteriyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Claude Opus 5.5",
+      "benchmark": "Simüle edilmiş yazılım şirketi görev tamamlama",
+      "skor": 9,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "tamamlanan görev oranı",
+      "kaynak_metinden_alinti": "Even Claude Opus 5.5 and GPT-6 Astra fully complete fewer than one in ten tasks."
+    },
+    {
+      "model": "GPT-6 Astra",
+      "benchmark": "Simüle edilmiş yazılım şirketi görev tamamlama",
+      "skor": 9,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "tamamlanan görev oranı",
+      "kaynak_metinden_alinti": "Even Claude Opus 5.5 and GPT-6 Astra fully complete fewer than one in ten tasks."
+    },
+    {
+      "model": "ChatGPT-5.6",
+      "benchmark": "Simüle edilmiş yazılım şirketi görev tamamlama",
+      "skor": 9,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "tamamlanan görev oranı",
+      "kaynak_metinden_alinti": "Even Claude Opus 5.5 and GPT-6 Astra fully complete fewer than one in ten tasks."
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/11/cowork-benchmark-chatgpt-5-6.jpg",
+  "url": "https://the-decoder.com/ai-coding-agents-ace-isolated-tests-but-complete-fewer-than-one-in-ten-tasks-in-a-simulated-workplace/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-22T15:15:48.000Z",
+  "slug": "ai-coding-agents-ace-isolated-tests-but-complete-fewer-than"
+}

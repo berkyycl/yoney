@@ -1,0 +1,38 @@
+{
+  "baslik_tr": "Güvenlik araştırmacıları ucuz AI çıkarım sağlayıcılarının anahtar çaldığını ve kullanıcıları gözetlediğini ortaya koydu",
+  "ozet_tr": "Dragos'tan güvenlik araştırmacıları, iki milyon civarında sahte kimlik bilgisi içeren istek göndererek üç düşük maliyetli AI çıkarım sağlayıcısının kullanıcı anahtarlarını çaldığını ve verileri gizlice topladığını kanıtladı. Araştırma, model pazarları ve API yönlendiricileri gibi ara katmanların gizlilik riskini artırdığını ve Zero Data Retention gibi gizlilik ayarlarının çoğu zaman ihmal edildiğini gösterdi.",
+  "detayli_icerik_tr": "Dragos ekibi, Temmuz‑Kasım 2026 tarihleri arasında yaklaşık iki milyon AI isteği göndererek, sahte kimlik bilgileri içeren test isteklerinin nasıl ele geçirildiğini inceledi. Bu süreçte en az üç sağlayıcı, kullanıcıların AWS erişim anahtarları ve diğer gizli kimlik bilgilerini fark edilmeden çaldı; çalınan anahtarlar saatler içinde test edilerek S3 depolarına erişim sağlandı ve kalıcı erişim yolları denendi. \n\nAra katmanlar, yani OpenRouter gibi AI yönlendiricileri ve model pazarları, istekleri birden fazla sağlayıcıya yönlendirirken her bir adımda tam içeriği okuyabiliyor. Araştırmacılar, en ucuz sağlayıcıya yönlendirme ve loglamayı açma gibi basit bir ayarın bile veri sızdırma riskini artırdığını belirtti. Bir örnek olarak, Fransa'da bir ev internet bağlantısı üzerinden bir saldırgan, ele geçirilen şifrelerle SSH oturumu açmaya çalıştı. \n\nGizlilik ayarları da ciddi şekilde ihmal edildi. \"Zero Data Retention\" (ZDR) gibi politikalar, Çin merkezli bir AI laboratuvarı tarafından tüm isteklerin %50'sinden fazlasında test URL'lerine erişilerek çiğnenmişti. Ayrıca, büyük ABD sağlayıcıları bile kendi politikalarını çiğneyerek iki ay boyunca bir test URL'sini taramaya devam etti. \n\nBu bulguların ardından OpenRouter, üç sağlayıcıyı platformundan kaldırdı ve 125 uç nokta için ZDR onayını iptal etti. Etkilenen kullanıcılar e‑posta ile bilgilendirildi. Dragos, şirketlere kimlik bilgilerini içeren istekleri ara katmanlara göndermemeyi, gizlilik ayarlarını sıkılaştırmayı ve sahte kimlik bilgileri (canary token) kullanarak olası sızıntıları erken tespit etmeyi öneriyor.",
+  "onemli_maddeler": [
+    "Dragos, 2 milyon sahte kimlik bilgisi içeren istekle üç düşük maliyetli AI sağlayıcısının kullanıcı anahtarlarını çaldığını ortaya koydu.",
+    "OpenRouter gibi ara yönlendiriciler, istekleri birden fazla sağlayıcıya yönlendirirken tam içeriği okuyabiliyor ve veri sızdırma riski yaratıyor.",
+    "Zero Data Retention gibi gizlilik ayarları çoğu zaman ihmal edildi; Çin merkezli bir laboratuvar test URL'lerine %50'den fazla erişim sağladı.",
+    "Araştırma sonrası OpenRouter, üç sağlayıcıyı platformundan kaldırdı ve 125 uç nokta için ZDR onayını iptal etti."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "Kritik güvenlik açıkları, geniş AI ekosisteminde veri gizliliğini tehdit ediyor ve hem sağlayıcıları hem de kullanıcıları acil önlem almaya zorunlu kılıyor.",
+  "etiketler": [
+    "AI güvenliği",
+    "veri sızıntısı",
+    "inference sağlayıcıları",
+    "Zero Data Retention",
+    "OpenRouter"
+  ],
+  "anilan_modeller": [
+    "MiniMax",
+    "Novita",
+    "AtlasCloud",
+    "StreamLake",
+    "Together",
+    "Phala"
+  ],
+  "yorum_tr": "Bu bulgular, AI hizmetlerinin tedarik zincirindeki şeffaflık eksikliğini ve gizlilik politikalarının uygulanmadığını gösteriyor; geliştiricilerin veri akışını kontrol etmesi ve ara katmanları denetlemesi kaçınılmaz hale geliyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/11/cybersecurity_data_leak.png",
+  "url": "https://the-decoder.com/security-researchers-show-how-cheap-ai-inference-providers-steal-keys-and-snoop-on-users/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-22T12:07:56.000Z",
+  "slug": "security-researchers-show-how-cheap-ai-inference-providers-s"
+}

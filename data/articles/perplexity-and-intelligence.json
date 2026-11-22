@@ -1,0 +1,64 @@
+{
+  "baslik_tr": "OpenAI, Perplexity'yi Ortak Güvenlik Ölçütü Olarak Öneriyor",
+  "ozet_tr": "OpenAI Baş Bilim İnsanı Jakub Pachocki, yapay zekâ gelişimini ölçmenin temel yolu olarak perplexity (log‑perplexity) metriğini önerdi. Şirket, iç veri setindeki perplexity ölçümlerini şeffaflaştırarak sektörde ortak güvenlik standartları ve gelişim sınırları oluşturulmasını talep ediyor.",
+  "detayli_icerik_tr": "OpenAI, modern yapay zekâ sistemlerinin büyük ölçüde bir \"kompresör\" – yani büyük bir veri kümesini tahmin ederek sıkıştıran bir model – olarak eğitildiğini vurguluyor. Bu bağlamda, modelin bir sonraki tokenı ne kadar doğru tahmin ettiğini ölçen perplexity, geliştiriciler arasında ilerlemeyi karşılaştırmak ve güvenlik standartlarını belirlemek için kritik bir gösterge olarak öne çıkıyor. Şirket, bu metriği iç veri setinde izleyerek GPT‑3.5'ten GPT‑4'e ve yeni nesil modellerine kadar kaydedilen log‑perplexity değerlerini kamuoyu ile paylaştı.\n\nPerplexity'nin tarihsel evrimi, GPT‑2'nin tutarlı paragraf üretiminden GPT‑3'ün örnek‑temelli öğrenmeye, GPT‑3.5'in sohbet yeteneklerine ve GPT‑4'ün zincir‑içinde‑düşünme (CoT) becerilerine kadar bir dizi dönüm noktasını işaret ediyor. OpenAI, log‑perplexity değerinin 0.8'in altına düştüğü noktada siber güvenlik ve matematik gibi alanlarda dönüşümcü yeteneklerin ortaya çıktığını belirtiyor. Şirket, 2027 yılına kadar log‑perplexity'nin 0.68‑0.7 aralığına ulaşmasıyla yeni, henüz tanımlanamayan yeteneklerin ortaya çıkabileceğini öngörüyor.\n\nYazıda, perplexity'nin diğer metriklerden farklı olarak doğrudan görev performansını yansıtmasa da, daha düşük değerlerin yeni yeteneklerin ortaya çıkmasına zemin hazırladığı savunuluyor. Ayrıca, farklı laboratuvarların farklı veri setleri ve eğitim karışımları kullandığı için doğrudan karşılaştırma zorluğu, ölçümün eyleme dönüştürülebilirliği ve veri entropisinin bilinmezliği gibi sınırlamalar da ele alınıyor. Bu zorlukların üstesinden gelmek için şeffaflık ve ortak değerlendirme protokollerinin geliştirilmesi gerektiği vurgulanıyor.\n\nOpenAI, sektördeki tüm öncü model geliştiricilerinin perplexity temelli bir gelişim sınırı koymasını ve bu sınırı aşmadan önce izlenebilirlik ve denetim mekanizmalarının (ör. CoT izleyicileri) geliştirilmesini öneriyor. Bu öneri, yapay zekâ güvenliği ve kontrolünün korunması için ortak bir çerçeve oluşturmayı amaçlıyor.",
+  "onemli_maddeler": [
+    "Perplexity (log‑perplexity) AI ilerlemesini ölçmek ve karşılaştırmak için ortak bir metrik olarak önerildi.",
+    "OpenAI, GPT‑3.5 (log‑perplexity ~0.99), GPT‑4 (≈0.91) ve yeni modeller (≈0.76) üzerindeki iç ölçümleri yayınladı.",
+    "Log‑perplexity 0.8'in altına düştüğünde siber güvenlik ve matematik gibi alanlarda dönüşümcü yetenekler ortaya çıktı.",
+    "Şirket, 0.68‑0.7 aralığına ulaşıldığında yeni, henüz tanımlanmamış yeteneklerin ortaya çıkabileceğini öngörüyor."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "AI güvenliği ve ölçeklendirme konularında sektörel bir standart önerisi, model geliştirme hızını ve risk yönetimini doğrudan etkileyebilecek nitelikte.",
+  "etiketler": [
+    "perplexity",
+    "AI safety",
+    "model scaling",
+    "benchmark",
+    "OpenAI"
+  ],
+  "anilan_modeller": [
+    "GPT‑2",
+    "GPT‑3",
+    "GPT‑3.5",
+    "GPT‑4"
+  ],
+  "yorum_tr": "Perplexity'yi ortak bir ölçüt olarak benimsemek, geliştiricilerin ilerlemeyi nesnel bir çerçevede karşılaştırmasını sağlayarak güvenlik standartlarının tutarlı bir şekilde yükseltilmesine katkı sağlayabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GPT‑3.5",
+      "benchmark": "log-perplexity on internal held‑out dataset",
+      "skor": 0.99,
+      "birim": "log-perplexity",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "log-perplexity",
+      "kaynak_metinden_alinti": "GPT‑3.5, at a log-perplexity of ~0.99 on our current main evaluation dataset"
+    },
+    {
+      "model": "GPT‑4",
+      "benchmark": "log-perplexity on internal held‑out dataset",
+      "skor": 0.91,
+      "birim": "log-perplexity",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "log-perplexity",
+      "kaynak_metinden_alinti": "GPT‑4, at ~0.91, was proficient at utilizing chain-of-thought reasoning"
+    },
+    {
+      "model": "OpenAI internal model (2026)",
+      "benchmark": "log-perplexity on internal held‑out dataset",
+      "skor": 0.76,
+      "birim": "log-perplexity",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "log-perplexity",
+      "kaynak_metinden_alinti": "once we upgraded to a model of log-perplexity ~0.76, it started producing groundbreaking results"
+    }
+  ],
+  "gorsel_url": "https://images.ctfassets.net/kftzwdyauwt9/6rIIhCRSKrhIfe385Onmcz/aca2d190553c62fd5d49efb5d5ce1eb6/perplexity-and-intelligence-social.png?w=1600&h=900&fit=fill",
+  "url": "https://openai.com/index/perplexity-and-intelligence",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-11-22T00:00:00.000Z",
+  "slug": "perplexity-and-intelligence"
+}
