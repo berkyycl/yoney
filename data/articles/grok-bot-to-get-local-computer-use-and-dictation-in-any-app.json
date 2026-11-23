@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "Grok Bot'ta Yerel Bilgisayar Kullanımı ve Her Uygulamada Sesli Yazma Özelliği Geliyor",
+  "ozet_tr": "SpaceXSI, macOS için Grok Bot uygulamasına iki yeni yetenek eklemeye hazırlanıyor: yerel bilgisayar kullanımı ve sistem düzeyinde sesli dikte. Bu özellikler hâlâ geliştirme aşamasında ve henüz kullanıcılara sunulmadı, ancak duyurulanlar, botların bulut makinelerinden doğrudan masaüstü uygulamalarına geçişini sağlayacak.",
+  "detayli_icerik_tr": "SpaceXSI, Grok Bot'un macOS sürümüne iki önemli geliştirme planladığını açıkladı. Şu anda Bot'lar, kapalı bir dizüstü bilgisayar olsa bile çalışan bir bulut VM'si üzerinden \"Computer Use\" işlevini yürütüyor. Yakın gelecekte sunulacak yerel bilgisayar seçeneği, Grok Bot'un masaüstünüzdeki herhangi bir uygulamayı doğrudan kontrol etmesine olanak tanıyacak.\n\nAyarlar menüsündeki Computer sekmesi, şu an için \"Grok Bot Computer Use\" başlığı altında \"Bu bilgisayarda kullanılamıyor\" ibaresiyle yer alıyor. Bu, bulut tabanlı \"Bot's computer\" bölümünden ayrı bir konumda bulunuyor ve iki modun paralel olarak var olacağı izlenimini veriyor. Kullanıcılar, bulut makinesini istedikleri gibi güncelleyebiliyor veya sıfırlayabiliyor; yerel mod ise henüz etkinleştirilemedi.\n\nSesli dikte özelliği de benzer bir iç geliştirme sürecinde. Genel ayarlar altında \"Dictation\" adlı yeni bir seçenek, \"Her uygulamada konuşun\" mesajıyla iç erişime işaret ediyor. Bu özellik, klavye kısayolları, sözlük, snippet'ler, Whisper entegrasyonu, veri saklama ve geçmişi gibi fonksiyonları ayrı bir pencerede sunacak ve macOS'taki tüm metin alanlarına sesli giriş imkanı sağlayacak.\n\nGrok Bot, Ağustos ayında tanıtıldıktan sonra bu ay 1.0 sürümüne ulaştı ve macOS uygulamaları arasında Mesajlar, Mail, Notlar, Hatırlatıcılar, Takvim, Konum ve Kişiler gibi yerleşik hizmetlere erişim kazandı. Yerel bilgisayar kullanımı, kullanıcıların botlarıyla bulut ve yerel ortam arasında sık sık geçiş yapma ihtiyacını azaltacak; sesli dikte ise metin girişini hızlandırarak verimliliği artıracak. SpaceXSI, bu özelliklerin ne zaman yayınlanacağına dair bir takvim paylaşmadı.",
+  "onemli_maddeler": [
+    "Yerel Bilgisayar Kullanımı sayesinde Grok Bot, masaüstü uygulamalarını doğrudan kontrol edebilecek.",
+    "Sistem düzeyinde sesli dikte, tüm macOS uygulamalarında sesli metin girişi sağlayacak.",
+    "Mevcut bulut tabanlı Computer Use ile paralel çalışacak şekilde iki mod yan yana bulunacak."
+  ],
+  "kategori": "guncelleme",
+  "onem": 3,
+  "onem_gerekce": "Grok Bot'un temel işlevlerine yeni yetenekler eklenmesi, özellikle geliştiriciler ve yoğun AI asistanı kullanan profesyoneller için iş akışını iyileştirecek, ancak henüz piyasaya sürülmediği için etkisi sınırlı kalıyor.",
+  "etiketler": [
+    "Grok Bot",
+    "macOS",
+    "AI Asistan",
+    "Yerel Bilgisayar Kullanımı",
+    "Sesli Yazma"
+  ],
+  "anilan_modeller": [
+    "Grok Bot"
+  ],
+  "yorum_tr": "Bu güncellemeler, Grok Bot'un bulut ve yerel ortam arasındaki boşluğu kapatarak daha bütünleşik bir kullanıcı deneyimi sunma potansiyeli taşıyor. Sesli dikte entegrasyonu ise metin girişini hızlandırarak verimliliği artırabilir, ancak henüz beta aşamasında olduğu için performans ve güvenlik testlerinin tamamlanması kritik.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/11/Screenshot-2026-11-23-at-01.13.30.png",
+  "url": "https://www.testingcatalog.com/grok-bot-to-get-local-computer-use-and-dictation-in-any-app/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-23T00:46:19.000Z",
+  "slug": "grok-bot-to-get-local-computer-use-and-dictation-in-any-app"
+}
