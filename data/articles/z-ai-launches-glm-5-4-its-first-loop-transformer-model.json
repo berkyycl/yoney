@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "Z.ai, Loop Transformer mimarisiyle GLM-5.4 modelini piyasaya sürdü",
+  "ozet_tr": "Z.ai, yeni Loop Transformer tabanlı GLM-5.4 modelini tüm GLM Coding Plan kullanıcılarına açtı. Model, 2‑3 trilyon parametreli modellerle benzer zekâ seviyesine ulaşırken görsel kodlama yetenekleri de ekledi ve haftalık kota %50 artırıldı.",
+  "detayli_icerik_tr": "Z.ai, Loop Transformer mimarisiyle inşa edilen ilk amiral gemisi modeli GLM-5.4'ü duyurdu. Model, GLM-5 temel modelinin 28 katmanını iki kez döndürerek parametre sayısını artırmadan ağ derinliğini iki katına çıkartıyor. Bu sayede daha derin akıl yürütme ve uzun bağlam işleme yetenekleri sağlanıyor. Z.ai, modelin güvenlik değerlendirmesinin ardından API erişiminin açılacağını ve güvenlik sertifikasyonu tamamlandığında açık ağırlıkların da yayınlanacağını belirtti.\n\nGLM-5.4, önceki sürüm GLM-5.3'e kıyasla haftalık kotada %50 artış sunuyor; kullanıcılar modeli \"glm-5.4[1m]\" olarak Claude Code içinde ve diğer araçlarda \"glm-5.4\" adıyla kullanabilecek. Görsel kodlama desteği sayesinde video, oyun, 3D shader ve CAD modelleme gibi alanlarda da performans artışı bekleniyor. Şirket, modelin uzun \"maraton düşünme\" döngülerine takılabildiğini, ancak bu ek kendini düzeltmenin doğruluk oranını yükselttiğini kabul etti.\n\nTeknik olarak, 750 milyar ölçeğinde üç yenilik maliyetleri kontrol altında tutuyor: her token için geçişi belirleyen per‑token kapılar, ekstra döngü için tek bir kaydırmalı pencere kullanan hibrit KV önbelleği ve ilk geçişin seyrek dikkat indekslerinin yeniden kullanımı. 30B test modeli üzerinde %10 daha fazla eğitim hesabı harcamasıyla döngüleme, matematik, bilimsel akıl yürütme ve uzun bağlam görevlerinde en büyük kazancı sağladı; GPQA‑Diamond ve MMLU‑Pro gibi benchmarklarda ortalama çıktı uzunluğu %10‑14 azaldı.\n\nPerformans açısından GLM-5.4, düşük talep dönemlerinde saniyede 200 token, yoğun yükte ise 70‑80 token işleyebiliyor. Z.ai, bu modeli kodlamayı temel alarak görevleri genişletmeyi hedefleyen \"Genelleştirilmiş Kodlama\" vizyonunun ilk adımı olarak konumlandırıyor. İlk demolar arasında kendi kendine anlatımlı bir müzik videosu, FreeCAD ile modellenmiş 6 eksenli robot kol, tam bir oyun ve saf geometriyle oluşturulmuş 3D kuş gözlem sahnesi yer alıyor. Şirket, modelin boyutunu ve döngü derinliğini artırarak daha büyük bir sonraki sürümü yakında duyuracağını duyurdu.",
+  "onemli_maddeler": [
+    "GLM-5.4, Loop Transformer mimarisiyle katmanları iki kez döndürerek derinleştirilmiş bir ağ sunuyor.",
+    "Model, görsel kodlama yetenekleri ekleyerek video, oyun, 3D shader ve CAD gibi alanlarda kullanılabilir.",
+    "Haftalık kotada %50 artış ve API erişiminin güvenlik sonrası açılması planlanıyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "Loop Transformer mimarisi yeni bir model ölçeği ve verimlilik yaklaşımı getiriyor; görsel kodlama entegrasyonu ve yüksek performanslı çıktı hızı sektörde rekabeti artırıyor.",
+  "etiketler": [
+    "Loop Transformer",
+    "GLM-5.4",
+    "Z.ai",
+    "kodlama",
+    "görsel kodlama"
+  ],
+  "anilan_modeller": [
+    "GLM-5.3",
+    "Qwen4-max",
+    "GLM-5 base"
+  ],
+  "yorum_tr": "GLM-5.4'ün döngülü mimarisi, aynı parametre bütçesiyle daha derin akıl yürütme sağlayarak geliştiricilere maliyet etkin bir alternatif sunuyor. Görsel kodlama entegrasyonu ise yapay zekâ destekli yaratıcı iş akışlarını genişletecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/11/banner-27.webp",
+  "url": "https://www.testingcatalog.com/z-ai-launches-glm-5-4-its-first-loop-transformer-model/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-23T10:34:35.000Z",
+  "slug": "z-ai-launches-glm-5-4-its-first-loop-transformer-model"
+}
