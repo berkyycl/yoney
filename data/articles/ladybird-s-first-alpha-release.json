@@ -1,0 +1,46 @@
+{
+  "baslik_tr": "Ladybird Tarayıcısının İlk Alpha Sürümü Yayınlandı",
+  "ozet_tr": "Ladybird, kendi HTML ayrıştırıcısı, CSS motoru, JavaScript ve WebAssembly yürütücüsüyle tam bir tarayıcı olarak ilk alpha sürümünü sundu. macOS ve Linux kullanıcıları artık derleme yapmadan tarayıcıyı kurup deneyebilecek.",
+  "detayli_icerik_tr": "Simon Willison'ın blogunda duyurduğu Ladybird'ın ilk alpha sürümü, 2026 yılında yeni bir tarayıcı projesinin olgunluğa ulaşmasının bir göstergesi. Proje, HTML ayrıştırma, CSS motoru, layout, JavaScript ve WebAssembly gibi temel bileşenlerin büyük bir kısmını kendi içinde barındırıyor; yalnızca HarfBuzz, Skia, ffmpeg ve SQLite gibi dış kütüphanelere bağımlı. Bu sayede tarayıcı, SerenityOS'tan miras alınan kod tabanını genişleterek tamamen bağımsız bir ürün haline geliyor.\n\nAlpha sürümünün en çarpıcı özelliği, kullanıcıların macOS ya da Linux üzerinde derleme yapmadan doğrudan kurulum paketini indirmeleri. İlk denemeler hızlı bir kullanıcı arayüzü, hafif tasarım ve çoğu web sitesinin sorunsuz çalışmasıyla olumlu geri bildirim aldı. Tarayıcı, sekmeleri ayrı süreçlerde çalıştırarak Chrome benzeri bir izolasyon sağlıyor; bu da çökme anında tek bir sekmenin etkilenmesini önlüyor.\n\nPerformans açısından da büyük adımlar atıldı. Ekim ayında yapılan geliştirmelerle stil ve layout ayrı bir iş parçacığına taşındı, yeni bir JavaScript JIT eklendi ve C++ tabanlı WebAssembly motoru Cranelift ile değiştirildi. Bu değişiklik, JetStream 3 WASM benchmark'ında 7 katlık bir hız artışı sağladı. Ayrıca, web‑platform‑tests (WPT) süitesinde 2,25 milyon alt testten 75 650 yeni geçiş elde edilerek Safari'yi geride bıraktı. Bu iyileşmelerin büyük bir kısmı, Claude Code ve Codex gibi yapay zeka destekli kodlama ajanlarıyla beş gün içinde gerçekleştirilen otomatik düzeltmeler sayesinde gerçekleşti.\n\nProjenin kurucusu Andreas Kling, tarayıcının hâlâ bir alpha aşamasında olduğunu ve bazı sitelerin çalışmayabileceğini, zaman zaman çökebileceğini belirtiyor. Kullanıcıların hataları raporlaması ve güvenlik açıklarını paylaşması teşvik ediliyor. Bu şeffaf yaklaşım, tarayıcının güvenliğini topluluk katkılarıyla artırmayı hedefliyor. Şu an için hassas oturum açma işlemleri için önerilmese de, anonim gezinme ve test amaçlı kullanım için heyecan verici bir alternatif sunuyor.",
+  "onemli_maddeler": [
+    "Ladybird, macOS ve Linux'ta derleme yapmadan kurulabilen ilk alpha sürümünü yayınladı.",
+    "Tarayıcı, HTML, CSS, JavaScript ve WebAssembly gibi çekirdek bileşenlerin büyük bir kısmını kendi içinde barındırıyor.",
+    "Ekim ayında yapılan iyileştirmelerle JetStream 3 WASM benchmark'ında 7× hız artışı ve WPT testlerinde Safari'yi geride bırakan 75 650 yeni geçiş elde edildi.",
+    "AI kodlama ajanları (Claude Code, Codex) beş gün içinde binlerce küçük düzeltme yaparak performans ve uyumluluk kazancı sağladı."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Yeni bir tarayıcı motorunun alpha aşamasında piyasaya sürülmesi, açık kaynak tarayıcı ekosistemine rekabet ve yenilik getirmesi bakımından sektörel bir dönüm noktasıdır.",
+  "etiketler": [
+    "browser",
+    "open-source",
+    "rust",
+    "webassembly",
+    "ai"
+  ],
+  "anilan_modeller": [
+    "Claude Opus 5.5",
+    "Claude Fable 5.2",
+    "Claude Code",
+    "Codex"
+  ],
+  "yorum_tr": "Ladybird'ın alpha sürümü, bağımsız bir tarayıcı motorunun yeniden doğuşunu işaret ediyor; geliştiriciler için yeni bir test ve inovasyon platformu, kullanıcılar için ise alternatif bir gizlilik odaklı tarayıcı seçeneği sunuyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Ladybird",
+      "benchmark": "JetStream 3 WASM",
+      "skor": 7,
+      "birim": "x",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "replacing their C++ with Cranelift WebAssembly engine with new code that achieved a 7x boost on the JetStream 3 WASM benchmark"
+    }
+  ],
+  "gorsel_url": "https://static.simonwillison.net/static/2026/ladybird-ffmpeg.webp",
+  "url": "https://simonwillison.net/2026/Nov/23/ladybird/",
+  "source": "Simon Willison",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-23T21:46:35.000Z",
+  "slug": "ladybird-s-first-alpha-release"
+}

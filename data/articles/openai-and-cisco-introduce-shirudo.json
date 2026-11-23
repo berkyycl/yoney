@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "OpenAI ve Cisco, Shirudo'yu Tanıttı: Açık Kaynaklı Linux Koruma Runtime'ı",
+  "ozet_tr": "OpenAI ve Cisco, Linux sistemlerini yama beklemeden korumak için eBPF tabanlı bir runtime olan Shirudo'yu duyurdu. Shirudo, geçici “shield”ler aracılığıyla çalışan hizmetleri yeniden başlatmadan güvenlik açıklarını engelliyor ve TPM destekli kriptografik imzalarla güvenli dağıtım sağlıyor.",
+  "detayli_icerik_tr": "OpenAI ve Cisco, 23 Kasım 2026 tarihinde Shirudo adlı yeni bir açık kaynaklı runtime'ı tanıttı. Shirudo, eBPF teknolojisini kullanarak Linux çekirdeği içinde çalışan küçük programlar (shield) aracılığıyla anlık güvenlik korumaları sunuyor. Bu sayede bir yama uygulanmadan önce, sistemdeki hizmetler kesintiye uğramadan potansiyel istismar yolları engellenebiliyor.\n\nŞirketler, kontrollü bir testte Codex tarafından üretilen bir shield'in, çalışan bir Elasticsearch servisine yönelik Java4Shell saldırısını yeniden başlatma gerektirmeden engellediğini gösterdi. Shield, Java’nın Base64 çözücüsüne bir girdi kontrolü ekleyerek zararlı girdiyi reddetti ve hizmetin kesintisiz çalışmasını sağladı.\n\nShirudo’nun dört temel yeteneği vurgulandı: canlı koruma, makine hızında savunma, güvenilir dağıtım ve donanım destekli doğrulama. Shield’ler kriptografik olarak imzalanıyor, Linux eBPF doğrulayıcısı ve TPM sayesinde güvenli bir şekilde yükleniyor ve izlenebiliyor. Bu mimari, güvenlik ekiplerine savunma politikalarını programlanabilir bir şekilde test etme ve onaylama imkanı tanıyor.\n\nProje, BSD 2-Clause lisansı altında açık kaynak olarak sunuluyor; eBPF programları ise BSD ve GPL çift lisanslı. OpenAI, geliştiricileri, güvenlik araştırmacılarını ve altyapı operatörlerini katkıda bulunmaya davet ediyor. Shirudo’nun uzun vadeli hedefi, AI destekli ajanların sistemleri hızlıca taraması, korumaları doğrulaması ve yama sürecine kadar geçici korumaları otomatik olarak dağıtmasıdır.",
+  "onemli_maddeler": [
+    "Shirudo, eBPF kullanarak çalışan Linux hizmetlerini yeniden başlatmadan koruyor",
+    "Codex tarafından otomatik oluşturulan shield, Java4Shell saldırısını başarıyla engelledi",
+    "Shield’ler TPM ve kriptografik imzalarla güvenli bir şekilde dağıtılıyor",
+    "Açık kaynak lisans altında sunularak topluluk katkısına açık"
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Shirudo, yama sürecinin uzun sürdüğü ortamlarda kesintisiz hizmet sağlamak için yeni bir koruma katmanı sunarak altyapı güvenliğinde pratik bir çözüm getiriyor; bu da hem geliştiriciler hem de işletmeler için kritik bir gelişme.",
+  "etiketler": [
+    "eBPF",
+    "Linux",
+    "güvenlik",
+    "açık kaynak",
+    "runtime"
+  ],
+  "anilan_modeller": [
+    "Codex"
+  ],
+  "yorum_tr": "Shirudo, gerçek zamanlı savunma yeteneği ve açık kaynak doğasıyla güvenlik ekiplerinin tepkisini hızlandırırken, yama gecikmelerinden kaynaklanan riskleri azaltıyor. Geliştiriciler ve operatörler, bu aracı kendi ortamlarına entegre ederek daha esnek ve güvenli bir altyapı yönetimi sağlayabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://images.ctfassets.net/kftzwdyauwt9/5K7gFDr3r8vgjdIcsW6RVY/aba5325ce7902e5d1499b907f8e78f0b/shirudo-partner-logos-landscape-2x.png?w=1600&h=900&fit=fill",
+  "url": "https://openai.com/index/introducing-shirudo",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-11-23T21:20:00.000Z",
+  "slug": "openai-and-cisco-introduce-shirudo"
+}

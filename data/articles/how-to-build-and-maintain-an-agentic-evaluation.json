@@ -1,0 +1,99 @@
+{
+  "baslik_tr": "Hugging Face'den Açık Kaynaklı Agentik Değerlendirme Rehberi ve Benchmark Sonuçları",
+  "ozet_tr": "Hugging Face, AI sistemlerinin güvenilirliğini ölçmek için açık kaynaklı bir agentik değerlendirme çerçevesi sundu. Makale, değerlendirme sürecinin üç evrimini, bir fizik laboratuvarı örneği üzerinden sekiz adımlı bir inşa sürecini ve hatalı benchmarkların nasıl tespit edilip düzeltileceğini ayrıntılı olarak açıklıyor.",
+  "detayli_icerik_tr": "AI değerlendirmeleri, modellerin hangi görevleri ne kadar iyi yerine getirdiğini ölçerek geliştirme, benimseme ve güven oluşturma süreçlerini yönlendiriyor. Hugging Face, platformunda 3.500'den fazla değerlendirme lider tablosu barındırıyor ve son bir yılda veri seti sayısını 16 kat artırarak 17.000'e çıkardı. Bu büyüme, özellikle agentik değerlendirmeler için yeni soyutlamalar (Traces, Benchmarks, Environments) eklenmesiyle destekleniyor.\n\nDeğerlendirme tasarımı üç aşamadan geçiyor: soru-cevap benchmarkları (MMLU, GPQA), agentik benchmarklar (SWE‑bench, WebArena) ve son olarak çoklu‑ajan (swarms) benchmarkları. Makale, agentik değerlendirmelere odaklanarak bir laboratuvar senaryosunda Raman spektrumlarını analiz eden bir ajan için sekiz adımlı bir süreç sunuyor: iddia tanımlama, görev bulma, referans çözümü çalıştırma, adaptasyon, doğrulama, izleri inceleme, skor raporlama ve model karşılaştırması.\n\nUygulamada, açık kaynaklı Harbor görev formatı ve Terminal‑Bench'in Raman‑fitting görevi yeniden kullanıldı; sadece ajan kolları (harness) yeni bir geliştirme gerektirdi. Adaptasyon aşamasında sekiz sentetik spektrum üretildi ve yeni talimatlar, birim tanımları ve çıktı kontrolleri eklendi. Değerlendirme, kısayol (shortcut) saldırılarına karşı dayanıklılık test edildi; sadece oran kontrolü yapan bir kısayol, doğru sonuçları vererek puan alıyordu ve bu durum ek kontrol mekanizmalarıyla giderildi.\n\nBenchmark sonuçları, gpt‑oss‑120b modelinin orijinal görevde 0/3 geçiş başarısı, adaptasyonlu Raman‑lab görevinde %46 ortalama geçiş oranı (%11 standart hata) ve pass@3 %87.5 gibi değişken performanslar gösterdi. Diğer modeller (Qwen3.8‑27B, DeepSeek‑V4.1‑Flash, MiniMax‑M3.1‑Flash) ise tüm 24 denemeyi başarıyla tamamlayarak %100 geçiş sağladı. Çalışma, hatalı benchmarkların performans ölçümünü %100'e kadar çarpıtabileceğini ve dış denetimin bu hataları ortaya çıkarmada kritik rol oynadığını vurguluyor.",
+  "onemli_maddeler": [
+    "Agentik değerlendirmeler, model çıkış duyurularında en çok vurgulanan ölçüm türü haline geldi.",
+    "Harbor ve Terminal‑Bench gibi açık kaynaklı araçların yeniden kullanımı, geliştirme süresini büyük ölçüde kısalttı.",
+    "Benchmark hataları, ölçülen performansı %100'e kadar değiştirebilir; dış denetim ve açık veri setleri bu riskleri azaltıyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Açık kaynaklı değerlendirme çerçevesi, AI model geliştiricileri ve araştırmacılar için standartlaştırılmış, şeffaf ve tekrarlanabilir test ortamları sunarak sektörel kaliteyi yükseltiyor.",
+  "etiketler": [
+    "agentic evaluation",
+    "benchmark",
+    "open source",
+    "AI evaluation",
+    "Hugging Face"
+  ],
+  "anilan_modeller": [
+    "gpt-oss-120b",
+    "Qwen3.8-27B",
+    "DeepSeek-V4.1-Flash",
+    "MiniMax-M3.1-Flash"
+  ],
+  "yorum_tr": "Bu rehber, AI sistemlerinin gerçek dünya görevlerinde güvenilirliğini ölçmek isteyen geliştiricilere pratik bir yol haritası sunuyor; açık kaynaklı altyapı ve dış denetim vurgusu, sektörde daha şeffaf ve karşılaştırılabilir benchmarkların yaygınlaşmasını teşvik edecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "gpt-oss-120b",
+      "benchmark": "Original Raman-fitting task",
+      "skor": 0,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "On the original task, gpt-oss-120b passed 0 of 3 rollouts."
+    },
+    {
+      "model": "Qwen3.8-27B",
+      "benchmark": "Raman-lab (adapted task) full pass",
+      "skor": 100,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Qwen3.8-27B ... passed all 24 raman-lab rollouts."
+    },
+    {
+      "model": "DeepSeek-V4.1-Flash",
+      "benchmark": "Raman-lab (adapted task) full pass",
+      "skor": 100,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "DeepSeek-V4.1-Flash ... passed all 24 raman-lab rollouts."
+    },
+    {
+      "model": "MiniMax-M3.1-Flash",
+      "benchmark": "Raman-lab (adapted task) full pass",
+      "skor": 100,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "MiniMax-M3.1-Flash ... passed all 24 raman-lab rollouts."
+    },
+    {
+      "model": "Various",
+      "benchmark": "Terminal-Bench accuracy variation",
+      "skor": 29.9,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Accuracy varied by up to 29.9 percentage points."
+    },
+    {
+      "model": "Various",
+      "benchmark": "SWE-bench Verified audit material issues",
+      "skor": 59.4,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "OpenAI's audit of SWE-bench Verified found material issues in 59.4% of the 138 problems it examined."
+    },
+    {
+      "model": "Various",
+      "benchmark": "Intelligence Index v5 private evaluation reliance",
+      "skor": 60,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Artificial Analysis says 60% of its Intelligence Index v5 ... rests on evaluations with private test sets."
+    }
+  ],
+  "gorsel_url": "https://huggingface.co/blog/assets/agentic-evals/thumbnail.png",
+  "url": "https://huggingface.co/blog/agentic-evals",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-11-23T00:00:00.000Z",
+  "slug": "how-to-build-and-maintain-an-agentic-evaluation"
+}

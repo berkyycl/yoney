@@ -1,0 +1,34 @@
+{
+  "baslik_tr": "Claude Ship ile Claude AI artık pull request'leri inceleyip otomatik düzeltip onaylayabiliyor",
+  "ozet_tr": "Anthropic, Claude Ship paketini duyurarak Claude AI'nın kod inceleme sürecine tam otomasyon yeteneği kazandırdı. Yeni PR Steward ve Claude Approvals ajanları, hatalı CI kontrolleri, birleştirme çakışmaları ve rutin değişiklik onaylarını kendi başına yönetebiliyor.",
+  "detayli_icerik_tr": "Anthropic, yazılım mühendislerine yönelik yeni bir ürün olan Claude Ship'i tanıttı. Bu paket, Claude AI'nın mevcut Code Review özelliğini genişleterek, pull request (PR) inceleme, hata düzeltme ve onay süreçlerini otomatikleştiriyor. Şirket, bu özelliklerin beta aşamasında olduğunu ve Claude Team ile Enterprise müşterileri için kullanılabilir olduğunu belirtti.\n\nClaude Ship'in iki yeni ajanı öne çıkıyor: PR Steward ve Claude Approvals. PR Steward, başarısız CI kontrolleri, birleştirme çakışmaları ve diğer inceleme araçlarından gelen geri bildirimleri algılayıp, gerekli değişiklikleri yaparak PR'ye yorum ekliyor. Claude Approvals ise, organizasyonun politika çerçevesinde rutin değişiklikleri otomatik olarak onaylayabiliyor; karar sürecinde Code Review bulguları ve doğal dil tabanlı sınıflandırıcılar gibi çeşitli sinyaller değerlendiriliyor.\n\nBu özellikler, geliştiricilerin kod kalitesini korurken zaman harcayan manuel inceleme adımlarını azaltmayı hedefliyor. Claude Ship, GitHub depolarıyla tam entegrasyon sağlıyor ve Claude Team ile Enterprise planları kapsamında sunuluyor. Anthropic, bu adımla AI destekli yazılım geliştirme sürecinin daha akıcı ve güvenli bir hâle gelmesini amaçladığını vurguladı.\n\nClaude'ın kod inceleme yetenekleri ilk olarak Mart ayında duyurulmuş ve Ekim ayında genel kullanıma açılmıştı. Şimdi ise Claude Ship ile bu yetenekler, otomatik düzeltme ve onay mekanizmalarıyla bir adım daha ileriye taşınıyor. Geliştiriciler, beta sürecinde bu ajanları test ederek geri bildirimde bulunabilecek.",
+  "onemli_maddeler": [
+    "Claude Ship, Claude AI'nın pull request'leri otomatik inceleyip düzeltmesini ve onaylamasını sağlıyor.",
+    "Yeni PR Steward ajanı, CI hataları ve merge conflict'leri tespit edip otomatik çözüm önerileri sunuyor.",
+    "Claude Approvals, organizasyon politikalarına uygun rutin değişiklikleri tek dokunuşla onaylayabiliyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Claude AI'nın kod inceleme sürecine tam otomasyon eklemesi, yazılım geliştirme verimliliğini artırarak sektördeki AI-as-a-service trendini güçlendiriyor.",
+  "etiketler": [
+    "Claude",
+    "AI",
+    "Kod İncelemesi",
+    "GitHub",
+    "Yazılım Mühendisliği"
+  ],
+  "anilan_modeller": [
+    "Claude",
+    "Claude Team",
+    "Claude Enterprise"
+  ],
+  "yorum_tr": "Claude Ship, geliştiricilerin rutin kod inceleme görevlerini AI'ye devrederek zaman tasarrufu sağlarken, güvenlik ve kalite kontrollerinin tutarlılığını da artırabilir. Ancak beta aşamasında olduğu için organizasyonların politikalarına uygunluk ve olası hatalı otomasyon riskleri yakından izlenmeli.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/STKB364_CLAUDE_2_C_96d15c-1.jpg?quality=90&strip=all&crop=0,0,100,100",
+  "url": "https://www.theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests",
+  "source": "The Verge AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-23T20:00:00.000Z",
+  "slug": "claude-ai-can-review-pull-requests-and-ship-fixes-on-its-own"
+}

@@ -1,0 +1,63 @@
+{
+  "baslik_tr": "OpenAI, ChatGPT'yi GPT-6.2 ile Güncelledi: Karmaşık Sorular, Web Aramaları ve Görüntü İşleme Performansı Artırıldı",
+  "ozet_tr": "OpenAI, ChatGPT'nin yeni chat‑tuned sürümü GPT-6.2'yi tüm Plus, Pro, Business ve Enterprise kullanıcılarına sunarak karmaşık günlük sorulara, web aramalarına ve görsel içeriklere yanıt verme yeteneğini önemli ölçüde geliştirdi. İç testlerde model, görüntü anlama, zor talimatları izleme ve güvenlik politikalarına uyum konularında önceki GPT-6 sürümünden yüzde 10‑20 puan daha yüksek performans gösterdi.",
+  "detayli_icerik_tr": "OpenAI, bugün GPT-6.2 adlı yeni bir chat‑tuned modeli tüm Plus, Pro, Business ve Enterprise abonelerine erişime açtı. Şirket, bu sürümün karmaşık istekleri ve web aramalarını önceki GPT-6'ya göre daha iyi işlediğini, ayrıca daha ilgili takip soruları sorduğunu belirtiyor. Model, özellikle görsel içeriklerdeki anlama yeteneğiyle öne çıkıyor; iç testlerde görüntü anlama başarısı %71,7 iken GPT-6 sadece %47,4 seviyesindeydi.\n\nZor talimatları izleme konusunda da GPT-6.2 %78,1 oranında başarılı bulunurken, GPT-6 bu oranı %62,5 olarak kaydetti. Uzman‑seviye görevlerde yapılan dahili benchmarkda, GPT-6.2 dört farklı akıl yürütme seviyesinde GPT-6'yı geride bırakarak %65 ile %71 arasında bir doğruluk elde etti; GPT-6 ise %52‑%66 aralığındaydı. Web arama yeteneklerini ölçen dahili BrowseComp testinde de model, en yüksek seviyede yaklaşık 10 puanlık bir farkla lider konumda yer aldı.\n\nGüvenlik politikalarına uyum açısından da kayda değer bir iyileşme söz konusu. GPT-6.2, zorlayıcı sohbetlerde %91‑%94 oranında güvenlik kurallarına uyarken, GPT-6 bu oranı %77‑%80 arasında tutuyordu. Özellikle genç kullanıcıların duygusal bağımlılık, yeme bozuklukları ve tehlikeli aktivitelerle ilgili risklerini azaltmaya yönelik iyileştirmeler vurgulandı. Bu iyileştirmeler yalnızca ChatGPT sohbet modunda geçerli; Work ve Codex modelleri aynı kalıyor. Enterprise yöneticileri, kullanıcılarının GPT-6.2'ye erişimini kontrol etme seçeneğine de sahip.",
+  "onemli_maddeler": [
+    "GPT-6.2, görüntü anlama başarısını %71,7'ye yükselterek GPT-6'dan %24 puan farkla üstünlük sağladı.",
+    "Zor talimatları izleme ve uzman‑seviye görevlerde %78,1 ve %71'e kadar doğruluk oranlarıyla GPT-6'yı geride bıraktı.",
+    "Güvenlik politikalarına uyum %91‑%94'e çıkarıldı; genç kullanıcı güvenliği alanında belirgin iyileştirmeler yapıldı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "GPT-6.2, OpenAI'nin en yeni chat‑tuned modeli olarak performans, güvenlik ve genç kullanıcı koruması konularında önemli iyileştirmeler sunuyor; bu, sektördeki rekabeti ve uygulama senaryolarını doğrudan etkileyen büyük bir güncelleme.",
+  "etiketler": [
+    "ChatGPT",
+    "GPT-6.2",
+    "OpenAI",
+    "AI safety",
+    "Web search"
+  ],
+  "anilan_modeller": [
+    "GPT-6.2",
+    "GPT-6",
+    "Work",
+    "Codex"
+  ],
+  "yorum_tr": "GPT-6.2'nin tanıtımı, geliştiricilere daha güçlü bir sohbet tabanı ve daha güvenli bir kullanıcı deneyimi sunarak uygulama geliştirme sürecini hızlandıracak; aynı zamanda son kullanıcılar için daha doğru ve sorumlu yanıtlar anlamına geliyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GPT-6.2",
+      "benchmark": "Image Understanding",
+      "skor": 71.7,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "GPT-6.2 understands images better (71.7 vs. 47.4 percent)"
+    },
+    {
+      "model": "GPT-6.2",
+      "benchmark": "Instruction Following (difficult instructions)",
+      "skor": 78.1,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "follows difficult instructions more often (78.1 vs. 62.5 percent)"
+    },
+    {
+      "model": "GPT-6.2",
+      "benchmark": "Expert-level Task Accuracy",
+      "skor": 71,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "scores roughly 65 to just over 71 percent, compared with about 52 to 66 percent for GPT-6"
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/11/openai_chatgpt_pattern.png",
+  "url": "https://the-decoder.com/openai-updates-chatgpt-to-handle-complex-everyday-questions-web-searches-and-images-more-reliably/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-23T20:39:18.000Z",
+  "slug": "openai-updates-chatgpt-to-handle-complex-everyday-questions"
+}

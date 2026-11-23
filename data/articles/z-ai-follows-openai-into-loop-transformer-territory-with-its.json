@@ -1,0 +1,84 @@
+{
+  "baslik_tr": "Z.ai, 750 Milyar Parametreli GLM-5.4 Loop Transformer Modelini Tanıttı",
+  "ozet_tr": "Z.ai, 750 milyar parametreli GLM-5.4 modelini duyurarak OpenAI'nin loop transformer yaklaşımını takip etti. Model, aynı katmanları iki kez çalıştırarak parametre sayısını artırmadan hesaplama derinliğini yükseltiyor ve kod aracılığıyla video, oyun ve CAD tasarımları üretme iddiasında bulunuyor.",
+  "detayli_icerik_tr": "Z.ai, yeni GLM-5.4 modelini 28 katmanı iki kez çalıştıran bir \"loop\" mimarisi üzerine inşa etti. Standart dil modelleri her katmanı bir kez geçirirken, GLM-5.4 aynı katman bloklarını tekrarlayarak ara sonuçları iyileştiriyor; bu sayede 750 milyar parametreli modelin performansı, 2‑3 trilyon parametreli modellere yakın seviyelere ulaşıyor. Model, özel kontrol kapıları, paylaşımlı token önbelleği ve seyrek dikkat mekanizmaları sayesinde ikinci geçişte bellek ve hesaplama maliyetlerini kontrol altında tutuyor.\n\nModelin mimarisi, ilk geçişte bağlamı temkinli bir şekilde oluşturup ikinci geçişte değişiklikleri tam olarak geri yazıyor. Zorlu tokenlerde ilk geçişin etkisi daha yüksek oluyor. İkinci geçiş, KV önbelleğini paylaşarak bellek kullanımını iki katına çıkarmadan 1 milyon tokenlik bağlamı destekliyor. Seyrek dikkat, önceki geçişte seçilen en alakalı tokenları yeniden kullanarak hesaplama süresini kısaltıyor; bu sayede model, düşük yoğunluklu koşullarda 200 token/sn, yoğun yük altında ise 70‑80 token/sn hızına ulaşabiliyor.\n\nZ.ai, bu mimariyi 30 milyar parametreli bir test modeliyle denedi ve beş farklı benchmark'ta temel modele göre üstün performans gösterdi. AIME25 matematik testinde puan 19.2'den 30.4'e, GPQA‑Diamond bilim sorularında 47.6'dan 56.3'e, AA‑LCR uzun bağlam testinde 40.3'ten 47.7'ye yükseldi. MMLU‑Pro ve IFBench gibi bilgi‑ve‑talimat testlerinde ise sadece üç puan civarında artış sağlandı, ancak yanıt uzunlukları %10‑15 oranında kısaldı.\n\nGLM-5.4 şu anda Z.ai'nin GLM Coding Plan, ZCode kodlama ortamı ve Z.ai Chat üzerinden erişime açık; API ve fiyatlandırma henüz açıklanmadı. Şirket, model ağırlıklarını ek güvenlik testlerinden sonra yayınlamayı planlıyor ve daha büyük bir modelin yakında duyurulacağını duyurdu. Bu gelişme, \"Genelleştirilmiş Kodlama\" vizyonunun bir başlangıcı olarak konumlandırılıyor; Z.ai, modelin kendi bestelemiş olduğu bir müzik videosu, FreeCAD ile tasarlanan altı eksenli robot kolu, tam bir oyun ve etkileşimli 3D sahne gibi örneklerle yeteneklerini sergiliyor.",
+  "onemli_maddeler": [
+    "GLM-5.4, 750 milyar parametreyle loop transformer mimarisi kullanarak aynı katmanları iki kez çalıştırıyor ve parametre sayısını artırmadan derinliği artırıyor.",
+    "Model, özel kontrol kapıları ve paylaşımlı KV önbelleği sayesinde ikinci geçişte bellek maliyetini kontrol altında tutuyor.",
+    "30 B test modeli, AIME25, GPQA‑Diamond ve AA‑LCR gibi beş benchmark'ta temel modele göre belirgin puan artışı sağladı.",
+    "Z.ai, GLM-5.4'ün kod aracılığıyla video, oyun ve CAD modelleri üretme yeteneğini \"Genelleştirilmiş Kodlama\" vizyonu kapsamında tanıttı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "750 milyar parametreli bir büyük dil modeli, loop transformer mimarisiyle yeni bir verimlilik yaklaşımı sunması ve kod tabanlı çoklu medya üretim yetenekleriyle sektörde rekabeti artırması nedeniyle yüksek öneme sahiptir.",
+  "etiketler": [
+    "GLM-5.4",
+    "loop transformer",
+    "Z.ai",
+    "large language model",
+    "genelleştirilmiş kodlama"
+  ],
+  "anilan_modeller": [
+    "GLM-5.4",
+    "GLM-5",
+    "GLM-5.3",
+    "GPT-6 Astra",
+    "Kimi K3.1 Pro",
+    "Qwen3.8-Max"
+  ],
+  "yorum_tr": "GLM-5.4'ün loop mimarisi, aynı parametre bütçesi içinde model derinliğini artırarak performans kazancı sağlama potansiyeli taşıyor; geliştiriciler için daha uzun bağlam ve kod‑tabanlı yaratıcı uygulamalara kapı aralarken, kullanıcılar daha tutarlı ve hızlı yanıtlar bekleyebilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GLM-5.4 (30B test)",
+      "benchmark": "AIME25",
+      "skor": 30.4,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Its biggest gain came on the AIME25 math benchmark, where scores jumped from 19.2 to 30.4 points."
+    },
+    {
+      "model": "GLM-5.4 (30B test)",
+      "benchmark": "GPQA-Diamond",
+      "skor": 56.3,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Scores on the expert-level science questions in GPQA-Diamond rose from 47.6 to 56.3 points"
+    },
+    {
+      "model": "GLM-5.4 (30B test)",
+      "benchmark": "AA-LCR",
+      "skor": 47.7,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "on the AA-LCR long-context test they climbed from 40.3 to 47.7 points"
+    },
+    {
+      "model": "GLM-5.4 (30B test)",
+      "benchmark": "MMLU-Pro",
+      "skor": 3,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Gains were smaller at just over three points on the MMLU-Pro knowledge test"
+    },
+    {
+      "model": "GLM-5.4 (30B test)",
+      "benchmark": "IFBench",
+      "skor": 3,
+      "birim": "puan",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "and on IFBench, which tests instruction following."
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/06/zhipu-ai-logo-wall-nano-banana-pro.jpg",
+  "url": "https://the-decoder.com/z-ai-follows-openai-into-loop-transformer-territory-with-its-new-750b-flagship-model/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-23T15:13:03.000Z",
+  "slug": "z-ai-follows-openai-into-loop-transformer-territory-with-its"
+}

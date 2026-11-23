@@ -1,0 +1,71 @@
+{
+  "baslik_tr": "RoboTrack: Gerçek Dünya Robotik Manipülasyonu İçin Yeni Point-Tracking Benchmark ve Modeller",
+  "ozet_tr": "AllenAI, robotik manipülasyon sahnelerinde nokta takibi yeteneklerini ölçmek için RoboTrack-Bench adlı 307 video ve 2.522 insan doğrulamalı iz içeren bir benchmark sunuyor. Ayrıca, bu veri setiyle eğitilen RoboTracker ve RoboTracker-Warp modelleri, mevcut izleyicilerin performansını önemli ölçüde artırarak dört robotik benchmarkta en yüksek ortalama Jaccard (AJ) skorlarını elde etti.",
+  "detayli_icerik_tr": "Robotların gerçek dünyada nesneleri yakalayıp taşıması, görüş açısı değişiklikleri, nesne örtülmesi ve kalabalık sahneler gibi zorluklarla doludur. Bu sorunları hafifletmek için nokta takibi (point tracking) yöntemi, bir çerçevedeki bir konumu sonraki çerçevelerde izleyerek nesnenin hareketini ve görünürlüğünü tahmin eder. AllenAI ekibi, bu yaklaşımın mevcut robotik izleyicilerdeki eksikliklerini ortaya koymak ve iyileştirmek amacıyla RoboTrack adlı yeni bir benchmark ve eğitim veri seti geliştirdi.\n\nRoboTrack-Bench, DROID, Ego-Exo4D, MolmoAct 2 ve EgoVerse gibi farklı kaynaklardan derlenen 307 video içeriyor ve toplam 2.522 insan tarafından doğrulanmış nokta izine sahip. Videolar, robot kolları ve insan elleriyle nesnelerin manipülasyonunu, kalabalık ortamları ve birinci ile üçüncü şahıs bakış açılarını kapsıyor. Ayrıca, 33 çift video, iki kamera arasında eşzamanlı kaydedilmiş olup çok‑görüşlü izleme araştırmalarına da imkan tanıyor.\n\nEğitim verisi açısından AllenAI, MolmoSpaces simülasyon ortamını genişleterek RoboTrack-15M adlı 15 milyon nokta izine sahip sentetik bir veri seti oluşturdu. Bu set, 3.000 video ve her videoda 5.000 iz içeren, robot kollarının nesneleri kavradığı ve hareket ettirdiği sahneleri gerçek zamanlı olarak hesaplayarak üretiyor. Simülasyon, robot kolu, nesne geometrileri ve iki kamera (bilek ve taban) bilgilerini kullanarak her noktanın konum ve görünürlüğünü otomatik olarak belirliyor.\n\nRoboTracker ve RoboTracker-Warp modelleri, sırasıyla AllTracker (17M parametre) ve CoWTracker (≈1B parametre) temelli olup RoboTrack-15M veri setiyle ince ayar yapıldı. RoboTracker, RoboTrack-Bench'te 62.6 AJ'dan 63.4 AJ'ye (%0.8) yükselirken, daha büyük model RoboTracker-Warp, 63.9 AJ'dan 66.0 AJ'ye (%2.1) çıkarak dört benchmarktan dördünde en yüksek skoru elde etti. Bu iyileştirmeler, gerçek dünya manipülasyon videolarında mevcut izleyicilerin zayıf olduğu noktaları kapatırken, genel video benchmarklarında (DAVIS, Kinetics) performanslarını korumalarını sağladı.\n\nUygulama örneği olarak, laboratuvar ortamında pipetleme görevinde RoboTracker kullanılarak tek bir gösterimden öğrenilen hareketler, 20 farklı düzenlemede %85 başarı oranı (17/20) yakaladı. Optik akış (RAFT) ve nesne maskeleri (SAM3) gibi alternatif yöntemler ise sırasıyla 5 ve 8 başarılı deneme ile geride kaldı. Bu sonuçlar, nokta takibinin uzun menzilli hareket ve kısmi örtülme durumlarında robotik manipülasyonun hassas kontrolü için kritik bir temsilci olduğunu gösteriyor.",
+  "onemli_maddeler": [
+    "RoboTrack-Bench, gerçek dünya robotik manipülasyon sahnelerini kapsayan 307 video ve 2.522 insan doğrulamalı nokta izine sahip yeni bir benchmark olarak tanıtıldı.",
+    "RoboTrack-15M, MolmoSpaces simülasyon ortamından üretilen 15 milyon nokta izine sahip sentetik veri setiyle modellerin gerçek dünya performansını artırmayı hedefliyor.",
+    "RoboTracker ve RoboTracker-Warp modelleri, mevcut izleyicileri ince ayar yaparak RoboTrack-Bench'te sırasıyla 0.8 ve 2.1 AJ puan artışı sağlayarak dört benchmarkta en yüksek skorları elde etti.",
+    "Pipetleme laboratuvar görevinde nokta takibi, optik akış ve nesne maskelerine kıyasla %85 başarı oranı ile daha güvenilir bir kontrol yöntemi olarak kanıtlandı."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Gerçek dünya robotik manipülasyonunda nokta takibi eksikliği, mevcut benchmarkların sınırlı sahne çeşitliliği ve sentetik verilerin yetersizliği sektörde önemli bir boşluk oluşturuyordu; RoboTrack bu boşluğu dolduruyor ve yeni modellerle performans artışı sağlıyor.",
+  "etiketler": [
+    "robotik",
+    "point tracking",
+    "benchmark",
+    "simülasyon",
+    "AI"
+  ],
+  "anilan_modeller": [
+    "RoboTracker",
+    "RoboTracker-Warp"
+  ],
+  "yorum_tr": "RoboTrack benchmarku, robotik manipülasyonun gerçek dünya zorluklarını daha doğru yansıtarak araştırmacıların ve geliştiricilerin daha sağlam izleyiciler tasarlamasına olanak tanıyacak. Yeni modellerin gösterdiği performans artışı, sentetik veri ve ince ayarın birleşiminin gelecekteki robotik görsel algı sistemlerinde kritik bir rol oynayacağını gösteriyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "CoWTracker",
+      "benchmark": "RoboTrack-Bench",
+      "skor": 63.9,
+      "birim": "AJ",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Average Jaccard (AJ)",
+      "kaynak_metinden_alinti": "CoWTracker drops from 70.5 AJ on RoboTAP to 63.9 on RoboTrack-Bench."
+    },
+    {
+      "model": "RoboTracker",
+      "benchmark": "RoboTrack-Bench",
+      "skor": 63.4,
+      "birim": "AJ",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Average Jaccard (AJ)",
+      "kaynak_metinden_alinti": "RoboTracker improves RoboTrack-Bench by 0.8 AJ (62.6 to 63.4)."
+    },
+    {
+      "model": "RoboTracker-Warp",
+      "benchmark": "RoboTrack-Bench",
+      "skor": 66,
+      "birim": "AJ",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Average Jaccard (AJ)",
+      "kaynak_metinden_alinti": "RoboTracker-Warp improves RoboTrack-Bench by 2.1 AJ (63.9 to 66.0)."
+    },
+    {
+      "model": "BootsTAPNext",
+      "benchmark": "RoboTrack-Bench",
+      "skor": 60.2,
+      "birim": "AJ",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Average Jaccard (AJ)",
+      "kaynak_metinden_alinti": "BootsTAPNext ... raises its RoboTrack-Bench score by 5.1 AJ (55.1 to 60.2)."
+    }
+  ],
+  "gorsel_url": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/0KlbITzhyUGtGPyvi09um.png",
+  "url": "https://huggingface.co/blog/allenai/robotrack",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-11-23T17:20:37.000Z",
+  "slug": "robotrack-point-tracking-for-real-world-robotic-manipulation"
+}

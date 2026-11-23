@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "Anthropic, Claude Ship ile AI destekli kod inceleme ve onay sürecini otomatikleştiriyor",
+  "ozet_tr": "Anthropic, Claude Ship adlı yeni AI ajanları paketini beta aşamasında duyurdu. Bu araçlar, pull‑request (PR) incelemelerinden hataların otomatik düzeltilmesine ve ekip politikalarına göre kod onayına kadar tüm süreci otomatikleştirerek geliştiricilerin iş akışını hızlandırmayı hedefliyor.",
+  "detayli_icerik_tr": "Anthropic, Claude'un yalnızca kod üretmekten öteye geçerek kodun üretim sonrası aşamalarını da yönetecek bir platform sunduğunu açıkladı. Claude Ship, üç bileşenden oluşuyor: hâlihazırda genel kullanıma açık olan Code Review, beta aşamasındaki PR Steward ve Claude Approvals. PR Steward, başarısız CI kontrolleri, birleştirme çakışmaları ve Code Review geri bildirimlerini otomatik olarak ele alıyor; her push sonrası yapılan değişiklikleri ve geri alma adımlarını yorum olarak ekliyor.\n\nClaude Approvals ise ekiplerin repository içinde tanımladığı politika dosyasına göre kod değişikliklerini otomatik onaylıyor. Bu politikalar doğal dilde yazılabiliyor ve Code Review bulguları, şirket içi sınıflandırıcılar gibi çeşitli sinyallerle zenginleştirilebiliyor. Beta sürecinde Anthropic, onay mekanizmasının önce sadece gözlem modunda çalıştırılmasını öneriyor ve ekiplerin tek bir repository ile başlayıp aylık harcama limitleri belirlemelerine imkan tanıyor.\n\nClaude Ship, GitHub üzerindeki Claude Team ve Enterprise planları kapsamında sunulacak. Kullanıcılar hâlâ onay sürecinin hangi aşamalarda insan müdahalesi gerektireceğini, hangi inceleme derinliğinin (Quick, Standard, Deep) kullanılacağını ve aracın nerede çalıştırılacağını kontrol edebilecek. Bu esneklik, AI tabanlı kod onayının güvenlik ve sorumluluk endişelerini azaltmayı amaçlıyor.\n\nAnthropic'in bu hamlesi, AI kod üretim araçlarının artan popülaritesine yanıt olarak ortaya çıkan inceleme ve onay darboğazlarını çözmeyi hedefliyor. Geliştiriciler, Claude Ship sayesinde PR sürecindeki manuel adımları azaltarak daha hızlı iterasyonlar yapabilecek ve ekipler, politika tabanlı otomatik onaylarla kod kalitesini tutarlı bir şekilde koruyabilecek.",
+  "onemli_maddeler": [
+    "Claude Ship, PR Steward ve Claude Approvals adlı iki yeni AI ajanını beta aşamasında sunuyor.",
+    "Claude Approvals, ekiplerin repository içinde tanımladığı doğal dil politikalarına göre kod onayını otomatikleştiriyor.",
+    "Araçlar, GitHub üzerindeki Claude Team ve Enterprise planlarıyla entegre çalışacak ve kullanıcılar hâlâ onay sürecinde insan müdahalesi seçebilecek."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "AI destekli kod inceleme ve otomatik onay, yazılım geliştirme süreçlerinde verimliliği artırarak büyük ekipler için kritik bir iyileştirme sağlıyor.",
+  "etiketler": [
+    "Anthropic",
+    "Claude Ship",
+    "AI coding",
+    "code review",
+    "DevOps"
+  ],
+  "anilan_modeller": [
+    "Claude"
+  ],
+  "yorum_tr": "Claude Ship, kod inceleme ve onay aşamalarını otomatikleştirerek geliştiricilerin üretkenliğini artırırken, ekiplerin kontrol ve güvenlik politikalarını korumasına da olanak tanıyor. Bu tür AI‑odaklı DevOps araçları, büyük ölçekli yazılım projelerinde insan hatasını azaltarak daha hızlı teslimat süreleri sağlayabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://techcrunch.com/wp-content/uploads/2026/10/GettyImages-2295579000.jpg?resize=1200,800",
+  "url": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/",
+  "source": "TechCrunch AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-23T22:05:50.000Z",
+  "slug": "anthropic-launches-claude-ship-letting-ai-agents-review-fix"
+}
