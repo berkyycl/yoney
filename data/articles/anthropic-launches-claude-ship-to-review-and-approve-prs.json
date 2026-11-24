@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "Anthropic, Claude Ship ile PR'leri Otomatik İnceleyip Onaylıyor (Beta)",
+  "ozet_tr": "Anthropic, Claude Ship adlı yeni beta hizmetini duyurdu. Bu sistem, GitHub pull request'lerini otomatik olarak inceleyip, hataları düzelterek ve ekip politikalarına göre onaylayarak geliştiricilerin kod gönderim sürecini hızlandırmayı hedefliyor.",
+  "detayli_icerik_tr": "Anthropic, Claude Ship'i beta aşamasında Claude Team ve Enterprise planları kapsamında kullanıma sundu. Sistem, daha önce genel kullanıma açılmış olan Code Review özelliğini, yeni beta ajanları PR Steward ve Claude Approvals ile birleştiriyor. Code Review, PR'leri hızlı, standart veya derin seviyelerde tarayarak hataları, güvenlik açıklarını ve stil problemlerini tespit ediyor. PR Steward, CI hataları, birleştirme çakışmaları ve Code Review geri bildirimlerine yanıt vererek otomatik düzeltmeler yapıyor; ancak doğrudan onay ya da birleştirme yetkisi yok.\n\nClaude Approvals ise ekiplerin repository içinde tanımladığı politika dosyasına göre rutin değişiklikleri tek başına onaylayabiliyor ya da insan müdahalesi gerektirebiliyor. Bu politika, Code Review sonuçlarını ve doğal dilde yazılmış sınıflandırıcıları da göz önünde bulundurabiliyor. Anthropic, bu özelliğin önce gözlem modunda çalıştırılmasını, ardından branch koruma kurallarına entegre edilmesini öneriyor.\n\nKullanıcılar, yeni /ship komutuyla kendi değişikliklerini test edebiliyor; bu komut değişikliği push'lar, PR açar, inceleme yapar ve geri bildirimleri işler. Yönetici seviyesinde ise repository bazında inceleme seviyesi, inceleme zamanlaması ve aylık harcama limitleri ayarlanabiliyor. Hizmet token bazlı faturalandırılıyor ve Zero Data Retention, HIPAA uyumluluğu ya da müşteri yönetimli şifreleme anahtarları kullanan organizasyonlarda kullanılamıyor. Enterprise müşterileri, 15 Ocak 2027 tarihine kadar Claude Ship kredisi olarak en az 10.000 $ alabiliyor.\n\nAnthropic'in kendi Claude Code ekibi, Claude Ship'i kullanmaya başladıktan sonra Haziran‑Eylül döneminde birleştirilen PR sayısının iki katına çıktığını ve geri dönüş oranının %40'tan fazla azaldığını raporladı. Bu, sistemin geliştiricilerin iş akışını ne kadar hızlandırdığına dair somut bir gösterge sunuyor.",
+  "onemli_maddeler": [
+    "Claude Ship, Code Review, PR Steward ve Claude Approvals bileşenlerini bir araya getirerek tam otomatik PR inceleme ve onay süreci sunuyor.",
+    "Enterprise planındaki organizasyonlar, 15 Ocak 2027'ye kadar 10.000 $ değerinde Claude Ship kredisi alabilecek.",
+    "Hizmet token bazlı faturalandırılıyor ve Zero Data Retention, HIPAA ya da müşteri yönetimli şifreleme anahtarları kullanılan ortamlar için kapalı."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Claude Ship, geliştiricilerin kod gönderim sürecini otomatikleştirerek verimliliği artırması ve Anthropic'in Enterprise hizmetlerine yeni bir katma değer sunması nedeniyle sektörde önemli bir güncelleme olarak değerlendiriliyor.",
+  "etiketler": [
+    "Anthropic",
+    "Claude Ship",
+    "code review",
+    "GitHub",
+    "AI devops"
+  ],
+  "anilan_modeller": [
+    "Claude"
+  ],
+  "yorum_tr": "Claude Ship, kod inceleme ve onay aşamalarını otomatikleştirerek ekiplerin geliştirme hızını artırırken, aynı zamanda güvenlik ve politika uyumluluğunu da koruyor. Bu tür entegrasyonlar, AI destekli geliştirme araçlarının kurumsal benimsenmesini hızlandırabilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/11/og.png",
+  "url": "https://www.testingcatalog.com/anthropic-launches-claude-ship-to-review-and-approve-prs/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-23T23:28:31.000Z",
+  "slug": "anthropic-launches-claude-ship-to-review-and-approve-prs"
+}

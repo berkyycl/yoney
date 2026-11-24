@@ -1,0 +1,36 @@
+{
+  "baslik_tr": "Google, Pro Kullanıcılar İçin Antigravity ve Carbon'a Görev Kontrol Listeleri Ekliyor",
+  "ozet_tr": "Google, Antigravity platformunda Gemini 4 Carbon ve Hydrogen modellerine erişimi genişletti, Pro abonelere ayrı Argon kota havuzunu kaldırdı ve uzun süren görevler için canlı kontrol listeleri sundu. Yeni Orchestrator ayarlarıyla kullanıcılar planlayıcı ve yürütücü modelleri ayrı ayrı seçebilecek.",
+  "detayli_icerik_tr": "Google DeepMind'in agent‑first kodlama platformu Antigravity, 23 Kasım 2026 tarihinde bir dizi güncelleme aldı. Varun Mohan'ın X üzerinden duyurduğu değişikliklerle, tüm kullanıcıların Gemini kotaları sıfırlandı; bu, model seviyelerinin her tierda yükseltilmesi anlamına geliyor. Ücretli Google AI Pro aboneleri artık Gemini 4 Carbon modeline erişebilecek ve Gemini 4 Hydrogen tüm kullanıcılara açıldı.\n\nAyrıca, Pro abonelerine özel olarak tutulan Argon kota havuzu kaldırıldı ve bu kapasite genel Gemini kotasına aktarıldı. Böylece kullanıcılar Argon, Carbon ya da Gemini 4 Neon modellerini istedikleri gibi tüketebilecek. Varun Mohan, bu değişikliğin hâlâ yayılma aşamasında olduğunu ve bazı kullanıcıların önce kota sıfırlamasını, ardından Carbon modelini görmelerini beklediğini belirtti.\n\nPlatforma yeni bir Orchestrator Settings paneli eklendi. Bu panelde, planlayıcı (orchestrator) ve yürütücü (executor) modelleri ayrı ayrı seçilebiliyor ve her birine farklı çaba seviyeleri atanabiliyor. Orchestrator modeli işi planlayıp tasarım kararları alırken, executor modeli arama, düzenleme, derleme ve test gibi adımları gerçekleştiriyor. Kullanıcılar bu modelleri konuşma menüsünden de seçebiliyor ve örnek olarak Neon High (orchestrator) ile Hydrogen High (executor) kombinasyonu yüksek kaliteyi daha az token harcamasıyla sağlıyor.\n\nEn çok talep edilen iyileştirmelerden biri olan canlı görev kontrol listeleri de v2.34.0 sürümüyle kullanıma sunuldu. Uzun süren görevlerin her adımı, paralel adımların durumu ve tamamlanan adımlar sayısı gerçek zamanlı olarak gösteriliyor. Bu özellik, yan sohbetlerin dikkat dağıtmasını önlemek ve karmaşık iş akışlarında şeffaflık sağlamak amacıyla geliştirildi. Antigravity ekibi, bu güncellemelerin geliştiricileri çok‑ajanlı ve sürü (swarm) iş akışlarını daha verimli kullanmaya teşvik edeceğini vurguladı.",
+  "onemli_maddeler": [
+    "Gemini 4 Carbon, Pro abonelere açıldı; Gemini 4 Hydrogen ise tüm kullanıcılara sunuldu.",
+    "Argon kota havuzu kaldırıldı, kapasite genel Gemini kotasına aktarıldı.",
+    "Yeni Orchestrator Settings paneliyle planlayıcı ve yürütücü modelleri ayrı ayrı seçilebiliyor.",
+    "Antigravity 2.34.0 sürümünde uzun süren görevler için canlı kontrol listeleri eklendi."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Güncellemeler, geliştiricilerin çok‑ajanlı iş akışlarını daha verimli yönetmesini sağlarken, model erişimini genişleterek platformun kullanımını artırıyor; bu da AI‑destekli yazılım geliştirme ekosisteminde önemli bir adım.",
+  "etiketler": [
+    "Google Antigravity",
+    "Gemini",
+    "Orchestrator",
+    "Neon",
+    "Task Checklists"
+  ],
+  "anilan_modeller": [
+    "Gemini 4 Carbon",
+    "Gemini 4 Hydrogen",
+    "Gemini 4 Neon",
+    "Argon"
+  ],
+  "yorum_tr": "Bu güncellemeler, çok‑ajanlı akışları benimseyen geliştiriciler için hem maliyet hem de şeffaflık açısından önemli bir iyileştirme sunuyor; model erişiminin genişlemesi, daha fazla kullanıcıyı platforma çekebilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/11/1_WLkF-gPCou11WYlKZUTC_g.jpg",
+  "url": "https://www.testingcatalog.com/google-adds-task-checklists-to-antigravity-and-carbon-for-pro/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-24T00:02:37.000Z",
+  "slug": "google-adds-task-checklists-to-antigravity-and-carbon-for-pr"
+}

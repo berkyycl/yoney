@@ -1,0 +1,44 @@
+{
+  "baslik_tr": "GPT-6.2 Astra, Smoktunowicz Boşluk Teoremine Kanıt Buldu ve Kendi İspat Stratejisini Geliştirdi",
+  "ozet_tr": "OpenAI'nin GPT-6.2 Astra modeli, 2006 tarihli Smoktunowicz Boşluk Teoremi için tamamen makine‑doğrulanabilir bir kanıt üretti ve bu süreçte yeni bir ispat stratejisi geliştirdi. Model, Meta'nın AutoformBench alt kümesi Autoform‑Hard'ta 49 görevi çözüp liderliği ele geçirdi.",
+  "detayli_icerik_tr": "OpenAI'nin en yeni büyük dil modeli GPT-6.2 Astra, Vals AI tarafından yürütülen bir deneyde matematiksel bir teoremi, insan müdahalesi olmadan kanıtladı. 2006 yılında ortaya konmuş Smoktunowicz Boşluk Teoremi, bir sistemin temel yapıtaşlarını çarpması durumunda büyümenin ya çok yavaş ya da çok hızlı olduğunu, arada bir orta yol olmadığını ifade eder. Bu teorem daha önce Mathlib kütüphanesinde eksik olan temel bileşenler nedeniyle kanıtlanamamıştı.\n\nAstra, eksik kütüphane öğelerini atlayarak \"kapasite\" (capacity) adlı bir metrik üzerinden yeni bir ispat yolu geliştirdi. Kapasite, bir hesaplama adımında eklenen en az öğe sayısını ölçen ve bir grafın kenarına benzer davranan bir ölçüttür. Model, bu metriği kullanarak 1.800 satırlık bir Lean kanıtı oluşturdu ve bu kanıt, makine tarafından doğrulanabilir nitelikteydi.\n\nBu başarı, Meta FAIR'ın AutoformBench koleksiyonundan seçilen ve Vals AI tarafından düzenlenen Autoform‑Hard test setinde gerçekleşti. Set, 56 görevden oluşuyor ve önceki on model bu görevleri bütçe sınırları içinde çözememişti. Astra, 94 dakikada 21,58 $ harcayarak 49 görevi çözdü ve liderlik tablosunda GPT-6.2 Sol ve Claude Fable 5.2 modellerinin her birinin 48 görev çözmesinin üzerine çıktı.\n\nBu gelişme, yapay zekâ destekli matematiksel ispatların sadece var olan yöntemleri taklit etmekle kalmayıp, yeni kanıt stratejileri keşfedebileceğini gösteriyor. Aynı zamanda Lean gibi formal kanıt dillerinin AI ile entegrasyonunun, bilimsel araştırmalarda insan‑makine iş birliğinin sınırlarını genişletebileceğine işaret ediyor.",
+  "onemli_maddeler": [
+    "GPT-6.2 Astra, Smoktunowicz Boşluk Teoremi için ilk makine‑doğrulanabilir Lean kanıtını üretti.",
+    "Model, eksik Mathlib bileşenlerini \"kapasite\" metriğiyle aşarak yeni bir ispat stratejisi geliştirdi.",
+    "Autoform‑Hard benchmark'inde 49/56 görevi çözerek liderliği ele geçirdi; bir önceki en iyi modeller 48 görev çözmüşti."
+  ],
+  "kategori": "benchmark",
+  "onem": 5,
+  "onem_gerekce": "Modelin matematiksel bir teoremi insan müdahalesi olmadan kanıtlaması ve yeni bir ispat yöntemi üretmesi, AI‑destekli bilimsel araştırmalarda çığır açıcı bir adım olarak görülüyor.",
+  "etiketler": [
+    "matematik",
+    "AI ispatı",
+    "Lean",
+    "Autoform-Hard",
+    "GPT-6.2"
+  ],
+  "anilan_modeller": [
+    "GPT-6.2 Astra",
+    "GPT-6.2 Sol",
+    "Claude Fable 5.2"
+  ],
+  "yorum_tr": "Bu gelişme, yapay zekânın yalnızca mevcut kanıtları yeniden üretmekle kalmayıp, özgün matematiksel stratejiler geliştirebileceğini gösteriyor; geliştiriciler için yeni algoritmik araştırma alanları, kullanıcılar için ise daha güvenilir otomatik kanıt sistemleri anlamına geliyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GPT-6.2 Astra",
+      "benchmark": "Autoform-Hard",
+      "skor": 49,
+      "birim": "task",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "solved tasks",
+      "kaynak_metinden_alinti": "It now leads the leaderboard with 49 solved tasks, ahead of GPT-6.2 Sol and Claude Fable 5.2 at 48 each."
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/11/gpt_lean_proof.png",
+  "url": "https://the-decoder.com/gpt-6-2-astra-solved-a-math-theorem-no-other-ai-could-crack-then-invented-its-own-proof-strategy/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-23T12:17:01.000Z",
+  "slug": "gpt-6-2-astra-solved-a-math-theorem-no-other-ai-could-crack"
+}
