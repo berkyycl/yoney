@@ -1,0 +1,30 @@
+{
+  "baslik_tr": "Anthropic Araştırmacısı AI Destekli Riemann Hipotezi Kanıtını Savunuyor, Yayın Sürecindeki Hataları Kabul Ediyor",
+  "ozet_tr": "Anthropic araştırmacısı Levent Alpöge, yapay zekâ yardımıyla elde ettiği genelleştirilmiş Riemann hipotezi kanıtının matematiksel geçerliliğini koruduğunu belirtti. Ancak kanıtı duyururken ve kodu yayınlarken yaptığı hataları \"aptalca\" davranışlar olarak nitelendirerek özür diledi.",
+  "detayli_icerik_tr": "Anthropic'in araştırmacılarından Levent Alpöge, genelleştirilmiş Riemann hipotezine (GRH) yönelik AI destekli bir kanıt geliştirdiğini ve bu kanıtın Lean ispat sisteminde formel doğrulama testlerini geçtiğini açıkladı. Alpöge, kanıtın temel mantıksal adımlarının doğru olduğunu savunurken, kanıtın uzunluğu ve karmaşıklığı hakkında yaptığı esprili açıklamaların yanlış anlaşılmalara yol açtığını itiraf etti.\n\nKanıtın kodu, Lean programlama diliyle yazılmış ve formal doğrulama sürecinden geçmiş olsa da, Alpöge kodun \"çöp\" içerdiğini, gereksiz ara adımlar ve lemalarla dolu olduğunu kabul etti. Bu durum, kodun okunabilirliğini ve topluluk tarafından incelenmesini zorlaştırdı. Araştırmacı, özellikle Anthropic'in halka arzının hemen ardından yaptığı duyurunun, hazırlıksız bir şekilde yayınlandığını ve bu sürecin eleştirildiğini belirtti.\n\nAlpöge, yayınladığı kodun temizlik aşamasını atladığını ve bazı teknik detayları gözden kaçırdığını \"stupid things I did\" başlıklı bir blog gönderisinde listelerken, bu hataların eleştirilere tamamen haklı olduğunu vurguladı. Ayrıca, sadece derlenebilir bir kodun, ispatın doğru teoremi içerdiğini ve gizli varsayımları olmadığını kanıtlamadığını, daha derin bir inceleme ve topluluk onayının gerektiğini de ekledi.\n\nBu gelişme, AI destekli matematiksel ispatların hâlâ insan denetimine ve titiz bir temizlik sürecine ihtiyaç duyduğunu gösteriyor. Anthropic'in araştırma ekibi, AI'nin karmaşık matematiksel problemleri çözmedeki potansiyelini vurgularken, aynı zamanda bilimsel iletişimde şeffaflık ve kod kalitesinin önemine de dikkat çekiyor.",
+  "onemli_maddeler": [
+    "Levent Alpöge, AI destekli kanıtının Lean ile formel doğrulama testlerini geçtiğini belirtti.",
+    "Kodun temizlenmemiş, gereksiz ara adımlar ve lemalar içerdiği ve okunabilirliğinin düşük olduğu itiraf edildi.",
+    "Yayın sürecindeki esprili açıklamalar ve hazırlıksız duyuru, topluluktan eleştiri aldı."
+  ],
+  "kategori": "arastirma",
+  "onem": 4,
+  "onem_gerekce": "AI destekli bir kanıtın Riemann hipotezi gibi temel bir problemi hedeflemesi yüksek ilgi uyandırıyor, ancak kanıtın henüz bağımsız doğrulama aşamasına geçmemiş olması etkisini sınırlıyor.",
+  "etiketler": [
+    "Riemann hipotezi",
+    "AI destekli ispat",
+    "Lean",
+    "Anthropic",
+    "matematik"
+  ],
+  "anilan_modeller": [],
+  "yorum_tr": "Bu gelişme, yapay zekânın karmaşık matematiksel problemleri çözmedeki potansiyelini gösterirken, aynı zamanda bilimsel sürecin titizliğine ve kod kalitesine vurgu yapıyor. Geliştiriciler, AI ile üretilen ispatların topluluk tarafından incelenebilir olmasını sağlamak için temizlik ve şeffaflık adımlarını ihmal etmemeli.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/11/alpoege_riemann.png",
+  "url": "https://the-decoder.com/anthropic-researcher-stands-by-his-ai-assisted-riemann-proof-but-owns-up-to-stupid-things-in-the-rollout/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-24T14:28:41.000Z",
+  "slug": "anthropic-researcher-stands-by-his-ai-assisted-riemann-proof"
+}

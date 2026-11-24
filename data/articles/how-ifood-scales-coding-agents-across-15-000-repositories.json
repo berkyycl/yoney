@@ -1,0 +1,32 @@
+{
+  "baslik_tr": "iFood, 15.000 Depoda Kodlama Ajanlarını Remote Agents Platformu ile Ölçeklendiriyor",
+  "ozet_tr": "iFood, OpenAI'nin Remote Agents Platformu sayesinde 15.000'den fazla kod deposunda güvenlik taramaları ve bağımlılık düzeltmeleri gibi rutin mühendislik görevlerini API çağrılarıyla otomatikleştirerek maliyeti 0,04 $/çalıştır seviyesine düşürdü ve düzeltme doğruluğunu iki katına çıkardı.",
+  "detayli_icerik_tr": "iFood, Latin Amerika’nın en büyük teknoloji şirketlerinden biri olarak, 15.000'den fazla kod deposunda periyodik olarak kod doğrulama, güvenlik taraması ve bağımlılık güncellemeleri gibi görevleri yürütmek zorunda. Bu görevler tek tek kolay olsa da, ölçeklendiklerinde geleneksel çözümler ekipler arasında parçalanmış ve yönetilemez hâle geliyordu. iFood'un Senior Software Engineer'ı Victor Coelho, sorunun bir model ya da kullanım senaryğında değil, bu görevlerin çalıştırıldığı altyapıda olduğunu belirtiyor.\n\nRemote Agents Platformu, bu eksikliği kapatmak için tasarlandı. Platform, bir REST API üzerinden gelen isteği izole bir sandbox içinde çalışan bir uzaktan ajan (GPT‑5.6 Luna) ile işliyor, ardından sonucu bir merge request olarak geri döndürüyor. İş akışı, depo klonlama ve branch oluşturma gibi deterministik adımlarla başlıyor, ardından modelin kodlama yetenekleri devreye giriyor ve son olarak üretilen artefaktlar yayınlanıyor. Sandbox Ubuntu tabanlı ve iFood ekosisteminin ihtiyaç duyduğu Python, Java, Kotlin, C#, TypeScript, Rust, JavaScript ve Go gibi toolchain'leri içeriyor; ayrıca Nexus, GitLab, Docker, Snyk, Kubernetes ve AWS gibi dış hizmetlere de erişim sağlanıyor.\n\nModel seçimi, sadece tek bir kriter üzerinden yapılmadı. Coelho, GPT‑5.6 Luna’nın aynı checkpoint’teki diğer modellerle kıyaslandığında zekâ, verimlilik ve yürütme hızı bakımından en iyi dengeyi sunduğunu vurguluyor. Bu denge, 27 milyar token tüketimi ve 25.000'den fazla çalıştırma sırasında ortalama 0,04 $ maliyetle sürdürülebilir bir ölçeklenebilirlik sağladı. Sonuç olarak, iFood'un iç güvenlik platformu, düzeltme doğruluğunu iki katına çıkararak çözülen güvenlik açıklarının sayısını da aynı oranda artırdı.\n\nPlatformun asenkron çalışması, geliştiricilerin görevleri izlemek zorunda kalmadan toplantı sırasında ya da başka işlerle meşgulken kod düzeltmeleri ve analizleri başlatabilmelerine olanak tanıyor. Bu sayede rutin işler ekiplerin dikkatini dağıtmıyor, daha karmaşık ve karar gerektiren problemlere odaklanmalarını sağlıyor. Coelho, bu yaklaşımın diğer ürün ekipleri için de bir şablon oluşturduğunu ve gelecekte platformun daha fazla iç uygulamaya genişletileceğini belirtiyor.",
+  "onemli_maddeler": [
+    "Remote Agents Platformu, 15.000+ kod deposunda görevleri API üzerinden uzaktan çalıştırarak ölçeklenebilirlik sağladı.",
+    "GPT‑5.6 Luna seçimi, zeka, verimlilik ve hız dengesine dayanarak ortalama 0,04 $ maliyetle 27 milyar token tüketimiyle gerçekleştirildi.",
+    "İç güvenlik platformunda düzeltme doğruluğu iki katına çıkarıldı ve çözülen güvenlik açıkları aynı oranda arttı."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Kurumsal düzeyde AI destekli kodlama otomasyonu ve maliyet verimliliği, büyük ölçekli yazılım organizasyonları için kritik bir dönüşüm sağlıyor.",
+  "etiketler": [
+    "iFood",
+    "Remote Agents",
+    "GPT-5.6 Luna",
+    "AI coding",
+    "Enterprise AI"
+  ],
+  "anilan_modeller": [
+    "GPT-5.6 Luna"
+  ],
+  "yorum_tr": "Bu gelişme, büyük ölçekli kod tabanlarına sahip şirketlerin AI ajanlarını altyapı seviyesinde standartlaştırarak hem maliyet hem de güvenlik açısından önemli tasarruflar elde etmelerini mümkün kılıyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://images.ctfassets.net/kftzwdyauwt9/4Ts7RsLLSU4iEOxQwBkGgg/cbf56c075004a9ae2c41af4d5f7b428b/ifood-customer-story-social.png?w=1600&h=900&fit=fill",
+  "url": "https://openai.com/business/customer-stories/ifood",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-11-24T00:00:00.000Z",
+  "slug": "how-ifood-scales-coding-agents-across-15-000-repositories"
+}

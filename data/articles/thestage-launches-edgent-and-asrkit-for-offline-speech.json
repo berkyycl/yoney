@@ -1,0 +1,36 @@
+{
+  "baslik_tr": "TheStage, Edgent ve ASRKit'i Çevrimdışı Konuşma İçin Tanıttı",
+  "ozet_tr": "TheStage AI, iPhone ve Mac için ücretsiz Edgent uygulamasını ve geliştiricilere yönelik ASRKit SDK'sını duyurdu. Edgent, hesap ya da API anahtarı gerektirmeden çevrimdışı toplantı transkripsiyonu, dikte ve yerel AI sohbeti sunuyor. ASRKit ise üç farklı model ailesini tek bir API ile destekleyerek geliştiricilere güçlü offline ses tanıma yetenekleri sağlıyor.",
+  "detayli_icerik_tr": "TheStage AI, iPhone ve Mac için Edgent adlı ücretsiz bir uygulamayı piyasaya sürdü; bu uygulama toplantı transkripsiyonu, dikte ve yerel AI sohbetlerini çevrimdışı olarak gerçekleştiriyor.\n\nEdgent, bir hesap ya da API anahtarı gerektirmiyor; model indirildikten sonra kullanıcılar uçak modunda bile ses kaydedip anlık transkripsiyon alabiliyor, konuşmacı kimliği ve özet de sağlanıyor. Mac'te menü çubuğunda çalışıyor, kısayollarla metin alanına dikte ve sesli asistan sunuyor. iPhone sürümü de benzer özellikler sunuyor ve kullanıcılar kendi donanımlarında model performansını ölçebiliyor.\n\nAynı zamanda TheStage, ASRKit adlı konuşma tanıma SDK'sını tanıttı. Tek bir API üzerinden TheWhisper, Qwen3‑ASR ve Parakeet‑TDT model ailelerini destekliyor; canlı altyazı, uzun ses dosyalarının bölünerek birleştirilmesi, kelime zaman damgaları, konuşmacı tanıma ve otomatik dil algılama gibi özellikler sağlıyor. SDK Kotlin, Swift ve Flutter dillerini destekliyor ve iPhone, iPad, Mac hedefli Apple SDK'sı olarak sunuluyor.\n\nASRKit, ticari kullanımda 1.000 cihaza kadar ücretsiz; daha fazla cihaz için TheStage ile iletişime geçilmesi gerekiyor. TheStage'in altyapısı NVIDIA GPU ve Apple Silicon üzerinde model sıkıştırma ve çalıştırma üzerine odaklanıyor; Edgent ve ASRKit bu teknolojiyi son kullanıcı ve geliştiricilere sunarak ses verisinin buluta gönderilmeden işlenmesini mümkün kılıyor.",
+  "onemli_maddeler": [
+    "Edgent, iPhone ve Mac'te çevrimdışı toplantı transkripsiyonu, dikte ve yerel AI sohbeti sunan ücretsiz bir uygulama.",
+    "ASRKit, TheWhisper, Qwen3‑ASR ve Parakeet‑TDT modellerini tek API ile destekleyen, Kotlin, Swift ve Flutter için kullanılabilir bir konuşma tanıma SDK'sı.",
+    "Uygulama ve SDK, hesap veya API anahtarı gerektirmiyor; 1.000 cihaza kadar ticari kullanım ücretsiz.",
+    "Canlı altyazı, uzun ses dosyası bölme‑birleştirme, kelime zaman damgaları, konuşmacı tanıma ve otomatik dil algılama gibi gelişmiş özellikler sağlıyor.",
+    "Kullanıcılar kendi donanımlarında modelin hız ve bellek tüketimini ölçerek performans benchmarkı yapabiliyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Çevrimdışı ses tanıma ve yerel AI sohbeti sunan yeni bir uygulama ve SDK, veri gizliliği ve düşük gecikme gerektiren senaryolar için kritik bir adım oluşturuyor; geliştiricilere ücretsiz ve geniş kapsamlı bir araç seti sağlanması sektördeki yenilik hızını artıracak.",
+  "etiketler": [
+    "çevrimdışı konuşma",
+    "konuşma tanıma",
+    "iOS",
+    "macOS",
+    "SDK"
+  ],
+  "anilan_modeller": [
+    "TheWhisper",
+    "Qwen3-ASR",
+    "Parakeet-TDT"
+  ],
+  "yorum_tr": "TheStage'in Edgent ve ASRKit lansmanı, veri gizliliği odaklı uygulamalara ve geliştiricilere güçlü bir offline ses işleme altyapısı sunarak sektördeki rekabeti artıracak. Özellikle mobil ve masaüstü platformlarda internet bağlantısına bağımlı olmadan yüksek doğrulukta transkripsiyon sağlanması, üretkenlik araçlarının kullanımını genişletecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/11/on-device-apple-sdk-banner.png",
+  "url": "https://www.testingcatalog.com/thestage-launches-edgent-and-asrkit-for-offline-speech/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-24T15:27:12.000Z",
+  "slug": "thestage-launches-edgent-and-asrkit-for-offline-speech"
+}

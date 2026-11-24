@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "Microduck Engel Kaçınma: Isaac Lab ve Newton ile Sim2Real Çalışma Akışı",
+  "ozet_tr": "NVIDIA Isaac Lab ve Newton simülatörleri kullanılarak Microduck robotuna sabit yürüyüş politikasını bozmadan engel kaçınma yeteneği kazandırıldı. ToF sensörüyle ortam algısı sağlayan yeni bir kontrolcü, oyun kolu komutlarını engellere göre ayarlayarak gerçek robotta test edildi.",
+  "detayli_icerik_tr": "Microduck, önceki yürüyüş politikasıyla dengede kalabilen bir robot olarak tanıtılmıştı; ancak engellerin etrafından dolaşma yeteneği eksikti. Bu yeni çalışma, sabit kalan yürüyüş politikasını korurken, zaman‑of‑flight (ToF) sensöründen gelen derinlik verilerini kullanan ayrı bir kaçınma kontrolcüsü eğitiyor. Kullanıcı oyun kolu ile yön komutu verir, kontrolcü bu komutu 50 Hz frekansında engellere göre düzeltiyor ve yürüyüş politikasına iletiyor.\n\nSimülasyon ortamı, NVIDIA Isaac Lab'in GPU‑paralel simülasyon yetenekleri ve Newton'un fizik‑ve‑sensör modellemesiyle oluşturuldu. SimReady Central üzerinden temin edilen karton kutu, çöp kutusu ve yan sehpa gibi OpenUSD varlıkları, her bölümde rastgele yerleştirilerek binlerce farklı engel düzeni üretildi. ToF sensörü, VL53L5CX modeline benzer 8×8 ızgara ve 45° görüş alanı ile 0,12‑4 m menzilde ölçüm yapıyor; sensör gürültüsü, gecikme ve eksik ölçümler de eğitim sırasında rastgele eklenerek gerçek dünyadaki hatalar simüle edildi.\n\nPoliçeyi eğitmek için PPO algoritması 16.384 paralel ortamda 1.500 iterasyon (veya DGX Spark'ta 4.096 ortamda 3.000 güncelleme) kullanıldı; bu süreç yaklaşık 6 saat sürdü. Eğitim tamamlandığında model TorchScript ve ONNX formatında dışa aktarılıyor ve gerçek robotta bir dizüstü bilgisayar üzerinden çalıştırılıyor. Robot, oyun kolu komutlarını alıyor, yeni politika bu komutları engellere göre ayarlıyor ve yürüyüş politikasına gönderiyor; maksimum ileri hızı 0,15 m/s olarak sınırlı.\n\nBu workflow, Microduck için sadece engel kaçınma değil, aynı zamanda ayakta durma, oturma‑kalkma, topa vurma ve hatta paten üzerinde kayma gibi çeşitli hareket yeteneklerini de Isaac Lab içinde deneyimleme imkanı sunuyor. Geliştiriciler, mevcut görev koleksiyonundan bir sonraki politikalarını seçerek komut, ödül ve ortam parametrelerini değiştirip yeni davranışlar keşfedebilirler.",
+  "onemli_maddeler": [
+    "Microduck robotuna sabit yürüyüş politikasını bozmadan ToF tabanlı engel kaçınma kontrolcüsü eklendi.",
+    "Isaac Lab ve Newton ile 16.384 paralel ortamda PPO eğitimi, 6 saat içinde tamamlandı.",
+    "SimReady Central'dan temin edilen OpenUSD varlıklarıyla rastgele engel düzenleri oluşturularak gerçekçi Sim2Real geçişi sağlandı."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Mevcut Microduck yürüyüş politikasına yeni bir algı‑temelli kaçınma katmanı eklenmesi, robotik öğrenme ve Sim2Real akışlarında pratik bir örnek sunarak sektördeki uygulama geliştirme sürecini hızlandırıyor.",
+  "etiketler": [
+    "Microduck",
+    "Isaac Lab",
+    "Newton",
+    "Sim2Real",
+    "ToF"
+  ],
+  "anilan_modeller": [
+    "Microduck Obstacle Avoidance Navigation Policy",
+    "Backlash Walking Policy"
+  ],
+  "yorum_tr": "Bu güncelleme, robotik platformlarda algı‑temelli kontrol katmanlarını ayrı bir model olarak eğitmenin mümkün olduğunu göstererek geliştiricilere daha modüler ve yeniden kullanılabilir bir yaklaşım sunuyor. Kullanıcılar, sabit denge politikasını koruyarak yeni görevler ekleyebilecek ve gerçek robotta hızlıca test edebilecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://cdn-uploads.huggingface.co/production/uploads/6847ab8c06094fa4afb6ee38/M70tUMNd7N4KO5QGI37YZ.png",
+  "url": "https://huggingface.co/blog/nvidia/microduck-obstacle-avoidance",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-11-24T16:34:13.000Z",
+  "slug": "microduck-obstacle-avoidance-a-sim2real-workflow-with-isaac"
+}

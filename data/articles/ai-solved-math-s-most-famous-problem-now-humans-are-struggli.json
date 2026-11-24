@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "AI, 167 yıllık Riemann Hipotezini Lean ile kanıtladı; Matematikçiler 17 milyon satırı çözmekte zorlanıyor",
+  "ozet_tr": "Anthropic araştırmacısı Levent Alpöge, Claude destekli bir Lean kanıtı ile Riemann hipotezini çözdü ve 17 milyon satırlık bir kod tabanı yayımladı. Kanıt hâlâ makine tarafından doğrulansa da, insan topluluğu bu devasa belgeyi anlamak için yoğun bir çaba içinde.",
+  "detayli_icerik_tr": "Levent Alpöge, Anthropic'te çalışırken Claude modeliyle birlikte 167‑yıllık Riemann hipotezine dair bir kanıt geliştirdi ve bunu programlama dili Lean'de yayınladı. Kanıt, 250 000 sayfalık bir metin olarak tanımlanıyor; Alpöge bu sayıyı \"bir şaka\" olarak nitelese de, gerçek dosya 17 milyon satır kod içeriyor. Lean, kanıtların makine tarafından otomatik olarak doğrulanmasını sağlayan bir sistem olduğundan, kanıt teknik olarak doğru ve derlenebilir durumda.\n\nYayınlanmasının ardından 200'den fazla araştırmacı, Lean Focused Research Organization ve Mathlib gibi kuruluşların desteğiyle kanıtı incelemeye başladı. Bu topluluklar, kanıtın doğru formüle edildiğine ve kodun sorunsuz derlendiğine dair tam güven duyduklarını belirtti. Ancak, kanıtın insan okuyucularına açıklanabilir bir biçimde sunulmamış olması, matematikçileri yeni bulguları anlamak ve bundan yeni teoriler geliştirmek konusunda zor bir sürece soktu.\n\nMatematik profesörü Abhishek Saha, kanıtın anlaşılmasının sadece varlığını bilmekten çok daha önemli olduğunu vurguluyor. Saha, topluluk çabasının kanıtı 1 000‑10 000 sayfa gibi insan dostu bir forma indirgeyebileceğini, ancak bunun için birçok farklı sayı teorisi dalını kapsayan, \"son derece sezgisel olmayan\" bir argümanın çözülmesi gerektiğini belirtiyor. Bu süreçte, OpenAI'nin Astra modeli gibi yapay zeka araçları, Lean kodunu daha sindirilebilir özetlere dönüştürmek için kullanılıyor.\n\nŞu ana kadar 60'tan fazla kişi, Principia Math adlı işbirlikçi platformda Lean satırlarını anlaşılır fikirler haline getirmeye çalışıyor ve 3 000'den fazla bölüm için çeviri yapılmış durumda. Ancak, kanıtın karmaşıklığı nedeniyle tek bir kişinin tüm detayları kavraması muhtemelen mümkün olmayacak. Bu durum, yapay zekanın matematikte insan yeteneklerinin ötesine geçebileceği ve geleneksel araştırma metodolojilerini yeniden şekillendirebileceği tartışmalarını da beraberinde getiriyor.",
+  "onemli_maddeler": [
+    "Levent Alpöge, Claude destekli bir Lean kanıtı ile Riemann hipotezini çözdü ve 17 milyon satır kod yayımladı.",
+    "Kanıt teknik olarak doğrulandı; ancak insan topluluğu henüz anlaşılır bir biçime dönüştüremedi.",
+    "Matematikçiler, kanıtı sadeleştirmek ve yeni matematiksel fikirler üretmek için AI araçları (Astra) ve işbirlikçi platformlar kullanıyor."
+  ],
+  "kategori": "arastirma",
+  "onem": 5,
+  "onem_gerekce": "Riemann hipotezinin çözülmesi, matematik ve kriptografi gibi alanlarda devrim niteliğinde bir adım olup, AI'nın insanüstü matematiksel kanıtlar üretebilme kapasitesini gösteriyor; bu da araştırma, eğitim ve güvenlik politikalarını kökten etkileyebilir.",
+  "etiketler": [
+    "Riemann Hipotezi",
+    "Lean",
+    "Claude",
+    "AI Matematik",
+    "Anthropic"
+  ],
+  "anilan_modeller": [
+    "Claude",
+    "Astra"
+  ],
+  "yorum_tr": "Bu gelişme, yapay zekanın karmaşık matematiksel problemleri insan müdahalesi olmadan çözebileceğini göstererek, araştırma süreçlerini hızlandırırken, akademik toplulukların bu sonuçları yorumlama ve doğrulama sorumluluğunu da artırıyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://media.wired.com/photos/6b04a99395eb5d98cc1eb23a/master/pass/112326-Riemann-hypothesis-ai.jpg",
+  "url": "https://www.wired.com/story/ai-solved-maths-most-famous-problem/",
+  "source": "WIRED AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-24T10:15:00.000Z",
+  "slug": "ai-solved-math-s-most-famous-problem-now-humans-are-struggli"
+}
