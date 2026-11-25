@@ -1,0 +1,46 @@
+{
+  "baslik_tr": "Son 12 Ayda Üç LLM Dönüm Noktası: Kodlama, Fable Sınıfı ve 3D Modelleme",
+  "ozet_tr": "Simon Willison, AI Engineer Code Summit konuşmasında, geçen yıl içinde LLM'lerin yeteneklerinde üç kritik dönüm noktasına işaret ediyor: Claude Opus 4.5 ve GPT‑5.1 serileriyle kodlama ajanlarının güvenilirliği, Claude Fable serisiyle ortaya çıkan proaktif ve güvenlik‑odaklı \"Fable\" modelleri ve son aylarda 3D modelleme ile oyun geliştirmede elde edilen çığır açıcı performans.",
+  "detayli_icerik_tr": "Willison, Kasım 2025'te Claude Opus 4.5'in yayınlanmasının kodlama ajanları için bir dönüm noktası olduğunu vurguluyor. Anthropic'in açıklamasına göre Opus 4.5, belirsizlikle başa çıkma ve takasları değerlendirme yeteneğiyle önceki modellerin (Sonnet 4.5) neredeyse imkânsız bulduğu görevleri yerine getirebiliyor. Kullanıcılar, karmaşık çok‑sistem hatalarını tek başına çözebildiğini ve günlük kodlama problemlerinde varsayılan yanıtların çoğunlukla doğru olduğunu rapor etti. Aynı dönemde OpenAI, GPT‑5.1 Instant, Thinking, Codex ve Codex‑Max sürümlerini tanıttı; bu sürümler Codex kodlama ajanını da benzer bir güvenilirliğe taşıdı ve Aralık tatili boyunca geliştiricilerin yeni araçları denemesine olanak tanıdı.\n\nİkinci dönüm noktası, Haziran‑Temmuz 2026'da ortaya çıkan \"Fable\" sınıfı modellerdir. Anthropic, Claude Mythos adlı modeli güvenlik açıklarını bulup aynı zamanda istismar edebilecek kapasitede olduğu için yayınlamamayı tercih etti. Bunun yerine, defanged bir versiyon olan Claude Fable 5 piyasaya sürüldü; model güvenlik çalışmalarını engelleyen bir koruma katmanı içeriyordu ve ABD hükümeti tarafından ihracat kontrollerine tabi tutuldu. Willison, Fable modellerinin proaktif davranışlarını örnekleyerek, bir Safari görüntü hatasını çözmek için kendi pyobjc‑framework‑Quartz ekran görüntüsü mekanizmasını ve CORS‑destekli bir localhost sunucusunu otomatik olarak oluşturduğunu belirtiyor. Daha yeni sürümler (Fable 5.1, 5.2 ve Opus 5.5) aynı zamanda fiziksel ortamda beeping sesinin kaynağını 40 cm içinde tespit edebilecek kadar hassas bir sensör entegrasyonu sunuyor.\n\nÜçüncü ve son dönüm noktası, Eylül‑Ekim 2026'da LLM'lerin 3D modelleme ve oyun geliştirme yeteneklerindeki patlamadır. Claude Fable 5'in ilk gösteriminden itibaren, Opus 5.5, GPT‑5.6 Sol/Ultra, GPT‑6 Astra ve Gemini 4 Neon gibi modeller, Blender entegrasyonu ve Three.js kod üretimiyle neredeyse gerçek zamanlı 3D sahneler oluşturabiliyor. Willison, Opus 5.5'in bir strateji oyununu \"eğlenceli\" hâle getirmek için 12 saatlik otomatik playtest ve denge ayarlamaları yaptığını ve modelin \"eğlence\" kavramını anlayabildiğini vurguluyor. Bu gelişmeler, yazılım geliştirme süreçlerinin büyük ölçüde otomasyona kaydığı ve geleneksel elle kod yazma pratiğinin geride kaldığı bir dönüşümün işareti olarak görülüyor.\n\nWillison, bu üç dönüm noktasının bir araya gelmesinin AI‑destekli geliştirme ekosisteminde hem teknik hem de politik bir kırılma noktası yarattığını, özellikle Fable modellerinin ihracat kontrolü gibi düzenleyici sorulara yol açtığını ve 3D yeteneklerin robotik ve oyun endüstrilerinde yeni iş modelleri doğuracağını belirtiyor.",
+  "onemli_maddeler": [
+    "Claude Opus 4.5 ve GPT‑5.1 serileri, kodlama ajanlarını güvenilir ve bağımsız birer yardımcıya dönüştürdü.",
+    "Claude Fable sınıfı modeller, proaktif problem çözme ve güvenlik odaklı yetenekleriyle yeni bir model paradigması sundu.",
+    "Frontier LLM'ler (Opus 5.5, GPT‑5.6, GPT‑6 Astra, Gemini 4 Neon) 3D modelleme ve oyun tasarımında çığır açarak yazılım geliştirme süreçlerini yeniden şekillendiriyor.",
+    "Fable 5'in ihracat kontrolüne tabi tutulması, AI modellerinin regülasyon ve güvenlik politikalarına dair yeni tartışmaları tetikledi."
+  ],
+  "kategori": "diger",
+  "onem": 4,
+  "onem_gerekce": "Makale, bir yıl içinde LLM'lerin kodlama, güvenlik ve 3D üretim alanlarındaki dramatik ilerlemelerini birleştirerek sektörel dönüşümün kapsamını gösteriyor; bu, geliştiriciler, ürün yöneticileri ve politika yapıcılar için kritik bir perspektif sunuyor.",
+  "etiketler": [
+    "coding-agents",
+    "fable-models",
+    "3d-modeling",
+    "llm-trends",
+    "ai-development"
+  ],
+  "anilan_modeller": [
+    "Claude Opus 4.5",
+    "GPT-5.1 Instant",
+    "GPT-5.1 Thinking",
+    "GPT-5.1-Codex",
+    "GPT-5.1-Codex-Max",
+    "Claude Mythos",
+    "Claude Fable 5",
+    "Claude Fable 5.1",
+    "Claude Fable 5.2",
+    "Claude Opus 5.5",
+    "GPT-5.6 Sol",
+    "GPT-5.6 Sol Ultra",
+    "GPT-6 Astra",
+    "Gemini 4 Neon"
+  ],
+  "yorum_tr": "Bu üç dönüm noktası, LLM'lerin sadece metin üretiminden çıkıp, karmaşık kodlama, güvenlik analizi ve gerçek zamanlı 3D içerik üretimi gibi alanlarda da güvenilir birer iş ortağı haline geldiğini gösteriyor; geliştiriciler artık daha az manuel çabayla daha karmaşık projeler üretebilecek, ancak aynı zamanda model güvenliği ve regülasyon konularına daha fazla dikkat etmesi gerekecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://static.simonwillison.net/static/2026/fable-class.webp",
+  "url": "https://simonwillison.net/2026/Nov/24/llm-inflection-points/",
+  "source": "Simon Willison",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-24T23:02:07.000Z",
+  "slug": "three-llm-inflection-points-in-twelve-months"
+}

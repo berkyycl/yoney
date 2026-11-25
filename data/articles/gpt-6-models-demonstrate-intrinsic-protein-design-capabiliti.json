@@ -1,0 +1,107 @@
+{
+  "baslik_tr": "GPT‑6 modelleri, içsel protein tasarım yeteneklerini gösterdi",
+  "ozet_tr": "OpenAI, GPT‑6 ailesinin protein şekilleri ve amino asit dizilerini sadece akıl yürütme ve kodlama yoluyla tasarlayabildiğini kanıtladı. İç model, beş hedef üzerinde laboratuvar testlerinde bağlanma kanıtı gösteren minibinder'lar üretti ve birçok protein tasarım görevinde uzmanlaşmış modelleri geride bıraktı.",
+  "detayli_icerik_tr": "OpenAI, GPT‑6 serisinin protein tasarımında uzmanlaşmış biyoloji modellerine ihtiyaç duymadan yeni protein şekilleri ve dizileri oluşturabildiğini gösteren bir araştırma yayınladı. Model, yalnızca doğal dil komutları ve genel amaçlı kodlama araçlarıyla, proteinlerin üç boyutlu yapısını ve amino asit sırasını belirleyebiliyor; bu süreçte matematik, fizik, kimya ve biyoloji bilgilerini birleştiriyor.\n\nAraştırmacılar, GPT‑6.2'nin tasarımlarını laboratuvar ortamında Onava iş birliğiyle test etti. 322 minibinder tasarımı arasından 35'i (%10.9) hedef proteinlere bağlanma gösterdi; PD‑L1, IL‑7Rα, TrkA, VEGF‑A ve IL‑17A gibi beş hedefte pozitif sonuçlar elde edildi. Ayrıca, mevcut minibinder ve antikorların bağlanma döngülerini yeniden tasarlayan model, 182 tasarımın 128'inde (%70) ve 272 fragmanın 179'unda (%66) bağlanma sinyali verdi.\n\nModelin tasarım yetenekleri sadece bağlanma değil, aynı zamanda protein motifleri etrafında yapı inşa etme (motif scaffolding) ve belirli katlama sınıflarını (heliks, beta‑yapı) kontrol etme gibi karmaşık görevleri de kapsıyor. Motif scaffolding testlerinde GPT‑6'nun son iç modeli %43.7 başarı oranı yakalarken, sektördeki referans RFdiffusion %27.8 oranla geride kaldı. Bu sonuçlar, modelin protein mühendisliğinde çok yönlü bir araç olma potansiyelini ortaya koyuyor.\n\nOpenAI, bu bulguların doğal dil ile protein tasarımını birleştirerek araştırmacıların yeni enzimler, minibinder'lar ve terapötik antikorlar geliştirmesini hızlandıracağını vurguluyor. Model, hedef bağlanma noktalarını, istenen yapısal sınıfları ve motif konumlarını metin tabanlı talimatlarla yönlendirebiliyor; böylece yeniden eğitim veya özel model entegrasyonu gerekmeksizin çeşitli biyoteknoloji uygulamalarına uyum sağlıyor.",
+  "onemli_maddeler": [
+    "GPT‑6.2, 322 minibinder tasarımından %10.9 bağlanma başarısı elde etti ve beş farklı hedefte pozitif sonuçlar gösterdi.",
+    "Model, mevcut minibinder ve antikorların bağlanma döngülerini yeniden tasarlayarak %70 ve %66 bağlanma oranları sağladı.",
+    "Motif scaffolding testlerinde GPT‑6'nun son iç modeli %43.7 başarı oranı yakalarken, RFdiffusion %27.8 oranla geride kaldı."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 5,
+  "onem_gerekce": "GPT‑6'nın protein tasarımında uzman modelleri geride bırakması, biyoteknoloji ve ilaç keşfi süreçlerini kökten değiştirecek bir adım olarak sektörde büyük etki yaratıyor.",
+  "etiketler": [
+    "protein tasarımı",
+    "GPT-6",
+    "biyoteknoloji",
+    "AI araştırma",
+    "biyoloji"
+  ],
+  "anilan_modeller": [
+    "GPT-6",
+    "GPT-6.2",
+    "GPT-6 internal model"
+  ],
+  "yorum_tr": "Bu gelişme, protein mühendisliğinde uzmanlaşmış araçlara olan bağımlılığı azaltarak araştırmacıların daha esnek ve hızlı tasarım yapmasını sağlayacak; aynı zamanda AI‑destekli ilaç keşfi süreçlerini hızlandıracak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GPT-6.2",
+      "benchmark": "Minibinder binding hit rate",
+      "skor": 10.9,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "322 minibinders tested",
+      "kaynak_metinden_alinti": "We tested 322 minibinders against 5 targets in the lab. Of those, 35 (10.9%) tested positive for binding to their intended target."
+    },
+    {
+      "model": "GPT-6.2",
+      "benchmark": "MDM2 minibinder binding hit rate",
+      "skor": 85,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "75 of 88 designs",
+      "kaynak_metinden_alinti": "In our initial lab screens, we saw binding in 75 of 88 designs for MDM2 (85%)."
+    },
+    {
+      "model": "GPT-6.2",
+      "benchmark": "VEGF-A minibinder binding hit rate",
+      "skor": 62,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "26 of 42 designs",
+      "kaynak_metinden_alinti": "26 of 42 for VEGF-A (62%)."
+    },
+    {
+      "model": "GPT-6.2",
+      "benchmark": "PD-1 minibinder binding hit rate",
+      "skor": 14,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "8 of 59 designs",
+      "kaynak_metinden_alinti": "8 of 59 for PD-1 (14%)."
+    },
+    {
+      "model": "GPT-6.2",
+      "benchmark": "New sequence designs binding hit rate",
+      "skor": 13.1,
+      "birim": "%",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": "14 of 107 proteins",
+      "kaynak_metinden_alinti": "Of the 107 proteins made from GPT‑6.2’s new sequences, 14 (13.1%) showed binding."
+    },
+    {
+      "model": "GPT-6 internal model",
+      "benchmark": "Antibody loop redesign binding hit rate",
+      "skor": 70,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "128 of 182 designs",
+      "kaynak_metinden_alinti": "Of the 182 designs we tested, 128 (70%) showed signs of binding to IL-4Rα."
+    },
+    {
+      "model": "GPT-6 internal model",
+      "benchmark": "Antibody fragment redesign binding hit rate",
+      "skor": 66,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "179 of 272 fragments",
+      "kaynak_metinden_alinti": "Of 272 fragments based on five therapeutic antibodies, 179 (66%) showed binding to the original target, PD-1 or PD-L1."
+    },
+    {
+      "model": "GPT-6 latest internal model",
+      "benchmark": "Motif scaffolding success rate",
+      "skor": 43.7,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "Compared with 27.8% for RFdiffusion",
+      "kaynak_metinden_alinti": "In a preliminary analysis, 43.7% of the designs we evaluated from our latest internal model met both criteria, compared with 27.8% for RFdiffusion."
+    }
+  ],
+  "gorsel_url": "https://images.ctfassets.net/kftzwdyauwt9/Eg5mCwwaA3KqnznOVCh0n/8e6deaef25fd508d9853ff86a95187c1/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities-social.png?w=1600&h=900&fit=fill",
+  "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+  "source": "OpenAI",
+  "sourceTier": "resmi",
+  "date": "2026-11-24T13:00:00.000Z",
+  "slug": "gpt-6-models-demonstrate-intrinsic-protein-design-capabiliti"
+}

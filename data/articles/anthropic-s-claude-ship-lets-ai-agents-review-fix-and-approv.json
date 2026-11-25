@@ -1,0 +1,33 @@
+{
+  "baslik_tr": "Anthropic, Claude Ship ile AI ajanlarının pull request'leri otomatik incelemesini, düzeltmesini ve onaylamasını sağladı",
+  "ozet_tr": "Anthropic, Claude Ship adlı yeni beta aracını tanıttı. Bu araç, PR Steward ve Claude Approvals adlı iki AI ajanı sayesinde kod değişikliklerini otomatik olarak inceler, hataları düzeltir ve ekip politikalarına uygun olarak birleştirme onayı verir.",
+  "detayli_icerik_tr": "Anthropic, Claude Ship'i beta aşamasında kullanıma sundu. Claude Ship, mevcut Code Review özelliğiyle birlikte çalışan iki yeni AI ajanı—PR Steward ve Claude Approvals—içeriyor. Code Review, kod değişikliklerini analiz ederek hataları ve güvenlik açıklarını tespit ederken, PR Steward test başarısızlıkları, çatışmalar veya inceleme notları gibi durumlarda taslağı otomatik olarak yeniden düzenliyor ve her adımı belgeleyerek süreci şeffaf kılıyor.\n\nPR Steward'ın ardından devreye Claude Approvals giriyor. Bu ajan, proje dizinindeki politika dosyasını okuyarak, rutin bir değişikliğin AI tarafından tek başına onaylanıp onaylanmayacağını belirliyor. Politika dosyasında tanımlı kurallara göre, onay gerektiren durumlarda hâlâ insan müdahalesi isteniyor. Uygun politika ve GitHub otomatik birleştirme (auto-merge) ayarları etkinleştirildiğinde, kod tamamen insan müdahalesi olmadan birleştirilebiliyor.\n\nClaude Ship, Team ve Enterprise planları kapsamında sunuluyor ancak token kullanımına göre ayrı bir faturalandırma yapılıyor. PR Steward için varsayılan bir harcama limiti bulunmadığından, ekipler maliyet kontrolü amacıyla kendi bütçelerini belirleyebiliyor. Ayrıca, belirli veri gizliliği gereksinimlerine sahip organizasyonlar bu özelliği kullanamıyor.\n\nBu gelişme, yazılım geliştirme süreçlerinde AI destekli otomasyonu bir adım daha ileri taşıyarak, kod inceleme süresini kısaltmayı ve insan hatasını azaltmayı hedefliyor. Geliştiriciler, Claude Ship sayesinde daha hızlı iterasyonlar yapabilir ve ekip içi onay süreçlerini sadeleştirebilir.",
+  "onemli_maddeler": [
+    "Claude Ship, PR Steward ve Claude Approvals adlı iki AI ajanı ile tam otomatik kod inceleme ve onay akışı sunuyor.",
+    "Araç, proje dizinindeki politika dosyasına göre AI onayını otomatikleştirerek insan müdahalesini azaltıyor.",
+    "Token bazlı faturalandırma ve harcama limiti ayarlama imkanı, ekiplerin maliyet kontrolünü sağlıyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Claude Ship, AI destekli kod inceleme ve otomatik birleştirme süreçlerini birleştirerek geliştiricilerin verimliliğini artıran önemli bir ürün güncellemesi niteliğindedir.",
+  "etiketler": [
+    "Claude",
+    "AI kod inceleme",
+    "GitHub",
+    "PR Steward",
+    "Claude Approvals"
+  ],
+  "anilan_modeller": [
+    "Claude Ship",
+    "Claude"
+  ],
+  "yorum_tr": "Claude Ship, kod inceleme ve birleştirme süreçlerini otomatikleştirerek ekiplerin geliştirme hızını artırabilir; ancak veri gizliliği kısıtlamaları ve maliyet kontrolü gibi faktörler, kullanım kararlarını etkileyebilir.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/11/Claude-Ship.png",
+  "url": "https://the-decoder.com/anthropics-claude-ship-lets-ai-agents-review-fix-and-approve-pull-requests-on-their-own/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-24T11:26:23.000Z",
+  "slug": "anthropic-s-claude-ship-lets-ai-agents-review-fix-and-approv"
+}
