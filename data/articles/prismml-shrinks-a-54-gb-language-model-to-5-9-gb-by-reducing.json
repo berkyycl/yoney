@@ -1,0 +1,55 @@
+{
+  "baslik_tr": "PrismML, 54 GB'lık Dil Modelini 5,9 GB'ye Sıkıştırdı: Ağırlıklar Sadece Üç Değer Alıyor",
+  "ozet_tr": "PrismML, Qwen3.8-27B tabanlı yeni Ternary Bonsai 2.5 27B modelini ternary kuantizasyonla sadece üç olası ağırlık değerine indirerek 54 GB'lık bir modeli 5,9 GB'ye düşürdü. Model, özellikle uzun zincirli araç çağrıları gerektiren ajan görevlerinde daha az döngü ve daha hızlı yanıt veriyor.",
+  "detayli_icerik_tr": "PrismML, agresif sıkıştırma teknikleriyle tanınan bir girişim olarak Ternary Bonsai 2.5 27B modelini duyurdu. Model, Qwen3.8-27B'nin 27 milyar parametresini ternary kuantizasyon (‑1, 0, +1) ile temsil ederek tam hassasiyette yaklaşık 54 GB gerektiren bir ağırlık setini sadece 5,9 GB'ye sığdırıyor. Bu boyut, önceki Bonsai 2.5 sürümüyle aynı olmakla birlikte, aynı hafıza gereksinimi içinde daha yüksek performans vaat ediyor.\n\nYeni sürüm, özellikle ajan tabanlı görevlerde uzun araç çağrısı zincirlerine ihtiyaç duyan senaryolarda daha güvenilir çalışıyor. Bonsai 2'ye kıyasla daha az geçiş ve token tüketimi sağlıyor; bu da modelin döngülere takılma ve uzun mantıksal çıkarım aşamalarına girme olasılığını azaltıyor. Performans iyileştirmeleri, çeşitli benchmark sonuçlarıyla da kanıtlanıyor.\n\nSWE‑bench Verified testinde modelin başarım oranı %60,8'den %75,6'ya yükselirken, tam Qwen modeli %80,6 puan alıyor. Agent odaklı AppWorld benchmark'inde ise Bonsai 2.5 %51,2'den %90,5'e sıçrayarak temel modele çok yakın bir skor elde etti. LiveCodeBench v6 testinde ise yeni sürüm bir önceki versiyondan hafif bir gerileme gösterdi, ancak bu düşüş rakamsal olarak belirtilmedi.\n\nPrismML'in sıkıştırılmış model ağırlıkları Apache 2.0 lisansı altında sunuluyor ve llama.cpp üzerinden Nvidia ve Intel GPU'larda, ayrıca MLX aracılığıyla Mac, iPhone ve iPad'de çalıştırılabiliyor. Şirket, Caltech'teki bir araştırma ekibinden doğmuş ve Khosla Ventures, Google ve Samsung gibi büyük yatırımcıların desteğini alıyor. İlk Bonsai 27B modeli Temmuz 2026'da tanıtılmış, en küçük varyantı 4 GB'den az bir bellekle iPhone'da doğrudan çalışabiliyordu.",
+  "onemli_maddeler": [
+    "Ternary kuantizasyon sayesinde 27 B parametreli model 5,9 GB'ye sıkıştırıldı.",
+    "SWE‑bench Verified skorunda %75,6'ya, AppWorld benchmark'inde %90,5'e yükseliş sağlandı.",
+    "Model, RTX 4090'da çoklu token tahminiyle saniyede yaklaşık 204 token üretebiliyor.",
+    "Ağırlıklar Apache 2.0 lisansı altında sunuluyor ve llama.cpp ile çeşitli GPU ve Apple cihazlarında çalıştırılabiliyor."
+  ],
+  "kategori": "model-cikisi",
+  "onem": 4,
+  "onem_gerekce": "Ternary kuantizasyonla büyük bir dil modelinin mobil ve uç cihazlarda çalışabilecek kadar küçültülmesi, hem araştırma hem de uygulama alanında yeni fırsatlar yaratıyor; benchmark iyileştirmeleri de performans kaybı olmadan sıkıştırmanın mümkün olduğunu gösteriyor.",
+  "etiketler": [
+    "ternary quantization",
+    "sıkıştırılmış model",
+    "ajan görevleri",
+    "PrismML",
+    "Qwen"
+  ],
+  "anilan_modeller": [
+    "Ternary Bonsai 2.5 27B",
+    "Qwen3.8-27B",
+    "Bonsai 2",
+    "Bonsai 27B"
+  ],
+  "yorum_tr": "Bu sıkıştırma yaklaşımı, büyük dil modellerinin uç cihazlara taşınmasını hızlandırarak geliştiricilerin daha düşük maliyetli ve ölçeklenebilir çözümler üretmesine olanak tanıyacak. Kullanıcılar ise daha hızlı yanıt ve daha az enerji tüketimiyle daha akıcı bir deneyim elde edecek.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Ternary Bonsai 2.5 27B",
+      "benchmark": "SWE-bench Verified",
+      "skor": 75.6,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "On SWE-bench Verified, the score jumps from 60.8 to 75.6 percent."
+    },
+    {
+      "model": "Ternary Bonsai 2.5 27B",
+      "benchmark": "AppWorld",
+      "skor": 90.5,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "On AppWorld, an agent benchmark, Bonsai leaps from 51.2 to 90.5, landing just behind the base model."
+    }
+  ],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/07/prsim_ml_demo.png",
+  "url": "https://the-decoder.com/prismml-squeezes-an-agent-based-coding-model-with-27-billion-parameters-into-5-9-gb/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-25T11:51:49.000Z",
+  "slug": "prismml-shrinks-a-54-gb-language-model-to-5-9-gb-by-reducing"
+}

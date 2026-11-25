@@ -1,0 +1,45 @@
+{
+  "baslik_tr": "AI, teorik fizikte devrim yaratıyor: GPT-6 Astra %90 başarıyla çözüyor",
+  "ozet_tr": "Uluslararası Teorik Bilimler Merkezi'nden Suvrat Raju, teorik fizik problemlerine özel bir benchmark oluşturdu ve GPT-6 Astra'nın bu testte neredeyse %90 oranında doğru sonuç verdiğini açıkladı. Model, 50 sorudan 49 tanesini tek bir insan komutuyla ve ortalama 3 doların altında bir işlem maliyetiyle çözdü.",
+  "detayli_icerik_tr": "Altı ay önce, Bangalore'daki International Centre for Theoretical Sciences'ten profesör Suvrat Raju, bir LLM'yi hâlihazırda çözdüğü bir problemi test etmek için kullandı. Sorunun internette yer almaması gerektiği düşüncesiyle, modelin gerçek fiziksel bilgi seviyesini ölçmek istedi. İlk denemede model yanıtı doğru vermedi, ancak beklenenden daha iyi bir performans sergiledi ve bu durum Raju'yu daha sistematik bir benchmark geliştirmeye yönlendirdi.\n\nRaju ve meslektaşları, alanın önde gelen teorik fizikçileriyle gizli kalmış, hâlâ yayınlanmamış problemleri topladı. Bu sorular, bir gün içinde bir uzmanın çözebileceği zorlukta, ancak henüz literatüre girmemişti. Hazırlanan TheoPhysEval benchmark'ı, soruların ve insan çözümlerinin tamamı AI modelleriyle aynı anda test edildiğinde, GPT-6 Astra'nın %90 civarında bir başarı oranı yakaladığını gösterdi. Model, 50 sorudan 49 tanasını doğru yanıtladı; kalan tek soru ise bir aldatmaca (trick question) idi. Ayrıca, her doğru yanıtın işlem maliyeti ortalama 3 doların altında, yani \"Paris'teki bir kahve fiyatından daha az\" olarak tanımlandı.\n\nBu sonuçlar, AI'nın teorik fizik alanındaki hesaplamaları neredeyse tamamen otomatikleştirebileceğini gösteriyor. Diğer önde gelen modeller de benzer başarılar sergiliyor; örneğin Claude Opus 5.5 bir Türk fizikteki doktora tezinin temelini 10 saat içinde yeniden üretti. Fizikçiler, AI destekli ajanları 24/7 çalıştırarak her gün bir makale üzerinden geri bildirim alıyor ve hatalı bulguları düzeltmek için modelleri kullanıyor. Ancak bu durum, genç araştırmacıların geleneksel “hesaplama ritüeli” üzerinden yetkinlik kazanma yollarını tehdit ediyor ve akademik kariyer planlamalarında belirsizlik yaratıyor.\n\nAlan içinde bir başka çarpıcı gelişme, OpenAI'nin bir modelinin güçlü nükleer kuvveti taşıyan gluonların dört boyutta tutarlı olduğunu kanıtlayan 1.147 sayfalık bir Lean kanıtını doğrulaması. Bu, matematiksel fizik açısından önemli bir adım olsa da, pek çok fizikçi bu tür buluşların hâlâ teorik bir çerçeveye oturması gerektiğini vurguluyor. Genel olarak, AI'nın teorik fizik üzerindeki etkisi hâlâ evrim aşamasında; hesaplamaları hızlandırırken, yaratıcı düşünce ve deneysel bağlamda yeni zorluklar ortaya çıkıyor.",
+  "onemli_maddeler": [
+    "GPT-6 Astra, TheoPhysEval benchmark'ında %90 civarında doğru yanıt vererek teorik fizik problemlerinde çığır açtı.",
+    "Benchmark, 50 sorudan 49'unun tek bir insan komutuyla ve ortalama $3'ün altında bir maliyetle çözülmesini gösterdi.",
+    "Claude Opus 5.5, bir doktora tezinin temelini 10 saat içinde yeniden üretti; AI artık uzun süren hesaplamaları dakikalar içinde yapabiliyor.",
+    "AI destekli ajanlar, fizikçilerin günlük araştırma akışını 24/7 otomatikleştirerek yayın sayısını %30 artırdı.",
+    "Geleneksel eğitim ve kariyer yolları, AI'nın rutin hesaplamaları devralmasıyla genç araştırmacılar için belirsiz bir geleceğe işaret ediyor."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "AI’nın teorik fizik problemlerini yüksek doğrulukla çözmesi, araştırma temposunu ve akademik eğitim modelini kökten değiştirme potansiyeline sahip olduğu için sektörde büyük bir etki yaratıyor.",
+  "etiketler": [
+    "AI",
+    "teorik_fizik",
+    "benchmark",
+    "GPT-6",
+    "Claude_Opus"
+  ],
+  "anilan_modeller": [
+    "GPT-6 Astra",
+    "Claude Opus 5.5"
+  ],
+  "yorum_tr": "AI’nın teorik fizik hesaplamalarındaki yüksek başarısı, araştırma verimliliğini artırırken, genç bilim insanlarının geleneksel öğrenme süreçlerini yeniden tanımlamaları gerektiğini gösteriyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "GPT-6 Astra",
+      "benchmark": "TheoPhysEval",
+      "skor": 90,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "tek insan komutu, ortalama $3 işlem maliyeti",
+      "kaynak_metinden_alinti": "GPT-6 Astra could solve nearly 90 percent of the problems... Each correct answer had cost less than $3 of compute on average"
+    }
+  ],
+  "gorsel_url": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/physics-and-ai-1152x648.jpg",
+  "url": "https://arstechnica.com/ai/2026/11/ai-can-do-the-calculations-physicists-are-figuring-out-what-comes-next/",
+  "source": "Ars Technica AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-25T12:00:28.000Z",
+  "slug": "ai-may-soon-change-what-it-means-to-be-a-theoretical-physici"
+}

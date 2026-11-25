@@ -1,0 +1,38 @@
+{
+  "baslik_tr": "IBM Research, CUGA ile Çok Dilli Sesli Asistan Geliştirildi",
+  "ozet_tr": "IBM Research, Configurable Generalist Agent (CUGA) üzerine kurulu bir Indic sesli asistan prototipi sundu. Çift katmanlı ses işleme ve çok dilli gömme modeli sayesinde, bir çiftin Hindi ya da Tamil gibi yerel dillerde sorduğu tarım sorularına İngilizce el kitabından alınan yanıtlar veriliyor.",
+  "detayli_icerik_tr": "IBM Research, Hugging Face blogunda \"An Indic Voice Agent with CUGA\" başlıklı bir makale yayınlayarak, Hint dillerinde (Hindi, Tamil, Telugu, Gujarati, Marathi vb.) çalışan bir sesli asistanın nasıl inşa edilebileceğini gösterdi. Kullanıcı bir soruyu sesli olarak sorduğunda, önce konuşma metne dönüştürülüyor, ardından CUGA'nın yerleşik bilgi motoru bir PDF tarım el kitabını vektörleştirip arıyor ve yalnızca elde edilen pasajlardan oluşan bir yanıtı aynı dilde sesli olarak geri iletiyor. Yanıtın kaynağı da ekranda gösterilerek doğrulanabilirlik sağlanıyor.\n\nCUGA (Configurable Generalist Agent), model bağlantılarını, araç yönetimini ve güvenlik kalkanlarını soyutlayan açık kaynak bir ajan çerçevesi. Makalede, bu çerçevenin bir web uygulamasına SDK olarak gömülmesi ve tek bir ayar değişikliğiyle watsonx ya da OpenAI modelleri arasında geçiş yapılabilmesi vurgulandı. Bilgi motoru PDF'yi bölerek gömme (embedding) yapıyor; başlangıçta İngilizce‑only gömme modeli kullanıldığında Hint dillerindeki sorgular anlamsız vektörler üretiyordu ve yanlış sonuçlar alınıyordu. Sorun, intfloat/multilingual-e5-large gibi çok dilli bir gömme modeline geçilerek çözüldü; böylece aynı anlam farklı dillerde aynı vektör uzayına yansıyor.\n\nSes katmanı iki ayrı sağlayıcı üzerinden çalışıyor: Sarvam AI'nın tarayıcı tabanlı bulut API'leri ve açık kaynak SraVaani (speech‑to‑text) ile Svara (text‑to‑speech) modelleri. Bu mimari sayesinde ses işleme katmanı değiştirildiğinde ajan kodunda hiçbir değişiklik yapılmıyor. Güvenlik açısından, Sarvam seçeneğinde anahtarlar doğrudan tarayıcıdan hizmete gönderiliyor, sunucu sadece metni alıyor ve kullanıcı anahtarını görmüyor.\n\nUygulamanın ölçeklenebilirliği de vurgulandı. Tarım el kitabı yerine sağlık, sosyal yardım ya da yasal rehber belgeleri konulabilir; konuşma sağlayıcıları bulut ya da yerel sunucu tabanlı olarak değiştirilebilir. IBM'in Bharat Core platformu ile entegrasyon, veri egemenliği ve Hint ekosistemine özgü modellerle uyumlu, güvenli kurumsal çözümler geliştirmeyi mümkün kılıyor.",
+  "onemli_maddeler": [
+    "CUGA, model ve araç yönetimini soyutlayarak tek bir SDK içinde çok dilli sesli asistanların hızlıca prototiplenmesini sağlıyor.",
+    "İlk denemelerde İngilizce‑only gömme modeli Hint dillerinde başarısız olurken, çok dilli embedding modeli (intfloat/multilingual-e5-large) sorunun kökünü çözdü.",
+    "Ses katmanı iki bağımsız sağlayıcı (Sarvam AI bulut ve açık kaynak SraVaani/Svara) üzerinden değiştirilebiliyor, bu da veri egemenliği ve dağıtım esnekliği sunuyor.",
+    "IBM Bharat Core ile entegrasyon, yerel altyapıda güvenli, ölçeklenebilir ve dil çeşitliliğine duyarlı kurumsal çözümler geliştirmeyi mümkün kılıyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "CUGA, çok dilli sesli asistanların geliştirilmesinde altyapı karmaşasını ortadan kaldırarak geliştiricilere zaman ve kaynak tasarrufu sağlıyor; özellikle Hint gibi dil çeşitliliği yüksek pazarlarda büyük bir etki potansiyeli taşıyor.",
+  "etiketler": [
+    "CUGA",
+    "Indic AI",
+    "Sesli Asistan",
+    "Multilingual",
+    "IBM Research"
+  ],
+  "anilan_modeller": [
+    "watsonx",
+    "OpenAI",
+    "intfloat/multilingual-e5-large",
+    "SraVaani",
+    "Svara",
+    "Sarvam AI"
+  ],
+  "yorum_tr": "Bu açık kaynak çerçeve, çok dilli sesli hizmetlerin hızlıca üretilebilmesi ve güvenli bir şekilde dağıtılabilmesi için kritik bir adım. Geliştiriciler, tek bir kod tabanı üzerinden farklı modeller ve konuşma sağlayıcılarıyla deney yaparak, yerel dilde erişilebilir dijital çözümler sunabilecek.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://cdn-uploads.huggingface.co/production/uploads/67fe070a4e8cc28ba346f53c/-QNcrxSDbjI8VOCBlhi-C.png",
+  "url": "https://huggingface.co/blog/ibm-research/an-indic-voice-agent-with-cuga",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-11-25T10:22:09.000Z",
+  "slug": "an-indic-voice-agent-with-cuga"
+}

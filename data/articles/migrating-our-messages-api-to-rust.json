@@ -1,0 +1,51 @@
+{
+  "baslik_tr": "Messages API'yi Rust'a Taşıyarak CPU Kullanımını %70 Azalttık ve Yanıt Süresini %20 Kısalttık",
+  "ozet_tr": "Anthropic, Messages API'sini Python'dan Rust'a taşıyarak her istek için CPU tüketimini %70 azaltıp ortalama ilk token süresini %20 kısalttı. Geçiş sırasında üretim trafiği üzerinde gölge (shadow) testleri yaparak yeni sürümün eski sürümle tam uyumlu olmasını doğruladı.",
+  "detayli_icerik_tr": "Anthropic, 2023'te Python ile geliştirdiği Messages API'sini, 2024'ten 2026 sonuna kadar 1.800 kat artan trafik hacmiyle başa çıkmak için Rust'a taşıdı. Rust'ın düşük seviyeli bellek yönetimi ve daha az nesne oluşturma maliyeti, istek başına CPU kullanımını %70 azaltırken, yanıtların ilk tokenine ulaşma süresini de %20 oranında kısalttı.\n\nGeçiş sürecinde karşılaşılan en büyük zorluk, yeni Rust tabanlı API'nin üretim ortamındaki davranışının Python sürümüyle bire bir eşleşmesini sağlamaktı. Test setleri, entegrasyon testleri ve üretim trafiği arasındaki uyumsuzluklar, özellikle nondeterministik yanıtlar ve gizlilik gereksinimleri nedeniyle doğrudan karşılaştırma yapmayı zorlaştırdı. Bu sorunu çözmek için Anthropic, mevcut API'yi bir doğrulama oraklı (oracle) olarak kullanan bir gölgeleme sistemi geliştirdi; aynı model çıktısı iki versiyonda tekrar oynatılarak adım adım karşılaştırmalar yapıldı.\n\nGölgeleme sürecinde, her isteğin işleniş aşamaları (doğrulama, prompt oluşturma, tokenizasyon, güvenlik sınıflandırıcıları, yanıt akışı) ayrı ayrı kaydedildi ve farklılıkların \"fingerprint\" adı verilen özetleri oluşturuldu. Bu özetler, benzer hataları gruplayarak otomatik ajanların (Claude tabanlı) hızlıca müdahale etmesini sağladı. Her 10‑30 dakikada bir çalışan bir script, yeni bir fingerprint tespit ettiğinde ilgili ajanı uyarıyor ve hatanın çözümü için bir pull request oluşturuluyordu.\n\nSonuç olarak, Rust tabanlı API, üretim trafiğinde %98 test geçiş oranına rağmen yalnızca %25 oranında tam eşleşme gösteriyordu; bu fark, test kapsamının yetersizliği ve karakter kaçışları gibi ince detaylardan kaynaklanıyordu. Ancak kurulan çok katmanlı doğrulama döngüleri sayesinde, hatalar hızlıca sınıflandırıldı, düzeltildi ve dışa aktarım süreci kesintisiz sürdürüldü.",
+  "onemli_maddeler": [
+    "Rust'a geçişle CPU tüketimi %70 azaldı, yanıt süresi %20 kısaldı.",
+    "Üretim trafiği üzerinde gölgeleme (shadow) testi yapılarak yeni sürümün doğruluğu kanıtlandı.",
+    "Fingerprint tabanlı hata sınıflandırması ve otomatik Claude ajanları sayesinde hatalar dakikalar içinde düzeltildi."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "API performansının büyük ölçüde iyileştirilmesi ve üretim ortamında kesintisiz geçiş sağlanması, Anthropic'in hizmet kalitesini ve maliyet etkinliğini doğrudan etkileyen kritik bir güncellemedir.",
+  "etiketler": [
+    "API",
+    "Rust",
+    "Performans",
+    "Claude",
+    "Shadowing"
+  ],
+  "anilan_modeller": [
+    "Claude"
+  ],
+  "yorum_tr": "Rust tabanlı API'nin CPU ve yanıt süresi avantajları, yüksek ölçekli yapay zeka hizmetlerinde maliyet düşürürken kullanıcı deneyimini iyileştiriyor; aynı zamanda otomatik doğrulama akışı, benzer geçiş projeleri için bir şablon sunuyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Claude",
+      "benchmark": "CPU usage per request",
+      "skor": 70,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "This allowed us to ship an API on Rust that uses about 70% less CPU per request"
+    },
+    {
+      "model": "Claude",
+      "benchmark": "Median time to first token",
+      "skor": 20,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "cuts median time to first token by about 20%"
+    }
+  ],
+  "gorsel_url": "https://assets.claude.com/faac348155bf01d5c59ab38cbd05294eb2fa8197.jpg",
+  "url": "https://www.anthropic.com/research/migrating-api-to-rust",
+  "source": "Anthropic Research",
+  "sourceTier": "resmi",
+  "date": "2026-11-25T00:00:00.000Z",
+  "slug": "migrating-our-messages-api-to-rust"
+}
