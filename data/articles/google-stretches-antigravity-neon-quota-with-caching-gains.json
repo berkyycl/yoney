@@ -1,0 +1,61 @@
+{
+  "baslik_tr": "Google Antigravity, Gemini 4 Neon’da önbellekleme iyileştirmeleriyle görev kapasitesini %75 artırdı",
+  "ozet_tr": "Google DeepMind, Antigravity platformunda Gemini 4 Neon modeline yönelik önbellekleme ve harness güncellemeleriyle, aynı kota içinde %28 daha fazla görev tamamlanabildiğini ve beş gün içinde kullanımın %75 artış gösterdiğini duyurdu. Yeni sürüm, görev başına kota tüketimini %12 azaltırken işlem süresini %17 hızlandırıyor.",
+  "detayli_icerik_tr": "Google DeepMind Antigravity ekibi, Gemini 4 Neon modelinin önbellek isabet oranını %4,5 artırarak aynı kota içinde %28 daha fazla görev yapılabilmesini sağladı. Varun Mohan, bu iyileştirmenin beş gün içinde Neon kullanımını %75'e kadar yükselttiğini ve bu artışın büyük ölçüde daha büyük önbellek kapasitesi, daha iyi yönlendirme ve altyapı ekiplerinin uzun kuyruk düzeltmeleri sayesinde gerçekleştiğini belirtti.\n\nYeni Antigravity v2.35.0 sürümü, Neon modelinin görev başına kota tüketimini %12 azaltırken, görev tamamlama süresini %17 kısalttı. Ayrıca Auto modunda gereksiz onaylar %50 oranında azaltıldı; dosya okuma izinleri daha akıllı bir şekilde yönetiliyor ve CLI, sürüm kontrolü altında olan dosyalara otomatik olarak yazma izni veriyor. Konuşma geçmişi artık sınırsız tutuluyor, Conversation Management API ekleniyor ve HTML artefaktlarında arama özelliği getiriliyor.\n\nVersiyon 2.35.1, uygulama yeniden başlatıldığında aktif konuşmaların otomatik olarak devam etmesini sağladı; bu sayede ajanlar kesintisiz çalışabiliyor. Güncellemeler, masaüstü uygulaması ve CLI üzerinden kademeli olarak dağıtılıyor ve model ve izin seçicileri üzerindeki kilit kaldırıldı. Bu değişiklikler, geliştiricilerin daha akıcı ve güvenli bir deneyim yaşamasına olanak tanıyor.\n\nBağımsız bir geliştirici olan Paweł Huryn, yeni Antigravity CLI ile yaptığı bug hunt testinde Gemini 4 Neon'un ekstra yüksek çaba seviyesinde %39 daha ucuz çalıştığını raporladı. 105 yeniden eklenmiş hatayı içeren iki depo üzerinde yapılan testte, Neon sayesinde maliyet $57 yerine $34 olarak gerçekleşti. Bu sonuç, Neon'un hem performans hem de maliyet açısından hızla benimsenen bir model olduğunu gösteriyor.",
+  "onemli_maddeler": [
+    "Cache hit oranı %4,5 artarak aynı kota içinde %28 daha fazla görev yapılabildi.",
+    "Neon, görev başına kota tüketimini %12 azaltıp işlem süresini %17 hızlandırdı.",
+    "Auto modunda gereksiz onaylar %50 azaldı, konuşma geçmişi sınırsız oldu ve yeni API'ler eklendi.",
+    "Bağımsız benchmark, Neon'un ekstra yüksek çaba seviyesinde %39 maliyet tasarrufu sağladığını gösterdi."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Antigravity platformu ve Gemini 4 Neon modelindeki performans ve maliyet iyileştirmeleri, geliştiricilerin üretkenliğini artırırken bulut maliyetlerini düşürmesi bakımından sektörde geniş çaplı bir etki yaratma potansiyeline sahiptir.",
+  "etiketler": [
+    "Antigravity",
+    "Gemini 4 Neon",
+    "caching",
+    "harness update",
+    "Google DeepMind"
+  ],
+  "anilan_modeller": [
+    "Gemini 4 Neon"
+  ],
+  "yorum_tr": "Bu güncellemeler, geliştiricilerin aynı kota içinde daha fazla iş yapabilmesini ve maliyetlerini düşürmesini sağlayarak bulut tabanlı AI geliştirme süreçlerini daha sürdürülebilir kılıyor. Özellikle önbellekleme ve harness optimizasyonları, yüksek ölçekli projelerde verimliliği artıracak kritik adımlar olarak değerlendirilebilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Gemini 4 Neon",
+      "benchmark": "Cache hit rate increase",
+      "skor": 4.5,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "cache hit rate",
+      "kaynak_metinden_alinti": "We've increased the cache hit rate for Neon in Antigravity again by another 4.5%."
+    },
+    {
+      "model": "Gemini 4 Neon",
+      "benchmark": "Task capacity increase per quota",
+      "skor": 28,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "tasks completed within same quota",
+      "kaynak_metinden_alinti": "This means you can complete 28% more tasks within quota."
+    },
+    {
+      "model": "Gemini 4 Neon",
+      "benchmark": "Cost reduction in bug hunt benchmark",
+      "skor": 39,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "105 replanted bugs, extra high effort",
+      "kaynak_metinden_alinti": "Gemini 4 Neon (xhigh) just got 39% cheaper on my bug hunt, on a newer Antigravity CLI."
+    }
+  ],
+  "gorsel_url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/11/gemini-4-neon__blog-header__sm.width-1300.webp",
+  "url": "https://www.testingcatalog.com/google-stretches-antigravity-neon-quota-with-caching-gains/",
+  "source": "TestingCatalog",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-25T18:46:46.000Z",
+  "slug": "google-stretches-antigravity-neon-quota-with-caching-gains"
+}

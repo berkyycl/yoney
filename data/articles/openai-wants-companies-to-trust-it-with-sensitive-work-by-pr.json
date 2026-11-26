@@ -1,0 +1,31 @@
+{
+  "baslik_tr": "OpenAI, Hassas İşlerde Verilere Bakmadığını Söz Vererek Şirketlerin Güvenini Kazanmak İstiyor",
+  "ozet_tr": "OpenAI, kurumsal müşterilerin hassas verilerini korumak amacıyla \"Private Inference\" adlı yeni bir hizmet denemeye başladı. Bu özellik, en güçlü modelleri izole donanımda çalıştırarak OpenAI'nin veri erişimini tamamen engelliyor ve aynı zamanda kötüye kullanım tespiti için \"Private Safety Processing\" sunuyor.",
+  "detayli_icerik_tr": "OpenAI, \"Private Inference\" adı verilen bir özelliği pilot aşamasına taşıyarak, şirketlerin en gelişmiş dil modellerine veri göndermesini, ancak bu verilerin OpenAI tarafından görülmemesini sağlıyor. CEO Sam Altman, bu adımın yapay zekanın daha geniş bir iş yelpazesinde kullanılabilmesi için kritik bir güvenlik katmanı oluşturduğunu vurguladı. Projeyi yöneten OpenAI çalışanı Shekar, bu hizmeti \"herkes için özel istihbarat\" olarak nitelendirerek, veri mahremiyetinin gelecekteki AI uygulamalarının temel taşı olacağını belirtti.\n\nŞu an için Private Inference, veri eğitim amacıyla kullanılmayan kurumsal müşterilere odaklanıyor; tüketici düzeyindeki ChatGPT sohbetleri ise varsayılan olarak model eğitimi için kullanılabiliyor, kullanıcılar bunu devre dışı bırakmak zorunda. OpenAI, bu yeni hizmeti desteklemek için izole donanım kapasitesini artırıyor ve güvenliğin bağımsız bir şekilde doğrulanabilir olmasını sağlıyor. Bu sayede şirketler, veri sızıntısı riski olmadan yüksek performanslı AI sorguları gerçekleştirebilecek.\n\nAyrıca OpenAI, \"Private Safety Processing\" adlı bir sistemle, kötüye kullanım tespitini veri depolanmadan yapmayı hedefliyor. Şüpheli içerik şifrelenerek müşterinin kendi bulut ortamına kaydediliyor ve yalnızca güvenli bir inceleme mekanizması tarafından erişilebiliyor. Bu yaklaşım, veri gizliliği ve güvenliğini bir arada sunarak, AI hizmetlerinin regülasyon ve uyumluluk gereksinimlerine daha iyi yanıt vermesini sağlıyor.\n\nGoogle da benzer bir yol izleyerek \"Private AI Compute\" adlı bir çözüm geliştiriyor. Rekabetin artması, AI altyapısının gizlilik odaklı tasarımına yönelimi hızlandırıyor ve sektörde yeni standartların oluşmasına zemin hazırlıyor.",
+  "onemli_maddeler": [
+    "OpenAI, Private Inference ile şirket verilerini izole donanımda işleyerek veri erişimini tamamen engelliyor.",
+    "Private Safety Processing, kötüye kullanım tespitini veri depolanmadan yaparak gizliliği koruyor.",
+    "Hizmet şu an sadece kurumsal müşterilere yönelik; tüketici verileri hâlâ model eğitimi için kullanılabiliyor.",
+    "Google'ın benzer Private AI Compute çözümü, sektörde gizlilik odaklı rekabeti artırıyor."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Kurumsal AI kullanımında veri gizliliği kritik bir engel; OpenAI'nin bu adımı, büyük ölçekli iş uygulamalarının AI ile entegrasyonunu hızlandırabilir.",
+  "etiketler": [
+    "OpenAI",
+    "Private Inference",
+    "AI gizliliği",
+    "kurumsal AI",
+    "AI güvenliği"
+  ],
+  "anilan_modeller": [],
+  "yorum_tr": "Private Inference, veri mahremiyetine duyarlı şirketler için AI'nın benimsenmesini hızlandırabilir; geliştiriciler ise izole ortamlar üzerinden daha güvenli hizmetler sunma fırsatı bulacak.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/10/openai_logo-1.png",
+  "url": "https://the-decoder.com/openai-wants-companies-to-trust-it-with-sensitive-work-by-promising-not-to-look-at-their-data/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-25T18:22:02.000Z",
+  "slug": "openai-wants-companies-to-trust-it-with-sensitive-work-by-pr"
+}

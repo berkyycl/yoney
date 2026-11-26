@@ -1,0 +1,53 @@
+{
+  "baslik_tr": "Inkling 2 Mini Tek RTX PRO 6000 Üzerinde Hill-Climbing Inference Sonuçları",
+  "ozet_tr": "Inkling 2 Mini, 26 Milyar parametreli yapısı ve 1 M token bağlam penceresiyle, tek bir NVIDIA RTX PRO 6000 GPU üzerinde spekülatif DSpark dekodlamasıyla 190,6 token/s hızına ulaştı. Bu performans, aynı donanımda çalışan diğer büyük modelleri geride bırakarak, yerel AI uygulamaları için yeni bir çıta koydu.",
+  "detayli_icerik_tr": "Inkling 2 Mini, geçen hafta duyurulan ve yaklaşık 26 B toplam parametre (token başına 3 B aktif) içeren bir açık kaynaklı MoE (Mixture‑of‑Experts) modeli. Model, 24 fiziksel katmana sahip ve ortadaki 12 katman üç kez döndürülerek her tokenin 48 katmandan geçmesini sağlıyor. Çıktı, NVFP4 ve MXFP8 karışımı checkpoint ile birlikte DSpark spekülatif dekodlayıcıyı barındırıyor. Hugging Face ekibi, bu modeli NVIDIA RTX PRO 6000 (96 GB) GPU'sunda çalıştırmak için bir kodlama ajanına inference‑optimizasyon yeteneği verdi ve bir öğleden sonra boyunca deneyler yürüttü.\n\nDeneyler, vLLM nightly sürümü ve SGLang çerçevelerinin RTX PRO 6000'deki kernel uyumluluğu sorunlarını aşarak, spekülatif DSpark ile 7 taslak tokeni kullandığında tek kullanıcı dekodlama hızını 190,6 token/s'ye (≈%40 artış) çıkardı. Aynı konfigürasyon, 8 eşzamanlı kullanıcıda toplam 716 token/s (≈%26 artış) sağladı. Bu sonuçlar, aynı GPU üzerinde topluluk benchmarku SGLang + DSpark'ın 167,7 token/s değerinin çok üzerindeydi. Ayrıca, modelin uzun bağlam (250 K token) iğne geri getirme testlerinde %100 başarı oranı ve spekülatif ve greedy çıktılarının bayt‑identik olması doğrulandı.\n\nPerformansın sınırına yaklaşılması, donanımın bellek bant genişliği (1 469 GB/s) ve 48 katman ziyareti nedeniyle her tokenin yaklaşık 2,7 GB veri okumasına bağlı. Spekülatif dekodlama, uzmanların (experts) okunmasını %6'dan %40'a çıkararak bant genişliği tavanını 201 token/s'ye düşürdü; ölçülen 190,6 token/s ise bu tavanın %95'ine tekabül ediyor. Daha yüksek hızlar elde etmek, sıcaklık 1.0'da daha yüksek kabul oranına sahip bir drafter ya da katman başına daha az uzman okuyan bir doğrulama yoluna ihtiyaç duyacak.\n\nSon aşamada, tüm konfigürasyonlar sabit bir Docker imajı ve vLLM nightly digest'iyle pinlenerek Hugging Face Inference Endpoint üzerinden dağıtıldı. Canlı uç nokta testleri, ağ gecikmesi dahil 194,9 token/s tek kullanıcı hızı gösterdi. Bu süreç, diğer modeller için de aynı döngünün (plan‑, driver‑ ve deploy‑scriptleri) yeniden kullanılabileceği bir şablon sundu.",
+  "onemli_maddeler": [
+    "Inkling 2 Mini, RTX PRO 6000'de vLLM + DSpark ile 190,6 token/s tek kullanıcı hızı elde etti (≈%40 artış).",
+    "8 eşzamanlı kullanıcıda toplam 716 token/s throughput sağlanarak spekülatif dekodlamanın ölçeklenebilirliği kanıtlandı.",
+    "Model, 1 M token bağlam penceresi ve 48 katman MoE mimarisiyle uzun bağlam görevlerinde %100 doğruluk ve greedy çıktılarla tam uyumluluk gösterdi."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "Inkling 2 Mini'nin tek bir yüksek‑bant genişliğine sahip GPU üzerinde spekülatif dekodlama ile elde ettiği performans, yerel büyük dil modelleri için yeni bir verimlilik standardı belirleyerek araştırmacı ve geliştiricilerin donanım maliyetlerini düşürmesine olanak tanıyor.",
+  "etiketler": [
+    "Inkling 2 Mini",
+    "RTX PRO 6000",
+    "vLLM",
+    "DSpark",
+    "Speculative Decoding"
+  ],
+  "anilan_modeller": [
+    "Inkling 2 Mini",
+    "Gemma 4 31B",
+    "Qwen3.8-27B"
+  ],
+  "yorum_tr": "Bu sonuçlar, açık kaynaklı büyük modellerin düşük maliyetli donanımlarda bile yüksek verimle çalışabileceğini gösteriyor; geliştiriciler spekülatif dekodlama tekniklerini benimseyerek uygulama performansını önemli ölçüde artırabilir.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Inkling 2 Mini",
+      "benchmark": "Single-user decode (vLLM + DSpark, 7 drafts)",
+      "skor": 190.6,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "vLLM nightly with DSpark speculative decoding (7 drafts)",
+      "kaynak_metinden_alinti": "vLLM + DSpark (7 drafts) 190.6 tok/s"
+    },
+    {
+      "model": "Inkling 2 Mini",
+      "benchmark": "8-user aggregate throughput (vLLM + DSpark)",
+      "skor": 716,
+      "birim": "tok/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "8 concurrent users",
+      "kaynak_metinden_alinti": "8-user aggregate (tok/s) 716"
+    }
+  ],
+  "gorsel_url": "https://huggingface.co/blog/assets/inkling-2-mini-inference-hillclimb/thumbnail.png",
+  "url": "https://huggingface.co/blog/inkling-2-mini-inference-hillclimb",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-11-25T00:00:00.000Z",
+  "slug": "hill-climbing-inkling-2-mini-inference-on-one-rtx-pro-6000"
+}
