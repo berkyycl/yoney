@@ -1,0 +1,43 @@
+{
+  "baslik_tr": "Swarmlar ve Çoklu Ajan Sistemleri: Küçük Modellerle Eğitim ve Değerlendirme",
+  "ozet_tr": "Hugging Face, dört ajanlı bir sürüme Qwen3-0.6B modelini ortak politika olarak kullanan bir deney serisi başlattı. 75 güncelleme sonunda başarı oranı %82,3'e yükselirken, aynı zamanda üretilen token sayısı %37,4 azaldı. Bu sonuçlar, çoklu ajanların iletişim yoluyla gerçekten fayda sağlayıp sağlayamayacağını ölçen ilk kapsamlı çalışmalardan biri olarak öne çıkıyor.",
+  "detayli_icerik_tr": "Hugging Face'in yeni blog serisi, çoklu ajan sistemlerini (swarmları) küçük ve uygun maliyetli modellerle inşa edip eğitmenin pratik yönlerini ele alıyor. İlk örnek, dört ajan, ortak bir Qwen3-0.6B dil modeli ve basit bir sayı sıralama görevinden oluşuyor; her ajan 1‑99 arasında bir tam sayı alıyor ve sadece kendi sayısını biliyor. Görev, ajanların birbirlerine mesaj göndererek tüm sayıları doğru ve sıralı bir liste hâline getirmesini gerektiriyor. Başarı, ekibin en az bir üyesinin doğru yanıtı vermesiyle ölçülüyor, bu da tek bir ajanın yalnız denemelerle ulaşamayacağı bir performans seviyesi sunuyor.\n\nDeney, merkezi eğitim‑dağıtık yürütme (centralized training with decentralized execution) yaklaşımını benimsiyor; tüm ajanlar aynı politika ağırlıklarını paylaşırken, her birinin gözlem alanı sınırlı. Eğitim sürecinde her problem için sekiz bağımsız takım denemesi toplanıyor ve ödül, başarı ve harcanan token miktarına göre ölçekleniyor. Bu sayede, iletişimin sadece başarıyı artırıp artırmadığı değil, aynı zamanda hesaplama bütçesini nasıl etkilediği de ölçülmüş oluyor.\n\n75 güncelleme sonunda, dört ajanlı takımın başarı oranı %6,6'dan %82,3'e yükseldi ve tutulan test setinde 32 sorudan 26'sını (%81,25) çözdü. Aynı zamanda, bir takımın ortalama token tüketimi 12.826,9'dan 8.026'ya düştü; yani %37,4 daha az token harcandı. İlginç bir bulgu, token sayısı azalırken mesaj sayısının artması: yayınlanan ortalama yayın (broadcast) sayısı 2,38'ten 5,73'e çıktı. Bu, ajanların daha aktif bir iletişim kurduğunu, ancak daha verimli bir şekilde konuştuğunu gösteriyor.\n\nAltyapı açısından, deney büyük ölçekli rollout'lar gerektirdiği için bir eğitim GPU'su ve yedi rollout GPU'su (her biri H200) kullanıldı. Hugging Face Jobs üzerinden aynı deneyin iki GPU'luk bir konfigürasyonda nasıl çalıştırılacağına dair adım‑adım bir kılavuz da sunuldu; kod deposu, ortam kurulumu ve vLLM sunucusunun başlatılması gibi detaylar açıkça belirtildi. Bu, araştırmacıların ve geliştiricilerin kendi sürümlerini hızlıca denemelerine olanak tanıyor.",
+  "onemli_maddeler": [
+    "Dört ajanlı bir sürüme ortak Qwen3-0.6B politikasıyla %82,3 başarı elde edildi.",
+    "Eğitim sonunda token tüketimi %37,4 azaldı, ancak mesaj (broadcast) sayısı iki katına çıktı.",
+    "Deney, merkezi eğitim‑dağıtık yürütme modelini ve eş zamanlı çoklu ajan ödül mekanizmasını gösteriyor.",
+    "Hugging Face Jobs üzerinden iki GPU'luk bir kurulumla aynı deneyin reproducible bir şekilde çalıştırılması sağlandı."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "Çoklu ajan sistemlerinin pratik eğitim metodolojisi ve açık kaynak kod örnekleri, AI araştırmacıları ve geliştiricileri için yeni bir çalışma alanı açıyor; aynı zamanda token verimliliği ve iletişim stratejileri üzerine ölçülebilir sonuçlar sunuyor.",
+  "etiketler": [
+    "multi-agent",
+    "swarms",
+    "TRL",
+    "Hugging Face",
+    "benchmark"
+  ],
+  "anilan_modeller": [
+    "Qwen3-0.6B"
+  ],
+  "yorum_tr": "Bu çalışma, çoklu ajanların sadece daha fazla deneme yaparak değil, etkili iletişim kurarak da performans kazanabileceğini gösteriyor; geliştiriciler için düşük maliyetli modellerle ölçeklenebilir sürümler oluşturma fırsatı sunuyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Qwen3-0.6B",
+      "benchmark": "Swarm training success (after 75 updates)",
+      "skor": 82.34,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "75 updates",
+      "kaynak_metinden_alinti": "At checkpoint 75, the four-agent team solved 26 of 32 held-out problems (81.25%). The paper reports 93.2% four-agent success after 200 updates."
+    }
+  ],
+  "gorsel_url": "https://huggingface.co/blog/assets/training-swarms/thumbnail.png",
+  "url": "https://huggingface.co/blog/training-swarms",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-11-26T00:00:00.000Z",
+  "slug": "swarms-flocks-gangs-how-to-build-train-and-evaluate-multi-ag"
+}
