@@ -1,0 +1,35 @@
+{
+  "baslik_tr": "Microsoft, devlet destekli hackerların ARTEX AI çerçevesiyle otomatik siber saldırılarını açıkladı",
+  "ozet_tr": "Microsoft, son dönemde devlet destekli gruplar ve suç örgütlerinin ARTEX adlı çok ajanlı AI çerçevesini kullanarak tamamen otomatikleştirilmiş siber saldırılar yürüttüklerini ortaya koydu. Çerçeve, mevcut güvenlik araçlarını birleştirip görevleri makine hızında dağıtarak savunuculara sadece dakikalar içinde yanıt süresi bırakıyor.",
+  "detayli_icerik_tr": "Microsoft Threat Intelligence ekibi, Temmuz 2026'da piyasaya sürülen ve GitHub'da \"Autumn-27\" kullanıcı adıyla yayımlanan ARTEX AI çerçevesinin, Çin ve Kuzey Kore destekli gruplar başta olmak üzere birçok devlet destekli ve finansal motivasyonlu siber suç örgütü tarafından geniş çapta benimsendiğini belgeledi. Çerçeve, Nmap, Sqlmap, Metasploit ve başsız tarayıcılar gibi mevcut güvenlik araçlarını neredeyse hiç insan müdahalesi olmadan çalıştırıyor; ayrıca saldırı sırasında bir model veya API anahtarı hatası oluştuğunda otomatik olarak başka bir büyük dil modeline (LLM) geçebiliyor.\n\nARTEX'in mimarisi, bir hedef modeli aracılığıyla saldırgan talimatlarını doğrulanabilir alt hedeflere bölüyor. Planlama ajanı, keşfedilen sistemler ve zafiyetler üzerine kurulu dinamik bir bilgi grafiğini sürekli güncelleyerek kısa görevler atıyor. İşçi ajanlar bu görevleri yerine getirerek web sunucularına web kabukları yerleştiriyor, şifre dosyalarını okuyor ya da bulut hesaplarını ele geçiriyor. Her yeni bulgu bilgi grafiğine ekleniyor ve planlama ajanı bir sonraki adımı belirliyor; sonunda raporlama ajanı tüm istismar edilen açıkları belgeleyerek saldırıyı sonlandırıyor.\n\nMicrosoft, bir Storm-0940 kampanyasında ARTEX'in sadece beş dakikada GitHub'ta yanlışlıkla açık bırakılan kimlik bilgilerini bulup Azure Key Vault'tan veri çektiğini ve aynı kampanyada dakikada 2.900 başarısız giriş denemesiyle 151.000'den fazla başarısız oturum açma girişimi kaydettiğini raporladı. Çerçeve aynı anda iki‑üç saldırı zinciri çalıştırarak ağ yollarını anlık olarak değiştiriyor ve geleneksel kural‑tabanlı güvenlik filtrelerini atlatıyor.\n\nBu tehditlere karşı Microsoft, sahte başarı sinyalleri (\"fake wins\"), honeypot'lar, yapay gecikme döngüleri (tarpit) ve balık tuzu (honeytokens) gibi aktif yanıltma tekniklerini öneriyor. Bu yöntemler, ARTEX'in hedef modelinin doğrulanabilir bir başarı kanıtı aramasını suistimal ederek saldırıyı kendi kendine durdurmasını sağlıyor. Ancak, saldırganların bu yanıltma mekanizmalarını zaman içinde dağıtması ve daha akıllı LLM'lerin sahte ortamları tanıma yeteneği, bu savunma stratejilerinin uzun vadeli etkinliğini belirsiz kılıyor.",
+  "onemli_maddeler": [
+    "ARTEX, mevcut güvenlik araçlarını (Nmap, Sqlmap, Metasploit vb.) neredeyse tamamen otomatik bir şekilde çalıştırarak makine hızında saldırılar gerçekleştiriyor.",
+    "Çerçeve, bir model hatası veya kota aşımı durumunda otomatik olarak başka bir büyük dil modeline (LLM) geçebiliyor, bu da tek bir AI sağlayıcısının takibini zorlaştırıyor.",
+    "Microsoft, sahte başarı mesajları, honeypot'lar ve yapay gecikme döngüleri gibi aktif yanıltma tekniklerinin ARTEX saldırılarını durdurmada etkili olabileceğini belirtiyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 5,
+  "onem_gerekce": "Devlet destekli hackerların AI destekli otomatik saldırı çerçevesi kullanması, siber güvenlik savunma stratejilerini kökten değiştirecek ölçekli bir tehdit oluşturuyor.",
+  "etiketler": [
+    "AI güvenliği",
+    "siber saldırı",
+    "ARTEX",
+    "çok ajanlı sistem",
+    "yanıltma teknikleri"
+  ],
+  "anilan_modeller": [
+    "Nmap",
+    "Sqlmap",
+    "Metasploit",
+    "large language model (LLM)"
+  ],
+  "yorum_tr": "ARTEX'in yaygınlaşması, savunma ekiplerinin yalnızca imza‑tabanlı çözümlerle yetinmemesini ve dinamik yanıltma mekanizmalarına yönelmesini zorunlu kılıyor; geliştiriciler ise bu tür çerçevelerin kötüye kullanımını önlemek için daha sıkı erişim kontrolleri ve izleme altyapıları inşa etmeli.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/10/microsoft_human_touch.png",
+  "url": "https://the-decoder.com/microsoft-details-how-state-backed-hackers-use-the-artex-ai-framework-to-automate-cyberattacks/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-26T11:30:06.000Z",
+  "slug": "microsoft-details-how-state-backed-hackers-use-the-artex-ai"
+}

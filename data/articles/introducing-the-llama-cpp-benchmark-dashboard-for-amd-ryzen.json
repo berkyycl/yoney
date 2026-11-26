@@ -1,0 +1,36 @@
+{
+  "baslik_tr": "llama.cpp Benchmark Panosu AMD Ryzen ve Radeon için Yayınlandı",
+  "ozet_tr": "Hugging Face, llama.cpp ile AMD Ryzen ve Radeon donanımlarında yerel model çalıştırma performansını izlemek için yeni bir benchmark panosu sundu. Kullanıcılar, donanım, model, yapı ve kuantizasyon seçeneklerini belirleyerek prompt işleme ve metin üretim hızlarını karşılaştırabiliyor.",
+  "detayli_icerik_tr": "Hugging Face'in resmi blogunda duyurulan llama.cpp × AMD Benchmark Dashboard, geliştiricilere AMD tabanlı sistemlerde yerel yapay zeka çıkarımının (inference) performansını detaylı bir şekilde gözlemleme imkânı tanıyor. Dashboard, iki temel test senaryosunu (PP512 ve TG128) token başına saniye (tokens per second) cinsinden ölçerek, prompt işleme ve metin üretim hızlarını gösteriyor. Kullanıcılar, sağ taraftaki Configuration kenar çubuğundan donanım (Radeon 8060S – gfx1151, Radeon AI Pro R9700S – gfx1201), model ve llama.cpp build'ini seçerek anlık karşılaştırmalar yapabiliyor.\n\nDashboard üç ana sekmeden oluşuyor: Overview, Build history ve Context scaling. Overview sekmesinde seçilen kombinasyon için kuantizasyonlar arasındaki farklar PP512 (512 giriş tokenı) ve TG128 (128 üretilen token) grafiklerinde gösterilir. Build history sekmesi, aynı donanım, model ve kuantizasyon için zaman içinde kaydedilen tüm build'lerin PP512 ve TG128 performansını izletirken, Context scaling sekmesi bağlam derinliği arttıkça token üretim verimliliğinin nasıl değiştiğini ortaya koyuyor.\n\nBenchmark çalışmaları, llama-install.sh aracılığıyla dağıtılan önceden derlenmiş ikili dosyalar üzerinde yürütülüyor. Haftalık olarak planlanan gfx1151 ve gfx1201 iş akışları, Flash Attention açık ve kapalı seçenekleriyle, her konfigürasyon için 10 tekrar yaparak ortalama throughput (avg_ts) değerlerini kaydediyor. Şu ana kadar Inkling 2 Mini, Qwen, Gemma, gpt-oss ve LFM gibi hem yoğun (dense) hem de karışık uzman (mixture-of-experts) mimarileri içeren modeller destekleniyor. GGUF formatları arasında Q4_K_M, Q8_0 gibi düşük bit kuantizasyonların yanı sıra BF16 ve F16 gibi yüksek hassasiyetli formatlar da bulunuyor.\n\nVeri seti, Hugging Face üzerindeki public ggml-org/install.sh-benches-data depolama kutusundan doğrudan okunabiliyor. Kullanıcılar, grafik başlığının yanındaki veri kaynağı linkine tıklayarak seçilen build, donanım ve model için JSONL dosyalarına ulaşabilir, kendi analizlerini yapabilir ve yerel test sonuçlarıyla karşılaştırabilir. AMD ekibine test altyapısı sağladıkları ve kurulumun doğrulanmasında destek verdikleri için teşekkür edilen bu platform, topluluk geri bildirimleriyle genişletilmeye devam edecek.",
+  "onemli_maddeler": [
+    "Dashboard, AMD Ryzen ve Radeon donanımlarında llama.cpp performansını gerçek zamanlı olarak karşılaştırma imkânı sunuyor.",
+    "PP512 ve TG128 testleri, token başına saniye cinsinden ortalama throughput değerlerini göstererek model ve kuantizasyon seçimlerini yönlendiriyor.",
+    "Haftalık otomatik benchmark çalışmaları, Flash Attention açık/kapalı modları ve 10 tekrar ile güvenilir istatistikler sağlıyor."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "AMD tabanlı yerel AI çıkarımını izlemek ve optimize etmek isteyen geliştiriciler için yeni, açık ve detaylı bir performans izleme aracı sunulması sektörde önemli bir adım oluşturuyor.",
+  "etiketler": [
+    "llama.cpp",
+    "AMD",
+    "benchmark",
+    "Radeon",
+    "Ryzen"
+  ],
+  "anilan_modeller": [
+    "Inkling 2 Mini",
+    "Qwen",
+    "Gemma",
+    "gpt-oss",
+    "LFM"
+  ],
+  "yorum_tr": "Bu dashboard, AMD donanımında yerel model çalıştırma performansını şeffaflaştırarak geliştiricilerin optimizasyon sürecini hızlandıracak. Kullanıcıların kendi test sonuçlarıyla karşılaştırma yapabilmesi, topluluk temelli iyileştirmelere de zemin hazırlıyor.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://cdn-uploads.huggingface.co/production/uploads/67289c93ff90038d9a6e5675/tbIvyMSISXCm64WYP3atl.png",
+  "url": "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-11-26T11:37:17.000Z",
+  "slug": "introducing-the-llama-cpp-benchmark-dashboard-for-amd-ryzen"
+}

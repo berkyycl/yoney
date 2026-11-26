@@ -1,0 +1,70 @@
+{
+  "baslik_tr": "Nemotron 3.5 Parse Üzerine: Açık Veri, İnce Ayar ve Daha Hızlı Çıkarım",
+  "ozet_tr": "NVIDIA, Nemotron 3.5 Parse modelinin yeni sürümü Parse 3.5'i sentetik veri setleri, iki aşamalı ince ayar (SFT+RLVR) ve DFlash2 spekülatif dekodlama ile tanıttı. Model, tablo ve grafik okuma doğruluğunu büyük ölçüde artırırken, tek bir H200 GPU’da çıkış hızı 7,6 katına kadar çıkıyor.",
+  "detayli_icerik_tr": "NVIDIA, Nemotron 3.5 Parse'ın ilk sürümünün üzerine yeni bir versiyon olan Parse 3.5'i duyurdu. Bu sürüm, sayfa görüntülerini yapılandırılmış veri hâline getirerek Retrieval‑Augmented Generation (RAG) ve ajan tabanlı sistemlerde kullanılabilir hâle getiriyor. Parse 3.5, sayfa içeriğini okuma sırasına göre sınıflandırıyor, başlık, paragraf, tablo ve grafik gibi içerik tiplerini belirliyor ve her öğenin konumunu gösteren sınırlayıcı kutular (bounding box) üretiyor. Özellikle işaretli sayısal değeri olmayan çubuk grafiklerde eksen ve çubuk yüksekliğine bakarak değer tahmini yapabilmesi, sentetik veriyle oluşturulan büyük ölçekli eğitim setleri sayesinde mümkün oldu.\n\nModelin eğitimi iki aşamada gerçekleşti. İlk aşamada, metin, düzen, tablo ve grafik gibi çeşitli belge tipleri üzerinde süpervizörlü ince ayar (SFT) yapıldı; bu adım modelin temel yapılandırılmış hedefleri tahmin etme yeteneğini kazandırdı. İkinci aşamada, Grup Göreceli Politika Optimizasyonu (GRPO) tabanlı pekiştirmeli öğrenme (RLVR) ile doğruluk, tutarlılık ve tamamlanma kalitesi ödüllendirildi. RLVR, örnekleme sırasında doğru tablo/çizelge değerlerini geri getiren ve döngüsel ya da eksik çıktıyı cezalandıran bir ödül mekanizması kullandı. Bu iki aşama, modelin geliştirilmiş tutarlılık ve düşük tekrar oranı (loop‑flagged çıktılar %77 azaldı) sağlamasını mümkün kıldı.\n\nPerformans açısından, DFlash2 spekülatif dekodlama ile Parse 3.5 tek bir NVIDIA H200 GPU’da BF16 modunda 7,62 kat daha yüksek throughput elde etti. Tek çekirdek (concurrency 1) çalıştırmada 20,44 sayfa/saniye hızına ulaşırken, 512 eşzamanlı istek altında da 20,44 sayfa/saniye sürdürdü; bu değerler önceki Parse 2.0 modeline göre sırasıyla 4,53 ve 6,86 kat iyidir. Ayrıca, yeni modelin ParseBench genel puanı 66,24'ten 71,38'e yükselirken, tablo ve grafik alt‑puanları da sırasıyla +5,18 ve +4,15 puan arttı. Sentetik diş formu üzerinde yapılan bir testte, ilk deneme başarı oranı (pass@1) SFT sonrası %95,85, RLVR sonrası ise %96,58'e ulaştı.\n\nNVIDIA, bu gelişmeleri toplulukla paylaşarak üç açık veri seti (Synthetic Charts V1 – 9,98 M örnek, Synthetic Tables V1 – 1 M örnek, OCR Synthetic Multilingual v2 – 7,9 M örnek) ve bir ince ayar tarifi sundu. Geliştiriciler bu veri çiftlerini kendi belge tiplerine, dillerine ve uygulama senaryolarına göre uyarlayabilir, ayrıca çok aşamalı (tek, çift, üçlü geçiş) çıkarım stratejileriyle zor bölgelerde daha yüksek doğruluk elde edebilirler.",
+  "onemli_maddeler": [
+    "Parse 3.5, sentetik veriyle tablo ve grafik okuma yeteneğini büyük ölçüde artırarak zor ve belirsiz görsellerde %96,5 pass@1 başarısı sağladı.",
+    "SFT + RLVR iki aşamalı ince ayar yöntemi, loop‑flagged çıktıları %77 azalttı ve ParseBench puanını 71,38'e yükseltti.",
+    "DFlash2 spekülatif dekodlama sayesinde tek H200 GPU’da throughput 7,62× artarak 20,44 sayfa/saniye hızına ulaştı."
+  ],
+  "kategori": "guncelleme",
+  "onem": 4,
+  "onem_gerekce": "Nemotron 3.5 Parse’ın yeni sürümü, belge işleme ve RAG uygulamaları için kritik doğruluk ve hız iyileştirmeleri sunuyor; özellikle tablo ve grafik çıkarımı, açık veri setleri ve spekülatif dekodlama sayesinde sektördeki belge modellerinin verimliliğini ve kullanılabilirliğini yükseltiyor.",
+  "etiketler": [
+    "belge işleme",
+    "sentetik veri",
+    "ince ayar",
+    "DFlash2",
+    "NVIDIA"
+  ],
+  "anilan_modeller": [
+    "Nemotron 3.5 Parse 3.5",
+    "Parse 2.0"
+  ],
+  "yorum_tr": "Parse 3.5'in getirdiği doğruluk artışı ve spekülatif dekodlama sayesinde elde edilen yüksek throughput, belge tabanlı AI çözümlerinin maliyetini düşürürken, geliştiricilere daha karmaşık dokümanları gerçek zamanlı işleme imkanı tanıyacak.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "Nemotron 3.5 Parse 3.5",
+      "benchmark": "ParseBench overall score",
+      "skor": 71.38,
+      "birim": "points",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "Overall score improves from 66.24 to 71.38, including +5.18 points in tables and +4.15 in charts."
+    },
+    {
+      "model": "Nemotron 3.5 Parse 3.5",
+      "benchmark": "Throughput (pages per second) on H200 BF16, concurrency 1, with DFlash2",
+      "skor": 20.44,
+      "birim": "pages/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "concurrency 1, BF16",
+      "kaynak_metinden_alinti": "At concurrency 1, Parse 3.5 reaches 20.44 pages/s with DFlash2, versus 13.48 without speculation."
+    },
+    {
+      "model": "Nemotron 3.5 Parse 3.5",
+      "benchmark": "Throughput (pages per second) on H200 BF16, concurrency 512, with DFlash2",
+      "skor": 20.44,
+      "birim": "pages/s",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "concurrency 512, BF16",
+      "kaynak_metinden_alinti": "At concurrency 512, Parse 3.5 reaches 20.44 pages/s with DFlash2, versus 13.48 without speculation."
+    },
+    {
+      "model": "Nemotron 3.5 Parse 3.5",
+      "benchmark": "Pass@1 success rate on synthetic dental form after RLVR",
+      "skor": 96.58,
+      "birim": "%",
+      "yuksek_iyi_mi": true,
+      "degerlendirme_ayari": "sampled pass@1",
+      "kaynak_metinden_alinti": "Estimated first-attempt success rate (sampled pass@1) rose to 96.58% after RLVR."
+    }
+  ],
+  "gorsel_url": "https://cdn-uploads.huggingface.co/production/uploads/6365c3f398da81987e2753f2/zArpuP9uLsLz9luMW0K2g.png",
+  "url": "https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-11-26T05:05:36.000Z",
+  "slug": "building-on-nemotron-3-5-parse-open-data-fine-tuning-and-fas"
+}
