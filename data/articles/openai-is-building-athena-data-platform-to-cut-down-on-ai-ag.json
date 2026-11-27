@@ -1,0 +1,30 @@
+{
+  "baslik_tr": "OpenAI, AI ajanlarının veri hatalarını azaltmak için \"Athena\" veri platformunu geliştiriyor",
+  "ozet_tr": "OpenAI, AI ajanlarının iş verileriyle çalışırken yaptıkları tahmin hatalarını en aza indirmek amacıyla \"Athena\" adlı bir veri yönetim platformu inşa ediyor. Athena, işletme metrikleri için tutarlı tanımlar sağlayan bir semantik katman işlevi görecek ve ajanların bağlamı eksik kalmadan hareket etmesini sağlayacak.",
+  "detayli_icerik_tr": "OpenAI, yapay zeka ajanlarının iş verileriyle etkileşimini iyileştirmek için kod adı \"Athena\" olan yeni bir veri platformu üzerinde çalıştığını duyurdu. Platform, semantik katman mantığıyla hareket ederek gelir, müşteri sayısı gibi temel iş metriklerine tutarlı tanımlar sunuyor ve bu sayede ajanların veri yorumlamasındaki belirsizlikleri azaltıyor.\n\nThe Information dergisinin haberine göre, ChatGPT Work'ün geçen sonbaharda piyasaya sürülen veri analiz ajanı bazı müşterilerde yeterli doğruluk sağlayamıyor. Athena, bu sorunu çözmek için ajanlara gerekli bağlamı sağlayarak tahmin yapma ihtiyacını en aza indirecek. Platform, iş kurallarını toplama, belgeleme ve güncelleme süreçlerini otomatikleştirerek, yeni ajanların sıfırdan başlamasını önleyecek.\n\nBenzer işlevleri sunan Snowflake ve Databricks gibi veri platformları zaten semantik katman hizmeti veriyor. OpenAI'nin Athena'yı geliştirmesinin temel motivasyonu, bir semantik katman sağlayıcısını değiştirmek, bir AI modelini değiştirmekten çok daha zor olduğu gerçeğinden yola çıkarak rekabet avantajı elde etmek. Bu sayede müşteriler, AI modelini güncellerken veri katmanını aynı tutarak geçiş maliyetlerini düşürebilecek.\n\nAthena hâlâ erken geliştirme aşamasında ve OpenAI, ürünün çıkış tarihini, fiyatlandırma modelini ya da erişim koşullarını henüz açıklamadı. Ancak platformun, AI ajanlarının iş verileriyle daha güvenilir ve tutarlı bir şekilde çalışmasını sağlayarak, kurumsal AI çözümlerinin benimsenmesini hızlandırması bekleniyor.",
+  "onemli_maddeler": [
+    "OpenAI, AI ajanlarının veri analizindeki hatalarını azaltmak için \"Athena\" adlı bir semantik katman veri platformu geliştiriyor.",
+    "Athena, iş kurallarını otomatik toplama, belgeleme ve güncelleme yeteneğiyle yeni ajanların sıfırdan başlamasını önleyecek.",
+    "Mevcut veri platformları (Snowflake, Databricks) gibi semantik katman hizmeti sunan Athena, rekabet avantajı sağlamak için AI model değişiminden daha zor bir geçiş süreci sunuyor."
+  ],
+  "kategori": "arac-sdk",
+  "onem": 4,
+  "onem_gerekce": "AI ajanlarının iş verileriyle daha doğru ve tutarlı çalışması, kurumsal AI uygulamalarının güvenilirliğini artırarak sektörde geniş çaplı benimsenmeye yol açabilir.",
+  "etiketler": [
+    "OpenAI",
+    "Athena",
+    "AI ajanları",
+    "semantik katman",
+    "veri platformu"
+  ],
+  "anilan_modeller": [],
+  "yorum_tr": "Athena, AI ajanlarının veri bağlamını eksiksiz almasını sağlayarak hatalı analiz riskini azaltacak ve geliştiricilerin daha az manuel veri hazırlama süreciyle daha hızlı çözümler üretmesine olanak tanıyacak.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://the-decoder.com/wp-content/uploads/2026/10/openai_logo-1.png",
+  "url": "https://the-decoder.com/openai-is-building-athena-data-platform-to-cut-down-on-ai-agent-guesswork/",
+  "source": "The Decoder",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-27T16:05:23.000Z",
+  "slug": "openai-is-building-athena-data-platform-to-cut-down-on-ai-ag"
+}

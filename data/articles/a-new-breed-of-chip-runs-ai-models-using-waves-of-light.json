@@ -1,0 +1,30 @@
+{
+  "baslik_tr": "Q.ANT'in Fotonik İşlemcileri, AI Modellerinin Enerji Tüketimini Düşürmeyi Hedefliyor",
+  "ozet_tr": "Almanya merkezli Q.ANT, ışık dalgalarını kullanan fotonik işlemcileriyle yapay zeka modellerinin enerji ihtiyacını dört beş kat azaltmayı vaat ediyor. Bu yeni çipler, GPU'ların lineer matematikteki üstünlüğünü tamamlayarak karmaşık, doğrusal olmayan hesaplamaları yan işlemci olarak üstlenmeyi amaçlıyor. Şu an IONOS veri merkezlerinde pilot olarak kullanılan bu teknoloji, AI altyapısının sürdürülebilirliğine yeni bir soluk getirebilir.",
+  "detayli_icerik_tr": "Yapay zekanın günlük hayata entegrasyonu ve modellerin giderek karmaşıklaşması, veri merkezlerinin enerji tüketimini katlanarak artırıyor. Bu soruna yanıt olarak birçok AI laboratuvarı ve bulut sağlayıcısı, düşük maliyetli yenilenebilir enerji kaynaklarına yönelirken, Q.ANT farklı bir yaklaşım sergileyerek fotonik işlemciler geliştirdi. Geleneksel GPU'lar elektronu hareket ettirerek veri işliyor; fotonik çipler ise ışık dalgalarını kullanarak aynı anda daha fazla veriyi işliyor ve ısı üretimi çok düşük olduğu için soğutma maliyetlerini de azaltıyor.\n\nQ.ANT'in çipleri, GPU'ların güçlü olduğu toplama ve çarpma gibi lineer işlemleri bırakıp, doğrusal olmayan ve karmaşık hesaplamaları tek adımda gerçekleştirebiliyor. Şirket, bu sayede bellek erişim sayısını önemli ölçüde düşürerek enerji tasarrufu sağlıyor. Simülasyon sonuçları, fotonik işlemcilerin GPU'larla birlikte çalıştığında enerji tüketiminde dört ila beş kat azalma sağlayabileceğini gösteriyor; ancak gerçek donanımda bu oran henüz kanıtlanmadı.\n\nŞu ana kadar fotonik işlemciler veri merkezlerinde yaygın değil, ancak Q.ANT, IONOS bulut altyapısına pilot bir kurulum gerçekleştirdi ve 30'dan fazla mühendis ekibinin bu çipler için AI modelleri geliştirdiğini duyurdu. Geliştiricilerin mevcut C++ ve Python kodlarını büyük değişiklikler yapmadan çalıştırabildiği, ancak GPU odaklı optimize edilmiş modellerin otomatik olarak daha hızlı olmayacağı vurgulandı. Bu durum, hem donanım tedarik zincirinin hem de yazılım ekosisteminin birlikte evrimleşmesi gerektiğini ortaya koyuyor.\n\nQ.ANT, çip üretiminde 90 nm teknolojiye dayandığını ve bu sayede mevcut yarı iletken fabrikalarından düşük maliyetle üretim yapabildiğini belirtiyor. Şirket, belirli bir GPU markasına bağlı kalmadan, Nvidia, AMD gibi tüm büyük GPU sağlayıcılarıyla uyumlu çalışabilecek bir platform sunmayı hedefliyor. Uzun vadede, AI mühendislerinin modellerini enerji verimliliği odaklı yeniden tasarlamaları, fotonik işlemcilerin yaygınlaşmasıyla mümkün olabilir.",
+  "onemli_maddeler": [
+    "Fotonik işlemciler, ışık dalgalarını kullanarak lineer olmayan hesaplamaları tek adımda yapıp enerji tüketimini 4‑5 kat azaltabilir.",
+    "Q.ANT, IONOS veri merkezlerinde pilot kurulumla 30+ mühendis ekibine fotonik çiplerde AI modeli geliştirme imkanı sundu.",
+    "Çipler 90 nm üretim sürecinde üretiliyor; bu, mevcut yarı iletken fabrikalarından düşük maliyetli üretim anlamına geliyor."
+  ],
+  "kategori": "diger",
+  "onem": 4,
+  "onem_gerekce": "AI altyapısının enerji maliyetleri kritik bir sorun haline gelmişken, fotonik işlemciler hem donanım hem de sürdürülebilirlik açısından sektöre yeni bir yön sunuyor.",
+  "etiketler": [
+    "fotonik işlemci",
+    "AI donanımı",
+    "enerji verimliliği",
+    "Q.ANT",
+    "veri merkezi"
+  ],
+  "anilan_modeller": [],
+  "yorum_tr": "Fotonik çiplerin GPU'larla birlikte çalışması, AI uygulamalarının enerji ayak izini önemli ölçüde azaltabilir ve veri merkezi maliyetlerini düşürebilir. Ancak geniş çaplı benimsenme, yazılım ekosisteminin uyum sağlaması ve tedarik zincirinin istikrar kazanmasıyla mümkün olacak.",
+  "gorseller": [],
+  "benchmarklar": [],
+  "gorsel_url": "https://media.wired.com/photos/6b073e1d34813a006d725bef/master/pass/QANT-CEO-QandA-Business.jpg",
+  "url": "https://www.wired.com/story/a-new-breed-of-chip-runs-ai-models-using-waves-of-light/",
+  "source": "WIRED AI",
+  "sourceTier": "bagimsiz",
+  "date": "2026-11-27T07:00:00.000Z",
+  "slug": "a-new-breed-of-chip-runs-ai-models-using-waves-of-light"
+}

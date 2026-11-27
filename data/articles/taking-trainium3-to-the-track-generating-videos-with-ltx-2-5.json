@@ -1,0 +1,42 @@
+{
+  "baslik_tr": "Trainium3 Üzerinde LTX-2.5 ile Video Üretimi: 10 saniyelik klip 22‑23 saniyede oluşturuldu",
+  "ozet_tr": "AWS Trainium3 makinesinde LTX-2.5 modeli kullanılarak 10 saniyelik 2048×1024 çözünürlüklü bir video ve ses, yarı birim üzerinde sadece 22‑23 saniyede üretildi. Bu performans, LTX'in kendi API'sinin 23,7 saniyelik süresini geride bırakarak, bulut tabanlı video sentezinde yeni bir kilometre taşı oluşturdu.",
+  "detayli_icerik_tr": "Hugging Face ekibi, AWS ile ortaklık sayesinde bir ay boyunca trn3.48xlarge (64 NeuronCore) Trainium3 makinesine erişim sağladı ve bu sürenin son beş gününde LTX-2.5 modelini video‑ses üretimi için denedi. Model, bir senaryo dosyası (JSON) üzerinden sahneleri tanımlayarak, uzun prompt'lar ve sahne zincirleme (from/to) mekanizmasıyla kısa filmler oluşturabiliyor. İlk denemelerde modelin transformer kısmı tek bir NeuronCore'a sığmadığı için 5 dakika 20 saniye gibi uzun bir sürede 10 saniyelik bir klip üretiliyordu.\n\n\nPerformans iyileştirmeleri üç ana eksende gerçekleşti: tensör paralelliği (model ağırlıklarını 4 çekirdeğe bölmek), sekans paralelliği (video token'larını 8 parçaya ayırmak) ve host‑cihaz senkronizasyonu. Bu sayede 32 çekirdek aynı anda bir klip üzerinde çalıştı ve çözünürlük 960×544'ten 2048×1024'e çıkarıldı. Modelin yükleme süresi 3 dakikaya, ilk klip üretim süresi ise 80 saniyeye indi; model yüklendikten sonra ise 10 saniyelik bir klip sadece 22‑23 saniyede tamamlandı.\n\n\nLTX-2.5'in diffusers tabanlı pipeline'ları üç aşamadan oluşuyor: LTX2Pipeline (sahne üretimi), LTX2ConditionPipeline (başka bir sahnenin çerçevelerinden başlayan/bitiren sahneler) ve LTX2LatentUpsamplePipeline (latents'i 2× upsample). Bu pipeline'lar, sahne dosyasını okuyup sahneleri sıralayan yaklaşık 160 satır Python kodu ile bütünleştirildi. Sonuç olarak, modelin hem performansı hem de kullanım esnekliği, gerçek bir video prodüksiyon akışına yakın bir deneyim sundu.\n\n\nBu deneyim, sadece yaratıcı içerik üretimi için değil, robotik ve otonom sistemler için de bir \"world model\" olarak kullanılabilirliğini gösterdi. Gerçek kamera görüntülerinden bir saniyelik bir kesit alınıp modelin devamını üretmesi, robotların nadir ya da riskli senaryoları simüle etmesinde yeni fırsatlar yaratıyor.",
+  "onemli_maddeler": [
+    "Trainium3 üzerinde LTX-2.5 modeli, 10 saniyelik 2048×1024 video ve ses üretimini 22‑23 saniyede tamamlayarak LTX'in API'sini geride bıraktı.",
+    "Tensor paralelliği (4 çekirdek) ve sekans paralelliği (8 parçaya bölme) sayesinde 32 NeuronCore aynı anda kullanılabildi.",
+    "Diffusers pipeline'ları üç aşamalı bir yapı ile sahne zincirleme (from/to) ve upsampling desteği sağladı."
+  ],
+  "kategori": "benchmark",
+  "onem": 4,
+  "onem_gerekce": "AWS Trainium3 üzerinde video sentezinin performansının büyük ölçüde iyileştirilmesi, bulut tabanlı yaratıcı AI hizmetlerinin rekabet gücünü artırdığı için sektörel etkisi yüksek bir gelişmedir.",
+  "etiketler": [
+    "Trainium3",
+    "LTX-2.5",
+    "Video Generation",
+    "AWS",
+    "Diffusers"
+  ],
+  "anilan_modeller": [
+    "LTX-2.5"
+  ],
+  "yorum_tr": "Bu sonuç, yüksek çözünürlükte gerçek zamanlı video üretiminin bulut donanımında mümkün olduğunu gösteriyor; geliştiriciler daha düşük maliyetli altyapılarla benzer kaliteyi elde edebilirken, içerik üreticileri de daha hızlı prototipleme imkanına kavuşuyor.",
+  "gorseller": [],
+  "benchmarklar": [
+    {
+      "model": "LTX-2.5",
+      "benchmark": "LTX online API latency (10‑s clip, 1080p) reported by LTX",
+      "skor": 23.7,
+      "birim": "s",
+      "yuksek_iyi_mi": false,
+      "degerlendirme_ayari": null,
+      "kaynak_metinden_alinti": "LTX says makes a 10-second 1080p clip in 23.7 s."
+    }
+  ],
+  "gorsel_url": "https://huggingface.co/blog/assets/video-trainium3/thumbnail.jpg",
+  "url": "https://huggingface.co/blog/video-trainium3",
+  "source": "Hugging Face",
+  "sourceTier": "resmi",
+  "date": "2026-11-27T00:00:00.000Z",
+  "slug": "taking-trainium3-to-the-track-generating-videos-with-ltx-2-5"
+}
